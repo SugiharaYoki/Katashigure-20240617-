@@ -190,8 +190,8 @@ execute if score stage_main_thread AzrTimerStack matches 2011 run advancement gr
 execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s unless items entity @s container.* *[custom_data~{azr_amulet_stopwatch:1b}] run function skyblock:azr/assets/items/amulets/stopwatch
 execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run summon item ~ ~ ~ {Item:{id:"emerald",count:10b}}
 execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..4}] Azr_skillPoints 5
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players reset stage_main_thread AzrTimerStack
-
 
 execute if score stage_main_thread AzrTimerStack matches 300..556 if score #boss_seen_chapter1_andralune AzrTimerStack matches 0 run scoreboard players set #boss_seen_chapter1_andralune AzrTimerStack 1
 execute if score stage_main_thread AzrTimerStack matches 557..558 run scoreboard players set #boss_seen_chapter1_andralune AzrTimerStack 2

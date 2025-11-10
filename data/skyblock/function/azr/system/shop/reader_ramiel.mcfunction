@@ -42,6 +42,32 @@ summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_di
 summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerx"]}
 summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkery"]}
 summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerz"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBa"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBb"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBc"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBd"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBe"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBf"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBg"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBh"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBi"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBj"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBk"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBl"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBm"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBn"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBo"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBp"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBq"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBr"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBs"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBt"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBu"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBv"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBw"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBx"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBy"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBz"]}
 
 execute if entity @s[tag=AZS_BoS01] run data modify entity @n[tag=AzrRamielExStage_displaymarkera] CustomName set value '" <A> "'
 execute if entity @s[tag=AZS_BoS02] run data modify entity @n[tag=AzrRamielExStage_displaymarkerb] CustomName set value '" <B> "'
@@ -69,6 +95,8 @@ execute if entity @s[tag=AZS_BoS23] run data modify entity @n[tag=AzrRamielExSta
 execute if entity @s[tag=AZS_BoS24] run data modify entity @n[tag=AzrRamielExStage_displaymarkerx] CustomName set value '" <X> "'
 execute if entity @s[tag=AZS_BoS25] run data modify entity @n[tag=AzrRamielExStage_displaymarkery] CustomName set value '" <Y> "'
 execute if entity @s[tag=AZS_BoS26] run data modify entity @n[tag=AzrRamielExStage_displaymarkerz] CustomName set value '" <Z> "'
+execute if entity @s[scores={Azr_skillPoints=5..}] run data modify entity @n[tag=AzrRamielExStage_displaymarker1] CustomName set value '" <残> "'
+execute if entity @s[tag=AZS_BoSB13] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value '" <藓> "'
 execute if entity @s[tag=!AZS_BoS01] run data modify entity @n[tag=AzrRamielExStage_displaymarkera] CustomName set value '" ？ "'
 execute if entity @s[tag=!AZS_BoS02] run data modify entity @n[tag=AzrRamielExStage_displaymarkerb] CustomName set value '" ？ "'
 execute if entity @s[tag=!AZS_BoS03] run data modify entity @n[tag=AzrRamielExStage_displaymarkerc] CustomName set value '" ？ "'
@@ -95,32 +123,36 @@ execute if entity @s[tag=!AZS_BoS23] run data modify entity @n[tag=AzrRamielExSt
 execute if entity @s[tag=!AZS_BoS24] run data modify entity @n[tag=AzrRamielExStage_displaymarkerx] CustomName set value '" ？ "'
 execute if entity @s[tag=!AZS_BoS25] run data modify entity @n[tag=AzrRamielExStage_displaymarkery] CustomName set value '" ？ "'
 execute if entity @s[tag=!AZS_BoS26] run data modify entity @n[tag=AzrRamielExStage_displaymarkerz] CustomName set value '" ？ "'
-execute if entity @s[tag=AZS_BoS01] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkera] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS02] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerb] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS03] if items entity @s inventory.* *[custom_data~{azr_amulet_greed_board:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerc] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS04] if items entity @s inventory.* *[custom_data~{azr_amulet_flower_wall:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerd] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS05] if items entity @s inventory.* *[custom_data~{azr_amulet_sprint_double:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkere] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS06] if items entity @s inventory.* *[custom_data~{azr_amulet_fire_lit:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerf] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS07] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerg] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS08] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerh] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS09] if items entity @s inventory.* *[custom_data~{azr_amulet_jump_boost:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkeri] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS10] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerj] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS11] if items entity @s inventory.* *[custom_data~{azr_amulet_stay_float:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerk] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS12] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerl] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS13] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerm] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS14] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkern] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS15] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkero] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS16] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerp] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS17] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerq] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS18] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerr] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS19] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkers] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS20] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkert] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS21] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkeru] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS22] if items entity @s inventory.* *[custom_data~{azr_amulet_axe_vortex:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerv] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS23] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerw] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS24] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerx] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS25] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkery] CustomName set value '" √ "'
-execute if entity @s[tag=AZS_BoS26] if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerz] CustomName set value '" √ "'
+execute if entity @s[scores={Azr_skillPoints=..4}] run data modify entity @n[tag=AzrRamielExStage_displaymarker1] CustomName set value '" ？ "'
+execute if entity @s[tag=!AZS_BoSB13] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value '" ？ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkera] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerb] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_greed_board:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerc] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_flower_wall:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerd] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_sprint_double:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkere] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_fire_lit:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerf] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerg] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerh] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_jump_boost:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkeri] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerj] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_stay_float:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerk] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerl] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerm] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkern] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkero] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerp] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerq] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerr] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkers] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkert] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkeru] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_axe_vortex:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerv] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerw] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerx] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkery] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerz] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_stopwatch:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value '" √ "'
+execute if items entity @s inventory.* *[custom_data~{azr_amulet_moss_spore:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value '" √ "'
 
 
 tellraw @s [{"text":"\n "},{"text":"假定回溯  \n","color":"#308aff","bold": true},\
@@ -152,7 +184,10 @@ tellraw @s [{"text":"\n "},{"text":"假定回溯  \n","color":"#308aff","bold": 
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerw]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432323"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerx]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432324"},"hoverEvent":{"action":"show_text","contents":{"text":"Xenia？","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkery]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432325"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}},\
-{"selector":"@n[tag=AzrRamielExStage_displaymarkerz]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432326"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}}]
+{"selector":"@n[tag=AzrRamielExStage_displaymarkerz]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432326"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}},\
+{"text":"\n "},\
+{"selector":"@n[tag=AzrRamielExStage_displaymarker1]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432327"},"hoverEvent":{"action":"show_text","contents":{"text":"权之残影 - 天界怀表\n在波数暂停时手持，可以冻结计时","color":"white"}}},\
+{"selector":"@n[tag=AzrRamielExStage_displaymarkerBm]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432328"},"hoverEvent":{"action":"show_text","contents":{"text":"噬藓母虫 - 深藓石板\n造成攻击可增加“索命连击”充能、在重生点可获得5分钟孢子的庇护（生命值上限加成）","color":"white"}}}]
 
 
 
