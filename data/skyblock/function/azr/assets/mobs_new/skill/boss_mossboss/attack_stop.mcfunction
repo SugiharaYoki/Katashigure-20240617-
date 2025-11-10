@@ -16,7 +16,9 @@ execute if score @s rng8 matches 22 if score @s[scores={rng6=..7}] rng3 matches 
 
 execute if score @s rng8 matches 42 run effect give @s slowness 2 2 true
 
-execute if score @s rng8 matches 82 store result score @s rng3 run random value 1..4
-execute if score @s rng8 matches 82 run scoreboard players set @s rng2 4
-execute if score @s rng8 matches 82 if score @s rng3 matches 1 run scoreboard players set @s rng8 0
-execute if score @s rng8 matches 82 if score @s rng3 matches 2..4 run scoreboard players set @s rng8 -40
+execute if score @s rng8 matches 82.. store result score @s rng3 run random value 1..4
+execute if score @s[scores={Health=..99}] rng8 matches 82.. store result score @s rng3 run random value 1..2
+execute if score @s rng8 matches 82.. run scoreboard players set @s rng2 4
+execute if score @s rng8 matches 82.. if score @s rng3 matches 1 run scoreboard players set @s rng8 0
+execute if score @s rng8 matches 82.. if score @s rng3 matches 2 run scoreboard players set @s rng8 -20
+execute if score @s rng8 matches 82.. if score @s rng3 matches 3..4 run scoreboard players set @s rng8 -40
