@@ -1,4 +1,4 @@
-execute as @a[tag=azrPlayer] run function skyblock:azr/system/player/slow
+execute as @a[tag=azrPlayer] at @s run function skyblock:azr/system/player/slow
 #该函数是花园的时序函数，每秒运行一次
 #统计信息，怪物统计limit=70是因为停秒统计最多出现65，这样写是为了优化选择器
 execute store result score playerCount Azr_system if entity @a[tag=azrPlayer,gamemode=!spectator]
