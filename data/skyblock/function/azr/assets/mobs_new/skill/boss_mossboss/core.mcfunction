@@ -52,6 +52,7 @@ execute as @n[tag=AzrielMob_smoke,type=silverfish,distance=0..6,tag=!AzrielMob_s
 #end
    
 execute if score @s AzrEntityTimer matches 1999 if entity @n[tag=AzrielBossMossBoss] run scoreboard players set @s AzrEntityTimer 1998
+execute if score @s AzrEntityTimer matches 100..1999 unless entity @n[tag=AzrielBossMossBoss] run scoreboard players set @s AzrEntityTimer 2000
 execute if score @s AzrEntityTimer matches 2001 run stopsound @a[tag=azrShowDialog]
 execute if score @s AzrEntityTimer matches 2001 run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 10 0.7
 execute if score @s AzrEntityTimer matches 2011 if score stage_bonus_thread AzrTimerStack matches 135 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Boss Annihilated","color":"green"}
