@@ -55,12 +55,12 @@ execute if score @s AzrEntityTimer matches 1999 if entity @n[tag=AzrielBossMossB
 execute if score @s AzrEntityTimer matches 100..1999 unless entity @n[tag=AzrielBossMossBoss] run scoreboard players set @s AzrEntityTimer 2000
 execute if score @s AzrEntityTimer matches 2001 run stopsound @a[tag=azrShowDialog]
 execute if score @s AzrEntityTimer matches 2001 run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 10 0.7
-execute if score @s AzrEntityTimer matches 2011 if score stage_bonus_thread AzrTimerStack matches 135 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Boss Annihilated","color":"green"}
-execute if score @s AzrEntityTimer matches 2011 if score stage_bonus_thread AzrTimerStack matches 135 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/sub_boss_mossboss
-execute if score @s AzrEntityTimer matches 2011 if score stage_bonus_thread AzrTimerStack matches 135 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB13
-execute if score @s AzrEntityTimer matches 2011 if score stage_bonus_thread AzrTimerStack matches 135 as @a[tag=azrPlayer] at @s run give @s emerald 5
-execute if score @s AzrEntityTimer matches 2011 if score stage_bonus_thread AzrTimerStack matches 135 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
-execute if score @s AzrEntityTimer matches 2011 if score stage_bonus_thread AzrTimerStack matches 135 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/moss_spore
+execute if score @s AzrEntityTimer matches 2011 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Boss Annihilated","color":"green"}
+execute if score @s AzrEntityTimer matches 2011 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/sub_boss_mossboss
+execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB13
+execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s emerald 5
+execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/moss_spore
 
 #out
 
