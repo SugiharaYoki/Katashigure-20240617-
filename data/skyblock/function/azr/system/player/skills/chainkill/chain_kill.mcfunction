@@ -1,21 +1,21 @@
-execute if entity @s[scores={AZR_chainKillUpg_chargespeed=0}] store result score #random Azr_system run random value 30..200
-execute if entity @s[scores={AZR_chainKillUpg_chargespeed=1}] store result score #random Azr_system run random value 40..200
-execute if entity @s[scores={AZR_chainKillUpg_chargespeed=2}] store result score #random Azr_system run random value 50..200
-execute if entity @s[scores={AZR_chainKillUpg_chargespeed=3}] store result score #random Azr_system run random value 60..200
-execute if entity @s[scores={AZR_chainKillUpg_chargespeed=4}] store result score #random Azr_system run random value 70..200
-execute if entity @s[scores={AZR_chainKillUpg_chargeboost=1..}] run scoreboard players add #random Azr_system 10
-execute if entity @s[scores={AZR_chainKillUpg_chargeboost=2..}] run scoreboard players add #random Azr_system 10
-execute if entity @s[scores={AZR_chainKillUpg_chargeboost=3..}] run scoreboard players add #random Azr_system 10
-execute if entity @s[scores={AZR_chainKillUpg_chargeboost=4..}] run scoreboard players add #random Azr_system 10
+execute if entity @s[scores={AZR_chainKillUpg_chargespeed=0}] store result score #random Azr_system run random value 300..2000
+execute if entity @s[scores={AZR_chainKillUpg_chargespeed=1}] store result score #random Azr_system run random value 400..2000
+execute if entity @s[scores={AZR_chainKillUpg_chargespeed=2}] store result score #random Azr_system run random value 500..2000
+execute if entity @s[scores={AZR_chainKillUpg_chargespeed=3}] store result score #random Azr_system run random value 600..2000
+execute if entity @s[scores={AZR_chainKillUpg_chargespeed=4}] store result score #random Azr_system run random value 700..2000
+execute if entity @s[scores={AZR_chainKillUpg_chargeboost=1..}] run scoreboard players add #random Azr_system 100
+execute if entity @s[scores={AZR_chainKillUpg_chargeboost=2..}] run scoreboard players add #random Azr_system 100
+execute if entity @s[scores={AZR_chainKillUpg_chargeboost=3..}] run scoreboard players add #random Azr_system 100
+execute if entity @s[scores={AZR_chainKillUpg_chargeboost=4..}] run scoreboard players add #random Azr_system 100
 
-execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=0..}] AZR_chainKill_damage matches 6.. run scoreboard players add @s AZR_chainKill_chargeup 1
+execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=0..}] AZR_chainKill_damage matches 6.. run scoreboard players add @s AZR_chainKill_chargeup 3
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=1..}] AZR_chainKill_damage matches 6.. run scoreboard players add @s AZR_chainKill_chargeup 1
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=2..}] AZR_chainKill_damage matches 6.. run scoreboard players add @s AZR_chainKill_chargeup 1
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=3..}] AZR_chainKill_damage matches 6.. run scoreboard players add @s AZR_chainKill_chargeup 1
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=4..}] AZR_chainKill_damage matches 6.. run scoreboard players add @s AZR_chainKill_chargeup 1
 
-execute if entity @s[tag=!AZR_chainKill_activated,scores={AZR_chainKill=1..,AZR_chainKill_chargeup=500..}] unless items entity @s weapon.mainhand #shovels run scoreboard players operation @s AZR_chainKill_chargeup += #random Azr_system
-execute if entity @s[tag=!AZR_chainKill_activated,scores={AZR_chainKill=1..,AZR_chainKill_chargeup=..499}] run scoreboard players operation @s AZR_chainKill_chargeup += #random Azr_system
+execute if entity @s[tag=!AZR_chainKill_activated,scores={AZR_chainKill=1..,AZR_chainKill_chargeup=5000..}] unless items entity @s weapon.mainhand #shovels run scoreboard players operation @s AZR_chainKill_chargeup += #random Azr_system
+execute if entity @s[tag=!AZR_chainKill_activated,scores={AZR_chainKill=1..,AZR_chainKill_chargeup=..4999}] run scoreboard players operation @s AZR_chainKill_chargeup += #random Azr_system
 
 execute if entity @s[scores={AZR_chainKillUpg_defensecharge=1,AZR_chainKill_damageblocked=1..}] store result score #random Azr_system run random value 0..2
 execute if entity @s[scores={AZR_chainKillUpg_defensecharge=2,AZR_chainKill_damageblocked=1..}] store result score #random Azr_system run random value 0..3
@@ -32,18 +32,28 @@ scoreboard players operation @s AZR_chainKill_damagetaken /= 24 constant
 scoreboard players operation @s AZR_chainKill_chargeup -= @s AZR_chainKill_damagetaken
 
  execute if score @s AZR_chainKill_chargeup matches ..0 run scoreboard players set @s AZR_chainKill_chargeup 0
-execute if score @s AZR_chainKill_chargeup matches ..99 run xp set @s 0 points
-execute if score @s AZR_chainKill_chargeup matches 100..199 run xp set @s 11 points
-execute if score @s AZR_chainKill_chargeup matches 200..299 run xp set @s 22 points
-execute if score @s AZR_chainKill_chargeup matches 300..399 run xp set @s 33 points
-execute if score @s AZR_chainKill_chargeup matches 400..499 run xp set @s 44 points
-execute if score @s AZR_chainKill_chargeup matches 500..599 run xp set @s 55 points
-execute if score @s AZR_chainKill_chargeup matches 600..699 run xp set @s 66 points
-execute if score @s AZR_chainKill_chargeup matches 700..799 run xp set @s 77 points
-execute if score @s AZR_chainKill_chargeup matches 800..899 run xp set @s 88 points
-execute if score @s AZR_chainKill_chargeup matches 900..999 run xp set @s 99 points
-execute if score @s AZR_chainKill_chargeup matches 1000.. run xp set @s 111 points
-execute if score @s AZR_chainKill_chargeup matches 1000.. if entity @s[tag=!AZR_chainKill_activated] run function skyblock:azr/system/player/skills/chainkill/chain_kill_execute
+execute if score @s AZR_chainKill_chargeup matches ..499 run xp set @s 0 points
+execute if score @s AZR_chainKill_chargeup matches 500..999 run xp set @s 5 points
+execute if score @s AZR_chainKill_chargeup matches 1000..1499 run xp set @s 11 points
+execute if score @s AZR_chainKill_chargeup matches 1500..1999 run xp set @s 16 points
+execute if score @s AZR_chainKill_chargeup matches 2000..2499 run xp set @s 22 points
+execute if score @s AZR_chainKill_chargeup matches 2500..2999 run xp set @s 27 points
+execute if score @s AZR_chainKill_chargeup matches 3000..3499 run xp set @s 33 points
+execute if score @s AZR_chainKill_chargeup matches 3500..3999 run xp set @s 38 points
+execute if score @s AZR_chainKill_chargeup matches 4000..4499 run xp set @s 44 points
+execute if score @s AZR_chainKill_chargeup matches 4500..4999 run xp set @s 49 points
+execute if score @s AZR_chainKill_chargeup matches 5000..5499 run xp set @s 55 points
+execute if score @s AZR_chainKill_chargeup matches 5500..5999 run xp set @s 60 points
+execute if score @s AZR_chainKill_chargeup matches 6000..6499 run xp set @s 66 points
+execute if score @s AZR_chainKill_chargeup matches 6500..6999 run xp set @s 71 points
+execute if score @s AZR_chainKill_chargeup matches 7000..7499 run xp set @s 77 points
+execute if score @s AZR_chainKill_chargeup matches 7500..7999 run xp set @s 82 points
+execute if score @s AZR_chainKill_chargeup matches 8000..8499 run xp set @s 88 points
+execute if score @s AZR_chainKill_chargeup matches 8500..8999 run xp set @s 83 points
+execute if score @s AZR_chainKill_chargeup matches 9000..9499 run xp set @s 99 points
+execute if score @s AZR_chainKill_chargeup matches 9500..9999 run xp set @s 104 points
+execute if score @s AZR_chainKill_chargeup matches 10000.. run xp set @s 111 points
+execute if score @s AZR_chainKill_chargeup matches 10000.. if entity @s[tag=!AZR_chainKill_activated] run function skyblock:azr/system/player/skills/chainkill/chain_kill_execute
 
 function skyblock:azr/system/player/weapons/shovel/main
 
