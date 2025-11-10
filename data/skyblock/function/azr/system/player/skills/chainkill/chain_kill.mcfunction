@@ -8,6 +8,7 @@ execute if entity @s[scores={AZR_chainKillUpg_chargeboost=2..}] run scoreboard p
 execute if entity @s[scores={AZR_chainKillUpg_chargeboost=3..}] run scoreboard players add #random Azr_system 10
 execute if entity @s[scores={AZR_chainKillUpg_chargeboost=4..}] run scoreboard players add #random Azr_system 10
 
+execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=0..}] AZR_chainKill_damage matches 6.. run say hi
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=0..}] AZR_chainKill_damage matches 6.. run scoreboard players add #random Azr_system 1
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=1..}] AZR_chainKill_damage matches 6.. run scoreboard players add #random Azr_system 1
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=2..}] AZR_chainKill_damage matches 6.. run scoreboard players add #random Azr_system 1
