@@ -60,6 +60,7 @@ execute if score @s AzrEntityTimer matches 2011 run advancement grant @a[tag=azr
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB13
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s emerald 5
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute if score @s AzrEntityTimer matches 2011 run fill -79933 28 4 -79929 31 4 air replace minecraft:red_stained_glass
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/moss_spore
 
 #out
