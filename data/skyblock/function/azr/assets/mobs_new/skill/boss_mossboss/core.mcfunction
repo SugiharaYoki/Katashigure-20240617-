@@ -59,7 +59,7 @@ execute if score @s AzrEntityTimer matches 2011 if score stage_bonus_thread AzrT
 execute if score @s AzrEntityTimer matches 2011 if score stage_bonus_thread AzrTimerStack matches 135 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB13
 execute if score @s AzrEntityTimer matches 2011 if score stage_bonus_thread AzrTimerStack matches 135 as @a[tag=azrPlayer] at @s run give @s emerald 5
 execute if score @s AzrEntityTimer matches 2011 if score stage_bonus_thread AzrTimerStack matches 135 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
-execute if score @s AzrEntityTimer matches 2011 if score stage_bonus_thread AzrTimerStack matches 135 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/fire_lit
+execute if score @s AzrEntityTimer matches 2011 if score stage_bonus_thread AzrTimerStack matches 135 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/moss_spore
 
 #out
 
