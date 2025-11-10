@@ -1,3 +1,5 @@
+
+execute if score @s rng8 matches 02..10 at @s rotated as @s run rotate @s facing entity @p[tag=azrPlayer]
 execute if score @s rng8 matches 02..10 facing entity @p[tag=azrPlayer] feet rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^0.5
 execute if score @s rng8 matches 02..10 facing entity @p[tag=azrPlayer] feet rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^1
 execute if score @s rng8 matches 02..10 facing entity @p[tag=azrPlayer] feet rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^1.5
@@ -13,6 +15,7 @@ execute if score @s rng8 matches 21 facing entity @p[tag=azrPlayer] feet rotated
 execute if score @s rng8 matches 21 facing entity @p[tag=azrPlayer] feet rotated ~ 0 as @s at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_move_marker] Pos
 execute if score @s rng8 matches 21 facing entity @p[tag=azrPlayer] feet rotated ~ 0 as @s at @s run kill @e[type=marker,tag=AzrielMob_move_marker]
 
+execute if score @s rng8 matches 32..40 at @s rotated as @s run rotate @s facing entity @p[tag=azrPlayer]
 execute if score @s rng8 matches 32..40 facing entity @p[tag=azrPlayer] feet rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^0.5
 execute if score @s rng8 matches 32..40 facing entity @p[tag=azrPlayer] feet rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^1
 execute if score @s rng8 matches 32..40 facing entity @p[tag=azrPlayer] feet rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^1.5
@@ -28,6 +31,7 @@ execute if score @s rng8 matches 51 facing entity @p[tag=azrPlayer] feet rotated
 execute if score @s rng8 matches 51 facing entity @p[tag=azrPlayer] feet rotated ~ 0 as @s at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_move_marker] Pos
 execute if score @s rng8 matches 51 facing entity @p[tag=azrPlayer] feet rotated ~ 0 as @s at @s run kill @e[type=marker,tag=AzrielMob_move_marker]
 
+execute if score @s rng8 matches 62..70 at @s rotated as @s run rotate @s facing entity @p[tag=azrPlayer]
 execute if score @s rng8 matches 62..70 facing entity @p[tag=azrPlayer] feet rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^0.5
 execute if score @s rng8 matches 62..70 facing entity @p[tag=azrPlayer] feet rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^1
 execute if score @s rng8 matches 62..70 facing entity @p[tag=azrPlayer] feet rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^1.5
