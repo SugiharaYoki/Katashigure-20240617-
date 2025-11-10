@@ -105,7 +105,7 @@ execute if score stage_main_thread AzrTimerStack matches 57..60 if entity @e[tag
 execute if score stage_main_thread AzrTimerStack matches 61 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 61 run scoreboard players set wave Azr_system 33
 execute if score stage_main_thread AzrTimerStack matches 61 run fill -79873 47 -110 -79873 48 -108 iron_bars
-execute if score stage_main_thread AzrTimerStack matches 61 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..5},tag=hasSkills] [{"text":"索命连击","color":"light_purple","bold":true},{"bold":false,"text":"可用点数已增加，目前为：6","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 61 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..5}] [{"text":"索命连击","color":"light_purple","bold":true},{"bold":false,"text":"可用点数已增加，目前为：6","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 61 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..5}] AZR_chainKillUpg_pts 6
 execute if score stage_main_thread AzrTimerStack matches 61 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage12(part2)\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 100"}]
 
@@ -279,7 +279,7 @@ execute if score stage_main_thread AzrTimerStack matches 8073 run particle large
 execute if score stage_main_thread AzrTimerStack matches 8073 run particle large_smoke -79846 50 -131 1 1 1 1.18 50
 execute if score stage_main_thread AzrTimerStack matches 8073 run summon evoker -79846 50 -131 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_witch_tier1",Health:10.0f,CustomName:'"斗篷术士"',attributes:[{id:"max_health",base:10.0d},{id:"attack_damage",base:1.5d},{id:"movement_speed",base:0.2d}]}
 execute if score stage_main_thread AzrTimerStack matches 8073 as @e[tag=AzrielMob,tag=!AzrielDecMob] at @s run kill @s
-execute if score stage_main_thread AzrTimerStack matches 8073 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..5},tag=hasSkills] [{"text":"索命连击","color":"light_purple","bold":true},{"bold":false,"text":"可用点数已增加，目前为：6","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 8073 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..5}] [{"text":"索命连击","color":"light_purple","bold":true},{"bold":false,"text":"可用点数已增加，目前为：6","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 8073 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..5}] AZR_chainKillUpg_pts 6
 execute if score stage_main_thread AzrTimerStack matches 8073 run scoreboard players set stage_main_thread AzrTimerStack 0
 

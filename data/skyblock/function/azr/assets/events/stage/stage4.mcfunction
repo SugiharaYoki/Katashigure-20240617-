@@ -129,7 +129,7 @@ execute if score stage_main_thread AzrTimerStack matches 336 run scoreboard play
 execute if score stage_main_thread AzrTimerStack matches 336 run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 336 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear..?","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 336 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage4
-execute if score stage_main_thread AzrTimerStack matches 336 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..1},tag=hasSkills] [{"text":"索命连击","color":"light_purple","bold":true},{"bold":false,"text":"可用点数已增加，目前为：2","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 336 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..1}] [{"text":"索命连击","color":"light_purple","bold":true},{"bold":false,"text":"可用点数已增加，目前为：2","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 336 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..1}] AZR_chainKillUpg_pts 2
 
 execute if score stage_main_thread AzrTimerStack matches 336 run clone -79934 38 18 -79934 38 18 -79931 38 42 replace move

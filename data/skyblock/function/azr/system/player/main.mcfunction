@@ -22,7 +22,7 @@ tag @s[tag=removeSpark] remove removeSpark
 # 机械弩
 execute if items entity @s weapon.mainhand crossbow[custom_data~{crossbow_v71:1b}] if items entity @s container.* *[custom_data~{crossbow_arrow:1b}] unless data entity @s SelectedItem.components."minecraft:charged_projectiles"[{id:"minecraft:arrow"}] run function skyblock:azr/system/player/weapons/crossbow/reload
 # 索命连击
-execute at @s[tag=hasSkills] run function skyblock:azr/system/player/skills/chainkill/chain_kill
+execute at @s run function skyblock:azr/system/player/skills/chainkill/chain_kill
 # 残城箭影
 execute at @s[tag=hasSkills,tag=azr_skills_arrow] run function skyblock:azr/system/player/skills/arrow/main
 
