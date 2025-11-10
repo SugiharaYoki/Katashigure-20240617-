@@ -57,6 +57,7 @@ execute if score @s AzrEntityTimer matches 2001 run stopsound @a[tag=azrShowDial
 execute if score @s AzrEntityTimer matches 2001 run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 10 0.7
 execute if score @s AzrEntityTimer matches 2011 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Boss Annihilated","color":"green"}
 execute if score @s AzrEntityTimer matches 2011 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/sub_boss_mossboss
+execute if score @s AzrEntityTimer matches 2011 run bossbar remove azr:boss_hp_bar_mossboss
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB13
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s emerald 5
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
