@@ -24,6 +24,7 @@ execute if score @s[scores={rng1=2}] rng8 matches 7 rotated as @s run rotate @s 
 
 execute if entity @s[scores={rng1=2..}] positioned ^ ^0.2 ^ run particle spore_blossom_air ~ ~ ~ 1 1 1 0 1
 execute if entity @s[scores={rng1=2..}] positioned ^ ^0.2 ^ run particle composter ~ ~ ~ 0.5 0 0.5 0 3
+execute if entity @s[scores={rng1=2..}] positioned ^ ^0.2 ^ run particle composter ~ ~ ~ 0.3 0 0.3 0 3
 execute if entity @s[scores={rng1=15..}] positioned ^ ^0.2 ^ run particle smoke ~ ~ ~ 0.5 0 0.5 0 3
 
 
