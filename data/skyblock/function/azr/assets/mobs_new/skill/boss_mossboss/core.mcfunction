@@ -66,6 +66,7 @@ execute if score @s AzrEntityTimer matches 2011 if score stage_bonus_thread AzrT
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79936,dx=10,y=27,dy=7,z=-15,dz=23] run bossbar remove azr:boss_hp_bar_mossboss
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79936,dx=10,y=27,dy=7,z=-15,dz=23] run tp @n[tag=AzrielBossMossBoss] ~ ~-200 ~
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79936,dx=10,y=27,dy=7,z=-15,dz=23] run kill @n[tag=AzrielBossMossBoss]
+execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79936,dx=10,y=27,dy=7,z=-15,dz=23] run function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_mossboss
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79936,dx=10,y=27,dy=7,z=-15,dz=23] run stopsound @a[tag=azrShowDialog] music minecraft:renegade
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79936,dx=10,y=27,dy=7,z=-15,dz=23] run kill @s
 
