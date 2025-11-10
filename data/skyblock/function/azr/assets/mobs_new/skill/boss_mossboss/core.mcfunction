@@ -14,7 +14,7 @@ execute if score @s AzrEntityTimer matches 1 run fill -79933 28 4 -79929 31 4 mi
 
 execute if score @s AzrEntityTimer matches 1..20 positioned -79931 28 -10 run function skyblock:azr/assets/events/effects/player_magic_release
 
-execute if score @s AzrEntityTimer matches 21 positioned -79931 28 -10 run function skyblock:azr/assets/mobs_new/unique/subboss_mossboss
+execute if score @s AzrEntityTimer matches 21 positioned -79931 28 -10 run function skyblock:azr/assets/mobs_new/skill/boss_mossboss/summon
 
 execute if score @s AzrEntityTimer matches 21 positioned -79931 28 -10 run bossbar add azr:boss_hp_bar_mossboss "失控的生命力 - 噬藓母虫"
 execute if score @s AzrEntityTimer matches 21 positioned -79931 28 -10 run bossbar set azr:boss_hp_bar_mossboss color red
