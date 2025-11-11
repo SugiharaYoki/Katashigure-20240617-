@@ -62,15 +62,6 @@ scoreboard objectives add If_EnchantArrow dummy
 scoreboard objectives add If_5cmAlarmMany dummy
 scoreboard objectives add If_CrBow dummy
 scoreboard objectives add LeftGame dummy
-scoreboard objectives add LevelBonus_1 dummy
-scoreboard objectives add LevelBonus_2 dummy
-scoreboard objectives add LevelBonus_3 dummy
-scoreboard objectives add LevelBonus_4 dummy
-scoreboard objectives add LevelBonus_5 dummy
-scoreboard objectives add LevelBonus_6 dummy
-scoreboard objectives add LevelBonus_7 dummy
-scoreboard objectives add LevelBonus_8 dummy
-scoreboard objectives add LevelBonus_9 dummy
 scoreboard objectives add Map_Code dummy
 scoreboard objectives add Map_Theme dummy
 scoreboard objectives add Map_Type dummy
@@ -78,16 +69,6 @@ scoreboard objectives add MazeLS dummy
 scoreboard objectives add Parkour_Chall dummy
 scoreboard objectives add ParkourLastStage dummy
 scoreboard objectives add ParkourRouteB dummy
-scoreboard objectives add RitualSign_1 dummy
-scoreboard objectives add RitualSign_2 dummy
-scoreboard objectives add RitualSign_3 dummy
-scoreboard objectives add RitualSign_4 dummy
-scoreboard objectives add RitualSign_5 dummy
-scoreboard objectives add RitualSign_6 dummy
-scoreboard objectives add RitualSign_7 dummy
-scoreboard objectives add RitualSign_8 dummy
-scoreboard objectives add RitualSign_9 dummy
-scoreboard objectives add RitualSign_10 dummy
 scoreboard objectives add SeGa_ParkourS dummy
 scoreboard objectives add SkyWarMap dummy
 scoreboard objectives add SocialOath dummy
@@ -116,21 +97,6 @@ scoreboard players set 10 constant 10
 
 #职业战
 scoreboard objectives add Job dummy
-scoreboard objectives add Job_Chose1 dummy
-scoreboard objectives add Job_Chose2 dummy
-scoreboard objectives add Job_Chose3 dummy
-scoreboard objectives add Job_Chose4 dummy
-scoreboard objectives add Job_Chose5 dummy
-scoreboard objectives add Job_Chose6 dummy
-scoreboard objectives add Job_Chose7 dummy
-scoreboard objectives add Job_Chose8 dummy
-scoreboard objectives add Job_Chose9 dummy
-scoreboard objectives add Job_Chose10 dummy
-scoreboard objectives add Job_Chose11 dummy
-scoreboard objectives add Job_Chose12 dummy
-scoreboard objectives add Job_Chose13 dummy
-scoreboard objectives add Job_Chose14 dummy
-scoreboard objectives add Job_Chose15 dummy
 scoreboard objectives add Job_Did dummy
 scoreboard objectives add Job_Rite dummy
 scoreboard objectives add Job_SpiritProp dummy
