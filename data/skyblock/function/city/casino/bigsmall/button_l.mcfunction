@@ -1,10 +1,10 @@
 execute if entity @s[tag=CasBSG1,tag=!CasBSGGS] run function skyblock:city/casino/bigsmall/changebet
 
-execute if entity @s[tag=CasBSGGS] if score @s CasBSGTemp1 < @s CasBSGTemp2 run tellraw @s [{"text":"猜测正确！B的数值为： ","color":"green"},{"score":{"name":"@s","objective":"CasBSGTemp2"}}]
+execute if entity @s[tag=CasBSGGS] if score @s CasBSGTemp1 < @s CasBSGTemp2 run tellraw @s [{"text":"猜测正确！\nB的数值为： ","color":"green"},{"score":{"name":"@s","objective":"CasBSGTemp2"}}]
 execute if entity @s[tag=CasBSGGS] if score @s CasBSGTemp1 < @s CasBSGTemp2 run tag @s add CasBSGsuccess
-execute if entity @s[tag=CasBSGGS] if score @s CasBSGTemp1 = @s CasBSGTemp2 run tellraw @s [{"text":"猜测错误！B的数值为： ","color":"red"},{"score":{"name":"@s","objective":"CasBSGTemp2"}}]
+execute if entity @s[tag=CasBSGGS] if score @s CasBSGTemp1 = @s CasBSGTemp2 run tellraw @s [{"text":"猜测错误！\nB的数值为： ","color":"red"},{"score":{"name":"@s","objective":"CasBSGTemp2"}}]
 execute if entity @s[tag=CasBSGGS] if score @s CasBSGTemp1 = @s CasBSGTemp2 run tag @s add CasBSGfail
-execute if entity @s[tag=CasBSGGS] if score @s CasBSGTemp1 > @s CasBSGTemp2 run tellraw @s [{"text":"猜测错误！B的数值为： ","color":"red"},{"score":{"name":"@s","objective":"CasBSGTemp2"}}]
+execute if entity @s[tag=CasBSGGS] if score @s CasBSGTemp1 > @s CasBSGTemp2 run tellraw @s [{"text":"猜测错误！\nB的数值为： ","color":"red"},{"score":{"name":"@s","objective":"CasBSGTemp2"}}]
 execute if entity @s[tag=CasBSGGS] if score @s CasBSGTemp1 > @s CasBSGTemp2 run tag @s add CasBSGfail
 
 execute if entity @s[tag=CasBSGsuccess] run playsound minecraft:item.armor.equip_gold neutral @a ~ ~ ~ 3
