@@ -95,4 +95,4 @@ execute as @s[scores={MultiMenu=996}] at @s run function skyblock:menu/index/mul
 #execute as @s[scores={MultiMenu=1001}] at @s run function skyblock:menu/index/multimenu1001_afk_noa_pa
 #execute as @s[scores={MultiMenu=1002}] at @s run function skyblock:menu/index/multimenu1002_afk_noa_pb
 
-execute as @s[scores={MultiMenu=7450101..7459999}] at @s run function skyblock:world_system_functionreader_mg
+execute as @s[scores={MultiMenu=7450101..7459999}] at @s run function skyblock:mg/trigger

@@ -13,7 +13,7 @@ execute if entity @n[tag=sc,tag=OneShotMap006] run clone -78 -32 -148 -53 -26 -1
 #execute if entity @n[tag=sc,tag=OneShotMap007] run
 #execute if entity @n[tag=sc,tag=OneShotMap008] run
 
-schedule clear skyblock:mg/mg_oneshot_invite_expire
+schedule clear skyblock:mg/oneshot/invite_expire
 tag @s add OneShotAccept
 tag @a remove OneShotGaming
 tag @a remove OneShotWin

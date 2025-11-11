@@ -1,5 +1,5 @@
 
-execute if block -17 23 28 soul_lantern run function skyblock:mg/mg_oneshot_loop
+execute if block -17 23 28 soul_lantern run function skyblock:mg/oneshot/loop
 execute if entity @a[tag=SeGa_DVA] run function skyblock:dv/dv_corex20
 #execute if entity @a[tag=SeGa_StandLastA] run function skyblock:azr/ingame_azrielsmidgarden_shop_giver disable
 

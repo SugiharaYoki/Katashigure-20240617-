@@ -19,5 +19,5 @@ execute if entity @n[tag=sc,tag=OneShotMap008] run tellraw @a[tag=!Gaming] {"tex
 tellraw @a[tag=!Gaming,tag=!OneShotInvite] {"text":"—— [参加游戏] ——","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 7450101"},"hoverEvent":{"action":"show_text","contents":{"text":"接受这条邀请","color":"green"}}}
 tellraw @a[tag=!Gaming,tag=OneShotInvite] {"text":"—— [取消邀请] ——","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 7450102"},"hoverEvent":{"action":"show_text","contents":{"text":"将这条邀请作废","color":"green"}}}
 setblock -17 23 28 minecraft:soul_lantern
-schedule function skyblock:mg/mg_oneshot_invite_expire 15s
+schedule function skyblock:mg/oneshot/invite_expire 15s
 tag @s add OneShotInvite

@@ -26,8 +26,8 @@ execute as @e[type=marker,tag=OneShotDArPk] at @s if block ~ ~ ~0.1 mangrove_pla
 execute as @a[tag=OneShotGaming,scores={DeathCountTemp=1..}] at @s run tag @s add OneShotLose
 execute if entity @a[tag=OneShotGaming,tag=OneShotLose] run tag @a[tag=OneShotGaming,tag=!OneShotLose] add OneShotWin
 execute as @r[tag=OneShotGaming] at @s unless entity @a[tag=OneShotGaming,distance=0.001..] run tag @s add OneShotWin
-execute as @a[tag=OneShotWin] at @s run function skyblock:mg/mg_oneshot_finish
-execute unless entity @a[tag=OneShotInvite] run function skyblock:mg/mg_oneshot_finish
+execute as @a[tag=OneShotWin] at @s run function skyblock:mg/oneshot/finish
+execute unless entity @a[tag=OneShotInvite] run function skyblock:mg/oneshot/finish
 execute unless entity @a[tag=OneShotInvite] run tell @a[tag=Debug] "Lacking OneShotInvite"
-execute if entity @a[tag=OneShotInvite,tag=OneShotGaming] unless entity @a[tag=OneShotAccept] run function skyblock:mg/mg_oneshot_finish
+execute if entity @a[tag=OneShotInvite,tag=OneShotGaming] unless entity @a[tag=OneShotAccept] run function skyblock:mg/oneshot/finish
 execute if entity @a[tag=OneShotInvite,tag=OneShotGaming] unless entity @a[tag=OneShotAccept] run tell @a[tag=Debug] "Lacking OneShotAccept"
