@@ -12,10 +12,10 @@ execute if score sc AnnouncementRo matches 48 unless entity @a[tag=Gaming] run s
 
 execute if score sc AnnouncementRo matches 56.. run scoreboard players set sc AnnouncementRo 0
 #
-execute if block -41 156 -57 lime_stained_glass if score sc AnnouncementRoB matches 1 as @a at @s unless score @s dailydiv_n >= @e[limit=1,tag=sc] dailydiv run function skyblock:city_utility_dayshift_notice
-execute if block -41 156 -57 orange_stained_glass if score sc AnnouncementRoB matches 1 as @a at @s unless score @s dailydiv_n >= @e[limit=1,tag=sc] dailydiv run function skyblock:city_utility_dayshift_notice
-execute if block -41 156 -57 purple_stained_glass if score sc AnnouncementRoB matches 1 as @a at @s unless score @s dailydiv_n2 >= @e[limit=1,tag=sc] dailydivc2 run function skyblock:city_utility_dayshift_notice
-execute if block -41 156 -57 blue_stained_glass if score sc AnnouncementRoB matches 1 as @a at @s unless score @s dailydiv_n2 >= @e[limit=1,tag=sc] dailydivc2 run function skyblock:city_utility_dayshift_notice
+execute if block -41 156 -57 lime_stained_glass if score sc AnnouncementRoB matches 1 as @a at @s unless score @s dailydiv_n >= @e[limit=1,tag=sc] dailydiv run function skyblock:city/utility/dayshift_notice
+execute if block -41 156 -57 orange_stained_glass if score sc AnnouncementRoB matches 1 as @a at @s unless score @s dailydiv_n >= @e[limit=1,tag=sc] dailydiv run function skyblock:city/utility/dayshift_notice
+execute if block -41 156 -57 purple_stained_glass if score sc AnnouncementRoB matches 1 as @a at @s unless score @s dailydiv_n2 >= @e[limit=1,tag=sc] dailydivc2 run function skyblock:city/utility/dayshift_notice
+execute if block -41 156 -57 blue_stained_glass if score sc AnnouncementRoB matches 1 as @a at @s unless score @s dailydiv_n2 >= @e[limit=1,tag=sc] dailydivc2 run function skyblock:city/utility/dayshift_notice
 
 execute if score sc AnnouncementRoB matches 3.. run scoreboard players set sc AnnouncementRoB 0
 execute if entity @a[tag=ServerManager,team=!TokumeiM,team=!TokumeiO,team=!TokumeiD,tag=!Gaming] as @a[tag=!Gaming] at @s run function skyblock:city/team
