@@ -29,3 +29,7 @@ attribute @s knockback_resistance modifier remove azr_sariel:upg_03e
 attribute @s knockback_resistance modifier remove azr_sariel:upg_05e
 
 tag @s remove AZR_sariel_01_effected
+
+
+
+

@@ -108,6 +108,7 @@ scoreboard objectives add AzrSariel_Skill_SlowRing_cooldown dummy
 scoreboard objectives add AzrSariel_Skill_BioMagnet dummy
 
 scoreboard objectives add AZS_SoulFrag dummy
+scoreboard objectives add AzrSariel_Data_CostAmount dummy
 
 #护身符
 scoreboard objectives add AzrSariel_Amulet_generic_damage_dealt minecraft.custom:minecraft.damage_dealt
