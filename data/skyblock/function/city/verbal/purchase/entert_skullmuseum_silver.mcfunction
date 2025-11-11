@@ -7,4 +7,4 @@ execute as @s at @s[tag=purchasesuccess] run scoreboard players add @s SkMu_Silv
 execute as @s at @s[tag=purchasesuccess] run tag @s remove purchasesuccess
 tellraw @s [{"text":"如今持有FSB： ","color":"gold"},{"score":{"name":"@s","objective":"Perm_PersonFSB"}}]
 scoreboard players set @s MultiMenu 0
-function skyblock:verbal/city/skullmuseum_sub
+function skyblock:city/verbal/skullmuseum_sub

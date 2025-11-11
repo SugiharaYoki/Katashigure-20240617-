@@ -14,17 +14,17 @@ execute as @s[tag=!Registered] run function skyblock:city/newcomer_registration
 execute as @s[tag=Shop_CSSON,tag=!Gaming,distance=0..9000] at @s unless entity @s[x=-10137,dx=10000,y=40,dy=20,z=-121,dz=6] run effect give @s minecraft:speed 2 9 true
 
 
-execute as @s[tag=!Gaming] at @s run function skyblock:world_system_multimenu
+execute as @s[tag=!Gaming] at @s run function skyblock:menu/trigger
 execute as @s[tag=Gaming] at @s run tag @s add NoMultiMenu
 
 
-execute as @s[scores={Common=16210001..16339999}] run function skyblock:world_system_functionreader_purchase
+execute as @s[scores={Common=16210001..16339999}] run function skyblock:city/verbal/trigger
 execute as @s[scores={Common=114514}] run kill @s
 execute as @s[scores={Common=114514}] run scoreboard players set @s Common 0
 #execute as @a[scores={Common=84331}] at @s run function skyblock:azr/ingame_azrielsmidgarden_skill_management
 
 execute as @s[tag=!NoMultiMenu] at @s run function skyblock:world_system_functionreader1
-execute as @s[scores={If_TalkVill=1..},gamemode=!spectator] at @s run function skyblock:world_system_functionreader_verbal
+execute as @s[scores={If_TalkVill=1..},gamemode=!spectator] at @s run function skyblock:city/verbal/detect
 
 
 

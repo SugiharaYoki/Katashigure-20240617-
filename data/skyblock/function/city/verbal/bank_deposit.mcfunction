@@ -10,4 +10,4 @@ execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 4 run tellraw
 execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 4 run tellraw @s {"text":"“是来存钱的吗？可以都存进来。”","bold":false,"color":"white"}
 execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 5 run tellraw @s {"text":"银行前台：","bold":true,"color":"aqua"}
 execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 5 run tellraw @s {"text":"“不是吧，不会真有人打算往账户里存一块钱吧。”","bold":false,"color":"white"}
-function skyblock:verbal/city/bank_deposit_repeat
+function skyblock:city/verbal/bank_deposit_repeat

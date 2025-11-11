@@ -2,8 +2,8 @@ execute unless score @s dailylogin1 matches -99999.. run scoreboard players set 
 execute unless score @s dailylogin2 matches -99999.. run scoreboard players set @s dailylogin2 0
 
 tellraw @s {"text":"今日份登录成功！","color":"white","bold":true}
-tellraw @s {"text":"PVP《棋盘战争》已正式回归！\n花园系列第2作『厄珀娅的悲歌』已完结，真结局等你来寻找！\n『亚兹列尔的中庭花园』重置进度：已推进至第7关；推出全新旁支区域“传热根系”；第8关与图书馆制作中","color":"white"}
-tellraw @s {"text":"你获得了新的占卜机会","color":"gold"}
+tellraw @s {"text":"PVP《棋盘战争》已正式回归！\n花园系列第2作『厄珀娅的悲歌』已完结，真结局等你来寻找！\n『亚兹列尔的中庭花园』重置进度：已推进至第7关；推出全新旁支区域“传热根系”、“智述禁馆”、“逾怜藓路”；第8关与图书馆制作中","color":"white"}
+tellraw @s {"text":"你获得了新的占卜机会","color":"gold","bold": true}
 execute unless score @s dailylogin_c1 matches -99999.. run scoreboard players set @s dailylogin_c1 0
 execute unless score @s dailylogin_c2 matches -99999.. run scoreboard players set @s dailylogin_c2 0
 execute if block -41 156 -57 lime_stained_glass run scoreboard players add @s dailylogin1 1

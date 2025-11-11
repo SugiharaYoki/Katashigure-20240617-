@@ -94,4 +94,4 @@ execute as @s[scores={MultiMenu=16210027,Perm_PersonFSBS=1000000..}] at @s run s
 
 tag @s remove purchasesuccess
 scoreboard players set @s MultiMenu 0
-function skyblock:verbal/city/bank_deposit_repeat
+function skyblock:city/verbal/bank_deposit_repeat

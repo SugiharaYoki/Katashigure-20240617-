@@ -7,4 +7,4 @@ execute as @s at @s[tag=purchasesuccess] run tag @s add Stal
 execute as @s at @s[tag=purchasesuccess] run tag @s remove purchasesuccess
 tellraw @s [{"text":"如今持有FSB： ","color":"gold"},{"score":{"name":"@s","objective":"Perm_PersonFSB"}}]
 scoreboard players set @s MultiMenu 0
-function skyblock:verbal/city/pivotcasino
+function skyblock:city/verbal/pivotcasino

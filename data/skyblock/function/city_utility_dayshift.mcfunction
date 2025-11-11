@@ -28,8 +28,7 @@ execute if block -41 156 -57 blue_stained_glass as @a[scores={ZeroBGM=3}] at @s 
 execute if block -41 156 -57 blue_stained_glass as @a[scores={ZeroBGM=4}] at @s run playsound app1.hallofmirror master @s ~ ~ ~ 0.5
 execute if block -41 156 -57 blue_stained_glass as @a[scores={ZeroBGM=6}] at @s run playsound app2.noiseproof master @s ~ ~ ~ 0.5
 execute if block -41 156 -57 blue_stained_glass as @a[scores={ZeroBGM=7}] at @s run playsound replica master @s ~ ~ ~ 0.5
-#execute if block -41 156 -57 lime_stained_glass run playsound replica master @a 0 200 0 100000
-#execute if block -41 156 -57 orange_stained_glass run playsound  master @a 0 200 0 100000
+
 execute if block -41 156 -57 purple_stained_glass as @a at @s run playsound nalca master @s ~ ~ ~ 0.5
 
 execute if block -41 156 -57 lime_stained_glass run scoreboard players add @e[limit=1,tag=sc] dailydiv 1

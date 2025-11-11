@@ -84,7 +84,7 @@ execute as @s[scores={MultiMenu=131}] at @s run function skyblock:pvp/skywar/ble
 execute as @s[scores={MultiMenu=131001..139999}] at @s run function skyblock:pvp/skywar/bless/setting/bless_execute
 
 execute as @s[scores={MultiMenu=101700..102000}] at @s run function skyblock:world_system_functionreader_musicbox
-execute as @s[scores={MultiMenu=16210001..16329999}] at @s run function skyblock:world_system_functionreader_purchase
+execute as @s[scores={MultiMenu=16210001..16329999}] at @s run function skyblock:city/verbal/trigger
 
 execute as @s[scores={MultiMenu=991}] at @s run function skyblock:menu/index/multimenu991_anypage_button_tomainmenu
 execute as @s[scores={MultiMenu=992}] at @s run function skyblock:menu/index/multimenu992_anypage_enableskywar
