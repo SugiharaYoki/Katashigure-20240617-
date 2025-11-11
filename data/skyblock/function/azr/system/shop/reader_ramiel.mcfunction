@@ -187,7 +187,7 @@ tellraw @s [{"text":"\n "},{"text":"假定回溯  \n","color":"#308aff","bold": 
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerz]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432326"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}},\
 {"text":"\n "},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarker1]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432327"},"hoverEvent":{"action":"show_text","contents":{"text":"权之残影 - 天界怀表\n在波数暂停时手持，可以冻结计时","color":"white"}}},\
-{"selector":"@n[tag=AzrRamielExStage_displaymarkerBm]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432328"},"hoverEvent":{"action":"show_text","contents":{"text":"噬藓母虫 - 深藓石板\n造成攻击可增加“索命连击”充能、在重生点可获得5分钟孢子的庇护（生命值上限加成）","color":"white"}}}]
+{"selector":"@n[tag=AzrRamielExStage_displaymarkerBm]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432328"},"hoverEvent":{"action":"show_text","contents":{"text":"噬藓母虫 - 深藓石板\n造成攻击可增加“索命连击”充能、在重生锚点可获得5分钟孢子的庇护（生命值上限加成）","color":"white"}}}]
 
 
 
