@@ -59,8 +59,8 @@ execute as @s[scores={MultiMenu=834}] at @s run function skyblock:menu/index/mul
 execute as @s[scores={MultiMenu=835}] at @s run function skyblock:menu/index/multimenu835_room
 execute as @s[scores={MultiMenu=836}] at @s run function skyblock:menu/index/multimenu836_qqdance_page
 execute if entity @s[scores={MultiMenu=828}] run function skyblock:menu/index/multimenu828_teleport_xuanyuland1
-execute as @s[scores={MultiMenu=815001..815999}] at @s run function skyblock:world_system_functionreader_maze
-execute as @s[scores={MultiMenu=832001..832999}] at @s run function skyblock:world_system_functionreader_maze
+execute as @s[scores={MultiMenu=815001..815999}] at @s run function skyblock:mg/maze/trigger
+execute as @s[scores={MultiMenu=832001..832999}] at @s run function skyblock:mg/maze/trigger
 execute as @s[scores={MultiMenu=836001..836999}] at @s run function skyblock:mg/qqdance/init
 execute as @s[scores={MultiMenu=841}] at @s run function skyblock:mg/warbridge/team_join_lime
 execute as @s[scores={MultiMenu=842}] at @s run function skyblock:mg/warbridge/team_join_orange
