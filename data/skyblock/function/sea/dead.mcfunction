@@ -93,6 +93,9 @@ tag @s remove sea_teleport22
 tag @s remove sea_teleport23
 tag @s remove SEA_swap_defending
 
+tag @s[tag=e_w_ahl2_e] remove SEA_w_armor_upg1
+tag @s[tag=e_w_ahl2_e] remove SEA_w_armor_upg2
+
 tag @s remove SEAyuehan_act_heal_target
 
 execute if entity @s[tag=sea_ch3_badend,advancements={skyblock:sea/doc/g32=false}] at @s run give @s mojang_banner_pattern[custom_data={sea_docg32:true}]
