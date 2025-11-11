@@ -94,11 +94,11 @@ execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,
 execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=22}] positioned -79841 29.2 22 run kill @n[type=item_display,distance=..5]
 execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=27}] positioned -79841 29.2 22 as @a[tag=azrPlayer,tag=!AZS_SoulFrag01] run title @s times 30t 120t 12t
 execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=27}] positioned -79841 29.2 22 as @a[tag=azrPlayer,tag=!AZS_SoulFrag01] run title @s title {"text": "灵魂碎片已吸收","color": "#7321cb","bold": true}
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=34}] positioned -79841 29.2 22 as @a[tag=azrPlayer,tag=!AZS_SoulFrag01] run title @s times 0t 90t 12t
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=34}] positioned -79841 29.2 22 as @a[tag=azrPlayer,tag=!AZS_SoulFrag01] run title @s title {"text": "灵魂碎片已吸收","color": "#7321cb","bold": true}
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=34}] positioned -79841 29.2 22 as @a[tag=azrPlayer,tag=!AZS_SoulFrag01] run title @s subtitle [{"text": "现在的灵魂碎片总数：","color": "#7321cb","bold": true},{"score":{"name":"@s","objective":"AZS_SoulFrag"}}]
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=34}] positioned -79841 29.2 22 as @a[tag=azrPlayer,tag=!AZS_SoulFrag01] run tag @s add AZS_SoulFrag01
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=34}] run kill @s
+execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=36}] positioned -79841 29.2 22 as @a[tag=azrPlayer,tag=!AZS_SoulFrag01] run title @s times 0t 70t 12t
+execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=36}] positioned -79841 29.2 22 as @a[tag=azrPlayer,tag=!AZS_SoulFrag01] run title @s title {"text": "灵魂碎片已吸收","color": "#7321cb","bold": true}
+execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=36}] positioned -79841 29.2 22 as @a[tag=azrPlayer,tag=!AZS_SoulFrag01] run title @s subtitle [{"text": "现在的灵魂碎片总数：","color": "#7321cb","bold": true},{"score":{"name":"@s","objective":"AZS_SoulFrag"}}]
+execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=36}] positioned -79841 29.2 22 as @a[tag=azrPlayer,tag=!AZS_SoulFrag01] run tag @s add AZS_SoulFrag01
+execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=36}] run kill @s
 
 
 
