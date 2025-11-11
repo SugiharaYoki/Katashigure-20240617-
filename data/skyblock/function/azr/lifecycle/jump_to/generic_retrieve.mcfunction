@@ -51,33 +51,33 @@ execute at @n[tag=id_data_reading,type=marker] run item replace entity @s invent
 execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.25 from block ~ ~ ~ container.25
 execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.26 from block ~ ~ ~ container.26
 
-execute if items block ~ ~-1 ~ container.0 green_wool run tag @s add AZS_BoS01
-execute if items block ~ ~-1 ~ container.1 green_wool run tag @s add AZS_BoS02
-execute if items block ~ ~-1 ~ container.2 green_wool run tag @s add AZS_BoS03
-execute if items block ~ ~-1 ~ container.3 green_wool run tag @s add AZS_BoS04
-execute if items block ~ ~-1 ~ container.4 green_wool run tag @s add AZS_BoS05
-execute if items block ~ ~-1 ~ container.5 green_wool run tag @s add AZS_BoS06
-execute if items block ~ ~-1 ~ container.6 green_wool run tag @s add AZS_BoS07
-execute if items block ~ ~-1 ~ container.7 green_wool run tag @s add AZS_BoS08
-execute if items block ~ ~-1 ~ container.8 green_wool run tag @s add AZS_BoS09
-execute if items block ~ ~-1 ~ container.9 green_wool run tag @s add AZS_BoS10
-execute if items block ~ ~-1 ~ container.10 green_wool run tag @s add AZS_BoS11
-execute if items block ~ ~-1 ~ container.11 green_wool run tag @s add AZS_BoS12
-execute if items block ~ ~-1 ~ container.12 green_wool run tag @s add AZS_BoS13
-execute if items block ~ ~-1 ~ container.13 green_wool run tag @s add AZS_BoS14
-execute if items block ~ ~-1 ~ container.14 green_wool run tag @s add AZS_BoS15
-execute if items block ~ ~-1 ~ container.15 green_wool run tag @s add AZS_BoS16
-execute if items block ~ ~-1 ~ container.16 green_wool run tag @s add AZS_BoS17
-execute if items block ~ ~-1 ~ container.17 green_wool run tag @s add AZS_BoS18
-execute if items block ~ ~-1 ~ container.18 green_wool run tag @s add AZS_BoS19
-execute if items block ~ ~-1 ~ container.19 green_wool run tag @s add AZS_BoS20
-execute if items block ~ ~-1 ~ container.20 green_wool run tag @s add AZS_BoS21
-execute if items block ~ ~-1 ~ container.21 green_wool run tag @s add AZS_BoS22
-execute if items block ~ ~-1 ~ container.22 green_wool run tag @s add AZS_BoS23
-execute if items block ~ ~-1 ~ container.23 green_wool run tag @s add AZS_BoS24
-execute if items block ~ ~-1 ~ container.24 green_wool run tag @s add AZS_BoS25
-execute if items block ~ ~-1 ~ container.25 green_wool run tag @s add AZS_BoS26
-execute if items block ~ ~-1 ~ container.26 green_wool run tag @s add AZS_BoS27
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.0 green_wool run tag @s add AZS_BoS01
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.1 green_wool run tag @s add AZS_BoS02
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.2 green_wool run tag @s add AZS_BoS03
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.3 green_wool run tag @s add AZS_BoS04
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.4 green_wool run tag @s add AZS_BoS05
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.5 green_wool run tag @s add AZS_BoS06
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.6 green_wool run tag @s add AZS_BoS07
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.7 green_wool run tag @s add AZS_BoS08
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.8 green_wool run tag @s add AZS_BoS09
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.9 green_wool run tag @s add AZS_BoS10
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.10 green_wool run tag @s add AZS_BoS11
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.11 green_wool run tag @s add AZS_BoS12
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.12 green_wool run tag @s add AZS_BoS13
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.13 green_wool run tag @s add AZS_BoS14
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.14 green_wool run tag @s add AZS_BoS15
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.15 green_wool run tag @s add AZS_BoS16
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.16 green_wool run tag @s add AZS_BoS17
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.17 green_wool run tag @s add AZS_BoS18
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.18 green_wool run tag @s add AZS_BoS19
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.19 green_wool run tag @s add AZS_BoS20
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.20 green_wool run tag @s add AZS_BoS21
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.21 green_wool run tag @s add AZS_BoS22
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.22 green_wool run tag @s add AZS_BoS23
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.23 green_wool run tag @s add AZS_BoS24
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.24 green_wool run tag @s add AZS_BoS25
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.25 green_wool run tag @s add AZS_BoS26
+execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.26 green_wool run tag @s add AZS_BoS27
 
 function skyblock:city/id/read_finish
 
