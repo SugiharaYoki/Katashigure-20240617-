@@ -19,7 +19,7 @@ execute unless block -17 23 32 minecraft:soul_lantern as @s[tag=PVP_see,x=50000,
 execute if block ~ ~-1 ~ minecraft:emerald_block run function skyblock:city_parkour_save
 
 
-execute if score sc AnnouncementRo matches 1 unless entity @s[scores={id=1..}] run function skyblock:id_create
+execute if score sc AnnouncementRo matches 1 unless entity @s[scores={id=1..}] run function skyblock:city/id_create
 
 
 gamemode adventure @s[tag=!Gaming,tag=!ServerManager,tag=!ServerOperator]

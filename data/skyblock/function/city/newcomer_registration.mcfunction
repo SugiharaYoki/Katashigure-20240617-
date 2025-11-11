@@ -61,4 +61,4 @@ tp @s -43 55 0 facing -42 55 0
 spawnpoint @s -43 55 0 -90
 advancement grant @s only skyblock:veryroot
 tag @s add Registered
-function skyblock:id_create
+function skyblock:city/id_create

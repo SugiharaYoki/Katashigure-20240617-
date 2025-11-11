@@ -1,4 +1,4 @@
-execute if entity @s[tag=CasBSG1,tag=!CasBSGGS] run function skyblock:city_casino_bigsmall_changebet
+execute if entity @s[tag=CasBSG1,tag=!CasBSGGS] run function skyblock:city/casino/bigsmall/changebet
 
 execute if entity @s[tag=CasBSGGS] if score @s CasBSGTemp1 < @s CasBSGTemp2 run tellraw @s [{"text":"猜测正确！B的数值为： ","color":"green"},{"score":{"name":"@s","objective":"CasBSGTemp2"}}]
 execute if entity @s[tag=CasBSGGS] if score @s CasBSGTemp1 < @s CasBSGTemp2 run tag @s add CasBSGsuccess

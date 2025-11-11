@@ -8,7 +8,7 @@ execute unless block -25 23 32 soul_lantern as @s[tag=SEAPT] at @s unless entity
 #切石机
 execute at @s if block ~ ~ ~ stonecutter run damage @s 3 minecraft:sting
 
-execute as @s[tag=!Registered] run function skyblock:newcomer_registration
+execute as @s[tag=!Registered] run function skyblock:city/newcomer_registration
 
 
 execute as @s[tag=Shop_CSSON,tag=!Gaming,distance=0..9000] at @s unless entity @s[x=-10137,dx=10000,y=40,dy=20,z=-121,dz=6] run effect give @s minecraft:speed 2 9 true

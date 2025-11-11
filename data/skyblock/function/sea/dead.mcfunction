@@ -95,6 +95,7 @@ tag @s remove SEA_swap_defending
 
 tag @s[tag=e_w_ahl2_e] remove SEA_w_armor_upg1
 tag @s[tag=e_w_ahl2_e] remove SEA_w_armor_upg2
+tag @s remove SEA_w_upg_SUCCESS
 
 tag @s remove SEAyuehan_act_heal_target
 
