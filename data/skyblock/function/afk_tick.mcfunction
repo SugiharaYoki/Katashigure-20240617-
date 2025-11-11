@@ -24,7 +24,7 @@ execute if entity @s[tag=!AFKING,scores={Afk_tick=2400..}] run tellraw @a [{"sel
 execute if entity @s[tag=!AFKING,scores={Afk_tick=2400..}] run scoreboard players set @s Afk_totalFSB 0
 execute if entity @s[tag=!AFKING,scores={Afk_tick=2400..},tag=!NoAutoNoA] run tag @s add city_broadcast_off
 execute if entity @s[tag=!AFKING,scores={Afk_tick=2400..},tag=!NoAutoNoA] run tellraw @s [{"text":"因为你在AFK，所以自动开启了关闭公告，如要关闭请在游戏设置里修改。","color":"aqua"}]
-execute if entity @s[tag=!AFKING,scores={Afk_tick=2400..},tag=!NoAutoNoA] run function skyblock:world_system_team_city
+execute if entity @s[tag=!AFKING,scores={Afk_tick=2400..},tag=!NoAutoNoA] run function skyblock:city/team
 tag @s[scores={Afk_tick=2400..}] add AFKING
 # - - AFKed
 
@@ -50,7 +50,7 @@ execute if entity @s[tag=AFKING,scores={Afk_totalDistance=1..}] run tellraw @s [
 execute if entity @s[tag=AFKING,scores={Afk_totalDistance=1..},tag=!NoAutoNoA] run tag @s remove city_broadcast_off
 execute if entity @s[tag=AFKING,scores={Afk_totalDistance=1..},tag=!NoAutoNoA] run tellraw @s [{"text":"已重新开启显示公告。","color":"aqua"}]
 tag @s[tag=AFKING,scores={Afk_totalDistance=1..}] remove AFKING
-execute if entity @s[scores={Afk_totalDistance=1..}] run function skyblock:world_system_team_city
+execute if entity @s[scores={Afk_totalDistance=1..}] run function skyblock:city/team
 
 scoreboard players set @s Afk_distCrouch 0
 scoreboard players set @s Afk_distSprint 0

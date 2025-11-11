@@ -18,7 +18,7 @@ execute if block -41 156 -57 purple_stained_glass if score sc AnnouncementRoB ma
 execute if block -41 156 -57 blue_stained_glass if score sc AnnouncementRoB matches 1 as @a at @s unless score @s dailydiv_n2 >= @e[limit=1,tag=sc] dailydivc2 run function skyblock:city_utility_dayshift_notice
 
 execute if score sc AnnouncementRoB matches 3.. run scoreboard players set sc AnnouncementRoB 0
-execute if entity @a[tag=ServerManager,team=!TokumeiM,team=!TokumeiO,team=!TokumeiD,tag=!Gaming] as @a[tag=!Gaming] at @s run function skyblock:world_system_team_city
+execute if entity @a[tag=ServerManager,team=!TokumeiM,team=!TokumeiO,team=!TokumeiD,tag=!Gaming] as @a[tag=!Gaming] at @s run function skyblock:city/team
 
 
 
