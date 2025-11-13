@@ -1,6 +1,6 @@
 execute if items entity @s player.cursor *[custom_data~{azr_loginbonus_level_1:1b}] store result score @s rng1 run random value 50..59
-execute if items entity @s player.cursor *[custom_data~{azr_loginbonus_level_2:1b}] store result score @s rng1 run random value 50..59
-execute if items entity @s player.cursor *[custom_data~{azr_loginbonus_level_3:1b}] store result score @s rng1 run random value 50..59
+execute if items entity @s player.cursor *[custom_data~{azr_loginbonus_level_2:1b}] store result score @s rng1 run random value 50..68
+execute if items entity @s player.cursor *[custom_data~{azr_loginbonus_level_3:1b}] store result score @s rng1 run random value 50..68
 
 
 playsound minecraft:block.chest.open player @s ~ ~ ~ 1 1.3
@@ -29,6 +29,15 @@ execute if score @s rng1 matches 64 run give @s arrow 15
 execute if score @s rng1 matches 65 run give @s coal 5
 execute if score @s rng1 matches 66 run give @s bone 3
 execute if score @s rng1 matches 67 run function skyblock:azr/assets/items/others/instant_spark
+execute if score @s rng1 matches 67 run function skyblock:azr/assets/items/others/instant_spark
+execute if score @s rng1 matches 67 run function skyblock:azr/assets/items/others/instant_spark
+execute if score @s rng1 matches 67 run function skyblock:azr/assets/items/others/instant_spark
+execute if score @s rng1 matches 67 run function skyblock:azr/assets/items/others/instant_spark
+execute if score @s rng1 matches 68 run function skyblock:azr/assets/items/others/arrow_box
+execute if score @s rng1 matches 68 run function skyblock:azr/assets/items/others/arrow_box
+execute if score @s rng1 matches 68 run function skyblock:azr/assets/items/others/arrow_box
+execute if score @s rng1 matches 68 run function skyblock:azr/assets/items/others/arrow_box
+execute if score @s rng1 matches 68 run function skyblock:azr/assets/items/others/arrow_box
 
 execute if items entity @s player.cursor *[custom_data~{azr_loginbonus_level_1:1b}] run clear @s *[custom_data~{azr_loginbonus_level_1:1b}] 1
 execute if items entity @s player.cursor *[custom_data~{azr_loginbonus_level_2:1b}] run clear @s *[custom_data~{azr_loginbonus_level_2:1b}] 1
