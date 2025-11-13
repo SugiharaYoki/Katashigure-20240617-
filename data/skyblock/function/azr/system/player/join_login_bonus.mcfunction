@@ -1,5 +1,7 @@
 
 
+execute unless entity @s[scores={Azr_Login_Identifier=1..}] run scoreboard players set @s Azr_Login_Identifier 0
+
 playsound minecraft:entity.experience_orb.pickup player @s ~ ~ ~ 2 0.6
 
 scoreboard players operation @s rng1 = @s Azr_Login_Identifier
