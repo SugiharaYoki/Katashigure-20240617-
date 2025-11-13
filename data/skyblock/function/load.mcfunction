@@ -89,6 +89,8 @@ scoreboard objectives add Temp4 dummy
 scoreboard objectives add TimeRemainUnsee dummy
 scoreboard objectives add ZeroBGM dummy
 
+scoreboard objectives add Global_Age dummy
+
 #constant
 scoreboard objectives add constant dummy
 scoreboard players set 2 constant 2

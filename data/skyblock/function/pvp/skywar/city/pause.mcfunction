@@ -33,7 +33,7 @@ title @a[tag=!Gaming,tag=!NoSkyWar] title {"text":"开局暂停","bold":true,"co
 #-#-#setblock 12 88 86 air
 #《禁止再次开局》
 #《计入历史启动》
-scoreboard players remove 10e959db-4b44-4cdd-b98c-350d3b454206 HistoryPVP 1
+scoreboard players remove PVP_Skywar_Start_Count Global_Age 1
 #无意义变量 scoreboard players set @s Random1 0
 #《变量初始化》
 #无意义变量 scoreboard players reset @s RemainPlayer
