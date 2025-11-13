@@ -309,8 +309,8 @@ setblock -79889 46 115 chest[facing=east]
 item replace block -79889 46 115 container.12 with tripwire_hook[custom_name='{"text":"金镐图案的钥匙","color":"blue","italic":false}',custom_data={key_golden_pickaxe:1b}] 1
 item replace block -79889 46 115 container.14 with emerald 3
 
-item replace block -79892 45 118 container.12 with gunpowder 1
-item replace block -79892 45 118 container.14 with flint 1
+item replace block -79892 45 118 container.12 with emerald 2
+item replace block -79892 45 118 container.14 with emerald 2
 
 
   #十字南 供能区域
@@ -319,7 +319,7 @@ setblock -79888 44 194 minecraft:potted_azure_bluet
 setblock -79884 43 191 air
 setblock -79884 43 191 trapped_chest[facing=west]{lock:{components:{custom_data:{key_required:1b}}}}
 item replace block -79884 43 191 container.11 with emerald 5
-item replace block -79884 43 191 container.13 with minecraft:dried_kelp 8
+item replace block -79884 43 191 container.13 with minecraft:dried_kelp 3
 item replace block -79884 43 191 container.15 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录4”","color":"dark_purple","italic":false}',lore=['{"text":"魔界最近好像在刻意引导亡灵前来挑战神庭试炼，","color":"white","italic":false}','{"text":"他们到底在打什么算盘？","color":"white","italic":false}','{"text":"有没有试炼者应该是神庭担心的事情，","color":"white","italic":false}','{"text":"他们这么替我们操心吗？？","color":"white","italic":false}']] 1
   #十字西 供能区域
 setblock -79917 44 165 minecraft:potted_cornflower
@@ -341,21 +341,21 @@ item replace block -79850 48 205 container.14 with skull_banner_pattern[custom_n
 setblock -79854 48 176 chest[facing=south]
 item replace block -79854 48 176 container.11 with book[lore=['{"text":"里面的文字跟我来说和图片没有任何区别。","color":"white","italic":false}','{"text":"对我来说是不折不扣的垃圾，丢了吧。","color":"white","italic":false}']] 1
 item replace block -79854 48 176 container.13 with book[lore=['{"text":"战斗了大半天，结果白跑一趟……","color":"white","italic":false}','{"text":"这本书的所有内容我都没法看懂。","color":"white","italic":false}','{"text":"对我来说是不折不扣的垃圾，丢了吧。","color":"white","italic":false}']] 1
-item replace block -79854 48 176 container.15 with book[lore=['{"text":"……我就非要三本都读了才信这个邪吗？","color":"white","italic":false}']] 1
+item replace block -79854 48 176 container.15 with book[lore=['{"text":"……我就非要三本都读过才信这个邪吗？","color":"white","italic":false}']] 1
 
 
   #物品框
-summon glow_item_frame -79855 44 203 {Item:{id:"minecraft:glistering_melon_slice",count:1b},Facing:2}
-summon glow_item_frame -79849 44 193 {Item:{id:"minecraft:gunpowder",count:1b},Facing:1}
-summon glow_item_frame -79864 44 186 {Item:{id:"minecraft:ghast_tear",count:1b},Facing:1}
-summon glow_item_frame -79846 49 184 {Item:{id:"minecraft:gunpowder",count:1b},Facing:1}
-summon glow_item_frame -79864 49 192 {Item:{id:"minecraft:golden_carrot",count:1b},Facing:1}
+summon glow_item_frame -79855 44 203 {Item:{id:"minecraft:carrot",count:1b},Facing:2}
+summon glow_item_frame -79849 44 193 {Item:{id:"minecraft:carrot",count:1b},Facing:1}
+summon glow_item_frame -79864 44 186 {Item:{id:"minecraft:carrot",count:1b},Facing:1}
+summon glow_item_frame -79846 49 184 {Item:{id:"minecraft:carrot",count:1b},Facing:1}
+summon glow_item_frame -79864 49 192 {Item:{id:"minecraft:carrot",count:1b},Facing:1}
 summon glow_item_frame -79864 49 178 {Item:{id:"minecraft:golden_carrot",count:1b},Facing:1}
 
   #水族馆
 setblock -79756 42 197 chest[facing=west]
 item replace block -79756 42 197 container.12 with tripwire_hook[custom_name='{"text":"水管图案的钥匙","color":"blue","italic":false}',custom_data={key_golden_pipe:1b}] 1
-item replace block -79756 42 197 container.14 with bone 3
+item replace block -79756 42 197 container.14 with coal 1
 setblock -79755 42 196 minecraft:potted_azalea_bush
 setblock -79755 42 198 minecraft:potted_azalea_bush
 setblock -79764 30 218 chest[facing=north,waterlogged=true]
@@ -382,8 +382,8 @@ item replace block -79875 42 59 container.14 with emerald 2
 setblock -79832 35 88 minecraft:birch_button[face=floor,facing=south]
   #跳跃宝箱
 setblock -79845 43 77 chest[facing=south]
-item replace block -79845 43 77 container.12 with flint 1
-item replace block -79845 43 77 container.14 with flint 1
+item replace block -79845 43 77 container.12 with emerald 2
+item replace block -79845 43 77 container.14 with emerald 2
 
 
 
@@ -406,9 +406,9 @@ setblock -79897 38 51 minecraft:potted_flowering_azalea_bush
 
 
 #stage8~9道中 水下小钥匙
-item replace block -79939 35 -76 container.11 with minecraft:dried_kelp 6
+item replace block -79939 35 -76 container.11 with minecraft:dried_kelp 2
 item replace block -79939 35 -76 container.13 with tripwire_hook[custom_name='{"text":"蓝宝石钥匙","color":"blue","italic":false}',custom_data={key_sapphire:1b}] 1
-item replace block -79939 35 -76 container.15 with minecraft:dried_kelp 6
+item replace block -79939 35 -76 container.15 with minecraft:dried_kelp 2
 
   #破碎的天花板
 fill -79934 45 -63 -79934 45 -61 minecraft:quartz_block
