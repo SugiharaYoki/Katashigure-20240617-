@@ -89,5 +89,6 @@ execute if score @s SeGa_StandLastBH matches 7.. unless items entity @s containe
 execute if score @s SeGa_StandLastBH matches 22.. unless items entity @s container.* *[custom_data~{azr_amulet_back_dodge:1b}] run function skyblock:azr/assets/items/amulets/back_dodge
 
 
+execute unless score @s Azr_Login_Identifier >= #Server_Date Global_Age run function skyblock:azr/system/player/join_login_bonus
 
 tag @s add azrRetrieved
