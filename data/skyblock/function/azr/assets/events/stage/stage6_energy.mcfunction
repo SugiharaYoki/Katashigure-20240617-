@@ -91,6 +91,19 @@ execute positioned -79926 32 158 as @n[tag=AzrielMarker_encounter,distance=0..0.
 
 
 
+
+
+#boss 锅炉爷爷
+execute positioned -79931 28 -5 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=0..5,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+
+
+
+
+
+
+
+
+
 #随机野怪
 execute positioned -79954 29 183 if score random_enemy_thread AzrTimerStack matches 2 store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..32]
 execute positioned -79954 29 183 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 2.. unless entity @n[tag=AzrielMob,distance=..6] unless entity @a[tag=azrPlayer,distance=..16] if entity @a[tag=azrPlayer,distance=..56] run function skyblock:azr/assets/mobs_new/area_pool/chapter2_energy
