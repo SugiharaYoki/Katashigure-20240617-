@@ -1,1 +1,2 @@
-give @s shulker_shell[custom_name='{"text":"弹簧箭盒","italic":false}',lore=['{"text":"投掷 - 散射36支箭矢（射程较高）","color":"yellow","italic":false}'],enchantments={blast_protection:1},custom_data={arrow_box:1b},custom_model_data={floats:[100001.0]}]
+
+give @s shulker_shell[custom_name='{"text":"弹簧箭盒","italic":false}',lore=['{"text":"消耗型武器","italic":false,"color":"yellow","bold": true}','{"text":"丢出后化为浮游盒腾空而起，并向周围散射共36支高速箭矢","italic":false,"color":"#9eb9de"}'],custom_data={arrow_box:1b}] 1

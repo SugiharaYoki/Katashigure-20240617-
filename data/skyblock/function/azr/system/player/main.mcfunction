@@ -15,9 +15,7 @@ execute as @s[scores={Azr_Shop=8900101..8900199}] run function skyblock:azr/syst
 
 # 背包管理器
 #execute as @s[tag=azrPlayer] run function skyblock:azr/inventory_manager
-execute as @s[tag=removeSpark] if items entity @s weapon.mainhand *[custom_data={instant_spark:1b}] run playsound item.shield.break master @s ~ ~ ~
-execute as @s[tag=removeSpark] if items entity @s weapon.mainhand *[custom_data={instant_spark:1b}] run item replace entity @s weapon.mainhand with air
-tag @s[tag=removeSpark] remove removeSpark
+
 
 # 机械弩
 execute if items entity @s weapon.mainhand crossbow[custom_data~{crossbow_v71:1b}] if items entity @s container.* *[custom_data~{crossbow_arrow:1b}] unless data entity @s SelectedItem.components."minecraft:charged_projectiles"[{id:"minecraft:arrow"}] run function skyblock:azr/system/player/weapons/crossbow/reload
@@ -68,12 +66,12 @@ execute if score @s AzrSariel_Skill_FlowerReason_condition matches 6.. run funct
 execute if score @s AzrSariel_Skill_SlowRing matches 1.. run scoreboard players remove @s AzrSariel_Skill_SlowRing_cooldown 1
 execute if score @s AzrSariel_Skill_SlowRing matches 1.. if score @s AzrSariel_Skill_SlowRing_cooldown matches ..0 run function skyblock:azr/system/player/damage_bonus/effect/slowring
 
-
+#一次性打火石
+execute if items entity @s weapon.mainhand *[custom_data~{instant_spark:1b}] if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. run playsound item.shield.break master @s ~ ~ ~
+execute if items entity @s weapon.mainhand *[custom_data~{instant_spark:1b}] if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. run clear @s *[custom_data~{instant_spark:1b}] 1
 
 #负面影响事件
 execute if score @s AzrEvent_affected_quake_medium matches 1.. run function skyblock:azr/assets/events/effects/affected_quake_medium
-
-
 
 
 scoreboard players reset @s AzrSariel_Amulet_generic_damage_dealt

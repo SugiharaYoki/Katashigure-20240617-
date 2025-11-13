@@ -1,1 +1,2 @@
-give @s flint_and_steel[custom_name='{"text":"一次性打火石","italic":false,"color":"white"}',lore=['{"text":"敲击 - 火焰附加II（近身）","color":"yellow","italic":false}'],enchantments={"minecraft:fire_aspect":2},damage=999,custom_data={instant_spark:1b},custom_model_data={floats:[100001.0]}]
+
+give @s flint_and_steel[custom_name='{"text":"一次性打火石","italic":false}',attribute_modifiers=[{id:"azr:iron_axe_normal.attack_damage",type:"attack_damage",amount:16.0,operation:"add_value",slot:"mainhand"}],lore=['{"text":"消耗型武器","italic":false,"color":"yellow","bold": true}','{"text":"使用它敲击怪物可使对方陷入着火状态","italic":false,"color":"#9eb9de"}','{"text":"本身的威力也比较可观","italic":false,"color":"#9eb9de"}'],custom_data={instant_spark:1b},max_stack_size=64] 1
