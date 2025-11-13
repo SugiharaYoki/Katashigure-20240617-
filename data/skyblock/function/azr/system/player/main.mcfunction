@@ -67,8 +67,7 @@ execute if score @s AzrSariel_Skill_SlowRing matches 1.. run scoreboard players 
 execute if score @s AzrSariel_Skill_SlowRing matches 1.. if score @s AzrSariel_Skill_SlowRing_cooldown matches ..0 run function skyblock:azr/system/player/damage_bonus/effect/slowring
 
 #一次性打火石
-execute if items entity @s weapon.mainhand *[custom_data~{instant_spark:1b}] if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. run playsound item.shield.break master @s ~ ~ ~
-execute if items entity @s weapon.mainhand *[custom_data~{instant_spark:1b}] if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. run clear @s *[custom_data~{instant_spark:1b}] 1
+execute if items entity @s weapon.mainhand *[custom_data~{instant_spark:1b}] if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. run function skyblock:azr/system/player/damage_bonus/effect/item_instant_spark
 
 #负面影响事件
 execute if score @s AzrEvent_affected_quake_medium matches 1.. run function skyblock:azr/assets/events/effects/affected_quake_medium
