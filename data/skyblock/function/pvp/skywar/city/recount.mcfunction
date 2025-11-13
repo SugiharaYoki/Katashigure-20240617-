@@ -26,7 +26,7 @@ tag @a[tag=!Gaming] remove NoSkyWarTemp
 #-#-#setblock 12 88 86 air
 #《禁止再次开局》
 #《计入历史启动》
-scoreboard players remove PVP_Skywar_Start_Count Global_Age 1
+scoreboard players remove #PVP_Skywar_Start_Count Global_Age 1
 #无意义变量 scoreboard players set @s Random1 0
 #无意义变量 scoreboard players reset @s RemainPlayer
 scoreboard players reset @s DeathCount

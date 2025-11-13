@@ -75,7 +75,7 @@ execute if score skywar_start rng1 matches 3 if entity @n[tag=!MapLoaAlr,tag=sc]
 #-#-#setblock 12 88 86 air
 #《禁止再次开局》
 #《计入历史启动》
-execute if score skywar_start rng1 matches 1 run scoreboard players add PVP_Skywar_Start_Count Global_Age 1
+execute if score skywar_start rng1 matches 1 run scoreboard players add #PVP_Skywar_Start_Count Global_Age 1
 #无意义变量 scoreboard players set @s Random1 0
 #《变量初始化》
 execute if score skywar_start rng1 matches 2 run kill @e[x=50000,y=50,z=50000,distance=..1500,type=item]

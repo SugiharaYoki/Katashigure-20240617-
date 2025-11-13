@@ -26,6 +26,10 @@ execute if score stage Azr_system matches 51..63 run tag @s add azrBanLifeVitae
 #execute if score $azrInitialIngredientGiven Azr_system matches 1 run give @s string
 #execute if score $azrInitialIngredientGiven Azr_system matches 1 run give @s gunpowder
 
+execute unless score @s Azr_Login_Identifier >= #Server_Date Global_Age run function skyblock:azr/system/player/join_login_bonus
+
+
+
 scoreboard objectives add azrPlayer_eternal dummy
 execute unless entity @s[scores={azrPlayer_eternal=1..}] run scoreboard players add azrPlayer_eternal azrPlayer_eternal 1
 execute unless entity @s[scores={azrPlayer_eternal=1..}] run scoreboard players operation @s azrPlayer_eternal = azrPlayer_eternal azrPlayer_eternal

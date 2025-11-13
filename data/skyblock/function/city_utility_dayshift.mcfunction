@@ -34,5 +34,5 @@ execute if block -41 156 -57 purple_stained_glass as @a at @s run playsound nalc
 scoreboard objectives add Global_Age dummy
 execute if block -41 156 -57 lime_stained_glass run scoreboard players add @e[limit=1,tag=sc] dailydiv 1
 execute if block -41 156 -57 purple_stained_glass run scoreboard players add @e[limit=1,tag=sc] dailydivc2 1
-execute if block -41 156 -57 lime_stained_glass run scoreboard players operation Server_Date Global_Age = @e[limit=1,tag=sc] dailydiv
+execute if block -41 156 -57 lime_stained_glass run scoreboard players operation #Server_Date Global_Age = @e[limit=1,tag=sc] dailydiv
 

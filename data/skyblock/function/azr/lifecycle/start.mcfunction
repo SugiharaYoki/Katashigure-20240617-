@@ -93,6 +93,8 @@ scoreboard players set $azrInitialPieGiven Azr_system 1
 
 scoreboard objectives add AzrPlayer_CurrentArea dummy
 
+scoreboard players add #GARDEN_Azr_Start_Count Global_Age 1
+
 #节制天平
 scoreboard objectives add AzrSariel_Skill_FanFire dummy
 scoreboard objectives add AzrSariel_Skill_FanFire_cooldown dummy
