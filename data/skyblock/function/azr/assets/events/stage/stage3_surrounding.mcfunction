@@ -101,7 +101,6 @@ execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,
 execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=36}] run kill @s
 
 
-say hi
 
 
 #随机野怪
