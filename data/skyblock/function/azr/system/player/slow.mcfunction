@@ -44,6 +44,7 @@ execute if items entity @s player.cursor *[custom_data~{azr_amulet_pacemaker:1b}
 execute if items entity @s player.cursor *[custom_data~{azr_amulet_pacemaker_safe:1b}] run function skyblock:azr/system/player/skills/amulet/pacemaker_switch_mode_normal
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] run function skyblock:azr/system/player/skills/amulet/moss_spore_core
 
+execute if items entity @s weapon.* *[custom_data~{azr_loginbonus:1b}] run function skyblock:azr/system/player/join_login_bonus_open
 execute if items entity @s player.cursor *[custom_data~{azr_loginbonus:1b}] run function skyblock:azr/system/player/join_login_bonus_open
 
 #节制天平
