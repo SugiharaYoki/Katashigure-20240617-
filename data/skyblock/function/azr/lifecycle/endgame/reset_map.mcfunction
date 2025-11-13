@@ -87,9 +87,9 @@ fill -79935 43 34 -79935 45 34 minecraft:purple_stained_glass{name: "to Secret R
 setblock -79928 38 33 minecraft:quartz_pillar{name: "Spider Room"}
 fill -79931 38 40 -79931 40 40 purple_stained_glass{name: "to Stage4 alpha"}
 setblock -79918 42 25 chest[facing=north]
-item replace block -79918 42 25 container.13 with coal 2
+item replace block -79918 42 25 container.13 with emerald 3
 setblock -79905 42 33 chest[facing=west]
-item replace block -79905 42 33 container.13 with iron_ingot 1
+item replace block -79905 42 33 container.13 with emerald 3
 fill -79924 36 34 -79924 34 34 minecraft:purple_stained_glass
 setblock -79908 34 31 minecraft:chest[facing=west]
 item replace block -79908 34 31 container.12 with skull_banner_pattern[custom_name='{"text": "“最近的花卉涨势很怪异”", "color": "dark_purple","italic":false}', lore=['{"text": "倒不是我神经过敏了吧，这些花的生长速度是不是太快了？","color":"white", "italic": false}','{"text": "简单培育的苔藓类植物已经遍布了整个培育室。","color":"white", "italic": false}','{"text": "它们吸收魔力生长，以其作为养分。","color":"white", "italic": false}','{"text": "那这是否意味着空气中的魔力浓度已经高到了一种难以想象的程度？","color":"white", "italic": false}']] 1
@@ -105,8 +105,8 @@ item replace block -79896 40 15 container.13 with minecraft:cooked_beef 1
 item replace block -79896 40 15 container.15 with minecraft:cooked_beef 1
   #天台跨墙隐藏小宝箱
 setblock -79910 43 46 chest[facing=north]
-item replace block -79910 43 46 container.12 with minecraft:coal 1
-item replace block -79910 43 46 container.14 with minecraft:flint 1
+item replace block -79910 43 46 container.12 with minecraft:emerald 3
+item replace block -79910 43 46 container.14 with minecraft:coal 1
 
 
 
@@ -135,8 +135,8 @@ setblock -79915 40 34 minecraft:quartz_block{name: "secret chest"}
 
   #苔藓培育室
 setblock -79934 31 17 chest[facing=east]
-item replace block -79934 31 17 container.12 with minecraft:bone 2
-item replace block -79934 31 17 container.14 with minecraft:bone 1
+item replace block -79934 31 17 container.12 with minecraft:emerald 3
+item replace block -79934 31 17 container.14 with minecraft:emerald 3
 
 function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_mossboss
 
@@ -156,7 +156,7 @@ setblock -79932 42 41 barrier
 fill -79930 38 52 -79932 42 52 purple_stained_glass{name: "to Stage Boss1"}
 setblock -79954 32 39 chest[facing=east]
 item replace block -79954 32 39 container.12 with minecraft:beef 2
-item replace block -79954 32 39 container.14 with minecraft:flint 1
+item replace block -79954 32 39 container.14 with emerald 3
 fill -79932 48 44 -79930 48 44 minecraft:quartz_block
 fill -79931 48 43 -79931 48 45 minecraft:quartz_block
 
@@ -165,19 +165,19 @@ setblock -79939 38 20 air
 setblock -79939 38 20 trapped_chest[facing=west]{lock:{components:{custom_data:{key_required:1b}}}}
 item replace block -79939 38 20 container.11 with emerald 3
 item replace block -79939 38 20 container.13 with skull_banner_pattern[custom_name='{"text":"“仍旧在调查魔物失控的真相”","color":"dark_purple","italic":false}',lore=['{"text":"拉斐尔大人告知我丢失钥匙并无大碍，","color":"white","italic":false}','{"text":"地下水路东区不存在任何有用的事物。","color":"white","italic":false}','{"text":"可那里切切实实地封印着一位魔神啊……","color":"white","italic":false}']]
-item replace block -79939 38 20 container.15 with iron_ingot 1
+item replace block -79939 38 20 container.15 with emerald 3
 fill -79948 36 45 -79950 38 45 minecraft:purple_stained_glass
 
 #Stage Cerement
 setblock -79939 39 58 chest[facing=north]
 fill -79949 41 54 -79949 38 57 minecraft:purple_stained_glass{name: "to Password Panel"}
 fill -79950 38 59 -79951 38 59 chest[facing=north]
-item replace block -79950 38 59 container.11 with minecraft:emerald 5
-item replace block -79950 38 59 container.13 with minecraft:emerald 5
-item replace block -79950 38 59 container.15 with minecraft:emerald 5
-item replace block -79951 38 59 container.11 with minecraft:emerald 5
-item replace block -79951 38 59 container.13 with minecraft:emerald 5
-item replace block -79951 38 59 container.15 with minecraft:emerald 5
+item replace block -79950 38 59 container.11 with minecraft:emerald 3
+item replace block -79950 38 59 container.13 with minecraft:emerald 3
+item replace block -79950 38 59 container.15 with minecraft:emerald 3
+item replace block -79951 38 59 container.11 with minecraft:emerald 3
+item replace block -79951 38 59 container.13 with minecraft:emerald 3
+item replace block -79951 38 59 container.15 with minecraft:emerald 3
 fill -79950 38 58 -79951 39 58 quartz_block
 item replace block -79939 39 58 container.13 with tripwire_hook[custom_name='{"text":"白方岩钥匙","color":"blue","italic":false}',custom_data={key_stone:1b}] 1
 
@@ -217,21 +217,21 @@ item replace block -79925 37 201 container.14 with emerald 3
   #钥匙奖励箱
 setblock -79954 37 172 air
 setblock -79954 37 172 trapped_chest[facing=south]{lock:{components:{custom_data:{key_required:1b}}}}
-item replace block -79954 37 172 container.11 with minecraft:coal 2
-item replace block -79954 37 172 container.13 with minecraft:coal 2
-item replace block -79954 37 172 container.15 with minecraft:coal 2
+item replace block -79954 37 172 container.11 with minecraft:coal 1
+item replace block -79954 37 172 container.13 with minecraft:coal 1
+item replace block -79954 37 172 container.15 with minecraft:coal 1
 
   #高跳房间
 setblock -79908 37 185 chest[facing=west]
 item replace block -79908 37 185 container.12 with gunpowder 1
-item replace block -79908 37 185 container.14 with gunpowder 1
+item replace block -79908 37 185 container.14 with flint 1
 fill -79916 39 193 -79916 37 193 minecraft:purple_stained_glass
   #单向门
 setblock -79917 38 191 minecraft:birch_button[facing=east]
   #小阳台
 setblock -79926 45 210 chest[facing=north]
-item replace block -79926 45 210 container.12 with bone 1
-item replace block -79926 45 210 container.14 with bone 1
+item replace block -79926 45 210 container.12 with emerald 3
+item replace block -79926 45 210 container.14 with emerald 3
 setblock -79928 37 200 chest[facing=north]
 item replace block -79928 37 200 container.12 with emerald 2
 item replace block -79928 37 200 container.14 with emerald 2
@@ -253,14 +253,14 @@ fill -79962 30 159 -79963 30 165 minecraft:air replace fire
 
   #滞空快捷连通道路
 setblock -79934 45 187 chest[facing=west]
-item replace block -79934 45 187 container.12 with minecraft:emerald 3
-item replace block -79934 45 187 container.14 with minecraft:emerald 3
+item replace block -79934 45 187 container.12 with minecraft:emerald 2
+item replace block -79934 45 187 container.14 with minecraft:emerald 2
   #跳跃宝箱奖励
 setblock -79939 33 161 chest[facing=west]
 item replace block -79939 33 161 container.12 with minecraft:emerald 3
 item replace block -79939 33 161 container.14 with minecraft:emerald 3
 setblock -79919 33 158 chest[facing=west]
-item replace block -79919 33 158 container.12 with minecraft:gunpowder 1
+item replace block -79919 33 158 container.12 with minecraft:emerald 3
 item replace block -79919 33 158 container.14 with minecraft:emerald 3
 
 
@@ -273,7 +273,7 @@ setblock -79892 39 119 birch_button[facing=south]
 setblock -79904 44 137 minecraft:potted_azure_bluet
 setblock -79904 44 133 minecraft:potted_azure_bluet
 setblock -79904 43 135 chest[facing=east]
-item replace block -79904 43 135 container.12 with minecraft:flint 2
+item replace block -79904 43 135 container.12 with minecraft:coal 1
 item replace block -79904 43 135 container.14 with tripwire_hook[custom_name='{"text":"椅子形状的钥匙","color":"blue","italic":false}',custom_data={key_chair:1b}] 1
 
 setblock -79912 41 106 minecraft:potted_oxeye_daisy
@@ -281,9 +281,9 @@ setblock -79912 41 103 minecraft:potted_oxeye_daisy
   #侧道墙
 fill -79903 43 83 -79905 40 83 minecraft:purple_stained_glass
 setblock -79904 40 62 trapped_chest[facing=south]{lock:{components:{custom_data:{key_required:1b}}}}
-item replace block -79904 40 62 container.11 with minecraft:emerald 5
-item replace block -79904 40 62 container.13 with minecraft:emerald 5
-item replace block -79904 40 62 container.15 with minecraft:emerald 5
+item replace block -79904 40 62 container.11 with minecraft:emerald 3
+item replace block -79904 40 62 container.13 with minecraft:emerald 3
+item replace block -79904 40 62 container.15 with minecraft:emerald 3
   #boss1附近的大花园
 setblock -79933 44 111 minecraft:chest[facing=east]
 item replace block -79933 44 111 container.12 with minecraft:emerald 3
