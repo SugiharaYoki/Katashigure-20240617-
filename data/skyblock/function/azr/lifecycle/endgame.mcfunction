@@ -27,6 +27,7 @@ tag @a remove azrDead
 #______________________________________________________________#
 bossbar remove azr:boss_hp_bar
 bossbar remove azr:boss_hp_bar_mossboss
+bossbar remove azr:boss_hp_bar_diesel
 bossbar remove azr:boss_hp_bar_0
 bossbar remove azr:progress_bar_special
 bossbar remove azr:progress_bar_special_0

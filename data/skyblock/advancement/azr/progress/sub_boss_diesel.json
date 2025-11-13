@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "半阙恒久的热源 - 锅炉驱动者",
+            "color": "red",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "空气中过剩的魔力对热能系统的影响微乎其微。\n他们让亡魂来驱动热能系统，恐怕就是因为它们藉由魔力即可不断工作下去。\n在长久重复且枯燥的机械式工作中，恐怕许多亡魂也彻底失去了自主行动的能力吧。\n这位老资历对我展开的进攻或许并非是特殊对待——就算我不在这里，他也会施展同样的火焰攻击。\n对着空气。\n对着望不见尽头的时间。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:zombie_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage6"
+}
