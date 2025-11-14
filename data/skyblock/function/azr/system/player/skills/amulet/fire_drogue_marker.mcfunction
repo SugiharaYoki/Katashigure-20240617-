@@ -8,8 +8,8 @@ execute if entity @n[tag=AzrielMob,distance=..6] run tag @s add MobFound_UniqueS
 execute if entity @s[tag=MobFound_UniqueSource] run tag @e[distance=0.1..6,tag=AzrielMob_amulet_skill_FireDrogue] remove MobFound_UniqueSource
 execute if entity @s[tag=MobFound_UniqueSource] if entity @n[tag=AzrielMob,distance=0.7..6] facing entity @n[tag=AzrielMob,distance=0.7..] eyes run tp ^ ^ ^0.18
 execute if entity @s[tag=MobFound_UniqueSource] if entity @n[tag=AzrielMob,distance=0.7..4] facing entity @n[tag=AzrielMob,distance=0.7..] eyes run tp ^ ^ ^0.16
-execute if entity @s[tag=MobFound_UniqueSource] if entity @n[tag=AzrielMob,distance=0.7..3] facing entity @n[tag=AzrielMob,distance=0.7..] eyes run tp ^ ^ ^0.15
-execute if entity @s[tag=MobFound_UniqueSource] if entity @n[tag=AzrielMob,distance=0.7..1.5] facing entity @n[tag=AzrielMob,distance=0.7..] eyes run tp ^ ^ ^0.14
+execute if entity @s[tag=MobFound_UniqueSource] if entity @n[tag=AzrielMob,distance=0.7..3] facing entity @n[tag=AzrielMob,distance=0.7..] feet run tp ^ ^ ^0.15
+execute if entity @s[tag=MobFound_UniqueSource] if entity @n[tag=AzrielMob,distance=0.7..1.5] facing entity @n[tag=AzrielMob,distance=0.7..] feet run tp ^ ^ ^0.14
 execute if entity @s[tag=MobFound_UniqueSource] if entity @n[tag=AzrielMob,distance=0..0.7] facing entity @n[tag=AzrielMob,distance=..0.7] feet run tp ^ ^0.01 ^0.12
 
 
