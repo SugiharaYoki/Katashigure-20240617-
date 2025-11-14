@@ -39,7 +39,7 @@ execute unless entity @a[tag=azrPlayer,distance=..3.5] facing entity @p[tag=azrP
 execute unless entity @a[tag=azrPlayer,distance=..7.5] facing entity @p[tag=azrPlayer] eyes run tp ^ ^ ^0.53
 
 
-execute if entity @a[tag=azrPlayer,distance=..3.5] unless entity @n[tag=AzrielMob,distance=0.7..6] rotated as @s at @p[tag=azrPlayer] rotated ~10 ~ run tp @s ^ ^0.8 ^3.5
+execute if entity @a[tag=azrPlayer,distance=..3.5] unless entity @n[tag=AzrielMob,distance=..6] rotated as @s at @p[tag=azrPlayer] rotated ~10 ~ run tp @s ^ ^0.8 ^3.5
 
 
 
