@@ -7,7 +7,7 @@ execute if entity @n[tag=AzrielMob,distance=0.7..6] facing entity @n[tag=AzrielM
 execute if entity @n[tag=AzrielMob,distance=0.7..4] facing entity @n[tag=AzrielMob,distance=2..] eyes run tp ^ ^ ^0.16
 execute if entity @n[tag=AzrielMob,distance=0.7..3] facing entity @n[tag=AzrielMob,distance=2..] eyes run tp ^ ^ ^0.15
 execute if entity @n[tag=AzrielMob,distance=0.7..1.5] facing entity @n[tag=AzrielMob,distance=2..] eyes run tp ^ ^ ^0.12
-execute if entity @n[tag=AzrielMob,distance=0..0.7] facing entity @n[tag=AzrielMob,distance=..2] feet run tp ^ ^0.09 ^0.09
+execute if entity @n[tag=AzrielMob,distance=0..0.7] facing entity @n[tag=AzrielMob,distance=..2] feet run tp ^ ^0.01 ^0.09
 
 
 particle minecraft:end_rod ~ ~0.1 ~ 0 0 0 0.0 1
