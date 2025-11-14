@@ -2,6 +2,9 @@ scoreboard players set @s[scores={AzrSariel_Skill_ElecBall=1}] AzrSariel_Skill_F
 scoreboard players set @s[scores={AzrSariel_Skill_ElecBall=2}] AzrSariel_Skill_FanFire_cooldown 8
 scoreboard players set @s[scores={AzrSariel_Skill_ElecBall=3}] AzrSariel_Skill_FanFire_cooldown 8
 
+execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_drogue:1b}] run scoreboard players set @s[scores={AzrSariel_Skill_ElecBall=1}] AzrSariel_Skill_FanFire_cooldown 7
+execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_drogue:1b}] run scoreboard players set @s[scores={AzrSariel_Skill_ElecBall=2}] AzrSariel_Skill_FanFire_cooldown 7
+execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_drogue:1b}] run scoreboard players set @s[scores={AzrSariel_Skill_ElecBall=3}] AzrSariel_Skill_FanFire_cooldown 6
 
 playsound minecraft:item.armor.equip_turtle player @a ~ ~ ~ 1 1.5
 
