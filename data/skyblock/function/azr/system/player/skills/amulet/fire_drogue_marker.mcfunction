@@ -1,7 +1,7 @@
 scoreboard players add @s rng1 1
 
 execute if score @s rng1 matches 1 run playsound minecraft:item.flintandsteel.use neutral @a ~ ~ ~ 1 0.8
-execute if score @s rng1 matches 7.. run scoreboard players set @s rng1 3
+execute if score @s rng1 matches 6.. run scoreboard players set @s rng1 3
 
 execute if entity @n[tag=AzrielMob,distance=0.7..6] facing entity @n[tag=AzrielMob,distance=0.7..] eyes run tp ^ ^ ^0.18
 execute if entity @n[tag=AzrielMob,distance=0.7..4] facing entity @n[tag=AzrielMob,distance=0.7..] eyes run tp ^ ^ ^0.16
@@ -10,8 +10,8 @@ execute if entity @n[tag=AzrielMob,distance=0.7..1.5] facing entity @n[tag=Azrie
 execute if entity @n[tag=AzrielMob,distance=0..0.7] facing entity @n[tag=AzrielMob,distance=..0.7] feet run tp ^ ^0.01 ^0.12
 
 
-particle minecraft:end_rod ~ ~0.1 ~ 0 0 0 0.0 1
-particle flame ~ ~0.1 ~ 0.05 0.05 0.05 0.01 1 force
+execute if score @s rng1 matches 4 run particle minecraft:end_rod ~ ~0.1 ~ 0 0 0 0.0 1
+execute if score @s rng1 matches 4 run particle flame ~ ~0.1 ~ 0.05 0.05 0.05 0.01 1 force
 
 execute if entity @n[tag=AzrielMob,distance=..0.9] run tag @s add MobFound
 execute if entity @s[tag=MobFound] run damage @n[tag=AzrielMob,distance=..0.9] 4.5 in_fire
