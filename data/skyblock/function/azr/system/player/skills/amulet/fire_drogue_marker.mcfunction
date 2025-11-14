@@ -3,11 +3,13 @@ scoreboard players add @s rng1 1
 execute if score @s rng1 matches 1 run playsound minecraft:item.flintandsteel.use neutral @a ~ ~ ~ 1 0.8
 execute if score @s rng1 matches 6.. run scoreboard players set @s rng1 3
 
-execute if entity @n[tag=AzrielMob,distance=0.7..6] facing entity @n[tag=AzrielMob,distance=0.7..] eyes run tp ^ ^ ^0.18
-execute if entity @n[tag=AzrielMob,distance=0.7..4] facing entity @n[tag=AzrielMob,distance=0.7..] eyes run tp ^ ^ ^0.16
-execute if entity @n[tag=AzrielMob,distance=0.7..3] facing entity @n[tag=AzrielMob,distance=0.7..] eyes run tp ^ ^ ^0.15
-execute if entity @n[tag=AzrielMob,distance=0.7..1.5] facing entity @n[tag=AzrielMob,distance=0.7..] eyes run tp ^ ^ ^0.14
-execute if entity @n[tag=AzrielMob,distance=0..0.7] facing entity @n[tag=AzrielMob,distance=..0.7] feet run tp ^ ^0.01 ^0.12
+execute unless entity @n[tag=AzrielMob,distance=..6] run tag @s remove MobFound_UniqueSource
+execute if entity @n[tag=AzrielMob,distance=..6] run tag @s add MobFound_UniqueSource
+execute if entity @s[tag=MobFound_UniqueSource] if entity @n[tag=AzrielMob,distance=0.7..6] facing entity @n[tag=AzrielMob,distance=0.7..] eyes run tp ^ ^ ^0.18
+execute if entity @s[tag=MobFound_UniqueSource] if entity @n[tag=AzrielMob,distance=0.7..4] facing entity @n[tag=AzrielMob,distance=0.7..] eyes run tp ^ ^ ^0.16
+execute if entity @s[tag=MobFound_UniqueSource] if entity @n[tag=AzrielMob,distance=0.7..3] facing entity @n[tag=AzrielMob,distance=0.7..] eyes run tp ^ ^ ^0.15
+execute if entity @s[tag=MobFound_UniqueSource] if entity @n[tag=AzrielMob,distance=0.7..1.5] facing entity @n[tag=AzrielMob,distance=0.7..] eyes run tp ^ ^ ^0.14
+execute if entity @s[tag=MobFound_UniqueSource] if entity @n[tag=AzrielMob,distance=0..0.7] facing entity @n[tag=AzrielMob,distance=..0.7] feet run tp ^ ^0.01 ^0.12
 
 
 execute if score @s rng1 matches 4 run particle minecraft:end_rod ~ ~0.1 ~ 0 0 0 0.0 1
