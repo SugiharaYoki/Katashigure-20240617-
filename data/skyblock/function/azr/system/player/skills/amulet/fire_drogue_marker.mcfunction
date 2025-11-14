@@ -32,3 +32,14 @@ execute at @s if block ~ ~ ~ water run scoreboard players add @s rng3 7
 execute if score @s rng3 matches 7.. as @s at @s run particle white_smoke ~ ~0.1 ~ 0.05 0.05 0.05 0.09 10
 execute if score @s rng3 matches 7.. as @s at @s run playsound block.fire.extinguish hostile @a ~ ~0.1 ~ 0.6 1.8
 execute if score @s rng3 matches 7.. as @s at @s run kill @s
+
+
+
+execute unless entity @a[tag=azrPlayer,distance=..3.5] facing entity @p[tag=azrPlayer] eyes run tp ^ ^ ^0.33
+execute unless entity @a[tag=azrPlayer,distance=..7.5] facing entity @p[tag=azrPlayer] eyes run tp ^ ^ ^0.53
+
+
+execute if entity @a[tag=azrPlayer,distance=..3.5] unless entity @n[tag=AzrielMob,distance=0.7..6] at @p[tag=azrPlayer] rotated ~10 ~ run tp @s ^ ^0.8 ^3.5
+
+
+
