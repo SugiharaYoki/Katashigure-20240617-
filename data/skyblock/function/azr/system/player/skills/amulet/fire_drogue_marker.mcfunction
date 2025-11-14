@@ -15,7 +15,7 @@ particle flame ~ ~0.1 ~ 0.05 0.05 0.05 0.01 1 force
 
 execute if entity @n[tag=AzrielMob,distance=..0.9] run tag @s add MobFound
 execute if entity @s[tag=MobFound] run damage @n[tag=AzrielMob,distance=..0.9] 4.5 in_fire
-execute if entity @s[tag=MobFound] run playsound minecraft:block.fire.extinguish neutral @a ~ ~ ~ 1 1.5
+execute if entity @s[tag=MobFound] run playsound minecraft:entity.firework_rocket.blast neutral @a ~ ~ ~ 0.8 1.5
 execute if entity @s[tag=MobFound] run particle smoke ~ ~0.1 ~ 0.05 0.05 0.05 0.03 6
 execute if entity @s[tag=MobFound] run particle flame ~ ~0.1 ~ 0.05 0.05 0.05 0.03 6
 execute if entity @s[tag=MobFound] run kill @s
