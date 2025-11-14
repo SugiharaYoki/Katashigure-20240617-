@@ -5,7 +5,7 @@ execute if score @s rng1 matches 6.. run scoreboard players set @s rng1 3
 
 execute unless entity @n[tag=AzrielMob,distance=..6] run tag @s remove MobFound_UniqueSource
 execute if entity @n[tag=AzrielMob,distance=..6] run tag @s add MobFound_UniqueSource
-execute if entity @s[tag=MobFound_UniqueSource] run tag @e[distance=0.1..6,tag=AzrielMob_amulet_skill_FireDrogue] remove MobFound_UniqueSource
+execute if entity @s[tag=MobFound_UniqueSource] run tag @e[distance=0.1..7,tag=AzrielMob_amulet_skill_FireDrogue] remove MobFound_UniqueSource
 execute if entity @s[tag=MobFound_UniqueSource] if entity @n[tag=AzrielMob,distance=0.7..6] facing entity @n[tag=AzrielMob,distance=0.7..] eyes run tp ^ ^ ^0.18
 execute if entity @s[tag=MobFound_UniqueSource] if entity @n[tag=AzrielMob,distance=0.7..4] facing entity @n[tag=AzrielMob,distance=0.7..] eyes run tp ^ ^ ^0.16
 execute if entity @s[tag=MobFound_UniqueSource] if entity @n[tag=AzrielMob,distance=0.7..3] facing entity @n[tag=AzrielMob,distance=0.7..] feet run tp ^ ^ ^0.15
