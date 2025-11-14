@@ -37,9 +37,20 @@ execute if score @s rng3 matches 7.. as @s at @s run kill @s
 
 execute unless entity @a[tag=azrPlayer,distance=..3.5] facing entity @p[tag=azrPlayer] eyes run tp ^ ^ ^0.33
 execute unless entity @a[tag=azrPlayer,distance=..7.5] facing entity @p[tag=azrPlayer] eyes run tp ^ ^ ^0.53
+execute unless entity @a[tag=azrPlayer,distance=..3.5] facing entity @p[tag=azrPlayer] eyes store result score @s rng5 run random value 1..10
+execute unless entity @a[tag=azrPlayer,distance=..3.5] if score @s rng5 matches 1 at @s rotated as @s run tp ^0.1 ^ ^
+execute unless entity @a[tag=azrPlayer,distance=..3.5] if score @s rng5 matches 2 at @s rotated as @s run tp ^-0.1 ^ ^
+execute unless entity @a[tag=azrPlayer,distance=..3.5] if score @s rng5 matches 3 at @s rotated as @s run tp ^0.1 ^0.1 ^
+execute unless entity @a[tag=azrPlayer,distance=..3.5] if score @s rng5 matches 4 at @s rotated as @s run tp ^-0.1 ^0.1 ^
+execute unless entity @a[tag=azrPlayer,distance=..3.5] if score @s rng5 matches 5 at @s rotated as @s run tp ^0.1 ^-0.1 ^
+execute unless entity @a[tag=azrPlayer,distance=..3.5] if score @s rng5 matches 6 at @s rotated as @s run tp ^-0.1 ^-0.1 ^
+execute unless entity @a[tag=azrPlayer,distance=..3.5] if score @s rng5 matches 7 at @s rotated as @s run tp ^ ^0.1 ^
+execute unless entity @a[tag=azrPlayer,distance=..3.5] if score @s rng5 matches 8 at @s rotated as @s run tp ^ ^-0.1 ^
+execute unless entity @a[tag=azrPlayer,distance=..3.5] if score @s rng5 matches 9 at @s rotated as @s run tp ^0.2 ^ ^
+execute unless entity @a[tag=azrPlayer,distance=..3.5] if score @s rng5 matches 10 at @s rotated as @s run tp ^-0.2 ^ ^
 
 
-execute if entity @a[tag=azrPlayer,distance=..3.5] unless entity @n[tag=AzrielMob,distance=..6] rotated as @s positioned as @p[tag=azrPlayer] rotated ~10 ~ run tp @s ^ ^0.8 ^2.8
+#execute if entity @a[tag=azrPlayer,distance=..3.5] unless entity @n[tag=AzrielMob,distance=..6] rotated as @s positioned as @p[tag=azrPlayer] rotated ~10 ~ run tp @s ^ ^0.8 ^2.8
 
 
 
