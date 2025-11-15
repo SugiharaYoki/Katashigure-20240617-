@@ -27,7 +27,7 @@ execute if score @s AzrEntityTimer matches 51 positioned -80011 25 200 run funct
 
 execute if score @s AzrEntityTimer matches 51 positioned -80011 25 200 run bossbar add azr:boss_hp_bar_diesel "半阙恒久的热源 - 锅炉驱动者"
 execute if score @s AzrEntityTimer matches 51 positioned -80011 25 200 run bossbar set azr:boss_hp_bar_diesel color red
-execute if score @s AzrEntityTimer matches 51 positioned -80011 25 200 run bossbar set azr:boss_hp_bar_diesel max 300
+execute if score @s AzrEntityTimer matches 51 positioned -80011 25 200 run bossbar set azr:boss_hp_bar_diesel max 100
 execute if score @s AzrEntityTimer matches 51 positioned -80011 25 200 run bossbar set azr:boss_hp_bar_diesel players @a[tag=azrPlayer]
 
 execute positioned -80011 25 200 as @n[tag=AzrielBossDiesel,type=zombie,distance=..50] store result score @s Health run data get entity @s Health
