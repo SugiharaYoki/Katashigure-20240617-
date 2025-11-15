@@ -8,6 +8,6 @@ execute if score @s Azr_Shop matches 26 run scoreboard players set @s Azr_shopCh
 
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.5 0.4
 
-function skyblock:azr/system/shop/refresh_use_emerald
+function skyblock:azr/system/shop/refresh_cost
 
 scoreboard players reset @s Azr_Shop
