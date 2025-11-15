@@ -1,4 +1,7 @@
 
+execute if score @s rng8 matches 2 store result score @s rng10 if entity @e[tag=AzrielMob_floating_fire,type=magma_cube,distance=..15]
+execute if score @s rng8 matches 2 if score @s rng10 matches 4.. run scoreboard players set @s rng2 2
+execute if score @s rng8 matches 2 if score @s rng10 matches 4.. run scoreboard players set @s rng8 0
 execute if score @s rng8 matches 2 run playsound minecraft:entity.evoker.cast_spell hostile @a ~ ~ ~ 1 1.3
 execute if score @s rng8 matches 2 run particle minecraft:flame ~ ~0.3 ~ 0.2 0 0.2 0 20
 execute if score @s rng8 matches 2 run effect give @s slowness 1 9 true
