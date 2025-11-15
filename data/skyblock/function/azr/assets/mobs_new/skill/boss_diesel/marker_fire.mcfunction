@@ -94,4 +94,4 @@ execute if score @s[scores={rng1=2..22}] rng8 matches 80 at @s run function skyb
 execute if score @s[scores={rng1=2..22}] rng8 matches 85 at @s run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_particle_round {distance:8.5,distance_reach:9.0,distance_target:8.75}
 execute if score @s[scores={rng1=2..22}] rng8 matches 90 at @s run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_particle_round {distance:9.0,distance_reach:9.5,distance_target:9.25}
 
-execute if entity @s[scores={rng1=40..}] run kill @s[type=marker]
+execute if entity @s[scores={rng1=23..}] run kill @s[type=marker]
