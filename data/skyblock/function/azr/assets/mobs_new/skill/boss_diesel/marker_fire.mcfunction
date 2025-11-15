@@ -62,6 +62,43 @@ execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rota
 execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^1 ^0.2 ^9.0 0 0 0 0 1
 execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^-1 ^0.2 ^9.0 0 0 0 0 1
 
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^1 ^1.2 ^0.5 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^-1 ^1.2 ^0.5 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^1 ^1.2 ^1.0 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^-1 ^1.2 ^1.0 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^1 ^1.2 ^1.5 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^-1 ^1.2 ^1.5 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^1 ^1.2 ^2.0 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^-1 ^1.2 ^2.0 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^1 ^1.2 ^2.5 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^-1 ^1.2 ^2.5 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^1 ^1.2 ^3.0 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^-1 ^1.2 ^3.0 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^1 ^1.2 ^3.5 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^-1 ^1.2 ^3.5 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^1 ^1.2 ^4.0 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^-1 ^1.2 ^4.0 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^1 ^1.2 ^4.5 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^-1 ^1.2 ^4.5 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^1 ^1.2 ^5.0 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^-1 ^1.2 ^5.0 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^1 ^1.2 ^5.5 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^-1 ^1.2 ^5.5 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^1 ^1.2 ^6.0 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^-1 ^1.2 ^6.0 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^1 ^1.2 ^6.5 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^-1 ^1.2 ^6.5 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^1 ^1.2 ^7.0 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^-1 ^1.2 ^7.0 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^1 ^1.2 ^7.5 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^-1 ^1.2 ^7.5 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^1 ^1.2 ^8.0 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^-1 ^1.2 ^8.0 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^1 ^1.2 ^8.5 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^-1 ^1.2 ^8.5 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^1 ^1.2 ^9.0 0 0 0 0 1
+execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^-1 ^1.2 ^9.0 0 0 0 0 1
+
 execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^0.5 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_burst
 execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^1.0 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_burst
 execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^1.5 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_burst
