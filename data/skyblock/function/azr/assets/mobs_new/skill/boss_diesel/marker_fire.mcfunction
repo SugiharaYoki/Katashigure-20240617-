@@ -22,6 +22,7 @@ execute if score @s rng8 matches 2..4 if entity @a[tag=azrPlayer,distance=7.0..7
 execute if score @s rng8 matches 2..4 if entity @a[tag=azrPlayer,distance=7.5..8.0] run scoreboard players set @s rng8 75
 execute if score @s rng8 matches 2..4 if entity @a[tag=azrPlayer,distance=8.0..8.5] run scoreboard players set @s rng8 80
 execute if score @s rng8 matches 2..4 if entity @a[tag=azrPlayer,distance=8.5..9.0] run scoreboard players set @s rng8 85
+execute if score @s rng8 matches 2..4 if entity @a[tag=azrPlayer,distance=9.0..9.5] run scoreboard players set @s rng8 90
 
 
 execute if score @s[scores={rng1=2..12}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^1 ^0.2 ^0.5 0 0 0 0 1
