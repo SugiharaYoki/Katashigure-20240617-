@@ -12,7 +12,8 @@ tellraw @a[tag=azrPlayer] {"text":"第一关口正处于半封锁状态。选择
 tellraw @a[tag=azrPlayer] {"text":"在这条走廊的前方，是一种你从未感受过的，那种带着神圣气息的强大威压感。","color":"gray"}
 tellraw @a[tag=azrPlayer] {"text":"而你将于此处，与第一位神使展开激烈的战斗……","color":"gray"}
 
-
+scoreboard players set wave Azr_system 7
+scoreboard players set stage Azr_system 9
 
 
 tp @a[tag=azrPlayer] -79931 34 28 facing -79931 34 29

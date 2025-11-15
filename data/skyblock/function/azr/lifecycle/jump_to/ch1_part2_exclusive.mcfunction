@@ -7,5 +7,7 @@ function skyblock:azr/lifecycle/jump_to/ch1_part2
 
 scoreboard players set Azr_Story_Introduction rng1 1023
 
+scoreboard players set wave Azr_system 0
+
 
 function skyblock:azr/system/player/updatespawnpoint_initialize {x:-79983.99,y:40.00,z:-14.00}

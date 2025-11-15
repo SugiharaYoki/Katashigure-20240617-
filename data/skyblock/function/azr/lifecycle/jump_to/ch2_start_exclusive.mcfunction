@@ -7,8 +7,8 @@ execute as @a[tag=azrPlayer] at @s unless score @s SeGa_StandLastBH matches 7.. 
 #execute as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/weapons/stone_axe_normal
 
 #scoreboard players add @a[tag=azrPlayer] Azr_emerald 10
-scoreboard players set stage Azr_system 11
 scoreboard players set wave Azr_system 10
+scoreboard players set stage Azr_system 11
 scoreboard players set @a[tag=azrPlayer] AzrJoinWave 10
 
 #execute as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/others/revival_star
