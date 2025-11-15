@@ -48,7 +48,8 @@ execute positioned -80011 25 200 store result bossbar azr:boss_hp_bar_diesel val
     execute as @n[tag=AzrielBossDiesel] at @s if score @s[scores={rng2=1..3}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss_diesel/attack_fire
 
     execute as @n[tag=AzrielBossDiesel] at @s if entity @s[scores={Health=90..}] run scoreboard players set @s rng8 -20
-    execute as @n[tag=AzrielBossDiesel] at @s if score @s[scores={rng2=4..5}] rng8 matches 30.. run scoreboard players set @s rng8 -1
+    execute as @n[tag=AzrielBossDiesel] at @s if score @s[scores={rng2=4..5}] rng8 matches 30.. run scoreboard players set @s rng2 0
+    execute as @n[tag=AzrielBossDiesel] at @s if score @s rng8 matches 30.. run scoreboard players set @s rng8 -1
 
 
 #MARKER
