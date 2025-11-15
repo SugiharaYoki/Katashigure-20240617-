@@ -212,7 +212,7 @@ item replace block -79920 37 176 container.12 with emerald 3
 item replace block -79920 37 176 container.14 with skull_banner_pattern[custom_name='{"text":"“魔法燃料”","color":"dark_purple","italic":false}',lore=['{"text":"请火把花培育人员时刻注意花蕊的花粉浓度。过多的花粉容易引起微型爆燃。","color":"white","italic":false}','{"text":"虽然炸了这一块供能区域也只会让招待厅的一小部分伸手不见五指，但这太掉价了，我们这是正儿八经的神庭试炼，不是三流角色扮演剧本杀。","color":"white","italic":false}']]
 setblock -79925 37 201 chest[facing=east]
 item replace block -79925 37 201 container.12 with emerald 3
-item replace block -79925 37 201 container.14 with emerald 3
+item replace block -79925 37 201 container.14 with resin_clump 1
 
   #钥匙奖励箱
 setblock -79954 37 172 air
@@ -233,7 +233,7 @@ setblock -79926 45 210 chest[facing=north]
 item replace block -79926 45 210 container.12 with emerald 3
 item replace block -79926 45 210 container.14 with emerald 3
 setblock -79928 37 200 chest[facing=north]
-item replace block -79928 37 200 container.12 with emerald 2
+item replace block -79928 37 200 container.12 with resin_clump 2
 item replace block -79928 37 200 container.14 with emerald 2
 
 #stage Flux
@@ -260,7 +260,7 @@ setblock -79939 33 161 chest[facing=west]
 item replace block -79939 33 161 container.12 with minecraft:emerald 3
 item replace block -79939 33 161 container.14 with minecraft:emerald 3
 setblock -79919 33 158 chest[facing=west]
-item replace block -79919 33 158 container.12 with minecraft:emerald 3
+item replace block -79919 33 158 container.12 with minecraft:resin_clump 2
 item replace block -79919 33 158 container.14 with minecraft:emerald 3
 
 
@@ -282,7 +282,7 @@ setblock -79912 41 103 minecraft:potted_oxeye_daisy
 fill -79903 43 83 -79905 40 83 minecraft:purple_stained_glass
 setblock -79904 40 62 trapped_chest[facing=south]{lock:{components:{custom_data:{key_required:1b}}}}
 item replace block -79904 40 62 container.11 with minecraft:emerald 3
-item replace block -79904 40 62 container.13 with minecraft:emerald 3
+item replace block -79904 40 62 container.13 with minecraft:resin_clump 2
 item replace block -79904 40 62 container.15 with minecraft:emerald 3
   #boss1附近的大花园
 setblock -79933 44 111 minecraft:chest[facing=east]
@@ -310,7 +310,7 @@ item replace block -79889 46 115 container.12 with tripwire_hook[custom_name='{"
 item replace block -79889 46 115 container.14 with emerald 3
 
 item replace block -79892 45 118 container.12 with emerald 2
-item replace block -79892 45 118 container.14 with emerald 2
+item replace block -79892 45 118 container.14 with resin_clump 2
 
 
   #十字南 供能区域
@@ -345,17 +345,17 @@ item replace block -79854 48 176 container.15 with book[lore=['{"text":"……�
 
 
   #物品框
-summon glow_item_frame -79855 44 203 {Item:{id:"minecraft:carrot",count:1b},Facing:2}
+summon glow_item_frame -79855 44 203 {Item:{id:"minecraft:resin_clump",count:1b},Facing:2}
 summon glow_item_frame -79849 44 193 {Item:{id:"minecraft:carrot",count:1b},Facing:1}
-summon glow_item_frame -79864 44 186 {Item:{id:"minecraft:carrot",count:1b},Facing:1}
+summon glow_item_frame -79864 44 186 {Item:{id:"minecraft:resin_clump",count:1b},Facing:1}
 summon glow_item_frame -79846 49 184 {Item:{id:"minecraft:carrot",count:1b},Facing:1}
-summon glow_item_frame -79864 49 192 {Item:{id:"minecraft:carrot",count:1b},Facing:1}
+summon glow_item_frame -79864 49 192 {Item:{id:"minecraft:resin_clump",count:1b},Facing:1}
 summon glow_item_frame -79864 49 178 {Item:{id:"minecraft:golden_carrot",count:1b},Facing:1}
 
   #水族馆
 setblock -79756 42 197 chest[facing=west]
 item replace block -79756 42 197 container.12 with tripwire_hook[custom_name='{"text":"水管图案的钥匙","color":"blue","italic":false}',custom_data={key_golden_pipe:1b}] 1
-item replace block -79756 42 197 container.14 with coal 1
+item replace block -79756 42 197 container.14 with coal 2
 setblock -79755 42 196 minecraft:potted_azalea_bush
 setblock -79755 42 198 minecraft:potted_azalea_bush
 setblock -79764 30 218 chest[facing=north,waterlogged=true]
@@ -376,13 +376,13 @@ setblock -79844 36 78 minecraft:potted_flowering_azalea_bush
   #小读书室
 setblock -79875 42 59 chest[facing=north]
 item replace block -79875 42 59 container.12 with emerald 2
-item replace block -79875 42 59 container.14 with emerald 2
+item replace block -79875 42 59 container.14 with resin_clump 2
 
 #stage Index 立体读书室
 setblock -79832 35 88 minecraft:birch_button[face=floor,facing=south]
   #跳跃宝箱
 setblock -79845 43 77 chest[facing=south]
-item replace block -79845 43 77 container.12 with emerald 2
+item replace block -79845 43 77 container.12 with resin_clump 2
 item replace block -79845 43 77 container.14 with emerald 2
 
 
@@ -407,7 +407,7 @@ setblock -79897 38 51 minecraft:potted_flowering_azalea_bush
 
 #stage8~9道中 水下小钥匙
 item replace block -79939 35 -76 container.11 with minecraft:dried_kelp 2
-item replace block -79939 35 -76 container.13 with tripwire_hook[custom_name='{"text":"蓝宝石钥匙","color":"blue","italic":false}',custom_data={key_sapphire:1b}] 1
+item replace block -79939 35 -76 container.13 with resin_clump 1
 item replace block -79939 35 -76 container.15 with minecraft:dried_kelp 2
 
   #破碎的天花板
