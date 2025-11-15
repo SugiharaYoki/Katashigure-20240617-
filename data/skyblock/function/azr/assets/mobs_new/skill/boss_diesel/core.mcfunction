@@ -13,22 +13,22 @@ execute if score @s rng9 matches 2860.. run scoreboard players set @s rng9 0
 execute if score @s AzrEntityTimer matches 1 run fill -79997 25 201 -79997 30 199 minecraft:red_stained_glass replace air
 
 execute if score @s AzrEntityTimer matches 8 run setblock -80002 27 208 fire
-execute if score @s AzrEntityTimer matches 12 run setblock -80020 27 208 fire
-execute if score @s AzrEntityTimer matches 16 run setblock -80020 27 192 fire
-execute if score @s AzrEntityTimer matches 20 run setblock -80002 27 192 fire
+execute if score @s AzrEntityTimer matches 16 run setblock -80020 27 208 fire
+execute if score @s AzrEntityTimer matches 24 run setblock -80020 27 192 fire
+execute if score @s AzrEntityTimer matches 32 run setblock -80002 27 192 fire
 execute if score @s AzrEntityTimer matches 8 positioned -80002 27 208 run playsound block.fire.extinguish block @a ~ ~ ~ 3 1.5
-execute if score @s AzrEntityTimer matches 12 positioned -80020 27 208 run playsound block.fire.extinguish block @a ~ ~ ~ 3 1.5
-execute if score @s AzrEntityTimer matches 16 positioned -80020 27 192 run playsound block.fire.extinguish block @a ~ ~ ~ 3 1.5
-execute if score @s AzrEntityTimer matches 20 positioned -80002 27 192 run playsound block.fire.extinguish block @a ~ ~ ~ 3 1.5
+execute if score @s AzrEntityTimer matches 16 positioned -80020 27 208 run playsound block.fire.extinguish block @a ~ ~ ~ 3 1.5
+execute if score @s AzrEntityTimer matches 24 positioned -80020 27 192 run playsound block.fire.extinguish block @a ~ ~ ~ 3 1.5
+execute if score @s AzrEntityTimer matches 32 positioned -80002 27 192 run playsound block.fire.extinguish block @a ~ ~ ~ 3 1.5
 
-execute if score @s AzrEntityTimer matches 11..30 positioned -80011 25 200 run function skyblock:azr/assets/events/effects/player_magic_release
+execute if score @s AzrEntityTimer matches 41..50 positioned -80011 25 200 run function skyblock:azr/assets/events/effects/player_magic_release
 
-execute if score @s AzrEntityTimer matches 31 positioned -80011 25 200 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/summon
+execute if score @s AzrEntityTimer matches 51 positioned -80011 25 200 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/summon
 
-execute if score @s AzrEntityTimer matches 31 positioned -80011 25 200 run bossbar add azr:boss_hp_bar_diesel "半阙恒久的热源 - 锅炉驱动者"
-execute if score @s AzrEntityTimer matches 31 positioned -80011 25 200 run bossbar set azr:boss_hp_bar_diesel color red
-execute if score @s AzrEntityTimer matches 31 positioned -80011 25 200 run bossbar set azr:boss_hp_bar_diesel max 300
-execute if score @s AzrEntityTimer matches 31 positioned -80011 25 200 run bossbar set azr:boss_hp_bar_diesel players @a[tag=azrPlayer]
+execute if score @s AzrEntityTimer matches 51 positioned -80011 25 200 run bossbar add azr:boss_hp_bar_diesel "半阙恒久的热源 - 锅炉驱动者"
+execute if score @s AzrEntityTimer matches 51 positioned -80011 25 200 run bossbar set azr:boss_hp_bar_diesel color red
+execute if score @s AzrEntityTimer matches 51 positioned -80011 25 200 run bossbar set azr:boss_hp_bar_diesel max 300
+execute if score @s AzrEntityTimer matches 51 positioned -80011 25 200 run bossbar set azr:boss_hp_bar_diesel players @a[tag=azrPlayer]
 
 execute positioned -80011 25 200 as @n[tag=AzrielBossDiesel,type=zombie,distance=..50] store result score @s Health run data get entity @s Health
 execute positioned -80011 25 200 store result bossbar azr:boss_hp_bar_diesel value run scoreboard players get @n[tag=AzrielBossDiesel] Health
@@ -43,11 +43,11 @@ execute positioned -80011 25 200 store result bossbar azr:boss_hp_bar_diesel val
 
 
     execute as @n[tag=AzrielBossDiesel] at @s run scoreboard players add @s rng8 1
-    execute as @n[tag=AzrielBossDiesel] at @s if score @s[scores={Health=180..250}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..3
-    execute as @n[tag=AzrielBossDiesel] at @s if score @s[scores={Health=..179}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..3
+    execute as @n[tag=AzrielBossDiesel] at @s if score @s[scores={Health=40..90}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..3
+    execute as @n[tag=AzrielBossDiesel] at @s if score @s[scores={Health=..39}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..3
     execute as @n[tag=AzrielBossDiesel] at @s if score @s[scores={rng2=1..3}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss_diesel/attack_fire
 
-    execute as @n[tag=AzrielBossDiesel] at @s if entity @s[scores={Health=251..}] run scoreboard players set @s rng8 -20
+    execute as @n[tag=AzrielBossDiesel] at @s if entity @s[scores={Health=90..}] run scoreboard players set @s rng8 -20
     execute as @n[tag=AzrielBossDiesel] at @s if score @s rng8 matches 999.. run scoreboard players set @s rng8 -20
 
 
