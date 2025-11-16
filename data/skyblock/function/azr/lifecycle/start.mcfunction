@@ -165,8 +165,6 @@ execute as @a[x=-79936.0,y=38.15,z=-14.0,distance=10..1000] run tp @s -79936.0 3
 fill -79933 38 -15 -79933 40 -14 minecraft:air destroy
 setblock -79937 39 -12 air
 execute if entity @a[tag=azrPlayer,tag=AZS_BoS02] run fill -79949 41 54 -79949 38 57 minecraft:air
-execute if entity @a[tag=azrPlayer,tag=AZS_BoS01] run setblock -79915 39 34 minecraft:air
-execute if entity @a[tag=azrPlayer,tag=AZS_BoS01] run setblock -79915 38 34 minecraft:air
-execute if entity @a[tag=azrPlayer,tag=AZS_BoS01] run setblock -79915 40 34 minecraft:air
+
 
 

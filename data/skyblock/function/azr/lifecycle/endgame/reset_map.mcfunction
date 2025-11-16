@@ -66,7 +66,7 @@ setblock -79885 39 39 minecraft:birch_button[face=wall,facing=west]{name: "Befor
 
 #Stage1
 setblock -79949 34 15 chest[facing=north]
-item replace block -79949 34 15 container.13 with tripwire_hook[custom_name='{"text":"铸铁钥匙","color":"blue","italic":false}',custom_data={key_iron:1b}] 1
+item replace block -79949 34 15 container.13 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
 setblock -79927 38 0 minecraft:white_shulker_box
 setblock -79931 37 3 minecraft:quartz_pillar{name: "Stage1 mob spawnpoint"}
 setblock -79931 37 -9 minecraft:quartz_pillar{name: "Stage1 mob spawnpoint"}
@@ -126,12 +126,13 @@ setblock -79922 38 35 air
 setblock -79922 38 35 trapped_chest[facing=east]{lock:{components:{custom_data:{key_required:1b}}}}
 item replace block -79922 38 35 container.12 with minecraft:beef 5
 item replace block -79922 38 35 container.14 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录6”","color":"dark_purple","italic":false}',lore=['{"text":"权之殊能大人曾言","color":"white","italic":false}','{"text":"下一回便会有真正的强者光临神庭。","color":"white","italic":false}','{"text":"并非由魔界之污秽魔力所造就，","color":"white","italic":false}','{"text":"而是命定将拯救三界之人。","color":"white","italic":false}']] 1
-setblock -79912 38 34 chest[facing=west]
-item replace block -79912 38 34 container.12 with skull_banner_pattern[custom_name='{"text": "“我的东南水路正门钥匙被人偷走六回了”", "color": "dark_purple","italic":false}', lore=['{"text": "我不知道是谁对禁地这么感兴趣。","color":"white", "italic": false}','{"text": "如果只是对下水道感兴趣的话，那人完全可以选择其他三个区域。","color":"white", "italic": false}','{"text": "魔神的力量……果然也在被觊觎着吧。","color":"white", "italic": false}']] 1
-item replace block -79912 38 34 container.14 with tripwire_hook[custom_name='{"text":"木船图案的钥匙","color":"blue","italic":false}',custom_data={key_boat:1b}] 1
-setblock -79915 39 34 minecraft:quartz_bricks{name: "secret chest"}
-setblock -79915 38 34 minecraft:quartz_block{name: "secret chest"}
-setblock -79915 40 34 minecraft:quartz_block{name: "secret chest"}
+setblock -79912 39 32 minecraft:potted_allium
+setblock -79912 39 36 minecraft:potted_allium
+
+  #小庭院跳跃宝箱
+setblock -79907 39 44 chest[facing=west]
+item replace block -79907 39 44 container.12 with skull_banner_pattern[custom_name='{"text": "“我的东南水路正门钥匙被人偷走六回了”", "color": "dark_purple","italic":false}', lore=['{"text": "我不知道是谁对禁地这么感兴趣。","color":"white", "italic": false}','{"text": "如果只是对下水道感兴趣的话，那人完全可以选择其他三个区域。","color":"white", "italic": false}','{"text": "魔神的力量……果然也在被觊觎着吧。","color":"white", "italic": false}']] 1
+item replace block -79907 39 44 container.14 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
 
   #苔藓培育室
 setblock -79934 31 17 chest[facing=east]
@@ -179,7 +180,7 @@ item replace block -79951 38 59 container.11 with minecraft:emerald 3
 item replace block -79951 38 59 container.13 with minecraft:emerald 3
 item replace block -79951 38 59 container.15 with minecraft:emerald 3
 fill -79950 38 58 -79951 39 58 quartz_block
-item replace block -79939 39 58 container.13 with tripwire_hook[custom_name='{"text":"白方岩钥匙","color":"blue","italic":false}',custom_data={key_stone:1b}] 1
+item replace block -79939 39 58 container.13 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
 
 setblock -79949 39 61 minecraft:white_stained_glass
 setblock -79943 39 61 minecraft:white_stained_glass
@@ -243,7 +244,7 @@ fill -79936 36 197 -79936 36 198 air
   #供热迷宫
 setblock -79963 29 179 chest[facing=east]
 item replace block -79963 29 179 container.12 with minecraft:emerald 3
-item replace block -79963 29 179 container.12 with tripwire_hook[custom_name='{"text":"火把花形状的钥匙","color":"blue","italic":false}',custom_data={key_torchflower:1b}] 1
+item replace block -79963 29 179 container.12 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
 
 #stage Kinetic
 setblock -79965 31 167 minecraft:birch_button[facing=south,face=floor]
@@ -274,7 +275,7 @@ setblock -79904 44 137 minecraft:potted_azure_bluet
 setblock -79904 44 133 minecraft:potted_azure_bluet
 setblock -79904 43 135 chest[facing=east]
 item replace block -79904 43 135 container.12 with minecraft:coal 1
-item replace block -79904 43 135 container.14 with tripwire_hook[custom_name='{"text":"椅子形状的钥匙","color":"blue","italic":false}',custom_data={key_chair:1b}] 1
+item replace block -79904 43 135 container.14 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
 
 setblock -79912 41 106 minecraft:potted_oxeye_daisy
 setblock -79912 41 103 minecraft:potted_oxeye_daisy
@@ -287,7 +288,7 @@ item replace block -79904 40 62 container.15 with minecraft:emerald 3
   #boss1附近的大花园
 setblock -79933 44 111 minecraft:chest[facing=east]
 item replace block -79933 44 111 container.12 with minecraft:emerald 3
-item replace block -79933 44 111 container.14 with tripwire_hook[custom_name='{"text":"楼阁形状的钥匙","color":"blue","italic":false}',custom_data={key_gazebo:1b}] 1
+item replace block -79933 44 111 container.14 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
   #直通vestige
 fill -79896 42 88 -79898 38 88 minecraft:purple_stained_glass
 
@@ -304,9 +305,7 @@ fill -79862 43 163 -79862 46 165 minecraft:purple_stained_glass
 fill -79886 43 132 -79888 45 132 minecraft:purple_stained_glass
   #十字北 阳台阁楼 招待厅
 setblock -79889 46 115 chest[facing=east]
-#临时替代：目前月色石钥匙没有使用，金镐图案的钥匙锁没有对应的钥匙，暂时将其替换为金镐图案的钥匙
-#item replace block -79889 46 115 container.12 with tripwire_hook[custom_name='{"text":"月色石钥匙","color":"blue","italic":false}',custom_data={key_moon:1b}] 1
-item replace block -79889 46 115 container.12 with tripwire_hook[custom_name='{"text":"金镐图案的钥匙","color":"blue","italic":false}',custom_data={key_golden_pickaxe:1b}] 1
+item replace block -79889 46 115 container.12 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
 item replace block -79889 46 115 container.14 with emerald 3
 
 item replace block -79892 45 118 container.12 with emerald 2
@@ -354,7 +353,7 @@ summon glow_item_frame -79864 49 178 {Item:{id:"minecraft:golden_carrot",count:1
 
   #水族馆
 setblock -79756 42 197 chest[facing=west]
-item replace block -79756 42 197 container.12 with tripwire_hook[custom_name='{"text":"水管图案的钥匙","color":"blue","italic":false}',custom_data={key_golden_pipe:1b}] 1
+item replace block -79756 42 197 container.12 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
 item replace block -79756 42 197 container.14 with coal 2
 setblock -79755 42 196 minecraft:potted_azalea_bush
 setblock -79755 42 198 minecraft:potted_azalea_bush
@@ -660,7 +659,7 @@ item replace block -79903 40 -104 container.11 with emerald 2
 item replace block -79903 40 -104 container.13 with minecraft:beef 2
 item replace block -79903 40 -104 container.15 with emerald 2
 #stage11 牢房小道具
-item replace block -79929 47 -110 container.13 with tripwire_hook[custom_name='{"text":"钢笔图案的钥匙","color":"blue","italic":false}',custom_data={key_paper:1b}] 1
+item replace block -79929 47 -110 container.13 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
 #stage11 牢房小道具
 item replace block -79897 40 -115 container.12 with emerald 3
 item replace block -79897 40 -115 container.14 with minecraft:bone 1
@@ -683,10 +682,10 @@ item replace block -79866 43 -57 container.14 with coal 2
 item replace block -79867 44 -52 container.12 with emerald 3
 item replace block -79865 42 -52 container.13 with dried_kelp 8
 item replace block -79867 40 -103 container.12 with shulker_shell[custom_name='{"text":"弹簧箭盒","italic":false}',lore=['{"text":"敲击 - 散射36支箭矢（射程较高）","color":"yellow","italic":false}'],enchantments={blast_protection:1},custom_data={arrow_box:1b},custom_model_data={floats:[100001.0]}] 2
-item replace block -79867 40 -103 container.14 with tripwire_hook[custom_name='{"text":"紫翡翠钥匙","color":"blue","italic":false}',custom_data={key_purple_jade:1b}] 1
+item replace block -79867 40 -103 container.14 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
 item replace block -79863 40 -76 container.12 with stone_axe[custom_name='{"text":"苔石斧·笼怨","italic":false}',attribute_modifiers=[{type:"knockback_resistance",slot:"mainhand",id:"azr:mossstone_axe.knockback_resistance",amount:0.13,operation:"add_value"},{type:"attack_damage",slot:"mainhand",id:"azr:mossstone_axe.attack_damage",amount:10.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"azr:mossstone_axe.attack_speed",amount:-3.2,operation:"add_value"}],enchantments={"unbreaking":2}] 1
 item replace block -79929 49 -123 container.12 with iron_ingot 1
-item replace block -79929 49 -123 container.14 with tripwire_hook[custom_name='{"text":"杜鹃花钥匙","color":"blue","italic":false}',custom_data={key_azalea:1b}] 1
+item replace block -79929 49 -123 container.14 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
 
 item replace block -79770 23 -460 container.13 with minecraft:gold_nugget 30
 item replace block -79765 24 -469 container.13 with minecraft:gold_nugget 28
