@@ -124,8 +124,8 @@ setblock -79928 40 34 minecraft:quartz_block
 setblock -79924 38 33 air
 setblock -79922 38 35 air
 setblock -79922 38 35 trapped_chest[facing=east]{lock:{components:{custom_data:{key_required:1b}}}}
-item replace block -79922 38 35 container.11 with minecraft:beef 5
-item replace block -79922 38 35 container.15 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录6”","color":"dark_purple","italic":false}',lore=['{"text":"权之殊能大人曾言","color":"white","italic":false}','{"text":"下一回便会有真正的强者光临神庭。","color":"white","italic":false}','{"text":"并非由魔界之污秽魔力所造就，","color":"white","italic":false}','{"text":"而是命定将拯救三界之人。","color":"white","italic":false}']] 1
+item replace block -79922 38 35 container.12 with minecraft:beef 5
+item replace block -79922 38 35 container.14 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录6”","color":"dark_purple","italic":false}',lore=['{"text":"权之殊能大人曾言","color":"white","italic":false}','{"text":"下一回便会有真正的强者光临神庭。","color":"white","italic":false}','{"text":"并非由魔界之污秽魔力所造就，","color":"white","italic":false}','{"text":"而是命定将拯救三界之人。","color":"white","italic":false}']] 1
 setblock -79912 38 34 chest[facing=west]
 item replace block -79912 38 34 container.12 with skull_banner_pattern[custom_name='{"text": "“我的东南水路正门钥匙被人偷走六回了”", "color": "dark_purple","italic":false}', lore=['{"text": "我不知道是谁对禁地这么感兴趣。","color":"white", "italic": false}','{"text": "如果只是对下水道感兴趣的话，那人完全可以选择其他三个区域。","color":"white", "italic": false}','{"text": "魔神的力量……果然也在被觊觎着吧。","color":"white", "italic": false}']] 1
 item replace block -79912 38 34 container.14 with tripwire_hook[custom_name='{"text":"木船图案的钥匙","color":"blue","italic":false}',custom_data={key_boat:1b}] 1
