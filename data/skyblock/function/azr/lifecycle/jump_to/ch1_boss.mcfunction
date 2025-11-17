@@ -16,7 +16,7 @@ scoreboard players set @a[tag=azrPlayer] AzrJoinWave 7
 
 
 execute positioned -79923.85 46.3 45.02 run function skyblock:azr/assets/mobs_new/unique/bird
-execute positioned -79930.46 71.00 74.33 run function skyblock:azr/assets/mobs_new/unique/marinus
+execute positioned -79930.46 71.00 74.33 run function skyblock:azr/assets/mobs_new/skill/marinus/summon
 
 fill -79934 40 -1 -79934 38 1 air destroy
 fill -79931 40 6 -79931 38 6 air destroy
