@@ -47,14 +47,14 @@ execute if score stage_main_thread AzrTimerStack matches 99..100 positioned -798
 execute if score stage_main_thread AzrTimerStack matches 101 run fill -79891 42 73 -79889 38 73 minecraft:red_stained_glass
 execute if score stage_main_thread AzrTimerStack matches 101 run fill -79883 38 48 -79883 41 49 minecraft:red_stained_glass
 
-execute if score stage_main_thread AzrTimerStack matches 101 as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs_new/skill/marinus/core
+execute if score stage_main_thread AzrTimerStack matches 101.. as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs_new/skill/marinus/core
 execute if score stage_main_thread AzrTimerStack matches 101 at @n[tag=AzrielNPC_marinus] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 101 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"马林努斯：","color":"yellow","bold": true},{"bold": false,"text":"\n“很好，人类的亡魂。我看你并没有听别人劝的意愿。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 121 at @n[tag=AzrielNPC_marinus] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 121 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"马林努斯：","color":"yellow","bold": true},{"bold": false,"text":"\n“准备好，回你的地狱。”","color":"white"}]
 
 
-execute if score stage_main_thread AzrTimerStack matches 101..300 unless entity @a[tag=azrPlayer,x=-79899,y=37,z=45,dx=16,dy=55,dz=29] run function skyblock:azr/lifecycle/endgame/reset_map_boss_main_marinus
+execute if score stage_main_thread AzrTimerStack matches 101..300 unless entity @a[tag=azrPlayer,x=-79899,y=37,z=45,dx=16,dy=8,dz=29] run function skyblock:azr/lifecycle/endgame/reset_map_boss_main_marinus
 
 
 
