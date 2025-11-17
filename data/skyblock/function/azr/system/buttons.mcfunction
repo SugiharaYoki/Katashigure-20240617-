@@ -56,10 +56,10 @@ execute if block -79832 35 88 minecraft:birch_button[powered=true] if score stag
 execute if block -79892 39 119 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 17
 execute if block -79892 39 119 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79892 39 119 minecraft:birch_button[powered=true] run setblock -79892 39 119 air
-##stage8 uncommited
-#execute if block -79888 39 67 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 20
-#execute if block -79888 39 67 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
-#execute if block -79888 39 67 minecraft:birch_button[powered=true] run setblock -79888 39 67 air
+#stage8 uncommited
+execute if block -79888 39 67 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 20
+execute if block -79888 39 67 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
+execute if block -79888 39 67 minecraft:birch_button[powered=true] run setblock -79888 39 67 air
 #stage8 uncommited
 execute if block -79885 39 39 minecraft:birch_button[powered=true] run tellraw @a[tag=azrShowDialog] {"text":"没有任何反应","color":"gray"}
 execute if block -79885 39 39 minecraft:birch_button[powered=true] run setblock -79885 39 39 air
