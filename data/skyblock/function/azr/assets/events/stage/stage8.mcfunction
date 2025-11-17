@@ -14,22 +14,22 @@ execute positioned -79890 38 51 as @n[tag=AzrielNPC_marinus] store result score 
 execute positioned -79890 38 51 store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielNPC_marinus] Health
 
 execute if score stage_main_thread AzrTimerStack matches 2 run effect give @n[tag=AzrielNPC_marinus,type=villager] instant_health 3 39 true
-execute if score stage_main_thread AzrTimerStack matches 2 positioned -79890 38 51 run playsound minecraft:block.portal.trigger ambient @a ~ ~ ~ 2 2
-execute if score stage_main_thread AzrTimerStack matches 10 at @n[tag=AzrielNPC_marinus,type=villager] run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
-execute if score stage_main_thread AzrTimerStack matches 6 positioned -79890 38 51 run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
-execute if score stage_main_thread AzrTimerStack matches 10 positioned -79890 38 51 run tp @n[tag=AzrielNPC_marinus,type=villager] ~ ~ ~ facing entity @p[tag=azrPlayer]
-execute if score stage_main_thread AzrTimerStack matches 10 positioned -79890 38 51 run particle minecraft:reverse_portal ~ ~0.8 ~ 0.3 0.7 0.3 0.0 18
-execute if score stage_main_thread AzrTimerStack matches 10 positioned -79890 38 51 run playsound entity.enderman.teleport hostile @a ~ ~ ~ 0.8 1.2
-execute if score stage_main_thread AzrTimerStack matches 12..100 positioned -79890 38 51 run rotate @n[tag=AzrielNPC_marinus] facing entity @p[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 6 positioned -79890 38 51 run playsound minecraft:block.portal.trigger ambient @a ~ ~ ~ 2 2
+execute if score stage_main_thread AzrTimerStack matches 14 at @n[tag=AzrielNPC_marinus,type=villager] run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
+execute if score stage_main_thread AzrTimerStack matches 10 positioned -79890 38 51 run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
+execute if score stage_main_thread AzrTimerStack matches 14 positioned -79890 38 51 run tp @n[tag=AzrielNPC_marinus,type=villager] ~ ~ ~ facing entity @p[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 14 positioned -79890 38 51 run particle minecraft:reverse_portal ~ ~0.8 ~ 0.3 0.7 0.3 0.0 18
+execute if score stage_main_thread AzrTimerStack matches 14 positioned -79890 38 51 run playsound entity.enderman.teleport hostile @a ~ ~ ~ 0.8 1.2
+execute if score stage_main_thread AzrTimerStack matches 16..100 positioned -79890 38 51 run rotate @n[tag=AzrielNPC_marinus] facing entity @p[tag=azrPlayer]
 
 
-execute if score stage_main_thread AzrTimerStack matches 30..31 positioned -79890 38 51 unless entity @a[tag=azrPlayer,distance=0..8] run scoreboard players set stage_main_thread AzrTimerStack 30
+execute if score stage_main_thread AzrTimerStack matches 25..31 positioned -79890 38 51 unless entity @a[tag=azrPlayer,distance=0..8] run scoreboard players set stage_main_thread AzrTimerStack 30
 execute if score stage_main_thread AzrTimerStack matches 32 at @n[tag=AzrielNPC_marinus] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 32 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"马林努斯：","color":"yellow","bold": true},{"bold": false,"text":"\n“人类的亡魂，不要再靠近了。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 50 at @n[tag=AzrielNPC_marinus] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 50 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"马林努斯：","color":"yellow","bold": true},{"bold": false,"text":"\n“试炼将会暂停，任何僭越都将被视为对神庭的宣战。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 70 at @n[tag=AzrielNPC_marinus] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
-execute if score stage_main_thread AzrTimerStack matches 70 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"马林努斯：","color":"yellow","bold": true},{"bold": false,"text":"\n“前方不会再有第八关。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 70 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"马林努斯：","color":"yellow","bold": true},{"bold": false,"text":"\n“请回吧，前方不会再有第八关。”","color":"white"}]
 
 execute if score stage_main_thread AzrTimerStack matches 72 run data modify entity @n[tag=AzrielNPC_marinus] Invulnerable set value 0b
 execute if score stage_main_thread AzrTimerStack matches 73..74 positioned -79890 38 51 if entity @n[tag=AzrielNPC_marinus,scores={Health=490..}] run scoreboard players set stage_main_thread AzrTimerStack 73
