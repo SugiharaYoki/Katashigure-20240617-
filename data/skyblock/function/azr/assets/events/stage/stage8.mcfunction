@@ -16,6 +16,8 @@ execute if score stage_main_thread AzrTimerStack matches 2 positioned -79890 38 
 execute if score stage_main_thread AzrTimerStack matches 10 at @n[tag=AzrielNPC_marinus,type=villager] run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
 execute if score stage_main_thread AzrTimerStack matches 6 positioned -79890 38 51 run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
 execute if score stage_main_thread AzrTimerStack matches 10 positioned -79890 38 51 run tp @n[tag=AzrielNPC_marinus,type=villager] ~ ~ ~ facing entity @p[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 10 positioned -79890 38 51 run particle minecraft:reverse_portal ~ ~0.8 ~ 0.3 0.7 0.3 0.0 18
+execute if score stage_main_thread AzrTimerStack matches 10 positioned -79890 38 51 run playsound entity.enderman.teleport hostile @a ~ ~ ~ 0.8 1.2
 execute if score stage_main_thread AzrTimerStack matches 12..100 positioned -79890 38 51 run rotate @n[tag=AzrielNPC_marinus] facing entity @p[tag=azrPlayer]
 
 
