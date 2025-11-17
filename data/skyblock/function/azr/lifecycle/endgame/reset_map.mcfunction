@@ -385,14 +385,6 @@ item replace block -79845 43 77 container.12 with resin_clump 2
 item replace block -79845 43 77 container.14 with emerald 2
 
 
-
-
-
-
-
-
-
-
 #stage8
 setblock -79897 38 61 minecraft:potted_flowering_azalea_bush
 setblock -79897 38 59 minecraft:potted_flowering_azalea_bush
@@ -400,7 +392,7 @@ setblock -79897 38 57 minecraft:potted_flowering_azalea_bush
 setblock -79897 38 55 minecraft:potted_flowering_azalea_bush
 setblock -79897 38 53 minecraft:potted_flowering_azalea_bush
 setblock -79897 38 51 minecraft:potted_flowering_azalea_bush
-
+setblock -79888 39 67 minecraft:birch_button[facing=west]
 
 
 
