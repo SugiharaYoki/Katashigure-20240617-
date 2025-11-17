@@ -393,7 +393,7 @@ setblock -79897 38 55 minecraft:potted_flowering_azalea_bush
 setblock -79897 38 53 minecraft:potted_flowering_azalea_bush
 setblock -79897 38 51 minecraft:potted_flowering_azalea_bush
 setblock -79888 39 67 minecraft:birch_button[facing=west]
-
+function skyblock:azr/lifecycle/endgame/reset_map_boss_main_marinus
 
 
 #stage8~9道中 水下小钥匙
@@ -795,3 +795,7 @@ tellraw @a[tag=!Gaming] {"text": "死亡总是在不经意间，悄然而至。"
 tellraw @a[tag=!Gaming] {"text": "你本该活得更久。如果想要违抗自己的死亡……","color": "green"}
 tellraw @a[tag=!Gaming] {"text": "那就，前往天界的生命树庭园吧。","color": "green"}
 tellraw @a[tag=!Gaming] [{"text": "『亚兹列尔的中庭花园』","color": "light_purple","bold": true},{"text": " 已允许新的挑战者光临","color": "green","bold": false}]
+
+
+scoreboard players set stage_main_thread AzrTimerStack 0
+scoreboard players set stage Azr_system 0
