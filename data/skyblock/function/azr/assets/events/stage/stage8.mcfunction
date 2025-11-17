@@ -13,7 +13,7 @@ execute if score stage_main_thread AzrTimerStack matches 370 run bossbar remove 
 execute positioned -79890 38 51 as @n[tag=AzrielNPC_marinus] store result score @s Health run data get entity @s Health
 execute positioned -79890 38 51 store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielNPC_marinus] Health
 
-
+execute if score stage_main_thread AzrTimerStack matches 2 run effect give @n[tag=AzrielNPC_marinus,type=villager] instant_health 3 39 true
 execute if score stage_main_thread AzrTimerStack matches 2 positioned -79890 38 51 run playsound minecraft:block.portal.trigger ambient @a ~ ~ ~ 2 2
 execute if score stage_main_thread AzrTimerStack matches 10 at @n[tag=AzrielNPC_marinus,type=villager] run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
 execute if score stage_main_thread AzrTimerStack matches 6 positioned -79890 38 51 run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
