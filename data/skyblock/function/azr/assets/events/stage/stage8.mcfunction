@@ -13,9 +13,10 @@ execute if score stage_main_thread AzrTimerStack matches 370 run bossbar remove 
 
 
 execute if score stage_main_thread AzrTimerStack matches 2 positioned -79890 38 51 run playsound minecraft:block.portal.trigger ambient @a ~ ~ ~ 2 2
+execute if score stage_main_thread AzrTimerStack matches 10 at @n[tag=AzrielNPC_marinus,type=villager] run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
 execute if score stage_main_thread AzrTimerStack matches 6 positioned -79890 38 51 run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
-execute if score stage_main_thread AzrTimerStack matches 10 positioned -79890 38 51 run function skyblock:azr/assets/mobs_new/skill/marinus/summon
-execute if score stage_main_thread AzrTimerStack matches 12..15 positioned -79890 38 51 run rotate @n[tag=AzrielNPC_marinus] facing entity @p[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 10 positioned -79890 38 51 run tp @n[tag=AzrielNPC_marinus,type=villager] ~ ~ ~ facing entity @p[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 12..100 positioned -79890 38 51 run rotate @n[tag=AzrielNPC_marinus] facing entity @p[tag=azrPlayer]
 
 
 execute if score stage_main_thread AzrTimerStack matches 30..31 positioned -79890 38 51 unless entity @a[tag=azrPlayer,distance=0..6] run scoreboard players set stage_main_thread AzrTimerStack 30
@@ -26,6 +27,7 @@ execute if score stage_main_thread AzrTimerStack matches 50 positioned -79923 43
 execute if score stage_main_thread AzrTimerStack matches 70 at @n[tag=AzrielNPC_marinus] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 70 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"马林努斯：","color":"yellow","bold": true},{"bold": false,"text":"\n“前方不会再有第八关。”","color":"white"}]
 
+execute if score stage_main_thread AzrTimerStack matches 72 run data modify entity @n[tag=AzrielNPC_marinus] Invulnerable set value 0b
 execute if score stage_main_thread AzrTimerStack matches 73..74 positioned -79890 38 51 if entity @n[tag=AzrielNPC_marinus,scores={Health=490..}] run scoreboard players set stage_main_thread AzrTimerStack 73
 
 execute if score stage_main_thread AzrTimerStack matches 75 at @n[tag=AzrielNPC_marinus] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
