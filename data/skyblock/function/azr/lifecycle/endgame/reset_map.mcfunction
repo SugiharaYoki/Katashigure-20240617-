@@ -395,8 +395,13 @@ setblock -79897 38 51 minecraft:potted_flowering_azalea_bush
 setblock -79888 39 67 minecraft:birch_button[facing=west]
 function skyblock:azr/lifecycle/endgame/reset_map_boss_main_marinus
 
+#stage8-boss2道中
+setblock -79902 39 33 minecraft:potted_lily_of_the_valley
+setblock -79897 39 23 minecraft:potted_lily_of_the_valley
+setblock -79897 39 33 minecraft:potted_lily_of_the_valley
+setblock -79902 39 23 minecraft:potted_lily_of_the_valley
 
-#stage8~9道中 水下小钥匙
+#boss2~stage9道中 水下小钥匙
 item replace block -79939 35 -76 container.11 with minecraft:dried_kelp 2
 item replace block -79939 35 -76 container.13 with resin_clump 1
 item replace block -79939 35 -76 container.15 with minecraft:dried_kelp 2
@@ -584,7 +589,7 @@ fill -79932 38 72 -79930 42 72 air
 fill -79932 42 130 -79930 38 130 minecraft:purple_stained_glass
 fill -79938 44 151 -79938 43 151 smooth_quartz
 fill -79898 42 101 -79896 38 101 minecraft:purple_stained_glass
-fill -79891 40 45 -79889 38 45 minecraft:purple_stained_glass
+fill -79891 41 45 -79889 38 45 minecraft:purple_stained_glass
 fill -79891 38 73 -79889 42 73 air
 fill -79888 38 16 -79888 40 16 minecraft:quartz_pillar
 fill -79888 38 18 -79888 40 18 minecraft:quartz_pillar
