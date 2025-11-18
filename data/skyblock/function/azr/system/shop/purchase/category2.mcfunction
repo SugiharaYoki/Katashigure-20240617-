@@ -82,6 +82,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=22,Azr_Shop=$(trigger)}] \
 $execute as @s[scores={Azr_Shop_rng$(rng)=23,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* ink_sac[count={min:4}] \
+    if items entity @s container.* iron_ingot[count={min:4}] \
     if score @s Azr_emerald matches 25.. \
     unless function skyblock:azr/system/shop/purchase/category2/\
     rng23 run scoreboard players set tempPlayerShopSuccess Azr_system 1
@@ -91,6 +92,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=23,Azr_Shop=$(trigger)}] \
 $execute as @s[scores={Azr_Shop_rng$(rng)=24,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* ink_sac[count={min:4}] \
+    if items entity @s container.* iron_ingot[count={min:4}] \
     if score @s Azr_emerald matches 25.. \
     unless function skyblock:azr/system/shop/purchase/category2/\
     rng24 run scoreboard players set tempPlayerShopSuccess Azr_system 1
