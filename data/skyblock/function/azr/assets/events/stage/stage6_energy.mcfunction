@@ -140,7 +140,7 @@ execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=80}] positioned -79915 29 205 if score @s rng5 matches 100 run item replace block ~ ~ ~ container.0 with ghast_tear 1
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=82}] run playsound block.iron_trapdoor.open block @a -79913 29 208 0.8 1.1
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=82}] positioned -79915 29 205 run setblock -79913 29 208 air
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=82}] positioned -79915 29 205 run scoreboard players set @s rng1 0
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=82..}] positioned -79915 29 205 run scoreboard players set @s rng1 0
 
 #随机野怪
 execute positioned -79954 29 183 if score random_enemy_thread AzrTimerStack matches 2 store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..32]
