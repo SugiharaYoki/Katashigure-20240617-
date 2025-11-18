@@ -113,7 +113,7 @@ execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52}] run setblock -79913 29 208 minecraft:iron_trapdoor[half=top]
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] run playsound block.iron_trapdoor.close block @a -79913 29 208 0.8 1.1
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52}] run playsound block.iron_trapdoor.close block @a -79913 29 208 0.8 1.1
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2..10}] run kill @n[type=item,distance=..1.5]
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2..10}] run kill @e[type=item,distance=..1.5]
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=10}] run playsound minecraft:entity.minecart.riding block @a ~ ~ ~ 3 0.78
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=18}] run playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 3 1.5
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=20}] run playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 3 1.5
@@ -133,7 +133,7 @@ execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52}] positioned -79915 29 205 if entity @n[type=item,distance=..1.5,nbt={Item:{id:"minecraft:string"}}] store result score @s rng5 run random value 1..100
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52}] positioned -79915 29 205 if entity @n[type=item,distance=..1.5,nbt={Item:{id:"minecraft:ink_sac"}}] store result score @s rng5 run random value 1..100
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52}] positioned -79915 29 205 if entity @n[type=item,distance=..1.5,nbt={Item:{id:"minecraft:flint"}}] store result score @s rng5 run random value 1..100
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52..60}] run kill @n[type=item,distance=..1.5]
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52..60}] run kill @e[type=item,distance=..1.5]
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=60..68}] run playsound minecraft:entity.minecart.riding block @a ~ ~ ~ 3 0.78
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=65..68}] run playsound minecraft:entity.minecart.riding block @a ~ ~ ~ 3 1.3
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=68}] positioned -79913 27 208 if score @s rng5 matches 10.. run playsound entity.generic.explode block @a ~ ~ ~ 4 0.8
