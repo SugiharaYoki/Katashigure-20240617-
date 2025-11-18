@@ -1,6 +1,5 @@
 #『西南园林赏道』
 scoreboard players add internal_clock_002 Azr_system 1
-execute if score internal_clock_002 Azr_system matches 1 run setblock -79919 39 24 air
 execute if score internal_clock_002 Azr_system matches 1 run setblock -79940 39 -60 air
 execute if score internal_clock_002 Azr_system matches 1 run give @p[tag=azrPlayer] minecraft:carrot 5
 execute if score internal_clock_002 Azr_system matches 1 run give @p[tag=azrPlayer] minecraft:emerald_block 1

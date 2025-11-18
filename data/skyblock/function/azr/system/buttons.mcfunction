@@ -107,8 +107,8 @@ execute if block -79924 39 25 minecraft:birch_button[powered=true] positioned -7
 execute if block -79924 39 25 minecraft:birch_button[powered=true] positioned -79933 38 23 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if block -79924 39 25 minecraft:birch_button[powered=true] run summon item -79931 38 25 {Item:{count:5,id:"minecraft:emerald"}}
 execute if block -79924 39 25 minecraft:birch_button[powered=true] run setblock -79924 39 25 air
-#extra bonus - stage3α - spider cave
-execute if block -79919 39 24 minecraft:birch_button[powered=true] run function skyblock:azr/assets/events/stage/dialog/southwest_cenic_path
+#extra bonus - stage3α - spider room
+execute if block -79919 39 25 minecraft:birch_button[powered=true] run function skyblock:azr/assets/events/stage/dialog/southwest_cenic_path
 #extra bonus - stage4β uncommited
 execute if block -79959 39 20 minecraft:birch_button[powered=true] run summon item -79956 42 20 {Item:{count:2,id:"minecraft:coal"}}
 execute if block -79959 39 20 minecraft:birch_button[powered=true] run setblock -79959 39 20 air
