@@ -8,8 +8,8 @@ execute if score @s rng8 matches 22 run summon marker ~ ~ ~ {Tags:["AzrielMob_bo
 execute if score @s rng8 matches 42 run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_marker","AzrielMob_mob_marker"]}
 execute if score @s rng8 matches 72 run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_marker","AzrielMob_mob_marker"]}
 
-execute if score @s[scores={Health=120..}] rng8 matches 30 run scoreboard players set @s rng8 81
-execute if score @s[scores={Health=60..}] rng8 matches 50 run scoreboard players set @s rng8 81
+execute if score @s[scores={Health=110..}] rng8 matches 30 run scoreboard players set @s rng8 81
+execute if score @s[scores={Health=40..}] rng8 matches 50 run scoreboard players set @s rng8 81
 
 execute if score @s rng8 matches 82.. store result score @s rng3 run random value 12..16
 execute if score @s[scores={Health=..120}] rng8 matches 82.. store result score @s rng3 run random value 8..12
