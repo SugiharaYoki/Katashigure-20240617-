@@ -122,6 +122,25 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=27,Azr_Shop=$(trigger)}] \
     # 27 @s 弓 15 绿宝石 2 燧石
 
 
+$execute as @s[scores={Azr_Shop_rng$(rng)=28,Azr_Shop=$(trigger)}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* bone[count={min:8}] \
+    if items entity @s container.* iron_ingot[count={min:10}] \
+    if score @s Azr_emerald matches 30.. \
+    unless function skyblock:azr/system/shop/purchase/category2/\
+    rng28 run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    # 28 @s 铁剑尸化
+
+
+$execute as @s[scores={Azr_Shop_rng$(rng)=29,Azr_Shop=$(trigger)}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* bone[count={min:8}] \
+    if items entity @s container.* iron_ingot[count={min:10}] \
+    if score @s Azr_emerald matches 30.. \
+    unless function skyblock:azr/system/shop/purchase/category2/\
+    rng29 run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    # 29 @s 铁斧尸化
+
 
 
 
