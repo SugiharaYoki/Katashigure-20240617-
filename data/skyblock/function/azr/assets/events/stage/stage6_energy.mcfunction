@@ -100,9 +100,22 @@ execute positioned -80008 25 200 unless entity @n[tag=AzrielMarker_encounter,dis
 
 
 
+#树脂压缩机
+#give @a written_book[written_book_content={pages:['[["",{"text":"树脂还原机 操作手册","bold":true,"color":"#865604"},"\\n\\n1. 将煤炭掷入素材接收口。\\n2. 静待机械运作完成。\\n3. 树脂将会传输至一旁的物资箱内。\\n\\n提示：请勿将杂物投入其中，机械可能会因此损坏。\\n\\n\\n",{"text":"格剌西亚拉波斯大人的倾力设计！","italic":true,"color":"dark_gray"}]]'],title:"Book Title",author:"Book Author"}]
 
-
-
+execute positioned -79913 27 208 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79913,y=30,z=208,tag=azrPlayer,distance=0..8] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79913 27 208 as @n[type=item,distance=..1.5] at @s if entity @s[type=item,nbt={Item:{id:"minecraft:coal"}}] run scoreboard players add @n[x=-79913,y=27,z=208,tag=AzrielMarker_encounter,distance=0..0.5] rng1 1
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1..}] run scoreboard players add @s rng1 1
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] run kill @n[type=item,nbt={Item:{id:"minecraft:coal"}}]
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] run playsound minecraft:block.metal_pressure_plate.click_on block @a ~ ~ ~ 3 0.5
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=10}] run playsound minecraft:entity.minecart.riding block @a ~ ~ ~ 3 0.78
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=16}] run playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 3 1.5
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=18}] run playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 3 1.5
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=20}] run playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 3 1.5
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=23}] positioned -79915 29 206 run playsound minecraft:entity.shulker_bullet.hit block @a ~ ~ ~ 1 0.8
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=23}] positioned -79915 29 206 run particle minecraft:white_smoke ~ ~1 ~ 0.25 0.0 0.25 0.01 10
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=23}] positioned -79915 29 205 run item replace block ~ ~ ~ container.0 with resin_clump
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=23}] positioned -79915 29 205 run scoreboard players set @s rng1 0
 
 #随机野怪
 execute positioned -79954 29 183 if score random_enemy_thread AzrTimerStack matches 2 store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..32]

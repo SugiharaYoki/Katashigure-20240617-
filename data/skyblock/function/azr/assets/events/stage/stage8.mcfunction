@@ -59,6 +59,8 @@ execute if score stage_main_thread AzrTimerStack matches 101..300 unless entity 
 
 
 
+
+
 execute if score stage_main_thread AzrTimerStack matches 299..300 positioned -79890 38 51 if entity @n[tag=AzrielNPC_marinus,scores={Health=0..}] run scoreboard players set stage_main_thread AzrTimerStack 299
 
 execute if score stage_main_thread AzrTimerStack matches 370 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..8}] Azr_skillPoints 9
