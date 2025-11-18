@@ -219,6 +219,7 @@ function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_diesel
 
   #树脂机
 setblock -79915 29 206 minecraft:gray_shulker_box
+setblock -79913 29 208 minecraft:air
 
   #钥匙奖励箱
 setblock -79954 37 172 air

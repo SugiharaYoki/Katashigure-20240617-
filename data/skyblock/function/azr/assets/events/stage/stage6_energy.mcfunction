@@ -107,6 +107,11 @@ execute positioned -79913 27 208 unless entity @n[tag=AzrielMarker_encounter,dis
 execute positioned -79913 27 208 as @n[type=item,distance=..1.5] at @s if entity @s[type=item,nbt={Item:{id:"minecraft:coal"}}] run scoreboard players add @n[x=-79913,y=27,z=208,tag=AzrielMarker_encounter,distance=0..1.5] rng1 1
 execute positioned -79913 27 208 as @n[type=item,distance=..1.5] at @s unless entity @s[type=item,nbt={Item:{id:"minecraft:coal"}}] run scoreboard players add @n[x=-79913,y=27,z=208,tag=AzrielMarker_encounter,distance=0..1.5] rng1 51
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1..}] run scoreboard players add @s rng1 1
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] run setblock -79913 29 208 minecraft:iron_trapdoor[half=top]
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=51}] run setblock -79913 29 208 minecraft:iron_trapdoor[half=top]
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] run playsound block.iron_trapdoor.close block @a -79913 29 208 0.8 1.1
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=51}] run playsound block.iron_trapdoor.close block @a -79913 29 208 0.8 1.1
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=51}] run setblock -79913 29 208 minecraft:iron_trapdoor[half=top]
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] run kill @n[type=item,nbt={Item:{id:"minecraft:coal"}}]
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] run playsound minecraft:block.metal_pressure_plate.click_on block @a ~ ~ ~ 3 0.5
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=10}] run playsound minecraft:entity.minecart.riding block @a ~ ~ ~ 3 0.78
@@ -116,7 +121,9 @@ execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=26}] positioned -79915 29 206 run playsound minecraft:entity.shulker_bullet.hit block @a ~ ~ ~ 1 0.8
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=26}] positioned -79915 29 206 run particle minecraft:white_smoke ~ ~1 ~ 0.25 0.0 0.25 0.01 10
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=26}] positioned -79915 29 205 run item replace block ~ ~ ~ container.0 with resin_clump
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=26}] positioned -79915 29 205 run scoreboard players set @s rng1 0
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=28}] run playsound block.iron_trapdoor.open block @a -79913 29 208 0.8 1.1
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=28}] positioned -79915 29 205 run setblock -79913 29 208 air
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=28}] positioned -79915 29 205 run scoreboard players set @s rng1 0
 
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52}] run kill @n[type=item,nbt={Item:{id:"minecraft:coal"}}]
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52}] run playsound minecraft:block.metal_pressure_plate.click_on block @a ~ ~ ~ 3 0.5
@@ -131,7 +138,9 @@ execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=80}] positioned -79915 29 205 if score @s rng5 matches 10..50 run item replace block ~ ~ ~ container.0 with emerald
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=80}] positioned -79915 29 205 if score @s rng5 matches 51..99 run item replace block ~ ~ ~ container.0 with emerald 2
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=80}] positioned -79915 29 205 if score @s rng5 matches 100 run item replace block ~ ~ ~ container.0 with ghast_tear 1
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=80}] positioned -79915 29 205 run scoreboard players set @s rng1 0
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=82}] run playsound block.iron_trapdoor.open block @a -79913 29 208 0.8 1.1
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=82}] positioned -79915 29 205 run setblock -79913 29 208 air
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=82}] positioned -79915 29 205 run scoreboard players set @s rng1 0
 
 #随机野怪
 execute positioned -79954 29 183 if score random_enemy_thread AzrTimerStack matches 2 store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..32]
