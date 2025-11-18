@@ -215,6 +215,8 @@ setblock -79925 37 201 chest[facing=east]
 item replace block -79925 37 201 container.12 with emerald 3
 item replace block -79925 37 201 container.14 with resin_clump 1
 
+function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_diesel
+
   #钥匙奖励箱
 setblock -79954 37 172 air
 setblock -79954 37 172 trapped_chest[facing=south]{lock:{components:{custom_data:{key_required:1b}}}}

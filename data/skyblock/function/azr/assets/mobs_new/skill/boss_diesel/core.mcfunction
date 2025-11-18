@@ -71,7 +71,7 @@ execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run f
 execute if score @s AzrEntityTimer matches 2011 run bossbar remove azr:boss_hp_bar_diesel
 execute if score @s AzrEntityTimer matches 2011 run fill -79997 25 201 -79997 30 199 air replace minecraft:red_stained_glass
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB04
-execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s emerald 5
+execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s emerald 30
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
 execute if score @s AzrEntityTimer matches 2011 positioned -80011 25 200 run kill @e[tag=AzrielMob_floating_fire,type=magma_cube,distance=..15]
 
