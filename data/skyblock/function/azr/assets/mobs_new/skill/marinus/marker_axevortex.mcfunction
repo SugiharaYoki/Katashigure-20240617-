@@ -6,7 +6,7 @@ scoreboard players add @s rng1 1
 
 
 execute if block ~ ~-0.5 ~ air run tp @s ~ ~-0.1 ~
-execute unless block ~ ~-0.5 ~ air run tp @s ~ ~0.1 ~
+execute unless block ~ ~-0.5 ~ air run tp @s ~ ~0.2 ~
 
 particle shriek{delay:0} ~ ~-1 ~ 0 0.1 0 0 1
 execute if score @s rng1 matches 2 run particle gust ~ ~-1 ~ 0 0.1 0 0 1
