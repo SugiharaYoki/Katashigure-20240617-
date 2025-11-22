@@ -21,3 +21,4 @@ execute if score @s MG_qqd_song_id matches 15 run function skyblock:mg/qqdance/s
 
 
 
+say mg_qqdance:song
