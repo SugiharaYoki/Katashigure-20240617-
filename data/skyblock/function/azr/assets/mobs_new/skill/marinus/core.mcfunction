@@ -15,7 +15,7 @@ execute if score @s rng1 matches -8 run function skyblock:azr/assets/mobs_new/sk
 execute if score @s rng1 matches -6 run function skyblock:azr/assets/mobs_new/skill/marinus/move_forward
 
 
-execute if score @s rng1 matches 20 run scoreboard players set @s rng1 -12
+execute if score @s rng1 matches 20.. run scoreboard players set @s rng1 -12
 
 execute if score @s AzrEntityTimer matches 1 positioned -79890 38 51 run bossbar add azr:boss_hp_bar "斩海的沉寂 - 马林努斯"
 execute if score @s AzrEntityTimer matches 1 positioned -79890 38 51 run bossbar set azr:boss_hp_bar color red
