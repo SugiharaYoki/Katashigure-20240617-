@@ -10,7 +10,6 @@ execute unless block ~ ~-0.5 ~ air run tp @s ~ ~0.2 ~
 
 particle shriek{delay:0} ~ ~-1 ~ 0 0.1 0 0 1
 execute if score @s rng1 matches 2 run particle gust ~ ~-1 ~ 0 0.1 0 0 1
-execute if score @s rng1 matches 3 run playsound minecraft:entity.wind_charge.throw hostile @a ~ ~ ~ 1 0.7
 execute if score @s rng1 matches 3 run playsound minecraft:entity.breeze.charge hostile @a ~ ~ ~ 1 0.8
 
 execute if score @s rng1 matches 17.. rotated 0 0 run playsound minecraft:entity.player.attack.knockback player @a ~ ~ ~ 0.8 1.4
