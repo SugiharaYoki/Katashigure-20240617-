@@ -22,4 +22,4 @@ execute if block -52 55 -178 heavy_core run function ukiyo_nrb:core20
 #多功能菜单
 
 
-execute as @a[tag=!NoMultiMenu] at @s run function skyblock:world_system_functionreader_main
+execute as @a at @s run function skyblock:world_system_functionreader_main
