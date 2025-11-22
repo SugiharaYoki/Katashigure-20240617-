@@ -35,4 +35,4 @@ execute if score @s rng1 matches 17.. if score @s rng2 matches 16 rotated 300 0 
 execute if score @s rng1 matches 17.. if score @s rng2 matches 17 rotated 320 0 positioned ^ ^0.1 ^0.7 run particle sweep_attack ~ ~ ~ 0 0 0 0 1
 execute if score @s rng1 matches 17.. if score @s rng2 matches 18 rotated 340 0 positioned ^ ^0.1 ^0.7 run particle sweep_attack ~ ~ ~ 0 0 0 0 1
 
-execute if score @s rng1 matches 23 run kill @s
+execute if score @s rng1 matches 25 run kill @s
