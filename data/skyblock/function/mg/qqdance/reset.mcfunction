@@ -3,10 +3,10 @@
 tellraw @s [{"text":"最终得分：","color":"gray","bold":true},{"score":{"name":"@s","objective":"MG_qqd_step"}}]
 tellraw @s [{"text":"击中音符数量：","color":"gray","bold":true},{"score":{"name":"@s","objective":"MG_qqd_hit"}}]
 scoreboard players set 10 constant 10
-scoreboard players operation @s MG_qqd_hit %= 10 constant
+scoreboard players operation @s MG_qqd_hit /= 10 constant
 scoreboard players operation @s[tag=MG_qqd_st_gamemode_1] Perm_PersonFSB += @s MG_qqd_hit
 tellraw @s[tag=MG_qqd_st_gamemode_1] [{"text":"FSB + ","color":"gray","bold":true},{"score":{"name":"@s","objective":"MG_qqd_hit"}}]
-scoreboard players operation @s MG_qqd_hit %= 10 constant
+scoreboard players operation @s MG_qqd_hit /= 10 constant
 scoreboard players operation @s[tag=MG_qqd_st_gamemode_1] Perm_PersonSHD += @s MG_qqd_hit
 tellraw @s[tag=MG_qqd_st_gamemode_1] [{"text":"SHD + ","color":"gray","bold":true},{"score":{"name":"@s","objective":"MG_qqd_hit"}}]
 
