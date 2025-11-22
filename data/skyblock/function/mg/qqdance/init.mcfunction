@@ -42,7 +42,7 @@ execute as @s[scores={MultiMenu=836027}] at @s run scoreboard players set @s MG_
 execute as @s[scores={MultiMenu=836028}] at @s run scoreboard players set @s MG_qqd_song_id 28
 execute as @s[scores={MultiMenu=836029}] at @s run scoreboard players set @s MG_qqd_song_id 29
 
-say mg_qqdance:init
+#say mg_qqdance:init
 execute as @s[scores={MultiMenu=836001..836500}] at @s run tag @s add Gaming
 execute as @s[scores={MultiMenu=836001..836500}] at @s run tag @s add MG_qqd
 
