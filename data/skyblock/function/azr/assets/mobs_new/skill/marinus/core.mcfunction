@@ -4,7 +4,7 @@ scoreboard players add @s AzrEntityTimer 1
 execute if score @s AzrEntityTimer matches 1.. run scoreboard players add @s rng1 1
 execute if score @s AzrEntityTimer matches 1.. run scoreboard players add @s rng9 1
 execute if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden1.theguardians music @s ~ ~ ~ 0.65
-execute if score @s rng9 matches 2860.. run scoreboard players set @s rng9 0
+execute if score @s rng9 matches 960.. run scoreboard players set @s rng9 0
 
 
 execute if score @s AzrEntityTimer matches 1 rotated ~ 0 positioned ^ ^1.3 ^1.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_marinus_surrounding_particle_marker","AzrielMob_mob_marker"]}
