@@ -1,8 +1,8 @@
 
 scoreboard players add @s rng1 1
-execute rotated as @s positioned ^ ^1.00 ^1.91 run particle minecraft:dripping_dripstone_water ~ ~ ~ 0.1 0.1 0.1 0.0 2
-execute rotated as @s positioned ^ ^1.00 ^-1.91 run particle minecraft:dripping_dripstone_water ~ ~ ~ 0.1 0.1 0.1 0.0 2
-execute rotated as @s run rotate @s ~5 ~
+execute rotated as @s positioned ^ ^1.00 ^1.91 run particle minecraft:dripping_dripstone_water ~ ~ ~ 0.1 0.1 0.1 0.0 1
+execute rotated as @s positioned ^ ^1.00 ^-1.91 run particle minecraft:dripping_dripstone_water ~ ~ ~ 0.1 0.1 0.1 0.0 1
+execute rotated as @s run rotate @s ~3.2 ~
 
 
 execute if score @s rng1 matches 1 at @n[type=villager,tag=AzrielNPC_marinus] positioned ~ ~0 ~ run tp @s ~ ~ ~
