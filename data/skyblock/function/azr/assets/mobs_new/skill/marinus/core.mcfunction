@@ -16,9 +16,11 @@ execute if score @s AzrEntityTimer matches 1 rotated ~ 0 positioned ^ ^1.3 ^1.9 
 
 execute if score @s AzrEntityTimer matches 1 run playsound minecraft:entity.evoker.cast_spell hostile @a ~ ~ ~ 1 1.3
 
+execute if score @s rng1 matches -19 run rotate @s facing entity @p[tag=azrPlayer]
+execute if score @s rng1 matches -11 run rotate @s facing entity @p[tag=azrPlayer]
 execute if score @s rng1 matches -8 run function skyblock:azr/assets/mobs_new/skill/marinus/move_fastshift
 execute if score @s rng1 matches -7 run function skyblock:azr/assets/mobs_new/skill/marinus/move_forward
-
+execute if score @s rng1 matches -1 run rotate @s facing entity @p[tag=azrPlayer]
 
 execute if score @s rng1 matches 20.. run scoreboard players set @s rng1 -12
 
