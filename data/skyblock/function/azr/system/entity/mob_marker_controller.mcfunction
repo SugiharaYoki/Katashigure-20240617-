@@ -9,6 +9,7 @@ execute as @s[tag=AzrielMob_boss_mossboss_spore_marker] at @s run function skybl
 
 execute as @s[tag=AzrielMob_boss_diesel_fire_marker] at @s run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire
 
+execute as @s[tag=AzrielMob_boss_marinus_axevortex_marker] at @s run function skyblock:azr/assets/mobs_new/skill/marinus/marker_axevortex
 
 
 execute if entity @s[tag=AzrielMob_generic_pillar_attack_small] run function skyblock:azr/assets/mobs_new/skill/undead_pickaxe_marker_release
