@@ -12,7 +12,7 @@ execute if score @s rng9 matches 2860.. run scoreboard players set @s rng9 0
 execute if score @s AzrEntityTimer matches 1 run playsound minecraft:entity.evoker.cast_spell hostile @a ~ ~ ~ 1 1.3
 
 execute if score @s rng1 matches -8 run function skyblock:azr/assets/mobs_new/skill/marinus/move_fastshift
-execute if score @s rng1 matches -6 run function skyblock:azr/assets/mobs_new/skill/marinus/move_forward
+execute if score @s rng1 matches -7 run function skyblock:azr/assets/mobs_new/skill/marinus/move_forward
 
 
 execute if score @s rng1 matches 20.. run scoreboard players set @s rng1 -12
