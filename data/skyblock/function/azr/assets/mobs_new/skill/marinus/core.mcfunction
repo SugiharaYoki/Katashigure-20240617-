@@ -20,6 +20,7 @@ execute if score @s rng1 matches -19 run rotate @s facing entity @p[tag=azrPlaye
 execute if score @s rng1 matches -11 run rotate @s facing entity @p[tag=azrPlayer]
 execute if score @s rng1 matches -8 run function skyblock:azr/assets/mobs_new/skill/marinus/move_fastshift
 execute if score @s rng1 matches -7 run function skyblock:azr/assets/mobs_new/skill/marinus/move_forward
+execute if score @s rng1 matches -6 run rotate @s facing entity @p[tag=azrPlayer]
 execute if score @s rng1 matches -1 run rotate @s facing entity @p[tag=azrPlayer]
 
 execute if score @s rng1 matches 20.. run scoreboard players set @s rng1 -12
