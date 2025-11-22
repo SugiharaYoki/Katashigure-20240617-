@@ -7,7 +7,7 @@ execute if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound 
 execute if score @s rng9 matches 2860.. run scoreboard players set @s rng9 0
 
 
-execute if score @s AzrEntityTimer matches 1 rotated ~ 0 positioned ^ ^1.3 ^1.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_marinus_surrounding_particle_marker"]}
+execute if score @s AzrEntityTimer matches 1 rotated ~ 0 positioned ^ ^1.3 ^1.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_marinus_surrounding_particle_marker","AzrielMob_mob_marker"]}
 
 
 
