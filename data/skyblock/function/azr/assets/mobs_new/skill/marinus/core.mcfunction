@@ -14,6 +14,9 @@ execute if score @s AzrEntityTimer matches 1 run playsound minecraft:entity.evok
 execute if score @s rng1 matches -20 run function skyblock:azr/assets/mobs_new/skill/marinus/move_fastshift
 execute if score @s rng1 matches -10 run function skyblock:azr/assets/mobs_new/skill/marinus/move_forward
 
+
+execute if score @s rng1 matches 90 run scoreboard players set @s rng1 -40
+
 execute if score @s AzrEntityTimer matches 1 positioned -79890 38 51 run bossbar add azr:boss_hp_bar "斩海的沉寂 - 马林努斯"
 execute if score @s AzrEntityTimer matches 1 positioned -79890 38 51 run bossbar set azr:boss_hp_bar color red
 execute if score @s AzrEntityTimer matches 1 positioned -79890 38 51 run bossbar set azr:boss_hp_bar max 500
