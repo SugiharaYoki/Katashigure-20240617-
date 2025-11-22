@@ -28,3 +28,4 @@ execute if score @s rng1 matches 20 at @n[type=villager,tag=AzrielNPC_marinus] p
 execute if score @s rng1 matches 20 run scoreboard players set @s rng1 0
 
 
+say hi
