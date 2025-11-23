@@ -33,15 +33,17 @@ execute if score @s MG_qqd_song_id matches 9 run tellraw @a [{"text":"难度："
 execute if score @s MG_qqd_song_id matches 10 run tellraw @a [{"text":"歌曲：","color":"gray","bold":true},{"text":"Caradbolg","color":"gray","bold":false}]
 execute if score @s MG_qqd_song_id matches 10 run tellraw @a [{"text":"难度：","color":"gray","bold":true},{"text":"Hard 5","color":"red","bold":false}]
 execute if score @s MG_qqd_song_id matches 11 run tellraw @a [{"text":"歌曲：","color":"gray","bold":true},{"text":"Cristalisia","color":"gray","bold":false}]
-execute if score @s MG_qqd_song_id matches 11 run tellraw @a [{"text":"难度：","color":"gray","bold":true},{"text":"Normal 3","color":"yellow","bold":false}]
+execute if score @s MG_qqd_song_id matches 11 run tellraw @a [{"text":"难度：","color":"gray","bold":true},{"text":"Easy 3","color":"yellow","bold":false}]
 execute if score @s MG_qqd_song_id matches 12 run tellraw @a [{"text":"歌曲：","color":"gray","bold":true},{"text":"Cristalisia","color":"gray","bold":false}]
-execute if score @s MG_qqd_song_id matches 12 run tellraw @a [{"text":"难度：","color":"gray","bold":true},{"text":"Hard 5","color":"red","bold":false}]
+execute if score @s MG_qqd_song_id matches 12 run tellraw @a [{"text":"难度：","color":"gray","bold":true},{"text":"Normal 5","color":"yellow","bold":false}]
 execute if score @s MG_qqd_song_id matches 13 run tellraw @a [{"text":"歌曲：","color":"gray","bold":true},{"text":"Trideca","color":"gray","bold":false}]
 execute if score @s MG_qqd_song_id matches 13 run tellraw @a [{"text":"难度：","color":"gray","bold":true},{"text":"Easy 2","color":"green","bold":false}]
 execute if score @s MG_qqd_song_id matches 14 run tellraw @a [{"text":"歌曲：","color":"gray","bold":true},{"text":"Trideca","color":"gray","bold":false}]
 execute if score @s MG_qqd_song_id matches 14 run tellraw @a [{"text":"难度：","color":"gray","bold":true},{"text":"Normal 4","color":"yellow","bold":false}]
 execute if score @s MG_qqd_song_id matches 15 run tellraw @a [{"text":"歌曲：","color":"gray","bold":true},{"text":"Trideca","color":"gray","bold":false}]
 execute if score @s MG_qqd_song_id matches 15 run tellraw @a [{"text":"难度：","color":"gray","bold":true},{"text":"Hard 8","color":"red","bold":false}]
+execute if score @s MG_qqd_song_id matches 16 run tellraw @a [{"text":"歌曲：","color":"gray","bold":true},{"text":"Cristalisia","color":"gray","bold":false}]
+execute if score @s MG_qqd_song_id matches 16 run tellraw @a [{"text":"难度：","color":"gray","bold":true},{"text":"Hard 5","color":"red","bold":false}]
 
 title @s times 0 0s 1s
 
