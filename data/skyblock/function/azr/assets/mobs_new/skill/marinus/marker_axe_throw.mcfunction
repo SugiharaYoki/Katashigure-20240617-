@@ -3,9 +3,10 @@
 scoreboard players add @s rng1 1
 
 execute if score @s rng1 matches 1 run tp @s ^ ^ ^-0.3 facing entity @n[type=villager,tag=AzrielNPC_marinus]
+execute if score @s rng1 matches 1 run rotate @s facing entity @n[type=villager,tag=AzrielNPC_marinus]
 
-execute if score @s rng1 matches 1..8 rotated as @s[tag=!attack_throw_high] positioned as @s run function skyblock:azr/assets/mobs_new/skill/marinus/marker_axe_throw_warn
-execute if score @s rng1 matches 1..8 rotated as @s[tag=attack_throw_high] positioned as @s positioned ~ ~1.9 ~ run function skyblock:azr/assets/mobs_new/skill/marinus/marker_axe_throw_warn
+execute if score @s rng1 matches 2..8 rotated as @s[tag=!attack_throw_high] positioned as @s run function skyblock:azr/assets/mobs_new/skill/marinus/marker_axe_throw_warn
+execute if score @s rng1 matches 2..8 rotated as @s[tag=attack_throw_high] positioned as @s positioned ~ ~1.9 ~ run function skyblock:azr/assets/mobs_new/skill/marinus/marker_axe_throw_warn
 
 execute if score @s rng1 matches 16.. rotated ~ 0 run tp @s ^ ^ ^1
 
