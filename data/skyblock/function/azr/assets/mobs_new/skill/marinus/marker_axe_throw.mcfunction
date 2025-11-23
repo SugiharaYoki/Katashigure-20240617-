@@ -22,8 +22,8 @@ execute if score @s[tag=attack_throw_angle_right] rng1 matches 1 if score @n[typ
 execute if score @s[tag=attack_throw_angle_right] rng1 matches 2..4 if score @n[type=villager,tag=AzrielNPC_marinus] Health matches ..400 rotated as @s run rotate @s ~30 ~
 execute if score @s[tag=attack_throw_angle_right] rng1 matches 5..8 if score @n[type=villager,tag=AzrielNPC_marinus] Health matches ..300 rotated as @s run rotate @s ~30 ~
 
-execute if score @s rng1 matches 2..8 rotated as @s[tag=!attack_throw_high] positioned as @s rotated ~ 0 run function skyblock:azr/assets/mobs_new/skill/marinus/marker_axe_throw_warn
-execute if score @s rng1 matches 2..8 rotated as @s[tag=attack_throw_high] positioned as @s positioned ~ ~1.9 ~ rotated ~ 0 run function skyblock:azr/assets/mobs_new/skill/marinus/marker_axe_throw_warn
+execute if score @s rng1 matches 2..16 rotated as @s[tag=!attack_throw_high] positioned as @s rotated ~ 0 run function skyblock:azr/assets/mobs_new/skill/marinus/marker_axe_throw_warn
+execute if score @s rng1 matches 2..16 rotated as @s[tag=attack_throw_high] positioned as @s positioned ~ ~1.9 ~ rotated ~ 0 run function skyblock:azr/assets/mobs_new/skill/marinus/marker_axe_throw_warn
 
 #execute if score @s rng1 matches 8 run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_arrow_marker","AzrielMob_mob_marker"]}
 
