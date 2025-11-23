@@ -25,6 +25,8 @@ execute if score @s[tag=attack_throw_angle_right] rng1 matches 5..8 if score @n[
 execute if score @s rng1 matches 2..8 rotated as @s[tag=!attack_throw_high] positioned as @s rotated ~ 0 run function skyblock:azr/assets/mobs_new/skill/marinus/marker_axe_throw_warn
 execute if score @s rng1 matches 2..8 rotated as @s[tag=attack_throw_high] positioned as @s positioned ~ ~1.9 ~ rotated ~ 0 run function skyblock:azr/assets/mobs_new/skill/marinus/marker_axe_throw_warn
 
+#execute if score @s rng1 matches 8 run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_arrow_marker","AzrielMob_mob_marker"]}
+
 execute if score @s rng1 matches 16.. rotated ~ 0 run tp @s ^ ^ ^1
 
 
