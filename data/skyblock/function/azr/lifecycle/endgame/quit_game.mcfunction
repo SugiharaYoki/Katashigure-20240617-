@@ -24,7 +24,7 @@ execute if entity @s[scores={AZS_SoulFrag=8}] run scoreboard players operation @
 execute if entity @s[scores={AZS_SoulFrag=1..}] run scoreboard players operation @s Azr_emerald += @s AzrSariel_Data_CostAmount
 
 #tellraw @s [{"text":"你已经退出游戏！最终坚持关数： ","color":"red"},{"score":{"name":"@s","objective":"Azr_wave"}}]
-tellraw @s [{"text":"你已经退出游戏！","color":"gray"}]
+tellraw @s [{"text":"你已退出游戏！","color":"gray"}]
 tag @s remove azrPlayer
 tag @s remove azrShopOnUse
 tag @s remove azrShopRefresh
