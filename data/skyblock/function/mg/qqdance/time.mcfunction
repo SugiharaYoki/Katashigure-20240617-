@@ -34,11 +34,12 @@ execute if score @s MG_qqd_song_id matches 7 run title @s actionbar [{"text":"Su
 execute if score @s MG_qqd_song_id matches 8 run title @s actionbar [{"text":"Caradbolg - Easy","color":"green"},{"text":" | ","color":"gray"},{"score":{"name":"@s","objective":"MG_qqd_hit"},"color":"white"},{"text":"","color":"white"}]
 execute if score @s MG_qqd_song_id matches 9 run title @s actionbar [{"text":"Caradbolg - Normal","color":"yellow"},{"text":" | ","color":"gray"},{"score":{"name":"@s","objective":"MG_qqd_hit"},"color":"white"},{"text":"","color":"white"}]
 execute if score @s MG_qqd_song_id matches 10 run title @s actionbar [{"text":"Caradbolg - Hard","color":"red"},{"text":" | ","color":"gray"},{"score":{"name":"@s","objective":"MG_qqd_hit"},"color":"white"},{"text":"","color":"white"}]
-execute if score @s MG_qqd_song_id matches 11 run title @s actionbar [{"text":"Cristalisia - Normal","color":"yellow"},{"text":" | ","color":"gray"},{"score":{"name":"@s","objective":"MG_qqd_hit"},"color":"white"},{"text":"","color":"white"}]
-execute if score @s MG_qqd_song_id matches 12 run title @s actionbar [{"text":"Cristalisia - Hard","color":"red"},{"text":" | ","color":"gray"},{"score":{"name":"@s","objective":"MG_qqd_hit"},"color":"white"},{"text":"","color":"white"}]
+execute if score @s MG_qqd_song_id matches 11 run title @s actionbar [{"text":"Cristalisia - Easy","color":"green"},{"text":" | ","color":"gray"},{"score":{"name":"@s","objective":"MG_qqd_hit"},"color":"white"},{"text":"","color":"white"}]
+execute if score @s MG_qqd_song_id matches 12 run title @s actionbar [{"text":"Cristalisia - Normal","color":"yellow"},{"text":" | ","color":"gray"},{"score":{"name":"@s","objective":"MG_qqd_hit"},"color":"white"},{"text":"","color":"white"}]
 execute if score @s MG_qqd_song_id matches 13 run title @s actionbar [{"text":"Trideca - Easy","color":"green"},{"text":" | ","color":"gray"},{"score":{"name":"@s","objective":"MG_qqd_hit"},"color":"white"},{"text":"","color":"white"}]
 execute if score @s MG_qqd_song_id matches 14 run title @s actionbar [{"text":"Trideca - Normal","color":"yellow"},{"text":" | ","color":"gray"},{"score":{"name":"@s","objective":"MG_qqd_hit"},"color":"white"},{"text":"","color":"white"}]
 execute if score @s MG_qqd_song_id matches 15 run title @s actionbar [{"text":"Trideca - Hard","color":"red"},{"text":" | ","color":"gray"},{"score":{"name":"@s","objective":"MG_qqd_hit"},"color":"white"},{"text":"","color":"white"}]
+execute if score @s MG_qqd_song_id matches 16 run title @s actionbar [{"text":"Cristalisia - Hard","color":"red"},{"text":" | ","color":"gray"},{"score":{"name":"@s","objective":"MG_qqd_hit"},"color":"white"},{"text":"","color":"white"}]
 
 
 function skyblock:mg/qqdance/song
