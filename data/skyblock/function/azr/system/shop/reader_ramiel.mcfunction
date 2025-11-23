@@ -96,6 +96,7 @@ execute if entity @s[tag=AZS_BoS24] run data modify entity @n[tag=AzrRamielExSta
 execute if entity @s[tag=AZS_BoS25] run data modify entity @n[tag=AzrRamielExStage_displaymarkery] CustomName set value '" <Y> "'
 execute if entity @s[tag=AZS_BoS26] run data modify entity @n[tag=AzrRamielExStage_displaymarkerz] CustomName set value '" <Z> "'
 execute if entity @s[scores={Azr_skillPoints=5..}] run data modify entity @n[tag=AzrRamielExStage_displaymarker1] CustomName set value '" <残> "'
+execute if entity @s[tag=AZS_BoSB04] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value '" <炉> "'
 execute if entity @s[tag=AZS_BoSB13] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value '" <藓> "'
 execute if entity @s[tag=!AZS_BoS01] run data modify entity @n[tag=AzrRamielExStage_displaymarkera] CustomName set value '" ？ "'
 execute if entity @s[tag=!AZS_BoS02] run data modify entity @n[tag=AzrRamielExStage_displaymarkerb] CustomName set value '" ？ "'
@@ -152,6 +153,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run d
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkery] CustomName set value '" √ "'
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerz] CustomName set value '" √ "'
 execute if items entity @s container.* *[custom_data~{azr_amulet_stopwatch:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarker1] CustomName set value '" √ "'
+execute if items entity @s container.* *[custom_data~{azr_amulet_fire_drogue:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value '" √ "'
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value '" √ "'
 
 
@@ -161,7 +163,7 @@ tellraw @s [{"text":"\n "},{"text":"假定回溯  \n","color":"#308aff","bold": 
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerc]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432303"},"hoverEvent":{"action":"show_text","contents":{"text":"Cerement - 贪婪石板\n增加拾取范围","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerd]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432304"},"hoverEvent":{"action":"show_text","contents":{"text":"Diffident - 花墙石板\n按前进键增加攻防","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkere]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432305"},"hoverEvent":{"action":"show_text","contents":{"text":"Entertain - 冲刺石板\n按两下跑步进行冲刺","color":"white"}}},\
-{"selector":"@n[tag=AzrRamielExStage_displaymarkerf]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432306"},"hoverEvent":{"action":"show_text","contents":{"text":"Flux - 燃点卷宗\n剑攻击点燃、加强扇形火","color":"white"}}},\
+{"selector":"@n[tag=AzrRamielExStage_displaymarkerf]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432306"},"hoverEvent":{"action":"show_text","contents":{"text":"Flux - 燃点卷宗\n剑攻击点燃、加强节制天平扇形火","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerg]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432307"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}},\
 {"text":"\n "},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerh]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432308"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}},\
@@ -187,6 +189,7 @@ tellraw @s [{"text":"\n "},{"text":"假定回溯  \n","color":"#308aff","bold": 
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerz]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432326"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}},\
 {"text":"\n "},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarker1]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432327"},"hoverEvent":{"action":"show_text","contents":{"text":"权之残影 - 天界怀表\n在波数暂停时手持，可以冻结计时","color":"white"}}},\
+{"selector":"@n[tag=AzrRamielExStage_displaymarkerBd]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432329"},"hoverEvent":{"action":"show_text","contents":{"text":"锅炉驱动者 - 逐焰卷宗\n持续召唤最多3个跟随火球，减少节制天平电球最低间隔时长","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerBm]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432328"},"hoverEvent":{"action":"show_text","contents":{"text":"噬藓母虫 - 深藓石板\n造成攻击可增加“索命连击”充能、在重生锚点可获得5分钟孢子的庇护（生命值上限加成）","color":"white"}}}]
 
 

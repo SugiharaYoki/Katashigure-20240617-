@@ -31,6 +31,7 @@ execute if entity @s[tag=AZS_BoS22] if score @s Azr_Shop matches 8432322 run fun
 #---接下来的项目不遵循字母顺序---#
 
 execute if entity @s[scores={Azr_skillPoints=5..}] if score @s Azr_Shop matches 8432327 run function skyblock:azr/assets/items/amulets/stopwatch
+execute if entity @s[tag=AZS_BoSB04] if score @s Azr_Shop matches 8432329 run function skyblock:azr/assets/items/amulets/fire_drogue
 execute if entity @s[tag=AZS_BoSB13] if score @s Azr_Shop matches 8432328 run function skyblock:azr/assets/items/amulets/moss_spore
 
 scoreboard players set tempPlayerShopSuccess Azr_system 1
