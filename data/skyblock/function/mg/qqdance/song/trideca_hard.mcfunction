@@ -1,3 +1,7 @@
+execute if score @s MG_qqd_t_abs matches 1 run playsound minecraft:trideca master @s ~ ~ ~ 1 1
+execute if score @s MG_qqd_t_abs matches 1 run scoreboard players set @s MG_qqd_t_rel 50000
+
+
 execute if score @s MG_qqd_step matches 1 run title @s title [{"text": "↑ ↓ ↑", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_step matches 2 run title @s title [{"text": "↑", "color": "green", "bold": true}, {"text": " ↓ ↑", "color": "blue", "bold": true}]
 execute if score @s MG_qqd_step matches 3 run title @s title [{"text": "↑ ↓", "color": "green", "bold": true}, {"text": " ↑", "color": "blue", "bold": true}]
@@ -939,3 +943,7 @@ execute if score @s MG_qqd_t_abs matches 2260 run scoreboard players set @s MG_q
 execute if score @s MG_qqd_t_abs matches 2260 run scoreboard players set @s[scores={MG_qqd_step=..795}] MG_qqd_t_rel -50
 execute if score @s MG_qqd_t_abs matches 2260 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 5000
 execute if score @s MG_qqd_t_abs matches 2260 run scoreboard players set @s MG_qqd_step 801
+
+execute if score @s MG_qqd_t_abs matches 2320 run function skyblock:mg/qqdance/result
+
+function skyblock:mg/qqdance/control
