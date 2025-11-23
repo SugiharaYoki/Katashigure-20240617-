@@ -24,8 +24,10 @@ execute if score @s rng1 matches -6 run rotate @s facing entity @p[tag=azrPlayer
 execute if score @s rng1 matches -1 run rotate @s facing entity @p[tag=azrPlayer]
 
 execute if score @s rng1 matches 1.. store result score @s rng8 run random value 1..3
+execute if score @s rng1 matches 1.. at @s if entity @a[tag=azrPlayer,distance=..2.6] store result score @s rng8 run random value 4..6
 
 execute if score @s rng1 matches 1.. if score @s rng8 matches 1..3 run function skyblock:azr/assets/mobs_new/skill/marinus/attack_single_throw_harmful
+execute if score @s rng1 matches 1.. if score @s rng8 matches 4..6 run function skyblock:azr/assets/mobs_new/skill/marinus/attack_closeup
 execute if score @s rng1 matches 20.. run scoreboard players set @s rng1 -12
 
 execute if score @s AzrEntityTimer matches 1 positioned -79890 38 51 run bossbar add azr:boss_hp_bar "斩海的沉寂 - 马林努斯"
