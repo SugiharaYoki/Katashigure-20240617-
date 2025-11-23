@@ -9,6 +9,8 @@ execute if score stage_main_thread AzrTimerStack matches 370 run bossbar remove 
 #
 #-79890 54 52
 
+execute if score stage_main_thread AzrTimerStack matches 2 run attribute @n[tag=AzrielNPC_marinus] knockback_resistance modifier add azr_boss:marinus_knockback_resistance 1 add_value
+execute if score stage_main_thread AzrTimerStack matches 111 run attribute @n[tag=AzrielNPC_marinus] knockback_resistance modifier remove azr_boss:marinus_knockback_resistance
 
 execute positioned -79890 38 51 as @n[tag=AzrielNPC_marinus] store result score @s Health run data get entity @s Health
 execute positioned -79890 38 51 store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielNPC_marinus] Health
