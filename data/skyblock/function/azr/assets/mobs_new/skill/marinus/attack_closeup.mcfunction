@@ -26,7 +26,7 @@ execute if score @s rng1 matches 2 as @a[tag=azrPlayer,distance=..3.1] at @s rot
 execute if score @s rng1 matches 2 as @a[tag=azrPlayer,distance=..3.1] at @s rotated as @s anchored eyes run particle minecraft:dripping_dripstone_water ^-0.15 ^0.02 ^0.2 0 0 0 0 1
 execute if score @s rng1 matches 2 as @a[tag=azrPlayer,distance=..3.1] at @s rotated as @s anchored eyes run particle minecraft:dripping_dripstone_water ^0.12 ^0.02 ^0.3 0 0 0 0 1
 execute if score @s rng1 matches 2 as @a[tag=azrPlayer,distance=..3.1] at @s rotated as @s anchored eyes run particle minecraft:dripping_dripstone_water ^-0.12 ^0.02 ^0.3 0 0 0 0 1
-execute if score @s rng1 matches 2 as @a[tag=azrPlayer,distance=..3.1] run playsound minecraft:block.note_block.harp player @s ~ ~ ~ 5 0.8
+execute if score @s rng1 matches 2 as @a[tag=azrPlayer,distance=..2.6] run playsound minecraft:block.note_block.harp player @s ~ ~ ~ 5 0.8
 
 execute if score @s rng1 matches 2 run playsound minecraft:entity.iron_golem.damage hostile @a ~ ~ ~ 2 1.3
 execute if score @s rng1 matches 2 run particle minecraft:soul_fire_flame ~ ~1 ~ 0.3 0.5 0.3 0 20
