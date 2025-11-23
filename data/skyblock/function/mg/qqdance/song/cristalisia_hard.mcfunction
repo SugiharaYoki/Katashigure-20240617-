@@ -813,8 +813,12 @@ execute if score @s MG_qqd_t_abs matches 2460 run scoreboard players set @s[scor
 execute if score @s MG_qqd_t_abs matches 2460 run scoreboard players set @s MG_qqd_step 601
 execute if score @s MG_qqd_t_abs matches 2497 run scoreboard players set @s MG_qqd_t_rel 5000
 execute if score @s MG_qqd_t_abs matches 2497 run scoreboard players set @s[scores={MG_qqd_step=..607}] MG_qqd_t_rel -50
-execute if score @s MG_qqd_t_abs matches 2497 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 5000
+execute if score @s MG_qqd_t_abs matches 2497 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 36
 execute if score @s MG_qqd_t_abs matches 2497 run scoreboard players set @s MG_qqd_step 611
+execute if score @s MG_qqd_t_abs matches 2535 run scoreboard players set @s MG_qqd_t_rel 5000
+execute if score @s MG_qqd_t_abs matches 2535 run scoreboard players set @s[scores={MG_qqd_step=..617}] MG_qqd_t_rel -50
+execute if score @s MG_qqd_t_abs matches 2535 run scoreboard players set @s[scores={MG_qqd_t_rel=0..}] MG_qqd_t_rel 5000
+execute if score @s MG_qqd_t_abs matches 2535 run scoreboard players set @s MG_qqd_step 621
 
 execute if score @s MG_qqd_t_abs matches 2820 run function skyblock:mg/qqdance/result
 
