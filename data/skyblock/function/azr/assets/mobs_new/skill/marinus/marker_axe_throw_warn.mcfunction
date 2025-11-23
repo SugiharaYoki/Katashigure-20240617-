@@ -60,5 +60,13 @@ particle wax_off ^0.9 ^ ^13.0 0 0 0 0 1
 particle wax_off ^-0.9 ^ ^13.0 0 0 0 0 1
 particle wax_off ^0.9 ^ ^13.5 0 0 0 0 1
 particle wax_off ^-0.9 ^ ^13.5 0 0 0 0 1
+particle wax_off ^0.9 ^ ^14.0 0 0 0 0 1
+particle wax_off ^-0.9 ^ ^14.0 0 0 0 0 1
+particle wax_off ^0.9 ^ ^14.5 0 0 0 0 1
+particle wax_off ^-0.9 ^ ^14.5 0 0 0 0 1
+particle wax_off ^0.9 ^ ^15.0 0 0 0 0 1
+particle wax_off ^-0.9 ^ ^15.0 0 0 0 0 1
+particle wax_off ^0.9 ^ ^15.5 0 0 0 0 1
+particle wax_off ^-0.9 ^ ^15.5 0 0 0 0 1
 
 
