@@ -48,7 +48,7 @@ execute if score stage_main_thread AzrTimerStack matches 99..100 positioned -798
 
 execute if score stage_main_thread AzrTimerStack matches 101 run fill -79891 42 73 -79889 38 73 minecraft:red_stained_glass
 execute if score stage_main_thread AzrTimerStack matches 101 run fill -79883 38 48 -79883 41 49 minecraft:red_stained_glass
-execute if score stage_main_thread AzrTimerStack matches 101 run effect give @n[tag=AzrielNPC_marinus] resistance infinite 1 true
+execute if score stage_main_thread AzrTimerStack matches 101 run effect give @n[tag=AzrielNPC_marinus] resistance infinite 0 true
 
 execute if score stage_main_thread AzrTimerStack matches 101.. as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs_new/skill/marinus/core
 execute if score stage_main_thread AzrTimerStack matches 101 at @n[tag=AzrielNPC_marinus] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
