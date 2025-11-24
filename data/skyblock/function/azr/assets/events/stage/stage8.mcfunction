@@ -135,9 +135,9 @@ execute if score stage_main_thread AzrTimerStack matches 450 run kill @e[type=it
 execute if score stage_main_thread AzrTimerStack matches 450 run stopsound @a[tag=azrShowDialog] music
 execute if score stage_main_thread AzrTimerStack matches 450 run fill -79891 42 73 -79889 38 73 minecraft:air destroy
 execute if score stage_main_thread AzrTimerStack matches 450 run fill -79883 38 48 -79883 41 49 minecraft:air destroy
-execute if score stage_main_thread AzrTimerStack matches 460 as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs_new/skill/marinus/attack_instant_slash
-execute if score stage_main_thread AzrTimerStack matches 463 as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs_new/skill/marinus/attack_instant_slash
-execute if score stage_main_thread AzrTimerStack matches 467 as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs_new/skill/marinus/attack_instant_slash
+execute if score stage_main_thread AzrTimerStack matches 460 as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs_new/skill/marinus/attack_instant_slash_harmful
+execute if score stage_main_thread AzrTimerStack matches 463 as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs_new/skill/marinus/attack_instant_slash_harmful
+execute if score stage_main_thread AzrTimerStack matches 467 as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs_new/skill/marinus/attack_instant_slash_harmful
 execute if score stage_main_thread AzrTimerStack matches 480 run tp @n[tag=AzrielNPC_marinus] -79888 46 18
 
 #execute if score stage_main_thread AzrTimerStack matches 460..461 run scoreboard players set stage_main_thread AzrTimerStack 460
