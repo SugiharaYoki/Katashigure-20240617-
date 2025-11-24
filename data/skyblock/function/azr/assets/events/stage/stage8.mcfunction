@@ -110,17 +110,18 @@ execute if score stage_main_thread AzrTimerStack matches 382 as @n[tag=AzrielNPC
 
 
 
+execute if score stage_main_thread AzrTimerStack matches 460..461 run scoreboard players set stage_main_thread AzrTimerStack 460
 
 
-execute if score stage_main_thread AzrTimerStack matches 470 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..8}] Azr_skillPoints 9
-execute if score stage_main_thread AzrTimerStack matches 470 run scoreboard players set wave Azr_system 22
-execute if score stage_main_thread AzrTimerStack matches 470 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage8
-execute if score stage_main_thread AzrTimerStack matches 470 run scoreboard players set stage Azr_system 21
-execute if score stage_main_thread AzrTimerStack matches 470 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..3}] [{"text":"索命连击","color":"light_purple","bold":true},{"bold":false,"text":"可用点数已增加，目前为：4","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 470 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..3}] AZR_chainKillUpg_pts 4
+execute if score stage_main_thread AzrTimerStack matches 480 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..8}] Azr_skillPoints 9
+execute if score stage_main_thread AzrTimerStack matches 480 run scoreboard players set wave Azr_system 22
+execute if score stage_main_thread AzrTimerStack matches 480 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage8
+execute if score stage_main_thread AzrTimerStack matches 480 run scoreboard players set stage Azr_system 21
+execute if score stage_main_thread AzrTimerStack matches 480 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..3}] [{"text":"索命连击","color":"light_purple","bold":true},{"bold":false,"text":"可用点数已增加，目前为：4","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 480 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..3}] AZR_chainKillUpg_pts 4
 
-execute if score stage_main_thread AzrTimerStack matches 470 positioned -79900 43 34 run tp @n[tag=AzrielNPC_bird] ~ ~ ~
+execute if score stage_main_thread AzrTimerStack matches 480 positioned -79900 43 34 run tp @n[tag=AzrielNPC_bird] ~ ~ ~
 
-execute if score stage_main_thread AzrTimerStack matches 469 run setblock -79879 38 4 white_shulker_box
-execute if score stage_main_thread AzrTimerStack matches 470 run clone -79899 38 142 -79899 38 142 -79879 38 4 replace move
+execute if score stage_main_thread AzrTimerStack matches 479 run setblock -79879 38 4 white_shulker_box
+execute if score stage_main_thread AzrTimerStack matches 480 run clone -79899 38 142 -79899 38 142 -79879 38 4 replace move
 
