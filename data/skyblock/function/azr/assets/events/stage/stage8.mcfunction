@@ -109,7 +109,6 @@ execute if score stage_main_thread AzrTimerStack matches 382 as @n[tag=AzrielNPC
 execute if score stage_main_thread AzrTimerStack matches 382 as @n[tag=AzrielNPC_marinus] at @s run effect give @s resistance 1 4 true
 
 
-scoreboard players set stage_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 440 run attribute @n[tag=AzrielNPC_marinus] knockback_resistance modifier remove azr_boss:marinus_knockback_resistance
 execute if score stage_main_thread AzrTimerStack matches 440 positioned -79885 38 17 run function skyblock:azr/assets/mobs_new/zoglin
 execute if score stage_main_thread AzrTimerStack matches 440 run playsound minecraft:block.end_gateway.spawn master @a -79887 39 17 100 0.8
