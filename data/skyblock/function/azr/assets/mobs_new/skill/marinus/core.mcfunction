@@ -31,10 +31,10 @@ execute if score @s rng1 matches -6 run rotate @s facing entity @p[tag=azrPlayer
 execute if score @s rng1 matches -1 run rotate @s facing entity @p[tag=azrPlayer]
 
 execute if score @s rng1 matches 1 at @s run scoreboard players set @s rng8 0
-execute if score @s rng1 matches 1 at @s unless block ~ ~ ~0.2 air run scoreboard players add @s rng8 1
-execute if score @s rng1 matches 1 at @s unless block ~ ~ ~-0.2 air run scoreboard players add @s rng8 1
-execute if score @s rng1 matches 1 at @s unless block ~0.2 ~ ~ air run scoreboard players add @s rng8 1
-execute if score @s rng1 matches 1 at @s unless block ~-0.2 ~ ~ air run scoreboard players add @s rng8 1
+execute if score @s rng1 matches 1 at @s unless block ~ ~ ~0.4 air run scoreboard players add @s rng8 1
+execute if score @s rng1 matches 1 at @s unless block ~ ~ ~-0.4 air run scoreboard players add @s rng8 1
+execute if score @s rng1 matches 1 at @s unless block ~0.4 ~ ~ air run scoreboard players add @s rng8 1
+execute if score @s rng1 matches 1 at @s unless block ~-0.4 ~ ~ air run scoreboard players add @s rng8 1
 execute if score @s rng1 matches 1 if score @s rng8 matches 2.. at @s run function skyblock:azr/assets/mobs_new/skill/marinus/move_tp
 
 execute if score @s rng1 matches 1 store result score @s rng8 run random value 1..3
