@@ -390,6 +390,9 @@ setblock -79845 43 77 chest[facing=south]
 item replace block -79845 43 77 container.12 with resin_clump 2
 item replace block -79845 43 77 container.14 with emerald 2
 
+#图书馆复活锚点
+setblock -79870 44 120 minecraft:potted_flowering_azalea_bush
+setblock -79870 44 124 minecraft:potted_flowering_azalea_bush
 
 #stage8
 setblock -79897 38 61 minecraft:potted_flowering_azalea_bush

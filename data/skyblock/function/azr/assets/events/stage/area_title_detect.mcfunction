@@ -47,6 +47,8 @@ execute unless score @s AzrPlayer_CurrentArea matches 2 positioned -79935 32 130
                                                 {area_id:2,title:"重生锚点：采光礼堂",color_code:"#9ef4ff"}
 execute unless score @s AzrPlayer_CurrentArea matches 3 positioned -79915 42 157 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:3,title:"重生锚点：传热根系",color_code:"#5e4e80"}
+execute unless score @s AzrPlayer_CurrentArea matches 4 positioned -79848 43 124 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:4,title:"重生锚点：智述禁馆",color_code:"#99fbd9"}
 
 
 
