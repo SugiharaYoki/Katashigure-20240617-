@@ -108,12 +108,12 @@ execute if score stage_main_thread AzrTimerStack matches 382 as @n[tag=AzrielNPC
 execute if score stage_main_thread AzrTimerStack matches 382 as @n[tag=AzrielNPC_marinus] at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_marinus_move_dash_marker] Pos
 execute if score stage_main_thread AzrTimerStack matches 382 as @n[tag=AzrielNPC_marinus] at @s run kill @e[type=marker,tag=AzrielMob_marinus_move_dash_marker]
 execute if score stage_main_thread AzrTimerStack matches 382 as @n[tag=AzrielNPC_marinus] at @s run effect give @s resistance 1 4 true
-execute if score stage_main_thread AzrTimerStack matches 100.. as @n[tag=AzrielNPC_marinus,scores={Health=..48}] at @s run effect give @s resistance 1 4 true
+execute if score stage_main_thread AzrTimerStack matches 100.. as @n[tag=AzrielNPC_marinus,scores={Health=..45}] at @s run effect give @s resistance 1 4 true
 
+execute if score stage_main_thread AzrTimerStack matches 383..438 as @n[tag=AzrielNPC_marinus,scores={Health=46..49}] run scoreboard players set stage_main_thread AzrTimerStack 439
 
 execute if score stage_main_thread AzrTimerStack matches 440 run attribute @n[tag=AzrielNPC_marinus] knockback_resistance modifier remove azr_boss:marinus_knockback_resistance
 execute if score stage_main_thread AzrTimerStack matches 440 positioned -79885 38 17 run function skyblock:azr/assets/mobs_new/zoglin
-execute if score stage_main_thread AzrTimerStack matches 440 run playsound minecraft:block.end_gateway.spawn master @a -79887 39 17 100 0.8
 execute if score stage_main_thread AzrTimerStack matches 440 run playsound minecraft:entity.zoglin.death master @a -79887 39 17 100 0.8
 
 execute if score stage_main_thread AzrTimerStack matches 450 unless entity @e[tag=AzrielMob] run fill -79893 41 5 -79893 38 3 air destroy
@@ -123,6 +123,7 @@ execute if score stage_main_thread AzrTimerStack matches 450 unless entity @e[ta
 execute if score stage_main_thread AzrTimerStack matches 450 unless entity @e[tag=AzrielMob] run scoreboard players set stage Azr_system 23
 
 execute if score stage_main_thread AzrTimerStack matches 450 run fill -79888 38 18 -79887 40 16 air destroy
+execute if score stage_main_thread AzrTimerStack matches 450 run playsound minecraft:block.end_gateway.spawn master @a -79887 39 17 100 0.8
 execute if score stage_main_thread AzrTimerStack matches 450 run particle explosion -79887 39 17 1 1 1 0.0 50 normal
 execute if score stage_main_thread AzrTimerStack matches 450 run particle minecraft:large_smoke -79887 39 17 1 1 1 0.1 150 normal
 execute if score stage_main_thread AzrTimerStack matches 450 run kill @e[type=item,nbt={Item:{id:"minecraft:quartz_block"}}]
