@@ -112,7 +112,7 @@ execute if score stage_main_thread AzrTimerStack matches 100.. as @n[tag=AzrielN
 
 execute if score stage_main_thread AzrTimerStack matches 383..438 as @n[tag=AzrielNPC_marinus,scores={Health=46..49}] run scoreboard players set stage_main_thread AzrTimerStack 439
 
-execute if score stage_main_thread AzrTimerStack matches 440 run attribute @n[tag=AzrielNPC_marinus] knockback_resistance modifier remove azr_boss:marinus_knockback_resistance
+execute if score stage_main_thread AzrTimerStack matches 450 run attribute @n[tag=AzrielNPC_marinus] knockback_resistance modifier remove azr_boss:marinus_knockback_resistance
 execute if score stage_main_thread AzrTimerStack matches 440 positioned -79885 38 17 run function skyblock:azr/assets/mobs_new/zoglin
 execute if score stage_main_thread AzrTimerStack matches 440 positioned -79885 38 17 run function skyblock:azr/assets/mobs_new/zoglin
 execute if score stage_main_thread AzrTimerStack matches 445 positioned -79885 38 17 as @e[type=zoglin,distance=..15] at @s run damage @s 0 generic by @n[tag=AzrielNPC_marinus]
@@ -135,9 +135,12 @@ execute if score stage_main_thread AzrTimerStack matches 450 run kill @e[type=it
 execute if score stage_main_thread AzrTimerStack matches 450 run stopsound @a[tag=azrShowDialog] music
 execute if score stage_main_thread AzrTimerStack matches 450 run fill -79891 42 73 -79889 38 73 minecraft:air destroy
 execute if score stage_main_thread AzrTimerStack matches 450 run fill -79883 38 48 -79883 41 49 minecraft:air destroy
+execute if score stage_main_thread AzrTimerStack matches 460..480 as @n[tag=AzrielNPC_marinus] at @s run rotate @s facing entity @n[type=zoglin]
 execute if score stage_main_thread AzrTimerStack matches 460 as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs_new/skill/marinus/attack_instant_slash_harmful
-execute if score stage_main_thread AzrTimerStack matches 463 as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs_new/skill/marinus/attack_instant_slash_harmful
-execute if score stage_main_thread AzrTimerStack matches 467 as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs_new/skill/marinus/attack_instant_slash_harmful
+execute if score stage_main_thread AzrTimerStack matches 463..466 as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs_new/skill/marinus/attack_instant_slash_harmful
+execute if score stage_main_thread AzrTimerStack matches 468..469 as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs_new/skill/marinus/attack_instant_slash_harmful
+execute if score stage_main_thread AzrTimerStack matches 480 as @n[tag=AzrielNPC_marinus] at @s run playsound minecraft:entity.wind_charge.throw hostile @a ~ ~ ~ 1 0.5
+execute if score stage_main_thread AzrTimerStack matches 480 at @n[tag=AzrielNPC_marinus] run particle gust ~ ~0.1 ~ 0 3 0 0 5
 execute if score stage_main_thread AzrTimerStack matches 480 run tp @n[tag=AzrielNPC_marinus] -79888 46 18
 
 execute if score stage_main_thread AzrTimerStack matches 450 run kill @e[tag=AzrielMob_marinus_surrounding_particle_marker,type=marker]

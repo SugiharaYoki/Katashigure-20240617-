@@ -37,6 +37,8 @@ execute if score @s rng1 matches 16.. at @s[tag=!attack_throw_high] run playsoun
 
 execute if score @s rng1 matches 16.. at @s[tag=attack_throw_high] run particle sweep_attack ^ ^1.9 ^0.4 0 0 0 0 1
 execute if score @s rng1 matches 16.. at @s[tag=attack_throw_high] positioned ^ ^ ^0.4 as @a[tag=azrPlayer,distance=..2.1] at @s unless entity @s[predicate=skyblock:sneak] run damage @s 5 mob_attack by @n[type=villager,tag=AzrielNPC_marinus]
+execute if score @s rng1 matches 16.. at @s[tag=attack_throw_high] positioned ^ ^ ^0.4 as @a[tag=azrPlayer,distance=..2.1] at @s if entity @s[predicate=skyblock:sneak] if block ~ ~-0.3 ~ air run damage @s 5 mob_attack by @n[type=villager,tag=AzrielNPC_marinus]
+
 execute if score @s rng1 matches 16.. at @s[tag=attack_throw_high] run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.2
 
 execute if score @s rng1 matches 38.. run kill @s
