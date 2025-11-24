@@ -17,7 +17,7 @@ execute if score @s rng1 matches 4 if score @s[scores={rng6=1}] rng5 matches 2 r
 
 execute if score @s rng1 matches 4 store result score @s rng5 run random value 1..4
 execute if score @s rng1 matches 4 store result score @s[scores={Health=390..}] rng5 run random value 3..4
-execute if score @s rng1 matches 4 if score stage_main_thread AzrTimerStack matches 310.. run scoreboard players set @s rng1 -1
+execute if score @s rng1 matches 4 if score stage_main_thread AzrTimerStack matches 310.. run scoreboard players set @s rng1 -4
 execute if score @s rng1 matches 4 if score @s rng5 matches 1 run scoreboard players set @s rng1 -15
 execute if score @s rng1 matches 4 if score @s rng5 matches 2 run scoreboard players set @s rng1 -12
 execute if score @s rng1 matches 4 if score @s rng5 matches 3 run scoreboard players set @s rng1 -7
