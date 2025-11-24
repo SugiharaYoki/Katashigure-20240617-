@@ -89,26 +89,26 @@ execute if score stage_main_thread AzrTimerStack matches 307 run playsound ambie
 execute if score stage_main_thread AzrTimerStack matches 307 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.0
 
 execute if score stage_main_thread AzrTimerStack matches 320..321 as @n[tag=AzrielNPC_marinus,scores={Health=80..}] run scoreboard players set stage_main_thread AzrTimerStack 320
-execute if score stage_main_thread AzrTimerStack matches 322 as @n[tag=AzrielNPC_marinus] at @s positioned 0.0 0 0.0 rotated ~ 0 run summon marker ~ ~0.2 ~-1 {Tags:["AzrielMob_marinus_move_dash_marker"]}
+execute if score stage_main_thread AzrTimerStack matches 322 as @n[tag=AzrielNPC_marinus] at @s positioned 0.0 0 0.0 rotated ~ 0 run summon marker ~ ~0.2 ~-1.8 {Tags:["AzrielMob_marinus_move_dash_marker"]}
 execute if score stage_main_thread AzrTimerStack matches 322 as @n[tag=AzrielNPC_marinus] at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_marinus_move_dash_marker] Pos
 execute if score stage_main_thread AzrTimerStack matches 322 as @n[tag=AzrielNPC_marinus] at @s run kill @e[type=marker,tag=AzrielMob_marinus_move_dash_marker]
 
-execute if score stage_main_thread AzrTimerStack matches 340..341 as @n[tag=AzrielNPC_marinus,scores={Health=60..}] run scoreboard players set stage_main_thread AzrTimerStack 340
-execute if score stage_main_thread AzrTimerStack matches 342 as @n[tag=AzrielNPC_marinus] at @s positioned 0.0 0 0.0 rotated ~ 0 run summon marker ~ ~0.2 ~-1 {Tags:["AzrielMob_marinus_move_dash_marker"]}
+execute if score stage_main_thread AzrTimerStack matches 340..341 as @n[tag=AzrielNPC_marinus,scores={Health=70..}] run scoreboard players set stage_main_thread AzrTimerStack 340
+execute if score stage_main_thread AzrTimerStack matches 342 as @n[tag=AzrielNPC_marinus] at @s positioned 0.0 0 0.0 rotated ~ 0 run summon marker ~ ~0.2 ~-1.8 {Tags:["AzrielMob_marinus_move_dash_marker"]}
 execute if score stage_main_thread AzrTimerStack matches 342 as @n[tag=AzrielNPC_marinus] at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_marinus_move_dash_marker] Pos
 execute if score stage_main_thread AzrTimerStack matches 342 as @n[tag=AzrielNPC_marinus] at @s run kill @e[type=marker,tag=AzrielMob_marinus_move_dash_marker]
 
-execute if score stage_main_thread AzrTimerStack matches 360..361 as @n[tag=AzrielNPC_marinus,scores={Health=50..}] run scoreboard players set stage_main_thread AzrTimerStack 360
-execute if score stage_main_thread AzrTimerStack matches 362 as @n[tag=AzrielNPC_marinus] at @s positioned 0.0 0 0.0 rotated ~ 0 run summon marker ~ ~0.2 ~-1 {Tags:["AzrielMob_marinus_move_dash_marker"]}
+execute if score stage_main_thread AzrTimerStack matches 360..361 as @n[tag=AzrielNPC_marinus,scores={Health=60..}] run scoreboard players set stage_main_thread AzrTimerStack 360
+execute if score stage_main_thread AzrTimerStack matches 362 as @n[tag=AzrielNPC_marinus] at @s positioned 0.0 0 0.0 rotated ~ 0 run summon marker ~ ~0.2 ~-1.8 {Tags:["AzrielMob_marinus_move_dash_marker"]}
 execute if score stage_main_thread AzrTimerStack matches 362 as @n[tag=AzrielNPC_marinus] at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_marinus_move_dash_marker] Pos
 execute if score stage_main_thread AzrTimerStack matches 362 as @n[tag=AzrielNPC_marinus] at @s run kill @e[type=marker,tag=AzrielMob_marinus_move_dash_marker]
 
-execute if score stage_main_thread AzrTimerStack matches 380..381 as @n[tag=AzrielNPC_marinus,scores={Health=40..}] run scoreboard players set stage_main_thread AzrTimerStack 380
-execute if score stage_main_thread AzrTimerStack matches 382 as @n[tag=AzrielNPC_marinus] at @s positioned 0.0 0 0.0 rotated ~ 0 run summon marker ~ ~0.2 ~-1 {Tags:["AzrielMob_marinus_move_dash_marker"]}
+execute if score stage_main_thread AzrTimerStack matches 380..381 as @n[tag=AzrielNPC_marinus,scores={Health=50..}] run scoreboard players set stage_main_thread AzrTimerStack 380
+execute if score stage_main_thread AzrTimerStack matches 382 as @n[tag=AzrielNPC_marinus] at @s positioned 0.0 0 0.0 rotated ~ 0 run summon marker ~ ~0.2 ~-1.8 {Tags:["AzrielMob_marinus_move_dash_marker"]}
 execute if score stage_main_thread AzrTimerStack matches 382 as @n[tag=AzrielNPC_marinus] at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_marinus_move_dash_marker] Pos
 execute if score stage_main_thread AzrTimerStack matches 382 as @n[tag=AzrielNPC_marinus] at @s run kill @e[type=marker,tag=AzrielMob_marinus_move_dash_marker]
 execute if score stage_main_thread AzrTimerStack matches 382 as @n[tag=AzrielNPC_marinus] at @s run effect give @s resistance 1 4 true
-execute if score stage_main_thread AzrTimerStack matches 100.. as @n[tag=AzrielNPC_marinus,scores={Health=..38}] at @s run effect give @s resistance 1 4 true
+execute if score stage_main_thread AzrTimerStack matches 100.. as @n[tag=AzrielNPC_marinus,scores={Health=..48}] at @s run effect give @s resistance 1 4 true
 
 
 execute if score stage_main_thread AzrTimerStack matches 440 run attribute @n[tag=AzrielNPC_marinus] knockback_resistance modifier remove azr_boss:marinus_knockback_resistance
