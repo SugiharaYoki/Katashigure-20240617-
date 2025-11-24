@@ -24,3 +24,5 @@ effect give @n[tag=AzrielNPC_marinus,type=villager] instant_health 3 39 true
 execute positioned -79890 38 51 run tp @n[tag=AzrielNPC_marinus,type=villager] ~ ~ ~ facing entity @p[tag=azrPlayer]
 
 bossbar remove azr:boss_hp_bar
+
+fill -79891 41 45 -79889 38 45 minecraft:purple_stained_glass

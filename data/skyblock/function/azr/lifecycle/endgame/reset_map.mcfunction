@@ -595,7 +595,6 @@ fill -79932 38 72 -79930 42 72 air
 fill -79932 42 130 -79930 38 130 minecraft:purple_stained_glass
 fill -79938 44 151 -79938 43 151 smooth_quartz
 fill -79898 42 101 -79896 38 101 minecraft:purple_stained_glass
-fill -79891 41 45 -79889 38 45 minecraft:purple_stained_glass
 fill -79891 38 73 -79889 42 73 air
 fill -79888 38 16 -79888 40 16 minecraft:quartz_pillar
 fill -79888 38 18 -79888 40 18 minecraft:quartz_pillar
