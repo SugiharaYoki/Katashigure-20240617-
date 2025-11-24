@@ -79,24 +79,41 @@ execute if score stage_main_thread AzrTimerStack matches 301 positioned -79890 3
 execute if score stage_main_thread AzrTimerStack matches 301 run tp @n[tag=AzrielNPC_marinus] @e[sort=random,distance=0.2..9,limit=1,tag=AzrielMob_marinus_tp_possible_destination_marker,type=marker]
 
 execute if score stage_main_thread AzrTimerStack matches 301 run attribute @n[tag=AzrielNPC_marinus] knockback_resistance modifier add azr_boss:marinus_knockback_resistance 1 add_value
-execute if score stage_main_thread AzrTimerStack matches 301 run effect give @n[tag=AzrielNPC_marinus] resistance 5 4 true
+execute if score stage_main_thread AzrTimerStack matches 301 run effect give @n[tag=AzrielNPC_marinus] resistance 5 3 true
 execute if score stage_main_thread AzrTimerStack matches 303..304 as @n[tag=AzrielNPC_marinus,scores={Health=100..}] unless entity @a[tag=azrPlayer,distance=..4.5] run scoreboard players set stage_main_thread AzrTimerStack 303
 execute if score stage_main_thread AzrTimerStack matches 307 run fill -79891 41 45 -79889 38 45 air destroy
 execute if score stage_main_thread AzrTimerStack matches 307 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.0
 execute if score stage_main_thread AzrTimerStack matches 307 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.0
 
+execute if score stage_main_thread AzrTimerStack matches 320..321 as @n[tag=AzrielNPC_marinus,scores={Health=80..}] run scoreboard players set stage_main_thread AzrTimerStack 320
+execute if score stage_main_thread AzrTimerStack matches 322 as @n[tag=AzrielNPC_marinus] at @s positioned 0.0 0 0.0 rotated ~ 0 run summon marker ~ ~ ~-1 {Tags:["AzrielMob_marinus_move_dash_marker"]}
+execute if score stage_main_thread AzrTimerStack matches 322 as @n[tag=AzrielNPC_marinus] at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_marinus_move_dash_marker] Pos
+execute if score stage_main_thread AzrTimerStack matches 322 as @n[tag=AzrielNPC_marinus] at @s run kill @e[type=marker,tag=AzrielMob_marinus_move_dash_marker]
+
+execute if score stage_main_thread AzrTimerStack matches 340..341 as @n[tag=AzrielNPC_marinus,scores={Health=60..}] run scoreboard players set stage_main_thread AzrTimerStack 340
+execute if score stage_main_thread AzrTimerStack matches 342 as @n[tag=AzrielNPC_marinus] at @s positioned 0.0 0 0.0 rotated ~ 0 run summon marker ~ ~ ~-1 {Tags:["AzrielMob_marinus_move_dash_marker"]}
+execute if score stage_main_thread AzrTimerStack matches 342 as @n[tag=AzrielNPC_marinus] at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_marinus_move_dash_marker] Pos
+execute if score stage_main_thread AzrTimerStack matches 342 as @n[tag=AzrielNPC_marinus] at @s run kill @e[type=marker,tag=AzrielMob_marinus_move_dash_marker]
+
+execute if score stage_main_thread AzrTimerStack matches 360..361 as @n[tag=AzrielNPC_marinus,scores={Health=40..}] run scoreboard players set stage_main_thread AzrTimerStack 360
+execute if score stage_main_thread AzrTimerStack matches 362 as @n[tag=AzrielNPC_marinus] at @s positioned 0.0 0 0.0 rotated ~ 0 run summon marker ~ ~ ~-1 {Tags:["AzrielMob_marinus_move_dash_marker"]}
+execute if score stage_main_thread AzrTimerStack matches 362 as @n[tag=AzrielNPC_marinus] at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_marinus_move_dash_marker] Pos
+execute if score stage_main_thread AzrTimerStack matches 362 as @n[tag=AzrielNPC_marinus] at @s run kill @e[type=marker,tag=AzrielMob_marinus_move_dash_marker]
 
 
 
-execute if score stage_main_thread AzrTimerStack matches 370 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..8}] Azr_skillPoints 9
-execute if score stage_main_thread AzrTimerStack matches 370 run scoreboard players set wave Azr_system 22
-execute if score stage_main_thread AzrTimerStack matches 370 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage8
-execute if score stage_main_thread AzrTimerStack matches 370 run scoreboard players set stage Azr_system 21
-execute if score stage_main_thread AzrTimerStack matches 370 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..3}] [{"text":"索命连击","color":"light_purple","bold":true},{"bold":false,"text":"可用点数已增加，目前为：4","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 370 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..3}] AZR_chainKillUpg_pts 4
 
-execute if score stage_main_thread AzrTimerStack matches 370 positioned -79900 43 34 run tp @n[tag=AzrielNPC_bird] ~ ~ ~
 
-execute if score stage_main_thread AzrTimerStack matches 369 run setblock -79879 38 4 white_shulker_box
-execute if score stage_main_thread AzrTimerStack matches 370 run clone -79899 38 142 -79899 38 142 -79879 38 4 replace move
+
+execute if score stage_main_thread AzrTimerStack matches 470 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..8}] Azr_skillPoints 9
+execute if score stage_main_thread AzrTimerStack matches 470 run scoreboard players set wave Azr_system 22
+execute if score stage_main_thread AzrTimerStack matches 470 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage8
+execute if score stage_main_thread AzrTimerStack matches 470 run scoreboard players set stage Azr_system 21
+execute if score stage_main_thread AzrTimerStack matches 470 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..3}] [{"text":"索命连击","color":"light_purple","bold":true},{"bold":false,"text":"可用点数已增加，目前为：4","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 470 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..3}] AZR_chainKillUpg_pts 4
+
+execute if score stage_main_thread AzrTimerStack matches 470 positioned -79900 43 34 run tp @n[tag=AzrielNPC_bird] ~ ~ ~
+
+execute if score stage_main_thread AzrTimerStack matches 469 run setblock -79879 38 4 white_shulker_box
+execute if score stage_main_thread AzrTimerStack matches 470 run clone -79899 38 142 -79899 38 142 -79879 38 4 replace move
 
