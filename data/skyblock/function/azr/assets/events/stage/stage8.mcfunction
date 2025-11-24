@@ -140,6 +140,9 @@ execute if score stage_main_thread AzrTimerStack matches 463 as @n[tag=AzrielNPC
 execute if score stage_main_thread AzrTimerStack matches 467 as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs_new/skill/marinus/attack_instant_slash_harmful
 execute if score stage_main_thread AzrTimerStack matches 480 run tp @n[tag=AzrielNPC_marinus] -79888 46 18
 
+execute if score stage_main_thread AzrTimerStack matches 450 run kill @e[tag=AzrielMob_marinus_surrounding_particle_marker,type=marker]
+execute if score stage_main_thread AzrTimerStack matches 450 run kill @e[tag=AzrielMob_marinus_tp_possible_destination_marker,type=marker]
+
 #execute if score stage_main_thread AzrTimerStack matches 460..461 run scoreboard players set stage_main_thread AzrTimerStack 460
 
 
