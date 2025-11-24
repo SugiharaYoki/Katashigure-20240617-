@@ -74,7 +74,7 @@ execute if score stage_main_thread AzrTimerStack matches 299..300 positioned -79
 
 execute if score stage_main_thread AzrTimerStack matches 370 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..8}] Azr_skillPoints 9
 execute if score stage_main_thread AzrTimerStack matches 370 run scoreboard players set wave Azr_system 22
-execute if score stage_main_thread AzrTimerStack matches 370 run fill -79889 40 45 -79892 38 45 air destroy
+execute if score stage_main_thread AzrTimerStack matches 370 run fill -79891 41 45 -79889 38 45 air destroy
 execute if score stage_main_thread AzrTimerStack matches 370 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.0
 execute if score stage_main_thread AzrTimerStack matches 370 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.0
 execute if score stage_main_thread AzrTimerStack matches 370 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage8
