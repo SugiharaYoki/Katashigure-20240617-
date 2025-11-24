@@ -82,7 +82,7 @@ execute if score stage_main_thread AzrTimerStack matches 301 run tp @n[tag=Azrie
 execute if score stage_main_thread AzrTimerStack matches 301 run attribute @n[tag=AzrielNPC_marinus] knockback_resistance modifier add azr_boss:marinus_knockback_resistance 1 add_value
 execute if score stage_main_thread AzrTimerStack matches 301..304 run effect give @n[tag=AzrielNPC_marinus] resistance 1 4 true
 execute if score stage_main_thread AzrTimerStack matches 303..304 as @n[tag=AzrielNPC_marinus,scores={Health=100..}] unless entity @a[tag=azrPlayer,distance=..4.5] run scoreboard players set stage_main_thread AzrTimerStack 303
-execute if score stage_main_thread AzrTimerStack matches 307.. run effect give @n[tag=AzrielNPC_marinus] resistance 1 3 true
+execute if score stage_main_thread AzrTimerStack matches 307..381 run effect give @n[tag=AzrielNPC_marinus] resistance 1 3 true
 execute if score stage_main_thread AzrTimerStack matches 307 run fill -79891 41 45 -79889 38 45 air destroy
 execute if score stage_main_thread AzrTimerStack matches 307 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.0
 execute if score stage_main_thread AzrTimerStack matches 307 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.0
@@ -106,8 +106,27 @@ execute if score stage_main_thread AzrTimerStack matches 380..381 as @n[tag=Azri
 execute if score stage_main_thread AzrTimerStack matches 382 as @n[tag=AzrielNPC_marinus] at @s positioned 0.0 0 0.0 rotated ~ 0 run summon marker ~ ~0.2 ~-1 {Tags:["AzrielMob_marinus_move_dash_marker"]}
 execute if score stage_main_thread AzrTimerStack matches 382 as @n[tag=AzrielNPC_marinus] at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_marinus_move_dash_marker] Pos
 execute if score stage_main_thread AzrTimerStack matches 382 as @n[tag=AzrielNPC_marinus] at @s run kill @e[type=marker,tag=AzrielMob_marinus_move_dash_marker]
+execute if score stage_main_thread AzrTimerStack matches 382 as @n[tag=AzrielNPC_marinus] at @s run effect give @s resistance 1 4 true
 
 
+scoreboard players set stage_main_thread AzrTimerStack 0
+execute if score stage_main_thread AzrTimerStack matches 440 run attribute @n[tag=AzrielNPC_marinus] knockback_resistance modifier remove azr_boss:marinus_knockback_resistance
+execute if score stage_main_thread AzrTimerStack matches 440 run playsound minecraft:block.end_gateway.spawn master @a -79887 39 17 100 0.8
+execute if score stage_main_thread AzrTimerStack matches 440 run playsound minecraft:entity.zoglin.death master @a -79887 39 17 100 0.8
+
+execute if score stage_main_thread AzrTimerStack matches 450 unless entity @e[tag=AzrielMob] run fill -79893 41 5 -79893 38 3 air destroy
+execute if score stage_main_thread AzrTimerStack matches 450 unless entity @e[tag=AzrielMob] run bossbar remove azr:progress_bar_normal
+execute if score stage_main_thread AzrTimerStack matches 450 unless entity @e[tag=AzrielMob] run bossbar remove azr:boss_hp_bar
+execute if score stage_main_thread AzrTimerStack matches 450 unless entity @e[tag=AzrielMob] run scoreboard players reset tick_main_thread AzrTimerStack
+execute if score stage_main_thread AzrTimerStack matches 450 unless entity @e[tag=AzrielMob] run scoreboard players set stage Azr_system 23
+
+execute if score stage_main_thread AzrTimerStack matches 450 run fill -79888 38 18 -79887 40 16 air destroy
+execute if score stage_main_thread AzrTimerStack matches 450 run particle explosion -79887 39 17 1 1 1 0.0 50 normal
+execute if score stage_main_thread AzrTimerStack matches 450 run particle minecraft:large_smoke -79887 39 17 1 1 1 0.1 150 normal
+execute if score stage_main_thread AzrTimerStack matches 450 run kill @e[type=item,nbt={Item:{id:"minecraft:quartz_block"}}]
+execute if score stage_main_thread AzrTimerStack matches 450 run kill @e[type=item,nbt={Item:{id:"minecraft:quartz_bricks"}}]
+execute if score stage_main_thread AzrTimerStack matches 450 run kill @e[type=item,nbt={Item:{id:"minecraft:quartz_pillar"}}]
+execute if score stage_main_thread AzrTimerStack matches 480 run stopsound @a[tag=azrShowDialog] music
 
 
 execute if score stage_main_thread AzrTimerStack matches 460..461 run scoreboard players set stage_main_thread AzrTimerStack 460
@@ -116,7 +135,6 @@ execute if score stage_main_thread AzrTimerStack matches 460..461 run scoreboard
 execute if score stage_main_thread AzrTimerStack matches 480 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..8}] Azr_skillPoints 9
 execute if score stage_main_thread AzrTimerStack matches 480 run scoreboard players set wave Azr_system 22
 execute if score stage_main_thread AzrTimerStack matches 480 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage8
-execute if score stage_main_thread AzrTimerStack matches 480 run scoreboard players set stage Azr_system 21
 execute if score stage_main_thread AzrTimerStack matches 480 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..3}] [{"text":"索命连击","color":"light_purple","bold":true},{"bold":false,"text":"可用点数已增加，目前为：4","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 480 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..3}] AZR_chainKillUpg_pts 4
 
