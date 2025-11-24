@@ -116,6 +116,7 @@ execute if score stage_main_thread AzrTimerStack matches 440 run attribute @n[ta
 execute if score stage_main_thread AzrTimerStack matches 440 positioned -79885 38 17 run function skyblock:azr/assets/mobs_new/zoglin
 execute if score stage_main_thread AzrTimerStack matches 440 positioned -79885 38 17 run function skyblock:azr/assets/mobs_new/zoglin
 execute if score stage_main_thread AzrTimerStack matches 445 positioned -79885 38 17 as @e[type=zoglin,distance=..15] at @s run damage @s 0 generic by @n[tag=AzrielNPC_marinus]
+execute if score stage_main_thread AzrTimerStack matches 445 positioned -79885 38 17 as @e[type=zoglin,distance=..15] at @s run effect give @s speed 3 9 true
 execute if score stage_main_thread AzrTimerStack matches 440 run playsound minecraft:entity.zoglin.death master @a -79887 39 17 100 0.8
 
 execute if score stage_main_thread AzrTimerStack matches 450 unless entity @e[tag=AzrielMob] run fill -79893 41 5 -79893 38 3 air destroy
