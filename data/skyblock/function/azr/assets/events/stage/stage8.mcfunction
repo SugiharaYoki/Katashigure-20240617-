@@ -70,13 +70,26 @@ execute if score stage_main_thread AzrTimerStack matches 18..20 unless entity @a
 
 
 
-execute if score stage_main_thread AzrTimerStack matches 299..300 positioned -79890 38 51 if entity @n[tag=AzrielNPC_marinus,scores={Health=0..}] run scoreboard players set stage_main_thread AzrTimerStack 299
+execute if score stage_main_thread AzrTimerStack matches 299..300 positioned -79890 38 51 if entity @n[tag=AzrielNPC_marinus,scores={Health=100..}] run scoreboard players set stage_main_thread AzrTimerStack 299
+
+execute if score stage_main_thread AzrTimerStack matches 301 as @n[tag=AzrielNPC_marinus] at @s run playsound minecraft:entity.wind_charge.throw hostile @a ~ ~ ~ 1 0.5
+execute if score stage_main_thread AzrTimerStack matches 301 at @n[tag=AzrielNPC_marinus] run particle gust ~ ~0.1 ~ 0 3 0 0 5
+execute if score stage_main_thread AzrTimerStack matches 301 positioned -79890 38 61 run playsound minecraft:entity.wind_charge.throw hostile @a ~ ~ ~ 1 0.5
+execute if score stage_main_thread AzrTimerStack matches 301 positioned -79890 38 61 run particle gust ~ ~0.1 ~ 0 3 0 0 5
+execute if score stage_main_thread AzrTimerStack matches 301 run tp @n[tag=AzrielNPC_marinus] @e[sort=random,distance=0.2..9,limit=1,tag=AzrielMob_marinus_tp_possible_destination_marker,type=marker]
+
+execute if score stage_main_thread AzrTimerStack matches 301 run attribute @n[tag=AzrielNPC_marinus] knockback_resistance modifier add azr_boss:marinus_knockback_resistance 1 add_value
+execute if score stage_main_thread AzrTimerStack matches 301 run effect give @n[tag=AzrielNPC_marinus] resistance 5 4 true
+execute if score stage_main_thread AzrTimerStack matches 303..304 as @n[tag=AzrielNPC_marinus,scores={Health=100..}] unless entity @a[tag=azrPlayer,distance=..4.5] run scoreboard players set stage_main_thread AzrTimerStack 303
+execute if score stage_main_thread AzrTimerStack matches 307 run fill -79891 41 45 -79889 38 45 air destroy
+execute if score stage_main_thread AzrTimerStack matches 307 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.0
+execute if score stage_main_thread AzrTimerStack matches 307 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.0
+
+
+
 
 execute if score stage_main_thread AzrTimerStack matches 370 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..8}] Azr_skillPoints 9
 execute if score stage_main_thread AzrTimerStack matches 370 run scoreboard players set wave Azr_system 22
-execute if score stage_main_thread AzrTimerStack matches 370 run fill -79891 41 45 -79889 38 45 air destroy
-execute if score stage_main_thread AzrTimerStack matches 370 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.0
-execute if score stage_main_thread AzrTimerStack matches 370 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.0
 execute if score stage_main_thread AzrTimerStack matches 370 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage8
 execute if score stage_main_thread AzrTimerStack matches 370 run scoreboard players set stage Azr_system 21
 execute if score stage_main_thread AzrTimerStack matches 370 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..3}] [{"text":"索命连击","color":"light_purple","bold":true},{"bold":false,"text":"可用点数已增加，目前为：4","color":"white"}]
