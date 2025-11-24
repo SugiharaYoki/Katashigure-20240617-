@@ -75,9 +75,9 @@ execute if score stage_main_thread AzrTimerStack matches 103..300 positioned -79
 
 execute if score stage_main_thread AzrTimerStack matches 301 as @n[tag=AzrielNPC_marinus] at @s run playsound minecraft:entity.wind_charge.throw hostile @a ~ ~ ~ 1 0.5
 execute if score stage_main_thread AzrTimerStack matches 301 at @n[tag=AzrielNPC_marinus] run particle gust ~ ~0.1 ~ 0 3 0 0 5
-execute if score stage_main_thread AzrTimerStack matches 301 positioned -79890 38 61 run playsound minecraft:entity.wind_charge.throw hostile @a ~ ~ ~ 1 0.5
-execute if score stage_main_thread AzrTimerStack matches 301 positioned -79890 38 61 run particle gust ~ ~0.1 ~ 0 3 0 0 5
-execute if score stage_main_thread AzrTimerStack matches 301 run tp @n[tag=AzrielNPC_marinus] -79890 38 61
+execute if score stage_main_thread AzrTimerStack matches 301 positioned -79890 38 47 run playsound minecraft:entity.wind_charge.throw hostile @a ~ ~ ~ 1 0.5
+execute if score stage_main_thread AzrTimerStack matches 301 positioned -79890 38 47 run particle gust ~ ~0.1 ~ 0 3 0 0 5
+execute if score stage_main_thread AzrTimerStack matches 301 run tp @n[tag=AzrielNPC_marinus] -79890 38 47
 
 execute if score stage_main_thread AzrTimerStack matches 301 run attribute @n[tag=AzrielNPC_marinus] knockback_resistance modifier add azr_boss:marinus_knockback_resistance 1 add_value
 execute if score stage_main_thread AzrTimerStack matches 301 run effect give @n[tag=AzrielNPC_marinus] resistance 5 3 true
