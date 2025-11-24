@@ -80,8 +80,9 @@ execute if score stage_main_thread AzrTimerStack matches 301 positioned -79890 3
 execute if score stage_main_thread AzrTimerStack matches 301 run tp @n[tag=AzrielNPC_marinus] -79890 38 47
 
 execute if score stage_main_thread AzrTimerStack matches 301 run attribute @n[tag=AzrielNPC_marinus] knockback_resistance modifier add azr_boss:marinus_knockback_resistance 1 add_value
-execute if score stage_main_thread AzrTimerStack matches 301 run effect give @n[tag=AzrielNPC_marinus] resistance 5 3 true
+execute if score stage_main_thread AzrTimerStack matches 301..304 run effect give @n[tag=AzrielNPC_marinus] resistance 1 4 true
 execute if score stage_main_thread AzrTimerStack matches 303..304 as @n[tag=AzrielNPC_marinus,scores={Health=100..}] unless entity @a[tag=azrPlayer,distance=..4.5] run scoreboard players set stage_main_thread AzrTimerStack 303
+execute if score stage_main_thread AzrTimerStack matches 307.. run effect give @n[tag=AzrielNPC_marinus] resistance 1 3 true
 execute if score stage_main_thread AzrTimerStack matches 307 run fill -79891 41 45 -79889 38 45 air destroy
 execute if score stage_main_thread AzrTimerStack matches 307 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.0
 execute if score stage_main_thread AzrTimerStack matches 307 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.0
