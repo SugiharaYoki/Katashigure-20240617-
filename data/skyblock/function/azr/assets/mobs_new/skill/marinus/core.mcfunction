@@ -25,8 +25,8 @@ execute if score @s AzrEntityTimer matches 1 run playsound minecraft:entity.evok
 
 execute if score @s rng1 matches -19 run rotate @s facing entity @p[tag=azrPlayer]
 execute if score @s rng1 matches -11 run rotate @s facing entity @p[tag=azrPlayer]
-execute if score @s rng1 matches -8 run function skyblock:azr/assets/mobs_new/skill/marinus/move_fastshift
-execute if score @s rng1 matches -7 run function skyblock:azr/assets/mobs_new/skill/marinus/move_forward
+execute if score @s rng1 matches -8 if score stage_main_thread AzrTimerStack matches ..300 run function skyblock:azr/assets/mobs_new/skill/marinus/move_fastshift
+execute if score @s rng1 matches -7 if score stage_main_thread AzrTimerStack matches ..300 run function skyblock:azr/assets/mobs_new/skill/marinus/move_forward
 execute if score @s rng1 matches -6 run rotate @s facing entity @p[tag=azrPlayer]
 execute if score @s rng1 matches -1 run rotate @s facing entity @p[tag=azrPlayer]
 
