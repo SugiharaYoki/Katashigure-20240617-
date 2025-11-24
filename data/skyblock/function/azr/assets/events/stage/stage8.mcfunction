@@ -62,7 +62,8 @@ execute if score stage_main_thread AzrTimerStack matches 121 at @n[tag=AzrielNPC
 execute if score stage_main_thread AzrTimerStack matches 121 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"马林努斯：","color":"yellow","bold": true},{"bold": false,"text":"\n“准备好，回你的地狱。”","color":"white"}]
 
 
-execute if score stage_main_thread AzrTimerStack matches 101..470 unless entity @a[tag=azrPlayer,x=-79899,y=37,z=45,dx=16,dy=8,dz=29] run function skyblock:azr/lifecycle/endgame/reset_map_boss_main_marinus
+execute if score stage_main_thread AzrTimerStack matches 101..300 unless entity @a[tag=azrPlayer,x=-79899,y=37,z=45,dx=16,dy=8,dz=29] run function skyblock:azr/lifecycle/endgame/reset_map_boss_main_marinus
+execute if score stage_main_thread AzrTimerStack matches 301..470 unless entity @a[tag=azrPlayer,x=-79889,y=37,z=0,dx=26,dy=8,dz=74] run function skyblock:azr/lifecycle/endgame/reset_map_boss_main_marinus
 execute if score stage_main_thread AzrTimerStack matches 18..20 unless entity @a[tag=azrPlayer,x=-79899,y=37,z=45,dx=16,dy=8,dz=29] run scoreboard players set stage_main_thread AzrTimerStack 18
 
 
