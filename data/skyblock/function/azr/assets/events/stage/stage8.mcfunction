@@ -108,6 +108,7 @@ execute if score stage_main_thread AzrTimerStack matches 382 as @n[tag=AzrielNPC
 execute if score stage_main_thread AzrTimerStack matches 382 as @n[tag=AzrielNPC_marinus] at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_marinus_move_dash_marker] Pos
 execute if score stage_main_thread AzrTimerStack matches 382 as @n[tag=AzrielNPC_marinus] at @s run kill @e[type=marker,tag=AzrielMob_marinus_move_dash_marker]
 execute if score stage_main_thread AzrTimerStack matches 382 as @n[tag=AzrielNPC_marinus] at @s run effect give @s resistance 1 4 true
+execute if score stage_main_thread AzrTimerStack matches 100.. as @n[tag=AzrielNPC_marinus,scores={Health=..38}] at @s run effect give @s resistance 1 4 true
 
 
 execute if score stage_main_thread AzrTimerStack matches 440 run attribute @n[tag=AzrielNPC_marinus] knockback_resistance modifier remove azr_boss:marinus_knockback_resistance
