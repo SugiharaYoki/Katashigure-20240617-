@@ -9,7 +9,8 @@ execute if score @s AzrSariel_Amulet_DownKick_clock matches 79..80 if entity @s[
 
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..80 run attribute @s gravity base set 0.8
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 if entity @s[nbt={OnGround:1b}] run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 20
-execute if score @s AzrSariel_Amulet_DownKick_clock matches 19 run particle minecraft:crit ~ ~ ~ 3.5 0 3.5 0 30
+execute if score @s AzrSariel_Amulet_DownKick_clock matches 20 run particle minecraft:crit ~ ~ ~ 1.5 0 1.5 0 30
+execute if score @s AzrSariel_Amulet_DownKick_clock matches 20 run playsound minecraft:item.mace.smash_ground player @a ~ ~ ~ 1.5 1.2
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 19 run playsound minecraft:item.mace.smash_ground_heavy player @a ~ ~ ~ 1.5 1.5
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 15 run playsound minecraft:item.mace.smash_ground_heavy player @a ~ ~ ~ 1.5 1.3
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 11 run playsound minecraft:item.mace.smash_ground_heavy player @a ~ ~ ~ 1.5 1.2
