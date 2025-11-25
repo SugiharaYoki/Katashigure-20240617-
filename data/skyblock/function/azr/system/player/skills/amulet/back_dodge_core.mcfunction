@@ -22,7 +22,7 @@ execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=100}] run attribut
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=100}] run attribute @s armor modifier add azr_amulet:sprintdouble_01 20 add_value
 execute if items entity @s container.* *[custom_data~{azr_amulet_jump_boost:1b}] if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=97..99},nbt={OnGround:0b}] if block ^ ^ ^-0.3 #air if block ^ ^1 ^-0.3 #air if block ^ ^ ^-0.8 #air if block ^ ^1 ^-0.8 #air run tp @s ^ ^ ^-0.5
 
-execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=97..99},predicate=!skyblock:backward] run scoreboard players set @s AzrSariel_Amulet_BackDodge_clock 96
+#execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=97..99},predicate=!skyblock:backward] run scoreboard players set @s AzrSariel_Amulet_BackDodge_clock 96
 
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=96}] run attribute @s movement_speed modifier remove azr_amulet:backdodge_01
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=96}] run attribute @s armor modifier remove azr_amulet:sprintdouble_01
