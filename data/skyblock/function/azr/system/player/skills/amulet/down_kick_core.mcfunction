@@ -4,7 +4,7 @@ scoreboard players remove @s AzrSariel_Amulet_DownKick_clock 1
 
 execute if entity @s[scores={AzrSariel_Amulet_DownKick_clock=..10},predicate=skyblock:sneak,predicate=!skyblock:jump] run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 80
 
-execute if score @s AzrSariel_Amulet_DownKick_clock matches 79..80 if entity @s[nbt={OnGround:0b}] run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 0
+execute if score @s AzrSariel_Amulet_DownKick_clock matches 79..80 if entity @s[nbt={OnGround:1b}] run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 0
 
 
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..80 run attribute @s gravity base set 0.8
