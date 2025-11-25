@@ -96,6 +96,7 @@ execute if entity @s[tag=AZS_BoS24] run data modify entity @n[tag=AzrRamielExSta
 execute if entity @s[tag=AZS_BoS25] run data modify entity @n[tag=AzrRamielExStage_displaymarkery] CustomName set value '" <Y> "'
 execute if entity @s[tag=AZS_BoS26] run data modify entity @n[tag=AzrRamielExStage_displaymarkerz] CustomName set value '" <Z> "'
 execute if entity @s[scores={Azr_skillPoints=5..}] run data modify entity @n[tag=AzrRamielExStage_displaymarker1] CustomName set value '" <残> "'
+execute if entity @s[scores={Azr_skillPoints=9..}] run data modify entity @n[tag=AzrRamielExStage_displaymarker2] CustomName set value '" <努> "'
 execute if entity @s[tag=AZS_BoSB04] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value '" <炉> "'
 execute if entity @s[tag=AZS_BoSB13] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value '" <藓> "'
 execute if entity @s[tag=!AZS_BoS01] run data modify entity @n[tag=AzrRamielExStage_displaymarkera] CustomName set value '" ？ "'
@@ -125,6 +126,7 @@ execute if entity @s[tag=!AZS_BoS24] run data modify entity @n[tag=AzrRamielExSt
 execute if entity @s[tag=!AZS_BoS25] run data modify entity @n[tag=AzrRamielExStage_displaymarkery] CustomName set value '" ？ "'
 execute if entity @s[tag=!AZS_BoS26] run data modify entity @n[tag=AzrRamielExStage_displaymarkerz] CustomName set value '" ？ "'
 execute if entity @s[scores={Azr_skillPoints=..4}] run data modify entity @n[tag=AzrRamielExStage_displaymarker1] CustomName set value '" ？ "'
+execute if entity @s[scores={Azr_skillPoints=..8}] run data modify entity @n[tag=AzrRamielExStage_displaymarker2] CustomName set value '" ？ "'
 execute if entity @s[tag=!AZS_BoSB13] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value '" ？ "'
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkera] CustomName set value '" √ "'
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerb] CustomName set value '" √ "'
@@ -153,6 +155,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run d
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkery] CustomName set value '" √ "'
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerz] CustomName set value '" √ "'
 execute if items entity @s container.* *[custom_data~{azr_amulet_stopwatch:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarker1] CustomName set value '" √ "'
+execute if items entity @s container.* *[custom_data~{azr_amulet_down_kick:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarker2] CustomName set value '" √ "'
 execute if items entity @s container.* *[custom_data~{azr_amulet_fire_drogue:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value '" √ "'
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value '" √ "'
 
@@ -189,6 +192,7 @@ tellraw @s [{"text":"\n "},{"text":"假定回溯  \n","color":"#308aff","bold": 
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerz]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432326"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}},\
 {"text":"\n "},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarker1]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432327"},"hoverEvent":{"action":"show_text","contents":{"text":"权之残影 - 天界怀表\n在波数暂停时手持，可以冻结计时","color":"white"}}},\
+{"selector":"@n[tag=AzrRamielExStage_displaymarker2]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432327"},"hoverEvent":{"action":"show_text","contents":{"text":"马林努斯 - 迫坠石板\n空中按shift快速下坠，25%+索命连击充能时启动下砸，下砸期间可长按启动退避石板","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerBd]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432329"},"hoverEvent":{"action":"show_text","contents":{"text":"锅炉驱动者 - 逐焰卷宗\n持续召唤最多3个跟随火球，减少节制天平电球最低间隔时长","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerBm]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432328"},"hoverEvent":{"action":"show_text","contents":{"text":"噬藓母虫 - 深藓石板\n造成攻击可增加“索命连击”充能、在重生锚点可获得5分钟孢子的庇护（生命值上限加成）","color":"white"}}}]
 
