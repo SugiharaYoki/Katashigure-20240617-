@@ -1,11 +1,13 @@
 scoreboard players remove @s AzrSariel_Amulet_BackDodge_clock 1
 
 
+execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=..-10,AzrSariel_Amulet_DownKick_clock=11..19},predicate=skyblock:backward] run scoreboard players set @s AzrSariel_Amulet_BackDodge_clock 100
 
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=..-10},predicate=skyblock:backward] run scoreboard players set @s AzrSariel_Amulet_BackDodge_clock 4
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=1..4},predicate=!skyblock:backward] run scoreboard players set @s AzrSariel_Amulet_BackDodge_clock 20
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=17..20},predicate=skyblock:backward] run scoreboard players set @s AzrSariel_Amulet_BackDodge_clock 100
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=15..16}] run scoreboard players set @s AzrSariel_Amulet_BackDodge_clock 0
+
 
 
 execute if items entity @s container.* *[custom_data~{azr_amulet_jump_boost:1b}] if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=100},nbt={OnGround:0b}] run playsound minecraft:entity.wind_charge.wind_burst player @a ~ ~ ~ 0.5 2
