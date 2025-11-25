@@ -7,7 +7,7 @@ execute if entity @s[scores={AzrSariel_Amulet_DownKick_clock=..10},predicate=sky
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 79..80 if entity @s[nbt={OnGround:1b}] run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 0
 
 
-execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..79 run attribute @s gravity base set 0.9
+execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..79 run attribute @s gravity base set 1.3
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 run playsound minecraft:block.soul_soil.step player @a ~ ~1 ~ 1 2
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 run particle soul ~ ~1 ~ 0.5 2 0.5 0.03 15
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 if entity @s[nbt={OnGround:1b}] run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 20
