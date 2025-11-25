@@ -63,7 +63,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 204 run title @a[tag=a
 execute if score stage_bonus_thread AzrTimerStack matches 204 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_vestige
 execute if score stage_bonus_thread AzrTimerStack matches 204 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS22
 execute if score stage_bonus_thread AzrTimerStack matches 204 as @a[tag=azrPlayer] at @s run give @s emerald 5
-execute if score stage_bonus_thread AzrTimerStack matches 204 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/axe_vortex
+execute if score stage_bonus_thread AzrTimerStack matches 204 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/down_kick
 execute if score stage_bonus_thread AzrTimerStack matches 204 as @a[tag=azrPlayer] at @s run fill -79877 41 82 -79875 38 82 minecraft:air destroy
 
 execute if score stage_bonus_thread AzrTimerStack matches 202..204 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
