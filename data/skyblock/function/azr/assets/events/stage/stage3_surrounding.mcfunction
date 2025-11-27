@@ -73,32 +73,7 @@ execute positioned -79931 28 -5 unless entity @n[tag=AzrielMarker_encounter,dist
 #灵魂碎片
 execute positioned -79853 31 5 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=0..7,tag=azrPlayer,tag=!AZS_SoulFrag01] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] run summon minecraft:item_display -79841 29.2 22 {item:{id:"ender_pearl"},billboard:center,transformation:{scale:[0.3f,0.3f,0.3f]},brightness:{sky:15,block:15}}
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5..6}] run scoreboard players set @s rng1 5
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2..6}] positioned -79841 28 22 if entity @a[distance=0..4,tag=azrPlayer] run scoreboard players set @s rng1 7
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=7}] positioned -79841 29.2 22 run kill @n[type=item_display,distance=..5]
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=7}] as @a[tag=azrShowDialog] at @s run playsound garden1.area_title master @s -79841 29.2 22 100 1.5
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=7}] run summon minecraft:item_display -79841 29.2 22 {item:{id:"ender_eye"},billboard:center,transformation:{scale:[0.3f,0.3f,0.3f]},brightness:{sky:15,block:15}}
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=7..16}] positioned -79841 29.2 22 as @n[type=item_display,distance=..5] at @s run particle portal ~ ~0.1 ~ 0.3 0.3 0.3 0.3 30
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=7..16}] positioned -79841 29.2 22 as @n[type=item_display,distance=..5] at @s run particle soul ~ ~-0.4 ~ 0.3 0 0.3 0.01 15
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=7..12}] positioned -79841 29.2 22 as @n[type=item_display,distance=..5] at @s run playsound minecraft:ambient.crimson_forest.mood player @a ~ ~ ~ 10 1.3
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=9..15}] positioned -79841 29.2 22 as @n[type=item_display,distance=..5] at @s run tp @s ~ ~0.02 ~
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=9..12}] positioned -79841 29.2 22 as @n[type=item_display,distance=..5] at @s run tp @s ~ ~0.03 ~
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=9..10}] positioned -79841 29.2 22 as @n[type=item_display,distance=..5] at @s run tp @s ~ ~0.03 ~
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=22}] positioned -79841 29.2 22 run particle totem_of_undying ~ ~1 ~ 0.4 0.8 0.4 0.7 100
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=22}] positioned -79841 29.2 22 run particle minecraft:flash ~ ~1 ~ 0.4 0.7 0.4 0.3 2
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=22}] positioned -79841 29.2 22 run playsound item.totem.use master @a ~ ~ ~ 2 0.8
-
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=22}] positioned -79841 29.2 22 as @a[tag=azrPlayer,tag=!AZS_SoulFrag01] run scoreboard players add @s AZS_SoulFrag 1
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=22}] positioned -79841 29.2 22 as @a[tag=azrPlayer,tag=!AZS_SoulFrag01] run effect give @s darkness 5 0 true
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=22}] positioned -79841 29.2 22 run kill @n[type=item_display,distance=..5]
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=27}] positioned -79841 29.2 22 as @a[tag=azrPlayer,tag=!AZS_SoulFrag01] run title @s times 30t 120t 12t
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=27}] positioned -79841 29.2 22 as @a[tag=azrPlayer,tag=!AZS_SoulFrag01] run title @s title {"text": "灵魂碎片已吸收","color": "#7321cb","bold": true}
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=36}] positioned -79841 29.2 22 as @a[tag=azrPlayer,tag=!AZS_SoulFrag01] run title @s times 0t 70t 12t
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=36}] positioned -79841 29.2 22 as @a[tag=azrPlayer,tag=!AZS_SoulFrag01] run title @s title {"text": "灵魂碎片已吸收","color": "#7321cb","bold": true}
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=36}] positioned -79841 29.2 22 as @a[tag=azrPlayer,tag=!AZS_SoulFrag01] run title @s subtitle [{"text": "现在的灵魂碎片总数：","color": "#7321cb","bold": true},{"score":{"name":"@s","objective":"AZS_SoulFrag"}}]
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=36}] positioned -79841 29.2 22 as @a[tag=azrPlayer,tag=!AZS_SoulFrag01] run tag @s add AZS_SoulFrag01
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=36}] run kill @s
+execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/events/effects/soul_fragment {id:"01",pos:"-79841 29.2 22"}
 
 
 
