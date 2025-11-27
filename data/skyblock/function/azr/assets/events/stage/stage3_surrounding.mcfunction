@@ -72,7 +72,6 @@ execute positioned -79931 28 -5 unless entity @n[tag=AzrielMarker_encounter,dist
 
 #灵魂碎片
 execute positioned -79853 31 5 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=0..7,tag=azrPlayer,tag=!AZS_SoulFrag01] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
 execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/effects/soul_fragment {id:"01",pos:"-79841 29.2 22"}
 
 
