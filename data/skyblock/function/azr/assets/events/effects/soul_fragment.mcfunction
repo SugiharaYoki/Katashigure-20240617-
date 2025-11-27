@@ -1,7 +1,7 @@
 execute as @s run scoreboard players add @s rng1 1
 $execute as @s[scores={rng1=2}] run summon minecraft:item_display $(pos) {item:{id:"ender_pearl"},billboard:center,transformation:{scale:[0.3f,0.3f,0.3f]},brightness:{sky:15,block:15}}
 execute as @s[scores={rng1=5..6}] run scoreboard players set @s rng1 5
-$execute as @s[scores={rng1=2..6}] positioned $(pos) positioned ~ ~-1.2 ~ if entity @a[distance=0..4,tag=azrPlayer] run scoreboard players set @s rng1 7
+$execute as @s[scores={rng1=2..6}] positioned $(pos) if entity @a[distance=0..4,tag=azrPlayer] run scoreboard players set @s rng1 7
 $execute as @s[scores={rng1=7}] positioned $(pos) run kill @n[type=item_display,distance=..5]
 $execute as @s[scores={rng1=7}] as @a[tag=azrShowDialog] at @s run playsound garden1.area_title master @s $(pos) 100 1.5
 $execute as @s[scores={rng1=7}] run summon minecraft:item_display $(pos) {item:{id:"ender_eye"},billboard:center,transformation:{scale:[0.3f,0.3f,0.3f]},brightness:{sky:15,block:15}}
