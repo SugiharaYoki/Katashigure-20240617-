@@ -37,6 +37,12 @@ execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79943 45 204 run function skyblock:azr/assets/mobs_new/skeleton_melee
 execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79943 45 204 run function skyblock:azr/assets/mobs_new/skeleton_melee
 
+  #跳跳乐
+execute positioned -79849 30 201 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79943 45 204 run function skyblock:azr/assets/mobs_new/skeleton_sword
+execute positioned -79849 30 201 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79943 45 204 run function skyblock:azr/assets/mobs_new/skeleton_sword
+execute positioned -79849 30 201 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79943 45 204 run function skyblock:azr/assets/mobs_new/skeleton_sword
+execute positioned -79849 30 201 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79943 45 204 run function skyblock:azr/assets/mobs_new/skeleton_sword
+
 
 execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:undead_fire}
 
