@@ -70,6 +70,23 @@ execute positioned -79799 43 190 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79799 43 190 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=58}] positioned -79842 43 197 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute positioned -79799 43 190 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=58}] positioned -79842 43 197 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_pillager","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
+#跳跳乐前可逃跑车轮战
+execute positioned -79819 40 79 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79819,y=40,z=79,dx=10,dy=5,dz=10,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79819 40 79 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
+execute positioned -79819 40 79 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:undead_baby}
+execute positioned -79819 40 79 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] as @a[tag=azrPlayer] at @s positioned -79800 40 81 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_baby","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79819 40 79 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=4}] as @a[tag=azrPlayer] at @s positioned -79800 40 88 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_baby","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79819 40 79 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=20}] as @a[tag=azrPlayer] at @s positioned -79819 40 87 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_baby","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79819 40 79 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=36}] as @a[tag=azrPlayer] at @s positioned -79809 40 87 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_baby","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79819 40 79 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52}] as @a[tag=azrPlayer] at @s positioned -79819 40 81 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_baby","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79819 40 79 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=70}] as @a[tag=azrPlayer] at @s positioned -79804 40 81 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_baby","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+
+
+
+
+
+
 
 
 
