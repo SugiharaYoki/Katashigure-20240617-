@@ -301,7 +301,7 @@ fill -79896 42 88 -79898 38 88 minecraft:purple_stained_glass
 
 #通往vestige
 fill -79877 41 82 -79875 38 82 minecraft:purple_stained_glass
-setblock -79878 39 72 minecraft:quartz_slab[type=top]
+#setblock -79878 39 72 minecraft:quartz_slab[type=top]
 
 #entertain
   #十字结界
@@ -407,7 +407,7 @@ setblock -79897 38 57 minecraft:potted_flowering_azalea_bush
 setblock -79897 38 55 minecraft:potted_flowering_azalea_bush
 setblock -79897 38 53 minecraft:potted_flowering_azalea_bush
 setblock -79897 38 51 minecraft:potted_flowering_azalea_bush
-setblock -79888 39 67 minecraft:birch_button[facing=west]
+setblock -79888 39 67 minecraft:air
 function skyblock:azr/lifecycle/endgame/reset_map_boss_main_marinus
 
 #stage8-boss2道中
