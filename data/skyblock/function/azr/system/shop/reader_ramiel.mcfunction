@@ -127,6 +127,7 @@ execute if entity @s[tag=!AZS_BoS25] run data modify entity @n[tag=AzrRamielExSt
 execute if entity @s[tag=!AZS_BoS26] run data modify entity @n[tag=AzrRamielExStage_displaymarkerz] CustomName set value '" ？ "'
 execute if entity @s[scores={Azr_skillPoints=..4}] run data modify entity @n[tag=AzrRamielExStage_displaymarker1] CustomName set value '" ？ "'
 execute if entity @s[scores={Azr_skillPoints=..8}] run data modify entity @n[tag=AzrRamielExStage_displaymarker2] CustomName set value '" ？ "'
+execute if entity @s[tag=!AZS_BoSB04] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value '" ？ "'
 execute if entity @s[tag=!AZS_BoSB13] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value '" ？ "'
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkera] CustomName set value '" √ "'
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerb] CustomName set value '" √ "'

@@ -151,6 +151,7 @@ bossbar remove azr:progress_bar_special_0
 bossbar remove azr:boss_hp_bar
 bossbar remove azr:boss_hp_bar_mossboss
 bossbar remove azr:boss_hp_bar_diesel
+bossbar remove azr:boss_hp_bar_assassin
 bossbar remove azr:boss_hp_bar_0
 #清场
 kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1000]
