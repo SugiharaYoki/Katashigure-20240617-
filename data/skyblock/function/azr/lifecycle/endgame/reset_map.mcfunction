@@ -301,7 +301,7 @@ fill -79896 42 88 -79898 38 88 minecraft:purple_stained_glass
 
 #通往vestige
 fill -79877 41 82 -79875 38 82 minecraft:purple_stained_glass
-
+setblock -79878 39 72 minecraft:quartz_slab[type=top]
 
 #entertain
   #十字结界
