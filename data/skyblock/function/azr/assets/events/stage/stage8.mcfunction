@@ -71,8 +71,8 @@ execute if score stage_main_thread AzrTimerStack matches 18..20 unless entity @a
 
 
 
-execute if score stage_main_thread AzrTimerStack matches 103..300 positioned -79890 38 51 if entity @n[tag=AzrielNPC_marinus,scores={Health=100..}] run scoreboard players set stage_main_thread AzrTimerStack 299
-execute if score stage_main_thread AzrTimerStack matches 103..299 positioned -79890 38 51 if entity @n[tag=AzrielNPC_marinus,scores={Health=..99}] run scoreboard players set stage_main_thread AzrTimerStack 300
+execute if score stage_main_thread AzrTimerStack matches 103..299 positioned -79890 38 51 if entity @n[tag=AzrielNPC_marinus,scores={Health=101..}] run scoreboard players set stage_main_thread AzrTimerStack 297
+execute if score stage_main_thread AzrTimerStack matches 103..299 positioned -79890 38 51 if entity @n[tag=AzrielNPC_marinus,scores={Health=..100}] run scoreboard players set stage_main_thread AzrTimerStack 300
 
 execute if score stage_main_thread AzrTimerStack matches 301 as @n[tag=AzrielNPC_marinus] at @s run playsound minecraft:entity.wind_charge.throw hostile @a ~ ~ ~ 1 0.5
 execute if score stage_main_thread AzrTimerStack matches 301 at @n[tag=AzrielNPC_marinus] run particle gust ~ ~0.1 ~ 0 3 0 0 5
@@ -87,6 +87,8 @@ execute if score stage_main_thread AzrTimerStack matches 307..381 run effect giv
 execute if score stage_main_thread AzrTimerStack matches 307 run fill -79891 41 45 -79889 38 45 air destroy
 execute if score stage_main_thread AzrTimerStack matches 307 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.0
 execute if score stage_main_thread AzrTimerStack matches 307 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000 1.0
+
+execute if score stage_main_thread AzrTimerStack matches 308.. if block -79891 41 45 purple_stained_glass run scoreboard players set stage_main_thread AzrTimerStack 301
 
 execute if score stage_main_thread AzrTimerStack matches 320..321 as @n[tag=AzrielNPC_marinus,scores={Health=80..}] run scoreboard players set stage_main_thread AzrTimerStack 320
 execute if score stage_main_thread AzrTimerStack matches 322 as @n[tag=AzrielNPC_marinus] at @s positioned 0.0 0 0.0 rotated ~ 0 run summon marker ~ ~0.2 ~-1.8 {Tags:["AzrielMob_marinus_move_dash_marker"]}
