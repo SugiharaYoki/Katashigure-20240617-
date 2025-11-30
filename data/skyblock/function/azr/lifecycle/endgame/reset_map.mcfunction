@@ -256,7 +256,12 @@ fill -79936 36 197 -79936 36 198 air
   #供热迷宫
 setblock -79963 29 179 chest[facing=east]
 item replace block -79963 29 179 container.12 with minecraft:emerald 3
-item replace block -79963 29 179 container.12 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
+item replace block -79963 29 179 container.14 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
+  #下砸隐藏
+setblock -79957 35 184 chest[facing=south]
+item replace block -79957 35 184 container.12 with minecraft:resin_clump 2
+item replace block -79957 35 184 container.14 with minecraft:emerald 3
+
 
 #stage Kinetic
 setblock -79965 31 167 minecraft:birch_button[facing=south,face=floor]
