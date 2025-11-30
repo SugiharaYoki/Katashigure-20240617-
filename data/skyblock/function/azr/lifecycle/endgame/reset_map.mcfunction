@@ -412,6 +412,14 @@ setblock -79870 44 120 minecraft:potted_flowering_azalea_bush
 setblock -79870 44 124 minecraft:potted_flowering_azalea_bush
 setblock -79863 44 113 minecraft:potted_azalea_bush
 
+#双相礼堂
+setblock -79721 35 70 chest[facing=south]
+item replace block -79721 35 70 container.11 with emerald 1
+item replace block -79721 35 70 container.13 with resin_clump 1
+item replace block -79721 35 70 container.15 with emerald 1
+
+
+
 #stage8
 setblock -79897 38 61 minecraft:potted_flowering_azalea_bush
 setblock -79897 38 59 minecraft:potted_flowering_azalea_bush
@@ -427,6 +435,11 @@ setblock -79902 39 33 minecraft:potted_lily_of_the_valley
 setblock -79897 39 23 minecraft:potted_lily_of_the_valley
 setblock -79897 39 33 minecraft:potted_lily_of_the_valley
 setblock -79902 39 23 minecraft:potted_lily_of_the_valley
+
+
+
+
+
 
 #boss2~stage9道中 水下小钥匙
 item replace block -79939 35 -76 container.11 with minecraft:dried_kelp 2
