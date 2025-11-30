@@ -12,7 +12,8 @@ execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79929,y=
 
 execute unless score @s AzrPlayer_CurrentArea matches 5 if entity @s[x=-79923,y=33,z=33,dx=4,dy=3,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:5,title:"逾 怜 藓 路",color_code:"#035e01"}
-
+execute unless score @s AzrPlayer_CurrentArea matches 5 if entity @s[x=-79943,y=27,z=13,dx=5,dy=3,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:5,title:"逾 怜 藓 路",color_code:"#035e01"}
 
 execute unless score @s AzrPlayer_CurrentArea matches 2 if entity @s[x=-79934,y=18,z=132,dx=20,dy=40,dz=22] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:2,title:"采 光 礼 堂",color_code:"#9ef4ff"}

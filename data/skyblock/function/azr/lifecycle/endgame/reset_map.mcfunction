@@ -108,6 +108,10 @@ setblock -79910 43 46 chest[facing=north]
 item replace block -79910 43 46 container.12 with minecraft:emerald 3
 item replace block -79910 43 46 container.14 with minecraft:coal 1
 
+#下砸隐藏通路
+setblock -79942 33 11 minecraft:honey_block
+setblock -79939 28 17 air
+setblock -79939 28 17 lever[facing=west]
 
 
 #Stage3 beta
