@@ -264,6 +264,7 @@ item replace block -79957 35 184 container.14 with minecraft:emerald 3
 
 
 #stage Kinetic
+setblock -79952 44 185 minecraft:honey_block
 setblock -79965 31 167 minecraft:birch_button[facing=south,face=floor]
 setblock -79967 31 164 lever[face=floor,facing=east]
 fill -79962 30 159 -79963 30 165 minecraft:air replace fire
