@@ -89,6 +89,10 @@ execute positioned -79775 40 83 as @n[tag=AzrielMarker_encounter,distance=0..0.5
 execute positioned -79775 40 83 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] as @a[tag=azrPlayer] at @s positioned -79761 40 85 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_spider_giant","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute positioned -79775 40 83 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=6}] as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:skeleton_sentinel}
 execute positioned -79775 40 83 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=6}] as @a[tag=azrPlayer] at @s positioned -79753 40 85 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sentinel","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79775 40 83 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=6}] as @a[tag=azrPlayer] at @s positioned -79740 35 88 run function skyblock:azr/assets/mobs_new/skeleton_melee
+execute positioned -79775 40 83 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=6}] as @a[tag=azrPlayer] at @s positioned -79740 35 88 run function skyblock:azr/assets/mobs_new/skeleton_melee
+execute positioned -79775 40 83 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=6}] as @a[tag=azrPlayer] at @s positioned -79740 35 83 run function skyblock:azr/assets/mobs_new/skeleton_sword
+execute positioned -79775 40 83 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=6}] as @a[tag=azrPlayer] at @s positioned -79740 35 83 run function skyblock:azr/assets/mobs_new/skeleton_sword
 
 
 #灵魂碎片
