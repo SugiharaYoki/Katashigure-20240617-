@@ -112,7 +112,9 @@ item replace block -79910 43 46 container.14 with minecraft:coal 1
 setblock -79942 33 11 minecraft:honey_block
 setblock -79939 28 17 air
 setblock -79939 28 17 lever[facing=west]
-
+setblock -79948 25 22 chest[facing=east]
+item replace block -79948 25 22 container.12 with skull_banner_pattern[custom_name='{"text": "“生与死的力量全都过剩。”", "color": "dark_purple","italic":false}', lore=['{"text": "这些苔藓是被一种混沌力量所影响。","color":"white", "italic": false}','{"text": "我在图书馆查阅过，那是被神庭控制的亡灵生物死亡时逸散的能量。","color":"white", "italic": false}','{"text": "但从前这个阈值都被控制在一个安全的范畴。","color":"white", "italic": false}','{"text": "为何偏偏是在最近过量出现？","color":"white", "italic": false}']] 1
+item replace block -79948 25 22 container.14 with coal 2
 
 #Stage3 beta
 fill -79957 42 13 -79955 38 13 minecraft:purple_stained_glass{name: "to Stage4 beta"}
