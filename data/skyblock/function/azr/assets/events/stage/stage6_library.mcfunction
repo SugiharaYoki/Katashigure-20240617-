@@ -87,6 +87,7 @@ execute positioned -79775 40 83 unless entity @n[tag=AzrielMarker_encounter,dist
 execute positioned -79775 40 83 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
 execute positioned -79775 40 83 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] as @a[tag=azrPlayer] at @s positioned -79765 40 86 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_spider_giant","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute positioned -79775 40 83 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] as @a[tag=azrPlayer] at @s positioned -79761 40 85 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_spider_giant","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79775 40 83 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=6}] as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:skeleton_sentinel}
 execute positioned -79775 40 83 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=6}] as @a[tag=azrPlayer] at @s positioned -79753 40 85 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sentinel","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
