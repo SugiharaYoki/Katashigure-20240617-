@@ -101,6 +101,10 @@ execute positioned -79743 39 85 as @n[tag=AzrielMarker_encounter,distance=0..0.5
 
 
 
+#boss 刺客
+execute positioned -79820 43 136 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=0..6,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+
+
 
 
 #随机野怪
