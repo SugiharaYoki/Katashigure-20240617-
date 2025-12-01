@@ -418,14 +418,6 @@ item replace block -79721 35 70 container.11 with emerald 1
 item replace block -79721 35 70 container.13 with resin_clump 1
 item replace block -79721 35 70 container.15 with emerald 1
 
-#玻璃展示厅
-setblock -79834 44 130 minecraft:potted_azalea_bush
-setblock -79842 43 131 minecraft:potted_cactus
-setblock -79841 43 141 minecraft:potted_jungle_sapling
-setblock -79837 44 142 minecraft:potted_allium
-setblock -79813 47 139 minecraft:potted_crimson_fungus
-setblock -79813 47 139 minecraft:potted_crimson_roots
-setblock -79813 47 139 minecraft:potted_warped_fungus
 #刺客boss
 function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_assassin
 
