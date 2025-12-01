@@ -157,9 +157,6 @@ execute if score stage_main_thread AzrTimerStack matches 3367 run tellraw @a[tag
 execute if score stage_main_thread AzrTimerStack matches 3367 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage10_event1
 
 
-execute if score stage_main_thread AzrTimerStack matches 3364 run clone -79893 47 -48 -79893 47 -48 -79885 40 -139 replace move
-execute if score stage_main_thread AzrTimerStack matches 3364 run particle minecraft:end_rod -79893 48 -48 0.6 0.6 0.6 0.0 13
-execute if score stage_main_thread AzrTimerStack matches 3364 run particle minecraft:end_rod -79885 41 -139 0.6 0.6 0.6 0.0 13
 
 execute if score stage_main_thread AzrTimerStack matches 3394 run particle minecraft:portal -79906 41 -139 0.5 0.6 0.5 0.5 40
 execute if score stage_main_thread AzrTimerStack matches 3394 as @e[tag=AzrielBossFA] at @s run tp @s -79906 40 -144 facing entity @r[tag=azrPlayer]

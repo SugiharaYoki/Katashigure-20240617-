@@ -51,10 +51,6 @@ execute if score stage_main_thread AzrTimerStack matches 121 as @e[tag=AzrielBos
 execute if score stage_main_thread AzrTimerStack matches 128 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage15_event1
 
 
-execute if score stage_main_thread AzrTimerStack matches 133 run clone -79772 26 -386 -79772 26 -386 -79538 24 -409 replace move
-execute if score stage_main_thread AzrTimerStack matches 133 run particle minecraft:end_rod -79772 26 -386 0.6 0.6 0.6 0.0 13
-execute if score stage_main_thread AzrTimerStack matches 133 run particle minecraft:end_rod -79538 24 -409 0.6 0.6 0.6 0.0 13
-execute if score stage_main_thread AzrTimerStack matches 133 run setblock -79772 26 -386 air
 
 execute if score stage_main_thread AzrTimerStack matches 133 run scoreboard players set stage Azr_system 60
 execute if score stage_main_thread AzrTimerStack matches 133 run scoreboard players set wave Azr_system 45

@@ -70,9 +70,6 @@ execute if score stage_main_thread AzrTimerStack matches 297 positioned -79931 3
 execute if score stage_main_thread AzrTimerStack matches 298..299 positioned -79931 38 14 if entity @n[distance=..20,tag=AzrielMob_elite_candle_angel] run scoreboard players set stage_main_thread AzrTimerStack 298
 
 execute if score stage_main_thread AzrTimerStack matches 310 run fill -79931 38 22 -79931 40 22 air destroy
-execute if score stage_main_thread AzrTimerStack matches 310 run clone -79927 38 0 -79927 38 0 -79934 38 18 replace move
-execute if score stage_main_thread AzrTimerStack matches 310 run particle minecraft:end_rod -79927 39 0 0.6 0.6 0.6 0.0 13
-execute if score stage_main_thread AzrTimerStack matches 310 run particle minecraft:end_rod -79934 39 18 0.6 0.6 0.6 0.0 13
 execute if score stage_main_thread AzrTimerStack matches 310 run scoreboard players set wave Azr_system 3
 execute if score stage_main_thread AzrTimerStack matches 310 run scoreboard players set stage Azr_system 5
 execute if score stage_main_thread AzrTimerStack matches 310 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..1}] Azr_skillPoints 2

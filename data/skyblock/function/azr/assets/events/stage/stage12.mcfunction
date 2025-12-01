@@ -156,10 +156,6 @@ execute if score stage_main_thread AzrTimerStack matches 100 run setblock -79748
 execute if score stage_main_thread AzrTimerStack matches 100 run setblock -79754 55 -122 soul_lantern
 execute if score stage_main_thread AzrTimerStack matches 100 run setblock -79742 55 -131 soul_lantern
 
-execute if score stage_main_thread AzrTimerStack matches 100 run clone -79907 46 -111 -79907 46 -111 -79844 48 -127 replace move
-execute if score stage_main_thread AzrTimerStack matches 100 run particle minecraft:end_rod -79907 47 -111 0.6 0.6 0.6 0.0 13
-execute if score stage_main_thread AzrTimerStack matches 100 run particle minecraft:end_rod -79844 49 -127 0.6 0.6 0.6 0.0 13
-
 #part 3
 execute if score stage_main_thread AzrTimerStack matches 8005 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage12(part3)\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 8073"}]
 execute if score stage_main_thread AzrTimerStack matches 8005 as @p[tag=azrPlayer,x=-79846,y=48,z=-129,distance=0..9] at @s run tp @a[tag=azrPlayer,distance=15..] ~ ~ ~

@@ -111,9 +111,6 @@ execute if score stage_main_thread AzrTimerStack matches 354 run scoreboard play
 execute if score stage_main_thread AzrTimerStack matches 354 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:undead_shadow}
 execute if score stage_main_thread AzrTimerStack matches 354 positioned -79906 38 135 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_shadow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
-execute if score stage_main_thread AzrTimerStack matches 354 run clone -79931 38 117 -79931 38 117 -79899 38 142 replace move
-execute if score stage_main_thread AzrTimerStack matches 354 run particle minecraft:end_rod -79900 39 142 0.6 0.6 0.6 0.0 13
-execute if score stage_main_thread AzrTimerStack matches 354 run particle minecraft:end_rod -79931 39 117 0.6 0.6 0.6 0.0 13
 
 execute if score stage_main_thread AzrTimerStack matches 354 run tp @n[tag=AzrielNPC_bird] -79931 57 137
 execute if score stage_main_thread AzrTimerStack matches 354 positioned -79888 45 109 run function skyblock:azr/assets/mobs_new/skeleton_sword

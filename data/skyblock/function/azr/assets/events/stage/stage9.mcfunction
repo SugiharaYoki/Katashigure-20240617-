@@ -92,9 +92,6 @@ execute if score stage_main_thread AzrTimerStack matches 90 run title @a[tag=azr
 execute if score stage_main_thread AzrTimerStack matches 90 run scoreboard players set wave Azr_system 24
 execute if score stage_main_thread AzrTimerStack matches 90 run scoreboard players set stage Azr_system 27
 
-execute if score stage_main_thread AzrTimerStack matches 90 run clone -79928 38 -57 -79928 38 -57 -79893 47 -48 replace move
-execute if score stage_main_thread AzrTimerStack matches 90 run particle minecraft:end_rod -79928 39 -57 0.6 0.6 0.6 0.0 13
-execute if score stage_main_thread AzrTimerStack matches 90 run particle minecraft:end_rod -79893 48 -48 0.6 0.6 0.6 0.0 13
 execute if score stage_main_thread AzrTimerStack matches 90 run fill -79906 42 -64 -79906 40 -64 minecraft:air destroy
 
 #function skyblock:tool_rng

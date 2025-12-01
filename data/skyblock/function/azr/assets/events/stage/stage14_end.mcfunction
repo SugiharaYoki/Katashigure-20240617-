@@ -5,10 +5,6 @@ execute as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.illusioner
 tp @e[tag=AzrielBossFA,limit=1] -79771 23 -383 facing -79771 23 -382
 particle minecraft:reverse_portal -79771 23 -383 0.5 0.6 0.5 0.5 40
 particle minecraft:reverse_portal -79788 31 363 0.5 0.6 0.5 0.5 40
-clone -79786 31 -359 -79786 31 -359 -79772 26 -386 replace move
-particle minecraft:end_rod -79786 31 -359 0.6 0.6 0.6 0.0 13
-particle minecraft:end_rod -79772 26 -386 0.6 0.6 0.6 0.0 13
-setblock -79786 31 -359 air
 
 tp @e[type=parrot,tag=AzrielFriendly,tag=AzrielDecMob,limit=1] 0 -10000 0
 

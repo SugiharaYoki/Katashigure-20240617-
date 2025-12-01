@@ -67,7 +67,7 @@ setblock -79885 39 39 minecraft:birch_button[face=wall,facing=west]{name: "Befor
 #Stage1
 setblock -79949 34 15 chest[facing=north]
 item replace block -79949 34 15 container.13 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
-setblock -79927 38 0 minecraft:white_shulker_box
+#setblock -79927 38 0 minecraft:white_shulker_box
 setblock -79931 37 3 minecraft:quartz_pillar{name: "Stage1 mob spawnpoint"}
 setblock -79931 37 -9 minecraft:quartz_pillar{name: "Stage1 mob spawnpoint"}
 fill -79928 40 1 -79928 38 -1 minecraft:purple_stained_glass{name: "Stage1 whitebox"}

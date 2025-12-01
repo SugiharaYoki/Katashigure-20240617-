@@ -108,10 +108,6 @@ execute if score stage_main_thread AzrTimerStack matches 704 if score playerCoun
 execute if score stage_main_thread AzrTimerStack matches 704 if score playerCount Azr_system matches 5.. run item replace block -79464 52 -338 container.24 with minecraft:music_disc_cat[minecraft:item_model="tipped_arrow",potion_contents={custom_color:-1},!minecraft:jukebox_playable,custom_name='{"text":"机械箭","italic": false}',custom_data={crossbow_arrow:1b},custom_model_data={floats:[100002]},max_stack_size=64] 25
 execute if score stage_main_thread AzrTimerStack matches 704 if score playerCount Azr_system matches 5.. run item replace block -79464 52 -338 container.26 with experience_bottle 12
 execute if score stage_main_thread AzrTimerStack matches 704 as @a[tag=azrPlayer] at @s run spawnpoint @s -79466 52 -338
-execute if score stage_main_thread AzrTimerStack matches 704 run clone -79538 24 -409 -79538 24 -409 -79459 53 -338 replace move
-execute if score stage_main_thread AzrTimerStack matches 704 run particle minecraft:end_rod -79538 24 -409 0.6 0.6 0.6 0.0 13
-execute if score stage_main_thread AzrTimerStack matches 704 run particle minecraft:end_rod -79459 53 -338 0.6 0.6 0.6 0.0 13
-execute if score stage_main_thread AzrTimerStack matches 704 run setblock -79538 24 -409 air
 
 execute if score stage_main_thread AzrTimerStack matches 704 run scoreboard players set wave Azr_system 47
 execute if score stage_main_thread AzrTimerStack matches 709..1700 run scoreboard players set stage_main_thread AzrTimerStack 1600

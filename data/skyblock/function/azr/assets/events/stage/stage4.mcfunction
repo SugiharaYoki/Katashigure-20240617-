@@ -134,10 +134,6 @@ execute if score stage_main_thread AzrTimerStack matches 336 run scoreboard play
 execute if score stage_main_thread AzrTimerStack matches 336 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..3}] Azr_skillPoints 4
 
 
-execute if score stage_main_thread AzrTimerStack matches 336 run clone -79934 38 18 -79934 38 18 -79931 38 42 replace move
-
-execute if score stage_main_thread AzrTimerStack matches 336 run particle minecraft:end_rod -79934 39 18 0.6 0.6 0.6 0.0 13
-execute if score stage_main_thread AzrTimerStack matches 336 run particle minecraft:end_rod -79931 39 42 0.6 0.6 0.6 0.0 13
 
 
 

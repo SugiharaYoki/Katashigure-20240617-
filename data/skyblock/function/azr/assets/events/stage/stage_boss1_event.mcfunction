@@ -171,8 +171,8 @@ execute if score stage_main_thread AzrTimerStack matches 2001 run kill @e[tag=Az
 #effect & sound
 execute if score stage_main_thread AzrTimerStack matches 2001 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 2001 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 2011 run particle minecraft:end_rod -79931 39 42 0.6 0.6 0.6 0.0 13
-execute if score stage_main_thread AzrTimerStack matches 2011 run particle minecraft:end_rod -79931 39 76 0.6 0.6 0.6 0.0 131
+#execute if score stage_main_thread AzrTimerStack matches 2011 run particle minecraft:end_rod -79931 39 42 0.6 0.6 0.6 0.0 13
+#execute if score stage_main_thread AzrTimerStack matches 2011 run particle minecraft:end_rod -79931 39 76 0.6 0.6 0.6 0.0 131
 #finalize map
 execute if score stage_main_thread AzrTimerStack matches 2011 run fill -79932 38 54 -79930 41 53 air destroy
 execute if score stage_main_thread AzrTimerStack matches 2011 run fill -79930 42 104 -79932 38 104 air destroy

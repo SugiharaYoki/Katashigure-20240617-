@@ -209,10 +209,6 @@ execute if score stage_main_thread AzrTimerStack matches 1199 run summon vindica
 execute if score stage_main_thread AzrTimerStack matches 1199 run summon vindicator -79919.3 48 -154 {Johnny:1b,PersistenceRequired:1b,Tags:["AzrielFriendly"],DeathLootTable:"skyblock:azriel_vindicator_tier1",Health:2.5f,CustomName:'"受伤的圣殿巡逻兵"',Invulnerable:1b,attributes:[{id:"max_health",base:12.5d},{id:"attack_damage",base:4.0d},{id:"movement_speed",base:0.13d},{id:"follow_range",base:5.5d}]}
 execute if score stage_main_thread AzrTimerStack matches 1199 run summon vindicator -79920 48 -142 {Johnny:1b,PersistenceRequired:1b,Tags:["AzrielFriendly"],DeathLootTable:"skyblock:azriel_vindicator_tier1",Health:2.5f,CustomName:'"受伤的圣殿巡逻兵"',Invulnerable:1b,NoAI:1b,attributes:[{id:"max_health",base:12.5d},{id:"attack_damage",base:4.0d},{id:"movement_speed",base:0.03d},{id:"follow_range",base:5.5d}]}
 
-execute if score stage_main_thread AzrTimerStack matches 1200 run setblock -79907 46 -111 white_shulker_box
-execute if score stage_main_thread AzrTimerStack matches 1200 run clone -79885 40 -139 -79885 40 -139 -79907 46 -111 masked move
-execute if score stage_main_thread AzrTimerStack matches 1200 run particle minecraft:end_rod -79885 41 -139 0.6 0.6 0.6 0.0 13
-execute if score stage_main_thread AzrTimerStack matches 1200 run particle minecraft:end_rod -79907 47 -111 0.6 0.6 0.6 0.0 13
 execute if score stage_main_thread AzrTimerStack matches 1200 run scoreboard players set wave Azr_system 30
 execute if score stage_main_thread AzrTimerStack matches 1200 run fill -79928 50 -123 -79927 49 -123 blast_furnace[facing=south]
 execute if score stage_main_thread AzrTimerStack matches 1200 run setblock -79898 48 -135 chest[facing=south]
