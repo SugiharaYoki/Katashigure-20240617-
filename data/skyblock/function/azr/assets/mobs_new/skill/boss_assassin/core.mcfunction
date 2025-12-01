@@ -10,7 +10,7 @@ execute if score @s rng9 matches 2860.. run scoreboard players set @s rng9 0
 
 #EVENT
 
-execute if score @s AzrEntityTimer matches 1 run fill -79997 25 201 -79997 30 199 minecraft:red_stained_glass replace air
+execute if score @s AzrEntityTimer matches 1 run fill -79829 46 135 -79829 42 137 minecraft:red_stained_glass replace air
 
 
 execute if score @s AzrEntityTimer matches 2 positioned -80011 25 200 run function skyblock:azr/assets/mobs_new/skill/boss_assassin/summon
@@ -58,7 +58,7 @@ execute if score @s AzrEntityTimer matches 2011 run title @a[tag=azrShowDialog] 
 execute if score @s AzrEntityTimer matches 2011 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/sub_boss_assassin
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/back_dodge
 execute if score @s AzrEntityTimer matches 2011 run bossbar remove azr:boss_hp_bar_assassin
-execute if score @s AzrEntityTimer matches 2011 run fill -79997 25 201 -79997 30 199 air replace minecraft:red_stained_glass
+execute if score @s AzrEntityTimer matches 2011 run fill -79829 46 135 -79829 42 137 air replace minecraft:red_stained_glass
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB01
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s emerald 20
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1

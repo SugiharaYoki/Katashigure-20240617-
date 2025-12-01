@@ -426,6 +426,11 @@ setblock -79837 44 142 minecraft:potted_allium
 setblock -79813 47 139 minecraft:potted_crimson_fungus
 setblock -79813 47 139 minecraft:potted_crimson_roots
 setblock -79813 47 139 minecraft:potted_warped_fungus
+#刺客boss
+function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_assassin
+
+
+
 
 #stage8
 setblock -79897 38 61 minecraft:potted_flowering_azalea_bush
