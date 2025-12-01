@@ -24,7 +24,6 @@ summon bat -79764 45 -227 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMo
 summon bat -79764 45 -227 {PersistenceRequired:1b,Tags:["AzrielMob","AzrielDecMob"]}
 fill -79774 39 -345 -79772 41 -345 minecraft:pointed_dripstone[vertical_direction=up]
 
-setblock -79907 46 -111 white_shulker_box
 fill -79728 46 -129 -79728 54 -124 barrier
 fill -79774 39 -345 -79772 41 -345 air destroy
 setblock -79799 28 -284 air
@@ -117,7 +116,6 @@ summon parrot -79767 25.5 -465 {PersistenceRequired:1b,Invulnerable:1b,Tags:["Az
 
 function skyblock:azr/assets/events/stage/stage14_end
 
-setblock -79772 26 -386 white_shulker_box
 
 execute if score playerCount Azr_system matches 1 positioned -79772 26 -386 run function skyblock:azr/lifecycle/jump_to/data_modifier/ch4_chests/chest1
 execute if score playerCount Azr_system matches 2..3 positioned -79772 26 -386 run function skyblock:azr/lifecycle/jump_to/data_modifier/ch4_chests/chest2_3

@@ -176,8 +176,6 @@ execute if score stage_main_thread AzrTimerStack matches 2001 run playsound ambi
 #finalize map
 execute if score stage_main_thread AzrTimerStack matches 2011 run fill -79932 38 54 -79930 41 53 air destroy
 execute if score stage_main_thread AzrTimerStack matches 2011 run fill -79930 42 104 -79932 38 104 air destroy
-execute if score stage_main_thread AzrTimerStack matches 2011 run clone -79931 38 42 -79931 38 42 -79931 38 76 replace move
-execute if score stage_main_thread AzrTimerStack matches 2011 unless block -79931 38 76 white_shulker_box run setblock -79931 38 76 white_shulker_box
 #finalize stage
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set wave Azr_system 10
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set stage Azr_system 11

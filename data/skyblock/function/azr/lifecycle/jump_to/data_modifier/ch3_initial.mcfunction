@@ -1,6 +1,5 @@
 
 # ch3 initial
-    setblock -79928 38 -57 white_shulker_box
     fill -79927 38 -13 -79927 42 -16 minecraft:air destroy
     clone -79902 36 -41 -79898 43 -32 -79933 37 -27
     clone -79933 -44 -53 -79929 -33 -35 -79933 36 -53

@@ -685,8 +685,6 @@ execute if score stage_main_thread AzrTimerStack matches 3051..3053 positioned -
 
 execute if score stage_main_thread AzrTimerStack matches 4142 run scoreboard players set wave Azr_system 36
 execute if score stage_main_thread AzrTimerStack matches 4142 run title @a[tag=azrShowDialog] actionbar {"text":"Chapter Clear","color":"gold"}
-execute if score stage_main_thread AzrTimerStack matches 4142 run clone -79844 48 -127 -79844 48 -127 -79758 44 -187 replace move
-execute if score stage_main_thread AzrTimerStack matches 4142 unless block -79758 44 -187 white_shulker_box run setblock -79758 44 -187 white_shulker_box
 execute if score stage_main_thread AzrTimerStack matches 4142 as @a[tag=azrPlayer] at @s run scoreboard players add @s Temp_PersonAZS 60
 
 execute if score stage_main_thread AzrTimerStack matches 4144 if score playerCount Azr_system matches 1 run tp @a[tag=azrPlayer] -79759 47 -190 1 2

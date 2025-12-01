@@ -1,6 +1,4 @@
 # event18
-    # storage
-    setblock -79459 53 -338 white_shulker_box
 # boss4
     # floor
     execute if loaded -79555 32 -352 run say 1

@@ -439,8 +439,6 @@ execute as @e[tag=AzrielBossA,type=illusioner,limit=3] at @s run function skyblo
     execute if score tick_main_thread AzrTimerStack matches 6782 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 2
     execute if score tick_main_thread AzrTimerStack matches 6782 as @a[tag=azrPlayer,scores={Azr_skillPoints=..11}] at @s run give @s glistering_melon_slice 5
     #finalize map
-    execute if score tick_main_thread AzrTimerStack matches 6740 run clone -79879 38 4 -79879 38 4 -79928 38 -57 replace move
-    execute if score tick_main_thread AzrTimerStack matches 6740 unless block -79928 38 -57 white_shulker_box run setblock -79928 38 -57 white_shulker_box
     execute if score tick_main_thread AzrTimerStack matches 6760 run fill -79927 38 -13 -79927 42 -16 minecraft:air destroy
     execute if score tick_main_thread AzrTimerStack matches 6760 run clone -79902 36 -41 -79898 43 -32 -79933 37 -27
     execute if score tick_main_thread AzrTimerStack matches 6760 run clone -79933 -44 -53 -79929 -33 -35 -79933 36 -53

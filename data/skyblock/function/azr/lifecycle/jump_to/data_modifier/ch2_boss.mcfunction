@@ -12,8 +12,6 @@
 # stage 7
     # -> 8 door
     fill -79898 38 101 -79896 42 101 air
-    # storage
-    setblock -79899 38 142 white_shulker_box
 
 # stage 8
     # close door

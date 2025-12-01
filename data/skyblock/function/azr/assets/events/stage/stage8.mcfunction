@@ -160,6 +160,4 @@ execute if score stage_main_thread AzrTimerStack matches 500 run scoreboard play
 
 execute if score stage_main_thread AzrTimerStack matches 500 positioned -79900 43 34 run tp @n[tag=AzrielNPC_bird] ~ ~ ~
 
-execute if score stage_main_thread AzrTimerStack matches 499 run setblock -79879 38 4 white_shulker_box
-execute if score stage_main_thread AzrTimerStack matches 500 run clone -79899 38 142 -79899 38 142 -79879 38 4 replace move
 
