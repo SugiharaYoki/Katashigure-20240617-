@@ -15,7 +15,7 @@ execute if score @s AzrEntityTimer matches 1 run fill -79829 46 135 -79829 42 13
 
 
 execute if score @s AzrEntityTimer matches 2 positioned -79828 42 136 run function skyblock:azr/assets/mobs_new/skill/boss_assassin/summon
-execute if score @s AzrEntityTimer matches 2 positioned -79828 42 136 run effect give @n[tag=AzrielBossAssassin,type=zombie,distance=..50] weakness infinite 1 true
+execute if score @s AzrEntityTimer matches 2 positioned -79828 42 136 run effect give @n[tag=AzrielBossAssassin,type=zombie,distance=..50] weakness infinite 0 true
 
 execute if score @s AzrEntityTimer matches 61 positioned -79828 42 136 run bossbar add azr:boss_hp_bar_assassin "不可确认之刃 - 阴影处刑者"
 execute if score @s AzrEntityTimer matches 61 positioned -79828 42 136 run bossbar set azr:boss_hp_bar_assassin color red
