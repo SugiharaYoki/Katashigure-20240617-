@@ -417,6 +417,11 @@ setblock -79721 35 70 chest[facing=south]
 item replace block -79721 35 70 container.11 with emerald 1
 item replace block -79721 35 70 container.13 with resin_clump 1
 item replace block -79721 35 70 container.15 with emerald 1
+setblock -79714 40 87 chest[facing=north]
+item replace block -79714 40 87 container.11 with emerald 1
+item replace block -79714 40 87 container.13 with resin_clump 1
+item replace block -79714 40 87 container.15 with emerald 1
+
 
 #刺客boss
 function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_assassin
