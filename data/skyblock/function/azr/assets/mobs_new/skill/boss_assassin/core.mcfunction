@@ -19,7 +19,7 @@ execute if score @s AzrEntityTimer matches 2 positioned -79828 42 136 run effect
 
 execute if score @s AzrEntityTimer matches 61 positioned -79828 42 136 run bossbar add azr:boss_hp_bar_assassin "不可确认之刃 - 阴影处刑者"
 execute if score @s AzrEntityTimer matches 61 positioned -79828 42 136 run bossbar set azr:boss_hp_bar_assassin color red
-execute if score @s AzrEntityTimer matches 61 positioned -79828 42 136 run bossbar set azr:boss_hp_bar_assassin max 200
+execute if score @s AzrEntityTimer matches 61 positioned -79828 42 136 run bossbar set azr:boss_hp_bar_assassin max 240
 execute if score @s AzrEntityTimer matches 61 positioned -79828 42 136 run bossbar set azr:boss_hp_bar_assassin players @a[tag=azrPlayer]
 
 execute positioned -79828 42 136 as @n[tag=AzrielBossAssassin,type=zombie,distance=..50] store result score @s Health run data get entity @s Health
