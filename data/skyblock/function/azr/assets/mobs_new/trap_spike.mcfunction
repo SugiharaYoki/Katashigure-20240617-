@@ -1,7 +1,7 @@
 
 
 
-summon slime ~ ~ ~ {Tags:["AzrielMob","AzrielMob_trap_spike","AzrielMob_level_1"],DeathLootTable:"skyblock:null",attributes:[{id:"attack_damage",base:2.0},{id:"max_health",base:1.0},{id:"armor",base:1.0},{base:0.0d,id:"movement_speed"},{base:0.3d,id:"scale"}],Health:1.0f,NoAI:1b}
+summon slime ~ ~ ~ {Tags:["AzrielMob","AzrielMob_trap_spike","AzrielMob_level_1"],DeathLootTable:"skyblock:null",attributes:[{id:"attack_damage",base:2.0},{id:"max_health",base:1.0},{id:"armor",base:1.0},{base:0.0d,id:"movement_speed"},{base:0.8d,id:"scale"}],Health:1.0f,NoAI:1b,active_effects:[{id:invisibility,ambient:false,duration:-1}]}
 
 
 
