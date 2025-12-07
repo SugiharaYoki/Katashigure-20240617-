@@ -36,10 +36,11 @@ execute positioned -79828 42 136 store result bossbar azr:boss_hp_bar_assassin v
 
     execute as @n[tag=AzrielBossAssassin] at @s run scoreboard players add @s rng8 1
     execute as @n[tag=AzrielBossAssassin] at @s if score @s[scores={Health=200..}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..5
-    execute as @n[tag=AzrielBossAssassin] at @s if score @s[scores={Health=100..199}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..9
+    execute as @n[tag=AzrielBossAssassin] at @s if score @s[scores={Health=100..199}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..10
     execute as @n[tag=AzrielBossAssassin] at @s if score @s[scores={rng2=1}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss_assassin/move_spike
     execute as @n[tag=AzrielBossAssassin] at @s if score @s[scores={rng2=2..5}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss_assassin/move_continuous
     execute as @n[tag=AzrielBossAssassin] at @s if score @s[scores={rng2=6..9}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss_assassin/teleport_surround
+    execute as @n[tag=AzrielBossAssassin] at @s if score @s[scores={rng2=10}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss_assassin/move_spike
 
     execute as @n[tag=AzrielBossAssassin] at @s if score @s rng8 matches 183.. run scoreboard players set @s rng2 0
     execute as @n[tag=AzrielBossAssassin] at @s if score @s rng8 matches 183.. run scoreboard players set @s rng8 -1
