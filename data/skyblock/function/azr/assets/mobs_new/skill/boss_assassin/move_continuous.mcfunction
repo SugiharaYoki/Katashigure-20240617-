@@ -31,10 +31,10 @@ execute if score @s rng8 matches 33 run function skyblock:azr/assets/mobs_new/sk
 execute if score @s rng8 matches 55 run particle large_smoke ~ ~0.3 ~ 0.4 0.3 0.4 0.03 10
 execute if score @s rng8 matches 55 run function skyblock:azr/assets/mobs_new/trap_spike
 execute if score @s rng8 matches 55 store result score @s rng5 run random value 1..4
-execute if score @s[scores={rng5=1,Health=..40}] rng8 matches 55 facing entity @p[tag=azrPlayer] feet rotated ~ 0 positioned 0.0 0 0.0 run summon marker ^0.52 ^0.01 ^0.2 {Tags:["AzrielMob_assassin_move_marker"]}
-execute if score @s[scores={rng5=2,Health=..40}] rng8 matches 55 facing entity @p[tag=azrPlayer] feet rotated ~ 0 positioned 0.0 0 0.0 run summon marker ^0.6 ^0.01 ^0.3 {Tags:["AzrielMob_assassin_move_marker"]}
-execute if score @s[scores={rng5=3,Health=..40}] rng8 matches 55 facing entity @p[tag=azrPlayer] feet rotated ~ 0 positioned 0.0 0 0.0 run summon marker ^-0.52 ^0.01 ^0.2 {Tags:["AzrielMob_assassin_move_marker"]}
-execute if score @s[scores={rng5=4,Health=..40}] rng8 matches 55 facing entity @p[tag=azrPlayer] feet rotated ~ 0 positioned 0.0 0 0.0 run summon marker ^-0.6 ^0.01 ^0.3 {Tags:["AzrielMob_assassin_move_marker"]}
+execute if score @s[scores={rng5=1,Health=..40}] rng8 matches 55 facing entity @p[tag=azrPlayer] feet rotated ~ 0 positioned 0.0 0 0.0 run summon marker ^1.52 ^0.01 ^0.2 {Tags:["AzrielMob_assassin_move_marker"]}
+execute if score @s[scores={rng5=2,Health=..40}] rng8 matches 55 facing entity @p[tag=azrPlayer] feet rotated ~ 0 positioned 0.0 0 0.0 run summon marker ^1.6 ^0.01 ^0.3 {Tags:["AzrielMob_assassin_move_marker"]}
+execute if score @s[scores={rng5=3,Health=..40}] rng8 matches 55 facing entity @p[tag=azrPlayer] feet rotated ~ 0 positioned 0.0 0 0.0 run summon marker ^-1.52 ^0.01 ^0.2 {Tags:["AzrielMob_assassin_move_marker"]}
+execute if score @s[scores={rng5=4,Health=..40}] rng8 matches 55 facing entity @p[tag=azrPlayer] feet rotated ~ 0 positioned 0.0 0 0.0 run summon marker ^-1.6 ^0.01 ^0.3 {Tags:["AzrielMob_assassin_move_marker"]}
 execute if score @s[scores={Health=..40}] rng8 matches 55 facing entity @p[tag=azrPlayer] feet rotated ~ 0 run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_assassin_move_marker] Pos
 execute if score @s[scores={Health=..40}] rng8 matches 55 facing entity @p[tag=azrPlayer] feet rotated ~ 0 run kill @e[type=marker,tag=AzrielMob_assassin_move_marker]
 
