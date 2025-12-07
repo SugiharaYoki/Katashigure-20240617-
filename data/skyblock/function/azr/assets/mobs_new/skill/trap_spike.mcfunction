@@ -1,0 +1,1 @@
+execute unless entity @n[tag=AzrielMob_trap_spike,distance=..0.5,type=slime] run kill @s[tag=AzrielMob_trap_spike_display]
