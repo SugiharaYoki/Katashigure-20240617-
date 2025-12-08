@@ -208,6 +208,8 @@ setblock -79928 39 125 birch_button[facing=north,face=wall]
 setblock -79934 39 125 birch_button[facing=north,face=wall]
 setblock -79929 39 125 minecraft:potted_oak_sapling
 setblock -79933 39 125 minecraft:potted_dead_bush
+setblock -79929 38 125 minecraft:decorated_pot
+setblock -79933 38 125 minecraft:decorated_pot
   #屋顶摸不到的火把花
 fill -79937 56 149 -79941 56 149 minecraft:potted_torchflower
 
