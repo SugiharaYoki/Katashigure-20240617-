@@ -391,6 +391,7 @@ setblock -79858 39 74 minecraft:potted_flowering_azalea_bush
 setblock -79858 39 78 minecraft:potted_flowering_azalea_bush
 setblock -79844 36 74 minecraft:potted_flowering_azalea_bush
 setblock -79844 36 78 minecraft:potted_flowering_azalea_bush
+setblock -79873 39 92 birch_button[facing=east,face=floor]
 
   #小读书室
 setblock -79875 42 59 chest[facing=north]
