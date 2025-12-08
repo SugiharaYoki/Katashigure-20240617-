@@ -32,7 +32,6 @@ fill -79931 38 40 -79931 40 40 air destroy
 fill -79935 43 34 -79935 45 34 air destroy
 fill -79924 36 34 -79924 34 34 air destroy
 fill -79931 38 22 -79931 40 22 air destroy
-#clone -79927 38 0 -79927 38 0 -79934 38 18 replace move
 setblock -79931 43 42 air
 setblock -79930 43 41 air
 setblock -79932 43 41 air
