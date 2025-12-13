@@ -34,6 +34,7 @@ execute as @a[tag=!gaming,scores={MultiMenu=101782}] at @s run playsound minecra
 execute as @a[tag=!gaming,scores={MultiMenu=101783}] at @s run playsound minecraft:app2.neonlight music @s ~ ~ ~ 1.01
 execute as @a[tag=!gaming,scores={MultiMenu=101784}] at @s run playsound minecraft:app2.darkenergy music @s ~ ~ ~ 1.01
 execute as @a[tag=!gaming,scores={MultiMenu=101785}] at @s run playsound minecraft:app2.aegleseeker music @s ~ ~ ~ 1.01
+execute as @a[tag=!gaming,scores={MultiMenu=101786}] at @s run playsound minecraft:garden1.theguardians music @s ~ ~ ~ 1.01
 
 execute as @a[tag=!gaming,scores={MultiMenu=101787}] at @s run playsound minecraft:app2.fft music @s ~ ~ ~ 1.01
 execute as @a[tag=!gaming,scores={MultiMenu=101788}] at @s run playsound minecraft:app2.manifoldhypothesis music @s ~ ~ ~ 1.01

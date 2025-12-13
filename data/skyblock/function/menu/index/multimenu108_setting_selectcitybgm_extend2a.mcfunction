@@ -2,7 +2,7 @@ playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.4 0.4
 tellraw @s {"text":"「神界中庭的奏乐」- 亚兹列尔的中庭花园","color":"blue"}
 tellraw @s {"text":" "}
 tellraw @s [{"text":"  Lethal Dose by. Sky_Delta - 西庭外围：权之残影","color":"aqua"},{"text":"  点唱","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 101763"},"hoverEvent":{"action":"show_text","contents":{"text":"立即播放该曲","color":"white"}}}]
-tellraw @s [{"text":"  The Guardians by. Yooh - 采光礼堂：马林努斯","color":"aqua"},{"text":"  点唱","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 101763"},"hoverEvent":{"action":"show_text","contents":{"text":"立即播放该曲","color":"white"}}}]
+tellraw @s [{"text":"  The Guardians by. Yooh - 采光礼堂：马林努斯","color":"aqua"},{"text":"  点唱","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 101786"},"hoverEvent":{"action":"show_text","contents":{"text":"立即播放该曲","color":"white"}}}]
 tellraw @s [{"text":"  Grenade by. Sky_Delta - 采光礼堂：权之残影","color":"aqua"},{"text":"  点唱","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 101764"},"hoverEvent":{"action":"show_text","contents":{"text":"立即播放该曲","color":"white"}}}]
 tellraw @s [{"text":"  Caligula by. Sky_Delta - 失序牢房的至暗召唤","color":"aqua"},{"text":"  点唱","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 101762"},"hoverEvent":{"action":"show_text","contents":{"text":"立即播放该曲","color":"white"}}}]
 tellraw @s [{"text":"  Psyborg Cocoon by. Sky_Delta - 无罪囚牢：权之殊能","color":"aqua"},{"text":"  点唱","color":"green","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 101770"},"hoverEvent":{"action":"show_text","contents":{"text":"立即播放该曲","color":"white"}}}]
