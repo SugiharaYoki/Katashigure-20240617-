@@ -49,7 +49,7 @@ execute if score stage Azr_system matches 19 run scoreboard players set stage_ma
 #第八关 20
 execute if score stage Azr_system matches 20 run function skyblock:azr/assets/events/stage/stage8
 #第八关-BOSS2（EVENT3) 21-22
-#execute if score stage Azr_system matches 21..22 run function skyblock:azr/assets/events/stage/stage_event3
+execute if score stage Azr_system matches 21..22 run function skyblock:azr/assets/events/stage/stage_boss2_event
 #BOSS2 23-24
     # azr/main.mcfunction
 #BOSS2-第九关 25
