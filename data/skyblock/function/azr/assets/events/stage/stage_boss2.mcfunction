@@ -5,7 +5,7 @@
 
 scoreboard players add stage_boss_bgm AzrTimerStack 1
 execute if score stage_boss_bgm AzrTimerStack matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:grenade music @s ~ ~ ~ 0.65
-execute if score stage_boss_bgm AzrTimerStack matches 4000.. run scoreboard players set stage_boss_bgm AzrTimerStack 0
+execute if score stage_boss_bgm AzrTimerStack matches 4200.. run scoreboard players set stage_boss_bgm AzrTimerStack 0
 
 #AI
 
