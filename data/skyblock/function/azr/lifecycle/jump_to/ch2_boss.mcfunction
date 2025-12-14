@@ -15,7 +15,7 @@ setblock -79892 39 119 air
 fill -79892 51 -49 -79888 51 -42 structure_void replace minecraft:quartz_slab[type=top]
 fill -79934 45 -63 -79934 45 -61 minecraft:air
 execute positioned -79903 40 94 run function skyblock:azr/assets/mobs_new/unique/trader/stage7
-fill -79898 38 101 -79896 41 101 air destroy
+fill -79898 38 101 -79896 42 101 air destroy
 fill -79905 40 83 -79903 43 83 air destroy
 fill -79886 43 132 -79888 45 132 air destroy
 fill -79896 42 88 -79898 38 88 air destroy
