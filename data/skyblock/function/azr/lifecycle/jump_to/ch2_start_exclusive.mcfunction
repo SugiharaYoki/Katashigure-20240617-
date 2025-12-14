@@ -12,5 +12,5 @@ scoreboard players set @a[tag=azrPlayer] AzrJoinWave 10
 
 #execute as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/others/revival_star
 
-tp @a[tag=azrPlayer] -79931 34 28 facing -79931 34 29
+tp @a[tag=azrPlayer] -79931 33 28 facing -79931 33 29
 execute as @a[tag=azrPlayer] run function skyblock:azr/system/player/updatespawnpoint_initialize {x:-79931,y:34,z:28}

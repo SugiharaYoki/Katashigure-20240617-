@@ -16,5 +16,5 @@ scoreboard players set wave Azr_system 7
 scoreboard players set stage Azr_system 9
 
 
-tp @a[tag=azrPlayer] -79931 34 28 facing -79931 34 29
+tp @a[tag=azrPlayer] -79931 33 28 facing -79931 33 29
 execute as @a[tag=azrPlayer] run function skyblock:azr/system/player/updatespawnpoint_initialize {x:-79931,y:34,z:28}
