@@ -14,11 +14,11 @@ execute if score @s rng1 matches 11.. positioned ^ ^ ^2.2 run particle sweep_att
 execute if score @s rng1 matches 11.. positioned ^ ^ ^2.2 as @n[tag=AzrielMob,distance=0..1.5] at @s run tag @s add AzrielMob_amulet_skill_axevortex_target
 
 execute if score @s rng1 matches 11.. if entity @n[tag=AzrielMob_amulet_skill_axevortex_target] run scoreboard players set @s rng1 999
-execute if score @s rng1 matches 11.. if entity @s[tag=AzrielMob_level_1] as @n[tag=AzrielMob_amulet_skill_axevortex_target] run damage @s 5 generic
-execute if score @s rng1 matches 11.. if entity @s[tag=AzrielMob_level_2] as @n[tag=AzrielMob_amulet_skill_axevortex_target] run damage @s 6 generic
-execute if score @s rng1 matches 11.. if entity @s[tag=AzrielMob_level_3] as @n[tag=AzrielMob_amulet_skill_axevortex_target] run damage @s 7 generic
-execute if score @s rng1 matches 11.. if entity @s[tag=AzrielMob_level_4] as @n[tag=AzrielMob_amulet_skill_axevortex_target] run damage @s 8 generic
-execute if score @s rng1 matches 11.. if entity @s[tag=AzrielMob_level_5] as @n[tag=AzrielMob_amulet_skill_axevortex_target] run damage @s 9 generic
+execute if score @s rng1 matches 11.. if entity @s[tag=AzrielMob_level_1] as @n[tag=AzrielMob_amulet_skill_axevortex_target] run damage @s 5 player_attack
+execute if score @s rng1 matches 11.. if entity @s[tag=AzrielMob_level_2] as @n[tag=AzrielMob_amulet_skill_axevortex_target] run damage @s 6 player_attack
+execute if score @s rng1 matches 11.. if entity @s[tag=AzrielMob_level_3] as @n[tag=AzrielMob_amulet_skill_axevortex_target] run damage @s 7 player_attack
+execute if score @s rng1 matches 11.. if entity @s[tag=AzrielMob_level_4] as @n[tag=AzrielMob_amulet_skill_axevortex_target] run damage @s 8 player_attack
+execute if score @s rng1 matches 11.. if entity @s[tag=AzrielMob_level_5] as @n[tag=AzrielMob_amulet_skill_axevortex_target] run damage @s 9 player_attack
 
 
 

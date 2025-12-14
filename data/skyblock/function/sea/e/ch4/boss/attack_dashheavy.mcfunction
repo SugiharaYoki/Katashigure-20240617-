@@ -12,5 +12,5 @@ execute as @s[scores={rng8=40..},tag=SEAboss4_attack_dashheavy,nbt={OnGround:1b}
 execute as @s[scores={rng8=40..},tag=SEAboss4_attack_dashheavy,nbt={OnGround:1b}] at @s run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1.7 0.9
 execute as @s[scores={rng8=40..},tag=SEAboss4_attack_dashheavy,nbt={OnGround:1b}] at @s rotated ~ 0 run particle sweep_attack ^ ^1.2 ^0 2.3 0 2.3 0 14
 execute as @s[scores={rng8=40..},tag=SEAboss4_attack_dashheavy,nbt={OnGround:1b}] at @s rotated ~ 0 run particle damage_indicator ^ ^0 ^0 2.3 0 2.3 0 45
-execute as @s[scores={rng8=40..},tag=SEAboss4_attack_dashheavy,nbt={OnGround:1b}] at @s as @a[tag=SEAPT,distance=0..3.3] at @s run damage @s 8 generic
+execute as @s[scores={rng8=40..},tag=SEAboss4_attack_dashheavy,nbt={OnGround:1b}] at @s as @a[tag=SEAPT,distance=0..3.3] at @s run damage @s 9 mob_attack
 execute as @s[scores={rng8=40..},tag=SEAboss4_attack_dashheavy,nbt={OnGround:1b}] at @s run scoreboard players set @s rng8 0

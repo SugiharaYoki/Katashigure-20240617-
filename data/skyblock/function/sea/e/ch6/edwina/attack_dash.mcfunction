@@ -4,7 +4,7 @@ scoreboard players add @s rng8 1
 execute as @s[scores={rng8=2..29},tag=SEAboss4_attack_dash] at @s run item replace entity @s weapon.mainhand with iron_axe
 execute as @s[scores={rng8=5..29},tag=SEAboss4_attack_dash] at @s if entity @n[tag=SEAmob,tag=!SEAcreak,distance=0..1.1] run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.1
 execute as @s[scores={rng8=5..29},tag=SEAboss4_attack_dash] at @s if entity @n[tag=SEAmob,tag=!SEAcreak,distance=0..1.1] rotated ~ 0 run particle sweep_attack ^ ^1.2 ^1.1 0.35 0.2 0.35 0 2
-execute as @s[scores={rng8=5..29},tag=SEAboss4_attack_dash] at @s positioned ^ ^ ^0.5 as @e[tag=SEAmob,tag=!SEAcreak,distance=0..1.1] at @s run damage @s 12 generic
+execute as @s[scores={rng8=5..29},tag=SEAboss4_attack_dash] at @s positioned ^ ^ ^0.5 as @e[tag=SEAmob,tag=!SEAcreak,distance=0..1.1] at @s run damage @s 13 player_attack
 execute as @s[scores={rng8=5..29},tag=SEAboss4_attack_dash] at @s if entity @n[tag=SEAmob,tag=!SEAcreak,distance=0..1.1] run scoreboard players set @s rng8 30
 execute as @s[scores={rng8=3},tag=SEAboss4_attack_dash] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAmob,tag=!SEAcreak]
 execute as @s[scores={rng8=5},tag=SEAboss4_attack_dash] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^1.4 {Tags:["SEA_boss4_marker"]}
