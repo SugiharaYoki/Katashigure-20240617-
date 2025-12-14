@@ -97,6 +97,7 @@ data modify entity @n[tag=AzrRamielExStage_displaymarkery] CustomName set value 
 data modify entity @n[tag=AzrRamielExStage_displaymarkerz] CustomName set value '" <Z> "'
 data modify entity @n[tag=AzrRamielExStage_displaymarker1] CustomName set value '" <残> "'
 data modify entity @n[tag=AzrRamielExStage_displaymarker2] CustomName set value '" <努> "'
+execute if entity @s[tag=AZS_BoSB01] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value '" <影> "'
 execute if entity @s[tag=AZS_BoSB04] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value '" <炉> "'
 execute if entity @s[tag=AZS_BoSB13] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value '" <藓> "'
 execute if entity @s[tag=!AZS_BoS01] run data modify entity @n[tag=AzrRamielExStage_displaymarkera] CustomName set value '" ？ "'
