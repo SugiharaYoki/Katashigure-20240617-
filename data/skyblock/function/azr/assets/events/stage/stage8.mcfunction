@@ -125,7 +125,7 @@ execute if score stage_main_thread AzrTimerStack matches 450 unless entity @e[ta
 execute if score stage_main_thread AzrTimerStack matches 450 unless entity @e[tag=AzrielMob] run bossbar remove azr:progress_bar_normal
 execute if score stage_main_thread AzrTimerStack matches 450 unless entity @e[tag=AzrielMob] run bossbar remove azr:boss_hp_bar
 execute if score stage_main_thread AzrTimerStack matches 450 unless entity @e[tag=AzrielMob] run scoreboard players reset tick_main_thread AzrTimerStack
-execute if score stage_main_thread AzrTimerStack matches 450 unless entity @e[tag=AzrielMob] run scoreboard players set stage Azr_system 23
+execute if score stage_main_thread AzrTimerStack matches 450 unless entity @e[tag=AzrielMob] run scoreboard players set stage Azr_system 21
 
 execute if score stage_main_thread AzrTimerStack matches 450 run fill -79888 38 18 -79887 40 16 air destroy
 execute if score stage_main_thread AzrTimerStack matches 450 run playsound minecraft:block.end_gateway.spawn master @a -79887 39 17 100 0.8
