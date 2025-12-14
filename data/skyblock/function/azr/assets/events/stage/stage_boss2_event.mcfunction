@@ -1,14 +1,12 @@
 execute if score stage_main_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage Event1\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 319"}]
 
 execute if score stage_main_thread AzrTimerStack matches 3..5 run scoreboard players set stage_main_thread AzrTimerStack 3
-execute if score stage_main_thread AzrTimerStack matches 3..5 if entity @a[tag=azrPlayer,x=-79881.34,y=40.00,z=-13.91,distance=..7.5] run scoreboard players set stage_main_thread AzrTimerStack 300
+execute if score stage_main_thread AzrTimerStack matches 3..5 if entity @a[tag=azrPlayer,x=-79881.34,y=40.00,z=-13.91,distance=..8.5] run scoreboard players set stage_main_thread AzrTimerStack 300
 
 execute if score stage_main_thread AzrTimerStack matches 1 as @n[tag=AzrielNPC_andralune] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
 execute if score stage_main_thread AzrTimerStack matches 1 positioned -79881.01 40.00 -13.99 run tp @n[tag=AzrielNPC_andralune] ~ ~ ~
 execute if score stage_main_thread AzrTimerStack matches 1 as @n[tag=AzrielNPC_andralune] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
-execute if score stage_main_thread AzrTimerStack matches 29..100 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
-
-
+execute if score stage_main_thread AzrTimerStack matches 29..88 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
 
 execute if score stage_main_thread AzrTimerStack matches 6 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score stage_main_thread AzrTimerStack matches 6 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“没想到你还有胆量靠近我。”","color":"white"}]
@@ -21,18 +19,28 @@ execute if score stage_main_thread AzrTimerStack matches 56 positioned -79923 43
 execute if score stage_main_thread AzrTimerStack matches 74 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score stage_main_thread AzrTimerStack matches 74 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“我给了你逃走的机会。我甚至让马林努斯拦住你。如果你执意向前，我很乐意将你的灵魂击碎。”","color":"white"}]
 
+execute if score stage_main_thread AzrTimerStack matches 84..85 if entity @a[tag=azrPlayer,x=-79881.34,y=40.00,z=-13.91,distance=..5.5] run scoreboard players set stage_main_thread AzrTimerStack 84
+execute if score stage_main_thread AzrTimerStack matches 86 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 86 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“好。我希望你也做好相应的准备。”","color":"white"}]
 
 
 
 
-execute if score stage_main_thread AzrTimerStack matches 660 run tp @n[tag=AzrielBossA] -79931 39 88 facing -79932 38.5 87 
-execute if score stage_main_thread AzrTimerStack matches 660 run particle minecraft:enchant -79903 44 -14.0 1 1 1 0.5 200
-execute if score stage_main_thread AzrTimerStack matches 660.. as @n[tag=AzrielBossA] store result score @s Health run data get entity @s Health
-execute if score stage_main_thread AzrTimerStack matches 660.. store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielBossA] Health
-execute if score stage_main_thread AzrTimerStack matches 660 run bossbar add azr:boss_hp_bar "权之残影 - 安德拉伦恩"
-execute if score stage_main_thread AzrTimerStack matches 660 run bossbar set azr:boss_hp_bar color red
-execute if score stage_main_thread AzrTimerStack matches 660 run bossbar set azr:boss_hp_bar max 300
-execute if score stage_main_thread AzrTimerStack matches 660 run bossbar set azr:boss_hp_bar players @a[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 91 run tp @n[tag=AzrielBossA] -79931 39 88 facing -79932 38.5 87 
+execute if score stage_main_thread AzrTimerStack matches 91 run particle minecraft:enchant -79903 44 -14.0 1 1 1 0.5 200
+execute if score stage_main_thread AzrTimerStack matches 91.. as @n[tag=AzrielBossA] store result score @s Health run data get entity @s Health
+execute if score stage_main_thread AzrTimerStack matches 91.. store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielBossA] Health
+execute if score stage_main_thread AzrTimerStack matches 91 run bossbar add azr:boss_hp_bar "权之残影 - 安德拉伦恩"
+execute if score stage_main_thread AzrTimerStack matches 91 run bossbar set azr:boss_hp_bar color red
+execute if score stage_main_thread AzrTimerStack matches 91 run bossbar set azr:boss_hp_bar max 300
+execute if score stage_main_thread AzrTimerStack matches 91 run bossbar set azr:boss_hp_bar players @a[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 91 as @n[tag=AzrielBossA] run tag @s add actionable
+execute if score stage_main_thread AzrTimerStack matches 91 as @n[tag=AzrielBossA] run data modify entity @s Invulnerable set value 0b
+execute if score stage_main_thread AzrTimerStack matches 91 as @n[tag=AzrielBossA] run data modify entity @s NoAI set value 0b
+execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run scoreboard players set stage_boss_bgm AzrTimerStack 0
+execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run scoreboard players set tick_main_thread AzrTimerStack 0
+execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run setblock -79931 39 88 air
+execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run scoreboard players set stage Azr_system 24
 
 
 
