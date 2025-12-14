@@ -449,8 +449,8 @@ setblock -79897 39 33 minecraft:potted_lily_of_the_valley
 setblock -79902 39 23 minecraft:potted_lily_of_the_valley
 
 
-
-
+#boss2
+function skyblock:azr/lifecycle/endgame/reset_map_boss2
 
 
 #boss2~stage9道中 水下小钥匙
@@ -648,9 +648,8 @@ fill -79887 39 16 -79887 39 18 quartz_bricks
 fill -79887 40 16 -79887 40 18 quartz_block
 fill -79893 41 5 -79893 38 3 minecraft:purple_stained_glass
 fill -79904 41 0 -79902 38 0 minecraft:air
-fill -79879 40 -16 -79879 43 -13 air
 fill -79958 39 58 -79960 39 54 air replace green_wool
-fill -79927 38 -13 -79927 42 -16 minecraft:red_stained_glass
+
 fill -79891 44 -67 -79890 42 -67 minecraft:purple_stained_glass
 fill -79886 46 148 -79888 43 148 air
 fill -79942 38 8 -79944 38 8 quartz_block
