@@ -4,7 +4,7 @@ execute if score stage_main_thread AzrTimerStack matches 3..5 run scoreboard pla
 execute if score stage_main_thread AzrTimerStack matches 3..5 if entity @a[tag=azrPlayer,x=-79881.34,y=40.00,z=-13.91,distance=..8.5] run scoreboard players set stage_main_thread AzrTimerStack 300
 
 execute if score stage_main_thread AzrTimerStack matches 2 as @n[tag=AzrielNPC_andralune] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
-execute if score stage_main_thread AzrTimerStack matches 2 positioned -79881.01 40.00 -13.99 run tp @n[tag=AzrielNPC_andralune] ~ ~ ~
+execute if score stage_main_thread AzrTimerStack matches 2 positioned -79881.01 40.00 -13.99 run tp @n[tag=AzrielNPC_andralune] ~ ~ ~ facing ~ ~ ~-1
 execute if score stage_main_thread AzrTimerStack matches 2 as @n[tag=AzrielNPC_andralune] run effect give @s instant_health 1 24
 execute if score stage_main_thread AzrTimerStack matches 2 as @n[tag=AzrielNPC_andralune] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
 execute if score stage_main_thread AzrTimerStack matches 29..88 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
