@@ -1,6 +1,6 @@
 function skyblock:azr/lifecycle/jump_to/ch2_start
 
-execute as @a[tag=azrPlayer] at @s unless score @s Azr_skillPoints matches 5.. run return run function skyblock:azr/lifecycle/jump_to/return
+execute as @a[tag=azrPlayer] at @s unless score @s SeGa_StandLastBH matches 10.. run return run function skyblock:azr/lifecycle/jump_to/return
 
 #execute as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/weapons/stone_sword_normal
 #execute as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/weapons/stone_axe_normal
