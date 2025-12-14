@@ -553,7 +553,6 @@ setblock -79931 38 42 air
 setblock -79931 38 76 air
 setblock -79931 38 117 air
 setblock -79899 38 142 air
-setblock -79879 38 4 air
 setblock -79885 40 -139 air
 setblock -79893 47 -48 air
 setblock -79844 48 -127 air
