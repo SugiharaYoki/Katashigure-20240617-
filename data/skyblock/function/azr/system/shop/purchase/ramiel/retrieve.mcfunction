@@ -32,6 +32,7 @@ execute if entity @s[tag=AZS_BoS22] if score @s Azr_Shop matches 8432322 run fun
 
 execute if entity @s[scores={Azr_skillPoints=5..}] if score @s Azr_Shop matches 8432327 run function skyblock:azr/assets/items/amulets/stopwatch
 execute if entity @s[scores={Azr_skillPoints=9..}] if score @s Azr_Shop matches 8432330 run function skyblock:azr/assets/items/amulets/axe_vortex
+execute if entity @s[tag=AZS_BoSB01] if score @s Azr_Shop matches 8432331 run function skyblock:azr/assets/items/amulets/back_dodge
 execute if entity @s[tag=AZS_BoSB04] if score @s Azr_Shop matches 8432329 run function skyblock:azr/assets/items/amulets/fire_drogue
 execute if entity @s[tag=AZS_BoSB13] if score @s Azr_Shop matches 8432328 run function skyblock:azr/assets/items/amulets/moss_spore
 

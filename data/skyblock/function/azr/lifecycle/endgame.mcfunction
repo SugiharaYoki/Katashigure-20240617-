@@ -70,7 +70,7 @@ scoreboard objectives remove Azr_Shop_rng11
 scoreboard objectives remove Azr_Shop_rng12
 scoreboard objectives remove Azr_Shop_rng13
 #scoreboard objectives remove AzrMelonCount
-scoreboard objectives remove Azr_skillPoints
+#scoreboard objectives remove Azr_skillPoints
 scoreboard objectives remove Azr_shopChapter
 scoreboard objectives remove AzrTimerStack
 scoreboard objectives remove AzrSlotRecord
