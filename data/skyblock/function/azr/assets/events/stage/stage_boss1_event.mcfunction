@@ -79,7 +79,6 @@ execute if score stage_main_thread AzrTimerStack matches 557 positioned -79931 3
 #boss1并线运行开始
 execute if score stage_main_thread AzrTimerStack matches 567 positioned -79924 38 88 run scoreboard players set stage_boss_bgm AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 567 positioned -79924 38 88 run scoreboard players set tick_main_thread AzrTimerStack 0
-execute if score stage_main_thread AzrTimerStack matches 567 positioned -79924 38 88 run setblock -79931 39 88 air
 execute if score stage_main_thread AzrTimerStack matches 567 positioned -79924 38 88 run scoreboard players set stage Azr_system 10
 
 execute if score stage_main_thread AzrTimerStack matches 558..559 positioned -79931 38 88 if entity @n[tag=AzrielMob_sword,distance=0..15] run scoreboard players set stage_main_thread AzrTimerStack 558

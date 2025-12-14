@@ -39,7 +39,6 @@ execute if score stage_main_thread AzrTimerStack matches 91 as @n[tag=AzrielBoss
 execute if score stage_main_thread AzrTimerStack matches 91 as @n[tag=AzrielBossA] run data modify entity @s NoAI set value 0b
 execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run scoreboard players set stage_boss_bgm AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run scoreboard players set tick_main_thread AzrTimerStack 0
-execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run setblock -79931 39 88 air
 execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run scoreboard players set stage Azr_system 24
 
 
