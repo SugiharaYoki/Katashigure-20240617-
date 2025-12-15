@@ -9,3 +9,7 @@ scoreboard players set tick_main_thread AzrTimerStack 0
 scoreboard players set stage_main_thread AzrTimerStack 0
 scoreboard players set stage Azr_system 21
 bossbar remove azr:boss_hp_bar
+
+execute as @n[tag=AzrielBossA] run tag @s remove actionable
+execute as @n[tag=AzrielBossA] run data modify entity @s Invulnerable set value 1b
+execute as @n[tag=AzrielBossA] run data modify entity @s NoAI set value 1b
