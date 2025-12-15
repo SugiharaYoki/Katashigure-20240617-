@@ -7,6 +7,7 @@ execute if score stage_main_thread AzrTimerStack matches 2 as @n[tag=AzrielNPC_a
 execute if score stage_main_thread AzrTimerStack matches 2 positioned -79881.01 40.00 -13.99 run tp @n[tag=AzrielNPC_andralune] ~ ~ ~ facing ~1 ~ ~
 execute if score stage_main_thread AzrTimerStack matches 2 as @n[tag=AzrielNPC_andralune] run effect give @s instant_health 1 24
 execute if score stage_main_thread AzrTimerStack matches 2 as @n[tag=AzrielNPC_andralune] run attribute @s armor base set 8.0
+execute if score stage_main_thread AzrTimerStack matches 2 as @n[tag=AzrielNPC_andralune] run attribute @s movement_speed base set 0.33
 execute if score stage_main_thread AzrTimerStack matches 2 as @n[tag=AzrielNPC_andralune] run attribute @s armor_toughness base set 8.0
 execute if score stage_main_thread AzrTimerStack matches 2 as @n[tag=AzrielNPC_andralune] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
 execute if score stage_main_thread AzrTimerStack matches 29..88 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
