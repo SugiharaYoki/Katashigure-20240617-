@@ -216,7 +216,10 @@ attribute @s armor modifier remove azr_amulet:flowerwall_01
 attribute @s attack_damage modifier remove azr_amulet:flowerwall_01
 attribute @s movement_speed modifier remove azr_amulet:sprintdouble_01
 attribute @s armor modifier remove azr_amulet:sprintdouble_01
+attribute @s knockback_resistance modifier remove azr_amulet:sprintdouble_01
 attribute @s movement_speed modifier remove azr_amulet:backdodge_01
+attribute @s armor modifier remove azr_amulet:downkick_01
+attribute @s knockback_resistance modifier remove azr_amulet:downkick_01
 
 
 attribute @s armor modifier remove azr_food:hardened_cookie_01

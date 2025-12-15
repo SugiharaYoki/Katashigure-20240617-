@@ -15,6 +15,8 @@ execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 if entity @s[
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 if entity @s[nbt={OnGround:1b}] run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 10
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 if entity @s[predicate=!skyblock:sneak] run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 10
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..22 run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 10
+execute if score @s AzrSariel_Amulet_DownKick_clock matches 20 if items entity @s container.* *[custom_data~{azr_amulet_light_angel:1b}] run attribute @s armor modifier add azr_amulet:downkick_01 50 add_value
+execute if score @s AzrSariel_Amulet_DownKick_clock matches 20 if items entity @s container.* *[custom_data~{azr_amulet_light_angel:1b}] run attribute @s knockback_resistance modifier add azr_amulet:downkick_01 1 add_value
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 20 run particle minecraft:crit ~ ~ ~ 1.5 0 1.5 0 30
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 20 run playsound minecraft:item.mace.smash_ground player @a ~ ~ ~ 1.5 1.2
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 19 run playsound minecraft:item.mace.smash_ground_heavy player @a ~ ~ ~ 1.5 1.5
@@ -38,6 +40,8 @@ execute if score @s AzrSariel_Amulet_DownKick_clock matches 11 if block ~ ~-0.1 
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 19 as @e[tag=AzrielMob,distance=0..2,sort=nearest] at @s run damage @s 9 mace_smash by @p[scores={AzrSariel_Amulet_DownKick_clock=19}]
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 15 as @e[tag=AzrielMob,distance=0..3.5,sort=nearest] at @s run damage @s 8 mace_smash by @p[scores={AzrSariel_Amulet_DownKick_clock=15}]
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 11 as @e[tag=AzrielMob,distance=0..5.2,sort=nearest] at @s run damage @s 7 mace_smash by @p[scores={AzrSariel_Amulet_DownKick_clock=11}]
+execute if score @s AzrSariel_Amulet_DownKick_clock matches 11 run attribute @s armor modifier remove azr_amulet:downkick_01
+execute if score @s AzrSariel_Amulet_DownKick_clock matches 11 run attribute @s knockback_resistance modifier remove azr_amulet:downkick_01
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 17..20 run attribute @s gravity base set 0.08
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 9..10 run attribute @s gravity base set 0.08
 
