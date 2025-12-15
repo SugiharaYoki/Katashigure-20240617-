@@ -301,6 +301,7 @@ setblock -79912 41 106 minecraft:potted_oxeye_daisy
 setblock -79912 41 103 minecraft:potted_oxeye_daisy
   #侧道墙
 fill -79903 43 83 -79905 40 83 minecraft:purple_stained_glass
+setblock -79904 40 62 air
 setblock -79904 40 62 trapped_chest[facing=south]{lock:{components:{custom_data:{key_required:1b}}}}
 item replace block -79904 40 62 container.11 with minecraft:emerald 3
 item replace block -79904 40 62 container.13 with minecraft:resin_clump 2

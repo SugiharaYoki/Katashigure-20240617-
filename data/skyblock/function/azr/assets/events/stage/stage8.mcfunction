@@ -118,6 +118,7 @@ execute if score stage_main_thread AzrTimerStack matches 100.. as @n[tag=AzrielN
 
 execute if score stage_main_thread AzrTimerStack matches 383..438 as @n[tag=AzrielNPC_marinus,scores={Health=46..49}] run scoreboard players set stage_main_thread AzrTimerStack 439
 
+execute if score stage_main_thread AzrTimerStack matches 450 run effect give @n[tag=AzrielNPC_marinus] resistance 100 4 true
 execute if score stage_main_thread AzrTimerStack matches 450 run attribute @n[tag=AzrielNPC_marinus] knockback_resistance modifier remove azr_boss:marinus_knockback_resistance
 execute if score stage_main_thread AzrTimerStack matches 440 positioned -79885 38 17 run function skyblock:azr/assets/mobs/zoglin
 execute if score stage_main_thread AzrTimerStack matches 440 positioned -79885 38 17 run function skyblock:azr/assets/mobs/zoglin
