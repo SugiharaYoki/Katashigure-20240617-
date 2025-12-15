@@ -20,7 +20,7 @@ execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=92}] run attrib
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=92}] run attribute @s armor modifier remove azr_amulet:sprintdouble_01
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=92}] run attribute @s knockback_resistance modifier remove azr_amulet:sprintdouble_01
 
-execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=92}] run stopsound @s player minecraft:item.elytra.flying
+execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=92}] run stopsound @a[distance=..50] player minecraft:item.elytra.flying
 
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=92}] run scoreboard players set @s AzrSariel_Amulet_SprintDouble_clock 0
 
