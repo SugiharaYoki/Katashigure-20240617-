@@ -240,8 +240,8 @@ execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 4
 execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79977 8 61 if entity @a[tag=!AZR_SEAawakened] run summon minecraft:glow_item_frame ~ ~ ~ {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:nether_star",components:{custom_name:'{"text":"下界命星","color":"yellow","italic":false}',custom_data:{revival_star:true},custom_model_data:{floats:[100001.0]}}}}
 execute if score Azr_Story_Introduction rng1 matches 1025 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:sword}
 
-execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79974 38 -16 run function skyblock:azr/assets/mobs_new/sword
-execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79974 38 -13 run function skyblock:azr/assets/mobs_new/sword
+execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79974 38 -16 run function skyblock:azr/assets/mobs/sword
+execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79974 38 -13 run function skyblock:azr/assets/mobs/sword
 
 execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 40.00 -14.01 as @a[tag=azrPlayer] at @s run spawnpoint @s -79985 40 -14
 execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79974 38 -16 as @e[type=vindicator,distance=0..10] at @s run rotate @s facing entity @p[tag=azrPlayer]

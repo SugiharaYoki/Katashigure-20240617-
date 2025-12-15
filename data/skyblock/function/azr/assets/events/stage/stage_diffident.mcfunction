@@ -13,22 +13,22 @@ execute if score stage_bonus_thread AzrTimerStack matches 124 run bossbar remove
 execute if score stage_bonus_thread AzrTimerStack matches 5 positioned -79946 38 61 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n（糟了，难不成这里是陷阱？！）","color":"white"}]
 
 
-execute if score stage_bonus_thread AzrTimerStack matches 5 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/smoke
-execute if score stage_bonus_thread AzrTimerStack matches 7 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/smoke
-execute if score stage_bonus_thread AzrTimerStack matches 9 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/smoke
-execute if score stage_bonus_thread AzrTimerStack matches 11 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/smoke
+execute if score stage_bonus_thread AzrTimerStack matches 5 positioned -79910 32 -5 run function skyblock:azr/assets/mobs/smoke
+execute if score stage_bonus_thread AzrTimerStack matches 7 positioned -79910 32 -5 run function skyblock:azr/assets/mobs/smoke
+execute if score stage_bonus_thread AzrTimerStack matches 9 positioned -79910 32 -5 run function skyblock:azr/assets/mobs/smoke
+execute if score stage_bonus_thread AzrTimerStack matches 11 positioned -79910 32 -5 run function skyblock:azr/assets/mobs/smoke
 
-execute if score stage_bonus_thread AzrTimerStack matches 35 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/smoke
-execute if score stage_bonus_thread AzrTimerStack matches 37 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/smoke
-execute if score stage_bonus_thread AzrTimerStack matches 39 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/smoke
-execute if score stage_bonus_thread AzrTimerStack matches 41 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/smoke
+execute if score stage_bonus_thread AzrTimerStack matches 35 positioned -79910 32 -5 run function skyblock:azr/assets/mobs/smoke
+execute if score stage_bonus_thread AzrTimerStack matches 37 positioned -79910 32 -5 run function skyblock:azr/assets/mobs/smoke
+execute if score stage_bonus_thread AzrTimerStack matches 39 positioned -79910 32 -5 run function skyblock:azr/assets/mobs/smoke
+execute if score stage_bonus_thread AzrTimerStack matches 41 positioned -79910 32 -5 run function skyblock:azr/assets/mobs/smoke
 
-execute if score stage_bonus_thread AzrTimerStack matches 55 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/undead_pickaxe
+execute if score stage_bonus_thread AzrTimerStack matches 55 positioned -79910 32 -5 run function skyblock:azr/assets/mobs/undead_pickaxe
 
-execute if score stage_bonus_thread AzrTimerStack matches 70 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/smoke_mother
-execute if score stage_bonus_thread AzrTimerStack matches 100 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/smoke_mother
-execute if score stage_bonus_thread AzrTimerStack matches 110 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/undead_pickaxe
-execute if score stage_bonus_thread AzrTimerStack matches 121 positioned -79910 32 -5 run function skyblock:azr/assets/mobs_new/barrier_maintainer {id:_stagediffident}
+execute if score stage_bonus_thread AzrTimerStack matches 70 positioned -79910 32 -5 run function skyblock:azr/assets/mobs/smoke_mother
+execute if score stage_bonus_thread AzrTimerStack matches 100 positioned -79910 32 -5 run function skyblock:azr/assets/mobs/smoke_mother
+execute if score stage_bonus_thread AzrTimerStack matches 110 positioned -79910 32 -5 run function skyblock:azr/assets/mobs/undead_pickaxe
+execute if score stage_bonus_thread AzrTimerStack matches 121 positioned -79910 32 -5 run function skyblock:azr/assets/mobs/barrier_maintainer {id:_stagediffident}
 
 execute if score stage_bonus_thread AzrTimerStack matches 122..123 if entity @n[tag=AzrielMob_barrier_maintainer_stagediffident] run scoreboard players set stage_bonus_thread AzrTimerStack 122
 execute if score stage_bonus_thread AzrTimerStack matches 122..123 as @n[tag=AzrielMob_barrier_maintainer_stagediffident] at @s unless entity @a[tag=azrPlayer,distance=..20] run scoreboard players set stage_bonus_thread AzrTimerStack 124

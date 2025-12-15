@@ -1,18 +1,18 @@
-execute if entity @s[tag=AzrielMob_summon_delay_marker_undead] run function skyblock:azr/assets/mobs_new/summon_delay/undead
-execute if entity @s[tag=AzrielMob_summon_delay_marker_undead_pickaxe] run function skyblock:azr/assets/mobs_new/summon_delay/undead_pickaxe
-execute if entity @s[tag=AzrielMob_summon_delay_marker_smoke_mother] run function skyblock:azr/assets/mobs_new/summon_delay/smoke_mother
-execute if entity @s[tag=AzrielMob_summon_delay_marker_smoke] run function skyblock:azr/assets/mobs_new/summon_delay/smoke
-execute if entity @s[tag=AzrielMob_summon_delay_marker_empty_human] run function skyblock:azr/assets/mobs_new/summon_delay/empty_human
-execute if entity @s[tag=AzrielMob_summon_delay_marker_shield] run function skyblock:azr/assets/mobs_new/summon_delay/shield
-execute if entity @s[tag=AzrielMob_summon_delay_marker_summoner] run function skyblock:azr/assets/mobs_new/summon_delay/summoner
-execute if entity @s[tag=AzrielMob_summon_delay_marker_sword] run function skyblock:azr/assets/mobs_new/summon_delay/sword
-execute if entity @s[tag=AzrielMob_summon_delay_marker_axe] run function skyblock:azr/assets/mobs_new/summon_delay/axe
-execute if entity @s[tag=AzrielMob_summon_delay_marker_pillager] run function skyblock:azr/assets/mobs_new/summon_delay/pillager
-execute if entity @s[tag=AzrielMob_summon_delay_marker_spider_giant] run function skyblock:azr/assets/mobs_new/summon_delay/spider_giant
+execute if entity @s[tag=AzrielMob_summon_delay_marker_undead] run function skyblock:azr/assets/mobs/summon_delay/undead
+execute if entity @s[tag=AzrielMob_summon_delay_marker_undead_pickaxe] run function skyblock:azr/assets/mobs/summon_delay/undead_pickaxe
+execute if entity @s[tag=AzrielMob_summon_delay_marker_smoke_mother] run function skyblock:azr/assets/mobs/summon_delay/smoke_mother
+execute if entity @s[tag=AzrielMob_summon_delay_marker_smoke] run function skyblock:azr/assets/mobs/summon_delay/smoke
+execute if entity @s[tag=AzrielMob_summon_delay_marker_empty_human] run function skyblock:azr/assets/mobs/summon_delay/empty_human
+execute if entity @s[tag=AzrielMob_summon_delay_marker_shield] run function skyblock:azr/assets/mobs/summon_delay/shield
+execute if entity @s[tag=AzrielMob_summon_delay_marker_summoner] run function skyblock:azr/assets/mobs/summon_delay/summoner
+execute if entity @s[tag=AzrielMob_summon_delay_marker_sword] run function skyblock:azr/assets/mobs/summon_delay/sword
+execute if entity @s[tag=AzrielMob_summon_delay_marker_axe] run function skyblock:azr/assets/mobs/summon_delay/axe
+execute if entity @s[tag=AzrielMob_summon_delay_marker_pillager] run function skyblock:azr/assets/mobs/summon_delay/pillager
+execute if entity @s[tag=AzrielMob_summon_delay_marker_spider_giant] run function skyblock:azr/assets/mobs/summon_delay/spider_giant
 
-execute if entity @s[tag=AzrielMob_summon_delay_marker_undead_fire] run function skyblock:azr/assets/mobs_new/summon_delay/undead_fire
-execute if entity @s[tag=AzrielMob_summon_delay_marker_undead_shadow] run function skyblock:azr/assets/mobs_new/summon_delay/undead_shadow
-execute if entity @s[tag=AzrielMob_summon_delay_marker_undead_baby] run function skyblock:azr/assets/mobs_new/summon_delay/undead_baby
+execute if entity @s[tag=AzrielMob_summon_delay_marker_undead_fire] run function skyblock:azr/assets/mobs/summon_delay/undead_fire
+execute if entity @s[tag=AzrielMob_summon_delay_marker_undead_shadow] run function skyblock:azr/assets/mobs/summon_delay/undead_shadow
+execute if entity @s[tag=AzrielMob_summon_delay_marker_undead_baby] run function skyblock:azr/assets/mobs/summon_delay/undead_baby
 
-execute if entity @s[tag=AzrielMob_summon_delay_marker_skeleton_melee] run function skyblock:azr/assets/mobs_new/summon_delay/skeleton_melee
-execute if entity @s[tag=AzrielMob_summon_delay_marker_skeleton_sentinel] run function skyblock:azr/assets/mobs_new/summon_delay/skeleton_sentinel
+execute if entity @s[tag=AzrielMob_summon_delay_marker_skeleton_melee] run function skyblock:azr/assets/mobs/summon_delay/skeleton_melee
+execute if entity @s[tag=AzrielMob_summon_delay_marker_skeleton_sentinel] run function skyblock:azr/assets/mobs/summon_delay/skeleton_sentinel

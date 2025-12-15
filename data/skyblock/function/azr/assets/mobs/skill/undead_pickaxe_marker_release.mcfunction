@@ -2,7 +2,7 @@ scoreboard players add @s rng1 1
 
 execute if block ~ ~-0.1 ~ air run tp @s ~ ~-0.1 ~
 
-execute if score @s rng1 matches 2..9 at @s run function skyblock:azr/assets/mobs_new/skill/undead_pickaxe_particle_place
+execute if score @s rng1 matches 2..9 at @s run function skyblock:azr/assets/mobs/skill/undead_pickaxe_particle_place
 
 execute if score @s rng1 matches 3.. at @s run particle flame ~ ~0.7 ~ 0 0 0 0 1 force
 execute if score @s rng1 matches 4.. at @s run particle flame ~ ~1.2 ~ 0 0 0 0 1 force

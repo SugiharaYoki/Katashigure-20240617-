@@ -6,6 +6,6 @@ execute if score @s rng8 matches 3 run particle minecraft:enchant ~ ~0.5 ~ 0 0 1
 
 execute if score @s rng8 matches 3 as @e[type=illusioner,distance=..50] at @s run summon marker ~ ~1 ~ {Tags:["AZR_summon_arroworb"]}
 
-execute if score @s rng8 matches 4 run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/move_back
+execute if score @s rng8 matches 4 run function skyblock:azr/assets/mobs/skill/boss1_andralune/move_back
 
 execute if score @s rng8 matches 18.. run scoreboard players set @s rng8 9999

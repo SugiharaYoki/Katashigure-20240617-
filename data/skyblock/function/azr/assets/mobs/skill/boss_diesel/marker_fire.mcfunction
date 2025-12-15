@@ -99,42 +99,42 @@ execute if score @s[scores={rng1=2..8}] rng8 matches 1 at @s rotated as @s rotat
 execute if score @s[scores={rng1=2..8}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^1 ^1.2 ^9.0 0 0 0 0 1
 execute if score @s[scores={rng1=2..8}] rng8 matches 1 at @s rotated as @s rotated ~ 0 run particle wax_off ^-1 ^1.2 ^9.0 0 0 0 0 1
 
-execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^0.5 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_burst
-execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^1.0 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_burst
-execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^1.5 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_burst
-execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^2.0 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_burst
-execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^2.5 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_burst
-execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^3.0 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_burst
-execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^3.5 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_burst
-execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^4.0 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_burst
-execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^4.5 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_burst
-execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^5.0 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_burst
-execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^5.5 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_burst
-execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^6.0 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_burst
-execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^6.5 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_burst
-execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^7.0 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_burst
-execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^7.5 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_burst
-execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^8.0 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_burst
-execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^8.5 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_burst
-execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^9.0 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_burst
+execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^0.5 run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_burst
+execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^1.0 run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_burst
+execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^1.5 run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_burst
+execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^2.0 run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_burst
+execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^2.5 run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_burst
+execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^3.0 run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_burst
+execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^3.5 run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_burst
+execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^4.0 run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_burst
+execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^4.5 run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_burst
+execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^5.0 run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_burst
+execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^5.5 run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_burst
+execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^6.0 run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_burst
+execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^6.5 run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_burst
+execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^7.0 run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_burst
+execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^7.5 run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_burst
+execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^8.0 run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_burst
+execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^8.5 run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_burst
+execute if score @s[scores={rng1=22}] rng8 matches 1 at @s rotated as @s rotated ~ 0 positioned ^1 ^0.2 ^9.0 run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_burst
 
-execute if score @s[scores={rng1=2..22}] rng8 matches 05 at @s run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_particle_round {distance:0.4,distance_reach:1.1,distance_target:0.75}
-execute if score @s[scores={rng1=2..22}] rng8 matches 10 at @s run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_particle_round {distance:0.9,distance_reach:1.6,distance_target:1.25}
-execute if score @s[scores={rng1=2..22}] rng8 matches 15 at @s run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_particle_round {distance:1.4,distance_reach:2.1,distance_target:1.75}
-execute if score @s[scores={rng1=2..22}] rng8 matches 20 at @s run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_particle_round {distance:1.9,distance_reach:2.6,distance_target:2.25}
-execute if score @s[scores={rng1=2..22}] rng8 matches 25 at @s run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_particle_round {distance:2.4,distance_reach:3.1,distance_target:2.75}
-execute if score @s[scores={rng1=2..22}] rng8 matches 30 at @s run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_particle_round {distance:2.9,distance_reach:3.6,distance_target:3.25}
-execute if score @s[scores={rng1=2..22}] rng8 matches 35 at @s run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_particle_round {distance:3.4,distance_reach:4.1,distance_target:3.75}
-execute if score @s[scores={rng1=2..22}] rng8 matches 40 at @s run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_particle_round {distance:3.9,distance_reach:4.6,distance_target:4.25}
-execute if score @s[scores={rng1=2..22}] rng8 matches 45 at @s run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_particle_round {distance:4.4,distance_reach:5.1,distance_target:4.75}
-execute if score @s[scores={rng1=2..22}] rng8 matches 50 at @s run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_particle_round {distance:4.9,distance_reach:5.6,distance_target:5.25}
-execute if score @s[scores={rng1=2..22}] rng8 matches 55 at @s run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_particle_round {distance:5.4,distance_reach:6.1,distance_target:5.75}
-execute if score @s[scores={rng1=2..22}] rng8 matches 60 at @s run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_particle_round {distance:5.9,distance_reach:6.6,distance_target:6.25}
-execute if score @s[scores={rng1=2..22}] rng8 matches 65 at @s run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_particle_round {distance:6.4,distance_reach:7.1,distance_target:6.75}
-execute if score @s[scores={rng1=2..22}] rng8 matches 70 at @s run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_particle_round {distance:6.9,distance_reach:7.6,distance_target:7.25}
-execute if score @s[scores={rng1=2..22}] rng8 matches 75 at @s run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_particle_round {distance:7.4,distance_reach:8.1,distance_target:7.75}
-execute if score @s[scores={rng1=2..22}] rng8 matches 80 at @s run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_particle_round {distance:7.9,distance_reach:8.6,distance_target:8.25}
-execute if score @s[scores={rng1=2..22}] rng8 matches 85 at @s run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_particle_round {distance:8.4,distance_reach:9.1,distance_target:8.75}
-execute if score @s[scores={rng1=2..22}] rng8 matches 90 at @s run function skyblock:azr/assets/mobs_new/skill/boss_diesel/marker_fire_particle_round {distance:8.9,distance_reach:9.6,distance_target:9.25}
+execute if score @s[scores={rng1=2..22}] rng8 matches 05 at @s run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_particle_round {distance:0.4,distance_reach:1.1,distance_target:0.75}
+execute if score @s[scores={rng1=2..22}] rng8 matches 10 at @s run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_particle_round {distance:0.9,distance_reach:1.6,distance_target:1.25}
+execute if score @s[scores={rng1=2..22}] rng8 matches 15 at @s run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_particle_round {distance:1.4,distance_reach:2.1,distance_target:1.75}
+execute if score @s[scores={rng1=2..22}] rng8 matches 20 at @s run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_particle_round {distance:1.9,distance_reach:2.6,distance_target:2.25}
+execute if score @s[scores={rng1=2..22}] rng8 matches 25 at @s run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_particle_round {distance:2.4,distance_reach:3.1,distance_target:2.75}
+execute if score @s[scores={rng1=2..22}] rng8 matches 30 at @s run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_particle_round {distance:2.9,distance_reach:3.6,distance_target:3.25}
+execute if score @s[scores={rng1=2..22}] rng8 matches 35 at @s run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_particle_round {distance:3.4,distance_reach:4.1,distance_target:3.75}
+execute if score @s[scores={rng1=2..22}] rng8 matches 40 at @s run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_particle_round {distance:3.9,distance_reach:4.6,distance_target:4.25}
+execute if score @s[scores={rng1=2..22}] rng8 matches 45 at @s run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_particle_round {distance:4.4,distance_reach:5.1,distance_target:4.75}
+execute if score @s[scores={rng1=2..22}] rng8 matches 50 at @s run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_particle_round {distance:4.9,distance_reach:5.6,distance_target:5.25}
+execute if score @s[scores={rng1=2..22}] rng8 matches 55 at @s run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_particle_round {distance:5.4,distance_reach:6.1,distance_target:5.75}
+execute if score @s[scores={rng1=2..22}] rng8 matches 60 at @s run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_particle_round {distance:5.9,distance_reach:6.6,distance_target:6.25}
+execute if score @s[scores={rng1=2..22}] rng8 matches 65 at @s run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_particle_round {distance:6.4,distance_reach:7.1,distance_target:6.75}
+execute if score @s[scores={rng1=2..22}] rng8 matches 70 at @s run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_particle_round {distance:6.9,distance_reach:7.6,distance_target:7.25}
+execute if score @s[scores={rng1=2..22}] rng8 matches 75 at @s run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_particle_round {distance:7.4,distance_reach:8.1,distance_target:7.75}
+execute if score @s[scores={rng1=2..22}] rng8 matches 80 at @s run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_particle_round {distance:7.9,distance_reach:8.6,distance_target:8.25}
+execute if score @s[scores={rng1=2..22}] rng8 matches 85 at @s run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_particle_round {distance:8.4,distance_reach:9.1,distance_target:8.75}
+execute if score @s[scores={rng1=2..22}] rng8 matches 90 at @s run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire_particle_round {distance:8.9,distance_reach:9.6,distance_target:9.25}
 
 execute if entity @s[scores={rng1=23..}] run kill @s[type=marker]

@@ -25,8 +25,8 @@ execute if score @s AzrEntityTimer matches 1 run playsound minecraft:entity.evok
 
 execute if score @s rng1 matches -19 run rotate @s facing entity @p[tag=azrPlayer]
 execute if score @s rng1 matches -11 run rotate @s facing entity @p[tag=azrPlayer]
-execute if score @s rng1 matches -8 if score stage_main_thread AzrTimerStack matches ..300 run function skyblock:azr/assets/mobs_new/skill/marinus/move_fastshift
-execute if score @s rng1 matches -7 if score stage_main_thread AzrTimerStack matches ..300 run function skyblock:azr/assets/mobs_new/skill/marinus/move_forward
+execute if score @s rng1 matches -8 if score stage_main_thread AzrTimerStack matches ..300 run function skyblock:azr/assets/mobs/skill/marinus/move_fastshift
+execute if score @s rng1 matches -7 if score stage_main_thread AzrTimerStack matches ..300 run function skyblock:azr/assets/mobs/skill/marinus/move_forward
 execute if score @s rng1 matches -6 run rotate @s facing entity @p[tag=azrPlayer]
 execute if score @s rng1 matches -1 run rotate @s facing entity @p[tag=azrPlayer]
 
@@ -35,14 +35,14 @@ execute if score @s rng1 matches 1 at @s unless block ~ ~ ~0.4 air run scoreboar
 execute if score @s rng1 matches 1 at @s unless block ~ ~ ~-0.4 air run scoreboard players add @s rng8 1
 execute if score @s rng1 matches 1 at @s unless block ~0.4 ~ ~ air run scoreboard players add @s rng8 1
 execute if score @s rng1 matches 1 at @s unless block ~-0.4 ~ ~ air run scoreboard players add @s rng8 1
-execute if score @s rng1 matches 1 if score @s rng8 matches 2.. at @s if score stage_main_thread AzrTimerStack matches ..300 run function skyblock:azr/assets/mobs_new/skill/marinus/move_tp
+execute if score @s rng1 matches 1 if score @s rng8 matches 2.. at @s if score stage_main_thread AzrTimerStack matches ..300 run function skyblock:azr/assets/mobs/skill/marinus/move_tp
 
 execute if score @s rng1 matches 1 store result score @s rng8 run random value 1..3
 execute if score @s rng1 matches 1 at @s if entity @a[tag=azrPlayer,distance=..2.6] store result score @s rng8 run random value 2..6
 
 
-execute if score @s rng1 matches 1.. if score @s rng8 matches 1..3 run function skyblock:azr/assets/mobs_new/skill/marinus/attack_single_throw_harmful
-execute if score @s rng1 matches 1.. if score @s rng8 matches 4..6 run function skyblock:azr/assets/mobs_new/skill/marinus/attack_closeup
+execute if score @s rng1 matches 1.. if score @s rng8 matches 1..3 run function skyblock:azr/assets/mobs/skill/marinus/attack_single_throw_harmful
+execute if score @s rng1 matches 1.. if score @s rng8 matches 4..6 run function skyblock:azr/assets/mobs/skill/marinus/attack_closeup
 execute if score @s rng1 matches 20.. run scoreboard players set @s rng1 -12
 
 execute if score @s AzrEntityTimer matches 1 positioned -79890 38 51 run bossbar add azr:boss_hp_bar "斩海的沉寂 - 马林努斯"

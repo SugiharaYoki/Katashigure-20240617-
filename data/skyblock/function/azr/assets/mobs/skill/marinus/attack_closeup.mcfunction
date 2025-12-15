@@ -34,7 +34,7 @@ execute if score @s rng1 matches 2 run particle minecraft:enchant ~ ~0.5 ~ 1 0 0
 execute if score @s rng1 matches 2 run particle minecraft:enchant ~ ~0.5 ~ 0 0 1 0.2 20
 
 execute if score @s rng1 matches 5 run item replace entity @s weapon.mainhand with air
-execute if score @s rng1 matches 5 run function skyblock:azr/assets/mobs_new/skill/marinus/attack_instant_slash_harmful
+execute if score @s rng1 matches 5 run function skyblock:azr/assets/mobs/skill/marinus/attack_instant_slash_harmful
 execute if score @s rng1 matches 5 store result score @s rng5 run random value 3..4
 execute if score @s rng1 matches 5 if score @s rng5 matches 3 run scoreboard players set @s rng1 -7
 execute if score @s rng1 matches 5 if score @s rng5 matches 4 run scoreboard players set @s rng1 -3

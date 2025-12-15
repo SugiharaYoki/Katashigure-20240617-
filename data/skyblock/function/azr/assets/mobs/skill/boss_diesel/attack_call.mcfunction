@@ -22,10 +22,10 @@ execute if score @s rng8 matches 60 positioned -80002 27 208 run playsound entit
 execute if score @s rng8 matches 60 positioned -80020 27 208 run playsound entity.generic.explode block @a ~ ~ ~ 1.5 1.2
 execute if score @s rng8 matches 60 positioned -80020 27 192 run playsound entity.generic.explode block @a ~ ~ ~ 1.5 1.2
 execute if score @s rng8 matches 60 positioned -80002 27 192 run playsound entity.generic.explode block @a ~ ~ ~ 1.5 1.2
-execute if score @s rng8 matches 60 positioned -80002 27 208 run function skyblock:azr/assets/mobs_new/floating_fire
-execute if score @s rng8 matches 60 positioned -80020 27 208 run function skyblock:azr/assets/mobs_new/floating_fire
-execute if score @s rng8 matches 60 positioned -80020 27 192 run function skyblock:azr/assets/mobs_new/floating_fire
-execute if score @s rng8 matches 60 positioned -80002 27 192 run function skyblock:azr/assets/mobs_new/floating_fire
+execute if score @s rng8 matches 60 positioned -80002 27 208 run function skyblock:azr/assets/mobs/floating_fire
+execute if score @s rng8 matches 60 positioned -80020 27 208 run function skyblock:azr/assets/mobs/floating_fire
+execute if score @s rng8 matches 60 positioned -80020 27 192 run function skyblock:azr/assets/mobs/floating_fire
+execute if score @s rng8 matches 60 positioned -80002 27 192 run function skyblock:azr/assets/mobs/floating_fire
 execute if score @s rng8 matches 60 run scoreboard players set @s rng8 81
 
 execute if score @s rng8 matches 82.. store result score @s rng3 run random value 12..16

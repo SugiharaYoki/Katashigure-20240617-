@@ -44,8 +44,8 @@ execute if score stage_main_thread AzrTimerStack matches 401 positioned -79925.4
 
 #    execute if score stage_main_thread AzrTimerStack matches 400 run particle minecraft:soul_fire_flame -79931 38.8 88 0 0 0 0.3 200
 #    execute if score stage_main_thread AzrTimerStack matches 400 run particle minecraft:explosion -79931 39.4 88 0.3 0.3 0.3 1 3
-    execute if score stage_main_thread AzrTimerStack matches 409 positioned -79923 43 96 run function skyblock:azr/assets/mobs_new/unique/andralune
-    execute if score stage_main_thread AzrTimerStack matches 409 positioned -79925.49 41.50 96.49 run function skyblock:azr/assets/mobs_new/unique/mersenne
+    execute if score stage_main_thread AzrTimerStack matches 409 positioned -79923 43 96 run function skyblock:azr/assets/mobs/unique/andralune
+    execute if score stage_main_thread AzrTimerStack matches 409 positioned -79925.49 41.50 96.49 run function skyblock:azr/assets/mobs/unique/mersenne
 
 execute if score stage_main_thread AzrTimerStack matches 409..580 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 409..580 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_mersenne] facing entity @p[tag=azrPlayer]

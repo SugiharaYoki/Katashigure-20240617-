@@ -45,21 +45,21 @@ execute if score stage_boss_bgm AzrTimerStack matches 4200.. run scoreboard play
     execute if score @s[scores={Health=..180}] rng8 matches 1 store result score @s[tag=!Phase2] rng2 run random value 98..99
     execute if score @s[scores={Health=130..180}] rng8 matches 1 store result score @s[tag=Phase2] rng2 run random value 7..13
     execute if score @s[scores={Health=..130}] rng8 matches 1 store result score @s[tag=Phase2] rng2 run random value 7..15
-    execute if score @s[scores={rng2=1..3}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/attack_flat_01
-    execute if score @s[scores={rng2=4..6}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/attack_flat_02
-    execute if score @s[scores={rng2=7..8}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/skill_arrowpince
-    execute if score @s[scores={rng2=9..11}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/skill_arroworb
-    execute if score @s[scores={rng2=12..13}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/skill_breakingout
-    execute if score @s[scores={rng2=12..13}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/skill_stockpile
-    execute if score @s[scores={rng2=98..99}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/phase_equip_bow
+    execute if score @s[scores={rng2=1..3}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss1_andralune/attack_flat_01
+    execute if score @s[scores={rng2=4..6}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss1_andralune/attack_flat_02
+    execute if score @s[scores={rng2=7..8}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss1_andralune/skill_arrowpince
+    execute if score @s[scores={rng2=9..11}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss1_andralune/skill_arroworb
+    execute if score @s[scores={rng2=12..13}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss1_andralune/skill_breakingout
+    execute if score @s[scores={rng2=12..13}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss1_andralune/skill_stockpile
+    execute if score @s[scores={rng2=98..99}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss1_andralune/phase_equip_bow
     execute if score @s[scores={rng2=..0}] rng8 matches 2.. run scoreboard players set @s rng8 -8
     execute if score @s[tag=!Phase2] rng8 matches 999.. run scoreboard players set @s rng8 -8
     execute if score @s[tag=Phase2] rng8 matches 999.. run scoreboard players set @s rng8 -20
 
     execute if score @s[scores={Health=..250}] rng8 matches -3 store result score @s rng5 run random value 1..100
-    execute if entity @s[scores={rng5=1..3}] run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/move_back
-    execute if entity @s[scores={rng5=4..6}] run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/move_forward
-    execute if entity @s[scores={rng5=7..10}] run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/move_fastshift
+    execute if entity @s[scores={rng5=1..3}] run function skyblock:azr/assets/mobs/skill/boss1_andralune/move_back
+    execute if entity @s[scores={rng5=4..6}] run function skyblock:azr/assets/mobs/skill/boss1_andralune/move_forward
+    execute if entity @s[scores={rng5=7..10}] run function skyblock:azr/assets/mobs/skill/boss1_andralune/move_fastshift
     execute if entity @s[scores={rng5=1..}] run scoreboard players set @s rng5 0
 
     execute as @s[scores={Health=..180},tag=Phase2] if block ~ ~-0.1 ~ air run particle falling_obsidian_tear ^2 ^ ^ 0.2 0.2 0.2 0 1
@@ -68,8 +68,8 @@ execute if score stage_boss_bgm AzrTimerStack matches 4200.. run scoreboard play
 
 #MARKER
 
-    execute as @e[distance=0..80,tag=AZR_boss2_arrowpince_marker_release] at @s run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/skill_arrowpince_particle
-    execute as @e[distance=0..80,tag=AZR_summon_arroworb] at @s run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/summon_arroworb
+    execute as @e[distance=0..80,tag=AZR_boss2_arrowpince_marker_release] at @s run function skyblock:azr/assets/mobs/skill/boss1_andralune/skill_arrowpince_particle
+    execute as @e[distance=0..80,tag=AZR_summon_arroworb] at @s run function skyblock:azr/assets/mobs/skill/boss1_andralune/summon_arroworb
 
 
     execute if score tick_main_thread AzrTimerStack matches 1850..1880 as @n[tag=AzrielBossA,scores={Health=..75}] run scoreboard players set tick_main_thread AzrTimerStack 38

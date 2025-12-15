@@ -9,64 +9,64 @@ execute if score stage_bonus_thread AzrTimerStack matches 204 run bossbar remove
 #
 #
 
-#execute if score stage_bonus_thread AzrTimerStack matches 2 positioned -79952 38 199 run function skyblock:azr/assets/mobs_new/shield
+#execute if score stage_bonus_thread AzrTimerStack matches 2 positioned -79952 38 199 run function skyblock:azr/assets/mobs/shield
 #execute if score stage_bonus_thread AzrTimerStack matches 29..30 positioned -79952 38 199 if entity @n[distance=..10,tag=AzrielMob_sword] run scoreboard players set stage_bonus_thread AzrTimerStack 29
 
 
-execute if score stage_bonus_thread AzrTimerStack matches 3 positioned -79897 43 164 run function skyblock:azr/assets/mobs_new/undead
-execute if score stage_bonus_thread AzrTimerStack matches 3 positioned -79887 43 174 run function skyblock:azr/assets/mobs_new/undead
-execute if score stage_bonus_thread AzrTimerStack matches 3 positioned -79877 43 164 run function skyblock:azr/assets/mobs_new/undead
-execute if score stage_bonus_thread AzrTimerStack matches 3 positioned -79887 43 154 run function skyblock:azr/assets/mobs_new/undead
-execute if score stage_bonus_thread AzrTimerStack matches 23 positioned -79897 43 164 run function skyblock:azr/assets/mobs_new/undead
-execute if score stage_bonus_thread AzrTimerStack matches 23 positioned -79887 43 174 run function skyblock:azr/assets/mobs_new/undead
-execute if score stage_bonus_thread AzrTimerStack matches 23 positioned -79877 43 164 run function skyblock:azr/assets/mobs_new/undead
-execute if score stage_bonus_thread AzrTimerStack matches 23 positioned -79887 43 154 run function skyblock:azr/assets/mobs_new/undead
-execute if score stage_bonus_thread AzrTimerStack matches 43 positioned -79897 43 164 run function skyblock:azr/assets/mobs_new/undead
-execute if score stage_bonus_thread AzrTimerStack matches 43 positioned -79887 43 174 run function skyblock:azr/assets/mobs_new/undead
-execute if score stage_bonus_thread AzrTimerStack matches 43 positioned -79877 43 164 run function skyblock:azr/assets/mobs_new/undead
-execute if score stage_bonus_thread AzrTimerStack matches 43 positioned -79887 43 154 run function skyblock:azr/assets/mobs_new/undead
-execute if score stage_bonus_thread AzrTimerStack matches 63 positioned -79897 43 164 run function skyblock:azr/assets/mobs_new/undead_pickaxe
-execute if score stage_bonus_thread AzrTimerStack matches 63 positioned -79877 43 164 run function skyblock:azr/assets/mobs_new/undead_pickaxe
-execute if score stage_bonus_thread AzrTimerStack matches 73 positioned -79897 43 164 run function skyblock:azr/assets/mobs_new/sword
-execute if score stage_bonus_thread AzrTimerStack matches 73 positioned -79877 43 164 run function skyblock:azr/assets/mobs_new/sword
+execute if score stage_bonus_thread AzrTimerStack matches 3 positioned -79897 43 164 run function skyblock:azr/assets/mobs/undead
+execute if score stage_bonus_thread AzrTimerStack matches 3 positioned -79887 43 174 run function skyblock:azr/assets/mobs/undead
+execute if score stage_bonus_thread AzrTimerStack matches 3 positioned -79877 43 164 run function skyblock:azr/assets/mobs/undead
+execute if score stage_bonus_thread AzrTimerStack matches 3 positioned -79887 43 154 run function skyblock:azr/assets/mobs/undead
+execute if score stage_bonus_thread AzrTimerStack matches 23 positioned -79897 43 164 run function skyblock:azr/assets/mobs/undead
+execute if score stage_bonus_thread AzrTimerStack matches 23 positioned -79887 43 174 run function skyblock:azr/assets/mobs/undead
+execute if score stage_bonus_thread AzrTimerStack matches 23 positioned -79877 43 164 run function skyblock:azr/assets/mobs/undead
+execute if score stage_bonus_thread AzrTimerStack matches 23 positioned -79887 43 154 run function skyblock:azr/assets/mobs/undead
+execute if score stage_bonus_thread AzrTimerStack matches 43 positioned -79897 43 164 run function skyblock:azr/assets/mobs/undead
+execute if score stage_bonus_thread AzrTimerStack matches 43 positioned -79887 43 174 run function skyblock:azr/assets/mobs/undead
+execute if score stage_bonus_thread AzrTimerStack matches 43 positioned -79877 43 164 run function skyblock:azr/assets/mobs/undead
+execute if score stage_bonus_thread AzrTimerStack matches 43 positioned -79887 43 154 run function skyblock:azr/assets/mobs/undead
+execute if score stage_bonus_thread AzrTimerStack matches 63 positioned -79897 43 164 run function skyblock:azr/assets/mobs/undead_pickaxe
+execute if score stage_bonus_thread AzrTimerStack matches 63 positioned -79877 43 164 run function skyblock:azr/assets/mobs/undead_pickaxe
+execute if score stage_bonus_thread AzrTimerStack matches 73 positioned -79897 43 164 run function skyblock:azr/assets/mobs/sword
+execute if score stage_bonus_thread AzrTimerStack matches 73 positioned -79877 43 164 run function skyblock:azr/assets/mobs/sword
 
 execute if score stage_bonus_thread AzrTimerStack matches 78..79 positioned -79887 43 164 if entity @n[distance=..13,tag=AzrielMob_undead_pickaxe] run scoreboard players set stage_bonus_thread AzrTimerStack 78
 
-execute if score stage_bonus_thread AzrTimerStack matches 81 positioned -79897 43 164 run function skyblock:azr/assets/mobs_new/shield
-execute if score stage_bonus_thread AzrTimerStack matches 81 positioned -79887 43 174 run function skyblock:azr/assets/mobs_new/shield
-execute if score stage_bonus_thread AzrTimerStack matches 81 positioned -79877 43 164 run function skyblock:azr/assets/mobs_new/shield
-execute if score stage_bonus_thread AzrTimerStack matches 81 positioned -79887 43 154 run function skyblock:azr/assets/mobs_new/shield
-execute if score stage_bonus_thread AzrTimerStack matches 86 positioned -79897 43 164 run function skyblock:azr/assets/mobs_new/axe
-execute if score stage_bonus_thread AzrTimerStack matches 86 positioned -79877 43 164 run function skyblock:azr/assets/mobs_new/axe
-execute if score stage_bonus_thread AzrTimerStack matches 96 positioned -79887 43 174 run function skyblock:azr/assets/mobs_new/pillager
-execute if score stage_bonus_thread AzrTimerStack matches 96 positioned -79887 43 154 run function skyblock:azr/assets/mobs_new/pillager
+execute if score stage_bonus_thread AzrTimerStack matches 81 positioned -79897 43 164 run function skyblock:azr/assets/mobs/shield
+execute if score stage_bonus_thread AzrTimerStack matches 81 positioned -79887 43 174 run function skyblock:azr/assets/mobs/shield
+execute if score stage_bonus_thread AzrTimerStack matches 81 positioned -79877 43 164 run function skyblock:azr/assets/mobs/shield
+execute if score stage_bonus_thread AzrTimerStack matches 81 positioned -79887 43 154 run function skyblock:azr/assets/mobs/shield
+execute if score stage_bonus_thread AzrTimerStack matches 86 positioned -79897 43 164 run function skyblock:azr/assets/mobs/axe
+execute if score stage_bonus_thread AzrTimerStack matches 86 positioned -79877 43 164 run function skyblock:azr/assets/mobs/axe
+execute if score stage_bonus_thread AzrTimerStack matches 96 positioned -79887 43 174 run function skyblock:azr/assets/mobs/pillager
+execute if score stage_bonus_thread AzrTimerStack matches 96 positioned -79887 43 154 run function skyblock:azr/assets/mobs/pillager
 
 execute if score stage_bonus_thread AzrTimerStack matches 100..101 positioned -79887 43 164 if entity @n[distance=..13,tag=AzrielMob_axe] run scoreboard players set stage_bonus_thread AzrTimerStack 100
 
 execute if score stage_bonus_thread AzrTimerStack matches 102 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:shield_heavy}
-execute if score stage_bonus_thread AzrTimerStack matches 102 positioned -79897 43 164 run function skyblock:azr/assets/mobs_new/shield_heavy
-execute if score stage_bonus_thread AzrTimerStack matches 102 positioned -79877 43 164 run function skyblock:azr/assets/mobs_new/shield_heavy
-execute if score stage_bonus_thread AzrTimerStack matches 112 positioned -79897 43 164 run function skyblock:azr/assets/mobs_new/undead
-execute if score stage_bonus_thread AzrTimerStack matches 116 positioned -79887 43 174 run function skyblock:azr/assets/mobs_new/undead
-execute if score stage_bonus_thread AzrTimerStack matches 120 positioned -79877 43 164 run function skyblock:azr/assets/mobs_new/undead
-execute if score stage_bonus_thread AzrTimerStack matches 124 positioned -79887 43 154 run function skyblock:azr/assets/mobs_new/undead
-execute if score stage_bonus_thread AzrTimerStack matches 132 positioned -79897 43 164 run function skyblock:azr/assets/mobs_new/undead
-execute if score stage_bonus_thread AzrTimerStack matches 136 positioned -79887 43 174 run function skyblock:azr/assets/mobs_new/undead
-execute if score stage_bonus_thread AzrTimerStack matches 140 positioned -79877 43 164 run function skyblock:azr/assets/mobs_new/undead
-execute if score stage_bonus_thread AzrTimerStack matches 144 positioned -79887 43 154 run function skyblock:azr/assets/mobs_new/undead
-execute if score stage_bonus_thread AzrTimerStack matches 152 positioned -79897 43 164 run function skyblock:azr/assets/mobs_new/sword
-execute if score stage_bonus_thread AzrTimerStack matches 156 positioned -79887 43 174 run function skyblock:azr/assets/mobs_new/sword
-execute if score stage_bonus_thread AzrTimerStack matches 160 positioned -79877 43 164 run function skyblock:azr/assets/mobs_new/sword
-execute if score stage_bonus_thread AzrTimerStack matches 164 positioned -79887 43 154 run function skyblock:azr/assets/mobs_new/sword
+execute if score stage_bonus_thread AzrTimerStack matches 102 positioned -79897 43 164 run function skyblock:azr/assets/mobs/shield_heavy
+execute if score stage_bonus_thread AzrTimerStack matches 102 positioned -79877 43 164 run function skyblock:azr/assets/mobs/shield_heavy
+execute if score stage_bonus_thread AzrTimerStack matches 112 positioned -79897 43 164 run function skyblock:azr/assets/mobs/undead
+execute if score stage_bonus_thread AzrTimerStack matches 116 positioned -79887 43 174 run function skyblock:azr/assets/mobs/undead
+execute if score stage_bonus_thread AzrTimerStack matches 120 positioned -79877 43 164 run function skyblock:azr/assets/mobs/undead
+execute if score stage_bonus_thread AzrTimerStack matches 124 positioned -79887 43 154 run function skyblock:azr/assets/mobs/undead
+execute if score stage_bonus_thread AzrTimerStack matches 132 positioned -79897 43 164 run function skyblock:azr/assets/mobs/undead
+execute if score stage_bonus_thread AzrTimerStack matches 136 positioned -79887 43 174 run function skyblock:azr/assets/mobs/undead
+execute if score stage_bonus_thread AzrTimerStack matches 140 positioned -79877 43 164 run function skyblock:azr/assets/mobs/undead
+execute if score stage_bonus_thread AzrTimerStack matches 144 positioned -79887 43 154 run function skyblock:azr/assets/mobs/undead
+execute if score stage_bonus_thread AzrTimerStack matches 152 positioned -79897 43 164 run function skyblock:azr/assets/mobs/sword
+execute if score stage_bonus_thread AzrTimerStack matches 156 positioned -79887 43 174 run function skyblock:azr/assets/mobs/sword
+execute if score stage_bonus_thread AzrTimerStack matches 160 positioned -79877 43 164 run function skyblock:azr/assets/mobs/sword
+execute if score stage_bonus_thread AzrTimerStack matches 164 positioned -79887 43 154 run function skyblock:azr/assets/mobs/sword
 
 execute if score stage_bonus_thread AzrTimerStack matches 180..181 positioned -79887 43 164 if entity @n[distance=..13,tag=AzrielMob_shield_heavy] run scoreboard players set stage_bonus_thread AzrTimerStack 180
 
-execute if score stage_bonus_thread AzrTimerStack matches 182 positioned -79887 43 174 run function skyblock:azr/assets/mobs_new/shield_heavy
-execute if score stage_bonus_thread AzrTimerStack matches 182 positioned -79887 43 154 run function skyblock:azr/assets/mobs_new/shield_heavy
-execute if score stage_bonus_thread AzrTimerStack matches 192 positioned -79897 43 164 run function skyblock:azr/assets/mobs_new/undead_pickaxe
-execute if score stage_bonus_thread AzrTimerStack matches 192 positioned -79887 43 174 run function skyblock:azr/assets/mobs_new/undead_pickaxe
-execute if score stage_bonus_thread AzrTimerStack matches 192 positioned -79877 43 164 run function skyblock:azr/assets/mobs_new/undead_pickaxe
-execute if score stage_bonus_thread AzrTimerStack matches 192 positioned -79887 43 154 run function skyblock:azr/assets/mobs_new/undead_pickaxe
+execute if score stage_bonus_thread AzrTimerStack matches 182 positioned -79887 43 174 run function skyblock:azr/assets/mobs/shield_heavy
+execute if score stage_bonus_thread AzrTimerStack matches 182 positioned -79887 43 154 run function skyblock:azr/assets/mobs/shield_heavy
+execute if score stage_bonus_thread AzrTimerStack matches 192 positioned -79897 43 164 run function skyblock:azr/assets/mobs/undead_pickaxe
+execute if score stage_bonus_thread AzrTimerStack matches 192 positioned -79887 43 174 run function skyblock:azr/assets/mobs/undead_pickaxe
+execute if score stage_bonus_thread AzrTimerStack matches 192 positioned -79877 43 164 run function skyblock:azr/assets/mobs/undead_pickaxe
+execute if score stage_bonus_thread AzrTimerStack matches 192 positioned -79887 43 154 run function skyblock:azr/assets/mobs/undead_pickaxe
 
 execute if score stage_bonus_thread AzrTimerStack matches 200..201 positioned -79887 43 164 if entity @n[distance=..13,tag=AzrielMob_shield_heavy] run scoreboard players set stage_bonus_thread AzrTimerStack 200
 

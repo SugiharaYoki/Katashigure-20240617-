@@ -23,7 +23,7 @@ execute if score @s AzrEntityTimer matches 32 positioned -80002 27 192 run plays
 
 execute if score @s AzrEntityTimer matches 41..50 positioned -80011 25 200 run function skyblock:azr/assets/events/effects/player_magic_release
 
-execute if score @s AzrEntityTimer matches 51 positioned -80011 25 200 run function skyblock:azr/assets/mobs_new/skill/boss_diesel/summon
+execute if score @s AzrEntityTimer matches 51 positioned -80011 25 200 run function skyblock:azr/assets/mobs/skill/boss_diesel/summon
 
 execute if score @s AzrEntityTimer matches 51 positioned -80011 25 200 run bossbar add azr:boss_hp_bar_diesel "半阙恒久的热源 - 锅炉驱动者"
 execute if score @s AzrEntityTimer matches 51 positioned -80011 25 200 run bossbar set azr:boss_hp_bar_diesel color red
@@ -46,8 +46,8 @@ execute positioned -80011 25 200 store result bossbar azr:boss_hp_bar_diesel val
     execute as @n[tag=AzrielBossDiesel] at @s if score @s[scores={Health=100..180}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 2..6
     execute as @n[tag=AzrielBossDiesel] at @s if score @s[scores={Health=50..99}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
     execute as @n[tag=AzrielBossDiesel] at @s if score @s[scores={Health=..49}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..5
-    execute as @n[tag=AzrielBossDiesel] at @s if score @s[scores={rng2=2..4}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss_diesel/attack_fire
-    execute as @n[tag=AzrielBossDiesel] at @s if score @s[scores={rng2=1}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss_diesel/attack_call
+    execute as @n[tag=AzrielBossDiesel] at @s if score @s[scores={rng2=2..4}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_diesel/attack_fire
+    execute as @n[tag=AzrielBossDiesel] at @s if score @s[scores={rng2=1}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_diesel/attack_call
 
     execute as @n[tag=AzrielBossDiesel] at @s if entity @s[scores={Health=180..}] run scoreboard players set @s rng8 -20
     execute as @n[tag=AzrielBossDiesel] at @s if score @s[scores={rng2=5..6}] rng8 matches 23.. run scoreboard players set @s rng8 83

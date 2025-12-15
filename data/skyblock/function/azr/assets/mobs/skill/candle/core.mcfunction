@@ -12,9 +12,9 @@ execute if score @s rng8 matches 10 store result score @s[scores={Health=..59}] 
 execute if score @s rng8 matches 10 run scoreboard players operation @s rng8 += @s rng1
 execute if score @s rng8 matches 80 store result score @s rng2 run random value 1..6
 
-execute if score @s rng8 matches 80.. if score @s rng2 matches 1..3 at @s run function skyblock:azr/assets/mobs_new/skill/candle/candle_lit
-execute if score @s rng8 matches 80.. if score @s rng2 matches 4..6 at @s run function skyblock:azr/assets/mobs_new/skill/candle/candle_throw
-#execute if score @s rng8 matches 80.. if score @s rng2 matches 7..8 at @s run function skyblock:azr/assets/mobs_new/skill/candle/candle_estimate
+execute if score @s rng8 matches 80.. if score @s rng2 matches 1..3 at @s run function skyblock:azr/assets/mobs/skill/candle/candle_lit
+execute if score @s rng8 matches 80.. if score @s rng2 matches 4..6 at @s run function skyblock:azr/assets/mobs/skill/candle/candle_throw
+#execute if score @s rng8 matches 80.. if score @s rng2 matches 7..8 at @s run function skyblock:azr/assets/mobs/skill/candle/candle_estimate
 
 
 
