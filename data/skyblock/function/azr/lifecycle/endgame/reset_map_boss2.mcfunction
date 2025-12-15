@@ -11,6 +11,7 @@ scoreboard players set stage Azr_system 21
 bossbar remove azr:boss_hp_bar
 
 execute as @n[tag=AzrielBossA] run tag @s remove actionable
+execute as @n[tag=AzrielBossA] run tag @s remove Phase2
 execute as @n[tag=AzrielBossA] run item replace entity @s weapon.mainhand with air
 execute as @n[tag=AzrielBossA] run item replace entity @s weapon.offhand with air
 execute as @n[tag=AzrielBossA] run data modify entity @s Invulnerable set value 1b
