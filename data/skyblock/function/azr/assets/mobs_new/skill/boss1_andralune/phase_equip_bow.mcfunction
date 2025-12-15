@@ -15,7 +15,8 @@ execute if score @s rng1 matches 11 run playsound minecraft:ambient.warped_fores
 execute if score @s rng1 matches 11 run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
 execute if score @s rng1 matches 11 run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
 
-execute if score @s rng1 matches 60 at @s run particle minecraft:explosion ~ ~ ~ 0.3 0.3 0.3 1 3
+execute if score @s rng1 matches 60 at @s run particle minecraft:explosion ~ ~1 ~ 0.3 0.3 0.3 1 5
+execute if score @s rng1 matches 60 at @s run particle minecraft:large_smoke ~ ~1 ~ 0.5 0.3 0.5 1 5
 execute if score @s rng1 matches 60 at @s run playsound minecraft:entity.lightning_bolt.impact master @a[tag=azrShowDialog] ~ ~ ~ 10 1.2
 execute if score @s rng1 matches 60 at @s run playsound minecraft:item.trident.thunder master @a[tag=azrShowDialog] -79931 38.8 88 1 0.8
 execute if score @s rng1 matches 60 at @s run playsound minecraft:entity.lightning_bolt.thunder master @a[tag=azrShowDialog] ~ ~ ~ 10 0.8
