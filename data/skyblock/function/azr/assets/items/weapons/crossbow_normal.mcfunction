@@ -1,1 +1,0 @@
-give @s crossbow[custom_name='{"text":"弩·传统","color":"white","italic":false}',custom_data={crossbow_normal:1b},custom_model_data={floats:[100001.0]}]

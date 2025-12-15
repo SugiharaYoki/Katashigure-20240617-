@@ -1,1 +1,0 @@
-give @s splash_potion[potion_contents={potion:"water",custom_effects:[{id:"slowness",amplifier:19,duration:200}]},custom_name='[{"italic":false,"color":"light_purple","text":"「静止瓶」"},{"italic":false,"color":"blue","text":"lv1"}]']

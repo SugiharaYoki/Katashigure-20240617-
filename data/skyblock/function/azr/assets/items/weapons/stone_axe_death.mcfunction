@@ -1,1 +1,0 @@
-give @s stone_axe[custom_name='{"text":"石斧·亡息","italic":false}',attribute_modifiers=[{id:"azr:stone_axe_death.attack_damage",type:"attack_damage",amount:11,operation:"add_value",slot:"mainhand"},{id:"azr:stone_axe_death.attack_speed",type:"attack_speed",amount:-2.7,operation:"add_value",slot:"mainhand"}],custom_data={stone_axe_death:1b},custom_model_data={floats:[100003.0]}]

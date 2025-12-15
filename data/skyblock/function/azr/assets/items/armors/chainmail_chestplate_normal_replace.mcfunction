@@ -1,1 +1,0 @@
-item replace entity @s armor.chest with chainmail_chestplate[custom_data={chainmail_chestplate_normal:1b},custom_model_data={floats:[100002.0]}]

@@ -1,2 +1,0 @@
-effect give @e[tag=AzrielMob,distance=0.1..2] resistance 1 1 false
-summon area_effect_cloud ~ ~0.3 ~ {ReapplicationDelay:9999,Radius:0.5f,RadiusPerTick:1.16f,RadiusOnUse:0f,Duration:3,DurationOnUse:0,WaitTime:1,Color:12553734,potion_contents:"water"}

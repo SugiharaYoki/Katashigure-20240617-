@@ -1,1 +1,0 @@
-give @s netherite_helmet[custom_name='{"text":"合金头盔","color":"white","italic":false}',custom_model_data={floats:[100001.0]},custom_data={netherite_helmet_normal:1b}] 1

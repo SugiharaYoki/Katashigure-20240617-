@@ -1,1 +1,0 @@
-give @s netherite_chestplate[custom_name='{"text":"合金胸甲","color":"white","italic":false}',custom_model_data={floats:[100002.0]},custom_data={netherite_chestplate_normal:1b}] 1

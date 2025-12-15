@@ -1,1 +1,0 @@
-give @s bow[custom_name='{"text":"弓·冲击","italic":false}',enchantments={punch:1},custom_data={bow_punch:1b}]
