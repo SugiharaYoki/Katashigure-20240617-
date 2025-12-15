@@ -16,3 +16,5 @@ execute as @n[tag=AzrielBossA] run item replace entity @s weapon.mainhand with a
 execute as @n[tag=AzrielBossA] run item replace entity @s weapon.offhand with air
 execute as @n[tag=AzrielBossA] run data modify entity @s Invulnerable set value 1b
 execute as @n[tag=AzrielBossA] run data modify entity @s NoAI set value 1b
+
+effect clear @a[tag=azrPlayer] blindness

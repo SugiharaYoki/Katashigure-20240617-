@@ -34,3 +34,6 @@ setblock -79934 39 70 sea_lantern
 setblock -79934 39 72 sea_lantern
 
 bossbar remove azr:boss_hp_bar
+
+
+effect clear @a[tag=azrPlayer] blindness
