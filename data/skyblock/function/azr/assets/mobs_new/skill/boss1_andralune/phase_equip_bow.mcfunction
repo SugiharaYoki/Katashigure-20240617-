@@ -2,6 +2,7 @@
 scoreboard players add @s rng1 1
 
 execute if score @s rng1 matches 1 run effect give @s slowness 3 9 true
+execute if score @s rng1 matches 1 run effect give @s resistance 3 4 true
 
 execute if score @s rng1 matches 11..60 at @s rotated as @s rotated ~ 0 run particle trial_spawner_detection ^2 ^ ^2 0 0 0 0 1
 execute if score @s rng1 matches 11..60 at @s rotated as @s rotated ~ 0 run particle trial_spawner_detection ^2 ^ ^-2 0 0 0 0 1
@@ -21,6 +22,7 @@ execute if score @s rng1 matches 60 at @s run playsound minecraft:entity.lightni
 execute if score @s rng1 matches 60 at @s run function skyblock:azr/assets/events/effects/zanei_appear
 execute if score @s rng1 matches 60 at @s run item replace entity @s weapon.mainhand with bow
 
+execute if score @s rng1 matches 60 run effect give @s resistance 30 0 true
 
 
 execute if score @s rng8 matches 60.. run tag @s add Phase2
