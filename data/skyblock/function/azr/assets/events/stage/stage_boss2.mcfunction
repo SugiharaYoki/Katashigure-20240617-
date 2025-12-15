@@ -49,8 +49,8 @@ execute if score stage_boss_bgm AzrTimerStack matches 4200.. run scoreboard play
     execute if score @s[scores={rng2=6..8}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/attack_flat_02
     execute if score @s[scores={rng2=9..10}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/skill_arroworb
     execute if score @s[scores={rng2=98..99}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/phase_equip_bow
-    execute if score @s[scores={rng2=..0}] rng8 matches 2.. run scoreboard players set @s rng8 -20
-    execute if score @s rng8 matches 999.. run scoreboard players set @s rng8 -20
+    execute if score @s[scores={rng2=..0}] rng8 matches 2.. run scoreboard players set @s rng8 -8
+    execute if score @s rng8 matches 999.. run scoreboard players set @s rng8 -8
 
     execute if score @s[scores={Health=..250}] rng8 matches -3 store result score @s rng5 run random value 1..100
     execute if entity @s[scores={rng5=1..2}] run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/move_back
