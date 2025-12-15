@@ -27,7 +27,7 @@ execute if score stage_main_thread AzrTimerStack matches 86 at @n[tag=AzrielNPC_
 execute if score stage_main_thread AzrTimerStack matches 86 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“好。我希望你也做好相应的准备。”","color":"white"}]
 
 
-fill -79904 41 0 -79902 38 0 minecraft:red_stained_glass
+execute if score stage_main_thread AzrTimerStack matches 86 run fill -79904 41 0 -79902 38 0 minecraft:red_stained_glass
 
 execute if score stage_main_thread AzrTimerStack matches 91 run particle minecraft:enchant -79903 44 -14.0 1 1 1 0.5 200
 execute if score stage_main_thread AzrTimerStack matches 91.. as @n[tag=AzrielBossA] store result score @s Health run data get entity @s Health
