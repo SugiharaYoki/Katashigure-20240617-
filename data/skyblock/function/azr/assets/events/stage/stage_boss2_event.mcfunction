@@ -22,7 +22,7 @@ execute if score stage_main_thread AzrTimerStack matches 21 if entity @n[tag=Azr
 execute if score stage_main_thread AzrTimerStack matches 39 if entity @n[tag=AzrielNPC_andralune,tag=!BOSS_seen_2] positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n“我不知道你说的是什么意思，但我确实是来打败你的。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 39 if entity @n[tag=AzrielNPC_andralune,tag=BOSS_seen_2] at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score stage_main_thread AzrTimerStack matches 39 if entity @n[tag=AzrielNPC_andralune,tag=BOSS_seen_2] positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“那么，继续我们之间的战斗吧。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 39 if entity @n[tag=AzrielNPC_andralune,tag=BOSS_seen_2] positioned -79923 43 96 run scoreboard players set stage_main_thread AzrTimerStack 86
+execute if score stage_main_thread AzrTimerStack matches 39 if entity @n[tag=AzrielNPC_andralune,tag=BOSS_seen_2] positioned -79923 43 96 run scoreboard players set stage_main_thread AzrTimerStack 90
 
 execute if score stage_main_thread AzrTimerStack matches 56 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score stage_main_thread AzrTimerStack matches 56 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“我相当欣赏你的勇气。但是，我多么希望你至少站对了立场。”","color":"white"}]
@@ -34,7 +34,7 @@ execute if score stage_main_thread AzrTimerStack matches 86 at @n[tag=AzrielNPC_
 execute if score stage_main_thread AzrTimerStack matches 86 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“好。我希望你也做好相应的准备。”","color":"white"}]
 
 
-execute if score stage_main_thread AzrTimerStack matches 86 run fill -79904 41 0 -79902 38 0 minecraft:red_stained_glass
+execute if score stage_main_thread AzrTimerStack matches 86..90 run fill -79904 41 0 -79902 38 0 minecraft:red_stained_glass
 
 
 execute if score stage_main_thread AzrTimerStack matches 92..990 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
