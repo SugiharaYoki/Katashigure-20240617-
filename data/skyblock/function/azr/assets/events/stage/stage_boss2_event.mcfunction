@@ -29,6 +29,8 @@ execute if score stage_main_thread AzrTimerStack matches 86 positioned -79923 43
 
 execute if score stage_main_thread AzrTimerStack matches 86 run fill -79904 41 0 -79902 38 0 minecraft:red_stained_glass
 
+
+
 execute if score stage_main_thread AzrTimerStack matches 91 run particle minecraft:enchant -79903 44 -14.0 1 1 1 0.5 200
 execute if score stage_main_thread AzrTimerStack matches 91.. as @n[tag=AzrielBossA] store result score @s Health run data get entity @s Health
 execute if score stage_main_thread AzrTimerStack matches 91.. store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielBossA] Health
