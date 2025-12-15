@@ -110,6 +110,7 @@ execute if score stage_main_thread AzrTimerStack matches 622 positioned -79923 4
 
 execute if score stage_main_thread AzrTimerStack matches 660 run tp @n[tag=AzrielBossA] -79931 39 88 facing -79932 38.5 87 
 execute if score stage_main_thread AzrTimerStack matches 660 run particle minecraft:enchant -79903 44 -14.0 1 1 1 0.5 200
+execute if score stage_main_thread AzrTimerStack matches 660 as @n[tag=AzrielNPC_andralune] run effect give @s instant_health 1 24
 execute if score stage_main_thread AzrTimerStack matches 660.. as @n[tag=AzrielBossA] store result score @s Health run data get entity @s Health
 execute if score stage_main_thread AzrTimerStack matches 660.. store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielBossA] Health
 execute if score stage_main_thread AzrTimerStack matches 660 run bossbar add azr:boss_hp_bar "权之残影 - 安德拉伦恩"
