@@ -60,10 +60,10 @@ execute if score stage_main_thread AzrTimerStack matches 101 at @n[tag=AzrielNPC
 execute if score stage_main_thread AzrTimerStack matches 101 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"马林努斯：","color":"yellow","bold": true},{"bold": false,"text":"\n“很好，人类的亡魂。我看你并没有听别人劝的意愿。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 121 at @n[tag=AzrielNPC_marinus] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 121 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"马林努斯：","color":"yellow","bold": true},{"bold": false,"text":"\n“准备好，回你的地狱。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 121 as @n[tag=AzrielNPC_marinus] if entity @p[tag=azrPlayer,scores={AzrSariel_Data_CostAmount=50..99}] run attribute @s armor base set 2.0
-execute if score stage_main_thread AzrTimerStack matches 121 as @n[tag=AzrielNPC_marinus] if entity @p[tag=azrPlayer,scores={AzrSariel_Data_CostAmount=100..249}] run attribute @s armor base set 3.5
-execute if score stage_main_thread AzrTimerStack matches 121 as @n[tag=AzrielNPC_marinus] if entity @p[tag=azrPlayer,scores={AzrSariel_Data_CostAmount=250..349}] run attribute @s armor base set 6.0
-execute if score stage_main_thread AzrTimerStack matches 121 as @n[tag=AzrielNPC_marinus] if entity @p[tag=azrPlayer,scores={AzrSariel_Data_CostAmount=350..}] run attribute @s armor base set 9.0
+execute if score stage_main_thread AzrTimerStack matches 121 as @n[tag=AzrielNPC_marinus] as @p[tag=azrPlayer] if entity @s[scores={AzrSariel_Data_CostAmount=50..99}] run attribute @s armor base set 2.0
+execute if score stage_main_thread AzrTimerStack matches 121 as @n[tag=AzrielNPC_marinus] as @p[tag=azrPlayer] if entity @s[scores={AzrSariel_Data_CostAmount=100..249}] run attribute @s armor base set 3.5
+execute if score stage_main_thread AzrTimerStack matches 121 as @n[tag=AzrielNPC_marinus] as @p[tag=azrPlayer] if entity @s[scores={AzrSariel_Data_CostAmount=250..349}] run attribute @s armor base set 6.0
+execute if score stage_main_thread AzrTimerStack matches 121 as @n[tag=AzrielNPC_marinus] as @p[tag=azrPlayer] if entity @s[scores={AzrSariel_Data_CostAmount=350..}] run attribute @s armor base set 9.0
 
 
 execute if score stage_main_thread AzrTimerStack matches 101..300 unless entity @a[tag=azrPlayer,x=-79899,y=37,z=45,dx=16,dy=8,dz=29] run function skyblock:azr/lifecycle/endgame/reset_map_boss_main_marinus
