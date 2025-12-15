@@ -35,12 +35,20 @@ execute if score stage_boss_bgm AzrTimerStack matches 4200.. run scoreboard play
 #rng2：技能选择器
 
     execute if entity @s[tag=actionable] run scoreboard players add @s rng8 1
+
+    execute if score @s[scores={Health=..180}] rng8 matches 1 store result score @s rng5 run random value 1..3
+    execute if score @s[scores={Health=..180}] rng8 matches 1 if score @s rng5 matches 1 run item replace entity @s weapon.offhand with tipped_arrow[potion_contents={custom_color:16763161,custom_effects:[{id:"slowness",duration:100}]}]
+    execute if score @s[scores={Health=..180}] rng8 matches 1 if score @s rng5 matches 2 run item replace entity @s weapon.offhand with tipped_arrow[potion_contents={custom_color:16734631,custom_effects:[{id:"nausea",duration:100}]}]
+    execute if score @s[scores={Health=..180}] rng8 matches 1 if score @s rng5 matches 3 run item replace entity @s weapon.offhand with tipped_arrow[potion_contents={custom_color:7421439,custom_effects:[{id:"weakness",duration:100}]}]
+
     execute if score @s[scores={Health=181..}] rng8 matches 1 store result score @s rng2 run random value 1..5
-    execute if score @s[scores={Health=..180}] rng8 matches 1 store result score @s rng2 run random value 1..10
+    execute if score @s[scores={Health=..180}] rng8 matches 1 store result score @s[tag=!Phase2] rng2 run random value 98..99
+    execute if score @s[scores={Health=..180}] rng8 matches 1 store result score @s[tag=Phase2] rng2 run random value 1..10
     execute if score @s[scores={rng2=1..3}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/attack_flat_01
     execute if score @s[scores={rng2=4..5}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/skill_arrowpince
     execute if score @s[scores={rng2=6..8}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/attack_flat_02
     execute if score @s[scores={rng2=9..10}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/skill_arroworb
+    execute if score @s[scores={rng2=98..99}] rng8 matches 1.. run function skyblock:azr/assets/mobs_new/skill/boss1_andralune/phase_equip_bow
     execute if score @s[scores={rng2=..0}] rng8 matches 2.. run scoreboard players set @s rng8 -20
     execute if score @s rng8 matches 999.. run scoreboard players set @s rng8 -20
 
