@@ -43,13 +43,24 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_pacemaker_safe:
 execute if items entity @s container.* *[custom_data~{azr_amulet_flower_wall:1b}] run function skyblock:azr/system/player/skills/amulet/flower_wall_core
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_lit:1b}] run function skyblock:azr/system/player/skills/amulet/fire_lit_core
 execute if items entity @s container.* *[custom_data~{azr_amulet_stay_float:1b}] run function skyblock:azr/system/player/skills/amulet/stay_float_core
-execute if items entity @s container.* *[custom_data~{azr_amulet_sprint_double:1b}] run function skyblock:azr/system/player/skills/amulet/sprint_double_core
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_axe_vortex:1b}] run function skyblock:azr/system/player/skills/amulet/axe_vortex_core
 execute if items entity @s container.* *[custom_data~{azr_amulet_jump_boost:1b}] run function skyblock:azr/system/player/skills/amulet/jump_boost_core
 execute if entity @s[tag=AzrSariel_Amulet_AxeVortex_SweepRatio] if entity @s[predicate=!skyblock:left,predicate=!skyblock:right] run function skyblock:azr/system/player/skills/amulet/axe_vortex_unload
 execute if entity @s[tag=AzrSariel_Amulet_AxeVortex_SweepRatio] unless items entity @s hotbar.* *[custom_data~{azr_amulet_axe_vortex:1b}] run function skyblock:azr/system/player/skills/amulet/axe_vortex_unload
-execute if items entity @s container.* *[custom_data~{azr_amulet_back_dodge:1b}] run function skyblock:azr/system/player/skills/amulet/back_dodge_core
-execute if items entity @s container.* *[custom_data~{azr_amulet_down_kick:1b}] run function skyblock:azr/system/player/skills/amulet/down_kick_core
+
+execute if items entity @s container.* *[custom_data~{azr_amulet_sprint_double:1b}] run tag @s add sprint_double_pass
+execute if items entity @s container.* *[custom_data~{azr_amulet_back_dodge:1b}] run tag @s add back_dodge_pass
+execute if items entity @s container.* *[custom_data~{azr_amulet_down_kick:1b}] run tag @s add down_kick_pass
+execute if items entity @s[tag=AZS_BoS05] container.* *[custom_data~{azr_amulet_light_angel:1b}] run tag @s add sprint_double_pass
+execute if items entity @s[tag=AZS_BoSB01] container.* *[custom_data~{azr_amulet_light_angel:1b}] run tag @s add back_dodge_pass
+execute if items entity @s[tag=AZS_BoS22] container.* *[custom_data~{azr_amulet_light_angel:1b}] run tag @s add down_kick_pass
+execute if entity @s[tag=sprint_double_pass] run function skyblock:azr/system/player/skills/amulet/sprint_double_core
+execute if entity @s[tag=back_dodge_pass] run function skyblock:azr/system/player/skills/amulet/back_dodge_core
+execute if entity @s[tag=down_kick_pass] run function skyblock:azr/system/player/skills/amulet/down_kick_core
+tag @s remove sprint_double_pass
+tag @s remove back_dodge_pass
+tag @s remove down_kick_pass
+
 execute if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] if entity @s[predicate=skyblock:left,predicate=skyblock:right] run function skyblock:azr/system/player/skills/amulet/revival_star_teleport
 execute if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] if entity @s[predicate=skyblock:forward,predicate=skyblock:backward] run function skyblock:azr/system/player/skills/amulet/revival_star_quitgame
 execute if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] unless entity @s[predicate=skyblock:left,predicate=skyblock:right] unless entity @s[predicate=skyblock:forward,predicate=skyblock:backward] run scoreboard players set @s AzrSariel_Amulet_RevivalStar_teleport 0
