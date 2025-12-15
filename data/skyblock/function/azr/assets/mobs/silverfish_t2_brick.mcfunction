@@ -1,1 +1,0 @@
-summon silverfish ~ ~ ~ {CustomName:'"蚀砖虫"',DeathLootTable:"skyblock:azriel_silverfish_tier2",Health:7.5f,PersistenceRequired:1b,Tags:["AzrielDecMob","AzrielMob"],attributes:[{base:7.5d,id:"max_health"},{base:4.0d,id:"attack_damage"},{base:0.25d,id:"movement_speed"}]}

@@ -1,7 +1,0 @@
-summon zombie ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AZRknight"],DeathLootTable:"skyblock:azriel_zombie_knight_tier1",attributes:[{id:"attack_damage",base:0.0},{id:"armor",base:0.0},{id:"max_health",base:36},{id:"movement_speed",base:0.14},{id:"scale",base:1.15},{id:"knockback_resistance",base:0.8}],Health:36,HandItems:[{id:diamond_sword,count:1,components:{enchantments:{knockback:2}}},{}],HandDropChances:[0f,0f],ArmorItems:[{id:netherite_boots,count:1,components:{"minecraft:trim":{material:"minecraft:diamond",pattern:"minecraft:rib"}}},{id:netherite_leggings,count:1,components:{"minecraft:trim":{material:"minecraft:diamond",pattern:"minecraft:rib"}}},{id:netherite_chestplate,count:1,components:{"minecraft:trim":{material:"minecraft:diamond",pattern:"minecraft:rib"}}},{id:player_head,count:1,components:{"minecraft:profile":{id:[I;1760609294,-1687076377,-1593753677,-454304094],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzg5MzgwZTQyYTQ5N2ZhY2VjNmUzOWQxMzFkMWFlYmQxMjllYmIzYTJhYWI3NzQ0NDI3MjkzODdiMmM5YzQ2OCJ9fX0="}]}}}],ArmorDropChances:[0f,0f,0f,0f],PersistenceRequired:1b}
-particle trial_spawner_detection_ominous ~ ~0.4 ~ 0.25 0.4 0.25 0 30
-
-playsound entity.zombie_villager.cure hostile @a ~ ~ ~ 1 0.8
-particle warped_spore ~ ~ ~ 0 0 0 0.3 100
-particle soul_fire_flame ~ ~ ~ 0 0 0 0.3 80
-effect give @a[tag=azrPlayer,distance=0..10] darkness 4 0 false

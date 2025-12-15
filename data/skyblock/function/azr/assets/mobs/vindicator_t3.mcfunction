@@ -1,3 +1,0 @@
-summon vindicator ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_vindicator_tier1",attributes:[{id:"max_health",base:22.0},{id:"attack_damage",base:2.0},{id:"movement_speed",base:0.22}],Health:22.0f,CustomName:'"圣殿守卫"',CanPickUpLoot:0b,HandItems:[{count:1,id:"stone_axe",components:{"custom_name":'{"text":"石斧","italic":false}'}},{}],HandDropChances:[0.003f,0.003f]}
-particle minecraft:reverse_portal ~ ~0.8 ~ 0.3 0.7 0.3 0.1 18
-playsound entity.enderman.teleport hostile @a ~ ~ ~ 0.8 1.2

@@ -1,2 +1,0 @@
-summon skeleton ~ ~ ~ {Team:AzrBossA,PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_shadow_tier1",attributes:[{id:"max_health",base:10.0},{id:"knockback_resistance",base:1.0},{id:"movement_speed",base:0.1}],Health:10.0f,CustomName:'"骸骨幻影"',CanPickUpLoot:0b,HandItems:[{count:1,id:bow},{}],HandDropChances:[0.00f,0.00f],ArmorItems:[{},{},{},{}]}
-particle trial_spawner_detection ~ ~0.4 ~ 0.25 0.4 0.25 0 10

@@ -1,2 +1,0 @@
-summon zombie ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_zombie_tier1",attributes:[{id:"max_health",base:6.0},{id:"attack_damage",base:1.5}],Health:6.0f,CustomName:'"僵尸"',CanPickUpLoot:0b,IsBaby:0b,ArmorItems:[{},{},{count:1,id:"leather_chestplate",components:{"custom_name":'{"text":"皮革甲","italic":false}'}},{count:1,id:"leather_helmet",components:{"custom_name":'{"text":"皮革帽","italic":false}'}}],ArmorDropChances:[0.01f,0.01f,0.01f,0.01f]}
-particle trial_spawner_detection ~ ~0.4 ~ 0.25 0.4 0.25 0 10

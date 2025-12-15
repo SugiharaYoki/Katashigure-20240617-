@@ -1,2 +1,0 @@
-summon spider ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier1",attributes:[{id:"max_health",base:12},{id:"attack_damage",base:1.5},{id:"movement_speed",base:0.24}],Health:12f,CustomName:'"遗迹蜘蛛"'}
-particle trial_spawner_detection ~ ~0.4 ~ 0.25 0.4 0.25 0 10

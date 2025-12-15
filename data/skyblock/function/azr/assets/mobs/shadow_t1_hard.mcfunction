@@ -1,1 +1,0 @@
-summon illusioner ~ ~ ~ {Team:AzrBossA,PersistenceRequired:1b,Tags:["AzrielMob","AzrielBossA"],DeathLootTable:"skyblock:azriel_shadow_tier1",attributes:[{id:"max_health",base:350.0},{id:"movement_speed",base:0.23},{id:"knockback_resistance",base:0.85},{id:"armor",base:10.0}],Health:350.0f,CustomName:'"权之残影"'}
