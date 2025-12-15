@@ -133,6 +133,11 @@ execute if entity @s[scores={Azr_skillPoints=..9}] run data modify entity @n[tag
 execute if entity @s[tag=!AZS_BoSB01] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value '" ？ "'
 execute if entity @s[tag=!AZS_BoSB04] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value '" ？ "'
 execute if entity @s[tag=!AZS_BoSB13] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value '" ？ "'
+
+execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkere] CustomName set value '" - "'
+execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerv] CustomName set value '" - "'
+execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value '" - "'
+
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkera] CustomName set value '" √ "'
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerb] CustomName set value '" √ "'
 execute if items entity @s container.* *[custom_data~{azr_amulet_greed_board:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerc] CustomName set value '" √ "'
@@ -166,9 +171,6 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_back_dodge:1b}]
 execute if items entity @s container.* *[custom_data~{azr_amulet_fire_drogue:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value '" √ "'
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value '" √ "'
 
-execute if entity @s[scores={Azr_skillPoints=10..}] if items entity @s container.* *[custom_data~{azr_amulet_sprint_double:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkere] CustomName set value '" - "'
-execute if entity @s[scores={Azr_skillPoints=10..}] if items entity @s container.* *[custom_data~{azr_amulet_down_kick:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerv] CustomName set value '" - "'
-execute if entity @s[scores={Azr_skillPoints=10..}] if items entity @s container.* *[custom_data~{azr_amulet_back_dodge:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value '" - "'
 
 tellraw @s [{"text":"\n "},{"text":"假定回溯  \n","color":"#308aff","bold": true},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkera]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432301"},"hoverEvent":{"action":"show_text","contents":{"text":"Appetence","color":"white"}}},\
