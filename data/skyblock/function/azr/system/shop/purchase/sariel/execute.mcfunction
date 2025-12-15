@@ -18,8 +18,8 @@ execute if entity @s[scores={Azr_Shop=8432112}] if entity @s[tag=!AzrSariel_upg1
 execute if entity @s[scores={Azr_Shop=8432113}] if entity @s[tag=!AzrSariel_upg12,tag=!AzrSariel_upg13B] run tag @s add AzrSariel_upg_FAILED_NC
 
 
-execute if entity @s[scores={Azr_Shop=8432101}] unless entity @s[scores={Azr_emerald=20..}] run tag @s add AzrSariel_upg_FAILED
-execute if entity @s[scores={Azr_Shop=8432102}] unless entity @s[scores={Azr_emerald=20..}] run tag @s add AzrSariel_upg_FAILED
+execute if entity @s[scores={Azr_Shop=8432101}] unless entity @s[scores={Azr_emerald=60..}] run tag @s add AzrSariel_upg_FAILED
+execute if entity @s[scores={Azr_Shop=8432102}] unless entity @s[scores={Azr_emerald=40..}] run tag @s add AzrSariel_upg_FAILED
 execute if entity @s[scores={Azr_Shop=8432103}] unless entity @s[scores={Azr_emerald=10..}] run tag @s add AzrSariel_upg_FAILED
 execute if entity @s[scores={Azr_Shop=8432104}] unless entity @s[scores={Azr_emerald=10..}] run tag @s add AzrSariel_upg_FAILED
 execute if entity @s[scores={Azr_Shop=8432105}] unless entity @s[scores={Azr_emerald=5..}] run tag @s add AzrSariel_upg_FAILED
@@ -29,8 +29,8 @@ execute if entity @s[scores={Azr_Shop=8432108}] unless entity @s[scores={Azr_eme
 execute if entity @s[scores={Azr_Shop=8432109}] unless entity @s[scores={Azr_emerald=5..}] run tag @s add AzrSariel_upg_FAILED
 execute if entity @s[scores={Azr_Shop=8432110}] unless entity @s[scores={Azr_emerald=10..}] run tag @s add AzrSariel_upg_FAILED
 execute if entity @s[scores={Azr_Shop=8432111}] unless entity @s[scores={Azr_emerald=10..}] run tag @s add AzrSariel_upg_FAILED
-execute if entity @s[scores={Azr_Shop=8432112}] unless entity @s[scores={Azr_emerald=20..}] run tag @s add AzrSariel_upg_FAILED
-execute if entity @s[scores={Azr_Shop=8432113}] unless entity @s[scores={Azr_emerald=20..}] run tag @s add AzrSariel_upg_FAILED
+execute if entity @s[scores={Azr_Shop=8432112}] unless entity @s[scores={Azr_emerald=40..}] run tag @s add AzrSariel_upg_FAILED
+execute if entity @s[scores={Azr_Shop=8432113}] unless entity @s[scores={Azr_emerald=40..}] run tag @s add AzrSariel_upg_FAILED
 
 #5BCD#surrounding_completed
 execute if entity @s[scores={Azr_Shop=8432114}] if entity @s[tag=!AzrSariel_upg5,tag=!AzrSariel_upg5C,tag=!AzrSariel_upg4B,tag=!AzrSariel_upg6B] run tag @s add AzrSariel_upg_FAILED_NC
