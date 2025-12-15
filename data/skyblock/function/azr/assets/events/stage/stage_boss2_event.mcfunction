@@ -13,11 +13,17 @@ execute if score stage_main_thread AzrTimerStack matches 2 as @n[tag=AzrielNPC_a
 execute if score stage_main_thread AzrTimerStack matches 29..88 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
 
 execute if score stage_main_thread AzrTimerStack matches 6 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
-execute if score stage_main_thread AzrTimerStack matches 6 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“没想到你还有胆量靠近我。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 6 if entity @n[tag=AzrielNPC_andralune,tag=!BOSS_seen_2] positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“没想到你还有胆量靠近我。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 6 if entity @n[tag=AzrielNPC_andralune,tag=BOSS_seen_2] positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“我不是第一次站在这里了吧。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 21 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
-execute if score stage_main_thread AzrTimerStack matches 21 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“爱理莎女士……或者，我该如此称呼你：路西法的先锋军。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 21 if entity @n[tag=AzrielNPC_andralune,tag=!BOSS_seen_2] positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“爱理莎女士……或者，我该如此称呼你：路西法的先锋军。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 21 if entity @n[tag=AzrielNPC_andralune,tag=BOSS_seen_2] positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“你拥有某位天使长的权能。我不知道那是怎么来的，但我不会多过问。”","color":"white"}]
 
-execute if score stage_main_thread AzrTimerStack matches 39 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n“我不知道你说的是什么意思，但我确实是来打败你的。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 39 if entity @n[tag=AzrielNPC_andralune,tag=!BOSS_seen_2] positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n“我不知道你说的是什么意思，但我确实是来打败你的。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 39 if entity @n[tag=AzrielNPC_andralune,tag=BOSS_seen_2] at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 39 if entity @n[tag=AzrielNPC_andralune,tag=BOSS_seen_2] positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“那么，继续我们之间的战斗吧。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 39 if entity @n[tag=AzrielNPC_andralune,tag=BOSS_seen_2] positioned -79923 43 96 run scoreboard players set stage_main_thread AzrTimerStack 86
+
 execute if score stage_main_thread AzrTimerStack matches 56 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score stage_main_thread AzrTimerStack matches 56 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“我相当欣赏你的勇气。但是，我多么希望你至少站对了立场。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 74 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
@@ -42,6 +48,7 @@ execute if score stage_main_thread AzrTimerStack matches 91 run bossbar set azr:
 execute if score stage_main_thread AzrTimerStack matches 91 as @n[tag=AzrielBossA] run tag @s add actionable
 execute if score stage_main_thread AzrTimerStack matches 91 as @n[tag=AzrielBossA] run data modify entity @s Invulnerable set value 0b
 execute if score stage_main_thread AzrTimerStack matches 91 as @n[tag=AzrielBossA] run data modify entity @s NoAI set value 0b
+execute if score stage_main_thread AzrTimerStack matches 91 run tag @n[tag=AzrielBossA] add BOSS_seen_2
 execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run scoreboard players set @n[tag=AzrielBossA] rng1 0
 execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run scoreboard players set @n[tag=AzrielBossA] rng2 0
 execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run scoreboard players set @n[tag=AzrielBossA] rng3 0
