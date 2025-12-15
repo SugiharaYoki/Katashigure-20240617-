@@ -165,5 +165,6 @@ execute if score stage_main_thread AzrTimerStack matches 500 run tellraw @a[tag=
 execute if score stage_main_thread AzrTimerStack matches 500 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..3}] AZR_chainKillUpg_pts 4
 
 execute if score stage_main_thread AzrTimerStack matches 500 positioned -79900 43 34 run tp @n[tag=AzrielNPC_bird] ~ ~ ~
+execute if score stage_main_thread AzrTimerStack matches 500 run scoreboard players set stage_main_thread AzrTimerStack 0 
 
 
