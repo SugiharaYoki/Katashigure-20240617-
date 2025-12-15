@@ -7,9 +7,9 @@ execute if score @s rng8 matches 1 run playsound entity.illusioner.cast_spell ho
 execute if score @s rng8 matches 1 run playsound entity.illusioner.cast_spell hostile @a ~ ~ ~ 1 0.6
 execute if score @s rng8 matches 1..60 at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
-execute if score @s rng8 matches 61..64 at @s positioned ~ ~1.5 ~ rotated ~ 0 run particle white_smoke ^ ^ ^0.2 0.1 0.1 0.1 0.01 3
-execute if score @s rng8 matches 65..67 at @s positioned ~ ~1.5 ~ rotated ~ 0 run particle white_smoke ^ ^ ^0.2 0.08 0.08 0.08 0.02 3
-execute if score @s rng8 matches 68..70 at @s positioned ~ ~1.5 ~ rotated ~ 0 run particle white_smoke ^ ^ ^0.2 0.06 0.05 0.05 0.03 3
+execute if score @s rng8 matches 61..64 at @s positioned ~ ~1.5 ~ rotated ~ 0 run particle white_smoke ^ ^ ^0.2 0.1 0.1 0.1 0.01 5
+execute if score @s rng8 matches 65..67 at @s positioned ~ ~1.5 ~ rotated ~ 0 run particle white_smoke ^ ^ ^0.2 0.08 0.08 0.08 0.02 5
+execute if score @s rng8 matches 68..70 at @s positioned ~ ~1.5 ~ rotated ~ 0 run particle white_smoke ^ ^ ^0.2 0.06 0.05 0.05 0.03 7
 execute if score @s rng8 matches 20 at @s positioned ~ ~1.5 ~ rotated ~ 0 run particle end_rod ^ ^ ^0.6 0 0 0 0.00 1
 execute if score @s rng8 matches 20 at @s positioned ~ ~1.5 ~ rotated ~ 0 run particle end_rod ^ ^0.2 ^0.6 0 0 0 0.00 1
 execute if score @s rng8 matches 20 at @s positioned ~ ~1.5 ~ rotated ~ 0 run particle end_rod ^0.2 ^ ^0.6 0 0 0 0.00 1
