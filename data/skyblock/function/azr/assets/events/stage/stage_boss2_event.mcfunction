@@ -39,6 +39,15 @@ execute if score stage_main_thread AzrTimerStack matches 91 run bossbar set azr:
 execute if score stage_main_thread AzrTimerStack matches 91 as @n[tag=AzrielBossA] run tag @s add actionable
 execute if score stage_main_thread AzrTimerStack matches 91 as @n[tag=AzrielBossA] run data modify entity @s Invulnerable set value 0b
 execute if score stage_main_thread AzrTimerStack matches 91 as @n[tag=AzrielBossA] run data modify entity @s NoAI set value 0b
+execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run scoreboard players set @n[tag=AzrielBossA] rng1 0
+execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run scoreboard players set @n[tag=AzrielBossA] rng2 0
+execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run scoreboard players set @n[tag=AzrielBossA] rng3 0
+execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run scoreboard players set @n[tag=AzrielBossA] rng4 0
+execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run scoreboard players set @n[tag=AzrielBossA] rng5 0
+execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run scoreboard players set @n[tag=AzrielBossA] rng6 0
+execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run scoreboard players set @n[tag=AzrielBossA] rng7 0
+execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run scoreboard players set @n[tag=AzrielBossA] rng8 0
+execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run scoreboard players set @n[tag=AzrielBossA] rng9 0
 execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run scoreboard players set stage_boss_bgm AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run scoreboard players set tick_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01 40.00 -13.99 run scoreboard players set stage Azr_system 24
