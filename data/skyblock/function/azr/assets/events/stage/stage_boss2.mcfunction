@@ -78,7 +78,7 @@ execute if score stage_boss_bgm AzrTimerStack matches 4200.. run scoreboard play
 
 #end
     #死亡检测 800..2900 -> 3000
-    execute if score tick_main_thread AzrTimerStack matches 100..1900 as @n[tag=AzrielBossA,scores={Health=..80}] run scoreboard players set tick_main_thread AzrTimerStack 2000
+    execute if score tick_main_thread AzrTimerStack matches 100..1900 as @n[tag=AzrielBossA,scores={Health=..60}] run scoreboard players set tick_main_thread AzrTimerStack 2000
    
     execute if score tick_main_thread AzrTimerStack matches 2001 run scoreboard players set stage_main_thread AzrTimerStack 1000
     execute if score tick_main_thread AzrTimerStack matches 2001 run stopsound @a[tag=azrShowDialog]
