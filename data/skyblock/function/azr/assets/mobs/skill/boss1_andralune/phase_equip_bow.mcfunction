@@ -20,7 +20,7 @@ execute if score @s rng1 matches 60 at @s run particle minecraft:large_smoke ~ ~
 execute if score @s rng1 matches 60 at @s run playsound minecraft:entity.lightning_bolt.impact master @a[tag=azrShowDialog] ~ ~ ~ 10 1.2
 execute if score @s rng1 matches 60 at @s run playsound minecraft:item.trident.thunder master @a[tag=azrShowDialog] -79931 38.8 88 1 0.8
 execute if score @s rng1 matches 60 at @s run playsound minecraft:entity.lightning_bolt.thunder master @a[tag=azrShowDialog] ~ ~ ~ 10 0.8
-execute if score @s rng1 matches 60 at @s run function skyblock:azr/assets/events/effects/zanei_appear
+execute if score @s rng1 matches 31 at @s run function skyblock:azr/assets/events/effects/zanei_appear
 execute if score @s rng1 matches 60 at @s run item replace entity @s weapon.mainhand with bow
 
 execute if score @s rng1 matches 60 run effect give @s resistance 30 0 true
