@@ -12,6 +12,7 @@ execute if score stage_boss_bgm AzrTimerStack matches 4200.. run scoreboard play
     execute if score tick_main_thread AzrTimerStack matches 152..2800 run team join AzrBossA @e[tag=AzrielMob,x=-79931,y=38,z=88,distance=..20]
     #状态效果控制
     effect clear @a[tag=azrPlayer] blindness
+    effect give @a[tag=azrPlayer,distance=0..50] resistance 3 1 true
     effect clear @s invisibility
     effect give @s slow_falling 10 0 true
     #防止坠入虚空 传送到定点或传送到玩家各有一半可能
@@ -56,10 +57,10 @@ execute if score stage_boss_bgm AzrTimerStack matches 4200.. run scoreboard play
     execute if score @s[tag=!Phase2] rng8 matches 999.. run scoreboard players set @s rng8 -8
     execute if score @s[tag=Phase2] rng8 matches 999.. run scoreboard players set @s rng8 -20
 
-    execute if score @s[scores={Health=..250}] rng8 matches -3 store result score @s rng5 run random value 1..100
+    execute if score @s[scores={Health=..250}] rng8 matches -3 store result score @s rng5 run random value 1..90
     execute if entity @s[scores={rng5=1..3}] run function skyblock:azr/assets/mobs/skill/boss1_andralune/move_back
-    execute if entity @s[scores={rng5=4..6}] run function skyblock:azr/assets/mobs/skill/boss1_andralune/move_forward
-    execute if entity @s[scores={rng5=7..10}] run function skyblock:azr/assets/mobs/skill/boss1_andralune/move_fastshift
+    execute if entity @s[scores={rng5=4..8}] run function skyblock:azr/assets/mobs/skill/boss1_andralune/move_forward
+    execute if entity @s[scores={rng5=9..10}] run function skyblock:azr/assets/mobs/skill/boss1_andralune/move_fastshift
     execute if entity @s[scores={rng5=1..}] run scoreboard players set @s rng5 0
 
     execute as @s[scores={Health=..180},tag=Phase2] if block ~ ~-0.1 ~ air run particle falling_obsidian_tear ^2 ^ ^ 0.2 0.2 0.2 0 1
