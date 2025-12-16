@@ -10,6 +10,8 @@ scoreboard players set stage_main_thread AzrTimerStack 0
 scoreboard players set stage Azr_system 21
 bossbar remove azr:boss_hp_bar
 
+execute positioned -79902 38 0 run kill @e[type=illusioner,distance=0..80,tag=!AzrielNPC_andralune]
+
 execute as @n[tag=AzrielBossA] run tag @s remove actionable
 execute as @n[tag=AzrielBossA] run tag @s remove Phase2
 execute as @n[tag=AzrielBossA] run item replace entity @s weapon.mainhand with air
