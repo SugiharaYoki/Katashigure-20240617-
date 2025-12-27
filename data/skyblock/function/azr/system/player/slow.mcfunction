@@ -3,14 +3,6 @@ clear @s[gamemode=adventure] #skyblock:azr_clear
 execute if score chapter Azr_system matches 1..2 at @s if block ~ ~-0.2 ~ black_concrete if block ~ ~-1.2 ~ red_concrete run damage @s 9999 fall
 
 #故事模式
-effect give @s[tag=AZR_storymode] resistance infinite 1
-effect give @s[tag=AZR_storymode] strength infinite 1
-execute if items entity @s[tag=AZR_storymode] weapon.mainhand *[minecraft:max_damage] run item modify entity @s weapon.mainhand {function:"set_components",components:{unbreakable:{}}}
-execute if items entity @s[tag=AZR_storymode] weapon.offhand *[minecraft:max_damage] run item modify entity @s weapon.offhand {function:"set_components",components:{unbreakable:{}}}
-execute if items entity @s[tag=AZR_storymode] armor.head *[minecraft:max_damage] run item modify entity @s armor.head {function:"set_components",components:{unbreakable:{}}}
-execute if items entity @s[tag=AZR_storymode] armor.chest *[minecraft:max_damage] run item modify entity @s armor.chest {function:"set_components",components:{unbreakable:{}}}
-execute if items entity @s[tag=AZR_storymode] armor.legs *[minecraft:max_damage] run item modify entity @s armor.legs {function:"set_components",components:{unbreakable:{}}}
-execute if items entity @s[tag=AZR_storymode] armor.feet *[minecraft:max_damage] run item modify entity @s armor.feet {function:"set_components",components:{unbreakable:{}}}
 
 execute unless entity @s[x=-79931,y=100,z=0,distance=..10000] run tp @s @p[tag=azrPlayer,x=-79931,y=100,z=0,distance=..10000]
 
