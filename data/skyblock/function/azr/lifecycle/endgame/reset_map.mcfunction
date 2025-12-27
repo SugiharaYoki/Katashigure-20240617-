@@ -90,7 +90,7 @@ setblock -79918 42 25 chest[facing=north]
 item replace block -79918 42 25 container.13 with emerald 3
 setblock -79905 42 33 chest[facing=west]
 item replace block -79905 42 33 container.13 with emerald 3
-fill -79924 36 34 -79924 34 34 minecraft:purple_stained_glass
+fill -79924 36 34 -79924 33 34 minecraft:purple_stained_glass
 setblock -79908 34 31 minecraft:chest[facing=west]
 item replace block -79908 34 31 container.12 with skull_banner_pattern[custom_name='{"text": "“最近的花卉涨势很怪异”", "color": "dark_purple","italic":false}', lore=['{"text": "倒不是我神经过敏了吧，这些花的生长速度是不是太快了？","color":"white", "italic": false}','{"text": "简单培育的苔藓类植物已经遍布了整个培育室。","color":"white", "italic": false}','{"text": "它们吸收魔力生长，以其作为养分。","color":"white", "italic": false}','{"text": "那这是否意味着空气中的魔力浓度已经高到了一种难以想象的程度？","color":"white", "italic": false}']] 1
 item replace block -79908 34 31 container.14 with coal 1

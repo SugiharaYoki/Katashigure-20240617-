@@ -30,7 +30,7 @@ setblock -79928 40 34 air destroy
 setblock -79928 38 33 air destroy
 fill -79931 38 40 -79931 40 40 air destroy
 fill -79935 43 34 -79935 45 34 air destroy
-fill -79924 36 34 -79924 34 34 air destroy
+fill -79924 36 34 -79924 33 34 air destroy
 fill -79931 38 22 -79931 40 22 air destroy
 setblock -79931 43 42 air
 setblock -79930 43 41 air

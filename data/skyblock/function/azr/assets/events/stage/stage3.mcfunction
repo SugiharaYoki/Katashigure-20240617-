@@ -123,7 +123,7 @@ execute if score stage_main_thread AzrTimerStack matches 242 run playsound ambie
 execute if score stage_main_thread AzrTimerStack matches 242 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 242 run fill -79931 38 40 -79931 40 40 air destroy
 execute if score stage_main_thread AzrTimerStack matches 242 run fill -79935 43 34 -79935 45 34 air destroy
-execute if score stage_main_thread AzrTimerStack matches 242 run fill -79924 36 34 -79924 34 34 air destroy
+execute if score stage_main_thread AzrTimerStack matches 242 run fill -79924 36 34 -79924 33 34 air destroy
 execute if score stage_main_thread AzrTimerStack matches 242 run scoreboard players set wave Azr_system 6
 execute if score stage_main_thread AzrTimerStack matches 242 run scoreboard players set stage Azr_system 7
 execute if score stage_main_thread AzrTimerStack matches 242 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage3
