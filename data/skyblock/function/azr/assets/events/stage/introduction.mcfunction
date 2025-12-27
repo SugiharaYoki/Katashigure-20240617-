@@ -226,7 +226,7 @@ execute if score Azr_Story_Introduction rng1 matches 1001..1023 unless entity @p
 
 
 execute if score Azr_Story_Introduction rng1 matches 1024 at @p[tag=azrPlayer] run tellraw @a[tag=azrShowDialog] [{"text":"温柔的声音：","color":"dark_purple","bold": true},{"bold": false,"text":"\n“因为，你终将毁灭神庭，也终将拯救它。”","color":"white"}]
-
+execute if score Azr_Story_Introduction rng1 matches 1024.. at @p[tag=azrPlayer] if entity @a[tag=!azrRetrieved,tag=azrPlayer,tag=AZR_SEAawakened] if score stage Azr_system matches ..0 as @p[tag=!azrRetrieved,tag=azrPlayer,tag=AZR_SEAawakened] at @s run function skyblock:azr/lifecycle/jump_to/generic_retrieve
 execute if score Azr_Story_Introduction rng1 matches 1024 at @p[tag=azrPlayer] run tp @a[distance=..200] -79984.03 40.00 -14.01 facing -79983.03 40.00 -14.01
 
 execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 40.00 -14.01 as @a[distance=..200] at @s run playsound entity.player.teleport ambient @s ~ ~ ~ 2 1
