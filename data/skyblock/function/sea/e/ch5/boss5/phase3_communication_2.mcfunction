@@ -72,7 +72,7 @@ execute if score @s sea_4temp8 matches 730 as @n[tag=SEAfiona,x=90000,y=100,z=0,
 execute if score @s sea_4temp8 matches 730 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 16.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“又要来一波雷暴，小心！！！”","color":"white","bold": false}]
 
 
-execute if score @s sea_4temp8 matches 1100..1500 run scoreboard players set @s sea_4temp8 1100
+#execute if score @s sea_4temp8 matches 1100..1500 run scoreboard players set @s sea_4temp8 1100
 
 
 
