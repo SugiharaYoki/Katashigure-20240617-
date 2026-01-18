@@ -116,6 +116,8 @@ execute if score stage_main_thread AzrTimerStack matches 1052 run particle minec
 execute if score stage_main_thread AzrTimerStack matches 1051 run playsound entity.generic.explode block @a -79902.44 51.00 -13.95 10 0.8
 execute if score stage_main_thread AzrTimerStack matches 1052 run playsound entity.generic.explode block @a -79902.44 51.00 -13.95 10 0.8
 execute if score stage_main_thread AzrTimerStack matches 1051 run clone -79912 -50 -23 -79897 -32 -6 -79912 40 -23
+execute if score stage_main_thread AzrTimerStack matches 1051 run clone -79902 36 -41 -79898 43 -32 -79933 37 -27
+execute if score stage_main_thread AzrTimerStack matches 1051 run clone -79933 -44 -53 -79929 -33 -35 -79933 36 -53
 execute if score stage_main_thread AzrTimerStack matches 1023..1068 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 1069..1130 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_andralune] facing entity @n[tag=AzrielNPC_mersenne]
 execute if score stage_main_thread AzrTimerStack matches 1063..1149 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_mersenne] facing entity @n[tag=AzrielNPC_andralune]
@@ -212,6 +214,7 @@ execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlaye
 execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..9}] Azr_skillPoints 10
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players reset stage_main_thread AzrTimerStack
+execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s unless items entity @s container.* *[custom_data~{azr_amulet_light_angel:1b}] run function skyblock:azr/assets/items/amulets/light_angel
 
 
 execute if score stage_main_thread AzrTimerStack matches 86..999 unless entity @a[tag=azrPlayer,x=-79925,y=37,z=-28,dx=47,dy=20,dz=27] run function skyblock:azr/lifecycle/endgame/reset_map_boss2

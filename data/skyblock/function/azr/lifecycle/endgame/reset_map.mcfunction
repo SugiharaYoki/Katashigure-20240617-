@@ -455,9 +455,13 @@ function skyblock:azr/lifecycle/endgame/reset_map_boss2
 
 
 #boss2~stage9道中 水下小钥匙
-item replace block -79939 35 -76 container.11 with minecraft:dried_kelp 2
+setblock -79940 39 -87 minecraft:potted_spruce_sapling
+setblock -79939 39 -87 minecraft:potted_allium
+setblock -79937 39 -87 minecraft:potted_blue_orchid
+setblock -79939 35 -76 chest[facing=north]
+item replace block -79939 35 -76 container.11 with minecraft:dried_kelp 1
 item replace block -79939 35 -76 container.13 with resin_clump 1
-item replace block -79939 35 -76 container.15 with minecraft:dried_kelp 2
+item replace block -79939 35 -76 container.15 with minecraft:dried_kelp 1
 
   #破碎的天花板
 fill -79934 45 -63 -79934 45 -61 minecraft:quartz_block
