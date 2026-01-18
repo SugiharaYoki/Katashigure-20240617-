@@ -169,7 +169,7 @@ execute if score stage_main_thread AzrTimerStack matches 1359..1408 at @n[tag=Az
 execute if score stage_main_thread AzrTimerStack matches 1407..1408 at @n[tag=AzrielNPC_mersenne] unless entity @a[tag=azrPlayer,distance=0..4] run scoreboard players set stage_main_thread AzrTimerStack 1407
 
 execute if score stage_main_thread AzrTimerStack matches 1412 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
-execute if score stage_main_thread AzrTimerStack matches 1412 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“这是……果然是奇匠派蒙的手笔。你很幸运，我和他很熟。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1412 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“这本生命手册……果然是奇匠派蒙的手笔。你很幸运，我和他很熟。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1426 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 1426 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“稍等，我将对魔力网络的系统施行侵入……”","color":"white"}]
 
