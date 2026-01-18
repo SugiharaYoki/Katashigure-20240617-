@@ -167,7 +167,7 @@ execute if score stage_main_thread AzrTimerStack matches 1380 positioned -79923 
 execute if score stage_main_thread AzrTimerStack matches 1400 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 1400 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“或许有什么我能帮你做的。”","color":"white"}]
 
-execute if score stage_main_thread AzrTimerStack matches 1359..1408 at @n[tag=AzrielNPC_mersenne] if entity @a[tag=azrPlayer,distance=0..4] run scoreboard players set stage_main_thread AzrTimerStack 1411
+execute if score stage_main_thread AzrTimerStack matches 1365..1408 at @n[tag=AzrielNPC_mersenne] if entity @a[tag=azrPlayer,distance=0..4] run scoreboard players set stage_main_thread AzrTimerStack 1411
 execute if score stage_main_thread AzrTimerStack matches 1407..1408 at @n[tag=AzrielNPC_mersenne] unless entity @a[tag=azrPlayer,distance=0..4] run scoreboard players set stage_main_thread AzrTimerStack 1407
 
 execute if score stage_main_thread AzrTimerStack matches 1412 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
