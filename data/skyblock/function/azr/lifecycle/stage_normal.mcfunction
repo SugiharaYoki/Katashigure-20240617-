@@ -157,13 +157,12 @@ execute if score wave Azr_system matches 23..35 run scoreboard players set chapt
 execute if score wave Azr_system matches 36.. run scoreboard players set chapter Azr_system 4
 
 #AzrielNPC
-execute as @e[tag=AzrielNPC] at @s run rotate @s facing entity @p[distance=..3]
+#execute as @e[tag=AzrielNPC] at @s run rotate @s facing entity @p[distance=..3]
 
-#消除蜘蛛占位
-#execute as @e[tag=AzrielMob,tag=!AzrielDecMob,tag=!AzrielBossA,tag=!AzrielBossB] at @s run scoreboard players add @s SeGa_BecomeWild 1
-#execute as @e[tag=AzrielMob,tag=!AzrielDecMob,tag=!AzrielBossA,tag=!AzrielBossB,type=spider] at @s run scoreboard players add @s SeGa_BecomeWild 9
-#execute as @e[tag=AzrielMob,tag=!AzrielDecMob,tag=!AzrielBossA,tag=!AzrielBossB,type=cave_spider] at @s run scoreboard players add @s SeGa_BecomeWild 9
-#execute as @e[tag=AzrielMob,tag=!AzrielDecMob,scores={SeGa_BecomeWild=240..}] at @s run tag @s add AzrielDecMob
+execute if score stage Azr_system matches 10.. unless entity @n[tag=AzrielNPC_andralune] positioned -79907 38 -12 run function skyblock:azr/assets/mobs/unique/andralune
+execute if score stage Azr_system matches 10.. unless entity @n[tag=AzrielNPC_mersenne] positioned -79907 38 -12 run function skyblock:azr/assets/mobs/unique/mersenne
+execute if score stage Azr_system matches 10.. unless entity @n[tag=AzrielNPC_marinus] positioned -79907 38 -12 run function skyblock:azr/assets/mobs/skill/marinus/summon
+
 #重置计时器
 scoreboard players set tick_count_main AzrTimerStack 0
 # 强制释放临时变量
