@@ -73,12 +73,15 @@ execute if score stage_main_thread AzrTimerStack matches 990..999 run scoreboard
 execute if score stage_main_thread AzrTimerStack matches 1001 as @n[tag=AzrielBossA] run tag @s remove actionable
 execute if score stage_main_thread AzrTimerStack matches 1012 as @n[tag=AzrielBossA] run data modify entity @s NoAI set value 1b
 
-execute if score stage_main_thread AzrTimerStack matches 1002..1012 at @n[tag=AzrielNPC_andralune] run particle wax_off ~ ~0.2 ~ 1 0 1 0 18
-execute if score stage_main_thread AzrTimerStack matches 1002 at @n[tag=AzrielNPC_andralune] run particle minecraft:enchant ~ ~ ~ 0.2 0.2 0.2 0.1 3
-execute if score stage_main_thread AzrTimerStack matches 1002 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.evoker.cast_spell hostile @a ~ ~ ~ 1 1.3
-execute if score stage_main_thread AzrTimerStack matches 1013 at @n[tag=AzrielNPC_andralune] run particle wax_off ~ ~0.2 ~ 1 9 1 0 180
-execute if score stage_main_thread AzrTimerStack matches 1013 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.wither.break_block hostile @a ~ ~ ~ 1 1.2
-execute if score stage_main_thread AzrTimerStack matches 1013 at @n[tag=AzrielNPC_andralune] run playsound entity.generic.explode hostile @a ~ ~ ~ 1 1.2
+execute if score stage_main_thread AzrTimerStack matches 1001 as @n[tag=AzrielNPC_andralune] at @s run kill @e[tag=AzrielMob,tag=AzrielMob_skeleton_melee,distance=5..50]
+execute if score stage_main_thread AzrTimerStack matches 1001 as @n[tag=AzrielNPC_andralune] at @s run kill @e[tag=AzrielMob,type=illusioner,distance=0.3..50]
+
+#execute if score stage_main_thread AzrTimerStack matches 1002..1012 at @n[tag=AzrielNPC_andralune] run particle wax_off ~ ~0.2 ~ 1 0 1 0 18
+#execute if score stage_main_thread AzrTimerStack matches 1002 at @n[tag=AzrielNPC_andralune] run particle minecraft:enchant ~ ~ ~ 0.2 0.2 0.2 0.1 3
+#execute if score stage_main_thread AzrTimerStack matches 1002 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.evoker.cast_spell hostile @a ~ ~ ~ 1 1.3
+#execute if score stage_main_thread AzrTimerStack matches 1013 at @n[tag=AzrielNPC_andralune] run particle wax_off ~ ~0.2 ~ 1 9 1 0 180
+#execute if score stage_main_thread AzrTimerStack matches 1013 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.wither.break_block hostile @a ~ ~ ~ 1 1.2
+#execute if score stage_main_thread AzrTimerStack matches 1013 at @n[tag=AzrielNPC_andralune] run playsound entity.generic.explode hostile @a ~ ~ ~ 1 1.2
 
 execute if score stage_main_thread AzrTimerStack matches 1001 as @n[tag=AzrielNPC_andralune] run effect give @s resistance infinite 9 true
 execute if score stage_main_thread AzrTimerStack matches 1001 run summon minecraft:lightning_bolt -79902.69 52.00 -14.01
@@ -106,35 +109,98 @@ execute if score stage_main_thread AzrTimerStack matches 1052 run particle minec
 execute if score stage_main_thread AzrTimerStack matches 1051 run playsound entity.generic.explode block @a -79902.44 51.00 -13.95 10 0.8
 execute if score stage_main_thread AzrTimerStack matches 1052 run playsound entity.generic.explode block @a -79902.44 51.00 -13.95 10 0.8
 execute if score stage_main_thread AzrTimerStack matches 1051 run clone -79912 -50 -23 -79897 -32 -6 -79912 40 -23
-execute if score stage_main_thread AzrTimerStack matches 1023..1999 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 1023..1068 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 1069..1130 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_andralune] facing entity @n[tag=AzrielNPC_mersenne]
+execute if score stage_main_thread AzrTimerStack matches 1063..1149 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_mersenne] facing entity @n[tag=AzrielNPC_andralune]
+execute if score stage_main_thread AzrTimerStack matches 1131..1250 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 1150..1250 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_mersenne] facing entity @p[tag=azrPlayer]
 
+execute if score stage_main_thread AzrTimerStack matches 1063 at @n[tag=AzrielNPC_mersenne] run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
+execute if score stage_main_thread AzrTimerStack matches 1063 positioned -79901 38 -16 run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
+execute if score stage_main_thread AzrTimerStack matches 1063 positioned -79923 43 96 run tp @n[tag=AzrielNPC_mersenne] -79901 38 -16 facing entity @n[tag=AzrielNPC_andralune]
+execute if score stage_main_thread AzrTimerStack matches 1065 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 1065 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“权之残影大人……！！我已经锁定内奸身份了！”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1080 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 1080 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“在那之前，我想先问你……我前面这位人类，她是敌人的主力吗？”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1095 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n“我从来就不知道为什么你们对我抱有巨大的敌意。我根本不是任何人的‘主力’。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1110 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 1110 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“事实确实如此。反叛的是权之殊能大人，他现在已经把牢房区域完全控制了……！”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1125 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 1125 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“我居然早就料到他会变卦……人类的亡魂，虽然你并不必回答我，但给予你魔界力量的，是权之殊能吗？”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1141 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n“我不认识任何权之殊能。踏入传送门后，我就直接拥有了生命手册。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1155 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“……”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1162 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 1162 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“人类的亡魂，神庭的试炼暂时无法继续了。但比起回到魔界，有兴趣帮我个忙吗？”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1178 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n“并没太大的兴趣。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1192 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n“你能给什么报酬？”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1208 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 1208 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“额外的阳寿。现在的人间，你的丈夫还在急诊室外等着，彻夜未眠。你如今被ICU吊着一口气，但还有活下来的可能。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1226 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n“……罗温，他还没有放弃希望吗。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1239 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n“我从来都是被人叫来叫去差遣。我猜我也没有任何拒绝的理由。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1254 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 1254 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“这并不是什么好事。……虽然我确实需要你的帮助。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1270 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 1270 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“残影大人，这里恐怕已经被恣眼盯上了，留在这里不是什么好主意。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1295 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 1295 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“现在最安全的反而是深入敌营。人类的亡魂爱理莎，我与我的属下会前往牢房区域一探究竟。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1312 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 1312 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“你可以思考一下我的提案。但如果你要去那里，请做好完全的准备。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1329 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 1329 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“权之殊能大人还好说，他的手下可绝不留情。人类的亡魂，衷心祝你好运。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1342 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 1342 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“我们还会见面的。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1344 as @n[tag=AzrielNPC_andralune] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
+execute if score stage_main_thread AzrTimerStack matches 1344 as @n[tag=AzrielNPC_andralune] at @s run tp @s -79909 31 116
 
+execute if score stage_main_thread AzrTimerStack matches 1330 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 1330 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“……人类的亡魂，我可以看看你的生命手册吗？”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1350 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n“怎么了？”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1370 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 1370 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“或许有什么我能帮你做的。”","color":"white"}]
 
-#execute if score stage_main_thread AzrTimerStack matches 1130 run scoreboard players set stage_main_thread AzrTimerStack 1999
+execute if score stage_main_thread AzrTimerStack matches 1329..1378 at @n[tag=AzrielNPC_mersenne] if entity @a[tag=azrPlayer,distance=0..4] run scoreboard players set stage_main_thread AzrTimerStack 1381
+execute if score stage_main_thread AzrTimerStack matches 1377..1378 at @n[tag=AzrielNPC_mersenne] unless entity @a[tag=azrPlayer,distance=0..4] run scoreboard players set stage_main_thread AzrTimerStack 1377
+execute if score stage_main_thread AzrTimerStack matches 1382 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 1382 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“这是……果然是奇匠派蒙的手笔。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1396 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 1396 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“稍等我对系统进行侵入……”","color":"white"}]
+
+execute if score stage_main_thread AzrTimerStack matches 1405 at @a[tag=azrPlayer] run function skyblock:azr/assets/events/effects/player_magic_release
+execute if score stage_main_thread AzrTimerStack matches 1405..1425 at @a[tag=azrPlayer] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 2 0.9 0 3
+execute if score stage_main_thread AzrTimerStack matches 1405..1425 at @a[tag=azrPlayer] run particle minecraft:trial_spawner_detection_ominous ~ ~0.1 ~ 0.4 0 0.4 0 6
+execute if score stage_main_thread AzrTimerStack matches 1405 at @a[tag=azrPlayer] run playsound minecraft:entity.creaking.activate player @a ~ ~ ~ 1 0.8
+execute if score stage_main_thread AzrTimerStack matches 1405 at @a[tag=azrPlayer] run playsound minecraft:ambient.soul_sand_valley.mood player @s ~ ~ ~ 2 1.3
+execute if score stage_main_thread AzrTimerStack matches 1405 at @a[tag=azrPlayer] run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1405 at @a[tag=azrPlayer] run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1405 at @a[tag=azrPlayer] run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
+
+execute if score stage_main_thread AzrTimerStack matches 1425 run tellraw @a[tag=azrShowDialog] {"text":"「生命手册」已开放第 3 页","color":"green"}
+execute if score stage_main_thread AzrTimerStack matches 1426 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 1426 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“……完成了。希望能帮上你的忙。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1439 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 1439 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“衷心祝你一路顺风。之后再见。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1444 as @n[tag=AzrielNPC_mersenne] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
+execute if score stage_main_thread AzrTimerStack matches 1444 as @n[tag=AzrielNPC_mersenne] at @s run tp @s -79909 31 116
+
+execute if score stage_main_thread AzrTimerStack matches 1449 run scoreboard players set stage_main_thread AzrTimerStack 1999
 
 
 #finalize
 execute if score stage_main_thread AzrTimerStack matches 2001 run bossbar remove azr:boss_hp_bar
-execute if score stage_main_thread AzrTimerStack matches 2001 run kill @e[tag=AzrielMob,tag=AzrielMob_skeleton_melee,x=-79931,y=40,z=88,distance=5..500]
+execute if score stage_main_thread AzrTimerStack matches 2001 run fill -79902 41 0 -79904 38 0 air destroy
+execute if score stage_main_thread AzrTimerStack matches 2001 run fill -79927 38 -13 -79927 42 -16 air destroy
 #effect & sound
 execute if score stage_main_thread AzrTimerStack matches 2001 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 2001 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
-#execute if score stage_main_thread AzrTimerStack matches 2011 run particle minecraft:end_rod -79931 39 42 0.6 0.6 0.6 0.0 13
-#execute if score stage_main_thread AzrTimerStack matches 2011 run particle minecraft:end_rod -79931 39 76 0.6 0.6 0.6 0.0 131
-#finalize map
-execute if score stage_main_thread AzrTimerStack matches 2011 run fill -79932 38 54 -79930 41 53 air destroy
-execute if score stage_main_thread AzrTimerStack matches 2011 run fill -79930 42 104 -79932 38 104 air destroy
 #finalize stage
-execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set wave Azr_system 10
-execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set stage Azr_system 11
+execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set wave Azr_system 23
+execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set stage Azr_system 25
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players reset tick_main_thread AzrTimerStack
 execute if score stage_main_thread AzrTimerStack matches 2011 run playsound minecraft:ui.toast.challenge_complete master @a[tag=azrShowDialog] ~ ~ ~ 2 0.9
 execute if score stage_main_thread AzrTimerStack matches 2011 run title @a[tag=azrShowDialog] actionbar {"text":"Chapter Clear","color":"gold"}
-execute if score stage_main_thread AzrTimerStack matches 2011 run tellraw @a[tag=azrShowDialog] {"text":"「生命手册」已开放第 3 页","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 2011 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage8_boss2
 #rewards
-#execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s unless items entity @s container.* *[custom_data~{azr_amulet_stopwatch:1b}] run function skyblock:azr/assets/items/amulets/stopwatch
-execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run summon item ~ ~ ~ {Item:{id:"emerald",count:20b}}
+execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run summon item ~ ~ ~ {Item:{id:"emerald",count:10b}}
 execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..9}] Azr_skillPoints 10
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players reset stage_main_thread AzrTimerStack
