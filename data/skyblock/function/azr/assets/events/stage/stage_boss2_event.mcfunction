@@ -157,25 +157,25 @@ execute if score stage_main_thread AzrTimerStack matches 1295 positioned -79923 
 execute if score stage_main_thread AzrTimerStack matches 1312 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score stage_main_thread AzrTimerStack matches 1312 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“你可以思考一下我的提案。但如果你要去那里，请做好万全的准备。那里的危险程度现在完全无法预测。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1329 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
-execute if score stage_main_thread AzrTimerStack matches 1329 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“权之殊能大人本尊还好说，他的手下可绝不留情。人类的亡魂，衷心祝你好运。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1329 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"green","bold": true},{"bold": false,"text":"\n“权之殊能大人本尊还好说，他的手下可绝不留情。人类的亡魂，衷心祝你好运。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1342 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score stage_main_thread AzrTimerStack matches 1342 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“我们还会见面的。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1344 as @n[tag=AzrielNPC_andralune] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
 execute if score stage_main_thread AzrTimerStack matches 1344..1345 as @n[tag=AzrielNPC_andralune] at @s run tp @s -79909 31 116
 
 execute if score stage_main_thread AzrTimerStack matches 1360 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
-execute if score stage_main_thread AzrTimerStack matches 1360 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“……人类的亡魂，我可以看看你的生命手册吗？”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1360 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"green","bold": true},{"bold": false,"text":"\n“……人类的亡魂，我可以看看你的生命手册吗？”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1380 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n“怎么了？”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1400 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
-execute if score stage_main_thread AzrTimerStack matches 1400 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“或许有什么我能帮你做的。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1400 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"green","bold": true},{"bold": false,"text":"\n“或许有什么我能帮你做的。”","color":"white"}]
 
 execute if score stage_main_thread AzrTimerStack matches 1365..1408 at @n[tag=AzrielNPC_mersenne] if entity @a[tag=azrPlayer,distance=0..4] run scoreboard players set stage_main_thread AzrTimerStack 1411
 execute if score stage_main_thread AzrTimerStack matches 1407..1408 at @n[tag=AzrielNPC_mersenne] unless entity @a[tag=azrPlayer,distance=0..4] run scoreboard players set stage_main_thread AzrTimerStack 1407
 
 execute if score stage_main_thread AzrTimerStack matches 1412 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
-execute if score stage_main_thread AzrTimerStack matches 1412 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“这本生命手册……果然是奇匠派蒙的手笔。你很幸运，我和他很熟。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1412 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"green","bold": true},{"bold": false,"text":"\n“这本生命手册……果然是奇匠派蒙的手笔。你很幸运，我和他很熟。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1426 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
-execute if score stage_main_thread AzrTimerStack matches 1426 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“稍等，我将对魔力网络的系统施行侵入……”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1426 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"green","bold": true},{"bold": false,"text":"\n“稍等，我将对魔力网络的系统施行侵入……”","color":"white"}]
 
 execute if score stage_main_thread AzrTimerStack matches 1435 at @a[tag=azrPlayer] run function skyblock:azr/assets/events/effects/player_magic_release
 execute if score stage_main_thread AzrTimerStack matches 1435..1455 at @a[tag=azrPlayer] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 2 0.9 0 3
@@ -189,9 +189,9 @@ execute if score stage_main_thread AzrTimerStack matches 1435 as @a[tag=azrShowD
 execute if score stage_main_thread AzrTimerStack matches 1455 as @a[tag=azrShowDialog] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 2 0.9
 execute if score stage_main_thread AzrTimerStack matches 1455 run tellraw @a[tag=azrShowDialog] {"text":"「生命手册」已开放第 3 页","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 1456 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
-execute if score stage_main_thread AzrTimerStack matches 1456 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“……完成了。希望能帮上你的忙。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1456 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"green","bold": true},{"bold": false,"text":"\n“……完成了。希望能帮上你的忙。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1469 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
-execute if score stage_main_thread AzrTimerStack matches 1469 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“衷心祝你一路顺风。之后再见。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1469 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"green","bold": true},{"bold": false,"text":"\n“衷心祝你一路顺风。之后再见。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1474 as @n[tag=AzrielNPC_mersenne] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
 execute if score stage_main_thread AzrTimerStack matches 1474 as @n[tag=AzrielNPC_mersenne] at @s run tp @s -79909 31 116
 
