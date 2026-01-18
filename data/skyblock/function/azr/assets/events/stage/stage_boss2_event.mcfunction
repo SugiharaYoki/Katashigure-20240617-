@@ -80,12 +80,36 @@ execute if score stage_main_thread AzrTimerStack matches 1013 at @n[tag=AzrielNP
 execute if score stage_main_thread AzrTimerStack matches 1013 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.wither.break_block hostile @a ~ ~ ~ 1 1.2
 execute if score stage_main_thread AzrTimerStack matches 1013 at @n[tag=AzrielNPC_andralune] run playsound entity.generic.explode hostile @a ~ ~ ~ 1 1.2
 
-execute if score stage_main_thread AzrTimerStack matches 1001 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
-execute if score stage_main_thread AzrTimerStack matches 1001 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“有趣，我确实没料到魔界会将如此巨量的魔力源源不断地输送给你。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 1013..2000 positioned -79923 43 96 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 1001 as @n[tag=AzrielNPC_andralune] run effect give @s resistance infinite 9 true
+execute if score stage_main_thread AzrTimerStack matches 1001 run summon minecraft:lightning_bolt -79902.69 52.00 -14.01
+execute if score stage_main_thread AzrTimerStack matches 1001 run fill -79901 50 -16 -79905 51 -13 air destroy
+execute if score stage_main_thread AzrTimerStack matches 1001 run clone -79912 -30 -23 -79897 -12 -6 -79912 40 -23
+execute if score stage_main_thread AzrTimerStack matches 1001 run particle minecraft:explosion -79902.44 51.00 -13.95 4 1.1 4 0.05 5
+execute if score stage_main_thread AzrTimerStack matches 1001 run playsound entity.generic.explode block @a -79902.44 51.00 -13.95 10 0.9
+execute if score stage_main_thread AzrTimerStack matches 1001 run particle minecraft:large_smoke -79902.44 51.00 -13.95 5 2 5 0.05 350
+execute if score stage_main_thread AzrTimerStack matches 1004 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 1004 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“……什、什么？！”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1009 at @n[tag=AzrielNPC_andralune] run tag @s remove actionable
+execute if score stage_main_thread AzrTimerStack matches 1019 at @n[tag=AzrielNPC_andralune] run item replace entity @s weapon.mainhand with air
+execute if score stage_main_thread AzrTimerStack matches 1019 at @n[tag=AzrielNPC_andralune] run item replace entity @s weapon.offhand with air
+execute if score stage_main_thread AzrTimerStack matches 1015 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 1015 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“不可能，我一直盯着你的行动……而且你根本不可能对神庭的建筑造成破坏。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1031 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 1031 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“糟了，真正吸引了神界军注意力的，根本不是那些杂兵……”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1049 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 1049 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“真正被他们用来吸引我们注意的，是你！！”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1051 run particle minecraft:large_smoke -79902.44 51.00 -13.95 7 3 7 0.05 450
+execute if score stage_main_thread AzrTimerStack matches 1051 run particle minecraft:white_smoke -79902.44 51.00 -13.95 7 3 7 0.05 450
+execute if score stage_main_thread AzrTimerStack matches 1051 run particle minecraft:explosion -79902.44 51.00 -13.95 7 3 7 0.05 30
+execute if score stage_main_thread AzrTimerStack matches 1052 run particle minecraft:explosion -79902.44 51.00 -13.95 7 3 7 0.05 20
+execute if score stage_main_thread AzrTimerStack matches 1051 run playsound entity.generic.explode block @a -79902.44 51.00 -13.95 10 0.8
+execute if score stage_main_thread AzrTimerStack matches 1052 run playsound entity.generic.explode block @a -79902.44 51.00 -13.95 10 0.8
+execute if score stage_main_thread AzrTimerStack matches 1051 run clone -79912 -50 -23 -79897 -32 -6 -79912 40 -23
 
 
-execute if score stage_main_thread AzrTimerStack matches 1130 run scoreboard players set stage_main_thread AzrTimerStack 1999
+
+#execute if score stage_main_thread AzrTimerStack matches 1130 run scoreboard players set stage_main_thread AzrTimerStack 1999
+
 
 #finalize
 execute if score stage_main_thread AzrTimerStack matches 2001 run bossbar remove azr:boss_hp_bar

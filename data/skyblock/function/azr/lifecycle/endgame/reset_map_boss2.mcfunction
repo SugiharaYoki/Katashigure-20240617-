@@ -20,3 +20,5 @@ execute as @n[tag=AzrielBossA] run data modify entity @s Invulnerable set value 
 execute as @n[tag=AzrielBossA] run data modify entity @s NoAI set value 1b
 
 effect clear @a[tag=azrPlayer] blindness
+
+clone -79912 -10 -23 -79897 8 -6 -79912 40 -23
