@@ -157,7 +157,7 @@ execute if score stage_main_thread AzrTimerStack matches 1329 positioned -79923 
 execute if score stage_main_thread AzrTimerStack matches 1342 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score stage_main_thread AzrTimerStack matches 1342 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“我们还会见面的。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1344 as @n[tag=AzrielNPC_andralune] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
-execute if score stage_main_thread AzrTimerStack matches 1344 as @n[tag=AzrielNPC_andralune] at @s run tp @s -79909 31 116
+execute if score stage_main_thread AzrTimerStack matches 1344..1345 as @n[tag=AzrielNPC_andralune] at @s run tp @s -79909 31 116
 
 execute if score stage_main_thread AzrTimerStack matches 1330 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 1330 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“……人类的亡魂，我可以看看你的生命手册吗？”","color":"white"}]
@@ -168,19 +168,20 @@ execute if score stage_main_thread AzrTimerStack matches 1370 positioned -79923 
 execute if score stage_main_thread AzrTimerStack matches 1329..1378 at @n[tag=AzrielNPC_mersenne] if entity @a[tag=azrPlayer,distance=0..4] run scoreboard players set stage_main_thread AzrTimerStack 1381
 execute if score stage_main_thread AzrTimerStack matches 1377..1378 at @n[tag=AzrielNPC_mersenne] unless entity @a[tag=azrPlayer,distance=0..4] run scoreboard players set stage_main_thread AzrTimerStack 1377
 execute if score stage_main_thread AzrTimerStack matches 1382 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
-execute if score stage_main_thread AzrTimerStack matches 1382 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“这是……果然是奇匠派蒙的手笔。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1382 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“这是……果然是奇匠派蒙的手笔。你很幸运，我是派蒙的亲传弟子。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1396 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
-execute if score stage_main_thread AzrTimerStack matches 1396 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“稍等我对系统进行侵入……”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1396 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“稍等，我将对魔力网络的系统施行侵入……”","color":"white"}]
 
 execute if score stage_main_thread AzrTimerStack matches 1405 at @a[tag=azrPlayer] run function skyblock:azr/assets/events/effects/player_magic_release
 execute if score stage_main_thread AzrTimerStack matches 1405..1425 at @a[tag=azrPlayer] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 2 0.9 0 3
 execute if score stage_main_thread AzrTimerStack matches 1405..1425 at @a[tag=azrPlayer] run particle minecraft:trial_spawner_detection_ominous ~ ~0.1 ~ 0.4 0 0.4 0 6
 execute if score stage_main_thread AzrTimerStack matches 1405 at @a[tag=azrPlayer] run playsound minecraft:entity.creaking.activate player @a ~ ~ ~ 1 0.8
-execute if score stage_main_thread AzrTimerStack matches 1405 at @a[tag=azrPlayer] run playsound minecraft:ambient.soul_sand_valley.mood player @s ~ ~ ~ 2 1.3
-execute if score stage_main_thread AzrTimerStack matches 1405 at @a[tag=azrPlayer] run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
-execute if score stage_main_thread AzrTimerStack matches 1405 at @a[tag=azrPlayer] run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
-execute if score stage_main_thread AzrTimerStack matches 1405 at @a[tag=azrPlayer] run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1405 at @a[tag=azrPlayer] run playsound minecraft:ambient.soul_sand_valley.mood player @a ~ ~ ~ 2 1.3
+execute if score stage_main_thread AzrTimerStack matches 1405 at @a[tag=azrPlayer] run playsound minecraft:ambient.warped_forest.mood player @a ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1405 at @a[tag=azrPlayer] run playsound minecraft:ambient.warped_forest.mood player @a ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1405 at @a[tag=azrPlayer] run playsound minecraft:ambient.warped_forest.mood player @a ~ ~ ~ 2 0.7
 
+execute if score stage_main_thread AzrTimerStack matches 1425 run playsound minecraft:ui.toast.challenge_complete master @a[tag=azrShowDialog] ~ ~ ~ 2 0.9
 execute if score stage_main_thread AzrTimerStack matches 1425 run tellraw @a[tag=azrShowDialog] {"text":"「生命手册」已开放第 3 页","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 1426 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 1426 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“……完成了。希望能帮上你的忙。”","color":"white"}]
@@ -189,7 +190,7 @@ execute if score stage_main_thread AzrTimerStack matches 1439 positioned -79923 
 execute if score stage_main_thread AzrTimerStack matches 1444 as @n[tag=AzrielNPC_mersenne] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
 execute if score stage_main_thread AzrTimerStack matches 1444 as @n[tag=AzrielNPC_mersenne] at @s run tp @s -79909 31 116
 
-execute if score stage_main_thread AzrTimerStack matches 1449 run scoreboard players set stage_main_thread AzrTimerStack 1999
+execute if score stage_main_thread AzrTimerStack matches 1452 run scoreboard players set stage_main_thread AzrTimerStack 1999
 
 
 #finalize
@@ -203,7 +204,6 @@ execute if score stage_main_thread AzrTimerStack matches 2001 run playsound ambi
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set wave Azr_system 23
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set stage Azr_system 25
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players reset tick_main_thread AzrTimerStack
-execute if score stage_main_thread AzrTimerStack matches 2011 run playsound minecraft:ui.toast.challenge_complete master @a[tag=azrShowDialog] ~ ~ ~ 2 0.9
 execute if score stage_main_thread AzrTimerStack matches 2011 run title @a[tag=azrShowDialog] actionbar {"text":"Chapter Clear","color":"gold"}
 execute if score stage_main_thread AzrTimerStack matches 2011 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage8_boss2
 #rewards
