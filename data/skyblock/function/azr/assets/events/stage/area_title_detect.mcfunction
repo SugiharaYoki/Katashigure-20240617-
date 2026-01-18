@@ -10,7 +10,7 @@ execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79929,y=
                                                 {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
 execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79932,y=38,z=-18,dx=3,dy=4,dz=10] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
-execute unless score @s AzrPlayer_CurrentArea matches 2 if entity @s[x=-79904,y=37,z=26,dx=3,dy=5,dz=8] run function skyblock:azr/assets/events/stage/area_title_show \
+execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79904,y=37,z=26,dx=3,dy=5,dz=8] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
 
 execute unless score @s AzrPlayer_CurrentArea matches 5 if entity @s[x=-79923,y=33,z=33,dx=4,dy=3,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
