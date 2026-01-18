@@ -84,6 +84,5 @@ execute if score stage_boss_bgm AzrTimerStack matches 4200.. run scoreboard play
     execute if score tick_main_thread AzrTimerStack matches 2001 run scoreboard players set @s rng2 0
     execute if score tick_main_thread AzrTimerStack matches 2001 run scoreboard players set @s rng5 0
     execute if score tick_main_thread AzrTimerStack matches 2001 run scoreboard players set @s rng8 0
-    execute if score tick_main_thread AzrTimerStack matches 2001 run stopsound @a[tag=azrShowDialog]
     execute if score tick_main_thread AzrTimerStack matches 2001 run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 10 0.7
 
