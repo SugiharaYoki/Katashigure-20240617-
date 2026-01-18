@@ -107,6 +107,8 @@ execute if score stage_main_thread AzrTimerStack matches 1031 at @n[tag=AzrielNP
 execute if score stage_main_thread AzrTimerStack matches 1031 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“糟了，真正吸引了神界军注意力的，根本不是那些杂兵……”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1049 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score stage_main_thread AzrTimerStack matches 1049 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“真正被他们用来吸引我们注意的，是你！！”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1053 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 1053 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“可恶，我中计了……我们都中计了。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1051 run particle minecraft:large_smoke -79902.44 51.00 -13.95 7 3 7 0.05 450
 execute if score stage_main_thread AzrTimerStack matches 1051 run particle minecraft:white_smoke -79902.44 51.00 -13.95 7 3 7 0.05 450
 execute if score stage_main_thread AzrTimerStack matches 1051 run particle minecraft:explosion -79902.44 51.00 -13.95 7 3 7 0.05 30
