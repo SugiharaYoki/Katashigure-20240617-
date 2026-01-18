@@ -89,6 +89,7 @@ execute if score stage_main_thread AzrTimerStack matches 1001 run playsound enti
 execute if score stage_main_thread AzrTimerStack matches 1001 run particle minecraft:large_smoke -79902.44 51.00 -13.95 5 2 5 0.05 350
 execute if score stage_main_thread AzrTimerStack matches 1004 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score stage_main_thread AzrTimerStack matches 1004 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“……什、什么？！”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1009 as @n[tag=AzrielNPC_andralune] run tp @s -79903 38 -18
 execute if score stage_main_thread AzrTimerStack matches 1009 at @n[tag=AzrielNPC_andralune] run tag @s remove actionable
 execute if score stage_main_thread AzrTimerStack matches 1019 at @n[tag=AzrielNPC_andralune] run item replace entity @s weapon.mainhand with air
 execute if score stage_main_thread AzrTimerStack matches 1019 at @n[tag=AzrielNPC_andralune] run item replace entity @s weapon.offhand with air
@@ -105,6 +106,7 @@ execute if score stage_main_thread AzrTimerStack matches 1052 run particle minec
 execute if score stage_main_thread AzrTimerStack matches 1051 run playsound entity.generic.explode block @a -79902.44 51.00 -13.95 10 0.8
 execute if score stage_main_thread AzrTimerStack matches 1052 run playsound entity.generic.explode block @a -79902.44 51.00 -13.95 10 0.8
 execute if score stage_main_thread AzrTimerStack matches 1051 run clone -79912 -50 -23 -79897 -32 -6 -79912 40 -23
+execute if score stage_main_thread AzrTimerStack matches 1023..1999 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
 
 
 
