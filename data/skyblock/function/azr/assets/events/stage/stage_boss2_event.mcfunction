@@ -141,7 +141,7 @@ execute if score stage_main_thread AzrTimerStack matches 1155 positioned -79923 
 execute if score stage_main_thread AzrTimerStack matches 1162 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score stage_main_thread AzrTimerStack matches 1162 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“人类的亡魂，神庭的试炼暂时无法继续了。但比起回到魔界，有兴趣帮我个忙吗？”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1178 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n“并没太大的兴趣。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 1192 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n“你能给什么报酬？”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1192 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n“但是，你能给什么报酬？”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1208 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score stage_main_thread AzrTimerStack matches 1208 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“额外的阳寿。现在的人间，你的丈夫还在急诊室外等着，彻夜未眠。你如今被ICU吊着一口气，但还有活下来的可能。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1226 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n“……罗温，他还没有放弃希望吗。”","color":"white"}]
