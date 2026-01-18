@@ -159,9 +159,9 @@ execute if score wave Azr_system matches 36.. run scoreboard players set chapter
 #AzrielNPC
 #execute as @e[tag=AzrielNPC] at @s run rotate @s facing entity @p[distance=..3]
 
-execute if score stage Azr_system matches 10.. unless entity @n[tag=AzrielNPC_andralune] positioned -79907 38 -12 run function skyblock:azr/assets/mobs/unique/revive_andralune
-execute if score stage Azr_system matches 10.. unless entity @n[tag=AzrielNPC_mersenne] positioned -79907 38 -12 run function skyblock:azr/assets/mobs/unique/revive_mersenne
-execute if score stage Azr_system matches 10.. unless entity @n[tag=AzrielNPC_marinus] positioned -79907 38 -12 run function skyblock:azr/assets/mobs/skill/marinus/summon_revive
+execute if score stage Azr_system matches 10.. unless entity @n[tag=AzrielNPC_andralune] positioned -79889 51 -15 run function skyblock:azr/assets/mobs/unique/revive_andralune
+execute if score stage Azr_system matches 10.. unless entity @n[tag=AzrielNPC_mersenne] positioned -79889 51 -15 run function skyblock:azr/assets/mobs/unique/revive_mersenne
+execute if score stage Azr_system matches 10.. unless entity @n[tag=AzrielNPC_marinus] positioned -79889 51 -15 run function skyblock:azr/assets/mobs/skill/marinus/summon_revive
 
 #重置计时器
 scoreboard players set tick_count_main AzrTimerStack 0
