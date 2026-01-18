@@ -156,7 +156,7 @@ execute if score stage_main_thread AzrTimerStack matches 450 run kill @e[tag=Azr
 
 #execute if score stage_main_thread AzrTimerStack matches 460..461 run scoreboard players set stage_main_thread AzrTimerStack 460
 
-
+execute if score stage_main_thread AzrTimerStack matches 500 run fill -79906 40 27 -79906 38 29 minecraft:purple_stained_glass destroy
 execute if score stage_main_thread AzrTimerStack matches 500 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..8}] Azr_skillPoints 9
 execute if score stage_main_thread AzrTimerStack matches 500 run scoreboard players set wave Azr_system 22
 execute if score stage_main_thread AzrTimerStack matches 500 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage8
