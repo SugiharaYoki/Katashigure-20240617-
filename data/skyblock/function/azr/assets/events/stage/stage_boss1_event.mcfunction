@@ -180,7 +180,7 @@ execute if score stage_main_thread AzrTimerStack matches 2011 run fill -79930 42
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set wave Azr_system 10
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set stage Azr_system 11
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players reset tick_main_thread AzrTimerStack
-execute if score stage_main_thread AzrTimerStack matches 2011 run playsound minecraft:ui.toast.challenge_complete master @a[tag=azrShowDialog] ~ ~ ~ 2 0.9
+execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrShowDialog] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 2 0.9
 execute if score stage_main_thread AzrTimerStack matches 2011 run title @a[tag=azrShowDialog] actionbar {"text":"Chapter Clear","color":"gold"}
 execute if score stage_main_thread AzrTimerStack matches 2011 run tellraw @a[tag=azrShowDialog] {"text":"「生命手册」已开放第 2 页","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 2011 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage4_boss1

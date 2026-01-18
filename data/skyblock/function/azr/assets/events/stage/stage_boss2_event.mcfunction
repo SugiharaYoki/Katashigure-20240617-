@@ -71,8 +71,6 @@ execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01
 
 execute if score stage_main_thread AzrTimerStack matches 990..999 run scoreboard players set stage_main_thread AzrTimerStack 990
 execute if score stage_main_thread AzrTimerStack matches 1002 as @n[tag=AzrielBossA] run tag @s remove actionable
-execute if score stage_main_thread AzrTimerStack matches 1002 as @n[tag=AzrielBossA] run stopsound @a[tag=azrShowDialog] music minecraft:grenade
-execute if score stage_main_thread AzrTimerStack matches 1002 run scoreboard players set stage_boss_bgm AzrTimerStack -99900
 execute if score stage_main_thread AzrTimerStack matches 1012 as @n[tag=AzrielBossA] run data modify entity @s NoAI set value 1b
 
 execute if score stage_main_thread AzrTimerStack matches 1001 as @n[tag=AzrielNPC_andralune] at @s run kill @e[tag=AzrielMob,tag=AzrielMob_skeleton_melee,distance=5..50]
@@ -112,12 +110,14 @@ execute if score stage_main_thread AzrTimerStack matches 1049 positioned -79923 
 execute if score stage_main_thread AzrTimerStack matches 1051 run particle minecraft:large_smoke -79902.44 51.00 -13.95 7 3 7 0.05 450
 execute if score stage_main_thread AzrTimerStack matches 1051 run particle minecraft:white_smoke -79902.44 51.00 -13.95 7 3 7 0.05 450
 execute if score stage_main_thread AzrTimerStack matches 1051 run particle minecraft:explosion -79902.44 51.00 -13.95 7 3 7 0.05 30
-execute if score stage_main_thread AzrTimerStack matches 1052 run particle minecraft:explosion -79902.44 51.00 -13.95 7 3 7 0.05 20
+execute if score stage_main_thread AzrTimerStack matches 1052..1053 run particle minecraft:explosion -79902.44 50.00 -13.95 7 3 7 0.05 20
 execute if score stage_main_thread AzrTimerStack matches 1051 run playsound entity.generic.explode block @a -79902.44 51.00 -13.95 10 0.8
-execute if score stage_main_thread AzrTimerStack matches 1052 run playsound entity.generic.explode block @a -79902.44 51.00 -13.95 10 0.8
+execute if score stage_main_thread AzrTimerStack matches 1052..1053 run playsound entity.generic.explode block @a -79902.44 50.00 -13.95 10 0.8
 execute if score stage_main_thread AzrTimerStack matches 1051 run clone -79912 -50 -23 -79897 -32 -6 -79912 40 -23
 execute if score stage_main_thread AzrTimerStack matches 1051 run clone -79902 36 -41 -79898 43 -32 -79933 37 -27
 execute if score stage_main_thread AzrTimerStack matches 1051 run clone -79933 -44 -53 -79929 -33 -35 -79933 36 -53
+execute if score stage_main_thread AzrTimerStack matches 1051 as @n[tag=AzrielBossA] run stopsound @a[tag=azrShowDialog] music minecraft:grenade
+execute if score stage_main_thread AzrTimerStack matches 1051 run scoreboard players set stage_boss_bgm AzrTimerStack -99900
 execute if score stage_main_thread AzrTimerStack matches 1023..1068 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 1069..1130 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_andralune] facing entity @n[tag=AzrielNPC_mersenne]
 execute if score stage_main_thread AzrTimerStack matches 1063..1149 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_mersenne] facing entity @n[tag=AzrielNPC_andralune]
@@ -126,7 +126,7 @@ execute if score stage_main_thread AzrTimerStack matches 1150..1250 positioned -
 
 execute if score stage_main_thread AzrTimerStack matches 1063 at @n[tag=AzrielNPC_mersenne] run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
 execute if score stage_main_thread AzrTimerStack matches 1063 positioned -79901 38 -16 run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
-execute if score stage_main_thread AzrTimerStack matches 1063 positioned -79923 43 96 run tp @n[tag=AzrielNPC_mersenne] -79901 38 -16 facing entity @n[tag=AzrielNPC_andralune]
+execute if score stage_main_thread AzrTimerStack matches 1063 positioned -79923 43 96 run tp @n[tag=AzrielNPC_mersenne] -79901 38 -19 facing entity @n[tag=AzrielNPC_andralune]
 execute if score stage_main_thread AzrTimerStack matches 1065 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 1065 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“权之残影大人……！！我已经锁定内奸身份了！”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1080 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
@@ -184,7 +184,7 @@ execute if score stage_main_thread AzrTimerStack matches 1435 as @a[tag=azrShowD
 execute if score stage_main_thread AzrTimerStack matches 1435 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
 execute if score stage_main_thread AzrTimerStack matches 1435 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
 
-execute if score stage_main_thread AzrTimerStack matches 1455 run playsound minecraft:ui.toast.challenge_complete master @a[tag=azrShowDialog] ~ ~ ~ 2 0.9
+execute if score stage_main_thread AzrTimerStack matches 1455 as @a[tag=azrShowDialog] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 2 0.9
 execute if score stage_main_thread AzrTimerStack matches 1455 run tellraw @a[tag=azrShowDialog] {"text":"「生命手册」已开放第 3 页","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 1456 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 1456 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“……完成了。希望能帮上你的忙。”","color":"white"}]
