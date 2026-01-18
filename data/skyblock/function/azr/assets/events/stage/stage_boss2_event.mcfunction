@@ -100,6 +100,7 @@ execute if score stage_main_thread AzrTimerStack matches 1001 run particle minec
 execute if score stage_main_thread AzrTimerStack matches 1004 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score stage_main_thread AzrTimerStack matches 1004 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“……什、什么？！”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1009 as @n[tag=AzrielNPC_andralune] run tp @s -79903 38 -18
+execute if score stage_main_thread AzrTimerStack matches 1009 at @n[tag=AzrielNPC_andralune] run tag @s remove AzrielMob
 execute if score stage_main_thread AzrTimerStack matches 1009 at @n[tag=AzrielNPC_andralune] run tag @s remove actionable
 execute if score stage_main_thread AzrTimerStack matches 1019 at @n[tag=AzrielNPC_andralune] run item replace entity @s weapon.mainhand with air
 execute if score stage_main_thread AzrTimerStack matches 1019 at @n[tag=AzrielNPC_andralune] run item replace entity @s weapon.offhand with air
