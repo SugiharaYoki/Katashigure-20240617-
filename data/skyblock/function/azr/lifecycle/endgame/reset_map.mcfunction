@@ -496,7 +496,6 @@ setblock -79867 48 -109 lever[facing=east,face=floor,powered=false]
 
 
 
-setblock -79924 39 -72 birch_button[face=floor,facing=west]
 setblock -79891 49 136 minecraft:birch_button[face=floor,facing=east]
 setblock -79925 24 136 air
 setblock -79925 24 136 trapped_chest[facing=south]{lock:{components:{custom_data:{key_required:1b}}}}

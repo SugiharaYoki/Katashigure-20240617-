@@ -111,12 +111,6 @@ execute if block -79959 39 20 minecraft:birch_button[powered=true] run summon it
 execute if block -79959 39 20 minecraft:birch_button[powered=true] run setblock -79959 39 20 air
 
 
-#extra bonus - stage9 uncommited
-execute if block -79940 39 -60 minecraft:birch_button[powered=true] run function skyblock:azr/assets/events/stage/dialog/first_pass_west
-execute if block -79924 39 -72 minecraft:birch_button[powered=true] positioned -79931 38 -72 run function skyblock:azr/assets/mobs/zombie_t2_miner
-execute if block -79924 39 -72 minecraft:birch_button[powered=true] positioned -79931 38 -72 run function skyblock:azr/assets/mobs/zombie_t2_miner
-execute if block -79924 39 -72 minecraft:birch_button[powered=true] positioned -79931 38 -72 run function skyblock:azr/assets/mobs/zombie_t2_miner
-execute if block -79924 39 -72 minecraft:birch_button[powered=true] run setblock -79924 39 -72 air
 #extra bonus - event10
 execute if block -79938 41 -125 minecraft:birch_button[powered=true] run give @a[tag=azrPlayer] minecraft:glistering_melon_slice 1
 execute if block -79938 41 -125 minecraft:birch_button[powered=true] run give @a[tag=azrPlayer] minecraft:emerald 5
