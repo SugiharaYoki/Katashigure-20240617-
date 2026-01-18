@@ -34,7 +34,6 @@ tag @s remove azrBanLifeVitae
 tag @s remove azrUpgrateLifeVitae
 #tag @s add azrDead
 tag @s remove AZR_chainKill_activated
-tag @s remove azrRetrieved
 tag @s remove AzrielEvent382315A
 
 scoreboard players set @s Azr_forceDeath 0
@@ -67,6 +66,7 @@ tag @s remove azrAmulet_StayFloat_Jumping
 
 
 execute if entity @s[tag=azrRetrieved] run function skyblock:azr/lifecycle/endgame/save_game
+tag @s remove azrRetrieved
 
 function skyblock:api_quit_any_game
 
