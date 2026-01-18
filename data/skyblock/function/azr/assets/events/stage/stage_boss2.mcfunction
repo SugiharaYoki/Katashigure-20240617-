@@ -16,9 +16,9 @@ execute if score stage_boss_bgm AzrTimerStack matches 4200.. run scoreboard play
     effect clear @s invisibility
     effect give @s slow_falling 10 0 true
     #防止坠入虚空 传送到定点或传送到玩家各有一半可能
-    execute as @s at @s if entity @s[y=0,dy=36] run effect give @s speed 3 1 false
-    execute as @s at @s if entity @s[y=0,dy=36] store result score #temp_rng Azr_system run random value 1..2
-    execute as @s at @s if entity @s[y=0,dy=36] if score #temp_rng Azr_system matches 1 run tp @s @r[tag=azrPlayer]
+    execute as @s[tag=actionable] at @s if entity @s[y=0,dy=36] run effect give @s speed 3 1 false
+    execute as @s[tag=actionable] at @s if entity @s[y=0,dy=36] store result score #temp_rng Azr_system run random value 1..2
+    execute as @s[tag=actionable] at @s if entity @s[y=0,dy=36] if score #temp_rng Azr_system matches 1 run tp @s @r[tag=azrPlayer]
     execute as @s[tag=actionable] at @s if entity @s[y=0,dy=36] if score #temp_rng Azr_system matches 2 run tp @s -79902.02 38.00 -14.02
     execute as @s[tag=actionable] at @s if block ~ ~-0.2 ~ water store result score #temp_rng Azr_system run random value 1..2
     execute as @s[tag=actionable] at @s if block ~ ~-0.2 ~ water if score #temp_rng Azr_system matches 1 run tp @s @r[tag=azrPlayer]
