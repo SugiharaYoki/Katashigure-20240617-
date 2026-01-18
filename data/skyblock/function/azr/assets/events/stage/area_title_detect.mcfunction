@@ -8,7 +8,8 @@ execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79933,y=
                                                 {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
 execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79929,y=33,z=32,dx=4,dy=4,dz=6] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
-
+execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79932,y=38,z=-18,dx=3,dy=4,dz=10] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
 
 execute unless score @s AzrPlayer_CurrentArea matches 5 if entity @s[x=-79923,y=33,z=33,dx=4,dy=3,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:5,title:"逾 怜 藓 路",color_code:"#035e01"}
@@ -20,6 +21,8 @@ execute unless score @s AzrPlayer_CurrentArea matches 2 if entity @s[x=-79934,y=
 execute unless score @s AzrPlayer_CurrentArea matches 2 if entity @s[x=-79877,y=37,z=67,dx=3,dy=4,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:2,title:"采 光 礼 堂",color_code:"#9ef4ff"}
 execute unless score @s AzrPlayer_CurrentArea matches 2 if entity @s[x=-79898,y=38,z=88,dx=2,dy=5,dz=10] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:2,title:"采 光 礼 堂",color_code:"#9ef4ff"}
+execute unless score @s AzrPlayer_CurrentArea matches 2 if entity @s[x=-79925,y=38,z=-19,dx=3,dy=5,dz=10] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:2,title:"采 光 礼 堂",color_code:"#9ef4ff"}
 
 execute unless score @s AzrPlayer_CurrentArea matches 3 if entity @s[x=-79934,y=37,z=167,dx=10,dy=5,dz=10] run function skyblock:azr/assets/events/stage/area_title_show \

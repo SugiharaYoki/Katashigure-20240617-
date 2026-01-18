@@ -525,7 +525,6 @@ setblock -79951 38 9 minecraft:quartz_stairs[facing=south]
 setblock -79943 39 8 chiseled_quartz_block
 setblock -79947 32 140 diamond_block
 setblock -79947 33 140 birch_button[face=floor,facing=west]
-setblock -79940 39 -60 minecraft:birch_button[facing=north]
 setblock -79886 41 -114 lever[face=floor,facing=west,powered=false]
 setblock -79894 39 -113 minecraft:chiseled_stone_bricks
 setblock -79894 39 -115 minecraft:chiseled_stone_bricks
