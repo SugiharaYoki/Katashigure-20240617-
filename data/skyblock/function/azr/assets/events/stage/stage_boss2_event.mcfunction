@@ -72,7 +72,7 @@ execute if score stage_main_thread AzrTimerStack matches 91 positioned -79881.01
 execute if score stage_main_thread AzrTimerStack matches 990..999 run scoreboard players set stage_main_thread AzrTimerStack 990
 execute if score stage_main_thread AzrTimerStack matches 1002 as @n[tag=AzrielBossA] run tag @s remove actionable
 execute if score stage_main_thread AzrTimerStack matches 1002 as @n[tag=AzrielBossA] run stopsound @a[tag=azrShowDialog] music minecraft:grenade
-execute if score stage_main_thread AzrTimerStack matches 1002 run scoreboard players set stage_boss_bgm AzrTimerStack -500
+execute if score stage_main_thread AzrTimerStack matches 1002 run scoreboard players set stage_boss_bgm AzrTimerStack -99900
 execute if score stage_main_thread AzrTimerStack matches 1012 as @n[tag=AzrielBossA] run data modify entity @s NoAI set value 1b
 
 execute if score stage_main_thread AzrTimerStack matches 1001 as @n[tag=AzrielNPC_andralune] at @s run kill @e[tag=AzrielMob,tag=AzrielMob_skeleton_melee,distance=5..50]
