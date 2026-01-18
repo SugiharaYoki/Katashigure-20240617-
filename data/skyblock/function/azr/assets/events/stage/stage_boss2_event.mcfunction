@@ -176,11 +176,11 @@ execute if score stage_main_thread AzrTimerStack matches 1426 positioned -79923 
 execute if score stage_main_thread AzrTimerStack matches 1435 at @a[tag=azrPlayer] run function skyblock:azr/assets/events/effects/player_magic_release
 execute if score stage_main_thread AzrTimerStack matches 1435..1455 at @a[tag=azrPlayer] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 2 0.9 0 3
 execute if score stage_main_thread AzrTimerStack matches 1435..1455 at @a[tag=azrPlayer] run particle minecraft:trial_spawner_detection_ominous ~ ~0.1 ~ 0.4 0 0.4 0 6
-execute if score stage_main_thread AzrTimerStack matches 1435 at @a[tag=azrPlayer] run playsound minecraft:entity.creaking.activate player @a ~ ~ ~ 1 0.8
-execute if score stage_main_thread AzrTimerStack matches 1435 at @a[tag=azrPlayer] run playsound minecraft:ambient.soul_sand_valley.mood player @a ~ ~ ~ 2 1.3
-execute if score stage_main_thread AzrTimerStack matches 1435 at @a[tag=azrPlayer] run playsound minecraft:ambient.warped_forest.mood player @a ~ ~ ~ 2 0.7
-execute if score stage_main_thread AzrTimerStack matches 1435 at @a[tag=azrPlayer] run playsound minecraft:ambient.warped_forest.mood player @a ~ ~ ~ 2 0.7
-execute if score stage_main_thread AzrTimerStack matches 1435 at @a[tag=azrPlayer] run playsound minecraft:ambient.warped_forest.mood player @a ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1435 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.creaking.activate player @s ~ ~ ~ 1 0.8
+execute if score stage_main_thread AzrTimerStack matches 1435 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.soul_sand_valley.mood player @s ~ ~ ~ 2 1.3
+execute if score stage_main_thread AzrTimerStack matches 1435 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1435 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
+execute if score stage_main_thread AzrTimerStack matches 1435 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
 
 execute if score stage_main_thread AzrTimerStack matches 1455 run playsound minecraft:ui.toast.challenge_complete master @a[tag=azrShowDialog] ~ ~ ~ 2 0.9
 execute if score stage_main_thread AzrTimerStack matches 1455 run tellraw @a[tag=azrShowDialog] {"text":"「生命手册」已开放第 3 页","color":"green"}
