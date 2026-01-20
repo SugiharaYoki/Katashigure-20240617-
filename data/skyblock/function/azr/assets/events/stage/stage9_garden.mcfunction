@@ -27,7 +27,7 @@ execute positioned -79931 38 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79931 38 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=90}] positioned -79931 38 -37 run tellraw @a[tag=azrShowDialog] [{"text":"剑士：","color":"green","bold": true},{"bold": false,"text":"\n“这倒是好主意。但反正我不敢。”","color":"white"}]
 
 
-execute positioned -79931 0 -37 as @e[distance=0..500] at @s unless entity @s[type=!pillager] unless entity @s[type=!vindicator] run function skyblock:azr/assets/events/stage/stage9_divineforce
+execute positioned -79931 0 -37 as @e[distance=0..500] at @s unless entity @s[type=!pillager,type=!vindicator] run function skyblock:azr/assets/events/stage/stage9_divineforce
 
 
 #
