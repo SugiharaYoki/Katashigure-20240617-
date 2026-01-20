@@ -9,8 +9,9 @@ clone -79902 36 -41 -79898 43 -32 -79933 37 -27
 clone -79933 -44 -53 -79929 -33 -35 -79933 36 -53
 
 
+
+fill -79904 41 0 -79902 38 0 minecraft:air
+
+
 execute as @n[tag=AzrielNPC_mersenne] at @s run tp @s -79909 31 116
 execute as @n[tag=AzrielNPC_andralune] at @s run tp @s -79909 31 116
-
-
-
