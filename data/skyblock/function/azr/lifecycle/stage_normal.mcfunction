@@ -53,7 +53,7 @@ execute if score stage Azr_system matches 21..24 run function skyblock:azr/asset
 #BOSS2 23-24
     # azr/main.mcfunction
 #BOSS2-第九关 25
-execute if score stage Azr_system matches 25 run function skyblock:azr/assets/events/stage/stage9_pre
+execute if score stage Azr_system matches 25.. run function skyblock:azr/assets/events/stage/stage9_garden
 #第九关 26
 execute if score stage Azr_system matches 26 run function skyblock:azr/assets/events/stage/stage9
 #event5 27
