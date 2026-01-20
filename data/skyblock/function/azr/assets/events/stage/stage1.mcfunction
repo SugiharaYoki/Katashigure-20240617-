@@ -49,7 +49,6 @@ execute if score stage_main_thread AzrTimerStack matches 72.. run tellraw @a[tag
 execute if score stage_main_thread AzrTimerStack matches 72.. run tag @a[tag=azrPlayer,tag=!hasLifeVitae] add hasLifeVitae
 execute if score stage_main_thread AzrTimerStack matches 72.. run tellraw @a[tag=azrShowDialog,tag=!hasLifeVitae] {"text":""}
 execute if score stage_main_thread AzrTimerStack matches 72.. run scoreboard players set stage Azr_system 3
-execute if score stage_main_thread AzrTimerStack matches 72.. run scoreboard players set wave Azr_system 1
 execute if score stage_main_thread AzrTimerStack matches 72.. run scoreboard players reset tick_main_thread AzrTimerStack
 execute if score stage_main_thread AzrTimerStack matches 72.. run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage1
 execute if score stage_main_thread AzrTimerStack matches 72.. run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..0}] Azr_skillPoints 1

@@ -1,6 +1,6 @@
 function skyblock:azr/lifecycle/jump_to/ch1_boss
 
-execute as @a[tag=azrPlayer] at @s unless score @s SeGa_StandLastBH matches 7.. run return run function skyblock:azr/lifecycle/jump_to/return
+execute as @a[tag=azrPlayer] at @s unless score @s Azr_skillPoints matches 4.. run return run function skyblock:azr/lifecycle/jump_to/return
 
 
 
@@ -12,7 +12,6 @@ tellraw @a[tag=azrPlayer] {"text":"第一关口正处于半封锁状态。选择
 tellraw @a[tag=azrPlayer] {"text":"在这条走廊的前方，是一种你从未感受过的，那种带着神圣气息的强大威压感。","color":"gray"}
 tellraw @a[tag=azrPlayer] {"text":"而你将于此处，与第一位神使展开激烈的战斗……","color":"gray"}
 
-scoreboard players set wave Azr_system 7
 scoreboard players set stage Azr_system 9
 
 

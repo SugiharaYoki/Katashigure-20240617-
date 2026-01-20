@@ -87,9 +87,7 @@ execute if score stage_main_thread AzrTimerStack matches 88 run playsound ambien
 execute if score stage_main_thread AzrTimerStack matches 88 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 90 run setblock -79889 44 -48 ladder[facing=west]
 execute if score stage_main_thread AzrTimerStack matches 90 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage9
-execute if score stage_main_thread AzrTimerStack matches 90 run tellraw @a[scores={SeGa_StandLastBH=..23}] {"text":"永久升级 - 中途加入时 若至少位于第三章则额外获取 腐肉×3 + 硬骨×3 + 盾牌碎片×3 + 弓·传统","color":"light_purple"}
 execute if score stage_main_thread AzrTimerStack matches 90 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 90 run scoreboard players set wave Azr_system 24
 execute if score stage_main_thread AzrTimerStack matches 90 run scoreboard players set stage Azr_system 27
 
 execute if score stage_main_thread AzrTimerStack matches 90 run fill -79906 42 -64 -79906 40 -64 minecraft:air destroy

@@ -423,6 +423,5 @@ execute if score tick_main_thread AzrTimerStack matches 9100 run kill @e[tag=Azr
 execute if score tick_main_thread AzrTimerStack matches 9100 run bossbar remove azr:boss_hp_bar
 execute if score tick_main_thread AzrTimerStack matches 9100 run bossbar remove azr:boss_hp_bar_0
 execute if score tick_main_thread AzrTimerStack matches 8669 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..19}] Azr_skillPoints 20
-execute if score tick_main_thread AzrTimerStack matches 9100 run scoreboard players set wave Azr_system 48
 execute if score tick_main_thread AzrTimerStack matches 9100 run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if score tick_main_thread AzrTimerStack matches 9100 run scoreboard players set stage Azr_system 63

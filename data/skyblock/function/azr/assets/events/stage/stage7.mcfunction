@@ -46,7 +46,6 @@ execute if score stage_main_thread AzrTimerStack matches 78 positioned -79889 38
 execute if score stage_main_thread AzrTimerStack matches 80..81 positioned -79889 38 121 if entity @n[distance=..14,tag=AzrielMob_zombie_villager_armor] run scoreboard players set stage_main_thread AzrTimerStack 80
 
 execute if score stage_main_thread AzrTimerStack matches 82 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 82 run scoreboard players set wave Azr_system 16
 execute if score stage_main_thread AzrTimerStack matches 83 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 1
 execute if score stage_main_thread AzrTimerStack matches 102 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 102 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 7 - Wave 2","color":"red"}
@@ -82,7 +81,6 @@ execute if score stage_main_thread AzrTimerStack matches 187..188 positioned -79
 execute if score stage_main_thread AzrTimerStack matches 187..188 positioned -79889 38 121 if entity @n[distance=..14,tag=AzrielMob_shield] run scoreboard players set stage_main_thread AzrTimerStack 187
 
 execute if score stage_main_thread AzrTimerStack matches 190 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 190 run scoreboard players set wave Azr_system 17
 execute if score stage_main_thread AzrTimerStack matches 191 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 1
 execute if score stage_main_thread AzrTimerStack matches 210 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 210 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 7 - Wave 3","color":"red"}
@@ -123,7 +121,6 @@ execute if score stage_main_thread AzrTimerStack matches 324 run fill -79886 43 
 execute if score stage_main_thread AzrTimerStack matches 324 run fill -79896 42 88 -79898 38 88 air destroy
 #execute if score stage_main_thread AzrTimerStack matches 324 run setblock -79878 39 72 minecraft:air destroy
 execute if score stage_main_thread AzrTimerStack matches 324 run setblock -79888 39 67 minecraft:birch_button[facing=west]
-execute if score stage_main_thread AzrTimerStack matches 324 run scoreboard players set wave Azr_system 19
 execute if score stage_main_thread AzrTimerStack matches 324 run scoreboard players set stage Azr_system 19
 
 

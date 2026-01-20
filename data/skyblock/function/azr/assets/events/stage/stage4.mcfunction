@@ -124,7 +124,6 @@ execute if score stage_main_thread AzrTimerStack matches 314 as @n[tag=AzrielNPC
 execute if score stage_main_thread AzrTimerStack matches 328 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 100000
 execute if score stage_main_thread AzrTimerStack matches 328 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 100000
 execute if score stage_main_thread AzrTimerStack matches 328 run fill -79930 38 52 -79932 42 52 air destroy
-execute if score stage_main_thread AzrTimerStack matches 328 run scoreboard players set wave Azr_system 7
 execute if score stage_main_thread AzrTimerStack matches 336 run scoreboard players set stage Azr_system 9
 execute if score stage_main_thread AzrTimerStack matches 336 run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 336 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear..?","color":"green"}

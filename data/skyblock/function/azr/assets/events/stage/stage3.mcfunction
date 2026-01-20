@@ -25,7 +25,6 @@ execute if score stage_main_thread AzrTimerStack matches 55 positioned -79931 42
 #回秒
 execute if score stage_main_thread AzrTimerStack matches 66..67 positioned -79927 38 25 if entity @n[distance=..15,tag=AzrielMob_undead_pickaxe] run scoreboard players set stage_main_thread AzrTimerStack 66
 execute if score stage_main_thread AzrTimerStack matches 68 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 68 run scoreboard players set wave Azr_system 4
 execute if score stage_main_thread AzrTimerStack matches 69 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 1
 execute if score stage_main_thread AzrTimerStack matches 88 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 0
 #第二波
@@ -57,7 +56,6 @@ execute if score stage_main_thread AzrTimerStack matches 149..151 run playsound 
 execute if score stage_main_thread AzrTimerStack matches 149..151 run playsound minecraft:ambient.soul_sand_valley.mood master @a -79926 38 34 1000 1
 
 execute if score stage_main_thread AzrTimerStack matches 160 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 160 run scoreboard players set wave Azr_system 5
 execute if score stage_main_thread AzrTimerStack matches 161 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 1
 execute if score stage_main_thread AzrTimerStack matches 180 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 0
 #第三波
@@ -124,7 +122,6 @@ execute if score stage_main_thread AzrTimerStack matches 242 run playsound ambie
 execute if score stage_main_thread AzrTimerStack matches 242 run fill -79931 38 40 -79931 40 40 air destroy
 execute if score stage_main_thread AzrTimerStack matches 242 run fill -79935 43 34 -79935 45 34 air destroy
 execute if score stage_main_thread AzrTimerStack matches 242 run fill -79924 36 34 -79924 33 34 air destroy
-execute if score stage_main_thread AzrTimerStack matches 242 run scoreboard players set wave Azr_system 6
 execute if score stage_main_thread AzrTimerStack matches 242 run scoreboard players set stage Azr_system 7
 execute if score stage_main_thread AzrTimerStack matches 242 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage3
 #execute if score stage_main_thread AzrTimerStack matches 242 run tellraw @a[scores={Azr_skillPoints=..2}] [{"text":"永久升级：","color":"light_purple","bold": true},{"text":"开始新游戏时，绿宝石数量 +5","color":"white","bold": false}]

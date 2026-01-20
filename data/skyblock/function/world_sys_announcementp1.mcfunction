@@ -5,7 +5,7 @@ scoreboard players add sc AnnouncementRoB 1
 execute if score sc AnnouncementRo matches 8 if entity @a[tag=Gaming] run scoreboard objectives setdisplay sidebar
 execute if score sc AnnouncementRo matches 8 unless entity @a[tag=Gaming] run scoreboard objectives setdisplay sidebar Perm_PersonWins
 execute if score sc AnnouncementRo matches 16 unless entity @a[tag=Gaming] run scoreboard objectives setdisplay sidebar Perm_PersonDeath
-execute if score sc AnnouncementRo matches 24 unless entity @a[tag=Gaming] run scoreboard objectives setdisplay sidebar SeGa_StandLastBH
+execute if score sc AnnouncementRo matches 24 unless entity @a[tag=Gaming] run scoreboard objectives setdisplay sidebar Azr_skillPoints
 execute if score sc AnnouncementRo matches 32 unless entity @a[tag=Gaming] run scoreboard objectives setdisplay sidebar mg_cdc_kill_best
 execute if score sc AnnouncementRo matches 40 unless entity @a[tag=Gaming] run scoreboard objectives setdisplay sidebar Perm_PersonFSB
 execute if score sc AnnouncementRo matches 48 unless entity @a[tag=Gaming] run scoreboard objectives setdisplay sidebar 4ASCEND_wins

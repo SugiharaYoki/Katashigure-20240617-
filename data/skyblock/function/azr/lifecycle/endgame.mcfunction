@@ -14,7 +14,6 @@ scoreboard players reset $Azr_Doppel Azr_system
 scoreboard players reset $NetherShop Azr_system
 scoreboard players reset $ch4DoorOpen Azr_system
 scoreboard players reset $AzrBoss4MusicAlready Azr_system
-scoreboard players reset wave Azr_system
 scoreboard players reset $azrInitialWeaponGiven
 scoreboard players reset $azrInitialPieGiven
 scoreboard players reset $azrInitialIngredientGiven
@@ -70,7 +69,6 @@ scoreboard objectives remove Azr_Shop_rng11
 scoreboard objectives remove Azr_Shop_rng12
 scoreboard objectives remove Azr_Shop_rng13
 #scoreboard objectives remove AzrMelonCount
-#scoreboard objectives remove Azr_skillPoints
 scoreboard objectives remove Azr_shopChapter
 scoreboard objectives remove AzrTimerStack
 scoreboard objectives remove AzrSlotRecord
@@ -94,7 +92,7 @@ scoreboard players reset internal_clock_001 Azr_system
 scoreboard players reset internal_clock_002 Azr_system
 scoreboard players reset tick_count_main AzrTimerStack
 scoreboard players reset timer_static_5s AzrTimerStack
-scoreboard objectives setdisplay sidebar SeGa_StandLastBH
+scoreboard objectives setdisplay sidebar Azr_skillPoints
 scoreboard players reset stage_boss_bgm AzrTimerStack
 
 scoreboard objectives remove AzrPlayer_CurrentArea

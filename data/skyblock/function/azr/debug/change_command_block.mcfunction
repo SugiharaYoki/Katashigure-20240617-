@@ -8,8 +8,6 @@
 #tag AzrileRefreshSuccess ？
 #score AzrielStartedC 开始次数 -> Azr_startCount(Pointer替代sc) 追踪玩家和指针（虚拟实体）
 #score SeGa_StandLast 关卡读秒
-#score SeGa_StandLastB 玩家坚持波数 -> wave Azr_system
-#score SeGa_StandLastBH 最高坚持波数 -> SeGa_StandLastBH 涉及到全局统计，不更改
 #score SeGa_StandLastD 强制死亡 -> Azr_forceDeath 追踪玩家
 #score SeGa_StandLastDD 死亡判断 -> Azr_isDead 追踪玩家
 #score SeGa_StandLastP 坚持关数 -> Azr_system.stage 优化为Azr_system的虚拟实体

@@ -1,5 +1,14 @@
 
 
+#西庭外围
+#逾怜藓路
+
+#采光礼堂
+#传热根系
+#智述禁馆
+
+#晦怨囚牢
+#蚀岩径
 
 
 execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79965,y=37,z=-17,dx=5,dy=5,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \

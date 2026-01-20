@@ -4,7 +4,7 @@
 scoreboard objectives add Azr_system dummy
 scoreboard objectives add Azr_startCount dummy
 scoreboard objectives add Azr_personalStartCount dummy
-scoreboard objectives add Azr_skillPoints dummy
+#scoreboard objectives add Azr_skillPoints dummy
 scoreboard objectives add AZR_chainKill minecraft.custom:minecraft.mob_kills
 scoreboard objectives add AZR_chainKill_damage minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add AZR_chainKill_damageblocked minecraft.custom:minecraft.damage_blocked_by_shield

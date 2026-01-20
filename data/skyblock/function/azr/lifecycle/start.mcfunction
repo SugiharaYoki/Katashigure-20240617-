@@ -1,10 +1,8 @@
 #tokumei-api
-#scoreboard objectives add SeGa_StandLastBH dummy
 #scoreboard objectives add MultiMenu trigger
 #scoreboard objectives add Perm_PersonSHD dummy
 
 #初始化临时记分板 这些记分板将在游戏结束后销毁
-scoreboard objectives add AzrJoinWave dummy
 scoreboard objectives add Azr_forceDeath dummy
 scoreboard objectives add Azr_isDead deathCount
 scoreboard objectives add Azr_emerald dummy
@@ -73,7 +71,6 @@ scoreboard players set stopSeconds Azr_system 0
 scoreboard players set chapter Azr_system 1
 scoreboard players set tick_count_main AzrTimerStack 0
 scoreboard players set timer_static_5s AzrTimerStack 0
-scoreboard players set wave Azr_system -2
 scoreboard players set stage_bonus Azr_system 0
 
 #游戏开场剧情

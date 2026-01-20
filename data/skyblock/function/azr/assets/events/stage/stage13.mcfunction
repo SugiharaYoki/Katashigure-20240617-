@@ -132,7 +132,6 @@ execute if score stage_main_thread AzrTimerStack matches 319 if score $Azr_Doppe
 execute if score stage_main_thread AzrTimerStack matches 319 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 319 run playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.3
 execute if score stage_main_thread AzrTimerStack matches 319 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 319 run scoreboard players set wave Azr_system 37
 execute if score stage_main_thread AzrTimerStack matches 319 run scoreboard players set stage Azr_system 52
 execute if score stage_main_thread AzrTimerStack matches 319 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..15}] Azr_skillPoints 16
 execute if score stage_main_thread AzrTimerStack matches 319 run tp @e[tag=AzrielFriendly,x=-79761,y=69,z=-190,distance=0..80,type=parrot,sort=nearest,limit=1] -79788.30 33.20 -359.68

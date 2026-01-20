@@ -177,7 +177,6 @@ execute if score stage_main_thread AzrTimerStack matches 2001 run playsound ambi
 execute if score stage_main_thread AzrTimerStack matches 2011 run fill -79932 38 54 -79930 41 53 air destroy
 execute if score stage_main_thread AzrTimerStack matches 2011 run fill -79930 42 104 -79932 38 104 air destroy
 #finalize stage
-execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set wave Azr_system 10
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set stage Azr_system 11
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players reset tick_main_thread AzrTimerStack
 execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrShowDialog] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 2 0.9

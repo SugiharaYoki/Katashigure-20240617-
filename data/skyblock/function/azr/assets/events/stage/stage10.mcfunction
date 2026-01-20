@@ -129,7 +129,6 @@ execute if score stage_main_thread AzrTimerStack matches 214..217 run playsound 
 execute if score stage_main_thread AzrTimerStack matches 214..217 run playsound ambient.cave ambient @a[tag=azrShowDialog] -79880 41 -114 5 1.0
 execute if score stage_main_thread AzrTimerStack matches 204..209 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 204
 execute if score stage_main_thread AzrTimerStack matches 225 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 225 run scoreboard players set wave Azr_system 26
 execute if score stage_main_thread AzrTimerStack matches 245 run title @a[tag=azrShowDialog] actionbar {"text":"10","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 249 run title @a[tag=azrShowDialog] actionbar {"text":"9","color":"yellow"}
 execute if score stage_main_thread AzrTimerStack matches 253 run title @a[tag=azrShowDialog] actionbar {"text":"8","color":"yellow"}
@@ -274,7 +273,6 @@ execute if score stage_main_thread AzrTimerStack matches 484 run playsound ambie
 execute if score stage_main_thread AzrTimerStack matches 484 run playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.3
 execute if score stage_main_thread AzrTimerStack matches 484 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 500 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage10
-execute if score stage_main_thread AzrTimerStack matches 500 run scoreboard players set wave Azr_system 27
 execute if score stage_main_thread AzrTimerStack matches 500 run scoreboard players set stage Azr_system 36
 execute if score stage_main_thread AzrTimerStack matches 500 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..11}] Azr_skillPoints 12
 execute if score stage_main_thread AzrTimerStack matches 500 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..4}] [{"text":"索命连击","color":"light_purple","bold":true},{"bold":false,"text":"可用点数已增加，目前为：5","color":"white"}]

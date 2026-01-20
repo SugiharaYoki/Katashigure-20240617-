@@ -1,9 +1,16 @@
-function skyblock:azr/lifecycle/jump_to/ch1_start
+function skyblock:azr/lifecycle/jump_to/ch2_boss
 
-execute as @a[tag=azrPlayer] run function skyblock:azr/lifecycle/jump_to/player_modifier/ch3_start
+fill -79902 41 0 -79904 38 0 air destroy
+fill -79927 38 -13 -79927 42 -16 air destroy
+fill -79901 50 -16 -79905 51 -13 air destroy
+clone -79912 -30 -23 -79897 -12 -6 -79912 40 -23
+clone -79912 -50 -23 -79897 -32 -6 -79912 40 -23
+clone -79902 36 -41 -79898 43 -32 -79933 37 -27
+clone -79933 -44 -53 -79929 -33 -35 -79933 36 -53
 
-function skyblock:azr/lifecycle/jump_to/data_modifier/ch1_boss
-function skyblock:azr/lifecycle/jump_to/data_modifier/ch2_start
-function skyblock:azr/lifecycle/jump_to/data_modifier/ch2_boss
-function skyblock:azr/lifecycle/jump_to/data_modifier/ch3_start
-function skyblock:azr/lifecycle/jump_to/data_modifier/ch3_initial
+
+execute as @n[tag=AzrielNPC_mersenne] at @s run tp @s -79909 31 116
+execute as @n[tag=AzrielNPC_andralune] at @s run tp @s -79909 31 116
+
+
+

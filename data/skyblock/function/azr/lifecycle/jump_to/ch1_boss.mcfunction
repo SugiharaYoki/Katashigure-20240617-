@@ -5,8 +5,6 @@ function skyblock:azr/lifecycle/jump_to/ch1_part2
 #scoreboard players add @a[tag=azrPlayer] Azr_emerald 50
 scoreboard players set stage Azr_system 9
 scoreboard players set stage_main_thread AzrTimerStack 3
-scoreboard players set wave Azr_system 7
-scoreboard players set @a[tag=azrPlayer] AzrJoinWave 7
 
 #give @a[tag=azrPlayer] flint 5
 #give @a[tag=azrPlayer] iron_ingot 1

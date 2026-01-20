@@ -206,7 +206,6 @@ execute if score stage_main_thread AzrTimerStack matches 2001 run fill -79927 38
 execute if score stage_main_thread AzrTimerStack matches 2001 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 2001 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 #finalize stage
-execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set wave Azr_system 23
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set stage Azr_system 25
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players reset tick_main_thread AzrTimerStack
 execute if score stage_main_thread AzrTimerStack matches 2011 run title @a[tag=azrShowDialog] actionbar {"text":"Chapter Clear","color":"gold"}

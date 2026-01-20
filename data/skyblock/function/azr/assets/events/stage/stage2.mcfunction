@@ -29,7 +29,6 @@ execute if score stage_main_thread AzrTimerStack matches 110..111 positioned -79
 
 #回秒
 execute if score stage_main_thread AzrTimerStack matches 112 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 112 run scoreboard players set wave Azr_system 2
 execute if score stage_main_thread AzrTimerStack matches 113 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 1
 execute if score stage_main_thread AzrTimerStack matches 133 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 133 run scoreboard players set stage_main_thread AzrTimerStack 212
@@ -70,7 +69,6 @@ execute if score stage_main_thread AzrTimerStack matches 297 positioned -79931 3
 execute if score stage_main_thread AzrTimerStack matches 298..299 positioned -79931 38 14 if entity @n[distance=..20,tag=AzrielMob_elite_candle_angel] run scoreboard players set stage_main_thread AzrTimerStack 298
 
 execute if score stage_main_thread AzrTimerStack matches 310 run fill -79931 38 22 -79931 40 22 air destroy
-execute if score stage_main_thread AzrTimerStack matches 310 run scoreboard players set wave Azr_system 3
 execute if score stage_main_thread AzrTimerStack matches 310 run scoreboard players set stage Azr_system 5
 execute if score stage_main_thread AzrTimerStack matches 310 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..1}] Azr_skillPoints 2
 execute if score stage_main_thread AzrTimerStack matches 310 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage2

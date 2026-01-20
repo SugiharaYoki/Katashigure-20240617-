@@ -62,7 +62,6 @@ execute if score stage_main_thread AzrTimerStack matches 92 positioned -79922 38
 execute if score stage_main_thread AzrTimerStack matches 97..98 positioned -79931 38 122 if entity @n[distance=..20,tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 97
 
 execute if score stage_main_thread AzrTimerStack matches 99 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_main_thread AzrTimerStack matches 99 run scoreboard players set wave Azr_system 11
 execute if score stage_main_thread AzrTimerStack matches 100 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 1
 execute if score stage_main_thread AzrTimerStack matches 119 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 119 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 5 - Wave 2","color":"red"}
@@ -113,7 +112,6 @@ execute if score stage_main_thread AzrTimerStack matches 202..203 if entity @n[t
 
 
 execute if score stage_main_thread AzrTimerStack matches 204 run fill -79930 38 130 -79932 42 130 minecraft:air destroy
-execute if score stage_main_thread AzrTimerStack matches 204 run scoreboard players set wave Azr_system 12
 execute if score stage_main_thread AzrTimerStack matches 204 run scoreboard players set stage Azr_system 14
 #后续图书馆一部分野怪
 execute if score stage_main_thread AzrTimerStack matches 204 positioned -79836 42 87 run function skyblock:azr/assets/mobs/pillager

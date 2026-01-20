@@ -33,7 +33,6 @@ scoreboard players set @s Azr_isDead 0
 #scoreboard players set @s Azr_emerald 0
 scoreboard players operation @s Azr_startCount = Pointer Azr_startCount
 scoreboard players add @s Azr_personalStartCount 1
-scoreboard players set @s AzrJoinWave -2
 
 
 #azr-tags

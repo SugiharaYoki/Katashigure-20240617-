@@ -1,5 +1,5 @@
 scoreboard players set @s Perm_PersonCCT 0
-scoreboard players set @s SeGa_StandLastBH 0
+scoreboard players set @s Azr_skillPoints 0
 scoreboard players set @s Achive_Bell100 0
 scoreboard players set @s CasinoRound_Time 0
 scoreboard players set @s AnnouncementTime 0

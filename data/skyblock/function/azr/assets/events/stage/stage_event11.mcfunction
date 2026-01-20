@@ -550,7 +550,6 @@ execute if score stage_main_thread AzrTimerStack matches 1690 positioned -79771 
 execute if score stage_main_thread AzrTimerStack matches 1691..2940 positioned -79728 28 -191 as @a[tag=azrPlayer,dx=40,dy=50,dz=50] at @s run spawnpoint @s -79720 50 -162
 
 execute if score stage_main_thread AzrTimerStack matches 1691 run scoreboard players set stage Azr_system 43
-execute if score stage_main_thread AzrTimerStack matches 1691 run scoreboard players set wave Azr_system 35
 execute if score stage_main_thread AzrTimerStack matches 1691 run kill @e[tag=AzrielTempSpec1]
 execute if score stage_main_thread AzrTimerStack matches 1691 run kill @e[tag=AzrielTempSpec2]
 execute if score stage_main_thread AzrTimerStack matches 1691 run kill @e[tag=AzrielTempSpec3]
@@ -683,7 +682,6 @@ execute if score stage_main_thread AzrTimerStack matches 3051..3053 run scoreboa
 
 execute if score stage_main_thread AzrTimerStack matches 3051..3053 positioned -79753 59 -210 unless entity @a[tag=azrPlayer,distance=5..] run scoreboard players set stage_main_thread AzrTimerStack 4142
 
-execute if score stage_main_thread AzrTimerStack matches 4142 run scoreboard players set wave Azr_system 36
 execute if score stage_main_thread AzrTimerStack matches 4142 run title @a[tag=azrShowDialog] actionbar {"text":"Chapter Clear","color":"gold"}
 execute if score stage_main_thread AzrTimerStack matches 4142 as @a[tag=azrPlayer] at @s run scoreboard players add @s Temp_PersonAZS 60
 

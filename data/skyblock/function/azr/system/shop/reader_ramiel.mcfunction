@@ -216,8 +216,6 @@ tellraw @s [{"text":"\n "},{"text":"假定回溯  \n","color":"#308aff","bold": 
 
 
 #tellraw @s [{"text":"   "},{"text":"探测罗盘","color":"white"},{"text":"  3 粘液球 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431522"}},{"text":" || 绿宝石块 ×1","color":"aqua"},{"text":"   9 绿宝石 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431541"}}]
-#tellraw @s[scores={SeGa_StandLastBH=..14}] [{"text":"   "},{"text":"熟猪排 ×3","color":"aqua"},{"text":"   1 钝铁 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431531"}}]
-#tellraw @s[scores={SeGa_StandLastBH=15..}] [{"text":"   "},{"text":"熟猪排 ×3","color":"aqua"},{"text":"   1 钝铁 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431531"}},{"text":" || 金苹果 ","color":"aqua"},{"text":"   3 蜜脾 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431533"}}]
 
 #tellraw @s[tag=AZS_BoS02,tag=!Azr_SExUp01] [{"text":"   "},{"text":"贪婪图腾","color":"red"},{"text":"   2 圣殿信条 3 光明精华 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431536"}}]
 #tellraw @s[tag=AZS_BoS02,tag=Azr_SExUp01] [{"text":"   "},{"text":"贪婪图腾","color":"red"},{"text":"   2 圣殿信条 2 光明精华 ","color":"gold"},{"text":"〈◆〉","bold":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8431536"}}]

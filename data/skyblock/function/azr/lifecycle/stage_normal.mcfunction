@@ -132,29 +132,7 @@ execute if score stage Azr_system matches 63 run function skyblock:azr/assets/ev
 #execute if entity @s[tag=!Azr_Halt,scores={Azr_Progress=52..70}] run function skyblock:azr/ingame_azrielsmidgarden_corex4_stage_ch4
 #execute if entity @s[tag=!Azr_Halt,scores={Azr_Progress=73..99}] run function skyblock:azr/ingame_azrielsmidgarden_corex4_stage_ch4
 
-# 奖励关
-    # Diffident 301
-    execute if score stage Azr_system matches 301 run function skyblock:azr/assets/events/stage/stage_diffident
-    # Cerement 30
-    execute if score stage Azr_system matches 30 run function skyblock:azr/assets/events/stage/stage_cerement
-    # Entertain 31
-    execute if score stage Azr_system matches 31 run function skyblock:azr/assets/events/stage/stage_entertain
-    # Vestige 240
-    execute if score stage Azr_system matches 240 run function skyblock:azr/assets/events/stage/stage_vestige
-    # Suspension 34
-    execute if score stage Azr_system matches 34 run function skyblock:azr/assets/events/stage/stage_suspension
-    # Appetence 39
-    execute if score stage Azr_system matches 39 run function skyblock:azr/assets/events/stage/stage_appetence
-    # Breakout 45
-    execute if score stage Azr_system matches 45 run function skyblock:azr/assets/events/stage/stage_breakout
-    # Stage Object
-    execute if score stage Azr_system matches 53 run function skyblock:azr/assets/events/stage/stage_object
 
-#章节设置
-execute if score wave Azr_system matches 0..9 run scoreboard players set chapter Azr_system 1
-execute if score wave Azr_system matches 10..22 run scoreboard players set chapter Azr_system 2
-execute if score wave Azr_system matches 23..35 run scoreboard players set chapter Azr_system 3
-execute if score wave Azr_system matches 36.. run scoreboard players set chapter Azr_system 4
 
 #AzrielNPC
 #execute as @e[tag=AzrielNPC] at @s run rotate @s facing entity @p[distance=..3]

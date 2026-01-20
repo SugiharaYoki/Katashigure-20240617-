@@ -111,7 +111,6 @@ execute if score stage_alt_thread AzrTimerStack matches 185..275 if score #rng6 
 
 execute if score stage_alt_thread AzrTimerStack matches 280..307 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_alt_thread AzrTimerStack 305
 execute if score stage_alt_thread AzrTimerStack matches 308 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_alt_thread AzrTimerStack matches 308 run scoreboard players set wave Azr_system 42
 execute if score stage_alt_thread AzrTimerStack matches 328 run title @a[tag=azrShowDialog] actionbar {"text":"8","color":"yellow"}
 execute if score stage_alt_thread AzrTimerStack matches 332 run title @a[tag=azrShowDialog] actionbar {"text":"7","color":"yellow"}
 execute if score stage_alt_thread AzrTimerStack matches 336 run title @a[tag=azrShowDialog] actionbar {"text":"6","color":"yellow"}
@@ -230,7 +229,6 @@ execute if score stage_alt_thread AzrTimerStack matches 555 if score #rng2 Azr_s
 
 execute if score stage_alt_thread AzrTimerStack matches 589..595 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_alt_thread AzrTimerStack 592
 execute if score stage_alt_thread AzrTimerStack matches 602 run title @a[tag=azrShowDialog] actionbar {"text":"Wave Clear","color":"green"}
-execute if score stage_alt_thread AzrTimerStack matches 602 run scoreboard players set wave Azr_system 43
 execute if score stage_alt_thread AzrTimerStack matches 612 run title @a[tag=azrShowDialog] actionbar {"text":"7","color":"yellow"}
 execute if score stage_alt_thread AzrTimerStack matches 616 run title @a[tag=azrShowDialog] actionbar {"text":"6","color":"yellow"}
 execute if score stage_alt_thread AzrTimerStack matches 620 run title @a[tag=azrShowDialog] actionbar {"text":"5","color":"yellow"}

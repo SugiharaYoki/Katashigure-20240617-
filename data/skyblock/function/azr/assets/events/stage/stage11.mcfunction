@@ -149,7 +149,6 @@ execute if score stage_main_thread AzrTimerStack matches 520 run advancement gra
 execute if score stage_main_thread AzrTimerStack matches 520 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 520 run playsound minecraft:ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.3
 execute if score stage_main_thread AzrTimerStack matches 520 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 520 run scoreboard players set wave Azr_system 29
 execute if score stage_main_thread AzrTimerStack matches 521 run scoreboard players set stage Azr_system 38
 execute if score stage_main_thread AzrTimerStack matches 521 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..12}] Azr_skillPoints 13
 execute if score stage_main_thread AzrTimerStack matches 520 run tag @a[tag=azrPlayer] add azrUpdateSpawnPoint

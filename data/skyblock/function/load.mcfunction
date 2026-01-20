@@ -8,7 +8,7 @@ function skyblock:decoration/init
 scoreboard objectives add Perm_PersonWins dummy {"text":"PVP战争 历史胜利场数排行榜","color":"gold","bold":true}
 scoreboard objectives add Perm_PersonKills dummy {"text":"PVP战争 历史击杀人数排行榜","color":"light_purple","bold":true}
 scoreboard objectives add Perm_PersonDeath dummy {"text":"PVP战争 历史死亡场数排行榜","color":"red","bold":true}
-scoreboard objectives add SeGa_StandLastBH dummy {"text":"『亚兹列尔的中庭花园』","color":"aqua","bold":true}
+scoreboard objectives add Azr_skillPoints dummy {"text":"『亚兹列尔的中庭花园』魔力指数","color":"aqua","bold":true}
 scoreboard objectives add mg_cdc_kill_best dummy {"text":"『水晶防御弩台』","color":"light_purple"}
 scoreboard objectives add 4ASCEND_wins dummy [{"text":"『4ASCEND ","color":"#4467d3","bold":true},{"text":"胜利总次数』","color":"#f58390","bold":true}]
 #主城&未分类
@@ -128,7 +128,6 @@ scoreboard objectives add azr0_system dummy
 #AzrielsMidgarden
 scoreboard objectives add Azr_system dummy
 scoreboard objectives add Azr_startCount dummy
-scoreboard objectives add Azr_skillPoints dummy
 #4ASCEND
 scoreboard objectives add PlayHouseTrigger trigger
 scoreboard objectives add 4ASCEND_HP_Trigger trigger

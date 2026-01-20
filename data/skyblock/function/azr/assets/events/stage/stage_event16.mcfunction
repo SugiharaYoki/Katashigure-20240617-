@@ -53,7 +53,6 @@ execute if score stage_main_thread AzrTimerStack matches 128 run advancement gra
 
 
 execute if score stage_main_thread AzrTimerStack matches 133 run scoreboard players set stage Azr_system 60
-execute if score stage_main_thread AzrTimerStack matches 133 run scoreboard players set wave Azr_system 45
 execute if score stage_main_thread AzrTimerStack matches 133.. run scoreboard players set stage_main_thread AzrTimerStack 0
 
 
