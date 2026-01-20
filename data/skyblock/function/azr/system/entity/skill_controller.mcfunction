@@ -17,6 +17,7 @@ execute if entity @s[tag=AzrielMob_trap_spike_display] run function skyblock:azr
 kill @s[type=drowned,tag=!AzrielMob_stypeDROWNED]
 
 execute if entity @s[tag=AzrielMob_zombie_villager_armor] run function skyblock:azr/assets/mobs/skill/zombie_villager_armor
+execute if entity @s[tag=AzrielMob_zombie_villager_cleric] run function skyblock:azr/assets/mobs/skill/zombie_villager_cleric
 
 #精英怪
 execute if entity @s[tag=AzrielMob_elite_candle_angel] run function skyblock:azr/assets/mobs/skill/candle/core
