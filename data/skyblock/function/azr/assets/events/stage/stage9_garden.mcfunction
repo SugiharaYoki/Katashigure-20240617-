@@ -1,5 +1,10 @@
-
-
+#初始生成
+execute positioned -79931 0 -37 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
+execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79930 38 -34 run function skyblock:azr/assets/mobs/sword
+execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79932 38 -30 run function skyblock:azr/assets/mobs/pillager
+execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79932 38 -30 run tag @e[tag=AzrielMob,type=pillager,distance=0..250] add AzrielNPC_Divineforce
+execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79932 38 -30 run tag @e[tag=AzrielMob,type=vindicator,distance=0..250] add AzrielNPC_Divineforce
 
 #入口交谈的NPC
 execute positioned -79931 38 -37 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=..5.5,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
@@ -18,13 +23,25 @@ execute positioned -79931 38 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79931 38 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=68..69}] positioned -79931 38 -37 unless entity @a[distance=..6.5,tag=azrPlayer] run scoreboard players set @s rng1 68
 execute positioned -79931 38 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=73}] positioned -79931 38 -37 run playsound minecraft:entity.pillager.ambient hostile @a[tag=azrShowDialog] -79932 38 -30 1 0.8
 execute positioned -79931 38 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=73}] positioned -79931 38 -37 run tellraw @a[tag=azrShowDialog] [{"text":"弩手：","color":"green","bold": true},{"bold": false,"text":"\n“我觉得，是不是能从墙后面的山体裂缝穿过去呢……”","color":"white"}]
+execute positioned -79931 38 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=90}] positioned -79931 38 -37 run playsound minecraft:entity.vindicator.ambient hostile @a[tag=azrShowDialog] -79930 38 -34 1 0.9
+execute positioned -79931 38 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=90}] positioned -79931 38 -37 run tellraw @a[tag=azrShowDialog] [{"text":"剑士：","color":"green","bold": true},{"bold": false,"text":"\n“这倒是好主意。但反正我不敢。”","color":"white"}]
 
 
+execute positioned -79931 0 -37 as @e[tag=AzrielNPC_Divineforce,distance=0..500,tag=!AzrielNPC_Divineforce_Processed] at @s run attribute @s follow_range base set 0
+execute positioned -79931 0 -37 as @e[tag=AzrielNPC_Divineforce,distance=0..500,tag=!AzrielNPC_Divineforce_Processed] at @s run tag @s add AzrielNPC_Divineforce_Processed
+execute positioned -79931 0 -37 as @e[tag=!AzrielNPC_Divineforce,distance=0..500,tag=!AzrielNPC_Divineforce_Processed,type=pillager] at @s run data modify entity @s Silent set value 1b
+execute positioned -79931 0 -37 as @e[tag=!AzrielNPC_Divineforce,distance=0..500,tag=!AzrielNPC_Divineforce_Processed,type=vindicator] at @s run data modify entity @s Silent set value 1b
+execute positioned -79931 0 -37 as @e[tag=!AzrielNPC_Divineforce,distance=0..500,tag=!AzrielNPC_Divineforce_Processed,type=pillager] at @s run tag @s add AzrielNPC_Divineforce_Processed
+execute positioned -79931 0 -37 as @e[tag=!AzrielNPC_Divineforce,distance=0..500,tag=!AzrielNPC_Divineforce_Processed,type=vindicator] at @s run tag @s add AzrielNPC_Divineforce_Processed
+execute positioned -79931 0 -37 as @e[tag=!AzrielNPC_Divineforce,distance=0..500,tag=AzrielNPC_Divineforce_Processed] at @s run effect give @s minecraft:unluck 2 0 false
+execute positioned -79931 0 -37 as @e[tag=!AzrielNPC_Divineforce,distance=0..500,tag=AzrielNPC_Divineforce_Processed] at @s run particle witch ^ ^1.8 ^ 0.3 0.5 0.3 0.02 5
+execute positioned -79931 0 -37 as @e[tag=AzrielNPC_Divineforce,distance=0..500,tag=AzrielNPC_Divineforce_Processed] at @s if entity @a[tag=azrPlayer,distance=0..3.5] run effect give @s slowness 1 99 true
+execute positioned -79931 0 -37 as @e[tag=AzrielNPC_Divineforce,distance=0..500,tag=AzrielNPC_Divineforce_Processed] at @s run rotate @s facing entity @p[tag=azrPlayer,distance=0..3.5]
 
 
-
+#
 
 
 #随机野怪
-execute positioned -79939 38 -72 if score random_enemy_thread AzrTimerStack matches 2 store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..32]
+execute positioned -79939 38 -72 if score random_enemy_thread AzrTimerStack matches 2 store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..32,tag=!AzrielNPC_Divineforce]
 execute positioned -79939 38 -72 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 2.. unless entity @n[tag=AzrielMob,distance=..6] unless entity @a[tag=azrPlayer,distance=..16] if entity @a[tag=azrPlayer,distance=..56] run function skyblock:azr/assets/mobs/area_pool/chapter1_main_area_common
