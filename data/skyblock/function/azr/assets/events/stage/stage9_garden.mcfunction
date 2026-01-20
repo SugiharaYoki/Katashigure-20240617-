@@ -27,16 +27,7 @@ execute positioned -79931 38 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79931 38 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=90}] positioned -79931 38 -37 run tellraw @a[tag=azrShowDialog] [{"text":"剑士：","color":"green","bold": true},{"bold": false,"text":"\n“这倒是好主意。但反正我不敢。”","color":"white"}]
 
 
-execute positioned -79931 0 -37 as @e[tag=AzrielNPC_Divineforce,distance=0..500,tag=!AzrielNPC_Divineforce_Processed] at @s run attribute @s follow_range base set 0
-execute positioned -79931 0 -37 as @e[tag=AzrielNPC_Divineforce,distance=0..500,tag=!AzrielNPC_Divineforce_Processed] at @s run tag @s add AzrielNPC_Divineforce_Processed
-execute positioned -79931 0 -37 as @e[tag=!AzrielNPC_Divineforce,distance=0..500,tag=!AzrielNPC_Divineforce_Processed,type=pillager] at @s run data modify entity @s Silent set value 1b
-execute positioned -79931 0 -37 as @e[tag=!AzrielNPC_Divineforce,distance=0..500,tag=!AzrielNPC_Divineforce_Processed,type=vindicator] at @s run data modify entity @s Silent set value 1b
-execute positioned -79931 0 -37 as @e[tag=!AzrielNPC_Divineforce,distance=0..500,tag=!AzrielNPC_Divineforce_Processed,type=pillager] at @s run tag @s add AzrielNPC_Divineforce_Processed
-execute positioned -79931 0 -37 as @e[tag=!AzrielNPC_Divineforce,distance=0..500,tag=!AzrielNPC_Divineforce_Processed,type=vindicator] at @s run tag @s add AzrielNPC_Divineforce_Processed
-execute positioned -79931 0 -37 as @e[tag=!AzrielNPC_Divineforce,distance=0..500,tag=AzrielNPC_Divineforce_Processed] at @s run effect give @s minecraft:unluck 2 0 false
-execute positioned -79931 0 -37 as @e[tag=!AzrielNPC_Divineforce,distance=0..500,tag=AzrielNPC_Divineforce_Processed] at @s run particle witch ^ ^1.8 ^ 0.3 0.5 0.3 0.02 5
-execute positioned -79931 0 -37 as @e[tag=AzrielNPC_Divineforce,distance=0..500,tag=AzrielNPC_Divineforce_Processed] at @s if entity @a[tag=azrPlayer,distance=0..3.5] run effect give @s slowness 1 99 true
-execute positioned -79931 0 -37 as @e[tag=AzrielNPC_Divineforce,distance=0..500,tag=AzrielNPC_Divineforce_Processed] at @s run rotate @s facing entity @p[tag=azrPlayer,distance=0..3.5]
+execute positioned -79931 0 -37 as @e[distance=0..500] at @s unless entity @s[type=!pillager] unless entity @s[type=!vindicator] run function skyblock:azr/assets/events/stage/stage9_divineforce
 
 
 #
