@@ -9,3 +9,5 @@ execute as @s[tag=!AzrielNPC_Divineforce,tag=AzrielNPC_Divineforce_Processed] at
 execute as @s[tag=AzrielNPC_Divineforce,tag=AzrielNPC_Divineforce_Processed] at @s if entity @a[tag=azrPlayer,distance=0..3.5] run effect give @s slowness 1 99 true
 execute as @s[tag=AzrielNPC_Divineforce,tag=AzrielNPC_Divineforce_Processed] at @s if entity @a[tag=azrPlayer,distance=0..1.5] run effect give @s weakness 1 99 true
 execute as @s[tag=AzrielNPC_Divineforce,tag=AzrielNPC_Divineforce_Processed] at @s run rotate @s facing entity @p[tag=azrPlayer,distance=0..3.5]
+execute as @s[tag=AzrielNPC_Divineforce,tag=AzrielNPC_Divineforce_Processed,tag=AzrielMob] at @s run tag @s remove AzrielMob
+
