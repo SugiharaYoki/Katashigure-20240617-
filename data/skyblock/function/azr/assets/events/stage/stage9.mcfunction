@@ -28,9 +28,9 @@ execute if score stage_main_thread AzrTimerStack matches 31 run stopsound @a[tag
 execute if score stage_main_thread AzrTimerStack matches 31 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"","color":"dark_red","bold": true}]
 execute if score stage_main_thread AzrTimerStack matches 33 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"创生万灵而恃才傲物","color":"dark_red","bold": true}]
 execute if score stage_main_thread AzrTimerStack matches 34 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"","color":"dark_red","bold": true}]
-execute if score stage_main_thread AzrTimerStack matches 38 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"嗜戮万灵而恃才傲物","color":"dark_red","bold": true}]
-execute if score stage_main_thread AzrTimerStack matches 39 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"","color":"dark_red","bold": true}]
-execute if score stage_main_thread AzrTimerStack matches 40 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] title [{"text":"","color":"dark_red","bold": true}]
+execute if score stage_main_thread AzrTimerStack matches 40 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"嗜戮万灵而恃才傲物","color":"dark_red","bold": true}]
+execute if score stage_main_thread AzrTimerStack matches 41 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"","color":"dark_red","bold": true}]
+execute if score stage_main_thread AzrTimerStack matches 41 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] title [{"text":"","color":"dark_red","bold": true}]
 
 execute if score stage_main_thread AzrTimerStack matches 32 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.basalt_deltas.mood ambient @a[tag=azrShowDialog] -79902.13 41.41 -59.48 3 1.4
 execute if score stage_main_thread AzrTimerStack matches 32 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.basalt_deltas.mood ambient @a[tag=azrShowDialog] -79902.13 41.41 -59.48 3 1.4
