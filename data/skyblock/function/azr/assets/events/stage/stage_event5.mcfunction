@@ -86,7 +86,7 @@ execute if score stage_main_thread AzrTimerStack matches 136..149 as @a[tag=azrP
 execute if score stage_main_thread AzrTimerStack matches 150 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 150 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 150 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 150 run fill -79891 44 -67 -79890 42 -67 minecraft:air destroy
+
 execute if score stage_main_thread AzrTimerStack matches 150 run fill -79881 42 -60 -79881 44 -61 minecraft:air destroy
 execute if score stage_main_thread AzrTimerStack matches 150 run setblock -79870 42 -43 purple_candle[lit=true]
 execute if score stage_main_thread AzrTimerStack matches 150 run setblock -79870 40 -49 minecraft:redstone_block

@@ -11,6 +11,12 @@ execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5
 execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79890 38 4 run tag @n[tag=AzrielMob,type=pillager,distance=0..2] add AzrielNPC_stage9_entry_conversation3
 execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79932 38 -30 run tag @e[tag=AzrielMob,type=pillager,distance=0..250] add AzrielNPC_Divineforce
 execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79932 38 -30 run tag @e[tag=AzrielMob,type=vindicator,distance=0..250] add AzrielNPC_Divineforce
+execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3}] positioned -79889 42 -32 run function skyblock:azr/assets/mobs/spider_giant
+execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3}] positioned -79889 42 -32 run function skyblock:azr/assets/mobs/spider_giant
+execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3}] positioned -79889 42 -32 run function skyblock:azr/assets/mobs/skeleton_sword
+
+
+
 
 #回头路的NPC
 execute positioned -79890 38 4 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}

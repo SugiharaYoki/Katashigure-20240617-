@@ -528,7 +528,6 @@ setblock -79905 40 -47 minecraft:coarse_dirt
 setblock -79898 42 -49 gravel
 setblock -79898 42 -50 gravel
 setblock -79898 41 -50 gravel
-setblock -79889 44 -48 air
 setblock -79887 44 164 minecraft:birch_button[face=floor,facing=south]
 setblock -79887 43 164 diamond_block
 setblock -79951 38 9 minecraft:quartz_stairs[facing=south]
@@ -659,7 +658,6 @@ fill -79893 41 5 -79893 38 3 minecraft:purple_stained_glass
 fill -79904 41 0 -79902 38 0 minecraft:air
 fill -79958 39 58 -79960 39 54 air replace green_wool
 
-fill -79891 44 -67 -79890 42 -67 minecraft:purple_stained_glass
 fill -79886 46 148 -79888 43 148 air
 fill -79942 38 8 -79944 38 8 quartz_block
 fill -79942 39 8 -79944 39 8 quartz_pillar[axis=x]

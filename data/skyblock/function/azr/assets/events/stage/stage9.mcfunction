@@ -85,7 +85,6 @@ execute if score stage_main_thread AzrTimerStack matches 86..87 if entity @e[tag
 execute if score stage_main_thread AzrTimerStack matches 88 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 88 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 88 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 90 run setblock -79889 44 -48 ladder[facing=west]
 execute if score stage_main_thread AzrTimerStack matches 90 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage9
 execute if score stage_main_thread AzrTimerStack matches 90 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 90 run scoreboard players set stage Azr_system 27
