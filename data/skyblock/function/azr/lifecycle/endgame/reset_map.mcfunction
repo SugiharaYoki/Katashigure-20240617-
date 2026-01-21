@@ -468,7 +468,12 @@ fill -79934 45 -63 -79934 45 -61 minecraft:quartz_block
 #stage9~10道中 破碎的天花板
 fill -79892 51 -49 -79888 51 -42 minecraft:quartz_slab[type=top] replace minecraft:structure_void
 
-
+#stage9后面的神庭区域房间
+setblock -79917 40 -62 air
+setblock -79917 40 -62 trapped_chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
+item replace block -79917 40 -62 container.11 with resin_clump 1
+item replace block -79917 40 -62 container.13 with resin_clump 1
+item replace block -79917 40 -62 container.15 with skull_banner_pattern[custom_name='{"text":"“拉斐尔大人与佛劳洛斯大人吵了一架”","color":"dark_purple","italic":false}',lore=['{"text":"这确实也在我们的预料之内，毕竟这两天拉斐尔大人的脾气特别不稳定。","color":"white","italic":false}','{"text":"佛劳洛斯大人跟我们说，“百千年的重头戏终于要到来了”。","color":"white","italic":false}','{"text":"实际上，我们没人期待神庭局势的变动。生命树的枯萎已经让所有人焦头烂额了。","color":"white","italic":false}']] 1
 
 
 
@@ -559,11 +564,8 @@ setblock -79885 40 -139 air
 setblock -79893 47 -48 air
 setblock -79844 48 -127 air
 setblock -79907 46 -111 air
-setblock -79917 41 -66 minecraft:birch_button[face=floor,facing=west]
 setblock -79939 35 -76 chest[facing=north,waterlogged=true]
 #setblock -79904 44 118 birch_button[facing=west,face=floor]
-setblock -79917 40 -62 air
-setblock -79917 40 -62 trapped_chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
 setblock -79878 41 -131 lever[face=floor,facing=east,powered=false]
 setblock -79877 46 -142 minecraft:polished_andesite_slab
 setblock -79760 31 188 chest
@@ -714,9 +716,6 @@ item replace block -79897 40 -115 container.14 with minecraft:bone 1
 item replace block -79919 40 -112 container.12 with emerald 3
 item replace block -79919 40 -112 container.14 with string
 
-item replace block -79917 40 -62 container.11 with minecraft:eye_armor_trim_smithing_template 2
-item replace block -79917 40 -62 container.13 with iron_ingot 2
-item replace block -79917 40 -62 container.15 with skull_banner_pattern[custom_name='{"text":"“拉斐尔大人与能天使大人吵了一架”","color":"dark_purple","italic":false}',lore=['{"text":"希望神庭近些日子不要遭遇困难。","color":"white","italic":false}','{"text":"这两天拉斐尔大人的脾气特别不稳定，","color":"white","italic":false}','{"text":"还时不时地跟我们说，","color":"white","italic":false}','{"text":"“百千年的重头戏终于要到来了”。","color":"white","italic":false}']] 1
 
 item replace block -79863 40 -76 container.14 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录5”","color":"dark_purple","italic":false}',lore=['{"text":"第一关口北面的建筑物出现了大量裂缝，","color":"white","italic":false}','{"text":"这样的现象一直延伸至牢房区域。","color":"white","italic":false}','{"text":"虽说大家有不祥的预感，","color":"white","italic":false}','{"text":"权之殊能大人却言仅为年久失修。","color":"white","italic":false}']] 1
 item replace block -79936 49 -158 container.13 with skull_banner_pattern[custom_name='{"text":"“期限将至 此乃针对神庭之审判”","color":"dark_purple","italic":false}',lore=['{"text":"这里的魔物保受摧残，","color":"white","italic":false}','{"text":"终日身于苦痛之中。","color":"white","italic":false}','{"text":"沙利叶大人既是对此心知肚明，","color":"white","italic":false}','{"text":"又为何让这暴行再续？","color":"white","italic":false}']] 1
