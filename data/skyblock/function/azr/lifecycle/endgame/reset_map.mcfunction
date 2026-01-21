@@ -483,7 +483,19 @@ setblock -79914 41 -78 minecraft:potted_cornflower
 setblock -79914 41 -79 minecraft:potted_azure_bluet
 setblock -79914 41 -80 minecraft:potted_poppy
 
-
+#静熄之火
+setblock -79883 50 -66 soul_fire
+setblock -79883 50 -64 soul_fire
+setblock -79883 50 -62 soul_fire
+setblock -79883 50 -55 soul_fire
+setblock -79883 50 -57 soul_fire
+setblock -79883 50 -59 soul_fire
+setblock -79898 50 -66 soul_fire
+setblock -79898 50 -64 soul_fire
+setblock -79898 50 -62 soul_fire
+setblock -79898 50 -55 soul_fire
+setblock -79898 50 -57 soul_fire
+setblock -79898 50 -59 soul_fire
 
 
 
@@ -517,18 +529,6 @@ setblock -79898 42 -49 gravel
 setblock -79898 42 -50 gravel
 setblock -79898 41 -50 gravel
 setblock -79889 44 -48 air
-setblock -79883 50 -66 soul_fire
-setblock -79883 50 -64 soul_fire
-setblock -79883 50 -62 soul_fire
-setblock -79883 50 -55 soul_fire
-setblock -79883 50 -57 soul_fire
-setblock -79883 50 -59 soul_fire
-setblock -79898 50 -66 soul_fire
-setblock -79898 50 -64 soul_fire
-setblock -79898 50 -62 soul_fire
-setblock -79898 50 -55 soul_fire
-setblock -79898 50 -57 soul_fire
-setblock -79898 50 -59 soul_fire
 setblock -79887 44 164 minecraft:birch_button[face=floor,facing=south]
 setblock -79887 43 164 diamond_block
 setblock -79951 38 9 minecraft:quartz_stairs[facing=south]
