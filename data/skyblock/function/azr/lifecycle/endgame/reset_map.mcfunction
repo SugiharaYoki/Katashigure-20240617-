@@ -570,7 +570,6 @@ setblock -79885 40 -139 air
 setblock -79893 47 -48 air
 setblock -79844 48 -127 air
 setblock -79907 46 -111 air
-setblock -79939 35 -76 chest[facing=north,waterlogged=true]
 #setblock -79904 44 118 birch_button[facing=west,face=floor]
 setblock -79878 41 -131 lever[face=floor,facing=east,powered=false]
 setblock -79877 46 -142 minecraft:polished_andesite_slab
