@@ -15,7 +15,7 @@ execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5
 #回头路的NPC
 execute positioned -79890 38 4 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79890 38 4 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
-execute positioned -79890 38 4 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2..3}] as @n[tag=AzrielNPC_stage9_entry_conversation3,type=pillager] at @s unless entity @a[distance=..6.5,tag=azrPlayer] run scoreboard players set @s rng1 2
+execute positioned -79890 38 4 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2..3}] at @n[tag=AzrielNPC_stage9_entry_conversation3,type=pillager] unless entity @a[distance=..6.5,tag=azrPlayer] run scoreboard players set @s rng1 2
 execute positioned -79890 38 4 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=4}] as @n[tag=AzrielNPC_stage9_entry_conversation3,type=pillager] at @s run playsound minecraft:entity.vindicator.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute positioned -79890 38 4 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=4}] as @n[tag=AzrielNPC_stage9_entry_conversation3,type=pillager] at @s run tellraw @a[tag=azrShowDialog] [{"text":"礼堂巡逻员 温斯顿：","color":"green","bold": true},{"bold": false,"text":"\n“你好，爱理莎女士。”","color":"white"}]
 execute positioned -79890 38 4 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=19}] as @n[tag=AzrielNPC_stage9_entry_conversation3,type=pillager] at @s run playsound minecraft:entity.vindicator.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
