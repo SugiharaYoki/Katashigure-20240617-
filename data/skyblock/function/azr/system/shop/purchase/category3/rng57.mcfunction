@@ -1,3 +1,3 @@
-function skyblock:azr/assets/items/weapons/shield_spike
+function skyblock:azr/assets/items/armors/leather_helmet_projectile_protection
 
-clear @s iron_ingot 4
+scoreboard players remove @s Azr_emerald 24

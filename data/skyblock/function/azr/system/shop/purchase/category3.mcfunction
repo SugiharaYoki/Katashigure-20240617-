@@ -203,6 +203,24 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=56,Azr_Shop=$(trigger)}] \
     rng56 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 56 @s  盾牌 8 铁锭
 
+$execute as @s[scores={Azr_Shop_rng$(rng)=57,Azr_Shop=$(trigger)}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s Azr_emerald matches 24.. \
+    unless function skyblock:azr/system/shop/purchase/category3/\
+    rng57 run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
+$execute as @s[scores={Azr_Shop_rng$(rng)=58,Azr_Shop=$(trigger)}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s Azr_emerald matches 24.. \
+    unless function skyblock:azr/system/shop/purchase/category3/\
+    rng58 run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
+$execute as @s[scores={Azr_Shop_rng$(rng)=59,Azr_Shop=$(trigger)}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s Azr_emerald matches 18.. \
+    if items entity @s container.* bone[count={min:4}] \
+    unless function skyblock:azr/system/shop/purchase/category3/\
+    rng59 run scoreboard players set tempPlayerShopSuccess Azr_system 1
 
 
 
