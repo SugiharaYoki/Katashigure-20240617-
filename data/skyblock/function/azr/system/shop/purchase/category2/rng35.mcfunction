@@ -1,6 +1,5 @@
-clear @s iron_sword[custom_data~{rapier_normal:1b}] 1
-clear @s slime_ball 5
-clear @s flint 2
+scoreboard players remove @s Azr_emerald 20
+clear @s flint 3
+clear @s string 6
 
-execute if entity @s run function skyblock:azr/assets/items/weapons/rapier_wind
-execute if entity @s run function skyblock:azr/assets/items/weapons/rapier_wind_pro
+function skyblock:azr/assets/items/weapons/bow_pierce_level3

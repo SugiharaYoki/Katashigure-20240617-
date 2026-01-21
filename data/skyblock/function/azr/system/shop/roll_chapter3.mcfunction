@@ -1,52 +1,30 @@
-scoreboard players set @s Azr_Shop_rng1 18
-scoreboard players set @s Azr_Shop_rng4 22
-scoreboard players set @s Azr_Shop_rng7 28
-scoreboard players set @s Azr_Shop_rng2 18
-scoreboard players set @s Azr_Shop_rng5 22
-scoreboard players set @s Azr_Shop_rng8 28
-scoreboard players set @s Azr_Shop_rng3 18
-scoreboard players set @s Azr_Shop_rng6 22
-scoreboard players set @s Azr_Shop_rng9 28
-scoreboard players set @s Azr_Shop_rng10 18
-scoreboard players set @s Azr_Shop_rng11 22
-scoreboard players set @s Azr_Shop_rng12 28
-scoreboard players set @s Azr_Shop_rng10 14
-scoreboard players set @s Azr_Shop_rng11 14
-
-function skyblock:azr/system/utils/rng
-execute if score @s Azr_Shop_rng1 matches ..18 run scoreboard players operation @s Azr_Shop_rng1 += #rng13 Azr_system
-function skyblock:azr/system/utils/rng
-execute if score @s Azr_Shop_rng2 matches ..18 run scoreboard players operation @s Azr_Shop_rng2 += #rng13 Azr_system
-function skyblock:azr/system/utils/rng
-execute if score @s Azr_Shop_rng3 matches ..18 run scoreboard players operation @s Azr_Shop_rng3 += #rng13 Azr_system
-function skyblock:azr/system/utils/rng
-execute if score @s Azr_Shop_rng4 matches ..22 run scoreboard players operation @s Azr_Shop_rng4 += #rng17 Azr_system
-function skyblock:azr/system/utils/rng
-execute if score @s Azr_Shop_rng5 matches ..22 run scoreboard players operation @s Azr_Shop_rng5 += #rng17 Azr_system
-function skyblock:azr/system/utils/rng
-execute if score @s Azr_Shop_rng6 matches ..22 run scoreboard players operation @s Azr_Shop_rng6 += #rng17 Azr_system
-function skyblock:azr/system/utils/rng
-execute if score @s Azr_Shop_rng7 matches ..28 run scoreboard players operation @s Azr_Shop_rng7 += #rng10 Azr_system
-function skyblock:azr/system/utils/rng
-execute if score @s Azr_Shop_rng8 matches ..28 run scoreboard players operation @s Azr_Shop_rng8 += #rng10 Azr_system
-function skyblock:azr/system/utils/rng
-execute if score @s Azr_Shop_rng9 matches ..28 run scoreboard players operation @s Azr_Shop_rng9 += #rng10 Azr_system
-function skyblock:azr/system/utils/rng
-execute if score @s Azr_Shop_rng10 matches ..18 run scoreboard players operation @s Azr_Shop_rng10 += #rng13 Azr_system
-function skyblock:azr/system/utils/rng
-execute if score @s Azr_Shop_rng10 matches ..15 run scoreboard players operation @s Azr_Shop_rng10 += #rng4 Azr_system
-function skyblock:azr/system/utils/rng
-execute if score @s Azr_Shop_rng11 matches ..22 run scoreboard players operation @s Azr_Shop_rng11 += #rng17 Azr_system
-function skyblock:azr/system/utils/rng
-execute if score @s Azr_Shop_rng11 matches ..15 run scoreboard players operation @s Azr_Shop_rng11 += #rng4 Azr_system
-function skyblock:azr/system/utils/rng
-execute if score @s Azr_Shop_rng12 matches ..28 run scoreboard players operation @s Azr_Shop_rng12 += #rng10 Azr_system
-
+scoreboard players set @s Azr_Shop_rng1 -1
+scoreboard players set @s Azr_Shop_rng2 -1
+scoreboard players set @s Azr_Shop_rng3 -1
+scoreboard players set @s Azr_Shop_rng4 -1
+scoreboard players set @s Azr_Shop_rng5 -1
+scoreboard players set @s Azr_Shop_rng6 -1
+scoreboard players set @s Azr_Shop_rng7 -1
+scoreboard players set @s Azr_Shop_rng8 -1
+scoreboard players set @s Azr_Shop_rng9 -1
 scoreboard players set @s Azr_Shop_rng10 -1
 scoreboard players set @s Azr_Shop_rng11 -1
 scoreboard players set @s Azr_Shop_rng12 -1
+scoreboard players set @s Azr_Shop_rng13 -1
 
 
+execute if score @s Azr_Shop_rng1 matches -1 store result score @s Azr_Shop_rng1 run random value 21..25
+execute if score @s Azr_Shop_rng2 matches -1 store result score @s Azr_Shop_rng2 run random value 21..25
+execute if score @s Azr_Shop_rng3 matches -1 store result score @s Azr_Shop_rng3 run random value 21..25
 
-execute if entity @s[tag=AzrSariel_upg7B] run scoreboard players set @s Azr_Shop_rng6 -1
-execute if entity @s[tag=AzrSariel_upg7B] run scoreboard players set @s Azr_Shop_rng9 -1
+execute if score @s Azr_Shop_rng4 matches -1 store result score @s Azr_Shop_rng4 run random value 51..57
+execute if score @s Azr_Shop_rng5 matches -1 store result score @s Azr_Shop_rng5 run random value 51..57
+execute if score @s Azr_Shop_rng6 matches -1 store result score @s Azr_Shop_rng6 run random value 51..57
+
+execute if score @s Azr_Shop_rng7 matches -1 store result score @s Azr_Shop_rng7 run random value 21..30
+execute if score @s Azr_Shop_rng8 matches -1 store result score @s Azr_Shop_rng8 run random value 21..30
+execute if score @s Azr_Shop_rng9 matches -1 store result score @s Azr_Shop_rng9 run random value 21..30
+
+
+execute if entity @s[tag=!AzrSariel_upg7B] run scoreboard players set @s Azr_Shop_rng6 -1
+execute if entity @s[tag=!AzrSariel_upg7B] run scoreboard players set @s Azr_Shop_rng9 -1

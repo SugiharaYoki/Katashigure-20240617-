@@ -1,7 +1,5 @@
-clear @s chain 5
+scoreboard players remove @s Azr_emerald 50
+clear @s bone 12
+clear @s iron_ingot 12
 
-function skyblock:azr/assets/items/weapons/iron_axe_chain_long
-
-execute store success score #shop_alt Azr_system run clear @s stone_axe[custom_data~{stone_axe_normal:1b}] 1
-execute if score #shop_alt Azr_system matches 1 run return 0
-clear @s iron_axe[custom_data~{iron_axe_normal:1b}] 1
+function skyblock:azr/assets/items/weapons/chain_sword_zombie
