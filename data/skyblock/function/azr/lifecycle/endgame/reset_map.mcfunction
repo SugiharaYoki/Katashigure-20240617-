@@ -470,6 +470,8 @@ fill -79892 51 -49 -79888 51 -42 minecraft:quartz_slab[type=top] replace minecra
 
 #stage9
 setblock -79903 41 -60 birch_button[face=wall,facing=west]
+setblock -79903 41 -58 minecraft:sea_lantern
+setblock -79903 41 -62 minecraft:sea_lantern
 
 #stage9后面的神庭区域房间
 setblock -79917 40 -62 air

@@ -3,83 +3,72 @@ execute if score stage_main_thread AzrTimerStack matches 1 run tellraw @a[tag=De
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar add azr:progress_bar_normal "Stage 9"
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal color white
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
-execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal max 90
-execute if score stage_main_thread AzrTimerStack matches 1..90 store result bossbar azr:progress_bar_normal value run scoreboard players get stage_main_thread AzrTimerStack
-execute if score stage_main_thread AzrTimerStack matches 90 run bossbar remove azr:progress_bar_normal
+execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal max 300
+execute if score stage_main_thread AzrTimerStack matches 1..300 store result bossbar azr:progress_bar_normal value run scoreboard players get stage_main_thread AzrTimerStack
+execute if score stage_main_thread AzrTimerStack matches 300 run bossbar remove azr:progress_bar_normal
 #
 #mainside:-79901 41 -49
 #subside:-79906 40 -60
 
-execute if score stage_main_thread AzrTimerStack matches 1..3 run playsound ambient.cave ambient @a[tag=azrShowDialog] -78000 100 0 160 1.2
-execute if score stage_main_thread AzrTimerStack matches 1..3 run playsound ambient.cave ambient @a[tag=azrShowDialog] -78000 100 0 160 1.0
+execute if score stage_main_thread AzrTimerStack matches 1 run playsound ambient.cave ambient @a[tag=azrShowDialog] -78000 100 0 160 1.2
+execute if score stage_main_thread AzrTimerStack matches 1 run playsound ambient.cave ambient @a[tag=azrShowDialog] -78000 100 0 160 1.0
 
-execute if score stage_main_thread AzrTimerStack matches 1.. run function skyblock:azr/system/utils/rng
-execute if score stage_main_thread AzrTimerStack matches 2 run title @a[tag=azrShowDialog] actionbar {"text":"Stage 9 - Wave 1","color":"red"}
 
-execute if score stage_main_thread AzrTimerStack matches 3..6 if score #rng2 Azr_system matches 1 run summon silverfish -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:5.5f,CustomName:'"廊虫"',attributes:[{id:"max_health",base:5.5d},{id:"attack_damage",base:2.0d},{id:"movement_speed",base:0.25d}]}
-execute if score stage_main_thread AzrTimerStack matches 6..9 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 5.. run summon silverfish -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:5.5f,CustomName:'"廊虫"',attributes:[{id:"max_health",base:5.5d},{id:"attack_damage",base:2.0d},{id:"movement_speed",base:0.25d}]}
-execute if score stage_main_thread AzrTimerStack matches 9..12 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 2.. run summon silverfish -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:5.5f,CustomName:'"廊虫"',attributes:[{id:"max_health",base:5.5d},{id:"attack_damage",base:2.0d},{id:"movement_speed",base:0.25d}]}
-execute if score stage_main_thread AzrTimerStack matches 12..15 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 4.. run summon silverfish -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:5.5f,CustomName:'"廊虫"',attributes:[{id:"max_health",base:5.5d},{id:"attack_damage",base:2.0d},{id:"movement_speed",base:0.25d}]}
-execute if score stage_main_thread AzrTimerStack matches 15..18 if score #rng2 Azr_system matches 1 run summon silverfish -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:5.5f,CustomName:'"廊虫"',attributes:[{id:"max_health",base:5.5d},{id:"attack_damage",base:2.0d},{id:"movement_speed",base:0.25d}]}
-execute if score stage_main_thread AzrTimerStack matches 18..20 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 3.. run summon silverfish -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:5.5f,CustomName:'"廊虫"',attributes:[{id:"max_health",base:5.5d},{id:"attack_damage",base:2.0d},{id:"movement_speed",base:0.25d}]}
-execute if score stage_main_thread AzrTimerStack matches 7 if score #rng2 Azr_system matches 1 run summon spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier1",Health:2.5f,CustomName:'"迟缓的缝迅蛛"',attributes:[{id:"max_health",base:2.5d},{id:"attack_damage",base:3.5d},{id:"movement_speed",base:0.15d}]}
-execute if score stage_main_thread AzrTimerStack matches 10 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 5.. run summon spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier1",Health:2.5f,CustomName:'"迟缓的缝迅蛛"',attributes:[{id:"max_health",base:2.5d},{id:"attack_damage",base:3.5d},{id:"movement_speed",base:0.15d}]}
-execute if score stage_main_thread AzrTimerStack matches 13 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 2.. run summon spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier1",Health:2.5f,CustomName:'"迟缓的缝迅蛛"',attributes:[{id:"max_health",base:2.5d},{id:"attack_damage",base:3.5d},{id:"movement_speed",base:0.15d}]}
-execute if score stage_main_thread AzrTimerStack matches 16 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 4.. run summon spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier1",Health:2.5f,CustomName:'"迟缓的缝迅蛛"',attributes:[{id:"max_health",base:2.5d},{id:"attack_damage",base:3.5d},{id:"movement_speed",base:0.15d}]}
-execute if score stage_main_thread AzrTimerStack matches 19 if score #rng2 Azr_system matches 1 run summon spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier1",Health:2.5f,CustomName:'"迟缓的缝迅蛛"',attributes:[{id:"max_health",base:2.5d},{id:"attack_damage",base:3.5d},{id:"movement_speed",base:0.15d}]}
-execute if score stage_main_thread AzrTimerStack matches 21 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 3.. run summon spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier1",Health:2.5f,CustomName:'"迟缓的缝迅蛛"',attributes:[{id:"max_health",base:2.5d},{id:"attack_damage",base:3.5d},{id:"movement_speed",base:0.15d}]}
+execute if score stage_main_thread AzrTimerStack matches 13..16 run playsound ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -79931 38 53 100
+execute if score stage_main_thread AzrTimerStack matches 13..16 run playsound ambient.nether_wastes.additions ambient @a[tag=azrShowDialog] -79931 38 53 100
 
-execute if score stage_main_thread AzrTimerStack matches 23 if score #rng2 Azr_system matches 1 run summon cave_spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_cave_spider_tier1",Health:8.5f,CustomName:'"紫瑰棘"',attributes:[{id:"max_health",base:8.5d},{id:"attack_knockback",base:0.01d},{id:"attack_damage",base:5.0d},{id:"movement_speed",base:0.14d}]}
-execute if score stage_main_thread AzrTimerStack matches 24 if score #rng2 Azr_system matches 1 run summon cave_spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_cave_spider_tier1",Health:8.5f,CustomName:'"紫瑰棘"',attributes:[{id:"max_health",base:8.5d},{id:"attack_knockback",base:0.01d},{id:"attack_damage",base:5.0d},{id:"movement_speed",base:0.14d}]}
-execute if score stage_main_thread AzrTimerStack matches 25 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 3.. run summon cave_spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_cave_spider_tier1",Health:8.5f,CustomName:'"紫瑰棘"',attributes:[{id:"max_health",base:8.5d},{id:"attack_knockback",base:0.01d},{id:"attack_damage",base:5.0d},{id:"movement_speed",base:0.14d}]}
-execute if score stage_main_thread AzrTimerStack matches 26 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 5.. run summon cave_spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_cave_spider_tier1",Health:8.5f,CustomName:'"紫瑰棘"',attributes:[{id:"max_health",base:8.5d},{id:"attack_knockback",base:0.01d},{id:"attack_damage",base:5.0d},{id:"movement_speed",base:0.14d}]}
+execute if score stage_main_thread AzrTimerStack matches 13 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] times 0s 3s 1s
+execute if score stage_main_thread AzrTimerStack matches 13..39 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] title [{"text":"我乃死亡之神","color":"dark_red","bold": false}]
+execute if score stage_main_thread AzrTimerStack matches 27 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] times 0s 2s 1s
+execute if score stage_main_thread AzrTimerStack matches 27 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"创生万灵而恃才傲物","color":"dark_red","bold": true}]
 
-execute if score stage_main_thread AzrTimerStack matches 28 if score #rng2 Azr_system matches 1 run summon spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier2",Health:9.5f,CustomName:'"残城蜘蛛"',attributes:[{id:"max_health",base:9.5d},{id:"attack_damage",base:2.0d},{id:"movement_speed",base:0.24d},{id:"knockback_resistance",base:0.4d}]}
-execute if score stage_main_thread AzrTimerStack matches 31 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 2.. run summon spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier2",Health:9.5f,CustomName:'"残城蜘蛛"',attributes:[{id:"max_health",base:9.5d},{id:"attack_damage",base:2.0d},{id:"movement_speed",base:0.24d},{id:"knockback_resistance",base:0.4d}]}
-execute if score stage_main_thread AzrTimerStack matches 34 if score #rng2 Azr_system matches 1 run summon spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier2",Health:9.5f,CustomName:'"残城蜘蛛"',attributes:[{id:"max_health",base:9.5d},{id:"attack_damage",base:2.0d},{id:"movement_speed",base:0.24d},{id:"knockback_resistance",base:0.4d}]}
-execute if score stage_main_thread AzrTimerStack matches 37 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 4.. run summon spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier2",Health:9.5f,CustomName:'"残城蜘蛛"',attributes:[{id:"max_health",base:9.5d},{id:"attack_damage",base:2.0d},{id:"movement_speed",base:0.24d},{id:"knockback_resistance",base:0.4d}]}
 
-execute if score stage_main_thread AzrTimerStack matches 33 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 2.. run summon cave_spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_cave_spider_tier1",Health:2.5f,CustomName:'"毒木棘"',attributes:[{id:"max_health",base:2.5d},{id:"attack_damage",base:0.5d},{id:"movement_speed",base:0.3d}]}
-execute if score stage_main_thread AzrTimerStack matches 41 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 2.. run summon cave_spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_cave_spider_tier1",Health:2.5f,CustomName:'"毒木棘"',attributes:[{id:"max_health",base:2.5d},{id:"attack_damage",base:0.5d},{id:"movement_speed",base:0.3d}]}
-execute if score stage_main_thread AzrTimerStack matches 39 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 5.. run summon cave_spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_cave_spider_tier1",Health:2.5f,CustomName:'"毒木棘"',attributes:[{id:"max_health",base:2.5d},{id:"attack_damage",base:0.5d},{id:"movement_speed",base:0.3d}]}
-execute if score stage_main_thread AzrTimerStack matches 43 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 5.. run summon cave_spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_cave_spider_tier1",Health:2.5f,CustomName:'"毒木棘"',attributes:[{id:"max_health",base:2.5d},{id:"attack_damage",base:0.5d},{id:"movement_speed",base:0.3d}]}
-execute if score stage_main_thread AzrTimerStack matches 35 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 6.. run summon cave_spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_cave_spider_tier1",Health:2.5f,CustomName:'"毒木棘"',attributes:[{id:"max_health",base:2.5d},{id:"attack_damage",base:0.5d},{id:"movement_speed",base:0.3d}]}
-execute if score stage_main_thread AzrTimerStack matches 29 if score #rng2 Azr_system matches 1 if score playerCount Azr_system matches 6.. run summon cave_spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_cave_spider_tier1",Health:2.5f,CustomName:'"毒木棘"',attributes:[{id:"max_health",base:2.5d},{id:"attack_damage",base:0.5d},{id:"movement_speed",base:0.3d}]}
 
-execute if score stage_main_thread AzrTimerStack matches 43..63 if score #rng6 Azr_system matches 1 run summon cave_spider -79906 40 -60 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_cave_spider_tier1",Health:8.5f,CustomName:'"紫瑰棘"',attributes:[{id:"max_health",base:8.5d},{id:"attack_knockback",base:0.01d},{id:"attack_damage",base:5.0d},{id:"movement_speed",base:0.14d}]}
-execute if score stage_main_thread AzrTimerStack matches 43..63 if score #rng6 Azr_system matches 2 if score playerCount Azr_system matches 4.. run summon cave_spider -79906 40 -60 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_cave_spider_tier1",Health:8.5f,CustomName:'"紫瑰棘"',attributes:[{id:"max_health",base:8.5d},{id:"attack_knockback",base:0.01d},{id:"attack_damage",base:5.0d},{id:"movement_speed",base:0.14d}]}
-execute if score stage_main_thread AzrTimerStack matches 43..63 if score #rng5 Azr_system matches 1 run summon spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier1",Health:2.5f,CustomName:'"缝迅蛛"',attributes:[{id:"max_health",base:2.5d},{id:"attack_damage",base:2.5d},{id:"movement_speed",base:0.55d}]}
-execute if score stage_main_thread AzrTimerStack matches 43..63 if score #rng5 Azr_system matches 2 if score playerCount Azr_system matches 5.. run summon spider -79906 40 -60 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier1",Health:2.5f,CustomName:'"缝迅蛛"',attributes:[{id:"max_health",base:2.5d},{id:"attack_damage",base:2.5d},{id:"movement_speed",base:0.55d}]}
-execute if score stage_main_thread AzrTimerStack matches 43..63 if score #rng5 Azr_system matches 3 if score playerCount Azr_system matches 3.. run summon spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier1",Health:2.5f,CustomName:'"缝迅蛛"',attributes:[{id:"max_health",base:2.5d},{id:"attack_damage",base:2.5d},{id:"movement_speed",base:0.55d}]}
-execute if score stage_main_thread AzrTimerStack matches 48..68 if score #rng6 Azr_system matches 3 run summon spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier2",Health:9.5f,CustomName:'"残城蜘蛛"',attributes:[{id:"max_health",base:9.5d},{id:"attack_damage",base:2.0d},{id:"movement_speed",base:0.24d},{id:"knockback_resistance",base:0.4d}]}
-execute if score stage_main_thread AzrTimerStack matches 48..68 if score #rng6 Azr_system matches 4 if score playerCount Azr_system matches 3.. run summon spider -79906 40 -60 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier2",Health:9.5f,CustomName:'"残城蜘蛛"',attributes:[{id:"max_health",base:9.5d},{id:"attack_damage",base:2.0d},{id:"movement_speed",base:0.24d},{id:"knockback_resistance",base:0.4d}]}
-execute if score stage_main_thread AzrTimerStack matches 48..68 if score #rng6 Azr_system matches 5 if score playerCount Azr_system matches 5.. run summon spider -79901 41 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier2",Health:9.5f,CustomName:'"残城蜘蛛"',attributes:[{id:"max_health",base:9.5d},{id:"attack_damage",base:2.0d},{id:"movement_speed",base:0.24d},{id:"knockback_resistance",base:0.4d}]}
-execute if score stage_main_thread AzrTimerStack matches 48..68 if score #rng6 Azr_system matches 6 if score playerCount Azr_system matches 6.. run summon spider -79906 40 -60 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_spider_tier2",Health:9.5f,CustomName:'"残城蜘蛛"',attributes:[{id:"max_health",base:9.5d},{id:"attack_damage",base:2.0d},{id:"movement_speed",base:0.24d},{id:"knockback_resistance",base:0.4d}]}
+execute if score stage_main_thread AzrTimerStack matches 31 run stopsound @a[tag=azrShowDialog] ambient
+execute if score stage_main_thread AzrTimerStack matches 31 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"","color":"dark_red","bold": true}]
+execute if score stage_main_thread AzrTimerStack matches 33 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"创生万灵而恃才傲物","color":"dark_red","bold": true}]
+execute if score stage_main_thread AzrTimerStack matches 34 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"","color":"dark_red","bold": true}]
+execute if score stage_main_thread AzrTimerStack matches 38 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"屠戮万灵而恃才傲物","color":"dark_red","bold": true}]
+execute if score stage_main_thread AzrTimerStack matches 39 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"","color":"dark_red","bold": true}]
+execute if score stage_main_thread AzrTimerStack matches 40 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] title [{"text":"","color":"dark_red","bold": true}]
 
-execute if score stage_main_thread AzrTimerStack matches 77 run setblock -79907 40 -62 air destroy
-execute if score stage_main_thread AzrTimerStack matches 77 run setblock -79907 40 -56 air destroy
-execute if score stage_main_thread AzrTimerStack matches 77 run setblock -79905 40 -47 air destroy
-execute if score stage_main_thread AzrTimerStack matches 77 run summon silverfish -79907 40 -62 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:7.5f,CustomName:'"蚀砖虫"',attributes:[{id:"max_health",base:7.5d},{id:"attack_damage",base:4.0d},{id:"movement_speed",base:0.25d}]}
-execute if score stage_main_thread AzrTimerStack matches 77 run summon silverfish -79907 40 -56 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:7.5f,CustomName:'"蚀砖虫"',attributes:[{id:"max_health",base:7.5d},{id:"attack_damage",base:4.0d},{id:"movement_speed",base:0.25d}]}
-execute if score stage_main_thread AzrTimerStack matches 77 run summon silverfish -79905 40 -47 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:7.5f,CustomName:'"蚀砖虫"',attributes:[{id:"max_health",base:7.5d},{id:"attack_damage",base:4.0d},{id:"movement_speed",base:0.25d}]}
-execute if score stage_main_thread AzrTimerStack matches 77 if score playerCount Azr_system matches 3.. run summon silverfish -79907 40 -62 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:7.5f,CustomName:'"蚀砖虫"',attributes:[{id:"max_health",base:7.5d},{id:"attack_damage",base:4.0d},{id:"movement_speed",base:0.25d}]}
-execute if score stage_main_thread AzrTimerStack matches 77 if score playerCount Azr_system matches 5.. run summon silverfish -79907 40 -56 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:7.5f,CustomName:'"蚀砖虫"',attributes:[{id:"max_health",base:7.5d},{id:"attack_damage",base:4.0d},{id:"movement_speed",base:0.25d}]}
-execute if score stage_main_thread AzrTimerStack matches 77 if score playerCount Azr_system matches 7.. run summon silverfish -79905 40 -47 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:7.5f,CustomName:'"蚀砖虫"',attributes:[{id:"max_health",base:7.5d},{id:"attack_damage",base:4.0d},{id:"movement_speed",base:0.25d}]}
-execute if score stage_main_thread AzrTimerStack matches 77 if score playerCount Azr_system matches 6.. run summon silverfish -79907 40 -62 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:7.5f,CustomName:'"蚀砖虫"',attributes:[{id:"max_health",base:7.5d},{id:"attack_damage",base:4.0d},{id:"movement_speed",base:0.25d}]}
-execute if score stage_main_thread AzrTimerStack matches 77 if score playerCount Azr_system matches 4.. run summon silverfish -79907 40 -56 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:7.5f,CustomName:'"蚀砖虫"',attributes:[{id:"max_health",base:7.5d},{id:"attack_damage",base:4.0d},{id:"movement_speed",base:0.25d}]}
-execute if score stage_main_thread AzrTimerStack matches 77 if score playerCount Azr_system matches 2.. run summon silverfish -79905 40 -47 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:7.5f,CustomName:'"蚀砖虫"',attributes:[{id:"max_health",base:7.5d},{id:"attack_damage",base:4.0d},{id:"movement_speed",base:0.25d}]}
-execute if score stage_main_thread AzrTimerStack matches 74 run playsound minecraft:entity.silverfish.ambient hostile @a[tag=azrShowDialog] -79905.00 40.39 -46.74 10 0.7
-execute if score stage_main_thread AzrTimerStack matches 74 run playsound minecraft:entity.silverfish.ambient hostile @a[tag=azrShowDialog] -79905.00 40.39 -46.74 10 0.8
-execute if score stage_main_thread AzrTimerStack matches 76.. run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:coarse_dirt"}}]
-execute if score stage_main_thread AzrTimerStack matches 76.. run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:gravel"}}]
-execute if score stage_main_thread AzrTimerStack matches 76.. run kill @e[x=-79900,y=130,z=0,distance=0..1000,type=item,nbt={Item:{id:"minecraft:quartz_bricks"}}]
+execute if score stage_main_thread AzrTimerStack matches 32 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.basalt_deltas.mood ambient @a[tag=azrShowDialog] -79902.13 41.41 -59.48 3 1.4
+execute if score stage_main_thread AzrTimerStack matches 32 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.basalt_deltas.mood ambient @a[tag=azrShowDialog] -79902.13 41.41 -59.48 3 1.4
+execute if score stage_main_thread AzrTimerStack matches 32 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.basalt_deltas.mood ambient @a[tag=azrShowDialog] -79902.13 41.41 -59.48 3 1.4
+execute if score stage_main_thread AzrTimerStack matches 32 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.basalt_deltas.mood ambient @a[tag=azrShowDialog] -79902.13 41.41 -59.48 3 1.4
 
-execute if score stage_main_thread AzrTimerStack matches 85 run setblock -79898 42 -49 air destroy
-execute if score stage_main_thread AzrTimerStack matches 85 run setblock -79898 42 -50 air destroy
-execute if score stage_main_thread AzrTimerStack matches 85 run setblock -79898 41 -50 air destroy
-execute if score stage_main_thread AzrTimerStack matches 85 run summon silverfish -79898 42 -49 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:7.5f,CustomName:'"蚀砖虫"',attributes:[{id:"max_health",base:7.5d},{id:"attack_damage",base:4.0d},{id:"movement_speed",base:0.25d}]}
-execute if score stage_main_thread AzrTimerStack matches 85 run summon silverfish -79898 42 -50 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:7.5f,CustomName:'"蚀砖虫"',attributes:[{id:"max_health",base:7.5d},{id:"attack_damage",base:4.0d},{id:"movement_speed",base:0.25d}]}
-execute if score stage_main_thread AzrTimerStack matches 85 run summon silverfish -79898 41 -50 {PersistenceRequired:1b,Tags:["AzrielMob"],DeathLootTable:"skyblock:azriel_silverfish_tier1",Health:7.5f,CustomName:'"蚀砖虫"',attributes:[{id:"max_health",base:7.5d},{id:"attack_damage",base:4.0d},{id:"movement_speed",base:0.25d}]}
+
+execute if score stage_main_thread AzrTimerStack matches 40 run setblock -79903 41 -58 minecraft:redstone_block destroy
+execute if score stage_main_thread AzrTimerStack matches 40 run setblock -79903 41 -62 minecraft:redstone_block destroy
+execute if score stage_main_thread AzrTimerStack matches 40 run scoreboard players set stage_main_thread AzrTimerStack 200
+execute if score stage_main_thread AzrTimerStack matches 40 run bossbar set azr:progress_bar_normal color red
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 execute if score stage_main_thread AzrTimerStack matches 86..87 if entity @e[tag=AzrielMob,tag=!AzrielDecMob] run scoreboard players set stage_main_thread AzrTimerStack 86
 execute if score stage_main_thread AzrTimerStack matches 88 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
