@@ -20,7 +20,7 @@ execute if score @s rng1 matches 55 as @s at @s run data modify entity @s Motion
 execute if score @s rng1 matches 55 as @s at @s run kill @e[type=marker,tag=AzrielMob_backjump_marker]
 
 execute if score @s rng1 matches 60 run effect give @s speed 6 1 true
-execute if score @s rng1 matches 60 run item replace entity @s weapon.mainhand with crossbow[custom_name='{"text":"弩·传统","color":"white","italic":false}',custom_data={crossbow_normal:1b},custom_model_data={floats:[100001.0]}]
+execute if score @s rng1 matches 60 run item replace entity @s weapon.mainhand with crossbow[custom_data={crossbow_normal:1b},custom_model_data={floats:[100001.0]}]
 
 execute if score @s[scores={AzrielMobLevel=3..}] rng1 matches 200.. as @s at @s unless entity @n[tag=AzrielMob_undead,distance=0..7] run scoreboard players set @s rng1 0
 

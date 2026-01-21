@@ -13,6 +13,7 @@ execute if entity @s[tag=AzrielMob_nightblind] run function skyblock:azr/assets/
 execute if entity @s[tag=AzrielMob_undead_baby] run function skyblock:azr/assets/mobs/skill/undead_baby
 
 execute if entity @s[tag=AzrielMob_trap_spike_display] run function skyblock:azr/assets/mobs/skill/trap_spike
+execute if entity @s[tag=AzrielMob_trap_fang] run function skyblock:azr/assets/mobs/skill/trap_fang
 
 kill @s[type=drowned,tag=!AzrielMob_stypeDROWNED]
 

@@ -33,44 +33,15 @@ execute if score @s rng1 matches 50 run effect give @s slowness 3 19 true
 execute if score @s rng1 matches 50 run effect clear @s resistance
 execute if score @s rng1 matches 50 run data modify entity @s Invulnerable set value 0b
 
-execute if score @s rng1 matches 58 positioned ~2 ~ ~ if block ~ ~1 ~ air unless block ~ ~ ~ air run summon evoker_fangs
-execute if score @s rng1 matches 58 positioned ~-2 ~ ~ if block ~ ~1 ~ air unless block ~ ~ ~ air run summon evoker_fangs
-execute if score @s rng1 matches 58 positioned ~ ~ ~2 if block ~ ~1 ~ air unless block ~ ~ ~ air run summon evoker_fangs
-execute if score @s rng1 matches 58 positioned ~ ~ ~-2 if block ~ ~1 ~ air unless block ~ ~ ~ air run summon evoker_fangs
-execute if score @s rng1 matches 58 positioned ~2 ~ ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute if score @s rng1 matches 58 positioned ~-2 ~ ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute if score @s rng1 matches 58 positioned ~ ~ ~2 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute if score @s rng1 matches 58 positioned ~ ~ ~-2 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute if score @s rng1 matches 58 positioned ~2 ~ ~ if block ~ ~-1 ~ air unless block ~ ~-2 ~ air run summon evoker_fangs
-execute if score @s rng1 matches 58 positioned ~-2 ~ ~ if block ~ ~-1 ~ air unless block ~ ~-2 ~ air run summon evoker_fangs
-execute if score @s rng1 matches 58 positioned ~ ~ ~2 if block ~ ~-1 ~ air unless block ~ ~-2 ~ air run summon evoker_fangs
-execute if score @s rng1 matches 58 positioned ~ ~ ~-2 if block ~ ~-1 ~ air unless block ~ ~-2 ~ air run summon evoker_fangs
+execute if score @s rng1 matches 58 positioned ^2 ^ ^ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 58 positioned ^-2 ^ ^ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 58 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 58 positioned ^ ^ ^-2 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 63 positioned ^4 ^ ^ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 63 positioned ^-4 ^ ^ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 63 positioned ^ ^ ^4 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 63 positioned ^ ^ ^-4 run function skyblock:azr/assets/mobs/trap_fang
 
-execute if score @s rng1 matches 62 positioned ~3 ~ ~ if block ~ ~1 ~ air unless block ~ ~ ~ air run summon evoker_fangs
-execute if score @s rng1 matches 62 positioned ~-3 ~ ~ if block ~ ~1 ~ air unless block ~ ~ ~ air run summon evoker_fangs
-execute if score @s rng1 matches 62 positioned ~ ~ ~3 if block ~ ~1 ~ air unless block ~ ~ ~ air run summon evoker_fangs
-execute if score @s rng1 matches 62 positioned ~ ~ ~-3 if block ~ ~1 ~ air unless block ~ ~ ~ air run summon evoker_fangs
-execute if score @s rng1 matches 62 positioned ~3 ~ ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute if score @s rng1 matches 62 positioned ~-3 ~ ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute if score @s rng1 matches 62 positioned ~ ~ ~3 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute if score @s rng1 matches 62 positioned ~ ~ ~-3 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute if score @s rng1 matches 62 positioned ~3 ~ ~ if block ~ ~-1 ~ air unless block ~ ~-2 ~ air run summon evoker_fangs
-execute if score @s rng1 matches 62 positioned ~-3 ~ ~ if block ~ ~-1 ~ air unless block ~ ~-2 ~ air run summon evoker_fangs
-execute if score @s rng1 matches 62 positioned ~ ~ ~3 if block ~ ~-1 ~ air unless block ~ ~-2 ~ air run summon evoker_fangs
-execute if score @s rng1 matches 62 positioned ~ ~ ~-3 if block ~ ~-1 ~ air unless block ~ ~-2 ~ air run summon evoker_fangs
-
-execute if score @s rng1 matches 66 positioned ~4 ~ ~ if block ~ ~1 ~ air unless block ~ ~ ~ air run summon evoker_fangs
-execute if score @s rng1 matches 66 positioned ~-4 ~ ~ if block ~ ~1 ~ air unless block ~ ~ ~ air run summon evoker_fangs
-execute if score @s rng1 matches 66 positioned ~ ~ ~4 if block ~ ~1 ~ air unless block ~ ~ ~ air run summon evoker_fangs
-execute if score @s rng1 matches 66 positioned ~ ~ ~-4 if block ~ ~1 ~ air unless block ~ ~ ~ air run summon evoker_fangs
-execute if score @s rng1 matches 66 positioned ~4 ~ ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute if score @s rng1 matches 66 positioned ~-4 ~ ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute if score @s rng1 matches 66 positioned ~ ~ ~4 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute if score @s rng1 matches 66 positioned ~ ~ ~-4 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute if score @s rng1 matches 66 positioned ~4 ~ ~ if block ~ ~-1 ~ air unless block ~ ~-2 ~ air run summon evoker_fangs
-execute if score @s rng1 matches 66 positioned ~-4 ~ ~ if block ~ ~-1 ~ air unless block ~ ~-2 ~ air run summon evoker_fangs
-execute if score @s rng1 matches 66 positioned ~ ~ ~4 if block ~ ~-1 ~ air unless block ~ ~-2 ~ air run summon evoker_fangs
-execute if score @s rng1 matches 66 positioned ~ ~ ~-4 if block ~ ~-1 ~ air unless block ~ ~-2 ~ air run summon evoker_fangs
 
 
 execute if score @s rng1 matches 80.. run scoreboard players set @s rng1 1
