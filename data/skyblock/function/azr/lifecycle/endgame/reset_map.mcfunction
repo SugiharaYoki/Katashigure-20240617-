@@ -476,12 +476,12 @@ item replace block -79917 40 -62 container.13 with resin_clump 1
 item replace block -79917 40 -62 container.15 with skull_banner_pattern[custom_name='{"text":"“拉斐尔大人与佛劳洛斯大人吵了一架”","color":"dark_purple","italic":false}',lore=['{"text":"这确实也在我们的预料之内，毕竟这两天拉斐尔大人的脾气特别不稳定。","color":"white","italic":false}','{"text":"佛劳洛斯大人跟我们说，“百千年的重头戏终于要到来了”。","color":"white","italic":false}','{"text":"实际上，我们没人期待神庭局势的变动。生命树的枯萎已经让所有人焦头烂额了。","color":"white","italic":false}']] 1
 
   #许愿池
-  setblock -79920 41 -78 minecraft:potted_azure_bluet
-  setblock -79920 41 -79 minecraft:potted_poppy
-  setblock -79920 41 -80 minecraft:potted_cornflower
-  setblock -79914 41 -78 minecraft:potted_cornflower
-  setblock -79914 41 -79 minecraft:potted_azure_bluet
-  setblock -79914 41 -80 minecraft:potted_poppy
+setblock -79920 41 -78 minecraft:potted_azure_bluet
+setblock -79920 41 -79 minecraft:potted_poppy
+setblock -79920 41 -80 minecraft:potted_cornflower
+setblock -79914 41 -78 minecraft:potted_cornflower
+setblock -79914 41 -79 minecraft:potted_azure_bluet
+setblock -79914 41 -80 minecraft:potted_poppy
 
 
 
