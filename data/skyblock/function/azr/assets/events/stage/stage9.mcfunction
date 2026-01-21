@@ -89,5 +89,3 @@ execute if score stage_main_thread AzrTimerStack matches 90 run setblock -79889 
 execute if score stage_main_thread AzrTimerStack matches 90 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage9
 execute if score stage_main_thread AzrTimerStack matches 90 run title @a[tag=azrShowDialog] actionbar {"text":"Stage Clear","color":"green"}
 execute if score stage_main_thread AzrTimerStack matches 90 run scoreboard players set stage Azr_system 27
-
-execute if score stage_main_thread AzrTimerStack matches 90 run fill -79906 42 -64 -79906 40 -64 minecraft:air destroy

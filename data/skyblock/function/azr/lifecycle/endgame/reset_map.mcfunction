@@ -672,7 +672,6 @@ fill -79914 47 -103 -79914 46 -103 iron_bars
 fill -79837 51 -130 -79837 48 -127 air
 fill -79867 51 -130 -79867 48 -127 air
 fill -79922 45 -113 -79922 45 -111 minecraft:barrier
-fill -79906 42 -64 -79906 40 -64 minecraft:purple_stained_glass
 fill -79911 42 -68 -79911 40 -68 minecraft:quartz_pillar
 fill -79901 39 88 -79901 38 88 iron_bars
 fill -79883 40 -138 -79883 42 -140 minecraft:iron_bars
