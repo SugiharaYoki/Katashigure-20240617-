@@ -11,11 +11,10 @@ execute if score stage_main_thread AzrTimerStack matches 300 run bossbar remove 
 #subside:-79906 40 -60
 
 execute if score stage_main_thread AzrTimerStack matches 1 run playsound ambient.cave ambient @a[tag=azrShowDialog] -78000 100 0 160 1.2
-execute if score stage_main_thread AzrTimerStack matches 1 run playsound ambient.cave ambient @a[tag=azrShowDialog] -78000 100 0 160 1.0
 
 
-execute if score stage_main_thread AzrTimerStack matches 13..16 run playsound ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -79931 38 53 100
-execute if score stage_main_thread AzrTimerStack matches 13..16 run playsound ambient.nether_wastes.additions ambient @a[tag=azrShowDialog] -79931 38 53 100
+execute if score stage_main_thread AzrTimerStack matches 4..7 run playsound ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -79931 38 53 100
+execute if score stage_main_thread AzrTimerStack matches 4..7 run playsound ambient.nether_wastes.additions ambient @a[tag=azrShowDialog] -79931 38 53 100
 
 execute if score stage_main_thread AzrTimerStack matches 13 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] times 0s 3s 1s
 execute if score stage_main_thread AzrTimerStack matches 13..39 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] title [{"text":"我乃死亡之神","color":"dark_red","bold": false}]
