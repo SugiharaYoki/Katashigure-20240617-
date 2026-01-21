@@ -468,6 +468,9 @@ fill -79934 45 -63 -79934 45 -61 minecraft:quartz_block
 #stage9~10道中 破碎的天花板
 fill -79892 51 -49 -79888 51 -42 minecraft:quartz_slab[type=top] replace minecraft:structure_void
 
+#stage9
+setblock -79903 41 -60 birch_button[face=wall,facing=west]
+
 #stage9后面的神庭区域房间
 setblock -79917 40 -62 air
 setblock -79917 40 -62 trapped_chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
@@ -521,7 +524,7 @@ setblock -79867 48 -109 lever[facing=east,face=floor,powered=false]
 setblock -79891 49 136 minecraft:birch_button[face=floor,facing=east]
 setblock -79925 24 136 air
 setblock -79925 24 136 trapped_chest[facing=south]{lock:{components:{custom_data:{key_required:1b}}}}
-setblock -79903 41 -60 birch_button[face=wall,facing=west]
+
 setblock -79907 40 -62 coarse_dirt
 setblock -79907 40 -56 minecraft:quartz_bricks
 setblock -79905 40 -47 minecraft:coarse_dirt
