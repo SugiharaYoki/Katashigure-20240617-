@@ -1,0 +1,1 @@
+give @s shield[custom_name='{"text":"棘刺盾·III阶","italic":false}',attribute_modifiers=[{id:"azr:shield_spike.attack_damage",type:"attack_damage",amount:1.5,operation:"add_value",slot:"hand"},{id:"azr:shield_spike.movement_speed",type:"movement_speed",amount:-0.1,operation:"add_multiplied_base",slot:"hand"}],custom_data={shield_spike_level3:1b},custom_model_data={floats:[100001.0]}]

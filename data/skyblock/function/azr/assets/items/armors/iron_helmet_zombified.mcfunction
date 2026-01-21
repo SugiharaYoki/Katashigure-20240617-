@@ -1,0 +1,1 @@
+give @s iron_helmet[custom_data={iron_helmet_zombie:1b},custom_name='{"text":"铁盔·尸化","italic":false}',attribute_modifiers=[{type:"minecraft:armor",id:"azr:iron_helmet_zombie.armor",amount:3.0,operation:"add_value",slot:"armor"}],custom_model_data={floats:[100004.0]},unbreakable={}]

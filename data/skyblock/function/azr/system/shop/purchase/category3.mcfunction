@@ -162,6 +162,48 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=30,Azr_Shop=$(trigger)}] \
     # 30 @s  盾牌 4 铁锭
 
 
+$execute as @s[scores={Azr_Shop_rng$(rng)=51,Azr_Shop=$(trigger)}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* iron_ingot[count~{min:10}] \
+    unless function skyblock:azr/system/shop/purchase/category3/\
+    rng51 run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
+$execute as @s[scores={Azr_Shop_rng$(rng)=52,Azr_Shop=$(trigger)}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* iron_ingot[count~{min:10}] \
+    unless function skyblock:azr/system/shop/purchase/category3/\
+    rng52 run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
+$execute as @s[scores={Azr_Shop_rng$(rng)=53,Azr_Shop=$(trigger)}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* iron_ingot[count~{min:10}] \
+    unless function skyblock:azr/system/shop/purchase/category3/\
+    rng53 run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
+$execute as @s[scores={Azr_Shop_rng$(rng)=54,Azr_Shop=$(trigger)}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* iron_ingot[count~{min:10}] \
+    unless function skyblock:azr/system/shop/purchase/category3/\
+    rng54 run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
+
+$execute as @s[scores={Azr_Shop_rng$(rng)=55,Azr_Shop=$(trigger)}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* iron_ingot[count={min:8}] \
+    if items entity @s container.* string[count={min:3}] \
+    unless function skyblock:azr/system/shop/purchase/category3/\
+    rng55 run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    # 55 @s  盾牌 8 铁锭
+
+$execute as @s[scores={Azr_Shop_rng$(rng)=56,Azr_Shop=$(trigger)}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* iron_ingot[count={min:8}] \
+    if items entity @s container.* string[count={min:3}] \
+    unless function skyblock:azr/system/shop/purchase/category3/\
+    rng56 run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    # 56 @s  盾牌 8 铁锭
+
+
 
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=21,Azr_Shop=$(trigger)}] \

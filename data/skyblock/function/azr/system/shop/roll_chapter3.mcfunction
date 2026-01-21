@@ -21,9 +21,9 @@ execute if score @s Azr_Shop_rng4 matches -1 store result score @s Azr_Shop_rng4
 execute if score @s Azr_Shop_rng5 matches -1 store result score @s Azr_Shop_rng5 run random value 51..57
 execute if score @s Azr_Shop_rng6 matches -1 store result score @s Azr_Shop_rng6 run random value 51..57
 
-execute if score @s Azr_Shop_rng7 matches -1 store result score @s Azr_Shop_rng7 run random value 21..30
-execute if score @s Azr_Shop_rng8 matches -1 store result score @s Azr_Shop_rng8 run random value 21..30
-execute if score @s Azr_Shop_rng9 matches -1 store result score @s Azr_Shop_rng9 run random value 21..30
+execute if score @s Azr_Shop_rng7 matches -1 store result score @s Azr_Shop_rng7 run random value 51..56
+execute if score @s Azr_Shop_rng8 matches -1 store result score @s Azr_Shop_rng8 run random value 51..56
+execute if score @s Azr_Shop_rng9 matches -1 store result score @s Azr_Shop_rng9 run random value 51..56
 
 
 execute if entity @s[tag=!AzrSariel_upg7B] run scoreboard players set @s Azr_Shop_rng6 -1
