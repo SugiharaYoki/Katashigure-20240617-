@@ -218,6 +218,6 @@ execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard pla
 execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s unless items entity @s container.* *[custom_data~{azr_amulet_light_angel:1b}] run function skyblock:azr/assets/items/amulets/light_angel
 
 
-execute if score stage_main_thread AzrTimerStack matches 86..999 unless entity @a[tag=azrPlayer,x=-79925,y=37,z=-28,dx=47,dy=20,dz=27] run function skyblock:azr/lifecycle/endgame/reset_map_boss2
+execute if score stage_main_thread AzrTimerStack matches 86..999 unless entity @a[tag=azrPlayer,x=-79927,y=37,z=-29,dx=49,dy=20,dz=28] run function skyblock:azr/lifecycle/endgame/reset_map_boss2
 
 
