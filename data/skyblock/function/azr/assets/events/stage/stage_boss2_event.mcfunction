@@ -103,12 +103,12 @@ execute if score stage_main_thread AzrTimerStack matches 1019 at @n[tag=AzrielNP
 execute if score stage_main_thread AzrTimerStack matches 1019 at @n[tag=AzrielNPC_andralune] run item replace entity @s weapon.offhand with air
 execute if score stage_main_thread AzrTimerStack matches 1015 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score stage_main_thread AzrTimerStack matches 1015 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“不可能，我一直盯着你的行动……而且你根本不可能对神庭的建筑造成破坏。”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 1031 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
-execute if score stage_main_thread AzrTimerStack matches 1031 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“糟了，真正吸引了神界军注意力的，根本不是那些杂兵……”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 1049 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
-execute if score stage_main_thread AzrTimerStack matches 1049 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“真正被他们用来吸引我们注意的，是你！！”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1029 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 1029 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“糟了，真正吸引了神界军注意力的，根本不是那些杂兵……”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1045 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 1045 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“真正被他们用来吸引我们注意的，是你！！”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1053 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
-execute if score stage_main_thread AzrTimerStack matches 1053 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“可恶，我中计了……我们都中计了。”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1053 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“可恶，我中计了……我们全都中计了。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1051 run particle minecraft:large_smoke -79902.44 51.00 -13.95 7 3 7 0.05 450
 execute if score stage_main_thread AzrTimerStack matches 1051 run particle minecraft:white_smoke -79902.44 51.00 -13.95 7 3 7 0.05 450
 execute if score stage_main_thread AzrTimerStack matches 1051 run particle minecraft:explosion -79902.44 51.00 -13.95 7 3 7 0.05 30
@@ -124,15 +124,15 @@ execute if score stage_main_thread AzrTimerStack matches 1023..1068 positioned -
 execute if score stage_main_thread AzrTimerStack matches 1069..1130 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_andralune] facing entity @n[tag=AzrielNPC_mersenne]
 execute if score stage_main_thread AzrTimerStack matches 1063..1149 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_mersenne] facing entity @n[tag=AzrielNPC_andralune]
 execute if score stage_main_thread AzrTimerStack matches 1131..1250 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
-execute if score stage_main_thread AzrTimerStack matches 1150..1250 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_mersenne] facing entity @p[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 1150..1550 positioned -79881.01 40.00 -13.99 run rotate @n[tag=AzrielNPC_mersenne] facing entity @p[tag=azrPlayer]
 
 execute if score stage_main_thread AzrTimerStack matches 1063 at @n[tag=AzrielNPC_mersenne] run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
 execute if score stage_main_thread AzrTimerStack matches 1063 positioned -79901 38 -16 run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
 execute if score stage_main_thread AzrTimerStack matches 1063 positioned -79923 43 96 run tp @n[tag=AzrielNPC_mersenne] -79901 38 -19 facing entity @n[tag=AzrielNPC_andralune]
-execute if score stage_main_thread AzrTimerStack matches 1065 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
-execute if score stage_main_thread AzrTimerStack matches 1065 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“权之残影大人……！！我已经锁定内奸身份了！”","color":"white"}]
-execute if score stage_main_thread AzrTimerStack matches 1080 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
-execute if score stage_main_thread AzrTimerStack matches 1080 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“在那之前，我想先问你……我前面这位人类，她是敌人的主力吗？”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1067 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 1067 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“权之残影大人……！！我已经锁定内奸身份了！”","color":"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1081 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
+execute if score stage_main_thread AzrTimerStack matches 1081 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“来的正是时候。我前面这位人类，她到底……是不是敌人的主力？”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1095 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua"},{"text":"\n“我从来就不知道为什么你们对我抱有巨大的敌意。我根本不是任何人的‘主力’。”","color":"white"}]
 execute if score stage_main_thread AzrTimerStack matches 1110 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 1110 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"默尔森：","color":"yellow","bold": true},{"bold": false,"text":"\n“事实确实如此。反叛的是权之殊能大人，他现在已经把牢房区域完全控制了……！”","color":"white"}]
