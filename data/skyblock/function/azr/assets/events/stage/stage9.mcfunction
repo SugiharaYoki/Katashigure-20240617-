@@ -39,9 +39,9 @@ execute if score stage_main_thread AzrTimerStack matches 32 as @p[tag=azrPlayer]
 
 execute if score stage_main_thread AzrTimerStack matches 40 run setblock -79903 41 -58 minecraft:redstone_block destroy
 execute if score stage_main_thread AzrTimerStack matches 40 run setblock -79903 41 -62 minecraft:redstone_block destroy
-execute if score stage_main_thread AzrTimerStack matches 40 run scoreboard players set stage_main_thread AzrTimerStack 200
 execute if score stage_main_thread AzrTimerStack matches 40 run bossbar set azr:progress_bar_normal color red
 execute if score stage_main_thread AzrTimerStack matches 40 run bossbar set azr:progress_bar_normal name "9 egatS"
+execute if score stage_main_thread AzrTimerStack matches 40 run scoreboard players set stage_main_thread AzrTimerStack 200
 
 
 
