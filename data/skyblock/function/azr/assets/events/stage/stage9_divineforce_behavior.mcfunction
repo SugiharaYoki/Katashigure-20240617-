@@ -1,4 +1,4 @@
-execute as @s[tag=AzrielNPC_Divineforce,tag=!AzrielNPC_Divineforce_Processed] at @s run attribute @s follow_range base set 0
+execute as @s[tag=AzrielNPC_Divineforce,tag=!AzrielNPC_Divineforce_Processed] at @s run attribute @s minecraft:follow_range base set 0
 execute as @s[tag=AzrielNPC_Divineforce,tag=!AzrielNPC_Divineforce_Processed] at @s run tag @s add AzrielNPC_Divineforce_Processed
 execute as @s[tag=!AzrielNPC_Divineforce,tag=!AzrielNPC_Divineforce_Processed,type=pillager] at @s run data modify entity @s Silent set value 1b
 execute as @s[tag=!AzrielNPC_Divineforce,tag=!AzrielNPC_Divineforce_Processed,type=vindicator] at @s run data modify entity @s Silent set value 1b
@@ -28,3 +28,5 @@ execute if entity @s[tag=!AzrielNPC_Divineforce_hasattacktarget] if entity @n[ta
 execute if entity @s[tag=!AzrielNPC_Divineforce_hasattacktarget] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run tag @s add AzrielNPC_Divineforce_hasattacktarget
 execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] unless entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run attribute @s follow_range base set 0
 execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] unless entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run tag @s remove AzrielNPC_Divineforce_hasattacktarget
+
+say hi
