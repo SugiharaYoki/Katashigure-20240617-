@@ -23,7 +23,6 @@ execute if entity @s[tag=AzrielMob_zombie_villager_cleric] run function skyblock
 #精英怪
 execute if entity @s[tag=AzrielMob_elite_candle_angel] run function skyblock:azr/assets/mobs/skill/candle/core
 
-
 #负面影响
 execute if entity @s[tag=AzrSariel_BioMagnet_target] run function skyblock:azr/system/player/damage_bonus/effect/biomagnet_target_core
 execute if entity @s[tag=AzrielMob_spider_giant] run function skyblock:azr/assets/mobs/skill/generic_weakness_fire
@@ -32,5 +31,6 @@ execute if entity @s[tag=AzrielMob_spider_giant] run function skyblock:azr/asset
 #execute if entity @s[tag=AzrielMob_nightblind] run function skyblock:azr/assets/mobs/skill/generic_weakness_fire
 
 
-
+#神界军
+execute if score stage Azr_system matches 25.. unless entity @s[type=!pillager,type=!vindicator] run function skyblock:azr/assets/events/stage/stage9_divineforce
 
