@@ -88,6 +88,7 @@ execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79892.3 42 -64.6 run function skyblock:azr/assets/mobs/pillager_friendly
 execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79891.2 42 -65.9 run function skyblock:azr/assets/mobs/sword_friendly
 execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79890 42 -66 run function skyblock:azr/assets/mobs/sword_friendly
+execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79893 42 -66 run function skyblock:azr/assets/mobs/sword_friendly
 execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79891.2 42 -65.9 run tag @n[tag=AzrielNPC_Divineforce,type=vindicator,distance=0..2] add AzrielNPC_stage9_entry_conversation5
 execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79891.2 42 -65.9 run effect give @n[tag=AzrielNPC_stage9_entry_conversation5] resistance infinite 2 true
 execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79891.2 42 -65.9 run tag @n[tag=AzrielNPC_Divineforce,type=pillager,distance=0..4] add AzrielNPC_stage9_entry_conversation6
