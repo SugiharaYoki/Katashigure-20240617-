@@ -30,3 +30,4 @@ execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] unless entity @n
 execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] unless entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run tag @s remove AzrielNPC_Divineforce_hasattacktarget
 
 
+say hi
