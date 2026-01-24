@@ -13,8 +13,8 @@ execute if score stage_main_thread AzrTimerStack matches 300 run bossbar remove 
 execute if score stage_main_thread AzrTimerStack matches 1 run playsound ambient.cave ambient @a[tag=azrShowDialog] -78000 100 0 160 1.2
 
 
-execute if score stage_main_thread AzrTimerStack matches 4..7 run playsound ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -79931 38 53 100
-execute if score stage_main_thread AzrTimerStack matches 4..7 run playsound ambient.nether_wastes.additions ambient @a[tag=azrShowDialog] -79931 38 53 100
+execute if score stage_main_thread AzrTimerStack matches 32 run playsound ambient.nether_wastes.mood ambient @a[tag=azrShowDialog] -79931 38 53 100
+execute if score stage_main_thread AzrTimerStack matches 32 run playsound ambient.nether_wastes.additions ambient @a[tag=azrShowDialog] -79931 38 53 100
 
 execute if score stage_main_thread AzrTimerStack matches 13 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] times 0s 3s 1s
 execute if score stage_main_thread AzrTimerStack matches 13..39 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] title [{"text":"我乃死亡之神","color":"dark_red","bold": false}]
@@ -31,10 +31,6 @@ execute if score stage_main_thread AzrTimerStack matches 40 as @p[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 41 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{"text":"","color":"dark_red","bold": true}]
 execute if score stage_main_thread AzrTimerStack matches 41 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] title [{"text":"","color":"dark_red","bold": true}]
 
-execute if score stage_main_thread AzrTimerStack matches 32 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.basalt_deltas.mood ambient @a[tag=azrShowDialog] -79902.13 41.41 -59.48 3 1.2
-execute if score stage_main_thread AzrTimerStack matches 32 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.basalt_deltas.mood ambient @a[tag=azrShowDialog] -79902.13 41.41 -59.48 3 1.2
-execute if score stage_main_thread AzrTimerStack matches 32 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.basalt_deltas.mood ambient @a[tag=azrShowDialog] -79902.13 41.41 -59.48 3 1.2
-execute if score stage_main_thread AzrTimerStack matches 32 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.basalt_deltas.mood ambient @a[tag=azrShowDialog] -79902.13 41.41 -59.48 3 1.2
 
 
 execute if score stage_main_thread AzrTimerStack matches 40 run setblock -79900 41 -58 minecraft:redstone_block destroy
