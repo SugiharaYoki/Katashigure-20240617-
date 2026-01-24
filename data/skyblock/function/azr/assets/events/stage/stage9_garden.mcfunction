@@ -117,8 +117,12 @@ execute positioned -79893 47 -53 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79893 47 -53 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52}] at @n[tag=AzrielNPC_stage9_entry_conversation6] run playsound minecraft:entity.pillager.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute positioned -79893 47 -53 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52}] if entity @n[tag=AzrielNPC_stage9_entry_conversation6] run tellraw @a[tag=azrShowDialog] [{"text":"弩手 麦克：","color":"green","bold": true},{"bold": false,"text":"\n“哇啊啊、怎么办才好！？我们怎么可能是它的对手……！！”","color":"white"}]
 execute positioned -79893 47 -53 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=70}] at @n[tag=AzrielNPC_stage9_entry_conversation5] run playsound minecraft:entity.vindicator.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute positioned -79893 47 -53 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=70}] if entity @n[tag=AzrielNPC_stage9_entry_conversation5] run tellraw @a[tag=azrShowDialog] [{"text":"巡逻小队队长 伊安：","color":"green","bold": true},{"bold": false,"text":"\n“冷静！！我们的背后就是生命树，一定不能死在这里！”","color":"white"}]
+execute positioned -79893 47 -53 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=70}] if entity @n[tag=AzrielNPC_stage9_entry_conversation5] run tellraw @a[tag=azrShowDialog] [{"text":"巡逻小队队长 伊安：","color":"green","bold": true},{"bold": false,"text":"\n“冷静，我们如果失败了，生命树就会受到威胁！无论如何都不能死在这里！”","color":"white"}]
 
+execute positioned -79893 47 -53 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=110..111}] if entity @n[distance=..35,tag=AzrielMob_sonic_eye] run scoreboard players set @s rng1 110
+execute positioned -79893 47 -53 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=112}] run fill -79892 45 -68 -79889 42 -68 minecraft:air destroy
+
+execute positioned -79893 47 -53 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=112}] run fill -79890 42 -53 -79891 44 -53 minecraft:air destroy
 
 
 #
