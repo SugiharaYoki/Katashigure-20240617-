@@ -14,4 +14,7 @@ execute as @s[tag=AzrielMob_marinus_surrounding_particle_marker] at @s run funct
 execute as @s[tag=AzrielMob_boss_marinus_axe_throw_marker] at @s run function skyblock:azr/assets/mobs/skill/marinus/marker_axe_throw
 
 
+execute if entity @s[tag=AzrielMob_trap_fang] run function skyblock:azr/assets/mobs/skill/trap_fang
+execute if entity @s[tag=AzrielMob_trap_sonic_laser] run function skyblock:azr/assets/mobs/skill/trap_sonic_laser
+
 execute if entity @s[tag=AzrielMob_generic_pillar_attack_small] run function skyblock:azr/assets/mobs/skill/undead_pickaxe_marker_release
