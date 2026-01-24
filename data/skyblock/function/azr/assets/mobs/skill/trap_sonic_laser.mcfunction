@@ -109,4 +109,24 @@ execute if score @s rng1 matches 115 rotated as @s positioned ^ ^ ^8.5 as @a[tag
 execute if score @s rng1 matches 116 rotated as @s positioned ^ ^ ^9.0 run particle sonic_boom ~ ~ ~ 0 0 0 0 1 force
 execute if score @s rng1 matches 116 rotated as @s positioned ^ ^ ^9.0 run playsound entity.warden.sonic_boom hostile @a ~ ~ ~ 1 1.3
 execute if score @s rng1 matches 116 rotated as @s positioned ^ ^ ^9.0 as @a[tag=azrPlayer,distance=..1.0] run damage @s 4 sonic_boom
+
+
+execute if score @s rng1 matches 100 rotated as @s positioned ^ ^ ^1.0 as @n[tag=AzrielNPC_Divineforce,distance=..1.2] run damage @s 4 sonic_boom
+execute if score @s rng1 matches 101 rotated as @s positioned ^ ^ ^1.5 as @n[tag=AzrielNPC_Divineforce,distance=..1.2] run damage @s 4 sonic_boom
+execute if score @s rng1 matches 102 rotated as @s positioned ^ ^ ^2.0 as @n[tag=AzrielNPC_Divineforce,distance=..1.2] run damage @s 4 sonic_boom
+execute if score @s rng1 matches 103 rotated as @s positioned ^ ^ ^2.5 as @n[tag=AzrielNPC_Divineforce,distance=..1.2] run damage @s 4 sonic_boom
+execute if score @s rng1 matches 104 rotated as @s positioned ^ ^ ^3.0 as @n[tag=AzrielNPC_Divineforce,distance=..1.2] run damage @s 4 sonic_boom
+execute if score @s rng1 matches 105 rotated as @s positioned ^ ^ ^3.5 as @n[tag=AzrielNPC_Divineforce,distance=..1.2] run damage @s 4 sonic_boom
+execute if score @s rng1 matches 106 rotated as @s positioned ^ ^ ^4.0 as @n[tag=AzrielNPC_Divineforce,distance=..1.2] run damage @s 4 sonic_boom
+execute if score @s rng1 matches 107 rotated as @s positioned ^ ^ ^4.5 as @n[tag=AzrielNPC_Divineforce,distance=..1.2] run damage @s 4 sonic_boom
+execute if score @s rng1 matches 108 rotated as @s positioned ^ ^ ^5.0 as @n[tag=AzrielNPC_Divineforce,distance=..1.2] run damage @s 4 sonic_boom
+execute if score @s rng1 matches 109 rotated as @s positioned ^ ^ ^5.5 as @n[tag=AzrielNPC_Divineforce,distance=..1.2] run damage @s 4 sonic_boom
+execute if score @s rng1 matches 110 rotated as @s positioned ^ ^ ^6.0 as @n[tag=AzrielNPC_Divineforce,distance=..1.2] run damage @s 4 sonic_boom
+execute if score @s rng1 matches 111 rotated as @s positioned ^ ^ ^6.5 as @n[tag=AzrielNPC_Divineforce,distance=..1.2] run damage @s 4 sonic_boom
+execute if score @s rng1 matches 112 rotated as @s positioned ^ ^ ^7.0 as @n[tag=AzrielNPC_Divineforce,distance=..1.2] run damage @s 4 sonic_boom
+execute if score @s rng1 matches 113 rotated as @s positioned ^ ^ ^7.5 as @n[tag=AzrielNPC_Divineforce,distance=..1.2] run damage @s 4 sonic_boom
+execute if score @s rng1 matches 114 rotated as @s positioned ^ ^ ^8.0 as @n[tag=AzrielNPC_Divineforce,distance=..1.2] run damage @s 4 sonic_boom
+execute if score @s rng1 matches 115 rotated as @s positioned ^ ^ ^8.5 as @n[tag=AzrielNPC_Divineforce,distance=..1.2] run damage @s 4 sonic_boom
+execute if score @s rng1 matches 116 rotated as @s positioned ^ ^ ^9.0 as @n[tag=AzrielNPC_Divineforce,distance=..1.2] run damage @s 4 sonic_boom
+
 execute if score @s rng1 matches 116 run kill @s
