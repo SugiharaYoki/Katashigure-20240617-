@@ -33,14 +33,14 @@ execute if score @s rng1 matches 50 run effect give @s slowness 3 19 true
 execute if score @s rng1 matches 50 run effect clear @s resistance
 execute if score @s rng1 matches 50 run data modify entity @s Invulnerable set value 0b
 
-execute if score @s rng1 matches 58 rotated ~ 0 positioned ^2 ^ ^ run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s rng1 matches 58 rotated ~ 0 positioned ^-2 ^ ^ run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s rng1 matches 58 rotated ~ 0 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s rng1 matches 58 rotated ~ 0 positioned ^ ^ ^-2 run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s rng1 matches 63 rotated ~ 0 positioned ^4 ^ ^ run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s rng1 matches 63 rotated ~ 0 positioned ^-4 ^ ^ run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s rng1 matches 63 rotated ~ 0 positioned ^ ^ ^4 run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s rng1 matches 63 rotated ~ 0 positioned ^ ^ ^-4 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 58 rotated as @s rotated ~ 0 positioned ^2 ^ ^ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 58 rotated as @s rotated ~ 0 positioned ^-2 ^ ^ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 58 rotated as @s rotated ~ 0 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 58 rotated as @s rotated ~ 0 positioned ^ ^ ^-2 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 63 rotated as @s rotated ~ 0 positioned ^4 ^ ^ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 63 rotated as @s rotated ~ 0 positioned ^-4 ^ ^ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 63 rotated as @s rotated ~ 0 positioned ^ ^ ^4 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 63 rotated as @s rotated ~ 0 positioned ^ ^ ^-4 run function skyblock:azr/assets/mobs/trap_fang
 
 
 
