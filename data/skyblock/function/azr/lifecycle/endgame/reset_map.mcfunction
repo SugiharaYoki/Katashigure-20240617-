@@ -472,6 +472,9 @@ fill -79892 51 -49 -79888 51 -42 minecraft:quartz_slab[type=top] replace minecra
 setblock -79900 41 -60 birch_button[face=wall,facing=west]
 setblock -79900 41 -58 minecraft:sea_lantern
 setblock -79900 41 -62 minecraft:sea_lantern
+setblock -79898 42 -49 gravel
+setblock -79898 42 -50 gravel
+setblock -79898 41 -50 gravel
 
 #stage9后面的神庭区域房间
 setblock -79917 40 -62 air
@@ -527,12 +530,6 @@ setblock -79891 49 136 minecraft:birch_button[face=floor,facing=east]
 setblock -79925 24 136 air
 setblock -79925 24 136 trapped_chest[facing=south]{lock:{components:{custom_data:{key_required:1b}}}}
 
-setblock -79907 40 -62 coarse_dirt
-setblock -79907 40 -56 minecraft:quartz_bricks
-setblock -79905 40 -47 minecraft:coarse_dirt
-setblock -79898 42 -49 gravel
-setblock -79898 42 -50 gravel
-setblock -79898 41 -50 gravel
 setblock -79887 44 164 minecraft:birch_button[face=floor,facing=south]
 setblock -79887 43 164 diamond_block
 setblock -79951 38 9 minecraft:quartz_stairs[facing=south]

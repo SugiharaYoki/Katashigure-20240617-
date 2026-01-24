@@ -69,7 +69,8 @@ execute if score stage_main_thread AzrTimerStack matches 292..293 positioned -79
 #下一站出口附近 -79901 41 -50
 
 
-
+execute if score stage_main_thread AzrTimerStack matches 294 run fill -79898 41 -50 -79898 42 -50 air destroy
+execute if score stage_main_thread AzrTimerStack matches 294 run setblock -79898 42 -49 air destroy
 execute if score stage_main_thread AzrTimerStack matches 294 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 294 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 294 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
