@@ -27,3 +27,5 @@ execute if entity @s[tag=!AzrielNPC_Divineforce_hasattacktarget] if entity @n[ta
 execute if entity @s[tag=!AzrielNPC_Divineforce_hasattacktarget] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run tag @s add AzrielNPC_Divineforce_hasattacktarget
 execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] unless entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run attribute @s follow_range base set 0
 execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] unless entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run tag @s remove AzrielNPC_Divineforce_hasattacktarget
+execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] if entity @a[tag=azrPlayer,distance=0..2.5] run attribute @s follow_range base set 0
+execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] if entity @a[tag=azrPlayer,distance=0..2.5] run tag @s remove AzrielNPC_Divineforce_hasattacktarget
