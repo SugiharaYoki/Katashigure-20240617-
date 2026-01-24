@@ -52,8 +52,8 @@ execute if score @s rng1 matches 10..99 rotated as @s positioned ^ ^ ^8.6 run pa
 execute if score @s rng1 matches 10..99 rotated as @s positioned ^ ^ ^8.8 run particle glow ~ ~ ~ 0 0 0 0 1 force
 execute if score @s rng1 matches 10..99 rotated as @s positioned ^ ^ ^9.0 run particle glow ~ ~ ~ 0 0 0 0 1 force
 
-execute if score @s rng1 matches 35 run scoreboard players set @s rng1 102
-execute if score @s rng1 matches 75 run scoreboard players set @s rng1 102
+execute if score @s rng1 matches 32 run scoreboard players set @s rng1 102
+execute if score @s rng1 matches 72 run scoreboard players set @s rng1 102
 
 
 
