@@ -33,7 +33,7 @@ execute positioned -79931 38 -30 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79931 38 -30 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79931 38 -37 run playsound minecraft:entity.vindicator.ambient hostile @a[tag=azrShowDialog] -79930 38 -34 1 0.9
 execute positioned -79931 38 -30 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=20}] positioned -79931 38 -37 run playsound minecraft:entity.pillager.ambient hostile @a[tag=azrShowDialog] -79932 38 -30 1 0.8
 
-execute positioned -79931 38 -30 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79931 38 -37 run tellraw @a[tag=azrShowDialog] [{"text":"剑士 克劳德：","color":"green","bold": true},{"bold": false,"text":"\n“有和西庭原本的巡逻小队联系上吗？”","color":"white"}]
+execute positioned -79931 38 -30 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79931 38 -37 run tellraw @a[tag=azrShowDialog] [{"text":"剑士 克劳德：","color":"green","bold": true},{"bold": false,"text":"\n“有和伊安的巡逻小队联系上吗？”","color":"white"}]
 execute positioned -79931 38 -30 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=20}] positioned -79931 38 -37 run tellraw @a[tag=azrShowDialog] [{"text":"弩手 达利乌斯：","color":"green","bold": true},{"bold": false,"text":"\n“伊安队长的那只小队已经全员失联了。啊……那边的人类，前面的建筑坍塌得很严重。”","color":"white"}]
 execute positioned -79931 38 -30 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=38}] positioned -79931 38 -37 run tellraw @a[tag=azrShowDialog] [{"text":"你：","color":"aqua","bold": true},{"bold": false,"text":"\n“没事，我很强。”","color":"white"}]
 
@@ -78,22 +78,36 @@ execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79889 47 -49 run tag @n[tag=AzrielNPC_Divineforce,type=pillager,distance=0..2] add AzrielNPC_stage9_entry_conversation4
 execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79889 47 -49 as @n[tag=AzrielNPC_stage9_entry_conversation4] run effect give @s slowness 10 99 true
 execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2..4}] positioned -79889 47 -49 as @n[tag=AzrielNPC_stage9_entry_conversation4] run data modify entity @s Motion set value [-0.1,0.0,1.0]
-execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5}] at @n[tag=AzrielNPC_stage9_entry_conversation4] run playsound minecraft:entity.vindicator.ambient hostile @a[tag=azrShowDialog] -79930 38 -34 1 0.9
-execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5}] if entity @n[tag=AzrielNPC_stage9_entry_conversation4] positioned -79892 42 -50 run tellraw @a[tag=azrShowDialog] [{"text":"受伤的弩手：","color":"green","bold": true},{"bold": false,"text":"\n“小心激光！恣眼的影子来了！”","color":"white"}]
+execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5}] at @n[tag=AzrielNPC_stage9_entry_conversation4] run playsound minecraft:entity.vindicator.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5}] if entity @n[tag=AzrielNPC_stage9_entry_conversation4] run tellraw @a[tag=azrShowDialog] [{"text":"受伤的弩手：","color":"green","bold": true},{"bold": false,"text":"\n“小心激光！恣眼的影子来了！”","color":"white"}]
 execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=4}] positioned -79889 47 -46 run function skyblock:azr/assets/mobs/trap_sonic_laser
 
 execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=12}] positioned -79889 47 -46 run kill @n[tag=AzrielNPC_stage9_entry_conversation4]
   #静熄之火
-execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79891 42 -66 run function skyblock:azr/assets/mobs/sword_friendly
+execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79891.1 42 -68.3 run function skyblock:azr/assets/mobs/pillager_friendly
+execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79892.3 42 -67.6 run function skyblock:azr/assets/mobs/pillager_friendly
+execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79891.2 42 -65.9 run function skyblock:azr/assets/mobs/sword_friendly
 execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79890 42 -66 run function skyblock:azr/assets/mobs/sword_friendly
+execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79891.2 42 -65.9 run tag @n[tag=AzrielNPC_Divineforce,type=vindicator,distance=0..2] add AzrielNPC_stage9_entry_conversation5
+execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79891.2 42 -65.9 run tag @n[tag=AzrielNPC_Divineforce,type=pillager,distance=0..4] add AzrielNPC_stage9_entry_conversation6
 execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79891 42 -66 as @e[tag=AzrielNPC_Divineforce,distance=..3] at @s run rotate @s facing -79890.00 43.21 -67.52
 
 #火之坑
 execute positioned -79893 47 -53 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79893,y=47,z=-54,tag=azrPlayer,dx=5,dy=5,dz=5] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79893 47 -53 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
+execute positioned -79893 47 -53 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] at @n[tag=AzrielNPC_stage9_entry_conversation5] run playsound minecraft:entity.vindicator.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute positioned -79893 47 -53 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] if entity @n[tag=AzrielNPC_stage9_entry_conversation5] run tellraw @a[tag=azrShowDialog] [{"text":"巡逻小队队长 伊安：","color":"green","bold": true},{"bold": false,"text":"\n“还没有查清楚结界为什么会张开吗？”","color":"white"}]
+execute positioned -79893 47 -53 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=4}] positioned -79895 42 -65 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_cleric","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79893 47 -53 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=4}] positioned -79886 42 -65 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_cleric","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+execute positioned -79893 47 -53 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=9}] at @n[tag=AzrielNPC_stage9_entry_conversation6] run playsound minecraft:entity.pillager.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute positioned -79893 47 -53 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=9}] if entity @n[tag=AzrielNPC_stage9_entry_conversation6] run tellraw @a[tag=azrShowDialog] [{"text":"弩手 麦克：","color":"green","bold": true},{"bold": false,"text":"\n“队、队长，亡灵法师又来了！！”","color":"white"}]
 
 
-
+execute positioned -79893 47 -53 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=28}] positioned -79895 42 -56 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79893 47 -53 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=28}] positioned -79886 42 -56 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79893 47 -53 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=28}] positioned -79893 42 -56 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79893 47 -53 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=28}] positioned -79888 42 -56 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
 
