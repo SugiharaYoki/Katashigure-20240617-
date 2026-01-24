@@ -27,11 +27,9 @@ particle witch ~-0.6 ~ ~-0.2 0 0 0 0 1 force
 
 
 execute as @p[tag=azrPlayer,distance=..0.7,gamemode=adventure] at @s unless items entity @s armor.feet *[custom_data={iron_boots_lightstep:1b}] run summon evoker_fangs
-execute as @p[tag=azrPlayer,distance=..0.7,gamemode=adventure] at @s unless items entity @s armor.feet *[custom_data={iron_boots_lightstep:1b}] run kill @s
 execute as @p[tag=azrPlayer,distance=..0.4,gamemode=adventure] at @s run summon evoker_fangs
-execute if entity @p[tag=azrPlayer,distance=..0.4,gamemode=adventure] at @s run kill @s
 execute as @n[tag=AzrielNPC_Divineforce,distance=..0.8] at @s run summon evoker_fangs
-execute if entity @n[tag=AzrielNPC_Divineforce,distance=..0.8] at @s run kill @s
+execute if entity @n[type=evoker_fangs,distance=..0.3] at @s run kill @s
 
 
 execute if score @s rng1 matches 40.. run kill @s
