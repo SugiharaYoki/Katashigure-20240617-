@@ -4,8 +4,8 @@ particle sculk_charge_pop ~ ~0.1 ~ 0.1 0.1 0.1 0.03 3
 
 
 execute if score @s rng1 matches 2..3 run scoreboard players set @s rng1 2
-execute if score @s rng1 matches 2..3 if entity @p[tag=azrPlayer,distance=..7] run scoreboard players set @s rng1 10
-execute if score @s rng1 matches 2..3 unless entity @p[tag=azrPlayer,distance=..7] if entity @n[tag=AzrielNPC_Divineforce,distance=..7] run scoreboard players set @s rng1 50
+execute if score @s rng1 matches 2..3 if entity @n[tag=AzrielNPC_Divineforce,distance=..7] run scoreboard players set @s rng1 50
+execute if score @s rng1 matches 2..3 unless entity @n[tag=AzrielNPC_Divineforce,distance=..7] if entity @p[tag=azrPlayer,distance=..7] run scoreboard players set @s rng1 10
 execute if score @s rng1 matches 10..14 rotated as @s run rotate @s facing entity @p[tag=azrPlayer,distance=..9] eyes
 execute if score @s rng1 matches 50..54 rotated as @s run rotate @s facing entity @p[tag=AzrielNPC_Divineforce,distance=..9] eyes
 
