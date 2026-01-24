@@ -493,6 +493,7 @@ setblock -79914 41 -80 minecraft:potted_poppy
 
 #静熄之火
 fill -79892 45 -68 -79889 42 -68 minecraft:purple_stained_glass
+fill -79890 42 -53 -79891 44 -53 minecraft:purple_stained_glass
 setblock -79883 50 -66 soul_fire
 setblock -79883 50 -64 soul_fire
 setblock -79883 50 -62 soul_fire
