@@ -9,10 +9,10 @@ execute if score @s[scores={AzrielMobLevel=3..}] rng1 matches 2 store result sco
 execute if score @s[scores={AzrielMobLevel=4..}] rng1 matches 2 store result score @s rng2 run random value 20..35
 execute if score @s[scores={AzrielMobLevel=5..}] rng1 matches 2 store result score @s rng2 run random value 25..40
 
-execute if score @s[scores={AzrielMobLevel=5..}] rng1 matches 3 run scoreboard players operation @s rng1 += @s rng2
+execute if score @s[scores={AzrielMobLevel=1..}] rng1 matches 3 run scoreboard players operation @s rng1 += @s rng2
 
 execute if score @s rng1 matches 48..49 run scoreboard players set @s rng1 48
-execute if score @s rng1 matches 48..49 if entity @a[tag=azrPlayer,distance=..5] run scoreboard players set @s rng1 50
+execute if score @s rng1 matches 48..49 if entity @a[tag=azrPlayer,distance=..5.5] run scoreboard players set @s rng1 50
 
 execute if score @s rng1 matches 2..12 positioned ^ ^1.2 ^ rotated 000 ~ run particle dripping_obsidian_tear ^ ^ ^1 0 0 0 0 1 force
 execute if score @s rng1 matches 2..12 positioned ^ ^1.2 ^ rotated 030 ~ run particle dripping_obsidian_tear ^ ^ ^1 0 0 0 0 1 force

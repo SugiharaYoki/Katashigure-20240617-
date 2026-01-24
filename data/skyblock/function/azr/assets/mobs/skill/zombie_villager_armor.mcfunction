@@ -6,7 +6,7 @@ execute if score @s[scores={AzrielMobLevel=3..}] rng1 matches 2 store result sco
 execute if score @s[scores={AzrielMobLevel=4..}] rng1 matches 2 store result score @s rng2 run random value 10..35
 execute if score @s[scores={AzrielMobLevel=5..}] rng1 matches 2 store result score @s rng2 run random value 15..40
 
-execute if score @s[scores={AzrielMobLevel=5..}] rng1 matches 3 run scoreboard players operation @s rng1 += @s rng2
+execute if score @s[scores={AzrielMobLevel=1..}] rng1 matches 3 run scoreboard players operation @s rng1 += @s rng2
 
 execute if score @s rng1 matches 50 run playsound minecraft:entity.evoker.cast_spell hostile @a ~ ~ ~ 1 1.3
 execute if score @s rng1 matches 50 run particle minecraft:flame ~ ~0.3 ~ 0.2 0 0.2 0 20
