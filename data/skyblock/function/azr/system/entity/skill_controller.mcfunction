@@ -11,6 +11,7 @@ execute if entity @s[tag=AzrielMob_floating_fire] run function skyblock:azr/asse
 execute if entity @s[tag=AzrielMob_undead_shadow] run function skyblock:azr/assets/mobs/skill/undead_shadow
 execute if entity @s[tag=AzrielMob_nightblind] run function skyblock:azr/assets/mobs/skill/nightblind
 execute if entity @s[tag=AzrielMob_undead_baby] run function skyblock:azr/assets/mobs/skill/undead_baby
+execute if entity @s[tag=AzrielMob_sonic_eye] run function skyblock:azr/assets/mobs/skill/sonic_eye
 
 execute if entity @s[tag=AzrielMob_trap_spike_display] run function skyblock:azr/assets/mobs/skill/trap_spike
 
