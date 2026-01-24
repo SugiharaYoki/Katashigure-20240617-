@@ -18,8 +18,8 @@ execute if entity @s[tag=AzrielMob_sonic_eye_reveal] run particle sculk_charge_p
 execute if entity @s[tag=AzrielMob_sonic_eye_reveal] run particle soul_fire_flame ~ ~0.4 ~ 0.45 0.45 0.45 0.00 2
 execute if entity @s[tag=AzrielMob_sonic_eye_reveal] at @s run tp @n[tag=AzrielMob_sonic_eye_item_display] ~ ~ ~
 
-execute if entity @s[tag=AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer,distance=..7] store result score @s rng2 run random value 1..60
-execute if entity @s[tag=AzrielMob_sonic_eye_reveal] if entity @n[tag=AzrielNPC_Divineforce,distance=..6] store result score @s rng2 run random value 1..60
+execute if entity @s[tag=AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer,distance=..7] unless entity @n[tag=AzrielMob_trap_sonic_laser,distance=..2.3] store result score @s rng2 run random value 1..20
+execute if entity @s[tag=AzrielMob_sonic_eye_reveal] if entity @n[tag=AzrielNPC_Divineforce,distance=..6] unless entity @n[tag=AzrielMob_trap_sonic_laser,distance=..2.3] store result score @s rng2 run random value 1..20
 execute if entity @s[tag=AzrielMob_sonic_eye_reveal] if score @s rng2 matches 1 rotated as @s rotated ~ 0 positioned ^2 ^ ^ run function skyblock:azr/assets/mobs/trap_sonic_laser
 execute if entity @s[tag=AzrielMob_sonic_eye_reveal] if score @s rng2 matches 2 rotated as @s rotated ~ 0 positioned ^1.7 ^0.5 ^ run function skyblock:azr/assets/mobs/trap_sonic_laser
 execute if entity @s[tag=AzrielMob_sonic_eye_reveal] if score @s rng2 matches 3 rotated as @s rotated ~ 0 positioned ^1.7 ^-0.5 ^ run function skyblock:azr/assets/mobs/trap_sonic_laser
