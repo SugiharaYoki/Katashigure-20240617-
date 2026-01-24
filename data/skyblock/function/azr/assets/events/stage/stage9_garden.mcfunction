@@ -56,6 +56,7 @@ execute positioned -79931 38 -30 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79931 38 -30 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1001}] if entity @n[tag=AzrielNPC_stage9_entry_conversation2] positioned -79931 38 -37 run playsound minecraft:entity.pillager.ambient hostile @a[tag=azrShowDialog] -79932 38 -30 1 0.8
 execute positioned -79931 38 -30 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1001}] if entity @n[tag=AzrielNPC_stage9_entry_conversation2] positioned -79931 38 -37 run tellraw @a[tag=azrShowDialog] [{"text":"弩手 达利乌斯：","color":"green","bold": true},{"bold": false,"text":"\n“喂，打我们干什么？！我们是友军！！”","color":"white"}]
 
+
 execute positioned -79931 0 -37 as @e[distance=0..500,tag=AzrielMob] at @s unless entity @s[type=!pillager,type=!vindicator] run function skyblock:azr/assets/events/stage/stage9_divineforce
 
 
