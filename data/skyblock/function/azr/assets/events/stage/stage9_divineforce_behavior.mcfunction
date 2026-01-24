@@ -12,7 +12,6 @@ execute as @s[tag=AzrielNPC_Divineforce,tag=AzrielNPC_Divineforce_Processed] at 
 execute as @s[tag=AzrielNPC_Divineforce,tag=AzrielNPC_Divineforce_Processed,tag=AzrielMob] at @s run tag @s remove AzrielMob
 
 execute if entity @s[tag=!AzrielNPC_Divineforce_hasattacktarget] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] store result score @s rng9 run random value 1..20
-
 execute if entity @s[tag=!AzrielNPC_Divineforce_hasattacktarget,scores={rng9=1},tag=AzrielMob_sword] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run tellraw @a[tag=azrShowDialog] [{"text":"剑士：","color":"green","bold": true},{"bold": false,"text":"\n“我来帮你一把！”","color":"white"}]
 execute if entity @s[tag=!AzrielNPC_Divineforce_hasattacktarget,scores={rng9=2},tag=AzrielMob_sword] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run tellraw @a[tag=azrShowDialog] [{"text":"剑士：","color":"green","bold": true},{"bold": false,"text":"\n“敌人交给我。”","color":"white"}]
 execute if entity @s[tag=!AzrielNPC_Divineforce_hasattacktarget,scores={rng9=3},tag=AzrielMob_sword] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run tellraw @a[tag=azrShowDialog] [{"text":"剑士：","color":"green","bold": true},{"bold": false,"text":"\n“我来帮忙，爱理莎女士。”","color":"white"}]
