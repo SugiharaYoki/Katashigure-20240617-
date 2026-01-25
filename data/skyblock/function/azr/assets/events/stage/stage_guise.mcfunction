@@ -14,10 +14,10 @@ execute if score stage_bonus_thread AzrTimerStack matches 2 positioned -79917 24
 execute if score stage_bonus_thread AzrTimerStack matches 22 positioned -79910 24 -6 run function skyblock:azr/assets/mobs/undead
 execute if score stage_bonus_thread AzrTimerStack matches 42 positioned -79917 24 -11 run function skyblock:azr/assets/mobs/undead
 execute if score stage_bonus_thread AzrTimerStack matches 62 positioned -79910 24 -6 run function skyblock:azr/assets/mobs/undead
-execute if score stage_bonus_thread AzrTimerStack matches 65 positioned -79917 24 -11 run function skyblock:azr/assets/mobs/undead_baby
-execute if score stage_bonus_thread AzrTimerStack matches 65 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:undead_baby}
+execute if score stage_bonus_thread AzrTimerStack matches 65 positioned -79917 24 -11 run function skyblock:azr/assets/mobs/shield_heavy
+execute if score stage_bonus_thread AzrTimerStack matches 65 positioned -79910 24 -6 run function skyblock:azr/assets/mobs/shield_heavy
 
-execute if score stage_bonus_thread AzrTimerStack matches 66..67 positioned -79913 22 -9 if entity @n[distance=..10,tag=AzrielMob_undead_baby] run scoreboard players set stage_bonus_thread AzrTimerStack 66
+execute if score stage_bonus_thread AzrTimerStack matches 66..67 positioned -79913 22 -9 if entity @n[distance=..10,tag=AzrielMob_shield_heavy] run scoreboard players set stage_bonus_thread AzrTimerStack 66
 
 execute if score stage_bonus_thread AzrTimerStack matches 69 positioned -79917 24 -11 run function skyblock:azr/assets/mobs/skeleton_melee
 execute if score stage_bonus_thread AzrTimerStack matches 71 positioned -79917 24 -11 run function skyblock:azr/assets/mobs/skeleton_melee
