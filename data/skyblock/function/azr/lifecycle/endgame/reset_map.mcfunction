@@ -151,6 +151,14 @@ setblock -79889 29 8 chest[facing=south]
 item replace block -79889 29 8 container.12 with minecraft:emerald 3
 item replace block -79889 29 8 container.14 with minecraft:emerald 3
 
+  #跳跳乐下方 下砸小房间
+setblock -79902 29 3 minecraft:honey_block
+setblock -79886 23 12 air
+setblock -79886 23 12 lever[facing=west]
+setblock -79891 21 9 chest[facing=east]
+item replace block -79891 21 9 container.12 with minecraft:beef 1
+item replace block -79891 21 9 container.14 with minecraft:beef 1
+
 #Stage4 alpha
 setblock -79932 39 42 birch_button[face=wall,facing=east]
 setblock -79931 43 42 barrier
