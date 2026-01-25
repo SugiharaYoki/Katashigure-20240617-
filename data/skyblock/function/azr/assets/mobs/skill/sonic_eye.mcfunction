@@ -2,9 +2,10 @@ scoreboard players add @s rng1 1
 execute if score @s rng1 matches 5 run effect give @s invisibility infinite 0 true
 execute if score @s rng1 matches 5.. run scoreboard players set @s rng1 0
 
-execute if entity @a[tag=azrPlayer,distance=12..32] facing entity @p[tag=azrPlayer,distance=2..] eyes run tp ^ ^ ^0.2
-execute if entity @a[tag=azrPlayer,distance=8..32] facing entity @p[tag=azrPlayer,distance=2..] eyes run tp ^ ^ ^0.15
-execute if entity @a[tag=azrPlayer,distance=6..32] facing entity @p[tag=azrPlayer,distance=2..] eyes run tp ^ ^ ^0.12
+execute if entity @a[tag=!AzrielMob_sonic_eye_reveal,tag=azrPlayer,distance=12..32] facing entity @p[tag=azrPlayer,distance=2..] eyes run tp ^ ^ ^0.2
+execute if entity @a[tag=!AzrielMob_sonic_eye_reveal,tag=azrPlayer,distance=8..32] facing entity @p[tag=azrPlayer,distance=2..] eyes run tp ^ ^ ^0.15
+execute if entity @a[tag=!AzrielMob_sonic_eye_reveal,tag=azrPlayer,distance=6..32] facing entity @p[tag=azrPlayer,distance=2..] eyes run tp ^ ^ ^0.12
+execute if entity @a[tag=AzrielMob_sonic_eye_reveal,tag=azrPlayer,distance=6..16] facing entity @p[tag=azrPlayer,distance=2..] eyes run tp ^ ^ ^0.12
 
 execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer,distance=..6] run summon minecraft:item_display ~ ~0.2 ~ {item:{id:"ender_pearl"},billboard:center,transformation:{scale:[1.2f,1.2f,1.2f]},brightness:{sky:15,block:15},Tags:["AzrielMob_sonic_eye_item_display","AzrielMob_mob_marker"]}
 execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer,distance=..6] run particle sculk_charge_pop ~ ~0.5 ~ 4 0.2 4 0.02 30
