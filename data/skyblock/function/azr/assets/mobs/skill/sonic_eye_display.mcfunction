@@ -6,6 +6,7 @@ execute if score @s rng1 matches 2 run particle sculk_charge_pop ~ ~0.2 ~ 4 0.2 
 execute if score @s rng1 matches 2.. run particle sculk_charge_pop ~ ~0.2 ~ 5 5 5 0.02 20
 execute if score @s rng1 matches 2.. run particle soul_fire_flame ~ ~0.2 ~ 0.2 0.2 0.2 0.08 5
 execute if score @s rng1 matches 29 run particle explosion ~ ~0.2 ~ 0 0 0 0.00 1
+execute if score @s rng1 matches 29 run particle explosion ~ ~0.2 ~ 0.3 0.3 0.3 0.00 2
 execute if score @s rng1 matches 30.. run kill @s
 
 
