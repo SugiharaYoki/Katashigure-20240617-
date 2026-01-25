@@ -233,7 +233,9 @@ attribute @s sweeping_damage_ratio modifier remove azr_amulet:axevortex_1
 attribute @s max_health modifier remove azr_amulet:moss_spore_01
 attribute @s max_health modifier remove azr_amulet:moss_spore_02
 attribute @s max_health modifier remove azr_amulet:moss_spore_03
-
+attribute @s armor modifier remove azr_amulet:moss_grow_01
+attribute @s attack_damage modifier remove azr_amulet:moss_grow_01
+attribute @s sneaking_speed modifier remove azr_amulet:moss_grow_01
 
 
 
