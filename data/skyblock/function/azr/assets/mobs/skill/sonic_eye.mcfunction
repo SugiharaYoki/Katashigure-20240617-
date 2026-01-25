@@ -16,7 +16,8 @@ execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer
 
 execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] run effect give @s resistance 2 9 true
 execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] run particle sculk_charge_pop ~ ~0.1 ~ 0 0 0 0.02 1 force
-execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] run particle soul_fire_flame ~ ~0.1 ~ 0.55 0.55 0.55 0.00 1
+execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] store result score @s rng2 run random value 1..20
+execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if score @s rng2 matches 1..2 run particle soul_fire_flame ~ ~0.1 ~ 0.55 0.55 0.55 0.00 1
 execute if entity @s[tag=AzrielMob_sonic_eye_reveal] run particle sculk_charge_pop ~ ~0.4 ~ 0.4 0.4 0.4 0.02 1
 execute if entity @s[tag=AzrielMob_sonic_eye_reveal] run particle soul_fire_flame ~ ~0.4 ~ 0.45 0.45 0.45 0.00 2
 execute if entity @s[tag=AzrielMob_sonic_eye_reveal] at @s run tp @n[tag=AzrielMob_sonic_eye_item_display] ~ ~ ~
