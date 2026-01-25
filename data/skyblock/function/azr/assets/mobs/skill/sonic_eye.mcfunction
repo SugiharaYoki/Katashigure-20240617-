@@ -12,6 +12,7 @@ execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer
 execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer,distance=..6] run playsound entity.wither.spawn hostile @a ~ ~ ~ 3 0.8
 execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer,distance=..6] run tag @s add AzrielMob_sonic_eye_reveal
 
+execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] run effect give @s resistance 2 9 true
 execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] run particle sculk_charge_pop ~ ~0.1 ~ 0 0 0 0.02 1 force
 execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] run particle soul_fire_flame ~ ~0.1 ~ 0.05 0.05 0.05 0.00 1
 execute if entity @s[tag=AzrielMob_sonic_eye_reveal] run particle sculk_charge_pop ~ ~0.4 ~ 0.4 0.4 0.4 0.02 1
