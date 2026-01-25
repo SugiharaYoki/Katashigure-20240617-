@@ -47,6 +47,7 @@ execute if items entity @s hotbar.* *[custom_data~{azr_amulet_axe_vortex:1b}] ru
 execute if items entity @s container.* *[custom_data~{azr_amulet_jump_boost:1b}] run function skyblock:azr/system/player/skills/amulet/jump_boost_core
 execute if entity @s[tag=AzrSariel_Amulet_AxeVortex_SweepRatio] if entity @s[predicate=!skyblock:left,predicate=!skyblock:right] run function skyblock:azr/system/player/skills/amulet/axe_vortex_unload
 execute if entity @s[tag=AzrSariel_Amulet_AxeVortex_SweepRatio] unless items entity @s hotbar.* *[custom_data~{azr_amulet_axe_vortex:1b}] run function skyblock:azr/system/player/skills/amulet/axe_vortex_unload
+execute if items entity @s container.* *[custom_data~{azr_amulet_moss_grow:1b}] run function skyblock:azr/system/player/skills/amulet/moss_grow_core
 
 execute if items entity @s container.* *[custom_data~{azr_amulet_sprint_double:1b}] run tag @s add sprint_double_pass
 execute if items entity @s container.* *[custom_data~{azr_amulet_back_dodge:1b}] run tag @s add back_dodge_pass
