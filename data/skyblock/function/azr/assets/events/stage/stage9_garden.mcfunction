@@ -64,7 +64,7 @@ execute positioned -79920 38 -48 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79920 38 -48 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79917 40 -43 run function skyblock:azr/assets/mobs/smoke
 execute positioned -79920 38 -48 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79917 40 -43 run function skyblock:azr/assets/mobs/smoke
 execute positioned -79920 38 -48 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79917 40 -43 run function skyblock:azr/assets/mobs/smoke
-execute positioned -79920 38 -48 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=13}] positioned -79912 40 -51 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_shadow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79920 38 -48 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=13}] positioned -79913 38 -52 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_shadow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute positioned -79920 38 -48 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=13}] positioned -79903 40 -48 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_shadow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute positioned -79920 38 -48 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=13}] positioned -79905 41 -63 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_shadow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
@@ -81,7 +81,8 @@ execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5}] at @n[tag=AzrielNPC_stage9_entry_conversation4] run playsound minecraft:entity.vindicator.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5}] if entity @n[tag=AzrielNPC_stage9_entry_conversation4] run tellraw @a[tag=azrShowDialog] [{"text":"受伤的弩手：","color":"green","bold": true},{"bold": false,"text":"\n“小心激光！恣眼的影子来了！”","color":"white"}]
 execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=4}] positioned -79889 47 -46 run function skyblock:azr/assets/mobs/trap_sonic_laser
-
+execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=12}] positioned -79889 47 -46 run setblock -79886 43 -36 air destroy
+execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=12}] positioned -79889 47 -46 run setblock -79893 42 -33 air destroy
 execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=12}] positioned -79889 47 -46 run kill @n[tag=AzrielNPC_stage9_entry_conversation4]
   #静熄之火
 execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79891.1 42 -64.3 run function skyblock:azr/assets/mobs/pillager_friendly

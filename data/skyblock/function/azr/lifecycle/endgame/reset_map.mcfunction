@@ -475,6 +475,9 @@ setblock -79900 41 -62 minecraft:sea_lantern
 setblock -79898 42 -49 gravel
 setblock -79898 42 -50 gravel
 setblock -79898 41 -50 gravel
+  #洞穴通道
+setblock -79886 43 -36 gravel
+setblock -79893 42 -33 minecraft:gravel
 
 #stage9后面的神庭区域房间
 setblock -79917 40 -62 air
