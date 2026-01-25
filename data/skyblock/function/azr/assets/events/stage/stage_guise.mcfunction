@@ -41,8 +41,8 @@ execute if score stage_bonus_thread AzrTimerStack matches 203 as @a[tag=azrPlaye
 execute if score stage_bonus_thread AzrTimerStack matches 203 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/moss_grow
 
 
-execute if score stage_bonus_thread AzrTimerStack matches 203..204 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_bonus_thread AzrTimerStack matches 203..204 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_bonus_thread AzrTimerStack matches 204 run scoreboard players set stage_bonus Azr_system 0
-execute if score stage_bonus_thread AzrTimerStack matches 204 run scoreboard players set stage_bonus_thread AzrTimerStack 0
+execute if score stage_bonus_thread AzrTimerStack matches 202..203 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_bonus_thread AzrTimerStack matches 202..203 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_bonus_thread AzrTimerStack matches 203 run scoreboard players set stage_bonus Azr_system 0
+execute if score stage_bonus_thread AzrTimerStack matches 203 run scoreboard players set stage_bonus_thread AzrTimerStack 0
 
