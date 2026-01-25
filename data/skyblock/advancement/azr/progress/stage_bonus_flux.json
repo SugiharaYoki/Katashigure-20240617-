@@ -7,8 +7,8 @@
             "italic": false
         },
         "description": {
-            "text": "STAGE FLUX",
-            "color": "light_purple"
+            "text": "神庭的天使会在传热根系区域将火把花的魔力提取出来，并转换为热能。\n这些热能会被输送到神庭的各个角落，用于维持着这里的基建设施。",
+            "color": "white"
         },
         "icon": {
             "id": "minecraft:black_glazed_terracotta"

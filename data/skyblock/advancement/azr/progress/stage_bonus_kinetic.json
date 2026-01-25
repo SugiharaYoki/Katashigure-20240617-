@@ -7,8 +7,8 @@
             "italic": false
         },
         "description": {
-            "text": "STAGE KINETIC",
-            "color": "light_purple"
+            "text": "为什么他们会将点火装置这么重要的设施，放在试炼者能够摸得到的地方？\n难不成，他们是想借试炼者的力量，去给点火装置附近游荡的怪物给清除掉吗？\n那他们得偿所愿了。",
+            "color": "white"
         },
         "icon": {
             "id": "minecraft:orange_glazed_terracotta"

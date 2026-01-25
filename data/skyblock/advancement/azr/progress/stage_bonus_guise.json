@@ -1,17 +1,17 @@
 {
     "display": {
         "title": {
-            "text": "招待厅区域 - 外围核融合炉·西南",
+            "text": "逾怜藓路 - 苔生岩洞",
             "color": "green",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "STAGE SUSPENSION",
-            "color": "light_purple"
+            "text": "逾怜藓路区域的下方连接着错综复杂的岩洞通道。\n这些裂隙显然并非来源于最近的坍塌。\n神庭的正下方恐怕被隐藏了什么事物。",
+            "color": "white"
         },
         "icon": {
-            "id": "minecraft:red_glazed_terracotta"
+            "id": "minecraft:green_glazed_terracotta"
         },
         "frame": "task",
         "show_toast": false,
@@ -23,5 +23,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:azr/progress/stage5"
+    "parent": "skyblock:azr/progress/stage6"
 }

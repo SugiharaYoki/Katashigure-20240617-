@@ -1,14 +1,14 @@
 {
     "display": {
         "title": {
-            "text": "西庭外围 - 地下层苔藓培育室",
+            "text": "逾怜藓路 - 苔藓培育室",
             "color": "green",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "STAGE DIFFIDENT",
-            "color": "light_purple"
+            "text": "天使们还挺有情调。\n虽然生命树的附近会自然生长许多植物，但他们显然也有自己的偏好。\n在这里种植苔藓是因为它们作为绿化装饰比较好看，还是说苔藓有我想不到的作用？\n至少就我看来，虫子们好像比那些天使要更加喜爱过度生长的苔藓。",
+            "color": "white"
         },
         "icon": {
             "id": "minecraft:lime_glazed_terracotta"

@@ -1,14 +1,14 @@
 {
     "display": {
         "title": {
-            "text": "智述禁馆 - 侧翼读书室",
+            "text": "智述文馆 - 侧翼读书室",
             "color": "green",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "STAGE VESTIGE",
-            "color": "light_purple"
+            "text": "智述文馆区域分为普通区与禁区。\n我在想，禁区是对试炼者而言的，还是对所有人而言的？\n有什么好藏的？我向来就不太喜欢读书，所有事情我都习惯直来直往地解决。",
+            "color": "white"
         },
         "icon": {
             "id": "minecraft:light_gray_glazed_terracotta"

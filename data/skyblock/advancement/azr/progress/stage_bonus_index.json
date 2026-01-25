@@ -1,14 +1,14 @@
 {
     "display": {
         "title": {
-            "text": "智述禁馆 - 立体图书室",
+            "text": "智述文馆 - 立体图书室",
             "color": "green",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "STAGE INDEX",
-            "color": "light_purple"
+            "text": "神庭的新兵会被要求通读有关生命树花园的历史，以及一系列须知事项。\n事实上，吸收新知识是他们仅剩的消遣方式之一。\n只需要看看这片图书馆的占地面积，就会知道天使们真的很喜欢阅读书籍。",
+            "color": "white"
         },
         "icon": {
             "id": "minecraft:cyan_glazed_terracotta"

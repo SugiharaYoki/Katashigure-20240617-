@@ -5,7 +5,7 @@
 
 #采光礼堂
 #传热根系
-#智述禁馆
+#智述文馆
 
 #晦怨囚牢
 #蚀岩径
@@ -46,11 +46,11 @@ execute unless score @s AzrPlayer_CurrentArea matches 3 if entity @s[x=-79917,y=
                                                 {area_id:3,title:"传 热 根 系",color_code:"#5e4e80"}
 
 execute unless score @s AzrPlayer_CurrentArea matches 4 if entity @s[x=-79890,y=42,z=161,dx=7,dy=7,dz=7] run function skyblock:azr/assets/events/stage/area_title_show \
-                                                {area_id:4,title:"智 述 禁 馆",color_code:"#e2824e"}
+                                                {area_id:4,title:"智 述 文 馆",color_code:"#e2824e"}
 execute unless score @s AzrPlayer_CurrentArea matches 4 if entity @s[x=-79877,y=37,z=75,dx=3,dy=4,dz=8] run function skyblock:azr/assets/events/stage/area_title_show \
-                                                {area_id:4,title:"智 述 禁 馆",color_code:"#e2824e"}
+                                                {area_id:4,title:"智 述 文 馆",color_code:"#e2824e"}
 execute unless score @s AzrPlayer_CurrentArea matches 4 if entity @s[x=-79894,y=37,z=91,dx=5,dy=5,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
-                                                {area_id:4,title:"智 述 禁 馆",color_code:"#e2824e"}
+                                                {area_id:4,title:"智 述 文 馆",color_code:"#e2824e"}
 #
 
 #复活点
@@ -69,7 +69,7 @@ execute unless score @s AzrPlayer_CurrentArea matches 2 positioned -79903 38 10 
 execute unless score @s AzrPlayer_CurrentArea matches 3 positioned -79915 42 157 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:3,title:"重生锚点：传热根系",color_code:"#5e4e80"}
 execute unless score @s AzrPlayer_CurrentArea matches 4 positioned -79848 43 124 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
-                                                {area_id:4,title:"重生锚点：智述禁馆",color_code:"#e2824e"}
+                                                {area_id:4,title:"重生锚点：智述文馆",color_code:"#e2824e"}
 
 
 
