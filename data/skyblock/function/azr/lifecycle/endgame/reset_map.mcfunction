@@ -158,6 +158,10 @@ setblock -79886 23 12 lever[facing=west]
 setblock -79891 21 9 chest[facing=east]
 item replace block -79891 21 9 container.12 with minecraft:beef 1
 item replace block -79891 21 9 container.14 with minecraft:beef 1
+  #通往苔藓母猪
+setblock -79927 26 8 air
+setblock -79927 26 8 lever[facing=east]
+  
 
 #Stage4 alpha
 setblock -79932 39 42 birch_button[face=wall,facing=east]
