@@ -43,29 +43,34 @@ execute if block -79943 39 135 minecraft:birch_button[powered=true] run setblock
 #供能区域
 execute if block -79917 38 191 minecraft:birch_button[powered=true] run fill -79916 39 193 -79916 37 193 minecraft:air destroy
 execute if block -79917 38 191 minecraft:birch_button[powered=true] run setblock -79917 38 191 air
+#Stage Entertain
+execute if block -79887 44 164 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/stage_entertain_prep
+#Stage Vestige
+execute if block -79873 39 92 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/stage_vestige_prep
 #stage flux
 execute if block -79960 39 193 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/stage_flux_prep
 #stage kinetic
 execute if block -79965 31 167 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/stage_kinetic_prep
 #stage index
 execute if block -79832 35 88 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/stage_index_prep
-
-
-
-#stage7 uncommited
+#stage guise
+execute if block -79907 21 -14 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/stage_guise_prep
+#stage7
 execute if block -79892 39 119 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 17
 execute if block -79892 39 119 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79892 39 119 minecraft:birch_button[powered=true] run setblock -79892 39 119 air
-#stage8 uncommited
+#stage8
 execute if block -79888 39 67 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 20
 execute if block -79888 39 67 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79888 39 67 minecraft:birch_button[powered=true] run setblock -79888 39 67 air
-#boss2 uncommited
-#stage9 uncommited
+#stage9
 execute if block -79900 41 -60 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 26
 execute if block -79900 41 -60 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79900 41 -60 minecraft:birch_button[powered=true] run setblock -79900 41 -60 air
-#stage10 uncommited
+
+
+
+#stage10
 execute if block -79886 41 -114 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79885.5,y=41.00,z=-113.5,distance=..1] run scoreboard players set stage Azr_system 35
 execute if block -79886 41 -114 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79885.5,y=41.00,z=-113.5,distance=..1] run summon minecraft:interaction -79885.5 41.00 -113.5 {Tags:["temp"]}
 #stage14
@@ -82,12 +87,6 @@ execute if block -79540 25 -406 minecraft:birch_button[powered=true] run scorebo
 execute if block -79946 39 50 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/stage_cerement_prep
 #Stage Diffident
 #遭遇事件
-#Stage Suspension
-execute if block -79947 33 140 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/stage_suspension_prep
-#Stage Entertain uncommited
-execute if block -79887 44 164 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/stage_entertain_prep
-#Stage Vestige uncommited
-execute if block -79873 39 92 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/stage_vestige_prep
 #Stage Appetence uncommited
 execute if block -79912 55 -101 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/stage_appetence_prep
 #Stage Breakout uncommited

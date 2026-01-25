@@ -161,6 +161,9 @@ item replace block -79891 21 9 container.14 with minecraft:beef 1
   #通往苔藓母猪
 setblock -79927 26 8 air
 setblock -79927 26 8 lever[facing=east]
+
+#Stage Guise
+setblock -79907 21 -14 birch_button[facing=west,face=floor]
   
 
 #Stage4 alpha
