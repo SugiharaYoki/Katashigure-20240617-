@@ -18,8 +18,8 @@ execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] run effect give @s resista
 execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] run particle sculk_charge_pop ~ ~0.1 ~ 0 0 0 0.02 1 force
 execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] store result score @s rng2 run random value 1..20
 execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if entity @a[tag=azrPlayer,distance=..16] if score @s rng2 matches 1..2 run particle soul_fire_flame ~ ~0.1 ~ 0.55 0.55 0.55 0.00 1
-execute if entity @s[tag=AzrielMob_sonic_eye_reveal] run particle sculk_charge_pop ~ ~0.4 ~ 0.4 0.4 0.4 0.02 1
-execute if entity @s[tag=AzrielMob_sonic_eye_reveal] run particle soul_fire_flame ~ ~0.4 ~ 0.45 0.45 0.45 0.00 2
+execute if entity @s[tag=AzrielMob_sonic_eye_reveal] run particle sculk_charge_pop ~ ~0 ~ 0.4 0.4 0.4 0.02 1
+execute if entity @s[tag=AzrielMob_sonic_eye_reveal] run particle soul_fire_flame ~ ~0 ~ 0.45 0.45 0.45 0.00 2
 execute if entity @s[tag=AzrielMob_sonic_eye_reveal] at @s run tp @n[tag=AzrielMob_sonic_eye_item_display] ~ ~ ~
 
 execute if entity @s[tag=AzrielMob_sonic_eye_reveal] store result score @s rng4 if entity @e[tag=AzrielMob_trap_sonic_laser,distance=..4.3]
