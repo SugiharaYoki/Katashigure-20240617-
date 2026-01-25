@@ -11,16 +11,18 @@ execute as @s[tag=AzrielNPC_Divineforce,tag=AzrielNPC_Divineforce_Processed,tag=
 execute as @s[tag=AzrielNPC_Divineforce,tag=AzrielNPC_Divineforce_Processed,tag=!AzrielNPC_Divineforce_hasattacktarget] at @s run rotate @s facing entity @p[tag=azrPlayer,distance=0..3.5]
 execute as @s[tag=AzrielNPC_Divineforce,tag=AzrielNPC_Divineforce_Processed,tag=AzrielMob] at @s run tag @s remove AzrielMob
 
+execute if entity @s[tag=!AzrielNPC_Divineforce_hasattacktarget,tag=AzrielNPC_Divineforce,type=pillager] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run item replace entity @s weapon.mainhand with minecraft:crossbow
 execute if entity @s[tag=!AzrielNPC_Divineforce_hasattacktarget,tag=AzrielNPC_Divineforce] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run attribute @s follow_range base set 9
 execute if entity @s[tag=!AzrielNPC_Divineforce_hasattacktarget,tag=AzrielNPC_Divineforce] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run data modify entity @s Silent set value 1b
 execute if entity @s[tag=!AzrielNPC_Divineforce_hasattacktarget,tag=AzrielNPC_Divineforce] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run damage @s 0 arrow by @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7]
 execute if entity @s[tag=!AzrielNPC_Divineforce_hasattacktarget,tag=AzrielNPC_Divineforce] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run data modify entity @s Silent set value 0b
 execute if entity @s[tag=!AzrielNPC_Divineforce_hasattacktarget,tag=AzrielNPC_Divineforce] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run tag @s add AzrielNPC_Divineforce_hasattacktarget
-execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] unless entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run attribute @s follow_range base set 0
-execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] unless entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run tag @s remove AzrielNPC_Divineforce_hasattacktarget_notify
-execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] unless entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run tag @s remove AzrielNPC_Divineforce_hasattacktarget
-execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] if entity @a[tag=azrPlayer,distance=0..2.3] run attribute @s follow_range base set 0
-execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] if entity @a[tag=azrPlayer,distance=0..2.3] run damage @s 0 arrow by @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7]
+execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] on target if entity @s[type=player] run attribute @n[tag=AzrielNPC_Divineforce_hasattacktarget] follow_range base set 0
+execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] on target if entity @s[type=player] run tag @n[tag=AzrielNPC_Divineforce_hasattacktarget] remove AzrielNPC_Divineforce_hasattacktarget_notify
+execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget,type=pillager] on target if entity @s[type=player] run item replace entity @n[tag=AzrielNPC_Divineforce_hasattacktarget,type=pillager] weapon.mainhand with minecraft:air
+execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] on target if entity @s[type=player] run tag @n[tag=AzrielNPC_Divineforce_hasattacktarget] remove AzrielNPC_Divineforce_hasattacktarget
+#execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] if entity @a[tag=azrPlayer,distance=0..2.3] run attribute @s follow_range base set 0
+#execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] if entity @a[tag=azrPlayer,distance=0..2.3] run damage @s 0 arrow by @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7]
 
 
 
