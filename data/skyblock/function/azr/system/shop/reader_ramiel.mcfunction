@@ -144,7 +144,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_greed_board:1b}
 execute if items entity @s container.* *[custom_data~{azr_amulet_flower_wall:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerd] CustomName set value '" √ "'
 execute if items entity @s container.* *[custom_data~{azr_amulet_sprint_double:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkere] CustomName set value '" √ "'
 execute if items entity @s container.* *[custom_data~{azr_amulet_fire_lit:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerf] CustomName set value '" √ "'
-execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerg] CustomName set value '" √ "'
+execute if items entity @s container.* *[custom_data~{azr_amulet_moss_grow:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerg] CustomName set value '" √ "'
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerh] CustomName set value '" √ "'
 execute if items entity @s container.* *[custom_data~{azr_amulet_jump_boost:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkeri] CustomName set value '" √ "'
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerj] CustomName set value '" √ "'
@@ -179,7 +179,7 @@ tellraw @s [{"text":"\n "},{"text":"假定回溯  \n","color":"#308aff","bold": 
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerd]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432304"},"hoverEvent":{"action":"show_text","contents":{"text":"Diffident - 花墙石板\n按前进键增加攻防","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkere]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432305"},"hoverEvent":{"action":"show_text","contents":{"text":"Entertain - 冲刺石板\n按两下跑步进行冲刺","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerf]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432306"},"hoverEvent":{"action":"show_text","contents":{"text":"Flux - 燃点卷宗\n剑攻击点燃、加强节制天平扇形火","color":"white"}}},\
-{"selector":"@n[tag=AzrRamielExStage_displaymarkerg]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432307"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}},\
+{"selector":"@n[tag=AzrRamielExStage_displaymarkerg]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432307"},"hoverEvent":{"action":"show_text","contents":{"text":"Guise - 滋育石板\n蹲下时移动速度减少、攻击力减少、防御力增加、缓慢恢复生命","color":"white"}}},\
 {"text":"\n "},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkerh]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432308"},"hoverEvent":{"action":"show_text","contents":{"text":"???","color":"white"}}},\
 {"selector":"@n[tag=AzrRamielExStage_displaymarkeri]","color":"#70a0df","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 8432309"},"hoverEvent":{"action":"show_text","contents":{"text":"Index - 斥跃石板\n蹲下跳得更高、史莱姆块助跳","color":"white"}}},\
