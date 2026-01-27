@@ -13,3 +13,5 @@ execute if score random_enemy_type AzrTimerStack matches 7 run summon marker ~ ~
 execute if score random_enemy_type AzrTimerStack matches 8 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_spider_mini","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
+execute store result score random_enemy_type AzrTimerStack run random value 1..2000
+execute if score random_enemy_type AzrTimerStack matches 1 if entity @n[tag=AzrielNPC_Divineforce,distance=..200] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_treasure_rabbit","AzrielMob_summon_delay","AzrielMob_level_1"]}
