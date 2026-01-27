@@ -110,11 +110,11 @@ execute if score stage Azr_system matches 8..43 if score playerCount Azr_system 
     execute if score tick_main_thread AzrTimerStack matches -2147483648..2147483647 run scoreboard players add tick_main_thread AzrTimerStack 1
     
     # stage1 event code:2
-    execute if score stage Azr_system matches 2 run function skyblock:azr/assets/events/stage/stage1_event
+    execute if score stage Azr_system matches 2 run function skyblock:azr/assets/events/stage/chapter_1/stage1_event
     # BOSS1 code:10
-    execute if score stage Azr_system matches 10 as @n[tag=AzrielBossA] at @s if score stage_main_thread AzrTimerStack matches ..1002 run function skyblock:azr/assets/events/stage/stage_boss1
+    execute if score stage Azr_system matches 10 as @n[tag=AzrielBossA] at @s if score stage_main_thread AzrTimerStack matches ..1002 run function skyblock:azr/assets/events/stage/chapter_1/stage_boss1
     # BOSS2 code:[23,24]
-    execute if score stage Azr_system matches 23..24 as @n[tag=AzrielBossA] at @s run function skyblock:azr/assets/events/stage/stage_boss2
+    execute if score stage Azr_system matches 23..24 as @n[tag=AzrielBossA] at @s run function skyblock:azr/assets/events/stage/chapter_2/stage_boss2
     # BOSS4 Code:62
     execute if score stage Azr_system matches 62 run function skyblock:azr/assets/events/stage/stage_boss4
 

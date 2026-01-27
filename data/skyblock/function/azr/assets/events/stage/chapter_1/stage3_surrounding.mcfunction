@@ -53,7 +53,7 @@ execute positioned -79920 30 3 as @n[tag=AzrielMarker_encounter,distance=0..0.5,
 execute positioned -79920 30 3 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79914 30 4 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:smoke_mother}
 
 #stage diffident触发
-execute positioned -79921 32 -6 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79921,y=32,z=-6,dx=8,dy=3,dz=4,tag=azrPlayer] run function skyblock:azr/assets/events/stage/stage_diffident_prep
+execute positioned -79921 32 -6 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79921,y=32,z=-6,dx=8,dy=3,dz=4,tag=azrPlayer] run function skyblock:azr/assets/events/stage/bonus_stage/stage_diffident_prep
 
 
 #第一关口上方露天花圃

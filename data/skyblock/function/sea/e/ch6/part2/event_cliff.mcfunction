@@ -299,7 +299,7 @@ execute if score SEA_ch6_event rng5 matches 20060 positioned 90064 22 -1815 run 
 execute if score SEA_ch6_event rng5 matches 20058 as @n[tag=SEAboss6] at @s if block ~ ~-0.4 ~ tuff_bricks run particle gust_emitter_small ~ ~-1.5 ~ 0.6 0 0.6 0 3
 execute if score SEA_ch6_event rng5 matches 20058 as @n[tag=SEAboss6] at @s if block ~ ~-0.4 ~ tuff_bricks run playsound minecraft:entity.wind_charge.wind_burst ambient @a ~ ~-0.2 ~ 1 0.5
 execute if score SEA_ch6_event rng5 matches 20058.. run effect give @n[tag=SEAboss6] fire_resistance infinite 0 true
-#execute if score SEA_ch6_event rng5 matches 20053 positioned 90064 22 -1815 run function skyblock:azr/effects/zanei_appear
+#execute if score SEA_ch6_event rng5 matches 20053 positioned 90064 22 -1815 run function skyblock:azr/effects/magic_circle/andralune_halfpower
 execute if score SEA_ch6_event rng5 matches 20058.. as @n[tag=SEAboss6] at @s if block ~ ~-0.5 ~ air at @s run function skyblock:sea/e/ch6/boss6/particle_insky_angel
 
 execute if score SEA_ch6_event rng5 matches 20058..20120 as @n[tag=SEAboss6] at @s run rotate @s facing entity @p[tag=SEAPT]

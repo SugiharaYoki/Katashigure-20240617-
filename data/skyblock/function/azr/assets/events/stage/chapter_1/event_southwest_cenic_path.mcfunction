@@ -11,4 +11,4 @@ execute if score internal_clock_001 Azr_system matches 176 run playsound minecra
 execute if score internal_clock_001 Azr_system matches 272 run tellraw @a[tag=azrShowDialog] [{"text":"墙对面的谈话声A：","color":"yellow","bold": true},{"bold": false,"text":"\n“我觉得还是别多问比较好。几位大人因为生命树的事情忙得不可开交，一切都会有其深意吧。”","color":"white"}]
 execute if score internal_clock_001 Azr_system matches 272 run playsound minecraft:entity.vindicator.ambient master @a[tag=azrShowDialog] -79919 39 25 5 0.9
 execute if score internal_clock_001 Azr_system matches 274 run scoreboard players reset internal_clock_001 Azr_system
-execute if score internal_clock_001 Azr_system matches -2147483648..2147483647 run schedule function skyblock:azr/assets/events/stage/dialog/southwest_cenic_path 1t
+execute if score internal_clock_001 Azr_system matches -2147483648..2147483647 run schedule function skyblock:azr/assets/events/stage/chapter_1/event_southwest_cenic_path 1t

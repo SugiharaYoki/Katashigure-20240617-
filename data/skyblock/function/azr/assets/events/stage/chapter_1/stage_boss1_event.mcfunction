@@ -125,7 +125,7 @@ execute if score stage_main_thread AzrTimerStack matches 660 run playsound minec
 execute if score stage_main_thread AzrTimerStack matches 660 as @n[tag=AzrielBossA] run tag @s add actionable
 execute if score stage_main_thread AzrTimerStack matches 660 as @n[tag=AzrielBossA] run data modify entity @s Invulnerable set value 0b
 execute if score stage_main_thread AzrTimerStack matches 660 as @n[tag=AzrielBossA] run data modify entity @s NoAI set value 0b
-execute if score stage_main_thread AzrTimerStack matches 660..665 positioned -79931 38.8 88 run function skyblock:azr/assets/events/effects/zanei_appear
+execute if score stage_main_thread AzrTimerStack matches 660..665 positioned -79931 38.8 88 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
 
 execute if score stage_main_thread AzrTimerStack matches 665 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score stage_main_thread AzrTimerStack matches 665 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{"text":"权之残影：","color":"light_purple","bold": true},{"bold": false,"text":"\n“我算是见识到了，你拥有魔界的帮助，是吗？”","color":"white"}]

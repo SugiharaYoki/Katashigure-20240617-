@@ -26,7 +26,7 @@ execute if score @s rng4 matches 13 as @s at @s run playsound minecraft:ambient.
 execute if score @s rng4 matches 13 as @s at @s run playsound minecraft:ambient.crimson_forest.mood hostile @a ~ ~ ~ 3 2
 execute if score @s rng4 matches 13 as @s at @s run playsound minecraft:ambient.crimson_forest.mood hostile @a ~ ~ ~ 3 2
 execute if score @s rng4 matches 13 as @s at @s run playsound minecraft:ambient.crimson_forest.mood hostile @a ~ ~ ~ 3 2
-execute if score @s rng4 matches 13 as @s at @s run function skyblock:azr/effects/zanei_appear
+execute if score @s rng4 matches 13 as @s at @s run function skyblock:azr/effects/magic_circle/andralune_halfpower
 execute if score @s rng4 matches 13 as @s at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 fire replace air
 execute if score @s rng4 matches 14 as @s at @s run fill ~2 ~ ~2 ~-2 ~ ~-2 fire replace air
 execute if score @s rng4 matches 15 as @s at @s run fill ~3 ~ ~3 ~-3 ~ ~-3 fire replace air

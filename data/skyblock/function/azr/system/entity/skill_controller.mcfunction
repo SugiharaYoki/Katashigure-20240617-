@@ -32,5 +32,5 @@ execute if entity @s[tag=AzrielMob_spider_giant] run function skyblock:azr/asset
 
 
 #神界军
-execute if score stage Azr_system matches 25.. unless entity @s[type=!pillager,type=!vindicator] run function skyblock:azr/assets/events/stage/stage9_divineforce_behavior
+execute if score stage Azr_system matches 25.. unless entity @s[type=!pillager,type=!vindicator] run function skyblock:azr/assets/events/stage/chapter_3/stage9_divineforce_behavior
 

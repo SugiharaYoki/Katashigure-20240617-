@@ -1,1 +1,0 @@
-give @s chainmail_leggings[custom_data={chainmail_leggings_normal:1b},attribute_modifiers=[{type:"minecraft:armor",id:"azr:chainmail_leggings_normal.armor",amount:2.0,operation:"add_value",slot:"armor"}],custom_model_data={floats:[100003.0]}]

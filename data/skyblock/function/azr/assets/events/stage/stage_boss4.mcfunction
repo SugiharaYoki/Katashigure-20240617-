@@ -353,7 +353,7 @@ execute if score tick_main_thread AzrTimerStack matches 8360 run effect give @e[
 execute if score tick_main_thread AzrTimerStack matches 8365 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/assets/events/stage/boss1/move1
 execute if score tick_main_thread AzrTimerStack matches 8375 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/assets/events/stage/boss1/move2
 execute if score tick_main_thread AzrTimerStack matches 8395 as @e[tag=AzrielBossA,limit=3] at @s run function skyblock:azr/assets/events/stage/boss1/move1
-execute if score tick_main_thread AzrTimerStack matches 8362 positioned -79536 42 -338 run function skyblock:azr/assets/events/effects/zanei_appear_b
+execute if score tick_main_thread AzrTimerStack matches 8362 positioned -79536 42 -338 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower_b
 execute if score tick_main_thread AzrTimerStack matches 8362..8440 as @e[tag=AzrielBossA,limit=1] at @s run function skyblock:azr/assets/events/effects/zanei_surround
 
 
