@@ -11,7 +11,8 @@ execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer
 execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer,distance=..6] run particle sculk_charge_pop ~ ~0.5 ~ 4 0.2 4 0.02 30
 execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer,distance=..6] run playsound minecraft:entity.generic.explode hostile @a ~ ~ ~ 3 0.87
 execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer,distance=..6] run playsound entity.wither.spawn hostile @a ~ ~ ~ 3 0.8
-execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer,distance=..6] run particle sculk_soul ~ ~ ~ 0.2 0.2 0.2 0.1 32
+execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer,distance=..6] run particle explosion ~ ~ ~ 0 0 0 0 1
+execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer,distance=..6] run particle sculk_soul ~ ~ ~ 0.2 0.2 0.2 0.13 62
 execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer,distance=..6] run particle shriek{delay:0} ~ ~-1 ~ 0 0 0 0 1
 execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer,distance=..6] run tag @s add AzrielMob_sonic_eye_reveal
 
