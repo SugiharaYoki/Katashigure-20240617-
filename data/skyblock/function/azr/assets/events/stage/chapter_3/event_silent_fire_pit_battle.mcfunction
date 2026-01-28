@@ -14,6 +14,8 @@ execute as @s[scores={rng1=28}] positioned -79893 42 -56 run summon marker ~ ~ ~
 execute as @s[scores={rng1=28}] positioned -79888 42 -56 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 execute as @s[scores={rng1=38..39}] if entity @n[distance=..25,tag=AzrielMob_zombie_villager_cleric] run scoreboard players set @s rng1 38
+execute as @s[scores={rng1=38..39}] if entity @n[distance=..16,tag=AzrielMob_shield] run scoreboard players set @s rng1 38
+execute as @s[scores={rng1=38..39}] if entity @n[distance=..12,tag=AzrielMob_undead] run scoreboard players set @s rng1 38
 execute as @s[scores={rng1=40}] positioned -79890.01 41.97 -78.00 run function skyblock:azr/assets/mobs/sonic_eye
 
 execute as @s[scores={rng1=43}] at @n[tag=AzrielNPC_stage9_entry_conversation5] run playsound minecraft:entity.vindicator.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
