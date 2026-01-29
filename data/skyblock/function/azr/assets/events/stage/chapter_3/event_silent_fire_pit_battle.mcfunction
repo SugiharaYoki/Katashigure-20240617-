@@ -17,6 +17,7 @@ execute as @s[scores={rng1=38..39}] if entity @n[distance=..25,tag=AzrielMob_zom
 execute as @s[scores={rng1=38..39}] if entity @n[distance=..16,tag=AzrielMob_shield] run scoreboard players set @s rng1 38
 execute as @s[scores={rng1=38..39}] if entity @n[distance=..12,tag=AzrielMob_undead] run scoreboard players set @s rng1 38
 execute as @s[scores={rng1=40}] positioned -79890.01 41.97 -78.00 run function skyblock:azr/assets/mobs/sonic_eye
+execute as @s[scores={rng1=40}] positioned -79890.01 41.97 -78.00 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:sonic_eye}
 
 execute as @s[scores={rng1=43}] at @n[tag=AzrielNPC_stage9_entry_conversation5] run playsound minecraft:entity.vindicator.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=43}] if entity @n[tag=AzrielNPC_stage9_entry_conversation5] run tellraw @a[tag=azrShowDialog] [{"text":"第5巡逻小队队长 伊安：","color":"green","bold": true},{"bold": false,"text":"\n“所有人做好准备，有一个相当不妙的东西从牢房方向过来了。”","color":"white"}]
