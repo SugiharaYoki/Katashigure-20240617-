@@ -12,7 +12,7 @@ $execute if data storage azr:handbook_vitae doc.$(eid).axe run tellraw @s [{"tex
 $execute unless data storage azr:handbook_vitae doc.$(eid).summoner run tellraw @s [{"text":"★★？","color":"#6f8095"}]
 $execute if data storage azr:handbook_vitae doc.$(eid).summoner run tellraw @s [{"text":"★★初级驭灵使","color":"#4495ff","hoverEvent":{"action":"show_text","contents":[{"text":"类型：生灵\n","color":"#9c55ff","bold": true},{"text":"攻击方式：召唤 远程\n","color":"#ffa463","bold": true},{"text":"当你靠近他后，他会首先使用紫水晶召唤多个走尸，并在之后切换为弩。\n血量较厚，但前摇很长。在他切弩前快速解决他会比较安全。","color":"white","bold": false}]}}]
 $execute unless data storage azr:handbook_vitae doc.$(eid).sonic_eye run tellraw @s [{"text":"★★★？","color":"#6f8095"}]
-$execute if data storage azr:handbook_vitae doc.$(eid).sonic_eye run tellraw @s [{"text":"★★★非眼","color":"#4495ff","hoverEvent":{"action":"show_text","contents":[{"text":"类型：生灵\n","color":"#9c55ff","bold": true},{"text":"攻击方式：延迟远程 范围狙击\n","color":"#ffa463","bold": true},{"text":"恣眼的影子，血量极高，攻击欲望极强。\n无人时保持不动，在检测到你的存在后会无声无息地靠近，距离够近后则会显形。\n显形后会在身体周围制造破坏性的激光，如果站在原地被轰到的话会受到重伤。\n独自对付它不是什么好主意。如果空间允许的话，可以试着把显形的非眼给甩开。","color":"white","bold": false}]}}]
+$execute if data storage azr:handbook_vitae doc.$(eid).sonic_eye run tellraw @s [{"text":"★★★非眼","color":"#4495ff","hoverEvent":{"action":"show_text","contents":[{"text":"类型：生灵\n","color":"#9c55ff","bold": true},{"text":"攻击方式：延迟远程 范围狙击\n","color":"#ffa463","bold": true},{"text":"恣眼的影子，血量极高，攻击欲望强。\n无人时保持不动，在检测到你的存在后会无声无息地靠近，距离够近后则会显形。\n显形后会在身体周围制造破坏性的激光，如果站在原地被轰到的话会受到重伤。\n独自对付它不是什么好主意。如果空间允许的话，可以试着把显形的非眼给甩开。","color":"white","bold": false}]}}]
 
 
 $execute unless data storage azr:handbook_vitae doc.$(eid).undead run tellraw @s [{"text":"★？","color":"#786897"}]
