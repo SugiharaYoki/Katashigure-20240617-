@@ -55,8 +55,8 @@ execute unless score @s AzrPlayer_CurrentArea matches 4 if entity @s[x=-79877,y=
 execute unless score @s AzrPlayer_CurrentArea matches 4 if entity @s[x=-79894,y=37,z=91,dx=5,dy=5,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:4,title:"智 述 文 馆",color_code:"#e2824e"}
 #
-execute unless score @s AzrPlayer_CurrentArea matches 5 if entity @s[x=-79895,y=39,z=-122,dx=11,dy=7,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
-                                                {area_id:5,title:"晦 怨 囚 牢",color_code:"#987bff"}
+execute unless score @s AzrPlayer_CurrentArea matches 6 if entity @s[x=-79895,y=39,z=-122,dx=11,dy=7,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:6,title:"晦 怨 囚 牢",color_code:"#987bff"}
 
 
 
