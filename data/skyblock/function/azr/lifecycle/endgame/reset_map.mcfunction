@@ -524,6 +524,9 @@ setblock -79898 50 -62 soul_fire
 setblock -79898 50 -55 soul_fire
 setblock -79898 50 -57 soul_fire
 setblock -79898 50 -59 soul_fire
+  #二楼花
+setblock -79892 48 -73 potted_flowering_azalea_bush
+setblock -79889 48 -73 potted_flowering_azalea_bush
 
 #监狱大门
 setblock -79886 41 -114 lever[face=floor,facing=west,powered=false]

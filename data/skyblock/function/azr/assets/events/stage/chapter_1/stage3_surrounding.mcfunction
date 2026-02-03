@@ -74,6 +74,26 @@ execute positioned -79931 28 -5 unless entity @n[tag=AzrielMarker_encounter,dist
 execute positioned -79853 31 5 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=0..7,tag=azrPlayer,tag=!AZS_SoulFrag01] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/effects/soul_fragment {id:"01",pos:"-79841 29.2 22"}
 
+#钓师
+execute positioned -79841 23 -22 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=0..30,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79841 23 -22 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
+execute positioned -79841 23 -22 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79841.60 24.00 -23.90 run function skyblock:azr/assets/mobs/unique/trader/fisher_moss
+
+execute positioned -79841 23 -22 as @n[tag=AzrielTrader_fisher_moss,distance=0..12.5] at @s if entity @a[distance=..4.5,tag=azrPlayer] run scoreboard players add @s rng1 1
+execute positioned -79841 23 -22 as @n[tag=AzrielTrader_fisher_moss,distance=0..12.5,scores={rng1=2}] at @s if entity @a[distance=..4.5,tag=azrPlayer] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
+execute positioned -79841 23 -22 as @n[tag=AzrielTrader_fisher_moss,distance=0..12.5,scores={rng1=2}] at @s if entity @a[distance=..4.5,tag=azrPlayer] run tellraw @a[tag=azrShowDialog,distance=..20] [{"text":"钓师 威弗列德：","color":"green","bold": true},{"bold": false,"text":"\n“噢？已经很久没人下到这么深处了。”","color":"white"}]
+execute positioned -79841 23 -22 as @n[tag=AzrielTrader_fisher_moss,distance=0..12.5,scores={rng1=22}] at @s if entity @a[distance=..4.5,tag=azrPlayer] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
+execute positioned -79841 23 -22 as @n[tag=AzrielTrader_fisher_moss,distance=0..12.5,scores={rng1=22}] at @s if entity @a[distance=..4.5,tag=azrPlayer] run tellraw @a[tag=azrShowDialog,distance=..20] [{"text":"钓师 威弗列德：","color":"green","bold": true},{"bold": false,"text":"\n“我一般会在地下洞穴寻找垂钓点。你想加入我吗？”","color":"white"}]
+execute positioned -79841 23 -22 as @n[tag=AzrielTrader_fisher_moss,distance=0..12.5,scores={rng1=222}] at @s if entity @a[distance=..4.5,tag=azrPlayer] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
+execute positioned -79841 23 -22 as @n[tag=AzrielTrader_fisher_moss,distance=0..12.5,scores={rng1=222}] at @s if entity @a[distance=..4.5,tag=azrPlayer] run tellraw @a[tag=azrShowDialog,distance=..20] [{"text":"钓师 威弗列德：","color":"green","bold": true},{"bold": false,"text":"\n“这地下的洞穴系统可藏了不少好东西。”","color":"white"}]
+execute positioned -79841 23 -22 as @n[tag=AzrielTrader_fisher_moss,distance=0..12.5,scores={rng1=422}] at @s if entity @a[distance=..4.5,tag=azrPlayer] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
+execute positioned -79841 23 -22 as @n[tag=AzrielTrader_fisher_moss,distance=0..12.5,scores={rng1=422}] at @s if entity @a[distance=..4.5,tag=azrPlayer] run tellraw @a[tag=azrShowDialog,distance=..20] [{"text":"钓师 威弗列德：","color":"green","bold": true},{"bold": false,"text":"\n“上面已经闹得天翻地覆了吧。或者说，‘下面’。”","color":"white"}]
+execute positioned -79841 23 -22 as @n[tag=AzrielTrader_fisher_moss,distance=0..12.5,scores={rng1=622}] at @s if entity @a[distance=..4.5,tag=azrPlayer] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
+execute positioned -79841 23 -22 as @n[tag=AzrielTrader_fisher_moss,distance=0..12.5,scores={rng1=622}] at @s if entity @a[distance=..4.5,tag=azrPlayer] run tellraw @a[tag=azrShowDialog,distance=..20] [{"text":"钓师 威弗列德：","color":"green","bold": true},{"bold": false,"text":"\n“有些时候，你也不是非要依赖魔力，才能做成你想做的事。”","color":"white"}]
+
+
+
+
 
 
 
