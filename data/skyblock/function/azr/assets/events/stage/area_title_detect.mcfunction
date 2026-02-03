@@ -23,6 +23,8 @@ execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79904,y=
                                                 {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
 execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79896,y=42,z=-67,dx=12,dy=12,dz=12] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
+execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79899,y=32,z=-50,dx=8,dy=4,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
 
 
 execute unless score @s AzrPlayer_CurrentArea matches 5 if entity @s[x=-79923,y=33,z=33,dx=4,dy=3,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
@@ -54,14 +56,17 @@ execute unless score @s AzrPlayer_CurrentArea matches 4 if entity @s[x=-79877,y=
                                                 {area_id:4,title:"智 述 文 馆",color_code:"#e2824e"}
 execute unless score @s AzrPlayer_CurrentArea matches 4 if entity @s[x=-79894,y=37,z=91,dx=5,dy=5,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:4,title:"智 述 文 馆",color_code:"#e2824e"}
-#
+
 execute unless score @s AzrPlayer_CurrentArea matches 6 if entity @s[x=-79895,y=39,z=-122,dx=11,dy=7,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:6,title:"晦 怨 囚 牢",color_code:"#987bff"}
 
+execute unless score @s AzrPlayer_CurrentArea matches 7 if entity @s[x=-79897,y=33,z=-56,dx=5,dy=3,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:7,title:"蚀 岩 径",color_code:"#e4964d"}
 
 
 
 
+#
 
 
 
@@ -87,4 +92,4 @@ execute unless score @s AzrPlayer_CurrentArea matches 4 positioned -79848 43 124
 
 
 
-#tellraw @s {"color": "#987bff"}
+#tellraw @s {"color": "#e4964d"}
