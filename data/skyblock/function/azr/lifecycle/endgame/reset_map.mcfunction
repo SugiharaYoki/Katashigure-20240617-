@@ -162,6 +162,11 @@ item replace block -79891 21 9 container.14 with minecraft:beef 1
 setblock -79927 26 8 air
 setblock -79927 26 8 lever[facing=east]
 
+#钓师之湖
+setblock -79828 24 -16 chest[facing=south]
+item replace block -79828 24 -16 container.12 with minecraft:string 1
+item replace block -79828 24 -16 container.14 with minecraft:resin_clump 1
+
 #Stage Guise
 setblock -79907 21 -14 birch_button[facing=west,face=floor]
   
