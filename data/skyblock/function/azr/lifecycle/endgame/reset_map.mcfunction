@@ -525,7 +525,9 @@ setblock -79898 50 -55 soul_fire
 setblock -79898 50 -57 soul_fire
 setblock -79898 50 -59 soul_fire
 
-
+#监狱大门
+setblock -79886 41 -114 lever[face=floor,facing=west,powered=false]
+fill -79892 43 -119 -79889 40 -119 minecraft:iron_bars
 
 
 
@@ -556,9 +558,6 @@ setblock -79951 38 9 minecraft:quartz_stairs[facing=south]
 setblock -79943 39 8 chiseled_quartz_block
 setblock -79947 32 140 diamond_block
 setblock -79947 33 140 birch_button[face=floor,facing=west]
-setblock -79886 41 -114 lever[face=floor,facing=west,powered=false]
-setblock -79894 39 -113 minecraft:chiseled_stone_bricks
-setblock -79894 39 -115 minecraft:chiseled_stone_bricks
 setblock -79912 48 -137 minecraft:chipped_anvil
 setblock -79908 48 -127 barrel[facing=north,open=false]
 setblock -79896 41 -143 minecraft:blast_furnace[facing=east]
@@ -686,7 +685,6 @@ fill -79942 39 8 -79944 39 8 quartz_pillar[axis=x]
 fill -79942 40 8 -79944 40 8 quartz_block
 fill -79943 38 8 -79943 40 8 quartz_pillar[axis=y]
 fill -79943 34 136 -79943 32 136 air
-fill -79892 43 -119 -79889 40 -119 minecraft:iron_bars
 fill -79910 40 -105 -79910 41 -105 iron_bars
 fill -79917 44 -106 -79917 40 -110 minecraft:blue_stained_glass
 fill -79926 40 -111 -79924 42 -111 minecraft:iron_bars

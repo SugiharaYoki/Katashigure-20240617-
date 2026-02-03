@@ -21,6 +21,9 @@ execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79932,y=
                                                 {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
 execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79904,y=37,z=26,dx=3,dy=5,dz=8] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
+execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79896,y=42,z=-67,dx=12,dy=12,dz=12] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
+
 
 execute unless score @s AzrPlayer_CurrentArea matches 5 if entity @s[x=-79923,y=33,z=33,dx=4,dy=3,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:5,title:"逾 怜 藓 路",color_code:"#035e01"}
@@ -52,6 +55,16 @@ execute unless score @s AzrPlayer_CurrentArea matches 4 if entity @s[x=-79877,y=
 execute unless score @s AzrPlayer_CurrentArea matches 4 if entity @s[x=-79894,y=37,z=91,dx=5,dy=5,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:4,title:"智 述 文 馆",color_code:"#e2824e"}
 #
+execute unless score @s AzrPlayer_CurrentArea matches 5 if entity @s[x=-79895,y=39,z=-122,dx=11,dy=7,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:5,title:"晦 怨 囚 牢",color_code:"#987bff"}
+
+
+
+
+
+
+
+
 
 #复活点
 execute unless score @s AzrPlayer_CurrentArea matches 1 positioned -79943 37 -8 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
@@ -74,4 +87,4 @@ execute unless score @s AzrPlayer_CurrentArea matches 4 positioned -79848 43 124
 
 
 
-#tellraw @s {"color": "#e9ffe0"}
+#tellraw @s {"color": "#987bff"}
