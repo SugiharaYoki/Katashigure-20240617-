@@ -9,6 +9,7 @@ execute if entity @s[tag=AzrielMob_summon_delay_marker_sword] run function skybl
 execute if entity @s[tag=AzrielMob_summon_delay_marker_axe] run function skyblock:azr/assets/mobs/summon_delay/axe
 execute if entity @s[tag=AzrielMob_summon_delay_marker_pillager] run function skyblock:azr/assets/mobs/summon_delay/pillager
 execute if entity @s[tag=AzrielMob_summon_delay_marker_spider_giant] run function skyblock:azr/assets/mobs/summon_delay/spider_giant
+execute if entity @s[tag=AzrielMob_summon_delay_marker_slime] run function skyblock:azr/assets/mobs/summon_delay/slime
 
 execute if entity @s[tag=AzrielMob_summon_delay_marker_undead_fire] run function skyblock:azr/assets/mobs/summon_delay/undead_fire
 execute if entity @s[tag=AzrielMob_summon_delay_marker_undead_shadow] run function skyblock:azr/assets/mobs/summon_delay/undead_shadow
