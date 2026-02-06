@@ -161,7 +161,7 @@ scoreboard players set @s SEAPT_member 0
 clear @s
 effect clear @s
 execute unless score SEA_ch6_event rng8 matches 1.. run stopsound @s
-spawnpoint @s -43 55 0 -90
+spawnpoint @s -43 55 0 -90 0
 tp @s -43 55 0
 tag @s add sea_dead
 scoreboard players reset @s sea_dead_check

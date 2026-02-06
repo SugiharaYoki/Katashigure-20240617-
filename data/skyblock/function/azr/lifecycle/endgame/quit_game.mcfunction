@@ -54,7 +54,7 @@ function skyblock:azr/system/player/refresh_bossbar
 scoreboard players reset tempSHD Azr_system
 tellraw @s [{text:"现在持有的影之石：",color:"white"},{"score":{"name":"@s","objective":"Perm_PersonSHD"},color:"yellow"}]
 #后续处理
-execute if entity @s[x=-79900,y=40,z=0,distance=0..2200] run spawnpoint @s -79953 38 -14 -90
+execute if entity @s[x=-79900,y=40,z=0,distance=0..2200] run spawnpoint @s -79953 38 -14 -90 0
 execute if entity @s[x=-79900,y=40,z=0,distance=0..2200] run tp @s -79953.0 38.5 -14.0 facing -79952.0 38.5 -14.0
 
 

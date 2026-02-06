@@ -8,7 +8,7 @@ xp set @s 0 points
 xp set @s 0 levels
 tp @s -90001 105 54 facing -90001 105 53
 gamemode adventure @s
-spawnpoint @s -90001 105 56 180
+spawnpoint @s -90001 105 56 180 0
 scoreboard players set @s DeathCount 0
 scoreboard players set @s Temp_PersonDVS 0
 scoreboard players set @s Temp_PersonDVSt 0

@@ -23,7 +23,7 @@ execute as @s[scores={rng8=3,rng7=10},tag=SEAyuehan_act_heal] at @s if entity @a
 
 execute as @s[scores={rng8=10},tag=SEAyuehan_act_heal] at @p[tag=SEAyuehan_act_heal_target] rotated ~ 0 run tp @s ^ ^ ^-1
 execute as @s[scores={rng8=16},tag=SEAyuehan_act_heal] run tp @s ~ ~ ~
-execute as @s[scores={rng8=13},tag=SEAyuehan_act_heal] run summon potion ~ ~1 ~ {Item:{id:potion,components:{potion_contents:{custom_color:16599149,custom_effects:[{id:regeneration,duration:40,amplifier:3}]}}}}
+execute as @s[scores={rng8=13},tag=SEAyuehan_act_heal] run summon splash_potion ~ ~1 ~ {Item:{id:potion,components:{potion_contents:{custom_color:16599149,custom_effects:[{id:regeneration,duration:40,amplifier:3}]}}}}
 execute as @s[scores={rng8=13},tag=SEAyuehan_act_heal] run effect clear @a[tag=SEAPT,distance=..6] poison
 
 execute as @s[scores={rng8=39..},tag=SEAyuehan_act_heal] at @s run scoreboard players set @s rng2 0

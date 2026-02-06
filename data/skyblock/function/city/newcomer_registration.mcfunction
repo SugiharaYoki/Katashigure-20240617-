@@ -24,7 +24,7 @@ scoreboard players set @s HajimetaBGM 1
 tag @s remove NoSkyWar
 tag @s remove NoMultiMenu
 tp @s -43 55 0 facing -42 55 0
-spawnpoint @s -43 55 0 -90
+spawnpoint @s -43 55 0 -90 0
 advancement grant @s only skyblock:veryroot
 tag @s add Registered
 function skyblock:city/id_create
