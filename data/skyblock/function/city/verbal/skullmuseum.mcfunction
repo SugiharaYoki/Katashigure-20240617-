@@ -10,9 +10,9 @@ execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 4 run tellraw
 execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 4 run tellraw @s {"text":"“嗯？我是隐月本人吗？当然不是了。我只是一名NPC而已。服务器停止维护之时，我就会永远离去。”","bold":false,"color":"white"}
 execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 5 run tellraw @s {"text":"隐月：","bold":true,"color":"aqua"}
 execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 5 run tellraw @s {"text":"（沉默不语）","bold":false,"color":"gray"}
-tellraw @s {"text":"购买 方颅券（铜） 10FSB","bold":false,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 16210005"}}
-tellraw @s {"text":"购买 方颅券（银） 20FSB","bold":false,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 16210006"}}
-tellraw @s {"text":"购买 方颅券（金） 50FSB","bold":false,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 16210007"}}
+tellraw @s {"text":"购买 方颅券（铜） 10FSB","bold":false,"underlined":true,"color":"gold","click_event":{"action":"run_command","value":"/trigger MultiMenu set 16210005"}}
+tellraw @s {"text":"购买 方颅券（银） 20FSB","bold":false,"underlined":true,"color":"gold","click_event":{"action":"run_command","value":"/trigger MultiMenu set 16210006"}}
+tellraw @s {"text":"购买 方颅券（金） 50FSB","bold":false,"underlined":true,"color":"gold","click_event":{"action":"run_command","value":"/trigger MultiMenu set 16210007"}}
 scoreboard players set @s If_TalkVill 0
 tag @s remove SkMu_Silv
 tag @s remove SkMu_Copp

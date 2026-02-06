@@ -72,41 +72,41 @@ execute if entity @s[tag=!SEA_w_axe_upg16] run data modify entity @n[tag=SEA_w_a
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarker0]","color":"red"},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker1]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50101"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n攻击力增加0.5","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker2]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50102"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n攻击速度增加0.1","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker3]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50103"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n攻击力增加0.5","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker4]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50104"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n攻击力增加1.0","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker5]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50105"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n攻击力增加1.0","color":"white"}}}]
+{"selector":"@n[tag=SEA_w_axe_displaymarker1]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50101"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n攻击力增加0.5","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker2]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50102"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n攻击速度增加0.1","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker3]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50103"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n攻击力增加0.5","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker4]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50104"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n攻击力增加1.0","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker5]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50105"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n攻击力增加1.0","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarker0b]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker6]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50106"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n攻击速度增加0.1","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker6]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50106"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n攻击速度增加0.1","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker7]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50107"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n击退距离略微增加","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker7]","color":"yellow","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50107"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n击退距离略微增加","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarker0b]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker8]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50108"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n攻击速度增加0.1","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker9]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50109"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n攻击速度增加0.1","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker10]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50110"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：4\n击退距离略微增加","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker11]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50111"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n攻击力增加1.0","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker12]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50112"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n技能：左右移动时攻击可施展横扫攻击\n多次升级可略微增加攻击力与范围","color":"white"}}}]
+{"selector":"@n[tag=SEA_w_axe_displaymarker8]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50108"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n攻击速度增加0.1","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker9]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50109"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n攻击速度增加0.1","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker10]","color":"yellow","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50110"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：4\n击退距离略微增加","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker11]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50111"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n攻击力增加1.0","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker12]","color":"aqua","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50112"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n技能：左右移动时攻击可施展横扫攻击\n多次升级可略微增加攻击力与范围","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarker0b]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker13]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50113"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n技能：左右移动时攻击可施展横扫攻击\n多次升级可略微增加攻击力与范围","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker13]","color":"aqua","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50113"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n技能：左右移动时攻击可施展横扫攻击\n多次升级可略微增加攻击力与范围","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker14]","color":"dark_red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50114"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n攻击力增加1.0","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker14]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50114"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n攻击力增加1.0","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarker0b]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker15]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50115"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n技能：左右移动时攻击可施展横扫攻击\n多次升级可略微增加攻击力与范围","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker15]","color":"aqua","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50115"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n技能：左右移动时攻击可施展横扫攻击\n多次升级可略微增加攻击力与范围","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker16]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50116"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n击退距离略微增加","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker16]","color":"yellow","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50116"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n击退距离略微增加","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"}]
 
@@ -115,8 +115,8 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 #function skyblock:sea/p/w/flamethrower_cost
 #function skyblock:sea/p/w/shield_cost
 function skyblock:sea/shop_calculation
-tellraw @s[scores={sea_i_echo_shard=1..}] [{"text":"剩余可分配回声碎片：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"sea_i_echo_shard"},"color":"green"},{"text":"〈全部重置〉","bold":true,"color":"red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 59902"}}]
-tellraw @s[scores={sea_i_echo_shard=..0}] [{"text":"剩余可分配回声碎片：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"sea_i_echo_shard"},"color":"red"},{"text":"〈全部重置〉","bold":true,"color":"red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 59902"}}]
+tellraw @s[scores={sea_i_echo_shard=1..}] [{"text":"剩余可分配回声碎片：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"sea_i_echo_shard"},"color":"green"},{"text":"〈全部重置〉","bold":true,"color":"red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 59902"}}]
+tellraw @s[scores={sea_i_echo_shard=..0}] [{"text":"剩余可分配回声碎片：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"sea_i_echo_shard"},"color":"red"},{"text":"〈全部重置〉","bold":true,"color":"red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 59902"}}]
 
 kill @e[tag=SEA_w_axe_displaymarker,type=marker]
 scoreboard players set @s sea_crafter 0

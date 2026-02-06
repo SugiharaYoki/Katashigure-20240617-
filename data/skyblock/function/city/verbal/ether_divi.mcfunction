@@ -14,5 +14,5 @@ execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng7 matches 6 run tellraw
 execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng7 matches 6 run tellraw @s {"text":"“一天最多能够进行两次占卜。”","bold":false,"color":"white"}
 execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng7 matches 7 run tellraw @s {"text":"占卜师：","bold":true,"color":"aqua"}
 execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng7 matches 7 run tellraw @s {"text":"“上一次的占卜结果会被暂时记录下来。对比运势变化，可以得到更好的结论。”","bold":false,"color":"white"}
-tellraw @s {"text":"进行占卜","bold":false,"underlined":true,"color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 113"}}
+tellraw @s {"text":"进行占卜","bold":false,"underlined":true,"color":"yellow","click_event":{"action":"run_command","value":"/trigger MultiMenu set 113"}}
 scoreboard players set @s If_TalkVill 0

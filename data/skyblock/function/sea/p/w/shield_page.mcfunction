@@ -69,7 +69,7 @@ execute if entity @s[tag=!SEA_w_shield_upg16] run data modify entity @n[tag=SEA_
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_shield_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_shield_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_shield_displaymarker11]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50311"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n同时按下 左+右+后 移动键，瞬间将盾牌切换至主手\n持有盾牌时则切换为副手中的物品","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_shield_displaymarker11]","color":"gold","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50311"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n同时按下 左+右+后 移动键，瞬间将盾牌切换至主手\n持有盾牌时则切换为副手中的物品","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_shield_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_shield_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_shield_displaymarkerE]","color":"dark_gray"},\
@@ -77,25 +77,25 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_shield_displaymarker0]","color":"blue"},\
-{"selector":"@n[tag=SEA_w_shield_displaymarker1]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50301"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n手持时 额外增加1.0防御力","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_shield_displaymarker2]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50302"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n略微降低手持时的移动减速负面效果","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_shield_displaymarker3]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50303"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n手持时 额外增加1.0防御力","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_shield_displaymarker4]","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50304"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n略微增加盾反判定的有效时长","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_shield_displaymarker1]","color":"blue","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50301"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n手持时 额外增加1.0防御力","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_shield_displaymarker2]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50302"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：1\n略微降低手持时的移动减速负面效果","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_shield_displaymarker3]","color":"blue","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50303"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n手持时 额外增加1.0防御力","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_shield_displaymarker4]","color":"light_purple","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50304"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n略微增加盾反判定的有效时长","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_shield_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_shield_displaymarkerE]","color":"dark_gray"}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_shield_displaymarker0b]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_shield_displaymarker5]","color":"green","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50305"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n略微降低手持时的移动减速负面效果","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_shield_displaymarker5]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50305"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n略微降低手持时的移动减速负面效果","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_shield_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_shield_displaymarker6]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50306"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n增加盾反的伤害","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_shield_displaymarker7]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50307"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n手持时 额外增加1.0防御力","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_shield_displaymarker8]","color":"blue","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50308"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n手持时 额外增加1.0防御力","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_shield_displaymarker9]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50309"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n增加盾反的伤害","color":"white"}}}]
+{"selector":"@n[tag=SEA_w_shield_displaymarker6]","color":"yellow","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50306"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n增加盾反的伤害","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_shield_displaymarker7]","color":"blue","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50307"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：2\n手持时 额外增加1.0防御力","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_shield_displaymarker8]","color":"blue","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50308"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n手持时 额外增加1.0防御力","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_shield_displaymarker9]","color":"yellow","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50309"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n增加盾反的伤害","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_shield_displaymarker0b]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_shield_displaymarker10]","color":"light_purple","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 50310"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n略微增加盾反判定的有效时长","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_shield_displaymarker10]","color":"light_purple","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50310"},"hoverEvent":{"action":"show_text","contents":{"text":"消耗：3\n略微增加盾反判定的有效时长","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_shield_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_shield_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_shield_displaymarkerE]","color":"dark_gray"},\
@@ -103,8 +103,8 @@ tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_shield_displaymarkerE]","color":"dark_gray"}]
 
 function skyblock:sea/shop_calculation
-tellraw @s[scores={sea_i_iron_ingot=1..}] [{"text":"剩余可分配铁锭：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"sea_i_iron_ingot"},"color":"green"},{"text":"〈全部重置〉","bold":true,"color":"red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 59904"}}]
-tellraw @s[scores={sea_i_iron_ingot=..0}] [{"text":"剩余可分配铁锭：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"sea_i_iron_ingot"},"color":"red"},{"text":"〈全部重置〉","bold":true,"color":"red","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 59904"}}]
+tellraw @s[scores={sea_i_iron_ingot=1..}] [{"text":"剩余可分配铁锭：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"sea_i_iron_ingot"},"color":"green"},{"text":"〈全部重置〉","bold":true,"color":"red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 59904"}}]
+tellraw @s[scores={sea_i_iron_ingot=..0}] [{"text":"剩余可分配铁锭：","bold":true,"color":"green"},{"bold":false,"score":{"name":"@s","objective":"sea_i_iron_ingot"},"color":"red"},{"text":"〈全部重置〉","bold":true,"color":"red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 59904"}}]
 
 kill @e[tag=SEA_w_shield_displaymarker,type=marker]
 scoreboard players set @s sea_crafter 0

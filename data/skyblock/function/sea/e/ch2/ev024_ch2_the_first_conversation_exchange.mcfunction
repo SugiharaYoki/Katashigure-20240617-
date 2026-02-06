@@ -4,7 +4,7 @@ execute as @n[tag=sc,scores={sea_4temp2=103}] positioned 90122 128 131 as @p[tag
 execute as @n[tag=sc,scores={sea_4temp2=103..386}] positioned 90122 128 131 if items entity @p[scores={SEA_story=1..}] weapon.mainhand spyglass as @p[nbt={SelectedItem:{id:"minecraft:spyglass"}}] unless entity @a[tag=SEAPT,scores={SEA_story=..0}] at @s run tellraw @a[tag=SEAPT] [{"selector":"@s","color":"white"},{"text":"：「跳过了剧情」","color":"white"}]
 execute as @n[tag=sc,scores={sea_4temp2=103..386}] positioned 90122 128 131 if items entity @p[scores={SEA_story=1..}] weapon.mainhand spyglass unless entity @a[tag=SEAPT,scores={SEA_story=..0}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 387
 
-execute as @s[tag=sc,scores={sea_4temp2=104}] positioned 90133 137 108 run tellraw @a[distance=0..50,tag=SEAPT] [{"text":" - "},{"text":"询问：你现在在哪里？这地方发生了什么？  ","color":"yellow"},{"text":"〈◆〉","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 90003"}}]
+execute as @s[tag=sc,scores={sea_4temp2=104}] positioned 90133 137 108 run tellraw @a[distance=0..50,tag=SEAPT] [{"text":" - "},{"text":"询问：你现在在哪里？这地方发生了什么？  ","color":"yellow"},{"text":"〈◆〉","bold":true,"color":"gold","click_event":{"action":"run_command","value":"/trigger sea_crafter set 90003"}}]
 
 execute as @s[tag=sc,scores={sea_4temp2=120}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 155
 

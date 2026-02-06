@@ -59,7 +59,7 @@ execute as @s[scores={sea_4temp1=368}] at @s if entity @n[tag=sc,scores={sea_pla
 execute as @s[scores={sea_4temp1=368}] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] [{"text":"马绍尔：","color":"green","bold": true},{"text":"\n“先生们，你们走吧。我已经给不了任何你们需要的东西了。”","color":"white","bold": false}]
 execute as @s[scores={sea_4temp1=368}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
-execute as @s[scores={sea_4temp1=372}] at @s run tellraw @a[distance=0..50,tag=SEAPT] [{"text":" - "},{"text":"坚持带他走","color":"yellow"},{"text":"〈◆〉","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 90004"}}]
+execute as @s[scores={sea_4temp1=372}] at @s run tellraw @a[distance=0..50,tag=SEAPT] [{"text":" - "},{"text":"坚持带他走","color":"yellow"},{"text":"〈◆〉","bold":true,"color":"gold","click_event":{"action":"run_command","value":"/trigger sea_crafter set 90004"}}]
 
 execute as @s[scores={sea_4temp1=464}] run scoreboard players set @s sea_4temp1 505
 

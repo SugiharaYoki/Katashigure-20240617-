@@ -21,7 +21,7 @@ execute if score @s rng1 matches 100 at @s run playsound entity.evoker.ambient n
 execute if score @s rng1 matches 100 at @s run tellraw @a[distance=0..200] [{"text":"琼斯：","color":"yellow","bold": true},{"text":"\n“是的，先生。\n我们已经有足够的证据证明圣水晶封存着已经陨落的天使长‘雷米尔’的至高神力。就现在看来，他将水晶留在地底峡谷，正是为了镇压远古细菌。”","color":"white","bold": false}]
 
 
-execute if score @s rng1 matches 103 at @s as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200,tag=SEAPT] [{"text":" - "},{"text":"追问：镇压？怎么做到的？  ","color":"yellow"},{"text":"〈◆〉","bold":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger sea_crafter set 90007"}}]
+execute if score @s rng1 matches 103 at @s as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200,tag=SEAPT] [{"text":" - "},{"text":"追问：镇压？怎么做到的？  ","color":"yellow"},{"text":"〈◆〉","bold":true,"color":"gold","click_event":{"action":"run_command","value":"/trigger sea_crafter set 90007"}}]
 execute if score @s rng1 matches 129 at @s run scoreboard players set @s rng1 254
 
 execute if score @s rng1 matches 131 at @s as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{"selector":"@p[tag=SEAPT,scores={SEAPT_member=1}]","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“你说水晶镇压了那些细菌，靠的是什么？是你之前说过的天使长的神力吗？”","color":"white"}]

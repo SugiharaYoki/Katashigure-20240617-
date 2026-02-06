@@ -56,7 +56,7 @@ execute if score stage_main_thread AzrTimerStack matches 3068 as @e[tag=AzrielBo
 execute if score stage_main_thread AzrTimerStack matches 3068 run particle minecraft:reverse_portal -79906 40 -139 0.5 0.6 0.5 0.5 40
 execute if score stage_main_thread AzrTimerStack matches 3068 run playsound item.chorus_fruit.teleport master @a -79906 40 -139 1 0.9
 
-execute if score stage_main_thread AzrTimerStack matches 3070 unless entity @a[tag=azrPlayer,scores={Azr_skillPoints=..12}] run tellraw @a[tag=azrPlayer] {"text":"〈跳过剧情〉","bold":true,"color":"blue","clickEvent":{"action":"run_command","value":"/trigger Azr_Shop set 6"}}
+execute if score stage_main_thread AzrTimerStack matches 3070 unless entity @a[tag=azrPlayer,scores={Azr_skillPoints=..12}] run tellraw @a[tag=azrPlayer] {"text":"〈跳过剧情〉","bold":true,"color":"blue","click_event":{"action":"run_command","value":"/trigger Azr_Shop set 6"}}
 execute if entity @a[tag=azrPlayer,scores={Azr_Shop=6..9}] if score stage_main_thread AzrTimerStack matches 3040..3212 run scoreboard players set stage_main_thread AzrTimerStack 3345
 
 execute if score stage_main_thread AzrTimerStack matches 3070 as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @r[tag=azrPlayer]

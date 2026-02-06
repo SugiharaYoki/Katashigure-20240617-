@@ -10,6 +10,6 @@ execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 4 run tellraw
 execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 4 run tellraw @s {"text":"“要骑豪车的话，记得带上萝卜钓竿。”","bold":false,"color":"white"}
 execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 5 run tellraw @s {"text":"中枢猪车公司·接待员：","bold":true,"color":"aqua"}
 execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 5 run tellraw @s {"text":"“切记，豪车会在一定时间后自行消失——如果你不在它附近的话。”","bold":false,"color":"white"}
-tellraw @s {"text":"个人状态","bold":false,"underlined":true,"color":"yellow","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 4"}}
-tellraw @s {"text":"租借 豪车 80FSB","bold":false,"underlined":true,"color":"gold","clickEvent":{"action":"run_command","value":"/trigger MultiMenu set 16210008"}}
+tellraw @s {"text":"个人状态","bold":false,"underlined":true,"color":"yellow","click_event":{"action":"run_command","value":"/trigger MultiMenu set 4"}}
+tellraw @s {"text":"租借 豪车 80FSB","bold":false,"underlined":true,"color":"gold","click_event":{"action":"run_command","value":"/trigger MultiMenu set 16210008"}}
 scoreboard players set @s If_TalkVill 0
