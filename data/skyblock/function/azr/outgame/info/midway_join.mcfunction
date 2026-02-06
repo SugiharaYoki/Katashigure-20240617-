@@ -5,5 +5,5 @@ tellraw @s[x=-79956,y=38,z=-29] [{"text":"并且在开始时获得 ","color":"wh
 tellraw @s[x=-79956,y=38,z=-29] [{"text":"你将不会获得正常流程中的下界命星或任何素材。","color":"white"}]
 tellraw @s[x=-79956,y=38,z=-29] [{"text":"如果你已经死亡过一次，将无法中途加入游戏。","color":"white"}]
 tellraw @s[x=-79956,y=38,z=-29] {"text":""}
-tellraw @s[x=-79956,y=38,z=-29] {"text":"中途加入","underlined":true,"color":"green","click_event":{"action":"run_command","value":"/trigger MultiMenu set 112"},"hover_event":{"action":"show_text","contents":{"text":"中途进入已经开始的游戏","color":"white"}}}
+tellraw @s[x=-79956,y=38,z=-29] {"text":"中途加入","underlined":true,"color":"green","click_event":{"action":"run_command","value":"/trigger MultiMenu set 112"},"hover_event":{"action":"show_text","value":{"text":"中途进入已经开始的游戏","color":"white"}}}
 tellraw @s[x=-79956,y=38,z=-29] {"text":""}

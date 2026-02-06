@@ -72,41 +72,41 @@ execute if entity @s[tag=!SEA_w_axe_upg16] run data modify entity @n[tag=SEA_w_a
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarker0]","color":"red"},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker1]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50101"},"hover_event":{"action":"show_text","contents":{"text":"消耗：1\n攻击力增加0.5","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker2]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50102"},"hover_event":{"action":"show_text","contents":{"text":"消耗：1\n攻击速度增加0.1","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker3]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50103"},"hover_event":{"action":"show_text","contents":{"text":"消耗：2\n攻击力增加0.5","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker4]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50104"},"hover_event":{"action":"show_text","contents":{"text":"消耗：1\n攻击力增加1.0","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker5]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50105"},"hover_event":{"action":"show_text","contents":{"text":"消耗：2\n攻击力增加1.0","color":"white"}}}]
+{"selector":"@n[tag=SEA_w_axe_displaymarker1]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50101"},"hover_event":{"action":"show_text","value":{"text":"消耗：1\n攻击力增加0.5","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker2]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50102"},"hover_event":{"action":"show_text","value":{"text":"消耗：1\n攻击速度增加0.1","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker3]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50103"},"hover_event":{"action":"show_text","value":{"text":"消耗：2\n攻击力增加0.5","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker4]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50104"},"hover_event":{"action":"show_text","value":{"text":"消耗：1\n攻击力增加1.0","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker5]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50105"},"hover_event":{"action":"show_text","value":{"text":"消耗：2\n攻击力增加1.0","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarker0b]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker6]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50106"},"hover_event":{"action":"show_text","contents":{"text":"消耗：1\n攻击速度增加0.1","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker6]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50106"},"hover_event":{"action":"show_text","value":{"text":"消耗：1\n攻击速度增加0.1","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker7]","color":"yellow","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50107"},"hover_event":{"action":"show_text","contents":{"text":"消耗：1\n击退距离略微增加","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker7]","color":"yellow","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50107"},"hover_event":{"action":"show_text","value":{"text":"消耗：1\n击退距离略微增加","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarker0b]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker8]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50108"},"hover_event":{"action":"show_text","contents":{"text":"消耗：2\n攻击速度增加0.1","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker9]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50109"},"hover_event":{"action":"show_text","contents":{"text":"消耗：2\n攻击速度增加0.1","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker10]","color":"yellow","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50110"},"hover_event":{"action":"show_text","contents":{"text":"消耗：4\n击退距离略微增加","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker11]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50111"},"hover_event":{"action":"show_text","contents":{"text":"消耗：2\n攻击力增加1.0","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker12]","color":"aqua","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50112"},"hover_event":{"action":"show_text","contents":{"text":"消耗：3\n技能：左右移动时攻击可施展横扫攻击\n多次升级可略微增加攻击力与范围","color":"white"}}}]
+{"selector":"@n[tag=SEA_w_axe_displaymarker8]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50108"},"hover_event":{"action":"show_text","value":{"text":"消耗：2\n攻击速度增加0.1","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker9]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50109"},"hover_event":{"action":"show_text","value":{"text":"消耗：2\n攻击速度增加0.1","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker10]","color":"yellow","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50110"},"hover_event":{"action":"show_text","value":{"text":"消耗：4\n击退距离略微增加","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker11]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50111"},"hover_event":{"action":"show_text","value":{"text":"消耗：2\n攻击力增加1.0","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker12]","color":"aqua","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50112"},"hover_event":{"action":"show_text","value":{"text":"消耗：3\n技能：左右移动时攻击可施展横扫攻击\n多次升级可略微增加攻击力与范围","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarker0b]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker13]","color":"aqua","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50113"},"hover_event":{"action":"show_text","contents":{"text":"消耗：1\n技能：左右移动时攻击可施展横扫攻击\n多次升级可略微增加攻击力与范围","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker13]","color":"aqua","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50113"},"hover_event":{"action":"show_text","value":{"text":"消耗：1\n技能：左右移动时攻击可施展横扫攻击\n多次升级可略微增加攻击力与范围","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker14]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50114"},"hover_event":{"action":"show_text","contents":{"text":"消耗：2\n攻击力增加1.0","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker14]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50114"},"hover_event":{"action":"show_text","value":{"text":"消耗：2\n攻击力增加1.0","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarker0b]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker15]","color":"aqua","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50115"},"hover_event":{"action":"show_text","contents":{"text":"消耗：3\n技能：左右移动时攻击可施展横扫攻击\n多次升级可略微增加攻击力与范围","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker15]","color":"aqua","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50115"},"hover_event":{"action":"show_text","value":{"text":"消耗：3\n技能：左右移动时攻击可施展横扫攻击\n多次升级可略微增加攻击力与范围","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_axe_displaymarker16]","color":"yellow","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50116"},"hover_event":{"action":"show_text","contents":{"text":"消耗：2\n击退距离略微增加","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_axe_displaymarker16]","color":"yellow","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50116"},"hover_event":{"action":"show_text","value":{"text":"消耗：2\n击退距离略微增加","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_axe_displaymarkerE]","color":"dark_gray"}]
 

@@ -13,7 +13,7 @@ execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 5 run tellraw
 tellraw @s {"text":"个人状态","bold":false,"underlined":true,"color":"yellow","click_event":{"action":"run_command","value":"/trigger MultiMenu set 4"}}
 tellraw @s {"text":"浮世币转账","bold":false,"color":"gold"}
 tellraw @s [{"text":"50FSB","bold":false,"underlined":true,"color":"white","click_event":{"action":"run_command","value":"/trigger MultiMenu set 16210009"}},{"text":"   ","underlined":false},{"text":"500FSB","bold":false,"underlined":true,"color":"white","click_event":{"action":"run_command","value":"/trigger MultiMenu set 16210010"}},{"text":"   ","underlined":false},{"text":"5000FSB","bold":false,"underlined":true,"color":"white","click_event":{"action":"run_command","value":"/trigger MultiMenu set 16210011"}}]
-tellraw @s {"text":"浮世币归零","bold":false,"underlined":true,"color":"yellow","click_event":{"action":"run_command","value":"/trigger MultiMenu set 16210012"},"hover_event":{"action":"show_text","contents":{"text":"将降至-500以下的浮世币余额归零","color":"white"}}}
+tellraw @s {"text":"浮世币归零","bold":false,"underlined":true,"color":"yellow","click_event":{"action":"run_command","value":"/trigger MultiMenu set 16210012"},"hover_event":{"action":"show_text","value":{"text":"将降至-500以下的浮世币余额归零","color":"white"}}}
 tellraw @s[tag=!Stal] {"text":"购买主城音乐 Stal 1000FSB","bold":false,"underlined":true,"color":"gold","click_event":{"action":"run_command","value":"/trigger MultiMenu set 16210013"}}
 tellraw @s[tag=Stal] {"text":"主城音乐 Stal 已解锁","bold":false,"underlined":false,"color":"dark_gray"}
 scoreboard players set @s If_TalkVill 0

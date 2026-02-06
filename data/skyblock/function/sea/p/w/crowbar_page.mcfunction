@@ -62,39 +62,39 @@ execute if entity @s[tag=!SEA_w_crowbar_upg16] run data modify entity @n[tag=SEA
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarker0]","color":"red"},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker1]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50001"},"hover_event":{"action":"show_text","contents":{"text":"消耗：1\n攻击力增加0.5","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker2]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50002"},"hover_event":{"action":"show_text","contents":{"text":"消耗：1\n攻击速度增加0.1","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker3]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50003"},"hover_event":{"action":"show_text","contents":{"text":"消耗：1\n攻击力增加0.5","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker4]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50004"},"hover_event":{"action":"show_text","contents":{"text":"消耗：1\n攻击速度增加0.1","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker5]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50005"},"hover_event":{"action":"show_text","contents":{"text":"消耗：2\n攻击力增加0.5","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker6]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50006"},"hover_event":{"action":"show_text","contents":{"text":"消耗：2\n攻击速度增加0.1","color":"white"}}}]
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker1]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50001"},"hover_event":{"action":"show_text","value":{"text":"消耗：1\n攻击力增加0.5","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker2]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50002"},"hover_event":{"action":"show_text","value":{"text":"消耗：1\n攻击速度增加0.1","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker3]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50003"},"hover_event":{"action":"show_text","value":{"text":"消耗：1\n攻击力增加0.5","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker4]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50004"},"hover_event":{"action":"show_text","value":{"text":"消耗：1\n攻击速度增加0.1","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker5]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50005"},"hover_event":{"action":"show_text","value":{"text":"消耗：2\n攻击力增加0.5","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker6]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50006"},"hover_event":{"action":"show_text","value":{"text":"消耗：2\n攻击速度增加0.1","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker7]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50007"},"hover_event":{"action":"show_text","contents":{"text":"消耗：1\n攻击速度增加0.1","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker7]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50007"},"hover_event":{"action":"show_text","value":{"text":"消耗：1\n攻击速度增加0.1","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker8]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50008"},"hover_event":{"action":"show_text","contents":{"text":"消耗：2\n攻击速度增加0.2","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker8]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50008"},"hover_event":{"action":"show_text","value":{"text":"消耗：2\n攻击速度增加0.2","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker9]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50009"},"hover_event":{"action":"show_text","contents":{"text":"消耗：2\n攻击速度增加0.2","color":"white"}}}]
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker9]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50009"},"hover_event":{"action":"show_text","value":{"text":"消耗：2\n攻击速度增加0.2","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker10]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50010"},"hover_event":{"action":"show_text","contents":{"text":"消耗：2\n攻击力增加0.5","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker11]","color":"light_purple","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50011"},"hover_event":{"action":"show_text","contents":{"text":"消耗：2\n攻击距离增加0.3","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker12]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50012"},"hover_event":{"action":"show_text","contents":{"text":"消耗：2\n攻击速度增加0.2","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker13]","color":"light_purple","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50013"},"hover_event":{"action":"show_text","contents":{"text":"消耗：2\n攻击距离增加0.3","color":"white"}}},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker14]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50014"},"hover_event":{"action":"show_text","contents":{"text":"消耗：3\n攻击力增加1.0","color":"white"}}}]
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker10]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50010"},"hover_event":{"action":"show_text","value":{"text":"消耗：2\n攻击力增加0.5","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker11]","color":"light_purple","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50011"},"hover_event":{"action":"show_text","value":{"text":"消耗：2\n攻击距离增加0.3","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker12]","color":"green","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50012"},"hover_event":{"action":"show_text","value":{"text":"消耗：2\n攻击速度增加0.2","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker13]","color":"light_purple","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50013"},"hover_event":{"action":"show_text","value":{"text":"消耗：2\n攻击距离增加0.3","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker14]","color":"dark_red","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50014"},"hover_event":{"action":"show_text","value":{"text":"消耗：3\n攻击力增加1.0","color":"white"}}}]
 
 tellraw @s [{"text":" ","color":"light_purple"},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarker0b]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]","color":"dark_gray"},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker15]","color":"light_purple","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50015"},"hover_event":{"action":"show_text","contents":{"text":"消耗：3\n攻击距离增加0.3","color":"white"}}},\
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker15]","color":"light_purple","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50015"},"hover_event":{"action":"show_text","value":{"text":"消耗：3\n攻击距离增加0.3","color":"white"}}},\
 {"selector":"@n[tag=SEA_w_crowbar_displaymarkerE]","color":"dark_gray"},\
-{"selector":"@n[tag=SEA_w_crowbar_displaymarker16]","color":"light_purple","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50016"},"hover_event":{"action":"show_text","contents":{"text":"消耗：3\n攻击距离增加0.3","color":"white"}}}]
+{"selector":"@n[tag=SEA_w_crowbar_displaymarker16]","color":"light_purple","click_event":{"action":"run_command","value":"/trigger sea_crafter set 50016"},"hover_event":{"action":"show_text","value":{"text":"消耗：3\n攻击距离增加0.3","color":"white"}}}]
 
 #function skyblock:sea/p/w/crowbar_cost
 #function skyblock:sea/p/w/axe_cost
