@@ -6,7 +6,7 @@ scoreboard players operation playerCount Azr_system += DEBUG_fakePlayer Azr_syst
 execute store result score mobCount Azr_system if entity @e[tag=AzrielMob,tag=!AzrielDecMob,x=-79931,y=100,z=0,distance=..10000,limit=70]
 #自动读秒
 scoreboard players add stage_main_thread AzrTimerStack 1
-execute if score #is_stopped:stage_main_thread AzrTimerStack matches 1.. if items entity @a[tag=azrPlayer] weapon.* *[custom_data~{azr_amulet_stopwatch:1b}] run title @a[tag=azrShowDialog] actionbar {"text": "- 计 时 暂 停 -","color": "#debc66",bold:1b}
+execute if score #is_stopped:stage_main_thread AzrTimerStack matches 1.. if items entity @a[tag=azrPlayer] weapon.* *[custom_data~{azr_amulet_stopwatch:1b}] run title @a[tag=azrShowDialog] actionbar {text:"- 计 时 暂 停 -","color": "#debc66",bold:1b}
 execute if score #is_stopped:stage_main_thread AzrTimerStack matches 1.. if items entity @a[tag=azrPlayer] weapon.* *[custom_data~{azr_amulet_stopwatch:1b}] run scoreboard players remove stage_main_thread AzrTimerStack 1
 
 scoreboard players add stage_bonus_thread AzrTimerStack 1

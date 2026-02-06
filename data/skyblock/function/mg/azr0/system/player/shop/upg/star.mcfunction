@@ -13,6 +13,6 @@ execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_star=4}] run scoreboa
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_star=5}] run scoreboard players remove @s Azr0_emerald 1000
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_star=6}] run scoreboard players remove @s Azr0_emerald 1000
 execute if entity @s[tag=AZR0SHOP_SUCCESS] run scoreboard players add @s Azr0_UPG_star 1
-execute if entity @s[tag=AZR0SHOP_SUCCESS] run tellraw @s {"text": "获得命星×1！","color": "green"}
+execute if entity @s[tag=AZR0SHOP_SUCCESS] run tellraw @s {text:"获得命星×1！","color": "green"}
 execute if entity @s[tag=AZR0SHOP_SUCCESS] run playsound block.beacon.activate player @s ~ ~ ~ 1 1.4
 tag @s remove AZR0SHOP_SUCCESS

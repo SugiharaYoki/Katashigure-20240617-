@@ -74,5 +74,5 @@ execute if score SEA_chg_true_end sea_4temp1 matches 47 run setblock 90093 127 1
 
 execute if score SEA_chg_true_end sea_4temp1 matches 68..70 positioned 90119 137 108 if entity @e[type=zombie,tag=SEAknight,distance=..15] run scoreboard players set SEA_chg_true_end sea_4temp1 68
 execute if score SEA_chg_true_end sea_4temp1 matches 72 positioned 90119 137 108 as @a[tag=SEAPT] at @s run title @s times 0s 2s 2s
-execute if score SEA_chg_true_end sea_4temp1 matches 72 positioned 90119 137 108 as @a[tag=SEAPT] at @s run title @s title {"text": "无 神 的 忒 尔 克 西","color": "dark_red",bold:1b}
+execute if score SEA_chg_true_end sea_4temp1 matches 72 positioned 90119 137 108 as @a[tag=SEAPT] at @s run title @s title {text:"无 神 的 忒 尔 克 西","color": "dark_red",bold:1b}
 execute if score SEA_chg_true_end sea_4temp1 matches 72 positioned 90119 137 108 as @a[tag=SEAPT] at @s run playsound garden2.chapter_title master @s ~ ~ ~ 100 1.0

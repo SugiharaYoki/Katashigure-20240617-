@@ -50,9 +50,9 @@ if entity @s[scores={sea_i_spectral=1..}] \
 run tag @s add SEA_spectral_autocharge
 
 execute if items entity @s weapon.mainhand crossbow[charged_projectiles=[{id:"minecraft:arrow"}]] \
-run title @s actionbar [{"text": "目前装填：","color": "gray"},{"text": "普通箭矢","color": "white"}]
+run title @s actionbar [{text:"目前装填：","color": "gray"},{text:"普通箭矢","color": "white"}]
 execute if items entity @s weapon.mainhand crossbow[charged_projectiles=[{id:"minecraft:spectral_arrow"}]] \
-run title @s actionbar [{"text": "目前装填：","color": "gray"},{"text": "静滞光棱","color": "gold"}]
+run title @s actionbar [{text:"目前装填：","color": "gray"},{text:"静滞光棱","color": "gold"}]
 
 execute as @s[tag=SEA_spectral_autocharge] at @s run forceload add 90205 112
 execute as @s[tag=SEA_spectral_autocharge] at @s run item replace block 90205 13 112 container.0 from entity @s weapon.mainhand

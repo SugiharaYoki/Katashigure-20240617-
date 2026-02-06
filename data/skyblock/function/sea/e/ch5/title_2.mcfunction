@@ -1,5 +1,5 @@
 title @s times 0s 2s 2s
-title @s title {"text": "工 程 区","color": "white",bold:1b}
+title @s title {text:"工 程 区","color": "white",bold:1b}
 
 playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.5
 playsound ambient.basalt_deltas.mood master @s ~ ~ ~ 100 0.5

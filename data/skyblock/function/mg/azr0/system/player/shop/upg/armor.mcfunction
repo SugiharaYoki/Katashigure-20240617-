@@ -28,7 +28,7 @@ execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=7}] run item re
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_armor=8}] run item replace entity @s armor.chest with iron_chestplate[custom_data={azr0armor_chest:true},attribute_modifiers=[{type:"armor",id:"mg_azr0_armor:chest_0_1",amount:18,operation:"add_value"},{type:"armor_toughness",id:"mg_azr0_armor:chest_0_2",amount:4,operation:"add_value"}],unbreakable={},enchantments={binding_curse:1b,vanishing_curse:1b},enchantment_glint_override=false,trim={material:redstone,pattern:rib}]
 
 execute if entity @s[tag=AZR0SHOP_SUCCESS,tag=!azr0_load_game] run scoreboard players add @s Azr0_UPG_armor 1
-execute if entity @s[tag=AZR0SHOP_SUCCESS,tag=!azr0_load_game] run tellraw @s {"text": "升级成功！","color": "green"}
+execute if entity @s[tag=AZR0SHOP_SUCCESS,tag=!azr0_load_game] run tellraw @s {text:"升级成功！","color": "green"}
 execute if entity @s[tag=AZR0SHOP_SUCCESS,tag=!azr0_load_game] run playsound entity.player.levelup player @s ~ ~ ~ 1 1
 execute if entity @s[tag=AZR0SHOP_SUCCESS,tag=!azr0_load_game] run playsound item.armor.equip_generic player @s ~ ~ ~ 1 1
 tag @s remove AZR0SHOP_SUCCESS

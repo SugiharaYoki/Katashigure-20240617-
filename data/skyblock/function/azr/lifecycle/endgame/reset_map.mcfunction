@@ -91,7 +91,7 @@ setblock -79905 42 33 chest[facing=west]
 item replace block -79905 42 33 container.13 with emerald 3
 fill -79924 36 34 -79924 33 34 minecraft:purple_stained_glass
 setblock -79908 34 31 minecraft:chest[facing=west]
-item replace block -79908 34 31 container.12 with skull_banner_pattern[custom_name={"text": "“最近的花卉涨势很怪异”", "color": "dark_purple",italic:0b}, lore=['{"text": "倒不是我神经过敏了吧，这些花的生长速度是不是太快了？",color:"white", italic:0b},'{"text": "简单培育的苔藓类植物已经遍布了整个培育室。",color:"white", italic:0b},'{"text": "它们吸收魔力生长，以其作为养分。",color:"white", italic:0b},'{"text": "那这是否意味着空气中的魔力浓度已经高到了一种难以想象的程度？",color:"white", italic:0b}]] 1
+item replace block -79908 34 31 container.12 with skull_banner_pattern[custom_name={text:"“最近的花卉涨势很怪异”", "color": "dark_purple",italic:0b}, lore=[{text:"倒不是我神经过敏了吧，这些花的生长速度是不是太快了？",color:"white", italic:0b},{text:"简单培育的苔藓类植物已经遍布了整个培育室。",color:"white", italic:0b},{text:"它们吸收魔力生长，以其作为养分。",color:"white", italic:0b},{text:"那这是否意味着空气中的魔力浓度已经高到了一种难以想象的程度？",color:"white", italic:0b}]] 1
 item replace block -79908 34 31 container.14 with coal 1
   #天台的花
 fill -79904 44 8 -79901 44 8 minecraft:potted_azalea_bush
@@ -112,7 +112,7 @@ setblock -79942 33 11 minecraft:honey_block
 setblock -79939 28 17 air
 setblock -79939 28 17 lever[facing=west]
 setblock -79948 25 22 chest[facing=east]
-item replace block -79948 25 22 container.12 with skull_banner_pattern[custom_name={"text": "“生与死的力量全都过剩。”", "color": "dark_purple",italic:0b}, lore=['{"text": "这些苔藓是被一种混沌力量所影响。",color:"white", italic:0b},'{"text": "我在图书馆查阅过，那是被神庭控制的亡灵生物死亡时逸散的能量。",color:"white", italic:0b},'{"text": "但从前这个阈值都被控制在一个安全的范畴。",color:"white", italic:0b},'{"text": "为何偏偏是在最近过量出现？",color:"white", italic:0b}]] 1
+item replace block -79948 25 22 container.12 with skull_banner_pattern[custom_name={text:"“生与死的力量全都过剩。”", "color": "dark_purple",italic:0b}, lore=[{text:"这些苔藓是被一种混沌力量所影响。",color:"white", italic:0b},{text:"我在图书馆查阅过，那是被神庭控制的亡灵生物死亡时逸散的能量。",color:"white", italic:0b},{text:"但从前这个阈值都被控制在一个安全的范畴。",color:"white", italic:0b},{text:"为何偏偏是在最近过量出现？",color:"white", italic:0b}]] 1
 item replace block -79948 25 22 container.14 with coal 2
 
 #Stage3 beta
@@ -136,7 +136,7 @@ setblock -79912 39 36 minecraft:potted_allium
 
   #小庭院跳跃宝箱
 setblock -79907 39 44 chest[facing=west]
-item replace block -79907 39 44 container.12 with skull_banner_pattern[custom_name={"text": "“我的东南水路正门钥匙被人偷走六回了”", "color": "dark_purple",italic:0b}, lore=['{"text": "我不知道是谁对禁地这么感兴趣。",color:"white", italic:0b},'{"text": "如果只是对下水道感兴趣的话，那人完全可以选择其他三个区域。",color:"white", italic:0b},'{"text": "魔神的力量……果然也在被觊觎着吧。",color:"white", italic:0b}]] 1
+item replace block -79907 39 44 container.12 with skull_banner_pattern[custom_name={text:"“我的东南水路正门钥匙被人偷走六回了”", "color": "dark_purple",italic:0b}, lore=[{text:"我不知道是谁对禁地这么感兴趣。",color:"white", italic:0b},{text:"如果只是对下水道感兴趣的话，那人完全可以选择其他三个区域。",color:"white", italic:0b},{text:"魔神的力量……果然也在被觊觎着吧。",color:"white", italic:0b}]] 1
 item replace block -79907 39 44 container.14 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
 
   #苔藓培育室
@@ -378,9 +378,9 @@ setblock -79850 48 205 chest[facing=south]
 item replace block -79850 48 205 container.12 with emerald 3
 item replace block -79850 48 205 container.14 with skull_banner_pattern[custom_name={text:"“招待厅事务记录3”",color:"dark_purple",italic:0b},lore=[{text:"权之残影大人说过，挑战者可能会来到大图书馆。",color:"white",italic:0b},{text:"但是在此处巡逻的夜盲虫会对任何亡灵造成致命伤害。",color:"white",italic:0b},{text:"已经死去并成为亡灵的挑战者，必定会被夜盲虫重创。",color:"white",italic:0b},{text:"试炼的过程是被精心安排的，",color:"white",italic:0b},{text:"不知挑战者本人能否看穿这件事实。",color:"white",italic:0b}]] 1
 setblock -79854 48 176 chest[facing=south]
-item replace block -79854 48 176 container.11 with book[lore=['{text:"里面的文字跟我来说和图片没有任何区别。",color:"white",italic:0b},{text:"对我来说是不折不扣的垃圾，丢了吧。",color:"white",italic:0b}]] 1
-item replace block -79854 48 176 container.13 with book[lore=['{text:"战斗了大半天，结果白跑一趟……",color:"white",italic:0b},{text:"这本书的所有内容我都没法看懂。",color:"white",italic:0b},{text:"对我来说是不折不扣的垃圾，丢了吧。",color:"white",italic:0b}]] 1
-item replace block -79854 48 176 container.15 with book[lore=['{text:"……我就非要三本都读过才信这个邪吗？",color:"white",italic:0b}]] 1
+item replace block -79854 48 176 container.11 with book[lore=[{text:"里面的文字跟我来说和图片没有任何区别。",color:"white",italic:0b},{text:"对我来说是不折不扣的垃圾，丢了吧。",color:"white",italic:0b}]] 1
+item replace block -79854 48 176 container.13 with book[lore=[{text:"战斗了大半天，结果白跑一趟……",color:"white",italic:0b},{text:"这本书的所有内容我都没法看懂。",color:"white",italic:0b},{text:"对我来说是不折不扣的垃圾，丢了吧。",color:"white",italic:0b}]] 1
+item replace block -79854 48 176 container.15 with book[lore=[{text:"……我就非要三本都读过才信这个邪吗？",color:"white",italic:0b}]] 1
 
 
   #物品框
@@ -876,10 +876,10 @@ forceload remove -79541 -472 -79345 -350
 #______________________________________________________________#
 kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1000]
 
-tellraw @a[tag=!Gaming] {"text": "死亡总是在不经意间，悄然而至。","color": "green"}
-tellraw @a[tag=!Gaming] {"text": "你本该活得更久。如果想要违抗自己的死亡……","color": "green"}
-tellraw @a[tag=!Gaming] {"text": "那就，前往天界的生命树庭园吧。","color": "green"}
-tellraw @a[tag=!Gaming] [{"text": "『亚兹列尔的中庭花园』","color": "light_purple",bold:1b},{"text": " 已允许新的挑战者光临","color": "green",bold: false}]
+tellraw @a[tag=!Gaming] {text:"死亡总是在不经意间，悄然而至。","color": "green"}
+tellraw @a[tag=!Gaming] {text:"你本该活得更久。如果想要违抗自己的死亡……","color": "green"}
+tellraw @a[tag=!Gaming] {text:"那就，前往天界的生命树庭园吧。","color": "green"}
+tellraw @a[tag=!Gaming] [{text:"『亚兹列尔的中庭花园』","color": "light_purple",bold:1b},{text:" 已允许新的挑战者光临","color": "green",bold: false}]
 
 
 scoreboard players set stage_main_thread AzrTimerStack 0

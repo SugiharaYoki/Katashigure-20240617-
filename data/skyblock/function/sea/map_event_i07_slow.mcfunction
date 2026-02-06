@@ -109,12 +109,12 @@ execute if score SEA_ch6_event sea_4temp4 matches 15148 as @a[tag=SEAPT] at @s r
 execute if score SEA_ch6_event sea_4temp4 matches 15150 run clear @a[tag=SEAPT]
 execute if score SEA_ch6_event sea_4temp4 matches 15149 as @a[tag=SEAPT] run tellraw @s [{text:"达成结局：",color:"gold",bold:1b},{text:"\nTrue End「时针的延续」",color:"white",bold: false}]
 execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{text:"新模式解锁！",color:"green",bold:1b},{text:"已解锁“佛卡洛之隐”极难游戏模式！\n该游戏模式无法使用命星复活，也无法利用“塞壬的指引”。\n试着挑战自己的极限吧！",color:"white",bold: false}]
-execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{text:"永久奖励：",color:"green",bold:1b},{"text": "已获得可用于多功能工作站的永久升级。\n防具第3起始点的升级会始终点亮最左两格。","color": "white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{text:"永久奖励：",color:"green",bold:1b},{"text": "撬棍类武器的基础攻击力 +0.5","color": "white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{text:"永久奖励：",color:"green",bold:1b},{"text": "消防斧类武器的基础攻击力 +1.0","color": "white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{text:"永久奖励：",color:"green",bold:1b},{"text": "光棱箭的最大持有数量 +2","color": "white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..18}] [{text:"永久奖励：",color:"green",bold:1b},{"text": "拾起模板时获得的数量翻倍","color": "white"}]
-execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..18}] [{text:"永久奖励：",color:"green",bold:1b},{"text": "对深海侵蚀的耐性增加50%","color": "white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{text:"永久奖励：",color:"green",bold:1b},{text:"已获得可用于多功能工作站的永久升级。\n防具第3起始点的升级会始终点亮最左两格。","color": "white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{text:"永久奖励：",color:"green",bold:1b},{text:"撬棍类武器的基础攻击力 +0.5","color": "white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{text:"永久奖励：",color:"green",bold:1b},{text:"消防斧类武器的基础攻击力 +1.0","color": "white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..17}] [{text:"永久奖励：",color:"green",bold:1b},{text:"光棱箭的最大持有数量 +2","color": "white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..18}] [{text:"永久奖励：",color:"green",bold:1b},{text:"拾起模板时获得的数量翻倍","color": "white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 15149 run tellraw @a[tag=SEAPT,scores={sea_progress=..18}] [{text:"永久奖励：",color:"green",bold:1b},{text:"对深海侵蚀的耐性增加50%","color": "white"}]
 execute if score SEA_ch6_event sea_4temp4 matches 15149 run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..18}] sea_progress 19
 execute if score SEA_ch6_event sea_4temp4 matches 15150 as @a[tag=SEAPT] run function skyblock:sea/dead
 

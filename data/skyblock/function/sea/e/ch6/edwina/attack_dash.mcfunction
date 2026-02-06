@@ -1,6 +1,6 @@
 scoreboard players add @s rng8 1
 
-#execute as @s[scores={rng8=2},tag=SEAboss4_attack_dash] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "举起消防斧。","color": "yellow"}]
+#execute as @s[scores={rng8=2},tag=SEAboss4_attack_dash] at @s run tellraw @a[tag=SEAPT] [{text:"艾德雯娜","color": "red"},{text:"举起消防斧。","color": "yellow"}]
 execute as @s[scores={rng8=2..29},tag=SEAboss4_attack_dash] at @s run item replace entity @s weapon.mainhand with iron_axe
 execute as @s[scores={rng8=5..29},tag=SEAboss4_attack_dash] at @s if entity @n[tag=SEAmob,tag=!SEAcreak,distance=0..1.1] run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 1.1
 execute as @s[scores={rng8=5..29},tag=SEAboss4_attack_dash] at @s if entity @n[tag=SEAmob,tag=!SEAcreak,distance=0..1.1] rotated ~ 0 run particle sweep_attack ^ ^1.2 ^1.1 0.35 0.2 0.35 0 2

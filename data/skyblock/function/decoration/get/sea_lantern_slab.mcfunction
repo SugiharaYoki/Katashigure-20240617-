@@ -1,1 +1,1 @@
-give @s allay_spawn_egg[minecraft:entity_data={id:"minecraft:marker",Tags:["sea_lantern_slab"]},item_name='"玻璃罩海晶灯"',lore=['{text:"移除方法: 敲除该自定义方块位置的光源方块或屏障方块",color:"white",italic:0b},{text:"更改方法: 允许将该自定义方块位置的光源方块替换为屏障方块而不移除",color:"white",italic:0b}]]
+give @s allay_spawn_egg[minecraft:entity_data={id:"minecraft:marker",Tags:["sea_lantern_slab"]},item_name='"玻璃罩海晶灯"',lore=[{text:"移除方法: 敲除该自定义方块位置的光源方块或屏障方块",color:"white",italic:0b},{text:"更改方法: 允许将该自定义方块位置的光源方块替换为屏障方块而不移除",color:"white",italic:0b}]]

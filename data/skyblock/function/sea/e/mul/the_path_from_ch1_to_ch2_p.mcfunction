@@ -1,4 +1,4 @@
-tellraw @a[tag=SEAPT] {"text": "通过数人的努力，未知的机关被触发了……", "color": "blue"}
+tellraw @a[tag=SEAPT] {text:"通过数人的努力，未知的机关被触发了……", "color": "blue"}
 playsound block.note_block.harp block @a ~ ~ ~ 3 2
 setblock 90082 111 111 lever[facing=south]
 

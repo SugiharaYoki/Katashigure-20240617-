@@ -1,5 +1,5 @@
 title @s times 0s 2s 2s
-title @s title {"text": "实 验 区","color": "blue",bold:1b}
+title @s title {text:"实 验 区","color": "blue",bold:1b}
 playsound ambient.warped_forest.loop master @s ~ ~ ~ 100 0.8
 playsound ambient.warped_forest.loop master @s ~ ~ ~ 100 1.2
 playsound garden2.chapter_title master @s ~ ~ ~ 100 1.0

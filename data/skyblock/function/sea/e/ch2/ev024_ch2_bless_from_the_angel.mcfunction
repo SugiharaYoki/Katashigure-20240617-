@@ -2,7 +2,7 @@
 
 
 execute if entity @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..3] unless entity @a[tag=SEAPT,x=90142,y=129,z=117,distance=8..] if score sea_ch2_angel_bless_trial sea_4temp2 matches 955..962 run scoreboard players set sea_ch2_angel_bless_trial sea_4temp2 1000
-execute as @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..3,tag=!e_i_22] if entity @a[tag=SEAPT,x=90142,y=129,z=117,distance=8..] if score sea_ch2_angel_bless_trial sea_4temp2 matches 955..962 run tellraw @s {"text": "总感觉似乎……所有人都得到这里来才能安全前进。","color": "gray"}
+execute as @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..3,tag=!e_i_22] if entity @a[tag=SEAPT,x=90142,y=129,z=117,distance=8..] if score sea_ch2_angel_bless_trial sea_4temp2 matches 955..962 run tellraw @s {text:"总感觉似乎……所有人都得到这里来才能安全前进。","color": "gray"}
 execute as @a[tag=SEAPT,x=90138,y=129,z=117,distance=0..3] if entity @a[tag=SEAPT,x=90142,y=129,z=117,distance=8..] if score sea_ch2_angel_bless_trial sea_4temp2 matches 955..962 run tag @s add e_i_22
 
 
@@ -37,7 +37,7 @@ execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 run fill 90130
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 901 run setblock 90125 130 115 minecraft:air
 
 execute if block 90129 129 124 stone_button[powered=true] run scoreboard players set sea_ch2_angel_bless_trial sea_4temp2 950
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 951 run tellraw @a[tag=SEAPT] {"text": "播报：北冷冻库空气循环系统已关闭。","color": "green"}
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 951 run tellraw @a[tag=SEAPT] {text:"播报：北冷冻库空气循环系统已关闭。","color": "green"}
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 951 run kill @n[tag=SEArivette]
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 951 run time set 14500t
 

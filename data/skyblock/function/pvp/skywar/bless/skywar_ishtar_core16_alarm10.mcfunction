@@ -10,6 +10,6 @@ execute if entity @s[team=Team1_8] if entity @a[distance=..12,team=!Team1_8,game
 
 
 execute if entity @s[tag=Skywar_ishtar_16_alarm10_temp] run playsound minecraft:block.note_block.banjo ambient @s ~ ~1 ~ 4 0.8
-execute if entity @s[tag=Skywar_ishtar_16_alarm10_temp] run tellraw @s [{"text": "探测：", bold:1b, "color": "yellow"},{"text": "12格内出现了其他队伍的玩家！", bold: false, "color": "yellow"}]
+execute if entity @s[tag=Skywar_ishtar_16_alarm10_temp] run tellraw @s [{text:"探测：", bold:1b, "color": "yellow"},{text:"12格内出现了其他队伍的玩家！", bold: false, "color": "yellow"}]
 execute if entity @s[tag=Skywar_ishtar_16_alarm10_temp] run tag @s add Skywar_ishtar_16_alarm10
 tag @s remove Skywar_ishtar_16_alarm10_temp

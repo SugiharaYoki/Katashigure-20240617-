@@ -1,4 +1,4 @@
-execute as @s[scores={rng8=2},tag=SEAboss4_defense] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "防守中。","color": "yellow"}]
+execute as @s[scores={rng8=2},tag=SEAboss4_defense] at @s run tellraw @a[tag=SEAPT] [{text:"艾德雯娜","color": "red"},{text:"防守中。","color": "yellow"}]
 execute as @s[scores={rng8=2..60},tag=SEAboss4_defense] at @s run item replace entity @s weapon.mainhand with shield
 execute as @s[scores={rng8=2},tag=SEAboss4_defense] at @s run effect give @s resistance 3 3 true
 execute as @s[scores={rng8=2},tag=SEAboss4_defense] at @s run particle trial_spawner_detection ~ ~ ~ 0.8 0 0.8 0 5

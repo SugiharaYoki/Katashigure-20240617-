@@ -19,7 +19,7 @@ item replace entity @a[tag=SEAPT] armor.legs with leather_leggings[custom_name={
 item replace entity @a[tag=SEAPT] hotbar.0 with iron_hoe[custom_name={text:"撬棍",italic:0b,color:"red"},custom_data={sea_crowbar:true},attribute_modifiers=[{type:"attack_damage",slot:"mainhand",id:"sea_weapon:001_01",amount:1.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"sea_weapon:001_02",amount:-1.5,operation:"add_value"}],unbreakable={}]
 item replace entity @a[tag=SEAPT] hotbar.1 with iron_axe[custom_name={text:"消防斧",italic:0b,color:"red"},custom_data={sea_safeaxe:true},attribute_modifiers=[{type:"attack_damage",slot:"mainhand",id:"sea_weapon:004_01",amount:6.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"sea_weapon:004_02",amount:-3.0,operation:"add_value"}],unbreakable={}]
 
-item replace entity @a[tag=SEAPT] inventory.25 with spyglass[lore=['{text:"我随身携带的望远镜。",color:"white",italic:0b},{text:"在前途未知的时刻，紧握住它可以让我不再迷惘。",color:"white",italic:0b},{text:"手持时：显示任务目标 & 跳过已阅读的剧情对话",color:"green",italic:0b}]]
+item replace entity @a[tag=SEAPT] inventory.25 with spyglass[lore=[{text:"我随身携带的望远镜。",color:"white",italic:0b},{text:"在前途未知的时刻，紧握住它可以让我不再迷惘。",color:"white",italic:0b},{text:"手持时：显示任务目标 & 跳过已阅读的剧情对话",color:"green",italic:0b}]]
 
 scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 3001
 

@@ -104,9 +104,9 @@ execute if entity @a[tag=SEAPT,tag=e_w_03] run item replace entity @s hotbar.2 w
 #execute if entity @a[tag=SEAPT,tag=e_w_04] run give @s shears[custom_name={text:"喷火器",italic:0b,color:"red"},custom_data={sea_flamethrower:true},unbreakable={}]
 execute if entity @a[tag=SEAPT,tag=e_w_06] run item replace entity @s inventory.19 with music_disc_5[custom_name={text:"磁锯发射装置",italic:0b,color:"red"},custom_data={sea_flamethrower:true},unbreakable={}]
 
-execute if items entity @a[tag=SEAPT] container.* shield run item replace entity @s inventory.18 with shield[custom_name={text:"防护盾",italic:0b,color:"red"},custom_data={sea_shield:true},attribute_modifiers=[{type:"movement_speed",slot:"hand",id:"sea_armor:004_01",amount:-0.03,operation:"add_value"}],lore=['{text:"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）",color:"white",italic:0b},{text:"在这期间受到攻击并反击可以造成巨额伤害",color:"white",italic:0b}]]
+execute if items entity @a[tag=SEAPT] container.* shield run item replace entity @s inventory.18 with shield[custom_name={text:"防护盾",italic:0b,color:"red"},custom_data={sea_shield:true},attribute_modifiers=[{type:"movement_speed",slot:"hand",id:"sea_armor:004_01",amount:-0.03,operation:"add_value"}],lore=[{text:"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）",color:"white",italic:0b},{text:"在这期间受到攻击并反击可以造成巨额伤害",color:"white",italic:0b}]]
 
-execute if items entity @a[tag=SEAPT] container.* *[custom_data={sea_t_ripper1:true}] run give @s silence_armor_trim_smithing_template[custom_name={text:"超频声荡 I",italic:0b,color:"red"},custom_data={sea_t_ripper1:true},lore=['{text:"音爆 I 发射磁锯会制造超音波",color:"white",italic:0b},{text:"可用于破坏绿色藤蔓",color:"white",italic:0b}]]
+execute if items entity @a[tag=SEAPT] container.* *[custom_data={sea_t_ripper1:true}] run give @s silence_armor_trim_smithing_template[custom_name={text:"超频声荡 I",italic:0b,color:"red"},custom_data={sea_t_ripper1:true},lore=[{text:"音爆 I 发射磁锯会制造超音波",color:"white",italic:0b},{text:"可用于破坏绿色藤蔓",color:"white",italic:0b}]]
 
 
 execute if block 90062 103 135 grindstone run item replace entity @s armor.head with iron_chainmail_helmet[custom_name={text:"电工安全帽",italic:0b,color:"red"},custom_data={sea_safehat:true},attribute_modifiers=[{type:"armor",slot:"head",id:"sea_armor:003_01",amount:1.0,operation:"add_value"},{type:"knockback_resistance",slot:"head",id:"sea_armor:003_02",amount:0.1,operation:"add_value"}],unbreakable={}]
@@ -114,7 +114,7 @@ execute run item replace entity @s armor.chest with leather_chestplate[custom_na
 execute if block 90062 103 135 grindstone run item replace entity @s armor.legs with leather_leggings[custom_name={text:"基础防护裤",italic:0b,color:"red"},custom_data={sea_leg:true},attribute_modifiers=[{type:"armor",slot:"legs",id:"sea_armor:001_01",amount:1.0,operation:"add_value"},{type:"armor_toughness",slot:"legs",id:"sea_armor:001_02",amount:0.5,operation:"add_value"}],unbreakable={}]
 execute if block 90075 103 141 minecraft:cauldron run item replace entity @s armor.feet with leather_boots[custom_name={text:"基础防护靴",italic:0b,color:"red"},custom_data={sea_feet:true},attribute_modifiers=[{type:"armor",slot:"feet",id:"sea_armor:008_01",amount:1.0,operation:"add_value"},{type:"armor_toughness",slot:"feet",id:"sea_armor:008_02",amount:0.5,operation:"add_value"}],unbreakable={}]
 
-execute if items entity @a[tag=SEAPT] container.* spyglass run give @s spyglass[lore=['{text:"我随身携带的望远镜。",color:"white",italic:0b},{text:"在前途未知的时刻，紧握住它可以让我不再迷惘。",color:"white",italic:0b},{text:"手持时：显示任务目标 & 跳过已阅读的剧情对话",color:"green",italic:0b}]]
+execute if items entity @a[tag=SEAPT] container.* spyglass run give @s spyglass[lore=[{text:"我随身携带的望远镜。",color:"white",italic:0b},{text:"在前途未知的时刻，紧握住它可以让我不再迷惘。",color:"white",italic:0b},{text:"手持时：显示任务目标 & 跳过已阅读的剧情对话",color:"green",italic:0b}]]
 
 execute if block 90062 103 135 grindstone run give @s flint 3
 execute if block 90075 103 141 minecraft:cauldron run give @s flint 3

@@ -1,7 +1,7 @@
 scoreboard players add @s rng8 1
 
 execute as @s[scores={rng8=2..47},tag=SEAboss4_attack_dashheavy] at @s run item replace entity @s weapon.mainhand with mace
-#execute as @s[scores={rng8=2},tag=SEAboss4_attack_dashheavy] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "准备猛烈下砸。","color": "yellow"}]
+#execute as @s[scores={rng8=2},tag=SEAboss4_attack_dashheavy] at @s run tellraw @a[tag=SEAPT] [{text:"艾德雯娜","color": "red"},{text:"准备猛烈下砸。","color": "yellow"}]
 execute as @s[scores={rng8=4},tag=SEAboss4_attack_dashheavy] at @s run tp @s ~ ~ ~ facing entity @n[tag=SEAmob,tag=!SEAcreak]
 execute as @s[scores={rng8=4},tag=SEAboss4_attack_dashheavy] at @s positioned 0.0 0 0.0 run summon marker ^ ^0.12 ^2.3 {Tags:["SEA_boss4_marker"]}
 execute as @s[scores={rng8=4},tag=SEAboss4_attack_dashheavy] at @s run data modify entity @n[tag=SEAboss4_attack_dashheavy] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos

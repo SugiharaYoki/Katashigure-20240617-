@@ -15,7 +15,7 @@ playsound ambient.cave ambient @a 90109.93 102.00 27.98 2 1.2
 playsound block.anvil.land block @a 90109.93 102.00 27.98 1 0.5
 playsound block.chain.break block @a 90109.93 102.00 27.98 3 0.7
 
-tellraw @a[tag=SEAPT] {"text": "升降梯已上升","color": "gray"}
+tellraw @a[tag=SEAPT] {text:"升降梯已上升","color": "gray"}
 
 execute as @e[x=90108,y=81,z=26,dx=3,dy=4,dz=3] at @s run tp @s ~ 102 ~
 execute as @e[x=90108,y=86,z=26,dx=3,dy=4,dz=3] at @s run tp @s ~ 107 ~

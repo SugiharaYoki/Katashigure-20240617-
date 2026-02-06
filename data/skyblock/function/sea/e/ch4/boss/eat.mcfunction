@@ -1,4 +1,4 @@
-execute as @n[tag=SEAboss4,scores={rng8=4},tag=SEAboss4_eat] at @s run tellraw @a[tag=SEAPT] [{"text": "艾德雯娜","color": "red"},{"text": "准备食用面包。","color": "green"}]
+execute as @n[tag=SEAboss4,scores={rng8=4},tag=SEAboss4_eat] at @s run tellraw @a[tag=SEAPT] [{text:"艾德雯娜","color": "red"},{text:"准备食用面包。","color": "green"}]
 execute as @n[tag=SEAboss4,scores={rng8=6..27},tag=SEAboss4_eat] at @s run item replace entity @s weapon.mainhand with bread
 execute as @n[tag=SEAboss4,scores={rng8=28},tag=SEAboss4_eat] at @s run item replace entity @s weapon.mainhand with air
 execute as @n[tag=SEAboss4,scores={rng8=12},tag=SEAboss4_eat] at @s rotated ~ 0 run particle item{item:{id:"bread"}} ^ ^1.5 ^0.3 0.03 0.03 0.03 0 2

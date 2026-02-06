@@ -12,7 +12,7 @@ execute if score @s rng1 matches 43 at @s as @p[tag=SEAPT] at @s run tell @a[dis
 
 execute if score @s rng1 matches 73 at @s run playsound entity.pillager.ambient neutral @a ~ ~ ~ 1 1.15
 execute if score @s rng1 matches 73 at @s as @p[tag=SEAPT] at @s run tell @a[distance=0..50] [{text:"邪教徒弩手：",color:"green",bold:1b},{text:"\n“你的恩情我终生不会忘记，无论你最后想要做什么，都祝你成功！”",color:"white",bold: false}]
-execute if score @s rng1 matches 73 at @s run tellraw @a[tag=SEAPT,advancements={skyblock:sea/doc/g27=false}] [{text:"永久奖励：",color:"green",bold:1b},{"text": "喷火器的充能速度稍许加快","color": "white"}]
+execute if score @s rng1 matches 73 at @s run tellraw @a[tag=SEAPT,advancements={skyblock:sea/doc/g27=false}] [{text:"永久奖励：",color:"green",bold:1b},{text:"喷火器的充能速度稍许加快","color": "white"}]
 execute if score @s rng1 matches 73 at @s run give @a[tag=SEAPT] mojang_banner_pattern[custom_data={sea_docg27:true}]
 
 execute if score @s rng1 matches 173 at @s run playsound entity.pillager.ambient neutral @a ~ ~ ~ 1 1.15

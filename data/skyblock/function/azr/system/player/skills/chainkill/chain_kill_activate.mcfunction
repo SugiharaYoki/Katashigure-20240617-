@@ -17,7 +17,7 @@ execute if entity @s[scores={AZR_chainKillUpg_attackheal=4}] run effect give @s 
 execute store result score #random Azr_system run random value 1..5
 scoreboard players remove @s[scores={AZR_chainKill_count=1..}] AZR_chainKill_count 1
 
-execute if score @s AZR_chainKill_count matches ..0 run title @s actionbar {"text": "- 连击结束 -",color:"dark_gray",bold:1b}
+execute if score @s AZR_chainKill_count matches ..0 run title @s actionbar {text:"- 连击结束 -",color:"dark_gray",bold:1b}
 execute if score @s AZR_chainKill_count matches ..0 run attribute @s minecraft:entity_interaction_range modifier remove azr_chainkill_01
 execute if score @s AZR_chainKill_count matches ..0 run attribute @s minecraft:attack_damage modifier remove azr_chainkill_02
 execute if score @s AZR_chainKill_count matches ..0 run attribute @s minecraft:armor modifier remove azr_chainkill_03

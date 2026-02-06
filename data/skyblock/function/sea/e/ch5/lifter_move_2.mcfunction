@@ -16,7 +16,7 @@ playsound block.anvil.land block @a 90109.93 102.00 27.98 1 0.5
 playsound block.chain.break block @a 90109.93 102.00 27.98 3 0.7
 playsound minecraft:garden2.chapter_title ambient @a 90109.93 102.00 27.98 1 2
 
-tellraw @a[tag=SEAPT] {"text": "升降梯已下降","color": "gray"}
+tellraw @a[tag=SEAPT] {text:"升降梯已下降","color": "gray"}
 
 execute as @e[x=90108,y=102,z=26,dx=3,dy=4,dz=3] at @s run tp @s ~ 81 ~
 execute as @e[x=90108,y=107,z=26,dx=3,dy=4,dz=3] at @s run tp @s ~ 86 ~

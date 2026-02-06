@@ -65,8 +65,8 @@ tag @s remove sea_purchase_pass
 execute if score @s sea_crafter matches 10006 as @s[scores={sea_i_iron_ingot=..1}] run tellraw @s {text:"失败！素材不足！",color:"red"}
 execute if score @s sea_crafter matches 10006 as @s[scores={sea_i_iron_ingot=2..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
-#execute if entity @s[tag=sea_purchase_pass] run give @s shield[custom_name={text:"防护盾",italic:0b,color:"red"},custom_data={sea_shield:true},attribute_modifiers=[{type:"movement_speed",slot:"hand",id:"sea_armor:004_01",amount:-0.03,operation:"add_value"}],lore=['{text:"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）",color:"white",italic:0b},{text:"在这期间受到攻击并反击可以造成巨额伤害",color:"white",italic:0b}]]
-execute if entity @s[tag=sea_purchase_pass] run give @s shield[custom_name={text:"防护盾",italic:0b,color:"red"},custom_data={sea_shield:true},attribute_modifiers=[{type:"movement_speed",slot:"hand",id:"sea_armor:004_01",amount:-0.03,operation:"add_value"}],lore=['{text:"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）",color:"white",italic:0b},{text:"在这期间受到攻击并反击可以造成巨额伤害",color:"white",italic:0b}]]
+#execute if entity @s[tag=sea_purchase_pass] run give @s shield[custom_name={text:"防护盾",italic:0b,color:"red"},custom_data={sea_shield:true},attribute_modifiers=[{type:"movement_speed",slot:"hand",id:"sea_armor:004_01",amount:-0.03,operation:"add_value"}],lore=[{text:"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）",color:"white",italic:0b},{text:"在这期间受到攻击并反击可以造成巨额伤害",color:"white",italic:0b}]]
+execute if entity @s[tag=sea_purchase_pass] run give @s shield[custom_name={text:"防护盾",italic:0b,color:"red"},custom_data={sea_shield:true},attribute_modifiers=[{type:"movement_speed",slot:"hand",id:"sea_armor:004_01",amount:-0.03,operation:"add_value"}],lore=[{text:"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）",color:"white",italic:0b},{text:"在这期间受到攻击并反击可以造成巨额伤害",color:"white",italic:0b}]]
 execute if entity @s[tag=sea_purchase_pass] run tellraw @a[gamemode=spectator,distance=0..20] [{text:"◆ 玩家操作：",bold:1b,color:"yellow"},{text:"制作了盾牌",bold:1b,color:"white"}]
 execute if entity @s[tag=sea_purchase_pass] run clear @s iron_ingot 2
 tag @s remove sea_purchase_pass
@@ -76,7 +76,7 @@ execute if score @s sea_crafter matches 10059 as @s[scores={sea_i_emerald=..19}]
 execute if score @s sea_crafter matches 10059 as @s[scores={sea_i_emerald=20..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
 execute if entity @s[tag=sea_purchase_pass] run give @s shears[custom_name={text:"喷火器",italic:0b,color:"red"},custom_data={sea_flamethrower:true},unbreakable={}]
-execute if entity @s[tag=sea_purchase_pass,tag=e_w_04b_eternal] run give @s snout_armor_trim_smithing_template[custom_name={text:"爆燃膛针",italic:0b,color:"red"},custom_data={sea_t_shotgun1:true},lore=['{text:"急霰 I 解锁喷火器右键攻击",color:"white",italic:0b},{text:"对面前近距离造成大量伤害",color:"white",italic:0b},{text:"消耗一份燃爆剂",color:"red",italic:0b}]]
+execute if entity @s[tag=sea_purchase_pass,tag=e_w_04b_eternal] run give @s snout_armor_trim_smithing_template[custom_name={text:"爆燃膛针",italic:0b,color:"red"},custom_data={sea_t_shotgun1:true},lore=[{text:"急霰 I 解锁喷火器右键攻击",color:"white",italic:0b},{text:"对面前近距离造成大量伤害",color:"white",italic:0b},{text:"消耗一份燃爆剂",color:"red",italic:0b}]]
 execute if entity @s[tag=sea_purchase_pass] run tellraw @a[gamemode=spectator,distance=0..20] [{text:"◆ 玩家操作：",bold:1b,color:"yellow"},{text:"通过工作站获得喷火器",bold:1b,color:"white"}]
 execute if entity @s[tag=sea_purchase_pass] run scoreboard players remove @s sea_i_emerald 20
 tag @s remove sea_purchase_pass

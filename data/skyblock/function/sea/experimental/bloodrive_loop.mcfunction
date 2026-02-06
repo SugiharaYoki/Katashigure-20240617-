@@ -12,7 +12,7 @@ execute as @e[tag=SEAmob_bloodrived] store result score SEA_bloodrive health run
 
 #data modify storage sea:bloodrive health
 
-execute as @e[tag=SEAmob_bloodrived] on passengers as @s[tag=SEAmob_bloodrive] run data merge entity @s {text:'[{"score":{"name":"SEA_bloodrive","objective":"health"},"color": "green"},{"text": "\\n"}]'}
+execute as @e[tag=SEAmob_bloodrived] on passengers as @s[tag=SEAmob_bloodrive] run data merge entity @s {text:'[{"score":{"name":"SEA_bloodrive","objective":"health"},"color": "green"},{text:"\\n"}]'}
 
 execute as @e[tag=SEAmob_bloodrive] store success score @s rng5 as @s on vehicle if entity @s
 execute as @e[tag=SEAmob_bloodrive,scores={rng5=0}] run kill @s

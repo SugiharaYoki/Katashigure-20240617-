@@ -19,9 +19,9 @@ $execute as @s[scores={rng1=22}] positioned $(pos) as @a[tag=azrPlayer,tag=!AZS_
 $execute as @s[scores={rng1=22}] positioned $(pos) as @a[tag=azrPlayer,tag=!AZS_SoulFrag$(id)] run effect give @s darkness 5 0 true
 $execute as @s[scores={rng1=22}] positioned $(pos) run kill @n[type=item_display,distance=..5]
 $execute as @s[scores={rng1=27}] positioned $(pos) as @a[tag=azrPlayer,tag=!AZS_SoulFrag$(id)] run title @s times 30t 120t 12t
-$execute as @s[scores={rng1=27}] positioned $(pos) as @a[tag=azrPlayer,tag=!AZS_SoulFrag$(id)] run title @s title {"text": "灵魂碎片已吸收","color": "#7321cb",bold:1b}
+$execute as @s[scores={rng1=27}] positioned $(pos) as @a[tag=azrPlayer,tag=!AZS_SoulFrag$(id)] run title @s title {text:"灵魂碎片已吸收","color": "#7321cb",bold:1b}
 $execute as @s[scores={rng1=36}] positioned $(pos) as @a[tag=azrPlayer,tag=!AZS_SoulFrag$(id)] run title @s times 0t 70t 12t
-$execute as @s[scores={rng1=36}] positioned $(pos) as @a[tag=azrPlayer,tag=!AZS_SoulFrag$(id)] run title @s title {"text": "灵魂碎片已吸收","color": "#7321cb",bold:1b}
-$execute as @s[scores={rng1=36}] positioned $(pos) as @a[tag=azrPlayer,tag=!AZS_SoulFrag$(id)] run title @s subtitle [{"text": "现在的灵魂碎片总数：","color": "#7321cb",bold:1b},{"score":{"name":"@s","objective":"AZS_SoulFrag"}}]
+$execute as @s[scores={rng1=36}] positioned $(pos) as @a[tag=azrPlayer,tag=!AZS_SoulFrag$(id)] run title @s title {text:"灵魂碎片已吸收","color": "#7321cb",bold:1b}
+$execute as @s[scores={rng1=36}] positioned $(pos) as @a[tag=azrPlayer,tag=!AZS_SoulFrag$(id)] run title @s subtitle [{text:"现在的灵魂碎片总数：","color": "#7321cb",bold:1b},{"score":{"name":"@s","objective":"AZS_SoulFrag"}}]
 $execute as @s[scores={rng1=36}] positioned $(pos) as @a[tag=azrPlayer,tag=!AZS_SoulFrag$(id)] run tag @s add AZS_SoulFrag$(id)
 execute as @s[scores={rng1=36}] run kill @s

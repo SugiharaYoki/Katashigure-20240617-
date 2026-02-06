@@ -21,7 +21,7 @@ scoreboard players set MG_AZR0_Timer rng3 1
 
 kill @e[type=marker,tag=mg_azr0_MobPortals]
 
-bossbar set mg:azr0_bar name [{"text": "已跳过等待时间",color:"yellow",bold:1b}]
+bossbar set mg:azr0_bar name [{text:"已跳过等待时间",color:"yellow",bold:1b}]
 
 
 

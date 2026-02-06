@@ -412,7 +412,7 @@ tellraw @s [{text:" ",color:"light_purple"},\
 
 tellraw @s {text:"   "}
 tellraw @s [{text:"剩余绿宝石：",bold:1b,color:"green"},{bold:0b,"score":{"name":"@s","objective":"Azr_emerald"},color:"green"}]
-tellraw @s[scores={AZS_SoulFrag=1..}] [{"text": "灵魂碎片：","color": "#7321cb",bold:1b},{bold:0b,"score":{"name":"@s","objective":"AZS_SoulFrag"},"color": "#7321cb"},{"text": " [?]","color": "#272727",bold: false,hover_event:{"action":"show_text","value":{text:"持有灵魂碎片将在退出游戏时返还“节制天平”消耗的绿宝石。\n灵魂碎片数量越多，丢失的绿宝石越少。",color:"white"}}}]
+tellraw @s[scores={AZS_SoulFrag=1..}] [{text:"灵魂碎片：","color": "#7321cb",bold:1b},{bold:0b,"score":{"name":"@s","objective":"AZS_SoulFrag"},"color": "#7321cb"},{text:" [?]","color": "#272727",bold: false,hover_event:{"action":"show_text","value":{text:"持有灵魂碎片将在退出游戏时返还“节制天平”消耗的绿宝石。\n灵魂碎片数量越多，丢失的绿宝石越少。",color:"white"}}}]
 
 kill @e[tag=AzrSariel_displaymarker,type=marker]
 scoreboard players set @s Azr_Shop 0

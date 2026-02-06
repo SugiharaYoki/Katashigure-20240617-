@@ -15,7 +15,7 @@ execute if score @s rng5 matches 10.. as @a[tag=MG_AZR0PT,tag=azr0_player_lookin
 execute if score @s rng5 matches 10.. as @a[tag=MG_AZR0PT,tag=azr0_player_looking_at_devil_goat_process] at @s run rotate @n[tag=MG_AZR0BOSS_devil_goat] facing entity @s
 execute if score @s rng5 matches 10.. as @a[tag=MG_AZR0PT,tag=azr0_player_looking_at_devil_goat_process] at @s run effect give @s slowness 2 9 false
 execute if score @s rng5 matches 10.. as @a[tag=MG_AZR0PT,tag=azr0_player_looking_at_devil_goat_process] at @s run effect give @s darkness 2 9 false
-execute if score @s rng5 matches 10.. as @a[tag=MG_AZR0PT,tag=azr0_player_looking_at_devil_goat_process] at @s run tellraw @s [{"text": "刻骨铭心的黑暗侵入你的思绪，你的两腿霎时脱力！","color": "red"}]
+execute if score @s rng5 matches 10.. as @a[tag=MG_AZR0PT,tag=azr0_player_looking_at_devil_goat_process] at @s run tellraw @s [{text:"刻骨铭心的黑暗侵入你的思绪，你的两腿霎时脱力！","color": "red"}]
 execute if score @s rng5 matches 10.. as @a[tag=MG_AZR0PT,tag=azr0_player_looking_at_devil_goat_process] at @s run tag @s add azr0_player_looking_at_devil_goat
 execute if score @s rng5 matches 10.. as @a[tag=MG_AZR0PT,tag=azr0_player_looking_at_devil_goat_process] at @s run tag @s remove azr0_player_looking_at_devil_goat_process
 

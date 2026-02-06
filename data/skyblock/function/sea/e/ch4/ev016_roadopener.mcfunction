@@ -1,5 +1,5 @@
 execute as @s[scores={sea_4temp1=1}] run fill 90185 27 104 90186 27 104 minecraft:mangrove_pressure_plate
-execute as @s[scores={sea_4temp1=1}] run tellraw @a[tag=SEAPT] {"text": "似乎有什么地方的门禁解除了……",color:"gray"}
+execute as @s[scores={sea_4temp1=1}] run tellraw @a[tag=SEAPT] {text:"似乎有什么地方的门禁解除了……",color:"gray"}
 execute as @s[scores={sea_4temp1=1}] run playsound block.wooden_pressure_plate.click_on block @a 90186.0 27 104 1 0.8
 
 execute as @s[scores={sea_4temp1=1}] positioned 90169 19 130 unless entity @a[tag=SEAPT,distance=0..8] run function skyblock:sea/m/mine

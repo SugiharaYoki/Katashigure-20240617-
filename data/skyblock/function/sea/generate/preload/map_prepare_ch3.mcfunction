@@ -210,7 +210,7 @@ setblock 90095 144 113 minecraft:waxed_copper_bulb[lit=false]
 
 setblock 90124 144 116 chest[facing=south]
 item replace block 90124 144 116 container.11 with emerald 5
-item replace block 90124 144 116 container.13 with emerald[lore=['{text:"随心贴：物资层外围有一面砖墙，你去找找看吧。",color:"gray",italic:0b}]] 1
+item replace block 90124 144 116 container.13 with emerald[lore=[{text:"随心贴：物资层外围有一面砖墙，你去找找看吧。",color:"gray",italic:0b}]] 1
 item replace block 90124 144 116 container.15 with emerald 5
 fill 90124 144 117 90124 145 117 minecraft:waxed_copper_block
 

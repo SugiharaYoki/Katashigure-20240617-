@@ -6,7 +6,7 @@ execute if entity @s[scores={SEAPT_setting_trueend=2}] run scoreboard players se
 function skyblock:sea/generate/stage_jump/to_ch5_boss
 function skyblock:sea/generate/preload/map_prepare_ch6
 
-give @a[tag=SEAPT] silence_armor_trim_smithing_template[custom_name={text:"超频声荡 I",italic:0b,color:"red"},custom_data={sea_t_ripper1:true},lore=['{text:"音爆 I 发射磁锯会制造超音波",color:"white",italic:0b},{text:"可用于破坏绿色藤蔓",color:"white",italic:0b}]]
+give @a[tag=SEAPT] silence_armor_trim_smithing_template[custom_name={text:"超频声荡 I",italic:0b,color:"red"},custom_data={sea_t_ripper1:true},lore=[{text:"音爆 I 发射磁锯会制造超音波",color:"white",italic:0b},{text:"可用于破坏绿色藤蔓",color:"white",italic:0b}]]
 give @a[tag=SEAPT] echo_shard 80
 give @a[tag=SEAPT] iron_ingot 20
 

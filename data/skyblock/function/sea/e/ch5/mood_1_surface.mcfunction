@@ -33,5 +33,5 @@ execute if score sea_ch5_mood sea_4temp2 matches 54 if score sea_ch5_mood sea_4t
 execute if score sea_ch5_mood sea_4temp2 matches 55 if score sea_ch5_mood sea_4temp3 matches 2 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~120 ~ ~-120 run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 55 0.55
 execute if score sea_ch5_mood sea_4temp2 matches 56 if score sea_ch5_mood sea_4temp3 matches 2 as @s[y=90,dy=600,x=85000,dx=10000,z=-5000,dz=10000] positioned ~-120 ~ ~120 run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 55 0.55
 
-execute if block 90081 101 137 air run tellraw @s[tag=!e_i_41] {"text": "风势变得这么强了吗……\n大雨似乎混杂着什么怪东西，不知为何有些令人反胃。","color": "gray"}
+execute if block 90081 101 137 air run tellraw @s[tag=!e_i_41] {text:"风势变得这么强了吗……\n大雨似乎混杂着什么怪东西，不知为何有些令人反胃。","color": "gray"}
 tag @s add e_i_41

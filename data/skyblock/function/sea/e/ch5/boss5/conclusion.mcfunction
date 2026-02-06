@@ -105,7 +105,7 @@ execute if score SEA_ch5_event_boss5 rng9 matches 392 as @n[tag=SEAfiona,x=90000
 execute if score SEA_ch5_event_boss5 rng9 matches 412 as @n[tag=SEAjones,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
 execute if score SEA_ch5_event_boss5 rng9 matches 412 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{text:"琼斯：",color:"yellow",bold:1b},{text:"\n“你们上路前拿好这个，虽然杀伤力并非特别理想，但它也足够轰碎那些藤蔓了。”",color:"white",bold: false}]
 
-execute if score SEA_ch5_event_boss5 rng9 matches 416 as @n[tag=SEAjones,x=90000,y=100,z=0,distance=0..1200] at @s run give @a[tag=SEAPT] silence_armor_trim_smithing_template[custom_name={text:"超频声荡 I",italic:0b,color:"red"},custom_data={sea_t_ripper1:true},lore=['{text:"音爆 I 发射磁锯会制造超音波",color:"white",italic:0b},{text:"可用于破坏绿色藤蔓",color:"white",italic:0b}]]
+execute if score SEA_ch5_event_boss5 rng9 matches 416 as @n[tag=SEAjones,x=90000,y=100,z=0,distance=0..1200] at @s run give @a[tag=SEAPT] silence_armor_trim_smithing_template[custom_name={text:"超频声荡 I",italic:0b,color:"red"},custom_data={sea_t_ripper1:true},lore=[{text:"音爆 I 发射磁锯会制造超音波",color:"white",italic:0b},{text:"可用于破坏绿色藤蔓",color:"white",italic:0b}]]
 
 execute if score SEA_ch5_event_boss5 rng9 matches 430 as @n[tag=SEAjones,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.evoker.ambient neutral @a ~ ~ ~ 1 1
 execute if score SEA_ch5_event_boss5 rng9 matches 430 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{text:"琼斯：",color:"yellow",bold:1b},{text:"\n“切记：一定要小心。天使说不定很快就会回来。在那之前，我会帮你们想办法拦住祂。”",color:"white",bold: false}]
