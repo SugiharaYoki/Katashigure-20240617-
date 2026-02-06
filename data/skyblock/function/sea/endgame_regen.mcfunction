@@ -189,9 +189,9 @@ scoreboard objectives remove sea_ch6_ultimate_attack
 
 forceload remove 90000 0 90200 200
 #setblock 90060 104 144 stone_button[facing=south,face=floor]
-summon minecraft:armor_stand 90074 93.5 139 {CustomName:'{"text": "『厄珀娅的悲歌』","color": "blue",bold: true}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
-summon minecraft:armor_stand 90074 93 139 {CustomName:'{"text": "孤身踏上死寂的海上钢铁要塞","color": "white"}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
-summon minecraft:armor_stand 90074 92.7 139 {CustomName:'{"text": "见证忒尔克西钻井平台的结局","color": "white"}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
-summon minecraft:armor_stand 90074 92.3 139 {CustomName:'{"text": "开始新游戏","color": "green"}',DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b,Tags:["SEA_choose_chapter_1","SEA_choose_chapter"]}
+summon minecraft:armor_stand 90074 93.5 139 {CustomName:'{"text": "『厄珀娅的悲歌』","color": "blue",bold: true},DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
+summon minecraft:armor_stand 90074 93 139 {CustomName:'{"text": "孤身踏上死寂的海上钢铁要塞","color": "white"},DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
+summon minecraft:armor_stand 90074 92.7 139 {CustomName:'{"text": "见证忒尔克西钻井平台的结局","color": "white"},DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b}
+summon minecraft:armor_stand 90074 92.3 139 {CustomName:'{"text": "开始新游戏","color": "green"},DisabledSlots:65793,CustomNameVisible:1b,Invisible:1b,Marker:1b,NoGravity:1b,Tags:["SEA_choose_chapter_1","SEA_choose_chapter"]}
 
 forceload remove 90379 -1845 90421 -1732

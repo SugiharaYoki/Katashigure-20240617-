@@ -46,7 +46,7 @@ execute as @s[scores={sea_4temp1=499}] at @s run playsound entity.villager.ambie
 execute as @s[scores={sea_4temp1=499}] at @s run tellraw @a[distance=0..250] [{text:"越涵：",color:"green",bold: true},{text:"\n“……抱歉，给我点时间。辛苦了，专程为了这种事替我跑一次。”",color:"white",bold: false}]
 execute as @s[scores={sea_4temp1=539}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute as @s[scores={sea_4temp1=539}] at @s run tellraw @a[distance=0..250] [{text:"越涵：",color:"green",bold: true},{text:"\n“嗯对了，走之前拿上这个吧。它对我而言已经……没用了。”",color:"white",bold: false}]
-execute as @s[scores={sea_4temp1=539}] at @s run give @a[tag=SEAPT] snout_armor_trim_smithing_template[custom_name='{text:"透光吸附 A",italic:true,color:"light_purple",italic:0b}',lore=['{text:"光谱 I 光棱箭的转换速度加快",color:"white",italic:0b}'],custom_data={sea_t_spectral_load1:true}]
+execute as @s[scores={sea_4temp1=539}] at @s run give @a[tag=SEAPT] snout_armor_trim_smithing_template[custom_name={text:"透光吸附 A",italic:true,color:"light_purple",italic:0b},lore=[{text:"光谱 I 光棱箭的转换速度加快",color:"white",italic:0b}],custom_data={sea_t_spectral_load1:true}]
 execute as @s[scores={sea_4temp1=539}] at @s run give @a[tag=SEAPT] mojang_banner_pattern[custom_data={sea_docg04:true}]
 execute as @s[scores={sea_4temp1=650}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute as @s[scores={sea_4temp1=650}] at @s run tellraw @a[distance=0..250] [{text:"越涵：",color:"green",bold: true},{text:"\n“……能让我一个人静一静吗？”",color:"white",bold: false}]

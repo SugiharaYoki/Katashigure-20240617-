@@ -1,1 +1,1 @@
-give @s iron_leggings[custom_data={iron_leggings_normal:1b},custom_name='{text:"铁护腿",italic:0b}',attribute_modifiers=[{type:"minecraft:armor",id:"azr:iron_leggings_normal.armor",amount:3.0,operation:"add_value",slot:"armor"}],custom_model_data={floats:[100004.0]}]
+give @s iron_leggings[custom_data={iron_leggings_normal:1b},custom_name={text:"铁护腿",italic:0b},attribute_modifiers=[{type:"minecraft:armor",id:"azr:iron_leggings_normal.armor",amount:3.0,operation:"add_value",slot:"armor"}],custom_model_data={floats:[100004.0]}]

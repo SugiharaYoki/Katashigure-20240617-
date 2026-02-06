@@ -177,7 +177,7 @@ setblock 90154 129 98 lever[facing=east]
 fill 90104 138 120 90104 138 125 air
 fill 90104 138 120 90104 138 125 lever[facing=east]
 setblock 90104 137 117 chest[facing=east]
-item replace block 90104 137 117 container.12 with wild_armor_trim_smithing_template[custom_name='{text:"狂荒石板",color:"light_purple",italic:0b}'] 2
+item replace block 90104 137 117 container.12 with wild_armor_trim_smithing_template[custom_name={text:"狂荒石板",color:"light_purple",italic:0b}] 2
 item replace block 90104 137 117 container.14 with gunpowder 2
 fill 90107 138 117 90107 137 117 iron_bars
 
@@ -186,7 +186,7 @@ fill 90086 138 128 90086 137 128 minecraft:slime_block
 
 setblock 90152 128 122 chest[facing=north]
 item replace block 90152 128 122 container.12 with compass 1
-item replace block 90152 128 122 container.14 with dune_armor_trim_smithing_template[custom_name='{text:"金砂石板",color:"light_purple",italic:0b}'] 2
+item replace block 90152 128 122 container.14 with dune_armor_trim_smithing_template[custom_name={text:"金砂石板",color:"light_purple",italic:0b}] 2
 
 setblock 90119 138 132 air
 setblock 90119 138 132 lever[facing=south]
@@ -210,7 +210,7 @@ setblock 90095 144 113 minecraft:waxed_copper_bulb[lit=false]
 
 setblock 90124 144 116 chest[facing=south]
 item replace block 90124 144 116 container.11 with emerald 5
-item replace block 90124 144 116 container.13 with emerald[lore=['{text:"随心贴：物资层外围有一面砖墙，你去找找看吧。",color:"gray",italic:0b}']] 1
+item replace block 90124 144 116 container.13 with emerald[lore=['{text:"随心贴：物资层外围有一面砖墙，你去找找看吧。",color:"gray",italic:0b}]] 1
 item replace block 90124 144 116 container.15 with emerald 5
 fill 90124 144 117 90124 145 117 minecraft:waxed_copper_block
 
@@ -226,7 +226,7 @@ item replace block 90138 137 108 container.14 with coal 1
 setblock 90141 137 117 chest[facing=north]
 item replace block 90141 137 117 container.14 with arrow 2
 setblock 90132 137 107 chest[facing=east]
-item replace block 90132 137 107 container.13 with fire_charge[custom_name='{text:"定时炸弹",italic:true,color:"blue",italic:0b}',lore=['{text:"它会在你丢出去3秒后爆炸！",color:"white",italic:0b}','{text:"炸到自己的话，职业生涯就会结束了吧。",color:"white",italic:0b}','{text:"可用于破坏凝胶壁障与瓦罐。",color:"white",italic:0b}']] 1
+item replace block 90132 137 107 container.13 with fire_charge[custom_name={text:"定时炸弹",italic:true,color:"blue",italic:0b},lore=[{text:"它会在你丢出去3秒后爆炸！",color:"white",italic:0b},{text:"炸到自己的话，职业生涯就会结束了吧。",color:"white",italic:0b},{text:"可用于破坏凝胶壁障与瓦罐。",color:"white",italic:0b}]] 1
 
 #宿舍楼往后
 fill 90123 137 153 90122 137 153 smoker[facing=north]
@@ -312,8 +312,8 @@ fill 90128 155 145 90127 155 145 minecraft:redstone_block
 fill 90128 155 145 90127 155 145 minecraft:air
 
 setblock 90122 149 139 chest[facing=west]
-item replace block 90122 149 139 container.12 with fire_charge[custom_name='{text:"定时炸弹",italic:true,color:"blue",italic:0b}',lore=['{text:"它会在你丢出去3秒后爆炸！",color:"white",italic:0b}','{text:"炸到自己的话，职业生涯就会结束了吧。",color:"white",italic:0b}','{text:"可用于破坏凝胶壁障与瓦罐。",color:"white",italic:0b}']] 1
-item replace block 90122 149 139 container.14 with fire_charge[custom_name='{text:"定时炸弹",italic:true,color:"blue",italic:0b}',lore=['{text:"它会在你丢出去3秒后爆炸！",color:"white",italic:0b}','{text:"炸到自己的话，职业生涯就会结束了吧。",color:"white",italic:0b}','{text:"可用于破坏凝胶壁障与瓦罐。",color:"white",italic:0b}']] 1
+item replace block 90122 149 139 container.12 with fire_charge[custom_name={text:"定时炸弹",italic:true,color:"blue",italic:0b},lore=[{text:"它会在你丢出去3秒后爆炸！",color:"white",italic:0b},{text:"炸到自己的话，职业生涯就会结束了吧。",color:"white",italic:0b},{text:"可用于破坏凝胶壁障与瓦罐。",color:"white",italic:0b}]] 1
+item replace block 90122 149 139 container.14 with fire_charge[custom_name={text:"定时炸弹",italic:true,color:"blue",italic:0b},lore=[{text:"它会在你丢出去3秒后爆炸！",color:"white",italic:0b},{text:"炸到自己的话，职业生涯就会结束了吧。",color:"white",italic:0b},{text:"可用于破坏凝胶壁障与瓦罐。",color:"white",italic:0b}]] 1
 
 
 summon marker 90108 149 141 {Tags:["SEAmagma1"]}

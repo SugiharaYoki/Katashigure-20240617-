@@ -1,1 +1,1 @@
-give @p minecraft:cauldron[custom_name='{text:"涂色桶",color:"light_purple",italic:0b,bold:1b}',lore=['{text:"[立即使用]",color:"yellow",bold:1b}','{text:"使你的涂色范围增加1格，可叠加",color:"white",bold:0b}'],minecraft:custom_data={color_bucket:1b},minecraft:custom_model_data={floats:[200001.0]}]
+give @p minecraft:cauldron[custom_name={text:"涂色桶",color:"light_purple",italic:0b,bold:1b},lore=[{text:"[立即使用]",color:"yellow",bold:1b},{text:"使你的涂色范围增加1格，可叠加",color:"white",bold:0b}],minecraft:custom_data={color_bucket:1b},minecraft:custom_model_data={floats:[200001.0]}]

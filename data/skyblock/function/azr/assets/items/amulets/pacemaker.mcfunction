@@ -1,3 +1,3 @@
 
 
-give @s bolt_armor_trim_smithing_template[custom_name='{text:"起搏器·通常模式",italic:0b,color:"#306fc2",bold: true}',lore=['{text:"背包常效装备",italic:0b,color:"yellow",bold: true}','{text:"生命值低于4时自动恢复32生命值",italic:0b,color:"#9eb9de"}','{text:"冷却：40秒",italic:0b,color:"#616161"}','{text:""}','{text:"在关键时刻能救命。某种意义上来说，我很相信这绝对是人类才能研发出来的高科技。",italic:true,color:"#586371"}','{text:""}','{text:"点击切换模式",italic:0b,color:"green",bold: true}'],custom_data={azr_amulet:1b,azr_amulet_pacemaker:1b}]
+give @s bolt_armor_trim_smithing_template[custom_name={text:"起搏器·通常模式",italic:0b,color:"#306fc2",bold: true},lore=[{text:"背包常效装备",italic:0b,color:"yellow",bold: true},{text:"生命值低于4时自动恢复32生命值",italic:0b,color:"#9eb9de"},{text:"冷却：40秒",italic:0b,color:"#616161"},{text:""},{text:"在关键时刻能救命。某种意义上来说，我很相信这绝对是人类才能研发出来的高科技。",italic:true,color:"#586371"},{text:""},{text:"点击切换模式",italic:0b,color:"green",bold: true}],custom_data={azr_amulet:1b,azr_amulet_pacemaker:1b}]

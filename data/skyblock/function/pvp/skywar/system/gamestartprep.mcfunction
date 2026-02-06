@@ -287,7 +287,7 @@ execute if block -131 59 -117 green_concrete if score skywar_start rng1 matches 
 execute if block -131 59 -117 green_concrete if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run give @s green_dye 8
 execute if block -131 59 -117 green_concrete if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run give @s yellow_dye 8
 
-execute if block -131 59 -116 green_concrete if score skywar_start rng1 matches 17 run give @a[tag=PVPing] bow[unbreakable={},enchantments={power:150,infinity:1},custom_name='{text:"猎击弓",italic:0b,color:"white"}']
+execute if block -131 59 -116 green_concrete if score skywar_start rng1 matches 17 run give @a[tag=PVPing] bow[unbreakable={},enchantments={power:150,infinity:1},custom_name={text:"猎击弓",italic:0b,color:"white"}]
 execute if block -131 59 -116 green_concrete if score skywar_start rng1 matches 17 run give @a[tag=PVPing] arrow 32
 
 execute if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run effect clear @s saturation

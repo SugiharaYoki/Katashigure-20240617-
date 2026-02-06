@@ -1,1 +1,1 @@
-give @s bow[custom_name='{text:"狭风弓·III阶",italic:0b}',custom_data={bow_pierce_level3:1b},enchantments={pierce:2,unbreaking:1}]
+give @s bow[custom_name={text:"狭风弓·III阶",italic:0b},custom_data={bow_pierce_level3:1b},enchantments={pierce:2,unbreaking:1}]

@@ -151,11 +151,11 @@ setblock 90246 64 88 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_
 setblock 90247 64 88 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 3, id:"minecraft:golden_carrot"}}
 
 setblock 90245 64 93 chest[facing=north]
-item replace block 90245 64 93 container.11 with wild_armor_trim_smithing_template[custom_name='{text:"狂荒石板",color:"light_purple",italic:0b}'] 2
-item replace block 90245 64 93 container.12 with raiser_armor_trim_smithing_template[custom_name='{text:"牧羊人石板",color:"light_purple",italic:0b}'] 2
+item replace block 90245 64 93 container.11 with wild_armor_trim_smithing_template[custom_name={text:"狂荒石板",color:"light_purple",italic:0b}] 2
+item replace block 90245 64 93 container.12 with raiser_armor_trim_smithing_template[custom_name={text:"牧羊人石板",color:"light_purple",italic:0b}] 2
 item replace block 90245 64 93 container.13 with glistering_melon_slice 1
-item replace block 90245 64 93 container.14 with sentry_armor_trim_smithing_template[custom_name='{text:"辽哨石板",color:"light_purple",italic:0b}'] 2
-item replace block 90245 64 93 container.15 with dune_armor_trim_smithing_template[custom_name='{text:"金砂石板",color:"light_purple",italic:0b}'] 2
+item replace block 90245 64 93 container.14 with sentry_armor_trim_smithing_template[custom_name={text:"辽哨石板",color:"light_purple",italic:0b}] 2
+item replace block 90245 64 93 container.15 with dune_armor_trim_smithing_template[custom_name={text:"金砂石板",color:"light_purple",italic:0b}] 2
 
 
 #艾德雯娜的护身符
@@ -255,7 +255,7 @@ fill 90158 36 131 90158 34 129 minecraft:iron_bars
 fill 90159 38 131 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=true]
 setblock 90183 12 136 minecraft:crimson_button[facing=north,face=floor]
 setblock 90182 12 136 minecraft:waxed_exposed_copper_bulb[lit=false]
-summon text_display 90159 36.5 130 {background:0,text:'{text:"禁止通行 灾害应对",color:"dark_red"}',Rotation:[-90f,0f],shadow:1b,alignment:"center"}
+summon text_display 90159 36.5 130 {background:0,text:'{text:"禁止通行 灾害应对",color:"dark_red"},Rotation:[-90f,0f],shadow:1b,alignment:"center"}
 setblock 90172 39 169 minecraft:crimson_button[facing=north,face=floor]
 setblock 90171 39 169 minecraft:waxed_exposed_copper_bulb[lit=false]
 
@@ -366,7 +366,7 @@ setblock 90193 45 114 minecraft:potted_bamboo
 
 setblock 90158 35 95 chest[facing=south]
 item replace block 90158 35 95 container.11 with arrow 3
-item replace block 90158 35 95 container.13 with firework_star[custom_name='{text:"燃爆剂",italic:true,color:"blue",italic:0b}',lore=['{text:"喷火器专用燃爆剂。",color:"white",italic:0b}','{text:"使用喷火器时左键，瞬间对面前近距离造成大量伤害。",color:"white",italic:0b}']] 3
+item replace block 90158 35 95 container.13 with firework_star[custom_name={text:"燃爆剂",italic:true,color:"blue",italic:0b},lore=[{text:"喷火器专用燃爆剂。",color:"white",italic:0b},{text:"使用喷火器时左键，瞬间对面前近距离造成大量伤害。",color:"white",italic:0b}]] 3
 item replace block 90158 35 95 container.15 with arrow 3
 
 fill 90167 35 89 90167 35 90 redstone_block

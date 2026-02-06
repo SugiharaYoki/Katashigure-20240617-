@@ -1,7 +1,7 @@
 # gathering information
     # player_profile
     tag @s add pvp_protector_temp
-    data modify entity 0-0-0-0-1 text set value '{"selector": "@p[tag=pvp_protector_temp]"}'
+    data modify entity 0-0-0-0-1 text set value '{"selector": "@p[tag=pvp_protector_temp]"}
     tag @s remove pvp_protector_temp
     data modify storage skyblock:protector cache.player_profile.name set from entity 0-0-0-0-1 text
     data modify storage skyblock:protector cache.player_profile.UUID set from entity @s UUID

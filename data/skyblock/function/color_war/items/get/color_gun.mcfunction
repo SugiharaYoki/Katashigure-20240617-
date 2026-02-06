@@ -1,1 +1,1 @@
-give @s minecraft:crossbow[custom_name='{text:"涂色枪",color:"green",italic:0b,bold:1b}',lore=['{text:"[右键使用]",color:"yellow",bold:1b}','{text:"远程涂色！五发子弹",color:"white",bold:0b}'],minecraft:custom_data={color_gun:1b,bullet_left:5},minecraft:custom_model_data={floats:[200001.0]}]
+give @s minecraft:crossbow[custom_name={text:"涂色枪",color:"green",italic:0b,bold:1b},lore=[{text:"[右键使用]",color:"yellow",bold:1b},{text:"远程涂色！五发子弹",color:"white",bold:0b}],minecraft:custom_data={color_gun:1b,bullet_left:5},minecraft:custom_model_data={floats:[200001.0]}]

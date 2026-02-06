@@ -1,1 +1,1 @@
-give @s bow[custom_name='{text:"弓·II阶",italic:0b}',custom_data={bow_normal_level2:1b},enchantments={power:1}]
+give @s bow[custom_name={text:"弓·II阶",italic:0b},custom_data={bow_normal_level2:1b},enchantments={power:1}]
