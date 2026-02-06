@@ -1,6 +1,6 @@
 execute unless entity @s[scores={MazeLS=-999..}] run scoreboard players set @s MazeLS 1
-tellraw @s[scores={MazeLS=..20}] {"text":"『世界塔』存档点传送 第1页","bold":true,"color":"yellow","hoverEvent":{"action":"show_text","contents":{"text":"选择想要传送的世界塔存档点","color":"white"}}}
-tellraw @s[scores={MazeLS=21..}] {"text":"『拉比林斯的高塔』存档点传送 第1页","bold":true,"color":"yellow","hoverEvent":{"action":"show_text","contents":{"text":"选择想要传送的『拉比林斯的高塔』存档点","color":"white"}}}
+tellraw @s[scores={MazeLS=..20}] {"text":"『世界塔』存档点传送 第1页","bold":true,"color":"yellow","hover_event":{"action":"show_text","contents":{"text":"选择想要传送的世界塔存档点","color":"white"}}}
+tellraw @s[scores={MazeLS=21..}] {"text":"『拉比林斯的高塔』存档点传送 第1页","bold":true,"color":"yellow","hover_event":{"action":"show_text","contents":{"text":"选择想要传送的『拉比林斯的高塔』存档点","color":"white"}}}
 tellraw @s {"text":"","bold":false}
 tellraw @s[scores={MazeLS=..20}] {"text":"《深森的闸口》","bold":false,"color":"white"}
 tellraw @s[scores={MazeLS=21..}] [{"text":"《虚饰的园林》","bold":false,"color":"white"},{"text":"地下9层~地下7层","bold":false,"color":"gray"}]

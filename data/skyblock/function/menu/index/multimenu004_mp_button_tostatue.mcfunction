@@ -13,7 +13,7 @@ tellraw @s [{"text":"      生涯杀人数量： ","color":"blue"},{"score":{"na
 #tellraw @s [{"text":"      Minigame - 标靶射击黑杰克 胜利次数： ","color":"dark_purple"},{"score":{"name":"@s","objective":"Perm_BlackJackW"}}]
 tellraw @s [{"text":"      Minigame - 亚兹列尔的中庭花园 魔力指数： ","color":"dark_purple"},{"score":{"name":"@s","objective":"Azr_skillPoints"}}]
 tellraw @s {"text":" "}
-tellraw @s [{"text":"   ","color":"white"},{"text":"查看职业数据","underlined":true,"color":"yellow","click_event":{"action":"run_command","value":"/trigger MultiMenu set 29"},"hoverEvent":{"action":"show_text","contents":{"text":"查看自己的PVP职业统计数据","color":"white"}}}]
+tellraw @s [{"text":"   ","color":"white"},{"text":"查看职业数据","underlined":true,"color":"yellow","click_event":{"action":"run_command","value":"/trigger MultiMenu set 29"},"hover_event":{"action":"show_text","contents":{"text":"查看自己的PVP职业统计数据","color":"white"}}}]
 tellraw @s {"text":" "}
-tellraw @s {"text":"      [返回主菜单]","color":"yellow","click_event":{"action":"run_command","value":"/trigger MultiMenu set 991"},"hoverEvent":{"action":"show_text","contents":{"text":"返回主菜单","color":"green"}}}
+tellraw @s {"text":"      [返回主菜单]","color":"yellow","click_event":{"action":"run_command","value":"/trigger MultiMenu set 991"},"hover_event":{"action":"show_text","contents":{"text":"返回主菜单","color":"green"}}}
 scoreboard players set @s MultiMenu 0

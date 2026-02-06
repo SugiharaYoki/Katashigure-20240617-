@@ -1,4 +1,4 @@
-tellraw @s {"text":"『跑酷长廊』存档点传送 第3页","bold":true,"color":"blue","hoverEvent":{"action":"show_text","contents":{"text":"选择想要传送的跑酷存档点","color":"white"}}}
+tellraw @s {"text":"『跑酷长廊』存档点传送 第3页","bold":true,"color":"blue","hover_event":{"action":"show_text","contents":{"text":"选择想要传送的跑酷存档点","color":"white"}}}
 tellraw @s {"text":"","bold":false}
 tellraw @s[scores={ParkourLastStage=17..}] {"text":"  《机械神庙》","bold":false,"color":"white"}
 tellraw @s[scores={ParkourLastStage=17..}] {"text":"     - 第 17 关","bold":false,"color":"green","click_event":{"action":"run_command","value":"/trigger MultiMenu set 806017"}}

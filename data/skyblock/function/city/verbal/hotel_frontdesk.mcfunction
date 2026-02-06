@@ -1,4 +1,4 @@
-tellraw @s {"text":"『酒店前台』","bold":true,"color":"gold","hoverEvent":{"action":"show_text","contents":["",{"selector":"@s","color":"light_purple"},{"text":" 的个人菜单","color":"light_purple"}]}}
+tellraw @s {"text":"『酒店前台』","bold":true,"color":"gold","hover_event":{"action":"show_text","contents":["",{"selector":"@s","color":"light_purple"},{"text":" 的个人菜单","color":"light_purple"}]}}
 playsound entity.villager.yes ambient @s ~ ~ ~ 10
 tellraw @s {"text":"个人状态","bold":false,"color":"light_purple","click_event":{"action":"run_command","value":"/trigger MultiMenu set 4"}}
 tellraw @s {"text":"快捷传送","bold":false,"color":"light_purple","click_event":{"action":"run_command","value":"/trigger MultiMenu set 5"}}

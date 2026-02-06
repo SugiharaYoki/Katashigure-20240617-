@@ -66,4 +66,4 @@ function skyblock:city/id/read_finish
 scoreboard players set @s MultiMenu 0
 
 
-tellraw @s {"text":"   [返回PVP主页]","color":"yellow","click_event":{"action":"run_command","value":"/trigger MultiMenu set 118"},"hoverEvent":{"action":"show_text","contents":{"text":"返回PVP设置菜单","color":"green"}}}
+tellraw @s {"text":"   [返回PVP主页]","color":"yellow","click_event":{"action":"run_command","value":"/trigger MultiMenu set 118"},"hover_event":{"action":"show_text","contents":{"text":"返回PVP设置菜单","color":"green"}}}
