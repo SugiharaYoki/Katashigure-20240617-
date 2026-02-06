@@ -1,1 +1,1 @@
-give @s netherite_helmet[custom_data={"dev_tool:spyglasses":1b},!max_damage,custom_name={text:"Spyglasses",bold:1b, italic:0b, "color": "light_purple"},lore = ['{text:"佩戴以显示不可见实体的位置","color": "white"}],attribute_modifiers={show_in_tooltip:false,modifiers:[]}]
+give @s netherite_helmet[custom_data={"dev_tool:spyglasses":1b},!max_damage,custom_name={text:"Spyglasses",bold:1b, italic:0b, "color": "light_purple"},lore = ['{text:"佩戴以显示不可见实体的位置","color": "white"}],attribute_modifiers={tooltip_display:false,modifiers:[]}]
