@@ -54,11 +54,11 @@ execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1038 run time set 
 
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1001 run fill 90131 131 118 90131 129 116 minecraft:waxed_oxidized_copper_grate
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1001 as @a[tag=SEAPT] at @s run playsound minecraft:entity.evoker.ambient hostile @s ~ ~ ~ 10 0.7
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1001 as @a[tag=SEAPT] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @s [{"text":"诡谲的低吟：","color":"yellow","bold": true},{"text":"\n“甚好，终于到了。”","color":"white","bold": false}]
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1001 as @a[tag=SEAPT] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @s [{"text":"诡谲的低吟：","color":"yellow","bold": true},{"text":"\n“甚好，所有人都到齐了。”","color":"white","bold": false}]
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1001 as @a[tag=SEAPT] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @s [{text:"诡谲的低吟：",color:"yellow","bold": true},{text:"\n“甚好，终于到了。”",color:"white","bold": false}]
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1001 as @a[tag=SEAPT] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @s [{text:"诡谲的低吟：",color:"yellow","bold": true},{text:"\n“甚好，所有人都到齐了。”",color:"white","bold": false}]
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1023 as @a[tag=SEAPT] at @s run playsound minecraft:entity.evoker.ambient hostile @s ~ ~ ~ 10 0.7
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1023 as @a[tag=SEAPT] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @s [{"text":"诡谲的低吟：","color":"yellow","bold": true},{"text":"\n“吾为汝准备了完美的坟墓，珍惜吾之恩赐。”","color":"white","bold": false}]
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1023 as @a[tag=SEAPT] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @s [{"text":"诡谲的低吟：","color":"yellow","bold": true},{"text":"\n“吾为汝等准备了完美的坟墓，珍惜吾之恩赐。”","color":"white","bold": false}]
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1023 as @a[tag=SEAPT] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @s [{text:"诡谲的低吟：",color:"yellow","bold": true},{text:"\n“吾为汝准备了完美的坟墓，珍惜吾之恩赐。”",color:"white","bold": false}]
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1023 as @a[tag=SEAPT] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @s [{text:"诡谲的低吟：",color:"yellow","bold": true},{text:"\n“吾为汝等准备了完美的坟墓，珍惜吾之恩赐。”",color:"white","bold": false}]
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1032 as @a[tag=SEAPT] at @s run playsound minecraft:entity.evoker.prepare_attack hostile @s ~ ~ ~ 10 0.9
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1032 as @e[tag=SEAeventi02slow2a] at @s run data modify entity @s NoAI set value false
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1032 as @e[tag=SEAeventi02slow2a] at @s run data modify entity @s Invulnerable set value false

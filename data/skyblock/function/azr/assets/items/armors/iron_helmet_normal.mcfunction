@@ -1,1 +1,1 @@
-give @s iron_helmet[custom_data={iron_helmet_normal:1b},custom_name='{"text":"铁盔","italic":false}',attribute_modifiers=[{type:"minecraft:armor",id:"azr:iron_helmet_normal.armor",amount:3.0,operation:"add_value",slot:"armor"}],custom_model_data={floats:[100004.0]}]
+give @s iron_helmet[custom_data={iron_helmet_normal:1b},custom_name='{text:"铁盔","italic":false}',attribute_modifiers=[{type:"minecraft:armor",id:"azr:iron_helmet_normal.armor",amount:3.0,operation:"add_value",slot:"armor"}],custom_model_data={floats:[100004.0]}]

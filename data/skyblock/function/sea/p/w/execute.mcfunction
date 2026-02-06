@@ -295,14 +295,14 @@ tag @s[tag=SEA_w_upg_FAILED_NC_armor4] remove SEA_w_upg_SUCCESS
 execute if entity @s[tag=SEA_w_upg_SUCCESS] run function skyblock:sea/p/w/execute_sub
 
 
-execute if entity @s[scores={sea_i_echo_shard=-90..-1}] run tellraw @s[tag=SEA_w_upg_FAILED] [{"text":"警告：回声碎片已透支！","color":"red"}]
-execute if entity @s[scores={sea_i_iron_ingot=-90..-1}] run tellraw @s[tag=SEA_w_upg_FAILED] [{"text":"警告：铁锭已透支！","color":"red"}]
-tellraw @s[tag=SEA_w_upg_FAILED] [{"text":"失败：剩余素材不足！","color":"red"}]
-tellraw @s[tag=SEA_w_upg_FAILED_NC] [{"text":"失败：相邻升级格未解锁！","color":"red"}]
-tellraw @s[tag=SEA_w_upg_FAILED_NC_armor1] [{"text":"我需要找到头盔才能进行这个升级……","color":"red"}]
-tellraw @s[tag=SEA_w_upg_FAILED_NC_armor2] [{"text":"我需要找到护胸才能进行这个升级……","color":"red"}]
-tellraw @s[tag=SEA_w_upg_FAILED_NC_armor3] [{"text":"我需要找到护腿才能进行这个升级……","color":"red"}]
-tellraw @s[tag=SEA_w_upg_FAILED_NC_armor4] [{"text":"我需要找到靴子才能进行这个升级……","color":"red"}]
+execute if entity @s[scores={sea_i_echo_shard=-90..-1}] run tellraw @s[tag=SEA_w_upg_FAILED] [{text:"警告：回声碎片已透支！",color:"red"}]
+execute if entity @s[scores={sea_i_iron_ingot=-90..-1}] run tellraw @s[tag=SEA_w_upg_FAILED] [{text:"警告：铁锭已透支！",color:"red"}]
+tellraw @s[tag=SEA_w_upg_FAILED] [{text:"失败：剩余素材不足！",color:"red"}]
+tellraw @s[tag=SEA_w_upg_FAILED_NC] [{text:"失败：相邻升级格未解锁！",color:"red"}]
+tellraw @s[tag=SEA_w_upg_FAILED_NC_armor1] [{text:"我需要找到头盔才能进行这个升级……",color:"red"}]
+tellraw @s[tag=SEA_w_upg_FAILED_NC_armor2] [{text:"我需要找到护胸才能进行这个升级……",color:"red"}]
+tellraw @s[tag=SEA_w_upg_FAILED_NC_armor3] [{text:"我需要找到护腿才能进行这个升级……",color:"red"}]
+tellraw @s[tag=SEA_w_upg_FAILED_NC_armor4] [{text:"我需要找到靴子才能进行这个升级……",color:"red"}]
 tag @s remove SEA_w_upg_FAILED
 tag @s remove SEA_w_upg_FAILED_NC
 tag @s remove SEA_w_upg_FAILED_NC_armor1

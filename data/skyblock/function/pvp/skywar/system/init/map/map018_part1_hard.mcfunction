@@ -63,7 +63,7 @@ execute positioned -8410 58 -10000 run clone ~120 ~ ~120 ~140 ~60 ~140 50130 10 
 forceload remove -8810 -10000 -8612 -9802
 
 
-title @a actionbar {"text":"空岛战争： 穷泽叢烬的水灵脉","bold":true,"color":"blue"}
+title @a actionbar {text:"空岛战争： 穷泽叢烬的水灵脉","bold":true,color:"blue"}
 forceload add 50000 50000 50200 50200
 fillbiome 50000 10 50000 50180 11 50180 jungle
 fillbiome 50000 12 50000 50180 13 50180 jungle

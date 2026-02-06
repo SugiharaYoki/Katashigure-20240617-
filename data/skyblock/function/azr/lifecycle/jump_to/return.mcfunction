@@ -1,3 +1,3 @@
 function skyblock:azr/lifecycle/jump_to/generic_retrieve
 function skyblock:azr/lifecycle/endgame/quit_game
-tellraw @s {"text":"你的灵魂并未被乌列尔指引，请亲自踏上前往未来的道路……","color":"red"}
+tellraw @s {text:"你的灵魂并未被乌列尔指引，请亲自踏上前往未来的道路……",color:"red"}

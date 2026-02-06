@@ -1,3 +1,3 @@
-execute unless block 90062 103 135 grindstone positioned 90120 123 123 run tellraw @a[distance=0..5] {"text":"正在呼叫联络总站。","color":"dark_purple"}
+execute unless block 90062 103 135 grindstone positioned 90120 123 123 run tellraw @a[distance=0..5] {text:"正在呼叫联络总站。",color:"dark_purple"}
 execute unless block 90062 103 135 grindstone run scoreboard players set @n[tag=sc,scores={sea_4temp2=..199}] sea_4temp2 200
 execute unless block 90062 103 135 grindstone positioned 90120 123 123 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1

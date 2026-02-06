@@ -108,7 +108,7 @@ execute as @s at @s if block ~ ~ ~ cobweb run setblock ~ ~ ~ air destroy
 
 #execute as @s[tag=!boss2hplock3] at @s positioned ~6 ~1 ~ run particle sculk_soul ~ ~ ~ 2 3 3 0.0 85
 #execute as @s[tag=!boss2hplock3] at @s positioned ~6 ~1 ~ run particle soul_fire_flame ~ ~ ~ 2 3 3 0.0 85
-#execute as @s[tag=!boss2hplock3] at @s positioned ~2.5 ~ ~ as @a[tag=SEAPT,distance=0..3] at @s run tellraw @s {"text":"跑错方向了，不能往它的后方跑！","color":"red"}
+#execute as @s[tag=!boss2hplock3] at @s positioned ~2.5 ~ ~ as @a[tag=SEAPT,distance=0..3] at @s run tellraw @s {text:"跑错方向了，不能往它的后方跑！",color:"red"}
 #execute as @s[tag=!boss2hplock3] at @s positioned ~3.5 ~ ~ as @a[tag=SEAPT,distance=0..3.1] at @s run effect give @s wither 2 3 false
 #execute as @s[tag=!boss2hplock3] at @s positioned ~5.5 ~ ~ as @a[tag=SEAPT,distance=0..5.1] at @s run effect give @s wither 2 9 false
 #execute as @s[tag=!boss2hplock3] at @s positioned ~7.5 ~ ~ as @a[tag=SEAPT,distance=0..7.3] at @s run effect give @s wither 2 39 false
@@ -124,9 +124,9 @@ execute as @s[scores={sea_boss1_hp=..250},tag=!boss2hplock2] run particle sculk_
 execute as @s[scores={sea_boss1_hp=..100},tag=!boss2hplock3] run particle sculk_soul ~ ~1 ~ 0.3 1 0.3 0 5
 
 
-execute as @s[scores={sea_boss1_hp=..350},tag=!boss2hplock1,tag=!boss2hplock1warn] run tellraw @a[tag=SEAPT] {"text":"这家伙怎么变得刀枪不入……试着往太阳落下的方向后退看看！","color":"red"}
-execute as @s[scores={sea_boss1_hp=..250},tag=!boss2hplock2,tag=!boss2hplock2warn] run tellraw @a[tag=SEAPT] {"text":"又打不动这家伙了，得赶紧后退！","color":"red"}
-execute as @s[scores={sea_boss1_hp=..100},tag=!boss2hplock3,tag=!boss2hplock3warn] run tellraw @a[tag=SEAPT] {"text":"再次后退吧，感觉它应该快不行了！","color":"red"}
+execute as @s[scores={sea_boss1_hp=..350},tag=!boss2hplock1,tag=!boss2hplock1warn] run tellraw @a[tag=SEAPT] {text:"这家伙怎么变得刀枪不入……试着往太阳落下的方向后退看看！",color:"red"}
+execute as @s[scores={sea_boss1_hp=..250},tag=!boss2hplock2,tag=!boss2hplock2warn] run tellraw @a[tag=SEAPT] {text:"又打不动这家伙了，得赶紧后退！",color:"red"}
+execute as @s[scores={sea_boss1_hp=..100},tag=!boss2hplock3,tag=!boss2hplock3warn] run tellraw @a[tag=SEAPT] {text:"再次后退吧，感觉它应该快不行了！",color:"red"}
 execute as @s[scores={sea_boss1_hp=..350},tag=!boss2hplock1,tag=!boss2hplock1warn] run data modify entity @s Invulnerable set value 1b
 execute as @s[scores={sea_boss1_hp=..250},tag=!boss2hplock2,tag=!boss2hplock2warn] run data modify entity @s Invulnerable set value 1b
 execute as @s[scores={sea_boss1_hp=..100},tag=!boss2hplock3,tag=!boss2hplock3warn] run data modify entity @s Invulnerable set value 1b
@@ -134,9 +134,9 @@ execute as @s[scores={sea_boss1_hp=..350},tag=!boss2hplock1,tag=!boss2hplock1war
 execute as @s[scores={sea_boss1_hp=..250},tag=!boss2hplock2,tag=!boss2hplock2warn] run tag @s add boss2hplock2warn
 execute as @s[scores={sea_boss1_hp=..100},tag=!boss2hplock3,tag=!boss2hplock3warn] run tag @s add boss2hplock3warn
 
-execute as @s[tag=boss2hplock1,tag=!boss2hplock1warn2] run tellraw @a[tag=SEAPT] {"text":"好像它身上的防御结界消失了！","color":"green"}
-execute as @s[tag=boss2hplock2,tag=!boss2hplock2warn2] run tellraw @a[tag=SEAPT] {"text":"防御结界再次消失了，应战吧！","color":"green"}
-execute as @s[tag=boss2hplock3,tag=!boss2hplock3warn2] run tellraw @a[tag=SEAPT] {"text":"好，这应该就是它最后的反抗了，一鼓作气干掉它吧！","color":"green"}
+execute as @s[tag=boss2hplock1,tag=!boss2hplock1warn2] run tellraw @a[tag=SEAPT] {text:"好像它身上的防御结界消失了！",color:"green"}
+execute as @s[tag=boss2hplock2,tag=!boss2hplock2warn2] run tellraw @a[tag=SEAPT] {text:"防御结界再次消失了，应战吧！",color:"green"}
+execute as @s[tag=boss2hplock3,tag=!boss2hplock3warn2] run tellraw @a[tag=SEAPT] {text:"好，这应该就是它最后的反抗了，一鼓作气干掉它吧！",color:"green"}
 execute as @s[tag=boss2hplock1,tag=!boss2hplock1warn2] run data modify entity @s Invulnerable set value 0b
 execute as @s[tag=boss2hplock2,tag=!boss2hplock2warn2] run data modify entity @s Invulnerable set value 0b
 execute as @s[tag=boss2hplock3,tag=!boss2hplock3warn2] run data modify entity @s Invulnerable set value 0b

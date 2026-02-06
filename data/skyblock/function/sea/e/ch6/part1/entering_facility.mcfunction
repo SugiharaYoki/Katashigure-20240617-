@@ -16,7 +16,7 @@ stopsound @a[tag=SEAPT] music
 
 setblock 90172 142 -1867 air
 execute if score SEA_ch6_event rng6 matches 390.. as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
-execute if score SEA_ch6_event rng6 matches 390.. as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“哦上帝，居然赶上了……我就知道和你一起就能做到。”","color":"white","bold": false}]
+execute if score SEA_ch6_event rng6 matches 390.. as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{text:"艾德雯娜：",color:"green","bold": true},{text:"\n“哦上帝，居然赶上了……我就知道和你一起就能做到。”",color:"white","bold": false}]
 execute if score SEA_ch6_event rng6 matches 410.. as @n[tag=SEAedwina] at @s run setblock 90172 142 -1867 lantern
 
 scoreboard players set SEA_ch6_event rng6 9999

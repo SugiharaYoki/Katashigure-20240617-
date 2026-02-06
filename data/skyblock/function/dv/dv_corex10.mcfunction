@@ -24,13 +24,13 @@ execute as @a[tag=SeGa_DVA,scores={DeathCount=1..}] at @s run scoreboard players
 execute as @a[tag=SeGa_DVA,scores={DeathCount=1..}] at @s run scoreboard players operation @s Temp_PersonDVSt /= 2 constant
 execute as @a[tag=SeGa_DVA,scores={DeathCount=1..}] at @s run scoreboard players set @s DeathCount 0
 
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] as @a[tag=SeGa_DVA,x=-90001,y=105,z=56,distance=0..200,gamemode=!spectator,gamemode=!creative] at @s unless block ~ ~ ~ water[level=15] if entity @s[y=0,dy=101] run tellraw @s {"text":"你失足坠崖了！已自动传送回亭内！","color":"yellow"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] as @a[tag=SeGa_DVA,x=-90001,y=105,z=56,distance=0..200,gamemode=!spectator,gamemode=!creative] at @s unless block ~ ~ ~ water[level=15] if entity @s[y=0,dy=101] run tellraw @s {text:"你失足坠崖了！已自动传送回亭内！",color:"yellow"}
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] as @a[tag=SeGa_DVA,x=-90001,y=105,z=56,distance=0..200,gamemode=!spectator,gamemode=!creative] at @s unless block ~ ~ ~ water[level=15] if entity @s[y=0,dy=101] run effect give @s slow_falling 2 0 true
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] as @a[tag=SeGa_DVA,x=-90001,y=105,z=56,distance=0..200,gamemode=!spectator,gamemode=!creative] at @s unless block ~ ~ ~ water[level=15] if entity @s[y=0,dy=101] run effect give @s weakness 3 29 true
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] as @a[tag=SeGa_DVA,x=-90001,y=105,z=56,distance=0..200,gamemode=!spectator,gamemode=!creative] at @s unless block ~ ~ ~ water[level=15] if entity @s[y=0,dy=101] run tp @s -90001 106 54 facing -90001 106 53
 
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] unless entity @e[tag=SeGaDVProt,x=-90001,y=105,z=56,distance=0..50] run playsound entity.villager.death master @a -90001 105 56 10 0.8
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] unless entity @e[tag=SeGaDVProt,x=-90001,y=105,z=56,distance=0..50] run summon lightning_bolt -90001 105 56
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] unless entity @e[tag=SeGaDVProt,x=-90001,y=105,z=56,distance=0..50] run tellraw @a[tag=SeGa_DVA] {"text":"云端亭主不幸死亡！游戏结束！","color":"red"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] unless entity @e[tag=SeGaDVProt,x=-90001,y=105,z=56,distance=0..50] run tellraw @a[tag=SeGa_DVA] {text:"云端亭主不幸死亡！游戏结束！",color:"red"}
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] unless entity @e[tag=SeGaDVProt,x=-90001,y=105,z=56,distance=0..50] run function skyblock:dv/dv_sys_initialize
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] unless entity @e[tag=SeGaDVProt,x=-90001,y=105,z=56,distance=0..50] run function skyblock:api_quit_any_game

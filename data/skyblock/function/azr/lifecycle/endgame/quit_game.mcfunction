@@ -25,8 +25,8 @@ execute if entity @s[scores={AZS_SoulFrag=1..}] run scoreboard players operation
 
 scoreboard players set @s AzrSariel_Data_CostAmount 0
 
-#tellraw @s [{"text":"你已经退出游戏！最终坚持关数： ","color":"red"},{"score":{"name":"@s","objective":"Azr_wave"}}]
-tellraw @s [{"text":"你已退出游戏！","color":"gray"}]
+#tellraw @s [{text:"你已经退出游戏！最终坚持关数： ",color:"red"},{"score":{"name":"@s","objective":"Azr_wave"}}]
+tellraw @s [{text:"你已退出游戏！",color:"gray"}]
 tag @s remove azrPlayer
 tag @s remove azrShopOnUse
 tag @s remove azrShopRefresh
@@ -50,9 +50,9 @@ function skyblock:azr/system/player/refresh_bossbar
 #SHD奖励
 #scoreboard players operation tempSHD Azr_system = stage Azr_system
 #scoreboard players operation @s Perm_PersonSHD += tempSHD Azr_system
-#tellraw @s [{"text":" 获得影之石：","color":"white"},{"score":{"name":"tempSHD","objective":"Azr_system"},"color":"yellow"}]
+#tellraw @s [{text:" 获得影之石：",color:"white"},{"score":{"name":"tempSHD","objective":"Azr_system"},color:"yellow"}]
 scoreboard players reset tempSHD Azr_system
-tellraw @s [{"text":"现在持有的影之石：","color":"white"},{"score":{"name":"@s","objective":"Perm_PersonSHD"},"color":"yellow"}]
+tellraw @s [{text:"现在持有的影之石：",color:"white"},{"score":{"name":"@s","objective":"Perm_PersonSHD"},color:"yellow"}]
 #后续处理
 execute if entity @s[x=-79900,y=40,z=0,distance=0..2200] run spawnpoint @s -79953 38 -14 -90
 execute if entity @s[x=-79900,y=40,z=0,distance=0..2200] run tp @s -79953.0 38.5 -14.0 facing -79952.0 38.5 -14.0

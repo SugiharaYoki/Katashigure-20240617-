@@ -74,4 +74,4 @@ execute unless data storage large_number:math 24_point_buffer.solution_set if da
 execute if score #temp_can_ope int matches 16 unless data storage large_number:math 24_point{input:"无解"} run data modify storage large_number:math 24_point.output set value -2b
 
 
-#tellraw @a {"text":"\u00A7724点：表达式解析完成"}
+#tellraw @a {text:"\u00A7724点：表达式解析完成"}

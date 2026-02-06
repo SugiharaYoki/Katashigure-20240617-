@@ -1,1 +1,1 @@
-give @s iron_boots[custom_data={iron_boots_normal:1b},custom_name='{"text":"铁靴","italic":false}',attribute_modifiers=[{type:"minecraft:armor",id:"azr:iron_boots_normal.armor",amount:3.0,operation:"add_value",slot:"armor"}],custom_model_data={floats:[100004.0]}]
+give @s iron_boots[custom_data={iron_boots_normal:1b},custom_name='{text:"铁靴","italic":false}',attribute_modifiers=[{type:"minecraft:armor",id:"azr:iron_boots_normal.armor",amount:3.0,operation:"add_value",slot:"armor"}],custom_model_data={floats:[100004.0]}]

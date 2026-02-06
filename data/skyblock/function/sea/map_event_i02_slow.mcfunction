@@ -123,7 +123,7 @@ execute as @n[tag=sc,scores={sea_4temp5=6}] run playsound minecraft:block.iron_d
 
 execute as 10e959db-4b44-4cdd-b98c-350d3b454206 if block 90122 128 131 minecraft:warped_button[powered=true] unless entity @s[scores={sea_4temp2=80..}] run scoreboard players set @s sea_4temp2 80
 execute as @n[tag=sc,scores={sea_4temp2=80..395}] run scoreboard players add @s sea_4temp2 1
-execute as @n[tag=sc,scores={sea_4temp2=89}] positioned 90122 128 131 run tellraw @a[distance=0..50] {"text":"正在呼叫联络总站。","color":"dark_purple"}
+execute as @n[tag=sc,scores={sea_4temp2=89}] positioned 90122 128 131 run tellraw @a[distance=0..50] {text:"正在呼叫联络总站。",color:"dark_purple"}
 execute as @n[tag=sc,scores={sea_4temp2=89}] positioned 90122 128 131 run playsound minecraft:entity.endermite.ambient ambient @a ~ ~ ~ 0.8 0.1
 
 execute as @n[tag=sc,scores={sea_4temp2=103..395}] run function skyblock:sea/e/ch2/ev024_ch2_the_first_conversation_exchange
@@ -278,13 +278,13 @@ execute as @n[tag=sc,scores={sea_4temp2=5001}] positioned 90074.0 129 109.0 run 
 execute as @n[tag=sc,scores={sea_4temp2=5001}] as @a[tag=SEAPT] at @s run playsound item.trident.thunder ambient @s ~ ~ ~ 100 0.5
 execute as @n[tag=sc,scores={sea_4temp2=5002}] run give @a[tag=SEAPT,scores={SEAPT_mode=1}] nether_star
 execute as @n[tag=sc,scores={sea_4temp2=5002}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..5}] sea_progress 6
-execute as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT] at @s unless entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/17=true}] run tellraw @s {"text":"一番苦战，但终于解决了这几个家伙。","color":"gray"}
-execute as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT] at @s unless entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/17=true}] run tellraw @s {"text":"是时候往更上层去了。","color":"gray"}
-execute as @n[tag=sc,scores={sea_4temp2=5057}] as @a[tag=SEAPT] at @s unless entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/17=true}] run tellraw @s {"text":"……我甚至无法想象上面会是怎样的情景。","color":"gray"}
-execute as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT] at @s if entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/17=true}] run tellraw @s {"text":"冤冤相报何时了，就算死亡、就算疯癫也无法为你们带来安息吗？","color":"gray"}
-execute as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT] at @s if entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/17=true}] run tellraw @s {"text":"但是，我已经见证了你们的结局。","color":"gray"}
-execute as @n[tag=sc,scores={sea_4temp2=5057}] as @a[tag=SEAPT] at @s if entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/17=true}] run tellraw @s {"text":"我对发生的一切感到很抱歉。虽然改变不了任何悲剧，但我会将此铭记。","color":"gray"}
-execute as @n[tag=sc,scores={sea_4temp2=5089}] as @a[tag=SEAPT] at @s run tellraw @s {"text":"『厄珀娅的悲歌』第二章 完","color":"blue","bold": true}
+execute as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT] at @s unless entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/17=true}] run tellraw @s {text:"一番苦战，但终于解决了这几个家伙。",color:"gray"}
+execute as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT] at @s unless entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/17=true}] run tellraw @s {text:"是时候往更上层去了。",color:"gray"}
+execute as @n[tag=sc,scores={sea_4temp2=5057}] as @a[tag=SEAPT] at @s unless entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/17=true}] run tellraw @s {text:"……我甚至无法想象上面会是怎样的情景。",color:"gray"}
+execute as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT] at @s if entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/17=true}] run tellraw @s {text:"冤冤相报何时了，就算死亡、就算疯癫也无法为你们带来安息吗？",color:"gray"}
+execute as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT] at @s if entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/17=true}] run tellraw @s {text:"但是，我已经见证了你们的结局。",color:"gray"}
+execute as @n[tag=sc,scores={sea_4temp2=5057}] as @a[tag=SEAPT] at @s if entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/17=true}] run tellraw @s {text:"我对发生的一切感到很抱歉。虽然改变不了任何悲剧，但我会将此铭记。",color:"gray"}
+execute as @n[tag=sc,scores={sea_4temp2=5089}] as @a[tag=SEAPT] at @s run tellraw @s {text:"『厄珀娅的悲歌』第二章 完",color:"blue","bold": true}
 execute as @n[tag=sc,scores={sea_4temp2=5089}] positioned 90066 129 95 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
 
 #execute as @n[tag=sc,scores={sea_4temp2=5089}] as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.8

@@ -50,4 +50,4 @@ execute if block 27 56 -105 crimson_hyphae positioned 50440 50 50520 run functio
 execute if block 27 56 -105 crimson_hyphae positioned 50400 50 50520 run function skyblock:pvp/skywar/system/init/map/map013_partgenerate
 
 
-title @a actionbar {"text":"PVP - 混沌魔方","bold":true,"color":"blue"}
+title @a actionbar {text:"PVP - 混沌魔方","bold":true,color:"blue"}

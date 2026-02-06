@@ -10,18 +10,18 @@ execute if entity @n[tag=sc,scores={SeGa_DVTimer=6}] run bossbar set minecraft:8
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6}] run bossbar set minecraft:8532101 players @a[tag=SeGa_DVA]
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=1..5}] run execute as @a[x=-90001,y=105,z=56,distance=0..500,gamemode=!spectator] at @s run tag @s add SeGa_DVA
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=1..5}] run execute as @a[x=-90001,y=105,z=56,distance=0..500,gamemode=spectator] at @s run tag @s remove SeGa_DVA
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=1}] run tellraw @a[tag=SeGa_DVA] {"text":"游戏将在5秒内开始……","color":"gray"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=1}] run tellraw @a[tag=SeGa_DVA] {text:"游戏将在5秒内开始……",color:"gray"}
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=1..4}] run playsound block.note_block.harp master @a[tag=SeGa_DVA] -90001 125 56 10 0.5
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=5}] run playsound block.note_block.harp master @a[tag=SeGa_DVA] -90001 125 56 10 1
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=2}] run tellraw @a[tag=SeGa_DVA] {"text":"游戏将在4秒内开始……","color":"gray"}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=3}] run tellraw @a[tag=SeGa_DVA] {"text":"游戏将在3秒内开始……","color":"gray"}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=4}] run tellraw @a[tag=SeGa_DVA] {"text":"游戏将在2秒内开始……","color":"gray"}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=5}] run tellraw @a[tag=SeGa_DVA] {"text":"游戏将在1秒内开始……","color":"gray"}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=6}] run tellraw @a[tag=SeGa_DVA] {"text":" - 游戏开始 - ","color":"green"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=2}] run tellraw @a[tag=SeGa_DVA] {text:"游戏将在4秒内开始……",color:"gray"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=3}] run tellraw @a[tag=SeGa_DVA] {text:"游戏将在3秒内开始……",color:"gray"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=4}] run tellraw @a[tag=SeGa_DVA] {text:"游戏将在2秒内开始……",color:"gray"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=5}] run tellraw @a[tag=SeGa_DVA] {text:"游戏将在1秒内开始……",color:"gray"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=6}] run tellraw @a[tag=SeGa_DVA] {text:" - 游戏开始 - ",color:"green"}
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimerx10 0
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimerQT 0
 #execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] run effect give @a[tag=SeGa_DVA] haste 10 39 true
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] if entity @a[tag=SeGa_DVA,x=-90001,y=105,z=56,distance=0..200,gamemode=!spectator] as @a[x=-90001,y=105,z=56,distance=0..200,tag=!SeGa_DVA,gamemode=!spectator] at @s run tellraw @s {"text":"你加入了一场正在进行中的『云亭攻防战』","color":"yellow"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] if entity @a[tag=SeGa_DVA,x=-90001,y=105,z=56,distance=0..200,gamemode=!spectator] as @a[x=-90001,y=105,z=56,distance=0..200,tag=!SeGa_DVA,gamemode=!spectator] at @s run tellraw @s {text:"你加入了一场正在进行中的『云亭攻防战』",color:"yellow"}
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] if entity @a[tag=SeGa_DVA,x=-90001,y=105,z=56,distance=0..200,gamemode=!spectator] as @a[x=-90001,y=105,z=56,distance=0..200,tag=!SeGa_DVA,gamemode=!spectator] at @s run function skyblock:dv/dv_sys_initialspawn
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..}] unless entity @a[tag=SeGa_DVA,x=-90001,y=105,z=56,distance=0..200,gamemode=!spectator] if entity @a[x=-90001,y=105,z=56,distance=0..200,tag=!SeGa_DVA] run function skyblock:dv/dv_sys_initialize
 
@@ -62,27 +62,27 @@ execute if entity @n[tag=sc,scores={SeGa_DVTimer=6..,SeGa_DVStage=11..}] run eff
 #计时段落
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=10}] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 26
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=10}] run title @a[tag=SeGa_DVA] times 0 35 15
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=14}] run tellraw @a[tag=SeGa_DVA] {"text":"17","color":"green"}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=15}] run tellraw @a[tag=SeGa_DVA] {"text":"16","color":"green"}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=16}] run tellraw @a[tag=SeGa_DVA] {"text":"15","color":"green"}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=17}] run tellraw @a[tag=SeGa_DVA] {"text":"14","color":"green"}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=18}] run tellraw @a[tag=SeGa_DVA] {"text":"13","color":"green"}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=19}] run tellraw @a[tag=SeGa_DVA] {"text":"12","color":"green"}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=20}] run tellraw @a[tag=SeGa_DVA] {"text":"11","color":"green"}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=21}] run tellraw @a[tag=SeGa_DVA] {"text":"10","color":"green"}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=22}] run tellraw @a[tag=SeGa_DVA] {"text":"9","color":"green"}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=23}] run tellraw @a[tag=SeGa_DVA] {"text":"8","color":"green"}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=24}] run tellraw @a[tag=SeGa_DVA] {"text":"7","color":"green"}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=25}] run tellraw @a[tag=SeGa_DVA] {"text":"6","color":"yellow"}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=26}] run tellraw @a[tag=SeGa_DVA] {"text":"5","color":"yellow"}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=27}] run tellraw @a[tag=SeGa_DVA] {"text":"4","color":"yellow"}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=28}] run tellraw @a[tag=SeGa_DVA] {"text":"3","color":"red"}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=29}] run tellraw @a[tag=SeGa_DVA] {"text":"2","color":"red"}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=30}] run tellraw @a[tag=SeGa_DVA] {"text":"1","color":"red"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=14}] run tellraw @a[tag=SeGa_DVA] {text:"17",color:"green"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=15}] run tellraw @a[tag=SeGa_DVA] {text:"16",color:"green"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=16}] run tellraw @a[tag=SeGa_DVA] {text:"15",color:"green"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=17}] run tellraw @a[tag=SeGa_DVA] {text:"14",color:"green"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=18}] run tellraw @a[tag=SeGa_DVA] {text:"13",color:"green"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=19}] run tellraw @a[tag=SeGa_DVA] {text:"12",color:"green"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=20}] run tellraw @a[tag=SeGa_DVA] {text:"11",color:"green"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=21}] run tellraw @a[tag=SeGa_DVA] {text:"10",color:"green"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=22}] run tellraw @a[tag=SeGa_DVA] {text:"9",color:"green"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=23}] run tellraw @a[tag=SeGa_DVA] {text:"8",color:"green"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=24}] run tellraw @a[tag=SeGa_DVA] {text:"7",color:"green"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=25}] run tellraw @a[tag=SeGa_DVA] {text:"6",color:"yellow"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=26}] run tellraw @a[tag=SeGa_DVA] {text:"5",color:"yellow"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=27}] run tellraw @a[tag=SeGa_DVA] {text:"4",color:"yellow"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=28}] run tellraw @a[tag=SeGa_DVA] {text:"3",color:"red"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=29}] run tellraw @a[tag=SeGa_DVA] {text:"2",color:"red"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=30}] run tellraw @a[tag=SeGa_DVA] {text:"1",color:"red"}
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=30}] run tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove DV_North
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=30}] run tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove DV_South
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=30}] run scoreboard players add 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVStage 1
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=31}] run tellraw @a[tag=SeGa_DVA] [{"text":"Wave - ","color":"red"},{"color":"red","score":{"name":"10e959db-4b44-4cdd-b98c-350d3b454206","objective":"SeGa_DVStage"}}]
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=31}] run tellraw @a[tag=SeGa_DVA] [{text:"Wave - ",color:"red"},{color:"red","score":{"name":"10e959db-4b44-4cdd-b98c-350d3b454206","objective":"SeGa_DVStage"}}]
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=31..}] run function skyblock:tool_rng
 #实时排行分数
 #scoreboard players add 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimerLB 1
@@ -109,11 +109,11 @@ execute if entity @n[tag=sc,scores={SeGa_DVTimer=36,SeGa_DVStage=6}] run functio
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=37,SeGa_DVStage=6}] run function skyblock:dv/lib_piglin_archer
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=41,SeGa_DVStage=6}] positioned -90001 81 56 run summon piglin_brute ~ ~ ~ {PersistenceRequired:1b,Tags:["SeGaDVMob","20MAXHP"],DeathLootTable:"skyblock:defendcreeper_money_tier5",attributes:[{id:"knockback_resistance",base:1.0},{id:"armor_toughness",base:1.0},{id:"follow_range",base:1000.0},{id:"armor",base:9.5},{id:"max_health",base:20.0},{id:"movement_speed",base:0.139}],Health:20.0f,CustomName:"\"？？？\"",IsImmuneToZombification:1b,HandItems:[{count:1b,id:"netherite_sword",components:{"enchantments":{"minecraft:sharpness":2}}},{}],HandDropChances:[0.00f,0.00f],Passengers:[{id:"vindicator",Silent:1b,active_effects:[{id:"invisibility",ambient:0b,amplifier:1b,duration:-1,show_particles:0b}],attributes:[{id:"follow_range",base:1000.0},{id:"scale",base:0.01},{id:"attack_damage",base:0.0}],Tags:["SeGaDVRider"]}]}
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=41,SeGa_DVStage=6}] positioned -90001 81 56 run summon piglin_brute ~ ~ ~ {PersistenceRequired:1b,Tags:["SeGaDVMob","20MAXHP"],DeathLootTable:"skyblock:defendcreeper_money_tier5",attributes:[{id:"knockback_resistance",base:1.0},{id:"armor_toughness",base:1.0},{id:"follow_range",base:1000.0},{id:"armor",base:9.5},{id:"max_health",base:20.0},{id:"movement_speed",base:0.139}],Health:20.0f,CustomName:"\"？？？\"",IsImmuneToZombification:1b,HandItems:[{count:1b,id:"netherite_sword",components:{"enchantments":{"minecraft:sharpness":2}}},{}],HandDropChances:[0.00f,0.00f],Passengers:[{id:"vindicator",Silent:1b,active_effects:[{id:"invisibility",ambient:0b,amplifier:1b,duration:-1,show_particles:0b}],attributes:[{id:"follow_range",base:1000.0},{id:"scale",base:0.01},{id:"attack_damage",base:0.0}],Tags:["SeGaDVRider"]}]}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=41,SeGa_DVStage=6}] run tellraw @a[tag=SeGa_DVA] {"text":"警告！猪灵蛮兵即将现身！","color":"red"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=41,SeGa_DVStage=6}] run tellraw @a[tag=SeGa_DVA] {text:"警告！猪灵蛮兵即将现身！",color:"red"}
 
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=44,SeGa_DVStage=10}] positioned -90001 81 56 run summon piglin_brute ~ ~ ~ {PersistenceRequired:1b,Tags:["SeGaDVMob","40MAXHP"],DeathLootTable:"skyblock:defendcreeper_money_tier5",attributes:[{id:"knockback_resistance",base:1.0},{id:"armor_toughness",base:2.0},{id:"follow_range",base:1000.0},{id:"armor",base:12.5},{id:"max_health",base:40.0},{id:"movement_speed",base:0.139}],Health:40.0f,CustomName:"\"？？？\"",IsImmuneToZombification:1b,HandItems:[{count:1b,id:"netherite_sword",components:{"enchantments":{"minecraft:sharpness":3}}},{}],HandDropChances:[0.00f,0.00f],Passengers:[{id:"vindicator",Silent:1b,active_effects:[{id:"invisibility",ambient:0b,amplifier:1b,duration:-1,show_particles:0b}],attributes:[{id:"follow_range",base:1000.0},{id:"scale",base:0.01},{id:"attack_damage",base:0.0}],Tags:["SeGaDVRider"]}]}
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=44,SeGa_DVStage=10}] positioned -90001 81 56 run summon piglin_brute ~ ~ ~ {PersistenceRequired:1b,Tags:["SeGaDVMob","40MAXHP"],DeathLootTable:"skyblock:defendcreeper_money_tier5",attributes:[{id:"knockback_resistance",base:1.0},{id:"armor_toughness",base:2.0},{id:"follow_range",base:1000.0},{id:"armor",base:12.5},{id:"max_health",base:40.0},{id:"movement_speed",base:0.139}],Health:40.0f,CustomName:"\"？？？\"",IsImmuneToZombification:1b,HandItems:[{count:1b,id:"netherite_sword",components:{"enchantments":{"minecraft:sharpness":3}}},{}],HandDropChances:[0.00f,0.00f],Passengers:[{id:"vindicator",Silent:1b,active_effects:[{id:"invisibility",ambient:0b,amplifier:1b,duration:-1,show_particles:0b}],attributes:[{id:"follow_range",base:1000.0},{id:"scale",base:0.01},{id:"attack_damage",base:0.0}],Tags:["SeGaDVRider"]}]}
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=44,SeGa_DVStage=10}] run tellraw @a[tag=SeGa_DVA] {"text":"警告！猪灵蛮兵即将现身！","color":"red"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=44,SeGa_DVStage=10}] run tellraw @a[tag=SeGa_DVA] {text:"警告！猪灵蛮兵即将现身！",color:"red"}
 
 execute if entity @n[tag=sc,scores={SeGa_DVStage=20}] run function skyblock:dv/dv_core_boss
 execute if entity @n[tag=sc,scores={SeGa_DVStage=30}] run function skyblock:dv/dv_core_boss
@@ -312,9 +312,9 @@ execute if entity @n[tag=sc,scores={SeGa_DVTimer=33..37,SeGa_DVStage=41..45,rng3
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=33..37,SeGa_DVStage=41..45,rng3=2,rng5_30=17..18}] run function skyblock:dv/lib_wolf
 #判定结束
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=..30}] unless entity @e[tag=SeGaDVMob] as @a[tag=SeGa_DVA] at @s run playsound entity.player.levelup master @s ~ ~ ~ 1 0.9
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=..30}] unless entity @e[tag=SeGaDVMob] run tellraw @a[tag=SeGa_DVA] [{"text":"Wave Cleared!","color":"green"}]
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=..30}] unless entity @e[tag=SeGaDVMob] run tellraw @a[tag=SeGa_DVA] [{text:"Wave Cleared!",color:"green"}]
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..}] unless entity @e[tag=SeGaDVMob] as @a[tag=SeGa_DVA] at @s run playsound entity.player.levelup master @s ~ ~ ~ 1 0.9
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..}] unless entity @e[tag=SeGaDVMob] run tellraw @a[tag=SeGa_DVA] [{"text":"Wave Cleared!","color":"green"}]
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=53..,SeGa_DVStage=31..}] unless entity @e[tag=SeGaDVMob] run tellraw @a[tag=SeGa_DVA] [{text:"Wave Cleared!",color:"green"}]
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=1..10,rng3=1}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 17
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=1..10,rng3=2}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 18
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=50..,SeGa_DVStage=1..10,rng3=3}] unless entity @e[tag=SeGaDVMob] run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 SeGa_DVTimer 19

@@ -9,8 +9,8 @@ execute if score SEA_ch5_event_boss5 rng1 matches 0..20 run playsound ambient.so
 scoreboard players add SEA_ch5_event_boss5 rng1 1
 
 execute if score SEA_ch5_event_boss5 rng1 matches 80 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score SEA_ch5_event_boss5 rng1 matches 80 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..15 run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“这家伙的样子……是不是有点不太对劲？”","color":"white","bold": false}]
-execute if score SEA_ch5_event_boss5 rng1 matches 80 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 16.. run tellraw @a[distance=0..200] [{"text":"菲尔娜：","color":"green","bold": true},{"text":"\n“我有不太好的预感，这家伙的样子不对劲。”","color":"white","bold": false}]
+execute if score SEA_ch5_event_boss5 rng1 matches 80 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..15 run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green","bold": true},{text:"\n“这家伙的样子……是不是有点不太对劲？”",color:"white","bold": false}]
+execute if score SEA_ch5_event_boss5 rng1 matches 80 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 16.. run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green","bold": true},{text:"\n“我有不太好的预感，这家伙的样子不对劲。”",color:"white","bold": false}]
 
 
 execute if score SEA_ch5_event_boss5 rng1 matches 20..120 store result score @s sea_4temp3 run random value 1..400

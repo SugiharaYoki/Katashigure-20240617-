@@ -5,8 +5,8 @@ execute unless score @s CmdType matches -2147483648..2147483647 if score @s CmdT
 execute unless score @s CmdType matches -2147483648..2147483647 if score @s CmdTrigger matches 1 run function skyblock:cmd/hanoi/print_setting
     execute unless score @s HanoiCount matches -2147483648..2147483647 run scoreboard players set @s HanoiCount 3
     execute if score @s HanoiCount matches ..0 run scoreboard players set @s HanoiCount 3
-    execute unless score @s HanoiCount matches 3.. run tellraw @s [{"text":"汉诺塔游戏要求的最小阶数为3，否则你将不能获得任何浮世币奖励！","color":"red"}]
-    execute if score @s HanoiCount matches 11.. run tellraw @s [{"text":"汉诺塔游戏允许的最高阶数为10，这需要至少1023次操作……","color":"red"}]
+    execute unless score @s HanoiCount matches 3.. run tellraw @s [{text:"汉诺塔游戏要求的最小阶数为3，否则你将不能获得任何浮世币奖励！",color:"red"}]
+    execute if score @s HanoiCount matches 11.. run tellraw @s [{text:"汉诺塔游戏允许的最高阶数为10，这需要至少1023次操作……",color:"red"}]
     execute if score @s HanoiCount matches 11.. run scoreboard players set @s HanoiCount 10
 
 execute unless score @s CmdType matches -2147483648..2147483647 if score @s CmdTrigger matches 2 run function skyblock:cmd/hanoi/init with storage cmd:io

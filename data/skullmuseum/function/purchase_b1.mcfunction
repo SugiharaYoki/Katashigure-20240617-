@@ -1,5 +1,5 @@
-execute if entity @s[scores={SkMu_Copp=1..}] run tellraw @s {"text":"已成功兑换头颅！","color":"green"}
-execute unless entity @s[scores={SkMu_Copp=1..}] run tellraw @s [{"text":"票券不足！","color":"red"},{"text":" 需求品质： 铜","color":"gray"}]
+execute if entity @s[scores={SkMu_Copp=1..}] run tellraw @s {text:"已成功兑换头颅！",color:"green"}
+execute unless entity @s[scores={SkMu_Copp=1..}] run tellraw @s [{text:"票券不足！",color:"red"},{text:" 需求品质： 铜",color:"gray"}]
 execute if entity @s[scores={SkMu_Copp=1..}] run tag @s add purchasesuccess
 execute as @s at @s[tag=purchasesuccess] run tag @s remove SkMu_Copp
 execute as @s at @s[tag=purchasesuccess] run give @s minecraft:player_head[minecraft:profile={name:"Push_red_button",properties:[{name:"textures",value:"ewogICJ0aW1lc3RhbXAiIDogMTYxNzMxMzE1OTY0MCwKICAicHJvZmlsZUlkIiA6ICJlNWM2YmUxNzRlZTE0M2EwYWRhNjhlMzUyNzA4ZmZhMiIsCiAgInByb2ZpbGVOYW1lIiA6ICJQdXNoX3JlZF9idXR0b24iLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzg1MWNmYjY3MTc3OTU5NzRkMzIyZTdiYjY5OGU5YWI1N2UxZTBlMjI5NTA0ODZhNjk5YzgxOGUwMmU5MGIyOSIKICAgIH0KICB9Cn0="}],id:[I;-439960041,1323385760,-1381593547,654901154]},custom_name='"Red Button"'] 1

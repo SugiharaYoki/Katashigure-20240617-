@@ -33,7 +33,7 @@ execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..13] unless en
 execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..13] unless entity @n[tag=SEAch3_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
 execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless entity @n[tag=SEAch3_spawn_initial,distance=0..3] run function skyblock:sea/e/ch3/ev026_ch3_main_platform
 
-#give @p written_book[written_book_content={pages:['["",{"text":"\\u526f\\u5bbf\\u820d\\u697c\\u7684\\u56db\\u95f4\\u6807\\u51c6\\u623f\\u91cc\\u90fd\\u6709\\u82b1\\u5bf9\\u5427\\uff0c\\u90a3\\u4fbf\\u662f\\u5bc6\\u7801\\u3002\\n\\n\\n"},{"text":"\\u7ea2\\u8272","color":"red"},{"text":"\\u4ee3\\u88681\\n\\n","color":"black"},{"text":"\\u84dd\\u8272","color":"blue"},{"text":"\\u4ee3\\u88680\\n\\n","color":"black"},{"text":"\\u767d\\u8272","color":"gray"},{"text":"\\u4e0d\\u4ee3\\u8868","color":"black"},{"text":"\\u7ea2\\u8272","color":"red"},{"text":"\\n\\n","color":"black"},{"text":"1","color":"red"},{"text":"+","color":"black"},{"text":"1","color":"blue"},{"text":"=1","color":"black"}]'],title:"副宿舍楼2F的展示书",author:"斯顿"}]
+#give @p written_book[written_book_content={pages:['["",{text:"\\u526f\\u5bbf\\u820d\\u697c\\u7684\\u56db\\u95f4\\u6807\\u51c6\\u623f\\u91cc\\u90fd\\u6709\\u82b1\\u5bf9\\u5427\\uff0c\\u90a3\\u4fbf\\u662f\\u5bc6\\u7801\\u3002\\n\\n\\n"},{text:"\\u7ea2\\u8272",color:"red"},{text:"\\u4ee3\\u88681\\n\\n",color:"black"},{text:"\\u84dd\\u8272",color:"blue"},{text:"\\u4ee3\\u88680\\n\\n",color:"black"},{text:"\\u767d\\u8272",color:"gray"},{text:"\\u4e0d\\u4ee3\\u8868",color:"black"},{text:"\\u7ea2\\u8272",color:"red"},{text:"\\n\\n",color:"black"},{text:"1",color:"red"},{text:"+",color:"black"},{text:"1",color:"blue"},{text:"=1",color:"black"}]'],title:"副宿舍楼2F的展示书",author:"斯顿"}]
 
 execute positioned 90100 137 100 if entity @a[tag=SEAPT,distance=..13,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/m/drowned_small
 execute positioned 90100 137 100 if entity @a[tag=SEAPT,distance=..13,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/m/drowned_small
@@ -107,20 +107,20 @@ execute if block 90125 138 128 minecraft:waxed_copper_bulb[lit=true] \
 
 execute as @n[tag=sc,scores={sea_4temp3=100..300}] if block 90131 161 144 air run scoreboard players add @s sea_4temp3 1
 execute as @n[tag=sc,scores={sea_4temp3=120}] positioned 90133 137 108 \
- run tellraw @a[distance=0..250] [{"text":"？？？：","color":"yellow","bold": true},{"text":"\n“你……打开了备用电台？你是谁，你现在在甲板上吗？”","color":"white","bold": false}]
+ run tellraw @a[distance=0..250] [{text:"？？？：",color:"yellow","bold": true},{text:"\n“你……打开了备用电台？你是谁，你现在在甲板上吗？”",color:"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp3=160}] positioned 90133 137 108 \
- run tellraw @a[distance=0..250] [{"text":"？？？：","color":"yellow","bold": true},{"text":"\n“……你是个值得信任的家伙，告诉我我说的对不对？我想也是，那群疯子只会关灯，不可能忙里忙外把这么多灯给开了。”","color":"white","bold": false}]
+ run tellraw @a[distance=0..250] [{text:"？？？：",color:"yellow","bold": true},{text:"\n“……你是个值得信任的家伙，告诉我我说的对不对？我想也是，那群疯子只会关灯，不可能忙里忙外把这么多灯给开了。”",color:"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp3=200}] positioned 90133 137 108 \
- run tellraw @a[distance=0..250] [{"text":"？？？：","color":"yellow","bold": true},{"text":"\n“让我想想，我该怎么才能……水晶祀堂！对，我会在那里等你。”","color":"white","bold": false}]
+ run tellraw @a[distance=0..250] [{text:"？？？：",color:"yellow","bold": true},{text:"\n“让我想想，我该怎么才能……水晶祀堂！对，我会在那里等你。”",color:"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp3=240}] positioned 90133 137 108 \
- run tellraw @a[distance=0..250] [{"text":"？？？：","color":"yellow","bold": true},{"text":"\n“希望你知道我指的是哪。如果你不知道的话就请别来了，那样的话我就提供不了你任何帮助。”","color":"white","bold": false}]
+ run tellraw @a[distance=0..250] [{text:"？？？：",color:"yellow","bold": true},{text:"\n“希望你知道我指的是哪。如果你不知道的话就请别来了，那样的话我就提供不了你任何帮助。”",color:"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp3=280}] positioned 90133 137 108 \
- run tellraw @a[distance=0..250] [{"text":"？？？：","color":"yellow","bold": true},{"text":"\n“你这样，先去钢处理车间的楼顶，那儿有我藏起来的10颗绿宝石。不要辜负我。”","color":"white","bold": false}]
+ run tellraw @a[distance=0..250] [{text:"？？？：",color:"yellow","bold": true},{text:"\n“你这样，先去钢处理车间的楼顶，那儿有我藏起来的10颗绿宝石。不要辜负我。”",color:"white","bold": false}]
 execute as @n[tag=sc,scores={sea_4temp3=280}] run fill 90124 144 117 90124 145 117 minecraft:air destroy
 
 
 execute unless entity @a[tag=SEAPT,tag=e_i_27] positioned 90093 128 95 if entity @a[tag=SEAPT,distance=..4,tag=!SEAPF] if block 90124 145 117 air unless entity @n[tag=SEAch3_spawn_timer8,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer8"]}
-execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=3}] positioned 90093 128 95 run tellraw @a[distance=0..50] [{"selector":"@p","color":"aqua"},{"text":"：","color":"aqua","bold": true},{"text":"\n“那个备用电台里的人提到的水晶祀堂……是这里？”","color":"white","bold": false}]
+execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=3}] positioned 90093 128 95 run tellraw @a[distance=0..50] [{selector:"@p",color:"aqua"},{text:"：",color:"aqua","bold": true},{text:"\n“那个备用电台里的人提到的水晶祀堂……是这里？”",color:"white","bold": false}]
 
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=10..18}] positioned 90093 128 98 run playsound minecraft:ambient.crimson_forest.additions ambient @a ~ ~ ~ 5 0.8
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=10..12}] positioned 90093 128 98 run playsound minecraft:ambient.crimson_forest.mood ambient @a ~ ~ ~ 5 0.8
@@ -132,7 +132,7 @@ execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=22}] run fill 90095 131
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=16..22}] run particle minecraft:sculk_soul 90093.53 129.99 98.50 2.5 1.5 0.5 0 300
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=16..22}] run particle minecraft:soul_fire_flame 90093.53 129.99 98.50 2.5 1.5 0.5 0 300
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=16}] positioned 90090 128 99 run function skyblock:sea/m/unique/npc_yuehan
-execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] [{"text":"？？？：","color":"yellow","bold": true},{"text":"\n“喂……刚才打开电台的是你没错吧？！”","color":"white","bold": false}]
+execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] [{text:"？？？：",color:"yellow","bold": true},{text:"\n“喂……刚才打开电台的是你没错吧？！”",color:"white","bold": false}]
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyuehan] run scoreboard players set @n[tag=SEAyuehan] sea_4temp1 0
 execute as @n[tag=SEAch3_spawn_timer8,scores={sea_4temp1=23}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 

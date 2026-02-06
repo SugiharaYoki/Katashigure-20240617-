@@ -24,7 +24,7 @@ setblock -23 23 32 minecraft:air
 scoreboard objectives add SeGa_DVCreeD dummy
 scoreboard objectives add SeGa_DVStage dummy
 scoreboard objectives add SeGa_DVStageVar dummy
-scoreboard objectives add SeGa_DVStageBH dummy {"text":"『云亭攻防战』坚持回合排行","color":"light_purple"}
+scoreboard objectives add SeGa_DVStageBH dummy {text:"『云亭攻防战』坚持回合排行",color:"light_purple"}
 scoreboard objectives add SeGa_DVTimer dummy
 scoreboard objectives add SeGa_DVTimerx10 dummy
 scoreboard objectives add SeGa_DVTimerQT dummy
@@ -34,8 +34,8 @@ tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove DV_North
 tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove DV_South
 scoreboard objectives remove Temp_PersonDVS
 scoreboard objectives remove Temp_PersonDVSt
-scoreboard objectives add Temp_PersonDVS dummy {"text":"绿宝石数量","color":"green"}
-scoreboard objectives add Temp_PersonDVSt dummy {"text":"钻石数量","color":"aqua"}
+scoreboard objectives add Temp_PersonDVS dummy {text:"绿宝石数量",color:"green"}
+scoreboard objectives add Temp_PersonDVSt dummy {text:"钻石数量",color:"aqua"}
 scoreboard players set @a Temp_PersonDVS 0
 scoreboard players set @a Temp_PersonDVSt 0
 setblock -23 143 -52 air

@@ -1,1 +1,1 @@
-give @s chainmail_chestplate[custom_data={chainmail_chestplate_normal:1b},custom_name='{"text":"链甲","italic":false}',attribute_modifiers=[{type:"minecraft:armor",id:"azr:chainmail_chestplate_normal.armor",amount:2.0,operation:"add_value",slot:"armor"}],custom_model_data={floats:[100002.0]}]
+give @s chainmail_chestplate[custom_data={chainmail_chestplate_normal:1b},custom_name='{text:"链甲","italic":false}',attribute_modifiers=[{type:"minecraft:armor",id:"azr:chainmail_chestplate_normal.armor",amount:2.0,operation:"add_value",slot:"armor"}],custom_model_data={floats:[100002.0]}]

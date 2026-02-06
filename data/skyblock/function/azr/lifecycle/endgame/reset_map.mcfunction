@@ -65,7 +65,7 @@ setblock -79959 39 20 minecraft:birch_button[face=floor,facing=west]{name: "Stag
 
 #Stage1
 setblock -79949 34 15 chest[facing=north]
-item replace block -79949 34 15 container.13 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
+item replace block -79949 34 15 container.13 with tripwire_hook[custom_name='{text:"简单钥匙",color:"blue","italic":false}',custom_data={azr_key:1b}] 1
 #setblock -79927 38 0 minecraft:white_shulker_box
 setblock -79931 37 3 minecraft:quartz_pillar{name: "Stage1 mob spawnpoint"}
 setblock -79931 37 -9 minecraft:quartz_pillar{name: "Stage1 mob spawnpoint"}
@@ -91,7 +91,7 @@ setblock -79905 42 33 chest[facing=west]
 item replace block -79905 42 33 container.13 with emerald 3
 fill -79924 36 34 -79924 33 34 minecraft:purple_stained_glass
 setblock -79908 34 31 minecraft:chest[facing=west]
-item replace block -79908 34 31 container.12 with skull_banner_pattern[custom_name='{"text": "“最近的花卉涨势很怪异”", "color": "dark_purple","italic":false}', lore=['{"text": "倒不是我神经过敏了吧，这些花的生长速度是不是太快了？","color":"white", "italic": false}','{"text": "简单培育的苔藓类植物已经遍布了整个培育室。","color":"white", "italic": false}','{"text": "它们吸收魔力生长，以其作为养分。","color":"white", "italic": false}','{"text": "那这是否意味着空气中的魔力浓度已经高到了一种难以想象的程度？","color":"white", "italic": false}']] 1
+item replace block -79908 34 31 container.12 with skull_banner_pattern[custom_name='{"text": "“最近的花卉涨势很怪异”", "color": "dark_purple","italic":false}', lore=['{"text": "倒不是我神经过敏了吧，这些花的生长速度是不是太快了？",color:"white", "italic": false}','{"text": "简单培育的苔藓类植物已经遍布了整个培育室。",color:"white", "italic": false}','{"text": "它们吸收魔力生长，以其作为养分。",color:"white", "italic": false}','{"text": "那这是否意味着空气中的魔力浓度已经高到了一种难以想象的程度？",color:"white", "italic": false}']] 1
 item replace block -79908 34 31 container.14 with coal 1
   #天台的花
 fill -79904 44 8 -79901 44 8 minecraft:potted_azalea_bush
@@ -112,7 +112,7 @@ setblock -79942 33 11 minecraft:honey_block
 setblock -79939 28 17 air
 setblock -79939 28 17 lever[facing=west]
 setblock -79948 25 22 chest[facing=east]
-item replace block -79948 25 22 container.12 with skull_banner_pattern[custom_name='{"text": "“生与死的力量全都过剩。”", "color": "dark_purple","italic":false}', lore=['{"text": "这些苔藓是被一种混沌力量所影响。","color":"white", "italic": false}','{"text": "我在图书馆查阅过，那是被神庭控制的亡灵生物死亡时逸散的能量。","color":"white", "italic": false}','{"text": "但从前这个阈值都被控制在一个安全的范畴。","color":"white", "italic": false}','{"text": "为何偏偏是在最近过量出现？","color":"white", "italic": false}']] 1
+item replace block -79948 25 22 container.12 with skull_banner_pattern[custom_name='{"text": "“生与死的力量全都过剩。”", "color": "dark_purple","italic":false}', lore=['{"text": "这些苔藓是被一种混沌力量所影响。",color:"white", "italic": false}','{"text": "我在图书馆查阅过，那是被神庭控制的亡灵生物死亡时逸散的能量。",color:"white", "italic": false}','{"text": "但从前这个阈值都被控制在一个安全的范畴。",color:"white", "italic": false}','{"text": "为何偏偏是在最近过量出现？",color:"white", "italic": false}']] 1
 item replace block -79948 25 22 container.14 with coal 2
 
 #Stage3 beta
@@ -130,14 +130,14 @@ setblock -79924 38 33 air
 setblock -79922 38 35 air
 setblock -79922 38 35 trapped_chest[facing=east]{lock:{components:{custom_data:{key_required:1b}}}}
 item replace block -79922 38 35 container.12 with minecraft:beef 5
-item replace block -79922 38 35 container.14 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录6”","color":"dark_purple","italic":false}',lore=['{"text":"权之殊能大人曾言","color":"white","italic":false}','{"text":"下一回便会有真正的强者光临神庭。","color":"white","italic":false}','{"text":"并非由魔界之污秽魔力所造就，","color":"white","italic":false}','{"text":"而是命定将拯救三界之人。","color":"white","italic":false}']] 1
+item replace block -79922 38 35 container.14 with skull_banner_pattern[custom_name='{text:"“招待厅事务记录6”",color:"dark_purple","italic":false}',lore=['{text:"权之殊能大人曾言",color:"white","italic":false}','{text:"下一回便会有真正的强者光临神庭。",color:"white","italic":false}','{text:"并非由魔界之污秽魔力所造就，",color:"white","italic":false}','{text:"而是命定将拯救三界之人。",color:"white","italic":false}']] 1
 setblock -79912 39 32 minecraft:potted_allium
 setblock -79912 39 36 minecraft:potted_allium
 
   #小庭院跳跃宝箱
 setblock -79907 39 44 chest[facing=west]
-item replace block -79907 39 44 container.12 with skull_banner_pattern[custom_name='{"text": "“我的东南水路正门钥匙被人偷走六回了”", "color": "dark_purple","italic":false}', lore=['{"text": "我不知道是谁对禁地这么感兴趣。","color":"white", "italic": false}','{"text": "如果只是对下水道感兴趣的话，那人完全可以选择其他三个区域。","color":"white", "italic": false}','{"text": "魔神的力量……果然也在被觊觎着吧。","color":"white", "italic": false}']] 1
-item replace block -79907 39 44 container.14 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
+item replace block -79907 39 44 container.12 with skull_banner_pattern[custom_name='{"text": "“我的东南水路正门钥匙被人偷走六回了”", "color": "dark_purple","italic":false}', lore=['{"text": "我不知道是谁对禁地这么感兴趣。",color:"white", "italic": false}','{"text": "如果只是对下水道感兴趣的话，那人完全可以选择其他三个区域。",color:"white", "italic": false}','{"text": "魔神的力量……果然也在被觊觎着吧。",color:"white", "italic": false}']] 1
+item replace block -79907 39 44 container.14 with tripwire_hook[custom_name='{text:"简单钥匙",color:"blue","italic":false}',custom_data={azr_key:1b}] 1
 
   #苔藓培育室
 setblock -79934 31 17 chest[facing=east]
@@ -190,7 +190,7 @@ fill -79931 48 43 -79931 48 45 minecraft:quartz_block
 setblock -79939 38 20 air
 setblock -79939 38 20 trapped_chest[facing=west]{lock:{components:{custom_data:{key_required:1b}}}}
 item replace block -79939 38 20 container.11 with emerald 3
-item replace block -79939 38 20 container.13 with skull_banner_pattern[custom_name='{"text":"“仍旧在调查魔物失控的真相”","color":"dark_purple","italic":false}',lore=['{"text":"拉斐尔大人告知我丢失钥匙并无大碍，","color":"white","italic":false}','{"text":"地下水路东区不存在任何有用的事物。","color":"white","italic":false}','{"text":"可那里切切实实地封印着一位魔神啊……","color":"white","italic":false}']]
+item replace block -79939 38 20 container.13 with skull_banner_pattern[custom_name='{text:"“仍旧在调查魔物失控的真相”",color:"dark_purple","italic":false}',lore=['{text:"拉斐尔大人告知我丢失钥匙并无大碍，",color:"white","italic":false}','{text:"地下水路东区不存在任何有用的事物。",color:"white","italic":false}','{text:"可那里切切实实地封印着一位魔神啊……",color:"white","italic":false}']]
 item replace block -79939 38 20 container.15 with emerald 3
 fill -79948 36 45 -79950 38 45 minecraft:purple_stained_glass
 
@@ -205,7 +205,7 @@ item replace block -79951 38 59 container.11 with minecraft:emerald 3
 item replace block -79951 38 59 container.13 with minecraft:emerald 3
 item replace block -79951 38 59 container.15 with minecraft:emerald 3
 fill -79950 38 58 -79951 39 58 quartz_block
-item replace block -79939 39 58 container.13 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
+item replace block -79939 39 58 container.13 with tripwire_hook[custom_name='{text:"简单钥匙",color:"blue","italic":false}',custom_data={azr_key:1b}] 1
 
 setblock -79949 39 61 minecraft:white_stained_glass
 setblock -79943 39 61 minecraft:white_stained_glass
@@ -237,7 +237,7 @@ fill -79937 56 149 -79941 56 149 minecraft:potted_torchflower
 fill -79931 35 171 -79931 35 183 minecraft:red_concrete replace minecraft:redstone_block
 setblock -79920 37 176 chest[facing=north]
 item replace block -79920 37 176 container.12 with emerald 3
-item replace block -79920 37 176 container.14 with skull_banner_pattern[custom_name='{"text":"“魔法燃料”","color":"dark_purple","italic":false}',lore=['{"text":"请火把花培育人员时刻注意花蕊的花粉浓度。过多的花粉容易引起微型爆燃。","color":"white","italic":false}','{"text":"虽然炸了这一块供能区域也只会让招待厅的一小部分伸手不见五指，但这太掉价了，我们这是正儿八经的神庭试炼，不是三流角色扮演剧本杀。","color":"white","italic":false}']]
+item replace block -79920 37 176 container.14 with skull_banner_pattern[custom_name='{text:"“魔法燃料”",color:"dark_purple","italic":false}',lore=['{text:"请火把花培育人员时刻注意花蕊的花粉浓度。过多的花粉容易引起微型爆燃。",color:"white","italic":false}','{text:"虽然炸了这一块供能区域也只会让招待厅的一小部分伸手不见五指，但这太掉价了，我们这是正儿八经的神庭试炼，不是三流角色扮演剧本杀。",color:"white","italic":false}']]
 setblock -79925 37 201 chest[facing=east]
 item replace block -79925 37 201 container.12 with emerald 3
 item replace block -79925 37 201 container.14 with resin_clump 1
@@ -277,7 +277,7 @@ fill -79936 36 197 -79936 36 198 air
   #供热迷宫
 setblock -79963 29 179 chest[facing=east]
 item replace block -79963 29 179 container.12 with minecraft:emerald 3
-item replace block -79963 29 179 container.14 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
+item replace block -79963 29 179 container.14 with tripwire_hook[custom_name='{text:"简单钥匙",color:"blue","italic":false}',custom_data={azr_key:1b}] 1
   #下砸隐藏
 setblock -79957 35 184 chest[facing=south]
 item replace block -79957 35 184 container.12 with minecraft:resin_clump 2
@@ -314,7 +314,7 @@ setblock -79904 44 137 minecraft:potted_azure_bluet
 setblock -79904 44 133 minecraft:potted_azure_bluet
 setblock -79904 43 135 chest[facing=east]
 item replace block -79904 43 135 container.12 with minecraft:coal 1
-item replace block -79904 43 135 container.14 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
+item replace block -79904 43 135 container.14 with tripwire_hook[custom_name='{text:"简单钥匙",color:"blue","italic":false}',custom_data={azr_key:1b}] 1
 
 setblock -79912 41 106 minecraft:potted_oxeye_daisy
 setblock -79912 41 103 minecraft:potted_oxeye_daisy
@@ -328,7 +328,7 @@ item replace block -79904 40 62 container.15 with minecraft:emerald 3
   #boss1附近的大花园
 setblock -79933 44 111 minecraft:chest[facing=east]
 item replace block -79933 44 111 container.12 with minecraft:emerald 3
-item replace block -79933 44 111 container.14 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
+item replace block -79933 44 111 container.14 with tripwire_hook[custom_name='{text:"简单钥匙",color:"blue","italic":false}',custom_data={azr_key:1b}] 1
   #直通vestige
 fill -79896 42 88 -79898 38 88 minecraft:purple_stained_glass
 
@@ -345,7 +345,7 @@ fill -79862 43 163 -79862 46 165 minecraft:purple_stained_glass
 fill -79886 43 132 -79888 45 132 minecraft:purple_stained_glass
   #十字北 阳台阁楼 招待厅
 setblock -79889 46 115 chest[facing=east]
-item replace block -79889 46 115 container.12 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
+item replace block -79889 46 115 container.12 with tripwire_hook[custom_name='{text:"简单钥匙",color:"blue","italic":false}',custom_data={azr_key:1b}] 1
 item replace block -79889 46 115 container.14 with emerald 3
 
 item replace block -79892 45 118 container.12 with emerald 2
@@ -359,7 +359,7 @@ setblock -79884 43 191 air
 setblock -79884 43 191 trapped_chest[facing=west]{lock:{components:{custom_data:{key_required:1b}}}}
 item replace block -79884 43 191 container.11 with emerald 5
 item replace block -79884 43 191 container.13 with minecraft:dried_kelp 3
-item replace block -79884 43 191 container.15 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录4”","color":"dark_purple","italic":false}',lore=['{"text":"魔界最近好像在刻意引导亡灵前来挑战神庭试炼，","color":"white","italic":false}','{"text":"他们到底在打什么算盘？","color":"white","italic":false}','{"text":"有没有试炼者应该是神庭担心的事情，","color":"white","italic":false}','{"text":"他们这么替我们操心吗？？","color":"white","italic":false}']] 1
+item replace block -79884 43 191 container.15 with skull_banner_pattern[custom_name='{text:"“招待厅事务记录4”",color:"dark_purple","italic":false}',lore=['{text:"魔界最近好像在刻意引导亡灵前来挑战神庭试炼，",color:"white","italic":false}','{text:"他们到底在打什么算盘？",color:"white","italic":false}','{text:"有没有试炼者应该是神庭担心的事情，",color:"white","italic":false}','{text:"他们这么替我们操心吗？？",color:"white","italic":false}']] 1
   #十字西 供能区域
 setblock -79917 44 165 minecraft:potted_cornflower
 setblock -79917 44 163 minecraft:potted_cornflower
@@ -376,11 +376,11 @@ setblock -79857 44 165 minecraft:potted_cornflower
 #大图书馆
 setblock -79850 48 205 chest[facing=south]
 item replace block -79850 48 205 container.12 with emerald 3
-item replace block -79850 48 205 container.14 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录3”","color":"dark_purple","italic":false}',lore=['{"text":"权之残影大人说过，挑战者可能会来到大图书馆。","color":"white","italic":false}','{"text":"但是在此处巡逻的夜盲虫会对任何亡灵造成致命伤害。","color":"white","italic":false}','{"text":"已经死去并成为亡灵的挑战者，必定会被夜盲虫重创。","color":"white","italic":false}','{"text":"试炼的过程是被精心安排的，","color":"white","italic":false}','{"text":"不知挑战者本人能否看穿这件事实。","color":"white","italic":false}']] 1
+item replace block -79850 48 205 container.14 with skull_banner_pattern[custom_name='{text:"“招待厅事务记录3”",color:"dark_purple","italic":false}',lore=['{text:"权之残影大人说过，挑战者可能会来到大图书馆。",color:"white","italic":false}','{text:"但是在此处巡逻的夜盲虫会对任何亡灵造成致命伤害。",color:"white","italic":false}','{text:"已经死去并成为亡灵的挑战者，必定会被夜盲虫重创。",color:"white","italic":false}','{text:"试炼的过程是被精心安排的，",color:"white","italic":false}','{text:"不知挑战者本人能否看穿这件事实。",color:"white","italic":false}']] 1
 setblock -79854 48 176 chest[facing=south]
-item replace block -79854 48 176 container.11 with book[lore=['{"text":"里面的文字跟我来说和图片没有任何区别。","color":"white","italic":false}','{"text":"对我来说是不折不扣的垃圾，丢了吧。","color":"white","italic":false}']] 1
-item replace block -79854 48 176 container.13 with book[lore=['{"text":"战斗了大半天，结果白跑一趟……","color":"white","italic":false}','{"text":"这本书的所有内容我都没法看懂。","color":"white","italic":false}','{"text":"对我来说是不折不扣的垃圾，丢了吧。","color":"white","italic":false}']] 1
-item replace block -79854 48 176 container.15 with book[lore=['{"text":"……我就非要三本都读过才信这个邪吗？","color":"white","italic":false}']] 1
+item replace block -79854 48 176 container.11 with book[lore=['{text:"里面的文字跟我来说和图片没有任何区别。",color:"white","italic":false}','{text:"对我来说是不折不扣的垃圾，丢了吧。",color:"white","italic":false}']] 1
+item replace block -79854 48 176 container.13 with book[lore=['{text:"战斗了大半天，结果白跑一趟……",color:"white","italic":false}','{text:"这本书的所有内容我都没法看懂。",color:"white","italic":false}','{text:"对我来说是不折不扣的垃圾，丢了吧。",color:"white","italic":false}']] 1
+item replace block -79854 48 176 container.15 with book[lore=['{text:"……我就非要三本都读过才信这个邪吗？",color:"white","italic":false}']] 1
 
 
   #物品框
@@ -393,12 +393,12 @@ summon glow_item_frame -79864 49 178 {Item:{id:"minecraft:golden_carrot",count:1
 
   #水族馆
 setblock -79756 42 197 chest[facing=west]
-item replace block -79756 42 197 container.12 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
+item replace block -79756 42 197 container.12 with tripwire_hook[custom_name='{text:"简单钥匙",color:"blue","italic":false}',custom_data={azr_key:1b}] 1
 item replace block -79756 42 197 container.14 with coal 2
 setblock -79755 42 196 minecraft:potted_azalea_bush
 setblock -79755 42 198 minecraft:potted_azalea_bush
 setblock -79764 30 218 chest[facing=north,waterlogged=true]
-item replace block -79764 30 218 container.13 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录2”","color":"dark_purple","italic":false}',lore=['{"text":"有更多的巡逻士兵说，","color":"white","italic":false}','{"text":"自己在执行任务时遭遇了轻微的幻听。","color":"white","italic":false}','{"text":"他们说，那温柔话语声的来源像是艾奥洛斯之女：雅尔希奥妮。","color":"white","italic":false}','{"text":"也就是……魔神佛卡洛。","color":"white","italic":false}']] 1
+item replace block -79764 30 218 container.13 with skull_banner_pattern[custom_name='{text:"“招待厅事务记录2”",color:"dark_purple","italic":false}',lore=['{text:"有更多的巡逻士兵说，",color:"white","italic":false}','{text:"自己在执行任务时遭遇了轻微的幻听。",color:"white","italic":false}','{text:"他们说，那温柔话语声的来源像是艾奥洛斯之女：雅尔希奥妮。",color:"white","italic":false}','{text:"也就是……魔神佛卡洛。",color:"white","italic":false}']] 1
 
 
 #stage7 ~ 8 道中
@@ -504,7 +504,7 @@ setblock -79917 40 -62 air
 setblock -79917 40 -62 trapped_chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
 item replace block -79917 40 -62 container.11 with resin_clump 1
 item replace block -79917 40 -62 container.13 with resin_clump 1
-item replace block -79917 40 -62 container.15 with skull_banner_pattern[custom_name='{"text":"“拉斐尔天使长与佛劳洛斯大人吵了一架”","color":"dark_purple","italic":false}',lore=['{"text":"这确实也在我们的预料之内，毕竟这两天拉斐尔大人的脾气特别不稳定。","color":"white","italic":false}','{"text":"佛劳洛斯大人跟我们说，“百千年的重头戏终于要到来了”。","color":"white","italic":false}','{"text":"我们没人期待神庭局势的变动。生命树不断加速的枯萎已经让所有人焦头烂额了。","color":"white","italic":false}']] 1
+item replace block -79917 40 -62 container.15 with skull_banner_pattern[custom_name='{text:"“拉斐尔天使长与佛劳洛斯大人吵了一架”",color:"dark_purple","italic":false}',lore=['{text:"这确实也在我们的预料之内，毕竟这两天拉斐尔大人的脾气特别不稳定。",color:"white","italic":false}','{text:"佛劳洛斯大人跟我们说，“百千年的重头戏终于要到来了”。",color:"white","italic":false}','{text:"我们没人期待神庭局势的变动。生命树不断加速的枯萎已经让所有人焦头烂额了。",color:"white","italic":false}']] 1
 
   #许愿池
 setblock -79920 41 -78 minecraft:potted_azure_bluet
@@ -739,7 +739,7 @@ item replace block -79903 40 -104 container.11 with emerald 2
 item replace block -79903 40 -104 container.13 with minecraft:beef 2
 item replace block -79903 40 -104 container.15 with emerald 2
 #stage11 牢房小道具
-item replace block -79929 47 -110 container.13 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
+item replace block -79929 47 -110 container.13 with tripwire_hook[custom_name='{text:"简单钥匙",color:"blue","italic":false}',custom_data={azr_key:1b}] 1
 #stage11 牢房小道具
 item replace block -79897 40 -115 container.12 with emerald 3
 item replace block -79897 40 -115 container.14 with minecraft:bone 1
@@ -748,32 +748,32 @@ item replace block -79919 40 -112 container.12 with emerald 3
 item replace block -79919 40 -112 container.14 with string
 
 
-item replace block -79863 40 -76 container.14 with skull_banner_pattern[custom_name='{"text":"“招待厅事务记录5”","color":"dark_purple","italic":false}',lore=['{"text":"第一关口北面的建筑物出现了大量裂缝，","color":"white","italic":false}','{"text":"这样的现象一直延伸至牢房区域。","color":"white","italic":false}','{"text":"虽说大家有不祥的预感，","color":"white","italic":false}','{"text":"权之殊能大人却言仅为年久失修。","color":"white","italic":false}']] 1
-item replace block -79936 49 -158 container.13 with skull_banner_pattern[custom_name='{"text":"“期限将至 此乃针对神庭之审判”","color":"dark_purple","italic":false}',lore=['{"text":"这里的魔物保受摧残，","color":"white","italic":false}','{"text":"终日身于苦痛之中。","color":"white","italic":false}','{"text":"沙利叶大人既是对此心知肚明，","color":"white","italic":false}','{"text":"又为何让这暴行再续？","color":"white","italic":false}']] 1
+item replace block -79863 40 -76 container.14 with skull_banner_pattern[custom_name='{text:"“招待厅事务记录5”",color:"dark_purple","italic":false}',lore=['{text:"第一关口北面的建筑物出现了大量裂缝，",color:"white","italic":false}','{text:"这样的现象一直延伸至牢房区域。",color:"white","italic":false}','{text:"虽说大家有不祥的预感，",color:"white","italic":false}','{text:"权之殊能大人却言仅为年久失修。",color:"white","italic":false}']] 1
+item replace block -79936 49 -158 container.13 with skull_banner_pattern[custom_name='{text:"“期限将至 此乃针对神庭之审判”",color:"dark_purple","italic":false}',lore=['{text:"这里的魔物保受摧残，",color:"white","italic":false}','{text:"终日身于苦痛之中。",color:"white","italic":false}','{text:"沙利叶大人既是对此心知肚明，",color:"white","italic":false}','{text:"又为何让这暴行再续？",color:"white","italic":false}']] 1
 item replace block -79938 48 -144 container.12 with emerald 5
 item replace block -79938 48 -144 container.14 with emerald 7
 item replace block -79935 48 -164 container.13 with cooked_beef 3
 item replace block -79936 49 -158 container.11 with cooked_beef 5
-item replace block -79936 49 -158 container.15 with shulker_shell[custom_name='{"text":"弹簧箭盒","italic":false}',lore=['{"text":"敲击 - 散射36支箭矢（射程较高）","color":"yellow","italic":false}'],enchantments={blast_protection:1},custom_data={arrow_box:1b},custom_model_data={floats:[100001.0]}] 3
+item replace block -79936 49 -158 container.15 with shulker_shell[custom_name='{text:"弹簧箭盒","italic":false}',lore=['{text:"敲击 - 散射36支箭矢（射程较高）",color:"yellow","italic":false}'],enchantments={blast_protection:1},custom_data={arrow_box:1b},custom_model_data={floats:[100001.0]}] 3
 item replace block -79866 43 -57 container.14 with coal 2
 item replace block -79867 44 -52 container.12 with emerald 3
 item replace block -79865 42 -52 container.13 with dried_kelp 8
-item replace block -79867 40 -103 container.12 with shulker_shell[custom_name='{"text":"弹簧箭盒","italic":false}',lore=['{"text":"敲击 - 散射36支箭矢（射程较高）","color":"yellow","italic":false}'],enchantments={blast_protection:1},custom_data={arrow_box:1b},custom_model_data={floats:[100001.0]}] 2
-item replace block -79867 40 -103 container.14 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
-item replace block -79863 40 -76 container.12 with stone_axe[custom_name='{"text":"苔石斧·笼怨","italic":false}',attribute_modifiers=[{type:"knockback_resistance",slot:"mainhand",id:"azr:mossstone_axe.knockback_resistance",amount:0.13,operation:"add_value"},{type:"attack_damage",slot:"mainhand",id:"azr:mossstone_axe.attack_damage",amount:10.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"azr:mossstone_axe.attack_speed",amount:-3.2,operation:"add_value"}],enchantments={"unbreaking":2}] 1
+item replace block -79867 40 -103 container.12 with shulker_shell[custom_name='{text:"弹簧箭盒","italic":false}',lore=['{text:"敲击 - 散射36支箭矢（射程较高）",color:"yellow","italic":false}'],enchantments={blast_protection:1},custom_data={arrow_box:1b},custom_model_data={floats:[100001.0]}] 2
+item replace block -79867 40 -103 container.14 with tripwire_hook[custom_name='{text:"简单钥匙",color:"blue","italic":false}',custom_data={azr_key:1b}] 1
+item replace block -79863 40 -76 container.12 with stone_axe[custom_name='{text:"苔石斧·笼怨","italic":false}',attribute_modifiers=[{type:"knockback_resistance",slot:"mainhand",id:"azr:mossstone_axe.knockback_resistance",amount:0.13,operation:"add_value"},{type:"attack_damage",slot:"mainhand",id:"azr:mossstone_axe.attack_damage",amount:10.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"azr:mossstone_axe.attack_speed",amount:-3.2,operation:"add_value"}],enchantments={"unbreaking":2}] 1
 item replace block -79929 49 -123 container.12 with iron_ingot 1
-item replace block -79929 49 -123 container.14 with tripwire_hook[custom_name='{"text":"简单钥匙","color":"blue","italic":false}',custom_data={azr_key:1b}] 1
+item replace block -79929 49 -123 container.14 with tripwire_hook[custom_name='{text:"简单钥匙",color:"blue","italic":false}',custom_data={azr_key:1b}] 1
 
 item replace block -79770 23 -460 container.13 with minecraft:gold_nugget 30
 item replace block -79765 24 -469 container.13 with minecraft:gold_nugget 28
 item replace block -79713 22 -461 container.13 with eye_armor_trim_smithing_template 3
 item replace block -79626 21 -415 container.11 with eye_armor_trim_smithing_template 3
-item replace block -79626 21 -415 container.13 with skull_banner_pattern[custom_name='{"text":"“神罚 这一切都是神罚 全部都是”","color":"dark_purple","italic":false}',lore=['{"text":"我们触怒了神庭 我们触怒了神庭","color":"white","italic":false}','{"text":"我们触怒了神庭 我们触怒了神庭","color":"white","italic":false}','{"text":"现在轮到我们自取灭亡了","color":"white","italic":false}','{"text":"现在轮到我们自取灭亡了","color":"white","italic":false}']] 1
+item replace block -79626 21 -415 container.13 with skull_banner_pattern[custom_name='{text:"“神罚 这一切都是神罚 全部都是”",color:"dark_purple","italic":false}',lore=['{text:"我们触怒了神庭 我们触怒了神庭",color:"white","italic":false}','{text:"我们触怒了神庭 我们触怒了神庭",color:"white","italic":false}','{text:"现在轮到我们自取灭亡了",color:"white","italic":false}','{text:"现在轮到我们自取灭亡了",color:"white","italic":false}']] 1
 item replace block -79626 21 -415 container.15 with flint 5
-item replace block 79588 8 -427 container.11 with firework_star[custom_name='{"text":"机械箭","italic":false}'] 5
-item replace block 79588 8 -427 container.13 with firework_star[custom_name='{"text":"机械箭","italic":false}'] 5
-item replace block 79588 8 -427 container.15 with firework_star[custom_name='{"text":"机械箭","italic":false}'] 5
-item replace block -79571 11 -412 container.12 with minecraft:splash_potion[custom_name='[{"text":"「抗火瓶」","color":"light_purple","italic":false},{"text":"lv1","color":"blue","italic":false}]',potion_contents={custom_effects:[{id:"minecraft:fire_resistance",duration:200}]}] 1
+item replace block 79588 8 -427 container.11 with firework_star[custom_name='{text:"机械箭","italic":false}'] 5
+item replace block 79588 8 -427 container.13 with firework_star[custom_name='{text:"机械箭","italic":false}'] 5
+item replace block 79588 8 -427 container.15 with firework_star[custom_name='{text:"机械箭","italic":false}'] 5
+item replace block -79571 11 -412 container.12 with minecraft:splash_potion[custom_name='[{text:"「抗火瓶」",color:"light_purple","italic":false},{text:"lv1",color:"blue","italic":false}]',potion_contents={custom_effects:[{id:"minecraft:fire_resistance",duration:200}]}] 1
 item replace block -79571 11 -412 container.14 with emerald 12
 item replace block -79791 28 -294 container.13 with minecraft:bundle
 

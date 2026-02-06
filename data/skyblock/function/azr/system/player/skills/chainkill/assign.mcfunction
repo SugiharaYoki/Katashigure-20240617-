@@ -38,7 +38,7 @@ execute if entity @s[tag=AZR_ChainKillUpg_REMOVE] run tag @s remove AZR_ChainKil
 execute if entity @s[tag=!AZR_ChainKillUpg_FAILED] run function skyblock:azr/system/player/skills/chainkill/assign_execute
 
 
-tellraw @s[tag=AZR_ChainKillUpg_FAILED] [{"text":"失败：剩余点数不足！请取消已选择的升级。","color":"red"}]
+tellraw @s[tag=AZR_ChainKillUpg_FAILED] [{text:"失败：剩余点数不足！请取消已选择的升级。",color:"red"}]
 tag @s remove AZR_ChainKillUpg_FAILED
 tag @s remove AZR_ChainKillUpg_REMOVE
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.5 0.4

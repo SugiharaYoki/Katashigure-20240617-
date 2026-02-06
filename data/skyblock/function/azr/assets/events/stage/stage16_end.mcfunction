@@ -46,7 +46,7 @@ fill -79420 37 -364 -79491 39 -503 minecraft:soul_lantern replace minecraft:lant
 fill -79470 32 -429 -79463 35 -432 warped_stem[axis=y] replace crimson_stem
 fill -79468 31 -430 -79465 31 -432 warped_stem[axis=x] replace crimson_stem
 
-tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..7}] [{"text":"索命连击","color":"light_purple","bold":true},{"bold":false,"text":"可用点数已增加，目前为：8","color":"white"}]
+tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..7}] [{text:"索命连击",color:"light_purple","bold":true},{"bold":false,text:"可用点数已增加，目前为：8",color:"white"}]
 scoreboard players set @a[scores={AZR_chainKillUpg_pts=..7}] AZR_chainKillUpg_pts 8
 
 

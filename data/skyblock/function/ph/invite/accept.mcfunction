@@ -1,11 +1,11 @@
 scoreboard players reset @s PlayHouseTrigger
 
 #double join
-execute unless score hasInvitation 4ASCEND_system matches 1 run tellraw @s [{"text":"已经满员了！","color":"red"}]
+execute unless score hasInvitation 4ASCEND_system matches 1 run tellraw @s [{text:"已经满员了！",color:"red"}]
 execute unless score hasInvitation 4ASCEND_system matches 1 run return 0
 
 #start
-execute at @s run tellraw @a[tag=!Gaming,distance=0.01..] [{"selector": "@s"},{"text":"接受了A4SCEND游玩邀请！","color":"green"}]
+execute at @s run tellraw @a[tag=!Gaming,distance=0.01..] [{"selector": "@s"},{text:"接受了A4SCEND游玩邀请！",color:"green"}]
 data modify storage ph start_init.player1.type set value "player"
 data modify storage ph start_init.player2.type set value "player"
 data modify storage ph start_init.player1.UUID set from entity @a[tag=4ASCENDInvite,limit=1] UUID

@@ -8,9 +8,9 @@ tp @a[tag=SEAPT] 90136 129 117 facing 90137 129 117
 scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 1300
 
 #clear @a[tag=SEAPT]
-item replace entity @a[tag=SEAPT] armor.feet with leather_boots[custom_name='{"text":"基础防护靴","italic":false,"color":"red"}',custom_data={sea_feet:true},attribute_modifiers=[{type:"armor",slot:"feet",id:"sea_armor:008_01",amount:1.0,operation:"add_value"},{type:"armor_toughness",slot:"feet",id:"sea_armor:008_02",amount:0.5,operation:"add_value"}],unbreakable={}]
-item replace entity @a[tag=SEAPT] hotbar.2 with crossbow[custom_name='{"text":"工程弩","italic":false,"color":"red"}',custom_data={sea_crossbow:true},unbreakable={}]
-item replace entity @a[tag=SEAPT] inventory.18 with shield[custom_name='{"text":"防护盾","italic":false,"color":"red"}',custom_data={sea_shield:true},attribute_modifiers=[{type:"movement_speed",slot:"hand",id:"sea_armor:004_01",amount:-0.03,operation:"add_value"}],lore=['{"text":"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）","color":"white","italic":false}','{"text":"在这期间受到攻击并反击可以造成巨额伤害","color":"white","italic":false}']]
+item replace entity @a[tag=SEAPT] armor.feet with leather_boots[custom_name='{text:"基础防护靴","italic":false,color:"red"}',custom_data={sea_feet:true},attribute_modifiers=[{type:"armor",slot:"feet",id:"sea_armor:008_01",amount:1.0,operation:"add_value"},{type:"armor_toughness",slot:"feet",id:"sea_armor:008_02",amount:0.5,operation:"add_value"}],unbreakable={}]
+item replace entity @a[tag=SEAPT] hotbar.2 with crossbow[custom_name='{text:"工程弩","italic":false,color:"red"}',custom_data={sea_crossbow:true},unbreakable={}]
+item replace entity @a[tag=SEAPT] inventory.18 with shield[custom_name='{text:"防护盾","italic":false,color:"red"}',custom_data={sea_shield:true},attribute_modifiers=[{type:"movement_speed",slot:"hand",id:"sea_armor:004_01",amount:-0.03,operation:"add_value"}],lore=['{text:"主手选至此道具的瞬间获得极短暂无敌（无需右键使用）",color:"white","italic":false}','{text:"在这期间受到攻击并反击可以造成巨额伤害",color:"white","italic":false}']]
 
 execute as @a[tag=SEAPT] at @s[scores={SEAPT_setting_recall=2}] run tag @s add sea_teleport04
 execute as @a[tag=SEAPT] at @s[scores={SEAPT_setting_recall=2}] run tag @s add sea_teleport05

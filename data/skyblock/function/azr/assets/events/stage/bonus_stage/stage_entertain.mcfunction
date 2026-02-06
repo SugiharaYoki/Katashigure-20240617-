@@ -3,7 +3,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar add azr:
 execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_bonus color yellow
 execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_bonus players @a[tag=azrPlayer]
 execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_bonus max 204
-execute if score stage_bonus_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage Entertain\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 204"}]
+execute if score stage_bonus_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{text:"[DEBUG MODE MESSAGE] You are playing \"Stage Entertain\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{text:" Maximum Seconds = 204"}]
 execute if score stage_bonus_thread AzrTimerStack matches 1..204 store result bossbar azr:progress_bar_bonus value run scoreboard players get stage_bonus_thread AzrTimerStack
 execute if score stage_bonus_thread AzrTimerStack matches 204 run bossbar remove azr:progress_bar_bonus
 #
@@ -76,7 +76,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 2..204 positioned -798
 execute if score stage_bonus_thread AzrTimerStack matches 2..204 positioned -79887 58 164 if entity @n[type=arrow,distance=0..1.5,nbt={inBlockState:{Name:"minecraft:bell"}}] as @e[tag=AzrielMob_typeDEATH,distance=..25] run damage @s 10 cramming
 execute if score stage_bonus_thread AzrTimerStack matches 1..204 positioned -79887 58 164 as @n[type=arrow,distance=0..1.8] at @s run kill @s
 
-execute if score stage_bonus_thread AzrTimerStack matches 204 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Stage Clear","color":"green"}
+execute if score stage_bonus_thread AzrTimerStack matches 204 run title @a[tag=azrShowDialog] actionbar {text:"Extra Stage Clear",color:"green"}
 execute if score stage_bonus_thread AzrTimerStack matches 204 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_entertain
 execute if score stage_bonus_thread AzrTimerStack matches 204 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS05
 execute if score stage_bonus_thread AzrTimerStack matches 204 as @a[tag=azrPlayer] at @s run give @s emerald 5

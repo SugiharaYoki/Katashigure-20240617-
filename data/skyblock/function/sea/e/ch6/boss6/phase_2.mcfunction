@@ -3,7 +3,7 @@ scoreboard players add @s rng4 1
 
 execute if score @s rng4 matches 2 run effect give @s levitation 5 1 true
 
-execute if score @s rng4 matches 10 positioned 90059 20 -1825 run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“很好，汝有同吾对战的资格。”","color":"white","bold": false}]
+execute if score @s rng4 matches 10 positioned 90059 20 -1825 run tellraw @a[distance=0..150] [{text:"权之执理：",color:"red","bold": true},{text:"\n“很好，汝有同吾对战的资格。”",color:"white","bold": false}]
 
 execute if score @s rng4 matches 5..8 positioned 90059 26 -1825 facing 90059 26 -1825 run tp ^ ^ ^2
 
@@ -17,8 +17,8 @@ execute if score @s rng4 matches 102 positioned 90059 20 -1825 run playsound ent
 execute if score @s rng4 matches 102 positioned 90059 20 -1825 run particle large_smoke ~ ~ ~ 4 0 4 0.3 50
 execute if score @s rng4 matches 102 positioned 90059 20 -1825 run particle block{block_state:{Name:tuff_bricks}} ~ ~ ~ 8 0.1 8 0.05 100
 execute if score @s rng4 matches 102 positioned 90059 20 -1825 run summon lightning_bolt
-execute if score @s rng4 matches 70 positioned 90059 20 -1825 if entity @a[tag=SEAPT,distance=0..5.5] run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“快远离那块平台！！”","color":"white","bold": false}]
-execute if score @s rng4 matches 70 positioned 90059 20 -1825 unless entity @a[tag=SEAPT,distance=0..5.5] run tellraw @a[distance=0..150] [{"text":"艾德雯娜：","color":"green","bold": true},{"text":"\n“祂这是要……将平台砸毁？！”","color":"white","bold": false}]
+execute if score @s rng4 matches 70 positioned 90059 20 -1825 if entity @a[tag=SEAPT,distance=0..5.5] run tellraw @a[distance=0..150] [{text:"艾德雯娜：",color:"green","bold": true},{text:"\n“快远离那块平台！！”",color:"white","bold": false}]
+execute if score @s rng4 matches 70 positioned 90059 20 -1825 unless entity @a[tag=SEAPT,distance=0..5.5] run tellraw @a[distance=0..150] [{text:"艾德雯娜：",color:"green","bold": true},{text:"\n“祂这是要……将平台砸毁？！”",color:"white","bold": false}]
 execute if score @s rng4 matches 100 at @s as @a[tag=SEAPT,distance=..4] run damage @s 12 explosion
 execute if score @s rng4 matches 102 at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 air replace fire
 execute if score @s rng4 matches 102 run clone 90052 120 -1829 90062 120 -1822 90052 20 -1829
@@ -29,7 +29,7 @@ execute if score @s[tag=!Phase2] rng4 matches 102 run tag @s add Phase2
 execute if score @s rng4 matches 102.. run scoreboard players set @s rng2 0
 execute if score @s rng4 matches 102.. run scoreboard players set @s rng4 0
 
-execute if score @s rng4 matches 60 as @a[scores={SEAPT_member=1}] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{"text":"权之执理：","color":"red","bold": true},{"text":"\n“很好，汝现今的力量确实很强大，但到此为止了！！”","color":"white","bold": false}]
+execute if score @s rng4 matches 60 as @a[scores={SEAPT_member=1}] at @s if block 90151 133 -1857 minecraft:skeleton_skull run tellraw @a[distance=0..150] [{text:"权之执理：",color:"red","bold": true},{text:"\n“很好，汝现今的力量确实很强大，但到此为止了！！”",color:"white","bold": false}]
 
 
 

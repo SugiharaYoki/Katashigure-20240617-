@@ -72,7 +72,7 @@ gamerule randomTickSpeed 10
 gamerule keepInventory true
 scoreboard players set @a[tag=PVPing] AnnouncementTime 0
 ##
-tellraw @a[tag=DebugMode] [{"text":"System_Debug","color":"dark_blue"},{"text":" : PVP 闭局程序 运行结束","color":"dark_gray"}]
+tellraw @a[tag=DebugMode] [{text:"System_Debug",color:"dark_blue"},{text:" : PVP 闭局程序 运行结束",color:"dark_gray"}]
 scoreboard players set skywar_start rng1 0
 #移除主控插座
 setblock -17 23 32 air

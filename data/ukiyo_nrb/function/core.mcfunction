@@ -37,7 +37,7 @@ execute if score ukiyo_nrb nrb_timer1 matches 6.. as @a[tag=UNRBPT,scores={life_
 execute if score ukiyo_nrb nrb_timer1 matches 6.. as @a[tag=UNRBPT,scores={life_count=8}] run xp set @s 8 levels
 execute if score ukiyo_nrb nrb_timer1 matches 6.. as @a[tag=UNRBPT,scores={life_count=9}] run xp set @s 9 levels
 
-execute if score ukiyo_nrb nrb_timer1 matches 10 as @a[tag=UNRBPT] at @s run tellraw @s {"text": "你的经验等级是你仍能承受的攻击次数，请时刻给予关注！","color":"yellow"}
+execute if score ukiyo_nrb nrb_timer1 matches 10 as @a[tag=UNRBPT] at @s run tellraw @s {"text": "你的经验等级是你仍能承受的攻击次数，请时刻给予关注！",color:"yellow"}
 
 execute if score ukiyo_nrb nrb_timer1 matches 6.. as @a[scores={nrb_receive_damage=1..}] at @s if score @s nrb_receive_damage = @p[scores={nrb_does_damage=1..},distance=0.001..] nrb_does_damage run function ukiyo_nrb:got_hit
 
@@ -46,9 +46,9 @@ execute store result score ukiyo_nrb nrb_alive run execute if entity @a[tag=UNRB
 execute if score ukiyo_nrb nrb_timer1 matches 10..999 if score ukiyo_nrb nrb_alive matches 1 if score ukiyo_nrb if_teamed matches 0 run scoreboard players set ukiyo_nrb nrb_timer1 1003
 
 
-execute if score ukiyo_nrb nrb_timer1 matches 1005 if entity @a[tag=UNRB_alive] run tellraw @a [{"text":"本局胜利玩家： ","color":"green"},{"selector":"@a[tag=UNRB_alive]","color":"white"},{"text":" ！ 恭喜存活 ♪♪","color":"green"}]
+execute if score ukiyo_nrb nrb_timer1 matches 1005 if entity @a[tag=UNRB_alive] run tellraw @a [{text:"本局胜利玩家： ",color:"green"},{selector:"@a[tag=UNRB_alive]",color:"white"},{text:" ！ 恭喜存活 ♪♪",color:"green"}]
 execute if score ukiyo_nrb nrb_timer1 matches 1005 run scoreboard players add @a[tag=UNRB_alive] PERM_unrb_win 1
-execute if score ukiyo_nrb nrb_timer1 matches 1005 unless entity @a[tag=UNRB_alive] run tellraw @a [{"text":"本局胜利玩家： ","color":"green"},{"text":"无","color":"white"},{"text":" ！…你们怎么做到的？","color":"green"}]
+execute if score ukiyo_nrb nrb_timer1 matches 1005 unless entity @a[tag=UNRB_alive] run tellraw @a [{text:"本局胜利玩家： ",color:"green"},{text:"无",color:"white"},{text:" ！…你们怎么做到的？",color:"green"}]
 
 execute if score ukiyo_nrb nrb_timer1 matches 1005..1009 as @a[tag=UNRB_alive] at @s run summon firework_rocket ~ ~2 ~ {LifeTime:30,FireworksItem:{id:firework_rocket,Count:1,tag:{Fireworks:{Flight:2,Explosions:[{Type:2,Flicker:0,Trail:0,Colors:[I;14602026,15790320],FadeColors:[I;4312372,15435844]}]}}}}
 execute if score ukiyo_nrb nrb_timer1 matches 1010 run function ukiyo_nrb:endgame_regen

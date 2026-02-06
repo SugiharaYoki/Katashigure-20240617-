@@ -4,16 +4,16 @@ execute positioned 0 57 100 run kill @e[limit=3,distance=0..1.8,type=!player,tag
 
 execute as @a[x=0,y=57,z=100,distance=1.2..] at @s run tag @s remove mg_cdc
 execute as @a[x=0,y=57,z=100,distance=1.2..,tag=mg_cdc_start] at @s run scoreboard players operation @s mg_cdc_kill_best > @s mg_cdc_kill
-execute as @a[x=0,y=57,z=100,distance=1.2..,tag=mg_cdc_start] at @s run tellraw @s {"text":"『水晶防御弩台』游戏结束","color":"red","bold":true}
-execute as @a[x=0,y=57,z=100,distance=1.2..,tag=mg_cdc_start] at @s run tellraw @s [{"text":"游戏成绩：","color":"red"},{"score":{"name":"@s","objective":"mg_cdc_kill"},"color":"red"}]
+execute as @a[x=0,y=57,z=100,distance=1.2..,tag=mg_cdc_start] at @s run tellraw @s {text:"『水晶防御弩台』游戏结束",color:"red","bold":true}
+execute as @a[x=0,y=57,z=100,distance=1.2..,tag=mg_cdc_start] at @s run tellraw @s [{text:"游戏成绩：",color:"red"},{"score":{"name":"@s","objective":"mg_cdc_kill"},color:"red"}]
 execute as @a[x=0,y=57,z=100,distance=1.2..,tag=mg_cdc_start] at @s run kill @e[type=arrow,distance=0..8,x=0,y=55,z=107,nbt={inGround:true}]
 execute as @a[x=0,y=57,z=100,distance=1.2..,tag=mg_cdc_start] at @s run kill @e[type=item,distance=0..8,x=0,y=55,z=107]
 execute as @a[x=0,y=57,z=100,distance=1.2..] at @s run tag @s remove mg_cdc_start
 execute as @a[tag=mg_cdc,tag=!mg_cdc_start] run kill @e[type=arrow,distance=0..8,x=0,y=55,z=107]
 execute as @a[tag=mg_cdc,tag=!mg_cdc_start] run kill @e[type=item,distance=0..8,x=0,y=55,z=107]
-execute as @a[tag=mg_cdc,tag=!mg_cdc_start] run tellraw @s {"text":"『水晶防御弩台』游戏开始","color":"light_purple","bold":true}
-execute as @a[tag=mg_cdc,tag=!mg_cdc_start] run tellraw @s {"text":"通过射击升级陶罐，消耗100金币进行武器升级。","color":"white"}
-execute as @a[tag=mg_cdc,tag=!mg_cdc_start] run tellraw @s {"text":"被怪物攻击即会游戏失败，尽可能射杀更多的怪物吧！","color":"white"}
+execute as @a[tag=mg_cdc,tag=!mg_cdc_start] run tellraw @s {text:"『水晶防御弩台』游戏开始",color:"light_purple","bold":true}
+execute as @a[tag=mg_cdc,tag=!mg_cdc_start] run tellraw @s {text:"通过射击升级陶罐，消耗100金币进行武器升级。",color:"white"}
+execute as @a[tag=mg_cdc,tag=!mg_cdc_start] run tellraw @s {text:"被怪物攻击即会游戏失败，尽可能射杀更多的怪物吧！",color:"white"}
 execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard objectives add mg_cdc_timer dummy
 execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard objectives add mg_cdc_loop dummy
 execute if entity @a[tag=mg_cdc,tag=!mg_cdc_start] run scoreboard objectives add mg_cdc_loop2 dummy
@@ -91,14 +91,14 @@ execute as @n[tag=sc,scores={mg_cdc_loop2=50..}] run scoreboard players set @s m
 
 execute as @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_money=100..}] if block -5 57 108 air run scoreboard players add @s mg_cdc_load_upg 1
 execute as @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_money=100..}] if block -5 57 108 air run kill @e[type=arrow,x=-5,y=57,z=108,distance=0..1.5]
-execute as @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_money=100..}] if block -5 57 108 air run tellraw @s [{"text":"射速升级！等级：","color":"green","bold":true},{"score":{"name":"@s","objective":"mg_cdc_load_upg"},"color":"green"}]
+execute as @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_money=100..}] if block -5 57 108 air run tellraw @s [{text:"射速升级！等级：",color:"green","bold":true},{"score":{"name":"@s","objective":"mg_cdc_load_upg"},color:"green"}]
 execute as @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_money=100..}] if block -5 57 108 air run scoreboard players remove @s mg_cdc_money 100
 execute unless entity @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_load_upg=10..}] if block -5 57 108 air run setblock -5 57 108 decorated_pot{sherds:["archer_pottery_sherd","archer_pottery_sherd","archer_pottery_sherd","archer_pottery_sherd"]}
 execute if entity @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_load_upg=10..}] if block -5 57 108 air run setblock -5 57 108 lantern
 
 execute as @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_money=100..}] if block 5 57 108 air run scoreboard players add @s mg_cdc_shoot_upg 1
 execute as @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_money=100..}] if block 5 57 108 air run kill @e[type=arrow,x=5,y=57,z=108,distance=0..1.5]
-execute as @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_money=100..}] if block 5 57 108 air run tellraw @s [{"text":"箭矢升级！等级：","color":"green","bold":true},{"score":{"name":"@s","objective":"mg_cdc_shoot_upg"},"color":"green"}]
+execute as @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_money=100..}] if block 5 57 108 air run tellraw @s [{text:"箭矢升级！等级：",color:"green","bold":true},{"score":{"name":"@s","objective":"mg_cdc_shoot_upg"},color:"green"}]
 execute as @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_money=100..}] if block 5 57 108 air run scoreboard players remove @s mg_cdc_money 100
 execute unless entity @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_shoot_upg=6..}] if block 5 57 108 air run setblock 5 57 108 decorated_pot{sherds:["heartbreak_pottery_sherd","heartbreak_pottery_sherd","heartbreak_pottery_sherd","heartbreak_pottery_sherd"]}
 execute if entity @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_shoot_upg=6..}] if block 5 57 108 air run setblock 5 57 108 lantern
@@ -113,7 +113,7 @@ execute if block 0 56 101 air run setblock 0 58 113 minecraft:waxed_oxidized_cop
 
 execute if block 0 58 113 minecraft:waxed_oxidized_copper_bulb[lit=false] as @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_money=100..}] if block -5 59 112 air run setblock 0 56 101 amethyst_cluster
 execute if block 0 58 113 minecraft:waxed_oxidized_copper_bulb[lit=false] as @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_money=100..}] if block -5 59 112 air run kill @e[type=arrow,x=-5,y=59,z=112,distance=0..1.5]
-execute if block 0 58 113 minecraft:waxed_oxidized_copper_bulb[lit=false] as @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_money=100..}] if block -5 59 112 air run tellraw @s [{"text":"水晶重生！","color":"green","bold":true}]
+execute if block 0 58 113 minecraft:waxed_oxidized_copper_bulb[lit=false] as @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_money=100..}] if block -5 59 112 air run tellraw @s [{text:"水晶重生！",color:"green","bold":true}]
 execute if block 0 58 113 minecraft:waxed_oxidized_copper_bulb[lit=false] as @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_money=100..}] if block -5 59 112 air run scoreboard players remove @s mg_cdc_money 100
 execute if block 0 58 113 minecraft:waxed_oxidized_copper_bulb[lit=false] if block 0 56 101 amethyst_cluster run setblock 0 58 113 minecraft:waxed_oxidized_copper_bulb[lit=true]
 execute if block 0 58 113 minecraft:waxed_oxidized_copper_bulb[lit=false] run setblock -5 59 112 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"]}
@@ -149,7 +149,7 @@ execute as @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_load=17..,mg_cdc_load_u
 execute as @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_load=17..,mg_cdc_load_upg=9}] run scoreboard players set @s mg_cdc_load 12
 execute as @a[tag=mg_cdc,tag=mg_cdc_start,scores={mg_cdc_load=17..,mg_cdc_load_upg=10..}] run scoreboard players set @s mg_cdc_load 13
 execute as @a[tag=mg_cdc,tag=mg_cdc_start] run effect give @s instant_health 3 1 true
-execute as @a[tag=mg_cdc,tag=mg_cdc_start] run title @s actionbar [{"text":"分数 ","color":"red"},{"score":{"name":"@s","objective":"mg_cdc_kill"},"color":"red"},{"text":"   "},{"text":"金币 ","color":"gold"},{"score":{"name":"@s","objective":"mg_cdc_money"},"color":"gold"}]
+execute as @a[tag=mg_cdc,tag=mg_cdc_start] run title @s actionbar [{text:"分数 ",color:"red"},{"score":{"name":"@s","objective":"mg_cdc_kill"},color:"red"},{text:"   "},{text:"金币 ",color:"gold"},{"score":{"name":"@s","objective":"mg_cdc_money"},color:"gold"}]
 
 execute unless entity @a[tag=mg_cdc] as @e[tag=mg_cdc_mob] at @s run tp @s ~ ~-500 ~
 execute unless entity @a[tag=mg_cdc] as @e[tag=mg_cdc_mob] at @s run kill @s

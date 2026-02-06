@@ -66,15 +66,15 @@ item replace block 90102 128 113 container.14 with rotten_flesh 2
 fill 90103 129 103 90104 128 103 minecraft:dark_prismarine
 
 
-summon minecraft:interaction 90113 129.3 113 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter4"]}
+summon minecraft:interaction 90113 129.3 113 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter4"]}
 summon minecraft:marker 90112 128 113 {Tags:["SEAcrafter_tp","SEAcrafter_tp4"]}
-summon minecraft:interaction 90083 102.3 139 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter5"]}
+summon minecraft:interaction 90083 102.3 139 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter5"]}
 summon minecraft:marker 90083 101 140 {Tags:["SEAcrafter_tp","SEAcrafter_tp5"]}
-summon minecraft:interaction 90147 130.3 124 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter6"]}
+summon minecraft:interaction 90147 130.3 124 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter6"]}
 summon minecraft:marker 90147 129 123 {Tags:["SEAcrafter_tp","SEAcrafter_tp6"]}
-summon minecraft:interaction 90113 129.3 144 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
-summon minecraft:interaction 90080 104.3 134 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
-summon minecraft:interaction 90081 104.3 134 {CustomName:'[{"text":"绿宝石提取机"}]',Tags:["SEAemeraldextractor"]}
+summon minecraft:interaction 90113 129.3 144 {CustomName:'[{text:"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90080 104.3 134 {CustomName:'[{text:"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90081 104.3 134 {CustomName:'[{text:"绿宝石提取机"}]',Tags:["SEAemeraldextractor"]}
 
 
 fill 90070 130 144 90070 130 141 minecraft:waxed_oxidized_copper_bulb[lit=false]
@@ -183,7 +183,7 @@ setblock 90101 129 136 minecraft:redstone_block
 setblock 90110 128 135 chest[facing=south]
 setblock 90111 128 135 chest[facing=south]
 item replace block 90110 128 135 container.11 with bread 2
-item replace block 90110 128 135 container.15 with dune_armor_trim_smithing_template[custom_name='{"text":"金砂石板","color":"light_purple","italic":false}'] 1
+item replace block 90110 128 135 container.15 with dune_armor_trim_smithing_template[custom_name='{text:"金砂石板",color:"light_purple","italic":false}'] 1
 item replace block 90111 128 135 container.12 with rotten_flesh 2
 item replace block 90111 128 135 container.14 with rotten_flesh 2
 setblock 90110 130 135 minecraft:potted_blue_orchid
@@ -272,8 +272,8 @@ fill 90088 129 115 90088 128 115 minecraft:polished_tuff_wall
 setblock 90101 129 125 air
 setblock 90101 129 125 lever[facing=west,face=ceiling]
 setblock 90088 131 118 chest[facing=north]
-item replace block 90088 131 118 container.12 with wayfinder_armor_trim_smithing_template[custom_name='{"text":"醒殉徒石板","color":"light_purple","italic":false}'] 2
-item replace block 90088 131 118 container.14 with wild_armor_trim_smithing_template[custom_name='{"text":"狂荒石板","color":"light_purple","italic":false}'] 2
+item replace block 90088 131 118 container.12 with wayfinder_armor_trim_smithing_template[custom_name='{text:"醒殉徒石板",color:"light_purple","italic":false}'] 2
+item replace block 90088 131 118 container.14 with wild_armor_trim_smithing_template[custom_name='{text:"狂荒石板",color:"light_purple","italic":false}'] 2
 
 
 setblock 90086 129 143 minecraft:potted_azalea_bush

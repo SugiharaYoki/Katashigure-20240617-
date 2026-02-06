@@ -36,13 +36,13 @@ fill 90191 25 114 90193 25 112 minecraft:waxed_copper_grate
 fill 90193 19 121 90191 23 121 air
 fill 90191 19 123 90193 23 123 air
 
-summon minecraft:interaction 90192 20.3 85 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter11"]}
+summon minecraft:interaction 90192 20.3 85 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter11"]}
 summon minecraft:marker 90191 19 85 {Tags:["SEAcrafter_tp","SEAcrafter_tp11"]}
-summon minecraft:interaction 90176 14.3 164 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter12"]}
+summon minecraft:interaction 90176 14.3 164 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter12"]}
 summon minecraft:marker 90176 13 163 {Tags:["SEAcrafter_tp","SEAcrafter_tp12"]}
-summon minecraft:interaction 90194 45.3 131 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter13"]}
+summon minecraft:interaction 90194 45.3 131 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter13"]}
 summon minecraft:marker 90194 44 130 {Tags:["SEAcrafter_tp","SEAcrafter_tp13"]}
-summon minecraft:interaction 90243 58.3 95 {CustomName:'[{"text":"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter14"]}
+summon minecraft:interaction 90243 58.3 95 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter14"]}
 summon minecraft:marker 90242 57 95 {Tags:["SEAcrafter_tp","SEAcrafter_tp14"]}
 
 fill 90185 46 96 90181 46 96 minecraft:redstone_block
@@ -52,12 +52,12 @@ setblock 90178 45 112 minecraft:potted_azalea_bush
 setblock 90178 45 124 minecraft:potted_azalea_bush
 
 
-summon minecraft:interaction 90164 14.3 98 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
-summon minecraft:interaction 90234 47.3 95 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
-summon minecraft:interaction 90146 85.3 96 {CustomName:'[{"text":"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90164 14.3 98 {CustomName:'[{text:"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90234 47.3 95 {CustomName:'[{text:"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90146 85.3 96 {CustomName:'[{text:"器械式治疗仪"}]',Tags:["SEAaidbox"]}
 
 
-summon minecraft:interaction 90193 45.3 126 {CustomName:'[{"text":"绿宝石提取机"}]',Tags:["SEAemeraldextractor"]}
+summon minecraft:interaction 90193 45.3 126 {CustomName:'[{text:"绿宝石提取机"}]',Tags:["SEAemeraldextractor"]}
 
 
 setblock 90188 14 89 chest[facing=west]
@@ -151,11 +151,11 @@ setblock 90246 64 88 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_
 setblock 90247 64 88 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 3, id:"minecraft:golden_carrot"}}
 
 setblock 90245 64 93 chest[facing=north]
-item replace block 90245 64 93 container.11 with wild_armor_trim_smithing_template[custom_name='{"text":"狂荒石板","color":"light_purple","italic":false}'] 2
-item replace block 90245 64 93 container.12 with raiser_armor_trim_smithing_template[custom_name='{"text":"牧羊人石板","color":"light_purple","italic":false}'] 2
+item replace block 90245 64 93 container.11 with wild_armor_trim_smithing_template[custom_name='{text:"狂荒石板",color:"light_purple","italic":false}'] 2
+item replace block 90245 64 93 container.12 with raiser_armor_trim_smithing_template[custom_name='{text:"牧羊人石板",color:"light_purple","italic":false}'] 2
 item replace block 90245 64 93 container.13 with glistering_melon_slice 1
-item replace block 90245 64 93 container.14 with sentry_armor_trim_smithing_template[custom_name='{"text":"辽哨石板","color":"light_purple","italic":false}'] 2
-item replace block 90245 64 93 container.15 with dune_armor_trim_smithing_template[custom_name='{"text":"金砂石板","color":"light_purple","italic":false}'] 2
+item replace block 90245 64 93 container.14 with sentry_armor_trim_smithing_template[custom_name='{text:"辽哨石板",color:"light_purple","italic":false}'] 2
+item replace block 90245 64 93 container.15 with dune_armor_trim_smithing_template[custom_name='{text:"金砂石板",color:"light_purple","italic":false}'] 2
 
 
 #艾德雯娜的护身符
@@ -255,7 +255,7 @@ fill 90158 36 131 90158 34 129 minecraft:iron_bars
 fill 90159 38 131 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=true]
 setblock 90183 12 136 minecraft:crimson_button[facing=north,face=floor]
 setblock 90182 12 136 minecraft:waxed_exposed_copper_bulb[lit=false]
-summon text_display 90159 36.5 130 {background:0,text:'{"text":"禁止通行 灾害应对","color":"dark_red"}',Rotation:[-90f,0f],shadow:1b,alignment:"center"}
+summon text_display 90159 36.5 130 {background:0,text:'{text:"禁止通行 灾害应对",color:"dark_red"}',Rotation:[-90f,0f],shadow:1b,alignment:"center"}
 setblock 90172 39 169 minecraft:crimson_button[facing=north,face=floor]
 setblock 90171 39 169 minecraft:waxed_exposed_copper_bulb[lit=false]
 
@@ -366,7 +366,7 @@ setblock 90193 45 114 minecraft:potted_bamboo
 
 setblock 90158 35 95 chest[facing=south]
 item replace block 90158 35 95 container.11 with arrow 3
-item replace block 90158 35 95 container.13 with firework_star[custom_name='{"text":"燃爆剂","italic":true,"color":"blue","italic":false}',lore=['{"text":"喷火器专用燃爆剂。","color":"white","italic":false}','{"text":"使用喷火器时左键，瞬间对面前近距离造成大量伤害。","color":"white","italic":false}']] 3
+item replace block 90158 35 95 container.13 with firework_star[custom_name='{text:"燃爆剂","italic":true,color:"blue","italic":false}',lore=['{text:"喷火器专用燃爆剂。",color:"white","italic":false}','{text:"使用喷火器时左键，瞬间对面前近距离造成大量伤害。",color:"white","italic":false}']] 3
 item replace block 90158 35 95 container.15 with arrow 3
 
 fill 90167 35 89 90167 35 90 redstone_block

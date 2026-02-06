@@ -1,5 +1,5 @@
 
-execute if entity @s[scores={Perm_PersonFSB=..19}] run tellraw @s {"text":"需要支付20浮世币以操作叠倍机","color":"red"}
+execute if entity @s[scores={Perm_PersonFSB=..19}] run tellraw @s {text:"需要支付20浮世币以操作叠倍机",color:"red"}
 execute if entity @s[scores={Perm_PersonFSB=20..}] run tag @s add CasinoMultSuc
 scoreboard objectives add Cas_Mtpl_A dummy
 scoreboard objectives add Cas_Mtpl_B dummy
@@ -10,20 +10,20 @@ function skyblock:tool_rng
 execute if entity @s[tag=DEBUG_dirt] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng4 matches 4 run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 rng4 3
 
 execute if entity @s[tag=CasinoMultSuc] run scoreboard players remove @s Perm_PersonFSB 20
-execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=1}] run tellraw @s {"text":"<< 10 >>","color":"yellow"}
-execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=2}] run tellraw @s {"text":"<< 15 >>","color":"yellow"}
-execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=3}] run tellraw @s {"text":"<< 20 >>","color":"yellow"}
-execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=4}] run tellraw @s {"text":"<< 25 >>","color":"yellow"}
-execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=5}] run tellraw @s {"text":"<< 30 >>","color":"yellow"}
-execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=6}] run tellraw @s {"text":"<< 35 >>","color":"yellow"}
-execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=7}] run tellraw @s {"text":"<< 40 >>","color":"yellow"}
-execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=8}] run tellraw @s {"text":"<< 45 >>","color":"yellow"}
-execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=9}] run tellraw @s {"text":"<< 50 >>","color":"yellow"}
-execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=10}] run tellraw @s {"text":"<< 55 >>","color":"yellow"}
-execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=2..}] if entity @n[tag=sc,scores={rng4=1}] run tellraw @s {"text":"<< ×2 >>","color":"yellow"}
-execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=2..}] if entity @n[tag=sc,scores={rng4=2}] run tellraw @s {"text":"<< ×4 >>","color":"yellow"}
-execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=2..}] if entity @n[tag=sc,scores={rng4=3}] run tellraw @s {"text":"〈 加 〉","color":"dark_green"}
-execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=2..}] if entity @n[tag=sc,scores={rng4=4}] run tellraw @s {"text":"〈 减 〉","color":"dark_red"}
+execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=1}] run tellraw @s {text:"<< 10 >>",color:"yellow"}
+execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=2}] run tellraw @s {text:"<< 15 >>",color:"yellow"}
+execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=3}] run tellraw @s {text:"<< 20 >>",color:"yellow"}
+execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=4}] run tellraw @s {text:"<< 25 >>",color:"yellow"}
+execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=5}] run tellraw @s {text:"<< 30 >>",color:"yellow"}
+execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=6}] run tellraw @s {text:"<< 35 >>",color:"yellow"}
+execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=7}] run tellraw @s {text:"<< 40 >>",color:"yellow"}
+execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=8}] run tellraw @s {text:"<< 45 >>",color:"yellow"}
+execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=9}] run tellraw @s {text:"<< 50 >>",color:"yellow"}
+execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] if entity @n[tag=sc,scores={rng10=10}] run tellraw @s {text:"<< 55 >>",color:"yellow"}
+execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=2..}] if entity @n[tag=sc,scores={rng4=1}] run tellraw @s {text:"<< ×2 >>",color:"yellow"}
+execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=2..}] if entity @n[tag=sc,scores={rng4=2}] run tellraw @s {text:"<< ×4 >>",color:"yellow"}
+execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=2..}] if entity @n[tag=sc,scores={rng4=3}] run tellraw @s {text:"〈 加 〉",color:"dark_green"}
+execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=2..}] if entity @n[tag=sc,scores={rng4=4}] run tellraw @s {text:"〈 减 〉",color:"dark_red"}
 
 execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=1}] run scoreboard players operation @s Cas_Mtpl_A = 10e959db-4b44-4cdd-b98c-350d3b454206 rng10
 execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=2..}] run scoreboard players operation @s Cas_Mtpl_A = 10e959db-4b44-4cdd-b98c-350d3b454206 rng4
@@ -52,6 +52,6 @@ execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_A=3..4,Cas_Mtpl_C=2..}] 
 
 execute if entity @s[tag=CasinoMultSuc] run scoreboard players add @s Cas_Mtpl_C 1
 
-tellraw @s [{"text":"如今持有FSB： ","color":"gold"},{"score":{"name":"@s","objective":"Perm_PersonFSB"}}]
+tellraw @s [{text:"如今持有FSB： ",color:"gold"},{"score":{"name":"@s","objective":"Perm_PersonFSB"}}]
 tag @s remove CasinoMultSuc
 

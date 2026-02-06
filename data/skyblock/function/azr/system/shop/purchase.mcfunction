@@ -27,7 +27,7 @@ execute if score @s Azr_Shop matches 8433100..8433999 run function skyblock:azr/
 
 execute if score @s Azr_Shop matches 8431611..8431723 run function skyblock:azr/system/shop/purchase/nether
 
-execute if score tempPlayerShopSuccess Azr_system matches 0 run tellraw @s [{"text":"生命手册没有回应，素材不符！","color":"red"}]
+execute if score tempPlayerShopSuccess Azr_system matches 0 run tellraw @s [{text:"生命手册没有回应，素材不符！",color:"red"}]
 scoreboard players reset tempPlayerShopSuccess Azr_system
 
 #-----------------arrow

@@ -3,8 +3,8 @@ function skyblock:clear_attribute_modifiers
 particle totem_of_undying ~ ~1 ~ 0.4 0.8 0.4 0.7 100
 particle minecraft:flash ~ ~1 ~ 0.4 0.7 0.4 0.3 2
 playsound item.totem.use master @a ~ ~ ~ 2
-execute if entity @n[tag=MG_AZR0SPIRIT_revival_turtle,distance=0..180,type=turtle] run tellraw @a[tag=MG_AZR0PT] [{"selector":"@s","color":"blue"},{"text":" 使用寿命神龟的力量复活！","color":"green"}]
-execute unless entity @n[tag=MG_AZR0SPIRIT_revival_turtle,distance=0..180,type=turtle] run tellraw @a[tag=MG_AZR0PT] [{"selector":"@s","color":"blue"},{"text":" 使用命星的力量复活！","color":"green"}]
+execute if entity @n[tag=MG_AZR0SPIRIT_revival_turtle,distance=0..180,type=turtle] run tellraw @a[tag=MG_AZR0PT] [{selector:"@s",color:"blue"},{text:" 使用寿命神龟的力量复活！",color:"green"}]
+execute unless entity @n[tag=MG_AZR0SPIRIT_revival_turtle,distance=0..180,type=turtle] run tellraw @a[tag=MG_AZR0PT] [{selector:"@s",color:"blue"},{text:" 使用命星的力量复活！",color:"green"}]
 
 
 execute unless entity @n[tag=MG_AZR0SPIRIT_revival_turtle,distance=0..180,type=turtle] run clear @s nether_star 1

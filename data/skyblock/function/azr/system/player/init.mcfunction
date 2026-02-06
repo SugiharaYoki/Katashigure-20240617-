@@ -42,8 +42,8 @@ tag @s add azrPlayer
 tag @s add azrNeverUsedShop
 
 #输出信息
-execute unless score $jumpto Azr_system matches 1 run tellraw @s {"text":"游戏开始……","color":"green"}
-execute if score $jumpto Azr_system matches 1 run tellraw @s {"text":"游戏再续……","color":"green"}
+execute unless score $jumpto Azr_system matches 1 run tellraw @s {text:"游戏开始……",color:"green"}
+execute if score $jumpto Azr_system matches 1 run tellraw @s {text:"游戏再续……",color:"green"}
 scoreboard players reset $jumpto Azr_system
 execute as @s[tag=DebugMode] run scoreboard objectives setdisplay sidebar Azr_system
 #function skyblock:azr/purchase_sega_azriel_plypts_react1

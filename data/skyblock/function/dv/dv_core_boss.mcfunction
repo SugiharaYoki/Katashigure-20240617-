@@ -1,16 +1,16 @@
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=35,SeGa_DVStage=20}] run tellraw @a[tag=SeGa_DVA] {"text":"红色警告！猪灵即将大举入侵！","color":"red"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=35,SeGa_DVStage=20}] run tellraw @a[tag=SeGa_DVA] {text:"红色警告！猪灵即将大举入侵！",color:"red"}
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=37,SeGa_DVStage=20}] run function skyblock:dv/dv_creeper_summon_gen
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=41,SeGa_DVStage=20}] run function skyblock:dv/dv_creeper_summon_gen
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=45,SeGa_DVStage=20}] run function skyblock:dv/lib_piglin_leader
 
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=35,SeGa_DVStage=30}] run tellraw @a[tag=SeGa_DVA] {"text":"红色警告！猪灵即将大举入侵！","color":"red"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=35,SeGa_DVStage=30}] run tellraw @a[tag=SeGa_DVA] {text:"红色警告！猪灵即将大举入侵！",color:"red"}
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=37,SeGa_DVStage=30}] run function skyblock:dv/dv_creeper_summon_gen
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=41,SeGa_DVStage=30}] run function skyblock:dv/dv_creeper_summon_gen
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=39,SeGa_DVStage=30}] run function skyblock:dv/dv_creeper_summon_gen
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=43,SeGa_DVStage=30}] run function skyblock:dv/dv_creeper_summon_gen
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=46,SeGa_DVStage=30}] run function skyblock:dv/lib_piglin_leader
 
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=35,SeGa_DVStage=40}] run tellraw @a[tag=SeGa_DVA] {"text":"红色警告！猪灵即将大举入侵！","color":"red"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=35,SeGa_DVStage=40}] run tellraw @a[tag=SeGa_DVA] {text:"红色警告！猪灵即将大举入侵！",color:"red"}
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=37,SeGa_DVStage=40}] run function skyblock:dv/dv_creeper_summon_gen
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=38,SeGa_DVStage=40}] run function skyblock:dv/dv_creeper_summon_gen
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=39,SeGa_DVStage=40}] run function skyblock:dv/dv_creeper_summon_gen
@@ -19,7 +19,7 @@ execute if entity @n[tag=sc,scores={SeGa_DVTimer=41,SeGa_DVStage=40}] run functi
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=42,SeGa_DVStage=40}] run function skyblock:dv/dv_creeper_summon_gen
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=47,SeGa_DVStage=40}] run function skyblock:dv/lib_piglin_leader
 
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=35,SeGa_DVStage=50}] run tellraw @a[tag=SeGa_DVA] {"text":"红色警告！猪灵即将大举入侵！","color":"red"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=35,SeGa_DVStage=50}] run tellraw @a[tag=SeGa_DVA] {text:"红色警告！猪灵即将大举入侵！",color:"red"}
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=37,SeGa_DVStage=50}] run function skyblock:dv/dv_creeper_summon_gen
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=38,SeGa_DVStage=50}] run function skyblock:dv/dv_creeper_summon_gen
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=39,SeGa_DVStage=50}] run function skyblock:dv/dv_creeper_summon_gen
@@ -30,7 +30,7 @@ execute if entity @n[tag=sc,scores={SeGa_DVTimer=43,SeGa_DVStage=50}] run functi
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=44,SeGa_DVStage=50}] run function skyblock:dv/dv_creeper_summon_gen
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=48,SeGa_DVStage=50}] run function skyblock:dv/lib_piglin_leader
 
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=35,SeGa_DVStage=60}] run tellraw @a[tag=SeGa_DVA] {"text":"红色警告！猪灵即将大举入侵！","color":"red"}
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=35,SeGa_DVStage=60}] run tellraw @a[tag=SeGa_DVA] {text:"红色警告！猪灵即将大举入侵！",color:"red"}
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=37,SeGa_DVStage=60}] run function skyblock:dv/dv_creeper_summon_gen
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=38,SeGa_DVStage=60}] run function skyblock:dv/dv_creeper_summon_gen
 execute if entity @n[tag=sc,scores={SeGa_DVTimer=39,SeGa_DVStage=60}] run function skyblock:dv/dv_creeper_summon_gen

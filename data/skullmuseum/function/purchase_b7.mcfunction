@@ -1,5 +1,5 @@
-execute if entity @s[scores={SkMu_Copp=1..}] run tellraw @s {"text":"已成功兑换头颅！","color":"green"}
-execute unless entity @s[scores={SkMu_Copp=1..}] run tellraw @s [{"text":"票券不足！","color":"red"},{"text":" 需求品质： 铜","color":"gray"}]
+execute if entity @s[scores={SkMu_Copp=1..}] run tellraw @s {text:"已成功兑换头颅！",color:"green"}
+execute unless entity @s[scores={SkMu_Copp=1..}] run tellraw @s [{text:"票券不足！",color:"red"},{text:" 需求品质： 铜",color:"gray"}]
 execute if entity @s[scores={SkMu_Copp=1..}] run tag @s add purchasesuccess
 execute as @s at @s[tag=purchasesuccess] run tag @s remove SkMu_Copp
 execute as @s at @s[tag=purchasesuccess] run give @s minecraft:player_head[minecraft:profile={name:"GoodBook1",properties:[{name:"textures",value:"ewogICJ0aW1lc3RhbXAiIDogMTYxNzY2MjcwMjc5MCwKICAicHJvZmlsZUlkIiA6ICIyNTY1ZTEyYWU3MGI0ZjY0OTM5ODdkMGYxMDhlYjUzYSIsCiAgInByb2ZpbGVOYW1lIiA6ICJHb29kQm9vazEiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWNkMDgxMTY4Y2E4NjYwNGZjZjM3ODAwMzQ4Y2MxNzJjZTc0MDczOWRiM2NjMDgwZjA3ZjFhN2ZiZGZmZjQ4OSIKICAgIH0KICB9Cn0="}],id:[I;627433770,-418689180,-1818723057,277787962]},custom_name='"Books"'] 1

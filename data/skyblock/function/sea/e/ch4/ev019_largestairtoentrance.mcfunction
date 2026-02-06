@@ -60,12 +60,12 @@ execute as @s[scores={sea_4temp1=74}] as @n[tag=SEA_event_ch4_mobfight1_4] run d
 execute as @s[scores={sea_4temp1=124}] as @n[tag=SEA_event_ch4_mobfight1_3] run damage @s 2 arrow by @n[type=drowned,tag=SEAmob]
 execute as @s[scores={sea_4temp1=124}] as @n[tag=SEA_event_ch4_mobfight1_4] run damage @s 2 arrow by @n[type=drowned,tag=SEAmob]
 
-execute as @s[scores={sea_4temp1=22}] positioned 90200 46 90 as @n[type=stray,tag=SEAmob] at @s run tellraw @a[tag=SEAPT,distance=0.1..20] {"text":"浑浊的碰撞声：“……杀、死……全部、尸变体！！”","color":"red"}
-execute as @s[scores={sea_4temp1=47}] positioned 90200 46 90 as @n[type=stray,tag=SEAmob] at @s run tellraw @a[tag=SEAPT,distance=0.1..20] {"text":"浑浊的碰撞声：“守、……护、……忒尔克……西！！”","color":"red"}
+execute as @s[scores={sea_4temp1=22}] positioned 90200 46 90 as @n[type=stray,tag=SEAmob] at @s run tellraw @a[tag=SEAPT,distance=0.1..20] {text:"浑浊的碰撞声：“……杀、死……全部、尸变体！！”",color:"red"}
+execute as @s[scores={sea_4temp1=47}] positioned 90200 46 90 as @n[type=stray,tag=SEAmob] at @s run tellraw @a[tag=SEAPT,distance=0.1..20] {text:"浑浊的碰撞声：“守、……护、……忒尔克……西！！”",color:"red"}
 
-execute if entity @n[tag=SEAyuehan_ch4_acting] as @s[scores={sea_4temp1=30}] as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“等等……这群尸变体不太对劲。他们在闹内讧？”","color":"white","bold": false}]
+execute if entity @n[tag=SEAyuehan_ch4_acting] as @s[scores={sea_4temp1=30}] as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"越涵：",color:"green","bold": true},{text:"\n“等等……这群尸变体不太对劲。他们在闹内讧？”",color:"white","bold": false}]
 execute if entity @n[tag=SEAyuehan_ch4_acting] as @s[scores={sea_4temp1=30}] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute if entity @n[tag=SEAyuehan_ch4_acting] as @s[scores={sea_4temp1=60}] as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{"text":"越涵：","color":"green","bold": true},{"text":"\n“直到死亡……他们都还继续尝试守护忒尔克西。……唉，我这人没法去细想这类事情。”","color":"white","bold": false}]
+execute if entity @n[tag=SEAyuehan_ch4_acting] as @s[scores={sea_4temp1=60}] as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"越涵：",color:"green","bold": true},{text:"\n“直到死亡……他们都还继续尝试守护忒尔克西。……唉，我这人没法去细想这类事情。”",color:"white","bold": false}]
 execute if entity @n[tag=SEAyuehan_ch4_acting] as @s[scores={sea_4temp1=60}] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 
 execute as @s[scores={sea_4temp1=31..40}] positioned 90195 46 91 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10

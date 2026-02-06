@@ -58,7 +58,7 @@ scoreboard players operation @s MG_AZR0_Timer_rng9 = MG_AZR0_Timer rng9
 scoreboard players operation @s MG_AZR0_rng_rng7 = MG_AZR0_rng rng7
 
 clear @s
-tellraw @a[distance=..230] [{"selector":"@s","color":"white"},{"text":" 中途退出了游戏！","color":"dark_red"}]
+tellraw @a[distance=..230] [{selector:"@s",color:"white"},{text:" 中途退出了游戏！",color:"dark_red"}]
 
 bossbar set mg:azr0_bar players @a[tag=MG_AZR0PT]
 
@@ -66,8 +66,8 @@ scoreboard players set @s Azr_isDead 0
 
 execute unless score @s Azr0_Wave matches 0.. run scoreboard players set @s Azr0_Wave 0
 
-execute if score MG_AZR0_Timer rng2 matches 1.. run tellraw @s [{"text":"游戏存档：第","color":"white"},{"score":{"name":"MG_AZR0_Timer","objective":"rng2"}},{"text":"波","color":"white"}]
-#execute if score MG_AZR0_Timer rng2 <= @s Azr0_Wave run tellraw @s [{"text":"分数低于最高分，游戏不会存档。","color":"white"}]
+execute if score MG_AZR0_Timer rng2 matches 1.. run tellraw @s [{text:"游戏存档：第",color:"white"},{"score":{"name":"MG_AZR0_Timer","objective":"rng2"}},{text:"波",color:"white"}]
+#execute if score MG_AZR0_Timer rng2 <= @s Azr0_Wave run tellraw @s [{text:"分数低于最高分，游戏不会存档。",color:"white"}]
 scoreboard players operation @s Azr0_Wave = MG_AZR0_Timer rng2
 
 scoreboard players operation @s Azr0_kills_PERM += @s Azr0_kills
@@ -75,7 +75,7 @@ scoreboard players operation @s Azr0_kills /= 5 constant
 
 scoreboard players operation @s Perm_PersonSHD += @s Azr0_kills
 
-tellraw @s [{"text": "获得了","color": "light_purple","bold": false,"italic": true},{"score":{"name":"@s","objective":"Azr0_kills"},"color":"light_purple"},{"text": "影之石","color": "light_purple"}]
+tellraw @s [{"text": "获得了","color": "light_purple","bold": false,"italic": true},{"score":{"name":"@s","objective":"Azr0_kills"},color:"light_purple"},{"text": "影之石","color": "light_purple"}]
 
 scoreboard players set @s Azr0_kills 0
 function skyblock:menu/index/multimenu821_teleport_pivotdunggc

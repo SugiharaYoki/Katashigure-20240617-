@@ -16,8 +16,8 @@ execute store result score @s rng1 run random value 6..36
 execute if score @s dailydiv9 matches ..5 run scoreboard players operation @s dailydiv9 = @s rng1
 execute if score @s dailydiv9 matches 99 run scoreboard players operation @s dailydiv9 = @s rng1
 #告知占卜结果
-tellraw @s {"text":"   『今日占星结果』","color":"gold","bold":true}
-tellraw @s {"text":"     - 星象 -","color":"white"}
+tellraw @s {text:"   『今日占星结果』",color:"gold","bold":true}
+tellraw @s {text:"     - 星象 -",color:"white"}
 scoreboard players operation @s dailydiv_w = @s dailydiv9
 scoreboard players operation @s dailydiv_wy = @s dailydiv9y
 function skyblock:city_utility_divination_result_astrology

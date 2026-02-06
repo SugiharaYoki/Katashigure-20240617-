@@ -7,7 +7,7 @@ scoreboard players set @s If_TalkVill 0
 execute as @a unless score @s 4ASCEND_HP matches 2..5 run scoreboard players set @s 4ASCEND_HP 5
 execute as @a unless score @s 4ASCEND_TIME matches 1..6 run scoreboard players set @s 4ASCEND_TIME 6
 
-execute as @s[tag=!DebugMode] run tellraw @s [{"text":"4ASCEND·接待员：\n","color":"aqua"},{"text":"本店尚未开业！","color":"white"}]
+execute as @s[tag=!DebugMode] run tellraw @s [{text:"4ASCEND·接待员：\n",color:"aqua"},{text:"本店尚未开业！",color:"white"}]
 execute as @s[tag=!DebugMode] run playsound entity.villager.no master @s
 execute as @s[tag=!DebugMode] run return 0
 

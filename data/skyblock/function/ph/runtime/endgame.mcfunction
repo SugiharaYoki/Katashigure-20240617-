@@ -1,6 +1,6 @@
 
     #output
-    tellraw @a[tag=current_table] [{"text":"4ASCEND ended, table: "},{"nbt":"end_init.table","storage":"ph"}]
+    tellraw @a[tag=current_table] [{text:"4ASCEND ended, table: "},{"nbt":"end_init.table","storage":"ph"}]
 
     #clear table
     #enum template [$1=0..4]:

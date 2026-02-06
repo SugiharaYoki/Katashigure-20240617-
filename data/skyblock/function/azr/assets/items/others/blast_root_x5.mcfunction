@@ -1,1 +1,1 @@
-give @s beetroot[custom_name='{"text":"爆裂菜根","italic":false}',lore=['{"text":"投掷 - 轰炸（射程较低）","color":"yellow"}'],enchantments={punch:1},custom_data={blast_root:1b},custom_model_data={floats:[100001.0]}] 5
+give @s beetroot[custom_name='{text:"爆裂菜根","italic":false}',lore=['{text:"投掷 - 轰炸（射程较低）",color:"yellow"}'],enchantments={punch:1},custom_data={blast_root:1b},custom_model_data={floats:[100001.0]}] 5

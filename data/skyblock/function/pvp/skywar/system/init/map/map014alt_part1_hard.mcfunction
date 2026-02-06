@@ -70,7 +70,7 @@ clone -8610 95 -9888 -8492 114 -9882 50010 95 50122 masked
 forceload remove -8810 -10000 -8692 -9882
 
 
-title @a actionbar {"text":"混沌异象： 折羽界离的夜明之塔","bold":true,"color":"red"}
+title @a actionbar {text:"混沌异象： 折羽界离的夜明之塔","bold":true,color:"red"}
 forceload add 50000 50000 50200 50200
 fillbiome 50000 90 50000 50180 91 50180 minecraft:old_growth_spruce_taiga
 fillbiome 50000 92 50000 50180 93 50180 minecraft:old_growth_spruce_taiga

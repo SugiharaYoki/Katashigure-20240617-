@@ -3,7 +3,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar add azr:
 execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_bonus color yellow
 execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_bonus players @a[tag=azrPlayer]
 execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_bonus max 204
-execute if score stage_bonus_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage Vestige\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 204"}]
+execute if score stage_bonus_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{text:"[DEBUG MODE MESSAGE] You are playing \"Stage Vestige\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{text:" Maximum Seconds = 204"}]
 execute if score stage_bonus_thread AzrTimerStack matches 1..204 store result bossbar azr:progress_bar_bonus value run scoreboard players get stage_bonus_thread AzrTimerStack
 execute if score stage_bonus_thread AzrTimerStack matches 204 run bossbar remove azr:progress_bar_bonus
 #
@@ -14,10 +14,10 @@ execute if score stage_bonus_thread AzrTimerStack matches 204 run bossbar remove
 
 
 execute if score stage_bonus_thread AzrTimerStack matches 3 positioned -79893 38 92 run function skyblock:azr/assets/mobs/axe
-execute if score stage_bonus_thread AzrTimerStack matches 5 positioned -79893 38 92 run tellraw @a[tag=azrShowDialog] [{"text":"圣殿卫兵：","color":"yellow","bold": true},{"bold": false,"text":"\n“我在这只是为了休息一会儿，你非要来这里挑战吗？”","color":"white"}]
+execute if score stage_bonus_thread AzrTimerStack matches 5 positioned -79893 38 92 run tellraw @a[tag=azrShowDialog] [{text:"圣殿卫兵：",color:"yellow","bold": true},{"bold": false,text:"\n“我在这只是为了休息一会儿，你非要来这里挑战吗？”",color:"white"}]
 execute if score stage_bonus_thread AzrTimerStack matches 9 positioned -79893 38 92 run function skyblock:azr/assets/mobs/axe
 execute if score stage_bonus_thread AzrTimerStack matches 13 positioned -79893 38 92 run function skyblock:azr/assets/mobs/sword
-execute if score stage_bonus_thread AzrTimerStack matches 22 positioned -79893 38 92 run tellraw @a[tag=azrShowDialog] [{"text":"哨兵剑士：","color":"yellow","bold": true},{"bold": false,"text":"\n“可恶，早就听说这名挑战者打起来特别猛，情报属实啊……”","color":"white"}]
+execute if score stage_bonus_thread AzrTimerStack matches 22 positioned -79893 38 92 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"yellow","bold": true},{"bold": false,text:"\n“可恶，早就听说这名挑战者打起来特别猛，情报属实啊……”",color:"white"}]
 
 execute if score stage_bonus_thread AzrTimerStack matches 30 positioned -79876 38 100 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_shadow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_bonus_thread AzrTimerStack matches 38 positioned -79893 38 92 run function skyblock:azr/assets/mobs/sword
@@ -59,7 +59,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 200..201 positioned -7
 
 
 
-execute if score stage_bonus_thread AzrTimerStack matches 204 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Stage Clear","color":"green"}
+execute if score stage_bonus_thread AzrTimerStack matches 204 run title @a[tag=azrShowDialog] actionbar {text:"Extra Stage Clear",color:"green"}
 execute if score stage_bonus_thread AzrTimerStack matches 204 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_vestige
 execute if score stage_bonus_thread AzrTimerStack matches 204 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS22
 execute if score stage_bonus_thread AzrTimerStack matches 204 as @a[tag=azrPlayer] at @s run give @s emerald 5

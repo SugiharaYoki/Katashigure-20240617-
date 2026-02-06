@@ -3,7 +3,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar add azr:
 execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_bonus color yellow
 execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_bonus players @a[tag=azrPlayer]
 execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_bonus max 162
-execute if score stage_bonus_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage Kinetic\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 162"}]
+execute if score stage_bonus_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{text:"[DEBUG MODE MESSAGE] You are playing \"Stage Kinetic\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{text:" Maximum Seconds = 162"}]
 execute if score stage_bonus_thread AzrTimerStack matches 1..162 store result bossbar azr:progress_bar_bonus value run scoreboard players get stage_bonus_thread AzrTimerStack
 execute if score stage_bonus_thread AzrTimerStack matches 162 run bossbar remove azr:progress_bar_bonus
 #
@@ -21,8 +21,8 @@ execute if score stage_bonus_thread AzrTimerStack matches 39..40 positioned -799
 
 execute if score stage_bonus_thread AzrTimerStack matches 42 run setblock -79967 31 164 lever[face=floor,facing=east]
 execute if score stage_bonus_thread AzrTimerStack matches 42 as @a[tag=azrShowDialog] at @s run playsound minecraft:block.note_block.guitar player @s ~ ~ ~ 1 0.8
-execute if score stage_bonus_thread AzrTimerStack matches 42 run bossbar set azr:progress_bar_bonus name {"text":"Stage Kinetic - 请启动点火装置","bold": true}
-execute if score stage_bonus_thread AzrTimerStack matches 42 as @a[tag=azrShowDialog] at @s run tellraw @s {"text":"指示：请启动点火装置","bold": true,"color": "yellow"}
+execute if score stage_bonus_thread AzrTimerStack matches 42 run bossbar set azr:progress_bar_bonus name {text:"Stage Kinetic - 请启动点火装置","bold": true}
+execute if score stage_bonus_thread AzrTimerStack matches 42 as @a[tag=azrShowDialog] at @s run tellraw @s {text:"指示：请启动点火装置","bold": true,"color": "yellow"}
 execute if score stage_bonus_thread AzrTimerStack matches 43..44 run scoreboard players set stage_bonus_thread AzrTimerStack 43
 execute if score stage_bonus_thread AzrTimerStack matches 42..43 if block -79967 31 164 lever[powered=true] run scoreboard players set stage_bonus_thread AzrTimerStack 45
 execute if score stage_bonus_thread AzrTimerStack matches 45 run bossbar set azr:progress_bar_bonus name "Stage Kinetic"
@@ -45,8 +45,8 @@ execute if score stage_bonus_thread AzrTimerStack matches 98 positioned -79953 2
 
 execute if score stage_bonus_thread AzrTimerStack matches 99 run setblock -79967 31 164 lever[face=floor,facing=east]
 execute if score stage_bonus_thread AzrTimerStack matches 99 as @a[tag=azrShowDialog] at @s run playsound minecraft:block.note_block.guitar player @s ~ ~ ~ 1 0.8
-execute if score stage_bonus_thread AzrTimerStack matches 99 run bossbar set azr:progress_bar_bonus name {"text":"Stage Kinetic - 请启动点火装置","bold": true}
-execute if score stage_bonus_thread AzrTimerStack matches 99 as @a[tag=azrShowDialog] at @s run tellraw @s {"text":"指示：请启动点火装置","bold": true,"color": "yellow"}
+execute if score stage_bonus_thread AzrTimerStack matches 99 run bossbar set azr:progress_bar_bonus name {text:"Stage Kinetic - 请启动点火装置","bold": true}
+execute if score stage_bonus_thread AzrTimerStack matches 99 as @a[tag=azrShowDialog] at @s run tellraw @s {text:"指示：请启动点火装置","bold": true,"color": "yellow"}
 execute if score stage_bonus_thread AzrTimerStack matches 100..101 run scoreboard players set stage_bonus_thread AzrTimerStack 100
 execute if score stage_bonus_thread AzrTimerStack matches 99..100 if block -79967 31 164 lever[powered=true] run scoreboard players set stage_bonus_thread AzrTimerStack 102
 execute if score stage_bonus_thread AzrTimerStack matches 102 run bossbar set azr:progress_bar_bonus name "Stage Kinetic"
@@ -74,8 +74,8 @@ execute if score stage_bonus_thread AzrTimerStack matches 150 positioned -79953 
 
 execute if score stage_bonus_thread AzrTimerStack matches 151 run setblock -79967 31 164 lever[face=floor,facing=east]
 execute if score stage_bonus_thread AzrTimerStack matches 151 as @a[tag=azrShowDialog] at @s run playsound minecraft:block.note_block.guitar player @s ~ ~ ~ 1 0.8
-execute if score stage_bonus_thread AzrTimerStack matches 151 run bossbar set azr:progress_bar_bonus name {"text":"Stage Kinetic - 请启动点火装置","bold": true}
-execute if score stage_bonus_thread AzrTimerStack matches 151 as @a[tag=azrShowDialog] at @s run tellraw @s {"text":"指示：请启动点火装置","bold": true,"color": "yellow"}
+execute if score stage_bonus_thread AzrTimerStack matches 151 run bossbar set azr:progress_bar_bonus name {text:"Stage Kinetic - 请启动点火装置","bold": true}
+execute if score stage_bonus_thread AzrTimerStack matches 151 as @a[tag=azrShowDialog] at @s run tellraw @s {text:"指示：请启动点火装置","bold": true,"color": "yellow"}
 execute if score stage_bonus_thread AzrTimerStack matches 152..153 run scoreboard players set stage_bonus_thread AzrTimerStack 152
 execute if score stage_bonus_thread AzrTimerStack matches 151..152 if block -79967 31 164 lever[powered=true] run scoreboard players set stage_bonus_thread AzrTimerStack 154
 execute if score stage_bonus_thread AzrTimerStack matches 154 run bossbar set azr:progress_bar_bonus name "Stage Kinetic"
@@ -87,7 +87,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 157 run playsound bloc
 execute if score stage_bonus_thread AzrTimerStack matches 157 run fill -79962 30 159 -79963 30 165 air replace fire
 
 
-execute if score stage_bonus_thread AzrTimerStack matches 163 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Stage Clear","color":"green"}
+execute if score stage_bonus_thread AzrTimerStack matches 163 run title @a[tag=azrShowDialog] actionbar {text:"Extra Stage Clear",color:"green"}
 execute if score stage_bonus_thread AzrTimerStack matches 163 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_kinetic
 execute if score stage_bonus_thread AzrTimerStack matches 163 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS11
 execute if score stage_bonus_thread AzrTimerStack matches 163 as @a[tag=azrPlayer] at @s run give @s emerald 5

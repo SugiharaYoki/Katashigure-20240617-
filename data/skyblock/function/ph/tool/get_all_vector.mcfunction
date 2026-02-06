@@ -1,4 +1,4 @@
-execute unless entity @s[tag=DebugMode] run tellraw @a [{"text":"you have no permission to do this","color":"red"}]
+execute unless entity @s[tag=DebugMode] run tellraw @a [{text:"you have no permission to do this",color:"red"}]
 
 data remove storage ph_cache all_vector
 #host

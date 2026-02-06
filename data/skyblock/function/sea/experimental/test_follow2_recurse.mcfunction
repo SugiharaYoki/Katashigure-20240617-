@@ -1,7 +1,7 @@
 scoreboard players add @n[tag=SEA_follow_target_origin] rng1 1
 
 
-tellraw @a[tag=SEA_follow_debug] [{"text": "SEA_follow 进行递归 ","color": "dark_gray"},{"score":{"name":"@n[tag=SEA_follow_target_origin]","objective":"rng1"},"color":"dark_gray"}]
+tellraw @a[tag=SEA_follow_debug] [{"text": "SEA_follow 进行递归 ","color": "dark_gray"},{"score":{"name":"@n[tag=SEA_follow_target_origin]","objective":"rng1"},color:"dark_gray"}]
 
 execute if entity @n[tag=SEA_follow_target_origin,scores={rng1=11..}] unless entity @p[tag=SEA_follow_target] run tag @n[tag=SEA_follow_target_marker] add SEA_follow_target_destination
 execute if entity @n[tag=SEA_follow_target_origin,scores={rng1=11..}] unless entity @n[tag=SEA_follow_target_marker] run tag @n[tag=SEA_follow_target_origin] add SEA_follow_target_destination

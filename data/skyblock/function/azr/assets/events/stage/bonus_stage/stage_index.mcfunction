@@ -3,7 +3,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar add azr:
 execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_bonus color yellow
 execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_bonus players @a[tag=azrPlayer]
 execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_bonus max 181
-execute if score stage_bonus_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{"text":"[DEBUG MODE MESSAGE] You are playing \"Stage Index\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{"text":" Maximum Seconds = 181"}]
+execute if score stage_bonus_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{text:"[DEBUG MODE MESSAGE] You are playing \"Stage Index\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{text:" Maximum Seconds = 181"}]
 execute if score stage_bonus_thread AzrTimerStack matches 1..181 store result bossbar azr:progress_bar_bonus value run scoreboard players get stage_bonus_thread AzrTimerStack
 execute if score stage_bonus_thread AzrTimerStack matches 181 run bossbar remove azr:progress_bar_bonus
 #
@@ -75,7 +75,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 2.. as @a[tag=azrPlaye
 execute if score stage_bonus_thread AzrTimerStack matches 2.. as @a[tag=azrPlayer,scores={azr_bonus_stage_index=1..}] run scoreboard players remove @s azr_bonus_stage_index 1
 
 
-execute if score stage_bonus_thread AzrTimerStack matches 181 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Stage Clear","color":"green"}
+execute if score stage_bonus_thread AzrTimerStack matches 181 run title @a[tag=azrShowDialog] actionbar {text:"Extra Stage Clear",color:"green"}
 execute if score stage_bonus_thread AzrTimerStack matches 181 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_index
 execute if score stage_bonus_thread AzrTimerStack matches 181 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS09
 execute if score stage_bonus_thread AzrTimerStack matches 181 as @a[tag=azrPlayer] at @s run give @s emerald 5

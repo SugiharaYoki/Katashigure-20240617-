@@ -1,6 +1,6 @@
-tellraw @a[tag=OneShotWin] [{"selector":"@p[tag=OneShotWin]","color":"blue"},{"text":"获得了胜利！","color":"green"}]
-tellraw @a[tag=OneShotLose] [{"selector":"@p[tag=OneShotWin]","color":"blue"},{"text":"获得了胜利！","color":"red"}]
-tellraw @a[tag=OneShotGaming] {"text":"游戏结束","color":"white","bold":true}
+tellraw @a[tag=OneShotWin] [{selector:"@p[tag=OneShotWin]",color:"blue"},{text:"获得了胜利！",color:"green"}]
+tellraw @a[tag=OneShotLose] [{selector:"@p[tag=OneShotWin]",color:"blue"},{text:"获得了胜利！",color:"red"}]
+tellraw @a[tag=OneShotGaming] {text:"游戏结束",color:"white","bold":true}
 
 clear @a[tag=OneShotGaming]
 scoreboard players set @a[tag=OneShotGaming] DeathCountTemp 0

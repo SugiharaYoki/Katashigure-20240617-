@@ -24,16 +24,16 @@ execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng19 matches 18 run score
 execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng19 matches 19 run scoreboard players set @s Cas_BJ_Com 20
 
 
-execute if entity @s[tag=Cas_BJ_OK,tag=Cas_BJ_B,tag=CasBJGGS] if score @s Cas_BJ_Com > @s CasBJGTemp1 run tellraw @s [{"text":"电脑","color":"blue"},{"text":" 的胜利！","color":"gold"}]
-execute if entity @s[tag=Cas_BJ_OK,tag=Cas_BJ_B,tag=CasBJGGS] if score @s Cas_BJ_Com > @s CasBJGTemp1 run tellraw @s [{"text":"电脑的分数： ","color":"white"},{"score":{"name":"@s","objective":"Cas_BJ_Com"}},{"text":"  |  你的分数： ","color":"white"},{"score":{"name":"@s","objective":"CasBJGTemp1"}}]
+execute if entity @s[tag=Cas_BJ_OK,tag=Cas_BJ_B,tag=CasBJGGS] if score @s Cas_BJ_Com > @s CasBJGTemp1 run tellraw @s [{text:"电脑",color:"blue"},{text:" 的胜利！",color:"gold"}]
+execute if entity @s[tag=Cas_BJ_OK,tag=Cas_BJ_B,tag=CasBJGGS] if score @s Cas_BJ_Com > @s CasBJGTemp1 run tellraw @s [{text:"电脑的分数： ",color:"white"},{"score":{"name":"@s","objective":"Cas_BJ_Com"}},{text:"  |  你的分数： ",color:"white"},{"score":{"name":"@s","objective":"CasBJGTemp1"}}]
 execute if entity @s[tag=Cas_BJ_OK,tag=Cas_BJ_B,tag=CasBJGGS] if score @s Cas_BJ_Com > @s CasBJGTemp1 run tag @s add CasBJGfail
 
-execute if entity @s[tag=Cas_BJ_OK,tag=Cas_BJ_B,tag=CasBJGGS] if score @s Cas_BJ_Com < @s CasBJGTemp1 run tellraw @s [{"selector":"@s","color":"blue"},{"text":" 的胜利！","color":"gold"}]
-execute if entity @s[tag=Cas_BJ_OK,tag=Cas_BJ_B,tag=CasBJGGS] if score @s Cas_BJ_Com < @s CasBJGTemp1 run tellraw @s [{"text":"电脑的分数： ","color":"white"},{"score":{"name":"@s","objective":"Cas_BJ_Com"}},{"text":"  |  你的分数： ","color":"white"},{"score":{"name":"@s","objective":"CasBJGTemp1"}}]
+execute if entity @s[tag=Cas_BJ_OK,tag=Cas_BJ_B,tag=CasBJGGS] if score @s Cas_BJ_Com < @s CasBJGTemp1 run tellraw @s [{selector:"@s",color:"blue"},{text:" 的胜利！",color:"gold"}]
+execute if entity @s[tag=Cas_BJ_OK,tag=Cas_BJ_B,tag=CasBJGGS] if score @s Cas_BJ_Com < @s CasBJGTemp1 run tellraw @s [{text:"电脑的分数： ",color:"white"},{"score":{"name":"@s","objective":"Cas_BJ_Com"}},{text:"  |  你的分数： ",color:"white"},{"score":{"name":"@s","objective":"CasBJGTemp1"}}]
 execute if entity @s[tag=Cas_BJ_OK,tag=Cas_BJ_B,tag=CasBJGGS] if score @s Cas_BJ_Com > @s CasBJGTemp1 run tag @s add CasBJGsuccess
 
-execute if entity @s[tag=Cas_BJ_OK,tag=Cas_BJ_B,tag=CasBJGGS] if score @s Cas_BJ_Com = @s CasBJGTemp1 run tellraw @s {"text":"平局！","color":"gold"}
-execute if entity @s[tag=Cas_BJ_OK,tag=Cas_BJ_B,tag=CasBJGGS] if score @s Cas_BJ_Com = @s CasBJGTemp1 run tellraw @s [{"text":"电脑的分数： ","color":"white"},{"score":{"name":"@s","objective":"Cas_BJ_Com"}},{"text":"  |  你的分数： ","color":"white"},{"score":{"name":"@s","objective":"CasBJGTemp1"}}]
+execute if entity @s[tag=Cas_BJ_OK,tag=Cas_BJ_B,tag=CasBJGGS] if score @s Cas_BJ_Com = @s CasBJGTemp1 run tellraw @s {text:"平局！",color:"gold"}
+execute if entity @s[tag=Cas_BJ_OK,tag=Cas_BJ_B,tag=CasBJGGS] if score @s Cas_BJ_Com = @s CasBJGTemp1 run tellraw @s [{text:"电脑的分数： ",color:"white"},{"score":{"name":"@s","objective":"Cas_BJ_Com"}},{text:"  |  你的分数： ",color:"white"},{"score":{"name":"@s","objective":"CasBJGTemp1"}}]
 
 execute if entity @s[tag=Cas_BJ_OK,tag=Cas_BJ_B,tag=CasBJGGS] run scoreboard objectives remove Cas_BJ_Com
 
@@ -63,22 +63,22 @@ execute if entity @s[tag=!CasBJGGS] run tag @a remove Cas_BJ_B
 execute if entity @s[tag=!CasBJGGS] run tag @a remove Cas_BJ_C
 execute if entity @s[tag=!CasBJGGS] run tag @a remove CasBJFinish
 execute if entity @s[tag=!CasBJGGS] run tag @a remove Cas_BJ_OK
-execute if score @s[tag=CasBJG1,tag=!CasBJGGS] Perm_PersonFSB matches ..99 run tellraw @s {"text":"你至少得拥有100浮世币的存款！","color":"red"}
-execute if score @s[tag=CasBJG1,tag=!CasBJGGS] Perm_PersonFSB matches 100.. unless entity @p[x=-67,y=63,z=-38,distance=0..3] unless entity @p[x=-67,y=63,z=-42,distance=0..3] run tellraw @s {"text":"没有检测到玩家！","color":"red"}
+execute if score @s[tag=CasBJG1,tag=!CasBJGGS] Perm_PersonFSB matches ..99 run tellraw @s {text:"你至少得拥有100浮世币的存款！",color:"red"}
+execute if score @s[tag=CasBJG1,tag=!CasBJGGS] Perm_PersonFSB matches 100.. unless entity @p[x=-67,y=63,z=-38,distance=0..3] unless entity @p[x=-67,y=63,z=-42,distance=0..3] run tellraw @s {text:"没有检测到玩家！",color:"red"}
 execute if score @s[tag=CasBJG1,tag=!CasBJGGS] Perm_PersonFSB matches 100.. if entity @p[x=-67,y=63,z=-38,distance=0..3] run tag @p[x=-67,y=63,z=-38,distance=0..3] add Cas_BJ_B
 execute if score @s[tag=CasBJG1,tag=!CasBJGGS] Perm_PersonFSB matches 100.. unless entity @a[tag=Cas_BJ_B] if entity @p[x=-67,y=63,z=-42,distance=0..3] run tag @p[x=-67,y=63,z=-42,distance=0..3] add Cas_BJ_B
 execute if score @s[tag=CasBJG1,tag=!CasBJGGS] Perm_PersonFSB matches 100.. if entity @a[tag=Cas_BJ_B] run tag @s add CasBJG2
 
-execute if entity @s[tag=CasBJG2] run tellraw @s [{"text":"黑杰克 玩家A： ","color":"white"},{"text":"电脑","color":"blue"}]
-execute if entity @s[tag=CasBJG2] run tellraw @s [{"text":"黑杰克 玩家B： ","color":"white"},{"selector":"@s","color":"blue"}]
+execute if entity @s[tag=CasBJG2] run tellraw @s [{text:"黑杰克 玩家A： ",color:"white"},{text:"电脑",color:"blue"}]
+execute if entity @s[tag=CasBJG2] run tellraw @s [{text:"黑杰克 玩家B： ",color:"white"},{selector:"@s",color:"blue"}]
 
 execute if entity @s[tag=CasBJG2] run scoreboard objectives add CasBJGTemp1 dummy
 execute if entity @s[tag=CasBJG2] run scoreboard objectives add CasBJGTemp2 dummy
 execute if entity @s[tag=CasBJG2] run scoreboard objectives add CasBJGDraw dummy
 
-execute if entity @s[tag=CasBJG2] run tellraw @s [{"text":"左按键： ","color":"red"},{"text":"抽牌 （最多五次）","color":"white"}]
-execute if entity @s[tag=CasBJG2] run tellraw @s [{"text":"中按键： ","color":"gray"},{"text":"中断游戏","color":"white"}]
-execute if entity @s[tag=CasBJG2] run tellraw @s [{"text":"右按键： ","color":"green"},{"text":"结束抽牌 并计算总和","color":"white"}]
+execute if entity @s[tag=CasBJG2] run tellraw @s [{text:"左按键： ",color:"red"},{text:"抽牌 （最多五次）",color:"white"}]
+execute if entity @s[tag=CasBJG2] run tellraw @s [{text:"中按键： ",color:"gray"},{text:"中断游戏",color:"white"}]
+execute if entity @s[tag=CasBJG2] run tellraw @s [{text:"右按键： ",color:"green"},{text:"结束抽牌 并计算总和",color:"white"}]
 execute if entity @s[tag=CasBJG2] run tag @s add CasBJGGS
 execute if entity @s[tag=CasBJG2] run tag @s add CasBJG1
 execute if entity @s[tag=CasBJG2] run tag @s add Cas_BJ_OK

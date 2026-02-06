@@ -48,7 +48,7 @@ tag @s remove MG_AZR0PT
 tag @s add MG_AZR0PT_dead
 
 clear @s
-tellraw @a[distance=..230] [{"selector":"@s","color":"white"},{"text":" 阵亡了！","color":"dark_red"}]
+tellraw @a[distance=..230] [{selector:"@s",color:"white"},{text:" 阵亡了！",color:"dark_red"}]
 
 bossbar set mg:azr0_bar players @a[tag=MG_AZR0PT]
 
@@ -59,7 +59,7 @@ scoreboard players operation @s Azr0_kills /= 5 constant
 
 scoreboard players operation @s Perm_PersonSHD += @s Azr0_kills
 
-tellraw @s [{"text": "获得了","color": "light_purple","bold": false,"italic": true},{"score":{"name":"@s","objective":"Azr0_kills"},"color":"light_purple"},{"text": "影之石","color": "light_purple"}]
+tellraw @s [{"text": "获得了","color": "light_purple","bold": false,"italic": true},{"score":{"name":"@s","objective":"Azr0_kills"},color:"light_purple"},{"text": "影之石","color": "light_purple"}]
 
 scoreboard players set @s Azr0_kills 0
 

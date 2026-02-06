@@ -53,6 +53,6 @@ scoreboard players set @s rng8 0
 
 execute if score @s[scores={rng1=..0}] rng4 matches ..0 run kill @e[type=marker,tag=SEA_follow_target_marker_previous,tag=!SEA_follow_target_marker_origin]
 
-#tellraw @a[tag=SEA_follow_target] {"score":{"name":"@s","objective":"rng4"},"color":"green"}
+#tellraw @a[tag=SEA_follow_target] {"score":{"name":"@s","objective":"rng4"},color:"green"}
 
 tag @s remove SEA_follow

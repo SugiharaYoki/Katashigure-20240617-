@@ -42,10 +42,10 @@ effect give @a[tag=OneShotGaming] regeneration 5 9 true
 effect give @a[tag=OneShotGaming] saturation 5 9 true
 effect give @a[tag=OneShotGaming] absorption 3 9 false
 effect give @a[tag=OneShotGaming] slowness 2 29 false
-tellraw @a[tag=OneShotGaming] [{"text":"游戏开始……","color":"green","bold":true}]
-give @a[tag=OneShotGaming] bow[unbreakable={},enchantments={power:50,infinity:1},custom_name='{"text":"猎击弓","italic":false,"color":"white"}']
-give @a[tag=OneShotGaming] shield[damage=334,custom_name='{"text":"盾牌","italic":false,"color":"white"}']
-give @a[tag=OneShotGaming] iron_sword[unbreakable={},enchantments={sharpness:60},custom_name='{"text":"蝴蝶刀·大马士革钢（崭新出厂）","italic":false,"color":"white"}']
+tellraw @a[tag=OneShotGaming] [{text:"游戏开始……",color:"green","bold":true}]
+give @a[tag=OneShotGaming] bow[unbreakable={},enchantments={power:50,infinity:1},custom_name='{text:"猎击弓","italic":false,color:"white"}']
+give @a[tag=OneShotGaming] shield[damage=334,custom_name='{text:"盾牌","italic":false,color:"white"}']
+give @a[tag=OneShotGaming] iron_sword[unbreakable={},enchantments={sharpness:60},custom_name='{text:"蝴蝶刀·大马士革钢（崭新出厂）","italic":false,color:"white"}']
 give @a[tag=OneShotGaming] arrow 64
 give @a[tag=OneShotGaming] spectral_arrow 1
 give @a[tag=OneShotGaming] apple 8

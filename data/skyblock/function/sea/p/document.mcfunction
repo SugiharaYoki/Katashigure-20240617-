@@ -126,7 +126,7 @@ execute if items entity @s container.* *[custom_data={sea_docg50:true}] run func
 
 
 
-execute if items entity @s container.* flow_banner_pattern run tellraw @s {"text":"档案已收录","color":"green"}
+execute if items entity @s container.* flow_banner_pattern run tellraw @s {text:"档案已收录",color:"green"}
 
 
 clear @s flow_banner_pattern

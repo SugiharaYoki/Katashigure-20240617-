@@ -22,7 +22,7 @@ setblock 50048 1 50096 structure_block{ignoreEntities:0b,powered:0b,rotation:"NO
 setblock 50048 0 50096 redstone_block
 fill 50048 0 50096 50048 1 50096 air
 
-title @a actionbar {"text":"空岛战争： 腐败的祭坛","bold":true,"color":"blue"}
+title @a actionbar {text:"空岛战争： 腐败的祭坛","bold":true,color:"blue"}
 
 setblock 50064 10 50006 stone
 setblock 50108 10 50054 stone

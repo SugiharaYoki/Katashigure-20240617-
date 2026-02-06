@@ -17,7 +17,7 @@ execute if score @s AzrPlayer_CurrentArea matches 7 if block ~0.2 ~0.22 ~ water 
 execute if score @s AzrPlayer_CurrentArea matches 7 if block ~-0.2 ~0.22 ~ water run effect give @s poison 3 1 false
 
 #打印剧情
-execute if items entity @s container.* skull_banner_pattern run tellraw @a[tag=azrShowDialog] [{"selector":"@s"},{"text":"解锁了剧情"}]
+execute if items entity @s container.* skull_banner_pattern run tellraw @a[tag=azrShowDialog] [{selector:"@s"},{text:"解锁了剧情"}]
 execute if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:custom_name" run tellraw @a[tag=azrShowDialog] [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:custom_name\"","entity":"@s","interpret":true}]
 execute if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[0] run tellraw @a[tag=azrShowDialog] [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[0]","entity":"@s","interpret":true}]
 execute if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[1] run tellraw @a[tag=azrShowDialog] [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[1]","entity":"@s","interpret":true}]
@@ -28,14 +28,14 @@ execute if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].compo
 execute if items entity @s container.* skull_banner_pattern run clear @s minecraft:skull_banner_pattern
 
 #DEBUG-错误信息
-execute if items entity @s weapon.mainhand *[custom_data~{Error:1b}] run tellraw @a[tag=azrShowDialog] [{"text":"\n=============\n"},\
-{"text":"游戏发生错误，请将此信息截图并发送给管理员以协助解决此错误\n"},\
-{"text":"\nstage"},{"score":{"name":"stage","objective":"Azr_system"}},\
-{"text":"\nstageSeconds"},{"score":{"name":"stageSeconds","objective":"Azr_system"}},\
-{"text":"\nstopSeconds"},{"score":{"name":"stopSeconds","objective":"Azr_system"}},\
-{"text":"\nplayerCount"},{"score":{"name":"playerCount","objective":"Azr_system"}},\
-{"text":"\nmobCount"},{"score":{"name":"mobCount","objective":"Azr_system"}},\
-{"text":"\n=============\n"}]
+execute if items entity @s weapon.mainhand *[custom_data~{Error:1b}] run tellraw @a[tag=azrShowDialog] [{text:"\n=============\n"},\
+{text:"游戏发生错误，请将此信息截图并发送给管理员以协助解决此错误\n"},\
+{text:"\nstage"},{"score":{"name":"stage","objective":"Azr_system"}},\
+{text:"\nstageSeconds"},{"score":{"name":"stageSeconds","objective":"Azr_system"}},\
+{text:"\nstopSeconds"},{"score":{"name":"stopSeconds","objective":"Azr_system"}},\
+{text:"\nplayerCount"},{"score":{"name":"playerCount","objective":"Azr_system"}},\
+{text:"\nmobCount"},{"score":{"name":"mobCount","objective":"Azr_system"}},\
+{text:"\n=============\n"}]
 
 #护身符
 execute if items entity @s player.cursor *[custom_data~{azr_amulet_pacemaker:1b}] run function skyblock:azr/system/player/skills/amulet/pacemaker_switch_mode_safe

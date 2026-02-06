@@ -1,1 +1,1 @@
-execute positioned 90099 123 148 run tellraw @a[distance=0..5] {"text":"联络机台：“……”","color":"dark_purple"}
+execute positioned 90099 123 148 run tellraw @a[distance=0..5] {text:"联络机台：“……”",color:"dark_purple"}

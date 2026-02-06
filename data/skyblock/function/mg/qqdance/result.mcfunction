@@ -1,7 +1,7 @@
-tellraw @s[tag=MG_qqd_st_gamemode_1] [{"text":"舞蹈结束！","color":"green","bold":true},{"text":"\n完成了一场出色的舞蹈！","color":"white","bold":false}]
-tellraw @s[tag=MG_qqd_st_gamemode_2] [{"text":"舞蹈排练结束！","color":"green","bold":true},{"text":"\n辛苦了！","color":"white","bold":false}]
+tellraw @s[tag=MG_qqd_st_gamemode_1] [{text:"舞蹈结束！",color:"green","bold":true},{text:"\n完成了一场出色的舞蹈！",color:"white","bold":false}]
+tellraw @s[tag=MG_qqd_st_gamemode_2] [{text:"舞蹈排练结束！",color:"green","bold":true},{text:"\n辛苦了！",color:"white","bold":false}]
 
-tellraw @a [{"selector":"@s","color":"green"},{"text":"达成一舞！","color":"gray"}]
+tellraw @a [{selector:"@s",color:"green"},{text:"达成一舞！",color:"gray"}]
 
 function skyblock:city/id/read
 #qq炫舞长期修改长期更改更新

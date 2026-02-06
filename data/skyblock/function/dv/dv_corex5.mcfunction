@@ -125,7 +125,7 @@ execute as @e[type=!player,type=!villager,tag=150MAXHP,limit=1,scores={Health=0.
 
 
 #余额提示
-execute if entity @n[tag=sc,scores={SeGa_DVTimer=10..}] as @a[tag=SeGa_DVA] at @s run title @s actionbar [{"text":"绿宝石： ","color":"green"},{"color":"green","score":{"name":"@s","objective":"Temp_PersonDVS"}},{"text":"   钻石： ","color":"aqua"},{"color":"aqua","score":{"name":"@s","objective":"Temp_PersonDVSt"}}]
+execute if entity @n[tag=sc,scores={SeGa_DVTimer=10..}] as @a[tag=SeGa_DVA] at @s run title @s actionbar [{text:"绿宝石： ",color:"green"},{color:"green","score":{"name":"@s","objective":"Temp_PersonDVS"}},{text:"   钻石： ",color:"aqua"},{color:"aqua","score":{"name":"@s","objective":"Temp_PersonDVSt"}}]
 
 
 #凋零力场

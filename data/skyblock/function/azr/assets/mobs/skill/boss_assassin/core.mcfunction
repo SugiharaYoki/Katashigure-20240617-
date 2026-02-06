@@ -56,7 +56,7 @@ execute if score @s AzrEntityTimer matches 1999 if entity @n[tag=AzrielBossAssas
 execute if score @s AzrEntityTimer matches 100..1999 unless entity @n[tag=AzrielBossAssassin] run scoreboard players set @s AzrEntityTimer 2000
 execute if score @s AzrEntityTimer matches 2001 run stopsound @a[tag=azrShowDialog]
 execute if score @s AzrEntityTimer matches 2001 run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 10 0.7
-execute if score @s AzrEntityTimer matches 2011 run title @a[tag=azrShowDialog] actionbar {"text":"Extra Boss Annihilated","color":"green"}
+execute if score @s AzrEntityTimer matches 2011 run title @a[tag=azrShowDialog] actionbar {text:"Extra Boss Annihilated",color:"green"}
 execute if score @s AzrEntityTimer matches 2011 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/sub_boss_assassin
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/back_dodge
 execute if score @s AzrEntityTimer matches 2011 run bossbar remove azr:boss_hp_bar_assassin
