@@ -72,7 +72,7 @@ execute if score stage_main_thread AzrTimerStack matches 310 run fill -79931 38 
 execute if score stage_main_thread AzrTimerStack matches 310 run scoreboard players set stage Azr_system 5
 execute if score stage_main_thread AzrTimerStack matches 310 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..1}] Azr_skillPoints 2
 execute if score stage_main_thread AzrTimerStack matches 310 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage2
-execute if score stage_main_thread AzrTimerStack matches 310 positioned -79931 38 25 run summon minecraft:glow_item_frame ~ ~ ~ {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:nether_star",components:{custom_name:'{text:"下界命星",color:"yellow",italic:0b},custom_data:{revival_star:true},custom_model_data:{floats:[100001.0]}}}}
+execute if score stage_main_thread AzrTimerStack matches 310 positioned -79931 38 25 run summon minecraft:glow_item_frame ~ ~ ~ {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:nether_star",components:{custom_name:{text:"下界命星",color:"yellow",italic:0b},custom_data:{revival_star:true},custom_model_data:{floats:[100001.0]}}}}
 
 
 
