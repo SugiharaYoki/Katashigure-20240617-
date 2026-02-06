@@ -41,4 +41,4 @@ setblock 50457 41 50469 polished_diorite
 setblock 50458 49 50443 prismarine_bricks
 summon minecraft:end_crystal 50460 43 50460 {}
 
-title @a actionbar {text:"空岛战争： 献堂的圣咏","bold":true,color:"blue"}
+title @a actionbar {text:"空岛战争： 献堂的圣咏",bold:true,color:"blue"}

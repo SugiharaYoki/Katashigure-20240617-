@@ -31,8 +31,8 @@ execute if score SEA_ch6_f2 rng2 matches 12 run setblock 90142 157 143 glass
 execute if score SEA_ch6_f2 rng2 matches 16.. positioned 90150 157 129 if entity @n[tag=SEAmob,type=warden,distance=0..50] run scoreboard players set SEA_ch6_f2 rng2 1
 
 
-execute if score SEA_ch6_f2 rng1 matches 12 if score SEA_ch5_event_fiona_favor rng1 matches 4..9 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=1}] run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green","bold": true},{text:"\n“我靠，这是个什么东西？！”",color:"white","bold": false}]
-execute if score SEA_ch6_f2 rng1 matches 12 if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=1}] run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green","bold": true},{text:"\n“我靠，这是个什么东西？！危险，躲到我身后！！”",color:"white","bold": false}]
+execute if score SEA_ch6_f2 rng1 matches 12 if score SEA_ch5_event_fiona_favor rng1 matches 4..9 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=1}] run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold: true},{text:"\n“我靠，这是个什么东西？！”",color:"white",bold: false}]
+execute if score SEA_ch6_f2 rng1 matches 12 if score SEA_ch5_event_fiona_favor rng1 matches 10.. as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=1}] run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold: true},{text:"\n“我靠，这是个什么东西？！危险，躲到我身后！！”",color:"white",bold: false}]
 
 
 

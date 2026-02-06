@@ -32,7 +32,7 @@ setblock 50048 1 50448 structure_block{ignoreEntities:0b,powered:0b,rotation:"NO
 setblock 50048 0 50448 redstone_block
 fill 50048 1 50448 50048 0 50448 air
 
-title @a actionbar {text:"空岛战争： 沉默的亚特兰蒂斯","bold":true,color:"blue"}
+title @a actionbar {text:"空岛战争： 沉默的亚特兰蒂斯",bold:true,color:"blue"}
 fill 50121 40 50534 50025 40 50410 water replace minecraft:blue_concrete
 fill 50141 31 50554 50000 31 50400 water replace minecraft:blue_concrete
 summon guardian 50073 30 50472

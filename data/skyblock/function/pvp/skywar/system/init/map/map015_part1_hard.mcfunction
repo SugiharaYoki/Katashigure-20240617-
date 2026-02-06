@@ -18,7 +18,7 @@ clone -9810 46 -9895 -9695 81 -9889 50010 0 50115 masked
 clone -9810 46 -9888 -9695 81 -9882 50010 0 50122 masked
 forceload remove -9810 -10000 -9695 -9882
 
-title @a actionbar {text:"空岛战争： 浮岛空舰站","bold":true,color:"blue"}
+title @a actionbar {text:"空岛战争： 浮岛空舰站",bold:true,color:"blue"}
 forceload add 50000 50000 50200 50200
 fillbiome 50000 0 50000 50180 1 50180 snowy_taiga
 fillbiome 50000 2 50000 50180 3 50180 snowy_taiga

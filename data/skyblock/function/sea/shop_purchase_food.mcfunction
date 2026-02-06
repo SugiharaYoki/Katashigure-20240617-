@@ -10,12 +10,12 @@ execute if entity @s[scores={rng1=18..19},tag=e_w_51_eternal] run give @s bread
 execute if entity @s[scores={rng1=18..19},tag=!e_w_51_eternal] run give @s rotten_flesh
 execute if entity @s[scores={rng1=20..21}] run give @s golden_carrot
 
-execute if entity @s[scores={rng1=1..4}] run tellraw @a[gamemode=spectator,distance=0..20] [{text:" - 获得土豆","bold":true,color:"green"}]
-execute if entity @s[scores={rng1=5..8}] run tellraw @a[gamemode=spectator,distance=0..20] [{text:" - 获得胡萝卜","bold":true,color:"green"}]
-execute if entity @s[scores={rng1=9..12}] run tellraw @a[gamemode=spectator,distance=0..20] [{text:" - 获得苹果","bold":true,color:"green"}]
-execute if entity @s[scores={rng1=13..17}] run tellraw @a[gamemode=spectator,distance=0..20] [{text:" - 理所当然地获得了面包","bold":true,color:"green"}]
-execute if entity @s[scores={rng1=18..19},tag=!e_w_51_eternal] run tellraw @a[gamemode=spectator,distance=0..20] [{text:" - 理所当然地获得了面包","bold":true,color:"green"}]
-execute if entity @s[scores={rng1=18..19},tag=e_w_51_eternal] run tellraw @a[gamemode=spectator,distance=0..20] [{text:" - 不幸获得腐肉","bold":true,color:"red"}]
-execute if entity @s[scores={rng1=20..21}] run tellraw @a[gamemode=spectator,distance=0..20] [{text:" - 获得金萝卜！欧皇！","bold":true,color:"gold"}]
+execute if entity @s[scores={rng1=1..4}] run tellraw @a[gamemode=spectator,distance=0..20] [{text:" - 获得土豆",bold:true,color:"green"}]
+execute if entity @s[scores={rng1=5..8}] run tellraw @a[gamemode=spectator,distance=0..20] [{text:" - 获得胡萝卜",bold:true,color:"green"}]
+execute if entity @s[scores={rng1=9..12}] run tellraw @a[gamemode=spectator,distance=0..20] [{text:" - 获得苹果",bold:true,color:"green"}]
+execute if entity @s[scores={rng1=13..17}] run tellraw @a[gamemode=spectator,distance=0..20] [{text:" - 理所当然地获得了面包",bold:true,color:"green"}]
+execute if entity @s[scores={rng1=18..19},tag=!e_w_51_eternal] run tellraw @a[gamemode=spectator,distance=0..20] [{text:" - 理所当然地获得了面包",bold:true,color:"green"}]
+execute if entity @s[scores={rng1=18..19},tag=e_w_51_eternal] run tellraw @a[gamemode=spectator,distance=0..20] [{text:" - 不幸获得腐肉",bold:true,color:"red"}]
+execute if entity @s[scores={rng1=20..21}] run tellraw @a[gamemode=spectator,distance=0..20] [{text:" - 获得金萝卜！欧皇！",bold:true,color:"gold"}]
 
 #tag @s remove e_w_51_eternal

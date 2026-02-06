@@ -20,8 +20,8 @@ scoreboard players add @n[tag=MG_WARBRIDGE_anchor] rng9 1
 
 execute if score @n[tag=MG_WARBRIDGE_anchor] rng9 matches 40 run tellraw @a[tag=mg_warbridge] [{text:"在狭窄的通路上与敌方作战！\n你可以往任何方向搭建新的结构。",color:"aqua"}]
 execute if score @n[tag=MG_WARBRIDGE_anchor] rng9 matches 140 run tellraw @a[tag=mg_warbridge] [{text:"你在身处友方的出生点时接近无敌，\n利用这一特性，在对局过程中进行适当的调整吧！",color:"aqua"}]
-execute if score @n[tag=MG_WARBRIDGE_anchor] rng9 matches 6000 run tellraw @a[tag=mg_warbridge] [{text:"近战必杀阶段即将开始……",color:"aqua","bold":true}]
+execute if score @n[tag=MG_WARBRIDGE_anchor] rng9 matches 6000 run tellraw @a[tag=mg_warbridge] [{text:"近战必杀阶段即将开始……",color:"aqua",bold:true}]
 execute if score @n[tag=MG_WARBRIDGE_anchor] rng9 matches 6600.. run effect give @a[tag=mg_warbridge] strength 30 199 true
-execute if score @n[tag=MG_WARBRIDGE_anchor] rng9 matches 6600 run tellraw @a[tag=mg_warbridge] [{text:"此刻开始，近战必杀！",color:"aqua","bold":true}]
+execute if score @n[tag=MG_WARBRIDGE_anchor] rng9 matches 6600 run tellraw @a[tag=mg_warbridge] [{text:"此刻开始，近战必杀！",color:"aqua",bold:true}]
 
-title @a[tag=mg_warbridge] actionbar [{text:"绿队生命 ",color:"green","bold": true},{"score":{"name":"@n[tag=MG_WARBRIDGE_anchor]","objective":"rng1"},"color": "green","bold": true},{text:" || ",color:"white","bold": true},{"score":{"name":"@n[tag=MG_WARBRIDGE_anchor]","objective":"rng2"},"color": "red","bold": true},{text:" 红队生命",color:"red","bold": true}]
+title @a[tag=mg_warbridge] actionbar [{text:"绿队生命 ",color:"green",bold: true},{"score":{"name":"@n[tag=MG_WARBRIDGE_anchor]","objective":"rng1"},"color": "green",bold: true},{text:" || ",color:"white",bold: true},{"score":{"name":"@n[tag=MG_WARBRIDGE_anchor]","objective":"rng2"},"color": "red",bold: true},{text:" 红队生命",color:"red",bold: true}]

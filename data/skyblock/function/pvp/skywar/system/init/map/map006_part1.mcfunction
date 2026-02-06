@@ -98,5 +98,5 @@ fill 29200 72 29220 29300 75 29300 air
 fill 29200 76 29220 29300 79 29300 air
 fill 29200 80 29220 29300 83 29300 air
 #
-title @a actionbar {text:"加载进度0/30 地图： 浮游要塞伊什塔尔","bold":true,color:"blue"}
+title @a actionbar {text:"加载进度0/30 地图： 浮游要塞伊什塔尔",bold:true,color:"blue"}
 kill @e[x=29300,y=50,z=29300,distance=0..200]

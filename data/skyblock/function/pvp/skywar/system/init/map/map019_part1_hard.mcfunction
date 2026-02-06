@@ -31,7 +31,7 @@ setblock 50096 18 50096 structure_block{ignoreEntities:0b,powered:0b,rotation:"N
 setblock 50096 17 50096 redstone_block
 fill 50096 17 50096 50096 18 50096 air
 
-title @a actionbar {text:"空岛战争： 失色园","bold":true,color:"blue"}
+title @a actionbar {text:"空岛战争： 失色园",bold:true,color:"blue"}
 
 fillbiome 50000 10 50000 50180 11 50180 pale_garden
 fillbiome 50000 12 50000 50180 13 50180 pale_garden

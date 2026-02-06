@@ -1,1 +1,1 @@
-give @s bow[custom_name='{text:"弓","italic":false}',custom_data={bow_normal:1b}]
+give @s bow[custom_name='{text:"弓",italic:false}',custom_data={bow_normal:1b}]

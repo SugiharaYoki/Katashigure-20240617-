@@ -36,7 +36,7 @@ clone -8810 94 -9888 -8692 103 -9882 50010 46 50122 masked
 forceload remove -8810 -10000 -8692 -9882
 
 
-title @a actionbar {text:"空岛战争： 碎晦坍殒的地灵脉","bold":true,color:"blue"}
+title @a actionbar {text:"空岛战争： 碎晦坍殒的地灵脉",bold:true,color:"blue"}
 forceload add 50000 50000 50200 50200
 fillbiome 50000 0 50000 50180 1 50180 mangrove_swamp
 fillbiome 50000 2 50000 50180 3 50180 mangrove_swamp

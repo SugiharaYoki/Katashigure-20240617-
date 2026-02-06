@@ -9,8 +9,8 @@ execute if score SEA_ch5_event_boss5 rng1 matches 0..20 run playsound ambient.so
 scoreboard players add SEA_ch5_event_boss5 rng1 1
 
 execute if score SEA_ch5_event_boss5 rng1 matches 80 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score SEA_ch5_event_boss5 rng1 matches 80 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..15 run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green","bold": true},{text:"\n“这家伙的样子……是不是有点不太对劲？”",color:"white","bold": false}]
-execute if score SEA_ch5_event_boss5 rng1 matches 80 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 16.. run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green","bold": true},{text:"\n“我有不太好的预感，这家伙的样子不对劲。”",color:"white","bold": false}]
+execute if score SEA_ch5_event_boss5 rng1 matches 80 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..15 run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold: true},{text:"\n“这家伙的样子……是不是有点不太对劲？”",color:"white",bold: false}]
+execute if score SEA_ch5_event_boss5 rng1 matches 80 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 16.. run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold: true},{text:"\n“我有不太好的预感，这家伙的样子不对劲。”",color:"white",bold: false}]
 
 
 execute if score SEA_ch5_event_boss5 rng1 matches 20..120 store result score @s sea_4temp3 run random value 1..400
@@ -91,7 +91,7 @@ execute if score SEA_ch5_event_boss5 rng1 matches 278 as @n[tag=SEAboss5b] at @s
 execute if score SEA_ch5_event_boss5 rng1 matches 278 as @n[tag=SEAboss5b] at @s run kill @n[tag=SEAboss5,type=zombie_villager]
 
 execute if score SEA_ch5_event_boss5 rng1 matches 224 as @n[tag=SEAboss5] at @s run title @a[distance=0..200] times 0 40 10
-execute if score SEA_ch5_event_boss5 rng1 matches 224 as @n[tag=SEAboss5] at @s run title @a[distance=0..200] title {"text": "愚妄的凡人 胆敢拟吾神力","bold": false, "color": "white"}
+execute if score SEA_ch5_event_boss5 rng1 matches 224 as @n[tag=SEAboss5] at @s run title @a[distance=0..200] title {"text": "愚妄的凡人 胆敢拟吾神力",bold: false, "color": "white"}
 execute if score SEA_ch5_event_boss5 rng1 matches 224 as @n[tag=SEAboss5] at @s positioned 90142 134 26 as @e[type=#illager,distance=0..50,type=pillager] at @s run function skyblock:sea/e/ch5/boss5/npc_help_quit
 
 

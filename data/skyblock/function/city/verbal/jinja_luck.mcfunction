@@ -125,7 +125,7 @@ execute if score @s dailydiv4S matches ..1 run scoreboard players operation @s d
 execute store result score @s rng1 run random value 2..7
 execute if score @s dailydiv5S matches ..1 run scoreboard players operation @s dailydiv5S = @s rng1
 #告知占卜结果
-tellraw @s {text:"  『御神签』今日运势",color:"gold","bold":true}
+tellraw @s {text:"  『御神签』今日运势",color:"gold",bold:true}
 tellraw @s {text:"     - 健康 -",color:"white"}
 scoreboard players operation @s dailydiv_w = @s dailydiv1
 scoreboard players operation @s dailydiv_wy = @s dailydiv1y

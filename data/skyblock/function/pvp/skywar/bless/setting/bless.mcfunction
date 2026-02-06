@@ -1,5 +1,5 @@
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.4 0.4
-tellraw @s [{text:"选择你想使用的礼装",color:"yellow","bold": true},{text:" 共可分配四个槽位",color:"white"}]
+tellraw @s [{text:"选择你想使用的礼装",color:"yellow",bold: true},{text:" 共可分配四个槽位",color:"white"}]
 #function skyblock:pvp/skywar/bless/setting/bless_macro {bless:ishtar_bless_1,bless_name:"- 统之礼"}
 #function skyblock:pvp/skywar/bless/setting/bless_macro {bless:ishtar_bless_2,bless_name:"- 纵之礼"}
 #function skyblock:pvp/skywar/bless/setting/bless_macro {bless:ishtar_bless_3,bless_name:"- 纺之礼"}
@@ -66,4 +66,4 @@ function skyblock:city/id/read_finish
 scoreboard players set @s MultiMenu 0
 
 
-tellraw @s {text:"   [返回PVP主页]",color:"yellow",click_event:{"action":"run_command","value":"/trigger MultiMenu set 118"},hover_event:{"action":"show_text","value":{text:"返回PVP设置菜单",color:"green"}}}
+tellraw @s {text:"   [返回PVP主页]",color:"yellow",click_event:{"action":"run_command","command":"trigger MultiMenu set 118"},hover_event:{"action":"show_text","value":{text:"返回PVP设置菜单",color:"green"}}}

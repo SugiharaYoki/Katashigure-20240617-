@@ -1,1 +1,1 @@
-give @s chainmail_boots[custom_data={chainmail_boots_normal:1b},custom_name='{text:"链靴","italic":false}',attribute_modifiers=[{type:"minecraft:armor",id:"azr:chainmail_boots_normal.armor",amount:2.0,operation:"add_value",slot:"armor"}],custom_model_data={floats:[100004.0]}]
+give @s chainmail_boots[custom_data={chainmail_boots_normal:1b},custom_name='{text:"链靴",italic:false}',attribute_modifiers=[{type:"minecraft:armor",id:"azr:chainmail_boots_normal.armor",amount:2.0,operation:"add_value",slot:"armor"}],custom_model_data={floats:[100004.0]}]

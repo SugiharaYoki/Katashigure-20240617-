@@ -15,8 +15,8 @@ execute as @a[tag=SEAPT,x=90084,y=122,z=105,distance=0..1.4,tag=!e_i_12] at @s r
 execute if entity @a[tag=SEAPT,x=90095,y=122,z=130,distance=0..1.4,tag=!e_i_07,tag=!SEAPF] run summon drowned 90103 125 131 {CustomName:'[{text:"行走的腐尸"}]',DeathLootTable:"skyblock:sea_drowned1",Tags:["SEAmob"],attributes:[{id:"attack_damage",base:4.0},{id:"movement_speed",base:0.17}]}
 execute as @a[tag=SEAPT,x=90095,y=122,z=130,distance=0..1.4,tag=!e_i_07,tag=!SEAPF] at @s run fill 90097 123 148 90097 122 148 air destroy
 execute as @a[tag=SEAPT,x=90095,y=122,z=130,distance=0..1.4,tag=!e_i_07,tag=!SEAPF] at @s run tellraw @s {text:"这间房间还没被搬空，有个上锁的箱子。不知道钥匙在什么地方？",color:"gray"}
-execute as @a[tag=SEAPT,x=90095,y=122,z=130,distance=0..1.4,tag=!e_i_07,tag=!SEAPF] at @s if entity @n[tag=sc,scores={sea_player=2}] run tellraw @a[tag=SEAPT,distance=0.1..] [{selector:"@s",color:"aqua"},{text:"：",color:"aqua","bold": true},{text:"\n“文件室里好像还有留下什么，你见过钥匙吗？”",color:"white"}]
-execute as @a[tag=SEAPT,x=90095,y=122,z=130,distance=0..1.4,tag=!e_i_07,tag=!SEAPF] at @s if entity @n[tag=sc,scores={sea_player=3..}] run tellraw @a[tag=SEAPT,distance=0.1..] [{selector:"@s",color:"aqua"},{text:"：",color:"aqua","bold": true},{text:"\n“文件室里好像还有留下什么，你们谁见过钥匙？”",color:"white"}]
+execute as @a[tag=SEAPT,x=90095,y=122,z=130,distance=0..1.4,tag=!e_i_07,tag=!SEAPF] at @s if entity @n[tag=sc,scores={sea_player=2}] run tellraw @a[tag=SEAPT,distance=0.1..] [{selector:"@s",color:"aqua"},{text:"：",color:"aqua",bold: true},{text:"\n“文件室里好像还有留下什么，你见过钥匙吗？”",color:"white"}]
+execute as @a[tag=SEAPT,x=90095,y=122,z=130,distance=0..1.4,tag=!e_i_07,tag=!SEAPF] at @s if entity @n[tag=sc,scores={sea_player=3..}] run tellraw @a[tag=SEAPT,distance=0.1..] [{selector:"@s",color:"aqua"},{text:"：",color:"aqua",bold: true},{text:"\n“文件室里好像还有留下什么，你们谁见过钥匙？”",color:"white"}]
 execute if entity @a[tag=SEAPT,x=90095,y=122,z=130,distance=0..1.4,tag=!e_i_07,tag=!SEAPF] run summon drowned 90097 123 148 {CustomName:'[{text:"安全帽腐尸"}]',DeathLootTable:"skyblock:sea_drowned1",Tags:["SEAmob"],attributes:[{id:"attack_damage",base:4.0},{id:"movement_speed",base:0.17}],ArmorItems:[{},{},{},{id:iron_helmet,count:1}],ArmorDropChances:[0f,0f,0f,0f]}
 execute as @a[tag=SEAPT,x=90095,y=122,z=130,distance=0..1.4,tag=!e_i_07,tag=!SEAPF] run tag @a[tag=SEAPT] add e_i_07
 
@@ -29,7 +29,7 @@ execute if entity @a[tag=SEAPT,x=90088,y=109,z=142,distance=0..1.6,tag=!e_i_03,t
 execute as @a[tag=SEAPT,x=90088,y=109,z=142,distance=0..1.6,tag=!e_i_03,tag=!SEAPF] as @a[tag=SEAPT,tag=!e_i_03] at @s run tag @s add e_i_03
 
 execute as @a[tag=SEAPT,x=90075,y=121,z=132,distance=0..3,tag=!e_i_04] at @s run title @s times 0s 2s 2s
-execute as @a[tag=SEAPT,x=90075,y=121,z=132,distance=0..3,tag=!e_i_04] at @s run title @s title {"text": "维 修 层","color": "white","bold": true}
+execute as @a[tag=SEAPT,x=90075,y=121,z=132,distance=0..3,tag=!e_i_04] at @s run title @s title {"text": "维 修 层","color": "white",bold: true}
 #execute as @a[tag=SEAPT,x=90075,y=121,z=132,distance=0..3,tag=!e_i_04] at @s run title @s subtitle {"text": "厄珀娅的悲歌 第壹章","color": "gray"}
 execute as @a[tag=SEAPT,x=90075,y=121,z=132,distance=0..3,tag=!e_i_04] at @s run playsound ambient.underwater.loop master @s ~ ~ ~ 100 0.8
 execute as @a[tag=SEAPT,x=90075,y=121,z=132,distance=0..3,tag=!e_i_04] at @s run playsound ambient.underwater.loop master @s ~ ~ ~ 100 1.2
@@ -53,7 +53,7 @@ execute as @n[tag=sc,scores={sea_4temp3=1..7}] run playsound minecraft:ambient.n
 execute as @n[tag=sc,scores={sea_4temp3=1}] run fill 90110 124 134 90109 124 134 iron_block
 execute as @n[tag=sc,scores={sea_4temp3=3}] run fill 90110 123 134 90109 123 134 iron_block
 execute as @n[tag=sc,scores={sea_4temp3=5}] run fill 90110 122 134 90109 122 134 iron_block
-execute as @n[tag=sc,scores={sea_4temp3=5}] as @p[tag=SEAPT,x=90110,y=123,z=136] at @s run tellraw @a[tag=SEAPT,distance=0.1..] [{selector:"@s",color:"aqua"},{text:"：",color:"aqua","bold": true},{text:"\n“有人听得到吗？！我这里的铁门被放下来了，怪物在围攻我！！”",color:"white"}]
+execute as @n[tag=sc,scores={sea_4temp3=5}] as @p[tag=SEAPT,x=90110,y=123,z=136] at @s run tellraw @a[tag=SEAPT,distance=0.1..] [{selector:"@s",color:"aqua"},{text:"：",color:"aqua",bold: true},{text:"\n“有人听得到吗？！我这里的铁门被放下来了，怪物在围攻我！！”",color:"white"}]
 execute as @n[tag=sc,scores={sea_4temp3=1}] run playsound minecraft:block.iron_door.open ambient @a 90109 125 134 4 0.3
 execute as @n[tag=sc,scores={sea_4temp3=3}] run playsound minecraft:block.iron_door.open ambient @a 90109 125 134 4 0.3
 execute as @n[tag=sc,scores={sea_4temp3=5}] run playsound minecraft:block.iron_door.open ambient @a 90109 125 134 4 0.3
@@ -79,15 +79,15 @@ execute if block 90089 128 124 minecraft:waxed_copper_door[open=true] run setblo
 execute if block 90089 128 124 minecraft:waxed_copper_door[open=true] run setblock 90091 128 127 minecraft:red_candle[candles=1,lit=true]
 
 
-execute positioned 90094 122 135 as @a[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_48] at @s if items entity @s container.* lever run tellraw @s [{"text": " - 游戏指引 -","color": "green","bold": true},{"text": " 开关可以通过鼠标右键放置在某些特殊的方块上。","color": "white","bold": false},{"text": " 在这间房间的铁门旁存在着一块特殊的墙面，试着将开关放置上去吧。","color": "white","bold": false}]
+execute positioned 90094 122 135 as @a[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_48] at @s if items entity @s container.* lever run tellraw @s [{"text": " - 游戏指引 -","color": "green",bold: true},{"text": " 开关可以通过鼠标右键放置在某些特殊的方块上。","color": "white",bold: false},{"text": " 在这间房间的铁门旁存在着一块特殊的墙面，试着将开关放置上去吧。","color": "white",bold: false}]
 execute positioned 90094 122 135 as @a[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_48] at @s if items entity @s container.* lever run tag @s add e_i_48
-execute positioned 90094 122 135 as @a[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_49] at @s if block 90084 124 139 air run tellraw @s [{"text": " - 游戏指引 -","color": "green","bold": true},{"text": " 你成功打开了通往下一间房间的防护门。","color": "white","bold": false},{"text": " 在继续前进之前，你需要得到一把称手的武器。","color": "white","bold": false},{"text": " 试着使用鼠标左键敲下墙上的撬棍，使用撬棍来保护自己。","color": "white","bold": false}]
+execute positioned 90094 122 135 as @a[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_49] at @s if block 90084 124 139 air run tellraw @s [{"text": " - 游戏指引 -","color": "green",bold: true},{"text": " 你成功打开了通往下一间房间的防护门。","color": "white",bold: false},{"text": " 在继续前进之前，你需要得到一把称手的武器。","color": "white",bold: false},{"text": " 试着使用鼠标左键敲下墙上的撬棍，使用撬棍来保护自己。","color": "white",bold: false}]
 execute positioned 90094 122 135 as @a[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_49] at @s if block 90084 124 139 air run tag @s add e_i_49
 
-execute positioned 90094 122 135 as @p[distance=0..3.5,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_50] run tellraw @s [{"text": " - 游戏指引 -","color": "green","bold": true},{"text": " 你可以在多功能工作站购买物品或升级装备。","color": "white","bold": false},{"text": " 多功能工作站分为操作台与储存箱上下两层，皆可通过右键开启。","color": "white","bold": false},{"text": " 右键上层会在左下角的聊天框弹出装备操作界面，右键下层则会出现购买消耗品的弹窗。","color": "white","bold": false}]
+execute positioned 90094 122 135 as @p[distance=0..3.5,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_50] run tellraw @s [{"text": " - 游戏指引 -","color": "green",bold: true},{"text": " 你可以在多功能工作站购买物品或升级装备。","color": "white",bold: false},{"text": " 多功能工作站分为操作台与储存箱上下两层，皆可通过右键开启。","color": "white",bold: false},{"text": " 右键上层会在左下角的聊天框弹出装备操作界面，右键下层则会出现购买消耗品的弹窗。","color": "white",bold: false}]
 execute positioned 90094 122 135 as @p[distance=0..3.5,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_50] run tag @s add e_i_50
 
-execute positioned 90094 122 135 as @a[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_51] at @s if items entity @s container.* trial_key run tellraw @s [{"text": " - 游戏指引 -","color": "green","bold": true},{"text": " 手握部分道具时右键某些容器，可以打开它们的锁。","color": "white","bold": false},{"text": " 并不是每一把钥匙都必定有用，这点需要切记。","color": "white","bold": false}]
+execute positioned 90094 122 135 as @a[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_51] at @s if items entity @s container.* trial_key run tellraw @s [{"text": " - 游戏指引 -","color": "green",bold: true},{"text": " 手握部分道具时右键某些容器，可以打开它们的锁。","color": "white",bold: false},{"text": " 并不是每一把钥匙都必定有用，这点需要切记。","color": "white",bold: false}]
 execute positioned 90094 122 135 as @a[distance=0..600,tag=SEAPT,scores={sea_progress=..1},tag=!e_i_51] at @s if items entity @s container.* trial_key run tag @s add e_i_51
 
 execute as 10e959db-4b44-4cdd-b98c-350d3b454206 unless entity @s[scores={sea_4temp2=-9999..}] run scoreboard players set @s sea_4temp2 0
@@ -139,7 +139,7 @@ execute as @n[tag=sc,scores={sea_4temp2=5058}] run playsound minecraft:block.iro
 execute as @n[tag=sc,scores={sea_4temp2=5054}] run fill 90076 122 121 90076 122 123 air
 execute as @n[tag=sc,scores={sea_4temp2=5056}] run fill 90076 123 121 90076 123 123 air
 execute as @n[tag=sc,scores={sea_4temp2=5058}] run fill 90076 124 121 90076 124 123 air
-execute as @n[tag=sc,scores={sea_4temp2=5065}] as @a[tag=SEAPT] at @s run tellraw @s {text:"『厄珀娅的悲歌』第一章 完",color:"blue","bold": true}
+execute as @n[tag=sc,scores={sea_4temp2=5065}] as @a[tag=SEAPT] at @s run tellraw @s {text:"『厄珀娅的悲歌』第一章 完",color:"blue",bold: true}
 #execute as @n[tag=sc,scores={sea_4temp2=5065}] as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1 0.9
 execute as @n[tag=sc,scores={sea_4temp2=5065}] positioned 90076 123 122 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
 execute as @n[tag=sc,scores={sea_4temp2=5065}] positioned 90113 128 113 run function skyblock:sea/m/destination

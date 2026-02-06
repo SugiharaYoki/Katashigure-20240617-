@@ -1,11 +1,11 @@
 execute as @s[tag=SEAch3_spawn_timer7,scores={sea_4temp1=1}] positioned 90133 137 108 as @p[tag=SEAPT] \
- run tellraw @a[distance=0..250] [{text:"邪教徒：",color:"red","bold": true},{text:"\n“警报，警报！他们打过来了！！准备迎战！”",color:"white","bold": false}]
+ run tellraw @a[distance=0..250] [{text:"邪教徒：",color:"red",bold: true},{text:"\n“警报，警报！他们打过来了！！准备迎战！”",color:"white",bold: false}]
  execute as @s[tag=SEAch3_spawn_timer7,scores={sea_4temp1=33}] positioned 90133 137 108 as @p[tag=SEAPT] \
- run tellraw @a[distance=0..250] [{text:"邪教徒：",color:"red","bold": true},{text:"\n“敌人很顽强，小心作战！！”",color:"white","bold": false}]
+ run tellraw @a[distance=0..250] [{text:"邪教徒：",color:"red",bold: true},{text:"\n“敌人很顽强，小心作战！！”",color:"white",bold: false}]
  execute as @s[tag=SEAch3_spawn_timer7,scores={sea_4temp1=80}] positioned 90133 137 108 as @p[tag=SEAPT] \
- run tellraw @a[distance=0..250] [{text:"邪教徒：",color:"red","bold": true},{text:"\n“主战兵力出动，不能再让他们抢到更多设施！”",color:"white","bold": false}]
+ run tellraw @a[distance=0..250] [{text:"邪教徒：",color:"red",bold: true},{text:"\n“主战兵力出动，不能再让他们抢到更多设施！”",color:"white",bold: false}]
  execute as @s[tag=SEAch3_spawn_timer7,scores={sea_4temp1=30}] positioned 90133 137 108 as @p[tag=SEAPT] \
- run tellraw @a[distance=0..250] [{text:"邪教徒：",color:"red","bold": true},{text:"\n“主战兵力出动，不能再让他们抢到更多设施！”",color:"white","bold": false}]
+ run tellraw @a[distance=0..250] [{text:"邪教徒：",color:"red",bold: true},{text:"\n“主战兵力出动，不能再让他们抢到更多设施！”",color:"white",bold: false}]
 
 execute as @s[tag=SEAch3_spawn_timer7,scores={sea_4temp1=1}] positioned 90133 137 108 as @a[distance=0..300] at @s run playsound garden2.bgm.002 music @s ~ ~ ~ 0.7 1.0
 

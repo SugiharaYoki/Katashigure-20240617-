@@ -10,7 +10,7 @@ execute as @a[tag=SEAPT] at @s[scores={SEAPT_setting_recall=2}] run tag @s add s
 
 scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp2 400
 
-item replace entity @a[tag=SEAPT] inventory.19 with music_disc_5[custom_name='{text:"磁锯发射装置","italic":false,color:"red"}',custom_data={sea_flamethrower:true},unbreakable={}]
+item replace entity @a[tag=SEAPT] inventory.19 with music_disc_5[custom_name='{text:"磁锯发射装置",italic:false,color:"red"}',custom_data={sea_flamethrower:true},unbreakable={}]
 
 give @a[tag=SEAPT] arrow 10
 give @a[tag=SEAPT] disc_fragment_5 3
