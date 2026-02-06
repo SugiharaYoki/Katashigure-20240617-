@@ -25,9 +25,9 @@ execute if score @s Azr_Login_Day_Strike matches 8..12 store result score @s rng
 execute if score @s Azr_Login_Day_Strike matches 13..18 store result score @s rng1 run random value 8..23
 execute if score @s Azr_Login_Day_Strike matches 19.. store result score @s rng1 run random value 11..25
 
-execute if score @s rng1 matches 1..10 run give @s light_gray_shulker_box[custom_name={text:"每日奖励 · 普通",italic:0b,color:"#ebbe1a",bold:1b},lore=[{text:"每日奖励",italic:0b,color:"#f3db86",bold:1b},{text:"快点打开看看有什么吧！",italic:0b,color:"#f3db86"},{text:""},{text:"希望会获得有用的道具。",italic:1b,color:"#586371"}],custom_data={azr_loginbonus:1b,azr_loginbonus_level_1:1b}]
-execute if score @s rng1 matches 11..20 run give @s green_shulker_box[custom_name={text:"每日奖励 · 珍贵",italic:0b,color:"#ebbe1a",bold:1b},lore=[{text:"每日奖励！",italic:0b,color:"#f3db86",bold:1b},{text:"快点打开看看有什么吧！",italic:0b,color:"#f3db86"},{text:""},{text:"应该会获得很有用的道具。",italic:1b,color:"#586371"}],custom_data={azr_loginbonus:1b,azr_loginbonus_level_2:1b}]
-execute if score @s rng1 matches 21..30 run give @s yellow_shulker_box[custom_name={text:"每日奖励 · 华丽",italic:0b,color:"#ebbe1a",bold:1b},lore=[{text:"每日奖励！！",italic:0b,color:"#f3db86",bold:1b},{text:"快点打开看看有什么吧！",italic:0b,color:"#f3db86"},{text:""},{text:"很大概率会获得相当有用的道具。",italic:1b,color:"#586371"}],custom_data={azr_loginbonus:1b,azr_loginbonus_level_3:1b}]
+execute if score @s rng1 matches 1..10 run give @s copper_nautilus_armor[custom_name={text:"每日奖励 · 普通",italic:0b,color:"#ebbe1a",bold:1b},lore=[{text:"每日奖励",italic:0b,color:"#f3db86",bold:1b},{text:"快点打开看看有什么吧！",italic:0b,color:"#f3db86"},{text:""},{text:"希望会获得有用的道具。",italic:1b,color:"#586371"}],custom_data={azr_loginbonus:1b,azr_loginbonus_level_1:1b}]
+execute if score @s rng1 matches 11..20 run give @s iron_nautilus_armor[custom_name={text:"每日奖励 · 珍贵",italic:0b,color:"#ebbe1a",bold:1b},lore=[{text:"每日奖励！",italic:0b,color:"#f3db86",bold:1b},{text:"快点打开看看有什么吧！",italic:0b,color:"#f3db86"},{text:""},{text:"应该会获得很有用的道具。",italic:1b,color:"#586371"}],custom_data={azr_loginbonus:1b,azr_loginbonus_level_2:1b}]
+execute if score @s rng1 matches 21..30 run give @s golden_nautilus_armor[custom_name={text:"每日奖励 · 华丽",italic:0b,color:"#ebbe1a",bold:1b},lore=[{text:"每日奖励！！",italic:0b,color:"#f3db86",bold:1b},{text:"快点打开看看有什么吧！",italic:0b,color:"#f3db86"},{text:""},{text:"很大概率会获得相当有用的道具。",italic:1b,color:"#586371"}],custom_data={azr_loginbonus:1b,azr_loginbonus_level_3:1b}]
 
 
 
