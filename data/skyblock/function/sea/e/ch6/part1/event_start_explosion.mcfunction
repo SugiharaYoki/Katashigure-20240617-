@@ -34,15 +34,15 @@ execute if score SEA_ch6_event rng1 matches 283..380 as @n[type=marker,tag=SEA_c
 execute if score SEA_ch6_event rng1 matches 380..383 as @n[type=marker,tag=SEA_ch6_explosion_poison] at @s run kill @s
 
 
-execute if score SEA_ch5_event_boss5 rng9 matches 290 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{selector:"@p[tag=SEAPT,scores={SEAPT_member=1}]",color:"aqua"},{text:"：",color:"aqua",bold: true},{text:"\n“什么动静？哪里爆炸了吗？”",color:"white"}]
+execute if score SEA_ch5_event_boss5 rng9 matches 290 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{selector:"@p[tag=SEAPT,scores={SEAPT_member=1}]",color:"aqua"},{text:"：",color:"aqua",bold:1b},{text:"\n“什么动静？哪里爆炸了吗？”",color:"white"}]
 
 execute if score SEA_ch5_event_boss5 rng9 matches 310 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score SEA_ch5_event_boss5 rng9 matches 310 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..7 run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold: true},{text:"\n“我哪知道？这破钻井平台本身就到处都在爆炸。”",color:"white",bold: false}]
-execute if score SEA_ch5_event_boss5 rng9 matches 310 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 8.. run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold: true},{text:"\n“主平台仓库上面的储油罐爆炸了，还好那里存的石油不多。”",color:"white",bold: false}]
+execute if score SEA_ch5_event_boss5 rng9 matches 310 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..7 run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold:1b},{text:"\n“我哪知道？这破钻井平台本身就到处都在爆炸。”",color:"white",bold: false}]
+execute if score SEA_ch5_event_boss5 rng9 matches 310 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 8.. run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold:1b},{text:"\n“主平台仓库上面的储油罐爆炸了，还好那里存的石油不多。”",color:"white",bold: false}]
 
 execute if score SEA_ch5_event_boss5 rng9 matches 333 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score SEA_ch5_event_boss5 rng9 matches 333 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..9 run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold: true},{text:"\n“离爆炸产生的烟远点，如果你不想被呛死。”",color:"white",bold: false}]
-execute if score SEA_ch5_event_boss5 rng9 matches 333 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 10.. run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold: true},{text:"\n“不对……那里面存的东西不太对劲。记得离爆炸产生的烟尘远一点。”",color:"white",bold: false}]
+execute if score SEA_ch5_event_boss5 rng9 matches 333 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches ..9 run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold:1b},{text:"\n“离爆炸产生的烟远点，如果你不想被呛死。”",color:"white",bold: false}]
+execute if score SEA_ch5_event_boss5 rng9 matches 333 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score SEA_ch5_event_fiona_favor rng1 matches 10.. run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold:1b},{text:"\n“不对……那里面存的东西不太对劲。记得离爆炸产生的烟尘远一点。”",color:"white",bold: false}]
 
 
-execute if score SEA_ch5_event_boss5 rng9 matches 230 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..150] [{text:"？？？：",color:"gray",bold: true},{text:"\n“你根本不知道你给我们带来了多大的麻烦。”",color:"gray",bold: false}]
+execute if score SEA_ch5_event_boss5 rng9 matches 230 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..150] [{text:"？？？：",color:"gray",bold:1b},{text:"\n“你根本不知道你给我们带来了多大的麻烦。”",color:"gray",bold: false}]

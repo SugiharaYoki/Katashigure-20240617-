@@ -1,6 +1,6 @@
 
 execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run title @s times 0s 2s 2s
-execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run title @s title {"text": "物 资 层","color": "white",bold: true}
+execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run title @s title {"text": "物 资 层","color": "white",bold:1b}
 #execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run title @s subtitle {"text": "厄珀娅的悲歌 第贰章","color": "gray"}
 execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run playsound ambient.underwater.loop master @s ~ ~ ~ 100 0.8
 execute as @a[tag=SEAPT,x=90084,y=128,z=113,distance=0..3,tag=!e_i_13] at @s run playsound ambient.underwater.loop master @s ~ ~ ~ 100 1.2
@@ -284,7 +284,7 @@ execute as @n[tag=sc,scores={sea_4temp2=5057}] as @a[tag=SEAPT] at @s unless ent
 execute as @n[tag=sc,scores={sea_4temp2=5012}] as @a[tag=SEAPT] at @s if entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/17=true}] run tellraw @s {text:"冤冤相报何时了，就算死亡、就算疯癫也无法为你们带来安息吗？",color:"gray"}
 execute as @n[tag=sc,scores={sea_4temp2=5030}] as @a[tag=SEAPT] at @s if entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/17=true}] run tellraw @s {text:"但是，我已经见证了你们的结局。",color:"gray"}
 execute as @n[tag=sc,scores={sea_4temp2=5057}] as @a[tag=SEAPT] at @s if entity @s[advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/17=true}] run tellraw @s {text:"我对发生的一切感到很抱歉。虽然改变不了任何悲剧，但我会将此铭记。",color:"gray"}
-execute as @n[tag=sc,scores={sea_4temp2=5089}] as @a[tag=SEAPT] at @s run tellraw @s {text:"『厄珀娅的悲歌』第二章 完",color:"blue",bold: true}
+execute as @n[tag=sc,scores={sea_4temp2=5089}] as @a[tag=SEAPT] at @s run tellraw @s {text:"『厄珀娅的悲歌』第二章 完",color:"blue",bold:1b}
 execute as @n[tag=sc,scores={sea_4temp2=5089}] positioned 90066 129 95 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
 
 #execute as @n[tag=sc,scores={sea_4temp2=5089}] as @a[tag=SEAPT] at @s run playsound music_disc.creator_music_box music @a[tag=SEAPT] ~ ~ ~ 1000 0.8

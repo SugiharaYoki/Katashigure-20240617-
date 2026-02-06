@@ -14,10 +14,10 @@ execute if score stage_bonus_thread AzrTimerStack matches 204 run bossbar remove
 
 
 execute if score stage_bonus_thread AzrTimerStack matches 3 positioned -79893 38 92 run function skyblock:azr/assets/mobs/axe
-execute if score stage_bonus_thread AzrTimerStack matches 5 positioned -79893 38 92 run tellraw @a[tag=azrShowDialog] [{text:"圣殿卫兵：",color:"yellow",bold: true},{bold: false,text:"\n“我在这只是为了休息一会儿，你非要来这里挑战吗？”",color:"white"}]
+execute if score stage_bonus_thread AzrTimerStack matches 5 positioned -79893 38 92 run tellraw @a[tag=azrShowDialog] [{text:"圣殿卫兵：",color:"yellow",bold:1b},{bold: false,text:"\n“我在这只是为了休息一会儿，你非要来这里挑战吗？”",color:"white"}]
 execute if score stage_bonus_thread AzrTimerStack matches 9 positioned -79893 38 92 run function skyblock:azr/assets/mobs/axe
 execute if score stage_bonus_thread AzrTimerStack matches 13 positioned -79893 38 92 run function skyblock:azr/assets/mobs/sword
-execute if score stage_bonus_thread AzrTimerStack matches 22 positioned -79893 38 92 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"yellow",bold: true},{bold: false,text:"\n“可恶，早就听说这名挑战者打起来特别猛，情报属实啊……”",color:"white"}]
+execute if score stage_bonus_thread AzrTimerStack matches 22 positioned -79893 38 92 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"yellow",bold:1b},{bold: false,text:"\n“可恶，早就听说这名挑战者打起来特别猛，情报属实啊……”",color:"white"}]
 
 execute if score stage_bonus_thread AzrTimerStack matches 30 positioned -79876 38 100 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_shadow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_bonus_thread AzrTimerStack matches 38 positioned -79893 38 92 run function skyblock:azr/assets/mobs/sword

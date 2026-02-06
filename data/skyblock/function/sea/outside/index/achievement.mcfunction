@@ -98,22 +98,22 @@ scoreboard players add @s[advancements={skyblock:sea/doc/w27=true}] rng4 1
 
 
 
- tellraw @s[scores={rng1=..4}] [{text:"第一章 档案 ",color:"light_purple",bold: true},{"score":{"name":"@s","objective":"rng1"},color:"white",bold: false},{text:"/5",color:"white",bold: false}]
- tellraw @s[scores={rng1=5..}] [{text:"第一章 档案 ",color:"light_purple",bold: true},{"score":{"name":"@s","objective":"rng1"},color:"green",bold: false},{text:"/5",color:"green",bold: false}]
- tellraw @s[scores={rng2=..9}] [{text:"第二章 档案 ",color:"light_purple",bold: true},{"score":{"name":"@s","objective":"rng2"},color:"white",bold: false},{text:"/10",color:"white",bold: false}]
- tellraw @s[scores={rng2=10..}] [{text:"第二章 档案 ",color:"light_purple",bold: true},{"score":{"name":"@s","objective":"rng2"},color:"green",bold: false},{text:"/10",color:"green",bold: false}]
- tellraw @s[scores={rng3=..13}] [{text:"第三章 档案 ",color:"light_purple",bold: true},{"score":{"name":"@s","objective":"rng3"},color:"white",bold: false},{text:"/14",color:"white",bold: false}]
- tellraw @s[scores={rng3=14..}] [{text:"第三章 档案 ",color:"light_purple",bold: true},{"score":{"name":"@s","objective":"rng3"},color:"green",bold: false},{text:"/14",color:"green",bold: false}]
- tellraw @s[scores={rng4=..14}] [{text:"第四章 档案 ",color:"light_purple",bold: true},{"score":{"name":"@s","objective":"rng4"},color:"white",bold: false},{text:"/15",color:"white",bold: false}]
- tellraw @s[scores={rng4=15..}] [{text:"第四章 档案 ",color:"light_purple",bold: true},{"score":{"name":"@s","objective":"rng4"},color:"green",bold: false},{text:"/15",color:"green",bold: false}]
- tellraw @s[scores={rng5=..4}] [{text:"第五章 档案 ",color:"light_purple",bold: true},{"score":{"name":"@s","objective":"rng5"},color:"white",bold: false},{text:"/5",color:"white",bold: false}]
- tellraw @s[scores={rng5=5..}] [{text:"第五章 档案 ",color:"light_purple",bold: true},{"score":{"name":"@s","objective":"rng5"},color:"green",bold: false},{text:"/5",color:"green",bold: false}]
+ tellraw @s[scores={rng1=..4}] [{text:"第一章 档案 ",color:"light_purple",bold:1b},{"score":{"name":"@s","objective":"rng1"},color:"white",bold: false},{text:"/5",color:"white",bold: false}]
+ tellraw @s[scores={rng1=5..}] [{text:"第一章 档案 ",color:"light_purple",bold:1b},{"score":{"name":"@s","objective":"rng1"},color:"green",bold: false},{text:"/5",color:"green",bold: false}]
+ tellraw @s[scores={rng2=..9}] [{text:"第二章 档案 ",color:"light_purple",bold:1b},{"score":{"name":"@s","objective":"rng2"},color:"white",bold: false},{text:"/10",color:"white",bold: false}]
+ tellraw @s[scores={rng2=10..}] [{text:"第二章 档案 ",color:"light_purple",bold:1b},{"score":{"name":"@s","objective":"rng2"},color:"green",bold: false},{text:"/10",color:"green",bold: false}]
+ tellraw @s[scores={rng3=..13}] [{text:"第三章 档案 ",color:"light_purple",bold:1b},{"score":{"name":"@s","objective":"rng3"},color:"white",bold: false},{text:"/14",color:"white",bold: false}]
+ tellraw @s[scores={rng3=14..}] [{text:"第三章 档案 ",color:"light_purple",bold:1b},{"score":{"name":"@s","objective":"rng3"},color:"green",bold: false},{text:"/14",color:"green",bold: false}]
+ tellraw @s[scores={rng4=..14}] [{text:"第四章 档案 ",color:"light_purple",bold:1b},{"score":{"name":"@s","objective":"rng4"},color:"white",bold: false},{text:"/15",color:"white",bold: false}]
+ tellraw @s[scores={rng4=15..}] [{text:"第四章 档案 ",color:"light_purple",bold:1b},{"score":{"name":"@s","objective":"rng4"},color:"green",bold: false},{text:"/15",color:"green",bold: false}]
+ tellraw @s[scores={rng5=..4}] [{text:"第五章 档案 ",color:"light_purple",bold:1b},{"score":{"name":"@s","objective":"rng5"},color:"white",bold: false},{text:"/5",color:"white",bold: false}]
+ tellraw @s[scores={rng5=5..}] [{text:"第五章 档案 ",color:"light_purple",bold:1b},{"score":{"name":"@s","objective":"rng5"},color:"green",bold: false},{text:"/5",color:"green",bold: false}]
 
- tellraw @s[scores={rng7=..6}] [{text:"第六章 档案 ",color:"light_purple",bold: true},{"score":{"name":"@s","objective":"rng7"},color:"white",bold: false},{text:"/7",color:"white",bold: false}]
- tellraw @s[scores={rng7=7..}] [{text:"第六章 档案 ",color:"light_purple",bold: true},{"score":{"name":"@s","objective":"rng7"},color:"green",bold: false},{text:"/7",color:"green",bold: false}]
+ tellraw @s[scores={rng7=..6}] [{text:"第六章 档案 ",color:"light_purple",bold:1b},{"score":{"name":"@s","objective":"rng7"},color:"white",bold: false},{text:"/7",color:"white",bold: false}]
+ tellraw @s[scores={rng7=7..}] [{text:"第六章 档案 ",color:"light_purple",bold:1b},{"score":{"name":"@s","objective":"rng7"},color:"green",bold: false},{text:"/7",color:"green",bold: false}]
 
- tellraw @s[scores={rng6=..7}] [{text:"法莫洛斯的医疗报告 ",color:"light_purple",bold: true},{"score":{"name":"@s","objective":"rng6"},color:"white",bold: false},{text:"/8",color:"white",bold: false}]
- tellraw @s[scores={rng6=8..}] [{text:"法莫洛斯的医疗报告 ",color:"light_purple",bold: true},{"score":{"name":"@s","objective":"rng6"},color:"green",bold: false},{text:"/8",color:"green",bold: false}]
+ tellraw @s[scores={rng6=..7}] [{text:"法莫洛斯的医疗报告 ",color:"light_purple",bold:1b},{"score":{"name":"@s","objective":"rng6"},color:"white",bold: false},{text:"/8",color:"white",bold: false}]
+ tellraw @s[scores={rng6=8..}] [{text:"法莫洛斯的医疗报告 ",color:"light_purple",bold:1b},{"score":{"name":"@s","objective":"rng6"},color:"green",bold: false},{text:"/8",color:"green",bold: false}]
 
 scoreboard players set @s rng1 0
 scoreboard players set @s rng2 0
@@ -164,9 +164,9 @@ scoreboard players add @s[advancements={skyblock:sea/doc/g37=true}] rng4 1
 scoreboard players add @s[advancements={skyblock:sea/doc/g38=true}] rng3 1
 scoreboard players add @s[advancements={skyblock:sea/doc/g39=true}] rng5 1
 
- tellraw @s [{text:"游戏成就 探索 ",color:"aqua",bold: true},{"score":{"name":"@s","objective":"rng1"},color:"white",bold: false},{text:"/11",color:"white",bold: false}]
- tellraw @s [{text:"游戏成就 巧思 ",color:"aqua",bold: true},{"score":{"name":"@s","objective":"rng2"},color:"white",bold: false},{text:"/12",color:"white",bold: false}]
- tellraw @s [{text:"游戏成就 礼赞 ",color:"gold",bold: true},{"score":{"name":"@s","objective":"rng3"},color:"white",bold: false},{text:"/8",color:"white",bold: false}]
- tellraw @s [{text:"游戏成就 蚀厄 ",color:"gold",bold: true},{"score":{"name":"@s","objective":"rng4"},color:"white",bold: false},{text:"/4",color:"white",bold: false}]
- tellraw @s [{text:"结局 ",color:"gold",bold: true},{"score":{"name":"@s","objective":"rng5"},color:"white",bold: false},{text:"/4",color:"white",bold: false}]
+ tellraw @s [{text:"游戏成就 探索 ",color:"aqua",bold:1b},{"score":{"name":"@s","objective":"rng1"},color:"white",bold: false},{text:"/11",color:"white",bold: false}]
+ tellraw @s [{text:"游戏成就 巧思 ",color:"aqua",bold:1b},{"score":{"name":"@s","objective":"rng2"},color:"white",bold: false},{text:"/12",color:"white",bold: false}]
+ tellraw @s [{text:"游戏成就 礼赞 ",color:"gold",bold:1b},{"score":{"name":"@s","objective":"rng3"},color:"white",bold: false},{text:"/8",color:"white",bold: false}]
+ tellraw @s [{text:"游戏成就 蚀厄 ",color:"gold",bold:1b},{"score":{"name":"@s","objective":"rng4"},color:"white",bold: false},{text:"/4",color:"white",bold: false}]
+ tellraw @s [{text:"结局 ",color:"gold",bold:1b},{"score":{"name":"@s","objective":"rng5"},color:"white",bold: false},{text:"/4",color:"white",bold: false}]
 

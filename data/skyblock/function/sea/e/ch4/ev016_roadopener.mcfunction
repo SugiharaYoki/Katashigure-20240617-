@@ -19,13 +19,13 @@ execute as @s[scores={sea_4temp1=1}] positioned 90183.0 27 100.7 unless entity @
 execute as @s[scores={sea_4temp1=1}] positioned 90182.8 27 100 unless entity @a[tag=SEAPT,distance=0..6] run function skyblock:sea/m/skeleton_melee
 
 
-execute as @s[scores={sea_4temp1=67}] if block 90170 35 173 air run tellraw @a[tag=SEAPT] [{text:"陌生的女声：",color:"yellow",bold: true},{text:"\n“我已经看到你了。”",color:"white",bold: false}]
-execute as @s[scores={sea_4temp1=99}] if block 90170 35 173 air run tellraw @a[tag=SEAPT] [{text:"陌生的女声：",color:"yellow",bold: true},{text:"\n“这是警告，不要再想着接近实验区。”",color:"white",bold: false}]
-execute as @s[scores={sea_4temp1=130}] if block 90170 35 173 air run tellraw @a[tag=SEAPT] [{text:"陌生的女声：",color:"yellow",bold: true},{text:"\n“不听劝阻的人可不是好孩子。”",color:"white",bold: false}]
+execute as @s[scores={sea_4temp1=67}] if block 90170 35 173 air run tellraw @a[tag=SEAPT] [{text:"陌生的女声：",color:"yellow",bold:1b},{text:"\n“我已经看到你了。”",color:"white",bold: false}]
+execute as @s[scores={sea_4temp1=99}] if block 90170 35 173 air run tellraw @a[tag=SEAPT] [{text:"陌生的女声：",color:"yellow",bold:1b},{text:"\n“这是警告，不要再想着接近实验区。”",color:"white",bold: false}]
+execute as @s[scores={sea_4temp1=130}] if block 90170 35 173 air run tellraw @a[tag=SEAPT] [{text:"陌生的女声：",color:"yellow",bold:1b},{text:"\n“不听劝阻的人可不是好孩子。”",color:"white",bold: false}]
 
-execute as @s[scores={sea_4temp1=67}] if block 90170 35 173 grindstone run tellraw @a[tag=SEAPT] [{text:"陌生的女声：",color:"yellow",bold: true},{text:"\n“我已经给出了忠告。”",color:"white",bold: false}]
-execute as @s[scores={sea_4temp1=99}] if block 90170 35 173 grindstone run tellraw @a[tag=SEAPT] [{text:"陌生的女声：",color:"yellow",bold: true},{text:"\n“但我看你好像并没有要放弃的样子。”",color:"white",bold: false}]
-execute as @s[scores={sea_4temp1=130}] if block 90170 35 173 grindstone run tellraw @a[tag=SEAPT] [{text:"陌生的女声：",color:"yellow",bold: true},{text:"\n“这是最后一次警告，再往前我就会亲手杀了你。”",color:"white",bold: false}]
+execute as @s[scores={sea_4temp1=67}] if block 90170 35 173 grindstone run tellraw @a[tag=SEAPT] [{text:"陌生的女声：",color:"yellow",bold:1b},{text:"\n“我已经给出了忠告。”",color:"white",bold: false}]
+execute as @s[scores={sea_4temp1=99}] if block 90170 35 173 grindstone run tellraw @a[tag=SEAPT] [{text:"陌生的女声：",color:"yellow",bold:1b},{text:"\n“但我看你好像并没有要放弃的样子。”",color:"white",bold: false}]
+execute as @s[scores={sea_4temp1=130}] if block 90170 35 173 grindstone run tellraw @a[tag=SEAPT] [{text:"陌生的女声：",color:"yellow",bold:1b},{text:"\n“这是最后一次警告，再往前我就会亲手杀了你。”",color:"white",bold: false}]
 
 
 execute as @s[scores={sea_4temp1=130}] run setblock 90170 35 173 minecraft:grindstone

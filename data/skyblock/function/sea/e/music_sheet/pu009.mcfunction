@@ -1,6 +1,6 @@
 
 playsound minecraft:entity.player.levelup master @a[tag=SEAPT,distance=0..10,tag=!seaPerm009] 90118.48 102.99 -1891.25 10 0.8
-tellraw @a[tag=SEAPT,distance=0..10,tag=!seaPerm009] [{text:"永久解锁新曲谱！",color:"aqua",bold: true}]
+tellraw @a[tag=SEAPT,distance=0..10,tag=!seaPerm009] [{text:"永久解锁新曲谱！",color:"aqua",bold:1b}]
 tellraw @a[tag=SEAPT,distance=0..10,tag=!seaPerm009] [{text:"曲谱：漆海命墓的谣曲",color:"aqua"}]
 tag @a[tag=SEAPT,distance=0..10,tag=!seaPerm009] add seaPerm009
 particle minecraft:flash 90118.48 102.99 -1891.25 1 1 1 0.1 3

@@ -22,7 +22,7 @@ execute if score stage_main_thread AzrTimerStack matches 20 positioned -79889 38
 execute if score stage_main_thread AzrTimerStack matches 21 positioned -79889 38 121 run function skyblock:azr/assets/mobs/skeleton_sword
 execute if score stage_main_thread AzrTimerStack matches 22 positioned -79889 38 121 run function skyblock:azr/assets/mobs/skeleton_sword
 
-execute if score stage_main_thread AzrTimerStack matches 21 run tellraw @a[tag=azrShowDialog] [{text:"圣殿守卫：",color:"yellow",bold: true},{bold: false,text:"\n“还愣着干什么，快跑！怪物失控了！！”",color:"white"}]
+execute if score stage_main_thread AzrTimerStack matches 21 run tellraw @a[tag=azrShowDialog] [{text:"圣殿守卫：",color:"yellow",bold:1b},{bold: false,text:"\n“还愣着干什么，快跑！怪物失控了！！”",color:"white"}]
 execute if score stage_main_thread AzrTimerStack matches 20.. positioned -79889 38 121 as @e[tag=AzrielMob_typeLIFE,distance=0..30] unless entity @s[scores={AzrielMob_changetarget=1..}] at @s if entity @n[tag=AzrielMob,tag=!AzrielMob_typeLIFE,distance=0..7] run scoreboard players set @s AzrielMob_changetarget 8
 execute if score stage_main_thread AzrTimerStack matches 20.. positioned -79889 38 121 as @e[tag=AzrielMob_typeLIFE,distance=0..30] if entity @s[scores={AzrielMob_changetarget=1..}] at @s if entity @n[tag=AzrielMob,tag=!AzrielMob_typeLIFE,distance=0..7] run scoreboard players remove @s AzrielMob_changetarget 1 
 execute if score stage_main_thread AzrTimerStack matches 20.. positioned -79889 38 121 as @e[tag=AzrielMob_typeLIFE,distance=0..30] if entity @s[scores={AzrielMob_changetarget=7}] at @s if entity @n[tag=AzrielMob,tag=!AzrielMob_typeLIFE,distance=0..7] run damage @s 0 generic by @n[tag=AzrielMob,tag=!AzrielMob_typeLIFE]
@@ -61,8 +61,8 @@ execute if score stage_main_thread AzrTimerStack matches 124..126 positioned -79
 
 execute if score stage_main_thread AzrTimerStack matches 107 positioned -79897 38 125 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 107 positioned -79897 38 117 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_main_thread AzrTimerStack matches 130 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"yellow",bold: true},{bold: false,text:"\n“怪物源源不断地涌进来……”",color:"white"}]
-execute if score stage_main_thread AzrTimerStack matches 142 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"yellow",bold: true},{bold: false,text:"\n“人类的亡魂，等解决了这些亡灵，我们再和你打！”",color:"white"}]
+execute if score stage_main_thread AzrTimerStack matches 130 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"yellow",bold:1b},{bold: false,text:"\n“怪物源源不断地涌进来……”",color:"white"}]
+execute if score stage_main_thread AzrTimerStack matches 142 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"yellow",bold:1b},{bold: false,text:"\n“人类的亡魂，等解决了这些亡灵，我们再和你打！”",color:"white"}]
 
 execute if score stage_main_thread AzrTimerStack matches 130 positioned -79897 38 125 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_pillager","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 130 positioned -79897 38 117 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_pillager","AzrielMob_summon_delay","AzrielMob_level_1"]}
@@ -75,7 +75,7 @@ execute if score stage_main_thread AzrTimerStack matches 163 positioned -79889 3
 execute if score stage_main_thread AzrTimerStack matches 166 positioned -79889 38 121 run function skyblock:azr/assets/mobs/shield
 execute if score stage_main_thread AzrTimerStack matches 178 positioned -79889 38 121 run function skyblock:azr/assets/mobs/smoke_mother
 
-execute if score stage_main_thread AzrTimerStack matches 170 positioned -79889 38 121 if entity @n[tag=AzrielMob_pillager,distance=..15] run tellraw @a[tag=azrShowDialog] [{text:"特遣弩手：",color:"yellow",bold: true},{bold: false,text:"\n“人类！我们这里只能勉强稳住挑战波数的阻拦结界了，现在同一波内的敌人不会等着你杀完才出现，它们会拼命往外涌！做好准备，我们有一场硬仗要打！”",color:"white"}]
+execute if score stage_main_thread AzrTimerStack matches 170 positioned -79889 38 121 if entity @n[tag=AzrielMob_pillager,distance=..15] run tellraw @a[tag=azrShowDialog] [{text:"特遣弩手：",color:"yellow",bold:1b},{bold: false,text:"\n“人类！我们这里只能勉强稳住挑战波数的阻拦结界了，现在同一波内的敌人不会等着你杀完才出现，它们会拼命往外涌！做好准备，我们有一场硬仗要打！”",color:"white"}]
 
 execute if score stage_main_thread AzrTimerStack matches 187..188 positioned -79889 38 121 if entity @n[distance=..14,tag=AzrielMob_smoke_mother] run scoreboard players set stage_main_thread AzrTimerStack 187
 execute if score stage_main_thread AzrTimerStack matches 187..188 positioned -79889 38 121 if entity @n[distance=..14,tag=AzrielMob_shield] run scoreboard players set stage_main_thread AzrTimerStack 187

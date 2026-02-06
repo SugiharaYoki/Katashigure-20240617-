@@ -92,7 +92,7 @@ execute if score stage_main_thread AzrTimerStack matches 3207 run tellraw @a[tag
 execute if score stage_main_thread AzrTimerStack matches 3207 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] {text:"“此话不假，只是吾等全部中了路西法的计。魔界大军给予你足以与天界守备军抗衡的力量，吸引了军队的注意力，再趁机从地脉开启了缺口，大举进攻了这座花园。”",color:"white"}
 execute if score stage_main_thread AzrTimerStack matches 3207 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrShowDialog] {text:"“此话不假，只是吾等全部中了路西法的计。魔界大军给予你们足以与天界守备军抗衡的力量，吸引了军队的注意力，再趁机从地脉开启了缺口，大举进攻了这座花园。”",color:"white"}
 
-execute if score stage_main_thread AzrTimerStack matches 3227 run tellraw @a[distance=0..150] [{text:"你：",color:"aqua",bold: true},{text:"\n“这样啊……所以魔界骗我来这生命树庭园，给予我远超神界军的战斗力，是为了这个目的。我被利用了……”",color:"white",bold: false}]
+execute if score stage_main_thread AzrTimerStack matches 3227 run tellraw @a[distance=0..150] [{text:"你：",color:"aqua",bold:1b},{text:"\n“这样啊……所以魔界骗我来这生命树庭园，给予我远超神界军的战斗力，是为了这个目的。我被利用了……”",color:"white",bold: false}]
 
 execute if score stage_main_thread AzrTimerStack matches 3238 as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing -79905 40 -136
 execute if score stage_main_thread AzrTimerStack matches 3248 as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @r[tag=azrPlayer]
@@ -101,7 +101,7 @@ execute if score stage_main_thread AzrTimerStack matches 3248 run tellraw @a[tag
 execute if score stage_main_thread AzrTimerStack matches 3248 if score playerCount Azr_system matches 1 run tellraw @a[tag=azrShowDialog] {text:"“吾辈将需要汝帮助我们抵御魔界军团。你已经被赋予能够抗衡神界军的力量，自然能够匹敌魔界军的法力。”",color:"white"}
 execute if score stage_main_thread AzrTimerStack matches 3248 if score playerCount Azr_system matches 2.. run tellraw @a[tag=azrShowDialog] {text:"“吾辈将需要汝等协力抵御魔界军团。你们已经被赋予能够抗衡神界军的力量，自然能够匹敌魔界军的法力。”",color:"white"}
 
-execute if score stage_main_thread AzrTimerStack matches 3268 run tellraw @a[distance=0..150] [{text:"你：",color:"aqua",bold: true},{text:"\n“目前情况看上去不太允许我拒绝这个邀请。”",color:"white",bold: false}]
+execute if score stage_main_thread AzrTimerStack matches 3268 run tellraw @a[distance=0..150] [{text:"你：",color:"aqua",bold:1b},{text:"\n“目前情况看上去不太允许我拒绝这个邀请。”",color:"white",bold: false}]
 
 execute if score stage_main_thread AzrTimerStack matches 3286 as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @r[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 3286 as @e[tag=AzrielBossFA] at @s run playsound minecraft:entity.illusioner.ambient master @a[tag=azrShowDialog] ~ ~ ~ 2 0.6

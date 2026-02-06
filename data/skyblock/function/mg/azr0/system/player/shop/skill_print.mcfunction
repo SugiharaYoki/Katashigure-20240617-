@@ -123,6 +123,6 @@ execute if entity @s[scores={Azr0_SkillEquip_2rng=30}] run function skyblock:mg/
 execute if entity @s[scores={Azr0_SkillEquip_3rng=30}] run function skyblock:mg/azr0/system/player/shop/skill_print/30 {"skill":30, "slot":22}
 
 
-item replace entity @s[scores={Azr0_SkillPoint=1..}] inventory.14 with ender_eye[custom_data={"azr0skill":true},custom_name={text:"「刷新赐福」",italic:0b,color:"green"},lore=[{text:"换一批赐福技能试试！",color:"white",italic:true},{text:"消耗：50绿宝石",color:"red",italic:true}]]
+item replace entity @s[scores={Azr0_SkillPoint=1..}] inventory.14 with ender_eye[custom_data={"azr0skill":true},custom_name={text:"「刷新赐福」",italic:0b,color:"green"},lore=[{text:"换一批赐福技能试试！",color:"white",italic:1b},{text:"消耗：50绿宝石",color:"red",italic:1b}]]
 
 item replace entity @s[scores={Azr0_SkillPoint=..0}] inventory.14 with air

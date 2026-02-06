@@ -48,13 +48,13 @@ execute if score stage_bonus_thread AzrTimerStack matches 84..85 positioned -799
 execute if score stage_bonus_thread AzrTimerStack matches 86 positioned -79946 38 61 run function skyblock:azr/assets/mobs/undead_greed
 execute if score stage_bonus_thread AzrTimerStack matches 87 positioned -79946 38 61 run function skyblock:azr/assets/mobs/undead_pickaxe
 execute if score stage_bonus_thread AzrTimerStack matches 88 positioned -79946 38 61 run function skyblock:azr/assets/mobs/undead_pickaxe
-execute if score stage_bonus_thread AzrTimerStack matches 87 positioned -79946 38 61 run tellraw @a[tag=azrShowDialog] [{text:"贪婪丧尸：",color:"red",bold: true},{bold: false,text:"\n“给我……绿宝石！！闪闪发亮的……绿宝石、绿宝石！！”",color:"white"}]
+execute if score stage_bonus_thread AzrTimerStack matches 87 positioned -79946 38 61 run tellraw @a[tag=azrShowDialog] [{text:"贪婪丧尸：",color:"red",bold:1b},{bold: false,text:"\n“给我……绿宝石！！闪闪发亮的……绿宝石、绿宝石！！”",color:"white"}]
 
 execute if score stage_bonus_thread AzrTimerStack matches 89..90 positioned -79946 38 61 if entity @n[distance=..10,tag=AzrielMob_undead_greed] run scoreboard players set stage_bonus_thread AzrTimerStack 89
 
 execute if score stage_bonus_thread AzrTimerStack matches 93 positioned -79946 38 61 run function skyblock:azr/assets/mobs/undead_greed
 
-execute if score stage_bonus_thread AzrTimerStack matches 103 positioned -79946 38 61 run tellraw @a[tag=azrShowDialog] [{text:"贪婪丧尸：",color:"red",bold: true},{bold: false,text:"\n“更……多！！……要！！给我、绿宝石……！全都给我！！！”",color:"white"}]
+execute if score stage_bonus_thread AzrTimerStack matches 103 positioned -79946 38 61 run tellraw @a[tag=azrShowDialog] [{text:"贪婪丧尸：",color:"red",bold:1b},{bold: false,text:"\n“更……多！！……要！！给我、绿宝石……！全都给我！！！”",color:"white"}]
 
 execute if score stage_bonus_thread AzrTimerStack matches 104..105 positioned -79946 38 61 if entity @n[distance=..10,tag=AzrielMob_undead_greed] run scoreboard players set stage_bonus_thread AzrTimerStack 104
 
