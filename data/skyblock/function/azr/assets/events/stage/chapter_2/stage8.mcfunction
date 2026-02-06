@@ -160,7 +160,7 @@ execute if score stage_main_thread AzrTimerStack matches 500 run fill -79906 40 
 execute if score stage_main_thread AzrTimerStack matches 500 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..8}] Azr_skillPoints 9
 execute if score stage_main_thread AzrTimerStack matches 500 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage8
 execute if score stage_main_thread AzrTimerStack matches 500 as @a[tag=azrPlayer] at @s unless items entity @s container.* *[custom_data~{azr_amulet_axe_vortex:1b}] run function skyblock:azr/assets/items/amulets/axe_vortex
-execute if score stage_main_thread AzrTimerStack matches 500 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..3}] [{text:"索命连击",color:"light_purple",bold:true},{bold:false,text:"可用点数已增加，目前为：4",color:"white"}]
+execute if score stage_main_thread AzrTimerStack matches 500 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..3}] [{text:"索命连击",color:"light_purple",bold:1b},{bold:0b,text:"可用点数已增加，目前为：4",color:"white"}]
 execute if score stage_main_thread AzrTimerStack matches 500 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..3}] AZR_chainKillUpg_pts 4
 
 execute if score stage_main_thread AzrTimerStack matches 500 positioned -79900 43 34 run tp @n[tag=AzrielNPC_bird] ~ ~ ~

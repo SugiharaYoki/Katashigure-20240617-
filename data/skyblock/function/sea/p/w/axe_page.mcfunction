@@ -1,6 +1,6 @@
 execute as @s run function skyblock:sea/calc/axe
-# tellraw @s {text:"『武器升级页面 - 消防斧』",bold:true,color:"red"}
-tellraw @s {text:"『武器升级页面 - 消防斧』","extra":[""],color:"red",bold:true,hover_event:{"action":"show_text","value":{"translate":"当前已激活的加成：\n攻击力：+%s\n攻击速度：+%s\n击退距离：+%s\n战斧横扫升级：%s/3","with":[{"storage":"sea:calc","nbt":"axe.attack_damage.val",color:"green"},{"nbt":"axe.attack_speed.val","storage":"sea:calc",color:"green"},{"nbt":"axe.attack_knockback.val","storage":"sea:calc",color:"green"},{"nbt":"axe.sweep.val","storage":"sea:calc",color:"yellow"}],"type":"translatable"}}}
+# tellraw @s {text:"『武器升级页面 - 消防斧』",bold:1b,color:"red"}
+tellraw @s {text:"『武器升级页面 - 消防斧』","extra":[""],color:"red",bold:1b,hover_event:{"action":"show_text","value":{"translate":"当前已激活的加成：\n攻击力：+%s\n攻击速度：+%s\n击退距离：+%s\n战斧横扫升级：%s/3","with":[{"storage":"sea:calc","nbt":"axe.attack_damage.val",color:"green"},{"nbt":"axe.attack_speed.val","storage":"sea:calc",color:"green"},{"nbt":"axe.attack_knockback.val","storage":"sea:calc",color:"green"},{"nbt":"axe.sweep.val","storage":"sea:calc",color:"yellow"}],"type":"translatable"}}}
 tellraw @s {text:"   "}
 
 summon marker ~ ~ ~ {Tags:["SEA_w_axe_displaymarker","SEA_w_axe_displaymarker0"]}
@@ -115,8 +115,8 @@ tellraw @s [{text:" ",color:"light_purple"},\
 #function skyblock:sea/p/w/flamethrower_cost
 #function skyblock:sea/p/w/shield_cost
 function skyblock:sea/shop_calculation
-tellraw @s[scores={sea_i_echo_shard=1..}] [{text:"剩余可分配回声碎片：",bold:true,color:"green"},{bold:false,"score":{"name":"@s","objective":"sea_i_echo_shard"},color:"green"},{text:"〈全部重置〉",bold:true,color:"red",click_event:{"action":"run_command","command":"trigger sea_crafter set 59902"}}]
-tellraw @s[scores={sea_i_echo_shard=..0}] [{text:"剩余可分配回声碎片：",bold:true,color:"green"},{bold:false,"score":{"name":"@s","objective":"sea_i_echo_shard"},color:"red"},{text:"〈全部重置〉",bold:true,color:"red",click_event:{"action":"run_command","command":"trigger sea_crafter set 59902"}}]
+tellraw @s[scores={sea_i_echo_shard=1..}] [{text:"剩余可分配回声碎片：",bold:1b,color:"green"},{bold:0b,"score":{"name":"@s","objective":"sea_i_echo_shard"},color:"green"},{text:"〈全部重置〉",bold:1b,color:"red",click_event:{"action":"run_command","command":"trigger sea_crafter set 59902"}}]
+tellraw @s[scores={sea_i_echo_shard=..0}] [{text:"剩余可分配回声碎片：",bold:1b,color:"green"},{bold:0b,"score":{"name":"@s","objective":"sea_i_echo_shard"},color:"red"},{text:"〈全部重置〉",bold:1b,color:"red",click_event:{"action":"run_command","command":"trigger sea_crafter set 59902"}}]
 
 kill @e[tag=SEA_w_axe_displaymarker,type=marker]
 scoreboard players set @s sea_crafter 0

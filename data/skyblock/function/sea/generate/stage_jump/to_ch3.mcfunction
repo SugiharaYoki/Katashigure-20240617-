@@ -38,7 +38,7 @@ execute if entity @s[scores={SEAPT_setting_yuehan=2}] run fill 90095 131 98 9009
 execute if entity @s[scores={SEAPT_setting_yuehan=2}] run tag @a[tag=SEAPT] add e_i_27
 execute if entity @s[scores={SEAPT_setting_yuehan=2}] run tag @a[tag=SEAPT] add e_i_28
 execute if entity @s[scores={SEAPT_setting_yuehan=2}] run kill @n[tag=SEAeventch3_m_ston]
-execute if entity @s[scores={SEAPT_setting_yuehan=2}] run give @a[tag=SEAPT] snout_armor_trim_smithing_template[custom_name='{text:"透光吸附 A",italic:true,color:"light_purple",italic:false}',lore=['{text:"光谱 I 光棱箭的转换速度加快",color:"white",italic:false}'],custom_data={sea_t_spectral_load1:true}]
+execute if entity @s[scores={SEAPT_setting_yuehan=2}] run give @a[tag=SEAPT] snout_armor_trim_smithing_template[custom_name='{text:"透光吸附 A",italic:true,color:"light_purple",italic:0b}',lore=['{text:"光谱 I 光棱箭的转换速度加快",color:"white",italic:0b}'],custom_data={sea_t_spectral_load1:true}]
 execute if entity @s[scores={SEAPT_setting_yuehan=2}] run setblock 90101 149 131 minecraft:red_candle[candles=3,lit=false]
 execute if entity @s[scores={SEAPT_setting_yuehan=2}] run setblock 90103 149 131 minecraft:red_candle[candles=3,lit=false]
 execute if entity @s[scores={SEAPT_setting_yuehan=2}] run tag @a add e_i_25

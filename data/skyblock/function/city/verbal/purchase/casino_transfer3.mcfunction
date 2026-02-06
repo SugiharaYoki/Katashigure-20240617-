@@ -1,12 +1,12 @@
 
 function skyblock:tool_rng
 
-execute unless entity @a[distance=0.01..10,gamemode=!spectator] if entity @n[tag=sc,scores={rng3=1}] run tellraw @s {text:"空中庭园赌场·接待员：",bold:true,color:"aqua"}
-execute unless entity @a[distance=0.01..10,gamemode=!spectator] if entity @n[tag=sc,scores={rng3=1}] run tellraw @s {text:"“想要转给谁？我似乎没见到周围有其他人在。”",bold:false,color:"white"}
-execute unless entity @a[distance=0.01..10,gamemode=!spectator] if entity @n[tag=sc,scores={rng3=2}] run tellraw @s {text:"空中庭园赌场·接待员：",bold:true,color:"aqua"}
-execute unless entity @a[distance=0.01..10,gamemode=!spectator] if entity @n[tag=sc,scores={rng3=2}] run tellraw @s {text:"“不能转账给自己。”",bold:false,color:"white"}
-execute unless entity @a[distance=0.01..10,gamemode=!spectator] if entity @n[tag=sc,scores={rng3=3}] run tellraw @s {text:"空中庭园赌场·接待员：",bold:true,color:"aqua"}
-execute unless entity @a[distance=0.01..10,gamemode=!spectator] if entity @n[tag=sc,scores={rng3=3}] run tellraw @s {text:"“是要转账给我吗？真的是非常感谢……这当然是玩笑。”",bold:false,color:"white"}
+execute unless entity @a[distance=0.01..10,gamemode=!spectator] if entity @n[tag=sc,scores={rng3=1}] run tellraw @s {text:"空中庭园赌场·接待员：",bold:1b,color:"aqua"}
+execute unless entity @a[distance=0.01..10,gamemode=!spectator] if entity @n[tag=sc,scores={rng3=1}] run tellraw @s {text:"“想要转给谁？我似乎没见到周围有其他人在。”",bold:0b,color:"white"}
+execute unless entity @a[distance=0.01..10,gamemode=!spectator] if entity @n[tag=sc,scores={rng3=2}] run tellraw @s {text:"空中庭园赌场·接待员：",bold:1b,color:"aqua"}
+execute unless entity @a[distance=0.01..10,gamemode=!spectator] if entity @n[tag=sc,scores={rng3=2}] run tellraw @s {text:"“不能转账给自己。”",bold:0b,color:"white"}
+execute unless entity @a[distance=0.01..10,gamemode=!spectator] if entity @n[tag=sc,scores={rng3=3}] run tellraw @s {text:"空中庭园赌场·接待员：",bold:1b,color:"aqua"}
+execute unless entity @a[distance=0.01..10,gamemode=!spectator] if entity @n[tag=sc,scores={rng3=3}] run tellraw @s {text:"“是要转账给我吗？真的是非常感谢……这当然是玩笑。”",bold:0b,color:"white"}
 
 execute if entity @a[distance=0.01..10,gamemode=!spectator] if entity @s[scores={Perm_PersonFSB=..4999}] run tellraw @s {text:"转账失败！余额不足5000浮世币！",color:"red"}
 execute if entity @a[distance=0.01..10,gamemode=!spectator] if entity @s[scores={Perm_PersonFSB=5000..}] run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100

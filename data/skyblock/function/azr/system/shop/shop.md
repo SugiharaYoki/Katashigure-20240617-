@@ -2,13 +2,13 @@
 srn_tempch为章节号
 2.每一章节商店页面不同 目前共注册七章
 影响第一行显示：
-{text:"『第一章 - Chapter 1』",bold:true,color:"white"}
-{text:"『第二章 - Chapter 2』",bold:true,color:"white"}
- {text:"『第三章 - Chapter 3』",bold:true,color:"white"}
-{text:"『绯红之章 - The Crimson Chapter』",bold:true,color:"white"}
-{text:"『金锻之章 - The Gold Forged Chapter』",bold:true,color:"white"}
-{text:"『诡蚀之章 - The Warped Chapter』",bold:true,color:"white"}
-{text:"『第七章 - Chapter 7』",bold:true,color:"white"}
+{text:"『第一章 - Chapter 1』",bold:1b,color:"white"}
+{text:"『第二章 - Chapter 2』",bold:1b,color:"white"}
+ {text:"『第三章 - Chapter 3』",bold:1b,color:"white"}
+{text:"『绯红之章 - The Crimson Chapter』",bold:1b,color:"white"}
+{text:"『金锻之章 - The Gold Forged Chapter』",bold:1b,color:"white"}
+{text:"『诡蚀之章 - The Warped Chapter』",bold:1b,color:"white"}
+{text:"『第七章 - Chapter 7』",bold:1b,color:"white"}
 3.通过随机数从穷举列表里获取交易项目 每个交易项目都由触发器控制
 列表会试图生成最多11项交易，每一项交易由一个随机数控制，并且每个位置的交易独一无二，购买后只重置该位置的随机数
 实际上被初始化的随机数数量直接决定刷新出的交易数

@@ -183,7 +183,7 @@ setblock 90101 129 136 minecraft:redstone_block
 setblock 90110 128 135 chest[facing=south]
 setblock 90111 128 135 chest[facing=south]
 item replace block 90110 128 135 container.11 with bread 2
-item replace block 90110 128 135 container.15 with dune_armor_trim_smithing_template[custom_name='{text:"金砂石板",color:"light_purple",italic:false}'] 1
+item replace block 90110 128 135 container.15 with dune_armor_trim_smithing_template[custom_name='{text:"金砂石板",color:"light_purple",italic:0b}'] 1
 item replace block 90111 128 135 container.12 with rotten_flesh 2
 item replace block 90111 128 135 container.14 with rotten_flesh 2
 setblock 90110 130 135 minecraft:potted_blue_orchid
@@ -272,8 +272,8 @@ fill 90088 129 115 90088 128 115 minecraft:polished_tuff_wall
 setblock 90101 129 125 air
 setblock 90101 129 125 lever[facing=west,face=ceiling]
 setblock 90088 131 118 chest[facing=north]
-item replace block 90088 131 118 container.12 with wayfinder_armor_trim_smithing_template[custom_name='{text:"醒殉徒石板",color:"light_purple",italic:false}'] 2
-item replace block 90088 131 118 container.14 with wild_armor_trim_smithing_template[custom_name='{text:"狂荒石板",color:"light_purple",italic:false}'] 2
+item replace block 90088 131 118 container.12 with wayfinder_armor_trim_smithing_template[custom_name='{text:"醒殉徒石板",color:"light_purple",italic:0b}'] 2
+item replace block 90088 131 118 container.14 with wild_armor_trim_smithing_template[custom_name='{text:"狂荒石板",color:"light_purple",italic:0b}'] 2
 
 
 setblock 90086 129 143 minecraft:potted_azalea_bush

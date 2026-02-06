@@ -1,1 +1,1 @@
-give @s shield[custom_name='{text:"坚盾·II阶",italic:false}',attribute_modifiers=[{id:"azr:shield_reinforced.armor_toughness",type:"armor_toughness",amount:2.0,operation:"add_value",slot:"hand"}],custom_data={shield_reinforced:1b},custom_model_data={floats:[100001.0]}]
+give @s shield[custom_name='{text:"坚盾·II阶",italic:0b}',attribute_modifiers=[{id:"azr:shield_reinforced.armor_toughness",type:"armor_toughness",amount:2.0,operation:"add_value",slot:"hand"}],custom_data={shield_reinforced:1b},custom_model_data={floats:[100001.0]}]

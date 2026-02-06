@@ -119,7 +119,7 @@ execute if score SEA_ch5_event_engineering_fiona rng7 matches 184 as @n[tag=SEAf
 
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 184 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 184 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold: true},{text:"\n“那儿的铁门被我打开了，快去那里！！”",color:"white",bold: false}]
-execute if score SEA_ch5_event_engineering_fiona rng7 matches 184 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar set minecraft:9066601 name {text:"菲尔娜已经开启西北侧的铁门！",color:"green",bold:true}
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 184 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar set minecraft:9066601 name {text:"菲尔娜已经开启西北侧的铁门！",color:"green",bold:1b}
 
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 194 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{selector:"@s",color:"aqua"},{text:"：",color:"aqua",bold: true},{text:"\n“我操，这么多敌人，你还继续深入敌巢是吗？！”",color:"white"}]
 

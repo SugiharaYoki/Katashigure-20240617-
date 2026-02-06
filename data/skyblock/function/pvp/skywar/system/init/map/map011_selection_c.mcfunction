@@ -1,6 +1,6 @@
 
 
-title @a actionbar {text:"星罗棋盘",bold:true,color:"blue"}
+title @a actionbar {text:"星罗棋盘",bold:1b,color:"blue"}
 forceload add 50000 50000 50200 50200
 
 

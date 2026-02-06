@@ -1,6 +1,6 @@
 scoreboard objectives add 4ASCEND_pt dummy
 scoreboard objectives add PlayHouseTrigger trigger
-scoreboard objectives add 4ASCEND_wins dummy [{text:"『4ASCEND ",color:"#4467d3",bold:true},{text:"胜利总次数』",color:"#f58390",bold:true}]
+scoreboard objectives add 4ASCEND_wins dummy [{text:"『4ASCEND ",color:"#4467d3",bold:1b},{text:"胜利总次数』",color:"#f58390",bold:1b}]
 scoreboard objectives add 4ASCEND_pt dummy
 scoreboard objectives add 4ASCEND_HP_Trigger trigger
 scoreboard objectives add 4ASCEND_TIME_Trigger trigger

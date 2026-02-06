@@ -19,7 +19,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 42 as @n[tag
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 60 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 60 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold: true},{text:"\n“这样。那想必你也知道我就是舵长史丹尼的亲女儿。”",color:"white",bold: false}]
 
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 62 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200,tag=SEAPT] [{text:" - "},{text:"坦白：这件事我并不知道  ",color:"yellow"},{text:"〈◆〉",bold:true,color:"gold",click_event:{"action":"run_command","command":"trigger sea_crafter set 90005"}}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 62 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200,tag=SEAPT] [{text:" - "},{text:"坦白：这件事我并不知道  ",color:"yellow"},{text:"〈◆〉",bold:1b,color:"gold",click_event:{"action":"run_command","command":"trigger sea_crafter set 90005"}}]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 85 run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp2 167
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 87 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{selector:"@p[tag=SEAPT,scores={SEAPT_member=1}]",color:"aqua"},{text:"：",color:"aqua",bold: true},{text:"\n“这……这我倒是不清楚。”",color:"white"}]
@@ -48,7 +48,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 224 as @n[ta
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 245 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 245 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold: true},{text:"\n“但可能和艾德雯娜他们告诉你的不一样，邪教徒是这里最好说话的人。\n尽管如此，我和他们的谈判也吹了。”",color:"white",bold: false}]
 
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 245 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200,tag=SEAPT] [{text:" - "},{text:"询问：诺玛是谁？谈判又是什么？  ",color:"yellow"},{text:"〈◆〉",bold:true,color:"gold",click_event:{"action":"run_command","command":"trigger sea_crafter set 90001"}}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 245 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200,tag=SEAPT] [{text:" - "},{text:"询问：诺玛是谁？谈判又是什么？  ",color:"yellow"},{text:"〈◆〉",bold:1b,color:"gold",click_event:{"action":"run_command","command":"trigger sea_crafter set 90001"}}]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 281 run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp2 357
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 283 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..250] [{selector:"@r[tag=SEAPT]",color:"aqua"},{text:"：",color:"aqua",bold: true},{text:"\n“谈判？你一直在提到的谈判到底是指什么？\n以及……诺玛？你提到的诺玛是谁？”",color:"white"}]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 283 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run scoreboard players add SEA_ch5_event_fiona_favor rng1 2
@@ -94,7 +94,7 @@ execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 536 position
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 536 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{text:"琼斯：",color:"yellow",bold: true},{text:"\n“你身边的菲尔娜，也就是我们的大小姐，认为神明不会允许我们的僭越。只是，吸引神明的使者前来忒尔克西，原本便是我等的夙愿。”",color:"white",bold: false}]
 
 
-execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 538 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200,tag=SEAPT] [{text:" - "},{text:"插嘴：我是在听什么童话故事吗？  ",color:"yellow"},{text:"〈◆〉",bold:true,color:"gold",click_event:{"action":"run_command","command":"trigger sea_crafter set 90006"}}]
+execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 538 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200,tag=SEAPT] [{text:" - "},{text:"插嘴：我是在听什么童话故事吗？  ",color:"yellow"},{text:"〈◆〉",bold:1b,color:"gold",click_event:{"action":"run_command","command":"trigger sea_crafter set 90006"}}]
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 559 run scoreboard players set SEA_ch5_event_engineering_fiona sea_4temp2 667
 
 execute if score SEA_ch5_event_engineering_fiona sea_4temp2 matches 561 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @a[tag=SEAPT,scores={SEAPT_member=2}] run tellraw @a[distance=0..250] [{selector:"@p[tag=SEAPT,scores={SEAPT_member=2}]",color:"aqua"},{text:"：",color:"aqua",bold: true},{text:"\n“开什么玩笑？你们在给我们讲童话故事吗？”",color:"white"}]

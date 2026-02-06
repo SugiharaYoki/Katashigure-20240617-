@@ -17,19 +17,19 @@ execute if data storage ph {invitation:{table:-1}} run tellraw @s [{text:"4ASCEN
 execute if data storage ph {invitation:{table:-1}} run return 0
 
 #output-Invite
-tellraw @s [{text:"已向全服发出小游戏邀请！",color:"light_purple",bold:true}]
+tellraw @s [{text:"已向全服发出小游戏邀请！",color:"light_purple",bold:1b}]
 tellraw @s {text:"—— [取消邀请] ——",color:"green",click_event:{"action":"run_command","command":"trigger PlayHouseTrigger set 100"},hover_event:{"action":"show_text","value":{text:"将这条邀请作废",color:"green"}}}
 
 #output-Accept
-tellraw @a[distance=0.001..,tag=!Gaming] [{text:"「来自",color:"light_purple",bold:true},{selector:"@s",color:"light_purple",bold:true},{text:"的小游戏邀请」\n",color:"light_purple",bold:true},\
-{text:"游戏：4ASCEND\n",bold:false,color:"white"},\
-{text:"邀请者让分：",bold:false,color:"white"},{"score":{"name": "@s","objective": "4ASCEND_HP"},color:"green",bold:false},{text:"HP",color:"green",bold:false}]
-execute if score @s 4ASCEND_TIME matches 1 run tellraw @a[distance=0.001..,tag=!Gaming] {text:"决策时间限制：5s",bold:false,color:"green"}
-execute if score @s 4ASCEND_TIME matches 2 run tellraw @a[distance=0.001..,tag=!Gaming] {text:"决策时间限制：10s",bold:false,color:"green"}
-execute if score @s 4ASCEND_TIME matches 3 run tellraw @a[distance=0.001..,tag=!Gaming] {text:"决策时间限制：20s",bold:false,color:"green"}
-execute if score @s 4ASCEND_TIME matches 4 run tellraw @a[distance=0.001..,tag=!Gaming] {text:"决策时间限制：30s",bold:false,color:"green"}
-execute if score @s 4ASCEND_TIME matches 5 run tellraw @a[distance=0.001..,tag=!Gaming] {text:"决策时间限制：60s",bold:false,color:"green"}
-execute if score @s 4ASCEND_TIME matches 6 run tellraw @a[distance=0.001..,tag=!Gaming] {text:"决策时间限制：无限制",bold:false,color:"green"}
+tellraw @a[distance=0.001..,tag=!Gaming] [{text:"「来自",color:"light_purple",bold:1b},{selector:"@s",color:"light_purple",bold:1b},{text:"的小游戏邀请」\n",color:"light_purple",bold:1b},\
+{text:"游戏：4ASCEND\n",bold:0b,color:"white"},\
+{text:"邀请者让分：",bold:0b,color:"white"},{"score":{"name": "@s","objective": "4ASCEND_HP"},color:"green",bold:0b},{text:"HP",color:"green",bold:0b}]
+execute if score @s 4ASCEND_TIME matches 1 run tellraw @a[distance=0.001..,tag=!Gaming] {text:"决策时间限制：5s",bold:0b,color:"green"}
+execute if score @s 4ASCEND_TIME matches 2 run tellraw @a[distance=0.001..,tag=!Gaming] {text:"决策时间限制：10s",bold:0b,color:"green"}
+execute if score @s 4ASCEND_TIME matches 3 run tellraw @a[distance=0.001..,tag=!Gaming] {text:"决策时间限制：20s",bold:0b,color:"green"}
+execute if score @s 4ASCEND_TIME matches 4 run tellraw @a[distance=0.001..,tag=!Gaming] {text:"决策时间限制：30s",bold:0b,color:"green"}
+execute if score @s 4ASCEND_TIME matches 5 run tellraw @a[distance=0.001..,tag=!Gaming] {text:"决策时间限制：60s",bold:0b,color:"green"}
+execute if score @s 4ASCEND_TIME matches 6 run tellraw @a[distance=0.001..,tag=!Gaming] {text:"决策时间限制：无限制",bold:0b,color:"green"}
 tellraw @a[distance=0.001..,tag=!Gaming] {text:"—— [参加游戏] ——",color:"green",click_event:{"action":"run_command","command":"trigger PlayHouseTrigger set 101"},hover_event:{"action":"show_text","value":{text:"接受这条邀请",color:"green"}}}
 
 schedule function skyblock:ph/invite/expire 15s

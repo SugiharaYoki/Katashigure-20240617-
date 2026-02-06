@@ -1,4 +1,4 @@
-tellraw @s {text:"『防具升级页面 - 盾牌』",bold:true,color:"red"}
+tellraw @s {text:"『防具升级页面 - 盾牌』",bold:1b,color:"red"}
 tellraw @s {text:"   "}
 
 summon marker ~ ~ ~ {Tags:["SEA_w_shield_displaymarker","SEA_w_shield_displaymarker0"]}
@@ -103,8 +103,8 @@ tellraw @s [{text:" ",color:"light_purple"},\
 {selector:"@n[tag=SEA_w_shield_displaymarkerE]",color:"dark_gray"}]
 
 function skyblock:sea/shop_calculation
-tellraw @s[scores={sea_i_iron_ingot=1..}] [{text:"剩余可分配铁锭：",bold:true,color:"green"},{bold:false,"score":{"name":"@s","objective":"sea_i_iron_ingot"},color:"green"},{text:"〈全部重置〉",bold:true,color:"red",click_event:{"action":"run_command","command":"trigger sea_crafter set 59904"}}]
-tellraw @s[scores={sea_i_iron_ingot=..0}] [{text:"剩余可分配铁锭：",bold:true,color:"green"},{bold:false,"score":{"name":"@s","objective":"sea_i_iron_ingot"},color:"red"},{text:"〈全部重置〉",bold:true,color:"red",click_event:{"action":"run_command","command":"trigger sea_crafter set 59904"}}]
+tellraw @s[scores={sea_i_iron_ingot=1..}] [{text:"剩余可分配铁锭：",bold:1b,color:"green"},{bold:0b,"score":{"name":"@s","objective":"sea_i_iron_ingot"},color:"green"},{text:"〈全部重置〉",bold:1b,color:"red",click_event:{"action":"run_command","command":"trigger sea_crafter set 59904"}}]
+tellraw @s[scores={sea_i_iron_ingot=..0}] [{text:"剩余可分配铁锭：",bold:1b,color:"green"},{bold:0b,"score":{"name":"@s","objective":"sea_i_iron_ingot"},color:"red"},{text:"〈全部重置〉",bold:1b,color:"red",click_event:{"action":"run_command","command":"trigger sea_crafter set 59904"}}]
 
 kill @e[tag=SEA_w_shield_displaymarker,type=marker]
 scoreboard players set @s sea_crafter 0

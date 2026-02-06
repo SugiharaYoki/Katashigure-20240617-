@@ -37,7 +37,7 @@ tellraw @s[tag=ServerManager] {text:"◇ 瓦尔基里号 - 船首",color:"dark_p
 tellraw @s[tag=ServerManager] [{text:"◇ 『创造天地』   ",color:"dark_purple",click_event:{"action":"run_command","command":"trigger MultiMenu set 823"},hover_event:{"action":"show_text","value":{text:"各种建筑与规划的临时存放站",color:"white"}}},{text:"|   『天穹镜域』",color:"dark_purple",click_event:{"action":"run_command","command":"trigger MultiMenu set 831"},hover_event:{"action":"show_text","value":{text:"空岛战争与其他PVP地图的原区域",color:"white"}}}]
 tellraw @s[tag=ServerManager] {text:"◇ 测试区域『地下城』",color:"dark_purple",click_event:{"action":"run_command","command":"trigger MultiMenu set 828"},hover_event:{"action":"show_text","value":{text:"各种建筑与规划的临时存放站",color:"white"}}}
 #tellraw @s {text:"   ",color:"light_purple"}
-#tellraw @s {text:"   表世界 - 生存服 ",bold:true,"obfuscated":false,color:"gold",click_event:{"action":"run_command","command":"lobby"},hover_event:{"action":"show_text","value":{text:"传送至主世界的生存服",color:"white"}}}
-#tellraw @s {text:"   表世界 - 快照服 ",bold:true,"obfuscated":false,color:"dark_aqua",click_event:{"action":"run_command","command":"stp snapshot"},hover_event:{"action":"show_text","value":{text:"传送至主世界的快照服 需要白名单请注意！",color:"white"}}}
+#tellraw @s {text:"   表世界 - 生存服 ",bold:1b,"obfuscated":false,color:"gold",click_event:{"action":"run_command","command":"lobby"},hover_event:{"action":"show_text","value":{text:"传送至主世界的生存服",color:"white"}}}
+#tellraw @s {text:"   表世界 - 快照服 ",bold:1b,"obfuscated":false,color:"dark_aqua",click_event:{"action":"run_command","command":"stp snapshot"},hover_event:{"action":"show_text","value":{text:"传送至主世界的快照服 需要白名单请注意！",color:"white"}}}
 #
 scoreboard players set @s MultiMenu 0

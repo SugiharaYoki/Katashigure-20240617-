@@ -15,9 +15,9 @@ execute if score skywar_start rng1 matches 2 run tag @a[tag=!Gaming] remove NoSk
 execute if score skywar_start rng1 matches 2 run tag @a[tag=Gaming] add NoSkyWarTemp
 execute if score skywar_start rng1 matches 2 run tag @a[tag=NoSkyWarTemp] add NoSkyWar
 execute if score skywar_start rng1 matches 2 run title @a[tag=!Gaming,tag=!NoSkyWar] times 4 50 5
-execute if score skywar_start rng1 matches 2 run title @a[tag=!Gaming,tag=!NoSkyWar] title {text:"开启PVP竞技场",bold:true,color:"gold"}
+execute if score skywar_start rng1 matches 2 run title @a[tag=!Gaming,tag=!NoSkyWar] title {text:"开启PVP竞技场",bold:1b,color:"gold"}
 execute if score skywar_start rng1 matches 2 run tellraw @a[tag=!Gaming] {text:"   『个人面板』",color:"yellow"}
-execute if score skywar_start rng1 matches 2 run tellraw @a[tag=!Gaming,tag=NoSkyWar] {text:"您设置了“禁用PVP战争”！请选择是否加入PVP",bold:false,color:"light_purple"}
+execute if score skywar_start rng1 matches 2 run tellraw @a[tag=!Gaming,tag=NoSkyWar] {text:"您设置了“禁用PVP战争”！请选择是否加入PVP",bold:0b,color:"light_purple"}
 execute if score skywar_start rng1 matches 2 run tellraw @a[tag=!Gaming,tag=NoSkyWar] {text:"   —— [参加游戏] ——",color:"green",click_event:{"action":"run_command","command":"trigger MultiMenu set 992"},hover_event:{"action":"show_text","value":{text:"暂时关闭“自动参加PVP战争”",color:"green"}}}
 execute if score skywar_start rng1 matches 2 run tellraw @a[tag=!Gaming,tag=!NoSkyWar] {text:"   —— [不参加游戏： 仅本局] ——",color:"green",click_event:{"action":"run_command","command":"trigger MultiMenu set 993"},hover_event:{"action":"show_text","value":{text:"关闭“自动参加PVP战争”",color:"green"}}}
 execute if score skywar_start rng1 matches 2 run tellraw @a[tag=!Gaming,tag=!NoSkyWar] {text:"   —— [不参加游戏： 直到自己重新打开] ——",color:"green",click_event:{"action":"run_command","command":"trigger MultiMenu set 995"},hover_event:{"action":"show_text","value":{text:"开启“自动参加PVP战争”",color:"green"}}}
@@ -287,7 +287,7 @@ execute if block -131 59 -117 green_concrete if score skywar_start rng1 matches 
 execute if block -131 59 -117 green_concrete if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run give @s green_dye 8
 execute if block -131 59 -117 green_concrete if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run give @s yellow_dye 8
 
-execute if block -131 59 -116 green_concrete if score skywar_start rng1 matches 17 run give @a[tag=PVPing] bow[unbreakable={},enchantments={power:150,infinity:1},custom_name='{text:"猎击弓",italic:false,color:"white"}']
+execute if block -131 59 -116 green_concrete if score skywar_start rng1 matches 17 run give @a[tag=PVPing] bow[unbreakable={},enchantments={power:150,infinity:1},custom_name='{text:"猎击弓",italic:0b,color:"white"}']
 execute if block -131 59 -116 green_concrete if score skywar_start rng1 matches 17 run give @a[tag=PVPing] arrow 32
 
 execute if score skywar_start rng1 matches 17 as @a[tag=PVPing] at @s run effect clear @s saturation

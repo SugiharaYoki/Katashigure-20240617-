@@ -12,4 +12,4 @@ setblock 50448 1 50048 structure_block{ignoreEntities:1b,powered:0b,rotation:"NO
 setblock 50448 0 50048 redstone_block
 fill 50448 0 50048 50448 1 50048 air
 
-title @a actionbar {text:"空岛战争： 荒废之地的民谣",bold:true,color:"blue"}
+title @a actionbar {text:"空岛战争： 荒废之地的民谣",bold:1b,color:"blue"}

@@ -24,7 +24,7 @@ tag @a[tag=NoSkyWarTemp,tag=!Gaming] remove NoSkyWar
 tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove MapLoaAlr
 tag @a[tag=!Gaming] remove NoSkyWarTemp
 title @a[tag=!Gaming,tag=!NoSkyWar] times 0 30 5
-title @a[tag=!Gaming,tag=!NoSkyWar] title {text:"开局暂停",bold:true,color:"red"}
+title @a[tag=!Gaming,tag=!NoSkyWar] title {text:"开局暂停",bold:1b,color:"red"}
 #《地图预加载初始化》
 #-#-#setblock 12 60 -7 green_wool
 #-#-#setblock 19 60 -7 green_wool

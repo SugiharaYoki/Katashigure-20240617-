@@ -1,5 +1,5 @@
 
-tellraw @s {text:"『怪物图鉴』","extra":[""],color:"aqua",bold:true}
+tellraw @s {text:"『怪物图鉴』","extra":[""],color:"aqua",bold:1b}
 tellraw @s {text:"   "}
 
 $execute unless data storage azr:handbook_vitae doc.$(eid).sword unless data storage azr:handbook_vitae doc.$(eid).pillager unless data storage azr:handbook_vitae doc.$(eid).axe run tellraw @s [{text:"★？",color:"#6f8095"},{text:"  "},{text:"★？",color:"#6f8095"},{text:"  "},{text:"★？",color:"#6f8095"}]

@@ -1,6 +1,6 @@
 execute as @s run function skyblock:sea/calc/armor
-# tellraw @s {text:"『防具升级页面 - 护甲』",bold:true,color:"red"}
-tellraw @s {text:"『防具升级页面 - 护甲』","extra":[""],color:"red",bold:true,hover_event:{"action":"show_text","value":{"translate":"当前已激活的加成：\n护甲值：+%s\n护甲韧性：+%s\n燃烧时间：-%s%%\n移动速度：+%s%%","with":[{"storage":"sea:calc","nbt":"armor.armor.val",color:"green"},{"nbt":"armor.armor_toughness.val","storage":"sea:calc",color:"green"},{"nbt":"armor.burning_time.val","storage":"sea:calc",color:"red"},{"nbt":"armor.movement_speed.val","storage":"sea:calc",color:"green"}],"type":"translatable"}}}
+# tellraw @s {text:"『防具升级页面 - 护甲』",bold:1b,color:"red"}
+tellraw @s {text:"『防具升级页面 - 护甲』","extra":[""],color:"red",bold:1b,hover_event:{"action":"show_text","value":{"translate":"当前已激活的加成：\n护甲值：+%s\n护甲韧性：+%s\n燃烧时间：-%s%%\n移动速度：+%s%%","with":[{"storage":"sea:calc","nbt":"armor.armor.val",color:"green"},{"nbt":"armor.armor_toughness.val","storage":"sea:calc",color:"green"},{"nbt":"armor.burning_time.val","storage":"sea:calc",color:"red"},{"nbt":"armor.movement_speed.val","storage":"sea:calc",color:"green"}],"type":"translatable"}}}
 tellraw @s {text:"   "}
 
 function skyblock:sea/p/w/armor_effect
@@ -193,8 +193,8 @@ tellraw @s [{text:" ",color:"light_purple"},\
 
 
 function skyblock:sea/shop_calculation
-tellraw @s[scores={sea_i_echo_shard=1..}] [{text:"剩余可分配回声碎片：",bold:true,color:"green"},{bold:false,"score":{"name":"@s","objective":"sea_i_echo_shard"},color:"green"},{text:"〈全部重置〉",bold:true,color:"red",click_event:{"action":"run_command","command":"trigger sea_crafter set 59905"}}]
-tellraw @s[scores={sea_i_echo_shard=..0}] [{text:"剩余可分配回声碎片：",bold:true,color:"green"},{bold:false,"score":{"name":"@s","objective":"sea_i_echo_shard"},color:"red"},{text:"〈全部重置〉",bold:true,color:"red",click_event:{"action":"run_command","command":"trigger sea_crafter set 59905"}}]
+tellraw @s[scores={sea_i_echo_shard=1..}] [{text:"剩余可分配回声碎片：",bold:1b,color:"green"},{bold:0b,"score":{"name":"@s","objective":"sea_i_echo_shard"},color:"green"},{text:"〈全部重置〉",bold:1b,color:"red",click_event:{"action":"run_command","command":"trigger sea_crafter set 59905"}}]
+tellraw @s[scores={sea_i_echo_shard=..0}] [{text:"剩余可分配回声碎片：",bold:1b,color:"green"},{bold:0b,"score":{"name":"@s","objective":"sea_i_echo_shard"},color:"red"},{text:"〈全部重置〉",bold:1b,color:"red",click_event:{"action":"run_command","command":"trigger sea_crafter set 59905"}}]
 
 kill @e[tag=SEA_w_armor_displaymarker,type=marker]
 scoreboard players set @s sea_crafter 0

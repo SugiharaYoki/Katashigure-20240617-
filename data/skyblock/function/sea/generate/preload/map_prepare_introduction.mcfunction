@@ -244,7 +244,7 @@ item replace block 90103 122 115 container.12 with coal 1
 item replace block 90103 122 115 container.14 with potato 2
 setblock 90118 123 134 lever[powered=false,facing=east]
 fill 90114 124 133 90114 122 132 iron_block
-item replace block 90095 122 128 container.26 with amethyst_shard[custom_name='{text:"紫水晶碎块",bold:false,italic:true,color:"gold",italic:false}',lore=['{text:"散发着诡谲气息的宝石。",color:"white",italic:false}']] 1
+item replace block 90095 122 128 container.26 with amethyst_shard[custom_name='{text:"紫水晶碎块",bold:0b,italic:true,color:"gold",italic:0b}',lore=['{text:"散发着诡谲气息的宝石。",color:"white",italic:0b}']] 1
 
 setblock 90058 103 137 smoker[facing=east]
 
@@ -286,8 +286,8 @@ setblock 90137 122 129 air
 fill 90146 122 133 90145 124 133 minecraft:deepslate_tiles
 setblock 90141 122 139 minecraft:air
 setblock 90148 122 144 chest[facing=north]
-item replace block 90148 122 144 container.12 with wild_armor_trim_smithing_template[custom_name='{text:"狂荒石板",color:"light_purple",italic:false}']
-item replace block 90148 122 144 container.14 with wayfinder_armor_trim_smithing_template[custom_name='{text:"醒殉徒石板",color:"light_purple",italic:false}']
+item replace block 90148 122 144 container.12 with wild_armor_trim_smithing_template[custom_name='{text:"狂荒石板",color:"light_purple",italic:0b}']
+item replace block 90148 122 144 container.14 with wayfinder_armor_trim_smithing_template[custom_name='{text:"醒殉徒石板",color:"light_purple",italic:0b}']
 setblock 90107 123 117 air
 setblock 90107 123 117 lever[powered=false,facing=west]
 
@@ -314,7 +314,7 @@ setblock 90103 122 109 minecraft:air
 setblock 90105 122 104 minecraft:potted_cherry_sapling
 setblock 90105 122 106 chest[facing=west]
 item replace block 90105 122 106 container.12 with arrow 3
-item replace block 90105 122 106 container.14 with raiser_armor_trim_smithing_template[custom_name='{text:"牧羊人石板",color:"light_purple",italic:false}']
+item replace block 90105 122 106 container.14 with raiser_armor_trim_smithing_template[custom_name='{text:"牧羊人石板",color:"light_purple",italic:0b}']
 
 summon minecraft:item_frame 90091 128 133 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:bread"}}
 
@@ -330,8 +330,8 @@ fill 90086 122 105 90086 122 104 minecraft:air
 setblock 90096 122 117 air
 setblock 90096 122 117 chest[facing=north]{lock:{components:{custom_data:{"sea_key02":true}}}}
 item replace block 90096 122 117 container.11 with arrow 3
-item replace block 90096 122 117 container.13 with wayfinder_armor_trim_smithing_template[custom_name='{text:"醒殉徒石板",color:"light_purple",italic:false}']
-item replace block 90096 122 117 container.15 with wild_armor_trim_smithing_template[custom_name='{text:"狂荒石板",color:"light_purple",italic:false}']
+item replace block 90096 122 117 container.13 with wayfinder_armor_trim_smithing_template[custom_name='{text:"醒殉徒石板",color:"light_purple",italic:0b}']
+item replace block 90096 122 117 container.15 with wild_armor_trim_smithing_template[custom_name='{text:"狂荒石板",color:"light_purple",italic:0b}']
 fill 90078 124 116 90078 124 101 minecraft:waxed_copper_bulb[lit=true] replace minecraft:waxed_copper_bulb[lit=false]
 setblock 90089 123 138 air
 setblock 90089 123 138 lever[powered=false,facing=east]
@@ -356,7 +356,7 @@ fill 90085 111 137 90085 109 139 minecraft:waxed_copper_grate
 setblock 90078 110 111 minecraft:redstone_block
 setblock 90078 110 111 minecraft:air
 setblock 90074 110 132 chest[facing=north]
-item replace block 90074 110 132 container.13 with wild_armor_trim_smithing_template[custom_name='{text:"狂荒石板",color:"light_purple",italic:false}'] 2
+item replace block 90074 110 132 container.13 with wild_armor_trim_smithing_template[custom_name='{text:"狂荒石板",color:"light_purple",italic:0b}'] 2
 fill 90076 121 109 90077 121 108 minecraft:waxed_copper_grate
 
 
@@ -391,8 +391,8 @@ item replace block 90070 122 131 container.14 with gunpowder 2
 fill 90128 123 145 90128 122 145 minecraft:slime_block
 fill 90134 124 147 90134 122 147 minecraft:slime_block
 setblock 90133 123 149 chest[facing=north]
-item replace block 90133 123 149 container.12 with wayfinder_armor_trim_smithing_template[custom_name='{text:"醒殉徒石板",color:"light_purple",italic:false}'] 2
-item replace block 90133 123 149 container.14 with raiser_armor_trim_smithing_template[custom_name='{text:"牧羊人石板",color:"light_purple",italic:false}'] 2
+item replace block 90133 123 149 container.12 with wayfinder_armor_trim_smithing_template[custom_name='{text:"醒殉徒石板",color:"light_purple",italic:0b}'] 2
+item replace block 90133 123 149 container.14 with raiser_armor_trim_smithing_template[custom_name='{text:"牧羊人石板",color:"light_purple",italic:0b}'] 2
 
 setblock 90139 115 147 air
 setblock 90140 115 147 air
@@ -421,7 +421,7 @@ setblock 90114 123 125 chest[facing=east]
 
 item replace block 90081 122 145 container.11 with arrow 3
 item replace block 90081 122 145 container.13 with arrow 3
-item replace block 90081 122 145 container.15 with raiser_armor_trim_smithing_template[custom_name='{text:"牧羊人石板",color:"light_purple",italic:false}'] 2
+item replace block 90081 122 145 container.15 with raiser_armor_trim_smithing_template[custom_name='{text:"牧羊人石板",color:"light_purple",italic:0b}'] 2
 
 scoreboard objectives add sea_is_running minecraft.custom:minecraft.sprint_one_cm
 scoreboard objectives add sea_runs dummy
@@ -563,7 +563,7 @@ summon text_display 90074.0 105 164 {background:7631988,text:'{text:"轻按跳�
 summon text_display 90074.0 129 164 {background:7631988,text:'{text:"轻按跳跃使用电梯",color:"aqua"}',Rotation:[180f,0f],shadow:1b,text_opacity:200,alignment:center}
 
 setblock 90068 128 136 chest[facing=west]
-item replace block 90068 128 136 container.13 with fire_charge[custom_name='{text:"定时炸弹",italic:true,color:"blue",italic:false}',lore=['{text:"它会在你丢出去3秒后爆炸！",color:"white",italic:false}','{text:"炸到自己的话，职业生涯就会结束了吧。",color:"white",italic:false}','{text:"可用于破坏凝胶壁障与瓦罐。",color:"white",italic:false}']] 1
+item replace block 90068 128 136 container.13 with fire_charge[custom_name='{text:"定时炸弹",italic:true,color:"blue",italic:0b}',lore=['{text:"它会在你丢出去3秒后爆炸！",color:"white",italic:0b}','{text:"炸到自己的话，职业生涯就会结束了吧。",color:"white",italic:0b}','{text:"可用于破坏凝胶壁障与瓦罐。",color:"white",italic:0b}']] 1
 
 setblock 90074 103 136 minecraft:air
 
