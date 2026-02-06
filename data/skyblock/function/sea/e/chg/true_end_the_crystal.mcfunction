@@ -7,7 +7,7 @@ execute if score SEA_chg_true_end sea_4temp1 matches 2 run item replace block 90
 execute if score SEA_chg_true_end sea_4temp1 matches 2 run item replace block 90097 132 99 container.22 with echo_shard
 execute if score SEA_chg_true_end sea_4temp1 matches 2 run setblock 90097 132 99 air destroy
 
-execute if score SEA_chg_true_end sea_4temp1 matches 8 run particle flash 90093 131 102 0 0 0 0 1
+execute if score SEA_chg_true_end sea_4temp1 matches 8 run particle flash{color:[1.000,0.300,1.000,1.00]} 90093 131 102 0 0 0 0 1
 
 
 

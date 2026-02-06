@@ -83,7 +83,7 @@ execute unless block 90081 101 137 minecraft:dark_oak_hanging_sign positioned 90
 execute unless block 90081 101 137 minecraft:dark_oak_hanging_sign positioned 90114 79 61 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..6] if block 90117 79 56 flower_pot run setblock 90117 79 56 air
 
 
-execute positioned 90110.03 109.00 28.05 as @a[tag=SEAPT,tag=!SEAPF,distance=0..6] at @s unless block ~ ~-0.1 ~ air unless block ~ ~-0.1 ~ chain if block 90111 108 28 waxed_copper_block run function skyblock:sea/e/ch5/lifter_move_1
+execute positioned 90110.03 109.00 28.05 as @a[tag=SEAPT,tag=!SEAPF,distance=0..6] at @s unless block ~ ~-0.1 ~ air unless block ~ ~-0.1 ~ iron_chain if block 90111 108 28 waxed_copper_block run function skyblock:sea/e/ch5/lifter_move_1
 
 execute if block 90111 89 32 bamboo_button[powered=true] if block 90111 99 29 air run function skyblock:sea/e/ch5/lifter_move_2
 execute if block 90111 90 32 bamboo_button[powered=true] unless block 90111 99 29 air run function skyblock:sea/e/ch5/lifter_move_3
@@ -100,8 +100,8 @@ execute unless block 90081 101 137 minecraft:dark_oak_hanging_sign store result 
 execute unless block 90081 101 137 minecraft:dark_oak_hanging_sign positioned 90112 149 103 if score sea_ch5_mood sea_4temp1 matches 1 as @r[tag=SEAPT,distance=0..400] run function skyblock:sea/e/ch5/mood_1
 execute unless block 90081 101 137 minecraft:dark_oak_hanging_sign positioned 90112 149 103 if score sea_ch5_mood sea_4temp1 matches 3..14 as @r[tag=SEAPT,distance=0..400] at @s positioned over world_surface if entity @s[distance=0..1.5] unless entity @n[tag=SEAboss5] unless entity @n[tag=SEAboss5b] run function skyblock:sea/e/ch5/mood_1_surface
 execute unless block 90081 101 137 minecraft:dark_oak_hanging_sign positioned 90112 149 103 if score sea_ch5_mood sea_4temp1 matches 1..20 as @r[tag=SEAPT,distance=0..400] at @s positioned over world_surface if entity @s[distance=0..1.5] run particle minecraft:ash ~ ~8 ~ 6 5 6 0 20
-execute unless block 90081 101 137 minecraft:dark_oak_hanging_sign positioned 90112 149 103 if score sea_ch5_mood sea_4temp1 matches 1..20 as @r[tag=SEAPT,distance=0..400] at @s positioned over world_surface if entity @s[distance=0..1.5] unless block 90150 124 15 chain run particle minecraft:white_ash ~ ~8 ~ 6 5 6 0 20
-execute unless block 90081 101 137 minecraft:dark_oak_hanging_sign positioned 90112 149 103 if score sea_ch5_mood sea_4temp1 matches 1..20 as @r[tag=SEAPT,distance=0..400] at @s positioned over world_surface if entity @s[distance=0..1.5] if block 90150 124 15 chain run particle minecraft:crimson_spore ~ ~8 ~ 6 5 6 0 20
+execute unless block 90081 101 137 minecraft:dark_oak_hanging_sign positioned 90112 149 103 if score sea_ch5_mood sea_4temp1 matches 1..20 as @r[tag=SEAPT,distance=0..400] at @s positioned over world_surface if entity @s[distance=0..1.5] unless block 90150 124 15 iron_chain run particle minecraft:white_ash ~ ~8 ~ 6 5 6 0 20
+execute unless block 90081 101 137 minecraft:dark_oak_hanging_sign positioned 90112 149 103 if score sea_ch5_mood sea_4temp1 matches 1..20 as @r[tag=SEAPT,distance=0..400] at @s positioned over world_surface if entity @s[distance=0..1.5] if block 90150 124 15 iron_chain run particle minecraft:crimson_spore ~ ~8 ~ 6 5 6 0 20
 
 
 
@@ -250,7 +250,7 @@ execute unless block 90081 101 137 minecraft:dark_oak_hanging_sign if entity @a[
 execute unless block 90081 101 137 minecraft:dark_oak_hanging_sign if block 90118 90 73 warped_button[powered=true] if score SEA_ch5_event_marilyn rng1 matches ..0 run scoreboard players set SEA_ch5_event_marilyn rng1 1
 execute unless block 90081 101 137 minecraft:dark_oak_hanging_sign if score SEA_ch5_event_marilyn rng1 matches 1.. run function skyblock:sea/e/ch5/marilyn/communication_1
 
-execute unless block 90081 101 137 minecraft:dark_oak_hanging_sign if block 90074 103 136 lectern if entity @a[tag=SEAPT,tag=e_i_46] positioned 90142 134 26 if block 90153 124 18 chain unless entity @n[tag=SEAboss5b] if score SEA_ch5_event_boss5 rng9 matches ..0 run scoreboard players set SEA_ch5_event_boss5 rng9 39
+execute unless block 90081 101 137 minecraft:dark_oak_hanging_sign if block 90074 103 136 lectern if entity @a[tag=SEAPT,tag=e_i_46] positioned 90142 134 26 if block 90153 124 18 iron_chain unless entity @n[tag=SEAboss5b] if score SEA_ch5_event_boss5 rng9 matches ..0 run scoreboard players set SEA_ch5_event_boss5 rng9 39
 
 execute unless block 90081 101 137 minecraft:dark_oak_hanging_sign if score SEA_ch5_event_boss5 rng9 matches 100.. run function skyblock:sea/e/ch5/boss5/conclusion
 

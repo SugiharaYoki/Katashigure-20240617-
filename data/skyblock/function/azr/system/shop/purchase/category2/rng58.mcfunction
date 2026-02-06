@@ -1,4 +1,4 @@
-clear @s chain 5
+clear @s iron_chain 5
 
 function skyblock:azr/assets/items/weapons/iron_axe_chain_wide
 

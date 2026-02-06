@@ -1,7 +1,7 @@
 tag @s add azr_skills_arrow
 scoreboard players set @s AZR_arrowUpg_pts 1
 
-clear @s chain 5
+clear @s iron_chain 5
 
 execute at @s run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
 tellraw @s {text:"解封了灵能「残城箭影」！",color:"green"}

@@ -35,7 +35,7 @@ execute if score @s rng4 matches 17 as @s at @s run fill ~5 ~ ~4 ~-5 ~ ~-5 fire 
 execute if score @s rng4 matches 18 as @s at @s run fill ~6 ~ ~4 ~-6 ~ ~-6 fire replace air
 execute if score @s rng4 matches 19 as @s at @s run fill ~7 ~ ~4 ~-7 ~ ~-7 fire replace air
 execute if score @s rng4 matches 13 as @s at @s run particle flame ~ ~1 ~ 0 0 0 3 100
-execute if score @s rng4 matches 29 as @s at @s run particle flash ~ ~1 ~ 0 0 0 0 1
+execute if score @s rng4 matches 29 as @s at @s run particle flash{color:[1.000,1.000,1.000,1.00]} ~ ~1 ~ 0 0 0 0 1
 execute if score @s rng4 matches 20 as @s at @s run fill ~1 ~ ~1 ~-1 ~ ~-1 air replace fire
 execute if score @s rng4 matches 21 as @s at @s run fill ~2 ~ ~2 ~-2 ~ ~-2 air replace fire
 execute if score @s rng4 matches 22 as @s at @s run fill ~3 ~ ~3 ~-3 ~ ~-3 air replace fire

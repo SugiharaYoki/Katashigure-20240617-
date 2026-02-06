@@ -15,6 +15,6 @@ execute if score @s rng1 matches 8.. at @s positioned ~ ~1 ~ as @a[distance=0..0
 execute if score @s rng1 matches 8.. at @s positioned ~ ~2 ~ as @a[distance=0..0.6] at @s run damage @s 8 mob_attack
 execute if score @s rng1 matches 8.. at @s positioned ~ ~3 ~ as @a[distance=0..0.6] at @s run damage @s 8 mob_attack
 execute if score @s rng1 matches 8.. at @s run playsound block.anvil.place hostile @a ~ ~ ~ 0.8 1.3
-execute if score @s rng1 matches 8.. at @s run particle flash ~ ~ ~ 0 0 0 0 1
+execute if score @s rng1 matches 8.. at @s run particle flash{color:[1.000,1.000,1.000,1.00]} ~ ~ ~ 0 0 0 0 1
 
 execute if score @s rng1 matches 8.. run kill @s

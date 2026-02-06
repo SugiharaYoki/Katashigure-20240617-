@@ -2,7 +2,7 @@ scoreboard players add @s rng1 1
 
 #execute if score @s rng1 matches 3 run playsound minecraft:entity.breeze.shoot block @a ~ ~ ~ 0.8 1.8
 execute if score @s rng1 matches 3 run particle wax_off ~0 ~5 ~0 0 5 0 0 20
-execute if score @s rng1 matches 3 run particle flash ~0 ~1 ~0 0 0 0 0 1
+execute if score @s rng1 matches 3 run particle flash{color:[1.000,1.000,1.000,1.00]} ~0 ~1 ~0 0 0 0 0 1
 execute if score @s rng1 matches 4 run particle electric_spark ~0 ~3 ~0 0 1 0 0.2 30
 execute if score @s rng1 matches 5 run particle electric_spark ~0 ~5 ~0 0 1 0 0.2 30
 execute if score @s rng1 matches 6 run particle electric_spark ~0 ~7 ~0 0 1 0 0.2 30

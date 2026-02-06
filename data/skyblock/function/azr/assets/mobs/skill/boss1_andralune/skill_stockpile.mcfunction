@@ -53,7 +53,7 @@ execute if score @s rng8 matches 70 as @n[tag=AZR_boss2_stockpile_marker] at @s 
 execute if score @s rng8 matches 70 as @n[tag=AZR_boss2_stockpile_marker] at @s run playsound entity.arrow.shoot hostile @a ~ ~ ~ 2 0.85
 execute if score @s rng8 matches 70.. as @n[tag=AZR_boss2_stockpile_marker] at @s run tp @s ^ ^ ^2
 execute if score @s rng8 matches 70.. as @n[tag=AZR_boss2_stockpile_marker] at @s run particle explosion ~ ~ ~ 0.1 0.1 0.1 0 3
-execute if score @s rng8 matches 70.. as @n[tag=AZR_boss2_stockpile_marker] at @s run particle flash ~ ~ ~ 0.1 0.1 0.1 0 1
+execute if score @s rng8 matches 70.. as @n[tag=AZR_boss2_stockpile_marker] at @s run particle flash{color:[1.000,1.000,1.000,1.00]} ~ ~ ~ 0.1 0.1 0.1 0 1
 execute if score @s rng8 matches 70.. as @n[tag=AZR_boss2_stockpile_marker] at @s run playsound entity.generic.explode hostile @a ~ ~ ~ 0.9 1.3
 execute if score @s rng8 matches 70.. as @n[tag=AZR_boss2_stockpile_marker] at @s as @a[distance=0..2.5] run damage @s 8 arrow
 execute if score @s rng8 matches 80.. as @e[tag=AZR_boss2_stockpile_marker,type=marker] at @s run kill @s
