@@ -39,8 +39,8 @@ execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 50 if block ~ ~-
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90..118 run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 1
 
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 3..52 run attribute @s gravity base set 0.8
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 3..52 if entity @s[nbt={OnGround:1b}] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 2
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 3 if entity @s[nbt={OnGround:0b}] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 1
+#execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 3..52 if entity @s[nbt={OnGround:1b}] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 2
+#execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 3 if entity @s[nbt={OnGround:0b}] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 1
 execute if score @s[scores={AzrSariel_Amulet_StayFloat_power=1}] AzrSariel_Amulet_StayFloat_cooldown matches 2 run particle minecraft:crit ~ ~ ~ 0.5 0 0.5 0 10
 execute if score @s[scores={AzrSariel_Amulet_StayFloat_power=1}] AzrSariel_Amulet_StayFloat_cooldown matches 2 run playsound entity.player.attack.knockback player @a ~ ~ ~ 0.7 1.6
 execute if score @s[scores={AzrSariel_Amulet_StayFloat_power=1}] AzrSariel_Amulet_StayFloat_cooldown matches 2 as @e[tag=AzrielMob,distance=0..1.2,limit=4,sort=nearest] at @s run damage @s 3 mace_smash by @p[scores={AzrSariel_Amulet_StayFloat_cooldown=2}]
