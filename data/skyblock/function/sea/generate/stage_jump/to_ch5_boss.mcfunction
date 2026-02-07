@@ -81,14 +81,14 @@ fill 90122 120 41 90122 119 41 gravel
 clone 90108 2 26 90111 8 29 90108 100 26
 
 fill 90108 108 26 90111 108 29 air destroy
-setblock 90108 108 26 chain
-setblock 90111 108 26 chain
-setblock 90108 108 29 chain
-setblock 90111 108 29 chain
-setblock 90108 107 26 chain
-setblock 90111 107 26 chain
-setblock 90108 107 29 chain
-setblock 90111 107 29 chain
+setblock 90108 108 26 iron_chain
+setblock 90111 108 26 iron_chain
+setblock 90108 108 29 iron_chain
+setblock 90111 108 29 iron_chain
+setblock 90108 107 26 iron_chain
+setblock 90111 107 26 iron_chain
+setblock 90108 107 29 iron_chain
+setblock 90111 107 29 iron_chain
 
 execute positioned 90122 100 27 run setblock ~ ~ ~ air destroy
 execute positioned 90128 100 27 run setblock ~ ~ ~ air destroy

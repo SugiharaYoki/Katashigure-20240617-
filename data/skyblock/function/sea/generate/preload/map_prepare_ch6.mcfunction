@@ -21,8 +21,8 @@ fill 90134 130 58 90134 130 59 minecraft:heavy_weighted_pressure_plate
 fill 90142 132 46 90142 130 46 air
 fill 90117 131 68 90121 131 68 air
 
-setblock 90150 124 15 chain
-setblock 90153 122 18 chain
+setblock 90150 124 15 iron_chain
+setblock 90153 122 18 iron_chain
 setblock 90125 129 29 minecraft:heavy_weighted_pressure_plate
 setblock 90136 129 39 minecraft:heavy_weighted_pressure_plate
 

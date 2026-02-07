@@ -39,7 +39,7 @@ execute if score @s sea_4temp3 matches 17 positioned 90202 130 -30 positioned ~2
 
 execute if score SEA_ch5_event_boss5 rng1 matches 180 positioned 90167 139 24 run stopsound @a[distance=0..250] music
 execute if score SEA_ch5_event_boss5 rng1 matches 180 positioned 90167 139 24 run scoreboard players set SEAmusic rng1 99999
-execute if score SEA_ch5_event_boss5 rng1 matches 231 positioned 90167 139 24 run setblock 90153 124 18 chain
+execute if score SEA_ch5_event_boss5 rng1 matches 231 positioned 90167 139 24 run setblock 90153 124 18 iron_chain
 execute if score SEA_ch5_event_boss5 rng1 matches 181 positioned 90167 139 24 run summon marker ~ ~ ~ {Tags:["SEAboss5_heaven_portal"]}
 
 execute if score SEA_ch5_event_boss5 rng1 matches 251 positioned 90167 139 24 run scoreboard players set SEAmusic rng1 4500

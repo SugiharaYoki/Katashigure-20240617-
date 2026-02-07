@@ -5,10 +5,10 @@ fill 90108 100 26 90111 100 29 air destroy
 fill 90108 102 26 90111 102 29 air destroy
 fill 90108 106 26 90111 106 29 air destroy
 fill 90108 108 26 90111 108 29 air destroy
-fill 90111 86 26 90111 109 26 chain
-fill 90108 86 26 90108 109 26 chain
-fill 90111 86 29 90111 109 29 chain
-fill 90108 86 29 90108 109 29 chain
+fill 90111 86 26 90111 109 26 iron_chain
+fill 90108 86 26 90108 109 26 iron_chain
+fill 90111 86 29 90111 109 29 iron_chain
+fill 90108 86 29 90108 109 29 iron_chain
 
 playsound ambient.cave ambient @a 90109.93 102.00 27.98 2 1.2
 playsound ambient.cave ambient @a 90109.93 102.00 27.98 2 1.2
