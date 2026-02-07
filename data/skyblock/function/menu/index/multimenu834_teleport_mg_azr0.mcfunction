@@ -15,9 +15,9 @@ execute at @s run playsound minecraft:item.chorus_fruit.teleport master @s ~ ~ ~
 execute at @s run particle minecraft:reverse_portal ~ ~1 ~ 0.5 0.6 0.5 0.2 60
 scoreboard players set @s MultiMenu 0
 
-#summon text_display ~ ~2.3 ~ {alignment:center,shadow:true,text:'{text:"「花园：零」",color:"light_purple",bold:1b}}
-#summon text_display ~ ~1.7 ~ {alignment:center,shadow:true,text:'{text:"选择心仪的灵能与武器",color:"white"}}
-#summon text_display ~ ~1.3 ~ {alignment:center,shadow:true,text:'{text:"在教堂内迎击无尽的敌人",color:"white"}}
+#summon text_display ~ ~2.3 ~ {alignment:center,shadow:true,text:"「花园：零」",color:"light_purple",bold:1b}}
+#summon text_display ~ ~1.7 ~ {alignment:center,shadow:true,text:"选择心仪的灵能与武器",color:"white"}}
+#summon text_display ~ ~1.3 ~ {alignment:center,shadow:true,text:"在教堂内迎击无尽的敌人",color:"white"}}
 
 
 

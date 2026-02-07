@@ -255,7 +255,7 @@ fill 90158 36 131 90158 34 129 minecraft:iron_bars
 fill 90159 38 131 90159 38 129 minecraft:waxed_exposed_copper_bulb[lit=true]
 setblock 90183 12 136 minecraft:crimson_button[facing=north,face=floor]
 setblock 90182 12 136 minecraft:waxed_exposed_copper_bulb[lit=false]
-summon text_display 90159 36.5 130 {background:0,text:'{text:"禁止通行 灾害应对",color:"dark_red"},Rotation:[-90f,0f],shadow:1b,alignment:"center"}
+summon text_display 90159 36.5 130 {background:0,text:"禁止通行 灾害应对",color:"dark_red"},Rotation:[-90f,0f],shadow:1b,alignment:"center"}
 setblock 90172 39 169 minecraft:crimson_button[facing=north,face=floor]
 setblock 90171 39 169 minecraft:waxed_exposed_copper_bulb[lit=false]
 
