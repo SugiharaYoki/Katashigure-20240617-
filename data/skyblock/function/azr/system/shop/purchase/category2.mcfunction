@@ -154,7 +154,8 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=52,Azr_Shop=$(trigger)}] \
     unless function skyblock:azr/system/shop/purchase/category2/\
     rng52 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 52 @s 锁链长斧  50 绿宝石
-
+say hi!
+$execute as @s[scores={Azr_Shop_rng$(rng)=52,Azr_Shop=$(trigger)}] run say hello!
 $execute as @s[scores={Azr_Shop_rng$(rng)=53,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* bone[count={min:12}] \
