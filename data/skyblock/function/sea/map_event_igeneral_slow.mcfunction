@@ -4,7 +4,7 @@
 execute store result score 10e959db-4b44-4cdd-b98c-350d3b454206 rng2 run random value 1..10
 execute as @a[tag=SEAPT,x=90076,y=121,z=136,distance=0..25] at @s if entity @n[tag=sc,scores={rng2=1}] run setblock 90078 125 137 minecraft:redstone_lamp[lit=true]
 execute as @a[tag=SEAPT,x=90076,y=121,z=136,distance=0..25] at @s if entity @n[tag=sc,scores={rng2=10}] run setblock 90078 125 137 minecraft:redstone_lamp[lit=false]
-#give @s iron_hoe[custom_name={text:"撬棍",italic:0b,color:"red"},custom_data={sea_crowbar:true}]
+#give @s copper_hoe[custom_name={text:"撬棍",italic:0b,color:"red"},custom_data={sea_crowbar:true}]
 
 execute as @e[type=zombie,tag=SEAknight,x=90000,y=100,z=100,distance=..3000] at @s if entity @a[tag=SEAPT,distance=0..8] run function skyblock:sea/p/knight
 execute as @e[type=zombie_horse,tag=SEAhorse,x=90000,y=100,z=100,distance=..3000] at @s if entity @a[tag=SEAPT,distance=0..8] run function skyblock:sea/p/horse

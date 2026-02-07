@@ -26,7 +26,7 @@ execute as @a[distance=0..4] at @s if items entity @s weapon.mainhand trident ru
 
 execute as @a[distance=0..4] at @s if items entity @s armor.head turtle_helmet run item replace entity @s armor.head with turtle_helmet
 execute as @a[distance=0..4] at @s if items entity @s armor.head leather_helmet run item replace entity @s armor.head with leather_helmet
-execute as @a[distance=0..4] at @s if items entity @s armor.head chainmail_helmet run item replace entity @s armor.head with iron_chainmail_helmet
+execute as @a[distance=0..4] at @s if items entity @s armor.head chainmail_helmet run item replace entity @s armor.head with chainmail_helmet
 execute as @a[distance=0..4] at @s if items entity @s armor.head iron_helmet run item replace entity @s armor.head with iron_helmet
 execute as @a[distance=0..4] at @s if items entity @s armor.head diamond_helmet run item replace entity @s armor.head with diamond_helmet
 execute as @a[distance=0..4] at @s if items entity @s armor.head golden_helmet run item replace entity @s armor.head with golden_helmet

@@ -334,7 +334,7 @@
             },
             {
               "type": "minecraft:item",
-              "name": "minecraft:iron_chainmail_helmet",
+              "name": "minecraft:chainmail_helmet",
               "weight": 32,
               "functions": [
                 {

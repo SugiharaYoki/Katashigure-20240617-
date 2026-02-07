@@ -67,7 +67,7 @@ execute if entity @s[scores={SeGa_DVInv2=25,SeGa_DVInv20=5}] run scoreboard play
 
 execute if entity @s[scores={SeGa_DVInv12=1}] run item replace entity @s armor.head with leather_helmet
 execute if entity @s[scores={SeGa_DVInv12=1}] run item replace entity @s armor.chest with leather_chestplate
-execute if entity @s[scores={SeGa_DVInv12=2}] run item replace entity @s armor.head with iron_chainmail_helmet
+execute if entity @s[scores={SeGa_DVInv12=2}] run item replace entity @s armor.head with chainmail_helmet
 execute if entity @s[scores={SeGa_DVInv12=2}] run item replace entity @s armor.chest with iron_chainmail_chestplate
 execute if entity @s[scores={SeGa_DVInv12=3}] run item replace entity @s armor.head with iron_helmet
 execute if entity @s[scores={SeGa_DVInv12=3}] run item replace entity @s armor.chest with iron_chestplate
