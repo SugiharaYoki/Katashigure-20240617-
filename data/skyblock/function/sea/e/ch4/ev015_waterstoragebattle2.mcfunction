@@ -14,7 +14,7 @@ execute as @s[scores={sea_4temp1=2}] run effect give @a[tag=SEAPT] darkness 10 0
 execute as @s[scores={sea_4temp1=41}] run playsound block.iron_door.open block @a 90191.0 36 134 0.8
 execute as @s[scores={sea_4temp1=41}] run fill 90190 36 134 90191 34 134 air
 
-execute as @s[scores={sea_4temp1=5}] positioned 90158 36 171 run summon glow_squid ~ ~ ~ {CustomName:'[{text:"巨型乌贼"}]',DeathLootTable:"skyblock:sea_spider1",Tags:["SEAmob"],attributes:[{id:"scale",base:3},{id:"max_health",base:100}],Health:100}
+execute as @s[scores={sea_4temp1=5}] positioned 90158 36 171 run summon glow_squid ~ ~ ~ {CustomName:{text:"巨型乌贼"},DeathLootTable:"skyblock:sea_spider1",Tags:["SEAmob"],attributes:[{id:"scale",base:3},{id:"max_health",base:100}],Health:100}
 
 execute as @s[scores={sea_4temp1=67}] if block 90170 35 173 air run tellraw @a[tag=SEAPT] [{text:"陌生的女声：",color:"yellow",bold:1b},{text:"\n“我已经看到你了。”",color:"white",bold: false}]
 execute as @s[scores={sea_4temp1=99}] if block 90170 35 173 air run tellraw @a[tag=SEAPT] [{text:"陌生的女声：",color:"yellow",bold:1b},{text:"\n“这是警告，不要再想着接近实验区。”",color:"white",bold: false}]

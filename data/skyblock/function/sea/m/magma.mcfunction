@@ -1,3 +1,3 @@
-summon magma_cube ~ ~ ~ {CustomName:'[{text:"炽烈球体"}]',DeathLootTable:"skyblock:sea_bug1",Tags:["SEAmob"],attributes:[{id:"attack_damage",base:2.0},{id:"movement_speed",base:0.25},{id:"max_health",base:10}],Health:10,PersistenceRequired:1b,Size:0}
+summon magma_cube ~ ~ ~ {CustomName:{text:"炽烈球体"},DeathLootTable:"skyblock:sea_bug1",Tags:["SEAmob"],attributes:[{id:"attack_damage",base:2.0},{id:"movement_speed",base:0.25},{id:"max_health",base:10}],Health:10,PersistenceRequired:1b,Size:0}
 
-#summon magma_cube ~ ~ ~ {CustomName:'[{text:"炽烈死星"}]',DeathLootTable:"skyblock:sea_bug1",Tags:["SEAmob","SEA_magmaboss"],attributes:[{id:"attack_damage",base:2.5},{id:"movement_speed",base:0.05},{id:"max_health",base:100}],Health:100,PersistenceRequired:1b,Size:5}
+#summon magma_cube ~ ~ ~ {CustomName:{text:"炽烈死星"},DeathLootTable:"skyblock:sea_bug1",Tags:["SEAmob","SEA_magmaboss"],attributes:[{id:"attack_damage",base:2.5},{id:"movement_speed",base:0.05},{id:"max_health",base:100}],Health:100,PersistenceRequired:1b,Size:5}

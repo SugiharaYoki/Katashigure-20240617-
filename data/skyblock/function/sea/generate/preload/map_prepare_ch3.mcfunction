@@ -132,15 +132,15 @@ item replace block 90084 149 110 container.13 with arrow 3
 setblock 90066 138 153 air
 setblock 90066 138 153 lever[facing=south]
 setblock 90168 34 93 air
-summon minecraft:interaction 90128 138.3 97 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter7"]}
+summon minecraft:interaction 90128 138.3 97 {CustomName:{text:"多功能工作站"},Tags:["SEAcrafter","SEAcrafter7"]}
 summon minecraft:marker 90129 137 97 {Tags:["SEAcrafter_tp","SEAcrafter_tp7"]}
-summon minecraft:interaction 90130 144.3 141 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter8"]}
+summon minecraft:interaction 90130 144.3 141 {CustomName:{text:"多功能工作站"},Tags:["SEAcrafter","SEAcrafter8"]}
 summon minecraft:marker 90130 143 142 {Tags:["SEAcrafter_tp","SEAcrafter_tp8"]}
-summon minecraft:interaction 90121 156.3 145 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter9"]}
+summon minecraft:interaction 90121 156.3 145 {CustomName:{text:"多功能工作站"},Tags:["SEAcrafter","SEAcrafter9"]}
 summon minecraft:marker 90121 155 144 {Tags:["SEAcrafter_tp","SEAcrafter_tp9"]}
-summon minecraft:interaction 90082 144.3 117 {CustomName:'[{text:"器械式治疗仪"}]',Tags:["SEAaidbox"]}
-summon minecraft:interaction 90118 138.3 143 {CustomName:'[{text:"器械式治疗仪"}]',Tags:["SEAaidbox"]}
-summon minecraft:interaction 90087 154.3 138 {CustomName:'[{text:"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90082 144.3 117 {CustomName:{text:"器械式治疗仪"},Tags:["SEAaidbox"]}
+summon minecraft:interaction 90118 138.3 143 {CustomName:{text:"器械式治疗仪"},Tags:["SEAaidbox"]}
+summon minecraft:interaction 90087 154.3 138 {CustomName:{text:"器械式治疗仪"},Tags:["SEAaidbox"]}
 
 setblock 90113 140 109 chest[facing=north]
 item replace block 90113 140 109 container.13 with emerald 3

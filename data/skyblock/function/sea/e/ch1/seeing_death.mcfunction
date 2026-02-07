@@ -26,10 +26,10 @@ execute as @s[scores={sea_4temp2=40}] run playsound minecraft:block.iron_door.op
 execute as @s[scores={sea_4temp2=47}] run playsound minecraft:block.iron_door.open ambient @a 90102 125 126 4 0.3
 execute as @s[scores={sea_4temp2=54}] run playsound minecraft:block.iron_door.open ambient @a 90102 125 126 4 0.3
 
-execute as @s[scores={sea_4temp2=35}] run summon drowned 90109 122 125 {CustomName:'[{text:"安全帽腐尸"}]',DeathLootTable:"skyblock:sea_drowned1",Tags:["SEAmob"],attributes:[{id:"attack_damage",base:4.0},{id:"movement_speed",base:0.17}],equipment:{feet:{},legs:{},chest:{},head:{id:iron_helmet,count:1}},drop_chances:{feet:0f,legs:0f,chest:0f,head:0f}}
+execute as @s[scores={sea_4temp2=35}] run summon drowned 90109 122 125 {CustomName:{text:"安全帽腐尸"},DeathLootTable:"skyblock:sea_drowned1",Tags:["SEAmob"],attributes:[{id:"attack_damage",base:4.0},{id:"movement_speed",base:0.17}],equipment:{feet:{},legs:{},chest:{},head:{id:iron_helmet,count:1}},drop_chances:{feet:0f,legs:0f,chest:0f,head:0f}}
 execute as @s[scores={sea_4temp2=35}] positioned 90109 122 125 run function skyblock:sea/m/drowned
 execute as @s[scores={sea_4temp2=35}] positioned 90105 122 125 run function skyblock:sea/m/drowned
-execute as @s[scores={sea_4temp2=30}] run summon drowned 90109 122 125 {CustomName:'[{text:"腐尸维修工"}]',DeathLootTable:"skyblock:sea_drowned1",Tags:["SEAmob"],attributes:[{id:"attack_damage",base:3.5},{id:"movement_speed",base:0.13}],equipment:{mainhand:{id:stone_hoe,count:1},offhand:{},feet:{id:leather_boots,count:1},legs:{id:leather_leggings,count:1},chest:{id:leather_chestplate,count:1},head:{id:leather_helmet,count:1}},drop_chances:{mainhand:0f,offhand:0f,feet:0f,legs:0f,chest:0f,head:0f}}
+execute as @s[scores={sea_4temp2=30}] run summon drowned 90109 122 125 {CustomName:{text:"腐尸维修工"},DeathLootTable:"skyblock:sea_drowned1",Tags:["SEAmob"],attributes:[{id:"attack_damage",base:3.5},{id:"movement_speed",base:0.13}],equipment:{mainhand:{id:stone_hoe,count:1},offhand:{},feet:{id:leather_boots,count:1},legs:{id:leather_leggings,count:1},chest:{id:leather_chestplate,count:1},head:{id:leather_helmet,count:1}},drop_chances:{mainhand:0f,offhand:0f,feet:0f,legs:0f,chest:0f,head:0f}}
 
 execute as @s[scores={sea_4temp2=35}] positioned 90109 122 116 run function skyblock:sea/m/drowned_hat
 execute as @s[scores={sea_4temp2=35}] positioned 90109 122 116 run function skyblock:sea/m/drowned_hat

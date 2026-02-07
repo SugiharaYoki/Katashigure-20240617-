@@ -36,13 +36,13 @@ fill 90191 25 114 90193 25 112 minecraft:waxed_copper_grate
 fill 90193 19 121 90191 23 121 air
 fill 90191 19 123 90193 23 123 air
 
-summon minecraft:interaction 90192 20.3 85 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter11"]}
+summon minecraft:interaction 90192 20.3 85 {CustomName:{text:"多功能工作站"},Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter11"]}
 summon minecraft:marker 90191 19 85 {Tags:["SEAcrafter_tp","SEAcrafter_tp11"]}
-summon minecraft:interaction 90176 14.3 164 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter12"]}
+summon minecraft:interaction 90176 14.3 164 {CustomName:{text:"多功能工作站"},Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter12"]}
 summon minecraft:marker 90176 13 163 {Tags:["SEAcrafter_tp","SEAcrafter_tp12"]}
-summon minecraft:interaction 90194 45.3 131 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter13"]}
+summon minecraft:interaction 90194 45.3 131 {CustomName:{text:"多功能工作站"},Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter13"]}
 summon minecraft:marker 90194 44 130 {Tags:["SEAcrafter_tp","SEAcrafter_tp13"]}
-summon minecraft:interaction 90243 58.3 95 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter14"]}
+summon minecraft:interaction 90243 58.3 95 {CustomName:{text:"多功能工作站"},Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter14"]}
 summon minecraft:marker 90242 57 95 {Tags:["SEAcrafter_tp","SEAcrafter_tp14"]}
 
 fill 90185 46 96 90181 46 96 minecraft:redstone_block
@@ -52,12 +52,12 @@ setblock 90178 45 112 minecraft:potted_azalea_bush
 setblock 90178 45 124 minecraft:potted_azalea_bush
 
 
-summon minecraft:interaction 90164 14.3 98 {CustomName:'[{text:"器械式治疗仪"}]',Tags:["SEAaidbox"]}
-summon minecraft:interaction 90234 47.3 95 {CustomName:'[{text:"器械式治疗仪"}]',Tags:["SEAaidbox"]}
-summon minecraft:interaction 90146 85.3 96 {CustomName:'[{text:"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90164 14.3 98 {CustomName:{text:"器械式治疗仪"},Tags:["SEAaidbox"]}
+summon minecraft:interaction 90234 47.3 95 {CustomName:{text:"器械式治疗仪"},Tags:["SEAaidbox"]}
+summon minecraft:interaction 90146 85.3 96 {CustomName:{text:"器械式治疗仪"},Tags:["SEAaidbox"]}
 
 
-summon minecraft:interaction 90193 45.3 126 {CustomName:'[{text:"绿宝石提取机"}]',Tags:["SEAemeraldextractor"]}
+summon minecraft:interaction 90193 45.3 126 {CustomName:{text:"绿宝石提取机"},Tags:["SEAemeraldextractor"]}
 
 
 setblock 90188 14 89 chest[facing=west]

@@ -273,22 +273,22 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:chainmail_boots",
+          "name": "minecraft:iron_chainmail_boots",
           "weight": 5
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:chainmail_chestplate",
+          "name": "minecraft:iron_chainmail_chestplate",
           "weight": 5
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:chainmail_helmet",
+          "name": "minecraft:iron_chainmail_helmet",
           "weight": 5
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:chainmail_leggings",
+          "name": "minecraft:iron_chainmail_leggings",
           "weight": 5
         },
         {

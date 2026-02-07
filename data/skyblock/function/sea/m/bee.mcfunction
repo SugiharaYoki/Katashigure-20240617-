@@ -1,1 +1,1 @@
-summon bee ~ ~ ~ {CustomName:'[{text:"终园之蜂"}]',DeathLootTable:"skyblock:sea_spider1",Tags:["SEAmob","SEAbee"],attributes:[{id:"scale",base:0.8},{id:"max_health",base:48}],Health:48,PersistenceRequired:1b}
+summon bee ~ ~ ~ {CustomName:{text:"终园之蜂"},DeathLootTable:"skyblock:sea_spider1",Tags:["SEAmob","SEAbee"],attributes:[{id:"scale",base:0.8},{id:"max_health",base:48}],Health:48,PersistenceRequired:1b}

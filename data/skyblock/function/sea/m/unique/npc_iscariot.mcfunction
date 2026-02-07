@@ -1,4 +1,4 @@
-summon villager ~ ~ ~ {VillagerData:{type:taiga,profession:cleric,level:4},CustomName:'[{text:"伊斯卡略"}]',DeathLootTable:"skyblock:sea_money",Tags:["SEAmob","SEAnpc","SEAiscariot"],attributes:[{id:"attack_damage",base:0.0},{id:"max_health",base:200},{id:"movement_speed",base:0.0},{id:"knockback_resistance",base:0.0},{id:"armor",base:5.0}],Health:200,PersistenceRequired:1b,Invulnerable:1b,Silent:0b,Offers:{Recipes:[ \
+summon villager ~ ~ ~ {VillagerData:{type:taiga,profession:cleric,level:4},CustomName:{text:"伊斯卡略"},DeathLootTable:"skyblock:sea_money",Tags:["SEAmob","SEAnpc","SEAiscariot"],attributes:[{id:"attack_damage",base:0.0},{id:"max_health",base:200},{id:"movement_speed",base:0.0},{id:"knockback_resistance",base:0.0},{id:"armor",base:5.0}],Health:200,PersistenceRequired:1b,Invulnerable:1b,Silent:0b,Offers:{Recipes:[ \
 {buy:{id:pitcher_pod,count:1},sell:{id:disc_fragment_5,count:1},rewardExp:0b,maxUses:9999}, \
 {buy:{id:emerald_block,count:1},sell:{id:flint,count:3},rewardExp:0b,maxUses:3}, \
 {buy:{id:emerald_block,count:1},sell:{id:gunpowder,count:3},rewardExp:0b,maxUses:3}, \

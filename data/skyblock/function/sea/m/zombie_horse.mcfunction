@@ -1,2 +1,2 @@
 #execute store result score 10e959db-4b44-4cdd-b98c-350d3b454206 rng2 run random value 1..4
-summon zombie_horse ~ ~ ~ {CustomName:'[{text:"亡灵之驹"}]',DeathLootTable:"skyblock:sea_knight",Tags:["SEAmob","SEAhorse"],attributes:[{id:"armor",base:9.0},{id:"armor_toughness",base:2.0},{id:"max_health",base:120},{id:"movement_speed",base:0.14},{id:"scale",base:1.15},{id:"knockback_resistance",base:0.9}],Health:120,PersistenceRequired:1b}
+summon zombie_horse ~ ~ ~ {CustomName:{text:"亡灵之驹"},DeathLootTable:"skyblock:sea_knight",Tags:["SEAmob","SEAhorse"],attributes:[{id:"armor",base:9.0},{id:"armor_toughness",base:2.0},{id:"max_health",base:120},{id:"movement_speed",base:0.14},{id:"scale",base:1.15},{id:"knockback_resistance",base:0.9}],Health:120,PersistenceRequired:1b}

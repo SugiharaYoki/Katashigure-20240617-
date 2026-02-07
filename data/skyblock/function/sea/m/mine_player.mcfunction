@@ -1,2 +1,2 @@
-summon block_display ~ ~ ~ {CustomName:'[{text:"安全的 可控的 稳定的 地雷触发装置"}]',transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.2f,0.2f,0.2f],translation:[-0.1f,0f,-0.1f]},block_state:{Name:tnt},Tags:["sea_blockdisplay","sea_mine","sea_mine_player"],Rotation:[0f,0f]}
+summon block_display ~ ~ ~ {CustomName:{text:"安全的 可控的 稳定的 地雷触发装置"},transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.2f,0.2f,0.2f],translation:[-0.1f,0f,-0.1f]},block_state:{Name:tnt},Tags:["sea_blockdisplay","sea_mine","sea_mine_player"],Rotation:[0f,0f]}
 kill @s[type=item]

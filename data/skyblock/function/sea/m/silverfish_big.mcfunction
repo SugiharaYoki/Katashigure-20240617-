@@ -1,1 +1,1 @@
-summon silverfish ~ ~ ~ {CustomName:'[{text:"噬铜虫"}]',DeathLootTable:"skyblock:sea_bug1",Tags:["SEAmob"],attributes:[{id:"attack_damage",base:2.5},{id:"movement_speed",base:0.21},{id:"max_health",base:20},{id:"scale",base:1.5}],Health:20,PersistenceRequired:1b,Fire:-1s}
+summon silverfish ~ ~ ~ {CustomName:{text:"噬铜虫"},DeathLootTable:"skyblock:sea_bug1",Tags:["SEAmob"],attributes:[{id:"attack_damage",base:2.5},{id:"movement_speed",base:0.21},{id:"max_health",base:20},{id:"scale",base:1.5}],Health:20,PersistenceRequired:1b,Fire:-1s}

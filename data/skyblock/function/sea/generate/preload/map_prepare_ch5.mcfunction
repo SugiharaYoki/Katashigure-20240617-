@@ -20,17 +20,17 @@ item replace block 90138 83 55 container.13 with glow_berries 8
 
 fill 90125 102 101 90127 102 99 iron_block
 
-summon minecraft:interaction 90126 90.3 58 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter15"]}
+summon minecraft:interaction 90126 90.3 58 {CustomName:{text:"多功能工作站"},Tags:["SEAcrafter","SEAcrafter15"]}
 summon minecraft:marker 90126 89 59 {Tags:["SEAcrafter_tp","SEAcrafter_tp15"]}
-summon minecraft:interaction 90121 123.3 52 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter16"]}
+summon minecraft:interaction 90121 123.3 52 {CustomName:{text:"多功能工作站"},Tags:["SEAcrafter","SEAcrafter16"]}
 summon minecraft:marker 90121 122 51 {Tags:["SEAcrafter_tp","SEAcrafter_tp16"]}
-summon minecraft:interaction 90146 131.3 50 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter17"]}
+summon minecraft:interaction 90146 131.3 50 {CustomName:{text:"多功能工作站"},Tags:["SEAcrafter","SEAcrafter17"]}
 summon minecraft:marker 90147 130 50 {Tags:["SEAcrafter_tp","SEAcrafter_tp17"]}
 
 
-summon minecraft:interaction 90130 123.3 48 {CustomName:'[{text:"器械式治疗仪"}]',Tags:["SEAaidbox"]}
-summon minecraft:interaction 90107 123.3 38 {CustomName:'[{text:"器械式治疗仪"}]',Tags:["SEAaidbox"]}
-summon minecraft:interaction 90132 145.3 52 {CustomName:'[{text:"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90130 123.3 48 {CustomName:{text:"器械式治疗仪"},Tags:["SEAaidbox"]}
+summon minecraft:interaction 90107 123.3 38 {CustomName:{text:"器械式治疗仪"},Tags:["SEAaidbox"]}
+summon minecraft:interaction 90132 145.3 52 {CustomName:{text:"器械式治疗仪"},Tags:["SEAaidbox"]}
 
 
 

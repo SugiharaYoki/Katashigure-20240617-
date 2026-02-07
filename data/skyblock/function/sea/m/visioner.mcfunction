@@ -1,1 +1,1 @@
-summon blaze ~ ~ ~ {CustomName:'[{text:"凝视者"}]',DeathLootTable:"skyblock:sea_spider1",Tags:["SEAmob","SEAvisioner"],attributes:[{id:"follow_range",base:12.0},{id:"movement_speed",base:0.25},{id:"max_health",base:16}],Health:16,PersistenceRequired:1b}
+summon blaze ~ ~ ~ {CustomName:{text:"凝视者"},DeathLootTable:"skyblock:sea_spider1",Tags:["SEAmob","SEAvisioner"],attributes:[{id:"follow_range",base:12.0},{id:"movement_speed",base:0.25},{id:"max_health",base:16}],Health:16,PersistenceRequired:1b}

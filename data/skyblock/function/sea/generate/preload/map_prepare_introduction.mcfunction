@@ -213,13 +213,13 @@ fill 90129 124 120 90129 122 119 iron_bars
 setblock 90127 125 122 minecraft:iron_trapdoor[half=bottom,open=false]
 tag 10e959db-4b44-4cdd-b98c-350d3b454206 add SeGa_sea_ch1
 fill 90110 122 134 90109 124 134 air
-summon minecraft:interaction 90094 123.3 135 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter1"]}
+summon minecraft:interaction 90094 123.3 135 {CustomName:{text:"多功能工作站"},Tags:["SEAcrafter","SEAcrafter1"]}
 summon minecraft:marker 90094 122 136 {Tags:["SEAcrafter_tp","SEAcrafter_tp1"]}
-summon minecraft:interaction 90142 123.3 136 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter2"]}
+summon minecraft:interaction 90142 123.3 136 {CustomName:{text:"多功能工作站"},Tags:["SEAcrafter","SEAcrafter2"]}
 summon minecraft:marker 90141 122 136 {Tags:["SEAcrafter_tp","SEAcrafter_tp2"]}
-summon minecraft:interaction 90099 123.3 117 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter3"]}
+summon minecraft:interaction 90099 123.3 117 {CustomName:{text:"多功能工作站"},Tags:["SEAcrafter","SEAcrafter3"]}
 summon minecraft:marker 90099 122 116 {Tags:["SEAcrafter_tp","SEAcrafter_tp3"]}
-summon minecraft:interaction 90145 104.3 113 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter10"]}
+summon minecraft:interaction 90145 104.3 113 {CustomName:{text:"多功能工作站"},Tags:["SEAcrafter","SEAcrafter10"]}
 summon minecraft:marker 90146 103 113 {Tags:["SEAcrafter_tp","SEAcrafter_tp10"]}
 setblock 90131 123 111 minecraft:crimson_button[facing=south]
 fill 90111 122 143 90108 122 143 lever[facing=north,powered=false]
@@ -822,9 +822,9 @@ setblock 90139 147 129 air
 setblock 90139 147 132 lever[facing=east]
 setblock 90139 147 129 lever[facing=east]
 
-summon minecraft:interaction 90139 147.3 117 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter18"]}
+summon minecraft:interaction 90139 147.3 117 {CustomName:{text:"多功能工作站"},Tags:["SEAcrafter","SEAcrafter18"]}
 summon minecraft:marker 90140 146 117 {Tags:["SEAcrafter_tp","SEAcrafter_tp18"]}
-summon minecraft:interaction 90139 161.3 138 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter19"]}
+summon minecraft:interaction 90139 161.3 138 {CustomName:{text:"多功能工作站"},Tags:["SEAcrafter","SEAcrafter19"]}
 summon minecraft:marker 90140 160 138 {Tags:["SEAcrafter_tp","SEAcrafter_tp19"]}
 
 setblock 90150 146 124 decorated_pot{sherds:["friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd","friend_pottery_sherd"],item:{count: 3, id:"minecraft:emerald"}}
@@ -951,7 +951,7 @@ setblock 90142 157 139 glass
 setblock 90142 157 143 glass
 
 
-summon minecraft:interaction 90145 154.3 136 {CustomName:'[{text:"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90145 154.3 136 {CustomName:{text:"器械式治疗仪"},Tags:["SEAaidbox"]}
 
 clone 90170 -60 120 90190 -48 132 90113 136 128
 clone 90099 -60 108 90107 -49 117 90099 128 108
@@ -1142,15 +1142,15 @@ setblock 90218 177 -1874 minecraft:cobweb
 setblock 90149 133 -1884 chest[facing=east]
 item replace block 90149 133 -1884 container.13 with golden_carrot 5
 
-summon minecraft:interaction 90158 134.3 -1887 {CustomName:'[{text:"器械式治疗仪"}]',Tags:["SEAaidbox"]}
-summon minecraft:interaction 90118 120.3 -1862 {CustomName:'[{text:"器械式治疗仪"}]',Tags:["SEAaidbox"]}
-summon minecraft:interaction 90007 58.3 -1860 {CustomName:'[{text:"器械式治疗仪"}]',Tags:["SEAaidbox"]}
+summon minecraft:interaction 90158 134.3 -1887 {CustomName:{text:"器械式治疗仪"},Tags:["SEAaidbox"]}
+summon minecraft:interaction 90118 120.3 -1862 {CustomName:{text:"器械式治疗仪"},Tags:["SEAaidbox"]}
+summon minecraft:interaction 90007 58.3 -1860 {CustomName:{text:"器械式治疗仪"},Tags:["SEAaidbox"]}
 
 
-summon minecraft:interaction 90112 106.3 -1902 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter21"]}
+summon minecraft:interaction 90112 106.3 -1902 {CustomName:{text:"多功能工作站"},Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter21"]}
 summon minecraft:marker 90111 105 -1902 {Tags:["SEAcrafter_tp","SEAcrafter_tp21"]}
 
-summon minecraft:interaction 90007 58.3 -1861 {CustomName:'[{text:"多功能工作站"}]',Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter22"]}
+summon minecraft:interaction 90007 58.3 -1861 {CustomName:{text:"多功能工作站"},Tags:["SEAcrafter","SEAcrafter_foodless","SEAcrafter22"]}
 summon minecraft:marker 90008 57 -1861 {Tags:["SEAcrafter_tp","SEAcrafter_tp22"]}
 
 setblock 89985 84 -1901 air

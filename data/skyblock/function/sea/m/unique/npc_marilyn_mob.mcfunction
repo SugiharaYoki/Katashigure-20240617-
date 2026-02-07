@@ -1,4 +1,4 @@
-summon zombie_villager ~ ~ ~ {VillagerData:{type:desert,profession:librarian,level:5},CustomName:'[{text:"玛瑞莲"}]',DeathLootTable:"skyblock:sea_money",Tags:["SEAmob","SEAnpc","SEAmarilyn","SEAnorma"],attributes:[{id:"attack_damage",base:5.0},{id:"max_health",base:800},{id:"movement_speed",base:0.15},{id:"knockback_resistance",base:1.0},{id:"armor",base:50.0}],Health:800,PersistenceRequired:1b,Offers:{},Rotation:[0.0f,0.0f],Silent:true,}
+summon zombie_villager ~ ~ ~ {VillagerData:{type:desert,profession:librarian,level:5},CustomName:{text:"玛瑞莲"},DeathLootTable:"skyblock:sea_money",Tags:["SEAmob","SEAnpc","SEAmarilyn","SEAnorma"],attributes:[{id:"attack_damage",base:5.0},{id:"max_health",base:800},{id:"movement_speed",base:0.15},{id:"knockback_resistance",base:1.0},{id:"armor",base:50.0}],Health:800,PersistenceRequired:1b,Offers:{},Rotation:[0.0f,0.0f],Silent:true,}
 
 item replace entity @n[tag=SEAmarilyn] armor.head from block 90152 160 137 container.0
 

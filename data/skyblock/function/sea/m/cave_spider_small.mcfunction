@@ -1,1 +1,1 @@
-summon cave_spider ~ ~ ~ {CustomName:'[{text:"小毒蜘蛛"}]',DeathLootTable:"skyblock:sea_spider1",Tags:["SEAmob"],attributes:[{id:"attack_damage",base:0.5},{id:"movement_speed",base:0.29},{id:"follow_range",base:19},{id:"scale",base:0.3},{id:"max_health",base:1}],Health:1,PersistenceRequired:1b}
+summon cave_spider ~ ~ ~ {CustomName:{text:"小毒蜘蛛"},DeathLootTable:"skyblock:sea_spider1",Tags:["SEAmob"],attributes:[{id:"attack_damage",base:0.5},{id:"movement_speed",base:0.29},{id:"follow_range",base:19},{id:"scale",base:0.3},{id:"max_health",base:1}],Health:1,PersistenceRequired:1b}
