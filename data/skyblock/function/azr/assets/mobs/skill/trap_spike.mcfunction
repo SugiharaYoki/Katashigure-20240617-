@@ -4,7 +4,7 @@ execute unless entity @n[tag=AzrielMob_trap_spike,distance=..0.5,type=slime] run
 
 execute as @p[tag=azrPlayer,distance=..0.8,gamemode=adventure] at @s unless items entity @s armor.feet *[custom_data={iron_boots_lightstep:1b}] run damage @s 4 cactus
 execute as @p[tag=azrPlayer,distance=..0.8,gamemode=adventure] at @s unless items entity @s armor.feet *[custom_data={iron_boots_lightstep:1b}] run particle block{block_state:{Name:pointed_dripstone}} ~ ~0.2 ~ 0.2 0.2 0.2 0.05 10
-execute as @p[tag=azrPlayer,distance=..0.8,gamemode=adventure] at @s unless items entity @s armor.feet *[custom_data={iron_boots_lightstep:1b}] run kill @n
+execute as @p[tag=azrPlayer,distance=..0.8,gamemode=adventure] at @s unless items entity @s armor.feet *[custom_data={iron_boots_lightstep:1b}] run kill @n[tag=AzrielMob_trap_spike,distance=..0.65,type=slime]
 execute as @p[tag=azrPlayer,distance=..0.4,gamemode=adventure] at @s run damage @s 4 cactus
 execute as @p[tag=azrPlayer,distance=..0.4,gamemode=adventure] at @s run particle block{block_state:{Name:pointed_dripstone}} ~ ~0.2 ~ 0.2 0.2 0.2 0.05 10
 execute as @p[tag=azrPlayer,distance=..0.4,gamemode=adventure] at @s run kill @n[tag=AzrielMob_trap_spike,distance=..0.65,type=slime]
