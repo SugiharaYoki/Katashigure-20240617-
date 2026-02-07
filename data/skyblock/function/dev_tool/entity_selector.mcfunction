@@ -1,1 +1,1 @@
-give @s carrot_on_a_stick[custom_data={"dev_tool:entity_selector":1b},!max_damage,custom_name={text:"Entity Selector",bold:1b, italic:0b, "color": "light_purple"},lore = ['{text:"右键标记离自己最近的实体","color": "green"}]]
+give @s carrot_on_a_stick[custom_data={"dev_tool:entity_selector":1b},!max_damage,custom_name={text:"Entity Selector",bold:1b, italic:0b,color: "light_purple"},lore = ['{text:"右键标记离自己最近的实体","color": "green"}]]

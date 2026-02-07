@@ -91,7 +91,7 @@ execute if score SEA_ch5_event_boss5 rng1 matches 278 as @n[tag=SEAboss5b] at @s
 execute if score SEA_ch5_event_boss5 rng1 matches 278 as @n[tag=SEAboss5b] at @s run kill @n[tag=SEAboss5,type=zombie_villager]
 
 execute if score SEA_ch5_event_boss5 rng1 matches 224 as @n[tag=SEAboss5] at @s run title @a[distance=0..200] times 0 40 10
-execute if score SEA_ch5_event_boss5 rng1 matches 224 as @n[tag=SEAboss5] at @s run title @a[distance=0..200] title {text:"愚妄的凡人 胆敢拟吾神力",bold: false, "color": "white"}
+execute if score SEA_ch5_event_boss5 rng1 matches 224 as @n[tag=SEAboss5] at @s run title @a[distance=0..200] title {text:"愚妄的凡人 胆敢拟吾神力",bold: false,color: "white"}
 execute if score SEA_ch5_event_boss5 rng1 matches 224 as @n[tag=SEAboss5] at @s positioned 90142 134 26 as @e[type=#illager,distance=0..50,type=pillager] at @s run function skyblock:sea/e/ch5/boss5/npc_help_quit
 
 

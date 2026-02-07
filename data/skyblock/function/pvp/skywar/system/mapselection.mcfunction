@@ -8,7 +8,7 @@
 #地图选择初始化
 #setblock -4 12 6 minecraft:redstone_block
 
-execute if entity @a[tag=PVPTeamed] run tellraw @a[tag=!Gaming,tag=!NoSkyWar] [{text:"注意", bold:1b, "color": "yellow"},{text:" 检测到PVP地图改变 组队预选已失效", bold: false, "color": "white"}]
+execute if entity @a[tag=PVPTeamed] run tellraw @a[tag=!Gaming,tag=!NoSkyWar] [{text:"注意", bold:1b,color: "yellow"},{text:" 检测到PVP地图改变 组队预选已失效", bold: false,color: "white"}]
 execute if entity @a[tag=PVPTeamed] run setblock -133 58 -99 air
 execute if entity @a[tag=PVPTeamed] run setblock -133 58 -97 air
 execute if entity @a[tag=PVPTeamed] run setblock -143 58 -99 air

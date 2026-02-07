@@ -91,7 +91,7 @@ setblock -79905 42 33 chest[facing=west]
 item replace block -79905 42 33 container.13 with emerald 3
 fill -79924 36 34 -79924 33 34 minecraft:purple_stained_glass
 setblock -79908 34 31 minecraft:chest[facing=west]
-item replace block -79908 34 31 container.12 with skull_banner_pattern[custom_name={text:"“最近的花卉涨势很怪异”", "color": "dark_purple",italic:0b}, lore=[{text:"倒不是我神经过敏了吧，这些花的生长速度是不是太快了？",color:"white", italic:0b},{text:"简单培育的苔藓类植物已经遍布了整个培育室。",color:"white", italic:0b},{text:"它们吸收魔力生长，以其作为养分。",color:"white", italic:0b},{text:"那这是否意味着空气中的魔力浓度已经高到了一种难以想象的程度？",color:"white", italic:0b}]] 1
+item replace block -79908 34 31 container.12 with skull_banner_pattern[custom_name={text:"“最近的花卉涨势很怪异”",color: "dark_purple",italic:0b}, lore=[{text:"倒不是我神经过敏了吧，这些花的生长速度是不是太快了？",color:"white", italic:0b},{text:"简单培育的苔藓类植物已经遍布了整个培育室。",color:"white", italic:0b},{text:"它们吸收魔力生长，以其作为养分。",color:"white", italic:0b},{text:"那这是否意味着空气中的魔力浓度已经高到了一种难以想象的程度？",color:"white", italic:0b}]] 1
 item replace block -79908 34 31 container.14 with coal 1
   #天台的花
 fill -79904 44 8 -79901 44 8 minecraft:potted_azalea_bush
@@ -112,7 +112,7 @@ setblock -79942 33 11 minecraft:honey_block
 setblock -79939 28 17 air
 setblock -79939 28 17 lever[facing=west]
 setblock -79948 25 22 chest[facing=east]
-item replace block -79948 25 22 container.12 with skull_banner_pattern[custom_name={text:"“生与死的力量全都过剩。”", "color": "dark_purple",italic:0b}, lore=[{text:"这些苔藓是被一种混沌力量所影响。",color:"white", italic:0b},{text:"我在图书馆查阅过，那是被神庭控制的亡灵生物死亡时逸散的能量。",color:"white", italic:0b},{text:"但从前这个阈值都被控制在一个安全的范畴。",color:"white", italic:0b},{text:"为何偏偏是在最近过量出现？",color:"white", italic:0b}]] 1
+item replace block -79948 25 22 container.12 with skull_banner_pattern[custom_name={text:"“生与死的力量全都过剩。”",color: "dark_purple",italic:0b}, lore=[{text:"这些苔藓是被一种混沌力量所影响。",color:"white", italic:0b},{text:"我在图书馆查阅过，那是被神庭控制的亡灵生物死亡时逸散的能量。",color:"white", italic:0b},{text:"但从前这个阈值都被控制在一个安全的范畴。",color:"white", italic:0b},{text:"为何偏偏是在最近过量出现？",color:"white", italic:0b}]] 1
 item replace block -79948 25 22 container.14 with coal 2
 
 #Stage3 beta
@@ -136,7 +136,7 @@ setblock -79912 39 36 minecraft:potted_allium
 
   #小庭院跳跃宝箱
 setblock -79907 39 44 chest[facing=west]
-item replace block -79907 39 44 container.12 with skull_banner_pattern[custom_name={text:"“我的东南水路正门钥匙被人偷走六回了”", "color": "dark_purple",italic:0b}, lore=[{text:"我不知道是谁对禁地这么感兴趣。",color:"white", italic:0b},{text:"如果只是对下水道感兴趣的话，那人完全可以选择其他三个区域。",color:"white", italic:0b},{text:"魔神的力量……果然也在被觊觎着吧。",color:"white", italic:0b}]] 1
+item replace block -79907 39 44 container.12 with skull_banner_pattern[custom_name={text:"“我的东南水路正门钥匙被人偷走六回了”",color: "dark_purple",italic:0b}, lore=[{text:"我不知道是谁对禁地这么感兴趣。",color:"white", italic:0b},{text:"如果只是对下水道感兴趣的话，那人完全可以选择其他三个区域。",color:"white", italic:0b},{text:"魔神的力量……果然也在被觊觎着吧。",color:"white", italic:0b}]] 1
 item replace block -79907 39 44 container.14 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
 
   #苔藓培育室

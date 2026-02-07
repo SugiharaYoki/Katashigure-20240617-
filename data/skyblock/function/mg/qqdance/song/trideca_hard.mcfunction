@@ -2,298 +2,298 @@ execute if score @s MG_qqd_t_abs matches 1 run playsound minecraft:trideca maste
 execute if score @s MG_qqd_t_abs matches 1 run scoreboard players set @s MG_qqd_t_rel 50000
 
 
-execute if score @s MG_qqd_step matches 1 run title @s title [{text:"↑ ↓ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 2 run title @s title [{text:"↑", "color": "green", bold:1b}, {text:" ↓ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 3 run title @s title [{text:"↑ ↓", "color": "green", bold:1b}, {text:" ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 4 run title @s title [{text:"↑ ↓ ↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 1 run title @s title [{text:"↑ ↓ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 2 run title @s title [{text:"↑",color: "green", bold:1b}, {text:" ↓ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 3 run title @s title [{text:"↑ ↓",color: "green", bold:1b}, {text:" ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 4 run title @s title [{text:"↑ ↓ ↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 1 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 2 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 3 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 11 run title @s title [{text:"← → ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 12 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" → ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 13 run title @s title [{text:"← →", "color": "green", bold:1b}, {text:" ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 14 run title @s title [{text:"← → ←", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 11 run title @s title [{text:"← → ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 12 run title @s title [{text:"←",color: "green", bold:1b}, {text:" → ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 13 run title @s title [{text:"← →",color: "green", bold:1b}, {text:" ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 14 run title @s title [{text:"← → ←",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 11 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 12 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 13 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 21 run title @s title [{text:"→ ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 22 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 23 run title @s title [{text:"→ ↑", "color": "green", bold:1b}, {text:" ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 24 run title @s title [{text:"→ ↑ ↓", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 21 run title @s title [{text:"→ ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 22 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 23 run title @s title [{text:"→ ↑",color: "green", bold:1b}, {text:" ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 24 run title @s title [{text:"→ ↑ ↓",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 21 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 22 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 23 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 31 run title @s title [{text:"← ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 32 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 33 run title @s title [{text:"← ↑", "color": "green", bold:1b}, {text:" ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 34 run title @s title [{text:"← ↑ ↓", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 31 run title @s title [{text:"← ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 32 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 33 run title @s title [{text:"← ↑",color: "green", bold:1b}, {text:" ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 34 run title @s title [{text:"← ↑ ↓",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 31 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 32 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 33 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 41 run title @s title [{text:"→ ↓ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 42 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↓ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 43 run title @s title [{text:"→ ↓", "color": "green", bold:1b}, {text:" ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 44 run title @s title [{text:"→ ↓ ↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 41 run title @s title [{text:"→ ↓ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 42 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↓ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 43 run title @s title [{text:"→ ↓",color: "green", bold:1b}, {text:" ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 44 run title @s title [{text:"→ ↓ ↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 41 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 42 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 43 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 51 run title @s title [{text:"← ↓ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 52 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↓ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 53 run title @s title [{text:"← ↓", "color": "green", bold:1b}, {text:" ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 54 run title @s title [{text:"← ↓ ↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 51 run title @s title [{text:"← ↓ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 52 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↓ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 53 run title @s title [{text:"← ↓",color: "green", bold:1b}, {text:" ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 54 run title @s title [{text:"← ↓ ↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 51 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 52 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 53 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 61 run title @s title [{text:"→ ↑ ↓ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 62 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↑ ↓ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 63 run title @s title [{text:"→ ↑", "color": "green", bold:1b}, {text:" ↓ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 64 run title @s title [{text:"→ ↑ ↓", "color": "green", bold:1b}, {text:" ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 65 run title @s title [{text:"→ ↑ ↓ ←", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 61 run title @s title [{text:"→ ↑ ↓ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 62 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↑ ↓ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 63 run title @s title [{text:"→ ↑",color: "green", bold:1b}, {text:" ↓ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 64 run title @s title [{text:"→ ↑ ↓",color: "green", bold:1b}, {text:" ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 65 run title @s title [{text:"→ ↑ ↓ ←",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 61 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 62 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 63 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 64 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 71 run title @s title [{text:"← ↑ ↓ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 72 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↑ ↓ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 73 run title @s title [{text:"← ↑", "color": "green", bold:1b}, {text:" ↓ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 74 run title @s title [{text:"← ↑ ↓", "color": "green", bold:1b}, {text:" →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 75 run title @s title [{text:"← ↑ ↓ →", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 71 run title @s title [{text:"← ↑ ↓ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 72 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↑ ↓ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 73 run title @s title [{text:"← ↑",color: "green", bold:1b}, {text:" ↓ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 74 run title @s title [{text:"← ↑ ↓",color: "green", bold:1b}, {text:" →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 75 run title @s title [{text:"← ↑ ↓ →",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 71 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 72 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 73 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 74 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 81 run title @s title [{text:"→ ↑ ↓ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 82 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↑ ↓ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 83 run title @s title [{text:"→ ↑", "color": "green", bold:1b}, {text:" ↓ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 84 run title @s title [{text:"→ ↑ ↓", "color": "green", bold:1b}, {text:" →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 85 run title @s title [{text:"→ ↑ ↓ →", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 81 run title @s title [{text:"→ ↑ ↓ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 82 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↑ ↓ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 83 run title @s title [{text:"→ ↑",color: "green", bold:1b}, {text:" ↓ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 84 run title @s title [{text:"→ ↑ ↓",color: "green", bold:1b}, {text:" →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 85 run title @s title [{text:"→ ↑ ↓ →",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 81 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 82 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 83 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 84 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 91 run title @s title [{text:"← ↓ ↑ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 92 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↓ ↑ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 93 run title @s title [{text:"← ↓", "color": "green", bold:1b}, {text:" ↑ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 94 run title @s title [{text:"← ↓ ↑", "color": "green", bold:1b}, {text:" ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 95 run title @s title [{text:"← ↓ ↑ ←", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 91 run title @s title [{text:"← ↓ ↑ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 92 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↓ ↑ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 93 run title @s title [{text:"← ↓",color: "green", bold:1b}, {text:" ↑ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 94 run title @s title [{text:"← ↓ ↑",color: "green", bold:1b}, {text:" ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 95 run title @s title [{text:"← ↓ ↑ ←",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 91 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 92 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 93 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 94 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 101 run title @s title [{text:"→ ← ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 102 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ← ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 103 run title @s title [{text:"→ ←", "color": "green", bold:1b}, {text:" ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 104 run title @s title [{text:"→ ← ↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 101 run title @s title [{text:"→ ← ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 102 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ← ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 103 run title @s title [{text:"→ ←",color: "green", bold:1b}, {text:" ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 104 run title @s title [{text:"→ ← ↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 101 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 102 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 103 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 111 run title @s title [{text:"← ↓ ← ↓ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 112 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↓ ← ↓ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 113 run title @s title [{text:"← ↓", "color": "green", bold:1b}, {text:" ← ↓ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 114 run title @s title [{text:"← ↓ ←", "color": "green", bold:1b}, {text:" ↓ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 115 run title @s title [{text:"← ↓ ← ↓", "color": "green", bold:1b}, {text:" ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 116 run title @s title [{text:"← ↓ ← ↓ ←", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 111 run title @s title [{text:"← ↓ ← ↓ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 112 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↓ ← ↓ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 113 run title @s title [{text:"← ↓",color: "green", bold:1b}, {text:" ← ↓ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 114 run title @s title [{text:"← ↓ ←",color: "green", bold:1b}, {text:" ↓ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 115 run title @s title [{text:"← ↓ ← ↓",color: "green", bold:1b}, {text:" ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 116 run title @s title [{text:"← ↓ ← ↓ ←",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 111 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 112 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 113 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 114 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 115 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 121 run title @s title [{text:"← → ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 122 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" → ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 123 run title @s title [{text:"← →", "color": "green", bold:1b}, {text:" ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 124 run title @s title [{text:"← → ↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 121 run title @s title [{text:"← → ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 122 run title @s title [{text:"←",color: "green", bold:1b}, {text:" → ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 123 run title @s title [{text:"← →",color: "green", bold:1b}, {text:" ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 124 run title @s title [{text:"← → ↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 121 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 122 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 123 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 131 run title @s title [{text:"→ ↓ → ↓ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 132 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↓ → ↓ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 133 run title @s title [{text:"→ ↓", "color": "green", bold:1b}, {text:" → ↓ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 134 run title @s title [{text:"→ ↓ →", "color": "green", bold:1b}, {text:" ↓ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 135 run title @s title [{text:"→ ↓ → ↓", "color": "green", bold:1b}, {text:" →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 136 run title @s title [{text:"→ ↓ → ↓ →", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 131 run title @s title [{text:"→ ↓ → ↓ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 132 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↓ → ↓ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 133 run title @s title [{text:"→ ↓",color: "green", bold:1b}, {text:" → ↓ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 134 run title @s title [{text:"→ ↓ →",color: "green", bold:1b}, {text:" ↓ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 135 run title @s title [{text:"→ ↓ → ↓",color: "green", bold:1b}, {text:" →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 136 run title @s title [{text:"→ ↓ → ↓ →",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 131 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 132 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 133 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 134 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 135 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 141 run title @s title [{text:"← ↑ ← →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 142 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↑ ← →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 143 run title @s title [{text:"← ↑", "color": "green", bold:1b}, {text:" ← →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 144 run title @s title [{text:"← ↑ ←", "color": "green", bold:1b}, {text:" →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 145 run title @s title [{text:"← ↑ ← →", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 141 run title @s title [{text:"← ↑ ← →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 142 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↑ ← →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 143 run title @s title [{text:"← ↑",color: "green", bold:1b}, {text:" ← →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 144 run title @s title [{text:"← ↑ ←",color: "green", bold:1b}, {text:" →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 145 run title @s title [{text:"← ↑ ← →",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 141 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 142 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 143 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 144 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 151 run title @s title [{text:"↑ ↓ → ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 152 run title @s title [{text:"↑", "color": "green", bold:1b}, {text:" ↓ → ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 153 run title @s title [{text:"↑ ↓", "color": "green", bold:1b}, {text:" → ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 154 run title @s title [{text:"↑ ↓ →", "color": "green", bold:1b}, {text:" ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 155 run title @s title [{text:"↑ ↓ → ↓", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 151 run title @s title [{text:"↑ ↓ → ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 152 run title @s title [{text:"↑",color: "green", bold:1b}, {text:" ↓ → ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 153 run title @s title [{text:"↑ ↓",color: "green", bold:1b}, {text:" → ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 154 run title @s title [{text:"↑ ↓ →",color: "green", bold:1b}, {text:" ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 155 run title @s title [{text:"↑ ↓ → ↓",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 151 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 152 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 153 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 154 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 161 run title @s title [{text:"→ ↑ ← ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 162 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↑ ← ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 163 run title @s title [{text:"→ ↑", "color": "green", bold:1b}, {text:" ← ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 164 run title @s title [{text:"→ ↑ ←", "color": "green", bold:1b}, {text:" ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 165 run title @s title [{text:"→ ↑ ← ↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 161 run title @s title [{text:"→ ↑ ← ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 162 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↑ ← ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 163 run title @s title [{text:"→ ↑",color: "green", bold:1b}, {text:" ← ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 164 run title @s title [{text:"→ ↑ ←",color: "green", bold:1b}, {text:" ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 165 run title @s title [{text:"→ ↑ ← ↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 161 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 162 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 163 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 164 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 171 run title @s title [{text:"→ ↓ ↑ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 172 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↓ ↑ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 173 run title @s title [{text:"→ ↓", "color": "green", bold:1b}, {text:" ↑ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 174 run title @s title [{text:"→ ↓ ↑", "color": "green", bold:1b}, {text:" →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 175 run title @s title [{text:"→ ↓ ↑ →", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 171 run title @s title [{text:"→ ↓ ↑ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 172 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↓ ↑ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 173 run title @s title [{text:"→ ↓",color: "green", bold:1b}, {text:" ↑ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 174 run title @s title [{text:"→ ↓ ↑",color: "green", bold:1b}, {text:" →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 175 run title @s title [{text:"→ ↓ ↑ →",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 171 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 172 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 173 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 174 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 181 run title @s title [{text:"← ↑ ↓ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 182 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↑ ↓ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 183 run title @s title [{text:"← ↑", "color": "green", bold:1b}, {text:" ↓ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 184 run title @s title [{text:"← ↑ ↓", "color": "green", bold:1b}, {text:" ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 185 run title @s title [{text:"← ↑ ↓ ↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 181 run title @s title [{text:"← ↑ ↓ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 182 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↑ ↓ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 183 run title @s title [{text:"← ↑",color: "green", bold:1b}, {text:" ↓ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 184 run title @s title [{text:"← ↑ ↓",color: "green", bold:1b}, {text:" ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 185 run title @s title [{text:"← ↑ ↓ ↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 181 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 182 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 183 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 184 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 191 run title @s title [{text:"→ ← ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 192 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ← ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 193 run title @s title [{text:"→ ←", "color": "green", bold:1b}, {text:" ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 194 run title @s title [{text:"→ ← ↑", "color": "green", bold:1b}, {text:" ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 195 run title @s title [{text:"→ ← ↑ ↓", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 191 run title @s title [{text:"→ ← ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 192 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ← ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 193 run title @s title [{text:"→ ←",color: "green", bold:1b}, {text:" ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 194 run title @s title [{text:"→ ← ↑",color: "green", bold:1b}, {text:" ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 195 run title @s title [{text:"→ ← ↑ ↓",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 191 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 192 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 193 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 194 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 201 run title @s title [{text:"← → ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 202 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" → ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 203 run title @s title [{text:"← →", "color": "green", bold:1b}, {text:" ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 204 run title @s title [{text:"← → ↑", "color": "green", bold:1b}, {text:" ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 205 run title @s title [{text:"← → ↑ ↓", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 201 run title @s title [{text:"← → ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 202 run title @s title [{text:"←",color: "green", bold:1b}, {text:" → ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 203 run title @s title [{text:"← →",color: "green", bold:1b}, {text:" ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 204 run title @s title [{text:"← → ↑",color: "green", bold:1b}, {text:" ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 205 run title @s title [{text:"← → ↑ ↓",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 201 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 202 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 203 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 204 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 211 run title @s title [{text:"→ ↓ → ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 212 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↓ → ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 213 run title @s title [{text:"→ ↓", "color": "green", bold:1b}, {text:" → ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 214 run title @s title [{text:"→ ↓ →", "color": "green", bold:1b}, {text:" ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 215 run title @s title [{text:"→ ↓ → ←", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 211 run title @s title [{text:"→ ↓ → ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 212 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↓ → ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 213 run title @s title [{text:"→ ↓",color: "green", bold:1b}, {text:" → ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 214 run title @s title [{text:"→ ↓ →",color: "green", bold:1b}, {text:" ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 215 run title @s title [{text:"→ ↓ → ←",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 211 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 212 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 213 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 214 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 221 run title @s title [{text:"← ↑ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 222 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↑ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 223 run title @s title [{text:"← ↑", "color": "green", bold:1b}, {text:" ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 224 run title @s title [{text:"← ↑ ↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 221 run title @s title [{text:"← ↑ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 222 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↑ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 223 run title @s title [{text:"← ↑",color: "green", bold:1b}, {text:" ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 224 run title @s title [{text:"← ↑ ↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 221 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 222 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 223 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 231 run title @s title [{text:"← ↓ ↑ ↓ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 232 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↓ ↑ ↓ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 233 run title @s title [{text:"← ↓", "color": "green", bold:1b}, {text:" ↑ ↓ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 234 run title @s title [{text:"← ↓ ↑", "color": "green", bold:1b}, {text:" ↓ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 235 run title @s title [{text:"← ↓ ↑ ↓", "color": "green", bold:1b}, {text:" ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 236 run title @s title [{text:"← ↓ ↑ ↓ ←", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 231 run title @s title [{text:"← ↓ ↑ ↓ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 232 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↓ ↑ ↓ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 233 run title @s title [{text:"← ↓",color: "green", bold:1b}, {text:" ↑ ↓ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 234 run title @s title [{text:"← ↓ ↑",color: "green", bold:1b}, {text:" ↓ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 235 run title @s title [{text:"← ↓ ↑ ↓",color: "green", bold:1b}, {text:" ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 236 run title @s title [{text:"← ↓ ↑ ↓ ←",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 231 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 232 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 233 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 234 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 235 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 241 run title @s title [{text:"→ ↑ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 242 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↑ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 243 run title @s title [{text:"→ ↑", "color": "green", bold:1b}, {text:" ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 244 run title @s title [{text:"→ ↑ ↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 241 run title @s title [{text:"→ ↑ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 242 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↑ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 243 run title @s title [{text:"→ ↑",color: "green", bold:1b}, {text:" ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 244 run title @s title [{text:"→ ↑ ↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 241 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 242 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 243 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 251 run title @s title [{text:"→ ↓ ↑ ↓ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 252 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↓ ↑ ↓ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 253 run title @s title [{text:"→ ↓", "color": "green", bold:1b}, {text:" ↑ ↓ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 254 run title @s title [{text:"→ ↓ ↑", "color": "green", bold:1b}, {text:" ↓ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 255 run title @s title [{text:"→ ↓ ↑ ↓", "color": "green", bold:1b}, {text:" →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 256 run title @s title [{text:"→ ↓ ↑ ↓ →", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 251 run title @s title [{text:"→ ↓ ↑ ↓ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 252 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↓ ↑ ↓ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 253 run title @s title [{text:"→ ↓",color: "green", bold:1b}, {text:" ↑ ↓ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 254 run title @s title [{text:"→ ↓ ↑",color: "green", bold:1b}, {text:" ↓ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 255 run title @s title [{text:"→ ↓ ↑ ↓",color: "green", bold:1b}, {text:" →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 256 run title @s title [{text:"→ ↓ ↑ ↓ →",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 251 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 252 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 253 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 254 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 255 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 261 run title @s title [{text:"← ↑ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 262 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↑ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 263 run title @s title [{text:"← ↑", "color": "green", bold:1b}, {text:" →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 264 run title @s title [{text:"← ↑ →", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 261 run title @s title [{text:"← ↑ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 262 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↑ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 263 run title @s title [{text:"← ↑",color: "green", bold:1b}, {text:" →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 264 run title @s title [{text:"← ↑ →",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 261 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 262 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 263 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 271 run title @s title [{text:"← ↓ ↑ → ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 272 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↓ ↑ → ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 273 run title @s title [{text:"← ↓", "color": "green", bold:1b}, {text:" ↑ → ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 274 run title @s title [{text:"← ↓ ↑", "color": "green", bold:1b}, {text:" → ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 275 run title @s title [{text:"← ↓ ↑ →", "color": "green", bold:1b}, {text:" ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 276 run title @s title [{text:"← ↓ ↑ → ←", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 271 run title @s title [{text:"← ↓ ↑ → ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 272 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↓ ↑ → ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 273 run title @s title [{text:"← ↓",color: "green", bold:1b}, {text:" ↑ → ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 274 run title @s title [{text:"← ↓ ↑",color: "green", bold:1b}, {text:" → ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 275 run title @s title [{text:"← ↓ ↑ →",color: "green", bold:1b}, {text:" ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 276 run title @s title [{text:"← ↓ ↑ → ←",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 271 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 272 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 273 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 274 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 275 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 281 run title @s title [{text:"→ ↑ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 282 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↑ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 283 run title @s title [{text:"→ ↑", "color": "green", bold:1b}, {text:" ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 284 run title @s title [{text:"→ ↑ ←", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 281 run title @s title [{text:"→ ↑ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 282 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↑ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 283 run title @s title [{text:"→ ↑",color: "green", bold:1b}, {text:" ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 284 run title @s title [{text:"→ ↑ ←",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 281 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 282 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 283 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 291 run title @s title [{text:"→ ↓ ↑ ← →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 292 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↓ ↑ ← →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 293 run title @s title [{text:"→ ↓", "color": "green", bold:1b}, {text:" ↑ ← →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 294 run title @s title [{text:"→ ↓ ↑", "color": "green", bold:1b}, {text:" ← →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 295 run title @s title [{text:"→ ↓ ↑ ←", "color": "green", bold:1b}, {text:" →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 296 run title @s title [{text:"→ ↓ ↑ ← →", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 291 run title @s title [{text:"→ ↓ ↑ ← →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 292 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↓ ↑ ← →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 293 run title @s title [{text:"→ ↓",color: "green", bold:1b}, {text:" ↑ ← →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 294 run title @s title [{text:"→ ↓ ↑",color: "green", bold:1b}, {text:" ← →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 295 run title @s title [{text:"→ ↓ ↑ ←",color: "green", bold:1b}, {text:" →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 296 run title @s title [{text:"→ ↓ ↑ ← →",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 291 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 292 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 293 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 294 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 295 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 301 run title @s title [{text:"← ↓ ↑ → ← ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 302 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↓ ↑ → ← ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 303 run title @s title [{text:"← ↓", "color": "green", bold:1b}, {text:" ↑ → ← ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 304 run title @s title [{text:"← ↓ ↑", "color": "green", bold:1b}, {text:" → ← ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 305 run title @s title [{text:"← ↓ ↑ →", "color": "green", bold:1b}, {text:" ← ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 306 run title @s title [{text:"← ↓ ↑ → ←", "color": "green", bold:1b}, {text:" ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 307 run title @s title [{text:"← ↓ ↑ → ← ↓", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 301 run title @s title [{text:"← ↓ ↑ → ← ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 302 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↓ ↑ → ← ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 303 run title @s title [{text:"← ↓",color: "green", bold:1b}, {text:" ↑ → ← ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 304 run title @s title [{text:"← ↓ ↑",color: "green", bold:1b}, {text:" → ← ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 305 run title @s title [{text:"← ↓ ↑ →",color: "green", bold:1b}, {text:" ← ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 306 run title @s title [{text:"← ↓ ↑ → ←",color: "green", bold:1b}, {text:" ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 307 run title @s title [{text:"← ↓ ↑ → ← ↓",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 301 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 302 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 303 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 304 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 305 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 306 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 311 run title @s title [{text:"→ ↓ ↑ ← → ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 312 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↓ ↑ ← → ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 313 run title @s title [{text:"→ ↓", "color": "green", bold:1b}, {text:" ↑ ← → ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 314 run title @s title [{text:"→ ↓ ↑", "color": "green", bold:1b}, {text:" ← → ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 315 run title @s title [{text:"→ ↓ ↑ ←", "color": "green", bold:1b}, {text:" → ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 316 run title @s title [{text:"→ ↓ ↑ ← →", "color": "green", bold:1b}, {text:" ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 317 run title @s title [{text:"→ ↓ ↑ ← → ↓", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 311 run title @s title [{text:"→ ↓ ↑ ← → ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 312 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↓ ↑ ← → ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 313 run title @s title [{text:"→ ↓",color: "green", bold:1b}, {text:" ↑ ← → ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 314 run title @s title [{text:"→ ↓ ↑",color: "green", bold:1b}, {text:" ← → ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 315 run title @s title [{text:"→ ↓ ↑ ←",color: "green", bold:1b}, {text:" → ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 316 run title @s title [{text:"→ ↓ ↑ ← →",color: "green", bold:1b}, {text:" ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 317 run title @s title [{text:"→ ↓ ↑ ← → ↓",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 311 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 312 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 313 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 314 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 315 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 316 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 321 run title @s title [{text:"← ↓ ↑ ← ↓ ↑ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 322 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↓ ↑ ← ↓ ↑ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 323 run title @s title [{text:"← ↓", "color": "green", bold:1b}, {text:" ↑ ← ↓ ↑ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 324 run title @s title [{text:"← ↓ ↑", "color": "green", bold:1b}, {text:" ← ↓ ↑ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 325 run title @s title [{text:"← ↓ ↑ ←", "color": "green", bold:1b}, {text:" ↓ ↑ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 326 run title @s title [{text:"← ↓ ↑ ← ↓", "color": "green", bold:1b}, {text:" ↑ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 327 run title @s title [{text:"← ↓ ↑ ← ↓ ↑", "color": "green", bold:1b}, {text:" ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 328 run title @s title [{text:"← ↓ ↑ ← ↓ ↑ ←", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 321 run title @s title [{text:"← ↓ ↑ ← ↓ ↑ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 322 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↓ ↑ ← ↓ ↑ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 323 run title @s title [{text:"← ↓",color: "green", bold:1b}, {text:" ↑ ← ↓ ↑ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 324 run title @s title [{text:"← ↓ ↑",color: "green", bold:1b}, {text:" ← ↓ ↑ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 325 run title @s title [{text:"← ↓ ↑ ←",color: "green", bold:1b}, {text:" ↓ ↑ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 326 run title @s title [{text:"← ↓ ↑ ← ↓",color: "green", bold:1b}, {text:" ↑ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 327 run title @s title [{text:"← ↓ ↑ ← ↓ ↑",color: "green", bold:1b}, {text:" ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 328 run title @s title [{text:"← ↓ ↑ ← ↓ ↑ ←",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 321 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 322 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 323 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
@@ -301,25 +301,25 @@ execute if score @s MG_qqd_step matches 324 if entity @s[predicate=skyblock:left
 execute if score @s MG_qqd_step matches 325 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 326 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 327 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 331 run title @s title [{text:"→ → → → →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 332 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" → → → →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 333 run title @s title [{text:"→ →", "color": "green", bold:1b}, {text:" → → →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 334 run title @s title [{text:"→ → →", "color": "green", bold:1b}, {text:" → →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 335 run title @s title [{text:"→ → → →", "color": "green", bold:1b}, {text:" →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 336 run title @s title [{text:"→ → → → →", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 331 run title @s title [{text:"→ → → → →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 332 run title @s title [{text:"→",color: "green", bold:1b}, {text:" → → → →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 333 run title @s title [{text:"→ →",color: "green", bold:1b}, {text:" → → →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 334 run title @s title [{text:"→ → →",color: "green", bold:1b}, {text:" → →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 335 run title @s title [{text:"→ → → →",color: "green", bold:1b}, {text:" →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 336 run title @s title [{text:"→ → → → →",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 331 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 332 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 333 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 334 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 335 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 341 run title @s title [{text:"← ↑ ↓ ← ↑ ↓ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 342 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↑ ↓ ← ↑ ↓ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 343 run title @s title [{text:"← ↑", "color": "green", bold:1b}, {text:" ↓ ← ↑ ↓ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 344 run title @s title [{text:"← ↑ ↓", "color": "green", bold:1b}, {text:" ← ↑ ↓ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 345 run title @s title [{text:"← ↑ ↓ ←", "color": "green", bold:1b}, {text:" ↑ ↓ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 346 run title @s title [{text:"← ↑ ↓ ← ↑", "color": "green", bold:1b}, {text:" ↓ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 347 run title @s title [{text:"← ↑ ↓ ← ↑ ↓", "color": "green", bold:1b}, {text:" ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 348 run title @s title [{text:"← ↑ ↓ ← ↑ ↓ ←", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 341 run title @s title [{text:"← ↑ ↓ ← ↑ ↓ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 342 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↑ ↓ ← ↑ ↓ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 343 run title @s title [{text:"← ↑",color: "green", bold:1b}, {text:" ↓ ← ↑ ↓ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 344 run title @s title [{text:"← ↑ ↓",color: "green", bold:1b}, {text:" ← ↑ ↓ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 345 run title @s title [{text:"← ↑ ↓ ←",color: "green", bold:1b}, {text:" ↑ ↓ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 346 run title @s title [{text:"← ↑ ↓ ← ↑",color: "green", bold:1b}, {text:" ↓ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 347 run title @s title [{text:"← ↑ ↓ ← ↑ ↓",color: "green", bold:1b}, {text:" ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 348 run title @s title [{text:"← ↑ ↓ ← ↑ ↓ ←",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 341 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 342 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 343 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
@@ -327,285 +327,285 @@ execute if score @s MG_qqd_step matches 344 if entity @s[predicate=skyblock:left
 execute if score @s MG_qqd_step matches 345 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 346 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 347 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 351 run title @s title [{text:"→ → → ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 352 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" → → ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 353 run title @s title [{text:"→ →", "color": "green", bold:1b}, {text:" → ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 354 run title @s title [{text:"→ → →", "color": "green", bold:1b}, {text:" ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 355 run title @s title [{text:"→ → → ↑", "color": "green", bold:1b}, {text:" ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 356 run title @s title [{text:"→ → → ↑ ↓", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 351 run title @s title [{text:"→ → → ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 352 run title @s title [{text:"→",color: "green", bold:1b}, {text:" → → ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 353 run title @s title [{text:"→ →",color: "green", bold:1b}, {text:" → ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 354 run title @s title [{text:"→ → →",color: "green", bold:1b}, {text:" ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 355 run title @s title [{text:"→ → → ↑",color: "green", bold:1b}, {text:" ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 356 run title @s title [{text:"→ → → ↑ ↓",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 351 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 352 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 353 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 354 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 355 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 361 run title @s title [{text:"← ↓ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 362 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↓ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 363 run title @s title [{text:"← ↓", "color": "green", bold:1b}, {text:" ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 364 run title @s title [{text:"← ↓ ↓", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 361 run title @s title [{text:"← ↓ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 362 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↓ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 363 run title @s title [{text:"← ↓",color: "green", bold:1b}, {text:" ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 364 run title @s title [{text:"← ↓ ↓",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 361 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 362 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 363 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 371 run title @s title [{text:"→ ↓ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 372 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↓ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 373 run title @s title [{text:"→ ↓", "color": "green", bold:1b}, {text:" ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 374 run title @s title [{text:"→ ↓ ↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 371 run title @s title [{text:"→ ↓ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 372 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↓ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 373 run title @s title [{text:"→ ↓",color: "green", bold:1b}, {text:" ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 374 run title @s title [{text:"→ ↓ ↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 371 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 372 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 373 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 381 run title @s title [{text:"← → ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 382 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" → ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 383 run title @s title [{text:"← →", "color": "green", bold:1b}, {text:" ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 384 run title @s title [{text:"← → ↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 381 run title @s title [{text:"← → ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 382 run title @s title [{text:"←",color: "green", bold:1b}, {text:" → ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 383 run title @s title [{text:"← →",color: "green", bold:1b}, {text:" ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 384 run title @s title [{text:"← → ↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 381 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 382 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 383 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 391 run title @s title [{text:"→ ↓ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 392 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↓ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 393 run title @s title [{text:"→ ↓", "color": "green", bold:1b}, {text:" ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 394 run title @s title [{text:"→ ↓ ↓", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 391 run title @s title [{text:"→ ↓ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 392 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↓ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 393 run title @s title [{text:"→ ↓",color: "green", bold:1b}, {text:" ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 394 run title @s title [{text:"→ ↓ ↓",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 391 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 392 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 393 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 401 run title @s title [{text:"← ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 402 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 403 run title @s title [{text:"← ↑", "color": "green", bold:1b}, {text:" ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 404 run title @s title [{text:"← ↑ ↓", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 401 run title @s title [{text:"← ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 402 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 403 run title @s title [{text:"← ↑",color: "green", bold:1b}, {text:" ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 404 run title @s title [{text:"← ↑ ↓",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 401 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 402 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 403 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 411 run title @s title [{text:"→ ↓ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 412 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↓ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 413 run title @s title [{text:"→ ↓", "color": "green", bold:1b}, {text:" ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 414 run title @s title [{text:"→ ↓ ↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 411 run title @s title [{text:"→ ↓ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 412 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↓ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 413 run title @s title [{text:"→ ↓",color: "green", bold:1b}, {text:" ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 414 run title @s title [{text:"→ ↓ ↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 411 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 412 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 413 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 421 run title @s title [{text:"↑ ↓ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 422 run title @s title [{text:"↑", "color": "green", bold:1b}, {text:" ↓ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 423 run title @s title [{text:"↑ ↓", "color": "green", bold:1b}, {text:" →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 424 run title @s title [{text:"↑ ↓ →", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 421 run title @s title [{text:"↑ ↓ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 422 run title @s title [{text:"↑",color: "green", bold:1b}, {text:" ↓ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 423 run title @s title [{text:"↑ ↓",color: "green", bold:1b}, {text:" →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 424 run title @s title [{text:"↑ ↓ →",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 421 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 422 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 423 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 431 run title @s title [{text:"→ ← ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 432 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ← ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 433 run title @s title [{text:"→ ←", "color": "green", bold:1b}, {text:" ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 434 run title @s title [{text:"→ ← ↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 431 run title @s title [{text:"→ ← ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 432 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ← ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 433 run title @s title [{text:"→ ←",color: "green", bold:1b}, {text:" ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 434 run title @s title [{text:"→ ← ↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 431 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 432 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 433 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 441 run title @s title [{text:"← ↓ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 442 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↓ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 443 run title @s title [{text:"← ↓", "color": "green", bold:1b}, {text:" ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 444 run title @s title [{text:"← ↓ ↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 441 run title @s title [{text:"← ↓ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 442 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↓ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 443 run title @s title [{text:"← ↓",color: "green", bold:1b}, {text:" ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 444 run title @s title [{text:"← ↓ ↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 441 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 442 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 443 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 451 run title @s title [{text:"→ ↓ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 452 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↓ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 453 run title @s title [{text:"→ ↓", "color": "green", bold:1b}, {text:" ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 454 run title @s title [{text:"→ ↓ ↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 451 run title @s title [{text:"→ ↓ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 452 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↓ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 453 run title @s title [{text:"→ ↓",color: "green", bold:1b}, {text:" ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 454 run title @s title [{text:"→ ↓ ↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 451 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 452 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 453 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 461 run title @s title [{text:"→ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 462 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 463 run title @s title [{text:"→ →", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 461 run title @s title [{text:"→ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 462 run title @s title [{text:"→",color: "green", bold:1b}, {text:" →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 463 run title @s title [{text:"→ →",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 461 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 462 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 471 run title @s title [{text:"← ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 472 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 473 run title @s title [{text:"← ↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 471 run title @s title [{text:"← ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 472 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 473 run title @s title [{text:"← ↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 471 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 472 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 481 run title @s title [{text:"← →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 482 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 483 run title @s title [{text:"← →", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 481 run title @s title [{text:"← →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 482 run title @s title [{text:"←",color: "green", bold:1b}, {text:" →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 483 run title @s title [{text:"← →",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 481 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 482 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 491 run title @s title [{text:"← ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 492 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 493 run title @s title [{text:"← ↓", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 491 run title @s title [{text:"← ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 492 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 493 run title @s title [{text:"← ↓",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 491 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 492 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 501 run title @s title [{text:"→", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 502 run title @s title [{text:"→", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 501 run title @s title [{text:"→",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 502 run title @s title [{text:"→",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 501 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 511 run title @s title [{text:"← ↓ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 512 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↓ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 513 run title @s title [{text:"← ↓", "color": "green", bold:1b}, {text:" ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 514 run title @s title [{text:"← ↓ ↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 511 run title @s title [{text:"← ↓ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 512 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↓ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 513 run title @s title [{text:"← ↓",color: "green", bold:1b}, {text:" ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 514 run title @s title [{text:"← ↓ ↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 511 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 512 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 513 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 521 run title @s title [{text:"→ ↓ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 522 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↓ ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 523 run title @s title [{text:"→ ↓", "color": "green", bold:1b}, {text:" ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 524 run title @s title [{text:"→ ↓ ↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 521 run title @s title [{text:"→ ↓ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 522 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↓ ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 523 run title @s title [{text:"→ ↓",color: "green", bold:1b}, {text:" ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 524 run title @s title [{text:"→ ↓ ↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 521 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 522 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 523 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 531 run title @s title [{text:"← ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 532 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 533 run title @s title [{text:"← ↑", "color": "green", bold:1b}, {text:" ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 534 run title @s title [{text:"← ↑ ↓", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 531 run title @s title [{text:"← ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 532 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 533 run title @s title [{text:"← ↑",color: "green", bold:1b}, {text:" ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 534 run title @s title [{text:"← ↑ ↓",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 531 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 532 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 533 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 541 run title @s title [{text:"→ ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 542 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 543 run title @s title [{text:"→ ↑", "color": "green", bold:1b}, {text:" ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 544 run title @s title [{text:"→ ↑ ↓", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 541 run title @s title [{text:"→ ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 542 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 543 run title @s title [{text:"→ ↑",color: "green", bold:1b}, {text:" ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 544 run title @s title [{text:"→ ↑ ↓",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 541 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 542 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 543 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 551 run title @s title [{text:"← ↓ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 552 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↓ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 553 run title @s title [{text:"← ↓", "color": "green", bold:1b}, {text:" ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 554 run title @s title [{text:"← ↓ ←", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 551 run title @s title [{text:"← ↓ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 552 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↓ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 553 run title @s title [{text:"← ↓",color: "green", bold:1b}, {text:" ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 554 run title @s title [{text:"← ↓ ←",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 551 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 552 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 553 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 561 run title @s title [{text:"→ ↓ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 562 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↓ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 563 run title @s title [{text:"→ ↓", "color": "green", bold:1b}, {text:" →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 564 run title @s title [{text:"→ ↓ →", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 561 run title @s title [{text:"→ ↓ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 562 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↓ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 563 run title @s title [{text:"→ ↓",color: "green", bold:1b}, {text:" →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 564 run title @s title [{text:"→ ↓ →",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 561 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 562 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 563 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 571 run title @s title [{text:"← →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 572 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 573 run title @s title [{text:"← →", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 571 run title @s title [{text:"← →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 572 run title @s title [{text:"←",color: "green", bold:1b}, {text:" →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 573 run title @s title [{text:"← →",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 571 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 572 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 581 run title @s title [{text:"↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 582 run title @s title [{text:"↑", "color": "green", bold:1b}, {text:" ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 583 run title @s title [{text:"↑ ↓", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 581 run title @s title [{text:"↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 582 run title @s title [{text:"↑",color: "green", bold:1b}, {text:" ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 583 run title @s title [{text:"↑ ↓",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 581 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 582 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 591 run title @s title [{text:"→ ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 592 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 593 run title @s title [{text:"→ ↑", "color": "green", bold:1b}, {text:" ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 594 run title @s title [{text:"→ ↑ ↓", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 591 run title @s title [{text:"→ ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 592 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 593 run title @s title [{text:"→ ↑",color: "green", bold:1b}, {text:" ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 594 run title @s title [{text:"→ ↑ ↓",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 591 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 592 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 593 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 601 run title @s title [{text:"→ ← ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 602 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ← ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 603 run title @s title [{text:"→ ←", "color": "green", bold:1b}, {text:" ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 604 run title @s title [{text:"→ ← ↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 601 run title @s title [{text:"→ ← ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 602 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ← ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 603 run title @s title [{text:"→ ←",color: "green", bold:1b}, {text:" ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 604 run title @s title [{text:"→ ← ↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 601 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 602 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 603 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 611 run title @s title [{text:"← ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 612 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↑ ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 613 run title @s title [{text:"← ↑", "color": "green", bold:1b}, {text:" ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 614 run title @s title [{text:"← ↑ ↓", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 611 run title @s title [{text:"← ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 612 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↑ ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 613 run title @s title [{text:"← ↑",color: "green", bold:1b}, {text:" ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 614 run title @s title [{text:"← ↑ ↓",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 611 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 612 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 613 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 621 run title @s title [{text:"↑ ↓ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 622 run title @s title [{text:"↑", "color": "green", bold:1b}, {text:" ↓ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 623 run title @s title [{text:"↑ ↓", "color": "green", bold:1b}, {text:" →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 624 run title @s title [{text:"↑ ↓ →", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 621 run title @s title [{text:"↑ ↓ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 622 run title @s title [{text:"↑",color: "green", bold:1b}, {text:" ↓ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 623 run title @s title [{text:"↑ ↓",color: "green", bold:1b}, {text:" →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 624 run title @s title [{text:"↑ ↓ →",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 621 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 622 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 623 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 631 run title @s title [{text:"← → ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 632 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" → ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 633 run title @s title [{text:"← →", "color": "green", bold:1b}, {text:" ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 634 run title @s title [{text:"← → ↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 631 run title @s title [{text:"← → ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 632 run title @s title [{text:"←",color: "green", bold:1b}, {text:" → ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 633 run title @s title [{text:"← →",color: "green", bold:1b}, {text:" ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 634 run title @s title [{text:"← → ↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 631 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 632 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 633 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 641 run title @s title [{text:"↓ ↑ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 642 run title @s title [{text:"↓", "color": "green", bold:1b}, {text:" ↑ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 643 run title @s title [{text:"↓ ↑", "color": "green", bold:1b}, {text:" →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 644 run title @s title [{text:"↓ ↑ →", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 641 run title @s title [{text:"↓ ↑ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 642 run title @s title [{text:"↓",color: "green", bold:1b}, {text:" ↑ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 643 run title @s title [{text:"↓ ↑",color: "green", bold:1b}, {text:" →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 644 run title @s title [{text:"↓ ↑ →",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 641 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 642 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 643 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 651 run title @s title [{text:"↑ → ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 652 run title @s title [{text:"↑", "color": "green", bold:1b}, {text:" → ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 653 run title @s title [{text:"↑ →", "color": "green", bold:1b}, {text:" ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 654 run title @s title [{text:"↑ → ←", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 651 run title @s title [{text:"↑ → ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 652 run title @s title [{text:"↑",color: "green", bold:1b}, {text:" → ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 653 run title @s title [{text:"↑ →",color: "green", bold:1b}, {text:" ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 654 run title @s title [{text:"↑ → ←",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 651 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 652 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 653 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 661 run title @s title [{text:"→ ← ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 662 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ← ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 663 run title @s title [{text:"→ ←", "color": "green", bold:1b}, {text:" ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 664 run title @s title [{text:"→ ← ↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 661 run title @s title [{text:"→ ← ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 662 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ← ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 663 run title @s title [{text:"→ ←",color: "green", bold:1b}, {text:" ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 664 run title @s title [{text:"→ ← ↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 661 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 662 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 663 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 671 run title @s title [{text:"← ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 672 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 673 run title @s title [{text:"← ←", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 671 run title @s title [{text:"← ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 672 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 673 run title @s title [{text:"← ←",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 671 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 672 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 681 run title @s title [{text:"→ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 682 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 683 run title @s title [{text:"→ →", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 681 run title @s title [{text:"→ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 682 run title @s title [{text:"→",color: "green", bold:1b}, {text:" →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 683 run title @s title [{text:"→ →",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 681 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 682 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 691 run title @s title [{text:"← ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 692 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 693 run title @s title [{text:"← ←", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 691 run title @s title [{text:"← ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 692 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 693 run title @s title [{text:"← ←",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 691 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 692 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 701 run title @s title [{text:"→ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 702 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 703 run title @s title [{text:"→ →", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 701 run title @s title [{text:"→ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 702 run title @s title [{text:"→",color: "green", bold:1b}, {text:" →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 703 run title @s title [{text:"→ →",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 701 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 702 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 711 run title @s title [{text:"↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 712 run title @s title [{text:"↓", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 711 run title @s title [{text:"↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 712 run title @s title [{text:"↓",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 711 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 721 run title @s title [{text:"↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 722 run title @s title [{text:"↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 721 run title @s title [{text:"↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 722 run title @s title [{text:"↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 721 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 731 run title @s title [{text:"←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 732 run title @s title [{text:"←", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 731 run title @s title [{text:"←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 732 run title @s title [{text:"←",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 731 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 741 run title @s title [{text:"→", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 742 run title @s title [{text:"→", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 741 run title @s title [{text:"→",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 742 run title @s title [{text:"→",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 741 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 751 run title @s title [{text:"← ↓ ↑ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 752 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↓ ↑ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 753 run title @s title [{text:"← ↓", "color": "green", bold:1b}, {text:" ↑ →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 754 run title @s title [{text:"← ↓ ↑", "color": "green", bold:1b}, {text:" →", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 755 run title @s title [{text:"← ↓ ↑ →", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 751 run title @s title [{text:"← ↓ ↑ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 752 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↓ ↑ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 753 run title @s title [{text:"← ↓",color: "green", bold:1b}, {text:" ↑ →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 754 run title @s title [{text:"← ↓ ↑",color: "green", bold:1b}, {text:" →",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 755 run title @s title [{text:"← ↓ ↑ →",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 751 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 752 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 753 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 754 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 761 run title @s title [{text:"→ ↓ ↑ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 762 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↓ ↑ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 763 run title @s title [{text:"→ ↓", "color": "green", bold:1b}, {text:" ↑ ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 764 run title @s title [{text:"→ ↓ ↑", "color": "green", bold:1b}, {text:" ←", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 765 run title @s title [{text:"→ ↓ ↑ ←", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 761 run title @s title [{text:"→ ↓ ↑ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 762 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↓ ↑ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 763 run title @s title [{text:"→ ↓",color: "green", bold:1b}, {text:" ↑ ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 764 run title @s title [{text:"→ ↓ ↑",color: "green", bold:1b}, {text:" ←",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 765 run title @s title [{text:"→ ↓ ↑ ←",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 761 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 762 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 763 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 764 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 771 run title @s title [{text:"← ↑ ↓ → ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 772 run title @s title [{text:"←", "color": "green", bold:1b}, {text:" ↑ ↓ → ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 773 run title @s title [{text:"← ↑", "color": "green", bold:1b}, {text:" ↓ → ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 774 run title @s title [{text:"← ↑ ↓", "color": "green", bold:1b}, {text:" → ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 775 run title @s title [{text:"← ↑ ↓ →", "color": "green", bold:1b}, {text:" ↑", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 776 run title @s title [{text:"← ↑ ↓ → ↑", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 771 run title @s title [{text:"← ↑ ↓ → ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 772 run title @s title [{text:"←",color: "green", bold:1b}, {text:" ↑ ↓ → ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 773 run title @s title [{text:"← ↑",color: "green", bold:1b}, {text:" ↓ → ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 774 run title @s title [{text:"← ↑ ↓",color: "green", bold:1b}, {text:" → ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 775 run title @s title [{text:"← ↑ ↓ →",color: "green", bold:1b}, {text:" ↑",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 776 run title @s title [{text:"← ↑ ↓ → ↑",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 771 if entity @s[predicate=skyblock:left,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 772 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 773 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 774 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 775 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
-execute if score @s MG_qqd_step matches 781 run title @s title [{text:"→ ↓ ↑ ← ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 782 run title @s title [{text:"→", "color": "green", bold:1b}, {text:" ↓ ↑ ← ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 783 run title @s title [{text:"→ ↓", "color": "green", bold:1b}, {text:" ↑ ← ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 784 run title @s title [{text:"→ ↓ ↑", "color": "green", bold:1b}, {text:" ← ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 785 run title @s title [{text:"→ ↓ ↑ ←", "color": "green", bold:1b}, {text:" ↓", "color": "blue", bold:1b}]
-execute if score @s MG_qqd_step matches 786 run title @s title [{text:"→ ↓ ↑ ← ↓", "color": "green", bold:1b}]
+execute if score @s MG_qqd_step matches 781 run title @s title [{text:"→ ↓ ↑ ← ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 782 run title @s title [{text:"→",color: "green", bold:1b}, {text:" ↓ ↑ ← ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 783 run title @s title [{text:"→ ↓",color: "green", bold:1b}, {text:" ↑ ← ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 784 run title @s title [{text:"→ ↓ ↑",color: "green", bold:1b}, {text:" ← ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 785 run title @s title [{text:"→ ↓ ↑ ←",color: "green", bold:1b}, {text:" ↓",color: "blue", bold:1b}]
+execute if score @s MG_qqd_step matches 786 run title @s title [{text:"→ ↓ ↑ ← ↓",color: "green", bold:1b}]
 execute if score @s MG_qqd_step matches 781 if entity @s[predicate=skyblock:right,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 782 if entity @s[predicate=skyblock:backward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
 execute if score @s MG_qqd_step matches 783 if entity @s[predicate=skyblock:forward,tag=!MG_qqd_stepped] run tag @s add MG_qqd_stepped
