@@ -1,5 +1,5 @@
 scoreboard players set tempPlayerShopSuccess Azr_system 0
-
+say hi
 #-----------------1
 function skyblock:azr/system/shop/purchase/category1 {rng:1,trigger:84301}
 #-----------------2
