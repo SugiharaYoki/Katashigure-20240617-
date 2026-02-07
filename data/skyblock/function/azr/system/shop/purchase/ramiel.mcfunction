@@ -1,6 +1,6 @@
 
     
-execute as @s[scores={Azr_Shop=8431551}] \
+execute as @s[scores={Azr_Shop=8431551},tag=AzrSariel_sub_stardeplete] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if score @s AzrMelonCount matches 3.. \
     unless function skyblock:azr/system/shop/purchase/ramiel/\

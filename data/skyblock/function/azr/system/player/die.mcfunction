@@ -6,7 +6,7 @@ execute unless entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{r
 execute if entity @s[tag=AZR_fakeDeath] run function skyblock:azr/system/player/revive
 execute if items entity @s[tag=!AZR_fakeDeath] container.* *[custom_data~{revival_star:1b}] run function skyblock:azr/system/player/revive
 #输出
-execute if entity @s[tag=AzrSariel_sub_stardeplete] unless entity @s[tag=AZR_fakeDeath] unless score @s Azr_forceDeath matches 1 unless items entity @s container.* *[custom_data~{revival_star:1b}] run tellraw @a[tag=azrShowDialog] [{text:"警告！",color:"red"},{selector:"@s",color:"blue"},{text:"已经没有更多下界命星了！",color:"red"}]
+#execute if entity @s[tag=AzrSariel_sub_stardeplete] unless entity @s[tag=AZR_fakeDeath] unless score @s Azr_forceDeath matches 1 unless items entity @s container.* *[custom_data~{revival_star:1b}] run tellraw @a[tag=azrShowDialog] [{text:"警告！",color:"red"},{selector:"@s",color:"blue"},{text:"已经没有更多下界命星了！",color:"red"}]
 #死亡后退出游戏
     #输出
     execute if score @s Azr_forceDeath matches 1 run tellraw @a[tag=azrShowDialog,distance=..10000] [{selector:"@s",color:"white"},{text:" 的灵魂不幸碎裂！",color:"dark_red"}]
