@@ -2,9 +2,9 @@ scoreboard players remove @s AzrSariel_Amulet_SprintDouble_clock 1
 
 
 
-execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=..0},predicate=skyblock:sprint,predicate=skyblock:forward] run scoreboard players set @s AzrSariel_Amulet_SprintDouble_clock 4
-execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=1..4},predicate=!skyblock:sprint] run scoreboard players set @s AzrSariel_Amulet_SprintDouble_clock 20
-execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=17..20},predicate=skyblock:sprint,predicate=skyblock:forward] run scoreboard players set @s AzrSariel_Amulet_SprintDouble_clock 100
+execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=..0},predicate=skyblock:forward] run scoreboard players set @s AzrSariel_Amulet_SprintDouble_clock 4
+execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=1..4},predicate=!skyblock:forward] run scoreboard players set @s AzrSariel_Amulet_SprintDouble_clock 20
+execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=17..20},predicate=skyblock:forward] run scoreboard players set @s AzrSariel_Amulet_SprintDouble_clock 100
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=15..16}] run scoreboard players set @s AzrSariel_Amulet_SprintDouble_clock 0
 
 
