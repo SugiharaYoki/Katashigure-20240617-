@@ -37,7 +37,8 @@ execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 50 if block ~ ~-
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90..118 run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 1
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90.. run scoreboard players set @s AzrSariel_Amulet_StayFloat_clock 5
 
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 3..52 run attribute @s gravity base set 0.8
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 2..90 run attribute @s gravity base set 0.8
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 2..90 run attribute @s jump_strength base reset
 #execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 3..52 if entity @s[nbt={OnGround:1b}] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 2
 #execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 3 if entity @s[nbt={OnGround:0b}] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 1
 execute if score @s[scores={AzrSariel_Amulet_StayFloat_power=1}] AzrSariel_Amulet_StayFloat_cooldown matches 2 run particle minecraft:crit ~ ~ ~ 0.5 0 0.5 0 10
@@ -55,8 +56,6 @@ execute if score @s[scores={AzrSariel_Amulet_StayFloat_power=4}] AzrSariel_Amule
 execute if score @s[scores={AzrSariel_Amulet_StayFloat_power=4}] AzrSariel_Amulet_StayFloat_cooldown matches 2 run particle minecraft:white_smoke ~ ~ ~ 1.1 0 1.1 0.03 30
 execute if score @s[scores={AzrSariel_Amulet_StayFloat_power=4}] AzrSariel_Amulet_StayFloat_cooldown matches 2 run playsound minecraft:item.mace.smash_ground player @a ~ ~ ~ 1 1.3
 execute if score @s[scores={AzrSariel_Amulet_StayFloat_power=4}] AzrSariel_Amulet_StayFloat_cooldown matches 2 as @e[tag=AzrielMob,distance=0..1.2,limit=7,sort=nearest] at @s run damage @s 8 mace_smash by @p[scores={AzrSariel_Amulet_StayFloat_cooldown=2}]
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 1..2 run attribute @s gravity base set 0.08
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 1..2 run attribute @s jump_strength base reset
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 1..2 run scoreboard players set @s AzrSariel_Amulet_StayFloat_power 0
 
 
