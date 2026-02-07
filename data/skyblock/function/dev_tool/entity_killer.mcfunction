@@ -1,1 +1,1 @@
-give @s carrot_on_a_stick[custom_data={"dev_tool:entity_killer":1b},!max_damage,custom_name={text:"Entity Killer",bold:1b, italic:0b,color: "red"},lore = ['{text:"危险操作",bold:1b,"color": "red"},{text:"右键杀死五格内最近的已标记实体","color": "white"}]]
+give @s carrot_on_a_stick[custom_data={"dev_tool:entity_killer":1b},!max_damage,custom_name={text:"Entity Killer",bold:1b, italic:0b,color: "red"},lore = ['{text:"危险操作",bold:1b,color: "red"},{text:"右键杀死五格内最近的已标记实体",color: "white"}]]

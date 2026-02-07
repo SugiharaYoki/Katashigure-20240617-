@@ -240,7 +240,7 @@ execute unless block 90081 101 137 minecraft:dark_oak_hanging_sign positioned 90
 execute unless block 90081 101 137 minecraft:dark_oak_hanging_sign positioned 90142 134 26 as @n[type=breeze_wind_charge,distance=13..50] at @s run kill @s
 
 
-execute if score SEA_ch5_event_fiona_favor rng1 matches 26.. as @a[tag=SEAPT,advancements={skyblock:sea/doc/g28=false}] at @s run tellraw @s [{text:"永久奖励：",color:"green",bold:1b},{text:"静滞光棱的影响范围略微增加","color": "white"}]
+execute if score SEA_ch5_event_fiona_favor rng1 matches 26.. as @a[tag=SEAPT,advancements={skyblock:sea/doc/g28=false}] at @s run tellraw @s [{text:"永久奖励：",color:"green",bold:1b},{text:"静滞光棱的影响范围略微增加",color: "white"}]
 execute if score SEA_ch5_event_fiona_favor rng1 matches 26.. as @a[tag=SEAPT,advancements={skyblock:sea/doc/g28=false}] at @s run give @s mojang_banner_pattern[custom_data={sea_docg28:true}]
 
 execute unless block 90081 101 137 minecraft:dark_oak_hanging_sign if entity @a[tag=SEAPT,scores={SEA_ch5_event_illager_killed=1..}] run scoreboard players remove SEA_ch5_event_illager_count rng1 1

@@ -1,5 +1,5 @@
 execute as @s[scores={sea_4temp1=21}] run fill 90158 36 131 90158 34 129 air
-execute as @s[scores={sea_4temp1=21}] run tellraw @a[tag=SEAPT] {text:"播报：已解除灾害应对区域警报","color": "green"}
+execute as @s[scores={sea_4temp1=21}] run tellraw @a[tag=SEAPT] {text:"播报：已解除灾害应对区域警报",color: "green"}
 execute as @s[scores={sea_4temp1=21}] run playsound block.iron_door.open block @a 90158 36 130 1 0.8
 execute as @s[scores={sea_4temp1=21}] run kill @n[type=text_display,x=90160,y=34,z=130,distance=0..7]
 

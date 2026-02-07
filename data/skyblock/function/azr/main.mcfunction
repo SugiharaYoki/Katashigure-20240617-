@@ -120,5 +120,5 @@ execute if score stage Azr_system matches 8..43 if score playerCount Azr_system 
 
 #DEBUG-关卡上限提示
 return 0
-execute as @r[tag=azrPlayer] if score stage Azr_system = DEBUG_maxStageLimit Azr_system run tellraw @a[tag=azrPlayer] [{text:"You have passed maximum stage(limited in debug mode) ","color": "red"},{"score":{"objective": "Azr_system","name": "stage"},color:"light_purple"},{text:"/",color:"light_purple"},{"score":{"objective": "Azr_system","name": "DEBUG_maxStageLimit"},color:"light_purple"}]
+execute as @r[tag=azrPlayer] if score stage Azr_system = DEBUG_maxStageLimit Azr_system run tellraw @a[tag=azrPlayer] [{text:"You have passed maximum stage(limited in debug mode) ",color: "red"},{"score":{"objective": "Azr_system","name": "stage"},color:"light_purple"},{text:"/",color:"light_purple"},{"score":{"objective": "Azr_system","name": "DEBUG_maxStageLimit"},color:"light_purple"}]
 execute as @r[tag=azrPlayer] if score stage Azr_system = DEBUG_maxStageLimit Azr_system run function skyblock:azr/lifecycle/endgame

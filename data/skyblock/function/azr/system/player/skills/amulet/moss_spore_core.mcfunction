@@ -7,7 +7,7 @@ execute if entity @s[scores={AzrSariel_Amulet_MossSpore_cooldown=1200}] run attr
 execute if entity @s[scores={AzrSariel_Amulet_MossSpore_cooldown=1200}] run attribute @s max_health modifier add azr_amulet:moss_spore_02 2 add_value
 execute if entity @s[scores={AzrSariel_Amulet_MossSpore_cooldown=1200}] run attribute @s max_health modifier add azr_amulet:moss_spore_03 2 add_value
 
-execute if entity @s[scores={AzrSariel_Amulet_MossSpore_cooldown=1200}] run tellraw @s [{text:"- 常效装备发动 -","color": "#9eb9de"},{text:"\n获得孢子的庇护","color": "white"}]
+execute if entity @s[scores={AzrSariel_Amulet_MossSpore_cooldown=1200}] run tellraw @s [{text:"- 常效装备发动 -",color: "#9eb9de"},{text:"\n获得孢子的庇护",color: "white"}]
 
 execute if entity @s[scores={AzrSariel_Amulet_MossSpore_cooldown=800}] run attribute @s max_health modifier remove azr_amulet:moss_spore_03
 execute if entity @s[scores={AzrSariel_Amulet_MossSpore_cooldown=400}] run attribute @s max_health modifier remove azr_amulet:moss_spore_02

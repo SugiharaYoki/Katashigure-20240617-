@@ -2,19 +2,19 @@ scoreboard players add ukiyo_nrb nrb_timer1 1
 execute if score ukiyo_nrb nrb_timer1 matches 997..999 run scoreboard players set ukiyo_nrb nrb_timer1 997
 
 execute if score ukiyo_nrb nrb_timer1 matches 1 run title @a times 0 25 5
-execute if score ukiyo_nrb nrb_timer1 matches 1 run title @a title {"text": "撕名牌战争","color": "yellow"}
-execute if score ukiyo_nrb nrb_timer1 matches 2 run title @a title {"text": "撕名牌战争","color": "yellow"}
-execute if score ukiyo_nrb nrb_timer1 matches 3 run title @a title {"text": "撕名牌战争","color": "yellow"}
-execute if score ukiyo_nrb nrb_timer1 matches 4 run title @a title {"text": "撕名牌战争","color": "red"}
-execute if score ukiyo_nrb nrb_timer1 matches 5 run title @a title {"text": "撕名牌战争","color": "red"}
-execute if score ukiyo_nrb nrb_timer1 matches 1 run title @a subtitle {"text": "即将在5秒后开始！","color": "yellow"}
-execute if score ukiyo_nrb nrb_timer1 matches 2 run title @a subtitle {"text": "即将在4秒后开始！","color": "yellow"}
-execute if score ukiyo_nrb nrb_timer1 matches 3 run title @a subtitle {"text": "即将在3秒后开始！","color": "yellow"}
-execute if score ukiyo_nrb nrb_timer1 matches 4 run title @a subtitle {"text": "即将在2秒后开始！","color": "red"}
-execute if score ukiyo_nrb nrb_timer1 matches 5 run title @a subtitle {"text": "即将在1秒后开始！","color": "red"}
+execute if score ukiyo_nrb nrb_timer1 matches 1 run title @a title {"text": "撕名牌战争",color: "yellow"}
+execute if score ukiyo_nrb nrb_timer1 matches 2 run title @a title {"text": "撕名牌战争",color: "yellow"}
+execute if score ukiyo_nrb nrb_timer1 matches 3 run title @a title {"text": "撕名牌战争",color: "yellow"}
+execute if score ukiyo_nrb nrb_timer1 matches 4 run title @a title {"text": "撕名牌战争",color: "red"}
+execute if score ukiyo_nrb nrb_timer1 matches 5 run title @a title {"text": "撕名牌战争",color: "red"}
+execute if score ukiyo_nrb nrb_timer1 matches 1 run title @a subtitle {"text": "即将在5秒后开始！",color: "yellow"}
+execute if score ukiyo_nrb nrb_timer1 matches 2 run title @a subtitle {"text": "即将在4秒后开始！",color: "yellow"}
+execute if score ukiyo_nrb nrb_timer1 matches 3 run title @a subtitle {"text": "即将在3秒后开始！",color: "yellow"}
+execute if score ukiyo_nrb nrb_timer1 matches 4 run title @a subtitle {"text": "即将在2秒后开始！",color: "red"}
+execute if score ukiyo_nrb nrb_timer1 matches 5 run title @a subtitle {"text": "即将在1秒后开始！",color: "red"}
 
-execute if score ukiyo_nrb nrb_timer1 matches 6 run title @a title {"text": "撕名牌战争 现在开始开始！","color": "green"}
-execute if score ukiyo_nrb nrb_timer1 matches 6 run title @a subtitle {"text": "攻击其他人的后背 撕下他们的名牌！","color": "green"}
+execute if score ukiyo_nrb nrb_timer1 matches 6 run title @a title {"text": "撕名牌战争 现在开始开始！",color: "green"}
+execute if score ukiyo_nrb nrb_timer1 matches 6 run title @a subtitle {"text": "攻击其他人的后背 撕下他们的名牌！",color: "green"}
 
 execute if score ukiyo_nrb nrb_timer1 matches 1..5 as @a at @s run playsound block.note_block.bell master @s ~ ~ ~ 1 0.5
 execute if score ukiyo_nrb nrb_timer1 matches 6 as @a at @s run playsound block.note_block.bell master @s ~ ~ ~ 1 1

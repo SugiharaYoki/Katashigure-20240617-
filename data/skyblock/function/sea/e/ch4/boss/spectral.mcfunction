@@ -1,4 +1,4 @@
-execute as @s[scores={rng8=2},tag=SEAboss4_spectral] at @s run tellraw @a[tag=SEAPT] [{text:"艾德雯娜","color": "red"},{text:"举起工程弩。","color": "yellow"}]
+execute as @s[scores={rng8=2},tag=SEAboss4_spectral] at @s run tellraw @a[tag=SEAPT] [{text:"艾德雯娜",color: "red"},{text:"举起工程弩。",color: "yellow"}]
 execute as @s[scores={rng8=2..60},tag=SEAboss4_spectral] at @s run item replace entity @s weapon.mainhand with crossbow
 execute as @s[scores={rng8=10},tag=SEAboss4_spectral] at @s run playsound item.crossbow.loading_start hostile @a ~ ~ ~ 1 1.1
 execute as @s[scores={rng8=20},tag=SEAboss4_spectral] at @s run playsound item.crossbow.loading_middle hostile @a ~ ~ ~ 1 1.1

@@ -22,7 +22,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 39..40 positioned -799
 execute if score stage_bonus_thread AzrTimerStack matches 42 run setblock -79967 31 164 lever[face=floor,facing=east]
 execute if score stage_bonus_thread AzrTimerStack matches 42 as @a[tag=azrShowDialog] at @s run playsound minecraft:block.note_block.guitar player @s ~ ~ ~ 1 0.8
 execute if score stage_bonus_thread AzrTimerStack matches 42 run bossbar set azr:progress_bar_bonus name {text:"Stage Kinetic - 请启动点火装置",bold:1b}
-execute if score stage_bonus_thread AzrTimerStack matches 42 as @a[tag=azrShowDialog] at @s run tellraw @s {text:"指示：请启动点火装置",bold:1b,"color": "yellow"}
+execute if score stage_bonus_thread AzrTimerStack matches 42 as @a[tag=azrShowDialog] at @s run tellraw @s {text:"指示：请启动点火装置",bold:1b,color: "yellow"}
 execute if score stage_bonus_thread AzrTimerStack matches 43..44 run scoreboard players set stage_bonus_thread AzrTimerStack 43
 execute if score stage_bonus_thread AzrTimerStack matches 42..43 if block -79967 31 164 lever[powered=true] run scoreboard players set stage_bonus_thread AzrTimerStack 45
 execute if score stage_bonus_thread AzrTimerStack matches 45 run bossbar set azr:progress_bar_bonus name "Stage Kinetic"
@@ -46,7 +46,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 98 positioned -79953 2
 execute if score stage_bonus_thread AzrTimerStack matches 99 run setblock -79967 31 164 lever[face=floor,facing=east]
 execute if score stage_bonus_thread AzrTimerStack matches 99 as @a[tag=azrShowDialog] at @s run playsound minecraft:block.note_block.guitar player @s ~ ~ ~ 1 0.8
 execute if score stage_bonus_thread AzrTimerStack matches 99 run bossbar set azr:progress_bar_bonus name {text:"Stage Kinetic - 请启动点火装置",bold:1b}
-execute if score stage_bonus_thread AzrTimerStack matches 99 as @a[tag=azrShowDialog] at @s run tellraw @s {text:"指示：请启动点火装置",bold:1b,"color": "yellow"}
+execute if score stage_bonus_thread AzrTimerStack matches 99 as @a[tag=azrShowDialog] at @s run tellraw @s {text:"指示：请启动点火装置",bold:1b,color: "yellow"}
 execute if score stage_bonus_thread AzrTimerStack matches 100..101 run scoreboard players set stage_bonus_thread AzrTimerStack 100
 execute if score stage_bonus_thread AzrTimerStack matches 99..100 if block -79967 31 164 lever[powered=true] run scoreboard players set stage_bonus_thread AzrTimerStack 102
 execute if score stage_bonus_thread AzrTimerStack matches 102 run bossbar set azr:progress_bar_bonus name "Stage Kinetic"
@@ -75,7 +75,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 150 positioned -79953 
 execute if score stage_bonus_thread AzrTimerStack matches 151 run setblock -79967 31 164 lever[face=floor,facing=east]
 execute if score stage_bonus_thread AzrTimerStack matches 151 as @a[tag=azrShowDialog] at @s run playsound minecraft:block.note_block.guitar player @s ~ ~ ~ 1 0.8
 execute if score stage_bonus_thread AzrTimerStack matches 151 run bossbar set azr:progress_bar_bonus name {text:"Stage Kinetic - 请启动点火装置",bold:1b}
-execute if score stage_bonus_thread AzrTimerStack matches 151 as @a[tag=azrShowDialog] at @s run tellraw @s {text:"指示：请启动点火装置",bold:1b,"color": "yellow"}
+execute if score stage_bonus_thread AzrTimerStack matches 151 as @a[tag=azrShowDialog] at @s run tellraw @s {text:"指示：请启动点火装置",bold:1b,color: "yellow"}
 execute if score stage_bonus_thread AzrTimerStack matches 152..153 run scoreboard players set stage_bonus_thread AzrTimerStack 152
 execute if score stage_bonus_thread AzrTimerStack matches 151..152 if block -79967 31 164 lever[powered=true] run scoreboard players set stage_bonus_thread AzrTimerStack 154
 execute if score stage_bonus_thread AzrTimerStack matches 154 run bossbar set azr:progress_bar_bonus name "Stage Kinetic"

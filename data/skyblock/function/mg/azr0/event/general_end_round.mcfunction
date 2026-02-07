@@ -14,7 +14,7 @@ execute if score MG_AZR0_Timer rng2 matches 139 run scoreboard players add MG_AZ
 
 #execute if score MG_AZR0_Timer rng2 matches 20.. store result score MG_AZR0_rng rng1 run random value 10..30
 #execute if score MG_AZR0_Timer rng2 matches 20.. run scoreboard players operation MG_AZR0_Timer rng8 += MG_AZR0_rng rng1
-execute if score MG_AZR0_Timer rng8 matches 250..3000 run tellraw @a[distance=..200] [{text:"你感受到一股深入骨髓的恶寒……","color": "gray"}]
+execute if score MG_AZR0_Timer rng8 matches 250..3000 run tellraw @a[distance=..200] [{text:"你感受到一股深入骨髓的恶寒……",color: "gray"}]
 
 execute if score MG_AZR0_Timer rng2 matches 5 run tag @a[tag=MG_AZR0PT] add MGAZR0_NewPTS
 execute if score MG_AZR0_Timer rng2 matches 10 run tag @a[tag=MG_AZR0PT] add MGAZR0_NewPTS
@@ -57,7 +57,7 @@ execute if score MG_AZR0_Timer rng2 matches 190 run tag @a[tag=MG_AZR0PT] add MG
 execute if score MG_AZR0_Timer rng2 matches 195 run tag @a[tag=MG_AZR0PT] add MGAZR0_NewPTS
 execute if score MG_AZR0_Timer rng2 matches 200 run tag @a[tag=MG_AZR0PT] add MGAZR0_NewPTS
 
-tellraw @a[tag=MGAZR0_NewPTS] {text:"获得了新的赐福点数！","color": "light_purple"}
+tellraw @a[tag=MGAZR0_NewPTS] {text:"获得了新的赐福点数！",color: "light_purple"}
 execute as @a[tag=MGAZR0_NewPTS] at @s run playsound block.beacon.power_select player @s ~ ~ ~ 1 1.7
 execute as @a[tag=MGAZR0_NewPTS] at @s run scoreboard players add @s Azr0_SkillPoint 1
 

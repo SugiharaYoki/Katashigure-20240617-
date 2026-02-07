@@ -10,7 +10,7 @@ execute positioned 90069 21 -1815 as @e[tag=SEAboss5_heaven_portal,limit=3,dista
 execute positioned 90069 21 -1815 as @e[type=marker,tag=SEA_boss6_flame_anchor,distance=0..50] at @s run function skyblock:sea/e/ch6/boss6/attack_flame_anchor
 execute positioned 90069 21 -1815 as @e[type=marker,tag=SEA_boss6_burst_anchor,distance=0..50] at @s run function skyblock:sea/e/ch6/boss6/attack_burst_anchor
 
-#tellraw @a[tag=SEAPT] [{text:" 检测rng4 = ",color:"white",italic:0b},{"score":{"name":"@s","objective":"rng4"},"color": "green",italic:1b}]
+#tellraw @a[tag=SEAPT] [{text:" 检测rng4 = ",color:"white",italic:0b},{"score":{"name":"@s","objective":"rng4"},color: "green",italic:1b}]
 
 #开局大跳
 #execute if score @s rng1 matches 100 run tag @s add seaboss6_move_jump

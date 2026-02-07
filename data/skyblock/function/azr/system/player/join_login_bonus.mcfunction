@@ -13,7 +13,7 @@ scoreboard players operation @s rng2 -= @s rng1
 execute if entity @s[scores={rng2=1}] run scoreboard players add @s Azr_Login_Day_Strike 1
 execute unless entity @s[scores={rng2=1}] run scoreboard players set @s Azr_Login_Day_Strike 1
 
-tellraw @s [{text:"- 获得登录奖励 -","color": "#f3db86",bold:1b},{text:"\n每日奖励已收纳至背包","color": "white",bold: false},{text:"\n当前连续登录天数：","color": "white",bold: false},{bold:0b,"score":{"name":"@s","objective":"Azr_Login_Day_Strike"},"color": "white"},{text:" [?]\n","color": "#272727",bold: false,hover_event:{"action":"show_text","value":{text:"连续登录的天数越长，获得稀有奖励的概率就会越高。\n中断登录会从 1 开始重新计数！",color:"white"}}}]
+tellraw @s [{text:"- 获得登录奖励 -",color: "#f3db86",bold:1b},{text:"\n每日奖励已收纳至背包",color: "white",bold: false},{text:"\n当前连续登录天数：",color: "white",bold: false},{bold:0b,"score":{"name":"@s","objective":"Azr_Login_Day_Strike"},color: "white"},{text:" [?]\n",color: "#272727",bold: false,hover_event:{"action":"show_text","value":{text:"连续登录的天数越长，获得稀有奖励的概率就会越高。\n中断登录会从 1 开始重新计数！",color:"white"}}}]
 
 scoreboard players operation @s Azr_Login_Identifier = #Server_Date Global_Age
 

@@ -105,7 +105,7 @@ execute if score #rng3 Azr_system matches 1 if score #rng4 Azr_system matches 4 
 execute if score #rng3 Azr_system matches 2 if score #rng4 Azr_system matches 4 if score #rng9 Azr_system matches 1..8 if score #rng13 Azr_system matches 4..6 run summon item ~ ~ ~ {Item:{id:"shield",count:1b,components:{custom_name:{text:"刺盾·遂望",italic:0b,color:"dark_red"},attribute_modifiers:[{type:"attack_damage",amount:7.0d,operation:"add_value",id:"i_84300_135_20991_27",slot:"mainhand"},{type:"attack_speed",amount:-2.8d,operation:"add_value",id:"i_84300_135_20991_28",slot:"mainhand"},{type:"movement_speed",amount:0.015d,operation:"add_value",id:"i_84300_135_20991_2802",slot:"mainhand"}],unbreakable:{}}}}
 execute if score #rng3 Azr_system matches 3 if score #rng4 Azr_system matches 4 if score #rng9 Azr_system matches 1..8 if score #rng13 Azr_system matches 4..6 run summon item ~ ~ ~ {Item:{id:"crossbow",count:1b,components:{custom_name:{text:"刃弩·迅穿",italic:0b,color:"dark_red"},enchantments:{quick_charge:1,piercing:1},attribute_modifiers:[{type:"attack_damage",amount:3.5d,operation:"add_value",id:"i_84300_135_20992_27",slot:"mainhand"},{type:"attack_speed",amount:-2.3d,operation:"add_value",id:"i_84300_135_20992_28",slot:"mainhand"}],unbreakable:{}}}}
 
-tellraw @a[tag=DebugMode,tag=!DEBUG_ingore_wish_fountain] {text:"[Wish Fountain] Rolling, DEBUG_ingore_wish_fountain","color": "gray"}
+tellraw @a[tag=DebugMode,tag=!DEBUG_ingore_wish_fountain] {text:"[Wish Fountain] Rolling, DEBUG_ingore_wish_fountain",color: "gray"}
 
 execute store result entity @s Item.count int 1.0 run scoreboard players get temp_wish_fountain_rolls Azr_system
 execute if score temp_wish_fountain_rolls Azr_system matches 0 run kill @s

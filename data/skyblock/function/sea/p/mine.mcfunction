@@ -14,7 +14,7 @@ execute if entity @s[tag=!sea_mine_player] if score @s sea_4temp1 matches 4 run 
 execute if entity @s[tag=!sea_mine_player] if score @s sea_4temp1 matches 8 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.5
 execute if entity @s[tag=!sea_mine_player] if score @s sea_4temp1 matches 12 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.5
 execute if entity @s[tag=!sea_mine_player] if score @s sea_4temp1 matches 16 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.5
-execute if entity @s[tag=!sea_mine_player] if score @s sea_4temp1 matches 16 run tellraw @a[distance=0..5] {text:"祝你有美好的一天！","color": "red"}
+execute if entity @s[tag=!sea_mine_player] if score @s sea_4temp1 matches 16 run tellraw @a[distance=0..5] {text:"祝你有美好的一天！",color: "red"}
 execute if entity @s[tag=!sea_mine_player] if score @s sea_4temp1 matches 20 run particle explosion ~ ~ ~ 0.4 0.4 0.4 0 2
 execute if entity @s[tag=!sea_mine_player] if score @s sea_4temp1 matches 20 run particle explosion_emitter ~ ~ ~ 0.7 0.7 0.7 0.03 2
 execute if entity @s[tag=!sea_mine_player] if score @s sea_4temp1 matches 20 run particle large_smoke ~ ~ ~ 1.3 1.3 1.3 0.02 20

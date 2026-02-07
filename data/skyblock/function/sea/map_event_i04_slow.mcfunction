@@ -12,11 +12,11 @@ execute as @a[tag=SEAPT,x=90175,y=19,z=89,distance=0..4.8,tag=!e_i_33] at @s run
 
 execute as @a[tag=SEAPT,x=90170,y=44,z=130,distance=0..3.2,tag=!e_i_35] at @s run function skyblock:sea/e/ch4/title_2
 
-execute as @a[tag=SEAPT,tag=!e_i_36,tag=!e_i_34] at @s if entity @n[tag=SEAherb,tag=SEAherb2,distance=0..3.5,scores={sea_4temp1=..1}] run tellraw @s {text:"嗯？小猫？你是怎么从怪物手里活下来的？","color": "gray"}
-execute as @a[tag=SEAPT,tag=!e_i_36,tag=e_i_34] at @s if entity @n[tag=SEAherb,tag=SEAherb2,distance=0..3.5,scores={sea_4temp1=..1}] run tellraw @s {text:"又见面了，小猫。看来你掌握了几条捷径呢。","color": "gray"}
+execute as @a[tag=SEAPT,tag=!e_i_36,tag=!e_i_34] at @s if entity @n[tag=SEAherb,tag=SEAherb2,distance=0..3.5,scores={sea_4temp1=..1}] run tellraw @s {text:"嗯？小猫？你是怎么从怪物手里活下来的？",color: "gray"}
+execute as @a[tag=SEAPT,tag=!e_i_36,tag=e_i_34] at @s if entity @n[tag=SEAherb,tag=SEAherb2,distance=0..3.5,scores={sea_4temp1=..1}] run tellraw @s {text:"又见面了，小猫。看来你掌握了几条捷径呢。",color: "gray"}
 execute as @a[tag=SEAPT,tag=!e_i_36] at @s if entity @n[tag=SEAherb,tag=SEAherb2,distance=0..3.5,scores={sea_4temp1=..1}] run tag @s add e_i_36
 
-execute as @a[tag=SEAPT,tag=!e_i_34] at @s if entity @n[tag=SEAherb,distance=0..3.5,scores={sea_4temp1=..1}] run tellraw @s {text:"嗯？小猫？你是怎么从怪物手里活下来的？","color": "gray"}
+execute as @a[tag=SEAPT,tag=!e_i_34] at @s if entity @n[tag=SEAherb,distance=0..3.5,scores={sea_4temp1=..1}] run tellraw @s {text:"嗯？小猫？你是怎么从怪物手里活下来的？",color: "gray"}
 execute as @a[tag=SEAPT,tag=!e_i_34] at @s if entity @n[tag=SEAherb,distance=0..3.5,scores={sea_4temp1=..1}] run tag @s add e_i_34
 
 execute if entity @a[tag=SEAPT,tag=e_i_36] as @n[tag=SEAherb] at @s unless entity @a[tag=SEAPT,distance=0..8] positioned 90229 48 105 if entity @s[distance=10..] run tp @s ~ ~ ~
@@ -302,8 +302,8 @@ execute positioned 90216 57 91 if entity @a[tag=SEAPT,distance=..2.7] unless ite
 execute positioned 90209 57 89 if entity @a[tag=SEAPT,distance=..2.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..2] positioned 90209 57 89 run function skyblock:sea/m/zombie_knight
 execute positioned 90209 57 89 if entity @a[tag=SEAPT,distance=..2.7] unless items entity @a[tag=SEAPT] container.* heart_of_the_sea unless entity @n[tag=SEAch4_spawn,distance=0..2] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn"]}
 
-execute unless block 90241 46 134 air if score sea_ch4_aquatic_alarm rng1 matches 50 positioned 90229 43 134 as @a[tag=SEAPT,distance=..20] run tellraw @s {text:"警告：水生生物研究区域 戒严管控中 请无关人员不要接近该区域","color": "red"}
-execute if score sea_ch4_aquatic_alarm rng1 matches 90 positioned 90167 35 99 as @a[tag=SEAPT,distance=..12] run tellraw @s {text:"播报：欢迎来到忒尔克西水下研究中心，世界级实验动物学研究机构","color": "green"}
+execute unless block 90241 46 134 air if score sea_ch4_aquatic_alarm rng1 matches 50 positioned 90229 43 134 as @a[tag=SEAPT,distance=..20] run tellraw @s {text:"警告：水生生物研究区域 戒严管控中 请无关人员不要接近该区域",color: "red"}
+execute if score sea_ch4_aquatic_alarm rng1 matches 90 positioned 90167 35 99 as @a[tag=SEAPT,distance=..12] run tellraw @s {text:"播报：欢迎来到忒尔克西水下研究中心，世界级实验动物学研究机构",color: "green"}
 execute if score sea_ch4_aquatic_alarm rng1 matches 99 positioned 90167 35 99 as @a[tag=SEAPT,distance=..12] if entity @n[tag=SEAyuehan_ch4_acting,scores={sea_4temp2=5}] run tellraw @a[distance=0..250] [{text:"越涵：",color:"green",bold:1b},{text:"\n“欢迎来到忒尔克西水下研究中心，世界级实验动物学研究机构。”",color:"white",bold: false}]
 execute if score sea_ch4_aquatic_alarm rng1 matches 99 positioned 90167 35 99 as @a[tag=SEAPT,distance=..12] if entity @n[tag=SEAyuehan_ch4_acting,scores={sea_4temp2=5}] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute if score sea_ch4_aquatic_alarm rng1 matches 99 positioned 90167 35 99 as @a[tag=SEAPT,distance=..12] if entity @n[tag=SEAyuehan_ch4_acting,scores={sea_4temp2=10}] run tellraw @a[distance=0..250] [{text:"越涵：",color:"green",bold:1b},{text:"\n“我耳朵快长茧了。是因为这里很亮堂所以你不想走吗？”",color:"white",bold: false}]

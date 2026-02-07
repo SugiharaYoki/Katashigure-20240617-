@@ -1,4 +1,4 @@
-execute as @s[scores={rng8=2},tag=SEAboss4_cannon] at @s run tellraw @a[tag=SEAPT] [{text:"艾德雯娜","color": "red"},{text:"举起霰弹枪！","color": "yellow"}]
+execute as @s[scores={rng8=2},tag=SEAboss4_cannon] at @s run tellraw @a[tag=SEAPT] [{text:"艾德雯娜",color: "red"},{text:"举起霰弹枪！",color: "yellow"}]
 execute as @s[scores={rng8=2..60},tag=SEAboss4_cannon] at @s run item replace entity @s weapon.mainhand with shears
 execute as @s[scores={rng8=30..52},tag=SEAboss4_cannon] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute as @s[scores={rng8=30..59},tag=SEAboss4_cannon] at @s anchored eyes positioned ^ ^ ^1.5 run particle flame ~ ~ ~ 0 0 0 0 1

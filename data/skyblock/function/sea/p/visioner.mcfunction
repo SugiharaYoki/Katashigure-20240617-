@@ -18,7 +18,7 @@ tag @a[tag=SEAPT,tag=!SEAvisioned,scores={sea_visioned=..0}] remove SEAvisioned_
 
 execute as @a[tag=!SEAvisioned_WARN,tag=SEAvisioned] run attribute @s jump_strength modifier add sea:mob_debuff_visioned01 -50 add_value
 
-title @a[tag=SEAPT,tag=SEAvisioned] actionbar {text:"你正被一道炙热的视线死盯着……","color": "red",bold:1b}
+title @a[tag=SEAPT,tag=SEAvisioned] actionbar {text:"你正被一道炙热的视线死盯着……",color: "red",bold:1b}
 execute as @a[tag=SEAPT,tag=SEAvisioned,tag=!SEAvisioned_WARN] at @s run playsound entity.elder_guardian.curse hostile @s ~ ~ ~ 0.8 0.8
 
 scoreboard players add @a[tag=SEAPT,tag=SEAvisioned,tag=!SEAvisioned_WARN] sea_visioned 20

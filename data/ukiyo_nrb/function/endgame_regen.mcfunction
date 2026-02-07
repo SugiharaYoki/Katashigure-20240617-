@@ -2,7 +2,7 @@ tag @a remove ukiyo_nrb
 clear @a[tag=UNRBPT]
 #gamemode adventure @a[tag=UNRBPT]
 tag @a remove UNRBPT
-tellraw @a {"text": "本局游戏结束！","color": "green","bold": true}
+tellraw @a {"text": "本局游戏结束！",color: "green","bold": true}
 
 scoreboard objectives remove nrb_timer0
 scoreboard objectives remove nrb_timer1

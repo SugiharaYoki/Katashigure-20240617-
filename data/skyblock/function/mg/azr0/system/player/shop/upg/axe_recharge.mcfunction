@@ -20,7 +20,7 @@ execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_axe_recharge=8}] run 
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_axe_recharge=9}] run scoreboard players remove @s Azr0_emerald 800
 execute if entity @s[tag=AZR0SHOP_SUCCESS,tag=!azr0_load_game] run scoreboard players add @s Azr0_UPG_axe_recharge 1
 execute if entity @s[tag=AZR0SHOP_SUCCESS,tag=!azr0_load_game] run scoreboard players set @s Azr0_axe_recharge 1001
-execute if entity @s[tag=AZR0SHOP_SUCCESS,tag=!azr0_load_game] run tellraw @s {text:"升级成功！","color": "green"}
+execute if entity @s[tag=AZR0SHOP_SUCCESS,tag=!azr0_load_game] run tellraw @s {text:"升级成功！",color: "green"}
 execute if entity @s[tag=AZR0SHOP_SUCCESS,tag=!azr0_load_game] run playsound entity.player.levelup player @s ~ ~ ~ 1 1
 tag @s remove AZR0SHOP_SUCCESS
 

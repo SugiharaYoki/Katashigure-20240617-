@@ -1,6 +1,6 @@
 title @s times 0s 2s 2s
-title @s title {text:"通 讯 平 台 支 柱","color": "white",bold:1b}
-#title @s subtitle {text:"厄珀娅的悲歌 第伍章","color": "gray"}
+title @s title {text:"通 讯 平 台 支 柱",color: "white",bold:1b}
+#title @s subtitle {text:"厄珀娅的悲歌 第伍章",color: "gray"}
 execute unless entity @a[tag=e_i_38,tag=SEAPT,tag=!SEAPF] positioned 90140 116 60 run function skyblock:sea/m/drowned_maintenance
 playsound ambient.basalt_deltas.additions master @s ~ ~ ~ 100 0.5
 playsound ambient.basalt_deltas.additions master @s ~ ~ ~ 100 0.5

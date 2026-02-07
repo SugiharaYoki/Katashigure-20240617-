@@ -4,7 +4,7 @@ scoreboard objectives add if_survival_mode dummy
 scoreboard objectives add if_teamed dummy
 scoreboard objectives add nrb_alive dummy
 scoreboard objectives add life_count dummy
-scoreboard objectives add PERM_unrb_win dummy {"text": "『撕名牌』总胜利次数","color": "green"}
+scoreboard objectives add PERM_unrb_win dummy {"text": "『撕名牌』总胜利次数",color: "green"}
 scoreboard objectives add nrb_does_damage minecraft.custom:damage_dealt
 scoreboard objectives add nrb_receive_damage minecraft.custom:damage_taken
 

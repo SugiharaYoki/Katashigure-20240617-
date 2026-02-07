@@ -23,7 +23,7 @@ execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=10..}] at @s run effect 
 execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=7..16}] at @s run damage @s 4.5 minecraft:campfire
 execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=17..22}] at @s run damage @s 5.5 minecraft:campfire
 execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=23..}] at @s run damage @s 9 minecraft:campfire
-#execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=1..}] at @s run tellraw @a [{text:" 章鱼熟度 = ",color:"white",italic:0b},{"score":{"name":"@s","objective":"rng1"},"color": "green",italic:1b}]
+#execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=1..}] at @s run tellraw @a [{text:" 章鱼熟度 = ",color:"white",italic:0b},{"score":{"name":"@s","objective":"rng1"},color: "green",italic:1b}]
 execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=10..}] at @s if block ~ ~2 ~ water if block ~ ~3 ~ water if block ~ ~4 ~ water if block ~ ~5 ~ water if block ~ ~6 ~ water if block ~ ~-0.3 ~ water run kill @s
 execute as @a[gamemode=adventure,tag=SEAPT,scores={rng1=10..}] at @s if block ~ ~3 ~ water if block ~ ~5 ~ water if block ~ ~6 ~ water if block ~ ~7 ~ water if block ~ ~8 ~ water if block ~ ~-3 ~ water run kill @s
 

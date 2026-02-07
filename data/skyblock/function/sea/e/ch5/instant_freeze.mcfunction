@@ -1,6 +1,6 @@
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 2 run tellraw @a[tag=SEAPT] {text:"播报：急冻装置启动中，请所有工作人员远离平台中心水区。","color": "green"}
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 42 run tellraw @a[tag=SEAPT] {text:"播报：急冻装置启动中，请所有工作人员远离平台中心水区。","color": "green"}
-execute if score sea_ch5_instant_freeze sea_4temp2 matches 82 run tellraw @a[tag=SEAPT] {text:"播报：急冻装置启动中，请所有工作人员远离平台中心水区。","color": "green"}
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 2 run tellraw @a[tag=SEAPT] {text:"播报：急冻装置启动中，请所有工作人员远离平台中心水区。",color: "green"}
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 42 run tellraw @a[tag=SEAPT] {text:"播报：急冻装置启动中，请所有工作人员远离平台中心水区。",color: "green"}
+execute if score sea_ch5_instant_freeze sea_4temp2 matches 82 run tellraw @a[tag=SEAPT] {text:"播报：急冻装置启动中，请所有工作人员远离平台中心水区。",color: "green"}
 
 execute if score sea_ch5_instant_freeze sea_4temp2 matches 3 run fill 90119 97 25 90119 97 29 iron_block
 execute if score sea_ch5_instant_freeze sea_4temp2 matches 4 run fill 90119 96 25 90119 96 29 iron_block

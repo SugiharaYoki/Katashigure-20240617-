@@ -16,8 +16,8 @@ execute if score sea_ch2_close_storage sea_4temp2 matches 409 positioned 90139 1
 
 execute if score sea_ch2_close_storage sea_4temp2 matches 405 positioned 90149 129 129 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
 
-execute if score sea_ch2_close_storage sea_4temp2 matches 405 run tellraw @a[tag=SEAPT] {text:"播报：东冷冻库冷凝机功率已切换至“最高”。","color": "green"}
-execute if score sea_ch2_close_storage sea_4temp2 matches 414 run tellraw @a[tag=SEAPT] {text:"播报：系统警告，东区保险丝熔断，请检查东区电路箱。","color": "red"}
+execute if score sea_ch2_close_storage sea_4temp2 matches 405 run tellraw @a[tag=SEAPT] {text:"播报：东冷冻库冷凝机功率已切换至“最高”。",color: "green"}
+execute if score sea_ch2_close_storage sea_4temp2 matches 414 run tellraw @a[tag=SEAPT] {text:"播报：系统警告，东区保险丝熔断，请检查东区电路箱。",color: "red"}
 scoreboard players add sea_ch2_close_storage rng8 1
 execute if score sea_ch2_close_storage rng8 matches 21 if entity @a[scores={SEAPT_member=1}] run tellraw @a[tag=SEAPT] [{selector:"@p[tag=SEAPT,scores={SEAPT_member=1}]",color:"aqua"},{text:"：",color:"aqua",bold:1b},{text:"\n“靠……我可不是电工。”",color:"white"}]
 execute if score sea_ch2_close_storage rng8 matches 45 if entity @a[scores={SEAPT_member=1}] run tellraw @a[tag=SEAPT] [{selector:"@p[tag=SEAPT,scores={SEAPT_member=1}]",color:"aqua"},{text:"：",color:"aqua",bold:1b},{text:"\n“不过至少冷冻库本身还是运作的，不用去费心思修电箱。”",color:"white"}]

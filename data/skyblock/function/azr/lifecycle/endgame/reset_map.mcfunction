@@ -876,10 +876,10 @@ forceload remove -79541 -472 -79345 -350
 #______________________________________________________________#
 kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1000]
 
-tellraw @a[tag=!Gaming] {text:"死亡总是在不经意间，悄然而至。","color": "green"}
-tellraw @a[tag=!Gaming] {text:"你本该活得更久。如果想要违抗自己的死亡……","color": "green"}
-tellraw @a[tag=!Gaming] {text:"那就，前往天界的生命树庭园吧。","color": "green"}
-tellraw @a[tag=!Gaming] [{text:"『亚兹列尔的中庭花园』","color": "light_purple",bold:1b},{text:" 已允许新的挑战者光临","color": "green",bold: false}]
+tellraw @a[tag=!Gaming] {text:"死亡总是在不经意间，悄然而至。",color: "green"}
+tellraw @a[tag=!Gaming] {text:"你本该活得更久。如果想要违抗自己的死亡……",color: "green"}
+tellraw @a[tag=!Gaming] {text:"那就，前往天界的生命树庭园吧。",color: "green"}
+tellraw @a[tag=!Gaming] [{text:"『亚兹列尔的中庭花园』",color: "light_purple",bold:1b},{text:" 已允许新的挑战者光临",color: "green",bold: false}]
 
 
 scoreboard players set stage_main_thread AzrTimerStack 0

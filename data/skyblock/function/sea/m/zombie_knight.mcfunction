@@ -5,4 +5,4 @@ playsound entity.zombie_villager.cure hostile @a ~ ~ ~ 1 0.8
 particle warped_spore ~ ~ ~ 0 0 0 0.3 100
 particle soul_fire_flame ~ ~ ~ 0 0 0 0.3 80
 effect give @a[tag=SEAPT,distance=0..10] darkness 4 0 false
-tellraw @a[tag=SEAPT,distance=0..10] {text:"巨大的灵压朝你席卷而来……","color": "dark_red",italic:1b}
+tellraw @a[tag=SEAPT,distance=0..10] {text:"巨大的灵压朝你席卷而来……",color: "dark_red",italic:1b}

@@ -36,7 +36,7 @@ execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=14..}] run attribu
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=15..}] run attribute @s max_health modifier add mg_azr0:upg_maxhp16 2 add_value
 execute if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_UPG_hp=16..}] run attribute @s max_health modifier add mg_azr0:upg_maxhp17 2 add_value
 execute if entity @s[tag=AZR0SHOP_SUCCESS,tag=!azr0_load_game] run scoreboard players add @s Azr0_UPG_hp 1
-execute if entity @s[tag=AZR0SHOP_SUCCESS,tag=!azr0_load_game] run tellraw @s {text:"血量上限已提升！","color": "green"}
+execute if entity @s[tag=AZR0SHOP_SUCCESS,tag=!azr0_load_game] run tellraw @s {text:"血量上限已提升！",color: "green"}
 execute if entity @s[tag=AZR0SHOP_SUCCESS,tag=!azr0_load_game] run playsound entity.player.levelup player @s ~ ~ ~ 1 1
 execute if entity @s[tag=AZR0SHOP_SUCCESS,tag=!azr0_load_game] run effect give @s instant_health 3 9 true
 tag @s remove AZR0SHOP_SUCCESS

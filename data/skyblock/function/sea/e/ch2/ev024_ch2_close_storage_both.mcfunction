@@ -6,12 +6,12 @@ execute as @n[tag=sc,scores={sea_4temp2=842}] run setblock 90113 133 117 lantern
 execute as @n[tag=sc,scores={sea_4temp2=842}] as @n[tag=SEAeventfirstpig] at @s run tp @s ~ -500 ~
 
 execute as @n[tag=sc,scores={sea_4temp2=810}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..3}] sea_progress 4
-execute as @n[tag=sc,scores={sea_4temp2=810}] run tellraw @a[tag=SEAPT] {text:"播报：系统警告，北区冷冻库系统过","color": "red"}
-execute as @n[tag=sc,scores={sea_4temp2=813}] run tellraw @a[tag=SEAPT] {text:"库系统过载，请相","color": "red"}
-execute as @n[tag=sc,scores={sea_4temp2=814}] run tellraw @a[tag=SEAPT] {text:"冻库系统过","color": "red"}
-execute as @n[tag=sc,scores={sea_4temp2=819}] run tellraw @a[tag=SEAPT] {text:"工作人员检查电","color": "red"}
-execute as @n[tag=sc,scores={sea_4temp2=823}] run tellraw @a[tag=SEAPT] {text:"关工作人员检","color": "red"}
-execute as @n[tag=sc,scores={sea_4temp2=826..829}] run tellraw @a[tag=SEAPT] {text:"路系统","color": "red"}
+execute as @n[tag=sc,scores={sea_4temp2=810}] run tellraw @a[tag=SEAPT] {text:"播报：系统警告，北区冷冻库系统过",color: "red"}
+execute as @n[tag=sc,scores={sea_4temp2=813}] run tellraw @a[tag=SEAPT] {text:"库系统过载，请相",color: "red"}
+execute as @n[tag=sc,scores={sea_4temp2=814}] run tellraw @a[tag=SEAPT] {text:"冻库系统过",color: "red"}
+execute as @n[tag=sc,scores={sea_4temp2=819}] run tellraw @a[tag=SEAPT] {text:"工作人员检查电",color: "red"}
+execute as @n[tag=sc,scores={sea_4temp2=823}] run tellraw @a[tag=SEAPT] {text:"关工作人员检",color: "red"}
+execute as @n[tag=sc,scores={sea_4temp2=826..829}] run tellraw @a[tag=SEAPT] {text:"路系统",color: "red"}
 execute as @n[tag=sc,scores={sea_4temp2=813..822}] run playsound minecraft:ambient.soul_sand_valley.mood ambient @a 90104 133 100 13 1.5
 execute as @n[tag=sc,scores={sea_4temp2=813..829}] run playsound minecraft:ambient.soul_sand_valley.additions ambient @a 90104 133 100 13 1.5
 execute as @n[tag=sc,scores={sea_4temp2=823}] run fill 90104 130 103 90103 128 103 air

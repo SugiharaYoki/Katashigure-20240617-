@@ -8,9 +8,9 @@ execute if items entity @s player.cursor detector_rail[custom_data={"sea_railbox
 
 execute if entity @s[scores={sea_railbox_1=..25}] run playsound minecraft:ui.stonecutter.select_recipe player @a ~ ~ ~ 1 0.7
 execute if entity @s[scores={sea_railbox_1=27..}] run playsound minecraft:block.grindstone.use player @a ~ ~ ~ 1 0.7
-tellraw @s[scores={sea_railbox_1=..25}] {text:"操作了一下控制台……","color": "gray"}
-tellraw @s[scores={sea_railbox_1=26}] {text:"操作了一下控制台……","color": "gray"}
-tellraw @s[scores={sea_railbox_1=27..}] {text:"操作了一下控制台，但是控制台自动重启了。","color": "gray"}
+tellraw @s[scores={sea_railbox_1=..25}] {text:"操作了一下控制台……",color: "gray"}
+tellraw @s[scores={sea_railbox_1=26}] {text:"操作了一下控制台……",color: "gray"}
+tellraw @s[scores={sea_railbox_1=27..}] {text:"操作了一下控制台，但是控制台自动重启了。",color: "gray"}
 scoreboard players set @s[scores={sea_railbox_1=27..}] sea_railbox_1 0
 
 execute if entity @s[scores={sea_railbox_1=26}] run scoreboard players set SEA_ch4_event_railbox rng1 1

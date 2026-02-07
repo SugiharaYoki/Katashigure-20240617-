@@ -24,38 +24,38 @@ execute at @s if entity @n[tag=SEAcrafter,distance=0..5] run scoreboard players 
 
 execute if entity @s[tag=SEAelevatoring] run tag @s[predicate=!skyblock:jump] remove SEAelevatoring
 
-execute if entity @s[tag=!e_w_01] if items entity @s container.* iron_hoe run tellraw @s {text:"获得武器：撬棍","color": "dark_red"}
-execute if entity @s[tag=!e_w_01] if items entity @s container.* iron_hoe run tellraw @s {text:"防身武器，较快的攻击速度与略微优于赤手空拳的伤害。","color": "white"}
-execute if entity @s[tag=!e_w_01] if items entity @s container.* iron_hoe run tellraw @s {text:"找台工作站将其改造一番，或许能够获得意想不到的提升……？","color": "white"}
+execute if entity @s[tag=!e_w_01] if items entity @s container.* iron_hoe run tellraw @s {text:"获得武器：撬棍",color: "dark_red"}
+execute if entity @s[tag=!e_w_01] if items entity @s container.* iron_hoe run tellraw @s {text:"防身武器，较快的攻击速度与略微优于赤手空拳的伤害。",color: "white"}
+execute if entity @s[tag=!e_w_01] if items entity @s container.* iron_hoe run tellraw @s {text:"找台工作站将其改造一番，或许能够获得意想不到的提升……？",color: "white"}
 execute if entity @s[tag=!e_w_01] if items entity @s container.* iron_hoe run tag @s add e_w_01
 execute if entity @s[tag=!e_w_02] if items entity @s container.* iron_axe run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
-execute if entity @s[tag=!e_w_02] if items entity @s container.* iron_axe run tellraw @s {text:"获得新武器：消防斧","color": "dark_red"}
-execute if entity @s[tag=!e_w_02] if items entity @s container.* iron_axe run tellraw @s {text:"重型蓄力武器，以较低的速度换取高额攻击力，对单时给予我方优势。","color": "white"}
+execute if entity @s[tag=!e_w_02] if items entity @s container.* iron_axe run tellraw @s {text:"获得新武器：消防斧",color: "dark_red"}
+execute if entity @s[tag=!e_w_02] if items entity @s container.* iron_axe run tellraw @s {text:"重型蓄力武器，以较低的速度换取高额攻击力，对单时给予我方优势。",color: "white"}
 execute if entity @s[tag=!e_w_02] if items entity @s container.* iron_axe run tag @s add e_w_02
 execute if entity @s[tag=!e_w_03] if items entity @s container.* crossbow run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
-execute if entity @s[tag=!e_w_03] if items entity @s container.* crossbow run tellraw @s {text:"获得新武器：工程弩","color": "dark_red"}
-execute if entity @s[tag=!e_w_03] if items entity @s container.* crossbow run tellraw @s {text:"远程武器，原本是用于射出钩缆的工具，搭载弩箭后也可作攻击用途。","color": "white"}
-execute if entity @s[tag=!e_w_03] if items entity @s container.* crossbow run tellraw @s {text:"能够用于破坏陶罐。","color": "white"}
+execute if entity @s[tag=!e_w_03] if items entity @s container.* crossbow run tellraw @s {text:"获得新武器：工程弩",color: "dark_red"}
+execute if entity @s[tag=!e_w_03] if items entity @s container.* crossbow run tellraw @s {text:"远程武器，原本是用于射出钩缆的工具，搭载弩箭后也可作攻击用途。",color: "white"}
+execute if entity @s[tag=!e_w_03] if items entity @s container.* crossbow run tellraw @s {text:"能够用于破坏陶罐。",color: "white"}
 execute if entity @s[tag=!e_w_03] if items entity @s container.* crossbow run tag @s add e_w_03
 execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
-execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tellraw @s {text:"获得新武器：复合弓","color": "dark_red"}
-execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tellraw @s {text:"远程武器，似乎是史丹尼舵长用于防身的武器。","color": "white"}
-execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tellraw @s {text:"绝大多数枪械都被邪教徒销毁。现如今，这种简单的武器也会发挥出意想不到的效果吧。","color": "white"}
+execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tellraw @s {text:"获得新武器：复合弓",color: "dark_red"}
+execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tellraw @s {text:"远程武器，似乎是史丹尼舵长用于防身的武器。",color: "white"}
+execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tellraw @s {text:"绝大多数枪械都被邪教徒销毁。现如今，这种简单的武器也会发挥出意想不到的效果吧。",color: "white"}
 execute if entity @s[tag=!e_w_03b] if items entity @s[tag=SEAPT,advancements={skyblock:sea/doc/g29=false}] container.* bow run give @s mojang_banner_pattern[custom_data={sea_docg29:true}]
 execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow unless entity @s[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run tag @s add e_w_03b_eternal
 execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tag @s add e_w_03b
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
-execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tellraw @s {text:"获得新武器：喷火器","color": "dark_red"}
-execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tellraw @s {text:"中程武器，左键时向前方射出火舌。虽然燃料会随时间自然恢复，但作为武器的威力欠佳。","color": "white"}
-execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tellraw @s {text:"射程内无限穿透，适合用于攻击成群的低血量怪物。","color": "white"}
+execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tellraw @s {text:"获得新武器：喷火器",color: "dark_red"}
+execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tellraw @s {text:"中程武器，左键时向前方射出火舌。虽然燃料会随时间自然恢复，但作为武器的威力欠佳。",color: "white"}
+execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tellraw @s {text:"射程内无限穿透，适合用于攻击成群的低血量怪物。",color: "white"}
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] unless entity @s[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run tag @s add e_w_04_eternal
 execute if entity @s[tag=!e_w_04] if items entity @s[tag=SEAPT,advancements={skyblock:sea/doc/g20=false}] container.* shears[custom_data={sea_flamethrower:true}] run give @s mojang_banner_pattern[custom_data={sea_docg20:true}]
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tag @s add e_w_04
 execute if items entity @s container.* snout_armor_trim_smithing_template[custom_data={sea_t_shotgun1:true}] unless entity @s[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run tag @s add e_w_04b_eternal
 execute if entity @s[tag=!e_w_06] if items entity @s container.* music_disc_5[custom_data={sea_flamethrower:true}] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
-execute if entity @s[tag=!e_w_06] if items entity @s container.* music_disc_5[custom_data={sea_flamethrower:true}] run tellraw @s {text:"获得新武器：磁锯发射装置","color": "dark_red"}
-execute if entity @s[tag=!e_w_06] if items entity @s container.* music_disc_5[custom_data={sea_flamethrower:true}] run tellraw @s {text:"短程武器，右键后消耗1枚锯片，在身前牵引持续对怪物造成伤害的磁锯。","color": "white"}
-execute if entity @s[tag=!e_w_06] if items entity @s container.* music_disc_5[custom_data={sea_flamethrower:true}] run tellraw @s {text:"虽然能够造成巨额伤害，但是蹭到硬物的话可能会加速磨损。","color": "white"}
+execute if entity @s[tag=!e_w_06] if items entity @s container.* music_disc_5[custom_data={sea_flamethrower:true}] run tellraw @s {text:"获得新武器：磁锯发射装置",color: "dark_red"}
+execute if entity @s[tag=!e_w_06] if items entity @s container.* music_disc_5[custom_data={sea_flamethrower:true}] run tellraw @s {text:"短程武器，右键后消耗1枚锯片，在身前牵引持续对怪物造成伤害的磁锯。",color: "white"}
+execute if entity @s[tag=!e_w_06] if items entity @s container.* music_disc_5[custom_data={sea_flamethrower:true}] run tellraw @s {text:"虽然能够造成巨额伤害，但是蹭到硬物的话可能会加速磨损。",color: "white"}
 execute if entity @s[tag=!e_w_06] if items entity @s container.* music_disc_5[custom_data={sea_flamethrower:true}] run tag @s add e_w_06
 
 
@@ -92,16 +92,16 @@ execute if items entity @s container.* emerald at @s run scoreboard players add 
 execute if items entity @s container.* emerald at @s run clear @s emerald 1
 
 
-execute if entity @s[tag=!e_w_51_eternal,advancements={skyblock:sea/doc/6=true,skyblock:sea/doc/7=true,skyblock:sea/doc/8=true,skyblock:sea/doc/9=true,skyblock:sea/doc/10=true,skyblock:sea/doc/11=true,skyblock:sea/doc/12=true,skyblock:sea/doc/13=true}] run tellraw @s {text:"已获取全部8份『法莫洛斯的医疗报告』！","color": "blue"}
+execute if entity @s[tag=!e_w_51_eternal,advancements={skyblock:sea/doc/6=true,skyblock:sea/doc/7=true,skyblock:sea/doc/8=true,skyblock:sea/doc/9=true,skyblock:sea/doc/10=true,skyblock:sea/doc/11=true,skyblock:sea/doc/12=true,skyblock:sea/doc/13=true}] run tellraw @s {text:"已获取全部8份『法莫洛斯的医疗报告』！",color: "blue"}
 execute if entity @s[tag=!e_w_51_eternal,advancements={skyblock:sea/doc/6=true,skyblock:sea/doc/7=true,skyblock:sea/doc/8=true,skyblock:sea/doc/9=true,skyblock:sea/doc/10=true,skyblock:sea/doc/11=true,skyblock:sea/doc/12=true,skyblock:sea/doc/13=true}] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
-execute if entity @s[tag=!e_w_51_eternal,advancements={skyblock:sea/doc/6=true,skyblock:sea/doc/7=true,skyblock:sea/doc/8=true,skyblock:sea/doc/9=true,skyblock:sea/doc/10=true,skyblock:sea/doc/11=true,skyblock:sea/doc/12=true,skyblock:sea/doc/13=true}] run tellraw @s {text:"已获得可用于多功能工作站的永久升级。","color": "white"}
-execute if entity @s[tag=!e_w_51_eternal,advancements={skyblock:sea/doc/6=true,skyblock:sea/doc/7=true,skyblock:sea/doc/8=true,skyblock:sea/doc/9=true,skyblock:sea/doc/10=true,skyblock:sea/doc/11=true,skyblock:sea/doc/12=true,skyblock:sea/doc/13=true}] run tellraw @s {text:"以后不会通过工作站购买到腐肉了。","color": "white"}
-execute if entity @s[tag=!e_w_51_eternal,advancements={skyblock:sea/doc/6=true,skyblock:sea/doc/7=true,skyblock:sea/doc/8=true,skyblock:sea/doc/9=true,skyblock:sea/doc/10=true,skyblock:sea/doc/11=true,skyblock:sea/doc/12=true,skyblock:sea/doc/13=true}] run tellraw @s {text:"同时，金萝卜的获取概率也些微提升。","color": "white"}
+execute if entity @s[tag=!e_w_51_eternal,advancements={skyblock:sea/doc/6=true,skyblock:sea/doc/7=true,skyblock:sea/doc/8=true,skyblock:sea/doc/9=true,skyblock:sea/doc/10=true,skyblock:sea/doc/11=true,skyblock:sea/doc/12=true,skyblock:sea/doc/13=true}] run tellraw @s {text:"已获得可用于多功能工作站的永久升级。",color: "white"}
+execute if entity @s[tag=!e_w_51_eternal,advancements={skyblock:sea/doc/6=true,skyblock:sea/doc/7=true,skyblock:sea/doc/8=true,skyblock:sea/doc/9=true,skyblock:sea/doc/10=true,skyblock:sea/doc/11=true,skyblock:sea/doc/12=true,skyblock:sea/doc/13=true}] run tellraw @s {text:"以后不会通过工作站购买到腐肉了。",color: "white"}
+execute if entity @s[tag=!e_w_51_eternal,advancements={skyblock:sea/doc/6=true,skyblock:sea/doc/7=true,skyblock:sea/doc/8=true,skyblock:sea/doc/9=true,skyblock:sea/doc/10=true,skyblock:sea/doc/11=true,skyblock:sea/doc/12=true,skyblock:sea/doc/13=true}] run tellraw @s {text:"同时，金萝卜的获取概率也些微提升。",color: "white"}
 execute if entity @s[tag=!e_w_51_eternal,advancements={skyblock:sea/doc/6=true,skyblock:sea/doc/7=true,skyblock:sea/doc/8=true,skyblock:sea/doc/9=true,skyblock:sea/doc/10=true,skyblock:sea/doc/11=true,skyblock:sea/doc/12=true,skyblock:sea/doc/13=true}] run tag @s add e_w_51_eternal
 
-execute if entity @s[tag=!e_w_ahl2_e,advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/18=true,skyblock:sea/doc/19=true}] run tellraw @s {text:"已获取物资层厨师团队所留下的全部笔记！","color": "blue"}
+execute if entity @s[tag=!e_w_ahl2_e,advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/18=true,skyblock:sea/doc/19=true}] run tellraw @s {text:"已获取物资层厨师团队所留下的全部笔记！",color: "blue"}
 execute if entity @s[tag=!e_w_ahl2_e,advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/18=true,skyblock:sea/doc/19=true}] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
-execute if entity @s[tag=!e_w_ahl2_e,advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/18=true,skyblock:sea/doc/19=true}] run tellraw @s {text:"已获得可用于多功能工作站的永久升级。\n防具第1起始点的升级会始终点亮最左两格。","color": "white"}
+execute if entity @s[tag=!e_w_ahl2_e,advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/18=true,skyblock:sea/doc/19=true}] run tellraw @s {text:"已获得可用于多功能工作站的永久升级。\n防具第1起始点的升级会始终点亮最左两格。",color: "white"}
 execute if entity @s[tag=!e_w_ahl2_e,advancements={skyblock:sea/doc/15=true,skyblock:sea/doc/16=true,skyblock:sea/doc/17=true,skyblock:sea/doc/18=true,skyblock:sea/doc/19=true}] run tag @s add e_w_ahl2_e
 
 

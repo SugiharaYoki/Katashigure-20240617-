@@ -1,8 +1,8 @@
 execute unless items entity @s player.cursor end_crystal[custom_data={"azr0skill":true}] run tag @s add AZR0SHOP_SUCCESS
-execute unless items entity @s player.cursor ender_eye if entity @s[tag=AZR0SHOP_SUCCESS] run tellraw @s {text:"赐福选择成功！","color": "green"}
+execute unless items entity @s player.cursor ender_eye if entity @s[tag=AZR0SHOP_SUCCESS] run tellraw @s {text:"赐福选择成功！",color: "green"}
 
-execute if items entity @s player.cursor ender_eye if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_emerald=50..}] run tellraw @s {text:"刷新赐福！","color": "green"}
-execute if items entity @s player.cursor ender_eye if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_emerald=..49}] run tellraw @s {text:"绿宝石不足，刷新赐福失败！","color": "red"}
+execute if items entity @s player.cursor ender_eye if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_emerald=50..}] run tellraw @s {text:"刷新赐福！",color: "green"}
+execute if items entity @s player.cursor ender_eye if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_emerald=..49}] run tellraw @s {text:"绿宝石不足，刷新赐福失败！",color: "red"}
 execute unless items entity @s player.cursor ender_eye if entity @s[tag=AZR0SHOP_SUCCESS] run playsound entity.player.levelup player @s ~ ~ ~ 1 1
 execute if items entity @s player.cursor ender_eye if entity @s[tag=AZR0SHOP_SUCCESS] run playsound ui.button.click player @s ~ ~ ~ 1 1
 execute if items entity @s player.cursor ender_eye if entity @s[tag=AZR0SHOP_SUCCESS,scores={Azr0_emerald=..49}] run tag @s remove AZR0SHOP_SUCCESS

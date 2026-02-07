@@ -25,14 +25,14 @@
 
 # record
     data modify entity 0-0-0-0-1 text set value '[\
-    {text:"","color": "gray","extra": [{text:"["},{"nbt":"cache.timestamp[0]","storage": "skyblock:protector"},{text:":"},{"nbt":"cache.timestamp[1]","storage": "skyblock:protector"},{text:":"},{"nbt":"cache.timestamp[2]","storage": "skyblock:protector"},{text:"]"}]},\
-    {text:"可疑的非认证玩家活动：","color": "red"},\
+    {text:"",color: "gray","extra": [{text:"["},{"nbt":"cache.timestamp[0]","storage": "skyblock:protector"},{text:":"},{"nbt":"cache.timestamp[1]","storage": "skyblock:protector"},{text:":"},{"nbt":"cache.timestamp[2]","storage": "skyblock:protector"},{text:"]"}]},\
+    {text:"可疑的非认证玩家活动：",color: "red"},\
     {"nbt": "cache.player_profile.name","storage": "skyblock:protector","interpret": true,hover_event: {"action": "show_text","value": [{text:"UUID:"},{"nbt":"cache.player_profile.UUID","storage": "skyblock:protector"}]}},\
-    {text:"位于","color": "red"},\
+    {text:"位于",color: "red"},\
     {"nbt": "cache.location","storage": "skyblock:protector",color:"white"},\
     {text:"r="},{"nbt":"cache.uncertainty","storage": "skyblock:protector"}
 
-    tellraw @s [{text:"可疑的非认证玩家活动，你已被记录，若你是服务器拥有者，请在","color": "red"},{text:"函数skyblock:protector/__pvp_openchest",color:"white"},{text:"中认证你的游戏id",color:"red"}]
+    tellraw @s [{text:"可疑的非认证玩家活动，你已被记录，若你是服务器拥有者，请在",color: "red"},{text:"函数skyblock:protector/__pvp_openchest",color:"white"},{text:"中认证你的游戏id",color:"red"}]
     tellraw @a {"nbt": "text","entity": "0-0-0-0-1","interpret": true}
     
     execute unless data storage skyblock:protector record_oringinal[0] run data modify storage skyblock:protector record_oringinal set value []

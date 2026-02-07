@@ -1,8 +1,8 @@
 #
 
 execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run title @s times 0s 2s 2s
-execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run title @s title {text:"甲 板","color": "white",bold:1b}
-#execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..3.8,tag=!e_i_30] at @s run title @s subtitle {text:"厄珀娅的悲歌 第叁章","color": "gray"}
+execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run title @s title {text:"甲 板",color: "white",bold:1b}
+#execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..3.8,tag=!e_i_30] at @s run title @s subtitle {text:"厄珀娅的悲歌 第叁章",color: "gray"}
 execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run playsound ambient.crimson_forest.loop master @s ~ ~ ~ 100 0.8
 execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run playsound ambient.crimson_forest.loop master @s ~ ~ ~ 100 0.8
 execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run playsound garden2.chapter_title master @s ~ ~ ~ 100 1.0
@@ -226,7 +226,7 @@ execute as @n[tag=SEAmarshall,scores={sea_4temp1=539..}] at @s if entity @a[tag=
 execute as @n[tag=SEAyuehan] at @s unless block 90131 161 144 air run function skyblock:sea/e/ch3/ev008_elevator_to_northeast
 
 
-execute as @a[tag=SEAPT,x=90138,y=103,z=100,distance=0..2.7,tag=!e_i_29] at @s run tellraw @s {text:"我有预感……去了更下层后就很难再回来了。做好万全的准备再前进吧。","color": "gray"}
+execute as @a[tag=SEAPT,x=90138,y=103,z=100,distance=0..2.7,tag=!e_i_29] at @s run tellraw @s {text:"我有预感……去了更下层后就很难再回来了。做好万全的准备再前进吧。",color: "gray"}
 execute as @a[tag=SEAPT,x=90138,y=103,z=100,distance=0..2.7,tag=!e_i_29] at @s run tag @s add e_i_29
 
 execute as @a[tag=SEAPT,x=90138,y=36,z=100,distance=0..2.7,tag=!e_i_31] at @s run function skyblock:sea/e/ch3/ev010_boss3

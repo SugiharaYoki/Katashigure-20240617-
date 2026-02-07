@@ -11,7 +11,7 @@ execute if score SEAmusic rng1 matches 3915.. if entity @n[tag=SEAboss6c,scores=
 execute at @s as @e[type=marker,tag=SEA_boss6_flame_anchor,distance=0..450] at @s run function skyblock:sea/e/ch6/boss6/attack_flame_anchor_final
 execute at @s as @e[type=marker,tag=SEA_boss6_burst_anchor,distance=0..450] at @s run function skyblock:sea/e/ch6/boss6/attack_burst_anchor_final
 
-#tellraw @a[tag=SEAPT] [{text:" 检测rng4 = ",color:"white",italic:0b},{"score":{"name":"@s","objective":"rng4"},"color": "green",italic:1b}]
+#tellraw @a[tag=SEAPT] [{text:" 检测rng4 = ",color:"white",italic:0b},{"score":{"name":"@s","objective":"rng4"},color: "green",italic:1b}]
 
 #开局大跳
 #execute if score @s rng1 matches 100 run tag @s add seaboss6_move_jump

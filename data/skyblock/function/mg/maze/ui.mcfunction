@@ -1,4 +1,4 @@
 execute if items entity @s weapon.offhand totem_of_undying run tp @s -64 54 -181 facing -65 54 -180
-item replace entity @s container.0 with totem_of_undying[minecraft:custom_name={text:"光明图腾",italic:0b,color:"gold",bold:1b},lore=[{text:"有效预防幽闭恐惧症！",italic:0b},{text:"切换至副手：立即传送回主城。",italic:0b,"color": "green"}]]
+item replace entity @s container.0 with totem_of_undying[minecraft:custom_name={text:"光明图腾",italic:0b,color:"gold",bold:1b},lore=[{text:"有效预防幽闭恐惧症！",italic:0b},{text:"切换至副手：立即传送回主城。",italic:0b,color: "green"}]]
 execute unless items entity @s container.* blaze_rod run item replace entity @s container.1 with blaze_rod[minecraft:custom_name={text:"荧光棒",italic:0b,color:"green",bold:1b},lore=[{text:"我猜这个不需要说明书。",italic:0b}]]
-execute unless items entity @s container.* blaze_powder run item replace entity @s container.2 with blaze_powder[minecraft:custom_name={text:"阻绝粉",italic:0b,color:"green",bold:1b},lore=[{text:"掷出该道具，清除附近2格内的荧光记号。",italic:0b,"color": "green"}]]
+execute unless items entity @s container.* blaze_powder run item replace entity @s container.2 with blaze_powder[minecraft:custom_name={text:"阻绝粉",italic:0b,color:"green",bold:1b},lore=[{text:"掷出该道具，清除附近2格内的荧光记号。",italic:0b,color: "green"}]]

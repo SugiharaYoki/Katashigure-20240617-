@@ -58,5 +58,5 @@ tag @s remove azr0_switch_skill_success
 
 
 execute if entity @s[tag=azr0_switch_skill_success_effect] run playsound ui.button.click player @s ~ ~ ~ 0.9 1.3
-execute if entity @s[tag=azr0_switch_skill_success_effect] run tellraw @s {text:"更换主动灵能！","color": "green"}
+execute if entity @s[tag=azr0_switch_skill_success_effect] run tellraw @s {text:"更换主动灵能！",color: "green"}
 tag @s remove azr0_switch_skill_success_effect

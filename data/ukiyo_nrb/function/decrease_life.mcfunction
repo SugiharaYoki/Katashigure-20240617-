@@ -1,8 +1,8 @@
 scoreboard players remove @s life_count 1
-tellraw @s {"text": "你的名牌被攻击了！","color": "red"}
+tellraw @s {"text": "你的名牌被攻击了！",color: "red"}
 playsound minecraft:block.note_block.bit player @a ~ ~ ~ 1 0.75
-execute if score @s life_count matches -1 run tellraw @s {"text": "你被淘汰了！","color": "red","bold": true}
-execute if score @s life_count matches -1 run tellraw @a[distance=0.001..] [{selector:"@a[tag=UNRB_alive]",color:"red","bold": true},{"text": "被淘汰了！","color": "red","bold": true}]
+execute if score @s life_count matches -1 run tellraw @s {"text": "你被淘汰了！",color: "red","bold": true}
+execute if score @s life_count matches -1 run tellraw @a[distance=0.001..] [{selector:"@a[tag=UNRB_alive]",color:"red","bold": true},{"text": "被淘汰了！",color: "red","bold": true}]
 execute if score @s life_count matches -1 run playsound entity.elder_guardian.curse player @a ~ ~ ~ 1000 0.5
 execute if score @s life_count matches -1 run particle soul_fire_flame ~ ~1 ~ 0 0 0 0.5 500
 execute if score @s life_count matches -1 run tag @s remove UNRB_alive
