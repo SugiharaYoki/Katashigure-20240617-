@@ -20,7 +20,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 10001..11592 as @a[tag=SEAPT] 
 
 execute if score SEA_ch6_event sea_4temp4 matches 10002 run kill @e[tag=SEAmob]
 execute if score SEA_ch6_event sea_4temp4 matches 10002 positioned 90056.41 103.50 143.56 run function skyblock:sea/m/unique/npc_herb
-execute if score SEA_ch6_event sea_4temp4 matches 10002 run summon evoker 90059 103 144 {DeathLootTable:"skyblock:sea_pillager1",Tags:["SEAmob","SEAexusiai"],attributes:[{id:"armor",base:1.0},{id:"movement_speed",base:0.0},{id:"max_health",base:100}],Health:100,ArmorItems:[{id:leather_boots,count:1},{id:leather_leggings,count:1},{id:leather_chestplate,count:1},{id:leather_helmet,count:1}],ArmorDropChances:[0f,0f,0f,0f],Silent:true,Invulnerable:1b,NoAI:true,PersistenceRequired:true}
+execute if score SEA_ch6_event sea_4temp4 matches 10002 run summon evoker 90059 103 144 {DeathLootTable:"skyblock:sea_pillager1",Tags:["SEAmob","SEAexusiai"],attributes:[{id:"armor",base:1.0},{id:"movement_speed",base:0.0},{id:"max_health",base:100}],Health:100,Silent:true,Invulnerable:1b,NoAI:true,PersistenceRequired:true,equipment:{feet:{id:leather_boots,count:1},legs:{id:leather_leggings,count:1},chest:{id:leather_chestplate,count:1},head:{id:leather_helmet,count:1}},drop_chances:{feet:0f,legs:0f,chest:0f,head:0f}}
 
 execute if score SEA_ch6_event sea_4temp4 matches 10001 run effect give @a[tag=SEAPT] resistance 100 19 true
 execute if score SEA_ch6_event sea_4temp4 matches 10001 run effect give @a[tag=SEAPT] regeneration 100 29 true
