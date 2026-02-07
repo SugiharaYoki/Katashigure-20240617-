@@ -2,6 +2,7 @@ function skyblock:azr/lifecycle/jump_to/ch1_boss
 
 execute as @a[tag=azrPlayer] at @s unless score @s Azr_skillPoints matches 4.. run return run function skyblock:azr/lifecycle/jump_to/return
 
+scoreboard players set stage_main_thread AzrTimerStack 3
 
 
 #execute as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/weapons/stone_sword_normal
