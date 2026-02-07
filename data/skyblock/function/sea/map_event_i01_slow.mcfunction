@@ -40,7 +40,7 @@ execute as @a[tag=SEAPT,x=90075,y=121,z=132,distance=0..3,tag=!e_i_04] at @s run
 
 #初始之船
 
-execute positioned 90058 104 -166 if score sea_chapter_introduction sea_4temp1 matches ..400 run function skyblock:sea/e/ch1/chapter_1/introduction
+execute positioned 90058 104 -166 if score sea_chapter_introduction sea_4temp1 matches ..400 run function skyblock:sea/e/ch1/introduction
 #踏上平台
 execute if score sea_chapter_introduction sea_4temp2 matches ..0 positioned 90071 102 140 if entity @a[tag=SEAPT,distance=0..6,tag=!SEAPF] run scoreboard players set sea_chapter_introduction sea_4temp2 1
 execute if score sea_chapter_introduction sea_4temp2 matches 1..90 run scoreboard players add sea_chapter_introduction sea_4temp2 1
