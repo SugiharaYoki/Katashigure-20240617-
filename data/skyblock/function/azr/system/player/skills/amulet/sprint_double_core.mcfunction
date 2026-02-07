@@ -22,6 +22,7 @@ execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=92}] run attrib
 
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=92}] run stopsound @a[distance=..50] player minecraft:item.elytra.flying
 
+execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=92..}] run scoreboard players set @s AzrSariel_Amulet_StayFloat_clock 2
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=92}] run scoreboard players set @s AzrSariel_Amulet_SprintDouble_clock 0
 
 
