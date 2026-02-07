@@ -11,7 +11,7 @@ execute if entity @s[scores={AzrSariel_Amulet_StayFloat_clock=..0},predicate=sky
 execute if entity @s[scores={AzrSariel_Amulet_StayFloat_clock=13..14}] run scoreboard players set @s AzrSariel_Amulet_StayFloat_clock 0
 
 #execute if score @s[tag=azrAmulet_StayFloat_Jumping] AzrSariel_Amulet_StayFloat_cooldown matches ..0 if entity @s[nbt={OnGround:1b}] run say tag @s remove azrAmulet_StayFloat_Jumping
-execute if score @s[tag=azrAmulet_StayFloat_Jumping] AzrSariel_Amulet_StayFloat_cooldown matches ..0 if entity @s[nbt={OnGround:1b}] run tag @s remove azrAmulet_StayFloat_Jumping
+#execute if score @s[tag=azrAmulet_StayFloat_Jumping] AzrSariel_Amulet_StayFloat_cooldown matches ..0 if entity @s[nbt={OnGround:1b}] run tag @s remove azrAmulet_StayFloat_Jumping
 
 
 #execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches ..0 at @s if entity @s[predicate=skyblock:jump,tag=!azrAmulet_StayFloat_Jumping] unless block ~ ~-0.3 ~ water unless block ~ ~0.3 ~ water unless block ~ ~ ~ #climbable run say scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 141
