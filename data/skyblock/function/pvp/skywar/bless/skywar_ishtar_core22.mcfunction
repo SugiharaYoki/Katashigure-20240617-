@@ -33,21 +33,21 @@ execute as @a[distance=0..4] at @s if items entity @s armor.head golden_helmet r
 execute as @a[distance=0..4] at @s if items entity @s armor.head netherite_helmet run item replace entity @s armor.head with netherite_helmet
 
 execute as @a[distance=0..4] at @s if items entity @s armor.chest leather_chestplate run item replace entity @s armor.chest with leather_chestplate
-execute as @a[distance=0..4] at @s if items entity @s armor.chest chainmail_chestplate run item replace entity @s armor.chest with iron_chainmail_chestplate
+execute as @a[distance=0..4] at @s if items entity @s armor.chest chainmail_chestplate run item replace entity @s armor.chest with chainmail_chestplate
 execute as @a[distance=0..4] at @s if items entity @s armor.chest iron_chestplate run item replace entity @s armor.chest with iron_chestplate
 execute as @a[distance=0..4] at @s if items entity @s armor.chest diamond_chestplate run item replace entity @s armor.chest with diamond_chestplate
 execute as @a[distance=0..4] at @s if items entity @s armor.chest golden_chestplate run item replace entity @s armor.chest with golden_chestplate
 execute as @a[distance=0..4] at @s if items entity @s armor.chest netherite_chestplate run item replace entity @s armor.chest with netherite_chestplate
 
 execute as @a[distance=0..4] at @s if items entity @s armor.legs leather_leggings run item replace entity @s armor.legs with leather_leggings
-execute as @a[distance=0..4] at @s if items entity @s armor.legs chainmail_leggings run item replace entity @s armor.legs with iron_chainmail_leggings
+execute as @a[distance=0..4] at @s if items entity @s armor.legs chainmail_leggings run item replace entity @s armor.legs with chainmail_leggings
 execute as @a[distance=0..4] at @s if items entity @s armor.legs iron_leggings run item replace entity @s armor.legs with iron_leggings
 execute as @a[distance=0..4] at @s if items entity @s armor.legs diamond_leggings run item replace entity @s armor.legs with diamond_leggings
 execute as @a[distance=0..4] at @s if items entity @s armor.legs golden_leggings run item replace entity @s armor.legs with golden_leggings
 execute as @a[distance=0..4] at @s if items entity @s armor.legs netherite_leggings run item replace entity @s armor.legs with netherite_leggings
 
 execute as @a[distance=0..4] at @s if items entity @s armor.feet leather_boots run item replace entity @s armor.feet with leather_boots
-execute as @a[distance=0..4] at @s if items entity @s armor.feet chainmail_boots run item replace entity @s armor.feet with iron_chainmail_boots
+execute as @a[distance=0..4] at @s if items entity @s armor.feet chainmail_boots run item replace entity @s armor.feet with chainmail_boots
 execute as @a[distance=0..4] at @s if items entity @s armor.feet iron_boots run item replace entity @s armor.feet with iron_boots
 execute as @a[distance=0..4] at @s if items entity @s armor.feet diamond_boots run item replace entity @s armor.feet with diamond_boots
 execute as @a[distance=0..4] at @s if items entity @s armor.feet golden_boots run item replace entity @s armor.feet with golden_boots
