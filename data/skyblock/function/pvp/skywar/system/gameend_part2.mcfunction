@@ -65,11 +65,11 @@ execute as @a[tag=PVP_see] run function skyblock:pvp/skywar/system/removeallgami
 #停止附属计时器
 scoreboard objectives remove Temp5
 #游戏规则初始化
-gamerule doDaylightCycle true
-gamerule doFireTick false
-gamerule fallDamage true
-gamerule randomTickSpeed 10
-gamerule keepInventory true
+gamerule advance_time true
+gamerule fire_spread_radius_around_player 0
+gamerule fall_damage true
+gamerule random_tick_speed 10
+gamerule keep_inventory true
 scoreboard players set @a[tag=PVPing] AnnouncementTime 0
 ##
 tellraw @a[tag=DebugMode] [{text:"System_Debug",color:"dark_blue"},{text:" : PVP 闭局程序 运行结束",color:"dark_gray"}]

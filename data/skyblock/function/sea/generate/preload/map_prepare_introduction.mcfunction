@@ -128,8 +128,8 @@ setblock -25 23 32 soul_lantern
 fill 90065 104 139 90065 104 141 air
 weather clear 1000000s
 time set 11000t
-gamerule doDaylightCycle false
-gamerule keepInventory true
+gamerule advance_time false
+gamerule keep_inventory true
 
 #TE结尾
 fill 90074 104 154 90073 103 154 air

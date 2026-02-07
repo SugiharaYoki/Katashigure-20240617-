@@ -17,7 +17,7 @@ team remove Temp1_7
 team remove Temp1_8
 team join HajimetanoMachi @a[tag=!Gaming]
 #《游戏规则初始化》
-#gamerule doFireTick false
+#gamerule fire_spread_radius_around_player 0
 #《玩家事件/文字显示/传送支援》
 tag @a[tag=NoSkyWarTemp,tag=!Gaming] remove NoSkyWar
 tag @a[tag=!Gaming] remove NoSkyWarTemp

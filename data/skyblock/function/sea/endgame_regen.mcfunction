@@ -86,7 +86,7 @@ bossbar remove 9066601
 bossbar remove 9066602
 setblock -25 23 32 air
 #fill 90065 104 139 90065 104 141 barrier
-gamerule doDaylightCycle true
+gamerule advance_time true
 tellraw @a[tag=!Gaming,scores={sea_progress=..18}] {text:"2135年6月29日","color": "green"}
 tellraw @a[tag=!Gaming,scores={sea_progress=19..}] {text:"2135年7月4日","color": "green"}
 tellraw @a[tag=!Gaming,scores={sea_progress=..18}] {text:"忒尔克西海上钻井平台已经失联24小时整，\n太平洋石油管理局的高层决定派你前去调查情况。","color": "green"}

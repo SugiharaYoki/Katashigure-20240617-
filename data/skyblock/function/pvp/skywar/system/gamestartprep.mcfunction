@@ -9,7 +9,7 @@ execute if score skywar_start rng1 matches 2 run function skyblock:pvp/skywar/sy
 #《停止公告系统》
 execute if score skywar_start rng1 matches 2 run scoreboard players set @s AnnouncementTime 0
 #《游戏规则初始化》
-#gamerule doFireTick false
+#gamerule fire_spread_radius_around_player 0
 #《玩家事件/文字显示/传送支援》
 execute if score skywar_start rng1 matches 2 run tag @a[tag=!Gaming] remove NoSkyWarTemp
 execute if score skywar_start rng1 matches 2 run tag @a[tag=Gaming] add NoSkyWarTemp
@@ -202,7 +202,7 @@ execute if score skywar_start rng1 matches 11 if score 10e959db-4b44-4cdd-b98c-3
 execute if score skywar_start rng1 matches 11 if score 10e959db-4b44-4cdd-b98c-350d3b454206 Map_Type matches 5 run title @a[tag=PVPing] title {text:"欢迎来到 PVP战场",color:"white"}
 execute if score skywar_start rng1 matches 11 run title @a[tag=PVPing] actionbar {text:"分配成员中……",color:"white"}
 
-execute if score skywar_start rng1 matches 11 run gamerule keepInventory true
+execute if score skywar_start rng1 matches 11 run gamerule keep_inventory true
 execute if score skywar_start rng1 matches 11 run effect give @a[tag=PVPing] minecraft:fire_resistance 3 20 true
 execute if score skywar_start rng1 matches 11 run effect give @a[tag=PVPing] minecraft:regeneration 8 20 true
 execute if score skywar_start rng1 matches 11 run effect give @a[tag=PVPing] minecraft:slow_falling 3 20 true

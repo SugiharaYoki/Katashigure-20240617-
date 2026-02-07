@@ -9,8 +9,8 @@ scoreboard objectives add 24_point_da651c.times dummy
 scoreboard objectives add 24_point_da651c.question trigger
 scoreboard objectives add 24_point_da651c.answer trigger
 
-gamerule maxCommandChainLength 2147483647
-gamerule maxCommandForkCount 2147483647
+gamerule max_command_sequence_length 2147483647
+gamerule max_command_forks 2147483647
 
 execute unless score #24_point.answer_times int matches 1.. run scoreboard players set #24_point.answer_times int 1
 

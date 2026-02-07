@@ -16,12 +16,12 @@ function wtm:wtm_reset
 scoreboard players set @n[tag=sc] fixed1 -99999
 scoreboard players set @n[tag=sc] fixed2 -99999
 scoreboard players set @n[tag=sc] fixed3 -99999
-gamerule commandBlockOutput false
-gamerule doFireTick false
-gamerule keepInventory true
-gamerule doImmediateRespawn
-gamerule doMobSpawning false
-gamerule doVinesSpread false
-gamerule spawnRadius 1
-gamerule mobGriefing false
+gamerule command_block_output false
+gamerule fire_spread_radius_around_player 0
+gamerule keep_inventory true
+gamerule immediate_respawn
+gamerule spawn_mobs false
+gamerule spread_vines false
+
+gamerule mob_griefing false
 setblock 0 -2 0 repeating_command_block{Command:"function wtm:tick1_o",auto: 1b, powered: 0b, conditionMet: 1b}
