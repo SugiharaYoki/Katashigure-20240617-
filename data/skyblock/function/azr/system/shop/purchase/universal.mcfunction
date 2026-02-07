@@ -27,7 +27,3 @@ execute if score @s Azr_Shop matches 8431515 \
 execute if score @s Azr_Shop matches 8431516 \
     if items entity @s container.* paper[count={min:1},custom_data~{dirty_credo:1b}] \
     run function skyblock:azr/system/shop/purchase/universal/credo
-
-execute if score @s Azr_Shop matches 8431517 \
-    if items entity @s container.* chain[count={min:5}] \
-    run function skyblock:azr/system/shop/purchase/universal/skills_arrow
