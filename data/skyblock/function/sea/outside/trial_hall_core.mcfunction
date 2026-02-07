@@ -12,13 +12,13 @@ item replace block 89843 13 -163 container.14 with snout_armor_trim_smithing_tem
 
 item replace block 89843 13 -163 container.11 with arrow 16
 item replace block 89843 13 -163 container.20 with spectral_arrow 3
-item replace block 89843 13 -163 container.23 with firework_star[custom_name={text:"燃爆剂",italic:1b,color:"blue",italic:0b},lore=[{text:"喷火器专用燃爆剂。",color:"white",italic:0b},{text:"使用喷火器时左键，瞬间对面前近距离造成大量伤害。",color:"white",italic:0b}]] 5
+item replace block 89843 13 -163 container.23 with firework_star[custom_name={text:"燃爆剂",color:"blue",italic:0b},lore=[{text:"喷火器专用燃爆剂。",color:"white",italic:0b},{text:"使用喷火器时左键，瞬间对面前近距离造成大量伤害。",color:"white",italic:0b}]] 5
 
 
 item replace block 89843 13 -163 container.13 with disc_fragment_5 5
 
-item replace block 89843 13 -163 container.18 with fire_charge[custom_name={text:"定时炸弹",italic:1b,color:"blue",italic:0b},lore=[{text:"它会在你丢出去3秒后爆炸！",color:"white",italic:0b},{text:"炸到自己的话，职业生涯就会结束了吧。",color:"white",italic:0b},{text:"可用于破坏凝胶壁障与瓦罐。",color:"white",italic:0b}]] 8
-item replace block 89843 13 -163 container.19 with tnt[custom_name={text:"可控地雷触发装置",italic:1b,color:"blue",italic:0b},lore=[{text:"并不会在你丢出去后立刻爆炸。",color:"white",italic:0b},{text:"放心，真的不会伤到友军！",color:"white",italic:0b},{text:"请注意：丢出去之后可就没法拆卸了。",color:"white",italic:0b}]] 8
+item replace block 89843 13 -163 container.18 with fire_charge[custom_name={text:"定时炸弹",color:"blue",italic:0b},lore=[{text:"它会在你丢出去3秒后爆炸！",color:"white",italic:0b},{text:"炸到自己的话，职业生涯就会结束了吧。",color:"white",italic:0b},{text:"可用于破坏凝胶壁障与瓦罐。",color:"white",italic:0b}]] 8
+item replace block 89843 13 -163 container.19 with tnt[custom_name={text:"可控地雷触发装置",color:"blue",italic:0b},lore=[{text:"并不会在你丢出去后立刻爆炸。",color:"white",italic:0b},{text:"放心，真的不会伤到友军！",color:"white",italic:0b},{text:"请注意：丢出去之后可就没法拆卸了。",color:"white",italic:0b}]] 8
 
 
 tag @a[x=89829,y=12,z=-165,dx=30,dy=20,dz=30,tag=!SEAPT] add Gaming

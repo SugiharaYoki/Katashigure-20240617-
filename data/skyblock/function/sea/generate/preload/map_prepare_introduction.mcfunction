@@ -244,7 +244,7 @@ item replace block 90103 122 115 container.12 with coal 1
 item replace block 90103 122 115 container.14 with potato 2
 setblock 90118 123 134 lever[powered=false,facing=east]
 fill 90114 124 133 90114 122 132 iron_block
-item replace block 90095 122 128 container.26 with amethyst_shard[custom_name={text:"紫水晶碎块",bold:0b,italic:1b,color:"gold",italic:0b},lore=[{text:"散发着诡谲气息的宝石。",color:"white",italic:0b}]] 1
+item replace block 90095 122 128 container.26 with amethyst_shard[custom_name={text:"紫水晶碎块",bold:0b,color:"gold",italic:0b},lore=[{text:"散发着诡谲气息的宝石。",color:"white",italic:0b}]] 1
 
 setblock 90058 103 137 smoker[facing=east]
 
@@ -563,7 +563,7 @@ summon text_display 90074.0 105 164 {background:7631988,text:"轻按跳跃使用
 summon text_display 90074.0 129 164 {background:7631988,text:"轻按跳跃使用电梯",color:"aqua"},Rotation:[180f,0f],shadow:1b,text_opacity:200,alignment:center}
 
 setblock 90068 128 136 chest[facing=west]
-item replace block 90068 128 136 container.13 with fire_charge[custom_name={text:"定时炸弹",italic:1b,color:"blue",italic:0b},lore=[{text:"它会在你丢出去3秒后爆炸！",color:"white",italic:0b},{text:"炸到自己的话，职业生涯就会结束了吧。",color:"white",italic:0b},{text:"可用于破坏凝胶壁障与瓦罐。",color:"white",italic:0b}]] 1
+item replace block 90068 128 136 container.13 with fire_charge[custom_name={text:"定时炸弹",color:"blue",italic:0b},lore=[{text:"它会在你丢出去3秒后爆炸！",color:"white",italic:0b},{text:"炸到自己的话，职业生涯就会结束了吧。",color:"white",italic:0b},{text:"可用于破坏凝胶壁障与瓦罐。",color:"white",italic:0b}]] 1
 
 setblock 90074 103 136 minecraft:air
 

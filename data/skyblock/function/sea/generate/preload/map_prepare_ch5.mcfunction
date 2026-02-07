@@ -552,7 +552,7 @@ item replace block 90147 137 59 container.14 with disc_fragment_5 1
 
 setblock 90132 137 49 minecraft:light_gray_shulker_box
 item replace block 90132 137 49 container.12 with shulker_shell 1
-item replace block 90132 137 49 container.14 with fire_charge[custom_name={text:"定时炸弹",italic:1b,color:"blue",italic:0b},lore=[{text:"它会在你丢出去3秒后爆炸！",color:"white",italic:0b},{text:"炸到自己的话，职业生涯就会结束了吧。",color:"white",italic:0b},{text:"可用于破坏凝胶壁障与瓦罐。",color:"white",italic:0b}]] 1
+item replace block 90132 137 49 container.14 with fire_charge[custom_name={text:"定时炸弹",color:"blue",italic:0b},lore=[{text:"它会在你丢出去3秒后爆炸！",color:"white",italic:0b},{text:"炸到自己的话，职业生涯就会结束了吧。",color:"white",italic:0b},{text:"可用于破坏凝胶壁障与瓦罐。",color:"white",italic:0b}]] 1
 
 
 execute if entity @n[type=interaction,tag=SEAcrafter20,distance=0..5.4] run tag @s add sea_teleport20

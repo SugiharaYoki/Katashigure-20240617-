@@ -366,7 +366,7 @@ setblock 90193 45 114 minecraft:potted_bamboo
 
 setblock 90158 35 95 chest[facing=south]
 item replace block 90158 35 95 container.11 with arrow 3
-item replace block 90158 35 95 container.13 with firework_star[custom_name={text:"燃爆剂",italic:1b,color:"blue",italic:0b},lore=[{text:"喷火器专用燃爆剂。",color:"white",italic:0b},{text:"使用喷火器时左键，瞬间对面前近距离造成大量伤害。",color:"white",italic:0b}]] 3
+item replace block 90158 35 95 container.13 with firework_star[custom_name={text:"燃爆剂",color:"blue",italic:0b},lore=[{text:"喷火器专用燃爆剂。",color:"white",italic:0b},{text:"使用喷火器时左键，瞬间对面前近距离造成大量伤害。",color:"white",italic:0b}]] 3
 item replace block 90158 35 95 container.15 with arrow 3
 
 fill 90167 35 89 90167 35 90 redstone_block
