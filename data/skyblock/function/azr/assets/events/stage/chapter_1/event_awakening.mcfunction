@@ -28,12 +28,12 @@ execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,
 
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=102}] as @a[tag=AZR_SEAawakening] at @s if block -79931 39 22 air run tp @s -79931 38 25
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=102}] if block -79931 39 22 air run particle totem_of_undying -79931 39 25 0.4 0.8 0.4 0.7 100 force
-execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=102}] if block -79931 39 22 air run particle minecraft:flash -79931 39 25 0.4 0.7 0.4 0.3 2 force
+execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=102}] if block -79931 39 22 air run particle minecraft:flash{color:[1.000,1.000,1.000,1.00]} -79931 39 25 0.4 0.7 0.4 0.3 2 force
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=102}] if block -79931 39 22 air as @a[tag=AZR_SEAawakening] at @s run playsound item.totem.use master @a -79931 38 25 2
 
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=102}] as @a[tag=AZR_SEAawakening] at @s unless block -79931 39 22 air run tp @s -79983.94 40.00 -14.00
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=102}] unless block -79931 39 22 air run particle totem_of_undying -79983.94 41.00 -14.00 0.4 0.8 0.4 0.7 100 force
-execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=102}] unless block -79931 39 22 air run particle minecraft:flash -79983.94 41.00 -14.00 0.4 0.7 0.4 0.3 2 force
+execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=102}] unless block -79931 39 22 air run particle minecraft:flash{color:[1.000,1.000,1.000,1.00]} -79983.94 41.00 -14.00 0.4 0.7 0.4 0.3 2 force
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=102}] unless block -79931 39 22 air as @a[tag=AZR_SEAawakening] at @s run playsound item.totem.use master @a -79983.94 40.00 -14.00 2
 
 execute positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=102}] as @a[tag=AZR_SEAawakening] at @s run effect give @s absorption 10 2

@@ -12,7 +12,7 @@ $execute as @s[scores={rng1=9..15}] positioned $(pos) as @n[type=item_display,di
 $execute as @s[scores={rng1=9..12}] positioned $(pos) as @n[type=item_display,distance=..5] at @s run tp @s ~ ~0.03 ~
 $execute as @s[scores={rng1=9..10}] positioned $(pos) as @n[type=item_display,distance=..5] at @s run tp @s ~ ~0.03 ~
 $execute as @s[scores={rng1=22}] positioned $(pos) run particle totem_of_undying ~ ~1 ~ 0.4 0.8 0.4 0.7 100
-$execute as @s[scores={rng1=22}] positioned $(pos) run particle minecraft:flash ~ ~1 ~ 0.4 0.7 0.4 0.3 2
+$execute as @s[scores={rng1=22}] positioned $(pos) run particle minecraft:flash{color:[0.000,0.000,0.000,1.00]} ~ ~1 ~ 0.4 0.7 0.4 0.3 2
 $execute as @s[scores={rng1=22}] positioned $(pos) run playsound item.totem.use master @a ~ ~ ~ 2 0.8
 
 $execute as @s[scores={rng1=22}] positioned $(pos) as @a[tag=azrPlayer,tag=!AZS_SoulFrag$(id)] run scoreboard players add @s AZS_SoulFrag 1

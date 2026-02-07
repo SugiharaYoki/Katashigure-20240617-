@@ -1,7 +1,7 @@
 effect clear @s
 function skyblock:clear_attribute_modifiers
 particle totem_of_undying ~ ~1 ~ 0.4 0.8 0.4 0.7 100
-particle minecraft:flash ~ ~1 ~ 0.4 0.7 0.4 0.3 2
+particle minecraft:flash{color:[1.000,1.000,1.000,1.00]} ~ ~1 ~ 0.4 0.7 0.4 0.3 2
 playsound item.totem.use master @a ~ ~ ~ 2
 execute at @s anchored eyes run function skyblock:sea/p/parry_particle
 

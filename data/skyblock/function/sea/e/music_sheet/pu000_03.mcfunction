@@ -1,4 +1,4 @@
-particle minecraft:flash 90116 122 107 1 1 1 0.1 3
+particle minecraft:flash{color:[0.500,0.500,1.000,1.00]} 90116 122 107 1 1 1 0.1 3
 particle minecraft:soul_fire_flame 90116 122 107 2 2 2 0.001 120
 execute positioned 90116 122 107 run playsound minecraft:entity.player.levelup master @a[tag=SEAPT,distance=0..10,tag=!seaPerm000] 90116 122 107 10 0.8
 execute positioned 90116 122 107 run playsound minecraft:ambient.crimson_forest.mood master @a[tag=SEAPT,distance=0..10,tag=!seaPerm000] 90116 122 107 10 0.8
