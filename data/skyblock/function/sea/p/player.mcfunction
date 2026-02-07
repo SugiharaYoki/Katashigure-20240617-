@@ -24,10 +24,10 @@ execute at @s if entity @n[tag=SEAcrafter,distance=0..5] run scoreboard players 
 
 execute if entity @s[tag=SEAelevatoring] run tag @s[predicate=!skyblock:jump] remove SEAelevatoring
 
-execute if entity @s[tag=!e_w_01] if items entity @s container.* iron_hoe run tellraw @s {text:"获得武器：撬棍",color: "dark_red"}
-execute if entity @s[tag=!e_w_01] if items entity @s container.* iron_hoe run tellraw @s {text:"防身武器，较快的攻击速度与略微优于赤手空拳的伤害。",color: "white"}
-execute if entity @s[tag=!e_w_01] if items entity @s container.* iron_hoe run tellraw @s {text:"找台工作站将其改造一番，或许能够获得意想不到的提升……？",color: "white"}
-execute if entity @s[tag=!e_w_01] if items entity @s container.* iron_hoe run tag @s add e_w_01
+execute if entity @s[tag=!e_w_01] if items entity @s container.* copper_hoe run tellraw @s {text:"获得武器：撬棍",color: "dark_red"}
+execute if entity @s[tag=!e_w_01] if items entity @s container.* copper_hoe run tellraw @s {text:"防身武器，较快的攻击速度与略微优于赤手空拳的伤害。",color: "white"}
+execute if entity @s[tag=!e_w_01] if items entity @s container.* copper_hoe run tellraw @s {text:"找台工作站将其改造一番，或许能够获得意想不到的提升……？",color: "white"}
+execute if entity @s[tag=!e_w_01] if items entity @s container.* copper_hoe run tag @s add e_w_01
 execute if entity @s[tag=!e_w_02] if items entity @s container.* iron_axe run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
 execute if entity @s[tag=!e_w_02] if items entity @s container.* iron_axe run tellraw @s {text:"获得新武器：消防斧",color: "dark_red"}
 execute if entity @s[tag=!e_w_02] if items entity @s container.* iron_axe run tellraw @s {text:"重型蓄力武器，以较低的速度换取高额攻击力，对单时给予我方优势。",color: "white"}

@@ -45,8 +45,8 @@ execute if block 90075 103 141 minecraft:cauldron positioned 90080 104 143 if en
 execute positioned 90089 138 118 if entity @a[tag=SEAPT,distance=0..20,limit=1] positioned 90089 138 118 if entity @a[tag=SEAPT,distance=0..20,limit=1] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_map_01],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:2b,Item:{id:"minecraft:filled_map",components:{custom_name:{text:"主平台地图：甲板部分",italic:0b,color:"dark_purple"},map_id:18}}}
 
 #antichear
-#execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:iron_hoe"}]}] at @s run clear @s iron_axe
-#execute as @a[tag=SEAPT] at @s run clear @s iron_hoe[!custom_data={sea_crowbar_t:true}]
+#execute as @a[tag=SEAPT,nbt={Inventory:[{id:"minecraft:copper_hoe"}]}] at @s run clear @s iron_axe
+#execute as @a[tag=SEAPT] at @s run clear @s copper_hoe[!custom_data={sea_crowbar_t:true}]
 
 #船
 execute positioned 90062 104 -165 if entity @a[tag=SEAPT,distance=0..20,limit=1] run summon minecraft:item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_safehat],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:4b,Item:{id:"minecraft:spyglass",components:{lore:[{text:"我随身携带的望远镜。",color:"white",italic:0b},{text:"在前途未知的时刻，紧握住它可以让我不再迷惘。",color:"white",italic:0b},{text:"手持时：显示任务目标 & 跳过已阅读的剧情对话",color:"green",italic:0b}]}}}

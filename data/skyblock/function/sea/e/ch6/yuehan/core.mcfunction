@@ -31,7 +31,7 @@ execute if score @s sea_4temp3 matches ..10 if entity @n[tag=SEAmob,distance=..3
 execute if score @s sea_4temp3 matches 11..30 if entity @n[tag=SEAmob,distance=..3.8,type=!bee] store result score @s rng4 run random value 1..802
 execute if score @s sea_4temp3 matches 31.. if entity @n[tag=SEAmob,distance=..3.8,type=!bee] store result score @s rng4 run random value 1..804
 execute if entity @s[scores={rng4=5..11}] run function skyblock:sea/e/ch6/yuehan/attack
-execute if entity @s[scores={rng4=700..}] if items entity @s weapon.mainhand iron_hoe run item replace entity @s weapon.mainhand with air
+execute if entity @s[scores={rng4=700..}] if items entity @s weapon.mainhand copper_hoe run item replace entity @s weapon.mainhand with air
 execute if entity @s[scores={rng4=1}] run tellraw @a[distance=0..28] [{text:"越涵：",color:"green",bold:1b},{text:"\n“啊啊啊、你快点帮忙把这些家伙拦住！”",color:"white",bold: false}]
 execute if entity @s[scores={rng4=2}] run tellraw @a[distance=0..28] [{text:"越涵：",color:"green",bold:1b},{text:"\n“敌人快蹭到我身上来了！！”",color:"white",bold: false}]
 execute if entity @s[scores={rng4=3}] run tellraw @a[distance=0..28] [{text:"越涵：",color:"green",bold:1b},{text:"\n“你听好我随时准备跑了，要看到我没影了别找我！”",color:"white",bold: false}]

@@ -37,7 +37,7 @@ tellraw @s [{text:" 速通计时.4 = ",color:"white",italic:0b},{"score":{"name"
 execute as @a[tag=SEAPT] at @s unless items entity @s container.* spyglass unless items entity @s weapon.* spyglass run tag @s add SEAprint_temp
 execute if entity @a[tag=SEAprint_temp] run tellraw @s [{text:"◇ 玩家道具检测：",color:"white",bold:1b},{selector:"@a[tag=SEAPT,tag=SEAprint_temp]",color:"white",bold: false},{text:"没有望远镜",color:"white",bold: false}]
 tag @a remove SEAprint_temp
-execute as @a[tag=SEAPT] at @s unless items entity @s container.* iron_hoe unless items entity @s weapon.* iron_hoe run tag @s add SEAprint_temp
+execute as @a[tag=SEAPT] at @s unless items entity @s container.* copper_hoe unless items entity @s weapon.* copper_hoe run tag @s add SEAprint_temp
 execute if entity @a[tag=SEAprint_temp] run tellraw @s [{text:"◇ 玩家道具检测：",color:"white",bold:1b},{selector:"@a[tag=SEAPT,tag=SEAprint_temp]",color:"white",bold: false},{text:"没有武器“撬棍”",color:"white",bold: false}]
 tag @a remove SEAprint_temp
 execute as @a[tag=SEAPT] at @s unless items entity @s container.* iron_axe unless items entity @s weapon.* iron_axe run tag @s add SEAprint_temp

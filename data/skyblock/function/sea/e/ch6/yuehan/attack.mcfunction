@@ -1,7 +1,7 @@
 execute store result score @s rng4 run random value 1..8
 
 
-execute if entity @s[scores={rng4=1}] run item replace entity @s weapon.mainhand with iron_hoe
+execute if entity @s[scores={rng4=1}] run item replace entity @s weapon.mainhand with copper_hoe
 execute if entity @s[scores={rng4=1}] run tellraw @a[distance=0..28] [{text:"越涵：",color:"green",bold:1b},{text:"\n“标新立异，我会出手！”",color:"white",bold: false}]
 execute if entity @s[scores={rng4=2}] run tellraw @a[distance=0..28] [{text:"越涵：",color:"green",bold:1b},{text:"\n“他妈的吃我一撬棍！”",color:"white",bold: false}]
 execute if entity @s[scores={rng4=3}] run tellraw @a[distance=0..28] [{text:"越涵：",color:"green",bold:1b},{text:"\n“好啊，看我打个暴击出来！”",color:"white",bold: false}]
