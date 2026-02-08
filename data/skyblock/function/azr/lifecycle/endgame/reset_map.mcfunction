@@ -787,13 +787,6 @@ item replace block -79765 24 -469 container.13 with minecraft:gold_nugget 28
 item replace block -79713 22 -461 container.13 with eye_armor_trim_smithing_template 3
 item replace block -79626 21 -415 container.11 with eye_armor_trim_smithing_template 3
 item replace block -79626 21 -415 container.13 with skull_banner_pattern[custom_name={text:"“神罚 这一切都是神罚 全部都是”",color:"dark_purple",italic:0b},lore=[{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"现在轮到我们自取灭亡了",color:"white",italic:0b},{text:"现在轮到我们自取灭亡了",color:"white",italic:0b}]] 1
-item replace block -79626 21 -415 container.15 with flint 5
-item replace block 79588 8 -427 container.11 with firework_star[custom_name={text:"机械箭",italic:0b}] 5
-item replace block 79588 8 -427 container.13 with firework_star[custom_name={text:"机械箭",italic:0b}] 5
-item replace block 79588 8 -427 container.15 with firework_star[custom_name={text:"机械箭",italic:0b}] 5
-item replace block -79571 11 -412 container.12 with minecraft:splash_potion[custom_name={text:"「抗火瓶」",color:"light_purple",italic:0b},{text:"lv1",color:"blue",italic:0b}]',potion_contents={custom_effects:[{id:"minecraft:fire_resistance",duration:200}]}] 1
-item replace block -79571 11 -412 container.14 with emerald 12
-item replace block -79791 28 -294 container.13 with minecraft:bundle
 
 
 #第16关地图预加载#
