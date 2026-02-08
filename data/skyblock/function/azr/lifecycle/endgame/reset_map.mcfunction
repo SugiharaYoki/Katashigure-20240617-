@@ -514,6 +514,11 @@ setblock -79914 41 -78 minecraft:potted_cornflower
 setblock -79914 41 -79 minecraft:potted_azure_bluet
 setblock -79914 41 -80 minecraft:potted_poppy
 
+#蚀岩径区域
+setblock -79870 31 -72 chest[facing=west]
+item replace block -79870 31 -72 container.12 with bone 1
+item replace block -79870 31 -72 container.14 with gunpowder 1
+
 #静熄之火
 fill -79892 45 -68 -79889 42 -68 minecraft:purple_stained_glass
 fill -79890 42 -53 -79891 44 -53 minecraft:purple_stained_glass
@@ -536,6 +541,11 @@ setblock -79889 48 -73 potted_flowering_azalea_bush
 #监狱大门
 setblock -79886 41 -114 lever[face=floor,facing=west,powered=false]
 fill -79892 43 -119 -79889 40 -119 minecraft:iron_bars
+
+
+
+
+
 
 
 
