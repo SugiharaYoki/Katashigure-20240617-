@@ -29,6 +29,15 @@
         "nether_brick_fence",
         "tinted_glass",
         "magma_block",
+        "andesite",
+        "diorite",
+        "granite",
+        "sand",
+        "gravel",
+        "coarse_dirt",
+        "basalt",
+        "smooth_basalt",
+        "prismarine_shard",
         "blackstone"
     ]
 }
