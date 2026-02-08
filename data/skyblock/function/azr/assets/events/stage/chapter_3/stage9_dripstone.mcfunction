@@ -64,4 +64,4 @@ execute positioned -79852 28 -64 if score random_enemy_thread AzrTimerStack matc
 execute positioned -79858 29 -59 unless entity @n[tag=AzrielMob_trap_spike,distance=..0.5] if score random_enemy_thread AzrTimerStack matches 2 if entity @a[tag=azrPlayer,distance=..64] unless entity @a[tag=azrPlayer,distance=..32] store result score random_enemy_thread rng5 run random value 1..5
 execute positioned -79858 29 -59 if score random_enemy_thread AzrTimerStack matches 2 if score random_enemy_thread rng5 matches 1 run function skyblock:azr/assets/mobs/trap_spike 
 
-
+scoreboard players set random_enemy_thread rng5 0
