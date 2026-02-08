@@ -1,10 +1,17 @@
-execute unless entity @n[tag=SEAboss5b] run damage @s[tag=!SEAboss5_npc_helper] 0 generic by @n[tag=SEAboss5]
-execute if entity @n[tag=SEAboss5b] run damage @s[tag=!SEAboss5_npc_helper] 0 generic by @n[tag=SEAboss5b]
-execute if entity @s[tag=!SEAboss5_npc_helper,type=pillager] run item replace entity @s weapon.mainhand with crossbow
-execute if entity @s[tag=!SEAboss5_npc_helper,type=vindicator] run item replace entity @s weapon.mainhand with iron_sword
-tag @s add SEAboss5_npc_helper
-tag @s add SEAmob_surrended
-tag @s add SEAnpc
-data modify entity @s Invulnerable set value 0b
-attribute @s[type=vindicator] attack_damage base set 2
-attribute @s[type=vindicator] movement_speed base set 0.4
+execute as @s[tag=!SEANPC_Friendly_Processed] at @s run attribute @s minecraft:follow_range base set 0
+execute as @s[tag=!SEANPC_Friendly_Processed] at @s run tag @s add SEANPC_Friendly_Processed
+
+execute as @s[tag=SEANPC_Friendly_Processed,tag=!SEANPC_Friendly_hasattacktarget] at @s if entity @a[tag=SEAPT,distance=0..3.5] run effect give @s slowness 1 99 true
+execute as @s[tag=SEANPC_Friendly_Processed,tag=!SEANPC_Friendly_hasattacktarget] at @s if entity @a[tag=SEAPT,distance=0..1.5] run effect give @s weakness 1 99 true
+execute as @s[tag=SEANPC_Friendly_Processed,tag=!SEANPC_Friendly_hasattacktarget] at @s run rotate @s facing entity @p[tag=SEAPT,distance=0..3.5]
+execute as @s[tag=SEANPC_Friendly_Processed,tag=SEAmob] at @s run tag @s remove SEAmob
+
+execute if entity @s[tag=!SEANPC_Friendly_hasattacktarget,type=pillager] if entity @n[tag=SEAmob,distance=0..13] run item replace entity @s weapon.mainhand with minecraft:crossbow
+execute if entity @s[tag=!SEANPC_Friendly_hasattacktarget] if entity @n[tag=SEAmob,distance=0..13] run attribute @s follow_range base set 13
+execute if entity @s[tag=!SEANPC_Friendly_hasattacktarget] if entity @n[tag=SEAmob,distance=0..13] run data modify entity @s Silent set value 1b
+execute if entity @s[tag=!SEANPC_Friendly_hasattacktarget] if entity @n[tag=SEAmob,distance=0..13] run damage @s 0 arrow by @n[tag=SEAmob,distance=0..12]
+execute if entity @s[tag=!SEANPC_Friendly_hasattacktarget] if entity @n[tag=SEAmob,distance=0..13] run data modify entity @s Silent set value 0b
+execute if entity @s[tag=!SEANPC_Friendly_hasattacktarget] if entity @n[tag=SEAmob,distance=0..13] run tag @s add SEANPC_Friendly_hasattacktarget
+execute if entity @s[tag=SEANPC_Friendly_hasattacktarget] on target if entity @s[type=player] run attribute @n[tag=SEANPC_Friendly_hasattacktarget] follow_range base set 0
+execute if entity @s[tag=SEANPC_Friendly_hasattacktarget,type=pillager] on target if entity @s[type=player] run item replace entity @n[tag=SEANPC_Friendly_hasattacktarget,type=pillager] weapon.mainhand with minecraft:air
+execute if entity @s[tag=SEANPC_Friendly_hasattacktarget] on target if entity @s[type=player] run tag @n[tag=SEANPC_Friendly_hasattacktarget] remove SEANPC_Friendly_hasattacktarget

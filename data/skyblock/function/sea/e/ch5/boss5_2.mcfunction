@@ -37,12 +37,8 @@ execute positioned 90142 134 26 as @e[type=marker,tag=SEA_boss5_lightning_anchor
 execute positioned 90142 134 26 as @e[type=marker,tag=SEA_boss5_attack_rail,distance=0..50] at @s run function skyblock:sea/e/ch5/boss5/attack_rail_marker
 execute positioned 90142 134 26 as @e[type=marker,tag=SEA_boss5_attack_still_strike,distance=0..50] at @s run function skyblock:sea/e/ch5/boss5/attack_still_strike_marker
 
-execute if score SEA_ch5_event_boss5 rng2 matches 87.. if score @s rng1 matches 60.. store result score @s rng9 run random value 1..40
-execute if score SEA_ch5_event_boss5 rng2 matches 87.. positioned 90142 134 26 as @n[type=#illager,distance=0..50,tag=!SEAboss5_npc_helper,type=pillager] at @s if entity @n[tag=SEAboss5b,distance=..12] run function skyblock:sea/e/ch5/boss5/npc_help
-execute if score SEA_ch5_event_boss5 rng2 matches 87.. positioned 90142 134 26 as @n[type=#illager,distance=0..50,tag=!SEAboss5_npc_helper,type=vindicator] at @s if entity @n[tag=SEAboss5b,distance=..8] run function skyblock:sea/e/ch5/boss5/npc_help
-execute positioned 90142 134 26 as @n[type=#illager,distance=0..50,type=pillager] at @s unless entity @n[tag=SEAboss5b,distance=..12] run function skyblock:sea/e/ch5/boss5/npc_help_quit
-execute positioned 90142 134 26 as @n[type=#illager,distance=0..50,type=vindicator] at @s unless entity @n[tag=SEAboss5b,distance=..8] run function skyblock:sea/e/ch5/boss5/npc_help_quit
-execute if score SEA_ch5_event_boss5 rng2 matches 87.. if score @s rng1 matches 60.. if score @s rng9 matches 1 positioned 90142 134 26 as @e[type=#illager,distance=0..50,limit=3,sort=random] at @s run function skyblock:sea/e/ch5/boss5/npc_help_keep
+execute positioned 90142 134 26 as @e[type=#illager,distance=0..150,type=pillager] at @s if entity @n[tag=SEAmob,distance=..12,type=!#illager] run function skyblock:sea/e/ch5/boss5/npc_help
+execute positioned 90142 134 26 as @e[type=#illager,distance=0..150,type=vindicator] at @s if entity @n[tag=SEAmob,distance=..9,type=!#illager] run function skyblock:sea/e/ch5/boss5/npc_help
 
 execute positioned 90142 134 26 as @n[distance=..200,type=vindicator] at @s if entity @n[tag=SEAboss5,distance=8..] run effect give @a[distance=0..2] resistance 1 4 true
 

@@ -1,4 +1,5 @@
-execute if score SEA_ch6_event rng5 matches ..400 as @e[tag=SEAmob_surrended,x=90100,y=100,z=100,distance=0..200,type=#illager,limit=3,sort=random] at @s as @n[tag=SEAmob,tag=!SEAnpc,type=!#illager,distance=0..2.9] at @s run function skyblock:sea/e/ch5/event_array_lurk_surrendedattack
+execute positioned 90142 134 26 as @e[type=#illager,distance=0..150,type=pillager] at @s if entity @n[tag=SEAmob,distance=..12,type=!#illager] run function skyblock:sea/e/ch5/boss5/npc_help
+execute positioned 90142 134 26 as @e[type=#illager,distance=0..150,type=vindicator] at @s if entity @n[tag=SEAmob,distance=..9,type=!#illager] run function skyblock:sea/e/ch5/boss5/npc_help
 
 execute if score SEA_ch6_event rng5 matches ..400 as @n[type=villager,tag=SEAiscariot,x=90100,y=100,z=100,distance=..250] at @s if entity @a[tag=SEAPT,distance=0..4.2] run function skyblock:sea/e/ch5/event_array_building_iscariot
 execute if score SEA_ch6_event rng5 matches ..400 as @n[type=pillager,tag=SEApillager_npc1,x=90100,y=100,z=100,distance=..250] at @s if entity @a[tag=SEAPT,distance=0..3.4] run function skyblock:sea/e/ch5/event_array_building_pillagernpc

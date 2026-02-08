@@ -111,17 +111,17 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_axe",
+          "name": "minecraft:copper_axe",
           "weight": 6
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_pickaxe",
+          "name": "minecraft:copper_pickaxe",
           "weight": 8
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:iron_sword",
+          "name": "minecraft:copper_sword",
           "weight": 7
         },
         {
