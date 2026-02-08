@@ -518,6 +518,10 @@ setblock -79914 41 -80 minecraft:potted_poppy
 setblock -79870 31 -72 chest[facing=west]
 item replace block -79870 31 -72 container.12 with bone 1
 item replace block -79870 31 -72 container.14 with gunpowder 1
+setblock -79856 29 -58 chest[facing=west]
+item replace block -79856 29 -58 container.12 with bone 1
+item replace block -79856 29 -58 container.14 with string 1
+
   #落水陷阱
 fill -79861 28 -67 -79865 28 -68 minecraft:smooth_basalt replace air
 
