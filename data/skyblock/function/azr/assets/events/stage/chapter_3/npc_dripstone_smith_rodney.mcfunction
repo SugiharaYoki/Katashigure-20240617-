@@ -12,7 +12,7 @@ execute if score @s rng1 matches 43 run tellraw @a[tag=azrShowDialog,distance=..
 execute if score @s rng1 matches 50.. as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tellraw @s [{text:" - "},{text:"询问：你是谁？  ",color:"yellow"},{text:"〈◆〉",bold:1b,color:"gold",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30101"}}]
 execute if score @s rng1 matches 50.. as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tellraw @s [{text:" - "},{text:"询问：我该怎么走？  ",color:"yellow"},{text:"〈◆〉",bold:1b,color:"gold",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30102"}}]
 execute if score @s rng1 matches 50.. as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tellraw @s [{text:" - "},{text:"询问：为什么不卖货给我？  ",color:"yellow"},{text:"〈◆〉",bold:1b,color:"gold",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30103"}}]
-execute if score @s[tag=azrPlayer_dialogchoice_unlocked_30104] rng1 matches 50.. as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tellraw @s [{text:" - "},{text:"讨论：有关钓师威弗列德……  ",color:"yellow"},{text:"〈◆〉",bold:1b,color:"gold",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30103"}}]
+execute if score @s rng1 matches 50.. as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tellraw @s[tag=azrPlayer_dialogchoice_unlocked_30104] [{text:" - "},{text:"讨论：有关钓师威弗列德……  ",color:"yellow"},{text:"〈◆〉",bold:1b,color:"gold",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30103"}}]
 
 
 
