@@ -66,7 +66,7 @@ execute if score @s rng1 matches 4013 run tellraw @a[tag=azrShowDialog,distance=
 execute if score @s rng1 matches 4030 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 4030 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“只不过在来这儿的路上，你猜怎么着？他意外发现这条裂谷的边缘地带存在绝佳的垂钓点。”",color:"white"}]
 execute if score @s rng1 matches 4049 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
-execute if score @s rng1 matches 4049 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“我和我弟弟都是各自兴趣爱好的狂热者。这也导致我俩很不对付。”",color:"white"}]
+execute if score @s rng1 matches 4049 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“我和我弟弟都是各自兴趣爱好的狂热者。可能就是这种脾气性格导致我俩很不对付。”",color:"white"}]
 execute if score @s rng1 matches 4063 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 4063 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“下次你见到威弗列德的时候，帮我留意附近有没有危险的怪物。麻烦你去给它们清理掉。”",color:"white"}]
 execute if score @s rng1 matches 4072 run tag @a[tag=azrPlayer] remove azrPlayer_dialogchoice_revealed_301
