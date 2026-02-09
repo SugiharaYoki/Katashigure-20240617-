@@ -20,7 +20,7 @@ execute if score @s rng1 matches 24.. as @p[distance=5.6..,tag=azrPlayer,tag=azr
 
 
 execute if score @s rng1 matches 102 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
-execute if score @s rng1 matches 102 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“我是在这里隐居的工匠。你以为是因为这里不会有其他人经过？哈哈，这么想也难怪。”",color:"white"}]
+execute if score @s rng1 matches 102 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“我是在这里隐居的工匠，这儿可是个绝妙的地方。你认为是因为这里不会有其他人经过？哈哈，这么想也难怪。”",color:"white"}]
 execute if score @s rng1 matches 118 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 118 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“神庭的下方蕴藏着不菲的血腥能量，天使恐怕是瞒着我们在下方藏了什么东西。”",color:"white"}]
 execute if score @s rng1 matches 134 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
