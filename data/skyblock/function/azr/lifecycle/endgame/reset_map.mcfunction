@@ -525,6 +525,15 @@ item replace block -79856 29 -58 container.14 with string 1
   #落水陷阱
 fill -79861 28 -67 -79865 28 -68 minecraft:smooth_basalt replace air
 
+  #工匠
+setblock -79860 40 -95 waxed_exposed_copper_chest[facing=east]
+item replace block -79860 40 -95 container.13 with coal 1
+setblock -79857 40 -97 redstone_block
+setblock -79857 40 -97 air
+setblock -79857 40 -102 waxed_exposed_copper_chest[facing=south]
+item replace block -79857 40 -102 container.13 with iron_ingot 1
+
+
 
 
 #静熄之火
