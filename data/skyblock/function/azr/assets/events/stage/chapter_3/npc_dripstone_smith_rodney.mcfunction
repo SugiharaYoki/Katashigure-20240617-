@@ -44,6 +44,16 @@ execute if score @s rng1 matches 2065 run tag @a[tag=azrPlayer] remove azrPlayer
 execute if score @s rng1 matches 2065 run scoreboard players set @s rng1 49
 
 
+execute if score @s rng1 matches 3002 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
+execute if score @s rng1 matches 3002 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“最近这里的一些骸骨身上长出了重金属蘑菇。”",color:"white"}]
+execute if score @s rng1 matches 3016 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
+execute if score @s rng1 matches 3016 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“我试着杀了一只，但它们可是有一大群。我对此可没办法！”",color:"white"}]
+execute if score @s rng1 matches 3032 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
+execute if score @s rng1 matches 3032 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“这些东西会把蘑菇的孢子散得到处都是，给我的器械全给搞坏。”",color:"white"}]
+execute if score @s rng1 matches 3049 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
+execute if score @s rng1 matches 3049 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“一想到这些，我可就没心思开工咯。现在的货我都是屯着自己用，在事情解决前我不想做任何事。”",color:"white"}]
+execute if score @s rng1 matches 3065 run tag @a[tag=azrPlayer] remove azrPlayer_dialogchoice_revealed_301
+execute if score @s rng1 matches 3065 run scoreboard players set @s rng1 49
 
 
 
