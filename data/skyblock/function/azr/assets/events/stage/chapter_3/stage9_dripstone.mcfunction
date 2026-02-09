@@ -15,7 +15,7 @@ execute positioned -79863 28 -67 as @n[tag=AzrielMarker_encounter,distance=0..0.
 #工匠罗德尼
 execute positioned -79857.99 40.00 -94.59 unless entity @n[tag=AzrielTrader_dripstone_smith,distance=0..20.5] if entity @a[distance=..25.5,tag=azrPlayer] run function skyblock:azr/assets/mobs/unique/trader/dripstone_trader
 execute positioned -79857.99 40.00 -94.59 as @n[tag=AzrielTrader_dripstone_smith,distance=0..20.5] run scoreboard players add @s rng1 1
-execute positioned -79857.99 40.00 -94.59 as @n[tag=AzrielTrader_dripstone_smith,distance=0..20.5] at @s if entity @a[tag=azrPlayer,distance=..4] run function skyblock:azr/assets/events/stage/chapter_3/npc_dripstone_smith_rodney
+execute positioned -79857.99 40.00 -94.59 as @n[tag=AzrielTrader_dripstone_smith,distance=0..20.5] at @s if entity @a[tag=azrPlayer,distance=..15] run function skyblock:azr/assets/events/stage/chapter_3/npc_dripstone_smith_rodney
 
 
 
