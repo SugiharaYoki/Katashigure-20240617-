@@ -10,3 +10,4 @@ execute if score @s[tag=azrPlayer_dialogchoice_revealed_301] Azr_Shop matches 30
 
 
 
+scoreboard players set @s Azr_Shop 30101

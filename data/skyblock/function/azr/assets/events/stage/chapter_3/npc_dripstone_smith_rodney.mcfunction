@@ -27,6 +27,7 @@ execute if score @s rng1 matches 134 run playsound entity.villager.ambient neutr
 execute if score @s rng1 matches 134 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“哈哈，但阴谋论什么的我不在乎！我只知道将这种能量提取出来就可以打造成具有特殊魔力的石板。”",color:"white"}]
 execute if score @s rng1 matches 150 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 150 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“你身上就有这种石板，它和我提取能量制造的石板有异曲同工之妙。不知道是谁留下的，哈哈！”",color:"white"}]
+execute if score @s rng1 matches 165 run tag @a[tag=azrPlayer] remove azrPlayer_dialogchoice_revealed_301
 execute if score @s rng1 matches 165 run scoreboard players set @s rng1 49
 
 
