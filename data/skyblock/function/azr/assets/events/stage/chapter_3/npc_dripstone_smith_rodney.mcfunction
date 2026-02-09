@@ -1,6 +1,6 @@
 
 
-execute if score @s rng1 matches 10 unless entity @a[distance=..5.5,tag=azrPlayer] run scoreboard players set @s rng1 9
+execute if score @s rng1 matches 10 unless entity @a[distance=..5.5,tag=azrPlayer] run scoreboard players set @s rng1 8
 execute if score @s rng1 matches 10 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 10 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“哈哈，瞧我看到谁？一个人类的亡魂。”",color:"white"}]
 execute if score @s rng1 matches 26 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
