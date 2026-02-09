@@ -9,8 +9,8 @@ execute if score @s rng1 matches 43 run playsound entity.villager.ambient neutra
 execute if score @s rng1 matches 43 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“我这儿确实有货，但我现在没心情。”",color:"white"}]
 
 
-execute if score @s rng1 matches 50.. as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tell @s [{text:" - "},{text:"询问：你是谁？  ",color:"yellow"},{text:"〈◆〉",bold:1b,color:"gold",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30101"}}]
-execute if score @s rng1 matches 50.. as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tell @s [{text:" - "},{text:"询问：为什么不卖货给我？  ",color:"yellow"},{text:"〈◆〉",bold:1b,color:"gold",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30102"}}]
+execute if score @s rng1 matches 50.. as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tellraw @s [{text:" - "},{text:"询问：你是谁？  ",color:"yellow"},{text:"〈◆〉",bold:1b,color:"gold",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30101"}}]
+execute if score @s rng1 matches 50.. as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tellraw @s [{text:" - "},{text:"询问：为什么不卖货给我？  ",color:"yellow"},{text:"〈◆〉",bold:1b,color:"gold",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30102"}}]
 execute if score @s rng1 matches 50.. as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tag @s add azrPlayer_dialogchoice_revealed_301
 
 execute if score @s rng1 matches 51 run scoreboard players set @s rng1 49
