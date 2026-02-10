@@ -1,7 +1,7 @@
 
 execute unless score $StopAzr0 skyblock_system matches 1 run function skyblock:mg/azr0/main
 execute unless score $StopAzr skyblock_system matches 1 run function skyblock:azr/main
-execute unless score $StopSea skyblock_system matches 1 if block -25 23 32 soul_lantern run function skyblock:sea/core20
+execute unless score $StopSea skyblock_system matches 1 if block -25 23 32 soul_lantern positioned 90060 102 139 run function skyblock:sea/core20
 #execute unless score $StopCmd skyblock_system matches 1 run function skyblock:cmd/cmd_main
 #execute unless score $StopColorWar skyblock_system matches 1 run function skyblock:color_war/main
 #execute unless score $StopPlayHouse skyblock_system matches 1 run function skyblock:ph/main
