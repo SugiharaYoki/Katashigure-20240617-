@@ -6,7 +6,7 @@ execute if score sea_chg_start_entrance_light_twinkle rng2 matches 1 run setbloc
 execute if score sea_chg_start_entrance_light_twinkle rng2 matches 10 run setblock 90078 125 137 minecraft:redstone_lamp[lit=false]
 
 
-execute as @e[x=90000,y=100,z=0,distance=..6000] at @s run function skyblock:sea/controller/entity_controller_slow
+#execute as @e[x=90000,y=100,z=0,distance=..6000] at @s run function skyblock:sea/controller/entity_controller_slow
 
 
 
