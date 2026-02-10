@@ -4,6 +4,7 @@ execute as @s[type=bee,tag=SEAbee] at @s if entity @a[tag=SEAPT,distance=0..16] 
 execute as @s[tag=SEAhorse_summoner,type=marker] at @s run function skyblock:sea/p/horse_summoner
 
 
+execute as @s[type=interaction] at @s run function skyblock:sea/p/interaction
 
 
 
