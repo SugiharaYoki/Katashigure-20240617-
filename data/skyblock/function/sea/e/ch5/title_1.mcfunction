@@ -21,5 +21,5 @@ execute as @s at @s run playsound garden2.bgm.waterdeath music @s ~ ~ ~ 0.7 1.0
 
 
 
-execute if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @s {text:"从第五章开始，『厄珀娅的悲歌』不再推荐以多人模式游玩。\n依照故事设定，你的全部队友……都已葬身于维修层和物资层。\n前方依然支持多人模式，但可能会发生各种不符合预期的剧情演出。",color:"red"}
+execute if score sea_player_count rng1 matches 2.. run tellraw @s {text:"从第五章开始，『厄珀娅的悲歌』不再推荐以多人模式游玩。\n依照故事设定，你的全部队友……都已葬身于维修层和物资层。\n前方依然支持多人模式，但可能会发生各种不符合预期的剧情演出。",color:"red"}
 

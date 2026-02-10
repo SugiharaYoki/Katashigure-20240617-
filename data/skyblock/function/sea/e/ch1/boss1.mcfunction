@@ -23,15 +23,15 @@ execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,tag=!SEA
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,tag=!SEAboss1_002,scores={sea_boss1_hp=..140}] at @s run function skyblock:sea/m/silverfish
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,tag=!SEAboss1_002,scores={sea_boss1_hp=..140}] at @s run particle warped_spore ~ ~1 ~ 3 3 3 0 120
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,tag=!SEAboss1_002,scores={sea_boss1_hp=..140}] at @s run playsound entity.zombie_villager.cure hostile @a ~ ~ ~ 1 0.7
-execute as @n[tag=sc,scores={sea_4temp2=4000..5000,sea_player=3..}] as @n[tag=SEAboss1,tag=!SEAboss1_002,scores={sea_boss1_hp=..140}] at @s run function skyblock:sea/m/silverfish
-execute as @n[tag=sc,scores={sea_4temp2=4000..5000,sea_player=5..}] as @n[tag=SEAboss1,tag=!SEAboss1_002,scores={sea_boss1_hp=..140}] at @s run function skyblock:sea/m/silverfish
+execute if score sea_player_count rng1 matches 3.. as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,tag=!SEAboss1_002,scores={sea_boss1_hp=..140}] at @s run function skyblock:sea/m/silverfish
+execute if score sea_player_count rng1 matches 5.. as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,tag=!SEAboss1_002,scores={sea_boss1_hp=..140}] at @s run function skyblock:sea/m/silverfish
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,tag=!SEAboss1_002,scores={sea_boss1_hp=..140}] at @s run tag @s add SEAboss1_002
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=5..6}] at @s if entity @a[tag=SEAPT,distance=0..15] run effect give @s slowness 1 12 true
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] run scoreboard players add @n[tag=SEAboss1,scores={sea_4temp1=0..80}] sea_4temp1 1
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] run scoreboard players add @n[tag=SEAboss1,scores={sea_4temp1=99..130}] sea_4temp1 1
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=5..6,sea_boss1_hp=..140}] at @s if entity @a[tag=SEAPT,distance=0..15] run function skyblock:sea/m/silverfish_boss1
-execute as @n[tag=sc,scores={sea_4temp2=4000..5000,sea_player=3..}] as @n[tag=SEAboss1,scores={rng2=5..6,sea_boss1_hp=..140}] at @s if entity @a[tag=SEAPT,distance=0..15] run function skyblock:sea/m/silverfish_boss1
-execute as @n[tag=sc,scores={sea_4temp2=4000..5000,sea_player=5..}] as @n[tag=SEAboss1,scores={rng2=5..6,sea_boss1_hp=..140}] at @s if entity @a[tag=SEAPT,distance=0..15] run function skyblock:sea/m/silverfish_boss1
+execute if score sea_player_count rng1 matches 3.. as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=5..6,sea_boss1_hp=..140}] at @s if entity @a[tag=SEAPT,distance=0..15] run function skyblock:sea/m/silverfish_boss1
+execute if score sea_player_count rng1 matches 5.. as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=5..6,sea_boss1_hp=..140}] at @s if entity @a[tag=SEAPT,distance=0..15] run function skyblock:sea/m/silverfish_boss1
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng2=5..6}] at @s if entity @a[tag=SEAPT,distance=0..15] run playsound minecraft:entity.zombie_villager.cure master @a ~ ~ ~ 2 1.1
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={rng1=1}] at @s run scoreboard players set @n[tag=SEAboss1] sea_4temp1 1
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] as @n[tag=SEAboss1,scores={sea_4temp1=5}] at @s run effect give @s speed 1 12 true
@@ -53,7 +53,7 @@ execute as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601 players @a[tag=SEAPT]
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601 style progress
 execute as @n[tag=sc,scores={sea_4temp2=4001}] run bossbar set minecraft:9066601 max 600
-execute as @n[tag=sc,scores={sea_4temp2=4001}] if entity @n[tag=sc,scores={sea_player=3..}] run bossbar set minecraft:9066601 max 700
+execute as @n[tag=sc,scores={sea_4temp2=4001}] if score sea_player_count rng1 matches 3.. run bossbar set minecraft:9066601 max 700
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] store result bossbar minecraft:9066601 value run data get entity @e[tag=SEAboss1,limit=1] Health
 execute as @n[tag=sc,scores={sea_4temp2=4000..5000}] run scoreboard players add SEAmusic rng1 1
 execute if score SEAmusic rng1 matches 478 as @a[tag=SEAPT] at @s run playsound minecraft:app2.heracles music @s ~ ~ ~ 1 1.0

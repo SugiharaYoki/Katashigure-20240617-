@@ -64,9 +64,9 @@ execute if block 90077 131 141 air if block 90075 128 126 air unless block 90075
 execute if block 90077 131 141 air if block 90075 128 126 air unless block 90075 129 126 air positioned 90075 128 125 run function skyblock:sea/m/drowned
 execute if block 90077 131 141 air if block 90075 128 126 air unless block 90075 129 126 air positioned 90075 128 125 run function skyblock:sea/m/drowned
 execute if block 90077 131 141 air if block 90075 128 126 air unless block 90075 129 126 air positioned 90075 128 125 run function skyblock:sea/m/drowned
-execute if block 90077 131 141 air if block 90075 128 126 air unless block 90075 129 126 air positioned 90075 128 125 if entity @n[tag=sc,scores={sea_player=2..}] run function skyblock:sea/m/drowned
-execute if block 90077 131 141 air if block 90075 128 126 air unless block 90075 129 126 air positioned 90075 128 125 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned
-execute if block 90077 131 141 air if block 90075 128 126 air unless block 90075 129 126 air positioned 90075 128 125 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/drowned
+execute if block 90077 131 141 air if block 90075 128 126 air unless block 90075 129 126 air positioned 90075 128 125 if score sea_player_count rng1 matches 2.. run function skyblock:sea/m/drowned
+execute if block 90077 131 141 air if block 90075 128 126 air unless block 90075 129 126 air positioned 90075 128 125 if score sea_player_count rng1 matches 3.. run function skyblock:sea/m/drowned
+execute if block 90077 131 141 air if block 90075 128 126 air unless block 90075 129 126 air positioned 90075 128 125 if score sea_player_count rng1 matches 4.. run function skyblock:sea/m/drowned
 execute if block 90077 131 141 air if block 90075 128 126 air unless block 90075 129 126 air positioned 90075 128 125 run function skyblock:sea/m/drowned_shield
 execute if block 90077 131 141 air if block 90075 128 126 air unless block 90075 129 126 air positioned 90075 128 125 run function skyblock:sea/m/drowned_shield
 execute if block 90077 131 141 air if block 90075 128 126 air unless block 90075 129 126 air positioned 90075 128 125 run function skyblock:sea/m/zombie_security
@@ -162,8 +162,8 @@ execute as @n[tag=sc,scores={sea_4temp4=405}] positioned 90132 128 137 run kill 
 execute as @n[tag=sc,scores={sea_4temp4=419}] positioned 90130 128 144 run function skyblock:sea/m/skeleton
 execute as @n[tag=sc,scores={sea_4temp4=419}] positioned 90130 128 144 run function skyblock:sea/m/skeleton
 execute as @n[tag=sc,scores={sea_4temp4=419}] positioned 90130 128 144 run function skyblock:sea/m/skeleton_melee
-execute as @n[tag=sc,scores={sea_4temp4=419}] positioned 90130 128 144 if entity @n[tag=sc,scores={sea_player=2..}] run function skyblock:sea/m/skeleton_melee
-execute as @n[tag=sc,scores={sea_4temp4=419}] positioned 90130 128 144 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/skeleton
+execute as @n[tag=sc,scores={sea_4temp4=419}] positioned 90130 128 144 if score sea_player_count rng1 matches 2.. run function skyblock:sea/m/skeleton_melee
+execute as @n[tag=sc,scores={sea_4temp4=419}] positioned 90130 128 144 if score sea_player_count rng1 matches 4.. run function skyblock:sea/m/skeleton
 execute as @n[tag=sc,scores={sea_4temp4=423}] run fill 90130 129 144 90130 128 144 air destroy
 execute as @n[tag=sc,scores={sea_4temp4=405..,sea_4temp2=..901}] run playsound minecraft:entity.minecart.riding ambient @a 90130 132 141 0.9 0.7
 execute as @n[tag=sc,scores={sea_4temp4=403}] positioned 90100 128 142 run function skyblock:sea/m/unique/special_rivette
@@ -175,8 +175,8 @@ execute as @n[tag=sc,scores={sea_4temp4=405}] run playsound block.iron_door.open
 execute as @n[tag=sc,scores={sea_4temp4=449}] positioned 90129 128 139 run function skyblock:sea/m/skeleton
 execute as @n[tag=sc,scores={sea_4temp4=449}] positioned 90129 128 139 run function skyblock:sea/m/skeleton
 execute as @n[tag=sc,scores={sea_4temp4=449}] positioned 90129 128 139 run function skyblock:sea/m/skeleton_melee
-execute as @n[tag=sc,scores={sea_4temp4=449}] positioned 90129 128 139 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/skeleton_melee
-execute as @n[tag=sc,scores={sea_4temp4=449}] positioned 90129 128 139 if entity @n[tag=sc,scores={sea_player=5..}] run function skyblock:sea/m/skeleton
+execute as @n[tag=sc,scores={sea_4temp4=449}] positioned 90129 128 139 if score sea_player_count rng1 matches 3.. run function skyblock:sea/m/skeleton_melee
+execute as @n[tag=sc,scores={sea_4temp4=449}] positioned 90129 128 139 if score sea_player_count rng1 matches 5.. run function skyblock:sea/m/skeleton
 execute as @n[tag=sc,scores={sea_4temp4=453}] run fill 90129 129 139 90129 128 139 air destroy
 
 execute if block 90118 129 141 lever[facing=south,powered=true] unless entity @a[tag=SEAPT,tag=e_i_18] as @e[tag=sc] unless entity @s[scores={sea_4temp7=1..}] run scoreboard players set @s sea_4temp7 1

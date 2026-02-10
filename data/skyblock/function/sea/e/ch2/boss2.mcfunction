@@ -92,9 +92,9 @@ execute as @s[scores={rng1=5,sea_4temp8=21..40}] at @s positioned ~2 ~-1 ~-2 if 
 execute as @s[scores={rng1=6,sea_4temp8=21..40}] at @s positioned ~2 ~-1 ~ if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
 execute as @s[scores={rng1=7,sea_4temp8=21..40}] at @s positioned ~ ~-1 ~2 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
 execute as @s[scores={rng1=8,sea_4temp8=21..40}] at @s positioned ~ ~-1 ~-2 if block ~ ~ ~ air unless block ~ ~-1 ~ air run summon evoker_fangs
-execute if entity @n[tag=sc,scores={sea_player=1..2}] store result score @s rng1 run random value 1..48
-execute if entity @n[tag=sc,scores={sea_player=3..4}] store result score @s rng1 run random value 1..40
-execute if entity @n[tag=sc,scores={sea_player=5..}] store result score @s rng1 run random value 1..32
+execute if score sea_player_count rng1 matches 1..2 store result score @s rng1 run random value 1..48
+execute if score sea_player_count rng1 matches 3..4 store result score @s rng1 run random value 1..40
+execute if score sea_player_count rng1 matches 5.. store result score @s rng1 run random value 1..32
 execute as @s[tag=!boss2hplock3,scores={rng1=1}] at @s positioned ~1 ~0 0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10
 execute as @s[tag=!boss2hplock3,scores={rng1=1}] at @s positioned ~1 ~0 0.5 run function skyblock:sea/m/skeleton_melee
 execute as @s[tag=!boss2hplock3,scores={rng1=2}] at @s positioned ~1 ~0 0.5 run particle trial_omen ~ ~1 ~ 0.3 0.5 0.3 0.5 10

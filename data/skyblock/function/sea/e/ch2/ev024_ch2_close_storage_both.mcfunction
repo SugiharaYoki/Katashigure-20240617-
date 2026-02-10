@@ -32,19 +32,19 @@ execute as @n[tag=sc,scores={sea_4temp2=861}] run playsound block.stone_button.c
 execute as @n[tag=sc,scores={sea_4temp2=861}] run playsound block.stone_button.click_off block @a 90106 134 110 2 1.4
 execute as @n[tag=sc,scores={sea_4temp2=861}] positioned 90105 128 107 run function skyblock:sea/m/pillager
 execute as @n[tag=sc,scores={sea_4temp2=861}] positioned 90105 128 107 run function skyblock:sea/m/pillager
-execute as @n[tag=sc,scores={sea_4temp2=861}] positioned 90105 128 107 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/zombie_cook
+execute as @n[tag=sc,scores={sea_4temp2=861}] positioned 90105 128 107 if score sea_player_count rng1 matches 3.. run function skyblock:sea/m/zombie_cook
 
 execute as @n[tag=sc,scores={sea_4temp2=868}] positioned 90119 128 107 run function skyblock:sea/m/silverfish_big
 execute as @n[tag=sc,scores={sea_4temp2=868..869}] positioned 90119 128 107 run function skyblock:sea/m/silverfish
-execute as @n[tag=sc,scores={sea_4temp2=868}] positioned 90119 128 107 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/silverfish
+execute as @n[tag=sc,scores={sea_4temp2=868}] positioned 90119 128 107 if score sea_player_count rng1 matches 4.. run function skyblock:sea/m/silverfish
 execute as @n[tag=sc,scores={sea_4temp2=868}] positioned 90130 129 106 run function skyblock:sea/m/skeleton
-execute as @n[tag=sc,scores={sea_4temp2=868}] positioned 90130 129 106 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/skeleton
-execute as @n[tag=sc,scores={sea_4temp2=867..869}] positioned 90130 129 106 if entity @n[tag=sc,scores={sea_player=5..}] run function skyblock:sea/m/skeleton_melee
+execute as @n[tag=sc,scores={sea_4temp2=868}] positioned 90130 129 106 if score sea_player_count rng1 matches 3.. run function skyblock:sea/m/skeleton
+execute as @n[tag=sc,scores={sea_4temp2=867..869}] positioned 90130 129 106 if score sea_player_count rng1 matches 5.. run function skyblock:sea/m/skeleton_melee
 execute as @n[tag=sc,scores={sea_4temp2=867..869}] positioned 90116 129 118 run function skyblock:sea/m/drowned_small
-execute as @n[tag=sc,scores={sea_4temp2=868..869}] positioned 90116 129 118 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_small
-execute as @n[tag=sc,scores={sea_4temp2=868..869}] positioned 90116 129 118 if entity @n[tag=sc,scores={sea_player=5..}] run function skyblock:sea/m/drowned_small
+execute as @n[tag=sc,scores={sea_4temp2=868..869}] positioned 90116 129 118 if score sea_player_count rng1 matches 3.. run function skyblock:sea/m/drowned_small
+execute as @n[tag=sc,scores={sea_4temp2=868..869}] positioned 90116 129 118 if score sea_player_count rng1 matches 5.. run function skyblock:sea/m/drowned_small
 execute as @n[tag=sc,scores={sea_4temp2=861..862}] positioned 90104 128 103 run function skyblock:sea/m/drowned_small
 execute as @n[tag=sc,scores={sea_4temp2=861..862}] positioned 90104 128 103 run function skyblock:sea/m/drowned_small
-execute as @n[tag=sc,scores={sea_4temp2=861..862}] positioned 90104 128 103 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/drowned_small
+execute as @n[tag=sc,scores={sea_4temp2=861..862}] positioned 90104 128 103 if score sea_player_count rng1 matches 4.. run function skyblock:sea/m/drowned_small
 execute as @n[tag=sc,scores={sea_4temp2=862}] positioned 90105 130 105 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
 execute as @n[tag=sc,scores={sea_4temp2=862}] positioned 90130 129 107 run function skyblock:sea/m/destination

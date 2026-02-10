@@ -49,33 +49,33 @@ execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=240}] unless entity 
 execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=270}] unless entity @n[tag=SEAbossch3_light_keep] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] [{text:"越涵：",color:"green",bold:1b},{text:"\n“这灯泡好像只能坚持十几秒，必须保证要快！”",color:"white",bold: false}]
 
 
-execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=450}] unless entity @n[tag=SEAbossch3_light_keep] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] [{text:"越涵：",color:"green",bold:1b},{text:"\n“我从墙里刨出电路了！我帮你守着一盏灯，你去搞其它的！”",color:"white",bold: false}]
-execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=450}] unless entity @n[tag=SEAbossch3_light_keep] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] [{text:"越涵：",color:"green",bold:1b},{text:"\n“我从墙里刨出电路了！我帮你们守着一盏灯，你们去搞其它的！”",color:"white",bold: false}]
+execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=450}] unless entity @n[tag=SEAbossch3_light_keep] if score sea_player_count rng1 matches 1 run tellraw @a[x=90100,y=100,z=100,distance=0..1000] [{text:"越涵：",color:"green",bold:1b},{text:"\n“我从墙里刨出电路了！我帮你守着一盏灯，你去搞其它的！”",color:"white",bold: false}]
+execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=450}] unless entity @n[tag=SEAbossch3_light_keep] if score sea_player_count rng1 matches 2.. run tellraw @a[x=90100,y=100,z=100,distance=0..1000] [{text:"越涵：",color:"green",bold:1b},{text:"\n“我从墙里刨出电路了！我帮你们守着一盏灯，你们去搞其它的！”",color:"white",bold: false}]
 execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=450..}] unless entity @n[tag=SEAbossch3_light_keep] run setblock 90138 16 100 waxed_exposed_copper_bulb[lit=true]
 execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=450..}] unless entity @n[tag=SEAbossch3_light_keep] run scoreboard players add @n[tag=SEAbossch3_light,x=90138,y=16,z=100,distance=0..3] sea_4temp2 6
 
-execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=540}] unless entity @n[tag=SEAbossch3_light_keep] if entity @n[tag=sc,scores={sea_player=1}] if entity @a[tag=e_i_27] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] [{text:"越涵：",color:"green",bold:1b},{text:"\n“第二……盏！！但我快坚持不住了，一定要做到，是你的话就绝对没问题！！”",color:"white",bold: false}]
-execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=540}] unless entity @n[tag=SEAbossch3_light_keep] if entity @n[tag=sc,scores={sea_player=2..}] if entity @a[tag=e_i_27] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] [{text:"越涵：",color:"green",bold:1b},{text:"\n“第二……盏！！但我快坚持不住了，一定要做到，是你们的话就绝对没问题！！”",color:"white",bold: false}]
+execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=540}] unless entity @n[tag=SEAbossch3_light_keep] if score sea_player_count rng1 matches 1 if entity @a[tag=e_i_27] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] [{text:"越涵：",color:"green",bold:1b},{text:"\n“第二……盏！！但我快坚持不住了，一定要做到，是你的话就绝对没问题！！”",color:"white",bold: false}]
+execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=540}] unless entity @n[tag=SEAbossch3_light_keep] if score sea_player_count rng1 matches 2.. if entity @a[tag=e_i_27] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] [{text:"越涵：",color:"green",bold:1b},{text:"\n“第二……盏！！但我快坚持不住了，一定要做到，是你们的话就绝对没问题！！”",color:"white",bold: false}]
 execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=540}] unless entity @n[tag=SEAbossch3_light_keep] if entity @a[tag=e_i_27] run setblock 90141 18 77 air
 execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=540..}] unless entity @n[tag=SEAbossch3_light_keep] if entity @a[tag=e_i_27] run setblock 90141 18 77 waxed_exposed_copper_bulb[lit=true]
 execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=540..}] unless entity @n[tag=SEAbossch3_light_keep] if entity @a[tag=e_i_27] run scoreboard players add @n[tag=SEAbossch3_light,x=90141,y=18,z=77,distance=0..3] sea_4temp2 6
 
-execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=570}] unless entity @n[tag=SEAbossch3_light_keep] if entity @n[tag=sc,scores={sea_player=1}] if entity @a[tag=e_i_27] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] [{text:"越涵：",color:"green",bold:1b},{text:"\n“操！我已经失去了斯顿，我不要连你也失去了！！他妈的，你给我活下来！！”",color:"white",bold: false}]
-execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=570}] unless entity @n[tag=SEAbossch3_light_keep] if entity @n[tag=sc,scores={sea_player=2..}] if entity @a[tag=e_i_27] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] [{text:"越涵：",color:"green",bold:1b},{text:"\n“操！我已经失去了斯顿，我不要连你们也失去了！！他妈的，你们给我活下来！！”",color:"white",bold: false}]
-execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=570}] unless entity @n[tag=SEAbossch3_light_keep] if entity @n[tag=sc,scores={sea_player=1..}] if entity @a[tag=e_i_27] run effect give @a[tag=SEAPT] resistance 90 0 true
-execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=570}] unless entity @n[tag=SEAbossch3_light_keep] if entity @n[tag=sc,scores={sea_player=1..}] if entity @a[tag=e_i_27] run effect give @a[tag=SEAPT] strength 90 0 true
+execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=570}] unless entity @n[tag=SEAbossch3_light_keep] if score sea_player_count rng1 matches 1 if entity @a[tag=e_i_27] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] [{text:"越涵：",color:"green",bold:1b},{text:"\n“操！我已经失去了斯顿，我不要连你也失去了！！他妈的，你给我活下来！！”",color:"white",bold: false}]
+execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=570}] unless entity @n[tag=SEAbossch3_light_keep] if score sea_player_count rng1 matches 2.. if entity @a[tag=e_i_27] run tellraw @a[x=90100,y=100,z=100,distance=0..1000] [{text:"越涵：",color:"green",bold:1b},{text:"\n“操！我已经失去了斯顿，我不要连你们也失去了！！他妈的，你们给我活下来！！”",color:"white",bold: false}]
+execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=570}] unless entity @n[tag=SEAbossch3_light_keep] if score sea_player_count rng1 matches 1.. if entity @a[tag=e_i_27] run effect give @a[tag=SEAPT] resistance 90 0 true
+execute if entity @n[tag=SEAbossch3_core,scores={sea_4temp4=570}] unless entity @n[tag=SEAbossch3_light_keep] if score sea_player_count rng1 matches 1.. if entity @a[tag=e_i_27] run effect give @a[tag=SEAPT] strength 90 0 true
 
 
 execute as @a[tag=SEAPT,x=90138,y=17,z=100,distance=0..4,tag=!e_i_32] at @s run playsound minecraft:app2.darkenergy music @s ~ ~ ~ 1 1.0
 execute as @a[tag=SEAPT,x=90138,y=17,z=100,distance=0..4,tag=!e_i_32] at @s run tag @s add e_i_32
 
 
-execute if entity @n[tag=sc,scores={sea_player=1..}] run scoreboard players remove @e[tag=SEAbossch3_light,scores={sea_4temp2=0..},tag=!SEAbossch3_light_keep] sea_4temp2 2
-execute if entity @n[tag=sc,scores={sea_player=2..}] run scoreboard players remove @e[tag=SEAbossch3_light,scores={sea_4temp2=0..},tag=!SEAbossch3_light_keep] sea_4temp2 1
-execute if entity @n[tag=sc,scores={sea_player=3..}] run scoreboard players remove @e[tag=SEAbossch3_light,scores={sea_4temp2=0..},tag=!SEAbossch3_light_keep] sea_4temp2 2
-execute if entity @n[tag=sc,scores={sea_player=4..}] run scoreboard players remove @e[tag=SEAbossch3_light,scores={sea_4temp2=0..},tag=!SEAbossch3_light_keep] sea_4temp2 1
-execute if entity @n[tag=sc,scores={sea_player=5..}] run scoreboard players remove @e[tag=SEAbossch3_light,scores={sea_4temp2=0..},tag=!SEAbossch3_light_keep] sea_4temp2 2
-execute if entity @n[tag=sc,scores={sea_player=6..}] run scoreboard players remove @e[tag=SEAbossch3_light,scores={sea_4temp2=0..},tag=!SEAbossch3_light_keep] sea_4temp2 1
+execute if score sea_player_count rng1 matches 1.. run scoreboard players remove @e[tag=SEAbossch3_light,scores={sea_4temp2=0..},tag=!SEAbossch3_light_keep] sea_4temp2 2
+execute if score sea_player_count rng1 matches 2.. run scoreboard players remove @e[tag=SEAbossch3_light,scores={sea_4temp2=0..},tag=!SEAbossch3_light_keep] sea_4temp2 1
+execute if score sea_player_count rng1 matches 3.. run scoreboard players remove @e[tag=SEAbossch3_light,scores={sea_4temp2=0..},tag=!SEAbossch3_light_keep] sea_4temp2 2
+execute if score sea_player_count rng1 matches 4.. run scoreboard players remove @e[tag=SEAbossch3_light,scores={sea_4temp2=0..},tag=!SEAbossch3_light_keep] sea_4temp2 1
+execute if score sea_player_count rng1 matches 5.. run scoreboard players remove @e[tag=SEAbossch3_light,scores={sea_4temp2=0..},tag=!SEAbossch3_light_keep] sea_4temp2 2
+execute if score sea_player_count rng1 matches 6.. run scoreboard players remove @e[tag=SEAbossch3_light,scores={sea_4temp2=0..},tag=!SEAbossch3_light_keep] sea_4temp2 1
 execute as @e[tag=SEAbossch3_light,scores={sea_4temp2=..0}] at @s if block ~ ~ ~ waxed_exposed_copper_bulb run setblock ~ ~ ~ waxed_exposed_copper_bulb[lit=false]
 tag @e[tag=SEAbossch3_light,scores={sea_4temp2=..0}] remove SEAbossch3_light_on
 
@@ -89,15 +89,15 @@ execute store result score SEA_CH3_BOSS sea_4temp2 run random value 1..4
 execute store result score SEA_CH3_BOSS sea_4temp3 run random value 1..24
 execute store result score SEA_CH3_BOSS sea_4temp4 at @n[tag=SEAbossch3_core] if entity @e[tag=SEAmob,distance=0..29]
 
-execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..3 if entity @n[tag=sc,scores={sea_player=1}] if score SEA_CH3_BOSS sea_4temp4 matches ..15 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] if score SEA_CH3_BOSS sea_4temp5 matches ..80 run function skyblock:sea/e/ch3/ev010_boss3_summonpool
+execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..3 if score sea_player_count rng1 matches 1 if score SEA_CH3_BOSS sea_4temp4 matches ..15 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] if score SEA_CH3_BOSS sea_4temp5 matches ..80 run function skyblock:sea/e/ch3/ev010_boss3_summonpool
 
-execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..5 if entity @n[tag=sc,scores={sea_player=2..3}] if score SEA_CH3_BOSS sea_4temp4 matches ..20 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] if score SEA_CH3_BOSS sea_4temp5 matches ..100 run function skyblock:sea/e/ch3/ev010_boss3_summonpool
+execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..5 if score sea_player_count rng1 matches 2..3 if score SEA_CH3_BOSS sea_4temp4 matches ..20 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] if score SEA_CH3_BOSS sea_4temp5 matches ..100 run function skyblock:sea/e/ch3/ev010_boss3_summonpool
 
-execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..7 if entity @n[tag=sc,scores={sea_player=4..5}] if score SEA_CH3_BOSS sea_4temp4 matches ..25 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] if score SEA_CH3_BOSS sea_4temp5 matches ..120 run function skyblock:sea/e/ch3/ev010_boss3_summonpool
+execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..7 if score sea_player_count rng1 matches 4..5 if score SEA_CH3_BOSS sea_4temp4 matches ..25 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] if score SEA_CH3_BOSS sea_4temp5 matches ..120 run function skyblock:sea/e/ch3/ev010_boss3_summonpool
 
-execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..9 if entity @n[tag=sc,scores={sea_player=6..7}] if score SEA_CH3_BOSS sea_4temp4 matches ..30 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] if score SEA_CH3_BOSS sea_4temp5 matches ..140 run function skyblock:sea/e/ch3/ev010_boss3_summonpool
+execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..9 if score sea_player_count rng1 matches 6..7 if score SEA_CH3_BOSS sea_4temp4 matches ..30 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] if score SEA_CH3_BOSS sea_4temp5 matches ..140 run function skyblock:sea/e/ch3/ev010_boss3_summonpool
 
-execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..11 if entity @n[tag=sc,scores={sea_player=8..}] if score SEA_CH3_BOSS sea_4temp4 matches ..35 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] if score SEA_CH3_BOSS sea_4temp5 matches ..160 run function skyblock:sea/e/ch3/ev010_boss3_summonpool
+execute if score SEA_CH3_BOSS sea_4temp2 matches 4 if score SEA_CH3_BOSS sea_4temp1 matches 1..11 if score sea_player_count rng1 matches 8.. if score SEA_CH3_BOSS sea_4temp4 matches ..35 at @e[tag=SEAbossch3_light,sort=random,limit=2] if block ~ ~ ~ waxed_exposed_copper_bulb[lit=false] if score SEA_CH3_BOSS sea_4temp5 matches ..160 run function skyblock:sea/e/ch3/ev010_boss3_summonpool
 
 #
 
@@ -128,8 +128,8 @@ execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted] run scoreboard pl
 execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=10}] run give @a[tag=SEAPT,scores={SEAPT_mode=1}] nether_star
 execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=10}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..8}] sea_progress 9
 execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=10}] run tellraw @a[x=90100,y=100,z=100,distance=0..2000] [{text:"越涵：",color:"green",bold:1b},{text:"\n“老哥，下面的问题是不是解决了？”",color:"white",bold: false}]
-execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=40}] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[x=90100,y=100,z=100,distance=0..2000] [{text:"越涵：",color:"green",bold:1b},{text:"\n“你等着，我想办法找其他路来和你汇合。”",color:"white",bold: false}]
-execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=40}] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[x=90100,y=100,z=100,distance=0..2000] [{text:"越涵：",color:"green",bold:1b},{text:"\n“你们等着，我想办法找其他路来和你们汇合。”",color:"white",bold: false}]
+execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=40}] if score sea_player_count rng1 matches 1 run tellraw @a[x=90100,y=100,z=100,distance=0..2000] [{text:"越涵：",color:"green",bold:1b},{text:"\n“你等着，我想办法找其他路来和你汇合。”",color:"white",bold: false}]
+execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=40}] if score sea_player_count rng1 matches 2.. run tellraw @a[x=90100,y=100,z=100,distance=0..2000] [{text:"越涵：",color:"green",bold:1b},{text:"\n“你们等着，我想办法找其他路来和你们汇合。”",color:"white",bold: false}]
 
 execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=80}] as @a[tag=SEAPT] at @s run tellraw @s {text:"『厄珀娅的悲歌』第三章 完",color:"blue",bold:1b}
 execute as @n[tag=SEAbossch3_core,tag=SEAbossch3_core_lighted,scores={sea_4temp7=80}] if score sc sea_speedrun_ch3 matches ..960 run give @a[tag=SEAPT] mojang_banner_pattern[custom_data={sea_docg15:true}]

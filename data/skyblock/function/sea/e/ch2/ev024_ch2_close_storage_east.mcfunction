@@ -9,10 +9,10 @@ execute if score sea_ch2_close_storage sea_4temp2 matches 410 run fill 90140 129
 execute if score sea_ch2_close_storage sea_4temp2 matches 410 run fill 90140 128 134 90141 128 134 air destroy
 execute if score sea_ch2_close_storage sea_4temp2 matches 409 positioned 90142 128 135 run function skyblock:sea/m/skeleton
 execute if score sea_ch2_close_storage sea_4temp2 matches 409 positioned 90142 128 135 run function skyblock:sea/m/skeleton_melee
-execute if score sea_ch2_close_storage sea_4temp2 matches 409 positioned 90142 128 135 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/skeleton
+execute if score sea_ch2_close_storage sea_4temp2 matches 409 positioned 90142 128 135 if score sea_player_count rng1 matches 3.. run function skyblock:sea/m/skeleton
 execute if score sea_ch2_close_storage sea_4temp2 matches 409 positioned 90139 128 135 run function skyblock:sea/m/skeleton
 execute if score sea_ch2_close_storage sea_4temp2 matches 409 positioned 90139 128 135 run function skyblock:sea/m/skeleton_melee
-execute if score sea_ch2_close_storage sea_4temp2 matches 409 positioned 90139 128 135 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/skeleton
+execute if score sea_ch2_close_storage sea_4temp2 matches 409 positioned 90139 128 135 if score sea_player_count rng1 matches 3.. run function skyblock:sea/m/skeleton
 
 execute if score sea_ch2_close_storage sea_4temp2 matches 405 positioned 90149 129 129 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
 

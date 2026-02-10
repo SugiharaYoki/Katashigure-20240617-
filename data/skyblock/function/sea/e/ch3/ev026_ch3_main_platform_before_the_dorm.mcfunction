@@ -6,4 +6,4 @@ execute as @s[tag=SEAch3_spawn_timer4,scores={sea_4temp1=11}] positioned 90112 1
 execute as @s[tag=SEAch3_spawn_timer4,scores={sea_4temp1=11}] positioned 90135 137 138 run function skyblock:sea/m/drowned_small
 execute as @s[tag=SEAch3_spawn_timer4,scores={sea_4temp1=11}] positioned 90135 137 138 run function skyblock:sea/m/drowned_small
 execute as @s[tag=SEAch3_spawn_timer4,scores={sea_4temp1=11}] positioned 90135 137 138 run function skyblock:sea/m/drowned_small
-execute as @s[tag=SEAch3_spawn_timer4,scores={sea_4temp1=11}] positioned 90135 137 138 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_small
+execute as @s[tag=SEAch3_spawn_timer4,scores={sea_4temp1=11}] positioned 90135 137 138 if score sea_player_count rng1 matches 3.. run function skyblock:sea/m/drowned_small

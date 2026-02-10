@@ -54,11 +54,11 @@ execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1038 run time set 
 
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1001 run fill 90131 131 118 90131 129 116 minecraft:waxed_oxidized_copper_grate
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1001 as @a[tag=SEAPT] at @s run playsound minecraft:entity.evoker.ambient hostile @s ~ ~ ~ 10 0.7
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1001 as @a[tag=SEAPT] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @s [{text:"诡谲的低吟：",color:"yellow",bold:1b},{text:"\n“甚好，终于到了。”",color:"white",bold: false}]
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1001 as @a[tag=SEAPT] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @s [{text:"诡谲的低吟：",color:"yellow",bold:1b},{text:"\n“甚好，所有人都到齐了。”",color:"white",bold: false}]
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1001 as @a[tag=SEAPT] at @s if score sea_player_count rng1 matches 1 run tellraw @s [{text:"诡谲的低吟：",color:"yellow",bold:1b},{text:"\n“甚好，终于到了。”",color:"white",bold: false}]
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1001 as @a[tag=SEAPT] at @s if score sea_player_count rng1 matches 2.. run tellraw @s [{text:"诡谲的低吟：",color:"yellow",bold:1b},{text:"\n“甚好，所有人都到齐了。”",color:"white",bold: false}]
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1023 as @a[tag=SEAPT] at @s run playsound minecraft:entity.evoker.ambient hostile @s ~ ~ ~ 10 0.7
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1023 as @a[tag=SEAPT] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @s [{text:"诡谲的低吟：",color:"yellow",bold:1b},{text:"\n“吾为汝准备了完美的坟墓，珍惜吾之恩赐。”",color:"white",bold: false}]
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1023 as @a[tag=SEAPT] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @s [{text:"诡谲的低吟：",color:"yellow",bold:1b},{text:"\n“吾为汝等准备了完美的坟墓，珍惜吾之恩赐。”",color:"white",bold: false}]
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1023 as @a[tag=SEAPT] at @s if score sea_player_count rng1 matches 1 run tellraw @s [{text:"诡谲的低吟：",color:"yellow",bold:1b},{text:"\n“吾为汝准备了完美的坟墓，珍惜吾之恩赐。”",color:"white",bold: false}]
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1023 as @a[tag=SEAPT] at @s if score sea_player_count rng1 matches 2.. run tellraw @s [{text:"诡谲的低吟：",color:"yellow",bold:1b},{text:"\n“吾为汝等准备了完美的坟墓，珍惜吾之恩赐。”",color:"white",bold: false}]
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1032 as @a[tag=SEAPT] at @s run playsound minecraft:entity.evoker.prepare_attack hostile @s ~ ~ ~ 10 0.9
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1032 as @e[tag=SEAeventi02slow2a] at @s run data modify entity @s NoAI set value false
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1032 as @e[tag=SEAeventi02slow2a] at @s run data modify entity @s Invulnerable set value false
@@ -73,18 +73,18 @@ execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1128 as @e[tag=SEA
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1128 as @e[tag=SEAeventi02slow2d] at @s run data modify entity @s Invulnerable set value false
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1196 positioned 90133 129 122 run function skyblock:sea/m/drowned_shield
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1196 positioned 90133 129 112 run function skyblock:sea/m/drowned_shield
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1197 positioned 90133 129 122 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_hat
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1197 positioned 90133 129 112 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_hat
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1195 positioned 90133 129 122 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/drowned_hat
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1195 positioned 90133 129 112 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/drowned_hat
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1195 positioned 90133 129 122 if entity @n[tag=sc,scores={sea_player=5..}] run function skyblock:sea/m/drowned_shield
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1195 positioned 90133 129 112 if entity @n[tag=sc,scores={sea_player=5..}] run function skyblock:sea/m/drowned_shield
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1197 positioned 90133 129 122 if score sea_player_count rng1 matches 3.. run function skyblock:sea/m/drowned_hat
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1197 positioned 90133 129 112 if score sea_player_count rng1 matches 3.. run function skyblock:sea/m/drowned_hat
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1195 positioned 90133 129 122 if score sea_player_count rng1 matches 4.. run function skyblock:sea/m/drowned_hat
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1195 positioned 90133 129 112 if score sea_player_count rng1 matches 4.. run function skyblock:sea/m/drowned_hat
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1195 positioned 90133 129 122 if score sea_player_count rng1 matches 5.. run function skyblock:sea/m/drowned_shield
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1195 positioned 90133 129 112 if score sea_player_count rng1 matches 5.. run function skyblock:sea/m/drowned_shield
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1196..1197 positioned 90133 129 122 run function skyblock:sea/m/drowned_small
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1196..1197 positioned 90133 129 112 run function skyblock:sea/m/drowned_small
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1195 positioned 90133 129 122 if entity @n[tag=sc,scores={sea_player=6..}] run function skyblock:sea/m/zombie_cook
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1195 positioned 90133 129 112 if entity @n[tag=sc,scores={sea_player=6..}] run function skyblock:sea/m/zombie_cook
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1195 positioned 90133 129 122 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/zombie_cook
-execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1195 positioned 90133 129 112 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/zombie_cook
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1195 positioned 90133 129 122 if score sea_player_count rng1 matches 6.. run function skyblock:sea/m/zombie_cook
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1195 positioned 90133 129 112 if score sea_player_count rng1 matches 6.. run function skyblock:sea/m/zombie_cook
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1195 positioned 90133 129 122 if score sea_player_count rng1 matches 4.. run function skyblock:sea/m/zombie_cook
+execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1195 positioned 90133 129 112 if score sea_player_count rng1 matches 4.. run function skyblock:sea/m/zombie_cook
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1198 run fill 90133 130 113 90133 129 113 minecraft:air destroy
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1198 run fill 90133 130 121 90133 129 121 minecraft:air destroy
 execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 1198 run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..4}] sea_progress 5

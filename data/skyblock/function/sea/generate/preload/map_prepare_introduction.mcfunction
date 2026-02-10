@@ -732,9 +732,9 @@ setblock 90136 100 136 lever[facing=east]
 execute positioned 90056 95 -177 positioned ~ ~-120 ~ run clone ~ ~ ~ ~8 ~18 ~31 ~ ~120 ~
 
 setblock 90061 103 -168 chest[facing=west]
-execute if entity @n[tag=sc,scores={sea_player=2..}] run item replace block 90061 103 -168 container.11 with baked_potato 3
+execute if score sea_player_count rng1 matches 2.. run item replace block 90061 103 -168 container.11 with baked_potato 3
 item replace block 90061 103 -168 container.13 with baked_potato 3
-execute if entity @n[tag=sc,scores={sea_player=4..}] run item replace block 90061 103 -168 container.15 with baked_potato 3
+execute if score sea_player_count rng1 matches 4.. run item replace block 90061 103 -168 container.15 with baked_potato 3
 
 execute positioned 90056 95 -177 positioned ~ ~ ~300 run fill ~ ~ ~ ~8 ~18 ~31 air
 execute positioned 90056 95 -177 positioned ~ ~ ~300 run fill ~ ~ ~ ~8 ~3 ~31 water

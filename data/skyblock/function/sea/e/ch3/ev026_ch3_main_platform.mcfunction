@@ -4,13 +4,13 @@ execute positioned 90111 145 103 run function skyblock:sea/m/skeleton
 execute positioned 90111 145 103 run function skyblock:sea/m/skeleton
 execute positioned 90135 137 124 run function skyblock:sea/m/pillager
 execute positioned 90135 137 124 run function skyblock:sea/m/pillager
-execute positioned 90135 137 124 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/pillager
+execute positioned 90135 137 124 if score sea_player_count rng1 matches 3.. run function skyblock:sea/m/pillager
 execute positioned 90135 137 124 run function skyblock:sea/m/silverfish_big
 execute positioned 90119 149 112 run function skyblock:sea/m/silverfish
 execute positioned 90119 149 112 run function skyblock:sea/m/silverfish
 execute positioned 90119 149 112 run function skyblock:sea/m/skeleton
 execute positioned 90087 137 147 run function skyblock:sea/m/silverfish_big
-execute positioned 90087 137 147 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/silverfish_big
+execute positioned 90087 137 147 if score sea_player_count rng1 matches 4.. run function skyblock:sea/m/silverfish_big
 execute positioned 90087 137 147 run function skyblock:sea/m/silverfish_big
 execute positioned 90077 137 146 run function skyblock:sea/m/zombie_security2
 execute positioned 90077 137 146 run function skyblock:sea/m/drowned_hat

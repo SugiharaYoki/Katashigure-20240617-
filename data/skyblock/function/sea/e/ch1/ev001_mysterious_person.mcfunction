@@ -11,9 +11,9 @@ execute positioned 90146 122 119 run function skyblock:sea/m/drowned_shield
 execute positioned 90146 122 118 run function skyblock:sea/m/drowned_shield
 execute positioned 90147 122 119 run function skyblock:sea/m/zombie_security
 execute positioned 90147 122 118 run function skyblock:sea/m/zombie_security
-execute if entity @n[tag=sc,scores={sea_player=3..}] positioned 90146 122 112 run function skyblock:sea/m/zombie_security
-execute if entity @n[tag=sc,scores={sea_player=2..}] positioned 90146 122 112 run function skyblock:sea/m/drowned
-execute if entity @n[tag=sc,scores={sea_player=4..}] positioned 90146 122 112 run function skyblock:sea/m/drowned
+execute if score sea_player_count rng1 matches 3.. positioned 90146 122 112 run function skyblock:sea/m/zombie_security
+execute if score sea_player_count rng1 matches 2.. positioned 90146 122 112 run function skyblock:sea/m/drowned
+execute if score sea_player_count rng1 matches 4.. positioned 90146 122 112 run function skyblock:sea/m/drowned
 
 
 

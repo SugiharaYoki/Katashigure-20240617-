@@ -1,15 +1,15 @@
 #
 
 
-execute store result score 10e959db-4b44-4cdd-b98c-350d3b454206 rng2 run random value 1..10
-execute as @a[tag=SEAPT,x=90076,y=121,z=136,distance=0..25] at @s if entity @n[tag=sc,scores={rng2=1}] run setblock 90078 125 137 minecraft:redstone_lamp[lit=true]
-execute as @a[tag=SEAPT,x=90076,y=121,z=136,distance=0..25] at @s if entity @n[tag=sc,scores={rng2=10}] run setblock 90078 125 137 minecraft:redstone_lamp[lit=false]
-#give @s copper_hoe[custom_name={text:"撬棍",italic:0b,color:"red"},custom_data={sea_crowbar:true}]
+execute store result score sea_chg_start_entrance_light_twinkle rng2 run random value 1..10
+execute if score sea_chg_start_entrance_light_twinkle rng2 matches 1 run setblock 90078 125 137 minecraft:redstone_lamp[lit=true]
+execute if score sea_chg_start_entrance_light_twinkle rng2 matches 10 run setblock 90078 125 137 minecraft:redstone_lamp[lit=false]
 
-execute as @e[type=zombie,tag=SEAknight,x=90000,y=100,z=100,distance=..3000] at @s if entity @a[tag=SEAPT,distance=0..8] run function skyblock:sea/p/knight
-execute as @e[type=zombie_horse,tag=SEAhorse,x=90000,y=100,z=100,distance=..3000] at @s if entity @a[tag=SEAPT,distance=0..8] run function skyblock:sea/p/horse
-execute as @e[type=bee,tag=SEAbee,x=90000,y=100,z=100,distance=..3000] at @s if entity @a[tag=SEAPT,distance=0..16] run function skyblock:sea/p/bee
-execute as @e[tag=SEAhorse_summoner,type=marker,x=90000,y=100,z=100,distance=..3000] at @s run function skyblock:sea/p/horse_summoner
+
+execute as @e[x=90000,y=100,z=0,distance=..6000] at @s run function skyblock:sea/controller/entity_controller_slow
+
+
+
 
 
 execute as 10e959db-4b44-4cdd-b98c-350d3b454206 unless entity @s[scores={sea_4temp1=-9999..}] run scoreboard players set @s sea_4temp1 -1
@@ -87,7 +87,7 @@ execute if block 90080 129 135 minecraft:waxed_oxidized_copper_bulb[lit=true] if
 execute if block 90088 128 114 air unless block 90088 129 115 air positioned 90088 128 117 run function skyblock:sea/e/chg/ch2_entrance_silverfish_path
 
 
-execute if entity @n[tag=sc,scores={sea_player=2..}] run function skyblock:sea/map_event_igeneral_multiplay
+execute if score sea_player_count rng1 matches 2.. run function skyblock:sea/map_event_igeneral_multiplay
 
 
 execute positioned 90092 145 135 if block 90093 145 137 air if entity @a[tag=SEAPT,distance=..4.6] unless entity @n[tag=SEAchg_spawn_timer_medical1,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAchg_spawn_timer","SEAchg_spawn_timer_medical1"]}

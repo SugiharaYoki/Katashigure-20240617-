@@ -50,8 +50,8 @@ execute as @s[scores={rng5=115}] at @n[tag=SEAyuehan] run playsound entity.villa
 execute as @s[scores={rng5=115}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] [{text:"越涵：",color:"green",bold:1b},{text:"\n“你就那么急着将我们的情况告知全世界吗？”",color:"white",bold: false}]
 
 execute as @s[scores={rng5=137}] at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
-execute as @s[scores={rng5=137}] at @n[tag=SEAedwina] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] [{text:"艾德雯娜：",color:"green",bold:1b},{text:"\n“那肯定并非如此。这里的事情决不能让外头知道。我想这也是为什么他们会派你的维修工朋友一个人过来。”",color:"white",bold: false}]
-execute as @s[scores={rng5=137}] at @n[tag=SEAedwina] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] [{text:"艾德雯娜：",color:"green",bold:1b},{text:"\n“那肯定并非如此。这里的事情决不能让外头知道。我想这也是为什么他们会派你的维修工朋友们过来，而不是特种部队。”",color:"white",bold: false}]
+execute as @s[scores={rng5=137}] at @n[tag=SEAedwina] if score sea_player_count rng1 matches 1 run tellraw @a[distance=0..250] [{text:"艾德雯娜：",color:"green",bold:1b},{text:"\n“那肯定并非如此。这里的事情决不能让外头知道。我想这也是为什么他们会派你的维修工朋友一个人过来。”",color:"white",bold: false}]
+execute as @s[scores={rng5=137}] at @n[tag=SEAedwina] if score sea_player_count rng1 matches 2.. run tellraw @a[distance=0..250] [{text:"艾德雯娜：",color:"green",bold:1b},{text:"\n“那肯定并非如此。这里的事情决不能让外头知道。我想这也是为什么他们会派你的维修工朋友们过来，而不是特种部队。”",color:"white",bold: false}]
 
 execute as @s[scores={rng5=155}] as @p[tag=SEAPT,scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..50] [{selector:"@s",color:"aqua"},{text:"：",color:"aqua",bold:1b},{text:"\n“我叫",color:"white"},{selector:"@s",color:"white"},{text:"，不是‘维修工’。”",color:"white"}]
 execute as @s[scores={rng5=163}] as @p[tag=SEAPT,scores={SEAPT_member=2}] at @s run tellraw @a[distance=0..50] [{selector:"@s",color:"aqua"},{text:"：",color:"aqua",bold:1b},{text:"\n“嗯，这里是",color:"white"},{selector:"@s",color:"white"},{text:"！现在被你打得浑身疼。”",color:"white"}]
@@ -64,11 +64,11 @@ execute if score @s rng6 matches 101 as @n[tag=SEAyuehan] at @s run tp @s 90164 
 execute if score @s rng6 matches 101 as @n[tag=SEAedwina] at @s run tp @s 90162 67 85 facing entity @p[tag=SEAPT]
 
 execute as @s[scores={rng5=215}] at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
-execute as @s[scores={rng5=215}] at @n[tag=SEAedwina] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] [{text:"艾德雯娜：",color:"green",bold:1b},{text:"\n“对不起，我下手一直很重，你能活着已经很了不起了。”",color:"white",bold: false}]
-execute as @s[scores={rng5=215}] at @n[tag=SEAedwina] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] [{text:"艾德雯娜：",color:"green",bold:1b},{text:"\n“对不起，我下手一直很重，你们能活着已经很了不起了。”",color:"white",bold: false}]
+execute as @s[scores={rng5=215}] at @n[tag=SEAedwina] if score sea_player_count rng1 matches 1 run tellraw @a[distance=0..250] [{text:"艾德雯娜：",color:"green",bold:1b},{text:"\n“对不起，我下手一直很重，你能活着已经很了不起了。”",color:"white",bold: false}]
+execute as @s[scores={rng5=215}] at @n[tag=SEAedwina] if score sea_player_count rng1 matches 2.. run tellraw @a[distance=0..250] [{text:"艾德雯娜：",color:"green",bold:1b},{text:"\n“对不起，我下手一直很重，你们能活着已经很了不起了。”",color:"white",bold: false}]
 
-execute as @s[scores={rng5=240}] if entity @n[tag=sc,scores={sea_player=1}] as @p[tag=SEAPT,scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..50] [{selector:"@s",color:"aqua"},{text:"：",color:"aqua",bold:1b},{text:"\n“那我还真的谢谢你啊。”",color:"white"}]
-execute as @s[scores={rng5=240}] if entity @n[tag=sc,scores={sea_player=2..}] as @p[tag=SEAPT,scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..50] [{selector:"@s",color:"aqua"},{text:"：",color:"aqua",bold:1b},{text:"\n“那我们还真的谢谢你啊。”",color:"white"}]
+execute as @s[scores={rng5=240}] if score sea_player_count rng1 matches 1 as @p[tag=SEAPT,scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..50] [{selector:"@s",color:"aqua"},{text:"：",color:"aqua",bold:1b},{text:"\n“那我还真的谢谢你啊。”",color:"white"}]
+execute as @s[scores={rng5=240}] if score sea_player_count rng1 matches 2.. as @p[tag=SEAPT,scores={SEAPT_member=1}] at @s run tellraw @a[distance=0..50] [{selector:"@s",color:"aqua"},{text:"：",color:"aqua",bold:1b},{text:"\n“那我们还真的谢谢你啊。”",color:"white"}]
 
 execute positioned 90164 76 88 if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5.5] run scoreboard players set @s[scores={rng6=..199}] rng6 200
 scoreboard players add @s[scores={rng6=200..289}] rng6 1
@@ -256,8 +256,8 @@ scoreboard players add @s[scores={rng6=1200..1500}] rng6 1
 
 execute if score @s rng6 matches 1202..1238 as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 execute if score @s rng6 matches 1202 at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score @s rng6 matches 1202 at @n[tag=SEAedwina] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..250] [{text:"艾德雯娜：",color:"green",bold:1b},{text:"\n“喂，……你一个人有问题吗？我要去救越涵。”",color:"white",bold: false}]
-execute if score @s rng6 matches 1202 at @n[tag=SEAedwina] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..250] [{text:"艾德雯娜：",color:"green",bold:1b},{text:"\n“喂，……你们没我陪同没问题吧？我要去救越涵。”",color:"white",bold: false}]
+execute if score @s rng6 matches 1202 at @n[tag=SEAedwina] if score sea_player_count rng1 matches 1 run tellraw @a[distance=0..250] [{text:"艾德雯娜：",color:"green",bold:1b},{text:"\n“喂，……你一个人有问题吗？我要去救越涵。”",color:"white",bold: false}]
+execute if score @s rng6 matches 1202 at @n[tag=SEAedwina] if score sea_player_count rng1 matches 2.. run tellraw @a[distance=0..250] [{text:"艾德雯娜：",color:"green",bold:1b},{text:"\n“喂，……你们没我陪同没问题吧？我要去救越涵。”",color:"white",bold: false}]
 
 execute if score @s rng6 matches 1222 unless entity @p[tag=SEAPT,scores={SEAPT_member=2..}] at @s run tellraw @a[distance=0..250] [{selector:"@p[tag=SEAPT,scores={SEAPT_member=1}]",color:"aqua"},{text:"：",color:"aqua",bold:1b},{text:"\n“没什么问题。越涵的话……”",color:"white"}]
 execute if score @s rng6 matches 1222 if entity @p[tag=SEAPT,scores={SEAPT_member=2..}] at @s run tellraw @a[distance=0..250] [{selector:"@p[tag=SEAPT,scores={SEAPT_member=1}]",color:"aqua"},{text:"：",color:"aqua",bold:1b},{text:"\n“还是我去吧、……”",color:"white"}]

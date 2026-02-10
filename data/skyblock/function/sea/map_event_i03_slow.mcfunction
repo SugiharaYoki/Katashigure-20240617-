@@ -38,7 +38,7 @@ execute positioned 90072 139 110 if entity @a[tag=SEAPT,distance=..43] unless en
 execute positioned 90100 137 100 if entity @a[tag=SEAPT,distance=..13,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/m/drowned_small
 execute positioned 90100 137 100 if entity @a[tag=SEAPT,distance=..13,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/m/drowned_small
 execute positioned 90100 137 100 if entity @a[tag=SEAPT,distance=..13,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/m/drowned_small
-execute positioned 90100 137 100 if entity @a[tag=SEAPT,distance=..13,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_small
+execute positioned 90100 137 100 if entity @a[tag=SEAPT,distance=..13,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] if score sea_player_count rng1 matches 3.. run function skyblock:sea/m/drowned_small
 execute positioned 90100 137 100 if entity @a[tag=SEAPT,distance=..13,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn"]}
 
 execute positioned 90089 137 94 if entity @a[tag=SEAPT,distance=..13,tag=!SEAPF] unless entity @n[tag=SEAch3_spawn,distance=0..3] run function skyblock:sea/m/zombie_cook

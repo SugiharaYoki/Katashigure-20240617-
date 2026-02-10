@@ -30,8 +30,8 @@ execute as @s[scores={sea_4temp2=6168}] at @n[tag=SEAframauros] as @p[tag=SEAPT]
 execute as @s[scores={sea_4temp2=6190}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
 execute as @s[scores={sea_4temp2=6190}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{text:"法莫洛斯：",color:"green",bold:1b},{text:"\n“是啊……还有多少人活着呢。\n他们才是……不幸运的那批人吧。”",color:"white",bold: false}]
 execute as @s[scores={sea_4temp2=6230}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
-execute as @s[scores={sea_4temp2=6230}] at @n[tag=SEAframauros] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[tag=SEAPT,distance=0.1..35] [{text:"法莫洛斯：",color:"red",bold:1b},{text:"\n“最后再……求你帮我两个忙吧，陌生人。”",color:"white",bold: false}]
-execute as @s[scores={sea_4temp2=6230}] at @n[tag=SEAframauros] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[tag=SEAPT,distance=0.1..35] [{text:"法莫洛斯：",color:"red",bold:1b},{text:"\n“最后再……求你们帮我两个忙吧，陌生人。”",color:"white",bold: false}]
+execute as @s[scores={sea_4temp2=6230}] at @n[tag=SEAframauros] if score sea_player_count rng1 matches 1 run tellraw @a[tag=SEAPT,distance=0.1..35] [{text:"法莫洛斯：",color:"red",bold:1b},{text:"\n“最后再……求你帮我两个忙吧，陌生人。”",color:"white",bold: false}]
+execute as @s[scores={sea_4temp2=6230}] at @n[tag=SEAframauros] if score sea_player_count rng1 matches 2.. run tellraw @a[tag=SEAPT,distance=0.1..35] [{text:"法莫洛斯：",color:"red",bold:1b},{text:"\n“最后再……求你们帮我两个忙吧，陌生人。”",color:"white",bold: false}]
 execute as @s[scores={sea_4temp2=6264}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
 execute as @s[scores={sea_4temp2=6264}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{text:"法莫洛斯：",color:"green",bold:1b},{text:"\n“上面一定还有活人……请代替我救他们。我已经没有……时间了。”",color:"white",bold: false}]
 execute as @s[scores={sea_4temp2=6304}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
@@ -42,8 +42,8 @@ execute as @s[scores={sea_4temp2=6334}] as @n[tag=SEAframauros] run data modify 
 
 
 execute as @s[scores={sea_4temp2=6434}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
-execute as @s[scores={sea_4temp2=6434}] at @n[tag=SEAframauros] if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[tag=SEAPT,distance=0.1..35] [{text:"法莫洛斯：",color:"red",bold:1b},{text:"\n“我知道这听上去很困难……但、只有你能做到了。拜托你……”",color:"white",bold: false}]
-execute as @s[scores={sea_4temp2=6434}] at @n[tag=SEAframauros] if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[tag=SEAPT,distance=0.1..35] [{text:"法莫洛斯：",color:"red",bold:1b},{text:"\n“我知道这听上去很困难……但、只有你们能做到了。拜托你们……”",color:"white",bold: false}]
+execute as @s[scores={sea_4temp2=6434}] at @n[tag=SEAframauros] if score sea_player_count rng1 matches 1 run tellraw @a[tag=SEAPT,distance=0.1..35] [{text:"法莫洛斯：",color:"red",bold:1b},{text:"\n“我知道这听上去很困难……但、只有你能做到了。拜托你……”",color:"white",bold: false}]
+execute as @s[scores={sea_4temp2=6434}] at @n[tag=SEAframauros] if score sea_player_count rng1 matches 2.. run tellraw @a[tag=SEAPT,distance=0.1..35] [{text:"法莫洛斯：",color:"red",bold:1b},{text:"\n“我知道这听上去很困难……但、只有你们能做到了。拜托你们……”",color:"white",bold: false}]
 execute as @s[scores={sea_4temp2=6534}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7
 execute as @s[scores={sea_4temp2=6534}] at @n[tag=SEAframauros] run tellraw @a[tag=SEAPT,distance=0.1..35] [{text:"法莫洛斯：",color:"green",bold:1b},{text:"\n“求求你……我没有多少时间了……”",color:"white",bold: false}]
 execute as @s[scores={sea_4temp2=6634}] at @n[tag=SEAframauros] run playsound entity.villager.ambient neutral @a ~ ~ ~ 0.8 0.7

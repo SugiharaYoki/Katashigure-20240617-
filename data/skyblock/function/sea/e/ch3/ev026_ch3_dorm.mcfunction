@@ -1,16 +1,16 @@
 
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90127 137 140 run function skyblock:sea/m/zombie_cook
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90126 137 140 run function skyblock:sea/m/zombie_cook
-execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90126 137 140 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/zombie_cook
+execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90126 137 140 if score sea_player_count rng1 matches 4.. run function skyblock:sea/m/zombie_cook
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90128 137 140 run function skyblock:sea/m/drowned_hat
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90127 137 141 run function skyblock:sea/m/drowned
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90126 137 141 run function skyblock:sea/m/drowned_maintenance
-execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90126 137 141 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/drowned_maintenance
+execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90126 137 141 if score sea_player_count rng1 matches 4.. run function skyblock:sea/m/drowned_maintenance
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90128 137 141 run function skyblock:sea/m/drowned_hat
-execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90127 137 139 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned_hat
+execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90127 137 139 if score sea_player_count rng1 matches 3.. run function skyblock:sea/m/drowned_hat
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90126 137 139 run function skyblock:sea/m/drowned_maintenance
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90128 137 139 run function skyblock:sea/m/drowned
-execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90128 137 144 if entity @n[tag=sc,scores={sea_player=2..}] run function skyblock:sea/m/drowned
+execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90128 137 144 if score sea_player_count rng1 matches 2.. run function skyblock:sea/m/drowned
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90127 137 144 run function skyblock:sea/m/drowned_maintenance
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 137 144 run function skyblock:sea/m/drowned
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90128 137 145 run function skyblock:sea/m/drowned_hat
@@ -21,32 +21,32 @@ execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90124 1
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90119 137 147 run function skyblock:sea/m/zombie_security2
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90119 137 147 run function skyblock:sea/m/zombie_security2
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90119 137 147 run function skyblock:sea/m/zombie_security2
-execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90119 137 147 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/zombie_security2
+execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90119 137 147 if score sea_player_count rng1 matches 3.. run function skyblock:sea/m/zombie_security2
 #二楼
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90117 143 149 run function skyblock:sea/m/skeleton
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90117 143 149 run function skyblock:sea/m/skeleton
-execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90117 143 149 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/skeleton
+execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90117 143 149 if score sea_player_count rng1 matches 3.. run function skyblock:sea/m/skeleton
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 143 143 run function skyblock:sea/m/drowned_shield
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 143 143 run function skyblock:sea/m/drowned_shield
-execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 143 143 if entity @n[tag=sc,scores={sea_player=2..}] run function skyblock:sea/m/drowned_shield
+execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 143 143 if score sea_player_count rng1 matches 2.. run function skyblock:sea/m/drowned_shield
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 143 143 run function skyblock:sea/m/drowned
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 143 143 run function skyblock:sea/m/drowned
-execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 143 143 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned
-execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 143 143 if entity @n[tag=sc,scores={sea_player=2..}] run function skyblock:sea/m/drowned
+execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 143 143 if score sea_player_count rng1 matches 3.. run function skyblock:sea/m/drowned
+execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 143 143 if score sea_player_count rng1 matches 2.. run function skyblock:sea/m/drowned
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 143 143 run function skyblock:sea/m/spider
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90129 143 143 run function skyblock:sea/m/spider
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90124 143 140 run function skyblock:sea/m/drowned_hat
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90124 143 140 run function skyblock:sea/m/drowned
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90124 143 140 run function skyblock:sea/m/drowned
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90124 143 140 run function skyblock:sea/m/drowned
-execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90130 143 149 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/silverfish
-execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90130 143 149 if entity @n[tag=sc,scores={sea_player=4..}] run function skyblock:sea/m/silverfish
+execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90130 143 149 if score sea_player_count rng1 matches 4.. run function skyblock:sea/m/silverfish
+execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90130 143 149 if score sea_player_count rng1 matches 4.. run function skyblock:sea/m/silverfish
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90130 143 149 run function skyblock:sea/m/silverfish
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90130 143 149 run function skyblock:sea/m/silverfish
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90130 143 149 run function skyblock:sea/m/silverfish
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90123 143 150 run function skyblock:sea/m/drowned
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90123 143 150 run function skyblock:sea/m/drowned
-execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90123 143 150 if entity @n[tag=sc,scores={sea_player=3..}] run function skyblock:sea/m/drowned
+execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=20}] positioned 90123 143 150 if score sea_player_count rng1 matches 3.. run function skyblock:sea/m/drowned
 
 
 execute as @s[tag=SEAch3_spawn_timer6,scores={sea_4temp1=1}] run scoreboard players set @a[tag=SEAPT,scores={sea_progress=..6}] sea_progress 7

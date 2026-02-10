@@ -92,8 +92,8 @@ execute if score SEA_ch5_event_engineering_fiona rng7 matches 3 as @n[tag=SEAfio
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar set minecraft:9066601 players @a[tag=SEAPT]
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar set minecraft:9066601 style progress
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar set minecraft:9066601 max 100
-execute if score SEA_ch5_event_engineering_fiona rng7 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold:1b},{text:"\n“就是这里，给我点时间，保护好我！”",color:"white",bold: false}]
-execute if score SEA_ch5_event_engineering_fiona rng7 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold:1b},{text:"\n“就是这里，给我点时间，来一个人保护好我！”",color:"white",bold: false}]
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score sea_player_count rng1 matches 1 run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold:1b},{text:"\n“就是这里，给我点时间，保护好我！”",color:"white",bold: false}]
+execute if score SEA_ch5_event_engineering_fiona rng7 matches 3 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score sea_player_count rng1 matches 2.. run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold:1b},{text:"\n“就是这里，给我点时间，来一个人保护好我！”",color:"white",bold: false}]
 
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 20 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar set minecraft:9066601 value 5
 execute if score SEA_ch5_event_engineering_fiona rng7 matches 40 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run bossbar set minecraft:9066601 value 15
@@ -138,8 +138,8 @@ execute if score SEA_ch5_event_engineering_fiona rng1 matches 254 as @n[tag=SEAf
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 254 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold:1b},{text:"\n“你想耗到什么时候？快去西边那间控制室！”",color:"white",bold: false}]
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 314 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run playsound entity.wandering_trader.ambient neutral @a ~ ~ ~ 1 1.3
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 314 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @n[tag=sc,scores={sea_player=1}] run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold:1b},{text:"\n“我摊上你也真是倒大霉了……”",color:"white",bold: false}]
-execute if score SEA_ch5_event_engineering_fiona rng1 matches 314 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if entity @n[tag=sc,scores={sea_player=2..}] run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold:1b},{text:"\n“我摊上你们也真是倒大霉了……”",color:"white",bold: false}]
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 314 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score sea_player_count rng1 matches 1 run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold:1b},{text:"\n“我摊上你也真是倒大霉了……”",color:"white",bold: false}]
+execute if score SEA_ch5_event_engineering_fiona rng1 matches 314 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s if score sea_player_count rng1 matches 2.. run tellraw @a[distance=0..200] [{text:"菲尔娜：",color:"green",bold:1b},{text:"\n“我摊上你们也真是倒大霉了……”",color:"white",bold: false}]
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 314 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s run scoreboard players remove SEA_ch5_event_fiona_favor rng1 2
 
 execute if score SEA_ch5_event_engineering_fiona rng1 matches 330 as @n[tag=SEAfiona,x=90000,y=100,z=0,distance=0..1200] at @s as @p[tag=SEAPT] run tellraw @a[distance=0..250] [{selector:"@s",color:"aqua"},{text:"：",color:"aqua",bold:1b},{text:"\n“啊？怎么了？”",color:"white"}]
