@@ -13,7 +13,7 @@ execute if score seact rng1 matches 5 run scoreboard players set seact rng1 0
 
 
 scoreboard players add seact rng2 1
-execute if score seact rng2 matches 20 run function skyblock:sea/core1
+#execute if score seact rng2 matches 20 run function skyblock:sea/core1
 execute if score seact rng2 matches 20 run scoreboard players set seact rng2 0
 
 
