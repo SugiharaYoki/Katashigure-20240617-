@@ -2,7 +2,7 @@
 execute store result score sea_player_count rng1 run execute if entity @a[tag=SEAPT]
 
 
-#execute if score sea_player_count rng1 matches 1.. run function skyblock:sea/map_event_igeneral_slow
+execute if score sea_player_count rng1 matches 1.. run function skyblock:sea/map_event_igeneral_slow
 execute if score sea_player_count rng1 matches 1.. unless block 90062 103 135 grindstone run function skyblock:sea/map_event_i01_slow
 execute if score sea_player_count rng1 matches 1.. if block 90062 103 135 grindstone unless block 90075 103 141 minecraft:cauldron run function skyblock:sea/map_event_i02_slow
 execute if score sea_player_count rng1 matches 1.. if block 90075 103 141 minecraft:cauldron unless block 90074 103 137 scaffolding run function skyblock:sea/map_event_i03_slow

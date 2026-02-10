@@ -10,36 +10,13 @@ execute as @e[x=90000,y=100,z=0,distance=..6000] at @s run function skyblock:sea
 
 
 
+execute positioned 0 0 0 as @n[tag=sc] at @s run function skyblock:sea/map_event_igeneral_slow_sc_rely
 
-
-execute as 10e959db-4b44-4cdd-b98c-350d3b454206 unless entity @s[scores={sea_4temp1=-9999..}] run scoreboard players set @s sea_4temp1 -1
-execute as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=-1..4}] run scoreboard players add @s sea_4temp1 1
-execute as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=1}] run setblock 90084 122 139 air
-execute as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=2}] run setblock 90084 123 139 air
-execute as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=3}] run setblock 90084 124 139 air
-execute as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=1}] run playsound minecraft:block.iron_door.open ambient @a 90084 124 139 4 0.3
-execute as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=2}] run playsound minecraft:block.iron_door.open ambient @a 90084 124 139 4 0.3
-execute as @n[tag=sc,tag=sea_cb001,scores={sea_4temp1=3}] run playsound minecraft:block.iron_door.open ambient @a 90084 124 139 4 0.3
-execute as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=7..10}] run scoreboard players add @s sea_4temp1 1
-execute as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=8}] run setblock 90084 124 139 iron_bars
-execute as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=9}] run setblock 90084 123 139 iron_bars
-execute as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=10}] run setblock 90084 122 139 iron_bars
-execute as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=8}] run playsound minecraft:block.iron_door.open ambient @a 90084 124 139 4 0.3
-execute as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=9}] run playsound minecraft:block.iron_door.open ambient @a 90084 124 139 4 0.3
-execute as @n[tag=sc,tag=sea_cb002,scores={sea_4temp1=10}] run playsound minecraft:block.iron_door.open ambient @a 90084 124 139 4 0.3
 
 
 execute as @e[type=interaction,x=90000,y=100,z=100,distance=..5000] at @s run function skyblock:sea/p/interaction
 
 #particle minecraft:trial_spawner_detection_ominous 90117.90 127.00 137.01 2 0 2 0.0 30
-execute as @n[tag=sc,scores={sea_4temp1=50..60}] run scoreboard players add @s sea_4temp1 1
-execute if block 90118 123 134 lever[powered=true,facing=east] run scoreboard players set @n[tag=sc,scores={sea_4temp1=..49}] sea_4temp1 50
-execute as @n[tag=sc,scores={sea_4temp1=51}] run fill 90114 122 133 90114 122 132 air
-execute as @n[tag=sc,scores={sea_4temp1=53}] run fill 90114 123 133 90114 123 132 air
-execute as @n[tag=sc,scores={sea_4temp1=55}] run fill 90114 124 133 90114 124 132 air
-execute as @n[tag=sc,scores={sea_4temp1=51}] run playsound minecraft:block.iron_door.open ambient @a 90114 125 132 4 0.3
-execute as @n[tag=sc,scores={sea_4temp1=53}] run playsound minecraft:block.iron_door.open ambient @a 90114 125 132 4 0.3
-execute as @n[tag=sc,scores={sea_4temp1=55}] run playsound minecraft:block.iron_door.open ambient @a 90114 125 132 4 0.3
 
 execute if block 90111 122 143 lever[powered=false] if block 90110 122 143 lever[powered=true] if block 90109 122 143 lever[powered=true] if block 90108 122 143 lever[powered=false] run setblock 90118 122 142 minecraft:redstone_block
 
@@ -131,9 +108,6 @@ execute if block 90115 152 127 bamboo_button[powered=true] run fill 90115 150 12
 execute if block 90093 146 153 bamboo_button[powered=true] run fill 90092 144 154 90092 137 154 ladder[facing=west]
 
 
-execute as @e[tag=SEAmob_carrybomb,x=90000,y=0,z=0,distance=..3000,type=zombie] at @s if entity @s[nbt=!{Fire:-1s}] run kill @s
-
-execute as @e[type=silverfish,tag=SEAmob,x=90000,y=0,z=0,distance=..3000,nbt=!{Fire:-1s}] run function skyblock:sea/p/silverfish
 
 #ch4激光
 execute if block 90074 103 137 scaffolding unless block 90074 103 136 lectern as @e[x=90184.0,dx=3.8,y=20.65,dy=0,z=96.50,dz=0] run damage @s 3 sting
@@ -168,4 +142,3 @@ execute if score SEA_chg_true_end sea_4temp1 matches 1..100 positioned 90093 131
 execute positioned 90102 149 131 if entity @a[tag=SEAPT,distance=..3.5,tag=!SEAPF] unless block 90102 150 130 air run function skyblock:sea/e/ch3/ev026_ch3_dorm_ston
 
 
-execute as @n[type=villager,tag=SEAfiona_actable,tag=SEAfiona] at @s run function skyblock:sea/e/ch6/fiona/core

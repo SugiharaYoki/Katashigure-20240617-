@@ -17,6 +17,9 @@ execute as @s[type=endermite,scores={rng1=1..5}] at @s run playsound minecraft:e
 execute as @s[type=endermite,scores={rng1=6..8}] at @s as @a[tag=SEAPT,distance=0..5.5] at @s run playsound ambient.basalt_deltas.additions hostile @a ~ ~ ~ 1.3 1.5
 
 
+
+
+
 #艾德雯娜技能组
 execute as @s[tag=!SEAedwina_ch6_end,tag=SEAedwina_ch6,tag=!SEAedwina_run] at @s run function skyblock:sea/e/ch6/edwina/core
 execute as @s[tag=!SEAedwina_ch6_end,tag=SEAedwina_ch6,tag=SEAedwina_run] at @s run function skyblock:sea/e/ch6/edwina/core_run

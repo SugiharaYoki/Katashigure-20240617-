@@ -7,4 +7,8 @@ execute as @s[tag=SEAhorse_summoner,type=marker] at @s run function skyblock:sea
 
 
 
+execute as @s[tag=SEAmob_carrybomb,type=zombie] at @s if entity @s[nbt=!{Fire:-1s}] run kill @s
+execute as @s[type=silverfish,nbt=!{Fire:-1s}] run function skyblock:sea/p/silverfish
 
+
+execute as @s[type=villager,tag=SEAfiona_actable,tag=SEAfiona] at @s run function skyblock:sea/e/ch6/fiona/core
