@@ -4,7 +4,7 @@ execute if block 90062 103 135 grindstone unless block 90075 103 141 minecraft:c
 #execute unless block 900795 103 141 minecraft:cauldron if entity @a[tag=SEAPT] if entity @n[tag=sc,tag=SeGa_sea_ch3] run function skyblock:sea/map_event_i03
 
 scoreboard players add seact rng1 1
-execute if score seact rng1 matches 5 run function skyblock:sea/core4
+#execute if score seact rng1 matches 5 run function skyblock:sea/core4
 execute if score seact rng1 matches 1 as @a[tag=SEAPT,tag=!SEAPT_EVEN] at @s run function skyblock:sea/p/player_skills
 execute if score seact rng1 matches 2 as @a[tag=SEAPT,tag=!SEAPT_EVEN] at @s run function skyblock:sea/p/player
 execute if score seact rng1 matches 3 as @a[tag=SEAPT,tag=SEAPT_EVEN] at @s run function skyblock:sea/p/player_skills
