@@ -4,10 +4,10 @@ execute store result score sea rng1 run random value 1..10
 execute if score sea rng1 matches 1..4 run particle minecraft:electric_spark 90109.07 123.43 120.69 0.2 0.2 0.2 0.05 1
 execute if score sea rng1 matches 1..4 run particle minecraft:electric_spark 90115.88 123.41 138.48 0.2 0.2 0.2 0.05 1
 
-execute as @e[x=90000,y=100,z=0,distance=..6000] at @s run function skyblock:sea/controller/entity_controller
+#execute as @e[x=90000,y=100,z=0,distance=..6000] at @s run function skyblock:sea/controller/entity_controller
 function skyblock:sea/p/visioner
 
-execute as @a[tag=SEAPT,x=90000,y=100,z=0,distance=..6000] at @s run function skyblock:sea/controller/player_controller
+#execute as @a[tag=SEAPT,x=90000,y=100,z=0,distance=..6000] at @s run function skyblock:sea/controller/player_controller
 
 
 
