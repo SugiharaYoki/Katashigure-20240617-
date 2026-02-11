@@ -533,7 +533,8 @@ setblock -79857 40 -97 air
 setblock -79857 40 -102 waxed_exposed_copper_chest[facing=south]
 item replace block -79857 40 -102 container.13 with iron_ingot 1
 
-
+  #第三章开放的路阻
+fill -79886 31 -66 -79886 35 -65 basalt
 
 
 #静熄之火

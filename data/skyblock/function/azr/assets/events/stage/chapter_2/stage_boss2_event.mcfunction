@@ -202,6 +202,7 @@ execute if score stage_main_thread AzrTimerStack matches 1482 run scoreboard pla
 execute if score stage_main_thread AzrTimerStack matches 2001 run bossbar remove azr:boss_hp_bar
 execute if score stage_main_thread AzrTimerStack matches 2001 run fill -79902 41 0 -79904 38 0 air destroy
 execute if score stage_main_thread AzrTimerStack matches 2001 run fill -79927 38 -13 -79927 42 -16 air destroy
+execute if score stage_main_thread AzrTimerStack matches 2001 run fill -79886 31 -66 -79886 35 -65 air
 #effect & sound
 execute if score stage_main_thread AzrTimerStack matches 2001 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 2001 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000

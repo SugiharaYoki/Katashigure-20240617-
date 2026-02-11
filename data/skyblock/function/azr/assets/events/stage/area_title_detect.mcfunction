@@ -31,6 +31,8 @@ execute unless score @s AzrPlayer_CurrentArea matches 5 if entity @s[x=-79923,y=
                                                 {area_id:5,title:"逾 怜 藓 路",color_code:"#035e01"}
 execute unless score @s AzrPlayer_CurrentArea matches 5 if entity @s[x=-79943,y=27,z=13,dx=5,dy=3,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:5,title:"逾 怜 藓 路",color_code:"#035e01"}
+execute unless score @s AzrPlayer_CurrentArea matches 5 if entity @s[x=-79845,y=24,z=-37,dx=12,dy=5,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:5,title:"逾 怜 藓 路",color_code:"#035e01"}
 
 execute unless score @s AzrPlayer_CurrentArea matches 2 if entity @s[x=-79934,y=18,z=132,dx=20,dy=40,dz=22] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:2,title:"采 光 礼 堂",color_code:"#9ef4ff"}
@@ -61,6 +63,8 @@ execute unless score @s AzrPlayer_CurrentArea matches 6 if entity @s[x=-79895,y=
                                                 {area_id:6,title:"晦 怨 囚 牢",color_code:"#987bff"}
 
 execute unless score @s AzrPlayer_CurrentArea matches 7 if entity @s[x=-79897,y=33,z=-56,dx=5,dy=3,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:7,title:"蚀 岩 径",color_code:"#e4964d"}
+execute unless score @s AzrPlayer_CurrentArea matches 7 if entity @s[x=-79846,y=25,z=-57,dx=16,dy=12,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:7,title:"蚀 岩 径",color_code:"#e4964d"}
 
 
