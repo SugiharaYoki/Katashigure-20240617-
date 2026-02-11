@@ -10,12 +10,12 @@ execute as @a[tag=SEAPT,predicate=!skyblock:sneaking] at @s run scoreboard playe
 execute as @a[tag=SEAPT] at @s run tag @s remove SEAboss4_sneaked
 execute as @a[tag=SEAPT,scores={SEA_sneaking_time=1..10}] at @s run tag @s add SEAboss4_sneaked
 
-say hi
-execute as @n[tag=SEAboss4] at @s run function skyblock:sea/e/ch4/boss/ev023_boss4_fast_entity_controller
+
+execute as @n[tag=SEAboss4] at @s run function skyblock:sea/e/ch4/ev023_boss4_fast_entity_controller
 
 
 execute unless entity @n[tag=SEAboss4_end] run scoreboard players add SEAmusic rng1 1
-execute if score SEAmusic rng1 matches 3500 as @a[tag=SEAPT] at @s as @a[tag=SEAPT] at @s run playsound minecraft:app2.astrum music @s ~ ~ ~ 1 1
+execute if score SEAmusic rng1 matches 3500 as @a[tag=SEAPT] at @s run playsound minecraft:app2.astrum music @s ~ ~ ~ 1 1
 execute if score SEAmusic rng1 matches 3500 as @r[tag=SEAPT] at @s positioned 90185 56 61 as @a[gamemode=spectator,distance=0..250] run playsound minecraft:app2.astrum music @s ~ ~ ~ 1 1
 execute if score SEAmusic rng1 matches 3500.. run scoreboard players set SEAmusic rng1 0
 
@@ -23,7 +23,6 @@ execute as @s[scores={sea_4temp1=1}] run function skyblock:sea/e/ch4/boss/_init_
 execute as @s[scores={sea_4temp1=1..}] run execute store result bossbar minecraft:9066601 value run data get entity @n[tag=SEAboss4] Health
 execute as @s[scores={sea_4temp1=1..}] run execute store result score @n[tag=SEAboss4] health run data get entity @n[tag=SEAboss4] Health
 
-execute store result score @n[tag=SEAboss4] rng1 run random value 1..3
 
 
 execute store result score SEAboss4_killed rng1 run random value 1..3
