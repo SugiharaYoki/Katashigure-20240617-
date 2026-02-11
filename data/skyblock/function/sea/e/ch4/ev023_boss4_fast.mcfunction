@@ -10,7 +10,7 @@ execute as @a[tag=SEAPT,predicate=!skyblock:sneaking] at @s run scoreboard playe
 execute as @a[tag=SEAPT] at @s run tag @s remove SEAboss4_sneaked
 execute as @a[tag=SEAPT,scores={SEA_sneaking_time=1..10}] at @s run tag @s add SEAboss4_sneaked
 
-
+say hi
 execute as @n[tag=SEAboss4] at @s run function skyblock:sea/e/ch4/boss/ev023_boss4_fast_entity_controller
 
 

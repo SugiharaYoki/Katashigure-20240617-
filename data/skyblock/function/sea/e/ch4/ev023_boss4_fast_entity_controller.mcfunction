@@ -11,7 +11,7 @@ execute as @s[tag=SEAboss4_dodgemine,scores={rng3=2}] at @s positioned 0.0 0 0.0
 execute as @s[tag=SEAboss4_dodgemine,scores={rng3=3}] at @s positioned 0.0 0 0.0 run summon marker ^0.7 ^0.12 ^-0.9 {Tags:["SEA_boss4_marker"]}
 execute as @s[tag=SEAboss4_dodgemine,scores={rng3=1..3}] at @s run data modify entity @n[tag=SEAboss4_dodgemine] Motion set from entity @n[type=marker,tag=SEA_boss4_marker] Pos
 execute as @s[tag=SEAboss4_dodgemine,scores={rng3=1..3}] at @s run kill @e[type=marker,tag=SEA_boss4_marker]
-execute as @n[tag=SEAboss4] run tag @s remove SEAboss4_dodgemine
+execute as @s run tag @s remove SEAboss4_dodgemine
 
 execute as @s[nbt={OnGround:1b},tag=!SEAboss4_attack_dashheavy,tag=!SEAboss4_eat,tag=!SEAboss4_spectral_arrow1] at @s run tp @s ~ ~ ~ facing entity @p[tag=SEAPT]
 
