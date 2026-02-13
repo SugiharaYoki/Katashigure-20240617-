@@ -9,4 +9,4 @@ execute as @a[tag=azrPlayer,distance=..4] at @s unless items entity @s container
 
 
 
-execute if score @s rng1 matches 60.. run kill @
+execute if score @s rng1 matches 60.. run kill @s
