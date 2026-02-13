@@ -11,14 +11,14 @@ execute unless entity @s[x=-79931,y=100,z=0,distance=..10000] run tp @s @p[tag=a
 execute if items entity @s weapon.mainhand tripwire_hook at @s anchored eyes run function skyblock:azr/system/player/unlock_chest
 
 #沼泽中毒
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~0.2 water run effect give @s poison 2 1 false
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~-0.2 water run effect give @s poison 2 1 false
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~0.2 ~0.22 ~ water run effect give @s poison 2 1 false
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~-0.2 ~0.22 ~ water run effect give @s poison 2 1 false
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~0.2 water run damage @s 2 generic
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~-0.2 water run damage @s 2 generic
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~0.2 ~0.22 ~ water run damage @s 2 generic
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~-0.2 ~0.22 ~ water run damage @s 2 generic
+execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~0.20 water unless items entity @s hotbar.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run effect give @s poison 2 1 false
+execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~-0.2 water unless items entity @s hotbar.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run effect give @s poison 2 1 false
+execute if score @s AzrPlayer_CurrentArea matches 7 if block ~0.20 ~0.22 ~ water unless items entity @s hotbar.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run effect give @s poison 2 1 false
+execute if score @s AzrPlayer_CurrentArea matches 7 if block ~-0.2 ~0.22 ~ water unless items entity @s hotbar.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run effect give @s poison 2 1 false
+execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~0.20 water unless items entity @s container.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run damage @s 2 generic
+execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~-0.2 water unless items entity @s container.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run damage @s 2 generic
+execute if score @s AzrPlayer_CurrentArea matches 7 if block ~0.20 ~0.22 ~ water unless items entity @s container.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run damage @s 2 generic
+execute if score @s AzrPlayer_CurrentArea matches 7 if block ~-0.2 ~0.22 ~ water unless items entity @s container.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run damage @s 2 generic
 
 #打印剧情
 execute if items entity @s container.* skull_banner_pattern run tellraw @a[tag=azrShowDialog] [{selector:"@s"},{text:"解锁了剧情"}]
