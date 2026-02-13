@@ -58,19 +58,20 @@ execute if score @s rng1 matches 2040 run scoreboard players set @s rng1 49
 
 execute if score @s rng1 matches 3002 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 3002 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“最近这里的一些骸骨身上长出了重金属蘑菇。”",color:"white"}]
-execute if score @s rng1 matches 3002 positioned -79837 13 -62 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_bogged_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng1 matches 3002 positioned -79860 29 -58 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_bogged_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng1 matches 3002 positioned -79823 29 -59 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_bogged_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s[tag=!azrPlayer_dialogchoice_started_30107] rng1 matches 3002 positioned -79837 13 -62 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_bogged_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s[tag=!azrPlayer_dialogchoice_started_30107] rng1 matches 3002 positioned -79860 29 -58 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_bogged_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s[tag=!azrPlayer_dialogchoice_started_30107] rng1 matches 3002 positioned -79823 29 -59 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_bogged_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 3013 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 3013 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“我试着杀了一只，但它们可是有一大群。我对此可没办法！”",color:"white"}]
 execute if score @s rng1 matches 3024 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 3024 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“这些东西会把蘑菇的孢子散得到处都是，给我的器械全给搞坏。”",color:"white"}]
 execute if score @s rng1 matches 3035 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 3035 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“一想到这些，我可就没心思开工咯。现在的货我都是屯着自己用，在事情解决前我不想做任何事。”",color:"white"}]
-execute if score @s rng1 matches 3035 positioned -79837 13 -62 as @n[tag=AzrielMob_skeleton_bogged_sword,distance=..15] run tag @s add azrPlayer_dialogchoice_requiredtarget_30107
-execute if score @s rng1 matches 3035 positioned -79860 29 -58 as @n[tag=AzrielMob_skeleton_bogged_sword,distance=..15] run tag @s add azrPlayer_dialogchoice_requiredtarget_30107
-execute if score @s rng1 matches 3035 positioned -79823 29 -59 as @n[tag=AzrielMob_skeleton_bogged_sword,distance=..15] run tag @s add azrPlayer_dialogchoice_requiredtarget_30107
+execute if score @s[tag=!azrPlayer_dialogchoice_started_30107] rng1 matches 3035 positioned -79837 13 -62 as @n[tag=AzrielMob_skeleton_bogged_sword,distance=..15] run tag @s add azrPlayer_dialogchoice_requiredtarget_30107
+execute if score @s[tag=!azrPlayer_dialogchoice_started_30107] rng1 matches 3035 positioned -79860 29 -58 as @n[tag=AzrielMob_skeleton_bogged_sword,distance=..15] run tag @s add azrPlayer_dialogchoice_requiredtarget_30107
+execute if score @s[tag=!azrPlayer_dialogchoice_started_30107] rng1 matches 3035 positioned -79823 29 -59 as @n[tag=AzrielMob_skeleton_bogged_sword,distance=..15] run tag @s add azrPlayer_dialogchoice_requiredtarget_30107
 
+execute if score @s rng1 matches 3040 run tag @s add azrPlayer_dialogchoice_started_30107
 execute if score @s rng1 matches 3040 run tag @a[tag=azrPlayer] remove azrPlayer_dialogchoice_revealed_301
 execute if score @s rng1 matches 3040 run tag @a[tag=azrPlayer] add azrPlayer_dialogchoice_unlocked_30107
 execute if score @s rng1 matches 3040 run scoreboard players set @s rng1 3549
