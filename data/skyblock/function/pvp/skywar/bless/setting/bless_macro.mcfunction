@@ -15,7 +15,7 @@ $data modify storage skywar:bless_equip description set value $(description)
 $data modify storage skywar:bless_equip id set value $(id)
 $data modify storage skywar:bless_equip idsh set value $(idsh)
 
-scoreboard players set @s rng1 $(id)
+$scoreboard players set @s rng1 $(id)
 
 $execute at @n[tag=id_data_reading,type=marker] if items block ~$(pos) ~ ~ container.$(idloop) green_wool run function skyblock:pvp/skywar/bless/setting/bless_macro_result with storage skywar:bless_equip
 $execute at @n[tag=id_data_reading,type=marker] unless items block ~$(pos) ~ ~ container.$(idloop) green_wool run function skyblock:pvp/skywar/bless/setting/bless_macro_yet with storage skywar:bless_equip
