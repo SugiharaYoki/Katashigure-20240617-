@@ -66,7 +66,7 @@ execute if score @s rng1 matches 3500..6000 as @p[distance=0..5.5,tag=azrPlayer,
 execute if score @s rng1 matches 3500..6000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tag @s add azrPlayer_dialogchoice_revealed_301
 execute if score @s rng1 matches 3551 run scoreboard players set @s rng1 3549
 execute if score @s rng1 matches 3500..6000 as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_301] run tag @s remove azrPlayer_dialogchoice_revealed_301
-execute if score @s rng1 matches 3500..6000 unless @a[distance=0..5.5,tag=azrPlayer] run scoreboard players set @s rng1 49
+execute if score @s rng1 matches 3500..6000 unless entity @a[distance=0..5.5,tag=azrPlayer] run scoreboard players set @s rng1 49
 
 execute if score @s rng1 matches 4002 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 4002 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“哈哈哈，想必你提到的是我的弟弟。”",color:"white"}]
