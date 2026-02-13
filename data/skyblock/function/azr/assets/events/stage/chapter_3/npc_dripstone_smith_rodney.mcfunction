@@ -13,12 +13,14 @@ execute if score @s rng1 matches 44 if entity @a[tag=!azrPlayer_dialogchoice_unl
 execute if score @s rng1 matches 44 unless entity @a[tag=!azrPlayer_dialogchoice_unlocked_30108] run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“要是你不想买这些货，就像聊聊天，那也没问题，哈哈哈！”",color:"white"}]
 
 
-execute if score @s rng1 matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tellraw @s [{text:" - "},{text:"询问：你是谁？  ",color:"yellow"},{text:"〈◆〉",bold:1b,color:"#ffe28b",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30101"}}]
-execute if score @s rng1 matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tellraw @s [{text:" - "},{text:"询问：我该怎么走？  ",color:"yellow"},{text:"〈◆〉",bold:1b,color:"#ffe28b",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30102"}}]
-execute if score @s rng1 matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301,tag=!azrPlayer_dialogchoice_unlocked_30107,tag=!azrPlayer_dialogchoice_unlocked_30108] run tellraw @s [{text:" - "},{text:"询问：为什么不卖货给我？  ",color:"yellow"},{text:"〈◆〉",bold:1b,color:"#ffc516",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30103"}}]
-execute if score @s rng1 matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301,tag=azrPlayer_dialogchoice_unlocked_30107,tag=!azrPlayer_dialogchoice_unlocked_30108] if entity @n[tag=azrPlayer_dialogchoice_requiredtarget_30107,distance..200] run tellraw @s [{text:" - "},{text:"询问：你是为什么不卖货给我来着？  ",color:"yellow"},{text:"〈◆〉",bold:1b,color:"#ffe28b",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30103"}}]
-execute if score @s rng1 matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301,tag=azrPlayer_dialogchoice_unlocked_30107,tag=!azrPlayer_dialogchoice_unlocked_30108] unless entity @n[tag=azrPlayer_dialogchoice_requiredtarget_30107,distance..200] run tellraw @s [{text:" - "},{text:"交付：我把那些蘑菇骸骨解决了。  ",color:"yellow"},{text:"〈◆〉",bold:1b,color:"#ffc516",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30107"}}]
-execute if score @s rng1 matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tellraw @s[tag=azrPlayer_dialogchoice_unlocked_30104] [{text:" - "},{text:"讨论：有关钓师威弗列德……  ",color:"yellow"},{text:"〈◆〉",bold:1b,color:"#ffe28b",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30104"}}]
+execute if score @s rng1 matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301,tag=azrPlayer,tag=azrPlayer_dialogchoice_unlocked_30108] run tellraw @s [{text:" - "},{text:"交易：让我看看你的货。  ",color:"#c4ffbd"},{text:"〈◆〉",bold:1b,color:"#72ff62",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30108"}}]
+
+execute if score @s rng1 matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tellraw @s [{text:" - "},{text:"询问：你是谁？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30101"}}]
+execute if score @s rng1 matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tellraw @s [{text:" - "},{text:"询问：我该怎么走？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30102"}}]
+execute if score @s rng1 matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301,tag=!azrPlayer_dialogchoice_unlocked_30107,tag=!azrPlayer_dialogchoice_unlocked_30108] run tellraw @s [{text:" - "},{text:"询问：为什么不卖货给我？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ff893f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30103"}}]
+execute if score @s rng1 matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301,tag=azrPlayer_dialogchoice_unlocked_30107,tag=!azrPlayer_dialogchoice_unlocked_30108] if entity @n[tag=azrPlayer_dialogchoice_requiredtarget_30107,distance..200] run tellraw @s [{text:" - "},{text:"询问：你是为什么不卖货给我来着？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30103"}}]
+execute if score @s rng1 matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301,tag=azrPlayer_dialogchoice_unlocked_30107,tag=!azrPlayer_dialogchoice_unlocked_30108] unless entity @n[tag=azrPlayer_dialogchoice_requiredtarget_30107,distance..200] run tellraw @s [{text:" - "},{text:"交付：我把那些蘑菇骸骨解决了。  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ff893f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30107"}}]
+execute if score @s rng1 matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tellraw @s[tag=azrPlayer_dialogchoice_unlocked_30104] [{text:" - "},{text:"讨论：有关钓师威弗列德……  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30104"}}]
 
 
 
@@ -73,8 +75,8 @@ execute if score @s rng1 matches 3040 run tag @a[tag=azrPlayer] remove azrPlayer
 execute if score @s rng1 matches 3040 run tag @a[tag=azrPlayer] add azrPlayer_dialogchoice_unlocked_30107
 execute if score @s rng1 matches 3040 run scoreboard players set @s rng1 3549
 
-execute if score @s rng1 matches 3500..6000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tellraw @s [{text:" - "},{text:"询问：什么是长了蘑菇的骸骨？  ",color:"#ffe28b"},{text:"〈◆〉",bold:1b,color:"gold",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30105"}}]
-execute if score @s rng1 matches 3500..6000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tellraw @s [{text:" - "},{text:"询问：它们在哪？  ",color:"#ffe28b"},{text:"〈◆〉",bold:1b,color:"gold",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30106"}}]
+execute if score @s rng1 matches 3500..6000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tellraw @s [{text:" - "},{text:"询问：什么是长了蘑菇的骸骨？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30105"}}]
+execute if score @s rng1 matches 3500..6000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tellraw @s [{text:" - "},{text:"询问：它们在哪？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30106"}}]
 
 execute if score @s rng1 matches 3500..6000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tag @s add azrPlayer_dialogchoice_revealed_301
 execute if score @s rng1 matches 3551 run scoreboard players set @s rng1 3549
@@ -121,6 +123,15 @@ execute if score @s rng1 matches 7023 run tag @a[tag=azrPlayer] add azrPlayer_di
 execute if score @s rng1 matches 7023 run scoreboard players set @s rng1 49
 
 
+execute if score @s rng1 matches 7482 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
+execute if score @s rng1 matches 7482 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“有眼光！尽情挑选！”",color:"white"}]
 
+execute if score @s rng1 matches 7500..8000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tellraw @s [{text:" - "},{text:"心跳仪  ",color:"#306fc2"},{"score":{"name":"@s","objective":"AzrMelonCount"},color:"#fff5c2"},{text:"/1 金西瓜 ",color:"#fff5c2"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431553"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n减轻腐蚀性池水造成的伤害。",color:"white"}}}]
+
+
+execute if score @s rng1 matches 7500..8000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tag @s add azrPlayer_dialogchoice_revealed_301
+execute if score @s rng1 matches 7551 run scoreboard players set @s rng1 7549
+execute if score @s rng1 matches 7500..8000 as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_301] run tag @s remove azrPlayer_dialogchoice_revealed_301
+execute if score @s rng1 matches 7500..8000 unless entity @a[distance=0..5.5,tag=azrPlayer] run scoreboard players set @s rng1 49
 
 
