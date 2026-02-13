@@ -15,10 +15,10 @@ execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~0.2 water 
 execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~-0.2 water run effect give @s poison 2 1 false
 execute if score @s AzrPlayer_CurrentArea matches 7 if block ~0.2 ~0.22 ~ water run effect give @s poison 2 1 false
 execute if score @s AzrPlayer_CurrentArea matches 7 if block ~-0.2 ~0.22 ~ water run effect give @s poison 2 1 false
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~0.2 water run effect give @s wither 2 2 false
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~-0.2 water run effect give @s wither 2 2 false
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~0.2 ~0.22 ~ water run effect give @s wither 2 2 false
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~-0.2 ~0.22 ~ water run effect give @s wither 2 2 false
+execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~0.2 water run damage @s 2 generic
+execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~-0.2 water run damage @s 2 generic
+execute if score @s AzrPlayer_CurrentArea matches 7 if block ~0.2 ~0.22 ~ water run damage @s 2 generic
+execute if score @s AzrPlayer_CurrentArea matches 7 if block ~-0.2 ~0.22 ~ water run damage @s 2 generic
 
 #打印剧情
 execute if items entity @s container.* skull_banner_pattern run tellraw @a[tag=azrShowDialog] [{selector:"@s"},{text:"解锁了剧情"}]
