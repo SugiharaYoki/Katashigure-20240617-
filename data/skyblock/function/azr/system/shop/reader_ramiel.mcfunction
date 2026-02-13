@@ -5,7 +5,7 @@ tellraw @s [{text:" - "},{text:"心跳仪  ",color:"#306fc2"},{"score":{"name":"
 
 tellraw @s [{text:" - "},{text:"蜂棘护甲  ",color:"#cd8107"},{"score":{"name":"@s","objective":"AzrMelonCount"},color:"#fff5c2"},{text:"/2 金西瓜 ",color:"#fff5c2"},{text:"〈盔〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431555"},hover_event:{"action":"show_text","value":{text:"无限耐久的护甲，拥有荆棘反伤，但防御力与锁链甲持平",color:"white"}}},{text:"〈胸〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431556"},hover_event:{"action":"show_text","value":{text:"无限耐久的护甲，拥有荆棘反伤，但防御力与锁链甲持平",color:"white"}}},{text:"〈腿〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431557"},hover_event:{"action":"show_text","value":{text:"无限耐久的护甲，拥有荆棘反伤，但防御力与锁链护甲持平",color:"white"}}},{text:"〈靴〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431558"},hover_event:{"action":"show_text","value":{text:"无限耐久的护甲，拥有荆棘反伤，但防御力与锁链甲持平",color:"white"}}}]
 
-
+#8431559 8431560 8431561 8431562 被蚀岩径工匠占用
 
 summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker0"]}
 summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker1"]}

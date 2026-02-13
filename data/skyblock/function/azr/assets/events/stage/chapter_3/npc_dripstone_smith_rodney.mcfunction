@@ -51,7 +51,7 @@ execute if score @s rng1 matches 2013 run tellraw @a[tag=azrShowDialog,distance=
 execute if score @s rng1 matches 2024 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 2024 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“这里是一条连通苔藓培育区域和西庭地质断层的峡谷，你无论去哪里都不该经过此处。”",color:"white"}]
 execute if score @s rng1 matches 2036 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
-execute if score @s rng1 matches 2036 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“不知道是混杂了什么物质，反正这儿的水有强腐蚀作用。要我是你的话，我就离那些水潭越远越好！”",color:"white"}]
+execute if score @s rng1 matches 2036 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“不知道是混杂了什么物质，反正这儿的水里全是重金属，毒性极强。要我是你的话，我就离那些水潭越远越好！”",color:"white"}]
 execute if score @s rng1 matches 2040 run tag @a[tag=azrPlayer] remove azrPlayer_dialogchoice_revealed_301
 execute if score @s rng1 matches 2040 run scoreboard players set @s rng1 49
 
@@ -99,7 +99,7 @@ execute if score @s rng1 matches 4051 run scoreboard players set @s rng1 49
 
 
 execute if score @s rng1 matches 5002 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
-execute if score @s rng1 matches 5002 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“和那些普通的骸骨习性差不多，只不过它们的攻击带有腐蚀性。”",color:"white"}]
+execute if score @s rng1 matches 5002 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“和那些普通的骸骨习性差不多，只不过它们的攻击带有重金属的毒性。”",color:"white"}]
 execute if score @s rng1 matches 5013 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 5013 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“以及你可要小心，它们可不止一次会尝试复活。跟它们打持久战只会将你消耗殆尽。”",color:"white"}]
 execute if score @s rng1 matches 5018 run tag @a[tag=azrPlayer] remove azrPlayer_dialogchoice_revealed_301
@@ -126,7 +126,7 @@ execute if score @s rng1 matches 7023 run scoreboard players set @s rng1 49
 execute if score @s rng1 matches 7482 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 7482 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“有眼光！尽情挑选！”",color:"white"}]
 
-execute if score @s rng1 matches 7500..8000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tellraw @s [{text:" - "},{text:"心跳仪  ",color:"#306fc2"},{"score":{"name":"@s","objective":"AzrMelonCount"},color:"#fff5c2"},{text:"/1 金西瓜 ",color:"#fff5c2"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431553"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n减轻腐蚀性池水造成的伤害。",color:"white"}}}]
+execute if score @s rng1 matches 7500..8000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tellraw @s [{text:" - "},{text:"  ",color:"#306fc2"},{"nbt":"ingredient.slime_ball","storage":"azr:shop",color:"white"},{text:"/5 粘液球 ",color:"white"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431559"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n减轻重金属池水造成的伤害。",color:"white"}}}]
 
 
 execute if score @s rng1 matches 7500..8000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tag @s add azrPlayer_dialogchoice_revealed_301
