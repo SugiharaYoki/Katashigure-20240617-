@@ -127,6 +127,7 @@ execute if score @s rng1 matches 7023 run scoreboard players set @s rng1 49
 execute if score @s rng1 matches 7482 run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1
 execute if score @s rng1 matches 7482 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工匠 罗德尼：",color:"green",bold:1b},{bold: false,text:"\n“有眼光！尽情挑选！”",color:"white"}]
 
+execute if score @s rng1 matches 7486 as @a[distance=0..5.5,tag=azrPlayer] run function skyblock:azr/system/shop/count
 execute if score @s rng1 matches 7486 as @a[distance=0..5.5,tag=azrPlayer] run tellraw @s [{text:" - "},{text:"污染平衡器  ",color:"#306fc2"},{"nbt":"ingredient.slime_ball","storage":"azr:shop",color:"white"},{text:"/5 粘液球 ",color:"white"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431559"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n减轻重金属池水造成的伤害。",color:"white"}}}]
 
 
