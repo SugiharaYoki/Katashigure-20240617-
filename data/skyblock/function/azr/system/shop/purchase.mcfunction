@@ -27,7 +27,7 @@ execute if score @s Azr_Shop matches 8433100..8433999 run function skyblock:azr/
 
 execute if score @s Azr_Shop matches 8431611..8431723 run function skyblock:azr/system/shop/purchase/nether
 
-execute if score tempPlayerShopSuccess Azr_system matches 0 run tellraw @s [{text:"生命手册没有回应，素材不符！",color:"red"}]
+execute if score tempPlayerShopSuccess Azr_system matches 0 run tellraw @s [{text:"缺少必要素材，交易失败！",color:"red"}]
 scoreboard players reset tempPlayerShopSuccess Azr_system
 
 #-----------------arrow
@@ -38,7 +38,7 @@ execute at @s run playsound minecraft:item.armor.equip_leather master @s
 
 execute if score @s Azr_Shop matches 84300..84309 run function skyblock:azr/system/shop/build
 execute if score @s Azr_Shop matches 8431511..8431516 run function skyblock:azr/system/shop/reader_arrowshop
-execute if score @s Azr_Shop matches 8431551..8431599 run function skyblock:azr/system/shop/reader_ramiel
+execute if score @s Azr_Shop matches 8431551..8431558 run function skyblock:azr/system/shop/reader_ramiel
 execute if score @s Azr_Shop matches 8432300..8432499 run function skyblock:azr/system/shop/reader_ramiel
 execute if score @s Azr_Shop matches 8431611..8431631 run function skyblock:azr/system/shop/reader_nethershop_1
 execute if score @s Azr_Shop matches 8431711..8431722 run function skyblock:azr/system/shop/reader_nethershop_2
