@@ -11,10 +11,14 @@ execute unless entity @s[x=-79931,y=100,z=0,distance=..10000] run tp @s @p[tag=a
 execute if items entity @s weapon.mainhand tripwire_hook at @s anchored eyes run function skyblock:azr/system/player/unlock_chest
 
 #沼泽中毒
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~0.2 water run effect give @s poison 3 1 false
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~-0.2 water run effect give @s poison 3 1 false
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~0.2 ~0.22 ~ water run effect give @s poison 3 1 false
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~-0.2 ~0.22 ~ water run effect give @s poison 3 1 false
+execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~0.2 water run effect give @s poison 2 1 false
+execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~-0.2 water run effect give @s poison 2 1 false
+execute if score @s AzrPlayer_CurrentArea matches 7 if block ~0.2 ~0.22 ~ water run effect give @s poison 2 1 false
+execute if score @s AzrPlayer_CurrentArea matches 7 if block ~-0.2 ~0.22 ~ water run effect give @s poison 2 1 false
+execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~0.2 water run effect give @s wither 2 2 false
+execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~-0.2 water run effect give @s wither 2 2 false
+execute if score @s AzrPlayer_CurrentArea matches 7 if block ~0.2 ~0.22 ~ water run effect give @s wither 2 2 false
+execute if score @s AzrPlayer_CurrentArea matches 7 if block ~-0.2 ~0.22 ~ water run effect give @s wither 2 2 false
 
 #打印剧情
 execute if items entity @s container.* skull_banner_pattern run tellraw @a[tag=azrShowDialog] [{selector:"@s"},{text:"解锁了剧情"}]
