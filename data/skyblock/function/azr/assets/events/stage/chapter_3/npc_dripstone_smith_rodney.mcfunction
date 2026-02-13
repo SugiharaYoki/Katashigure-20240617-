@@ -129,7 +129,7 @@ execute if score @s rng1 matches 7482 run tellraw @a[tag=azrShowDialog,distance=
 
 execute if score @s rng1 matches 7486 as @a[distance=0..5.5,tag=azrPlayer] run function skyblock:azr/system/shop/count
 execute if score @s rng1 matches 7486 as @a[distance=0..5.5,tag=azrPlayer] run tellraw @s [{text:" - "},{text:"污染平衡器  ",color:"#306fc2"},{"nbt":"ingredient.slime_ball","storage":"azr:shop",color:"white"},{text:"/5 粘液球 ",color:"white"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431559"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n减轻重金属池水造成的伤害。",color:"white"}}}]
-execute if score @s rng1 matches 7486 as @a[distance=0..5.5,tag=azrPlayer] run tellraw @s [{text:" - "},{text:"污染扩散器  ",color:"#306fc2"},{"nbt":"ingredient.slime_ball","storage":"azr:shop",color:"white"},{text:"/10 粘液球 ",color:"white"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431559"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n受到伤害时，有概率释放一片剧毒的重金属云团。",color:"white"}}}]
+execute if score @s rng1 matches 7486 as @a[distance=0..5.5,tag=azrPlayer] run tellraw @s [{text:" - "},{text:"污染扩散器  ",color:"#306fc2"},{"nbt":"ingredient.slime_ball","storage":"azr:shop",color:"white"},{text:"/10 粘液球 ",color:"white"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431560"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n受到伤害时，有概率释放一片剧毒的重金属云团。",color:"white"}}}]
 
 
 execute if score @s rng1 matches 7500..8000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_301] run tag @s add azrPlayer_dialogchoice_revealed_301
