@@ -28,4 +28,4 @@ execute if score @s rng3 matches 58 run tag @s remove azr_skeleton_general_heal
 execute if score @s rng3 matches 58 run scoreboard players add @s rng4 1
 execute if score @s rng3 matches 58 run scoreboard players set @s rng3 0
 
-execute at @s if block ~ ~-3 ~ water run damage @s 5 generic
+execute at @s if block ~ ~-0.5 ~ water if block ~ ~-3 ~ water run damage @s 5 generic
