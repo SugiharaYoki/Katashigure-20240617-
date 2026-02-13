@@ -53,6 +53,13 @@ execute as @s[scores={Azr_Shop=8431558}] \
     bee_armor_feet run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # new_5~8  @s  2 金西瓜 换 蜂棘系列护甲
     
+execute as @s[scores={Azr_Shop=8431559}] \
+    if entity @n[tag=AzrielTrader_dripstone_smith,distance=0..8] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* slime_ball[count={min:5}] \
+    unless function skyblock:azr/system/shop/purchase/ramiel/\
+    pollution_balancer run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
 #下方全部没有使用
     
     
