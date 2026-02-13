@@ -88,3 +88,5 @@ execute if score @s AzrEvent_affected_quake_medium matches 1.. run function skyb
 
 
 scoreboard players reset @s AzrSariel_Amulet_generic_damage_dealt
+
+

@@ -17,5 +17,8 @@ execute if entity @s[tag=AzrielMob_sonic_eye_item_display] run function skyblock
 
 execute if entity @s[tag=AzrielMob_trap_fang] run function skyblock:azr/assets/mobs/skill/trap_fang
 execute if entity @s[tag=AzrielMob_trap_sonic_laser] run function skyblock:azr/assets/mobs/skill/trap_sonic_laser
+execute if entity @s[tag=AzrielMob_trap_metal_gas] run function skyblock:azr/assets/mobs/skill/trap_metal_gas
+
+
 
 execute if entity @s[tag=AzrielMob_generic_pillar_attack_small] run function skyblock:azr/assets/mobs/skill/undead_pickaxe_marker_release

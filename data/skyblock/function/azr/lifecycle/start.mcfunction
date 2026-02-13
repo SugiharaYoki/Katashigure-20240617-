@@ -113,6 +113,7 @@ scoreboard objectives add AzrSariel_Data_CostAmount dummy
 
 #护身符
 scoreboard objectives add AzrSariel_Amulet_generic_damage_dealt minecraft.custom:minecraft.damage_dealt
+scoreboard objectives add AzrSariel_Amulet_generic_damage_taken minecraft.custom:minecraft.damage_taken
 scoreboard objectives add AzrSariel_Amulet_FireLit_cooldown dummy
 scoreboard objectives add AzrSariel_Amulet_FireDrogue_cooldown dummy
 scoreboard objectives add AzrSariel_Amulet_StayFloat_cooldown dummy

@@ -49,6 +49,8 @@ execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_drogue:1b}] r
 
 execute if items entity @s player.cursor *[custom_data~{azr_loginbonus:1b}] run function skyblock:azr/system/player/join_login_bonus_open
 
+execute if score @s AzrSariel_Amulet_generic_damage_taken matches 1.. if items entity @s container.* *[custom_data~{azr_amulet_pollution_diffuser:1b}] run function skyblock:azr/system/player/skills/amulet/pollution_diffuser_core
+
 #节制天平
 execute if score @s AzrSariel_Skill_FanFire matches 1.. run scoreboard players remove @s AzrSariel_Skill_FanFire_cooldown 1
 execute if score @s AzrSariel_Skill_ElecBall matches 1.. run scoreboard players remove @s AzrSariel_Skill_ElecBall_cooldown 1
@@ -63,3 +65,5 @@ execute if score @s AzrSariel_Food_PowerSalmon matches 1.. run function skyblock
 
 #地区标题area_title
 execute at @s run function skyblock:azr/assets/events/stage/area_title_detect
+
+scoreboard players reset @s AzrSariel_Amulet_generic_damage_taken
