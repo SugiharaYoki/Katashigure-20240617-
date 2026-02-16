@@ -338,6 +338,8 @@ fill -79877 41 82 -79875 38 82 minecraft:purple_stained_glass
 #setblock -79878 39 72 minecraft:quartz_slab[type=top]
 
 #entertain
+setblock -79887 44 164 minecraft:birch_button[face=floor,facing=south]
+setblock -79887 43 164 diamond_block
   #十字结界
 fill -79886 43 188 -79888 46 188 minecraft:purple_stained_glass
 #fill -79914 43 188 -79916 46 188 minecraft:purple_stained_glass
@@ -556,91 +558,54 @@ setblock -79898 50 -59 soul_fire
 setblock -79892 48 -73 potted_flowering_azalea_bush
 setblock -79889 48 -73 potted_flowering_azalea_bush
 
-#监狱大门
-setblock -79886 41 -114 lever[face=floor,facing=west,powered=false]
-fill -79892 43 -119 -79889 40 -119 minecraft:iron_bars
-
-
-
-
-
-
-
-
-
-
-
-# ↓↓ 待修改 ↓↓
-
-#______________________________________________________________#
-#牢房区域铁砧
-setblock -79924 54 -109 minecraft:chipped_anvil[facing=west]
-#stage appetence
-setblock -79912 55 -101 minecraft:birch_button[face=wall,facing=west]
-#权之殊能初次攻击后的垫脚盒子 重置为空气
-setblock -79907 46 -111 minecraft:air
-#牢房区域 stage12入口的开关
-setblock -79867 48 -109 lever[facing=east,face=floor,powered=false]
-
-
-
-setblock -79891 49 136 minecraft:birch_button[face=floor,facing=east]
-setblock -79925 24 136 air
-setblock -79925 24 136 trapped_chest[facing=south]{lock:{components:{custom_data:{key_required:1b}}}}
-
-setblock -79887 44 164 minecraft:birch_button[face=floor,facing=south]
-setblock -79887 43 164 diamond_block
-setblock -79951 38 9 minecraft:quartz_stairs[facing=south]
-setblock -79943 39 8 chiseled_quartz_block
-setblock -79947 32 140 diamond_block
-setblock -79947 33 140 birch_button[face=floor,facing=west]
-setblock -79912 48 -137 minecraft:chipped_anvil
-setblock -79908 48 -127 barrel[facing=north,open=false]
-setblock -79896 41 -143 minecraft:blast_furnace[facing=east]
-setblock -79896 40 -143 minecraft:blast_furnace[facing=east]
-setblock -79906 42 -146 air
-setblock -79894 41 -123 lever[facing=east,face=floor,powered=false]
-setblock -79898 40 -109 chest[facing=west]
-setblock -79903 40 -104 chest[facing=west]
-setblock -79929 47 -110 chest[facing=south]
-setblock -79897 40 -115 air
-setblock -79897 40 -115 trapped_chest[facing=west]{lock:{components:{custom_data:{key_required:1b}}}}
-setblock -79919 40 -112 chest[facing=north]
-setblock -79917 41 -104 minecraft:spruce_trapdoor[open=false,facing=west]
-setblock -79917 41 -102 minecraft:spruce_trapdoor[open=false,facing=west]
-setblock -79917 41 -103 minecraft:spruce_trapdoor[open=false,facing=west]
-setblock -79923 41 -104 minecraft:spruce_trapdoor[open=false,facing=east]
-setblock -79923 41 -102 minecraft:spruce_trapdoor[open=false,facing=east]
-setblock -79923 41 -103 minecraft:spruce_trapdoor[open=false,facing=east]
-setblock -79928 40 -115 minecraft:chipped_anvil[facing=north]
-setblock -79938 41 -125 minecraft:birch_button[facing=south]
-setblock -79934 40 -124 minecraft:stone_brick_slab[type=top]
-setblock -79913 47 -113 minecraft:birch_button[facing=south]
-setblock -79867 44 -109 air
-setblock -79934 38 18 air
-setblock -79931 38 42 air
-setblock -79931 38 76 air
-setblock -79931 38 117 air
-setblock -79899 38 142 air
-setblock -79885 40 -139 air
-setblock -79893 47 -48 air
-setblock -79844 48 -127 air
-setblock -79907 46 -111 air
-#setblock -79904 44 118 birch_button[facing=west,face=floor]
-setblock -79878 41 -131 lever[face=floor,facing=east,powered=false]
-setblock -79877 46 -142 minecraft:polished_andesite_slab
-setblock -79760 31 188 chest
-setblock -79922 40 -92 minecraft:birch_button[face=floor,facing=south]
-setblock -79938 48 -144 chest[facing=east]
-setblock -79935 48 -164 barrel[facing=up]
-setblock -79936 49 -158 air
-setblock -79936 49 -158 trapped_chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
+#静火之坑侧面房间
 setblock -79867 44 -52 barrel[facing=north]
 setblock -79866 43 -52 barrel[facing=north]
 setblock -79865 42 -52 barrel[facing=north]
 setblock -79867 44 -57 barrel[facing=south]
 setblock -79866 43 -57 barrel[facing=south]
 setblock -79865 42 -57 barrel[facing=south]
+
+
+#监狱大门
+setblock -79886 41 -114 lever[face=floor,facing=west,powered=false]
+fill -79892 43 -119 -79889 40 -119 minecraft:iron_bars
+setblock -79894 41 -123 lever[facing=east,face=floor,powered=false]
+
+#监狱装饰
+setblock -79908 48 -127 barrel[facing=north,open=false]
+
+setblock -79898 40 -109 chest[facing=west]
+setblock -79903 40 -104 chest[facing=west]
+setblock -79929 47 -110 chest[facing=south]
+setblock -79919 40 -112 chest[facing=north]
+
+setblock -79897 40 -115 air
+setblock -79897 40 -115 trapped_chest[facing=west]{lock:{components:{custom_data:{key_required:1b}}}}
+  #桌子
+setblock -79917 41 -104 minecraft:spruce_trapdoor[open=false,facing=west]
+setblock -79917 41 -102 minecraft:spruce_trapdoor[open=false,facing=west]
+setblock -79917 41 -103 minecraft:spruce_trapdoor[open=false,facing=west]
+setblock -79923 41 -104 minecraft:spruce_trapdoor[open=false,facing=east]
+setblock -79923 41 -102 minecraft:spruce_trapdoor[open=false,facing=east]
+setblock -79923 41 -103 minecraft:spruce_trapdoor[open=false,facing=east]
+
+#原breakout
+setblock -79878 41 -131 lever[face=floor,facing=east,powered=false]
+setblock -79877 46 -142 minecraft:polished_andesite_slab
+
+
+
+# ↓↓ 待修改 ↓↓
+
+#______________________________________________________________#
+
+setblock -79922 40 -92 minecraft:birch_button[face=floor,facing=south]
+setblock -79938 48 -144 chest[facing=east]
+setblock -79935 48 -164 barrel[facing=up]
+setblock -79936 49 -158 air
+setblock -79936 49 -158 trapped_chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
+
 setblock -79870 40 -49 minecraft:air
 setblock -79867 40 -103 chest[facing=west]
 setblock -79863 40 -76 air
