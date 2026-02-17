@@ -574,14 +574,44 @@ setblock -79894 41 -123 lever[facing=east,face=floor,powered=false]
 
 #监狱装饰
 setblock -79908 48 -127 barrel[facing=north,open=false]
+setblock -79935 48 -164 barrel[facing=up]
 
 setblock -79898 40 -109 chest[facing=west]
+item replace block -79898 40 -109 container.11 with minecraft:gunpowder
+item replace block -79898 40 -109 container.13 with emerald 2
+item replace block -79898 40 -109 container.15 with minecraft:gunpowder
 setblock -79903 40 -104 chest[facing=west]
+item replace block -79903 40 -104 container.11 with emerald 2
+item replace block -79903 40 -104 container.13 with minecraft:beef 1
+item replace block -79903 40 -104 container.15 with emerald 2
 setblock -79929 47 -110 chest[facing=south]
+item replace block -79929 47 -110 container.13 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
 setblock -79919 40 -112 chest[facing=north]
+item replace block -79919 40 -112 container.12 with emerald 3
+item replace block -79919 40 -112 container.14 with string
+setblock -79938 48 -144 chest[facing=east]
+item replace block -79938 48 -144 container.12 with emerald 5
+item replace block -79938 48 -144 container.14 with emerald 7
+setblock -79867 40 -103 chest[facing=west]
+item replace block -79867 40 -103 container.12 with iron_ingot 1
+item replace block -79867 40 -103 container.14 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
+setblock -79929 49 -123 chest[facing=south]
+item replace block -79929 49 -123 container.12 with iron_ingot 1
+item replace block -79929 49 -123 container.14 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
+
+
+setblock -79937 48 -143 minecraft:potted_cornflower
 
 setblock -79897 40 -115 air
 setblock -79897 40 -115 trapped_chest[facing=west]{lock:{components:{custom_data:{key_required:1b}}}}
+item replace block -79897 40 -115 container.12 with emerald 3
+item replace block -79897 40 -115 container.14 with minecraft:bone 1
+setblock -79936 49 -158 air
+setblock -79936 49 -158 trapped_chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
+item replace block -79936 49 -158 container.12 with skull_banner_pattern[custom_name={text:"“期限将至 此乃针对神庭之审判”",color:"dark_purple",italic:0b},lore=[{text:"这里的魔物保受摧残，",color:"white",italic:0b},{text:"终日身于苦痛之中。",color:"white",italic:0b},{text:"沙利叶大人既是对此心知肚明，",color:"white",italic:0b},{text:"又为何让这暴行延续？",color:"white",italic:0b}]] 1
+item replace block -79936 49 -158 container.14 with cooked_beef 3
+
+
   #桌子
 setblock -79917 41 -104 minecraft:spruce_trapdoor[open=false,facing=west]
 setblock -79917 41 -102 minecraft:spruce_trapdoor[open=false,facing=west]
@@ -594,62 +624,45 @@ setblock -79923 41 -103 minecraft:spruce_trapdoor[open=false,facing=east]
 setblock -79878 41 -131 lever[face=floor,facing=east,powered=false]
 setblock -79877 46 -142 minecraft:polished_andesite_slab
 
+#第四章 stage13
+setblock -79782 27 -286 chest[facing=north]
+
+#stage14
+setblock -79770 23 -460 chest[facing=east]
+setblock -79765 24 -469 chest[facing=south]
+
+#林场
+setblock -79804 56 -465 anvil[facing=north]
+
+#stage15
+setblock -79657 23 -421 birch_button[face=floor,facing=east]
+  #15 to 14 快速连通道路
+setblock -79753 24 -462 lever[face=floor,facing=south,powered=false]
+setblock -79714 24 -460 potted_poppy
+setblock -79714 23 -458 minecraft:potted_poppy
+setblock -79713 22 -461 chest[facing=west]
+item replace block -79713 22 -461 container.13 with slime_ball 2
+setblock -79743 23 -463 minecraft:water_cauldron[level=3]
+setblock -79742 23 -463 minecraft:water_cauldron[level=2]
+
+#岩浆道
+setblock -79571 11 -412 air
+setblock -79571 11 -412 trapped_chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
+setblock -79626 21 -415 chest[facing=north]
+item replace block -79626 21 -415 container.11 with emerald 3
+item replace block -79626 21 -415 container.13 with skull_banner_pattern[custom_name={text:"“神罚 这一切都是神罚 全部都是”",color:"dark_purple",italic:0b},lore=[{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"现在轮到我们自取灭亡了",color:"white",italic:0b}]] 1
 
 
 # ↓↓ 待修改 ↓↓
 
 #______________________________________________________________#
 
-setblock -79922 40 -92 minecraft:birch_button[face=floor,facing=south]
-setblock -79938 48 -144 chest[facing=east]
-setblock -79935 48 -164 barrel[facing=up]
-setblock -79936 49 -158 air
-setblock -79936 49 -158 trapped_chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
 
-setblock -79870 40 -49 minecraft:air
-setblock -79867 40 -103 chest[facing=west]
-setblock -79863 40 -76 air
-setblock -79863 40 -76 trapped_chest[facing=west]{lock:{components:{custom_data:{key_required:1b}}}}
-setblock -79929 49 -123 chest[facing=south]
-setblock -79864 37 -84 air
-setblock -79864 42 -75 minecraft:pointed_dripstone[vertical_direction=down]
-setblock -79782 27 -286 chest[facing=north]
-setblock -79770 23 -460 chest[facing=east]
-setblock -79804 56 -465 anvil[facing=north]
-setblock -79765 24 -469 chest[facing=south]
-setblock -79722 33 -522 minecraft:polished_blackstone_button[face=floor,facing=south]
-setblock -79657 23 -421 birch_button[face=floor,facing=east]
-setblock -79664 22 -414 blackstone
-setblock -79664 24 -414 blackstone
-setblock -79664 23 -414 gilded_blackstone
-setblock -79665 23 -415 netherrack
-setblock -79663 23 -416 nether_brick_wall
-setblock -79665 24 -416 nether_brick_fence
-setblock -79664 22 -416 air
-setblock -79663 22 -418 air
-setblock -79665 22 -417 air
-setblock -79786 31 -359 air
-setblock -79772 26 -386 air
-setblock -79664 21 -415 tinted_glass
-setblock -79664 21 -414 blackstone
-setblock -79753 24 -462 lever[face=floor,facing=south,powered=false]
-setblock -79713 22 -461 chest[facing=west]
-setblock -79743 23 -463 minecraft:water_cauldron[level=3]
-setblock -79742 23 -463 minecraft:water_cauldron[level=2]
-setblock -79643 21 -420 minecraft:cracked_nether_bricks
-setblock -79642 21 -423 minecraft:cracked_nether_bricks
-setblock -79644 21 -422 minecraft:cracked_nether_bricks
-setblock -79643 22 -420 minecraft:nether_sprouts
-setblock -79642 22 -423 minecraft:nether_sprouts
-setblock -79644 22 -422 minecraft:nether_sprouts
-setblock -79626 21 -415 chest[facing=north]
 setblock -79759 41 -354 birch_button[face=floor,facing=south]
 setblock -79761 42 -358 minecraft:cracked_polished_blackstone_bricks
 setblock -79713 47 -380 minecraft:birch_button[face=floor,facing=east]
 setblock -79723 47 -380 crimson_hyphae[axis=z]
 setblock -79588 8 -427 chest[facing=west]
-setblock -79571 11 -412 air
-setblock -79571 11 -412 trapped_chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
 setblock -79790 27 -288 nether_brick_fence
 setblock -79790 28 -288 nether_brick_fence
 setblock -79791 28 -294 chest[facing=south]
@@ -723,45 +736,18 @@ clone -79908 36 -41 -79904 43 -32 -79933 37 -27
 clone -79919 24 -134 -79913 30 -123 -79908 39 -134
 clone -79613 14 -401 -79606 18 -394 -79613 14 -420
 #______________________________________________________________#
-#stage11 牢房小道具
-item replace block -79898 40 -109 container.11 with minecraft:gunpowder
-item replace block -79898 40 -109 container.13 with iron_ingot
-item replace block -79898 40 -109 container.15 with minecraft:gunpowder
-#stage11 牢房小道具
-item replace block -79903 40 -104 container.11 with emerald 2
-item replace block -79903 40 -104 container.13 with minecraft:beef 2
-item replace block -79903 40 -104 container.15 with emerald 2
-#stage11 牢房小道具
-item replace block -79929 47 -110 container.13 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
-#stage11 牢房小道具
-item replace block -79897 40 -115 container.12 with emerald 3
-item replace block -79897 40 -115 container.14 with minecraft:bone 1
-#stage11 牢房小道具
-item replace block -79919 40 -112 container.12 with emerald 3
-item replace block -79919 40 -112 container.14 with string
+
 
 
 item replace block -79863 40 -76 container.14 with skull_banner_pattern[custom_name={text:"“招待厅事务记录5”",color:"dark_purple",italic:0b},lore=[{text:"第一关口北面的建筑物出现了大量裂缝，",color:"white",italic:0b},{text:"这样的现象一直延伸至牢房区域。",color:"white",italic:0b},{text:"虽说大家有不祥的预感，",color:"white",italic:0b},{text:"权之殊能大人却言仅为年久失修。",color:"white",italic:0b}]] 1
-item replace block -79936 49 -158 container.13 with skull_banner_pattern[custom_name={text:"“期限将至 此乃针对神庭之审判”",color:"dark_purple",italic:0b},lore=[{text:"这里的魔物保受摧残，",color:"white",italic:0b},{text:"终日身于苦痛之中。",color:"white",italic:0b},{text:"沙利叶大人既是对此心知肚明，",color:"white",italic:0b},{text:"又为何让这暴行再续？",color:"white",italic:0b}]] 1
-item replace block -79938 48 -144 container.12 with emerald 5
-item replace block -79938 48 -144 container.14 with emerald 7
 item replace block -79935 48 -164 container.13 with cooked_beef 3
-item replace block -79936 49 -158 container.11 with cooked_beef 5
-item replace block -79936 49 -158 container.15 with shulker_shell[custom_name={text:"弹簧箭盒",italic:0b},lore=[{text:"敲击 - 散射36支箭矢（射程较高）",color:"yellow",italic:0b}],enchantments={blast_protection:1},custom_data={arrow_box:1b},custom_model_data={floats:[100001.0]}] 3
 item replace block -79866 43 -57 container.14 with coal 2
 item replace block -79867 44 -52 container.12 with emerald 3
 item replace block -79865 42 -52 container.13 with dried_kelp 8
-item replace block -79867 40 -103 container.12 with shulker_shell[custom_name={text:"弹簧箭盒",italic:0b},lore=[{text:"敲击 - 散射36支箭矢（射程较高）",color:"yellow",italic:0b}],enchantments={blast_protection:1},custom_data={arrow_box:1b},custom_model_data={floats:[100001.0]}] 2
-item replace block -79867 40 -103 container.14 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
 item replace block -79863 40 -76 container.12 with stone_axe[custom_name={text:"苔石斧·笼怨",italic:0b},attribute_modifiers=[{type:"knockback_resistance",slot:"mainhand",id:"azr:mossstone_axe.knockback_resistance",amount:0.13,operation:"add_value"},{type:"attack_damage",slot:"mainhand",id:"azr:mossstone_axe.attack_damage",amount:10.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"azr:mossstone_axe.attack_speed",amount:-3.2,operation:"add_value"}],enchantments={"unbreaking":2}] 1
-item replace block -79929 49 -123 container.12 with iron_ingot 1
-item replace block -79929 49 -123 container.14 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
 
 item replace block -79770 23 -460 container.13 with minecraft:gold_nugget 30
 item replace block -79765 24 -469 container.13 with minecraft:gold_nugget 28
-item replace block -79713 22 -461 container.13 with eye_armor_trim_smithing_template 3
-item replace block -79626 21 -415 container.11 with eye_armor_trim_smithing_template 3
-item replace block -79626 21 -415 container.13 with skull_banner_pattern[custom_name={text:"“神罚 这一切都是神罚 全部都是”",color:"dark_purple",italic:0b},lore=[{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"现在轮到我们自取灭亡了",color:"white",italic:0b},{text:"现在轮到我们自取灭亡了",color:"white",italic:0b}]] 1
 
 
 #第16关地图预加载#
