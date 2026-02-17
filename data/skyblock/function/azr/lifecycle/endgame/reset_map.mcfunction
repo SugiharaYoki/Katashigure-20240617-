@@ -625,7 +625,14 @@ setblock -79878 41 -131 lever[face=floor,facing=east,powered=false]
 setblock -79877 46 -142 minecraft:polished_andesite_slab
 
 #第四章 stage13
-setblock -79782 27 -286 chest[facing=north]
+  #隐藏内房
+setblock -79789 27 -288 nether_brick_fence
+setblock -79789 28 -288 nether_brick_fence
+setblock -79791 28 -294 chest[facing=south]
+item replace block -79791 28 -294 container.13 with gold_nugget 3
+setblock -79793 27 -289 anvil[facing=north]
+setblock -79793 27 -287 anvil[facing=north]
+
 
 #stage14
 setblock -79770 23 -460 chest[facing=east]
@@ -641,7 +648,7 @@ setblock -79753 24 -462 lever[face=floor,facing=south,powered=false]
 setblock -79714 24 -460 potted_poppy
 setblock -79714 23 -458 minecraft:potted_poppy
 setblock -79713 22 -461 chest[facing=west]
-item replace block -79713 22 -461 container.13 with slime_ball 2
+item replace block -79713 22 -461 container.13 with gold_nugget 3
 setblock -79743 23 -463 minecraft:water_cauldron[level=3]
 setblock -79742 23 -463 minecraft:water_cauldron[level=2]
 
@@ -649,25 +656,18 @@ setblock -79742 23 -463 minecraft:water_cauldron[level=2]
 setblock -79571 11 -412 air
 setblock -79571 11 -412 trapped_chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
 setblock -79626 21 -415 chest[facing=north]
-item replace block -79626 21 -415 container.11 with emerald 3
+item replace block -79626 21 -415 container.11 with gold_nugget 3
 item replace block -79626 21 -415 container.13 with skull_banner_pattern[custom_name={text:"“神罚 这一切都是神罚 全部都是”",color:"dark_purple",italic:0b},lore=[{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"现在轮到我们自取灭亡了",color:"white",italic:0b}]] 1
 
+setblock -79588 8 -427 chest[facing=west]
+item replace block -79588 8 -427 container.12 with gold_nugget 2
+item replace block -79588 8 -427 container.14 with gold_nugget 2
 
 # ↓↓ 待修改 ↓↓
 
 #______________________________________________________________#
 
 
-setblock -79759 41 -354 birch_button[face=floor,facing=south]
-setblock -79761 42 -358 minecraft:cracked_polished_blackstone_bricks
-setblock -79713 47 -380 minecraft:birch_button[face=floor,facing=east]
-setblock -79723 47 -380 crimson_hyphae[axis=z]
-setblock -79588 8 -427 chest[facing=west]
-setblock -79790 27 -288 nether_brick_fence
-setblock -79790 28 -288 nether_brick_fence
-setblock -79791 28 -294 chest[facing=south]
-setblock -79793 27 -289 anvil[facing=north]
-setblock -79793 27 -287 anvil[facing=north]
 setblock -79799 28 -284 minecraft:birch_button[facing=west,face=floor]
 setblock -79742 75 -440 minecraft:birch_button[facing=east,face=floor]
 setblock -79912 55 -101 minecraft:birch_button[facing=west,face=wall]
