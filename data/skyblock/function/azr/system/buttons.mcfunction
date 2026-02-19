@@ -69,10 +69,6 @@ execute if block -79900 41 -60 minecraft:birch_button[powered=true] run scoreboa
 execute if block -79900 41 -60 minecraft:birch_button[powered=true] run setblock -79900 41 -60 air
 
 
-
-#stage10
-execute if block -79886 41 -114 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79885.5,y=41.00,z=-113.5,distance=..1] run scoreboard players set stage Azr_system 35
-execute if block -79886 41 -114 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79885.5,y=41.00,z=-113.5,distance=..1] run summon minecraft:interaction -79885.5 41.00 -113.5 {Tags:["temp"]}
 #stage14
 execute if block -79765 24 -449 minecraft:crimson_button[powered=true] run scoreboard players set stage Azr_system 55
 execute if block -79765 24 -449 minecraft:crimson_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
