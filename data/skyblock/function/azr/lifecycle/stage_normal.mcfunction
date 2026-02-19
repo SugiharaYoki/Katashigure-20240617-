@@ -55,6 +55,7 @@ execute if score stage Azr_system matches 21..24 run function skyblock:azr/asset
 #BOSS2-第九关 25
 execute if score stage Azr_system matches 25.. run function skyblock:azr/assets/events/stage/chapter_3/stage9_garden
 execute if score stage Azr_system matches 25.. run function skyblock:azr/assets/events/stage/chapter_3/stage9_dripstone
+execute if score stage Azr_system matches 25.. run function skyblock:azr/assets/events/stage/chapter_3/stage9_prison
 #第九关 26
 execute if score stage Azr_system matches 26 run function skyblock:azr/assets/events/stage/chapter_3/stage9
 #event5 27
