@@ -576,10 +576,6 @@ setblock -79894 41 -123 lever[facing=east,face=floor,powered=false]
 setblock -79908 48 -127 barrel[facing=north,open=false]
 setblock -79935 48 -164 barrel[facing=up]
 
-setblock -79898 40 -109 chest[facing=west]
-item replace block -79898 40 -109 container.11 with minecraft:gunpowder
-item replace block -79898 40 -109 container.13 with emerald 2
-item replace block -79898 40 -109 container.15 with minecraft:gunpowder
 setblock -79903 40 -104 chest[facing=west]
 item replace block -79903 40 -104 container.11 with emerald 2
 item replace block -79903 40 -104 container.13 with minecraft:beef 1
