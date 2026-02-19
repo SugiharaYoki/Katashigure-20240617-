@@ -26,7 +26,10 @@ execute positioned -79886 41 -114 as @n[tag=AzrielMarker_encounter,distance=0..0
 execute positioned -79886 41 -114 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=38}] run fill -79892 43 -119 -79889 43 -119 air
 execute positioned -79886 41 -114 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=40}] run scoreboard players set @s rng1 0
 
-
+execute positioned -79889.95 40 -118.44 if entity @a[distance=..19,tag=azrPlayer] if block -79886 041 -114 lever[powered=true] if block -79894 41 -123 lever[facing=east,face=floor,powered=false] run setblock -79886 41 -114 lever[facing=east,face=floor,powered=false]
+execute positioned -79889.95 40 -118.44 if entity @a[distance=..19,tag=azrPlayer] if block -79886 41 -114 lever[powered=false] if block -79894 041 -123 lever[facing=east,face=floor,powered=true] run setblock -79886 41 -114 lever[facing=east,face=floor,powered=true]
+execute positioned -79889.95 40 -118.44 if entity @a[distance=..19,tag=azrPlayer] if block -79894 041 -123 lever[powered=true] if block -79886 41 -114 lever[facing=east,face=floor,powered=false] run setblock -79894 41 -123 lever[facing=east,face=floor,powered=false]
+execute positioned -79889.95 40 -118.44 if entity @a[distance=..19,tag=azrPlayer] if block -79894 41 -123 lever[powered=false] if block -79886 041 -114 lever[facing=east,face=floor,powered=true] run setblock -79894 41 -123 lever[facing=east,face=floor,powered=true]
 
 
 
