@@ -106,9 +106,9 @@ execute if score SEA_ch6_event rng5 matches 12558 positioned 90013 95 -1926 run 
 execute if score SEA_ch6_event rng5 matches 12558 positioned 90013 95 -1926 run particle minecraft:explosion_emitter ~ ~ ~ 3 3 3 0 8
 execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 run particle minecraft:large_smoke ~ ~ ~ 3 3 3 0.1 100
 execute if score SEA_ch6_event rng5 matches 12558 positioned 90013 95 -1926 run particle minecraft:large_smoke ~ ~ ~ 3 3 3 0.1 100
-execute if score SEA_ch6_event rng5 matches 12552 positioned 90013 95 -1926 as @a[tag=SEAPT,x=89988,y=0,z=-1936,dx=300,dy=100,dz=200,gamemode=adventure] at @s run damage @s 3 explosion
-execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 as @a[tag=SEAPT,x=89988,y=0,z=-1936,dx=300,dy=100,dz=200,gamemode=adventure] at @s run damage @s 5 explosion
-execute if score SEA_ch6_event rng5 matches 12558 positioned 90013 95 -1926 as @a[tag=SEAPT,x=89988,y=0,z=-1936,dx=300,dy=100,dz=200,gamemode=adventure] at @s run damage @s 8 explosion
+execute if score SEA_ch6_event rng5 matches 12552 positioned 90013 95 -1926 as @a[tag=SEAPT,x=89988,y=0,z=-1936,dx=300,dy=100,dz=28,gamemode=adventure] at @s run damage @s 3 explosion
+execute if score SEA_ch6_event rng5 matches 12554 positioned 90013 95 -1926 as @a[tag=SEAPT,x=89988,y=0,z=-1936,dx=300,dy=100,dz=28,gamemode=adventure] at @s run damage @s 5 explosion
+execute if score SEA_ch6_event rng5 matches 12558 positioned 90013 95 -1926 as @a[tag=SEAPT,x=89988,y=0,z=-1936,dx=300,dy=100,dz=28,gamemode=adventure] at @s run damage @s 8 explosion
 
 execute if score SEA_ch6_event rng5 matches 12056 as @n[tag=SEAedwina] at @s run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch6_event rng5 matches 12056 as @n[tag=SEAedwina] at @s run tellraw @a[distance=0..150] [{text:"艾德雯娜：",color:"green",bold:1b},{text:"\n“往洞里去，不然我们也得一起死！！”",color:"white",bold: false}]
