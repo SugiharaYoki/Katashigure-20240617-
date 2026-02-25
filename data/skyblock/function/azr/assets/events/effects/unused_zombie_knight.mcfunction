@@ -23,12 +23,12 @@ execute as @s[scores={sea_4temp1=40}] run attribute @s attack_knockback base set
 execute as @s[scores={sea_4temp1=39}] run attribute @s attack_knockback base set 0.0
 
 
-execute as @s[scores={sea_4temp4=..5},nbt={Fire:-1s}] run particle portal ~ ~ ~ 0 0 0 0.3 60
-execute as @s[scores={sea_4temp4=..5},nbt={Fire:-1s}] run particle infested ~ ~ ~ 0 0 0 0.2 50
-execute as @s[scores={sea_4temp4=..5},nbt={Fire:-1s}] run playsound entity.silverfish.ambient hostile @a ~ ~ ~ 1 0.8
-execute as @s[scores={sea_4temp4=..5},nbt={Fire:-1s}] run function skyblock:azr/assets/mobs/silverfish_t1
-execute as @s[scores={sea_4temp4=..5},nbt={Fire:-1s}] run function skyblock:azr/assets/mobs/silverfish_t1
-execute as @s[scores={sea_4temp4=..5},nbt={Fire:-1s}] run function skyblock:azr/assets/mobs/silverfish_t1
+execute as @s[scores={sea_4temp4=..5},nbt={Fire:0s}] run particle portal ~ ~ ~ 0 0 0 0.3 60
+execute as @s[scores={sea_4temp4=..5},nbt={Fire:0s}] run particle infested ~ ~ ~ 0 0 0 0.2 50
+execute as @s[scores={sea_4temp4=..5},nbt={Fire:0s}] run playsound entity.silverfish.ambient hostile @a ~ ~ ~ 1 0.8
+execute as @s[scores={sea_4temp4=..5},nbt={Fire:0s}] run function skyblock:azr/assets/mobs/silverfish_t1
+execute as @s[scores={sea_4temp4=..5},nbt={Fire:0s}] run function skyblock:azr/assets/mobs/silverfish_t1
+execute as @s[scores={sea_4temp4=..5},nbt={Fire:0s}] run function skyblock:azr/assets/mobs/silverfish_t1
 execute as @s[scores={sea_4temp4=..5}] run kill @s
 
 particle dripping_obsidian_tear ~ ~1.2 ~ 0.15 0.2 0.15 0 2
