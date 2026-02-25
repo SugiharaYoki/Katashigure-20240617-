@@ -15,3 +15,6 @@ execute if entity @s[tag=!SEANPC_Friendly_hasattacktarget] if entity @n[tag=SEAm
 execute if entity @s[tag=SEANPC_Friendly_hasattacktarget] on target if entity @s[type=player] run attribute @n[tag=SEANPC_Friendly_hasattacktarget] follow_range base set 0
 execute if entity @s[tag=SEANPC_Friendly_hasattacktarget,type=pillager] on target if entity @s[type=player] run item replace entity @n[tag=SEANPC_Friendly_hasattacktarget,type=pillager] weapon.mainhand with minecraft:air
 execute if entity @s[tag=SEANPC_Friendly_hasattacktarget] on target if entity @s[type=player] run tag @n[tag=SEANPC_Friendly_hasattacktarget] remove SEANPC_Friendly_hasattacktarget
+execute if entity @s[tag=SEANPC_Friendly_hasattacktarget] on target if entity @s[type=villager] run attribute @n[tag=SEANPC_Friendly_hasattacktarget] follow_range base set 0
+execute if entity @s[tag=SEANPC_Friendly_hasattacktarget,type=pillager] on target if entity @s[type=villager] run item replace entity @n[tag=SEANPC_Friendly_hasattacktarget,type=pillager] weapon.mainhand with minecraft:air
+execute if entity @s[tag=SEANPC_Friendly_hasattacktarget] on target if entity @s[type=villager] run tag @n[tag=SEANPC_Friendly_hasattacktarget] remove SEANPC_Friendly_hasattacktarget
