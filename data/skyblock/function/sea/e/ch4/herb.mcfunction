@@ -10,8 +10,8 @@ execute if entity @s[scores={rng9=142}] if score sea_player_count rng1 matches 1
 
 execute if entity @s[scores={rng9=242}] if score sea_player_count rng1 matches 1.. run tellraw @a[distance=0..250] [{selector:"@p[tag=SEAPT]",color:"aqua"},{text:"：",color:"aqua",bold:1b},{text:"\n“你要吃芝士汉堡吗？”",color:"white",bold: false}]
 execute if entity @s[scores={rng9=282}] if score sea_player_count rng1 matches 1.. run tellraw @a[distance=0..250] [{selector:"@p[tag=SEAPT]",color:"aqua"},{text:"：",color:"aqua",bold:1b},{text:"\n“只不过……仔细想想，你是不是这里最后一个幸存者了？”",color:"white",bold: false}]
-execute if entity @s[scores={rng9=302}] if score sea_player_count rng1 matches 1 run tellraw @a[distance=0..250] [{selector:"@p[tag=SEAPT]",color:"aqua"},{text:"：",color:"aqua",bold:1b},{text:"\n“好可怜……想要跟我走吗？”",color:"white",bold: false}]
-execute if entity @s[scores={rng9=302}] if score sea_player_count rng1 matches 2.. run tellraw @a[distance=0..250] [{selector:"@p[tag=SEAPT]",color:"aqua"},{text:"：",color:"aqua",bold:1b},{text:"\n“好可怜……想要跟我们走吗？”",color:"white",bold: false}]
+execute if entity @s[scores={rng9=302}] if score sea_player_count rng1 matches 1 run tellraw @a[distance=0..250] [{selector:"@p[tag=SEAPT]",color:"aqua"},{text:"：",color:"aqua",bold:1b},{text:"\n“好可怜，想要跟我走吗？”",color:"white",bold: false}]
+execute if entity @s[scores={rng9=302}] if score sea_player_count rng1 matches 2.. run tellraw @a[distance=0..250] [{selector:"@p[tag=SEAPT]",color:"aqua"},{text:"：",color:"aqua",bold:1b},{text:"\n“好可怜，想要跟我们走吗？”",color:"white",bold: false}]
 
 execute if entity @s[scores={rng9=332}] if score sea_player_count rng1 matches 1.. run tellraw @a[distance=0..250] [{selector:"@p[tag=SEAPT]",color:"aqua"},{text:"：",color:"aqua",bold:1b},{text:"\n“……没有正面回应呢。”",color:"white",bold: false}]
 execute if entity @s[scores={rng9=382}] if score sea_player_count rng1 matches 1.. run tellraw @a[distance=0..250] [{selector:"@p[tag=SEAPT]",color:"aqua"},{text:"：",color:"aqua",bold:1b},{text:"\n“唉，毕竟只是一只猫嘛。”",color:"white",bold: false}]
