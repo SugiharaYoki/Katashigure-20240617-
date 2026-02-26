@@ -127,8 +127,8 @@ execute if score SEA_ch6_event rng5 matches 9181 positioned 90142 127 -1856 run 
 execute if score SEA_ch6_event rng5 matches 9197 positioned 90142 127 -1856 run function skyblock:sea/m/husk
 execute if score SEA_ch6_event rng5 matches 9199 positioned 90142 127 -1856 run function skyblock:sea/m/zombie_bomb
 
-execute if score SEA_ch6_event rng5 matches 9205 positioned 90142 127 -1856 run function skyblock:sea/m/zombie_knight
-execute if score SEA_ch6_event rng5 matches 9205 positioned 90142 127 -1854 run function skyblock:sea/m/zombie_knight
+execute if score SEA_ch6_event rng5 matches 9205 positioned 90142 127 -1856 unless items entity @a[tag=SEAPT] container.* heart_of_the_sea run function skyblock:sea/m/zombie_knight
+execute if score SEA_ch6_event rng5 matches 9205 positioned 90142 127 -1854 unless items entity @a[tag=SEAPT] container.* heart_of_the_sea run function skyblock:sea/m/zombie_knight
 execute if score SEA_ch6_event rng5 matches 9225 positioned 90142 127 -1856 run function skyblock:sea/m/skeleton_melee
 execute if score SEA_ch6_event rng5 matches 9227 positioned 90142 127 -1854 run function skyblock:sea/m/skeleton_melee
 execute if score SEA_ch6_event rng5 matches 9229 positioned 90142 127 -1856 run function skyblock:sea/m/skeleton_melee
@@ -158,8 +158,8 @@ execute if score SEA_ch6_event rng5 matches 9450..9451 positioned 90139 125 -185
 execute if score SEA_ch6_event rng5 matches 9450..9451 positioned 90139 125 -1854 run function skyblock:sea/m/skeleton_melee
 execute if score SEA_ch6_event rng5 matches 9465 positioned 90139 125 -1856 run function skyblock:sea/m/zombie_bomb
 
-execute if score SEA_ch6_event rng5 matches 9490 positioned 90139 125 -1856 run function skyblock:sea/m/zombie_knight
-execute if score SEA_ch6_event rng5 matches 9490 positioned 90139 125 -1854 run function skyblock:sea/m/zombie_knight
+execute if score SEA_ch6_event rng5 matches 9490 positioned 90139 125 -1856 unless items entity @a[tag=SEAPT] container.* heart_of_the_sea run function skyblock:sea/m/zombie_knight
+execute if score SEA_ch6_event rng5 matches 9490 positioned 90139 125 -1854 unless items entity @a[tag=SEAPT] container.* heart_of_the_sea run function skyblock:sea/m/zombie_knight
 
 #后续地图区域
 execute if score SEA_ch6_event rng5 matches 9490 positioned 90090 102 -1892 run function skyblock:sea/m/silverfish_big
