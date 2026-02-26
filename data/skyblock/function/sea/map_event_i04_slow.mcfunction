@@ -93,6 +93,8 @@ execute positioned 90210 18 113 if entity @a[tag=SEAPT,distance=..2.7] unless en
 
 scoreboard players add @e[tag=SEAch4_spawn_timer] sea_4temp1 1
 execute positioned 90192 18 104 if entity @a[tag=SEAPT,distance=..4.6] unless entity @n[tag=SEAch4_spawn_timer1,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch4_spawn_timer","SEAch4_spawn_timer1"]}
+
+execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=1..8}] as @a[tag=SEAPT,x=90192,y=18,z=115,distance=0..6] run effect give @s slowness 2 9 true
 execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=1..3}] as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~2
 execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=7..8}] as @n[tag=SEAedwina] at @s run tp @s ~ ~ ~1
 execute as @n[tag=SEAch4_spawn_timer1,scores={sea_4temp1=10}] as @n[tag=SEAedwina] at @s run tp @s ~ ~-500 ~
