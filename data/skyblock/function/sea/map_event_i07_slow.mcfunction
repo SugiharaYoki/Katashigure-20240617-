@@ -33,7 +33,7 @@ execute if score SEA_ch6_event sea_4temp4 matches 11632 as @p[tag=SEAPT] at @s a
 execute if score SEA_ch6_event sea_4temp4 matches 10011 as @n[tag=SEAexusiai] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 0.7
 execute if score SEA_ch6_event sea_4temp4 matches 10011 as @n[tag=SEAexusiai] at @s run tellraw @a[distance=..200] [{text:"诡谲之人：",color:"yellow",bold:1b},{text:"\n“祝贺你，成功出演了一场完美的歌剧。”",color:"white",bold: false}]
 execute if score SEA_ch6_event sea_4temp4 matches 10091 as @n[tag=SEAexusiai] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 0.7
-execute if score SEA_ch6_event sea_4temp4 matches 10091 as @n[tag=SEAexusiai] at @s run tellraw @a[distance=..200] [{text:"诡谲之人：",color:"yellow",bold:1b},{text:"\n“伊曼纽尔，你做到了几乎所有人类多无法做到的事。”",color:"white",bold: false}]
+execute if score SEA_ch6_event sea_4temp4 matches 10091 as @n[tag=SEAexusiai] at @s run tellraw @a[distance=..200] [{text:"诡谲之人：",color:"yellow",bold:1b},{text:"\n“伊曼纽尔，你做到了几乎所有人类都无法做到的事。”",color:"white",bold: false}]
 execute if score SEA_ch6_event sea_4temp4 matches 10181 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"伊曼纽尔：",color:"aqua",bold:1b},{text:"\n“你是谁？我似乎从没在这座平台上见过你。”",color:"white",bold: false}]
 execute if score SEA_ch6_event sea_4temp4 matches 10261 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"伊曼纽尔：",color:"aqua",bold:1b},{text:"\n“……不，我似乎很早就感知到你的存在了。”",color:"white",bold: false}]
 execute if score SEA_ch6_event sea_4temp4 matches 10331 as @n[tag=SEAexusiai] at @s run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 0.7
