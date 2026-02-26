@@ -32,11 +32,11 @@ execute as @s[scores={sea_4temp1=1}] positioned 90218 44 132 run function skyblo
 execute as @s[scores={sea_4temp1=1}] positioned 90194 44 130 run function skyblock:sea/m/mine
 execute as @s[scores={sea_4temp1=1}] positioned 90211 44 134 run function skyblock:sea/m/mine
 
-execute as @s[scores={sea_4temp1=1}] if score SEA_ch4_event_railbox rng1 matches 2000.. positioned 90151 44 130 run function skyblock:sea/m/mine
-execute as @s[scores={sea_4temp1=1}] if score SEA_ch4_event_railbox rng1 matches 2000.. positioned 90150 44 129 run function skyblock:sea/m/mine
-execute as @s[scores={sea_4temp1=1}] if score SEA_ch4_event_railbox rng1 matches 2000.. positioned 90152 44 131 run function skyblock:sea/m/mine
-execute as @s[scores={sea_4temp1=1}] if score SEA_ch4_event_railbox rng1 matches 2000.. positioned 90150 44 131 run function skyblock:sea/m/mine
-execute as @s[scores={sea_4temp1=1}] if score SEA_ch4_event_railbox rng1 matches 2000.. positioned 90152 44 129 run function skyblock:sea/m/mine
+execute as @s[scores={sea_4temp1=1}] unless score SEA_ch4_event_railbox rng1 matches 2000.. positioned 90151 44 130 run function skyblock:sea/m/mine
+execute as @s[scores={sea_4temp1=1}] unless score SEA_ch4_event_railbox rng1 matches 2000.. positioned 90150 44 129 run function skyblock:sea/m/mine
+execute as @s[scores={sea_4temp1=1}] unless score SEA_ch4_event_railbox rng1 matches 2000.. positioned 90152 44 131 run function skyblock:sea/m/mine
+execute as @s[scores={sea_4temp1=1}] unless score SEA_ch4_event_railbox rng1 matches 2000.. positioned 90150 44 131 run function skyblock:sea/m/mine
+execute as @s[scores={sea_4temp1=1}] unless score SEA_ch4_event_railbox rng1 matches 2000.. positioned 90152 44 129 run function skyblock:sea/m/mine
 execute as @s[scores={sea_4temp1=1}] positioned 90170 45 123 run tp @n[tag=SEAherb] ~ ~ ~
 execute as @s[scores={sea_4temp1=1}] positioned 90170 45 123 run tag @n[tag=SEAherb] add SEAherb2
 
