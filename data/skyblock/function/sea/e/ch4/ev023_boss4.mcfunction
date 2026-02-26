@@ -154,6 +154,10 @@ execute if score SEA_ch4_event_railbox rng9 matches 70 run tellraw @a[distance=0
 execute if score SEA_ch4_event_railbox rng9 matches 90 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
 execute if score SEA_ch4_event_railbox rng9 matches 90 run tellraw @a[distance=0..250] [{text:"艾德雯娜：",color:"green",bold:1b},{text:"\n“那我更得在这里将你杀了，接招！”",color:"white",bold: false}]
 execute if score SEA_ch4_event_railbox rng9 matches 110 run scoreboard players set @n[tag=SEAedwina] rng2 4
+
+
+execute if score SEA_ch4_event_railbox rng9 matches 115 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3
+execute if score SEA_ch4_event_railbox rng9 matches 115 run tellraw @a[distance=0..250] [{text:"艾德雯娜：",color:"green",bold:1b},{text:"\n“真不赖，可惜偷偷告诉你，你手上的装备，我也全都有。”",color:"white",bold: false}]
 execute if score SEA_ch4_event_railbox rng9 matches 130 run tellraw @a[distance=0..250] [{selector:"@p[tag=SEAPT]",color:"aqua"},{text:"：\n“现在这是装备不装备的问题吗？！”",color:"white"}]
 execute if score SEA_ch4_event_railbox rng9 matches 160 run tellraw @a[distance=0..250] [{selector:"@p[tag=SEAPT]",color:"aqua"},{text:"：\n“先别打，我是从越涵那里听说的你！！”",color:"white"}]
 execute if score SEA_ch4_event_railbox rng9 matches 180 run playsound entity.villager.ambient hostile @a ~ ~ ~ 1 1.3

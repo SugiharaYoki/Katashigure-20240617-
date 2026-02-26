@@ -41,8 +41,8 @@ execute as @s[scores={rng7=181..}] run scoreboard players add @s rng7 1
 execute store result score @s rng1 run random value 1..3
 
 
-execute as @s[scores={rng2=4},tag=!SEAboss4_phase2] as @a[tag=SEAPT] unless entity @s[tag=!e_w_02,tag=!e_w_03,tag=!e_w_04,tag=!e_w_05,tag=!e_w_06] run tellraw @s [{text:"艾德雯娜：",color:"green",bold:1b},{text:"\n“真不赖，可惜偷偷告诉你，你手上的装备，我也全都有。”",color:"white",bold: false}]
-execute as @s[scores={rng2=4},tag=!SEAboss4_phase2] as @a[tag=SEAPT] if entity @s[tag=!e_w_02,tag=!e_w_03,tag=!e_w_04,tag=!e_w_05,tag=!e_w_06] run tellraw @s [{text:"艾德雯娜：",color:"green",bold:1b},{text:"\n“真不赖，可惜你还太嫩了，甚至连一把趁手的武器都没有。”",color:"white",bold: false}]
+execute unless score SEA_ch4_event_railbox rng9 matches 110.. as @s[scores={rng2=4},tag=!SEAboss4_phase2] as @a[tag=SEAPT] unless entity @s[tag=!e_w_02,tag=!e_w_03,tag=!e_w_04,tag=!e_w_05,tag=!e_w_06] run tellraw @s [{text:"艾德雯娜：",color:"green",bold:1b},{text:"\n“真不赖，可惜偷偷告诉你，你手上的装备，我也全都有。”",color:"white",bold: false}]
+execute unless score SEA_ch4_event_railbox rng9 matches 110.. as @s[scores={rng2=4},tag=!SEAboss4_phase2] as @a[tag=SEAPT] if entity @s[tag=!e_w_02,tag=!e_w_03,tag=!e_w_04,tag=!e_w_05,tag=!e_w_06] run tellraw @s [{text:"艾德雯娜：",color:"green",bold:1b},{text:"\n“真不赖，可惜你还太嫩了，甚至连一把趁手的武器都没有。”",color:"white",bold: false}]
 execute as @s[scores={rng2=4..},tag=!SEAboss4_phase2] run tag @s add SEAboss4_phase2
 
 execute as @s[scores={rng2=8},tag=!SEAboss4_phase3] run function skyblock:sea/e/ch4/boss/system_phase3_warning
