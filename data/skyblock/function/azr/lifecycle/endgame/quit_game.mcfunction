@@ -66,7 +66,18 @@ tag @s remove azrRetrieved
 
 function skyblock:api_quit_any_game
 
-
+tag @s remove azrPlayer_respawnanchor_standingabove
+tag @s remove azrPlayer_respawnanchor_unlocked_westcourt_a
+tag @s remove azrPlayer_respawnanchor_unlocked_westcourt_b
+tag @s remove azrPlayer_respawnanchor_unlocked_westcourt_c
+tag @s remove azrPlayer_respawnanchor_unlocked_mossyroad
+tag @s remove azrPlayer_respawnanchor_unlocked_lighthall_a
+tag @s remove azrPlayer_respawnanchor_unlocked_lighthall_b
+tag @s remove azrPlayer_respawnanchor_unlocked_heatroot
+tag @s remove azrPlayer_respawnanchor_unlocked_library
+tag @s remove azrPlayer_respawnanchor_unlocked_rockpath
+tag @s remove azrPlayer_respawnanchor_unlocked_prison_a
+tag @s remove azrPlayer_respawnanchor_unlocked_prison_b
 
 #对接主城系统
 

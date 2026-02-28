@@ -1,6 +1,7 @@
 function skyblock:azr/lifecycle/jump_to/ch1_part2
 
-
+tag @s add azrPlayer_respawnanchor_unlocked_westcourt_a
+tag @s add azrPlayer_respawnanchor_unlocked_westcourt_b
 
 #scoreboard players add @a[tag=azrPlayer] Azr_emerald 50
 
