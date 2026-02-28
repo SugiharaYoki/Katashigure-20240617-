@@ -18,7 +18,14 @@ execute positioned -79857.99 40.00 -94.59 as @n[tag=AzrielTrader_dripstone_smith
 execute positioned -79857.99 40.00 -94.59 as @n[tag=AzrielTrader_dripstone_smith,distance=0..20.5] at @s if entity @a[tag=azrPlayer] run function skyblock:azr/assets/events/stage/chapter_3/npc_dripstone_smith_rodney
 
 
-
+#矿工群
+execute positioned -79836 13 -57 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=..7,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79837 14 -51 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_pickaxe","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79833 14 -50 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_pickaxe","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=12}] positioned -79834 14 -58 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_pickaxe","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=12}] positioned -79838 13 -60 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_pickaxe","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={2}] positioned -79811 12 -48 run function skyblock:azr/assets/mobs/skill/boss_working/summon
 
 
 
