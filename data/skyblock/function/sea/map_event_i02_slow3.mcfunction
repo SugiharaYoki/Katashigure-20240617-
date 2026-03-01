@@ -30,39 +30,39 @@ execute if score sea_ch2_angel_bless_trial sea_4temp2 matches 900..1340 run func
 
 
 execute if entity @a[tag=SEAPT,x=90132,y=120,z=91,dx=23,dy=15,dz=5,tag=!SEAPF] if score sea_ch2_event_enteringlevel sea_4temp1 matches ..1999 run scoreboard players set sea_ch2_event_enteringlevel sea_4temp1 2000
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2001 positioned 90151.66 128.00 96.00 run function skyblock:sea/m/unique/special_rivette
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2001 positioned 90147 129 95 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2001 positioned 90151.66 128.00 96.00 run function skyblock:sea/m/unique/special_rivette
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2001 positioned 90147 129 95 run kill @e[distance=0..5,type=shulker,tag=SEA_SEEK_DESTINATION]
 
 
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2001 at @a[tag=SEAPT,x=90132,y=120,z=90.5,dx=23,dy=15,dz=5,limit=1] run tp @a[tag=SEAPT] ~ ~ ~
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2001..2099 if entity @n[tag=SEArivette,x=90138,y=128,z=93,distance=0..3.2] run fill 90132 129 94 90131 128 92 air
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2011..2099 unless entity @n[tag=SEArivette] run fill 90132 129 94 90131 128 92 air
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2001 at @a[tag=SEAPT,x=90132,y=120,z=90.5,dx=23,dy=15,dz=5,limit=1] run tp @a[tag=SEAPT] ~ ~ ~
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2001..2099 if entity @n[tag=SEArivette,x=90138,y=128,z=93,distance=0..3.2] run fill 90132 129 94 90131 128 92 air
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2011..2099 unless entity @n[tag=SEArivette] run fill 90132 129 94 90131 128 92 air
 execute unless block 90132 128 94 air if score sea_ch2_event_enteringlevel sea_4temp1 matches 2085..2099 run scoreboard players set sea_ch2_event_enteringlevel sea_4temp1 2085
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2030 run setblock 90147 132 91 air destroy
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2030 run summon lightning_bolt 90147 131 91
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2030 run setblock 90147 132 91 air destroy
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2030 run summon lightning_bolt 90147 131 91
 
 execute if block 90132 128 94 air if score sea_ch2_event_enteringlevel sea_4temp1 matches ..2099 run scoreboard players set sea_ch2_event_enteringlevel sea_4temp1 2101
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2102 run particle large_smoke 90132 129.9 93 1 2 2 0.0 40
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2102 run particle explosion 90132 129.9 93 1 2 2 0.0 20
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2102 run playsound entity.generic.explode block @a 90132 129.9 93 1 1
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2101 run summon lightning_bolt 90130 128 92
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2101 run setblock 90130 128 92 air destroy
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2102 run particle large_smoke 90132 129.9 93 1 2 2 0.0 40
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2102 run particle explosion 90132 129.9 93 1 2 2 0.0 20
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2102 run playsound entity.generic.explode block @a 90132 129.9 93 1 1
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2101 run summon lightning_bolt 90130 128 92
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2101 run setblock 90130 128 92 air destroy
 
 
 
 execute unless block 90132 128 94 air if score sea_ch2_event_enteringlevel sea_4temp1 matches 2185..2199 run scoreboard players set sea_ch2_event_enteringlevel sea_4temp1 2185
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2112..2114 positioned 90141 128 93 run playsound block.trial_spawner.detect_player hostile @a ~ ~ ~ 20 0.6
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2112..2121 positioned 90141 128 93 run playsound block.trial_spawner.ambient_ominous hostile @a ~ ~ ~ 20 0.6
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2112..2121 positioned 90141 128 93 run playsound ambient.soul_sand_valley.mood hostile @a ~ ~ ~ 20 0.8
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2112..2114 positioned 90141 128 93 run playsound ambient.soul_sand_valley.additions hostile @a ~ ~ ~ 20 0.8
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2112..2121 positioned 90141 128 93 run particle minecraft:trial_omen ~ ~ ~ 1 1 1 0 20
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2121 positioned 90141 128 93 run kill @e[tag=SEAboss2,x=80000,dx=20000,y=-100,dy=300,z=-10000,dz=20000,type=bogged]
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2122 positioned 90141 128 93 run particle minecraft:sculk_soul ~ ~ ~ 1 1 1 0 20
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2122 positioned 90141 128 93 run function skyblock:sea/m/unique/boss2
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2122 positioned 90066 129 95 run function skyblock:sea/m/destination
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2279 positioned 90128 128 97 run function skyblock:sea/m/silverfish
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2279 positioned 90128 128 97 run function skyblock:sea/m/silverfish
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches 2279 positioned 90128 128 97 run function skyblock:sea/m/silverfish
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2112..2114 positioned 90141 128 93 run playsound block.trial_spawner.detect_player hostile @a ~ ~ ~ 20 0.6
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2112..2121 positioned 90141 128 93 run playsound block.trial_spawner.ambient_ominous hostile @a ~ ~ ~ 20 0.6
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2112..2121 positioned 90141 128 93 run playsound ambient.soul_sand_valley.mood hostile @a ~ ~ ~ 20 0.8
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2112..2114 positioned 90141 128 93 run playsound ambient.soul_sand_valley.additions hostile @a ~ ~ ~ 20 0.8
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2112..2121 positioned 90141 128 93 run particle minecraft:trial_omen ~ ~ ~ 1 1 1 0 20
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2121 positioned 90141 128 93 run kill @e[tag=SEAboss2,x=80000,dx=20000,y=-100,dy=300,z=-10000,dz=20000,type=bogged]
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2122 positioned 90141 128 93 run particle minecraft:sculk_soul ~ ~ ~ 1 1 1 0 20
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2122 positioned 90141 128 93 run function skyblock:sea/m/unique/boss2
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2122 positioned 90066 129 95 run function skyblock:sea/m/destination
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2279 positioned 90128 128 97 run function skyblock:sea/m/silverfish
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2279 positioned 90128 128 97 run function skyblock:sea/m/silverfish
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2279 positioned 90128 128 97 run function skyblock:sea/m/silverfish
 
 execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2120..4999 as @n[tag=SEAboss2,x=80000,dx=20000,y=-100,dy=300,z=-10000,dz=20000] at @s run function skyblock:sea/e/ch2/boss2
 
@@ -100,4 +100,4 @@ execute if block 90129 129 139 air run scoreboard players add sea_ch2_dwight_con
 execute if block 90077 129 145 air run scoreboard players add sea_ch2_dwight_conversation rng4 1
 scoreboard players add sea_ch2_dwight_conversation rng5 1
 
-execute f score sea_ch2_event_enteringlevel sea_4temp1 matches ..2030 run function skyblock:sea/e/ch2/ev024_ch2_dwight_1
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches ..2030 run function skyblock:sea/e/ch2/ev024_ch2_dwight_1
