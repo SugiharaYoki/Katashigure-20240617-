@@ -1,3 +1,6 @@
+
+tellraw @s {text:"『锚点传送』",bold:1b,color:"aqua"}
+
 tellraw @s[tag=azrPlayer_respawnanchor_unlocked_westcourt_a] [{text:"   - "},{text:"西庭外围",color:"#e9ffe0"},{text:" A  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40001"}}]
 tellraw @s[tag=azrPlayer_respawnanchor_unlocked_westcourt_b] [{text:"   - "},{text:"西庭外围",color:"#e9ffe0"},{text:" B  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40002"}}]
 tellraw @s[tag=azrPlayer_respawnanchor_unlocked_westcourt_c] [{text:"   - "},{text:"西庭外围",color:"#e9ffe0"},{text:" C  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40003"}}]
