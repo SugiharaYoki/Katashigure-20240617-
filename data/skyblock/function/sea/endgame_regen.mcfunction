@@ -120,6 +120,16 @@ tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove SEAbossch3_lighted
 setblock 90187 36 99 minecraft:potted_azalea_bush
 setblock 90187 36 101 minecraft:potted_azalea_bush
 
+scoreboard players set sea_ch2_event_enteringlevel sea_4temp1 -9
+scoreboard players set sea_ch2_event_enteringlevel sea_4temp2 -9
+scoreboard players set sea_ch2_event_enteringlevel sea_4temp3 -9
+scoreboard players set sea_ch2_event_enteringlevel sea_4temp4 -9
+scoreboard players set sea_ch2_event_enteringlevel sea_4temp5 -9
+scoreboard players set sea_ch2_event_enteringlevel sea_4temp6 -9
+scoreboard players set sea_ch2_event_enteringlevel sea_4temp7 -9
+scoreboard players set sea_ch2_event_enteringlevel sea_4temp8 -9
+scoreboard players set sea_ch2_event_enteringlevel sea_4temp9 -9
+
 scoreboard players set sea_ch4_switch_entrance sea_4temp2 -9
 scoreboard players set sea_ch4_switch_entrance2 sea_4temp2 -9
 scoreboard players set sea_ch4_switch_crossroad sea_4temp2 -9
