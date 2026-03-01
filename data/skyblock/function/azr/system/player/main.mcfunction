@@ -13,6 +13,7 @@ execute as @s[tag=hasLifeVitae] at @s run function skyblock:azr/system/shop/core
 execute as @s[scores={Azr_Shop=84301..8439999}] run function skyblock:azr/system/shop/purchase
 execute as @s[scores={Azr_Shop=8900101..8900199}] run function skyblock:azr/system/player/skills/chainkill/assign
 execute as @s[scores={Azr_Shop=30001..39999}] run function skyblock:azr/system/conversation_list
+execute as @s[scores={Azr_Shop=40001..49999}] if block ~ ~-0.8 ~ creaking_heart if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] run function skyblock:azr/system/transportation_list
 
 # 背包管理器
 #execute as @s[tag=azrPlayer] run function skyblock:azr/inventory_manager

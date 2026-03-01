@@ -28,12 +28,13 @@ execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 14 if entity @n[
 execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 16 if entity @n[tag=SEApillager_npc1] run fill 90111 144 140 90111 144 142 air
 execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 18 if entity @n[tag=SEApillager_npc1] run fill 90111 145 140 90111 145 142 air
 
-execute as @n[tag=SEApillager_npc1] at @s if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5] run scoreboard players add @s rng1 1
+execute as @n[tag=SEApillager_npc1,scores={rng1=..53}] at @s if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5] run scoreboard players add @s rng1 1
+execute as @n[tag=SEApillager_npc1,scores={rng1=54..}] at @s run scoreboard players add @s rng1 1
 
 execute as @n[tag=SEApillager_npc1,scores={rng1=80}] at @s run tellraw @a[tag=SEAPT] [{text:"邪教徒弩手：",color:"green",bold:1b},{text:"\n“话先说在前头，咱们井水不犯河水。”",color:"white",bold: false}]
 execute as @n[tag=SEApillager_npc1,scores={rng1=100}] at @s run tellraw @a[tag=SEAPT] [{text:"邪教徒弩手：",color:"green",bold:1b},{text:"\n“我不会给你任何情报的。相同，我也不会告诉任何人我在这里见过你。是的，说不定就是这样。”",color:"white",bold: false}]
 
 
-execute as @n[tag=SEApillager_npc1,scores={rng1=130..}] at @s unless entity @a[tag=SEAPT,tag=!SEAPF,distance=..15] run tp @s ~ ~-500 ~
-execute as @n[tag=SEApillager_npc1,scores={rng1=130..}] at @s unless entity @a[tag=SEAPT,tag=!SEAPF,distance=..15] run setblock 90060 101 142 red_candle[lit=true]
-execute as @n[tag=SEApillager_npc1,scores={rng1=130..}] at @s unless entity @a[tag=SEAPT,tag=!SEAPF,distance=..15] run kill @s
+execute as @n[tag=SEApillager_npc1,scores={rng1=80..}] at @s unless entity @a[tag=SEAPT,tag=!SEAPF,distance=..15] run tp @s ~ ~-500 ~
+execute as @n[tag=SEApillager_npc1,scores={rng1=80..}] at @s unless entity @a[tag=SEAPT,tag=!SEAPF,distance=..15] run setblock 90060 101 142 red_candle[lit=true]
+execute as @n[tag=SEApillager_npc1,scores={rng1=80..}] at @s unless entity @a[tag=SEAPT,tag=!SEAPF,distance=..15] run kill @s
