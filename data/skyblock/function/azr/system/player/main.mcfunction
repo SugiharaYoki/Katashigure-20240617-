@@ -6,6 +6,7 @@ scoreboard players set $playerExists Azr_system 1
 #execute as @s[tag=azrUpdateSpawnPoint] at @s unless block ~ ~-0.1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run spawnpoint @s ~ ~ ~
 #execute as @s[tag=azrUpdateSpawnPoint] at @s unless block ~ ~-0.1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run tag @s remove azrUpdateSpawnPoint
 execute as @s at @s if block ~ ~-0.5 ~ creaking_heart run function skyblock:azr/system/player/updatespawnpoint
+execute as @s[tag=azrPlayer_respawnanchor_standingabove] at @s unless block ~ ~-0.5 ~ creaking_heart run tag @s remove azrPlayer_respawnanchor_standingabove
 
 
 # 商店系统

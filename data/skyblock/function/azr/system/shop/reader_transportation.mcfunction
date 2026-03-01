@@ -14,7 +14,7 @@ tellraw @s[tag=azrPlayer_respawnanchor_unlocked_rockpath] [{text:"   - "},{text:
 
 
 
-
+tag @s add azrPlayer_respawnanchor_standingabove
 
 
 

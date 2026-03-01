@@ -13,7 +13,7 @@ effect give @s instant_health 1 0 true
 
 
 
-
+execute if entity @s[tag=!azrPlayer_respawnanchor_standingabove] run function skyblock:azr/system/shop/reader_transportation
 
 
 
