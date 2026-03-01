@@ -93,15 +93,15 @@ execute if score sea_ch3_event_backupradio sea_4temp3 matches -20..99 if block 9
 execute if score sea_ch3_event_backupradio sea_4temp3 matches 100..300 if block 90131 161 144 air run scoreboard players add sea_ch3_event_backupradio sea_4temp3 1
 execute if score sea_ch3_event_backupradio sea_4temp3 matches 120 positioned 90133 137 108 \
  run tellraw @a[distance=0..250] [{text:"？？？：",color:"yellow",bold:1b},{text:"\n“你……打开了备用电台？你是谁，你现在在甲板上吗？”",color:"white",bold: false}]
-execute if score sea_ch3_event_backupradio sea_4temp3 matches 160 positioned 90133 137 108 \
+execute if score sea_ch3_event_backupradio sea_4temp3 matches 150 positioned 90133 137 108 \
  run tellraw @a[distance=0..250] [{text:"？？？：",color:"yellow",bold:1b},{text:"\n“……你是个值得信任的家伙，告诉我我说的对不对？我想也是，那群疯子只会关灯，不可能忙里忙外把这么多灯给开了。”",color:"white",bold: false}]
-execute if score sea_ch3_event_backupradio sea_4temp3 matches 200 positioned 90133 137 108 \
+execute if score sea_ch3_event_backupradio sea_4temp3 matches 168 positioned 90133 137 108 \
  run tellraw @a[distance=0..250] [{text:"？？？：",color:"yellow",bold:1b},{text:"\n“让我想想，我该怎么才能……水晶祀堂！对，我会在那里等你。”",color:"white",bold: false}]
-execute if score sea_ch3_event_backupradio sea_4temp3 matches 240 positioned 90133 137 108 \
+execute if score sea_ch3_event_backupradio sea_4temp3 matches 185 positioned 90133 137 108 \
  run tellraw @a[distance=0..250] [{text:"？？？：",color:"yellow",bold:1b},{text:"\n“希望你知道我指的是哪。如果你不知道的话就请别来了，那样的话我就提供不了你任何帮助。”",color:"white",bold: false}]
-execute if score sea_ch3_event_backupradio sea_4temp3 matches 280 positioned 90133 137 108 \
+execute if score sea_ch3_event_backupradio sea_4temp3 matches 201 positioned 90133 137 108 \
  run tellraw @a[distance=0..250] [{text:"？？？：",color:"yellow",bold:1b},{text:"\n“你这样，先去钢处理车间的楼顶，那儿有我藏起来的10颗绿宝石。不要辜负我。”",color:"white",bold: false}]
-execute if score sea_ch3_event_backupradio sea_4temp3 matches 280 run fill 90124 144 117 90124 145 117 minecraft:air destroy
+execute if score sea_ch3_event_backupradio sea_4temp3 matches 201 run fill 90124 144 117 90124 145 117 minecraft:air destroy
 
 
 execute unless entity @a[tag=SEAPT,tag=e_i_27] positioned 90093 128 95 if entity @a[tag=SEAPT,distance=..4,tag=!SEAPF] if block 90124 145 117 air unless entity @n[tag=SEAch3_spawn_timer8,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer8"]}
