@@ -1,7 +1,7 @@
 function skyblock:azr/lifecycle/jump_to/ch2_start
 
-tag @s add azrPlayer_respawnanchor_unlocked_lighthall_a
-tag @s add azrPlayer_respawnanchor_unlocked_lighthall_b
+tag @a[tag=azrPlayer] add azrPlayer_respawnanchor_unlocked_lighthall_a
+tag @a[tag=azrPlayer] add azrPlayer_respawnanchor_unlocked_lighthall_b
 
 setblock -79929 39 125 air destroy
 setblock -79933 39 125 air destroy
