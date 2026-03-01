@@ -104,6 +104,8 @@ execute if entity @s[tag=sea_ch3_badend] run tellraw @s [{text:"达成结局："
 execute if entity @s[tag=sea_ch3_badend] run advancement grant @a only skyblock:sea/doc/g32
 execute if entity @s[tag=sea_ch3_badend] run function skyblock:sea/p/document_macro {doc:"g32"}
 
+scoreboard players set @s sea_flamethrower_shooting 0
+
 tag @s remove sea_ch3_badend
 #tag @s remove SEAPT_storymode
 scoreboard players reset @s sea_dead

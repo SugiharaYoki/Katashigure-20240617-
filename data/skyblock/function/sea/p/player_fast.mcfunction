@@ -7,6 +7,8 @@ execute as @s[tag=sea_t_sprint,scores={sea_runs=1..}] run function skyblock:sea/
 
 execute as @s[tag=sea_t_sprint,scores={sea_runs=..-1}] run scoreboard players add @s sea_runs 1
 
+#喷火器
+execute if items entity @s weapon.mainhand shears if score @s sea_flamethrower_shooting matches 1.. anchored eyes unless block ~ ~ ~ water run function skyblock:sea/p/flamethrower_detect
 
 execute if block 90074 103 137 minecraft:scaffolding as @s[tag=!sea_t_pounce_disabled,tag=sea_t_pounce1,predicate=skyblock:sneak] run scoreboard players set @s[scores={SEA_pounce_charge=..0}] SEA_pounce_charge 1
 execute if block 90074 103 137 minecraft:scaffolding as @s[scores={SEA_pounce_charge=1..}] run scoreboard players add @s SEA_pounce_charge 1
