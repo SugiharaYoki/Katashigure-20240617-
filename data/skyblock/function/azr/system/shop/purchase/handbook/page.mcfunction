@@ -14,6 +14,9 @@ $execute if data storage azr:handbook_vitae doc.$(eid).summoner run tellraw @s [
 $execute unless data storage azr:handbook_vitae doc.$(eid).sonic_eye run tellraw @s [{text:"★★★？",color:"#6f8095"}]
 $execute if data storage azr:handbook_vitae doc.$(eid).sonic_eye run tellraw @s [{text:"★★★非眼",color:"#4495ff",hover_event:{"action":"show_text","value":[{text:"类型：生灵\n",color:"#9c55ff",bold:1b},{text:"攻击方式：延迟远程 范围狙击\n",color:"#ffa463",bold:1b},{text:"恣眼的影子，血量极高，攻击欲望强。\n无人时保持不动，在检测到你的存在后会无声无息地靠近，距离够近后则会显形。\n显形后会在身体周围制造破坏性的激光，如果站在原地被轰到的话会受到重伤。\n独自对付它不是什么好主意。如果空间允许的话，可以试着把显形的非眼给甩开。",color:"white",bold: false}]}}]
 
+$execute unless data storage azr:handbook_vitae doc.$(eid).slime run tellraw @s [{text:"★？",color:"#6f8095"}]
+$execute if data storage azr:handbook_vitae doc.$(eid).slime run tellraw @s [{text:"★史莱姆",color:"#4495ff",hover_event:{"action":"show_text","value":[{text:"类型：生灵\n",color:"#9c55ff",bold:1b},{text:"攻击方式：近战\n",color:"#ffa463",bold:1b},{text:"移动缓慢，靠弹跳接近的小型生物。\n只要接触到就会被腐蚀，得保持一定距离解决掉。",color:"white",bold: false}]}}]
+
 
 $execute unless data storage azr:handbook_vitae doc.$(eid).undead run tellraw @s [{text:"★？",color:"#786897"}]
 $execute if data storage azr:handbook_vitae doc.$(eid).undead run tellraw @s [{text:"★走尸",color:"#8644ff",hover_event:{"action":"show_text","value":[{text:"类型：亡魂\n",color:"#9c55ff",bold:1b},{text:"攻击方式：近战\n",color:"#ffa463",bold:1b},{text:"羸弱且行动思维单一的怪物。\n可以通过各种手段快速击杀。",color:"white",bold: false}]}}]
@@ -48,6 +51,8 @@ $execute if data storage azr:handbook_vitae doc.$(eid).skeleton_sword run tellra
 
 $execute unless data storage azr:handbook_vitae doc.$(eid).skeleton_sentinel run tellraw @s [{text:"★★？",color:"#786897"}]
 $execute if data storage azr:handbook_vitae doc.$(eid).skeleton_sentinel run tellraw @s [{text:"★★岗哨流浪者",color:"#8644ff",hover_event:{"action":"show_text","value":[{text:"类型：亡魂\n",color:"#9c55ff",bold:1b},{text:"攻击方式：远程\n",color:"#ffa463",bold:1b},{text:"站在原地，不断尝试向敌人射击的呆板怪物。\n与普通骸骨相似，在生命值较低时会陷入假死状态，并快速恢复自身生命值。",color:"white",bold: false}]}}]
+$execute unless data storage azr:handbook_vitae doc.$(eid).skeleton_bogged_sword run tellraw @s [{text:"★★★？",color:"#786897"}]
+$execute if data storage azr:handbook_vitae doc.$(eid).skeleton_bogged_sword run tellraw @s [{text:"★★★朽骨剑士",color:"#8644ff",hover_event:{"action":"show_text","value":[{text:"类型：亡魂\n",color:"#9c55ff",bold:1b},{text:"攻击方式：近战\n",color:"#ffa463",bold:1b},{text:"被重金属蘑菇寄生，更加危险的骸骨剑士。\n只要不一口气击杀，就会不断尝试恢复自己。\n和其他怪物同时遇上的话会相当危险。",color:"white",bold: false}]}}]
 
 
 

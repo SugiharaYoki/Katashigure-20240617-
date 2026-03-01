@@ -70,6 +70,7 @@ execute if score @s rng1 matches 3035 run tellraw @a[tag=azrShowDialog,distance=
 execute if score @s[tag=!azrPlayer_dialogchoice_started_30107] rng1 matches 3035 positioned -79837 13 -62 as @n[tag=AzrielMob_skeleton_bogged_sword,distance=..15] run tag @s add azrPlayer_dialogchoice_requiredtarget_30107
 execute if score @s[tag=!azrPlayer_dialogchoice_started_30107] rng1 matches 3035 positioned -79860 29 -58 as @n[tag=AzrielMob_skeleton_bogged_sword,distance=..15] run tag @s add azrPlayer_dialogchoice_requiredtarget_30107
 execute if score @s[tag=!azrPlayer_dialogchoice_started_30107] rng1 matches 3035 positioned -79823 29 -59 as @n[tag=AzrielMob_skeleton_bogged_sword,distance=..15] run tag @s add azrPlayer_dialogchoice_requiredtarget_30107
+execute if score @s[tag=!azrPlayer_dialogchoice_started_30107] rng1 matches 3035 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:skeleton_bogged_sword}
 
 execute if score @s rng1 matches 3040 run tag @s add azrPlayer_dialogchoice_started_30107
 execute if score @s rng1 matches 3040 run tag @a[tag=azrPlayer] remove azrPlayer_dialogchoice_revealed_301
