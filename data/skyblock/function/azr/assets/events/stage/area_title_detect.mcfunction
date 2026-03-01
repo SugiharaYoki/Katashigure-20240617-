@@ -89,10 +89,12 @@ execute unless score @s AzrPlayer_CurrentArea matches 5 positioned -79858 31 0 i
                                                 {area_id:5,title:"重生锚点：逾怜藓路",color_code:"#035e01"}
 execute unless score @s AzrPlayer_CurrentArea matches 2 positioned -79935 32 130 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:2,title:"重生锚点：采光礼堂A",color_code:"#9ef4ff"}
-execute unless score @s AzrPlayer_CurrentArea matches 2 positioned -79903 38 10 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+execute unless score @s AzrPlayer_CurrentArea matches 2 positioned -79903 37 10 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:2,title:"重生锚点：采光礼堂B",color_code:"#9ef4ff"}
 execute unless score @s AzrPlayer_CurrentArea matches 3 positioned -79915 42 157 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
-                                                {area_id:3,title:"重生锚点：传热根系",color_code:"#5e4e80"}
+                                                {area_id:3,title:"重生锚点：传热根系A",color_code:"#5e4e80"}
+execute unless score @s AzrPlayer_CurrentArea matches 3 positioned -79932 30 187 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:3,title:"重生锚点：传热根系B",color_code:"#5e4e80"}
 execute unless score @s AzrPlayer_CurrentArea matches 4 positioned -79848 43 124 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:4,title:"重生锚点：智述文馆",color_code:"#eb83dd"}
 execute unless score @s AzrPlayer_CurrentArea matches 7 positioned -79854 29 -73 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
@@ -102,8 +104,9 @@ execute positioned -79931 32 28 if entity @s[distance=..4] run tag @s add azrPla
 execute positioned -79879 42 -42 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_westcourt_c
 execute positioned -79858 31 0 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_mossyroad
 execute positioned -79935 32 130 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_lighthall_a
-execute positioned -79903 38 10 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_lighthall_b
-execute positioned -79915 42 157 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_heatroot
+execute positioned -79903 37 10 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_lighthall_b
+execute positioned -79915 42 157 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_heatroot_a
+execute positioned -79932 30 187 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_heatroot_b
 execute positioned -79848 43 124 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_library
 execute positioned -79854 29 -73 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_rockpath
 

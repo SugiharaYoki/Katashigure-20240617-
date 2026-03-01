@@ -16,9 +16,11 @@ execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_mossyroad] if score @s
 execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_lighthall_a] if score @s \
     Azr_Shop matches 40005 positioned -79935 32 130 run tp @s ~ ~1 ~
 execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_lighthall_b] if score @s \
-    Azr_Shop matches 40006 positioned -79903 38 10 run tp @s ~ ~1 ~
-execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_heatroot] if score @s \
+    Azr_Shop matches 40006 positioned -79903 37 10 run tp @s ~ ~1 ~
+execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_heatroot_a] if score @s \
     Azr_Shop matches 40007 positioned -79915 42 157 run tp @s ~ ~1 ~
+execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_heatroot_b] if score @s \
+    Azr_Shop matches 40010 positioned -79932 30 187 run tp @s ~ ~1 ~
 execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_library] if score @s \
     Azr_Shop matches 40008 positioned -79848 43 124 run tp @s ~ ~1 ~
 execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_rockpath] if score @s \
