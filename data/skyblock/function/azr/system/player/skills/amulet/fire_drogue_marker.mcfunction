@@ -14,7 +14,7 @@ execute if entity @s[tag=MobFound_UniqueSource] if entity @n[tag=AzrielMob,dista
 
 
 execute if score @s rng1 matches 4 run particle minecraft:end_rod ~ ~0.1 ~ 0 0 0 0.0 1
-execute if score @s rng1 matches 4 run particle flame ~ ~0.1 ~ 0.05 0.05 0.05 0.01 1 force
+execute if score @s rng1 matches 4 run particle flame ~ ~0.1 ~ 0.0 0.0 0.0 0.01 1 force
 
 execute if entity @n[tag=AzrielMob,distance=..0.9] run tag @s add MobFound
 execute if entity @s[tag=MobFound] run damage @n[tag=AzrielMob,distance=..0.9] 4.5 in_fire
