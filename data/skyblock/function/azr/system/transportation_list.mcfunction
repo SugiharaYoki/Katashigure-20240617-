@@ -12,7 +12,7 @@ execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_westcourt_b] if score 
 execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_westcourt_c] if score @s \
     Azr_Shop matches 40003 positioned -79879 42 -42 run tp @s ~ ~1 ~
 execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_mossyroad] if score @s \
-    Azr_Shop matches 40004 positioned -79858 31 0 run tp @s ~ ~1 ~
+    Azr_Shop matches 40004 positioned -79858 30 0 run tp @s ~ ~1 ~
 execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_lighthall_a] if score @s \
     Azr_Shop matches 40005 positioned -79935 32 130 run tp @s ~ ~1 ~
 execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_lighthall_b] if score @s \

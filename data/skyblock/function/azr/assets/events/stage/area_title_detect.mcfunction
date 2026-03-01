@@ -85,7 +85,7 @@ execute unless score @s AzrPlayer_CurrentArea matches 1 positioned -79931 32 28 
                                                 {area_id:1,title:"重生锚点：西庭外围B",color_code:"#e9ffe0"}
 execute unless score @s AzrPlayer_CurrentArea matches 1 positioned -79879 42 -42 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:1,title:"重生锚点：西庭外围C",color_code:"#e9ffe0"}
-execute unless score @s AzrPlayer_CurrentArea matches 5 positioned -79858 31 0 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+execute unless score @s AzrPlayer_CurrentArea matches 5 positioned -79858 30 0 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:5,title:"重生锚点：逾怜藓路",color_code:"#035e01"}
 execute unless score @s AzrPlayer_CurrentArea matches 2 positioned -79935 32 130 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:2,title:"重生锚点：采光礼堂A",color_code:"#9ef4ff"}
@@ -102,7 +102,7 @@ execute unless score @s AzrPlayer_CurrentArea matches 7 positioned -79854 29 -73
 execute positioned -79943 37 -8 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_westcourt_a
 execute positioned -79931 32 28 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_westcourt_b
 execute positioned -79879 42 -42 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_westcourt_c
-execute positioned -79858 31 0 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_mossyroad
+execute positioned -79858 30 0 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_mossyroad
 execute positioned -79935 32 130 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_lighthall_a
 execute positioned -79903 37 10 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_lighthall_b
 execute positioned -79915 42 157 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_heatroot_a
