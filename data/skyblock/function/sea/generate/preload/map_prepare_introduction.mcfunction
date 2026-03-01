@@ -115,6 +115,8 @@ scoreboard players set sea_chapter_introduction sea_4temp3 0
 scoreboard objectives add sea_railbox_1 dummy
 scoreboard objectives add sea_railbox_2 dummy
 scoreboard objectives add sea_railbox_3 dummy
+scoreboard objectives add sea_flamethrower_shooting dummy
+
 
 scoreboard objectives add sea_ch6_ultimate_attack dummy
 
