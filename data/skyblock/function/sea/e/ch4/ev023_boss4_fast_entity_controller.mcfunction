@@ -53,6 +53,7 @@ execute as @s[scores={rng8=1..}] at @s run scoreboard players add @s rng8 1
 execute as @s[scores={health=..25,rng2=10..}] run scoreboard players set @s rng7 179
 execute as @s[scores={rng7=180..}] run function skyblock:sea/e/ch4/boss/system_end
 
+execute as @s[type=spectral_arrow] if entity @s[nbt={inGround:false}] at @s run function skyblock:sea/p/spectral_fast
 
 execute as @s[tag=SEAboss4_eat] at @s run function skyblock:sea/e/ch4/boss/eat
 

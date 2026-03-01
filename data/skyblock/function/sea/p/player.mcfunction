@@ -41,7 +41,7 @@ execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run playso
 execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tellraw @s {text:"获得新武器：复合弓",color: "dark_red"}
 execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tellraw @s {text:"远程武器，似乎是史丹尼舵长用于防身的武器。",color: "white"}
 execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tellraw @s {text:"绝大多数枪械都被邪教徒销毁。现如今，这种简单的武器也会发挥出意想不到的效果吧。",color: "white"}
-execute if entity @s[tag=!e_w_03b] if items entity @s[tag=SEAPT,advancements={skyblock:sea/doc/g29=false}] container.* bow run give @s mojang_banner_pattern[custom_data={sea_docg29:true}]
+execute if entity @s[tag=!e_w_03b] if items entity @s[tag=SEAPT,advancements={skyblock:sea/doc/g29=false}] container.* bow unless entity @s[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run give @s mojang_banner_pattern[custom_data={sea_docg29:true}]
 execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow unless entity @s[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run tag @s add e_w_03b_eternal
 execute if entity @s[tag=!e_w_03b] if items entity @s container.* bow run tag @s add e_w_03b
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
@@ -49,7 +49,7 @@ execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_d
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tellraw @s {text:"中程武器，左键时向前方射出火舌。虽然燃料会随时间自然恢复，但作为武器的威力欠佳。",color: "white"}
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tellraw @s {text:"射程内无限穿透，适合用于攻击成群的低血量怪物。",color: "white"}
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] unless entity @s[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run tag @s add e_w_04_eternal
-execute if entity @s[tag=!e_w_04] if items entity @s[tag=SEAPT,advancements={skyblock:sea/doc/g20=false}] container.* shears[custom_data={sea_flamethrower:true}] run give @s mojang_banner_pattern[custom_data={sea_docg20:true}]
+execute if entity @s[tag=!e_w_04] if items entity @s[tag=SEAPT,advancements={skyblock:sea/doc/g20=false}] container.* shears[custom_data={sea_flamethrower:true}] unless entity @s[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run give @s mojang_banner_pattern[custom_data={sea_docg20:true}]
 execute if entity @s[tag=!e_w_04] if items entity @s container.* shears[custom_data={sea_flamethrower:true}] run tag @s add e_w_04
 execute if items entity @s container.* snout_armor_trim_smithing_template[custom_data={sea_t_shotgun1:true}] unless entity @s[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run tag @s add e_w_04b_eternal
 execute if entity @s[tag=!e_w_06] if items entity @s container.* music_disc_5[custom_data={sea_flamethrower:true}] run playsound minecraft:ui.toast.challenge_complete player @s ~ ~ ~ 1 1
