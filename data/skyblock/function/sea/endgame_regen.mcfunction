@@ -130,6 +130,8 @@ scoreboard players set sea_ch2_event_enteringlevel sea_4temp7 -9
 scoreboard players set sea_ch2_event_enteringlevel sea_4temp8 -9
 scoreboard players set sea_ch2_event_enteringlevel sea_4temp9 -9
 
+scoreboard players set sea_ch3_event_backupradio sea_4temp3 0
+
 scoreboard players set sea_ch4_switch_entrance sea_4temp2 -9
 scoreboard players set sea_ch4_switch_entrance2 sea_4temp2 -9
 scoreboard players set sea_ch4_switch_crossroad sea_4temp2 -9

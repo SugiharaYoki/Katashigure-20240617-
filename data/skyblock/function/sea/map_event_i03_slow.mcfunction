@@ -1,21 +1,6 @@
 #
 
-execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run title @s times 0s 2s 2s
-execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run title @s title {text:"甲 板",color: "white",bold:1b}
-#execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..3.8,tag=!e_i_30] at @s run title @s subtitle {text:"厄珀娅的悲歌 第叁章",color: "gray"}
-execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run playsound ambient.crimson_forest.loop master @s ~ ~ ~ 100 0.8
-execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run playsound ambient.crimson_forest.loop master @s ~ ~ ~ 100 0.8
-execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run playsound garden2.chapter_title master @s ~ ~ ~ 100 1.0
-execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run playsound ambient.crimson_forest.additions master @s ~ ~ ~ 100 0.9
-execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run playsound ambient.crimson_forest.mood master @s ~ ~ ~ 100 0.7
-execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run playsound ambient.crimson_forest.additions master @s ~ ~ ~ 100 0.7
-execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run playsound ambient.crimson_forest.mood master @s ~ ~ ~ 100 0.9
-execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run playsound ambient.crimson_forest.additions master @s ~ ~ ~ 100 0.9
-execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run playsound ambient.crimson_forest.additions master @s ~ ~ ~ 100 0.7
-execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run playsound garden2.bgm.004 music @s ~ ~ ~ 0.7 1.0
-execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run advancement grant @a[tag=SEAPT] only skyblock:sea/chapter3
-execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run advancement grant @s only skyblock:sea/doc/documentary3
-execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run tag @s add e_i_30
+execute as @a[tag=SEAPT,x=90067,y=137,z=125,distance=0..4.3,tag=!e_i_30] at @s run function skyblock:sea/e/ch3/title
 
 execute if block 90128 138 137 air as @a[tag=SEAPT,x=90127,y=136,z=139,distance=0..3.8,tag=!e_i_37] at @s run function skyblock:sea/e/ch3/ev026_ch3_dorm_title
 
@@ -100,23 +85,23 @@ execute if block 90119 138 132 lever[powered=false] run setblock 90129 135 131 a
 execute if block 90119 138 132 lever[powered=false] run setblock 90130 135 131 air
 
 
-execute if block 90125 138 128 minecraft:waxed_copper_bulb[lit=true] \
+execute if score sea_ch3_event_backupradio sea_4temp3 matches -20..99 if block 90125 138 128 minecraft:waxed_copper_bulb[lit=true] \
  if block 90132 142 111 minecraft:waxed_copper_bulb[lit=true] \
  if block 90095 144 113 minecraft:waxed_copper_bulb[lit=true] \
- run scoreboard players set @n[tag=sc,scores={sea_4temp3=-20..99}] sea_4temp3 101
+ run scoreboard players set sea_ch3_event_backupradio sea_4temp3 101
 
-execute as @n[tag=sc,scores={sea_4temp3=100..300}] if block 90131 161 144 air run scoreboard players add @s sea_4temp3 1
-execute as @n[tag=sc,scores={sea_4temp3=120}] positioned 90133 137 108 \
+execute if score sea_ch3_event_backupradio sea_4temp3 matches 100..300 if block 90131 161 144 air run scoreboard players add sea_ch3_event_backupradio sea_4temp3 1
+execute if score sea_ch3_event_backupradio sea_4temp3 matches 120 positioned 90133 137 108 \
  run tellraw @a[distance=0..250] [{text:"？？？：",color:"yellow",bold:1b},{text:"\n“你……打开了备用电台？你是谁，你现在在甲板上吗？”",color:"white",bold: false}]
-execute as @n[tag=sc,scores={sea_4temp3=160}] positioned 90133 137 108 \
+execute if score sea_ch3_event_backupradio sea_4temp3 matches 160 positioned 90133 137 108 \
  run tellraw @a[distance=0..250] [{text:"？？？：",color:"yellow",bold:1b},{text:"\n“……你是个值得信任的家伙，告诉我我说的对不对？我想也是，那群疯子只会关灯，不可能忙里忙外把这么多灯给开了。”",color:"white",bold: false}]
-execute as @n[tag=sc,scores={sea_4temp3=200}] positioned 90133 137 108 \
+execute if score sea_ch3_event_backupradio sea_4temp3 matches 200 positioned 90133 137 108 \
  run tellraw @a[distance=0..250] [{text:"？？？：",color:"yellow",bold:1b},{text:"\n“让我想想，我该怎么才能……水晶祀堂！对，我会在那里等你。”",color:"white",bold: false}]
-execute as @n[tag=sc,scores={sea_4temp3=240}] positioned 90133 137 108 \
+execute if score sea_ch3_event_backupradio sea_4temp3 matches 240 positioned 90133 137 108 \
  run tellraw @a[distance=0..250] [{text:"？？？：",color:"yellow",bold:1b},{text:"\n“希望你知道我指的是哪。如果你不知道的话就请别来了，那样的话我就提供不了你任何帮助。”",color:"white",bold: false}]
-execute as @n[tag=sc,scores={sea_4temp3=280}] positioned 90133 137 108 \
+execute if score sea_ch3_event_backupradio sea_4temp3 matches 280 positioned 90133 137 108 \
  run tellraw @a[distance=0..250] [{text:"？？？：",color:"yellow",bold:1b},{text:"\n“你这样，先去钢处理车间的楼顶，那儿有我藏起来的10颗绿宝石。不要辜负我。”",color:"white",bold: false}]
-execute as @n[tag=sc,scores={sea_4temp3=280}] run fill 90124 144 117 90124 145 117 minecraft:air destroy
+execute if score sea_ch3_event_backupradio sea_4temp3 matches 280 run fill 90124 144 117 90124 145 117 minecraft:air destroy
 
 
 execute unless entity @a[tag=SEAPT,tag=e_i_27] positioned 90093 128 95 if entity @a[tag=SEAPT,distance=..4,tag=!SEAPF] if block 90124 145 117 air unless entity @n[tag=SEAch3_spawn_timer8,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer8"]}
