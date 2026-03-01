@@ -127,7 +127,7 @@ execute if score sea_ch2_close_storage sea_4temp4 matches 419 positioned 90130 1
 execute if score sea_ch2_close_storage sea_4temp4 matches 419 positioned 90130 128 144 if score sea_player_count rng1 matches 2.. run function skyblock:sea/m/skeleton_melee
 execute if score sea_ch2_close_storage sea_4temp4 matches 419 positioned 90130 128 144 if score sea_player_count rng1 matches 4.. run function skyblock:sea/m/skeleton
 execute if score sea_ch2_close_storage sea_4temp4 matches 423 run fill 90130 129 144 90130 128 144 air destroy
-execute if score sea_ch2_close_storage sea_4temp4 matches 405..,sea_4temp2=..901 run playsound minecraft:entity.minecart.riding ambient @a 90130 132 141 0.9 0.7
+execute if score sea_ch2_close_storage sea_4temp4 matches 405.. if score sea_ch2_event_enteringlevel sea_4temp1 matches ..901 run playsound minecraft:entity.minecart.riding ambient @a 90130 132 141 0.9 0.7
 execute if score sea_ch2_close_storage sea_4temp4 matches 403 positioned 90100 128 142 run function skyblock:sea/m/unique/special_rivette
 execute if score sea_ch2_close_storage sea_4temp4 matches 405 run setblock 90100 128 142 air
 execute if score sea_ch2_close_storage sea_4temp4 matches 405 run setblock 90100 129 142 air
