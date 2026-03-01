@@ -1,5 +1,6 @@
 scoreboard players add @s rng1 1
 
+execute if score @s rng1 matches 3 at @s run effect give @s resistance infinite 9 true
 execute if score @s rng1 matches 3 at @s run playsound entity.pillager.ambient neutral @a ~ ~ ~ 1 1.15
 execute if score @s rng1 matches 3 at @s unless block ~ ~-1 ~ bamboo_planks as @p[tag=SEAPT] at @s run tellraw @a[distance=0..50] [{text:"邪教徒弩手：",color:"green",bold:1b},{text:"\n“嘿，兄弟！我见过你！”",color:"white",bold: false}]
 execute if score @s rng1 matches 3 at @s if block ~ ~-1 ~ bamboo_planks as @p[tag=SEAPT] at @s run tellraw @a[distance=0..50] [{text:"邪教徒弩手：",color:"white",bold:1b},{text:"\n“嘿，兄弟！我见过你！不好意思，我刚上完厕所，让你见笑了。”",color:"green",bold: false}]
