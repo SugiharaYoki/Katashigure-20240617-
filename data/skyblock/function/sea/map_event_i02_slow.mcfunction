@@ -166,7 +166,7 @@ execute if block 90117 129 133 minecraft:stone_button[powered=true] if block 901
 
 
 
-execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 420..600,sea_4temp4=450.. run scoreboard players set sea_ch2_event_enteringlevel sea_4temp1 800
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 420..600 if score sea_ch2_event_enteringlevel sea_4temp4 matches 450.. run scoreboard players set sea_ch2_event_enteringlevel sea_4temp1 800
 execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 800..830 run scoreboard players add sea_ch2_event_enteringlevel sea_4temp1 1
 execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 840..855 run scoreboard players add sea_ch2_event_enteringlevel sea_4temp1 1
 execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 860..870 run scoreboard players add sea_ch2_event_enteringlevel sea_4temp1 1
