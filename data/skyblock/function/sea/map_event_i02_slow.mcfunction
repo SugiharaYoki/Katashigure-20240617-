@@ -11,7 +11,7 @@ execute unless score sea_ch2_event_enteringlevel sea_4temp1 matches 100.. run fu
 
 
 
-execute as @a[tag=SEAPT,x=90111,y=128,z=117,distance=0..2.3,tag=!e_i_14] at @s run tellraw @s {text:"物资储藏室空无一物。依据正常消耗来说……不论如何也该剩下些什么。",color: "gray"}
+execute as @a[tag=SEAPT,x=90111,y=128,z=117,distance=0..2.3,tag=!e_i_14] at @s run tellraw @s {text:"物资储藏室空无一物。\n依据正常消耗来说……不论如何也该剩下些什么。",color: "gray"}
 execute as @a[tag=SEAPT,x=90111,y=128,z=117,distance=0..2.3,tag=!e_i_14] positioned 90108.00 128.00 133.00 run function skyblock:sea/m/spider
 execute as @a[tag=SEAPT,x=90111,y=128,z=117,distance=0..2.3,tag=!e_i_14] at @s run tag @s add e_i_14
 
@@ -39,7 +39,7 @@ execute if block 90077 131 141 air if block 90075 128 126 air unless block 90075
 execute unless entity @a[tag=SEAPT,tag=e_i_18] run particle minecraft:squid_ink 90117.90 131.00 137.01 1 2 2 0.0 30
 execute unless entity @a[tag=SEAPT,tag=e_i_18] run execute positioned 90117.52 128.00 137.03 as @e[distance=0..3] at @s run damage @s 12 minecraft:hot_floor
 
-execute as @a[tag=SEAPT,x=90112,y=128,z=136,distance=0..2.3,tag=!e_i_17,tag=!e_i_18] at @s run tellraw @s {text:"这毒气让我有不好的预感……我可不要直接走进去。",color: "red"}
+execute as @a[tag=SEAPT,x=90112,y=128,z=136,distance=0..2.3,tag=!e_i_17,tag=!e_i_18] at @s run tellraw @s {text:"这毒气让我有不好的预感……\n我可不要贸然走进去。",color: "red"}
 execute as @a[tag=SEAPT,x=90112,y=128,z=136,distance=0..2.3,tag=!e_i_17] at @s run tag @s add e_i_17
 
 
