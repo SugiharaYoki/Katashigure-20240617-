@@ -30,9 +30,14 @@ execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=17}] positioned -79810 12 -48 positioned ~ ~ ~0.55 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small","AzrielMob_mob_marker"]}
 execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=13..20}] positioned -79811 12 -48 if entity @a[tag=azrPlayer,distance=..6.5] run scoreboard players set @s rng1 21
 execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=21}] positioned -79811 12 -48 as @n[tag=AzrielBossWorking,distance=0..20] run data modify entity @s Invulnerable set value 0b
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=21}] positioned -79811 12 -48 as @n[tag=AzrielBossWorking,distance=0..20] run tag @s add AzrielBossWorking_StartActing
 
 #金属学家
-#execute positioned -79811 12 -48 as @n[tag=AzrielBossWorking,distance=0..20] run scoreboard 
+execute positioned -79811 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..25] run scoreboard players add @s rng12 1
+execute positioned -79811 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..25,scores={rng12=5..16}] at @s run rotate @s facing entity @p[tag=azrPlayer]
+execute positioned -79811 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..25,scores={rng12=17}] at @s run tellraw @a[tag=azrShowDialog] [{text:"金属专家：",color:"red",bold:1b},{bold: false,text:"\n“矿石、矿石……全部都是老板的……”",color:"white"}]
+execute positioned -79811 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..25,scores={rng12=20..}] at @s run function skyblock:azr/assets/mobs/skill/boss_working/core
+execute positioned -79811 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..25,scores={rng12=24}] at @s run tellraw @a[tag=azrShowDialog] [{text:"金属专家：",color:"red",bold:1b},{bold: false,text:"\n“休想夺走，任何矿石……！”",color:"white"}]
 
 
 
