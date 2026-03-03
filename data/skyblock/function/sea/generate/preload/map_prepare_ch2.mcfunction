@@ -30,6 +30,7 @@ scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp8 0
 tag 10e959db-4b44-4cdd-b98c-350d3b454206 add SeGa_sea_ch2
 scoreboard players set SEAmusic rng1 0
 scoreboard players set sea_ch2_close_storage sea_4temp2 0
+scoreboard players set sea_ch2_close_storage sea_4temp4 0
 scoreboard players set sea_ch2_angel_bless_trial sea_4temp2 0
 scoreboard players set sea_ch2_close_storage rng7 0
 scoreboard players set sea_ch2_close_storage rng8 0
