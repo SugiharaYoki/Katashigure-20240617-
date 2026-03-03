@@ -36,8 +36,8 @@ execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79811 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..25] run scoreboard players add @s rng12 1
 execute positioned -79811 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..25,scores={rng12=5..16}] at @s run rotate @s facing entity @p[tag=azrPlayer]
 execute positioned -79811 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..25,scores={rng12=17}] at @s run tellraw @a[tag=azrShowDialog] [{text:"金属专家：",color:"red",bold:1b},{bold: false,text:"\n“矿石、矿石……全部都是老板的……”",color:"white"}]
-execute positioned -79811 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..25,scores={rng12=20..}] at @s run function skyblock:azr/assets/mobs/skill/boss_working/core
-execute positioned -79811 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..25,scores={rng12=24}] at @s run tellraw @a[tag=azrShowDialog] [{text:"金属专家：",color:"red",bold:1b},{bold: false,text:"\n“休想再偷走，任何矿石……！”",color:"white"}]
+execute positioned -79811 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..25,scores={rng12=25..}] at @s run function skyblock:azr/assets/mobs/skill/boss_working/core
+execute positioned -79811 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..25,scores={rng12=29}] at @s run tellraw @a[tag=azrShowDialog] [{text:"金属专家：",color:"red",bold:1b},{bold: false,text:"\n“休想再偷走，任何矿石……！”",color:"white"}]
 
 
 
