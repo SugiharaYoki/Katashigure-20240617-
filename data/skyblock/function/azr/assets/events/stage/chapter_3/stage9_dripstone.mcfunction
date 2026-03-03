@@ -26,8 +26,13 @@ execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=12}] positioned -79834 14 -58 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_pickaxe","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=12}] positioned -79838 13 -60 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_pickaxe","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79811 12 -48 run function skyblock:azr/assets/mobs/skill/boss_working/summon
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=19..20}] run scoreboard players set @s rng1 13
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=17}] positioned -79810 12 -48 positioned ~ ~ ~0.55 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small","AzrielMob_mob_marker"]}
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=13..20}] positioned -79811 12 -48 if entity @a[tag=azrPlayer,distance=..6.5] run scoreboard players set @s rng1 21
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=21}] positioned -79811 12 -48 as @n[tag=AzrielBossWorking,distance=0..20] run data modify entity @s Invulnerable set value 0b
 
-
+#金属学家
+#execute positioned -79811 12 -48 as @n[tag=AzrielBossWorking,distance=0..20] run scoreboard 
 
 
 
