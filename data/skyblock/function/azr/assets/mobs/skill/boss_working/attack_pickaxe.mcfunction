@@ -20,8 +20,8 @@ execute if score @s rng8 matches 6..19 as @s at @s as @p[tag=azrPlayer,distance=
 execute if score @s rng8 matches 6..19 as @s at @s unless entity @p[tag=azrPlayer,distance=5.01..8] at @s run scoreboard players set @s rng8 20
 execute if score @s rng8 matches 21 as @s at @s as @p[tag=azrPlayer,distance=5.01..8] at @s rotated ~ 0 positioned ^ ^ ^0.55 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small","AzrielMob_mob_marker"]}
 
-execute if score @s rng8 matches 39 as @s at @s run effect clear @s slowness
-execute if score @s rng8 matches 40.. run scoreboard players set @s rng8 4
+execute if score @s rng8 matches 43 as @s at @s run effect clear @s slowness
+execute if score @s rng8 matches 44.. run scoreboard players set @s rng8 4
 
 
 
