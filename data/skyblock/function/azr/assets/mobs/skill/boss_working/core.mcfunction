@@ -43,14 +43,14 @@ execute positioned -80011 25 200 store result bossbar azr:boss_hp_bar_working va
 
 
     execute as @n[tag=AzrielBossWorking] at @s run scoreboard players add @s rng8 1
-    execute as @n[tag=AzrielBossWorking] at @s if score @s[scores={Health=100..180}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 2..6
-    execute as @n[tag=AzrielBossWorking] at @s if score @s[scores={Health=50..99}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
-    execute as @n[tag=AzrielBossWorking] at @s if score @s[scores={Health=..49}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..5
+    execute as @n[tag=AzrielBossWorking] at @s if score @s[scores={Health=140..180}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..4
+    execute as @n[tag=AzrielBossWorking] at @s if score @s[scores={Health=80..139}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
+    execute as @n[tag=AzrielBossWorking] at @s if score @s[scores={Health=..79}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
     execute as @n[tag=AzrielBossWorking] at @s if score @s[scores={rng2=1..4}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_working/attack_pickaxe
+    execute as @n[tag=AzrielBossWorking] at @s if score @s[scores={rng2=5..6}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode
 
     execute as @n[tag=AzrielBossWorking] at @s if entity @s[scores={Health=180..}] run scoreboard players set @s rng8 -20
-    execute as @n[tag=AzrielBossWorking] at @s if score @s[scores={rng2=5..6}] rng8 matches 23.. run scoreboard players set @s rng8 83
-    execute as @n[tag=AzrielBossWorking] at @s if score @s[scores={rng2=5..6}] rng8 matches 83.. run scoreboard players set @s rng2 0
+    execute as @n[tag=AzrielBossWorking] at @s if score @s rng8 matches 83.. run scoreboard players set @s rng2 0
     execute as @n[tag=AzrielBossWorking] at @s if score @s rng8 matches 83.. run scoreboard players set @s rng8 -1
 
 
