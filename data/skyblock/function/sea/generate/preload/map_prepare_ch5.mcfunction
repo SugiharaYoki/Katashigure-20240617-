@@ -597,7 +597,7 @@ item replace block 90106 137 31 container.13 with music_disc_stal 1
 setblock 90150 144 57 minecraft:jukebox
 
 setblock 90132 129 28 air
-setblock 90132 129 28 chest[facing=north]{Inventory:[]}{lock:{components:{custom_data:{"sea_key05":true}}}}
+setblock 90132 129 28 chest[facing=north]{Inventory:[],lock:{components:{custom_data:{"sea_key05":true}}}}
 item replace block 90132 129 28 container.11 with arrow 8
 item replace block 90132 129 28 container.13 with disc_fragment_5 3
 item replace block 90132 129 28 container.15 with arrow 8

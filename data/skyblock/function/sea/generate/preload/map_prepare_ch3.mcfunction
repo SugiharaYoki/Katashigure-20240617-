@@ -24,7 +24,7 @@ setblock 90132 138 106 minecraft:potted_cherry_sapling
 #水晶祀堂 TE箱子
 
 setblock 90097 132 99 air
-setblock 90097 132 99 chest[facing=south]{Inventory:[]}{lock:{components:{custom_data:{"sea_key04":true}}}}
+setblock 90097 132 99 chest[facing=south]{Inventory:[],lock:{components:{custom_data:{"sea_key04":true}}}}
 item replace block 90097 132 99 container.4 with amethyst_shard 1
 item replace block 90097 132 99 container.12 with amethyst_shard 1
 item replace block 90097 132 99 container.14 with amethyst_shard 1
@@ -149,24 +149,24 @@ item replace block 90113 140 109 container.13 with emerald 3
 
 setblock 90122 137 120 chest[facing=east]{Inventory:[]}
 setblock 90086 145 116 air
-setblock 90086 145 116 chest[facing=north]{Inventory:[]}{lock:{components:{custom_data:{"sea_key09":true}}}}
+setblock 90086 145 116 chest[facing=north]{Inventory:[],lock:{components:{custom_data:{"sea_key09":true}}}}
 item replace block 90086 145 116 container.12 with flint 1
 item replace block 90086 145 116 container.14 with coal 2
 setblock 90086 143 116 air
-setblock 90086 143 116 chest[facing=north]{Inventory:[]}{lock:{components:{custom_data:{"sea_key09":true}}}}
+setblock 90086 143 116 chest[facing=north]{Inventory:[],lock:{components:{custom_data:{"sea_key09":true}}}}
 
 setblock 90086 145 114 air
-setblock 90086 145 114 chest[facing=north]{Inventory:[]}{lock:{components:{custom_data:{"sea_key08":true}}}}
+setblock 90086 145 114 chest[facing=north]{Inventory:[],lock:{components:{custom_data:{"sea_key08":true}}}}
 item replace block 90086 145 114 container.12 with gunpowder 2
 item replace block 90086 145 114 container.14 with gunpowder 2
 setblock 90086 143 114 air
-setblock 90086 143 114 chest[facing=north]{Inventory:[]}{lock:{components:{custom_data:{"sea_key08":true}}}}
+setblock 90086 143 114 chest[facing=north]{Inventory:[],lock:{components:{custom_data:{"sea_key08":true}}}}
 item replace block 90086 143 114 container.11 with gunpowder 2
 item replace block 90086 143 114 container.13 with emerald 5
 item replace block 90086 143 114 container.15 with gunpowder 2
 
 setblock 90130 151 142 air
-setblock 90130 151 142 chest[facing=east]{Inventory:[]}{lock:{components:{custom_data:{"sea_key07":true}}}}
+setblock 90130 151 142 chest[facing=east]{Inventory:[],lock:{components:{custom_data:{"sea_key07":true}}}}
 item replace block 90130 151 142 container.11 with flint 1
 item replace block 90130 151 142 container.13 with coal 1
 item replace block 90130 151 142 container.15 with vex_armor_trim_smithing_template 1

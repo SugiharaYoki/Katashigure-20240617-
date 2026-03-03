@@ -299,7 +299,7 @@ item replace block 90173 6 104 container.11 with gunpowder 1
 item replace block 90173 6 104 container.15 with emerald 3
 
 setblock 90178 27 103 air
-setblock 90178 27 103 chest[facing=north]{Inventory:[]}{lock:{components:{custom_data:{"sea_key03":true}}}}
+setblock 90178 27 103 chest[facing=north]{Inventory:[],lock:{components:{custom_data:{"sea_key03":true}}}}
 item replace block 90178 27 103 container.12 with raw_iron 1
 item replace block 90178 27 103 container.14 with coal 2
 

@@ -198,7 +198,7 @@ setblock 90091 128 121 potted_azalea_bush
 setblock 90136 123 115 potted_cactus
 setblock 90133 123 115 potted_cactus
 setblock 90095 122 128 air
-setblock 90095 122 128 chest[facing=south]{Inventory:[]}{lock:{components:{custom_data:{"sea_key01":true}}}}
+setblock 90095 122 128 chest[facing=south]{Inventory:[],lock:{components:{custom_data:{"sea_key01":true}}}}
 
 item replace block 90095 122 128 container.7 with apple 2
 item replace block 90095 122 128 container.18 with apple 1
@@ -335,7 +335,7 @@ item replace block 90091 122 130 container.13 with coal 1
 fill 90086 122 105 90086 122 104 minecraft:redstone_block
 fill 90086 122 105 90086 122 104 minecraft:air
 setblock 90096 122 117 air
-setblock 90096 122 117 chest[facing=north]{Inventory:[]}{lock:{components:{custom_data:{"sea_key02":true}}}}
+setblock 90096 122 117 chest[facing=north]{Inventory:[],lock:{components:{custom_data:{"sea_key02":true}}}}
 item replace block 90096 122 117 container.11 with arrow 3
 item replace block 90096 122 117 container.13 with wayfinder_armor_trim_smithing_template[custom_name={text:"醒殉徒石板",color:"light_purple",italic:0b}]
 item replace block 90096 122 117 container.15 with wild_armor_trim_smithing_template[custom_name={text:"狂荒石板",color:"light_purple",italic:0b}]
@@ -1011,7 +1011,7 @@ summon minecraft:item_frame 90144 162 146 {Invisible:1b,Fixed:0b,Invulnerable:0b
 setblock 90146 160 127 redstone_block
 setblock 90146 160 127 air
 
-setblock 90150 160 124 chest[facing=south]{Inventory:[]}{lock:{components:{custom_data:{"sea_key11":true}}}}
+setblock 90150 160 124 chest[facing=south]{Inventory:[],lock:{components:{custom_data:{"sea_key11":true}}}}
 item replace block 90150 160 124 container.12 with golden_carrot 3
 
 setblock 90144 161 124 air
