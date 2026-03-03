@@ -116,15 +116,15 @@ fill 90135 137 147 90135 138 147 decorated_pot{sherds:["burn_pottery_sherd","bur
 setblock 90127 143 147 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 setblock 90066 145 143 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 1, id:"minecraft:blaze_powder"}}
 
-setblock 90091 137 122 minecraft:green_shulker_box
+setblock 90091 137 122 minecraft:green_shulker_box{Inventory:[]}
 item replace block 90091 137 122 container.12 with arrow 2
 item replace block 90091 137 122 container.14 with gunpowder 1
 setblock 90089 143 123 chest[facing=north]{Inventory:[]}
 item replace block 90089 143 123 container.13 with beef 1
-setblock 90067 139 104 minecraft:green_shulker_box
+setblock 90067 139 104 minecraft:green_shulker_box{Inventory:[]}
 item replace block 90067 139 104 container.12 with coal 1
 item replace block 90067 139 104 container.14 with gunpowder 1
-setblock 90073 139 107 minecraft:brown_shulker_box
+setblock 90073 139 107 minecraft:brown_shulker_box{Inventory:[]}
 item replace block 90073 139 107 container.13 with flint 1
 setblock 90084 149 110 chest[facing=south]{Inventory:[]}
 item replace block 90084 149 110 container.13 with arrow 3

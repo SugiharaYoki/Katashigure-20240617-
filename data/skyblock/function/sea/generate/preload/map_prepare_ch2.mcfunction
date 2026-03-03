@@ -60,7 +60,7 @@ fill 90137 128 98 90136 128 98 minecraft:spruce_stairs[facing=north]
 fill 90137 128 97 90136 128 97 minecraft:spruce_fence
 fill 90137 129 97 90136 129 97 spruce_slab[type=bottom]
 
-setblock 90102 128 113 minecraft:brown_shulker_box
+setblock 90102 128 113 minecraft:brown_shulker_box{Inventory:[]}
 item replace block 90102 128 113 container.12 with rotten_flesh 2
 item replace block 90102 128 113 container.14 with rotten_flesh 2
 fill 90103 129 103 90104 128 103 minecraft:dark_prismarine

@@ -1,4 +1,4 @@
-setblock 89843 13 -163 white_shulker_box
+setblock 89843 13 -163 white_shulker_box{Inventory:[]}
 item replace block 89843 13 -163 container.0 with copper_hoe[custom_name={text:"撬棍",italic:0b,color:"red"},custom_data={sea_crowbar:true},attribute_modifiers=[{type:"attack_damage",slot:"mainhand",id:"sea_weapon:001_01",amount:1.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"sea_weapon:001_02",amount:-1.5,operation:"add_value"}],unbreakable={}]
 item replace block 89843 13 -163 container.1 with iron_axe[custom_name={text:"消防斧",italic:0b,color:"red"},custom_data={sea_safeaxe:true},attribute_modifiers=[{type:"attack_damage",slot:"mainhand",id:"sea_weapon:004_01",amount:6.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"sea_weapon:004_02",amount:-3.0,operation:"add_value"}],unbreakable={}]
 item replace block 89843 13 -163 container.2 with crossbow[custom_name={text:"工程弩",italic:0b,color:"red"},custom_data={sea_crossbow:true},unbreakable={}]

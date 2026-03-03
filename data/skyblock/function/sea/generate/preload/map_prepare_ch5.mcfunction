@@ -525,7 +525,7 @@ setblock 90138 130 65 minecraft:air
 setblock 90142 130 59 minecraft:redstone_block
 setblock 90142 130 59 minecraft:air
 
-setblock 90132 130 51 minecraft:light_gray_shulker_box
+setblock 90132 130 51 minecraft:light_gray_shulker_box{Inventory:[]}
 item replace block 90132 130 51 container.12 with shulker_shell 2
 item replace block 90132 130 51 container.14 with beef 2
 setblock 90150 130 54 furnace[facing=west]{Inventory:[]}
@@ -542,16 +542,16 @@ setblock 90144 130 47 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery
 setblock 90137 137 60 air
 setblock 90137 137 60 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 3, id:"minecraft:golden_carrot"}}
 
-setblock 90136 130 70 minecraft:light_gray_shulker_box
+setblock 90136 130 70 minecraft:light_gray_shulker_box{Inventory:[]}
 item replace block 90136 130 70 container.12 with shulker_shell 2
 item replace block 90136 130 70 container.14 with disc_fragment_5 1
 
 
-setblock 90147 137 59 minecraft:light_gray_shulker_box
+setblock 90147 137 59 minecraft:light_gray_shulker_box{Inventory:[]}
 item replace block 90147 137 59 container.12 with shulker_shell 1
 item replace block 90147 137 59 container.14 with disc_fragment_5 1
 
-setblock 90132 137 49 minecraft:light_gray_shulker_box
+setblock 90132 137 49 minecraft:light_gray_shulker_box{Inventory:[]}
 item replace block 90132 137 49 container.12 with shulker_shell 1
 item replace block 90132 137 49 container.14 with fire_charge[custom_name={text:"定时炸弹",color:"blue",italic:0b},lore=[{text:"它会在你丢出去3秒后爆炸！",color:"white",italic:0b},{text:"炸到自己的话，职业生涯就会结束了吧。",color:"white",italic:0b},{text:"可用于破坏凝胶壁障与瓦罐。",color:"white",italic:0b}]] 1
 

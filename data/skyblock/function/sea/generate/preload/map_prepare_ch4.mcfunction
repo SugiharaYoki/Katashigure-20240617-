@@ -537,7 +537,7 @@ setblock 90188 52 134 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery
 
 
 #联络箱子
-setblock 90178 39 184 light_gray_shulker_box[facing=north]
+setblock 90178 39 184 light_gray_shulker_box[facing=north]{Inventory:[]}
 
 
 
