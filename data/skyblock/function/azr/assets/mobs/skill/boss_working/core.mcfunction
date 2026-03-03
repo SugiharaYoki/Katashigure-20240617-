@@ -46,7 +46,7 @@ execute positioned -80011 25 200 store result bossbar azr:boss_hp_bar_working va
     execute as @n[tag=AzrielBossWorking] at @s if score @s[scores={Health=100..180}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 2..6
     execute as @n[tag=AzrielBossWorking] at @s if score @s[scores={Health=50..99}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
     execute as @n[tag=AzrielBossWorking] at @s if score @s[scores={Health=..49}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..5
-    execute as @n[tag=AzrielBossWorking] at @s if score @s[scores={rng2=2..4}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_working/attack_fire
+    execute as @n[tag=AzrielBossWorking] at @s if score @s[scores={rng2=2..4}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_working/attack_pickaxe
     execute as @n[tag=AzrielBossWorking] at @s if score @s[scores={rng2=1}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_working/attack_call
 
     execute as @n[tag=AzrielBossWorking] at @s if entity @s[scores={Health=180..}] run scoreboard players set @s rng8 -20
@@ -67,13 +67,11 @@ execute if score @s AzrEntityTimer matches 2001 run stopsound @a[tag=azrShowDial
 execute if score @s AzrEntityTimer matches 2001 run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 10 0.7
 execute if score @s AzrEntityTimer matches 2011 run title @a[tag=azrShowDialog] actionbar {text:"Extra Boss Annihilated",color:"green"}
 execute if score @s AzrEntityTimer matches 2011 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/sub_boss_working
-execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/fire_drogue
+execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/transportation
 execute if score @s AzrEntityTimer matches 2011 run bossbar remove azr:boss_hp_bar_working
-execute if score @s AzrEntityTimer matches 2011 run fill -79997 25 201 -79997 30 199 air replace minecraft:red_stained_glass
-execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB04
+execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB23
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s emerald 30
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
-execute if score @s AzrEntityTimer matches 2011 positioned -80011 25 200 run kill @e[tag=AzrielMob_floating_fire,type=magma_cube,distance=..15]
 
 #out
 
