@@ -19,6 +19,7 @@ forceload remove 90050 -180 90100 -130
 
 fill 90062 106 134 90062 104 134 ladder[facing=north]
 setblock 90103 122 98 minecraft:jukebox
-setblock 90125 124 143 minecraft:barrel[facing=north]
+setblock 90125 124 143 minecraft:barrel[facing=north]{Inventory:[]}
+
 item replace block 90125 124 143 container.13 with music_disc_stal 1
 

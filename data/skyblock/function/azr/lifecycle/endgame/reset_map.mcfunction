@@ -32,7 +32,7 @@ fill -80001 40 -11 -80001 40 -18 minecraft:potted_allium
 forceload add -79541 -472 -79345 -350
 forceload add -79950 -2150 -79800 -1850
 setblock -79775 106 -2074 minecraft:potted_blue_orchid
-setblock -79769 105 -2079 smoker[facing=west]
+setblock -79769 105 -2079 smoker[facing=west]{Inventory:[]}
 
 setblock -79774 105 -2077 minecraft:redstone_block
 setblock -79774 105 -2077 minecraft:air
@@ -64,7 +64,7 @@ setblock -79959 39 20 minecraft:birch_button[face=floor,facing=west]{name: "Stag
 
 
 #Stage1
-setblock -79949 34 15 chest[facing=north]
+setblock -79949 34 15 chest[facing=north]{Inventory:[]}
 item replace block -79949 34 15 container.13 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
 #setblock -79927 38 0 minecraft:white_shulker_box
 setblock -79931 37 3 minecraft:quartz_pillar{name: "Stage1 mob spawnpoint"}
@@ -85,9 +85,9 @@ fill -79942 40 3 -79944 38 3 minecraft:purple_stained_glass{name: "to Stage3 bat
 fill -79935 43 34 -79935 45 34 minecraft:purple_stained_glass{name: "to Secret Room-1"}
 setblock -79928 38 33 minecraft:quartz_pillar{name: "Spider Room"}
 fill -79931 38 40 -79931 40 40 purple_stained_glass{name: "to Stage4 alpha"}
-setblock -79918 42 25 chest[facing=north]
+setblock -79918 42 25 chest[facing=north]{Inventory:[]}
 item replace block -79918 42 25 container.13 with emerald 3
-setblock -79905 42 33 chest[facing=west]
+setblock -79905 42 33 chest[facing=west]{Inventory:[]}
 item replace block -79905 42 33 container.13 with emerald 3
 fill -79924 36 34 -79924 33 34 minecraft:purple_stained_glass
 setblock -79908 34 31 minecraft:chest[facing=west]
@@ -103,7 +103,7 @@ item replace block -79896 40 15 container.11 with minecraft:cooked_beef 1
 item replace block -79896 40 15 container.13 with minecraft:cooked_beef 1
 item replace block -79896 40 15 container.15 with minecraft:cooked_beef 1
   #天台跨墙隐藏小宝箱
-setblock -79910 43 46 chest[facing=north]
+setblock -79910 43 46 chest[facing=north]{Inventory:[]}
 item replace block -79910 43 46 container.12 with minecraft:emerald 3
 item replace block -79910 43 46 container.14 with minecraft:coal 1
 
@@ -111,7 +111,7 @@ item replace block -79910 43 46 container.14 with minecraft:coal 1
 setblock -79942 33 11 minecraft:honey_block
 setblock -79939 28 17 air
 setblock -79939 28 17 lever[facing=west]
-setblock -79948 25 22 chest[facing=east]
+setblock -79948 25 22 chest[facing=east]{Inventory:[]}
 item replace block -79948 25 22 container.12 with skull_banner_pattern[custom_name={text:"“生与死的力量全都过剩。”",color: "dark_purple",italic:0b}, lore=[{text:"这些苔藓是被一种混沌力量所影响。",color:"white", italic:0b},{text:"我在图书馆查阅过，那是被神庭控制的亡灵生物死亡时逸散的能量。",color:"white", italic:0b},{text:"但从前这个阈值都被控制在一个安全的范畴。",color:"white", italic:0b},{text:"为何偏偏是在最近过量出现？",color:"white", italic:0b}]] 1
 item replace block -79948 25 22 container.14 with coal 2
 
@@ -135,19 +135,19 @@ setblock -79912 39 32 minecraft:potted_allium
 setblock -79912 39 36 minecraft:potted_allium
 
   #小庭院跳跃宝箱
-setblock -79907 39 44 chest[facing=west]
+setblock -79907 39 44 chest[facing=west]{Inventory:[]}
 item replace block -79907 39 44 container.12 with skull_banner_pattern[custom_name={text:"“我的东南水路正门钥匙被人偷走六回了”",color: "dark_purple",italic:0b}, lore=[{text:"我不知道是谁对禁地这么感兴趣。",color:"white", italic:0b},{text:"如果只是对下水道感兴趣的话，那人完全可以选择其他三个区域。",color:"white", italic:0b},{text:"魔神的力量……果然也在被觊觎着吧。",color:"white", italic:0b}]] 1
 item replace block -79907 39 44 container.14 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
 
   #苔藓培育室
-setblock -79934 31 17 chest[facing=east]
+setblock -79934 31 17 chest[facing=east]{Inventory:[]}
 item replace block -79934 31 17 container.12 with minecraft:emerald 3
 item replace block -79934 31 17 container.14 with minecraft:emerald 3
 
 function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_mossboss
 
   #苔藓钟乳洞
-setblock -79889 29 8 chest[facing=south]
+setblock -79889 29 8 chest[facing=south]{Inventory:[]}
 item replace block -79889 29 8 container.12 with minecraft:emerald 3
 item replace block -79889 29 8 container.14 with minecraft:emerald 3
 
@@ -155,7 +155,7 @@ item replace block -79889 29 8 container.14 with minecraft:emerald 3
 setblock -79902 29 3 minecraft:honey_block
 setblock -79886 23 12 air
 setblock -79886 23 12 lever[facing=west]
-setblock -79891 21 9 chest[facing=east]
+setblock -79891 21 9 chest[facing=east]{Inventory:[]}
 item replace block -79891 21 9 container.12 with minecraft:beef 1
 item replace block -79891 21 9 container.14 with minecraft:beef 1
   #通往苔藓母猪
@@ -163,7 +163,7 @@ setblock -79927 26 8 air
 setblock -79927 26 8 lever[facing=east]
 
 #钓师之湖
-setblock -79828 24 -16 chest[facing=south]
+setblock -79828 24 -16 chest[facing=south]{Inventory:[]}
 item replace block -79828 24 -16 container.12 with minecraft:string 1
 item replace block -79828 24 -16 container.14 with minecraft:resin_clump 1
 
@@ -180,7 +180,7 @@ setblock -79931 42 42 barrier
 setblock -79930 42 41 barrier
 setblock -79932 42 41 barrier
 fill -79930 38 52 -79932 42 52 purple_stained_glass{name: "to Stage Boss1"}
-setblock -79954 32 39 chest[facing=east]
+setblock -79954 32 39 chest[facing=east]{Inventory:[]}
 item replace block -79954 32 39 container.12 with minecraft:beef 2
 item replace block -79954 32 39 container.14 with emerald 3
 fill -79932 48 44 -79930 48 44 minecraft:quartz_block
@@ -195,9 +195,9 @@ item replace block -79939 38 20 container.15 with emerald 3
 fill -79948 36 45 -79950 38 45 minecraft:purple_stained_glass
 
 #Stage Cerement
-setblock -79939 39 58 chest[facing=north]
+setblock -79939 39 58 chest[facing=north]{Inventory:[]}
 fill -79949 41 54 -79949 38 57 minecraft:purple_stained_glass{name: "to Password Panel"}
-fill -79950 38 59 -79951 38 59 chest[facing=north]
+fill -79950 38 59 -79951 38 59 chest[facing=north]{Inventory:[]}
 item replace block -79950 38 59 container.11 with minecraft:emerald 3
 item replace block -79950 38 59 container.13 with minecraft:emerald 3
 item replace block -79950 38 59 container.15 with minecraft:emerald 3
@@ -211,7 +211,7 @@ setblock -79949 39 61 minecraft:white_stained_glass
 setblock -79943 39 61 minecraft:white_stained_glass
 
 #滞空移动宝箱
-setblock -79966 43 49 chest[facing=east]
+setblock -79966 43 49 chest[facing=east]{Inventory:[]}
 item replace block -79966 43 49 container.12 with minecraft:emerald 5
 item replace block -79966 43 49 container.14 with minecraft:emerald 5
 
@@ -235,17 +235,17 @@ fill -79937 56 149 -79941 56 149 minecraft:potted_torchflower
 
 #供能区域
 fill -79931 35 171 -79931 35 183 minecraft:red_concrete replace minecraft:redstone_block
-setblock -79920 37 176 chest[facing=north]
+setblock -79920 37 176 chest[facing=north]{Inventory:[]}
 item replace block -79920 37 176 container.12 with emerald 3
 item replace block -79920 37 176 container.14 with skull_banner_pattern[custom_name={text:"“魔法燃料”",color:"dark_purple",italic:0b},lore=[{text:"请火把花培育人员时刻注意花蕊的花粉浓度。过多的花粉容易引起微型爆燃。",color:"white",italic:0b},{text:"虽然炸了这一块供能区域也只会让招待厅的一小部分伸手不见五指，但这太掉价了，我们这是正儿八经的神庭试炼，不是三流角色扮演剧本杀。",color:"white",italic:0b}]]
-setblock -79925 37 201 chest[facing=east]
+setblock -79925 37 201 chest[facing=east]{Inventory:[]}
 item replace block -79925 37 201 container.12 with emerald 3
 item replace block -79925 37 201 container.14 with resin_clump 1
 
 function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_diesel
 
   #树脂机
-setblock -79915 29 206 minecraft:gray_shulker_box
+setblock -79915 29 206 minecraft:gray_shulker_box{Inventory:[]}
 setblock -79913 29 208 minecraft:air
 
   #钥匙奖励箱
@@ -256,17 +256,17 @@ item replace block -79954 37 172 container.13 with minecraft:coal 1
 item replace block -79954 37 172 container.15 with minecraft:coal 1
 
   #高跳房间
-setblock -79908 37 185 chest[facing=west]
+setblock -79908 37 185 chest[facing=west]{Inventory:[]}
 item replace block -79908 37 185 container.12 with gunpowder 1
 item replace block -79908 37 185 container.14 with flint 1
 fill -79916 39 193 -79916 37 193 minecraft:purple_stained_glass
   #单向门
 setblock -79917 38 191 minecraft:birch_button[facing=east]
   #小阳台
-setblock -79926 45 210 chest[facing=north]
+setblock -79926 45 210 chest[facing=north]{Inventory:[]}
 item replace block -79926 45 210 container.12 with emerald 3
 item replace block -79926 45 210 container.14 with emerald 3
-setblock -79928 37 200 chest[facing=north]
+setblock -79928 37 200 chest[facing=north]{Inventory:[]}
 item replace block -79928 37 200 container.12 with resin_clump 2
 item replace block -79928 37 200 container.14 with emerald 2
 
@@ -275,11 +275,11 @@ setblock -79960 39 193 birch_button[facing=north,face=floor]
 fill -79936 36 197 -79936 36 198 air
 
   #供热迷宫
-setblock -79963 29 179 chest[facing=east]
+setblock -79963 29 179 chest[facing=east]{Inventory:[]}
 item replace block -79963 29 179 container.12 with minecraft:emerald 3
 item replace block -79963 29 179 container.14 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
   #下砸隐藏
-setblock -79957 35 184 chest[facing=south]
+setblock -79957 35 184 chest[facing=south]{Inventory:[]}
 item replace block -79957 35 184 container.12 with minecraft:resin_clump 2
 item replace block -79957 35 184 container.14 with minecraft:emerald 3
 
@@ -292,14 +292,14 @@ fill -79962 30 159 -79963 30 165 minecraft:air replace fire
 
 
   #滞空快捷连通道路
-setblock -79934 45 187 chest[facing=west]
+setblock -79934 45 187 chest[facing=west]{Inventory:[]}
 item replace block -79934 45 187 container.12 with minecraft:emerald 2
 item replace block -79934 45 187 container.14 with minecraft:emerald 2
   #跳跃宝箱奖励
-setblock -79939 33 161 chest[facing=west]
+setblock -79939 33 161 chest[facing=west]{Inventory:[]}
 item replace block -79939 33 161 container.12 with minecraft:emerald 3
 item replace block -79939 33 161 container.14 with minecraft:emerald 3
-setblock -79919 33 158 chest[facing=west]
+setblock -79919 33 158 chest[facing=west]{Inventory:[]}
 item replace block -79919 33 158 container.12 with minecraft:resin_clump 2
 item replace block -79919 33 158 container.14 with minecraft:emerald 3
 
@@ -312,7 +312,7 @@ setblock -79943 39 135 minecraft:birch_button[facing=west,face=floor]
 setblock -79892 39 119 birch_button[facing=south]
 setblock -79904 44 137 minecraft:potted_azure_bluet
 setblock -79904 44 133 minecraft:potted_azure_bluet
-setblock -79904 43 135 chest[facing=east]
+setblock -79904 43 135 chest[facing=east]{Inventory:[]}
 item replace block -79904 43 135 container.12 with minecraft:coal 1
 item replace block -79904 43 135 container.14 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
 
@@ -346,7 +346,7 @@ fill -79886 43 188 -79888 46 188 minecraft:purple_stained_glass
 fill -79862 43 163 -79862 46 165 minecraft:purple_stained_glass
 fill -79886 43 132 -79888 45 132 minecraft:purple_stained_glass
   #十字北 阳台阁楼 招待厅
-setblock -79889 46 115 chest[facing=east]
+setblock -79889 46 115 chest[facing=east]{Inventory:[]}
 item replace block -79889 46 115 container.12 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
 item replace block -79889 46 115 container.14 with emerald 3
 
@@ -376,10 +376,10 @@ setblock -79857 44 163 minecraft:potted_cornflower
 setblock -79857 44 165 minecraft:potted_cornflower
 
 #大图书馆
-setblock -79850 48 205 chest[facing=south]
+setblock -79850 48 205 chest[facing=south]{Inventory:[]}
 item replace block -79850 48 205 container.12 with emerald 3
 item replace block -79850 48 205 container.14 with skull_banner_pattern[custom_name={text:"“招待厅事务记录3”",color:"dark_purple",italic:0b},lore=[{text:"权之残影大人说过，挑战者可能会来到大图书馆。",color:"white",italic:0b},{text:"但是在此处巡逻的夜盲虫会对任何亡灵造成致命伤害。",color:"white",italic:0b},{text:"已经死去并成为亡灵的挑战者，必定会被夜盲虫重创。",color:"white",italic:0b},{text:"试炼的过程是被精心安排的，",color:"white",italic:0b},{text:"不知挑战者本人能否看穿这件事实。",color:"white",italic:0b}]] 1
-setblock -79854 48 176 chest[facing=south]
+setblock -79854 48 176 chest[facing=south]{Inventory:[]}
 item replace block -79854 48 176 container.11 with book[lore=[{text:"里面的文字跟我来说和图片没有任何区别。",color:"white",italic:0b},{text:"对我来说是不折不扣的垃圾，丢了吧。",color:"white",italic:0b}]] 1
 item replace block -79854 48 176 container.13 with book[lore=[{text:"战斗了大半天，结果白跑一趟……",color:"white",italic:0b},{text:"这本书的所有内容我都没法看懂。",color:"white",italic:0b},{text:"对我来说是不折不扣的垃圾，丢了吧。",color:"white",italic:0b}]] 1
 item replace block -79854 48 176 container.15 with book[lore=[{text:"……我就非要三本都读过才信这个邪吗？",color:"white",italic:0b}]] 1
@@ -394,12 +394,12 @@ summon glow_item_frame -79864 49 192 {Item:{id:"minecraft:resin_clump",count:1b}
 summon glow_item_frame -79864 49 178 {Item:{id:"minecraft:golden_carrot",count:1b},Facing:1}
 
   #水族馆
-setblock -79756 42 197 chest[facing=west]
+setblock -79756 42 197 chest[facing=west]{Inventory:[]}
 item replace block -79756 42 197 container.12 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
 item replace block -79756 42 197 container.14 with coal 2
 setblock -79755 42 196 minecraft:potted_azalea_bush
 setblock -79755 42 198 minecraft:potted_azalea_bush
-setblock -79764 30 218 chest[facing=north,waterlogged=true]
+setblock -79764 30 218 chest[facing=north,waterlogged=true]{Inventory:[]}
 item replace block -79764 30 218 container.13 with skull_banner_pattern[custom_name={text:"“招待厅事务记录2”",color:"dark_purple",italic:0b},lore=[{text:"有更多的巡逻士兵说，",color:"white",italic:0b},{text:"自己在执行任务时遭遇了轻微的幻听。",color:"white",italic:0b},{text:"他们说，那温柔话语声的来源像是艾奥洛斯之女：雅尔希奥妮。",color:"white",italic:0b},{text:"也就是……魔神佛卡洛。",color:"white",italic:0b}]] 1
 
 
@@ -416,19 +416,19 @@ setblock -79844 36 78 minecraft:potted_flowering_azalea_bush
 setblock -79873 39 92 birch_button[facing=east,face=floor]
 
   #小读书室
-setblock -79875 42 59 chest[facing=north]
+setblock -79875 42 59 chest[facing=north]{Inventory:[]}
 item replace block -79875 42 59 container.12 with emerald 2
 item replace block -79875 42 59 container.14 with resin_clump 2
 
   #小读书室2
-setblock -79839 42 87 chest[facing=east]
+setblock -79839 42 87 chest[facing=east]{Inventory:[]}
 item replace block -79839 42 87 container.12 with resin_clump 2
 item replace block -79839 42 87 container.14 with emerald 2
 
 #stage Index 立体读书室
 setblock -79832 35 88 minecraft:birch_button[face=floor,facing=south]
   #跳跃宝箱
-setblock -79845 43 77 chest[facing=south]
+setblock -79845 43 77 chest[facing=south]{Inventory:[]}
 item replace block -79845 43 77 container.12 with resin_clump 2
 item replace block -79845 43 77 container.14 with emerald 2
 
@@ -438,11 +438,11 @@ setblock -79870 44 124 minecraft:potted_flowering_azalea_bush
 setblock -79863 44 113 minecraft:potted_azalea_bush
 
 #双相礼堂
-setblock -79721 35 70 chest[facing=south]
+setblock -79721 35 70 chest[facing=south]{Inventory:[]}
 item replace block -79721 35 70 container.11 with emerald 1
 item replace block -79721 35 70 container.13 with resin_clump 1
 item replace block -79721 35 70 container.15 with emerald 1
-setblock -79714 40 87 chest[facing=north]
+setblock -79714 40 87 chest[facing=north]{Inventory:[]}
 item replace block -79714 40 87 container.11 with emerald 1
 item replace block -79714 40 87 container.13 with resin_clump 1
 item replace block -79714 40 87 container.15 with emerald 1
@@ -479,7 +479,7 @@ function skyblock:azr/lifecycle/endgame/reset_map_boss2
 setblock -79940 39 -87 minecraft:potted_spruce_sapling
 setblock -79939 39 -87 minecraft:potted_allium
 setblock -79937 39 -87 minecraft:potted_blue_orchid
-setblock -79939 35 -76 chest[facing=north]
+setblock -79939 35 -76 chest[facing=north]{Inventory:[]}
 item replace block -79939 35 -76 container.11 with minecraft:dried_kelp 1
 item replace block -79939 35 -76 container.13 with resin_clump 1
 item replace block -79939 35 -76 container.15 with minecraft:dried_kelp 1
@@ -517,10 +517,10 @@ setblock -79914 41 -79 minecraft:potted_azure_bluet
 setblock -79914 41 -80 minecraft:potted_poppy
 
 #蚀岩径区域
-setblock -79870 31 -72 chest[facing=west]
+setblock -79870 31 -72 chest[facing=west]{Inventory:[]}
 item replace block -79870 31 -72 container.12 with bone 1
 item replace block -79870 31 -72 container.14 with gunpowder 1
-setblock -79856 29 -58 chest[facing=west]
+setblock -79856 29 -58 chest[facing=west]{Inventory:[]}
 item replace block -79856 29 -58 container.12 with bone 1
 item replace block -79856 29 -58 container.14 with string 1
 
@@ -528,11 +528,11 @@ item replace block -79856 29 -58 container.14 with string 1
 fill -79861 28 -67 -79865 28 -68 minecraft:smooth_basalt replace air
 
   #工匠
-setblock -79860 40 -95 waxed_exposed_copper_chest[facing=east]
+setblock -79860 40 -95 waxed_exposed_copper_chest[facing=east]{Inventory:[]}
 item replace block -79860 40 -95 container.13 with coal 1
 setblock -79857 40 -97 redstone_block
 setblock -79857 40 -97 air
-setblock -79857 40 -102 waxed_exposed_copper_chest[facing=south]
+setblock -79857 40 -102 waxed_exposed_copper_chest[facing=south]{Inventory:[]}
 item replace block -79857 40 -102 container.13 with iron_ingot 1
 
   #第三章开放的路阻
@@ -559,12 +559,18 @@ setblock -79892 48 -73 potted_flowering_azalea_bush
 setblock -79889 48 -73 potted_flowering_azalea_bush
 
 #静火之坑侧面房间
-setblock -79867 44 -52 barrel[facing=north]
-setblock -79866 43 -52 barrel[facing=north]
-setblock -79865 42 -52 barrel[facing=north]
-setblock -79867 44 -57 barrel[facing=south]
-setblock -79866 43 -57 barrel[facing=south]
-setblock -79865 42 -57 barrel[facing=south]
+setblock -79867 44 -52 barrel[facing=north]{Inventory:[]}
+
+setblock -79866 43 -52 barrel[facing=north]{Inventory:[]}
+
+setblock -79865 42 -52 barrel[facing=north]{Inventory:[]}
+
+setblock -79867 44 -57 barrel[facing=south]{Inventory:[]}
+
+setblock -79866 43 -57 barrel[facing=south]{Inventory:[]}
+
+setblock -79865 42 -57 barrel[facing=south]{Inventory:[]}
+
 
 
 #监狱大门
@@ -576,22 +582,22 @@ setblock -79894 41 -123 lever[facing=east,face=floor,powered=false]
 setblock -79908 48 -127 barrel[facing=north,open=false]
 setblock -79935 48 -164 barrel[facing=up]
 
-setblock -79903 40 -104 chest[facing=west]
+setblock -79903 40 -104 chest[facing=west]{Inventory:[]}
 item replace block -79903 40 -104 container.11 with emerald 2
 item replace block -79903 40 -104 container.13 with minecraft:beef 1
 item replace block -79903 40 -104 container.15 with emerald 2
-setblock -79929 47 -110 chest[facing=south]
+setblock -79929 47 -110 chest[facing=south]{Inventory:[]}
 item replace block -79929 47 -110 container.13 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
-setblock -79919 40 -112 chest[facing=north]
+setblock -79919 40 -112 chest[facing=north]{Inventory:[]}
 item replace block -79919 40 -112 container.12 with emerald 3
 item replace block -79919 40 -112 container.14 with string
-setblock -79938 48 -144 chest[facing=east]
+setblock -79938 48 -144 chest[facing=east]{Inventory:[]}
 item replace block -79938 48 -144 container.12 with emerald 5
 item replace block -79938 48 -144 container.14 with emerald 7
-setblock -79867 40 -103 chest[facing=west]
+setblock -79867 40 -103 chest[facing=west]{Inventory:[]}
 item replace block -79867 40 -103 container.12 with iron_ingot 1
 item replace block -79867 40 -103 container.14 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
-setblock -79929 49 -123 chest[facing=south]
+setblock -79929 49 -123 chest[facing=south]{Inventory:[]}
 item replace block -79929 49 -123 container.12 with iron_ingot 1
 item replace block -79929 49 -123 container.14 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
 
@@ -624,15 +630,15 @@ setblock -79877 46 -142 minecraft:polished_andesite_slab
   #隐藏内房
 setblock -79789 27 -288 nether_brick_fence
 setblock -79789 28 -288 nether_brick_fence
-setblock -79791 28 -294 chest[facing=south]
+setblock -79791 28 -294 chest[facing=south]{Inventory:[]}
 item replace block -79791 28 -294 container.13 with gold_nugget 3
 setblock -79793 27 -289 anvil[facing=north]
 setblock -79793 27 -287 anvil[facing=north]
 
 
 #stage14
-setblock -79770 23 -460 chest[facing=east]
-setblock -79765 24 -469 chest[facing=south]
+setblock -79770 23 -460 chest[facing=east]{Inventory:[]}
+setblock -79765 24 -469 chest[facing=south]{Inventory:[]}
 
 #林场
 setblock -79804 56 -465 anvil[facing=north]
@@ -643,7 +649,7 @@ setblock -79657 23 -421 birch_button[face=floor,facing=east]
 setblock -79753 24 -462 lever[face=floor,facing=south,powered=false]
 setblock -79714 24 -460 potted_poppy
 setblock -79714 23 -458 minecraft:potted_poppy
-setblock -79713 22 -461 chest[facing=west]
+setblock -79713 22 -461 chest[facing=west]{Inventory:[]}
 item replace block -79713 22 -461 container.13 with gold_nugget 3
 setblock -79743 23 -463 minecraft:water_cauldron[level=3]
 setblock -79742 23 -463 minecraft:water_cauldron[level=2]
@@ -651,11 +657,11 @@ setblock -79742 23 -463 minecraft:water_cauldron[level=2]
 #岩浆道
 setblock -79571 11 -412 air
 setblock -79571 11 -412 trapped_chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
-setblock -79626 21 -415 chest[facing=north]
+setblock -79626 21 -415 chest[facing=north]{Inventory:[]}
 item replace block -79626 21 -415 container.11 with gold_nugget 3
 item replace block -79626 21 -415 container.13 with skull_banner_pattern[custom_name={text:"“神罚 这一切都是神罚 全部都是”",color:"dark_purple",italic:0b},lore=[{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"现在轮到我们自取灭亡了",color:"white",italic:0b}]] 1
 
-setblock -79588 8 -427 chest[facing=west]
+setblock -79588 8 -427 chest[facing=west]{Inventory:[]}
 item replace block -79588 8 -427 container.12 with gold_nugget 2
 item replace block -79588 8 -427 container.14 with gold_nugget 2
 
@@ -801,7 +807,7 @@ fill -79465 84 -342 -79467 84 -334 glass
 fill -79470 84 -337 -79462 84 -339 glass
 fill -79460 64 -343 -79471 64 -332 black_concrete replace air
 clone -79555 32 -352 -79517 32 -319 -79555 41 -352
-setblock -79416 28 -382 smoker[facing=west]
+setblock -79416 28 -382 smoker[facing=west]{Inventory:[]}
 setblock -79416 28 -381 minecraft:potted_crimson_roots
 
 setblock -79466 29 -408 minecraft:nether_brick_slab[type=top]

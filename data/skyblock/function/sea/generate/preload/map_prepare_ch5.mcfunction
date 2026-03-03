@@ -15,7 +15,7 @@ scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp8 0
 tag 10e959db-4b44-4cdd-b98c-350d3b454206 add SeGa_sea_ch5
 scoreboard players set SEAmusic rng1 0
 
-setblock 90138 83 55 chest[facing=south]
+setblock 90138 83 55 chest[facing=south]{Inventory:[]}
 item replace block 90138 83 55 container.13 with glow_berries 8
 
 fill 90125 102 101 90127 102 99 iron_block
@@ -177,7 +177,7 @@ setblock 90045 156 172 fire
 execute positioned 90129 137 109 run function skyblock:sea/m/mine
 execute positioned 90128 137 113 run function skyblock:sea/m/mine
 
-setblock 90096 71 64 chest[facing=north]
+setblock 90096 71 64 chest[facing=north]{Inventory:[]}
 item replace block 90096 71 64 container.12 with glow_berries 4
 item replace block 90096 71 64 container.14 with bread 2
 
@@ -294,11 +294,11 @@ fill 90105 93 57 90105 94 57 minecraft:magma_block
 fill 90109 102 54 90109 103 54 minecraft:magma_block
 fill 90109 114 41 90110 114 42 waxed_copper_grate
 
-setblock 90141 84 49 chest[facing=south]
+setblock 90141 84 49 chest[facing=south]{Inventory:[]}
 item replace block 90141 84 49 container.12 with echo_shard 1
 item replace block 90141 84 49 container.14 with disc_fragment_5 2
 
-setblock 90121 78 65 chest[facing=east]
+setblock 90121 78 65 chest[facing=east]{Inventory:[]}
 item replace block 90121 78 65 container.12 with arrow 3
 item replace block 90121 78 65 container.14 with gunpowder 2
 
@@ -307,16 +307,16 @@ setblock 90117 79 56 minecraft:flower_pot
 fill 90101 73 64 90101 71 66 lever[facing=west]
 setblock 90101 72 65 air
 
-setblock 90111 71 73 chest[facing=north]
+setblock 90111 71 73 chest[facing=north]{Inventory:[]}
 item replace block 90111 71 73 container.11 with vex_armor_trim_smithing_template 1
 item replace block 90111 71 73 container.15 with gunpowder 1
 
-setblock 90133 101 25 chest[facing=west]
+setblock 90133 101 25 chest[facing=west]{Inventory:[]}
 item replace block 90133 101 25 container.14 with echo_shard 1
 
-setblock 90112 102 64 chest[facing=north]
+setblock 90112 102 64 chest[facing=north]{Inventory:[]}
 item replace block 90112 102 64 container.12 with coal 2
-setblock 90126 79 57 minecraft:furnace[facing=west]
+setblock 90126 79 57 minecraft:furnace[facing=west]{Inventory:[]}
 
 fill 90105 103 34 90106 101 34 minecraft:waxed_copper_grate
 
@@ -361,21 +361,21 @@ fill 90127 130 102 90127 129 102 air
 
 #工程区
 fill 90127 121 42 90122 121 41 minecraft:iron_trapdoor[half=top]
-setblock 90119 122 52 chest[facing=north]
+setblock 90119 122 52 chest[facing=north]{Inventory:[]}
 setblock 90130 122 46 minecraft:potted_azure_bluet
 fill 90106 124 49 90104 122 49 iron_block
 fill 90099 122 53 90101 122 53 minecraft:redstone_block
 fill 90099 122 53 90101 122 53 minecraft:air
-setblock 90103 122 52 chest[facing=east]
+setblock 90103 122 52 chest[facing=east]{Inventory:[]}
 item replace block 90103 122 52 container.12 with flint
 item replace block 90103 122 52 container.14 with flint
 
 setblock 90137 123 53 lever[facing=west,face=floor]
-setblock 90137 122 58 chest[facing=west]
+setblock 90137 122 58 chest[facing=west]{Inventory:[]}
 item replace block 90137 122 58 container.12 with gunpowder
 item replace block 90137 122 58 container.14 with gunpowder
 
-setblock 90132 125 51 chest[facing=south]
+setblock 90132 125 51 chest[facing=south]{Inventory:[]}
 item replace block 90132 125 51 container.13 with emerald 5
 fill 90108 124 34 90108 122 36 iron_block
 
@@ -387,8 +387,8 @@ setblock 90133 123 49 minecraft:crimson_button[face=floor,facing=south]
 
 setblock 90100 125 37 minecraft:waxed_exposed_copper_bulb[lit=false]
 execute positioned 90117 122 42 run function skyblock:sea/m/drone
-setblock 90137 122 39 minecraft:furnace[facing=west]
-setblock 90117 77 34 minecraft:furnace[facing=north]
+setblock 90137 122 39 minecraft:furnace[facing=west]{Inventory:[]}
+setblock 90117 77 34 minecraft:furnace[facing=north]{Inventory:[]}
 
 setblock 90136 96 29 lever[facing=north]
 
@@ -422,13 +422,14 @@ setblock 90130 122 34 air
 
 setblock 90100 123 23 minecraft:potted_azalea_bush
 setblock 90109 123 23 minecraft:potted_azalea_bush
-fill 90113 124 23 90111 124 23 barrel[facing=north]
-setblock 90111 122 19 chest[facing=south]
+fill 90113 124 23 90111 124 23 barrel[facing=north]{Inventory:[]}
+
+setblock 90111 122 19 chest[facing=south]{Inventory:[]}
 item replace block 90111 122 19 container.12 with beef 2
 item replace block 90111 122 19 container.14 with bread 3
 item replace block 90112 124 23 container.13 with bread 2
 
-setblock 90137 122 40 chest[facing=west]
+setblock 90137 122 40 chest[facing=west]{Inventory:[]}
 item replace block 90137 122 40 container.13 with coal 1
 
 
@@ -438,7 +439,7 @@ fill 90138 107 21 90136 106 21 lever[facing=north]
 fill 90137 105 21 90137 104 21 lever[facing=north]
 fill 90140 106 22 90140 104 22 minecraft:waxed_copper_grate
 
-setblock 90140 104 23 chest[facing=north]
+setblock 90140 104 23 chest[facing=north]{Inventory:[]}
 #item replace block 90140 104 23 container.11 with echo_shard 2
 #item replace block 90140 104 23 container.15 with iron_ingot 2
 
@@ -446,12 +447,12 @@ setblock 90140 104 23 chest[facing=north]
 fill 90132 124 19 90134 123 19 lever[facing=south]
 fill 90135 122 21 90135 122 22 air
 
-setblock 90140 122 21 chest[facing=west]
+setblock 90140 122 21 chest[facing=west]{Inventory:[]}
 item replace block 90140 122 21 container.12 with golden_carrot 2
 
 fill 90148 124 27 90145 123 27 lever[facing=north]
 fill 90145 122 25 90146 122 25 air
-setblock 90148 123 21 chest[facing=west]
+setblock 90148 123 21 chest[facing=west]{Inventory:[]}
 item replace block 90148 123 21 container.12 with echo_shard 1
 item replace block 90148 123 21 container.14 with echo_shard 1
 
@@ -467,14 +468,14 @@ setblock 90111 122 14 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery
 setblock 90095 129 16 air
 setblock 90095 129 16 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 2, id:"minecraft:flint"}}
 
-setblock 90101 129 73 chest[facing=north]
+setblock 90101 129 73 chest[facing=north]{Inventory:[]}
 item replace block 90101 129 73 container.12 with emerald 5
 item replace block 90101 129 73 container.14 with emerald 5
 
 setblock 90096 129 28 air
 fill 90097 131 27 90097 130 25 lever[facing=east]
 
-setblock 90094 130 25 chest[facing=south]
+setblock 90094 130 25 chest[facing=south]{Inventory:[]}
 item replace block 90094 130 25 container.12 with glow_berries 3
 item replace block 90094 130 25 container.14 with beef 2
 
@@ -500,11 +501,11 @@ execute positioned 90139 114 187 run kill @e[type=item,distance=0..20]
 #if线
 setblock 90121 135 16 air
 
-setblock 90146 129 67 chest[facing=east]
+setblock 90146 129 67 chest[facing=east]{Inventory:[]}
 item replace block 90146 129 67 container.12 with golden_carrot 2
 item replace block 90146 129 67 container.14 with beef 2
-setblock 90095 130 65 minecraft:furnace[facing=north]
-setblock 90095 130 34 minecraft:furnace[facing=south]
+setblock 90095 130 65 minecraft:furnace[facing=north]{Inventory:[]}
+setblock 90095 130 34 minecraft:furnace[facing=south]{Inventory:[]}
 fill 90134 130 58 90134 130 59 minecraft:air
 
 
@@ -524,10 +525,10 @@ setblock 90138 130 65 minecraft:air
 setblock 90142 130 59 minecraft:redstone_block
 setblock 90142 130 59 minecraft:air
 
-setblock 90132 130 51 minecraft:light_gray_shulker_box
+setblock 90132 130 51 minecraft:light_gray_shulker_box{Inventory:[]}
 item replace block 90132 130 51 container.12 with shulker_shell 2
 item replace block 90132 130 51 container.14 with beef 2
-setblock 90150 130 54 furnace[facing=west]
+setblock 90150 130 54 furnace[facing=west]{Inventory:[]}
 
 #setblock 90150 131 48 minecraft:potted_blue_orchid
 setblock 90150 130 51 air
@@ -541,16 +542,16 @@ setblock 90144 130 47 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery
 setblock 90137 137 60 air
 setblock 90137 137 60 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 3, id:"minecraft:golden_carrot"}}
 
-setblock 90136 130 70 minecraft:light_gray_shulker_box
+setblock 90136 130 70 minecraft:light_gray_shulker_box{Inventory:[]}
 item replace block 90136 130 70 container.12 with shulker_shell 2
 item replace block 90136 130 70 container.14 with disc_fragment_5 1
 
 
-setblock 90147 137 59 minecraft:light_gray_shulker_box
+setblock 90147 137 59 minecraft:light_gray_shulker_box{Inventory:[]}
 item replace block 90147 137 59 container.12 with shulker_shell 1
 item replace block 90147 137 59 container.14 with disc_fragment_5 1
 
-setblock 90132 137 49 minecraft:light_gray_shulker_box
+setblock 90132 137 49 minecraft:light_gray_shulker_box{Inventory:[]}
 item replace block 90132 137 49 container.12 with shulker_shell 1
 item replace block 90132 137 49 container.14 with fire_charge[custom_name={text:"定时炸弹",color:"blue",italic:0b},lore=[{text:"它会在你丢出去3秒后爆炸！",color:"white",italic:0b},{text:"炸到自己的话，职业生涯就会结束了吧。",color:"white",italic:0b},{text:"可用于破坏凝胶壁障与瓦罐。",color:"white",italic:0b}]] 1
 
@@ -579,23 +580,24 @@ setblock 90125 129 29 minecraft:air
 setblock 90136 129 39 minecraft:air
 
 
-setblock 90128 131 18 chest[facing=west]
+setblock 90128 131 18 chest[facing=west]{Inventory:[]}
 item replace block 90128 131 18 container.12 with carrot 3
 item replace block 90128 131 18 container.14 with carrot 3
 
-setblock 90144 115 24 chest[facing=north]
+setblock 90144 115 24 chest[facing=north]{Inventory:[]}
 item replace block 90144 115 24 container.12 with coal 2
 item replace block 90144 115 24 container.14 with vex_armor_trim_smithing_template 1
 
-setblock 90104 140 29 chest[facing=west]
+setblock 90104 140 29 chest[facing=west]{Inventory:[]}
 item replace block 90104 140 29 container.14 with vex_armor_trim_smithing_template 1
 
-setblock 90106 137 31 minecraft:barrel[facing=east]
+setblock 90106 137 31 minecraft:barrel[facing=east]{Inventory:[]}
+
 item replace block 90106 137 31 container.13 with music_disc_stal 1
 setblock 90150 144 57 minecraft:jukebox
 
 setblock 90132 129 28 air
-setblock 90132 129 28 chest[facing=north]{lock:{components:{custom_data:{"sea_key05":true}}}}
+setblock 90132 129 28 chest[facing=north]{Inventory:[],lock:{components:{custom_data:{"sea_key05":true}}}}
 item replace block 90132 129 28 container.11 with arrow 8
 item replace block 90132 129 28 container.13 with disc_fragment_5 3
 item replace block 90132 129 28 container.15 with arrow 8
@@ -626,7 +628,7 @@ fill 90150 131 36 90146 131 36 minecraft:waxed_oxidized_copper_bulb[lit=false]
 fill 90147 131 29 90149 129 29 minecraft:deepslate_tiles
 
 fill 90153 129 25 90153 132 28 lever[facing=west,powered=false] replace lever
-setblock 90152 129 30 chest[facing=north]
+setblock 90152 129 30 chest[facing=north]{Inventory:[]}
 
 
 

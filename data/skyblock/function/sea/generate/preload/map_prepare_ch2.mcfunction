@@ -48,7 +48,7 @@ setblock 90092 132 112 minecraft:tinted_glass
 setblock 90096 132 112 minecraft:tinted_glass
 
 
-setblock 90089 128 114 chest[facing=north]
+setblock 90089 128 114 chest[facing=north]{Inventory:[]}
 item replace block 90089 128 114 container.11 with bread 2
 item replace block 90089 128 114 container.15 with bread 2
 
@@ -61,7 +61,7 @@ fill 90137 128 98 90136 128 98 minecraft:spruce_stairs[facing=north]
 fill 90137 128 97 90136 128 97 minecraft:spruce_fence
 fill 90137 129 97 90136 129 97 spruce_slab[type=bottom]
 
-setblock 90102 128 113 minecraft:brown_shulker_box
+setblock 90102 128 113 minecraft:brown_shulker_box{Inventory:[]}
 item replace block 90102 128 113 container.12 with rotten_flesh 2
 item replace block 90102 128 113 container.14 with rotten_flesh 2
 fill 90103 129 103 90104 128 103 minecraft:dark_prismarine
@@ -87,9 +87,8 @@ summon minecraft:item_frame 90098 129 140 {Invisible:1b,Fixed:0b,Invulnerable:0b
 summon minecraft:item_frame 90106 130 125 {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:carrot"}}
 
 
-fill 90125 128 121 90125 128 122 smoker[facing=west]
-
-setblock 90126 128 124 chest[facing=west]
+fill 90125 128 121 90125 128 122 smoker[facing=west]{Inventory:[]}
+setblock 90126 128 124 chest[facing=west]{Inventory:[]}
 item replace block 90126 128 124 container.12 with bread 2
 item replace block 90126 128 124 container.14 with rotten_flesh 2
 setblock 90125 129 127 minecraft:potted_jungle_sapling
@@ -174,15 +173,15 @@ fill 90140 128 134 90141 129 134 snow_block
 fill 90141 131 141 90141 131 145 minecraft:waxed_oxidized_copper_bulb[lit=false]
 fill 90139 128 146 90139 129 146 minecraft:polished_diorite
 #? setblock 90139 133 144 air
-setblock 90101 128 150 chest[facing=south]
+setblock 90101 128 150 chest[facing=south]{Inventory:[]}
 item replace block 90101 128 150 container.12 with emerald 2
 item replace block 90101 128 150 container.14 with emerald 2
 setblock 90101 128 141 minecraft:jukebox
 
 setblock 90101 129 138 minecraft:redstone_block
 setblock 90101 129 136 minecraft:redstone_block
-setblock 90110 128 135 chest[facing=south]
-setblock 90111 128 135 chest[facing=south]
+setblock 90110 128 135 chest[facing=south]{Inventory:[]}
+setblock 90111 128 135 chest[facing=south]{Inventory:[]}
 item replace block 90110 128 135 container.11 with bread 2
 item replace block 90110 128 135 container.15 with dune_armor_trim_smithing_template[custom_name={text:"金砂石板",color:"light_purple",italic:0b}] 1
 item replace block 90111 128 135 container.12 with rotten_flesh 2
@@ -201,12 +200,13 @@ setblock 90100 129 142 air
 setblock 90100 128 142 iron_door[facing=west,half=lower,open=false]
 setblock 90100 129 142 iron_door[facing=west,half=upper,open=false]
 setblock 90118 129 141 lever[facing=south,powered=false]
-setblock 90123 128 141 chest[facing=south]{lock:{components:{custom_data:{"sea_key10":true}}}}
+setblock 90123 128 141 chest[facing=south]{Inventory:[],lock:{components:{custom_data:{"sea_key10":true}}}}
 item replace block 90123 128 141 container.12 with coal 1
 item replace block 90123 128 141 container.14 with flint 1
 
-setblock 90118 128 120 chest[facing=west]
-setblock 90112 130 142 barrel[facing=west]
+setblock 90118 128 120 chest[facing=west]{Inventory:[]}
+setblock 90112 130 142 barrel[facing=west]{Inventory:[]}
+
 item replace block 90112 130 142 container.6 with music_disc_stal 1
 fill 90093 128 136 90093 128 140 minecraft:redstone_block
 fill 90093 128 136 90093 128 140 minecraft:air
@@ -272,7 +272,7 @@ setblock 90070 128 94 decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_s
 fill 90088 129 115 90088 128 115 minecraft:polished_tuff_wall
 setblock 90101 129 125 air
 setblock 90101 129 125 lever[facing=west,face=ceiling]
-setblock 90088 131 118 chest[facing=north]
+setblock 90088 131 118 chest[facing=north]{Inventory:[]}
 item replace block 90088 131 118 container.12 with wayfinder_armor_trim_smithing_template[custom_name={text:"醒殉徒石板",color:"light_purple",italic:0b}] 2
 item replace block 90088 131 118 container.14 with wild_armor_trim_smithing_template[custom_name={text:"狂荒石板",color:"light_purple",italic:0b}] 2
 
@@ -287,23 +287,23 @@ setblock 90077 129 152 lever[facing=west]
 fill 90077 129 145 90077 128 145 minecraft:waxed_oxidized_copper_grate
 
 
-setblock 90070 122 145 chest[facing=east]
-setblock 90073 122 143 chest[facing=south]
-setblock 90075 122 143 chest[facing=south]
+setblock 90070 122 145 chest[facing=east]{Inventory:[]}
+setblock 90073 122 143 chest[facing=south]{Inventory:[]}
+setblock 90075 122 143 chest[facing=south]{Inventory:[]}
 item replace block 90070 122 145 container.12 with beef 2
 item replace block 90070 122 145 container.14 with beef 1
 item replace block 90073 122 143 container.11 with arrow 1
 item replace block 90073 122 143 container.13 with arrow 2
 item replace block 90073 122 143 container.15 with arrow 1
 item replace block 90075 122 143 container.12 with glistering_melon_slice
-setblock 90075 122 148 furnace[facing=north]
-setblock 90075 131 127 chest[facing=north]
+setblock 90075 122 148 furnace[facing=north]{Inventory:[]}
+setblock 90075 131 127 chest[facing=north]{Inventory:[]}
 item replace block 90075 131 127 container.13 with golden_carrot 3
 fill 90075 128 126 90075 129 126 minecraft:chiseled_bookshelf[facing=south]
 setblock 90073 129 120 minecraft:potted_torchflower
 setblock 90077 129 120 minecraft:potted_torchflower
 
-setblock 90145 129 121 minecraft:furnace[facing=east]
+setblock 90145 129 121 minecraft:furnace[facing=east]{Inventory:[]}
 
 setblock 90093 128 136 minecraft:redstone_block
 setblock 90093 128 136 minecraft:air
@@ -311,8 +311,8 @@ setblock 90093 128 138 minecraft:redstone_block
 setblock 90093 128 138 minecraft:air
 setblock 90093 128 140 minecraft:redstone_block
 setblock 90093 128 140 minecraft:air
-setblock 90075 128 140 furnace[facing=west]
-setblock 90075 128 142 furnace[facing=west]
+setblock 90075 128 140 furnace[facing=west]{Inventory:[]}
+setblock 90075 128 142 furnace[facing=west]{Inventory:[]}
 
 fill 90073 128 144 90073 129 144 minecraft:waxed_oxidized_copper
 fill 90148 131 142 90146 129 142 polished_diorite
@@ -328,7 +328,7 @@ setblock 90113 133 117 lantern[hanging=true]
 fill 90104 130 103 90103 128 103 dark_prismarine
 
 
-setblock 90116 129 117 chest[facing=east]
+setblock 90116 129 117 chest[facing=east]{Inventory:[]}
 item replace block 90116 129 117 container.12 with arrow 2
 item replace block 90116 129 117 container.14 with bread 1
 
@@ -347,23 +347,25 @@ fill 90133 130 121 90133 129 121 minecraft:waxed_oxidized_copper
 setblock 90147 132 117 minecraft:tinted_glass
 setblock 90147 132 121 minecraft:tinted_glass
 setblock 90147 132 113 minecraft:tinted_glass
-setblock 90148 129 113 chest[facing=west]
+setblock 90148 129 113 chest[facing=west]{Inventory:[]}
 item replace block 90148 129 113 container.12 with arrow 2
 item replace block 90148 129 113 container.14 with arrow 2
 setblock 90117 129 133 stone_button[facing=west]
 setblock 90117 131 133 minecraft:waxed_oxidized_copper
 setblock 90113 129 133 air
-setblock 90099 129 131 barrel[facing=east]
+setblock 90099 129 131 barrel[facing=east]{Inventory:[]}
+
 item replace block 90099 129 131 container.13 with apple 1
-setblock 90097 129 132 barrel[facing=east]
+setblock 90097 129 132 barrel[facing=east]{Inventory:[]}
+
 item replace block 90097 129 132 container.13 with emerald 2
 
 #boss-ch2
-setblock 90132 128 94 barrel[facing=east]{lock:{components:{custom_name:'"SystemCardinal"'}}}
+setblock 90132 128 94 barrel[facing=east]{Inventory:[],lock:{components:{custom_name:'"SystemCardinal"'}}}
 setblock 90132 129 94 barrel[facing=up]{lock:{components:{custom_name:'"SystemCardinal"'}}}
 setblock 90131 128 93 barrel[facing=up]{lock:{components:{custom_name:'"SystemCardinal"'}}}
 setblock 90132 128 93 minecraft:grindstone[face=floor]
-setblock 90132 128 92 chest[facing=north]{lock:{components:{custom_name:'"SystemCardinal"'}}}
+setblock 90132 128 92 chest[facing=north]{Inventory:[],lock:{components:{custom_name:'"SystemCardinal"'}}}
 setblock 90131 128 92 minecraft:composter
 setblock 90132 129 93 barrier
 setblock 90132 129 92 barrier
@@ -382,7 +384,7 @@ setblock 90082 128 94 minecraft:cobweb
 setblock 90081 128 91 minecraft:cobweb
 fill 90083 130 99 90082 128 99 iron_block
 fill 90085 130 105 90083 128 105 iron_block
-setblock 90065 128 121 chest[facing=north]
+setblock 90065 128 121 chest[facing=north]{Inventory:[]}
 item replace block 90065 128 121 container.11 with carrot 2
 item replace block 90065 128 121 container.13 with golden_carrot 2
 item replace block 90065 128 121 container.15 with carrot 2
@@ -390,7 +392,7 @@ item replace block 90065 128 121 container.15 with carrot 2
 setblock 90066 129 112 minecraft:air
 fill 90066 128 96 90066 129 97 iron_bars
 
-setblock 90138 128 101 chest[facing=south]
+setblock 90138 128 101 chest[facing=south]{Inventory:[]}
 item replace block 90138 128 101 container.10 with arrow 3
 item replace block 90138 128 101 container.12 with bread 2
 item replace block 90138 128 101 container.14 with bread 2
@@ -404,16 +406,16 @@ setblock 90121 130 153 lever[facing=east]
 
 setblock 90124 128 150 air
 setblock 90124 128 150 decorated_pot{sherds:["heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd","heart_pottery_sherd"],item:{count: 3, id:"minecraft:bread"}}
-setblock 90128 128 150 chest[facing=south]
+setblock 90128 128 150 chest[facing=south]{Inventory:[]}
 item replace block 90128 128 150 container.14 with emerald 3
-setblock 90126 129 143 chest[facing=east]
+setblock 90126 129 143 chest[facing=east]{Inventory:[]}
 fill 90069 129 121 90069 128 121 slime_block
 
-setblock 90070 128 124 chest[facing=north]
+setblock 90070 128 124 chest[facing=north]{Inventory:[]}
 item replace block 90070 128 124 container.12 with gunpowder 3
 item replace block 90070 128 124 container.14 with arrow 3
 
-setblock 90099 130 148 chest[facing=west]
+setblock 90099 130 148 chest[facing=west]{Inventory:[]}
 item replace block 90099 130 148 container.12 with arrow 3
 
 setblock 90105 132 126 white_stained_glass
@@ -437,8 +439,8 @@ fill 90137 129 97 90136 129 97 spruce_slab[type=bottom]
 fill 90137 128 97 90136 128 97 spruce_fence
 fill 90137 128 98 90136 128 98 spruce_stairs[facing=north]
 
-setblock 90067 150 154 chest[facing=south]
+setblock 90067 150 154 chest[facing=south]{Inventory:[]}
 
-setblock 90074 128 150 chest[facing=south]
+setblock 90074 128 150 chest[facing=south]{Inventory:[]}
 item replace block 90074 128 150 container.12 with arrow 1
-setblock 90116 128 107 chest[facing=east]
+setblock 90116 128 107 chest[facing=east]{Inventory:[]}
