@@ -358,8 +358,7 @@ item replace block 90100 155 139 container.12 with arrow 3
 
 
 setblock 90107 156 135 air
-setblock 90107 156 135 barrel[facing=south]{Inventory:[]}
-{lock:{components:{custom_data:{"sea_key06":true}}}}
+setblock 90107 156 135 barrel[facing=south]{Inventory:[],lock:{components:{custom_data:{"sea_key06":true}}}}
 item replace block 90107 156 135 container.11 with gunpowder 1
 item replace block 90107 156 135 container.15 with vex_armor_trim_smithing_template 1
 

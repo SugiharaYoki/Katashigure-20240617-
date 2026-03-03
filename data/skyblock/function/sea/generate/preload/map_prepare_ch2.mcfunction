@@ -360,8 +360,7 @@ setblock 90097 129 132 barrel[facing=east]{Inventory:[]}
 item replace block 90097 129 132 container.13 with emerald 2
 
 #boss-ch2
-setblock 90132 128 94 barrel[facing=east]{Inventory:[]}
-{lock:{components:{custom_name:'"SystemCardinal"'}}}
+setblock 90132 128 94 barrel[facing=east]{Inventory:[],lock:{components:{custom_name:'"SystemCardinal"'}}}
 setblock 90132 129 94 barrel[facing=up]{lock:{components:{custom_name:'"SystemCardinal"'}}}
 setblock 90131 128 93 barrel[facing=up]{lock:{components:{custom_name:'"SystemCardinal"'}}}
 setblock 90132 128 93 minecraft:grindstone[face=floor]
