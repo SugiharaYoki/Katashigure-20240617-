@@ -1,8 +1,7 @@
 
 
-execute if score @s rng8 matches 2..5 run scoreboard players set @s rng8 2
 
-execute if score @s rng8 matches 2..5 unless entity @p[tag=azrPlayer,distance=..5] if entity @p[tag=azrPlayer,distance=5.01..12] run scoreboard players set @s rng8 6
+execute if score @s rng8 matches 2..5 run scoreboard players set @s rng8 6
 
 execute if score @s rng8 matches 6 as @s at @s run effect give @s slowness infinite 59 true
 execute if score @s rng8 matches 6 as @s at @s run playsound minecraft:entity.evoker.cast_spell hostile @a ~ ~ ~ 1 1.3
