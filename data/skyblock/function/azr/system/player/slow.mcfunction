@@ -9,29 +9,14 @@ execute if block ~ ~-0.2 ~ black_concrete if block ~ ~-1.2 ~ red_concrete run da
 execute unless entity @s[x=-79931,y=100,z=0,distance=..10000] run tp @s @p[tag=azrPlayer,x=-79931,y=100,z=0,distance=..10000]
 
 
-#破箱
+#解锁宝箱
 execute if items entity @s weapon.mainhand tripwire_hook at @s anchored eyes run function skyblock:azr/system/player/unlock_chest
 
 #沼泽中毒
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~0.20 water unless items entity @s hotbar.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run effect give @s poison 2 1 false
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~-0.2 water unless items entity @s hotbar.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run effect give @s poison 2 1 false
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~0.20 ~0.22 ~ water unless items entity @s hotbar.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run effect give @s poison 2 1 false
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~-0.2 ~0.22 ~ water unless items entity @s hotbar.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run effect give @s poison 2 1 false
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~0.20 water unless items entity @s container.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run damage @s 2 generic
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~ ~0.22 ~-0.2 water unless items entity @s container.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run damage @s 2 generic
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~0.20 ~0.22 ~ water unless items entity @s container.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run damage @s 2 generic
-execute if score @s AzrPlayer_CurrentArea matches 7 if block ~-0.2 ~0.22 ~ water unless items entity @s container.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run damage @s 2 generic
+execute if score @s AzrPlayer_CurrentArea matches 7 run function skyblock:azr/system/player/map_effects/rock_path_poison_water
 
 #打印剧情
-execute if items entity @s container.* skull_banner_pattern run tellraw @a[tag=azrShowDialog] [{selector:"@s"},{text:"解锁了剧情"}]
-execute if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:custom_name" run tellraw @a[tag=azrShowDialog] [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:custom_name\"","entity":"@s","interpret":true}]
-execute if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[0] run tellraw @a[tag=azrShowDialog] [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[0]","entity":"@s","interpret":true}]
-execute if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[1] run tellraw @a[tag=azrShowDialog] [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[1]","entity":"@s","interpret":true}]
-execute if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[2] run tellraw @a[tag=azrShowDialog] [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[2]","entity":"@s","interpret":true}]
-execute if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[3] run tellraw @a[tag=azrShowDialog] [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[3]","entity":"@s","interpret":true}]
-execute if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[4] run tellraw @a[tag=azrShowDialog] [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[4]","entity":"@s","interpret":true}]
-execute if data entity @s Inventory[{id:"minecraft:skull_banner_pattern"}].components."minecraft:lore"[5] run tellraw @a[tag=azrShowDialog] [{"nbt":"Inventory[{id:\"minecraft:skull_banner_pattern\"}].components.\"minecraft:lore\"[5]","entity":"@s","interpret":true}]
-execute if items entity @s container.* skull_banner_pattern run clear @s minecraft:skull_banner_pattern
+execute if items entity @s container.* skull_banner_pattern run function skyblock:azr/system/player/unlock_story
 
 #DEBUG-错误信息
 execute if items entity @s weapon.mainhand *[custom_data~{Error:1b}] run tellraw @a[tag=azrShowDialog] [{text:"\n=============\n"},\
