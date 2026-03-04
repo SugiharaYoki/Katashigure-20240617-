@@ -74,6 +74,7 @@ execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,distance=0..30] run stopsound @a[tag=azrShowDialog] music minecraft:renegade
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,distance=0..30] run tp @s ~ ~-200 ~
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,distance=0..30] positioned -79811 12 -48 run function skyblock:azr/assets/mobs/skill/boss_working/summon
+execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,distance=0..30] positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players set @s rng1 3
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,distance=0..30] run kill @s
 
 
