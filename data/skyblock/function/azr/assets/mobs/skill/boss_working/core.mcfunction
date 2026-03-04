@@ -14,7 +14,7 @@ execute if score @s rng9 matches 2860.. run scoreboard players set @s rng9 0
 execute if score @s AzrEntityTimer matches 1 run scoreboard players set @s rng13 1
 execute if score @s AzrEntityTimer matches 1 run bossbar add azr:boss_hp_bar_working "痴醉于劣铜的矿役 - 金属学家"
 execute if score @s AzrEntityTimer matches 1 run bossbar set azr:boss_hp_bar_working color red
-execute if score @s AzrEntityTimer matches 1 run bossbar set azr:boss_hp_bar_working max 200
+execute if score @s AzrEntityTimer matches 1 run bossbar set azr:boss_hp_bar_working max 320
 execute if score @s AzrEntityTimer matches 1 run bossbar set azr:boss_hp_bar_working players @a[tag=azrPlayer]
 
 execute store result score @s Health run data get entity @s Health
@@ -30,9 +30,9 @@ execute store result bossbar azr:boss_hp_bar_working value run scoreboard player
 
 
     execute as @s at @s run scoreboard players add @s rng8 1
-    execute as @s at @s if score @s[scores={Health=140..180}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..4
-    execute as @s at @s if score @s[scores={Health=80..139}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
-    execute as @s at @s if score @s[scores={Health=..79}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
+    execute as @s at @s if score @s[scores={Health=240..300}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..4
+    execute as @s at @s if score @s[scores={Health=160..239}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
+    execute as @s at @s if score @s[scores={Health=..159}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
     execute as @s at @s if score @s[scores={rng2=1..4}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_working/attack_pickaxe
     execute as @s at @s if score @s[scores={rng2=5..6}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode
 
