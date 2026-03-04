@@ -38,7 +38,7 @@ execute if score @s rng8 matches 39 as @s at @s positioned ~ ~9.3 ~ run function
 execute if score @s rng8 matches 39 as @s at @s positioned ~ ~10.3 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone
 
 
-execute if score @s rng8 matches 55 as @s at @s run effect clear @s slowness
+execute if score @s rng8 matches 40 as @s at @s run effect clear @s slowness
 execute if score @s rng8 matches 55.. run scoreboard players set @s rng8 999
 
 
