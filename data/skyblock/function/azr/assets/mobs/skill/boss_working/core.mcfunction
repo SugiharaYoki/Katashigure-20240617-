@@ -33,8 +33,8 @@ execute store result bossbar azr:boss_hp_bar_working value run scoreboard player
     execute as @s at @s if score @s[scores={Health=240..300}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..4
     execute as @s at @s if score @s[scores={Health=160..239}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
     execute as @s at @s if score @s[scores={Health=..159}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
-    execute as @s at @s if score @s[scores={rng2=1..4}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_working/attack_pickaxe
-    execute as @s at @s if score @s[scores={rng2=5..6}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode
+    execute as @s at @s if score @s[scores={rng2=1..3}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_working/attack_pickaxe
+    execute as @s at @s if score @s[scores={rng2=4..6}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode
 
     execute as @s at @s if score @s rng8 matches 143.. run scoreboard players set @s rng2 0
     execute as @s at @s if score @s rng8 matches 143.. run scoreboard players set @s rng8 -1
