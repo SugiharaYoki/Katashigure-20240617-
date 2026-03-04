@@ -2,7 +2,7 @@
 
 execute if score @s rng8 matches 2..5 run scoreboard players set @s rng8 6
 
-execute if score @s rng8 matches 6 as @s at @s run effect give @s slowness infinite 59 true
+execute if score @s rng8 matches 27 as @s at @s run effect give @s slowness infinite 59 true
 execute if score @s rng8 matches 6 as @s at @s run playsound minecraft:entity.evoker.cast_spell hostile @a ~ ~ ~ 1 1.3
 execute if score @s rng8 matches 6 as @s at @s run particle minecraft:flame ~ ~0.3 ~ 0.2 0 0.2 0 20
 execute if score @s rng8 matches 6..25 as @s at @s run particle minecraft:flame ~ ~0.3 ~ 1.2 0 1.2 0 3
