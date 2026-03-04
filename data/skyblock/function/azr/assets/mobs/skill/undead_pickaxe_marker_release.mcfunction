@@ -11,6 +11,8 @@ execute if score @s rng1 matches 6.. at @s run particle flame ~ ~2.2 ~ 0 0 0 0 1
 execute if score @s rng1 matches 7.. at @s run particle flame ~ ~2.7 ~ 0 0 0 0 1 force
 
 execute if score @s rng1 matches 8.. at @s as @a[distance=0..0.6] at @s run damage @s 8 generic
+execute if score @s rng1 matches 8.. at @s positioned ~ ~-1 ~ as @a[distance=0..0.6] at @s run damage @s 8 mob_attack
+execute if score @s rng1 matches 8.. at @s positioned ~ ~0 ~ as @a[distance=0..0.6] at @s run damage @s 8 mob_attack
 execute if score @s rng1 matches 8.. at @s positioned ~ ~1 ~ as @a[distance=0..0.6] at @s run damage @s 8 mob_attack
 execute if score @s rng1 matches 8.. at @s positioned ~ ~2 ~ as @a[distance=0..0.6] at @s run damage @s 8 mob_attack
 execute if score @s rng1 matches 8.. at @s positioned ~ ~3 ~ as @a[distance=0..0.6] at @s run damage @s 8 mob_attack
