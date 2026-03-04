@@ -15,14 +15,14 @@ execute if score random_enemy_thread AzrTimerStack matches 6.. run scoreboard pl
 #动态难度
 execute if score stage_main_thread AzrTimerStack matches 1.. run function skyblock:azr/system/entity/dynamic_difficulty
 #不死骑士（花园1）
-execute as @e[type=zombie,tag=AZRknight,x=-79943,y=38,z=135,distance=..4000] at @s if entity @a[tag=azrPlayer,distance=0..8] run function skyblock:azr/assets/events/effects/zombie_knight
+#execute as @e[type=zombie,tag=AZRknight,x=-79943,y=38,z=135,distance=..4000] at @s if entity @a[tag=azrPlayer,distance=0..8] run function skyblock:azr/assets/events/effects/zombie_knight
 
 #关卡控制部分
 #Introduction
-#execute if score stage_bonus Azr_system matches 1.. if score playerCount Azr_system matches 1.. run function skyblock:azr/lifecycle/stage_bonus
-#execute if score playerCount Azr_system matches 1.. run function skyblock:azr/lifecycle/stage_normal
+execute if score stage_bonus Azr_system matches 1.. if score playerCount Azr_system matches 1.. run function skyblock:azr/lifecycle/stage_bonus
+execute if score playerCount Azr_system matches 1.. run function skyblock:azr/lifecycle/stage_normal
 
-execute if entity @a[tag=!azrRetrieved,tag=azrPlayer,tag=AZR_SEAawakened] if score stage Azr_system matches 1.. as @p[tag=!azrRetrieved,tag=azrPlayer,tag=AZR_SEAawakened] at @s run function skyblock:azr/lifecycle/jump_to/generic_retrieve
+
 
 
 #章节设置
@@ -31,8 +31,6 @@ execute if score stage Azr_system matches 11..24 run scoreboard players set chap
 execute if score stage Azr_system matches 25..35 run scoreboard players set chapter Azr_system 3
 execute if score stage Azr_system matches 36.. run scoreboard players set chapter Azr_system 4
 
-#AzrielNPC
-execute as @e[tag=AzrielNPC] at @s run rotate @s facing entity @p[distance=..3]
 
 #重置计时器
 scoreboard players set tick_count_main AzrTimerStack 0

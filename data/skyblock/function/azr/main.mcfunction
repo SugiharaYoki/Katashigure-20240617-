@@ -83,20 +83,14 @@ function skyblock:azr/assets/events/effects/wish_fountain_transfer
 execute as @e[x=-79931,y=100,z=0,distance=..10000] run function skyblock:azr/system/entity/main
 
 execute if score tick_count_main AzrTimerStack matches -2147483648..2147483647 run scoreboard players add tick_count_main AzrTimerStack 1
-execute if score timer_static_5s AzrTimerStack matches -2147483648..2147483647 run scoreboard players add timer_static_5s AzrTimerStack 1
 # 在部分关卡的的四倍速走秒
 #execute if score stage Azr_system matches -1..5 if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/lifecycle/core
 #execute if score stage Azr_system matches 34..45 if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/lifecycle/core
 #execute if score stage Azr_system matches 51..61 if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/lifecycle/core
 #execute if score stage Azr_system matches 63.. if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/lifecycle/core
 execute if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/lifecycle/core
-execute if score timer_static_5s AzrTimerStack matches 100.. run function skyblock:azr/lifecycle/timer_static_5s
 
 # 部分关卡检测玩家位置在这里处理
-#第二关-第三关 5
-execute if score stage Azr_system matches 5..43 if score playerCount Azr_system matches 1.. positioned -79931 28 -5 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/mobs/skill/boss_mossboss/core
-execute if score stage Azr_system matches 8..43 if score playerCount Azr_system matches 1.. positioned -80008 25 200 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/mobs/skill/boss_diesel/core
-execute if score stage Azr_system matches 8..43 if score playerCount Azr_system matches 1.. positioned -79820 43 136 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/mobs/skill/boss_assassin/core
 
 
 
@@ -111,10 +105,7 @@ execute if score stage Azr_system matches 8..43 if score playerCount Azr_system 
     
     # stage1 event code:2
     execute if score stage Azr_system matches 2 run function skyblock:azr/assets/events/stage/chapter_1/stage1_event
-    # BOSS1 code:10
-    execute if score stage Azr_system matches 10 as @n[tag=AzrielBossA] at @s if score stage_main_thread AzrTimerStack matches ..1002 run function skyblock:azr/assets/events/stage/chapter_1/stage_boss1
-    # BOSS2 code:[23,24]
-    execute if score stage Azr_system matches 23..24 as @n[tag=AzrielBossA] at @s run function skyblock:azr/assets/events/stage/chapter_2/stage_boss2
+
     # BOSS4 Code:62
     execute if score stage Azr_system matches 62 run function skyblock:azr/assets/events/stage/stage_boss4
 

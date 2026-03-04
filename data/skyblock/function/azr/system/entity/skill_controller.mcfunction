@@ -13,11 +13,9 @@ execute if entity @s[tag=AzrielMob_undead_shadow] run function skyblock:azr/asse
 execute if entity @s[tag=AzrielMob_nightblind] run function skyblock:azr/assets/mobs/skill/nightblind
 execute if entity @s[tag=AzrielMob_undead_baby] run function skyblock:azr/assets/mobs/skill/undead_baby
 execute if entity @s[tag=AzrielMob_sonic_eye] run function skyblock:azr/assets/mobs/skill/sonic_eye
-execute if entity @s[tag=AzrielMob_slime] at @s as @a[distance=0..0.7,tag=azrPlayer] run damage @s 2 drown by @n[tag=AzrielMob_slime]
 
 execute if entity @s[tag=AzrielMob_trap_spike_display] run function skyblock:azr/assets/mobs/skill/trap_spike
 
-kill @s[type=drowned,tag=!AzrielMob_stypeDROWNED]
 
 execute if entity @s[tag=AzrielMob_zombie_villager_armor] run function skyblock:azr/assets/mobs/skill/zombie_villager_armor
 execute if entity @s[tag=AzrielMob_zombie_villager_cleric] run function skyblock:azr/assets/mobs/skill/zombie_villager_cleric
