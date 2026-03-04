@@ -32,6 +32,7 @@ execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=21}] run fill -79823 11 -45 -79823 17 -47 minecraft:red_stained_glass replace air
 execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=21}] positioned -79811 12 -48 as @n[tag=AzrielBossWorking,distance=0..20] run data modify entity @s Invulnerable set value 0b
 execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=21}] positioned -79811 12 -48 as @n[tag=AzrielBossWorking,distance=0..20] run data modify entity @s NoAI set value 0b
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=21}] positioned -79811 12 -48 as @n[tag=AzrielBossWorking,distance=0..20] run effect give @s slowness 2 99 true
 execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=21}] positioned -79811 12 -48 as @n[tag=AzrielBossWorking,distance=0..20] run tag @s add AzrielBossWorking_StartActing
 
 #金属学家
