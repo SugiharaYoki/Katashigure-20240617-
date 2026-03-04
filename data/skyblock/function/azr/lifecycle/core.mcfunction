@@ -19,8 +19,8 @@ execute as @e[type=zombie,tag=AZRknight,x=-79943,y=38,z=135,distance=..4000] at 
 
 #关卡控制部分
 #Introduction
-execute if score stage_bonus Azr_system matches 1.. if score playerCount Azr_system matches 1.. run function skyblock:azr/lifecycle/stage_bonus
-execute if score playerCount Azr_system matches 1.. run function skyblock:azr/lifecycle/stage_normal
+#execute if score stage_bonus Azr_system matches 1.. if score playerCount Azr_system matches 1.. run function skyblock:azr/lifecycle/stage_bonus
+#execute if score playerCount Azr_system matches 1.. run function skyblock:azr/lifecycle/stage_normal
 
 execute if entity @a[tag=!azrRetrieved,tag=azrPlayer,tag=AZR_SEAawakened] if score stage Azr_system matches 1.. as @p[tag=!azrRetrieved,tag=azrPlayer,tag=AZR_SEAawakened] at @s run function skyblock:azr/lifecycle/jump_to/generic_retrieve
 
