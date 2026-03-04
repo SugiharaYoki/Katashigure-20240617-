@@ -1,8 +1,6 @@
 
 
-execute if score @s rng8 matches 2..5 run scoreboard players set @s rng8 2
-
-execute if score @s rng8 matches 2..5 unless entity @p[tag=azrPlayer,distance=..5] if entity @p[tag=azrPlayer,distance=5.01..12] run scoreboard players set @s rng8 6
+execute if score @s rng8 matches 2..5 run scoreboard players set @s rng8 6
 
 execute if score @s rng8 matches 6 as @s at @s run effect give @s slowness infinite 59 true
 execute if score @s rng8 matches 6 as @s at @s run playsound minecraft:entity.evoker.cast_spell hostile @a ~ ~ ~ 1 1.3
@@ -18,7 +16,6 @@ execute if score @s rng8 matches 6..25 as @s at @s rotated 225 0 positioned ^ ^ 
 execute if score @s rng8 matches 6..25 as @s at @s rotated 270 0 positioned ^ ^ ^1.2 at @s run function skyblock:azr/assets/mobs/skill/undead_pickaxe_particle_place
 execute if score @s rng8 matches 6..25 as @s at @s rotated 315 0 positioned ^ ^ ^1.2 at @s run function skyblock:azr/assets/mobs/skill/undead_pickaxe_particle_place
 execute if score @s rng8 matches 8 run scoreboard players set @s rng8 13
-execute if score @s rng8 matches 6..25 as @s at @s unless entity @p[tag=azrPlayer,distance=5.01..8] at @s run scoreboard players set @s rng8 20
 
 execute if score @s rng8 matches 27 as @s at @s run particle minecraft:large_smoke ~ ~0.3 ~ 1.2 0.3 1.2 0.05 8
 execute if score @s rng8 matches 30 as @s at @s run particle minecraft:large_smoke ~ ~2.3 ~ 1.2 0.4 1.2 0.05 8
