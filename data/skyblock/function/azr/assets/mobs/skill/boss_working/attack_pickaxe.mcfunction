@@ -18,7 +18,6 @@ execute if score @s[scores={Health=..140}] rng8 matches 13 as @s at @s run funct
 execute if score @s[scores={Health=..120}] rng8 matches 13 as @s at @s run function skyblock:azr/assets/mobs/skill/boss_working/attack_pickaxe_random
 execute if score @s[scores={Health=..100}] rng8 matches 13 as @s at @s run function skyblock:azr/assets/mobs/skill/boss_working/attack_pickaxe_random
 execute if score @s rng8 matches 6..19 as @s at @s as @p[tag=azrPlayer,distance=5.01..8] positioned ^ ^ ^0.55 at @s run function skyblock:azr/assets/mobs/skill/undead_pickaxe_particle_place
-execute if score @s rng8 matches 6..19 as @s at @s unless entity @p[tag=azrPlayer,distance=5.01..8] at @s run scoreboard players set @s rng8 20
 execute if score @s rng8 matches 21 as @s at @s as @p[tag=azrPlayer,distance=5.01..8] at @s rotated ~ 0 positioned ^ ^ ^0.55 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small","AzrielMob_mob_marker"]}
 
 execute if score @s rng8 matches 43 as @s at @s run effect clear @s slowness
