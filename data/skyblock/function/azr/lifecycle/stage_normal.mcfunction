@@ -32,9 +32,9 @@ execute if score stage Azr_system matches 12 run function skyblock:azr/assets/ev
 #第五关-第六关 14
 execute if score stage Azr_system matches 14 run scoreboard players set stage_main_thread AzrTimerStack 0
 #第六关 15
-execute if score stage Azr_system matches 11..43 run function skyblock:azr/assets/events/stage/chapter_2/stage6_energy
-execute if score stage Azr_system matches 11..43 run function skyblock:azr/assets/events/stage/chapter_2/stage6_library
-execute if score stage Azr_system matches 11..43 run function skyblock:azr/assets/events/stage/chapter_2/stage6_guesthall
+#execute if score stage Azr_system matches 11..43 run function skyblock:azr/assets/events/stage/chapter_2/stage6_energy
+#execute if score stage Azr_system matches 11..43 run function skyblock:azr/assets/events/stage/chapter_2/stage6_library
+#execute if score stage Azr_system matches 11..43 run function skyblock:azr/assets/events/stage/chapter_2/stage6_guesthall
 execute if score stage Azr_system matches 15 run function skyblock:azr/assets/events/stage/chapter_2/stage6
 #第六关-第七关 16
 execute if score stage Azr_system matches 16 run function skyblock:azr/assets/events/stage/stage_event2
