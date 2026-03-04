@@ -57,15 +57,6 @@ execute as @s[scores={rng13=..4}] at @s if entity @s[scores={Health=..60}] run s
    
 execute if score @s AzrEntityTimer matches 1999 if entity @s run scoreboard players set @s AzrEntityTimer 999
 execute if score @s AzrEntityTimer matches 100..1999 unless entity @s run scoreboard players set @s AzrEntityTimer 2000
-execute if score @s AzrEntityTimer matches 2001 run stopsound @a[tag=azrShowDialog]
-execute if score @s AzrEntityTimer matches 2001 run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 10 0.7
-execute if score @s AzrEntityTimer matches 2011 run title @a[tag=azrShowDialog] actionbar {text:"Extra Boss Annihilated",color:"green"}
-execute if score @s AzrEntityTimer matches 2011 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/sub_boss_working
-execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/transportation
-execute if score @s AzrEntityTimer matches 2011 run bossbar remove azr:boss_hp_bar_working
-execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB23
-execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s emerald 30
-execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
 
 #out
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,distance=0..30] run fill -79823 11 -45 -79823 17 -47 air replace minecraft:red_stained_glass

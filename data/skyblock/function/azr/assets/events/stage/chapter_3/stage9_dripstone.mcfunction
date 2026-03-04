@@ -35,6 +35,18 @@ execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=21}] positioned -79811 12 -48 as @n[tag=AzrielBossWorking,distance=0..20] run effect give @s slowness 2 99 true
 execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=21}] positioned -79811 12 -48 as @n[tag=AzrielBossWorking,distance=0..20] run tag @s add AzrielBossWorking_StartActing
 
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=99..100}] positioned -79811 12 -48 if entity @n[tag=AzrielBossWorking,distance=0..20] run scoreboard players set @s rng1 98
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] run stopsound @a[tag=azrShowDialog]
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] unless entity @a[tag=azrPlayer,distance=0..30] run fill -79823 11 -45 -79823 17 -47 air replace minecraft:red_stained_glass destroy
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 10 0.7
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] run title @a[tag=azrShowDialog] actionbar {text:"Extra Boss Annihilated",color:"green"}
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/sub_boss_working
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/transportation
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] run bossbar remove azr:boss_hp_bar_working
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB23
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] as @a[tag=azrPlayer] at @s run give @s emerald 30
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+
 #金属学家
 execute positioned -79811 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..30] run scoreboard players add @s rng12 1
 execute positioned -79811 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..30,scores={rng12=5..16}] at @s run rotate @s facing entity @p[tag=azrPlayer]
