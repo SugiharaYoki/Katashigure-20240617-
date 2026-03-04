@@ -15,6 +15,16 @@ execute positioned ~-2 ~0 ~ run function skyblock:azr/assets/mobs/skill/boss_wor
 execute positioned ~ ~0 ~2 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
 execute positioned ~ ~0 ~-2 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
 
+execute positioned ~3 ~0 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
+execute positioned ~-3 ~0 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
+execute positioned ~ ~0 ~3 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
+execute positioned ~ ~0 ~-3 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
+
+execute positioned ~4 ~0 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
+execute positioned ~-4 ~0 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
+execute positioned ~ ~0 ~4 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
+execute positioned ~ ~0 ~-4 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
+
 #execute positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
 #execute positioned ~1 ~1 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
 #execute positioned ~-1 ~1 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition

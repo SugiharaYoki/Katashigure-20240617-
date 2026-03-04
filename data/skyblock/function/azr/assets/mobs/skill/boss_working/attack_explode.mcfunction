@@ -17,6 +17,7 @@ execute if score @s rng8 matches 6..25 as @s at @s rotated 180 0 positioned ^ ^ 
 execute if score @s rng8 matches 6..25 as @s at @s rotated 225 0 positioned ^ ^ ^1.2 at @s run function skyblock:azr/assets/mobs/skill/undead_pickaxe_particle_place
 execute if score @s rng8 matches 6..25 as @s at @s rotated 270 0 positioned ^ ^ ^1.2 at @s run function skyblock:azr/assets/mobs/skill/undead_pickaxe_particle_place
 execute if score @s rng8 matches 6..25 as @s at @s rotated 315 0 positioned ^ ^ ^1.2 at @s run function skyblock:azr/assets/mobs/skill/undead_pickaxe_particle_place
+execute if score @s rng8 matches 8 run scoreboard players set @s rng8 13
 execute if score @s rng8 matches 6..25 as @s at @s unless entity @p[tag=azrPlayer,distance=5.01..8] at @s run scoreboard players set @s rng8 20
 
 execute if score @s rng8 matches 27 as @s at @s run particle minecraft:large_smoke ~ ~0.3 ~ 1.2 0.3 1.2 0.05 8
@@ -31,6 +32,8 @@ execute if score @s rng8 matches 27 as @s at @s positioned ~ ~0.3 ~ run playsoun
 execute if score @s rng8 matches 30 as @s at @s positioned ~ ~2.3 ~ run playsound entity.generic.explode block @a ~ ~ ~ 3 1.1
 execute if score @s rng8 matches 33 as @s at @s positioned ~ ~4.3 ~ run playsound entity.generic.explode block @a ~ ~ ~ 3 1.1
 execute if score @s rng8 matches 36 as @s at @s positioned ~ ~6.3 ~ run playsound entity.generic.explode block @a ~ ~ ~ 3 1.1
+execute if score @s rng8 matches 39 as @s at @s positioned ~ ~4.3 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone
+execute if score @s rng8 matches 39 as @s at @s positioned ~ ~5.3 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone
 execute if score @s rng8 matches 39 as @s at @s positioned ~ ~6.3 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone
 execute if score @s rng8 matches 39 as @s at @s positioned ~ ~7.3 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone
 execute if score @s rng8 matches 39 as @s at @s positioned ~ ~8.3 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone
