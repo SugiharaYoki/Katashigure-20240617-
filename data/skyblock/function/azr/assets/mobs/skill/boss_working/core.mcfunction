@@ -69,7 +69,7 @@ execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run g
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
 
 #out
-
+execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,distance=0..30] run fill -79823 11 -45 -79823 17 -47 air replace minecraft:red_stained_glass
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,distance=0..30] run bossbar remove azr:boss_hp_bar_working
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,distance=0..30] run function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_working
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,distance=0..30] run stopsound @a[tag=azrShowDialog] music minecraft:renegade
