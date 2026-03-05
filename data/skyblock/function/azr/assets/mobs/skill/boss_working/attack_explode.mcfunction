@@ -22,9 +22,12 @@ execute if score @s rng8 matches 30 as @s at @s run particle minecraft:large_smo
 execute if score @s rng8 matches 33 as @s at @s run particle minecraft:large_smoke ~ ~4.3 ~ 1.2 0.6 1.2 0.05 8
 execute if score @s rng8 matches 36 as @s at @s run particle minecraft:large_smoke ~ ~6.3 ~ 1.2 0.8 1.2 0.05 8
 execute if score @s rng8 matches 27 as @s at @s run particle explosion ~ ~0.3 ~ 0 0 0 0.05 1
-execute if score @s rng8 matches 30 as @s at @s run particle explosion ~ ~2.3 ~ 0 0 0 0.05 1
-execute if score @s rng8 matches 33 as @s at @s run particle explosion ~ ~4.3 ~ 0 0 0 0.05 1
-execute if score @s rng8 matches 36 as @s at @s run particle explosion ~ ~6.3 ~ 0 0 0 0.05 1
+execute if score @s rng8 matches 29 as @s at @s run particle explosion ~ ~1.3 ~ 0 0 0 0.05 1
+execute if score @s rng8 matches 31 as @s at @s run particle explosion ~ ~2.3 ~ 0 0 0 0.05 1
+execute if score @s rng8 matches 33 as @s at @s run particle explosion ~ ~3.3 ~ 0 0 0 0.05 1
+execute if score @s rng8 matches 35 as @s at @s run particle explosion ~ ~4.3 ~ 0 0 0 0.05 1
+execute if score @s rng8 matches 37 as @s at @s run particle explosion ~ ~5.3 ~ 0 0 0 0.05 1
+execute if score @s rng8 matches 39 as @s at @s run particle explosion ~ ~6.3 ~ 0 0 0 0.05 1
 execute if score @s rng8 matches 27 as @s at @s positioned ~ ~0.3 ~ run playsound entity.generic.explode block @a ~ ~ ~ 3 1.1
 execute if score @s rng8 matches 30 as @s at @s positioned ~ ~2.3 ~ run playsound entity.generic.explode block @a ~ ~ ~ 3 1.1
 execute if score @s rng8 matches 33 as @s at @s positioned ~ ~4.3 ~ run playsound entity.generic.explode block @a ~ ~ ~ 3 1.1

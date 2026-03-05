@@ -16,7 +16,7 @@ execute if score @s rng1 matches 28.. as @a[tag=azrPlayer,distance=..2.0] at @s 
 execute if score @s rng1 matches 28.. run kill @s
 
 
-
+execute if score @s rng1 matches 13 as @a[tag=azrPlayer,distance=..2.0] run function skyblock:azr/system/player/map_effect/in_attack_range
 execute if score @s rng1 matches 11..12 run particle wax_off ~1.2 ~ ~0 0 0 0 0 1
 execute if score @s rng1 matches 11..12 run particle wax_off ~1.2 ~ ~0.4 0 0 0 0 1
 execute if score @s rng1 matches 11..12 run particle wax_off ~1.2 ~ ~0.8 0 0 0 0 1
