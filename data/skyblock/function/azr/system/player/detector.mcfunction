@@ -10,7 +10,7 @@
 execute unless score isStarted Azr_system matches 1 as @s[tag=azrPlayer] run function skyblock:azr/lifecycle/endgame/quit_game
 
 # 重置判定 - 游戏已开始但没有玩家
-execute if entity @s[x=-79931,y=100,z=0,distance=..10000,gamemode=!spectator] unless entity @a[tag=azrPlayer] run function skyblock:azr/lifecycle/endgame
+execute if entity @s[x=-79951,y=38,z=-15,distance=..20,gamemode=adventure] unless entity @a[tag=azrPlayer] run function skyblock:azr/lifecycle/endgame
 
 # 旁观者显示
 tag @s[x=-79931,y=100,z=0,distance=..10000,tag=!azrShowDialog] add azrShowDialog
