@@ -44,10 +44,9 @@ scoreboard objectives add AZR_arrowUpg_pts dummy
 
 # --------------------- 游戏进行中 ----------------------------------
 # 玩家函数
-scoreboard players reset $playerExists Azr_system
 execute as @a at @s run function skyblock:azr/system/player/detector
 
-execute unless score $playerExists Azr_system matches 1 run return 0
+execute unless score playerCount Azr_system matches 1.. run return 0
 
 execute unless score isStarted Azr_system matches 1 run return 0
 # --------------------- 玩家存在 ----------------------------------
@@ -62,16 +61,9 @@ function skyblock:azr/assets/events/effects/wish_fountain_transfer
 execute as @e[x=-79931,y=100,z=0,distance=..10000] run function skyblock:azr/system/entity/main
 
 execute if score tick_count_main AzrTimerStack matches -2147483648..2147483647 run scoreboard players add tick_count_main AzrTimerStack 1
-# 在部分关卡的的四倍速走秒
-#execute if score stage Azr_system matches -1..5 if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/lifecycle/core
-#execute if score stage Azr_system matches 34..45 if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/lifecycle/core
-#execute if score stage Azr_system matches 51..61 if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/lifecycle/core
-#execute if score stage Azr_system matches 63.. if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/lifecycle/core
 execute if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/lifecycle/core
 
 # 部分关卡检测玩家位置在这里处理
-
-
 
     # 第四关-boss1 event1
     execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 9 if score stage_main_thread AzrTimerStack matches 3..5 as @a[tag=azrPlayer,x=-79931,y=38,z=62,distance=..4.5] at @s run tp @a[tag=azrPlayer,distance=3..] @s
