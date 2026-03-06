@@ -32,7 +32,6 @@ tag @s remove azrShopOnUse
 tag @s remove azrShopRefresh
 tag @s remove azrBanLifeVitae
 tag @s remove azrUpgrateLifeVitae
-#tag @s add azrDead
 tag @s remove AZR_chainKill_activated
 tag @s remove AzrielEvent382315A
 
@@ -124,6 +123,5 @@ tag @s remove Azr_SK10UB
 tag @s remove AzrielRefreshSuccess
 tag @s remove Azr_LM
 tag @s remove AzrS8Ex
-#execute as @s at @s run scoreboard players reset @s Azr_forceDeath
 
 return 1

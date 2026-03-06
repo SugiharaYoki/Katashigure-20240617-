@@ -25,7 +25,7 @@ execute if items entity @s weapon.mainhand crossbow[custom_data~{crossbow_v71:1b
 # 索命连击
 execute at @s run function skyblock:azr/system/player/skills/chainkill/chain_kill
 # 残城箭影
-execute at @s[tag=hasSkills,tag=azr_skills_arrow] run function skyblock:azr/system/player/skills/arrow/main
+#execute at @s[tag=hasSkills,tag=azr_skills_arrow] run function skyblock:azr/system/player/skills/arrow/main
 
 # 死亡检测
 execute as @s[scores={AzrTimerReviving=1..}] at @s run function skyblock:azr/system/player/revive_delay

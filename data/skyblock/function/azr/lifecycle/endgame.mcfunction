@@ -22,7 +22,6 @@ scoreboard players reset $azrInitialIngredientGiven
 
 
 #tag @s remove Event18575A
-tag @a remove azrDead
 #______________________________________________________________#
 bossbar remove azr:boss_hp_bar
 bossbar remove azr:boss_hp_bar_mossboss
