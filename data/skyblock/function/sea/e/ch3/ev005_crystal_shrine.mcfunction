@@ -53,6 +53,7 @@ execute as @s[scores={sea_4temp1=650}] at @s run tellraw @a[distance=0..250] [{t
 execute as @s[scores={sea_4temp1=699}] at @s run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
 execute as @s[scores={sea_4temp1=699}] at @s run tellraw @a[distance=0..250] [{text:"越涵：",color:"green",bold:1b},{text:"\n“……算了。”",color:"white",bold: false}]
 execute as @s[scores={sea_4temp1=435}] at @s run tag @a[tag=SEAPT] add e_i_27
+execute as @s[scores={sea_4temp1=1462}] at @s run tag @a[tag=SEAPT] add e_i_27
 execute as @s[scores={sea_4temp1=540..800}] at @s unless entity @a[tag=SEAPT,distance=..11] run tp @s ~ ~-500 ~
 execute as @s[scores={sea_4temp1=540..800}] at @s unless entity @a[tag=SEAPT,distance=..11] run kill @s
 
