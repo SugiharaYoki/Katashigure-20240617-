@@ -77,8 +77,10 @@ execute if score @s rng2 matches 24 run function skyblock:azr/assets/mobs/skill/
 execute if score @s rng2 matches 26 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:2.4,distance_min:2.2}
 execute if score @s rng2 matches 28 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:2.5,distance_min:2.3}
 execute if score @s rng2 matches 30 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:2.6,distance_min:2.4}
+execute if score @s rng2 matches 30 run scoreboard players add @s rng3 1
 execute if score @s rng2 matches 30 run scoreboard players set @s rng2 1
 
 
 
-execute if score @s rng1 matches 200.. run kill @s
+execute if score @s rng3 matches 5.. run kill @s
+execute if score @s rng1 matches 300.. run kill @s
