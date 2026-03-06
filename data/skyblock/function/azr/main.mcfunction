@@ -1,42 +1,7 @@
 
-#开始游戏
-#声明常驻记分板 可能包含系统参数、永久变量、指针等
-scoreboard objectives add Azr_system dummy
-scoreboard objectives add Azr_startCount dummy
-scoreboard objectives add Azr_personalStartCount dummy
-#scoreboard objectives add Azr_skillPoints dummy
-scoreboard objectives add AZR_chainKill minecraft.custom:minecraft.mob_kills
-scoreboard objectives add AZR_chainKill_damage minecraft.custom:minecraft.damage_dealt
-scoreboard objectives add AZR_chainKill_damageblocked minecraft.custom:minecraft.damage_blocked_by_shield
-scoreboard objectives add AZR_chainKill_damagetaken minecraft.custom:minecraft.damage_taken
-scoreboard objectives add AZR_chainKill_count dummy
-scoreboard objectives add AZR_chainKill_chargeup dummy
-scoreboard objectives add AZR_chainKillUpg_pts dummy
-scoreboard objectives add AZR_chainKillUpg_pts_add dummy
-scoreboard objectives add AZR_chainKillUpg_chargespeed dummy
-scoreboard objectives add AZR_chainKillUpg_chargeboost dummy
-scoreboard objectives add AZR_chainKillUpg_attackcount dummy
-scoreboard objectives add AZR_chainKillUpg_attackcountmin dummy
-scoreboard objectives add AZR_chainKillUpg_attackdamage dummy
-scoreboard objectives add AZR_chainKillUpg_attackrange dummy
-scoreboard objectives add AZR_chainKillUpg_defense dummy
-scoreboard objectives add AZR_chainKillUpg_attackheal dummy
-scoreboard objectives add AZR_chainKillUpg_defensecharge dummy
-scoreboard objectives add AZR_chainKillUpg_antichargedecrease dummy
-scoreboard objectives add AZR_chainKillUpg_attackspeed dummy
-scoreboard objectives add AZR_arrow_energy dummy
-scoreboard objectives add AzrEntityTimer dummy
-scoreboard objectives add AzrielMobLevel dummy
-
-#skills
-#skill 9 残城箭影 lv5 
-scoreboard objectives add AZR_arrowUpg_pts dummy
-#设置系统参数
-# scoreboard players set DEBUG_maxStageLimit Azr_system 43
-# scoreboard players set DEBUG_fakePlayer Azr_system 10
+execute unless score stage Azr_startCount matches 1.. run function skyblock:azr/init
 
 # 系统必需
-
 
     #按钮处理
     #start button
@@ -47,7 +12,6 @@ scoreboard objectives add AZR_arrowUpg_pts dummy
 execute as @a at @s run function skyblock:azr/system/player/detector
 
 execute unless score playerCount Azr_system matches 1.. run return 0
-
 execute unless score isStarted Azr_system matches 1 run return 0
 # --------------------- 玩家存在 ----------------------------------
 
@@ -61,7 +25,7 @@ function skyblock:azr/assets/events/effects/wish_fountain_transfer
 execute as @e[x=-79931,y=100,z=0,distance=..10000] run function skyblock:azr/system/entity/main
 
 execute if score tick_count_main AzrTimerStack matches -2147483648..2147483647 run scoreboard players add tick_count_main AzrTimerStack 1
-execute if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/lifecycle/core
+execute if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/lifecycle/main_x5
 
 # 部分关卡检测玩家位置在这里处理
 
