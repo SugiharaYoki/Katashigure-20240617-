@@ -97,7 +97,7 @@ execute as @s[scores={rng5=245..,rng6=320}] at @n[tag=SEAyuehan] run playsound e
 execute as @s[scores={rng5=245..,rng6=320}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] [{text:"越涵：",color:"green",bold:1b},{text:"\n“这边一道铁门是通往主平台的快速通道。可惜，那里的电梯已经坏了。我们没必要再走这里。”",color:"white",bold: false}]
 
 execute as @s[scores={rng5=245..,rng6=360}] at @n[tag=SEAyuehan] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 0.85
-execute as @s[scores={rng5=245..,rng6=360}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] [{text:"越涵：",color:"green",bold:1b},{text:"\n“那个……那女人没有下死手吧？她也太过分了。”",color:"white",bold: false}]
+execute as @s[scores={rng5=245..,rng6=360}] at @n[tag=SEAyuehan] run tellraw @a[distance=0..250] [{text:"越涵：",color:"green",bold:1b},{text:"\n“哎那个……那女人没有下死手吧？她也太过分了。”",color:"white",bold: false}]
 
 execute as @s[scores={rng5=245..,rng6=379}] at @n[tag=SEAedwina] run playsound entity.villager.ambient neutral @a ~ ~ ~ 1 1.3
 execute as @s[scores={rng5=245..,rng6=379}] at @n[tag=SEAedwina] run tellraw @a[distance=0..250] [{text:"艾德雯娜：",color:"green",bold:1b},{text:"\n“沈先生，我听得见。”",color:"white",bold: false}]

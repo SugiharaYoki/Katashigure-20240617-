@@ -106,6 +106,7 @@ fill 90129 149 95 90129 149 94 air
 fill 90120 145 100 90120 145 97 air
 fill 90120 144 100 90120 144 97 air
 fill 90120 143 100 90120 143 97 air
+setblock 90121 144 98 air
 setblock 90121 145 98 air
 setblock 90121 143 98 air
 setblock 90118 144 95 minecraft:redstone_lamp[lit=false]

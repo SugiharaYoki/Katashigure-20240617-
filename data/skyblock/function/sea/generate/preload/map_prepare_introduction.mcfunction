@@ -619,6 +619,7 @@ fill 90131 149 100 90131 149 98 minecraft:waxed_cut_copper_slab[type=bottom] rep
 fill 90129 149 95 90129 149 94 minecraft:waxed_cut_copper_slab[type=bottom] replace air
 fill 90120 145 100 90120 145 97 minecraft:waxed_cut_copper_slab[type=bottom] replace air
 fill 90120 144 100 90120 144 97 waxed_copper_block replace air
+setblock 90121 144 98 waxed_copper_block
 fill 90120 143 100 90120 143 97 minecraft:waxed_cut_copper_slab[type=top] replace air
 setblock 90121 145 98 minecraft:waxed_cut_copper_slab[type=bottom]
 setblock 90121 143 98 minecraft:waxed_cut_copper_slab[type=top]
