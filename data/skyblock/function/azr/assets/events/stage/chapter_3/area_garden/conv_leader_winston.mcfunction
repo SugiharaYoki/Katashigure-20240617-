@@ -41,4 +41,12 @@ execute if score @s rng1 matches 2073 run tag @a[tag=azrPlayer] remove azrPlayer
 execute if score @s rng1 matches 2073 run scoreboard players set @s rng1 59
 
 
+execute if score @s rng1 matches 3002 as @n[tag=AzrielNPC_stage9_entry_conversation3,type=pillager] at @s run playsound minecraft:entity.vindicator.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score @s rng1 matches 3002 as @n[tag=AzrielNPC_stage9_entry_conversation3,type=pillager] at @s run tellraw @a[tag=azrShowDialog] [{text:"第2巡逻小队队长 温斯顿：",color:"green",bold:1b},{bold: false,text:"\n“白色的箱子连通的是虚数空间。”",color:"white"}]
+execute if score @s rng1 matches 3017 as @n[tag=AzrielNPC_stage9_entry_conversation3,type=pillager] at @s run playsound minecraft:entity.vindicator.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score @s rng1 matches 3017 as @n[tag=AzrielNPC_stage9_entry_conversation3,type=pillager] at @s run tellraw @a[tag=azrShowDialog] [{text:"第2巡逻小队队长 温斯顿：",color:"green",bold:1b},{bold: false,text:"\n“我也不知道那是什么原理，但存在里面的东西似乎进入了什么‘别的地方’。”",color:"white"}]
+execute if score @s rng1 matches 3033 as @n[tag=AzrielNPC_stage9_entry_conversation3,type=pillager] at @s run playsound minecraft:entity.vindicator.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score @s rng1 matches 3033 as @n[tag=AzrielNPC_stage9_entry_conversation3,type=pillager] at @s run tellraw @a[tag=azrShowDialog] [{text:"第2巡逻小队队长 温斯顿：",color:"green",bold:1b},{bold: false,text:"\n“不过那毕竟是米迦勒天使长的权能，我等普通天使无法理解其原理，似乎也情有可原。”",color:"white"}]
+execute if score @s rng1 matches 3073 run tag @a[tag=azrPlayer] remove azrPlayer_dialogchoice_revealed_302
+execute if score @s rng1 matches 3073 run scoreboard players set @s rng1 59
 
