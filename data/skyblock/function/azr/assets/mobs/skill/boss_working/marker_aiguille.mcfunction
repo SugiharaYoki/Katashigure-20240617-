@@ -60,7 +60,7 @@ execute if score @s rng1 matches ..50 if block ~ ~-0.2 ~ basalt run particle whi
 execute if score @s rng1 matches ..50 if block ~ ~-0.2 ~ basalt run particle large_smoke ~ ~0.2 ~ 0.1 0.1 0.1 0.1 3
 execute if score @s rng1 matches ..50 if block ~ ~-0.2 ~ basalt run scoreboard players set @s rng1 51
 
-execute if score @s rng1 matches 51.. run scoreboard players set @s rng2 1
+execute if score @s rng1 matches 51.. run scoreboard players add @s rng2 1
 
 execute if score @s rng2 matches 2 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:0.3,distance_min:0.01}
 execute if score @s rng2 matches 4 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:0.6,distance_min:0.3}
