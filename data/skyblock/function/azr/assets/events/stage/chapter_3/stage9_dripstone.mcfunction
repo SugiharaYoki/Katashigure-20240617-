@@ -37,7 +37,7 @@ execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.
 
 execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=99..100}] positioned -79811 12 -48 if entity @n[tag=AzrielBossWorking,distance=0..20] run scoreboard players set @s rng1 98
 execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] run stopsound @a[tag=azrShowDialog]
-execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] unless entity @a[tag=azrPlayer,distance=0..30] run fill -79823 11 -45 -79823 17 -47 air replace minecraft:red_stained_glass destroy
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] run fill -79823 11 -45 -79823 17 -47 air replace minecraft:red_stained_glass destroy
 execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 10 0.7
 execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] run title @a[tag=azrShowDialog] actionbar {text:"Extra Boss Annihilated",color:"green"}
 execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=101}] run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/sub_boss_working
