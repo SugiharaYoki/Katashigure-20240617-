@@ -28,7 +28,7 @@ execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 14 if entity @n[
 execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 16 if entity @n[tag=SEApillager_npc1] run fill 90111 144 140 90111 144 142 air
 execute if score SEAchg_spawn_timer_medical1 sea_4temp2 matches 18 if entity @n[tag=SEApillager_npc1] run fill 90111 145 140 90111 145 142 air
 
-execute as @n[tag=SEApillager_npc1,scores={rng1=..53}] at @s if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5] run scoreboard players add @s rng1 1
+execute as @n[tag=SEApillager_npc1] at @s unless score @s rng1 matches 54.. if entity @a[tag=SEAPT,tag=!SEAPF,distance=0..5.5] run scoreboard players add @s rng1 1
 execute as @n[tag=SEApillager_npc1,scores={rng1=54..}] at @s run scoreboard players add @s rng1 1
 
 execute as @n[tag=SEApillager_npc1,scores={rng1=80}] at @s run tellraw @a[tag=SEAPT] [{text:"邪教徒弩手：",color:"green",bold:1b},{text:"\n“话先说在前头，咱们井水不犯河水。”",color:"white",bold: false}]
