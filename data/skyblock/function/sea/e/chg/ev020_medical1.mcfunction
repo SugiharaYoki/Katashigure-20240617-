@@ -35,6 +35,6 @@ execute as @n[tag=SEApillager_npc1,scores={rng1=80}] at @s run tellraw @a[tag=SE
 execute as @n[tag=SEApillager_npc1,scores={rng1=100}] at @s run tellraw @a[tag=SEAPT] [{text:"邪教徒弩手：",color:"green",bold:1b},{text:"\n“我不会给你任何情报的。相同，我也不会告诉任何人我在这里见过你。是的，说不定就是这样。”",color:"white",bold: false}]
 
 
-execute as @n[tag=SEApillager_npc1,scores={rng1=80..}] at @s run tp @s ~ ~-500 ~
-execute as @n[tag=SEApillager_npc1,scores={rng1=80..}] at @s run setblock 90060 101 142 red_candle[lit=true]
-execute as @n[tag=SEApillager_npc1,scores={rng1=80..}] at @s run kill @s
+execute as @n[tag=SEApillager_npc1,scores={rng1=80..}] at @s unless entity @a[tag=SEAPT,distance..15] run tp @s ~ ~-500 ~
+execute as @n[tag=SEApillager_npc1,scores={rng1=80}] at @s run setblock 90060 101 142 red_candle[lit=true]
+execute as @n[tag=SEApillager_npc1,scores={rng1=80..}] at @s unless entity @a[tag=SEAPT,distance..15] run kill @s
