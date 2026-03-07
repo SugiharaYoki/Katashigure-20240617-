@@ -12,7 +12,7 @@ execute as @s[scores={rng1=48}] run tellraw @a[tag=azrShowDialog] [{text:"第2�
 
 execute if score @s rng1 matches 60..999 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_302] run tellraw @s [{text:" - "},{text:"询问：你是谁？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30201"}}]
 execute if score @s rng1 matches 60..999 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_302] run tellraw @s [{text:" - "},{text:"询问：我该怎么走？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30202"}}]
-execute if score @s rng1 matches 60..999 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_302] run tellraw @s [{text:" - "},{text:"询问：那个白色的箱子是怎么回事？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30202"}}]
+execute if score @s rng1 matches 60..999 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_302] run tellraw @s [{text:" - "},{text:"询问：那个白色的箱子是怎么回事？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30203"}}]
 
 execute if score @s rng1 matches 60..999 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_302] run tag @s add azrPlayer_dialogchoice_revealed_302
 execute if score @s rng1 matches 60 run scoreboard players set @s rng1 59
