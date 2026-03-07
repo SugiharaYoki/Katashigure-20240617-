@@ -1,4 +1,4 @@
-execute if entity @s[tag=!azrRetrieved,tag=AZR_SEAawakened] if score stage Azr_system matches 1.. as @p[tag=!azrRetrieved,tag=azrPlayer,tag=AZR_SEAawakened] at @s run function skyblock:azr/lifecycle/jump_to/generic_retrieve
+execute if entity @s[tag=!azrRetrieved,tag=AZR_SEAawakened] if score stage Azr_system matches 1.. run function skyblock:azr/lifecycle/jump_to/generic_retrieve
 
 clear @s[gamemode=adventure] #skyblock:azr_clear
 
