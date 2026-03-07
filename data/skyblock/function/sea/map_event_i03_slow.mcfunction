@@ -101,7 +101,7 @@ execute if score sea_ch3_event_backupradio sea_4temp3 matches 185 positioned 901
  run tellraw @a[distance=0..250] [{text:"？？？：",color:"yellow",bold:1b},{text:"\n“希望你知道我指的是哪。如果你不知道的话就请别来了，那样的话我就提供不了你任何帮助。”",color:"white",bold: false}]
 execute if score sea_ch3_event_backupradio sea_4temp3 matches 201 positioned 90133 137 108 \
  run tellraw @a[distance=0..250] [{text:"？？？：",color:"yellow",bold:1b},{text:"\n“你这样，先去钢处理车间的楼顶，那儿有我藏起来的10颗绿宝石。不要辜负我。”",color:"white",bold: false}]
-execute if score sea_ch3_event_backupradio sea_4temp3 matches 201 run fill 90124 144 117 90124 145 117 minecraft:air destroy
+execute if score sea_ch3_event_backupradio sea_4temp3 matches 202 run fill 90124 144 117 90124 145 117 minecraft:air destroy
 
 
 execute unless entity @a[tag=SEAPT,tag=e_i_27] positioned 90093 128 95 if entity @a[tag=SEAPT,distance=..4,tag=!SEAPF] if block 90124 145 117 air unless entity @n[tag=SEAch3_spawn_timer8,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAch3_spawn_timer","SEAch3_spawn_timer8"]}
