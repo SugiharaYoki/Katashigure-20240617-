@@ -43,13 +43,13 @@ execute store result bossbar azr:boss_hp_bar_working value run scoreboard player
     execute as @s at @s if score @s rng8 matches 143.. run scoreboard players set @s rng2 0
     execute as @s at @s if score @s rng8 matches 143.. run scoreboard players set @s rng8 -1
 
-execute as @s[scores={rng13=..1}] at @s if entity @s[scores={Health=..180}] run tellraw @a[tag=azrShowDialog] [{text:"金属专家：",color:"red",bold:1b},{bold: false,text:"\n“老板……会责骂我们的……！！”",color:"white"}]
+execute as @s[scores={rng13=..1}] at @s if entity @s[scores={Health=..180}] run tellraw @a[tag=azrShowDialog] [{text:"金属学家：",color:"red",bold:1b},{bold: false,text:"\n“老板……会责骂我们的……！！”",color:"white"}]
 execute as @s[scores={rng13=..1}] at @s if entity @s[scores={Health=..180}] run scoreboard players add @s rng13 1
-execute as @s[scores={rng13=..2}] at @s if entity @s[scores={Health=..140}] run tellraw @a[tag=azrShowDialog] [{text:"金属专家：",color:"red",bold:1b},{bold: false,text:"\n“为什么……其他同伴都走了……”",color:"white"}]
+execute as @s[scores={rng13=..2}] at @s if entity @s[scores={Health=..140}] run tellraw @a[tag=azrShowDialog] [{text:"金属学家：",color:"red",bold:1b},{bold: false,text:"\n“为什么……其他同伴都走了……”",color:"white"}]
 execute as @s[scores={rng13=..2}] at @s if entity @s[scores={Health=..140}] run scoreboard players add @s rng13 1
-execute as @s[scores={rng13=..3}] at @s if entity @s[scores={Health=..100}] run tellraw @a[tag=azrShowDialog] [{text:"金属专家：",color:"red",bold:1b},{bold: false,text:"\n“都是因为我，才让矿石……被他们给……”",color:"white"}]
+execute as @s[scores={rng13=..3}] at @s if entity @s[scores={Health=..100}] run tellraw @a[tag=azrShowDialog] [{text:"金属学家：",color:"red",bold:1b},{bold: false,text:"\n“都是因为我，才让矿石……被他们给……”",color:"white"}]
 execute as @s[scores={rng13=..3}] at @s if entity @s[scores={Health=..100}] run scoreboard players add @s rng13 1
-execute as @s[scores={rng13=..4}] at @s if entity @s[scores={Health=..60}] run tellraw @a[tag=azrShowDialog] [{text:"金属专家：",color:"red",bold:1b},{bold: false,text:"\n“老板，很久没回来过了……”",color:"white"}]
+execute as @s[scores={rng13=..4}] at @s if entity @s[scores={Health=..60}] run tellraw @a[tag=azrShowDialog] [{text:"金属学家：",color:"red",bold:1b},{bold: false,text:"\n“老板，很久没回来过了……”",color:"white"}]
 execute as @s[scores={rng13=..4}] at @s if entity @s[scores={Health=..60}] run scoreboard players add @s rng13 1
 
 

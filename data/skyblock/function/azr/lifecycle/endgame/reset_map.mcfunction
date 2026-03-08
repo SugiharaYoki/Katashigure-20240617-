@@ -538,7 +538,7 @@ item replace block -79857 40 -102 container.13 with iron_ingot 1
   #第三章开放的路阻
 fill -79886 31 -66 -79886 35 -65 basalt
 
- #金属专家
+ #金属学家
 fill -79823 11 -45 -79823 17 -47 minecraft:air replace red_stained_glass
 
 
