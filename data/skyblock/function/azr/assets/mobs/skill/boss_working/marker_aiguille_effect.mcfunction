@@ -55,7 +55,6 @@ $execute rotated as @s rotated 340 0 run particle block{block_state:{Name:"basal
 $execute rotated as @s rotated 350 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
 
 playsound block.basalt.step block @a ~ ~ ~ 0.4 1.3
-say hi
 
 $execute as @a[tag=azrPlayer,distance=$(distance_min)..$(distance)] at @s run damage @s 5 fly_into_wall
 $execute as @e[tag=AzrielMob_generic_pillar_attack_small_automarker,type=marker,distance=$(distance_min)..$(distance)] at @s run particle large_smoke ~ ~ ~ 0 0 0 0.01 1 
