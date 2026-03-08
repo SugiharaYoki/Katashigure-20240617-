@@ -12,6 +12,8 @@ execute as @s[scores={rng1=103}] as @a[tag=azrPlayer] at @s run give @s glisteri
 
 
 execute as @s[scores={rng1=103}] positioned -79839 13 -65 run function skyblock:azr/assets/mobs/skill/boss_working/summon_peaceful
+execute as @s[scores={rng1=103}] positioned -79839 13 -65 as @n[tag=AzrielBossWorking,type=zombie,distance=..20] run effect give @s resistance infinite 9 true
+execute as @s[scores={rng1=103}] positioned -79839 13 -65 as @n[tag=AzrielBossWorking,type=zombie,distance=..20] run effect give @s weakness infinite 19 true
 execute as @s[scores={rng1=105}] positioned -79839 13 -65 unless entity @a[tag=azrPlayer,distance=..5] run scoreboard players set @s rng1 104
 
 execute as @s[scores={rng1=105}] positioned -79839 13 -65 as @n[tag=AzrielBossWorking,type=zombie,distance=..20] run tellraw @a[tag=azrShowDialog] [{text:"金属专家：",color:"red",bold:1b},{bold: false,text:"\n“……老板已经不会回来了。”",color:"white"}]
