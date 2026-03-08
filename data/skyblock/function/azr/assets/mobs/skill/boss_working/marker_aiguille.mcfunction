@@ -2,14 +2,14 @@ scoreboard players add @s rng1 1
 
 
 
-execute if score @s rng1 matches 1.. at @s run tp @s ~ ~-0.1 ~
-execute if score @s rng1 matches 3.. at @s run tp @s ~ ~-0.1 ~
-execute if score @s rng1 matches 5.. at @s run tp @s ~ ~-0.1 ~
-execute if score @s rng1 matches 7.. at @s run tp @s ~ ~-0.1 ~
-execute if score @s rng1 matches 9.. at @s run tp @s ~ ~-0.1 ~
-execute if score @s rng1 matches 11.. at @s run tp @s ~ ~-0.1 ~
-execute if score @s rng1 matches 13.. at @s run tp @s ~ ~-0.1 ~
-execute if score @s rng1 matches 15.. at @s run tp @s ~ ~-0.1 ~
+execute if score @s rng1 matches 1..49 at @s run tp @s ~ ~-0.1 ~
+execute if score @s rng1 matches 3..49 at @s run tp @s ~ ~-0.1 ~
+execute if score @s rng1 matches 5..49 at @s run tp @s ~ ~-0.1 ~
+execute if score @s rng1 matches 7..49 at @s run tp @s ~ ~-0.1 ~
+execute if score @s rng1 matches 9..49 at @s run tp @s ~ ~-0.1 ~
+execute if score @s rng1 matches 11..49 at @s run tp @s ~ ~-0.1 ~
+execute if score @s rng1 matches 13..49 at @s run tp @s ~ ~-0.1 ~
+execute if score @s rng1 matches 15..49 at @s run tp @s ~ ~-0.1 ~
 
 particle dripping_obsidian_tear ^ ^ ^ 0 0 0 0 1 force
 particle dripping_obsidian_tear ^0.1 ^0.2 ^ 0 0 0 0 1 force
