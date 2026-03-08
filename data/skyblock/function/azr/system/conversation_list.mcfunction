@@ -23,6 +23,13 @@ execute if score @s[tag=azrPlayer_dialogchoice_revealed_302] Azr_Shop matches 30
     positioned -79863 28 -67 as @n[tag=AzrielNPC_stage9_entry_conversation3,type=pillager] run scoreboard players set @s rng1 2001
 execute if score @s[tag=azrPlayer_dialogchoice_revealed_302] Azr_Shop matches 30203 \
     positioned -79863 28 -67 as @n[tag=AzrielNPC_stage9_entry_conversation3,type=pillager] run scoreboard players set @s rng1 3001
+    
+execute if score @s[tag=azrPlayer_dialogchoice_revealed_303] Azr_Shop matches 30301 \
+    positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng1 1001
+execute if score @s[tag=azrPlayer_dialogchoice_revealed_303] Azr_Shop matches 30302 \
+    positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng1 2001
+execute if score @s[tag=azrPlayer_dialogchoice_revealed_303] Azr_Shop matches 30303 \
+    positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng1 3001
 
 
 
