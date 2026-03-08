@@ -1,20 +1,20 @@
 scoreboard players add @s rng1 1
-execute as @s[scores={rng1=101}] run stopsound @a[tag=azrShowDialog]
-execute as @s[scores={rng1=101}] run fill -79823 11 -45 -79823 17 -47 air replace minecraft:red_stained_glass destroy
-execute as @s[scores={rng1=101}] run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 10 0.7
-execute as @s[scores={rng1=101}] run title @a[tag=azrShowDialog] actionbar {text:"Extra Boss Annihilated",color:"green"}
-execute as @s[scores={rng1=101}] run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/sub_boss_working
-execute as @s[scores={rng1=101}] as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/transportation
-execute as @s[scores={rng1=101}] run bossbar remove azr:boss_hp_bar_working
-execute as @s[scores={rng1=101}] as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB23
-execute as @s[scores={rng1=101}] as @a[tag=azrPlayer] at @s run give @s emerald 30
-execute as @s[scores={rng1=101}] as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute as @s[scores={rng1=103}] run stopsound @a[tag=azrShowDialog]
+execute as @s[scores={rng1=103}] run fill -79823 11 -45 -79823 17 -47 air replace minecraft:red_stained_glass destroy
+execute as @s[scores={rng1=103}] run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 10 0.7
+execute as @s[scores={rng1=103}] run title @a[tag=azrShowDialog] actionbar {text:"Extra Boss Annihilated",color:"green"}
+execute as @s[scores={rng1=103}] run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/sub_boss_working
+execute as @s[scores={rng1=103}] as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/transportation
+execute as @s[scores={rng1=103}] run bossbar remove azr:boss_hp_bar_working
+execute as @s[scores={rng1=103}] as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB23
+execute as @s[scores={rng1=103}] as @a[tag=azrPlayer] at @s run give @s emerald 30
+execute as @s[scores={rng1=103}] as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
 
 
-execute as @s[scores={rng1=101}] positioned -79839 13 -65 run function skyblock:azr/assets/mobs/skill/boss_working/summon_peaceful
-execute as @s[scores={rng1=103}] positioned -79839 13 -65 unless entity @a[tag=azrPlayer,distance=..5] run scoreboard players set @s rng1 102
+execute as @s[scores={rng1=103}] positioned -79839 13 -65 run function skyblock:azr/assets/mobs/skill/boss_working/summon_peaceful
+execute as @s[scores={rng1=103}] positioned -79839 13 -65 unless entity @a[tag=azrPlayer,distance=..5] run scoreboard players set @s rng1 104
 
-execute as @s[scores={rng1=104}] positioned -79839 13 -65 as @n[tag=AzrielBossWorking,type=zombie,distance=..20] run tellraw @a[tag=azrShowDialog] [{text:"金属专家：",color:"red",bold:1b},{bold: false,text:"\n“……老板已经不会回来了。”",color:"white"}]
+execute as @s[scores={rng1=105}] positioned -79839 13 -65 as @n[tag=AzrielBossWorking,type=zombie,distance=..20] run tellraw @a[tag=azrShowDialog] [{text:"金属专家：",color:"red",bold:1b},{bold: false,text:"\n“……老板已经不会回来了。”",color:"white"}]
 execute as @s[scores={rng1=119}] positioned -79839 13 -65 as @n[tag=AzrielBossWorking,type=zombie,distance=..20] run tellraw @a[tag=azrShowDialog] [{text:"金属专家：",color:"red",bold:1b},{bold: false,text:"\n“我是这里最后的矿工。最后的……保留了‘心’的矿工。”",color:"white"}]
 execute as @s[scores={rng1=133}] positioned -79839 13 -65 as @n[tag=AzrielBossWorking,type=zombie,distance=..20] run tellraw @a[tag=azrShowDialog] [{text:"金属专家：",color:"red",bold:1b},{bold: false,text:"\n“战斗已经不再有意义。矿石也已经……彻底变质。”",color:"white"}]
 execute as @s[scores={rng1=133}] positioned -79839 13 -65 as @n[tag=AzrielBossWorking,type=zombie,distance=..20] run tellraw @a[tag=azrShowDialog] [{text:"金属专家：",color:"red",bold:1b},{bold: false,text:"\n“我会留在这里。……我无家可归。”",color:"white"}]
