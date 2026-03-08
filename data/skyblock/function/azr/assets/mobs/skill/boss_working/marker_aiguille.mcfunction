@@ -62,21 +62,21 @@ execute if score @s rng1 matches ..50 if block ~ ~-0.2 ~ basalt run scoreboard p
 
 execute if score @s rng1 matches 51.. run scoreboard players add @s rng2 1
 
-execute if score @s rng2 matches 2 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:0.3,distance_min:0.01}
-execute if score @s rng2 matches 4 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:0.6,distance_min:0.3}
-execute if score @s rng2 matches 6 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:0.9,distance_min:0.6}
-execute if score @s rng2 matches 8 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:1.2,distance_min:0.9}
-execute if score @s rng2 matches 10 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:1.5,distance_min:1.2}
-execute if score @s rng2 matches 12 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:1.8,distance_min:1.5}
-execute if score @s rng2 matches 14 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:2.1,distance_min:1.8}
-execute if score @s rng2 matches 16 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:2.3,distance_min:2.0}
-execute if score @s rng2 matches 18 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:2.5,distance_min:2.2}
-execute if score @s rng2 matches 20 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:2.7,distance_min:2.4}
-execute if score @s rng2 matches 22 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:2.9,distance_min:2.6}
-execute if score @s rng2 matches 24 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:3.0,distance_min:2.7}
-execute if score @s rng2 matches 26 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:3.1,distance_min:2.8}
-execute if score @s rng2 matches 28 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:3.2,distance_min:2.9}
-execute if score @s rng2 matches 30 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:3.3,distance_min:3.0}
+execute at @s if score @s rng2 matches 2 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:0.3,distance_min:0.01}
+execute at @s if score @s rng2 matches 4 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:0.6,distance_min:0.3}
+execute at @s if score @s rng2 matches 6 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:0.9,distance_min:0.6}
+execute at @s if score @s rng2 matches 8 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:1.2,distance_min:0.9}
+execute at @s if score @s rng2 matches 10 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:1.5,distance_min:1.2}
+execute at @s if score @s rng2 matches 12 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:1.8,distance_min:1.5}
+execute at @s if score @s rng2 matches 14 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:2.1,distance_min:1.8}
+execute at @s if score @s rng2 matches 16 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:2.3,distance_min:2.0}
+execute at @s if score @s rng2 matches 18 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:2.5,distance_min:2.2}
+execute at @s if score @s rng2 matches 20 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:2.7,distance_min:2.4}
+execute at @s if score @s rng2 matches 22 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:2.9,distance_min:2.6}
+execute at @s if score @s rng2 matches 24 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:3.0,distance_min:2.7}
+execute at @s if score @s rng2 matches 26 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:3.1,distance_min:2.8}
+execute at @s if score @s rng2 matches 28 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:3.2,distance_min:2.9}
+execute at @s if score @s rng2 matches 30 run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille_effect {distance:3.3,distance_min:3.0}
 execute if score @s rng2 matches 30 run scoreboard players add @s rng3 1
 execute if score @s rng2 matches 30 run scoreboard players set @s rng2 1
 
