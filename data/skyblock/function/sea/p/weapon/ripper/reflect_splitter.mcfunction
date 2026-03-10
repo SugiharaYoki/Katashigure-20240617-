@@ -16,6 +16,7 @@ execute if score @s rng11 matches 1 run function skyblock:sea/p/weapon/ripper/re
 execute if score @s rng11 matches 2 run function skyblock:sea/p/weapon/ripper/reflect_s
 execute if score @s rng11 matches 3 run function skyblock:sea/p/weapon/ripper/reflect_e
 execute if score @s rng11 matches 4 run function skyblock:sea/p/weapon/ripper/reflect_w
+execute if score @s rng11 matches 1.. run scoreboard players set @s rng11 100
 
 
-scoreboard players set @s rng11 0
+scoreboard players remove @s rng11 10
