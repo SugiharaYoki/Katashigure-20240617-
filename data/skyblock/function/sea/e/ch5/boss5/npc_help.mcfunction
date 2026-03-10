@@ -9,7 +9,7 @@ execute as @s[tag=SEANPC_Friendly_Processed,tag=SEAmob] at @s run tag @s remove 
 execute if entity @s[tag=!SEANPC_Friendly_hasattacktarget,type=pillager] if entity @n[tag=SEAmob,distance=0..13] run item replace entity @s weapon.mainhand with minecraft:crossbow
 execute if entity @s[tag=!SEANPC_Friendly_hasattacktarget] if entity @n[tag=SEAmob,distance=0..13] run attribute @s follow_range base set 13
 execute if entity @s[tag=!SEANPC_Friendly_hasattacktarget] if entity @n[tag=SEAmob,distance=0..13] run data modify entity @s Silent set value 1b
-execute if entity @s[tag=!SEANPC_Friendly_hasattacktarget] if entity @n[tag=SEAmob,distance=0..13] run damage @s 0 arrow by @n[tag=SEAmob,distance=0..12]
+execute if entity @s[tag=!SEANPC_Friendly_hasattacktarget] if entity @n[tag=SEAmob,distance=0..13] run damage @s 0 out_of_world by @n[tag=SEAmob,distance=0..12]
 execute if entity @s[tag=!SEANPC_Friendly_hasattacktarget] if entity @n[tag=SEAmob,distance=0..13] run data modify entity @s Silent set value 0b
 execute if entity @s[tag=!SEANPC_Friendly_hasattacktarget] if entity @n[tag=SEAmob,distance=0..13] run tag @s add SEANPC_Friendly_hasattacktarget
 execute if entity @s[tag=SEANPC_Friendly_hasattacktarget] on target if entity @s[type=player] run attribute @n[tag=SEANPC_Friendly_hasattacktarget] follow_range base set 0
