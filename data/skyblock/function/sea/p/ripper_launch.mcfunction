@@ -11,5 +11,5 @@ execute as @s at @s rotated as @s run tp @s ^ ^ ^0.8 facing ^ ^ ^1.7
 
 function skyblock:sea/p/weapon/ripper/reflect_splitter
 
-execute unless block ~ ~ ~ air unless block ~ ~ ~ water run scoreboard players set @s[scores={sea_ripper=6..}] sea_ripper 5
+#execute unless block ~ ~ ~ air unless block ~ ~ ~ water run scoreboard players set @s[scores={sea_ripper=6..}] sea_ripper 5
 execute positioned ^ ^-1.5 ^ as @e[tag=SEAmob,distance=0..1.6] at @s run scoreboard players remove @s[scores={sea_ripper=6..}] sea_ripper 1
