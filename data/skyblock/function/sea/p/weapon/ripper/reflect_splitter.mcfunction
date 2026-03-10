@@ -7,7 +7,7 @@ scoreboard players set 90 constant 90
 scoreboard players set n90 constant -90
 scoreboard players set 0 constant 0
 # positioned ^1 ^ ^ unless block ~ ~ ~ #air unless block ~ ~ ~ structure_void unless block ~ ~ ~ water unless block ~ ~ ~ #flowers unless block ~ ~ ~ #buttons 
-execute if entity @s[y_rotation=-225..-135] run function skyblock:sea/p/weapon/ripper/reflect_n
-execute if entity @s[y_rotation=-135..-45] run function skyblock:sea/p/weapon/ripper/reflect_s
-execute if entity @s[y_rotation=-45..45] run function skyblock:sea/p/weapon/ripper/reflect_e
-execute if entity @s[y_rotation=45..135] run function skyblock:sea/p/weapon/ripper/reflect_w
+execute if entity @s[y_rotation=-225..-135] unless block ~ ~ ~ #air unless block ~ ~ ~ structure_void unless block ~ ~ ~ water unless block ~ ~ ~ #flowers unless block ~ ~ ~ #buttons run function skyblock:sea/p/weapon/ripper/reflect_n
+execute if entity @s[y_rotation=-135..-45] unless block ~ ~ ~ #air unless block ~ ~ ~ structure_void unless block ~ ~ ~ water unless block ~ ~ ~ #flowers unless block ~ ~ ~ #buttons run function skyblock:sea/p/weapon/ripper/reflect_s
+execute if entity @s[y_rotation=-45..45] unless block ~ ~ ~ #air unless block ~ ~ ~ structure_void unless block ~ ~ ~ water unless block ~ ~ ~ #flowers unless block ~ ~ ~ #buttons run function skyblock:sea/p/weapon/ripper/reflect_e
+execute if entity @s[y_rotation=45..135] unless block ~ ~ ~ #air unless block ~ ~ ~ structure_void unless block ~ ~ ~ water unless block ~ ~ ~ #flowers unless block ~ ~ ~ #buttons run function skyblock:sea/p/weapon/ripper/reflect_w
