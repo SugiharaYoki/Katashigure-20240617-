@@ -27,8 +27,8 @@ execute if score @s rng1 matches 161..999 as @p[distance=0..5.5,tag=azrPlayer,ta
 execute if score @s rng1 matches 161..999 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_303] run tellraw @s [{text:" - "},{text:"询问：可是你应该已经成为怪物了？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30303"}}]
 
 execute if score @s rng1 matches 161..999 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_303] run tag @s add azrPlayer_dialogchoice_revealed_303
-execute if score @s rng1 matches 161 run scoreboard players set @s rng1 159
 execute if score @s rng1 matches 161..999 as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_303] run tag @s remove azrPlayer_dialogchoice_revealed_303
+execute if score @s rng1 matches 161 run scoreboard players set @s rng1 159
 
 
 execute as @s[scores={rng1=1002}] positioned -79839 13 -65 as @n[tag=AzrielBossWorking,type=zombie,distance=..20] run tellraw @a[tag=azrShowDialog] [{text:"金属学家：",color:"yellow",bold:1b},{bold: false,text:"\n“我是这座矿场的矿工。曾经……我或许也属于那些生灵的种族吧。”",color:"white"}]

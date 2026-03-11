@@ -15,8 +15,8 @@ execute if score @s rng1 matches 60..999 as @p[distance=0..5.5,tag=azrPlayer,tag
 execute if score @s rng1 matches 60..999 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_302] run tellraw @s [{text:" - "},{text:"询问：那个白色的箱子是怎么回事？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30203"}}]
 
 execute if score @s rng1 matches 60..999 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_302] run tag @s add azrPlayer_dialogchoice_revealed_302
-execute if score @s rng1 matches 60 run scoreboard players set @s rng1 59
 execute if score @s rng1 matches 60..999 as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_302] run tag @s remove azrPlayer_dialogchoice_revealed_302
+execute if score @s rng1 matches 60 run scoreboard players set @s rng1 59
 
 execute if score @s rng1 matches 1002 run playsound minecraft:entity.vindicator.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng1 matches 1002 run tellraw @a[tag=azrShowDialog] [{text:"第2巡逻小队队长 温斯顿：",color:"green",bold:1b},{bold: false,text:"\n“我是神庭西翼第2巡逻小队的队长，温斯顿。”",color:"white"}]
