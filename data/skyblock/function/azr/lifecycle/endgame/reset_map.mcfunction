@@ -49,6 +49,10 @@ setblock -79396 26 -384 decorated_pot{sherds:["prize_pottery_sherd","prize_potte
 
 fill -79370 27 -373 -79372 26 -373 minecraft:iron_bars
 
+#新补充
+fill -79764 105 -2066 -79765 106 -2066 air
+fill -79764 105 -2066 -79765 106 -2066 minecraft:bamboo_shelf[facing=north]
+
 
 #start gate
 fill -79933 38 -15 -79933 40 -14 minecraft:purple_stained_glass
