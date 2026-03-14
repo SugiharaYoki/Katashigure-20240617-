@@ -624,6 +624,8 @@ setblock -79936 49 -158 trapped_chest[facing=north]{lock:{components:{custom_dat
 item replace block -79936 49 -158 container.12 with skull_banner_pattern[custom_name={text:"“期限将至 此乃针对神庭之审判”",color:"dark_purple",italic:0b},lore=[{text:"这里的魔物保受摧残，",color:"white",italic:0b},{text:"终日身于苦痛之中。",color:"white",italic:0b},{text:"沙利叶大人既是对此心知肚明，",color:"white",italic:0b},{text:"又为何让这暴行延续？",color:"white",italic:0b}]] 1
 item replace block -79936 49 -158 container.14 with cooked_beef 3
 
+  #休整剑士的监狱小房间
+fill -79925 40 -111 -79925 41 -111 iron_bars
 
   #桌子
 setblock -79917 41 -104 minecraft:spruce_trapdoor[open=false,facing=west]
