@@ -72,7 +72,8 @@ tag @s remove azrPlayer_respawnanchor_unlocked_westcourt_c
 tag @s remove azrPlayer_respawnanchor_unlocked_mossyroad
 tag @s remove azrPlayer_respawnanchor_unlocked_lighthall_a
 tag @s remove azrPlayer_respawnanchor_unlocked_lighthall_b
-tag @s remove azrPlayer_respawnanchor_unlocked_heatroot
+tag @s remove azrPlayer_respawnanchor_unlocked_heatroot_a
+tag @s remove azrPlayer_respawnanchor_unlocked_heatroot_b
 tag @s remove azrPlayer_respawnanchor_unlocked_library
 tag @s remove azrPlayer_respawnanchor_unlocked_rockpath
 tag @s remove azrPlayer_respawnanchor_unlocked_prison_a

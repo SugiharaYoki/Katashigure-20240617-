@@ -66,11 +66,11 @@ execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run g
 
 #out
 
-execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79937,dx=11,y=26,dy=8,z=-17,dz=25] run bossbar remove azr:boss_hp_bar_mossboss
-execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79937,dx=11,y=26,dy=8,z=-17,dz=25] run tp @n[tag=AzrielBossMossBoss] ~ ~-200 ~
-execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79937,dx=11,y=26,dy=8,z=-17,dz=25] run kill @n[tag=AzrielBossMossBoss]
-execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79937,dx=11,y=26,dy=8,z=-17,dz=25] run function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_mossboss
-execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79937,dx=11,y=26,dy=8,z=-17,dz=25] run stopsound @a[tag=azrShowDialog] music minecraft:renegade
-execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79937,dx=11,y=26,dy=8,z=-17,dz=25] run kill @s
+execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79939,dx=15,y=26,dy=8,z=-17,dz=25] run bossbar remove azr:boss_hp_bar_mossboss
+execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79939,dx=15,y=26,dy=8,z=-17,dz=25] run tp @n[tag=AzrielBossMossBoss] ~ ~-200 ~
+execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79939,dx=15,y=26,dy=8,z=-17,dz=25] run kill @n[tag=AzrielBossMossBoss]
+execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79939,dx=15,y=26,dy=8,z=-17,dz=25] run function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_mossboss
+execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79939,dx=15,y=26,dy=8,z=-17,dz=25] run stopsound @a[tag=azrShowDialog] music minecraft:renegade
+execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79939,dx=15,y=26,dy=8,z=-17,dz=25] run kill @s
 
 

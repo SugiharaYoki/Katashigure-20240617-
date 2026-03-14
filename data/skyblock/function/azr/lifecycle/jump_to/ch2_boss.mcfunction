@@ -3,6 +3,13 @@ function skyblock:azr/lifecycle/jump_to/ch2_start
 tag @a[tag=azrPlayer] add azrPlayer_respawnanchor_unlocked_lighthall_a
 tag @a[tag=azrPlayer] add azrPlayer_respawnanchor_unlocked_lighthall_b
 
+tag @a[tag=azrPlayer,tag=AZS_BoS11] add azrPlayer_respawnanchor_unlocked_heatroot_b
+tag @a[tag=azrPlayer,tag=AZS_BoS06] add azrPlayer_respawnanchor_unlocked_heatroot_b
+tag @a[tag=azrPlayer,tag=AZS_BoSB04] add azrPlayer_respawnanchor_unlocked_heatroot_b
+tag @a[tag=azrPlayer,tag=AZS_BoS05] add azrPlayer_respawnanchor_unlocked_heatroot_a
+tag @a[tag=azrPlayer,tag=AZS_BoSB01] add azrPlayer_respawnanchor_unlocked_library
+
+
 setblock -79929 39 125 air destroy
 setblock -79933 39 125 air destroy
 setblock -79928 39 125 air
