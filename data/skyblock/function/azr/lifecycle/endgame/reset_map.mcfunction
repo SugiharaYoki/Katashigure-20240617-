@@ -611,6 +611,9 @@ item replace block -79929 49 -123 container.14 with tripwire_hook[custom_name={t
 
 
 setblock -79937 48 -143 minecraft:potted_cornflower
+setblock -79919 41 -101 minecraft:potted_allium
+setblock -79921 41 -101 minecraft:potted_allium
+setblock -79928 40 -113 flower_pot
 
 setblock -79897 40 -115 air
 setblock -79897 40 -115 trapped_chest[facing=west]{lock:{components:{custom_data:{key_required:1b}}}}
