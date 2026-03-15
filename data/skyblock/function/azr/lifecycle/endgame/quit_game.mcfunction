@@ -79,6 +79,28 @@ tag @s remove azrPlayer_respawnanchor_unlocked_rockpath
 tag @s remove azrPlayer_respawnanchor_unlocked_prison_a
 tag @s remove azrPlayer_respawnanchor_unlocked_prison_b
 
+#对话重置
+tag @s remove azrPlayer_dialogchoice_revealed_301
+tag @s remove azrPlayer_dialogchoice_revealed_302
+tag @s remove azrPlayer_dialogchoice_revealed_303
+tag @s remove azrPlayer_dialogchoice_revealed_304
+tag @s remove azrPlayer_dialogchoice_revealed_305
+tag @s remove azrPlayer_dialogchoice_revealed_306
+tag @s remove azrPlayer_dialogchoice_revealed_307
+tag @s remove azrPlayer_dialogchoice_revealed_308
+tag @s remove azrPlayer_dialogchoice_revealed_309
+tag @s remove azrPlayer_dialogchoice_revealed_310
+tag @s remove azrPlayer_dialogchoice_revealed_311
+tag @s remove azrPlayer_dialogchoice_revealed_312
+tag @s remove azrPlayer_dialogchoice_revealed_313
+tag @s remove azrPlayer_dialogchoice_revealed_314
+tag @s remove azrPlayer_dialogchoice_revealed_315
+tag @s remove azrPlayer_dialogchoice_revealed_316
+tag @s remove azrPlayer_dialogchoice_revealed_317
+tag @s remove azrPlayer_dialogchoice_revealed_318
+tag @s remove azrPlayer_dialogchoice_revealed_319
+
+
 #对接主城系统
 
 #wtf
