@@ -6,9 +6,9 @@ scoreboard players remove @s AzrSariel_Amulet_StayFloat_clock 1
 
 
 execute if entity @s[predicate=skyblock:jump] run scoreboard players set @s AzrSariel_Amulet_StayFloat_clock 12
-execute if entity @s[scores={AzrSariel_Amulet_StayFloat_cooldown=..0},predicate=skyblock:jump,gamemode=adventure] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 9
-execute if entity @s[scores={AzrSariel_Amulet_StayFloat_cooldown=1..10},predicate=!skyblock:jump] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 20
-execute if entity @s[scores={AzrSariel_Amulet_StayFloat_cooldown=15..20},predicate=skyblock:jump] unless block ~ ~-0.3 ~ water unless block ~ ~0.3 ~ water unless block ~ ~ ~ #climbable run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 141
+execute if entity @s[scores={AzrSariel_Amulet_StayFloat_clock=..0},predicate=!skyblock:jump,predicate=skyblock:sprint,gamemode=adventure,nbt={OnGround:1b}] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 140
+#execute if entity @s[scores={AzrSariel_Amulet_StayFloat_clock=1..10},predicate=!skyblock:sprint] run scoreboard players set @s AzrSariel_Amulet_StayFloat_clock 20
+#execute if entity @s[scores={AzrSariel_Amulet_StayFloat_clock=15..20},predicate=skyblock:sprint,tag=!azrAmulet_StayFloat_Jumping] unless block ~ ~-0.3 ~ water unless block ~ ~0.3 ~ water unless block ~ ~ ~ #climbable run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 141
 
 #execute if score @s[tag=azrAmulet_StayFloat_Jumping] AzrSariel_Amulet_StayFloat_cooldown matches ..0 if entity @s[nbt={OnGround:1b}] run say tag @s remove azrAmulet_StayFloat_Jumping
 #execute if score @s[tag=azrAmulet_StayFloat_Jumping] AzrSariel_Amulet_StayFloat_cooldown matches ..0 if entity @s[nbt={OnGround:1b}] run tag @s remove azrAmulet_StayFloat_Jumping
@@ -23,9 +23,9 @@ execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138.. if entity 
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138.. unless entity @s[nbt={OnGround:1b}] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 3
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 run attribute @s gravity base set 0
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 run attribute @s jump_strength base set 0
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 136 store result storage azr_amulet:stay_float y double 0.0001 run data get entity @s Pos[1] 10000
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 136 store result storage azr_amulet:stay_float y_10 double 0.001 run data get entity @s Pos[1] 10000
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..136 at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
+#execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 136 store result storage azr_amulet:stay_float y double 0.0001 run data get entity @s Pos[1] 10000
+#execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 136 store result storage azr_amulet:stay_float y_10 double 0.001 run data get entity @s Pos[1] 10000
+#execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..136 at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..136 run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 0.4 2
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..136 run particle white_smoke ~ ~-0.2 ~ 0.1 0 0.1 0.03 8
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..136 if entity @s[predicate=!skyblock:sprint] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 2
