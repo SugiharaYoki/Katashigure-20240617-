@@ -22,9 +22,9 @@ summon marker ~ ~ ~ {Tags:["SEA_w_crowbar_displaymarker","SEA_w_crowbar_displaym
 summon marker ~ ~ ~ {Tags:["SEA_w_crowbar_displaymarker","SEA_w_crowbar_displaymarker14"]}
 summon marker ~ ~ ~ {Tags:["SEA_w_crowbar_displaymarker","SEA_w_crowbar_displaymarker15"]}
 summon marker ~ ~ ~ {Tags:["SEA_w_crowbar_displaymarker","SEA_w_crowbar_displaymarker16"]}
-data modify entity @n[tag=SEA_w_crowbar_displaymarker0] CustomName set value '" ▼ "'
-data modify entity @n[tag=SEA_w_crowbar_displaymarker0b] CustomName set value '" ▽ "'
-data modify entity @n[tag=SEA_w_crowbar_displaymarkerE] CustomName set value '" ▽ "'
+data modify entity @n[tag=SEA_w_crowbar_displaymarker0] CustomName set value ' ▼ '
+data modify entity @n[tag=SEA_w_crowbar_displaymarker0b] CustomName set value ' ▽ '
+data modify entity @n[tag=SEA_w_crowbar_displaymarkerE] CustomName set value ' ▽ '
 execute if entity @s[tag=SEA_w_crowbar_upg1] run data modify entity @n[tag=SEA_w_crowbar_displaymarker1] CustomName set value ' ■ '
 execute if entity @s[tag=SEA_w_crowbar_upg2] run data modify entity @n[tag=SEA_w_crowbar_displaymarker2] CustomName set value ' ■ '
 execute if entity @s[tag=SEA_w_crowbar_upg3] run data modify entity @n[tag=SEA_w_crowbar_displaymarker3] CustomName set value ' ■ '

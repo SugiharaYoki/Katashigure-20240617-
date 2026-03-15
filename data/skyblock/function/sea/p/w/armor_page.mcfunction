@@ -38,9 +38,9 @@ summon marker ~ ~ ~ {Tags:["SEA_w_armor_displaymarker","SEA_w_armor_displaymarke
 summon marker ~ ~ ~ {Tags:["SEA_w_armor_displaymarker","SEA_w_armor_displaymarker28"]}
 summon marker ~ ~ ~ {Tags:["SEA_w_armor_displaymarker","SEA_w_armor_displaymarker29"]}
 summon marker ~ ~ ~ {Tags:["SEA_w_armor_displaymarker","SEA_w_armor_displaymarker30"]}
-data modify entity @n[tag=SEA_w_armor_displaymarker0] CustomName set value '" ▼ "'
-data modify entity @n[tag=SEA_w_armor_displaymarker0b] CustomName set value '" ▽ "'
-data modify entity @n[tag=SEA_w_armor_displaymarkerE] CustomName set value '" ▽ "'
+data modify entity @n[tag=SEA_w_armor_displaymarker0] CustomName set value ' ▼ '
+data modify entity @n[tag=SEA_w_armor_displaymarker0b] CustomName set value ' ▽ '
+data modify entity @n[tag=SEA_w_armor_displaymarkerE] CustomName set value ' ▽ '
 execute if entity @s[tag=SEA_w_armor_upg1] run data modify entity @n[tag=SEA_w_armor_displaymarker1] CustomName set value ' ■ '
 execute if entity @s[tag=SEA_w_armor_upg2] run data modify entity @n[tag=SEA_w_armor_displaymarker2] CustomName set value ' ■ '
 execute if entity @s[tag=SEA_w_armor_upg3] run data modify entity @n[tag=SEA_w_armor_displaymarker3] CustomName set value ' ■ '

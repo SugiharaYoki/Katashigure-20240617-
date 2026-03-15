@@ -22,9 +22,9 @@ summon marker ~ ~ ~ {Tags:["SEA_w_axe_displaymarker","SEA_w_axe_displaymarker13"
 summon marker ~ ~ ~ {Tags:["SEA_w_axe_displaymarker","SEA_w_axe_displaymarker14"]}
 summon marker ~ ~ ~ {Tags:["SEA_w_axe_displaymarker","SEA_w_axe_displaymarker15"]}
 summon marker ~ ~ ~ {Tags:["SEA_w_axe_displaymarker","SEA_w_axe_displaymarker16"]}
-data modify entity @n[tag=SEA_w_axe_displaymarker0] CustomName set value '" ▼ "'
-data modify entity @n[tag=SEA_w_axe_displaymarker0b] CustomName set value '" ▽ "'
-data modify entity @n[tag=SEA_w_axe_displaymarkerE] CustomName set value '" ▽ "'
+data modify entity @n[tag=SEA_w_axe_displaymarker0] CustomName set value ' ▼ '
+data modify entity @n[tag=SEA_w_axe_displaymarker0b] CustomName set value ' ▽ '
+data modify entity @n[tag=SEA_w_axe_displaymarkerE] CustomName set value ' ▽ '
 execute if entity @s[tag=SEA_w_axe_upg1] run data modify entity @n[tag=SEA_w_axe_displaymarker1] CustomName set value ' ■ '
 execute if entity @s[tag=SEA_w_axe_upg2] run data modify entity @n[tag=SEA_w_axe_displaymarker2] CustomName set value ' ■ '
 execute if entity @s[tag=SEA_w_axe_upg3] run data modify entity @n[tag=SEA_w_axe_displaymarker3] CustomName set value ' ■ '

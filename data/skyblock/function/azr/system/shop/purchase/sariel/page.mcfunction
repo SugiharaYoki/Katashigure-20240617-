@@ -100,9 +100,9 @@ summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker13F
 summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker14F"]}
 summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker15F"]}
 summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker16F"]}
-data modify entity @n[tag=AzrSariel_displaymarker0] CustomName set value '" ▼ "'
-data modify entity @n[tag=AzrSariel_displaymarker0b] CustomName set value '" ▽ "'
-data modify entity @n[tag=AzrSariel_displaymarkerE] CustomName set value '" ▽ "'
+data modify entity @n[tag=AzrSariel_displaymarker0] CustomName set value ' ▼ '
+data modify entity @n[tag=AzrSariel_displaymarker0b] CustomName set value ' ▽ '
+data modify entity @n[tag=AzrSariel_displaymarkerE] CustomName set value ' ▽ '
 execute if entity @s[tag=AzrSariel_upg1] run data modify entity @n[tag=AzrSariel_displaymarker1] CustomName set value ' ■ '
 execute if entity @s[tag=AzrSariel_upg2] run data modify entity @n[tag=AzrSariel_displaymarker2] CustomName set value ' ■ '
 execute if entity @s[tag=AzrSariel_upg3] run data modify entity @n[tag=AzrSariel_displaymarker3] CustomName set value ' ■ '
