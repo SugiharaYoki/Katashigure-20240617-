@@ -17,8 +17,8 @@ execute if entity @s[scores={AzrSariel_Amulet_StayFloat_cooldown=15..20},predica
 #execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 141 run tag @s add azrAmulet_StayFloat_Jumping
 #execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 143 run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 138
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90.. if entity @s[predicate=!skyblock:jump] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 3
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 run attribute @s gravity base set 0
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 run attribute @s jump_strength base set 0
+#execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 run attribute @s gravity base set 0
+#execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 run attribute @s jump_strength base set 0
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 store result storage azr_amulet:stay_float y double 0.00001 run data get entity @s Pos[1] 100000
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 store result storage azr_amulet:stay_float y_10 double 0.0001 run data get entity @s Pos[1] 100000
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
