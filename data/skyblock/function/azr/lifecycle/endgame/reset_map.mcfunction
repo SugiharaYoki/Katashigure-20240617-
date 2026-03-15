@@ -568,15 +568,10 @@ setblock -79889 48 -73 potted_flowering_azalea_bush
 
 #静火之坑侧面房间
 setblock -79867 44 -52 barrel[facing=north]{Inventory:[]}
-
 setblock -79866 43 -52 barrel[facing=north]{Inventory:[]}
-
 setblock -79865 42 -52 barrel[facing=north]{Inventory:[]}
-
 setblock -79867 44 -57 barrel[facing=south]{Inventory:[]}
-
 setblock -79866 43 -57 barrel[facing=south]{Inventory:[]}
-
 setblock -79865 42 -57 barrel[facing=south]{Inventory:[]}
 
 
@@ -750,12 +745,12 @@ clone -79908 36 -41 -79904 43 -32 -79933 37 -27
 
 
 
-item replace block -79863 40 -76 container.14 with skull_banner_pattern[custom_name={text:"“招待厅事务记录5”",color:"dark_purple",italic:0b},lore=[{text:"第一关口北面的建筑物出现了大量裂缝，",color:"white",italic:0b},{text:"这样的现象一直延伸至牢房区域。",color:"white",italic:0b},{text:"虽说大家有不祥的预感，",color:"white",italic:0b},{text:"权之殊能大人却言仅为年久失修。",color:"white",italic:0b}]] 1
+#item replace block -79863 40 -76 container.14 with skull_banner_pattern[custom_name={text:"“招待厅事务记录5”",color:"dark_purple",italic:0b},lore=[{text:"第一关口北面的建筑物出现了大量裂缝，",color:"white",italic:0b},{text:"这样的现象一直延伸至牢房区域。",color:"white",italic:0b},{text:"虽说大家有不祥的预感，",color:"white",italic:0b},{text:"权之殊能大人却言仅为年久失修。",color:"white",italic:0b}]] 1
 item replace block -79935 48 -164 container.13 with cooked_beef 3
 item replace block -79866 43 -57 container.14 with coal 2
 item replace block -79867 44 -52 container.12 with emerald 3
 item replace block -79865 42 -52 container.13 with dried_kelp 8
-item replace block -79863 40 -76 container.12 with stone_axe[custom_name={text:"苔石斧·笼怨",italic:0b},attribute_modifiers=[{type:"knockback_resistance",slot:"mainhand",id:"azr:mossstone_axe.knockback_resistance",amount:0.13,operation:"add_value"},{type:"attack_damage",slot:"mainhand",id:"azr:mossstone_axe.attack_damage",amount:10.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"azr:mossstone_axe.attack_speed",amount:-3.2,operation:"add_value"}],enchantments={"unbreaking":2}] 1
+#item replace block -79863 40 -76 container.12 with stone_axe[custom_name={text:"苔石斧·笼怨",italic:0b},attribute_modifiers=[{type:"knockback_resistance",slot:"mainhand",id:"azr:mossstone_axe.knockback_resistance",amount:0.13,operation:"add_value"},{type:"attack_damage",slot:"mainhand",id:"azr:mossstone_axe.attack_damage",amount:10.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"azr:mossstone_axe.attack_speed",amount:-3.2,operation:"add_value"}],enchantments={"unbreaking":2}] 1
 
 item replace block -79770 23 -460 container.13 with minecraft:gold_nugget 30
 item replace block -79765 24 -469 container.13 with minecraft:gold_nugget 28
