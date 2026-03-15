@@ -3,7 +3,7 @@
 
 
 
-execute store result storage azr_amulet:stay_float y_10_int int 0.0001 run data get storage azr_amulet:stay_float y_10 10000
+execute store result storage azr_amulet:stay_float y_10_int int 0.00001 run data get storage azr_amulet:stay_float y_10 100000
 
 #$say y: $(y)
 #$say y_10: $(y_10)
