@@ -1,11 +1,9 @@
 
 scoreboard players remove @s AzrSariel_Amulet_StayFloat_cooldown 1
 
-scoreboard players remove @s AzrSariel_Amulet_StayFloat_clock 1
 
 
 
-execute if entity @s[predicate=skyblock:jump] run scoreboard players set @s AzrSariel_Amulet_StayFloat_clock 12
 execute if entity @s[scores={AzrSariel_Amulet_StayFloat_cooldown=..0},predicate=skyblock:jump,gamemode=adventure] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 9
 execute if entity @s[scores={AzrSariel_Amulet_StayFloat_cooldown=1..10},predicate=!skyblock:jump] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 20
 execute if entity @s[scores={AzrSariel_Amulet_StayFloat_cooldown=15..20},predicate=skyblock:jump] unless block ~ ~-0.3 ~ water unless block ~ ~0.3 ~ water unless block ~ ~ ~ #climbable run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 141
@@ -36,7 +34,6 @@ execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 50 if block ~ ~-
 
 
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90..118 run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 2
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90.. run scoreboard players set @s AzrSariel_Amulet_StayFloat_clock 5
 
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 50..89 run attribute @s gravity base set 0.8
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 2..89 run attribute @s jump_strength base reset
