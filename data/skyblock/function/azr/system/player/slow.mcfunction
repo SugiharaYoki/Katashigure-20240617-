@@ -13,7 +13,7 @@ execute unless entity @s[x=-79931,y=100,z=0,distance=..10000] run tp @s @p[tag=a
 execute if items entity @s weapon.mainhand tripwire_hook at @s anchored eyes run function skyblock:azr/system/player/unlock_chest
 
 #沼泽中毒
-execute if score @s AzrPlayer_CurrentArea matches 7 run function skyblock:azr/system/player/map_effects/rock_path_poison_water
+execute if score @s AzrPlayer_CurrentArea matches 7 run function skyblock:azr/system/player/map_effect/rock_path_poison_water
 
 #打印剧情
 execute if items entity @s container.* skull_banner_pattern run function skyblock:azr/system/player/unlock_story
