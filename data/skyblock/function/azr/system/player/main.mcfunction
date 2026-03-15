@@ -45,6 +45,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_pacemaker:1b}] 
 execute if items entity @s container.* *[custom_data~{azr_amulet_pacemaker_safe:1b}] run function skyblock:azr/system/player/skills/amulet/pacemaker_safe_core
 execute if items entity @s container.* *[custom_data~{azr_amulet_flower_wall:1b}] run function skyblock:azr/system/player/skills/amulet/flower_wall_core
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_lit:1b}] run function skyblock:azr/system/player/skills/amulet/fire_lit_core
+execute if items entity @s hotbar.* *[custom_data~{azr_amulet_double_arrow:1b}] run function skyblock:azr/system/player/skills/amulet/double_arrow_core
 execute if items entity @s container.* *[custom_data~{azr_amulet_stay_float:1b}] run function skyblock:azr/system/player/skills/amulet/stay_float_core
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_axe_vortex:1b}] run function skyblock:azr/system/player/skills/amulet/axe_vortex_core
 execute if items entity @s container.* *[custom_data~{azr_amulet_jump_boost:1b}] run function skyblock:azr/system/player/skills/amulet/jump_boost_core
@@ -90,5 +91,5 @@ execute if score @s AzrEvent_affected_quake_medium matches 1.. run function skyb
 
 
 scoreboard players reset @s AzrSariel_Amulet_generic_damage_dealt
-
+scoreboard players reset @s AzrSariel_Amulet_generic_use_bow
 

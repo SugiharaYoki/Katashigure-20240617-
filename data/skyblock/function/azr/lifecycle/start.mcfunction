@@ -125,6 +125,8 @@ scoreboard objectives add AzrSariel_Amulet_DownKick_clock dummy
 scoreboard objectives add AzrSariel_Amulet_AxeVortex_cooldown dummy
 scoreboard objectives add AzrSariel_Amulet_RevivalStar_teleport dummy
 scoreboard objectives add AzrSariel_Amulet_MossSpore_cooldown dummy
+scoreboard objectives add AzrSariel_Amulet_generic_use_bow minecraft.used:minecraft.bow
+scoreboard objectives add AzrSariel_Amulet_DoubleArrow_clock dummy
 
 
 #特殊食物
