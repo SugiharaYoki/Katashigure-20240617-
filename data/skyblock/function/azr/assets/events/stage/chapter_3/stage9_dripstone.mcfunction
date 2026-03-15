@@ -24,11 +24,11 @@ execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s if score @s rng1 matches 101.. run function skyblock:azr/assets/events/stage/chapter_3/area_dripstone/post_subboss_working
 
 #金属学家
-execute positioned -79811 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..30] run scoreboard players add @s rng12 1
-execute positioned -79811 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..30,scores={rng12=5..16}] at @s run rotate @s facing entity @p[tag=azrPlayer]
-execute positioned -79811 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..30,scores={rng12=17}] at @s run tellraw @a[tag=azrShowDialog] [{text:"金属学家：",color:"red",bold:1b},{bold: false,text:"\n“矿石、矿石、矿石……全部都是老板的……”",color:"white"}]
+execute positioned -79805 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..30] run scoreboard players add @s rng12 1
+execute positioned -79805 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..30,scores={rng12=5..16}] at @s run rotate @s facing entity @p[tag=azrPlayer]
+execute positioned -79805 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..30,scores={rng12=17}] at @s run tellraw @a[tag=azrShowDialog] [{text:"金属学家：",color:"red",bold:1b},{bold: false,text:"\n“矿石、矿石、矿石……全部都是老板的……”",color:"white"}]
 #事件在mob_controller
-execute positioned -79811 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..30,scores={rng12=29}] at @s run tellraw @a[tag=azrShowDialog] [{text:"金属学家：",color:"red",bold:1b},{bold: false,text:"\n“休想再偷走，任何矿石……！”",color:"white"}]
+execute positioned -79805 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..30,scores={rng12=29}] at @s run tellraw @a[tag=azrShowDialog] [{text:"金属学家：",color:"red",bold:1b},{bold: false,text:"\n“休想再偷走，任何矿石……！”",color:"white"}]
 
 
 
