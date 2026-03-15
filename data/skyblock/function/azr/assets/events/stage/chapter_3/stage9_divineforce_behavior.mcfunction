@@ -9,7 +9,7 @@ execute as @s[tag=!AzrielNPC_Divineforce,tag=AzrielNPC_Divineforce_Processed] at
 execute as @s[tag=AzrielNPC_Divineforce,tag=AzrielNPC_Divineforce_Processed,tag=!AzrielNPC_Divineforce_hasattacktarget] at @s if entity @a[tag=azrPlayer,distance=0..3.5] run effect give @s slowness 1 99 true
 execute as @s[tag=AzrielNPC_Divineforce,tag=AzrielNPC_Divineforce_Processed,tag=!AzrielNPC_Divineforce_hasattacktarget] at @s if entity @a[tag=azrPlayer,distance=0..1.5] run effect give @s weakness 1 99 true
 execute as @s[tag=AzrielNPC_Divineforce,tag=AzrielNPC_Divineforce_Processed,tag=!AzrielNPC_Divineforce_hasattacktarget] at @s run rotate @s facing entity @p[tag=azrPlayer,distance=0..3.5]
-execute as @s[tag=AzrielNPC_Divineforce,tag=AzrielNPC_Divineforce_Processed,tag=AzrielMob] at @s run tag @s remove AzrielMob
+
 
 execute if entity @s[tag=!AzrielNPC_Divineforce_hasattacktarget,tag=AzrielNPC_Divineforce,type=pillager] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run item replace entity @s weapon.mainhand with minecraft:crossbow
 execute if entity @s[tag=!AzrielNPC_Divineforce_hasattacktarget,tag=AzrielNPC_Divineforce] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run attribute @s follow_range base set 9
@@ -39,3 +39,5 @@ execute if entity @s[scores={rng9=3},tag=AzrielMob_pillager] if entity @n[tag=!A
 execute if entity @s[scores={rng9=4},tag=AzrielMob_pillager] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run tellraw @a[tag=azrShowDialog,distance=0..9] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“小心，躲开我的箭。”",color:"white"}]
 execute if entity @s[scores={rng9=5},tag=AzrielMob_pillager] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run tellraw @a[tag=azrShowDialog,distance=0..9] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“看上去是个难缠的敌人。”",color:"white"}]
 scoreboard players reset @s rng9
+
+execute as @s[tag=AzrielNPC_Divineforce,tag=AzrielMob] at @s run tag @s remove AzrielMob
