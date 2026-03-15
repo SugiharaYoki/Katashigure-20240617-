@@ -4,4 +4,5 @@
 
 $execute at @s if block ~ ~-0.05 ~ air if block ~ ~1 ~ air positioned ~ $(y_limit_up) ~ if entity @s[distance=0..1.5] run tp @s ~ $(y) ~
 $execute at @s if block ~ ~-0.05 ~ air if block ~ ~1 ~ air positioned ~ $(y_limit_down) ~ if entity @s[distance=0..1.5] run tp @s ~ $(y) ~
+$tp @s ~ $(y) ~
 #$execute at @s positioned $(x) $(y_limit) $(z) if entity @s[distance=0..1.5] run say limit_reached
