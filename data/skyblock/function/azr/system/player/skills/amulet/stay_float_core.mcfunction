@@ -5,7 +5,7 @@ scoreboard players remove @s AzrSariel_Amulet_StayFloat_cooldown 1
 
 
 execute if entity @s[scores={AzrSariel_Amulet_StayFloat_cooldown=..0},predicate=skyblock:jump,gamemode=adventure] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 9
-execute if entity @s[scores={AzrSariel_Amulet_StayFloat_cooldown=1..10},predicate=!skyblock:jump] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 20
+execute if entity @s[scores={AzrSariel_Amulet_StayFloat_cooldown=5..10},predicate=!skyblock:jump] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 19
 execute if entity @s[scores={AzrSariel_Amulet_StayFloat_cooldown=15..20},predicate=skyblock:jump] unless block ~ ~-0.3 ~ water unless block ~ ~0.3 ~ water unless block ~ ~ ~ #climbable run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 138
 
 #execute if score @s[tag=azrAmulet_StayFloat_Jumping] AzrSariel_Amulet_StayFloat_cooldown matches ..0 if entity @s[nbt={OnGround:1b}] run say tag @s remove azrAmulet_StayFloat_Jumping
