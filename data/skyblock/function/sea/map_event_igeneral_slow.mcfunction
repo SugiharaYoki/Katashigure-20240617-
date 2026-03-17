@@ -66,7 +66,7 @@ execute if score sea_player_count rng1 matches 2.. run function skyblock:sea/map
 
 
 execute positioned 90092 145 135 if block 90093 145 137 air if entity @a[tag=SEAPT,distance=..4.6] unless entity @n[tag=SEAchg_spawn_timer_medical1,distance=0..3] run summon marker ~ ~ ~ {Tags:["SEAchg_spawn_timer","SEAchg_spawn_timer_medical1"]}
-execute as @n[tag=SEAchg_spawn_timer_medical1] at @s run function skyblock:sea/e/chg/ev020_medical1
+execute positioned 90092 145 135 as @n[tag=SEAchg_spawn_timer_medical1,distance=..0.5] at @s run function skyblock:sea/e/chg/ev020_medical1
 
 #激光
 execute as @e[x=90130.0,dx=2.2,y=124.5,dy=0,z=125.5,dz=0] run damage @s 3 sting
@@ -93,8 +93,8 @@ execute if block 90145 123 113 crimson_button[powered=true] run setblock 90145 1
 execute if block 90145 123 100 crimson_button[powered=true] run kill @n[tag=sea_laser_close_5]
 execute if block 90145 123 100 crimson_button[powered=true] run setblock 90145 123 100 warped_button[facing=south,face=wall]
 
-execute if block 90117 123 117 lever[powered=true] run kill @n[tag=sea_laser_close_6]
-execute if block 90117 123 117 lever[powered=false] unless entity @n[tag=sea_laser_close_6] run summon block_display 90118.5 123.5 116.00 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[2.2f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},brightness:{block:15,sky:15},Rotation:[90f,0f],Tags:["sea_blockdisplay","sea_laser_close_6"]}
+execute positioned 90117 123 117 if block ~ ~ ~ lever[powered=true] run kill @n[tag=sea_laser_close_6,distance=..300]
+execute positioned 90117 123 117 if block ~ ~ ~ lever[powered=false] unless entity @n[tag=sea_laser_close_6,distance=..300] run summon block_display 90118.5 123.5 116.00 {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[2.2f,0.03f,0.03f],translation:[0f,0f,0f]},block_state:{Name:redstone_block},brightness:{block:15,sky:15},Rotation:[90f,0f],Tags:["sea_blockdisplay","sea_laser_close_6"]}
 
 
 execute if block 90074 123 138 crimson_button[powered=true] run setblock 90071 125 140 minecraft:redstone_lamp[lit=true]
@@ -114,13 +114,12 @@ execute if block 90074 103 137 scaffolding unless block 90074 103 136 lectern as
 #水晶祀堂
 execute positioned 90093 131 102 if entity @a[distance=0..12] run particle enchant 90093 131 102 3 2 3 0.01 20
 execute positioned 90093 131 102 if entity @a[distance=0..15] run particle portal 90093 131 102 0.5 0.5 0.5 0.01 10
-
 #
 
 execute if block 90089 147 109 air if block 90091 150 110 lever[powered=true] run setblock 90089 147 109 redstone_torch
 
-execute as @n[tag=SEAedwina,tag=!SEAedwina_ch6] at @s as @e[tag=SEAmob,type=!villager,tag=!SEAedwina,distance=0..2.3] at @s run particle sweep_attack ~ ~0.7 ~ 0.2 0.2 0.2 0 2
-execute as @n[tag=SEAedwina,tag=!SEAedwina_ch6] at @s as @e[tag=SEAmob,type=!villager,tag=!SEAedwina,distance=0..2.3] at @s run damage @s 5 generic
+execute positioned 90093 131 102 as @n[tag=SEAedwina,tag=!SEAedwina_ch6,distance=..300,type=villager] at @s as @e[tag=SEAmob,type=!villager,tag=!SEAedwina,distance=0..2.3] at @s run particle sweep_attack ~ ~0.7 ~ 0.2 0.2 0.2 0 2
+execute positioned 90093 131 102 as @n[tag=SEAedwina,tag=!SEAedwina_ch6,distance=..300,type=villager] at @s as @e[tag=SEAmob,type=!villager,tag=!SEAedwina,distance=0..2.3] at @s run damage @s 5 generic
 
 execute positioned 90140 114 210 if entity @a[tag=SEAPT,distance=..6.5,tag=!SEAPF] if block 90073 103 141 air unless entity @n[tag=SEAchg_spawn_timer_longbridge,distance=0..1] run summon marker ~ ~ ~ {Tags:["SEAchg_spawn_timer","SEAchg_spawn_timer_longbridge"]}
 execute if block 90073 103 141 air as @n[tag=SEAchg_spawn_timer_longbridge,x=90140,y=114,z=210,distance=0..1] run function skyblock:sea/e/chg/ev011_the_bridge_to_auxiliary_platform

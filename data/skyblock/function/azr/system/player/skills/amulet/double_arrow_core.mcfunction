@@ -1,0 +1,36 @@
+scoreboard players remove @s AzrSariel_Amulet_DoubleArrow_clock 1
+
+execute if items entity @s weapon.mainhand minecraft:bow if score @s[scores={AzrSariel_Amulet_DoubleArrow_clock=..0}] AzrSariel_Amulet_generic_use_bow matches 1.. run scoreboard players set @s AzrSariel_Amulet_DoubleArrow_clock 108
+execute if items entity @s weapon.mainhand minecraft:bow if entity @s[scores={AzrSariel_Amulet_DoubleArrow_clock=108}] run scoreboard players reset @s AzrSariel_Amulet_generic_use_bow
+execute if items entity @s weapon.mainhand minecraft:bow if entity @s[scores={AzrSariel_Amulet_DoubleArrow_clock=97}] run scoreboard players set @s AzrSariel_Amulet_DoubleArrow_clock 0
+execute if items entity @s weapon.mainhand minecraft:bow if score @s[scores={AzrSariel_Amulet_DoubleArrow_clock=98..108}] AzrSariel_Amulet_generic_use_bow matches 1.. run tag @s add AZR_Amulet_Instant_Success
+
+execute if entity @s[tag=AZR_Amulet_Instant_Success] run scoreboard players set @s AzrSariel_Amulet_DoubleArrow_clock 60
+execute if entity @s[tag=AZR_Amulet_Instant_Success] at @s run playsound minecraft:entity.strider.saddle player @a ~ ~1.5 ~ 1 2
+execute if entity @s[tag=AZR_Amulet_Instant_Success] as @n[type=arrow,nbt={inGround:0b,pickup:1b},distance=..2.5] at @s store result storage azr:cache amulet_doublearrow_motion_x double 0.000053 run data get entity @s Motion[0] 100000
+execute if entity @s[tag=AZR_Amulet_Instant_Success] as @n[type=arrow,nbt={inGround:0b,pickup:1b},distance=..2.5] at @s store result storage azr:cache amulet_doublearrow_motion_y double 0.00005 run data get entity @s Motion[1] 100000
+execute if entity @s[tag=AZR_Amulet_Instant_Success] as @n[type=arrow,nbt={inGround:0b,pickup:1b},distance=..2.5] at @s store result storage azr:cache amulet_doublearrow_motion_z double 0.000053 run data get entity @s Motion[2] 100000
+execute if entity @s[tag=AZR_Amulet_Instant_Success] as @n[type=arrow,nbt={inGround:0b,pickup:1b},distance=..2.5] at @s run function skyblock:azr/system/player/skills/amulet/double_arrow_process with storage azr:cache
+
+execute if entity @s[tag=AZR_Amulet_Instant_Success,x_rotation=60..90] store result storage azr:cache amulet_doublearrow_rain_owner_uuid_0 int 1 run data get entity @s UUID[0]
+execute if entity @s[tag=AZR_Amulet_Instant_Success,x_rotation=60..90] store result storage azr:cache amulet_doublearrow_rain_owner_uuid_1 int 1 run data get entity @s UUID[1]
+execute if entity @s[tag=AZR_Amulet_Instant_Success,x_rotation=60..90] store result storage azr:cache amulet_doublearrow_rain_owner_uuid_2 int 1 run data get entity @s UUID[2]
+execute if entity @s[tag=AZR_Amulet_Instant_Success,x_rotation=60..90] store result storage azr:cache amulet_doublearrow_rain_owner_uuid_3 int 1 run data get entity @s UUID[3]
+execute if entity @s[tag=AZR_Amulet_Instant_Success,x_rotation=60..90] run function skyblock:azr/system/player/skills/amulet/double_arrow_rain
+execute if entity @s[tag=AZR_Amulet_Instant_Success,x_rotation=60..90] run function skyblock:azr/system/player/skills/amulet/double_arrow_rain
+execute if entity @s[tag=AZR_Amulet_Instant_Success,x_rotation=60..90] run function skyblock:azr/system/player/skills/amulet/double_arrow_rain
+execute if entity @s[tag=AZR_Amulet_Instant_Success,x_rotation=60..90] run function skyblock:azr/system/player/skills/amulet/double_arrow_rain
+execute if entity @s[tag=AZR_Amulet_Instant_Success,x_rotation=60..90] run function skyblock:azr/system/player/skills/amulet/double_arrow_rain
+execute if entity @s[tag=AZR_Amulet_Instant_Success,x_rotation=60..90] run function skyblock:azr/system/player/skills/amulet/double_arrow_rain
+execute if entity @s[tag=AZR_Amulet_Instant_Success,x_rotation=60..90] run function skyblock:azr/system/player/skills/amulet/double_arrow_rain
+execute if entity @s[tag=AZR_Amulet_Instant_Success,x_rotation=60..90] run function skyblock:azr/system/player/skills/amulet/double_arrow_rain
+execute if entity @s[tag=AZR_Amulet_Instant_Success,x_rotation=60..90] run function skyblock:azr/system/player/skills/amulet/double_arrow_rain
+execute if entity @s[tag=AZR_Amulet_Instant_Success,x_rotation=60..90] run function skyblock:azr/system/player/skills/amulet/double_arrow_rain
+execute if entity @s[tag=AZR_Amulet_Instant_Success,x_rotation=60..90] run function skyblock:azr/system/player/skills/amulet/double_arrow_rain
+execute if entity @s[tag=AZR_Amulet_Instant_Success,x_rotation=60..90] run function skyblock:azr/system/player/skills/amulet/double_arrow_rain
+execute if entity @s[tag=AZR_Amulet_Instant_Success,x_rotation=60..90] run function skyblock:azr/system/player/skills/amulet/double_arrow_rain
+execute if entity @s[tag=AZR_Amulet_Instant_Success,x_rotation=60..90] run function skyblock:azr/system/player/skills/amulet/double_arrow_rain
+execute if entity @s[tag=AZR_Amulet_Instant_Success,x_rotation=60..90] run function skyblock:azr/system/player/skills/amulet/double_arrow_rain
+
+
+tag @s remove AZR_Amulet_Instant_Success

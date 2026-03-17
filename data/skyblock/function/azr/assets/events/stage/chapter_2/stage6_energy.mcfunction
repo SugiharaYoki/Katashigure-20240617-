@@ -2,40 +2,7 @@
 
 #供能区域 入口
 execute positioned -79931 36 171 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79936,y=37,z=168,dx=11,dy=4,dz=8,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79914 30 4 run playsound block.stone_button.click_on block @a -79931 35 171 0.8
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5}] positioned -79914 30 4 run playsound block.stone_button.click_on block @a -79931 35 177 0.8
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=8}] positioned -79914 30 4 run playsound block.stone_button.click_on block @a -79931 35 183 0.8
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79914 30 4 run setblock -79931 35 171 minecraft:redstone_block
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5}] positioned -79914 30 4 run setblock -79931 35 177 minecraft:redstone_block
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=8}] positioned -79914 30 4 run setblock -79931 35 183 minecraft:redstone_block
-
-
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79944 37 179 run function skyblock:azr/assets/mobs/pillager
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79944 37 179 run function skyblock:azr/assets/mobs/spider_mini
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79944 37 179 run function skyblock:azr/assets/mobs/spider_mini
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79923 37 190 run function skyblock:azr/assets/mobs/pillager
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79920 37 172 run function skyblock:azr/assets/mobs/spider_giant
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79920 37 172 run function skyblock:azr/assets/mobs/spider_mini
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79920 37 172 run function skyblock:azr/assets/mobs/spider_mini
-
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79935 37 189 run function skyblock:azr/assets/mobs/sword
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79935 37 189 run function skyblock:azr/assets/mobs/sword
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79938 37 174 run function skyblock:azr/assets/mobs/skeleton_melee
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79908 39 193 run function skyblock:azr/assets/mobs/sword
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79908 39 193 run function skyblock:azr/assets/mobs/pillager
-
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79920 37 172 run function skyblock:azr/assets/mobs/undead_fire
-
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79920 37 172 run function skyblock:azr/assets/mobs/floating_fire
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79920 37 172 run function skyblock:azr/assets/mobs/spider_giant
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79920 37 172 run function skyblock:azr/assets/mobs/spider_mini
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79920 37 172 run function skyblock:azr/assets/mobs/spider_mini
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79931 39 199 run function skyblock:azr/assets/mobs/floating_fire
-
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79943 45 204 run function skyblock:azr/assets/mobs/floating_fire
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79943 45 204 run function skyblock:azr/assets/mobs/skeleton_melee
-execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79943 45 204 run function skyblock:azr/assets/mobs/skeleton_melee
+execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/events/stage/chapter_2/area_energy/entering_area_1st_time
 
   #跳跳乐
 execute positioned -79849 30 201 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79943 45 204 run function skyblock:azr/assets/mobs/skeleton_sword
@@ -115,61 +82,18 @@ execute positioned -79850 29 203 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79913 27 208 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79913,y=30,z=208,tag=azrPlayer,distance=0..8] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79913 27 208 as @n[type=item,distance=..1.5] at @s if entity @s[type=item,nbt={Item:{id:"minecraft:coal"}}] run scoreboard players set @n[x=-79913,y=27,z=208,tag=AzrielMarker_encounter,distance=0..1.5] rng1 1
 execute positioned -79913 27 208 as @n[type=item,distance=..1.5] at @s unless entity @s[type=item,nbt={Item:{id:"minecraft:coal"}}] run scoreboard players set @n[x=-79913,y=27,z=208,tag=AzrielMarker_encounter,distance=0..1.5] rng1 51
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] run playsound minecraft:block.metal_pressure_plate.click_on block @a ~ ~ ~ 3 0.5
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=51}] run playsound minecraft:block.metal_pressure_plate.click_on block @a ~ ~ ~ 3 0.5
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1..}] run scoreboard players add @s rng1 1
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] run setblock -79913 29 208 minecraft:iron_trapdoor[half=top]
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52}] run setblock -79913 29 208 minecraft:iron_trapdoor[half=top]
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] run playsound block.iron_trapdoor.close block @a -79913 29 208 0.8 1.1
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52}] run playsound block.iron_trapdoor.close block @a -79913 29 208 0.8 1.1
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2..10}] run kill @e[type=item,distance=..1.5]
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=10}] run playsound minecraft:entity.minecart.riding block @a ~ ~ ~ 3 0.78
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=18}] run playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 3 1.5
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=20}] run playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 3 1.5
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=22}] run playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 3 1.5
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=26}] positioned -79915 29 206 run playsound minecraft:entity.shulker_bullet.hit block @a ~ ~ ~ 1 0.8
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=26}] positioned -79915 29 206 run particle minecraft:white_smoke ~ ~1 ~ 0.25 0.0 0.25 0.01 10
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=26}] positioned -79915 29 205 run item replace block ~ ~ ~ container.0 with resin_clump
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=28}] run playsound block.iron_trapdoor.open block @a -79913 29 208 0.8 1.1
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=28}] positioned -79915 29 205 run setblock -79913 29 208 air
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=28}] positioned -79915 29 205 run scoreboard players set @s rng1 0
-
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52}] positioned -79913 27 208 run scoreboard players set @s rng5 101
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52}] positioned -79913 27 208 if entity @n[type=item,distance=..1.5,nbt={Item:{id:"minecraft:resin_clump"}}] run scoreboard players set @s rng5 1
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52}] positioned -79913 27 208 if entity @n[type=item,distance=..1.5,nbt={Item:{id:"minecraft:ghast_tear"}}] run scoreboard players set @s rng5 100
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52}] positioned -79913 27 208 if entity @n[type=item,distance=..1.5,nbt={Item:{id:"minecraft:iron_ingot"}}] store result score @s rng5 run random value 1..100
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52}] positioned -79913 27 208 if entity @n[type=item,distance=..1.5,nbt={Item:{id:"minecraft:bone"}}] store result score @s rng5 run random value 1..100
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52}] positioned -79913 27 208 if entity @n[type=item,distance=..1.5,nbt={Item:{id:"minecraft:string"}}] store result score @s rng5 run random value 1..100
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52}] positioned -79913 27 208 if entity @n[type=item,distance=..1.5,nbt={Item:{id:"minecraft:ink_sac"}}] store result score @s rng5 run random value 1..100
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52}] positioned -79913 27 208 if entity @n[type=item,distance=..1.5,nbt={Item:{id:"minecraft:flint"}}] store result score @s rng5 run random value 1..100
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52..60}] run kill @e[type=item,distance=..1.5]
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=60..68}] run playsound minecraft:entity.minecart.riding block @a ~ ~ ~ 3 0.78
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=65..68}] run playsound minecraft:entity.minecart.riding block @a ~ ~ ~ 3 1.3
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=68}] positioned -79913 27 208 if score @s rng5 matches 10.. run playsound entity.generic.explode block @a ~ ~ ~ 4 0.8
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=72}] run playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 3 1.2
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=74}] run playsound minecraft:block.note_block.guitar block @a ~ ~ ~ 3 1.2
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=80}] positioned -79915 29 206 if score @s rng5 matches 1..100 run playsound minecraft:entity.shulker_bullet.hit block @a ~ ~ ~ 1 0.8
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=80}] positioned -79915 29 206 if score @s rng5 matches 1..10 run particle minecraft:white_smoke ~ ~1 ~ 0.25 0.0 0.25 0.01 10
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=80}] positioned -79915 29 206 if score @s rng5 matches 11..100 run particle minecraft:smoke ~ ~1 ~ 0.25 0.0 0.25 0.01 10
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=80}] positioned -79915 29 206 if score @s rng5 matches 101.. run particle minecraft:large_smoke ~ ~1 ~ 0.25 0.0 0.25 0.01 10
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=80}] positioned -79915 29 205 if score @s rng5 matches 1..9 run item replace block ~ ~ ~ container.0 with resin_clump
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=80}] positioned -79915 29 205 if score @s rng5 matches 10..50 run item replace block ~ ~ ~ container.0 with emerald
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=80}] positioned -79915 29 205 if score @s rng5 matches 51..99 run item replace block ~ ~ ~ container.0 with emerald 2
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=80}] positioned -79915 29 205 if score @s rng5 matches 100 run item replace block ~ ~ ~ container.0 with ghast_tear 1
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=82}] run playsound block.iron_trapdoor.open block @a -79913 29 208 0.8 1.1
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=82}] positioned -79915 29 205 run setblock -79913 29 208 air
-execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=82..}] positioned -79915 29 205 run scoreboard players set @s rng1 0
+execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/events/stage/chapter_2/area_energy/resin_processor
 
 #随机野怪
-execute positioned -79954 29 183 if score random_enemy_thread AzrTimerStack matches 2 store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..32,tag=!AzrielNPC_Divineforce]
+execute positioned -79954 29 183 if score random_enemy_thread AzrTimerStack matches 2 store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..32]
 execute positioned -79954 29 183 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 2.. unless entity @n[tag=AzrielMob,distance=..6] unless entity @a[tag=azrPlayer,distance=..16] if entity @a[tag=azrPlayer,distance=..56] run function skyblock:azr/assets/mobs/area_pool/chapter2_energy
-execute positioned -79931 29 199 if score random_enemy_thread AzrTimerStack matches 2 store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..32,tag=!AzrielNPC_Divineforce]
+execute positioned -79931 29 199 if score random_enemy_thread AzrTimerStack matches 2 store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..32]
 execute positioned -79931 29 199 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 2.. unless entity @n[tag=AzrielMob,distance=..6] unless entity @a[tag=azrPlayer,distance=..16] if entity @a[tag=azrPlayer,distance=..56] run function skyblock:azr/assets/mobs/area_pool/chapter2_energy
-execute positioned -79941 45 195 if score random_enemy_thread AzrTimerStack matches 2 store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..28,tag=!AzrielNPC_Divineforce]
+execute positioned -79941 45 195 if score random_enemy_thread AzrTimerStack matches 2 store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..28]
 execute positioned -79941 45 195 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 1.. unless entity @n[tag=AzrielMob,distance=..6] unless entity @a[tag=azrPlayer,distance=..16] if entity @a[tag=azrPlayer,distance=..56] run function skyblock:azr/assets/mobs/area_pool/chapter2_energy
-execute positioned -79960 38 196 if score random_enemy_thread AzrTimerStack matches 2 store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..28,tag=!AzrielNPC_Divineforce]
+execute positioned -79960 38 196 if score random_enemy_thread AzrTimerStack matches 2 store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..28]
 execute positioned -79960 38 196 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 1.. unless entity @n[tag=AzrielMob,distance=..6] unless entity @a[tag=azrPlayer,distance=..16] if entity @a[tag=azrPlayer,distance=..56] run function skyblock:azr/assets/mobs/area_pool/chapter2_energy
-execute positioned -79920 37 173 if score random_enemy_thread AzrTimerStack matches 2 store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..28,tag=!AzrielNPC_Divineforce]
+execute positioned -79920 37 173 if score random_enemy_thread AzrTimerStack matches 2 store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..28]
 execute positioned -79920 37 173 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 1.. unless entity @n[tag=AzrielMob,distance=..6] unless entity @a[tag=azrPlayer,distance=..16] if entity @a[tag=azrPlayer,distance=..56] run function skyblock:azr/assets/mobs/area_pool/chapter2_energy
 
 

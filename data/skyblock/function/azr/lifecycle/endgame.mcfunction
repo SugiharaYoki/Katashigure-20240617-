@@ -22,7 +22,6 @@ scoreboard players reset $azrInitialIngredientGiven
 
 
 #tag @s remove Event18575A
-tag @a remove azrDead
 #______________________________________________________________#
 bossbar remove azr:boss_hp_bar
 bossbar remove azr:boss_hp_bar_mossboss
@@ -37,7 +36,7 @@ bossbar remove azr:progress_bar_bonus
 #清理小队
 team remove AzrBossA
 #清场
-schedule function skyblock:azr/lifecycle/endgame/reset_map 10t
+function skyblock:azr/lifecycle/endgame/reset_map
 stopsound @a[tag=azrShowDialog]
 clear @a[tag=azrPlayer]
 #DEBUG: 当该函数被管理员/服务器后台强制执行时，杀死所有玩家。正常流程中触发该函数的同时不会存在玩家。

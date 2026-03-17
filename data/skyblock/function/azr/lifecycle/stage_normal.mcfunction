@@ -143,8 +143,6 @@ execute if score stage Azr_system matches 10.. positioned -79931 100 0 unless en
 execute if score stage Azr_system matches 10.. positioned -79931 100 0 unless entity @n[distance=..10000,type=villager,tag=AzrielNPC_mersenne] positioned -79889 51 -15 run function skyblock:azr/assets/mobs/unique/revive_mersenne
 execute if score stage Azr_system matches 10.. positioned -79931 100 0 unless entity @n[distance=..10000,type=villager,tag=AzrielNPC_marinus] positioned -79889 51 -15 run function skyblock:azr/assets/mobs/skill/marinus/summon_revive
 
-#重置计时器
-scoreboard players set tick_count_main AzrTimerStack 0
 # 强制释放临时变量
 scoreboard players reset #temp_rng Azr_system
 

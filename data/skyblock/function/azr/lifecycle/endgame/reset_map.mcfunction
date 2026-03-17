@@ -49,6 +49,10 @@ setblock -79396 26 -384 decorated_pot{sherds:["prize_pottery_sherd","prize_potte
 
 fill -79370 27 -373 -79372 26 -373 minecraft:iron_bars
 
+#新补充
+fill -79764 105 -2066 -79765 106 -2066 air
+fill -79764 105 -2066 -79765 106 -2066 minecraft:bamboo_shelf[facing=north]
+
 
 #start gate
 fill -79933 38 -15 -79933 40 -14 minecraft:purple_stained_glass
@@ -538,7 +542,7 @@ item replace block -79857 40 -102 container.13 with iron_ingot 1
   #第三章开放的路阻
 fill -79886 31 -66 -79886 35 -65 basalt
 
- #金属专家
+ #金属学家
 fill -79823 11 -45 -79823 17 -47 minecraft:air replace red_stained_glass
 
 
@@ -564,15 +568,10 @@ setblock -79889 48 -73 potted_flowering_azalea_bush
 
 #静火之坑侧面房间
 setblock -79867 44 -52 barrel[facing=north]{Inventory:[]}
-
 setblock -79866 43 -52 barrel[facing=north]{Inventory:[]}
-
 setblock -79865 42 -52 barrel[facing=north]{Inventory:[]}
-
 setblock -79867 44 -57 barrel[facing=south]{Inventory:[]}
-
 setblock -79866 43 -57 barrel[facing=south]{Inventory:[]}
-
 setblock -79865 42 -57 barrel[facing=south]{Inventory:[]}
 
 
@@ -607,6 +606,9 @@ item replace block -79929 49 -123 container.14 with tripwire_hook[custom_name={t
 
 
 setblock -79937 48 -143 minecraft:potted_cornflower
+setblock -79919 41 -101 minecraft:potted_azure_bluet
+setblock -79921 41 -101 minecraft:potted_azure_bluet
+setblock -79928 40 -113 flower_pot
 
 setblock -79897 40 -115 air
 setblock -79897 40 -115 trapped_chest[facing=west]{lock:{components:{custom_data:{key_required:1b}}}}
@@ -617,6 +619,8 @@ setblock -79936 49 -158 trapped_chest[facing=north]{lock:{components:{custom_dat
 item replace block -79936 49 -158 container.12 with skull_banner_pattern[custom_name={text:"“期限将至 此乃针对神庭之审判”",color:"dark_purple",italic:0b},lore=[{text:"这里的魔物保受摧残，",color:"white",italic:0b},{text:"终日身于苦痛之中。",color:"white",italic:0b},{text:"沙利叶大人既是对此心知肚明，",color:"white",italic:0b},{text:"又为何让这暴行延续？",color:"white",italic:0b}]] 1
 item replace block -79936 49 -158 container.14 with cooked_beef 3
 
+  #休整剑士的监狱小房间
+fill -79925 40 -111 -79925 41 -111 iron_bars
 
   #桌子
 setblock -79917 41 -104 minecraft:spruce_trapdoor[open=false,facing=west]
@@ -676,8 +680,7 @@ item replace block -79588 8 -427 container.14 with gold_nugget 2
 
 setblock -79799 28 -284 minecraft:birch_button[facing=west,face=floor]
 setblock -79742 75 -440 minecraft:birch_button[facing=east,face=floor]
-setblock -79912 55 -101 minecraft:birch_button[facing=west,face=wall]
-setblock -79925 47 -113 minecraft:stone_button[facing=north,face=floor]
+setblock -79914 55 -111 minecraft:birch_button[facing=south,face=floor]
 #______________________________________________________________#
 #boss4
 fill -79519 42 -321 -79553 42 -355 air replace fire
@@ -742,12 +745,12 @@ clone -79908 36 -41 -79904 43 -32 -79933 37 -27
 
 
 
-item replace block -79863 40 -76 container.14 with skull_banner_pattern[custom_name={text:"“招待厅事务记录5”",color:"dark_purple",italic:0b},lore=[{text:"第一关口北面的建筑物出现了大量裂缝，",color:"white",italic:0b},{text:"这样的现象一直延伸至牢房区域。",color:"white",italic:0b},{text:"虽说大家有不祥的预感，",color:"white",italic:0b},{text:"权之殊能大人却言仅为年久失修。",color:"white",italic:0b}]] 1
+#item replace block -79863 40 -76 container.14 with skull_banner_pattern[custom_name={text:"“招待厅事务记录5”",color:"dark_purple",italic:0b},lore=[{text:"第一关口北面的建筑物出现了大量裂缝，",color:"white",italic:0b},{text:"这样的现象一直延伸至牢房区域。",color:"white",italic:0b},{text:"虽说大家有不祥的预感，",color:"white",italic:0b},{text:"权之殊能大人却言仅为年久失修。",color:"white",italic:0b}]] 1
 item replace block -79935 48 -164 container.13 with cooked_beef 3
 item replace block -79866 43 -57 container.14 with coal 2
 item replace block -79867 44 -52 container.12 with emerald 3
 item replace block -79865 42 -52 container.13 with dried_kelp 8
-item replace block -79863 40 -76 container.12 with stone_axe[custom_name={text:"苔石斧·笼怨",italic:0b},attribute_modifiers=[{type:"knockback_resistance",slot:"mainhand",id:"azr:mossstone_axe.knockback_resistance",amount:0.13,operation:"add_value"},{type:"attack_damage",slot:"mainhand",id:"azr:mossstone_axe.attack_damage",amount:10.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"azr:mossstone_axe.attack_speed",amount:-3.2,operation:"add_value"}],enchantments={"unbreaking":2}] 1
+#item replace block -79863 40 -76 container.12 with stone_axe[custom_name={text:"苔石斧·笼怨",italic:0b},attribute_modifiers=[{type:"knockback_resistance",slot:"mainhand",id:"azr:mossstone_axe.knockback_resistance",amount:0.13,operation:"add_value"},{type:"attack_damage",slot:"mainhand",id:"azr:mossstone_axe.attack_damage",amount:10.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"azr:mossstone_axe.attack_speed",amount:-3.2,operation:"add_value"}],enchantments={"unbreaking":2}] 1
 
 item replace block -79770 23 -460 container.13 with minecraft:gold_nugget 30
 item replace block -79765 24 -469 container.13 with minecraft:gold_nugget 28

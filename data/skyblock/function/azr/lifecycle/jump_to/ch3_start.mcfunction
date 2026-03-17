@@ -1,8 +1,8 @@
 function skyblock:azr/lifecycle/jump_to/ch2_boss
 
-fill -79902 41 0 -79904 38 0 air destroy
-fill -79927 38 -13 -79927 42 -16 air destroy
-fill -79901 50 -16 -79905 51 -13 air destroy
+fill -79902 41 0 -79904 38 0 air
+fill -79927 38 -13 -79927 42 -16 air
+fill -79901 50 -16 -79905 51 -13 air
 clone -79912 -30 -23 -79897 -12 -6 -79912 40 -23
 clone -79912 -50 -23 -79897 -32 -6 -79912 40 -23
 clone -79902 36 -41 -79898 43 -32 -79933 37 -27

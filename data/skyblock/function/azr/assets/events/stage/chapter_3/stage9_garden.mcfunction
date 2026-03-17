@@ -11,6 +11,11 @@ execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5
 execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79930 38 -34 run tag @n[tag=AzrielNPC_Divineforce,type=vindicator,distance=0..2] add AzrielNPC_stage9_entry_conversation1
 execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79932 38 -30 run tag @n[tag=AzrielNPC_Divineforce,type=pillager,distance=0..2] add AzrielNPC_stage9_entry_conversation2
 execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79890 38 4 run tag @n[tag=AzrielNPC_Divineforce,type=pillager,distance=0..2] add AzrielNPC_stage9_entry_conversation3
+
+execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79930 38 -34 as @n[tag=AzrielNPC_stage9_entry_conversation1] run data modify entity @s CustomName set value {text:"剑士 克劳德",color:"green"}
+execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79932 38 -30 as @n[tag=AzrielNPC_stage9_entry_conversation2] run data modify entity @s CustomName set value {text:"弩手 达利乌斯",color:"green"}
+execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79890 38 4 as @n[tag=AzrielNPC_stage9_entry_conversation3] run data modify entity @s CustomName set value {text:"第2小队长 温斯顿",color:"green"}
+
 execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3}] positioned -79889 42.6 -32 run function skyblock:azr/assets/mobs/spider_giant
 execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3}] positioned -79889 42.6 -32 run function skyblock:azr/assets/mobs/spider_giant
 execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3}] positioned -79889 42.6 -32 run function skyblock:azr/assets/mobs/skeleton_sword
@@ -20,16 +25,7 @@ execute positioned -79931 0 -37 as @n[tag=AzrielMarker_encounter,distance=0..0.5
 
 #回头路的NPC
 execute positioned -79890 38 4 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79890 38 4 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
-execute positioned -79890 38 4 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2..3}] at @n[tag=AzrielNPC_stage9_entry_conversation3,type=pillager] unless entity @a[distance=..6.5,tag=azrPlayer] run scoreboard players set @s rng1 2
-execute positioned -79890 38 4 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=4}] as @n[tag=AzrielNPC_stage9_entry_conversation3,type=pillager] at @s run playsound minecraft:entity.vindicator.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute positioned -79890 38 4 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=4}] as @n[tag=AzrielNPC_stage9_entry_conversation3,type=pillager] at @s run tellraw @a[tag=azrShowDialog] [{text:"第2巡逻小队队长 温斯顿：",color:"green",bold:1b},{bold: false,text:"\n“你好，爱理莎女士。”",color:"white"}]
-execute positioned -79890 38 4 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=19}] as @n[tag=AzrielNPC_stage9_entry_conversation3,type=pillager] at @s run playsound minecraft:entity.vindicator.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute positioned -79890 38 4 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=19}] as @n[tag=AzrielNPC_stage9_entry_conversation3,type=pillager] at @s run tellraw @a[tag=azrShowDialog] [{text:"第2巡逻小队队长 温斯顿：",color:"green",bold:1b},{bold: false,text:"\n“你的后方交给我们就行。”",color:"white"}]
-execute positioned -79890 38 4 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=32..33}] as @n[tag=AzrielNPC_stage9_entry_conversation3,type=pillager] at @s unless entity @a[distance=..6.5,tag=azrPlayer] run scoreboard players set @s rng1 32
-execute positioned -79890 38 4 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=35}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“我问一下，这个采光礼堂还有什么我值得探索的地方吗？”",color:"white"}]
-execute positioned -79890 38 4 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52}] as @n[tag=AzrielNPC_stage9_entry_conversation3,type=pillager] at @s run playsound minecraft:entity.vindicator.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute positioned -79890 38 4 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=52}] as @n[tag=AzrielNPC_stage9_entry_conversation3,type=pillager] at @s run tellraw @a[tag=azrShowDialog] [{text:"第2巡逻小队队长 温斯顿：",color:"green",bold:1b},{bold: false,text:"\n“这里的许多地方依然会涌出怪物。但不用担心，你几乎可以在任何时候回到这儿来。”",color:"white"}]
+execute positioned -79890 38 4 as @n[tag=AzrielMarker_encounter,distance=0..0.5] as @n[tag=AzrielNPC_stage9_entry_conversation3,type=pillager] at @s run function skyblock:azr/assets/events/stage/chapter_3/area_garden/conv_leader_winston
 
 #入口交谈的NPC
 execute positioned -79931 38 -30 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=..5.5,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
@@ -112,6 +108,10 @@ execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79891.2 42 -65.9 run tag @n[tag=AzrielNPC_Divineforce,type=vindicator,distance=0..2,tag=!AzrielNPC_stage9_entry_conversation5] add AzrielNPC_stage9_entry_conversation7
 execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79891 42 -66 as @e[tag=AzrielNPC_Divineforce,distance=..3] at @s run rotate @s facing -79890.00 43.21 -67.52
 
+execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] as @n[tag=AzrielNPC_stage9_entry_conversation5] run data modify entity @s CustomName set value {text:"第5小队长 伊安",color:"green"}
+execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] as @n[tag=AzrielNPC_stage9_entry_conversation6] run data modify entity @s CustomName set value {text:"弩手 麦克",color:"green"}
+execute positioned -79892 42 -50 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] as @n[tag=AzrielNPC_stage9_entry_conversation7] run data modify entity @s CustomName set value {text:"剑士 派恩",color:"green"}
+
 #火之坑
 execute positioned -79893 47 -53 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79893,y=47,z=-54,tag=azrPlayer,dx=5,dy=5,dz=5] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79893 47 -53 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
@@ -121,5 +121,5 @@ execute positioned -79893 47 -53 as @n[tag=AzrielMarker_encounter,distance=0..0.
 
 
 #随机野怪
-execute positioned -79939 38 -72 if score random_enemy_thread AzrTimerStack matches 2 store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..32,tag=!AzrielNPC_Divineforce,tag=!AzrielMob_trap]
+execute positioned -79939 38 -72 if score random_enemy_thread AzrTimerStack matches 2 store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..32,tag=!AzrielMob_trap]
 execute positioned -79939 38 -72 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 2.. unless entity @a[tag=azrPlayer,distance=..16] if entity @a[tag=azrPlayer,distance=..56] run function skyblock:azr/assets/mobs/area_pool/chapter1_main_area_common

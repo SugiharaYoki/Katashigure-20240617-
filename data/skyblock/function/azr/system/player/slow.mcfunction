@@ -1,4 +1,4 @@
-execute if entity @s[tag=!azrRetrieved,tag=AZR_SEAawakened] if score stage Azr_system matches 1.. as @p[tag=!azrRetrieved,tag=azrPlayer,tag=AZR_SEAawakened] at @s run function skyblock:azr/lifecycle/jump_to/generic_retrieve
+execute if entity @s[tag=!azrRetrieved,tag=AZR_SEAawakened] if score stage Azr_system matches 1.. run function skyblock:azr/lifecycle/jump_to/generic_retrieve
 
 clear @s[gamemode=adventure] #skyblock:azr_clear
 
@@ -13,7 +13,7 @@ execute unless entity @s[x=-79931,y=100,z=0,distance=..10000] run tp @s @p[tag=a
 execute if items entity @s weapon.mainhand tripwire_hook at @s anchored eyes run function skyblock:azr/system/player/unlock_chest
 
 #沼泽中毒
-execute if score @s AzrPlayer_CurrentArea matches 7 run function skyblock:azr/system/player/map_effects/rock_path_poison_water
+execute if score @s AzrPlayer_CurrentArea matches 7 run function skyblock:azr/system/player/map_effect/rock_path_poison_water
 
 #打印剧情
 execute if items entity @s container.* skull_banner_pattern run function skyblock:azr/system/player/unlock_story
@@ -37,6 +37,7 @@ execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_drogue:1b}] r
 execute if items entity @s player.cursor *[custom_data~{azr_loginbonus:1b}] run function skyblock:azr/system/player/join_login_bonus_open
 
 execute if score @s AzrSariel_Amulet_generic_damage_taken matches 1.. if items entity @s container.* *[custom_data~{azr_amulet_pollution_diffuser:1b}] run function skyblock:azr/system/player/skills/amulet/pollution_diffuser_core
+execute if score @s AzrSariel_Amulet_generic_damage_taken matches 1.. if items entity @s container.* *[custom_data~{azr_amulet_flower_spike:1b}] run function skyblock:azr/system/player/skills/amulet/flower_spike_core
 
 #节制天平
 execute if score @s AzrSariel_Skill_FanFire matches 1.. run scoreboard players remove @s AzrSariel_Skill_FanFire_cooldown 1

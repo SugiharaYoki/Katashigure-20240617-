@@ -9,7 +9,6 @@ clear @s[gamemode=!creative] waxed_copper_block
 clear @s[gamemode=!creative] waxed_copper_bulb
 clear @s[gamemode=!creative] waxed_cut_copper_stairs
 clear @s[gamemode=!creative] slime_block
-clear @s[gamemode=!creative] blaze_powder
 clear @s[gamemode=!creative] heart_pottery_sherd
 clear @s[gamemode=!creative] burn_pottery_sherd
 clear @s[gamemode=!creative] friend_pottery_sherd

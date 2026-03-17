@@ -6,7 +6,10 @@ execute if score @s sea_ripper matches ..0 run particle electric_spark ~ ~ ~ 0.2
 execute if score @s sea_ripper matches ..0 run playsound block.chain.break block @a ~ ~ ~ 1 1.2
 execute if score @s sea_ripper matches ..0 run kill @s
 
-execute as @s at @s rotated as @s run tp @s ^ ^ ^0.7 facing ^ ^ ^1.7
+execute as @s at @s rotated as @s run tp @s ^ ^ ^0.8 facing ^ ^ ^1.7
 
-execute unless block ~ ~ ~ air unless block ~ ~ ~ water run scoreboard players set @s[scores={sea_ripper=6..}] sea_ripper 5
+
+function skyblock:sea/p/weapon/ripper/reflect_splitter
+
+#execute unless block ~ ~ ~ air unless block ~ ~ ~ water run scoreboard players set @s[scores={sea_ripper=6..}] sea_ripper 5
 execute positioned ^ ^-1.5 ^ as @e[tag=SEAmob,distance=0..1.6] at @s run scoreboard players remove @s[scores={sea_ripper=6..}] sea_ripper 1

@@ -34,7 +34,7 @@ execute positioned -79886 40 -114 as @n[tag=AzrielMarker_encounter,distance=0..0
 
 
 
-execute positioned -79899 40 -139 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=..12,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79899 40 -139 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=..14,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
 execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79899 40 -139 run function skyblock:azr/assets/mobs/pillager_friendly
 execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79901 40 -137 run function skyblock:azr/assets/mobs/pillager_friendly
@@ -49,15 +49,55 @@ execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0
 execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79900 40 -139 run function skyblock:azr/assets/mobs/skeleton_melee
 execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79900 40 -139 run function skyblock:azr/assets/mobs/skeleton_melee
 execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79900 40 -139 run function skyblock:azr/assets/mobs/skeleton_melee
-execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2..3}] at @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] unless entity @a[distance=..6.5,tag=azrPlayer] run scoreboard players set @s rng1 2
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] at @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] run data modify entity @s CustomName set value {text:"弩手 查理",color:"green"}
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2..3}] at @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] unless entity @a[distance=..9.5,tag=azrPlayer] run scoreboard players set @s rng1 2
 execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=4}] as @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] at @s run tellraw @a[tag=azrShowDialog] [{text:"弩手 查理：",color:"green",bold:1b},{bold: false,text:"\n“有人过来了……是爱理莎女士！救兵来了！”",color:"white"}]
 execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=24}] as @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] at @s run tellraw @a[tag=azrShowDialog] [{text:"弩手 查理：",color:"green",bold:1b},{bold: false,text:"\n“这些魔物十分危险，它们比我印象里的还要强得多！”",color:"white"}]
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=43}] unless entity @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager,distance=0..12] if entity @n[tag=AzrielMob,tag=!AzrielNPC_Divineforce,distance=0..10] at @s run scoreboard players set @s rng1 42
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=44}] as @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] at @s run tellraw @a[tag=azrShowDialog] [{text:"弩手 查理：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎女士，通向监狱行政处的路已经走不通了。你可以到监狱的西面去看看，说不定能找到下一步的指引。”",color:"white"}]
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79910 40 -104 run function skyblock:azr/assets/mobs/undead
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79910 40 -104 run function skyblock:azr/assets/mobs/undead
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79910 40 -104 run function skyblock:azr/assets/mobs/undead
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79910 40 -104 run function skyblock:azr/assets/mobs/undead
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79910 40 -104 run function skyblock:azr/assets/mobs/undead_shield
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79910 40 -104 run function skyblock:azr/assets/mobs/undead_shield
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79910 40 -104 run tag @n[type=zombie,distance=0..2] add AzrielMob_ch3_break_first_irondoor
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79919 40 -113 run function skyblock:azr/assets/mobs/undead_shield
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79919 40 -113 run function skyblock:azr/assets/mobs/undead_shield
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79919 40 -113 run function skyblock:azr/assets/mobs/skeleton_sword
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79919 40 -113 run function skyblock:azr/assets/mobs/skeleton_sword
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79927 40 -102 run function skyblock:azr/assets/mobs/skeleton_sword
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79927 40 -102 run function skyblock:azr/assets/mobs/skeleton_sword
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79925 40 -112 run function skyblock:azr/assets/mobs/sword_friendly
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79925 40 -112 run function skyblock:azr/assets/mobs/sword_friendly
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79925 40 -112 run function skyblock:azr/assets/mobs/sword_friendly
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79925 40 -112 run tag @n[type=vindicator,distance=0..2] add AzrielMob_ch3_resting_swordman
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79925 40 -112 as @n[tag=AzrielMob_ch3_resting_swordman] run data modify entity @s CustomName set value {text:"剑士 鲁宾",color:"green"}
+execute positioned -79899 40 -139 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79925 40 -112 as @n[type=vindicator,distance=0..2,tag=!AzrielMob_ch3_resting_swordman] run data modify entity @s CustomName set value {text:"剑士 伊西多",color:"green"}
 
 
 
 
 
+execute positioned -79910 41 -105 as @n[tag=AzrielMob_ch3_break_first_irondoor,distance=0..6.5] unless score @s rng1 matches 2.. if entity @a[tag=azrPlayer,distance=0..8] run scoreboard players add @s rng1 1
+execute positioned -79910 41 -105 as @n[tag=AzrielMob_ch3_break_first_irondoor,distance=0..6.5] if score @s rng1 matches 2.. run scoreboard players add @s rng1 1
+execute positioned -79910 41 -105 as @n[tag=AzrielMob_ch3_break_first_irondoor,distance=0..6.5] unless score @s rng1 matches 13.. positioned -79910 40 -104 as @s run effect give @s slowness 1 49 true
+execute positioned -79910 41 -105 as @n[tag=AzrielMob_ch3_break_first_irondoor,distance=0..6.5] unless score @s rng1 matches 13.. positioned -79910 40 -104 as @s at @s run rotate @s facing entity @p[tag=azrPlayer,limit=1] eyes
+execute positioned -79910 41 -105 as @n[tag=AzrielMob_ch3_break_first_irondoor,distance=0..6.5,scores={rng1=1}] run playsound entity.zombie.attack_iron_door block @a ~ ~ ~ 2 0.8
+execute positioned -79910 41 -105 as @n[tag=AzrielMob_ch3_break_first_irondoor,distance=0..6.5,scores={rng1=6}] run playsound entity.zombie.attack_iron_door block @a ~ ~ ~ 2 0.8
+execute positioned -79910 41 -105 as @n[tag=AzrielMob_ch3_break_first_irondoor,distance=0..6.5,scores={rng1=11}] run playsound entity.zombie.attack_iron_door block @a ~ ~ ~ 2 0.8
+execute positioned -79910 41 -105 as @n[tag=AzrielMob_ch3_break_first_irondoor,distance=0..6.5,scores={rng1=16}] run playsound entity.zombie.break_wooden_door block @a ~ ~ ~ 2 0.8
+execute positioned -79910 41 -105 as @n[tag=AzrielMob_ch3_break_first_irondoor,distance=0..6.5,scores={rng1=16}] run fill -79910 40 -105 -79910 41 -105 air destroy
 
+
+execute positioned -79925 40 -112 as @n[tag=AzrielMob_ch3_resting_swordman,distance=0..9.5] unless score @s rng1 matches 2.. if entity @a[tag=azrPlayer,distance=0..7] run scoreboard players add @s rng1 1
+execute positioned -79925 40 -112 as @n[tag=AzrielMob_ch3_resting_swordman,distance=0..9.5] if score @s rng1 matches 2.. run scoreboard players add @s rng1 1
+execute positioned -79925 40 -112 as @n[tag=AzrielMob_ch3_resting_swordman,distance=0..9.5,scores={rng1=3}] as @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] at @s run tellraw @a[tag=azrShowDialog] [{text:"剑士 鲁宾：",color:"green",bold:1b},{bold: false,text:"\n“抱歉，我们受伤很严重，请让我们稍作休整。”",color:"white"}]
+execute positioned -79925 40 -112 as @n[tag=AzrielMob_ch3_resting_swordman,distance=0..9.5,scores={rng1=130}] as @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] at @s run tellraw @a[tag=azrShowDialog,distance=0..9] [{text:"剑士 鲁宾：",color:"green",bold:1b},{bold: false,text:"\n“你先把那个治疗药丸给我。我把它拆解一下。”",color:"white"}]
+execute positioned -79925 40 -112 as @n[tag=AzrielMob_ch3_resting_swordman,distance=0..9.5,scores={rng1=140}] as @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] at @s run tellraw @a[tag=azrShowDialog,distance=0..9] [{text:"剑士 伊西多：",color:"green",bold:1b},{bold: false,text:"\n“好。”",color:"white"}]
+execute positioned -79925 40 -112 as @n[tag=AzrielMob_ch3_resting_swordman,distance=0..9.5,scores={rng1=180}] as @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] at @s run tellraw @a[tag=azrShowDialog,distance=0..9] [{text:"剑士 伊西多：",color:"green",bold:1b},{bold: false,text:"\n“感觉怎么样？我这里应该能正常行动了。”",color:"white"}]
+execute positioned -79925 40 -112 as @n[tag=AzrielMob_ch3_resting_swordman,distance=0..9.5,scores={rng1=194}] as @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] at @s run tellraw @a[tag=azrShowDialog,distance=0..9] [{text:"剑士 鲁宾：",color:"green",bold:1b},{bold: false,text:"\n“我也差不多。开门吧，去帮爱理莎清掉点僵尸。”",color:"white"}]
+execute positioned -79925 40 -112 as @n[tag=AzrielMob_ch3_resting_swordman,distance=0..9.5,scores={rng1=212}] run fill -79925 40 -111 -79925 41 -111 air
 
 
 

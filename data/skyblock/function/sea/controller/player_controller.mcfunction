@@ -7,8 +7,9 @@ execute at @s if items entity @s weapon.mainhand *[custom_data={sea_flamethrower
 function skyblock:sea/p/player_fast
 
 
-
+execute as @s[scores={sea_remiel_shadow=1..}] at @s run function skyblock:sea/p/remiel_shadow
 
 execute if entity @s[x=90123,y=0,z=98,dx=7,dy=103,dz=7] run function skyblock:sea/e/ch3/ev009_ch3_liftergoesdown
 
 
+function skyblock:sea/p/visioner

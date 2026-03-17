@@ -38,10 +38,15 @@ execute positioned 90193 31 158 if entity @a[tag=SEAPT,distance=0..20,limit=1] r
 #地图
 execute positioned 90102 123 121 if entity @a[tag=SEAPT,distance=0..20,limit=1] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_map_01],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:5b,Item:{id:"minecraft:filled_map",components:{custom_name:{text:"维修层地图",italic:0b,color:"dark_purple"},map_id:4}}}
 execute positioned 90081 129 123 if entity @a[tag=SEAPT,distance=0..20,limit=1] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_map_02],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:4b,Item:{id:"minecraft:filled_map",components:{custom_name:{text:"物资层地图",italic:0b,color:"dark_purple"},map_id:5}}}
+execute positioned 90172 22 100 if entity @a[tag=SEAPT,distance=0..20,limit=1] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_map_04],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:3b,Item:{id:"minecraft:filled_map",components:{custom_name:{text:"冷凝系统地图",italic:0b,color:"dark_purple"},map_id:20}}}
 
 execute if block 90062 103 135 grindstone positioned 90080 105 143 if entity @a[tag=SEAPT,distance=0..20,limit=1] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_map_01],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:2b,Item:{id:"minecraft:filled_map",components:{custom_name:{text:"维修层地图",italic:0b,color:"dark_purple"},map_id:4}}}
 execute if block 90075 103 141 minecraft:cauldron positioned 90079 105 143 if entity @a[tag=SEAPT,distance=0..20,limit=1] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_map_02],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:2b,Item:{id:"minecraft:filled_map",components:{custom_name:{text:"物资层地图",italic:0b,color:"dark_purple"},map_id:5}}}
 execute if block 90075 103 141 minecraft:cauldron positioned 90080 104 143 if entity @a[tag=SEAPT,distance=0..20,limit=1] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_map_01],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:2b,Item:{id:"minecraft:filled_map",components:{custom_name:{text:"主平台地图：甲板部分",italic:0b,color:"dark_purple"},map_id:18}}}
+execute if block 90074 103 137 scaffolding positioned 90079 104 143 if entity @a[tag=SEAPT,distance=0..20,limit=1] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_map_04],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:2b,Item:{id:"minecraft:filled_map",components:{custom_name:{text:"冷凝系统地图",italic:0b,color:"dark_purple"},map_id:20}}}
+
+
+
 execute positioned 90089 138 118 if entity @a[tag=SEAPT,distance=0..20,limit=1] positioned 90089 138 118 if entity @a[tag=SEAPT,distance=0..20,limit=1] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_map_01],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:2b,Item:{id:"minecraft:filled_map",components:{custom_name:{text:"主平台地图：甲板部分",italic:0b,color:"dark_purple"},map_id:18}}}
 
 #antichear

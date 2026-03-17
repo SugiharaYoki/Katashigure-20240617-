@@ -8,7 +8,7 @@ scoreboard players operation @n[tag=SEAripper_launched] sea_ripper = @s sea_ripp
 scoreboard players add @n[tag=SEAripper_launched] sea_ripper 20
 
 tp @n[tag=SEAripper_launched] ^ ^ ^2.8 facing ^ ^ ^3.8
-playsound item.trident.riptide_1 block @a ~ ~ ~ 1 1.2
+playsound item.trident.riptide_1 block @a ~ ~ ~ 0.8 1.3
 playsound block.anvil.place block @a ~ ~ ~ 1 0.7
 
 scoreboard players set @s sea_ripper 0

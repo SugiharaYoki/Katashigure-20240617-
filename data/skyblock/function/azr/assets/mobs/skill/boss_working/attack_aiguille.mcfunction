@@ -14,8 +14,8 @@ execute if score @s rng8 matches 8 if score @s rng3 matches 2 positioned 0.0 0 0
 execute if score @s rng8 matches 8 if score @s rng3 matches 3 positioned 0.0 0 0.0 rotated as @s run summon marker ^ ^-0.1 ^0.3 {Tags:["AzrielMob_subboss_working_move_marker"]}
 execute if score @s rng8 matches 8 if score @s rng3 matches 4 positioned 0.0 0 0.0 rotated as @s run summon marker ^ ^-0.1 ^-0.3 {Tags:["AzrielMob_subboss_working_move_marker"]}
 
+execute if score @s rng8 matches 14.. run scoreboard players set @s rng11 0
 execute if score @s rng8 matches 14.. run scoreboard players set @s rng8 999
-
 
 
 #[scores={rng3=1}]

@@ -84,7 +84,7 @@ execute if block -79946 39 50 minecraft:birch_button[powered=true] if score stag
 #Stage Diffident
 #遭遇事件
 #Stage Appetence uncommited
-execute if block -79912 55 -101 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/bonus_stage/stage_appetence_prep
+execute if block -79914 55 -111 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/bonus_stage/stage_appetence_prep
 #Stage Breakout uncommited
 execute if block -79878 41 -131 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79877.5,y=41.00,z=-130.5,distance=..1] run scoreboard players set stage Azr_system 45
 execute if block -79878 41 -131 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79877.5,y=41.00,z=-130.5,distance=..1] run scoreboard players set stage_main_thread AzrTimerStack 0
@@ -135,13 +135,6 @@ execute if block -79952 39 54 minecraft:birch_button[powered=true] run scoreboar
 #functional level - ch3
 execute if block -79867 48 -109 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79866.5,y=48.0,z=-108.5,distance=..1] run function skyblock:azr/assets/events/stage/dialog/ch3_untitled
 execute if block -79867 48 -109 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79866.5,y=48.0,z=-108.5,distance=..1] run summon minecraft:interaction -79866.5 48.0 -108.5 {Tags:["temp"]}
-#functional button - ch3
-execute if block -79925 47 -113 minecraft:stone_button[powered=true] run setblock -79922 44 -112 ladder[facing=west]
-execute if block -79925 47 -113 minecraft:stone_button[powered=true] run setblock -79922 45 -112 ladder[facing=west]
-execute if block -79925 47 -113 minecraft:stone_button[powered=true] run setblock -79922 43 -112 ladder[facing=west]
-execute if block -79925 47 -113 minecraft:stone_button[powered=true] run playsound minecraft:block.ladder.step master @a -79922 45 -112 1 0.8
-execute if block -79925 47 -113 minecraft:stone_button[powered=true] run setblock -79922 42 -112 ladder[facing=west]
-execute if block -79925 47 -113 minecraft:stone_button[powered=true] run setblock -79925 47 -113 air
 #functional button - 94935
 execute if block -79751 37 -353 minecraft:polished_blackstone_button[powered=true] run setblock -79761 42 -358 air destroy
 #functional lever
