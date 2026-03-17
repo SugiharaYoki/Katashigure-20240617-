@@ -8,4 +8,4 @@ particle minecraft:soul_fire_flame 90118.48 102.99 -1891.25 2 2 2 0.001 60
 
 
 execute if score SEA_ch6_event sea_4temp9 matches ..0 if entity @a[tag=SEAPT,scores={SEAPT_mode=1..2}] run scoreboard players set SEA_ch6_event sea_4temp9 1
-execute if score SEA_ch6_event sea_4temp9 matches ..0 if entity @a[tag=SEAPT,scores={SEAPT_mode=1..2}] run scoreboard players set SEA_ch6_event sea_4temp9 1000
+execute if score SEA_ch6_event sea_4temp9 matches ..0 unless entity @a[tag=SEAPT,scores={SEAPT_mode=1..2}] run scoreboard players set SEA_ch6_event sea_4temp9 1000
