@@ -1,13 +1,13 @@
 scoreboard players add SEA_ch6_event sea_4temp9 1
 
 
-execute if score SEA_ch6_event sea_4temp9 matches 3 positioned 90118 102 -1892 run tellraw @a[tag=SEAPT,distance=0..50] [{text:"污名吾之过去，摧颓吾之未来……",color:"aqua"}]
+execute if score SEA_ch6_event sea_4temp9 matches 3 positioned 90118 102 -1892 as @p[tag=SEAPT] run tellraw @a[distance=..200] [{text:"污名吾之过去，摧颓吾之未来……",color:"aqua"}]
 
 
 
-execute if score SEA_ch6_event sea_4temp9 matches 18 positioned 90118 102 -1892 run tellraw @a[tag=SEAPT,distance=0..50] [{text:"赞颂汝之过去，引领吾之未来……",color:"aqua"}]
-execute if score SEA_ch6_event sea_4temp9 matches 33 positioned 90118 102 -1892 run tellraw @a[tag=SEAPT,distance=0..50] [{text:"我乃七十二柱魔神之佛卡洛。\n天使之后继者，我很高兴你能够提前掌握自己的权能。",color:"aqua"}]
-execute if score SEA_ch6_event sea_4temp9 matches 48 positioned 90118 102 -1892 run tellraw @a[tag=SEAPT,distance=0..50] [{text:"前路将由你独自行进。\n我的祝福，无法再被捎带向前。\n没关系，因为我相信你能够做到。",color:"aqua"}]
+execute if score SEA_ch6_event sea_4temp9 matches 18 positioned 90118 102 -1892 as @p[tag=SEAPT] run tellraw @a[distance=..200] [{text:"赞颂汝之过去，引领吾之未来……",color:"aqua"}]
+execute if score SEA_ch6_event sea_4temp9 matches 33 positioned 90118 102 -1892 as @p[tag=SEAPT] run tellraw @a[distance=..200] [{text:"我乃七十二柱魔神之佛卡洛。\n天使之后继者，我很高兴你能够提前掌握自己的权能。",color:"aqua"}]
+execute if score SEA_ch6_event sea_4temp9 matches 48 positioned 90118 102 -1892 as @p[tag=SEAPT] run tellraw @a[distance=..200] [{text:"前路将由你独自行进。\n我的祝福，无法再被捎带向前。\n没关系，因为我相信你能够做到。",color:"aqua"}]
 
 
 execute if score SEA_ch6_event sea_4temp9 matches 48 run particle minecraft:soul_fire_flame 90118 102 -1892 2 2 2 0.001 60
@@ -30,15 +30,15 @@ execute if score SEA_ch6_event sea_4temp9 matches 48 positioned 90118 102 -1892 
 execute if score SEA_ch6_event sea_4temp9 matches 900 run scoreboard players add SEA_ch6_event sea_4temp9 99999
 
 
-execute if score SEA_ch6_event sea_4temp9 matches 1003 positioned 90118 102 -1892 run tellraw @a[tag=SEAPT,distance=0..50] [{text:"污名吾之过去，摧颓吾之未来……",color:"aqua"}]
+execute if score SEA_ch6_event sea_4temp9 matches 1003 positioned 90118 102 -1892 as @p[tag=SEAPT] run tellraw @a[distance=..200] [{text:"污名吾之过去，摧颓吾之未来……",color:"aqua"}]
 
 
 
-execute if score SEA_ch6_event sea_4temp9 matches 1018 positioned 90118 102 -1892 run tellraw @a[tag=SEAPT,distance=0..50] [{text:"赞颂汝之过去，引领吾之未来……",color:"aqua"}]
-execute if score SEA_ch6_event sea_4temp9 matches 1033 positioned 90118 102 -1892 run tellraw @a[tag=SEAPT,distance=0..50] [{text:"我乃七十二柱魔神之佛卡洛。\n天使之后继者，你能仅凭自己的力量走至此处，真令我感到不可思议。",color:"aqua"}]
-execute if score SEA_ch6_event sea_4temp9 matches 1048 positioned 90118 102 -1892 run tellraw @a[tag=SEAPT,distance=0..50] [{text:"我终于知晓为何命运选择了你。",color:"aqua"}]
-execute if score SEA_ch6_event sea_4temp9 matches 1063 positioned 90118 102 -1892 run tellraw @a[tag=SEAPT,distance=0..50] [{text:"虽说我最后没能赐你祝福……但，既然是你的话，一定能为未来带去转机。",color:"aqua"}]
-execute if score SEA_ch6_event sea_4temp9 matches 1078 positioned 90118 102 -1892 run tellraw @a[tag=SEAPT,distance=0..50] [{text:"我和你终会在未来相见。",color:"aqua"}]
+execute if score SEA_ch6_event sea_4temp9 matches 1018 positioned 90118 102 -1892 as @p[tag=SEAPT] run tellraw @a[distance=..200] [{text:"赞颂汝之过去，引领吾之未来……",color:"aqua"}]
+execute if score SEA_ch6_event sea_4temp9 matches 1033 positioned 90118 102 -1892 as @p[tag=SEAPT] run tellraw @a[distance=..200] [{text:"我乃七十二柱魔神之佛卡洛。\n天使之后继者，你能仅凭自己的力量走至此处，真令我感到不可思议。",color:"aqua"}]
+execute if score SEA_ch6_event sea_4temp9 matches 1048 positioned 90118 102 -1892 as @p[tag=SEAPT] run tellraw @a[distance=..200] [{text:"我终于知晓为何命运选择了你。",color:"aqua"}]
+execute if score SEA_ch6_event sea_4temp9 matches 1063 positioned 90118 102 -1892 as @p[tag=SEAPT] run tellraw @a[distance=..200] [{text:"虽说我最后没能赐你祝福……但，既然是你的话，一定能为未来带去转机。",color:"aqua"}]
+execute if score SEA_ch6_event sea_4temp9 matches 1078 positioned 90118 102 -1892 as @p[tag=SEAPT] run tellraw @a[distance=..200] [{text:"我和你终会在未来相见。",color:"aqua"}]
 
 
 execute if score SEA_ch6_event sea_4temp9 matches 1078 run particle minecraft:soul_fire_flame 90118 102 -1892 2 2 2 0.001 60
