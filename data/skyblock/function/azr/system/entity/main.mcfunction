@@ -25,4 +25,4 @@ execute if score stage Azr_system matches 8..43 if score playerCount Azr_system 
 
 
 execute if score timer_static_5s AzrTimerStack matches -2147483648..2147483647 run scoreboard players add timer_static_5s AzrTimerStack 1
-execute if score timer_static_5s AzrTimerStack matches 100.. run function skyblock:azr/system/entity/main_slow
+execute if score timer_static_5s AzrTimerStack matches 5.. run function skyblock:azr/system/entity/main_slow
