@@ -20,7 +20,7 @@ forceload add -79400 000 -79200 200
 forceload add -79400 200 -79200 400
 #______________________________________________________________#
 setblock -79937 38 -12 air
-setblock -79937 38 -12 minecraft:lectern[facing=north,has_book=true,powered=false]{Book:{components:{"written_book_content":{title:{raw:"Azriel's Midgarden"},author:"You",pages:[{raw:'"『亚兹列尔的中庭花园』\\n游戏背景故事\\n\\n死亡。\\n\\n死亡总是在不经意间，\\n悄然而至。\\n\\n但你并不理解， 有着许多未完之事的你，\\n为何偏偏会在此刻意外死去？\\n\\n你本能活得更久。"'},{raw:'"\\n你本该活得更久。\\n\\n来到地狱之时， 你早已决定试着放下心中的一切， 坦然迎接属于自己的最终结局。\\n\\n但魔界的使者， 被称为亚米的魔神， 将你送至了通往神庭的传送门。"'},{raw:'"他将那则秘密告知予你：\\n\\n如果想要违抗自己的死亡，\\n夺得更久的生命……\\n\\n——那就， 前往天界的生命树庭园吧。\\n\\n至少， 你看上去并没什么其他选择。"'},{raw:'"想要活得更久？\\n规则很简单。\\n\\n那便是， 攻破那座庭园的守卫， 向庭园关口的两位领袖发起挑战。\\n\\n若他们能够认同自己实力的话， 那自己就有机会获得庭园之主沙利叶的赏识， 获得继续在现实世界活下去的资格。"'},{raw:'"但……你作为一名手无寸铁的普通人类， 如何是好？\\n\\n魔界的使者赐予了你能够接通灵能网络的能力。\\n只要通过这本附上魔界法术的书籍， 便可在灵能网络的帮助下， 获得更强的力量， 以及装备……\\n\\n被赋予这一切的你，\\n踏上了前往天庭的路。"'},{raw:'"\\n\\n\\n\\n\\n你的前方， 是一条未知且极端险峻的道路。"'},{raw:'"\\n\\n\\n\\n\\n现在，\\n你正伫立于神界生命树庭园的入口前方。"'}]}},count:1,id:"minecraft:written_book"},Page:0}
+setblock -79937 38 -12 minecraft:lectern[facing=north,has_book=true,powered=false]{Book:{components:{"written_book_content":{title:{raw:"Azriel's Midgarden"},author:"You",pages:[{raw:'"『亚兹列尔的中庭花园』\\n游戏背景故事\\n\\n死亡。\\n\\n死亡总是在不经意间，\\n悄然而至。\\n\\n但你并不理解，有着许多未完之事的你，\\n为何偏偏会在此刻意外死去？\\n\\n你本能活得更久。"'},{raw:'"\\n你本该活得更久。\\n\\n来到地狱之时，你早已决定试着放下心中的一切，坦然迎接属于自己的最终结局。\\n\\n但魔界的使者，被称为亚米的魔神，将你送至了通往神庭的传送门。"'},{raw:'"他将那则秘密告知予你：\\n\\n如果想要违抗自己的死亡，\\n夺得更久的生命……\\n\\n——那就，前往天界的生命树庭园吧。\\n\\n至少，你看上去并没什么其他选择。"'},{raw:'"想要活得更久？\\n规则很简单。\\n\\n那便是，攻破那座庭园的守卫，向庭园关口的两位领袖发起挑战。\\n\\n若他们能够认同自己实力的话，那自己就有机会获得庭园之主沙利叶的赏识，获得继续在现实世界活下去的资格。"'},{raw:'"但……你作为一名手无寸铁的普通人类，如何是好？\\n\\n魔界的使者赐予了你能够接通灵能网络的能力。\\n只要通过这本附上魔界法术的书籍，便可在灵能网络的帮助下，获得更强的力量，以及装备……\\n\\n被赋予这一切的你，\\n踏上了前往天庭的路。"'},{raw:'"\\n\\n\\n\\n\\n你的前方，是一条未知且极端险峻的道路。"'},{raw:'"\\n\\n\\n\\n\\n现在，\\n你正伫立于神界生命树庭园的入口前方。"'}]}},count:1,id:"minecraft:written_book"},Page:0}
 
 #开局的按钮
 setblock -79937 39 -12 birch_button[facing=north,face=wall]
@@ -48,6 +48,22 @@ setblock -79396 26 -384 air
 setblock -79396 26 -384 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 
 fill -79370 27 -373 -79372 26 -373 minecraft:iron_bars
+
+setblock -79416 28 -382 smoker[facing=west]{Inventory:[]}
+setblock -79416 28 -381 minecraft:potted_crimson_roots
+
+setblock -79466 29 -408 minecraft:nether_brick_slab[type=top]
+fill -79467 29 -410 -79467 29 -409 minecraft:nether_brick_slab[type=top]
+fill -79466 29 -415 -79466 29 -414 minecraft:nether_brick_slab[type=top]
+fill -79467 29 -416 -79467 29 -415 minecraft:nether_brick_slab[type=top]
+fill -79952 41 -20 -79955 38 -20 minecraft:air
+
+fill -79409 30 -398 -79409 32 -396 minecraft:red_stained_glass
+setblock -79401 27 -385 minecraft:redstone_block
+setblock -79401 27 -385 minecraft:air
+setblock -79387 24 -401 minecraft:redstone_block
+setblock -79387 24 -401 minecraft:air
+setblock -79388 24 -405 minecraft:potted_crimson_fungus
 
 #新补充
 fill -79764 105 -2066 -79765 106 -2066 air
@@ -77,6 +93,9 @@ fill -79928 40 1 -79928 38 -1 minecraft:purple_stained_glass{name: "Stage1 white
 fill -79931 38 6 -79931 40 6 purple_stained_glass{name: "to Stage2"}
 fill -79934 40 -1 -79934 38 1 purple_stained_glass{name: "to Stage3 beta"}
 setblock -79946 37 -8 minecraft:white_stained_glass{name: "Stage3 beta ladder"}
+  #通往stage9
+clone -79908 36 -41 -79904 43 -32 -79933 37 -27
+
 #Stage1-Version2
 clone -79933 -14 -53 -79929 -3 -35 -79933 36 -53
 
@@ -228,6 +247,7 @@ fill -79915 32 0 -79917 35 0 air
 
 
 function skyblock:azr/lifecycle/endgame/reset_map_boss1
+fill -79932 38 104 -79930 42 104 minecraft:red_stained_glass
 
 
 #stage5
@@ -240,6 +260,7 @@ setblock -79933 38 125 minecraft:decorated_pot
   #屋顶摸不到的火把花
 fill -79937 56 149 -79941 56 149 minecraft:potted_torchflower
 
+fill -79932 42 130 -79930 38 130 minecraft:purple_stained_glass
 
 #供能区域
 fill -79931 35 171 -79931 35 183 minecraft:red_concrete replace minecraft:redstone_block
@@ -326,6 +347,9 @@ item replace block -79904 43 135 container.14 with tripwire_hook[custom_name={te
 
 setblock -79912 41 106 minecraft:potted_oxeye_daisy
 setblock -79912 41 103 minecraft:potted_oxeye_daisy
+
+fill -79898 42 101 -79896 38 101 minecraft:purple_stained_glass
+
   #侧道墙
 fill -79903 43 83 -79905 40 83 minecraft:purple_stained_glass
 setblock -79904 40 62 air
@@ -478,6 +502,13 @@ setblock -79897 39 23 minecraft:potted_lily_of_the_valley
 setblock -79897 39 33 minecraft:potted_lily_of_the_valley
 setblock -79902 39 23 minecraft:potted_lily_of_the_valley
 
+fill -79888 38 16 -79888 40 16 minecraft:quartz_pillar
+fill -79888 38 18 -79888 40 18 minecraft:quartz_pillar
+fill -79887 38 16 -79887 38 18 quartz_block
+fill -79887 39 16 -79887 39 18 quartz_bricks
+fill -79887 40 16 -79887 40 18 quartz_block
+
+fill -79893 41 5 -79893 38 3 minecraft:purple_stained_glass
 
 #boss2
 function skyblock:azr/lifecycle/endgame/reset_map_boss2
@@ -631,6 +662,8 @@ item replace block -79936 49 -158 container.14 with cooked_beef 3
 fill -79910 40 -105 -79910 41 -105 iron_bars
   #休整剑士的监狱小房间
 fill -79925 40 -111 -79925 41 -111 iron_bars replace air
+  #冲破牢笼2
+fill -79914 47 -103 -79914 46 -103 iron_bars
 
   #桌子
 setblock -79917 41 -104 minecraft:spruce_trapdoor[open=false,facing=west]
@@ -648,13 +681,20 @@ fill -79944 40 -105 -79942 42 -105 barrier
 #stage appetence
 setblock -79914 55 -111 minecraft:birch_button[facing=south,face=floor]
 
-
+#大铁门额外区域
+fill -79927 49 -130 -79927 48 -127 minecraft:netherite_block
 
 
 
 #原breakout
 setblock -79878 41 -131 lever[face=floor,facing=east,powered=false]
 setblock -79877 46 -142 minecraft:polished_andesite_slab
+fill -79883 40 -138 -79883 42 -140 minecraft:iron_bars
+
+#stage12开门处
+fill -79873 47 -110 -79873 48 -108 air
+fill -79867 51 -130 -79867 48 -127 iron_bars
+
 
 #第四章 stage13
   #隐藏内房
@@ -685,7 +725,9 @@ setblock -79713 22 -461 chest[facing=west]{Inventory:[]}
 item replace block -79713 22 -461 container.13 with gold_nugget 3
 setblock -79743 23 -463 minecraft:water_cauldron[level=3]
 setblock -79742 23 -463 minecraft:water_cauldron[level=2]
-
+fill -79755 23 -458 -79755 25 -462 nether_brick_fence
+#岩浆道上方
+fill -79647 23 -421 -79647 22 -422 minecraft:nether_brick_fence
 #岩浆道
 setblock -79571 11 -412 air
 setblock -79571 11 -412 trapped_chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
@@ -697,72 +739,26 @@ setblock -79588 8 -427 chest[facing=west]{Inventory:[]}
 item replace block -79588 8 -427 container.12 with gold_nugget 2
 item replace block -79588 8 -427 container.14 with gold_nugget 2
 
+#stage16
+fill -79533 27 -406 -79533 26 -405 minecraft:nether_brick_fence
+setblock -79540 25 -406 birch_button[face=floor]
+fill -79464 40 -431 -79469 31 -431 minecraft:obsidian replace minecraft:crying_obsidian
+fill -79464 40 -431 -79469 31 -431 minecraft:nether_portal[axis=x] replace minecraft:air
+
+
 #boss4
 fill -79519 42 -321 -79553 42 -355 air replace fire
+clone -79555 32 -352 -79517 32 -319 -79555 41 -352
 
 
 
 # ↓↓ 待修改 ↓↓
 
-#______________________________________________________________#
 
-fill -79932 38 104 -79930 42 104 minecraft:red_stained_glass
-fill -79932 38 72 -79930 42 72 air
-fill -79932 42 130 -79930 38 130 minecraft:purple_stained_glass
-fill -79938 44 151 -79938 43 151 smooth_quartz
-fill -79898 42 101 -79896 38 101 minecraft:purple_stained_glass
-fill -79891 38 73 -79889 42 73 air
-fill -79888 38 16 -79888 40 16 minecraft:quartz_pillar
-fill -79888 38 18 -79888 40 18 minecraft:quartz_pillar
-fill -79887 38 16 -79887 38 18 quartz_block
-fill -79887 39 16 -79887 39 18 quartz_bricks
-fill -79887 40 16 -79887 40 18 quartz_block
-fill -79893 41 5 -79893 38 3 minecraft:purple_stained_glass
-fill -79904 41 0 -79902 38 0 minecraft:air
-fill -79958 39 58 -79960 39 54 air replace green_wool
-
-fill -79926 40 -111 -79924 42 -111 minecraft:iron_bars
-fill -79922 42 -112 -79922 45 -112 air
-fill -79914 47 -103 -79914 46 -103 iron_bars
-fill -79837 51 -130 -79837 48 -127 air
-fill -79867 51 -130 -79867 48 -127 air
-fill -79922 45 -113 -79922 45 -111 minecraft:barrier
-fill -79911 42 -68 -79911 40 -68 minecraft:quartz_pillar
-fill -79901 39 88 -79901 38 88 iron_bars
-fill -79883 40 -138 -79883 42 -140 minecraft:iron_bars
-fill -79927 49 -130 -79927 48 -127 minecraft:netherite_block
-fill -79881 42 -60 -79881 44 -61 minecraft:purple_stained_glass
-fill -79878 44 -113 -79874 40 -113 minecraft:purple_stained_glass
-fill -79864 41 -75 -79864 40 -75 minecraft:pointed_dripstone
-fill -79647 23 -421 -79647 22 -422 minecraft:nether_brick_fence
-fill -79663 21 -416 -79665 21 -417 netherrack
-fill -79755 23 -458 -79755 25 -462 nether_brick_fence
-fill -79647 23 -422 -79647 22 -421 minecraft:nether_brick_fence
-fill -79533 27 -406 -79533 26 -405 minecraft:nether_brick_fence
-fill -79789 27 -312 -79789 27 -302 air
-fill -79777 44 -300 -79777 43 -300 minecraft:cracked_nether_bricks
-fill -79876 47 -111 -79877 52 -107 air
-fill -79936 55 -120 -79935 54 -120 air
-fill -79873 47 -110 -79873 48 -108 air
-fill -79820 48 -130 -79820 53 -127 black_concrete
-fill -79922 45 -113 -79922 45 -111 minecraft:air
-fill -79867 51 -130 -79867 48 -127 iron_bars
-#______________________________________________________________#
-clone -79908 36 -41 -79904 43 -32 -79933 37 -27
-#clone -79613 14 -401 -79606 18 -394 -79613 14 -420
-#______________________________________________________________#
-
-
-
-#item replace block -79863 40 -76 container.14 with skull_banner_pattern[custom_name={text:"“招待厅事务记录5”",color:"dark_purple",italic:0b},lore=[{text:"第一关口北面的建筑物出现了大量裂缝，",color:"white",italic:0b},{text:"这样的现象一直延伸至牢房区域。",color:"white",italic:0b},{text:"虽说大家有不祥的预感，",color:"white",italic:0b},{text:"权之殊能大人却言仅为年久失修。",color:"white",italic:0b}]] 1
 
 
 
 #第16关地图预加载#
-setblock -79540 25 -406 birch_button[face=floor]
-
-fill -79464 40 -431 -79469 31 -431 minecraft:obsidian replace minecraft:crying_obsidian
-fill -79464 40 -431 -79469 31 -431 minecraft:nether_portal[axis=x] replace minecraft:air
 #fill -79420 22 -364 -79491 24 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
 #fill -79420 25 -364 -79491 27 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
 #fill -79420 28 -364 -79491 30 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
@@ -815,22 +811,6 @@ fill -79519 42 -321 -79553 42 -355 air replace fire
 fill -79465 84 -342 -79467 84 -334 glass
 fill -79470 84 -337 -79462 84 -339 glass
 fill -79460 64 -343 -79471 64 -332 black_concrete replace air
-clone -79555 32 -352 -79517 32 -319 -79555 41 -352
-setblock -79416 28 -382 smoker[facing=west]{Inventory:[]}
-setblock -79416 28 -381 minecraft:potted_crimson_roots
-
-setblock -79466 29 -408 minecraft:nether_brick_slab[type=top]
-fill -79467 29 -410 -79467 29 -409 minecraft:nether_brick_slab[type=top]
-fill -79466 29 -415 -79466 29 -414 minecraft:nether_brick_slab[type=top]
-fill -79467 29 -416 -79467 29 -415 minecraft:nether_brick_slab[type=top]
-fill -79952 41 -20 -79955 38 -20 minecraft:air
-
-fill -79409 30 -398 -79409 32 -396 minecraft:red_stained_glass
-setblock -79401 27 -385 minecraft:redstone_block
-setblock -79401 27 -385 minecraft:air
-setblock -79387 24 -401 minecraft:redstone_block
-setblock -79387 24 -401 minecraft:air
-setblock -79388 24 -405 minecraft:potted_crimson_fungus
 #______________________________________________________________#
 forceload remove -80000 -400 -79800 -200
 forceload remove -80000 -200 -79800 000
@@ -857,8 +837,8 @@ forceload remove -79541 -472 -79345 -350
 kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1000]
 
 tellraw @a[tag=!Gaming] {text:"死亡总是在不经意间，悄然而至，摧毁一切美梦。",color: "green"}
-tellraw @a[tag=!Gaming] {text:"你曾过着幸福祥和的生活，“意外身亡”不该是属于你的结局。",color: "green"}
-tellraw @a[tag=!Gaming] {text:"但摆在你面前的还有另一条路：通过生命树花园的挑战，重获生命。",color: "green"}
+tellraw @a[tag=!Gaming] {text:"你曾过着幸福祥和的生活，“意外身亡”本不是属于你的结局。",color: "green"}
+tellraw @a[tag=!Gaming] {text:"但你仍有权利做出另一选择：通过生命树花园的挑战，重获生命。",color: "green"}
 tellraw @a[tag=!Gaming] [{text:"『亚兹列尔的中庭花园』",color: "light_purple",bold:1b},{text:" 神庭正召唤着命中之你……",color: "green",bold: false}]
 
 
