@@ -1,6 +1,6 @@
 
 execute if score stage_main_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{text:"[DEBUG MODE MESSAGE] You are playing \"Stage 9\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{text:" Maximum Seconds = 90"}]
-execute if score stage_main_thread AzrTimerStack matches 10 run bossbar add azr:progress_bar_normal "Stage 10"
+execute if score stage_main_thread AzrTimerStack matches 10 run bossbar add azr:progress_bar_normal "亡 魂 侵 袭 余 数"
 execute if score stage_main_thread AzrTimerStack matches 10 run bossbar set azr:progress_bar_normal color yellow
 execute if score stage_main_thread AzrTimerStack matches 10 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 10 run scoreboard players set 200 constant 200
@@ -39,7 +39,7 @@ execute if score stage_main_thread AzrTimerStack matches 343 run playsound ambie
 execute if score stage_main_thread AzrTimerStack matches 343 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 343 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 343 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage9
-execute if score stage_main_thread AzrTimerStack matches 343 run title @a[tag=azrShowDialog] actionbar {text:"Stage Clear",color:"green"}
-execute if score stage_main_thread AzrTimerStack matches 343 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..10}] Azr_skillPoints 11
-execute if score stage_main_thread AzrTimerStack matches 343 run scoreboard players set stage Azr_system 27
+execute if score stage_main_thread AzrTimerStack matches 343 run title @a[tag=azrShowDialog] actionbar {text:"Stage Annihilated",color:"green"}
+execute if score stage_main_thread AzrTimerStack matches 343 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..11}] Azr_skillPoints 12
+execute if score stage_main_thread AzrTimerStack matches 343 run scoreboard players set stage Azr_system 29
 execute if score stage_main_thread AzrTimerStack matches 343 run scoreboard players set stage_main_thread AzrTimerStack 0
