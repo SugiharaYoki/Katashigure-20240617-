@@ -17,7 +17,7 @@
         "show_toast": false,
         "announce_to_chat": true,
         "hidden": false,
-        "background": "minecraft:textures/gui/advancements/backgrounds/nether.png"
+        "background": "minecraft:gui/advancements/backgrounds/nether"
     },
     "criteria": {
         "azrielsmidgarden": {
