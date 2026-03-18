@@ -1,7 +1,7 @@
 {
     "display": {
         "title": {
-            "text": "神庭：牢房区域 - 1",
+            "text": "晦怨囚牢：第1场暴乱",
             "color": "aqua",
             "bold": true,
             "italic": false
@@ -23,5 +23,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:azr/progress/stage9_event1"
+    "parent": "skyblock:azr/progress/stage9"
 }
