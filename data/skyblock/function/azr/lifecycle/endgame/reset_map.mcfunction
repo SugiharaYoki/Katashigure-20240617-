@@ -86,8 +86,10 @@ fill -79931 38 22 -79931 40 22 purple_stained_glass{name: "to Stage3 alpha"}
 fill -79942 40 3 -79944 38 3 minecraft:purple_stained_glass{name: "to Stage3 bata"}
 
 #Stage3 alpha
-fill -79935 43 34 -79935 45 34 minecraft:purple_stained_glass{name: "to Secret Room-1"}
+fill -79928 38 34 -79928 38 35 quartz_pillar
+fill -79928 39 34 -79928 39 35 quartz_bricks
 setblock -79928 38 33 minecraft:quartz_pillar{name: "Spider Room"}
+fill -79935 43 34 -79935 45 34 minecraft:purple_stained_glass{name: "to Secret Room-1"}
 fill -79931 38 40 -79931 40 40 purple_stained_glass{name: "to Stage4 alpha"}
 setblock -79918 42 25 chest[facing=north]{Inventory:[]}
 item replace block -79918 42 25 container.13 with emerald 3
@@ -110,6 +112,8 @@ item replace block -79896 40 15 container.15 with minecraft:cooked_beef 1
 setblock -79910 43 46 chest[facing=north]{Inventory:[]}
 item replace block -79910 43 46 container.12 with minecraft:emerald 3
 item replace block -79910 43 46 container.14 with minecraft:coal 1
+  #stage8连接道
+fill -79906 40 27 -79906 38 29 minecraft:purple_stained_glass
 
 #下砸隐藏通路
 setblock -79942 33 11 minecraft:honey_block
@@ -573,6 +577,9 @@ setblock -79865 42 -52 barrel[facing=north]{Inventory:[]}
 setblock -79867 44 -57 barrel[facing=south]{Inventory:[]}
 setblock -79866 43 -57 barrel[facing=south]{Inventory:[]}
 setblock -79865 42 -57 barrel[facing=south]{Inventory:[]}
+item replace block -79866 43 -57 container.14 with coal 2
+item replace block -79867 44 -52 container.12 with emerald 3
+item replace block -79865 42 -52 container.13 with dried_kelp 8
 
 
 
@@ -582,8 +589,9 @@ fill -79892 43 -119 -79889 40 -119 minecraft:iron_bars
 setblock -79894 41 -123 lever[facing=east,face=floor,powered=false]
 
 #监狱装饰
-setblock -79908 48 -127 barrel[facing=north,open=false]
-setblock -79935 48 -164 barrel[facing=up]
+setblock -79908 48 -127 barrel[facing=north,open=false]{Inventory:[]}
+setblock -79935 48 -164 barrel[facing=up]{Inventory:[]}
+item replace block -79935 48 -164 container.13 with cooked_beef 3
 
 setblock -79903 40 -104 chest[facing=west]{Inventory:[]}
 item replace block -79903 40 -104 container.11 with emerald 2
@@ -619,8 +627,10 @@ setblock -79936 49 -158 trapped_chest[facing=north]{lock:{components:{custom_dat
 item replace block -79936 49 -158 container.12 with skull_banner_pattern[custom_name={text:"“期限将至 此乃针对神庭之审判”",color:"dark_purple",italic:0b},lore=[{text:"这里的魔物保受摧残，",color:"white",italic:0b},{text:"终日身于苦痛之中。",color:"white",italic:0b},{text:"沙利叶大人既是对此心知肚明，",color:"white",italic:0b},{text:"又为何让这暴行延续？",color:"white",italic:0b}]] 1
 item replace block -79936 49 -158 container.14 with cooked_beef 3
 
+  #冲破牢笼1
+fill -79910 40 -105 -79910 41 -105 iron_bars
   #休整剑士的监狱小房间
-fill -79925 40 -111 -79925 41 -111 iron_bars
+fill -79925 40 -111 -79925 41 -111 iron_bars replace air
 
   #桌子
 setblock -79917 41 -104 minecraft:spruce_trapdoor[open=false,facing=west]
@@ -629,6 +639,18 @@ setblock -79917 41 -103 minecraft:spruce_trapdoor[open=false,facing=west]
 setblock -79923 41 -104 minecraft:spruce_trapdoor[open=false,facing=east]
 setblock -79923 41 -102 minecraft:spruce_trapdoor[open=false,facing=east]
 setblock -79923 41 -103 minecraft:spruce_trapdoor[open=false,facing=east]
+
+#stage 10
+fill -79944 40 -111 -79942 42 -111 iron_bars replace air
+fill -79944 40 -105 -79942 42 -105 iron_bars replace air
+
+
+#stage appetence
+setblock -79914 55 -111 minecraft:birch_button[facing=south,face=floor]
+
+
+
+
 
 #原breakout
 setblock -79878 41 -131 lever[face=floor,facing=east,powered=false]
@@ -647,6 +669,8 @@ setblock -79793 27 -287 anvil[facing=north]
 #stage14
 setblock -79770 23 -460 chest[facing=east]{Inventory:[]}
 setblock -79765 24 -469 chest[facing=south]{Inventory:[]}
+item replace block -79770 23 -460 container.13 with minecraft:gold_nugget 30
+item replace block -79765 24 -469 container.13 with minecraft:gold_nugget 28
 
 #林场
 setblock -79804 56 -465 anvil[facing=north]
@@ -673,20 +697,15 @@ setblock -79588 8 -427 chest[facing=west]{Inventory:[]}
 item replace block -79588 8 -427 container.12 with gold_nugget 2
 item replace block -79588 8 -427 container.14 with gold_nugget 2
 
+#boss4
+fill -79519 42 -321 -79553 42 -355 air replace fire
+
+
+
 # ↓↓ 待修改 ↓↓
 
 #______________________________________________________________#
 
-
-setblock -79799 28 -284 minecraft:birch_button[facing=west,face=floor]
-setblock -79742 75 -440 minecraft:birch_button[facing=east,face=floor]
-setblock -79914 55 -111 minecraft:birch_button[facing=south,face=floor]
-#______________________________________________________________#
-#boss4
-fill -79519 42 -321 -79553 42 -355 air replace fire
-fill -79928 38 34 -79928 38 35 quartz_pillar
-fill -79928 39 34 -79928 39 35 quartz_bricks
-fill -79906 40 27 -79906 38 29 minecraft:purple_stained_glass
 fill -79932 38 104 -79930 42 104 minecraft:red_stained_glass
 fill -79932 38 72 -79930 42 72 air
 fill -79932 42 130 -79930 38 130 minecraft:purple_stained_glass
@@ -702,17 +721,7 @@ fill -79893 41 5 -79893 38 3 minecraft:purple_stained_glass
 fill -79904 41 0 -79902 38 0 minecraft:air
 fill -79958 39 58 -79960 39 54 air replace green_wool
 
-fill -79886 46 148 -79888 43 148 air
-fill -79942 38 8 -79944 38 8 quartz_block
-fill -79942 39 8 -79944 39 8 quartz_pillar[axis=x]
-fill -79942 40 8 -79944 40 8 quartz_block
-fill -79943 38 8 -79943 40 8 quartz_pillar[axis=y]
-fill -79943 34 136 -79943 32 136 air
-fill -79910 40 -105 -79910 41 -105 iron_bars
 fill -79926 40 -111 -79924 42 -111 minecraft:iron_bars
-fill -79942 42 -105 -79944 40 -105 minecraft:iron_bars
-fill -79942 42 -111 -79944 40 -111 minecraft:iron_bars
-fill -79935 44 -93 -79936 42 -93 minecraft:purple_stained_glass
 fill -79922 42 -112 -79922 45 -112 air
 fill -79914 47 -103 -79914 46 -103 iron_bars
 fill -79837 51 -130 -79837 48 -127 air
@@ -746,14 +755,7 @@ clone -79908 36 -41 -79904 43 -32 -79933 37 -27
 
 
 #item replace block -79863 40 -76 container.14 with skull_banner_pattern[custom_name={text:"“招待厅事务记录5”",color:"dark_purple",italic:0b},lore=[{text:"第一关口北面的建筑物出现了大量裂缝，",color:"white",italic:0b},{text:"这样的现象一直延伸至牢房区域。",color:"white",italic:0b},{text:"虽说大家有不祥的预感，",color:"white",italic:0b},{text:"权之殊能大人却言仅为年久失修。",color:"white",italic:0b}]] 1
-item replace block -79935 48 -164 container.13 with cooked_beef 3
-item replace block -79866 43 -57 container.14 with coal 2
-item replace block -79867 44 -52 container.12 with emerald 3
-item replace block -79865 42 -52 container.13 with dried_kelp 8
-#item replace block -79863 40 -76 container.12 with stone_axe[custom_name={text:"苔石斧·笼怨",italic:0b},attribute_modifiers=[{type:"knockback_resistance",slot:"mainhand",id:"azr:mossstone_axe.knockback_resistance",amount:0.13,operation:"add_value"},{type:"attack_damage",slot:"mainhand",id:"azr:mossstone_axe.attack_damage",amount:10.5,operation:"add_value"},{type:"attack_speed",slot:"mainhand",id:"azr:mossstone_axe.attack_speed",amount:-3.2,operation:"add_value"}],enchantments={"unbreaking":2}] 1
 
-item replace block -79770 23 -460 container.13 with minecraft:gold_nugget 30
-item replace block -79765 24 -469 container.13 with minecraft:gold_nugget 28
 
 
 #第16关地图预加载#
@@ -761,46 +763,46 @@ setblock -79540 25 -406 birch_button[face=floor]
 
 fill -79464 40 -431 -79469 31 -431 minecraft:obsidian replace minecraft:crying_obsidian
 fill -79464 40 -431 -79469 31 -431 minecraft:nether_portal[axis=x] replace minecraft:air
-fill -79420 22 -364 -79491 24 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-fill -79420 25 -364 -79491 27 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-fill -79420 28 -364 -79491 30 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-fill -79420 31 -364 -79491 33 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-fill -79420 34 -364 -79491 36 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-fill -79420 37 -364 -79491 39 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-fill -79420 40 -364 -79491 42 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-fill -79420 43 -364 -79491 45 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-fill -79420 22 -364 -79491 24 -503 minecraft:crimson_roots replace minecraft:warped_roots
-fill -79420 25 -364 -79491 27 -503 minecraft:crimson_roots replace minecraft:warped_roots
-fill -79420 28 -364 -79491 30 -503 minecraft:crimson_roots replace minecraft:warped_roots
-fill -79420 31 -364 -79491 33 -503 minecraft:crimson_roots replace minecraft:warped_roots
-fill -79420 34 -364 -79491 36 -503 minecraft:crimson_roots replace minecraft:warped_roots
-fill -79420 37 -364 -79491 39 -503 minecraft:crimson_roots replace minecraft:warped_roots
-fill -79420 40 -364 -79491 42 -503 minecraft:crimson_roots replace minecraft:warped_roots
-fill -79420 43 -364 -79491 45 -503 minecraft:crimson_roots replace minecraft:warped_roots
-fill -79420 22 -364 -79491 24 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-fill -79420 25 -364 -79491 27 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-fill -79420 28 -364 -79491 30 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-fill -79420 31 -364 -79491 33 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-fill -79420 34 -364 -79491 36 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-fill -79420 37 -364 -79491 39 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-fill -79420 40 -364 -79491 42 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-fill -79420 43 -364 -79491 45 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-fill -79420 22 -364 -79491 24 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-fill -79420 25 -364 -79491 27 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-fill -79420 28 -364 -79491 30 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-fill -79420 31 -364 -79491 33 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-fill -79420 34 -364 -79491 36 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-fill -79420 37 -364 -79491 39 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-fill -79420 40 -364 -79491 42 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-fill -79420 43 -364 -79491 45 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-fill -79420 22 -364 -79491 24 -503 minecraft:lantern replace minecraft:soul_lantern
-fill -79420 25 -364 -79491 27 -503 minecraft:lantern replace minecraft:soul_lantern
-fill -79420 28 -364 -79491 30 -503 minecraft:lantern replace minecraft:soul_lantern
-fill -79420 31 -364 -79491 33 -503 minecraft:lantern replace minecraft:soul_lantern
-fill -79420 34 -364 -79491 36 -503 minecraft:lantern replace minecraft:soul_lantern
-fill -79420 37 -364 -79491 39 -503 minecraft:lantern replace minecraft:soul_lantern
-fill -79470 32 -429 -79463 35 -432 crimson_stem[axis=y] replace warped_stem
-fill -79468 31 -430 -79465 31 -432 crimson_stem[axis=x] replace warped_stem
+#fill -79420 22 -364 -79491 24 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
+#fill -79420 25 -364 -79491 27 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
+#fill -79420 28 -364 -79491 30 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
+#fill -79420 31 -364 -79491 33 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
+#fill -79420 34 -364 -79491 36 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
+#fill -79420 37 -364 -79491 39 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
+#fill -79420 40 -364 -79491 42 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
+#fill -79420 43 -364 -79491 45 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
+#fill -79420 22 -364 -79491 24 -503 minecraft:crimson_roots replace minecraft:warped_roots
+#fill -79420 25 -364 -79491 27 -503 minecraft:crimson_roots replace minecraft:warped_roots
+#fill -79420 28 -364 -79491 30 -503 minecraft:crimson_roots replace minecraft:warped_roots
+#fill -79420 31 -364 -79491 33 -503 minecraft:crimson_roots replace minecraft:warped_roots
+#fill -79420 34 -364 -79491 36 -503 minecraft:crimson_roots replace minecraft:warped_roots
+#fill -79420 37 -364 -79491 39 -503 minecraft:crimson_roots replace minecraft:warped_roots
+#fill -79420 40 -364 -79491 42 -503 minecraft:crimson_roots replace minecraft:warped_roots
+#fill -79420 43 -364 -79491 45 -503 minecraft:crimson_roots replace minecraft:warped_roots
+#fill -79420 22 -364 -79491 24 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
+#fill -79420 25 -364 -79491 27 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
+#fill -79420 28 -364 -79491 30 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
+#fill -79420 31 -364 -79491 33 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
+#fill -79420 34 -364 -79491 36 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
+#fill -79420 37 -364 -79491 39 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
+#fill -79420 40 -364 -79491 42 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
+#fill -79420 43 -364 -79491 45 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
+#fill -79420 22 -364 -79491 24 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
+#fill -79420 25 -364 -79491 27 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
+#fill -79420 28 -364 -79491 30 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
+#fill -79420 31 -364 -79491 33 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
+#fill -79420 34 -364 -79491 36 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
+#fill -79420 37 -364 -79491 39 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
+#fill -79420 40 -364 -79491 42 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
+#fill -79420 43 -364 -79491 45 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
+#fill -79420 22 -364 -79491 24 -503 minecraft:lantern replace minecraft:soul_lantern
+#fill -79420 25 -364 -79491 27 -503 minecraft:lantern replace minecraft:soul_lantern
+#fill -79420 28 -364 -79491 30 -503 minecraft:lantern replace minecraft:soul_lantern
+#fill -79420 31 -364 -79491 33 -503 minecraft:lantern replace minecraft:soul_lantern
+#fill -79420 34 -364 -79491 36 -503 minecraft:lantern replace minecraft:soul_lantern
+#fill -79420 37 -364 -79491 39 -503 minecraft:lantern replace minecraft:soul_lantern
+#fill -79470 32 -429 -79463 35 -432 crimson_stem[axis=y] replace warped_stem
+#fill -79468 31 -430 -79465 31 -432 crimson_stem[axis=x] replace warped_stem
 fill -79466 81 -422 -79467 88 -422 blackstone
 fill -79467 81 -399 -79465 88 -399 blackstone
 fill -79463 80 -377 -79469 80 -378 air
@@ -854,10 +856,10 @@ forceload remove -79541 -472 -79345 -350
 #______________________________________________________________#
 kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1000]
 
-tellraw @a[tag=!Gaming] {text:"死亡总是在不经意间，悄然而至。",color: "green"}
-tellraw @a[tag=!Gaming] {text:"你本该活得更久。如果想要违抗自己的死亡……",color: "green"}
-tellraw @a[tag=!Gaming] {text:"那就，前往天界的生命树庭园吧。",color: "green"}
-tellraw @a[tag=!Gaming] [{text:"『亚兹列尔的中庭花园』",color: "light_purple",bold:1b},{text:" 已允许新的挑战者光临",color: "green",bold: false}]
+tellraw @a[tag=!Gaming] {text:"死亡总是在不经意间，悄然而至，摧毁一切美梦。",color: "green"}
+tellraw @a[tag=!Gaming] {text:"你曾过着幸福祥和的生活，“意外身亡”不该是属于你的结局。",color: "green"}
+tellraw @a[tag=!Gaming] {text:"但摆在你面前的还有另一条路：通过生命树花园的挑战，重获生命。",color: "green"}
+tellraw @a[tag=!Gaming] [{text:"『亚兹列尔的中庭花园』",color: "light_purple",bold:1b},{text:" 神庭正召唤着命中之你……",color: "green",bold: false}]
 
 
 scoreboard players set stage_main_thread AzrTimerStack 0

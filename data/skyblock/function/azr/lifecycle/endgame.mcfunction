@@ -84,6 +84,7 @@ scoreboard objectives remove temp_timer9
 scoreboard objectives remove temp_timer10
 scoreboard objectives remove AzrJoinWave
 scoreboard players set stage_main_thread AzrTimerStack 0
+scoreboard players set stage_main_thread AzrielMobLevel 0
 scoreboard players set stage Azr_system 0
 scoreboard players set isStarted Azr_system 0
 scoreboard players reset CerementPassword Azr_system

@@ -58,12 +58,8 @@ execute if score stage Azr_system matches 25.. run function skyblock:azr/assets/
 execute if score stage Azr_system matches 25.. run function skyblock:azr/assets/events/stage/chapter_3/stage9_prison
 #第九关 26
 execute if score stage Azr_system matches 26 run function skyblock:azr/assets/events/stage/chapter_3/stage9
-#event5 27
-execute if score stage Azr_system matches 27 run function skyblock:azr/assets/events/stage/stage_event5
-#event5-第十关 28
-execute if score stage Azr_system matches 28 run scoreboard players set stage_main_thread AzrTimerStack 0
-#第十关 35
-execute if score stage Azr_system matches 35 run function skyblock:azr/assets/events/stage/stage10
+#第十关
+execute if score stage Azr_system matches 28 run function skyblock:azr/assets/events/stage/chapter_3/stage10
 #event8 35..36
 execute if score stage Azr_system matches 35..36 run function skyblock:azr/assets/events/stage/stage_event8
 #event9 37..39
