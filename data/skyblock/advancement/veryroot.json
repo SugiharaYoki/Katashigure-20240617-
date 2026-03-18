@@ -17,7 +17,7 @@
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false,
-        "background": "minecraft:gui/advancements/backgrounds/stone.png"
+        "background": "minecraft:gui/advancements/backgrounds/stone"
     },
     "criteria": {
         "skyblockwarjob": {
