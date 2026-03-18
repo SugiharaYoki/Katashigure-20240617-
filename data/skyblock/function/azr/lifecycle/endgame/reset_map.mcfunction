@@ -641,8 +641,8 @@ setblock -79923 41 -102 minecraft:spruce_trapdoor[open=false,facing=east]
 setblock -79923 41 -103 minecraft:spruce_trapdoor[open=false,facing=east]
 
 #stage 10
-fill -79944 40 -111 -79942 42 -111 iron_bars replace air
-fill -79944 40 -105 -79942 42 -105 iron_bars replace air
+fill -79944 40 -111 -79942 42 -111 barrier
+fill -79944 40 -105 -79942 42 -105 barrier
 
 
 #stage appetence
