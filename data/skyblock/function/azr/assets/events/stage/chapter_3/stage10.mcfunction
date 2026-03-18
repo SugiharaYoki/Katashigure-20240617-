@@ -1,6 +1,6 @@
 
 execute if score stage_main_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{text:"[DEBUG MODE MESSAGE] You are playing \"Stage 9\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{text:" Maximum Seconds = 90"}]
-execute if score stage_main_thread AzrTimerStack matches 10 run bossbar add azr:progress_bar_normal "亡 魂 侵 袭 余 数"
+execute if score stage_main_thread AzrTimerStack matches 10 run bossbar add azr:progress_bar_normal "亡魂侵袭：空气魔力浓度"
 execute if score stage_main_thread AzrTimerStack matches 10 run bossbar set azr:progress_bar_normal color yellow
 execute if score stage_main_thread AzrTimerStack matches 10 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 10 run scoreboard players set 200 constant 200
