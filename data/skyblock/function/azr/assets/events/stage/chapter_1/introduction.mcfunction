@@ -240,6 +240,7 @@ execute if score Azr_Story_Introduction rng1 matches 650 as @p[tag=azrPlayer] at
 
 
 execute if score Azr_Story_Introduction rng1 matches 500..1000 positioned -79723 293 -1221 if entity @a[tag=azrPlayer,distance=..20] run scoreboard players set Azr_Story_Introduction rng1 1010
+execute if score Azr_Story_Introduction rng1 matches 1001 positioned -79723 293 -1221 run effect give @a[tag=azrPlayer] slow_falling 3 155 true
 execute if score Azr_Story_Introduction rng1 matches 1001 positioned -79723 293 -1221 run kill @e[tag=azrPlayer_opening_rise_particle_1_marker,distance=0..50]
 execute if score Azr_Story_Introduction rng1 matches 1001 positioned -79723 293 -1221 run kill @e[tag=azrPlayer_opening_rise_particle_2_marker,distance=0..50]
 execute if score Azr_Story_Introduction rng1 matches 1010 positioned -79723 293 -1221 as @a[tag=azrShowDialog] run effect give @s blindness 3 0 true
