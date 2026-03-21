@@ -222,7 +222,7 @@ execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC10,di
 
 execute if score Azr_Story_Introduction rng1 matches 390..400 run scoreboard players set Azr_Story_Introduction rng1 390
 execute if score Azr_Story_Introduction rng1 matches ..400 if entity @p[tag=azrPlayer,x=-79468,y=31,z=-431,dx=4,dy=1,dz=1] run scoreboard players set Azr_Story_Introduction rng1 500
-execute if score Azr_Story_Introduction rng1 matches 1001..1023 unless entity @p[tag=azrPlayer,x=-79468,y=31,z=-431,dx=4,dy=1,dz=1] run scoreboard players set Azr_Story_Introduction rng1 390
+#execute if score Azr_Story_Introduction rng1 matches 1001..1023 unless entity @p[tag=azrPlayer,x=-79468,y=31,z=-431,dx=4,dy=1,dz=1] run scoreboard players set Azr_Story_Introduction rng1 390
 
 
 execute if score Azr_Story_Introduction rng1 matches 501 run time set 22300
@@ -237,14 +237,14 @@ execute if score Azr_Story_Introduction rng1 matches 551..600 run effect give @a
 execute if score Azr_Story_Introduction rng1 matches 601..900 run effect give @a[tag=azrPlayer] levitation 3 4 true
 execute if score Azr_Story_Introduction rng1 matches 596 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden1.sagashimono_opening music @s ~ ~ ~ 0.65
 execute if score Azr_Story_Introduction rng1 matches 620 as @p[tag=azrPlayer] at @s run summon marker -79723.02 ~ -1220.00 {Tags:["azrPlayer_opening_rise_particle_1_marker","AzrielMob_mob_marker"]} 
-execute if score Azr_Story_Introduction rng1 matches 650 as @p[tag=azrPlayer] at @s run summon marker -79723.02 ~ -1220.00 {Tags:["azrPlayer_opening_rise_particle_2_marker","AzrielMob_mob_marker"]} 
+execute if score Azr_Story_Introduction rng1 matches 680 as @p[tag=azrPlayer] at @s run summon marker -79723.02 ~ -1220.00 {Tags:["azrPlayer_opening_rise_particle_2_marker","AzrielMob_mob_marker"]} 
 
 
 execute if score Azr_Story_Introduction rng1 matches 500..1000 positioned -79723 293 -1221 if entity @a[tag=azrPlayer,distance=..20] run scoreboard players set Azr_Story_Introduction rng1 1010
-execute if score Azr_Story_Introduction rng1 matches 1001 positioned -79723 293 -1221 run effect give @a[tag=azrPlayer] slow_falling 3 155 true
-execute if score Azr_Story_Introduction rng1 matches 1001 positioned -79723 293 -1221 run kill @e[tag=azrPlayer_opening_rise_particle_1_marker,distance=0..50]
-execute if score Azr_Story_Introduction rng1 matches 1001 positioned -79723 293 -1221 run kill @e[tag=azrPlayer_opening_rise_particle_2_marker,distance=0..50]
-execute if score Azr_Story_Introduction rng1 matches 1010 positioned -79723 293 -1221 as @a[tag=azrShowDialog] run effect give @s blindness 3 0 true
+execute if score Azr_Story_Introduction rng1 matches 1011 positioned -79723 293 -1221 run effect give @a[tag=azrPlayer] slow_falling 3 155 true
+execute if score Azr_Story_Introduction rng1 matches 1011 positioned -79723 293 -1221 run kill @e[tag=azrPlayer_opening_rise_particle_1_marker,distance=0..50]
+execute if score Azr_Story_Introduction rng1 matches 1011 positioned -79723 293 -1221 run kill @e[tag=azrPlayer_opening_rise_particle_2_marker,distance=0..50]
+execute if score Azr_Story_Introduction rng1 matches 1011 positioned -79723 293 -1221 as @a[tag=azrShowDialog] run effect give @s blindness 3 0 true
 
 
 
@@ -258,7 +258,7 @@ execute if score Azr_Story_Introduction rng1 matches 614 at @p[tag=azrPlayer] ru
 execute if score Azr_Story_Introduction rng1 matches 1024.. at @p[tag=azrPlayer] if entity @a[tag=!azrRetrieved,tag=azrPlayer,tag=AZR_SEAawakened] if score stage Azr_system matches ..0 as @p[tag=!azrRetrieved,tag=azrPlayer,tag=AZR_SEAawakened] at @s run function skyblock:azr/lifecycle/jump_to/generic_retrieve
 execute if score Azr_Story_Introduction rng1 matches 1024 at @p[tag=azrPlayer] run tp @a[tag=azrShowDialog] -79984.03 40.00 -14.01 facing -79983.03 40.00 -14.01
 
-execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 40.00 -14.01 as @a[distance=..200] at @s run playsound entity.player.teleport ambient @s ~ ~ ~ 2 1
+execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 40.00 -14.01 as @a[tag=azrShowDialog] at @s run playsound entity.player.teleport ambient @s ~ ~ ~ 2 1
 execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 40.00 -14.01 run playsound block.beacon.activate ambient @a ~ ~ ~ 2 0.8
 execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 40.00 -14.01 run playsound block.beacon.deactivate ambient @a ~ ~ ~ 2 0.8
 execute if score Azr_Story_Introduction rng1 matches 1024..1034 positioned -79984.03 40.00 -14.01 run particle trial_spawner_detection ~ ~ ~ 2 0 2 0 40
