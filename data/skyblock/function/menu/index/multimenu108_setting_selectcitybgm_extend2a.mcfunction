@@ -1,6 +1,7 @@
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.4 0.4
 tellraw @s {text:"「神界中庭的奏乐」- 亚兹列尔的中庭花园",color:"blue"}
 tellraw @s {text:" "}
+tellraw @s [{text:"  opening by. onoken - 升往天堂的通道",color:"aqua"},{text:"  点唱",color:"green",click_event:{"action":"run_command","command":"trigger MultiMenu set 101796"},hover_event:{"action":"show_text","value":{text:"立即播放该曲",color:"white"}}}]
 tellraw @s [{text:"  Lethal Dose by. Sky_Delta - 西庭外围：权之残影",color:"aqua"},{text:"  点唱",color:"green",click_event:{"action":"run_command","command":"trigger MultiMenu set 101763"},hover_event:{"action":"show_text","value":{text:"立即播放该曲",color:"white"}}}]
 tellraw @s [{text:"  The Guardians by. Yooh - 采光礼堂：马林努斯",color:"aqua"},{text:"  点唱",color:"green",click_event:{"action":"run_command","command":"trigger MultiMenu set 101786"},hover_event:{"action":"show_text","value":{text:"立即播放该曲",color:"white"}}}]
 tellraw @s [{text:"  Grenade by. Sky_Delta - 采光礼堂：权之残影",color:"aqua"},{text:"  点唱",color:"green",click_event:{"action":"run_command","command":"trigger MultiMenu set 101764"},hover_event:{"action":"show_text","value":{text:"立即播放该曲",color:"white"}}}]
