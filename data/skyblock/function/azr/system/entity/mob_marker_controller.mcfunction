@@ -1,4 +1,7 @@
 
+execute as @s[tag=azrPlayer_opening_rise_particle_1_marker] at @s run function skyblock:azr/assets/events/stage/chapter_1/introduction/opening_rise_particle_1
+execute as @s[tag=azrPlayer_opening_rise_particle_2_marker] at @s run function skyblock:azr/assets/events/stage/chapter_1/introduction/opening_rise_particle_2
+
 execute as @s[tag=AzrielMob_candle_angel_candle_marker] at @s run function skyblock:azr/assets/mobs/skill/candle/marker_candle
 
 execute as @s[tag=AzrielMob_candle_angel_candle_throw_marker] at @s run function skyblock:azr/assets/mobs/skill/candle/marker_candle_throw
