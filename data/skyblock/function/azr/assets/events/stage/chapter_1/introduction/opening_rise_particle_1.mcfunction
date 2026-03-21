@@ -13,6 +13,10 @@ execute as @s at @s rotated as @s positioned ^ ^ ^5 run particle end_rod ~ ~ ~ 0
 execute as @s at @s rotated as @s positioned ^ ^ ^-5 run particle end_rod ~ ~ ~ 0 0 0 0 1
 execute as @s at @s rotated as @s positioned ^8 ^ ^ run particle end_rod ~ ~ ~ 0 0 0 0 1
 execute as @s at @s rotated as @s positioned ^-8 ^ ^ run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @s at @s rotated as @s positioned ^ ^8 ^5 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @s at @s rotated as @s positioned ^ ^8 ^-5 run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @s at @s rotated as @s positioned ^8 ^8 ^ run particle end_rod ~ ~ ~ 0 0 0 0 1
+execute as @s at @s rotated as @s positioned ^-8 ^8 ^ run particle end_rod ~ ~ ~ 0 0 0 0 1
 
 
 
