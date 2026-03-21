@@ -14,7 +14,7 @@ execute as @s[tag=AzrielMob_amulet_skill] at @s run function skyblock:azr/system
 execute as @s[tag=AzrielMob_mob_marker] at @s run function skyblock:azr/system/entity/mob_marker_controller
 
 # BOSS1 code:10
-execute if score stage Azr_system matches 10 as @s[tag=AzrielBossA] at @s if score stage_main_thread AzrTimerStack matches ..1002 run function skyblock:azr/assets/events/stagechapter_1/stage_boss1
+execute if score stage Azr_system matches 10 as @s[tag=AzrielBossA] at @s if score stage_main_thread AzrTimerStack matches ..1002 run function skyblock:azr/assets/events/stage/chapter_1/stage_boss1
 # BOSS2 code:[23,24]
 execute if score stage Azr_system matches 23..24 as @s[tag=AzrielBossA] at @s run function skyblock:azr/assets/events/stage/chapter_2/stage_boss2
 
