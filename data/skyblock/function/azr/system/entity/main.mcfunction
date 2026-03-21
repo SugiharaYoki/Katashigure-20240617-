@@ -24,5 +24,3 @@ execute if score stage Azr_system matches 8..43 if score playerCount Azr_system 
 execute if score stage Azr_system matches 8..43 if score playerCount Azr_system matches 1.. positioned -79820 43 136 as @s[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/mobs/skill/boss_assassin/core
 
 
-execute if score timer_static_5s AzrTimerStack matches -2147483648..2147483647 run scoreboard players add timer_static_5s AzrTimerStack 1
-execute if score timer_static_5s AzrTimerStack matches 5.. run function skyblock:azr/system/entity/main_slow
