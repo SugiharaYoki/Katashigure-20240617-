@@ -91,7 +91,6 @@ scoreboard players reset CerementPassword Azr_system
 scoreboard players reset internal_clock_001 Azr_system
 scoreboard players reset internal_clock_002 Azr_system
 scoreboard players reset tick_count_main AzrTimerStack
-scoreboard players reset timer_static_5s AzrTimerStack
 scoreboard objectives setdisplay sidebar Azr_skillPoints
 scoreboard players reset stage_boss_bgm AzrTimerStack
 

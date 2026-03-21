@@ -24,13 +24,12 @@ function skyblock:azr/system/buttons
 function skyblock:azr/assets/events/effects/wish_fountain_transfer
 
 #实体函数
-execute if score timer_static_5s AzrTimerStack matches -2147483648..2147483647 run scoreboard players add timer_static_5s AzrTimerStack 1
-execute if score timer_static_5s AzrTimerStack matches 5.. as @e[x=-79931,y=100,z=0,distance=..10000] run function skyblock:azr/system/entity/main_slow
 execute as @e[x=-79931,y=100,z=0,distance=..10000] run function skyblock:azr/system/entity/main
 
 execute if score tick_count_main AzrTimerStack matches -2147483648..2147483647 run scoreboard players add tick_count_main AzrTimerStack 1
-execute if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/lifecycle/main_x5
+execute if score tick_count_main AzrTimerStack matches 5.. as @e[x=-79931,y=100,z=0,distance=..10000] run function skyblock:azr/system/entity/main_slow
 
+execute if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/lifecycle/main_x5
 # 部分关卡检测玩家位置在这里处理
 
     # 第四关-boss1 event1

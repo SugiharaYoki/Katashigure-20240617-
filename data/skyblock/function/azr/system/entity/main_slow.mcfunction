@@ -15,5 +15,3 @@ execute if entity @s[type=item] if entity @a[tag=azrPlayer,distance=..9] if enti
 execute if entity @s[type=item] if entity @a[tag=azrPlayer,distance=..9] if entity @s[nbt={Item:{components:{"minecraft:custom_data":{SarielVitae:1b}}}}] run kill @s
 execute if entity @s[type=item] if entity @a[tag=azrPlayer,distance=..9] if entity @s[nbt={Item:{components:{"minecraft:custom_data":{HandbookVitae:1b}}}}] run kill @s
 
-
-scoreboard players set timer_static_5s AzrTimerStack 0
