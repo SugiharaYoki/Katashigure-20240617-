@@ -4,7 +4,7 @@
 
 
 
-execute as @s at @s rotated as @s as @p[tag=azrPlayer] at @s positioned ^ ^ ^ run tp @s -79723.02 ~ -1220.00
+execute as @s at @s rotated as @s at @p[tag=azrPlayer] positioned ^ ^ ^ run tp @s -79723.02 ~ -1220.00
 
 execute as @s at @s rotated as @s run rotate @s ~0.4 ~
 
