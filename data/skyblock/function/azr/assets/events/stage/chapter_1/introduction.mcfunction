@@ -225,9 +225,12 @@ execute if score Azr_Story_Introduction rng1 matches ..400 if entity @p[tag=azrP
 execute if score Azr_Story_Introduction rng1 matches 1001..1023 unless entity @p[tag=azrPlayer,x=-79468,y=31,z=-431,dx=4,dy=1,dz=1] run scoreboard players set Azr_Story_Introduction rng1 390
 
 
+execute if score Azr_Story_Introduction rng1 matches 500 run time set 22500
+execute if score Azr_Story_Introduction rng1 matches 500 run weather thunder 1000
+execute if score Azr_Story_Introduction rng1 matches 501 run weather clear 1000
 execute if score Azr_Story_Introduction rng1 matches 501 run tp @a[tag=azrShowDialog] -79723.02 -49.00 -1220.00
-execute if score Azr_Story_Introduction rng1 matches 501..550 run effect give @a[tag=azrPlayer] levitation 3 0 true
-execute if score Azr_Story_Introduction rng1 matches 551..600 run effect give @a[tag=azrPlayer] levitation 3 1 true
+execute if score Azr_Story_Introduction rng1 matches 501..550 run effect give @a[tag=azrPlayer] levitation 3 4 true
+execute if score Azr_Story_Introduction rng1 matches 551..600 run effect give @a[tag=azrPlayer] levitation 3 3 true
 execute if score Azr_Story_Introduction rng1 matches 601..900 run effect give @a[tag=azrPlayer] levitation 3 2 true
 execute if score Azr_Story_Introduction rng1 matches 551..600 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden1.sagashimono_opening music @s ~ ~ ~ 0.65
 
