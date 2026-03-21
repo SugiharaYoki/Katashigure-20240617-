@@ -235,8 +235,8 @@ execute if score Azr_Story_Introduction rng1 matches 521..550 run effect give @a
 execute if score Azr_Story_Introduction rng1 matches 551..600 run effect give @a[tag=azrPlayer] levitation 3 5 true
 execute if score Azr_Story_Introduction rng1 matches 601..900 run effect give @a[tag=azrPlayer] levitation 3 4 true
 execute if score Azr_Story_Introduction rng1 matches 596 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden1.sagashimono_opening music @s ~ ~ ~ 0.65
-execute if score Azr_Story_Introduction rng1 matches 680 as @p[tag=azrPlayer] at @s run summon marker -79723.02 ~ -1220.00 {Tags:["azrPlayer_opening_rise_particle_1_marker","AzrielMob_mob_marker"]} 
-execute if score Azr_Story_Introduction rng1 matches 700 as @p[tag=azrPlayer] at @s run summon marker -79723.02 ~ -1220.00 {Tags:["azrPlayer_opening_rise_particle_2_marker","AzrielMob_mob_marker"]} 
+execute if score Azr_Story_Introduction rng1 matches 620 as @p[tag=azrPlayer] at @s run summon marker -79723.02 ~ -1220.00 {Tags:["azrPlayer_opening_rise_particle_1_marker","AzrielMob_mob_marker"]} 
+execute if score Azr_Story_Introduction rng1 matches 650 as @p[tag=azrPlayer] at @s run summon marker -79723.02 ~ -1220.00 {Tags:["azrPlayer_opening_rise_particle_2_marker","AzrielMob_mob_marker"]} 
 
 
 execute if score Azr_Story_Introduction rng1 matches 500..1000 positioned -79723 293 -1221 if entity @a[tag=azrPlayer,distance=..20] run scoreboard players set Azr_Story_Introduction rng1 1010
