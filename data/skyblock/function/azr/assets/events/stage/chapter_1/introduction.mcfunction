@@ -230,8 +230,8 @@ execute if score Azr_Story_Introduction rng1 matches 501 run weather thunder 100
 execute if score Azr_Story_Introduction rng1 matches 521 run weather clear 1000
 execute if score Azr_Story_Introduction rng1 matches 521 run tp @a[tag=azrShowDialog] -79723.02 -49.00 -1220.00
 execute if score Azr_Story_Introduction rng1 matches 521..550 run effect give @a[tag=azrPlayer] levitation 3 6 true
-execute if score Azr_Story_Introduction rng1 matches 551..600 run effect give @a[tag=azrPlayer] levitation 3 4 true
-execute if score Azr_Story_Introduction rng1 matches 601..900 run effect give @a[tag=azrPlayer] levitation 3 3 true
+execute if score Azr_Story_Introduction rng1 matches 551..600 run effect give @a[tag=azrPlayer] levitation 3 5 true
+execute if score Azr_Story_Introduction rng1 matches 601..900 run effect give @a[tag=azrPlayer] levitation 3 4 true
 execute if score Azr_Story_Introduction rng1 matches 596 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden1.sagashimono_opening music @s ~ ~ ~ 0.65
 
 execute if score Azr_Story_Introduction rng1 matches 500..1000 positioned -79723 293 -1221 if entity @a[tag=azrPlayer,distance=..20] run scoreboard players set Azr_Story_Introduction rng1 1010
