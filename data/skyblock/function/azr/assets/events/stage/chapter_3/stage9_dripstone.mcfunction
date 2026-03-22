@@ -21,7 +21,7 @@ execute positioned -79857.99 40.00 -94.59 as @n[tag=AzrielTrader_dripstone_smith
 #矿工群
 execute positioned -79836 13 -57 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=..7,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 101.. run function skyblock:azr/assets/events/stage/chapter_3/area_dripstone/pre_subboss_working
-execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s if score @s rng1 matches 101.. run function skyblock:azr/assets/events/stage/chapter_3/area_dripstone/post_subboss_working
+execute positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s positioned -79839 12 -65 if score @s rng1 matches 101.. run function skyblock:azr/assets/events/stage/chapter_3/area_dripstone/post_subboss_working
 
 #金属学家
 execute positioned -79805 12 -48 as @n[tag=AzrielBossWorking_StartActing,distance=0..30] run scoreboard players add @s rng12 1

@@ -27,7 +27,6 @@ execute if score @s rng1 matches 161..999 at @s as @a[distance=0..5.5,tag=azrPla
 execute if score @s rng1 matches 161..999 at @s as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_303] run tellraw @s [{text:" - "},{text:"询问：可是你应该已经成为怪物了？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30303"}}]
 
 execute if score @s rng1 matches 161..999 at @s as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_303] run tag @s add azrPlayer_dialogchoice_revealed_303
-execute if score @s rng1 matches 161..999 at @s as @a[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_303] run say hi
 execute if score @s rng1 matches 161..999 at @s as @a[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_303] run tag @s remove azrPlayer_dialogchoice_revealed_303
 execute if score @s rng1 matches 161 run scoreboard players set @s rng1 159
 
