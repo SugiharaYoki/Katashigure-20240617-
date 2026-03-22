@@ -15,7 +15,6 @@ execute as @s[scores={rng1=28}] positioned -79888 42 -56 run summon marker ~ ~ ~
 
 execute as @s[scores={rng1=38..39}] if entity @n[distance=..25,tag=AzrielMob_zombie_villager_cleric] run scoreboard players set @s rng1 38
 execute as @s[scores={rng1=38..39}] if entity @n[distance=..16,tag=AzrielMob_shield] run scoreboard players set @s rng1 38
-execute as @s[scores={rng1=38..39}] if entity @n[distance=..12,tag=AzrielMob_undead] run scoreboard players set @s rng1 38
 execute as @s[scores={rng1=40}] positioned -79890.01 41.97 -78.00 run function skyblock:azr/assets/mobs/sonic_eye
 execute as @s[scores={rng1=40}] positioned -79890.01 41.97 -78.00 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:sonic_eye}
 
