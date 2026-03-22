@@ -60,6 +60,11 @@
           "type": "minecraft:item",
           "name": "minecraft:ghast_tear",
           "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gunpowder",
+          "weight": 5
         }
       ]
     }
