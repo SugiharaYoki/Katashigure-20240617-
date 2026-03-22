@@ -24,7 +24,7 @@ execute if score stage_main_thread AzrTimerStack matches 37 positioned -79937 38
 execute if score stage_main_thread AzrTimerStack matches 41 positioned -79925 38 46 run function skyblock:azr/assets/mobs/shield
 execute if score stage_main_thread AzrTimerStack matches 41 positioned -79937 38 46 run function skyblock:azr/assets/mobs/shield
 
-execute if score stage_main_thread AzrTimerStack matches 42..43 positioned -79931 38 46 if entity @n[distance=..15,tag=AzrielMob_shield] run scoreboard players set stage_main_thread AzrTimerStack 42
+execute if score stage_main_thread AzrTimerStack matches 42..43 positioned -79931 38 46 if entity @n[distance=..8,tag=AzrielMob_shield] run scoreboard players set stage_main_thread AzrTimerStack 42
 
 execute if score stage_main_thread AzrTimerStack matches 44 positioned -79925 38 46 run function skyblock:azr/assets/mobs/undead_pickaxe
 execute if score stage_main_thread AzrTimerStack matches 44 positioned -79937 38 46 run function skyblock:azr/assets/mobs/undead_pickaxe
@@ -33,7 +33,7 @@ execute if score stage_main_thread AzrTimerStack matches 74 positioned -79937 38
 execute if score stage_main_thread AzrTimerStack matches 76 positioned -79925 38 46 run function skyblock:azr/assets/mobs/sword
 execute if score stage_main_thread AzrTimerStack matches 76 positioned -79937 38 46 run function skyblock:azr/assets/mobs/sword
 
-execute if score stage_main_thread AzrTimerStack matches 77..78 positioned -79931 38 46 if entity @n[distance=..15,tag=AzrielMob_undead_pickaxe] run scoreboard players set stage_main_thread AzrTimerStack 77
+execute if score stage_main_thread AzrTimerStack matches 77..78 positioned -79931 38 46 if entity @n[distance=..8,tag=AzrielMob_undead_pickaxe] run scoreboard players set stage_main_thread AzrTimerStack 77
 
 execute if score stage_main_thread AzrTimerStack matches 79 run title @a[tag=azrShowDialog] actionbar {text:"Wave Clear",color:"green"}
 execute if score stage_main_thread AzrTimerStack matches 80 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 1
