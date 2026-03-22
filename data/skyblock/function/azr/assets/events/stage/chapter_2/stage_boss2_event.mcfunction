@@ -165,7 +165,9 @@ execute if score stage_main_thread AzrTimerStack matches 1344..1345 as @n[tag=Az
 
 execute if score stage_main_thread AzrTimerStack matches 1360 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 1360 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“……人类的亡魂，我可以看看你的生命手册吗？”",color:"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1360 run scoreboard players set stage_main_thread AzrTimerStack 1364
 execute if score stage_main_thread AzrTimerStack matches 1380 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua"},{text:"\n“怎么了？”",color:"white"}]
+execute if score stage_main_thread AzrTimerStack matches 1380 run scoreboard players set stage_main_thread AzrTimerStack 1390
 execute if score stage_main_thread AzrTimerStack matches 1400 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 1400 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“或许有什么我能帮你做的。”",color:"white"}]
 
