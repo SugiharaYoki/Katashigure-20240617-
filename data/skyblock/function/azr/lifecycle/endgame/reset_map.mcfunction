@@ -557,10 +557,10 @@ setblock -79914 41 -80 minecraft:potted_poppy
 
 #蚀岩径区域
 setblock -79870 31 -72 chest[facing=west]{Inventory:[]}
-item replace block -79870 31 -72 container.12 with bone 1
+item replace block -79870 31 -72 container.12 with gunpowder 1
 item replace block -79870 31 -72 container.14 with gunpowder 1
 setblock -79856 29 -58 chest[facing=west]{Inventory:[]}
-item replace block -79856 29 -58 container.12 with bone 1
+item replace block -79856 29 -58 container.12 with gunpowder 1
 item replace block -79856 29 -58 container.14 with string 1
 
   #落水陷阱
@@ -652,7 +652,7 @@ setblock -79928 40 -113 flower_pot
 setblock -79897 40 -115 air
 setblock -79897 40 -115 trapped_chest[facing=west]{lock:{components:{custom_data:{key_required:1b}}}}
 item replace block -79897 40 -115 container.12 with emerald 3
-item replace block -79897 40 -115 container.14 with minecraft:bone 1
+item replace block -79897 40 -115 container.14 with minecraft:gunpowder 1
 setblock -79936 49 -158 air
 setblock -79936 49 -158 trapped_chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
 item replace block -79936 49 -158 container.12 with skull_banner_pattern[custom_name={text:"“期限将至 此乃针对神庭之审判”",color:"dark_purple",italic:0b},lore=[{text:"这里的魔物保受摧残，",color:"white",italic:0b},{text:"终日身于苦痛之中。",color:"white",italic:0b},{text:"沙利叶大人既是对此心知肚明，",color:"white",italic:0b},{text:"又为何让这暴行延续？",color:"white",italic:0b}]] 1

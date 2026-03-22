@@ -98,17 +98,17 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=22,Azr_Shop=$(trigger)}] \
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=23,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* bone[count={min:1}] \
+    if items entity @s container.* gunpowder[count={min:1}] \
     unless function skyblock:azr/system/shop/purchase/category1/\
     rng23 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 23  生牛排 ×2  1 骨头
+    # 23  生牛排 ×2  1 火药
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=24,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* bone[count={min:2}] \
+    if items entity @s container.* gunpowder[count={min:2}] \
     unless function skyblock:azr/system/shop/purchase/category1/\
     rng24 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 24  硬化曲奇 ×2  2 骨头
+    # 24  硬化曲奇 ×2  2 火药
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=25,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \

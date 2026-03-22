@@ -21,7 +21,7 @@ execute as @s[scores={rng1=52}] positioned -79913 27 208 run scoreboard players 
 execute as @s[scores={rng1=52}] positioned -79913 27 208 if entity @n[type=item,distance=..1.5,nbt={Item:{id:"minecraft:resin_clump"}}] run scoreboard players set @s rng5 1
 execute as @s[scores={rng1=52}] positioned -79913 27 208 if entity @n[type=item,distance=..1.5,nbt={Item:{id:"minecraft:ghast_tear"}}] run scoreboard players set @s rng5 100
 execute as @s[scores={rng1=52}] positioned -79913 27 208 if entity @n[type=item,distance=..1.5,nbt={Item:{id:"minecraft:iron_ingot"}}] store result score @s rng5 run random value 1..100
-execute as @s[scores={rng1=52}] positioned -79913 27 208 if entity @n[type=item,distance=..1.5,nbt={Item:{id:"minecraft:bone"}}] store result score @s rng5 run random value 1..100
+execute as @s[scores={rng1=52}] positioned -79913 27 208 if entity @n[type=item,distance=..1.5,nbt={Item:{id:"minecraft:gunpowder"}}] store result score @s rng5 run random value 1..100
 execute as @s[scores={rng1=52}] positioned -79913 27 208 if entity @n[type=item,distance=..1.5,nbt={Item:{id:"minecraft:string"}}] store result score @s rng5 run random value 1..100
 execute as @s[scores={rng1=52}] positioned -79913 27 208 if entity @n[type=item,distance=..1.5,nbt={Item:{id:"minecraft:ink_sac"}}] store result score @s rng5 run random value 1..100
 execute as @s[scores={rng1=52}] positioned -79913 27 208 if entity @n[type=item,distance=..1.5,nbt={Item:{id:"minecraft:flint"}}] store result score @s rng5 run random value 1..100

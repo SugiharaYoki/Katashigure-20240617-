@@ -126,7 +126,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=27,Azr_Shop=$(trigger)}] \
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=28,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* bone[count={min:8}] \
+    if items entity @s container.* gunpowder[count={min:8}] \
     if items entity @s container.* iron_ingot[count={min:10}] \
     if score @s Azr_emerald matches 30.. \
     unless function skyblock:azr/system/shop/purchase/category2/\
@@ -136,7 +136,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=28,Azr_Shop=$(trigger)}] \
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=29,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* bone[count={min:8}] \
+    if items entity @s container.* gunpowder[count={min:8}] \
     if items entity @s container.* iron_ingot[count={min:10}] \
     if score @s Azr_emerald matches 30.. \
     unless function skyblock:azr/system/shop/purchase/category2/\
@@ -159,7 +159,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=52,Azr_Shop=$(trigger)}] \
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=53,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* bone[count={min:12}] \
+    if items entity @s container.* gunpowder[count={min:12}] \
     if items entity @s container.* iron_ingot[count={min:12}] \
     if score @s Azr_emerald matches 50.. \
     unless function skyblock:azr/system/shop/purchase/category2/\
@@ -169,7 +169,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=53,Azr_Shop=$(trigger)}] \
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=54,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* bone[count={min:12}] \
+    if items entity @s container.* gunpowder[count={min:12}] \
     if items entity @s container.* iron_ingot[count={min:12}] \
     if score @s Azr_emerald matches 50.. \
     unless function skyblock:azr/system/shop/purchase/category2/\

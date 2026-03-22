@@ -143,7 +143,7 @@ execute as @s[scores={Azr_Shop=8431544}] \
 execute as @s[scores={Azr_Shop=8431545}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* iron_nugget[count={min:3},custom_data~{shield_shard:1b}] \
-    if items entity @s container.* bone[count={min:3},custom_data~{hard_bone:1b}] \
+    if items entity @s container.* gunpowder[count={min:3}] \
     unless function skyblock:azr/system/shop/purchase/ramiel/\
     netherite_chestplate_t1 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 9  @s  试造防弹甲  3 盾牌碎片 3 硬骨
@@ -151,7 +151,7 @@ execute as @s[scores={Azr_Shop=8431545}] \
 execute as @s[scores={Azr_Shop=8431546}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* iron_nugget[count={min:3},custom_data~{shield_shard:1b}] \
-    if items entity @s container.* bone[count={min:3},custom_data~{hard_bone:1b}] \
+    if items entity @s container.* gunpowder[count={min:3}] \
     if items entity @s container.* blaze_powder[count={min:3},custom_data~{flame_powder:1b}] \
     unless function skyblock:azr/system/shop/purchase/ramiel/\
     netherite_chestplate_t2 run scoreboard players set tempPlayerShopSuccess Azr_system 1

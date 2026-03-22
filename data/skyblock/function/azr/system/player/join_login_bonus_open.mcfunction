@@ -27,7 +27,7 @@ execute if score @s rng1 matches 62 run function skyblock:azr/assets/items/other
 execute if score @s rng1 matches 63 run give @s glistering_melon_slice 2
 execute if score @s rng1 matches 64 run give @s arrow 15
 execute if score @s rng1 matches 65 run give @s coal 5
-execute if score @s rng1 matches 66 run give @s bone 3
+execute if score @s rng1 matches 66 run give @s gunpowder 3
 execute if score @s rng1 matches 67 run function skyblock:azr/assets/items/others/instant_spark
 execute if score @s rng1 matches 67 run function skyblock:azr/assets/items/others/instant_spark
 execute if score @s rng1 matches 67 run function skyblock:azr/assets/items/others/instant_spark

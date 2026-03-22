@@ -218,7 +218,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=58,Azr_Shop=$(trigger)}] \
 $execute as @s[scores={Azr_Shop_rng$(rng)=59,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if score @s Azr_emerald matches 18.. \
-    if items entity @s container.* bone[count={min:4}] \
+    if items entity @s container.* gunpowder[count={min:4}] \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng59 run scoreboard players set tempPlayerShopSuccess Azr_system 1
 
@@ -247,7 +247,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=23,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* chainmail_helmet[count~{min:1},custom_data~{chainmail_helmet_normal:1b}] \
     if score @s Azr_emerald matches 3.. \
-    if items entity @s container.* bone[count~{min:3},custom_data~{hard_bone:1b}] \
+    if items entity @s container.* gunpowder[count~{min:3}] \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng23 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 23 链帽（反透） 1 链帽 3 绿宝石 2 硬骨
@@ -265,7 +265,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=24,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* chainmail_helmet[count~{min:1},custom_data~{chainmail_helmet_normal:1b}] \
     if score @s Azr_emerald matches 3.. \
-    if items entity @s container.* bone[count~{min:3},custom_data~{hard_bone:1b}] \
+    if items entity @s container.* gunpowder[count~{min:3}] \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng24 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 24 链帽（反透） 1 链帽 3 绿宝石 2 硬骨
@@ -283,7 +283,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=25,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* chainmail_leggings[count~{min:1},custom_data~{chainmail_leggings_normal:1b}] \
     if score @s Azr_emerald matches 3.. \
-    if items entity @s container.* bone[count~{min:3},custom_data~{hard_bone:1b}] \
+    if items entity @s container.* gunpowder[count~{min:3}] \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng25 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 25 链裤（反透） 1 链裤 3 绿宝石 3 硬骨
@@ -301,7 +301,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=26,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* chainmail_leggings[count~{min:1},custom_data~{chainmail_leggings_normal:1b}] \
     if score @s Azr_emerald matches 3.. \
-    if items entity @s container.* bone[count~{min:3},custom_data~{hard_bone:1b}] \
+    if items entity @s container.* gunpowder[count~{min:3}] \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng26 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 26 链裤（反透） 1 链裤 3 绿宝石 3 硬骨
@@ -380,7 +380,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=31,Azr_Shop=$(trigger)}] \
 $execute as @s[scores={Azr_Shop_rng$(rng)=32,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if score @s Azr_emerald matches 14.. \
-    if items entity @s container.* bone[count~{min:8},custom_data~{hard_bone:1b}] \
+    if items entity @s container.* gunpowder[count~{min:8}] \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng32 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 32 铁胸甲（裹尸） 1 铁胸甲 14 绿宝石 8 硬骨
@@ -388,7 +388,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=32,Azr_Shop=$(trigger)}] \
 $execute as @s[scores={Azr_Shop_rng$(rng)=33,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if score @s Azr_emerald matches 14.. \
-    if items entity @s container.* bone[count~{min:10},custom_data~{hard_bone:1b}] \
+    if items entity @s container.* gunpowder[count~{min:10}] \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng33 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 33 铁护腿（裹尸） 1 铁胸甲 14 绿宝石 10 硬骨
@@ -396,7 +396,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=33,Azr_Shop=$(trigger)}] \
 $execute as @s[scores={Azr_Shop_rng$(rng)=34,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if score @s Azr_emerald matches 12.. \
-    if items entity @s container.* bone[count~{min:8},custom_data~{hard_bone:1b}] \
+    if items entity @s container.* gunpowder[count~{min:8}] \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng34 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 34 铁靴（裹尸） 1 铁靴 12 绿宝石 8 硬骨
@@ -407,7 +407,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=35,Azr_Shop=$(trigger)}] \
     if items entity @s container.* iron_helmet[count~{min:1},custom_data~{iron_helmet_normal:1b}] \
     if score @s Azr_emerald matches 9.. \
     if items entity @s container.* string[count~{min:4}] \
-    if items entity @s container.* bone[count~{min:2},custom_data~{frozen_bone:1b}] \
+    if items entity @s container.* gunpowder[count~{min:2},custom_data~{frozen_gunpowder:1b}] \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng35 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 35 铁盔（暗窥） 1 铁盔 9 绿宝石 4 丝线 2 冻骨
@@ -417,7 +417,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=36,Azr_Shop=$(trigger)}] \
     if items entity @s container.* iron_chestplate[count~{min:1},custom_data~{iron_chestplate_normal:1b}] \
     if score @s Azr_emerald matches 12.. \
     if items entity @s container.* string[count~{min:8}] \
-    if items entity @s container.* bone[count~{min:1},custom_data~{frozen_bone:1b}] \
+    if items entity @s container.* gunpowder[count~{min:1},custom_data~{frozen_gunpowder:1b}] \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng36 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 36 铁胸甲（暗窥） 1 铁胸甲 12 绿宝石 8 丝线 1 冻骨
@@ -427,7 +427,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=37,Azr_Shop=$(trigger)}] \
     if items entity @s container.* iron_leggings[count~{min:1},custom_data~{iron_leggings_normal:1b}] \
     if score @s Azr_emerald matches 12.. \
     if items entity @s container.* string[count~{min:4}] \
-    if items entity @s container.* bone[count~{min:2},custom_data~{frozen_bone:1b}] \
+    if items entity @s container.* gunpowder[count~{min:2},custom_data~{frozen_gunpowder:1b}] \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng37 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 37 铁护腿（暗窥） 1 铁护腿 12 绿宝石 4 丝线 2 冻骨
@@ -437,7 +437,7 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=38,Azr_Shop=$(trigger)}] \
     if items entity @s container.* iron_boots[count~{min:1},custom_data~{iron_boots_normal:1b}] \
     if score @s Azr_emerald matches 12.. \
     if items entity @s container.* string[count~{min:8}] \
-    if items entity @s container.* bone[count~{min:1},custom_data~{frozen_bone:1b}] \
+    if items entity @s container.* gunpowder[count~{min:1},custom_data~{frozen_gunpowder:1b}] \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng38 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 38 铁靴（暗窥） 1 铁靴 9 绿宝石 8 丝线 1 冻骨

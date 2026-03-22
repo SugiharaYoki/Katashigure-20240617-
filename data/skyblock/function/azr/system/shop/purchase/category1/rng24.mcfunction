@@ -1,4 +1,4 @@
-clear @s bone 2
+clear @s gunpowder 2
 
 
 function skyblock:azr/assets/items/others/hardened_cookie

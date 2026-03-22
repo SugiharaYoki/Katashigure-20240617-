@@ -90,7 +90,7 @@ execute as @s[scores={Azr_Shop=8431630}] \
 
 execute as @s[scores={Azr_Shop=8431621}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* bone[count={min:10},custom_data~{hard_bone:1b}] \
+    if items entity @s container.* gunpowder[count={min:10}] \
     if items entity @s container.* string[count={min:5}] \
     unless function skyblock:azr/system/shop/purchase/nether/\
     bow_string run scoreboard players set tempPlayerShopSuccess Azr_system 1
@@ -98,7 +98,7 @@ execute as @s[scores={Azr_Shop=8431621}] \
 
 execute as @s[scores={Azr_Shop=8431622}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* bone[count={min:10},custom_data~{hard_bone:1b}] \
+    if items entity @s container.* gunpowder[count={min:10}] \
     if items entity @s container.* rabbit_foot[count={min:3},custom_data~{claw:1b}] \
     unless function skyblock:azr/system/shop/purchase/nether/\
     crossbow_blade run scoreboard players set tempPlayerShopSuccess Azr_system 1
@@ -150,7 +150,7 @@ execute as @s[scores={Azr_Shop=8431628}] \
 
 execute as @s[scores={Azr_Shop=8431631}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* bone[count={min:5},custom_data~{hard_bone:1b}] \
+    if items entity @s container.* gunpowder[count={min:5}] \
     if items entity @s container.* string[count={min:5}] \
     if items entity @s container.* flint[count={min:5}] \
     unless function skyblock:azr/system/shop/purchase/nether/\
