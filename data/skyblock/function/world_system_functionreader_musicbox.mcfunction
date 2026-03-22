@@ -46,7 +46,7 @@ execute as @a[tag=!gaming,scores={MultiMenu=101793}] at @s run playsound minecra
 execute as @a[tag=!gaming,scores={MultiMenu=101794}] at @s run playsound minecraft:falsegod music @s ~ ~ ~ 1.01
 execute as @a[tag=!gaming,scores={MultiMenu=101795,sea_progress=..17}] at @s run playsound minecraft:afterwordshort music @s ~ ~ ~ 1.01
 execute as @a[tag=!gaming,scores={MultiMenu=101795,sea_progress=18..}] at @s run playsound minecraft:afterword music @s ~ ~ ~ 1.01
-execute as @a[tag=!gaming,scores={MultiMenu=101796}] at @s run playsound minecraft:sagashimono_opening music @s ~ ~ ~ 1.01
+execute as @a[tag=!gaming,scores={MultiMenu=101796}] at @s run playsound minecraft:garden1.sagashimono_opening music @s ~ ~ ~ 1.01
 
 execute as @a[tag=!gaming,scores={MultiMenu=101806}] at @s run playsound minecraft:bookstore music @s ~ ~ ~ 1.01
 execute as @a[tag=!gaming,scores={MultiMenu=101805}] at @s run playsound minecraft:autumnmemories music @s ~ ~ ~ 1.01
