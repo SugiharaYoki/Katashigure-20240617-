@@ -50,15 +50,24 @@ execute if score stage_main_thread AzrTimerStack matches 112..114 positioned -79
 
 #读书区域 -79905 40 -71
 #下一站出口附近 -79901 41 -50
+execute if score stage_main_thread AzrTimerStack matches 401 run fill -79944 40 -111 -79942 40 -111 air
+execute if score stage_main_thread AzrTimerStack matches 402 run fill -79944 41 -111 -79942 41 -111 air
+execute if score stage_main_thread AzrTimerStack matches 403 run fill -79944 42 -111 -79942 42 -111 air
+execute if score stage_main_thread AzrTimerStack matches 401 run fill -79944 40 -105 -79942 40 -105 air
+execute if score stage_main_thread AzrTimerStack matches 402 run fill -79944 41 -105 -79942 41 -105 air
+execute if score stage_main_thread AzrTimerStack matches 403 run fill -79944 42 -105 -79942 42 -105 air
+execute if score stage_main_thread AzrTimerStack matches 401 run playsound minecraft:block.iron_door.open block @a -79943 42 -105 3 0.5
+execute if score stage_main_thread AzrTimerStack matches 402 run playsound minecraft:block.iron_door.open block @a -79943 42 -105 3 0.5
+execute if score stage_main_thread AzrTimerStack matches 403 run playsound minecraft:block.iron_door.open block @a -79943 42 -105 3 0.5
+execute if score stage_main_thread AzrTimerStack matches 401 run playsound minecraft:block.iron_door.open block @a -79943 42 -111 3 0.5
+execute if score stage_main_thread AzrTimerStack matches 402 run playsound minecraft:block.iron_door.open block @a -79943 42 -111 3 0.5
+execute if score stage_main_thread AzrTimerStack matches 403 run playsound minecraft:block.iron_door.open block @a -79943 42 -111 3 0.5
 
-
-#execute if score stage_main_thread AzrTimerStack matches 343 run fill -79898 41 -50 -79898 42 -50 air destroy
-#execute if score stage_main_thread AzrTimerStack matches 343 run setblock -79898 42 -49 air destroy
-#execute if score stage_main_thread AzrTimerStack matches 343 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
-#execute if score stage_main_thread AzrTimerStack matches 343 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
-#execute if score stage_main_thread AzrTimerStack matches 343 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
-#execute if score stage_main_thread AzrTimerStack matches 343 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage9
-#execute if score stage_main_thread AzrTimerStack matches 343 run title @a[tag=azrShowDialog] actionbar {text:"Stage Annihilated",color:"green"}
-#execute if score stage_main_thread AzrTimerStack matches 343 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..11}] Azr_skillPoints 12
-#execute if score stage_main_thread AzrTimerStack matches 343 run scoreboard players set stage Azr_system 29
-#execute if score stage_main_thread AzrTimerStack matches 343 run scoreboard players set stage_main_thread AzrTimerStack 0
+execute if score stage_main_thread AzrTimerStack matches 405 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 405 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 405 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 405 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage10
+execute if score stage_main_thread AzrTimerStack matches 405 run title @a[tag=azrShowDialog] actionbar {text:"Stage Annihilated",color:"green"}
+execute if score stage_main_thread AzrTimerStack matches 405 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..11}] Azr_skillPoints 12
+execute if score stage_main_thread AzrTimerStack matches 405 run scoreboard players set stage Azr_system 29
+execute if score stage_main_thread AzrTimerStack matches 405 run scoreboard players set stage_main_thread AzrTimerStack 0
