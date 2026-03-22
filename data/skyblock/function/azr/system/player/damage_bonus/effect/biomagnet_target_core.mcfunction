@@ -1,6 +1,6 @@
 scoreboard players add @s AzrSariel_Skill_BioMagnet 1
 
-execute if entity @s[tag=AzrielMob_typeLIFE] as @e[tag=AzrielMob_typeLIFE,distance=0.01..2.28,sort=random,limit=1] run tag @s add AzrSariel_BioMagnet_affected
+execute if entity @s[tag=AzrielMob_typeLIFE,tag=AzrielMob] as @e[tag=AzrielMob_typeLIFE,tag=AzrielMob,distance=0.01..2.28,sort=random,limit=1] run tag @s add AzrSariel_BioMagnet_affected
 execute if entity @s[tag=AzrielMob_typeDEATH] as @e[tag=AzrielMob_typeDEATH,distance=0.01..2.58,sort=random,limit=1] run tag @s add AzrSariel_BioMagnet_affected
 execute if entity @s[tag=AzrielMob_typeMONSTER] as @e[tag=AzrielMob_typeMONSTER,distance=0.01..2.88,sort=random,limit=1] run tag @s add AzrSariel_BioMagnet_affected
 

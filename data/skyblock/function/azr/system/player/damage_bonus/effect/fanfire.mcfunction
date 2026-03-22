@@ -3,7 +3,7 @@ scoreboard players set @s[scores={AzrSariel_Skill_FanFire=2}] AzrSariel_Skill_Fa
 scoreboard players set @s[scores={AzrSariel_Skill_FanFire=3}] AzrSariel_Skill_FanFire_cooldown 8
 
 tag @e[tag=AzrielMob_typeDEATH] add AzrielMob_fanfire_target
-execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_lit:1b}] run tag @e[tag=AzrielMob_typeLIFE] add AzrielMob_fanfire_target
+execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_lit:1b}] run tag @e[tag=AzrielMob_typeLIFE,tag=!AzrielNPC_Divineforce] add AzrielMob_fanfire_target
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_lit:1b}] run tag @e[tag=AzrielMob_typeMONSTER] add AzrielMob_fanfire_target
 
 playsound minecraft:entity.blaze.shoot player @a ~ ~ ~ 1 1.3
