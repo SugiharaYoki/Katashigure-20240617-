@@ -256,6 +256,7 @@ execute if score Azr_Story_Introduction rng1 matches 614 at @p[tag=azrPlayer] ru
 
 
 execute if score Azr_Story_Introduction rng1 matches 1024.. at @p[tag=azrPlayer] if entity @a[tag=!azrRetrieved,tag=azrPlayer,tag=AZR_SEAawakened] if score stage Azr_system matches ..0 as @p[tag=!azrRetrieved,tag=azrPlayer,tag=AZR_SEAawakened] at @s run function skyblock:azr/lifecycle/jump_to/generic_retrieve
+
 execute if score Azr_Story_Introduction rng1 matches 1024 at @p[tag=azrPlayer] run tp @a[tag=azrShowDialog] -79984.03 40.00 -14.01 facing -79983.03 40.00 -14.01
 
 execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 40.00 -14.01 as @a[tag=azrShowDialog] at @s run playsound entity.player.teleport ambient @s ~ ~ ~ 2 1
