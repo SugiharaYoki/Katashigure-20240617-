@@ -74,7 +74,7 @@ execute if score stage_main_thread AzrTimerStack matches 222 positioned -79927 3
 execute if score stage_main_thread AzrTimerStack matches 230 positioned -79927 38 25 as @e[tag=AzrielMob_spider_giant,distance=..30] at @s run damage @s 1 generic by @n[tag=AzrielMob_sword]
 execute if score stage_main_thread AzrTimerStack matches 227 positioned -79927 38 25 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"yellow",bold:1b},{bold: false,text:"\n“怎、……怎么回事？！啊啊啊！”",color:"white"}]
 execute if score stage_main_thread AzrTimerStack matches 209 positioned -79927 38 25 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"yellow",bold:1b},{bold: false,text:"\n“蜘蛛的样子不对劲！”",color:"white"}]
-execute if score stage_main_thread AzrTimerStack matches 231..232 positioned -79927 38 25 if entity @n[distance=..15,tag=AzrielMob_spider_giant] run scoreboard players set stage_main_thread AzrTimerStack 231
+execute if score stage_main_thread AzrTimerStack matches 231..232 positioned -79927 38 25 if entity @n[distance=..8,tag=AzrielMob_spider_giant] run scoreboard players set stage_main_thread AzrTimerStack 231
 execute if score stage_main_thread AzrTimerStack matches 234 positioned -79930 38 38 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua"},{text:"\n（那些魔物……攻击了神界军？它们是失控了吗？）",color:"white"}]
 
 #碎墙
