@@ -25,6 +25,7 @@ execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=92}] run stopso
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=92..}] run scoreboard players set @s AzrSariel_Amulet_StayFloat_clock 2
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=92}] run scoreboard players set @s AzrSariel_Amulet_SprintDouble_clock 50
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=49..50},predicate=skyblock:sprint] run scoreboard players set @s AzrSariel_Amulet_SprintDouble_clock 50
+execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=49..50},predicate=!skyblock:sprint] run scoreboard players set @s AzrSariel_Amulet_SprintDouble_clock 0
 
 
 
