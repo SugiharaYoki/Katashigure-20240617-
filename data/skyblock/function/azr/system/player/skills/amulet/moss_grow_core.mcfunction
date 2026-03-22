@@ -8,7 +8,7 @@ execute if entity @s[tag=!AzrAmulet_MossGrow_Activated] if entity @s[predicate=s
 execute if entity @s[tag=!AzrAmulet_MossGrow_Activated] if entity @s[predicate=skyblock:sneak] if entity @s[nbt={OnGround:1b}] run playsound minecraft:entity.creaking.deactivate player @a ~ ~ ~ 1 1.3
 execute if entity @s[tag=!AzrAmulet_MossGrow_Activated] if entity @s[predicate=skyblock:sneak] if entity @s[nbt={OnGround:1b}] run tag @s add AzrAmulet_MossGrow_Activated
 
-execute if entity @s[tag=AzrAmulet_MossGrow_Activated] run effect give @s regeneration 1 0 false
+execute if entity @s[tag=AzrAmulet_MossGrow_Activated] run effect give @s regeneration 3 0 false
 execute if entity @s[tag=AzrAmulet_MossGrow_Activated] if entity @s[predicate=!skyblock:sneak] run tag @s add AzrAmulet_MossGrow_Cancelling
 execute if entity @s[tag=AzrAmulet_MossGrow_Activated] if entity @s[predicate=skyblock:sneak] if entity @s[nbt={OnGround:0b}] run tag @s add AzrAmulet_MossGrow_Cancelling
 
