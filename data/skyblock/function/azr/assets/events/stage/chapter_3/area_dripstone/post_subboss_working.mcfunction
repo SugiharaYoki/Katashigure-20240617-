@@ -28,6 +28,7 @@ execute if score @s rng1 matches 161..999 at @s as @p[distance=0..5.5,tag=azrPla
 
 execute if score @s rng1 matches 161..999 at @s as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_303] run tag @s add azrPlayer_dialogchoice_revealed_303
 execute if score @s rng1 matches 161..999 at @s as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_303] run tag @s remove azrPlayer_dialogchoice_revealed_303
+execute if score @s rng1 matches 161..999 at @s as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_303] run say hi
 execute if score @s rng1 matches 161 run scoreboard players set @s rng1 159
 
 
