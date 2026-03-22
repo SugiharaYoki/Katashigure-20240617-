@@ -22,13 +22,12 @@ execute as @s[scores={rng1=133}] positioned -79839 13 -65 as @n[tag=AzrielBossWo
 execute as @s[scores={rng1=150}] positioned -79839 13 -65 as @n[tag=AzrielBossWorking,type=zombie,distance=..20] run tellraw @a[tag=azrShowDialog] [{text:"金属学家：",color:"yellow",bold:1b},{bold: false,text:"\n“我会留在这里。……我无家可归。”",color:"white"}]
 
 
-execute if score @s rng1 matches 161..999 at @s as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_303] run tellraw @s [{text:" - "},{text:"询问：你是谁？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30301"}}]
-execute if score @s rng1 matches 161..999 at @s as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_303] run tellraw @s [{text:" - "},{text:"询问：这里是什么地方？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30302"}}]
-execute if score @s rng1 matches 161..999 at @s as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_303] run tellraw @s [{text:" - "},{text:"询问：可是你应该已经成为怪物了？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30303"}}]
+execute if score @s rng1 matches 161..999 at @s as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_303] run tellraw @s [{text:" - "},{text:"询问：你是谁？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30301"}}]
+execute if score @s rng1 matches 161..999 at @s as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_303] run tellraw @s [{text:" - "},{text:"询问：这里是什么地方？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30302"}}]
+execute if score @s rng1 matches 161..999 at @s as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_303] run tellraw @s [{text:" - "},{text:"询问：可是你应该已经成为怪物了？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30303"}}]
 
-execute if score @s rng1 matches 161..999 at @s as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_303] run tag @s add azrPlayer_dialogchoice_revealed_303
-execute if score @s rng1 matches 161..999 at @s as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_303] run tag @s remove azrPlayer_dialogchoice_revealed_303
-execute if score @s rng1 matches 161..999 at @s as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_303] run say hi
+execute if score @s rng1 matches 161..999 at @s as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_303] run tag @s add azrPlayer_dialogchoice_revealed_303
+execute if score @s rng1 matches 161..999 at @s as @a[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_303] run tag @s remove azrPlayer_dialogchoice_revealed_303
 execute if score @s rng1 matches 161 run scoreboard players set @s rng1 159
 
 
