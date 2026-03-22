@@ -18,41 +18,23 @@ execute if score @s rng1 matches 50 run particle minecraft:enchant ~ ~0.5 ~ 1 0 
 execute if score @s rng1 matches 50 run particle minecraft:enchant ~ ~0.5 ~ 0 0 1 0.2 20
 
 execute if score @s rng1 matches 52 rotated ~00 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
-execute if score @s rng1 matches 52 rotated ~10 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
 execute if score @s rng1 matches 52 rotated ~20 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
-execute if score @s rng1 matches 52 rotated ~30 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
 execute if score @s rng1 matches 52 rotated ~40 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
-execute if score @s rng1 matches 52 rotated ~50 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
 execute if score @s rng1 matches 52 rotated ~60 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
-execute if score @s rng1 matches 52 rotated ~70 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
 execute if score @s rng1 matches 52 rotated ~80 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
-execute if score @s rng1 matches 52 rotated ~90 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
 execute if score @s rng1 matches 52 rotated ~100 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
-execute if score @s rng1 matches 52 rotated ~110 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
 execute if score @s rng1 matches 52 rotated ~120 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
-execute if score @s rng1 matches 52 rotated ~130 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
 execute if score @s rng1 matches 52 rotated ~140 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
-execute if score @s rng1 matches 52 rotated ~150 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
 execute if score @s rng1 matches 52 rotated ~160 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
-execute if score @s rng1 matches 52 rotated ~170 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
 execute if score @s rng1 matches 52 rotated ~180 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
-execute if score @s rng1 matches 52 rotated ~190 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
 execute if score @s rng1 matches 52 rotated ~200 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
-execute if score @s rng1 matches 52 rotated ~210 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
 execute if score @s rng1 matches 52 rotated ~220 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
-execute if score @s rng1 matches 52 rotated ~230 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
 execute if score @s rng1 matches 52 rotated ~240 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
-execute if score @s rng1 matches 52 rotated ~250 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
 execute if score @s rng1 matches 52 rotated ~260 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
-execute if score @s rng1 matches 52 rotated ~270 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
 execute if score @s rng1 matches 52 rotated ~280 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
-execute if score @s rng1 matches 52 rotated ~290 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
 execute if score @s rng1 matches 52 rotated ~300 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
-execute if score @s rng1 matches 52 rotated ~310 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
 execute if score @s rng1 matches 52 rotated ~320 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
-execute if score @s rng1 matches 52 rotated ~330 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
 execute if score @s rng1 matches 52 rotated ~340 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
-execute if score @s rng1 matches 52 rotated ~350 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
 
 execute if score @s rng1 matches 52 run effect give @e[tag=AzrielNPC_Divineforce,distance=..3] instant_health 1 1 false
 execute if score @s rng1 matches 52 run effect give @a[tag=azrPlayer,distance=..3] instant_health 1 1 false
