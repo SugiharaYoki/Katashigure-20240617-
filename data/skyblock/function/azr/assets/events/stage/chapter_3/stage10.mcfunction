@@ -24,7 +24,7 @@ execute if score stage_main_thread AzrTimerStack matches 1 run playsound minecra
 execute if score stage_main_thread AzrTimerStack matches 2 run playsound minecraft:block.iron_door.open block @a -79943 42 -111 3 0.5
 execute if score stage_main_thread AzrTimerStack matches 3 run playsound minecraft:block.iron_door.open block @a -79943 42 -111 3 0.5
 
-execute if score stage_main_thread AzrTimerStack matches 3 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_stage10_1"]}
+execute if score stage_main_thread AzrTimerStack matches 3 positioned -79924 40 -110 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_stage10_1"]}
 
 execute if score stage_main_thread AzrTimerStack matches 3.. positioned -79924 40 -110 as @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] at @s store result score @s rng1 run random value 1..6
 
