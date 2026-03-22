@@ -28,6 +28,8 @@ scoreboard objectives add AZR_arrow_energy dummy
 scoreboard objectives add AzrEntityTimer dummy
 scoreboard objectives add AzrielMobLevel dummy
 
+
+
 #skills
 #skill 9 残城箭影 lv5 
 scoreboard objectives add AZR_arrowUpg_pts dummy
