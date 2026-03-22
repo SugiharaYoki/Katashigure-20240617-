@@ -1,5 +1,7 @@
 scoreboard players add @s rng1 1
 
+execute if score @s rng1 matches -10 unless entity @n[tag=AzrielNPC_Divineforce,distance=1..7] run tp @s @n[tag=AzrielNPC_Divineforce,distance=7..20]
+
 execute if score @s[scores={AzrielMobLevel=1..3}] rng1 matches 2 store result score @s rng2 run random value 5..20
 execute if score @s[scores={AzrielMobLevel=4..5}] rng1 matches 2 store result score @s rng2 run random value 5..25
 
