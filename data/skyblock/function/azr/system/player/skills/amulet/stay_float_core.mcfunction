@@ -10,6 +10,7 @@ execute if entity @s[scores={AzrSariel_Amulet_StayFloat_cooldown=16..20},predica
 
 
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90.. if entity @s[predicate=!skyblock:jump] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 3
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90.. if entity @s[predicate=skyblock:jump] as @s at @s anchored eyes run particle end_rod ~ ~ ~ 0 0 0 0 1
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90.. if entity @s[predicate=skyblock:jump] as @s at @s anchored eyes unless block ^ ^ ^0.3 air run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 3
 
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 as @s at @s store result storage azr_amulet:stay_float y double 0.000001 run data get entity @s Pos[1] 1000000
