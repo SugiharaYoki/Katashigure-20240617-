@@ -677,6 +677,10 @@ setblock -79923 41 -103 minecraft:spruce_trapdoor[open=false,facing=east]
 fill -79944 40 -111 -79942 42 -111 barrier
 fill -79944 40 -105 -79942 42 -105 barrier
 
+  #通往第九关的连接道
+  setblock -79933 39 -90 air
+  setblock -79933 39 -90 lever[facing=east]
+  fill -79929 39 -89 -79933 40 -89 netherite_block replace air
 
 #stage appetence
 setblock -79914 55 -111 minecraft:birch_button[facing=south,face=floor]
