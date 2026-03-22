@@ -44,7 +44,7 @@ execute if score stage_main_thread AzrTimerStack matches 123 as @a[tag=azrPlayer
 execute if score stage_main_thread AzrTimerStack matches 125 positioned -79930 38 38 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"yellow",bold:1b},{bold: false,text:"\n“已经把蜘蛛带来了吗？那再怎么也够这人类的亡魂喝一大壶了。”",color:"white"}]
 execute if score stage_main_thread AzrTimerStack matches 145 positioned -79930 38 38 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"yellow",bold:1b},{bold: false,text:"\n“这家伙根本不说话，她就一个劲揍我们啊！我任职以来就没见过这么猛的挑战者！”",color:"white"}]
 
-execute if score stage_main_thread AzrTimerStack matches 146..147 positioned -79927 38 25 if entity @n[distance=..15,tag=AzrielMob_spider_giant] run scoreboard players set stage_main_thread AzrTimerStack 146
+execute if score stage_main_thread AzrTimerStack matches 146..147 positioned -79927 38 25 if entity @n[distance=..8,tag=AzrielMob_spider_giant] run scoreboard players set stage_main_thread AzrTimerStack 146
 
 execute if score stage_main_thread AzrTimerStack matches 163 positioned -79930 38 38 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua"},{text:"\n（有哪里不对劲，这不是任何称得上“神圣”的气息）",color:"white"}]
 
