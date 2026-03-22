@@ -48,6 +48,16 @@ execute if score stage_main_thread AzrTimerStack matches 87..88 positioned -7992
 execute if score stage_main_thread AzrTimerStack matches 98..100 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 112..114 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_melee","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
+execute if score stage_main_thread AzrTimerStack matches 130 positioned -79915 40 -111 if entity @n[tag=AzrielNPC_stage9_entry_conversation5] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_empty_human","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 135 positioned -79915 40 -111 if entity @n[tag=AzrielNPC_stage9_entry_conversation5] run function skyblock:azr/assets/mobs/pillager_friendly
+execute if score stage_main_thread AzrTimerStack matches 135 positioned -79915 40 -111 if entity @n[tag=AzrielNPC_stage9_entry_conversation5] run function skyblock:azr/assets/mobs/sword_friendly
+execute if score stage_main_thread AzrTimerStack matches 135 positioned -79915 40 -111 as @n[tag=AzrielNPC_stage9_entry_conversation5] as @e[distance=..15,tag=AzrielNPC_Divineforce] run tp @s ~ ~ ~
+execute if score stage_main_thread AzrTimerStack matches 138 positioned -79915 40 -111 if entity @n[tag=AzrielNPC_stage9_entry_conversation5] run tellraw @a[tag=azrShowDialog] [{text:"第5巡逻小队队长 伊安：",color:"green",bold:1b},{bold: false,text:"\n“大伙们，上！！”",color:"white"}]
+
+
+
+
+
 #读书区域 -79905 40 -71
 #下一站出口附近 -79901 41 -50
 execute if score stage_main_thread AzrTimerStack matches 401 run fill -79944 40 -111 -79942 40 -111 air
