@@ -116,7 +116,7 @@ execute if score stage_main_thread AzrTimerStack matches 660.. store result boss
 execute if score stage_main_thread AzrTimerStack matches 660 run bossbar add azr:boss_hp_bar "权之残影 - 安德拉伦恩"
 execute if score stage_main_thread AzrTimerStack matches 660 run bossbar set azr:boss_hp_bar color red
 execute if score stage_main_thread AzrTimerStack matches 660 run bossbar set azr:boss_hp_bar max 300
-execute if score stage_main_thread AzrTimerStack matches 660 run bossbar set azr:boss_hp_bar players @a[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 660 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 
 execute if score stage_main_thread AzrTimerStack matches 660 run particle minecraft:explosion -79931 39.4 88 0.3 0.3 0.3 1 3
 execute if score stage_main_thread AzrTimerStack matches 660 run playsound minecraft:entity.lightning_bolt.impact master @a[tag=azrShowDialog] -79931 38.8 88 10 1.2

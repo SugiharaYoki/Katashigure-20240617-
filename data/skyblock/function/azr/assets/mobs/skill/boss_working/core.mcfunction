@@ -15,7 +15,7 @@ execute if score @s AzrEntityTimer matches 1 run scoreboard players set @s rng13
 execute if score @s AzrEntityTimer matches 1 run bossbar add azr:boss_hp_bar_working "痴醉于劣铜的矿役 - 金属学家"
 execute if score @s AzrEntityTimer matches 1 run bossbar set azr:boss_hp_bar_working color red
 execute if score @s AzrEntityTimer matches 1 run bossbar set azr:boss_hp_bar_working max 320
-execute if score @s AzrEntityTimer matches 1 run bossbar set azr:boss_hp_bar_working players @a[tag=azrPlayer]
+execute if score @s AzrEntityTimer matches 1 run bossbar set azr:boss_hp_bar_working players @a[tag=azrShowDialog]
 
 execute store result score @s Health run data get entity @s Health
 execute store result bossbar azr:boss_hp_bar_working value run scoreboard players get @s Health

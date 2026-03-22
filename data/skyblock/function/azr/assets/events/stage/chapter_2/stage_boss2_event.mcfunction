@@ -49,7 +49,7 @@ execute if score stage_main_thread AzrTimerStack matches 91.. store result bossb
 execute if score stage_main_thread AzrTimerStack matches 91 run bossbar add azr:boss_hp_bar "权之残影 - 安德拉伦恩"
 execute if score stage_main_thread AzrTimerStack matches 91 run bossbar set azr:boss_hp_bar color red
 execute if score stage_main_thread AzrTimerStack matches 91 run bossbar set azr:boss_hp_bar max 300
-execute if score stage_main_thread AzrTimerStack matches 91 run bossbar set azr:boss_hp_bar players @a[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 91 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 execute if score stage_main_thread AzrTimerStack matches 91 as @n[tag=AzrielBossA] run tag @s add actionable
 execute if score stage_main_thread AzrTimerStack matches 91 as @n[tag=AzrielBossA] run data modify entity @s Invulnerable set value 0b
 execute if score stage_main_thread AzrTimerStack matches 91 as @n[tag=AzrielBossA] run data modify entity @s NoAI set value 0b

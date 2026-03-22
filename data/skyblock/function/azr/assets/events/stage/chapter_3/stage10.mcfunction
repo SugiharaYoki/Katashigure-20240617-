@@ -2,7 +2,7 @@
 execute if score stage_main_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{text:"[DEBUG MODE MESSAGE] You are playing \"Stage 10\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{text:" Maximum Seconds = 90"}]
 execute if score stage_main_thread AzrTimerStack matches 10 run bossbar add azr:progress_bar_normal "暴乱 - 敌方攻击欲望"
 execute if score stage_main_thread AzrTimerStack matches 10 run bossbar set azr:progress_bar_normal color yellow
-execute if score stage_main_thread AzrTimerStack matches 10 run bossbar set azr:progress_bar_normal players @a[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 10 run bossbar set azr:progress_bar_normal players @a[tag=azrShowDialog]
 execute if score stage_main_thread AzrTimerStack matches 10 run scoreboard players set 200 constant 200
 execute if score stage_main_thread AzrTimerStack matches 10 run scoreboard players set stage_main_thread AzrielMobLevel 0
 execute if score stage_main_thread AzrTimerStack matches 10..340 store result bossbar azr:progress_bar_normal value run scoreboard players operation 200 constant -= stage_main_thread AzrielMobLevel
