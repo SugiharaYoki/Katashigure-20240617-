@@ -1,6 +1,5 @@
 execute store result storage azr:shop ingredient.iron_ingot int 1.0 if items entity @s container.* iron_ingot
 execute store result storage azr:shop ingredient.flint int 1.0 if items entity @s container.* flint
-execute store result storage azr:shop ingredient.bone int 1.0 if items entity @s container.* bone
 execute store result storage azr:shop ingredient.gunpowder int 1.0 if items entity @s container.* gunpowder
 execute store result storage azr:shop ingredient.glistering_melon_slice int 1.0 if items entity @s container.* glistering_melon_slice
 execute store result storage azr:shop ingredient.ink_sac int 1.0 if items entity @s container.* ink_sac
