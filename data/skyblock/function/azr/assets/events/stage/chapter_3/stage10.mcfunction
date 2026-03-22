@@ -52,13 +52,13 @@ execute if score stage_main_thread AzrTimerStack matches 112..114 positioned -79
 #下一站出口附近 -79901 41 -50
 
 
-execute if score stage_main_thread AzrTimerStack matches 343 run fill -79898 41 -50 -79898 42 -50 air destroy
-execute if score stage_main_thread AzrTimerStack matches 343 run setblock -79898 42 -49 air destroy
-execute if score stage_main_thread AzrTimerStack matches 343 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 343 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 343 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 343 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage9
-execute if score stage_main_thread AzrTimerStack matches 343 run title @a[tag=azrShowDialog] actionbar {text:"Stage Annihilated",color:"green"}
-execute if score stage_main_thread AzrTimerStack matches 343 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..11}] Azr_skillPoints 12
-execute if score stage_main_thread AzrTimerStack matches 343 run scoreboard players set stage Azr_system 29
-execute if score stage_main_thread AzrTimerStack matches 343 run scoreboard players set stage_main_thread AzrTimerStack 0
+#execute if score stage_main_thread AzrTimerStack matches 343 run fill -79898 41 -50 -79898 42 -50 air destroy
+#execute if score stage_main_thread AzrTimerStack matches 343 run setblock -79898 42 -49 air destroy
+#execute if score stage_main_thread AzrTimerStack matches 343 run playsound ambient.crimson_forest.loop ambient @a[tag=azrShowDialog] -78000 100 0 1000
+#execute if score stage_main_thread AzrTimerStack matches 343 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
+#execute if score stage_main_thread AzrTimerStack matches 343 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
+#execute if score stage_main_thread AzrTimerStack matches 343 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage9
+#execute if score stage_main_thread AzrTimerStack matches 343 run title @a[tag=azrShowDialog] actionbar {text:"Stage Annihilated",color:"green"}
+#execute if score stage_main_thread AzrTimerStack matches 343 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..11}] Azr_skillPoints 12
+#execute if score stage_main_thread AzrTimerStack matches 343 run scoreboard players set stage Azr_system 29
+#execute if score stage_main_thread AzrTimerStack matches 343 run scoreboard players set stage_main_thread AzrTimerStack 0
