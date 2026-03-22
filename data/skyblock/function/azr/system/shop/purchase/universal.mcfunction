@@ -6,13 +6,13 @@ execute if score @s Azr_Shop matches 8431511 \
     run function skyblock:azr/system/shop/purchase/universal/arrow_weakness
 
 execute if score @s Azr_Shop matches 8431512 \
-    if items entity @s container.* string[count={min:1}] \
+    if items entity @s container.* ink_sac[count={min:1}] \
     if items entity @s container.* slime_ball[count={min:1}] \
     run function skyblock:azr/system/shop/purchase/universal/arrow_slowness
 
 execute if score @s Azr_Shop matches 8431513 \
     if items entity @s container.* stick[count={min:1}] \
-    if items entity @s container.* string[count={min:4}] \
+    if items entity @s container.* ink_sac[count={min:4}] \
     run function skyblock:azr/system/shop/purchase/universal/arrow_damage
 
 execute if score @s Azr_Shop matches 8431516 \

@@ -9,7 +9,7 @@ tag @s[tag=azrPlayer,tag=azrPlayer_dialogchoice_unlocked_30108] add azrPlayer_re
 
 #give @a[tag=azrPlayer] flint 5
 #give @a[tag=azrPlayer] iron_ingot 1
-#give @a[tag=azrPlayer] string 2
+#give @a[tag=azrPlayer] ink_sac 2
 #give @a[tag=azrPlayer] ink_sac 4
 
 

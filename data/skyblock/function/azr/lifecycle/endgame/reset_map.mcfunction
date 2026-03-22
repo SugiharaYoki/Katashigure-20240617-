@@ -191,7 +191,7 @@ setblock -79927 26 8 lever[facing=east]
 
 #钓师之湖
 setblock -79828 24 -16 chest[facing=south]{Inventory:[]}
-item replace block -79828 24 -16 container.12 with minecraft:string 1
+item replace block -79828 24 -16 container.12 with minecraft:ink_sac 1
 item replace block -79828 24 -16 container.14 with minecraft:resin_clump 1
 
 #Stage Guise
@@ -561,7 +561,7 @@ item replace block -79870 31 -72 container.12 with gunpowder 1
 item replace block -79870 31 -72 container.14 with gunpowder 1
 setblock -79856 29 -58 chest[facing=west]{Inventory:[]}
 item replace block -79856 29 -58 container.12 with gunpowder 1
-item replace block -79856 29 -58 container.14 with string 1
+item replace block -79856 29 -58 container.14 with ink_sac 1
 
   #落水陷阱
 fill -79861 28 -67 -79865 28 -68 minecraft:smooth_basalt replace air
@@ -632,7 +632,7 @@ setblock -79929 47 -110 chest[facing=south]{Inventory:[]}
 item replace block -79929 47 -110 container.13 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
 setblock -79919 40 -112 chest[facing=north]{Inventory:[]}
 item replace block -79919 40 -112 container.12 with emerald 3
-item replace block -79919 40 -112 container.14 with string
+item replace block -79919 40 -112 container.14 with ink_sac
 setblock -79938 48 -144 chest[facing=east]{Inventory:[]}
 item replace block -79938 48 -144 container.12 with emerald 5
 item replace block -79938 48 -144 container.14 with emerald 7

@@ -88,13 +88,6 @@ execute as @s[scores={Azr_Shop=8431630}] \
     iron_axe_chain_long_t2 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # （黑钢）+2 碳钢  8431630  
 
-execute as @s[scores={Azr_Shop=8431621}] \
-    unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* gunpowder[count={min:10}] \
-    if items entity @s container.* string[count={min:5}] \
-    unless function skyblock:azr/system/shop/purchase/nether/\
-    bow_string run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 武器：弓（弦束） <- 10 硬骨 5 丝线  8431621
 
 execute as @s[scores={Azr_Shop=8431622}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
@@ -151,7 +144,7 @@ execute as @s[scores={Azr_Shop=8431628}] \
 execute as @s[scores={Azr_Shop=8431631}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* gunpowder[count={min:5}] \
-    if items entity @s container.* string[count={min:5}] \
+    if items entity @s container.* ink_sac[count={min:5}] \
     if items entity @s container.* flint[count={min:5}] \
     unless function skyblock:azr/system/shop/purchase/nether/\
     crossbow_v71 run scoreboard players set tempPlayerShopSuccess Azr_system 1

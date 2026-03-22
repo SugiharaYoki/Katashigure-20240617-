@@ -216,7 +216,7 @@ execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC10,di
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC10,distance=..100,type=piglin_brute,scores={rng1=16}] at @s if entity @p[tag=azrPlayer,distance=..4.4] run tellraw @a[tag=azrShowDialog] [{text:"守卫：",color:"yellow",bold:1b},{bold: false,text:"\n“看你这么紧张，给你一些物资。你会从那群神界军身上获得更多的。”",color:"white"}]
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC10,distance=..100,type=piglin_brute,scores={rng1=16}] at @s if entity @p[tag=azrPlayer,distance=..4.4] run give @a[tag=azrPlayer] iron_ingot
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC10,distance=..100,type=piglin_brute,scores={rng1=16}] at @s if entity @p[tag=azrPlayer,distance=..4.4] run give @a[tag=azrPlayer] flint
-execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC10,distance=..100,type=piglin_brute,scores={rng1=16}] at @s if entity @p[tag=azrPlayer,distance=..4.4] run give @a[tag=azrPlayer] string
+execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC10,distance=..100,type=piglin_brute,scores={rng1=16}] at @s if entity @p[tag=azrPlayer,distance=..4.4] run give @a[tag=azrPlayer] ink_sac
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC10,distance=..100,type=piglin_brute,scores={rng1=16}] at @s if entity @p[tag=azrPlayer,distance=..4.4] run give @a[tag=azrPlayer] gunpowder
 execute positioned -79385 23 -394 as @n[tag=AzrielMob_StoryIntroduction_NPC10,distance=..100,type=piglin_brute,scores={rng1=16}] at @s if entity @p[tag=azrPlayer,distance=..4.4] run scoreboard players set $azrInitialIngredientGiven Azr_system 1
 

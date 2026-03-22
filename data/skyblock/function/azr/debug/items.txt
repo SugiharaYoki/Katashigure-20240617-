@@ -62,7 +62,6 @@
 弓
     bow_normal 弓·传统 100001
     bow_blessed 神祝弓 100002
-    bow_string 弓（弦束） 100003
 弩
     crossbow_normal 弩·传统 100001
     crossbow_piercing 弩·迅穿 100002

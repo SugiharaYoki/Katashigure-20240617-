@@ -10,12 +10,12 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:string",
+          "name": "minecraft:ink_sac",
           "weight": 13
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:string",
+          "name": "minecraft:gunpowder",
           "weight": 2
         },
         {

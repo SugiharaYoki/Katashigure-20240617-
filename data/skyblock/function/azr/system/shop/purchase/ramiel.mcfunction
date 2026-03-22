@@ -117,7 +117,7 @@ execute as @s[scores={Azr_Shop=8431536},tag=Azr_SExUp01] \
 execute as @s[scores={Azr_Shop=8431540}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* iron_ingot[count={min:1},custom_data~{coal_iron:1b}] \
-    if items entity @s container.* string[count={min:3}] \
+    if items entity @s container.* ink_sac[count={min:3}] \
     if items entity @s container.* black_dye[count={min:2},custom_data~{insect_remaining:1b}] \
     unless function skyblock:azr/system/shop/purchase/ramiel/\
     spider_leggings run scoreboard players set tempPlayerShopSuccess Azr_system 1
@@ -126,7 +126,7 @@ execute as @s[scores={Azr_Shop=8431540}] \
 execute as @s[scores={Azr_Shop=8431535}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* iron_ingot[count={min:1},custom_data~{coal_iron:1b}] \
-    if items entity @s container.* string[count={min:3}] \
+    if items entity @s container.* ink_sac[count={min:3}] \
     if items entity @s container.* spider_eye[count={min:2}] \
     unless function skyblock:azr/system/shop/purchase/ramiel/\
     spider_boots run scoreboard players set tempPlayerShopSuccess Azr_system 1
@@ -135,7 +135,7 @@ execute as @s[scores={Azr_Shop=8431535}] \
 execute as @s[scores={Azr_Shop=8431544}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* zombie_head[count={min:1},custom_data~{zombie_head:1b}] \
-    if items entity @s container.* string[count={min:3}] \
+    if items entity @s container.* ink_sac[count={min:3}] \
     unless function skyblock:azr/system/shop/purchase/ramiel/\
     spider_chestplate run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 8  @s  蜘蛛狼铠甲  1 腐烂的尸首 3 丝线
@@ -159,14 +159,14 @@ execute as @s[scores={Azr_Shop=8431546}] \
 
 execute as @s[scores={Azr_Shop=8431542}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* string[count={min:6}] \
+    if items entity @s container.* ink_sac[count={min:6}] \
     unless function skyblock:azr/system/shop/purchase/ramiel/\
     splash_slowness_t1 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 11  @s  投掷瓶·静止 LV1  6 丝线
 
 execute as @s[scores={Azr_Shop=8431543}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* string[count={min:6}] \
+    if items entity @s container.* ink_sac[count={min:6}] \
     if items entity @s container.* slime_ball[count={min:2}] \
     unless function skyblock:azr/system/shop/purchase/ramiel/\
     splash_slowness_t2 run scoreboard players set tempPlayerShopSuccess Azr_system 1
