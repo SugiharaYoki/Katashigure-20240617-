@@ -24,10 +24,27 @@ execute if score stage_main_thread AzrTimerStack matches 1 run playsound minecra
 execute if score stage_main_thread AzrTimerStack matches 2 run playsound minecraft:block.iron_door.open block @a -79943 42 -111 3 0.5
 execute if score stage_main_thread AzrTimerStack matches 3 run playsound minecraft:block.iron_door.open block @a -79943 42 -111 3 0.5
 
+execute if score stage_main_thread AzrTimerStack matches 3 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_stage10_1"]}
 
+execute if score stage_main_thread AzrTimerStack matches 3.. positioned -79924 40 -110 as @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] at @s store result score @s rng1 run random value 1..6
 
+execute if score stage_main_thread AzrTimerStack matches 3.. positioned -79924 40 -110 as @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] at @s if score @s rng1 matches 1 run tp @s -79924 40 -110
+execute if score stage_main_thread AzrTimerStack matches 3.. positioned -79924 40 -110 as @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] at @s if score @s rng1 matches 2 run tp @s -79925 40 -106
+execute if score stage_main_thread AzrTimerStack matches 3.. positioned -79924 40 -110 as @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] at @s if score @s rng1 matches 3 run tp @s -79919 40 -108
+execute if score stage_main_thread AzrTimerStack matches 3.. positioned -79924 40 -110 as @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] at @s if score @s rng1 matches 4 run tp @s -79920 40 -104
+execute if score stage_main_thread AzrTimerStack matches 3.. positioned -79924 40 -110 as @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] at @s if score @s rng1 matches 5 run tp @s -79917 40 -110
+execute if score stage_main_thread AzrTimerStack matches 3.. positioned -79924 40 -110 as @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] at @s if score @s rng1 matches 6 run tp @s -79929 40 -110
 
-execute if score stage_main_thread AzrTimerStack matches 204 positioned -79907 40 -71 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_melee","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 30..100 run scoreboard players add stage_main_thread AzrielMobLevel 1
+
+execute if score stage_main_thread AzrTimerStack matches 30..34 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 40..42 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_melee","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 58..59 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 68..70 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 77 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_cleric","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 87..88 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_smoke_mother","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 98..100 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 112..114 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_melee","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 #读书区域 -79905 40 -71
 #下一站出口附近 -79901 41 -50
