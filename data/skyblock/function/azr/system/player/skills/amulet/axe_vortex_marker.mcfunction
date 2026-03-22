@@ -2,6 +2,7 @@ scoreboard players add @s rng1 1
 
 
 execute if score @s rng1 matches 1 at @p[tag=azrPlayer] rotated as @p[tag=azrPlayer] run tp @s ^ ^ ^0.1 facing ^ ^ ^2
+execute if score @s[tag=team_5_captain_ian] rng1 matches 1 at @n[tag=AzrielNPC_stage9_entry_conversation5] rotated as @n[tag=AzrielNPC_stage9_entry_conversation5] run tp @s ^ ^ ^0.1 facing ^ ^ ^2
 
 execute if score @s rng1 matches 1 if entity @s[tag=!toward_left,tag=!toward_right] store result score @s rng2 run random value 1..2
 execute if score @s rng1 matches 1 if score @s rng2 matches 1 run tag @s add toward_left
