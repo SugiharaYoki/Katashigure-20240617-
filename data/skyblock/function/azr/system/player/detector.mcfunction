@@ -15,11 +15,11 @@ execute if score isStarted Azr_system matches 1 if entity @s[x=-79951,y=38,z=-15
 # 旁观者显示
 tag @s[x=-79931,y=100,z=0,distance=..10000,tag=!azrShowDialog] add azrShowDialog
 tag @s[x=-79931,y=100,z=0,distance=10000..,tag=azrShowDialog] remove azrShowDialog
-bossbar set azr:progress_bar_normal players @s[tag=azrShowDialog]
-bossbar set azr:progress_bar_special players @s[tag=azrShowDialog]
-bossbar set azr:progress_bar_special_0 players @s[tag=azrShowDialog]
-bossbar set azr:boss_hp_bar players @s[tag=azrShowDialog]
-bossbar set azr:boss_hp_bar_0 players @s[tag=azrShowDialog]
+#bossbar set azr:progress_bar_normal players @s[tag=azrShowDialog]
+#bossbar set azr:progress_bar_special players @s[tag=azrShowDialog]
+#bossbar set azr:progress_bar_special_0 players @s[tag=azrShowDialog]
+#bossbar set azr:boss_hp_bar players @s[tag=azrShowDialog]
+#bossbar set azr:boss_hp_bar_0 players @s[tag=azrShowDialog]
 
 
 
