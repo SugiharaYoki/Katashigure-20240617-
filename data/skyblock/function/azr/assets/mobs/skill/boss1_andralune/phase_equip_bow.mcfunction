@@ -23,7 +23,7 @@ execute if score @s rng1 matches 60 at @s run playsound minecraft:entity.lightni
 execute if score @s rng1 matches 31 at @s run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
 execute if score @s rng1 matches 60 at @s run item replace entity @s weapon.mainhand with bow
 
-execute if score @s rng1 matches 60 run effect give @s resistance 30 0 true
+execute if score @s rng1 matches 60 run effect give @s resistance 30 1 true
 
 
 execute if score @s rng8 matches 60.. run tag @s add Phase2
