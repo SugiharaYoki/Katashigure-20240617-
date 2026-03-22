@@ -21,6 +21,11 @@ execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] on target if ent
 execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] on target if entity @s[type=player] run tag @n[tag=AzrielNPC_Divineforce_hasattacktarget] remove AzrielNPC_Divineforce_hasattacktarget_notify
 execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget,type=pillager] on target if entity @s[type=player] run item replace entity @n[tag=AzrielNPC_Divineforce_hasattacktarget,type=pillager] weapon.mainhand with minecraft:air
 execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] on target if entity @s[type=player] run tag @n[tag=AzrielNPC_Divineforce_hasattacktarget] remove AzrielNPC_Divineforce_hasattacktarget
+
+execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] on target if entity @s[tag=AzrielNPC_Divineforce] run attribute @n[tag=AzrielNPC_Divineforce_hasattacktarget] follow_range base set 0
+execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] on target if entity @s[tag=AzrielNPC_Divineforce] run tag @n[tag=AzrielNPC_Divineforce_hasattacktarget] remove AzrielNPC_Divineforce_hasattacktarget_notify
+execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget,type=pillager] on target if entity @s[tag=AzrielNPC_Divineforce] run item replace entity @n[tag=AzrielNPC_Divineforce_hasattacktarget,type=pillager] weapon.mainhand with minecraft:air
+execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] on target if entity @s[tag=AzrielNPC_Divineforce] run tag @n[tag=AzrielNPC_Divineforce_hasattacktarget] remove AzrielNPC_Divineforce_hasattacktarget
 #execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] if entity @a[tag=azrPlayer,distance=0..2.3] run attribute @s follow_range base set 0
 #execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] if entity @a[tag=azrPlayer,distance=0..2.3] run damage @s 0 arrow by @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7]
 
