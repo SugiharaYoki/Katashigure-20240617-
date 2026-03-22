@@ -37,6 +37,7 @@ execute if score stage_main_thread AzrTimerStack matches 3.. positioned -79924 4
 execute if score stage_main_thread AzrTimerStack matches 3.. positioned -79924 40 -110 as @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] at @s if score @s rng1 matches 6 run tp @s -79929 40 -110
 
 execute if score stage_main_thread AzrTimerStack matches 30..100 run scoreboard players add stage_main_thread AzrielMobLevel 1
+execute if score stage_main_thread AzrTimerStack matches 110..130 run scoreboard players remove stage_main_thread AzrielMobLevel 1
 
 execute if score stage_main_thread AzrTimerStack matches 30..34 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 40..42 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_melee","AzrielMob_summon_delay","AzrielMob_level_1"]}
