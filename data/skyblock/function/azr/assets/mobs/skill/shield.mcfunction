@@ -1,5 +1,5 @@
 scoreboard players add @s rng1 1
-scoreboard players remove @s rng3 1
+scoreboard players remove @s[scores={rng3=1..}] rng3 1
 
 execute if score @s[scores={AzrielMobLevel=1..}] rng1 matches 2 store result score @s rng2 run random value 5..20
 execute if score @s[scores={AzrielMobLevel=2..}] rng1 matches 2 store result score @s rng2 run random value 5..25
