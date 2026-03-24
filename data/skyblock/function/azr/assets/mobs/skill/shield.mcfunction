@@ -25,8 +25,8 @@ execute if score @s rng1 matches 88 rotated ~ 0 as @s at @s run kill @e[type=mar
 
 
 execute if score @s[tag=!AzrielMob_shield_armorbroken] rng1 matches 2.. store result score @s rng2 run data get entity @s HurtTime
-execute if score @s[tag=!AzrielMob_shield_armorbroken] rng2 matches 3.. run scoreboard players add @s rng3 20
-execute if score @s[tag=!AzrielMob_shield_armorbroken] rng2 matches 3.. run scoreboard players set @s rng2 0
+execute if score @s[tag=!AzrielMob_shield_armorbroken] rng2 matches 20.. run scoreboard players add @s rng3 20
+execute if score @s[tag=!AzrielMob_shield_armorbroken] rng2 matches 20.. run scoreboard players set @s rng2 0
 execute if score @s[tag=!AzrielMob_shield_armorbroken] rng3 matches 70.. as @s at @s run particle crit ~ ~1 ~ 0.3 0.6 0.3 0.06 20
 execute if score @s[tag=!AzrielMob_shield_armorbroken] rng3 matches 70.. as @s at @s run playsound minecraft:item.shield.break master @a ~ ~ ~ 1 0.7
 execute if score @s[tag=!AzrielMob_shield_armorbroken] rng3 matches 70.. as @s at @s run item replace entity @s armor.head with air
