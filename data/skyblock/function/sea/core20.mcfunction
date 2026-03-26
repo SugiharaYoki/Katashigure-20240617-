@@ -12,6 +12,8 @@ execute if score seact rng1 matches 5 run scoreboard players set seact rng1 0
 
 
 scoreboard players add seact rng2 1
+execute as @e[x=90000,y=100,z=0,distance=..6000,type=!player] at @s run function skyblock:sea/controller/entity_controller
+execute as @a[tag=SEAPT,x=90000,y=100,z=0,distance=..6000] at @s run function skyblock:sea/controller/player_controller
 execute if score seact rng2 matches 20 run function skyblock:sea/core1
 execute if score seact rng2 matches 20 run scoreboard players set seact rng2 0
 
