@@ -97,7 +97,7 @@ execute positioned 90145 140 120 if entity @a[distance=..6.2,limit=1] run item r
 
 execute positioned 90140 104 023 if entity @a[distance=..6.2,limit=1] run item replace block ~ ~ ~ container.13 with ominous_trial_key[custom_name={text:"厄珀娅之钥",color:"dark_red",italic:0b},custom_data={"sea_key04":true}]
 
-item replace block 90152 129 30 container.13 with snout_armor_trim_smithing_template[custom_name={text:"透光吸附 B",italic:1b,color:"light_purple",italic:0b},lore=[{text:"光谱 I 光棱箭的转换速度加快",color:"white",italic:0b}],custom_data={sea_t_spectral_load2:true}]
+item replace block 90152 129 30 container.13 with snout_armor_trim_smithing_template[custom_name={text:"透光吸附 B",color:"light_purple",italic:0b},lore=[{text:"光谱 I 光棱箭的转换速度加快",color:"white",italic:0b}],custom_data={sea_t_spectral_load2:true}]
 
 
 
