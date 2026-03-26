@@ -13,6 +13,3 @@ execute if entity @s[tag=azrPlayer_arrowsavior_savearrow] run clear @s arrow 1
 execute if entity @s[tag=azrPlayer_arrowsavior_savearrow] run scoreboard players add @s AzrSariel_Amulet_ArrowSavior_count 1
 execute if entity @s[tag=azrPlayer_arrowsavior_savearrow] run tag @s remove azrPlayer_arrowsavior_savearrow
 
-
-
-
