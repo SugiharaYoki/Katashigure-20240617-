@@ -38,9 +38,9 @@ team remove AzrBossA
 #清场
 function skyblock:azr/lifecycle/endgame/reset_map
 stopsound @a[tag=azrShowDialog]
-clear @a[tag=azrPlayer]
 #DEBUG: 当该函数被管理员/服务器后台强制执行时，杀死所有玩家。正常流程中触发该函数的同时不会存在玩家。
 execute as @a[tag=azrPlayer] run function skyblock:azr/lifecycle/endgame/quit_game
+clear @a[tag=azrPlayer]
 #删除临时记分板
 scoreboard objectives remove AzrTimerReviving
 scoreboard objectives remove AzrTimerAmulet_hrm
