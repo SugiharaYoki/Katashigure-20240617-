@@ -1,0 +1,1 @@
+give @s dune_armor_trim_smithing_template[custom_name={text:"存箭石板",italic:0b,color:"#306fc2",bold:1b},lore=[{text:"背包常效装备",italic:0b,color:"yellow",bold:1b},{text:"当持有超过32支普通箭矢后",italic:0b,color:"#9eb9de"},{text:"额外箭矢将不再占据背包空间",italic:0b,color:"#9eb9de"},{text:""},{text:"这下就可以拥有相当充足的弹药去和它们较量了。",italic:1b,color:"#586371"}],custom_data={azr_amulet:1b,azr_amulet_arrow_savior:1b}]
