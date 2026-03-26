@@ -17,9 +17,9 @@ execute if score @s Azr_Shop_rng1 matches -1 store result score @s Azr_Shop_rng1
 execute if score @s Azr_Shop_rng2 matches -1 store result score @s Azr_Shop_rng2 run random value 21..25
 execute if score @s Azr_Shop_rng3 matches -1 store result score @s Azr_Shop_rng3 run random value 21..25
 
-execute if score @s Azr_Shop_rng4 matches -1 store result score @s Azr_Shop_rng4 run random value 51..57
-execute if score @s Azr_Shop_rng5 matches -1 store result score @s Azr_Shop_rng5 run random value 51..57
-execute if score @s Azr_Shop_rng6 matches -1 store result score @s Azr_Shop_rng6 run random value 51..57
+execute if score @s Azr_Shop_rng4 matches -1 store result score @s Azr_Shop_rng4 run random value 51..59
+execute if score @s Azr_Shop_rng5 matches -1 store result score @s Azr_Shop_rng5 run random value 51..59
+execute if score @s Azr_Shop_rng6 matches -1 store result score @s Azr_Shop_rng6 run random value 51..59
 
 execute if score @s Azr_Shop_rng7 matches -1 store result score @s Azr_Shop_rng7 run random value 51..59
 execute if score @s Azr_Shop_rng8 matches -1 store result score @s Azr_Shop_rng8 run random value 51..59

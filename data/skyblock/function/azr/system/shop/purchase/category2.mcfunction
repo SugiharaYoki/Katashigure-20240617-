@@ -203,6 +203,23 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=57,Azr_Shop=$(trigger)}] \
     # 57 @s 锁链长棍    6 铁锭
 
 
+$execute as @s[scores={Azr_Shop_rng$(rng)=58,Azr_Shop=$(trigger)}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* gunpowder[count={min:6}] \
+    if items entity @s container.* iron_ingot[count={min:8}] \
+    if score @s Azr_emerald matches 30.. \
+    unless function skyblock:azr/system/shop/purchase/category2/\
+    rng58 run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    
+$execute as @s[scores={Azr_Shop_rng$(rng)=59,Azr_Shop=$(trigger)}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* gunpowder[count={min:12}] \
+    if items entity @s container.* iron_ingot[count={min:12}] \
+    if score @s Azr_emerald matches 50.. \
+    unless function skyblock:azr/system/shop/purchase/category2/\
+    rng59 run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
+
 
 
 
