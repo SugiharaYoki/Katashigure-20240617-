@@ -1251,6 +1251,10 @@ forceload remove 89977 -1938 90038 -1925
 forceload remove 90012 -1858 90007 -1863
 forceload remove 90028 -1846
 
+#四件套箱子
+setblock 90117 137 121 minecraft:waxed_copper_chest[facing=north]{Inventory:[]}
+
+
 #最后的乐谱
 fill 90113 105 -1876 90113 102 -1874 air
 fill 90113 105 -1876 90113 102 -1874 lever[facing=west]
