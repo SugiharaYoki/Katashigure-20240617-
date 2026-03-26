@@ -18,7 +18,8 @@ execute as @s[type=endermite,scores={rng1=6..8}] at @s as @a[tag=SEAPT,distance=
 
 
 #execute if score seact rng2 matches 20 run tp @s[tag=iframe_sea,x=80000,dx=20000,y=-1000,dy=2999,z=-10000,dz=20000] ~ ~-500 ~
-execute if score seact rng2 matches 20 run kill @s[tag=iframe_sea,x=80000,dx=20000,y=-1000,dy=999,z=-10000,dz=20000]
+execute if score seact rng2 matches 20 run kill @s[tag=iframe_sea,type=item_frame]
+execute if score seact rng2 matches 20 run kill @s[tag=iframe_sea,type=glow_item_frame]
 
 
 
