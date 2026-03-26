@@ -580,6 +580,9 @@ fill -79886 31 -66 -79886 35 -65 basalt
  #金属学家
 fill -79823 11 -45 -79823 17 -47 minecraft:air replace red_stained_glass
 
+ #腐尸湖对岸
+setblock -79800 9 -83 chest[facing=west]{Inventory:[]}
+item replace block -79800 9 -83 container.13 with iron_ingot 1
 
 
 #静熄之火
