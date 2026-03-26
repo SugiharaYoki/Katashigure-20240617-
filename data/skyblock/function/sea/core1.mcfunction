@@ -46,7 +46,7 @@ execute if block 90074 103 137 scaffolding positioned 90079 104 143 if entity @a
 
 
 
-execute positioned 90089 138 118 if entity @a[tag=SEAPT,distance=0..20,limit=1] unless entity @n[type=glow_item_frame,distance=..1] unless entity @n[type=item_frame,distance=..1]  run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_map_01],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:2b,Item:{id:"minecraft:filled_map",components:{custom_name:{text:"主平台地图：甲板部分",italic:0b,color:"dark_purple"},map_id:18}}}
+execute positioned 90089 138 118 if entity @a[tag=SEAPT,distance=0..20,limit=1] unless entity @n[type=glow_item_frame,distance=..1] unless entity @n[type=item_frame,distance=..1] run summon minecraft:glow_item_frame ~ ~ ~ {Tags:[iframe_sea,iframe_sea_map_01],Invisible:0b,Fixed:0b,Invulnerable:0b,Facing:2b,Item:{id:"minecraft:filled_map",components:{custom_name:{text:"主平台地图：甲板部分",italic:0b,color:"dark_purple"},map_id:18}}}
 
 
 #船
