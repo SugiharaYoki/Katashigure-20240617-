@@ -1253,7 +1253,8 @@ forceload remove 90028 -1846
 
 #四件套箱子
 setblock 90117 137 121 minecraft:waxed_copper_chest[facing=north]{Inventory:[]}
-
+#磁锯箱子
+execute positioned 90071 128 113 if entity @a[tag=SEAPT,distance=0..20,limit=1] run setblock ~ ~ ~ minecraft:waxed_copper_chest[facing=west]{Inventory:[]}
 
 #最后的乐谱
 fill 90113 105 -1876 90113 102 -1874 air
