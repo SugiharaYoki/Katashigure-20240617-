@@ -33,7 +33,7 @@ execute if entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=3..}] run fun
 execute if entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=3..}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core37t with storage skyblock:cache
 execute if entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=3..}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core37t with storage skyblock:cache
 
-execute if entity @s[predicate=skyblock:forward,predicate=skyblock:backward] run scoreboard players add @s If_Bless37_change_timer 1
+execute if entity @s[tag=ishtar_lantern_SUCCESS,predicate=skyblock:forward,predicate=skyblock:backward] run scoreboard players add @s If_Bless37_change_timer 1
 execute if score @s If_Bless37_change_timer matches 1.. unless entity @s[predicate=skyblock:forward,predicate=skyblock:backward] run scoreboard players set @s If_Bless37_change_timer 0
 execute if score @s If_Bless37_change_timer matches 5 run playsound minecraft:ambient.crimson_forest.mood player @a ~ ~ ~ 2 1.2
 execute if score @s If_Bless37_change_timer matches 5 run playsound minecraft:ambient.crimson_forest.mood player @a ~ ~ ~ 2 1.2
