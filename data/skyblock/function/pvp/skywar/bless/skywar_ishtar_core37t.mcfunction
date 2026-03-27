@@ -1,7 +1,7 @@
 
-$execute if entity @s[tag=ishtar_lantern_success_1] at @s positioned ~ ~0.1 ~ run function skyblock:pvp/skywar/bless/skywar_ishtar_core37p {distance:$(If_Bless37),block_state:copper_block}
-$execute if entity @s[tag=ishtar_lantern_success_2] at @s positioned ~ ~0.1 ~ run function skyblock:pvp/skywar/bless/skywar_ishtar_core37p {distance:$(If_Bless37),block_state:crimson_nylium}
-$execute if entity @s[tag=ishtar_lantern_success_3] at @s positioned ~ ~0.1 ~ run function skyblock:pvp/skywar/bless/skywar_ishtar_core37p {distance:$(If_Bless37),block_state:warped_nylium}
+$execute if entity @s[tag=ishtar_lantern_success_1] at @s positioned ~ ~0.1 ~ run function skyblock:pvp/skywar/bless/skywar_ishtar_core37p {distance:$(If_Bless37),block_state:copper_block,particle:enchant}
+$execute if entity @s[tag=ishtar_lantern_success_2] at @s positioned ~ ~0.1 ~ run function skyblock:pvp/skywar/bless/skywar_ishtar_core37p {distance:$(If_Bless37),block_state:crimson_nylium,particle:crimson_spore}
+$execute if entity @s[tag=ishtar_lantern_success_3] at @s positioned ~ ~0.1 ~ run function skyblock:pvp/skywar/bless/skywar_ishtar_core37p {distance:$(If_Bless37),block_state:warped_nylium,particle:warped_spore}
 
 $execute if entity @s[team=Team1_1,tag=ishtar_lantern_success_1] as @a[distance=..$(If_Bless37),team=Team1_1] run effect give @s resistance 3 0 true
 $execute if entity @s[team=Team1_2,tag=ishtar_lantern_success_1] as @a[distance=..$(If_Bless37),team=Team1_2] run effect give @s resistance 3 0 true
