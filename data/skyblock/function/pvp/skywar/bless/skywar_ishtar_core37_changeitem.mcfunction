@@ -16,7 +16,6 @@ execute if items entity @s weapon.offhand waxed_copper_lantern run item replace 
 execute if items entity @s weapon.offhand copper_lantern run item replace entity @s weapon.offhand with exposed_copper_lantern
 execute if items entity @s weapon.offhand barrier run item replace entity @s weapon.offhand with waxed_copper_lantern
 
-execute run scoreboard players remove @s If_Bless37 200
 execute if entity @s[team=Team1_1] run effect give @a[team=Team1_1,distance=..6.1] speed 3 0 true
 execute if entity @s[team=Team1_2] run effect give @a[team=Team1_2,distance=..6.1] speed 3 0 true
 execute if entity @s[team=Team1_3] run effect give @a[team=Team1_3,distance=..6.1] speed 3 0 true
