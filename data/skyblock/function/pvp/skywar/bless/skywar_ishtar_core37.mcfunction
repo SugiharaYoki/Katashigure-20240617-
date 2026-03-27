@@ -14,9 +14,9 @@ execute if entity @s[tag=ishtar_lantern_success_2] run tag @s add ishtar_lantern
 execute if entity @s[tag=ishtar_lantern_success_3] run tag @s add ishtar_lantern_SUCCESS
 
 
-execute if entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=..300}] run scoreboard players add @s If_Bless37 10
-execute if entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=301..400}] run scoreboard players add @s If_Bless37 8
-execute if entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=401..500}] run scoreboard players add @s If_Bless37 5
+execute if entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=..250}] run scoreboard players add @s If_Bless37 10
+execute if entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=261..400}] run scoreboard players add @s If_Bless37 7
+execute if entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=401..500}] run scoreboard players add @s If_Bless37 4
 execute if entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=501..600}] run scoreboard players add @s If_Bless37 2
 execute unless entity @s[tag=ishtar_lantern_SUCCESS] if score @s If_Bless37 matches ..-1 run scoreboard players set @s If_Bless37 0
 execute unless entity @s[tag=ishtar_lantern_SUCCESS] if score @s If_Bless37 matches 15.. run scoreboard players remove @s If_Bless37 15
