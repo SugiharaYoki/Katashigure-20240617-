@@ -6,7 +6,7 @@ scoreboard objectives add ishtar_core_5 dummy
 
 scoreboard objectives add Skywar_ishtar_usehorn minecraft.used:minecraft.goat_horn
 
-kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{skywar:1}}}}]
+kill @e[distance=..15,type=item,nbt={Item:{components:{"minecraft:custom_data":{skywar:1}}}}]
 execute if entity @s[scores={If_MD_13=1..},gamemode=survival] run function skyblock:pvp/skywar/bless/skywar_ishtar_core9
 
 execute if entity @s[scores={If_MD_Strad=1..}] run playsound minecraft:block.beacon.power_select ambient @a ~ ~2 ~ 4 0.5
@@ -73,6 +73,7 @@ execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[cus
 execute if entity @s[scores={Skywar_ishtar_usehorn=1..}] if items entity @s weapon.offhand *[custom_data={skywar_ishtar_21:1}] at @s run summon marker ~ ~ ~ {Tags:["If_Bless21b"]}
 
 execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[custom_data={skywar_ishtar_36:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core36
+execute if items entity @s container.* *[custom_data={skywar_ishtar_37:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core37
 
 execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[custom_data={skywar_ishtar_22:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core22
 
