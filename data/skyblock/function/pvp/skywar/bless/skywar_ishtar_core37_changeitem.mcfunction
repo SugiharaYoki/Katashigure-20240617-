@@ -2,7 +2,7 @@ execute at @s run particle flash{color:[0.200,0.200,0.400,1.00]} ~ ~1 ~ 0 0 0 0 
 execute run playsound block.lantern.place player @a ~ ~ ~ 1 0.8
 execute if items entity @s weapon.mainhand waxed_oxidized_copper_lantern run item replace entity @s weapon.mainhand with barrier
 execute if items entity @s weapon.mainhand oxidized_copper_lantern run item replace entity @s weapon.mainhand with barrier
-execute if items entity @s weapon.mainhand waxed_exposed_copper_lantern run item replace entity @s weapon.mainhand with waxed_exposed_copper_lantern
+execute if items entity @s weapon.mainhand waxed_exposed_copper_lantern run item replace entity @s weapon.mainhand with waxed_oxidized_copper_lantern
 execute if items entity @s weapon.mainhand exposed_copper_lantern run item replace entity @s weapon.mainhand with oxidized_copper_lantern
 execute if items entity @s weapon.mainhand waxed_copper_lantern run item replace entity @s weapon.mainhand with waxed_exposed_copper_lantern
 execute if items entity @s weapon.mainhand copper_lantern run item replace entity @s weapon.mainhand with exposed_copper_lantern
@@ -10,7 +10,7 @@ execute if items entity @s weapon.mainhand barrier run item replace entity @s we
 
 execute if items entity @s weapon.offhand waxed_oxidized_copper_lantern run item replace entity @s weapon.offhand with barrier
 execute if items entity @s weapon.offhand oxidized_copper_lantern run item replace entity @s weapon.offhand with barrier
-execute if items entity @s weapon.offhand waxed_exposed_copper_lantern run item replace entity @s weapon.offhand with waxed_exposed_copper_lantern
+execute if items entity @s weapon.offhand waxed_exposed_copper_lantern run item replace entity @s weapon.offhand with waxed_oxidized_copper_lantern
 execute if items entity @s weapon.offhand exposed_copper_lantern run item replace entity @s weapon.offhand with oxidized_copper_lantern
 execute if items entity @s weapon.offhand waxed_copper_lantern run item replace entity @s weapon.offhand with waxed_exposed_copper_lantern
 execute if items entity @s weapon.offhand copper_lantern run item replace entity @s weapon.offhand with exposed_copper_lantern
