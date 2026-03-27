@@ -19,8 +19,8 @@ execute if entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=301..400}] ru
 execute if entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=401..500}] run scoreboard players add @s If_Bless37 5
 execute if entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=501..600}] run scoreboard players add @s If_Bless37 2
 execute unless entity @s[tag=ishtar_lantern_SUCCESS] run scoreboard players remove @s If_Bless37 15
-execute unless entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=200..}] run scoreboard players remove @s If_Bless37 5
-execute unless entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=400..}] run scoreboard players remove @s If_Bless37 5
+execute unless entity @s[tag=ishtar_lantern_SUCCESS] if score @s If_Bless37 matches 200.. run scoreboard players remove @s If_Bless37 5
+execute unless entity @s[tag=ishtar_lantern_SUCCESS] if score @s If_Bless37 matches 400.. run scoreboard players remove @s If_Bless37 5
 
 execute if entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=3..}] store result storage skyblock:cache If_Bless37 double 0.01 run scoreboard players get @s If_Bless37
 
