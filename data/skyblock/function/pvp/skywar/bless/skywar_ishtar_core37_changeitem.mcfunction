@@ -25,4 +25,4 @@ execute if entity @s[team=Team1_6] run effect give @a[team=Team1_6,distance=..6.
 execute if entity @s[team=Team1_7] run effect give @a[team=Team1_7,distance=..6.1] speed 3 0 true
 execute if entity @s[team=Team1_8] run effect give @a[team=Team1_8,distance=..6.1] speed 3 0 true
 
-scoreboard players remove @s If_Bless37 200
+scoreboard players remove @s If_Bless37 250
