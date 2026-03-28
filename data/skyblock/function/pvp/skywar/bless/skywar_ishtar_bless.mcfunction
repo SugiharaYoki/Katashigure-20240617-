@@ -109,10 +109,10 @@ execute if entity @s[scores={ishtar_bless_2=18}] run give @s music_disc_stal[cus
 execute if entity @s[scores={ishtar_bless_3=18}] run give @s music_disc_stal[custom_name={text:"漆幕虚垒核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=10] 4
 execute if entity @s[scores={ishtar_bless_4=18}] run give @s music_disc_stal[custom_name={text:"漆幕虚垒核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=10] 4
 
-execute if entity @s[scores={ishtar_bless_1=19}] run give @s music_disc_ward[custom_name={text:"输载归初核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_19:1},max_stack_size=10] 2
-execute if entity @s[scores={ishtar_bless_2=19}] run give @s music_disc_ward[custom_name={text:"输载归初核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_19:1},max_stack_size=10] 2
-execute if entity @s[scores={ishtar_bless_3=19}] run give @s music_disc_ward[custom_name={text:"输载归初核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_19:1},max_stack_size=10] 2
-execute if entity @s[scores={ishtar_bless_4=19}] run give @s music_disc_ward[custom_name={text:"输载归初核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_19:1},max_stack_size=10] 2
+execute if entity @s[scores={ishtar_bless_1=19}] run give @s music_disc_ward[custom_name={text:"输载归初核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_19:1},max_stack_size=10] 4
+execute if entity @s[scores={ishtar_bless_2=19}] run give @s music_disc_ward[custom_name={text:"输载归初核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_19:1},max_stack_size=10] 4
+execute if entity @s[scores={ishtar_bless_3=19}] run give @s music_disc_ward[custom_name={text:"输载归初核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_19:1},max_stack_size=10] 4
+execute if entity @s[scores={ishtar_bless_4=19}] run give @s music_disc_ward[custom_name={text:"输载归初核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_19:1},max_stack_size=10] 4
 
 execute if entity @s[scores={ishtar_bless_1=20}] run give @s music_disc_otherside[custom_name={text:"跃空战技核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_20:1},max_stack_size=10] 2
 execute if entity @s[scores={ishtar_bless_2=20}] run give @s music_disc_otherside[custom_name={text:"跃空战技核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_20:1},max_stack_size=10] 2
