@@ -19,7 +19,7 @@ execute if entity @s[scores={If_MD_Strad=1..},level=15..] run summon area_effect
 execute if entity @s[scores={If_MD_Strad=1..},level=15..] run effect give @s levitation 6 3
 execute if entity @s[scores={If_MD_Strad=1..},level=15..] run effect give @s levitation 6 3
 execute if entity @s[scores={If_MD_Strad=1..},level=15..] run xp add @s -15 levels
-execute if entity @s[scores={If_MD_Strad=1..}] run give @s music_disc_strad[custom_name={text:"顷刻天国核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_10:1},max_stack_size=85] 1
+execute if entity @s[scores={If_MD_Strad=1..}] run give @s music_disc_strad[custom_name={text:"顷刻天国核心 (15)",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_10:1},max_stack_size=85] 1
 execute if entity @s[scores={If_MD_Strad=1..}] run scoreboard players set @s If_MD_Strad 0
 
 execute if entity @s[scores={If_MD_Wait=1..,level=15..}] run playsound minecraft:block.beacon.deactivate ambient @a ~ ~1 ~ 4 0.8
@@ -31,7 +31,7 @@ execute if entity @s[scores={If_MD_Wait=1..,level=15..}] run effect give @a[tag=
 execute if entity @s[scores={If_MD_Wait=1..,level=15..}] run scoreboard players set @a[tag=PVPing,distance=0.1..5.3] If_Bless11 60
 execute if entity @s[scores={If_MD_Wait=1..,level=15..}] run xp add @s -15 levels
 execute as @a[tag=PVPing,gamemode=survival,scores={If_Bless11=1..}] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_core11
-execute if entity @s[scores={If_MD_Wait=1..}] run give @s music_disc_wait[custom_name={text:"陨落压制核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=85] 1
+execute if entity @s[scores={If_MD_Wait=1..}] run give @s music_disc_wait[custom_name={text:"陨落压制核心 (15)",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=85] 1
 execute if entity @s[scores={If_MD_Wait=1..}] run scoreboard players set @s If_MD_Wait 0
 
 execute if entity @s[scores={If_MD_Chirp=1..}] rotated ~ 0 run function skyblock:pvp/skywar/bless/skywar_ishtar_core17
@@ -70,7 +70,7 @@ execute if entity @s[scores={If_MD_Otherside=1..},level=20..] run playsound bloc
 execute if entity @s[scores={If_MD_Otherside=1..},level=20..] run playsound item.mace.smash_ground_heavy ambient @a ~ ~1 ~ 1 1.3
 execute if entity @s[scores={If_MD_Otherside=1..},level=20..] run give @s mace
 execute if entity @s[scores={If_MD_Otherside=1..},level=20..] run xp add @s -20 levels
-execute if entity @s[scores={If_MD_Otherside=1..}] run give @s music_disc_otherside[custom_name={text:"跃空战技核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_20:1},max_stack_size=85]
+execute if entity @s[scores={If_MD_Otherside=1..}] run give @s music_disc_otherside[custom_name={text:"跃空战技核心 (20)",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_20:1},max_stack_size=85]
 execute if entity @s[scores={If_MD_Otherside=1..}] run scoreboard players set @s If_MD_Otherside 0
 
 execute if items entity @s weapon.offhand *[custom_data={skywar_ishtar_4:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core4

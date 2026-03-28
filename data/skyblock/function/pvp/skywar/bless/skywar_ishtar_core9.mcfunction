@@ -66,5 +66,5 @@ execute if entity @s[scores={ishtar_core_1=10..}] run tag @s remove ishtar_core9
 execute if entity @s[scores={ishtar_core_1=10..}] run scoreboard players set @s ishtar_core_1 0
 
 
-give @s music_disc_13[custom_name={text:"高速堡垒核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_9:1},max_stack_size=85]
+give @s music_disc_13[custom_name={text:"高速堡垒核心 (10)",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_9:1},max_stack_size=85]
 scoreboard players set @s If_MD_13 0
