@@ -43,7 +43,7 @@ execute as @e[tag=Skywar_ishtar_18] at @s run particle squid_ink ~ ~1 ~ 1.5 2.3 
 execute as @e[tag=Skywar_ishtar_18] at @s run particle large_smoke ~ ~1.2 ~ 1.5 2.6 1.5 0.03 40
 execute as @e[tag=Skywar_ishtar_18,scores={rng1=800..}] at @s run kill @s
 
-execute if items entity @s[predicate=skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_19:1}] positioned ~ ~-1 ~ if block ~ ~ ~ #shulker_boxes run setblock ~ ~ ~ air destroy
+execute if items entity @s[predicate=skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_19:1}] positioned ~ ~-1 ~ if block ~ ~ ~ #shulker_boxes run function skyblock:pvp/skywar/bless/skywar_ishtar_core19
 
 
 execute if entity @s[scores={If_MD_Ward=1..}] run playsound entity.shulker.open ambient @a ~ ~1 ~ 2 0.6

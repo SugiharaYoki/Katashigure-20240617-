@@ -25,7 +25,7 @@ execute store result score sc Team8Rem if entity @a[team=Team1_8,gamemode=!spect
 scoreboard players set 「服务器情报」 Temp5 -97
 scoreboard players set 「队伍信息」 Temp5 99
 scoreboard players set 『匿名·方时雨城』Katashigure Temp5 -98
-scoreboard players set IP地址＜mc.tokumei.studio Temp5 -99
+scoreboard players set IP地址<mc.tokumei.studio> Temp5 -99
 scoreboard players set ________ Temp5 -96
 
 execute if score sc Temp5_LoopF matches 1 run scoreboard objectives modify Temp5 displayname [{text:"战",color:"gold"},{text:"局",color:"gold"},{text:"报",color:"gold"},{text:"告",color:"gold"}]
