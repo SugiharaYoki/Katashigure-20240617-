@@ -63,23 +63,23 @@ execute if entity @s[scores={ishtar_bless_2=8}] run give @s enchanted_golden_app
 execute if entity @s[scores={ishtar_bless_3=8}] run give @s enchanted_golden_apple
 execute if entity @s[scores={ishtar_bless_4=8}] run give @s enchanted_golden_apple
 
-execute if entity @s[scores={ishtar_bless_1=9}] run give @s music_disc_13[custom_name={text:"高速堡垒核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_9:1},max_stack_size=10] 2
-execute if entity @s[scores={ishtar_bless_2=9}] run give @s music_disc_13[custom_name={text:"高速堡垒核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_9:1},max_stack_size=10] 2
-execute if entity @s[scores={ishtar_bless_3=9}] run give @s music_disc_13[custom_name={text:"高速堡垒核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_9:1},max_stack_size=10] 2
-execute if entity @s[scores={ishtar_bless_4=9}] run give @s music_disc_13[custom_name={text:"高速堡垒核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_9:1},max_stack_size=10] 2
-execute if entity @s[scores={ishtar_bless_1=10}] run give @s music_disc_strad[custom_name={text:"顷刻天国核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_10:1},max_stack_size=10] 2
-execute if entity @s[scores={ishtar_bless_2=10}] run give @s music_disc_strad[custom_name={text:"顷刻天国核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_10:1},max_stack_size=10] 2
-execute if entity @s[scores={ishtar_bless_3=10}] run give @s music_disc_strad[custom_name={text:"顷刻天国核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_10:1},max_stack_size=10] 2
-execute if entity @s[scores={ishtar_bless_4=10}] run give @s music_disc_strad[custom_name={text:"顷刻天国核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_10:1},max_stack_size=10] 2
-execute if entity @s[scores={ishtar_bless_1=11}] run give @s music_disc_wait[custom_name={text:"陨落压制核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=10] 3
-execute if entity @s[scores={ishtar_bless_2=11}] run give @s music_disc_wait[custom_name={text:"陨落压制核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=10] 3
-execute if entity @s[scores={ishtar_bless_3=11}] run give @s music_disc_wait[custom_name={text:"陨落压制核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=10] 3
-execute if entity @s[scores={ishtar_bless_4=11}] run give @s music_disc_wait[custom_name={text:"陨落压制核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=10] 3
+execute if entity @s[scores={ishtar_bless_1=9}] run give @s music_disc_13[custom_name={text:"高速堡垒核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_9:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_2=9}] run give @s music_disc_13[custom_name={text:"高速堡垒核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_9:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_3=9}] run give @s music_disc_13[custom_name={text:"高速堡垒核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_9:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_4=9}] run give @s music_disc_13[custom_name={text:"高速堡垒核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_9:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_1=10}] run give @s music_disc_strad[custom_name={text:"顷刻天国核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_10:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_2=10}] run give @s music_disc_strad[custom_name={text:"顷刻天国核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_10:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_3=10}] run give @s music_disc_strad[custom_name={text:"顷刻天国核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_10:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_4=10}] run give @s music_disc_strad[custom_name={text:"顷刻天国核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_10:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_1=11}] run give @s music_disc_wait[custom_name={text:"陨落压制核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_2=11}] run give @s music_disc_wait[custom_name={text:"陨落压制核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_3=11}] run give @s music_disc_wait[custom_name={text:"陨落压制核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_4=11}] run give @s music_disc_wait[custom_name={text:"陨落压制核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=85] 32
 execute if entity @s[scores={ishtar_bless_1=12}] run give @s minecraft:rabbit_foot[minecraft:consumable={consume_seconds:0.5,on_consume_effects:[{type:"minecraft:apply_effects",effects:[{id:"minecraft:speed",amplifier:6,duration:40}],probability:1.0},{type:"minecraft:apply_effects",effects:[{id:"minecraft:invisibility",amplifier:0,duration:60}],probability:1.0},{type:"minecraft:apply_effects",effects:[{id:"minecraft:instant_damage",amplifier:0,duration:1}],probability:0.3},{type:"minecraft:play_sound",sound:"minecraft:block.creaking_heart.spawn"}]},minecraft:food={nutrition:1,saturation:1,can_always_eat:true}] 4
 execute if entity @s[scores={ishtar_bless_2=12}] run give @s minecraft:rabbit_foot[minecraft:consumable={consume_seconds:0.5,on_consume_effects:[{type:"minecraft:apply_effects",effects:[{id:"minecraft:speed",amplifier:6,duration:40}],probability:1.0},{type:"minecraft:apply_effects",effects:[{id:"minecraft:invisibility",amplifier:0,duration:60}],probability:1.0},{type:"minecraft:apply_effects",effects:[{id:"minecraft:instant_damage",amplifier:0,duration:1}],probability:0.3},{type:"minecraft:play_sound",sound:"minecraft:block.creaking_heart.spawn"}]},minecraft:food={nutrition:1,saturation:1,can_always_eat:true}] 4
 execute if entity @s[scores={ishtar_bless_3=12}] run give @s minecraft:rabbit_foot[minecraft:consumable={consume_seconds:0.5,on_consume_effects:[{type:"minecraft:apply_effects",effects:[{id:"minecraft:speed",amplifier:6,duration:40}],probability:1.0},{type:"minecraft:apply_effects",effects:[{id:"minecraft:invisibility",amplifier:0,duration:60}],probability:1.0},{type:"minecraft:apply_effects",effects:[{id:"minecraft:instant_damage",amplifier:0,duration:1}],probability:0.3},{type:"minecraft:play_sound",sound:"minecraft:block.creaking_heart.spawn"}]},minecraft:food={nutrition:1,saturation:1,can_always_eat:true}] 4
 execute if entity @s[scores={ishtar_bless_4=12}] run give @s minecraft:rabbit_foot[minecraft:consumable={consume_seconds:0.5,on_consume_effects:[{type:"minecraft:apply_effects",effects:[{id:"minecraft:speed",amplifier:6,duration:40}],probability:1.0},{type:"minecraft:apply_effects",effects:[{id:"minecraft:invisibility",amplifier:0,duration:60}],probability:1.0},{type:"minecraft:apply_effects",effects:[{id:"minecraft:instant_damage",amplifier:0,duration:1}],probability:0.3},{type:"minecraft:play_sound",sound:"minecraft:block.creaking_heart.spawn"}]},minecraft:food={nutrition:1,saturation:1,can_always_eat:true}] 4
-#execute if entity @s[scores={ishtar_bless_2=12}] run give @s splash_potion[potion_contents={custom_color:12489686,custom_effects:[{id:speed,duration:60,amplifier:4},{id:jump_boost,duration:60,amplifier:1}]},custom_name='["",{text:"刹踪烟消药剂",italic:0b}]',max_stack_size=10] 2
+#execute if entity @s[scores={ishtar_bless_2=12}] run give @s splash_potion[potion_contents={custom_color:12489686,custom_effects:[{id:speed,duration:60,amplifier:4},{id:jump_boost,duration:60,amplifier:1}]},custom_name='["",{text:"刹踪烟消药剂",italic:0b}]',max_stack_size=85] 2
 execute if entity @s[scores={ishtar_bless_1=13}] run give @s bow[custom_name={text:"绯华",italic:0b,color:"red"},enchantments={multishot:3},repair_cost=1000]
 execute if entity @s[scores={ishtar_bless_2=13}] run give @s bow[custom_name={text:"绯华",italic:0b,color:"red"},enchantments={multishot:3},repair_cost=1000]
 execute if entity @s[scores={ishtar_bless_3=13}] run give @s bow[custom_name={text:"绯华",italic:0b,color:"red"},enchantments={multishot:3},repair_cost=1000]
@@ -89,10 +89,10 @@ execute if entity @s[scores={ishtar_bless_2=13}] run give @s arrow 5
 execute if entity @s[scores={ishtar_bless_3=13}] run give @s arrow 5
 execute if entity @s[scores={ishtar_bless_4=13}] run give @s arrow 5
 
-execute if entity @s[scores={ishtar_bless_1=14}] run give @s potion[potion_contents={custom_color:7471142,custom_effects:[{id:wither,duration:100,amplifier:4},{id:fire_resistance,duration:100,amplifier:0},{id:strength,duration:100,amplifier:2}]},custom_name='["",{text:"湮体崩裂药剂",italic:0b}]',max_stack_size=10] 2
-execute if entity @s[scores={ishtar_bless_2=14}] run give @s potion[potion_contents={custom_color:7471142,custom_effects:[{id:wither,duration:100,amplifier:4},{id:fire_resistance,duration:100,amplifier:0},{id:strength,duration:100,amplifier:2}]},custom_name='["",{text:"湮体崩裂药剂",italic:0b}]',max_stack_size=10] 2
-execute if entity @s[scores={ishtar_bless_3=14}] run give @s potion[potion_contents={custom_color:7471142,custom_effects:[{id:wither,duration:100,amplifier:4},{id:fire_resistance,duration:100,amplifier:0},{id:strength,duration:100,amplifier:2}]},custom_name='["",{text:"湮体崩裂药剂",italic:0b}]',max_stack_size=10] 2
-execute if entity @s[scores={ishtar_bless_4=14}] run give @s potion[potion_contents={custom_color:7471142,custom_effects:[{id:wither,duration:100,amplifier:4},{id:fire_resistance,duration:100,amplifier:0},{id:strength,duration:100,amplifier:2}]},custom_name='["",{text:"湮体崩裂药剂",italic:0b}]',max_stack_size=10] 2
+execute if entity @s[scores={ishtar_bless_1=14}] run give @s potion[potion_contents={custom_color:7471142,custom_effects:[{id:wither,duration:100,amplifier:4},{id:fire_resistance,duration:100,amplifier:0},{id:strength,duration:100,amplifier:2}]},custom_name='["",{text:"湮体崩裂药剂",italic:0b}]',max_stack_size=85] 2
+execute if entity @s[scores={ishtar_bless_2=14}] run give @s potion[potion_contents={custom_color:7471142,custom_effects:[{id:wither,duration:100,amplifier:4},{id:fire_resistance,duration:100,amplifier:0},{id:strength,duration:100,amplifier:2}]},custom_name='["",{text:"湮体崩裂药剂",italic:0b}]',max_stack_size=85] 2
+execute if entity @s[scores={ishtar_bless_3=14}] run give @s potion[potion_contents={custom_color:7471142,custom_effects:[{id:wither,duration:100,amplifier:4},{id:fire_resistance,duration:100,amplifier:0},{id:strength,duration:100,amplifier:2}]},custom_name='["",{text:"湮体崩裂药剂",italic:0b}]',max_stack_size=85] 2
+execute if entity @s[scores={ishtar_bless_4=14}] run give @s potion[potion_contents={custom_color:7471142,custom_effects:[{id:wither,duration:100,amplifier:4},{id:fire_resistance,duration:100,amplifier:0},{id:strength,duration:100,amplifier:2}]},custom_name='["",{text:"湮体崩裂药剂",italic:0b}]',max_stack_size=85] 2
 
 execute if entity @s[scores={ishtar_bless_1=15}] run give @s recovery_compass[custom_name={text:"雕刻罗盘",italic:0b,color:"red"},attribute_modifiers=[{type:"movement_speed",slot:"hand",id:"ishtar_bless:004_01",amount:0.01,operation:"add_value"},{type:"armor",slot:"hand",id:"ishtar_bless:004_02",amount:2,operation:"add_value"},{type:"block_interaction_range",slot:"hand",id:"ishtar_bless:004_03",amount:2,operation:"add_value"}]]
 execute if entity @s[scores={ishtar_bless_2=15}] run give @s recovery_compass[custom_name={text:"雕刻罗盘",italic:0b,color:"red"},attribute_modifiers=[{type:"movement_speed",slot:"hand",id:"ishtar_bless:004_01",amount:0.01,operation:"add_value"},{type:"armor",slot:"hand",id:"ishtar_bless:004_02",amount:2,operation:"add_value"},{type:"block_interaction_range",slot:"hand",id:"ishtar_bless:004_03",amount:2,operation:"add_value"}]]
@@ -105,25 +105,25 @@ execute if entity @s[scores={ishtar_bless_2=16}] run give @s eye_armor_trim_smit
 execute if entity @s[scores={ishtar_bless_3=16}] run give @s eye_armor_trim_smithing_template[custom_name={text:"刺客尊荣",italic:0b,color:"red"},custom_data={skywar_antiinvis:1},lore=[{text:"5格内隐身玩家显形",color:"white",italic:0b},{text:"12格内有玩家时发出警报",color:"white",italic:0b}]] 1
 execute if entity @s[scores={ishtar_bless_4=16}] run give @s eye_armor_trim_smithing_template[custom_name={text:"刺客尊荣",italic:0b,color:"red"},custom_data={skywar_antiinvis:1},lore=[{text:"5格内隐身玩家显形",color:"white",italic:0b},{text:"12格内有玩家时发出警报",color:"white",italic:0b}]] 1
 
-execute if entity @s[scores={ishtar_bless_1=17}] run give @s music_disc_chirp[custom_name={text:"扬焱剧爆核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=10] 2
-execute if entity @s[scores={ishtar_bless_2=17}] run give @s music_disc_chirp[custom_name={text:"扬焱剧爆核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=10] 2
-execute if entity @s[scores={ishtar_bless_3=17}] run give @s music_disc_chirp[custom_name={text:"扬焱剧爆核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=10] 2
-execute if entity @s[scores={ishtar_bless_4=17}] run give @s music_disc_chirp[custom_name={text:"扬焱剧爆核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=10] 2
+execute if entity @s[scores={ishtar_bless_1=17}] run give @s music_disc_chirp[custom_name={text:"扬焱剧爆核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_2=17}] run give @s music_disc_chirp[custom_name={text:"扬焱剧爆核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_3=17}] run give @s music_disc_chirp[custom_name={text:"扬焱剧爆核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_4=17}] run give @s music_disc_chirp[custom_name={text:"扬焱剧爆核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=85] 32
 
-execute if entity @s[scores={ishtar_bless_1=18}] run give @s music_disc_stal[custom_name={text:"漆幕虚垒核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=10] 4
-execute if entity @s[scores={ishtar_bless_2=18}] run give @s music_disc_stal[custom_name={text:"漆幕虚垒核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=10] 4
-execute if entity @s[scores={ishtar_bless_3=18}] run give @s music_disc_stal[custom_name={text:"漆幕虚垒核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=10] 4
-execute if entity @s[scores={ishtar_bless_4=18}] run give @s music_disc_stal[custom_name={text:"漆幕虚垒核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=10] 4
+execute if entity @s[scores={ishtar_bless_1=18}] run give @s music_disc_stal[custom_name={text:"漆幕虚垒核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_2=18}] run give @s music_disc_stal[custom_name={text:"漆幕虚垒核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_3=18}] run give @s music_disc_stal[custom_name={text:"漆幕虚垒核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_4=18}] run give @s music_disc_stal[custom_name={text:"漆幕虚垒核心",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=85] 32
 
-execute if entity @s[scores={ishtar_bless_1=19}] run give @s music_disc_ward[custom_name={text:"输载归初核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_19:1},max_stack_size=10] 4
-execute if entity @s[scores={ishtar_bless_2=19}] run give @s music_disc_ward[custom_name={text:"输载归初核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_19:1},max_stack_size=10] 4
-execute if entity @s[scores={ishtar_bless_3=19}] run give @s music_disc_ward[custom_name={text:"输载归初核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_19:1},max_stack_size=10] 4
-execute if entity @s[scores={ishtar_bless_4=19}] run give @s music_disc_ward[custom_name={text:"输载归初核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_19:1},max_stack_size=10] 4
+execute if entity @s[scores={ishtar_bless_1=19}] run give @s music_disc_ward[custom_name={text:"输载归初核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_19:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_2=19}] run give @s music_disc_ward[custom_name={text:"输载归初核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_19:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_3=19}] run give @s music_disc_ward[custom_name={text:"输载归初核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_19:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_4=19}] run give @s music_disc_ward[custom_name={text:"输载归初核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_19:1},max_stack_size=85] 32
 
-execute if entity @s[scores={ishtar_bless_1=20}] run give @s music_disc_otherside[custom_name={text:"跃空战技核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_20:1},max_stack_size=10] 2
-execute if entity @s[scores={ishtar_bless_2=20}] run give @s music_disc_otherside[custom_name={text:"跃空战技核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_20:1},max_stack_size=10] 2
-execute if entity @s[scores={ishtar_bless_3=20}] run give @s music_disc_otherside[custom_name={text:"跃空战技核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_20:1},max_stack_size=10] 2
-execute if entity @s[scores={ishtar_bless_4=20}] run give @s music_disc_otherside[custom_name={text:"跃空战技核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_20:1},max_stack_size=10] 2
+execute if entity @s[scores={ishtar_bless_1=20}] run give @s music_disc_otherside[custom_name={text:"跃空战技核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_20:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_2=20}] run give @s music_disc_otherside[custom_name={text:"跃空战技核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_20:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_3=20}] run give @s music_disc_otherside[custom_name={text:"跃空战技核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_20:1},max_stack_size=85] 32
+execute if entity @s[scores={ishtar_bless_4=20}] run give @s music_disc_otherside[custom_name={text:"跃空战技核心",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_20:1},max_stack_size=85] 32
 execute if entity @s[scores={ishtar_bless_1=20}] run give @s slime_block 3
 execute if entity @s[scores={ishtar_bless_2=20}] run give @s slime_block 3
 execute if entity @s[scores={ishtar_bless_3=20}] run give @s slime_block 3

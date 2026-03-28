@@ -1,8 +1,7 @@
 setblock ~ ~ ~ air destroy
 
 
-clear @s *[custom_data={skywar:1,skywar_ishtar_19:1}]
-
+xp add @s -4 levels
 
 execute if entity @s[team=Team1_1] run summon marker ~ ~ ~ {Tags:["Skywar_Bless19","Skywar_Bless19_1"]}
 execute if entity @s[team=Team1_2] run summon marker ~ ~ ~ {Tags:["Skywar_Bless19","Skywar_Bless19_2"]}
