@@ -11,8 +11,8 @@ scoreboard objectives add Skywar_ishtar_usehorn minecraft.used:minecraft.goat_ho
 scoreboard players add @s ishtar_core_slow 1
 execute if score @s ishtar_core_slow matches 5.. run function skyblock:pvp/skywar/bless/skywar_ishtar_core_slow
 
-execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=..0},gamemode=survival] run function skyblock:pvp/skywar/bless/skywar_ishtar_core9
-execute if entity @s[scores={ishtar_core_1=1..}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core9
+execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=..0},gamemode=survival] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_core9
+execute if entity @s[scores={ishtar_core_1=1..}] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_core9
 
 execute if entity @s[scores={If_MD_Strad=1..},level=15..] run playsound minecraft:block.beacon.power_select ambient @a ~ ~2 ~ 4 0.5
 execute if entity @s[scores={If_MD_Strad=1..},level=15..] run summon area_effect_cloud ~ ~ ~ {Particle:{type:"end_rod"},Radius:5,Duration:200,potion_contents:{custom_color:16383998,custom_effects:[{id:levitation,duration:120,amplifier:3,show_particles:1b,show_icon:1b},{id:glowing,duration:120,amplifier:0,show_particles:1b,show_icon:1b}]}}
