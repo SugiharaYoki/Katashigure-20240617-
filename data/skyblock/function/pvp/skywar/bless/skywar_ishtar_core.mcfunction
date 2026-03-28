@@ -3,10 +3,14 @@ scoreboard objectives add ishtar_core_2 dummy
 scoreboard objectives add ishtar_core_3 dummy
 scoreboard objectives add ishtar_core_4 dummy
 scoreboard objectives add ishtar_core_5 dummy
+scoreboard objectives add ishtar_core_slow dummy
 
 scoreboard objectives add Skywar_ishtar_usehorn minecraft.used:minecraft.goat_horn
 
-kill @e[distance=..15,type=item,nbt={Item:{components:{"minecraft:custom_data":{skywar:1}}}}]
+
+scoreboard players add @s ishtar_core_slow 1
+execute if score @s ishtar_core_slow matches 5.. run function skyblock:pvp/skywar/bless/skywar_ishtar_core_slow
+
 execute if entity @s[scores={If_MD_13=1..},gamemode=survival] run function skyblock:pvp/skywar/bless/skywar_ishtar_core9
 
 execute if entity @s[scores={If_MD_Strad=1..}] run playsound minecraft:block.beacon.power_select ambient @a ~ ~2 ~ 4 0.5
