@@ -62,7 +62,7 @@ execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~
 execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~02 ~7 ~-2 ~-2 ~7 ~-2 stone_bricks replace air
 execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~-2 ~7 ~02 ~-2 ~7 ~-2 stone_bricks replace air
 execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~02 ~7 ~02 ~-2 ~7 ~2 stone_bricks replace air
-execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~ ~1 ~ ~ ~6 ~ scaffolding replace air
+execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~ ~ ~ ~ ~6 ~ scaffolding[bottom=true] replace air
 execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~ ~7 ~ ~ ~7 ~ lantern[hanging=false] replace air
 
 execute if entity @s[scores={ishtar_core_1=2}] run effect give @s jump_boost 5 2 false
