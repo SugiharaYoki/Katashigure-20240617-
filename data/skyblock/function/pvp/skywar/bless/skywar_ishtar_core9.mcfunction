@@ -66,6 +66,14 @@ execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~
 execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~02 ~7 ~-2 ~-2 ~7 ~-2 stone_bricks replace air
 execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~-2 ~7 ~02 ~-2 ~7 ~-2 stone_bricks replace air
 execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~02 ~7 ~02 ~-2 ~7 ~2 stone_bricks replace air
+execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~2 ~7 ~1 ~2 ~7 ~1 stone_bricks replace air
+execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~-2 ~7 ~1 ~-2 ~7 ~1 stone_bricks replace air
+execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~1 ~7 ~2 ~1 ~7 ~2 stone_bricks replace air
+execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~1 ~7 ~-2 ~1 ~7 ~-2 stone_bricks replace air
+execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~2 ~7 ~-1 ~2 ~7 ~-1 stone_bricks replace air
+execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~-2 ~7 ~-1 ~-2 ~7 ~-1 stone_bricks replace air
+execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~-1 ~7 ~2 ~-1 ~7 ~2 stone_bricks replace air
+execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~-1 ~7 ~-2 ~-1 ~7 ~-2 stone_bricks replace air
 execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~ ~ ~ ~ ~6 ~ scaffolding[bottom=true] replace air
 execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~2 ~8 ~-2 ~2 ~8 ~-2 lantern[hanging=false] replace air
 execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~2 ~8 ~2 ~2 ~8 ~2 lantern[hanging=false] replace air
