@@ -49,7 +49,7 @@ give @s written_book[written_book_content={pages:[ \
 [["",{text:"主题：红木深林",color:"dark_aqua",bold:1b}, \
 "\n外圈地图 · 普通\n\n", \
 {text:"初始祝福：",bold:1b},"获得 15 支箭矢\n\n", \
-{text:"嗅探兽奖励：",bold:1b},"获得 20 支箭矢\n\n", \
+{text:"嗅探兽奖励：",bold:1b},"获得 1 弓与 20 支箭矢\n\n", \
 {text:"煤 ",color:"#64bd5e"},{text:"金 ",color:"#64bd5e"},{text:"钻 ",color:"#64bd5e"}]], \
 [["",{text:"主题：繁花湿地",color:"dark_aqua",bold:1b}, \
 "\n外圈地图 · 普通\n\n", \
@@ -79,7 +79,7 @@ give @s written_book[written_book_content={pages:[ \
 [["",{text:"主题：丛林流域",color:"dark_aqua",bold:1b}, \
 "\n外圈地图 · 普通\n拥有内圈变体“丛林书室”\n\n", \
 {text:"初始祝福：",bold:1b},"方块交互距离 +0.5\n\n", \
-{text:"嗅探兽奖励：",bold:1b},"方块交互距离 +0.5\n\n", \
+{text:"嗅探兽奖励：",bold:1b},"方块交互距离 +1.0\n\n", \
 {text:"煤 ",color:"#848d83"},{text:"铁 ",color:"#64bd5e"},{text:"金 ",color:"#64bd5e"},{text:"钻 ",color:"#64bd5e"},{text:"模板 ",color:"#ab5cff"}]], \
 [["",{text:"主题：皑雪平原",color:"dark_aqua",bold:1b}, \
 "\n外圈地图 · 普通\n\n", \

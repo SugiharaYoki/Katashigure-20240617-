@@ -1,7 +1,8 @@
 execute if biome ~ ~ ~ minecraft:old_growth_birch_forest run tellraw @s [{text:"嗅探兽的收获：",bold:1b,color:"gold"},{text:"获得 1 附魔台与 20 青金石",bold:0b,color:"white"}]
 execute if biome ~ ~ ~ minecraft:old_growth_birch_forest run give @s minecraft:enchanting_table 1
 execute if biome ~ ~ ~ minecraft:old_growth_birch_forest run give @s minecraft:lapis_lazuli 20
-execute if biome ~ ~ ~ minecraft:old_growth_pine_taiga run tellraw @s [{text:"嗅探兽的收获：",bold:1b,color:"gold"},{text:"获得 20 支箭矢",bold:0b,color:"white"}]
+execute if biome ~ ~ ~ minecraft:old_growth_pine_taiga run tellraw @s [{text:"嗅探兽的收获：",bold:1b,color:"gold"},{text:"获得 1 弓与20 支箭矢",bold:0b,color:"white"}]
+execute if biome ~ ~ ~ minecraft:old_growth_pine_taiga run give @s bow 1
 execute if biome ~ ~ ~ minecraft:old_growth_pine_taiga run give @s arrow 20
 execute if biome ~ ~ ~ minecraft:mangrove_swamp run tellraw @s [{text:"嗅探兽的收获：",bold:1b,color:"gold"},{text:"获得 5 金萝卜",bold:0b,color:"white"}]
 execute if biome ~ ~ ~ minecraft:mangrove_swamp run give @s golden_carrot 5
@@ -13,8 +14,8 @@ execute if biome ~ ~ ~ minecraft:crimson_forest run tellraw @s [{text:"嗅探兽
 $execute if biome ~ ~ ~ minecraft:crimson_forest run attribute @s minecraft:attack_damage modifier add checkwar_bless:sniffer_$(count) 0.5 add_value
 execute if biome ~ ~ ~ minecraft:warm_ocean run tellraw @s [{text:"嗅探兽的收获：",bold:1b,color:"gold"},{text:"水下挖掘速度 +50%",bold:0b,color:"white"}]
 $execute if biome ~ ~ ~ minecraft:warm_ocean run attribute @s minecraft:submerged_mining_speed modifier add checkwar_bless:sniffer_$(count) 0.5 add_value
-execute if biome ~ ~ ~ minecraft:bamboo_jungle run tellraw @s [{text:"嗅探兽的收获：",bold:1b,color:"gold"},{text:"方块交互距离 +0.5",bold:0b,color:"white"}]
-$execute if biome ~ ~ ~ minecraft:bamboo_jungle run attribute @s minecraft:block_interaction_range modifier add checkwar_bless:sniffer_$(count) 0.5 add_value
+execute if biome ~ ~ ~ minecraft:bamboo_jungle run tellraw @s [{text:"嗅探兽的收获：",bold:1b,color:"gold"},{text:"方块交互距离 +1.0",bold:0b,color:"white"}]
+$execute if biome ~ ~ ~ minecraft:bamboo_jungle run attribute @s minecraft:block_interaction_range modifier add checkwar_bless:sniffer_$(count) 1.0 add_value
 execute if biome ~ ~ ~ minecraft:snowy_plains run tellraw @s [{text:"嗅探兽的收获：",bold:1b,color:"gold"},{text:"护甲韧性 +2",bold:0b,color:"white"}]
 $execute if biome ~ ~ ~ minecraft:snowy_plains run attribute @s minecraft:armor_toughness modifier add checkwar_bless:sniffer_$(count) 2 add_value
 execute if biome ~ ~ ~ minecraft:mushroom_fields run tellraw @s [{text:"嗅探兽的收获：",bold:1b,color:"gold"},{text:"攻击距离 +0.5",bold:0b,color:"white"}]
