@@ -94,7 +94,7 @@ give @s written_book[written_book_content={pages:[ \
 [["",{text:"主题：滴水石洞",color:"dark_aqua",bold:1b}, \
 "\n外圈地图 · 普通\n\n", \
 {text:"初始祝福：",bold:1b},"挖掘效率 +2\n\n", \
-{text:"嗅探兽奖励：",bold:1b},"挖掘效率 +2\n\n", \
+{text:"嗅探兽奖励：",bold:1b},"挖掘效率 +4\n\n", \
 {text:"煤 ",color:"#64bd5e"},{text:"铁 ",color:"#848d83"},{text:"金 ",color:"#64bd5e"},{text:"钻 ",color:"#64bd5e"},{text:"青金 ",color:"#ab5cff"}]], \
 [["",{text:"主题：辉芜戈壁",color:"dark_aqua",bold:1b}, \
 "\n外圈地图 · 普通\n\n", \
@@ -114,7 +114,7 @@ give @s written_book[written_book_content={pages:[ \
 [["",{text:"主题：钢铁秘间",color:"red",bold:1b}, \
 "\n内圈地图 · 普通\n\n", \
 {text:"初始祝福：",bold:1b},{text:"无",bold:0b,color:"gray"},"\n\n", \
-{text:"嗅探兽奖励：",bold:1b},"攻击速度 +0.2"]], \
+{text:"嗅探兽奖励：",bold:1b},"攻击速度 +0.3"]], \
 [["",{text:"主题：终末之地",color:"red",bold:1b}, \
 "\n内圈地图 · 普通\n\n", \
 {text:"初始祝福：",bold:1b},{text:"无",bold:0b,color:"gray"},"\n\n", \

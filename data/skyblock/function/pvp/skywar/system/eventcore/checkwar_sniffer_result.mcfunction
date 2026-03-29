@@ -20,8 +20,8 @@ execute if biome ~ ~ ~ minecraft:snowy_plains run tellraw @s [{text:"嗅探兽�
 $execute if biome ~ ~ ~ minecraft:snowy_plains run attribute @s minecraft:armor_toughness modifier add checkwar_bless:sniffer_$(count) 2 add_value
 execute if biome ~ ~ ~ minecraft:mushroom_fields run tellraw @s [{text:"嗅探兽的收获：",bold:1b,color:"gold"},{text:"攻击距离 +0.5",bold:0b,color:"white"}]
 $execute if biome ~ ~ ~ minecraft:mushroom_fields run attribute @s minecraft:entity_interaction_range modifier add checkwar_bless:sniffer_$(count) 0.5 add_value
-execute if biome ~ ~ ~ minecraft:dripstone_caves run tellraw @s [{text:"嗅探兽的收获：",bold:1b,color:"gold"},{text:"挖掘效率 +2",bold:0b,color:"white"}]
-$execute if biome ~ ~ ~ minecraft:dripstone_caves run attribute @s minecraft:mining_efficiency modifier add checkwar_bless:sniffer_$(count) 2 add_value
+execute if biome ~ ~ ~ minecraft:dripstone_caves run tellraw @s [{text:"嗅探兽的收获：",bold:1b,color:"gold"},{text:"挖掘效率 +4",bold:0b,color:"white"}]
+$execute if biome ~ ~ ~ minecraft:dripstone_caves run attribute @s minecraft:mining_efficiency modifier add checkwar_bless:sniffer_$(count) 4 add_value
 execute if biome ~ ~ ~ minecraft:eroded_badlands run tellraw @s [{text:"嗅探兽的收获：",bold:1b,color:"gold"},{text:"防御力 +2",bold:0b,color:"white"}]
 $execute if biome ~ ~ ~ minecraft:eroded_badlands run attribute @s minecraft:armor modifier add checkwar_bless:sniffer_$(count) 2 add_value
 
@@ -31,7 +31,7 @@ execute if biome ~ ~ ~ minecraft:basalt_deltas run effect give @s fire_resistanc
 execute if biome ~ ~ ~ minecraft:desert run tellraw @s [{text:"嗅探兽的收获：",bold:1b,color:"gold"},{text:"获得 1 下界合金镐与 1 下界合金锹",bold:0b,color:"white"}]
 execute if biome ~ ~ ~ minecraft:desert run give @s netherite_pickaxe
 execute if biome ~ ~ ~ minecraft:desert run give @s netherite_shovel
-execute if biome ~ ~ ~ minecraft:cold_ocean run tellraw @s [{text:"嗅探兽的收获：",bold:1b,color:"gold"},{text:"攻击速度 +0.2",bold:0b,color:"white"}]
-$execute if biome ~ ~ ~ minecraft:cold_ocean run attribute @s minecraft:attack_speed modifier add checkwar_bless:sniffer_$(count) 0.2 add_value
+execute if biome ~ ~ ~ minecraft:cold_ocean run tellraw @s [{text:"嗅探兽的收获：",bold:1b,color:"gold"},{text:"攻击速度 +0.3",bold:0b,color:"white"}]
+$execute if biome ~ ~ ~ minecraft:cold_ocean run attribute @s minecraft:attack_speed modifier add checkwar_bless:sniffer_$(count) 0.3 add_value
 execute if biome ~ ~ ~ minecraft:end_highlands run tellraw @s [{text:"嗅探兽的收获：",bold:1b,color:"gold"},{text:"获得 3 金苹果",bold:0b,color:"white"}]
 execute if biome ~ ~ ~ minecraft:end_highlands run give @s golden_apple 3
