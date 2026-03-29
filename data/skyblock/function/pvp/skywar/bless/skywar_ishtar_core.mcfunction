@@ -41,6 +41,8 @@ execute if items entity @s[tag=!Skywar_ishtar_16_alarm10] container.* *[custom_d
 execute if items entity @s[tag=Skywar_ishtar_16_alarm10] container.* *[custom_data={skywar_antiinvis:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core16_alarm10_cancel
 
 
+execute if entity @s[scores={If_MD_Mall=1..}] rotated ~ 0 run function skyblock:pvp/skywar/bless/skywar_ishtar_core12
+
 execute if entity @s[scores={If_MD_Stal=1..}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core18
 
 
@@ -86,7 +88,7 @@ execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[cus
 
 execute if items entity @s container.* *[custom_data={skywar_ishtar_23:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core23
 
-execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[custom_data={skywar_ishtar_24:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core24
+execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[custom_data={skywar_ishtar_24:1}] as @e[type=item,distance=0..40] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_core24
 
 execute if items entity @s container.* *[custom_data={skywar_ishtar_25:1}] run tag @e[type=egg,distance=2..5] add Bless25
 
