@@ -35,3 +35,5 @@ execute if biome ~ ~ ~ minecraft:cold_ocean run tellraw @s [{text:"嗅探兽的�
 $execute if biome ~ ~ ~ minecraft:cold_ocean run attribute @s minecraft:attack_speed modifier add checkwar_bless:sniffer_$(count) 0.3 add_value
 execute if biome ~ ~ ~ minecraft:end_highlands run tellraw @s [{text:"嗅探兽的收获：",bold:1b,color:"gold"},{text:"获得 3 金苹果",bold:0b,color:"white"}]
 execute if biome ~ ~ ~ minecraft:end_highlands run give @s golden_apple 3
+execute if biome ~ ~ ~ minecraft:pale_garden run tellraw @s [{text:"嗅探兽的收获：",bold:1b,color:"gold"},{text:"无限生命恢复 1级",bold:0b,color:"white"}]
+execute if biome ~ ~ ~ minecraft:pale_garden run effect give @s minecraft:regeneration infinite 0 true

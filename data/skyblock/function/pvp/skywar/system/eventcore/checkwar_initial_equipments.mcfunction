@@ -38,6 +38,8 @@ execute as @s at @s if biome ~ ~ ~ minecraft:dripstone_caves run tellraw @s [{te
 execute as @s at @s if biome ~ ~ ~ minecraft:dripstone_caves run attribute @s minecraft:mining_efficiency modifier add checkwar_bless:origin_1 2 add_value
 execute as @s at @s if biome ~ ~ ~ minecraft:eroded_badlands run tellraw @s [{text:"初始祝福：",bold:1b,color:"gold"},{text:"防御力 +2",bold:0b,color:"white"}]
 execute as @s at @s if biome ~ ~ ~ minecraft:eroded_badlands run attribute @s minecraft:armor modifier add checkwar_bless:origin_1 2 add_value
+execute as @s at @s if biome ~ ~ ~ minecraft:pale_garden run tellraw @s [{text:"初始祝福：",bold:1b,color:"gold"},{text:"生命吸收 4级",bold:0b,color:"white"}]
+execute as @s at @s if biome ~ ~ ~ minecraft:pale_garden run effect give @s minecraft:absorption infinite 3 true
 
 
 give @s written_book[written_book_content={pages:[ \
@@ -101,6 +103,11 @@ give @s written_book[written_book_content={pages:[ \
 {text:"初始祝福：",bold:1b},"防御力 +2\n\n", \
 {text:"嗅探兽奖励：",bold:1b},"防御力 +2\n\n", \
 {text:"铁 ",color:"#64bd5e"},{text:"金 ",color:"#64bd5e"}]], \
+[["",{text:"主题：苍白庭园",color:"dark_aqua",bold:1b}, \
+"\n外圈地图 · 普通\n\n", \
+{text:"初始祝福：",bold:1b},"生命吸收 4级\n\n", \
+{text:"嗅探兽奖励：",bold:1b},"无限生命恢复 1级\n\n", \
+{text:"煤 ",color:"#64bd5e"},{text:"铁 ",color:"#848d83"},{text:"金 ",color:"#848d83"},{text:"钻 ",color:"#64bd5e"},{text:"青金 ",color:"#ab5cff"},{text:"残骸 ",color:"#ab5cff"}]], \
 [["",{text:"主题：炎山海滨",color:"red",bold:1b}, \
 "\n内圈地图 · 普通\n\n", \
 {text:"初始祝福：",bold:1b},{text:"无",bold:0b,color:"gray"},"\n\n", \
