@@ -4,6 +4,6 @@ execute at @s[scores={rng1=2}] if entity @s[x=50000,y=0,z=50000,distance=..1500]
 execute at @s[scores={rng1=2}] if entity @s[x=50000,y=0,z=50000,distance=..1500] run particle white_smoke ~ ~ ~ 0 0 0 0.06 35
 execute at @s[scores={rng1=2}] if entity @s[x=50000,y=0,z=50000,distance=..1500] run playsound entity.tnt.primed master @a ~ ~ ~ 1 1.2
 execute at @s[scores={rng1=25}] if entity @s[x=50000,y=0,z=50000,distance=..1500] run summon tnt ~ ~ ~ {fuse:0}
-execute at @s[scores={rng1=25}] if entity @s[x=50000,y=0,z=50000,distance=..1500] run summon silverfish ~ ~ ~ {Health:23.5f,attributes:[{id:"max_health",base:23.5}]}
-execute at @s[scores={rng1=25}] if entity @s[x=50000,y=0,z=50000,distance=..1500] run summon silverfish ~ ~ ~ {Health:23.5f,attributes:[{id:"max_health",base:23.5}]}
+execute at @s[scores={rng1=25}] if entity @s[x=50000,y=0,z=50000,distance=..1500] run summon silverfish ~ ~ ~ {Health:30f,attributes:[{id:"max_health",base:30}]}
+execute at @s[scores={rng1=25}] if entity @s[x=50000,y=0,z=50000,distance=..1500] run summon silverfish ~ ~ ~ {Health:30f,attributes:[{id:"max_health",base:30}]}
 execute if entity @s[scores={rng1=25}] run kill @s
