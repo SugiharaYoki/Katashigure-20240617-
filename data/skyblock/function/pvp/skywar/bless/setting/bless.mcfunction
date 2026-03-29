@@ -36,7 +36,7 @@ function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"袖刺「恶耀黑星」"', description:'"低攻击剑×1 略微增加移动速度但减少自身防御力\\\\n使用此剑攻击敌人，会导致面前最近的敌人陷入严重的饥饿异常状态\\\\n同时自己获得3秒生命恢复\\\\n\\\\n注意：只在主手使用时有效"', id: 35, idsh: 35, pos: 1, idloop: 9}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"夜城「刺客尊荣」"', description:'"特殊模板 放置于背包时5格内隐身玩家显形\\\\n12格内有玩家时发出警报"', id: 16, idsh: 16, pos: 0, idloop: 16}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"影猎手"', title:'"泯没「丛禾蓦至」"', description:'"特殊模板 放置于背包时，可以通过下蹲恢复生命\\\\n在草丛中蹲下可以隐身"', id: 28, idsh: 28, pos: 1, idloop: 2}
-function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"驯兽师"', title:'"逃亡「刹踪替型」"', description:'"刹踪替型核心 消耗6 Q丢出时，移动速度大幅增加2秒，且可隐身3秒\\\\n蹲下时丢出 消耗12 可生成一只苦力怕"', id: 12, idsh: 12, pos: 0, idloop: 12}
+function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"驯兽师"', title:'"逃亡「刹踪替型」"', description:'"刹踪替型核心 消耗6 Q丢出时，移动速度大幅增加2秒，且可隐身3秒\\\\n蹲下时丢出 消耗12 移动速度提升改为3秒，且原地生成一只苦力怕"', id: 12, idsh: 12, pos: 0, idloop: 12}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"驯兽师"', title:'"命唤「尸亡重兽」"', description:'"特殊模板 放置于背包时每隔20秒获得刷怪蛋×1\\\\n\\\\n可能获得的刷怪蛋：蠹虫、岩浆怪、僵尸疣猪兽"', id: 7, idsh: 7, pos: 0, idloop: 7}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"驯兽师"', title:'"割荒「暗行豸螨」"', description:'"龙息×2 特殊模板 手持时将周围5格的龙息掉落物转换为炸弹螨\\\\n炸弹螨在有玩家接近时会剧烈爆炸"', id: 34, idsh: 34, pos: 1, idloop: 8}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"建筑师"', title:'"筑稳「雕刻罗盘」"', description:'"罗盘 持有时增加方块操作距离2格\\\\n除此之外也会增加移动速度与防御力"', id: 15, idsh: 15, pos: 0, idloop: 15}
