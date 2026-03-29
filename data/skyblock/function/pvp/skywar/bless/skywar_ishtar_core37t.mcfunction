@@ -54,3 +54,12 @@ $execute if entity @s[team=Team1_5] if items entity @a[distance=..$(If_Bless37),
 $execute if entity @s[team=Team1_6] if items entity @a[distance=..$(If_Bless37),team=Team1_6] container.* *[custom_data={skywar_ishtar_36:1}] as @a[distance=..$(If_Bless37),team=!Team1_6] run effect give @s wither 3 1 false
 $execute if entity @s[team=Team1_7] if items entity @a[distance=..$(If_Bless37),team=Team1_7] container.* *[custom_data={skywar_ishtar_36:1}] as @a[distance=..$(If_Bless37),team=!Team1_7] run effect give @s wither 3 1 false
 $execute if entity @s[team=Team1_8] if items entity @a[distance=..$(If_Bless37),team=Team1_8] container.* *[custom_data={skywar_ishtar_36:1}] as @a[distance=..$(If_Bless37),team=!Team1_8] run effect give @s wither 3 1 false
+
+$execute if entity @s[team=Team1_1] if items entity @a[distance=..$(If_Bless37),team=Team1_1] container.* *[custom_data={skywar_ishtar_1:1}] as @a[distance=..$(If_Bless37),team=Team1_1] run xp add @s 1 points
+$execute if entity @s[team=Team1_2] if items entity @a[distance=..$(If_Bless37),team=Team1_2] container.* *[custom_data={skywar_ishtar_1:1}] as @a[distance=..$(If_Bless37),team=Team1_2] run xp add @s 1 points
+$execute if entity @s[team=Team1_3] if items entity @a[distance=..$(If_Bless37),team=Team1_3] container.* *[custom_data={skywar_ishtar_1:1}] as @a[distance=..$(If_Bless37),team=Team1_3] run xp add @s 1 points
+$execute if entity @s[team=Team1_4] if items entity @a[distance=..$(If_Bless37),team=Team1_4] container.* *[custom_data={skywar_ishtar_1:1}] as @a[distance=..$(If_Bless37),team=Team1_4] run xp add @s 1 points
+$execute if entity @s[team=Team1_5] if items entity @a[distance=..$(If_Bless37),team=Team1_5] container.* *[custom_data={skywar_ishtar_1:1}] as @a[distance=..$(If_Bless37),team=Team1_5] run xp add @s 1 points
+$execute if entity @s[team=Team1_6] if items entity @a[distance=..$(If_Bless37),team=Team1_6] container.* *[custom_data={skywar_ishtar_1:1}] as @a[distance=..$(If_Bless37),team=Team1_6] run xp add @s 1 points
+$execute if entity @s[team=Team1_7] if items entity @a[distance=..$(If_Bless37),team=Team1_7] container.* *[custom_data={skywar_ishtar_1:1}] as @a[distance=..$(If_Bless37),team=Team1_7] run xp add @s 1 points
+$execute if entity @s[team=Team1_8] if items entity @a[distance=..$(If_Bless37),team=Team1_8] container.* *[custom_data={skywar_ishtar_1:1}] as @a[distance=..$(If_Bless37),team=Team1_8] run xp add @s 1 points
