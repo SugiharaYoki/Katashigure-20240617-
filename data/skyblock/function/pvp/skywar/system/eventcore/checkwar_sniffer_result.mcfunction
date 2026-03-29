@@ -25,8 +25,8 @@ execute if biome ~ ~ ~ minecraft:eroded_badlands run tellraw @s [{text:"嗅探�
 $execute if biome ~ ~ ~ minecraft:eroded_badlands run attribute @s minecraft:armor modifier add checkwar_bless:sniffer_$(count) 2 add_value
 
 
-execute if biome ~ ~ ~ minecraft:basalt_deltas run tellraw @s [{text:"嗅探兽的收获：",bold:1b,color:"gold"},{text:"抗火效果 5 分钟",bold:0b,color:"white"}]
-execute if biome ~ ~ ~ minecraft:basalt_deltas run effect give @s fire_resistance 300 0 true
+execute if biome ~ ~ ~ minecraft:basalt_deltas run tellraw @s [{text:"嗅探兽的收获：",bold:1b,color:"gold"},{text:"无限抗火",bold:0b,color:"white"}]
+execute if biome ~ ~ ~ minecraft:basalt_deltas run effect give @s fire_resistance infinite 0 true
 execute if biome ~ ~ ~ minecraft:desert run tellraw @s [{text:"嗅探兽的收获：",bold:1b,color:"gold"},{text:"获得 1 下界合金镐与 1 下界合金锹",bold:0b,color:"white"}]
 execute if biome ~ ~ ~ minecraft:desert run give @s netherite_pickaxe
 execute if biome ~ ~ ~ minecraft:desert run give @s netherite_shovel
