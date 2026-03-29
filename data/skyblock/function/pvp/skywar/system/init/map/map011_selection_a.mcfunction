@@ -1,4 +1,4 @@
-execute store result score SkyChess_Generator rng1 run random value 101..130
+execute store result score SkyChess_Generator rng1 run random value 101..131
 execute store result score SkyChess_Generator rng2 run random value 1..4
 #tell SugiharaYoki 地图加载中 - 选择池：A
 execute if score SkyChess_Generator rng1 matches 1..2 positioned ~ ~-1 ~ run setblock ~ ~ ~ structure_block{name:"minecraft:skychess_001",posX:-6,posY:1,posZ:-6,rotation:"NONE",mirror:"NONE",mode:"LOAD",ignoreEntities:0b}
