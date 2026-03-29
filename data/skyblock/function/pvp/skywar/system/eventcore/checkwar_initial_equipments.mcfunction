@@ -45,62 +45,62 @@ give @s written_book[written_book_content={pages:[ \
 "\n外圈地图 · 普通\n\n", \
 {text:"初始祝福：",bold:1b},"获得 15 本书\n\n", \
 {text:"嗅探兽奖励：",bold:1b},"获得 1 附魔台与 20 青金石\n\n", \
-{text:"煤 ",color:"#98ff91"},{text:"铁 ",color:"#98ff91"},{text:"钻 ",color:"#98ff91"},{text:"青金 ",color:"#ab5cff"}]], \
+{text:"煤 ",color:"#64bd5e"},{text:"铁 ",color:"#64bd5e"},{text:"钻 ",color:"#64bd5e"},{text:"青金 ",color:"#ab5cff"}]], \
 [["",{text:"主题：红木深林",color:"dark_aqua",bold:1b}, \
 "\n外圈地图 · 普通\n\n", \
 {text:"初始祝福：",bold:1b},"获得 15 支箭矢\n\n", \
 {text:"嗅探兽奖励：",bold:1b},"获得 20 支箭矢\n\n", \
-{text:"煤 ",color:"#98ff91"},{text:"金 ",color:"#98ff91"},{text:"钻 ",color:"#98ff91"}]], \
+{text:"煤 ",color:"#64bd5e"},{text:"金 ",color:"#64bd5e"},{text:"钻 ",color:"#64bd5e"}]], \
 [["",{text:"主题：繁花湿地",color:"dark_aqua",bold:1b}, \
 "\n外圈地图 · 普通\n\n", \
 {text:"初始祝福：",bold:1b},"移动效率 +30%\n\n", \
 {text:"嗅探兽奖励：",bold:1b},"获得 5 金萝卜\n\n", \
-{text:"煤 ",color:"#98ff91"},{text:"铁 ",color:"#98ff91"},{text:"钻 ",color:"#98ff91"}]], \
+{text:"煤 ",color:"#64bd5e"},{text:"铁 ",color:"#64bd5e"},{text:"钻 ",color:"#64bd5e"}]], \
 [["",{text:"主题：樱落草场",color:"dark_aqua",bold:1b}, \
 "\n外圈地图 · 普通\n\n", \
 {text:"初始祝福：",bold:1b},"攻击速度 +0.1\n\n", \
 {text:"嗅探兽奖励：",bold:1b},"获得 6 钻石\n\n", \
-{text:"煤 ",color:"#848d83"},{text:"铁 ",color:"#98ff91"},{text:"钻 ",color:"#98ff91"}]], \
+{text:"煤 ",color:"#848d83"},{text:"铁 ",color:"#64bd5e"},{text:"钻 ",color:"#64bd5e"}]], \
 [["",{text:"主题：风啸岩山",color:"dark_aqua",bold:1b}, \
 "\n外圈地图 · 普通\n\n", \
 {text:"初始祝福：",bold:1b},"生命上限 +4\n\n", \
 {text:"嗅探兽奖励：",bold:1b},"生命上限 +4\n\n", \
-{text:"煤 ",color:"#848d83"},{text:"铁 ",color:"#98ff91"},{text:"金 ",color:"#98ff91"},{text:"钻 ",color:"#98ff91"},{text:"青金 ",color:"#ab5cff"}]], \
+{text:"煤 ",color:"#848d83"},{text:"铁 ",color:"#64bd5e"},{text:"金 ",color:"#64bd5e"},{text:"钻 ",color:"#64bd5e"},{text:"青金 ",color:"#ab5cff"}]], \
 [["",{text:"主题：绯红森林",color:"dark_aqua",bold:1b}, \
 "\n外圈地图 · 普通\n拥有内圈变体“英灵殿堂”\n\n", \
 {text:"初始祝福：",bold:1b},"攻击力 +0.5\n\n", \
 {text:"嗅探兽奖励：",bold:1b},"攻击力 +0.5\n\n", \
-{text:"铁 ",color:"#848d83"},{text:"金 ",color:"#98ff91"},{text:"残骸 ",color:"#ab5cff"}]], \
+{text:"铁 ",color:"#848d83"},{text:"金 ",color:"#64bd5e"},{text:"残骸 ",color:"#ab5cff"}]], \
 [["",{text:"主题：珊瑚礁石",color:"dark_aqua",bold:1b}, \
 "\n外圈地图 · 普通\n拥有内圈变体“水下遗迹”\n\n", \
 {text:"初始祝福：",bold:1b},"水下挖掘速度 +50%\n\n", \
 {text:"嗅探兽奖励：",bold:1b},"水下挖掘速度 +50%\n\n", \
-{text:"铁 ",color:"#98ff91"},{text:"金 ",color:"#98ff91"},{text:"钻 ",color:"#98ff91"}]], \
+{text:"铁 ",color:"#64bd5e"},{text:"金 ",color:"#64bd5e"},{text:"钻 ",color:"#64bd5e"}]], \
 [["",{text:"主题：丛林流域",color:"dark_aqua",bold:1b}, \
 "\n外圈地图 · 普通\n拥有内圈变体“丛林书室”\n\n", \
 {text:"初始祝福：",bold:1b},"方块交互距离 +0.5\n\n", \
 {text:"嗅探兽奖励：",bold:1b},"方块交互距离 +0.5\n\n", \
-{text:"煤 ",color:"#848d83"},{text:"铁 ",color:"#98ff91"},{text:"金 ",color:"#98ff91"},{text:"钻 ",color:"#98ff91"},{text:"模板 ",color:"#ab5cff"}]], \
+{text:"煤 ",color:"#848d83"},{text:"铁 ",color:"#64bd5e"},{text:"金 ",color:"#64bd5e"},{text:"钻 ",color:"#64bd5e"},{text:"模板 ",color:"#ab5cff"}]], \
 [["",{text:"主题：皑雪平原",color:"dark_aqua",bold:1b}, \
 "\n外圈地图 · 普通\n\n", \
 {text:"初始祝福：",bold:1b},"护甲韧性 +2\n\n", \
 {text:"嗅探兽奖励：",bold:1b},"护甲韧性 +2\n\n", \
-{text:"煤 ",color:"#98ff91"},{text:"铁 ",color:"#848d83"},{text:"金 ",color:"#98ff91"},{text:"钻 ",color:"#98ff91"},{text:"青金 ",color:"#ab5cff"}]], \
+{text:"煤 ",color:"#64bd5e"},{text:"铁 ",color:"#848d83"},{text:"金 ",color:"#64bd5e"},{text:"钻 ",color:"#64bd5e"},{text:"青金 ",color:"#ab5cff"}]], \
 [["",{text:"主题：菌丝晶坑",color:"dark_aqua",bold:1b}, \
 "\n外圈地图 · 普通\n\n", \
 {text:"初始祝福：",bold:1b},"攻击距离 +0.5\n\n", \
 {text:"嗅探兽奖励：",bold:1b},"攻击距离 +0.5\n\n", \
-{text:"铁 ",color:"#848d83"},{text:"金 ",color:"#848d83"},{text:"钻 ",color:"#98ff91"},{text:"青金 ",color:"#ab5cff"}]], \
+{text:"铁 ",color:"#848d83"},{text:"金 ",color:"#848d83"},{text:"钻 ",color:"#64bd5e"},{text:"青金 ",color:"#ab5cff"}]], \
 [["",{text:"主题：滴水石洞",color:"dark_aqua",bold:1b}, \
 "\n外圈地图 · 普通\n\n", \
 {text:"初始祝福：",bold:1b},"挖掘效率 +2\n\n", \
 {text:"嗅探兽奖励：",bold:1b},"挖掘效率 +2\n\n", \
-{text:"煤 ",color:"#98ff91"},{text:"铁 ",color:"#848d83"},{text:"金 ",color:"#98ff91"},{text:"钻 ",color:"#98ff91"},{text:"青金 ",color:"#ab5cff"}]], \
+{text:"煤 ",color:"#64bd5e"},{text:"铁 ",color:"#848d83"},{text:"金 ",color:"#64bd5e"},{text:"钻 ",color:"#64bd5e"},{text:"青金 ",color:"#ab5cff"}]], \
 [["",{text:"主题：辉芜戈壁",color:"dark_aqua",bold:1b}, \
 "\n外圈地图 · 普通\n\n", \
 {text:"初始祝福：",bold:1b},"防御力 +2\n\n", \
 {text:"嗅探兽奖励：",bold:1b},"防御力 +2\n\n", \
-{text:"铁 ",color:"#98ff91"},{text:"金 ",color:"#98ff91"}]], \
+{text:"铁 ",color:"#64bd5e"},{text:"金 ",color:"#64bd5e"}]], \
 [["",{text:"主题：炎山海滨",color:"red",bold:1b}, \
 "\n内圈地图 · 普通\n\n", \
 {text:"初始祝福：",bold:1b},{text:"无",bold:0b,color:"gray"},"\n\n", \
@@ -110,7 +110,7 @@ give @s written_book[written_book_content={pages:[ \
 "\n内圈地图 · 普通\n\n", \
 {text:"初始祝福：",bold:1b},{text:"无",bold:0b,color:"gray"},"\n\n", \
 {text:"嗅探兽奖励：",bold:1b},"获得 1 下界合金镐与 1 下界合金锹\n\n", \
-{text:"铁 ",color:"#98ff91"},{text:"金 ",color:"#98ff91"}]], \
+{text:"铁 ",color:"#64bd5e"},{text:"金 ",color:"#64bd5e"}]], \
 [["",{text:"主题：钢铁秘间",color:"red",bold:1b}, \
 "\n内圈地图 · 普通\n\n", \
 {text:"初始祝福：",bold:1b},{text:"无",bold:0b,color:"gray"},"\n\n", \
