@@ -164,7 +164,6 @@ execute if score skywar_start rng1 matches 3 run scoreboard players set @e[tag=s
 execute if score skywar_start rng1 matches 3 run scoreboard players set @e[tag=sc] TempIf_Job6D 0
 execute if score skywar_start rng1 matches 3 run scoreboard players set @e[tag=sc] TempIf_Job6E 0
 #《清除遗留垃圾》
-#execute if score skywar_start rng1 matches 4 run kill @e[type=minecraft:item,distance=10000..]
 execute if score skywar_start rng1 matches 15 run kill @e[type=wolf,x=50000,y=50,z=50000,distance=0..600]
 #开局计时器
 execute if score skywar_start rng1 matches 2 run title @a[tag=!NoSkyWar] times 0 20 40
