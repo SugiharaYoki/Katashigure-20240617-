@@ -13,10 +13,10 @@ execute if entity @s[scores={ishtar_bless_2=1}] run give @s spire_armor_trim_smi
 execute if entity @s[scores={ishtar_bless_3=1}] run give @s spire_armor_trim_smithing_template[custom_name={text:"水晶聚能",italic:0b,color:"red"},custom_data={skywar_ishtar_1:1},lore=[{text:"根据末影水晶持有数量，每10秒额外增加充能",color:"white",italic:0b}]] 1
 execute if entity @s[scores={ishtar_bless_4=1}] run give @s spire_armor_trim_smithing_template[custom_name={text:"水晶聚能",italic:0b,color:"red"},custom_data={skywar_ishtar_1:1},lore=[{text:"根据末影水晶持有数量，每10秒额外增加充能",color:"white",italic:0b}]] 1
 
-execute if entity @s[scores={ishtar_bless_1=38}] run give @s eye_armor_trim_smithing_template[custom_name={text:"伪史虚影",italic:0b,color:"red"},custom_data={skywar_ishtar_38:1},lore=[{text:"长按左右键回到1秒前所在的地方",color:"white",italic:0b}]] 1
-execute if entity @s[scores={ishtar_bless_2=38}] run give @s eye_armor_trim_smithing_template[custom_name={text:"伪史虚影",italic:0b,color:"red"},custom_data={skywar_ishtar_38:1},lore=[{text:"长按左右键回到1秒前所在的地方",color:"white",italic:0b}]] 1
-execute if entity @s[scores={ishtar_bless_3=38}] run give @s eye_armor_trim_smithing_template[custom_name={text:"伪史虚影",italic:0b,color:"red"},custom_data={skywar_ishtar_38:1},lore=[{text:"长按左右键回到1秒前所在的地方",color:"white",italic:0b}]] 1
-execute if entity @s[scores={ishtar_bless_4=38}] run give @s eye_armor_trim_smithing_template[custom_name={text:"伪史虚影",italic:0b,color:"red"},custom_data={skywar_ishtar_38:1},lore=[{text:"长按左右键回到1秒前所在的地方",color:"white",italic:0b}]] 1
+execute if entity @s[scores={ishtar_bless_1=38}] run give @s eye_armor_trim_smithing_template[custom_name={text:"伪史虚影",italic:0b,color:"red"},custom_data={skywar_ishtar_38:1},lore=[{text:"长按左右键回到3秒前所在的地方",color:"white",italic:0b}]] 1
+execute if entity @s[scores={ishtar_bless_2=38}] run give @s eye_armor_trim_smithing_template[custom_name={text:"伪史虚影",italic:0b,color:"red"},custom_data={skywar_ishtar_38:1},lore=[{text:"长按左右键回到3秒前所在的地方",color:"white",italic:0b}]] 1
+execute if entity @s[scores={ishtar_bless_3=38}] run give @s eye_armor_trim_smithing_template[custom_name={text:"伪史虚影",italic:0b,color:"red"},custom_data={skywar_ishtar_38:1},lore=[{text:"长按左右键回到3秒前所在的地方",color:"white",italic:0b}]] 1
+execute if entity @s[scores={ishtar_bless_4=38}] run give @s eye_armor_trim_smithing_template[custom_name={text:"伪史虚影",italic:0b,color:"red"},custom_data={skywar_ishtar_38:1},lore=[{text:"长按左右键回到3秒前所在的地方",color:"white",italic:0b}]] 1
 
 
 execute if entity @s[scores={ishtar_bless_1=2}] run give @s totem_of_undying
