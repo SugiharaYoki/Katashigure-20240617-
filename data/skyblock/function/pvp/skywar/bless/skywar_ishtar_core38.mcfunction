@@ -2,7 +2,7 @@
 
 
 
-execute if entity @s[predicate=skyblock:left,predicate=skyblock:right] run scoreboard players add @s If_Bless38 1
+execute unless score @s If_Bless38 matches 8.. if entity @s[predicate=skyblock:left,predicate=skyblock:right] run scoreboard players add @s If_Bless38 1
 execute if score @s If_Bless38 matches ..7 unless entity @s[predicate=skyblock:left,predicate=skyblock:right] run scoreboard players set @s If_Bless38 0
 
 execute if entity @s[scores={If_Bless38=8..}] run scoreboard players add @s If_Bless38 1
