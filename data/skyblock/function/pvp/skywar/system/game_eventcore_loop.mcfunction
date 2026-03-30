@@ -28,7 +28,9 @@ scoreboard players set 『匿名·方时雨城』Katashigure Temp5 -98
 scoreboard players set IP地址<mc.tokumei.studio> Temp5 -99
 scoreboard players set ________ Temp5 -96
 
+scoreboard players add ishtar_bless38_loop rng1 1
 execute as @a at @s run function skyblock:pvp/skywar/system/game_eventcore_pers_player_controller_slow
+execute if score ishtar_bless38_loop rng1 matches 3.. run scoreboard players set ishtar_bless38_loop rng1 0
 
 execute if score sc Temp5_LoopF matches 1 run scoreboard objectives modify Temp5 displayname [{text:"战",color:"gold"},{text:"局",color:"gold"},{text:"报",color:"gold"},{text:"告",color:"gold"}]
 execute if score sc Temp5_LoopF matches 5 run scoreboard objectives modify Temp5 displayname [{text:"战",color:"blue"},{text:"局",color:"gold"},{text:"报",color:"gold"},{text:"告",color:"gold"}]

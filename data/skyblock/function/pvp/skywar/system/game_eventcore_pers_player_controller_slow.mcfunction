@@ -1,6 +1,5 @@
-scoreboard players add ishtar_bless38_loop rng1 1
+
 execute if score ishtar_bless38_loop rng1 matches 3.. if items entity @s container.* *[custom_data={skywar_ishtar_38:1}] at @s unless block ~ ~-1 ~ air unless block ~ ~-2 ~ air unless block ~ ~-3 ~ air unless block ~ ~-4 ~ air run function skyblock:pvp/skywar/bless/skywar_ishtar_core38_save_position
-execute if score ishtar_bless38_loop rng1 matches 3.. run scoreboard players set ishtar_bless38_loop rng1 0
 
 execute if score sc Temp5_LoopE matches 2 run title @s[tag=PVP_see] times 0 120 60
 execute if score sc Temp5_LoopE matches 2 run tag @s[tag=PVPing,tag=!PVP_dead] add PVP_win
