@@ -83,6 +83,7 @@ execute if entity @s[scores={Skywar_ishtar_usehorn=1..}] if items entity @s weap
 
 execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[custom_data={skywar_ishtar_36:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core36
 execute if items entity @s container.* *[custom_data={skywar_ishtar_37:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core37
+execute if items entity @s container.* *[custom_data={skywar_ishtar_38:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core38
 
 execute if items entity @s[scores={Skywar_ishtar_usehorn=1..}] container.* *[custom_data={skywar_ishtar_22:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core22
 

@@ -28,6 +28,8 @@ scoreboard players set 『匿名·方时雨城』Katashigure Temp5 -98
 scoreboard players set IP地址<mc.tokumei.studio> Temp5 -99
 scoreboard players set ________ Temp5 -96
 
+execute if items entity @s container.* *[custom_data={skywar_ishtar_38:1}] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_core38_save_position
+
 execute if score sc Temp5_LoopF matches 1 run scoreboard objectives modify Temp5 displayname [{text:"战",color:"gold"},{text:"局",color:"gold"},{text:"报",color:"gold"},{text:"告",color:"gold"}]
 execute if score sc Temp5_LoopF matches 5 run scoreboard objectives modify Temp5 displayname [{text:"战",color:"blue"},{text:"局",color:"gold"},{text:"报",color:"gold"},{text:"告",color:"gold"}]
 execute if score sc Temp5_LoopF matches 6 run scoreboard objectives modify Temp5 displayname [{text:"战",color:"blue"},{text:"局",color:"blue"},{text:"报",color:"gold"},{text:"告",color:"gold"}]

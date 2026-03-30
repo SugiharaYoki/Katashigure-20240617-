@@ -99,6 +99,8 @@ execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bl
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless37 dummy
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless37_type3_cooldown dummy
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless37_change_timer dummy
+execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless38 dummy
+execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_Bless38_code dummy
 execute if score skywar_start rng1 matches 2 run scoreboard objectives add If_BlessDoDamage minecraft.custom:damage_dealt
 execute if score skywar_start rng1 matches 2 as @a[scores={If_Bless11=1..}] run attribute @s jump_strength modifier remove skywar_ishtar_bless11_01
 #无意义变量 scoreboard players reset @s RemainPlayer
@@ -144,6 +146,8 @@ execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scor
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless37 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless37_type3_cooldown 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless37_change_timer 0
+execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless38 0
+execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless38_code 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_BlessDoDamage 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run xp set @s 30 levels
 #execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless31c 0

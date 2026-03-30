@@ -27,6 +27,7 @@ function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"旅行家"', title
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"旅行家"', title:'"统礼「水晶聚能」"', description:'"末影水晶×1、特殊模板\\\\n放置于背包时，根据末影水晶持有数量，每10秒额外增加充能"', id: 1, idsh: 1, pos: 0, idloop: 1}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"旅行家"', title:'"纵礼「不死图腾」"', description:'"不死图腾×1"', id: 2, idsh: 2, pos: 0, idloop: 2}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"旅行家"', title:'"纺礼「陨铁甲胄」"', description:'"钻石铠×1 100%击退抗性 但是防御力较低"', id: 3, idsh: 3, pos: 0, idloop: 3}
+function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"旅行家"', title:'"解礼「伪史虚影」"', description:'"特殊模板\\\\n放置于背包时，长按左右键回到1秒前所在的地方"', id: 38, idsh: 38, pos: 1, idloop: 12}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"湖灯使者"', title:'"幽光「染澈明灯」"', description:'"铜灯笼、特殊模板\\\\n放置于背包时，手持不同类型的铜灯笼可以造成不同的效果\\\\n - 整新：范围内所有友军获得3秒的抗性I\\\\n - 半损：范围内所有友军获得3秒的力量I\\\\n - 满锈：范围内所有友军获得3秒的生命恢复II\\\\n\\\\n除此之外，可以同时长按前进与后退键切换灯的类型\\\\n切换成功后将使得6格内所有友军获得3秒的速度I\\\\n\\\\n灯的影响范围随手持时间增加，但切换灯的类型将减少一定的影响范围\\\\n\\\\n连携效果：若影响范围内存在友方「焚白恶魔」持有者，\\\\n则影响范围内的敌人会持续获得3秒的凋零效果\\\\n\\\\n连携效果：若影响范围内存在友方「水晶聚能」持有者，\\\\n则影响范围内的友军充能速度加快"', id: 37, idsh: 37, pos: 1, idloop: 11}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"湖灯使者"', title:'"湖灯「雷厄渡水」"', description:'"三叉戟×3、特殊模板\\\\n副手手持模板时，距离自己最近的落地三叉戟\\\\n将被转换为“雷祸”三叉戟，并自毁\\\\n\\\\n雷祸降下的闪电可以击碎任何透光的玻璃"', id: 4, idsh: 4, pos: 0, idloop: 4}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"湖灯使者"', title:'"雷祸「天愠引庸」"', description:'"盾牌×3、特殊模板\\\\n放置于背包时，使用盾牌防御成功将在身旁降下天雷\\\\n且自身获得2秒无敌\\\\n将会失去一个盾牌"', id: 30, idsh: 30, pos: 1, idloop: 4}
@@ -57,7 +58,7 @@ function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"尘埃法师"', ti
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"尘埃法师"', title:'"归尘「扬焱剧爆」"', description:'"扬焱剧爆核心 消耗8 Q丢出时，在身边召唤引燃的TNT，该TNT引爆速度比普通TNT快30%\\\\n使用后会立刻获得4个TNT"', id: 17, idsh: 17, pos: 0, idloop: 17}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"尘埃法师"', title:'"唤尘「漆幕虚垒」"', description:'"漆幕虚垒核心 消耗8 Q丢出时，在面前4格处召唤持续十数秒的烟幕"', id: 18, idsh: 18, pos: 0, idloop: 18}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"欺诈师"', title:'"瞒天「坠落狱穴」"', description:'"号角与特殊模板 放置于背包时吹响号角，即可将20格内的矿镐掉落物化作向下轰击的毁灭炮\\\\n开局会获得三个石镐\\\\n越强的镐破坏力越大"', id: 24, idsh: 24, pos: 0, idloop: 24}
-function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"欺诈师"', title:'"乍现「诞生虚桥」"', description:'"鸡蛋×3、特殊模板 放置于背包时，5格内的鸡蛋会被附上“欺诈”状态\\\\n“欺诈”蛋会自动生成一条玻璃天桥\\\\n距离25格内没有玩家时将自动取消“欺诈”状态"', id: 25, idsh: 25, pos: 0, idloop: 25}
+function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"欺诈师"', title:'"显现「诞生虚桥」"', description:'"鸡蛋×3、特殊模板 放置于背包时，5格内的鸡蛋会被附上“欺诈”状态\\\\n“欺诈”蛋会自动生成一条玻璃天桥\\\\n距离25格内没有玩家时将自动取消“欺诈”状态"', id: 25, idsh: 25, pos: 0, idloop: 25}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"欺诈师"', title:'"秘文「理性混淆」"', description:'"风弹×10、特殊模板 放置于背包时，5格内的风弹会被附上“混淆”状态\\\\n“混淆”风弹会自动对周围64格内的玩家输入大量的干扰文字，并造成3秒挖掘疲劳II\\\\n拥有“秘文「理性混淆」”模板的玩家可以免疫此效果"', id: 26, idsh: 26, pos: 0, idloop: 26}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"欺诈师"', title:'"乍慌「虚惊戏谑」"', description:'"雪球×16、特殊模板 放置于背包时，每丢出一次雪球\\\\n便会为30格内的玩家播放一次虚假音效\\\\n\\\\n5格内的雪球会被附上“虚惊”状态\\\\n“虚惊”雪球会使周围4格内的玩家获得迟缓II\\\\n拥有这张模板的玩家可以免疫此效果"', id: 29, idsh: 29, pos: 1, idloop: 3}
 
