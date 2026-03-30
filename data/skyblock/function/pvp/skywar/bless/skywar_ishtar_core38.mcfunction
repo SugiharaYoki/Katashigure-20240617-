@@ -12,7 +12,7 @@ execute if score @s If_Bless38 matches 8 at @s run playsound minecraft:item.chor
 execute if score @s If_Bless38 matches 8 at @s run attribute @s fall_damage_multiplier base set 0
 execute if score @s If_Bless38 matches 8 at @s run particle portal ~ ~1 ~ 0.3 0.3 0.3 0.1 30
 
-execute if score @s If_Bless38 matches 8.. at @s run tp @s[scores={If_Bless38_code=1}] @n[distance=..1000,type=marker,scores={If_Bless38_code=1},tag=If_Bless38]
+execute if score @s If_Bless38 matches 8 at @s run tp @s[scores={If_Bless38_code=1}] @n[distance=..1000,type=marker,scores={If_Bless38_code=1},tag=If_Bless38]
 
 execute if score @s If_Bless38 matches 21.. at @s run attribute @s fall_damage_multiplier base reset
 execute if score @s If_Bless38 matches 8 at @s run particle reverse_portal ~ ~1 ~ 0.3 0.3 0.3 0.1 30
