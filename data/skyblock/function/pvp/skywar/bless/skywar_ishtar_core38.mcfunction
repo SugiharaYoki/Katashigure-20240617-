@@ -8,6 +8,7 @@ execute unless entity @s[predicate=skyblock:left,predicate=skyblock:right] run s
 
 
 execute if score @s If_Bless38 matches 8.. at @s run playsound minecraft:item.chorus_fruit.teleport player @a ~ ~ ~ 2 1.2
+execute if score @s If_Bless38 matches 8.. at @s run effect give @s resistance 1 1 true
 execute if score @s If_Bless38 matches 8.. at @s run particle portal ~ ~1 ~ 0.3 0.3 0.3 0.1 30
 
 execute if score @s If_Bless38 matches 8.. at @s run tp @s[scores={If_Bless38_code=1}] @n[distance=..1000,type=marker,scores={If_Bless38_code=1},tag=If_Bless38]
