@@ -10,16 +10,16 @@ execute at @s[x_rotation=0..29] run tag @s remove ishtar_27_direction2
 execute at @s[x_rotation=0..29] run tag @s remove ishtar_27_direction3
 execute at @s[x_rotation=0..29] run tag @s remove ishtar_27_direction4
 
-execute if entity @s[tag=ishtar_27_direction1] unless block ~ ~ ~-1 bedrock unless block ~ ~ ~-2 bedrock unless block ~ ~ ~-3 bedrock unless block ~ ~ ~-4 bedrock run fill ~ ~ ~ ~ ~1 ~-4 air destroy
-execute if entity @s[tag=ishtar_27_direction2] unless block ~1 ~ ~ bedrock unless block ~2 ~ ~ bedrock unless block ~3 ~ ~ bedrock unless block ~4 ~ ~ bedrock run fill ~ ~ ~ ~4 ~1 ~ air destroy
-execute if entity @s[tag=ishtar_27_direction3] unless block ~ ~ ~1 bedrock unless block ~ ~ ~2 bedrock unless block ~ ~ ~3 bedrock unless block ~ ~ ~4 bedrock run fill ~ ~ ~ ~ ~1 ~4 air destroy
-execute if entity @s[tag=ishtar_27_direction4] unless block ~-1 ~ ~ bedrock unless block ~-2 ~ ~ bedrock unless block ~-3 ~ ~ bedrock unless block ~-4 ~ ~ bedrock run fill ~ ~ ~ ~-4 ~1 ~ air destroy
+execute if entity @s[tag=ishtar_27_direction1] unless block ~ ~1 ~-1 bedrock unless block ~ ~1 ~-2 bedrock unless block ~ ~1 ~-3 bedrock unless block ~ ~1 ~-4 bedrock run fill ~ ~ ~ ~ ~1 ~-4 air destroy
+execute if entity @s[tag=ishtar_27_direction2] unless block ~1 ~1 ~ bedrock unless block ~2 ~1 ~ bedrock unless block ~3 ~1 ~ bedrock unless block ~4 ~1 ~ bedrock run fill ~ ~ ~ ~4 ~1 ~ air destroy
+execute if entity @s[tag=ishtar_27_direction3] unless block ~ ~1 ~1 bedrock unless block ~ ~1 ~2 bedrock unless block ~ ~1 ~3 bedrock unless block ~ ~1 ~4 bedrock run fill ~ ~ ~ ~ ~1 ~4 air destroy
+execute if entity @s[tag=ishtar_27_direction4] unless block ~-1 ~1 ~ bedrock unless block ~-2 ~1 ~ bedrock unless block ~-3 ~1 ~ bedrock unless block ~-4 ~1 ~ bedrock run fill ~ ~ ~ ~-4 ~1 ~ air destroy
 execute if entity @s[tag=ishtar_27_direction1] unless block ~ ~ ~-1 bedrock unless block ~ ~ ~-2 bedrock unless block ~ ~ ~-3 bedrock unless block ~ ~ ~-4 bedrock run fill ~ ~-1 ~ ~ ~-1 ~-4 deepslate_tiles destroy
 execute if entity @s[tag=ishtar_27_direction2] unless block ~1 ~ ~ bedrock unless block ~2 ~ ~ bedrock unless block ~3 ~ ~ bedrock unless block ~4 ~ ~ bedrock run fill ~ ~-1 ~ ~4 ~-1 ~ deepslate_tiles destroy
 execute if entity @s[tag=ishtar_27_direction3] unless block ~ ~ ~1 bedrock unless block ~ ~ ~2 bedrock unless block ~ ~ ~3 bedrock unless block ~ ~ ~4 bedrock run fill ~ ~-1 ~ ~ ~-1 ~4 deepslate_tiles destroy
 execute if entity @s[tag=ishtar_27_direction4] unless block ~-1 ~ ~ bedrock unless block ~-2 ~ ~ bedrock unless block ~-3 ~ ~ bedrock unless block ~-4 ~ ~ bedrock run fill ~ ~-1 ~ ~-4 ~-1 ~ deepslate_tiles destroy
 
-execute if entity @s[tag=ishtar_27_direction5] unless block ~ ~ ~-2 bedrock unless block ~ ~ ~2 bedrock unless block ~2 ~ ~ bedrock unless block ~-2 ~ ~ bedrock run fill ~2 ~ ~2 ~-2 ~ ~-2 air destroy
+execute if entity @s[tag=ishtar_27_direction5] unless block ~ ~ ~-2 bedrock unless block ~ ~ ~2 bedrock unless block ~2 ~ ~ bedrock unless block ~-2 ~ ~ bedrock run fill ~2 ~ ~2 ~-2 ~1 ~-2 air destroy
 execute if entity @s[tag=ishtar_27_direction5] unless block ~ ~-1 ~-2 bedrock unless block ~ ~-1 ~2 bedrock unless block ~2 ~-1 ~ bedrock unless block ~-2 ~-1 ~ bedrock run fill ~2 ~-1 ~2 ~-2 ~-1 ~-2 deepslate_tiles destroy
 
 playsound block.anvil.land block @a ~ ~ ~ 0.5 0.5

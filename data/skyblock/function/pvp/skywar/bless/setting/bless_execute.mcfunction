@@ -44,6 +44,16 @@ execute as @s[scores={MultiMenu=131037}] at @s at @n[tag=id_data_reading,type=ma
 execute as @s[scores={MultiMenu=131038}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.12 green_wool run scoreboard players set @s ishtar_bless_1 38
 execute as @s[scores={MultiMenu=131039}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.13 green_wool run scoreboard players set @s ishtar_bless_1 39
 execute as @s[scores={MultiMenu=131040}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.14 green_wool run scoreboard players set @s ishtar_bless_1 40
+execute as @s[scores={MultiMenu=131041}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~0 container.15 green_wool run scoreboard players set @s ishtar_bless_1 41
+execute as @s[scores={MultiMenu=131042}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~0 container.16 green_wool run scoreboard players set @s ishtar_bless_1 42
+execute as @s[scores={MultiMenu=131043}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~0 container.17 green_wool run scoreboard players set @s ishtar_bless_1 43
+execute as @s[scores={MultiMenu=131044}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~0 container.18 green_wool run scoreboard players set @s ishtar_bless_1 44
+execute as @s[scores={MultiMenu=131045}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~0 container.19 green_wool run scoreboard players set @s ishtar_bless_1 45
+execute as @s[scores={MultiMenu=131046}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.20 green_wool run scoreboard players set @s ishtar_bless_1 46
+execute as @s[scores={MultiMenu=131047}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.21 green_wool run scoreboard players set @s ishtar_bless_1 47
+execute as @s[scores={MultiMenu=131048}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.22 green_wool run scoreboard players set @s ishtar_bless_1 48
+execute as @s[scores={MultiMenu=131049}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.23 green_wool run scoreboard players set @s ishtar_bless_1 49
+execute as @s[scores={MultiMenu=131050}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.24 green_wool run scoreboard players set @s ishtar_bless_1 50
 
 execute as @s[scores={MultiMenu=132001}] at @s at @n[tag=id_data_reading,type=marker] if items block ~0 ~ ~0 container.1 green_wool run scoreboard players set @s ishtar_bless_2 1
 execute as @s[scores={MultiMenu=132002}] at @s at @n[tag=id_data_reading,type=marker] if items block ~0 ~ ~0 container.2 green_wool run scoreboard players set @s ishtar_bless_2 2
@@ -85,6 +95,16 @@ execute as @s[scores={MultiMenu=132037}] at @s at @n[tag=id_data_reading,type=ma
 execute as @s[scores={MultiMenu=132038}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.12 green_wool run scoreboard players set @s ishtar_bless_2 38
 execute as @s[scores={MultiMenu=132039}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.13 green_wool run scoreboard players set @s ishtar_bless_2 39
 execute as @s[scores={MultiMenu=132040}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.14 green_wool run scoreboard players set @s ishtar_bless_2 40
+execute as @s[scores={MultiMenu=132041}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~0 container.15 green_wool run scoreboard players set @s ishtar_bless_2 41
+execute as @s[scores={MultiMenu=132042}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~0 container.16 green_wool run scoreboard players set @s ishtar_bless_2 42
+execute as @s[scores={MultiMenu=132043}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~0 container.17 green_wool run scoreboard players set @s ishtar_bless_2 43
+execute as @s[scores={MultiMenu=132044}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~0 container.18 green_wool run scoreboard players set @s ishtar_bless_2 44
+execute as @s[scores={MultiMenu=132045}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~0 container.19 green_wool run scoreboard players set @s ishtar_bless_2 45
+execute as @s[scores={MultiMenu=132046}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.20 green_wool run scoreboard players set @s ishtar_bless_2 46
+execute as @s[scores={MultiMenu=132047}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.21 green_wool run scoreboard players set @s ishtar_bless_2 47
+execute as @s[scores={MultiMenu=132048}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.22 green_wool run scoreboard players set @s ishtar_bless_2 48
+execute as @s[scores={MultiMenu=132049}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.23 green_wool run scoreboard players set @s ishtar_bless_2 49
+execute as @s[scores={MultiMenu=132050}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.24 green_wool run scoreboard players set @s ishtar_bless_2 50
 
 
 execute as @s[scores={MultiMenu=133001}] at @s at @n[tag=id_data_reading,type=marker] if items block ~0 ~ ~0 container.1 green_wool run scoreboard players set @s ishtar_bless_3 1
@@ -128,6 +148,17 @@ execute as @s[scores={MultiMenu=133038}] at @s at @n[tag=id_data_reading,type=ma
 execute as @s[scores={MultiMenu=133039}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.13 green_wool run scoreboard players set @s ishtar_bless_3 39
 execute as @s[scores={MultiMenu=133040}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.14 green_wool run scoreboard players set @s ishtar_bless_3 40
 
+execute as @s[scores={MultiMenu=133041}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~0 container.15 green_wool run scoreboard players set @s ishtar_bless_3 41
+execute as @s[scores={MultiMenu=133042}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~0 container.16 green_wool run scoreboard players set @s ishtar_bless_3 42
+execute as @s[scores={MultiMenu=133043}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~0 container.17 green_wool run scoreboard players set @s ishtar_bless_3 43
+execute as @s[scores={MultiMenu=133044}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~0 container.18 green_wool run scoreboard players set @s ishtar_bless_3 44
+execute as @s[scores={MultiMenu=133045}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~0 container.19 green_wool run scoreboard players set @s ishtar_bless_3 45
+execute as @s[scores={MultiMenu=133046}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.20 green_wool run scoreboard players set @s ishtar_bless_3 46
+execute as @s[scores={MultiMenu=133047}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.21 green_wool run scoreboard players set @s ishtar_bless_3 47
+execute as @s[scores={MultiMenu=133048}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.22 green_wool run scoreboard players set @s ishtar_bless_3 48
+execute as @s[scores={MultiMenu=133049}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.23 green_wool run scoreboard players set @s ishtar_bless_3 49
+execute as @s[scores={MultiMenu=133050}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.24 green_wool run scoreboard players set @s ishtar_bless_3 50
+
 execute as @s[scores={MultiMenu=134001}] at @s at @n[tag=id_data_reading,type=marker] if items block ~0 ~ ~0 container.1 green_wool run scoreboard players set @s ishtar_bless_4 1
 execute as @s[scores={MultiMenu=134002}] at @s at @n[tag=id_data_reading,type=marker] if items block ~0 ~ ~0 container.2 green_wool run scoreboard players set @s ishtar_bless_4 2
 execute as @s[scores={MultiMenu=134003}] at @s at @n[tag=id_data_reading,type=marker] if items block ~0 ~ ~0 container.3 green_wool run scoreboard players set @s ishtar_bless_4 3
@@ -164,10 +195,21 @@ execute as @s[scores={MultiMenu=134033}] at @s at @n[tag=id_data_reading,type=ma
 execute as @s[scores={MultiMenu=134034}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~0 container.8 green_wool run scoreboard players set @s ishtar_bless_4 34
 execute as @s[scores={MultiMenu=134035}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~0 container.9 green_wool run scoreboard players set @s ishtar_bless_4 35
 execute as @s[scores={MultiMenu=134036}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.10 green_wool run scoreboard players set @s ishtar_bless_4 36
-execute as @s[scores={MultiMenu=134037}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.11 green_wool run scoreboard players set @s ishtar_bless_4 37
+execute as @s[scores={MultiMenu=134037}] at @s at @n[tag=id_data_rezading,type=marker] if items block ~1 ~ ~ container.11 green_wool run scoreboard players set @s ishtar_bless_4 37
 execute as @s[scores={MultiMenu=134038}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.12 green_wool run scoreboard players set @s ishtar_bless_4 38
 execute as @s[scores={MultiMenu=134039}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.13 green_wool run scoreboard players set @s ishtar_bless_4 39
 execute as @s[scores={MultiMenu=134040}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.14 green_wool run scoreboard players set @s ishtar_bless_4 40
+
+execute as @s[scores={MultiMenu=134041}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~0 container.15 green_wool run scoreboard players set @s ishtar_bless_4 41
+execute as @s[scores={MultiMenu=134042}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~0 container.16 green_wool run scoreboard players set @s ishtar_bless_4 42
+execute as @s[scores={MultiMenu=134043}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~0 container.17 green_wool run scoreboard players set @s ishtar_bless_4 43
+execute as @s[scores={MultiMenu=134044}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~0 container.18 green_wool run scoreboard players set @s ishtar_bless_4 44
+execute as @s[scores={MultiMenu=134045}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~0 container.19 green_wool run scoreboard players set @s ishtar_bless_4 45
+execute as @s[scores={MultiMenu=134046}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.20 green_wool run scoreboard players set @s ishtar_bless_4 46
+execute as @s[scores={MultiMenu=134047}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.21 green_wool run scoreboard players set @s ishtar_bless_4 47
+execute as @s[scores={MultiMenu=134048}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.22 green_wool run scoreboard players set @s ishtar_bless_4 48
+execute as @s[scores={MultiMenu=134049}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.23 green_wool run scoreboard players set @s ishtar_bless_4 49
+execute as @s[scores={MultiMenu=134050}] at @s at @n[tag=id_data_reading,type=marker] if items block ~1 ~ ~ container.24 green_wool run scoreboard players set @s ishtar_bless_4 50
 
 execute as @s[scores={MultiMenu=139001}] at @s at @n[tag=id_data_reading,type=marker] unless items block ~0 ~ ~0 container.1 green_wool run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 1, code: 1}
 execute as @s[scores={MultiMenu=139002}] at @s at @n[tag=id_data_reading,type=marker] unless items block ~0 ~ ~0 container.2 green_wool run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:2, price:50, id: 2, code: 2}
@@ -209,6 +251,16 @@ execute as @s[scores={MultiMenu=139037}] at @s at @n[tag=id_data_reading,type=ma
 execute as @s[scores={MultiMenu=139038}] at @s at @n[tag=id_data_reading,type=marker] unless items block ~1 ~ ~ container.12 green_wool run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 38, code: 12}
 execute as @s[scores={MultiMenu=139039}] at @s at @n[tag=id_data_reading,type=marker] unless items block ~1 ~ ~ container.13 green_wool run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 39, code: 13}
 execute as @s[scores={MultiMenu=139040}] at @s at @n[tag=id_data_reading,type=marker] unless items block ~1 ~ ~ container.14 green_wool run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 40, code: 14}
+execute as @s[scores={MultiMenu=139041}] at @s at @n[tag=id_data_reading,type=marker] unless items block ~1 ~ ~0 container.15 green_wool run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 41, code: 15}
+execute as @s[scores={MultiMenu=139042}] at @s at @n[tag=id_data_reading,type=marker] unless items block ~1 ~ ~0 container.16 green_wool run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 42, code: 16}
+execute as @s[scores={MultiMenu=139043}] at @s at @n[tag=id_data_reading,type=marker] unless items block ~1 ~ ~0 container.17 green_wool run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 43, code: 17}
+execute as @s[scores={MultiMenu=139044}] at @s at @n[tag=id_data_reading,type=marker] unless items block ~1 ~ ~0 container.18 green_wool run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 44, code: 18}
+execute as @s[scores={MultiMenu=139045}] at @s at @n[tag=id_data_reading,type=marker] unless items block ~1 ~ ~0 container.19 green_wool run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 45, code: 19}
+execute as @s[scores={MultiMenu=139046}] at @s at @n[tag=id_data_reading,type=marker] unless items block ~1 ~ ~ container.20 green_wool run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 46, code: 20}
+execute as @s[scores={MultiMenu=139047}] at @s at @n[tag=id_data_reading,type=marker] unless items block ~1 ~ ~ container.21 green_wool run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 47, code: 21}
+execute as @s[scores={MultiMenu=139048}] at @s at @n[tag=id_data_reading,type=marker] unless items block ~1 ~ ~ container.22 green_wool run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 48, code: 22}
+execute as @s[scores={MultiMenu=139049}] at @s at @n[tag=id_data_reading,type=marker] unless items block ~1 ~ ~ container.23 green_wool run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 49, code: 23}
+execute as @s[scores={MultiMenu=139050}] at @s at @n[tag=id_data_reading,type=marker] unless items block ~1 ~ ~ container.24 green_wool run function skyblock:pvp/skywar/bless/setting/bless_purchase {pos:3, price:50, id: 50, code: 24}
 
 function skyblock:city/id/read_finish
 
