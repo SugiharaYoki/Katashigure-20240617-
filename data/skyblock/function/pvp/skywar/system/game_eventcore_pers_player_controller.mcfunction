@@ -16,6 +16,11 @@ execute if score sc Map_Code matches 11 if entity @s[y=80,dy=10] run damage @s 6
 execute if score sc Map_Code matches 11 if entity @s[y=80,dy=10] run fill ~ ~ ~ ~ ~1 ~ air destroy
 execute if score sc Map_Code matches 11 if entity @s[y=80,dy=10] run tp ~ 117 ~
 
+execute if items entity @s container.* *[custom_data={skywar_ishtar_38:1}] at @s run scoreboard players add @s If_Bless38_renew 1
+execute if items entity @s container.* *[custom_data={skywar_ishtar_38:1}] at @s if block ~ ~-1 ~ air if block ~ ~-2 ~ air if block ~ ~-3 ~ air if block ~ ~-4 ~ air run scoreboard players set @s If_Bless38_renew 0
+execute if score @s If_Bless38_rene matches 2 run function skyblock:pvp/skywar/bless/skywar_ishtar_core38_save_position
+execute if score @s If_Bless38_renew matches 60.. run scoreboard players set @s If_Bless38_renew 0
+
 
 
 execute if block -131 58 -133 diamond_block run function skyblock:pvp/skywar/bless/skywar_ishtar_core
