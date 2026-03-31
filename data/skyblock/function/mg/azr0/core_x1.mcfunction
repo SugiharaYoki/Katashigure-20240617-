@@ -1,5 +1,5 @@
 #计时器0
-execute store result score MG_AZR0_rng rng7 if entity @e[tag=MG_AZR0MOB,type=!endermite]
+execute store result score MG_AZR0_rng rng7 if entity @e[tag=MG_AZR0MOB,type=!endermite,distance=..1000]
 execute if score MG_AZR0_Timer rng3 matches 0.. run scoreboard players remove MG_AZR0_Timer rng3 1
 execute if score MG_AZR0_Timer rng3 matches 0..5 if score MG_AZR0_rng rng7 matches 50.. run scoreboard players add MG_AZR0_Timer rng3 1
 execute if score MG_AZR0_Timer rng3 matches 0..5 if score MG_AZR0_rng rng7 matches ..49 if entity @n[tag=MG_AZR0BOSS] run scoreboard players add MG_AZR0_Timer rng3 1
@@ -33,14 +33,13 @@ execute if score MG_AZR0_Timer rng3 matches 0 run function skyblock:mg/azr0/even
 execute unless entity @a[tag=MG_AZR0PT] if entity @a[gamemode=!spectator,distance=0..200] run function skyblock:mg/azr0/end with storage skyblock:cache azr0.BaseCoordinate
 
 
-function skyblock:mg/azr0/system/mob/skill
+execute as @e[distance=..1000] at @s run function skyblock:mg/azr0/system/mob/skill
 
 
 execute as @a[tag=MG_AZR0PT] at @s unless entity @n[tag=mg_azr0,distance=..5000] run tp @s 125078 4 -241
 
 
 
-execute at @n[tag=mg_azr0,type=marker] run gamemode spectator @a[tag=!MG_AZR0PT,gamemode=!creative,distance=0..200]
 
 
 execute as @a[distance=0..100,x=125075,y=4,z=-185,dx=5,dy=5,dz=1,tag=Gaming,tag=MG_AZR0PT] run function skyblock:mg/azr0/system/player/quit_game

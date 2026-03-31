@@ -20,26 +20,18 @@ execute if score MG_AZR0_Timer rng9 matches 12..50 run function skyblock:mg/azr0
 
 execute as @a[tag=MG_AZR0PT,scores={Azr0_UPG_OTSD_auto_collect=1}] at @s as @e[type=item,distance=..10] run tp @s ~ ~ ~
 
-execute if score MG_AZR0_Timer rng3 matches 10.. as @e[tag=mg_azr0_MobPortals_horizontal,limit=2] at @s run function skyblock:mg/azr0/particle/mob_portal_horizontal
-execute if score MG_AZR0_Timer rng3 matches 10.. as @e[tag=mg_azr0_MobPortals_vertical,limit=2] at @s run function skyblock:mg/azr0/particle/mob_portal_horizontal
 
 
-execute as @e[type=bogged,tag=MG_AZR0MOB,distance=..200,nbt=!{Fire:0s}] run damage @s 3 on_fire
-
-#赐福技能效果
-execute as @e[type=marker,tag=Azr0_SKILL_14,distance=..200] at @s run function skyblock:mg/azr0/system/player/skill/skill_14_e
-execute as @e[type=marker,tag=Azr0_SKILL_15,distance=..200] at @s run function skyblock:mg/azr0/system/player/skill/skill_15_e
-execute as @e[type=marker,tag=Azr0_SKILL_23,distance=..200] at @s run function skyblock:mg/azr0/system/player/skill/skill_23_e
 
 
 #商店系统
 execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/shop/index
 
-function skyblock:mg/azr0/system/mob/skill_fast
+execute as @e[distance=..1000] at @s run function skyblock:mg/azr0/system/mob/skill_fast
+
 function skyblock:mg/azr0/system/player/shop/wand_summon/core
 
 
-execute as @n[distance=..200,type=silverfish,tag=!MG_AZR0MOB] at @s if entity @n[tag=,distance=0..12] run tag @s add MG_AZR0MOB
 
 
 
