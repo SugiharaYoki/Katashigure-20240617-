@@ -59,7 +59,6 @@ execute as @s[scores={sea_4temp1=76}] unless entity @a[tag=SEAPT,scores={SEAPT_m
 execute as @s[scores={sea_4temp1=76}] run tag @a[tag=SEAPT] add e_e_01
 execute as @s[scores={sea_4temp1=76}] run data modify entity @n[tag=SEAboss4] NoAI set value 0b
 execute as @s[scores={sea_4temp1=77}] run data modify entity @n[tag=SEAboss4] Motion set value [0.0,0.0,-1.0]
-#execute as @s[scores={sea_4temp1=76}] run effect give @s slow_falling 3 0 false
 
 execute as @s[scores={sea_4temp1=80..90}] run data modify entity @n[tag=SEAboss4,nbt={OnGround:1b}] Invulnerable set value 0b
 execute as @s[scores={sea_4temp1=90}] run effect give @n[tag=SEAboss4,nbt={OnGround:1b}] instant_health 1 3 true
