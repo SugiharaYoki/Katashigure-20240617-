@@ -30,8 +30,8 @@ execute if score stage_main_thread AzrTimerStack matches 51 if block -79929 39 1
 execute if score stage_main_thread AzrTimerStack matches 52 if block -79929 39 125 air positioned -79922 38 122 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:smoke_mother}
 execute if score stage_main_thread AzrTimerStack matches 52 if block -79929 39 125 air positioned -79922 38 122 run function skyblock:azr/assets/mobs/smoke_mother
 
-execute if score stage_main_thread AzrTimerStack matches 32 run setblock -79929 39 125 air
-execute if score stage_main_thread AzrTimerStack matches 32 run setblock -79933 39 125 air
+execute if score stage_main_thread AzrTimerStack matches 32 run setblock -79929 39 125 air destroy
+execute if score stage_main_thread AzrTimerStack matches 32 run setblock -79933 39 125 air destroy
 execute if score stage_main_thread AzrTimerStack matches 32 unless block -79929 39 125 air positioned -79940 38 122 run function skyblock:azr/assets/mobs/sword
 execute if score stage_main_thread AzrTimerStack matches 34 unless block -79929 39 125 air positioned -79940 38 122 run function skyblock:azr/assets/mobs/sword
 execute if score stage_main_thread AzrTimerStack matches 41 unless block -79929 39 125 air positioned -79940 38 122 run function skyblock:azr/assets/mobs/pillager
