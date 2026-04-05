@@ -35,6 +35,7 @@ execute if score stage_main_thread AzrTimerStack matches 71 at @n[tag=AzrielNPC_
 execute if score stage_main_thread AzrTimerStack matches 71 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{text:"权之残影：",color:"light_purple",bold:1b},{bold: false,text:"\n“我给了你逃走的机会。我甚至让马林努斯拦住你。如果你执意向前，我很乐意将你的灵魂击碎。”",color:"white"}]
 
 execute if score stage_main_thread AzrTimerStack matches 81..85 unless entity @a[tag=azrPlayer,x=-79881.34,y=40.00,z=-13.91,distance=..5.5] run scoreboard players set stage_main_thread AzrTimerStack 84
+execute if score stage_main_thread AzrTimerStack matches 86 as @n[tag=AzrielNPC_andralune] run effect give @s instant_health 1 50 true
 execute if score stage_main_thread AzrTimerStack matches 86 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score stage_main_thread AzrTimerStack matches 86 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{text:"权之残影：",color:"light_purple",bold:1b},{bold: false,text:"\n“好。我希望你也做好相应的准备。”",color:"white"}]
 
