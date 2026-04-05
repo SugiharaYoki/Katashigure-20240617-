@@ -5,9 +5,9 @@ execute at @s[y_rotation=315..45] run tag @s add ishtar_27_direction3
 execute at @s[y_rotation=45..135] run tag @s add ishtar_27_direction4
 
 
-execute if entity @s positioned ~ ~ ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ deepslate_tiles destroy
+execute if entity @s positioned ~ ~-1 ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ deepslate_tiles destroy
+execute if entity @s positioned ~ ~ ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
 execute if entity @s positioned ~ ~1 ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
-execute if entity @s positioned ~ ~2 ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
 
 execute if entity @s[tag=ishtar_27_direction1] positioned ~ ~ ~-1 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ deepslate_tiles destroy
 execute if entity @s[tag=ishtar_27_direction1] positioned ~ ~1 ~-1 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
