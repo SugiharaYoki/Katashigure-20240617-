@@ -4,7 +4,7 @@ execute if entity @s[level=8..,predicate=skyblock:sneak] positioned ^ ^ ^1 run f
 
 execute if entity @s[level=8..,predicate=!skyblock:sneak] at @s rotated as @s anchored eyes at @s run summon marker ~ ~ ~ {Tags:["Skywar_ishtar_18_position_reach"]}
 execute if entity @s[level=8..,predicate=!skyblock:sneak] at @s rotated as @s anchored eyes at @s as @n[type=marker,tag=Skywar_ishtar_18_position_reach] run rotate @s ~ ~
-execute if entity @s[level=8..,predicate=!skyblock:sneak] at @s as @n[type=marker,tag=Skywar_ishtar_18_position_reach] run function skyblock:pvp/skywar/bless/skywar_ishtar_core18_position_reach
+execute if entity @s[level=8..,predicate=!skyblock:sneak] at @s as @n[type=marker,tag=Skywar_ishtar_18_position_reach] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_core18_position_reach
 execute if entity @s[level=8..,predicate=!skyblock:sneak] at @s run kill @n[type=marker,tag=Skywar_ishtar_18_position_reach]
 
 execute if entity @s[level=8..] run scoreboard players set @s If_MD_Stal 0
