@@ -46,13 +46,6 @@ execute if entity @s[scores={If_MD_Mall=1..}] rotated ~ 0 run function skyblock:
 execute if entity @s[scores={If_MD_Stal=1..}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core18
 
 
-execute as @e[tag=Skywar_ishtar_18] at @s run scoreboard players add @s rng1 1
-execute as @e[tag=Skywar_ishtar_18] at @s if entity @a[gamemode=survival,distance=0..1.5] run scoreboard players add @s rng1 1
-execute as @e[tag=Skywar_ishtar_18] at @s as @a[gamemode=survival,distance=0..1.5] run effect give @s blindness 5 0 false
-execute as @e[tag=Skywar_ishtar_18] at @s if entity @a[gamemode=survival,distance=0..0.85] run scoreboard players add @s rng1 1
-execute as @e[tag=Skywar_ishtar_18] at @s run particle squid_ink ~ ~1 ~ 1.5 2.3 1.5 0.03 30
-execute as @e[tag=Skywar_ishtar_18] at @s run particle large_smoke ~ ~1.2 ~ 1.5 2.6 1.5 0.03 40
-execute as @e[tag=Skywar_ishtar_18,scores={rng1=800..}] at @s run kill @s
 
 execute if items entity @s[predicate=skyblock:sneaking,level=4..] container.* *[custom_data={skywar:1,skywar_ishtar_19:1}] positioned ~ ~-1 ~ if block ~ ~ ~ #shulker_boxes run function skyblock:pvp/skywar/bless/skywar_ishtar_core19
 

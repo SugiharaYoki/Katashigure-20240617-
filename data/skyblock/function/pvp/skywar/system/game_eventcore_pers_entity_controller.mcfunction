@@ -9,3 +9,5 @@ execute as @s[type=marker,tag=Skywar_Bless19,x=50000,y=0,z=50000,distance=..5000
 execute as @s[type=marker,tag=Skywar_Bless36,x=50000,y=0,z=50000,distance=..5000] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_core36b
 
 execute if entity @s[type=item] if entity @a[distance=..10] run kill @s[nbt={Item:{components:{"minecraft:custom_data":{skywar:1}}}}] 
+
+execute as @s[type=marker,tag=Skywar_ishtar_18,x=50000,y=0,z=50000,distance=..5000] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_core18_marker_smoke
