@@ -18,9 +18,9 @@ execute if entity @s[tag=ishtar_27_direction1] positioned ~ ~2 ~-2 unless block 
 execute if entity @s[tag=ishtar_27_direction1] positioned ~ ~1 ~-3 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ deepslate_tile_stairs[facing=north] destroy
 execute if entity @s[tag=ishtar_27_direction1] positioned ~ ~2 ~-3 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
 execute if entity @s[tag=ishtar_27_direction1] positioned ~ ~3 ~-3 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
-execute if entity @s[tag=ishtar_27_direction1] positioned ~ ~2 ~-4 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ deepslate_tiles destroy
+execute if entity @s[tag=ishtar_27_direction1] positioned ~ ~1 ~-4 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ deepslate_tiles destroy
+execute if entity @s[tag=ishtar_27_direction1] positioned ~ ~2 ~-4 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
 execute if entity @s[tag=ishtar_27_direction1] positioned ~ ~3 ~-4 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
-execute if entity @s[tag=ishtar_27_direction1] positioned ~ ~4 ~-4 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
 
 execute if entity @s[tag=ishtar_27_direction2] positioned ~1 ~-1 ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ deepslate_tiles destroy
 execute if entity @s[tag=ishtar_27_direction2] positioned ~1 ~ ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
@@ -31,9 +31,9 @@ execute if entity @s[tag=ishtar_27_direction2] positioned ~2 ~2 ~ unless block ~
 execute if entity @s[tag=ishtar_27_direction2] positioned ~3 ~1 ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ deepslate_tile_stairs[facing=east] destroy
 execute if entity @s[tag=ishtar_27_direction2] positioned ~3 ~2 ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
 execute if entity @s[tag=ishtar_27_direction2] positioned ~3 ~3 ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
-execute if entity @s[tag=ishtar_27_direction2] positioned ~4 ~2 ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ deepslate_tiles destroy
+execute if entity @s[tag=ishtar_27_direction2] positioned ~4 ~1 ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ deepslate_tiles destroy
+execute if entity @s[tag=ishtar_27_direction2] positioned ~4 ~2 ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
 execute if entity @s[tag=ishtar_27_direction2] positioned ~4 ~3 ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
-execute if entity @s[tag=ishtar_27_direction2] positioned ~4 ~4 ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
 
 execute if entity @s[tag=ishtar_27_direction3] positioned ~ ~-1 ~1 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ deepslate_tiles destroy
 execute if entity @s[tag=ishtar_27_direction3] positioned ~ ~ ~1 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
@@ -44,9 +44,9 @@ execute if entity @s[tag=ishtar_27_direction3] positioned ~ ~2 ~2 unless block ~
 execute if entity @s[tag=ishtar_27_direction3] positioned ~ ~1 ~3 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ deepslate_tile_stairs[facing=south] destroy
 execute if entity @s[tag=ishtar_27_direction3] positioned ~ ~2 ~3 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
 execute if entity @s[tag=ishtar_27_direction3] positioned ~ ~3 ~3 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
-execute if entity @s[tag=ishtar_27_direction3] positioned ~ ~2 ~4 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ deepslate_tiles destroy
+execute if entity @s[tag=ishtar_27_direction3] positioned ~ ~1 ~4 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ deepslate_tiles destroy
+execute if entity @s[tag=ishtar_27_direction3] positioned ~ ~2 ~4 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
 execute if entity @s[tag=ishtar_27_direction3] positioned ~ ~3 ~4 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
-execute if entity @s[tag=ishtar_27_direction3] positioned ~ ~4 ~4 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
 
 execute if entity @s[tag=ishtar_27_direction4] positioned ~-1 ~-1 ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ deepslate_tiles destroy
 execute if entity @s[tag=ishtar_27_direction4] positioned ~-1 ~ ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
@@ -57,9 +57,9 @@ execute if entity @s[tag=ishtar_27_direction4] positioned ~-2 ~2 ~ unless block 
 execute if entity @s[tag=ishtar_27_direction4] positioned ~-3 ~1 ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ deepslate_tile_stairs[facing=west] destroy
 execute if entity @s[tag=ishtar_27_direction4] positioned ~-3 ~2 ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
 execute if entity @s[tag=ishtar_27_direction4] positioned ~-3 ~3 ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
-execute if entity @s[tag=ishtar_27_direction4] positioned ~-4 ~2 ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ deepslate_tiles destroy
+execute if entity @s[tag=ishtar_27_direction4] positioned ~-4 ~1 ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ deepslate_tiles destroy
+execute if entity @s[tag=ishtar_27_direction4] positioned ~-4 ~2 ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
 execute if entity @s[tag=ishtar_27_direction4] positioned ~-4 ~3 ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
-execute if entity @s[tag=ishtar_27_direction4] positioned ~-4 ~4 ~ unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
 
 
 
