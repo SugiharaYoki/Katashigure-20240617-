@@ -101,7 +101,7 @@ data modify entity @n[tag=AzrRamielExStage_displaymarker3] CustomName set value 
 execute if entity @s[tag=AZS_BoSB01] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value ' <刑> '
 execute if entity @s[tag=AZS_BoSB04] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value ' <炉> '
 execute if entity @s[tag=AZS_BoSB13] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value ' <藓> '
-execute if entity @s[tag=AZS_BoSB23] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value ' <矿> '
+execute if entity @s[tag=AZS_BoSB23] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBw] CustomName set value ' <矿> '
 execute if entity @s[tag=!AZS_BoS01] run data modify entity @n[tag=AzrRamielExStage_displaymarkera] CustomName set value ' ？ '
 execute if entity @s[tag=!AZS_BoS02] run data modify entity @n[tag=AzrRamielExStage_displaymarkerb] CustomName set value ' ？ '
 execute if entity @s[tag=!AZS_BoS03] run data modify entity @n[tag=AzrRamielExStage_displaymarkerc] CustomName set value ' ？ '
