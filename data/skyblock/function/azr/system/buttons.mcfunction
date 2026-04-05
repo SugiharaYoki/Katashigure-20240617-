@@ -64,7 +64,7 @@ execute if block -79888 39 67 minecraft:birch_button[powered=true] run scoreboar
 execute if block -79888 39 67 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79888 39 67 minecraft:birch_button[powered=true] run setblock -79888 39 67 air
 #stage9
-execute if block -79900 41 -60 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 26
+execute if block -79900 41 -60 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 27
 execute if block -79900 41 -60 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if block -79900 41 -60 minecraft:birch_button[powered=true] run setblock -79900 41 -60 air
 

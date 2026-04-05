@@ -210,7 +210,8 @@ execute if score stage_main_thread AzrTimerStack matches 2001 run fill -79886 31
 execute if score stage_main_thread AzrTimerStack matches 2001 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 2001 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 #finalize stage
-execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set stage Azr_system 25
+execute if score stage_main_thread AzrTimerStack matches 1455 run scoreboard players set stage Azr_system 25
+execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set stage Azr_system 26
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players reset tick_main_thread AzrTimerStack
 execute if score stage_main_thread AzrTimerStack matches 2011 run title @a[tag=azrShowDialog] actionbar {text:"Chapter Clear",color:"gold"}
 execute if score stage_main_thread AzrTimerStack matches 2011 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage8_boss2

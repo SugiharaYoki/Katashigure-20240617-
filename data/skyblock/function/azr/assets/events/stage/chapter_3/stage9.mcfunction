@@ -77,5 +77,5 @@ execute if score stage_main_thread AzrTimerStack matches 343 run playsound ambie
 execute if score stage_main_thread AzrTimerStack matches 343 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage9
 execute if score stage_main_thread AzrTimerStack matches 343 run title @a[tag=azrShowDialog] actionbar {text:"Stage Clear",color:"green"}
 execute if score stage_main_thread AzrTimerStack matches 343 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..10}] Azr_skillPoints 11
-execute if score stage_main_thread AzrTimerStack matches 343 run scoreboard players set stage Azr_system 27
+execute if score stage_main_thread AzrTimerStack matches 343 run scoreboard players set stage Azr_system 28
 execute if score stage_main_thread AzrTimerStack matches 343 run scoreboard players set stage_main_thread AzrTimerStack 0

@@ -49,17 +49,20 @@ execute if score stage Azr_system matches 19 run scoreboard players set stage_ma
 #第八关 20
 execute if score stage Azr_system matches 20 run function skyblock:azr/assets/events/stage/chapter_2/stage8
 #第八关-BOSS2（EVENT3) 21-22
-execute if score stage Azr_system matches 21..24 run function skyblock:azr/assets/events/stage/chapter_2/stage_boss2_event
+execute if score stage Azr_system matches 21..25 run function skyblock:azr/assets/events/stage/chapter_2/stage_boss2_event
 #BOSS2 23-24
     # azr/main.mcfunction
 #BOSS2-第九关 25
-execute if score stage Azr_system matches 25.. run function skyblock:azr/assets/events/stage/chapter_3/stage9_garden
+execute if score stage Azr_system matches 26.. run function skyblock:azr/assets/events/stage/chapter_3/stage9_garden
 execute if score stage Azr_system matches 2.. run function skyblock:azr/assets/events/stage/chapter_3/stage9_dripstone
-execute if score stage Azr_system matches 25.. run function skyblock:azr/assets/events/stage/chapter_3/stage9_prison
-#第九关 26
-execute if score stage Azr_system matches 26 run function skyblock:azr/assets/events/stage/chapter_3/stage9
+execute if score stage Azr_system matches 26.. run function skyblock:azr/assets/events/stage/chapter_3/stage9_prison
+#第九关 27
+execute if score stage Azr_system matches 27 run function skyblock:azr/assets/events/stage/chapter_3/stage9
 #第十关
-execute if score stage Azr_system matches 28 run function skyblock:azr/assets/events/stage/chapter_3/stage10
+execute if score stage Azr_system matches 29 run function skyblock:azr/assets/events/stage/chapter_3/stage10
+
+
+
 #event8 35..36
 execute if score stage Azr_system matches 35..36 run function skyblock:azr/assets/events/stage/stage_event8
 #event9 37..39
