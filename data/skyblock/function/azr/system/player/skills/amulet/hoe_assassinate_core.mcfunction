@@ -14,7 +14,7 @@ execute if entity @s[tag=AZR_Amulet_Instant_Success] if items entity @s weapon.m
 execute if entity @s[tag=AZR_Amulet_Instant_Success] if items entity @s weapon.mainhand golden_hoe run execute as @e[tag=AZR_Amulet_Instant_Success_Mob,distance=..15] at @s run say hi
 execute if entity @s[tag=AZR_Amulet_Instant_Success] if items entity @s weapon.mainhand diamond_hoe run execute as @e[tag=AZR_Amulet_Instant_Success_Mob,distance=..15] at @s run say hi
 
-#say hi
+#data modify entity @s HurtTime set value 0
 
 execute as @e[tag=AZR_Amulet_Instant_Success_Mob,tag=AzrielMob,distance=..50] at @s run say hi
 
