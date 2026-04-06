@@ -181,6 +181,7 @@ execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0
 execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=8}] positioned -79882 47 -111 run summon evoker_fangs
 
 execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=7}] as @n[tag=AzrielNPC_flauros,type=evoker,distance=..100] at @s run tp @s -79957.87 56.00 -104.95 facing -79957 56 -106
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=8}] as @n[tag=AzrielNPC_flauros,type=evoker,distance=..100] at @s run data modify entity @s NoAI set value 1b
 execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=8..}] as @n[tag=AzrielNPC_flauros,type=evoker,distance=..100] at @s run rotate @s facing entity @p[tag=azrPlayer] eyes
 
 
