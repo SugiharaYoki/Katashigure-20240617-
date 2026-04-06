@@ -26,6 +26,7 @@ execute if entity @s[tag=AzrielMob_zombie_villager_cleric] run function skyblock
 #精英怪
 execute if entity @s[tag=AzrielMob_elite_candle_angel] run function skyblock:azr/assets/mobs/skill/candle/core
 execute if entity @s[tag=AzrielBossWorking_StartActing,scores={rng12=25..}] at @s run function skyblock:azr/assets/mobs/skill/boss_working/core
+execute if entity @s[tag=AzrielMob_elite_zombie_villager_cleric_prison_office] run function skyblock:azr/assets/mobs/skill/special/zombie_villager_cleric_prison_office
 
 #负面影响
 execute if entity @s[tag=AzrSariel_BioMagnet_target] run function skyblock:azr/system/player/damage_bonus/effect/biomagnet_target_core

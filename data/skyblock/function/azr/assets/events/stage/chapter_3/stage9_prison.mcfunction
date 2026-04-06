@@ -131,6 +131,7 @@ execute positioned -79906 45 -106 as @n[tag=AzrielMarker_encounter,distance=0..0
 #牢房办公区遭遇战
 execute positioned -79960 50 -89 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=..6,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79960 50 -89 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
+execute positioned -79960 50 -89 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79954 50 -67 run function skyblock:azr/assets/mobs/unique/zombie_villager_cleric_prison_office
 execute positioned -79960 50 -89 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79965 50 -88 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_shadow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute positioned -79960 50 -89 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79965 50 -84 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_shadow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute positioned -79960 50 -89 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79959 50 -83 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_shadow","AzrielMob_summon_delay","AzrielMob_level_1"]}
