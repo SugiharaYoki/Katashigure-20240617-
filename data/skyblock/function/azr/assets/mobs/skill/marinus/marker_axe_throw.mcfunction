@@ -1,4 +1,5 @@
 
+execute if entity @s[tag=AzrielFriendly] run tag @s remove attack_throw_high
 
 scoreboard players add @s rng1 1
 
@@ -32,6 +33,7 @@ execute if score @s rng1 matches 16.. rotated ~ 0 run tp @s ^ ^ ^1
 
 execute if score @s rng1 matches 16.. at @s[tag=!attack_throw_high] run particle sweep_attack ^ ^0.4 ^0.4 0 0 0 0 1
 execute if score @s rng1 matches 16.. at @s[tag=!attack_throw_high] positioned ^ ^ ^0.4 as @a[tag=azrPlayer,distance=..2.1] at @s unless block ~ ~-0.2 ~ air run damage @s 5 mob_attack by @n[type=villager,tag=AzrielNPC_marinus]
+execute if score @s[tag=AzrielFriendly] rng1 matches 16.. at @s positioned ^ ^ ^0.4 as @e[tag=AzrielMob,distance=..2.1] at @s unless block ~ ~-0.2 ~ air run damage @s 5 mob_attack by @n[type=villager,tag=AzrielNPC_marinus]
 execute if score @s rng1 matches 16.. at @s[tag=!attack_throw_high] run playsound entity.player.attack.sweep hostile @a ~ ~ ~ 1 0.9
 
 

@@ -70,6 +70,16 @@ execute if score stage_main_thread AzrTimerStack matches 209 positioned -79924 4
 execute if score stage_main_thread AzrTimerStack matches 230..233 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 249 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_cleric","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
+execute if score stage_main_thread AzrTimerStack matches 252 run effect give @n[tag=AzrielNPC_marinus,type=villager] instant_health 3 39 true
+execute if score stage_main_thread AzrTimerStack matches 256 positioned -79946 39 -108 run playsound minecraft:block.portal.trigger ambient @a ~ ~ ~ 2 2
+execute if score stage_main_thread AzrTimerStack matches 264 at @n[tag=AzrielNPC_marinus,type=villager] run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
+execute if score stage_main_thread AzrTimerStack matches 260 positioned -79946 39 -108 run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
+execute if score stage_main_thread AzrTimerStack matches 264 positioned -79946 39 -108 run tp @n[tag=AzrielNPC_marinus,type=villager] ~ ~ ~ facing entity @p[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 263 positioned -79946 39 -108 run particle minecraft:reverse_portal ~ ~20.8 ~ 0.3 0.7 0.3 0.0 18
+execute if score stage_main_thread AzrTimerStack matches 264 positioned -79946 39 -108 run particle minecraft:reverse_portal ~ ~0.8 ~ 0.3 0.7 0.3 0.0 18
+execute if score stage_main_thread AzrTimerStack matches 264 positioned -79946 39 -108 run playsound entity.enderman.teleport hostile @a ~ ~ ~ 0.8 1.2
+execute if score stage_main_thread AzrTimerStack matches 264 positioned -79946 39 -108 run particle gust ~ ~0.1 ~ 2 0 2 0 5
+execute if score stage_main_thread AzrTimerStack matches 266.. positioned -79946 39 -108 as @n[tag=AzrielNPC_marinus,type=villager,distance=..70] at @s run 
 
 
 #读书区域 -79905 40 -71
