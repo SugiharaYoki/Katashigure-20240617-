@@ -1,4 +1,4 @@
-
+scoreboard players add @s AzrielNPC_ConversationTimer 1
 
 execute if score @s AzrielNPC_ConversationTimer matches 8 unless entity @a[distance=..5.5,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 7
 execute if score @s AzrielNPC_ConversationTimer matches 10 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
