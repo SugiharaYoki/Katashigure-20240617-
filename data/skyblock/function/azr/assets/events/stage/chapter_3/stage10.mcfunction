@@ -119,6 +119,9 @@ execute if score stage_main_thread AzrTimerStack matches 405 positioned -79923 5
 execute if score stage_main_thread AzrTimerStack matches 405 positioned -79923 54 -101 run function skyblock:azr/assets/mobs/spider_mini
 execute if score stage_main_thread AzrTimerStack matches 405 positioned -79923 54 -101 run function skyblock:azr/assets/mobs/spider_mini
 execute if score stage_main_thread AzrTimerStack matches 405 positioned -79912 54 -106 run function skyblock:azr/assets/mobs/husk
+execute if score stage_main_thread AzrTimerStack matches 405 positioned -79952 48 -111 run function skyblock:azr/assets/mobs/undead_shadow
+execute if score stage_main_thread AzrTimerStack matches 405 positioned -79952 48 -111 run function skyblock:azr/assets/mobs/undead_shadow
+execute if score stage_main_thread AzrTimerStack matches 405 positioned -79952 48 -111 run function skyblock:azr/assets/mobs/undead_shadow
 
 
 
