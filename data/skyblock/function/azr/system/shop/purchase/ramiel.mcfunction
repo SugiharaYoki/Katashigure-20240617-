@@ -67,6 +67,19 @@ execute as @s[scores={Azr_Shop=8431560}] \
     unless function skyblock:azr/system/shop/purchase/ramiel/\
     pollution_diffuser run scoreboard players set tempPlayerShopSuccess Azr_system 1
 
+execute as @s[scores={Azr_Shop=8431563}] \
+    if entity @n[tag=AzrielNPC_marinus,distance=0..8] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* iron_ingot[count={min:15}] \
+    unless function skyblock:azr/system/shop/purchase/ramiel/\
+    double_arrow run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
+execute as @s[scores={Azr_Shop=8431564}] \
+    if entity @n[tag=AzrielNPC_marinus,distance=0..8] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* gunpowder[count={min:15}] \
+    unless function skyblock:azr/system/shop/purchase/ramiel/\
+    arrow_savior run scoreboard players set tempPlayerShopSuccess Azr_system 1
 #下方全部没有使用
     
     
