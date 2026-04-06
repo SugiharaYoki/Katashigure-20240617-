@@ -12,6 +12,8 @@ tellraw @s[tag=azrPlayer_respawnanchor_unlocked_heatroot_a] [{text:"   - "},{tex
 tellraw @s[tag=azrPlayer_respawnanchor_unlocked_heatroot_b] [{text:"   - "},{text:"传热根系",color:"#5e4e80"},{text:" 燃料观察室  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40010"}}]
 tellraw @s[tag=azrPlayer_respawnanchor_unlocked_library] [{text:"   - "},{text:"智述文馆",color:"#eb83dd"},{text:" 史料馆  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40008"}}]
 tellraw @s[tag=azrPlayer_respawnanchor_unlocked_rockpath] [{text:"   - "},{text:"蚀岩径",color:"#e4964d"},{text:" 隐匠的居所  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40009"}}]
+tellraw @s[tag=azrPlayer_respawnanchor_unlocked_prison_a] [{text:"   - "},{text:"晦怨囚牢",color:"#9e62ff"},{text:" 西翼 1F  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40011"}}]
+tellraw @s[tag=azrPlayer_respawnanchor_unlocked_prison_b] [{text:"   - "},{text:"晦怨囚牢",color:"#9e62ff"},{text:" 东翼 2F  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40012"}}]
 
 
 

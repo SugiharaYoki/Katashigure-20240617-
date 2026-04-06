@@ -99,6 +99,10 @@ execute unless score @s AzrPlayer_CurrentArea matches 4 positioned -79848 43 124
                                                 {area_id:4,title:"重生锚点：智述文馆",color_code:"#eb83dd"}
 execute unless score @s AzrPlayer_CurrentArea matches 7 positioned -79854 29 -73 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:7,title:"重生锚点：蚀岩径",color_code:"#e4964d"}
+execute unless score @s AzrPlayer_CurrentArea matches 7 positioned -79923 38 -96 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:7,title:"重生锚点：晦怨囚牢A",color_code:"#9e62ff"}
+
+
 execute positioned -79943 37 -8 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_westcourt_a
 execute positioned -79931 32 28 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_westcourt_b
 execute positioned -79879 42 -42 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_westcourt_c
@@ -109,6 +113,7 @@ execute positioned -79915 42 157 if entity @s[distance=..4] run tag @s add azrPl
 execute positioned -79932 30 187 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_heatroot_b
 execute positioned -79848 43 124 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_library
 execute positioned -79854 29 -73 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_rockpath
+execute positioned -79923 38 -96 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_prison_a
 
 
 
