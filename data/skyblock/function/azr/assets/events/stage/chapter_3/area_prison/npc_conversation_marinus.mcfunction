@@ -8,7 +8,7 @@ execute if score @s AzrielNPC_ConversationTimer matches 24 run tellraw @a[tag=az
 execute if score @s AzrielNPC_ConversationTimer matches 24 run scoreboard players set @s AzrielNPC_ConversationTimer 40
 
 
-execute if score @s AzrielNPC_ConversationTimer matches 50..3000 unless entity @a[tag=azrPlayer,tag=!azrPlayer_dialogchoice_unlocked_30408] as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_304] run tellraw @s [{text:" - "},{text:"交易：你有什么可以卖给我的吗？  ",color:"#c4ffbd"},{text:"〈◆〉",bold:1b,color:"#72ff62",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30403"}}]
+execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_304] run tellraw @s [{text:" - "},{text:"交易：你有什么可以卖给我的吗？  ",color:"#c4ffbd"},{text:"〈◆〉",bold:1b,color:"#72ff62",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30403"}}]
 execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_304] run tellraw @s [{text:" - "},{text:"询问：你看上去不太喜欢跟人聊天？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30401"}}]
 execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_304] run tellraw @s [{text:" - "},{text:"询问：这些神界士兵还好吗？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30402"}}]
 
