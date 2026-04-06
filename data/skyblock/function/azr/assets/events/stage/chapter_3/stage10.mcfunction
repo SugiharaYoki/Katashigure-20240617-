@@ -12,7 +12,7 @@ execute if score stage_main_thread AzrTimerStack matches 340 run bossbar remove 
 #mainside:-79901 41 -49
 #subside:-79906 40 -60
 
-execute if score stage_main_thread AzrTimerStack matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:caligula music @s ~ ~ ~ 0.65
+execute if score stage_main_thread AzrTimerStack matches 20 as @a[tag=azrShowDialog] at @s run playsound minecraft:caligula music @s ~ ~ ~ 0.65
 execute if score stage_main_thread AzrTimerStack matches 1 run fill -79944 42 -111 -79942 42 -111 iron_bars
 execute if score stage_main_thread AzrTimerStack matches 2 run fill -79944 41 -111 -79942 41 -111 iron_bars
 execute if score stage_main_thread AzrTimerStack matches 3 run fill -79944 40 -111 -79942 40 -111 iron_bars
