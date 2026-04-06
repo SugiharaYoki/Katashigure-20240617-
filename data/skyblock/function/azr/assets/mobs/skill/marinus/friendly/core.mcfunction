@@ -13,7 +13,8 @@ execute if score @s rng1 matches -1 run rotate @s facing entity @n[tag=AzrielMob
 
 
 execute if score @s rng1 matches 1 store result score @s rng8 run random value 1..3
-execute if score @s rng1 matches 1 at @s if entity @n[tag=AzrielMob,distance=..16] store result score @s rng8 run random value 2..6
+execute if score @s rng1 matches 1 at @s if entity @n[tag=AzrielMob,distance=6..12] store result score @s rng8 run random value 1..3
+execute if score @s rng1 matches 1 at @s if entity @n[tag=AzrielMob,distance=1..3] store result score @s rng8 run random value 4..6
 
 
 execute if score @s rng1 matches 1.. if score @s rng8 matches 1..3 run function skyblock:azr/assets/mobs/skill/marinus/friendly/attack_single_throw_harmful
