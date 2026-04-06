@@ -8,67 +8,77 @@ tellraw @s [{text:" - "},{text:"蜂棘护甲  ",color:"#cd8107"},{"score":{"name
 #8431559 8431560 8431561 8431562 被蚀岩径工匠占用
 #8431563 8431564 8431565 8431566 被牢房马林努斯占用
 
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker0"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker1"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker2"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker3"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker4"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker5"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker6"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker7"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker8"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkera"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerb"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerc"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerd"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkere"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerf"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerg"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerh"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkeri"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerj"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerk"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerl"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerm"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkern"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkero"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerp"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerq"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerr"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkers"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkert"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkeru"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerv"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerw"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerx"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkery"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerz"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBa"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBb"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBc"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBd"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBe"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBf"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBg"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBh"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBi"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBj"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBk"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBl"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBm"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBn"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBo"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBp"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBq"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBr"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBs"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBt"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBu"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBv"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBw"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBx"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBy"]}
-summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBz"]}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker0"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker1"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker2"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker3"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker4"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker5"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker6"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker7"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker8"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkera"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerb"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerc"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerd"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkere"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerf"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerg"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerh"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkeri"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerj"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerk"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerl"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerm"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkern"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkero"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerp"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerq"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerr"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkers"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkert"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkeru"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerv"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerw"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerx"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkery"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerz"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBa"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBb"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBc"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBd"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBe"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBf"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBg"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBh"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBi"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBj"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBk"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBl"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBm"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBn"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBo"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBp"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBq"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBr"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBs"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBt"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBu"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBv"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBw"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBx"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBy"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerBz"],CustomName:' ？ '}
+
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerShop01"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerShop02"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerShop03"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerShop04"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerShop05"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerShop06"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerShop07"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerShop08"],CustomName:' ？ '}
+
 
 data modify entity @n[tag=AzrRamielExStage_displaymarkera] CustomName set value ' <A> '
 data modify entity @n[tag=AzrRamielExStage_displaymarkerb] CustomName set value ' <B> '
@@ -103,39 +113,15 @@ execute if entity @s[tag=AZS_BoSB01] run data modify entity @n[tag=AzrRamielExSt
 execute if entity @s[tag=AZS_BoSB04] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value ' <炉> '
 execute if entity @s[tag=AZS_BoSB13] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value ' <藓> '
 execute if entity @s[tag=AZS_BoSB23] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBw] CustomName set value ' <矿> '
-execute if entity @s[tag=!AZS_BoS01] run data modify entity @n[tag=AzrRamielExStage_displaymarkera] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS02] run data modify entity @n[tag=AzrRamielExStage_displaymarkerb] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS03] run data modify entity @n[tag=AzrRamielExStage_displaymarkerc] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS04] run data modify entity @n[tag=AzrRamielExStage_displaymarkerd] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS05] run data modify entity @n[tag=AzrRamielExStage_displaymarkere] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS06] run data modify entity @n[tag=AzrRamielExStage_displaymarkerf] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS07] run data modify entity @n[tag=AzrRamielExStage_displaymarkerg] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS08] run data modify entity @n[tag=AzrRamielExStage_displaymarkerh] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS09] run data modify entity @n[tag=AzrRamielExStage_displaymarkeri] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS10] run data modify entity @n[tag=AzrRamielExStage_displaymarkerj] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS11] run data modify entity @n[tag=AzrRamielExStage_displaymarkerk] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS12] run data modify entity @n[tag=AzrRamielExStage_displaymarkerl] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS13] run data modify entity @n[tag=AzrRamielExStage_displaymarkerm] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS14] run data modify entity @n[tag=AzrRamielExStage_displaymarkern] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS15] run data modify entity @n[tag=AzrRamielExStage_displaymarkero] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS16] run data modify entity @n[tag=AzrRamielExStage_displaymarkerp] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS17] run data modify entity @n[tag=AzrRamielExStage_displaymarkerq] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS18] run data modify entity @n[tag=AzrRamielExStage_displaymarkerr] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS19] run data modify entity @n[tag=AzrRamielExStage_displaymarkers] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS20] run data modify entity @n[tag=AzrRamielExStage_displaymarkert] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS21] run data modify entity @n[tag=AzrRamielExStage_displaymarkeru] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS22] run data modify entity @n[tag=AzrRamielExStage_displaymarkerv] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS23] run data modify entity @n[tag=AzrRamielExStage_displaymarkerw] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS24] run data modify entity @n[tag=AzrRamielExStage_displaymarkerx] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS25] run data modify entity @n[tag=AzrRamielExStage_displaymarkery] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoS26] run data modify entity @n[tag=AzrRamielExStage_displaymarkerz] CustomName set value ' ？ '
-execute if entity @s[scores={Azr_skillPoints=..4}] run data modify entity @n[tag=AzrRamielExStage_displaymarker1] CustomName set value ' ？ '
-execute if entity @s[scores={Azr_skillPoints=..8}] run data modify entity @n[tag=AzrRamielExStage_displaymarker2] CustomName set value ' ？ '
-execute if entity @s[scores={Azr_skillPoints=..9}] run data modify entity @n[tag=AzrRamielExStage_displaymarker3] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoSB01] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoSB04] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoSB13] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value ' ？ '
-execute if entity @s[tag=!AZS_BoSB23] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBw] CustomName set value ' ？ '
+
+execute if entity @s[tag=AZS_BoSShop01] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop01] CustomName set value ' <毒衡> '
+execute if entity @s[tag=AZS_BoSShop02] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop02] CustomName set value ' <毒扩> '
+execute if entity @s[tag=AZS_BoSShop03] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop03] CustomName set value ' <> '
+execute if entity @s[tag=AZS_BoSShop04] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop04] CustomName set value ' <> '
+execute if entity @s[tag=AZS_BoSShop05] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop05] CustomName set value ' <弦蓄> '
+execute if entity @s[tag=AZS_BoSShop06] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop06] CustomName set value ' <存箭> '
+execute if entity @s[tag=AZS_BoSShop07] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop07] CustomName set value ' <> '
+execute if entity @s[tag=AZS_BoSShop08] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop08] CustomName set value ' <> '
 
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkere] CustomName set value ' - '
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerv] CustomName set value ' - '
@@ -175,6 +161,14 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_fire_drogue:1b}
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBw] CustomName set value ' √ '
 
+execute if items entity @s container.* *[custom_data~{azr_amulet_pollusion_balancer:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop01] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_pollution_diffuser:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop02] CustomName set value ' √ '
+#execute if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop03] CustomName set value ' √ '
+#execute if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop04] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_double_arrow:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop05] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_savior:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop06] CustomName set value ' √ '
+#execute if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop07] CustomName set value ' √ '
+#execute if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop08] CustomName set value ' √ '
 
 tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkera]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432301"},hover_event:{"action":"show_text","value":{text:"Appetence",color:"white"}}},\
@@ -213,7 +207,12 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBa]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432331"},hover_event:{"action":"show_text","value":{text:"阴影处刑者 - 退避石板\n连按后退键快速后撤步",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBd]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432329"},hover_event:{"action":"show_text","value":{text:"锅炉驱动者 - 逐焰卷宗\n持续召唤最多3个跟随火球，减少节制天平电球最低间隔时长",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBm]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432328"},hover_event:{"action":"show_text","value":{text:"噬藓母虫 - 深藓石板\n造成攻击可增加“索命连击”充能、在重生锚点可获得5分钟孢子的庇护（生命值上限加成）",color:"white"}}},\
-{selector:"@n[tag=AzrRamielExStage_displaymarkerBw]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432333"},hover_event:{"action":"show_text","value":{text:"金属学家 - 枢纽石板\n允许在重生锚点之间传送",color:"white"}}}]
+{selector:"@n[tag=AzrRamielExStage_displaymarkerBw]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432333"},hover_event:{"action":"show_text","value":{text:"金属学家 - 枢纽石板\n允许在重生锚点之间传送",color:"white"}}},\
+{text:"\n "},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerShop01]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432334"},hover_event:{"action":"show_text","value":{text:"污染平衡器\n减轻重金属池水伤害",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerShop02]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432335"},hover_event:{"action":"show_text","value":{text:"污染扩散器\n受击概率释放重金属云团",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerShop05]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432336"},hover_event:{"action":"show_text","value":{text:"弦蓄卷宗\n第二箭默认超强蓄力",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerShop06]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432337"},hover_event:{"action":"show_text","value":{text:"存箭石板\n持有箭矢超过32时不再占用背包",color:"white"}}}]
 
 
 

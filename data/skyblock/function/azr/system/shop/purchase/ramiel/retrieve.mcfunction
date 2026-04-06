@@ -38,6 +38,11 @@ execute if entity @s[tag=AZS_BoSB04] if score @s Azr_Shop matches 8432329 run fu
 execute if entity @s[tag=AZS_BoSB13] if score @s Azr_Shop matches 8432328 run function skyblock:azr/assets/items/amulets/moss_spore
 execute if entity @s[tag=AZS_BoSB23] if score @s Azr_Shop matches 8432333 run function skyblock:azr/assets/items/amulets/transportation
 
+execute if entity @s[tag=AZS_BoSShop1] if score @s Azr_Shop matches 8432334 run function skyblock:azr/assets/items/amulets/pollution_balancer
+execute if entity @s[tag=AZS_BoSShop2] if score @s Azr_Shop matches 8432335 run function skyblock:azr/assets/items/amulets/pollution_diffuser
+execute if entity @s[tag=AZS_BoSShop5] if score @s Azr_Shop matches 8432336 run function skyblock:azr/assets/items/amulets/double_arrow
+execute if entity @s[tag=AZS_BoSShop6] if score @s Azr_Shop matches 8432337 run function skyblock:azr/assets/items/amulets/arrow_savior
+
 scoreboard players set tempPlayerShopSuccess Azr_system 1
 
 
