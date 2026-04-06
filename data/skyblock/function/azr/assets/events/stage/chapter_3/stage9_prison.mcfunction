@@ -139,6 +139,13 @@ execute positioned -79960 50 -89 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79960 50 -89 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=14}] positioned -79959.04 50.00 -105.01 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute positioned -79960 50 -89 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=17}] positioned -79959.04 50.00 -105.01 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
+#权之殊能初遇
+execute positioned -79876 47 -109 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79883,y=46,z=-111,dx=5,dy=5,dz=5,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79877 47 -109 run function skyblock:azr/assets/mobs/skill/boss3_flauros/summon
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79877 47 -109 run particle sculk_charge_pop ~ ~1 ~ 1 2 3 0.01 500
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79877 47 -109 run playsound minecraft:entity.elder_guardian.curse hostile @a ~ ~1 ~ 5 0.6
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79877 47 -109 run effect give @a[distance=..20,tag=azrShowDialog] darkness 5 0 true
 
 
 

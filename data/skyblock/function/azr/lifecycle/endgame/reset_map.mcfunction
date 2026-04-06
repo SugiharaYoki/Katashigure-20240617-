@@ -711,6 +711,10 @@ setblock -79950 53 -69 chest[facing=west]{Inventory:[]}
 item replace block -79950 53 -69 container.12 with gunpowder 2
 item replace block -79950 53 -69 container.14 with flint 2
 
+#权之殊能初遇
+fill -79876 52 -107 -79876 47 -111 barrier
+
+
 
 #大铁门额外区域
 fill -79927 49 -130 -79927 48 -127 minecraft:netherite_block
