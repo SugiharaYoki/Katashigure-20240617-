@@ -511,6 +511,7 @@ fill -79887 40 16 -79887 40 18 quartz_block
 fill -79893 41 5 -79893 38 3 minecraft:purple_stained_glass
 #暗处连通道
 fill -79881 41 40 -79883 38 40 minecraft:purple_stained_glass
+setblock -79877 38 50 minecraft:potted_azalea_bush
 
 #boss2
 function skyblock:azr/lifecycle/endgame/reset_map_boss2
