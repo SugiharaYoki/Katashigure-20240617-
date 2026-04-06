@@ -5,7 +5,7 @@ execute if score @s rng1 matches 4 run particle minecraft:soul_fire_flame ~ ~1 ~
 execute if score @s rng1 matches 4 run particle minecraft:enchant ~ ~0.5 ~ 1 0 0 0.2 20
 execute if score @s rng1 matches 4 run particle minecraft:enchant ~ ~0.5 ~ 0 0 1 0.2 20
 
-execute if score @s rng1 matches 4 rotated as @s rotated ~ 0 run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 4 rotated as @s rotated ~ 0 run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","AzrielFriendly"]}
 
 
 execute if score @s rng1 matches 4 store result score @s rng5 run random value 1..4

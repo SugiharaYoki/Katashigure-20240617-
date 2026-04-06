@@ -134,14 +134,14 @@ execute if score stage_main_thread AzrTimerStack matches 3364 run particle minec
 execute if score stage_main_thread AzrTimerStack matches 3364 run playsound entity.generic.explode master @a -79904.53 41.98 -129.00 1.5 0.6
 execute if score stage_main_thread AzrTimerStack matches 3364 run playsound entity.generic.explode master @a -79903.53 41.98 -129.00 1.5 0.8
 execute if score stage_main_thread AzrTimerStack matches 3364 run playsound entity.generic.explode master @a -79905.53 41.98 -129.00 1.5 0.7
-execute if score stage_main_thread AzrTimerStack matches 3364 run summon vindicator -79904 40.5 -126 {Invulnerable:1b,PersistenceRequired:1b,Tags:["AzrielFriendly"],Health:12.0f,CustomName:'圣殿巡逻兵',CanPickUpLoot:0b,attributes:[{id:"max_health",base:12.0d},{id:"movement_speed",base:0.0d},{id:"attack_damage",base:0.0d},{id:"follow_range",base:0.0d}]}
-execute if score stage_main_thread AzrTimerStack matches 3364 run summon vindicator -79906 41 -126 {Invulnerable:1b,PersistenceRequired:1b,Tags:["AzrielFriendly"],Health:12.0f,CustomName:'圣殿巡逻兵',CanPickUpLoot:0b,attributes:[{id:"max_health",base:12.0d},{id:"movement_speed",base:0.0d},{id:"attack_damage",base:0.0d},{id:"follow_range",base:0.0d}]}
-execute if score stage_main_thread AzrTimerStack matches 3364 run summon wolf -79904 40 -124 {PersistenceRequired:1b,Tags:["AzrielFriendly","e8001"],CustomName:'圣殿守卫犬',CanPickUpLoot:0b,Health:40.0f,attributes:[{id:"max_health",base:40.0d}]}
-execute if score stage_main_thread AzrTimerStack matches 3364 run summon wolf -79906 40 -124 {PersistenceRequired:1b,Tags:["AzrielFriendly","e8002"],CustomName:'圣殿守卫犬',CanPickUpLoot:0b,Health:40.0f,attributes:[{id:"max_health",base:40.0d}]}
-execute if score stage_main_thread AzrTimerStack matches 3365 run data modify entity @e[tag=e8002,tag=AzrielFriendly,type=wolf,limit=1] Owner set from entity @r[tag=azrPlayer] UUID
-execute if score stage_main_thread AzrTimerStack matches 3365 run data modify entity @e[tag=e8001,tag=AzrielFriendly,type=wolf,limit=1] Owner set from entity @r[tag=azrPlayer] UUID
-execute if score stage_main_thread AzrTimerStack matches 3365 run data modify entity @e[tag=e8002,tag=AzrielFriendly,type=wolf,limit=1] CollarColor set value 9b
-execute if score stage_main_thread AzrTimerStack matches 3365 run data modify entity @e[tag=e8001,tag=AzrielFriendly,type=wolf,limit=1] CollarColor set value 9b
+execute if score stage_main_thread AzrTimerStack matches 3364 run summon vindicator -79904 40.5 -126 {Invulnerable:1b,PersistenceRequired:1b,Tags:["Azriendly"],Health:12.0f,CustomName:'圣殿巡逻兵',CanPickUpLoot:0b,attributes:[{id:"max_health",base:12.0d},{id:"movement_speed",base:0.0d},{id:"attack_damage",base:0.0d},{id:"follow_range",base:0.0d}]}
+execute if score stage_main_thread AzrTimerStack matches 3364 run summon vindicator -79906 41 -126 {Invulnerable:1b,PersistenceRequired:1b,Tags:["Azriendly"],Health:12.0f,CustomName:'圣殿巡逻兵',CanPickUpLoot:0b,attributes:[{id:"max_health",base:12.0d},{id:"movement_speed",base:0.0d},{id:"attack_damage",base:0.0d},{id:"follow_range",base:0.0d}]}
+execute if score stage_main_thread AzrTimerStack matches 3364 run summon wolf -79904 40 -124 {PersistenceRequired:1b,Tags:["Azriendly","e8001"],CustomName:'圣殿守卫犬',CanPickUpLoot:0b,Health:40.0f,attributes:[{id:"max_health",base:40.0d}]}
+execute if score stage_main_thread AzrTimerStack matches 3364 run summon wolf -79906 40 -124 {PersistenceRequired:1b,Tags:["Azriendly","e8002"],CustomName:'圣殿守卫犬',CanPickUpLoot:0b,Health:40.0f,attributes:[{id:"max_health",base:40.0d}]}
+execute if score stage_main_thread AzrTimerStack matches 3365 run data modify entity @e[tag=e8002,tag=Azry,type=wolf,limit=1] Owner set from entity @r[tag=azrPlayer] UUID
+execute if score stage_main_thread AzrTimerStack matches 3365 run data modify entity @e[tag=e8001,tag=Azry,type=wolf,limit=1] Owner set from entity @r[tag=azrPlayer] UUID
+execute if score stage_main_thread AzrTimerStack matches 3365 run data modify entity @e[tag=e8002,tag=Azry,type=wolf,limit=1] CollarColor set value 9b
+execute if score stage_main_thread AzrTimerStack matches 3365 run data modify entity @e[tag=e8001,tag=Azry,type=wolf,limit=1] CollarColor set value 9b
 execute if score stage_main_thread AzrTimerStack matches 3364 as @a[tag=azrShowDialog] at @s run playsound minecraft:caligula master @s ~ ~ ~ 0.56
 
 execute if score stage_main_thread AzrTimerStack matches 3384 as @e[tag=AzrielBossFA] at @s run tp @s ~ ~ ~ facing entity @r[tag=azrPlayer]
