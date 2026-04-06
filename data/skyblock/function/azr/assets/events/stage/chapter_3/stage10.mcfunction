@@ -12,6 +12,7 @@ execute if score stage_main_thread AzrTimerStack matches 340 run bossbar remove 
 #mainside:-79901 41 -49
 #subside:-79906 40 -60
 
+execute if score stage_main_thread AzrTimerStack matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:caligula music @s ~ ~ ~ 0.65
 execute if score stage_main_thread AzrTimerStack matches 1 run fill -79944 42 -111 -79942 42 -111 iron_bars
 execute if score stage_main_thread AzrTimerStack matches 2 run fill -79944 41 -111 -79942 41 -111 iron_bars
 execute if score stage_main_thread AzrTimerStack matches 3 run fill -79944 40 -111 -79942 40 -111 iron_bars
@@ -58,6 +59,7 @@ execute if score stage_main_thread AzrTimerStack matches 168 positioned -79915 4
 execute if score stage_main_thread AzrTimerStack matches 218 positioned -79915 40 -111 if entity @n[tag=AzrielNPC_stage9_entry_conversation5] run tellraw @a[tag=azrShowDialog] [{text:"第5巡逻小队队长 伊安：",color:"green",bold:1b},{bold: false,text:"\n“这怪物源源不断地涌出来，到底是谁在操控它们……”",color:"white"}]
 execute if score stage_main_thread AzrTimerStack matches 238 positioned -79915 40 -111 if entity @n[tag=AzrielNPC_stage9_entry_conversation6] run tellraw @a[tag=azrShowDialog] [{text:"弩手 麦克：",color:"green",bold:1b},{bold: false,text:"\n“我有点招架不住了……！我们只有这么点人吗？！”",color:"white"}]
 
+execute if score stage_main_thread AzrTimerStack matches 140..200 run scoreboard players add stage_main_thread AzrielMobLevel 1
 
 execute if score stage_main_thread AzrTimerStack matches 130..140 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 138..142 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_melee","AzrielMob_summon_delay","AzrielMob_level_1"]}
@@ -71,15 +73,22 @@ execute if score stage_main_thread AzrTimerStack matches 230..233 positioned -79
 execute if score stage_main_thread AzrTimerStack matches 249 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_cleric","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 execute if score stage_main_thread AzrTimerStack matches 252 run effect give @n[tag=AzrielNPC_marinus,type=villager] instant_health 3 39 true
-execute if score stage_main_thread AzrTimerStack matches 256 positioned -79946 39 -108 run playsound minecraft:block.portal.trigger ambient @a ~ ~ ~ 2 2
+execute if score stage_main_thread AzrTimerStack matches 256 positioned -79946 40 -108 run playsound minecraft:block.portal.trigger ambient @a ~ ~ ~ 2 2
 execute if score stage_main_thread AzrTimerStack matches 264 at @n[tag=AzrielNPC_marinus,type=villager] run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
-execute if score stage_main_thread AzrTimerStack matches 260 positioned -79946 39 -108 run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
-execute if score stage_main_thread AzrTimerStack matches 264 positioned -79946 39 -108 run tp @n[tag=AzrielNPC_marinus,type=villager] ~ ~ ~ facing entity @p[tag=azrPlayer]
-execute if score stage_main_thread AzrTimerStack matches 263 positioned -79946 39 -108 run particle minecraft:reverse_portal ~ ~20.8 ~ 0.3 0.7 0.3 0.0 18
-execute if score stage_main_thread AzrTimerStack matches 264 positioned -79946 39 -108 run particle minecraft:reverse_portal ~ ~0.8 ~ 0.3 0.7 0.3 0.0 18
-execute if score stage_main_thread AzrTimerStack matches 264 positioned -79946 39 -108 run playsound entity.enderman.teleport hostile @a ~ ~ ~ 0.8 1.2
-execute if score stage_main_thread AzrTimerStack matches 264 positioned -79946 39 -108 run particle gust ~ ~0.1 ~ 2 0 2 0 5
+execute if score stage_main_thread AzrTimerStack matches 260 positioned -79946 40 -108 run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
+execute if score stage_main_thread AzrTimerStack matches 264 positioned -79946 40 -108 run tp @n[tag=AzrielNPC_marinus,type=villager] ~ ~ ~ facing entity @p[tag=azrPlayer]
+execute if score stage_main_thread AzrTimerStack matches 263 positioned -79946 40 -108 run particle minecraft:reverse_portal ~ ~20.8 ~ 0.3 0.7 0.3 0.0 18
+execute if score stage_main_thread AzrTimerStack matches 264 positioned -79946 40 -108 run particle minecraft:reverse_portal ~ ~0.8 ~ 0.3 0.7 0.3 0.0 18
+execute if score stage_main_thread AzrTimerStack matches 264 positioned -79946 40 -108 run playsound entity.enderman.teleport hostile @a ~ ~ ~ 0.8 1.2
+execute if score stage_main_thread AzrTimerStack matches 264 positioned -79946 40 -108 run particle gust ~ ~0.1 ~ 2 0 2 0 5
 
+execute if score stage_main_thread AzrTimerStack matches 260..350 run scoreboard players add stage_main_thread AzrielMobLevel 1
+execute if score stage_main_thread AzrTimerStack matches 300..390 if score stage_main_thread AzrielMobLevel matches 200.. run scoreboard players set stage_main_thread AzrTimerStack 391
+
+execute if score stage_main_thread AzrTimerStack matches 250 at @n[tag=AzrielNPC_marinus] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 250 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎，坚持住。”",color:"white"}]
+execute if score stage_main_thread AzrTimerStack matches 280 at @n[tag=AzrielNPC_marinus] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 280 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“现在是我们占上风了。如果你受了伤，就躲到我背后。”",color:"white"}]
 
 #读书区域 -79905 40 -71
 #下一站出口附近 -79901 41 -50

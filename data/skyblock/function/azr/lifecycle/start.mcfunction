@@ -31,6 +31,7 @@ scoreboard objectives add Azr_Login_Identifier dummy
 scoreboard objectives add Azr_Login_Day_Strike dummy
 
 scoreboard objectives add AzrielNPC_FollowInterest dummy
+scoreboard objectives add AzrielNPC_ConversationTimer dummy
 
 scoreboard objectives add AzrEvent_affected_quake_medium dummy
 scoreboard objectives add AzrielMob_changetarget dummy

@@ -46,7 +46,7 @@ execute if score stage_main_thread AzrTimerStack matches 204 positioned -79907 4
 execute if score stage_main_thread AzrTimerStack matches 204 positioned -79905 40 -71 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_melee","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 216 positioned -79906 40 -71 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_armor","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 216 positioned -79901 41 -50 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_armor","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_main_thread AzrTimerStack matches 219 positioned -79901 41 -50 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 219 positioned -79901 41 -50 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead3","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 execute if score stage_main_thread AzrTimerStack matches 245 positioned -79909 40 -60 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sentinel","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 245 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:skeleton_sentinel}

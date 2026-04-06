@@ -8,8 +8,8 @@ execute as @s[scores={rng1=11}] at @n[tag=AzrielNPC_stage9_entry_conversation6] 
 execute as @s[scores={rng1=11}] if entity @n[tag=AzrielNPC_stage9_entry_conversation6] run tellraw @a[tag=azrShowDialog] [{text:"弩手 麦克：",color:"green",bold:1b},{bold: false,text:"\n“队、队长，亡灵法师又来了！！”",color:"white"}]
 
 
-execute as @s[scores={rng1=32}] positioned -79895 42 -56 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=32}] positioned -79886 42 -56 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=32}] positioned -79895 42 -56 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead3","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=32}] positioned -79886 42 -56 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead3","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute as @s[scores={rng1=28}] positioned -79893 42 -56 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute as @s[scores={rng1=28}] positioned -79888 42 -56 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
 

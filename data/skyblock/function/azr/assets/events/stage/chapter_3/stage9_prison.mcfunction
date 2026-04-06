@@ -103,11 +103,11 @@ execute positioned -79910 41 -105 as @n[tag=AzrielMob_ch3_break_first_irondoor,d
 execute positioned -79925 40 -112 as @n[tag=AzrielMob_ch3_resting_swordman,distance=0..9.5] at @s unless score @s AzrEntityTimer matches 2.. if entity @a[tag=azrPlayer,distance=0..7] run scoreboard players add @s AzrEntityTimer 1
 execute positioned -79925 40 -112 as @n[tag=AzrielMob_ch3_resting_swordman,distance=0..9.5] if score @s AzrEntityTimer matches 2.. run scoreboard players add @s AzrEntityTimer 1
 execute positioned -79925 40 -112 as @n[tag=AzrielMob_ch3_resting_swordman,distance=0..9.5,scores={AzrEntityTimer=3}] as @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] at @s run tellraw @a[tag=azrShowDialog] [{text:"剑士 鲁宾：",color:"green",bold:1b},{bold: false,text:"\n“抱歉，我们受伤很严重，请让我们稍作休整。”",color:"white"}]
-execute positioned -79925 40 -112 as @n[tag=AzrielMob_ch3_resting_swordman,distance=0..9.5,scores={AzrEntityTimer=130}] as @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] at @s run tellraw @a[tag=azrShowDialog,distance=0..9] [{text:"剑士 鲁宾：",color:"green",bold:1b},{bold: false,text:"\n“你先把那个治疗药丸给我。我把它拆解一下。”",color:"white"}]
-execute positioned -79925 40 -112 as @n[tag=AzrielMob_ch3_resting_swordman,distance=0..9.5,scores={AzrEntityTimer=140}] as @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] at @s run tellraw @a[tag=azrShowDialog,distance=0..9] [{text:"剑士 伊西多：",color:"green",bold:1b},{bold: false,text:"\n“好。”",color:"white"}]
-execute positioned -79925 40 -112 as @n[tag=AzrielMob_ch3_resting_swordman,distance=0..9.5,scores={AzrEntityTimer=180}] as @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] at @s run tellraw @a[tag=azrShowDialog,distance=0..9] [{text:"剑士 伊西多：",color:"green",bold:1b},{bold: false,text:"\n“感觉怎么样？我这里应该能正常行动了。”",color:"white"}]
-execute positioned -79925 40 -112 as @n[tag=AzrielMob_ch3_resting_swordman,distance=0..9.5,scores={AzrEntityTimer=194}] as @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] at @s run tellraw @a[tag=azrShowDialog,distance=0..9] [{text:"剑士 鲁宾：",color:"green",bold:1b},{bold: false,text:"\n“我也差不多。开门吧，去帮爱理莎清掉点僵尸。”",color:"white"}]
-execute positioned -79925 40 -112 as @n[tag=AzrielMob_ch3_resting_swordman,distance=0..9.5,scores={AzrEntityTimer=212}] run fill -79925 40 -111 -79925 41 -111 air
+execute positioned -79925 40 -112 as @n[tag=AzrielMob_ch3_resting_swordman,distance=0..9.5,scores={AzrEntityTimer=170}] as @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] at @s run tellraw @a[tag=azrShowDialog,distance=0..9] [{text:"剑士 鲁宾：",color:"green",bold:1b},{bold: false,text:"\n“你先把那个治疗药丸给我。我把它拆解一下。”",color:"white"}]
+execute positioned -79925 40 -112 as @n[tag=AzrielMob_ch3_resting_swordman,distance=0..9.5,scores={AzrEntityTimer=180}] as @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] at @s run tellraw @a[tag=azrShowDialog,distance=0..9] [{text:"剑士 伊西多：",color:"green",bold:1b},{bold: false,text:"\n“好。”",color:"white"}]
+execute positioned -79925 40 -112 as @n[tag=AzrielMob_ch3_resting_swordman,distance=0..9.5,scores={AzrEntityTimer=320}] as @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] at @s run tellraw @a[tag=azrShowDialog,distance=0..9] [{text:"剑士 伊西多：",color:"green",bold:1b},{bold: false,text:"\n“感觉怎么样？我这里应该能正常行动了。”",color:"white"}]
+execute positioned -79925 40 -112 as @n[tag=AzrielMob_ch3_resting_swordman,distance=0..9.5,scores={AzrEntityTimer=334}] as @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] at @s run tellraw @a[tag=azrShowDialog,distance=0..9] [{text:"剑士 鲁宾：",color:"green",bold:1b},{bold: false,text:"\n“我也差不多。开门吧，去帮爱理莎清掉点僵尸。”",color:"white"}]
+execute positioned -79925 40 -112 as @n[tag=AzrielMob_ch3_resting_swordman,distance=0..9.5,scores={AzrEntityTimer=342}] run fill -79925 40 -111 -79925 41 -111 air
 
 
 
@@ -119,7 +119,6 @@ execute if score stage Azr_system matches ..28 if entity @a[tag=azrPlayer,x=-799
 
 
 execute if score stage Azr_system matches 29.. as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs/skill/marinus/friendly/core
-
 
 
 

@@ -96,6 +96,7 @@ scoreboard players reset stage_boss_bgm AzrTimerStack
 
 scoreboard objectives remove AzrPlayer_CurrentArea
 scoreboard objectives remove AzrielNPC_FollowInterest
+scoreboard objectives remove AzrielNPC_ConversationTimer
 
 #节制天平
 scoreboard objectives remove AzrSariel_Skill_FanFire
