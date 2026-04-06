@@ -149,7 +149,7 @@ execute if score stage_main_thread AzrTimerStack matches 468..469 as @n[tag=Azri
 execute if score stage_main_thread AzrTimerStack matches 480 as @n[tag=AzrielNPC_marinus] at @s run playsound minecraft:entity.wind_charge.throw hostile @a ~ ~ ~ 1 0.5
 execute if score stage_main_thread AzrTimerStack matches 480 at @n[tag=AzrielNPC_marinus] run particle gust ~ ~0.1 ~ 0 3 0 0 5
 execute if score stage_main_thread AzrTimerStack matches 480 run bossbar remove azr:boss_hp_bar
-execute if score stage_main_thread AzrTimerStack matches 480 run tp @n[tag=AzrielNPC_marinus] -79888 46 18
+execute if score stage_main_thread AzrTimerStack matches 480 run tp @n[tag=AzrielNPC_marinus] -79934 51 69
 
 execute if score stage_main_thread AzrTimerStack matches 450 run kill @e[tag=AzrielMob_marinus_surrounding_particle_marker,type=marker]
 execute if score stage_main_thread AzrTimerStack matches 450 run kill @e[tag=AzrielMob_marinus_tp_possible_destination_marker,type=marker]
@@ -168,3 +168,5 @@ execute if score stage_main_thread AzrTimerStack matches 500 run scoreboard play
 execute if score stage_main_thread AzrTimerStack matches 500 run scoreboard players set stage_main_thread AzrTimerStack 0
 
 
+
+execute positioned -79931 100 0 unless entity @n[distance=..10000,type=villager,tag=AzrielNPC_marinus] positioned -79889 51 -15 run function skyblock:azr/assets/mobs/skill/marinus/summon_revive

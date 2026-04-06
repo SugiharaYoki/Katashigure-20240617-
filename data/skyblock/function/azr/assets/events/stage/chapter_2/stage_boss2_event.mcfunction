@@ -226,3 +226,5 @@ execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlaye
 execute if score stage_main_thread AzrTimerStack matches 86..999 unless entity @a[tag=azrPlayer,x=-79927,y=37,z=-29,dx=49,dy=20,dz=28] run function skyblock:azr/lifecycle/endgame/reset_map_boss2
 
 
+execute positioned -79931 100 0 unless entity @n[distance=..10000,type=illusioner,tag=AzrielNPC_andralune] positioned -79889 51 -15 run function skyblock:azr/assets/mobs/unique/revive_andralune
+execute positioned -79931 100 0 unless entity @n[distance=..10000,type=villager,tag=AzrielNPC_mersenne] positioned -79889 51 -15 run function skyblock:azr/assets/mobs/unique/revive_mersenne

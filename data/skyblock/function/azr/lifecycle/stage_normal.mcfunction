@@ -138,9 +138,6 @@ execute if score stage Azr_system matches 63 run function skyblock:azr/assets/ev
 #AzrielNPC
 #execute as @e[tag=AzrielNPC] at @s run rotate @s facing entity @p[distance=..3]
 
-execute if score stage Azr_system matches 10.. positioned -79931 100 0 unless entity @n[distance=..10000,type=illusioner,tag=AzrielNPC_andralune] positioned -79889 51 -15 run function skyblock:azr/assets/mobs/unique/revive_andralune
-execute if score stage Azr_system matches 10.. positioned -79931 100 0 unless entity @n[distance=..10000,type=villager,tag=AzrielNPC_mersenne] positioned -79889 51 -15 run function skyblock:azr/assets/mobs/unique/revive_mersenne
-execute if score stage Azr_system matches 10.. positioned -79931 100 0 unless entity @n[distance=..10000,type=villager,tag=AzrielNPC_marinus] positioned -79889 51 -15 run function skyblock:azr/assets/mobs/skill/marinus/summon_revive
 
 # 强制释放临时变量
 scoreboard players reset #temp_rng Azr_system
