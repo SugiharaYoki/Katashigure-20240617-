@@ -683,6 +683,11 @@ setblock -79923 41 -103 minecraft:spruce_trapdoor[open=false,facing=east]
 fill -79944 40 -111 -79942 42 -111 barrier
 fill -79944 40 -105 -79942 42 -105 barrier
 
+  #楼梯后隐藏宝箱
+  setblock -79936 40 -123 chest[facing=north]{Inventory:[]}
+  item replace block -79936 40 -123 container.12 with emerald 3
+  item replace block -79936 40 -123 container.14 with emerald 3
+
   #通往第九关的连接道
   setblock -79933 39 -90 air
   setblock -79933 39 -90 lever[facing=east]
