@@ -118,7 +118,7 @@ execute if score stage Azr_system matches ..28 if entity @a[tag=azrPlayer,x=-799
 execute if score stage Azr_system matches ..28 if entity @a[tag=azrPlayer,x=-79944,y=39,z=-111,dx=9,dy=5,dz=7,gamemode=adventure] run scoreboard players set stage Azr_system 29
 
 
-execute if score stage Azr_system matches 29.. as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs/skill/marinus/core
+execute if score stage Azr_system matches 29.. as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs/skill/marinus/friendly/core
 
 
 
