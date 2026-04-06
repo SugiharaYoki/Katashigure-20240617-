@@ -146,6 +146,41 @@ execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0
 execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79877 47 -109 run particle sculk_charge_pop ~ ~1 ~ 1 2 3 0.01 500
 execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79877 47 -109 run playsound minecraft:entity.elder_guardian.curse hostile @a ~ ~1 ~ 5 0.6
 execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79877 47 -109 run effect give @a[distance=..20,tag=azrShowDialog] darkness 5 0 true
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79877 47 -109 run playsound block.anvil.place block @a -79876 52 -107 2 0.9
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79877 47 -109 run playsound block.anvil.place block @a -79876 52 -111 2 0.9
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79877 47 -109 run fill -79876 52 -107 -79876 47 -111 anvil[facing=north]
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3}] positioned -79877 47 -107 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3}] positioned -79877 47 -108 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3}] positioned -79877 47 -109 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3}] positioned -79877 47 -110 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3}] positioned -79877 47 -111 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=4}] positioned -79878 47 -107 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=4}] positioned -79878 47 -108 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=4}] positioned -79878 47 -109 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=4}] positioned -79878 47 -110 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=4}] positioned -79879 47 -111 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5}] positioned -79879 47 -107 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5}] positioned -79879 47 -108 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5}] positioned -79879 47 -109 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5}] positioned -79879 47 -110 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5}] positioned -79878 47 -111 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=6}] positioned -79880 47 -107 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=6}] positioned -79880 47 -108 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=6}] positioned -79880 47 -109 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=6}] positioned -79880 47 -110 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=6}] positioned -79880 47 -111 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=7}] positioned -79881 47 -107 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=7}] positioned -79881 47 -108 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=7}] positioned -79881 47 -109 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=7}] positioned -79881 47 -110 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=7}] positioned -79881 47 -111 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=8}] positioned -79882 47 -107 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=8}] positioned -79882 47 -108 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=8}] positioned -79882 47 -109 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=8}] positioned -79882 47 -110 run summon evoker_fangs
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=8}] positioned -79882 47 -111 run summon evoker_fangs
+
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=7}] as @n[tag=AzrielNPC_flauros] at @s run tp @s -79957.87 56.00 -104.95 facing -79957 56 -106
 
 
 
