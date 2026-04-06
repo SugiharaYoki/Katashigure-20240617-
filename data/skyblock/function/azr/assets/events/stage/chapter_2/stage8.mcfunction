@@ -142,6 +142,7 @@ execute if score stage_main_thread AzrTimerStack matches 450 run kill @e[type=it
 execute if score stage_main_thread AzrTimerStack matches 450 run stopsound @a[tag=azrShowDialog] music
 execute if score stage_main_thread AzrTimerStack matches 450 run fill -79891 42 73 -79889 38 73 minecraft:air destroy
 execute if score stage_main_thread AzrTimerStack matches 450 run fill -79883 38 48 -79883 41 49 minecraft:air destroy
+execute if score stage_main_thread AzrTimerStack matches 450 run fill -79881 41 40 -79883 38 40 minecraft:air destroy
 execute if score stage_main_thread AzrTimerStack matches 460..480 as @n[tag=AzrielNPC_marinus] at @s run rotate @s facing entity @n[type=zoglin]
 execute if score stage_main_thread AzrTimerStack matches 460 as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs/skill/marinus/attack_instant_slash_harmful
 execute if score stage_main_thread AzrTimerStack matches 463..466 as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs/skill/marinus/attack_instant_slash_harmful
