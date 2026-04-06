@@ -122,6 +122,11 @@ execute if score stage Azr_system matches 29.. as @n[tag=AzrielNPC_marinus] at @
 
 
 
+#第二恣眼
+execute positioned -79906 45 -106 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=..9,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79906 45 -106 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
+execute positioned -79906 45 -106 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79894 48 -109 run function skyblock:azr/assets/mobs/sonic_eye
+execute positioned -79906 45 -106 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79905 47 -90 run function skyblock:azr/assets/mobs/sonic_eye
 
 
 
