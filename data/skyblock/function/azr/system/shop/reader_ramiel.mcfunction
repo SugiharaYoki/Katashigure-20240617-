@@ -171,7 +171,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_savior:1b
 #execute if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop08] CustomName set value ' √ '
 
 tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
-{selector:"@n[tag=AzrRamielExStage_displaymarkera]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432301"},hover_event:{"action":"show_text","value":{text:"Appetence - 叛诛卷宗\n使用棍类武器攻击背对自己的怪物时造成大额伤害",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkera]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432301"},hover_event:{"action":"show_text","value":{text:"Appetence - 叛诛卷宗\n使用棍类武器攻击背对自己的怪物时造成大额伤害、增加手持棍类武器时的潜行速度",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerb]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432302"},hover_event:{"action":"show_text","value":{text:"Breakout",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerc]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432303"},hover_event:{"action":"show_text","value":{text:"Cerement - 贪婪石板\n增加拾取范围",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerd]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432304"},hover_event:{"action":"show_text","value":{text:"Diffident - 花墙石板\n按前进键增加攻防",color:"white"}}},\
