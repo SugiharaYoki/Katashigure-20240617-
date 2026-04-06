@@ -36,4 +36,4 @@ execute as @e[tag=AZR_Amulet_Instant_Success_Mob,distance=..20] at @s rotated as
 execute as @e[tag=AZR_Amulet_Instant_Success_Mob,distance=..20] at @s rotated as @s rotated ~-20 ~ positioned ^ ^ ^9 if entity @a[tag=AZR_Amulet_Instant_Success,distance=..9] run tag @s remove AZR_Amulet_Instant_Success_Mob_once
 execute as @e[tag=AZR_Amulet_Instant_Success_Mob,distance=..20] at @s rotated as @s rotated ~-20 ~ positioned ^ ^ ^10 if entity @a[tag=AZR_Amulet_Instant_Success,distance=..10] run tag @s remove AZR_Amulet_Instant_Success_Mob_once
 
-execute if entity @s[tag=!AZR_Amulet_Instant_Success_Mob_once] run tag @s remove AZR_Amulet_Instant_Success_Mob
+execute as @e[tag=AZR_Amulet_Instant_Success_Mob,distance=..20,tag=!AZR_Amulet_Instant_Success_Mob_once] run tag @s remove AZR_Amulet_Instant_Success_Mob
