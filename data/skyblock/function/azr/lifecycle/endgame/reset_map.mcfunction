@@ -697,6 +697,16 @@ fill -79924 54 -103 -79923 55 -103 iron_bars
 fill -79933 47 -96 -79931 48 -96 minecraft:oak_shelf[facing=south]{Inventory:[]}
 setblock -79923 47 -88 minecraft:potted_spruce_sapling
 
+#牢房办公室
+setblock -79953 50 -80 chest[facing=south]{Inventory:[]}
+item replace block -79953 50 -80 container.12 with ink_sac 2
+item replace block -79953 50 -80 container.14 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
+fill -79950 52 -70 -79950 52 -69 minecraft:spruce_trapdoor[half=top]
+setblock -79950 53 -69 chest[facing=west]{Inventory:[]}
+item replace block -79950 53 -69 container.12 with gunpowder 2
+item replace block -79950 53 -69 container.14 with flint 2
+
+
 #大铁门额外区域
 fill -79927 49 -130 -79927 48 -127 minecraft:netherite_block
 
