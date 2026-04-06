@@ -81,6 +81,7 @@ execute if score stage_main_thread AzrTimerStack matches 263 positioned -79946 4
 execute if score stage_main_thread AzrTimerStack matches 264 positioned -79946 40 -108 run particle minecraft:reverse_portal ~ ~0.8 ~ 0.3 0.7 0.3 0.0 18
 execute if score stage_main_thread AzrTimerStack matches 264 positioned -79946 40 -108 run playsound entity.enderman.teleport hostile @a ~ ~ ~ 0.8 1.2
 execute if score stage_main_thread AzrTimerStack matches 264 positioned -79946 40 -108 run particle gust ~ ~0.1 ~ 2 0 2 0 5
+execute if score stage_main_thread AzrTimerStack matches 264 positioned -79946 40 -108 as @n[tag=AzrielNPC_marinus,type=villager] at @s run attribute @s movement_speed base set 0.1
 
 execute if score stage_main_thread AzrTimerStack matches 260..350 run scoreboard players add stage_main_thread AzrielMobLevel 1
 execute if score stage_main_thread AzrTimerStack matches 330..390 if score stage_main_thread AzrielMobLevel matches 200.. run scoreboard players set stage_main_thread AzrTimerStack 391
