@@ -67,7 +67,7 @@ execute if score stage_main_thread AzrTimerStack matches 160..161 positioned -79
 execute if score stage_main_thread AzrTimerStack matches 172..174 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_melee","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 200..202 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 205..207 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_fire","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_main_thread AzrTimerStack matches 215..217 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_pickaxe","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 215..217 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_shadow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 209 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_cleric","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 230..233 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 249 positioned -79924 40 -110 at @n[tag=AzrielMob_summon_delay_marker_stage10_1,distance=..20,type=marker] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_cleric","AzrielMob_summon_delay","AzrielMob_level_1"]}
@@ -113,6 +113,16 @@ execute if score stage_main_thread AzrTimerStack matches 405 run advancement gra
 execute if score stage_main_thread AzrTimerStack matches 405 run title @a[tag=azrShowDialog] actionbar {text:"Stage Annihilated",color:"green"}
 execute if score stage_main_thread AzrTimerStack matches 405 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..11}] Azr_skillPoints 12
 execute if score stage_main_thread AzrTimerStack matches 405 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:husk}
+
+execute if score stage_main_thread AzrTimerStack matches 405 positioned -79924 55 -110 run function skyblock:azr/assets/mobs/spider_giant
+execute if score stage_main_thread AzrTimerStack matches 405 positioned -79923 54 -101 run function skyblock:azr/assets/mobs/spider_mini
+execute if score stage_main_thread AzrTimerStack matches 405 positioned -79923 54 -101 run function skyblock:azr/assets/mobs/spider_mini
+execute if score stage_main_thread AzrTimerStack matches 405 positioned -79923 54 -101 run function skyblock:azr/assets/mobs/spider_mini
+execute if score stage_main_thread AzrTimerStack matches 405 positioned -79912 54 -106 run function skyblock:azr/assets/mobs/husk
+
+
+
+
 execute if score stage_main_thread AzrTimerStack matches 405 run scoreboard players set stage Azr_system 30
 execute if score stage_main_thread AzrTimerStack matches 405 run scoreboard players set stage_main_thread AzrTimerStack 0
 

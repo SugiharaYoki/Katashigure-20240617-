@@ -23,8 +23,8 @@ execute if score stage_bonus_thread AzrTimerStack matches 49..50 positioned -799
 execute if score stage_bonus_thread AzrTimerStack matches 52 positioned -79935.00 54.00 -105.00 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_armor","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_bonus_thread AzrTimerStack matches 53 positioned -79935.00 54.00 -105.00 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead3","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
-execute if score stage_bonus_thread AzrTimerStack matches 72 positioned -79913.04 54.00 -101.04 run summon marker ~ ~ ~ {Tags:["AzrielMob_zombie_villager_cleric","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_bonus_thread AzrTimerStack matches 88 positioned -79913.04 54.00 -101.04 run summon marker ~ ~ ~ {Tags:["AzrielMob_zombie_villager_cleric","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 72 positioned -79913.04 54.00 -101.04 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_zombie_villager_cleric","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 88 positioned -79913.04 54.00 -101.04 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_zombie_villager_cleric","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 execute if score stage_bonus_thread AzrTimerStack matches 77 positioned -79923.01 54.00 -100.98 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_bonus_thread AzrTimerStack matches 77 positioned -79923.01 54.00 -108.97 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
