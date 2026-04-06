@@ -3,13 +3,6 @@ scoreboard players add @s rng1 1
 execute if score @s rng1 matches 2 run effect clear @s slowness
 execute if score @s rng1 matches 2 run effect give @s resistance 5 4 true
 execute if score @s rng1 matches 2 run data modify entity @s Invulnerable set value 1b
-execute if score @s[scores={AzrielMobLevel=1..}] rng1 matches 2 store result score @s rng2 run random value 5..20
-execute if score @s[scores={AzrielMobLevel=2..}] rng1 matches 2 store result score @s rng2 run random value 7..22
-execute if score @s[scores={AzrielMobLevel=3..}] rng1 matches 2 store result score @s rng2 run random value 9..22
-execute if score @s[scores={AzrielMobLevel=4..}] rng1 matches 2 store result score @s rng2 run random value 10..25
-execute if score @s[scores={AzrielMobLevel=5..}] rng1 matches 2 store result score @s rng2 run random value 13..28
-
-execute if score @s[scores={AzrielMobLevel=1..}] rng1 matches 3 run scoreboard players operation @s rng1 += @s rng2
 
 execute if score @s rng1 matches 48..49 run scoreboard players set @s rng1 48
 execute if score @s rng1 matches 48..49 if entity @a[tag=azrPlayer,distance=..5.5] run scoreboard players set @s rng1 50
@@ -92,4 +85,11 @@ execute if score @s[scores={rng3=3}] rng1 matches 62 rotated as @p[tag=azrPlayer
 execute if score @s[scores={rng3=3}] rng1 matches 62 rotated as @p[tag=azrPlayer] rotated ~270 0 positioned ^ ^ ^3.3 run function skyblock:azr/assets/mobs/trap_fang
 
 
-execute if score @s rng1 matches 70.. run scoreboard players set @s rng1 1
+execute if score @s[scores={AzrielMobLevel=1..}] rng1 matches 67 store result score @s rng2 run random value 5..20
+execute if score @s[scores={AzrielMobLevel=2..}] rng1 matches 67 store result score @s rng2 run random value 7..22
+execute if score @s[scores={AzrielMobLevel=3..}] rng1 matches 67 store result score @s rng2 run random value 9..22
+execute if score @s[scores={AzrielMobLevel=4..}] rng1 matches 67 store result score @s rng2 run random value 10..25
+execute if score @s[scores={AzrielMobLevel=5..}] rng1 matches 67 store result score @s rng2 run random value 13..28
+
+execute if score @s[scores={AzrielMobLevel=1..}] rng1 matches 67 run scoreboard players operation @s rng1 += @s rng2
+execute if score @s rng1 matches 95.. run scoreboard players set @s rng1 1
