@@ -12,9 +12,10 @@ execute if score @s rng1 matches 1 rotated as @s[tag=!attack_throw_high] positio
 execute if score @s rng1 matches 1 rotated as @s[tag=!attack_throw_high] positioned as @s if block ~ ~-0.2 ~ air run tp @s ~ ~-0.1 ~
 execute if score @s rng1 matches 1 rotated as @s[tag=!attack_throw_high] positioned as @s if block ~ ~-0.2 ~ air run tp @s ~ ~-0.1 ~
 
-execute if score @s rng1 matches 1 if score @n[type=villager,tag=AzrielNPC_marinus] Health matches ..500 run rotate @s facing entity @n[tag=AzrielMob]
-execute if score @s rng1 matches 2..4 if score @n[type=villager,tag=AzrielNPC_marinus] Health matches ..400 run rotate @s facing entity @n[tag=AzrielMob]
-execute if score @s rng1 matches 5..8 if score @n[type=villager,tag=AzrielNPC_marinus] Health matches ..300 run rotate @s facing entity @n[tag=AzrielMob]
+execute if score @s[tag=AzrielFriendly] rng1 matches 1..8 run rotate @s facing entity @n[tag=AzrielMob]
+execute if score @s[tag=!AzrielFriendly] rng1 matches 1 if score @n[type=villager,tag=AzrielNPC_marinus] Health matches ..500 run rotate @s facing entity @n[type=player,tag=azrPlayer]
+execute if score @s[tag=!AzrielFriendly] rng1 matches 2..4 if score @n[type=villager,tag=AzrielNPC_marinus] Health matches ..400 run rotate @s facing entity @n[type=player,tag=azrPlayer]
+execute if score @s[tag=!AzrielFriendly] rng1 matches 5..8 if score @n[type=villager,tag=AzrielNPC_marinus] Health matches ..300 run rotate @s facing entity @n[type=player,tag=azrPlayer]
 
 execute if score @s[tag=attack_throw_angle_left] rng1 matches 1 if score @n[type=villager,tag=AzrielNPC_marinus] Health matches ..500 rotated as @s run rotate @s ~-30 ~
 execute if score @s[tag=attack_throw_angle_left] rng1 matches 2..4 if score @n[type=villager,tag=AzrielNPC_marinus] Health matches ..400 rotated as @s run rotate @s ~-30 ~
