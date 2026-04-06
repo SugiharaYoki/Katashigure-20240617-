@@ -50,7 +50,7 @@ execute as @s[tag=AzrielNPC_Divineforce,tag=AzrielMob] at @s run tag @s remove A
 
 execute if entity @s[type=#illager,tag=AzrielNPC_Divineforce] run scoreboard players remove @s AzrielNPC_FollowInterest 1
 execute if entity @s[type=#illager,tag=AzrielNPC_Divineforce,scores={AzrielNPC_FollowInterest=..200},tag=AzrielNPC_Divineforce_Followable] if entity @a[tag=azrPlayer,distance=0..6] store result score @s AzrielNPC_FollowInterest run random value -1500..-500
-execute if entity @s[type=#illager,tag=AzrielNPC_Divineforce,scores={AzrielNPC_FollowInterest=-502..500},tag=AzrielNPC_Divineforce_Followable] store result score @s AzrielNPC_FollowInterest run random value 1000..1800
+execute if entity @s[type=#illager,tag=AzrielNPC_Divineforce,scores={AzrielNPC_FollowInterest=-502..-500},tag=AzrielNPC_Divineforce_Followable] store result score @s AzrielNPC_FollowInterest run random value 1000..1800
 
 execute if entity @s[type=#illager,tag=AzrielNPC_Divineforce,scores={AzrielNPC_FollowInterest=1..},type=!pillager] unless entity @r[tag=azrPlayer,distance=..6] at @r[tag=azrPlayer] rotated ~ 0 positioned ^1 ^ ^-2 if block ~ ~ ~ air if block ~ ~1 ~ air if block ~ ~1 ~0.3 air if block ~ ~1 ~-0.3 air if block ~0.3 ~1 ~ air if block ~-0.3 ~1 ~ air unless block ~ ~-0.7 ~ air run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 execute if entity @s[type=#illager,tag=AzrielNPC_Divineforce,scores={AzrielNPC_FollowInterest=1..},type=pillager] unless entity @r[tag=azrPlayer,distance=..10] at @r[tag=azrPlayer] rotated ~ 0 positioned ^1 ^ ^-2 if block ~ ~ ~ air if block ~ ~1 ~ air if block ~ ~1 ~0.3 air if block ~ ~1 ~-0.3 air if block ~0.3 ~1 ~ air if block ~-0.3 ~1 ~ air unless block ~ ~-0.7 ~ air run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
