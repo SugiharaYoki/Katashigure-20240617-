@@ -113,3 +113,5 @@ execute if score stage_main_thread AzrTimerStack matches 405 run title @a[tag=az
 execute if score stage_main_thread AzrTimerStack matches 405 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..11}] Azr_skillPoints 12
 execute if score stage_main_thread AzrTimerStack matches 405 run scoreboard players set stage Azr_system 30
 execute if score stage_main_thread AzrTimerStack matches 405 run scoreboard players set stage_main_thread AzrTimerStack 0
+
+execute positioned -79931 100 0 unless entity @n[distance=..10000,type=villager,tag=AzrielNPC_marinus] positioned -79889 51 -15 run function skyblock:azr/assets/mobs/skill/marinus/summon_revive
