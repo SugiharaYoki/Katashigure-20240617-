@@ -690,6 +690,10 @@ fill -79944 40 -105 -79942 42 -105 barrier
 
 #stage appetence
 setblock -79914 55 -111 minecraft:birch_button[facing=south,face=floor]
+fill -79924 54 -108 -79923 55 -108 iron_bars
+fill -79924 54 -103 -79923 55 -103 iron_bars
+
+
 
 #大铁门额外区域
 fill -79927 49 -130 -79927 48 -127 minecraft:netherite_block
