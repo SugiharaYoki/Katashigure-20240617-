@@ -18,6 +18,7 @@ execute if entity @s[tag=AzrielMob_healer] run function skyblock:azr/assets/mobs
 
 execute if entity @s[tag=AzrielMob_trap_spike_display] run function skyblock:azr/assets/mobs/skill/trap_spike
 
+execute if entity @s[tag=AzrielMob_husk] run function skyblock:azr/assets/mobs/skill/husk
 
 execute if entity @s[tag=AzrielMob_zombie_villager_armor] run function skyblock:azr/assets/mobs/skill/zombie_villager_armor
 execute if entity @s[tag=AzrielMob_zombie_villager_cleric] run function skyblock:azr/assets/mobs/skill/zombie_villager_cleric
