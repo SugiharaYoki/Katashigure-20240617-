@@ -1,6 +1,5 @@
 
 
-execute if score @s rng1 matches 4 run playsound entity.evoker.prepare_summon hostile @a ~ ~ ~ 1 1.3
 execute if score @s rng1 matches 4 run particle minecraft:soul_fire_flame ~ ~1 ~ 0.3 0.5 0.3 0 20
 execute if score @s rng1 matches 4 run particle minecraft:enchant ~ ~0.5 ~ 1 0 0 0.2 20
 execute if score @s rng1 matches 4 run particle minecraft:enchant ~ ~0.5 ~ 0 0 1 0.2 20
