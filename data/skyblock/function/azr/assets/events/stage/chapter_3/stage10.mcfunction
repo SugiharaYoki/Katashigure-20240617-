@@ -79,7 +79,6 @@ execute if score stage_main_thread AzrTimerStack matches 263 positioned -79946 3
 execute if score stage_main_thread AzrTimerStack matches 264 positioned -79946 39 -108 run particle minecraft:reverse_portal ~ ~0.8 ~ 0.3 0.7 0.3 0.0 18
 execute if score stage_main_thread AzrTimerStack matches 264 positioned -79946 39 -108 run playsound entity.enderman.teleport hostile @a ~ ~ ~ 0.8 1.2
 execute if score stage_main_thread AzrTimerStack matches 264 positioned -79946 39 -108 run particle gust ~ ~0.1 ~ 2 0 2 0 5
-execute if score stage_main_thread AzrTimerStack matches 266.. positioned -79946 39 -108 as @n[tag=AzrielNPC_marinus,type=villager,distance=..70] at @s run 
 
 
 #读书区域 -79905 40 -71
