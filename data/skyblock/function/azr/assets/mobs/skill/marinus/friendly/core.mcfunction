@@ -1,7 +1,7 @@
 
 scoreboard players add @s rng1 1
 
-
+execute if entity @s[tag=AzrielMob] run tag @s remove AzrielMob
 
 
 execute if score @s rng1 matches -19 run rotate @s facing entity @n[tag=AzrielMob,distance=..16]
