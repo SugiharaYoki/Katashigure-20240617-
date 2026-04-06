@@ -127,7 +127,7 @@ execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[ta
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerv] CustomName set value ' - '
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value ' - '
 
-execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkera] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_hoe_assassinate:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkera] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerb] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_greed_board:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerc] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_flower_wall:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerd] CustomName set value ' √ '
@@ -171,7 +171,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_savior:1b
 #execute if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop08] CustomName set value ' √ '
 
 tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
-{selector:"@n[tag=AzrRamielExStage_displaymarkera]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432301"},hover_event:{"action":"show_text","value":{text:"Appetence",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkera]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432301"},hover_event:{"action":"show_text","value":{text:"Appetence - 叛诛卷宗\n棍攻击背对自己的怪物时造成大额伤害",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerb]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432302"},hover_event:{"action":"show_text","value":{text:"Breakout",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerc]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432303"},hover_event:{"action":"show_text","value":{text:"Cerement - 贪婪石板\n增加拾取范围",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerd]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432304"},hover_event:{"action":"show_text","value":{text:"Diffident - 花墙石板\n按前进键增加攻防",color:"white"}}},\

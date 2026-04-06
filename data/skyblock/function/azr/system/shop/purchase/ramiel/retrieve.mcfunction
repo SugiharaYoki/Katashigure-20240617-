@@ -1,7 +1,7 @@
 
 
 
-#execute if entity @s[tag=AZS_BoS01] if score @s Azr_Shop matches 8432301 run 
+execute if entity @s[tag=AZS_BoS01] if score @s Azr_Shop matches 8432301 run function skyblock:azr/assets/items/amulets/hoe_assassinate
 #execute if entity @s[tag=AZS_BoS02] if score @s Azr_Shop matches 8432302 run 
 execute if entity @s[tag=AZS_BoS03] if score @s Azr_Shop matches 8432303 run function skyblock:azr/assets/items/amulets/greed_board
 execute if entity @s[tag=AZS_BoS04] if score @s Azr_Shop matches 8432304 run function skyblock:azr/assets/items/amulets/flower_wall
