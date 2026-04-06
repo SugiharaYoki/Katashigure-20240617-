@@ -10,11 +10,11 @@ function skyblock:azr/system/player/skills/amulet/hoe_assassinate_detect with st
 execute if entity @s[tag=AZR_Amulet_Instant_Success] run execute as @e[tag=AZR_Amulet_Instant_Success_Mob,distance=..15] at @s run data modify entity @s HurtTime set value 0
 
 execute if entity @s[tag=AZR_Amulet_Instant_Success] if items entity @s weapon.mainhand wooden_hoe run execute as @e[tag=AZR_Amulet_Instant_Success_Mob,distance=..15] at @s run damage @s 6 generic by @p[tag=AZR_Amulet_Instant_Success]
-execute if entity @s[tag=AZR_Amulet_Instant_Success] if items entity @s weapon.mainhand stone_hoe run execute as @e[tag=AZR_Amulet_Instant_Success_Mob,distance=..15] at @s run damage @s 90 generic by @p[tag=AZR_Amulet_Instant_Success]
-execute if entity @s[tag=AZR_Amulet_Instant_Success] if items entity @s weapon.mainhand iron_hoe run execute as @e[tag=AZR_Amulet_Instant_Success_Mob,distance=..15] at @s run damage @s 12 generic by @p[tag=AZR_Amulet_Instant_Success]
-execute if entity @s[tag=AZR_Amulet_Instant_Success] if items entity @s weapon.mainhand copper_hoe run execute as @e[tag=AZR_Amulet_Instant_Success_Mob,distance=..15] at @s run damage @s 15 generic by @p[tag=AZR_Amulet_Instant_Success]
-execute if entity @s[tag=AZR_Amulet_Instant_Success] if items entity @s weapon.mainhand golden_hoe run execute as @e[tag=AZR_Amulet_Instant_Success_Mob,distance=..15] at @s run damage @s 18 generic by @p[tag=AZR_Amulet_Instant_Success]
-execute if entity @s[tag=AZR_Amulet_Instant_Success] if items entity @s weapon.mainhand diamond_hoe run execute as @e[tag=AZR_Amulet_Instant_Success_Mob,distance=..15] at @s run damage @s 21 generic by @p[tag=AZR_Amulet_Instant_Success]
+execute if entity @s[tag=AZR_Amulet_Instant_Success] if items entity @s weapon.mainhand stone_hoe run execute as @e[tag=AZR_Amulet_Instant_Success_Mob,distance=..15] at @s run damage @s 10 generic by @p[tag=AZR_Amulet_Instant_Success]
+execute if entity @s[tag=AZR_Amulet_Instant_Success] if items entity @s weapon.mainhand iron_hoe run execute as @e[tag=AZR_Amulet_Instant_Success_Mob,distance=..15] at @s run damage @s 13 generic by @p[tag=AZR_Amulet_Instant_Success]
+execute if entity @s[tag=AZR_Amulet_Instant_Success] if items entity @s weapon.mainhand copper_hoe run execute as @e[tag=AZR_Amulet_Instant_Success_Mob,distance=..15] at @s run damage @s 17 generic by @p[tag=AZR_Amulet_Instant_Success]
+execute if entity @s[tag=AZR_Amulet_Instant_Success] if items entity @s weapon.mainhand golden_hoe run execute as @e[tag=AZR_Amulet_Instant_Success_Mob,distance=..15] at @s run damage @s 20 generic by @p[tag=AZR_Amulet_Instant_Success]
+execute if entity @s[tag=AZR_Amulet_Instant_Success] if items entity @s weapon.mainhand diamond_hoe run execute as @e[tag=AZR_Amulet_Instant_Success_Mob,distance=..15] at @s run damage @s 24 generic by @p[tag=AZR_Amulet_Instant_Success]
 
 
 execute as @e[tag=AZR_Amulet_Instant_Success_Mob,tag=AzrielMob,distance=..50] at @s run data modify entity @s HurtTime set value 0
