@@ -32,11 +32,11 @@ execute if score @s[tag=azrPlayer_dialogchoice_revealed_303] Azr_Shop matches 30
     positioned -79836 13 -57 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng1 3001
 
 execute if score @s[tag=azrPlayer_dialogchoice_revealed_304] Azr_Shop matches 30401 \
-    as @n[tag=AzrielNPC_marinus,distance=0..5] at @s run scoreboard players set @s rng1 1001
+    as @n[tag=AzrielNPC_marinus,distance=0..5] at @s run scoreboard players set @s AzrielNPC_ConversationTimer 1001
 execute if score @s[tag=azrPlayer_dialogchoice_revealed_304] Azr_Shop matches 30402 \
-    as @n[tag=AzrielNPC_marinus,distance=0..5] at @s run scoreboard players set @s rng1 2001
+    as @n[tag=AzrielNPC_marinus,distance=0..5] at @s run scoreboard players set @s AzrielNPC_ConversationTimer 2001
 execute if score @s[tag=azrPlayer_dialogchoice_revealed_304] Azr_Shop matches 30403 \
-    as @n[tag=AzrielNPC_marinus,distance=0..5] at @s run scoreboard players set @s rng1 3001
+    as @n[tag=AzrielNPC_marinus,distance=0..5] at @s run scoreboard players set @s AzrielNPC_ConversationTimer 3001
 
 
 
