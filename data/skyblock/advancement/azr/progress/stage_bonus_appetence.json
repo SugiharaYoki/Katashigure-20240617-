@@ -1,17 +1,18 @@
+
 {
     "display": {
         "title": {
-            "text": "牢房区域 - 西南翼3层",
+            "text": "晦怨囚牢：西翼3层",
             "color": "green",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "STAGE APPETENCE",
-            "color": "light_purple"
+            "text": "亡魂并非受到操控才会行动。\n我差点就将这个显而易见的事实忽略掉了。\n有些‘存在’被关押在此许久，早就已经凶暴化。\n它们或许比那些受到权之殊能操控的魔物要更加危险。",
+            "color": "white"
         },
         "icon": {
-            "id": "minecraft:gray_glazed_terracotta"
+            "id": "minecraft:orange_glazed_terracotta"
         },
         "frame": "task",
         "show_toast": false,
@@ -23,5 +24,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:azr/progress/stage11"
+    "parent": "skyblock:azr/progress/stage10"
 }

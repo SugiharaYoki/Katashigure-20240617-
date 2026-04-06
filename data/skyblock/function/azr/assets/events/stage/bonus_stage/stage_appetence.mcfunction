@@ -12,7 +12,6 @@ execute if score stage_bonus_thread AzrTimerStack matches 2 positioned -79935.00
 execute if score stage_bonus_thread AzrTimerStack matches 12 positioned -79935.00 54.00 -105.00 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_bonus_thread AzrTimerStack matches 13 positioned -79935.00 54.00 -105.00 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
-execute if score stage_bonus_thread AzrTimerStack matches 2 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:husk}
 
 execute if score stage_bonus_thread AzrTimerStack matches 25 positioned -79935.00 54.00 -105.00 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_bonus_thread AzrTimerStack matches 28 positioned -79935.00 54.00 -105.00 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
