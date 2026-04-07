@@ -239,5 +239,6 @@ attribute @s sneaking_speed modifier remove azr_amulet:moss_grow_01
 
 attribute @s[tag=azr_amulet_hoe_assassinate_sneaked] minecraft:sneaking_speed modifier remove azr_amulet_hoe_assassinate:sneak_speed
 tag @s remove azr_amulet_hoe_assassinate_sneaked
+tag @s remove AzrielMob_pickaxe_possible_target
 
 
