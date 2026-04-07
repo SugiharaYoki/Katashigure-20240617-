@@ -57,13 +57,13 @@ execute if score stage_main_thread AzrTimerStack matches 252 positioned -79905 4
 execute if score stage_main_thread AzrTimerStack matches 262 positioned -79901 41 -50 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_baby","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 273 positioned -79909 40 -66 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_baby","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 262 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:undead_baby}
-
-execute if score stage_main_thread AzrTimerStack matches 300..301 positioned -79909 40 -60 if entity @n[distance=..25,tag=AzrielMob_undead_baby] run scoreboard players set stage_main_thread AzrTimerStack 300
+execute if score stage_main_thread AzrTimerStack matches 289 positioned -79909 40 -66 as @e[limit=2,tag=AzrielMob,distance=0..10,tag=AzrielMob_undead_baby] run tag @s add AzrielMob_StageProgressTarget
+execute if score stage_main_thread AzrTimerStack matches 300..301 positioned -79909 40 -60 if entity @n[distance=..25,tag=AzrielMob_StageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 300
 
 execute if score stage_main_thread AzrTimerStack matches 302 positioned -79906 40 -71 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_cleric","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 302 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:zombie_villager_cleric}
-
-execute if score stage_main_thread AzrTimerStack matches 340..341 positioned -79909 40 -60 if entity @n[distance=..25,tag=AzrielMob_zombie_villager_cleric] run scoreboard players set stage_main_thread AzrTimerStack 340
+execute if score stage_main_thread AzrTimerStack matches 339 positioned -79906 40 -71 as @n[tag=AzrielMob,distance=0..10,tag=AzrielMob_zombie_villager_cleric] run tag @s add AzrielMob_StageProgressTarget
+execute if score stage_main_thread AzrTimerStack matches 340..341 positioned -79909 40 -60 if entity @n[distance=..25,tag=AzrielMob_StageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 340
 
 #读书区域 -79905 40 -71
 #下一站出口附近 -79901 41 -50
