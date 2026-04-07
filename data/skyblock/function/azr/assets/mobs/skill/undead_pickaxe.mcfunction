@@ -6,8 +6,6 @@ execute if score @s rng1 matches 2..5 run scoreboard players set @s rng1 2
 execute if score @s rng1 matches 2..5 store result score @s rng3 run random value 1..4
 execute if score @s[scores={rng3=1}] rng1 matches 2..5 unless entity @p[tag=azrPlayer,distance=..5] as @a[tag=azrPlayer,distance=5.01..8] run tag @s add AzrielMob_pickaxe_possible_target
 
-execute if score @s[scores={rng3=1}] rng1 matches 2..5 unless entity @p[tag=azrPlayer,distance=..5] as @a[tag=azrPlayer,distance=5.01..8] run say hi1
-execute if score @s[scores={rng3=1}] rng1 matches 2..5 unless entity @p[tag=azrPlayer,distance=..5] as @a[tag=AzrielMob_pickaxe_possible_target] run say hi2
 
 execute if score @s[scores={rng3=1}] rng1 matches 2..5 at @s rotated as @s run function skyblock:azr/assets/mobs/skill/undead_pickaxe_detect
 
