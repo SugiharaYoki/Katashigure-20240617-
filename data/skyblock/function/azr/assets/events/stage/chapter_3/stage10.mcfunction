@@ -84,7 +84,7 @@ execute if score stage_main_thread AzrTimerStack matches 264 positioned -79946 4
 execute if score stage_main_thread AzrTimerStack matches 264 positioned -79946 40 -108 as @n[tag=AzrielNPC_marinus,type=villager] at @s run attribute @s movement_speed base set 0.1
 
 execute if score stage_main_thread AzrTimerStack matches 260..350 run scoreboard players add stage_main_thread AzrielMobLevel 1
-execute if score stage_main_thread AzrTimerStack matches 330..390 if score stage_main_thread AzrielMobLevel matches 200.. run scoreboard players set stage_main_thread AzrTimerStack 391
+#execute if score stage_main_thread AzrTimerStack matches 330..390 if score stage_main_thread AzrielMobLevel matches 200.. run scoreboard players set stage_main_thread AzrTimerStack 391
 
 execute if score stage_main_thread AzrTimerStack matches 250 at @n[tag=AzrielNPC_marinus] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 250 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎，坚持住。”",color:"white"}]
