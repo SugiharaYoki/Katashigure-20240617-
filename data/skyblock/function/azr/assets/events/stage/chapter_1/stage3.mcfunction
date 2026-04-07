@@ -22,8 +22,9 @@ execute if score stage_main_thread AzrTimerStack matches 3 positioned -79932 38 
 
 execute if score stage_main_thread AzrTimerStack matches 30 positioned -79931 42 40 run function skyblock:azr/assets/mobs/smoke
 execute if score stage_main_thread AzrTimerStack matches 55 positioned -79931 42 40 run function skyblock:azr/assets/mobs/smoke
+execute if score stage_main_thread AzrTimerStack matches 55 positioned -79931 42 40 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_StageProgressTarget
 #回秒
-execute if score stage_main_thread AzrTimerStack matches 66..67 positioned -79927 38 25 if entity @n[distance=..15,tag=AzrielMob_undead_pickaxe] run scoreboard players set stage_main_thread AzrTimerStack 66
+execute if score stage_main_thread AzrTimerStack matches 66..67 positioned -79927 38 25 if entity @n[distance=..15,tag=AzrielMob_StageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 66
 execute if score stage_main_thread AzrTimerStack matches 68 run title @a[tag=azrShowDialog] actionbar {text:"Wave Clear",color:"green"}
 execute if score stage_main_thread AzrTimerStack matches 69 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 1
 execute if score stage_main_thread AzrTimerStack matches 88 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 0
@@ -33,18 +34,20 @@ execute if score stage_main_thread AzrTimerStack matches 89 positioned -79927 38
 execute if score stage_main_thread AzrTimerStack matches 91 positioned -79927 38 25 run function skyblock:azr/assets/mobs/smoke
 execute if score stage_main_thread AzrTimerStack matches 93 positioned -79927 38 25 run function skyblock:azr/assets/mobs/undead_pickaxe
 execute if score stage_main_thread AzrTimerStack matches 103 positioned -79927 38 25 run function skyblock:azr/assets/mobs/undead_pickaxe
-execute if score stage_main_thread AzrTimerStack matches 94..95 positioned -79927 38 25 if entity @n[distance=..15,tag=AzrielMob_undead_pickaxe] run scoreboard players set stage_main_thread AzrTimerStack 94
+execute if score stage_main_thread AzrTimerStack matches 103 positioned -79927 38 25 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_StageProgressTarget
+execute if score stage_main_thread AzrTimerStack matches 94..95 positioned -79927 38 25 if entity @n[distance=..15,tag=AzrielMob_StageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 94
 execute if score stage_main_thread AzrTimerStack matches 96 positioned -79930 38 38 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 96 positioned -79932 38 38 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
 execute if score stage_main_thread AzrTimerStack matches 123 positioned -79927 38 25 run function skyblock:azr/assets/mobs/spider_giant
+execute if score stage_main_thread AzrTimerStack matches 123 positioned -79927 38 25 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_StageProgressTarget
 execute if score stage_main_thread AzrTimerStack matches 123 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:spider_giant}
 
 execute if score stage_main_thread AzrTimerStack matches 125 positioned -79930 38 38 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"yellow",bold:1b},{bold: false,text:"\n“已经把蜘蛛带来了吗？那再怎么也够这人类的亡魂喝一大壶了。”",color:"white"}]
 execute if score stage_main_thread AzrTimerStack matches 145 positioned -79930 38 38 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"yellow",bold:1b},{bold: false,text:"\n“这家伙根本不说话，她就一个劲揍我们啊！我任职以来就没见过这么猛的挑战者！”",color:"white"}]
 
-execute if score stage_main_thread AzrTimerStack matches 146..147 positioned -79927 38 25 if entity @n[distance=..8,tag=AzrielMob_spider_giant] run scoreboard players set stage_main_thread AzrTimerStack 146
+execute if score stage_main_thread AzrTimerStack matches 146..147 positioned -79927 38 25 if entity @n[distance=..13,tag=AzrielMob_StageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 146
 
 execute if score stage_main_thread AzrTimerStack matches 163 positioned -79930 38 38 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua"},{text:"\n（有哪里不对劲，这不是任何称得上“神圣”的气息）",color:"white"}]
 

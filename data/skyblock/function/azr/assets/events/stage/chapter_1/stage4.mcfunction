@@ -23,17 +23,19 @@ execute if score stage_main_thread AzrTimerStack matches 37 positioned -79925 38
 execute if score stage_main_thread AzrTimerStack matches 37 positioned -79937 38 46 run function skyblock:azr/assets/mobs/undead
 execute if score stage_main_thread AzrTimerStack matches 41 positioned -79925 38 46 run function skyblock:azr/assets/mobs/shield
 execute if score stage_main_thread AzrTimerStack matches 41 positioned -79937 38 46 run function skyblock:azr/assets/mobs/shield
-
-execute if score stage_main_thread AzrTimerStack matches 42..43 positioned -79931 38 46 if entity @n[distance=..8,tag=AzrielMob_shield] run scoreboard players set stage_main_thread AzrTimerStack 42
+execute if score stage_main_thread AzrTimerStack matches 41 positioned -79925 38 46 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_StageProgressTarget
+execute if score stage_main_thread AzrTimerStack matches 41 positioned -79937 38 46 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_StageProgressTarget
+execute if score stage_main_thread AzrTimerStack matches 42..43 positioned -79931 38 46 if entity @n[distance=..12,tag=AzrielMob_StageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 42
 
 execute if score stage_main_thread AzrTimerStack matches 44 positioned -79925 38 46 run function skyblock:azr/assets/mobs/undead_pickaxe
 execute if score stage_main_thread AzrTimerStack matches 44 positioned -79937 38 46 run function skyblock:azr/assets/mobs/undead_pickaxe
 execute if score stage_main_thread AzrTimerStack matches 74 positioned -79925 38 46 run function skyblock:azr/assets/mobs/undead_pickaxe
 execute if score stage_main_thread AzrTimerStack matches 74 positioned -79937 38 46 run function skyblock:azr/assets/mobs/undead_pickaxe
+execute if score stage_main_thread AzrTimerStack matches 74 positioned -79925 38 46 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_StageProgressTarget
 execute if score stage_main_thread AzrTimerStack matches 76 positioned -79925 38 46 run function skyblock:azr/assets/mobs/sword
 execute if score stage_main_thread AzrTimerStack matches 76 positioned -79937 38 46 run function skyblock:azr/assets/mobs/sword
-
-execute if score stage_main_thread AzrTimerStack matches 77..78 positioned -79931 38 46 if entity @n[distance=..8,tag=AzrielMob_undead_pickaxe] run scoreboard players set stage_main_thread AzrTimerStack 77
+execute if score stage_main_thread AzrTimerStack matches 76 positioned -79937 38 46 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_StageProgressTarget
+execute if score stage_main_thread AzrTimerStack matches 77..78 positioned -79931 38 46 if entity @n[distance=..12,tag=AzrielMob_StageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 77
 
 execute if score stage_main_thread AzrTimerStack matches 79 run title @a[tag=azrShowDialog] actionbar {text:"Wave Clear",color:"green"}
 execute if score stage_main_thread AzrTimerStack matches 80 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 1
@@ -51,14 +53,18 @@ execute if score stage_main_thread AzrTimerStack matches 130 if score #temp_rng 
 execute if score stage_main_thread AzrTimerStack matches 130 if score #temp_rng Azr_system matches 2 positioned -79937 38 46 run function skyblock:azr/assets/mobs/summoner
 execute if score stage_main_thread AzrTimerStack matches 160 if score #temp_rng Azr_system matches 1 positioned -79925 38 46 run function skyblock:azr/assets/mobs/summoner
 execute if score stage_main_thread AzrTimerStack matches 160 if score #temp_rng Azr_system matches 2 positioned -79937 38 46 run function skyblock:azr/assets/mobs/summoner
-execute if score stage_main_thread AzrTimerStack matches 161..162 positioned -79931 38 46 if entity @n[distance=..15,tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 161
+execute if score stage_main_thread AzrTimerStack matches 160 if score #temp_rng Azr_system matches 1 positioned -79925 38 46 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_StageProgressTarget
+execute if score stage_main_thread AzrTimerStack matches 160 if score #temp_rng Azr_system matches 2 positioned -79937 38 46 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_StageProgressTarget
+execute if score stage_main_thread AzrTimerStack matches 161..162 positioned -79931 38 46 if entity @n[distance=..15,tag=AzrielMob_StageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 161
 execute if score stage_main_thread AzrTimerStack matches 163 positioned -79925 38 46 run function skyblock:azr/assets/mobs/summoner
 execute if score stage_main_thread AzrTimerStack matches 163 positioned -79937 38 46 run function skyblock:azr/assets/mobs/summoner
 execute if score stage_main_thread AzrTimerStack matches 173 if score #temp_rng Azr_system matches 1 positioned -79925 38 46 run function skyblock:azr/assets/mobs/shield
 execute if score stage_main_thread AzrTimerStack matches 173 if score #temp_rng Azr_system matches 2 positioned -79937 38 46 run function skyblock:azr/assets/mobs/shield
 execute if score stage_main_thread AzrTimerStack matches 175 if score #temp_rng Azr_system matches 1 positioned -79925 38 46 run function skyblock:azr/assets/mobs/undead_pickaxe
 execute if score stage_main_thread AzrTimerStack matches 175 if score #temp_rng Azr_system matches 2 positioned -79937 38 46 run function skyblock:azr/assets/mobs/undead_pickaxe
-execute if score stage_main_thread AzrTimerStack matches 184..185 positioned -79931 38 46 if entity @n[distance=..15,tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 184
+execute if score stage_main_thread AzrTimerStack matches 175 if score #temp_rng Azr_system matches 1 positioned -79925 38 46 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_StageProgressTarget
+execute if score stage_main_thread AzrTimerStack matches 175 if score #temp_rng Azr_system matches 2 positioned -79937 38 46 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_StageProgressTarget
+execute if score stage_main_thread AzrTimerStack matches 184..185 positioned -79931 38 46 if entity @n[distance=..15,tag=AzrielMob_StageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 184
 
 
 execute if score stage_main_thread AzrTimerStack matches 186 run title @a[tag=azrShowDialog] actionbar {text:"Wave Clear",color:"green"}
@@ -74,12 +80,16 @@ execute if score stage_main_thread AzrTimerStack matches 231 positioned -79937 3
 execute if score stage_main_thread AzrTimerStack matches 235 positioned -79937 38 46 run function skyblock:azr/assets/mobs/undead_pickaxe
 execute if score stage_main_thread AzrTimerStack matches 240 if score #temp_rng Azr_system matches 1 positioned -79925 38 46 run function skyblock:azr/assets/mobs/summoner
 execute if score stage_main_thread AzrTimerStack matches 240 if score #temp_rng Azr_system matches 2 positioned -79937 38 46 run function skyblock:azr/assets/mobs/summoner
-execute if score stage_main_thread AzrTimerStack matches 258..259 positioned -79931 38 46 if entity @n[distance=..10,tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 258
+execute if score stage_main_thread AzrTimerStack matches 240 if score #temp_rng Azr_system matches 1 positioned -79925 38 46 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_StageProgressTarget
+execute if score stage_main_thread AzrTimerStack matches 240 if score #temp_rng Azr_system matches 2 positioned -79937 38 46 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_StageProgressTarget
+execute if score stage_main_thread AzrTimerStack matches 258..259 positioned -79931 38 46 if entity @n[distance=..10,tag=AzrielMob_StageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 258
 execute if score stage_main_thread AzrTimerStack matches 260 if score #temp_rng Azr_system matches 1 positioned -79925 38 46 run function skyblock:azr/assets/mobs/summoner
 execute if score stage_main_thread AzrTimerStack matches 260 if score #temp_rng Azr_system matches 2 positioned -79937 38 46 run function skyblock:azr/assets/mobs/summoner
 execute if score stage_main_thread AzrTimerStack matches 260 positioned -79935 38 46 run function skyblock:azr/assets/mobs/sword
 execute if score stage_main_thread AzrTimerStack matches 260 positioned -79927 38 46 run function skyblock:azr/assets/mobs/sword
-execute if score stage_main_thread AzrTimerStack matches 261..262 positioned -79931 38 46 if entity @n[distance=..10,tag=AzrielMob_summoner] run scoreboard players set stage_main_thread AzrTimerStack 261
+execute if score stage_main_thread AzrTimerStack matches 260 positioned -79935 38 46 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_StageProgressTarget
+execute if score stage_main_thread AzrTimerStack matches 260 positioned -79927 38 46 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_StageProgressTarget
+execute if score stage_main_thread AzrTimerStack matches 261..262 positioned -79931 38 46 if entity @n[distance=..10,tag=AzrielMob_StageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 261
 execute if score stage_main_thread AzrTimerStack matches 264 positioned -79937 38 46 run playsound minecraft:entity.warden.dig block @a -79930.23 49.00 44.45 2 0.5
 execute if score stage_main_thread AzrTimerStack matches 263 if score #temp_rng Azr_system matches 1 positioned -79935 38 46 run function skyblock:azr/assets/mobs/smoke
 execute if score stage_main_thread AzrTimerStack matches 263 if score #temp_rng Azr_system matches 2 positioned -79927 38 46 run function skyblock:azr/assets/mobs/smoke
@@ -89,7 +99,9 @@ execute if score stage_main_thread AzrTimerStack matches 269 if score #temp_rng 
 execute if score stage_main_thread AzrTimerStack matches 269 if score #temp_rng Azr_system matches 2 positioned -79927 38 46 run function skyblock:azr/assets/mobs/smoke
 execute if score stage_main_thread AzrTimerStack matches 272 if score #temp_rng Azr_system matches 1 positioned -79925 38 46 run function skyblock:azr/assets/mobs/shield
 execute if score stage_main_thread AzrTimerStack matches 272 if score #temp_rng Azr_system matches 2 positioned -79937 38 46 run function skyblock:azr/assets/mobs/shield
-execute if score stage_main_thread AzrTimerStack matches 275..276 positioned -79931 38 46 if entity @n[distance=..10,tag=AzrielMob_shield] run scoreboard players set stage_main_thread AzrTimerStack 275
+execute if score stage_main_thread AzrTimerStack matches 272 if score #temp_rng Azr_system matches 1 positioned -79925 38 46 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_StageProgressTarget
+execute if score stage_main_thread AzrTimerStack matches 272 if score #temp_rng Azr_system matches 2 positioned -79937 38 46 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_StageProgressTarget
+execute if score stage_main_thread AzrTimerStack matches 275..276 positioned -79931 38 46 if entity @n[distance=..10,tag=AzrielMob_StageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 275
 
 #粒子效果动画 - 屋顶坍塌
 execute if score stage_main_thread AzrTimerStack matches 272 run particle minecraft:block{block_state:{Name:quartz_block}} -79930.49 48.00 44.50 1 0 1 0.5 200 normal
