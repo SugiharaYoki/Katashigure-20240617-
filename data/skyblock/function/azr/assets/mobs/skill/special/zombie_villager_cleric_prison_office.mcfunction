@@ -75,14 +75,22 @@ execute if score @s[scores={rng3=2}] rng1 matches 62 rotated as @s rotated ~-60 
 execute if score @s[scores={rng3=2}] rng1 matches 62 rotated as @s rotated ~-90 0 positioned ^ ^ ^3.5 run function skyblock:azr/assets/mobs/trap_fang
 execute if score @s[scores={rng3=2}] rng1 matches 62 rotated as @s rotated ~-120 0 positioned ^ ^ ^3.5 run function skyblock:azr/assets/mobs/trap_fang
 
-execute if score @s[scores={rng3=3}] rng1 matches 58 rotated as @p[tag=azrPlayer] rotated ~ 0 positioned ^ ^ ^1.3 run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s[scores={rng3=3}] rng1 matches 58 rotated as @p[tag=azrPlayer] rotated ~90 0 positioned ^ ^ ^1.3 run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s[scores={rng3=3}] rng1 matches 58 rotated as @p[tag=azrPlayer] rotated ~180 0 positioned ^ ^ ^1.3 run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s[scores={rng3=3}] rng1 matches 58 rotated as @p[tag=azrPlayer] rotated ~270 0 positioned ^ ^ ^1.3 run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s[scores={rng3=3}] rng1 matches 62 rotated as @p[tag=azrPlayer] rotated ~ 0 positioned ^ ^ ^3.3 run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s[scores={rng3=3}] rng1 matches 62 rotated as @p[tag=azrPlayer] rotated ~90 0 positioned ^ ^ ^3.3 run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s[scores={rng3=3}] rng1 matches 62 rotated as @p[tag=azrPlayer] rotated ~180 0 positioned ^ ^ ^3.3 run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s[scores={rng3=3}] rng1 matches 62 rotated as @p[tag=azrPlayer] rotated ~270 0 positioned ^ ^ ^3.3 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s[scores={rng3=3}] rng1 matches 58 rotated as @s rotated ~45 0 positioned ^2 ^ ^ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s[scores={rng3=3}] rng1 matches 58 rotated as @s rotated ~45 0 positioned ^-2 ^ ^ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s[scores={rng3=3}] rng1 matches 58 rotated as @s rotated ~45 0 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s[scores={rng3=3}] rng1 matches 58 rotated as @s rotated ~45 0 positioned ^ ^ ^-2 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s[scores={rng3=3}] rng1 matches 61 rotated as @s rotated ~45 0 positioned ^3.5 ^ ^ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s[scores={rng3=3}] rng1 matches 61 rotated as @s rotated ~45 0 positioned ^-3.5 ^ ^ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s[scores={rng3=3}] rng1 matches 61 rotated as @s rotated ~45 0 positioned ^ ^ ^3.5 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s[scores={rng3=3}] rng1 matches 61 rotated as @s rotated ~45 0 positioned ^ ^ ^-3.5 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s[scores={rng3=3}] rng1 matches 64 rotated as @s rotated ~45 0 positioned ^5 ^ ^ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s[scores={rng3=3}] rng1 matches 64 rotated as @s rotated ~45 0 positioned ^-5 ^ ^ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s[scores={rng3=3}] rng1 matches 64 rotated as @s rotated ~45 0 positioned ^ ^ ^5 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s[scores={rng3=3}] rng1 matches 64 rotated as @s rotated ~45 0 positioned ^ ^ ^-5 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s[scores={rng3=3}] rng1 matches 67 rotated as @s rotated ~45 0 positioned ^6.5 ^ ^ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s[scores={rng3=3}] rng1 matches 67 rotated as @s rotated ~45 0 positioned ^-6.5 ^ ^ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s[scores={rng3=3}] rng1 matches 67 rotated as @s rotated ~45 0 positioned ^ ^ ^6.5 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s[scores={rng3=3}] rng1 matches 67 rotated as @s rotated ~45 0 positioned ^ ^ ^-6.5 run function skyblock:azr/assets/mobs/trap_fang
 
 
 execute if score @s[scores={AzrielMobLevel=1..}] rng1 matches 67 store result score @s rng2 run random value 5..20
