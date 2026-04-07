@@ -59,9 +59,6 @@ execute unless score @s AzrPlayer_CurrentArea matches 4 if entity @s[x=-79877,y=
 execute unless score @s AzrPlayer_CurrentArea matches 4 if entity @s[x=-79894,y=37,z=91,dx=5,dy=5,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:4,title:"智 述 文 馆",color_code:"#eb83dd"}
 
-execute unless score @s AzrPlayer_CurrentArea matches 6 if entity @s[x=-79895,y=39,z=-122,dx=11,dy=7,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
-                                                {area_id:6,title:"晦 怨 囚 牢",color_code:"#9e62ff"}
-
 execute unless score @s AzrPlayer_CurrentArea matches 7 if entity @s[x=-79897,y=33,z=-56,dx=5,dy=3,dz=4] as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:slime}
 execute unless score @s AzrPlayer_CurrentArea matches 7 if entity @s[x=-79846,y=25,z=-57,dx=16,dy=12,dz=4] as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:slime}
 
@@ -69,6 +66,9 @@ execute unless score @s AzrPlayer_CurrentArea matches 7 if entity @s[x=-79897,y=
                                                 {area_id:7,title:"蚀 岩 径",color_code:"#e4964d"}
 execute unless score @s AzrPlayer_CurrentArea matches 7 if entity @s[x=-79846,y=25,z=-57,dx=16,dy=12,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:7,title:"蚀 岩 径",color_code:"#e4964d"}
+
+execute unless score @s AzrPlayer_CurrentArea matches 6 if entity @s[x=-79895,y=39,z=-122,dx=11,dy=7,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:6,title:"晦 怨 囚 牢",color_code:"#9e62ff"}
 
 
 
@@ -99,8 +99,8 @@ execute unless score @s AzrPlayer_CurrentArea matches 4 positioned -79848 43 124
                                                 {area_id:4,title:"重生锚点：智述文馆",color_code:"#eb83dd"}
 execute unless score @s AzrPlayer_CurrentArea matches 7 positioned -79854 29 -73 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:7,title:"重生锚点：蚀岩径",color_code:"#e4964d"}
-execute unless score @s AzrPlayer_CurrentArea matches 7 positioned -79923 38 -96 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
-                                                {area_id:7,title:"重生锚点：晦怨囚牢A",color_code:"#9e62ff"}
+execute unless score @s AzrPlayer_CurrentArea matches 6 positioned -79923 38 -96 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:6,title:"重生锚点：晦怨囚牢A",color_code:"#9e62ff"}
 
 
 execute positioned -79943 37 -8 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_westcourt_a
