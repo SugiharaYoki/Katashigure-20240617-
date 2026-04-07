@@ -11,8 +11,7 @@ execute if score @s[scores={rng3=1}] rng1 matches 2..5 at @s rotated as @s run f
 
 
 
-execute if score @s[scores={rng3=1}] rng1 matches 2..5 run tag @a[tag=azrPlayer,tag=!AzrielMob_pickaxe_target_passed] remove AzrielMob_pickaxe_possible_target
-execute if score @s[scores={rng3=1}] rng1 matches 2..5 run tag @a[tag=azrPlayer] remove AzrielMob_pickaxe_target_passed
+execute if score @s[scores={rng3=1}] rng1 matches 2..5 run tag @a[tag=azrPlayer,tag=!AzrielMob_pickaxe_target_passed,distance=..10] remove AzrielMob_pickaxe_possible_target
 
 
 execute if score @s[scores={rng3=1}] rng1 matches 2..5 if entity @a[tag=AzrielMob_pickaxe_possible_target] run scoreboard players set @s rng1 6
@@ -22,10 +21,10 @@ execute if score @s rng1 matches 6 as @s at @s run playsound minecraft:entity.ev
 execute if score @s rng1 matches 6 as @s at @s run particle minecraft:flame ~ ~0.3 ~ 0.2 0 0.2 0 20
 execute if score @s rng1 matches 6..19 as @s at @s run particle minecraft:flame ~ ~0.3 ~ 0.2 0 0.2 0 3
 execute if score @s rng1 matches 6..19 as @s at @s as @p[tag=AzrielMob_pickaxe_possible_target,distance=5.01..10] positioned ^ ^ ^0.55 at @s run function skyblock:azr/assets/mobs/skill/undead_pickaxe_particle_place
-execute if score @s rng1 matches 6..19 as @s at @s unless entity @p[tag=AzrielMob_pickaxe_possible_target,distance=1..20] at @s run say hi
 execute if score @s rng1 matches 6..19 as @s at @s unless entity @p[tag=AzrielMob_pickaxe_possible_target,distance=5.01..10] at @s run scoreboard players set @s rng1 20
 execute if score @s rng1 matches 21 as @s at @s as @p[tag=AzrielMob_pickaxe_possible_target,distance=5.01..10] at @s rotated ~ 0 positioned ^ ^ ^0.55 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small","AzrielMob_mob_marker"]}
 execute if score @s rng1 matches 21 run tag @a[tag=azrPlayer] remove AzrielMob_pickaxe_possible_target
+execute if score @s rng1 matches 21 run tag @a[tag=azrPlayer] remove AzrielMob_pickaxe_target_passed
 
 execute if score @s rng1 matches 39 as @s at @s run effect clear @s slowness
 execute if score @s rng1 matches 50.. run scoreboard players set @s rng1 4
