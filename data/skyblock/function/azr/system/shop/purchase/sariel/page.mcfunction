@@ -308,11 +308,11 @@ execute if entity @s[tag=!AzrSariel_upg16F] run data modify entity @n[tag=AzrSar
 #  06 生    剪
 #  07 ★ 商 绿
 #  08 攻    抹
-#  09 速 电 电 灵
+#  09 速 电 电 复
 #  10 攻    缓
 #  11 速 缓 缓 电
-#  12 攻    磁 灵
-#  13 速 磁 磁 灵
+#  12 攻    磁 复
+#  13 速 磁 磁 复
 
 
 tellraw @s [{text:" ",color:"light_purple"},\

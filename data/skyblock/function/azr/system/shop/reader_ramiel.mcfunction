@@ -1,5 +1,5 @@
 
-tellraw @s[tag=AzrSariel_sub_stardeplete] [{text:" - "},{text:"下界命星  ",color:"#935dff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431551"}}]
+tellraw @s[tag=AzrSariel_sub_stardeplete] [{text:" - "},{text:"下界命星  ",color:"#935dff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431551"}},{text:"  人造心脏  ",color:"#5910b9"},{"score":{"name":"@s","objective":"AzrMelonCount"},color:"#fff5c2"},{text:"/1 金西瓜 ",color:"#fff5c2"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431567"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n受到伤害时，获得一行额外的临时血量\n【你将无法抵达真实的结局】",color:"white"}}}]
 tellraw @s [{text:" - "},{text:"金萝卜 ×2  ",color:"#7ac42c"},{"score":{"name":"@s","objective":"AzrMelonCount"},color:"#fff5c2"},{text:"/1 金西瓜 ",color:"#fff5c2"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431552"}}]
 tellraw @s [{text:" - "},{text:"心跳仪  ",color:"#306fc2"},{"score":{"name":"@s","objective":"AzrMelonCount"},color:"#fff5c2"},{text:"/1 金西瓜 ",color:"#fff5c2"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431553"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n在生命值过低时给予心跳声警报\n只在8格内存在敌人时有效",color:"white"}}},{text:"  起搏器  ",color:"#306fc2"},{"score":{"name":"@s","objective":"AzrMelonCount"},color:"#fff5c2"},{text:"/4 金西瓜 ",color:"#fff5c2"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431554"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n生命值低于4时自动恢复32生命值\n拥有40秒的冷却时间\n\n可以在背包内切换为“安全模式”，生命值低于8便会自动恢复生命值",color:"white"}}}]
 
@@ -216,21 +216,6 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 
 
 
-
-
-
-#tellraw @s [{text:"   "},{text:"探测罗盘",color:"white"},{text:"  3 粘液球 ",color:"gold"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431522"}},{text:" || 绿宝石块 ×1",color:"aqua"},{text:"   9 绿宝石 ",color:"gold"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431541"}}]
-
-#tellraw @s[tag=AZS_BoS02,tag=!Azr_SExUp01] [{text:"   "},{text:"贪婪图腾",color:"red"},{text:"   2 圣殿信条 3 光明精华 ",color:"gold"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431536"}}]
-#tellraw @s[tag=AZS_BoS02,tag=Azr_SExUp01] [{text:"   "},{text:"贪婪图腾",color:"red"},{text:"   2 圣殿信条 2 光明精华 ",color:"gold"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431536"}}]
-#tellraw @s[tag=AZS_BoS01] [{text:"   "},{text:"蜘蛛狼护腿",color:"red"},{text:"   1 碳钢 3 丝线 2 虫骸 ",color:"gold"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431540"}},{text:" || 短靴",color:"red"},{text:"   1 碳钢 3 丝线 2 蜘蛛眼 ",color:"gold"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431535"}}]
-#tellraw @s[tag=AZS_BoS01] [{text:"   "},{text:"蜘蛛狼铠甲",color:"red"},{text:"   1 腐烂的尸首 3 丝线 ",color:"gold"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431544"}}]
-#tellraw @s[tag=AZS_BoS07,tag=!AZS_BoS08] [{text:"   "},{text:"试造防弹甲",color:"red"},{text:"   3 盾牌碎片 3 硬骨 ",color:"gold"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431545"}}]
-#tellraw @s[tag=AZS_BoS07,tag=AZS_BoS08] [{text:"   "},{text:"试造防弹甲",color:"red"},{text:"   3 盾牌碎片 3 硬骨 ",color:"gold"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431545"}},{text:" || ",color:"red"},{text:"（改）",color:"dark_purple"},{text:" +3 炽焰粉尘 ",color:"gold"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431546"}}]
-#tellraw @s {text:"   "}
-#tellraw @s[tag=AZS_BoS05] [{text:"   "},{text:"投掷瓶·静止 LV1",color:"red"},{text:"   6 丝线 ",color:"gold"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431542"}},{text:" || LV2",color:"red"},{text:"   +2 粘液球 ",color:"gold"},{text:"◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431543"}}]
-#tellraw @s[tag=AZS_BoS06] [{text:"   "},{text:"弹簧箭盒 ×1",color:"red"},{text:"   2 木炭 5 箭 )>( 1 甜菜种子 6 箭 ",color:"gold"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431537"}}]
-##tellraw @s {text:"   "}
 
 tellraw @s {text:"   "}
 kill @e[tag=AzrRamielExStage_displaymarker,type=marker]

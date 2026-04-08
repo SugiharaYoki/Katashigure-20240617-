@@ -39,6 +39,7 @@ execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_drogue:1b}] r
 execute if items entity @s player.cursor *[custom_data~{azr_loginbonus:1b}] run function skyblock:azr/system/player/join_login_bonus_open
 
 execute if score @s AzrSariel_Amulet_generic_damage_taken matches 1.. if items entity @s container.* *[custom_data~{azr_amulet_pollution_diffuser:1b}] run function skyblock:azr/system/player/skills/amulet/pollution_diffuser_core
+execute if score @s AzrSariel_Amulet_generic_damage_taken matches 1.. if items entity @s container.* *[custom_data~{azr_amulet_artificial_heart:1b}] run effect give @s absorption infinite 4 true
 execute if score @s AzrSariel_Amulet_generic_damage_taken matches 1.. if items entity @s container.* *[custom_data~{azr_amulet_flower_spike:1b}] run function skyblock:azr/system/player/skills/amulet/flower_spike_core
 
 #节制天平
