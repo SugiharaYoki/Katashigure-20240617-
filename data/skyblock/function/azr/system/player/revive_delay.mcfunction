@@ -31,7 +31,7 @@ execute if entity @s[tag=AZR_Dead_EmeraldLost] if score @s AZS_SoulFrag matches 
 execute if entity @s[tag=AZR_Dead_EmeraldLost] if score @s AZS_SoulFrag matches 8.. store result score @s rng1 run random value 1..3
 execute if entity @s[tag=AZR_Dead_EmeraldLost,gamemode=adventure] run scoreboard players operation @s rng1 *= @s rng2
 execute if entity @s[tag=AZR_Dead_EmeraldLost,gamemode=adventure] run scoreboard players operation @s Azr_emerald -= @s rng1
-execute if entity @s[tag=AZR_Dead_EmeraldLost,gamemode=adventure] run tellraw @a[tag=azrShowDialog] [{text:"死亡使你丢失了 ",color:"gray"},{"score":{"name":"@s","objective":"rng1"},color: "gray"},{text:" 绿宝石",color:"gray"},{text:"\n剩余绿宝石数量： ",color:"gray"},{"score":{"name":"@s","objective":"Azr_emerald"},color: "gray"}]
+execute if entity @s[tag=AZR_Dead_EmeraldLost,gamemode=adventure] run tellraw @a[tag=azrShowDialog] [{text:"死亡使你丢失了 ",color:"gray"},{"score":{"name":"@s","objective":"rng1"},color: "gray"},{text:" 绿宝石",color:"gray"},{text:"\n剩余 ",color:"gray"},{"score":{"name":"@s","objective":"Azr_emerald"},color: "gray"}]
 #clear @s[tag=!AZR_storymode,tag=!AZR_fakeDeath] nether_star[custom_data~{revival_star:1b}] 1
 
 
