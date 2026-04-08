@@ -5,10 +5,12 @@ execute if entity @a[tag=azrPlayer,distance=..1.2] run tag @s add flowerreason_a
 scoreboard players add @s rng1 1
 
 
-particle minecraft:cherry_leaves ~ ~1.5 ~ 0.26 0.26 0.26 5 2
+execute if entity @s[tag=!AzrSariel_Death] run particle minecraft:cherry_leaves ~ ~1.5 ~ 0.16 0.16 0.16 3 1
+execute if entity @s[tag=AzrSariel_Death] run particle minecraft:pale_oak_leaves ~ ~1.5 ~ 0.16 0.16 0.16 3 1
 
 execute if entity @s[tag=flowerreason_activate] run particle minecraft:spore_blossom_air ~ ~1.5 ~ 0.5 0.5 0.5 2.5 30
-execute if entity @s[tag=flowerreason_activate] run particle minecraft:cherry_leaves ~ ~1.5 ~ 1.9 0.26 1.9 5 40
+execute if entity @s[tag=flowerreason_activate,tag=!AzrSariel_Death] run particle minecraft:cherry_leaves ~ ~1.5 ~ 1.9 0.26 1.9 5 40
+execute if entity @s[tag=flowerreason_activate,tag=AzrSariel_Death] run particle minecraft:pale_oak_leaves ~ ~1.5 ~ 1.9 0.26 1.9 5 40
 execute if entity @s[tag=flowerreason_activate] run playsound minecraft:block.beacon.power_select player @a ~ ~ ~ 1 2
 execute if entity @s[tag=flowerreason_activate] run playsound minecraft:block.cherry_leaves.place player @a ~ ~ ~ 2 1.5
 execute if entity @s[tag=flowerreason_activate] run playsound minecraft:block.cherry_leaves.break player @a ~ ~ ~ 2 1.2

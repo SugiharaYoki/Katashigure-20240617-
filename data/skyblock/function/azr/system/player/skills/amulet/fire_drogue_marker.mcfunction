@@ -14,13 +14,15 @@ execute if entity @s[tag=MobFound_UniqueSource] if entity @n[tag=AzrielMob,dista
 
 
 execute if score @s rng1 matches 4 run particle minecraft:white_ash ~ ~0.1 ~ 0 0 0 0.0 1
-execute if score @s rng1 matches 4 run particle flame ~ ~0.1 ~ 0.0 0.0 0.0 0.01 1 force
+execute if score @s[tag=!AzrSariel_Death] rng1 matches 4 run particle flame ~ ~0.1 ~ 0.0 0.0 0.0 0.01 1 force
+execute if score @s[tag=AzrSariel_Death] rng1 matches 4 run particle soul_fire_flame ~ ~0.1 ~ 0.0 0.0 0.0 0.01 1 force
 
 execute if entity @n[tag=AzrielMob,distance=..0.9] run tag @s add MobFound
 execute if entity @s[tag=MobFound] run damage @n[tag=AzrielMob,distance=..0.9] 4.5 in_fire
 execute if entity @s[tag=MobFound] run playsound minecraft:entity.firework_rocket.blast neutral @a ~ ~ ~ 0.8 1.5
 execute if entity @s[tag=MobFound] run particle smoke ~ ~0.1 ~ 0.05 0.05 0.05 0.03 6
-execute if entity @s[tag=MobFound] run particle flame ~ ~0.1 ~ 0.05 0.05 0.05 0.03 6
+execute if entity @s[tag=MobFound,tag=!AzrSariel_Death] run particle flame ~ ~0.1 ~ 0.05 0.05 0.05 0.03 6
+execute if entity @s[tag=MobFound,tag=AzrSariel_Death] run particle soul_fire_flame ~ ~0.1 ~ 0.05 0.05 0.05 0.03 6
 execute if entity @s[tag=MobFound] run kill @s
 
 execute at @s if predicate skyblock:raining positioned over world_surface if entity @s[distance=..0.5] run scoreboard players add @s rng3 1

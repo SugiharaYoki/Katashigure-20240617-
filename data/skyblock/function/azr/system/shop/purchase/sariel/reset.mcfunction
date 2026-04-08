@@ -1,4 +1,7 @@
 
+scoreboard players set @s AzrSariel_Side_Life 0
+scoreboard players set @s AzrSariel_Side_Death 0
+scoreboard players set @s AzrSariel_Side_Result 0
 
 tag @s remove AzrSariel_upg1
 tag @s remove AzrSariel_upg2

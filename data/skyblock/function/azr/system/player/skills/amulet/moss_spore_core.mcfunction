@@ -14,5 +14,5 @@ execute if entity @s[scores={AzrSariel_Amulet_MossSpore_cooldown=400}] run attri
 execute if entity @s[scores={AzrSariel_Amulet_MossSpore_cooldown=000}] run attribute @s max_health modifier remove azr_amulet:moss_spore_01
 
 
-execute if entity @s[scores={AzrSariel_Amulet_MossSpore_cooldown=1..}] run particle spore_blossom_air ~ ~1 ~ 2 2 2 0 1
+execute if entity @s[scores={AzrSariel_Amulet_MossSpore_cooldown=1..,AzrSariel_Side_Result=..-5}] run particle spore_blossom_air ~ ~1 ~ 2 2 2 0 1
 

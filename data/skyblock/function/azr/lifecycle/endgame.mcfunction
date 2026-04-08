@@ -99,6 +99,9 @@ scoreboard objectives remove AzrielNPC_FollowInterest
 scoreboard objectives remove AzrielNPC_ConversationTimer
 
 #节制天平
+scoreboard objectives remove AzrSariel_Side_Life
+scoreboard objectives remove AzrSariel_Side_Death
+scoreboard objectives remove AzrSariel_Side_Result
 scoreboard objectives remove AzrSariel_Skill_FanFire
 scoreboard objectives remove AzrSariel_Skill_FanFire_cooldown
 scoreboard objectives remove AzrSariel_Skill_ElecBall

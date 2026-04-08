@@ -29,6 +29,10 @@ scoreboard objectives add AzrTimerAmulet_hrm dummy
 scoreboard objectives add AzrTimerAmulet_pacemaker dummy
 scoreboard objectives add Azr_Login_Identifier dummy
 scoreboard objectives add Azr_Login_Day_Strike dummy
+#天平两侧
+scoreboard objectives add AzrSariel_Side_Life dummy
+scoreboard objectives add AzrSariel_Side_Death dummy
+scoreboard objectives add AzrSariel_Side_Result dummy
 
 scoreboard objectives add AzrielNPC_FollowInterest dummy
 scoreboard objectives add AzrielNPC_ConversationTimer dummy
