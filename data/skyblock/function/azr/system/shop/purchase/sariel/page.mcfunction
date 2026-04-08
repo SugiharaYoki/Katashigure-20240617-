@@ -308,11 +308,11 @@ execute if entity @s[tag=!AzrSariel_upg16F] run data modify entity @n[tag=AzrSar
 #  06 生    剪
 #  07 ★ 商 绿
 #  08 攻    抹
-#  09 速 电 电 电
+#  09 速 电 电 灵
 #  10 攻    缓
-#  11 速 缓 缓
-#  12 攻    磁
-#  13 速 磁 磁
+#  11 速 缓 缓 电
+#  12 攻    磁 灵
+#  13 速 磁 磁 灵
 
 
 tellraw @s [{text:" ",color:"light_purple"},\
@@ -381,7 +381,7 @@ tellraw @s [{text:" ",color:"light_purple"},\
 {selector:"@n[tag=AzrSariel_displaymarker9]",color:"#7b5dff",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432109"},hover_event:{"action":"show_text","value":{text:"消耗：5\n攻击速度 +0.1",color:"white"}}},\
 {selector:"@n[tag=AzrSariel_displaymarker9B]",color:"#576fe4",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432117"},hover_event:{"action":"show_text","value":{text:"消耗：5\n攻击生灵时，释放一个不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n伤害：2/3/4 持续时间：1.6/2.2/2.5 冷却：2\n重复选中将升级效果",color:"white"}}},\
 {selector:"@n[tag=AzrSariel_displaymarker9C]",color:"#576fe4",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432118"},hover_event:{"action":"show_text","value":{text:"消耗：20\n攻击生灵时，释放一个不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n伤害：2/3/4 持续时间：1.6/2.2/2.5 冷却：2\n重复选中将升级效果",color:"white"}}},\
-{selector:"@n[tag=AzrSariel_displaymarker9D]",color:"#576fe4",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432119"},hover_event:{"action":"show_text","value":{text:"消耗：40\n攻击生灵时，释放一个不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n伤害：2/3/4 持续时间：1.6/2.2/2.5 冷却：2\n重复选中将升级效果",color:"white"}}}]
+{selector:"@n[tag=AzrSariel_displaymarker9D]",color:"#716987",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432141"},hover_event:{"action":"show_text","value":{text:"消耗：40\n死亡时有30%/60%/90%的概率不损失绿宝石\n刷新时有15%/30%/45%的概率不消耗绿宝石\n重复选中将升级效果",color:"white"}}}]
 
 tellraw @s [{text:" ",color:"light_purple"},\
 {selector:"@n[tag=AzrSariel_displaymarker0b]",color:"dark_gray"},\
@@ -395,21 +395,21 @@ tellraw @s [{text:" ",color:"light_purple"},\
 {selector:"@n[tag=AzrSariel_displaymarker11]",color:"#7b5dff",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432111"},hover_event:{"action":"show_text","value":{text:"消耗：10\n攻击速度 +0.1",color:"white"}}},\
 {selector:"@n[tag=AzrSariel_displaymarker11B]",color:"#716987",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432131"},hover_event:{"action":"show_text","value":{text:"消耗：20\n在水平距离自己3.0格处悬浮锁链环\n当有生灵或凶兽接触到环时，环附近的所有生灵和凶兽都将被大大减缓移动速度1秒，并永久减少自身防御力\n因为悬浮环造成的防御力减少对同一敌人只会起效一次\n减防：1/2/3 冷却：4/3.7/3.4\n重复选中将升级效果",color:"white"}}},\
 {selector:"@n[tag=AzrSariel_displaymarker11C]",color:"#716987",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432132"},hover_event:{"action":"show_text","value":{text:"消耗：30\n在水平距离自己3.0格处悬浮锁链环\n当有生灵或凶兽接触到环时，环附近的所有生灵和凶兽都将被大大减缓移动速度1秒，并永久减少自身防御力\n因为悬浮环造成的防御力减少对同一敌人只会起效一次\n减防：1/2/3 冷却：4/3.7/3.4\n重复选中将升级效果",color:"white"}}},\
-{selector:"@n[tag=AzrSariel_displaymarkerE]",color:"dark_gray"}]
+{selector:"@n[tag=AzrSariel_displaymarker11D]",color:"#576fe4",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432119"},hover_event:{"action":"show_text","value":{text:"消耗：40\n攻击生灵时，释放一个不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n伤害：2/3/4 持续时间：1.6/2.2/2.5 冷却：2\n重复选中将升级效果",color:"white"}}}]
 
 tellraw @s [{text:" ",color:"light_purple"},\
 {selector:"@n[tag=AzrSariel_displaymarker0b]",color:"dark_gray"},\
 {selector:"@n[tag=AzrSariel_displaymarker12]",color:"#ff5d5d",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432112"},hover_event:{"action":"show_text","value":{text:"消耗：40\n攻击力 +0.5",color:"white"}}},\
 {selector:"@n[tag=AzrSariel_displaymarkerE]",color:"dark_gray"},\
 {selector:"@n[tag=AzrSariel_displaymarker12C]",color:"#18538f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432133"},hover_event:{"action":"show_text","value":{text:"消耗：30\n造成点数超过6的攻击时，有10%/15%/20%概率将最近的敌人附上“生物磁力”1.5/2/2.5秒\n被附上“生物磁力”的敌人会持续吸引并被吸往附近随机的同类型敌人\n若附有“生物磁力”的敌人附近1.6/2.1/2.4格内敌人数量超过5个，则造成4点挤压伤害\n重复选中将升级效果",color:"white"}}},\
-{selector:"@n[tag=AzrSariel_displaymarkerE]",color:"dark_gray"}]
+{selector:"@n[tag=AzrSariel_displaymarker12D]",color:"#716987",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432142"},hover_event:{"action":"show_text","value":{text:"消耗：60\n死亡时有30%/60%/90%的概率不损失绿宝石\n刷新时有15%/30%/45%的概率不消耗绿宝石\n重复选中将升级效果",color:"white"}}}]
 
 tellraw @s [{text:" ",color:"light_purple"},\
 {selector:"@n[tag=AzrSariel_displaymarker0b]",color:"dark_gray"},\
 {selector:"@n[tag=AzrSariel_displaymarker13]",color:"#7b5dff",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432113"},hover_event:{"action":"show_text","value":{text:"消耗：40\n攻击速度 +0.1",color:"white"}}},\
 {selector:"@n[tag=AzrSariel_displaymarker13B]",color:"#18538f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432134"},hover_event:{"action":"show_text","value":{text:"消耗：30\n造成点数超过6的攻击时，有10%/15%/20%概率将最近的敌人附上“生物磁力”1.5/2/2.5秒\n被附上“生物磁力”的敌人会持续吸引并被吸往附近随机的同类型敌人\n若附有“生物磁力”的敌人附近1.6/2.1/2.4格内敌人数量超过5个，则造成4点挤压伤害\n重复选中将升级效果",color:"white"}}},\
 {selector:"@n[tag=AzrSariel_displaymarker13C]",color:"#18538f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432135"},hover_event:{"action":"show_text","value":{text:"消耗：30\n造成点数超过6的攻击时，有10%/15%/20%概率将最近的敌人附上“生物磁力”1.5/2/2.5秒\n被附上“生物磁力”的敌人会持续吸引并被吸往附近随机的同类型敌人\n若附有“生物磁力”的敌人附近1.6/2.1/2.4格内敌人数量超过5个，则造成4点挤压伤害\n重复选中将升级效果",color:"white"}}},\
-{selector:"@n[tag=AzrSariel_displaymarker13D]",color:"#7b5dff",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432137"},hover_event:{"action":"show_text","value":{text:"消耗：30\n攻击速度 +0.1",color:"white"}}}]
+{selector:"@n[tag=AzrSariel_displaymarker13D]",color:"#716987",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432143"},hover_event:{"action":"show_text","value":{text:"消耗：20\n死亡时有30%/60%/90%的概率不损失绿宝石\n刷新时有15%/30%/45%的概率不消耗绿宝石\n重复选中将升级效果",color:"white"}}}]
 
 
 tellraw @s {text:"   "}

@@ -53,7 +53,7 @@ execute if entity @s[scores={Azr_Shop=8432115}] run scoreboard players add @s Az
 execute if entity @s[scores={Azr_Shop=8432116}] run scoreboard players add @s AzrSariel_Data_CostAmount 40
 execute if entity @s[scores={Azr_Shop=8432117}] run tag @s add AzrSariel_upg9B
 execute if entity @s[scores={Azr_Shop=8432118}] run tag @s add AzrSariel_upg9C
-execute if entity @s[scores={Azr_Shop=8432119}] run tag @s add AzrSariel_upg9D
+execute if entity @s[scores={Azr_Shop=8432119}] run tag @s add AzrSariel_upg11D
 execute if entity @s[scores={Azr_Shop=8432117}] run scoreboard players remove @s Azr_emerald 5
 execute if entity @s[scores={Azr_Shop=8432118}] run scoreboard players remove @s Azr_emerald 20
 execute if entity @s[scores={Azr_Shop=8432119}] run scoreboard players remove @s Azr_emerald 40
@@ -130,6 +130,16 @@ execute if entity @s[scores={Azr_Shop=8432140}] run scoreboard players remove @s
 execute if entity @s[scores={Azr_Shop=8432138}] run scoreboard players add @s AzrSariel_Data_CostAmount 30
 execute if entity @s[scores={Azr_Shop=8432139}] run scoreboard players add @s AzrSariel_Data_CostAmount 40
 execute if entity @s[scores={Azr_Shop=8432140}] run scoreboard players add @s AzrSariel_Data_CostAmount 50
+
+execute if entity @s[scores={Azr_Shop=8432141}] run tag @s add AzrSariel_upg9D
+execute if entity @s[scores={Azr_Shop=8432142}] run tag @s add AzrSariel_upg12D
+execute if entity @s[scores={Azr_Shop=8432143}] run tag @s add AzrSariel_upg13D
+execute if entity @s[scores={Azr_Shop=8432141}] run scoreboard players remove @s Azr_emerald 40
+execute if entity @s[scores={Azr_Shop=8432142}] run scoreboard players remove @s Azr_emerald 60
+execute if entity @s[scores={Azr_Shop=8432143}] run scoreboard players remove @s Azr_emerald 20
+execute if entity @s[scores={Azr_Shop=8432141}] run scoreboard players add @s AzrSariel_Data_CostAmount 40
+execute if entity @s[scores={Azr_Shop=8432142}] run scoreboard players add @s AzrSariel_Data_CostAmount 60
+execute if entity @s[scores={Azr_Shop=8432143}] run scoreboard players add @s AzrSariel_Data_CostAmount 20
 
 tag @s remove AZR_sariel_01_effected
 
