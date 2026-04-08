@@ -42,7 +42,7 @@ execute if entity @s[tag=AZR_Dead_EmeraldLost] if score @s rng3 matches 3 if sco
 
 execute if entity @s[tag=AZR_Dead_EmeraldLost,gamemode=adventure,tag=!AZR_Dead_EmeraldLost_Cancelled] run scoreboard players operation @s rng1 *= @s rng2
 execute if entity @s[tag=AZR_Dead_EmeraldLost,gamemode=adventure,tag=!AZR_Dead_EmeraldLost_Cancelled] run scoreboard players operation @s Azr_emerald -= @s rng1
-execute if entity @s[tag=AZR_Dead_EmeraldLost,gamemode=adventure,tag=!AZR_Dead_EmeraldLost_Cancelled] run tellraw @s [{text:"死亡使你丢失了 ",color:"gray"},{"score":{"name":"@s","objective":"rng1"},color: "gray"},{text:" 绿宝石",color:"gray"},{text:"\n剩余 ",color:"gray"},{"score":{"name":"@s","objective":"Azr_emerald"},color: "gray"}]
+execute if entity @s[tag=AZR_Dead_EmeraldLost,gamemode=adventure,tag=!AZR_Dead_EmeraldLost_Cancelled] run tellraw @s [{text:"死亡使你丢失了 ",color:"gray"},{"score":{"name":"@s","objective":"rng1"},color: "gray"},{text:" 绿宝石",color:"gray"},{text:"\n - 剩余 ",color:"gray"},{"score":{"name":"@s","objective":"Azr_emerald"},color: "gray"}]
 execute if entity @s[tag=AZR_Dead_EmeraldLost,gamemode=adventure,tag=AZR_Dead_EmeraldLost_Cancelled] run playsound block.enchantment_table.use player @a ~ ~ ~ 0.6 0.7
 execute if entity @s[tag=AZR_Dead_EmeraldLost,gamemode=adventure,tag=AZR_Dead_EmeraldLost_Cancelled] run tellraw @s [{text:"节制天平：本次死亡不会丢失绿宝石",color: "#9eb9de"}]
 #clear @s[tag=!AZR_storymode,tag=!AZR_fakeDeath] nether_star[custom_data~{revival_star:1b}] 1
