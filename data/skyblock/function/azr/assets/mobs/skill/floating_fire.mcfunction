@@ -2,10 +2,14 @@ scoreboard players add @s rng1 1
 execute if score @s rng1 matches 5 run effect give @s invisibility infinite 0 true
 execute if score @s rng1 matches 5.. run scoreboard players set @s rng1 0
 
-execute if entity @a[tag=azrPlayer,distance=12..16] facing entity @p[tag=azrPlayer,distance=2..] eyes run tp ^ ^ ^0.07
-execute if entity @a[tag=azrPlayer,distance=8..16] facing entity @p[tag=azrPlayer,distance=2..] eyes run tp ^ ^ ^0.06
-execute if entity @a[tag=azrPlayer,distance=4..16] facing entity @p[tag=azrPlayer,distance=2..] eyes run tp ^ ^ ^0.05
-execute if entity @a[tag=azrPlayer,distance=2..16] facing entity @p[tag=azrPlayer,distance=2..] eyes run tp ^ ^ ^0.04
+execute if entity @p[tag=azrPlayer,distance=12..16,scores={AzrSariel_Side_Result=-4..}] facing entity @p[tag=azrPlayer,distance=2..] eyes run tp ^ ^ ^0.07
+execute if entity @p[tag=azrPlayer,distance=8..16,scores={AzrSariel_Side_Result=-4..}] facing entity @p[tag=azrPlayer,distance=2..] eyes run tp ^ ^ ^0.06
+execute if entity @p[tag=azrPlayer,distance=4..16,scores={AzrSariel_Side_Result=-4..}] facing entity @p[tag=azrPlayer,distance=2..] eyes run tp ^ ^ ^0.05
+execute if entity @p[tag=azrPlayer,distance=2..16,scores={AzrSariel_Side_Result=-4..}] facing entity @p[tag=azrPlayer,distance=2..] eyes run tp ^ ^ ^0.04
+execute if entity @p[tag=azrPlayer,distance=12..13,scores={AzrSariel_Side_Result=..-5}] facing entity @p[tag=azrPlayer,distance=2..] eyes run tp ^ ^ ^0.07
+execute if entity @p[tag=azrPlayer,distance=8..12,scores={AzrSariel_Side_Result=..-5}] facing entity @p[tag=azrPlayer,distance=2..] eyes run tp ^ ^ ^0.06
+execute if entity @p[tag=azrPlayer,distance=4..12,scores={AzrSariel_Side_Result=..-5}] facing entity @p[tag=azrPlayer,distance=2..] eyes run tp ^ ^ ^0.05
+execute if entity @p[tag=azrPlayer,distance=2..11,scores={AzrSariel_Side_Result=..-5}] facing entity @p[tag=azrPlayer,distance=2..] eyes run tp ^ ^ ^0.04
 execute if entity @a[tag=azrPlayer,distance=0..2] facing entity @p[tag=azrPlayer,distance=..2] feet run tp ^ ^0.03 ^0.03
 
 

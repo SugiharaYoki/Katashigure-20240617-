@@ -35,7 +35,8 @@ execute if score @s rng1 matches 52 rotated ~320 0 run particle minecraft:happy_
 execute if score @s rng1 matches 52 rotated ~340 0 run particle minecraft:happy_villager ^ ^ ^2.8 0 0 0 0 1
 
 execute if score @s rng1 matches 52 run effect give @e[tag=AzrielNPC_Divineforce,distance=..3] instant_health 1 1 false
-execute if score @s rng1 matches 52 run effect give @a[tag=azrPlayer,distance=..3] instant_health 1 1 false
+execute if score @s rng1 matches 52 run effect give @a[tag=azrPlayer,distance=..3,scores={AzrSariel_Side_Result=-4..}] instant_health 1 1 false
+execute if score @s rng1 matches 52 run effect give @a[tag=azrPlayer,distance=..3,scores={AzrSariel_Side_Result=..-5}] instant_health 1 0 false
 execute if score @s rng1 matches 52 run effect clear @e[tag=AzrielNPC_Divineforce,distance=..3] poison
 execute if score @s rng1 matches 52 run effect clear @a[tag=azrPlayer,distance=..3] poison
 
