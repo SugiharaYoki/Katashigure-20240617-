@@ -58,7 +58,7 @@ execute positioned -79803 9 -84 if score random_enemy_thread AzrTimerStack match
 #自然陷阱
 execute if score random_enemy_thread AzrTimerStack matches 2 run function skyblock:azr/assets/events/stage/chapter_3/stage9_dripstone_natural_trap
 #蝙蝠
-execute positioned -79859 14 -79.0 unless entity @n[type=bat,distance=..3] run function skyblock:azr/assets/mobs/utility_bat
+execute positioned -79859 14 -78.0 unless entity @n[type=bat,distance=..3] run function skyblock:azr/assets/mobs/utility_bat
 execute positioned -79864 14 -79 unless entity @n[type=bat,distance=..3] run function skyblock:azr/assets/mobs/utility_bat
 
 
