@@ -1,4 +1,5 @@
 execute as @s[type=spectral_arrow] if entity @s[nbt={inGround:false}] at @s run function skyblock:sea/p/spectral
+execute as @s[type=spectral_arrow] if entity @s[nbt={inGround:false}] at @s run function skyblock:sea/p/spectral_fast
 
 execute as @s[type=item,tag=!SEAitemchecked] at @s run function skyblock:sea/p/item
 execute as @s[type=item,tag=SEAitemchecked_pers] at @s run function skyblock:sea/p/item_pers
