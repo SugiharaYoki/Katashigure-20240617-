@@ -587,6 +587,9 @@ fill -79823 11 -45 -79823 17 -47 minecraft:air replace red_stained_glass
 setblock -79800 9 -83 chest[facing=west]{Inventory:[]}
 item replace block -79800 9 -83 container.13 with iron_ingot 1
 
+#蝙蝠路
+execute positioned -79859 14 -79.0 run function skyblock:azr/assets/mobs/utility_bat
+execute positioned -79864 14 -79 run function skyblock:azr/assets/mobs/utility_bat
 
 #静熄之火
 fill -79892 45 -68 -79889 42 -68 minecraft:purple_stained_glass
