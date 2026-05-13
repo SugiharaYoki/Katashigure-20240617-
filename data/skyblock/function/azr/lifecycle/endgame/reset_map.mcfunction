@@ -713,7 +713,7 @@ item replace block -79950 53 -69 container.14 with flint 2
 
 #权之殊能初遇
 fill -79876 52 -107 -79876 47 -111 barrier
-
+clone -79908 16 -113 -79903 22 -110 -79908 45 -113
 
 
 #大铁门额外区域
