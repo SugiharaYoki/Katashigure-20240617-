@@ -23,3 +23,5 @@ execute if score @s rng1 matches 39..42 run tp @s ~ ~-0.01 ~
 execute if score @s rng1 matches 40..41 run tp @s ~ ~-0.01 ~
 
 execute if score @s rng1 matches 60.. run scoreboard players set @s rng1 0
+
+rotate @s facing entity @p[distance=..10] eyes
