@@ -211,7 +211,10 @@ execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0
 execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=46}] as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 0.7
 execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=46}] as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",color:"yellow",bold:1b},{text:"\n“胜者，亦是败者。”",color:"white",bold: false}]
 
-
+#牢房中段
+execute positioned -79924.06 48.00 -127.04 unless entity @n[tag=AzrielMob_ch3_middlesidegate_swordman,distance=..3] run function skyblock:azr/assets/mobs/sword_friendly
+execute positioned -79924.06 48.00 -127.04 unless entity @n[tag=AzrielMob_ch3_middlesidegate_swordman,distance=..3] run tag @n[type=vindicator,distance=0..2] add AzrielMob_ch3_middlesidegate_swordman
+execute positioned -79924.06 48.00 -127.04 as @n[tag=AzrielMob_ch3_middlesidegate_swordman,distance=..3] run function skyblock:azr/assets/events/stage/chapter_3/area_prison/npc_conversation_zhaowuyan
 
 
 
