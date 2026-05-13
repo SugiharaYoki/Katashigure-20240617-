@@ -23,6 +23,10 @@ execute if entity @s[tag=AzrielMob_husk] run function skyblock:azr/assets/mobs/s
 execute if entity @s[tag=AzrielMob_zombie_villager_armor] run function skyblock:azr/assets/mobs/skill/zombie_villager_armor
 execute if entity @s[tag=AzrielMob_zombie_villager_cleric] run function skyblock:azr/assets/mobs/skill/zombie_villager_cleric
 
+#功能性
+execute if entity @s[tag=AzrielMob_utility_bat] run function skyblock:azr/assets/mobs/skill/utility_bat
+
+
 #精英怪
 execute if entity @s[tag=AzrielMob_elite_candle_angel] run function skyblock:azr/assets/mobs/skill/candle/core
 execute if entity @s[tag=AzrielBossWorking_StartActing,scores={rng12=25..}] at @s run function skyblock:azr/assets/mobs/skill/boss_working/core
