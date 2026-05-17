@@ -1,6 +1,7 @@
 scoreboard players add @s AzrielNPC_ConversationTimer 1
 
 execute if score @s AzrielNPC_ConversationTimer matches 1..6 run item replace entity @s weapon.mainhand with iron_shovel
+execute if score @s AzrielNPC_ConversationTimer matches 1 run attribute @s knockback_resistance base set 20
 execute if score @s AzrielNPC_ConversationTimer matches 1 run effect give @s slowness infinite 99 true
 execute if score @s AzrielNPC_ConversationTimer matches 1 run effect give @s resistance infinite 4 true
 execute if score @s AzrielNPC_ConversationTimer matches 1 run data modify entity @s CustomName set value {text:"工程兵 赵勿验",color:"green"}
