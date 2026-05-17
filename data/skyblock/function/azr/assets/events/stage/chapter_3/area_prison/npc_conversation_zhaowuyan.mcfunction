@@ -7,7 +7,7 @@ execute if score @s AzrielNPC_ConversationTimer matches 1 run data modify entity
 
 execute if score @s AzrielNPC_ConversationTimer matches 8..9 unless entity @a[distance=..5,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 8
 
-execute if score @s AzrielNPC_ConversationTimer matches 10..11 run item replace entity @s weapon.mainhand with iron_shovel
+execute if score @s AzrielNPC_ConversationTimer matches 12..13 run item replace entity @s weapon.mainhand with iron_shovel
 
 execute if score @s AzrielNPC_ConversationTimer matches 10 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
 execute if score @s AzrielNPC_ConversationTimer matches 10 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工程兵 赵勿验：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎小姐。后面有伤员，但是他们为了断后，将这道门的操纵杆拆了。”",color:"white"}]
