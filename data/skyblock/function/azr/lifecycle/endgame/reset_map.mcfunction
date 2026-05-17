@@ -722,7 +722,7 @@ clone -79908 16 -113 -79903 22 -110 -79908 45 -113
 
 
 #大铁门额外区域
-fill -79927 49 -130 -79927 48 -127 minecraft:netherite_block
+fill -79927 50 -130 -79927 48 -127 minecraft:netherite_block
 setblock -79936 49 -134 minecraft:potted_azure_bluet
 fill -79938 49 -138 -79938 50 -140 minecraft:oak_shelf[facing=east]{Inventory:[]}
 #大铁门的替换拉杆
