@@ -725,6 +725,13 @@ clone -79908 16 -113 -79903 22 -110 -79908 45 -113
 fill -79927 49 -130 -79927 48 -127 minecraft:netherite_block
 setblock -79936 49 -134 minecraft:potted_azure_bluet
 fill -79938 49 -138 -79938 50 -140 minecraft:oak_shelf[facing=east]{Inventory:[]}
+#大铁门的替换拉杆
+setblock -79924 49 -126 air
+setblock -79898 48 -135 chest[facing=south]{Inventory:[]}
+item replace block -79898 48 -135 container.13 with skull_banner_pattern[custom_name={text:"“谁把替换操纵杆放在这种地方？”",color:"dark_purple",italic:0b},lore=[{text:"我把它拿走放回去了。",color:"white",italic:0b},{text:"有需求请到天桥对面的仓库寻找。",color:"white",italic:0b}]] 1
+setblock -79875 48 -137 minecraft:waxed_exposed_copper_chest[facing=south]{Inventory:[]}
+item replace block -79875 48 -137 container.13 with lever[custom_name={text:"替换操纵杆",color:"blue",italic:0b},custom_data={azr_lever:1b}] 1
+
 
 #原breakout
 setblock -79878 41 -131 lever[face=floor,facing=east,powered=false]
