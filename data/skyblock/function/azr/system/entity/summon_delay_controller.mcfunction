@@ -5,6 +5,7 @@ execute if entity @s[tag=AzrielMob_summon_delay_marker_smoke_mother] run functio
 execute if entity @s[tag=AzrielMob_summon_delay_marker_smoke] run function skyblock:azr/assets/mobs/summon_delay/smoke
 execute if entity @s[tag=AzrielMob_summon_delay_marker_empty_human] run function skyblock:azr/assets/mobs/summon_delay/empty_human
 execute if entity @s[tag=AzrielMob_summon_delay_marker_shield] run function skyblock:azr/assets/mobs/summon_delay/shield
+execute if entity @s[tag=AzrielMob_summon_delay_marker_shield_heavy] run function skyblock:azr/assets/mobs/summon_delay/shield_heavy
 execute if entity @s[tag=AzrielMob_summon_delay_marker_summoner] run function skyblock:azr/assets/mobs/summon_delay/summoner
 execute if entity @s[tag=AzrielMob_summon_delay_marker_sword] run function skyblock:azr/assets/mobs/summon_delay/sword
 execute if entity @s[tag=AzrielMob_summon_delay_marker_axe] run function skyblock:azr/assets/mobs/summon_delay/axe
