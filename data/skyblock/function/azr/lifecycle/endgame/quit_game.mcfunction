@@ -81,6 +81,15 @@ tag @s remove azrPlayer_respawnanchor_unlocked_library
 tag @s remove azrPlayer_respawnanchor_unlocked_rockpath
 tag @s remove azrPlayer_respawnanchor_unlocked_prison_a
 tag @s remove azrPlayer_respawnanchor_unlocked_prison_b
+tag @s remove azrPlayer_respawnanchor_unlocked_prison_c
+tag @s remove azrPlayer_respawnanchor_unlocked_forest_a
+tag @s remove azrPlayer_respawnanchor_unlocked_forest_b
+tag @s remove azrPlayer_respawnanchor_unlocked_forest_c
+tag @s remove azrPlayer_respawnanchor_unlocked_mine_a
+tag @s remove azrPlayer_respawnanchor_unlocked_mine_b
+tag @s remove azrPlayer_respawnanchor_unlocked_mine_c
+tag @s remove azrPlayer_respawnanchor_unlocked_cliff_a
+tag @s remove azrPlayer_respawnanchor_unlocked_cliff_b
 
 #对话重置
 tag @s remove azrPlayer_dialogchoice_revealed_301

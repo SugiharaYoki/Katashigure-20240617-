@@ -28,7 +28,7 @@ execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_rockpath] if score @s 
 execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_prison_a] if score @s \
     Azr_Shop matches 40011 positioned -79923 38 -96 run tp @s ~ ~1 ~
 execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_prison_b] if score @s \
-    Azr_Shop matches 40012 positioned -79923 38 -96 run tp @s ~ ~1 ~
+    Azr_Shop matches 40012 positioned -79855 46 -109 run tp @s ~ ~1 ~
 
 
 

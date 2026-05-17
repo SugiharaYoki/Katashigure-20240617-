@@ -1,14 +1,31 @@
 
-
+##第一章
 #西庭外围
 #逾怜藓路
 
+##第二章
 #采光礼堂
 #传热根系
 #智述文馆
 
+##第三章
 #晦怨囚牢
 #蚀岩径
+
+##第四章
+#绯烟林场
+#血金窟
+
+##间章
+#邃栈
+
+##第五章
+#神代水路
+#蓄水池
+
+##第六章
+#中庭花园
+#苍白的古树
 
 
 execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79965,y=37,z=-17,dx=5,dy=5,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
@@ -101,6 +118,8 @@ execute unless score @s AzrPlayer_CurrentArea matches 7 positioned -79854 29 -73
                                                 {area_id:7,title:"重生锚点：蚀岩径",color_code:"#e4964d"}
 execute unless score @s AzrPlayer_CurrentArea matches 6 positioned -79923 38 -96 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:6,title:"重生锚点：晦怨囚牢A",color_code:"#9e62ff"}
+execute unless score @s AzrPlayer_CurrentArea matches 6 positioned -79855 46 -109 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:6,title:"重生锚点：晦怨囚牢B",color_code:"#9e62ff"}
 
 
 execute positioned -79943 37 -8 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_westcourt_a
@@ -114,6 +133,7 @@ execute positioned -79932 30 187 if entity @s[distance=..4] run tag @s add azrPl
 execute positioned -79848 43 124 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_library
 execute positioned -79854 29 -73 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_rockpath
 execute positioned -79923 38 -96 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_prison_a
+execute positioned -79855 46 -109 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_prison_b
 
 
 
