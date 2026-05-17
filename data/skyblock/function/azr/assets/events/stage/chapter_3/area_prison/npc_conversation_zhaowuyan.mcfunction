@@ -21,9 +21,11 @@ execute if score @s AzrielNPC_ConversationTimer matches 42..43 run scoreboard pl
 execute if score @s AzrielNPC_ConversationTimer matches 44 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
 execute if score @s AzrielNPC_ConversationTimer matches 44 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工程兵 赵勿验：",color:"green",bold:1b},{bold: false,text:"\n“你帮我找到了操作杆？真的非常感谢，我这就给装上。”",color:"white"}]
 execute if score @s AzrielNPC_ConversationTimer matches 44 run clear @p[distance=..4] *[custom_data={azr_lever:1b}] 1
-execute if score @s AzrielNPC_ConversationTimer matches 50..68 run tp @s -79924 48 -127 facing -79924 48 -126
+execute if score @s AzrielNPC_ConversationTimer matches 50 run tp @s -79924 48 -127
+execute if score @s AzrielNPC_ConversationTimer matches 53 run tp @s -79924 48 -127 facing -79924 48 -126
 execute if score @s AzrielNPC_ConversationTimer matches 53 run playsound block.metal.place block @a -79924 49 -126 1 0.9
 execute if score @s AzrielNPC_ConversationTimer matches 53 run setblock -79924 49 -126 lever[facing=north,face=floor]
+execute if score @s AzrielNPC_ConversationTimer matches 57 run tp @s -79924 48 -127 facing -79924 48 -126
 execute if score @s AzrielNPC_ConversationTimer matches 57 run playsound block.lever.click block @a -79924 49 -126 1 0.9
 execute if score @s AzrielNPC_ConversationTimer matches 57 run setblock -79924 49 -126 lever[facing=north,face=floor,powered=true]
 execute if score @s AzrielNPC_ConversationTimer matches 60 run fill -79927 48 -127 -79927 48 -130 air
