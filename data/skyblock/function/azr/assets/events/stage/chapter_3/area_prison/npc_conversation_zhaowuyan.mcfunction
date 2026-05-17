@@ -41,7 +41,7 @@ execute if score @s AzrielNPC_ConversationTimer matches 73 run tellraw @a[tag=az
 execute if score @s AzrielNPC_ConversationTimer matches 83 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
 execute if score @s AzrielNPC_ConversationTimer matches 83 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工程兵 赵勿验：",color:"green",bold:1b},{bold: false,text:"\n“……已经不见他们身影了。深处就连一点动静都没，唉。”",color:"white"}]
 
-execute if score @s AzrielNPC_ConversationTimer matches 90 run tp @s -79925 47 -127 facing -79926 47 -127
+execute if score @s AzrielNPC_ConversationTimer matches 90 run tp @s -79925 48 -127 facing -79926 48 -127
 execute if score @s AzrielNPC_ConversationTimer matches 92 run tp @s ~-1 ~ ~ facing ~-2 ~ ~
 execute if score @s AzrielNPC_ConversationTimer matches 94 run tp @s ~-1 ~ ~ facing ~-2 ~ ~
 execute if score @s AzrielNPC_ConversationTimer matches 96 run tp @s ~-1 ~ ~ facing ~-2 ~ ~
