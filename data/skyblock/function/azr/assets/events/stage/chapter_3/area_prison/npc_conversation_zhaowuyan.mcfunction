@@ -42,6 +42,10 @@ execute if score @s AzrielNPC_ConversationTimer matches 73 run tellraw @a[tag=az
 execute if score @s AzrielNPC_ConversationTimer matches 83 run playsound minecraft:entity.vindicator.ambient master @a ~ ~ ~ 2 1.0
 execute if score @s AzrielNPC_ConversationTimer matches 83 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工程兵 赵勿验：",color:"green",bold:1b},{bold: false,text:"\n“……已经不见他们身影了。深处就连一点动静都没，唉。”",color:"white"}]
 
+execute if score @s AzrielNPC_ConversationTimer matches 70 positioned -79955 46 -158 run function skyblock:azr/assets/mobs/skeleton_sentinel
+execute if score @s AzrielNPC_ConversationTimer matches 70 positioned -79955 46 -158 run function skyblock:azr/assets/mobs/spider_mini
+execute if score @s AzrielNPC_ConversationTimer matches 70 positioned -79955 46 -158 run function skyblock:azr/assets/mobs/spider_mini
+
 execute if score @s AzrielNPC_ConversationTimer matches 90 run tp @s -79925 48 -127 facing -79926 48 -127
 execute if score @s AzrielNPC_ConversationTimer matches 92 run tp @s ~-1 ~ ~ facing ~-2 ~ ~
 execute if score @s AzrielNPC_ConversationTimer matches 94 run tp @s ~-1 ~ ~ facing ~-2 ~ ~
