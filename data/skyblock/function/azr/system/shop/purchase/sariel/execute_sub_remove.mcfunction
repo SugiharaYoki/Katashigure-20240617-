@@ -259,3 +259,5 @@ scoreboard players operation @s AzrSariel_Side_Result -= @s AzrSariel_Side_Death
 
 playsound block.enchantment_table.use player @a ~ ~ ~ 1 1.3
 playsound block.amethyst_block.resonate player @a ~ ~ ~ 1 1.2
+
+execute if entity @s[scores={Azr_Shop=8432101..8432199}] run function skyblock:azr/system/shop/purchase/sariel/page
