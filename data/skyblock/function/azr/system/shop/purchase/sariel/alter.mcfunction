@@ -1,4 +1,4 @@
-execute as @s[scores={Azr_Shop=8432101..8432198}] at @s run function skyblock:azr/system/shop/purchase/sariel/execute
+execute as @s[scores={Azr_Shop=8432101..8432198}] at @s run function skyblock:azr/system/shop/purchase/sariel/execute_status_detect
 execute as @s[scores={Azr_Shop=8432100}] at @s run function skyblock:azr/system/shop/purchase/sariel/page
 execute as @s[scores={Azr_Shop=8432199}] at @s run function skyblock:azr/system/shop/purchase/sariel/reset
 

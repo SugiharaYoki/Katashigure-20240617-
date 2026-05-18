@@ -47,6 +47,7 @@ execute as @s[tag=DebugMode] run scoreboard objectives setdisplay sidebar Azr_sy
 #function skyblock:azr/purchase_sega_azriel_plypts_react1
 tp @s -79776 105 -2081 facing -79775 105 -2081
 
+scoreboard players set @s Azr_emerald_temp 0
 
 #tp @s -79936.0 38.15 -14.0 facing -79935.0 38.15 -14.0
 

@@ -12,6 +12,7 @@ execute unless items entity @s player.crafting.3 *[!custom_data~{HandbookVitae:1
 
 #绿宝石管理
 execute if items entity @s[tag=hasLifeVitae] container.* emerald run function skyblock:azr/system/shop/money_conversion
+execute if items entity @s[tag=hasLifeVitae] container.* diamond run function skyblock:azr/system/shop/money_temp_conversion
 execute if items entity @s[tag=hasLifeVitae] container.* glistering_melon_slice run function skyblock:azr/system/shop/melon_conversion
 
 #灵能入口
