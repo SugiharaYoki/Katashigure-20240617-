@@ -11,17 +11,18 @@ scoreboard players set 17 constant 17
 scoreboard players set 18 constant 18
 scoreboard players set 19 constant 19
 scoreboard players set 20 constant 20
-execute if entity @s[scores={AZS_SoulFrag=1..}] run scoreboard players operation @s AzrSariel_Data_CostAmount *= 10 constant
-execute if entity @s[scores={AZS_SoulFrag=1}] run scoreboard players operation @s AzrSariel_Data_CostAmount /= 20 constant
-execute if entity @s[scores={AZS_SoulFrag=2}] run scoreboard players operation @s AzrSariel_Data_CostAmount /= 18 constant
-execute if entity @s[scores={AZS_SoulFrag=3}] run scoreboard players operation @s AzrSariel_Data_CostAmount /= 17 constant
-execute if entity @s[scores={AZS_SoulFrag=4}] run scoreboard players operation @s AzrSariel_Data_CostAmount /= 15 constant
-execute if entity @s[scores={AZS_SoulFrag=5}] run scoreboard players operation @s AzrSariel_Data_CostAmount /= 14 constant
-execute if entity @s[scores={AZS_SoulFrag=6}] run scoreboard players operation @s AzrSariel_Data_CostAmount /= 13 constant
-execute if entity @s[scores={AZS_SoulFrag=7}] run scoreboard players operation @s AzrSariel_Data_CostAmount /= 11 constant
-execute if entity @s[scores={AZS_SoulFrag=8}] run scoreboard players operation @s AzrSariel_Data_CostAmount /= 10 constant
+#execute if entity @s[scores={AZS_SoulFrag=1..}] run scoreboard players operation @s AzrSariel_Data_CostAmount *= 10 constant
+#execute if entity @s[scores={AZS_SoulFrag=1}] run scoreboard players operation @s AzrSariel_Data_CostAmount /= 20 constant
+#execute if entity @s[scores={AZS_SoulFrag=2}] run scoreboard players operation @s AzrSariel_Data_CostAmount /= 18 constant
+#execute if entity @s[scores={AZS_SoulFrag=3}] run scoreboard players operation @s AzrSariel_Data_CostAmount /= 17 constant
+#execute if entity @s[scores={AZS_SoulFrag=4}] run scoreboard players operation @s AzrSariel_Data_CostAmount /= 15 constant
+#execute if entity @s[scores={AZS_SoulFrag=5}] run scoreboard players operation @s AzrSariel_Data_CostAmount /= 14 constant
+#execute if entity @s[scores={AZS_SoulFrag=6}] run scoreboard players operation @s AzrSariel_Data_CostAmount /= 13 constant
+#execute if entity @s[scores={AZS_SoulFrag=7}] run scoreboard players operation @s AzrSariel_Data_CostAmount /= 11 constant
+#execute if entity @s[scores={AZS_SoulFrag=8}] run scoreboard players operation @s AzrSariel_Data_CostAmount /= 10 constant
 
-execute if entity @s[scores={AZS_SoulFrag=1..}] run scoreboard players operation @s Azr_emerald += @s AzrSariel_Data_CostAmount
+#execute if entity @s[scores={AZS_SoulFrag=1..}] run scoreboard players operation @s Azr_emerald += @s AzrSariel_Data_CostAmount
+execute if entity @s run scoreboard players operation @s Azr_emerald += @s AzrSariel_Data_CostAmount
 
 scoreboard players set @s AzrSariel_Data_CostAmount 0
 
