@@ -277,7 +277,7 @@ execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=133}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“怪物突然就从我们面前出现，我们被打得措手不及！！”",color:"white"}]
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=160..161}] at @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] if entity @n[tag=AzrielMob,distance=..6] run scoreboard players set @s rng1 160
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=162}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“谢、谢谢你，爱理莎女士……”",color:"white"}]
-execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=174}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“我们伤亡惨重。要是权之残影大人在就好了，他一定会知道这一切究竟是怎么回事的……”",color:"white"}]
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=174}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“我们剩下的人越来越少了。要是权之残影大人在就好了，他一定会知道这一切究竟是怎么回事的……”",color:"white"}]
 
 
 #随机野怪
