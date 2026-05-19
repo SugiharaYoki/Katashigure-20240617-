@@ -250,16 +250,18 @@ execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=72}] as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",color:"yellow",bold:1b},{text:"\n“你该为自己而活，爱理莎。”",color:"white",bold: false}]
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 0.7
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",color:"yellow",bold:1b},{text:"\n“但你也将面临一个难题：注定一死的你，该如何违抗命运？”",color:"white",bold: false}]
-execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79886 47 -109 run function skyblock:azr/assets/mobs/pillager
-execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79886 47 -109 run function skyblock:azr/assets/mobs/pillager
-execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79886 47 -109 run function skyblock:azr/assets/mobs/pillager
-execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79886 47 -109 run function skyblock:azr/assets/mobs/pillager
-execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79886 47 -109 run function skyblock:azr/assets/mobs/axe
-execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79886 47 -109 run function skyblock:azr/assets/mobs/axe
-execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79886 47 -109 run function skyblock:azr/assets/mobs/axe
-execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79886 47 -109 run function skyblock:azr/assets/mobs/axe
-execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79886 47 -109 run function skyblock:azr/assets/mobs/sword
-execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79886 47 -109 run function skyblock:azr/assets/mobs/sword
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79886 47 -109 run function skyblock:azr/assets/mobs/skeleton_sword
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79886 47 -109 run function skyblock:azr/assets/mobs/skeleton_sword
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79886 47 -109 run function skyblock:azr/assets/mobs/skeleton_sword
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79886 47 -109 run function skyblock:azr/assets/mobs/skeleton_sword
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79886 47 -109 run function skyblock:azr/assets/mobs/undead
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79886 47 -109 run function skyblock:azr/assets/mobs/undead
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79886 47 -109 run function skyblock:azr/assets/mobs/undead
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79889 47 -109 run function skyblock:azr/assets/mobs/undead
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79889 47 -109 run function skyblock:azr/assets/mobs/undead
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79889 47 -109 run function skyblock:azr/assets/mobs/undead
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79889 47 -109 run function skyblock:azr/assets/mobs/undead
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79889 47 -109 run function skyblock:azr/assets/mobs/undead
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79879 47 -109 run function skyblock:azr/assets/mobs/sword_friendly
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79879 47 -109 run function skyblock:azr/assets/mobs/sword_friendly
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79879 47 -109 run function skyblock:azr/assets/mobs/pillager_friendly
@@ -268,14 +270,13 @@ execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79879 47 -109 run tag @n[tag=AzrielNPC_Divineforce,type=pillager,distance=0..2] add AzrielNPC_stage9_prison_corelever_conversation1
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] run fill -79876 47 -107 -79876 52 -111 air
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=90}] as @a[tag=azrShowDialog] at @s run tp @s -79864 47 -109
-execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=92}] run tellraw @a[tag=azrShowDialog,distance=0..19] [{text:"剑士：",color:"green",bold:1b},{bold: false,text:"\n“清醒一点，我是友军！啊、啊啊！！”",color:"white"}]
-execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=102}] run tellraw @a[tag=azrShowDialog,distance=0..19] [{text:"牧师：",color:"green",bold:1b},{bold: false,text:"\n“大家快撤退，不要再同类相残了……！”",color:"white"}]
-execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=109}] run tellraw @a[tag=azrShowDialog,distance=0..19] [{text:"剑士：",color:"green",bold:1b},{bold: false,text:"\n“可、可是我们会死……”",color:"white"}]
-execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=113}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎来了，爱理莎！求你来帮帮我们！”",color:"white"}]
-execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=133}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“他们不知道怎么了，突然开始攻击自己人，我们叫不醒他们！”",color:"white"}]
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=92}] run tellraw @a[tag=azrShowDialog,distance=0..19] [{text:"剑士：",color:"green",bold:1b},{bold: false,text:"\n“我快顶不住了！！”",color:"white"}]
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=102}] run tellraw @a[tag=azrShowDialog,distance=0..19] [{text:"牧师：",color:"green",bold:1b},{bold: false,text:"\n“大家快撤退，不要硬碰硬……！”",color:"white"}]
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=113}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎来了，爱理莎！帮帮我们！”",color:"white"}]
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=133}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“怪物突然就从我们面前出现，我们束手无策！！”",color:"white"}]
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=160..161}] at @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] if entity @n[tag=AzrielMob,distance=..6] run scoreboard players set @s rng1 160
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=162}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“谢、谢谢你，爱理莎女士……”",color:"white"}]
-execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=174}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“我们伤亡惨重。要是权之残影大人在就好了，他一定会知道究竟是怎么回事的……”",color:"white"}]
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=174}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“我们伤亡惨重。要是权之残影大人在就好了，他一定会知道这一切究竟是怎么回事的……”",color:"white"}]
 
 
 #随机野怪
