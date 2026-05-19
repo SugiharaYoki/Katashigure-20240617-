@@ -1,4 +1,6 @@
+
 scoreboard players operation @s rng1 = @s AZR_chainKillUpg_pts
+scoreboard players operation @s rng1 += @s AZS_SoulFrag
 scoreboard players remove @s[tag=AZR_ChainKillUpg1] rng1 1
 scoreboard players remove @s[tag=AZR_ChainKillUpg2] rng1 1
 scoreboard players remove @s[tag=AZR_ChainKillUpg3] rng1 1
