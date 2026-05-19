@@ -137,7 +137,7 @@ execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~2 container
 
 function skyblock:city/id/read_finish
 
-
+function skyblock:azr/system/shop/purchase/sariel/effect
 
 execute unless items entity @s container.* *[custom_data~{revival_star:1b}] run function skyblock:azr/assets/items/others/revival_star
 
