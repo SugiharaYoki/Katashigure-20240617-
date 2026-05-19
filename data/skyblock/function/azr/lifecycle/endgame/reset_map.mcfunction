@@ -736,6 +736,9 @@ setblock -79957 46 -158 chest[facing=east]{Inventory:[]}
 item replace block -79957 46 -158 container.12 with gunpowder 1
 item replace block -79957 46 -158 container.14 with flint 1
 
+#核心拉杆
+setblock -79867 48 -109 lever[face=floor,facing=east,powered=false]
+setblock -79867 -2 -109 lever[face=floor,facing=east,powered=true]
 
 #原breakout
 setblock -79878 41 -131 lever[face=floor,facing=east,powered=false]

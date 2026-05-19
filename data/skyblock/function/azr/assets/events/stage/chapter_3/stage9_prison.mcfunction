@@ -229,6 +229,29 @@ execute positioned -79901 47 -130 as @n[tag=AzrielMarker_encounter,distance=0..0
 execute positioned -79901 47 -130 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79878 48 -136 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_smoke","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute positioned -79901 47 -130 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79878 48 -136 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_smoke","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
+#核心拉杆
+execute positioned -79867 48 -109 if block ~ ~ ~ minecraft:lever[powered=true] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] as @a[distance=..7,tag=azrShowDialog] at @s run tp @s ~ ~-50 ~
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] as @a[distance=7..,tag=azrShowDialog] at @s run tp @s -79864 -3 -109
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] as @a[tag=azrShowDialog] at @s run stopsound @a
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=10}] as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 0.7
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=10}] as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",color:"yellow",bold:1b},{text:"\n“你，太靠近了。”",color:"white",bold: false}]
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=21}] as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 0.7
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=21}] as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",color:"yellow",bold:1b},{text:"\n“……有趣，果然是十分有趣的灵魂。但这有趣却建立在歪念之上，实属遗憾。”",color:"white",bold: false}]
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=33}] as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 0.7
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=33}] as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",color:"yellow",bold:1b},{text:"\n“爱理莎，你的生活并不美满。被你视为平淡的日常，并非你应走上的路。”",color:"white",bold: false}]
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=46}] as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 0.7
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=46}] as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",color:"yellow",bold:1b},{text:"\n“安德拉伦恩选中你来这牢房深处，是为了让你吸引怪物的注意。你足够强大，也足够……引人注目。”",color:"white",bold: false}]
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=60}] as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 0.7
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=60}] as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",color:"yellow",bold:1b},{text:"\n“可你居然是心甘情愿的。就好像你根本不在乎自己会不会死亡一样。”",color:"white",bold: false}]
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=72}] as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 0.7
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=72}] as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",color:"yellow",bold:1b},{text:"\n“你该为自己而活，爱理莎。”",color:"white",bold: false}]
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 0.7
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",color:"yellow",bold:1b},{text:"\n“但你也将面临一个难题：注定一死的你，该如何违抗命运？”",color:"white",bold: false}]
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=90}] as @a[tag=azrShowDialog] at @s run tp @s -79864 47 -109
+
+
 
 #随机野怪
 execute positioned -79918 46 -88 if score random_enemy_thread AzrTimerStack matches 2 store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..42,tag=!AzrielMob_trap]

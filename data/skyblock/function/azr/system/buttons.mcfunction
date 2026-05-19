@@ -132,9 +132,6 @@ execute if block -79952 40 56 minecraft:birch_button[powered=true] run scoreboar
 execute if block -79952 39 55 minecraft:birch_button[powered=true] run scoreboard players reset CerementPassword Azr_system
 execute if block -79952 40 54 minecraft:birch_button[powered=true] run scoreboard players reset CerementPassword Azr_system
 execute if block -79952 39 54 minecraft:birch_button[powered=true] run scoreboard players reset CerementPassword Azr_system
-#functional level - ch3
-execute if block -79867 48 -109 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79866.5,y=48.0,z=-108.5,distance=..1] run function skyblock:azr/assets/events/stage/dialog/ch3_untitled
-execute if block -79867 48 -109 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79866.5,y=48.0,z=-108.5,distance=..1] run summon minecraft:interaction -79866.5 48.0 -108.5 {Tags:["temp"]}
 #functional button - 94935
 execute if block -79751 37 -353 minecraft:polished_blackstone_button[powered=true] run setblock -79761 42 -358 air destroy
 #functional lever
