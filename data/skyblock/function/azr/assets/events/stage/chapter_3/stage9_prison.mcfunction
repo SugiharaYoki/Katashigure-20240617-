@@ -262,6 +262,13 @@ execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79889 47 -109 run function skyblock:azr/assets/mobs/undead
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79889 47 -109 run function skyblock:azr/assets/mobs/undead
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79889 47 -109 run function skyblock:azr/assets/mobs/undead
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79891 47 -109 run function skyblock:azr/assets/mobs/undead
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79891 47 -109 run function skyblock:azr/assets/mobs/undead
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79891 47 -109 run function skyblock:azr/assets/mobs/undead
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79891 47 -109 run function skyblock:azr/assets/mobs/undead
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79891 47 -109 run function skyblock:azr/assets/mobs/skeleton_sword
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79891 47 -109 run function skyblock:azr/assets/mobs/skeleton_sword
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79891 47 -109 run function skyblock:azr/assets/mobs/skeleton_sword
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79879 47 -109 run function skyblock:azr/assets/mobs/sword_friendly
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79879 47 -109 run function skyblock:azr/assets/mobs/sword_friendly
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79879 47 -109 run function skyblock:azr/assets/mobs/pillager_friendly
