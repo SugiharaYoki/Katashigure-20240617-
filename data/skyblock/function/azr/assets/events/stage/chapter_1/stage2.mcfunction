@@ -90,5 +90,5 @@ execute if score stage_main_thread AzrTimerStack matches 310 positioned -79950 3
 execute if score stage_main_thread AzrTimerStack matches 310 positioned -79928 38 -9 if score #rng1 Azr_system matches 7..8 run function skyblock:azr/assets/mobs/treasure_rabbit
 
 execute if score stage_main_thread AzrTimerStack matches 310 run title @a[tag=azrShowDialog] actionbar {text:"Stage Clear",color:"green"}
-execute if score stage_main_thread AzrTimerStack matches 310 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..0}] [{text:"索命连击",color:"light_purple",bold:1b},{bold:0b,text:"可用点数已增加，目前为：1",color:"white"}]
-execute if score stage_main_thread AzrTimerStack matches 310 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..0}] AZR_chainKillUpg_pts 1
+execute if score stage_main_thread AzrTimerStack matches 310 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..0}] [{text:"索命连击",color:"light_purple",bold:1b},{bold:0b,text:"升级面板已解锁，获得4点可分配点数",color:"white"}]
+execute if score stage_main_thread AzrTimerStack matches 310 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..0}] AZR_chainKillUpg_pts 4

@@ -105,8 +105,6 @@ execute if score stage_main_thread AzrTimerStack matches 352 run title @a[tag=az
 execute if score stage_main_thread AzrTimerStack matches 354 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage6
 execute if score stage_main_thread AzrTimerStack matches 354 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..6}] Azr_skillPoints 7
 execute if score stage_main_thread AzrTimerStack matches 354 run scoreboard players set stage Azr_system 16
-execute if score stage_main_thread AzrTimerStack matches 354 run tellraw @a[tag=azrPlayer,scores={AZR_chainKillUpg_pts=..2}] [{text:"索命连击",color:"light_purple",bold:1b},{bold:0b,text:"可用点数已增加，目前为：3",color:"white"}]
-execute if score stage_main_thread AzrTimerStack matches 354 run scoreboard players set @a[scores={AZR_chainKillUpg_pts=..2}] AZR_chainKillUpg_pts 3
 
 execute if score stage_main_thread AzrTimerStack matches 354 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:undead_shadow}
 execute if score stage_main_thread AzrTimerStack matches 354 positioned -79906 38 135 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_shadow","AzrielMob_summon_delay","AzrielMob_level_1"]}
