@@ -37,6 +37,8 @@ execute if score @s[tag=azrPlayer_dialogchoice_revealed_304] Azr_Shop matches 30
     as @n[tag=AzrielNPC_marinus] at @s run scoreboard players set @s AzrielNPC_ConversationTimer 2001
 execute if score @s[tag=azrPlayer_dialogchoice_revealed_304] Azr_Shop matches 30403 \
     as @n[tag=AzrielNPC_marinus] at @s run scoreboard players set @s AzrielNPC_ConversationTimer 3001
+execute if score @s[tag=azrPlayer_dialogchoice_revealed_304] Azr_Shop matches 30404 \
+    as @n[tag=AzrielNPC_marinus] at @s run scoreboard players set @s AzrielNPC_ConversationTimer 4001
 
 
 

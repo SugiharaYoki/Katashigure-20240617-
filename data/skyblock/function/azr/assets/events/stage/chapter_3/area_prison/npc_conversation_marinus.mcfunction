@@ -2,15 +2,16 @@ scoreboard players add @s AzrielNPC_ConversationTimer 1
 
 execute if score @s AzrielNPC_ConversationTimer matches 8 unless entity @a[distance=..5.5,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 7
 execute if score @s AzrielNPC_ConversationTimer matches 10 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
-execute if score @s AzrielNPC_ConversationTimer matches 10 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“……爱理莎小姐。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 10 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“……爱理莎小姐。我来晚了，抱歉。”",color:"white"}]
 execute if score @s AzrielNPC_ConversationTimer matches 24 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
-execute if score @s AzrielNPC_ConversationTimer matches 24 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“我来晚了，抱歉。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 24 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“权之残影大人让我告诉你，上2楼，走天桥去牢房的东翼。”",color:"white"}]
 execute if score @s AzrielNPC_ConversationTimer matches 24 run scoreboard players set @s AzrielNPC_ConversationTimer 40
 
 
 execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_304] run tellraw @s [{text:" - "},{text:"交易：你有什么可以卖给我的吗？  ",color:"#c4ffbd"},{text:"〈◆〉",bold:1b,color:"#72ff62",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30403"}}]
 execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_304] run tellraw @s [{text:" - "},{text:"询问：你看上去不太喜欢跟人聊天？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30401"}}]
 execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_304] run tellraw @s [{text:" - "},{text:"询问：这些神界士兵还好吗？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30402"}}]
+execute if entity @n[x=-79924.06,y=48.00,z=-127.04,tag=AzrielMob_ch3_middlesidegate_swordman,distance=..23,type=vindicator,scores={AzrielNPC_ConversationTimer=73..}] if score @s AzrielNPC_ConversationTimer matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_304] run tellraw @s [{text:" - "},{text:"讨论：有关二楼的工程兵  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30404"}}]
 
 
 
@@ -51,9 +52,42 @@ execute if score @s AzrielNPC_ConversationTimer matches 3020 as @a[distance=0..5
 execute if score @s AzrielNPC_ConversationTimer matches 3020 as @a[distance=0..5.5,tag=azrPlayer] run tellraw @s [{text:" - "},{text:"存箭石板  ",color:"#306fc2"},{"nbt":"ingredient.gunpowder","storage":"azr:shop",color:"white"},{text:"/15 火药 ",color:"white"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431564"},hover_event:{"action":"show_text","value":{text:"当持有超过32支普通箭矢后\n额外箭矢将不再占据背包空间\n\n点击此石板将瞬间完成箭矢收纳",color:"white"}}}]
 
 
-execute if score @s AzrielNPC_ConversationTimer matches 3040..4000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_304] run tag @s add azrPlayer_dialogchoice_revealed_304
-execute if score @s AzrielNPC_ConversationTimer matches 3041 run scoreboard players set @s AzrielNPC_ConversationTimer 3039
-execute if score @s AzrielNPC_ConversationTimer matches 3040..4000 as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_304] run tag @s remove azrPlayer_dialogchoice_revealed_304
-execute if score @s AzrielNPC_ConversationTimer matches 3040..4000 unless entity @a[distance=0..5.5,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 49
+execute if score @s AzrielNPC_ConversationTimer matches 3040..3200 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_304] run tag @s add azrPlayer_dialogchoice_revealed_304
+
+execute if score @s AzrielNPC_ConversationTimer matches 3040..3200 as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_304] run tag @s remove azrPlayer_dialogchoice_revealed_304
+execute if score @s AzrielNPC_ConversationTimer matches 3040..3200 unless entity @a[distance=0..5.5,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 49
 
 
+execute if score @s AzrielNPC_ConversationTimer matches 4002 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s AzrielNPC_ConversationTimer matches 4002 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“我对这个名字有印象。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 4013 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s AzrielNPC_ConversationTimer matches 4013 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“现在牢房到处都在发生类似的事情。只不过，我需要去看看。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 2056 positioned -79924 48 -128 run playsound minecraft:block.portal.trigger ambient @a ~ ~ ~ 2 2
+execute if score @s AzrielNPC_ConversationTimer matches 4064 at @n[tag=AzrielNPC_marinus,type=villager] run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
+execute if score @s AzrielNPC_ConversationTimer matches 4060 positioned -79924 48 -128 run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
+execute if score @s AzrielNPC_ConversationTimer matches 4064 positioned -79924 48 -128 run tp @n[tag=AzrielNPC_marinus,type=villager] ~ ~ ~ facing entity @p[tag=azrPlayer]
+execute if score @s AzrielNPC_ConversationTimer matches 4063 positioned -79924 48 -128 run particle minecraft:reverse_portal ~ ~20.8 ~ 0.3 0.7 0.3 0.0 18
+execute if score @s AzrielNPC_ConversationTimer matches 4064 positioned -79924 48 -128 run particle minecraft:reverse_portal ~ ~0.8 ~ 0.3 0.7 0.3 0.0 18
+execute if score @s AzrielNPC_ConversationTimer matches 4064 positioned -79924 48 -128 run playsound entity.enderman.teleport hostile @a ~ ~ ~ 0.8 1.2
+execute if score @s AzrielNPC_ConversationTimer matches 4064 positioned -79924 48 -128 run particle gust ~ ~0.1 ~ 2 0 2 0 5
+
+execute if score @s AzrielNPC_ConversationTimer matches 4070 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s AzrielNPC_ConversationTimer matches 4070 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“我很遗憾。但我分身乏术，无能为力。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 4083 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"你：",color:"aqua"},{text:"\n“看得出，你很在意自己的部下。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 4092 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s AzrielNPC_ConversationTimer matches 4092 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“我不愿将他们单纯视作部下。我们都是为权之残影大人效劳的兵士。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 4102 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"你：",color:"aqua"},{text:"\n“一直都很好奇，你们是心甘情愿的吗？”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 4111 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s AzrielNPC_ConversationTimer matches 4111 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“太久远了，当时的心境已记不清楚。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 4119 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s AzrielNPC_ConversationTimer matches 4119 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“权之残影大人在海边的渔村找到我。我原本的生活只有蓝色。现在，不是从前无意义的生活。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 4131 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s AzrielNPC_ConversationTimer matches 4131 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎女士，你是否期望生活中总存在新故事？”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 4145 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"你：",color:"aqua"},{text:"\n“你向我提出了一个值得思考的问题。我觉得，我会是喜欢新展开的人。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 4155 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s AzrielNPC_ConversationTimer matches 4155 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“许多人依然期望平凡的生命。魔界没给他们机会，沙利叶大人也没给他们机会。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 4165 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s AzrielNPC_ConversationTimer matches 4165 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“……希望你能找到属于你的答案。”",color:"white"}]
+
+execute if score @s AzrielNPC_ConversationTimer matches 4185 run tag @a[tag=azrPlayer] remove azrPlayer_dialogchoice_revealed_304
+execute if score @s AzrielNPC_ConversationTimer matches 4185 run scoreboard players set @s AzrielNPC_ConversationTimer 49
