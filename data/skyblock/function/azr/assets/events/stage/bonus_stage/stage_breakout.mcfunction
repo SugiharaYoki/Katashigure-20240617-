@@ -96,7 +96,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 185 positioned -79975 
 execute if score stage_bonus_thread AzrTimerStack matches 187 positioned -79975 34 -100 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus1
 
 execute if score stage_bonus_thread AzrTimerStack matches 150 positioned -79969.00 37.11 -88.00 run function skyblock:azr/assets/mobs/sonic_eye
-execute if score stage_bonus_thread AzrTimerStack matches 250 positioned -79969.00 37.11 -88.00 run function skyblock:azr/assets/mobs/sonic_eye
+execute if score stage_bonus_thread AzrTimerStack matches 225 positioned -79969.00 37.11 -88.00 run function skyblock:azr/assets/mobs/sonic_eye
 
 execute if score stage_bonus_thread AzrTimerStack matches 100 positioned -79973 34 -98 positioned ~ ~ ~0 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_x
 execute if score stage_bonus_thread AzrTimerStack matches 101 positioned -79973 34 -98 positioned ~ ~ ~1 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_x
