@@ -721,7 +721,7 @@ fill -79876 52 -107 -79876 47 -111 barrier
 clone -79908 16 -113 -79903 22 -110 -79908 45 -113
 
 #STAGE BREAKOUT
-fill -79975 33 -89 -79964 33 -100 spruce_log replace minecraft:warped_stem
+fill -79975 33 -89 -79964 33 -100 spruce_log replace minecraft:crimson_stem
 fill -79970 34 -101 -79969 38 -101 minecraft:polished_andesite_stairs[facing=north]
 
 
