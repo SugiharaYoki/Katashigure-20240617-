@@ -1,17 +1,18 @@
+
 {
     "display": {
         "title": {
-            "text": "牢房区域 - 东南翼1层",
+            "text": "晦怨囚牢：行政区玫瑰培育室",
             "color": "green",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "STAGE BREAKOUT",
-            "color": "light_purple"
+            "text": "他们把玫瑰园改造成了对生物的处刑场。\n更要命的是，这里的控制系统在被魔界军入侵后无人值守，现在处于自动运作状态。\n好在我身手了得，这才不让自己的血为那些玫瑰再度染上鲜红。\n我不知道有多少人曾经死在这间培育室。\n我不敢想。",
+            "color": "white"
         },
         "icon": {
-            "id": "minecraft:gray_glazed_terracotta"
+            "id": "minecraft:red_glazed_terracotta"
         },
         "frame": "task",
         "show_toast": false,
@@ -23,5 +24,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:azr/progress/stage11"
+    "parent": "skyblock:azr/progress/stage10"
 }
