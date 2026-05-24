@@ -21,7 +21,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 25..300 positioned -79
 execute if score stage_bonus_thread AzrTimerStack matches 25..300 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter] at @s store result score @s rng6 run random value 1..12
 execute if score stage_bonus_thread AzrTimerStack matches 125..300 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter] at @s store result score @s rng6 run random value 1..8
 execute if score stage_bonus_thread AzrTimerStack matches 225..300 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter] at @s store result score @s rng6 run random value 1..6
-execute if score stage_bonus_thread AzrTimerStack matches 285..300 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter] at @s store result score @s rng6 run random value 1..3
+execute if score stage_bonus_thread AzrTimerStack matches 285..300 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter] at @s store result score @s rng6 run random value 1..2
 
 execute if score stage_bonus_thread AzrTimerStack matches 25..300 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=1,rng5=1}] positioned -79971 34 -96 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
 execute if score stage_bonus_thread AzrTimerStack matches 25..300 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=1,rng5=2}] positioned -79971 34 -95 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
@@ -95,7 +95,8 @@ execute if score stage_bonus_thread AzrTimerStack matches 165 positioned -79970 
 execute if score stage_bonus_thread AzrTimerStack matches 185 positioned -79975 34 -100 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus0
 execute if score stage_bonus_thread AzrTimerStack matches 187 positioned -79975 34 -100 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus1
 
-
+execute if score stage_bonus_thread AzrTimerStack matches 150 positioned -79969.00 37.11 -88.00 run function skyblock:azr/assets/mobs/sonic_eye
+execute if score stage_bonus_thread AzrTimerStack matches 250 positioned -79969.00 37.11 -88.00 run function skyblock:azr/assets/mobs/sonic_eye
 
 execute if score stage_bonus_thread AzrTimerStack matches 100 positioned -79973 34 -98 positioned ~ ~ ~0 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_x
 execute if score stage_bonus_thread AzrTimerStack matches 101 positioned -79973 34 -98 positioned ~ ~ ~1 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_x
