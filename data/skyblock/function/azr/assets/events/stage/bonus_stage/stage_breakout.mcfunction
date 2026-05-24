@@ -152,7 +152,20 @@ execute if score stage_bonus_thread AzrTimerStack matches 300 as @a[tag=azrPlaye
 
 execute if score stage_bonus_thread AzrTimerStack matches 299..300 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_bonus_thread AzrTimerStack matches 299..300 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_bonus_thread AzrTimerStack matches 300 run scoreboard players set stage_bonus Azr_system 0
-execute if score stage_bonus_thread AzrTimerStack matches 300 positioned -79969 33 -93 run kill @e[type=marker,tag=AzrMarker_stage_breakout_a,distance=..25]
-execute if score stage_bonus_thread AzrTimerStack matches 300 run scoreboard players set stage_bonus_thread AzrTimerStack 0
+
+execute if score stage_bonus_thread AzrTimerStack matches 302 run clone -79970 38 -101 -79969 34 -101 -79970 34 -100
+execute if score stage_bonus_thread AzrTimerStack matches 304 run clone -79970 37 -100 -79969 34 -100 -79970 34 -99
+execute if score stage_bonus_thread AzrTimerStack matches 306 run clone -79970 36 -99 -79969 34 -99 -79970 34 -98
+execute if score stage_bonus_thread AzrTimerStack matches 308 run clone -79970 35 -98 -79969 34 -98 -79970 34 -97
+execute if score stage_bonus_thread AzrTimerStack matches 310 run clone -79970 34 -97 -79969 34 -97 -79970 34 -96
+execute if score stage_bonus_thread AzrTimerStack matches 302 run playsound block.iron_trapdoor.open block @a -79969.03 37.18 -100.00 1 0.7
+execute if score stage_bonus_thread AzrTimerStack matches 304 run playsound block.iron_trapdoor.open block @a -79969.03 37.18 -100.00 1 0.7
+execute if score stage_bonus_thread AzrTimerStack matches 306 run playsound block.iron_trapdoor.open block @a -79969.03 37.18 -100.00 1 0.7
+execute if score stage_bonus_thread AzrTimerStack matches 308 run playsound block.iron_trapdoor.open block @a -79969.03 37.18 -100.00 1 0.7
+execute if score stage_bonus_thread AzrTimerStack matches 310 run playsound block.iron_trapdoor.open block @a -79969.03 37.18 -100.00 1 0.7
+
+
+execute if score stage_bonus_thread AzrTimerStack matches 315 run scoreboard players set stage_bonus Azr_system 0
+execute if score stage_bonus_thread AzrTimerStack matches 315 positioned -79969 33 -93 run kill @e[type=marker,tag=AzrMarker_stage_breakout_a,distance=..25]
+execute if score stage_bonus_thread AzrTimerStack matches 315 run scoreboard players set stage_bonus_thread AzrTimerStack 0
 
