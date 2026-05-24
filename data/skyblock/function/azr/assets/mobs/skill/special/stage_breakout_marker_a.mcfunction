@@ -8,3 +8,5 @@ execute if score @s rng1 matches 4 run summon evoker_fangs
 execute if score @s rng1 matches 6 run summon evoker_fangs
 execute if score @s rng1 matches 8 run summon evoker_fangs
 execute if score @s rng1 matches 9 run setblock ~ ~33 ~ spruce_log
+
+execute if score @s rng1 matches 10 run kill @s
