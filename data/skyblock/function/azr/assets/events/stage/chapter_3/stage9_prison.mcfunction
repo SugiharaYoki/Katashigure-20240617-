@@ -293,6 +293,7 @@ execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0
 execute positioned -79970 33 -95 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79976,y=33,z=-101,dx=14,dy=3,dz=14,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
 execute positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout_prep
+execute positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1..400}] store result score @s rng2 run random value 1..100
 
 
 
