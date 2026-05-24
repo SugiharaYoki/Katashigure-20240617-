@@ -3,8 +3,6 @@
 
 execute positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter] at @s store result score @s rng7 run random value 1..21
 
-execute if entity @n[tag=AzrielMarker_encounter,x=-79970,y=33,z=-95,distance=..1.7] run say hi
-execute if entity @n[tag=AzrielMarker_encounter,x=-79970,y=33,z=-95,distance=..1.7,scores={rng7=1..21}] run say hi2
 execute if entity @n[tag=AzrielMarker_encounter,x=-79970,y=33,z=-95,distance=..1.7,scores={rng7=1}] run summon marker ~00 34 ~00 {Tags:["AzrMarker_stage_breakout_a"]}
 execute if entity @n[tag=AzrielMarker_encounter,x=-79970,y=33,z=-95,distance=..1.7,scores={rng7=2}] run summon marker ~00 34 ~01 {Tags:["AzrMarker_stage_breakout_a"]}
 execute if entity @n[tag=AzrielMarker_encounter,x=-79970,y=33,z=-95,distance=..1.7,scores={rng7=3}] run summon marker ~00 34 ~02 {Tags:["AzrMarker_stage_breakout_a"]}
