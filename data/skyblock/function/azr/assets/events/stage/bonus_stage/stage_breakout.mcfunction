@@ -10,8 +10,11 @@ execute if score stage_bonus_thread AzrTimerStack matches 155 run bossbar remove
 
 execute positioned -79969 33 -93 as @e[type=marker,tag=AzrMarker_stage_breakout_a,distance=..25] run function skyblock:azr/assets/mobs/skill/special/stage_breakout_marker_a
 
+execute positioned -79975 34 -100 if score stage_bonus_thread AzrTimerStack matches 5 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus0
 
-
+execute positioned -79975 34 -100 if score stage_bonus_thread AzrTimerStack matches 15 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus2
+execute positioned -79975 34 -100 if score stage_bonus_thread AzrTimerStack matches 15 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus1
+execute positioned -79975 34 -100 if score stage_bonus_thread AzrTimerStack matches 15 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus0
 
 
 
