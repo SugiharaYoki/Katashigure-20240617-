@@ -16,8 +16,11 @@ execute if score stage_bonus_thread AzrTimerStack matches 15 positioned -79975 3
 execute if score stage_bonus_thread AzrTimerStack matches 15 positioned -79975 34 -100 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus1
 execute if score stage_bonus_thread AzrTimerStack matches 15 positioned -79975 34 -100 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus0
 
-execute if score stage_bonus_thread AzrTimerStack matches 25..280 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter] at @s store result score @s rng5 run random value 1..16
-execute if score stage_bonus_thread AzrTimerStack matches 25..280 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter] at @s store result score @s rng6 run random value 1..12
+execute if score stage_bonus_thread AzrTimerStack matches 25..300 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter] at @s store result score @s rng5 run random value 1..16
+execute if score stage_bonus_thread AzrTimerStack matches 25..300 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter] at @s store result score @s rng6 run random value 1..12
+execute if score stage_bonus_thread AzrTimerStack matches 125..300 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter] at @s store result score @s rng6 run random value 2..12
+execute if score stage_bonus_thread AzrTimerStack matches 225..300 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter] at @s store result score @s rng6 run random value 3..12
+execute if score stage_bonus_thread AzrTimerStack matches 285..300 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter] at @s store result score @s rng6 run random value 9..12
 
 execute if score stage_bonus_thread AzrTimerStack matches 25..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=1,rng5=1}] positioned -79971 34 -96 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
 execute if score stage_bonus_thread AzrTimerStack matches 25..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=1,rng5=2}] positioned -79971 34 -95 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
@@ -35,38 +38,6 @@ execute if score stage_bonus_thread AzrTimerStack matches 25..250 positioned -79
 execute if score stage_bonus_thread AzrTimerStack matches 25..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=1,rng5=14}] positioned -79968 34 -95 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
 execute if score stage_bonus_thread AzrTimerStack matches 25..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=1,rng5=15}] positioned -79968 34 -94 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
 execute if score stage_bonus_thread AzrTimerStack matches 25..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=1,rng5=16}] positioned -79968 34 -93 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 125..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=2,rng5=1}] positioned -79971 34 -96 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 125..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=2,rng5=2}] positioned -79971 34 -95 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 125..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=2,rng5=3}] positioned -79971 34 -94 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 125..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=2,rng5=4}] positioned -79971 34 -93 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 125..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=2,rng5=5}] positioned -79970 34 -96 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 125..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=2,rng5=6}] positioned -79970 34 -95 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 125..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=2,rng5=7}] positioned -79970 34 -94 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 125..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=2,rng5=8}] positioned -79970 34 -93 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 125..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=2,rng5=9}] positioned -79969 34 -96 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 125..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=2,rng5=10}] positioned -79969 34 -95 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 125..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=2,rng5=11}] positioned -79969 34 -94 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 125..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=2,rng5=12}] positioned -79969 34 -93 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 125..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=2,rng5=13}] positioned -79968 34 -96 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 125..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=2,rng5=14}] positioned -79968 34 -95 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 125..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=2,rng5=15}] positioned -79968 34 -94 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 125..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=2,rng5=16}] positioned -79968 34 -93 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 175..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=3,rng5=1}] positioned -79971 34 -96 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 175..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=3,rng5=2}] positioned -79971 34 -95 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 175..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=3,rng5=3}] positioned -79971 34 -94 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 175..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=3,rng5=4}] positioned -79971 34 -93 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 175..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=3,rng5=5}] positioned -79970 34 -96 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 175..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=3,rng5=6}] positioned -79970 34 -95 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 175..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=3,rng5=7}] positioned -79970 34 -94 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 175..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=3,rng5=8}] positioned -79970 34 -93 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 175..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=3,rng5=9}] positioned -79969 34 -96 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 175..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=3,rng5=10}] positioned -79969 34 -95 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 175..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=3,rng5=11}] positioned -79969 34 -94 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 175..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=3,rng5=12}] positioned -79969 34 -93 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 175..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=3,rng5=13}] positioned -79968 34 -96 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 175..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=3,rng5=14}] positioned -79968 34 -95 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 175..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=3,rng5=15}] positioned -79968 34 -94 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
-execute if score stage_bonus_thread AzrTimerStack matches 175..250 positioned -79970 33 -95 if entity @n[tag=AzrielMarker_encounter,scores={rng6=3,rng5=16}] positioned -79968 34 -93 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/random_1
 
 
 execute if score stage_bonus_thread AzrTimerStack matches 25 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,scores={rng2=1..25}] positioned -79973 34 -98 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/anchor_range3
@@ -101,7 +72,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 135 positioned -79970 
 execute if score stage_bonus_thread AzrTimerStack matches 135 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,scores={rng2=81..85}] positioned -79970 34 -95 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/anchor_range5
 execute if score stage_bonus_thread AzrTimerStack matches 135 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,scores={rng2=86..90}] positioned -79969 34 -95 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/anchor_range5
 execute if score stage_bonus_thread AzrTimerStack matches 135 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,scores={rng2=91..95}] positioned -79970 34 -94 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/anchor_range5
-execute if score stage_bonus_thread AzrTimerStack matches 135 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,scores={rng2=96..100}] positioned -79969 34 -94 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/anchor_rang5
+execute if score stage_bonus_thread AzrTimerStack matches 135 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,scores={rng2=96..100}] positioned -79969 34 -94 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/anchor_range5
 
 execute if score stage_bonus_thread AzrTimerStack matches 110 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,scores={rng2=1..33}] positioned -79975 34 -100 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus0
 execute if score stage_bonus_thread AzrTimerStack matches 110 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,scores={rng2=34..66}] positioned -79975 34 -100 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus1
@@ -118,11 +89,59 @@ execute if score stage_bonus_thread AzrTimerStack matches 165 positioned -79970 
 execute if score stage_bonus_thread AzrTimerStack matches 165 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,scores={rng2=81..85}] positioned -79970 34 -95 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/anchor_range5
 execute if score stage_bonus_thread AzrTimerStack matches 165 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,scores={rng2=86..90}] positioned -79969 34 -95 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/anchor_range5
 execute if score stage_bonus_thread AzrTimerStack matches 165 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,scores={rng2=91..95}] positioned -79970 34 -94 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/anchor_range5
-execute if score stage_bonus_thread AzrTimerStack matches 165 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,scores={rng2=96..100}] positioned -79969 34 -94 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/anchor_rang5
+execute if score stage_bonus_thread AzrTimerStack matches 165 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,scores={rng2=96..100}] positioned -79969 34 -94 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/anchor_range5
 
 execute if score stage_bonus_thread AzrTimerStack matches 185 positioned -79975 34 -100 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus0
 execute if score stage_bonus_thread AzrTimerStack matches 187 positioned -79975 34 -100 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus1
 
+
+
+execute if score stage_bonus_thread AzrTimerStack matches 100 positioned -79973 34 -98 positioned ~ ~ ~0 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_x
+execute if score stage_bonus_thread AzrTimerStack matches 101 positioned -79973 34 -98 positioned ~ ~ ~1 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_x
+execute if score stage_bonus_thread AzrTimerStack matches 102 positioned -79973 34 -98 positioned ~ ~ ~2 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_x
+execute if score stage_bonus_thread AzrTimerStack matches 103 positioned -79973 34 -98 positioned ~ ~ ~3 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_x
+execute if score stage_bonus_thread AzrTimerStack matches 113 positioned -79973 34 -98 positioned ~ ~ ~4 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_x
+execute if score stage_bonus_thread AzrTimerStack matches 114 positioned -79973 34 -98 positioned ~ ~ ~5 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_x
+execute if score stage_bonus_thread AzrTimerStack matches 115 positioned -79973 34 -98 positioned ~ ~ ~6 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_x
+execute if score stage_bonus_thread AzrTimerStack matches 116 positioned -79973 34 -98 positioned ~ ~ ~7 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_x
+
+execute if score stage_bonus_thread AzrTimerStack matches 150 positioned -79973 34 -98 positioned ~0 ~ ~ run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_z
+execute if score stage_bonus_thread AzrTimerStack matches 151 positioned -79973 34 -98 positioned ~1 ~ ~ run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_z
+execute if score stage_bonus_thread AzrTimerStack matches 152 positioned -79973 34 -98 positioned ~2 ~ ~ run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_z
+execute if score stage_bonus_thread AzrTimerStack matches 153 positioned -79973 34 -98 positioned ~3 ~ ~ run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_z
+execute if score stage_bonus_thread AzrTimerStack matches 163 positioned -79973 34 -98 positioned ~4 ~ ~ run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_z
+execute if score stage_bonus_thread AzrTimerStack matches 164 positioned -79973 34 -98 positioned ~5 ~ ~ run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_z
+execute if score stage_bonus_thread AzrTimerStack matches 165 positioned -79973 34 -98 positioned ~6 ~ ~ run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_z
+execute if score stage_bonus_thread AzrTimerStack matches 166 positioned -79973 34 -98 positioned ~7 ~ ~ run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_z
+
+execute if score stage_bonus_thread AzrTimerStack matches 200 positioned -79973 34 -98 positioned ~ ~ ~0 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_x
+execute if score stage_bonus_thread AzrTimerStack matches 201 positioned -79973 34 -98 positioned ~ ~ ~1 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_x
+execute if score stage_bonus_thread AzrTimerStack matches 202 positioned -79973 34 -98 positioned ~ ~ ~2 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_x
+execute if score stage_bonus_thread AzrTimerStack matches 203 positioned -79973 34 -98 positioned ~ ~ ~3 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_x
+execute if score stage_bonus_thread AzrTimerStack matches 213 positioned -79973 34 -98 positioned ~ ~ ~4 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_x
+execute if score stage_bonus_thread AzrTimerStack matches 214 positioned -79973 34 -98 positioned ~ ~ ~5 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_x
+execute if score stage_bonus_thread AzrTimerStack matches 215 positioned -79973 34 -98 positioned ~ ~ ~6 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_x
+execute if score stage_bonus_thread AzrTimerStack matches 216 positioned -79973 34 -98 positioned ~ ~ ~7 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_x
+
+execute if score stage_bonus_thread AzrTimerStack matches 210 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,scores={rng2=1..33}] positioned -79975 34 -100 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus0
+execute if score stage_bonus_thread AzrTimerStack matches 210 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,scores={rng2=34..66}] positioned -79975 34 -100 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus1
+execute if score stage_bonus_thread AzrTimerStack matches 210 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,scores={rng2=67..100}] positioned -79975 34 -100 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus2
+
+execute if score stage_bonus_thread AzrTimerStack matches 250 positioned -79973 34 -98 positioned ~0 ~ ~ run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_z
+execute if score stage_bonus_thread AzrTimerStack matches 251 positioned -79973 34 -98 positioned ~1 ~ ~ run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_z
+execute if score stage_bonus_thread AzrTimerStack matches 252 positioned -79973 34 -98 positioned ~2 ~ ~ run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_z
+execute if score stage_bonus_thread AzrTimerStack matches 253 positioned -79973 34 -98 positioned ~3 ~ ~ run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_z
+execute if score stage_bonus_thread AzrTimerStack matches 263 positioned -79973 34 -98 positioned ~4 ~ ~ run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_z
+execute if score stage_bonus_thread AzrTimerStack matches 264 positioned -79973 34 -98 positioned ~5 ~ ~ run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_z
+execute if score stage_bonus_thread AzrTimerStack matches 265 positioned -79973 34 -98 positioned ~6 ~ ~ run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_z
+execute if score stage_bonus_thread AzrTimerStack matches 266 positioned -79973 34 -98 positioned ~7 ~ ~ run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/line_mid8_z
+
+execute if score stage_bonus_thread AzrTimerStack matches 260 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,scores={rng2=1..33}] positioned -79975 34 -100 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus0
+execute if score stage_bonus_thread AzrTimerStack matches 260 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,scores={rng2=34..66}] positioned -79975 34 -100 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus1
+execute if score stage_bonus_thread AzrTimerStack matches 260 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,scores={rng2=67..100}] positioned -79975 34 -100 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus2
+execute if score stage_bonus_thread AzrTimerStack matches 280 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,scores={rng2=1..33}] positioned -79975 34 -100 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus0
+execute if score stage_bonus_thread AzrTimerStack matches 280 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,scores={rng2=34..66}] positioned -79975 34 -100 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus1
+execute if score stage_bonus_thread AzrTimerStack matches 280 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,scores={rng2=67..100}] positioned -79975 34 -100 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus2
 
 execute if score stage_bonus_thread AzrTimerStack matches 300 run title @a[tag=azrShowDialog] actionbar {text:"Extra Stage Clear",color:"green"}
 execute if score stage_bonus_thread AzrTimerStack matches 300 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_breakout
