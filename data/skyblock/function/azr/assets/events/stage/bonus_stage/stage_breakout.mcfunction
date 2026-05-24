@@ -16,6 +16,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 15 positioned -79975 3
 execute if score stage_bonus_thread AzrTimerStack matches 15 positioned -79975 34 -100 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus1
 execute if score stage_bonus_thread AzrTimerStack matches 15 positioned -79975 34 -100 run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout/outermost_minus0
 
+execute if score stage_bonus_thread AzrTimerStack matches 20 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter] at @s run scoreboard players set @s rng1 2
 execute if score stage_bonus_thread AzrTimerStack matches 25..300 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter] at @s store result score @s rng5 run random value 1..16
 execute if score stage_bonus_thread AzrTimerStack matches 25..300 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter] at @s store result score @s rng6 run random value 1..12
 execute if score stage_bonus_thread AzrTimerStack matches 125..300 positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter] at @s store result score @s rng6 run random value 1..8
