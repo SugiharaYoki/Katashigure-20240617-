@@ -163,6 +163,11 @@ execute if score stage_bonus_thread AzrTimerStack matches 304 run playsound bloc
 execute if score stage_bonus_thread AzrTimerStack matches 306 run playsound block.iron_trapdoor.open block @a -79969.03 37.18 -100.00 5 0.7
 execute if score stage_bonus_thread AzrTimerStack matches 308 run playsound block.iron_trapdoor.open block @a -79969.03 37.18 -100.00 5 0.7
 execute if score stage_bonus_thread AzrTimerStack matches 310 run playsound block.iron_trapdoor.open block @a -79969.03 37.18 -100.00 5 0.7
+execute if score stage_bonus_thread AzrTimerStack matches 302 run playsound block.piston.contract block @a -79969.03 37.18 -100.00 5 0.7
+execute if score stage_bonus_thread AzrTimerStack matches 304 run playsound block.piston.contract block @a -79969.03 37.18 -100.00 5 0.7
+execute if score stage_bonus_thread AzrTimerStack matches 306 run playsound block.piston.contract block @a -79969.03 37.18 -100.00 5 0.7
+execute if score stage_bonus_thread AzrTimerStack matches 308 run playsound block.piston.contract block @a -79969.03 37.18 -100.00 5 0.7
+execute if score stage_bonus_thread AzrTimerStack matches 310 run playsound block.piston.contract block @a -79969.03 37.18 -100.00 5 0.7
 
 
 execute if score stage_bonus_thread AzrTimerStack matches 315 run scoreboard players set stage_bonus Azr_system 0
