@@ -236,11 +236,10 @@ execute positioned -79910 47 -130 unless entity @n[tag=AzrielMarker_encounter,di
 execute positioned -79910 47 -130 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1..400}] run scoreboard players add @s rng1 1
 execute positioned -79910 47 -130 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1..400}] run function skyblock:azr/assets/events/stage/chapter_3/area_prison/anomaly_1
 
-
-#核心拉杆
+#核心拉杆 异象2
 execute positioned -79867 48 -109 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if block ~ ~ ~ minecraft:lever[powered=true] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1..500}] run scoreboard players add @s rng1 1
-execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1..500}] run function skyblock:azr/assets/events/stage/chapter_3/area_prison/anomaly_2
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1..400}] run scoreboard players add @s rng1 1
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1..400}] run function skyblock:azr/assets/events/stage/chapter_3/area_prison/anomaly_2
 
 
 #原stage12铁门
