@@ -752,8 +752,7 @@ setblock -79878 41 -131 lever[face=floor,facing=east,powered=false]
 setblock -79877 46 -142 minecraft:polished_andesite_slab
 fill -79883 40 -138 -79883 42 -140 minecraft:iron_bars
 
-#stage12开门处
-fill -79873 47 -110 -79873 48 -108 air
+#stage11开门处
 fill -79867 51 -130 -79867 48 -127 iron_bars
 
 
