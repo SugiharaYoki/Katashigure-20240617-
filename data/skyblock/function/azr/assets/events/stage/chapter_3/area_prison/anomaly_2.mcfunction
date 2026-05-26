@@ -42,6 +42,10 @@ execute as @s[scores={rng1=91}] positioned -79879 47 -109 run function skyblock:
 execute as @s[scores={rng1=91}] positioned -79879 47 -109 run function skyblock:azr/assets/mobs/pillager_friendly
 execute as @s[scores={rng1=91}] positioned -79879 47 -109 run function skyblock:azr/assets/mobs/healer_friendly
 execute as @s[scores={rng1=91}] positioned -79879 47 -109 run function skyblock:azr/assets/mobs/healer_friendly
+
+execute as @s[scores={rng1=93}] positioned -79879 47 -109 as @e[tag=AzrielNPC_Divineforce,distance=15..80,tag=!AzrielNPC_stage9_prison_entry_conversation1,tag=!AzrielMob_ch3_middlesidegate_swordman] run tp @s -79890 40 -140
+
+
 execute as @s[scores={rng1=91}] positioned -79879 47 -109 run tag @n[tag=AzrielNPC_Divineforce,type=pillager,distance=0..2] add AzrielNPC_stage9_prison_corelever_conversation1
 execute as @s[scores={rng1=91}] as @n[tag=AzrielMob_ch3_resting_swordman] at @s run tp @e[tag=AzrielNPC_Divineforce,distance=..8,type=vindicator] -79879 47 -109
 execute as @s[scores={rng1=91}] run fill -79876 47 -107 -79876 52 -111 air
