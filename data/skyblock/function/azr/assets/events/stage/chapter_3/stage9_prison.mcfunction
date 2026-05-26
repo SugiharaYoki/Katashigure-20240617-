@@ -284,10 +284,11 @@ execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] positioned -79879 47 -109 run tag @n[tag=AzrielNPC_Divineforce,type=pillager,distance=0..2] add AzrielNPC_stage9_prison_corelever_conversation1
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] as @n[tag=AzrielMob_ch3_resting_swordman] at @s run tp @e[tag=AzrielNPC_Divineforce,distance=..8,type=vindicator] -79879 47 -109
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] run fill -79876 47 -107 -79876 52 -111 air
-execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=81}] run fill -79867 51 -130 -79867 48 -127 air
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=90}] as @a[tag=azrShowDialog] at @s run tp @s -79864 47 -109
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=92}] run tellraw @a[tag=azrShowDialog,distance=0..19] [{text:"剑士：",color:"green",bold:1b},{bold: false,text:"\n“我快顶不住了！！”",color:"white"}]
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=102}] run tellraw @a[tag=azrShowDialog,distance=0..19] [{text:"牧师：",color:"green",bold:1b},{bold: false,text:"\n“大家快撤退，不要硬碰硬……！”",color:"white"}]
+#原stage12铁门现可开启
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=102}] positioned -79867 49 -128 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=113}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎来了……！爱理莎女士！帮帮我们！”",color:"white"}]
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=133}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“怪物突然就从我们面前出现，我们被打得措手不及！！”",color:"white"}]
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=160..161}] at @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] if entity @n[tag=AzrielMob,distance=..6] run scoreboard players set @s rng1 160
@@ -296,6 +297,20 @@ execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=194}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“该死，什么时候才能回到正常的日子啊……”",color:"white"}]
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=294}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎女士，您还在啊。牢房区域的怪物可能会从任何角落突然窜出来，一定要当心。”",color:"white"}]
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=394}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“谢谢您保护我们，爱理莎女士。救命之恩，没齿难忘。”",color:"white"}]
+
+#原stage12铁门
+execute positioned -79867 49 -128 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
+execute positioned -79867 49 -128 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3..4}] unless entity @a[tag=azrPlayer,distance=..7] run scoreboard players set @s rng1 3
+
+
+
+
+
+
+
+
+
+
 
 #STAGE BREAKOUT
 execute positioned -79970 33 -95 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79976,y=33,z=-101,dx=14,dy=3,dz=14,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
