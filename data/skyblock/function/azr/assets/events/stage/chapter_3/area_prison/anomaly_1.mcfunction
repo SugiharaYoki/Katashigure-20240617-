@@ -1,4 +1,4 @@
-execute if score @s rng1 matches 1 as @a[x=-79910,y=47,z=-130,dx=5,dy=5,dz=5,tag=azrPlayer] at @s run tp @s ~ ~-66 ~
+execute if score @s rng1 matches 1 as @a[x=-79913,y=46,z=-131,dx=8,dy=6,dz=7,tag=azrPlayer] at @s run tp @s ~ ~-66 ~
 
 
 execute if score @s rng1 matches 30..35 run scoreboard players set @s rng1 28
