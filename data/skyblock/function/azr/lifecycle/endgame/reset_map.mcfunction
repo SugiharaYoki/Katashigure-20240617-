@@ -755,6 +755,10 @@ fill -79883 40 -138 -79883 42 -140 minecraft:iron_bars
 #stage11开门处
 fill -79867 51 -130 -79867 48 -127 iron_bars
 
+#牢房内区大门
+fill -79889 43 -154 -79892 40 -154 iron_bars
+
+
 
 #第四章 stage13
   #隐藏内房
