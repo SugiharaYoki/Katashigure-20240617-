@@ -270,7 +270,7 @@ execute positioned -79876 49 -141 as @n[tag=AzrielMarker_encounter,distance=0..0
 execute positioned -79876 49 -141 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] as @a[distance=..40,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音：",color:"red",bold:1b},{text:"\n“那女孩子，又躲在扫除间哭了。”",color:"white",bold: false}]
 execute positioned -79876 49 -141 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=14}] as @a[distance=..40,tag=azrShowDialog] at @s run tellraw @s [{text:"柔和的嗓音：",color:"red",bold:1b},{text:"\n“她真的太可怜了吧。最近她很明显是被人欺负了吧。我们不该想办法帮助她吗？”",color:"white",bold: false}]
 execute positioned -79876 49 -141 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=26}] as @a[distance=..40,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音：",color:"red",bold:1b},{text:"\n“现在的她也并不清楚自己为什么总受欺凌。我会尝试教她一些为人处世的道理。可惜了，原本这都该是她父母的职责……”",color:"white",bold: false}]
-execute positioned -79876 49 -141 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=39}] as @a[distance=..40,tag=azrShowDialog] at @s run tellraw @s [{text:"柔和的嗓音：",color:"red",bold:1b},{text:"\n“那两个人真的太绝情了，虽然发现不是亲生的，但再怎么也养育了十多年啊，就这样不再关心她……真的好吗？”",color:"white",bold: false}]
+execute positioned -79876 49 -141 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=39}] as @a[distance=..40,tag=azrShowDialog] at @s run tellraw @s [{text:"柔和的嗓音：",color:"red",bold:1b},{text:"\n“那两个人真的太绝情了，虽然发现不是亲生的，但再怎么也养育了十多年啊，就这样不关心她……真的好吗？”",color:"white",bold: false}]
 
 
 
