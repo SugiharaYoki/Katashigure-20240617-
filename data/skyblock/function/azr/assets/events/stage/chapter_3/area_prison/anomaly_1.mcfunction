@@ -15,7 +15,7 @@ execute if score @s rng1 matches 76 as @a[distance=..200,tag=azrShowDialog] at @
 execute if score @s rng1 matches 52 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"陌生语调：",color:"aqua",bold:1b},{text:"\n“稍等，妈妈。让我再读完这一页。”",color:"white",bold: false}]
 
 execute if score @s rng1 matches 66 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“书本忘在书房了？要不要妈妈帮你取回来？”",color:"white",bold: false}]
-execute if score @s rng1 matches 74 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"陌生语调：",color:"aqua",bold:1b},{text:"\n“我自己去拿。”",color:"white",bold: false}]
+execute if score @s rng1 matches 72 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"陌生语调：",color:"aqua",bold:1b},{text:"\n“我自己去拿。”",color:"white",bold: false}]
 execute if score @s rng1 matches 82 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"牵记的男声：",color:"green",bold:1b},{text:"\n“莉茜从小就不怕黑，真勇敢。”",color:"white",bold: false}]
 execute if score @s rng1 matches 90 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"陌生语调：",color:"aqua",bold:1b},{text:"\n“唔……‘最该害怕的不是黑暗，而是黑暗里面什么都没有。’”",color:"white",bold: false}]
 execute if score @s rng1 matches 98 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"牵记的男声：",color:"green",bold:1b},{text:"\n“又是书中的句子？”",color:"white",bold: false}]
