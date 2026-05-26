@@ -725,7 +725,8 @@ fill -79975 33 -89 -79964 33 -100 spruce_log replace minecraft:crimson_stem
 fill -79970 34 -101 -79969 38 -101 minecraft:polished_andesite_stairs[facing=north]
 fill -79970 34 -96 -79969 38 -100 air
 
-
+#异象1
+fill -79887 40 -135 -79887 47 -135 air replace ladder
 
 #大铁门额外区域
 fill -79927 50 -130 -79927 48 -127 minecraft:netherite_block
