@@ -1,5 +1,5 @@
 execute if score @s rng1 matches 1 as @a[x=-79913,y=46,z=-131,dx=8,dy=6,dz=7,tag=azrPlayer] at @s run tp @s ~ ~-66 ~
-
+execute if score @s rng1 matches 1 run scoreboard players set @e[tag=AzrielNPC_Divineforce_Followable] AzrielNPC_FollowInterest 0
 
 execute if score @s rng1 matches 30..35 run scoreboard players set @s rng1 28
 execute if score @s rng1 matches 28..32 if entity @a[x=-79890,y=-18,z=-160,dx=5,dy=5,dz=29,tag=azrPlayer] run scoreboard players set @s rng1 36

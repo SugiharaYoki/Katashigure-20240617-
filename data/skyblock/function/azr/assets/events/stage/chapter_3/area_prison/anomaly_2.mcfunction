@@ -1,6 +1,7 @@
 execute as @s[scores={rng1=1}] as @a[distance=..7,tag=azrShowDialog] at @s run tp @s ~ ~-50 ~
 execute as @s[scores={rng1=1}] as @a[distance=7..,tag=azrShowDialog] at @s run tp @s -79864 -3 -109
 execute as @s[scores={rng1=1}] as @a[tag=azrShowDialog] at @s run stopsound @a
+execute as @s[scores={rng1=1}] run scoreboard players set @e[tag=AzrielNPC_Divineforce_Followable] AzrielNPC_FollowInterest 0
 execute as @s[scores={rng1=10}] as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 0.7
 execute as @s[scores={rng1=10}] as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",color:"yellow",bold:1b},{text:"\n“你，太靠近了。”",color:"white",bold: false}]
 execute as @s[scores={rng1=21}] as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 0.7
