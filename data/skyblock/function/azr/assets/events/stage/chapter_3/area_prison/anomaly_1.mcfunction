@@ -2,7 +2,7 @@ execute if score @s rng1 matches 1 as @a[x=-79910,y=47,z=-130,dx=5,dy=5,dz=5,tag
 
 
 execute if score @s rng1 matches 30..35 run scoreboard players set @s rng1 28
-execute if score @s rng1 matches 28.. if entity @a[x=-79890,y=-18,z=-160,dx=5,dy=5,dz=26,tag=azrPlayer] run scoreboard players set @s rng1 36
+execute if score @s rng1 matches 28..32 if entity @a[x=-79890,y=-18,z=-160,dx=5,dy=5,dz=26,tag=azrPlayer] run scoreboard players set @s rng1 36
 
 execute if score @s rng1 matches 38 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“莉茜，该吃晚饭啦。”",color:"white",bold: false}]
 execute if score @s rng1 matches 46 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“已经读了一天了吧。”",color:"white",bold: false}]
