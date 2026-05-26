@@ -4,7 +4,7 @@ execute if score @s AzrielNPC_ConversationTimer matches 8 unless entity @a[dista
 execute if score @s AzrielNPC_ConversationTimer matches 10 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
 execute if score @s AzrielNPC_ConversationTimer matches 10 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“……爱理莎小姐。我来晚了，抱歉。”",color:"white"}]
 execute if score @s AzrielNPC_ConversationTimer matches 24 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
-execute if score @s AzrielNPC_ConversationTimer matches 24 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“权之残影大人让我告诉你，上2楼，走天桥去牢房的东翼。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 24 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“权之残影大人让我告诉你，从这里的楼梯上去，打开牢房内区大门的控制杆就在东翼二楼。”",color:"white"}]
 execute if score @s AzrielNPC_ConversationTimer matches 24 run scoreboard players set @s AzrielNPC_ConversationTimer 40
 
 
