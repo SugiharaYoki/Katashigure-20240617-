@@ -32,3 +32,4 @@ execute if score @s rng1 matches 20.. as @a[x=-79900,y=-18,z=-163,dx=5,dy=5,dz=5
 execute if score @s rng1 matches 390..392 run stopsound @a[tag=azrPlayer] music minecraft:bookstore
 execute if score @s rng1 matches 20.. as @a[x=-79900,y=-18,z=-163,dx=5,dy=5,dz=5,tag=azrPlayer] at @s run tp @s ~-10 ~66 ~33
 
+execute if score @s rng1 matches 399 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"你：",color:"aqua"},{text:"\n“刚刚的画面……为什么让我看到这些？是某种魔法吗……”",color:"white"}]
