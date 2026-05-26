@@ -67,3 +67,6 @@ execute if score @s AzrielNPC_ConversationTimer matches 134 run playsound minecr
 execute if score @s AzrielNPC_ConversationTimer matches 134 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工程兵 赵勿验：",color:"green",bold:1b},{bold: false,text:"\n“他们真的杀光了怪物。他们做到了。”",color:"white"}]
 execute if score @s AzrielNPC_ConversationTimer matches 154 run playsound minecraft:entity.vindicator.ambient master @a ~ ~ ~ 2 1.0
 execute if score @s AzrielNPC_ConversationTimer matches 154 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"工程兵 赵勿验：",color:"green",bold:1b},{bold: false,text:"\n“真蠢啊，明明可以先撤退的，唉。……你们拼死想要保护的一般工作人员都活着。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 154 run effect clear @s slowness
+execute if score @s AzrielNPC_ConversationTimer matches 154 run effect clear @s resistance
+execute if score @s AzrielNPC_ConversationTimer matches 154 run attribute @s knockback_resistance base set 0.5
