@@ -295,6 +295,10 @@ execute positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] run function skyblock:azr/assets/events/stage/bonus_stage/stage_breakout_prep
 execute positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1..400}] store result score @s rng2 run random value 1..100
 
+#异象1
+execute positioned -79910 47 -130 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79910,y=47,z=-130,dx=5,dy=5,dz=5,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79910 47 -130 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
+execute positioned -79910 47 -130 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1..300}] run function skyblock:azr/assets/events/stage/chapter_3/area_prison/anomaly_1
 
 
 #随机野怪
