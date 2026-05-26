@@ -17,6 +17,8 @@ execute if score @s rng1 matches 1 if score @s rng2 matches 1..30 run tag @s add
 execute if score @s rng1 matches 2 if score @s rng2 matches 1..60 run tag @s add AZR_refresh_cost_Cancelled
 execute if score @s rng1 matches 3 if score @s rng2 matches 1..90 run tag @s add AZR_refresh_cost_Cancelled
 execute if entity @s[tag=AZR_refresh_cost_Cancelled] run tellraw @s [{text:"节制天平：本次刷新不会消耗绿宝石",color: "#9eb9de"}]
+execute if entity @s[tag=AZR_refresh_cost_Cancelled] run tag @s remove azrShopOnUse
+execute if entity @s[tag=AZR_refresh_cost_Cancelled] run tag @s add azrShopRefresh
 execute if entity @s[tag=!AZR_refresh_cost_Cancelled] run function skyblock:azr/system/shop/refresh_cost
 
 tag @s remove AZR_refresh_cost_Cancelled
