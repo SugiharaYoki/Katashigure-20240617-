@@ -211,6 +211,22 @@ execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0
 execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=46}] as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 0.7
 execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=46}] as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",color:"yellow",bold:1b},{text:"\n“胜者，亦是败者。”",color:"white",bold: false}]
 
+#尖刺陷阱后生成怪物
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=23}] positioned -79901 48 -115 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=23}] positioned -79901 48 -116 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=23}] positioned -79901 48 -117 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=26}] positioned -79901 48 -115 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=26}] positioned -79901 48 -116 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=26}] positioned -79901 48 -117 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=28}] positioned -79901 48 -116 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_armor","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=36}] positioned -79901 48 -115 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=36}] positioned -79901 48 -116 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=36}] positioned -79901 48 -117 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+
 #牢房中段
 execute positioned -79924.06 48.00 -127.04 unless entity @n[tag=AzrielMob_ch3_middlesidegate_swordman,distance=..23,type=vindicator] run function skyblock:azr/assets/mobs/sword_friendly
 execute positioned -79924.06 48.00 -127.04 unless entity @n[tag=AzrielMob_ch3_middlesidegate_swordman,distance=..23,type=vindicator] run tag @n[type=vindicator,distance=0..2] add AzrielMob_ch3_middlesidegate_swordman
