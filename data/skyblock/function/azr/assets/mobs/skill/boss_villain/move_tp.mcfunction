@@ -1,34 +1,57 @@
 
-execute if score @s rng8 matches 2 run playsound minecraft:entity.evoker.cast_spell hostile @a ~ ~ ~ 1 1.3
-execute if score @s rng8 matches 2 run particle minecraft:flame ~ ~0.3 ~ 0.2 0 0.2 0 20
-execute if score @s rng8 matches 2 run effect give @s slowness 1 9 true
+execute if score @s rng8 matches 3 store result score @s rng3 run random value 1..16
 
-execute if score @s rng8 matches 22 run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_marker","AzrielMob_mob_marker"]}
+execute if score @s rng8 matches 3 if score @s rng3 matches 1 run tp @s -79862 49 -124 facing entity @p[tag=azrPlayer,distance=..60] eyes
+execute if score @s rng8 matches 3 if score @s rng3 matches 2 run tp @s -79864 48 -130 facing entity @p[tag=azrPlayer,distance=..60] eyes
+execute if score @s rng8 matches 3 if score @s rng3 matches 3 run tp @s -79860 48 -133 facing entity @p[tag=azrPlayer,distance=..60] eyes
+execute if score @s rng8 matches 3 if score @s rng3 matches 4 run tp @s -79853 49 -132 facing entity @p[tag=azrPlayer,distance=..60] eyes
+execute if score @s rng8 matches 3 if score @s rng3 matches 5 run tp @s -79847 49 -131 facing entity @p[tag=azrPlayer,distance=..60] eyes
+execute if score @s rng8 matches 3 if score @s rng3 matches 6 run tp @s -79841 50 -129 facing entity @p[tag=azrPlayer,distance=..60] eyes
+execute if score @s rng8 matches 3 if score @s rng3 matches 7 run tp @s -79843 49 -124 facing entity @p[tag=azrPlayer,distance=..60] eyes
+execute if score @s rng8 matches 3 if score @s rng3 matches 8 run tp @s -79851 49 -123 facing entity @p[tag=azrPlayer,distance=..60] eyes
+execute if score @s rng8 matches 3 if score @s rng3 matches 9 run tp @s -79851 48 -129 facing entity @p[tag=azrPlayer,distance=..60] eyes
+execute if score @s rng8 matches 3 if score @s rng3 matches 10 run tp @s -79856 48 -126 facing entity @p[tag=azrPlayer,distance=..60] eyes
+execute if score @s rng8 matches 3 if score @s rng3 matches 11 run tp @s -79860 48 -130 facing entity @p[tag=azrPlayer,distance=..60] eyes
+execute if score @s rng8 matches 3 if score @s rng3 matches 12 run tp @s -79851 48 -126 facing entity @p[tag=azrPlayer,distance=..60] eyes
+execute if score @s rng8 matches 3 if score @s rng3 matches 13 run tp @s -79844 49 -130 facing entity @p[tag=azrPlayer,distance=..60] eyes
+execute if score @s rng8 matches 3 if score @s rng3 matches 14 run tp @s -79841 49 -132 facing entity @p[tag=azrPlayer,distance=..60] eyes
+execute if score @s rng8 matches 3 if score @s rng3 matches 15 run tp @s -79850 48 -133 facing entity @p[tag=azrPlayer,distance=..60] eyes
+execute if score @s rng8 matches 3 if score @s rng3 matches 16 run tp @s -79856 48 -131 facing entity @p[tag=azrPlayer,distance=..60] eyes
 
-execute if score @s rng8 matches 42 run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_marker","AzrielMob_mob_marker"]}
-execute if score @s rng8 matches 72 run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_marker","AzrielMob_mob_marker"]}
 
-execute if score @s[scores={Health=110..}] rng8 matches 30 run scoreboard players set @s rng8 81
-execute if score @s[scores={Health=40..}] rng8 matches 50 run scoreboard players set @s rng8 81
 
-execute if score @s rng8 matches 82.. store result score @s rng3 run random value 12..16
-execute if score @s[scores={Health=..120}] rng8 matches 82.. store result score @s rng3 run random value 8..12
-execute if score @s[scores={Health=..80}] rng8 matches 82.. store result score @s rng3 run random value 4..8
-execute if score @s[scores={Health=..40}] rng8 matches 82.. store result score @s rng3 run random value 1..4
-execute if score @s rng8 matches 82.. run scoreboard players set @s rng2 0
-execute if score @s rng8 matches 82.. if score @s rng3 matches 1 run scoreboard players set @s rng8 0
-execute if score @s rng8 matches 82.. if score @s rng3 matches 2 run scoreboard players set @s rng8 -5
-execute if score @s rng8 matches 82.. if score @s rng3 matches 3 run scoreboard players set @s rng8 -10
-execute if score @s rng8 matches 82.. if score @s rng3 matches 4 run scoreboard players set @s rng8 -13
-execute if score @s rng8 matches 82.. if score @s rng3 matches 5 run scoreboard players set @s rng8 -16
-execute if score @s rng8 matches 82.. if score @s rng3 matches 6 run scoreboard players set @s rng8 -20
-execute if score @s rng8 matches 82.. if score @s rng3 matches 7 run scoreboard players set @s rng8 -22
-execute if score @s rng8 matches 82.. if score @s rng3 matches 8 run scoreboard players set @s rng8 -24
-execute if score @s rng8 matches 82.. if score @s rng3 matches 9 run scoreboard players set @s rng8 -26
-execute if score @s rng8 matches 82.. if score @s rng3 matches 10 run scoreboard players set @s rng8 -28
-execute if score @s rng8 matches 82.. if score @s rng3 matches 11 run scoreboard players set @s rng8 -30
-execute if score @s rng8 matches 82.. if score @s rng3 matches 12 run scoreboard players set @s rng8 -33
-execute if score @s rng8 matches 82.. if score @s rng3 matches 13 run scoreboard players set @s rng8 -35
-execute if score @s rng8 matches 82.. if score @s rng3 matches 14 run scoreboard players set @s rng8 -37
-execute if score @s rng8 matches 82.. if score @s rng3 matches 15 run scoreboard players set @s rng8 -41
-execute if score @s rng8 matches 82.. if score @s rng3 matches 16 run scoreboard players set @s rng8 -43
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^ ^1.3 ^5 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^ ^1.3 ^6 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^ ^1.3 ^7 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^ ^1.3 ^8 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^ ^1.3 ^9 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^ ^1.3 ^10 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^ ^1.3 ^-5 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^ ^1.3 ^-6 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^ ^1.3 ^-7 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^ ^1.3 ^-8 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^ ^1.3 ^-9 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^ ^1.3 ^-10 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^5 ^1.3 ^ 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^6 ^1.3 ^ 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^7 ^1.3 ^ 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^8 ^1.3 ^ 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^9 ^1.3 ^ 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^10 ^1.3 ^ 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^-5 ^1.3 ^ 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^-6 ^1.3 ^ 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^-7 ^1.3 ^ 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^-8 ^1.3 ^ 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^-9 ^1.3 ^ 0 0 0 0 1
+execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^-10 ^1.3 ^ 0 0 0 0 1
+
+execute if score @s rng8 matches 5.. if entity @a[tag=azrPlayer,distance=..7] run scoreboard players add @s rng8 1
+execute if score @s rng8 matches 5.. if entity @a[tag=azrPlayer,distance=..6] run scoreboard players add @s rng8 2
+execute if score @s rng8 matches 5.. if entity @a[tag=azrPlayer,distance=..5] run scoreboard players add @s rng8 4
+execute if score @s rng8 matches 5.. if entity @a[tag=azrPlayer,distance=..4] run scoreboard players add @s rng8 4
+execute if score @s rng8 matches 5.. if entity @a[tag=azrPlayer,distance=..3] run scoreboard players add @s rng8 4
+
+execute if score @s rng8 matches 5.. store result score @s rng3 run data get entity @s HurtTime
+
+execute if score @s[scores={rng3=1..}] rng8 matches 5.. run scoreboard players add @s rng8 18
+execute if score @s[scores={rng3=1..}] rng8 matches 5.. run scoreboard players set @s rng3 0

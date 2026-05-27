@@ -47,7 +47,7 @@ execute positioned -79845 48 -128 store result bossbar azr:boss_hp_bar_villain v
 
     execute as @n[tag=AzrielBossVillain] at @s run scoreboard players add @s rng8 1
     execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=1..}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
-    execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={rng2=1..6}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_villain/attack_fire
+    execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={rng2=1..6}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_villain/move_tp
 
     execute as @n[tag=AzrielBossVillain] at @s if entity @s[scores={Health=180..}] run scoreboard players set @s rng8 -20
     execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={rng2=5..6}] rng8 matches 23.. run scoreboard players set @s rng8 83
