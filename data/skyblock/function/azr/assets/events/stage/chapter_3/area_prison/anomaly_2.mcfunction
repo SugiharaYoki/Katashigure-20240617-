@@ -13,6 +13,11 @@ execute as @s[scores={rng1=46}] as @a[distance=..200,tag=azrShowDialog] at @s ru
 execute as @s[scores={rng1=46}] as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",color:"yellow",bold:1b},{text:"\n“安德拉伦恩选中你来这牢房深处，是为了让你吸引怪物的注意。你足够强大，也足够……引人注目。”",color:"white",bold: false}]
 execute as @s[scores={rng1=60}] as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 0.7
 execute as @s[scores={rng1=60}] as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",color:"yellow",bold:1b},{text:"\n“可你居然是心甘情愿的。就好像你根本不在乎自己会不会死亡一样。”",color:"white",bold: false}]
+
+execute as @s[scores={rng1=70}] run fill -79861 -4 -103 -79873 -4 -115 barrier
+execute as @s[scores={rng1=70}] as @a[distance=..200] at @s run playsound garden2.chapter_title master @s ~ ~ ~ 100 1.0
+execute as @s[scores={rng1=70}] run particle large_smoke -79867 -3 -109 3 0.5 3 0.08 500
+
 execute as @s[scores={rng1=72}] as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 0.7
 execute as @s[scores={rng1=72}] as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",color:"yellow",bold:1b},{text:"\n“你该为自己而活，爱理莎。”",color:"white",bold: false}]
 execute as @s[scores={rng1=81}] as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 0.7
@@ -54,6 +59,8 @@ execute as @s[scores={rng1=101}] run kill @n[tag=AzrielMob_sonic_eye_lord_item_d
 execute as @s[scores={rng1=91}] positioned -79879 47 -109 run tag @n[tag=AzrielNPC_Divineforce,type=pillager,distance=0..2] add AzrielNPC_stage9_prison_corelever_conversation1
 execute as @s[scores={rng1=91}] as @n[tag=AzrielMob_ch3_resting_swordman] at @s run tp @e[tag=AzrielNPC_Divineforce,distance=..8,type=vindicator] -79879 47 -109
 execute as @s[scores={rng1=91}] run fill -79876 47 -107 -79876 52 -111 air
+execute as @s[scores={rng1=96}] run fill -79861 -4 -103 -79873 -4 -115 air
+execute as @s[scores={rng1=96}] run effect give @a[tag=azrShowDialog] slow_falling 1 0 true
 execute as @s[scores={rng1=100}] as @a[tag=azrShowDialog] at @s run tp @s -79864 47 -109
 execute as @s[scores={rng1=102}] run tellraw @a[tag=azrShowDialog,distance=0..19] [{text:"剑士：",color:"green",bold:1b},{bold: false,text:"\n“我快顶不住了！！”",color:"white"}]
 execute as @s[scores={rng1=112}] run tellraw @a[tag=azrShowDialog,distance=0..19] [{text:"牧师：",color:"green",bold:1b},{bold: false,text:"\n“大家快撤退，不要硬碰硬……！”",color:"white"}]

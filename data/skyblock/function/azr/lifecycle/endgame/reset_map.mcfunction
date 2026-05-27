@@ -746,6 +746,8 @@ item replace block -79957 46 -158 container.14 with flint 1
 #核心拉杆
 setblock -79867 48 -109 lever[face=floor,facing=east,powered=false]
 setblock -79867 -2 -109 lever[face=floor,facing=east,powered=true]
+fill -79861 -4 -103 -79873 -4 -115 black_concrete
+
 
 #原breakout
 setblock -79878 41 -131 lever[face=floor,facing=east,powered=false]
