@@ -11,7 +11,7 @@ execute if score @s rng9 matches 2860.. run scoreboard players set @s rng9 0
 #EVENT
 
 execute if score @s AzrEntityTimer matches 4..5 run scoreboard players set @s AzrEntityTimer 4
-execute if score @s AzrEntityTimer matches 4..5 as @n[tag=AzrielBossVillain,type=zombie,distance=..50] at @s if entity @a[tag=azrPlayer,distance=..6] run scoreboard players set @s AzrEntityTimer 6
+execute if score @s AzrEntityTimer matches 4..5 as @n[tag=AzrielBossVillain,type=villager,distance=..50] at @s if entity @a[tag=azrPlayer,distance=..6] run scoreboard players set @s AzrEntityTimer 6
 
 execute if score @s AzrEntityTimer matches 8 run fill -79867 51 -130 -79867 51 -127 iron_bars
 execute if score @s AzrEntityTimer matches 9 run fill -79867 50 -130 -79867 50 -127 iron_bars
@@ -33,7 +33,7 @@ execute if score @s AzrEntityTimer matches 51 positioned -79845 48 -128 run boss
 execute if score @s AzrEntityTimer matches 51 positioned -79845 48 -128 run bossbar set azr:boss_hp_bar_villain max 200
 execute if score @s AzrEntityTimer matches 51 positioned -79845 48 -128 run bossbar set azr:boss_hp_bar_villain players @a[tag=azrShowDialog]
 
-execute positioned -79845 48 -128 as @n[tag=AzrielBossVillain,type=zombie,distance=..50] store result score @s Health run data get entity @s Health
+execute positioned -79845 48 -128 as @n[tag=AzrielBossVillain,type=villager,distance=..50] store result score @s Health run data get entity @s Health
 execute positioned -79845 48 -128 store result bossbar azr:boss_hp_bar_villain value run scoreboard players get @n[tag=AzrielBossVillain] Health
 
 
