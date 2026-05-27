@@ -26,6 +26,8 @@ execute if score @s AzrEntityTimer matches 22 run tellraw @a[distance=..40,tag=a
 execute if score @s AzrEntityTimer matches 34 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
 execute if score @s AzrEntityTimer matches 34 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“我靠，非得现在和我打吗？行呗行呗，那老子就让你和‘它们’玩玩。”",color:"white",bold: false}]
 
+execute if score @s AzrEntityTimer matches 64 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
+execute if score @s AzrEntityTimer matches 64 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“这是由我拟造的型影，它们可刀枪不入！虽然只会存在一小段时间。”",color:"white",bold: false}]
 
 
 execute if score @s AzrEntityTimer matches 51 positioned -79845 48 -128 run bossbar add azr:boss_hp_bar_villain "避芒藏刃的无所在无所不在之恶徒 - 晦怨贤士"
@@ -36,8 +38,8 @@ execute if score @s AzrEntityTimer matches 51 positioned -79845 48 -128 run boss
 execute positioned -79845 48 -128 as @n[tag=AzrielBossVillain,type=villager,distance=..50] store result score @s Health run data get entity @s Health
 execute positioned -79845 48 -128 store result bossbar azr:boss_hp_bar_villain value run scoreboard players get @n[tag=AzrielBossVillain] Health
 
-execute if score @s AzrEntityTimer matches 120 run effect clear @s resistance
-execute if score @s AzrEntityTimer matches 121 run effect give @s resistance 50 2 true
+execute if score @s AzrEntityTimer matches 61 run effect clear @s resistance
+execute if score @s AzrEntityTimer matches 62 run effect give @s resistance 50 2 true
 
 #AI
 
@@ -60,7 +62,7 @@ execute if score @s AzrEntityTimer matches 121 run effect give @s resistance 50 
 
 #end
    
-execute if score @s AzrEntityTimer matches 1999 if entity @n[tag=AzrielBossVillain] run scoreboard players set @s AzrEntityTimer 999
+execute if score @s AzrEntityTimer matches 99 if entity @n[tag=AzrielBossVillain] run scoreboard players set @s AzrEntityTimer 69
 execute if score @s AzrEntityTimer matches 100..1999 unless entity @n[tag=AzrielBossVillain] run scoreboard players set @s AzrEntityTimer 2000
 execute if score @s AzrEntityTimer matches 2001 run stopsound @a[tag=azrShowDialog]
 execute if score @s AzrEntityTimer matches 2001 run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 10 0.7
