@@ -10,7 +10,7 @@ execute if entity @a[tag=!AzrielMob_sonic_eye_reveal,tag=azrPlayer,distance=8..2
 execute if entity @a[tag=!AzrielMob_sonic_eye_reveal,tag=azrPlayer,distance=6..24,scores={AzrSariel_Side_Result=..-5}] facing entity @p[tag=azrPlayer,distance=2..] eyes run tp ^ ^ ^0.12
 execute if entity @a[tag=AzrielMob_sonic_eye_reveal,tag=azrPlayer,distance=6..16] facing entity @p[tag=azrPlayer,distance=2..] eyes run tp ^ ^ ^0.12
 
-execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer,distance=..7] run summon minecraft:item_display ~ ~0.2 ~ {item:{id:"ender_eye"},billboard:center,transformation:{scale:[1.2f,1.2f,1.2f]},brightness:{sky:15,block:15},Tags:["AzrielMob_sonic_eye_lord_item_display","AzrielMob_mob_marker"]}
+execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer,distance=..7] run summon minecraft:item_display ~ ~0.2 ~ {item:{id:"ender_eye"},billboard:center,transformation:{scale:[2.2f,2.2f,2.2f]},brightness:{sky:15,block:15},Tags:["AzrielMob_sonic_eye_lord_item_display","AzrielMob_mob_marker"]}
 execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer,distance=..7] run particle sculk_charge_pop ~ ~0.5 ~ 6 0.4 6 0.02 60
 execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer,distance=..7] run playsound minecraft:entity.generic.explode hostile @a ~ ~ ~ 3 0.87
 execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer,distance=..7] run playsound entity.wither.spawn hostile @a ~ ~ ~ 3 0.8
