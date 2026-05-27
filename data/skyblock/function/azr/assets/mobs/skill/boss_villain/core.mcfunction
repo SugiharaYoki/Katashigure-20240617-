@@ -19,12 +19,12 @@ execute if score @s AzrEntityTimer matches 10 run fill -79867 49 -130 -79867 49 
 execute if score @s AzrEntityTimer matches 11 run fill -79867 48 -130 -79867 48 -127 iron_bars
 execute if score @s AzrEntityTimer matches 8..11 run playsound minecraft:block.iron_door.open block @a -79867 51 -129.0 3 0.5
 
-execute if score @s AzrEntityTimer matches 12 run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 1.5
-execute if score @s AzrEntityTimer matches 12 run tellraw @s [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“哎哟，我都他妈把红蜡烛插门口了，怎么还搁着往里硬闯呢。”",color:"white",bold: false}]
-execute if score @s AzrEntityTimer matches 22 run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 1.5
-execute if score @s AzrEntityTimer matches 22 run tellraw @s [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“这铁门不是他妈关得好好的吗？你这女人又他妈怎么进来的？”",color:"white",bold: false}]
-execute if score @s AzrEntityTimer matches 34 run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 1.5
-execute if score @s AzrEntityTimer matches 34 run tellraw @s [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“我靠，非得现在和我打吗？行呗行呗，那老子就让你和‘它们’玩玩。”",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 12 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
+execute if score @s AzrEntityTimer matches 12 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“哎哟，我都他妈把红蜡烛插门口了，怎么还搁着往里硬闯呢。”",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 22 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
+execute if score @s AzrEntityTimer matches 22 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“这铁门不是他妈关得好好的吗？你这女人又他妈怎么进来的？”",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 34 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
+execute if score @s AzrEntityTimer matches 34 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“我靠，非得现在和我打吗？行呗行呗，那老子就让你和‘它们’玩玩。”",color:"white",bold: false}]
 
 
 
