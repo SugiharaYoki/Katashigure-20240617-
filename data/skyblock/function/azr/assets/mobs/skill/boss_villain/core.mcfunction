@@ -11,7 +11,7 @@ execute if score @s rng9 matches 2860.. run scoreboard players set @s rng9 0
 #EVENT
 
 execute if score @s AzrEntityTimer matches 4..5 run scoreboard players set @s AzrEntityTimer 4
-execute if score @s AzrEntityTimer matches 4..5 as @n[tag=AzrielBossVillain,type=villager,distance=..50] at @s if entity @a[tag=azrPlayer,distance=..6] run scoreboard players set @s AzrEntityTimer 6
+execute if score @s AzrEntityTimer matches 4..5 as @n[tag=AzrielBossVillain,type=villager,distance=..50] at @s if entity @a[tag=azrPlayer,distance=..6] run scoreboard players set @n[x=-79867,y=49,z=-128,distance=0..3,tag=AzrielMarker_encounter] AzrEntityTimer 6
 
 execute if score @s AzrEntityTimer matches 8 run fill -79867 51 -130 -79867 51 -127 iron_bars
 execute if score @s AzrEntityTimer matches 9 run fill -79867 50 -130 -79867 50 -127 iron_bars
