@@ -44,7 +44,7 @@ execute as @s[scores={rng1=91}] positioned -79879 47 -109 run function skyblock:
 execute as @s[scores={rng1=91}] positioned -79879 47 -109 run function skyblock:azr/assets/mobs/healer_friendly
 execute as @s[scores={rng1=91}] positioned -79879 47 -109 run function skyblock:azr/assets/mobs/healer_friendly
 
-execute as @s[scores={rng1=93}] positioned -79879 47 -109 as @e[tag=AzrielNPC_Divineforce,distance=15..80,tag=!AzrielNPC_stage9_prison_entry_conversation1,tag=!AzrielMob_ch3_middlesidegate_swordman,type=!villager,type=!parrot,type=!evoker] run tp @s -79890 40 -140
+execute as @s[scores={rng1=93}] positioned -79879 47 -109 as @e[tag=AzrielNPC_Divineforce,distance=15..180,tag=!AzrielNPC_stage9_prison_entry_conversation1,tag=!AzrielMob_ch3_middlesidegate_swordman,type=!villager,type=!parrot,type=!evoker] run tp @s -79890 40 -140
 execute as @s[scores={rng1=93}] run tp @n[tag=AzrielNPC_marinus] -79892 40 -145
 
 execute as @s[scores={rng1=101}] run kill @n[tag=AzrielMob_sonic_eye_lord,distance=..100]
