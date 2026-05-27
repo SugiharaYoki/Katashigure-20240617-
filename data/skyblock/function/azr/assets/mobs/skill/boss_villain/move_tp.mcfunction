@@ -45,6 +45,8 @@ execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:
 execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^-9 ^1.3 ^ 0 0 0 0 1
 execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^-10 ^1.3 ^ 0 0 0 0 1
 
+execute if score @s rng8 matches 1..4 if entity @a[tag=azrPlayer,distance=..5] run scoreboard players add @s rng8 50
+
 execute if score @s rng8 matches 5.. if entity @a[tag=azrPlayer,distance=..7] run scoreboard players add @s rng8 1
 execute if score @s rng8 matches 5.. if entity @a[tag=azrPlayer,distance=..6] run scoreboard players add @s rng8 2
 execute if score @s rng8 matches 5.. if entity @a[tag=azrPlayer,distance=..5] run scoreboard players add @s rng8 4
