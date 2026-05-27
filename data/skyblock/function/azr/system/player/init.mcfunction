@@ -15,6 +15,8 @@ team modify AzrPlayer collisionRule never
 xp set @s 0
 xp set @s 0 levels
 
+stopsound @s music
+
 #状态初始化 这里先clear再给予是为了效果仅维持1tick
 effect clear @s saturation
 effect clear @s instant_health
