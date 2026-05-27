@@ -36,7 +36,8 @@ execute if score @s AzrEntityTimer matches 51 positioned -79845 48 -128 run boss
 execute positioned -79845 48 -128 as @n[tag=AzrielBossVillain,type=villager,distance=..50] store result score @s Health run data get entity @s Health
 execute positioned -79845 48 -128 store result bossbar azr:boss_hp_bar_villain value run scoreboard players get @n[tag=AzrielBossVillain] Health
 
-
+execute if score @s AzrEntityTimer matches 120 run effect clear @s resistance
+execute if score @s AzrEntityTimer matches 121 run effect give @s resistance 50 2 true
 
 #AI
 
