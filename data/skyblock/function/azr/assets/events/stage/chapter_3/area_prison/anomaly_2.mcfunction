@@ -4,6 +4,7 @@ execute as @s[scores={rng1=1}] as @a[tag=azrShowDialog] at @s run stopsound @a
 execute as @s[scores={rng1=1}] run scoreboard players set @e[tag=AzrielNPC_Divineforce_Followable] AzrielNPC_FollowInterest 0
 execute as @s[scores={rng1=10}] as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 0.7
 execute as @s[scores={rng1=10}] as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",color:"yellow",bold:1b},{text:"\n“你，太靠近了。”",color:"white",bold: false}]
+execute as @s[scores={rng1=17}] as @a[distance=..200,tag=azrShowDialog] at @s positioned -79867 2 -109 run function skyblock:azr/assets/mobs/unique/sonic_eye_lord
 execute as @s[scores={rng1=21}] as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 0.7
 execute as @s[scores={rng1=21}] as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",color:"yellow",bold:1b},{text:"\n“……有趣，果然是十分有趣的灵魂。但这有趣却建立在歪念之上，实属遗憾。”",color:"white",bold: false}]
 execute as @s[scores={rng1=33}] as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 0.7
@@ -45,6 +46,10 @@ execute as @s[scores={rng1=91}] positioned -79879 47 -109 run function skyblock:
 
 execute as @s[scores={rng1=93}] positioned -79879 47 -109 as @e[tag=AzrielNPC_Divineforce,distance=15..80,tag=!AzrielNPC_stage9_prison_entry_conversation1,tag=!AzrielMob_ch3_middlesidegate_swordman,type=!villager,type=!parrot,type=!evoker] run tp @s -79890 40 -140
 execute as @s[scores={rng1=93}] run tp @n[tag=AzrielNPC_marinus] -79892 40 -145
+
+execute as @s[scores={rng1=101}] run kill @n[tag=AzrielMob_sonic_eye_lord,distance=..100]
+execute as @s[scores={rng1=101}] run kill @n[tag=AzrielMob_sonic_eye_lord_item_display,distance=..100]
+
 
 execute as @s[scores={rng1=91}] positioned -79879 47 -109 run tag @n[tag=AzrielNPC_Divineforce,type=pillager,distance=0..2] add AzrielNPC_stage9_prison_corelever_conversation1
 execute as @s[scores={rng1=91}] as @n[tag=AzrielMob_ch3_resting_swordman] at @s run tp @e[tag=AzrielNPC_Divineforce,distance=..8,type=vindicator] -79879 47 -109
