@@ -37,7 +37,7 @@ execute if score @s[tag=azrPlayer_dialogchoice_revealed_304] Azr_Shop matches 30
     as @n[tag=AzrielNPC_marinus] at @s run scoreboard players set @s AzrielNPC_ConversationTimer 2001
 execute if score @s[tag=azrPlayer_dialogchoice_revealed_304] Azr_Shop matches 30403 \
     as @n[tag=AzrielNPC_marinus] at @s run scoreboard players set @s AzrielNPC_ConversationTimer 3001
-execute if score @s[tag=azrPlayer_dialogchoice_revealed_304] Azr_Shop matches 30404 \
+execute positioned -79867 49 -128 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s if entity @n[x=-79924.06,y=48.00,z=-127.04,tag=AzrielMob_ch3_middlesidegate_swordman,distance=..23,type=vindicator,scores={AzrielNPC_ConversationTimer=73..}] if score @s[tag=azrPlayer_dialogchoice_revealed_304] Azr_Shop matches 30404 \
     as @n[tag=AzrielNPC_marinus] at @s run scoreboard players set @s AzrielNPC_ConversationTimer 4001
 
 
