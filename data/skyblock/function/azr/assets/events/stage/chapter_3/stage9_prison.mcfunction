@@ -308,6 +308,7 @@ execute positioned -79867 49 -128 as @n[tag=AzrielMarker_encounter,distance=0..0
 execute positioned -79867 49 -128 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=8}] run fill -79867 51 -130 -79867 51 -127 air
 execute positioned -79867 49 -128 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5..8}] run playsound minecraft:block.iron_door.open block @a -79867 51 -129.0 3 0.5
 execute positioned -79867 49 -128 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=8}] positioned -79842 48 -119 run function skyblock:azr/assets/mobs/skill/boss_villain/summon
+execute positioned -79867 49 -128 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=8}] positioned -79842 48 -119 run effect give @n[tag=AzrielBossVillain] resistance infinite 9 true
 execute positioned -79867 49 -128 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=8..}] positioned -79842 48 -119 run function skyblock:azr/assets/mobs/skill/boss_villain/core
 
 
