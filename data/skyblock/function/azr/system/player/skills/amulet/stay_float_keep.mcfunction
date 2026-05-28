@@ -12,4 +12,4 @@
 $execute as @s at @s rotated as @s run tp @s ~ $(y) ~
 
 $tellraw @a {text:"$(x_tell) $(y_tell) $(z_tell)"} 
-
+effect give @s slow_falling 1 99 true
