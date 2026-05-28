@@ -41,7 +41,8 @@ execute positioned -79845 48 -128 as @n[tag=AzrielBossVillain,type=villager,dist
 execute positioned -79845 48 -128 store result bossbar azr:boss_hp_bar_villain value run scoreboard players get @n[tag=AzrielBossVillain] Health
 
 execute if score @s AzrEntityTimer matches 61 as @n[tag=AzrielBossVillain] at @s run effect clear @s resistance
-execute if score @s AzrEntityTimer matches 62 as @n[tag=AzrielBossVillain] at @s run effect give @s resistance 50 3 true
+execute if score @s AzrEntityTimer matches 61 as @n[tag=AzrielBossVillain] at @s run attribute @s armor_resistance base set 10
+execute if score @s AzrEntityTimer matches 62 as @n[tag=AzrielBossVillain] at @s run effect give @s resistance 50 2 true
 
 #AI
 
@@ -53,11 +54,11 @@ execute if score @s AzrEntityTimer matches 69..1901 as @n[tag=AzrielBossVillain]
 
 execute as @n[tag=AzrielBossVillain] at @s if score @s rng7 matches 2 store result score @s rng6 run random value 1..7
 execute as @n[tag=AzrielBossVillain] at @s if score @s rng7 matches 2 store result score @s rng4 run random value 1..7
-execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=100..}] rng7 matches 3 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
-execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..120,rng4=1..2}] rng7 matches 19 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
-execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..170,rng4=1..4}] rng7 matches 15 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
-execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..220,rng4=1..5}] rng7 matches 11 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
-execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..250}] rng7 matches 7 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
+execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=81..}] rng7 matches 3 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
+execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..140,rng4=1..2}] rng7 matches 19 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
+execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..180,rng4=1..4}] rng7 matches 15 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
+execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..230,rng4=1..5}] rng7 matches 11 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
+execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..270}] rng7 matches 7 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
 execute as @n[tag=AzrielBossVillain] at @s if score @s rng7 matches 40.. run scoreboard players set @s rng7 0
 
 execute as @n[tag=AzrielBossVillain] at @s if entity @s[scores={Health=91..140}] run effect give @e[tag=AzrielMob_husk_temper,type=husk,distance=..55] speed infinite 0 true
@@ -82,7 +83,7 @@ execute as @n[tag=AzrielBossVillain] at @s if entity @s[scores={Health=91..140}]
    
 execute if score @s AzrEntityTimer matches 119 if entity @n[tag=AzrielBossVillain] run scoreboard players set @s AzrEntityTimer 109
 execute if score @s AzrEntityTimer matches 100..1900 unless entity @n[tag=AzrielBossVillain] run scoreboard players set @s AzrEntityTimer 1990
-execute if score @s AzrEntityTimer matches 100..1900 as @n[tag=AzrielBossVillain] at @s if score @s Health matches ..90 run scoreboard players set @n[x=-79867,y=49,z=-128,distance=0..3,tag=AzrielMarker_encounter] AzrEntityTimer 1990
+execute if score @s AzrEntityTimer matches 100..1900 as @n[tag=AzrielBossVillain] at @s if score @s Health matches ..80 run scoreboard players set @n[x=-79867,y=49,z=-128,distance=0..3,tag=AzrielMarker_encounter] AzrEntityTimer 1990
 
 execute if score @s AzrEntityTimer matches 1991 run data modify entity @n[tag=AzrielBossVillain] Invulnerable set value 1b
 execute if score @s AzrEntityTimer matches 1991 run scoreboard players set @n[tag=AzrielBossVillain] rng8 -999
