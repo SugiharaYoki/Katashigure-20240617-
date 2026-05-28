@@ -7,7 +7,7 @@ summon bat ~ ~0.3 ~ {PersistenceRequired:1b,Tags:["AzrielMob_utility_bat","Azrie
 
 
 
-effect give @e[tag=AzrielMob_utility_bat,distance=..20] resistance infinite 3 true
-effect give @e[tag=AzrielMob_utility_bat,distance=..20] regeneration infinite 3 true
+effect give @e[tag=AzrielMob_utility_bat,distance=..20] resistance infinite 2 true
+effect give @e[tag=AzrielMob_utility_bat,distance=..20] regeneration infinite 9 true
 
 

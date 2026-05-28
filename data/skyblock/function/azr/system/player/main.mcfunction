@@ -46,7 +46,8 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_pacemaker_safe:
 execute if items entity @s container.* *[custom_data~{azr_amulet_flower_wall:1b}] run function skyblock:azr/system/player/skills/amulet/flower_wall_core
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_lit:1b}] run function skyblock:azr/system/player/skills/amulet/fire_lit_core
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_double_arrow:1b}] run function skyblock:azr/system/player/skills/amulet/double_arrow_core
-execute if items entity @s container.* *[custom_data~{azr_amulet_stay_float:1b}] run function skyblock:azr/system/player/skills/amulet/stay_float_core
+execute if items entity @s container.* *[custom_data~{azr_amulet_stay_float:1b}] unless items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run function skyblock:azr/system/player/skills/amulet/stay_float_core
+execute if items entity @s[tag=AZS_BoS11] container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run function skyblock:azr/system/player/skills/amulet/stay_float_core
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_axe_vortex:1b}] run function skyblock:azr/system/player/skills/amulet/axe_vortex_core
 execute if items entity @s container.* *[custom_data~{azr_amulet_jump_boost:1b}] run function skyblock:azr/system/player/skills/amulet/jump_boost_core
 execute if entity @s[tag=AzrSariel_Amulet_AxeVortex_SweepRatio] if entity @s[predicate=!skyblock:left,predicate=!skyblock:right] run function skyblock:azr/system/player/skills/amulet/axe_vortex_unload
@@ -84,6 +85,9 @@ execute if score @s AzrSariel_Skill_FlowerReason_condition matches 6.. run funct
 execute if score @s AzrSariel_Skill_FlowerReason_condition matches 6.. run function skyblock:azr/system/player/damage_bonus/effect/flowerreason
 execute if score @s AzrSariel_Skill_SlowRing matches 1.. run scoreboard players remove @s AzrSariel_Skill_SlowRing_cooldown 1
 execute if score @s AzrSariel_Skill_SlowRing matches 1.. if score @s AzrSariel_Skill_SlowRing_cooldown matches ..0 run function skyblock:azr/system/player/damage_bonus/effect/slowring
+
+#悬蔑石板
+execute if score @s[tag=AZS_BoSB22] AzrSariel_Amulet_generic_damage_dealt matches 1.. if score @s AzrSariel_Amulet_StayFloat_cooldown matches 119..135 run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 135
 
 #一次性打火石
 execute if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. if items entity @s weapon.mainhand *[custom_data~{instant_spark:1b}] run function skyblock:azr/system/player/damage_bonus/effect/item_instant_spark
