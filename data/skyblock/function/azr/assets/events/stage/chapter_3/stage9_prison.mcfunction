@@ -228,8 +228,11 @@ execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0
 
 
 #牢房中段
-execute positioned -79924.06 48.00 -127.04 unless entity @n[tag=AzrielMob_ch3_middlesidegate_swordman,distance=..23,type=vindicator] run function skyblock:azr/assets/mobs/sword_friendly
-execute positioned -79924.06 48.00 -127.04 unless entity @n[tag=AzrielMob_ch3_middlesidegate_swordman,distance=..23,type=vindicator] run tag @n[type=vindicator,distance=0..2] add AzrielMob_ch3_middlesidegate_swordman
+
+execute positioned -79924.06 48.00 -127.04 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79924.06 48.00 -127.04 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
+execute positioned -79924.06 48.00 -127.04 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] run function skyblock:azr/assets/mobs/sword_friendly
+execute positioned -79924.06 48.00 -127.04 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] run tag @n[type=vindicator,distance=0..2] add AzrielMob_ch3_middlesidegate_swordman
 execute positioned -79924.06 48.00 -127.04 as @n[tag=AzrielMob_ch3_middlesidegate_swordman,distance=..23,type=vindicator] at @s unless score @s AzrielNPC_ConversationTimer matches 300.. run function skyblock:azr/assets/events/stage/chapter_3/area_prison/npc_conversation_zhaowuyan
 
 execute positioned -79901 47 -130 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79901,y=47,z=-130,dx=5,dy=5,dz=5,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
