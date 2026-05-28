@@ -108,6 +108,10 @@ execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run t
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s emerald 30
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
 
+execute if score @s AzrEntityTimer matches 2031 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
+execute if score @s AzrEntityTimer matches 2031 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“啥？你说有和人聊天的习惯？别别别，我没有任何能跟你聊的，再怎么也等我解决完自己的事情。”",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 2041 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
+execute if score @s AzrEntityTimer matches 2041 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“你说我只是在到处走动？我靠，你他妈是没有脑子的吗？我用脑子解决事情啊！”",color:"white",bold: false}]
 #out
 
 #execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] run fill -79867 48 -130 -79867 51 -127 air
