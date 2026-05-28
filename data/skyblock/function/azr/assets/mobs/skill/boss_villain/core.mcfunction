@@ -1,7 +1,7 @@
 
 scoreboard players add @s AzrEntityTimer 1
 
-execute if score @s AzrEntityTimer matches 31..1999 run scoreboard players add @s rng9 1
+execute if score @s AzrEntityTimer matches 31..1899 run scoreboard players add @s rng9 1
 execute if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:renegade music @s ~ ~ ~ 0.65
 execute if score @s rng9 matches 572.. run scoreboard players set @s rng9 0
 
@@ -39,7 +39,7 @@ execute positioned -79845 48 -128 as @n[tag=AzrielBossVillain,type=villager,dist
 execute positioned -79845 48 -128 store result bossbar azr:boss_hp_bar_villain value run scoreboard players get @n[tag=AzrielBossVillain] Health
 
 execute if score @s AzrEntityTimer matches 61 as @n[tag=AzrielBossVillain] at @s run effect clear @s resistance
-execute if score @s AzrEntityTimer matches 62 as @n[tag=AzrielBossVillain] at @s run effect give @s resistance 50 2 true
+execute if score @s AzrEntityTimer matches 62 as @n[tag=AzrielBossVillain] at @s run effect give @s resistance 50 3 true
 
 #AI
 
@@ -78,7 +78,7 @@ execute as @n[tag=AzrielBossVillain] at @s if score @s rng7 matches 40.. run sco
 
 #end
    
-execute if score @s AzrEntityTimer matches 99 if entity @n[tag=AzrielBossVillain] run scoreboard players set @s AzrEntityTimer 69
+execute if score @s AzrEntityTimer matches 119 if entity @n[tag=AzrielBossVillain] run scoreboard players set @s AzrEntityTimer 109
 execute if score @s AzrEntityTimer matches 100..1900 unless entity @n[tag=AzrielBossVillain] run scoreboard players set @s AzrEntityTimer 1990
 execute if score @s AzrEntityTimer matches 100..1900 as @n[tag=AzrielBossVillain] at @s if score @s Health matches ..90 run scoreboard players set @s AzrEntityTimer 1990
 
