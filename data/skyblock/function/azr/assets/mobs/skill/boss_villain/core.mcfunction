@@ -3,7 +3,7 @@ scoreboard players add @s AzrEntityTimer 1
 
 execute if score @s AzrEntityTimer matches 31..1999 run scoreboard players add @s rng9 1
 execute if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:renegade music @s ~ ~ ~ 0.65
-execute if score @s rng9 matches 2860.. run scoreboard players set @s rng9 0
+execute if score @s rng9 matches 572.. run scoreboard players set @s rng9 0
 
 
 
@@ -43,8 +43,19 @@ execute if score @s AzrEntityTimer matches 62 run effect give @s resistance 50 2
 
 #AI
 
-
+execute if score @s AzrEntityTimer matches 61 run scoreboard players add @s rng7 1
    
+
+
+
+
+execute if score @s rng7 matches 2 store result score @s rng6 run random value 1..7
+execute if score @s rng7 matches 3 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
+execute if score @s rng7 matches 40.. run scoreboard players set @s rng7 0
+
+
+
+
 #ACTION
 
 
