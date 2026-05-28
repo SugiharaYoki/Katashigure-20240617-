@@ -1,6 +1,8 @@
 
 execute if score @s rng8 matches 3 store result score @s rng3 run random value 1..16
 
+execute if score @s rng8 matches 3 as @s at @s run particle portal ~ ~1 ~ 0.3 0.8 0.3 0 28
+execute if score @s rng8 matches 3 as @s at @s run playsound entity.player.teleport hostile @a ~ ~ ~ 1 1.2
 execute if score @s rng8 matches 3 if score @s rng3 matches 1 run tp @s -79862 49 -124 facing entity @p[tag=azrPlayer,distance=..60] eyes
 execute if score @s rng8 matches 3 if score @s rng3 matches 2 run tp @s -79864 48 -130 facing entity @p[tag=azrPlayer,distance=..60] eyes
 execute if score @s rng8 matches 3 if score @s rng3 matches 3 run tp @s -79860 48 -133 facing entity @p[tag=azrPlayer,distance=..60] eyes
@@ -17,7 +19,8 @@ execute if score @s rng8 matches 3 if score @s rng3 matches 13 run tp @s -79844 
 execute if score @s rng8 matches 3 if score @s rng3 matches 14 run tp @s -79841 49 -132 facing entity @p[tag=azrPlayer,distance=..60] eyes
 execute if score @s rng8 matches 3 if score @s rng3 matches 15 run tp @s -79850 48 -133 facing entity @p[tag=azrPlayer,distance=..60] eyes
 execute if score @s rng8 matches 3 if score @s rng3 matches 16 run tp @s -79856 48 -131 facing entity @p[tag=azrPlayer,distance=..60] eyes
-
+execute if score @s rng8 matches 3 as @s at @s run particle reverse_portal ~ ~1 ~ 0.3 0.8 0.3 0 28
+execute if score @s rng8 matches 3 as @s at @s run playsound entity.player.teleport hostile @a ~ ~ ~ 1 1.2
 
 
 execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^ ^1.3 ^5 0 0 0 0 1
