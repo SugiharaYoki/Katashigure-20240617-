@@ -83,6 +83,8 @@ execute if score @s AzrEntityTimer matches 100..1900 unless entity @n[tag=Azriel
 execute if score @s AzrEntityTimer matches 100..1900 as @n[tag=AzrielBossVillain] at @s if score @s Health matches ..90 run scoreboard players set @n[x=-79867,y=49,z=-128,distance=0..3,tag=AzrielMarker_encounter] AzrEntityTimer 1990
 
 execute if score @s AzrEntityTimer matches 1991 run data modify entity @n[tag=AzrielBossVillain] Invulnerable set value 1b
+execute if score @s AzrEntityTimer matches 1991 run scoreboard players set @n[tag=AzrielBossVillain] rng8 -999
+execute if score @s AzrEntityTimer matches 1991 run scoreboard players set @n[tag=AzrielBossVillain] rng2 -999
 execute if score @s AzrEntityTimer matches 1993 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
 execute if score @s AzrEntityTimer matches 1993 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“好了！好了！别再打了！”",color:"white",bold: false}]
 execute if score @s AzrEntityTimer matches 1993 run stopsound @a[tag=azrShowDialog]
