@@ -112,6 +112,7 @@ execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[ta
 execute if entity @s[tag=AZS_BoSB01] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value ' <刑> '
 execute if entity @s[tag=AZS_BoSB04] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value ' <炉> '
 execute if entity @s[tag=AZS_BoSB13] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value ' <藓> '
+execute if entity @s[tag=AZS_BoSB22] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBv] CustomName set value ' <贤> '
 execute if entity @s[tag=AZS_BoSB23] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBw] CustomName set value ' <矿> '
 
 execute if entity @s[tag=AZS_BoSShop01] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop01] CustomName set value ' <毒衡> '
@@ -123,6 +124,7 @@ execute if entity @s[tag=AZS_BoSShop06] run data modify entity @n[tag=AzrRamielE
 execute if entity @s[tag=AZS_BoSShop07] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop07] CustomName set value ' <> '
 execute if entity @s[tag=AZS_BoSShop08] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop08] CustomName set value ' <> '
 
+execute if entity @s[tag=AZS_BoSB22] run data modify entity @n[tag=AzrRamielExStage_displaymarkerk] CustomName set value ' - '
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkere] CustomName set value ' - '
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerv] CustomName set value ' - '
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value ' - '
@@ -159,6 +161,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel:1b}
 execute if items entity @s container.* *[custom_data~{azr_amulet_back_dodge:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_fire_drogue:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBv] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBw] CustomName set value ' √ '
 
 execute if items entity @s container.* *[custom_data~{azr_amulet_pollusion_balancer:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop01] CustomName set value ' √ '
@@ -207,6 +210,7 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBa]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432331"},hover_event:{"action":"show_text","value":{text:"阴影处刑者 - 退避石板\n连按后退键快速后撤步",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBd]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432329"},hover_event:{"action":"show_text","value":{text:"锅炉驱动者 - 逐焰卷宗\n持续召唤最多3个跟随火球，减少节制天平电球最低间隔时长",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBm]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432328"},hover_event:{"action":"show_text","value":{text:"噬藓母虫 - 深藓石板\n造成攻击可增加“索命连击”充能、在重生锚点可获得5分钟孢子的庇护（生命值上限加成）",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerBv]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432338"},hover_event:{"action":"show_text","value":{text:"晦怨贤士 - 悬蔑石板\n按两下跳跃以悬浮、悬浮期间攻击延长悬浮时间",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBw]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432333"},hover_event:{"action":"show_text","value":{text:"金属学家 - 枢纽石板\n允许在重生锚点之间传送",color:"white"}}},\
 {text:"\n "},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerShop01]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432334"},hover_event:{"action":"show_text","value":{text:"污染平衡器\n减轻重金属池水伤害",color:"white"}}},\

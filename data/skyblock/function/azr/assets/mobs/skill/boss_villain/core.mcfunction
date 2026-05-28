@@ -32,7 +32,7 @@ execute if score @s AzrEntityTimer matches 64 run tellraw @a[distance=..40,tag=a
 
 execute if score @s AzrEntityTimer matches 51 positioned -79845 48 -128 run bossbar add azr:boss_hp_bar_villain "避芒藏刃的无所在无所不在之恶徒 - 晦怨贤士"
 execute if score @s AzrEntityTimer matches 51 positioned -79845 48 -128 run bossbar set azr:boss_hp_bar_villain color red
-execute if score @s AzrEntityTimer matches 51 positioned -79845 48 -128 run bossbar set azr:boss_hp_bar_villain max 200
+execute if score @s AzrEntityTimer matches 51 positioned -79845 48 -128 run bossbar set azr:boss_hp_bar_villain max 300
 execute if score @s AzrEntityTimer matches 51 positioned -79845 48 -128 run bossbar set azr:boss_hp_bar_villain players @a[tag=azrShowDialog]
 
 execute positioned -79845 48 -128 as @n[tag=AzrielBossVillain,type=villager,distance=..50] store result score @s Health run data get entity @s Health
@@ -50,11 +50,11 @@ execute if score @s AzrEntityTimer matches 69.. as @n[tag=AzrielBossVillain] at 
 
 
 execute as @n[tag=AzrielBossVillain] at @s if score @s rng7 matches 2 store result score @s rng6 run random value 1..7
-execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=1..,rng6=1..6}] rng7 matches 3 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
-execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..20,rng6=1..2}] rng7 matches 19 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
-execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..70,rng6=1..3}] rng7 matches 15 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
-execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..120,rng6=1..4}] rng7 matches 11 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
-execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..150,rng6=1..6}] rng7 matches 7 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
+execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=100..,rng6=1..6}] rng7 matches 3 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
+execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..120,rng6=1..2}] rng7 matches 19 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
+execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..170,rng6=1..3}] rng7 matches 15 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
+execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..220,rng6=1..4}] rng7 matches 11 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
+execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..250,rng6=1..6}] rng7 matches 7 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
 execute as @n[tag=AzrielBossVillain] at @s if score @s rng7 matches 40.. run scoreboard players set @s rng7 0
 
 
@@ -63,7 +63,7 @@ execute as @n[tag=AzrielBossVillain] at @s if score @s rng7 matches 40.. run sco
 #ACTION
 
 
-    execute as @n[tag=AzrielBossVillain] at @s run scoreboard players add @s rng8 1
+    execute if score @s AzrEntityTimer matches 34.. as @n[tag=AzrielBossVillain] at @s run scoreboard players add @s rng8 1
     execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=1..}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
     execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={rng2=1..6}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_villain/move_tp
 
