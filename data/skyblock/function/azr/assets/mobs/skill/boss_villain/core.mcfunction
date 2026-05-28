@@ -43,19 +43,19 @@ execute if score @s AzrEntityTimer matches 62 run effect give @s resistance 50 2
 
 #AI
 
-execute if score @s AzrEntityTimer matches 69.. run scoreboard players add @s rng7 1
+execute if score @s AzrEntityTimer matches 69.. as @n[tag=AzrielBossVillain] at @s run scoreboard players add @s rng7 1
    
 
 
 
 
-execute if score @s rng7 matches 2 store result score @s rng6 run random value 1..7
-execute if score @s[scores={Health=1..,rng6=1}] rng7 matches 3 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
-execute if score @s[scores={Health=..20,rng6=2}] rng7 matches 3 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
-execute if score @s[scores={Health=..70,rng6=3}] rng7 matches 3 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
-execute if score @s[scores={Health=..120,rng6=4}] rng7 matches 3 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
-execute if score @s[scores={Health=..150,rng6=5}] rng7 matches 3 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
-execute if score @s rng7 matches 40.. run scoreboard players set @s rng7 0
+execute as @n[tag=AzrielBossVillain] at @s if score @s rng7 matches 2 store result score @s rng6 run random value 1..7
+execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=1..,rng6=1}] rng7 matches 3 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
+execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..20,rng6=2}] rng7 matches 3 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
+execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..70,rng6=3}] rng7 matches 3 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
+execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..120,rng6=4}] rng7 matches 3 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
+execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..150,rng6=5}] rng7 matches 3 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
+execute as @n[tag=AzrielBossVillain] at @s if score @s rng7 matches 40.. run scoreboard players set @s rng7 0
 
 
 
