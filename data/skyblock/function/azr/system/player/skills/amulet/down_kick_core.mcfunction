@@ -8,6 +8,7 @@ execute if score @s AzrSariel_Amulet_DownKick_clock matches 79..80 if entity @s[
 
 
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..79 run attribute @s gravity base set 1.3
+execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..79 run attribute @s jump_strength base set 0
 execute if score @s[scores={AzrSariel_Side_Result=-4..}] AzrSariel_Amulet_DownKick_clock matches 21..78 run playsound minecraft:block.sand.step player @a ~ ~1 ~ 1 2
 execute if score @s[scores={AzrSariel_Side_Result=..-5}] AzrSariel_Amulet_DownKick_clock matches 21..78 run playsound minecraft:block.soul_soil.step player @a ~ ~1 ~ 1 2
 execute if score @s[scores={AzrSariel_Side_Result=-4..}] AzrSariel_Amulet_DownKick_clock matches 21..78 run particle enchant ~ ~1 ~ 0.5 2 0.5 0.03 15
@@ -46,6 +47,7 @@ execute if score @s AzrSariel_Amulet_DownKick_clock matches 11 run attribute @s 
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 11 run attribute @s knockback_resistance modifier remove azr_amulet:downkick_01
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 17..20 run attribute @s gravity base set 0.08
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 9..10 run attribute @s gravity base set 0.08
+execute if score @s AzrSariel_Amulet_DownKick_clock matches 9..10 run attribute @s jump_strength base reset
 
 
 
