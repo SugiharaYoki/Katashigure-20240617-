@@ -20,11 +20,13 @@ execute if score @s AzrEntityTimer matches 11 run fill -79867 48 -130 -79867 48 
 execute if score @s AzrEntityTimer matches 8..11 run playsound minecraft:block.iron_door.open block @a -79867 51 -129.0 3 0.5
 
 execute if score @s AzrEntityTimer matches 12 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
-execute if score @s AzrEntityTimer matches 12 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“哎哟，我都他妈把红蜡烛插门口了，怎么还搁着往里硬闯呢。”",color:"white",bold: false}]
-execute if score @s AzrEntityTimer matches 22 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
-execute if score @s AzrEntityTimer matches 22 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“我还他妈在想事情，能不能离我远点？”",color:"white",bold: false}]
-execute if score @s AzrEntityTimer matches 34 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
-execute if score @s AzrEntityTimer matches 34 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“我靠，非得现在和我打吗？行呗行呗，那老子就让你和‘它们’玩玩。”",color:"white",bold: false}]
+execute if score @s[tag=AzrielBossVillain_attempted] AzrEntityTimer matches 12 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“他妈的，你真的好烦啊！要打快点打，我忙着呢！！”",color:"white",bold: false}]
+execute if score @s[tag=AzrielBossVillain_attempted] AzrEntityTimer matches 12 run scoreboard players set @s AzrEntityTimer 34
+execute if score @s[tag=!AzrielBossVillain_attempted] AzrEntityTimer matches 12 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“哎哟，我都他妈把红蜡烛插门口了，怎么还搁着往里硬闯呢。”",color:"white",bold: false}]
+execute if score @s[tag=!AzrielBossVillain_attempted] AzrEntityTimer matches 22 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
+execute if score @s[tag=!AzrielBossVillain_attempted] AzrEntityTimer matches 22 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“我还他妈在想事情，能不能离我远点？”",color:"white",bold: false}]
+execute if score @s[tag=!AzrielBossVillain_attempted] AzrEntityTimer matches 34 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
+execute if score @s[tag=!AzrielBossVillain_attempted] AzrEntityTimer matches 34 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“我靠，非得现在和我打吗？行呗行呗，那老子就让你和‘它们’玩玩。”",color:"white",bold: false}]
 
 execute if score @s AzrEntityTimer matches 64 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
 execute if score @s AzrEntityTimer matches 64 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“这是由我拟造的型影，它们可刀枪不入！虽然只会存在一小段时间。”",color:"white",bold: false}]
@@ -116,5 +118,6 @@ execute if score @s AzrEntityTimer matches 11..1900 unless entity @a[tag=azrPlay
 execute if score @s AzrEntityTimer matches 11..1900 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] run function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_villain
 execute if score @s AzrEntityTimer matches 11..1900 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] run stopsound @a[tag=azrShowDialog] music minecraft:renegade
 execute if score @s AzrEntityTimer matches 11..1900 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] positioned -79867 49 -128 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute if score @s AzrEntityTimer matches 11..1900 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] positioned -79867 49 -128 run tag @n[tag=AzrielMarker_encounter,distance=..1] add AzrielBossVillain_attempted
 execute if score @s AzrEntityTimer matches 11..1900 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] run kill @s
 
