@@ -19,7 +19,17 @@ execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 as @s at @s 
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s store result storage azr_amulet:stay_float x_tell double 0.001 run data get entity @s Pos[0] 1000
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s store result storage azr_amulet:stay_float y_tell double 0.001 run data get entity @s Pos[1] 1000
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s store result storage azr_amulet:stay_float z_tell double 0.001 run data get entity @s Pos[2] 1000
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 120 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 122 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 124 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 126 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 128 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 130 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 132 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 134 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 136 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 0.4 2
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s run particle white_smoke ~ ~-0.2 ~ 0.1 0 0.1 0.03 8
 
