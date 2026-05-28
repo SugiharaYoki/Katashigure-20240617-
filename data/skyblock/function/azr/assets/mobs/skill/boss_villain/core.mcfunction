@@ -84,17 +84,18 @@ execute if score @s AzrEntityTimer matches 100..1900 as @n[tag=AzrielBossVillain
 execute if score @s AzrEntityTimer matches 1991 run data modify entity @n[tag=AzrielBossVillain] Invulnerable set value 1b
 execute if score @s AzrEntityTimer matches 1993 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
 execute if score @s AzrEntityTimer matches 1993 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“好了！好了！别再打了！”",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 1993 run stopsound @a[tag=azrShowDialog]
+execute if score @s AzrEntityTimer matches 1993 positioned -79845 48 -128 run kill @e[tag=AzrielMob_husk_temper,type=husk,distance=..55]
+execute if score @s AzrEntityTimer matches 1993 run bossbar remove azr:boss_hp_bar_villain
 
-execute if score @s AzrEntityTimer matches 2001 run stopsound @a[tag=azrShowDialog]
-execute if score @s AzrEntityTimer matches 2001 run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 10 0.7
+execute if score @s AzrEntityTimer matches 2011 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
+execute if score @s AzrEntityTimer matches 2011 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“你不就是图我身上的绿宝石和石板吗？都给你都给你。”",color:"white",bold: false}]
 execute if score @s AzrEntityTimer matches 2011 run title @a[tag=azrShowDialog] actionbar {text:"Extra Boss Annihilated",color:"green"}
 execute if score @s AzrEntityTimer matches 2011 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/sub_boss_villain
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/stay_float_attack
-execute if score @s AzrEntityTimer matches 2011 run bossbar remove azr:boss_hp_bar_villain
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB22
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s emerald 30
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
-execute if score @s AzrEntityTimer matches 2011 positioned -79845 48 -128 run kill @e[tag=AzrielMob_husk_temper,type=husk,distance=..55]
 
 #out
 
