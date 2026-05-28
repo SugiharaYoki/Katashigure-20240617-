@@ -46,10 +46,10 @@ execute if score @s AzrielNPC_ConversationTimer matches 70 positioned -79955 46 
 execute if score @s AzrielNPC_ConversationTimer matches 70 positioned -79955 46 -158 run function skyblock:azr/assets/mobs/spider_mini
 execute if score @s AzrielNPC_ConversationTimer matches 70 positioned -79955 46 -158 run function skyblock:azr/assets/mobs/spider_mini
 
-execute if score @s AzrielNPC_ConversationTimer matches 70 positioned -79940 47 -177 run function skyblock:azr/assets/mobs/utility_bat
+#execute if score @s AzrielNPC_ConversationTimer matches 70 positioned -79940 47 -177 run function skyblock:azr/assets/mobs/utility_bat
 execute if score @s AzrielNPC_ConversationTimer matches 70 positioned -79942 47 -176 run function skyblock:azr/assets/mobs/utility_bat
 execute if score @s AzrielNPC_ConversationTimer matches 70 positioned -79944 47 -177 run function skyblock:azr/assets/mobs/utility_bat
-execute if score @s AzrielNPC_ConversationTimer matches 70 positioned -79952 47 -176 run function skyblock:azr/assets/mobs/utility_bat
+#execute if score @s AzrielNPC_ConversationTimer matches 70 positioned -79952 47 -176 run function skyblock:azr/assets/mobs/utility_bat
 execute if score @s AzrielNPC_ConversationTimer matches 70 positioned -79954 47 -178 run function skyblock:azr/assets/mobs/utility_bat
 execute if score @s AzrielNPC_ConversationTimer matches 70 positioned -79956 47 -175 run function skyblock:azr/assets/mobs/utility_bat
 execute if score @s AzrielNPC_ConversationTimer matches 70 positioned -79958 47 -177 run function skyblock:azr/assets/mobs/utility_bat
