@@ -1,7 +1,7 @@
 
 scoreboard players add @s AzrEntityTimer 1
 
-execute if score @s AzrEntityTimer matches 31..1899 run scoreboard players add @s rng9 1
+execute if score @s AzrEntityTimer matches 31..2000 run scoreboard players add @s rng9 1
 execute if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:renegade music @s ~ ~ ~ 0.65
 execute if score @s rng9 matches 572.. run scoreboard players set @s rng9 0
 
@@ -43,7 +43,7 @@ execute if score @s AzrEntityTimer matches 62 as @n[tag=AzrielBossVillain] at @s
 
 #AI
 
-execute if score @s AzrEntityTimer matches 69.. as @n[tag=AzrielBossVillain] at @s run scoreboard players add @s rng7 1
+execute if score @s AzrEntityTimer matches 69..1901 as @n[tag=AzrielBossVillain] at @s run scoreboard players add @s rng7 1
    
 
 
@@ -64,7 +64,7 @@ execute as @n[tag=AzrielBossVillain] at @s if score @s rng7 matches 40.. run sco
 #ACTION
 
 
-    execute if score @s AzrEntityTimer matches 34.. as @n[tag=AzrielBossVillain] at @s run scoreboard players add @s rng8 1
+    execute if score @s AzrEntityTimer matches 34..1901 as @n[tag=AzrielBossVillain] at @s run scoreboard players add @s rng8 1
     execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=1..}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
     execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={rng2=1..6}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_villain/move_tp
 
@@ -80,7 +80,7 @@ execute as @n[tag=AzrielBossVillain] at @s if score @s rng7 matches 40.. run sco
    
 execute if score @s AzrEntityTimer matches 119 if entity @n[tag=AzrielBossVillain] run scoreboard players set @s AzrEntityTimer 109
 execute if score @s AzrEntityTimer matches 100..1900 unless entity @n[tag=AzrielBossVillain] run scoreboard players set @s AzrEntityTimer 1990
-execute if score @s AzrEntityTimer matches 100..1900 as @n[tag=AzrielBossVillain] at @s if score @s Health matches ..90 run scoreboard players set @s AzrEntityTimer 1990
+execute if score @s AzrEntityTimer matches 100..1900 as @n[tag=AzrielBossVillain] at @s if score @s Health matches ..90 run scoreboard players set @n[x=-79867,y=49,z=-128,distance=0..3,tag=AzrielMarker_encounter] AzrEntityTimer 1990
 
 execute if score @s AzrEntityTimer matches 1991 run data modify entity @n[tag=AzrielBossVillain] Invulnerable set value 1b
 execute if score @s AzrEntityTimer matches 1993 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
@@ -101,12 +101,12 @@ execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run g
 #out
 
 #execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] run fill -79867 48 -130 -79867 51 -127 air
-execute if score @s AzrEntityTimer matches 11..1999 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] run bossbar remove azr:boss_hp_bar_villain
-execute if score @s AzrEntityTimer matches 11..1999 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] run tp @n[tag=AzrielBossVillain] ~ ~-200 ~
-execute if score @s AzrEntityTimer matches 11..1999 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] run kill @n[tag=AzrielBossVillain]
-execute if score @s AzrEntityTimer matches 11..1999 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] positioned -79845 48 -128 run kill @e[tag=AzrielMob_husk_temper,type=husk,distance=..55]
-execute if score @s AzrEntityTimer matches 11..1999 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] run function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_villain
-execute if score @s AzrEntityTimer matches 11..1999 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] run stopsound @a[tag=azrShowDialog] music minecraft:renegade
-execute if score @s AzrEntityTimer matches 11..1999 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] positioned -79867 49 -128 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute if score @s AzrEntityTimer matches 11..1999 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] run kill @s
+execute if score @s AzrEntityTimer matches 11..1900 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] run bossbar remove azr:boss_hp_bar_villain
+execute if score @s AzrEntityTimer matches 11..1900 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] run tp @n[tag=AzrielBossVillain] ~ ~-200 ~
+execute if score @s AzrEntityTimer matches 11..1900 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] run kill @n[tag=AzrielBossVillain]
+execute if score @s AzrEntityTimer matches 11..1900 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] positioned -79845 48 -128 run kill @e[tag=AzrielMob_husk_temper,type=husk,distance=..55]
+execute if score @s AzrEntityTimer matches 11..1900 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] run function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_villain
+execute if score @s AzrEntityTimer matches 11..1900 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] run stopsound @a[tag=azrShowDialog] music minecraft:renegade
+execute if score @s AzrEntityTimer matches 11..1900 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] positioned -79867 49 -128 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute if score @s AzrEntityTimer matches 11..1900 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] run kill @s
 
