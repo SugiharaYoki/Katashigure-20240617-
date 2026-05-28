@@ -327,7 +327,6 @@ execute positioned -79892 39 -145 as @n[tag=AzrielMarker_encounter,distance=0..0
 
 
 
-
 #STAGE BREAKOUT
 execute positioned -79970 33 -95 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79976,y=33,z=-101,dx=14,dy=3,dz=14,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
@@ -345,5 +344,8 @@ execute positioned -79897 48 -128 if score random_enemy_thread AzrTimerStack mat
 execute positioned -79897 48 -128 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 3.. if entity @a[tag=azrPlayer,distance=..28] unless entity @a[tag=azrPlayer,distance=..12] run function skyblock:azr/assets/mobs/area_pool/chapter3_prison
 
 
+#灵魂碎片
+execute positioned -79965 51 -182 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=0..7,tag=azrPlayer,tag=!AZS_SoulFrag04] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79965 51 -182 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/effects/soul_fragment {id:"04",pos:"-79965 58.2 -197"}
 
 
