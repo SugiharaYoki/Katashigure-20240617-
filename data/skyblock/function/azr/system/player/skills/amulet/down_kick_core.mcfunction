@@ -5,6 +5,7 @@ scoreboard players remove @s AzrSariel_Amulet_DownKick_clock 1
 execute if entity @s[scores={AzrSariel_Amulet_DownKick_clock=..8},predicate=skyblock:sneak,predicate=!skyblock:jump] run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 80
 
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 79..80 if entity @s[nbt={OnGround:1b}] run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 0
+execute if score @s AzrSariel_Amulet_DownKick_clock matches 79..80 positioned as @s positioned over world_surface if block ~ ~-0.2 ~ minecraft:slime_block run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 0
 
 
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..79 run attribute @s gravity base set 1.3
@@ -12,7 +13,6 @@ execute if score @s[scores={AzrSariel_Side_Result=-4..}] AzrSariel_Amulet_DownKi
 execute if score @s[scores={AzrSariel_Side_Result=..-5}] AzrSariel_Amulet_DownKick_clock matches 21..78 run playsound minecraft:block.soul_soil.step player @a ~ ~1 ~ 1 2
 execute if score @s[scores={AzrSariel_Side_Result=-4..}] AzrSariel_Amulet_DownKick_clock matches 21..78 run particle enchant ~ ~1 ~ 0.5 2 0.5 0.03 15
 execute if score @s[scores={AzrSariel_Side_Result=..-5}] AzrSariel_Amulet_DownKick_clock matches 21..78 run particle soul ~ ~1 ~ 0.5 2 0.5 0.03 15
-execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 if entity @s[nbt={OnGround:1b}] if block ~ ~-0.2 ~ slime_block at @s run say hi
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 if entity @s[nbt={OnGround:1b},scores={AZR_chainKill_chargeup=2500..}] if entity @e[tag=AzrielMob,distance=0..6] run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 20
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 if entity @s[nbt={OnGround:1b},scores={AZR_chainKill_chargeup=2500..}] unless entity @e[tag=AzrielMob,distance=0..6] if block ~ ~-0.5 ~ honey_block run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 20
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 if entity @s[nbt={OnGround:1b}] run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 10
