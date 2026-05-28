@@ -9,6 +9,6 @@
 #$say y_10: $(y_10)
 
 #function skyblock:azr/system/player/skills/amulet/stay_float_keep_2 with storage azr_amulet:stay_float
-$tp @s ~ $(y) ~
+$execute as @s at @s rotated as @s run tp @s ~ $(y) ~
 
 
