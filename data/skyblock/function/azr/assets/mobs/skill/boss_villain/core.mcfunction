@@ -61,7 +61,7 @@ execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..230,rng4
 execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..270}] rng7 matches 7 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
 execute as @n[tag=AzrielBossVillain] at @s if score @s rng7 matches 40.. run scoreboard players set @s rng7 0
 
-execute as @n[tag=AzrielBossVillain] at @s if entity @s[scores={Health=91..140}] run effect give @e[tag=AzrielMob_husk_temper,type=husk,distance=..55] speed infinite 0 true
+execute as @n[tag=AzrielBossVillain] at @s if entity @s[scores={Health=91..170}] run effect give @e[tag=AzrielMob_husk_temper,type=husk,distance=..55] speed infinite 0 true
 
 
 #ACTION
