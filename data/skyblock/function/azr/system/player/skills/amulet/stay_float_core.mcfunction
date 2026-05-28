@@ -16,9 +16,9 @@ execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138.. if entity 
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 as @s at @s store result storage azr_amulet:stay_float y double 0.000001 run data get entity @s Pos[1] 1000000
 #execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 store result storage azr_amulet:stay_float y_10 double 0.0001 run data get entity @s Pos[1] 100000
 
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s store result storage azr_amulet:stay_float x_tell double 0.001 run data get entity @s Pos[0] 1000
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s store result storage azr_amulet:stay_float y_tell double 0.001 run data get entity @s Pos[1] 1000
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s store result storage azr_amulet:stay_float z_tell double 0.001 run data get entity @s Pos[2] 1000
+#execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s store result storage azr_amulet:stay_float x_tell double 0.001 run data get entity @s Pos[0] 1000
+#execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s store result storage azr_amulet:stay_float y_tell double 0.001 run data get entity @s Pos[1] 1000
+#execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s store result storage azr_amulet:stay_float z_tell double 0.001 run data get entity @s Pos[2] 1000
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 120 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 122 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float

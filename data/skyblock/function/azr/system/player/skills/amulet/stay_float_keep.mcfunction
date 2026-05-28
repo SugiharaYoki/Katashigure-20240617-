@@ -11,5 +11,5 @@
 #function skyblock:azr/system/player/skills/amulet/stay_float_keep_2 with storage azr_amulet:stay_float
 $execute as @s at @s rotated as @s run tp @s ~ $(y) ~
 
-$tellraw @a {text:"$(x_tell) $(y_tell) $(z_tell)"} 
+#$tellraw @a {text:"$(x_tell) $(y_tell) $(z_tell)"} 
 effect give @s slow_falling 1 99 true
