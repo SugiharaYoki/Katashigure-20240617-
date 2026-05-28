@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "避芒藏刃的无所在无所不在之恶徒 - 晦怨贤士",
+            "color": "red",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "这家伙非常清楚有关生命树庭园挑战的许多细节。\n要说这挑战流程没有他负责设计的部分，我是绝对不信的。\n红色的蜡烛唐突出现，便意味着我会在前方面临一场鏖战。\n——而他就是放下蜡烛的人。\n\n说来，他在牢房深处也算安逸，无人扰他清梦。\n看他的态度，他也早就不想再与世人相争了。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:silverfish_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage11"
+}

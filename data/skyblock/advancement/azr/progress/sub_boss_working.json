@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "痴醉于劣铜的矿役 - 金属学家",
+            "color": "red",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "真相很明显：生命树庭园建立在一座巨大的魔力矿脉上。\n火把花的出现、矿物的开采……全部都与其有关。\n但这些矿物蕴藏魔力，就代表它们会吸收魔力。\n花园中的神使借用魔法操控亡灵，而从亡灵尸体内逸散出的魔力又被这些矿物所吸收。\n矿物被开采后，则感染了接触矿物的矿工，乃至加工这些矿物的一系列工人……\n金属学家是受影响的其中之一。亡灵盔甲架、亡灵法师……全部都是。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:zombie_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage9"
+}
