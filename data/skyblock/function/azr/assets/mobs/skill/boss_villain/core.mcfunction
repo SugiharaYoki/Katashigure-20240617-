@@ -78,7 +78,13 @@ execute as @n[tag=AzrielBossVillain] at @s if score @s rng7 matches 40.. run sco
 #end
    
 execute if score @s AzrEntityTimer matches 99 if entity @n[tag=AzrielBossVillain] run scoreboard players set @s AzrEntityTimer 69
-execute if score @s AzrEntityTimer matches 100..1999 unless entity @n[tag=AzrielBossVillain] run scoreboard players set @s AzrEntityTimer 2000
+execute if score @s AzrEntityTimer matches 100..1900 unless entity @n[tag=AzrielBossVillain] run scoreboard players set @s AzrEntityTimer 1990
+execute if score @s AzrEntityTimer matches 100..1900 as @n[tag=AzrielBossVillain] at @s if score @s Health matches ..90 run scoreboard players set @s AzrEntityTimer 1990
+
+execute if score @s AzrEntityTimer matches 1991 run data modify entity @n[tag=AzrielBossVillain] Invulnerable set value 1b
+execute if score @s AzrEntityTimer matches 1993 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
+execute if score @s AzrEntityTimer matches 1993 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“好了！好了！别再打了！”",color:"white",bold: false}]
+
 execute if score @s AzrEntityTimer matches 2001 run stopsound @a[tag=azrShowDialog]
 execute if score @s AzrEntityTimer matches 2001 run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 10 0.7
 execute if score @s AzrEntityTimer matches 2011 run title @a[tag=azrShowDialog] actionbar {text:"Extra Boss Annihilated",color:"green"}
