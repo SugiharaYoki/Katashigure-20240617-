@@ -27,7 +27,6 @@ execute positioned ^2 ^00 ^2 if block ~ ~ ~ air if block ~ ~1 ~ air unless block
 execute positioned ^2 ^01 ^2 if block ~ ~ ~ air if block ~ ~1 ~ air unless block ~ ~-1 ~ air run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_villain_summonable_spot_marker","AzrielMob_mob_marker"]}
 execute positioned ^2 ^-1 ^2 if block ~ ~ ~ air if block ~ ~1 ~ air unless block ~ ~-1 ~ air run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_villain_summonable_spot_marker","AzrielMob_mob_marker"]}
 execute positioned ^2 ^-2 ^2 if block ~ ~ ~ air if block ~ ~1 ~ air unless block ~ ~-1 ~ air run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_villain_summonable_spot_marker","AzrielMob_mob_marker"]}
-
 execute positioned ^2 ^00 ^-2 if block ~ ~ ~ air if block ~ ~1 ~ air unless block ~ ~-1 ~ air run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_villain_summonable_spot_marker","AzrielMob_mob_marker"]}
 execute positioned ^2 ^01 ^-2 if block ~ ~ ~ air if block ~ ~1 ~ air unless block ~ ~-1 ~ air run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_villain_summonable_spot_marker","AzrielMob_mob_marker"]}
 execute positioned ^2 ^-1 ^-2 if block ~ ~ ~ air if block ~ ~1 ~ air unless block ~ ~-1 ~ air run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_villain_summonable_spot_marker","AzrielMob_mob_marker"]}
