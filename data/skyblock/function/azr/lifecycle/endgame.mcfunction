@@ -23,15 +23,18 @@ scoreboard players reset $azrInitialIngredientGiven
 
 #tag @s remove Event18575A
 #______________________________________________________________#
+#重置bossbar
+bossbar remove azr:progress_bar_normal
+bossbar remove azr:progress_bar_bonus
+bossbar remove azr:progress_bar_special
+bossbar remove azr:progress_bar_special_0
 bossbar remove azr:boss_hp_bar
 bossbar remove azr:boss_hp_bar_mossboss
+bossbar remove azr:boss_hp_bar_working
+bossbar remove azr:boss_hp_bar_villain
 bossbar remove azr:boss_hp_bar_diesel
 bossbar remove azr:boss_hp_bar_assassin
 bossbar remove azr:boss_hp_bar_0
-bossbar remove azr:progress_bar_special
-bossbar remove azr:progress_bar_special_0
-bossbar remove azr:progress_bar_normal
-bossbar remove azr:progress_bar_bonus
 #______________________________________________________________#
 #清理小队
 team remove AzrBossA
