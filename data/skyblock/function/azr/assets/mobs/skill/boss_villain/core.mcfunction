@@ -22,7 +22,7 @@ execute if score @s AzrEntityTimer matches 8..11 run playsound minecraft:block.i
 execute if score @s AzrEntityTimer matches 12 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
 execute if score @s AzrEntityTimer matches 12 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“哎哟，我都他妈把红蜡烛插门口了，怎么还搁着往里硬闯呢。”",color:"white",bold: false}]
 execute if score @s AzrEntityTimer matches 22 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
-execute if score @s AzrEntityTimer matches 22 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“这铁门不是他妈关得好好的吗？你这女人又他妈怎么进来的？”",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 22 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“我还他妈在想事情，能不能离我远点？”",color:"white",bold: false}]
 execute if score @s AzrEntityTimer matches 34 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
 execute if score @s AzrEntityTimer matches 34 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“我靠，非得现在和我打吗？行呗行呗，那老子就让你和‘它们’玩玩。”",color:"white",bold: false}]
 
@@ -90,6 +90,12 @@ execute if score @s AzrEntityTimer matches 1993 run tellraw @a[distance=..40,tag
 execute if score @s AzrEntityTimer matches 1993 run stopsound @a[tag=azrShowDialog]
 execute if score @s AzrEntityTimer matches 1993 positioned -79845 48 -128 run kill @e[tag=AzrielMob_husk_temper,type=husk,distance=..55]
 execute if score @s AzrEntityTimer matches 1993 run bossbar remove azr:boss_hp_bar_villain
+
+execute if score @s AzrEntityTimer matches 1995 run fill -79867 48 -130 -79867 48 -127 air
+execute if score @s AzrEntityTimer matches 1996 run fill -79867 49 -130 -79867 49 -127 air
+execute if score @s AzrEntityTimer matches 1997 run fill -79867 50 -130 -79867 50 -127 air
+execute if score @s AzrEntityTimer matches 1998 run fill -79867 51 -130 -79867 51 -127 air
+execute if score @s AzrEntityTimer matches 1995..1998 run playsound minecraft:block.iron_door.open block @a -79867 51 -129.0 3 0.5
 
 execute if score @s AzrEntityTimer matches 2011 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
 execute if score @s AzrEntityTimer matches 2011 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“你不就是图我身上的绿宝石和石板吗？都给你都给你。”",color:"white",bold: false}]
