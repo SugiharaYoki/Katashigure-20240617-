@@ -47,7 +47,6 @@ execute if score @s AzrSariel_Amulet_DownKick_clock matches 11 run attribute @s 
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 11 run attribute @s knockback_resistance modifier remove azr_amulet:downkick_01
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 17..20 run attribute @s gravity base set 0.08
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 9..10 run attribute @s gravity base set 0.08
-execute if score @s AzrSariel_Amulet_DownKick_clock matches 9..10 run attribute @s jump_strength base reset
 
 
 
