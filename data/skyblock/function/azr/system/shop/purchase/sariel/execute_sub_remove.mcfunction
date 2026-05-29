@@ -25,7 +25,7 @@ execute if entity @s[scores={Azr_Shop=8432108}] run scoreboard players add @s Az
 execute if entity @s[scores={Azr_Shop=8432109}] run scoreboard players add @s Azr_emerald 5
 execute if entity @s[scores={Azr_Shop=8432110}] run scoreboard players add @s Azr_emerald 10
 execute if entity @s[scores={Azr_Shop=8432111}] run scoreboard players add @s Azr_emerald 10
-execute if entity @s[scores={Azr_Shop=8432112}] run scoreboard players add @s Azr_emerald 40
+execute if entity @s[scores={Azr_Shop=8432112}] run scoreboard players add @s Azr_emerald 50
 execute if entity @s[scores={Azr_Shop=8432113}] run scoreboard players add @s Azr_emerald 40
 execute if entity @s[scores={Azr_Shop=8432101}] run scoreboard players remove @s AzrSariel_Data_CostAmount 60
 execute if entity @s[scores={Azr_Shop=8432102}] run scoreboard players remove @s AzrSariel_Data_CostAmount 40
@@ -38,7 +38,7 @@ execute if entity @s[scores={Azr_Shop=8432108}] run scoreboard players remove @s
 execute if entity @s[scores={Azr_Shop=8432109}] run scoreboard players remove @s AzrSariel_Data_CostAmount 5
 execute if entity @s[scores={Azr_Shop=8432110}] run scoreboard players remove @s AzrSariel_Data_CostAmount 10
 execute if entity @s[scores={Azr_Shop=8432111}] run scoreboard players remove @s AzrSariel_Data_CostAmount 10
-execute if entity @s[scores={Azr_Shop=8432112}] run scoreboard players remove @s AzrSariel_Data_CostAmount 40
+execute if entity @s[scores={Azr_Shop=8432112}] run scoreboard players remove @s AzrSariel_Data_CostAmount 50
 execute if entity @s[scores={Azr_Shop=8432113}] run scoreboard players remove @s AzrSariel_Data_CostAmount 40
 
 
@@ -115,11 +115,8 @@ execute if entity @s[scores={Azr_Shop=8432134}] run scoreboard players remove @s
 execute if entity @s[scores={Azr_Shop=8432135}] run scoreboard players remove @s AzrSariel_Data_CostAmount 40
 
 execute if entity @s[scores={Azr_Shop=8432136}] run tag @s remove AzrSariel_upg1C
-execute if entity @s[scores={Azr_Shop=8432136}] run scoreboard players add @s Azr_emerald 30
-execute if entity @s[scores={Azr_Shop=8432136}] run scoreboard players remove @s AzrSariel_Data_CostAmount 30
-execute if entity @s[scores={Azr_Shop=8432137}] run tag @s remove AzrSariel_upg13D
-execute if entity @s[scores={Azr_Shop=8432137}] run scoreboard players add @s Azr_emerald 30
-execute if entity @s[scores={Azr_Shop=8432137}] run scoreboard players remove @s AzrSariel_Data_CostAmount 30
+execute if entity @s[scores={Azr_Shop=8432136}] run scoreboard players add @s Azr_emerald 60
+execute if entity @s[scores={Azr_Shop=8432136}] run scoreboard players remove @s AzrSariel_Data_CostAmount 60
 
 execute if entity @s[scores={Azr_Shop=8432138}] run tag @s remove AzrSariel_upg1E
 execute if entity @s[scores={Azr_Shop=8432139}] run tag @s remove AzrSariel_upg3E
