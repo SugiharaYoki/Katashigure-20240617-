@@ -308,7 +308,7 @@ execute if entity @s[tag=!AzrSariel_upg16F] run data modify entity @n[tag=AzrSar
 #  06 生    剪
 #  07 ★ 商 绿
 #  08 攻    抹
-#  09 速 电 电 复
+#  09 速 电 电 复 攻
 #  10 攻    缓
 #  11 速 缓 缓 电
 #  12 攻    磁 复
@@ -381,7 +381,8 @@ tellraw @s [{text:" ",color:"light_purple"},\
 {selector:"@n[tag=AzrSariel_displaymarker9]",color:"#7b5dff",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432109"},hover_event:{"action":"show_text","value":{text:"消耗：5\n攻击速度 +0.1",color:"white"}}},\
 {selector:"@n[tag=AzrSariel_displaymarker9B]",color:"#576fe4",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432117"},hover_event:{"action":"show_text","value":{text:"消耗：5\n攻击生灵时，释放一个不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n伤害：2/3/4 持续时间：1.6/2.2/2.5 冷却：2\n重复选中将升级效果",color:"white"}}},\
 {selector:"@n[tag=AzrSariel_displaymarker9C]",color:"#576fe4",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432118"},hover_event:{"action":"show_text","value":{text:"消耗：20\n攻击生灵时，释放一个不断追踪生灵的电球\n电球成功造成攻击后将会停顿0.25秒\n伤害：2/3/4 持续时间：1.6/2.2/2.5 冷却：2\n重复选中将升级效果",color:"white"}}},\
-{selector:"@n[tag=AzrSariel_displaymarker9D]",color:"#716987",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432141"},hover_event:{"action":"show_text","value":{text:"消耗：40\n死亡时有30%/60%/90%的概率不损失绿宝石\n刷新时有15%/30%/45%的概率不消耗绿宝石\n重复选中将升级效果",color:"white"}}}]
+{selector:"@n[tag=AzrSariel_displaymarker9D]",color:"#716987",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432141"},hover_event:{"action":"show_text","value":{text:"消耗：40\n死亡时有30%/60%/90%的概率不损失绿宝石\n刷新时有15%/30%/45%的概率不消耗绿宝石\n重复选中将升级效果",color:"white"}}},\
+{selector:"@n[tag=AzrSariel_displaymarker9E]",color:"#ff5d5d",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432144"},hover_event:{"action":"show_text","value":{text:"消耗：80\n攻击力 +0.5",color:"white"}}}]
 
 tellraw @s [{text:" ",color:"light_purple"},\
 {selector:"@n[tag=AzrSariel_displaymarker0b]",color:"dark_gray"},\
