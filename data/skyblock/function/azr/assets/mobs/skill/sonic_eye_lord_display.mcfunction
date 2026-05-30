@@ -4,8 +4,8 @@ particle soul_fire_flame ^0.2 ^ ^3 0.05 0.05 0.05 0.00 1
 particle soul_fire_flame ^-0.2 ^ ^-3 0.05 0.05 0.05 0.00 1
 particle soul_fire_flame ^5 ^ ^ 0.05 0.05 0.05 0.00 1
 particle soul_fire_flame ^-5 ^ ^ 0.05 0.05 0.05 0.00 1
-particle soul_fire_flame ^ ^5 ^ 0.05 0.05 0.05 0.00 1
-particle soul_fire_flame ^ ^-5 ^ 0.05 0.05 0.05 0.00 1
+particle soul_fire_flame ^ ^5 ^0.2 0.05 0.05 0.05 0.00 1
+particle soul_fire_flame ^ ^-5 ^-0.2 0.05 0.05 0.05 0.00 1
 particle soul_fire_flame ^2 ^ ^1 0 0 0 0.00 1
 particle soul_fire_flame ^-2 ^ ^1 0 0 0 0.00 1
 particle soul_fire_flame ^2 ^ ^-1 0 0 0 0.00 1
