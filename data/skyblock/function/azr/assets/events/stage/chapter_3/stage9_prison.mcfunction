@@ -318,9 +318,11 @@ execute positioned -79867 49 -128 as @n[tag=AzrielMarker_encounter,distance=0..0
 
 #冲入深处
 execute positioned -79892 39 -145 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
-execute positioned -79892 39 -145 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/events/stage/chapter_3/area_prison/npc_conversation_marinus_before_boss
+execute positioned -79892 39 -145 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=..200}] run function skyblock:azr/assets/events/stage/chapter_3/area_prison/npc_conversation_marinus_before_boss
 
 
+execute positioned -79894 32 -174 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
+execute positioned -79894 32 -174 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=..500}] run function skyblock:azr/assets/events/stage/chapter_3/area_prison/event_entering_inner_prison
 
 
 
