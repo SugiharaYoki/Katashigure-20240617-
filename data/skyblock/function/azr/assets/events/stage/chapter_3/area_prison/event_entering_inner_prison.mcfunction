@@ -36,10 +36,12 @@ execute if score @s rng1 matches 36 run tellraw @a[tag=azrShowDialog,distance=..
 execute if score @s rng1 matches 44 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
 execute if score @s rng1 matches 44 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“安静是正常的，魔物本身就很安静。”",color:"white"}]
 execute if score @s rng1 matches 54 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
-execute if score @s rng1 matches 54 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“……但牢房内区根本不长这样。这里是哪里？”",color:"white"}]
+execute if score @s rng1 matches 54 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“……但牢房内区根本不该有红色结界，这是用于神庭挑战的结界。”",color:"white"}]
 
-execute if score @s rng1 matches 64 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“……那个，”",color:"white"}]
+execute if score @s rng1 matches 64 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“……那个，马林努斯？”",color:"white"}]
 execute if score @s rng1 matches 70 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“回去的路消失了。”",color:"white"}]
+execute if score @s rng1 matches 50 run playsound ambient.soul_sand_valley.loop ambient @a ~ ~ ~ 19 0.7
+execute if score @s rng1 matches 70 run stopsound @a[tag=azrShowDialog,distance=..40]
 
 execute if score @s rng1 matches 82 positioned -79890.02 33.00 -171.96 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“敌人在背后！！！”",color:"white"}]
 execute if score @s rng1 matches 82.. run scoreboard players add stage_boss_bgm AzrTimerStack 1
