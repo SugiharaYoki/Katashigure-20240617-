@@ -141,11 +141,13 @@ execute if score @s rng1 matches 477 as @a[distance=..200,tag=azrShowDialog] at 
 
 execute if score @s rng1 matches 375.. as @n[tag=AzrielNPC_flauros] store result score @s Health run data get entity @s Health
 execute if score @s rng1 matches 375.. store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielNPC_flauros] Health
-execute if score @s rng1 matches 375 run bossbar add azr:boss_hp_bar "邪魔引路者 - 佛劳洛斯"
+execute if score @s rng1 matches 242 run bossbar add azr:boss_hp_bar "黑袍法师"
+execute if score @s rng1 matches 242 run bossbar set azr:boss_hp_bar color blue
+execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar name "邪魔引路者 - 佛劳洛斯"
 execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar color purple
-execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar max 50
-execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar style notched_12
-execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
+execute if score @s rng1 matches 242 run bossbar set azr:boss_hp_bar max 50
+execute if score @s rng1 matches 242 run bossbar set azr:boss_hp_bar style notched_12
+execute if score @s rng1 matches 242 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 
 execute if score @s rng1 matches 385 positioned -79890.01 33.00 -173.02 run function skyblock:azr/assets/mobs/unique/sonic_eye_lord
 execute if score @s rng1 matches 385.. positioned -79890.01 33.00 -173.02 as @n[tag=AzrielMob_sonic_eye_lord] at @s rotated as @s unless entity @a[tag=azrPlayer,distance=..6] facing entity @p[tag=azrPlayer,distance=..90] eyes run tp @s ^ ^ ^0.3
