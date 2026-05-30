@@ -277,7 +277,7 @@ execute if score @s rng1 matches 860 positioned -79892 24 -179 run summon marker
 execute if score @s rng1 matches 560 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“快去吧，这里有我。”",color:"white"}]
 execute if score @s rng1 matches 660 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“……非常感谢。”",color:"white"}]
 execute if score @s rng1 matches 670 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“没关系，我会殿后。”",color:"white"}]
-execute if score @s rng1 matches 870 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎，快来不及了。”",color:"white"}]
+execute if score @s rng1 matches 870 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“……爱理莎，快来不及了。”",color:"white"}]
 
 execute if score @s rng1 matches 990..999 run scoreboard players set @s rng1 990
 execute if score @s rng1 matches 990..999 if entity @a[tag=azrPlayer,x=-79894,y=20,z=-232,dx=8,dy=8,dz=8] if entity @n[tag=AzrielMob_sonic_eye_lord,x=-79896,y=20,z=-228,dx=12,dy=8,dz=12] run scoreboard players set @s rng1 1000
