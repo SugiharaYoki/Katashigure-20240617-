@@ -160,9 +160,24 @@ execute if score @s rng1 matches 430 run tellraw @a[tag=azrShowDialog,distance=.
 
 execute if score @s rng1 matches 444 run tp @n[tag=azrielNPC_marinus] -79890.01 24.00 -216.07
 
-execute if score @s rng1 matches 450 run fill -79893 24 -221 -79888 32 -221 minecraft:air destroy
+execute if score @s rng1 matches 450 run fill -79893 24 -221 -79888 26 -221 minecraft:air destroy
+execute if score @s rng1 matches 451 run fill -79893 27 -221 -79888 29 -221 minecraft:air destroy
+execute if score @s rng1 matches 452 run fill -79893 24 -221 -79888 32 -221 minecraft:air destroy
 
-
-
-
+execute if score @s rng1 matches 447 run kill @e[tag=AzrielMarker_boss3_marinus_full_power_slash_marker,distance=..50,type=marker]
+execute if score @s rng1 matches 448 positioned -79889.99 25.91 -220.00 run summon marker ~ ~ ~ {Tags:["AzrielMarker_boss3_marinus_full_power_slash_marker"]}
+execute if score @s rng1 matches 448 as @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker] at @s positioned -79889.96 25.02 -220.00 run function skyblock:azr/assets/mobs/skill/marinus/attack_instant_slash
+execute if score @s rng1 matches 448 run kill @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker,distance=..50,type=marker]
+execute if score @s rng1 matches 449 positioned -79889.99 26.91 -220.00 run summon marker ~ ~ ~ {Tags:["AzrielMarker_boss3_marinus_full_power_slash_marker"]}
+execute if score @s rng1 matches 449 as @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker] at @s positioned -79889.96 25.02 -220.00 run function skyblock:azr/assets/mobs/skill/marinus/attack_instant_slash
+execute if score @s rng1 matches 449 run kill @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker,distance=..50,type=marker]
+execute if score @s rng1 matches 450 positioned -79889.99 27.91 -220.00 run summon marker ~ ~ ~ {Tags:["AzrielMarker_boss3_marinus_full_power_slash_marker"]}
+execute if score @s rng1 matches 450 as @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker] at @s positioned -79889.96 25.02 -220.00 run function skyblock:azr/assets/mobs/skill/marinus/attack_instant_slash
+execute if score @s rng1 matches 450 run kill @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker,distance=..50,type=marker]
+execute if score @s rng1 matches 451 positioned -79889.99 28.91 -220.00 run summon marker ~ ~ ~ {Tags:["AzrielMarker_boss3_marinus_full_power_slash_marker"]}
+execute if score @s rng1 matches 451 as @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker] at @s positioned -79889.96 25.02 -220.00 run function skyblock:azr/assets/mobs/skill/marinus/attack_instant_slash
+execute if score @s rng1 matches 451 run kill @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker,distance=..50,type=marker]
+execute if score @s rng1 matches 452 positioned -79889.99 29.91 -220.00 run summon marker ~ ~ ~ {Tags:["AzrielMarker_boss3_marinus_full_power_slash_marker"]}
+execute if score @s rng1 matches 452 as @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker] at @s positioned -79889.96 25.02 -220.00 run function skyblock:azr/assets/mobs/skill/marinus/attack_instant_slash
+execute if score @s rng1 matches 452 run kill @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker,distance=..50,type=marker]
 
