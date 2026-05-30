@@ -69,7 +69,7 @@ clone -79908 8 -113 -79903 14 -110 -79908 45 -113
 execute positioned -79910 47 -130 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79910 47 -130 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 5000
 execute positioned -79867 48 -109 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 5000
+execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 123
 
 execute positioned -79886 47 -109 run function skyblock:azr/assets/mobs/skeleton_sword
 execute positioned -79886 47 -109 run function skyblock:azr/assets/mobs/skeleton_sword
