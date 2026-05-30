@@ -25,8 +25,11 @@ execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] run particle sculk_charge_
 execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] store result score @s rng2 run random value 1..20
 execute if entity @s[tag=!AzrielMob_sonic_eye_reveal] if entity @a[tag=azrPlayer,distance=..16] if score @s rng2 matches 1..2 run particle soul_fire_flame ~ ~0.1 ~ 0.55 0.55 0.55 0.00 1
 execute if entity @s[tag=AzrielMob_sonic_eye_reveal] run particle sculk_charge_pop ~ ~0.3 ~ 0.7 0.7 0.7 0.02 1
-execute if entity @s[tag=AzrielMob_sonic_eye_reveal] run particle soul_fire_flame ~ ~0.3 ~ 0.85 0.85 0.85 0.00 2
+execute if entity @s[tag=AzrielMob_sonic_eye_reveal] run particle soul_fire_flame ~ ~0.3 ~ 0.85 0.85 0.85 0.00 1
 execute if entity @s[tag=AzrielMob_sonic_eye_reveal] at @s run tp @n[tag=AzrielMob_sonic_eye_lord_item_display] ~ ~0.3 ~
+
+
+
 
 #execute if entity @s[tag=AzrielMob_sonic_eye_reveal] store result score @s rng4 if entity @e[tag=AzrielMob_trap_sonic_laser,distance=..4.3]
 #execute if entity @s[tag=AzrielMob_sonic_eye_reveal] if entity @p[tag=azrPlayer,distance=..7] unless score @s rng4 matches 2.. store result score @s rng2 run random value 1..20
