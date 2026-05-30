@@ -131,6 +131,7 @@ execute if score @s rng1 matches 455 as @a[distance=..200,tag=azrShowDialog] at 
 execute if score @s rng1 matches 466 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",color:"red",bold:1b},{text:"\n“原谅我最后的不忠，请不去在意我的僭越，这一切都是为了必将到来的审判。”",color:"white",bold: false}]
 execute if score @s rng1 matches 477 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",color:"red",bold:1b},{text:"\n“漆黑的深渊，你是如此崇高。在这王座之上，我依然渺小。渺小的天使，将使渺小的人坠入地狱。”",color:"white",bold: false}]
 
+execute if score @s rng1 matches 375.. as @n[tag=AzrielNPC_flauros] store result score @s Health run data get entity @s Health
 execute if score @s rng1 matches 375.. store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielNPC_flauros] Health
 execute if score @s rng1 matches 375 run bossbar add azr:boss_hp_bar "邪魔引路者 - 佛劳洛斯"
 execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar color purple
@@ -142,7 +143,7 @@ execute if score @s rng1 matches 385 positioned -79890.01 33.00 -173.02 run func
 execute if score @s rng1 matches 385.. positioned -79890.01 33.00 -173.02 as @n[tag=AzrielMob_sonic_eye_lord] at @s rotated as @s unless entity @a[tag=azrPlayer,distance=..6] facing entity @p[tag=azrPlayer,distance=..90] eyes run tp @s ^ ^ ^0.3
 
 execute if score @s rng1 matches 395.. store result bossbar azr:boss_hp_bar_2 value run scoreboard players get @n[tag=AzrielNPC_flauros] Health
-execute if score @s rng1 matches 395 run bossbar add azr:boss_hp_bar_2 "窥视妄违之邪瞳 - 恣眼"
+execute if score @s rng1 matches 395 run bossbar add azr:boss_hp_bar_2 "窥妄视违之邪瞳 - 恣眼"
 execute if score @s rng1 matches 395 run bossbar set azr:boss_hp_bar_2 color red
 execute if score @s rng1 matches 395 run bossbar set azr:boss_hp_bar_2 max 300
 execute if score @s rng1 matches 395 run bossbar set azr:boss_hp_bar_2 players @a[tag=azrShowDialog]
