@@ -102,6 +102,7 @@ execute positioned -79889 40 -153 run effect give @n[type=vindicator,distance=..
 execute positioned -79889 40 -153 run attribute @n[type=vindicator,distance=..5] knockback_resistance base set 1
 
 execute positioned -79879 47 -109 as @e[tag=AzrielNPC_Divineforce,distance=15..120,tag=!AzrielNPC_stage9_prison_entry_conversation1,tag=!AzrielMob_ch3_middlesidegate_swordman,type=!villager,type=!parrot,type=!evoker,tag=!AzrielNPC_stage9_entry_conversation3] run tp @s -79890 40 -140
+
 tp @n[tag=AzrielNPC_marinus] -79892 40 -145
 
 fill -79876 47 -107 -79876 52 -111 air

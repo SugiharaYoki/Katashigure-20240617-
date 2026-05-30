@@ -91,7 +91,7 @@ execute as @s[scores={rng1=314}] positioned -79894 32 -174 unless entity @n[tag=
 execute as @s[scores={rng1=394}] positioned -79894 32 -174 unless entity @n[tag=AzrielMarker_encounter] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“谢谢您保护我们，爱理莎女士。救命之恩，没齿难忘。”",color:"white"}]
 
 
-
+execute as @s[scores={rng1=114..150}] run tp @n[tag=AzrielNPC_marinus] -79892 40 -145
 
 
 scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..12}] Azr_skillPoints 13
