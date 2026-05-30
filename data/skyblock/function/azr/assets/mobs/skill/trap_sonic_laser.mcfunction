@@ -2,6 +2,7 @@ scoreboard players add @s rng1 1
 
 particle sculk_charge_pop ~ ~0.1 ~ 0.1 0.1 0.1 0.03 3
 
+execute unless entity @a[tag=azrPlayer,distance=..15] run kill @s
 
 execute if score @s rng1 matches 2..3 run scoreboard players set @s rng1 2
 execute if score @s rng1 matches 2..3 store result score @s rng9 run random value 1..5
