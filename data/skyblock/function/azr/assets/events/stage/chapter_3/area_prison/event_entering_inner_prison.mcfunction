@@ -8,7 +8,7 @@ execute if score @s rng1 matches 2..3 if entity @a[tag=azrPlayer,x=-79894,y=32,z
 execute if score @s rng1 matches 4 as @e[type=#illager,distance=..30,tag=AzrielNPC_Divineforce,scores={AzrielNPC_FollowInterest=..80000}] at @s run scoreboard players set @s AzrielNPC_FollowInterest 99999
 execute if score @s rng1 matches 5 positioned -79890.02 33.00 -171.96 as @a[tag=azrPlayer,distance=10..] run tp @s ~ ~ ~ facing -79890.02 33.00 -172.96
 
-execute if score @s rng1 matches 4 run tp @n[tag=AzrielNPC_marinus] -79888 40 -160
+execute if score @s rng1 matches 2 run tp @n[tag=AzrielNPC_marinus] -79888 40 -160
 
 execute if score @s rng1 matches 7 positioned -79890.02 33.00 -171.96 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“你们谁把门又关起来了？！”",color:"white"}]
 execute if score @s rng1 matches 15 positioned -79890.02 33.00 -171.96 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“不……不知道啊！不是我们关的！”",color:"white"}]
