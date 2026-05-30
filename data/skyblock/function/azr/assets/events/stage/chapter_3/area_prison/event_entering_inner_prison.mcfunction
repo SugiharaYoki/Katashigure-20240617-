@@ -139,6 +139,7 @@ execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar style notch
 execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 
 execute if score @s rng1 matches 385 positioned -79890.01 33.00 -173.02 run function skyblock:azr/assets/mobs/unique/sonic_eye_lord
+execute if score @s rng1 matches 385.. positioned -79890.01 33.00 -173.02 as @n[tag=AzrielMob_sonic_eye_lord] at @s rotated as @s unless entity @a[tag=azrPlayer,distance=..6] facing entity @p[tag=azrPlayer,distance=..90] eyes run tp @s ^ ^ ^0.3
 
 execute if score @s rng1 matches 395.. store result bossbar azr:boss_hp_bar_2 value run scoreboard players get @n[tag=AzrielNPC_flauros] Health
 execute if score @s rng1 matches 395 run bossbar add azr:boss_hp_bar_2 "窥视妄违之邪瞳 - 恣眼"
