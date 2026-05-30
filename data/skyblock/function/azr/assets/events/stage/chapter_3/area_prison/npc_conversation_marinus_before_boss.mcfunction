@@ -39,6 +39,7 @@ execute if score @s rng1 matches 148 run playsound minecraft:entity.villager.amb
 execute if score @s rng1 matches 148 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“所有人准备好。……开门！”",color:"white"}]
 
 
+execute if score @s rng1 matches 154 as @e[type=#illager,distance=..30,tag=AzrielNPC_Divineforce,scores={AzrielNPC_FollowInterest=..500}] at @s run scoreboard players set @s AzrielNPC_FollowInterest 80000
 
 execute if score @s rng1 matches 154 run fill -79892 40 -154 -79889 40 -154 air
 execute if score @s rng1 matches 155 run fill -79892 41 -154 -79889 41 -154 air
