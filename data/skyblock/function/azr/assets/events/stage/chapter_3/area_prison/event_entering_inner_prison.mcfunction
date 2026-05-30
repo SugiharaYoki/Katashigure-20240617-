@@ -14,6 +14,15 @@ execute if score @s rng1 matches 6 run tp @n[tag=AzrielNPC_marinus] -79893 33 -1
 execute if score @s rng1 matches 7 positioned -79890.02 33.00 -171.96 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“你们谁把门又关起来了？！”",color:"white"}]
 execute if score @s rng1 matches 15 positioned -79890.02 33.00 -171.96 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“不……不知道啊！不是我们关的！”",color:"white"}]
 
+execute if score @s rng1 matches 28 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 28 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“不太对劲。”",color:"white"}]
+execute if score @s rng1 matches 36 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“是因为太安静了吗？”",color:"white"}]
+execute if score @s rng1 matches 44 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 44 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“安静是正常的，魔物本身就很安静。”",color:"white"}]
+execute if score @s rng1 matches 54 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 54 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“……但牢房内区根本不长这样。这里是哪里？”",color:"white"}]
+
+
 execute if score @s rng1 matches 5 run fill -79892 43 -154 -79889 43 -154 iron_bars
 execute if score @s rng1 matches 6 run fill -79892 42 -154 -79889 42 -154 iron_bars
 execute if score @s rng1 matches 7 run fill -79892 41 -154 -79889 41 -154 iron_bars
