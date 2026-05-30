@@ -180,10 +180,10 @@ execute if score @s rng1 matches 160.. if score @s rng2 matches 13 as @a[tag=azr
 
 #-79892 23 -179
 
-execute if score @s rng1 matches 400 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“马林努斯！我问你，神界的神使有没有能力将那红色的结界击碎？！”",color:"white"}]
+execute if score @s rng1 matches 402 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“马林努斯！我问你，神界的神使有没有能力将那红色的结界击碎？！”",color:"white"}]
 execute if score @s rng1 matches 410 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“值得一试。爱理莎，你要做什么？”",color:"white"}]
-execute if score @s rng1 matches 420 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“恣眼在这里，你们都得没命，我来引开它。”",color:"white"}]
-execute if score @s rng1 matches 430 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“好。这会耗尽我的力量，你一定要成功。”",color:"white"}]
+execute if score @s rng1 matches 420 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“恣眼继续在这里的话，你们都得没命，我来引开它。”",color:"white"}]
+execute if score @s rng1 matches 430 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“好。这会耗尽我的力量，祝你成功。”",color:"white"}]
 
 execute if score @s rng1 matches 428 run tp @n[tag=AzrielNPC_marinus] -79890.01 24.00 -216.07
 
