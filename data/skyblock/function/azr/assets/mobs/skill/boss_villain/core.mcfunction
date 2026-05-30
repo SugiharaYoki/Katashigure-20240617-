@@ -128,3 +128,14 @@ execute if score @s AzrEntityTimer matches 11..1900 unless entity @a[tag=azrPlay
 execute if score @s AzrEntityTimer matches 11..1900 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] positioned -79867 49 -128 run tag @n[tag=AzrielMarker_encounter,distance=..1] add AzrielBossVillain_attempted
 execute if score @s AzrEntityTimer matches 11..1900 unless entity @a[tag=azrPlayer,x=-79866,dx=30,y=40,dy=19,z=-145,dz=30] run kill @s
 
+
+
+
+
+
+
+
+
+
+
+
