@@ -151,11 +151,11 @@ execute if score @s rng1 matches 385 positioned -79890.01 33.00 -173.02 run func
 execute if score @s rng1 matches 385.. positioned -79890.01 33.00 -173.02 as @n[tag=AzrielMob_sonic_eye_lord] at @s rotated as @s unless entity @a[tag=azrPlayer,distance=..6] facing entity @p[tag=azrPlayer,distance=..90] eyes run tp @s ^ ^ ^0.3
 execute if score @s rng1 matches 385.. positioned -79890.01 33.00 -173.02 as @n[tag=AzrielMob_sonic_eye_lord] at @s rotated as @s unless entity @a[tag=azrPlayer,distance=..8] facing entity @p[tag=azrPlayer,distance=..90] eyes run tp @s ^ ^ ^1.4
 
-execute if score @s rng1 matches 395.. store result bossbar azr:boss_hp_bar_2 value run scoreboard players get @n[tag=AzrielNPC_flauros] Health
-execute if score @s rng1 matches 395 run bossbar add azr:boss_hp_bar_2 "窥妄视违之邪瞳 - 恣眼"
-execute if score @s rng1 matches 395 run bossbar set azr:boss_hp_bar_2 color red
-execute if score @s rng1 matches 395 run bossbar set azr:boss_hp_bar_2 max 300
-execute if score @s rng1 matches 395 run bossbar set azr:boss_hp_bar_2 players @a[tag=azrShowDialog]
+execute if score @s rng1 matches 415.. store result bossbar azr:boss_hp_bar_2 value run scoreboard players get @n[tag=AzrielNPC_flauros] Health
+execute if score @s rng1 matches 415 run bossbar add azr:boss_hp_bar_2 "窥妄视违之邪瞳 - 恣眼"
+execute if score @s rng1 matches 415 run bossbar set azr:boss_hp_bar_2 color red
+execute if score @s rng1 matches 415 run bossbar set azr:boss_hp_bar_2 max 300
+execute if score @s rng1 matches 415 run bossbar set azr:boss_hp_bar_2 players @a[tag=azrShowDialog]
 
 execute if score @s rng1 matches 395.. run scoreboard players add @n[tag=AzrielMob_sonic_eye_lord,distance=..150] rng9 1
 execute if score @s rng1 matches 395.. as @n[tag=AzrielMob_sonic_eye_lord,distance=..150] at @s if score @s rng9 matches 20 run scoreboard players set @s rng9 0
