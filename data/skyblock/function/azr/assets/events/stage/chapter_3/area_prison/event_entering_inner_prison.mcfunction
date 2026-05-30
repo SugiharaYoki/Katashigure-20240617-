@@ -149,6 +149,7 @@ execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar players @a[
 
 execute if score @s rng1 matches 385 positioned -79890.01 33.00 -173.02 run function skyblock:azr/assets/mobs/unique/sonic_eye_lord
 execute if score @s rng1 matches 385.. positioned -79890.01 33.00 -173.02 as @n[tag=AzrielMob_sonic_eye_lord] at @s rotated as @s unless entity @a[tag=azrPlayer,distance=..6] facing entity @p[tag=azrPlayer,distance=..90] eyes run tp @s ^ ^ ^0.3
+execute if score @s rng1 matches 385.. positioned -79890.01 33.00 -173.02 as @n[tag=AzrielMob_sonic_eye_lord] at @s rotated as @s unless entity @a[tag=azrPlayer,distance=..8] facing entity @p[tag=azrPlayer,distance=..90] eyes run tp @s ^ ^ ^1.4
 
 execute if score @s rng1 matches 395.. store result bossbar azr:boss_hp_bar_2 value run scoreboard players get @n[tag=AzrielNPC_flauros] Health
 execute if score @s rng1 matches 395 run bossbar add azr:boss_hp_bar_2 "窥妄视违之邪瞳 - 恣眼"
@@ -311,7 +312,7 @@ execute if score @s rng1 matches 1022 run playsound entity.generic.explode block
 execute if score @s rng1 matches 1022 run fill -79894 23 -233 -79887 23 -226 air destroy
 execute if score @s rng1 matches 1024 run particle cloud ~ ~-0.3 ~ 0 0 0 0.5 50
 execute if score @s rng1 matches 1024 run playsound minecraft:block.beacon.activate player @a ~ ~ ~ 1 0.6
-execute if score @s rng1 matches 1024 run effect give @a[tag=azrPlayer] slow_falling 10 225 true
+execute if score @s rng1 matches 1022 run effect give @a[tag=azrPlayer] slow_falling 10 225 true
 execute if score @s rng1 matches 1022 as @a[tag=azrPlayer] at @s unless entity @s[x=-79894,y=20,z=-234,dx=8,dy=8,dz=8] run tp @s -79890.09 24.00 -229.07
 
 execute if score @s rng1 matches 1030 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n（等等……我坠落的速度，有什么东西拖住了我？）",color:"white"}]
