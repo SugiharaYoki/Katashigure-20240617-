@@ -41,7 +41,7 @@ execute positioned -79845 48 -128 as @n[tag=AzrielBossVillain,type=villager,dist
 execute positioned -79845 48 -128 store result bossbar azr:boss_hp_bar_villain value run scoreboard players get @n[tag=AzrielBossVillain] Health
 
 execute if score @s AzrEntityTimer matches 61 as @n[tag=AzrielBossVillain] at @s run effect clear @s resistance
-execute if score @s AzrEntityTimer matches 61 as @n[tag=AzrielBossVillain] at @s run attribute @s armor_resistance base set 10
+execute if score @s AzrEntityTimer matches 61 as @n[tag=AzrielBossVillain] at @s run attribute @s armor_toughness base set 10
 execute if score @s AzrEntityTimer matches 62 as @n[tag=AzrielBossVillain] at @s run effect give @s resistance 50 2 true
 
 #AI
