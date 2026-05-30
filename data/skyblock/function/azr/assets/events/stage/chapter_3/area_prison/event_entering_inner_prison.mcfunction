@@ -176,11 +176,25 @@ execute if score @s rng1 matches 410 run tellraw @a[tag=azrShowDialog,distance=.
 execute if score @s rng1 matches 420 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“恣眼在这里，你们都得没命，我来引开它。”",color:"white"}]
 execute if score @s rng1 matches 430 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“好。这会耗尽我的力量，你一定要成功。”",color:"white"}]
 
-execute if score @s rng1 matches 444 run tp @n[tag=azrielNPC_marinus] -79890.01 24.00 -216.07
+execute if score @s rng1 matches 428 run tp @n[tag=azrielNPC_marinus] -79890.01 24.00 -216.07
 
 execute if score @s rng1 matches 450 run fill -79893 24 -221 -79888 26 -221 minecraft:air destroy
 execute if score @s rng1 matches 451 run fill -79893 27 -221 -79888 29 -221 minecraft:air destroy
 execute if score @s rng1 matches 452 run fill -79893 24 -221 -79888 32 -221 minecraft:air destroy
+
+execute if score @s rng1 matches 438 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
+execute if score @s rng1 matches 428..447 at @s rotated as @s rotated ~ 0 run particle trial_spawner_detection ^2 ^ ^2 0 0 0 0 1
+execute if score @s rng1 matches 428..447 at @s rotated as @s rotated ~ 0 run particle trial_spawner_detection ^2 ^ ^-2 0 0 0 0 1
+execute if score @s rng1 matches 428..447 at @s rotated as @s rotated ~ 0 run particle trial_spawner_detection ^-2 ^ ^2 0 0 0 0 1
+execute if score @s rng1 matches 428..447 at @s rotated as @s rotated ~ 0 run particle trial_spawner_detection ^-2 ^ ^-2 0 0 0 0 1
+execute if score @s rng1 matches 438..447 at @s rotated as @s rotated ~ 0 run particle trial_spawner_detection ^ ^ ^ 1 0 1 0 8
+execute if score @s rng1 matches 428 run playsound minecraft:entity.wither.spawn hostile @a ~ ~ ~ 2 1.5
+execute if score @s rng1 matches 428 run playsound minecraft:ambient.soul_sand_valley.mood player @s ~ ~ ~ 2 1.3
+execute if score @s rng1 matches 428 run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
+execute if score @s rng1 matches 428 run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
+execute if score @s rng1 matches 428 run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
+
+
 
 execute if score @s rng1 matches 447 run kill @e[tag=AzrielMarker_boss3_marinus_full_power_slash_marker,distance=..50,type=marker]
 execute if score @s rng1 matches 448 positioned -79889.99 25.91 -220.00 run summon marker ~ ~ ~ {Tags:["AzrielMarker_boss3_marinus_full_power_slash_marker"]}
