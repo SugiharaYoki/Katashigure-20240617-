@@ -113,3 +113,11 @@ execute positioned -79892 39 -145 run summon marker ~ ~ ~ {Tags:["AzrielMarker_e
 
 
 setblock -79900 41 -60 air
+
+
+
+tag @a[tag=azrPlayer] add azrPlayer_respawnanchor_unlocked_westcourt_c
+tag @a[tag=azrPlayer] add azrPlayer_respawnanchor_unlocked_prison_a
+tag @a[tag=azrPlayer] add azrPlayer_respawnanchor_unlocked_prison_b
+
+
