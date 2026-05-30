@@ -81,11 +81,17 @@ execute as @s[scores={rng1=170..171}] at @n[distance=..20,tag=AzrielNPC_stage9_p
 execute as @s[scores={rng1=172}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“谢、谢谢你，爱理莎女士……”",color:"white"}]
 execute as @s[scores={rng1=184}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“我们剩下的人越来越少了。要是权之残影大人在就好了，他一定会知道这一切究竟是怎么回事的……”",color:"white"}]
 execute as @s[scores={rng1=204}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“该死，什么时候才能回到正常的日子啊……”",color:"white"}]
-execute as @s[scores={rng1=254}] run tellraw @a[tag=azrShowDialog,distance=0..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“太荒唐了，我的死法……”",color:"white"}]
-execute as @s[scores={rng1=264}] run tellraw @a[tag=azrShowDialog,distance=0..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“与我身边的任何人都无关，甚至与我无关，根本没有避开的方式……”",color:"white"}]
-execute as @s[scores={rng1=273}] at @n[tag=AzrielBossVillain] run tellraw @a[tag=azrShowDialog,distance=0..20] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“啥乱七八糟的，被我打得有感而发了？”",color:"white",bold: false}]
-execute as @s[scores={rng1=284}] at @n[tag=AzrielBossVillain] run tellraw @a[tag=azrShowDialog,distance=0..20] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“妈的，你战斗的时候不要被情绪影响！感情这玩意根本就是留给生者的小礼物，亡者只配归于尘土。操他妈的魔界。”",color:"white",bold: false}]
-execute as @s[scores={rng1=274}] at @n[tag=AzrielNPC_marinus] run tellraw @a[tag=azrShowDialog,distance=0..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“……听到这些，我为你感到遗憾。”",color:"white"}]
-execute as @s[scores={rng1=282}] at @n[tag=AzrielNPC_marinus] run tellraw @a[tag=azrShowDialog,distance=0..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“我希望你夺回你本该有的。”",color:"white"}]
-execute as @s[scores={rng1=314}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎女士，您还在啊。牢房区域的怪物可能会从任何角落突然窜出来，一定要当心。”",color:"white"}]
-execute as @s[scores={rng1=394}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“谢谢您保护我们，爱理莎女士。救命之恩，没齿难忘。”",color:"white"}]
+execute as @s[scores={rng1=254}] positioned -79894 32 -174 unless entity @n[tag=AzrielMarker_encounter] run tellraw @a[tag=azrShowDialog,distance=0..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“太荒唐了，我的死法……”",color:"white"}]
+execute as @s[scores={rng1=264}] positioned -79894 32 -174 unless entity @n[tag=AzrielMarker_encounter] run tellraw @a[tag=azrShowDialog,distance=0..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“与我身边的任何人都无关，甚至与我无关，根本没有避开的方式……”",color:"white"}]
+execute as @s[scores={rng1=273}] positioned -79894 32 -174 unless entity @n[tag=AzrielMarker_encounter] at @n[tag=AzrielBossVillain] run tellraw @a[tag=azrShowDialog,distance=0..20] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“啥乱七八糟的，被我打得有感而发了？”",color:"white",bold: false}]
+execute as @s[scores={rng1=284}] positioned -79894 32 -174 unless entity @n[tag=AzrielMarker_encounter] at @n[tag=AzrielBossVillain] run tellraw @a[tag=azrShowDialog,distance=0..20] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“妈的，你战斗的时候不要被情绪影响！感情这玩意根本就是留给生者的小礼物，亡者只配归于尘土。操他妈的魔界。”",color:"white",bold: false}]
+execute as @s[scores={rng1=274}] positioned -79894 32 -174 unless entity @n[tag=AzrielMarker_encounter] at @n[tag=AzrielNPC_marinus] run tellraw @a[tag=azrShowDialog,distance=0..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“……听到这些，我为你感到遗憾。”",color:"white"}]
+execute as @s[scores={rng1=282}] positioned -79894 32 -174 unless entity @n[tag=AzrielMarker_encounter] at @n[tag=AzrielNPC_marinus] run tellraw @a[tag=azrShowDialog,distance=0..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“我希望你夺回你本该有的。”",color:"white"}]
+execute as @s[scores={rng1=314}] positioned -79894 32 -174 unless entity @n[tag=AzrielMarker_encounter] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎女士，您还在啊。牢房区域的怪物可能会从任何角落突然窜出来，一定要当心。”",color:"white"}]
+execute as @s[scores={rng1=394}] positioned -79894 32 -174 unless entity @n[tag=AzrielMarker_encounter] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“谢谢您保护我们，爱理莎女士。救命之恩，没齿难忘。”",color:"white"}]
+
+
+
+
+
+scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..12}] Azr_skillPoints 13

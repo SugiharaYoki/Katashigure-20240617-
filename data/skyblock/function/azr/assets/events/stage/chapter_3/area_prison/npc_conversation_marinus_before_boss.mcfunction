@@ -49,7 +49,7 @@ execute if score @s rng1 matches 154..157 run playsound minecraft:block.iron_doo
 
 execute if score @s rng1 matches 158 positioned -79894 32 -174 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]} 
 
-
+execute if score @s rng1 matches 158 run scoreboard players set stage Azr_system 40
 
 
 

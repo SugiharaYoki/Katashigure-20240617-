@@ -44,8 +44,6 @@ execute if score tick_count_main AzrTimerStack matches 5.. run function skyblock
     # stage1 event code:2
     execute if score stage Azr_system matches 2 run function skyblock:azr/assets/events/stage/chapter_1/stage1_event
 
-    # BOSS4 Code:62
-    execute if score stage Azr_system matches 62 run function skyblock:azr/assets/events/stage/stage_boss4
 
 #DEBUG-关卡上限提示
 return 0

@@ -25,8 +25,8 @@ execute if score playerCount Azr_system matches 1.. run function skyblock:azr/li
 #章节设置
 execute if score stage Azr_system matches -2..10 run scoreboard players set chapter Azr_system 1
 execute if score stage Azr_system matches 11..24 run scoreboard players set chapter Azr_system 2
-execute if score stage Azr_system matches 25..35 run scoreboard players set chapter Azr_system 3
-execute if score stage Azr_system matches 36.. run scoreboard players set chapter Azr_system 4
+execute if score stage Azr_system matches 25..49 run scoreboard players set chapter Azr_system 3
+execute if score stage Azr_system matches 50.. run scoreboard players set chapter Azr_system 4
 
 
 #重置计时器
