@@ -211,8 +211,8 @@ execute if score @s rng1 matches 428 run playsound minecraft:ambient.warped_fore
 execute if score @s rng1 matches 428 run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
 
 execute if score @s rng1 matches 450 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“不要有任何人跟着我！！你们一定要守住神庭，别再管我了！！”",color:"white"}]
-execute if score @s rng1 matches 450 run execute if score @s rng1 matches 4 as @e[type=#illager,distance=..30,tag=AzrielNPC_Divineforce] at @s run scoreboard players set @s AzrielNPC_FollowInterest 0
-execute if score @s rng1 matches 450 run execute if score @s rng1 matches 4 as @e[type=#illager,distance=..30,tag=AzrielNPC_Divineforce] at @s run tag @s remove AzrielNPC_Divineforce_Followable
+execute if score @s rng1 matches 350 as @e[type=#illager,distance=..30,tag=AzrielNPC_Divineforce] at @s run scoreboard players set @s AzrielNPC_FollowInterest 0
+execute if score @s rng1 matches 350 as @e[type=#illager,distance=..30,tag=AzrielNPC_Divineforce] at @s run tag @s remove AzrielNPC_Divineforce_Followable
 
 execute if score @s rng1 matches 447 run kill @e[tag=AzrielMarker_boss3_marinus_full_power_slash_marker,distance=..50,type=marker]
 execute if score @s rng1 matches 448 positioned -79889.99 25.91 -220.00 run summon marker ~ ~ ~ {Tags:["AzrielMarker_boss3_marinus_full_power_slash_marker"]}
