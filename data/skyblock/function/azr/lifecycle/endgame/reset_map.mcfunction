@@ -765,7 +765,8 @@ fill -79892 40 -154 -79889 43 -154 iron_bars
 fill -79889 24 -182 -79892 27 -179 minecraft:polished_andesite_stairs[facing=south] replace minecraft:structure_void
 fill -79893 24 -221 -79888 32 -221 minecraft:red_stained_glass
 
-
+#BOSS-3
+clone -79925 22 -234 -79916 24 -225 -79895 22 -234
 
 
 
