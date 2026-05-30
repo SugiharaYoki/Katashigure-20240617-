@@ -161,8 +161,8 @@ execute if score @s rng1 matches 395.. as @n[tag=AzrielMob_sonic_eye_lord,distan
 execute if score @s rng1 matches 395.. as @n[tag=AzrielMob_sonic_eye_lord,distance=..150] at @s if score @s rng9 matches 7 rotated as @s positioned ^ ^-2 ^ run function skyblock:azr/assets/mobs/trap_sonic_laser
 execute if score @s rng1 matches 395.. as @n[tag=AzrielMob_sonic_eye_lord,distance=..150] at @s if score @s rng9 matches 8 rotated as @s positioned ^3 ^4 ^ run function skyblock:azr/assets/mobs/trap_sonic_laser
 execute if score @s rng1 matches 395.. as @n[tag=AzrielMob_sonic_eye_lord,distance=..150] at @s if score @s rng9 matches 8 rotated as @s positioned ^-3 ^-4 ^ run function skyblock:azr/assets/mobs/trap_sonic_laser
-execute if score @s rng1 matches 395.. as @n[tag=AzrielMob_sonic_eye_lord,distance=..150] at @s if score @s rng9 matches 9 rotated as @s positioned ^3 ^4 ^ run function skyblock:azr/assets/mobs/trap_sonic_laser
-execute if score @s rng1 matches 395.. as @n[tag=AzrielMob_sonic_eye_lord,distance=..150] at @s if score @s rng9 matches 9 rotated as @s positioned ^-3 ^-4 ^ run function skyblock:azr/assets/mobs/trap_sonic_laser
+execute if score @s rng1 matches 395.. as @n[tag=AzrielMob_sonic_eye_lord,distance=..150] at @s if score @s rng9 matches 9 rotated as @s positioned ^-3 ^4 ^ run function skyblock:azr/assets/mobs/trap_sonic_laser
+execute if score @s rng1 matches 395.. as @n[tag=AzrielMob_sonic_eye_lord,distance=..150] at @s if score @s rng9 matches 9 rotated as @s positioned ^3 ^-4 ^ run function skyblock:azr/assets/mobs/trap_sonic_laser
 
 execute if score @s rng1 matches 120.. store result score @s rng2 run random value 1..80
 execute if score @s rng1 matches 150.. if score @s rng2 matches 1 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~ ~ ~2 run function skyblock:azr/assets/mobs/trap_fang
