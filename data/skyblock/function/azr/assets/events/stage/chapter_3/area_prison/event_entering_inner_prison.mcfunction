@@ -102,6 +102,7 @@ execute if score @s rng1 matches 155 positioned -79890 24 -179 run summon marker
 execute if score @s rng1 matches 155 positioned -79891 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 155 positioned -79892 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
+execute if score @s rng1 matches 120 positioned -79890.01 33.00 -173.02 run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_large
 execute if score @s rng1 matches 130 positioned -79890.01 33.00 -173.02 as @n[tag=AzrielNPC_flauros,type=evoker,distance=..100] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
 
