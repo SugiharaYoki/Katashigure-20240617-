@@ -15,7 +15,7 @@ setblock -79893 42 -33 air
 
 
 execute positioned -79931 38 -30 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79931 38 -30 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players set @s rng1 300
+execute positioned -79931 38 -30 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players set @s rng1 1000
 execute positioned -79920 38 -48 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79892 42 -50 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 
@@ -111,4 +111,4 @@ execute positioned -79867 49 -128 run summon marker ~ ~ ~ {Tags:["AzrielMarker_e
 execute positioned -79892 39 -145 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 
 
-
+setblock -79900 41 -60 air
