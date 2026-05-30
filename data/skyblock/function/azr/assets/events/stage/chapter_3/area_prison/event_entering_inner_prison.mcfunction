@@ -224,3 +224,35 @@ execute if score @s rng1 matches 452 positioned -79889.99 29.91 -220.00 run summ
 execute if score @s rng1 matches 452 as @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker] at @s positioned -79889.96 25.02 -220.00 run function skyblock:azr/assets/mobs/skill/marinus/attack_instant_slash
 execute if score @s rng1 matches 452 run kill @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker,distance=..50,type=marker]
 
+
+execute if score @s rng1 matches 469 positioned -79889 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield_heavy","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 469 positioned -79890 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield_heavy","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 469 positioned -79891 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield_heavy","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 469 positioned -79892 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield_heavy","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+execute if score @s rng1 matches 481..483 positioned -79889 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 481..483 positioned -79890 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 481..483 positioned -79891 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 481..483 positioned -79892 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+execute if score @s rng1 matches 501..503 positioned -79889 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 501..503 positioned -79890 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 501..503 positioned -79891 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 501..503 positioned -79892 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+execute if score @s rng1 matches 539..540 positioned -79889 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 539..540 positioned -79890 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 539..540 positioned -79891 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 539..540 positioned -79892 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+execute if score @s rng1 matches 990..999 run scoreboard players set @s rng1 990
+execute if score @s rng1 matches 990..999 if entity @a[tag=azrPlayer,x=-79894,y=20,z=-226,dx=8,dy=8,dz=8] if entity @n[tag=AzrielMob_sonic_eye_lord,x=-79896,y=20,z=-228,dx=12,dy=8,dz=12] run scoreboard players set @s rng1 1000
+execute if score @s rng1 matches 1001 as @a[tag=azrPlayer] at @s unless entity @s[x=-79894,y=20,z=-226,dx=8,dy=8,dz=8] run tp @s -79890.09 24.00 -229.07
+
+
+
+
+
+
+
+
