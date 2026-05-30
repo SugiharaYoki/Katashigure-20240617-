@@ -148,6 +148,7 @@ execute if score @s rng1 matches 395 run bossbar add azr:boss_hp_bar_2 "窥妄�
 execute if score @s rng1 matches 395 run bossbar set azr:boss_hp_bar_2 color red
 execute if score @s rng1 matches 395 run bossbar set azr:boss_hp_bar_2 max 300
 execute if score @s rng1 matches 395 run bossbar set azr:boss_hp_bar_2 players @a[tag=azrShowDialog]
+
 execute if score @s rng1 matches 395.. run scoreboard players add @n[tag=AzrielMob_sonic_eye_lord,distance=..150] rng9 1
 execute if score @s rng1 matches 395.. as @n[tag=AzrielMob_sonic_eye_lord,distance=..150] at @s if score @s rng9 matches 20 run scoreboard players set @s rng9 0
 execute if score @s rng1 matches 395.. as @n[tag=AzrielMob_sonic_eye_lord,distance=..150] at @s if score @s rng9 matches 17 rotated as @s positioned ^2 ^-0.2 ^ run function skyblock:azr/assets/mobs/trap_sonic_laser
