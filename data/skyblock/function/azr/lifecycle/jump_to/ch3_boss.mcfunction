@@ -114,7 +114,7 @@ execute positioned -79892 39 -145 run summon marker ~ ~ ~ {Tags:["AzrielMarker_e
 
 setblock -79900 41 -60 air
 
-
+execute positioned -79957.04 56.00 -105.02 run function skyblock:azr/assets/mobs/skill/boss3_flauros/summon
 
 tag @a[tag=azrPlayer] add azrPlayer_respawnanchor_unlocked_westcourt_c
 tag @a[tag=azrPlayer] add azrPlayer_respawnanchor_unlocked_prison_a
