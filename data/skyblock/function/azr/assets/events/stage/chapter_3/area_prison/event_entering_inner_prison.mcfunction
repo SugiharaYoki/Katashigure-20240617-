@@ -131,7 +131,7 @@ execute if score @s rng1 matches 325 as @a[distance=..200,tag=azrShowDialog] at 
 execute if score @s rng1 matches 336 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",color:"red",bold:1b},{text:"\n“漆黑的深渊，你是如此崇高。在这王座之上，我依然渺小。渺小的天使，将使渺小的人坠入地狱。”",color:"white",bold: false}]
 
 execute if score @s rng1 matches 275.. store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielNPC_flauros] Health
-execute if score @s rng1 matches 275 run bossbar add azr:boss_hp_bar "殊能归叛的邪魔引路者 - 佛劳洛斯"
+execute if score @s rng1 matches 275 run bossbar add azr:boss_hp_bar "邪魔引路者 - 佛劳洛斯"
 execute if score @s rng1 matches 275 run bossbar set azr:boss_hp_bar color red
 execute if score @s rng1 matches 275 run bossbar set azr:boss_hp_bar max 300
 execute if score @s rng1 matches 275 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
