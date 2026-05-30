@@ -12,8 +12,8 @@ execute if score @s rng1 matches 5 positioned -79890.02 33.00 -171.96 as @a[tag=
 execute if score @s rng1 matches 2 run tp @n[tag=AzrielNPC_marinus] -79888 40 -160
 execute if score @s rng1 matches 6 run tp @n[tag=AzrielNPC_marinus] -79893 33 -172
 
-execute if score @s rng1 matches 7 positioned -79890.02 33.00 -171.96 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“你们谁把门又关起来了？！”",color:"white"}]
-execute if score @s rng1 matches 15 positioned -79890.02 33.00 -171.96 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“不……不知道啊！不是我们关的！”",color:"white"}]
+execute if score @s rng1 matches 7 positioned -79890.02 33.00 -171.96 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“你们谁把门又关起来了？！”",color:"white"}]
+execute if score @s rng1 matches 15 positioned -79890.02 33.00 -171.96 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“不……不知道啊！不是我们关的！”",color:"white"}]
 
 
 execute if score @s rng1 matches 5 run fill -79892 43 -154 -79889 43 -154 iron_bars
@@ -31,19 +31,19 @@ execute if score @s rng1 matches 26..27 unless entity @a[tag=azrPlayer,x=-79904,
 
 execute if score @s rng1 matches 28 run fill -79889 24 -182 -79892 27 -179 minecraft:structure_void replace minecraft:polished_andesite_stairs[facing=south]
 execute if score @s rng1 matches 28 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
-execute if score @s rng1 matches 28 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“不太对劲。”",color:"white"}]
-execute if score @s rng1 matches 36 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“是因为太安静了吗？”",color:"white"}]
+execute if score @s rng1 matches 28 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“不太对劲。”",color:"white"}]
+execute if score @s rng1 matches 36 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“是因为太安静了吗？”",color:"white"}]
 execute if score @s rng1 matches 44 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
-execute if score @s rng1 matches 44 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“安静是正常的，魔物本身就很安静。”",color:"white"}]
+execute if score @s rng1 matches 44 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“安静是正常的，魔物本身就很安静。”",color:"white"}]
 execute if score @s rng1 matches 54 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
-execute if score @s rng1 matches 54 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“……但牢房内区根本不该有红色结界，这是用于神庭挑战的结界。”",color:"white"}]
+execute if score @s rng1 matches 54 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“……但牢房内区根本不该有红色结界，这是用于神庭挑战的结界。”",color:"white"}]
 
-execute if score @s rng1 matches 64 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“……那个，马林努斯？”",color:"white"}]
-execute if score @s rng1 matches 70 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“回去的路消失了。”",color:"white"}]
+execute if score @s rng1 matches 64 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“……那个，马林努斯？”",color:"white"}]
+execute if score @s rng1 matches 70 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“回去的路消失了。”",color:"white"}]
 execute if score @s rng1 matches 50 run playsound ambient.soul_sand_valley.loop ambient @a ~ ~ ~ 19 0.7
-execute if score @s rng1 matches 70 run stopsound @a[tag=azrShowDialog,distance=..40]
+execute if score @s rng1 matches 70 run stopsound @a[tag=azrShowDialog,distance=..200]
 
-execute if score @s rng1 matches 82 positioned -79890.02 33.00 -171.96 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“敌人在背后！！！”",color:"white"}]
+execute if score @s rng1 matches 82 positioned -79890.02 33.00 -171.96 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“敌人在背后！！！”",color:"white"}]
 execute if score @s rng1 matches 82.. run scoreboard players add stage_boss_bgm AzrTimerStack 1
 execute if score stage_boss_bgm AzrTimerStack matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:psyborgcocoon music @s ~ ~ ~ 0.65
 execute if score stage_boss_bgm AzrTimerStack matches 4200.. run scoreboard players set stage_boss_bgm AzrTimerStack 0
@@ -84,7 +84,7 @@ execute if score @s rng1 matches 186..187 positioned -79891 24 -179 run summon m
 execute if score @s rng1 matches 186..187 positioned -79892 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
-execute if score @s rng1 matches 190 positioned -79890.02 33.00 -171.96 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“恣眼的影子来了，我们被夹击了！！”",color:"white"}]
+execute if score @s rng1 matches 190 positioned -79890.02 33.00 -171.96 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“恣眼的影子来了，我们被夹击了！！”",color:"white"}]
 
 execute if score @s rng1 matches 183 positioned -79895 33 -213 run function skyblock:azr/assets/mobs/sonic_eye
 execute if score @s rng1 matches 183 positioned -79886 33 -213 run function skyblock:azr/assets/mobs/sonic_eye
@@ -182,10 +182,10 @@ execute if score @s rng1 matches 160.. if score @s rng2 matches 13 as @a[tag=azr
 
 #-79892 23 -179
 
-execute if score @s rng1 matches 402 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“马林努斯！我问你，神界的神使有没有能力将那红色的结界击碎？！”",color:"white"}]
-execute if score @s rng1 matches 410 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“值得一试。爱理莎，你要做什么？”",color:"white"}]
-execute if score @s rng1 matches 420 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“恣眼继续在这里的话，你们都得没命，我来引开它。”",color:"white"}]
-execute if score @s rng1 matches 430 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“好。这会耗尽我的力量，祝你成功。”",color:"white"}]
+execute if score @s rng1 matches 402 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“马林努斯！我问你，神界的神使有没有能力将那红色的结界击碎？！”",color:"white"}]
+execute if score @s rng1 matches 410 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“值得一试。爱理莎，你要做什么？”",color:"white"}]
+execute if score @s rng1 matches 420 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“恣眼继续在这里的话，你们都得没命，我来引开它。”",color:"white"}]
+execute if score @s rng1 matches 430 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“好。这会耗尽我的力量，祝你成功。”",color:"white"}]
 
 execute if score @s rng1 matches 428 run tp @n[tag=AzrielNPC_marinus] -79890.01 24.00 -216.07
 
@@ -205,7 +205,7 @@ execute if score @s rng1 matches 428 run playsound minecraft:ambient.warped_fore
 execute if score @s rng1 matches 428 run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
 execute if score @s rng1 matches 428 run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
 
-execute if score @s rng1 matches 450 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“不要有任何人跟着我！！你们一定要守住神庭，别再管我了！！”",color:"white"}]
+execute if score @s rng1 matches 450 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“不要有任何人跟着我！！你们一定要守住神庭，别再管我了！！”",color:"white"}]
 execute if score @s rng1 matches 450 run execute if score @s rng1 matches 4 as @e[type=#illager,distance=..30,tag=AzrielNPC_Divineforce] at @s run scoreboard players set @s AzrielNPC_FollowInterest 0
 execute if score @s rng1 matches 450 run execute if score @s rng1 matches 4 as @e[type=#illager,distance=..30,tag=AzrielNPC_Divineforce] at @s run tag @s remove AzrielNPC_Divineforce_Followable
 
@@ -276,23 +276,23 @@ execute if score @s rng1 matches 860 positioned -79890 24 -179 run summon marker
 execute if score @s rng1 matches 860 positioned -79891 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_cleric","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 860 positioned -79892 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_cleric","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
-execute if score @s rng1 matches 560 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“快去吧，这里有我。”",color:"white"}]
-execute if score @s rng1 matches 660 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“……非常感谢。”",color:"white"}]
-execute if score @s rng1 matches 670 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“没关系，我会殿后。”",color:"white"}]
-execute if score @s rng1 matches 870 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“……爱理莎，快来不及了。”",color:"white"}]
+execute if score @s rng1 matches 560 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“快去吧，这里有我。”",color:"white"}]
+execute if score @s rng1 matches 660 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“……非常感谢。”",color:"white"}]
+execute if score @s rng1 matches 670 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“没关系，我会殿后。”",color:"white"}]
+execute if score @s rng1 matches 870 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“……爱理莎，快来不及了。”",color:"white"}]
 
 execute if score @s rng1 matches 990..999 run scoreboard players set @s rng1 990
-execute if score @s rng1 matches 990..999 if entity @a[tag=azrPlayer,x=-79894,y=20,z=-232,dx=8,dy=8,dz=8] if entity @n[tag=AzrielMob_sonic_eye_lord,x=-79896,y=20,z=-228,dx=12,dy=8,dz=12] run scoreboard players set @s rng1 1000
+execute if score @s rng1 matches 300..999 if entity @a[tag=azrPlayer,x=-79894,y=20,z=-232,dx=8,dy=8,dz=8] if entity @n[tag=AzrielMob_sonic_eye_lord,x=-79896,y=20,z=-228,dx=12,dy=8,dz=12] run scoreboard players set @s rng1 1000
 execute if score @s rng1 matches 1001 as @a[tag=azrPlayer] at @s unless entity @s[x=-79894,y=20,z=-234,dx=8,dy=8,dz=8] run tp @s -79890.09 24.00 -229.07
 
-execute if score @s rng1 matches 1002 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“操，这里是……电梯！！”",color:"white"}]
+execute if score @s rng1 matches 1002 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“操，这里是……电梯！！”",color:"white"}]
 
 execute if score @s rng1 matches 1010..1020 run particle minecraft:white_ash -79890.10 24.00 -228.99 2 0.3 2 0.06 70
 execute if score @s rng1 matches 1010..1020 run particle minecraft:large_smoke -79890.10 24.00 -228.99 2 0.3 2 0.06 30
 execute if score @s rng1 matches 1010..1020 run playsound minecraft:block.chain.break block @a -79890.10 24.00 -228.99 2 1.5
 execute if score @s rng1 matches 1010..1020 run particle minecraft:large_smoke -79890.10 24.00 -228.99 2 0.3 2 0.06 30
 
-execute if score @s rng1 matches 1017 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“我讨厌电梯，我可不要在电梯上跟这个恣眼打……！”",color:"white"}]
+execute if score @s rng1 matches 1017 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“我讨厌电梯，我可不要在电梯上跟这个恣眼打……！”",color:"white"}]
 
 execute if score @s rng1 matches 1020 run particle explosion -79893 24 -232 0 0 0 0 1
 execute if score @s rng1 matches 1022 run particle explosion -79888 24 -232 0 0 0 0 1
