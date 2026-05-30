@@ -316,4 +316,15 @@ execute if score @s rng1 matches 1022 as @a[tag=azrPlayer] at @s unless entity @
 execute if score @s rng1 matches 1030 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n（等等……我坠落的速度，有什么东西拖住了我？）",color:"white"}]
 
 
+execute if score @s rng1 matches 1090..1099 run scoreboard players set @s rng1 1090
+execute if score @s rng1 matches 300..1099 if entity @a[tag=azrPlayer,x=-79893,y=-31,z=-291,dx=9,dy=9,dz=20] run scoreboard players set @s rng1 1100
+execute if score @s rng1 matches 1101 run fill -79893 -26 -304 -79888 -26 -304 netherite_block
+execute if score @s rng1 matches 1102 run fill -79893 -27 -304 -79888 -27 -304 netherite_block
+execute if score @s rng1 matches 1103 run fill -79893 -28 -304 -79888 -28 -304 netherite_block
+execute if score @s rng1 matches 1104 run fill -79893 -29 -304 -79888 -29 -304 netherite_block
+execute if score @s rng1 matches 1105 run fill -79893 -30 -304 -79888 -30 -304 netherite_block
+execute if score @s rng1 matches 1106 run fill -79893 -31 -304 -79888 -31 -304 netherite_block
+execute if score @s rng1 matches 1101..1106 run playsound block.iron_trapdoor.open block @a -79889.96 -24.11 -303.00 3 0.6
+
+
 
