@@ -25,7 +25,7 @@ execute if score @s rng1 matches 5..8 run playsound minecraft:block.iron_door.op
 
 execute if score @s rng1 matches 24 run tp @n[tag=AzrielNPC_marinus] -79889 24 -186
 
-
+execute if score @s rng1 matches 5 positioned -79890.02 33.00 -171.96 as @a[tag=azrPlayer] run spawnpoint @a -79890 24 -190
 
 execute if score @s rng1 matches 26..27 unless entity @a[tag=azrPlayer,x=-79904,y=23,z=-205,dx=30,dy=15,dz=15] run scoreboard players set @s rng1 26
 
