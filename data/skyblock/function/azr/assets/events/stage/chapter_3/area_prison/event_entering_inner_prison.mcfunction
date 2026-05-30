@@ -118,7 +118,7 @@ execute if score @s rng1 matches 276 as @a[distance=..200,tag=azrShowDialog] at 
 execute if score @s rng1 matches 285 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",color:"yellow",bold:1b},{text:"\n“那女人已经与我们相似，能知道善恶；现在恐怕她伸手又摘生命树的果子吃，就永远活着。”",color:"white",bold: false}]
 execute if score @s rng1 matches 293 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",color:"yellow",bold:1b},{text:"\n“沙利叶的神使驻守神庭的东西两庭，要把守生命树的道路。”",color:"white",bold: false}]
 execute if score @s rng1 matches 302 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",color:"yellow",bold:1b},{text:"\n“众人侍立在沙利叶面前，路西法也来在其中。”",color:"white",bold: false}]
-execute if score @s rng1 matches 317 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",   color:"red",bold:1b},{text:"\n“我于这神界往返而来；我见到人类亡魂的战斗。”",color:"white",bold: false}]
+execute if score @s rng1 matches 317 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",   color:"red",bold:1b},{text:"\n“我于这神界往返而来；我见到人之亡魂的战斗。”",color:"white",bold: false}]
 execute if score @s rng1 matches 324 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",   color:"red",bold:1b},{text:"\n“沙利叶，她在你手中，只要存留她的性命。”",color:"white",bold: false}]
 execute if score @s rng1 matches 335 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",   color:"red",bold:1b},{text:"\n“路西法也站在你的右侧，与她作对。”",color:"white",bold: false}]
 execute if score @s rng1 matches 341 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",   color:"red",bold:1b},{text:"\n“她愿为自己而活，但她走向了错误的路。她将一错再错。”",color:"white",bold: false}]
