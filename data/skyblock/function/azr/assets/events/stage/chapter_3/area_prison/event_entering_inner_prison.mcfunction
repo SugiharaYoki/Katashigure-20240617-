@@ -122,7 +122,7 @@ execute if score @s rng1 matches 317 as @a[distance=..200,tag=azrShowDialog] at 
 execute if score @s rng1 matches 324 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",   color:"red",bold:1b},{text:"\n“沙利叶，她在你手中，只要存留她的性命。”",color:"white",bold: false}]
 execute if score @s rng1 matches 335 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",   color:"red",bold:1b},{text:"\n“路西法也站在你的右侧，与她作对。”",color:"white",bold: false}]
 execute if score @s rng1 matches 341 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",   color:"red",bold:1b},{text:"\n“她愿为自己而活，但她走向了错误的路。她将一错再错。”",color:"white",bold: false}]
-execute if score @s rng1 matches 355 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",   color:"red",bold:1b},{text:"\n“人类的王欢，尔岂非从火中抽出来的一根柴吗？”",color:"white",bold: false}]
+execute if score @s rng1 matches 355 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",   color:"red",bold:1b},{text:"\n“人类的惘魂，尔岂非从火中抽出来的一根柴吗？”",color:"white",bold: false}]
 execute if score @s rng1 matches 363 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",   color:"red",bold:1b},{text:"\n“照亮着黑暗却燃烧着自己的未来，希望不是从这之中诞生的。”",color:"white",bold: false}]
 execute if score @s rng1 matches 373 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",     color:"red",bold:1b},{text:"\n“生者必灭，亡者何时将复活？”",color:"white",bold: false}]
 execute if score @s rng1 matches 383 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",     color:"red",bold:1b},{text:"\n“亡者的复活意味着其将成为生者，它也将迎来灭亡，或早或晚，结局再度归初。”",color:"white",bold: false}]
