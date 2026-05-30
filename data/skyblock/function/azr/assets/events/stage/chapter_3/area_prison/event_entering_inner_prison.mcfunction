@@ -326,5 +326,5 @@ execute if score @s rng1 matches 1105 run fill -79893 -30 -304 -79888 -30 -304 n
 execute if score @s rng1 matches 1106 run fill -79893 -31 -304 -79888 -31 -304 netherite_block
 execute if score @s rng1 matches 1101..1106 run playsound block.iron_trapdoor.open block @a -79889.96 -24.11 -303.00 3 0.6
 
-
+execute if score @s rng1 matches 1104 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n（这里走不通，得换刚才的岔路！）",color:"white"}]
 
