@@ -42,7 +42,7 @@ execute positioned -79845 48 -128 store result bossbar azr:boss_hp_bar_villain v
 
 execute if score @s AzrEntityTimer matches 61 as @n[tag=AzrielBossVillain] at @s run effect clear @s resistance
 execute if score @s AzrEntityTimer matches 61 as @n[tag=AzrielBossVillain] at @s run attribute @s armor_toughness base set 10
-execute if score @s AzrEntityTimer matches 62 as @n[tag=AzrielBossVillain] at @s run effect give @s resistance 50 2 true
+execute if score @s AzrEntityTimer matches 62 as @n[tag=AzrielBossVillain] at @s run effect give @s resistance 80 2 true
 
 #AI
 
@@ -61,7 +61,9 @@ execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..230,rng4
 execute as @n[tag=AzrielBossVillain] at @s if score @s[scores={Health=..270}] rng7 matches 7 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
 execute as @n[tag=AzrielBossVillain] at @s if score @s rng7 matches 40.. run scoreboard players set @s rng7 0
 
-execute as @n[tag=AzrielBossVillain] at @s if entity @s[scores={Health=91..170}] run effect give @e[tag=AzrielMob_husk_temper,type=husk,distance=..55] speed infinite 0 true
+execute as @n[tag=AzrielBossVillain] at @s if entity @s[scores={Health=161..200}] run effect give @e[tag=AzrielMob_husk_temper,type=husk,distance=..55] speed infinite 0 true
+execute as @n[tag=AzrielBossVillain] at @s if entity @s[scores={Health=121..160}] run effect give @e[tag=AzrielMob_husk_temper,type=husk,distance=..55] speed infinite 1 true
+execute as @n[tag=AzrielBossVillain] at @s if entity @s[scores={Health=91..120}] run effect give @e[tag=AzrielMob_husk_temper,type=husk,distance=..55] speed infinite 2 true
 
 
 #ACTION
