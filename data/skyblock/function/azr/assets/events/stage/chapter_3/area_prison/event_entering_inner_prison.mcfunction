@@ -135,7 +135,7 @@ execute if score @s rng1 matches 375.. as @n[tag=AzrielNPC_flauros] store result
 execute if score @s rng1 matches 375.. store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielNPC_flauros] Health
 execute if score @s rng1 matches 375 run bossbar add azr:boss_hp_bar "邪魔引路者 - 佛劳洛斯"
 execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar color purple
-execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar max 300
+execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar max 50
 execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar style notched_12
 execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 
