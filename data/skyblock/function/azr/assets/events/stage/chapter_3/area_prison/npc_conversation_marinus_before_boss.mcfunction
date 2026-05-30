@@ -17,7 +17,7 @@ execute if score @s rng1 matches 66 run playsound minecraft:entity.villager.ambi
 execute if score @s rng1 matches 66 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“我不信佛劳洛斯大人向魔界倒戈。大人定有难言之隐。”",color:"white"}]
 
 execute if score @s rng1 matches 76 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
-execute if score @s rng1 matches 76 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“但这也是权之残影大人的旨意。我们要与佛劳洛斯大人一一战。”",color:"white"}]
+execute if score @s rng1 matches 76 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“但这也是权之残影大人的旨意。我们要与佛劳洛斯大人一战。”",color:"white"}]
 
 execute if score @s rng1 matches 86 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"你：",color:"aqua",bold:1b},{text:"\n“听上去并不好打。这里就是所有人？”",color:"white",bold: false}]
 
