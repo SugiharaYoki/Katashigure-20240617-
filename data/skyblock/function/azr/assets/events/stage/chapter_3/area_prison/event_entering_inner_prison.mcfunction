@@ -133,8 +133,9 @@ execute if score @s rng1 matches 477 as @a[distance=..200,tag=azrShowDialog] at 
 
 execute if score @s rng1 matches 375.. store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielNPC_flauros] Health
 execute if score @s rng1 matches 375 run bossbar add azr:boss_hp_bar "邪魔引路者 - 佛劳洛斯"
-execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar color red
+execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar color purple
 execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar max 300
+execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar style notched_12
 execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 
 execute if score @s rng1 matches 385 positioned -79890.01 33.00 -173.02 run function skyblock:azr/assets/mobs/unique/sonic_eye_lord
