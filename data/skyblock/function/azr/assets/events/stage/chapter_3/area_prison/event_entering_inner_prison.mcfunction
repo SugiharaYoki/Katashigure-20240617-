@@ -137,6 +137,14 @@ execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar color red
 execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar max 300
 execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 
+execute if score @s rng1 matches 385 positioned -79890.01 33.00 -173.02 run function skyblock:azr/assets/mobs/unique/sonic_eye_lord
+
+execute if score @s rng1 matches 395.. store result bossbar azr:boss_hp_bar_2 value run scoreboard players get @n[tag=AzrielNPC_flauros] Health
+execute if score @s rng1 matches 395 run bossbar add azr:boss_hp_bar_2 "窥视妄违之邪瞳 - 恣眼"
+execute if score @s rng1 matches 395 run bossbar set azr:boss_hp_bar_2 color red
+execute if score @s rng1 matches 395 run bossbar set azr:boss_hp_bar_2 max 300
+execute if score @s rng1 matches 395 run bossbar set azr:boss_hp_bar_2 players @a[tag=azrShowDialog]
+
 execute if score @s rng1 matches 120.. store result score @s rng2 run random value 1..80
 execute if score @s rng1 matches 150.. if score @s rng2 matches 1 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~ ~ ~2 run function skyblock:azr/assets/mobs/trap_fang
 execute if score @s rng1 matches 150.. if score @s rng2 matches 2 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~ ~ ~-2 run function skyblock:azr/assets/mobs/trap_fang

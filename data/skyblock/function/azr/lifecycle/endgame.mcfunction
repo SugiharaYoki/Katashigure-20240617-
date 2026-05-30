@@ -29,6 +29,8 @@ bossbar remove azr:progress_bar_bonus
 bossbar remove azr:progress_bar_special
 bossbar remove azr:progress_bar_special_0
 bossbar remove azr:boss_hp_bar
+bossbar remove azr:boss_hp_bar_2
+bossbar remove azr:boss_hp_bar_3
 bossbar remove azr:boss_hp_bar_mossboss
 bossbar remove azr:boss_hp_bar_working
 bossbar remove azr:boss_hp_bar_villain
