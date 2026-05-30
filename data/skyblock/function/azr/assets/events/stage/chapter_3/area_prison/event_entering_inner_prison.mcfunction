@@ -137,5 +137,27 @@ execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar color red
 execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar max 300
 execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 
+execute if score @s rng1 matches 120.. store result score @s rng2 run random value 1..80
+execute if score @s rng1 matches 150.. if score @s rng2 matches 1 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~ ~ ~2 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 150.. if score @s rng2 matches 2 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~ ~ ~-2 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 150.. if score @s rng2 matches 3 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~2 ~ ~ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 150.. if score @s rng2 matches 4 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~-2 ~ ~ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 120.. if score @s rng2 matches 5 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~ ~ ~3 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 120.. if score @s rng2 matches 6 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~ ~ ~-3 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 120.. if score @s rng2 matches 7 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~3 ~ ~ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 120.. if score @s rng2 matches 8 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~-3 ~ ~ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 160.. if score @s rng2 matches 10 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~2 ~ ~2 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 160.. if score @s rng2 matches 11 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~2 ~ ~-2 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 160.. if score @s rng2 matches 12 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~-2 ~ ~2 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 160.. if score @s rng2 matches 13 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~-2 ~ ~-2 run function skyblock:azr/assets/mobs/trap_fang
+
+#-79892 23 -179
+
+
+
+
+
+
+
 
 
