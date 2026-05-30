@@ -32,6 +32,9 @@ execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] on target if ent
 
 
 execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget,tag=!AzrielNPC_Divineforce_hasattacktarget_notify,tag=!AzrielNPC_Divineforce_mute] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] store result score @s rng9 run random value 1..70
+execute positioned -79894 32 -174 if entity @n[tag=AzrielMarker_encounter,distance=..2,type=marker] run scoreboard players set @s rng9 -1
+
+
 execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget,tag=!AzrielNPC_Divineforce_hasattacktarget_notify,tag=!AzrielNPC_Divineforce_mute] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run tag @s add AzrielNPC_Divineforce_hasattacktarget_notify
 execute if entity @s[scores={rng9=1},tag=AzrielMob_sword] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run tellraw @a[tag=azrShowDialog,distance=0..9] [{text:"剑士：",color:"green",bold:1b},{bold: false,text:"\n“我来帮你一把！”",color:"white"}]
 execute if entity @s[scores={rng9=2},tag=AzrielMob_sword] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] run tellraw @a[tag=azrShowDialog,distance=0..9] [{text:"剑士：",color:"green",bold:1b},{bold: false,text:"\n“敌人交给我。”",color:"white"}]
