@@ -171,19 +171,19 @@ execute if score @s rng1 matches 395.. as @n[tag=AzrielMob_sonic_eye_lord,distan
 execute if score @s rng1 matches 395.. as @n[tag=AzrielMob_sonic_eye_lord,distance=..150] at @s if score @s rng9 matches 9 rotated as @s positioned ^-3 ^4 ^ run function skyblock:azr/assets/mobs/trap_sonic_laser
 execute if score @s rng1 matches 395.. as @n[tag=AzrielMob_sonic_eye_lord,distance=..150] at @s if score @s rng9 matches 9 rotated as @s positioned ^3 ^-4 ^ run function skyblock:azr/assets/mobs/trap_sonic_laser
 
-execute if score @s rng1 matches 120.. store result score @s rng2 run random value 1..80
-execute if score @s rng1 matches 150.. if score @s rng2 matches 1 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~ ~ ~2 run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s rng1 matches 150.. if score @s rng2 matches 2 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~ ~ ~-2 run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s rng1 matches 150.. if score @s rng2 matches 3 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~2 ~ ~ run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s rng1 matches 150.. if score @s rng2 matches 4 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~-2 ~ ~ run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s rng1 matches 120.. if score @s rng2 matches 5 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~ ~ ~3 run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s rng1 matches 120.. if score @s rng2 matches 6 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~ ~ ~-3 run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s rng1 matches 120.. if score @s rng2 matches 7 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~3 ~ ~ run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s rng1 matches 120.. if score @s rng2 matches 8 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~-3 ~ ~ run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s rng1 matches 160.. if score @s rng2 matches 10 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~2 ~ ~2 run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s rng1 matches 160.. if score @s rng2 matches 11 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~2 ~ ~-2 run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s rng1 matches 160.. if score @s rng2 matches 12 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~-2 ~ ~2 run function skyblock:azr/assets/mobs/trap_fang
-execute if score @s rng1 matches 160.. if score @s rng2 matches 13 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~-2 ~ ~-2 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 120..999 store result score @s rng2 run random value 1..80
+execute if score @s rng1 matches 150..999 if score @s rng2 matches 1 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~ ~ ~2 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 150..999 if score @s rng2 matches 2 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~ ~ ~-2 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 150..999 if score @s rng2 matches 3 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~2 ~ ~ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 150..999 if score @s rng2 matches 4 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~-2 ~ ~ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 120..999 if score @s rng2 matches 5 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~ ~ ~3 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 120..999 if score @s rng2 matches 6 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~ ~ ~-3 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 120..999 if score @s rng2 matches 7 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~3 ~ ~ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 120..999 if score @s rng2 matches 8 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~-3 ~ ~ run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 160..999 if score @s rng2 matches 10 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~2 ~ ~2 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 160..999 if score @s rng2 matches 11 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~2 ~ ~-2 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 160..999 if score @s rng2 matches 12 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~-2 ~ ~2 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 160..999 if score @s rng2 matches 13 as @a[tag=azrPlayer,limit=2,sort=random] at @s positioned ~-2 ~ ~-2 run function skyblock:azr/assets/mobs/trap_fang
 
 #-79892 23 -179
 
@@ -314,6 +314,43 @@ execute if score @s rng1 matches 1024 run effect give @a[tag=azrPlayer] slow_fal
 execute if score @s rng1 matches 1022 as @a[tag=azrPlayer] at @s unless entity @s[x=-79894,y=20,z=-234,dx=8,dy=8,dz=8] run tp @s -79890.09 24.00 -229.07
 
 execute if score @s rng1 matches 1030 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n（等等……我坠落的速度，有什么东西拖住了我？）",color:"white"}]
+
+execute if score @s rng1 matches 1000..1999 store result score @s rng2 run random value 1..40
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 1 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^0.2 ^ ^3 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 1 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^0.5 ^ ^3 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 1 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^0.8 ^ ^3 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 2 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^-0.2 ^ ^3 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 2 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^-0.5 ^ ^3 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 2 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^-0.8 ^ ^3 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 3 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^0.0 ^ ^4 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 3 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^0.3 ^ ^4 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 3 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^0.6 ^ ^4 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 3 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^0.9 ^ ^4 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 4 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^-0.0 ^ ^4 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 4 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^-0.3 ^ ^4 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 4 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^-0.6 ^ ^4 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 4 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^-0.9 ^ ^4 run function skyblock:azr/assets/mobs/trap_fang
+
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 5 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^-0.3 ^ ^4.6 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 5 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^-0.0 ^ ^4.6 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 5 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^0.3 ^ ^4.6 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 5 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^0.6 ^ ^4.6 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 5 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^0.9 ^ ^4.6 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 6 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^0.3 ^ ^4.6 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 6 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^0.0 ^ ^4.6 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 6 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^-0.3 ^ ^4.6 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 6 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^-0.6 ^ ^4.6 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 6 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^-0.9 ^ ^4.6 run function skyblock:azr/assets/mobs/trap_fang
+
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 7 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^-2.0 ^ ^5 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 7 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^-1.5 ^ ^5 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 7 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^-1.0 ^ ^5 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 7 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^-0.5 ^ ^5 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 7 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^-0.0 ^ ^5 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 7 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^0.5 ^ ^5 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 7 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^1.0 ^ ^5 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 7 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^1.5 ^ ^5 run function skyblock:azr/assets/mobs/trap_fang
+execute if score @s rng1 matches 1000..1999 if score @s rng2 matches 7 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^2.0 ^ ^5 run function skyblock:azr/assets/mobs/trap_fang
 
 
 execute if score @s rng1 matches 1090..1099 run scoreboard players set @s rng1 1090
