@@ -299,6 +299,7 @@ execute if score @s rng1 matches 1010..1020 run particle minecraft:large_smoke -
 
 execute if score @s rng1 matches 1017 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n（我讨厌电梯，我可不要在电梯上跟这个恣眼打……！）",color:"white"}]
 
+execute if score @s rng1 matches 1020 positioned -79890.02 33.00 -171.96 as @a[tag=azrPlayer] run spawnpoint @a -79891 -30 -229
 execute if score @s rng1 matches 1020 run particle explosion -79893 24 -232 0 0 0 0 1
 execute if score @s rng1 matches 1022 run particle explosion -79888 24 -232 0 0 0 0 1
 execute if score @s rng1 matches 1020 run particle explosion -79888 24 -227 0 0 0 0 1
