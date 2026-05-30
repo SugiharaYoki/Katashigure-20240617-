@@ -28,3 +28,15 @@ execute if score @s rng1 matches 6 run fill -79892 42 -154 -79889 42 -154 iron_b
 execute if score @s rng1 matches 7 run fill -79892 41 -154 -79889 41 -154 iron_bars
 execute if score @s rng1 matches 8 run fill -79892 40 -154 -79889 40 -154 iron_bars
 execute if score @s rng1 matches 5..8 run playsound minecraft:block.iron_door.open block @a -79891.0 44 -154 3 0.5
+
+
+
+
+
+execute if score @s rng1 matches 26..27 unless entity @a[tag=azrPlayer,x=-79904,y=23,z=-205,dx=30,dy=15,dz=15] run scoreboard players set @s rng1 26
+
+
+
+
+
+
