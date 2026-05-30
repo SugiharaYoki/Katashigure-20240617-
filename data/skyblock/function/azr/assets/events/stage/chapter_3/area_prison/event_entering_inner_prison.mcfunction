@@ -290,14 +290,14 @@ execute if score @s rng1 matches 990..999 run scoreboard players set @s rng1 990
 execute if score @s rng1 matches 300..999 if entity @a[tag=azrPlayer,x=-79894,y=20,z=-232,dx=8,dy=8,dz=8] if entity @n[tag=AzrielMob_sonic_eye_lord,x=-79896,y=20,z=-228,dx=12,dy=8,dz=12] run scoreboard players set @s rng1 1000
 execute if score @s rng1 matches 1001 as @a[tag=azrPlayer] at @s unless entity @s[x=-79894,y=20,z=-234,dx=8,dy=8,dz=8] run tp @s -79890.09 24.00 -229.07
 
-execute if score @s rng1 matches 1002 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“操，这里是……电梯！！”",color:"white"}]
+execute if score @s rng1 matches 1002 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n（操，这里是……电梯！！）",color:"white"}]
 
 execute if score @s rng1 matches 1010..1020 run particle minecraft:white_ash -79890.10 24.00 -228.99 2 0.3 2 0.06 70
 execute if score @s rng1 matches 1010..1020 run particle minecraft:large_smoke -79890.10 24.00 -228.99 2 0.3 2 0.06 30
 execute if score @s rng1 matches 1010..1020 run playsound minecraft:block.chain.break block @a -79890.10 24.00 -228.99 2 1.5
 execute if score @s rng1 matches 1010..1020 run particle minecraft:large_smoke -79890.10 24.00 -228.99 2 0.3 2 0.06 30
 
-execute if score @s rng1 matches 1017 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“我讨厌电梯，我可不要在电梯上跟这个恣眼打……！”",color:"white"}]
+execute if score @s rng1 matches 1017 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n（我讨厌电梯，我可不要在电梯上跟这个恣眼打……！）",color:"white"}]
 
 execute if score @s rng1 matches 1020 run particle explosion -79893 24 -232 0 0 0 0 1
 execute if score @s rng1 matches 1022 run particle explosion -79888 24 -232 0 0 0 0 1
@@ -308,8 +308,12 @@ execute if score @s rng1 matches 1022 run playsound entity.generic.explode block
 execute if score @s rng1 matches 1020 run playsound entity.generic.explode block @a ~ ~ ~ 2 1.1
 execute if score @s rng1 matches 1022 run playsound entity.generic.explode block @a ~ ~ ~ 2 1.1
 execute if score @s rng1 matches 1022 run fill -79894 23 -233 -79887 23 -226 air destroy
+execute if score @s rng1 matches 1024 run particle cloud ~ ~-0.3 ~ 0 0 0 0.5 50
+execute if score @s rng1 matches 1024 run playsound minecraft:block.beacon.activate player @a ~ ~ ~ 1 0.6
+execute if score @s rng1 matches 1024 run effect give @a[tag=azrPlayer] slow_falling 10 225 true
 execute if score @s rng1 matches 1022 as @a[tag=azrPlayer] at @s unless entity @s[x=-79894,y=20,z=-234,dx=8,dy=8,dz=8] run tp @s -79890.09 24.00 -229.07
 
+execute if score @s rng1 matches 1030 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n（等等……我坠落的速度，有什么东西拖住了我？）",color:"white"}]
 
 
 
