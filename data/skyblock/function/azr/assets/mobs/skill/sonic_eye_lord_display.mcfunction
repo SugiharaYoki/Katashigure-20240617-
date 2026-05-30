@@ -4,6 +4,10 @@ particle soul_fire_flame ^ ^ ^3 0.05 0.05 0.05 0.00 1
 particle soul_fire_flame ^ ^ ^-3 0.05 0.05 0.05 0.00 1
 particle soul_fire_flame ^6 ^ ^ 0.05 0.05 0.05 0.00 1
 particle soul_fire_flame ^-6 ^ ^ 0.05 0.05 0.05 0.00 1
+particle soul_fire_flame ^2 ^ ^1 0.05 0.05 0.05 0.00 1
+particle soul_fire_flame ^-2 ^ ^1 0.05 0.05 0.05 0.00 1
+particle soul_fire_flame ^2 ^ ^-1 0.05 0.05 0.05 0.00 1
+particle soul_fire_flame ^-2 ^ ^-1 0.05 0.05 0.05 0.00 1
 
 
 execute unless score @s rng1 matches 1.. unless entity @n[tag=AzrielMob_sonic_eye_lord,distance=..8] run scoreboard players set @s rng1 1
