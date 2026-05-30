@@ -1,7 +1,7 @@
 
 execute rotated as @s run rotate @s ~5 ~2
-particle soul_fire_flame ^ ^ ^3 0.05 0.05 0.05 0.00 1
-particle soul_fire_flame ^ ^ ^-3 0.05 0.05 0.05 0.00 1
+particle soul_fire_flame ^0.2 ^ ^3 0.05 0.05 0.05 0.00 1
+particle soul_fire_flame ^-0.2 ^ ^-3 0.05 0.05 0.05 0.00 1
 particle soul_fire_flame ^5 ^ ^ 0.05 0.05 0.05 0.00 1
 particle soul_fire_flame ^-5 ^ ^ 0.05 0.05 0.05 0.00 1
 particle soul_fire_flame ^ ^5 ^ 0.05 0.05 0.05 0.00 1
