@@ -39,6 +39,6 @@ execute if entity @s[tag=AzrielMob_sonic_eye_reveal] at @s run tp @n[tag=AzrielM
 #execute if entity @s[tag=AzrielMob_sonic_eye_reveal] if score @s rng2 matches 6 rotated as @s rotated ~ 0 positioned ^-1.7 ^-0.5 ^ run function skyblock:azr/assets/mobs/trap_sonic_laser
 
 
-
+say hi
 
 scoreboard players set @s rng2 0

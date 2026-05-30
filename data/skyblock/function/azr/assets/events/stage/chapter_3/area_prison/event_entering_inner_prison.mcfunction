@@ -177,7 +177,7 @@ execute if score @s rng1 matches 410 run tellraw @a[tag=azrShowDialog,distance=.
 execute if score @s rng1 matches 420 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“恣眼在这里，你们都得没命，我来引开它。”",color:"white"}]
 execute if score @s rng1 matches 430 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“好。这会耗尽我的力量，你一定要成功。”",color:"white"}]
 
-execute if score @s rng1 matches 428 run tp @n[tag=azrielNPC_marinus] -79890.01 24.00 -216.07
+execute if score @s rng1 matches 428 run tp @n[tag=AzrielNPC_marinus] -79890.01 24.00 -216.07
 
 execute if score @s rng1 matches 450 run fill -79893 24 -221 -79888 26 -221 minecraft:air destroy
 execute if score @s rng1 matches 451 run fill -79893 27 -221 -79888 29 -221 minecraft:air destroy
