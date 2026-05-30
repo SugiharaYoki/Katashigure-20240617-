@@ -126,10 +126,10 @@ execute if score @s rng1 matches 365 as @a[distance=..200,tag=azrShowDialog] at 
 execute if score @s rng1 matches 378 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",color:"red",bold:1b},{text:"\n“生者必灭，亡者何时将复活？”",color:"white",bold: false}]
 execute if score @s rng1 matches 383 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",color:"red",bold:1b},{text:"\n“亡者的复活意味着其将成为生者，它也将迎来灭亡，或早或晚，结局再度归初。”",color:"white",bold: false}]
 execute if score @s rng1 matches 395 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",color:"red",bold:1b},{text:"\n“世间万物流转循环的规律如此，我们打破了它，我们竟试图打破它，这是无可理喻、无可饶恕的。”",color:"white",bold: false}]
-execute if score @s rng1 matches 404 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",color:"red",bold:1b},{text:"\n“沙利叶啊，神的怒火终将降在我们的头上，因我等早已渎神，这一切都是我们招致的后果。”",color:"white",bold: false}]
-execute if score @s rng1 matches 415 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",color:"red",bold:1b},{text:"\n“生命树面领的不会是地狱的烈火——它本就枯竭，我等的未来是那被燃尽的柴火，所以这为的是让最后的柴不被燃尽，我需将其熄灭。”",color:"white",bold: false}]
-execute if score @s rng1 matches 426 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",color:"red",bold:1b},{text:"\n“原谅我最后的不忠，请不去在意我的僭越，这一切都是为了必将到来的审判。”",color:"white",bold: false}]
-execute if score @s rng1 matches 437 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",color:"red",bold:1b},{text:"\n“漆黑的深渊，你是如此崇高。在这王座之上，我依然渺小。渺小的天使，将使渺小的人坠入地狱。”",color:"white",bold: false}]
+execute if score @s rng1 matches 444 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",color:"red",bold:1b},{text:"\n“沙利叶啊，神的怒火终将降在我们的头上，因我等早已渎神，这一切都是我们招致的后果。”",color:"white",bold: false}]
+execute if score @s rng1 matches 455 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",color:"red",bold:1b},{text:"\n“生命树面领的不会是地狱的烈火——它本就枯竭，我等的未来是那被燃尽的柴火，所以这为的是让最后的柴不被燃尽，我需将其熄灭。”",color:"white",bold: false}]
+execute if score @s rng1 matches 466 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",color:"red",bold:1b},{text:"\n“原谅我最后的不忠，请不去在意我的僭越，这一切都是为了必将到来的审判。”",color:"white",bold: false}]
+execute if score @s rng1 matches 477 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",color:"red",bold:1b},{text:"\n“漆黑的深渊，你是如此崇高。在这王座之上，我依然渺小。渺小的天使，将使渺小的人坠入地狱。”",color:"white",bold: false}]
 
 execute if score @s rng1 matches 375.. store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielNPC_flauros] Health
 execute if score @s rng1 matches 375 run bossbar add azr:boss_hp_bar "邪魔引路者 - 佛劳洛斯"
@@ -153,9 +153,14 @@ execute if score @s rng1 matches 160.. if score @s rng2 matches 13 as @a[tag=azr
 
 #-79892 23 -179
 
+execute if score @s rng1 matches 400 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“马林努斯！我问你，神界的神使有没有能力将那红色的结界击碎？！”",color:"white"}]
+execute if score @s rng1 matches 410 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“值得一试。爱理莎，你要做什么？”",color:"white"}]
+execute if score @s rng1 matches 420 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“恣眼在这里，你们都得没命，我来引开它。”",color:"white"}]
+execute if score @s rng1 matches 430 run tellraw @a[tag=azrShowDialog,distance=..40] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“好。这会耗尽我的力量，你一定要成功。”",color:"white"}]
 
+execute if score @s rng1 matches 444 run tp @n[tag=azrielNPC_marinus] -79890.01 24.00 -216.07
 
-
+execute if score @s rng1 matches 450 run fill -79893 24 -221 -79888 32 -221 minecraft:air destroy
 
 
 
