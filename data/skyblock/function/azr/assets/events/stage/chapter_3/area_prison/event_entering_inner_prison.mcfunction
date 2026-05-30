@@ -128,7 +128,7 @@ execute if score @s rng1 matches 373 as @a[distance=..200,tag=azrShowDialog] at 
 execute if score @s rng1 matches 383 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",     color:"red",bold:1b},{text:"\n“亡者的复活意味着其将成为生者，它也将迎来灭亡，或早或晚，结局再度归初。”",color:"white",bold: false}]
 execute if score @s rng1 matches 395 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",     color:"red",bold:1b},{text:"\n“世间万物流转循环的规律如此，我们打破了它，我们竟试图打破它，这是无可理喻、无可饶恕的。”",color:"white",bold: false}]
 execute if score @s rng1 matches 444 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",     color:"red",bold:1b},{text:"\n“沙利叶啊，神的怒火终将降在我们的头上，因我等早已渎神，这一切都是我们招致的后果。”",color:"white",bold: false}]
-execute if score @s rng1 matches 455 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",     color:"red",bold:1b},{text:"\n“烧却生命树的不会是地狱的烈火——它本就枯竭，我等的未来是那被燃尽的柴火，所以这为的是让最后的柴不被燃尽，我需将其熄灭。”",color:"white",bold: false}]
+execute if score @s rng1 matches 455 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",     color:"red",bold:1b},{text:"\n“烧却生命树的不会是地狱的烈火——它本就濒临凋亡，我等的未来是那被燃尽的柴火，所以这为的是让最后的柴不被燃尽，我需将其熄灭。”",color:"white",bold: false}]
 execute if score @s rng1 matches 466 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",     color:"red",bold:1b},{text:"\n“原谅我最后的不忠，请不去在意我的僭越，这一切都是为了必将到来的审判。”",color:"white",bold: false}]
 execute if score @s rng1 matches 477 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",     color:"red",bold:1b},{text:"\n“漆黑的深渊，你是如此崇高。在这王座之上，我依然渺小。渺小的天使，将使渺小的人坠入地狱。”",color:"white",bold: false}]
 
