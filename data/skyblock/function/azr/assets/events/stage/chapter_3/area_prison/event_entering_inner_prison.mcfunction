@@ -87,20 +87,23 @@ execute if score @s rng1 matches 190 positioned -79890.02 33.00 -171.96 run tell
 execute if score @s rng1 matches 183 positioned -79895 33 -213 run function skyblock:azr/assets/mobs/sonic_eye
 execute if score @s rng1 matches 183 positioned -79886 33 -213 run function skyblock:azr/assets/mobs/sonic_eye
 
+execute if score @s rng1 matches 293 positioned -79895 33 -213 run function skyblock:azr/assets/mobs/sonic_eye
+execute if score @s rng1 matches 293 positioned -79886 33 -213 run function skyblock:azr/assets/mobs/sonic_eye
+
 execute if score @s rng1 matches 230 positioned -79889 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield_heavy","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 230 positioned -79890 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield_heavy","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 230 positioned -79891 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield_heavy","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 230 positioned -79892 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield_heavy","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
-execute if score @s rng1 matches 260..262 positioned -79889 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng1 matches 260..262 positioned -79890 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng1 matches 260..262 positioned -79891 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng1 matches 260..262 positioned -79892 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 270..272 positioned -79889 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 270..272 positioned -79890 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 270..272 positioned -79891 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 270..272 positioned -79892 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
-execute if score @s rng1 matches 285 positioned -79889 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng1 matches 285 positioned -79890 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng1 matches 285 positioned -79891 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng1 matches 285 positioned -79892 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 295 positioned -79889 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 295 positioned -79890 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 295 positioned -79891 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 295 positioned -79892 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 execute if score @s rng1 matches 120 positioned -79890.01 33.00 -173.02 run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_large
 execute if score @s rng1 matches 130 positioned -79890.01 33.00 -173.02 as @n[tag=AzrielNPC_flauros,type=evoker,distance=..100] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
@@ -127,7 +130,11 @@ execute if score @s rng1 matches 313 as @a[distance=..200,tag=azrShowDialog] at 
 execute if score @s rng1 matches 325 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",color:"red",bold:1b},{text:"\n“原谅我最后的不忠，请不去在意我的僭越，这一切都是为了必将到来的审判。”",color:"white",bold: false}]
 execute if score @s rng1 matches 336 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",color:"red",bold:1b},{text:"\n“漆黑的深渊，你是如此崇高。在这王座之上，我依然渺小。渺小的天使，将使渺小的人坠入地狱。”",color:"white",bold: false}]
 
-
+execute if score @s rng1 matches 275.. store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielNPC_flauros] Health
+execute if score @s rng1 matches 275 run bossbar add azr:boss_hp_bar "殊能归叛的邪魔引路者 - 佛劳洛斯"
+execute if score @s rng1 matches 275 run bossbar set azr:boss_hp_bar color red
+execute if score @s rng1 matches 275 run bossbar set azr:boss_hp_bar max 300
+execute if score @s rng1 matches 275 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 
 
 
