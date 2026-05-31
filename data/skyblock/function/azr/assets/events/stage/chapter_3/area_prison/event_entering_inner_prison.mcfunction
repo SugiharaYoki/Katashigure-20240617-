@@ -416,7 +416,14 @@ execute if score @s rng1 matches 4032 run tellraw @a[tag=azrShowDialog,distance=
 execute if score @s rng1 matches 4042 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“但没事……至少这次我的死，有意义。”",color:"white"}]
 execute if score @s rng1 matches 4052 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“喜欢跟着我？那好，我们来同归于尽吧，恣眼。”",color:"white"}]
 
-
+execute if score @s rng1 matches 4042 run playsound ambient.basalt_deltas.additions ambient @a -79931 -64 -519 10 0.78
+execute if score @s rng1 matches 4042 run playsound ambient.basalt_deltas.additions ambient @a -79931 -64 -519 10 0.78
+execute if score @s rng1 matches 4042 run playsound ambient.basalt_deltas.additions ambient @a -79931 -64 -519 10 0.78
+execute if score @s rng1 matches 4042 run playsound ambient.basalt_deltas.additions ambient @a -79931 -64 -519 10 0.78
+execute if score @s rng1 matches 4042 run playsound ambient.basalt_deltas.mood ambient @a -79931 -64 -519 10 0.82
+execute if score @s rng1 matches 4042 run playsound ambient.basalt_deltas.mood ambient @a -79931 -64 -519 10 0.82
+execute if score @s rng1 matches 4042 run playsound ambient.basalt_deltas.mood ambient @a -79931 -64 -519 10 0.82
+execute if score @s rng1 matches 4042 run playsound ambient.basalt_deltas.mood ambient @a -79931 -64 -519 10 0.82
 
 
 
