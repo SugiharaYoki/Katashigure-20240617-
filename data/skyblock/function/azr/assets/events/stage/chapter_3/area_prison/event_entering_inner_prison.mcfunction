@@ -136,10 +136,10 @@ execute if score @s rng1 matches 363 as @a[distance=..200,tag=azrShowDialog] at 
 execute if score @s rng1 matches 373 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",     color:"red",bold:1b},{text:"\n“生者必灭，亡者何时将复活？”",color:"white",bold: false}]
 execute if score @s rng1 matches 383 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",     color:"red",bold:1b},{text:"\n“亡者的复活意味着其将成为生者，它也将迎来灭亡，或早或晚，结局再度归初。”",color:"white",bold: false}]
 execute if score @s rng1 matches 395 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",     color:"red",bold:1b},{text:"\n“世间万物流转循环的规律如此，我们打破了它，我们竟试图打破它，这是无可理喻、无可饶恕的。”",color:"white",bold: false}]
-execute if score @s rng1 matches 444 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",     color:"red",bold:1b},{text:"\n“沙利叶啊，神的怒火终将降在我们的头上，因我等早已渎神，这一切都是我们招致的后果。”",color:"white",bold: false}]
-execute if score @s rng1 matches 455 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",     color:"red",bold:1b},{text:"\n“烧却生命树的不会是地狱的烈火——它本就濒临凋亡，我等的未来是那被燃尽的柴火，所以这为的是让最后的柴不被燃尽，我需将其熄灭。”",color:"white",bold: false}]
-execute if score @s rng1 matches 466 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",     color:"red",bold:1b},{text:"\n“原谅我最后的不忠，请不去在意我的僭越，这一切都是为了必将到来的审判。”",color:"white",bold: false}]
-execute if score @s rng1 matches 477 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",     color:"red",bold:1b},{text:"\n“漆黑的深渊，你是如此崇高。在这王座之上，我依然渺小。渺小的天使，将使渺小的人坠入地狱。”",color:"white",bold: false}]
+execute if score @s rng1 matches 404 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",     color:"red",bold:1b},{text:"\n“沙利叶啊，神的怒火终将降在我们的头上，因我等早已渎神，这一切都是我们招致的后果。”",color:"white",bold: false}]
+execute if score @s rng1 matches 415 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",     color:"red",bold:1b},{text:"\n“烧却生命树的不会是地狱的烈火——它本就濒临凋亡，我等的未来是那被燃尽的柴火，所以这为的是让最后的柴不被燃尽，我需将其熄灭。”",color:"white",bold: false}]
+execute if score @s rng1 matches 426 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",     color:"red",bold:1b},{text:"\n“原谅我最后的不忠，请不去在意我的僭越，这一切都是为了必将到来的审判。”",color:"white",bold: false}]
+execute if score @s rng1 matches 437 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"权之殊能：",     color:"red",bold:1b},{text:"\n“漆黑的深渊，你是如此崇高。在这王座之上，我依然渺小。渺小的天使，将使渺小的人坠入地狱。”",color:"white",bold: false}]
 
 execute if score @s rng1 matches 375.. as @n[tag=AzrielNPC_flauros] store result score @s Health run data get entity @s Health
 execute if score @s rng1 matches 375.. store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielNPC_flauros] Health
@@ -192,49 +192,49 @@ execute if score @s rng1 matches 160..999 if score @s rng2 matches 13 as @a[tag=
 
 #-79892 23 -179
 
-execute if score @s rng1 matches 402 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“马林努斯！我问你，神界的神使有没有能力将那红色的结界击碎？！”",color:"white"}]
-execute if score @s rng1 matches 410 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“值得一试。爱理莎，你要做什么？”",color:"white"}]
-execute if score @s rng1 matches 420 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“恣眼继续在这里的话，你们都得没命，我来引开它。”",color:"white"}]
-execute if score @s rng1 matches 430 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“好。这会耗尽我的力量，祝你成功。”",color:"white"}]
+execute if score @s rng1 matches 502 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“马林努斯！我问你，神界的神使有没有能力将那红色的结界击碎？！”",color:"white"}]
+execute if score @s rng1 matches 510 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“值得一试。爱理莎，你要做什么？”",color:"white"}]
+execute if score @s rng1 matches 520 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“恣眼继续在这里的话，你们都得没命，我来引开它。”",color:"white"}]
+execute if score @s rng1 matches 530 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“好。这会耗尽我的力量，祝你成功。”",color:"white"}]
 
-execute if score @s rng1 matches 428 run tp @n[tag=AzrielNPC_marinus] -79890.01 24.00 -216.07
+execute if score @s rng1 matches 528 run tp @n[tag=AzrielNPC_marinus] -79890.01 24.00 -216.07
 
-execute if score @s rng1 matches 450 run fill -79893 24 -221 -79888 26 -221 minecraft:air destroy
-execute if score @s rng1 matches 451 run fill -79893 27 -221 -79888 29 -221 minecraft:air destroy
-execute if score @s rng1 matches 452 run fill -79893 24 -221 -79888 32 -221 minecraft:air destroy
+execute if score @s rng1 matches 550 run fill -79893 24 -221 -79888 26 -221 minecraft:air destroy
+execute if score @s rng1 matches 551 run fill -79893 27 -221 -79888 29 -221 minecraft:air destroy
+execute if score @s rng1 matches 552 run fill -79893 24 -221 -79888 32 -221 minecraft:air destroy
 
-execute if score @s rng1 matches 438 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
-execute if score @s rng1 matches 428..447 at @s rotated as @s rotated ~ 0 run particle trial_spawner_detection ^2 ^ ^2 0 0 0 0 1
-execute if score @s rng1 matches 428..447 at @s rotated as @s rotated ~ 0 run particle trial_spawner_detection ^2 ^ ^-2 0 0 0 0 1
-execute if score @s rng1 matches 428..447 at @s rotated as @s rotated ~ 0 run particle trial_spawner_detection ^-2 ^ ^2 0 0 0 0 1
-execute if score @s rng1 matches 428..447 at @s rotated as @s rotated ~ 0 run particle trial_spawner_detection ^-2 ^ ^-2 0 0 0 0 1
-execute if score @s rng1 matches 438..447 at @s rotated as @s rotated ~ 0 run particle trial_spawner_detection ^ ^ ^ 1 0 1 0 8
-execute if score @s rng1 matches 428 run playsound minecraft:entity.wither.spawn hostile @a ~ ~ ~ 2 1.5
-execute if score @s rng1 matches 428 run playsound minecraft:ambient.soul_sand_valley.mood player @s ~ ~ ~ 2 1.3
-execute if score @s rng1 matches 428 run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
-execute if score @s rng1 matches 428 run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
-execute if score @s rng1 matches 428 run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
+execute if score @s rng1 matches 538 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
+execute if score @s rng1 matches 528..547 at @s rotated as @s rotated ~ 0 run particle trial_spawner_detection ^2 ^ ^2 0 0 0 0 1
+execute if score @s rng1 matches 528..547 at @s rotated as @s rotated ~ 0 run particle trial_spawner_detection ^2 ^ ^-2 0 0 0 0 1
+execute if score @s rng1 matches 528..547 at @s rotated as @s rotated ~ 0 run particle trial_spawner_detection ^-2 ^ ^2 0 0 0 0 1
+execute if score @s rng1 matches 528..547 at @s rotated as @s rotated ~ 0 run particle trial_spawner_detection ^-2 ^ ^-2 0 0 0 0 1
+execute if score @s rng1 matches 538..547 at @s rotated as @s rotated ~ 0 run particle trial_spawner_detection ^ ^ ^ 1 0 1 0 8
+execute if score @s rng1 matches 528 run playsound minecraft:entity.wither.spawn hostile @a ~ ~ ~ 2 1.5
+execute if score @s rng1 matches 528 run playsound minecraft:ambient.soul_sand_valley.mood player @s ~ ~ ~ 2 1.3
+execute if score @s rng1 matches 528 run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
+execute if score @s rng1 matches 528 run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
+execute if score @s rng1 matches 528 run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
 
-execute if score @s rng1 matches 450 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“不要有任何人跟着我！！你们一定要守住神庭，别再管我了！！”",color:"white"}]
+execute if score @s rng1 matches 550 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“不要有任何人跟着我！！你们一定要守住神庭，别再管我了！！”",color:"white"}]
 execute if score @s rng1 matches 350 as @e[type=#illager,distance=..30,tag=AzrielNPC_Divineforce] at @s run scoreboard players set @s AzrielNPC_FollowInterest 0
 execute if score @s rng1 matches 350 as @e[type=#illager,distance=..30,tag=AzrielNPC_Divineforce] at @s run tag @s remove AzrielNPC_Divineforce_Followable
 
-execute if score @s rng1 matches 447 run kill @e[tag=AzrielMarker_boss3_marinus_full_power_slash_marker,distance=..50,type=marker]
-execute if score @s rng1 matches 448 positioned -79889.99 25.91 -220.00 run summon marker ~ ~ ~ {Tags:["AzrielMarker_boss3_marinus_full_power_slash_marker"]}
-execute if score @s rng1 matches 448 as @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker] at @s positioned -79889.96 25.02 -220.00 run function skyblock:azr/assets/mobs/skill/marinus/attack_instant_slash
-execute if score @s rng1 matches 448 run kill @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker,distance=..50,type=marker]
-execute if score @s rng1 matches 449 positioned -79889.99 26.91 -220.00 run summon marker ~ ~ ~ {Tags:["AzrielMarker_boss3_marinus_full_power_slash_marker"]}
-execute if score @s rng1 matches 449 as @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker] at @s positioned -79889.96 25.02 -220.00 run function skyblock:azr/assets/mobs/skill/marinus/attack_instant_slash
-execute if score @s rng1 matches 449 run kill @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker,distance=..50,type=marker]
-execute if score @s rng1 matches 450 positioned -79889.99 27.91 -220.00 run summon marker ~ ~ ~ {Tags:["AzrielMarker_boss3_marinus_full_power_slash_marker"]}
-execute if score @s rng1 matches 450 as @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker] at @s positioned -79889.96 25.02 -220.00 run function skyblock:azr/assets/mobs/skill/marinus/attack_instant_slash
-execute if score @s rng1 matches 450 run kill @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker,distance=..50,type=marker]
-execute if score @s rng1 matches 451 positioned -79889.99 28.91 -220.00 run summon marker ~ ~ ~ {Tags:["AzrielMarker_boss3_marinus_full_power_slash_marker"]}
-execute if score @s rng1 matches 451 as @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker] at @s positioned -79889.96 25.02 -220.00 run function skyblock:azr/assets/mobs/skill/marinus/attack_instant_slash
-execute if score @s rng1 matches 451 run kill @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker,distance=..50,type=marker]
-execute if score @s rng1 matches 452 positioned -79889.99 29.91 -220.00 run summon marker ~ ~ ~ {Tags:["AzrielMarker_boss3_marinus_full_power_slash_marker"]}
-execute if score @s rng1 matches 452 as @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker] at @s positioned -79889.96 25.02 -220.00 run function skyblock:azr/assets/mobs/skill/marinus/attack_instant_slash
-execute if score @s rng1 matches 452 run kill @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker,distance=..50,type=marker]
+execute if score @s rng1 matches 547 run kill @e[tag=AzrielMarker_boss3_marinus_full_power_slash_marker,distance=..50,type=marker]
+execute if score @s rng1 matches 548 positioned -79889.99 25.91 -220.00 run summon marker ~ ~ ~ {Tags:["AzrielMarker_boss3_marinus_full_power_slash_marker"]}
+execute if score @s rng1 matches 548 as @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker] at @s positioned -79889.96 25.02 -220.00 run function skyblock:azr/assets/mobs/skill/marinus/attack_instant_slash
+execute if score @s rng1 matches 548 run kill @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker,distance=..50,type=marker]
+execute if score @s rng1 matches 549 positioned -79889.99 26.91 -220.00 run summon marker ~ ~ ~ {Tags:["AzrielMarker_boss3_marinus_full_power_slash_marker"]}
+execute if score @s rng1 matches 549 as @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker] at @s positioned -79889.96 25.02 -220.00 run function skyblock:azr/assets/mobs/skill/marinus/attack_instant_slash
+execute if score @s rng1 matches 549 run kill @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker,distance=..50,type=marker]
+execute if score @s rng1 matches 550 positioned -79889.99 27.91 -220.00 run summon marker ~ ~ ~ {Tags:["AzrielMarker_boss3_marinus_full_power_slash_marker"]}
+execute if score @s rng1 matches 550 as @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker] at @s positioned -79889.96 25.02 -220.00 run function skyblock:azr/assets/mobs/skill/marinus/attack_instant_slash
+execute if score @s rng1 matches 550 run kill @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker,distance=..50,type=marker]
+execute if score @s rng1 matches 551 positioned -79889.99 28.91 -220.00 run summon marker ~ ~ ~ {Tags:["AzrielMarker_boss3_marinus_full_power_slash_marker"]}
+execute if score @s rng1 matches 551 as @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker] at @s positioned -79889.96 25.02 -220.00 run function skyblock:azr/assets/mobs/skill/marinus/attack_instant_slash
+execute if score @s rng1 matches 551 run kill @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker,distance=..50,type=marker]
+execute if score @s rng1 matches 552 positioned -79889.99 29.91 -220.00 run summon marker ~ ~ ~ {Tags:["AzrielMarker_boss3_marinus_full_power_slash_marker"]}
+execute if score @s rng1 matches 552 as @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker] at @s positioned -79889.96 25.02 -220.00 run function skyblock:azr/assets/mobs/skill/marinus/attack_instant_slash
+execute if score @s rng1 matches 552 run kill @n[tag=AzrielMarker_boss3_marinus_full_power_slash_marker,distance=..50,type=marker]
 
 
 execute if score @s rng1 matches 469 positioned -79889 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield_heavy","AzrielMob_summon_delay","AzrielMob_level_1"]}
@@ -286,10 +286,10 @@ execute if score @s rng1 matches 860 positioned -79890 24 -179 run summon marker
 execute if score @s rng1 matches 860 positioned -79891 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_cleric","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 860 positioned -79892 24 -179 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_cleric","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
-execute if score @s rng1 matches 560 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“快去吧，这里有我。”",color:"white"}]
-execute if score @s rng1 matches 660 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“……非常感谢。”",color:"white"}]
-execute if score @s rng1 matches 670 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“没关系，我会殿后。”",color:"white"}]
-execute if score @s rng1 matches 870 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“……爱理莎，快来不及了。”",color:"white"}]
+execute if score @s rng1 matches 660 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“快去吧，这里有我。”",color:"white"}]
+execute if score @s rng1 matches 760 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“……非常感谢。”",color:"white"}]
+execute if score @s rng1 matches 770 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“没关系，我会殿后。”",color:"white"}]
+execute if score @s rng1 matches 970 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“……爱理莎，快来不及了。”",color:"white"}]
 
 execute if score @s rng1 matches 990..999 run scoreboard players set @s rng1 990
 execute if score @s rng1 matches 300..999 if entity @a[tag=azrPlayer,x=-79894,y=20,z=-232,dx=8,dy=8,dz=8] if entity @n[tag=AzrielMob_sonic_eye_lord,x=-79896,y=20,z=-228,dx=12,dy=8,dz=12] run scoreboard players set @s rng1 1000
