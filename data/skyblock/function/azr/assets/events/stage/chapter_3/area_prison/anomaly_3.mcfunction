@@ -42,7 +42,8 @@ execute if score @s rng1 matches 601..632 if entity @a[x=-79890,y=-19,z=-175,dx=
 
 execute if score @s rng1 matches 600.. as @a[distance=..200,tag=azrShowDialog] at @s run playsound ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 0.5 0.7
 execute if score @s rng1 matches 637 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“不要再跟我说这些了！！我们的亲生女儿就在孤儿院，这不是将她带回来的最好的时候吗！！”",color:"white",bold: false}]
-execute if score @s rng1 matches 647 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"陌生却又怀念的语调：",color:"aqua",bold:1b},{text:"\n“爸爸妈妈……不要再吵了……”",color:"white",bold: false}]
+execute if score @s rng1 matches 647 as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:sagashimono music @s ~ ~ ~ 0.8
+execute if score @s rng1 matches 647 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"陌生语调：",color:"aqua",bold:1b},{text:"\n“爸爸妈妈……不要再吵了……”",color:"white",bold: false}]
 execute if score @s rng1 matches 657 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“我们在说话的时候不要插嘴！！”",color:"white",bold: false}]
 execute if score @s rng1 matches 667 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"牵记的男声：",color:"green",bold:1b},{text:"\n“这都是为了爱理莎的未来着想，如果我们接回女儿，爱理莎又该去哪里？谁来养她？”",color:"white",bold: false}]
 execute if score @s rng1 matches 677 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“老公，这女孩子根本就不是我们的爱理莎！！你还记得吗，当时我怀孕，你说要接我回家，娶我为妻。”",color:"white",bold: false}]
@@ -53,6 +54,10 @@ execute if score @s rng1 matches 720 as @a[distance=..200,tag=azrShowDialog] at 
 execute if score @s rng1 matches 730 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“……”",color:"white",bold: false}]
 execute if score @s rng1 matches 735 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“我们养到她成人。然后，让她自己打拼。”",color:"white",bold: false}]
 execute if score @s rng1 matches 745 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“我们没有经济条件抚养两个女儿，你清楚这一点。我们全部积蓄都用来给爱理莎攒大学学费，两个？我们会家破人亡的。”",color:"white",bold: false}]
+execute if score @s rng1 matches 755 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"牵记的男声：",color:"green",bold:1b},{text:"\n“……那就，照顾到成人。她的大学怎么办？”",color:"white",bold: false}]
+execute if score @s rng1 matches 765 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“助学金、奖学金。不然，就不上。高中也不能上私立了，公立就行。”",color:"white",bold: false}]
+execute if score @s rng1 matches 775 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“爱理莎需要心理医生咨询费，我们也要省出这笔钱。”",color:"white",bold: false}]
+execute if score @s rng1 matches 785 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"牵记的男声：",color:"green",bold:1b},{text:"\n“那……这个女孩，我们该叫她什么名字？她们不能都叫爱理莎。”",color:"white",bold: false}]
 
 
 
