@@ -315,12 +315,14 @@ execute if score @s rng1 matches 1022 run fill -79894 23 -233 -79887 23 -226 air
 execute if score @s rng1 matches 1024 run particle cloud ~ ~-0.3 ~ 0 0 0 0.5 50
 execute if score @s rng1 matches 1024 run playsound minecraft:block.beacon.activate player @a ~ ~ ~ 1 0.6
 execute if score @s rng1 matches 1022 run effect give @a[tag=azrPlayer] slow_falling 10 225 true
+execute if score @s rng1 matches 1021 as @a[tag=azrPlayer] at @s run attribute @s gravity base set 0.04
 execute if score @s rng1 matches 1022 as @a[tag=azrPlayer] at @s unless entity @s[x=-79894,y=20,z=-234,dx=8,dy=8,dz=8] run tp @s -79890.09 24.00 -229.07
 
 execute if score @s rng1 matches 1030 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n（等等……我坠落的速度，有什么东西拖住了我？）",color:"white"}]
 
 execute if score @s rng1 matches 1490..1499 run scoreboard players set @s rng1 1490
 execute if score @s rng1 matches 300..1499 if entity @a[tag=azrPlayer,x=-79898,y=-33,z=-238,dx=20,dy=7,dz=20] run scoreboard players set @s rng1 1500
+execute if score @s rng1 matches 1501 as @a[tag=azrPlayer] at @s run attribute @s gravity base reset
 
 execute if score @s rng1 matches 1500..3999 store result score @s rng2 run random value 1..40
 execute if score @s rng1 matches 1500..3999 if score @s rng2 matches 1 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^0.2 ^ ^3 run function skyblock:azr/assets/mobs/trap_fang
@@ -375,4 +377,18 @@ execute if score @s rng1 matches 2006 run fill -79893 -31 -304 -79888 -31 -304 n
 execute if score @s rng1 matches 2001..2006 run playsound block.iron_trapdoor.open block @a -79889.96 -24.11 -303.00 3 0.6
 
 execute if score @s rng1 matches 2004 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n（这里走不通，得换刚才的岔路！）",color:"white"}]
+
+
+execute if score @s rng1 matches 2990..2999 run scoreboard players set @s rng1 2990
+execute if score @s rng1 matches 300..2999 if entity @a[tag=azrPlayer,x=-79926,y=-30,z=-274,dx=9,dy=9,dz=20] run scoreboard players set @s rng1 3000
+
+execute if score @s rng1 matches 3001 positioned -79919 -30 -270 as @a[tag=azrPlayer,x=-79926,y=-30,z=-274,dx=16,dy=12,dz=20] at @s run tp @s ~ ~100 ~-250
+execute if score @s rng1 matches 3001 positioned -79907.00 71.05 -519.63 run particle minecraft:white_smoke ~ ~ ~ 0.5 2 1.2 0.03 150
+execute if score @s rng1 matches 3001 positioned -79921 70 -520 run particle large_smoke ~ ~ ~ 20 3 3 0.06 200
+execute if score @s rng1 matches 3001 positioned -79921 70 -520 run particle explosion_emitter ~ ~ ~ 20 3 3 0.06 30
+execute if score @s rng1 matches 3002 positioned -79921 70 -520 run particle large_smoke ~ ~ ~ 20 3 3 0.06 120
+execute if score @s rng1 matches 3001 positioned -79921 70 -520 run playsound entity.generic.explode block @a ~10 ~ ~ 10 0.8
+execute if score @s rng1 matches 3002 positioned -79921 70 -520 run playsound entity.generic.explode block @a ~-10 ~ ~ 10 0.9
+
+
 
