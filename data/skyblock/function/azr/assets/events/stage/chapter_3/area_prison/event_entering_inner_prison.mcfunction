@@ -405,11 +405,16 @@ execute if score @s rng1 matches 300..3999 if entity @a[tag=azrPlayer,x=-79933,y
 execute if score @s rng1 matches 4001 positioned -79930 70 -520 as @a[tag=azrPlayer] at @s unless entity @s[x=-79933,y=60,z=-523,dx=20,dy=6,dz=20] run tp @s -79930 65 -520
 execute if score @s rng1 matches 4001 positioned -79930 70 -520 as @a[tag=azrPlayer] at @s run effect give @s resistance 50 255 true
 
+execute if score @s rng1 matches 4017 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“……这样啊。”",color:"white"}]
 
+execute if score @s rng1 matches 4015 as @a[tag=azrShowDialog] at @s run tp @s -79946 65 -540
 
+execute if score @s rng1 matches 4021 as @a[tag=azrShowDialog] at @s run tp @s -79931 33 -519
 
+execute if score @s rng1 matches 4032 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“再一次于这种莫名其妙的地方坠落而死。”",color:"white"}]
 
-
+execute if score @s rng1 matches 4042 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“但没事……至少这次我的死，有意义。”",color:"white"}]
+execute if score @s rng1 matches 4052 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“喜欢跟着我？那好，我们来同归于尽吧，恣眼。”",color:"white"}]
 
 
 
