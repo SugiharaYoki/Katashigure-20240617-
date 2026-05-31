@@ -2,7 +2,7 @@ execute if score @s rng1 matches 1 as @a[x=-79913,y=46,z=-131,dx=8,dy=6,dz=7,tag
 execute if score @s rng1 matches 1 run scoreboard players set @e[tag=AzrielNPC_Divineforce_Followable] AzrielNPC_FollowInterest 0
 
 execute if score @s rng1 matches 30..35 run scoreboard players set @s rng1 28
-execute if score @s rng1 matches 28..32 if entity @a[x=-79890,y=-18,z=-160,dx=5,dy=5,dz=29,tag=azrPlayer] run effect give @s slowness 20 9 true
+execute if score @s rng1 matches 28..32 as @a[x=-79890,y=-18,z=-160,dx=5,dy=5,dz=29,tag=azrPlayer] run effect give @s slowness 20 9 true
 execute if score @s rng1 matches 28..32 if entity @a[x=-79890,y=-18,z=-160,dx=5,dy=5,dz=29,tag=azrPlayer] run scoreboard players set @s rng1 36
 
 execute if score @s rng1 matches 38 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“莉茜，该吃晚饭啦。”",color:"white",bold: false}]

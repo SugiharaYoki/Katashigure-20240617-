@@ -1,7 +1,7 @@
 
 
 execute if score @s rng1 matches 30..35 run scoreboard players set @s rng1 28
-execute if score @s rng1 matches 1..32 if entity @a[x=-79840,y=-18,z=-160,dx=5,dy=5,dz=29,tag=azrPlayer] run effect give @s slowness 20 9 true
+execute if score @s rng1 matches 1..32 as @a[x=-79840,y=-18,z=-160,dx=5,dy=5,dz=29,tag=azrPlayer] run effect give @s slowness 20 9 true
 execute if score @s rng1 matches 1..32 if entity @a[x=-79840,y=-18,z=-160,dx=5,dy=5,dz=29,tag=azrPlayer] run scoreboard players set @s rng1 36
 
 execute if score @s rng1 matches 38 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"冷淡的播报音：",color:"red",bold:1b},{text:"\n“美国加利福尼亚州一所私立初中周二上午发生严重火灾。当地警方初步判断，火灾并非意外，而是由一名身份尚未确认的不明人员在校舍西侧杂物间附近纵火引发。由于学校建筑长期存在消防通道不足、隔火门失效、走廊堆放可燃材料等违规问题，火势在短时间内迅速蔓延，造成多名学生和教职员工受伤。\n火灾发生在上午9时17分左右，当时学校正在上第二节课。多名学生表示，最初只是闻到‘像塑料烧焦一样的味道’，随后走廊尽头开始冒出黑烟。不到五分钟，西教学楼一层和二层的主要通道便被浓烟覆盖，部分班级无法按照原定疏散路线撤离，只能在教师带领下从体育馆侧门和低层窗户逃生。”",color:"white",bold: false}]
@@ -19,7 +19,7 @@ execute if score @s rng1 matches 20..385 if entity @a[x=-79900,y=-18,z=-163,dx=5
 execute if score @s rng1 matches 391 as @a[tag=azrShowDialog,distance=..2000] at @s run effect give @s darkness 5 0 true
 execute if score @s rng1 matches 395 as @a[x=-79900,y=-18,z=-163,dx=5,dy=5,dz=5,tag=azrPlayer] at @s run tp @s ~ ~ ~-6 facing ~1 ~ ~-6
 
-execute if score @s rng1 matches 401..432 if entity @a[x=-79840,y=-18,z=-199,dx=5,dy=5,dz=29,tag=azrPlayer] run effect give @s slowness 20 9 true
+execute if score @s rng1 matches 401..432 as @a[x=-79840,y=-18,z=-199,dx=5,dy=5,dz=29,tag=azrPlayer] run effect give @s slowness 20 9 true
 execute if score @s rng1 matches 401..432 if entity @a[x=-79840,y=-18,z=-199,dx=5,dy=5,dz=29,tag=azrPlayer] run scoreboard players set @s rng1 436
 
 execute if score @s rng1 matches 438 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"严苛的嗓音：",color:"red",bold:1b},{text:"\n“先说最重要的部分。爱理莎目前没有生命危险。她主要是吸入了较多浓烟，右前臂和肩部有轻度到中度烧伤，另外有几处擦伤和软组织挫伤。我们已经给她做了吸氧、清创和镇痛处理，目前生命体征稳定，血氧也恢复到了安全范围。”",color:"white",bold: false}]
