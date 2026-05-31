@@ -50,6 +50,9 @@ execute if score @s rng1 matches 687 as @a[distance=..200,tag=azrShowDialog] at 
 execute if score @s rng1 matches 700 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“那是我们的亲骨肉，她被抱错了，她的父母早亡，我们爱情的象征？在外流离失所十年？是在开玩笑吗？！”",color:"white",bold: false}]
 execute if score @s rng1 matches 710 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"牵记的男声：",color:"green",bold:1b},{text:"\n“我懂你意思……既然找到了爱理莎，那就接她回家吧。”",color:"white",bold: false}]
 execute if score @s rng1 matches 720 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"牵记的男声：",color:"green",bold:1b},{text:"\n“那，这个女孩怎么办？”",color:"white",bold: false}]
+execute if score @s rng1 matches 730 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“……”",color:"white",bold: false}]
+execute if score @s rng1 matches 735 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“我们养到她成人。然后，让她自己打拼。”",color:"white",bold: false}]
+execute if score @s rng1 matches 745 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“我们没有经济条件抚养两个女儿，你清楚这一点。我们全部积蓄都用来给爱理莎攒大学学费，两个？我们会家破人亡的。”",color:"white",bold: false}]
 
 
 
