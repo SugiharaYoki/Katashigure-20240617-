@@ -367,6 +367,7 @@ execute if score @s rng1 matches 1510 positioned -79890.03 -31.00 -270.17 run su
 execute if score @s rng1 matches 1530 positioned -79890.03 -31.00 -270.17 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 1550 positioned -79890.03 -31.00 -270.17 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
+execute if score @s rng1 matches 1521 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n（恣眼只要在神庭就是无敌的。但只要我将它带到神庭以外的地方，它就没法活。）",color:"white"}]
 
 execute if score @s rng1 matches 1990..1999 run scoreboard players set @s rng1 1990
 execute if score @s rng1 matches 300..1999 if entity @a[tag=azrPlayer,x=-79893,y=-31,z=-291,dx=9,dy=9,dz=20] run scoreboard players set @s rng1 2000
