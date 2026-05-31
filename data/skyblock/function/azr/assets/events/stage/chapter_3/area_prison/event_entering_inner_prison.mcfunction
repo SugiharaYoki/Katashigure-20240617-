@@ -1,5 +1,5 @@
 
-
+execute if score @s rng1 matches 5 run forceload add ~ ~
 
 execute if score @s rng1 matches 2..3 run scoreboard players set @s rng1 2
 
@@ -46,7 +46,7 @@ execute if score @s rng1 matches 50 run playsound ambient.soul_sand_valley.loop 
 execute if score @s rng1 matches 70 run stopsound @a[tag=azrShowDialog,distance=..200]
 
 execute if score @s rng1 matches 82 positioned -79890.02 33.00 -171.96 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“敌人在背后！！！”",color:"white"}]
-execute if score @s rng1 matches 82.. run scoreboard players add stage_boss_bgm AzrTimerStack 1
+execute if score @s rng1 matches 82..4050 run scoreboard players add stage_boss_bgm AzrTimerStack 1
 execute if score stage_boss_bgm AzrTimerStack matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:psyborgcocoon music @s ~ ~ ~ 0.65
 execute if score stage_boss_bgm AzrTimerStack matches 1000.. run scoreboard players set stage_boss_bgm AzrTimerStack 0
 
@@ -475,10 +475,12 @@ execute if score @s rng1 matches 4056..4999 as @p[tag=azrPlayer] at @s rotated a
 execute if score @s rng1 matches 4061..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ~ ~-3 ~ run particle sculk_soul ~ ~ ~ 1 0 1 0.03 50
 
 execute if score @s rng1 matches 4052 as @a[tag=azrShowDialog,distance=..200] at @s run effect give @s darkness 5 0 true
-execute if score @s rng1 matches 4052 as @a[tag=azrShowDialog,distance=..200] at @s run tp @s -79861.99 -18.00 -127.99 facing -79860.99 -18.00 -127.99
+execute if score @s rng1 matches 4056 as @a[tag=azrShowDialog,distance=..200] at @s run tp @s -79861.99 -18.00 -127.99 facing -79860.99 -18.00 -127.99
+execute if score @s rng1 matches 4056 as @a[tag=azrShowDialog,distance=..200] at @s run stopsound @s
+execute if score @s rng1 matches 4056 as @a[tag=azrShowDialog,distance=..200] at @s run playsound item.totem.use master @s ~ ~ ~ 2
+execute if score @s rng1 matches 4056 as @a[tag=azrShowDialog,distance=..200] at @s run effect give @s fire_resistance 40 0
+execute if score @s rng1 matches 4056 as @a[tag=azrShowDialog,distance=..200] at @s run effect give @s regeneration 45 9
 
-
-
-
+execute if score @s rng1 matches 4053 run forceload remove ~ ~
 
 
