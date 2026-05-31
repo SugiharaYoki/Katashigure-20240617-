@@ -475,3 +475,10 @@ execute if score @s rng1 matches 4056..4999 as @p[tag=azrPlayer] at @s rotated a
 execute if score @s rng1 matches 4061..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ~ ~-3 ~ run particle sculk_soul ~ ~ ~ 1 0 1 0.03 50
 
 execute if score @s rng1 matches 4052 as @a[tag=azrShowDialog,distance=..200] at @s run effect give @s darkness 5 0 true
+execute if score @s rng1 matches 4052 as @a[tag=azrShowDialog,distance=..200] at @s run tp @s -79861.99 -18.00 -127.99 facing -79860.99 -18.00 -127.99
+
+
+
+
+
+
