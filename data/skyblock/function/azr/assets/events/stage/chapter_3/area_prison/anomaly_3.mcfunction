@@ -10,7 +10,7 @@ execute if score @s rng1 matches 118 as @a[distance=..200,tag=azrShowDialog] at 
 execute if score @s rng1 matches 158 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"冷淡的播报音：",color:"red",bold:1b},{text:"\n“学区负责人在周二下午的记者会上表示，将配合警方和消防部门调查，并承诺对所有校舍进行全面安全检查。对于学校是否明知存在违规情况却未及时整改，负责人没有正面回应，只称‘目前最重要的是学生和教职员工的安全’。\n当地市长则表示，如果调查确认校方或学区存在疏忽，相关责任人将被追究责任。\n目前，该校已宣布停课至少一周，学生将暂时转至邻近学校或线上学习。警方呼吁知情者提供线索，并表示将重点调查纵火嫌疑人与学校之间是否存在关联。”",color:"white",bold: false}]
 
 
-execute if score @s rng1 matches 142 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"……",color:"gray",bold:1b}]
+execute if score @s rng1 matches 168 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"……",color:"gray",bold:1b}]
 
 
 execute if score @s rng1 matches 380..385 run scoreboard players set @s rng1 380
