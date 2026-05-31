@@ -35,7 +35,7 @@ execute if score @s rng1 matches 580..585 run scoreboard players set @s rng1 580
 execute if score @s rng1 matches 20..585 if entity @a[x=-79850,y=-18,z=-202,dx=5,dy=5,dz=5,tag=azrPlayer] run scoreboard players set @s rng1 590
 execute if score @s rng1 matches 591 as @a[tag=azrShowDialog,distance=..2000] at @s run effect give @s slowness 3 255 true
 execute if score @s rng1 matches 591 as @a[tag=azrShowDialog,distance=..2000] at @s run effect give @s darkness 3 0 true
-execute if score @s rng1 matches 595 as @a[x=-79850,y=-18,z=-202,dx=8,dy=5,dz=5,tag=azrPlayer] at @s run tp @s ~ ~ ~-6 facing ~1 ~ ~-6
+execute if score @s rng1 matches 595 as @a[x=-79850,y=-18,z=-202,dx=8,dy=5,dz=5,tag=azrPlayer] at @s run tp @s ~-60 ~ ~33 facing ~-59 ~ ~33
 
 execute if score @s rng1 matches 601..632 as @a[x=-79840,y=-18,z=-238,dx=5,dy=5,dz=29,tag=azrPlayer] run effect give @s slowness 20 9 true
 execute if score @s rng1 matches 601..632 if entity @a[x=-79840,y=-18,z=-238,dx=5,dy=5,dz=29,tag=azrPlayer] run scoreboard players set @s rng1 636
