@@ -327,7 +327,7 @@ execute positioned -79894 32 -174 as @n[tag=AzrielMarker_encounter,distance=0..0
 #异象3
 execute positioned -79862 -18 -126 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79863,y=-18,z=-131,dx=7,dy=5,dz=7,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79862 -18 -126 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
-execute positioned -79862 -18 -126 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1..900}] run function skyblock:azr/assets/events/stage/chapter_3/area_prison/anomaly_3
+execute positioned -79862 -18 -126 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1..1900}] run function skyblock:azr/assets/events/stage/chapter_3/area_prison/anomaly_3
 
 
 
