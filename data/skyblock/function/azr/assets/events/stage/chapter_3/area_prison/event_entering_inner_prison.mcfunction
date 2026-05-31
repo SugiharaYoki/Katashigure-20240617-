@@ -295,6 +295,7 @@ execute if score @s rng1 matches 990..999 run scoreboard players set @s rng1 990
 execute if score @s rng1 matches 300..999 if entity @a[tag=azrPlayer,x=-79894,y=20,z=-232,dx=8,dy=8,dz=8] if entity @n[tag=AzrielMob_sonic_eye_lord,x=-79896,y=20,z=-228,dx=12,dy=8,dz=12] run scoreboard players set @s rng1 1000
 execute if score @s rng1 matches 1001 as @a[tag=azrPlayer] at @s unless entity @s[x=-79894,y=20,z=-234,dx=8,dy=8,dz=8] run tp @s -79890.09 24.00 -229.07
 
+execute if score @s rng1 matches 1002 as @a[tag=azrShowDialog,distance=..2000] at @s run bossbar remove azr:boss_hp_bar
 execute if score @s rng1 matches 1002 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n（操，这里是……电梯！！）",color:"white"}]
 
 execute if score @s rng1 matches 1010..1020 run particle minecraft:white_ash -79890.10 24.00 -228.99 2 0.3 2 0.06 70
@@ -484,6 +485,7 @@ execute if score @s rng1 matches 4061..4999 as @p[tag=azrPlayer] at @s rotated a
 
 execute if score @s rng1 matches 4062 as @a[tag=azrShowDialog,distance=..2000] at @s run effect give @s darkness 5 0 true
 execute if score @s rng1 matches 4062 as @a[tag=azrShowDialog,distance=..2000] at @s run kill @n[tag=AzrielMob_sonic_eye_lord]
+execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..2000] at @s run bossbar remove azr:boss_hp_bar_2
 execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..2000] at @s run tp @s -79861.99 -18.00 -127.99 facing -79860.99 -18.00 -127.99
 execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..2000] at @s run stopsound @s
 execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..2000] at @s run playsound item.totem.use master @s ~ ~ ~ 2
