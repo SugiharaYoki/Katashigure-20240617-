@@ -15,5 +15,19 @@ execute if score @s rng1 matches 168 as @a[distance=..200,tag=azrShowDialog] at 
 
 execute if score @s rng1 matches 380..385 run scoreboard players set @s rng1 380
 
-execute if score @s rng1 matches 20.. if entity @a[x=-79900,y=-18,z=-163,dx=5,dy=5,dz=5,tag=azrPlayer] run scoreboard players set @s rng1 390
-execute if score @s rng1 matches 20.. as @a[x=-79900,y=-18,z=-163,dx=5,dy=5,dz=5,tag=azrPlayer] at @s run tp @s ~-10 ~66 ~33
+execute if score @s rng1 matches 20..385 if entity @a[x=-79900,y=-18,z=-163,dx=5,dy=5,dz=5,tag=azrPlayer] run scoreboard players set @s rng1 390
+execute if score @s rng1 matches 391 as @a[tag=azrShowDialog,distance=..2000] at @s run effect give @s darkness 5 0 true
+execute if score @s rng1 matches 395 as @a[x=-79900,y=-18,z=-163,dx=5,dy=5,dz=5,tag=azrPlayer] at @s run tp @s ~ ~ ~-6 facing ~1 ~ ~-6
+
+execute if score @s rng1 matches 401..432 if entity @a[x=-79840,y=-18,z=-160,dx=5,dy=5,dz=29,tag=azrPlayer] run effect give @s slowness 20 9 true
+execute if score @s rng1 matches 401..432 if entity @a[x=-79840,y=-18,z=-160,dx=5,dy=5,dz=29,tag=azrPlayer] run scoreboard players set @s rng1 36
+
+execute if score @s rng1 matches 438 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"严苛的嗓音：",color:"red",bold:1b},{text:"\n“先说最重要的部分。爱理莎目前没有生命危险。她主要是吸入了较多浓烟，右前臂和肩部有轻度到中度烧伤，另外有几处擦伤和软组织挫伤。我们已经给她做了吸氧、清创和镇痛处理，目前生命体征稳定，血氧也恢复到了安全范围。”",color:"white",bold: false}]
+execute if score @s rng1 matches 450 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“医生，求求您一定要让莉茜好好的，我们只有她一个孩子……”",color:"white",bold: false}]
+execute if score @s rng1 matches 460 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"严苛的嗓音：",color:"red",bold:1b},{text:"\n“不过，还有一件事，我需要单独和二位确认。”",color:"white",bold: false}]
+execute if score @s rng1 matches 468 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"严苛的嗓音：",color:"red",bold:1b},{text:"\n“因为爱理莎被送来时有吸入性损伤，我们一开始需要评估她是否可能需要输血或进一步抢救，所以医院做了基础血型和交叉配血检查。后来我们也根据您二位提供的家庭病史，做了几项与遗传风险有关的筛查。”",color:"white",bold: false}]
+execute if score @s rng1 matches 480 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"严苛的嗓音：",color:"red",bold:1b},{text:"\n“从目前的检查结果看，爱理莎的部分血型和遗传标记，与您二位作为她的生物学父母这一点，并不一致。”",color:"white",bold: false}]
+execute if score @s rng1 matches 492 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“……医生，您在开玩笑吧？您……您是指什么意思？！”",color:"white",bold: false}]
+execute if score @s rng1 matches 502 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"严苛的嗓音：",color:"red",bold:1b},{text:"\n“确实存在样本污染的可能性。但，爱理莎可能并非您二位共同的生物学子女。”",color:"white",bold: false}]
+
+
