@@ -425,6 +425,47 @@ execute if score @s rng1 matches 4042 run playsound ambient.basalt_deltas.mood a
 execute if score @s rng1 matches 4042 run playsound ambient.basalt_deltas.mood ambient @a -79931 -64 -519 10 0.82
 execute if score @s rng1 matches 4042 run playsound ambient.basalt_deltas.mood ambient @a -79931 -64 -519 10 0.82
 
-
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^ ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^0.3 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^0.6 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^0.9 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^1.2 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^1.5 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^1.8 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^2.1 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^2.4 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^2.7 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^-0.3 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^-0.6 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^-0.9 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^-1.2 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^-1.5 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^-1.8 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^-2.1 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^-2.4 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^-2.7 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^-3.0 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^-3.3 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^-3.6 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^-3.9 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^ ^-4.2 ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^0.3 ^ ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^0.6 ^ ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^0.9 ^ ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^1.2 ^ ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^1.5 ^ ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^1.8 ^ ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^2.1 ^ ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^2.4 ^ ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^2.7 ^ ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^-0.3 ^ ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^-0.6 ^ ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^-0.9 ^ ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^-1.2 ^ ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^-1.5 ^ ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^-1.8 ^ ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^-2.1 ^ ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^-2.4 ^ ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 4052..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ^-2.7 ^ ^3 run particle end_rod ~ ~ ~ 0 0 0 0 1 force
 
 
