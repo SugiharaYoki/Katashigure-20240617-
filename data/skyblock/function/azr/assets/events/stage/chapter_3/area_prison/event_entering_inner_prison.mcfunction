@@ -493,7 +493,6 @@ execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..2000] a
 execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..2000] at @s run effect give @s regeneration infinite 9 true
 execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..2000] at @s run effect clear @s resistance
 execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..2000] at @s run effect give @s resistance infinite 9 true
-execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..2000] at @s run attribute @s jump_strength base reset
 execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..2000] at @s run attribute @s gravity base reset
 
 execute if score @s rng1 matches 4068 run forceload remove ~ ~
