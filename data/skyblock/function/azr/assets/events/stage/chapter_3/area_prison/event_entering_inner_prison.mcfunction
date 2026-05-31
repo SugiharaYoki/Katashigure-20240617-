@@ -316,7 +316,7 @@ execute if score @s rng1 matches 1022 run playsound entity.generic.explode block
 execute if score @s rng1 matches 1022 run fill -79894 23 -233 -79887 23 -226 air destroy
 execute if score @s rng1 matches 1024 run particle cloud ~ ~-0.3 ~ 0 0 0 0.5 50
 execute if score @s rng1 matches 1024 run playsound minecraft:block.beacon.activate player @a ~ ~ ~ 1 0.6
-execute if score @s rng1 matches 1022 run effect give @a[tag=azrPlayer] slow_falling 10 225 true
+execute if score @s rng1 matches 1022 run effect give @a[tag=azrPlayer] slow_falling 10 100 true
 execute if score @s rng1 matches 1021 as @a[tag=azrPlayer] at @s run attribute @s gravity base set 0.04
 execute if score @s rng1 matches 1022 as @a[tag=azrPlayer] at @s unless entity @s[x=-79894,y=20,z=-234,dx=8,dy=8,dz=8] run tp @s -79890.09 24.00 -229.07
 
@@ -398,7 +398,8 @@ execute if score @s rng1 matches 3002 positioned -79921 70 -520 run playsound en
 execute if score @s rng1 matches 3004 positioned -79921 70 -520 run particle explosion_emitter ~ ~ ~ 20 3 3 0.06 30
 execute if score @s rng1 matches 3004 positioned -79921 70 -520 run particle large_smoke ~ ~ ~ 20 3 3 0.06 120
 execute if score @s rng1 matches 3004 positioned -79921 70 -520 run playsound entity.generic.explode block @a ~-10 ~ ~ 10 0.8
-execute if score @s rng1 matches 3004 as @a[tag=azrPlayer] at @s run attribute @s gravity base set 0.03
+execute if score @s rng1 matches 3004 run effect give @a[tag=azrPlayer] slow_falling 10 100 true
+execute if score @s rng1 matches 3004 as @a[tag=azrPlayer] at @s run attribute @s gravity base set 0.01
 execute if score @s rng1 matches 3004 run clone -79934 69 -593 -79926 75 -586 -79934 69 -523
 
 
@@ -408,16 +409,16 @@ execute if score @s rng1 matches 300..3999 if entity @a[tag=azrPlayer,x=-79933,y
 execute if score @s rng1 matches 4001 positioned -79930 70 -520 as @a[tag=azrPlayer] at @s unless entity @s[x=-79933,y=60,z=-523,dx=20,dy=6,dz=20] run tp @s -79930 65 -520
 execute if score @s rng1 matches 4001 positioned -79930 70 -520 as @a[tag=azrPlayer] at @s run effect give @s resistance 50 255 true
 
-execute if score @s rng1 matches 4017 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“……这样啊。”",color:"white"}]
+execute if score @s rng1 matches 4017 run tellraw @a[tag=azrShowDialog,distance=..2000] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“……这样啊。”",color:"white"}]
 
 execute if score @s rng1 matches 4015 as @a[tag=azrShowDialog] at @s run tp @s -79946 65 -540
 
 execute if score @s rng1 matches 4021 as @a[tag=azrShowDialog] at @s run tp @s -79931 33 -519
 
-execute if score @s rng1 matches 4032 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“再一次于这种莫名其妙的地方坠落而死。”",color:"white"}]
+execute if score @s rng1 matches 4032 run tellraw @a[tag=azrShowDialog,distance=..2000] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“再一次于这种莫名其妙的地方坠落而死。”",color:"white"}]
 
-execute if score @s rng1 matches 4042 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“但没事……至少这次我的死，有意义。”",color:"white"}]
-execute if score @s rng1 matches 4052 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“喜欢跟着我？那好，我们来同归于尽吧，恣眼。”",color:"white"}]
+execute if score @s rng1 matches 4042 run tellraw @a[tag=azrShowDialog,distance=..2000] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“但没事……至少这次我的死，有意义。”",color:"white"}]
+execute if score @s rng1 matches 4052 run tellraw @a[tag=azrShowDialog,distance=..2000] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“喜欢跟着我？那好，我们来同归于尽吧，恣眼。”",color:"white"}]
 
 execute if score @s rng1 matches 4042 run playsound ambient.basalt_deltas.additions ambient @a -79931 -64 -519 10 0.78
 execute if score @s rng1 matches 4042 run playsound ambient.basalt_deltas.additions ambient @a -79931 -64 -519 10 0.78
@@ -474,16 +475,16 @@ execute if score @s rng1 matches 4051..4999 as @p[tag=azrPlayer] at @s rotated a
 execute if score @s rng1 matches 4056..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ~ ~-3 ~ run particle sculk_soul ~ ~ ~ 1 0 1 0.03 40
 execute if score @s rng1 matches 4061..4999 as @p[tag=azrPlayer] at @s rotated as @s positioned ~ ~-3 ~ run particle sculk_soul ~ ~ ~ 1 0 1 0.03 50
 
-execute if score @s rng1 matches 4052 as @a[tag=azrShowDialog,distance=..200] at @s run effect give @s darkness 5 0 true
-execute if score @s rng1 matches 4052 as @a[tag=azrShowDialog,distance=..200] at @s run kill @n[tag=AzrielMob_sonic_eye_lord]
-execute if score @s rng1 matches 4056 as @a[tag=azrShowDialog,distance=..200] at @s run tp @s -79861.99 -18.00 -127.99 facing -79860.99 -18.00 -127.99
-execute if score @s rng1 matches 4056 as @a[tag=azrShowDialog,distance=..200] at @s run stopsound @s
-execute if score @s rng1 matches 4056 as @a[tag=azrShowDialog,distance=..200] at @s run playsound item.totem.use master @s ~ ~ ~ 2
-execute if score @s rng1 matches 4056 as @a[tag=azrShowDialog,distance=..200] at @s run effect give @s fire_resistance infinite 0 true
-execute if score @s rng1 matches 4056 as @a[tag=azrShowDialog,distance=..200] at @s run effect give @s regeneration infinite 9 true
-execute if score @s rng1 matches 4056 as @a[tag=azrShowDialog,distance=..200] at @s run effect clear @s resistance
-execute if score @s rng1 matches 4056 as @a[tag=azrShowDialog,distance=..200] at @s run effect give @s resistance infinite 9 true
+execute if score @s rng1 matches 4062 as @a[tag=azrShowDialog,distance=..200] at @s run effect give @s darkness 5 0 true
+execute if score @s rng1 matches 4062 as @a[tag=azrShowDialog,distance=..200] at @s run kill @n[tag=AzrielMob_sonic_eye_lord]
+execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..200] at @s run tp @s -79861.99 -18.00 -127.99 facing -79860.99 -18.00 -127.99
+execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..200] at @s run stopsound @s
+execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..200] at @s run playsound item.totem.use master @s ~ ~ ~ 2
+execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..200] at @s run effect give @s fire_resistance infinite 0 true
+execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..200] at @s run effect give @s regeneration infinite 9 true
+execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..200] at @s run effect clear @s resistance
+execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..200] at @s run effect give @s resistance infinite 9 true
 
-execute if score @s rng1 matches 4053 run forceload remove ~ ~
+execute if score @s rng1 matches 4068 run forceload remove ~ ~
 
 
