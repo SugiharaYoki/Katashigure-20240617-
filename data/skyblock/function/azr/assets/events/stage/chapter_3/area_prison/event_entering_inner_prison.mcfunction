@@ -363,21 +363,27 @@ execute if score @s rng1 matches 1500..3999 if score @s rng2 matches 7 as @a[tag
 execute if score @s rng1 matches 1500..3999 if score @s rng2 matches 7 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^1.5 ^ ^5 run function skyblock:azr/assets/mobs/trap_fang
 execute if score @s rng1 matches 1500..3999 if score @s rng2 matches 7 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^2.0 ^ ^5 run function skyblock:azr/assets/mobs/trap_fang
 
+execute if score @s rng1 matches 1510 positioned -79890.03 -31.00 -270.17 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 1510 positioned -79890.03 -31.00 -270.17 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 1510 positioned -79890.03 -31.00 -270.17 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 1510 positioned -79890.03 -31.00 -270.17 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 1530 positioned -79890.03 -31.00 -270.17 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 1550 positioned -79890.03 -31.00 -270.17 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 1580 positioned -79890.03 -31.00 -270.17 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 1580 positioned -79890.03 -31.00 -270.17 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 1580 positioned -79890.03 -31.00 -270.17 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 execute if score @s rng1 matches 1521 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n（恣眼只要在神庭就是无敌的。但只要我将它带到神庭以外的地方，它就没法活。）",color:"white"}]
 
 execute if score @s rng1 matches 1990..1999 run scoreboard players set @s rng1 1990
-execute if score @s rng1 matches 300..1999 if entity @a[tag=azrPlayer,x=-79893,y=-31,z=-291,dx=9,dy=9,dz=20] run scoreboard players set @s rng1 2000
+execute if score @s rng1 matches 300..1999 if entity @a[tag=azrPlayer,x=-79893,y=-31,z=-301,dx=9,dy=9,dz=15] run scoreboard players set @s rng1 2000
 execute if score @s rng1 matches 2001 run fill -79893 -26 -304 -79888 -26 -304 netherite_block
 execute if score @s rng1 matches 2002 run fill -79893 -27 -304 -79888 -27 -304 netherite_block
 execute if score @s rng1 matches 2003 run fill -79893 -28 -304 -79888 -28 -304 netherite_block
 execute if score @s rng1 matches 2004 run fill -79893 -29 -304 -79888 -29 -304 netherite_block
 execute if score @s rng1 matches 2005 run fill -79893 -30 -304 -79888 -30 -304 netherite_block
 execute if score @s rng1 matches 2006 run fill -79893 -31 -304 -79888 -31 -304 netherite_block
-execute if score @s rng1 matches 2001..2006 run playsound block.iron_trapdoor.open block @a -79889.96 -24.11 -303.00 3 0.6
+execute if score @s rng1 matches 2001..2006 run playsound block.iron_trapdoor.open block @a -79889.96 -24.11 -303.00 5 0.6
 
 execute if score @s rng1 matches 2004 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n（这里走不通，得换刚才的岔路！）",color:"white"}]
 
