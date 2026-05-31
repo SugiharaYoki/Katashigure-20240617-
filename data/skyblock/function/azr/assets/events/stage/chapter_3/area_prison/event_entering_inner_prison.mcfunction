@@ -158,7 +158,7 @@ execute if score @s rng1 matches 395.. positioned -79890.01 33.00 -173.02 as @n[
 execute if score @s rng1 matches 415.. store result bossbar azr:boss_hp_bar_2 value run scoreboard players get @n[tag=AzrielMob_sonic_eye_lord] Health
 execute if score @s rng1 matches 415 run bossbar add azr:boss_hp_bar_2 "窥妄视违之邪瞳 - 恣眼"
 execute if score @s rng1 matches 415 run bossbar set azr:boss_hp_bar_2 color red
-execute if score @s rng1 matches 415 run bossbar set azr:boss_hp_bar_2 max 300
+execute if score @s rng1 matches 415 run bossbar set azr:boss_hp_bar_2 max 5000
 execute if score @s rng1 matches 415 run bossbar set azr:boss_hp_bar_2 players @a[tag=azrShowDialog]
 
 execute if score @s rng1 matches 395..4020 run scoreboard players add @n[tag=AzrielMob_sonic_eye_lord,distance=..150] rng9 1
