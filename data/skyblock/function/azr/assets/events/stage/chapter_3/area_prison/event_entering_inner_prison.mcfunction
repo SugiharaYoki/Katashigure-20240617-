@@ -479,8 +479,10 @@ execute if score @s rng1 matches 4052 as @a[tag=azrShowDialog,distance=..200] at
 execute if score @s rng1 matches 4056 as @a[tag=azrShowDialog,distance=..200] at @s run tp @s -79861.99 -18.00 -127.99 facing -79860.99 -18.00 -127.99
 execute if score @s rng1 matches 4056 as @a[tag=azrShowDialog,distance=..200] at @s run stopsound @s
 execute if score @s rng1 matches 4056 as @a[tag=azrShowDialog,distance=..200] at @s run playsound item.totem.use master @s ~ ~ ~ 2
-execute if score @s rng1 matches 4056 as @a[tag=azrShowDialog,distance=..200] at @s run effect give @s fire_resistance 40 0
-execute if score @s rng1 matches 4056 as @a[tag=azrShowDialog,distance=..200] at @s run effect give @s regeneration 45 9
+execute if score @s rng1 matches 4056 as @a[tag=azrShowDialog,distance=..200] at @s run effect give @s fire_resistance infinite 0 true
+execute if score @s rng1 matches 4056 as @a[tag=azrShowDialog,distance=..200] at @s run effect give @s regeneration infinite 9 true
+execute if score @s rng1 matches 4056 as @a[tag=azrShowDialog,distance=..200] at @s run effect clear @s resistance
+execute if score @s rng1 matches 4056 as @a[tag=azrShowDialog,distance=..200] at @s run effect give @s resistance infinite 9 true
 
 execute if score @s rng1 matches 4053 run forceload remove ~ ~
 
