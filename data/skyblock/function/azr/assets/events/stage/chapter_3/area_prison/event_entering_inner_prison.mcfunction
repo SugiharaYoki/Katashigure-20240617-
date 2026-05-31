@@ -143,7 +143,7 @@ execute if score @s rng1 matches 437 as @a[distance=..200,tag=azrShowDialog] at 
 
 execute if score @s rng1 matches 375.. as @n[tag=AzrielNPC_flauros] store result score @s Health run data get entity @s Health
 execute if score @s rng1 matches 375.. store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielNPC_flauros] Health
-execute if score @s rng1 matches 242 run bossbar add azr:boss_hp_bar "黑袍法师"
+execute if score @s rng1 matches 242 run bossbar add azr:boss_hp_bar "漆黑术士"
 execute if score @s rng1 matches 242 run bossbar set azr:boss_hp_bar color blue
 execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar name "邪魔引路者 - 佛劳洛斯"
 execute if score @s rng1 matches 375 run bossbar set azr:boss_hp_bar color purple
