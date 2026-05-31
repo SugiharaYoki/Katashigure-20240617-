@@ -19,8 +19,8 @@ execute if score @s rng1 matches 20..385 if entity @a[x=-79900,y=-18,z=-163,dx=5
 execute if score @s rng1 matches 391 as @a[tag=azrShowDialog,distance=..2000] at @s run effect give @s darkness 5 0 true
 execute if score @s rng1 matches 395 as @a[x=-79900,y=-18,z=-163,dx=5,dy=5,dz=5,tag=azrPlayer] at @s run tp @s ~ ~ ~-6 facing ~1 ~ ~-6
 
-execute if score @s rng1 matches 401..432 if entity @a[x=-79840,y=-18,z=-160,dx=5,dy=5,dz=29,tag=azrPlayer] run effect give @s slowness 20 9 true
-execute if score @s rng1 matches 401..432 if entity @a[x=-79840,y=-18,z=-160,dx=5,dy=5,dz=29,tag=azrPlayer] run scoreboard players set @s rng1 36
+execute if score @s rng1 matches 401..432 if entity @a[x=-79840,y=-18,z=-199,dx=5,dy=5,dz=29,tag=azrPlayer] run effect give @s slowness 20 9 true
+execute if score @s rng1 matches 401..432 if entity @a[x=-79840,y=-18,z=-199,dx=5,dy=5,dz=29,tag=azrPlayer] run scoreboard players set @s rng1 436
 
 execute if score @s rng1 matches 438 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"严苛的嗓音：",color:"red",bold:1b},{text:"\n“先说最重要的部分。爱理莎目前没有生命危险。她主要是吸入了较多浓烟，右前臂和肩部有轻度到中度烧伤，另外有几处擦伤和软组织挫伤。我们已经给她做了吸氧、清创和镇痛处理，目前生命体征稳定，血氧也恢复到了安全范围。”",color:"white",bold: false}]
 execute if score @s rng1 matches 450 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“医生，求求您一定要让莉茜好好的，我们只有她一个孩子……”",color:"white",bold: false}]
