@@ -405,6 +405,7 @@ execute if score @s rng1 matches 3004 positioned -79921 70 -520 run particle exp
 execute if score @s rng1 matches 3004 positioned -79921 70 -520 run particle large_smoke ~ ~ ~ 20 3 3 0.06 120
 execute if score @s rng1 matches 3004 positioned -79921 70 -520 run playsound entity.generic.explode block @a ~-10 ~ ~ 10 0.8
 execute if score @s rng1 matches 3004 run effect give @a[tag=azrPlayer] slow_falling 10 100 true
+execute if score @s rng1 matches 3004 as @a[tag=azrPlayer] at @s run attribute @s jump_strength base set 0
 execute if score @s rng1 matches 3004 as @a[tag=azrPlayer] at @s run attribute @s gravity base set 0.01
 execute if score @s rng1 matches 3004 run clone -79934 69 -593 -79926 75 -586 -79934 69 -523
 
@@ -490,6 +491,8 @@ execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..2000] a
 execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..2000] at @s run effect give @s regeneration infinite 9 true
 execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..2000] at @s run effect clear @s resistance
 execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..2000] at @s run effect give @s resistance infinite 9 true
+execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..2000] at @s run attribute @s jump_strength base reset
+execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..2000] at @s run attribute @s gravity base reset
 
 execute if score @s rng1 matches 4068 run forceload remove ~ ~
 
