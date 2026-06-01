@@ -87,6 +87,10 @@ execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] 
 execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run effect give @s darkness 3 0 true
 execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run effect give @s blindness 1 0 true
 execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run tp @s -79758 -17 -179 facing -79758 -17 -177
+execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run effect clear @s fire_resistance
+execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run effect clear @s resistance
+execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run effect clear @s absorption
+execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run attribute @s jump_strength base reset
 
 execute if score @s rng1 matches 1102 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“……”",color:"white",bold: false}]
 execute if score @s rng1 matches 1110 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“我还……有意识？”",color:"white",bold: false}]
@@ -102,4 +106,3 @@ execute if score @s rng1 matches 1132 as @a[tag=azrPlayer] at @s run give @s gli
 execute if score @s rng1 matches 1132 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..13}] Azr_skillPoints 14
 execute if score @s rng1 matches 1132 run scoreboard players reset stage_main_thread AzrTimerStack
 
-#attribute @s jump_strength base reset
