@@ -91,7 +91,6 @@ execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] 
 execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run effect clear @s resistance
 execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run effect clear @s absorption
 execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run attribute @s jump_strength base reset
-execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run tag @s add azrBanLifeVitae
 
 execute if score @s rng1 matches 1102 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“……”",color:"white",bold: false}]
 execute if score @s rng1 matches 1110 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“我还……有意识？”",color:"white",bold: false}]
