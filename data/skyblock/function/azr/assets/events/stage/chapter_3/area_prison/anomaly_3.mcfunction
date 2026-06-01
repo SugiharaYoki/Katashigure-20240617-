@@ -7,7 +7,7 @@ execute if score @s rng1 matches 1..32 if entity @a[x=-79840,y=-18,z=-160,dx=5,d
 execute if score @s rng1 matches 38 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"冷淡的播报音：",color:"red",bold:1b},{text:"\n“本台记者报道，美国加利福尼亚州一所私立初中周二上午发生严重火灾。由于学校建筑长期存在消防通道不足、隔火门失效、走廊堆放可燃材料等违规问题，火势在短时间内迅速蔓延，造成多名学生和教职员工受伤。\n火灾发生在上午9时17分左右，当时学校正在上第二节课；不到五分钟，西教学楼一层和二层的主要通道便被浓烟覆盖.部分班级无法按照原定疏散路线撤离，只能在教师带领下从低层窗户逃生。”",color:"white",bold: false}]
 execute if score @s rng1 matches 78 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"冷淡的播报音：",color:"red",bold:1b},{text:"\n“当地消防部门称，第一批消防车在接警后约6分钟抵达现场，但由于校舍内部结构复杂，火势已沿着吊顶空间和旧通风管道向东侧教学区扩散。消防员进入建筑后发现，部分防火门被木楔长期固定在开启状态，几处疏散指示灯失效，西侧楼梯间还堆放着纸箱、旧桌椅和清洁用品，严重阻碍学生撤离。\n截至周二晚间，事故已造成至少42名学生和4名教职员工受伤，其中7名学生因吸入浓烟和烧伤被送往州儿童医院治疗，暂无生命危险。另有多名学生因踩踏擦伤在现场接受急救。\n根据警方透露，学校监控画面拍到一名身穿深色连帽外套的人在火灾发生前约十分钟进入西侧员工通道。目前警方尚未公布嫌疑人具体身份，联邦酒精、烟草、火器及爆炸物管理局的火灾调查人员也已介入。”",color:"white",bold: false}]
 execute if score @s rng1 matches 118 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"冷淡的播报音：",color:"red",bold:1b},{text:"\n“令人关注的是，这所学校的建筑安全问题并非首次被指出。根据当地媒体查阅到的市政记录，该校西教学楼建于2115年，近年曾多次进行临时改建，用于增加教室、储物间和课后活动空间。但部分改建工程没有完整提交消防审查文件。去年秋季，市消防检查员曾要求校方清理堵塞通道的杂物、更换部分老旧隔火门，但整改期限以经费紧缺为由延后。\n教职员工埃雷拉先生称，学校内部长期存在空间不足问题，为了招收更多学生而将许多储藏空间改造成教室。”",color:"white",bold: false}]
-execute if score @s rng1 matches 158 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"冷淡的播报音：",color:"red",bold:1b},{text:"\n“学区负责人在周二下午的记者会上表示，将配合警方和消防部门调查，并承诺对所有校舍进行全面安全检查。对于学校是否明知存在违规情况却未及时整改，负责人没有正面回应。\n当地市长则表示，如果调查确认校方或学区存在疏忽，相关责任人将被追究责任。\n目前，该校已宣布停课至少一周，学生将暂时转至云课堂线上学习。警方呼吁知情者提供线索，并表示将重点调查纵火嫌疑人与学校之间是否存在关联。”",color:"white",bold: false}]
+execute if score @s rng1 matches 158 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"冷淡的播报音：",color:"red",bold:1b},{text:"\n“学校董事长威廉姆斯·图纳在周二下午的记者会上表示将配合警方和消防部门调查，并承诺对所有校舍进行全面安全检查。对于学校是否明知存在违规情况却未及时整改，董事长没有正面回应。\n市长韦森·坎贝尔公开表示，如果调查确认校方或学区存在疏忽，相关责任人将被追究责任。\n目前，该校已宣布停课至少一周，学生将暂时转至云课堂线上学习。警方呼吁知情者提供线索，并表示将重点调查纵火嫌疑人与学校之间是否存在关联。”",color:"white",bold: false}]
 execute if score @s rng1 matches 168 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"……",color:"gray",bold:1b}]
 
 
@@ -45,7 +45,7 @@ execute if score @s rng1 matches 601..632 if entity @a[x=-79890,y=-19,z=-175,dx=
 
 execute if score @s rng1 matches 600..620 as @a[distance=..200,tag=azrShowDialog] at @s run playsound ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 0.5 0.7
 execute if score @s rng1 matches 637 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“不要再跟我说这些了！！我们的亲生女儿就在孤儿院，这不是将她带回来的最好的时候吗！！”",color:"white",bold: false}]
-execute if score @s rng1 matches 647 as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:sagashimono music @s ~ ~ ~ 0.8
+execute if score @s rng1 matches 647 as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:garden1.sagashimono music @s ~ ~ ~ 0.8
 execute if score @s rng1 matches 647 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"陌生语调：",color:"aqua",bold:1b},{text:"\n“爸爸妈妈……不要再吵了……”",color:"white",bold: false}]
 execute if score @s rng1 matches 657 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“我们在说话的时候不要插嘴！！”",color:"white",bold: false}]
 execute if score @s rng1 matches 667 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"牵记的男声：",color:"green",bold:1b},{text:"\n“这都是为了爱理莎的未来着想，如果我们接回女儿，爱理莎又该去哪里？谁来养她？”",color:"white",bold: false}]
