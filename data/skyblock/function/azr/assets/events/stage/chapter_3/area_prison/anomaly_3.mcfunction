@@ -28,7 +28,7 @@ execute if score @s rng1 matches 468 as @a[distance=..200,tag=azrShowDialog] at 
 execute if score @s rng1 matches 480 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"严苛的嗓音：",color:"red",bold:1b},{text:"\n“从目前的检查结果看，爱理莎的部分血型和遗传标记，与您二位作为她的生物学父母这一点……并不一致。”",color:"white",bold: false}]
 execute if score @s rng1 matches 492 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“啊？……”",color:"white",bold: false}]
 execute if score @s rng1 matches 498 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“……医生，您在开玩笑吧？您……您是指什么意思？！”",color:"white",bold: false}]
-execute if score @s rng1 matches 508 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"严苛的嗓音：",color:"red",bold:1b},{text:"\n“确实存在样本污染的可能性。但，爱理莎可能并非您二位共同的生物学子女。”",color:"white",bold: false}]
+execute if score @s rng1 matches 508 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"严苛的嗓音：",color:"red",bold:1b},{text:"\n“确实存在样本污染的可能性。但，爱理莎可能并非您二位中任何一位的生物学子女。”",color:"white",bold: false}]
 execute if score @s rng1 matches 518 as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"……",color:"gray",bold:1b}]
 
 execute if score @s rng1 matches 580..585 run scoreboard players set @s rng1 580
