@@ -83,16 +83,17 @@ execute if score @s rng1 matches 1134 as @a[distance=..2000,tag=azrShowDialog] a
 execute if score @s rng1 matches 1146 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“所以哪怕那个‘自己曾在使用的名字’已经使我感到陌生……我还是希望，能够再度使用它。”",color:"white",bold: false}]
 execute if score @s rng1 matches 1158 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"救赎的回声：",color:"green",bold:1b},{text:"\n“我明白了，……爱理莎。”",color:"white",bold: false}]
 execute if score @s rng1 matches 1168 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“谢谢你，罗温……抱歉，我不该在这时候哭的。明明是很让我感到高兴的事情……”",color:"white",bold: false}]
-execute if score @s rng1 matches 1180 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"救赎的回声：",color:"green",bold:1b},{text:"\n“感到难过的话……在我面前哭出来，也是没有任何关系的，爱理莎。”",color:"white",bold: false}]
+execute if score @s rng1 matches 1180 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“我从小，从来就是一个怪人。我以为我过着很幸福的生活，但离了父母之后，我什么都不剩。这都是我自己招致的……”",color:"white",bold: false}]
+execute if score @s rng1 matches 1196 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"救赎的回声：",color:"green",bold:1b},{text:"\n“感到难过的话……在我面前哭出来，也是没有任何关系的，爱理莎。”",color:"white",bold: false}]
 
-execute if score @s rng1 matches 1210 as @a[tag=azrShowDialog,distance=..20000] at @s run effect give @s slowness 3 255 true
-execute if score @s rng1 matches 1210 as @a[tag=azrShowDialog,distance=..20000] at @s run effect give @s darkness 3 0 true
-execute if score @s rng1 matches 1210 as @a[tag=azrShowDialog,distance=..20000] at @s run effect give @s blindness 1 0 true
-execute if score @s rng1 matches 1210 as @a[tag=azrShowDialog,distance=..20000] at @s run tp @s -79758 -17 -179 facing -79758 -17 -177
-execute if score @s rng1 matches 1210 as @a[tag=azrShowDialog,distance=..20000] at @s run effect clear @s fire_resistance
-execute if score @s rng1 matches 1210 as @a[tag=azrShowDialog,distance=..20000] at @s run effect clear @s resistance
-execute if score @s rng1 matches 1210 as @a[tag=azrShowDialog,distance=..20000] at @s run effect clear @s absorption
-execute if score @s rng1 matches 1210 as @a[tag=azrShowDialog,distance=..20000] at @s run attribute @s jump_strength base reset
+execute if score @s rng1 matches 1218 as @a[tag=azrShowDialog,distance=..20000] at @s run effect give @s slowness 3 255 true
+execute if score @s rng1 matches 1218 as @a[tag=azrShowDialog,distance=..20000] at @s run effect give @s darkness 3 0 true
+execute if score @s rng1 matches 1218 as @a[tag=azrShowDialog,distance=..20000] at @s run effect give @s blindness 1 0 true
+execute if score @s rng1 matches 1218 as @a[tag=azrShowDialog,distance=..20000] at @s run tp @s -79758 -17 -179 facing -79758 -17 -177
+execute if score @s rng1 matches 1218 as @a[tag=azrShowDialog,distance=..20000] at @s run effect clear @s fire_resistance
+execute if score @s rng1 matches 1218 as @a[tag=azrShowDialog,distance=..20000] at @s run effect clear @s resistance
+execute if score @s rng1 matches 1218 as @a[tag=azrShowDialog,distance=..20000] at @s run effect clear @s absorption
+execute if score @s rng1 matches 1218 as @a[tag=azrShowDialog,distance=..20000] at @s run attribute @s jump_strength base reset
 
 execute if score @s rng1 matches 1222 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“……”",color:"white",bold: false}]
 execute if score @s rng1 matches 1232 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“我还……有意识？”",color:"white",bold: false}]
