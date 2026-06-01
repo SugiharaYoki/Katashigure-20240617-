@@ -69,7 +69,7 @@ execute if score @s rng1 matches 860 as @a[distance=..2000,tag=azrShowDialog] at
 execute if score @s rng1 matches 870 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"——",color:"gray",bold:1b}]
 execute if score @s rng1 matches 885 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"挑衅的语气：",color:"red",bold:1b},{text:"\n“告诉老师？我好害怕啊，你每敢说一次，我就在放学后堵你一次。你可没有父母能替你撑腰。”",color:"white",bold: false}]
 execute if score @s rng1 matches 900 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"挑衅的语气：",color:"red",bold:1b},{text:"\n“莉茜，我看你未来要不要做我的老婆啊？我看你被我欺负的时候挺听话的，我都快爱上你了。”",color:"white",bold: false}]
-execute if score @s rng1 matches 915 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"挑衅的语气：",color:"red",bold:1b},{text:"\n“反正我们已经做过男女之间能做的所有事情，有什么关系？……为什么要用这种放肆的眼神看我？我今天绝对要打断你的手臂。”",color:"white",bold: false}]
+execute if score @s rng1 matches 915 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"挑衅的语气：",color:"red",bold:1b},{text:"\n“反正我们已经做过男女之间能做的所有事情，有什么关系？……为什么要用这种放肆的眼神看我？你今天别想完好无缺地回家。”",color:"white",bold: false}]
 execute if score @s rng1 matches 925 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"——",color:"gray",bold:1b}]
 execute if score @s rng1 matches 940 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音：",color:"red",bold:1b},{text:"\n“话虽如此，莉茜，他和你一样只有初一。不要穷追不舍了，给大家一个犯错的机会……”",color:"white",bold: false}]
 execute if score @s rng1 matches 955 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音：",color:"red",bold:1b},{text:"\n“我知道你是想报之前他们霸凌你的仇，现在还不是时候。莉茜，你现在需要的是尽可能考上一个好大学，争取到奖学金。”",color:"white",bold: false}]
