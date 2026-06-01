@@ -42,6 +42,9 @@
         "smooth_basalt",
         "prismarine_shard",
         "flower_pot",
-        "blackstone"
+        "blackstone",
+        "polished_deepslate",
+        "polished_deepslate_slab",
+        "iron_trapdoor"
     ]
 }
