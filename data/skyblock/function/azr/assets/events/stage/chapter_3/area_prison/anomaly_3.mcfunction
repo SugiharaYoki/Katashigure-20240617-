@@ -40,7 +40,7 @@ execute if score @s rng1 matches 591 as @a[tag=azrShowDialog,distance=..20000] a
 execute if score @s rng1 matches 594 as @a[tag=azrShowDialog,distance=..20000] at @s run effect give @s blindness 1 0 true
 execute if score @s rng1 matches 595 as @a[x=-79850,y=-18,z=-202,dx=8,dy=5,dz=5,tag=azrPlayer] at @s run tp @s ~-60 ~ ~33 facing ~-59 ~ ~33
 
-execute if score @s rng1 matches 601..632 as @a[x=-79890,y=-19,z=-175,dx=5,dy=5,dz=8,tag=azrPlayer] run effect give @s slowness 120 9 true
+execute if score @s rng1 matches 601..632 as @a[x=-79890,y=-19,z=-175,dx=5,dy=5,dz=8,tag=azrPlayer] run effect give @s slowness 120 4 true
 execute if score @s rng1 matches 601..632 if entity @a[x=-79890,y=-19,z=-175,dx=5,dy=5,dz=8,tag=azrPlayer] run scoreboard players set @s rng1 636
 
 execute if score @s rng1 matches 600..620 as @a[distance=..2000,tag=azrShowDialog] at @s run playsound ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 0.5 0.7
