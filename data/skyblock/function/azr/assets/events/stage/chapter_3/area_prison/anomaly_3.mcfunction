@@ -104,6 +104,7 @@ execute if score @s rng1 matches 1252 run scoreboard players reset tick_main_thr
 execute if score @s rng1 matches 1252 run scoreboard players reset stage_main_thread AzrTimerStack
 execute if score @s rng1 matches 1252 run title @a[tag=azrShowDialog] actionbar {text:"Chapter Clear",color:"gold"}
 execute if score @s rng1 matches 1252 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage11_boss3
+
 #rewards
 execute if score @s rng1 matches 1252 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
 execute if score @s rng1 matches 1252 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..13}] Azr_skillPoints 14

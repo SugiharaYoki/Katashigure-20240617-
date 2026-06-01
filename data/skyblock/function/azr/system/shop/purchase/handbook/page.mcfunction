@@ -30,7 +30,6 @@ $execute if data storage azr:handbook_vitae doc.$(eid).shield_heavy if data stor
 
 
 
-
 $execute unless data storage azr:handbook_vitae doc.$(eid).undead_pickaxe run tellraw @s [{text:"★★？",color:"#786897"}]
 $execute if data storage azr:handbook_vitae doc.$(eid).undead_pickaxe run tellraw @s [{text:"★★走尸矿工",color:"#8644ff",hover_event:{"action":"show_text","value":[{text:"类型：亡魂\n",color:"#9c55ff",bold:1b},{text:"攻击方式：近战 中程定位攻击\n",color:"#ffa463",bold:1b},{text:"行动十分迟缓，攻击力比走尸略高。\n当你与它相隔超过4格，但少于7格的时候，它会尝试在你脚下施放纵向攻击。这种攻击方式带来的威胁要远高于近战接触。",color:"white",bold: false}]}}]
 
