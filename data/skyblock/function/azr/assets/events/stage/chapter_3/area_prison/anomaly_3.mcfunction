@@ -61,16 +61,20 @@ execute if score @s rng1 matches 773 as @a[distance=..2000,tag=azrShowDialog] at
 execute if score @s rng1 matches 785 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“助学金、奖学金。不然，就不上。高中也不能上私立了，公立就行。”",color:"white",bold: false}]
 execute if score @s rng1 matches 797 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“爱理莎需要心理医生咨询费，我们也要省出这笔钱。”",color:"white",bold: false}]
 execute if score @s rng1 matches 809 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"牵记的男声：",color:"green",bold:1b},{text:"\n“那……这个女孩，我们该叫她什么名字？她们不能都叫爱理莎。”",color:"white",bold: false}]
+execute if score @s rng1 matches 819 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"——",color:"gray",bold:1b}]
 
 execute if score @s rng1 matches 830 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音：",color:"red",bold:1b},{text:"\n“估计是医院里抱错了，而且好像是找到了原先的孩子。这样下来，莉茜肯定就不被喜欢了。”",color:"white",bold: false}]
 execute if score @s rng1 matches 845 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音：",color:"red",bold:1b},{text:"\n“而且……据说他们家的经济条件本身就不好，她养父母是不顾家里的反对私奔出来的。”",color:"white",bold: false}]
 execute if score @s rng1 matches 860 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"柔和的话语：",color:"red",bold:1b},{text:"\n“真的很想帮助她，但是她们家……已经断交一个月的学费了。我们实在是不该做职责之外的工作。”",color:"white",bold: false}]
+execute if score @s rng1 matches 870 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"——",color:"gray",bold:1b}]
 execute if score @s rng1 matches 885 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"挑衅的语气：",color:"red",bold:1b},{text:"\n“告诉老师？我好害怕啊，你每敢说一次，我就在放学后堵你一次。你可没有父母能替你撑腰。”",color:"white",bold: false}]
 execute if score @s rng1 matches 900 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"挑衅的语气：",color:"red",bold:1b},{text:"\n“莉茜，我看你未来要不要做我的老婆啊？我看你被我欺负的时候挺听话的，我都快爱上你了。”",color:"white",bold: false}]
 execute if score @s rng1 matches 915 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"挑衅的语气：",color:"red",bold:1b},{text:"\n“反正我们已经做过男女之间能做的所有事情，有什么关系？……为什么要用这种放肆的眼神看我？我今天绝对要打断你的手臂。”",color:"white",bold: false}]
+execute if score @s rng1 matches 925 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"——",color:"gray",bold:1b}]
 execute if score @s rng1 matches 940 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音：",color:"red",bold:1b},{text:"\n“话虽如此，莉茜，他和你一样只有初一。不要穷追不舍了，给大家一个犯错的机会……”",color:"white",bold: false}]
 execute if score @s rng1 matches 955 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音：",color:"red",bold:1b},{text:"\n“我知道你是想报之前他们霸凌你的仇，现在还不是时候。莉茜，你现在需要的是尽可能考上一个好大学，争取到奖学金。”",color:"white",bold: false}]
 execute if score @s rng1 matches 970 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音：",color:"red",bold:1b},{text:"\n“咱们的家庭条件并不好，老师也没法一直护着你。要在必要的时候选择忍气吞声，好吗？”",color:"white",bold: false}]
+execute if score @s rng1 matches 980 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"——",color:"gray",bold:1b}]
 execute if score @s rng1 matches 1010 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"救赎的话语：",color:"green",bold:1b},{text:"\n“所以……莉茜，你希望我叫你什么名字？”",color:"white",bold: false}]
 execute if score @s rng1 matches 1022 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“我曾经……用了不属于我的名字。我觉得我本就不该拥有它。”",color:"white",bold: false}]
 execute if score @s rng1 matches 1034 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“但……我的一切美好回忆，都属于那个名字。”",color:"white",bold: false}]
@@ -79,7 +83,23 @@ execute if score @s rng1 matches 1058 as @a[distance=..2000,tag=azrShowDialog] a
 execute if score @s rng1 matches 1068 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“谢谢你，罗温……抱歉，我不该在这时候哭的。明明是很让我感到高兴的事情……”",color:"white",bold: false}]
 execute if score @s rng1 matches 1080 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"救赎的话语：",color:"green",bold:1b},{text:"\n“感到难过的话……在我面前哭出来，也是没有任何关系的，爱理莎。”",color:"white",bold: false}]
 
+execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run effect give @s slowness 3 255 true
+execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run effect give @s darkness 3 0 true
+execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run effect give @s blindness 1 0 true
+execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run tp @s -79758 -17 -179 facing -79758 -17 -177
 
+execute if score @s rng1 matches 1102 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“……”",color:"white",bold: false}]
+execute if score @s rng1 matches 1110 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“我还……有意识？”",color:"white",bold: false}]
+execute if score @s rng1 matches 1120 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“为什么……？”",color:"white",bold: false}]
 
+execute if score @s rng1 matches 1132 run scoreboard players set stage Azr_system 55
+execute if score @s rng1 matches 1132 run scoreboard players reset tick_main_thread AzrTimerStack
+execute if score @s rng1 matches 1132 run scoreboard players reset stage_main_thread AzrTimerStack
+execute if score @s rng1 matches 1132 run title @a[tag=azrShowDialog] actionbar {text:"Chapter Clear",color:"gold"}
+execute if score @s rng1 matches 1132 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage11_boss3
+#rewards
+execute if score @s rng1 matches 1132 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute if score @s rng1 matches 1132 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..13}] Azr_skillPoints 14
+execute if score @s rng1 matches 1132 run scoreboard players reset stage_main_thread AzrTimerStack
 
 #attribute @s jump_strength base reset
