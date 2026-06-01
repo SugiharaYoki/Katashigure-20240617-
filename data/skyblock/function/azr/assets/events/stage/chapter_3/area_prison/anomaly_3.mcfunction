@@ -75,34 +75,34 @@ execute if score @s rng1 matches 940 as @a[distance=..2000,tag=azrShowDialog] at
 execute if score @s rng1 matches 955 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音：",color:"red",bold:1b},{text:"\n“我知道你是想报之前他们霸凌你的仇，现在还不是时候。莉茜，你现在需要的是尽可能考上一个好大学，争取到奖学金。”",color:"white",bold: false}]
 execute if score @s rng1 matches 970 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音：",color:"red",bold:1b},{text:"\n“咱们的家庭条件并不好，老师也没法一直护着你。要在必要的时候选择忍气吞声，好吗？”",color:"white",bold: false}]
 execute if score @s rng1 matches 980 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"——",color:"gray",bold:1b}]
-execute if score @s rng1 matches 1010 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"救赎的话语：",color:"green",bold:1b},{text:"\n“所以……莉茜，你希望我叫你什么名字？”",color:"white",bold: false}]
-execute if score @s rng1 matches 1022 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“我曾经……用了不属于我的名字。我觉得我本就不该拥有它。”",color:"white",bold: false}]
-execute if score @s rng1 matches 1034 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“但……我的一切美好回忆，都属于那个名字。”",color:"white",bold: false}]
-execute if score @s rng1 matches 1046 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“所以哪怕那个‘自己曾在使用的名字’已经使我感到陌生……我还是希望，能够再度使用它。”",color:"white",bold: false}]
-execute if score @s rng1 matches 1058 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"救赎的话语：",color:"green",bold:1b},{text:"\n“我明白了，……爱理莎。”",color:"white",bold: false}]
-execute if score @s rng1 matches 1068 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“谢谢你，罗温……抱歉，我不该在这时候哭的。明明是很让我感到高兴的事情……”",color:"white",bold: false}]
-execute if score @s rng1 matches 1080 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"救赎的话语：",color:"green",bold:1b},{text:"\n“感到难过的话……在我面前哭出来，也是没有任何关系的，爱理莎。”",color:"white",bold: false}]
+execute if score @s rng1 matches 1110 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"救赎的话语：",color:"green",bold:1b},{text:"\n“所以……莉茜，你希望我叫你什么名字？”",color:"white",bold: false}]
+execute if score @s rng1 matches 1122 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“我曾经……用了不属于我的名字。我觉得我本就不该拥有它。”",color:"white",bold: false}]
+execute if score @s rng1 matches 1134 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“但……我的一切美好回忆，都属于那个名字。”",color:"white",bold: false}]
+execute if score @s rng1 matches 1146 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“所以哪怕那个‘自己曾在使用的名字’已经使我感到陌生……我还是希望，能够再度使用它。”",color:"white",bold: false}]
+execute if score @s rng1 matches 1158 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"救赎的话语：",color:"green",bold:1b},{text:"\n“我明白了，……爱理莎。”",color:"white",bold: false}]
+execute if score @s rng1 matches 1168 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“谢谢你，罗温……抱歉，我不该在这时候哭的。明明是很让我感到高兴的事情……”",color:"white",bold: false}]
+execute if score @s rng1 matches 1180 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"救赎的话语：",color:"green",bold:1b},{text:"\n“感到难过的话……在我面前哭出来，也是没有任何关系的，爱理莎。”",color:"white",bold: false}]
 
-execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run effect give @s slowness 3 255 true
-execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run effect give @s darkness 3 0 true
-execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run effect give @s blindness 1 0 true
-execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run tp @s -79758 -17 -179 facing -79758 -17 -177
-execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run effect clear @s fire_resistance
-execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run effect clear @s resistance
-execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run effect clear @s absorption
-execute if score @s rng1 matches 1090 as @a[tag=azrShowDialog,distance=..20000] at @s run attribute @s jump_strength base reset
+execute if score @s rng1 matches 1210 as @a[tag=azrShowDialog,distance=..20000] at @s run effect give @s slowness 3 255 true
+execute if score @s rng1 matches 1210 as @a[tag=azrShowDialog,distance=..20000] at @s run effect give @s darkness 3 0 true
+execute if score @s rng1 matches 1210 as @a[tag=azrShowDialog,distance=..20000] at @s run effect give @s blindness 1 0 true
+execute if score @s rng1 matches 1210 as @a[tag=azrShowDialog,distance=..20000] at @s run tp @s -79758 -17 -179 facing -79758 -17 -177
+execute if score @s rng1 matches 1210 as @a[tag=azrShowDialog,distance=..20000] at @s run effect clear @s fire_resistance
+execute if score @s rng1 matches 1210 as @a[tag=azrShowDialog,distance=..20000] at @s run effect clear @s resistance
+execute if score @s rng1 matches 1210 as @a[tag=azrShowDialog,distance=..20000] at @s run effect clear @s absorption
+execute if score @s rng1 matches 1210 as @a[tag=azrShowDialog,distance=..20000] at @s run attribute @s jump_strength base reset
 
-execute if score @s rng1 matches 1102 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“……”",color:"white",bold: false}]
-execute if score @s rng1 matches 1110 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“我还……有意识？”",color:"white",bold: false}]
-execute if score @s rng1 matches 1120 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“为什么……？”",color:"white",bold: false}]
+execute if score @s rng1 matches 1222 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“……”",color:"white",bold: false}]
+execute if score @s rng1 matches 1232 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“我还……有意识？”",color:"white",bold: false}]
+execute if score @s rng1 matches 1244 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“为什么……？”",color:"white",bold: false}]
 
-execute if score @s rng1 matches 1132 run scoreboard players set stage Azr_system 55
-execute if score @s rng1 matches 1132 run scoreboard players reset tick_main_thread AzrTimerStack
-execute if score @s rng1 matches 1132 run scoreboard players reset stage_main_thread AzrTimerStack
-execute if score @s rng1 matches 1132 run title @a[tag=azrShowDialog] actionbar {text:"Chapter Clear",color:"gold"}
-execute if score @s rng1 matches 1132 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage11_boss3
+execute if score @s rng1 matches 1252 run scoreboard players set stage Azr_system 55
+execute if score @s rng1 matches 1252 run scoreboard players reset tick_main_thread AzrTimerStack
+execute if score @s rng1 matches 1252 run scoreboard players reset stage_main_thread AzrTimerStack
+execute if score @s rng1 matches 1252 run title @a[tag=azrShowDialog] actionbar {text:"Chapter Clear",color:"gold"}
+execute if score @s rng1 matches 1252 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage11_boss3
 #rewards
-execute if score @s rng1 matches 1132 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
-execute if score @s rng1 matches 1132 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..13}] Azr_skillPoints 14
-execute if score @s rng1 matches 1132 run scoreboard players reset stage_main_thread AzrTimerStack
+execute if score @s rng1 matches 1252 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute if score @s rng1 matches 1252 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..13}] Azr_skillPoints 14
+execute if score @s rng1 matches 1252 run scoreboard players reset stage_main_thread AzrTimerStack
 
