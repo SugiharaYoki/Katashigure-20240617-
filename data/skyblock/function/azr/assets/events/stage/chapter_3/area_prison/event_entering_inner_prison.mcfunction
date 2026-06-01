@@ -497,5 +497,6 @@ execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..2000] a
 execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..2000] at @s run attribute @s gravity base reset
 
 execute if score @s rng1 matches 4068 run forceload remove ~ ~
+execute if score @s rng1 matches 4068 run scoreboard players set @s rng1 5000
 
 
