@@ -6,7 +6,8 @@ execute as @s[type=item] if entity @a[tag=azrPlayer,distance=..12] if entity @s[
 execute as @s[tag=azrBlastRoot,type=item] at @s run function skyblock:azr/system/player/weapons/blast_root/main
 execute as @s[tag=azrArrowBox,type=block_display] at @s run function skyblock:azr/system/player/weapons/arrow_box/main
 
-
+execute as @s[tag=AzrielMarker_encounter] at @s if entity @s[tag=!AzrielMarker_encounter_forceloaded] run forceload add ~ ~
+execute as @s[tag=AzrielMarker_encounter] at @s if entity @s[tag=!AzrielMarker_encounter_forceloaded] run tag @s add AzrielMarker_encounter_forceloaded
 execute as @s[tag=AzrielMob_level_ed] at @s run function skyblock:azr/system/entity/skill_controller
 execute as @s[tag=AzrielMob_summon_delay] at @s run function skyblock:azr/system/entity/summon_delay_controller
 execute as @s[tag=AzrielMob_sariel_skill] at @s run function skyblock:azr/system/entity/sariel_skill_controller
