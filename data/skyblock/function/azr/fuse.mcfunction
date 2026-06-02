@@ -14,4 +14,4 @@ tellraw @s [{text:" item = ",color:"white",italic:0b},{"score":{"name":"stage","
 
 
 
-execute if score stage AZS_SoulFrag matches 2500.. run function skyblock:azr/lifecycle/endgame
+function skyblock:azr/lifecycle/endgame
