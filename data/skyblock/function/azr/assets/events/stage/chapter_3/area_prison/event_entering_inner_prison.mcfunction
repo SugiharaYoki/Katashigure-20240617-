@@ -329,7 +329,7 @@ execute if score @s rng1 matches 1490..1499 run scoreboard players set @s rng1 1
 execute if score @s rng1 matches 300..1499 if entity @a[tag=azrPlayer,x=-79898,y=-33,z=-238,dx=20,dy=7,dz=20] run scoreboard players set @s rng1 1500
 execute if score @s rng1 matches 1501 as @a[tag=azrPlayer] at @s run attribute @s gravity base reset
 
-execute if score @s rng1 matches 1500..3999 store result score @s rng2 run random value 1..40
+execute if score @s rng1 matches 1500..3999 store result score @s rng2 run random value 1..38
 execute if score @s rng1 matches 1500..3999 if score @s rng2 matches 1 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^0.2 ^ ^4.5 run function skyblock:azr/assets/mobs/trap_fang
 execute if score @s rng1 matches 1500..3999 if score @s rng2 matches 1 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^0.5 ^ ^4.5 run function skyblock:azr/assets/mobs/trap_fang
 execute if score @s rng1 matches 1500..3999 if score @s rng2 matches 1 as @a[tag=azrPlayer,limit=2,sort=random] at @s rotated ~ 0 positioned ^0.8 ^ ^4.5 run function skyblock:azr/assets/mobs/trap_fang
