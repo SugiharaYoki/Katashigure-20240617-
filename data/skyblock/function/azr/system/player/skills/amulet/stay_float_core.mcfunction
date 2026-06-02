@@ -36,6 +36,8 @@ execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s a
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s if items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run particle white_smoke ~ ~-0.2 ~ 0.1 0 0.1 0.02 4
 
 
+
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 120..138 if entity @a[predicate=skyblock:jump] run effect give @s slow_falling 1 99 true
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 if entity @a[predicate=!skyblock:jump] run effect clear @s slow_falling
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90..118 run effect clear @s slow_falling
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90..118 run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 2
