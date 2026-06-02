@@ -1,9 +1,11 @@
 
 
+
 execute if score @s rng1 matches 30..35 run scoreboard players set @s rng1 28
 execute if score @s rng1 matches 1..32 as @a[x=-79840,y=-18,z=-160,dx=5,dy=5,dz=29,tag=azrPlayer] run effect give @s slowness 20 4 true
 execute if score @s rng1 matches 1..32 if entity @a[x=-79840,y=-18,z=-160,dx=5,dy=5,dz=29,tag=azrPlayer] run scoreboard players set @s rng1 36
 
+execute if score @s rng1 matches 38 at @s run forceload add ~ ~
 execute if score @s rng1 matches 38 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"冷淡的播报音：",color:"red",bold:1b},{text:"\n“本台记者报道，美国加利福尼亚州一所私立初中周二上午发生严重火灾。由于学校建筑长期存在消防通道不足、隔火门失效、走廊堆放可燃材料等违规问题，火势在短时间内迅速蔓延，造成多名学生和教职员工受伤。\n火灾发生在上午9时17分左右，当时学校正在上第二节课；不到五分钟，西教学楼一层和二层的主要通道便被浓烟覆盖.部分班级无法按照原定疏散路线撤离，只能在教师带领下从低层窗户逃生。”",color:"white",bold: false}]
 execute if score @s rng1 matches 78 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"冷淡的播报音：",color:"red",bold:1b},{text:"\n“当地消防部门称，第一批消防车在接警后约6分钟抵达现场，但由于校舍内部结构复杂，火势已沿着吊顶空间和旧通风管道向东侧教学区扩散。消防员进入建筑后发现，部分防火门被木楔长期固定在开启状态，几处疏散指示灯失效，西侧楼梯间还堆放着纸箱、旧桌椅和清洁用品，严重阻碍学生撤离。\n截至周二晚间，事故已造成至少42名学生和4名教职员工受伤，其中7名学生因吸入浓烟和烧伤被送往州儿童医院治疗，暂无生命危险。另有多名学生因踩踏擦伤在现场接受急救。\n根据警方透露，学校监控画面拍到一名身穿深色连帽外套的人在火灾发生前约十分钟进入西侧员工通道。目前警方尚未公布嫌疑人具体身份，联邦酒精、烟草、火器及爆炸物管理局的火灾调查人员也已介入。”",color:"white",bold: false}]
 execute if score @s rng1 matches 118 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"冷淡的播报音：",color:"red",bold:1b},{text:"\n“令人关注的是，这所学校的建筑安全问题并非首次被指出。根据当地媒体查阅到的市政记录，该校西教学楼建于2115年，近年曾多次进行临时改建，用于增加教室、储物间和课后活动空间。但部分改建工程没有完整提交消防审查文件。去年秋季，市消防检查员曾要求校方清理堵塞通道的杂物、更换部分老旧隔火门，但整改期限以经费紧缺为由延后。\n教职员工埃雷拉先生称，学校内部长期存在空间不足问题，为了招收更多学生而将许多储藏空间改造成教室。”",color:"white",bold: false}]
@@ -63,20 +65,27 @@ execute if score @s rng1 matches 797 as @a[distance=..2000,tag=azrShowDialog] at
 execute if score @s rng1 matches 809 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"牵记的男声 - 父亲：",color:"green",bold:1b},{text:"\n“那……这个女孩，我们该叫她什么名字？她们不能都叫爱理莎。”",color:"white",bold: false}]
 execute if score @s rng1 matches 819 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声 - 母亲：",color:"green",bold:1b},{text:"\n“之前叫她莉茜，以后也这么叫。随我们姓，仅此就足够了。”",color:"white",bold: false}]
 execute if score @s rng1 matches 829 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"——",color:"gray",bold:1b}]
+execute if score @s rng1 matches 829 run scoreboard players add @s rng1 4
 
 execute if score @s rng1 matches 840 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音 - 班主任：",color:"red",bold:1b},{text:"\n“估计是医院里抱错了，而且好像是找到了原先的孩子。这样下来，莉茜肯定就不被喜欢了。”",color:"white",bold: false}]
 execute if score @s rng1 matches 855 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音 - 班主任：",color:"red",bold:1b},{text:"\n“而且……据说他们家的经济条件本身就不好，她养父母是不顾家里的反对私奔出来的。所以他们将孩子的意义看得很特殊。”",color:"white",bold: false}]
 execute if score @s rng1 matches 870 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"柔和的话语 - 生物老师：",color:"red",bold:1b},{text:"\n“这明明都不管孩子的事情。我真的很想帮助爱理莎，但是她们家……已经断交一个月的学费了。我们实在是不该做职责之外的工作，说不定还会被爱理莎的父母告上法庭。”",color:"white",bold: false}]
 execute if score @s rng1 matches 880 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"——",color:"gray",bold:1b}]
+execute if score @s rng1 matches 880 run scoreboard players add @s rng1 20
+
 execute if score @s rng1 matches 915 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"挑衅的语气 - 优等生：",color:"red",bold:1b},{text:"\n“告诉老师？我好害怕啊，你每敢说一次，我就在放学后堵你一次。你可没有父母能替你撑腰。”",color:"white",bold: false}]
 execute if score @s rng1 matches 930 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"挑衅的语气 - 优等生：",color:"red",bold:1b},{text:"\n“我看你被我欺负的时候挺听话的，我都快爱上你了。莉茜，我看你未来要不要做我的老婆啊？这样你就可以一辈子都被我这样对待了。”",color:"white",bold: false}]
 execute if score @s rng1 matches 945 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"挑衅的语气 - 优等生：",color:"red",bold:1b},{text:"\n“反正我们已经做过男女之间能做的所有事情，有什么关系？……为什么要用这种放肆的眼神看我，你活腻了吗？你今天别想完好无缺地回家。”",color:"white",bold: false}]
 execute if score @s rng1 matches 955 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"——",color:"gray",bold:1b}]
+execute if score @s rng1 matches 955 run scoreboard players add @s rng1 20
+
 execute if score @s rng1 matches 1000 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音 - 班主任：",color:"red",bold:1b},{text:"\n“话虽如此，莉茜，他和你一样只有初一。不要穷追不舍了，给大家一个犯错的机会……”",color:"white",bold: false}]
 execute if score @s rng1 matches 1015 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音 - 班主任：",color:"red",bold:1b},{text:"\n“我知道你是想报之前他们霸凌你的仇，现在还不是时候。莉茜，你现在需要的是尽可能考上一个好大学，争取到奖学金。”",color:"white",bold: false}]
 execute if score @s rng1 matches 1030 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音 - 班主任：",color:"red",bold:1b},{text:"\n“你的家庭条件并不好，老师也没法一直护着你。要在必要的时候选择忍气吞声，好吗？”",color:"white",bold: false}]
 execute if score @s rng1 matches 1045 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音 - 班主任：",color:"red",bold:1b},{text:"\n“老师也很为难。但他们更有可能考到顶尖大学，老师为了学校升学率，不得不这么做……这都是以大局为重。”",color:"white",bold: false}]
 execute if score @s rng1 matches 1060 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"——",color:"gray",bold:1b}]
+execute if score @s rng1 matches 1060 run scoreboard players add @s rng1 20
+
 execute if score @s rng1 matches 1110 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"救赎的回声：",color:"green",bold:1b},{text:"\n“所以……莉茜，你希望我叫你什么名字？”",color:"white",bold: false}]
 execute if score @s rng1 matches 1122 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“我曾经……用了不属于我的名字。我觉得我本就不该拥有它。”",color:"white",bold: false}]
 execute if score @s rng1 matches 1134 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“但……我的一切美好回忆，都属于那个名字。”",color:"white",bold: false}]
@@ -95,9 +104,9 @@ execute if score @s rng1 matches 1218 as @a[tag=azrShowDialog,distance=..20000] 
 execute if score @s rng1 matches 1218 as @a[tag=azrShowDialog,distance=..20000] at @s run effect clear @s absorption
 execute if score @s rng1 matches 1218 as @a[tag=azrShowDialog,distance=..20000] at @s run attribute @s jump_strength base reset
 
-execute if score @s rng1 matches 1222 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“……”",color:"white",bold: false}]
-execute if score @s rng1 matches 1232 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“我还……有意识？”",color:"white",bold: false}]
-execute if score @s rng1 matches 1244 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“为什么……？”",color:"white",bold: false}]
+execute if score @s rng1 matches 1222 as @a[distance=..20000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“……”",color:"white",bold: false}]
+execute if score @s rng1 matches 1232 as @a[distance=..20000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“我还……有意识？”",color:"white",bold: false}]
+execute if score @s rng1 matches 1244 as @a[distance=..20000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“为什么……？”",color:"white",bold: false}]
 
 execute if score @s rng1 matches 1252 run scoreboard players set stage Azr_system 55
 execute if score @s rng1 matches 1252 run scoreboard players reset tick_main_thread AzrTimerStack
@@ -109,4 +118,4 @@ execute if score @s rng1 matches 1252 run advancement grant @a[tag=azrPlayer] on
 execute if score @s rng1 matches 1252 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
 execute if score @s rng1 matches 1252 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..13}] Azr_skillPoints 14
 execute if score @s rng1 matches 1252 run scoreboard players reset stage_main_thread AzrTimerStack
-
+execute if score @s rng1 matches 1252 at @s run forceload add ~ ~
