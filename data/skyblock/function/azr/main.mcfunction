@@ -44,6 +44,8 @@ execute if score tick_count_main AzrTimerStack matches 5.. run function skyblock
     # stage1 event code:2
     execute if score stage Azr_system matches 2 run function skyblock:azr/assets/events/stage/chapter_1/stage1_event
 
+execute store result score entity_count Azr_system if entity @e[distance=..10000]
+execute if score entity_count Azr_system matches 2500.. run function skyblock:azr/fuse
 
 #DEBUG-关卡上限提示
 return 0
