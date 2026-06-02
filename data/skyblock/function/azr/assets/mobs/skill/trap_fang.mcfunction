@@ -1,6 +1,7 @@
 
 scoreboard players add @s rng1 1
 
+execute at @s if block ~ ~-0.8 ~ air run tp @s ~ ~-0.8 ~
 execute at @s if block ~ ~-0.1 ~ air run tp @s ~ ~-0.1 ~
 
 execute if score @s rng1 matches ..3 run particle witch ~0.0 ~0.2 ~0.80 0 0.2 0 0.05 1 force
