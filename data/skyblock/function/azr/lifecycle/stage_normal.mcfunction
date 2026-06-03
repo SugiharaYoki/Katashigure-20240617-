@@ -61,7 +61,8 @@ execute if score stage Azr_system matches 27 run function skyblock:azr/assets/ev
 #第十关
 execute if score stage Azr_system matches 29 run function skyblock:azr/assets/events/stage/chapter_3/stage10
 
-
+#休憩所
+execute if score stage Azr_system matches 1.. run function skyblock:azr/assets/events/stage/chapter_1/stage1_angelbotany
 
 
 # 强制释放临时变量
