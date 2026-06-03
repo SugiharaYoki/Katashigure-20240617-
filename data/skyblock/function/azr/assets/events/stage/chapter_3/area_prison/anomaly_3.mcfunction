@@ -101,6 +101,7 @@ execute if score @s rng1 matches 1218 as @a[tag=azrShowDialog,distance=..20000] 
 execute if score @s rng1 matches 1218 as @a[tag=azrShowDialog,distance=..20000] at @s run tp @s -79758 -17 -179 facing -79758 -17 -177
 execute if score @s rng1 matches 1218 as @a[tag=azrShowDialog,distance=..20000] at @s run effect clear @s fire_resistance
 execute if score @s rng1 matches 1218 as @a[tag=azrShowDialog,distance=..20000] at @s run effect clear @s resistance
+execute if score @s rng1 matches 1218 as @a[tag=azrShowDialog,distance=..20000] at @s run effect clear @s regeneration
 execute if score @s rng1 matches 1218 as @a[tag=azrShowDialog,distance=..20000] at @s run effect clear @s absorption
 execute if score @s rng1 matches 1218 as @a[tag=azrShowDialog,distance=..20000] at @s run attribute @s jump_strength base reset
 
