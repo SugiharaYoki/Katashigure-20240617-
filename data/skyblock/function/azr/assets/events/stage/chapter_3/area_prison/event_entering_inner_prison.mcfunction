@@ -425,6 +425,7 @@ execute if score @s rng1 matches 4017 run tellraw @a[tag=azrShowDialog,distance=
 
 execute if score @s rng1 matches 4015 as @a[tag=azrShowDialog] at @s run tp @s -79946 65 -540
 
+execute if score @s rng1 matches 4020 as @n[tag=AzrielMob_sonic_eye_lord] at @s run tp @s -79931 40 -519
 execute if score @s rng1 matches 4021 as @a[tag=azrShowDialog] at @s run tp @s -79931 33 -519
 
 execute if score @s rng1 matches 4032 run tellraw @a[tag=azrShowDialog,distance=..2000] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“再一次于这种莫名其妙的地方坠落而死。”",color:"white"}]
