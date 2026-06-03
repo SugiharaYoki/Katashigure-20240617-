@@ -5,6 +5,11 @@ execute at @s run particle reverse_portal ~ ~1 ~ 1 1 1 0.02 50
 execute run playsound minecraft:entity.creaking.death player @a ~ ~ ~ 1 0.8
 execute run playsound minecraft:item.chorus_fruit.teleport player @a ~ ~ ~ 1 0.7
 
+#休憩所
+execute positioned -79969 -52 -11 if entity @s[distance=..8] run effect clear @s regeneration
+execute positioned -79969 -52 -11 if entity @s[distance=..8] run effect clear @s resistance
+
+
 execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_westcourt_a] if score @s \
     Azr_Shop matches 40001 positioned -79943 37 -8 run tp @s ~ ~1 ~
 execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_westcourt_b] if score @s \
