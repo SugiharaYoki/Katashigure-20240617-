@@ -86,7 +86,9 @@ execute unless score @s AzrPlayer_CurrentArea matches 7 if entity @s[x=-79846,y=
 
 execute unless score @s AzrPlayer_CurrentArea matches 6 if entity @s[x=-79895,y=39,z=-122,dx=11,dy=7,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:6,title:"晦 怨 囚 牢",color_code:"#9e62ff"}
-
+                                                
+execute unless score @s AzrPlayer_CurrentArea matches 8 if entity @s[x=-79970,y=-52,z=-10,dx=11,dy=7,dz=7] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:8,title:"天 使 的 憩 庭",color_code:"#22fb92"}
 
 
 
@@ -120,6 +122,8 @@ execute unless score @s AzrPlayer_CurrentArea matches 6 positioned -79923 38 -96
                                                 {area_id:6,title:"重生锚点：晦怨囚牢A",color_code:"#9e62ff"}
 execute unless score @s AzrPlayer_CurrentArea matches 6 positioned -79855 46 -109 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:6,title:"重生锚点：晦怨囚牢B",color_code:"#9e62ff"}
+execute unless score @s AzrPlayer_CurrentArea matches 8 positioned -79969 -52 -11 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:8,title:"重生锚点：天使的憩庭",color_code:"#22fb92"}
 
 
 execute positioned -79943 37 -8 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_westcourt_a
