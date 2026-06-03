@@ -65,26 +65,26 @@ execute if score @s rng1 matches 797 as @a[distance=..2000,tag=azrShowDialog] at
 execute if score @s rng1 matches 809 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"牵记的男声 - 父亲：",color:"green",bold:1b},{text:"\n“那……这个女孩，我们该叫她什么名字？她们不能都叫爱理莎。”",color:"white",bold: false}]
 execute if score @s rng1 matches 819 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声 - 母亲：",color:"green",bold:1b},{text:"\n“之前叫她莉茜，以后也这么叫。随我们姓，仅此就足够了。”",color:"white",bold: false}]
 execute if score @s rng1 matches 829 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"——",color:"gray",bold:1b}]
-execute if score @s rng1 matches 829 run scoreboard players add @s rng1 4
+execute if score @s rng1 matches 829 run scoreboard players add @s rng1 2
 
 execute if score @s rng1 matches 840 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音 - 班主任：",color:"red",bold:1b},{text:"\n“估计是医院里抱错了，而且好像是找到了原先的孩子。这样下来，莉茜肯定就不被喜欢了。”",color:"white",bold: false}]
 execute if score @s rng1 matches 855 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音 - 班主任：",color:"red",bold:1b},{text:"\n“而且……据说他们家的经济条件本身就不好，她养父母是不顾家里的反对私奔出来的。所以他们将孩子的意义看得很特殊。”",color:"white",bold: false}]
 execute if score @s rng1 matches 870 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"柔和的话语 - 生物老师：",color:"red",bold:1b},{text:"\n“这明明都不管孩子的事情。我真的很想帮助爱理莎，但是她们家……已经断交一个月的学费了。我们实在是不该做职责之外的工作，说不定还会被爱理莎的父母告上法庭。”",color:"white",bold: false}]
 execute if score @s rng1 matches 880 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"——",color:"gray",bold:1b}]
-execute if score @s rng1 matches 880 run scoreboard players add @s rng1 12
+execute if score @s rng1 matches 880 run scoreboard players add @s rng1 8
 
 execute if score @s rng1 matches 915 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"挑衅的语气 - 优等生：",color:"red",bold:1b},{text:"\n“告诉老师？我好害怕啊，你每敢说一次，我就在放学后堵你一次。你可没有父母能替你撑腰。”",color:"white",bold: false}]
 execute if score @s rng1 matches 930 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"挑衅的语气 - 优等生：",color:"red",bold:1b},{text:"\n“我看你被我欺负的时候挺听话的，我都快爱上你了。莉茜，我看你未来要不要做我的老婆啊？这样你就可以一辈子都被我这样对待了。”",color:"white",bold: false}]
 execute if score @s rng1 matches 945 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"挑衅的语气 - 优等生：",color:"red",bold:1b},{text:"\n“反正我们已经做过男女之间能做的所有事情，有什么关系？……为什么要用这种放肆的眼神看我，你活腻了吗？你今天别想完好无缺地回家。”",color:"white",bold: false}]
 execute if score @s rng1 matches 955 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"——",color:"gray",bold:1b}]
-execute if score @s rng1 matches 955 run scoreboard players add @s rng1 12
+execute if score @s rng1 matches 955 run scoreboard players add @s rng1 8
 
 execute if score @s rng1 matches 1000 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音 - 班主任：",color:"red",bold:1b},{text:"\n“话虽如此，莉茜，他和你一样只有初一。不要穷追不舍了，给大家一个犯错的机会……”",color:"white",bold: false}]
 execute if score @s rng1 matches 1015 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音 - 班主任：",color:"red",bold:1b},{text:"\n“我知道你是想报之前他们霸凌你的仇，现在还不是时候。莉茜，你现在需要的是尽可能考上一个好大学，争取到奖学金。”",color:"white",bold: false}]
 execute if score @s rng1 matches 1030 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音 - 班主任：",color:"red",bold:1b},{text:"\n“你的家庭条件并不好，老师也没法一直护着你。要在必要的时候选择忍气吞声，好吗？”",color:"white",bold: false}]
 execute if score @s rng1 matches 1045 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"沉稳的嗓音 - 班主任：",color:"red",bold:1b},{text:"\n“老师也很为难。但他们更有可能考到顶尖大学，老师为了学校升学率，不得不这么做……这都是以大局为重。”",color:"white",bold: false}]
 execute if score @s rng1 matches 1060 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"——",color:"gray",bold:1b}]
-execute if score @s rng1 matches 1060 run scoreboard players add @s rng1 12
+execute if score @s rng1 matches 1060 run scoreboard players add @s rng1 8
 
 execute if score @s rng1 matches 1110 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"救赎的回声：",color:"green",bold:1b},{text:"\n“所以……莉茜，你希望我叫你什么名字？”",color:"white",bold: false}]
 execute if score @s rng1 matches 1122 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“我曾经……用了不属于我的名字。我觉得我本就不该拥有它。”",color:"white",bold: false}]
