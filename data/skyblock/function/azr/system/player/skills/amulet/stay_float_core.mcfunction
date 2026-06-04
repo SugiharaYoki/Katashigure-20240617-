@@ -9,7 +9,6 @@ execute if entity @s[scores={AzrSariel_Amulet_StayFloat_cooldown=5..10},predicat
 execute if entity @s[scores={AzrSariel_Amulet_StayFloat_cooldown=16..20},predicate=skyblock:jump] unless block ~ ~-0.3 ~ water unless block ~ ~0.3 ~ water unless block ~ ~ ~ #climbable run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 140
 
 
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90.. if entity @s[predicate=!skyblock:jump] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 3
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138.. if entity @s[predicate=skyblock:jump] as @s at @s anchored eyes unless block ^ ^ ^0.5 air if block ^ ^-0.5 ^ air run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 3
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138.. if entity @s[predicate=skyblock:jump] as @s at @s anchored eyes if block ^ ^ ^0.5 air unless block ^ ^-0.5 ^ air run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 3
 
@@ -37,8 +36,9 @@ execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s a
 
 
 
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 120..138 if entity @a[predicate=skyblock:jump] run effect give @s slow_falling 1 99 true
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 if entity @a[predicate=!skyblock:jump] run effect clear @s slow_falling
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 120..138 if entity @s[predicate=skyblock:jump] run effect give @s slow_falling 1 99 true
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 if entity @s[predicate=!skyblock:jump] run effect clear @s slow_falling
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90.. if entity @s[predicate=!skyblock:jump] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 3
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90..118 run effect clear @s slow_falling
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90..118 run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 2
 
