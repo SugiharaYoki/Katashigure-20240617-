@@ -18,7 +18,7 @@ scoreboard players reset $azrInitialWeaponGiven
 scoreboard players reset $azrInitialPieGiven
 scoreboard players reset $azrInitialIngredientGiven
 
-execute as @e[tag=AzrielMarker_encounter,tag=AzrielMarker_encounter_forceloaded] run forceload add ~ ~
+execute as @e[tag=AzrielMarker_encounter,tag=AzrielMarker_encounter_forceloaded] at @s run forceload remove ~ ~
 
 
 #tag @s remove Event18575A
