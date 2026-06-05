@@ -27,6 +27,8 @@ execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=16}] run tellraw @a[tag=azrPlayer,distance=..30] [{text:"-< 2 >-",bold:true,color:"gray"}]
 execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=20}] run tellraw @a[tag=azrPlayer,distance=..30] [{text:"-< 1 >-",bold:true,color:"gray"}]
 execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=24}] run tellraw @a[tag=azrPlayer,distance=..30] [{text:"试炼开始",bold:true,color:"red"}]
+execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=24}] run tp @a[tag=azrPlayer,distance=..30] -79177 50 -16
+execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=24}] run summon marker -79177 50 -16 {Tags:["AzrielMarker_encounter"]}
 
 execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=90..99}] run scoreboard players set @s rng1 90
 execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=..100}] as @a[tag=azrPlayer,distance=..2] at @s unless block ~ ~ ~ end_portal positioned -79965 -52 17 run kill @n[tag=AzrielMarker_encounter,distance=0..0.5]

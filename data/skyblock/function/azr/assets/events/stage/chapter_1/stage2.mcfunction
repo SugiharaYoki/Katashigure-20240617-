@@ -67,7 +67,7 @@ execute if score stage_main_thread AzrTimerStack matches 284 run fill -79942 40 
 
 execute if score stage_main_thread AzrTimerStack matches 289 run fill -79931 38 22 -79931 40 22 red_stained_glass destroy
 
-execute if score stage_main_thread AzrTimerStack matches 297 positioned -79931 38 14 run function skyblock:azr/assets/mobs/elite/candle_angel
+execute if score stage_main_thread AzrTimerStack matches 297 positioned -79931 38 14 run function skyblock:azr/assets/mobs/unique/candle_angel
 
 #回秒
 execute if score stage_main_thread AzrTimerStack matches 298..299 positioned -79931 38 14 if entity @n[distance=..20,tag=AzrielMob_elite_candle_angel] run scoreboard players set stage_main_thread AzrTimerStack 298

@@ -1,0 +1,5 @@
+summon zombie ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielMob_typeDEATH","AzrielBossAssassin","AzrielSubBoss"],DeathLootTable:"skyblock:azr_new/zombie_tier1",attributes:[{id:"attack_damage",base:0.0},{id:"max_health",base:240.0},{id:"armor",base:4.5},{base:0.18d,id:"movement_speed"}],Health:240.0f,CustomName:'阴影处刑者',equipment:{mainhand:{count:1,id:"iron_sword",components:{enchantments:{knockback:2}}},offhand:{},feet:{id:netherite_boots,count:1},legs:{id:netherite_leggings,count:1},chest:{id:netherite_chestplate,count:1,components:{"minecraft:dyed_color":0,"minecraft:trim":{material:"minecraft:amethyst",pattern:"minecraft:silence"}}},head:{id:netherite_helmet,count:1,components:{"minecraft:dyed_color":0,"minecraft:trim":{material:"minecraft:amethyst",pattern:"minecraft:silence"}}}},drop_chances:{mainhand:0.0f,offhand:0.0f,feet:0.0f,legs:0.0f,chest:0.0f,head:0.0f}}
+
+
+particle trial_spawner_detection ~ ~0.4 ~ 0.5 0.5 0.5 0 42
+#playsound minecraft:entity.zombie_villager.cure hostile @a ~ ~ ~ 1 0.7
