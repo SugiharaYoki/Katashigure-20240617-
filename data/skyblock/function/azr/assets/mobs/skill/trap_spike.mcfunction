@@ -1,4 +1,7 @@
 
+execute at @s if block ~ ~-0.8 ~ air run tp @s ~ ~-0.8 ~
+execute at @s if block ~ ~-0.1 ~ air run tp @s ~ ~-0.1 ~
+
 execute unless entity @n[tag=AzrielMob_trap_spike,distance=..0.5,type=slime] run particle block{block_state:{Name:pointed_dripstone}} ~ ~0.2 ~ 0.2 0.2 0.2 0.05 10
 execute unless entity @n[tag=AzrielMob_trap_spike,distance=..0.5,type=slime] run kill @s[tag=AzrielMob_trap_spike_display]
 
