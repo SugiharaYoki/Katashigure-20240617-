@@ -16,7 +16,7 @@ execute if score @s rng8 matches 13..33 run particle ash ~ ~0.2 ~ 0.3 0 0.3 0.0 
 
 
 execute if score @s rng8 matches 22 run particle large_smoke ~ ~0.3 ~ 0.4 0.3 0.4 0.03 10
-execute if score @s rng8 matches 22 run function skyblock:azr/assets/mobs/trap_spike
+execute if score @s rng8 matches 22 unless block ~ ~-0.1 ~ air run function skyblock:azr/assets/mobs/trap_spike
 execute if score @s rng8 matches 22 store result score @s rng5 run random value 1..4
 execute if score @s[scores={rng5=1,Health=..120}] rng8 matches 22 facing entity @p[tag=azrPlayer] feet rotated ~ 0 positioned 0.0 0 0.0 run summon marker ^0.52 ^0.01 ^0.2 {Tags:["AzrielMob_assassin_move_marker"]}
 execute if score @s[scores={rng5=2,Health=..120}] rng8 matches 22 facing entity @p[tag=azrPlayer] feet rotated ~ 0 positioned 0.0 0 0.0 run summon marker ^0.6 ^0.01 ^0.3 {Tags:["AzrielMob_assassin_move_marker"]}
@@ -29,7 +29,7 @@ execute if score @s[scores={Health=..120}] rng8 matches 22 facing entity @p[tag=
 execute if score @s rng8 matches 33 run function skyblock:azr/assets/mobs/skill/boss_assassin/inventory_from_chest
 
 execute if score @s rng8 matches 55 run particle large_smoke ~ ~0.3 ~ 0.4 0.3 0.4 0.03 10
-execute if score @s rng8 matches 55 run function skyblock:azr/assets/mobs/trap_spike
+execute if score @s rng8 matches 55 unless block ~ ~-0.1 ~ air run function skyblock:azr/assets/mobs/trap_spike
 execute if score @s rng8 matches 55 store result score @s rng5 run random value 1..4
 execute if score @s[scores={rng5=1,Health=..40}] rng8 matches 55 facing entity @p[tag=azrPlayer] feet rotated ~ 0 positioned 0.0 0 0.0 run summon marker ^1.52 ^0.01 ^0.2 {Tags:["AzrielMob_assassin_move_marker"]}
 execute if score @s[scores={rng5=2,Health=..40}] rng8 matches 55 facing entity @p[tag=azrPlayer] feet rotated ~ 0 positioned 0.0 0 0.0 run summon marker ^1.6 ^0.01 ^0.3 {Tags:["AzrielMob_assassin_move_marker"]}
