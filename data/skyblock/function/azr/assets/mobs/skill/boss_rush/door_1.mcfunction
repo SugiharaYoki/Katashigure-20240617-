@@ -12,6 +12,7 @@ execute if score @s AzrEntityTimer matches 620..799 if entity @n[tag=AzrielMob_B
 
 execute if score @s AzrEntityTimer matches 5 run title @a[distance=..50] times 0t 20t 16t
 execute if score @s AzrEntityTimer matches 5 run title @a[distance=..50] title {text:"执烛使者",color: "#7321cb",bold:1b}
+execute if score @s AzrEntityTimer matches 5 run fill -79159 77 -34 -79195 77 2 minecraft:tinted_glass replace air
 
 execute if score @s AzrEntityTimer matches 5 positioned -79167 50 -19 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
 execute if score @s AzrEntityTimer matches 10 positioned -79167 50 -19 run function skyblock:azr/assets/mobs/skill/boss_rush/candle_angel_summon
@@ -23,7 +24,6 @@ execute if score @s AzrEntityTimer matches 10 positioned -79187 50 -16 run tag @
 
 execute if score @s AzrEntityTimer matches 205 run title @a[distance=..50] times 0t 20t 16t
 execute if score @s AzrEntityTimer matches 205 run title @a[distance=..50] title {text:"阴影处刑者",color: "#7321cb",bold:1b}
-execute if score @s AzrEntityTimer matches 205 run fill -79159 77 -34 -79195 77 2 minecraft:tinted_glass replace air
 
 execute if score @s AzrEntityTimer matches 205 positioned -79167 50 -16 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
 execute if score @s AzrEntityTimer matches 210 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_assassin/summon
