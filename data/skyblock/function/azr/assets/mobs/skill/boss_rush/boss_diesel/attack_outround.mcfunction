@@ -4,6 +4,23 @@ execute if score @s rng8 matches 2 run particle minecraft:flame ~ ~0.3 ~ 0.2 0 0
 execute if score @s rng8 matches 2 run effect give @s slowness 1 9 true
 
 execute if score @s rng8 matches 5 store result score @s rng3 run random value 1..10
+execute if score @s rng8 matches 9 store result score @s rng3 run random value 1..10
+execute if score @s rng8 matches 13 store result score @s rng3 run random value 1..10
+execute if score @s rng8 matches 17 store result score @s rng3 run random value 1..10
+execute if score @s rng8 matches 21 store result score @s rng3 run random value 1..10
+execute if score @s rng8 matches 25 store result score @s rng3 run random value 1..10
+execute if score @s rng8 matches 29 store result score @s rng3 run random value 1..10
+execute if score @s rng8 matches 33 store result score @s rng3 run random value 1..10
+execute if score @s rng8 matches 37 store result score @s rng3 run random value 1..10
+execute if score @s rng8 matches 41 store result score @s rng3 run random value 1..10
+execute if score @s rng8 matches 45 store result score @s rng3 run random value 1..10
+execute if score @s rng8 matches 49 store result score @s rng3 run random value 1..10
+execute if score @s rng8 matches 53 store result score @s rng3 run random value 1..10
+execute if score @s rng8 matches 57 store result score @s rng3 run random value 1..10
+execute if score @s rng8 matches 61 store result score @s rng3 run random value 1..10
+execute if score @s rng8 matches 65 store result score @s rng3 run random value 1..10
+execute if score @s rng8 matches 69 store result score @s rng3 run random value 1..10
+execute if score @s rng8 matches 73 store result score @s rng3 run random value 1..10
 execute if score @s[scores={rng3=1..10}] rng8 matches 5 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_1"]}
 execute if score @s[scores={rng3=1..7}] rng8 matches 9 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_2"]}
 execute if score @s[scores={rng3=1..10}] rng8 matches 13 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_3"]}
