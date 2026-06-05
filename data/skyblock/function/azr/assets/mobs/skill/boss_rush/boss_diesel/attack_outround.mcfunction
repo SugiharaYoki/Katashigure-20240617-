@@ -5,23 +5,23 @@ execute if score @s rng8 matches 2 run effect give @s slowness 1 9 true
 
 execute if score @s rng8 matches 5 store result score @s rng3 run random value 1..10
 execute if score @s[scores={rng3=1..10}] rng8 matches 5 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_1"]}
-execute if score @s[scores={rng3=1..9}] rng8 matches 9 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_2"]}
+execute if score @s[scores={rng3=1..7}] rng8 matches 9 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_2"]}
 execute if score @s[scores={rng3=1..10}] rng8 matches 13 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_3"]}
-execute if score @s[scores={rng3=1..9}] rng8 matches 17 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_4"]}
+execute if score @s[scores={rng3=1..7}] rng8 matches 17 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_4"]}
 execute if score @s[scores={rng3=1..10}] rng8 matches 21 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_5"]}
-execute if score @s[scores={rng3=1..8}] rng8 matches 25 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_6"]}
-execute if score @s[scores={rng3=1..9}] rng8 matches 29 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_7"]}
-execute if score @s[scores={rng3=1..8}] rng8 matches 33 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_8"]}
-execute if score @s[scores={rng3=1..9}] rng8 matches 37 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_9"]}
-execute if score @s[scores={rng3=1..8}] rng8 matches 41 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_10"]}
-execute if score @s[scores={rng3=1..9}] rng8 matches 45 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_11"]}
-execute if score @s[scores={rng3=1..8}] rng8 matches 49 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_12"]}
-execute if score @s[scores={rng3=1..7,Health=..60}] rng8 matches 53 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_13"]}
-execute if score @s[scores={rng3=1..8,Health=..60}] rng8 matches 57 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_14"]}
-execute if score @s[scores={rng3=1..7,Health=..50}] rng8 matches 61 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_15"]}
-execute if score @s[scores={rng3=1..8,Health=..50}] rng8 matches 65 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_16"]}
-execute if score @s[scores={rng3=1..7,Health=..40}] rng8 matches 69 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_17"]}
-execute if score @s[scores={rng3=1..8,Health=..40}] rng8 matches 73 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_18"]}
+execute if score @s[scores={rng3=1..6}] rng8 matches 25 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_6"]}
+execute if score @s[scores={rng3=1..5}] rng8 matches 29 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_7"]}
+execute if score @s[scores={rng3=1..6}] rng8 matches 33 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_8"]}
+execute if score @s[scores={rng3=1..5}] rng8 matches 37 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_9"]}
+execute if score @s[scores={rng3=1..5}] rng8 matches 41 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_10"]}
+execute if score @s[scores={rng3=1..4,Health=..100}] rng8 matches 45 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_11"]}
+execute if score @s[scores={rng3=1..5,Health=..100}] rng8 matches 49 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_12"]}
+execute if score @s[scores={rng3=1..4,Health=..80}] rng8 matches 53 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_13"]}
+execute if score @s[scores={rng3=1..3,Health=..80}] rng8 matches 57 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_14"]}
+execute if score @s[scores={rng3=1..4,Health=..60}] rng8 matches 61 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_15"]}
+execute if score @s[scores={rng3=1..5,Health=..60}] rng8 matches 65 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_16"]}
+execute if score @s[scores={rng3=1..4,Health=..40}] rng8 matches 69 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_17"]}
+execute if score @s[scores={rng3=1..5,Health=..40}] rng8 matches 73 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_18"]}
 
 
 
