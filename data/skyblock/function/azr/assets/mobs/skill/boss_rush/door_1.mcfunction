@@ -9,6 +9,7 @@ execute if score @s AzrEntityTimer matches 20..199 if entity @n[tag=AzrielMob_Bo
 execute if score @s AzrEntityTimer matches 220..399 if entity @n[tag=AzrielMob_BossRush_Target,distance=..300] run scoreboard players set @s AzrEntityTimer 390
 execute if score @s AzrEntityTimer matches 420..599 if entity @n[tag=AzrielMob_BossRush_Target,distance=..300] run scoreboard players set @s AzrEntityTimer 590
 execute if score @s AzrEntityTimer matches 620..799 if entity @n[tag=AzrielMob_BossRush_Target,distance=..300] run scoreboard players set @s AzrEntityTimer 790
+execute if score @s AzrEntityTimer matches 820..999 if entity @n[tag=AzrielMob_BossRush_Target,distance=..300] run scoreboard players set @s AzrEntityTimer 990
 
 execute if score @s AzrEntityTimer matches 5 run title @a[distance=..50] times 0t 20t 16t
 execute if score @s AzrEntityTimer matches 5 run title @a[distance=..50] title {text:"执烛使者",color: "#7321cb",bold:1b}
