@@ -37,5 +37,6 @@ execute if score @s AzrEntityTimer matches 410 positioned -79187 50 -16 run tag 
 execute if score @s AzrEntityTimer matches 410..599 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_diesel/core
 
 
+execute unless entity @a[tag=azrPlayer,distance=..60] run kill @e[tag=AzrielMob_BossRush_Target,distance=..120]
 execute unless entity @a[tag=azrPlayer,distance=..60] run stopsound @a[tag=azrShowDialog]
 execute unless entity @a[tag=azrPlayer,distance=..60] run kill @s
