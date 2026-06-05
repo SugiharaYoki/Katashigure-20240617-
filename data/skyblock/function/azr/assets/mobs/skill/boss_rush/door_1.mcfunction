@@ -10,6 +10,9 @@ execute if score @s AzrEntityTimer matches 220..399 if entity @n[tag=AzrielMob_B
 execute if score @s AzrEntityTimer matches 420..599 if entity @n[tag=AzrielMob_BossRush_Target,distance=..300] run scoreboard players set @s AzrEntityTimer 590
 execute if score @s AzrEntityTimer matches 620..799 if entity @n[tag=AzrielMob_BossRush_Target,distance=..300] run scoreboard players set @s AzrEntityTimer 790
 
+execute if score @s AzrEntityTimer matches 5 run title @s times 0t 20t 16t
+execute if score @s AzrEntityTimer matches 5 run title @s title {text:"执烛使者",color: "#7321cb",bold:1b}
+
 execute if score @s AzrEntityTimer matches 5 positioned -79167 50 -16 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
 execute if score @s AzrEntityTimer matches 10 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/candle_angel_summon
 execute if score @s AzrEntityTimer matches 5 positioned -79187 50 -16 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
@@ -17,11 +20,21 @@ execute if score @s AzrEntityTimer matches 10 positioned -79187 50 -16 run funct
 
 execute if score @s AzrEntityTimer matches 10 positioned -79187 50 -16 run tag @e[tag=AzrielMob,distance=..30] add AzrielMob_BossRush_Target
 
+execute if score @s AzrEntityTimer matches 205 run title @s times 0t 20t 16t
+execute if score @s AzrEntityTimer matches 205 run title @s title {text:"阴影处刑者",color: "#7321cb",bold:1b}
 
 execute if score @s AzrEntityTimer matches 205 positioned -79167 50 -16 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
 execute if score @s AzrEntityTimer matches 210 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_assassin/summon
 execute if score @s AzrEntityTimer matches 210 positioned -79187 50 -16 run tag @e[tag=AzrielMob,distance=..30] add AzrielMob_BossRush_Target
 execute if score @s AzrEntityTimer matches 210..399 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_assassin/core
+
+execute if score @s AzrEntityTimer matches 405 run title @s times 0t 20t 16t
+execute if score @s AzrEntityTimer matches 405 run title @s title {text:"锅炉驱动者",color: "#7321cb",bold:1b}
+
+execute if score @s AzrEntityTimer matches 405 positioned -79167 50 -16 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
+execute if score @s AzrEntityTimer matches 410 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_diesel/summon
+execute if score @s AzrEntityTimer matches 410 positioned -79187 50 -16 run tag @e[tag=AzrielMob,distance=..30] add AzrielMob_BossRush_Target
+execute if score @s AzrEntityTimer matches 410..599 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_diesel/core
 
 
 
