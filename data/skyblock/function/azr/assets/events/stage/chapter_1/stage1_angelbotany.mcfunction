@@ -28,6 +28,7 @@ execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=20}] run tellraw @a[tag=azrPlayer,distance=..30] [{text:"-< 1 >-",bold:true,color:"gray"}]
 execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=24}] run tellraw @a[tag=azrPlayer,distance=..30] [{text:"试炼开始",bold:true,color:"red"}]
 execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=24}] run tp @a[tag=azrPlayer,distance=..30] -79177 50 -16
+execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=24}] positioned -79177 50 -16 as @a[tag=azrPlayer,distance=..30] run stopsound @s music
 execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=24}] positioned -79177 50 -16 as @a[tag=azrPlayer,distance=..30] run effect clear @s
 execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=24}] positioned -79177 50 -16 as @a[tag=azrPlayer,distance=..30] run effect give @s regeneration 3 9 true
 execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=24}] positioned -79177 50 -16 as @a[tag=azrPlayer,distance=..30] run effect give @s saturation 3 0 true
