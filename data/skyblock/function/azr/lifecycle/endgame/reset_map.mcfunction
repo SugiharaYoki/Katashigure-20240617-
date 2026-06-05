@@ -910,6 +910,8 @@ forceload remove -79400 000 -79200 200
 forceload remove -79400 200 -79200 400
 forceload remove -79950 -2150 -79800 -1850
 forceload remove -79541 -472 -79345 -350
+#Bossrush门
+forceload remove -79195 2 -79159 -34
 #______________________________________________________________#
 kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1000]
 
