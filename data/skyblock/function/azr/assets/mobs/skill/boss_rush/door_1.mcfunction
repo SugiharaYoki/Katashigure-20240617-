@@ -1,10 +1,10 @@
 
 scoreboard players add @s AzrEntityTimer 1
-
 execute if score @s AzrEntityTimer matches 1..1999 run scoreboard players add @s rng9 1
 execute if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:renegade music @s ~ ~ ~ 0.65
 execute if score @s rng9 matches 2820.. run scoreboard players set @s rng9 0
 
+execute if score @s AzrEntityTimer matches 2 run forceload add -79195 2 -79159 -34
 execute if score @s AzrEntityTimer matches 20..199 if entity @n[tag=AzrielMob_BossRush_Target,distance=..300] run scoreboard players set @s AzrEntityTimer 190
 execute if score @s AzrEntityTimer matches 220..399 if entity @n[tag=AzrielMob_BossRush_Target,distance=..300] run scoreboard players set @s AzrEntityTimer 390
 execute if score @s AzrEntityTimer matches 420..599 if entity @n[tag=AzrielMob_BossRush_Target,distance=..300] run scoreboard players set @s AzrEntityTimer 590
@@ -45,3 +45,4 @@ execute unless entity @a[tag=azrPlayer,distance=..60] run fill -79159 77 -34 -79
 execute unless entity @a[tag=azrPlayer,distance=..60] run kill @e[tag=AzrielMob_BossRush_Target,distance=..120]
 execute unless entity @a[tag=azrPlayer,distance=..60] run stopsound @a[tag=azrShowDialog]
 execute unless entity @a[tag=azrPlayer,distance=..60] run kill @s
+execute unless entity @a[tag=azrPlayer,distance=..60] run forceload remove -79195 2 -79159 -34
