@@ -23,8 +23,8 @@ execute as @n[tag=AzrielBossDiesel,type=zombie,distance=..50] store result score
     execute as @n[tag=AzrielBossDiesel] at @s if score @s[scores={rng2=1}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_diesel/attack_outround
 
     execute as @n[tag=AzrielBossDiesel] at @s if entity @s[scores={Health=180..}] run scoreboard players set @s rng8 -20
-    execute as @n[tag=AzrielBossDiesel] at @s if score @s[scores={rng2=5..6}] rng8 matches 23.. run scoreboard players set @s rng8 83
-    execute as @n[tag=AzrielBossDiesel] at @s if score @s[scores={rng2=5..6}] rng8 matches 83.. run scoreboard players set @s rng2 0
+    execute as @n[tag=AzrielBossDiesel] at @s if score @s[scores={rng2=5..7}] rng8 matches 23.. run scoreboard players set @s rng8 83
+    execute as @n[tag=AzrielBossDiesel] at @s if score @s[scores={rng2=5..7}] rng8 matches 83.. run scoreboard players set @s rng2 0
     execute as @n[tag=AzrielBossDiesel] at @s if score @s rng8 matches 83.. run scoreboard players set @s rng8 -1
 
 

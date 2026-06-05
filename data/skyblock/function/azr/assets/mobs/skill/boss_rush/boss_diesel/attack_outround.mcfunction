@@ -24,8 +24,6 @@ execute if score @s[scores={rng3=1..7,Health=..40}] rng8 matches 69 at @s run su
 execute if score @s[scores={rng3=1..8,Health=..40}] rng8 matches 73 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_outround_marker","AzrielMob_mob_marker","distance_18"]}
 
 
-function skyblock:azr/assets/mobs/skill/boss_rush/boss_diesel/marker_fire_particle_round {distance:0.4,distance_reach:1.1,distance_target:0.75}
-
 
 execute if score @s[scores={Health=110..}] rng8 matches 30 run scoreboard players set @s rng8 81
 execute if score @s[scores={Health=40..}] rng8 matches 50 run scoreboard players set @s rng8 81
