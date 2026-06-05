@@ -23,6 +23,7 @@ execute if score @s AzrEntityTimer matches 10 positioned -79187 50 -16 run tag @
 
 execute if score @s AzrEntityTimer matches 205 run title @a[distance=..50] times 0t 20t 16t
 execute if score @s AzrEntityTimer matches 205 run title @a[distance=..50] title {text:"阴影处刑者",color: "#7321cb",bold:1b}
+execute if score @s AzrEntityTimer matches 205 run fill -79159 77 -34 -79195 77 2 minecraft:tinted_glass replace air
 
 execute if score @s AzrEntityTimer matches 205 positioned -79167 50 -16 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
 execute if score @s AzrEntityTimer matches 210 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_assassin/summon
@@ -32,6 +33,7 @@ execute if score @s AzrEntityTimer matches 210..399 positioned -79167 50 -16 run
 
 execute if score @s AzrEntityTimer matches 405 run title @a[distance=..50] times 0t 20t 16t
 execute if score @s AzrEntityTimer matches 405 run title @a[distance=..50] title {text:"锅炉驱动者",color: "#7321cb",bold:1b}
+execute if score @s AzrEntityTimer matches 405 run fill -79159 77 -34 -79195 77 2 air replace minecraft:tinted_glass
 
 execute if score @s AzrEntityTimer matches 405 positioned -79167 50 -16 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
 execute if score @s AzrEntityTimer matches 410 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_diesel/summon
@@ -39,7 +41,7 @@ execute if score @s AzrEntityTimer matches 410 positioned -79187 50 -16 run tag 
 execute if score @s AzrEntityTimer matches 410 positioned -79187 50 -16 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
 execute if score @s AzrEntityTimer matches 410..599 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_diesel/core
 
-
+execute unless entity @a[tag=azrPlayer,distance=..60] run fill -79159 77 -34 -79195 77 2 minecraft:air replace tinted_glass
 execute unless entity @a[tag=azrPlayer,distance=..60] run kill @e[tag=AzrielMob_BossRush_Target,distance=..120]
 execute unless entity @a[tag=azrPlayer,distance=..60] run stopsound @a[tag=azrShowDialog]
 execute unless entity @a[tag=azrPlayer,distance=..60] run kill @s
