@@ -1,6 +1,6 @@
 
 
-execute positioned -79931 28 -10 as @n[tag=AzrielBossMossBoss,type=silverfish,distance=..50] store result score @s Health run data get entity @s Health
+execute as @n[tag=AzrielBossMossBoss,type=silverfish,distance=..50] store result score @s Health run data get entity @s Health
 
 execute as @n[tag=AzrielMob_smoke,type=silverfish,distance=0..40,tag=!AzrielMob_smoke_mossbosssummoned] run tag @s add AzrielMob_smoke_mossbosssummoned
 
