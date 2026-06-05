@@ -18,6 +18,7 @@ execute if score @s AzrEntityTimer matches 10 positioned -79167 50 -16 run funct
 execute if score @s AzrEntityTimer matches 5 positioned -79187 50 -16 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
 execute if score @s AzrEntityTimer matches 10 positioned -79187 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/candle_angel_summon
 
+execute if score @s AzrEntityTimer matches 10 positioned -79187 50 -16 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
 execute if score @s AzrEntityTimer matches 10 positioned -79187 50 -16 run tag @e[tag=AzrielMob,distance=..30] add AzrielMob_BossRush_Target
 
 execute if score @s AzrEntityTimer matches 205 run title @a[distance=..50] times 0t 20t 16t
@@ -26,6 +27,7 @@ execute if score @s AzrEntityTimer matches 205 run title @a[distance=..50] title
 execute if score @s AzrEntityTimer matches 205 positioned -79167 50 -16 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
 execute if score @s AzrEntityTimer matches 210 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_assassin/summon
 execute if score @s AzrEntityTimer matches 210 positioned -79187 50 -16 run tag @e[tag=AzrielMob,distance=..30] add AzrielMob_BossRush_Target
+execute if score @s AzrEntityTimer matches 210 positioned -79187 50 -16 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
 execute if score @s AzrEntityTimer matches 210..399 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_assassin/core
 
 execute if score @s AzrEntityTimer matches 405 run title @a[distance=..50] times 0t 20t 16t
@@ -34,6 +36,7 @@ execute if score @s AzrEntityTimer matches 405 run title @a[distance=..50] title
 execute if score @s AzrEntityTimer matches 405 positioned -79167 50 -16 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
 execute if score @s AzrEntityTimer matches 410 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_diesel/summon
 execute if score @s AzrEntityTimer matches 410 positioned -79187 50 -16 run tag @e[tag=AzrielMob,distance=..30] add AzrielMob_BossRush_Target
+execute if score @s AzrEntityTimer matches 410 positioned -79187 50 -16 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
 execute if score @s AzrEntityTimer matches 410..599 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_diesel/core
 
 
