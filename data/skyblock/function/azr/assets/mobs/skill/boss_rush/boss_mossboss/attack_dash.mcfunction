@@ -63,7 +63,7 @@ execute if score @s rng8 matches 84 facing entity @p[tag=azrPlayer] feet rotated
 execute if score @s rng8 matches 84 facing entity @p[tag=azrPlayer] feet rotated ~ 0 positioned 0.0 0 0.0 run summon marker ^ ^0.01 ^1.7 {Tags:["AzrielMob_move_marker"]}
 execute if score @s rng8 matches 84 facing entity @p[tag=azrPlayer] feet rotated ~ 0 run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_move_marker] Pos
 execute if score @s rng8 matches 84 facing entity @p[tag=azrPlayer] feet rotated ~ 0 run kill @e[type=marker,tag=AzrielMob_move_marker]
-
+execute if score @s rng8 matches 84 run effect give @s speed 1 3 true
 
 execute if score @s rng8 matches 21.. rotated ~ 0 as @s at @s rotated ~ 0 positioned ^ ^ ^0.3 if entity @n[tag=AzrielMob_smoke,distance=0..0.8] run tag @s add AzrielMob_backup_ready 
 
