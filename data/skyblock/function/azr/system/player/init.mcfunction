@@ -17,6 +17,8 @@ xp set @s 0 levels
 
 stopsound @s music
 
+execute unless score @s Azr_currency_weight matches -9999.. run scoreboard players set @s Azr_currency_weight 0
+
 #状态初始化 这里先clear再给予是为了效果仅维持1tick
 effect clear @s saturation
 effect clear @s instant_health

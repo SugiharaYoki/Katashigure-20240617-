@@ -7,6 +7,8 @@ tellraw @s [{text:" - "},{text:"蜂棘护甲  ",color:"#cd8107"},{"score":{"name
 
 #8431559 8431560 8431561 8431562 被蚀岩径工匠占用
 #8431563 8431564 8431565 8431566 被牢房马林努斯占用
+#8431570 8431571 8431572 8431573 8431574 8431575 8431576 8431577 8431578 8431579 被休憩所占用
+#8431580 8431581 8431582 8431583 8431584 8431585 8431586 8431587 8431588 8431589 被休憩所占用
 
 summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker0"],CustomName:' ？ '}
 summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker1"],CustomName:' ？ '}

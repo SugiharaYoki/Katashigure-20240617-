@@ -7,6 +7,7 @@ scoreboard objectives add Azr_forceDeath dummy
 scoreboard objectives add Azr_isDead deathCount
 scoreboard objectives add Azr_emerald dummy
 scoreboard objectives add Azr_emerald_temp dummy
+scoreboard objectives add Azr_currency_weight dummy
 scoreboard objectives add Azr_Shop trigger
 scoreboard objectives add Azr_Shop_rng1 dummy
 scoreboard objectives add Azr_Shop_rng2 dummy

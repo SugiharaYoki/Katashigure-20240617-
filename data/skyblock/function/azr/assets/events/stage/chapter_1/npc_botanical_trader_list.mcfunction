@@ -1,0 +1,12 @@
+$execute if score @s Azr_Shop_rng$(number) matches 1 run \
+    tellraw @a[distance=0..13,tag=azrPlayer] [{text:" - "},{text:"熟牛排  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/3 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431571"}}]
+$execute if score @s Azr_Shop_rng$(number) matches 2 run \
+    tellraw @a[distance=0..13,tag=azrPlayer] [{text:" - "},{text:"铁锭  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/5 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431572"}}]
+$execute if score @s Azr_Shop_rng$(number) matches 3 run \
+    tellraw @a[distance=0..13,tag=azrPlayer] [{text:" - "},{text:"火药  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/7 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431573"}}]
+$execute if score @s Azr_Shop_rng$(number) matches 4 run \
+    tellraw @a[distance=0..13,tag=azrPlayer] [{text:" - "},{text:"墨囊  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/5 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431574"}}]
+$execute if score @s Azr_Shop_rng$(number) matches 5 run \
+    tellraw @a[distance=0..13,tag=azrPlayer] [{text:" - "},{text:"燧石  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/4 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431575"}}]
+$execute if score @s Azr_Shop_rng$(number) matches 6 run \
+    tellraw @a[distance=0..13,tag=azrPlayer] [{text:" - "},{text:"绿宝石 ×30  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/10 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431576"}}]

@@ -1,0 +1,59 @@
+scoreboard players add @s AzrielNPC_ConversationTimer 1
+
+execute if score @s AzrielNPC_ConversationTimer matches 8 unless entity @a[distance=..5.5,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 7
+execute if score @s AzrielNPC_ConversationTimer matches 10 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s AzrielNPC_ConversationTimer matches 10 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"休憩所管理员 华兹华斯：",color:"green",bold:1b},{bold: false,text:"\n“你好，爱理莎小姐。看上去你获得了进入休憩所的授权。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 10 run scoreboard players set @s AzrielNPC_ConversationTimer 40
+
+
+execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_305] run tellraw @s [{text:" - "},{text:"交易：这周的恶魔砝码能换到什么好东西？  ",color:"#c4ffbd"},{text:"〈◆〉",bold:1b,color:"#72ff62",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30503"}}]
+execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_305] run tellraw @s [{text:" - "},{text:"询问：这里是哪里？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30501"}}]
+execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_305] run tellraw @s [{text:" - "},{text:"询问：为什么这里已经没有天使了？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30502"}}]
+
+
+
+execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_305] run tag @s add azrPlayer_dialogchoice_revealed_305
+
+execute if score @s AzrielNPC_ConversationTimer matches 51 run scoreboard players set @s AzrielNPC_ConversationTimer 49
+
+
+execute if score @s AzrielNPC_ConversationTimer matches 24..3000 as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_305] run tag @s remove azrPlayer_dialogchoice_revealed_305
+
+
+execute if score @s AzrielNPC_ConversationTimer matches 1002 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s AzrielNPC_ConversationTimer matches 1002 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"休憩所管理员 华兹华斯：",color:"green",bold:1b},{bold: false,text:"\n“这里是天使们的休憩所。沙利叶大人喜爱绿植，所以这里被造成了植物园。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 1014 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s AzrielNPC_ConversationTimer matches 1014 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"休憩所管理员 华兹华斯：",color:"green",bold:1b},{bold: false,text:"\n“而我呢，负责维护这里的设施、照料植物，确保空气魔力不会贫乏、过剩。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 1025 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s AzrielNPC_ConversationTimer matches 1025 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"休憩所管理员 华兹华斯：",color:"green",bold:1b},{bold: false,text:"\n“虽然你并非天使，但既然能够踏入这里，就说明你是被‘允许’的人。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 1032 run tag @a[tag=azrPlayer] remove azrPlayer_dialogchoice_revealed_305
+execute if score @s AzrielNPC_ConversationTimer matches 1032 run scoreboard players set @s AzrielNPC_ConversationTimer 49
+
+
+execute if score @s AzrielNPC_ConversationTimer matches 2002 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s AzrielNPC_ConversationTimer matches 2002 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"休憩所管理员 华兹华斯：",color:"green",bold:1b},{bold: false,text:"\n“很多已经死了。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 2013 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s AzrielNPC_ConversationTimer matches 2013 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"休憩所管理员 华兹华斯：",color:"green",bold:1b},{bold: false,text:"\n“但我们能救下许多剩余的士兵。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 2024 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s AzrielNPC_ConversationTimer matches 2024 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"休憩所管理员 华兹华斯：",color:"green",bold:1b},{bold: false,text:"\n“我接下来还会去往别的战场。我们一定会再相见。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 2036 run tag @a[tag=azrPlayer] remove azrPlayer_dialogchoice_revealed_305
+execute if score @s AzrielNPC_ConversationTimer matches 2036 run scoreboard players set @s AzrielNPC_ConversationTimer 49
+
+execute if score @s AzrielNPC_ConversationTimer matches 3002 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s AzrielNPC_ConversationTimer matches 3002 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"休憩所管理员 华兹华斯：",color:"green",bold:1b},{bold: false,text:"\n“这周的可交换物品都在这里啦。”",color:"white"}]
+
+execute if score @s AzrielNPC_ConversationTimer matches 3010 unless score @s dailydiv >= daycount dailydiv store result score @s Azr_Shop_rng1 run random value 1..6
+execute if score @s AzrielNPC_ConversationTimer matches 3010 unless score @s dailydiv >= daycount dailydiv store result score @s Azr_Shop_rng2 run random value 1..6
+execute if score @s AzrielNPC_ConversationTimer matches 3010 unless score @s dailydiv >= daycount dailydiv store result score @s Azr_Shop_rng3 run random value 1..6
+execute if score @s AzrielNPC_ConversationTimer matches 3010 unless score @s dailydiv >= daycount dailydiv run scoreboard players operation @s dailydiv = daycount dailydiv
+execute if score @s AzrielNPC_ConversationTimer matches 3010 as @a[distance=0..13,tag=azrPlayer] run function skyblock:azr/system/shop/count
+execute if score @s AzrielNPC_ConversationTimer matches 3010 run function skyblock:azr/assets/events/stage/chapter_1/npc_botanical_trader_list {number:1}
+execute if score @s AzrielNPC_ConversationTimer matches 3010 run function skyblock:azr/assets/events/stage/chapter_1/npc_botanical_trader_list {number:2}
+execute if score @s AzrielNPC_ConversationTimer matches 3010 run function skyblock:azr/assets/events/stage/chapter_1/npc_botanical_trader_list {number:3}
+
+
+execute if score @s AzrielNPC_ConversationTimer matches 3020..3200 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_305] run tag @s add azrPlayer_dialogchoice_revealed_305
+
+execute if score @s AzrielNPC_ConversationTimer matches 3020..3200 as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_305] run tag @s remove azrPlayer_dialogchoice_revealed_305
+execute if score @s AzrielNPC_ConversationTimer matches 3020..3200 unless entity @a[distance=0..5.5,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 49
+
