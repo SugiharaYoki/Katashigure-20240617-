@@ -41,7 +41,7 @@ execute if score @s AzrEntityTimer matches 405 run fill -79159 77 -34 -79195 77 
 
 execute if score @s AzrEntityTimer matches 405 positioned -79167 50 -16 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
 execute if score @s AzrEntityTimer matches 420 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_mossboss/summon
-execute if score @s AzrEntityTimer matches 420 positioned -79187 50 -16 run tag @e[tag=AzrielMob,distance=..30,type=silvefish] add AzrielMob_BossRush_Target
+execute if score @s AzrEntityTimer matches 420 positioned -79187 50 -16 run tag @e[tag=AzrielMob,distance=..30,type=silverfish] add AzrielMob_BossRush_Target
 execute if score @s AzrEntityTimer matches 420 positioned -79187 50 -16 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
 execute if score @s AzrEntityTimer matches 420..599 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_mossboss/core
 
