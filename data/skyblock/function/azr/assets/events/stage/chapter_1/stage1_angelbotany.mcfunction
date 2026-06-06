@@ -13,8 +13,8 @@ execute positioned -79930 28 197 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79930 28 197 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3..}] unless entity @a[x=-80007,y=-58,z=-18,dx=100,dy=20,dz=100,tag=azrPlayer] run kill @s
 
 #商人
-execute positioned -79977 -51 12 as @n[type=villager,distance=..3] at @s if entity @a[tag=azrPlayer,distance=..25] run scoreboard players add @s AzrielNPC_ConversationTimer 1
-execute positioned -79977 -51 12 as @n[type=villager,distance=..3] at @s if entity @a[tag=azrPlayer,distance=..25] run function skyblock:azr/assets/events/stage/chapter_1/npc_botanical_trader
+execute positioned -79977 -51 12 as @n[type=villager,distance=..3] at @s if entity @a[tag=azrPlayer,distance=..6] run scoreboard players add @s AzrielNPC_ConversationTimer 1
+execute positioned -79977 -51 12 as @n[type=villager,distance=..3] at @s if entity @a[tag=azrPlayer,distance=..6] run function skyblock:azr/assets/events/stage/chapter_1/npc_botanical_trader
 
 
 
