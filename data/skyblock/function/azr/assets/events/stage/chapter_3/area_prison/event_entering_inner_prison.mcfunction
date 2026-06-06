@@ -31,6 +31,9 @@ execute if score @s rng1 matches 5 positioned -79890.02 33.00 -171.96 as @a[tag=
 
 execute if score @s rng1 matches 26..27 unless entity @a[tag=azrPlayer,x=-79904,y=23,z=-205,dx=30,dy=15,dz=15] run scoreboard players set @s rng1 26
 
+execute if score @s rng1 matches 2 run scoreboard players set stage Azr_system 41
+
+
 execute if score @s rng1 matches 28 run fill -79889 24 -182 -79892 27 -179 minecraft:structure_void replace minecraft:polished_andesite_stairs[facing=south]
 execute if score @s rng1 matches 28 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
 execute if score @s rng1 matches 28 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“不太对劲。”",color:"white"}]
