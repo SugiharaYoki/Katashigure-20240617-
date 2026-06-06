@@ -1,4 +1,4 @@
-execute unless score @s AzrSariel_Amulet_BackDodge_clock matches ..-59 run scoreboard players remove @s AzrSariel_Amulet_BackDodge_clock 1
+execute unless score @s AzrSariel_Amulet_BackDodge_clock matches ..-49 run scoreboard players remove @s AzrSariel_Amulet_BackDodge_clock 1
 
 
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=..40,AzrSariel_Amulet_DownKick_clock=11..20},predicate=skyblock:backward] run scoreboard players set @s AzrSariel_Amulet_BackDodge_clock 100
