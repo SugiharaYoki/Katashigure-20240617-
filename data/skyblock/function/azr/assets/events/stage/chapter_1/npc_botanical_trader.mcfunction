@@ -31,11 +31,11 @@ execute if score @s AzrielNPC_ConversationTimer matches 1032 run scoreboard play
 
 
 execute if score @s AzrielNPC_ConversationTimer matches 2002 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
-execute if score @s AzrielNPC_ConversationTimer matches 2002 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"休憩所管理员 华兹华斯：",color:"green",bold:1b},{bold: false,text:"\n“很多已经死了。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 2002 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"休憩所管理员 华兹华斯：",color:"green",bold:1b},{bold: false,text:"\n“天使们有很多都在过去的战争中死亡了，现在的大多身居要职，所以来这里休息的频率逐渐变少了。”",color:"white"}]
 execute if score @s AzrielNPC_ConversationTimer matches 2013 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
-execute if score @s AzrielNPC_ConversationTimer matches 2013 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"休憩所管理员 华兹华斯：",color:"green",bold:1b},{bold: false,text:"\n“但我们能救下许多剩余的士兵。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 2013 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"休憩所管理员 华兹华斯：",color:"green",bold:1b},{bold: false,text:"\n“魔界与神界的战争？不，我所提到的是更久之前的战争了。导致神逝的那场战争。”",color:"white"}]
 execute if score @s AzrielNPC_ConversationTimer matches 2024 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
-execute if score @s AzrielNPC_ConversationTimer matches 2024 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"休憩所管理员 华兹华斯：",color:"green",bold:1b},{bold: false,text:"\n“我接下来还会去往别的战场。我们一定会再相见。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 2024 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"休憩所管理员 华兹华斯：",color:"green",bold:1b},{bold: false,text:"\n“你没发现很多天使的前缀称呼都是‘权’吗？那是因为‘炽’、‘座’、‘主’、‘力’、‘能’几乎全部殒命。剩下的权天使，接替了先辈们的职责。”",color:"white"}]
 execute if score @s AzrielNPC_ConversationTimer matches 2036 run tag @a[tag=azrPlayer] remove azrPlayer_dialogchoice_revealed_305
 execute if score @s AzrielNPC_ConversationTimer matches 2036 run scoreboard players set @s AzrielNPC_ConversationTimer 49
 
