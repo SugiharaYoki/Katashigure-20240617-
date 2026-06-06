@@ -41,11 +41,11 @@ execute positioned -79867 49 -128 unless entity @n[tag=AzrielMarker_encounter,di
     as @n[tag=AzrielNPC_marinus] at @s run scoreboard players set @s AzrielNPC_ConversationTimer 4001
 
 execute if score @s[tag=azrPlayer_dialogchoice_revealed_305] Azr_Shop matches 30501 \
-    positioned -79977 -51 12 if entity @s[distance=..13] run scoreboard players set @s rng1 1001
+    positioned -79977 -51 12 if entity @s[distance=..13] as @n[type=villager,distance=..5,tag=AzrielTrader_botanical_trader] run scoreboard players set @s rng1 1001
 execute if score @s[tag=azrPlayer_dialogchoice_revealed_305] Azr_Shop matches 30502 \
-    positioned -79977 -51 12 if entity @s[distance=..13] run scoreboard players set @s rng1 2001
+    positioned -79977 -51 12 if entity @s[distance=..13] as @n[type=villager,distance=..5,tag=AzrielTrader_botanical_trader] run scoreboard players set @s rng1 2001
 execute if score @s[tag=azrPlayer_dialogchoice_revealed_305] Azr_Shop matches 30503 \
-    positioned -79977 -51 12 if entity @s[distance=..13] run scoreboard players set @s rng1 3001
+    positioned -79977 -51 12 if entity @s[distance=..13] as @n[type=villager,distance=..5,tag=AzrielTrader_botanical_trader] run scoreboard players set @s rng1 3001
 
 
 
