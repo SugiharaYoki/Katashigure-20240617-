@@ -1,12 +1,12 @@
-$execute if score @s Azr_Shop_rng$(number) matches 1 as @a[distance=0..13,tag=azrPlayer] at @s run \
+$execute if score @s Azr_Shop_rng$(number) matches 1 as @a[distance=0..13,tag=azrPlayer] at @s run tellraw @s\
      [{text:" - "},{text:"熟牛排  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/2 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431571"}}]
-$execute if score @s Azr_Shop_rng$(number) matches 2 as @a[distance=0..13,tag=azrPlayer] at @s run \
+$execute if score @s Azr_Shop_rng$(number) matches 2 as @a[distance=0..13,tag=azrPlayer] at @s run tellraw @s\
      [{text:" - "},{text:"铁锭  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/5 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431572"}}]
-$execute if score @s Azr_Shop_rng$(number) matches 3 as @a[distance=0..13,tag=azrPlayer] at @s run \
+$execute if score @s Azr_Shop_rng$(number) matches 3 as @a[distance=0..13,tag=azrPlayer] at @s run tellraw @s\
      [{text:" - "},{text:"火药  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/7 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431573"}}]
-$execute if score @s Azr_Shop_rng$(number) matches 4 as @a[distance=0..13,tag=azrPlayer] at @s run \
+$execute if score @s Azr_Shop_rng$(number) matches 4 as @a[distance=0..13,tag=azrPlayer] at @s run tellraw @s\
      [{text:" - "},{text:"墨囊  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/5 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431574"}}]
-$execute if score @s Azr_Shop_rng$(number) matches 5 as @a[distance=0..13,tag=azrPlayer] at @s run \
+$execute if score @s Azr_Shop_rng$(number) matches 5 as @a[distance=0..13,tag=azrPlayer] at @s run tellraw @s\
      [{text:" - "},{text:"燧石  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/4 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431575"}}]
-$execute if score @s Azr_Shop_rng$(number) matches 6 as @a[distance=0..13,tag=azrPlayer] at @s run \
+$execute if score @s Azr_Shop_rng$(number) matches 6 as @a[distance=0..13,tag=azrPlayer] at @s run tellraw @s\
      [{text:" - "},{text:"绿宝石 ×30  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/10 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431576"}}]
