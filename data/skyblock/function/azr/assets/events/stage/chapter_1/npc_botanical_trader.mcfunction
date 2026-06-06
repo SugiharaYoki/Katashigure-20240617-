@@ -42,14 +42,14 @@ execute if score @s AzrielNPC_ConversationTimer matches 2036 run scoreboard play
 execute if score @s AzrielNPC_ConversationTimer matches 3002 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
 execute if score @s AzrielNPC_ConversationTimer matches 3002 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"休憩所管理员 华兹华斯：",color:"green",bold:1b},{bold: false,text:"\n“这周的可交换物品都在这里啦。”",color:"white"}]
 
-execute if score @s AzrielNPC_ConversationTimer matches 3010 unless score @s dailydiv >= daycount dailydiv store result score @s Azr_Shop_rng1 run random value 1..6
-execute if score @s AzrielNPC_ConversationTimer matches 3010 unless score @s dailydiv >= daycount dailydiv store result score @s Azr_Shop_rng2 run random value 1..6
-execute if score @s AzrielNPC_ConversationTimer matches 3010 unless score @s dailydiv >= daycount dailydiv store result score @s Azr_Shop_rng3 run random value 1..6
-execute if score @s AzrielNPC_ConversationTimer matches 3010 unless score @s dailydiv >= daycount dailydiv run scoreboard players operation @s dailydiv = daycount dailydiv
-execute if score @s AzrielNPC_ConversationTimer matches 3010 as @a[distance=0..13,tag=azrPlayer] run function skyblock:azr/system/shop/count
-execute if score @s AzrielNPC_ConversationTimer matches 3010 run function skyblock:azr/assets/events/stage/chapter_1/npc_botanical_trader_list {number:1}
-execute if score @s AzrielNPC_ConversationTimer matches 3010 run function skyblock:azr/assets/events/stage/chapter_1/npc_botanical_trader_list {number:2}
-execute if score @s AzrielNPC_ConversationTimer matches 3010 run function skyblock:azr/assets/events/stage/chapter_1/npc_botanical_trader_list {number:3}
+execute if score @s AzrielNPC_ConversationTimer matches 3008 unless score @s dailydiv >= daycount dailydiv store result score @s Azr_Shop_rng1 run random value 1..6
+execute if score @s AzrielNPC_ConversationTimer matches 3008 unless score @s dailydiv >= daycount dailydiv store result score @s Azr_Shop_rng2 run random value 1..6
+execute if score @s AzrielNPC_ConversationTimer matches 3008 unless score @s dailydiv >= daycount dailydiv store result score @s Azr_Shop_rng3 run random value 1..6
+execute if score @s AzrielNPC_ConversationTimer matches 3008 unless score @s dailydiv >= daycount dailydiv run scoreboard players operation @s dailydiv = daycount dailydiv
+execute if score @s AzrielNPC_ConversationTimer matches 3008 as @a[distance=0..13,tag=azrPlayer] run function skyblock:azr/system/shop/count
+execute if score @s AzrielNPC_ConversationTimer matches 3008 run function skyblock:azr/assets/events/stage/chapter_1/npc_botanical_trader_list {number:1}
+execute if score @s AzrielNPC_ConversationTimer matches 3008 run function skyblock:azr/assets/events/stage/chapter_1/npc_botanical_trader_list {number:2}
+execute if score @s AzrielNPC_ConversationTimer matches 3008 run function skyblock:azr/assets/events/stage/chapter_1/npc_botanical_trader_list {number:3}
 
 
 execute if score @s AzrielNPC_ConversationTimer matches 3020..3200 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_305] run tag @s add azrPlayer_dialogchoice_revealed_305

@@ -91,39 +91,41 @@ execute as @s[scores={Azr_Shop=8431567}] \
 
 
 
-
-
-
 execute as @s[scores={Azr_Shop=8431571}] \
     positioned -79977 -51 12 if entity @s[distance=..13] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if score @s Azr_currency_weight matches 2.. \
     unless function skyblock:azr/system/shop/purchase/ramiel/botanical_items_beef \
     run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
 execute as @s[scores={Azr_Shop=8431572}] \
     positioned -79977 -51 12 if entity @s[distance=..13] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if score @s Azr_currency_weight matches 5.. \
     unless function skyblock:azr/system/shop/purchase/ramiel/botanical_items_iron_ingot \
     run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
 execute as @s[scores={Azr_Shop=8431573}] \
     positioned -79977 -51 12 if entity @s[distance=..13] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if score @s Azr_currency_weight matches 7.. \
     unless function skyblock:azr/system/shop/purchase/ramiel/botanical_items_gunpowder \
     run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
 execute as @s[scores={Azr_Shop=8431574}] \
     positioned -79977 -51 12 if entity @s[distance=..13] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if score @s Azr_currency_weight matches 5.. \
     unless function skyblock:azr/system/shop/purchase/ramiel/botanical_items_ink_sac \
     run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
 execute as @s[scores={Azr_Shop=8431575}] \
     positioned -79977 -51 12 if entity @s[distance=..13] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if score @s Azr_currency_weight matches 4.. \
     unless function skyblock:azr/system/shop/purchase/ramiel/botanical_items_flint \
     run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    
 execute as @s[scores={Azr_Shop=8431576}] \
     positioned -79977 -51 12 if entity @s[distance=..13] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
