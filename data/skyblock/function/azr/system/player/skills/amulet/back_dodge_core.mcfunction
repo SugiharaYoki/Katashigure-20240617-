@@ -3,10 +3,16 @@ scoreboard players remove @s AzrSariel_Amulet_BackDodge_clock 1
 
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=..40,AzrSariel_Amulet_DownKick_clock=11..20},predicate=skyblock:backward] run scoreboard players set @s AzrSariel_Amulet_BackDodge_clock 100
 
+execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=..-1},predicate=skyblock:backward] run tell @s 初步按S成功
+execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=1..5},predicate=!skyblock:backward] run tell @s 放开S成功
+execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=16..20},predicate=skyblock:forward] run tell @s 前进导致失败
+execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=16..20},predicate=skyblock:backward] run tell @s 二次按S成功
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=..-1},predicate=skyblock:backward] run scoreboard players set @s AzrSariel_Amulet_BackDodge_clock 5
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=1..5},predicate=!skyblock:backward] run scoreboard players set @s AzrSariel_Amulet_BackDodge_clock 20
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=16..20},predicate=skyblock:forward] run scoreboard players set @s AzrSariel_Amulet_BackDodge_clock -1
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=16..20},predicate=skyblock:backward] run scoreboard players set @s AzrSariel_Amulet_BackDodge_clock 100
+execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=1}] run tell @s 初步按S超时
+execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=16}] run tell @s 二次按S超时
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=15..16}] run scoreboard players set @s AzrSariel_Amulet_BackDodge_clock 0
 
 
