@@ -1,5 +1,5 @@
 $execute if score @s Azr_Shop_rng$(number) matches 1 run \
-    tellraw @a[distance=0..13,tag=azrPlayer] [{text:" - "},{text:"熟牛排  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/3 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431571"}}]
+    tellraw @a[distance=0..13,tag=azrPlayer] [{text:" - "},{text:"熟牛排  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/2 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431571"}}]
 $execute if score @s Azr_Shop_rng$(number) matches 2 run \
     tellraw @a[distance=0..13,tag=azrPlayer] [{text:" - "},{text:"铁锭  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/5 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431572"}}]
 $execute if score @s Azr_Shop_rng$(number) matches 3 run \
