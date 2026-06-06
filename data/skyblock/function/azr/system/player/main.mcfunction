@@ -62,6 +62,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_down_kick:1b}] 
 execute if items entity @s[tag=AZS_BoS05] container.* *[custom_data~{azr_amulet_light_angel:1b}] run tag @s add sprint_double_pass
 execute if items entity @s[tag=AZS_BoSB01] container.* *[custom_data~{azr_amulet_light_angel:1b}] run tag @s add back_dodge_pass
 execute if items entity @s[tag=AZS_BoS22] container.* *[custom_data~{azr_amulet_light_angel:1b}] run tag @s add down_kick_pass
+execute if entity @n[tag=AzrielMob_sonic_eye_lord,distance=..200] run tag @s remove down_kick_pass
 execute if entity @s[tag=sprint_double_pass] run function skyblock:azr/system/player/skills/amulet/sprint_double_core
 execute if entity @s[tag=back_dodge_pass] run function skyblock:azr/system/player/skills/amulet/back_dodge_core
 execute if entity @s[tag=down_kick_pass] run function skyblock:azr/system/player/skills/amulet/down_kick_core
