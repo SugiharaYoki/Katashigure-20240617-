@@ -23,6 +23,7 @@ execute if score @s AzrEntityTimer matches 2 positioned -79177 50 -16 positioned
 execute if score @s AzrEntityTimer matches 2 positioned -79177 50 -16 positioned ~-7 ~ ~-7 run summon marker ~ ~ ~ {Tags:["AzrielMob_marinus_tp_possible_destination_marker","AzrielMob_mob_marker"]}
 
 
+execute store result score @s Health run data get entity @s Health
 
 
 
