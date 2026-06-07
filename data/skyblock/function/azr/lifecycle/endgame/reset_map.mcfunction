@@ -775,6 +775,8 @@ clone -79934 69 -563 -79926 75 -556 -79934 69 -523
 #无人走道
 setblock -79748 -13 -234 minecraft:waxed_copper_chest[facing=west]{Inventory:[]}
 item replace block -79748 -13 -234 container.13 with beef 2
+setblock -79751 -9 -217 minecraft:waxed_copper_chest[facing=south]{Inventory:[]}
+item replace block -79751 -9 -217 container.13 with coal 1
 
 
 #stage13
