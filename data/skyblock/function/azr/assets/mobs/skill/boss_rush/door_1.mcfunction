@@ -113,6 +113,8 @@ execute if score @s AzrEntityTimer matches 1123 positioned -79967 -51 17 as @a[t
 execute unless entity @a[tag=azrPlayer,distance=..60] run fill -79159 77 -34 -79195 77 2 minecraft:air replace tinted_glass
 execute unless entity @a[tag=azrPlayer,distance=..60] run kill @e[tag=AzrielMob_BossRush_Target,distance=..120]
 execute unless entity @a[tag=azrPlayer,distance=..60] run kill @e[tag=AzrielMob,distance=..120]
+execute unless entity @a[tag=azrPlayer,distance=..60] run kill @e[type=marker,distance=..80]
+execute unless entity @a[tag=azrPlayer,distance=..60] run kill @e[type=item,distance=..80]
 execute unless entity @a[tag=azrPlayer,distance=..60] run stopsound @a[tag=azrShowDialog]
 execute unless entity @a[tag=azrPlayer,distance=..60] run kill @s
 execute unless entity @a[tag=azrPlayer,distance=..60] run forceload remove -79195 2 -79159 -34
