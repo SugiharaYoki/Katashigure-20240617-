@@ -771,9 +771,13 @@ clone -79925 22 -234 -79916 24 -225 -79895 22 -234
 fill -79893 -26 -304 -79888 -31 -304 air
 clone -79934 69 -563 -79926 75 -556 -79934 69 -523
 
+#第四章 
+#无人走道
+setblock -79748 -13 -234 minecraft:waxed_copper_chest[facing=west]{Inventory:[]}
+item replace block -79748 -13 -234 container.13 with beef 2
 
 
-#第四章 stage13
+#stage13
   #隐藏内房
 setblock -79789 27 -288 nether_brick_fence
 setblock -79789 28 -288 nether_brick_fence
