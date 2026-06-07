@@ -63,7 +63,7 @@ execute if score @s AzrEntityTimer matches 805 positioned -79167 50 -16 run func
 execute if score @s AzrEntityTimer matches 820 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_marinus/summon
 execute if score @s AzrEntityTimer matches 820 positioned -79187 50 -16 run tag @e[tag=AzrielMob,distance=..30,type=villager] add AzrielMob_BossRush_Target
 execute if score @s AzrEntityTimer matches 820 positioned -79187 50 -16 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
-execute if score @s AzrEntityTimer matches 820..999 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_marinus/core
+execute if score @s AzrEntityTimer matches 820..999 positioned -79167 50 -16 as @n[tag=AzrielBoss_BossRush_Marinus,distance=..50,type=villager] run function skyblock:azr/assets/mobs/skill/boss_rush/boss_marinus/core
 
 execute unless entity @a[tag=azrPlayer,distance=..60] run fill -79159 77 -34 -79195 77 2 minecraft:air replace tinted_glass
 execute unless entity @a[tag=azrPlayer,distance=..60] run kill @e[tag=AzrielMob_BossRush_Target,distance=..120]
