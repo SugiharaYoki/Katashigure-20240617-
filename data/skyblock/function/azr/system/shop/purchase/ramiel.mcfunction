@@ -146,5 +146,12 @@ execute as @s[scores={Azr_Shop=8431578}] \
     if score @s Azr_currency_weight matches 60.. \
     unless function skyblock:azr/system/shop/purchase/ramiel/botanical_charm_axe_vortex_dodge \
     run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    
+execute as @s[scores={Azr_Shop=8431579}] \
+    positioned -79977 -51 12 if entity @s[distance=..13] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s Azr_currency_weight matches 60.. \
+    unless function skyblock:azr/system/shop/purchase/ramiel/botanical_charm_thorn_crown \
+    run scoreboard players set tempPlayerShopSuccess Azr_system 1
 
 
