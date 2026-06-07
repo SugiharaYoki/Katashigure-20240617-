@@ -1,4 +1,4 @@
-function skyblock:azr/lifecycle/jump_to/ch3_boss
+function skyblock:azr/lifecycle/jump_to/ch4_start
 
 execute as @a[tag=azrPlayer] at @s unless score @s Azr_skillPoints matches 14.. run function skyblock:azr/lifecycle/jump_to/return
 
