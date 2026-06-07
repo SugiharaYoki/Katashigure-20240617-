@@ -91,6 +91,13 @@ execute as @s[scores={Azr_Shop=8431567}] \
 
 
 
+execute as @s[scores={Azr_Shop=8431570}] \
+    positioned -79977 -51 12 if entity @s[distance=..13] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s Azr_currency_weight matches 50.. \
+    unless function skyblock:azr/system/shop/purchase/ramiel/botanical_amulet_light_angel_2 \
+    run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
 execute as @s[scores={Azr_Shop=8431571}] \
     positioned -79977 -51 12 if entity @s[distance=..13] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \

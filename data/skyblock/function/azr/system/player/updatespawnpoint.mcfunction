@@ -14,6 +14,7 @@ effect give @s instant_health 1 0 true
 
 
 execute if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] if entity @s[tag=!azrPlayer_respawnanchor_standingabove] run function skyblock:azr/system/shop/reader_transportation
+execute unless items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] if items entity @s[tag=AZS_BoSB23] container.* *[custom_data~{azr_amulet_light_angel:1b}] if entity @s[tag=!azrPlayer_respawnanchor_standingabove] run function skyblock:azr/system/shop/reader_transportation
 
 
 

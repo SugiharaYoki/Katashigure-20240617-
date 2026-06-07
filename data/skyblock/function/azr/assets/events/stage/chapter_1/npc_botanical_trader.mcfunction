@@ -50,7 +50,8 @@ execute if score @s AzrielNPC_ConversationTimer matches 3006 as @a[distance=0..1
 execute if score @s AzrielNPC_ConversationTimer matches 3006 run function skyblock:azr/assets/events/stage/chapter_1/npc_botanical_trader_list {number:1}
 execute if score @s AzrielNPC_ConversationTimer matches 3006 run function skyblock:azr/assets/events/stage/chapter_1/npc_botanical_trader_list {number:2}
 execute if score @s AzrielNPC_ConversationTimer matches 3006 run function skyblock:azr/assets/events/stage/chapter_1/npc_botanical_trader_list {number:3}
-
+execute if score @s AzrielNPC_ConversationTimer matches 3006 as @a[distance=0..13,tag=azrPlayer] at @s unless items entity @s container.* *[custom_data~{azr_amulet_light_angel_2:1b}] run tellraw @s \
+     [{text:" - "},{text:"光明天使的符文 II  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/50 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431570"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n同时具有迫坠石板、退避石板、冲刺石板、枢纽石板、斥跃石板的效果",color:"white"}}}]
 
 execute if score @s AzrielNPC_ConversationTimer matches 3020..3200 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_305] run tag @s add azrPlayer_dialogchoice_revealed_305
 

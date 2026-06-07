@@ -49,7 +49,6 @@ execute if items entity @s hotbar.* *[custom_data~{azr_amulet_double_arrow:1b}] 
 execute if items entity @s container.* *[custom_data~{azr_amulet_stay_float:1b}] unless items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run function skyblock:azr/system/player/skills/amulet/stay_float_core
 execute if items entity @s[tag=AZS_BoS11] container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run function skyblock:azr/system/player/skills/amulet/stay_float_core
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_axe_vortex:1b}] run function skyblock:azr/system/player/skills/amulet/axe_vortex_core
-execute if items entity @s container.* *[custom_data~{azr_amulet_jump_boost:1b}] run function skyblock:azr/system/player/skills/amulet/jump_boost_core
 execute if entity @s[tag=AzrSariel_Amulet_AxeVortex_SweepRatio] if entity @s[predicate=!skyblock:left,predicate=!skyblock:right] run function skyblock:azr/system/player/skills/amulet/axe_vortex_unload
 execute if entity @s[tag=AzrSariel_Amulet_AxeVortex_SweepRatio] unless items entity @s hotbar.* *[custom_data~{azr_amulet_axe_vortex:1b}] run function skyblock:azr/system/player/skills/amulet/axe_vortex_unload
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_grow:1b}] run function skyblock:azr/system/player/skills/amulet/moss_grow_core
@@ -69,6 +68,12 @@ execute if entity @s[tag=down_kick_pass] run function skyblock:azr/system/player
 tag @s remove sprint_double_pass
 tag @s remove back_dodge_pass
 tag @s remove down_kick_pass
+
+execute if items entity @s container.* *[custom_data~{azr_amulet_jump_boost:1b}] run tag @s add jump_boost_pass
+execute if items entity @s[tag=AZS_BoS09] container.* *[custom_data~{azr_amulet_light_angel_2:1b}] run tag @s add jump_boost_pass
+execute if entity @s[tag=jump_boost_pass] run function skyblock:azr/system/player/skills/amulet/jump_boost_core
+tag @s remove jump_boost_pass
+
 
 execute if score stage Azr_system matches ..40 if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] if entity @s[predicate=skyblock:left,predicate=skyblock:right] run function skyblock:azr/system/player/skills/amulet/revival_star_teleport
 execute if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] if entity @s[predicate=skyblock:forward,predicate=skyblock:backward] run function skyblock:azr/system/player/skills/amulet/revival_star_quitgame
