@@ -138,6 +138,7 @@ scoreboard objectives add AzrSariel_Amulet_SprintDouble_clock dummy
 scoreboard objectives add AzrSariel_Amulet_BackDodge_clock dummy
 scoreboard objectives add AzrSariel_Amulet_DownKick_clock dummy
 scoreboard objectives add AzrSariel_Amulet_AxeVortex_cooldown dummy
+scoreboard objectives add AzrSariel_Amulet_AxeVortexDodge_cooldown dummy
 scoreboard objectives add AzrSariel_Amulet_RevivalStar_teleport dummy
 scoreboard objectives add AzrSariel_Amulet_MossSpore_cooldown dummy
 scoreboard objectives add AzrSariel_Amulet_generic_use_bow minecraft.used:minecraft.bow

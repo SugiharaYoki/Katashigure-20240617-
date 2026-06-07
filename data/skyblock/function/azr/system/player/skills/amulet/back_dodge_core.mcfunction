@@ -1,6 +1,9 @@
 execute unless score @s AzrSariel_Amulet_BackDodge_clock matches ..-49 run scoreboard players remove @s AzrSariel_Amulet_BackDodge_clock 1
 
 
+execute if items entity @s container.* *[custom_data~{azr_amulet_axe_vortex_dodge:1b}] run scoreboard players remove @s AzrSariel_Amulet_AxeVortexDodge_cooldown 1
+
+
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=..40,AzrSariel_Amulet_DownKick_clock=11..20},predicate=skyblock:backward] run scoreboard players set @s AzrSariel_Amulet_BackDodge_clock 100
 
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=-50..-30},predicate=skyblock:backward,predicate=skyblock:sprint] run scoreboard players set @s AzrSariel_Amulet_BackDodge_clock 100
@@ -10,6 +13,8 @@ execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=-29..-28},predicat
 
 
 execute if items entity @s container.* *[custom_data~{azr_amulet_jump_boost:1b}] if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=100},nbt={OnGround:0b}] run playsound minecraft:entity.wind_charge.wind_burst player @a ~ ~ ~ 0.5 2
+execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=100,AzrSariel_Amulet_AxeVortexDodge_cooldown=..0}] positioned ^ ^0.2 ^0.4 if entity @n[tag=AzrielMob,distance=..8] run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_marinus_axevortex_marker","AzrielMob_mob_marker","AzrielFriendly"]}
+execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=100,AzrSariel_Amulet_AxeVortexDodge_cooldown=..0}] positioned ^ ^0.2 ^0.4 if entity @n[tag=AzrielMob,distance=..8] run scoreboard players set @s AzrSariel_Amulet_AxeVortexDodge_cooldown 60
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=100}] positioned ^ ^1 ^0.3 run particle white_smoke ^0.8 ^0.3 ^ 0 0 0 0.05 1
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=100}] positioned ^ ^1 ^0.3 run particle white_smoke ^0.8 ^-0.3 ^ 0 0 0 0.05 1
 execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=100}] positioned ^ ^1 ^0.3 run particle white_smoke ^-0.8 ^0.3 ^ 0 0 0 0.05 1
