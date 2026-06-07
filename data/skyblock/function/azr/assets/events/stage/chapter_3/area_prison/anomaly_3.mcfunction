@@ -122,3 +122,10 @@ execute if score @s rng1 matches 1252 run tellraw @s[tag=!hasLifeVitae] {text:"�
 execute if score @s rng1 matches 1252 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..13}] Azr_skillPoints 14
 execute if score @s rng1 matches 1252 run scoreboard players reset stage_main_thread AzrTimerStack
 execute if score @s rng1 matches 1252 at @s run forceload add ~ ~
+
+execute if score @s rng1 matches 1282 as @a[distance=..20000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“这里是……地狱。”",color:"white",bold: false}]
+execute if score @s rng1 matches 1292 as @a[distance=..20000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“我到过地狱，但不是这一片区域。我现在在哪？”",color:"white",bold: false}]
+execute if score @s rng1 matches 1312 as @a[distance=..20000,tag=azrShowDialog] at @s run tellraw @s [{text:"你：",color:"aqua",bold:1b},{text:"\n“……命星的传送失效了。”",color:"white",bold: false}]
+
+
+
