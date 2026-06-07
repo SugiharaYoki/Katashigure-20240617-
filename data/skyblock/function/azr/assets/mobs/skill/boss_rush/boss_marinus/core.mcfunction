@@ -27,24 +27,24 @@ execute store result score @s Health run data get entity @s Health
 
 
 
-execute if score @s rng1 matches -370 run rotate @s facing entity @p[tag=azrPlayer]
-execute if score @s rng1 matches -220 run rotate @s facing entity @p[tag=azrPlayer]
-execute if score @s rng1 matches -160 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_marinus/move_fastshift
-execute if score @s rng1 matches -140 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_marinus/move_forward
-execute if score @s rng1 matches -120 run rotate @s facing entity @p[tag=azrPlayer]
-execute if score @s rng1 matches -20 run rotate @s facing entity @p[tag=azrPlayer]
+execute if score @s rng1 matches -70 run rotate @s facing entity @p[tag=azrPlayer]
+execute if score @s rng1 matches -50 run rotate @s facing entity @p[tag=azrPlayer]
+execute if score @s rng1 matches -40 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_marinus/move_fastshift
+execute if score @s rng1 matches -35 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_marinus/move_forward
+execute if score @s rng1 matches -30 run rotate @s facing entity @p[tag=azrPlayer]
+execute if score @s rng1 matches -5 run rotate @s facing entity @p[tag=azrPlayer]
 
-execute if score @s rng1 matches 20 at @s run scoreboard players set @s rng8 0
-execute if score @s rng1 matches 20 at @s unless block ~ ~ ~0.4 air run scoreboard players add @s rng8 1
-execute if score @s rng1 matches 20 at @s unless block ~ ~ ~-0.4 air run scoreboard players add @s rng8 1
-execute if score @s rng1 matches 20 at @s unless block ~0.4 ~ ~ air run scoreboard players add @s rng8 1
-execute if score @s rng1 matches 20 at @s unless block ~-0.4 ~ ~ air run scoreboard players add @s rng8 1
-execute if score @s rng1 matches 20 if score @s rng8 matches 2.. at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_marinus/move_tp
+execute if score @s rng1 matches 5 at @s run scoreboard players set @s rng8 0
+execute if score @s rng1 matches 5 at @s unless block ~ ~ ~0.4 air run scoreboard players add @s rng8 1
+execute if score @s rng1 matches 5 at @s unless block ~ ~ ~-0.4 air run scoreboard players add @s rng8 1
+execute if score @s rng1 matches 5 at @s unless block ~0.4 ~ ~ air run scoreboard players add @s rng8 1
+execute if score @s rng1 matches 5 at @s unless block ~-0.4 ~ ~ air run scoreboard players add @s rng8 1
+execute if score @s rng1 matches 5 if score @s rng8 matches 2.. at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_marinus/move_tp
 
-execute if score @s rng1 matches 20 store result score @s rng8 run random value 1..3
-execute if score @s rng1 matches 20 at @s if entity @a[tag=azrPlayer,distance=..2.6] store result score @s rng8 run random value 2..6
+execute if score @s rng1 matches 5 store result score @s rng8 run random value 1..3
+execute if score @s rng1 matches 5 at @s if entity @a[tag=azrPlayer,distance=..2.6] store result score @s rng8 run random value 2..6
 
 
-execute if score @s rng1 matches 20.. if score @s rng8 matches 1..3 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_marinus/attack_single_throw_harmful
-execute if score @s rng1 matches 20.. if score @s rng8 matches 4..6 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_marinus/attack_closeup
-execute if score @s rng1 matches 340.. run scoreboard players set @s rng1 -240
+execute if score @s rng1 matches 5.. if score @s rng8 matches 1..3 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_marinus/attack_single_throw_harmful
+execute if score @s rng1 matches 5.. if score @s rng8 matches 4..6 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_marinus/attack_closeup
+execute if score @s rng1 matches 68.. run scoreboard players set @s rng1 -48

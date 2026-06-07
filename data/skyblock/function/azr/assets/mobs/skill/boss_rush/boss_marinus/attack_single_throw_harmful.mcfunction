@@ -18,7 +18,7 @@ execute if score @s rng1 matches 4 if score @s[scores={rng6=1}] rng5 matches 2 r
 execute if score @s rng1 matches 4 store result score @s rng5 run random value 1..4
 execute if score @s rng1 matches 4 store result score @s[scores={Health=390..}] rng5 run random value 3..4
 execute if score @s rng1 matches 4 run scoreboard players set @s rng1 -60
-execute if score @s rng1 matches 4 if score @s rng5 matches 1 run scoreboard players set @s rng1 -300
-execute if score @s rng1 matches 4 if score @s rng5 matches 2 run scoreboard players set @s rng1 -240
-execute if score @s rng1 matches 4 if score @s rng5 matches 3 run scoreboard players set @s rng1 -140
-execute if score @s rng1 matches 4 if score @s rng5 matches 4 run scoreboard players set @s rng1 -60
+execute if score @s rng1 matches 4 if score @s rng5 matches 1 run scoreboard players set @s rng1 -75
+execute if score @s rng1 matches 4 if score @s rng5 matches 2 run scoreboard players set @s rng1 -60
+execute if score @s rng1 matches 4 if score @s rng5 matches 3 run scoreboard players set @s rng1 -35
+execute if score @s rng1 matches 4 if score @s rng5 matches 4 run scoreboard players set @s rng1 -15
