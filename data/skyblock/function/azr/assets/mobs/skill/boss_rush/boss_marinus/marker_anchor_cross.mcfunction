@@ -1,6 +1,7 @@
 
 
 scoreboard players add @s rng1 1
+scoreboard players add @s[scores={rng1=12..}] rng3 1
 
 
 
@@ -30,7 +31,28 @@ execute if score @s rng1 matches 10.. at @s rotated as @s run particle end_rod ^
 execute if score @s rng1 matches 11.. at @s rotated as @s run particle end_rod ^ ^3.5 ^-1.5 0 0 0 0 1
 execute if score @s rng1 matches 12.. at @s rotated as @s run particle end_rod ^ ^3.5 ^-2 0 0 0 0 1
 
+execute if score @s rng3 matches 16 store result score @s rng4 run random value 1..4
+
+execute if score @s[scores={rng4=1}] rng3 matches 16 rotated as @s rotated 0 0 run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","attack_throw_fixed"]}
+execute if score @s[scores={rng4=1}] rng3 matches 16 rotated as @s rotated 90 0 run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","attack_throw_fixed"]}
+execute if score @s[scores={rng4=1}] rng3 matches 16 rotated as @s rotated 180 0 run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","attack_throw_fixed"]}
+execute if score @s[scores={rng4=1}] rng3 matches 16 rotated as @s rotated 270 0 run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","attack_throw_fixed"]}
+
+execute if score @s[scores={rng4=2}] rng3 matches 16 rotated as @s rotated 0 0 rotated ~22.5 ~ run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","attack_throw_fixed"]}
+execute if score @s[scores={rng4=2}] rng3 matches 16 rotated as @s rotated 90 0 rotated ~22.5 ~ run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","attack_throw_fixed"]}
+execute if score @s[scores={rng4=2}] rng3 matches 16 rotated as @s rotated 180 0 rotated ~22.5 ~ run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","attack_throw_fixed"]}
+execute if score @s[scores={rng4=2}] rng3 matches 16 rotated as @s rotated 270 0 rotated ~22.5 ~ run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","attack_throw_fixed"]}
+
+execute if score @s[scores={rng4=3}] rng3 matches 16 rotated as @s rotated 0 0 rotated ~45 ~ run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","attack_throw_fixed"]}
+execute if score @s[scores={rng4=3}] rng3 matches 16 rotated as @s rotated 90 0 rotated ~45 ~ run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","attack_throw_fixed"]}
+execute if score @s[scores={rng4=3}] rng3 matches 16 rotated as @s rotated 180 0 rotated ~45 ~ run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","attack_throw_fixed"]}
+execute if score @s[scores={rng4=3}] rng3 matches 16 rotated as @s rotated 270 0 rotated ~45 ~ run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","attack_throw_fixed"]}
+
+execute if score @s[scores={rng4=4}] rng3 matches 16 rotated as @s rotated 0 0 rotated ~67.5 ~ run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","attack_throw_fixed"]}
+execute if score @s[scores={rng4=4}] rng3 matches 16 rotated as @s rotated 90 0 rotated ~67.5 ~ run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","attack_throw_fixed"]}
+execute if score @s[scores={rng4=4}] rng3 matches 16 rotated as @s rotated 180 0 rotated ~67.5 ~ run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","attack_throw_fixed"]}
+execute if score @s[scores={rng4=4}] rng3 matches 16 rotated as @s rotated 270 0 rotated ~67.5 ~ run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","attack_throw_fixed"]}
 
 
-
-execute if score @s rng1 matches 80 run kill @s
+execute if score @s rng3 matches 30.. run scoreboard players set @s rng3 0
+execute if score @s rng1 matches 120 run kill @s
