@@ -1,5 +1,6 @@
 
 scoreboard players add @s AzrEntityTimer 1
+scoreboard players add @s rng1 1
 
 execute if score @s AzrEntityTimer matches 2 rotated ~ 0 positioned ^ ^1.3 ^1.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_marinus_surrounding_particle_marker","AzrielMob_mob_marker"]}
 
