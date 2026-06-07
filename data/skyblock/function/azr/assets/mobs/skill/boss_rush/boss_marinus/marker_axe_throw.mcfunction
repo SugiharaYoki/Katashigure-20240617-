@@ -12,6 +12,23 @@ execute if score @s rng1 matches 1 rotated as @s[tag=!attack_throw_high] positio
 execute if score @s rng1 matches 1 rotated as @s[tag=!attack_throw_high] positioned as @s if block ~ ~-0.2 ~ air run tp @s ~ ~-0.1 ~
 execute if score @s rng1 matches 1 rotated as @s[tag=!attack_throw_high] positioned as @s if block ~ ~-0.2 ~ air run tp @s ~ ~-0.1 ~
 
+execute if score @s[ tag=attack_throw_fixed,tag=rotation_1] rng1 matches 1 run rotate @s 0 0
+execute if score @s[ tag=attack_throw_fixed,tag=rotation_2] rng1 matches 1 run rotate @s 90 0
+execute if score @s[ tag=attack_throw_fixed,tag=rotation_3] rng1 matches 1 run rotate @s 180 0
+execute if score @s[ tag=attack_throw_fixed,tag=rotation_4] rng1 matches 1 run rotate @s 270 0
+execute if score @s[ tag=attack_throw_fixed,tag=rotation_5] rng1 matches 1 run rotate @s 22.5 0
+execute if score @s[ tag=attack_throw_fixed,tag=rotation_6] rng1 matches 1 run rotate @s 112.5 0
+execute if score @s[ tag=attack_throw_fixed,tag=rotation_7] rng1 matches 1 run rotate @s 202.5 0
+execute if score @s[ tag=attack_throw_fixed,tag=rotation_8] rng1 matches 1 run rotate @s 292.5 0
+execute if score @s[ tag=attack_throw_fixed,tag=rotation_9] rng1 matches 1 run rotate @s 45 0
+execute if score @s[tag=attack_throw_fixed,tag=rotation_10] rng1 matches 1 run rotate @s 135 0
+execute if score @s[tag=attack_throw_fixed,tag=rotation_11] rng1 matches 1 run rotate @s 225 0
+execute if score @s[tag=attack_throw_fixed,tag=rotation_12] rng1 matches 1 run rotate @s 315 0
+execute if score @s[tag=attack_throw_fixed,tag=rotation_13] rng1 matches 1 run rotate @s 67.5 0
+execute if score @s[tag=attack_throw_fixed,tag=rotation_14] rng1 matches 1 run rotate @s 157.5 0
+execute if score @s[tag=attack_throw_fixed,tag=rotation_15] rng1 matches 1 run rotate @s 247.5 0
+execute if score @s[tag=attack_throw_fixed,tag=rotation_16] rng1 matches 1 run rotate @s 337.5 0
+
 execute if score @s[tag=!attack_throw_fixed] rng1 matches 1 if score @n[type=villager,tag=AzrielNPC_marinus] Health matches ..500 run rotate @s facing entity @n[type=player,tag=azrPlayer]
 execute if score @s[tag=!attack_throw_fixed] rng1 matches 2..4 if score @n[type=villager,tag=AzrielNPC_marinus] Health matches ..400 run rotate @s facing entity @n[type=player,tag=azrPlayer]
 execute if score @s[tag=!attack_throw_fixed] rng1 matches 5..8 if score @n[type=villager,tag=AzrielNPC_marinus] Health matches ..300 run rotate @s facing entity @n[type=player,tag=azrPlayer]
