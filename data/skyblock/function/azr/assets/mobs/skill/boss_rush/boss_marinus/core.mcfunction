@@ -25,7 +25,7 @@ execute if score @s AzrEntityTimer matches 2 positioned -79177 50 -16 positioned
 
 execute store result score @s Health run data get entity @s Health
 
-
+execute if score @s AzrEntityTimer matches 2 run effect give @s minecraft:resistance 60 0 true
 
 execute if score @s rng1 matches -70 run rotate @s facing entity @p[tag=azrPlayer]
 execute if score @s rng1 matches -50 run rotate @s facing entity @p[tag=azrPlayer]
