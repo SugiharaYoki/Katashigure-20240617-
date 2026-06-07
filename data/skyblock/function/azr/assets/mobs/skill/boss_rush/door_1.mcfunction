@@ -67,6 +67,7 @@ execute if score @s AzrEntityTimer matches 820 positioned -79187 50 -16 as @e[ta
 execute if score @s AzrEntityTimer matches 820..991 positioned -79167 50 -16 as @n[tag=AzrielBoss_BossRush_Marinus,distance=..50,type=villager] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_marinus/core
 
 
+execute if score @s AzrEntityTimer matches 991 run stopsound @a[distance=..150,tag=azrShowDialog] music minecraft:garden1.theguardians
 execute if score @s AzrEntityTimer matches 991 run effect give @a[distance=..150,tag=azrPlayer] minecraft:resistance 10 4 true
 execute if score @s AzrEntityTimer matches 991 run effect give @a[distance=..150,tag=azrPlayer] minecraft:regeneration 10 9 true
 execute if score @s AzrEntityTimer matches 991 run data modify entity @n[tag=AzrielBoss_BossRush_Marinus,distance=..50,type=villager] Invulnerable set value 1b
@@ -97,16 +98,17 @@ execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 10001.
 execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 10501..11000 run scoreboard players set @s rng11 40
 execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 11001.. run scoreboard players set @s rng11 30
 
+execute if score @s AzrEntityTimer matches 1122 run forceload add ~ ~
 execute if score @s AzrEntityTimer matches 1122 as @a[tag=azrPlayer,distance=..50] at @s run scoreboard players operation @s Azr_currency_weight += @n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter] rng11
 
 execute if score @s AzrEntityTimer matches 1122 as @a[tag=azrPlayer,distance=..50] at @s run tellraw @s [{text:"神庭幻台 第壹场梦",bold:true,color:"light_purple"},{text:" 试炼通过",bold:true,color:"white"},{text:"\n - 分数：",bold:false,color:"white"},{"score":{"name":"@n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter]","objective":"rng10"},color:"white"},{text:"\n - 历史最高纪录：",bold:false,color:"white"},{"score":{"name":"@s","objective":"azr_speedrun_door1"},color:"white"},{text:"\n - 获得 ",bold:false,color:"white"},{"score":{"name":"@n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter]","objective":"rng11"},bold:false,color:"white"},{text:" 恶魔砝码",bold:false,color:"white"}]
 execute if score @s AzrEntityTimer matches 1122 as @a[tag=azrShowDialog,distance=..150] at @s run tp @s -79967 -51 17 facing -79968 -51 17
-execute if score @s AzrEntityTimer matches 1122 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s run playsound minecraft:entity.creaking.death player @a ~ ~ ~ 1 0.8
-execute if score @s AzrEntityTimer matches 1122 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s run playsound minecraft:item.chorus_fruit.teleport player @a ~ ~ ~ 1 0.7
-execute if score @s AzrEntityTimer matches 1122 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s run particle portal ~ ~1 ~ 0.3 0.8 0.3 0.02 50
-execute if score @s AzrEntityTimer matches 1122 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 2 0.9 0 30
-execute if score @s AzrEntityTimer matches 1122 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s rotated ~ 0 run function skyblock:azr/assets/events/effects/player_magic_release
-execute if score @s AzrEntityTimer matches 1122 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s run playsound ui.toast.challenge_complete player @s ~ ~ ~ 1 1
+execute if score @s AzrEntityTimer matches 1123 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s run playsound minecraft:entity.creaking.death player @a ~ ~ ~ 1 0.8
+execute if score @s AzrEntityTimer matches 1123 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s run playsound minecraft:item.chorus_fruit.teleport player @a ~ ~ ~ 1 0.7
+execute if score @s AzrEntityTimer matches 1123 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s run particle portal ~ ~1 ~ 0.3 0.8 0.3 0.02 50
+execute if score @s AzrEntityTimer matches 1123 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 2 0.9 0 30
+execute if score @s AzrEntityTimer matches 1123 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s rotated ~ 0 run function skyblock:azr/assets/events/effects/player_magic_release
+execute if score @s AzrEntityTimer matches 1123 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s run playsound ui.toast.challenge_complete player @s ~ ~ ~ 1 1
 
 execute unless entity @a[tag=azrPlayer,distance=..60] run fill -79159 77 -34 -79195 77 2 minecraft:air replace tinted_glass
 execute unless entity @a[tag=azrPlayer,distance=..60] run kill @e[tag=AzrielMob_BossRush_Target,distance=..120]
