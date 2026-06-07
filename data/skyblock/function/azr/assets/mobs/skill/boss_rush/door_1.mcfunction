@@ -76,7 +76,8 @@ execute if score @s AzrEntityTimer matches 1011 run playsound minecraft:entity.v
 execute if score @s AzrEntityTimer matches 1011 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“感谢与我进行酣畅淋漓的战斗。”",color:"white"}]
 
 
-execute if score @s AzrEntityTimer matches 1022 as @a[tag=azrPlayer,distance=..20] at @s if score @s azr_speedrun_door1 >= @n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter] rng10 run scoreboard players operation @s azr_speedrun_door1 = @n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter] rng10
+execute if score @s AzrEntityTimer matches 1022 as @a[tag=azrPlayer,distance=..50] at @s unless score @s azr_speedrun_door1 matches -9999.. run scoreboard players set @s azr_speedrun_door1 99999
+execute if score @s AzrEntityTimer matches 1022 as @a[tag=azrPlayer,distance=..50] at @s if score @s azr_speedrun_door1 >= @n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter] rng10 run scoreboard players operation @s azr_speedrun_door1 = @n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter] rng10
 execute if score @s AzrEntityTimer matches 1022 if score @s rng10 matches 1..3000 run scoreboard players set @s rng11 200
 execute if score @s AzrEntityTimer matches 1022 if score @s rng10 matches 3001..3500 run scoreboard players set @s rng11 190
 execute if score @s AzrEntityTimer matches 1022 if score @s rng10 matches 3501..4000 run scoreboard players set @s rng11 180
