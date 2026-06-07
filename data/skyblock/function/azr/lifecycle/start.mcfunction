@@ -31,6 +31,13 @@ scoreboard objectives add AzrTimerAmulet_hrm dummy
 scoreboard objectives add AzrTimerAmulet_pacemaker dummy
 scoreboard objectives add Azr_Login_Identifier dummy
 scoreboard objectives add Azr_Login_Day_Strike dummy
+#门竞速
+scoreboard objectives add azr_speedrun_door1 dummy
+scoreboard objectives add azr_speedrun_door2 dummy
+scoreboard objectives add azr_speedrun_door3 dummy
+scoreboard objectives add azr_speedrun_door4 dummy
+scoreboard objectives add azr_speedrun_door5 dummy
+
 #天平两侧
 scoreboard objectives add AzrSariel_Side_Life dummy
 scoreboard objectives add AzrSariel_Side_Death dummy
