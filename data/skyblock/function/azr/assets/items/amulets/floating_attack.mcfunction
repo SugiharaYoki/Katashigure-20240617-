@@ -1,0 +1,1 @@
+give @s guster_pottery_sherd[custom_name={text:"滞空护石",italic:0b,color:"#306fc2",bold:1b},lore=[{text:"背包常效装备",italic:0b,color:"yellow",bold:1b},{text:"处于悬浮状态时，攻击力+20%",italic:0b,color:"#9eb9de"},{text:""},{text:"空中打人一时爽，一直打人一直爽。",italic:1b,color:"#586371"}],custom_data={azr_amulet:1b,azr_amulet_floating_attack:1b}]
