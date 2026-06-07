@@ -15,15 +15,21 @@ execute if score @s rng1 matches 6 if score @s[scores={rng6=1}] rng5 matches 1 r
 execute if score @s rng1 matches 6 if score @s[scores={rng6=1}] rng5 matches 2 rotated as @s rotated ~ 0 run summon marker ^ ^ ^ {Tags:["AzrielMob_bossrush_marinus_axe_throw_marker","AzrielMob_mob_marker","attack_throw_high","attack_throw_angle_left"]}
 execute if score @s rng1 matches 6 if score @s[scores={rng6=1}] rng5 matches 2 rotated as @s rotated ~ 0 run summon marker ^ ^ ^ {Tags:["AzrielMob_bossrush_marinus_axe_throw_marker","AzrielMob_mob_marker","attack_throw_high","attack_throw_angle_right"]}
 
+execute if score @s rng1 matches 7 if entity @s[scores={Health=300..}] run scoreboard players set @s rng1 19
 execute if score @s rng1 matches 12 if score @s Health matches ..430 store result score @s rng5 run random value 1..2
 execute if score @s rng1 matches 12 if score @s Health matches ..430 if score @s rng5 matches 1 rotated as @s rotated ~ 0 run summon marker ^ ^ ^ {Tags:["AzrielMob_bossrush_marinus_axe_throw_marker","AzrielMob_mob_marker"]}
 execute if score @s rng1 matches 12 if score @s Health matches ..430 if score @s rng5 matches 2 rotated as @s rotated ~ 0 run summon marker ^ ^ ^ {Tags:["AzrielMob_bossrush_marinus_axe_throw_marker","AzrielMob_mob_marker","attack_throw_high"]}
 
+execute if score @s rng1 matches 13 if entity @s[scores={Health=300..}] run scoreboard players set @s rng1 19
+execute if score @s rng1 matches 18 if score @s Health matches ..430 store result score @s rng5 run random value 1..2
+execute if score @s rng1 matches 18 if score @s Health matches ..430 if score @s rng5 matches 1 rotated as @s rotated ~ 0 run summon marker ^ ^ ^ {Tags:["AzrielMob_bossrush_marinus_axe_throw_marker","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 18 if score @s Health matches ..430 if score @s rng5 matches 2 rotated as @s rotated ~ 0 run summon marker ^ ^ ^ {Tags:["AzrielMob_bossrush_marinus_axe_throw_marker","AzrielMob_mob_marker","attack_throw_high"]}
+ 
 
-execute if score @s rng1 matches 12 store result score @s rng5 run random value 1..4
-execute if score @s rng1 matches 12 store result score @s[scores={Health=390..}] rng5 run random value 3..4
-execute if score @s rng1 matches 12 run scoreboard players set @s rng1 -60
-execute if score @s rng1 matches 12 if score @s rng5 matches 1 run scoreboard players set @s rng1 -75
-execute if score @s rng1 matches 12 if score @s rng5 matches 2 run scoreboard players set @s rng1 -60
-execute if score @s rng1 matches 12 if score @s rng5 matches 3 run scoreboard players set @s rng1 -35
-execute if score @s rng1 matches 12 if score @s rng5 matches 4 run scoreboard players set @s rng1 -15
+execute if score @s rng1 matches 19 store result score @s rng5 run random value 1..4
+execute if score @s rng1 matches 19 store result score @s[scores={Health=390..}] rng5 run random value 3..4
+execute if score @s rng1 matches 19 run scoreboard players set @s rng1 -60
+execute if score @s rng1 matches 19 if score @s rng5 matches 1 run scoreboard players set @s rng1 -75
+execute if score @s rng1 matches 19 if score @s rng5 matches 2 run scoreboard players set @s rng1 -60
+execute if score @s rng1 matches 19 if score @s rng5 matches 3 run scoreboard players set @s rng1 -35
+execute if score @s rng1 matches 19 if score @s rng5 matches 4 run scoreboard players set @s rng1 -15
