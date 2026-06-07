@@ -19,6 +19,7 @@ execute as @s[tag=AzrielMob_marinus_surrounding_particle_marker] at @s run funct
 execute as @s[tag=AzrielMob_boss_marinus_axe_throw_marker] at @s run function skyblock:azr/assets/mobs/skill/marinus/marker_axe_throw
 
 execute as @s[tag=AzrielMob_bossrush_marinus_axevortex_marker] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_marinus/marker_axevortex
+execute as @s[tag=AzrielMob_bossrush_marinus_anchor_cross_marker] at @s run say hi
 execute as @s[tag=AzrielMob_bossrush_marinus_anchor_cross_marker] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_marinus/marker_anchor_cross
 execute as @s[tag=AzrielMob_bossrush_marinus_surrounding_particle_marker] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_marinus/marker_surrounding_particle
 execute as @s[tag=AzrielMob_bossrush_marinus_axe_throw_marker] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_marinus/marker_axe_throw
