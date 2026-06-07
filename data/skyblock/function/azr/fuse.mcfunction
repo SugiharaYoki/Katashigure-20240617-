@@ -6,6 +6,8 @@ execute store result score stage AZS_SoulFrag run execute if entity @e[distance=
 tellraw @a [{text:" AzrielMarker_encounter = ",color:"white",italic:0b},{"score":{"name":"stage","objective":"AZS_SoulFrag"},color: "white",italic:1b}]
 execute store result score stage AZS_SoulFrag run execute if entity @e[distance=..10000,tag=AzrielMob_mob_marker]
 tellraw @a [{text:" AzrielMob_mob_marker = ",color:"white",italic:0b},{"score":{"name":"stage","objective":"AZS_SoulFrag"},color: "white",italic:1b}]
+execute store result score stage AZS_SoulFrag run execute if entity @e[distance=..10000]
+tellraw @a [{text:" entity = ",color:"white",italic:0b},{"score":{"name":"stage","objective":"AZS_SoulFrag"},color: "white",italic:1b}]
 execute store result score stage AZS_SoulFrag run execute if entity @e[distance=..10000,type=item]
 tellraw @a [{text:" item = ",color:"white",italic:0b},{"score":{"name":"stage","objective":"AZS_SoulFrag"},color: "white",italic:1b}]
 
