@@ -6,7 +6,7 @@ execute if score @s AzrielNPC_ConversationTimer matches 10 run tellraw @a[tag=az
 execute if score @s AzrielNPC_ConversationTimer matches 10 run scoreboard players set @s AzrielNPC_ConversationTimer 47
 
 
-execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_305] run tellraw @s [{text:" - "},{text:"交易：这周的恶魔砝码能换到什么好东西？  ",color:"#c4ffbd"},{text:"〈◆〉",bold:1b,color:"#72ff62",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30503"}}]
+execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_305] run tellraw @s [{text:" - "},{text:"交易：今天用恶魔砝码能换到什么好东西？  ",color:"#c4ffbd"},{text:"〈◆〉",bold:1b,color:"#72ff62",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30503"}}]
 execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_305] run tellraw @s [{text:" - "},{text:"询问：这里是哪里？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30501"}}]
 execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_305] run tellraw @s [{text:" - "},{text:"询问：为什么这里已经没有天使了？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30502"}}]
 
