@@ -18,6 +18,11 @@ execute as @s[tag=AzrielMob_boss_marinus_anchor_cross_marker] at @s run function
 execute as @s[tag=AzrielMob_marinus_surrounding_particle_marker] at @s run function skyblock:azr/assets/mobs/skill/marinus/marker_surrounding_particle
 execute as @s[tag=AzrielMob_boss_marinus_axe_throw_marker] at @s run function skyblock:azr/assets/mobs/skill/marinus/marker_axe_throw
 
+execute as @s[tag=AzrielMob_bossrush_marinus_axevortex_marker] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_marinus/marker_axevortex
+execute as @s[tag=AzrielMob_bossrush_marinus_anchor_cross_marker] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_marinus/marker_anchor_cross
+execute as @s[tag=AzrielMob_bossrush_marinus_surrounding_particle_marker] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_marinus/marker_surrounding_particle
+execute as @s[tag=AzrielMob_bossrush_marinus_axe_throw_marker] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_marinus/marker_axe_throw
+
 execute if entity @s[tag=AzrielMob_sonic_eye_item_display] run function skyblock:azr/assets/mobs/skill/sonic_eye_display
 execute if entity @s[tag=AzrielMob_sonic_eye_lord_item_display] run function skyblock:azr/assets/mobs/skill/sonic_eye_lord_display
 

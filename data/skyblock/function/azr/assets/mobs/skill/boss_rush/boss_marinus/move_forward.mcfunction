@@ -2,7 +2,7 @@
 execute store result score @s rng4 run random value 1..4
 execute store result score @s[scores={Health=..300}] rng4 run random value 1..8
 execute as @s at @s run playsound minecraft:entity.wind_charge.wind_burst hostile @a ~ ~ ~ 1 1.5
-execute as @s at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_marinus_axevortex_marker","AzrielMob_mob_marker"]}
+execute as @s at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_bossrush_marinus_axevortex_marker","AzrielMob_mob_marker"]}
 execute rotated as @s run rotate @s facing entity @p[tag=azrPlayer]
 execute as @s[scores={rng4=1}] at @s positioned 0.0 0 0.0 run summon marker ^-0 ^0.12 ^1.01 {Tags:["AZR_boss1_move_marker"]}
 execute as @s[scores={rng4=2}] at @s positioned 0.0 0 0.0 run summon marker ^0 ^0.12 ^-1.01 {Tags:["AZR_boss1_move_marker"]}
