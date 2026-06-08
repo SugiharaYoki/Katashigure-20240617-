@@ -1,7 +1,7 @@
 
 
 #供能区域 入口
-execute positioned -79931 36 171 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79936,y=37,z=168,dx=11,dy=4,dz=8,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79931 36 171 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79936,y=37,z=168,dx=11,dy=4,dz=8,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/events/stage/chapter_2/area_energy/entering_area_1st_time
 
   #跳跳乐
@@ -17,7 +17,7 @@ execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.
 
 #供能区域最底层
 
-execute positioned -79930 28 197 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79937,y=28,z=197,dx=8,dy=5,dz=13,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79930 28 197 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79937,y=28,z=197,dx=8,dy=5,dz=13,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79930 28 197 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
 execute positioned -79930 28 197 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79925 31 206 run function skyblock:azr/assets/mobs/floating_fire
 execute positioned -79930 28 197 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=22}] positioned -79929 31 206 run function skyblock:azr/assets/mobs/floating_fire
@@ -33,7 +33,7 @@ execute positioned -79930 28 197 as @n[tag=AzrielMarker_encounter,distance=0..0.
 
 
 #供能迷宫
-execute positioned -79955 28 195 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79955,y=28,z=195,dx=3,dy=4,dz=6,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79955 28 195 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79955,y=28,z=195,dx=3,dy=4,dz=6,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79955 28 195 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
 execute positioned -79955 28 195 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3,rng2=..10}] store result score @s rng3 run random value 1..5
 execute positioned -79955 28 195 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=4,rng2=..10,rng3=1}] positioned -79964 30 186 run function skyblock:azr/assets/mobs/floating_fire
@@ -46,7 +46,7 @@ execute positioned -79955 28 195 as @n[tag=AzrielMarker_encounter,distance=0..0.
 
 
 #小阳台
-execute positioned -79927 44 200 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79927,y=44,z=200,dx=3,dy=3,dz=4,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79927 44 200 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79927,y=44,z=200,dx=3,dy=3,dz=4,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79927 44 200 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
 execute positioned -79927 44 200 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79927 45 197 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_melee","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute positioned -79927 44 200 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79925 45 197 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_melee","AzrielMob_summon_delay","AzrielMob_level_1"]}
@@ -55,7 +55,7 @@ execute positioned -79927 44 200 as @n[tag=AzrielMarker_encounter,distance=0..0.
 
 
 #跳跃宝箱陷阱
-execute positioned -79926 32 158 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79926,y=32,z=158,dx=4,dy=3,dz=3,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79926 32 158 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79926,y=32,z=158,dx=4,dy=3,dz=3,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79926 32 158 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
 execute positioned -79926 32 158 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79928 33 164 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_fire","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute positioned -79926 32 158 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79936 30 161 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
@@ -67,11 +67,11 @@ execute positioned -79926 32 158 as @n[tag=AzrielMarker_encounter,distance=0..0.
 
 
 #boss 锅炉爷爷
-execute positioned -80008 25 200 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=0..5,tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -80008 25 200 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=0..5,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 
 
 #灵魂碎片
-execute positioned -79850 29 203 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=0..7,tag=azrPlayer,tag=!AZS_SoulFrag02] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79850 29 203 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=0..7,tag=azrPlayer,tag=!AZS_SoulFrag02] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79850 29 203 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/effects/soul_fragment {id:"02",pos:"-79841 29.2 214"}
 
 
@@ -79,7 +79,7 @@ execute positioned -79850 29 203 as @n[tag=AzrielMarker_encounter,distance=0..0.
 #树脂压缩机
 #give @a written_book[written_book_content={pages:['[["",{text:"树脂还原机 操作手册",bold:1b,color:"#865604"},"\\n\\n1. 将煤炭掷入素材接收口。\\n2. 静待机械运作完成。\\n3. 树脂将会传输至一旁的物资箱内。\\n\\n提示：请勿将杂物投入其中，机械可能会因此损坏。\\n\\n\\n",{text:"格剌西亚拉波斯大人的倾力设计！",italic:1b,color:"dark_gray"}]]'],title:"Book Title",author:"Book Author"}]
 
-execute positioned -79913 27 208 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79913,y=30,z=208,tag=azrPlayer,distance=0..8] run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79913 27 208 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79913,y=30,z=208,tag=azrPlayer,distance=0..8] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79913 27 208 as @n[type=item,distance=..1.5] at @s if entity @s[type=item,nbt={Item:{id:"minecraft:coal"}}] run scoreboard players set @n[x=-79913,y=27,z=208,tag=AzrielMarker_encounter,distance=0..1.5] rng1 1
 execute positioned -79913 27 208 as @n[type=item,distance=..1.5] at @s unless entity @s[type=item,nbt={Item:{id:"minecraft:coal"}}] run scoreboard players set @n[x=-79913,y=27,z=208,tag=AzrielMarker_encounter,distance=0..1.5] rng1 51
 execute positioned -79913 27 208 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/events/stage/chapter_2/area_energy/resin_processor

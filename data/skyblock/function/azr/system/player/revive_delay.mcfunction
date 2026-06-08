@@ -52,7 +52,7 @@ execute if entity @s[tag=AZR_Dead_EmeraldLost,gamemode=adventure,tag=AZR_Dead_Em
 tag @s remove AZR_Dead_EmeraldLost
 tag @s remove AZR_Dead_EmeraldLost_Cancelled
 
-execute if entity @s[tag=!AZR_SEAawakened] positioned -80003 7 68 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute if entity @s[tag=!AZR_SEAawakened] positioned -80003 7 68 if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute if entity @s[tag=!AZR_SEAawakened] positioned -80003 7 68 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players set @s rng1 0
 scoreboard players set @s AzrTimerReviving 0
 

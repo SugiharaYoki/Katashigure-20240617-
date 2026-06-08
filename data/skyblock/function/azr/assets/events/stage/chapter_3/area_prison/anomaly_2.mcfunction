@@ -72,8 +72,8 @@ execute as @s[scores={rng1=100}] as @a[tag=azrShowDialog] at @s run tp @s -79864
 execute as @s[scores={rng1=102}] run tellraw @a[tag=azrShowDialog,distance=0..19] [{text:"剑士：",color:"green",bold:1b},{bold: false,text:"\n“我快顶不住了！！”",color:"white"}]
 execute as @s[scores={rng1=112}] run tellraw @a[tag=azrShowDialog,distance=0..19] [{text:"牧师：",color:"green",bold:1b},{bold: false,text:"\n“大家快撤退，不要硬碰硬……！”",color:"white"}]
 #原stage12铁门现可开启
-execute as @s[scores={rng1=112}] positioned -79867 49 -128 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute as @s[scores={rng1=112}] positioned -79892 39 -145 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute as @s[scores={rng1=112}] positioned -79867 49 -128 if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute as @s[scores={rng1=112}] positioned -79892 39 -145 if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 
 execute as @s[scores={rng1=123}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎来了……！爱理莎女士！帮帮我们！”",color:"white"}]
 execute as @s[scores={rng1=143}] as @n[distance=..20,tag=AzrielNPC_stage9_prison_corelever_conversation1] at @s run tellraw @a[tag=azrShowDialog,distance=0..7] [{text:"弩手：",color:"green",bold:1b},{bold: false,text:"\n“怪物突然就从我们面前出现，我们被打得措手不及！！”",color:"white"}]

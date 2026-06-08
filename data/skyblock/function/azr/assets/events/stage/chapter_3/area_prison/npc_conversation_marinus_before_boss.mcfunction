@@ -62,7 +62,7 @@ execute if score @s rng1 matches 156 run fill -79892 42 -154 -79889 42 -154 air
 execute if score @s rng1 matches 157 run fill -79892 43 -154 -79889 43 -154 air
 execute if score @s rng1 matches 154..157 run playsound minecraft:block.iron_door.open block @a -79891.0 44 -154 3 0.5
 
-execute if score @s rng1 matches 158 positioned -79894 32 -174 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]} 
+execute if score @s rng1 matches 158 positioned -79894 32 -174 if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]} 
 
 execute if score @s rng1 matches 158 run scoreboard players set stage Azr_system 40
 
