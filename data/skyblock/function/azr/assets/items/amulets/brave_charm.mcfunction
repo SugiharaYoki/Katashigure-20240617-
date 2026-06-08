@@ -1,0 +1,1 @@
+give @s arms_up_pottery_sherd[custom_name={text:"神勇护石",italic:0b,color:"#306fc2",bold:1b},lore=[{text:"背包常效装备",italic:0b,color:"yellow",bold:1b},{text:"使自己看上去非常能打。",italic:0b,color:"#9eb9de"},{text:""},{text:"难道……只是心理安慰作用？",italic:1b,color:"#586371"}],custom_data={azr_amulet:1b,azr_amulet_brave_charm:1b}]

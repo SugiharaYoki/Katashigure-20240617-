@@ -16,3 +16,12 @@ $execute if score azr_botanical_shop Azr_Shop_rng$(number) matches 8 as @a[dista
      [{text:" - "},{text:"岚切护石  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/60 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431578"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n后撤步时，制造一串斧切旋风",color:"white"}}}]
 $execute if score azr_botanical_shop Azr_Shop_rng$(number) matches 9 as @a[distance=0..13,tag=azrPlayer] at @s run tellraw @s \
      [{text:" - "},{text:"荆冠护石  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/60 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431579"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n“孢子的加护”生效时间翻倍、枝棘反伤的最大捕捉数量+2",color:"white"}}}]
+$execute if score azr_botanical_shop Azr_Shop_rng$(number) matches 10 as @a[distance=0..13,tag=azrPlayer] at @s run tellraw @s \
+     [{text:" - "},{text:"神勇护石  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/40 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431580"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n使自己看上去非常能打。",color:"white"}}}]
+
+
+
+
+
+
+     

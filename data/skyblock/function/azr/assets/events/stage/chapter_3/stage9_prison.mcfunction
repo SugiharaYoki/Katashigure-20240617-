@@ -357,11 +357,11 @@ execute positioned -79970 33 -95 as @n[tag=AzrielMarker_encounter,distance=0..0.
 
 
 #随机野怪
-execute positioned -79918 46 -88 if score random_enemy_thread AzrTimerStack matches 2 store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..42,tag=!AzrielMob_trap]
+execute positioned -79918 46 -88 if score random_enemy_thread AzrTimerStack matches 2 run function skyblock:azr/assets/mobs/area_pool/calculate {distance:42}
 execute positioned -79918 46 -88 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 3.. if entity @a[tag=azrPlayer,distance=..28] unless entity @a[tag=azrPlayer,distance=..12] run function skyblock:azr/assets/mobs/area_pool/chapter3_prison
-execute positioned -79936 46 -107 if score random_enemy_thread AzrTimerStack matches 2 store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..42,tag=!AzrielMob_trap]
+execute positioned -79936 46 -107 if score random_enemy_thread AzrTimerStack matches 2 run function skyblock:azr/assets/mobs/area_pool/calculate {distance:42}
 execute positioned -79936 46 -107 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 3.. if entity @a[tag=azrPlayer,distance=..28] unless entity @a[tag=azrPlayer,distance=..12] run function skyblock:azr/assets/mobs/area_pool/chapter3_prison
-execute positioned -79897 48 -128 if score random_enemy_thread AzrTimerStack matches 2 store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..42,tag=!AzrielMob_trap]
+execute positioned -79897 48 -128 if score random_enemy_thread AzrTimerStack matches 2 run function skyblock:azr/assets/mobs/area_pool/calculate {distance:42}
 execute positioned -79897 48 -128 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 3.. if entity @a[tag=azrPlayer,distance=..28] unless entity @a[tag=azrPlayer,distance=..12] run function skyblock:azr/assets/mobs/area_pool/chapter3_prison
 
 
