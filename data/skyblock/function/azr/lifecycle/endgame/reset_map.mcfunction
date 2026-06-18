@@ -699,6 +699,11 @@ fill -79944 40 -105 -79942 42 -105 barrier
   setblock -79933 39 -90 lever[facing=east]
   fill -79929 39 -89 -79933 40 -89 netherite_block replace air
 
+  #天花板超隐藏宝箱
+  setblock -79949 46 -108 chest[facing=west]{Inventory:[]}
+  item replace block -79949 46 -108 container.12 with emerald 3
+  item replace block -79949 46 -108 container.14 with emerald 3
+
 #stage appetence
 setblock -79914 55 -111 minecraft:birch_button[facing=south,face=floor]
 fill -79924 54 -108 -79923 55 -108 iron_bars
