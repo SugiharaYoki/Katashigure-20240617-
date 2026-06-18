@@ -166,7 +166,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}]
 execute if items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBv] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBw] CustomName set value ' √ '
 
-execute if items entity @s container.* *[custom_data~{azr_amulet_pollusion_balancer:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop01] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop01] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_pollution_diffuser:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop02] CustomName set value ' √ '
 #execute if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop03] CustomName set value ' √ '
 #execute if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop04] CustomName set value ' √ '
