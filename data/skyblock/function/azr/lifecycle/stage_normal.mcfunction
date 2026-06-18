@@ -12,7 +12,7 @@ execute if score stage Azr_system matches 3 run scoreboard players set stage_mai
 #第二关 4
 execute if score stage Azr_system matches 4 if score playerCount Azr_system matches 1.. run function skyblock:azr/assets/events/stage/chapter_1/stage2
 #第二关-第三关 5
-execute if score stage Azr_system matches 5..43 if score playerCount Azr_system matches 1.. run function skyblock:azr/assets/events/stage/chapter_1/stage3_surrounding
+execute if score stage Azr_system matches 5..54 if score playerCount Azr_system matches 1.. run function skyblock:azr/assets/events/stage/chapter_1/stage3_surrounding
 #第三关 6/32
 execute if score stage Azr_system matches 6 run function skyblock:azr/assets/events/stage/chapter_1/stage3
 #第三关-第四关 7
@@ -32,9 +32,9 @@ execute if score stage Azr_system matches 12 run function skyblock:azr/assets/ev
 #第五关-第六关 14
 execute if score stage Azr_system matches 14 run scoreboard players set stage_main_thread AzrTimerStack 0
 #第六关 15
-execute if score stage Azr_system matches 11..49 run function skyblock:azr/assets/events/stage/chapter_2/stage6_energy
-execute if score stage Azr_system matches 11..49 run function skyblock:azr/assets/events/stage/chapter_2/stage6_library
-execute if score stage Azr_system matches 11..49 run function skyblock:azr/assets/events/stage/chapter_2/stage6_guesthall
+execute if score stage Azr_system matches 11..54 run function skyblock:azr/assets/events/stage/chapter_2/stage6_energy
+execute if score stage Azr_system matches 11..54 run function skyblock:azr/assets/events/stage/chapter_2/stage6_library
+execute if score stage Azr_system matches 11..54 run function skyblock:azr/assets/events/stage/chapter_2/stage6_guesthall
 execute if score stage Azr_system matches 15 run function skyblock:azr/assets/events/stage/chapter_2/stage6
 #第六关-第七关 16
 execute if score stage Azr_system matches 16 run function skyblock:azr/assets/events/stage/stage_event2
@@ -53,9 +53,9 @@ execute if score stage Azr_system matches 21..25 run function skyblock:azr/asset
 #BOSS2 23-24
     # azr/main.mcfunction
 #BOSS2-第九关 25
-execute if score stage Azr_system matches 26.. run function skyblock:azr/assets/events/stage/chapter_3/stage9_garden
-execute if score stage Azr_system matches 2.. run function skyblock:azr/assets/events/stage/chapter_3/stage9_dripstone
-execute if score stage Azr_system matches 26.. run function skyblock:azr/assets/events/stage/chapter_3/stage9_prison
+execute if score stage Azr_system matches 26..54 run function skyblock:azr/assets/events/stage/chapter_3/stage9_garden
+execute if score stage Azr_system matches 2..54 run function skyblock:azr/assets/events/stage/chapter_3/stage9_dripstone
+execute if score stage Azr_system matches 26..54 run function skyblock:azr/assets/events/stage/chapter_3/stage9_prison
 #第九关 27
 execute if score stage Azr_system matches 27 run function skyblock:azr/assets/events/stage/chapter_3/stage9
 #第十关
@@ -63,6 +63,11 @@ execute if score stage Azr_system matches 29 run function skyblock:azr/assets/ev
 
 #休憩所
 execute if score stage Azr_system matches 1.. run function skyblock:azr/assets/events/stage/chapter_1/stage1_angelbotany
+
+#【第四章】
+#工厂
+execute if score stage Azr_system matches 55..56 run function skyblock:azr/assets/events/stage/chapter_4/area1_factory
+
 
 
 # 强制释放临时变量
