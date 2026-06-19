@@ -72,7 +72,7 @@ execute if score @s rng1 matches 1035 run scoreboard players set @s rng1 138
 
 execute if score @s rng1 matches 2002 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng1 matches 2002 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“你没听说过？那你知道路西法是谁吗？”",color:"white"}]
-execute if score @s rng1 matches 2014 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“我一路都有听到你们提。我也知道他是上帝放逐的堕天使。”",color:"white"}]
+execute if score @s rng1 matches 2014 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“我一路都有听到你们提他。当然，我也知道他是上帝放逐的堕天使。”",color:"white"}]
 execute if score @s rng1 matches 2026 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng1 matches 2026 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“还挺有学问，没想到现在的人类连这都知道！”",color:"white"}]
 execute if score @s rng1 matches 2038 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
