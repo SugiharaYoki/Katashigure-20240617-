@@ -7,6 +7,7 @@ execute if score @s AzrEntityTimer matches 5..99 if block ~ ~ ~ warped_button[po
 
 execute if block -79791 2 -280 waxed_copper_bulb[lit=true] run scoreboard players add @s AzrEntityTimer 1
 
+execute if score @s AzrEntityTimer matches -8 run setblock ~ ~ ~ warped_button[powered=false,face=floor,facing=north]
 execute if score @s AzrEntityTimer matches -8 run fill -79791 2 -280 -79787 2 -280 minecraft:waxed_copper_bulb[lit=false]
 execute if score @s AzrEntityTimer matches -8 run setblock -79789 2 -280 minecraft:waxed_oxidized_copper_bulb[lit=false]
 
