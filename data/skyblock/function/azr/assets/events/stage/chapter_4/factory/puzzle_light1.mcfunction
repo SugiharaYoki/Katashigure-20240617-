@@ -2,7 +2,7 @@
 
 execute if block ~ ~ ~ warped_button[powered=true] if block -79791 2 -280 waxed_copper_bulb[lit=false] run setblock -79791 2 -280 waxed_copper_bulb[lit=true]
 execute unless score @s AzrEntityTimer matches 5.. if block ~ ~ ~ warped_button[powered=true] if block -79791 2 -280 waxed_copper_bulb[lit=true] run setblock ~ ~ ~ warped_button[powered=false,face=floor,facing=north]
-execute if score @s AzrEntityTimer matches 14..17 if block ~ ~ ~ warped_button[powered=true] run scoreboard players set @s AzrEntityTimer 100
+execute if score @s AzrEntityTimer matches 10..13 if block ~ ~ ~ warped_button[powered=true] run scoreboard players set @s AzrEntityTimer 100
 execute if score @s AzrEntityTimer matches 5..99 if block ~ ~ ~ warped_button[powered=true] run scoreboard players set @s AzrEntityTimer -8
 
 
