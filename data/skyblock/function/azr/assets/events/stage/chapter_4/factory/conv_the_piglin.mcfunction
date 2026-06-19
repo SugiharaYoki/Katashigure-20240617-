@@ -24,19 +24,19 @@ execute as @s[scores={rng1=55}] run tellraw @a[tag=azrShowDialog] [{text:"你：
 execute as @s[scores={rng1=63}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“我该怎么去神庭？”",color:"white"}]
 execute as @s[scores={rng1=71}] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=71}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“就你还去神庭？细胳膊细腿的。你真要去的话，最近的传送门就在森林的另一头。”",color:"white"}]
-execute as @s[scores={rng1=81}] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute as @s[scores={rng1=81}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“但是……但是！！你不会想现在去的。路西法的反抗军快把彼列的军队干翻了。你现在去就是送死。”",color:"white"}]
-execute as @s[scores={rng1=91}] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute as @s[scores={rng1=91}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“而且我自己都被困在这里这么久了。工厂为了阻止路西法的军队走这条道，关闭了工厂大门。”",color:"white"}]
-execute as @s[scores={rng1=101}] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute as @s[scores={rng1=101}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“……对啊，我出不去是因为需要两个人才能开门。你和我合作，咱们说不定就能把门打开了。”",color:"white"}]
-execute as @s[scores={rng1=110}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“听上去很麻烦。”",color:"white"}]
-execute as @s[scores={rng1=118}] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute as @s[scores={rng1=118}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“不麻烦不麻烦，我相信你很聪明。那玩意就是个等待正确时机的操作仪器，但控制器在这层楼，门在上面那层。我没法有丝分裂，所以我一个人开不了。”",color:"white"}]
-execute as @s[scores={rng1=121}] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute as @s[scores={rng1=121}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“你可以上楼看看。控制室有大喇叭，你可以给我打信号灯，我来操作，你来看时机。”",color:"white"}]
+execute as @s[scores={rng1=83}] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=83}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“但是……但是！！你不会想现在去的。路西法的反抗军快把彼列的军队干翻了。你现在去就是送死。”",color:"white"}]
+execute as @s[scores={rng1=95}] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=95}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“而且我自己都被困在这里这么久了。工厂为了阻止路西法的军队走这条道，关闭了工厂大门。”",color:"white"}]
+execute as @s[scores={rng1=107}] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=107}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“……对啊，我出不去是因为需要两个人才能开门。你和我合作，咱们说不定就能把门打开了。”",color:"white"}]
+execute as @s[scores={rng1=117}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“听上去很麻烦。”",color:"white"}]
+execute as @s[scores={rng1=125}] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=125}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“不麻烦不麻烦，我相信你很聪明。那玩意就是个等待正确时机的操作仪器，但控制器在这层楼，门在上面那层。我没法有丝分裂，所以我一个人开不了。”",color:"white"}]
+execute as @s[scores={rng1=136}] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=136}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“你可以上楼看看。控制室有大喇叭，你可以给我打信号灯，我来操作，你来看时机。”",color:"white"}]
 
-execute as @s[scores={rng1=121..300}] run scoreboard players add @s rng2 1
+execute as @s[scores={rng1=137..300}] run scoreboard players add @s rng2 1
 
 execute as @s[scores={rng2=20}] at @s run tp @s -79800 -6 -276
 execute as @s[scores={rng2=59}] at @s run tp @s -79796.99 -6.00 -288.35
@@ -53,12 +53,12 @@ execute as @s[scores={rng2=79}] positioned -79795 7 -278 run tellraw @a[tag=azrS
 
 
 
-execute if score @s rng1 matches 131..999 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_306] run tellraw @s [{text:" - "},{text:"询问：你为什么没能出去？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30601"}}]
-execute if score @s rng1 matches 131..999 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_306] run tellraw @s [{text:" - "},{text:"询问：反抗军是怎么一回事？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30602"}}]
+execute if score @s rng1 matches 139..999 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_306] run tellraw @s [{text:" - "},{text:"询问：你为什么没能出去？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30601"}}]
+execute if score @s rng1 matches 139..999 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_306] run tellraw @s [{text:" - "},{text:"询问：反抗军是怎么一回事？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30602"}}]
 
-execute if score @s rng1 matches 131..999 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_306] run tag @s add azrPlayer_dialogchoice_revealed_306
-execute if score @s rng1 matches 131..999 as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_306] run tag @s remove azrPlayer_dialogchoice_revealed_306
-execute if score @s rng1 matches 131 run scoreboard players set @s rng1 130
+execute if score @s rng1 matches 139..999 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_306] run tag @s add azrPlayer_dialogchoice_revealed_306
+execute if score @s rng1 matches 139..999 as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_306] run tag @s remove azrPlayer_dialogchoice_revealed_306
+execute if score @s rng1 matches 139 run scoreboard players set @s rng1 138
 
 execute if score @s rng1 matches 1002 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng1 matches 1002 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“如你所见……我太胖了。”",color:"white"}]
@@ -67,7 +67,7 @@ execute if score @s rng1 matches 1014 run tellraw @a[tag=azrShowDialog] [{text:"
 execute if score @s rng1 matches 1026 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng1 matches 1026 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“不知道我的同事们现在逃到了哪里。”",color:"white"}]
 execute if score @s rng1 matches 1035 run tag @a[tag=azrPlayer] remove azrPlayer_dialogchoice_revealed_306
-execute if score @s rng1 matches 1035 run scoreboard players set @s rng1 130
+execute if score @s rng1 matches 1035 run scoreboard players set @s rng1 138
 
 
 execute if score @s rng1 matches 2002 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
@@ -82,5 +82,5 @@ execute if score @s rng1 matches 2050 run tellraw @a[tag=azrShowDialog] [{text:"
 execute if score @s rng1 matches 2062 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng1 matches 2062 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“不过大家没料到率领叛军的是大将军路西法。而且他不仅要清算彼列，还想将根源也除掉：杀了天使长沙利叶。”",color:"white"}]
 execute if score @s rng1 matches 2069 run tag @a[tag=azrPlayer] remove azrPlayer_dialogchoice_revealed_306
-execute if score @s rng1 matches 2069 run scoreboard players set @s rng1 130
+execute if score @s rng1 matches 2069 run scoreboard players set @s rng1 138
 
