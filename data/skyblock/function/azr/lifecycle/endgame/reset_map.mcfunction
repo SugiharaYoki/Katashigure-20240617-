@@ -784,6 +784,20 @@ item replace block -79748 -13 -234 container.13 with beef 2
 setblock -79751 -9 -217 minecraft:waxed_copper_chest[facing=south]{Inventory:[]}
 item replace block -79751 -9 -217 container.13 with coal 1
 
+#工厂
+  #灯1
+  fill -79791 2 -280 -79787 2 -280 minecraft:waxed_copper_bulb[lit=false]
+  setblock -79789 2 -280 minecraft:waxed_oxidized_copper_bulb[lit=false]
+
+
+
+
+
+
+
+
+
+
 
 #stage13
   #隐藏内房
