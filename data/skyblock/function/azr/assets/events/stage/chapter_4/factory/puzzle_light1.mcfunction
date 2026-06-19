@@ -18,5 +18,5 @@ execute if score @s AzrEntityTimer matches 18 run setblock -79787 2 -280 waxed_c
 
 
 
-execute if block ~ ~ ~ warped_button[powered=true] run setblock ~ ~ ~ warped_button[powered=false,face=floor,facing=east]
+execute if block ~ ~ ~ warped_button[powered=true] run setblock ~ ~ ~ warped_button[powered=false,face=floor,facing=north]
 
