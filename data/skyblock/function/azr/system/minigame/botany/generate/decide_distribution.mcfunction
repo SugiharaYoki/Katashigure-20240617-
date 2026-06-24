@@ -68,7 +68,7 @@ execute store result score @s rng1 run random value 1..8
 execute store result score @s rng2 run random value 1..3
 execute at @s[scores={rng1=1..7,rng2=1..2}] positioned ~03 ~00 ~01 run setblock ~ ~ ~ green_concrete
 execute at @s[scores={rng1=1..7,rng2=3}] positioned ~03 ~00 ~01 run setblock ~ ~ ~ yellow_concrete
-execute store result score @s rng1 run random value 1..8
+execute store result score @s rng1 run random value 1..2
 execute store result score @s rng2 run random value 1..3
 execute at @s[scores={rng1=1..7,rng2=1..2}] positioned ~03 ~00 ~00 run setblock ~ ~ ~ green_concrete
 execute at @s[scores={rng1=1..7,rng2=3}] positioned ~03 ~00 ~00 run setblock ~ ~ ~ yellow_concrete
