@@ -51,7 +51,7 @@ kill @e[tag=generate_controller_decide_distribution,type=marker]
 
 
 #——测试
-kill @e[tag=azr_minigame_botany,type=marker]
+#kill @e[tag=azr_minigame_botany,type=marker]
 #——
 forceload remove -79120 222 -79455 118
 

@@ -2,7 +2,7 @@
 
 
 
-execute positioned -79139 -54 217 at @n[tag=generate_controller_decide_distribution,distance=..3] positioned ~ ~ ~ if block ~ ~ ~ blue_concrete at @s run \
+execute positioned -79139 -54 217 at @n[tag=generate_controller_decide_distribution,distance=..8] positioned ~ ~ ~ if block ~ ~ ~ blue_concrete at @s run \
     summon marker ~ ~ ~ {Tags:["azr_minigame_botany","room_unit","entrance"]}
 
 
