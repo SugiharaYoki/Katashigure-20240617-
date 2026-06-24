@@ -22,24 +22,24 @@ function skyblock:azr/system/minigame/botany/generate/decide_type_withz {x_board
 execute positioned -79455 0 160 as @n[tag=room_origin,distance=..3] at @s run function skyblock:azr/system/minigame/botany/generate/decide_rotation
 
 #——测试
-execute as @e[type=marker,tag=room_unit,distance=..150] at @s if block ~ ~ ~ air if entity @s[tag=n] run setblock ~ ~ ~ green_concrete
-execute as @e[type=marker,tag=room_unit,distance=..150] at @s if block ~ ~ ~ air if entity @s[tag=e] run setblock ~ ~ ~ red_concrete
-execute as @e[type=marker,tag=room_unit,distance=..150] at @s if block ~ ~ ~ air if entity @s[tag=w] run setblock ~ ~ ~ yellow_concrete
-execute as @e[type=marker,tag=room_unit,distance=..150] at @s if block ~ ~ ~ air if entity @s[tag=s] run setblock ~ ~ ~ blue_concrete
+execute as @e[type=marker,tag=room_unit,distance=..150] at @s if entity @s[tag=n] run setblock ~ ~ ~ green_concrete
+execute as @e[type=marker,tag=room_unit,distance=..150] at @s if entity @s[tag=e] run setblock ~ ~ ~ red_concrete
+execute as @e[type=marker,tag=room_unit,distance=..150] at @s if entity @s[tag=w] run setblock ~ ~ ~ yellow_concrete
+execute as @e[type=marker,tag=room_unit,distance=..150] at @s if entity @s[tag=s] run setblock ~ ~ ~ blue_concrete
 
-execute as @e[type=marker,tag=room_unit,distance=..150] at @s if block ~ ~ ~ air if entity @s[tag=ne] run setblock ~ ~ ~ red_stained_glass
-execute as @e[type=marker,tag=room_unit,distance=..150] at @s if block ~ ~ ~ air if entity @s[tag=nw] run setblock ~ ~ ~ orange_stained_glass
-execute as @e[type=marker,tag=room_unit,distance=..150] at @s if block ~ ~ ~ air if entity @s[tag=ns] run setblock ~ ~ ~ yellow_stained_glass
-execute as @e[type=marker,tag=room_unit,distance=..150] at @s if block ~ ~ ~ air if entity @s[tag=ew] run setblock ~ ~ ~ green_stained_glass
-execute as @e[type=marker,tag=room_unit,distance=..150] at @s if block ~ ~ ~ air if entity @s[tag=es] run setblock ~ ~ ~ cyan_stained_glass
-execute as @e[type=marker,tag=room_unit,distance=..150] at @s if block ~ ~ ~ air if entity @s[tag=ws] run setblock ~ ~ ~ blue_stained_glass
+execute as @e[type=marker,tag=room_unit,distance=..150] at @s if entity @s[tag=ne] run setblock ~ ~ ~ red_stained_glass
+execute as @e[type=marker,tag=room_unit,distance=..150] at @s if entity @s[tag=nw] run setblock ~ ~ ~ orange_stained_glass
+execute as @e[type=marker,tag=room_unit,distance=..150] at @s if entity @s[tag=ns] run setblock ~ ~ ~ yellow_stained_glass
+execute as @e[type=marker,tag=room_unit,distance=..150] at @s if entity @s[tag=ew] run setblock ~ ~ ~ green_stained_glass
+execute as @e[type=marker,tag=room_unit,distance=..150] at @s if entity @s[tag=es] run setblock ~ ~ ~ cyan_stained_glass
+execute as @e[type=marker,tag=room_unit,distance=..150] at @s if entity @s[tag=ws] run setblock ~ ~ ~ blue_stained_glass
 
-execute as @e[type=marker,tag=room_unit,distance=..150] at @s if block ~ ~ ~ air if entity @s[tag=new] run setblock ~ ~ ~ tinted_glass
-execute as @e[type=marker,tag=room_unit,distance=..150] at @s if block ~ ~ ~ air if entity @s[tag=nws] run setblock ~ ~ ~ tinted_glass
-execute as @e[type=marker,tag=room_unit,distance=..150] at @s if block ~ ~ ~ air if entity @s[tag=nes] run setblock ~ ~ ~ tinted_glass
-execute as @e[type=marker,tag=room_unit,distance=..150] at @s if block ~ ~ ~ air if entity @s[tag=ews] run setblock ~ ~ ~ tinted_glass
+execute as @e[type=marker,tag=room_unit,distance=..150] at @s if entity @s[tag=new] run setblock ~ ~ ~ tinted_glass
+execute as @e[type=marker,tag=room_unit,distance=..150] at @s if entity @s[tag=nws] run setblock ~ ~ ~ tinted_glass
+execute as @e[type=marker,tag=room_unit,distance=..150] at @s if entity @s[tag=nes] run setblock ~ ~ ~ tinted_glass
+execute as @e[type=marker,tag=room_unit,distance=..150] at @s if entity @s[tag=ews] run setblock ~ ~ ~ tinted_glass
 
-execute as @e[type=marker,tag=room_unit,distance=..150] at @s if block ~ ~ ~ air if entity @s[tag=news] run setblock ~ ~ ~ verdant_froglight
+execute as @e[type=marker,tag=room_unit,distance=..150] at @s if entity @s[tag=news] run setblock ~ ~ ~ verdant_froglight
 #——
 
 
