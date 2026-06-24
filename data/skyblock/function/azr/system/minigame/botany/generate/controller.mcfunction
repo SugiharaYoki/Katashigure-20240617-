@@ -1,4 +1,4 @@
-
+forceload add -79120 222 -79455 118
 execute positioned -79139 -54 217 run summon marker ~ ~ ~ {Tags:["azr_minigame_botany","generate_controller_decide_distribution"]}
 
 execute positioned -79139 -54 217 as @n[tag=generate_controller_decide_distribution,distance=..3] at @s run function skyblock:azr/system/minigame/botany/generate/decide_distribution
@@ -53,7 +53,7 @@ kill @e[tag=generate_controller_decide_distribution,type=marker]
 #——测试
 kill @e[tag=azr_minigame_botany,type=marker]
 #——
-
+forceload remove -79120 222 -79455 118
 
 
 
