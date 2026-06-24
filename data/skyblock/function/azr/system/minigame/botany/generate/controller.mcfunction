@@ -7,7 +7,7 @@ execute positioned -79139 -54 217 as @n[tag=generate_controller_decide_distribut
 execute positioned -79455 0 160 run summon marker ~ ~ ~ {Tags:["azr_minigame_botany","room_origin"]}
 execute positioned -79455 0 160 as @n[tag=room_origin,distance=..3] at @s run function skyblock:azr/system/minigame/botany/generate/decide_type
 
-function skyblock:azr/system/minigame/botany/generate/decide_type_withz {x_board:0,x_room:00}
+function skyblock:azr/system/minigame/botany/generate/decide_type_withz {x_board:0,x_room:0}
 function skyblock:azr/system/minigame/botany/generate/decide_type_withz {x_board:1,x_room:20}
 function skyblock:azr/system/minigame/botany/generate/decide_type_withz {x_board:2,x_room:40}
 function skyblock:azr/system/minigame/botany/generate/decide_type_withz {x_board:3,x_room:60}
