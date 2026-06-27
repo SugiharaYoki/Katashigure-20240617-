@@ -804,9 +804,22 @@ item replace block -79751 -9 -217 container.13 with coal 1
   setblock -79766 2 -271 minecraft:waxed_oxidized_copper_bulb[lit=false]
   fill -79762 1 -276 -79762 2 -275 waxed_copper_bars
 
+setblock -79744 2 -293 minecraft:waxed_copper_chest[facing=north]{Inventory:[]}
+item replace block -79744 2 -293 container.12 with cooked_beef 2
+item replace block -79744 2 -293 container.14 with golden_nugget 1
+  #我们还是违抗了反抗军的命令。并非为了彼列的政权，并非为了即将在神庭发生的大战。
+  #车间博物馆是为了展示那些为魔界带来和平的工业革命科技才建立。
+  #这里不该主动或被动参与任何战争。
+  #若是车间博物馆终将毁于战火，我们愿主动将此处提前毁灭。
 
+  #致第11辖区“车间博物馆”的管理人员，你们的人形自动运货器械已被彼列王征用。
+  #这都是为了崇高的守卫战，你们应该为此感到荣耀。
+  #本次任务完成后，“车间博物馆”将获得荣誉徽章，并收到3,000金币的补贴。
+  #笔迹：他妈的，才三千金币，打发要饭的吗？博物馆50多口工作人员嗷嗷待哺呢。
 
-
+  #这里的金矿储量并不低，但车间博物馆是象征和平的私立博物馆。
+  #金矿一般用于战时储备，现在的科技水平已经用不到那么多的金子。
+  #林场对面就是12区的金窟，那里现在建立了巨大的矿产链，也用不到咱们博物馆下方的资源了。
 
 
 

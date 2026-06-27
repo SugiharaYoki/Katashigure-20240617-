@@ -47,6 +47,7 @@ execute positioned -79778 2 -281 if score @s AzrEntityTimer matches 201 run fill
 execute positioned -79778 2 -281 if score @s AzrEntityTimer matches 201 positioned -79769 1 -288 run function skyblock:azr/assets/mobs/magma_cube_block
 execute positioned -79778 2 -281 if score @s AzrEntityTimer matches 201 positioned -79756 1 -280 run function skyblock:azr/assets/mobs/magma_cube_block
 execute positioned -79778 2 -281 if score @s AzrEntityTimer matches 201 positioned -79771 1 -281 run function skyblock:azr/assets/mobs/magma_cube_mini
+execute positioned -79778 2 -281 if score @s AzrEntityTimer matches 201 positioned -79745 2 -304 run function skyblock:azr/assets/mobs/utility_bat
 
 
 
