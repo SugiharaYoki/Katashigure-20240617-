@@ -37,6 +37,8 @@ execute positioned -79778 2 -281 if score @s AzrEntityTimer matches 101 run play
 
 execute positioned -79778 2 -281 if score @s AzrEntityTimer matches 111..130 run scoreboard players set @s AzrEntityTimer 111
 execute positioned -79778 2 -281 if score @s AzrEntityTimer matches 101..130 if block -79777 2 -281 waxed_copper_bulb[lit=false] if block -79779 2 -270 waxed_copper_bulb[lit=false] if block -79778 2 -281 waxed_oxidized_copper_bulb[lit=true] if block -79780 2 -270 waxed_oxidized_copper_bulb[lit=true] run scoreboard players set @s AzrEntityTimer 200
+execute positioned -79778 2 -270 if score @s AzrEntityTimer matches 111..130 unless block -79778 2 -281 waxed_oxidized_copper_bulb[lit=true] run scoreboard players set @s AzrEntityTimer -8
+execute positioned -79778 2 -270 if score @s AzrEntityTimer matches 111..130 if block -79777 2 -281 oxidized_copper_bulb[lit=true] run scoreboard players set @s AzrEntityTimer -8
 
 execute positioned -79778 2 -281 if score @s AzrEntityTimer matches 201 positioned -79773.56 2.90 -275.00 run playsound minecraft:block.iron_door.open ambient @a ~ ~ ~ 3 0.3
 execute positioned -79778 2 -281 if score @s AzrEntityTimer matches 201 run fill -79774 1 -276 -79774 2 -275 air

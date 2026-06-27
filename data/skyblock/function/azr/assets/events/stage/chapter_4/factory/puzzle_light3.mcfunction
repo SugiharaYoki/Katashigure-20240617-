@@ -38,3 +38,6 @@ execute positioned -79778 2 -270 if score @s AzrEntityTimer matches 101 run play
 #execute positioned -79778 2 -281 if score @s AzrEntityTimer matches 101 run fill -79774 1 -276 -79774 2 -275 air
 
 
+execute positioned -79778 2 -270 if score @s AzrEntityTimer matches 111..130 run scoreboard players set @s AzrEntityTimer 111
+execute positioned -79778 2 -270 if score @s AzrEntityTimer matches 111..130 unless block -79780 2 -270 waxed_oxidized_copper_bulb[lit=true] run scoreboard players set @s AzrEntityTimer -8
+execute positioned -79778 2 -270 if score @s AzrEntityTimer matches 111..130 if block -79779 2 -270 oxidized_copper_bulb[lit=true] run scoreboard players set @s AzrEntityTimer -8
