@@ -807,7 +807,7 @@ item replace block -79751 -9 -217 container.13 with coal 1
 setblock -79744 2 -293 minecraft:waxed_copper_chest[facing=north]{Inventory:[]}
 item replace block -79744 2 -293 container.12 with cooked_beef 2
 item replace block -79744 2 -293 container.14 with golden_nugget 1
-  #我们还是违抗了反抗军的命令。并非为了彼列的政权，并非为了即将在神庭发生的大战。
+  #我们还是违抗了反抗军的命令。并非服从彼列的政权，并非为了即将在神庭发生的大战。
   #车间博物馆是为了展示那些为魔界带来和平的工业革命科技才建立。
   #这里不该主动或被动参与任何战争。
   #若是车间博物馆终将毁于战火，我们愿主动将此处提前毁灭。
