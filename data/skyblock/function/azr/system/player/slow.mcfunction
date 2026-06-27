@@ -59,4 +59,4 @@ execute at @s run function skyblock:azr/assets/events/stage/area_title_detect
 
 scoreboard players reset @s AzrSariel_Amulet_generic_damage_taken
 
-execute if items entity @s weapon.offhand *[custom_data~{azr_offhand_function:1b}] run clear @s weapon.offhand
+execute if items entity @s weapon.offhand *[custom_data~{azr_offhand_function:1b}] run item replace entity @s weapon.offhand with air
