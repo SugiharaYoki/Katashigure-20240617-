@@ -345,3 +345,4 @@ execute if score @s rng1 matches 64.. run clear @s arrow 1
 
 
 
+function skyblock:azr/assets/items/amulets/arrow_savior
