@@ -43,6 +43,7 @@ execute as @s[scores={rng2=20}] at @s run tp @s -79800 -6 -276
 execute as @s[scores={rng2=59}] at @s run tp @s -79796.99 -6.00 -288.35
 
 execute as @s[scores={rng2=57..58}] at @s run scoreboard players set @s rng2 57
+execute as @s[scores={rng2=..58}] at @s if entity @a[x=-79792,y=0,z=-280,dx=5,dy=5,dz=8] run scoreboard players set @s rng1 137
 execute as @s[scores={rng2=..58}] at @s if entity @a[x=-79792,y=0,z=-280,dx=5,dy=5,dz=8] run scoreboard players set @s rng2 59
 execute as @s[scores={rng2=59}] positioned -79795 7 -278 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng2=59}] positioned -79795 7 -278 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“你应该已经看到仪器了。按下仪器上的按钮之后，灯会挨个亮起。”",color:"white"}]
