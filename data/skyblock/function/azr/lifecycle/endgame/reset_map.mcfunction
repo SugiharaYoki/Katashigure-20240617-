@@ -793,7 +793,8 @@ item replace block -79751 -9 -217 container.13 with coal 1
   fill -79782 2 -281 -79776 2 -281 minecraft:waxed_copper_bulb[lit=false]
   fill -79782 2 -270 -79776 2 -270 minecraft:waxed_copper_bulb[lit=false]
 
-  setblock -79789 2 -280 minecraft:waxed_oxidized_copper_bulb[lit=false]
+  setblock -79778 2 -281 minecraft:waxed_oxidized_copper_bulb[lit=false]
+  setblock -79780 2 -270 minecraft:waxed_oxidized_copper_bulb[lit=false]
   fill -79774 1 -275 -79774 2 -276 waxed_copper_bars
 
 
