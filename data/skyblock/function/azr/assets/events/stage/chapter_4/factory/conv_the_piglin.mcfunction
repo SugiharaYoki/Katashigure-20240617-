@@ -44,12 +44,16 @@ execute as @s[scores={rng2=59}] at @s run tp @s -79796.99 -6.00 -288.35
 execute as @s[scores={rng2=57..58}] at @s run scoreboard players set @s rng2 57
 execute as @s[scores={rng2=57..58}] at @s if entity @a[x=-79792,y=0,z=-272,dx=5,dy=5,dz=5] run scoreboard players set @s rng2 59
 execute as @s[scores={rng2=59}] positioned -79795 7 -278 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute as @s[scores={rng2=59}] positioned -79795 7 -278 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“你应该已经看到仪器了。按下按钮之后它灯会往另一头挨个亮起。”",color:"white"}]
+execute as @s[scores={rng2=59}] positioned -79795 7 -278 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“你应该已经看到仪器了。按下仪器上的按钮之后，灯会挨个亮起。”",color:"white"}]
 execute as @s[scores={rng2=69}] positioned -79795 7 -278 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng2=69}] positioned -79795 7 -278 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“你得在灯亮到青色方块时再次按下按钮，这样就能成功。”",color:"white"}]
 execute as @s[scores={rng2=79}] positioned -79795 7 -278 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng2=79}] positioned -79795 7 -278 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“简单吧？可惜那按钮只是个通讯器，操作得在我这里执行。所以我一个人操作不了。”",color:"white"}]
 
+execute as @s[scores={rng2=90..91}] at @s run scoreboard players set @s rng2 90
+execute as @s[scores={rng2=1..91}] at @s if entity @a[x=-79784,y=0,z=-272,dx=5,dy=5,dz=8] run scoreboard players set @s rng2 200
+execute as @s[scores={rng2=201}] positioned -79795 7 -278 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng2=201}] positioned -79795 7 -278 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“这两个仪器会一起被启动，你得同时管两边。”",color:"white"}]
 
 
 
