@@ -28,6 +28,7 @@ execute if entity @s[tag=AzrielMob_zombie_villager_cleric] run function skyblock
 #功能性
 execute if entity @s[tag=AzrielMob_utility_bat] run function skyblock:azr/assets/mobs/skill/utility_bat
 execute if entity @s[tag=AzrielMob_magma_cube_block] run function skyblock:azr/assets/mobs/skill/magma_cube_block
+execute if entity @s[tag=AzrielMob_magma_cube_mini] run function skyblock:azr/assets/mobs/skill/magma_cube_mini
 
 
 #精英怪
