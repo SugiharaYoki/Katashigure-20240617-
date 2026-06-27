@@ -3,9 +3,9 @@ execute unless score @s rng1 matches 5.. run scoreboard players add @s rng1 1
 
 
 
-execute if score @s rng1 matches 5.. if entity @a[tag=azrPlayer,distance=..3.2,predicate=skyblock:sneak] run scoreboard players add @s rng1 2
+execute if score @s rng1 matches 5.. if entity @a[tag=azrPlayer,distance=..3.2,predicate=skyblock:sneak] run scoreboard players add @s rng1 1
 execute if score @s rng1 matches 5.. unless entity @a[tag=azrPlayer,distance=..3.2] run scoreboard players set @s rng1 5
-execute if score @s rng1 matches 5.. if entity @a[tag=azrPlayer,distance=..2.8,predicate=!skyblock:sneak] run scoreboard players add @s rng1 2
+execute if score @s rng1 matches 5.. if entity @a[tag=azrPlayer,distance=..2.8,predicate=!skyblock:sneak] run scoreboard players add @s rng1 1
 
 execute if score @s rng1 matches 2 store result score @s rng2 run random value 1..3
 execute if score @s rng1 matches 2 store result score @s rng3 run random value 1..3
