@@ -2,7 +2,8 @@ scoreboard players add @s rng1 1
 
 
 
-execute if score @s rng1 matches 5.. unless entity @a[tag=azrPlayer,distance=..4] run scoreboard players remove @s rng1 2
+execute if score @s rng1 matches 5.. unless entity @a[tag=azrPlayer,distance=..3.2,predicate=!skyblock:sneak] run scoreboard players remove @s rng1 2
+execute if score @s rng1 matches 5.. unless entity @a[tag=azrPlayer,distance=..2.8,predicate=skyblock:sneak] run scoreboard players remove @s rng1 2
 
 execute if score @s rng1 matches 2 store result score @s rng2 run random value 1..3
 execute if score @s rng1 matches 2 store result score @s rng3 run random value 1..3
@@ -14,9 +15,9 @@ execute if score @s rng1 matches 2 if score @s rng2 matches 3 if score @s rng3 m
 execute if score @s rng1 matches 2 if score @s rng2 matches 3 if score @s rng3 matches 3 run fill ~ ~ ~ ~ ~ ~ cracked_nether_bricks replace air
 
 
-execute if score @s rng1 matches 6 run playsound minecraft:block.lava.pop block @a ~ ~ ~ 0.7 1.3
-execute if score @s rng1 matches 9 run playsound minecraft:block.lava.pop block @a ~ ~ ~ 0.7 1.32
-execute if score @s rng1 matches 12 run playsound minecraft:block.lava.pop block @a ~ ~ ~ 0.7 1.33
+execute if score @s rng1 matches 6 run playsound minecraft:block.lava.pop block @a ~ ~ ~ 0.4 1.3
+execute if score @s rng1 matches 9 run playsound minecraft:block.lava.pop block @a ~ ~ ~ 0.5 1.4
+execute if score @s rng1 matches 12 run playsound minecraft:block.lava.pop block @a ~ ~ ~ 0.7 1.6
 execute if score @s rng1 matches 6.. run particle white_smoke ~ ~0.2 ~ 0.3 0.8 0.3 0.05 2
 execute if score @s rng1 matches 11.. run particle white_smoke ~ ~0.2 ~ 0.3 0.8 0.3 0.05 3
 
