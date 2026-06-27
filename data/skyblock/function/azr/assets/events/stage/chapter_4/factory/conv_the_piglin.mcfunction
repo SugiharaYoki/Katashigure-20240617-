@@ -39,8 +39,8 @@ execute as @s[scores={rng1=136}] run tellraw @a[tag=azrShowDialog] [{text:"è‚¥çŒ
 execute as @s[scores={rng1=20}] run scoreboard players set @s rng2 0
 execute as @s[scores={rng1=137..300}] run scoreboard players add @s rng2 1
 
-execute as @s[scores={rng2=20}] at @s run tp @s -79800 -6 -276
-execute as @s[scores={rng2=59}] at @s run tp @s -79796.99 -6.00 -288.35
+execute as @s[scores={rng2=19}] at @s run tp @s -79800 -6 -276
+execute as @s[scores={rng2=60}] at @s run tp @s -79796.99 -6.00 -288.35
 
 execute as @s[scores={rng2=57..58}] at @s run scoreboard players set @s rng2 57
 execute as @s[scores={rng2=..58}] at @s if entity @a[x=-79792,y=0,z=-280,dx=5,dy=5,dz=8] run scoreboard players set @s rng1 137
