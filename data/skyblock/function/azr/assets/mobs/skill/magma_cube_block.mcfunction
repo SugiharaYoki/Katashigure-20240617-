@@ -1,0 +1,28 @@
+scoreboard players add @s rng1 1
+
+
+
+execute if score @s rng1 matches 5.. unless entity @a[tag=azrPlayer,distance=..4] run scoreboard players remove @s rng1 2
+
+execute if score @s rng1 matches 2 store result score @s rng2 run random value 1..3
+execute if score @s rng1 matches 2 store result score @s rng3 run random value 1..3
+execute if score @s rng1 matches 2 if score @s rng2 matches 1..2 if block ~ ~-1 ~ basalt run fill ~ ~ ~ ~ ~ ~ basalt replace air
+execute if score @s rng1 matches 2 if score @s rng2 matches 1..2 if block ~ ~-1 ~ magma_block run fill ~ ~ ~ ~ ~ ~ magma_block replace air
+execute if score @s rng1 matches 2 if score @s rng2 matches 1..2 if block ~ ~-1 ~ nether_bricks run fill ~ ~ ~ ~ ~ ~ cracked_nether_bricks replace air
+execute if score @s rng1 matches 2 if score @s rng2 matches 3 if score @s rng3 matches 1 run fill ~ ~ ~ ~ ~ ~ basalt replace air
+execute if score @s rng1 matches 2 if score @s rng2 matches 3 if score @s rng3 matches 2 run fill ~ ~ ~ ~ ~ ~ magma_block replace air
+execute if score @s rng1 matches 2 if score @s rng2 matches 3 if score @s rng3 matches 3 run fill ~ ~ ~ ~ ~ ~ cracked_nether_bricks replace air
+
+
+execute if score @s rng1 matches 6 run playsound minecraft:block.lava.pop block @a ~ ~ ~ 0.7 1.3
+execute if score @s rng1 matches 9 run playsound minecraft:block.lava.pop block @a ~ ~ ~ 0.7 1.32
+execute if score @s rng1 matches 12 run playsound minecraft:block.lava.pop block @a ~ ~ ~ 0.7 1.33
+execute if score @s rng1 matches 6.. run particle white_smoke ~ ~0.2 ~ 0.3 0.8 0.3 0.05 2
+execute if score @s rng1 matches 11.. run particle white_smoke ~ ~0.2 ~ 0.3 0.8 0.3 0.05 3
+
+execute if score @s rng1 matches 14.. at @s run function skyblock:azr/assets/mobs/magma_cube_mini
+execute if score @s rng1 matches 14.. if block ~ ~ ~ basalt run particle block{block_state:{Name:basalt}} ~ ~ ~ 0.4 0.4 0.4 0.06 15
+execute if score @s rng1 matches 14.. if block ~ ~ ~ magma_block run particle block{block_state:{Name:magma_block}} ~ ~ ~ 0.4 0.4 0.4 0.06 15
+execute if score @s rng1 matches 14.. if block ~ ~ ~ cracked_nether_bricks run particle block{block_state:{Name:nether_bricks}} ~ ~ ~ 0.4 0.4 0.4 0.06 15
+execute if score @s rng1 matches 14.. run setblock ~ ~ ~ air
+execute if score @s rng1 matches 14.. run kill @s
