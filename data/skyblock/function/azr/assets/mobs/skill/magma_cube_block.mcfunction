@@ -21,6 +21,7 @@ execute if score @s rng1 matches 6.. run particle white_smoke ~ ~0.2 ~ 0.3 0.8 0
 execute if score @s rng1 matches 11.. run particle white_smoke ~ ~0.2 ~ 0.3 0.8 0.3 0.05 3
 
 execute if score @s rng1 matches 14.. at @s run playsound entity.magma_cube.squish_small hostile @a ~ ~ ~ 0.7 0.7
+execute if score @s rng1 matches 14.. at @s run playsound block.basalt.break block @a ~ ~ ~ 1.1 1.2
 execute if score @s rng1 matches 14.. at @s run function skyblock:azr/assets/mobs/magma_cube_mini
 execute if score @s rng1 matches 14.. if block ~ ~ ~ basalt run particle block{block_state:{Name:basalt}} ~ ~ ~ 0.4 0.4 0.4 0.06 15
 execute if score @s rng1 matches 14.. if block ~ ~ ~ magma_block run particle block{block_state:{Name:magma_block}} ~ ~ ~ 0.4 0.4 0.4 0.06 15
