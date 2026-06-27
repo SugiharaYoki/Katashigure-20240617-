@@ -778,6 +778,9 @@ fill -79893 -26 -304 -79888 -31 -304 air
 clone -79934 69 -563 -79926 75 -556 -79934 69 -523
 
 #第四章 
+
+execute positioned -79934 69 -563 as @e[type=marker,tag=magma_cube_block,tag=AzrielMob,distance=..4000] at @s run setblock ~ ~ ~ air
+
 #无人走道
 setblock -79748 -13 -234 minecraft:waxed_copper_chest[facing=west]{Inventory:[]}
 item replace block -79748 -13 -234 container.13 with beef 2
