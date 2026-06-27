@@ -57,6 +57,14 @@ execute as @s[scores={rng2=1..91}] at @s if entity @a[x=-79784,y=0,z=-280,dx=5,d
 execute as @s[scores={rng2=201}] positioned -79795 7 -278 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng2=201}] positioned -79795 7 -278 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“这两个仪器会一起被启动，你得同时管两边。”",color:"white"}]
 
+execute as @s[scores={rng2=290..291}] at @s run scoreboard players set @s rng2 290
+execute as @s[scores={rng2=1..291}] at @s if entity @a[x=-79761,y=0,z=-278,dx=5,dy=5,dz=8] run scoreboard players set @s rng2 300
+execute as @s[scores={rng2=301}] positioned -79795 7 -278 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng2=301}] positioned -79795 7 -278 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“太好了，这一层的门已经全部打开了。”",color:"white"}]
+execute as @s[scores={rng2=321}] positioned -79795 7 -278 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng2=321}] positioned -79795 7 -278 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“等、等下兄弟！不对劲，我居然没有料到这件事……”",color:"white"}]
+execute as @s[scores={rng2=335}] positioned -79795 7 -278 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng2=335}] positioned -79795 7 -278 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“不止我们俩希望这些门打开。我不清楚你知不知道，这里本身就是战场要道，或许有人也想从我们这里过去……”",color:"white"}]
 
 
 execute if score @s rng1 matches 139..999 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_306] run tellraw @s [{text:" - "},{text:"询问：你为什么没能出去？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30601"}}]
