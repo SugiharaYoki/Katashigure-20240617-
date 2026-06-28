@@ -821,6 +821,19 @@ item replace block -79744 2 -293 container.14 with gold_nugget 1
   #金矿一般用于战时储备，现在的科技水平已经用不到那么多的金子。
   #林场对面就是12区的金窟，那里现在建立了巨大的矿产链，也用不到咱们博物馆下方的资源了。
 
+  #第9、第10、第11、第12辖区为魔界的第三扇区，在彼列王与擘内大法师的政权斗争中，选择支持还曾是君王的彼列。
+  #但第三扇区的居民实际并未踏入战场。通往神庭的传送门被建立在第10辖区，第12辖区则是重要的战略资源原材料生产地。
+  #最初的11辖区扮演了后方战争工厂的角色。
+
+#展示区
+setblock -79759 17 -283 minecraft:decorated_pot{sherds:["sheaf_pottery_sherd","sheaf_pottery_sherd","sheaf_pottery_sherd","sheaf_pottery_sherd"],item:{count: 1, id:"minecraft:gold_nugget"}}
+setblock -79757 17 -283 minecraft:decorated_pot{sherds:["plenty_pottery_sherd","plenty_pottery_sherd","plenty_pottery_sherd","plenty_pottery_sherd"],item:{count: 1, id:"minecraft:gold_nugget"}}
+setblock -79756 17 -283 minecraft:decorated_pot{sherds:["explorer_pottery_sherd","explorer_pottery_sherd","explorer_pottery_sherd","explorer_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
+summon item_frame -79760 19 -277 {Item:{id:"minecraft:flint",count:1b},Facing:5}
+summon item_frame -79760 19 -279 {Item:{id:"minecraft:iron_ingot",count:1b},Facing:5}
+summon item_frame -79760 19 -281 {Item:{id:"minecraft:gunpowder",count:1b},Facing:5}
+fill -79735 16 -280 -79735 16 -278 anvil[facing=east]
+fill -79739 17 -275 -79742 17 -275 minecraft:potted_crimson_fung
 
 
 
