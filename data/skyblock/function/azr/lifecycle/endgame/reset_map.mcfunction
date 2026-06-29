@@ -835,7 +835,8 @@ summon item_frame -79760 19 -281 {Item:{id:"minecraft:gunpowder",count:1b},Facin
 fill -79735 16 -280 -79735 16 -278 anvil[facing=east]
 fill -79739 17 -275 -79742 17 -275 minecraft:potted_crimson_fung
 
-
+#长廊战
+fill -79745 16 -297 -79750 22 -297 air replace minecraft:red_stained_glass
 
 
 
