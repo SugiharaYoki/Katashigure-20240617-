@@ -399,11 +399,11 @@ execute if score @s rng1 matches 2004 run tellraw @a[tag=azrShowDialog,distance=
 
 
 execute if score @s rng1 matches 2990..2999 run scoreboard players set @s rng1 2990
-execute if score @s rng1 matches 300..2999 if entity @a[tag=azrPlayer,x=-79936,y=-30,z=-274,dx=10,dy=9,dz=20] run scoreboard players set @s rng1 3000
+execute if score @s rng1 matches 300..2999 if entity @a[tag=azrPlayer,x=-79956,y=-30,z=-274,dx=10,dy=9,dz=20] run scoreboard players set @s rng1 3000
 
-execute if score @s rng1 matches 3001 positioned -79919 -30 -270 as @a[tag=azrPlayer,x=-79926,y=-30,z=-274,dx=16,dy=12,dz=20] at @s run tp @s ~ ~100 ~-250
-execute if score @s rng1 matches 3001 positioned -79919 -30 -270 as @n[tag=AzrielMob_sonic_eye_lord,distance=..300] at @s run tp @s ~ ~100 ~-250
-execute if score @s rng1 matches 3001 positioned -79919 -30 -270 as @n[tag=AzrielMob_husk,distance=..40] at @s run tp @s ~ ~100 ~-250
+execute if score @s rng1 matches 3001 positioned -79919 -30 -270 as @a[tag=azrPlayer,x=-79956,y=-30,z=-274,dx=16,dy=12,dz=20] at @s run tp @s ~20 ~100 ~-250
+execute if score @s rng1 matches 3001 positioned -79919 -30 -270 as @n[tag=AzrielMob_sonic_eye_lord,distance=..300] at @s run tp @s ~20 ~100 ~-250
+execute if score @s rng1 matches 3001 positioned -79919 -30 -270 as @n[tag=AzrielMob_husk,distance=..40] at @s run tp @s ~20 ~100 ~-250
 execute if score @s rng1 matches 3001 positioned -79907.00 71.05 -519.63 run particle minecraft:white_smoke ~ ~ ~ 0.5 2 1.2 0.03 150
 execute if score @s rng1 matches 3001 positioned -79921 70 -520 run particle large_smoke ~ ~ ~ 20 3 3 0.06 200
 execute if score @s rng1 matches 3001 positioned -79921 70 -520 run particle explosion_emitter ~ ~ ~ 20 3 3 0.06 30
