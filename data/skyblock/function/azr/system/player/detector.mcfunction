@@ -27,4 +27,4 @@ tag @s[x=-79931,y=100,z=0,distance=10000..,tag=azrShowDialog] remove azrShowDial
 
 
 
-execute as @s[tag=azrPlayer] at @s run function skyblock:azr/system/player/main
+execute as @s[tag=azrPlayer,tag=!azrDebug_no_player_main] at @s run function skyblock:azr/system/player/main
