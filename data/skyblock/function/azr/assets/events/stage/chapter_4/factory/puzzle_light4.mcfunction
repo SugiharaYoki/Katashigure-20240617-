@@ -2,7 +2,7 @@
 
 execute if block ~ ~ ~ warped_button[powered=true] if block -79770 2 -271 waxed_copper_bulb[lit=false] run setblock -79770 2 -271 waxed_copper_bulb[lit=true]
 execute unless score @s AzrEntityTimer matches 5.. if block ~ ~ ~ warped_button[powered=true] if block -79770 2 -271 waxed_copper_bulb[lit=true] run setblock ~ ~ ~ warped_button[powered=false,face=floor,facing=north]
-execute if score @s AzrEntityTimer matches 14..15 if block ~ ~ ~ warped_button[powered=true] run scoreboard players set @s AzrEntityTimer 100
+execute if score @s AzrEntityTimer matches 12..13 if block ~ ~ ~ warped_button[powered=true] run scoreboard players set @s AzrEntityTimer 100
 execute if score @s AzrEntityTimer matches 5..99 if block ~ ~ ~ warped_button[powered=true] run scoreboard players set @s AzrEntityTimer -8
 
 
@@ -15,18 +15,16 @@ execute if block -79770 2 -271 waxed_copper_bulb[lit=true] run scoreboard player
 execute if score @s AzrEntityTimer matches ..0 run scoreboard players set @s AzrEntityTimer 0
 execute if score @s AzrEntityTimer matches 20..50 run scoreboard players set @s AzrEntityTimer 20
 
-execute positioned -79770 2 -271 if score @s AzrEntityTimer matches 06 run setblock ~ ~ ~ waxed_copper_bulb[lit=true]
-execute positioned -79769 2 -271 if score @s AzrEntityTimer matches 08 run setblock ~ ~ ~ waxed_copper_bulb[lit=true]
-execute positioned -79768 2 -271 if score @s AzrEntityTimer matches 10 run setblock ~ ~ ~ waxed_copper_bulb[lit=true]
-execute positioned -79767 2 -271 if score @s AzrEntityTimer matches 12 run setblock ~ ~ ~ waxed_copper_bulb[lit=true]
-execute positioned -79766 2 -271 if score @s AzrEntityTimer matches 14 run setblock ~ ~ ~ waxed_oxidized_copper_bulb[lit=true]
-execute positioned -79765 2 -271 if score @s AzrEntityTimer matches 16 run setblock ~ ~ ~ waxed_copper_bulb[lit=true]
-execute positioned -79770 2 -280 if score @s AzrEntityTimer matches 06 run playsound block.copper_bulb.turn_on block @a ~ ~ ~ 1.5 1.3
-execute positioned -79769 2 -271 if score @s AzrEntityTimer matches 08 run playsound block.copper_bulb.turn_on block @a ~ ~ ~ 1.5 1.3
-execute positioned -79768 2 -280 if score @s AzrEntityTimer matches 10 run playsound block.copper_bulb.turn_on block @a ~ ~ ~ 1.5 1.3
-execute positioned -79767 2 -280 if score @s AzrEntityTimer matches 12 run playsound block.copper_bulb.turn_on block @a ~ ~ ~ 1.5 1.3
-execute positioned -79766 2 -280 if score @s AzrEntityTimer matches 14 run playsound block.copper_bulb.turn_on block @a ~ ~ ~ 1.5 1.3
-execute positioned -79765 2 -280 if score @s AzrEntityTimer matches 16 run playsound block.copper_bulb.turn_on block @a ~ ~ ~ 1.5 1.3
+execute positioned -79769 2 -271 if score @s AzrEntityTimer matches 04 run setblock ~ ~ ~ waxed_copper_bulb[lit=true]
+execute positioned -79768 2 -271 if score @s AzrEntityTimer matches 08 run setblock ~ ~ ~ waxed_copper_bulb[lit=true]
+execute positioned -79767 2 -271 if score @s AzrEntityTimer matches 10 run setblock ~ ~ ~ waxed_copper_bulb[lit=true]
+execute positioned -79766 2 -271 if score @s AzrEntityTimer matches 12 run setblock ~ ~ ~ waxed_oxidized_copper_bulb[lit=true]
+execute positioned -79765 2 -271 if score @s AzrEntityTimer matches 14 run setblock ~ ~ ~ waxed_copper_bulb[lit=true]
+execute positioned -79769 2 -271 if score @s AzrEntityTimer matches 04 run playsound block.copper_bulb.turn_on block @a ~ ~ ~ 1.5 1.3
+execute positioned -79768 2 -280 if score @s AzrEntityTimer matches 08 run playsound block.copper_bulb.turn_on block @a ~ ~ ~ 1.5 1.3
+execute positioned -79767 2 -280 if score @s AzrEntityTimer matches 10 run playsound block.copper_bulb.turn_on block @a ~ ~ ~ 1.5 1.3
+execute positioned -79766 2 -280 if score @s AzrEntityTimer matches 12 run playsound block.copper_bulb.turn_on block @a ~ ~ ~ 1.5 1.3
+execute positioned -79765 2 -280 if score @s AzrEntityTimer matches 14 run playsound block.copper_bulb.turn_on block @a ~ ~ ~ 1.5 1.3
 
 execute positioned -79766 2 -271 if score @s AzrEntityTimer matches 101 run playsound minecraft:block.note_block.bell block @a ~ ~ ~ 5 0.8
 execute positioned -79766 2 -271 if score @s AzrEntityTimer matches 101 positioned -79761.56 2.92 -275.02 run playsound minecraft:block.iron_door.open ambient @a ~ ~ ~ 3 0.3
