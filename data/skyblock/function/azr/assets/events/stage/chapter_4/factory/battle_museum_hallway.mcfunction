@@ -39,3 +39,11 @@ execute if score @s rng1 matches 3..90 positioned -79795 7 -278 unless entity @a
 
 
 
+
+
+
+
+
+
+
+
