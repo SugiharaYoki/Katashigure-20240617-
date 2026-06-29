@@ -837,7 +837,7 @@ fill -79739 17 -275 -79742 17 -275 minecraft:potted_crimson_fung
 
 #长廊战
 fill -79745 16 -297 -79750 22 -297 air replace minecraft:red_stained_glass
-
+fill -79757 23 -270 -79757 19 -272 minecraft:red_stained_glass
 
 
 #stage13
