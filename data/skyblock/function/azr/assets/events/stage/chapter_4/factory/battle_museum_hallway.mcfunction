@@ -38,9 +38,10 @@ execute if score @s rng1 matches 91 positioned -79795 7 -278 unless entity @a[ta
 execute if score @s rng1 matches 91 positioned -79759 19 -266 run function skyblock:azr/assets/mobs/piglin_sword
 execute if score @s rng1 matches 91 positioned -79760 19 -266 run function skyblock:azr/assets/mobs/piglin_sword
 
-
 execute if score @s rng1 matches 93 positioned -79795 7 -278 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute if score @s rng1 matches 93 positioned -79795 7 -278 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“喂，女人！我把防御屏障关掉了，你如果有需求就先撤退！”",color:"white"}]
+execute if score @s rng1 matches 93 positioned -79795 7 -278 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“喂，女人！我把防御屏障关掉了，你可以去楼上，我用魔力探测器帮你探路。”",color:"white"}]
+execute if score @s rng1 matches 108 positioned -79795 7 -278 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score @s rng1 matches 108 positioned -79795 7 -278 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“你去楼上时小心点，有士兵在墙后埋伏你。”",color:"white"}]
 
 
 execute if score @s rng1 matches 3..90 positioned -79795 7 -278 unless entity @a[tag=azrPlayer,x=-79762,y=15,z=-297,dx=30,dy=12,dz=30] positioned -79793 -6 -277 if loaded ~ ~ ~ as @n[tag=AzrielTrader_pig_henry,distance=0..63] at @s run scoreboard players set @s rng2 389
