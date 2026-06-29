@@ -67,7 +67,7 @@ execute as @s[scores={rng2=335}] positioned -79795 7 -278 run playsound minecraf
 execute as @s[scores={rng2=335}] positioned -79795 7 -278 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“不止我们俩希望这些门打开。我不清楚你知不知道，这里本身就是战场要道，或许有人也想从我们这里过去……”",color:"white"}]
 
 execute as @s[scores={rng2=390..391}] at @s run scoreboard players set @s rng2 390
-execute as @s[scores={rng2=1..391}] at @s if entity @a[x=-79751,y=14,z=-292,dx=7,dy=7,dz=8] run scoreboard players set @s rng2 300
+execute as @s[scores={rng2=1..391}] at @s if entity @a[x=-79751,y=14,z=-292,dx=7,dy=7,dz=8] run scoreboard players set @s rng2 400
 execute as @s[scores={rng2=401}] positioned -79795 7 -278 run playsound minecraft:item.goat_horn.sound.3 ambient @a -79747.14 23.00 -271.91 10 1.3
 execute as @s[scores={rng2=401}] run fill -79745 16 -297 -79750 22 -297 minecraft:red_stained_glass replace air
 execute as @s[scores={rng2=411}] positioned -79795 7 -278 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
