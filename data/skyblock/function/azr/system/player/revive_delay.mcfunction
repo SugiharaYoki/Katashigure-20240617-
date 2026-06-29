@@ -36,9 +36,9 @@ execute if entity @s[tag=AZR_Dead_EmeraldLost] if entity @s[tag=AzrSariel_upg9D]
 execute if entity @s[tag=AZR_Dead_EmeraldLost] if entity @s[tag=AzrSariel_upg12D] run scoreboard players add @s rng3 1
 execute if entity @s[tag=AZR_Dead_EmeraldLost] if entity @s[tag=AzrSariel_upg13D] run scoreboard players add @s rng3 1
 execute if entity @s[tag=AZR_Dead_EmeraldLost] store result score @s rng4 run random value 1..100
-execute if entity @s[tag=AZR_Dead_EmeraldLost] if score @s rng3 matches 1 if score @s rng4 matches 1..30 run tag @s add AZR_Dead_EmeraldLost_Cancelled
-execute if entity @s[tag=AZR_Dead_EmeraldLost] if score @s rng3 matches 2 if score @s rng4 matches 1..60 run tag @s add AZR_Dead_EmeraldLost_Cancelled
-execute if entity @s[tag=AZR_Dead_EmeraldLost] if score @s rng3 matches 3 if score @s rng4 matches 1..90 run tag @s add AZR_Dead_EmeraldLost_Cancelled
+execute if entity @s[tag=AZR_Dead_EmeraldLost] if score @s rng3 matches 1 if score @s rng4 matches 1..20 run tag @s add AZR_Dead_EmeraldLost_Cancelled
+execute if entity @s[tag=AZR_Dead_EmeraldLost] if score @s rng3 matches 2 if score @s rng4 matches 1..40 run tag @s add AZR_Dead_EmeraldLost_Cancelled
+execute if entity @s[tag=AZR_Dead_EmeraldLost] if score @s rng3 matches 3 if score @s rng4 matches 1..70 run tag @s add AZR_Dead_EmeraldLost_Cancelled
 
 execute if entity @s[tag=AZR_Dead_EmeraldLost,gamemode=adventure,tag=!AZR_Dead_EmeraldLost_Cancelled] run scoreboard players operation @s rng1 *= @s rng2
 execute if entity @s[tag=AZR_Dead_EmeraldLost,gamemode=adventure,tag=!AZR_Dead_EmeraldLost_Cancelled] run scoreboard players operation @s Azr_emerald -= @s rng1
@@ -47,7 +47,7 @@ execute if entity @s[tag=AZR_Dead_EmeraldLost,gamemode=adventure,tag=AZR_Dead_Em
 execute if entity @s[tag=AZR_Dead_EmeraldLost,gamemode=adventure,tag=AZR_Dead_EmeraldLost_Cancelled] run tellraw @s [{text:"节制天平：本次死亡不会丢失绿宝石",color: "#9eb9de"}]
 #clear @s[tag=!AZR_storymode,tag=!AZR_fakeDeath] nether_star[custom_data~{revival_star:1b}] 1
 
-execute if score stage Azr_system matches 55..70 run tp @s @n[tag=AzrielMob_utility_respawn_anchor,type=marker]
+#execute if score stage Azr_system matches 55..70 run tp @s @n[tag=AzrielMob_utility_respawn_anchor,type=marker]
 
 tag @s remove AZR_Dead_EmeraldLost
 tag @s remove AZR_Dead_EmeraldLost_Cancelled

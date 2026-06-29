@@ -56,6 +56,8 @@ execute if score @s AzrSariel_Food_PowerSalmon matches 1.. run function skyblock
 
 #地区标题area_title
 execute at @s run function skyblock:azr/assets/events/stage/area_title_detect
+#第四章特殊复活点
+execute if score stage Azr_system matches 55..70 at @n[tag=AzrielMob_utility_respawn_anchor,type=marker] run spawnpoint @s ~ ~ ~
 
 scoreboard players reset @s AzrSariel_Amulet_generic_damage_taken
 

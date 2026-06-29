@@ -1,6 +1,6 @@
 
 
-
+#复活点
 execute positioned -79778 2 -281 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79778 2 -281 as @n[tag=AzrielMarker_encounter,distance=0..0.5] unless score @s rng1 matches 3.. run scoreboard players add @s rng1 1
 execute positioned -79778 2 -281 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] at @s positioned -79765 -17 -177 run function skyblock:azr/assets/mobs/utility_respawn_anchor
