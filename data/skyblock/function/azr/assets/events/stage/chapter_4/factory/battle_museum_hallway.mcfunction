@@ -40,7 +40,8 @@ execute if score @s rng1 matches 93 positioned -79795 7 -278 run tellraw @a[tag=
 
 execute if score @s rng1 matches 3..90 positioned -79795 7 -278 unless entity @a[tag=azrPlayer,x=-79762,y=15,z=-297,dx=30,dy=12,dz=30] positioned -79793 -6 -277 if loaded ~ ~ ~ as @n[tag=AzrielTrader_pig_henry,distance=0..63] at @s run scoreboard players set @s rng2 389
 execute if score @s rng1 matches 3..90 positioned -79795 7 -278 unless entity @a[tag=azrPlayer,x=-79762,y=15,z=-297,dx=30,dy=12,dz=30] run fill -79745 16 -297 -79750 22 -297 air replace minecraft:red_stained_glass
-execute if score @s rng1 matches 3..90 positioned -79795 7 -278 unless entity @a[tag=azrPlayer,x=-79762,y=15,z=-297,dx=30,dy=12,dz=30] as @e[tag=AzrielMob,x=-79762,y=15,z=-297,dx=30,dy=12,dz=30] at @s run tp @s ~ ~-150 ~
+execute if score @s rng1 matches 3..90 positioned -79795 7 -278 unless entity @a[tag=azrPlayer,x=-79762,y=15,z=-297,dx=30,dy=12,dz=30] as @e[tag=AzrielMob,type=piglin,x=-79762,y=15,z=-297,dx=30,dy=12,dz=30] at @s run tp @s ~ ~-150 ~
+execute if score @s rng1 matches 3..90 positioned -79795 7 -278 unless entity @a[tag=azrPlayer,x=-79762,y=15,z=-297,dx=30,dy=12,dz=30] as @e[tag=AzrielMob,type=piglin,x=-79762,y=15,z=-297,dx=30,dy=12,dz=30] at @s run kill @s
 execute if score @s rng1 matches 3..90 positioned -79795 7 -278 unless entity @a[tag=azrPlayer,x=-79762,y=15,z=-297,dx=30,dy=12,dz=30] run kill @s
 
 
