@@ -10,6 +10,8 @@ execute if score @s rng1 matches 15 positioned -79795 7 -278 run tellraw @a[tag=
 
 execute if score @s rng1 matches 32 at @n[tag=AzrielMob_piglin_sword] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 1.0
 execute if score @s rng1 matches 32 at @n[tag=AzrielMob_piglin_sword] run tellraw @a[tag=azrShowDialog] [{text:"反抗军军士：",color:"red",bold:1b},{bold: false,text:"\n“居然有个亡魂拦在路上！”",color:"white"}]
+execute if score @s rng1 matches 27 positioned -79747 16 -274 as @n[tag=AzrielMob,type=piglin,distance=0..9] run tag @s add AzrielMob_StageProgressTarget
+execute if score @s rng1 matches 29 positioned -79747 16 -274 if entity @n[tag=AzrielMob_StageProgressTarget,type=piglin,distance=0..20] run scoreboard players set @s rng1 28
 
 execute if score @s rng1 matches 30 positioned -79747 16 -272 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 32 positioned -79748 16 -274 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
@@ -18,6 +20,8 @@ execute if score @s rng1 matches 37 positioned -79748 16 -270 run summon marker 
 execute if score @s rng1 matches 44 at @n[tag=AzrielMob_piglin_sword] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 1.0
 execute if score @s rng1 matches 44 at @n[tag=AzrielMob_piglin_sword] run tellraw @a[tag=azrShowDialog] [{text:"反抗军军士：",color:"red",bold:1b},{bold: false,text:"\n“快把这个人类的亡魂赶走，你们还在犹豫什么！”",color:"white"}]
 
+execute if score @s rng1 matches 47 positioned -79747 16 -274 as @n[tag=AzrielMob,type=piglin,distance=0..9] run tag @s add AzrielMob_StageProgressTarget
+execute if score @s rng1 matches 49 positioned -79747 16 -274 if entity @n[tag=AzrielMob_StageProgressTarget,type=piglin,distance=0..20] run scoreboard players set @s rng1 48
 execute if score @s rng1 matches 50 positioned -79747 16 -269 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 50 positioned -79748 16 -269 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 60 positioned -79747 16 -271 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
