@@ -47,6 +47,7 @@ execute if entity @s[tag=AZR_Dead_EmeraldLost,gamemode=adventure,tag=AZR_Dead_Em
 execute if entity @s[tag=AZR_Dead_EmeraldLost,gamemode=adventure,tag=AZR_Dead_EmeraldLost_Cancelled] run tellraw @s [{text:"节制天平：本次死亡不会丢失绿宝石",color: "#9eb9de"}]
 #clear @s[tag=!AZR_storymode,tag=!AZR_fakeDeath] nether_star[custom_data~{revival_star:1b}] 1
 
+execute if score stage Azr_system matches 55..70 run say hi
 execute if score stage Azr_system matches 55..70 run tp @s @n[tag=AzrielMob_utility_respawn_anchor,type=marker]
 
 tag @s remove AZR_Dead_EmeraldLost
