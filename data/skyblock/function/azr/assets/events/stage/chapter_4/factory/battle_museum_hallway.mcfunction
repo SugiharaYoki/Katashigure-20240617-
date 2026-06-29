@@ -35,6 +35,10 @@ execute if score @s rng1 matches 87 positioned -79747 16 -274 as @n[tag=AzrielMo
 execute if score @s rng1 matches 89 positioned -79747 16 -274 if entity @n[tag=AzrielMob_StageProgressTarget,type=piglin,distance=0..20] run scoreboard players set @s rng1 88
 execute if score @s rng1 matches 91 positioned -79795 7 -278 unless entity @a[tag=azrPlayer,x=-79762,y=15,z=-297,dx=30,dy=12,dz=30] run fill -79745 16 -297 -79750 22 -297 air replace red_stained_glass destroy
 execute if score @s rng1 matches 91 positioned -79795 7 -278 unless entity @a[tag=azrPlayer,x=-79762,y=15,z=-297,dx=30,dy=12,dz=30] run fill -79757 23 -270 -79757 19 -272 air replace red_stained_glass destroy
+execute if score @s rng1 matches 91 positioned -79759 19 -266 run function skyblock:azr/assets/mobs/piglin_sword
+execute if score @s rng1 matches 91 positioned -79760 19 -266 run function skyblock:azr/assets/mobs/piglin_sword
+
+
 execute if score @s rng1 matches 93 positioned -79795 7 -278 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng1 matches 93 positioned -79795 7 -278 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“喂，女人！我把防御屏障关掉了，你如果有需求就先撤退！”",color:"white"}]
 
