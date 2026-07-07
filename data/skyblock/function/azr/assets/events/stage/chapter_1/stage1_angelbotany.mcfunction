@@ -2,15 +2,15 @@
 
 #踏入休憩所
 
-execute positioned -79930 28 197 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79970,y=-52,z=-10,dx=70,dy=20,dz=70,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79930 28 197 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-80007,y=-58,z=-4,dx=100,dy=20,dz=100,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79930 28 197 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
-execute positioned -79930 28 197 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79977 -51 12 unless entity @n[type=villager,distance=..3] run function skyblock:azr/assets/mobs/unique/trader/botanical_trader
-execute positioned -79930 28 197 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] as @a[x=-80007,y=-58,z=-18,dx=100,dy=20,dz=100,tag=azrPlayer] at @s run playsound minecraft:bookstore music @s ~ ~ ~ 0.8
-execute positioned -79930 28 197 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3}] as @a[x=-80007,y=-58,z=-18,dx=100,dy=20,dz=100,tag=azrPlayer] run effect give @s regeneration 30 3 true
-execute positioned -79930 28 197 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3}] as @a[x=-80007,y=-58,z=-18,dx=100,dy=20,dz=100,tag=azrPlayer] run effect give @s resistance 30 3 true
-execute positioned -79930 28 197 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=100..}] run scoreboard players set @s rng1 2
-execute positioned -79930 28 197 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3..}] unless entity @a[x=-80007,y=-58,z=-18,dx=100,dy=20,dz=100,tag=azrPlayer] run kill @s
+execute positioned -79980 -37 -2 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79970,y=-52,z=-10,dx=70,dy=20,dz=70,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79980 -37 -2 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-80007,y=-58,z=-4,dx=100,dy=20,dz=100,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
+execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] positioned -79977 -51 12 unless entity @n[type=villager,distance=..3] run function skyblock:azr/assets/mobs/unique/trader/botanical_trader
+execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] as @a[x=-80007,y=-58,z=-18,dx=100,dy=20,dz=100,tag=azrPlayer] at @s run playsound minecraft:bookstore music @s ~ ~ ~ 0.8
+execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3}] as @a[x=-80007,y=-58,z=-18,dx=100,dy=20,dz=100,tag=azrPlayer] run effect give @s regeneration 30 3 true
+execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3}] as @a[x=-80007,y=-58,z=-18,dx=100,dy=20,dz=100,tag=azrPlayer] run effect give @s resistance 30 3 true
+execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=100..}] run scoreboard players set @s rng1 2
+execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3..}] unless entity @a[x=-80007,y=-58,z=-18,dx=100,dy=20,dz=100,tag=azrPlayer] run kill @s
 
 #商人
 execute positioned -79977 -51 12 as @n[type=villager,distance=..5,tag=AzrielTrader_botanical_trader] at @s if entity @a[tag=azrPlayer,distance=..6] run function skyblock:azr/assets/events/stage/chapter_1/npc_botanical_trader
