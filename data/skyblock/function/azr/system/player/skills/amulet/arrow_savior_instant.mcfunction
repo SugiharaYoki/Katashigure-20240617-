@@ -344,5 +344,5 @@ execute if score @s rng1 matches 64.. run scoreboard players add @s AzrSariel_Am
 execute if score @s rng1 matches 64.. run clear @s arrow 1
 
 
-
+execute if items entity @s weapon.offhand *[custom_data~{azr_offhand_function:1b}] run item replace entity @s weapon.offhand with air
 function skyblock:azr/assets/items/amulets/arrow_savior
