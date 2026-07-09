@@ -127,6 +127,7 @@ execute if entity @s[tag=AZS_BoSShop07] run data modify entity @n[tag=AzrRamielE
 execute if entity @s[tag=AZS_BoSShop08] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop08] CustomName set value ' <> '
 
 execute if entity @s[tag=AZS_BoSB22] run data modify entity @n[tag=AzrRamielExStage_displaymarkerk] CustomName set value ' - '
+execute if entity @s[tag=AZS_BoSB22] run data modify entity @n[tag=AzrRamielExStage_displaymarkeri] CustomName set value ' - '
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkere] CustomName set value ' - '
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerv] CustomName set value ' - '
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value ' - '
