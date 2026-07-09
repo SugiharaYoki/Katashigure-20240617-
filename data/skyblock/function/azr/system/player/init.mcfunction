@@ -55,6 +55,30 @@ scoreboard players set @s Azr_emerald_temp 0
 
 #tp @s -79936.0 38.15 -14.0 facing -79935.0 38.15 -14.0
 
+
+execute unless score @s AZS_SoulFrag matches 1.. run tag @s add AZS_SoulFrag_Redeem
+execute if entity @s[tag=AZS_SoulFrag_Redeem,tag=AZS_SoulFrag1] run scoreboard players add @s AZS_SoulFrag 1
+execute if entity @s[tag=AZS_SoulFrag_Redeem,tag=AZS_SoulFrag2] run scoreboard players add @s AZS_SoulFrag 1
+execute if entity @s[tag=AZS_SoulFrag_Redeem,tag=AZS_SoulFrag3] run scoreboard players add @s AZS_SoulFrag 1
+execute if entity @s[tag=AZS_SoulFrag_Redeem,tag=AZS_SoulFrag4] run scoreboard players add @s AZS_SoulFrag 1
+execute if entity @s[tag=AZS_SoulFrag_Redeem,tag=AZS_SoulFrag5] run scoreboard players add @s AZS_SoulFrag 1
+execute if entity @s[tag=AZS_SoulFrag_Redeem,tag=AZS_SoulFrag6] run scoreboard players add @s AZS_SoulFrag 1
+execute if entity @s[tag=AZS_SoulFrag_Redeem,tag=AZS_SoulFrag7] run scoreboard players add @s AZS_SoulFrag 1
+execute if entity @s[tag=AZS_SoulFrag_Redeem,tag=AZS_SoulFrag8] run scoreboard players add @s AZS_SoulFrag 1
+execute if entity @s[tag=AZS_SoulFrag_Redeem,tag=AZS_SoulFrag9] run scoreboard players add @s AZS_SoulFrag 1
+execute if entity @s[tag=AZS_SoulFrag_Redeem,tag=AZS_SoulFrag10] run scoreboard players add @s AZS_SoulFrag 1
+execute if entity @s[tag=AZS_SoulFrag_Redeem,tag=AZS_SoulFrag11] run scoreboard players add @s AZS_SoulFrag 1
+execute if entity @s[tag=AZS_SoulFrag_Redeem,tag=AZS_SoulFrag12] run scoreboard players add @s AZS_SoulFrag 1
+execute if entity @s[tag=AZS_SoulFrag_Redeem,tag=AZS_SoulFrag13] run scoreboard players add @s AZS_SoulFrag 1
+execute if entity @s[tag=AZS_SoulFrag_Redeem,tag=AZS_SoulFrag14] run scoreboard players add @s AZS_SoulFrag 1
+execute if entity @s[tag=AZS_SoulFrag_Redeem,tag=AZS_SoulFrag15] run scoreboard players add @s AZS_SoulFrag 1
+execute if entity @s[tag=AZS_SoulFrag_Redeem,tag=AZS_SoulFrag16] run scoreboard players add @s AZS_SoulFrag 1
+execute if entity @s[tag=AZS_SoulFrag_Redeem,tag=AZS_SoulFrag17] run scoreboard players add @s AZS_SoulFrag 1
+execute if entity @s[tag=AZS_SoulFrag_Redeem,tag=AZS_SoulFrag18] run scoreboard players add @s AZS_SoulFrag 1
+execute if entity @s[tag=AZS_SoulFrag_Redeem,tag=AZS_SoulFrag19] run scoreboard players add @s AZS_SoulFrag 1
+
+tag @s remove AZS_SoulFrag_Redeem
+
 #wtf
 #scoreboard players set @s AzrielTag10 10
 #scoreboard players operation @s AzrielTagTemp2 = @s AzrielTagTemp1
