@@ -59,4 +59,4 @@ execute if score @s AzrielNPC_ConversationTimer matches 3020..3200 as @a[distanc
 execute if score @s AzrielNPC_ConversationTimer matches 3020..3200 unless entity @a[distance=0..5.5,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 49
 
 
-execute unless entity @a[distance=0..20,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 1
+execute unless entity @a[distance=0..8,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 1
