@@ -102,7 +102,7 @@ execute if score @s AzrEntityTimer matches 1997 run fill -79867 50 -130 -79867 5
 execute if score @s AzrEntityTimer matches 1998 run fill -79867 51 -130 -79867 51 -127 air
 execute if score @s AzrEntityTimer matches 1995..1998 run playsound minecraft:block.iron_door.open block @a -79867 51 -129.0 3 0.5
 
-execute if score @s AzrEntityTimer matches 2011 run tag @s remove AzrielMob
+execute if score @s AzrEntityTimer matches 2011 run tag @n[tag=AzrielBossVillain] remove AzrielMob
 execute if score @s AzrEntityTimer matches 2011 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
 execute if score @s AzrEntityTimer matches 2011 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“你不就是图我身上的绿宝石和石板吗？都给你都给你。”",color:"white",bold: false}]
 execute if score @s AzrEntityTimer matches 2011 run title @a[tag=azrShowDialog] actionbar {text:"Extra Boss Annihilated",color:"green"}
