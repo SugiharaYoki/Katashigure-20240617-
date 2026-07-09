@@ -26,8 +26,8 @@ execute if score @s Azr_Shop_rng8 matches -1 store result score @s Azr_Shop_rng8
 execute if score @s Azr_Shop_rng9 matches -1 store result score @s Azr_Shop_rng9 run random value 21..30
 
 
-execute if entity @s[tag=!AzrSariel_upg7B] run scoreboard players set @s Azr_Shop_rng6 -1
-execute if entity @s[tag=!AzrSariel_upg7B] run scoreboard players set @s Azr_Shop_rng9 -1
+execute if entity @s[tag=!AzrSariel_upg7B] run scoreboard players set @s Azr_Shop_rng6 -2
+execute if entity @s[tag=!AzrSariel_upg7B] run scoreboard players set @s Azr_Shop_rng9 -2
 
 execute if score stage Azr_system matches 50..70 store result score @s rng1 run random value 1..3
 execute if score stage Azr_system matches 50..70 if score @s rng1 matches 1 run scoreboard players set @s Azr_Shop_rng1 -1
