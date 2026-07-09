@@ -6,18 +6,18 @@ execute if score @s AzrielNPC_ConversationTimer matches 10 run tellraw @a[tag=az
 execute if score @s AzrielNPC_ConversationTimer matches 10 run scoreboard players set @s AzrielNPC_ConversationTimer 47
 
 
-execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_305] run tellraw @s [{text:" - "},{text:"交易：今天用恶魔砝码能换到什么好东西？  ",color:"#c4ffbd"},{text:"〈◆〉",bold:1b,color:"#72ff62",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30503"}}]
-execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_305] run tellraw @s [{text:" - "},{text:"询问：这里是哪里？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30501"}}]
-execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_305] run tellraw @s [{text:" - "},{text:"询问：为什么这里已经没有天使了？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30502"}}]
+execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_305] run tellraw @s [{text:" - "},{text:"交易：今天用恶魔砝码能换到什么好东西？  ",color:"#c4ffbd"},{text:"〈◆〉",bold:1b,color:"#72ff62",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30503"}}]
+execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_305] run tellraw @s [{text:" - "},{text:"询问：这里是哪里？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30501"}}]
+execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_305] run tellraw @s [{text:" - "},{text:"询问：为什么这里已经没有天使了？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30502"}}]
 
 
 
-execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_305] run tag @s add azrPlayer_dialogchoice_revealed_305
+execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_305] run tag @s add azrPlayer_dialogchoice_revealed_305
 
 execute if score @s AzrielNPC_ConversationTimer matches 51 run scoreboard players set @s AzrielNPC_ConversationTimer 49
 
 
-execute if score @s AzrielNPC_ConversationTimer matches 24..3000 as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_305] run tag @s remove azrPlayer_dialogchoice_revealed_305
+execute if score @s AzrielNPC_ConversationTimer matches 24..3000 as @a[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_305] run tag @s remove azrPlayer_dialogchoice_revealed_305
 
 
 execute if score @s AzrielNPC_ConversationTimer matches 1002 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
@@ -53,9 +53,9 @@ execute if score @s AzrielNPC_ConversationTimer matches 3006 at @s run function 
 execute if score @s AzrielNPC_ConversationTimer matches 3006 as @a[distance=0..13,tag=azrPlayer] at @s unless items entity @s container.* *[custom_data~{azr_amulet_light_angel_2:1b}] run tellraw @s \
      [{text:" - "},{text:"光明天使的符文 II  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/50 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431570"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n同时具有迫坠石板、退避石板、冲刺石板、枢纽石板、斥跃石板的效果",color:"white"}}}]
 
-execute if score @s AzrielNPC_ConversationTimer matches 3020..3200 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_305] run tag @s add azrPlayer_dialogchoice_revealed_305
+execute if score @s AzrielNPC_ConversationTimer matches 3020..3200 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_305] run tag @s add azrPlayer_dialogchoice_revealed_305
 
-execute if score @s AzrielNPC_ConversationTimer matches 3020..3200 as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_305] run tag @s remove azrPlayer_dialogchoice_revealed_305
+execute if score @s AzrielNPC_ConversationTimer matches 3020..3200 as @a[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_305] run tag @s remove azrPlayer_dialogchoice_revealed_305
 execute if score @s AzrielNPC_ConversationTimer matches 3020..3200 unless entity @a[distance=0..5.5,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 49
 
 
