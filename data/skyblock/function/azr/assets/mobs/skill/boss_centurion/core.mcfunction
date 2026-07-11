@@ -12,12 +12,12 @@ execute if score @s rng9 matches 3000.. run scoreboard players set @s rng9 0
 execute if score @s AzrEntityTimer matches 1 run fill -79768 35 -276 -79768 31 -278 minecraft:red_stained_glass
 
 
-execute if score @s AzrEntityTimer matches 2 positioned -79770 30 -277 run function skyblock:azr/assets/mobs/skill/boss_centurion/summon
+execute if score @s AzrEntityTimer matches 2 positioned -79770 31 -277 run function skyblock:azr/assets/mobs/skill/boss_centurion/summon
 
-execute if score @s AzrEntityTimer matches 61 positioned -79770 30 -277 run bossbar add azr:boss_hp_bar_centurion "施工安全保障 - 百夫长"
-execute if score @s AzrEntityTimer matches 61 positioned -79770 30 -277 run bossbar set azr:boss_hp_bar_centurion color red
-execute if score @s AzrEntityTimer matches 61 positioned -79770 30 -277 run bossbar set azr:boss_hp_bar_centurion max 420
-execute if score @s AzrEntityTimer matches 61 positioned -79770 30 -277 run bossbar set azr:boss_hp_bar_centurion players @a[tag=azrShowDialog]
+execute if score @s AzrEntityTimer matches 61 positioned -79770 31 -277 run bossbar add azr:boss_hp_bar_centurion "施工安全最终保障 - 百夫长"
+execute if score @s AzrEntityTimer matches 61 positioned -79770 31 -277 run bossbar set azr:boss_hp_bar_centurion color red
+execute if score @s AzrEntityTimer matches 61 positioned -79770 31 -277 run bossbar set azr:boss_hp_bar_centurion max 420
+execute if score @s AzrEntityTimer matches 61 positioned -79770 31 -277 run bossbar set azr:boss_hp_bar_centurion players @a[tag=azrShowDialog]
 
 execute positioned -79828 42 136 as @n[tag=AzrielBossCenturion,type=piglin_brute,distance=..50] store result score @s Health run data get entity @s Health
 execute positioned -79828 42 136 store result bossbar azr:boss_hp_bar_centurion value run scoreboard players get @n[tag=AzrielBossCenturion] Health
