@@ -64,8 +64,8 @@ execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run g
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79792,dx=40,y=0,dy=50,z=-288,dz=40] run bossbar remove azr:boss_hp_bar_centurion
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79792,dx=40,y=0,dy=50,z=-288,dz=40] run tp @n[tag=AzrielBossCenturion] ~ ~-200 ~
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79792,dx=40,y=0,dy=50,z=-288,dz=40] run kill @n[tag=AzrielBossCenturion]
+execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79792,dx=40,y=0,dy=50,z=-288,dz=40] run fill -79771 28 -272 -79771 24 -270 minecraft:air
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79792,dx=40,y=0,dy=50,z=-288,dz=40] run function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_centurion
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79792,dx=40,y=0,dy=50,z=-288,dz=40] run stopsound @a[tag=azrShowDialog] music minecraft:garden1.combathigh
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79792,dx=40,y=0,dy=50,z=-288,dz=40] run kill @s
-execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79792,dx=40,y=0,dy=50,z=-288,dz=40] run fill -79771 28 -272 -79771 24 -270 minecraft:air
 
