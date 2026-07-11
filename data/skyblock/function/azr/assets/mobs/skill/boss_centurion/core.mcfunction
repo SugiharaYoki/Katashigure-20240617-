@@ -1,7 +1,7 @@
 
 scoreboard players add @s AzrEntityTimer 1
 
-execute if score @s AzrEntityTimer matches 61..1999 run scoreboard players add @s rng9 1
+execute if score @s AzrEntityTimer matches 41..1999 run scoreboard players add @s rng9 1
 execute if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden1.combathigh music @s ~ ~ ~ 0.65
 execute if score @s rng9 matches 3000.. run scoreboard players set @s rng9 0
 
@@ -12,7 +12,7 @@ execute if score @s rng9 matches 3000.. run scoreboard players set @s rng9 0
 execute if score @s AzrEntityTimer matches 1 run fill -79768 35 -276 -79768 31 -278 minecraft:red_stained_glass
 execute if score @s AzrEntityTimer matches 1 run fill -79771 28 -272 -79771 24 -270 minecraft:red_stained_glass
 
-execute if score @s AzrEntityTimer matches 22 positioned -79770 31 -277 run function skyblock:azr/assets/mobs/skill/boss_centurion/summon
+execute if score @s AzrEntityTimer matches 5 positioned -79770 31 -277 run function skyblock:azr/assets/mobs/skill/boss_centurion/summon
 
 execute if score @s AzrEntityTimer matches 41 positioned -79770 31 -277 run bossbar add azr:boss_hp_bar_centurion "施工安全最终保障 - 百夫长"
 execute if score @s AzrEntityTimer matches 41 positioned -79770 31 -277 run bossbar set azr:boss_hp_bar_centurion color red
