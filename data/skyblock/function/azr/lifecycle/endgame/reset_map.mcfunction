@@ -841,7 +841,7 @@ fill -79757 23 -270 -79757 19 -272 minecraft:red_stained_glass
 
 #初见百夫长
 fill -79768 35 -276 -79768 31 -278 minecraft:barrier
-
+fill -79771 28 -272 -79771 24 -270 minecraft:air
 
 
 

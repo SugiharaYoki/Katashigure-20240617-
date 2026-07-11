@@ -10,7 +10,7 @@ execute if score @s rng9 matches 3000.. run scoreboard players set @s rng9 0
 #EVENT
 
 execute if score @s AzrEntityTimer matches 1 run fill -79768 35 -276 -79768 31 -278 minecraft:red_stained_glass
-
+execute if score @s AzrEntityTimer matches 1 run fill -79771 28 -272 -79771 24 -270 minecraft:red_stained_glass
 
 execute if score @s AzrEntityTimer matches 22 positioned -79770 31 -277 run function skyblock:azr/assets/mobs/skill/boss_centurion/summon
 
@@ -67,5 +67,5 @@ execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79792,dx=40,y=0,dy=50,z=-288,dz=40] run function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_centurion
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79792,dx=40,y=0,dy=50,z=-288,dz=40] run stopsound @a[tag=azrShowDialog] music minecraft:garden1.combathigh
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79792,dx=40,y=0,dy=50,z=-288,dz=40] run kill @s
-
+execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79792,dx=40,y=0,dy=50,z=-288,dz=40] run fill -79771 28 -272 -79771 24 -270 minecraft:air
 
