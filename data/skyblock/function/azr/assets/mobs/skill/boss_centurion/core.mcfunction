@@ -14,7 +14,7 @@ execute if score @s AzrEntityTimer matches 1 run fill -79771 28 -272 -79771 24 -
 
 execute if score @s AzrEntityTimer matches 5 positioned -79770 31 -277 run function skyblock:azr/assets/mobs/skill/boss_centurion/summon
 
-execute if score @s AzrEntityTimer matches 41 positioned -79770 31 -277 run bossbar add azr:boss_hp_bar_centurion "施工安全最终保障 - 百夫长"
+execute if score @s AzrEntityTimer matches 41 positioned -79770 31 -277 run bossbar add azr:boss_hp_bar_centurion "合规工序的理论漏洞 - 百夫长·博物区"
 execute if score @s AzrEntityTimer matches 41 positioned -79770 31 -277 run bossbar set azr:boss_hp_bar_centurion color red
 execute if score @s AzrEntityTimer matches 41 positioned -79770 31 -277 run bossbar set azr:boss_hp_bar_centurion max 620
 execute if score @s AzrEntityTimer matches 41 positioned -79770 31 -277 run bossbar set azr:boss_hp_bar_centurion players @a[tag=azrShowDialog]
