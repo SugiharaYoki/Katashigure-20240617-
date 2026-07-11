@@ -33,8 +33,8 @@ execute if score @s rng1 matches 66 at @n[tag=AzrielMob_piglin_crossbow] run tel
 
 execute if score @s rng1 matches 87 positioned -79747 16 -274 as @n[tag=AzrielMob,type=piglin,distance=0..20] run tag @s add AzrielMob_StageProgressTarget
 execute if score @s rng1 matches 89 positioned -79747 16 -274 if entity @n[tag=AzrielMob_StageProgressTarget,type=piglin,distance=0..20] run scoreboard players set @s rng1 88
-execute if score @s rng1 matches 91 positioned -79795 7 -278 unless entity @a[tag=azrPlayer,x=-79762,y=15,z=-297,dx=30,dy=12,dz=30] run fill -79745 16 -297 -79750 22 -297 air replace red_stained_glass destroy
-execute if score @s rng1 matches 91 positioned -79795 7 -278 unless entity @a[tag=azrPlayer,x=-79762,y=15,z=-297,dx=30,dy=12,dz=30] run fill -79757 23 -270 -79757 19 -272 air replace red_stained_glass destroy
+execute if score @s rng1 matches 91 positioned -79795 7 -278 run fill -79745 16 -297 -79750 22 -297 air replace red_stained_glass destroy
+execute if score @s rng1 matches 91 positioned -79795 7 -278 run fill -79757 23 -270 -79757 19 -272 air replace red_stained_glass destroy
 execute if score @s rng1 matches 91 positioned -79759 19 -266 run function skyblock:azr/assets/mobs/piglin_sword
 execute if score @s rng1 matches 91 positioned -79760 19 -266 run function skyblock:azr/assets/mobs/piglin_sword
 
