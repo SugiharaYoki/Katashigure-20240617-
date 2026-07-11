@@ -32,7 +32,7 @@ execute positioned -79771 2 -272 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79748 15 -272 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_4/factory/battle_museum_hallway
 
 #战斗：百夫长
-execute positioned -79778 30 -280 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,x=-79778,y=29,z=-280,dx=4,dy=5,dz=5] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79778 30 -280 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,x=-79778,y=30,z=-280,dx=4,dy=5,dz=5] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79778 30 -280 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_4/factory/battle_museum_centurion
 
 

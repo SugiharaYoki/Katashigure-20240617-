@@ -839,6 +839,11 @@ fill -79739 17 -275 -79742 17 -275 minecraft:potted_crimson_fungus
 fill -79745 16 -297 -79750 22 -297 air replace minecraft:red_stained_glass
 fill -79757 23 -270 -79757 19 -272 minecraft:red_stained_glass
 
+#初见百夫长
+fill -79768 35 -276 -79768 31 -278 minecraft:barrier
+
+
+
 
 #stage13
   #隐藏内房

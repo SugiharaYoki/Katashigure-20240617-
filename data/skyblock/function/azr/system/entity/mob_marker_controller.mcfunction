@@ -10,6 +10,8 @@ execute as @s[tag=AzrielMob_electric_blast] at @s run function skyblock:azr/asse
 
 execute as @s[tag=AzrielMob_boss_mossboss_spore_marker] at @s run function skyblock:azr/assets/mobs/skill/boss_mossboss/marker_spore
 
+execute as @s[tag=AzrielMob_boss_centurion_sprint_axe_marker] at @s run function skyblock:azr/assets/mobs/skill/boss_centurion/marker_sprint_axe
+
 execute as @s[tag=AzrielMob_boss_diesel_fire_marker] at @s run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire
 execute as @s[tag=AzrielMob_boss_diesel_fire_outround_marker] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_diesel/marker_fire_outround
 
@@ -29,8 +31,11 @@ execute if entity @s[tag=AzrielMob_trap_fang] run function skyblock:azr/assets/m
 execute if entity @s[tag=AzrielMob_trap_sonic_laser] run function skyblock:azr/assets/mobs/skill/trap_sonic_laser
 execute if entity @s[tag=AzrielMob_trap_metal_gas] run function skyblock:azr/assets/mobs/skill/trap_metal_gas
 execute if entity @s[tag=AzrielMob_trap_dripstone] run function skyblock:azr/assets/mobs/skill/trap_dripstone
+execute if entity @s[tag=AzrielMob_trap_axe] run function skyblock:azr/assets/mobs/skill/trap_axe
 
 execute if entity @s[tag=AzrielMob_mob_marker_dripstone_aiguille] run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille
+
+
 
 
 execute if entity @s[tag=AzrielMob_generic_pillar_attack_small] run function skyblock:azr/assets/mobs/skill/undead_pickaxe_marker_release

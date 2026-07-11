@@ -1,17 +1,8 @@
 
-execute at @s run particle large_smoke ~ ~1 ~ 0.2 1 0.2 0.03 10
-execute at @s run particle portal ~ ~1 ~ 0.2 1 0.2 0.03 20
-execute at @s run playsound entity.enderman.teleport hostile @a ~ ~ ~ 1.2 1.2
+execute if score @s rng8 matches 1 run function skyblock:azr/assets/mobs/skill/boss_centurion/move_backstep
 
-execute if entity @s[scores={rng5=1}] at @p[tag=azrPlayer] rotated as @p[tag=azrPlayer] rotated ~ 0 positioned ^ ^ ^3.6 unless block ~ ~-0.8 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run tp @s ~ ~ ~
-execute if entity @s[scores={rng5=2}] at @p[tag=azrPlayer] rotated as @p[tag=azrPlayer] rotated ~ 0 positioned ^ ^ ^-3.6 unless block ~ ~-0.8 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run tp @s ~ ~ ~
-execute if entity @s[scores={rng5=3}] at @p[tag=azrPlayer] rotated as @p[tag=azrPlayer] rotated ~ 0 positioned ^3.6 ^ ^ unless block ~ ~-0.8 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run tp @s ~ ~ ~
-execute if entity @s[scores={rng5=4}] at @p[tag=azrPlayer] rotated as @p[tag=azrPlayer] rotated ~ 0 positioned ^-3.6 ^ ^ unless block ~ ~-0.8 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run tp @s ~ ~ ~
-execute if entity @s[scores={rng5=5}] at @p[tag=azrPlayer] rotated as @p[tag=azrPlayer] rotated ~ 0 positioned ^ ^ ^3 unless block ~ ~-0.8 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run tp @s ~ ~ ~
-execute if entity @s[scores={rng5=6}] at @p[tag=azrPlayer] rotated as @p[tag=azrPlayer] rotated ~ 0 positioned ^ ^ ^-3 unless block ~ ~-0.8 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run tp @s ~ ~ ~
-execute if entity @s[scores={rng5=7}] at @p[tag=azrPlayer] rotated as @p[tag=azrPlayer] rotated ~ 0 positioned ^3 ^ ^ unless block ~ ~-0.8 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run tp @s ~ ~ ~
-execute if entity @s[scores={rng5=8}] at @p[tag=azrPlayer] rotated as @p[tag=azrPlayer] rotated ~ 0 positioned ^-3 ^ ^ unless block ~ ~-0.8 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run tp @s ~ ~ ~
+execute if score @s rng8 matches 11 run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_centurion_sprint_axe_marker","AzrielMob_mob_marker"]}
+execute if score @s rng8 matches 11 run effect give @s speed 1 3 true
 
-
-execute at @s run particle reverse_portal ~ ~1 ~ 0.2 1 0.2 0.03 20
-execute at @s run playsound entity.enderman.teleport hostile @a ~ ~ ~ 1.2 1.2
+execute if score @s rng8 matches 40.. run scoreboard players set @s rng2 0
+execute if score @s rng8 matches 40.. run scoreboard players set @s rng8 -10
