@@ -35,6 +35,7 @@ execute as @n[type=piglin,tag=AzrielMob,tag=!AzrielMob_level_ed,scores={rng1=9..
 execute as @n[type=piglin,tag=AzrielMob,tag=!AzrielMob_level_ed,tag=AzrielMob_level_3] at @s run scoreboard players set @s AzrielMobLevel 3
 execute as @n[type=piglin,tag=AzrielMob,tag=!AzrielMob_level_ed,tag=AzrielMob_level_4] at @s run scoreboard players set @s AzrielMobLevel 4
 execute as @n[type=piglin,tag=AzrielMob,tag=!AzrielMob_level_ed,tag=AzrielMob_level_5] at @s run scoreboard players set @s AzrielMobLevel 5
+execute as @n[type=piglin,tag=AzrielMob,tag=!AzrielMob_level_ed] at @s run data modify entity @s drop_chances.offhand set value 0.0f
 execute as @n[type=piglin,tag=AzrielMob,tag=!AzrielMob_level_ed] at @s run tag @s add AzrielMob_level_ed
 
 
