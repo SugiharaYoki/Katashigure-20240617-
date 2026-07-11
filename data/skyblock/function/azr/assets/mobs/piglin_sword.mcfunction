@@ -36,9 +36,9 @@ execute as @n[type=piglin,tag=AzrielMob,tag=!AzrielMob_level_ed,scores={rng1=11}
 
 execute as @n[type=piglin,tag=AzrielMob,tag=!AzrielMob_level_ed,tag=AzrielMob_level_4] at @s store result score @s rng1 run random value 1..20
 execute as @n[type=piglin,tag=AzrielMob,tag=!AzrielMob_level_ed,tag=AzrielMob_level_5] at @s store result score @s rng1 run random value 2..20
-execute as @n[type=piglin,tag=AzrielMob,tag=!AzrielMob_level_ed,scores={rng1=6}] run item replace entity @s weapon.offhand with shield
+execute as @n[type=piglin,tag=AzrielMob,tag=!AzrielMob_level_ed,scores={rng1=6}] run item replace entity @s weapon.mainhand with shield
 execute as @n[type=piglin,tag=AzrielMob,tag=!AzrielMob_level_ed,scores={rng1=6}] run attribute @s movement_speed modifier add azr:piglin_generic_holdingshield_1 -0.08 add_value
-execute as @n[type=piglin,tag=AzrielMob,tag=!AzrielMob_level_ed,scores={rng1=8}] run item replace entity @s weapon.offhand with spyglass
+execute as @n[type=piglin,tag=AzrielMob,tag=!AzrielMob_level_ed,scores={rng1=8}] run item replace entity @s weapon.mainhand with spyglass
 execute as @n[type=piglin,tag=AzrielMob,tag=!AzrielMob_level_ed,scores={rng1=8}] run attribute @s movement_speed modifier add azr:piglin_generic_holdingspyglass_1 0.02 add_value
 execute as @n[type=piglin,tag=AzrielMob,tag=!AzrielMob_level_ed,scores={rng1=8}] run attribute @s attack_knockback modifier add azr:piglin_generic_holdingspyglass_1 -0.3 add_multiplied_base
 execute as @n[type=piglin,tag=AzrielMob,tag=!AzrielMob_level_ed,scores={rng1=8}] run attribute @s attack_damage modifier add azr:piglin_generic_holdingspyglass_1 -1 add_value
