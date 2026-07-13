@@ -24,6 +24,18 @@ execute if score @s AzrEntityTimer matches 54 at @s rotated 40.0 0.0 run functio
 execute if score @s AzrEntityTimer matches 54 at @s run tp @s ~ ~0.1 ~ ~135 ~
 execute if score @s AzrEntityTimer matches 64 at @s rotated 50.0 0.0 run function skyblock:azr/system/player/weapons/arrow_box/hexagon
 execute if score @s AzrEntityTimer matches 64 at @s run tp @s ~ ~0.1 ~ ~135 ~
-execute if score @s AzrEntityTimer matches 74 at @s run particle large_smoke ~ ~ ~ 0 0 0 0.01 5
-execute if score @s AzrEntityTimer matches 74 at @s run playsound entity.item.break master @a ~ ~ ~
-execute if score @s AzrEntityTimer matches 74 run kill @s
+execute if score @s AzrEntityTimer matches 74 at @s unless items entity @a[distance=..50,tag=azrPlayer] container.* *[custom_data~{azr_amulet_arrow_split:1b}] run scoreboard players set @s AzrEntityTimer 200
+
+execute if score @s AzrEntityTimer matches 74 at @s rotated 50.0 0.0 run function skyblock:azr/system/player/weapons/arrow_box/hexagon
+execute if score @s AzrEntityTimer matches 74 at @s run tp @s ~ ~0.1 ~ ~135 ~
+execute if score @s AzrEntityTimer matches 84 at @s rotated 50.0 0.0 run function skyblock:azr/system/player/weapons/arrow_box/hexagon
+execute if score @s AzrEntityTimer matches 84 at @s run tp @s ~ ~0.1 ~ ~135 ~
+execute if score @s AzrEntityTimer matches 94 at @s rotated 50.0 0.0 run function skyblock:azr/system/player/weapons/arrow_box/hexagon
+execute if score @s AzrEntityTimer matches 94 at @s run tp @s ~ ~0.1 ~ ~135 ~
+
+
+
+
+execute if score @s AzrEntityTimer matches 200.. at @s run particle large_smoke ~ ~ ~ 0 0 0 0.01 5
+execute if score @s AzrEntityTimer matches 200.. at @s run playsound entity.item.break master @a ~ ~ ~
+execute if score @s AzrEntityTimer matches 200.. run kill @s

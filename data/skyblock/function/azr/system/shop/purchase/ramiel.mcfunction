@@ -168,4 +168,11 @@ execute as @s[scores={Azr_Shop=8431580}] \
     unless function skyblock:azr/system/shop/purchase/ramiel/botanical_charm_brave_charm \
     run scoreboard players set tempPlayerShopSuccess Azr_system 1
 
+execute as @s[scores={Azr_Shop=8431581}] \
+    positioned -79977 -51 12 if entity @s[distance=..13] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s Azr_currency_weight matches 40.. \
+    unless function skyblock:azr/system/shop/purchase/ramiel/botanical_charm_arrow_split \
+    run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
 
