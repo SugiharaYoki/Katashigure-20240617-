@@ -33,6 +33,7 @@ execute if score @s AzrEntityTimer matches 84 at @s run tp @s ~ ~0.1 ~ ~135 ~
 execute if score @s AzrEntityTimer matches 94 at @s rotated 50.0 0.0 run function skyblock:azr/system/player/weapons/arrow_box/hexagon
 execute if score @s AzrEntityTimer matches 94 at @s run tp @s ~ ~0.1 ~ ~135 ~
 
+execute if score @s AzrEntityTimer matches 104 at @s run scoreboard players set @s AzrEntityTimer 200
 
 
 
