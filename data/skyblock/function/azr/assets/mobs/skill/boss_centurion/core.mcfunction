@@ -43,7 +43,7 @@ execute positioned -79770 31 -277 store result bossbar azr:boss_hp_bar_centurion
     execute as @n[tag=AzrielBossCenturion] at @s if score @s rng8 matches 40..9999 run scoreboard players set @s rng2 0
     execute as @n[tag=AzrielBossCenturion] at @s if score @s rng8 matches 40..9999 run scoreboard players set @s rng8 -1
 
-    execute if score @n[tag=AzrielBossCenturion] rng8 matches 99999.. run scoreboard players set @s AzrEntityTimer 2000
+    execute if score @n[tag=AzrielBossCenturion] rng8 matches 100000 run scoreboard players set @s AzrEntityTimer 2000
 
 
 #MARKER
