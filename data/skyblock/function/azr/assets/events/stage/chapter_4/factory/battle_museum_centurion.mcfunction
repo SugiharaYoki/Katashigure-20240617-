@@ -23,42 +23,42 @@ execute if score @s rng1 matches 92 positioned -79795 7 -278 run tellraw @a[tag=
 execute if score @s rng1 matches 106 positioned -79795 7 -278 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng1 matches 106 positioned -79795 7 -278 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“前面绝对畅通无阻了。我们在上头汇合吧，老大！”",color:"white"}]
 
-execute if score @s rng1 matches 92 run summon minecraft:armor_stand -79756.5 42.00 -247.5 {equipment:{head:{id:"iron_helmet"},chest:{id:"iron_chestplate"}},Rotation:[180.0,0.0]}
-execute if score @s rng1 matches 92 run summon minecraft:armor_stand -79759.5 42.00 -247.5 {equipment:{head:{id:"iron_helmet"},chest:{id:"iron_chestplate"}},Rotation:[180.0,0.0]}
-execute if score @s rng1 matches 92 run summon minecraft:armor_stand -79760.5 42.00 -247.5 {equipment:{head:{id:"iron_helmet"},chest:{id:"iron_chestplate"}},Rotation:[180.0,0.0]}
-execute if score @s rng1 matches 92 run summon minecraft:armor_stand -79757.5 43.00 -246.5 {equipment:{head:{id:"iron_helmet"},chest:{id:"iron_chestplate"}},Rotation:[180.0,0.0]}
-execute if score @s rng1 matches 92 run summon minecraft:armor_stand -79761.5 43.00 -246.5 {equipment:{head:{id:"iron_helmet"},chest:{id:"iron_chestplate"}},Rotation:[180.0,0.0]}
-execute if score @s rng1 matches 92 run summon minecraft:armor_stand -79763.5 43.00 -246.5 {equipment:{head:{id:"iron_helmet"},chest:{id:"iron_chestplate"}},Rotation:[180.0,0.0]}
+execute if score @s rng1 matches 93 run summon minecraft:armor_stand -79756.5 42.00 -247.5 {equipment:{head:{id:"iron_helmet"},chest:{id:"iron_chestplate"}},Rotation:[180.0,0.0]}
+execute if score @s rng1 matches 93 run summon minecraft:armor_stand -79759.5 42.00 -247.5 {equipment:{head:{id:"iron_helmet"},chest:{id:"iron_chestplate"}},Rotation:[180.0,0.0]}
+execute if score @s rng1 matches 93 run summon minecraft:armor_stand -79760.5 42.00 -247.5 {equipment:{head:{id:"iron_helmet"},chest:{id:"iron_chestplate"}},Rotation:[180.0,0.0]}
+execute if score @s rng1 matches 93 run summon minecraft:armor_stand -79757.5 43.00 -246.5 {equipment:{head:{id:"iron_helmet"},chest:{id:"iron_chestplate"}},Rotation:[180.0,0.0]}
+execute if score @s rng1 matches 93 run summon minecraft:armor_stand -79761.5 43.00 -246.5 {equipment:{head:{id:"iron_helmet"},chest:{id:"iron_chestplate"}},Rotation:[180.0,0.0]}
+execute if score @s rng1 matches 93 run summon minecraft:armor_stand -79763.5 43.00 -246.5 {equipment:{head:{id:"iron_helmet"},chest:{id:"iron_chestplate"}},Rotation:[180.0,0.0]}
 
-execute if score @s rng1 matches 92 run summon minecraft:armor_stand -79757.5 42.00 -247.5 {equipment:{head:{id:"golden_helmet"},chest:{id:"golden_chestplate"}},Rotation:[180.0,0.0]}
-execute if score @s rng1 matches 92 run summon minecraft:armor_stand -79761.5 42.00 -247.5 {equipment:{head:{id:"netherite_helmet"},chest:{id:"netherite_chestplate"}},Rotation:[180.0,0.0]}
-execute if score @s rng1 matches 92 run summon minecraft:armor_stand -79762.5 42.00 -247.5 {equipment:{head:{id:"golden_helmet"},chest:{id:"golden_chestplate"}},Rotation:[180.0,0.0]}
-execute if score @s rng1 matches 92 run summon minecraft:armor_stand -79758.5 43.00 -246.5 {equipment:{head:{id:"golden_helmet"},chest:{id:"golden_chestplate"}},Rotation:[180.0,0.0]}
-execute if score @s rng1 matches 92 run summon minecraft:armor_stand -79760.5 43.00 -246.5 {equipment:{head:{id:"netherite_helmet"},chest:{id:"netherite_chestplate"}},Rotation:[180.0,0.0]}
-execute if score @s rng1 matches 92 run summon minecraft:armor_stand -79762.5 43.00 -246.5 {equipment:{head:{id:"golden_helmet"},chest:{id:"golden_chestplate"}},Rotation:[180.0,0.0]}
+execute if score @s rng1 matches 93 run summon minecraft:armor_stand -79757.5 42.00 -247.5 {equipment:{head:{id:"golden_helmet"},chest:{id:"golden_chestplate"}},Rotation:[180.0,0.0]}
+execute if score @s rng1 matches 93 run summon minecraft:armor_stand -79761.5 42.00 -247.5 {equipment:{head:{id:"netherite_helmet"},chest:{id:"netherite_chestplate"}},Rotation:[180.0,0.0]}
+execute if score @s rng1 matches 93 run summon minecraft:armor_stand -79762.5 42.00 -247.5 {equipment:{head:{id:"golden_helmet"},chest:{id:"golden_chestplate"}},Rotation:[180.0,0.0]}
+execute if score @s rng1 matches 93 run summon minecraft:armor_stand -79758.5 43.00 -246.5 {equipment:{head:{id:"golden_helmet"},chest:{id:"golden_chestplate"}},Rotation:[180.0,0.0]}
+execute if score @s rng1 matches 93 run summon minecraft:armor_stand -79760.5 43.00 -246.5 {equipment:{head:{id:"netherite_helmet"},chest:{id:"netherite_chestplate"}},Rotation:[180.0,0.0]}
+execute if score @s rng1 matches 93 run summon minecraft:armor_stand -79762.5 43.00 -246.5 {equipment:{head:{id:"golden_helmet"},chest:{id:"golden_chestplate"}},Rotation:[180.0,0.0]}
 
-execute if score @s rng1 matches 92 positioned -79752 40 -255 run function skyblock:azr/assets/mobs/piglin_crossbow
-execute if score @s rng1 matches 92 positioned -79752 40 -255 run function skyblock:azr/assets/mobs/piglin_crossbow
-execute if score @s rng1 matches 92 positioned -79752 40 -255 run function skyblock:azr/assets/mobs/piglin_crossbow
-execute if score @s rng1 matches 92 positioned -79752 40 -255 run function skyblock:azr/assets/mobs/piglin_crossbow
-execute if score @s rng1 matches 92 positioned -79790 40 -255 run function skyblock:azr/assets/mobs/piglin_crossbow
-execute if score @s rng1 matches 92 positioned -79790 40 -255 run function skyblock:azr/assets/mobs/piglin_crossbow
-execute if score @s rng1 matches 92 positioned -79790 40 -255 run function skyblock:azr/assets/mobs/piglin_crossbow
-execute if score @s rng1 matches 92 positioned -79762 31 -273 run function skyblock:azr/assets/mobs/piglin_sword
+execute if score @s rng1 matches 93 positioned -79752 40 -255 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute if score @s rng1 matches 93 positioned -79752 40 -255 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute if score @s rng1 matches 93 positioned -79752 40 -255 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute if score @s rng1 matches 93 positioned -79752 40 -255 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute if score @s rng1 matches 93 positioned -79790 40 -255 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute if score @s rng1 matches 93 positioned -79790 40 -255 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute if score @s rng1 matches 93 positioned -79790 40 -255 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute if score @s rng1 matches 93 positioned -79762 31 -273 run function skyblock:azr/assets/mobs/piglin_sword
 
-execute if score @s rng1 matches 92 positioned -79748 40 -253 run function skyblock:azr/assets/mobs/magma_cube_block
-execute if score @s rng1 matches 92 positioned -79741 40 -254 run function skyblock:azr/assets/mobs/magma_cube_block
-execute if score @s rng1 matches 92 positioned -79775 40 -253 run function skyblock:azr/assets/mobs/magma_cube_block
-execute if score @s rng1 matches 92 positioned -79728 40 -253 run function skyblock:azr/assets/mobs/magma_cube_block
+execute if score @s rng1 matches 93 positioned -79748 40 -253 run function skyblock:azr/assets/mobs/magma_cube_block
+execute if score @s rng1 matches 93 positioned -79741 40 -254 run function skyblock:azr/assets/mobs/magma_cube_block
+execute if score @s rng1 matches 93 positioned -79775 40 -253 run function skyblock:azr/assets/mobs/magma_cube_block
+execute if score @s rng1 matches 93 positioned -79728 40 -253 run function skyblock:azr/assets/mobs/magma_cube_block
 
-execute if score @s rng1 matches 92 positioned -79786 43 -288 run function skyblock:azr/assets/mobs/utility_respawn_anchor
+execute if score @s rng1 matches 93 positioned -79786 43 -288 run function skyblock:azr/assets/mobs/utility_respawn_anchor
 
-execute if score @s rng1 matches 92 positioned -79781 43 -280 run function skyblock:azr/assets/mobs/piglin_sword
-execute if score @s rng1 matches 92 positioned -79781 43 -280 run function skyblock:azr/assets/mobs/piglin_sword
-execute if score @s rng1 matches 92 positioned -79781 43 -280 run function skyblock:azr/assets/mobs/piglin_sword
-execute if score @s rng1 matches 92 positioned -79765 43 -280 run function skyblock:azr/assets/mobs/piglin_sword
-execute if score @s rng1 matches 92 positioned -79765 43 -280 run function skyblock:azr/assets/mobs/piglin_sword
-execute if score @s rng1 matches 92 positioned -79765 43 -280 run function skyblock:azr/assets/mobs/piglin_sword
+execute if score @s rng1 matches 93 positioned -79781 43 -280 run function skyblock:azr/assets/mobs/piglin_sword
+execute if score @s rng1 matches 93 positioned -79781 43 -280 run function skyblock:azr/assets/mobs/piglin_sword
+execute if score @s rng1 matches 93 positioned -79781 43 -280 run function skyblock:azr/assets/mobs/piglin_sword
+execute if score @s rng1 matches 93 positioned -79765 43 -280 run function skyblock:azr/assets/mobs/piglin_sword
+execute if score @s rng1 matches 93 positioned -79765 43 -280 run function skyblock:azr/assets/mobs/piglin_sword
+execute if score @s rng1 matches 93 positioned -79765 43 -280 run function skyblock:azr/assets/mobs/piglin_sword
 
 
 
