@@ -51,4 +51,13 @@ execute if score @s rng1 matches 92 positioned -79741 40 -254 run function skybl
 execute if score @s rng1 matches 92 positioned -79775 40 -253 run function skyblock:azr/assets/mobs/magma_cube_block
 execute if score @s rng1 matches 92 positioned -79728 40 -253 run function skyblock:azr/assets/mobs/magma_cube_block
 
+execute if score @s rng1 matches 92 positioned -79786 43 -288 run function skyblock:azr/assets/mobs/utility_respawn_anchor
+
+
+
+
+
+
+
+
 
