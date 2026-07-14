@@ -856,6 +856,16 @@ setblock -79764 32 -275 minecraft:potted_poppy
 
 
 #stage13
+setblock -79784 42 -283 air
+setblock -79784 42 -283 lever[facing=north]
+
+
+
+
+
+
+
+
   #隐藏内房
 setblock -79789 27 -288 nether_brick_fence
 setblock -79789 28 -288 nether_brick_fence
