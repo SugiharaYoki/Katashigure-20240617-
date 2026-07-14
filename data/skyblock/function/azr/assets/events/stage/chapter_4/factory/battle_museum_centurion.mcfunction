@@ -37,7 +37,13 @@ execute if score @s rng1 matches 92 run summon minecraft:armor_stand -79758.5 43
 execute if score @s rng1 matches 92 run summon minecraft:armor_stand -79760.5 43.00 -246.5 {equipment:{head:{id:"netherite_helmet"},chest:{id:"netherite_chestplate"}},Rotation:[180.0,0.0]}
 execute if score @s rng1 matches 92 run summon minecraft:armor_stand -79762.5 43.00 -246.5 {equipment:{head:{id:"golden_helmet"},chest:{id:"golden_chestplate"}},Rotation:[180.0,0.0]}
 
-
+execute if score @s rng1 matches 92 positioned -79752 40 -255 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute if score @s rng1 matches 92 positioned -79752 40 -255 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute if score @s rng1 matches 92 positioned -79752 40 -255 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute if score @s rng1 matches 92 positioned -79752 40 -255 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute if score @s rng1 matches 92 positioned -79790 40 -255 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute if score @s rng1 matches 92 positioned -79790 40 -255 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute if score @s rng1 matches 92 positioned -79790 40 -255 run function skyblock:azr/assets/mobs/piglin_crossbow
 
 
 
