@@ -53,6 +53,12 @@ execute if score @s rng1 matches 92 positioned -79728 40 -253 run function skybl
 
 execute if score @s rng1 matches 92 positioned -79786 43 -288 run function skyblock:azr/assets/mobs/utility_respawn_anchor
 
+execute if score @s rng1 matches 92 positioned -79781 43 -280 run function skyblock:azr/assets/mobs/piglin_sword
+execute if score @s rng1 matches 92 positioned -79781 43 -280 run function skyblock:azr/assets/mobs/piglin_sword
+execute if score @s rng1 matches 92 positioned -79781 43 -280 run function skyblock:azr/assets/mobs/piglin_sword
+execute if score @s rng1 matches 92 positioned -79765 43 -280 run function skyblock:azr/assets/mobs/piglin_sword
+execute if score @s rng1 matches 92 positioned -79765 43 -280 run function skyblock:azr/assets/mobs/piglin_sword
+execute if score @s rng1 matches 92 positioned -79765 43 -280 run function skyblock:azr/assets/mobs/piglin_sword
 
 
 
