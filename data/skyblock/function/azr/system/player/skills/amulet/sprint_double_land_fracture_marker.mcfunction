@@ -37,7 +37,7 @@ execute if score @s rng1 matches 1 at @s rotated ~340 0 run particle enchant ^ ^
 execute if score @s rng1 matches 10.. rotated 0 0 run playsound minecraft:entity.player.attack.knockback player @a ~ ~ ~ 0.8 1.4
 execute if score @s rng1 matches 10.. rotated 0 0 run playsound entity.player.attack.sweep player @a ~ ~ ~ 0.8 0.9
 execute if score @s rng1 matches 10.. run particle white_smoke ~ ~1 ~ 0 2 0 0 32
-execute if score @s rng1 matches 10.. run particle trial_spawner_detection_ominous ~ ~ ~ 0 0 0 0 8
+execute if score @s rng1 matches 10.. run particle trial_spawner_detection ~ ~ ~ 0.3 0 0.3 0 8
 
 
 
