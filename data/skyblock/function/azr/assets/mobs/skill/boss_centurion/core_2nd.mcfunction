@@ -74,5 +74,8 @@ execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79844,dx=40,y=24,dy=20,z=-300,dz=40] run fill -79808 31 -282 -79808 27 -286 minecraft:air
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79844,dx=40,y=24,dy=20,z=-300,dz=40] run function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_centurion
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79844,dx=40,y=24,dy=20,z=-300,dz=40] run stopsound @a[tag=azrShowDialog] music minecraft:renegade
-execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79844,dx=40,y=24,dy=20,z=-300,dz=40] run kill @s
 
+execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79844,dx=40,y=24,dy=20,z=-300,dz=40] positioned -79831 27 -284 run function skyblock:azr/assets/mobs/skill/boss_centurion/summon_2nd
+execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79844,dx=40,y=24,dy=20,z=-300,dz=40] positioned -79831 27 -284 run effect give @e[tag=AzrielBossCenturion,type=piglin_brute,distance=..50] slowness infinite 99 true
+execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79844,dx=40,y=24,dy=20,z=-300,dz=40] positioned -79831 27 -284 run effect give @e[tag=AzrielBossCenturion,type=piglin_brute,distance=..50] resistance infinite 99 true
+execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79844,dx=40,y=24,dy=20,z=-300,dz=40] run kill @s

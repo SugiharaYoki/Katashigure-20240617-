@@ -19,15 +19,6 @@ execute if score @s rng1 matches 61 positioned -79795 7 -278 run tellraw @a[tag=
 execute if score @s rng1 matches 90..91 if entity @n[tag=AzrielBossCenturion] run scoreboard players set @s rng1 90
 
 execute if score @s rng1 matches 92 positioned -79831 27 -284 run function skyblock:azr/assets/mobs/skill/boss_centurion/summon_2nd
-execute if score @s rng1 matches 93 run scoreboard players set @s rng2 0
-execute if score @s rng1 matches 93 run scoreboard players set @s rng3 0
-execute if score @s rng1 matches 93 run scoreboard players set @s rng4 0
-execute if score @s rng1 matches 93 run scoreboard players set @s rng5 0
-execute if score @s rng1 matches 93 run scoreboard players set @s rng6 0
-execute if score @s rng1 matches 93 run scoreboard players set @s rng7 0
-execute if score @s rng1 matches 93 run scoreboard players set @s rng8 0
-execute if score @s rng1 matches 93 run scoreboard players set @s rng9 0
-execute if score @s rng1 matches 93 run scoreboard players set @s AzrEntityTimer 0
 execute if score @s rng1 matches 93 positioned -79831 27 -284 run effect give @e[tag=AzrielBossCenturion,type=piglin_brute,distance=..50] slowness infinite 99 true
 execute if score @s rng1 matches 93 positioned -79831 27 -284 run effect give @e[tag=AzrielBossCenturion,type=piglin_brute,distance=..50] resistance infinite 99 true
 
