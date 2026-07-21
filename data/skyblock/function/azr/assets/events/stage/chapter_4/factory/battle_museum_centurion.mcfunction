@@ -18,10 +18,17 @@ execute if score @s rng1 matches 61 positioned -79795 7 -278 run tellraw @a[tag=
 
 execute if score @s rng1 matches 90..91 if entity @n[tag=AzrielBossCenturion] run scoreboard players set @s rng1 90
 
+execute if score @s rng1 matches 92 positioned -79831 27 -284 run function skyblock:azr/assets/mobs/skill/boss_centurion/summon_2nd
+execute if score @s rng1 matches 92 positioned -79831 27 -284 run effect give @n[type=piglin_brute,distance=..5] slowness infinite 99 true
+execute if score @s rng1 matches 92 positioned -79831 27 -284 run effect give @n[type=piglin_brute,distance=..5] resistance infinite 99 true
+
 execute if score @s rng1 matches 92 positioned -79795 7 -278 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng1 matches 92 positioned -79795 7 -278 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“哈哈我就猜到，我就猜到！他跑了！”",color:"white"}]
 execute if score @s rng1 matches 106 positioned -79795 7 -278 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng1 matches 106 positioned -79795 7 -278 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“前面绝对畅通无阻了。我们在上头汇合吧，老大！”",color:"white"}]
+
+
+
 
 execute if score @s rng1 matches 93 run summon minecraft:armor_stand -79756.5 42.00 -247.5 {equipment:{head:{id:"iron_helmet"},chest:{id:"iron_chestplate"}},Rotation:[180.0,0.0]}
 execute if score @s rng1 matches 93 run summon minecraft:armor_stand -79759.5 42.00 -247.5 {equipment:{head:{id:"iron_helmet"},chest:{id:"iron_chestplate"}},Rotation:[180.0,0.0]}

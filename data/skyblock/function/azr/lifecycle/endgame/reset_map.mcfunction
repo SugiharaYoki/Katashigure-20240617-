@@ -843,6 +843,8 @@ fill -79757 23 -270 -79757 19 -272 minecraft:red_stained_glass
 fill -79768 35 -276 -79768 31 -278 minecraft:barrier
 fill -79771 28 -272 -79771 24 -270 minecraft:air
 fill -79778 31 -280 -79777 32 -280 anvil[facing=east]
+  #二见百夫长
+  fill -79808 31 -282 -79808 27 -286 minecraft:air
 
 #工厂花卉
 setblock -79756 41 -251 minecraft:potted_poppy
