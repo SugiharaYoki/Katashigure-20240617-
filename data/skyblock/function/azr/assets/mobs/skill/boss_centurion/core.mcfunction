@@ -64,8 +64,6 @@ execute if score @s AzrEntityTimer matches 2005 as @n[tag=AzrielBossCenturion] a
 
 execute if score @s AzrEntityTimer matches 2005 run stopsound @a[tag=azrShowDialog]
 execute if score @s AzrEntityTimer matches 2005 run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 10 0.7
-execute if score @s AzrEntityTimer matches 2010 run title @a[tag=azrShowDialog] actionbar {text:"Boss Annihilated",color:"green"}
-execute if score @s AzrEntityTimer matches 2010 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/sub_boss_centurion
 execute if score @s AzrEntityTimer matches 2010 run bossbar remove azr:boss_hp_bar_centurion
 execute if score @s AzrEntityTimer matches 2010 run fill -79768 35 -276 -79768 31 -278 minecraft:air destroy
 #execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB03
