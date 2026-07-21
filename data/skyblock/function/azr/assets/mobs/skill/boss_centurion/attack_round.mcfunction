@@ -163,4 +163,4 @@ execute if score @s rng8 matches 16 rotated ~340 0 positioned ^ ^ ^20 run summon
 
 
 execute if score @s rng8 matches 20.. run scoreboard players set @s rng2 0
-execute if score @s rng8 matches 20.. run scoreboard players set @s rng8 99999
+execute if score @s[tag=!AzrielBossCenturion_2nd] rng8 matches 20.. run scoreboard players set @s rng8 99999
