@@ -9,13 +9,15 @@ execute if score @s rng9 matches 572.. run scoreboard players set @s rng9 0
 
 #EVENT
 
+execute if score @s AzrEntityTimer matches 1 as @n[tag=AzrielBossCenturion,type=piglin_brute,distance=..100] at @s run effect clear @s slowness
+execute if score @s AzrEntityTimer matches 1 as @n[tag=AzrielBossCenturion,type=piglin_brute,distance=..100] at @s run effect clear @s resistance
 execute if score @s AzrEntityTimer matches 1 run fill -79808 31 -282 -79808 27 -286 minecraft:red_stained_glass
 
 
-execute if score @s AzrEntityTimer matches 41 positioned -79770 31 -277 run bossbar add azr:boss_hp_bar_centurion "合规工序的超理论漏洞 - 百夫长 · 博物区"
-execute if score @s AzrEntityTimer matches 41 positioned -79770 31 -277 run bossbar set azr:boss_hp_bar_centurion color red
-execute if score @s AzrEntityTimer matches 41 positioned -79770 31 -277 run bossbar set azr:boss_hp_bar_centurion max 1200
-execute if score @s AzrEntityTimer matches 41 positioned -79770 31 -277 run bossbar set azr:boss_hp_bar_centurion players @a[tag=azrShowDialog]
+execute if score @s AzrEntityTimer matches 1 positioned -79770 31 -277 run bossbar add azr:boss_hp_bar_centurion "合规工序的超理论漏洞 - 百夫长 · 博物区"
+execute if score @s AzrEntityTimer matches 1 positioned -79770 31 -277 run bossbar set azr:boss_hp_bar_centurion color red
+execute if score @s AzrEntityTimer matches 1 positioned -79770 31 -277 run bossbar set azr:boss_hp_bar_centurion max 1200
+execute if score @s AzrEntityTimer matches 1 positioned -79770 31 -277 run bossbar set azr:boss_hp_bar_centurion players @a[tag=azrShowDialog]
 
 execute positioned -79770 31 -277 as @n[tag=AzrielBossCenturion,type=piglin_brute,distance=..100] store result score @s Health run data get entity @s Health
 execute positioned -79770 31 -277 store result bossbar azr:boss_hp_bar_centurion value run scoreboard players get @n[tag=AzrielBossCenturion] Health
