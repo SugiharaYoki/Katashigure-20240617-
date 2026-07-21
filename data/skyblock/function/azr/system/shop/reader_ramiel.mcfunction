@@ -112,6 +112,7 @@ execute if entity @s[scores={Azr_skillPoints=5..}] run data modify entity @n[tag
 execute if entity @s[scores={Azr_skillPoints=9..}] run data modify entity @n[tag=AzrRamielExStage_displaymarker2] CustomName set value ' <斧> '
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarker3] CustomName set value ' <光> '
 execute if entity @s[tag=AZS_BoSB01] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value ' <刑> '
+execute if entity @s[tag=AZS_BoSB03] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBc] CustomName set value ' <博> '
 execute if entity @s[tag=AZS_BoSB04] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value ' <炉> '
 execute if entity @s[tag=AZS_BoSB13] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value ' <藓> '
 execute if entity @s[tag=AZS_BoSB22] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBv] CustomName set value ' <贤> '
@@ -157,6 +158,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_stopwatch:1b}] 
 execute if items entity @s container.* *[custom_data~{azr_amulet_axe_vortex:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarker2] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarker3] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_back_dodge:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_land_fracture:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBc] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_fire_drogue:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBv] CustomName set value ' √ '
@@ -214,6 +216,7 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarker2]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432330"},hover_event:{"action":"show_text","value":{text:"马林努斯 - 岚切卷宗\n斧攻击自动延时二次攻击、左右移动时加强剑的范围伤害",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarker3]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432332"},hover_event:{"action":"show_text","value":{text:"权之残影 - 光明天使的符文\n迫坠、退避、冲刺石板整合、施放时无敌帧",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBa]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432331"},hover_event:{"action":"show_text","value":{text:"阴影处刑者 - 退避石板\n按后退键与跑步键，快速后撤步",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerBc]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432338"},hover_event:{"action":"show_text","value":{text:"百夫长·博物区 - 地裂卷宗\n冲刺时使用近战武器攻击，施放地裂冲击",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBd]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432329"},hover_event:{"action":"show_text","value":{text:"锅炉驱动者 - 逐焰卷宗\n持续召唤最多3个跟随火球，减少节制天平电球最低间隔时长",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBm]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432328"},hover_event:{"action":"show_text","value":{text:"噬藓母虫 - 深藓石板\n造成攻击可增加“索命连击”充能、在重生锚点可获得5分钟孢子的庇护（生命值上限加成）",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBv]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432338"},hover_event:{"action":"show_text","value":{text:"晦怨贤士 - 悬蔑石板\n按两下跳跃以悬浮、悬浮期间攻击延长悬浮时间",color:"white"}}},\
