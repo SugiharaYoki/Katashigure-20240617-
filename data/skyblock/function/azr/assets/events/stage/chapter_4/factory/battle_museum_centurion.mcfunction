@@ -28,8 +28,8 @@ execute if score @s rng1 matches 93 run scoreboard players set @s rng7 0
 execute if score @s rng1 matches 93 run scoreboard players set @s rng8 0
 execute if score @s rng1 matches 93 run scoreboard players set @s rng9 0
 execute if score @s rng1 matches 93 run scoreboard players set @s AzrEntityTimer 0
-execute if score @s rng1 matches 93 positioned -79831 27 -284 run effect give @e[type=piglin_brute,distance=..5] slowness infinite 99 true
-execute if score @s rng1 matches 93 positioned -79831 27 -284 run effect give @e[type=piglin_brute,distance=..5] resistance infinite 99 true
+execute if score @s rng1 matches 93 positioned -79831 27 -284 run effect give @e[tag=AzrielBossCenturion,type=piglin_brute,distance=..50] slowness infinite 99 true
+execute if score @s rng1 matches 93 positioned -79831 27 -284 run effect give @e[tag=AzrielBossCenturion,type=piglin_brute,distance=..50] resistance infinite 99 true
 
 execute if score @s rng1 matches 92 positioned -79795 7 -278 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng1 matches 92 positioned -79795 7 -278 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“哈哈我就猜到，我就猜到！他跑了！”",color:"white"}]
