@@ -35,6 +35,7 @@ execute if entity @s[tag=AzrielMob_trap_axe] run function skyblock:azr/assets/mo
 
 execute if entity @s[tag=AzrielMob_mob_marker_dripstone_aiguille] run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille
 
+execute if entity @s[tag=AzrielMob_playertrap_land_fracture] run function skyblock:azr/system/player/skills/amulet/sprint_double_land_fracture_marker
 
 
 
