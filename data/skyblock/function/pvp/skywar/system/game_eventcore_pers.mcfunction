@@ -19,7 +19,7 @@ execute if block -17 23 32 soul_lantern as 10e959db-4b44-4cdd-b98c-350d3b454206 
 execute if block -17 23 32 soul_lantern as 10e959db-4b44-4cdd-b98c-350d3b454206 at @s if entity @s[tag=!Skyblock_NoWorldborder] unless entity @a[tag=Gaming,tag=!PVP_see] as @a[tag=!PVP_see,tag=!PVPing] at @s run tag @s add PVP_see
 
 
-execute if block -131 58 -133 diamond_block as @e[x=50000,y=0,z=50000,distance=..8000] at @s run function skyblock:pvp/skywar/system/game_eventcore_pers_entity_controller
+execute unless score sc Map_Type matches 3..4 if block -131 58 -133 diamond_block as @e[x=50000,y=0,z=50000,distance=..8000] at @s run function skyblock:pvp/skywar/system/game_eventcore_pers_entity_controller
 
 
 scoreboard players add skywar_loop rng1 1

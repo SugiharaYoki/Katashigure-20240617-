@@ -23,5 +23,5 @@ execute if score @s If_Bless38_renew matches 60.. run scoreboard players set @s 
 
 
 
-execute if block -131 58 -133 diamond_block run function skyblock:pvp/skywar/bless/skywar_ishtar_core
-execute if block -131 58 -133 diamond_block if items entity @s[gamemode=survival] container.* *[custom_data={skywar_ishtar_24:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core24e
+execute unless score sc Map_Type matches 3..4 if block -131 58 -133 diamond_block run function skyblock:pvp/skywar/bless/skywar_ishtar_core
+execute unless score sc Map_Type matches 3..4 if block -131 58 -133 diamond_block if items entity @s[gamemode=survival] container.* *[custom_data={skywar_ishtar_24:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core24e
