@@ -72,6 +72,7 @@ execute if score @s AzrEntityTimer matches 2005 run playsound minecraft:block.be
 execute if score @s AzrEntityTimer matches 2010 run title @a[tag=azrShowDialog] actionbar {text:"Boss Annihilated",color:"green"}
 execute if score @s AzrEntityTimer matches 2010 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/sub_boss_centurion
 execute if score @s AzrEntityTimer matches 2010 run bossbar remove azr:boss_hp_bar_centurion
+execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/land_fracture
 execute if score @s AzrEntityTimer matches 2010 run fill -79808 31 -282 -79808 27 -286 minecraft:air destroy
 execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB03
 execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run give @s emerald 20
