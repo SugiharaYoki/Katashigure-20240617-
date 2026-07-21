@@ -58,6 +58,7 @@ execute if score @s AzrEntityTimer matches 1999 if entity @n[tag=AzrielBossCentu
 execute if score @s AzrEntityTimer matches 100..1999 unless entity @n[tag=AzrielBossCenturion] run scoreboard players set @s AzrEntityTimer 2000
 
 execute if score @s AzrEntityTimer matches 2001 as @n[tag=AzrielBossCenturion] at @s run function skyblock:azr/assets/events/effects/player_magic_release
+execute if score @s AzrEntityTimer matches 2001 positioned -79770 31 -277 run particle portal ~ ~1 ~ 0.3 1 0.3 0.06 30
 execute if score @s AzrEntityTimer matches 2001 positioned -79770 31 -277 run playsound entity.enderman.teleport hostile @a ~ ~ ~ 3 0.8
 execute if score @s AzrEntityTimer matches 2004 as @n[tag=AzrielBossCenturion] at @s run tp @s ~ ~-500 ~
 execute if score @s AzrEntityTimer matches 2005 as @n[tag=AzrielBossCenturion] at @s run kill @s
