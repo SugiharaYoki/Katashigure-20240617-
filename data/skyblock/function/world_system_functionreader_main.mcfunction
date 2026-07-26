@@ -43,3 +43,5 @@ execute if entity @s[tag=Gaming,tag=MG_qqd] run function skyblock:mg/qqdance/cor
 
 
 execute as @s[x=-9860,y=-64,z=-10196,dx=2000,dy=2000,dz=2000,tag=!ServerOwner] run kill @s
+
+
