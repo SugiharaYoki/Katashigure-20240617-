@@ -16,6 +16,7 @@ execute as @s[scores={sea_4temp2=40}] positioned 90120 122 123 run kill @e[dista
 execute as @s[scores={sea_4temp2=40}] positioned 90120 122 123 run function skyblock:sea/m/destination
 execute as @s[scores={sea_4temp2=40}] if entity @a[tag=SEAPT,tag=!seaPerm000] positioned 90116 122 107 run function skyblock:sea/m/destination
 
+
 execute if entity @n[tag=sc,scores={sea_4temp2=62}] run playsound ambient.cave ambient @a 90100 150 100 160 1.2
 execute if entity @n[tag=sc,scores={sea_4temp2=62}] run playsound ambient.cave ambient @a 90100 150 100 160 1.0
 

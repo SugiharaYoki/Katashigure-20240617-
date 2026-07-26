@@ -38,6 +38,9 @@ execute as @a[tag=SEAPT,x=90075,y=121,z=132,distance=0..3,tag=!e_i_04] at @s run
 execute as @a[tag=SEAPT,x=90075,y=121,z=132,distance=0..3,tag=!e_i_04] at @s run advancement grant @s only skyblock:sea/doc/documentary1
 execute as @a[tag=SEAPT,x=90075,y=121,z=132,distance=0..3,tag=!e_i_04] at @s run tag @s add e_i_04
 
+#塞壬任务目标刷新
+execute positioned 90116 122 107 as @n[type=shulker,distance=..2] at @s unless entity @a[tag=SEAPT,tag=!seaPerm000] run kill @s
+
 #初始之船
 
 execute positioned 90058 104 -166 if score sea_chapter_introduction sea_4temp1 matches ..400 run function skyblock:sea/e/ch1/introduction
