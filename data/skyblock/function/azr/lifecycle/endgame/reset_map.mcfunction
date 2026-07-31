@@ -864,17 +864,6 @@ setblock -79784 42 -283 lever[facing=north]
 
 
 
-
-
-
-
-  #隐藏内房
-setblock -79791 28 -294 chest[facing=south]{Inventory:[]}
-item replace block -79791 28 -294 container.13 with gold_nugget 3
-setblock -79793 27 -289 anvil[facing=north]
-setblock -79793 27 -287 anvil[facing=north]
-
-
 #stage14
 setblock -79770 23 -460 chest[facing=east]{Inventory:[]}
 setblock -79765 24 -469 chest[facing=south]{Inventory:[]}
