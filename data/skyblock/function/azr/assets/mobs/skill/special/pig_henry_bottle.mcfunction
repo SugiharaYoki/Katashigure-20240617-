@@ -14,12 +14,12 @@ execute if score @s rng4 matches 6..7 rotated as @s at @s run tp @s ^ ^ ^-0.06
 execute if score @s rng4 matches 4..5 rotated as @s at @s run tp @s ^ ^ ^-0.08
 execute if score @s rng4 matches 2..3 rotated as @s at @s run tp @s ^ ^ ^-0.1
 
-execute if score @s rng4 matches 10..11 at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.2
-execute if score @s rng4 matches 12..13 at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.15
+execute if score @s rng4 matches 10..11 at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.03
+execute if score @s rng4 matches 12..13 at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.07
 execute if score @s rng4 matches 14..15 at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.12
-execute if score @s rng4 matches 16..17 at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.8
-execute if score @s rng4 matches 18..19 at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.05
-execute if score @s rng4 matches 20.. at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.03
+execute if score @s rng4 matches 16..17 at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.19
+execute if score @s rng4 matches 18..19 at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.27
+execute if score @s rng4 matches 20.. at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.38
 
 
 
