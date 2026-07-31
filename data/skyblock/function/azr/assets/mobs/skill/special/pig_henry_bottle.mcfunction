@@ -27,3 +27,9 @@ execute if score @s rng4 matches 17.. facing entity @n[tag=AzrielMob] feet run t
 execute if score @s rng4 matches 18.. facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.08
 execute if score @s rng4 matches 19.. facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.09
 execute if score @s rng4 matches 20.. facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.05
+
+
+
+
+
+
