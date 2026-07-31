@@ -1,6 +1,7 @@
 
 scoreboard players add @s rng4 1
 
+execute unless entity @n[tag=AzrielMob,distance=..11] run particle campfire_cosy_smoke ~ ~ ~ 0 0 0 0 1
 execute unless entity @n[tag=AzrielMob,distance=..11] run kill @s
 #execute if score @s rng4 matches 1 rotated ~ 0 as @s at @s facing entity @n[tag=AzrielMob,distance=0.01..] eyes positioned 0.0 0 0.0 run summon marker ^ ^0.22 ^0.3 {Tags:["AzrielMob_move_marker_henry_bottle"]}
 #execute if score @s rng4 matches 1 rotated ~ 0 as @s at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_move_marker_henry_bottle] Pos
