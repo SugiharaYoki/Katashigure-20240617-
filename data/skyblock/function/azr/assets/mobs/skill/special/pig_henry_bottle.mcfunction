@@ -30,7 +30,7 @@ execute if score @s rng4 matches 20.. facing entity @n[tag=AzrielMob] feet run t
 
 
 
-execute if entity @n[tag=AzrielMob,distance=..0.6] run summon area_effect_cloud ~ ~0.3 ~ {Particle:{type:flame},Radius:2.7,Duration:10,potion_contents:{potion:poison,custom_color:14436875}}
+execute if entity @n[tag=AzrielMob,distance=..0.6] run summon area_effect_cloud ~ ~0.3 ~ {Particle:{type:flame},Radius:2.7,Duration:10,potion_contents:{potion:slowness,custom_color:14436875}}
 execute if entity @n[tag=AzrielMob,distance=..0.6] as @e[tag=AzrielMob,distance=..2.8] at @s run damage @s 6 in_fire
 execute if entity @n[tag=AzrielMob,distance=..0.6] run kill @s
 
