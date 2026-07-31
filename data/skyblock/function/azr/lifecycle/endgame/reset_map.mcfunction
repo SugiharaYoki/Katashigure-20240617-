@@ -870,7 +870,9 @@ item replace block -79741 39 -363 container.14 with gold_nugget 2
 setblock -79797 28 -342 minecraft:waxed_copper_chest[facing=west]{Inventory:[]}
 item replace block -79797 28 -342 container.12 with gold_nugget 2
 item replace block -79797 28 -342 container.14 with gold_nugget 1
-
+setblock -79745 43 -389 minecraft:waxed_copper_chest[facing=south]{Inventory:[]}
+item replace block -79745 43 -389 container.12 with gold_nugget 1
+item replace block -79745 43 -389 container.14 with skull_banner_pattern[custom_name={text:"“童谣一则”",color:"dark_purple",italic:0b},lore=[{text:"愿大地永远存在。",color:"white",italic:0b},{text:"愿火焰永远存在。",color:"white",italic:0b},{text:"愿王的庇佑永远存在。",color:"white",italic:0b},{text:"愿黑色天使的光永远存在。",color:"white",italic:0b}]] 1
 
 #stage14
 setblock -79770 23 -460 chest[facing=east]{Inventory:[]}
