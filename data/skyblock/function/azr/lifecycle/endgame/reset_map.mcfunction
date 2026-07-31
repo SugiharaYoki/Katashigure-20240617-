@@ -863,12 +863,24 @@ setblock -79784 42 -283 lever[facing=north]
 
 fill -79772 41 -350 -79773 39 -350 gravel
 
+#小地狱 道中 隐藏箱子
+setblock -79741 39 -363 minecraft:waxed_copper_chest[facing=south]{Inventory:[]}
+item replace block -79741 39 -363 container.12 with beef 2
+item replace block -79741 39 -363 container.14 with gold_nugget 2
+setblock -79797 28 -342 minecraft:waxed_copper_chest[facing=west]{Inventory:[]}
+item replace block -79797 28 -342 container.12 with gold_nugget 2
+item replace block -79797 28 -342 container.14 with gold_nugget 1
+
 
 #stage14
 setblock -79770 23 -460 chest[facing=east]{Inventory:[]}
 setblock -79765 24 -469 chest[facing=south]{Inventory:[]}
 item replace block -79770 23 -460 container.13 with minecraft:gold_nugget 30
 item replace block -79765 24 -469 container.13 with minecraft:gold_nugget 28
+
+
+
+
 
 
 
