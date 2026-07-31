@@ -8,18 +8,18 @@ execute unless entity @n[tag=AzrielMob,distance=..11] run kill @s
 #execute if score @s rng4 matches 1 rotated ~ 0 as @s at @s run kill @e[type=marker,tag=AzrielMob_move_marker_henry_bottle]
 
 execute if score @s rng4 matches 1 rotated as @s at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielTrader_pig_henry]
-execute if score @s rng4 matches ..10 rotated as @s at @s run tp @s ^ ^ ^-0.02
-execute if score @s rng4 matches ..8 rotated as @s at @s run tp @s ^ ^ ^-0.02
-execute if score @s rng4 matches ..6 rotated as @s at @s run tp @s ^ ^ ^-0.02
-execute if score @s rng4 matches ..4 rotated as @s at @s run tp @s ^ ^ ^-0.02
-execute if score @s rng4 matches ..2 rotated as @s at @s run tp @s ^ ^ ^-0.02
+execute if score @s rng4 matches 10 rotated as @s at @s run tp @s ^ ^ ^-0.02
+execute if score @s rng4 matches 8..9 rotated as @s at @s run tp @s ^ ^ ^-0.04
+execute if score @s rng4 matches 6..7 rotated as @s at @s run tp @s ^ ^ ^-0.06
+execute if score @s rng4 matches 4..5 rotated as @s at @s run tp @s ^ ^ ^-0.08
+execute if score @s rng4 matches 2..3 rotated as @s at @s run tp @s ^ ^ ^-0.1
 
-execute if score @s rng4 matches 10.. at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.02
-execute if score @s rng4 matches 12.. at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.02
-execute if score @s rng4 matches 14.. at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.03
-execute if score @s rng4 matches 16.. at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.03
-execute if score @s rng4 matches 18.. at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.04
-execute if score @s rng4 matches 20.. at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.04
+execute if score @s rng4 matches 10..11 at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.2
+execute if score @s rng4 matches 12..13 at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.15
+execute if score @s rng4 matches 14..15 at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.12
+execute if score @s rng4 matches 16..17 at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.8
+execute if score @s rng4 matches 18..19 at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.05
+execute if score @s rng4 matches 20.. at @s facing entity @n[tag=AzrielMob] feet run tp @s ^ ^ ^0.03
 
 
 
