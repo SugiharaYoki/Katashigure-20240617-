@@ -59,6 +59,8 @@ execute as @s[scores={rng2=201}] positioned -79795 7 -278 run tellraw @a[tag=azr
 
 execute as @s[scores={rng2=290..291}] at @s run scoreboard players set @s rng2 290
 execute as @s[scores={rng2=1..291}] at @s if entity @a[x=-79761,y=0,z=-278,dx=5,dy=5,dz=8] run scoreboard players set @s rng2 300
+
+execute as @s[scores={rng2=301}] positioned -79795 7 -278 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage12
 execute as @s[scores={rng2=301}] positioned -79795 7 -278 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng2=301}] positioned -79795 7 -278 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“太好了，这一层的门已经全部打开了。”",color:"white"}]
 execute as @s[scores={rng2=321}] positioned -79795 7 -278 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9

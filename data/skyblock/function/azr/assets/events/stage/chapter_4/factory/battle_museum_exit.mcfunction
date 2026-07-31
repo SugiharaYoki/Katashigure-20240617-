@@ -67,7 +67,7 @@ execute if score @s rng1 matches 146 positioned ~ ~ ~ run tellraw @a[tag=azrShow
 execute if score @s rng1 matches 146 positioned ~ ~ ~ run tag @n[tag=AzrielTrader_pig_henry] add AzrielNPC_Divineforce_Followable
 execute if score @s rng1 matches 146 positioned ~ ~ ~ run scoreboard players add @n[tag=AzrielTrader_pig_henry] AzrielNPC_FollowInterest 99999999
 
-
+execute if score @s rng1 matches 148 positioned ~ ~ ~ run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage13
 
 
 

@@ -1,13 +1,13 @@
 {
     "display": {
         "title": {
-            "text": "地狱：绯红森林区域 - 局部塌陷的熔岩竖井",
+            "text": "绯烟林场：车间博物馆·上层",
             "color": "aqua",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "地底国内战影响到的或许是地狱内的所有居民。\n这里的猪灵似乎分为两派。\n无所谓，因为不论是哪一派都会不由分说地朝我袭来……",
+            "text": "车间博物馆的下方有一条通往神庭的捷径。\n事实上，如果我没猜错的话，我正是从这条“捷径”摔落下来的。\n\n亨利说得没错，不止我们想从这个是非之地经过。",
             "color": "white"
         },
         "icon": {
@@ -23,5 +23,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:azr/progress/stage13_event0"
+    "parent": "skyblock:azr/progress/stage12"
 }

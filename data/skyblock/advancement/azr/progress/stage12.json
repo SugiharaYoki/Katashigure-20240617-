@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "绯烟林场：车间博物馆·下层",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "我的运气根本评不出好坏。\n虽然侥幸依靠那神秘的四角星宝石捡回了一条命，\n但跌落至魔界的我却恰巧碰上了路西法领导的反叛。\n虽然我可以期待他们自己会打得不可开交，\n可目前我也只遇见亨利这一位利益相同的友军。\n\n生命手册的魔力很不稳定，我接下来可能要寸步难行了……",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:crimson_nylium"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage11"
+}
