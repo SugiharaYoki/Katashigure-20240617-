@@ -48,7 +48,7 @@ execute if score @s rng1 matches 76 as @n[tag=AzrielTrader_pig_henry] at @s run 
 execute if score @s rng1 matches 77 positioned ~ ~ ~ run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng1 matches 77 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“兄弟，我来了！”",color:"white"}]
 execute if score @s rng1 matches 87 positioned ~ ~ ~ run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute if score @s rng1 matches 87 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“我这里有魔法瓶，能用来对付他们，你可以靠我近一点！”",color:"white"}]
+execute if score @s rng1 matches 87 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“我这里有魔法道具，能用来对付他们，你可以靠我近一点！”",color:"white"}]
 
 
 
