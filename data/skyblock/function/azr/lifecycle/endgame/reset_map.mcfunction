@@ -869,8 +869,6 @@ setblock -79784 42 -283 lever[facing=north]
 
 
   #隐藏内房
-setblock -79789 27 -288 nether_brick_fence
-setblock -79789 28 -288 nether_brick_fence
 setblock -79791 28 -294 chest[facing=south]{Inventory:[]}
 item replace block -79791 28 -294 container.13 with gold_nugget 3
 setblock -79793 27 -289 anvil[facing=north]
