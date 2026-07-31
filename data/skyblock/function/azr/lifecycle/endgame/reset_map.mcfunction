@@ -861,7 +861,7 @@ setblock -79764 32 -275 minecraft:potted_poppy
 setblock -79784 42 -283 air
 setblock -79784 42 -283 lever[facing=north]
 
-fill -79772 41 -350 -79773 39 -350 netherrack
+fill -79772 41 -350 -79773 39 -350 gravel
 
 
 #stage14
