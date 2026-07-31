@@ -11,7 +11,7 @@
             "color": "white"
         },
         "icon": {
-            "id": "minecraft:zombie_spawn_egg"
+            "id": "minecraft:piglin_brute_spawn_egg"
         },
         "frame": "task",
         "show_toast": false,
