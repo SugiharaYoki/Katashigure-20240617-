@@ -37,6 +37,7 @@ execute if entity @s[tag=AzrielMob_mob_marker_dripstone_aiguille] run function s
 
 execute if entity @s[tag=AzrielMob_playertrap_land_fracture] run function skyblock:azr/system/player/skills/amulet/sprint_double_land_fracture_marker
 
+execute as @s[tag=AzrielMob_npc_pig_henry_bottle] at @s run function skyblock:azr/assets/mobs/skill/special/pig_henry_bottle
 
 
 execute if entity @s[tag=AzrielMob_generic_pillar_attack_small] run function skyblock:azr/assets/mobs/skill/undead_pickaxe_marker_release
