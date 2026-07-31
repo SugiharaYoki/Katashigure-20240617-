@@ -58,6 +58,8 @@ execute if score @s rng1 matches 101 positioned ~ ~ ~ run tellraw @a[tag=azrShow
 execute if score @s rng1 matches 116 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“过奖了。你这小瓶子挺厉害，自动发射火球？”",color:"white"}]
 execute if score @s rng1 matches 130 positioned ~ ~ ~ run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng1 matches 130 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“原本应该有更强的魔法道具，我怀疑是他们拿走了。不过现在这个也符合我的审美！”",color:"white"}]
+execute if score @s rng1 matches 146 positioned ~ ~ ~ run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score @s rng1 matches 146 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“我也打算跟着你走了。你开路，我会在后面跟着的！”",color:"white"}]
 
 
 
