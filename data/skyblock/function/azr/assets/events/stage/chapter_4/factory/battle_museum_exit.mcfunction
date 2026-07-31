@@ -56,6 +56,7 @@ execute if score @s rng1 matches 90 positioned ~ ~ ~ as @n[tag=AzrielMob,type=pi
 execute if score @s rng1 matches 91 positioned ~ ~ ~ if entity @n[tag=AzrielMob_StageProgressTarget,type=piglin,distance=0..20] run scoreboard players set @s rng1 90
 execute if score @s rng1 matches 92..100 positioned ~ ~ ~ if entity @n[tag=AzrielMob,type=piglin,distance=0..10] run scoreboard players set @s rng1 99
 
+execute if score @s rng1 matches 101 positioned ~ ~ ~ run fill -79772 41 -350 -79773 39 -350 air destroy
 execute if score @s rng1 matches 101 positioned ~ ~ ~ run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng1 matches 101 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“哈哈，实话实说，你是我见过最强的人类亡魂。”",color:"white"}]
 execute if score @s rng1 matches 116 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“过奖了。你这小瓶子挺厉害，自动发射火球？”",color:"white"}]

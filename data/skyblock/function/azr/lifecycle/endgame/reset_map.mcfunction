@@ -861,7 +861,7 @@ setblock -79764 32 -275 minecraft:potted_poppy
 setblock -79784 42 -283 air
 setblock -79784 42 -283 lever[facing=north]
 
-
+fill -79772 41 -350 -79773 39 -350 netherrack
 
 
 #stage14
@@ -869,6 +869,9 @@ setblock -79770 23 -460 chest[facing=east]{Inventory:[]}
 setblock -79765 24 -469 chest[facing=south]{Inventory:[]}
 item replace block -79770 23 -460 container.13 with minecraft:gold_nugget 30
 item replace block -79765 24 -469 container.13 with minecraft:gold_nugget 28
+
+
+
 
 #林场
 setblock -79804 56 -465 anvil[facing=north]
