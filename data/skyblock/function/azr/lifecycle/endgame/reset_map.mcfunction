@@ -875,10 +875,6 @@ item replace block -79745 43 -389 container.12 with gold_nugget 1
 item replace block -79745 43 -389 container.14 with skull_banner_pattern[custom_name={text:"“童谣一则”",color:"dark_purple",italic:0b},lore=[{text:"愿大地永远存在。",color:"white",italic:0b},{text:"愿火焰永远存在。",color:"white",italic:0b},{text:"愿王上的庇佑永远存在。",color:"white",italic:0b},{text:"愿黑色天使的光永远存在。",color:"white",italic:0b}]] 1
 
 #stage14
-setblock -79770 23 -460 chest[facing=east]{Inventory:[]}
-setblock -79765 24 -469 chest[facing=south]{Inventory:[]}
-item replace block -79770 23 -460 container.13 with minecraft:gold_nugget 30
-item replace block -79765 24 -469 container.13 with minecraft:gold_nugget 28
 
 
 
