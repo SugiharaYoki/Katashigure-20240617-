@@ -9,11 +9,10 @@ scoreboard players add @s rng1 1
 execute if block ~ ~-0.1 ~ air run tp @s ~ ~-0.1 ~
 execute if block ~ ~-0.1 ~ air run tp @s ~ ~-0.1 ~
 
-execute if score @s rng1 matches 10.. as @e[tag=AzrielMob,distance=..1.2,limit=2,sort=nearest] at @s run damage @s 8 mob_attack
+execute if score @s rng1 matches 10.. as @e[tag=AzrielMob,distance=..1.8,limit=2,sort=nearest] at @s run damage @s 8 mob_attack
 
 
 
-execute if score @s rng1 matches 1 as @a[tag=azrPlayer,distance=..1.2] run function skyblock:azr/system/player/map_effect/in_attack_range
 execute if score @s rng1 matches 1 at @s rotated ~ 0 run particle enchant ^ ^0.1 ^1.2 0 0 0 0 1
 execute if score @s rng1 matches 1 at @s rotated ~20 0 run particle enchant ^ ^0.1 ^1.2 0 0 0 0 1
 execute if score @s rng1 matches 1 at @s rotated ~40 0 run particle enchant ^ ^0.1 ^1.2 0 0 0 0 1
