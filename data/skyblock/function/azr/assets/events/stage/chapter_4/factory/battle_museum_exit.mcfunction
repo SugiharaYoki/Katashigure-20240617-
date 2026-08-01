@@ -86,3 +86,10 @@ execute if score @s rng1 matches 102 positioned -79754 23 -394 run function skyb
 execute if score @s rng1 matches 102 positioned -79753 23 -398 run function skyblock:azr/assets/mobs/utility_bat
 
 execute if score @s rng1 matches 102 positioned -79753 23 -398 run scoreboard players set stage Azr_system 57
+
+
+
+
+
+
+
