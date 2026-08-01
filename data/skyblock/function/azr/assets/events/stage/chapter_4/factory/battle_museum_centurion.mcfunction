@@ -1,7 +1,7 @@
 scoreboard players add @s rng1 1
 
 execute if score @s rng1 matches 1..8 run particle minecraft:campfire_cosy_smoke -79769.78 31.00 -276.51 0.5 2 1 0.01 50
-execute if score @s rng1 matches 1..91 run function skyblock:azr/assets/mobs/skill/boss_centurion/core
+execute if score @s rng1 matches 1..107 run function skyblock:azr/assets/mobs/skill/boss_centurion/core
 
 execute if score @s rng1 matches 1 run playsound ambient.crimson_forest.mood ambient @a ~ ~ ~ 10 0.7
 execute if score @s rng1 matches 1 run playsound ambient.crimson_forest.mood ambient @a ~ ~ ~ 10 0.7
@@ -18,7 +18,6 @@ execute if score @s rng1 matches 61 positioned -79795 7 -278 run tellraw @a[tag=
 
 execute if score @s rng1 matches 90..91 if entity @n[tag=AzrielBossCenturion] run scoreboard players set @s rng1 90
 
-execute if score @s rng1 matches 92 positioned -79831 27 -284 run function skyblock:azr/assets/mobs/skill/boss_centurion/summon_2nd
 execute if score @s rng1 matches 93 positioned -79831 27 -284 run effect give @e[tag=AzrielBossCenturion,type=piglin_brute,distance=..50] slowness infinite 99 true
 execute if score @s rng1 matches 93 positioned -79831 27 -284 run effect give @e[tag=AzrielBossCenturion,type=piglin_brute,distance=..50] resistance infinite 99 true
 
@@ -27,6 +26,7 @@ execute if score @s rng1 matches 92 positioned -79795 7 -278 run tellraw @a[tag=
 execute if score @s rng1 matches 106 positioned -79795 7 -278 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng1 matches 106 positioned -79795 7 -278 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“前面绝对畅通无阻了。我们在上头汇合吧，老大！”",color:"white"}]
 
+execute if score @s rng1 matches 107 positioned -79831 27 -284 run function skyblock:azr/assets/mobs/skill/boss_centurion/summon_2nd
 
 
 
