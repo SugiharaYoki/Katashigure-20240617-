@@ -7,7 +7,7 @@ execute as @s[scores={rng1=24}] run playsound minecraft:entity.piglin.ambient ho
 execute as @s[scores={rng1=24}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“毕竟我也是住在这里这么多年嘛！嗨呀，可惜我一个人对付不了它们。”",color:"white"}]
 execute as @s[scores={rng1=29}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“我可以帮你找一把趁手的兵器。”",color:"white"}]
 execute as @s[scores={rng1=34}] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute as @s[scores={rng1=34}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“还是别了老大，我这身材是真不适合当冲锋兵。”",color:"white"}]
+execute as @s[scores={rng1=34}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“哈哈，还是别了老大，我这身材是真不适合当冲锋兵。”",color:"white"}]
 
 
 
