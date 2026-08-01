@@ -53,7 +53,15 @@ execute as @s[scores={rng1=41}] positioned -79698 27 -360 run summon marker ~ ~ 
 execute as @s[scores={rng1=45}] positioned -79698 27 -360 run summon marker ~ ~ ~2 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute as @s[scores={rng1=46}] positioned -79698 27 -360 run summon marker ~ ~ ~4 {Tags:["AzrielMob_summon_delay_marker_piglin_shovel","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
--79698 19 -360
+execute as @s[scores={rng1=50}] positioned -79698 19 -360 run summon marker ~5 ~ ~5 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=50}] positioned -79698 19 -360 run summon marker ~5 ~ ~-5 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=50}] positioned -79698 19 -360 run summon marker ~-5 ~ ~5 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=50}] positioned -79698 19 -360 run summon marker ~-5 ~ ~-5 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+execute as @s[scores={rng1=59}] positioned -79698 19 -360 run summon marker ~5 ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=59}] positioned -79698 19 -360 run summon marker ~-5 ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=59}] positioned -79698 19 -360 run summon marker ~ ~ ~5 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=59}] positioned -79698 19 -360 run summon marker ~ ~ ~-5 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
 
