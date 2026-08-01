@@ -28,8 +28,35 @@ execute as @s[scores={rng1=38}] run playsound minecraft:entity.piglin.ambient ho
 execute as @s[scores={rng1=38}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“我再也不要坐电梯了……！！”",color:"white"}]
 
 execute as @s[scores={rng1=53}] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute as @s[scores={rng1=53}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大虽然不是我多害怕、但答应我，下一个出口出去好吗？”",color:"white"}]
-execute as @s[scores={rng1=62}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“好的。”",color:"white"}]
+execute as @s[scores={rng1=53}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大虽然不是我多害怕、但答应我，见到下一个出口就出去好吗？”",color:"white"}]
+execute as @s[scores={rng1=62}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“哼哼，不行了？那我们下个口出去。”",color:"white"}]
+
+
+execute as @s[scores={rng1=2}] positioned -79698 43 -360 run summon marker ~ ~ ~3 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=5}] positioned -79698 43 -360 run summon marker ~3 ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=8}] positioned -79698 43 -360 run summon marker ~ ~ ~-3 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=11}] positioned -79698 43 -360 run summon marker ~-3 ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=14}] positioned -79698 43 -360 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+execute as @s[scores={rng1=17}] positioned -79698 35 -360 run summon marker ~-3 ~ ~4 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=17}] positioned -79698 35 -360 run summon marker ~3 ~ ~4 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=21}] positioned -79698 35 -360 run summon marker ~3 ~ ~-4 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=21}] positioned -79698 35 -360 run summon marker ~-3 ~ ~-4 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=28}] positioned -79698 35 -360 run summon marker ~3 ~ ~4 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=28}] positioned -79698 35 -360 run summon marker ~-3 ~ ~4 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+execute as @s[scores={rng1=33}] positioned -79698 27 -360 run summon marker ~ ~ ~4 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=35}] positioned -79698 27 -360 run summon marker ~ ~ ~2 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=39}] positioned -79698 27 -360 run summon marker ~ ~ ~-2 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=41}] positioned -79698 27 -360 run summon marker ~ ~ ~-4 {Tags:["AzrielMob_summon_delay_marker_piglin_shovel","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+execute as @s[scores={rng1=45}] positioned -79698 27 -360 run summon marker ~ ~ ~2 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=46}] positioned -79698 27 -360 run summon marker ~ ~ ~4 {Tags:["AzrielMob_summon_delay_marker_piglin_shovel","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+-79698 19 -360
+
+
+
 
 execute if score stage_bonus_thread AzrTimerStack matches 80 run title @a[tag=azrShowDialog] actionbar {text:"Extra Stage Clear",color:"green"}
 execute if score stage_bonus_thread AzrTimerStack matches 80 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_hoistway
