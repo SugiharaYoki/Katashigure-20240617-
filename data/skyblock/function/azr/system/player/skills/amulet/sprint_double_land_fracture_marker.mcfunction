@@ -14,23 +14,14 @@ execute if score @s rng1 matches 10.. as @e[tag=AzrielMob,distance=..1.8,limit=2
 
 
 execute if score @s rng1 matches 1 at @s rotated ~ 0 run particle enchant ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1 at @s rotated ~20 0 run particle enchant ^ ^0.1 ^1.2 0 0 0 0 1
 execute if score @s rng1 matches 1 at @s rotated ~40 0 run particle enchant ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1 at @s rotated ~60 0 run particle enchant ^ ^0.1 ^1.2 0 0 0 0 1
 execute if score @s rng1 matches 1 at @s rotated ~80 0 run particle enchant ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1 at @s rotated ~100 0 run particle enchant ^ ^0.1 ^1.2 0 0 0 0 1
 execute if score @s rng1 matches 1 at @s rotated ~120 0 run particle enchant ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1 at @s rotated ~140 0 run particle enchant ^ ^0.1 ^1.2 0 0 0 0 1
 execute if score @s rng1 matches 1 at @s rotated ~160 0 run particle enchant ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1 at @s rotated ~180 0 run particle enchant ^ ^0.1 ^1.2 0 0 0 0 1
 execute if score @s rng1 matches 1 at @s rotated ~200 0 run particle enchant ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1 at @s rotated ~220 0 run particle enchant ^ ^0.1 ^1.2 0 0 0 0 1
 execute if score @s rng1 matches 1 at @s rotated ~240 0 run particle enchant ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1 at @s rotated ~260 0 run particle enchant ^ ^0.1 ^1.2 0 0 0 0 1
 execute if score @s rng1 matches 1 at @s rotated ~280 0 run particle enchant ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1 at @s rotated ~300 0 run particle enchant ^ ^0.1 ^1.2 0 0 0 0 1
 execute if score @s rng1 matches 1 at @s rotated ~320 0 run particle enchant ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1 at @s rotated ~340 0 run particle enchant ^ ^0.1 ^1.2 0 0 0 0 1
 
 
 execute if score @s rng1 matches 10.. rotated 0 0 run playsound minecraft:entity.player.attack.knockback player @a ~ ~ ~ 0.8 1.4
