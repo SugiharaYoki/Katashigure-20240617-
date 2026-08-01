@@ -70,7 +70,18 @@ execute if score @s rng1 matches 146 positioned ~ ~ ~ run scoreboard players add
 execute if score @s rng1 matches 148 positioned ~ ~ ~ run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage13
 
 
+#野区初始怪物
+execute if score @s rng1 matches 102 positioned -79705 46 -379 run function skyblock:azr/assets/mobs/piglin_sword
+execute if score @s rng1 matches 102 positioned -79705 46 -379 run function skyblock:azr/assets/mobs/piglin_sword
+execute if score @s rng1 matches 102 positioned -79705 46 -379 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute if score @s rng1 matches 102 positioned -79705 46 -379 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute if score @s rng1 matches 102 positioned -79758 36 -393 run function skyblock:azr/assets/mobs/piglin_sword
+execute if score @s rng1 matches 102 positioned -79758 36 -393 run function skyblock:azr/assets/mobs/piglin_sword
+execute if score @s rng1 matches 102 positioned -79758 36 -393 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute if score @s rng1 matches 102 positioned -79758 36 -393 run function skyblock:azr/assets/mobs/piglin_crossbow
 
-
-
+execute if score @s rng1 matches 102 positioned -79760 23 -389 run function skyblock:azr/assets/mobs/utility_bat
+execute if score @s rng1 matches 102 positioned -79756 23 -391 run function skyblock:azr/assets/mobs/utility_bat
+execute if score @s rng1 matches 102 positioned -79754 23 -394 run function skyblock:azr/assets/mobs/utility_bat
+execute if score @s rng1 matches 102 positioned -79753 23 -398 run function skyblock:azr/assets/mobs/utility_bat
 

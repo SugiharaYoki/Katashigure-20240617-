@@ -17,6 +17,8 @@ execute if entity @s[tag=AzrielMob_summon_delay_marker_husk_temper] run function
 execute if entity @s[tag=AzrielMob_summon_delay_marker_piglin_sword] run function skyblock:azr/assets/mobs/summon_delay/piglin_sword
 execute if entity @s[tag=AzrielMob_summon_delay_marker_piglin_shovel] run function skyblock:azr/assets/mobs/summon_delay/piglin_shovel
 execute if entity @s[tag=AzrielMob_summon_delay_marker_piglin_crossbow] run function skyblock:azr/assets/mobs/summon_delay/piglin_crossbow
+execute if entity @s[tag=AzrielMob_summon_delay_marker_hoglin] run function skyblock:azr/assets/mobs/summon_delay/hoglin
+execute if entity @s[tag=AzrielMob_summon_delay_marker_hoglin_small] run function skyblock:azr/assets/mobs/summon_delay/hoglin_small
 
 execute if entity @s[tag=AzrielMob_summon_delay_marker_undead_fire] run function skyblock:azr/assets/mobs/summon_delay/undead_fire
 execute if entity @s[tag=AzrielMob_summon_delay_marker_undead_shadow] run function skyblock:azr/assets/mobs/summon_delay/undead_shadow
