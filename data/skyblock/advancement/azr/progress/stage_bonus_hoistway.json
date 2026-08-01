@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "绯烟林场 - 旧矿坑的电梯井",
+            "color": "green",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "“你看，我都说走错地方了，你还偏来！”亨利说了这句话。\n“但这里相当热闹，或许他们和我是一样的目的。”我的回答。\n我们都是被金矿吸引的蠢货。\n这整个11辖区充斥着各种各样的蠢货。\n\n不过是被逼无奈。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:yellow_glazed_terracotta"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage13"
+}

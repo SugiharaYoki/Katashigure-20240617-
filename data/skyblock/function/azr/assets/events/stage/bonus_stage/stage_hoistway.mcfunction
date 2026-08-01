@@ -17,51 +17,51 @@ execute if score stage_bonus_thread AzrTimerStack matches 32 run fill -79703 34 
 execute if score stage_bonus_thread AzrTimerStack matches 48 run fill -79697 26 -355 -79699 26 -365 air replace glass destroy
 execute if score stage_bonus_thread AzrTimerStack matches 64 run fill -79694 18 -356 -79702 18 -364 air replace glass destroy
 
-execute as @s[scores={rng1=7}] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute as @s[scores={rng1=7}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“唔喔哦哦！我就知道！！”",color:"white"}]
+execute if score stage_bonus_thread AzrTimerStack matches 7 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score stage_bonus_thread AzrTimerStack matches 7 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“唔喔哦哦！我就知道！！”",color:"white"}]
 
-execute as @s[scores={rng1=19}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“咱们往下！”",color:"white"}]
-execute as @s[scores={rng1=26}] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute as @s[scores={rng1=26}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“你、你开玩笑吧？还往下？！”",color:"white"}]
+execute if score stage_bonus_thread AzrTimerStack matches 19 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“咱们往下！”",color:"white"}]
+execute if score stage_bonus_thread AzrTimerStack matches 26 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score stage_bonus_thread AzrTimerStack matches 26 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“你、你开玩笑吧？还往下？！”",color:"white"}]
 
-execute as @s[scores={rng1=38}] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute as @s[scores={rng1=38}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“我再也不要坐电梯了……！！”",color:"white"}]
+execute if score stage_bonus_thread AzrTimerStack matches 38 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score stage_bonus_thread AzrTimerStack matches 38 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“我再也不要坐电梯了……！！”",color:"white"}]
 
-execute as @s[scores={rng1=53}] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute as @s[scores={rng1=53}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大虽然不是我多害怕、但答应我，见到下一个出口就出去好吗？”",color:"white"}]
-execute as @s[scores={rng1=62}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“哼哼，不行了？那我们下个口出去。”",color:"white"}]
+execute if score stage_bonus_thread AzrTimerStack matches 53 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score stage_bonus_thread AzrTimerStack matches 53 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大虽然不是我多害怕、但答应我，见到下一个出口就出去好吗？”",color:"white"}]
+execute if score stage_bonus_thread AzrTimerStack matches 62 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“哼哼，不行了？那我们下个口出去。”",color:"white"}]
 
 
-execute as @s[scores={rng1=2}] positioned -79698 43 -360 run summon marker ~ ~ ~3 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=5}] positioned -79698 43 -360 run summon marker ~3 ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=8}] positioned -79698 43 -360 run summon marker ~ ~ ~-3 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=11}] positioned -79698 43 -360 run summon marker ~-3 ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=14}] positioned -79698 43 -360 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 2 positioned -79698 43 -360 run summon marker ~ ~ ~3 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 5 positioned -79698 43 -360 run summon marker ~3 ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 8 positioned -79698 43 -360 run summon marker ~ ~ ~-3 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 11 positioned -79698 43 -360 run summon marker ~-3 ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 14 positioned -79698 43 -360 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_shovel","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
-execute as @s[scores={rng1=17}] positioned -79698 35 -360 run summon marker ~-3 ~ ~4 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=17}] positioned -79698 35 -360 run summon marker ~3 ~ ~4 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=21}] positioned -79698 35 -360 run summon marker ~3 ~ ~-4 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=21}] positioned -79698 35 -360 run summon marker ~-3 ~ ~-4 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=28}] positioned -79698 35 -360 run summon marker ~3 ~ ~4 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=28}] positioned -79698 35 -360 run summon marker ~-3 ~ ~4 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 17 positioned -79698 35 -360 run summon marker ~-3 ~ ~4 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 17 positioned -79698 35 -360 run summon marker ~3 ~ ~4 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 21 positioned -79698 35 -360 run summon marker ~3 ~ ~-4 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 21 positioned -79698 35 -360 run summon marker ~-3 ~ ~-4 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 28 positioned -79698 35 -360 run summon marker ~3 ~ ~4 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 28 positioned -79698 35 -360 run summon marker ~-3 ~ ~4 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
-execute as @s[scores={rng1=33}] positioned -79698 27 -360 run summon marker ~ ~ ~4 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=35}] positioned -79698 27 -360 run summon marker ~ ~ ~2 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=39}] positioned -79698 27 -360 run summon marker ~ ~ ~-2 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=41}] positioned -79698 27 -360 run summon marker ~ ~ ~-4 {Tags:["AzrielMob_summon_delay_marker_piglin_shovel","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 33 positioned -79698 27 -360 run summon marker ~ ~ ~4 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 35 positioned -79698 27 -360 run summon marker ~ ~ ~2 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 39 positioned -79698 27 -360 run summon marker ~ ~ ~-2 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 41 positioned -79698 27 -360 run summon marker ~ ~ ~-4 {Tags:["AzrielMob_summon_delay_marker_piglin_shovel","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
-execute as @s[scores={rng1=45}] positioned -79698 27 -360 run summon marker ~ ~ ~2 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=46}] positioned -79698 27 -360 run summon marker ~ ~ ~4 {Tags:["AzrielMob_summon_delay_marker_piglin_shovel","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 45 positioned -79698 27 -360 run summon marker ~ ~ ~2 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 46 positioned -79698 27 -360 run summon marker ~ ~ ~4 {Tags:["AzrielMob_summon_delay_marker_piglin_shovel","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
-execute as @s[scores={rng1=50}] positioned -79698 19 -360 run summon marker ~5 ~ ~5 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=50}] positioned -79698 19 -360 run summon marker ~5 ~ ~-5 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=50}] positioned -79698 19 -360 run summon marker ~-5 ~ ~5 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=50}] positioned -79698 19 -360 run summon marker ~-5 ~ ~-5 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 50 positioned -79698 19 -360 run summon marker ~5 ~ ~5 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 50 positioned -79698 19 -360 run summon marker ~5 ~ ~-5 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 50 positioned -79698 19 -360 run summon marker ~-5 ~ ~5 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 50 positioned -79698 19 -360 run summon marker ~-5 ~ ~-5 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
-execute as @s[scores={rng1=59}] positioned -79698 19 -360 run summon marker ~5 ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=59}] positioned -79698 19 -360 run summon marker ~-5 ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=59}] positioned -79698 19 -360 run summon marker ~ ~ ~5 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=59}] positioned -79698 19 -360 run summon marker ~ ~ ~-5 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 59 positioned -79698 19 -360 run summon marker ~5 ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 59 positioned -79698 19 -360 run summon marker ~-5 ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 59 positioned -79698 19 -360 run summon marker ~ ~ ~5 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 59 positioned -79698 19 -360 run summon marker ~ ~ ~-5 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
 
@@ -70,7 +70,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 80 run title @a[tag=az
 execute if score stage_bonus_thread AzrTimerStack matches 80 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_hoistway
 execute if score stage_bonus_thread AzrTimerStack matches 80 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS08
 execute if score stage_bonus_thread AzrTimerStack matches 80 as @a[tag=azrPlayer] at @s run give @s emerald 5
-execute if score stage_bonus_thread AzrTimerStack matches 40 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/flower_wall_fire
+execute if score stage_bonus_thread AzrTimerStack matches 80 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/flower_wall_fire
 
 
 execute if score stage_bonus_thread AzrTimerStack matches 80..81 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
