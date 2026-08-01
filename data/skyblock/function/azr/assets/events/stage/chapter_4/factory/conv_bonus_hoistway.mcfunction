@@ -10,5 +10,5 @@ execute as @s[scores={rng1=24}] run playsound minecraft:entity.piglin.ambient ho
 execute as @s[scores={rng1=24}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“我还当只有魔界的居民对金矿感兴趣呢！哈哈，你真有意思！”",color:"white"}]
 
 
-
+execute as @s[scores={rng1=4}] positioned ~ ~ ~ run function skyblock:azr/assets/mobs/utility_respawn_anchor
 
