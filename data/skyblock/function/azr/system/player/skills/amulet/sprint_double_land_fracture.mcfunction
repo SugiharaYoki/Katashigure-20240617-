@@ -15,6 +15,7 @@ execute if entity @s[tag=azrPlayer_skill_landfracture_type1] at @s rotated ~-75 
 execute if entity @s[tag=azrPlayer_skill_landfracture_type1] at @s rotated ~75 0 positioned ^ ^ ^3.2 run summon marker ~ ~ ~ {Tags:["AzrielMob_playertrap_land_fracture","AzrielMob_mob_marker"]} 
 execute if entity @s[tag=azrPlayer_skill_landfracture_type1] at @s rotated ~-75 0 positioned ^ ^ ^3.2 run summon marker ~ ~ ~ {Tags:["AzrielMob_playertrap_land_fracture","AzrielMob_mob_marker"]} 
 
+execute if entity @s[tag=azrPlayer_skill_landfracture_type2] at @s rotated ~ 0 positioned ^ ^ ^2 run summon marker ~ ~ ~ {Tags:["AzrielMob_playertrap_land_fracture","AzrielMob_mob_marker"]} 
 execute if entity @s[tag=azrPlayer_skill_landfracture_type2] at @s rotated ~ 0 positioned ^ ^ ^4 run summon marker ~ ~ ~ {Tags:["AzrielMob_playertrap_land_fracture","AzrielMob_mob_marker"]} 
 execute if entity @s[tag=azrPlayer_skill_landfracture_type2] at @s rotated ~10 0 positioned ^ ^ ^6 run summon marker ~ ~ ~ {Tags:["AzrielMob_playertrap_land_fracture","AzrielMob_mob_marker"]} 
 execute if entity @s[tag=azrPlayer_skill_landfracture_type2] at @s rotated ~20 0 positioned ^ ^ ^8 run summon marker ~ ~ ~ {Tags:["AzrielMob_playertrap_land_fracture","AzrielMob_mob_marker"]} 
