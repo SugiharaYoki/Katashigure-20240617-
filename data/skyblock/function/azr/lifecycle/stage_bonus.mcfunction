@@ -13,6 +13,8 @@
     execute if score stage_bonus Azr_system matches 6 run function skyblock:azr/assets/events/stage/bonus_stage/stage_flux
     # Guise
     execute if score stage_bonus Azr_system matches 7 run function skyblock:azr/assets/events/stage/bonus_stage/stage_guise
+    # Hoistway
+    execute if score stage_bonus Azr_system matches 8 run function skyblock:azr/assets/events/stage/bonus_stage/stage_hoistway
     # Index
     execute if score stage_bonus Azr_system matches 9 run function skyblock:azr/assets/events/stage/bonus_stage/stage_index
     # Kinetic

@@ -878,12 +878,18 @@ setblock -79750 23 -408 minecraft:waxed_copper_chest[facing=south]{Inventory:[]}
 item replace block -79750 23 -408 container.12 with golden_apple 1
 item replace block -79750 23 -408 container.14 with golden_apple 1
 
+#stage hoistway
+fill -79701 42 -357 -79695 42 -363 glass replace air
+fill -79703 34 -355 -79693 34 -365 glass replace air
+fill -79697 26 -355 -79699 26 -365 glass replace air
+fill -79694 18 -356 -79702 18 -364 glass replace air
+
+
+
+
 
 
 #stage14
-
-
-
 
 
 
