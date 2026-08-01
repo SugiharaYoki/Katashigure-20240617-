@@ -11,7 +11,7 @@ execute if entity @s[tag=AzrAmulet_FlowerWall_Activated] if entity @s[predicate=
 #execute if entity @s[tag=AzrAmulet_FlowerWall_Activated] if entity @s[predicate=!skyblock:sprint] run tag @s add AzrAmulet_FlowerWall_Cancelling
 
 
-execute if entity @s[tag=AzrAmulet_FlowerWall_Activated] if entity @s[predicate=skyblock:forward] run scoreboard players add @s AzrSariel_Amulet_FlowerWallFire_sum 1
+execute if items entity @s container.* *[custom_data~{azr_amulet_flower_wall_fire:1b}] if entity @s[tag=AzrAmulet_FlowerWall_Activated] if entity @s[predicate=skyblock:forward] run scoreboard players add @s AzrSariel_Amulet_FlowerWallFire_sum 1
 
 execute if score @s AzrSariel_Amulet_FlowerWallFire_sum matches 20 run attribute @s movement_speed modifier add azr_amulet:flowerwallfire_01 0.01 add_value
 execute if score @s AzrSariel_Amulet_FlowerWallFire_sum matches 35 run attribute @s movement_speed modifier add azr_amulet:flowerwallfire_02 0.01 add_value
