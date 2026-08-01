@@ -132,6 +132,7 @@ scoreboard objectives remove AzrSariel_Amulet_BackDodge_clock
 scoreboard objectives remove AzrSariel_Amulet_DownKick_clock
 scoreboard objectives remove AzrSariel_Amulet_StayFloat_clock
 scoreboard objectives remove AzrSariel_Amulet_MossSpore_cooldown
+scoreboard objectives remove AzrSariel_Amulet_FlowerWallFire_sum
 
 scoreboard objectives remove AzrSariel_Amulet_AxeVortex_cooldown
 scoreboard objectives remove AzrSariel_Amulet_AxeVortexDodge_cooldown

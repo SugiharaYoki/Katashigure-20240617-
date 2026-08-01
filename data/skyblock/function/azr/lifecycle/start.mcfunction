@@ -145,6 +145,7 @@ scoreboard objectives add AzrSariel_Amulet_MossSpore_cooldown dummy
 scoreboard objectives add AzrSariel_Amulet_generic_use_bow minecraft.used:minecraft.bow
 scoreboard objectives add AzrSariel_Amulet_DoubleArrow_clock dummy
 scoreboard objectives add AzrSariel_Amulet_ArrowSavior_count dummy
+scoreboard objectives add AzrSariel_Amulet_FlowerWallFire_sum dummy
 
 
 #特殊食物

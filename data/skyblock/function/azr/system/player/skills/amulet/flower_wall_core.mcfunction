@@ -11,6 +11,20 @@ execute if entity @s[tag=AzrAmulet_FlowerWall_Activated] if entity @s[predicate=
 #execute if entity @s[tag=AzrAmulet_FlowerWall_Activated] if entity @s[predicate=!skyblock:sprint] run tag @s add AzrAmulet_FlowerWall_Cancelling
 
 
+execute if entity @s[tag=AzrAmulet_FlowerWall_Activated] if entity @s[predicate=skyblock:forward] run scoreboard players add @s AzrSariel_Amulet_FlowerWallFire_sum 1
+
+execute if score @s AzrSariel_Amulet_FlowerWallFire_sum matches 20 run attribute @s movement_speed modifier add azr_amulet:flowerwallfire_01 0.01 add_value
+execute if score @s AzrSariel_Amulet_FlowerWallFire_sum matches 35 run attribute @s movement_speed modifier add azr_amulet:flowerwallfire_02 0.01 add_value
+execute if score @s AzrSariel_Amulet_FlowerWallFire_sum matches 50 run attribute @s movement_speed modifier add azr_amulet:flowerwallfire_03 0.01 add_value
+execute if score @s AzrSariel_Amulet_FlowerWallFire_sum matches 80 run attribute @s movement_speed modifier add azr_amulet:flowerwallfire_04 0.01 add_value
+
+execute if score @s AzrSariel_Amulet_FlowerWallFire_sum matches 1.. if entity @s[predicate=!skyblock:forward] run attribute @s movement_speed modifier remove azr_amulet:flowerwallfire_01
+execute if score @s AzrSariel_Amulet_FlowerWallFire_sum matches 1.. if entity @s[predicate=!skyblock:forward] run attribute @s movement_speed modifier remove azr_amulet:flowerwallfire_02
+execute if score @s AzrSariel_Amulet_FlowerWallFire_sum matches 1.. if entity @s[predicate=!skyblock:forward] run attribute @s movement_speed modifier remove azr_amulet:flowerwallfire_03
+execute if score @s AzrSariel_Amulet_FlowerWallFire_sum matches 1.. if entity @s[predicate=!skyblock:forward] run attribute @s movement_speed modifier remove azr_amulet:flowerwallfire_04
+execute if score @s AzrSariel_Amulet_FlowerWallFire_sum matches 1.. if entity @s[predicate=!skyblock:forward] run scoreboard players set @s AzrSariel_Amulet_FlowerWallFire_sum 0
+
+
 execute if entity @s[tag=AzrAmulet_FlowerWall_Cancelling] run attribute @s armor modifier remove azr_amulet:flowerwall_01
 execute if entity @s[tag=AzrAmulet_FlowerWall_Cancelling] run attribute @s attack_damage modifier remove azr_amulet:flowerwall_01
 execute if entity @s[tag=AzrAmulet_FlowerWall_Cancelling] run tag @s remove AzrAmulet_FlowerWall_Activated
