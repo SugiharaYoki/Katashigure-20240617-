@@ -1,3 +1,3 @@
-function skyblock:azr/assets/items/weapons/golden_sword
+function skyblock:azr/assets/items/weapons/golden_sword_normal
 
-clear @s gold_nugget 20
+scoreboard players remove @s Azr_gold 30

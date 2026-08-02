@@ -176,3 +176,47 @@ execute as @s[scores={Azr_Shop=8431581}] \
     run scoreboard players set tempPlayerShopSuccess Azr_system 1
 
 
+
+#魔界交易
+execute as @s[scores={Azr_Shop=8431601}] \
+    positioned -79780 38 -497 if entity @s[distance=..13] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s Azr_gold matches 5.. \
+    unless function skyblock:azr/system/shop/purchase/nether/bread \
+    run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
+execute as @s[scores={Azr_Shop=8431602}] \
+    positioned -79780 38 -497 if entity @s[distance=..13] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s Azr_gold matches 5.. \
+    unless function skyblock:azr/system/shop/purchase/nether/arrow \
+    run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
+execute as @s[scores={Azr_Shop=8431603}] \
+    positioned -79780 38 -497 if entity @s[distance=..13] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s Azr_gold matches 5.. \
+    unless function skyblock:azr/system/shop/purchase/nether/emerald \
+    run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    
+execute as @s[scores={Azr_Shop=8431604}] \
+    positioned -79780 38 -497 if entity @s[distance=..13] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s Azr_gold matches 30.. \
+    unless function skyblock:azr/system/shop/purchase/nether/golden_sword \
+    run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
+execute as @s[scores={Azr_Shop=8431605}] \
+    positioned -79780 38 -497 if entity @s[distance=..13] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s Azr_gold matches 30.. \
+    unless function skyblock:azr/system/shop/purchase/nether/golden_axe \
+    run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
+execute as @s[scores={Azr_Shop=8431606}] \
+    positioned -79780 38 -497 if entity @s[distance=..13] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s Azr_gold matches 30.. \
+    unless function skyblock:azr/system/shop/purchase/nether/golden_hoe \
+    run scoreboard players set tempPlayerShopSuccess Azr_system 1
+

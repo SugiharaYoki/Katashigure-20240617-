@@ -19,13 +19,12 @@ function skyblock:azr/system/shop/purchase/category3 {rng:8,trigger:84308}
 #-----------------9 skilled
 execute if entity @s[tag=AzrSariel_upg7B] run function skyblock:azr/system/shop/purchase/category3 {rng:9,trigger:84309}
 
-execute if score @s Azr_Shop matches 8431551..8431599 run function skyblock:azr/system/shop/purchase/ramiel
+execute if score @s Azr_Shop matches 8431551..8431699 run function skyblock:azr/system/shop/purchase/ramiel
 execute if score @s Azr_Shop matches 8432300..8432499 run function skyblock:azr/system/shop/purchase/ramiel/retrieve
 execute if score @s Azr_Shop matches 8432100..8432299 run function skyblock:azr/system/shop/purchase/sariel/alter
 execute if score @s Azr_Shop matches 8433100..8433999 store result storage azr:handbook_vitae eid int 1.0 run scoreboard players get @s azrPlayer_eternal
 execute if score @s Azr_Shop matches 8433100..8433999 run function skyblock:azr/system/shop/purchase/handbook/page with storage azr:handbook_vitae
 
-execute if score @s Azr_Shop matches 8431611..8431723 run function skyblock:azr/system/shop/purchase/nether
 
 execute if score tempPlayerShopSuccess Azr_system matches 0 run tellraw @s [{text:"缺少必要素材，交易失败！",color:"red"}]
 scoreboard players reset tempPlayerShopSuccess Azr_system
@@ -45,4 +44,5 @@ execute if score @s Azr_Shop matches 8431711..8431722 run function skyblock:azr/
 execute if score @s Azr_Shop matches 8431559..8431562 positioned -79863 28 -67 as @n[tag=AzrielTrader_dripstone_smith] run scoreboard players set @s rng1 7485
 execute if score @s Azr_Shop matches 8431563..8431566 positioned -79867 49 -128 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] as @n[tag=AzrielNPC_marinus] at @s run scoreboard players set @s AzrielNPC_ConversationTimer 3019
 execute if score @s Azr_Shop matches 8431570..8431589 positioned -79977 -51 12 as @n[type=villager,distance=..5,tag=AzrielTrader_botanical_trader] run scoreboard players set @s AzrielNPC_ConversationTimer 3007
+execute if score @s Azr_Shop matches 8431600..8431609 positioned -79780 38 -497 as @n[tag=AzrielTrader_pig_mercury,distance=..1.5] run scoreboard players set @s rng1 1006
 scoreboard players set @s Azr_Shop 0

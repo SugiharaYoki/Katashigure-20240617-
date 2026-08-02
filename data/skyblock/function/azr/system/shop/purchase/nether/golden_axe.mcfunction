@@ -1,3 +1,3 @@
-function skyblock:azr/assets/items/weapons/golden_axe
+function skyblock:azr/assets/items/weapons/golden_axe_normal
 
-clear @s gold_ingot[custom_data~{soft_gold:1b}] 2
+scoreboard players remove @s Azr_gold 30
