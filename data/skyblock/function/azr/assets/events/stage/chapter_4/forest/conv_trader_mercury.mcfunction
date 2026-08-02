@@ -19,7 +19,7 @@ execute if score @s rng1 matches 42 run tellraw @a[tag=azrShowDialog] [{text:"�
 
 
 execute if score @s rng1 matches 49..999 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_307] run tellraw @s [{text:" - "},{text:"交易：我需要补给。  ",color:"#c4ffbd"},{text:"〈◆〉",bold:1b,color:"#72ff62",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30701"}}]
-execute if score @s rng1 matches 49..999 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_307] run tellraw @s [{text:" - "},{text:"询问：我该怎么走？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30702"}}]
+execute if score @s rng1 matches 49..999 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_307] run tellraw @s [{text:" - "},{text:"询问：我接下来该怎么走？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30702"}}]
 execute if score @s rng1 matches 49..999 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_307] run tellraw @s [{text:" - "},{text:"询问：你为什么会在这里经营商店？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30703"}}]
 
 execute if score @s rng1 matches 49..999 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_307] run tag @s add azrPlayer_dialogchoice_revealed_307
