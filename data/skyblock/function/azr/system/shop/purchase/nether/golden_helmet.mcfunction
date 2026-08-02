@@ -1,3 +1,3 @@
-function skyblock:azr/assets/items/weapons/golden_helmet
+function skyblock:azr/assets/items/weapons/golden_helmet_normal
 
-clear @s gold_ingot 20
+scoreboard players remove @s Azr_gold 300

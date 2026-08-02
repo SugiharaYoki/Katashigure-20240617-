@@ -1,0 +1,1 @@
+give @s golden_helmet[custom_data={golden_helmet_normal:1b},custom_name={text:"金盔",italic:0b},attribute_modifiers=[{type:"minecraft:armor",id:"azr:golden_helmet_normal.armor",amount:3.5,operation:"add_value",slot:"armor"}],custom_model_data={floats:[100004.0]},unbreakable={}]

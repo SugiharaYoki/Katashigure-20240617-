@@ -1,3 +1,3 @@
-function skyblock:azr/assets/items/weapons/golden_pickaxe
+function skyblock:azr/assets/items/weapons/golden_boots_normal
 
-clear @s gold_nugget 20
+scoreboard players remove @s Azr_gold 300

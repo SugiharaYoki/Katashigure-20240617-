@@ -1,0 +1,1 @@
+give @s golden_leggings[custom_data={golden_leggings_normal:1b},custom_name={text:"金护腿",italic:0b},attribute_modifiers=[{type:"minecraft:armor",id:"azr:golden_leggings_normal.armor",amount:3.5,operation:"add_value",slot:"armor"}],custom_model_data={floats:[100004.0]},unbreakable={}]

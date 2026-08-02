@@ -1,0 +1,1 @@
+give @s golden_chestplate[custom_data={golden_chestplate_normal:1b},custom_name={text:"金盔甲",italic:0b},attribute_modifiers=[{type:"minecraft:armor",id:"azr:golden_chestplate_normal.armor",amount:3.5,operation:"add_value",slot:"armor"}],custom_model_data={floats:[100004.0]},unbreakable={}]

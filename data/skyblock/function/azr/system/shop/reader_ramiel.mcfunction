@@ -10,6 +10,7 @@ tellraw @s [{text:" - "},{text:"蜂棘护甲  ",color:"#cd8107"},{"score":{"name
 #8431570 8431571 8431572 8431573 8431574 8431575 8431576 8431577 8431578 8431579 被休憩所占用
 #8431580 8431581 8431582 8431583 8431584 8431585 8431586 8431587 8431588 8431589 被休憩所占用
 #8431600 8431601 8431602 8431603 8431604 8431605 8431606 8431607 8431608 8431609 被墨丘利占用
+#8431610 8431611 8431612 8431613 8431614 8431615 8431616 8431617 8431618 8431619 被墨丘利占用
 
 summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker0"],CustomName:' ？ '}
 summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarker1"],CustomName:' ？ '}
