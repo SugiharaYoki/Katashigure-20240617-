@@ -898,6 +898,17 @@ setblock -79742 23 -463 minecraft:water_cauldron[level=2]
 fill -79755 25 -461 -79755 23 -459 nether_brick_fence
 setblock -79753 24 -462 lever[face=floor,facing=south,powered=false]
 
+#stage object
+fill -79715 26 -514 -79715 26 -516 air
+fill -79728 26 -514 -79728 26 -516 air
+
+
+
+
+
+
+
+
 #stage14
 
 
