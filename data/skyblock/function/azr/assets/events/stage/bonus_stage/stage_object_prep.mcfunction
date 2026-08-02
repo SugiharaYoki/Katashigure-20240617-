@@ -1,3 +1,2 @@
-scoreboard players set stage_main_thread AzrTimerStack 2000
-scoreboard players set stage Azr_system 53
-execute positioned -79713 47 -380 as @p[distance=0..7,tag=azrPlayer] run tp @a[distance=7..,tag=azrPlayer] @s
+scoreboard players set stage_bonus Azr_system 15
+scoreboard players set stage_bonus_thread AzrTimerStack 0
