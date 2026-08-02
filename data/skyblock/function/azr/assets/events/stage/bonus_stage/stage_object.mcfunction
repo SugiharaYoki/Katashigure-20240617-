@@ -24,9 +24,16 @@ execute if score stage_bonus_thread AzrTimerStack matches 242 positioned -79712 
 execute if score stage_bonus_thread AzrTimerStack matches 252 positioned -79712 28 -515 run summon marker ~ ~ ~3 {Tags:["AzrielMob_summon_delay_marker_skeleton_sentinel","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_bonus_thread AzrTimerStack matches 262 positioned -79712 28 -515 run summon marker ~ ~ ~3 {Tags:["AzrielMob_summon_delay_marker_skeleton_sentinel","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
+execute if score stage_bonus_thread AzrTimerStack matches 84 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score stage_bonus_thread AzrTimerStack matches 84 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“喂、喂老大！另一边也有敌人！！”",color:"white"}]
+
+execute if score stage_bonus_thread AzrTimerStack matches 280 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score stage_bonus_thread AzrTimerStack matches 280 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“妈呀，总算解放了……！！”",color:"white"}]
 
 execute if score stage_bonus_thread AzrTimerStack matches 280 run title @a[tag=azrShowDialog] actionbar {text:"Extra Stage Clear",color:"green"}
 execute if score stage_bonus_thread AzrTimerStack matches 280 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_object
+execute if score stage_bonus_thread AzrTimerStack matches 228 run fill -79715 26 -514 -79715 26 -516 air
+execute if score stage_bonus_thread AzrTimerStack matches 228 run fill -79728 26 -514 -79728 26 -516 air
 execute if score stage_bonus_thread AzrTimerStack matches 280 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS15
 execute if score stage_bonus_thread AzrTimerStack matches 280 as @a[tag=azrPlayer] at @s run give @s emerald 5
 execute if score stage_bonus_thread AzrTimerStack matches 280 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/flower_wall_fire
