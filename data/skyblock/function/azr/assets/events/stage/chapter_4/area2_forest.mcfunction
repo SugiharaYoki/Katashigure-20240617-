@@ -17,6 +17,17 @@ execute positioned -79769 22 -445 as @n[tag=AzrielMarker_encounter,distance=0..0
 execute positioned -79780 38 -497 as @n[tag=AzrielTrader_pig_mercury,distance=..1.5] at @s run function skyblock:azr/assets/events/stage/chapter_4/forest/conv_trader_mercury
 
 
+#stage object
+execute positioned -79726 27 -516 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,x=-79726,y=26,z=-516,dx=10,dy=6,dz=3] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79726 27 -516 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 199.. run function skyblock:azr/assets/events/stage/chapter_4/forest/conv_bonus_object
+
+
+
+
+
+
+
+
 #随机野怪
 execute positioned -79741 44 -376 if score random_enemy_thread AzrTimerStack matches 2 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:42}
 execute positioned -79741 44 -376 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 2.. unless entity @a[tag=azrPlayer,distance=..12] if entity @a[tag=azrPlayer,distance=..56] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_animal
