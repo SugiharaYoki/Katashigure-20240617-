@@ -884,8 +884,9 @@ fill -79703 34 -355 -79693 34 -365 glass replace air
 fill -79697 26 -355 -79699 26 -365 glass replace air
 fill -79694 18 -356 -79702 18 -364 glass replace air
 
-
-
+#大树林
+fill -79782 41 -499 -79782 41 -496 minecraft:crimson_shelf[facing=east]{Inventory:[]}
+setblock -79804 56 -465 anvil[facing=north]
 
 
 
@@ -896,7 +897,7 @@ fill -79694 18 -356 -79702 18 -364 glass replace air
 
 
 #林场
-setblock -79804 56 -465 anvil[facing=north]
+
 
 #stage15
 setblock -79657 23 -421 birch_button[face=floor,facing=east]

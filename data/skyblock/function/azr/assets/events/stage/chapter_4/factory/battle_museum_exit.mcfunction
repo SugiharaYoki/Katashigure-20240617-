@@ -68,6 +68,7 @@ execute if score @s rng1 matches 146 positioned ~ ~ ~ run tag @n[tag=AzrielTrade
 execute if score @s rng1 matches 146 positioned ~ ~ ~ run scoreboard players add @n[tag=AzrielTrader_pig_henry] AzrielNPC_FollowInterest 99999999
 
 execute if score @s rng1 matches 148 positioned ~ ~ ~ run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage13
+execute if score @s rng1 matches 148 positioned ~ ~ ~ run attribute @n[tag=AzrielTrader_pig_henry] movement_speed base set 0.13
 
 
 #野区初始怪物

@@ -52,6 +52,12 @@ execute if score @s[tag=azrPlayer_dialogchoice_revealed_306] Azr_Shop matches 30
 execute if score @s[tag=azrPlayer_dialogchoice_revealed_306] Azr_Shop matches 30602 \
     positioned -79793 -6 -277 as @n[tag=AzrielTrader_pig_henry,type=piglin,distance=..63] run scoreboard players set @s rng1 2001
 
+execute if score @s[tag=azrPlayer_dialogchoice_revealed_307] Azr_Shop matches 30701 \
+    positioned -79779 39 -497 as @n[tag=AzrielTrader_pig_mercury,type=piglin,distance=..10] at @s run scoreboard players set @s rng1 1001
+execute if score @s[tag=azrPlayer_dialogchoice_revealed_307] Azr_Shop matches 30702 \
+    positioned -79779 39 -497 as @n[tag=AzrielTrader_pig_mercury,type=piglin,distance=..10] at @s run scoreboard players set @s rng1 2001
+execute if score @s[tag=azrPlayer_dialogchoice_revealed_307] Azr_Shop matches 30703 \
+    positioned -79779 39 -497 as @n[tag=AzrielTrader_pig_mercury,type=piglin,distance=..10] at @s run scoreboard players set @s rng1 3001
 
 
 

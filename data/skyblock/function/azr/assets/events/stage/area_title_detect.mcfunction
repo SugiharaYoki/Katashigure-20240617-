@@ -1,31 +1,31 @@
 
 ##第一章
-#西庭外围
-#逾怜藓路
+#西 庭 外 围
+#逾 怜 藓 路
 
 ##第二章
-#采光礼堂
-#传热根系
-#智述文馆
+#采 光 礼 堂
+#传 热 根 系
+#智 述 文 馆
 
 ##第三章
-#晦怨囚牢
-#蚀岩径
+#晦 怨 囚 牢
+#蚀 岩 径
 
 ##第四章
-#绯烟林场
-#血金窟
+#绯 烟 林 场
+#血 金 窟
 
 ##间章
-#邃栈
+#邃 栈
 
 ##第五章
-#神代水路
-#蓄水池
+#神 代 茏 渠
+#蓄 水 池
 
 ##第六章
-#中庭花园
-#苍白的古树
+#中 庭 花 园
+#苍 白 古 树
 
 
 execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79965,y=37,z=-17,dx=5,dy=5,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
