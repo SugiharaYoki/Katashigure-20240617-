@@ -3,8 +3,24 @@ scoreboard players add @s rng1 1
 execute as @s[scores={rng1=1}] positioned -79758 23 -463 run function skyblock:azr/assets/mobs/utility_respawn_anchor
 execute as @s[scores={rng1=1}] positioned -79780 39 -497 run function skyblock:azr/assets/mobs/unique/trader/pig_mercury
 
+execute as @s[scores={rng1=1}] positioned -79773 38 -539 run function skyblock:azr/assets/mobs/piglin_sword
+execute as @s[scores={rng1=1}] positioned -79773 38 -539 run function skyblock:azr/assets/mobs/piglin_sword
+execute as @s[scores={rng1=1}] positioned -79773 38 -539 run function skyblock:azr/assets/mobs/piglin_sword
+execute as @s[scores={rng1=1}] positioned -79773 38 -539 run function skyblock:azr/assets/mobs/piglin_sword
+execute as @s[scores={rng1=1}] positioned -79773 38 -539 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute as @s[scores={rng1=1}] positioned -79773 38 -539 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute as @s[scores={rng1=1}] positioned -79773 38 -539 run function skyblock:azr/assets/mobs/piglin_crossbow
 
+execute as @s[scores={rng1=1}] positioned -79736 37 -543 run function skyblock:azr/assets/mobs/skeleton_sword
+execute as @s[scores={rng1=1}] positioned -79736 37 -543 run function skyblock:azr/assets/mobs/skeleton_sword
+execute as @s[scores={rng1=1}] positioned -79736 37 -543 run function skyblock:azr/assets/mobs/skeleton_sword
+execute as @s[scores={rng1=1}] positioned -79736 37 -543 run function skyblock:azr/assets/mobs/skeleton_sword
+execute as @s[scores={rng1=1}] positioned -79736 37 -543 run function skyblock:azr/assets/mobs/skeleton_melee
+execute as @s[scores={rng1=1}] positioned -79736 37 -543 run function skyblock:azr/assets/mobs/skeleton_melee
+execute as @s[scores={rng1=1}] positioned -79736 37 -543 run function skyblock:azr/assets/mobs/skeleton_melee
 
+execute as @s[scores={rng1=1}] positioned -79773 38 -539 run effect give @e[tag=AzrielMob,distance=0..5] resistance 169 4 true
+execute as @s[scores={rng1=1}] positioned -79736 37 -543 run effect give @e[tag=AzrielMob,distance=0..5] resistance 169 4 true
 
 execute as @s[scores={rng1=1}] positioned -79765 23 -454 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute as @s[scores={rng1=2}] positioned -79764 23 -455 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
