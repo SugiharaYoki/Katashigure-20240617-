@@ -25,6 +25,21 @@ execute positioned -79775 23 -415 if score random_enemy_thread AzrTimerStack mat
 execute positioned -79755 23 -415 if score random_enemy_thread AzrTimerStack matches 3 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:42}
 execute positioned -79755 23 -415 if score random_enemy_thread AzrTimerStack matches 3 unless score random_enemy_count AzrTimerStack matches 2.. unless entity @a[tag=azrPlayer,distance=..12] if entity @a[tag=azrPlayer,distance=..56] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
 
+execute positioned -79744 42 -451 if score random_enemy_thread AzrTimerStack matches 2 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:42}
+execute positioned -79744 42 -451 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 2.. unless entity @a[tag=azrPlayer,distance=..12] if entity @a[tag=azrPlayer,distance=..56] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
+execute positioned -79809 35 -496 if score random_enemy_thread AzrTimerStack matches 2 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:42}
+execute positioned -79809 35 -496 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 2.. unless entity @a[tag=azrPlayer,distance=..12] if entity @a[tag=azrPlayer,distance=..56] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
+execute positioned -79740 36 -538 if score random_enemy_thread AzrTimerStack matches 2 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:42}
+execute positioned -79740 36 -538 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 2.. unless entity @a[tag=azrPlayer,distance=..12] if entity @a[tag=azrPlayer,distance=..56] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
+
+
+
+execute positioned -79773 37 -533 if score random_enemy_thread AzrTimerStack matches 2 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:42}
+execute positioned -79773 37 -533 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 2.. unless entity @a[tag=azrPlayer,distance=..12] if entity @a[tag=azrPlayer,distance=..56] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
+execute positioned -79724 45 -450 if score random_enemy_thread AzrTimerStack matches 2 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:42}
+execute positioned -79724 45 -450 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 2.. unless entity @a[tag=azrPlayer,distance=..12] if entity @a[tag=azrPlayer,distance=..56] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
+execute positioned -79797 35 -482 if score random_enemy_thread AzrTimerStack matches 2 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:42}
+execute positioned -79797 35 -482 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 2.. unless entity @a[tag=azrPlayer,distance=..12] if entity @a[tag=azrPlayer,distance=..56] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
 
 
 
