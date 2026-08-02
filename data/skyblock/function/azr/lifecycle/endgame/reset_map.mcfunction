@@ -891,7 +891,12 @@ setblock -79804 56 -465 anvil[facing=north]
 #绕行回防空洞
 setblock -79713 22 -461 waxed_copper_chest[facing=west]{Inventory:[]}
 item replace block -79713 22 -461 container.13 with gold_nugget 3
-
+setblock -79714 24 -460 minecraft:potted_poppy
+setblock -79714 23 -458 minecraft:potted_poppy
+setblock -79743 23 -463 minecraft:water_cauldron[level=3]
+setblock -79742 23 -463 minecraft:water_cauldron[level=2]
+fill -79755 25 -461 -79755 23 -459 nether_brick_fence
+setblock -79753 24 -462 lever[face=floor,facing=south,powered=false]
 
 #stage14
 
@@ -902,15 +907,7 @@ item replace block -79713 22 -461 container.13 with gold_nugget 3
 #林场
 
 
-#stage15
-setblock -79657 23 -421 birch_button[face=floor,facing=east]
-  #15 to 14 快速连通道路
-setblock -79753 24 -462 lever[face=floor,facing=south,powered=false]
-setblock -79714 24 -460 potted_poppy
-setblock -79714 23 -458 minecraft:potted_poppy
-setblock -79743 23 -463 minecraft:water_cauldron[level=3]
-setblock -79742 23 -463 minecraft:water_cauldron[level=2]
-fill -79755 23 -458 -79755 25 -462 nether_brick_fence
+
 #岩浆道上方
 fill -79647 23 -421 -79647 22 -422 minecraft:nether_brick_fence
 #岩浆道
