@@ -180,7 +180,7 @@ execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[ta
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value ' - '
 execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_2:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkeri] CustomName set value ' - '
 execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_2:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBw] CustomName set value ' - '
-execute if items entity @s container.* *[custom_data~{azr_amulet_flower_wall_fire:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerd] CustomName set value ' - '
+execute if entity @s[tag=AZS_BoS08] run data modify entity @n[tag=AzrRamielExStage_displaymarkerd] CustomName set value ' - '
 
 tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkera]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432301"},hover_event:{"action":"show_text","value":{text:"Appetence - 叛诛卷宗\n使用棍类武器攻击背对自己的怪物时造成大额伤害、增加手持棍类武器时的潜行速度",color:"white"}}},\
