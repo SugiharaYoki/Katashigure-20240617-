@@ -888,6 +888,9 @@ fill -79694 18 -356 -79702 18 -364 glass replace air
 fill -79782 41 -499 -79782 41 -496 minecraft:crimson_shelf[facing=east]{Inventory:[]}
 setblock -79804 56 -465 anvil[facing=north]
 
+#绕行回防空洞
+setblock -79713 22 -461 waxed_copper_chest[facing=west]{Inventory:[]}
+item replace block -79713 22 -461 container.13 with gold_nugget 3
 
 
 #stage14
@@ -905,8 +908,6 @@ setblock -79657 23 -421 birch_button[face=floor,facing=east]
 setblock -79753 24 -462 lever[face=floor,facing=south,powered=false]
 setblock -79714 24 -460 potted_poppy
 setblock -79714 23 -458 minecraft:potted_poppy
-setblock -79713 22 -461 chest[facing=west]{Inventory:[]}
-item replace block -79713 22 -461 container.13 with gold_nugget 3
 setblock -79743 23 -463 minecraft:water_cauldron[level=3]
 setblock -79742 23 -463 minecraft:water_cauldron[level=2]
 fill -79755 23 -458 -79755 25 -462 nether_brick_fence
