@@ -178,8 +178,9 @@ execute if entity @s[tag=AZS_BoSB22] run data modify entity @n[tag=AzrRamielExSt
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkere] CustomName set value ' - '
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerv] CustomName set value ' - '
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value ' - '
-execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_2:1B}] run data modify entity @n[tag=AzrRamielExStage_displaymarkeri] CustomName set value ' - '
-execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_2:1B}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBw] CustomName set value ' - '
+execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_2:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkeri] CustomName set value ' - '
+execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_2:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBw] CustomName set value ' - '
+execute if items entity @s container.* *[custom_data~{azr_amulet_flower_wall_fire:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerd] CustomName set value ' - '
 
 tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkera]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432301"},hover_event:{"action":"show_text","value":{text:"Appetence - 叛诛卷宗\n使用棍类武器攻击背对自己的怪物时造成大额伤害、增加手持棍类武器时的潜行速度",color:"white"}}},\
@@ -190,7 +191,7 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerf]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432306"},hover_event:{"action":"show_text","value":{text:"Flux - 燃点卷宗\n剑攻击点燃、加强节制天平扇形火",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerg]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432307"},hover_event:{"action":"show_text","value":{text:"Guise - 滋育石板\n蹲下时移动速度减少、攻击力减少、防御力增加、缓慢恢复生命",color:"white"}}},\
 {text:"\n "},\
-{selector:"@n[tag=AzrRamielExStage_displaymarkerh]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432308"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerh]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432308"},hover_event:{"action":"show_text","value":{text:"Hoistway - 烨墙石板\n按前进键增加攻防、保持长按增加移动速度",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkeri]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432309"},hover_event:{"action":"show_text","value":{text:"Index - 斥跃石板\n蹲下跳得更高、史莱姆块助跳",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerj]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432310"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerk]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432311"},hover_event:{"action":"show_text","value":{text:"Kinetic - 悬风石板\n按两下跳跃以悬浮",color:"white"}}},\
