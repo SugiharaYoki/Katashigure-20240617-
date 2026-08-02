@@ -13,6 +13,9 @@ execute positioned -79769 22 -445 unless entity @n[tag=AzrielMarker_encounter,di
 execute positioned -79769 22 -445 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 199.. run function skyblock:azr/assets/events/stage/chapter_4/forest/battle_shelter
 
 
+#商人 墨丘利
+execute positioned -79780 38 -497 as @n[tag=AzrielTrader_pig_mercury,distance=..1.5] at @s run function skyblock:azr/assets/events/stage/chapter_3/area_prison/npc_conversation_marinus_before_boss
+
 
 #随机野怪
 execute positioned -79741 44 -376 if score random_enemy_thread AzrTimerStack matches 2 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:42}

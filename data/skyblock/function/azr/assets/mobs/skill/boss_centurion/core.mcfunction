@@ -34,9 +34,9 @@ execute positioned -79770 31 -277 store result bossbar azr:boss_hp_bar_centurion
 
 
     execute as @n[tag=AzrielBossCenturion] at @s run scoreboard players add @s rng8 1
-    execute as @n[tag=AzrielBossCenturion] at @s if score @s[scores={Health=120..}] rng8 matches 1 unless entity @a[tag=azrPlayer,distance=..5] unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..2
-    execute as @n[tag=AzrielBossCenturion] at @s if score @s[scores={Health=120..}] rng8 matches 1 if entity @a[tag=azrPlayer,distance=..5] unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..5
-    execute as @n[tag=AzrielBossCenturion] at @s if score @s[scores={Health=..119}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 6..7
+    execute as @n[tag=AzrielBossCenturion] at @s if score @s[scores={Health=220..}] rng8 matches 1 unless entity @a[tag=azrPlayer,distance=..5] unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..2
+    execute as @n[tag=AzrielBossCenturion] at @s if score @s[scores={Health=220..}] rng8 matches 1 if entity @a[tag=azrPlayer,distance=..5] unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..5
+    execute as @n[tag=AzrielBossCenturion] at @s if score @s[scores={Health=..219}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 6..7
     execute as @n[tag=AzrielBossCenturion] at @s if score @s[scores={rng2=1..2}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_centurion/attack_sprint
     execute as @n[tag=AzrielBossCenturion] at @s if score @s[scores={rng2=3..5}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_centurion/attack_sweep
     execute as @n[tag=AzrielBossCenturion] at @s if score @s[scores={rng2=6..7}] rng8 matches 1.. run effect give @s resistance 10 4 true
