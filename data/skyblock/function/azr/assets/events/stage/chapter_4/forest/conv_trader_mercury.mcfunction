@@ -27,11 +27,11 @@ execute if score @s rng1 matches 49..999 as @p[distance=5.6..,tag=azrPlayer,tag=
 execute if score @s rng1 matches 49 run scoreboard players set @s rng1 48
 
 execute if score @s rng1 matches 1002 run playsound minecraft:entity.piglin.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute if score @s rng1 matches 1002 run tellraw @a[tag=azrShowDialog] [{text:"商铺老板 墨丘利：",color:"green",bold:1b},{bold: false,text:"\n“我是神庭西翼第2巡逻小队的队长，温斯顿。”",color:"white"}]
-execute if score @s rng1 matches 1014 run playsound minecraft:entity.piglin.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute if score @s rng1 matches 1014 run tellraw @a[tag=azrShowDialog] [{text:"商铺老板 墨丘利：",color:"green",bold:1b},{bold: false,text:"\n“1、2、3小队负责的都是关口要道的安防。通过这个大礼堂，即可前往生命树所在的中庭花园。”",color:"white"}]
-execute if score @s rng1 matches 1026 run playsound minecraft:entity.piglin.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute if score @s rng1 matches 1026 run tellraw @a[tag=azrShowDialog] [{text:"商铺老板 墨丘利：",color:"green",bold:1b},{bold: false,text:"\n“只不过目前那里无法通行，毕竟神庭现在遇到了紧急情况。”",color:"white"}]
+execute if score @s rng1 matches 1002 run tellraw @a[tag=azrShowDialog] [{text:"商铺老板 墨丘利：",color:"green",bold:1b},{bold: false,text:"\n“让我瞅瞅我还剩啥。”",color:"white"}]
+
+execute if score @s rng1 matches 1007 as @a[distance=0..8.5,tag=azrPlayer] run function skyblock:azr/system/shop/count
+execute if score @s rng1 matches 1007 as @a[distance=0..8.5,tag=azrPlayer] run tellraw @s [{text:" - "},{text:"弦蓄卷宗  ",color:"#306fc2"},{"nbt":"ingredient.iron_ingot","storage":"azr:shop",color:"white"},{text:"/15 铁锭 ",color:"white"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431563"},hover_event:{"action":"show_text","value":{text:"放置于快捷栏时，当使用弓进行一次射击后\n若立即进行下一次射击，则箭矢飞行速度×5\n\n若射击时朝向下方，还会额外制造箭雨\n上述任一效果成功触发后将有3秒的冷却\n\n发动“退避石板”的后退，可以取消冷却\n若在下砸期间发动箭雨，则箭雨的基础伤害×2",color:"white"}}}]
+
 execute if score @s rng1 matches 1035 run tag @a[tag=azrPlayer] remove azrPlayer_dialogchoice_revealed_307
 execute if score @s rng1 matches 1035 run scoreboard players set @s rng1 48
 
