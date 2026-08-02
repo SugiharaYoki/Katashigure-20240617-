@@ -90,7 +90,7 @@ execute unless score @s AzrPlayer_CurrentArea matches 6 if entity @s[x=-79895,y=
 execute unless score @s AzrPlayer_CurrentArea matches 8 if entity @s[x=-79970,y=-52,z=-10,dx=11,dy=7,dz=7] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:8,title:"天 使 的 憩 庭",color_code:"#22fb92"}
 
-execute unless score @s AzrPlayer_CurrentArea matches 9 if entity @s[x=-79775,y=28,z=-360,dx=8,dy=7,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
+execute unless score @s AzrPlayer_CurrentArea matches 9 if entity @s[x=-79775,y=28,z=-360,dx=8,dy=12,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:9,title:"绯烟林场",color_code:"#ed4d47"}
 
 
