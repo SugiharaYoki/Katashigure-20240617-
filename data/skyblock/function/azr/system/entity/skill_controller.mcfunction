@@ -7,6 +7,7 @@ execute if entity @s[tag=AzrielMob_smoke] run function skyblock:azr/assets/mobs/
 execute if entity @s[tag=AzrielMob_smoke_mother] run function skyblock:azr/assets/mobs/skill/smoke_mother
 execute if entity @s[tag=AzrielMob_undead_pickaxe] run function skyblock:azr/assets/mobs/skill/undead_pickaxe
 execute if entity @s[tag=AzrielMob_treasure_rabbit] run function skyblock:azr/assets/mobs/skill/treasure_rabbit
+
 execute if entity @s[tag=AzrielMob_skeleton_general] run function skyblock:azr/assets/mobs/skill/skeleton_general
 execute if entity @s[tag=AzrielMob_skeleton_bogged] run function skyblock:azr/assets/mobs/skill/skeleton_bogged
 execute if entity @s[tag=AzrielMob_floating_fire] run function skyblock:azr/assets/mobs/skill/floating_fire
@@ -16,6 +17,8 @@ execute if entity @s[tag=AzrielMob_undead_baby] run function skyblock:azr/assets
 execute if entity @s[tag=AzrielMob_sonic_eye] run function skyblock:azr/assets/mobs/skill/sonic_eye
 execute if entity @s[tag=AzrielMob_sonic_eye_lord] run function skyblock:azr/assets/mobs/skill/sonic_eye_lord
 execute if entity @s[tag=AzrielMob_healer] run function skyblock:azr/assets/mobs/skill/healer
+
+execute if entity @s[tag=AzrielMob_piglin_general] run function skyblock:azr/assets/mobs/skill/piglin_general
 
 execute if entity @s[tag=AzrielMob_trap_spike_display] run function skyblock:azr/assets/mobs/skill/trap_spike
 
