@@ -1,3 +1,3 @@
-function skyblock:azr/assets/items/weapons/golden_boots_normal
+function skyblock:azr/assets/items/armors/golden_boots_normal
 
 scoreboard players remove @s Azr_gold 300
