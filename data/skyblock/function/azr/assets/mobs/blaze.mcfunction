@@ -1,8 +1,8 @@
 
 
-execute if score AzrielC_danger rng1 matches 1..8 run summon blaze ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielMob_typeDEATH","AzrielMob_blaze","AzrielMob_level_3"],DeathLootTable:"skyblock:azr_new/zombie_tier1",attributes:[{id:"max_health",base:26.0},{id:"armor",base:6.0},{base:0.28d,id:"movement_speed"}],Health:26.0f,CustomName:'焰魂'}
-execute if score AzrielC_danger rng1 matches 9..12 run summon blaze ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielMob_typeDEATH","AzrielMob_blaze","AzrielMob_level_4"],DeathLootTable:"skyblock:azr_new/zombie_tier1",attributes:[{id:"max_health",base:30.0},{id:"armor",base:7.0},{base:0.28d,id:"movement_speed"}],Health:30.0f,CustomName:'焰魂'}
-execute if score AzrielC_danger rng1 matches 13.. run summon blaze ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielMob_typeDEATH","AzrielMob_blaze","AzrielMob_level_5"],DeathLootTable:"skyblock:azr_new/zombie_tier1",attributes:[{id:"max_health",base:34.0},{id:"armor",base:9.0},{base:0.29d,id:"movement_speed"}],Health:34.0f,CustomName:'焰魂'}
+execute if score AzrielC_danger rng1 matches 1..8 run summon blaze ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielMob_typeDEATH","AzrielMob_blaze","AzrielMob_level_3"],DeathLootTable:"skyblock:azr_new/zombie_tier1",attributes:[{id:"max_health",base:26.0},{id:"armor",base:12.0},{base:0.28d,id:"movement_speed"}],Health:26.0f,CustomName:'焰魂'}
+execute if score AzrielC_danger rng1 matches 9..12 run summon blaze ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielMob_typeDEATH","AzrielMob_blaze","AzrielMob_level_4"],DeathLootTable:"skyblock:azr_new/zombie_tier1",attributes:[{id:"max_health",base:30.0},{id:"armor",base:13.0},{base:0.28d,id:"movement_speed"}],Health:30.0f,CustomName:'焰魂'}
+execute if score AzrielC_danger rng1 matches 13.. run summon blaze ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielMob_typeDEATH","AzrielMob_blaze","AzrielMob_level_5"],DeathLootTable:"skyblock:azr_new/zombie_tier1",attributes:[{id:"max_health",base:34.0},{id:"armor",base:14.0},{base:0.29d,id:"movement_speed"}],Health:34.0f,CustomName:'焰魂'}
 particle trial_spawner_detection ~ ~0.4 ~ 0.25 0.4 0.25 0 10
 
 execute as @n[tag=AzrielMob,tag=!AzrielMob_level_ed,tag=AzrielMob_level_3] at @s run scoreboard players set @s AzrielMobLevel 3
