@@ -16,6 +16,8 @@ $execute if data storage azr:handbook_vitae doc.$(eid).sonic_eye run tellraw @s 
 
 $execute unless data storage azr:handbook_vitae doc.$(eid).slime run tellraw @s [{text:"★？",color:"#6f8095"}]
 $execute if data storage azr:handbook_vitae doc.$(eid).slime run tellraw @s [{text:"★史莱姆",color:"#4495ff",hover_event:{"action":"show_text","value":[{text:"类型：生灵\n",color:"#9c55ff",bold:1b},{text:"攻击方式：近战\n",color:"#ffa463",bold:1b},{text:"移动缓慢，靠弹跳接近的小型生物。\n只要接触到就会被腐蚀，得保持一定距离解决掉。",color:"white",bold: false}]}}]
+$execute unless data storage azr:handbook_vitae doc.$(eid).magma_cube_mini run tellraw @s [{text:"★★？",color:"#6f8095"}]
+$execute if data storage azr:handbook_vitae doc.$(eid).magma_cube_mini run tellraw @s [{text:"★★炽烈球体",color:"#4495ff",hover_event:{"action":"show_text","value":[{text:"类型：生灵\n",color:"#9c55ff",bold:1b},{text:"攻击方式：近战\n",color:"#ffa463",bold:1b},{text:"移动迅速，靠弹跳接近的小型生物。\n通常藏在某些方块中，靠近太久就会爆裂而出，展开攻击。",color:"white",bold: false}]}}]
 
 
 $execute unless data storage azr:handbook_vitae doc.$(eid).undead run tellraw @s [{text:"★？ ★？",color:"#786897"}]
@@ -80,6 +82,10 @@ $execute if data storage azr:handbook_vitae doc.$(eid).nightblind run tellraw @s
 $execute unless data storage azr:handbook_vitae doc.$(eid).barrier_maintainer run tellraw @s [{text:"★？",color:"#6f8095"}]
 $execute if data storage azr:handbook_vitae doc.$(eid).barrier_maintainer run tellraw @s [{text:"★结界兽",color:"#4495ff",hover_event:{"action":"show_text","value":[{text:"类型：生灵\n",color:"#9c55ff",bold:1b},{text:"攻击方式：无\n",color:"#ffa463",bold:1b},{text:"神界用于守护结界的奇特生物。\n每只结界兽往往都对应了一道特定的结界门。\n击杀后一定会掉落金西瓜。",color:"white",bold: false}]}}]
 
+$execute unless data storage azr:handbook_vitae doc.$(eid).piglin_common run tellraw @s [{text:"★？ ★？ ★？",color:"#859261"}]
+$execute if data storage azr:handbook_vitae doc.$(eid).piglin_common run tellraw @s [{text:"★魔界剑士",color:"#cdff44",hover_event:{"action":"show_text","value":[{text:"类型：凶兽\n",color:"#9c55ff",bold:1b},{text:"攻击方式：近战\n",color:"#ffa463",bold:1b},{text:"普通的魔界剑士，可能身穿各种装甲作战。",color:"white",bold: false}]}}, {text:" ★魔界弩手",color:"#cdff44",hover_event:{"action":"show_text","value":[{text:"类型：凶兽\n",color:"#9c55ff",bold:1b},{text:"攻击方式：远程\n",color:"#ffa463",bold:1b},{text:"普通的魔界弩手，可能身穿各种装甲作战。",color:"white",bold: false}]}}, {text:" ★魔界工兵",color:"#cdff44",hover_event:{"action":"show_text","value":[{text:"类型：凶兽\n",color:"#9c55ff",bold:1b},{text:"攻击方式：远程\n",color:"#ffa463",bold:1b},{text:"普通的魔界工兵，可能身穿各种装甲作战。\n攻击力比剑士更高，但行动也更为迟缓。",color:"white",bold: false}]}}]
+$execute unless data storage azr:handbook_vitae doc.$(eid).piglin_spear run tellraw @s [{text:"★★？",color:"#859261"}]
+$execute if data storage azr:handbook_vitae doc.$(eid).piglin_spear run tellraw @s [{text:"★★魔界骑士",color:"#cdff44",hover_event:{"action":"show_text","value":[{text:"类型：凶兽\n",color:"#9c55ff",bold:1b},{text:"攻击方式：近战\n",color:"#ffa463",bold:1b},{text:"行动十分迟缓的怪物。\n但是他们每隔一段时间就会尝试进行持续性的冲刺，期间威胁较高。",color:"white",bold: false}]}}]
 
 
 

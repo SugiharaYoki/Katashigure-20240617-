@@ -38,6 +38,10 @@ execute if score @s rng1 matches 91 positioned -79795 7 -278 run fill -79757 23 
 execute if score @s rng1 matches 91 positioned -79759 19 -266 run function skyblock:azr/assets/mobs/piglin_sword
 execute if score @s rng1 matches 91 positioned -79760 19 -266 run function skyblock:azr/assets/mobs/piglin_sword
 
+
+execute if score @s rng1 matches 91 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:magma_cube_mini}
+execute if score @s rng1 matches 91 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:piglin_common}
+
 execute if score @s rng1 matches 93 positioned -79795 7 -278 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng1 matches 93 positioned -79795 7 -278 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“喂，女人！我把防御屏障关掉了，你可以去楼上，我用魔力探测器帮你探路。”",color:"white"}]
 execute if score @s rng1 matches 108 positioned -79795 7 -278 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
