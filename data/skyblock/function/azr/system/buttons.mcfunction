@@ -134,5 +134,3 @@ execute if block -79952 40 54 minecraft:birch_button[powered=true] run scoreboar
 execute if block -79952 39 54 minecraft:birch_button[powered=true] run scoreboard players reset CerementPassword Azr_system
 #functional button - 94935
 execute if block -79751 37 -353 minecraft:polished_blackstone_button[powered=true] run setblock -79761 42 -358 air destroy
-#functional lever
-execute if block -79753 24 -462 minecraft:lever[powered=true] unless score $ch4DoorOpen Azr_system matches 1 run function skyblock:azr/assets/events/stage/dialog/ch4_door0
