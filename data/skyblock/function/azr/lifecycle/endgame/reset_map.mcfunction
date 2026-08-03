@@ -906,20 +906,16 @@ fill -79728 26 -514 -79728 26 -516 air
 fill -79647 23 -421 -79647 22 -422 minecraft:nether_brick_fence
 
 
-
-
-
-
-#岩浆道
-setblock -79571 11 -412 air
-setblock -79571 11 -412 trapped_chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
-setblock -79626 21 -415 chest[facing=north]{Inventory:[]}
+setblock -79626 21 -415 waxed_copper_chest[facing=north]{Inventory:[]}
 item replace block -79626 21 -415 container.11 with gold_nugget 3
 item replace block -79626 21 -415 container.13 with skull_banner_pattern[custom_name={text:"“神罚 这一切都是神罚 全部都是”",color:"dark_purple",italic:0b},lore=[{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"现在轮到我们自取灭亡了",color:"white",italic:0b}]] 1
 
-setblock -79588 8 -427 chest[facing=west]{Inventory:[]}
+setblock -79588 8 -427 waxed_copper_chest[facing=west]{Inventory:[]}
 item replace block -79588 8 -427 container.12 with gold_nugget 2
 item replace block -79588 8 -427 container.14 with gold_nugget 2
+
+
+
 
 #stage16
 fill -79533 27 -406 -79533 26 -405 minecraft:nether_brick_fence
