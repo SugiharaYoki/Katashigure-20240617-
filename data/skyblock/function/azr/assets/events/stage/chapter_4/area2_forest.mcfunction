@@ -28,7 +28,7 @@ execute positioned -79718 25 -499 as @n[tag=AzrielMarker_encounter,distance=0..0
 
 #矿洞到防空洞的快速通道
 execute positioned -79753 24 -462 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if block -79753 24 -462 minecraft:lever[powered=true] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79753 24 -462 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 19.. run function skyblock:azr/assets/events/stage/dialog/ch4_door0
+execute positioned -79753 24 -462 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 19.. run function skyblock:azr/assets/events/stage/chapter_4/forest/door_mine_to_shelter
 
 
 #随机野怪
