@@ -86,6 +86,26 @@ execute if score @s rng1 matches 102 positioned -79756 23 -391 run function skyb
 execute if score @s rng1 matches 102 positioned -79754 23 -394 run function skyblock:azr/assets/mobs/utility_bat
 execute if score @s rng1 matches 102 positioned -79753 23 -398 run function skyblock:azr/assets/mobs/utility_bat
 
+execute if score @s rng1 matches 102 positioned -79704 29 -513 run function skyblock:azr/assets/mobs/magma_cube_block
+execute if score @s rng1 matches 102 positioned -79707 29 -492 run function skyblock:azr/assets/mobs/magma_cube_block
+execute if score @s rng1 matches 102 positioned -79697 29 -489 run function skyblock:azr/assets/mobs/magma_cube_block
+execute if score @s rng1 matches 102 positioned -79728 42 -492 run function skyblock:azr/assets/mobs/magma_cube_block
+execute if score @s rng1 matches 102 positioned -79740 46 -473 run function skyblock:azr/assets/mobs/magma_cube_block
+execute if score @s rng1 matches 102 positioned -79774 41 -442 run function skyblock:azr/assets/mobs/magma_cube_block
+execute if score @s rng1 matches 102 positioned -79794 36 -481 run function skyblock:azr/assets/mobs/magma_cube_block
+execute if score @s rng1 matches 102 positioned -79807 33 -501 run function skyblock:azr/assets/mobs/magma_cube_block
+execute if score @s rng1 matches 102 positioned -79800 32 -492 run function skyblock:azr/assets/mobs/magma_cube_block
+execute if score @s rng1 matches 102 positioned -79798 29 -510 run function skyblock:azr/assets/mobs/magma_cube_block
+execute if score @s rng1 matches 102 positioned -79782 37 -518 run function skyblock:azr/assets/mobs/magma_cube_block
+execute if score @s rng1 matches 102 positioned -79765 38 -518 run function skyblock:azr/assets/mobs/magma_cube_block
+execute if score @s rng1 matches 102 positioned -79754 41 -546 run function skyblock:azr/assets/mobs/magma_cube_block
+execute if score @s rng1 matches 102 positioned -79739 36 -540 run function skyblock:azr/assets/mobs/magma_cube_block
+
+execute if score @s rng1 matches 102 positioned -79750 43 -482 run function skyblock:azr/assets/mobs/magma_cube_block
+execute if score @s rng1 matches 102 positioned -79750 43 -483 run function skyblock:azr/assets/mobs/magma_cube_block
+execute if score @s rng1 matches 102 positioned -79751 43 -482 run function skyblock:azr/assets/mobs/magma_cube_block
+execute if score @s rng1 matches 102 positioned -79751 43 -483 run function skyblock:azr/assets/mobs/magma_cube_block
+
 execute if score @s rng1 matches 102 positioned -79753 23 -398 run scoreboard players set stage Azr_system 57
 
 
