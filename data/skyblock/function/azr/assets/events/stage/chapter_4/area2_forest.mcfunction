@@ -15,7 +15,7 @@ execute positioned -79769 22 -445 as @n[tag=AzrielMarker_encounter,distance=0..0
 
 
 #商人 墨丘利
-execute positioned -79780 38 -497 as @n[tag=AzrielTrader_pig_mercury,distance=..1.5] at @s run function skyblock:azr/assets/events/stage/chapter_4/forest/conv_trader_mercury
+execute positioned -79780 39 -497 as @n[tag=AzrielTrader_pig_mercury,distance=..10.5] at @s run function skyblock:azr/assets/events/stage/chapter_4/forest/conv_trader_mercury
 
 
 #stage object
