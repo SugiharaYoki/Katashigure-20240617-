@@ -1,4 +1,4 @@
-execute store result score @s rng4 run random value 1..330
+execute store result score @s rng4 run random value 1..400
 
 
 execute if score @s rng4 matches 21 as @r[tag=azrPlayer] at @s positioned ^ ^ ^30 run playsound entity.generic.explode ambient @a ~ ~ ~ 5 0.8
