@@ -1,6 +1,7 @@
 #小树林
 execute positioned -79774 39 -359 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,x=-79774,y=39,z=-359,dx=6,dy=6,dz=6] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79774 39 -359 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_4/forest/conv_small_field
+execute positioned -79774 39 -359 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_4/forest/env_battleground
 
 #stage hoistway
 execute positioned -79712 44 -386 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,x=-79717,y=46,z=-382,dx=6,dy=6,dz=6] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
@@ -29,6 +30,11 @@ execute positioned -79718 25 -499 as @n[tag=AzrielMarker_encounter,distance=0..0
 #矿洞到防空洞的快速通道
 execute positioned -79753 24 -462 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if block -79753 24 -462 minecraft:lever[powered=true] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79753 24 -462 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 19.. run function skyblock:azr/assets/events/stage/chapter_4/forest/door_mine_to_shelter
+
+
+
+
+
 
 
 #随机野怪
