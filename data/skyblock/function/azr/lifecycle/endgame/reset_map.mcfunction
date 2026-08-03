@@ -902,25 +902,14 @@ setblock -79753 24 -462 lever[face=floor,facing=south,powered=false]
 fill -79715 26 -514 -79715 26 -516 air
 fill -79728 26 -514 -79728 26 -516 air
 
-
-
-
-
-
-
-
-#stage14
-
-
-
-
-
-#林场
-
-
-
 #岩浆道上方
 fill -79647 23 -421 -79647 22 -422 minecraft:nether_brick_fence
+
+
+
+
+
+
 #岩浆道
 setblock -79571 11 -412 air
 setblock -79571 11 -412 trapped_chest[facing=north]{lock:{components:{custom_data:{key_required:1b}}}}
