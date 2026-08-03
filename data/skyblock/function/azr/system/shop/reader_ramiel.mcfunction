@@ -137,14 +137,14 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_flower_wall:1b}
 execute if items entity @s container.* *[custom_data~{azr_amulet_sprint_double:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkere] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_fire_lit:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerf] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_grow:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerg] CustomName set value ' √ '
-execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerh] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_flower_wall_fire:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerh] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_jump_boost:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkeri] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerj] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_stay_float:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerk] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerl] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerm] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkern] CustomName set value ' √ '
-execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkero] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_tripler:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkero] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerp] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerq] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerr] CustomName set value ' √ '
@@ -201,7 +201,7 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerm]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432313"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkern]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432314"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
 {text:"\n "},\
-{selector:"@n[tag=AzrRamielExStage_displaymarkero]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432315"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkero]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432315"},hover_event:{"action":"show_text","value":{text:"Object - 攒善石板\n蹲下额外消耗2存箭量，射出三重箭、后撤步射出五重箭",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerp]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432316"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerq]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432317"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerr]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432318"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
