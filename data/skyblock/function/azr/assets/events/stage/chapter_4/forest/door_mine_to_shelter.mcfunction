@@ -6,3 +6,7 @@ execute if score @s rng1 matches 3 run playsound minecraft:block.iron_door.open 
 execute if score @s rng1 matches 4 run fill -79755 25 -459 -79755 25 -461 air
 execute if score @s rng1 matches 4 run playsound minecraft:block.iron_door.open ambient @a -79755 26 -460 3 0.3
 
+
+
+
+

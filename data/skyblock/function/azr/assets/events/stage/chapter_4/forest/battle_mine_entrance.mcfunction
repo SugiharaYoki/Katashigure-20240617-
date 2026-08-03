@@ -16,3 +16,12 @@ execute as @s[scores={rng1=81}] positioned -79699 30 -455 run summon marker ~ ~ 
 
 
 execute as @s[scores={rng1=34}] as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:piglin_spear}
+
+
+execute as @s[scores={rng1=11}] run scoreboard players set stage Azr_system 59
+
+
+
+
+
+

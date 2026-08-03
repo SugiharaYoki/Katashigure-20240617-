@@ -23,3 +23,8 @@ execute if score @s rng4 matches 37..38 positioned -79785 40 -511 as @r[tag=azrP
 execute if score @s rng4 matches 39..40 positioned -79785 40 -511 as @r[tag=azrPlayer,distance=..80] at @s positioned ^ ^ ^-30 run playsound entity.arrow.shoot ambient @a ~ 41 ~ 5 0.9
 execute if score @s rng4 matches 41..42 positioned -79785 40 -511 as @r[tag=azrPlayer,distance=..80] at @s positioned ^30 ^ ^ run playsound entity.arrow.shoot ambient @a ~ 41 ~ 5 0.9
 execute if score @s rng4 matches 43..44 positioned -79785 40 -511 as @r[tag=azrPlayer,distance=..80] at @s positioned ^-30 ^ ^ run playsound entity.arrow.shoot ambient @a ~ 41 ~ 5 0.9
+
+
+
+
+
