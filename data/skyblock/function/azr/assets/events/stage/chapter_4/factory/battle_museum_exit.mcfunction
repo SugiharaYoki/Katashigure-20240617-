@@ -70,6 +70,7 @@ execute if score @s rng1 matches 146 positioned ~ ~ ~ run scoreboard players add
 execute if score @s rng1 matches 148 positioned ~ ~ ~ run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage13
 execute if score @s rng1 matches 148 positioned ~ ~ ~ run attribute @n[tag=AzrielTrader_pig_henry] movement_speed base set 0.13
 
+execute if score @s rng1 matches 148 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:blaze}
 
 #野区初始怪物
 execute if score @s rng1 matches 102 positioned -79705 46 -379 run function skyblock:azr/assets/mobs/piglin_sword

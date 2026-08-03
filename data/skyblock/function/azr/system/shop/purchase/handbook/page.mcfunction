@@ -44,6 +44,8 @@ $execute unless data storage azr:handbook_vitae doc.$(eid).undead_baby run tellr
 $execute if data storage azr:handbook_vitae doc.$(eid).undead_baby run tellraw @s [{text:"★★咒尸",color:"#8644ff",hover_event:{"action":"show_text","value":[{text:"类型：亡魂\n",color:"#9c55ff",bold:1b},{text:"攻击方式：近战 中程范围攻击/妨害\n",color:"#ffa463",bold:1b},{text:"小型的走尸，行动更加迅速，且更耐打。\n在靠近玩家后吟唱范围攻击，期间大幅减少受到的伤害。\n它们的手中一定会持有一个“唤咒媒介”，并根据媒介的种类决定吟唱何种范围攻击。",color:"white",bold: false}]}}]
 $execute unless data storage azr:handbook_vitae doc.$(eid).undead_shadow run tellraw @s [{text:"★★？",color:"#786897"}]
 $execute if data storage azr:handbook_vitae doc.$(eid).undead_shadow run tellraw @s [{text:"★★戮影",color:"#8644ff",hover_event:{"action":"show_text","value":[{text:"类型：亡魂\n",color:"#9c55ff",bold:1b},{text:"攻击方式：近战\n",color:"#ffa463",bold:1b},{text:"缓慢靠近，发动高额攻击的怪物。\n只要看向它，它就会试图瞬间移动到你背后4格距离处。\n贴着墙恐怕是战胜它的最好方法。",color:"white",bold: false}]}}]
+$execute unless data storage azr:handbook_vitae doc.$(eid).blaze run tellraw @s [{text:"★★？",color:"#786897"}]
+$execute if data storage azr:handbook_vitae doc.$(eid).blaze run tellraw @s [{text:"★★焰魂",color:"#8644ff",hover_event:{"action":"show_text","value":[{text:"类型：亡魂\n",color:"#9c55ff",bold:1b},{text:"攻击方式：远程 燃烧\n",color:"#ffa463",bold:1b},{text:"诞生于火焰中的亡灵。\n每隔一段时间发射三枚火球进行攻击。",color:"white",bold: false}]}}]
 
 
 $execute unless data storage azr:handbook_vitae doc.$(eid).skeleton_melee unless data storage azr:handbook_vitae doc.$(eid).skeleton_sword run tellraw @s [{text:"★？",color:"#786897"},{text:"  "},{text:"★？",color:"#786897"}]
