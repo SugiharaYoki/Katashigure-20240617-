@@ -64,8 +64,13 @@ execute positioned -79724 45 -450 if score random_enemy_thread AzrTimerStack mat
 execute positioned -79797 35 -482 if score random_enemy_thread AzrTimerStack matches 2 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:42}
 execute positioned -79797 35 -482 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 2.. unless entity @a[tag=azrPlayer,distance=..12] if entity @a[tag=azrPlayer,distance=..56] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
 
-
-
+#烈焰人
+execute positioned -79767 38 -520 if score random_enemy_thread AzrTimerStack matches 2 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:30}
+execute positioned -79767 38 -520 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 2.. unless entity @a[tag=azrPlayer,distance=..3] if entity @a[tag=azrPlayer,distance=..10] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/blaze
+execute positioned -79780 39 -537 if score random_enemy_thread AzrTimerStack matches 2 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:30}
+execute positioned -79780 39 -537 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 2.. unless entity @a[tag=azrPlayer,distance=..3] if entity @a[tag=azrPlayer,distance=..10] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/blaze
+execute positioned -79750 41 -542 if score random_enemy_thread AzrTimerStack matches 2 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:30}
+execute positioned -79750 41 -542 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 2.. unless entity @a[tag=azrPlayer,distance=..3] if entity @a[tag=azrPlayer,distance=..10] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/blaze
 
 
 
