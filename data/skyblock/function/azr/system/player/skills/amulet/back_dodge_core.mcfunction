@@ -44,5 +44,5 @@ execute if entity @s[scores={AzrSariel_Amulet_BackDodge_clock=96}] run scoreboar
 execute if score @s AzrSariel_Amulet_BackDodge_last matches -5.. run scoreboard players remove @s AzrSariel_Amulet_BackDodge_last 1
 
 
-execute if entity @s[scores={AzrSariel_Amulet_BackDodge_last=1..},predicate=skyblock:sneak] at @s rotated ~ 90 positioned ^ ^0.3 ^2 run function skyblock:azr/system/player/skills/amulet/back_dodge_arrow_tripler_particle
+execute if entity @s[scores={AzrSariel_Amulet_BackDodge_last=1..},predicate=skyblock:sneak] at @s rotated ~ 0 positioned ^ ^0.3 ^2 run function skyblock:azr/system/player/skills/amulet/back_dodge_arrow_tripler_particle
 
