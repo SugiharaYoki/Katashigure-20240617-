@@ -137,6 +137,7 @@ scoreboard objectives add AzrSariel_Amulet_StayFloat_power dummy
 scoreboard objectives add AzrSariel_Amulet_StayFloat_clock dummy
 scoreboard objectives add AzrSariel_Amulet_SprintDouble_clock dummy
 scoreboard objectives add AzrSariel_Amulet_BackDodge_clock dummy
+scoreboard objectives add AzrSariel_Amulet_BackDodge_last dummy
 scoreboard objectives add AzrSariel_Amulet_DownKick_clock dummy
 scoreboard objectives add AzrSariel_Amulet_AxeVortex_cooldown dummy
 scoreboard objectives add AzrSariel_Amulet_AxeVortexDodge_cooldown dummy
@@ -145,6 +146,7 @@ scoreboard objectives add AzrSariel_Amulet_MossSpore_cooldown dummy
 scoreboard objectives add AzrSariel_Amulet_generic_use_bow minecraft.used:minecraft.bow
 scoreboard objectives add AzrSariel_Amulet_DoubleArrow_clock dummy
 scoreboard objectives add AzrSariel_Amulet_ArrowSavior_count dummy
+scoreboard objectives add AzrSariel_Amulet_ArrowSavior_state dummy
 scoreboard objectives add AzrSariel_Amulet_FlowerWallFire_sum dummy
 
 

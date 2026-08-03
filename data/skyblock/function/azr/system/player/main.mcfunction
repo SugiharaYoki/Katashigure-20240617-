@@ -54,6 +54,7 @@ execute if entity @s[tag=AzrSariel_Amulet_AxeVortex_SweepRatio] unless items ent
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_grow:1b}] run function skyblock:azr/system/player/skills/amulet/moss_grow_core
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_hoe_assassinate:1b}] run function skyblock:azr/system/player/skills/amulet/hoe_assassinate_core
 execute if items entity @s container.* *[custom_data~{azr_amulet_hoe_assassinate:1b}] run function skyblock:azr/system/player/skills/amulet/hoe_assassinate_sneak_speed
+execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_tripler:1b}] run function skyblock:azr/system/player/skills/amulet/arrow_tripler
 
 execute if items entity @s container.* *[custom_data~{azr_amulet_sprint_double:1b}] run tag @s add sprint_double_pass
 execute if items entity @s container.* *[custom_data~{azr_amulet_back_dodge:1b}] run tag @s add back_dodge_pass
@@ -97,6 +98,8 @@ execute if items entity @s[tag=AZS_BoS11] container.* *[custom_data~{azr_amulet_
 
 #一次性打火石
 execute if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. if items entity @s weapon.mainhand *[custom_data~{instant_spark:1b}] run function skyblock:azr/system/player/damage_bonus/effect/item_instant_spark
+#多重射击额外消耗
+execute if score @s AzrSariel_Amulet_generic_use_bow matches 1.. if score @s AzrArrowSavior_state matches 1..2 run scoreboard players remove @s AzrSariel_Amulet_ArrowSavior_count 2
 
 #负面影响事件
 execute if score @s AzrEvent_affected_quake_medium matches 1.. run function skyblock:azr/assets/events/effects/affected_quake_medium
