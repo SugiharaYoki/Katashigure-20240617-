@@ -19,6 +19,7 @@ execute if entity @s[tag=AzrielMob_sonic_eye_lord] run function skyblock:azr/ass
 execute if entity @s[tag=AzrielMob_healer] run function skyblock:azr/assets/mobs/skill/healer
 
 execute if entity @s[tag=AzrielMob_piglin_general] run function skyblock:azr/assets/mobs/skill/piglin_general
+execute if entity @s[tag=AzrielMob_piglin_spear] run function skyblock:azr/assets/mobs/skill/piglin_spear
 
 execute if entity @s[tag=AzrielMob_trap_spike_display] run function skyblock:azr/assets/mobs/skill/trap_spike
 
