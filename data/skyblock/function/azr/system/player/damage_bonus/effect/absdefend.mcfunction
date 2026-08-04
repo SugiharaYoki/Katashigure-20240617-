@@ -6,7 +6,7 @@ execute if entity @s[scores={AzrSariel_Skill_AbsDefend_cooldown=-1}] at @s run p
 execute if entity @s[scores={AzrSariel_Skill_AbsDefend_cooldown=-1}] run tellraw @s [{text:"节制天平：下一次受到的伤害将被完全抵消",color: "#9eb9de"}]
 execute if entity @s[scores={AzrSariel_Skill_AbsDefend_cooldown=-1}] run scoreboard players remove @s AzrSariel_Skill_AbsDefend_cooldown 1
 
-execute if entity @s[tag=AzrSariel_Skill_AbsDefend_success] run scoreboard players set @s AzrSariel_Skill_AbsDefend_cooldown 31
+execute if entity @s[tag=AzrSariel_Skill_AbsDefend_success] run scoreboard players set @s AzrSariel_Skill_AbsDefend_cooldown 61
 execute if entity @s[tag=AzrSariel_Skill_AbsDefend_success] run effect clear @s resistance
 execute if entity @s[tag=AzrSariel_Skill_AbsDefend_success] at @s run playsound item.shield.block player @a ~ ~ ~ 0.9 1.3
 execute if entity @s[tag=AzrSariel_Skill_AbsDefend_success] at @s run playsound block.amethyst_block.break player @a ~ ~ ~ 0.9 0.8
