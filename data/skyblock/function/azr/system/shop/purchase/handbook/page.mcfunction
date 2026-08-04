@@ -18,6 +18,8 @@ $execute unless data storage azr:handbook_vitae doc.$(eid).slime run tellraw @s 
 $execute if data storage azr:handbook_vitae doc.$(eid).slime run tellraw @s [{text:"★史莱姆",color:"#4495ff",hover_event:{"action":"show_text","value":[{text:"类型：生灵\n",color:"#9c55ff",bold:1b},{text:"攻击方式：近战\n",color:"#ffa463",bold:1b},{text:"移动缓慢，靠弹跳接近的小型生物。\n只要接触到就会被腐蚀，得保持一定距离解决掉。",color:"white",bold: false}]}}]
 $execute unless data storage azr:handbook_vitae doc.$(eid).magma_cube_mini run tellraw @s [{text:"★★？",color:"#6f8095"}]
 $execute if data storage azr:handbook_vitae doc.$(eid).magma_cube_mini run tellraw @s [{text:"★★炽烈球体",color:"#4495ff",hover_event:{"action":"show_text","value":[{text:"类型：生灵\n",color:"#9c55ff",bold:1b},{text:"攻击方式：近战\n",color:"#ffa463",bold:1b},{text:"移动迅速，靠弹跳接近的小型生物。\n通常藏在某些方块中，靠近太久就会爆裂而出，展开攻击。",color:"white",bold: false}]}}]
+$execute unless data storage azr:handbook_vitae doc.$(eid).hoglin run tellraw @s [{text:"★？",color:"#6f8095"}]
+$execute if data storage azr:handbook_vitae doc.$(eid).hoglin run tellraw @s [{text:"★小疣猪兽",color:"#4495ff",hover_event:{"action":"show_text","value":[{text:"类型：生灵\n",color:"#9c55ff",bold:1b},{text:"攻击方式：近战\n",color:"#ffa463",bold:1b},{text:"小型，但是威胁并不小。\n本身攻击力较低，但是会将敌人甩向空中，使对方失去节奏。",color:"white",bold: false}]}}]
 
 
 $execute unless data storage azr:handbook_vitae doc.$(eid).undead run tellraw @s [{text:"★？ ★？",color:"#786897"}]
