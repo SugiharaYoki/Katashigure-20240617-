@@ -2,10 +2,10 @@ scoreboard players add @s rng1 1
 
 execute as @s[scores={rng1=1}] positioned -79711 30 -486 run function skyblock:azr/assets/mobs/utility_respawn_anchor
 
-execute as @s[scores={rng1=4}] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=4}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=4}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“我们到矿洞了！”",color:"white"}]
 execute as @s[scores={rng1=14}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“从这里走就能通往传送门吗？”",color:"white"}]
-execute as @s[scores={rng1=24}] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=24}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=24}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“绝对可行，相信本地人！”",color:"white"}]
 execute as @s[scores={rng1=34}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“相信你，但是好像有几个不好惹的家伙出现了。”",color:"white"}]
 

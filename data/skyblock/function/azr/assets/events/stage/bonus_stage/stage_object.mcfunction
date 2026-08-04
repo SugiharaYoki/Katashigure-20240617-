@@ -28,10 +28,10 @@ execute if score stage_bonus_thread AzrTimerStack matches 252 positioned -79712 
 execute if score stage_bonus_thread AzrTimerStack matches 258 positioned -79710 28 -515 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sentinel","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_bonus_thread AzrTimerStack matches 262 positioned -79710 28 -515 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sentinel","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
-execute if score stage_bonus_thread AzrTimerStack matches 84 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score stage_bonus_thread AzrTimerStack matches 84 at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score stage_bonus_thread AzrTimerStack matches 84 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“喂、喂老大！另一边也有敌人！！”",color:"white"}]
 
-execute if score stage_bonus_thread AzrTimerStack matches 280 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score stage_bonus_thread AzrTimerStack matches 280 at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score stage_bonus_thread AzrTimerStack matches 280 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“妈呀，总算解放了……！！”",color:"white"}]
 
 execute if score stage_bonus_thread AzrTimerStack matches 280 run title @a[tag=azrShowDialog] actionbar {text:"Extra Stage Clear",color:"green"}

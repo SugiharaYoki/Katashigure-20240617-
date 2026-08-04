@@ -29,10 +29,10 @@ execute as @s[scores={rng1=8}] positioned -79765 23 -456 run summon marker ~ ~ ~
 execute as @s[scores={rng1=9}] positioned -79764 23 -457 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute as @s[scores={rng1=9}] positioned -79766 23 -457 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
-execute as @s[scores={rng1=4}] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=4}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=4}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“哎哟我的天，这防空洞里全是敌人！！”",color:"white"}]
 execute as @s[scores={rng1=14}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“他们为什么不打你？”",color:"white"}]
-execute as @s[scores={rng1=24}] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=24}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=24}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“他们是有军规的，不许打魔界居民，除非居民先动手。”",color:"white"}]
 execute as @s[scores={rng1=34}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“还真是，不过发现你动了手的人都已经被我们杀了。”",color:"white"}]
 
@@ -55,7 +55,7 @@ execute as @s[scores={rng1=54}] positioned -79765 23 -460 run summon marker ~ ~ 
 execute as @s[scores={rng1=55}] positioned -79764 23 -461 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute as @s[scores={rng1=55}] positioned -79766 23 -461 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
-execute as @s[scores={rng1=60}] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=60}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=60}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“反、反抗军来了！他们会不会自己打起来！？”",color:"white"}]
 execute as @s[scores={rng1=77}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“那还挺省事的。”",color:"white"}]
 

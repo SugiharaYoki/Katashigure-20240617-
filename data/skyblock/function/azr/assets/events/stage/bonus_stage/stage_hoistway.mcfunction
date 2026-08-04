@@ -17,17 +17,17 @@ execute if score stage_bonus_thread AzrTimerStack matches 32 run fill -79703 34 
 execute if score stage_bonus_thread AzrTimerStack matches 48 run fill -79697 26 -355 -79699 26 -365 air replace glass destroy
 execute if score stage_bonus_thread AzrTimerStack matches 64 run fill -79694 18 -356 -79702 18 -364 air replace glass destroy
 
-execute if score stage_bonus_thread AzrTimerStack matches 7 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score stage_bonus_thread AzrTimerStack matches 7 at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score stage_bonus_thread AzrTimerStack matches 7 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“唔喔哦哦！我就知道！！”",color:"white"}]
 
 execute if score stage_bonus_thread AzrTimerStack matches 19 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“咱们往下！”",color:"white"}]
-execute if score stage_bonus_thread AzrTimerStack matches 26 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score stage_bonus_thread AzrTimerStack matches 26 at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score stage_bonus_thread AzrTimerStack matches 26 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“你、你开玩笑吧？还往下？！”",color:"white"}]
 
-execute if score stage_bonus_thread AzrTimerStack matches 38 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score stage_bonus_thread AzrTimerStack matches 38 at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score stage_bonus_thread AzrTimerStack matches 38 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“我再也不要坐电梯了……！！”",color:"white"}]
 
-execute if score stage_bonus_thread AzrTimerStack matches 53 run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score stage_bonus_thread AzrTimerStack matches 53 at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score stage_bonus_thread AzrTimerStack matches 53 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大虽然不是我多害怕、但答应我，见到下一个出口就出去好吗？”",color:"white"}]
 execute if score stage_bonus_thread AzrTimerStack matches 62 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“哼哼，不行了？那我们下个口出去。”",color:"white"}]
 
