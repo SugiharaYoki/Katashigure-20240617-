@@ -29,6 +29,7 @@ execute as @s[scores={rng1=222}] positioned -79923 43 96 run tellraw @a[tag=azrS
 execute as @s[scores={rng1=234}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=234}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“什么声音……你听到了吗？”",color:"white"}]
 execute as @s[scores={rng1=244}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“感觉很耳熟。”",color:"white"}]
+execute as @s[scores={rng1=257}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“在……哪里听到过？好像是神庭。”",color:"white"}]
 
 
 execute as @s[scores={rng1=400}] run scoreboard players set @s rng1 399
