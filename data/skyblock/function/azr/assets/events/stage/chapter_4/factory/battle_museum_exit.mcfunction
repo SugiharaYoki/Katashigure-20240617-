@@ -9,7 +9,7 @@ execute if score @s rng1 matches 3 positioned ~-2 ~ ~-2 run summon marker ~ ~ ~ 
 
 
 execute if score @s rng1 matches 10 at @n[tag=AzrielMob_piglin_sword] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 1.0
-execute if score @s rng1 matches 10 at @n[tag=AzrielMob_piglin_sword] run tellraw @a[tag=azrShowDialog] [{text:"反抗军军士：",color:"red",bold:1b},{bold: false,text:"\n“有人出来了……不对，不是我们自己人！！”",color:"white"}]
+execute if score @s rng1 matches 10 at @n[tag=AzrielMob_piglin_sword] run tellraw @a[tag=azrShowDialog] [{text:"彼列军军士：",color:"red",bold:1b},{bold: false,text:"\n“有人出来了……不对，不是我们自己人！！”",color:"white"}]
 execute if score @s rng1 matches 27 positioned ~ ~ ~ as @n[tag=AzrielMob,type=piglin,distance=0..12] run tag @s add AzrielMob_StageProgressTarget
 execute if score @s rng1 matches 29 positioned ~ ~ ~ if entity @n[tag=AzrielMob_StageProgressTarget,type=piglin,distance=0..20] run scoreboard players set @s rng1 28
 
@@ -24,7 +24,7 @@ execute if score @s rng1 matches 45 positioned -79773 42 -325 run summon marker 
 
 
 execute if score @s rng1 matches 44 at @n[tag=AzrielMob_piglin_sword] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 1.0
-execute if score @s rng1 matches 44 at @n[tag=AzrielMob_piglin_sword] run tellraw @a[tag=azrShowDialog] [{text:"反抗军军士：",color:"red",bold:1b},{bold: false,text:"\n“快报告给上校、快快快！！”",color:"white"}]
+execute if score @s rng1 matches 44 at @n[tag=AzrielMob_piglin_sword] run tellraw @a[tag=azrShowDialog] [{text:"彼列军军士：",color:"red",bold:1b},{bold: false,text:"\n“快报告给上校、快快快！！”",color:"white"}]
 
 execute if score @s rng1 matches 47 positioned ~ ~ ~ as @n[tag=AzrielMob,type=piglin,distance=0..12] run tag @s add AzrielMob_StageProgressTarget
 execute if score @s rng1 matches 49 positioned ~ ~ ~ if entity @n[tag=AzrielMob_StageProgressTarget,type=piglin,distance=0..20] run scoreboard players set @s rng1 48

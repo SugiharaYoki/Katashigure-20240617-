@@ -22,6 +22,7 @@ execute as @s[scores={rng1=1}] positioned -79692 22 -416 run function skyblock:a
 #混战初始准备
 execute as @s[scores={rng1=1}] positioned -79664 21 -422 run function skyblock:azr/assets/mobs/piglin_sword
 execute as @s[scores={rng1=1}] positioned -79664 21 -422 as @n[tag=AzrielMob,distance=..5,type=piglin] at @s run attribute @s attack_damage modifier add azrielmob:piglin_battle_chaos_leader_1 2 add_value
+execute as @s[scores={rng1=1}] positioned -79664 21 -422 as @n[tag=AzrielMob,distance=..5,type=piglin] at @s run tag @s add AzrielMob_piglin_battle_chaos_leader
 execute as @s[scores={rng1=1}] positioned -79664 21 -422 as @n[tag=AzrielMob,distance=..5,type=piglin] at @s run attribute @s armor modifier add azrielmob:piglin_battle_chaos_leader_1 4 add_value
 execute as @s[scores={rng1=1}] positioned -79664 21 -422 as @n[tag=AzrielMob,distance=..5,type=piglin] at @s run attribute @s scale modifier add azrielmob:piglin_battle_chaos_leader_1 0.2 add_value
 execute as @s[scores={rng1=1}] positioned -79664 21 -422 as @n[tag=AzrielMob,distance=..5,type=piglin] at @s run item replace entity @s weapon.mainhand with netherite_sword
