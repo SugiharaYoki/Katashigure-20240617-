@@ -17,6 +17,9 @@ execute as @s[scores={rng1=1}] positioned -79692 22 -415 run function skyblock:a
 execute as @s[scores={rng1=1}] positioned -79692 22 -414 run function skyblock:azr/assets/mobs/skeleton_melee
 execute as @s[scores={rng1=1}] positioned -79692 22 -416 run function skyblock:azr/assets/mobs/skeleton_melee
 
+
+
+#混战初始准备
 execute as @s[scores={rng1=1}] positioned -79664 21 -422 run function skyblock:azr/assets/mobs/piglin_sword
 execute as @s[scores={rng1=1}] positioned -79664 21 -422 as @n[tag=AzrielMob,distance=..5,type=piglin] at @s run attribute @s attack_damage modifier add azrielmob:piglin_battle_chaos_leader_1 2 add_value
 execute as @s[scores={rng1=1}] positioned -79664 21 -422 as @n[tag=AzrielMob,distance=..5,type=piglin] at @s run attribute @s armor modifier add azrielmob:piglin_battle_chaos_leader_1 4 add_value
@@ -30,5 +33,6 @@ execute as @s[scores={rng1=1}] positioned -79664 21 -422 as @n[tag=AzrielMob,dis
 execute as @s[scores={rng1=1}] positioned -79663 21 -424 run function skyblock:azr/assets/mobs/piglin_sword
 execute as @s[scores={rng1=1}] positioned -79665 21 -424 run function skyblock:azr/assets/mobs/piglin_sword
 execute as @s[scores={rng1=1}] positioned -79664 21 -427 run function skyblock:azr/assets/mobs/piglin_shovel
-
+execute as @s[scores={rng1=1}] positioned -79664 21 -427 as @e[tag=AzrielMob,distance=..9,type=piglin] run effect give @s resistance infinite 99 true
+execute as @s[scores={rng1=1}] positioned -79664 21 -427 as @e[tag=AzrielMob,distance=..9,type=piglin] run effect give @s slowness infinite 99 true
 
