@@ -6,3 +6,4 @@ summon piglin ~ ~ ~ {CustomName:[{text:"伽弗洛什"}],DeathLootTable:"skyblock
 
 execute as @n[type=piglin,tag=AzrielTrader_pig_gavroche] run item replace entity @s weapon.mainhand with map
 
+execute as @n[type=piglin,tag=AzrielTrader_pig_gavroche] run item replace entity @s armor.chest with leather_chestplate[trim={pattern:wayfinder,material:quartz},dyed_color=16759963]
