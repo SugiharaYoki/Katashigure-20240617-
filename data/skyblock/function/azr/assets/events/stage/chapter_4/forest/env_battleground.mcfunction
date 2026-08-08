@@ -27,7 +27,7 @@ execute if score @s rng4 matches 43..44 positioned -79785 40 -511 as @r[tag=azrP
 
 execute store result score @s rng4 run random value 1..400
 
-execute if score @s rng4 matches 2..7 positioned -79785 40 -511 as @n[tag=AzrielTrader_pig_gavroche,distance=..100] at @s run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score @s rng4 matches 2..7 positioned -79785 40 -511 as @n[tag=AzrielTrader_pig_gavroche,distance=..100] at @s run playsound minecraft:entity.piglin.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 1 1.5
 execute if score @s rng4 matches 2 positioned -79785 40 -511 as @n[tag=AzrielTrader_pig_gavroche,distance=..100] at @s run tellraw @a[tag=azrShowDialog,distance=..30] [{text:"猪灵孩童 伽弗洛什：",color:"green",bold:1b},{bold: false,text:"\n“号外号外！路西法的反抗军已经占领第10辖区，传送门掌控权或将归入反抗军手中！”",color:"white"}]
 execute if score @s rng4 matches 3 positioned -79785 40 -511 as @n[tag=AzrielTrader_pig_gavroche,distance=..100] at @s run tellraw @a[tag=azrShowDialog,distance=..30] [{text:"猪灵孩童 伽弗洛什：",color:"green",bold:1b},{bold: false,text:"\n“号外号外！车间博物馆的大门因未知原因开启！现已成为彼列军和反抗军争夺的战略地点！”",color:"white"}]
 execute if score @s rng4 matches 4 positioned -79785 40 -511 as @n[tag=AzrielTrader_pig_gavroche,distance=..100] at @s run tellraw @a[tag=azrShowDialog,distance=..30] [{text:"猪灵孩童 伽弗洛什：",color:"green",bold:1b},{bold: false,text:"\n“号外！彼列军节节败退，但反抗军无法攻破第11辖区！”",color:"white"}]
