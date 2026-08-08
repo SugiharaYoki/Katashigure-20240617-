@@ -825,6 +825,13 @@ item replace block -79744 2 -293 container.14 with gold_nugget 1
   #但第三扇区的居民实际并未踏入战场。通往神庭的传送门被建立在第10辖区，第12辖区则是重要的战略资源原材料生产地。
   #最初的11辖区扮演了后方战争工厂的角色。
 
+  #第895次神庭试炼合作会议摘要
+  #对于具备异常执念之亡魂，可依据旧例开放上行通道。
+  #有关延寿事宜不得向普通亡魂公开。
+  #批注：反复接受试炼的亡魂将会灰飞烟灭。
+  #这说不定也是解决亡魂人口暴涨的方式之一。
+
+
 #展示区
 setblock -79759 17 -283 minecraft:decorated_pot{sherds:["sheaf_pottery_sherd","sheaf_pottery_sherd","sheaf_pottery_sherd","sheaf_pottery_sherd"],item:{count: 1, id:"minecraft:gold_nugget"}}
 setblock -79757 17 -283 minecraft:decorated_pot{sherds:["plenty_pottery_sherd","plenty_pottery_sherd","plenty_pottery_sherd","plenty_pottery_sherd"],item:{count: 1, id:"minecraft:gold_nugget"}}
