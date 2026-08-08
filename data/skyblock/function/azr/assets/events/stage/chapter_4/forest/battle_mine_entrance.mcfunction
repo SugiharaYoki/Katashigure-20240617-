@@ -19,7 +19,7 @@ execute as @s[scores={rng1=34}] as @a[tag=azrPlayer] at @s run function skyblock
 
 
 execute as @s[scores={rng1=11}] run scoreboard players set stage Azr_system 59
-
+execute as @s[scores={rng1=11}] run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..15}] Azr_skillPoints 16
 
 
 

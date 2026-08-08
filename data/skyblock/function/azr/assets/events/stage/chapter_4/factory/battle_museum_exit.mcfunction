@@ -121,7 +121,7 @@ execute if score @s rng1 matches 102 positioned -79745 39 -531 run function skyb
 
 
 execute if score @s rng1 matches 102 positioned -79753 23 -398 run scoreboard players set stage Azr_system 57
-
+execute if score @s rng1 matches 102 positioned -79753 23 -398 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..14}] Azr_skillPoints 15
 
 
 
