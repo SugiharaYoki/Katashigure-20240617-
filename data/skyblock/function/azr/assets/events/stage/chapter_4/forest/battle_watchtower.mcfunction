@@ -31,6 +31,7 @@ execute as @s[scores={rng1=45}] positioned -79744 42 -453 as @e[tag=AzrielMob,ty
 execute as @s[scores={rng1=60}] positioned -79744 42 -453 as @e[tag=AzrielMob,type=piglin,distance=..15] at @s run damage @s 0 arrow by @p[tag=azrPlayer]
 execute as @s[scores={rng1=65}] positioned -79744 42 -453 as @e[tag=AzrielMob,type=piglin,distance=..15] at @s run damage @s 0 arrow by @p[tag=azrPlayer]
 
+execute as @s[scores={rng1=65}] positioned -79744 42 -453 as @e[tag=AzrielMob,type=piglin,distance=..15] at @s run effect give @s resistance 10 1 true
 
 
 execute as @s[scores={rng1=103}] positioned -79744 42 -453 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
