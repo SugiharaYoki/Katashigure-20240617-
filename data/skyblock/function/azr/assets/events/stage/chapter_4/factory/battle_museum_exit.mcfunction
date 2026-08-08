@@ -87,6 +87,10 @@ execute if score @s rng1 matches 102 positioned -79756 23 -391 run function skyb
 execute if score @s rng1 matches 102 positioned -79754 23 -394 run function skyblock:azr/assets/mobs/utility_bat
 execute if score @s rng1 matches 102 positioned -79753 23 -398 run function skyblock:azr/assets/mobs/utility_bat
 
+execute if score @s rng1 matches 102 positioned -79691 24 -385 run function skyblock:azr/assets/mobs/utility_bat
+execute if score @s rng1 matches 102 positioned -79693 24 -381 run function skyblock:azr/assets/mobs/utility_bat
+
+
 execute if score @s rng1 matches 102 positioned -79704 29 -513 run function skyblock:azr/assets/mobs/magma_cube_block
 execute if score @s rng1 matches 102 positioned -79707 29 -492 run function skyblock:azr/assets/mobs/magma_cube_block
 execute if score @s rng1 matches 102 positioned -79697 29 -489 run function skyblock:azr/assets/mobs/magma_cube_block
