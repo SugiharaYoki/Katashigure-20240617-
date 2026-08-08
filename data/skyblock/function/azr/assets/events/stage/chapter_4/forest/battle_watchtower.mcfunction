@@ -20,10 +20,10 @@ execute as @s[scores={rng1=104}] at @n[tag=AzrielTrader_pig_henry] run playsound
 execute as @s[scores={rng1=104}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大我搞定了——！现在魔法瓶的覆盖面和发射速度都增强了！”",color:"white"}]
 
 execute as @s[scores={rng1=25}] positioned -79744 42 -453 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=30}] positioned -79744 42 -453 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=35}] positioned -79744 42 -453 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=50}] positioned -79744 42 -453 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_shovel","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=55}] positioned -79744 42 -453 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_shovel","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=30}] positioned -79744 42 -453 run summon marker ~1 ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=35}] positioned -79744 42 -453 run summon marker ~ ~ ~-1 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=50}] positioned -79744 42 -453 run summon marker ~-1 ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_shovel","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=55}] positioned -79744 42 -453 run summon marker ~ ~ ~1 {Tags:["AzrielMob_summon_delay_marker_piglin_shovel","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 execute as @s[scores={rng1=35}] positioned -79744 42 -453 as @e[tag=AzrielMob,type=piglin,distance=..15] at @s run damage @s 0 arrow by @p[tag=azrPlayer]
 execute as @s[scores={rng1=40}] positioned -79744 42 -453 as @e[tag=AzrielMob,type=piglin,distance=..15] at @s run damage @s 0 arrow by @p[tag=azrPlayer]
@@ -34,12 +34,12 @@ execute as @s[scores={rng1=65}] positioned -79744 42 -453 as @e[tag=AzrielMob,ty
 execute as @s[scores={rng1=65}] positioned -79744 42 -453 as @e[tag=AzrielMob,type=piglin,distance=..15] at @s run effect give @s resistance 10 1 true
 
 
-execute as @s[scores={rng1=113}] positioned -79744 42 -453 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=113}] positioned -79744 42 -453 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=113}] positioned -79744 42 -453 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=113}] positioned -79744 42 -453 run summon marker ~ ~ ~1 {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=113}] positioned -79744 42 -453 run summon marker ~1 ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=113}] positioned -79744 42 -453 run summon marker ~-1 ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute as @s[scores={rng1=123}] positioned -79744 42 -453 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=123}] positioned -79744 42 -453 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=123}] positioned -79744 42 -453 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=123}] positioned -79744 42 -453 run summon marker ~-1 ~ ~-1 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=123}] positioned -79744 42 -453 run summon marker ~1 ~ ~-1 {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 execute as @s[scores={rng1=123}] positioned -79744 42 -453 as @e[tag=AzrielMob,type=piglin,distance=..15] at @s run damage @s 0 arrow by @p[tag=azrPlayer]
 execute as @s[scores={rng1=133}] positioned -79744 42 -453 as @e[tag=AzrielMob,type=piglin,distance=..15] at @s run damage @s 0 arrow by @p[tag=azrPlayer]
