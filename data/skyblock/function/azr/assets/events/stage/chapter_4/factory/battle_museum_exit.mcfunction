@@ -113,6 +113,7 @@ execute if score @s rng1 matches 102 positioned -79751 43 -483 run function skyb
 
 execute if score @s rng1 matches 102 positioned -79717 22 -459 run function skyblock:azr/assets/mobs/magma_cube_block
 
+execute if score @s rng1 matches 102 positioned -79745 39 -531 run function skyblock:azr/assets/mobs/unique/trader/pig_gavroche
 
 
 execute if score @s rng1 matches 102 positioned -79753 23 -398 run scoreboard players set stage Azr_system 57
