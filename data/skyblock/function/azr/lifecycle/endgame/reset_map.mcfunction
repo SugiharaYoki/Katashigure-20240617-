@@ -831,6 +831,10 @@ item replace block -79744 2 -293 container.14 with gold_nugget 1
   #批注：反复接受试炼的亡魂将会灰飞烟灭。
   #这说不定也是解决亡魂人口暴涨的方式之一。
 
+  #第10、第11辖区的林场是为处理工业废气并抵御枯萎之力而种植。
+  #这里的绯红树种来源于自然保护区的9区，是天然的抗枯萎种类，而且自主散播的能力惊人。
+  #可惜这种树种的根系会贯穿岩层，对地层结构造成巨大的穿刺。这也导致9、10、11辖区的地下几乎没法建立军事设施。
+  #只是，军方依然选择在这种地方开矿淘金。
 
 #展示区
 setblock -79759 17 -283 minecraft:decorated_pot{sherds:["sheaf_pottery_sherd","sheaf_pottery_sherd","sheaf_pottery_sherd","sheaf_pottery_sherd"],item:{count: 1, id:"minecraft:gold_nugget"}}
