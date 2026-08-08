@@ -871,7 +871,7 @@ setblock -79797 28 -342 minecraft:waxed_copper_chest[facing=west]{Inventory:[]}
 item replace block -79797 28 -342 container.12 with gold_nugget 2
 item replace block -79797 28 -342 container.14 with gold_nugget 1
 setblock -79745 43 -389 minecraft:waxed_copper_chest[facing=south]{Inventory:[]}
-item replace block -79745 43 -389 container.12 with gold_nugget 1
+item replace block -79745 43 -389 container.12 with gold_nugget 2
 item replace block -79745 43 -389 container.14 with skull_banner_pattern[custom_name={text:"“童谣一则”",color:"dark_purple",italic:0b},lore=[{text:"愿大地永远存在。",color:"white",italic:0b},{text:"愿火焰永远存在。",color:"white",italic:0b},{text:"愿王上的庇佑永远存在。",color:"white",italic:0b},{text:"愿黑色天使的光永远存在。",color:"white",italic:0b}]] 1
 
 setblock -79750 23 -408 minecraft:waxed_copper_chest[facing=south]{Inventory:[]}
@@ -883,6 +883,10 @@ fill -79701 42 -357 -79695 42 -363 glass replace air
 fill -79703 34 -355 -79693 34 -365 glass replace air
 fill -79697 26 -355 -79699 26 -365 glass replace air
 fill -79694 18 -356 -79702 18 -364 glass replace air
+
+setblock -79725 26 -428 minecraft:waxed_copper_chest[facing=east]{Inventory:[]}
+item replace block -79725 26 -428 container.12 with gold_nugget 2
+item replace block -79725 26 -428 container.14 with gold_nugget 1
 
 #大树林
 fill -79782 41 -499 -79782 41 -496 minecraft:crimson_shelf[facing=east]{Inventory:[]}
