@@ -12,4 +12,3 @@ execute as @a[tag=azrPlayer,tag=!AZR_SEAawakened] at @s run function skyblock:az
 execute as @a[tag=azrPlayer,tag=!AZR_SEAawakened] at @s run give @s pumpkin_pie 8
 execute as @a[tag=azrPlayer,tag=!AZR_SEAawakened] at @s run give @s golden_apple 3
 
-function skyblock:azr/system/player/updatespawnpoint_initialize {x:-79983.99,y:40.00,z:-14.00}

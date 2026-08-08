@@ -76,7 +76,7 @@ execute if entity @s[tag=jump_boost_pass] run function skyblock:azr/system/playe
 tag @s remove jump_boost_pass
 
 
-execute if score stage Azr_system matches ..40 if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] if entity @s[predicate=skyblock:left,predicate=skyblock:right] run function skyblock:azr/system/player/skills/amulet/revival_star_teleport
+execute if score stage Azr_system matches 3..40 if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] if entity @s[predicate=skyblock:left,predicate=skyblock:right] run function skyblock:azr/system/player/skills/amulet/revival_star_teleport
 execute if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] if entity @s[predicate=skyblock:forward,predicate=skyblock:backward] run function skyblock:azr/system/player/skills/amulet/revival_star_quitgame
 execute if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] unless entity @s[predicate=skyblock:left,predicate=skyblock:right] unless entity @s[predicate=skyblock:forward,predicate=skyblock:backward] run scoreboard players set @s AzrSariel_Amulet_RevivalStar_teleport 0
 
