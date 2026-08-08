@@ -223,28 +223,28 @@ execute as @s[scores={Azr_Shop=8431606}] \
 execute as @s[scores={Azr_Shop=8431607}] \
     positioned -79780 38 -497 if entity @s[distance=..13] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if score @s Azr_gold matches 300.. \
+    if score @s Azr_gold matches 200.. \
     unless function skyblock:azr/system/shop/purchase/nether/golden_helmet \
     run scoreboard players set tempPlayerShopSuccess Azr_system 1
     
 execute as @s[scores={Azr_Shop=8431608}] \
     positioned -79780 38 -497 if entity @s[distance=..13] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if score @s Azr_gold matches 300.. \
+    if score @s Azr_gold matches 200.. \
     unless function skyblock:azr/system/shop/purchase/nether/golden_chestplate \
     run scoreboard players set tempPlayerShopSuccess Azr_system 1
     
 execute as @s[scores={Azr_Shop=8431609}] \
     positioned -79780 38 -497 if entity @s[distance=..13] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if score @s Azr_gold matches 300.. \
+    if score @s Azr_gold matches 200.. \
     unless function skyblock:azr/system/shop/purchase/nether/golden_leggings \
     run scoreboard players set tempPlayerShopSuccess Azr_system 1
     
 execute as @s[scores={Azr_Shop=8431610}] \
     positioned -79780 38 -497 if entity @s[distance=..13] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if score @s Azr_gold matches 300.. \
+    if score @s Azr_gold matches 200.. \
     unless function skyblock:azr/system/shop/purchase/nether/golden_boots \
     run scoreboard players set tempPlayerShopSuccess Azr_system 1
 
