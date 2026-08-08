@@ -29,6 +29,24 @@ execute as @s[scores={rng1=67}] positioned -79664 21 -422 as @n[distance=..15,ty
 execute as @s[scores={rng1=67}] positioned -79664 21 -422 as @n[distance=..15,type=piglin,tag=AzrielMob_piglin_battle_chaos_leader] at @s run tellraw @a[tag=azrShowDialog] [{text:"彼列军上校：",color:"red",bold:1b},{bold: false,text:"\n“全员做好战斗准备。”",color:"white"}]
 
 
+execute as @s[scores={rng1=72}] positioned -79664 21 -415 positioned ~ ~ ~-1 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
+execute as @s[scores={rng1=74}] positioned -79664 21 -415 positioned ~ ~ ~1 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
+execute as @s[scores={rng1=75}] positioned -79664 21 -415 positioned ~1 ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
+execute as @s[scores={rng1=77}] positioned -79664 21 -415 positioned ~-1 ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
+execute as @s[scores={rng1=78}] positioned -79664 21 -415 positioned ~ ~ ~-1 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
+execute as @s[scores={rng1=84}] positioned -79664 21 -415 positioned ~ ~ ~1 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
+execute as @s[scores={rng1=85}] positioned -79664 21 -415 positioned ~-1 ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
+execute as @s[scores={rng1=87}] positioned -79664 21 -415 positioned ~1 ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
+execute as @s[scores={rng1=92}] positioned -79664 21 -415 positioned ~ ~ ~1 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
+execute as @s[scores={rng1=93}] positioned -79664 21 -415 positioned ~ ~ ~-1 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
+execute as @s[scores={rng1=95}] positioned -79664 21 -415 positioned ~1 ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
+execute as @s[scores={rng1=96}] positioned -79664 21 -415 positioned ~-1 ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
+
+
+execute as @s[scores={rng1=80}] positioned -79664 21 -422 as @n[distance=..15,type=piglin,tag=AzrielMob_piglin_battle_chaos_leader] at @s run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.8
+execute as @s[scores={rng1=80}] positioned -79664 21 -422 as @n[distance=..15,type=piglin,tag=AzrielMob_piglin_battle_chaos_leader] at @s run tellraw @a[tag=azrShowDialog] [{text:"彼列军上校：",color:"red",bold:1b},{bold: false,text:"\n“我们上！！”",color:"white"}]
+execute as @s[scores={rng1=80}] positioned -79664 21 -422 as @e[distance=..15,type=piglin] at @s run effect clear @s resistance
+execute as @s[scores={rng1=80}] positioned -79664 21 -422 as @e[distance=..15,type=piglin] at @s run effect clear @s slowness
 
 
 execute as @s[scores={rng1=..120}] at @n[distance=..15,type=piglin,tag=AzrielMob_piglin_battle_chaos_leader] if entity @a[tag=azrPlayer,distance=..9] run scoreboard players set @s rng1 1001
@@ -39,7 +57,7 @@ execute as @s[scores={rng1=1002}] positioned -79664 21 -422 as @n[distance=..15,
 execute as @s[scores={rng1=1002}] positioned -79664 21 -422 as @n[distance=..15,type=piglin,tag=!AzrielMob_piglin_battle_chaos_leader] at @s run tellraw @a[tag=azrShowDialog] [{text:"彼列军哨兵：",color:"red",bold:1b},{bold: false,text:"\n“敌袭！从矿洞入口来人了！！”",color:"white"}]
 execute as @s[scores={rng1=1012}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=1012}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“哈哈，我们完蛋了！对面这么多人！”",color:"white"}]
-execute as @s[scores={rng1=1026}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“问题不大，就让你见识一下我的真正实力。”",color:"white"}]
+execute as @s[scores={rng1=1026}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“问题不大，正好有机会让你见识一下我的真正实力。”",color:"white"}]
 
 
 
