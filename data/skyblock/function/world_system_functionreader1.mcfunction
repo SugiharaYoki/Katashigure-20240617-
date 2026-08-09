@@ -9,7 +9,7 @@ execute as @s[scores={MultiMenu=8},tag=ServerManager] at @s run function skybloc
 execute as @s[scores={MultiMenu=9},tag=ServerManager] at @s run function skyblock:menu/index/multimenu009_servermanager_creativemode
 execute as @s[scores={MultiMenu=10},tag=ServerManager] at @s run function skyblock:menu/index/multimenu010_servermanager_openworldborder
 execute as @s[scores={MultiMenu=11},tag=ServerManager] at @s run function skyblock:menu/index/multimenu011_servermanager_pauseskywar
-execute as @s[scores={MultiMenu=12},tag=ServerManager] at @s run function skyblock:menu/index/multimenu012_servermanager_survivalmode
+execute as @s[scores={MultiMenu=12},tag=ServerManager] at @s run function skyblock:menu/index/multimenu012_servermanager_adventuremode
 execute as @s[scores={MultiMenu=13},tag=ServerManager] at @s run function skyblock:menu/index/multimenu013_servermanager_tpmaincontrol
 execute as @s[scores={MultiMenu=14}] at @s run function skyblock:menu/index/multimenu014_setting_button_toggleautojoinskywar
 execute as @s[scores={MultiMenu=29}] at @s run function skyblock:menu/index/multimenu029_statue_button_tostatuejob
