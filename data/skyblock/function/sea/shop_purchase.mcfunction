@@ -173,7 +173,7 @@ tag @s remove sea_purchase_pass
 execute if score @s sea_crafter matches 10055 as @s[scores={sea_i_gunpowder=..1}] run tellraw @s {text:"失败！素材不足！",color:"red"}
 execute if score @s sea_crafter matches 10055 as @s[scores={sea_i_gunpowder=2..}] run tag @s add sea_purchase_pass
 execute if entity @s[tag=sea_purchase_pass] run playsound minecraft:block.note_block.hat player @a ~ ~ ~ 0.8 0.7
-execute if entity @s[tag=sea_purchase_pass] run give @s firework_star[custom_name={text:"燃爆剂",color:"blue",italic:0b},lore=[{text:"喷火器专用燃爆剂。",color:"white",italic:0b},{text:"使用喷火器时左键，瞬间对面前近距离造成大量伤害。",color:"white",italic:0b}]] 5
+execute if entity @s[tag=sea_purchase_pass] run give @s firework_star[custom_name={text:"燃爆剂",color:"blue",italic:0b},lore=[{text:"喷火器专用燃爆剂。",color:"white",italic:0b},{text:"使用喷火器时右键，瞬间对面前近距离造成大量伤害。",color:"white",italic:0b}]] 5
 execute if entity @s[tag=sea_purchase_pass] run tellraw @a[gamemode=spectator,distance=0..20] [{text:"◆ 玩家操作：",bold:1b,color:"yellow"},{text:"制作燃爆剂",bold:1b,color:"white"}]
 execute if entity @s[tag=sea_purchase_pass] run clear @s gunpowder 2
 tag @s remove sea_purchase_pass

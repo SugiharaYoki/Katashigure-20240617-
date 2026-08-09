@@ -12,7 +12,7 @@ item replace block 89843 13 -163 container.14 with snout_armor_trim_smithing_tem
 
 item replace block 89843 13 -163 container.11 with arrow 16
 item replace block 89843 13 -163 container.20 with spectral_arrow 3
-item replace block 89843 13 -163 container.23 with firework_star[custom_name={text:"燃爆剂",color:"blue",italic:0b},lore=[{text:"喷火器专用燃爆剂。",color:"white",italic:0b},{text:"使用喷火器时左键，瞬间对面前近距离造成大量伤害。",color:"white",italic:0b}]] 5
+item replace block 89843 13 -163 container.23 with firework_star[custom_name={text:"燃爆剂",color:"blue",italic:0b},lore=[{text:"喷火器专用燃爆剂。",color:"white",italic:0b},{text:"使用喷火器时右键，瞬间对面前近距离造成大量伤害。",color:"white",italic:0b}]] 5
 
 
 item replace block 89843 13 -163 container.13 with disc_fragment_5 5
