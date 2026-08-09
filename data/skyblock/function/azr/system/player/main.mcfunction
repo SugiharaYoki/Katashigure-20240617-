@@ -46,8 +46,8 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_pacemaker_safe:
 execute if items entity @s container.* *[custom_data~{azr_amulet_flower_wall:1b}] run function skyblock:azr/system/player/skills/amulet/flower_wall_core
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_lit:1b}] run function skyblock:azr/system/player/skills/amulet/fire_lit_core
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_double_arrow:1b}] run function skyblock:azr/system/player/skills/amulet/double_arrow_core
-execute if items entity @s container.* *[custom_data~{azr_amulet_stay_float:1b}] unless items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run function skyblock:azr/system/player/skills/amulet/stay_float_core
-execute if items entity @s[tag=AZS_BoS11] container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run function skyblock:azr/system/player/skills/amulet/stay_float_core
+execute if items entity @s container.* *[custom_data~{azr_amulet_stay_float:1b}] unless items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run function skyblock:azr/system/player/skills/amulet/stay_float_core_version3
+execute if items entity @s[tag=AZS_BoS11] container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run function skyblock:azr/system/player/skills/amulet/stay_float_core_version3
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_axe_vortex:1b}] run function skyblock:azr/system/player/skills/amulet/axe_vortex_core
 execute if entity @s[tag=AzrSariel_Amulet_AxeVortex_SweepRatio] if entity @s[predicate=!skyblock:left,predicate=!skyblock:right] run function skyblock:azr/system/player/skills/amulet/axe_vortex_unload
 execute if entity @s[tag=AzrSariel_Amulet_AxeVortex_SweepRatio] unless items entity @s hotbar.* *[custom_data~{azr_amulet_axe_vortex:1b}] run function skyblock:azr/system/player/skills/amulet/axe_vortex_unload
