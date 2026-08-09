@@ -28,7 +28,7 @@ execute as @s[scores={rng1=55}] positioned -79664 21 -422 as @n[distance=..15,ty
 execute as @s[scores={rng1=67}] positioned -79664 21 -422 as @n[distance=..15,type=piglin,tag=AzrielMob_piglin_battle_chaos_leader] at @s run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.8
 execute as @s[scores={rng1=67}] positioned -79664 21 -422 as @n[distance=..15,type=piglin,tag=AzrielMob_piglin_battle_chaos_leader] at @s run tellraw @a[tag=azrShowDialog] [{text:"彼列军上校：",color:"red",bold:1b},{bold: false,text:"\n“全员做好战斗准备。”",color:"white"}]
 
-
+execute as @s[scores={rng1=72}] positioned -79664 31 -415 positioned ~ ~ ~-1 run playsound minecraft:entity.warden.roar master @a ~ ~ ~ 8 0.5
 execute as @s[scores={rng1=72}] positioned -79664 21 -415 positioned ~ ~ ~-1 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
 execute as @s[scores={rng1=74}] positioned -79664 21 -415 positioned ~ ~ ~1 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
 execute as @s[scores={rng1=75}] positioned -79664 21 -415 positioned ~1 ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
@@ -42,6 +42,10 @@ execute as @s[scores={rng1=93}] positioned -79664 21 -415 positioned ~ ~ ~-1 run
 execute as @s[scores={rng1=95}] positioned -79664 21 -415 positioned ~1 ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
 execute as @s[scores={rng1=96}] positioned -79664 21 -415 positioned ~-1 ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
 
+
+execute as @s[scores={rng1=83}] positioned -79664 21 -432 positioned ~1 ~ ~ run playsound item.goat_horn.sound.2 ambient @a ~ 41 ~ 5 0.8
+execute as @s[scores={rng1=2030}] positioned -79664 21 -432 positioned ~1 ~ ~ run playsound item.goat_horn.sound.2 ambient @a ~ 41 ~ 5 0.8
+execute as @s[scores={rng1=2100}] positioned -79664 21 -432 positioned ~1 ~ ~ run playsound item.goat_horn.sound.2 ambient @a ~ 41 ~ 5 0.8
 
 execute as @s[scores={rng1=80}] positioned -79664 21 -422 as @n[distance=..15,type=piglin,tag=AzrielMob_piglin_battle_chaos_leader] at @s run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.8
 execute as @s[scores={rng1=80}] positioned -79664 21 -422 as @n[distance=..15,type=piglin,tag=AzrielMob_piglin_battle_chaos_leader] at @s run tellraw @a[tag=azrShowDialog] [{text:"彼列军上校：",color:"red",bold:1b},{bold: false,text:"\n“我们上！！”",color:"white"}]
@@ -69,6 +73,7 @@ execute as @s[scores={rng1=1112}] at @n[tag=AzrielTrader_pig_henry] run playsoun
 execute as @s[scores={rng1=1112}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“这可刺激了，大混战啊！”",color:"white"}]
 execute as @s[scores={rng1=1122}] run scoreboard players set @s rng1 2000
 
+execute as @s[scores={rng1=2012}] positioned -79664 31 -415 positioned ~ ~ ~-1 run playsound minecraft:entity.warden.roar master @a ~ ~ ~ 8 0.5
 execute as @s[scores={rng1=2012}] positioned -79664 21 -415 positioned ~ ~ ~-1 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
 execute as @s[scores={rng1=2014}] positioned -79664 21 -415 positioned ~ ~ ~1 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
 execute as @s[scores={rng1=2015}] positioned -79664 21 -415 positioned ~1 ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
