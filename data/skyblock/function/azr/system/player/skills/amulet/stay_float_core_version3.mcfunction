@@ -38,6 +38,7 @@ execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90.. if entity @
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90..118 run effect clear @s slow_falling
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90..118 run attribute @s attack_damage modifier remove azr_amulet:floating_attack_01
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90..118 run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 15
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 10..11 if entity @s[predicate=skyblock:jump] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 11
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 10..11 if entity @s[nbt={OnGround:0b}] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 11
 
 
