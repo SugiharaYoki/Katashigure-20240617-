@@ -15,10 +15,8 @@ scoreboard players add @s[scores={AzrEntityTimer=-16..}] AzrEntityTimer 1
 
 execute if score @s AzrEntityTimer matches 0..19 run particle smoke ~ ~ ~ 0.01 0.01 0.01 0.01 5
 
-execute if entity @s if score @s AzrEntityTimer matches -0 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.5
-execute if entity @s if score @s AzrEntityTimer matches 5 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.5
-execute if entity @s if score @s AzrEntityTimer matches 10 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.5
-execute if entity @s if score @s AzrEntityTimer matches 15 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.5
+execute if entity @s if score @s AzrEntityTimer matches -0 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.0
+execute if entity @s if score @s AzrEntityTimer matches 10 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.0
 execute if entity @s if score @s AzrEntityTimer matches 20 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.5
 execute if entity @s if score @s AzrEntityTimer matches 25 run particle explosion ~ ~ ~ 0.4 0.4 0.4 0 2
 execute if entity @s if score @s AzrEntityTimer matches 25 run particle explosion_emitter ~ ~ ~ 0.7 0.7 0.7 0.03 2

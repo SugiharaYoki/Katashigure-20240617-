@@ -12,8 +12,8 @@ execute if score @s rng3 matches 2 run playsound minecraft:entity.skeleton.conve
 execute if score @s rng3 matches 2..60 run playsound minecraft:entity.skeleton.step hostile @a ~ ~ ~ 0.5 1.9
 execute if score @s rng3 matches 2..60 run data modify entity @s NoAI set value 1b
 execute if score @s rng3 matches 2 run effect give @s resistance 3 0 false
-execute if score @s rng3 matches 30 run function skyblock:azr/assets/mobs/trap_timer_bomb
-execute if score @s rng3 matches 30 run kill @s
+execute if score @s rng3 matches 20 run function skyblock:azr/assets/mobs/trap_timer_bomb
+execute if score @s rng3 matches 20 run kill @s
 execute if score @s rng3 matches 2..60 run particle minecraft:witch ~ ~1 ~ 0.2 0.5 0.2 0.03 5
 
 
