@@ -13,7 +13,7 @@ execute if score @s AzrEntityTimer matches -14 run playsound minecraft:block.not
 
 scoreboard players add @s[scores={AzrEntityTimer=-16..}] AzrEntityTimer 1
 
-execute if score @s AzrEntityTimer matches 0..19 run particle smoke ~ ~ ~ 0.01 0.01 0.01 0.01 5
+execute if score @s AzrEntityTimer matches -3..19 run particle smoke ~ ~ ~ 0.01 0.01 0.01 0.01 5
 
 execute if entity @s if score @s AzrEntityTimer matches -0 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.0
 execute if entity @s if score @s AzrEntityTimer matches 7 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.0
