@@ -1,5 +1,6 @@
 scoreboard players add sea_chapter_introduction sea_4temp1 1
 
+execute if score sea_chapter_introduction sea_4temp1 matches 20 at @p[tag=SEAPT] run kill @e[type=item,distance=..100]
 execute if score sea_chapter_introduction sea_4temp1 matches 20 if entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] [{selector:"@p[tag=SEAPT,scores={SEAPT_member=2}]",color:"aqua"},{text:"：",color:"aqua",bold:1b},{text:"\n“已经可以看到钻井平台了。”",color:"white"}]
 execute if score sea_chapter_introduction sea_4temp1 matches 45 if entity @a[scores={SEAPT_member=2}] run tellraw @a[distance=0..250] [{selector:"@p[tag=SEAPT,scores={SEAPT_member=1}]",color:"aqua"},{text:"：",color:"aqua",bold:1b},{text:"\n“忒尔克西啊……上一次来这里还是两个月前。”",color:"white"}]
 
