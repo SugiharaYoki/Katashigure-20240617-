@@ -108,7 +108,13 @@ execute as @s[scores={rng1=2050}] positioned -79663 21 -431 run function skybloc
 execute as @s[scores={rng1=2050}] positioned -79664 21 -431 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
 execute as @s[scores={rng1=2050}] positioned -79665 21 -431 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
 
-
+execute as @s[scores={rng1=2200}] positioned -79647 22 -422 run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
+execute as @s[scores={rng1=2201}] positioned -79647 22 -422 run playsound entity.generic.explode block @a ~ ~ ~ 5 1
+execute as @s[scores={rng1=2200}] positioned -79647 22 -422 run particle large_smoke ~ ~1 ~ 2 2 2 0.05 30
+execute as @s[scores={rng1=2200}] positioned -79647 22 -422 run particle explosion_emitter ~ ~1 ~ 1 1 1 0.05 1
+execute as @s[scores={rng1=2201}] positioned -79647 22 -422 run particle large_smoke ~ ~1 ~ 2 2 2 0.05 30
+execute as @s[scores={rng1=2201}] positioned -79647 22 -422 run particle explosion_emitter ~ ~1 ~ 1 1 1 0.05 1
+execute as @s[scores={rng1=2200}] run fill -79647 22 -422 -79647 23 -421 air
 execute as @s[scores={rng1=2212}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=2212}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“所以老大……咱们继续往前？”",color:"white"}]
 execute as @s[scores={rng1=2226}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“这群人也打得太凶猛了，如此深仇大恨吗。”",color:"white"}]
