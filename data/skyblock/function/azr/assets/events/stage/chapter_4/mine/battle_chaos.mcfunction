@@ -86,6 +86,7 @@ execute as @s[scores={rng1=2042}] positioned -79664 21 -415 positioned ~ ~ ~1 ru
 execute as @s[scores={rng1=2043}] positioned -79664 21 -415 positioned ~ ~ ~-1 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
 execute as @s[scores={rng1=2045}] positioned -79664 21 -415 positioned ~1 ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
 execute as @s[scores={rng1=2046}] positioned -79664 21 -415 positioned ~-1 ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
+
 execute as @s[scores={rng1=2112}] positioned -79664 21 -415 positioned ~ ~ ~-1 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
 execute as @s[scores={rng1=2114}] positioned -79664 21 -415 positioned ~ ~ ~1 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
 execute as @s[scores={rng1=2115}] positioned -79664 21 -415 positioned ~1 ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
@@ -98,6 +99,15 @@ execute as @s[scores={rng1=2142}] positioned -79664 21 -415 positioned ~ ~ ~1 ru
 execute as @s[scores={rng1=2143}] positioned -79664 21 -415 positioned ~ ~ ~-1 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
 execute as @s[scores={rng1=2145}] positioned -79664 21 -415 positioned ~1 ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
 execute as @s[scores={rng1=2146}] positioned -79664 21 -415 positioned ~-1 ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
+
+
+execute as @s[scores={rng1=2050}] positioned -79663 21 -433 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
+execute as @s[scores={rng1=2050}] positioned -79664 21 -433 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
+execute as @s[scores={rng1=2050}] positioned -79665 21 -433 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
+execute as @s[scores={rng1=2050}] positioned -79663 21 -431 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
+execute as @s[scores={rng1=2050}] positioned -79664 21 -431 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
+execute as @s[scores={rng1=2050}] positioned -79665 21 -431 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
+
 
 execute as @s[scores={rng1=2212}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=2212}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“所以老大……咱们继续往前？”",color:"white"}]
