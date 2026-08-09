@@ -110,6 +110,16 @@ execute as @s[scores={rng1=2050}] positioned -79665 21 -431 run function skybloc
 
 execute as @s[scores={rng1=2200}] positioned -79647 22 -422 run function skyblock:azr/assets/mobs/skeleton_bomb
 execute as @s[scores={rng1=2200}] positioned -79647 22 -421 run function skyblock:azr/assets/mobs/skeleton_bomb
+
+#后续怪物
+execute as @s[scores={rng1=2200}] positioned -79622 20 -421 run function skyblock:azr/assets/mobs/skeleton_axe
+execute as @s[scores={rng1=2200}] positioned -79622 20 -421 run function skyblock:azr/assets/mobs/skeleton_axe
+execute as @s[scores={rng1=2200}] positioned -79622 20 -421 run function skyblock:azr/assets/mobs/skeleton_axe
+execute as @s[scores={rng1=2200}] positioned -79622 20 -421 run function skyblock:azr/assets/mobs/magma_cube_mini
+execute as @s[scores={rng1=2200}] positioned -79622 20 -421 run function skyblock:azr/assets/mobs/magma_cube_mini
+execute as @s[scores={rng1=2200}] positioned -79622 20 -421 run function skyblock:azr/assets/mobs/skeleton_bomb
+
+
 execute as @s[scores={rng1=2200}] as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:skeleton_bomb}
 execute as @s[scores={rng1=2200}] positioned -79647 22 -422 run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
 execute as @s[scores={rng1=2201}] positioned -79647 22 -422 run playsound entity.generic.explode block @a ~ ~ ~ 5 1
@@ -123,5 +133,30 @@ execute as @s[scores={rng1=2212}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDia
 execute as @s[scores={rng1=2302}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=2302}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“所以老大……咱们继续往前？”",color:"white"}]
 execute as @s[scores={rng1=2316}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“这群人也打得太凶猛了，如此深仇大恨吗。”",color:"white"}]
+
+execute as @s[scores={rng1=2900..3000}] run scoreboard players set @s rng1 2900
+execute as @s[scores={rng1=..3000}] positioned -79636 22 -421 if entity @a[distance=..5] run scoreboard players set @s rng1 3001
+execute as @s[scores={rng1=3001}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=3001}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大，这地方让我……不太舒服。”",color:"white"}]
+execute as @s[scores={rng1=3012}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“要休息一会儿吗？”",color:"white"}]
+execute as @s[scores={rng1=3024}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=3024}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“没事的老大。……毕竟不论是我回家，还是老大要去传送门，都得经过这里。”",color:"white"}]
+execute as @s[scores={rng1=3044}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=3044}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大有听说过……‘枯萎’吗？”",color:"white"}]
+execute as @s[scores={rng1=3056}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“我在神庭时就有接触到这个概念。生命树在枯萎。”",color:"white"}]
+execute as @s[scores={rng1=3070}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=3070}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“我也不清楚是不是一回事，但……枯萎也发生在魔界。”",color:"white"}]
+execute as @s[scores={rng1=3084}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=3084}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“他们把枯萎归结为亡魂数量过多，而枯萎本身也提前了这场革命。”",color:"white"}]
+execute as @s[scores={rng1=3096}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=3096}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“但……很多学术专家认为枯萎源于世界本身，和亡魂数量没有直接关系。”",color:"white"}]
+execute as @s[scores={rng1=3116}] run tellraw @a[tag=azrShowDialog,scores={AzrSariel_Side_Result=-4..}] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“世界本身……自己就发生了枯萎？这说不定也能解释为什么天使长都在用自己的权能激进行事。”",color:"white"}]
+execute as @s[scores={rng1=3116}] run tellraw @a[tag=azrShowDialog,scores={AzrSariel_Side_Result=..-5}] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“世界本身……不过我并不奇怪。就连天使长都靠着自己的权能在乱搞。”",color:"white"}]
+execute as @s[scores={rng1=3128}] run tellraw @a[tag=azrShowDialog,scores={AzrSariel_Side_Result=-4..}] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“不管是神庭还是魔界，如今都乱成一团，我希望有人能让现状改变。”",color:"white"}]
+execute as @s[scores={rng1=3128}] run tellraw @a[tag=azrShowDialog,scores={AzrSariel_Side_Result=..-5}] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“不管是神庭还是魔界都烂到根了，我希望谁能给他们所有人一点教训。”",color:"white"}]
+execute as @s[scores={rng1=3138}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=3138}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“不管如何……老大，我会一直支持你。”",color:"white"}]
+
+
 
 
