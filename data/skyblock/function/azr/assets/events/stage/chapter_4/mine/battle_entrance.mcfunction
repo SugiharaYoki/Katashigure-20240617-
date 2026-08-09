@@ -1,5 +1,6 @@
 scoreboard players add @s rng1 1
 
+execute as @s[scores={rng1=2}] positioned -79685 22 -436 run fill -79694 24 -411 -79692 26 -411 minecraft:air
 execute as @s[scores={rng1=2}] positioned -79685 22 -436 run function skyblock:azr/assets/mobs/blaze
 execute as @s[scores={rng1=44}] positioned -79685 22 -436 run function skyblock:azr/assets/mobs/blaze
 execute as @s[scores={rng1=21}] positioned -79691 22 -434 run function skyblock:azr/assets/mobs/blaze

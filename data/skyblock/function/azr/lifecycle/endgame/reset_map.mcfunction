@@ -927,6 +927,8 @@ setblock -79743 23 -463 minecraft:water_cauldron[level=3]
 setblock -79742 23 -463 minecraft:water_cauldron[level=2]
 fill -79755 25 -461 -79755 23 -459 nether_brick_fence
 setblock -79753 24 -462 lever[face=floor,facing=south,powered=false]
+#防止提前进入血金窟
+fill -79694 24 -411 -79692 26 -411 minecraft:gravel
 
 #stage object
 fill -79715 26 -514 -79715 26 -516 air
