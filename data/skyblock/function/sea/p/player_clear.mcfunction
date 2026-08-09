@@ -1,3 +1,5 @@
+
+
 clear @s[gamemode=!creative] basalt
 clear @s[gamemode=!creative] item_frame
 clear @s[gamemode=!creative] iron_bars
@@ -8,6 +10,7 @@ clear @s[gamemode=!creative] deepslate_tile_slab
 clear @s[gamemode=!creative] waxed_copper_block
 clear @s[gamemode=!creative] waxed_copper_bulb
 clear @s[gamemode=!creative] waxed_cut_copper_stairs
+clear @s[gamemode=!creative] mangrove_roots
 clear @s[gamemode=!creative] slime_block
 clear @s[gamemode=!creative] heart_pottery_sherd
 clear @s[gamemode=!creative] burn_pottery_sherd
@@ -27,7 +30,6 @@ clear @s[gamemode=!creative] crimson_button
 clear @s[gamemode=!creative] warped_button
 clear @s[gamemode=!creative] stone_button
 clear @s[gamemode=!creative] acacia_fence
-clear @s[gamemode=!creative] #minecraft:anvil
 clear @s[gamemode=!creative] glow_item_frame
 clear @s[gamemode=!creative] painting
 clear @s[gamemode=!creative] stone_bricks
@@ -43,3 +45,4 @@ clear @s[gamemode=!creative] acacia_door
 clear @s[gamemode=!creative] spore_blossom
 clear @s[gamemode=!creative] rail
 clear @s[gamemode=!creative] detector_rail
+clear @s[gamemode=!creative] brown_bed
