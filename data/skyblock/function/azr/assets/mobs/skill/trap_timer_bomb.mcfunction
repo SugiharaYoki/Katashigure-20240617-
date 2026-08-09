@@ -1,12 +1,12 @@
 
-execute if score @s AzrEntityTimer matches ..0 unless block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.01 ~
-execute if score @s AzrEntityTimer matches -14..0 unless block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.02 ~
-execute if score @s AzrEntityTimer matches -12..0 unless block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.03 ~
-execute if score @s AzrEntityTimer matches -10..0 unless block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.04 ~
-execute if score @s AzrEntityTimer matches -8..0 unless block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.05 ~
-execute if score @s AzrEntityTimer matches -6..0 unless block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.06 ~
-execute if score @s AzrEntityTimer matches -4..0 unless block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.07 ~
-execute if score @s AzrEntityTimer matches -2..0 unless block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.08 ~
+execute if score @s AzrEntityTimer matches ..0 if block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.01 ~
+execute if score @s AzrEntityTimer matches -14..0 if block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.02 ~
+execute if score @s AzrEntityTimer matches -12..0 if block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.03 ~
+execute if score @s AzrEntityTimer matches -10..0 if block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.04 ~
+execute if score @s AzrEntityTimer matches -8..0 if block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.05 ~
+execute if score @s AzrEntityTimer matches -6..0 if block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.06 ~
+execute if score @s AzrEntityTimer matches -4..0 if block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.07 ~
+execute if score @s AzrEntityTimer matches -2..0 if block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.08 ~
 
 execute unless entity @s[scores={AzrEntityTimer=-16..}] run scoreboard players set @s AzrEntityTimer -15
 execute if score @s AzrEntityTimer matches -14 run playsound minecraft:block.note_block.imitate.creeper block @a ~ ~ ~ 1 1.3
