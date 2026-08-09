@@ -150,10 +150,10 @@ execute as @s[scores={rng1=3084}] at @n[tag=AzrielTrader_pig_henry] run playsoun
 execute as @s[scores={rng1=3084}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“他们把枯萎归结为亡魂数量过多，而枯萎本身也提前了这场革命。”",color:"white"}]
 execute as @s[scores={rng1=3096}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=3096}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“但……很多学术专家认为枯萎源于世界本身，和亡魂数量没有直接关系。”",color:"white"}]
-execute as @s[scores={rng1=3116}] run tellraw @a[tag=azrShowDialog,scores={AzrSariel_Side_Result=-4..}] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“世界本身……自己就发生了枯萎？这说不定也能解释为什么天使长都在用自己的权能激进行事。”",color:"white"}]
-execute as @s[scores={rng1=3116}] run tellraw @a[tag=azrShowDialog,scores={AzrSariel_Side_Result=..-5}] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“世界本身……不过我并不奇怪。就连天使长都靠着自己的权能在乱搞。”",color:"white"}]
-execute as @s[scores={rng1=3128}] run tellraw @a[tag=azrShowDialog,scores={AzrSariel_Side_Result=-4..}] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“不管是神庭还是魔界，如今都乱成一团，我希望有人能让现状改变。”",color:"white"}]
-execute as @s[scores={rng1=3128}] run tellraw @a[tag=azrShowDialog,scores={AzrSariel_Side_Result=..-5}] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“不管是神庭还是魔界都烂到根了，我希望谁能给他们所有人一点教训。”",color:"white"}]
+execute as @s[scores={rng1=3116}] run tellraw @a[tag=azrShowDialog,tag=AzrSariel_Side_Life] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“世界本身……自己就发生了枯萎？这说不定也能解释为什么天使长都在用自己的权能激进行事。”",color:"white"}]
+execute as @s[scores={rng1=3116}] run tellraw @a[tag=azrShowDialog,tag=AzrSariel_Side_Death] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“世界本身……不过我并不奇怪。就连天使长都靠着自己的权能在乱搞。”",color:"white"}]
+execute as @s[scores={rng1=3128}] run tellraw @a[tag=azrShowDialog,tag=AzrSariel_Side_Life] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“不管是神庭还是魔界，如今都乱成一团，我希望有人能让现状改变。”",color:"white"}]
+execute as @s[scores={rng1=3128}] run tellraw @a[tag=azrShowDialog,tag=AzrSariel_Side_Death] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“不管是神庭还是魔界都烂到根了，我希望谁能给他们所有人一点教训。”",color:"white"}]
 execute as @s[scores={rng1=3138}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=3138}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“不管如何……老大，我会一直支持你。”",color:"white"}]
 

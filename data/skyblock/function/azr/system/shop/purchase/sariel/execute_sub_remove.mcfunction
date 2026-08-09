@@ -258,6 +258,12 @@ execute if entity @s[tag=AzrSariel_upg13I] run scoreboard players remove @s AzrS
 scoreboard players operation @s AzrSariel_Side_Result += @s AzrSariel_Side_Life
 scoreboard players operation @s AzrSariel_Side_Result -= @s AzrSariel_Side_Death
 
+tag @s remove AzrSariel_Side_Life
+tag @s remove AzrSariel_Side_Death
+
+execute if entity @s[scores={AzrSariel_Side_Result=-4..}] run tag @s add AzrSariel_Side_Life
+execute if entity @s[scores={AzrSariel_Side_Result=..-5}] run tag @s add AzrSariel_Side_Death
+
 playsound block.enchantment_table.use player @a ~ ~ ~ 1 1.3
 playsound block.amethyst_block.resonate player @a ~ ~ ~ 1 1.2
 

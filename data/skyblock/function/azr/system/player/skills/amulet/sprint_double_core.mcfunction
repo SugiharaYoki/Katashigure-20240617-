@@ -7,7 +7,7 @@ execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=..1},predicate=
 
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=100}] run playsound minecraft:item.elytra.flying player @a ~ ~ ~ 0.67 1.5
 
-execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=93..99,AzrSariel_Side_Result=..-5}] run particle soul ~ ~1 ~ 0.2 0.9 0.2 0.03 5
+execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=93..99},tag=AzrSariel_Side_Death] run particle soul ~ ~1 ~ 0.2 0.9 0.2 0.03 5
 
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=100}] run effect give @s hunger 1 7 true
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=100}] run attribute @s movement_speed modifier add azr_amulet:sprintdouble_01 0.1 add_value
