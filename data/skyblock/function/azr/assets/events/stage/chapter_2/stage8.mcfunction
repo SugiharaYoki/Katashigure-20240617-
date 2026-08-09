@@ -28,7 +28,7 @@ execute if score stage_main_thread AzrTimerStack matches 14 positioned -79890 38
 execute if score stage_main_thread AzrTimerStack matches 16..100 positioned -79890 38 51 run rotate @n[tag=AzrielNPC_marinus] facing entity @p[tag=azrPlayer]
 
 
-execute if score stage_main_thread AzrTimerStack matches 17..29 positioned -79890 38 51 unless entity @a[tag=azrPlayer,distance=0..8] run scoreboard players set stage_main_thread AzrTimerStack 31
+execute if score stage_main_thread AzrTimerStack matches 17..29 positioned -79890 38 51 unless entity @a[tag=azrPlayer,distance=0..8] run scoreboard players set stage_main_thread AzrTimerStack 21
 execute if score stage_main_thread AzrTimerStack matches 32 at @n[tag=AzrielNPC_marinus] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
 execute if score stage_main_thread AzrTimerStack matches 32 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"yellow",bold:1b},{bold: false,text:"\n“人类的亡魂，不要再靠近了。”",color:"white"}]
 execute if score stage_main_thread AzrTimerStack matches 32 run scoreboard players set stage_main_thread AzrTimerStack 37
