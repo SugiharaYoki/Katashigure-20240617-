@@ -16,18 +16,18 @@ scoreboard players add @s[scores={AzrEntityTimer=-16..}] AzrEntityTimer 1
 execute if score @s AzrEntityTimer matches 0..19 run particle smoke ~ ~ ~ 0.01 0.01 0.01 0.01 5
 
 execute if entity @s if score @s AzrEntityTimer matches -0 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.0
-execute if entity @s if score @s AzrEntityTimer matches 10 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.0
-execute if entity @s if score @s AzrEntityTimer matches 20 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.5
-execute if entity @s if score @s AzrEntityTimer matches 25 run particle explosion ~ ~ ~ 0.4 0.4 0.4 0 2
-execute if entity @s if score @s AzrEntityTimer matches 25 run particle explosion_emitter ~ ~ ~ 0.7 0.7 0.7 0.03 2
-execute if entity @s if score @s AzrEntityTimer matches 25 run particle large_smoke ~ ~ ~ 1.3 1.3 1.3 0.02 20
-execute if entity @s if score @s AzrEntityTimer matches 25 run playsound entity.generic.explode hostile @a ~ ~ ~ 1.5 0.9
+execute if entity @s if score @s AzrEntityTimer matches 7 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.0
+execute if entity @s if score @s AzrEntityTimer matches 14 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.5
+execute if entity @s if score @s AzrEntityTimer matches 21 run particle explosion ~ ~ ~ 0.4 0.4 0.4 0 2
+execute if entity @s if score @s AzrEntityTimer matches 21 run particle explosion_emitter ~ ~ ~ 0.7 0.7 0.7 0.03 2
+execute if entity @s if score @s AzrEntityTimer matches 21 run particle large_smoke ~ ~ ~ 1.3 1.3 1.3 0.02 20
+execute if entity @s if score @s AzrEntityTimer matches 21 run playsound entity.generic.explode hostile @a ~ ~ ~ 1.5 0.9
 
-execute if entity @s if score @s AzrEntityTimer matches 25 as @e[distance=0..1.3] run damage @s 24 explosion
-execute if entity @s if score @s AzrEntityTimer matches 25 as @e[distance=0..2.6] run damage @s 18 explosion
-execute if entity @s if score @s AzrEntityTimer matches 25 as @e[distance=0..3.3] run damage @s 12 explosion
-execute if entity @s if score @s AzrEntityTimer matches 25 as @e[distance=0..4.2] run damage @s 6 explosion
+execute if entity @s if score @s AzrEntityTimer matches 21 as @e[distance=0..1.3] run damage @s 24 explosion
+execute if entity @s if score @s AzrEntityTimer matches 21 as @e[distance=0..2.6] run damage @s 18 explosion
+execute if entity @s if score @s AzrEntityTimer matches 21 as @e[distance=0..3.3] run damage @s 12 explosion
+execute if entity @s if score @s AzrEntityTimer matches 21 as @e[distance=0..4.2] run damage @s 6 explosion
 
-execute if entity @s if score @s AzrEntityTimer matches 25 run kill @e[type=arrow,distance=0..3]
-execute if entity @s if score @s AzrEntityTimer matches 25 run kill @s[type=block_display]
+execute if entity @s if score @s AzrEntityTimer matches 21 run kill @e[type=arrow,distance=0..3]
+execute if entity @s if score @s AzrEntityTimer matches 21 run kill @s[type=block_display]
 
