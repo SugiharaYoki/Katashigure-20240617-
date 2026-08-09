@@ -15,7 +15,7 @@ execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138.. if entity 
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 as @s at @s store result storage azr_amulet:stay_float y double 0.000001 run data get entity @s Pos[1] 1000000
 #execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 store result storage azr_amulet:stay_float y_10 double 0.0001 run data get entity @s Pos[1] 100000
 
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 if items entity @s container.* *[custom_data~{azr_amulet_floating_attack:1b}] run attribute @s attack_damage modifier add azr_amulet:floating_attack_01 0.2 add_multiplied_total
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 if items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run attribute @s attack_damage modifier add azr_amulet:floating_attack_01 0.2 add_multiplied_total
 
 #execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s store result storage azr_amulet:stay_float x_tell double 0.001 run data get entity @s Pos[0] 1000
 #execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s store result storage azr_amulet:stay_float y_tell double 0.001 run data get entity @s Pos[1] 1000

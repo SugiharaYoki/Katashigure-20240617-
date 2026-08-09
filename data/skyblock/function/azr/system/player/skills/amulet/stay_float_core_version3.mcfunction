@@ -13,7 +13,7 @@ execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138.. if entity 
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 as @s at @s store result storage azr_amulet:stay_float y double 0.000001 run data get entity @s Pos[1] 1000000
 #execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 store result storage azr_amulet:stay_float y_10 double 0.0001 run data get entity @s Pos[1] 100000
 
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 if items entity @s container.* *[custom_data~{azr_amulet_floating_attack:1b}] run attribute @s attack_damage modifier add azr_amulet:floating_attack_01 0.2 add_multiplied_total
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 if items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run attribute @s attack_damage modifier add azr_amulet:floating_attack_01 0.2 add_multiplied_total
 
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 120 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
@@ -27,9 +27,9 @@ execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 134 as @s at @s 
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 136 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s unless items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 0.4 2
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s if items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 0.3 1.7
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s if items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 0.1 1.7
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s unless items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run particle white_smoke ~ ~-0.2 ~ 0.1 0 0.1 0.03 8
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s if items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run particle white_smoke ~ ~-0.2 ~ 0.1 0 0.1 0.02 4
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s if items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run particle white_smoke ~ ~-0.2 ~ 0.1 0 0.1 0.02 2
 
 
 
