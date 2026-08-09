@@ -108,6 +108,9 @@ execute as @s[scores={rng1=2050}] positioned -79663 21 -431 run function skybloc
 execute as @s[scores={rng1=2050}] positioned -79664 21 -431 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
 execute as @s[scores={rng1=2050}] positioned -79665 21 -431 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
 
+execute as @s[scores={rng1=2200}] positioned -79647 22 -422 run function skyblock:azr/assets/mobs/skeleton_bomb
+execute as @s[scores={rng1=2200}] positioned -79647 22 -421 run function skyblock:azr/assets/mobs/skeleton_bomb
+execute as @s[scores={rng1=2200}] as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:skeleton_bomb}
 execute as @s[scores={rng1=2200}] positioned -79647 22 -422 run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
 execute as @s[scores={rng1=2201}] positioned -79647 22 -422 run playsound entity.generic.explode block @a ~ ~ ~ 5 1
 execute as @s[scores={rng1=2200}] positioned -79647 22 -422 run particle large_smoke ~ ~1 ~ 2 2 2 0.05 30

@@ -30,6 +30,7 @@ execute if entity @s[tag=AzrielMob_summon_delay_marker_skeleton_sword] run funct
 execute if entity @s[tag=AzrielMob_summon_delay_marker_skeleton_bogged_sword] run function skyblock:azr/assets/mobs/summon_delay/skeleton_bogged_sword
 execute if entity @s[tag=AzrielMob_summon_delay_marker_skeleton_sentinel] run function skyblock:azr/assets/mobs/summon_delay/skeleton_sentinel
 execute if entity @s[tag=AzrielMob_summon_delay_marker_skeleton_axe] run function skyblock:azr/assets/mobs/summon_delay/skeleton_axe
+execute if entity @s[tag=AzrielMob_summon_delay_marker_skeleton_bomb] run function skyblock:azr/assets/mobs/summon_delay/skeleton_bomb
 
 execute if entity @s[tag=AzrielMob_summon_delay_marker_zombie_villager_armor] run function skyblock:azr/assets/mobs/summon_delay/zombie_villager_armor
 execute if entity @s[tag=AzrielMob_summon_delay_marker_zombie_villager_cleric] run function skyblock:azr/assets/mobs/summon_delay/zombie_villager_cleric
