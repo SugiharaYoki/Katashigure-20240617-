@@ -1,54 +1,35 @@
 
+execute if score @s AzrEntityTimer matches ..0 unless block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.01 ~
+execute if score @s AzrEntityTimer matches -14..0 unless block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.02 ~
+execute if score @s AzrEntityTimer matches -12..0 unless block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.03 ~
+execute if score @s AzrEntityTimer matches -10..0 unless block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.04 ~
+execute if score @s AzrEntityTimer matches -8..0 unless block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.05 ~
+execute if score @s AzrEntityTimer matches -6..0 unless block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.06 ~
+execute if score @s AzrEntityTimer matches -4..0 unless block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.07 ~
+execute if score @s AzrEntityTimer matches -2..0 unless block ~ ~-0.1 ~ air as @s at @s run tp @s ~ ~-0.08 ~
 
-scoreboard players add @s rng1 1
+execute unless entity @s[scores={AzrEntityTimer=-16..}] run scoreboard players set @s AzrEntityTimer -15
+execute if score @s AzrEntityTimer matches -14 run playsound minecraft:block.note_block.imitate.creeper block @a ~ ~ ~ 1 1.3
 
-execute if block ~ ~-0.1 ~ air run tp @s ~ ~-0.1 ~
-execute if block ~ ~-0.1 ~ air run tp @s ~ ~-0.1 ~
+scoreboard players add @s[scores={AzrEntityTimer=-16..}] AzrEntityTimer 1
 
-execute if score @s rng1 matches 20.. as @a[tag=azrPlayer,distance=..1.2] at @s run damage @s 12 mob_attack
+execute if score @s AzrEntityTimer matches 0..19 run particle smoke ~ ~ ~ 0.01 0.01 0.01 0.01 5
 
-execute if score @s rng1 matches 23.. run kill @s
+execute if entity @s if score @s AzrEntityTimer matches -0 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.5
+execute if entity @s if score @s AzrEntityTimer matches 5 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.5
+execute if entity @s if score @s AzrEntityTimer matches 10 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.5
+execute if entity @s if score @s AzrEntityTimer matches 15 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.5
+execute if entity @s if score @s AzrEntityTimer matches 20 run playsound minecraft:block.note_block.harp block @a ~ ~ ~ 1 1.5
+execute if entity @s if score @s AzrEntityTimer matches 25 run particle explosion ~ ~ ~ 0.4 0.4 0.4 0 2
+execute if entity @s if score @s AzrEntityTimer matches 25 run particle explosion_emitter ~ ~ ~ 0.7 0.7 0.7 0.03 2
+execute if entity @s if score @s AzrEntityTimer matches 25 run particle large_smoke ~ ~ ~ 1.3 1.3 1.3 0.02 20
+execute if entity @s if score @s AzrEntityTimer matches 25 run playsound entity.generic.explode hostile @a ~ ~ ~ 1.5 0.9
 
+execute if entity @s if score @s AzrEntityTimer matches 25 as @e[distance=0..1.3] run damage @s 24 explosion
+execute if entity @s if score @s AzrEntityTimer matches 25 as @e[distance=0..2.6] run damage @s 18 explosion
+execute if entity @s if score @s AzrEntityTimer matches 25 as @e[distance=0..3.3] run damage @s 12 explosion
+execute if entity @s if score @s AzrEntityTimer matches 25 as @e[distance=0..4.2] run damage @s 6 explosion
 
-execute if score @s rng1 matches 1 as @a[tag=azrPlayer,distance=..1.2] run function skyblock:azr/system/player/map_effect/in_attack_range
-execute if score @s rng1 matches 1..6 at @s rotated ~ 0 run particle wax_off ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1..6 at @s rotated ~20 0 run particle wax_off ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1..6 at @s rotated ~40 0 run particle wax_off ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1..6 at @s rotated ~60 0 run particle wax_off ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1..6 at @s rotated ~80 0 run particle wax_off ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1..6 at @s rotated ~100 0 run particle wax_off ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1..6 at @s rotated ~120 0 run particle wax_off ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1..6 at @s rotated ~140 0 run particle wax_off ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1..6 at @s rotated ~160 0 run particle wax_off ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1..6 at @s rotated ~180 0 run particle wax_off ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1..6 at @s rotated ~200 0 run particle wax_off ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1..6 at @s rotated ~220 0 run particle wax_off ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1..6 at @s rotated ~240 0 run particle wax_off ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1..6 at @s rotated ~260 0 run particle wax_off ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1..6 at @s rotated ~280 0 run particle wax_off ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1..6 at @s rotated ~300 0 run particle wax_off ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1..6 at @s rotated ~320 0 run particle wax_off ^ ^0.1 ^1.2 0 0 0 0 1
-execute if score @s rng1 matches 1..6 at @s rotated ~340 0 run particle wax_off ^ ^0.1 ^1.2 0 0 0 0 1
+execute if entity @s if score @s AzrEntityTimer matches 25 run kill @e[type=arrow,distance=0..3]
+execute if entity @s if score @s AzrEntityTimer matches 25 run kill @s[type=block_display]
 
-
-execute if score @s rng1 matches 20.. rotated 0 0 run playsound minecraft:entity.player.attack.knockback player @a ~ ~ ~ 0.8 1.4
-execute if score @s rng1 matches 20.. rotated 0 0 run playsound entity.player.attack.sweep player @a ~ ~ ~ 0.8 1.6
-execute if score @s rng1 matches 20.. store result score @s rng2 run random value 1..18
-execute if score @s rng1 matches 20.. if score @s rng2 matches 1 rotated 000 0 positioned ^ ^0.1 ^0.7 run particle sweep_attack ~ ~ ~ 0.1 0.3 0.1 0 1
-execute if score @s rng1 matches 20.. if score @s rng2 matches 2 rotated 020 0 positioned ^ ^0.1 ^0.7 run particle sweep_attack ~ ~ ~ 0.1 0.3 0.1 0 1
-execute if score @s rng1 matches 20.. if score @s rng2 matches 3 rotated 040 0 positioned ^ ^0.1 ^0.7 run particle sweep_attack ~ ~ ~ 0.1 0.3 0.1 0 1
-execute if score @s rng1 matches 20.. if score @s rng2 matches 4 rotated 060 0 positioned ^ ^0.1 ^0.7 run particle sweep_attack ~ ~ ~ 0.1 0.3 0.1 0 1
-execute if score @s rng1 matches 20.. if score @s rng2 matches 5 rotated 080 0 positioned ^ ^0.1 ^0.7 run particle sweep_attack ~ ~ ~ 0.1 0.3 0.1 0 1
-execute if score @s rng1 matches 20.. if score @s rng2 matches 6 rotated 100 0 positioned ^ ^0.1 ^0.7 run particle sweep_attack ~ ~ ~ 0.1 0.3 0.1 0 1
-execute if score @s rng1 matches 20.. if score @s rng2 matches 7 rotated 120 0 positioned ^ ^0.1 ^0.7 run particle sweep_attack ~ ~ ~ 0.1 0.3 0.1 0 1
-execute if score @s rng1 matches 20.. if score @s rng2 matches 8 rotated 140 0 positioned ^ ^0.1 ^0.7 run particle sweep_attack ~ ~ ~ 0.1 0.3 0.1 0 1
-execute if score @s rng1 matches 20.. if score @s rng2 matches 9 rotated 160 0 positioned ^ ^0.1 ^0.7 run particle sweep_attack ~ ~ ~ 0.1 0.3 0.1 0 1
-execute if score @s rng1 matches 20.. if score @s rng2 matches 10 rotated 180 0 positioned ^ ^0.1 ^0.7 run particle sweep_attack ~ ~ ~ 0.1 0.3 0.1 0 1
-execute if score @s rng1 matches 20.. if score @s rng2 matches 11 rotated 200 0 positioned ^ ^0.1 ^0.7 run particle sweep_attack ~ ~ ~ 0.1 0.3 0.1 0 1
-execute if score @s rng1 matches 20.. if score @s rng2 matches 12 rotated 220 0 positioned ^ ^0.1 ^0.7 run particle sweep_attack ~ ~ ~ 0.1 0.3 0.1 0 1
-execute if score @s rng1 matches 20.. if score @s rng2 matches 13 rotated 240 0 positioned ^ ^0.1 ^0.7 run particle sweep_attack ~ ~ ~ 0.1 0.3 0.1 0 1
-execute if score @s rng1 matches 20.. if score @s rng2 matches 14 rotated 260 0 positioned ^ ^0.1 ^0.7 run particle sweep_attack ~ ~ ~ 0.1 0.3 0.1 0 1
-execute if score @s rng1 matches 20.. if score @s rng2 matches 15 rotated 280 0 positioned ^ ^0.1 ^0.7 run particle sweep_attack ~ ~ ~ 0.1 0.3 0.1 0 1
-execute if score @s rng1 matches 20.. if score @s rng2 matches 16 rotated 300 0 positioned ^ ^0.1 ^0.7 run particle sweep_attack ~ ~ ~ 0.1 0.3 0.1 0 1
-execute if score @s rng1 matches 20.. if score @s rng2 matches 17 rotated 320 0 positioned ^ ^0.1 ^0.7 run particle sweep_attack ~ ~ ~ 0.1 0.3 0.1 0 1
-execute if score @s rng1 matches 20.. if score @s rng2 matches 18 rotated 340 0 positioned ^ ^0.1 ^0.7 run particle sweep_attack ~ ~ ~ 0.1 0.3 0.1 0 1
