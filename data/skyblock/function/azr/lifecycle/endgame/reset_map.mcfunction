@@ -905,12 +905,12 @@ setblock -79804 56 -465 anvil[facing=north]
 
 #战场民房
 setblock -79738 30 -494 minecraft:potted_crimson_fungus
-setblock -79735 28 -489 minecraft:decorated_pot{sherds:["sheaf_pottery_sherd","sheaf_pottery_sherd","sheaf_pottery_sherd","sheaf_pottery_sherd"],item:{count: 1, id:"minecraft:gold_nugget"}}
+setblock -79735 28 -489 minecraft:decorated_pot{sherds:["sheaf_pottery_sherd","sheaf_pottery_sherd","sheaf_pottery_sherd","sheaf_pottery_sherd"],item:{count: 2, id:"minecraft:gold_nugget"}}
 setblock -79736 28 -496 redstone_block
 setblock -79736 28 -496 air
 
 #亨利快乐仓库
-setblock -79737 42 -446 minecraft:decorated_pot{sherds:["sheaf_pottery_sherd","sheaf_pottery_sherd","sheaf_pottery_sherd","sheaf_pottery_sherd"],item:{count: 1, id:"minecraft:gold_nugget"}}
+setblock -79737 42 -446 minecraft:decorated_pot{sherds:["sheaf_pottery_sherd","sheaf_pottery_sherd","sheaf_pottery_sherd","sheaf_pottery_sherd"],item:{count: 2, id:"minecraft:gold_nugget"}}
 setblock -79737 42 -447 minecraft:decorated_pot{sherds:["explorer_pottery_sherd","explorer_pottery_sherd","explorer_pottery_sherd","explorer_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 setblock -79737 42 -448 minecraft:lava_cauldron
 setblock -79741 43 -446 minecraft:brewing_stand
