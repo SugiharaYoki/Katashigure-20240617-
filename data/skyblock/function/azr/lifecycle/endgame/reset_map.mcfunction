@@ -946,6 +946,14 @@ setblock -79588 8 -427 waxed_copper_chest[facing=west]{Inventory:[]}
 item replace block -79588 8 -427 container.12 with gold_nugget 2
 item replace block -79588 8 -427 container.14 with gold_nugget 2
 
+#百夫长·采掘队 boss legate
+fill -79584 5 -468 -79583 5 -467 minecraft:decorated_pot
+fill -79568 5 -474 -79569 5 -473 minecraft:decorated_pot
+fill -79572 5 -479 -79573 5 -478 minecraft:decorated_pot
+fill -79572 5 -466 -79571 5 -467 minecraft:decorated_pot
+fill -79585 5 -474 -79586 5 -475 minecraft:decorated_pot
+
+
 
 
 
@@ -959,6 +967,11 @@ fill -79464 40 -431 -79469 31 -431 minecraft:nether_portal[axis=x] replace minec
 #boss4
 fill -79519 42 -321 -79553 42 -355 air replace fire
 clone -79555 32 -352 -79517 32 -319 -79555 41 -352
+
+
+
+
+
 
 
 
