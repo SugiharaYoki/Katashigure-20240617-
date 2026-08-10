@@ -148,6 +148,7 @@ scoreboard objectives add AzrSariel_Amulet_DoubleArrow_clock dummy
 scoreboard objectives add AzrSariel_Amulet_ArrowSavior_count dummy
 scoreboard objectives add AzrSariel_Amulet_ArrowSavior_state dummy
 scoreboard objectives add AzrSariel_Amulet_FlowerWallFire_sum dummy
+scoreboard objectives add AzrSariel_Amulet_FrontSlashEd dummy
 
 
 #特殊食物
