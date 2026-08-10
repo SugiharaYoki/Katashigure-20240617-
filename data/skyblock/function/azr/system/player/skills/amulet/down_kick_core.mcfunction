@@ -13,8 +13,12 @@ execute if score @s[tag=AzrSariel_Side_Life] AzrSariel_Amulet_DownKick_clock mat
 execute if score @s[tag=AzrSariel_Side_Death] AzrSariel_Amulet_DownKick_clock matches 21..78 run playsound minecraft:block.soul_soil.step player @a ~ ~1 ~ 1 2
 execute if score @s[tag=AzrSariel_Side_Life] AzrSariel_Amulet_DownKick_clock matches 21..78 run particle enchant ~ ~1 ~ 0.5 2 0.5 0.03 15
 execute if score @s[tag=AzrSariel_Side_Death] AzrSariel_Amulet_DownKick_clock matches 21..78 run particle soul ~ ~1 ~ 0.5 2 0.5 0.03 15
-execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 if entity @s[nbt={OnGround:1b},scores={AZR_chainKill_chargeup=2500..}] if entity @e[tag=AzrielMob,distance=0..6] run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 20
-execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 if entity @s[nbt={OnGround:1b},scores={AZR_chainKill_chargeup=2500..}] unless entity @e[tag=AzrielMob,distance=0..6] if block ~ ~-0.5 ~ honey_block run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 20
+
+execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 unless items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}] if entity @s[nbt={OnGround:1b},scores={AZR_chainKill_chargeup=2500..}] if entity @e[tag=AzrielMob,distance=0..6] run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 20
+execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 unless items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}] if entity @s[nbt={OnGround:1b},scores={AZR_chainKill_chargeup=2500..}] unless entity @e[tag=AzrielMob,distance=0..6] if block ~ ~-0.5 ~ honey_block run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 20
+execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 if items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}] if entity @s[nbt={OnGround:1b},scores={AZR_chainKill_chargeup=1500..}] if entity @e[tag=AzrielMob,distance=0..6] run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 20
+execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 if items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}] if entity @s[nbt={OnGround:1b},scores={AZR_chainKill_chargeup=1500..}] unless entity @e[tag=AzrielMob,distance=0..6] if block ~ ~-0.5 ~ honey_block run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 20
+
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 if entity @s[nbt={OnGround:1b}] run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 10
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 if entity @s[predicate=!skyblock:sneak] run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 10
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..22 run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 10
@@ -28,9 +32,12 @@ execute if score @s AzrSariel_Amulet_DownKick_clock matches 11 run playsound min
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 19 run particle minecraft:gust ~ ~ ~ 2 0 2 0 10
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 15 run particle minecraft:gust ~ ~ ~ 3.5 0 3.5 0 20
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 11 run particle minecraft:gust ~ ~ ~ 5.2 0 5.2 0 30
-execute if score @s AzrSariel_Amulet_DownKick_clock matches 19 run scoreboard players remove @s AZR_chainKill_chargeup 800
-execute if score @s AzrSariel_Amulet_DownKick_clock matches 15 run scoreboard players remove @s AZR_chainKill_chargeup 800
-execute if score @s AzrSariel_Amulet_DownKick_clock matches 11 run scoreboard players remove @s AZR_chainKill_chargeup 800
+execute if score @s AzrSariel_Amulet_DownKick_clock matches 19 unless items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}] run scoreboard players remove @s AZR_chainKill_chargeup 800
+execute if score @s AzrSariel_Amulet_DownKick_clock matches 15 unless items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}] run scoreboard players remove @s AZR_chainKill_chargeup 800
+execute if score @s AzrSariel_Amulet_DownKick_clock matches 11 unless items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}] run scoreboard players remove @s AZR_chainKill_chargeup 800
+execute if score @s AzrSariel_Amulet_DownKick_clock matches 19 if items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}] run scoreboard players remove @s AZR_chainKill_chargeup 500
+execute if score @s AzrSariel_Amulet_DownKick_clock matches 15 if items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}] run scoreboard players remove @s AZR_chainKill_chargeup 500
+execute if score @s AzrSariel_Amulet_DownKick_clock matches 11 if items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}] run scoreboard players remove @s AZR_chainKill_chargeup 500
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 19 if block ~ ~-0.1 ~ honey_block run particle block{block_state:{Name:"honey_block"}} ~ ~ ~ 0.5 0.2 0.5 0.15 30
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 15 if block ~ ~-0.1 ~ honey_block run particle block{block_state:{Name:"honey_block"}} ~ ~ ~ 0.5 0.2 0.5 0.15 30
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 11 if block ~ ~-0.1 ~ honey_block run particle block{block_state:{Name:"honey_block"}} ~ ~ ~ 0.5 0.2 0.5 0.15 30
