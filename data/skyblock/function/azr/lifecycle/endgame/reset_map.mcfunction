@@ -952,7 +952,7 @@ fill -79568 5 -474 -79569 5 -473 minecraft:decorated_pot
 fill -79572 5 -479 -79573 5 -478 minecraft:decorated_pot
 fill -79572 5 -466 -79571 5 -467 minecraft:decorated_pot
 fill -79585 5 -474 -79586 5 -475 minecraft:decorated_pot
-
+fill -79575 10 -451 -79575 13 -451 air
 
 
 

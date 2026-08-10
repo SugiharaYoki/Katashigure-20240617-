@@ -11,6 +11,7 @@ execute as @s[tag=AzrielMob_electric_blast] at @s run function skyblock:azr/asse
 execute as @s[tag=AzrielMob_boss_mossboss_spore_marker] at @s run function skyblock:azr/assets/mobs/skill/boss_mossboss/marker_spore
 
 execute as @s[tag=AzrielMob_boss_centurion_sprint_axe_marker] at @s run function skyblock:azr/assets/mobs/skill/boss_centurion/marker_sprint_axe
+execute as @s[tag=AzrielMob_boss_legate_sprint_axe_marker] at @s run function skyblock:azr/assets/mobs/skill/boss_legate/marker_sprint_axe
 
 execute as @s[tag=AzrielMob_boss_diesel_fire_marker] at @s run function skyblock:azr/assets/mobs/skill/boss_diesel/marker_fire
 execute as @s[tag=AzrielMob_boss_diesel_fire_outround_marker] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_diesel/marker_fire_outround
