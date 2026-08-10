@@ -70,7 +70,7 @@ execute if score @s rng1 matches 93 positioned -79765 43 -280 run function skybl
 
 execute if score @s rng1 matches 106..998 positioned -79831 26 -284 unless entity @a[tag=azrPlayer,distance=..15] run scoreboard players set @s rng1 997
 
-execute if score @s rng1 matches 1000.. run function skyblock:azr/assets/mobs/skill/boss_centurion/core_2nd
+#execute if score @s rng1 matches 1000.. run function skyblock:azr/assets/mobs/skill/boss_centurion/core_2nd
 
 
 
