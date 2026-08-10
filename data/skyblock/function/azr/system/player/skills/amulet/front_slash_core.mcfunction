@@ -17,25 +17,25 @@ execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass] if items entity @s wea
 execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass] if items entity @s weapon.mainhand #axes run tag @s add azrPlayer_skill_frontslash_type2
 execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass] if items entity @s weapon.mainhand #hoes run tag @s add azrPlayer_skill_frontslash_type3
 
-execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type1] rotated ~ 0 positioned ^ ^ ^2 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
-execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type1] rotated ~70 0 positioned ^ ^ ^2 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
-execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type1] rotated ~-70 0 positioned ^ ^ ^2 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
-execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type1] rotated ~ 0 positioned ^ ^ ^4 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
-execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type1] rotated ~70 0 positioned ^ ^ ^4 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
-execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type1] rotated ~-70 0 positioned ^ ^ ^4 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
+execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type1] at @s rotated ~ 0 positioned ^ ^ ^2 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
+execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type1] at @s rotated ~70 0 positioned ^ ^ ^2 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
+execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type1] at @s rotated ~-70 0 positioned ^ ^ ^2 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
+execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type1] at @s rotated ~ 0 positioned ^ ^ ^4 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
+execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type1] at @s rotated ~70 0 positioned ^ ^ ^4 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
+execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type1] at @s rotated ~-70 0 positioned ^ ^ ^4 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
 
 
-execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type2] rotated ~ 0 positioned ^ ^ ^1.7 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
-execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type2] rotated ~ 0 positioned ^ ^ ^3.6 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
-execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type2] rotated ~ 0 positioned ^ ^ ^5.5 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
-execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type2] rotated ~ 0 positioned ^ ^ ^7.4 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
+execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type2] at @s rotated ~ 0 positioned ^ ^ ^1.7 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
+execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type2] at @s rotated ~ 0 positioned ^ ^ ^3.6 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
+execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type2] at @s rotated ~ 0 positioned ^ ^ ^5.5 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
+execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type2] at @s rotated ~ 0 positioned ^ ^ ^7.4 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
 
-execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type3] rotated ~ 0 positioned ^ ^ ^3 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
-execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type3] rotated ~60 0 positioned ^ ^ ^3 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
-execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type3] rotated ~-60 0 positioned ^ ^ ^3 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
-execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type3] rotated ~120 0 positioned ^ ^ ^3 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
-execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type3] rotated ~-120 0 positioned ^ ^ ^3 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
-execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type3] rotated ~180 0 positioned ^ ^ ^3 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
+execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type3] at @s rotated ~ 0 positioned ^ ^ ^3 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
+execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type3] at @s rotated ~60 0 positioned ^ ^ ^3 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
+execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type3] at @s rotated ~-60 0 positioned ^ ^ ^3 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
+execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type3] at @s rotated ~120 0 positioned ^ ^ ^3 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
+execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type3] at @s rotated ~-120 0 positioned ^ ^ ^3 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
+execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type3] at @s rotated ~180 0 positioned ^ ^ ^3 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
 
 
 execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass] run tag @s remove azrPlayer_skill_frontslash_type1
