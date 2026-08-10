@@ -15,3 +15,6 @@ execute if entity @s[type=item] if entity @a[tag=azrPlayer,distance=..9] if enti
 execute if entity @s[type=item] if entity @a[tag=azrPlayer,distance=..9] if entity @s[nbt={Item:{components:{"minecraft:custom_data":{SarielVitae:1b}}}}] run kill @s
 execute if entity @s[type=item] if entity @a[tag=azrPlayer,distance=..9] if entity @s[nbt={Item:{components:{"minecraft:custom_data":{HandbookVitae:1b}}}}] run kill @s
 
+
+execute if score @s[tag=AzrielMob] AzrSariel_Amulet_FrontSlashEd matches 1.. run scoreboard players remove @s AzrSariel_Amulet_FrontSlashEd 1
+execute if score @s[tag=AzrielMob] AzrSariel_Amulet_FrontSlashEd matches 1 run attribute @s armor modifier remove azrsariel:amulet_frontslashed_1

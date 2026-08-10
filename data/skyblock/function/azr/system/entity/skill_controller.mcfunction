@@ -55,3 +55,5 @@ execute if score stage Azr_system matches 25.. if entity @s[type=piglin] run fun
 execute if entity @s[tag=AzrielNPC_stage9_entry_conversation5] run function skyblock:azr/assets/mobs/skill/special/team_5_captain_ian
 #NPC
 execute if entity @s[tag=AzrielTrader_pig_henry] run function skyblock:azr/assets/mobs/skill/special/pig_henry
+
+

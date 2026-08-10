@@ -11,6 +11,7 @@ execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass] at @s rotated ~ 0 posi
 execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass] at @s rotated ~ 0 positioned ^ ^ ^1.3 positioned ~ ~1.2 ~ run particle flash{color:[1.000,1.000,1.000,1.00]} ~ ~ ~ 0 0 0 0 1
 
 
+execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass] rotated ~ 0 positioned ^ ^ ^2 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
 execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass] run tag @s remove AzrSariel_Amulet_FrontSlashPass
 
 
