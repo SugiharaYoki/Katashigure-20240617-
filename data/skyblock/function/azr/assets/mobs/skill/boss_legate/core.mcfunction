@@ -26,7 +26,7 @@ execute positioned -79576 5 -473 store result bossbar azr:boss_hp_bar_legate val
 execute if score @s AzrEntityTimer matches 130 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“我的好老大，老天爷哟！我们非得和这位打吗？！”",color:"white"}]
 execute if score @s AzrEntityTimer matches 146 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“咱们明明可以绕开这里的吧！”",color:"white"}]
 execute if score @s AzrEntityTimer matches 162 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“可我实在是好奇这家伙会掉什么样的石板，上一个百夫长掉的石板太好用了。”",color:"white"}]
-execute if score @s AzrEntityTimer matches 178 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“噢我的天哪，老大我尊重你但不理解你啊啊！”",color:"white"}]
+execute if score @s AzrEntityTimer matches 178 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“噢我的天哪，希望我别因为这石板交代在这里了！”",color:"white"}]
 
 
 
@@ -86,11 +86,10 @@ execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run g
 
 #out
 
-execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79844,dx=40,y=24,dy=20,z=-300,dz=40] run bossbar remove azr:boss_hp_bar_legate
-execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79844,dx=40,y=24,dy=20,z=-300,dz=40] run tp @n[tag=AzrielBossLegate] ~ ~-200 ~
-execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79844,dx=40,y=24,dy=20,z=-300,dz=40] run kill @n[tag=AzrielBossLegate]
-execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79844,dx=40,y=24,dy=20,z=-300,dz=40] run fill -79575 10 -451 -79575 13 -451 air
-execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79844,dx=40,y=24,dy=20,z=-300,dz=40] run function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_legate
-execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79844,dx=40,y=24,dy=20,z=-300,dz=40] run stopsound @a[tag=azrShowDialog] music minecraft:renegade
-
-execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79844,dx=40,y=24,dy=20,z=-300,dz=40] run kill @s
+execute if score @s AzrEntityTimer matches ..1999 positioned -79576 5 -473 unless entity @a[tag=azrPlayer,distance=..50] run bossbar remove azr:boss_hp_bar_legate
+execute if score @s AzrEntityTimer matches ..1999 positioned -79576 5 -473 unless entity @a[tag=azrPlayer,distance=..50] run tp @n[tag=AzrielBossLegate] ~ ~-200 ~
+execute if score @s AzrEntityTimer matches ..1999 positioned -79576 5 -473 unless entity @a[tag=azrPlayer,distance=..50] run kill @n[tag=AzrielBossLegate]
+execute if score @s AzrEntityTimer matches ..1999 positioned -79576 5 -473 unless entity @a[tag=azrPlayer,distance=..50] run fill -79575 10 -451 -79575 13 -451 air
+execute if score @s AzrEntityTimer matches ..1999 positioned -79576 5 -473 unless entity @a[tag=azrPlayer,distance=..50] run function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_legate
+execute if score @s AzrEntityTimer matches ..1999 positioned -79576 5 -473 unless entity @a[tag=azrPlayer,distance=..50] run stopsound @a[tag=azrShowDialog] music minecraft:renegade
+execute if score @s AzrEntityTimer matches ..1999 positioned -79576 5 -473 unless entity @a[tag=azrPlayer,distance=..50] run kill @s
