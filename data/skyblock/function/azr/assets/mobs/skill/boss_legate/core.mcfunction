@@ -23,6 +23,11 @@ execute if score @s AzrEntityTimer matches 11 positioned -79576 5 -473 run bossb
 execute positioned -79576 5 -473 as @n[tag=AzrielBossLegate,type=piglin_brute,distance=..100] store result score @s Health run data get entity @s Health
 execute positioned -79576 5 -473 store result bossbar azr:boss_hp_bar_legate value run scoreboard players get @n[tag=AzrielBossLegate] Health
 
+execute if score @s AzrEntityTimer matches 130 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“我的好老大，老天爷哟！我们非得和这位打吗？！”",color:"white"}]
+execute if score @s AzrEntityTimer matches 146 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“咱们明明可以绕开这里的吧！”",color:"white"}]
+execute if score @s AzrEntityTimer matches 162 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“可我实在是好奇这家伙会掉什么样的石板，上一个百夫长掉的石板太好用了。”",color:"white"}]
+execute if score @s AzrEntityTimer matches 178 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“噢我的天哪，老大我尊重你但不理解你啊啊！”",color:"white"}]
+
 
 
 #AI
