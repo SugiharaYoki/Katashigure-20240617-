@@ -228,4 +228,8 @@ execute as @s[scores={rng1=6016}] positioned -79465.95 30.00 -422.78 run particl
 execute as @s[scores={rng1=6016}] positioned -79465.95 30.00 -422.78 run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
 
 
-
+execute as @s[scores={rng1=6012}] positioned -79465.98 30.00 -424.96 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[0.0f,0.0f]}
+execute as @s[scores={rng1=6012}] positioned -79465.98 30.00 -424.96 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[72.0f,0.0f]}
+execute as @s[scores={rng1=6012}] positioned -79465.98 30.00 -424.96 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[144.0f,0.0f]}
+execute as @s[scores={rng1=6012}] positioned -79465.98 30.00 -424.96 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[216.0f,0.0f]}
+execute as @s[scores={rng1=6012}] positioned -79465.98 30.00 -424.96 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[288.0f,0.0f]}
