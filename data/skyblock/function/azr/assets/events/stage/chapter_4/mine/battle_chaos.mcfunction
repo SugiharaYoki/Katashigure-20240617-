@@ -175,9 +175,19 @@ execute as @s[scores={rng1=4037}] run playsound minecraft:block.iron_door.open a
 execute as @s[scores={rng1=4038}] run playsound minecraft:block.iron_door.open ambient @a -79533 27.5 -406.0 3 0.3
 execute as @s[scores={rng1=4038}] run fill -79409 30 -398 -79409 32 -396 minecraft:red_stained_glass
 
+
 execute as @s[scores={rng1=4054}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=4054}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“喂，老大……关着的门自己开了喔。”",color:"white"}]
 execute as @s[scores={rng1=4070}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“呵……简直就像是迎接我进去一样。”",color:"white"}]
+
+execute as @s[scores={rng1=4055}] positioned -79518 26 -406 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_bomb","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=4057}] positioned -79518 26 -406 run summon marker ~1 ~ ~1 {Tags:["AzrielMob_summon_delay_marker_skeleton_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=4059}] positioned -79518 26 -406 run summon marker ~3 ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=4061}] positioned -79518 26 -406 run summon marker ~4 ~ ~1 {Tags:["AzrielMob_summon_delay_marker_skeleton_bomb","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=4065}] positioned -79518 26 -406 run summon marker ~ ~ ~1 {Tags:["AzrielMob_summon_delay_marker_skeleton_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=4067}] positioned -79518 26 -406 run summon marker ~1 ~ ~0 {Tags:["AzrielMob_summon_delay_marker_skeleton_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=4069}] positioned -79518 26 -406 run summon marker ~3 ~ ~1 {Tags:["AzrielMob_summon_delay_marker_skeleton_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute as @s[scores={rng1=4071}] positioned -79518 26 -406 run summon marker ~4 ~ ~0 {Tags:["AzrielMob_summon_delay_marker_skeleton_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
 execute positioned -79487 29 -405 as @s[scores={rng1=4990..5000}] run scoreboard players set @s rng1 4990
