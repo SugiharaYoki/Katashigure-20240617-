@@ -26,9 +26,11 @@ execute positioned -79576 5 -473 store result bossbar azr:boss_hp_bar_legate val
 execute if score @s AzrEntityTimer matches 130 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“我的好老大，老天爷哟！我们非得和这位打吗？！”",color:"white"}]
 execute if score @s AzrEntityTimer matches 146 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“咱们明明可以绕开这里的吧！”",color:"white"}]
 execute if score @s AzrEntityTimer matches 162 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“可我实在是好奇这家伙会掉什么样的石板，上一个百夫长掉的石板太好用了。”",color:"white"}]
-execute if score @s AzrEntityTimer matches 178 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“噢我的天哪，希望我别因为这石板交代在这里了！”",color:"white"}]
+execute if score @s AzrEntityTimer matches 178 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“噢我的天哪，希望我别因为那个不知道什么石板交代在这里了！”",color:"white"}]
 
 
+execute if score @s AzrEntityTimer matches 546 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大我跑不过他！！”",color:"white"}]
+execute if score @s AzrEntityTimer matches 562 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“得想个办法。尽量引导敌人撞在那些罐子上，说不定会有用处。”",color:"white"}]
 
 #AI
 
@@ -84,9 +86,9 @@ execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run t
 execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run give @s emerald 20
 execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
 
-execute if score @s AzrEntityTimer matches 2020 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“所以老大，掉石板了不？”",color:"white"}]
+execute if score @s AzrEntityTimer matches 2020 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“所以老大，对面掉了你提到过的石板吗？”",color:"white"}]
 execute if score @s AzrEntityTimer matches 2036 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“掉了，看来是个能够削弱敌人防御力的石板。”",color:"white"}]
-execute if score @s AzrEntityTimer matches 2052 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“虽然不太懂老大的用词是什么意思，但感觉好厉害。”",color:"white"}]
+execute if score @s AzrEntityTimer matches 2052 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“虽然不太懂老大的用词是什么意思，但听上去感觉好厉害。”",color:"white"}]
 
 #out
 
