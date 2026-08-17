@@ -173,6 +173,7 @@ execute as @s[scores={rng1=4037}] run fill -79533 26 -406 -79533 26 -405 air
 execute as @s[scores={rng1=4038}] run fill -79533 27 -406 -79533 27 -405 air
 execute as @s[scores={rng1=4037}] run playsound minecraft:block.iron_door.open ambient @a -79533 27.5 -406.0 3 0.3
 execute as @s[scores={rng1=4038}] run playsound minecraft:block.iron_door.open ambient @a -79533 27.5 -406.0 3 0.3
+execute as @s[scores={rng1=4038}] run fill -79409 30 -398 -79409 32 -396 minecraft:red_stained_glass
 
 execute as @s[scores={rng1=4054}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=4054}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“喂，老大……关着的门自己开了喔。”",color:"white"}]
