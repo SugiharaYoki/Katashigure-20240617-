@@ -157,6 +157,24 @@ execute as @s[scores={rng1=3138}] at @n[tag=AzrielTrader_pig_henry] run playsoun
 execute as @s[scores={rng1=3138}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“不管如何……老大，我会一直支持你。”",color:"white"}]
 
 execute as @s[scores={rng1=3138}] positioned -79572 11 -414 run function skyblock:azr/assets/mobs/utility_respawn_anchor
+execute as @s[scores={rng1=3138}] positioned -79572 11 -414 run tp @n[type=minecraft:parrot,tag=AzrielNPC_bird] -79540 24 -406
 execute as @s[scores={rng1=3138}] run scoreboard players set stage Azr_system 60
 
+execute as @s[scores={rng1=3990..4000}] run scoreboard players set @s rng1 3990
+execute as @s[scores={rng1=..4000}] as @a[tag=azrPlayer] at @s if entity @n[type=minecraft:parrot,tag=AzrielNPC_bird,distance=..8] run scoreboard players set @s rng1 4001
+execute as @s[scores={rng1=..4000}] positioned -79572 11 -414 if entity @a[tag=azrPlayer,distance=..8] unless entity @n[type=minecraft:parrot,tag=AzrielNPC_bird,distance=..30] run scoreboard players set @s rng1 4001
+
+execute as @s[scores={rng1=4002}] run tellraw @a[tag=azrShowDialog,tag=AzrSariel_Side_Death] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“这只鸟……我见过。”",color:"white"}]
+execute as @s[scores={rng1=4017}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=4017}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“不太像是魔界的生物啊。”",color:"white"}]
+execute as @s[scores={rng1=4034}] run tellraw @a[tag=azrShowDialog,tag=AzrSariel_Side_Death] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“如果它出现了……那说明默尔森已经到我们附近了。”",color:"white"}]
+
+execute as @s[scores={rng1=4037}] run fill -79533 26 -406 -79533 26 -405 air
+execute as @s[scores={rng1=4038}] run fill -79533 27 -406 -79533 27 -405 air
+execute as @s[scores={rng1=4037}] run playsound minecraft:block.iron_door.open ambient @a -79533 27.5 -406.0 3 0.3
+execute as @s[scores={rng1=4038}] run playsound minecraft:block.iron_door.open ambient @a -79533 27.5 -406.0 3 0.3
+
+execute as @s[scores={rng1=4054}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=4054}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“喂，老大……关着的门自己开了喔。”",color:"white"}]
+execute as @s[scores={rng1=4070}] run tellraw @a[tag=azrShowDialog,tag=AzrSariel_Side_Death] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“呵……简直就像是迎接我进去一样。”",color:"white"}]
 

@@ -955,11 +955,8 @@ fill -79585 5 -474 -79586 5 -475 minecraft:decorated_pot
 fill -79575 10 -451 -79575 13 -451 air
 
 
-
-
 #stage16
 fill -79533 27 -406 -79533 26 -405 minecraft:nether_brick_fence
-setblock -79540 25 -406 birch_button[face=floor]
 fill -79464 40 -431 -79469 31 -431 minecraft:obsidian replace minecraft:crying_obsidian
 fill -79464 40 -431 -79469 31 -431 minecraft:nether_portal[axis=x] replace minecraft:air
 
