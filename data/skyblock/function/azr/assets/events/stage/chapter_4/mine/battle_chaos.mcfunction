@@ -193,6 +193,10 @@ execute as @s[scores={rng1=5056}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDia
 execute as @s[scores={rng1=5072}] run tellraw @a[tag=azrShowDialog,tag=AzrSariel_Side_Death] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“哈哈……还是别用彼列王的名讳祝福我吧。”",color:"white"}]
 execute as @s[scores={rng1=5088}] run tellraw @a[tag=azrShowDialog,tag=AzrSariel_Side_Death] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“这一路上你也帮了我不少忙。亨利，我也不会忘记和你的冒险。”",color:"white"}]
 
+execute as @s[scores={rng1=5088}] run scoreboard players set @n[tag=AzrielTrader_pig_henry] AzrielNPC_FollowInterest 0
+execute as @s[scores={rng1=5100}] run tp @n[tag=AzrielTrader_pig_henry] -79465.81 30.00 -404.61
+execute as @s[scores={rng1=5100..6000}] as @n[tag=AzrielTrader_pig_henry] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+
 execute as @s[scores={rng1=5050..6000}] positioned -79466 31 -431 store result score @s rng7 run random value 1..13
 execute as @s[scores={rng1=5050..6000,rng7=1}] positioned -79466 31 -431 run playsound minecraft:ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 10 0.5
 execute as @s[scores={rng1=5100..6000,rng7=2}] positioned -79466 31 -431 run playsound minecraft:ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 10 0.7
@@ -202,6 +206,8 @@ execute positioned -79466 31 -431 as @s[scores={rng1=5990..6000}] run scoreboard
 execute positioned -79466 31 -431 as @s[scores={rng1=..6000}] if entity @a[tag=azrPlayer,distance=..20] run scoreboard players set @s rng1 6001
 
 execute as @s[scores={rng1=6001}] run effect give @a[tag=azrPlayer] slowness 5 3 true
+execute as @s[scores={rng1=6002}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=6002}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大，多保重啊！”",color:"white"}]
 execute as @s[scores={rng1=6005}] run stopsound @a[tag=azrShowDialog]
 execute as @s[scores={rng1=6009}] run playsound minecraft:block.glass.break block @a -79465.79 34.22 -430.38 10 0.6
 execute as @s[scores={rng1=6009}] run playsound minecraft:block.end_portal.spawn block @a -79465.79 34.22 -430.38 10 1.2
