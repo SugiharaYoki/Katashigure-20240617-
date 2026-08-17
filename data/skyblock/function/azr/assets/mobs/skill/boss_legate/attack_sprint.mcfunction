@@ -36,7 +36,8 @@ execute if score @s rng8 matches 10.. rotated ~ 0 positioned ^0.0 ^0.8 ^2.5 run 
 
 execute if score @s rng8 matches 6.. at @s rotated ~ 0 positioned ^ ^ ^0.9 if block ~ ~ ~ decorated_pot run effect give @s slowness 3 5 true
 execute if score @s rng8 matches 6.. at @s rotated ~ 0 positioned ^ ^ ^0.9 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
-execute if score @s rng8 matches 12 run effect give @s speed 1 5 true
+execute if score @s rng8 matches 13 run effect give @s speed 1 7 true
+execute if score @s rng8 matches 14 run effect clear @s speed 
 
 execute if score @s rng8 matches 3 rotated as @s rotated ~ 0 run summon marker ^ ^ ^-3 {Tags:["AzrielMob_boss_legate_sprint_axe_marker","AzrielMob_mob_marker"]}
 
