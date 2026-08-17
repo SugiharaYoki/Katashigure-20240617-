@@ -12,7 +12,7 @@ execute if score @s rng9 matches 572.. run scoreboard players set @s rng9 0
 execute if score @s AzrEntityTimer matches 1 positioned -79576 5 -473 run function skyblock:azr/assets/events/effects/player_magic_release
 execute if score @s AzrEntityTimer matches 1 positioned -79576 5 -473 run playsound entity.enderman.teleport hostile @a ~ ~ ~ 3 0.8
 execute if score @s AzrEntityTimer matches 1 positioned -79576 5 -473 run function skyblock:azr/assets/mobs/skill/boss_legate/summon
-execute if score @s AzrEntityTimer matches 1 run fill -79575 10 -451 -79575 13 -451 air replace minecraft:red_stained_glass
+execute if score @s AzrEntityTimer matches 1 run fill -79575 10 -451 -79575 13 -451 minecraft:red_stained_glass
 
 
 execute if score @s AzrEntityTimer matches 1 positioned -79576 5 -473 run bossbar add azr:boss_hp_bar_legate "正向规划的超实践突破 - 百夫长 · 采掘组"
