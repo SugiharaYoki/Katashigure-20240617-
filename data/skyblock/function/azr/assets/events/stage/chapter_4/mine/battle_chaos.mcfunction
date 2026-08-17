@@ -101,6 +101,13 @@ execute as @s[scores={rng1=2145}] positioned -79664 21 -415 positioned ~1 ~ ~ ru
 execute as @s[scores={rng1=2146}] positioned -79664 21 -415 positioned ~-1 ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
 
 
+execute as @s[scores={rng1=96}] positioned -79663 21 -433 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
+execute as @s[scores={rng1=96}] positioned -79664 21 -433 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
+execute as @s[scores={rng1=96}] positioned -79665 21 -433 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
+execute as @s[scores={rng1=96}] positioned -79663 21 -431 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
+execute as @s[scores={rng1=96}] positioned -79664 21 -431 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
+execute as @s[scores={rng1=96}] positioned -79665 21 -431 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
+
 execute as @s[scores={rng1=2050}] positioned -79663 21 -433 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
 execute as @s[scores={rng1=2050}] positioned -79664 21 -433 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
 execute as @s[scores={rng1=2050}] positioned -79665 21 -433 run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_piglin
