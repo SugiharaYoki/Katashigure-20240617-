@@ -18,7 +18,7 @@ execute as @s[scores={rng1=60}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialo
 execute as @s[scores={rng1=74}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“亨利！！你退后，这个家伙好像很危险，我没有关系，但你不能受伤！！”",color:"white"}]
 
 execute as @s[scores={rng1=87}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute as @s[scores={rng1=87}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“你说什么呢老大，我们可是战友！！”",color:"white"}]
+execute as @s[scores={rng1=87}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“你说什么呢老大，我们可是同生共死的战友！！”",color:"white"}]
 
 
 scoreboard players add @s rng9 1
