@@ -216,4 +216,16 @@ execute as @s[scores={rng1=6009}] run particle minecraft:flame -79465.94 35.92 -
 execute as @s[scores={rng1=6009}] run particle minecraft:large_smoke -79465.94 35.92 -430.38 2 2.5 0 0.03 70
 execute as @s[scores={rng1=6009}] run fill -79464 40 -431 -79469 31 -431 air replace nether_portal destroy
 
+execute as @s[scores={rng1=6012}] positioned -79465.95 30.00 -426.78 run particle explosion_emitter ~ ~ ~ 2 0 0 0 2
+execute as @s[scores={rng1=6012}] positioned -79465.95 30.00 -426.78 run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
+execute as @s[scores={rng1=6013}] positioned -79465.95 30.00 -425.78 run particle explosion_emitter ~ ~ ~ 2 0 0 0 2
+execute as @s[scores={rng1=6013}] positioned -79465.95 30.00 -425.78 run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
+execute as @s[scores={rng1=6014}] positioned -79465.95 30.00 -424.78 run particle explosion_emitter ~ ~ ~ 2 0 0 0 2
+execute as @s[scores={rng1=6014}] positioned -79465.95 30.00 -424.78 run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
+execute as @s[scores={rng1=6015}] positioned -79465.95 30.00 -423.78 run particle explosion_emitter ~ ~ ~ 2 0 0 0 2
+execute as @s[scores={rng1=6015}] positioned -79465.95 30.00 -423.78 run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
+execute as @s[scores={rng1=6016}] positioned -79465.95 30.00 -422.78 run particle explosion_emitter ~ ~ ~ 2 0 0 0 2
+execute as @s[scores={rng1=6016}] positioned -79465.95 30.00 -422.78 run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
+
+
 
