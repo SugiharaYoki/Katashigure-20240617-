@@ -10,7 +10,7 @@ execute as @s[scores={rng1=28}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialo
 execute as @s[scores={rng1=42}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“我没有利用价值？那可真是谢谢，我现在就送你去见你的太奶奶！！”",color:"white"}]
 
 
-scoreboard players add @s rng9 1
+execute as @s[scores={rng1=..1000}] run scoreboard players add @s rng9 1
 execute if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden1.combathigh music @s ~ ~ ~ 0.65
 execute if score @s rng9 matches 630.. run scoreboard players set @s rng9 0
 
@@ -26,7 +26,7 @@ execute as @s[scores={rng1=87}] at @n[tag=AzrielTrader_pig_henry] run playsound 
 execute as @s[scores={rng1=87}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“你说什么呢老大，我们可是同生共死的战友！！”",color:"white"}]
 
 
-
+execute as @s[scores={rng1=999..1000}] run scoreboard players set @s rng1 999
 
 
 
