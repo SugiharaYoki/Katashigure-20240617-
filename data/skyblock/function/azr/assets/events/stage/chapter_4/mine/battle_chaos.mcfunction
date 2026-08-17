@@ -235,4 +235,4 @@ execute as @s[scores={rng1=6014}] positioned -79465.98 30.00 -424.96 run summon 
 execute as @s[scores={rng1=6014}] positioned -79465.98 30.00 -424.96 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[288.0f,0.0f]}
 execute as @s[scores={rng1=6019}] positioned -79465.98 30.00 -424.96 run function skyblock:azr/assets/mobs/skill/boss4_amy/summon_1
 
-execute as @s[scores={rng1=6019}] positioned -79681 22 -423 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute as @s[scores={rng1=6019}] positioned -79466 29 -405 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
