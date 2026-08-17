@@ -164,6 +164,6 @@ execute as @s[scores={rng1=3128}] run tellraw @a[tag=azrShowDialog,tag=AzrSariel
 execute as @s[scores={rng1=3138}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=3138}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“不管如何……老大，我会一直支持你。”",color:"white"}]
 
-
+execute as @s[scores={rng1=3138}] run scoreboard players set stage Azr_system 60
 
 
