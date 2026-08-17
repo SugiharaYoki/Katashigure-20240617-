@@ -1,7 +1,10 @@
 
 scoreboard players add @s rng1 1
 
-execute if score @s rng1 matches 1 rotated as @s at @s run tp @s ~ ~ ~ ~5 0
+execute if score @s rng1 matches 1.. rotated as @s at @s run tp @s ~ ~ ~ ~5 0
+execute if score @s rng1 matches 1..15 rotated as @s at @s run tp @s ~ ~ ~ ~1 0
+execute if score @s rng1 matches 1..10 rotated as @s at @s run tp @s ~ ~ ~ ~2 0
+execute if score @s rng1 matches 1..5 rotated as @s at @s run tp @s ~ ~ ~ ~3 0
 
 
 execute if score @s rng1 matches 1..30 at @s run tp @s ~ ~0.02 ~
