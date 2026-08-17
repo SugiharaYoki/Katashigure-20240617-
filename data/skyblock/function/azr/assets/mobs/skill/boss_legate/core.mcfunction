@@ -15,10 +15,10 @@ execute if score @s AzrEntityTimer matches 1 positioned -79576 5 -473 run functi
 execute if score @s AzrEntityTimer matches 1 run fill -79575 10 -451 -79575 13 -451 air replace minecraft:red_stained_glass
 
 
-execute if score @s AzrEntityTimer matches 11 positioned -79576 5 -473 run bossbar add azr:boss_hp_bar_legate "正向规划的超实践突破 - 百夫长 · 采掘组"
-execute if score @s AzrEntityTimer matches 11 positioned -79576 5 -473 run bossbar set azr:boss_hp_bar_legate color red
-execute if score @s AzrEntityTimer matches 11 positioned -79576 5 -473 run bossbar set azr:boss_hp_bar_legate max 600
-execute if score @s AzrEntityTimer matches 11 positioned -79576 5 -473 run bossbar set azr:boss_hp_bar_legate players @a[tag=azrShowDialog]
+execute if score @s AzrEntityTimer matches 1 positioned -79576 5 -473 run bossbar add azr:boss_hp_bar_legate "正向规划的超实践突破 - 百夫长 · 采掘组"
+execute if score @s AzrEntityTimer matches 1 positioned -79576 5 -473 run bossbar set azr:boss_hp_bar_legate color red
+execute if score @s AzrEntityTimer matches 1 positioned -79576 5 -473 run bossbar set azr:boss_hp_bar_legate max 600
+execute if score @s AzrEntityTimer matches 1 positioned -79576 5 -473 run bossbar set azr:boss_hp_bar_legate players @a[tag=azrShowDialog]
 
 execute positioned -79576 5 -473 as @n[tag=AzrielBossLegate,type=piglin_brute,distance=..100] store result score @s Health run data get entity @s Health
 execute positioned -79576 5 -473 store result bossbar azr:boss_hp_bar_legate value run scoreboard players get @n[tag=AzrielBossLegate] Health
