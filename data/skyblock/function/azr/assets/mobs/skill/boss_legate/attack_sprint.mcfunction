@@ -14,23 +14,23 @@ execute if score @s rng8 matches 2 rotated ~ 0 run particle minecraft:wax_off ^ 
 execute if score @s rng8 matches 2 rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^5.5
 execute if score @s rng8 matches 2 rotated ~ 0 run particle minecraft:wax_off ^ ^0.2 ^6
 execute if score @s rng8 matches 6 run effect give @s speed 2 3 true
-execute if score @s rng8 matches 7.. rotated ~ 0 positioned ^ ^1.2 ^2 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
-execute if score @s rng8 matches 7.. rotated ~ 0 positioned ^0.1 ^1.2 ^1.9 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
-execute if score @s rng8 matches 7.. rotated ~ 0 positioned ^-0.1 ^1.2 ^1.9 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
-execute if score @s rng8 matches 7.. rotated ~ 0 positioned ^0.0 ^1.3 ^1.9 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
-execute if score @s rng8 matches 7.. rotated ~ 0 positioned ^0.0 ^1.1 ^1.9 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
-execute if score @s rng8 matches 8.. rotated ~ 0 positioned ^0.2 ^1.2 ^1.8 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
-execute if score @s rng8 matches 8.. rotated ~ 0 positioned ^-0.2 ^1.2 ^1.8 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
-execute if score @s rng8 matches 8.. rotated ~ 0 positioned ^0.0 ^1.4 ^1.8 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
-execute if score @s rng8 matches 8.. rotated ~ 0 positioned ^0.0 ^1.0 ^1.8 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
-execute if score @s rng8 matches 9.. rotated ~ 0 positioned ^0.3 ^1.2 ^1.65 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
-execute if score @s rng8 matches 9.. rotated ~ 0 positioned ^-0.3 ^1.2 ^1.65 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
-execute if score @s rng8 matches 9.. rotated ~ 0 positioned ^0.0 ^1.5 ^1.65 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
-execute if score @s rng8 matches 9.. rotated ~ 0 positioned ^0.0 ^0.9 ^1.65 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
-execute if score @s rng8 matches 10.. rotated ~ 0 positioned ^0.4 ^1.2 ^1.5 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
-execute if score @s rng8 matches 10.. rotated ~ 0 positioned ^-0.4 ^1.2 ^1.5 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
-execute if score @s rng8 matches 10.. rotated ~ 0 positioned ^0.0 ^1.6 ^1.5 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
-execute if score @s rng8 matches 10.. rotated ~ 0 positioned ^0.0 ^0.8 ^1.5 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
+execute if score @s rng8 matches 7.. rotated ~ 0 positioned ^ ^1.2 ^3 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
+execute if score @s rng8 matches 7.. rotated ~ 0 positioned ^0.1 ^1.2 ^2.9 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
+execute if score @s rng8 matches 7.. rotated ~ 0 positioned ^-0.1 ^1.2 ^2.9 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
+execute if score @s rng8 matches 7.. rotated ~ 0 positioned ^0.0 ^1.3 ^2.9 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
+execute if score @s rng8 matches 7.. rotated ~ 0 positioned ^0.0 ^1.1 ^2.9 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
+execute if score @s rng8 matches 8.. rotated ~ 0 positioned ^0.2 ^1.2 ^2.8 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
+execute if score @s rng8 matches 8.. rotated ~ 0 positioned ^-0.2 ^1.2 ^2.8 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
+execute if score @s rng8 matches 8.. rotated ~ 0 positioned ^0.0 ^1.4 ^2.8 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
+execute if score @s rng8 matches 8.. rotated ~ 0 positioned ^0.0 ^1.0 ^2.8 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
+execute if score @s rng8 matches 9.. rotated ~ 0 positioned ^0.3 ^1.2 ^2.65 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
+execute if score @s rng8 matches 9.. rotated ~ 0 positioned ^-0.3 ^1.2 ^2.65 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
+execute if score @s rng8 matches 9.. rotated ~ 0 positioned ^0.0 ^1.5 ^2.65 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
+execute if score @s rng8 matches 9.. rotated ~ 0 positioned ^0.0 ^0.9 ^2.65 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
+execute if score @s rng8 matches 10.. rotated ~ 0 positioned ^0.4 ^1.2 ^2.5 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
+execute if score @s rng8 matches 10.. rotated ~ 0 positioned ^-0.4 ^1.2 ^2.5 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
+execute if score @s rng8 matches 10.. rotated ~ 0 positioned ^0.0 ^1.6 ^2.5 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
+execute if score @s rng8 matches 10.. rotated ~ 0 positioned ^0.0 ^0.8 ^2.5 run particle white_smoke ~ ~ ~ 0 0 0 0.03 1
 
 
 
