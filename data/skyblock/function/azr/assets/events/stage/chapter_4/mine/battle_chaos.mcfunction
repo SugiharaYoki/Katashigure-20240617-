@@ -164,10 +164,10 @@ execute as @s[scores={rng1=3990..4000}] run scoreboard players set @s rng1 3990
 execute as @s[scores={rng1=..4000}] as @a[tag=azrPlayer] at @s if entity @n[type=minecraft:parrot,tag=AzrielNPC_bird,distance=..8] run scoreboard players set @s rng1 4001
 execute as @s[scores={rng1=..4000}] positioned -79572 11 -414 if entity @a[tag=azrPlayer,distance=..8] unless entity @n[type=minecraft:parrot,tag=AzrielNPC_bird,distance=..30] run scoreboard players set @s rng1 4001
 
-execute as @s[scores={rng1=4002}] run tellraw @a[tag=azrShowDialog,tag=AzrSariel_Side_Death] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“这只鸟……我见过。”",color:"white"}]
+execute as @s[scores={rng1=4002}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“这只鸟……我见过。”",color:"white"}]
 execute as @s[scores={rng1=4017}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=4017}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“不太像是魔界的生物啊。”",color:"white"}]
-execute as @s[scores={rng1=4034}] run tellraw @a[tag=azrShowDialog,tag=AzrSariel_Side_Death] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“如果它出现了……那说明默尔森已经到我们附近了。”",color:"white"}]
+execute as @s[scores={rng1=4034}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“如果它出现了……那说明默尔森已经到我们附近了。”",color:"white"}]
 
 execute as @s[scores={rng1=4037}] run fill -79533 26 -406 -79533 26 -405 air
 execute as @s[scores={rng1=4038}] run fill -79533 27 -406 -79533 27 -405 air
@@ -176,22 +176,22 @@ execute as @s[scores={rng1=4038}] run playsound minecraft:block.iron_door.open a
 
 execute as @s[scores={rng1=4054}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=4054}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“喂，老大……关着的门自己开了喔。”",color:"white"}]
-execute as @s[scores={rng1=4070}] run tellraw @a[tag=azrShowDialog,tag=AzrSariel_Side_Death] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“呵……简直就像是迎接我进去一样。”",color:"white"}]
+execute as @s[scores={rng1=4070}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“呵……简直就像是迎接我进去一样。”",color:"white"}]
 
 
 execute positioned -79490 29 -405 as @s[scores={rng1=4990..5000}] run scoreboard players set @s rng1 4990
 execute positioned -79490 29 -405 as @s[scores={rng1=..5000}] if entity @a[tag=azrPlayer,distance=..20] run scoreboard players set @s rng1 5001
 execute as @s[scores={rng1=5001}] run effect give @a[tag=azrPlayer] slowness 10 5 true
-execute as @s[scores={rng1=5001}] run tellraw @a[tag=azrShowDialog,tag=AzrSariel_Side_Death] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“……我来过这里。”",color:"white"}]
+execute as @s[scores={rng1=5001}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“……我来过这里。”",color:"white"}]
 execute as @s[scores={rng1=5015}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=5015}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大，我们居然成功过来了！我终于可以回家了！”",color:"white"}]
-execute as @s[scores={rng1=5027}] run tellraw @a[tag=azrShowDialog,tag=AzrSariel_Side_Death] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“是啊，原来这里就是你家附近。那看来，我们俩分别的时刻也要到了。”",color:"white"}]
+execute as @s[scores={rng1=5027}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“是啊，原来这里就是你家附近。那看来，我们俩分别的时刻也要到了。”",color:"white"}]
 execute as @s[scores={rng1=5042}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=5042}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“一路跟老大闯过来，我长了不少见识。和老大的这段旅途我毕生难忘。”",color:"white"}]
 execute as @s[scores={rng1=5056}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=5056}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大，我就算在魔界也会一直支持你！无论你要做什么，我都绝对会为你祝福的！彼列王在上！”",color:"white"}]
-execute as @s[scores={rng1=5072}] run tellraw @a[tag=azrShowDialog,tag=AzrSariel_Side_Death] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“哈哈……还是别用彼列王的名讳祝福我吧。”",color:"white"}]
-execute as @s[scores={rng1=5088}] run tellraw @a[tag=azrShowDialog,tag=AzrSariel_Side_Death] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“这一路上你也帮了我不少忙。亨利，我也不会忘记和你的冒险。”",color:"white"}]
+execute as @s[scores={rng1=5072}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“哈哈……还是别用彼列王的名讳祝福我吧。”",color:"white"}]
+execute as @s[scores={rng1=5088}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“这一路上你也帮了我不少忙。亨利，我也不会忘记和你的冒险。”",color:"white"}]
 
 execute as @s[scores={rng1=5088}] run scoreboard players set @n[tag=AzrielTrader_pig_henry] AzrielNPC_FollowInterest 0
 execute as @s[scores={rng1=5100}] run tp @n[tag=AzrielTrader_pig_henry] -79465.81 30.00 -404.61
