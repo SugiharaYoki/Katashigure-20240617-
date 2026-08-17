@@ -16,4 +16,6 @@ execute positioned -79681 22 -423 unless entity @n[tag=AzrielMarker_encounter,di
 execute positioned -79681 22 -423 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 8999.. run function skyblock:azr/assets/events/stage/chapter_4/mine/battle_chaos
 
 
+#第四章道中尾声
+execute positioned -79466 29 -405 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 8999.. run function skyblock:azr/assets/events/stage/chapter_4/mine/battle_portal
 
