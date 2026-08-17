@@ -9,8 +9,10 @@ execute if score @s rng1 matches 1..5 rotated as @s at @s run tp @s ~ ~ ~ ~3 0
 
 execute if score @s rng1 matches 1..30 at @s run tp @s ~ ~0.02 ~
 execute if score @s rng1 matches 1..20 at @s run tp @s ~ ~0.04 ~
-execute if score @s rng1 matches 1..10 at @s run tp @s ~ ~0.06 ~
-execute if score @s rng1 matches 1..5 at @s run tp @s ~ ~0.08 ~
+execute if score @s rng1 matches 1..10 at @s run tp @s ~ ~0.065 ~
+execute if score @s rng1 matches 1..5 at @s run tp @s ~ ~0.09 ~
+execute if score @s rng1 matches 1..3 at @s run tp @s ~ ~0.02 ~
+execute if score @s rng1 matches 1..12 at @s run tp @s ~ ~0.02 ~
 
 execute if score @s rng1 matches 1.. at @s rotated ~ 0 positioned ^ ^ ^2 run particle flame ~ ~ ~ 0 0 0 0 1
 execute if score @s rng1 matches 1.. at @s rotated ~ 0 positioned ^ ^ ^-5 run particle flame ~ ~ ~ 0 0 0 0 1
