@@ -84,6 +84,10 @@ execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run t
 execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run give @s emerald 20
 execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
 
+execute if score @s AzrEntityTimer matches 2020 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“所以老大，掉石板了不？”",color:"white"}]
+execute if score @s AzrEntityTimer matches 2036 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“掉了，看来是个能够削弱敌人防御力的石板。”",color:"white"}]
+execute if score @s AzrEntityTimer matches 2052 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“虽然不太懂老大的用词是什么意思，但感觉好厉害。”",color:"white"}]
+
 #out
 
 execute if score @s AzrEntityTimer matches ..1999 positioned -79576 5 -473 unless entity @a[tag=azrPlayer,distance=..50] run bossbar remove azr:boss_hp_bar_legate
