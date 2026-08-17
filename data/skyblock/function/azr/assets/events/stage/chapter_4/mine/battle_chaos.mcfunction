@@ -193,7 +193,13 @@ execute as @s[scores={rng1=5056}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDia
 execute as @s[scores={rng1=5072}] run tellraw @a[tag=azrShowDialog,tag=AzrSariel_Side_Death] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“哈哈……还是别用彼列王的名讳祝福我吧。”",color:"white"}]
 execute as @s[scores={rng1=5088}] run tellraw @a[tag=azrShowDialog,tag=AzrSariel_Side_Death] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“这一路上你也帮了我不少忙。亨利，我也不会忘记和你的冒险。”",color:"white"}]
 
-
+execute as @s[scores={rng1=5050..6000}] positioned -79466 31 -431 store result score @s rng7 run random value 1..13
+execute as @s[scores={rng1=5050..6000,rng7=1}] positioned -79466 31 -431 run playsound minecraft:ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 10 0.5
+execute as @s[scores={rng1=5100..6000,rng7=2}] positioned -79466 31 -431 run playsound minecraft:ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 10 0.7
+execute as @s[scores={rng1=5150..6000,rng7=3}] positioned -79466 31 -431 run playsound minecraft:ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 10 1.2
 
 execute positioned -79466 31 -431 as @s[scores={rng1=5990..6000}] run scoreboard players set @s rng1 5990
 execute positioned -79466 31 -431 as @s[scores={rng1=..6000}] if entity @a[tag=azrPlayer,distance=..20] run scoreboard players set @s rng1 6001
+
+
+
