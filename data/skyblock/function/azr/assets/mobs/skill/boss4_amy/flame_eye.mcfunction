@@ -11,7 +11,7 @@ execute at @s[tag=AzrielMob_demon_amy_flame_eye_a] rotated as @s facing entity @
 execute at @s[tag=AzrielMob_demon_amy_flame_eye_b] rotated as @s facing entity @n[tag=AzrielMob_demon_amy_flame_eye_destination_point_b,type=marker,distance=5..23] eyes run tp @s ^ ^ ^0.2 facing entity @n[tag=AzrielMob_demon_amy_flame_eye_destination_point_b,type=marker,distance=..23]
 
 
-
+execute at @s rotated as @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
 
 kill @n[tag=AzrielMob_demon_amy_flame_eye_destination_point_a,type=marker,distance=..23]
