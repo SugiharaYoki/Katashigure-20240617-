@@ -206,30 +206,30 @@ execute positioned -79466 31 -431 as @s[scores={rng1=5990..6000}] run scoreboard
 execute positioned -79466 31 -431 as @s[scores={rng1=..6000}] if entity @a[tag=azrPlayer,distance=..20] run scoreboard players set @s rng1 6001
 
 execute as @s[scores={rng1=6001}] run effect give @a[tag=azrPlayer] slowness 5 3 true
-execute as @s[scores={rng1=6002}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute as @s[scores={rng1=6002}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大，多保重啊！”",color:"white"}]
-execute as @s[scores={rng1=6005}] run stopsound @a[tag=azrShowDialog]
-execute as @s[scores={rng1=6009}] run playsound minecraft:block.glass.break block @a -79465.79 34.22 -430.38 10 0.6
-execute as @s[scores={rng1=6009}] run playsound minecraft:block.end_portal.spawn block @a -79465.79 34.22 -430.38 10 1.2
-execute as @s[scores={rng1=6009}] run particle minecraft:falling_obsidian_tear -79465.94 35.92 -430.38 1 2 0 0 100
-execute as @s[scores={rng1=6009}] run particle minecraft:flame -79465.94 35.92 -430.38 2 2.5 0 0.03 100
-execute as @s[scores={rng1=6009}] run particle minecraft:large_smoke -79465.94 35.92 -430.38 2 2.5 0 0.03 70
-execute as @s[scores={rng1=6009}] run fill -79464 40 -431 -79469 31 -431 air replace nether_portal destroy
+execute as @s[scores={rng1=6003}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=6003}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大，多保重啊！”",color:"white"}]
+execute as @s[scores={rng1=6007}] run stopsound @a[tag=azrShowDialog]
+execute as @s[scores={rng1=6011}] run playsound minecraft:block.glass.break block @a -79465.79 34.22 -430.38 10 0.6
+execute as @s[scores={rng1=6011}] run playsound minecraft:block.end_portal.spawn block @a -79465.79 34.22 -430.38 10 1.2
+execute as @s[scores={rng1=6011}] run particle minecraft:falling_obsidian_tear -79465.94 35.92 -430.38 1 2 0 0 100
+execute as @s[scores={rng1=6011}] run particle minecraft:flame -79465.94 35.92 -430.38 2 2.5 0 0.03 100
+execute as @s[scores={rng1=6011}] run particle minecraft:large_smoke -79465.94 35.92 -430.38 2 2.5 0 0.03 70
+execute as @s[scores={rng1=6011}] run fill -79464 40 -431 -79469 31 -431 air replace nether_portal destroy
 
-execute as @s[scores={rng1=6012}] positioned -79465.95 30.00 -426.78 run particle explosion_emitter ~ ~ ~ 2 0 0 0 2
-execute as @s[scores={rng1=6012}] positioned -79465.95 30.00 -426.78 run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
-execute as @s[scores={rng1=6013}] positioned -79465.95 30.00 -425.78 run particle explosion_emitter ~ ~ ~ 2 0 0 0 2
-execute as @s[scores={rng1=6013}] positioned -79465.95 30.00 -425.78 run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
-execute as @s[scores={rng1=6014}] positioned -79465.95 30.00 -424.78 run particle explosion_emitter ~ ~ ~ 2 0 0 0 2
-execute as @s[scores={rng1=6014}] positioned -79465.95 30.00 -424.78 run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
-execute as @s[scores={rng1=6015}] positioned -79465.95 30.00 -423.78 run particle explosion_emitter ~ ~ ~ 2 0 0 0 2
-execute as @s[scores={rng1=6015}] positioned -79465.95 30.00 -423.78 run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
-execute as @s[scores={rng1=6016}] positioned -79465.95 30.00 -422.78 run particle explosion_emitter ~ ~ ~ 2 0 0 0 2
-execute as @s[scores={rng1=6016}] positioned -79465.95 30.00 -422.78 run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
+execute as @s[scores={rng1=6014}] positioned -79465.95 30.00 -426.78 run particle explosion_emitter ~ ~ ~ 2 0 0 0 2
+execute as @s[scores={rng1=6014}] positioned -79465.95 30.00 -426.78 run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
+execute as @s[scores={rng1=6015}] positioned -79465.95 30.00 -425.78 run particle explosion_emitter ~ ~ ~ 2 0 0 0 2
+execute as @s[scores={rng1=6015}] positioned -79465.95 30.00 -425.78 run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
+execute as @s[scores={rng1=6016}] positioned -79465.95 30.00 -424.78 run particle explosion_emitter ~ ~ ~ 2 0 0 0 2
+execute as @s[scores={rng1=6016}] positioned -79465.95 30.00 -424.78 run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
+execute as @s[scores={rng1=6017}] positioned -79465.95 30.00 -423.78 run particle explosion_emitter ~ ~ ~ 2 0 0 0 2
+execute as @s[scores={rng1=6017}] positioned -79465.95 30.00 -423.78 run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
+execute as @s[scores={rng1=6018}] positioned -79465.95 30.00 -422.78 run particle explosion_emitter ~ ~ ~ 2 0 0 0 2
+execute as @s[scores={rng1=6018}] positioned -79465.95 30.00 -422.78 run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
 
 
-execute as @s[scores={rng1=6012}] positioned -79465.98 30.00 -424.96 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[0.0f,0.0f]}
-execute as @s[scores={rng1=6012}] positioned -79465.98 30.00 -424.96 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[72.0f,0.0f]}
-execute as @s[scores={rng1=6012}] positioned -79465.98 30.00 -424.96 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[144.0f,0.0f]}
-execute as @s[scores={rng1=6012}] positioned -79465.98 30.00 -424.96 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[216.0f,0.0f]}
-execute as @s[scores={rng1=6012}] positioned -79465.98 30.00 -424.96 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[288.0f,0.0f]}
+execute as @s[scores={rng1=6014}] positioned -79465.98 30.00 -424.96 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[0.0f,0.0f]}
+execute as @s[scores={rng1=6014}] positioned -79465.98 30.00 -424.96 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[72.0f,0.0f]}
+execute as @s[scores={rng1=6014}] positioned -79465.98 30.00 -424.96 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[144.0f,0.0f]}
+execute as @s[scores={rng1=6014}] positioned -79465.98 30.00 -424.96 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[216.0f,0.0f]}
+execute as @s[scores={rng1=6014}] positioned -79465.98 30.00 -424.96 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[288.0f,0.0f]}
