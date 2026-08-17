@@ -16,8 +16,8 @@ execute if score @s rng8 matches 2 rotated ~ 0 run particle minecraft:wax_off ^ 
 execute if score @s rng8 matches 6 run effect give @s speed 2 3 true
 execute if score @s rng8 matches 6.. as @s at @s rotated ~ 0 positioned ^ ^ ^0.5 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
 
-execute if score @s rng8 matches 6 at @s positioned ^ ^ ^0.5 if block ~ ~ ~ decorated_pot run effect give @s slowness 3 5 true
-execute if score @s rng8 matches 6 at @s positioned ^ ^ ^0.5 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
+execute if score @s rng8 matches 6 at @s rotated as @s positioned ^ ^ ^0.9 if block ~ ~ ~ decorated_pot run effect give @s slowness 3 5 true
+execute if score @s rng8 matches 6 at @s rotated as @s positioned ^ ^ ^0.9 if block ~ ~ ~ decorated_pot run setblock ~ ~ ~ air destroy
 
 execute if score @s rng8 matches 3 rotated as @s rotated ~ 0 run summon marker ^ ^ ^-3 {Tags:["AzrielMob_boss_legate_sprint_axe_marker","AzrielMob_mob_marker"]}
 
