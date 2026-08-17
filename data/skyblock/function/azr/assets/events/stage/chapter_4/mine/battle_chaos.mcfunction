@@ -202,6 +202,12 @@ execute positioned -79466 31 -431 as @s[scores={rng1=5990..6000}] run scoreboard
 execute positioned -79466 31 -431 as @s[scores={rng1=..6000}] if entity @a[tag=azrPlayer,distance=..20] run scoreboard players set @s rng1 6001
 
 execute as @s[scores={rng1=6001}] run effect give @a[tag=azrPlayer] slowness 5 3 true
-
+execute as @s[scores={rng1=6005}] run stopsound @a[tag=azrShowDialog]
+execute as @s[scores={rng1=6009}] run playsound minecraft:block.glass.break block @a -79465.79 34.22 -430.38 10 0.6
+execute as @s[scores={rng1=6009}] run playsound minecraft:block.end_portal.spawn block @a -79465.79 34.22 -430.38 10 1.2
+execute as @s[scores={rng1=6009}] run particle minecraft:falling_obsidian_tear -79465.94 35.92 -430.38 1 2 0 0 100
+execute as @s[scores={rng1=6009}] run particle minecraft:flame -79465.94 35.92 -430.38 2 2.5 0 0.03 100
+execute as @s[scores={rng1=6009}] run particle minecraft:large_smoke -79465.94 35.92 -430.38 2 2.5 0 0.03 70
+execute as @s[scores={rng1=6009}] run fill -79464 40 -431 -79469 31 -431 air replace nether_portal destroy
 
 
