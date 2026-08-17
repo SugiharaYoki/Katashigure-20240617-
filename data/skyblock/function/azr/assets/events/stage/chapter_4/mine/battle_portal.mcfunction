@@ -1,5 +1,5 @@
 scoreboard players add @s rng1 1
-
+execute as @s[scores={rng1=1}] run fill -79495 30 -405 -79495 32 -406 minecraft:red_stained_glass
 execute as @s[scores={rng1=3}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“见鬼了，你到底是谁？！”",color:"white"}]
 
 execute as @s[scores={rng1=14}] at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
