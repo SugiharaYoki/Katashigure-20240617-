@@ -201,5 +201,7 @@ execute as @s[scores={rng1=5150..6000,rng7=3}] positioned -79466 31 -431 run pla
 execute positioned -79466 31 -431 as @s[scores={rng1=5990..6000}] run scoreboard players set @s rng1 5990
 execute positioned -79466 31 -431 as @s[scores={rng1=..6000}] if entity @a[tag=azrPlayer,distance=..20] run scoreboard players set @s rng1 6001
 
+execute as @s[scores={rng1=6001}] run effect give @a[tag=azrPlayer] slowness 5 3 true
+
 
 
