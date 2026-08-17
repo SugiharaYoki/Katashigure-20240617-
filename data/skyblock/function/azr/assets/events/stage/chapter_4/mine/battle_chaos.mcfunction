@@ -179,12 +179,12 @@ execute as @s[scores={rng1=4054}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDia
 execute as @s[scores={rng1=4070}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“呵……简直就像是迎接我进去一样。”",color:"white"}]
 
 
-execute positioned -79490 29 -405 as @s[scores={rng1=4990..5000}] run scoreboard players set @s rng1 4990
-execute positioned -79490 29 -405 as @s[scores={rng1=..5000}] if entity @a[tag=azrPlayer,distance=..20] run scoreboard players set @s rng1 5001
+execute positioned -79487 29 -405 as @s[scores={rng1=4990..5000}] run scoreboard players set @s rng1 4990
+execute positioned -79487 29 -405 as @s[scores={rng1=..5000}] if entity @a[tag=azrPlayer,distance=..8] run scoreboard players set @s rng1 5001
 execute as @s[scores={rng1=5001}] run effect give @a[tag=azrPlayer] slowness 10 5 true
-execute as @s[scores={rng1=5001}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“……我来过这里。”",color:"white"}]
+execute as @s[scores={rng1=5001}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n（……好眼熟，我来过这里。）",color:"white"}]
 execute as @s[scores={rng1=5015}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute as @s[scores={rng1=5015}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大，我们居然成功过来了！我终于可以回家了！”",color:"white"}]
+execute as @s[scores={rng1=5015}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大，我们居然成功到10区来了！我终于可以回家了！”",color:"white"}]
 execute as @s[scores={rng1=5027}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“是啊，原来这里就是你家附近。那看来，我们俩分别的时刻也要到了。”",color:"white"}]
 execute as @s[scores={rng1=5042}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=5042}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“一路跟老大闯过来，我长了不少见识。和老大的这段旅途我毕生难忘。”",color:"white"}]
