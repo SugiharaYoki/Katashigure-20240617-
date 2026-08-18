@@ -52,8 +52,8 @@ execute as @s[scores={rng1=80}] positioned -79664 21 -422 as @n[distance=..15,ty
 execute as @s[scores={rng1=80}] positioned -79664 21 -422 as @e[distance=..15,type=piglin] at @s run effect clear @s resistance
 execute as @s[scores={rng1=80}] positioned -79664 21 -422 as @e[distance=..15,type=piglin] at @s run effect clear @s slowness
 
-execute as @s[scores={rng1=81..299}] at @n[distance=..15,type=piglin,tag=AzrielMob_piglin_battle_chaos_leader] if entity @a[tag=azrPlayer,distance=..9] run scoreboard players set @s rng1 1101
-execute as @s[scores={rng1=300}] run scoreboard players set @s rng1 2000
+execute as @s[scores={rng1=81..199}] at @n[distance=..15,type=piglin,tag=AzrielMob_piglin_battle_chaos_leader] if entity @a[tag=azrPlayer,distance=..9] run scoreboard players set @s rng1 1101
+execute as @s[scores={rng1=200}] run scoreboard players set @s rng1 2000
 
 execute as @s[scores={rng1=..80}] at @n[distance=..15,type=piglin,tag=AzrielMob_piglin_battle_chaos_leader] if entity @a[tag=azrPlayer,distance=..9] run scoreboard players set @s rng1 1001
 
