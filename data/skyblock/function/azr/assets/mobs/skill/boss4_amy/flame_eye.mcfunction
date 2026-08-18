@@ -33,20 +33,20 @@ execute if score @s AzrEntityTimer matches 1023 rotated as @s run particle falli
 execute if score @s AzrEntityTimer matches 1023 rotated as @s run particle falling_lava ^ ^ ^7.5 0 0 0 0 1
 execute if score @s AzrEntityTimer matches 1023 rotated as @s run particle falling_lava ^ ^ ^8.0 0 0 0 0 1
 execute if score @s AzrEntityTimer matches 1023 rotated as @s run particle falling_lava ^ ^ ^8.5 0 0 0 0 1
-execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^2.0 as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
-execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^2.5 as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
-execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^2.0 as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
-execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^3.5 as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
-execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^4.0 as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
-execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^4.5 as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
-execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^5.0 as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
-execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^5.5 as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
-execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^6.0 as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
-execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^6.5 as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
-execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^7.0 as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
-execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^7.5 as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
-execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^8.0 as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
-execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^8.5 as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
+execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^2.0 positioned ~ ~-0.8 ~ as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
+execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^2.5 positioned ~ ~-0.8 ~ as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
+execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^2.0 positioned ~ ~-0.8 ~ as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
+execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^3.5 positioned ~ ~-0.8 ~ as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
+execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^4.0 positioned ~ ~-0.8 ~ as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
+execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^4.5 positioned ~ ~-0.8 ~ as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
+execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^5.0 positioned ~ ~-0.8 ~ as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
+execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^5.5 positioned ~ ~-0.8 ~ as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
+execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^6.0 positioned ~ ~-0.8 ~ as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
+execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^6.5 positioned ~ ~-0.8 ~ as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
+execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^7.0 positioned ~ ~-0.8 ~ as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
+execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^7.5 positioned ~ ~-0.8 ~ as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
+execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^8.0 positioned ~ ~-0.8 ~ as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
+execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^8.5 positioned ~ ~-0.8 ~ as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
 execute if score @s AzrEntityTimer matches 1010 rotated as @s run playsound minecraft:block.beehive.shear hostile @a ~ ~ ~ 1 0.5
 execute if score @s AzrEntityTimer matches 1023 rotated as @s run playsound minecraft:item.wolf_armor.damage hostile @a ~ ~ ~ 1 0.7
 execute if score @s AzrEntityTimer matches 1030 rotated as @s run tag @s remove prepare_to_fire
