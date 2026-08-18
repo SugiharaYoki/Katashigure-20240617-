@@ -101,6 +101,7 @@ execute as @s[scores={rng1=2001}] run fill -79392 26 -349 -79394 27 -349 air
 execute as @s[scores={rng1=2999..5000}] run scoreboard players set @s rng1 4999
 execute as @s[scores={rng1=..5000}] positioned -79393 26 -340 if entity @a[tag=azrPlayer,distance=..6] run scoreboard players set @s rng1 5001
 
+execute as @s[scores={rng1=5001}] run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage15
 execute as @s[scores={rng1=5001}] run scoreboard players set stage Azr_system 62
 execute as @s[scores={rng1=5001}] run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..17}] Azr_skillPoints 18
 execute as @s[scores={rng1=5001}] run effect give @a[tag=azrPlayer] slowness 20 20 true

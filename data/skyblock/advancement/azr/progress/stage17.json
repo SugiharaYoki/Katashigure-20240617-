@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "血金窟：我曾到访的小镇",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "我和亨利在战斗时可以算得上天作之合。\n但这就足够了。\n让我们的携手战斗活在记忆之中、活在历史之中吧。\n我不能让亨利送死。\n\n无论这条路的末尾是谁等着我，我都知道：\n他绝对不想让我活下去。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:netherrack"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage16"
+}
