@@ -92,6 +92,8 @@ tag @s remove azrPlayer_respawnanchor_unlocked_mine_c
 tag @s remove azrPlayer_respawnanchor_unlocked_cliff_a
 tag @s remove azrPlayer_respawnanchor_unlocked_cliff_b
 
+
+
 #对话重置
 tag @s remove azrPlayer_dialogchoice_revealed_301
 tag @s remove azrPlayer_dialogchoice_revealed_302

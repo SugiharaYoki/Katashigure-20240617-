@@ -39,8 +39,16 @@ execute positioned -79969 -52 -11 if entity @s[scores={Azr_skillPoints=14..}] un
 execute positioned -79969 -52 -11 if entity @s[scores={Azr_skillPoints=14..}] if entity @s[distance=..8] if score @s \
     Azr_Shop matches 40013 positioned -79969 -52 -11 run tp @s ~ ~1 ~
 
+execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_westcourt_a] if score @s \
+    Azr_Shop matches 40001 positioned -79943 37 -8 run tp @s ~ ~1 ~
 
-
+execute if score @s Azr_Shop matches 40020 positioned -79765 -17 -177 if entity @n[tag=AzrielMob_utility_respawn_anchor,distance=..8] run tp @s ~ ~ ~
+execute if score @s Azr_Shop matches 40021 positioned -79742 10 -308 if entity @n[tag=AzrielMob_utility_respawn_anchor,distance=..8] run tp @s ~ ~ ~
+execute if score @s Azr_Shop matches 40022 positioned -79786 43 -288 if entity @n[tag=AzrielMob_utility_respawn_anchor,distance=..8] run tp @s ~ ~ ~
+execute if score @s Azr_Shop matches 40023 positioned -79758 23 -463 if entity @n[tag=AzrielMob_utility_respawn_anchor,distance=..8] run tp @s ~ ~ ~
+execute if score @s Azr_Shop matches 40024 positioned -79712 44 -386 if entity @n[tag=AzrielMob_utility_respawn_anchor,distance=..8] run tp @s ~ ~ ~
+execute if score @s Azr_Shop matches 40025 positioned -79711 30 -486 if entity @n[tag=AzrielMob_utility_respawn_anchor,distance=..8] run tp @s ~ ~ ~
+execute if score @s Azr_Shop matches 40026 positioned -79572 11 -414 if entity @n[tag=AzrielMob_utility_respawn_anchor,distance=..8] run tp @s ~ ~ ~
 
 execute at @s run playsound minecraft:entity.creaking.death player @a ~ ~ ~ 1 0.8
 execute at @s run playsound minecraft:item.chorus_fruit.teleport player @a ~ ~ ~ 1 0.7

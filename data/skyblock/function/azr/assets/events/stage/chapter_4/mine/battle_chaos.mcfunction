@@ -217,6 +217,7 @@ execute positioned -79466 31 -431 as @s[scores={rng1=5990..6000}] run scoreboard
 execute positioned -79466 31 -431 as @s[scores={rng1=..6000}] if entity @a[tag=azrPlayer,distance=..20] run scoreboard players set @s rng1 6001
 
 execute as @s[scores={rng1=6001}] positioned -79465.98 30.00 -423.15 run function skyblock:azr/assets/mobs/utility_respawn_anchor
+execute as @s[scores={rng1=6001}] positioned -79465.98 30.00 -423.15 run tag @n[tag=AzrielMob_utility_respawn_anchor,distance=..10] add AzrielMob_utility_respawn_anchor_teleport_disabled
 execute as @s[scores={rng1=6001}] run effect give @a[tag=azrPlayer] slowness 5 3 true
 execute as @s[scores={rng1=6003}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=6003}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大，多保重啊！”",color:"white"}]

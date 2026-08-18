@@ -43,8 +43,14 @@ execute positioned -79782 2 -270 run setblock ~ ~ ~ waxed_copper_bulb[lit=true]
 execute positioned -79781 2 -270 run setblock ~ ~ ~ waxed_copper_bulb[lit=true]
 execute positioned -79780 2 -270 run setblock ~ ~ ~ waxed_oxidized_copper_bulb[lit=true]
 
-execute positioned -79778 2 -281 if score @s AzrEntityTimer matches 201 positioned -79745 2 -304 run function skyblock:azr/assets/mobs/utility_bat
-execute positioned -79778 2 -281 if score @s AzrEntityTimer matches 201 positioned -79742 10 -308 run function skyblock:azr/assets/mobs/utility_respawn_anchor
+execute positioned -79745 2 -304 run function skyblock:azr/assets/mobs/utility_bat
+
+execute positioned -79765 -17 -177 run function skyblock:azr/assets/mobs/utility_respawn_anchor
+execute positioned -79742 10 -308 run function skyblock:azr/assets/mobs/utility_respawn_anchor
+execute positioned -79786 43 -288 run function skyblock:azr/assets/mobs/utility_respawn_anchor
+execute positioned -79758 23 -463 run function skyblock:azr/assets/mobs/utility_respawn_anchor
+execute positioned -79712 44 -386 run function skyblock:azr/assets/mobs/utility_respawn_anchor
+execute positioned -79711 30 -486 run function skyblock:azr/assets/mobs/utility_respawn_anchor
 
 fill -79774 1 -276 -79774 2 -275 air
 fill -79762 1 -276 -79762 2 -275 air
