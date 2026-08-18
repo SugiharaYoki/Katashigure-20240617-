@@ -966,6 +966,9 @@ item replace block -79379 21 -375 container.12 with gold_nugget 2
 item replace block -79379 21 -375 container.14 with gold_nugget 2
 
 setblock -79371 26 -386 air
+setblock -79356 27 -388 air
+setblock -79356 27 -388 lever[face=wall,facing=east]
+setblock -79337 23 -415 minecraft:obsidian
 
 
 #boss4
