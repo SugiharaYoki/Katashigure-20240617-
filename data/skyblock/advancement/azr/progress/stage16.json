@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "血金窟：混战",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "死伤惨烈。\n无论战况如何，它们有那么多的人呢。\n只要有一方赢了，那就意味着另一方全部阵亡。\n\n我是人类，我死后作为亡魂来到了魔界。\n而魔界的居民呢？他们死后，会发生什么事？\n我不敢问亨利这个问题。\n但我某种程度上知晓答案：他们，大概会完全消逝吧。\n\n这场革命，真的值得他们献出自己的存在本身吗？",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:netherrack"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage15"
+}

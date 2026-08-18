@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "正向规划的超实践突破 - 百夫长 · 采掘组",
+            "color": "red",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "在无尽的战斗之中，我开始思考一个问题：\n在魔界这场反叛中，到底有多少敌人是真为路西法提出的革命战斗？\n我只觉得有许多的士兵是在单纯地宣泄自己的战斗欲望。\n或……杀人欲望。\n\n这个评价同时适用于彼列军与路西法军。\n我希望它不适用于神界军。\n\n我更希望它永远不会适用于我自己。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:piglin_brute_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage16"
+}
