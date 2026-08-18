@@ -185,10 +185,8 @@ execute as @s[scores={rng1=4070}] run tellraw @a[tag=azrShowDialog] [{text:"ф╜ая
 
 execute as @s[scores={rng1=4055}] positioned -79518 26 -406 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_bomb","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute as @s[scores={rng1=4057}] positioned -79518 26 -406 run summon marker ~1 ~ ~1 {Tags:["AzrielMob_summon_delay_marker_skeleton_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=4059}] positioned -79518 26 -406 run summon marker ~3 ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute as @s[scores={rng1=4061}] positioned -79518 26 -406 run summon marker ~4 ~ ~1 {Tags:["AzrielMob_summon_delay_marker_skeleton_bomb","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute as @s[scores={rng1=4065}] positioned -79518 26 -406 run summon marker ~ ~ ~1 {Tags:["AzrielMob_summon_delay_marker_skeleton_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute as @s[scores={rng1=4067}] positioned -79518 26 -406 run summon marker ~1 ~ ~0 {Tags:["AzrielMob_summon_delay_marker_skeleton_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute as @s[scores={rng1=4069}] positioned -79518 26 -406 run summon marker ~3 ~ ~1 {Tags:["AzrielMob_summon_delay_marker_skeleton_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute as @s[scores={rng1=4071}] positioned -79518 26 -406 run summon marker ~4 ~ ~0 {Tags:["AzrielMob_summon_delay_marker_skeleton_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
