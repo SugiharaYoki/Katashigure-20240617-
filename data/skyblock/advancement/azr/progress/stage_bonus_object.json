@@ -1,17 +1,17 @@
 {
     "display": {
         "title": {
-            "text": "绯红森林区域 - 矿山山麓的熔岩洞穴",
+            "text": "绯烟林场 - 连通矿洞入口的隧道",
             "color": "green",
             "bold": true,
             "italic": false
         },
         "description": {
-            "text": "STAGE OBJECT",
-            "color": "light_purple"
+            "text": "我原本以为这里是路西法军的陷阱。\n后来我又误认为这里是彼列军的陷阱。\n看来两者都不是：他们单纯是守在了两边，看哪个倒霉蛋先踏过界限。\n\n倒霉蛋是我，我不属于两方的任何一者。\n这也导致他们打起我来齐心协力。\n妈的。",
+            "color": "white"
         },
         "icon": {
-            "id": "minecraft:cyan_glazed_terracotta"
+            "id": "minecraft:black_glazed_terracotta"
         },
         "frame": "task",
         "show_toast": false,
@@ -23,5 +23,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "skyblock:azr/progress/stage13"
+    "parent": "skyblock:azr/progress/stage15"
 }

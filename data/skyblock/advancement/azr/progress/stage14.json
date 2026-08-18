@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "绯烟林场：防空洞",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "第11辖区并非战场的中心地带。\n但这也使得我对魔界的战斗产生疑虑。\n这场革命战究竟打得多惨烈？",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:crimson_stem"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage13"
+}

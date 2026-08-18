@@ -1,5 +1,6 @@
 scoreboard players add @s rng1 1
 
+execute as @s[scores={rng1=1}] run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage15
 execute as @s[scores={rng1=1}] positioned -79711 30 -486 run function skyblock:azr/assets/mobs/utility_respawn_anchor
 
 execute as @s[scores={rng1=4}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9

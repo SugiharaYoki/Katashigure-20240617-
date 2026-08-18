@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "绯烟林场：前线",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "战火声此起彼伏，无法辨别那些人到底正位于哪里激烈作战。\n路西法的反抗军并没有像我预料的那样平推彼列军的防线。\n那为什么路西法会选择在这时候双线对战彼列政权与神庭？\n事态真的有紧急到这种程度吗？",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:crimson_stem"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage14"
+}

@@ -60,3 +60,4 @@ execute as @s[scores={rng1=60}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪
 execute as @s[scores={rng1=77}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“那还挺省事的。”",color:"white"}]
 
 
+execute as @s[scores={rng1=100}] run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage14
