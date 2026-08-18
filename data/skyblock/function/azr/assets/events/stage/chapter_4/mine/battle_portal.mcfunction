@@ -101,18 +101,23 @@ execute as @s[scores={rng1=2001}] run fill -79392 26 -349 -79394 27 -349 air
 execute as @s[scores={rng1=2999..5000}] run scoreboard players set @s rng1 4999
 execute as @s[scores={rng1=..5000}] positioned -79393 26 -340 if entity @a[tag=azrPlayer,distance=..6] run scoreboard players set @s rng1 5001
 
-execute as @s[scores={rng1=5001}] run effect give @a[tag=azrPlayer] slowness 20 15 true
+execute as @s[scores={rng1=5001}] run effect give @a[tag=azrPlayer] slowness 20 20 true
 execute as @s[scores={rng1=5001}] run scoreboard players set @n[tag=AzrielTrader_pig_henry] AzrielNPC_FollowInterest 0
 
-execute as @s[scores={rng1=5007}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“亨利，你就到这里吧。”",color:"white"}]
-execute as @s[scores={rng1=5017}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute as @s[scores={rng1=5017}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大……”",color:"white"}]
-execute as @s[scores={rng1=5028}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“你找个地方躲起来，要躲得天衣无缝。”",color:"white"}]
-execute as @s[scores={rng1=5039}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“然后……谢谢你陪我走到这里。我们，有缘再见。”",color:"white"}]
-execute as @s[scores={rng1=5051}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute as @s[scores={rng1=5051}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“……有缘再见，",color:"white"},{bold: false,selector:"@p[tag=azrPlayer]",color:"white"},{bold: false,text:"老大。”",color:"white"}]
-execute as @s[scores={rng1=5081}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute as @s[scores={rng1=5081}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog,distance=..10] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“要保重啊……”",color:"white"}]
+execute as @s[scores={rng1=5001}] as @a[tag=azrPlayer] at @s run playsound minecraft:entity.pillager.ambient master @s ~ ~ ~ 0.3 0.8
+execute as @s[scores={rng1=5001}] run tellraw @a[tag=azrShowDialog] [{text:"默尔森的灵能传话：",color:"yellow",bold:1b},{bold: false,text:"\n“爱理莎小姐，你所在处的前方有极其强烈的魔力波动。”",color:"white"}]
+execute as @s[scores={rng1=5013}] as @a[tag=azrPlayer] at @s run playsound minecraft:entity.pillager.ambient master @s ~ ~ ~ 0.3 0.8
+execute as @s[scores={rng1=5013}] run tellraw @a[tag=azrShowDialog] [{text:"默尔森的灵能传话：",color:"yellow",bold:1b},{bold: false,text:"\n“我不确定你能不能听见这条消息，但切记：一定要小心，对面不是等闲之辈。”",color:"white"}]
+
+execute as @s[scores={rng1=5027}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“亨利，你就到这里吧。”",color:"white"}]
+execute as @s[scores={rng1=5037}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=5037}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大……”",color:"white"}]
+execute as @s[scores={rng1=5048}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“你找个地方躲起来，要躲得天衣无缝。”",color:"white"}]
+execute as @s[scores={rng1=5059}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“然后……谢谢你陪我走到这里。我们，有缘再见。”",color:"white"}]
+execute as @s[scores={rng1=5071}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=5071}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“……有缘再见，",color:"white"},{bold: false,selector:"@p[tag=azrPlayer]",color:"white"},{bold: false,text:"老大。”",color:"white"}]
+execute as @s[scores={rng1=5101}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute as @s[scores={rng1=5101}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog,distance=..10] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“要保重啊……”",color:"white"}]
 
 execute as @s[scores={rng1=5020..6000}] as @n[tag=AzrielTrader_pig_henry] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
