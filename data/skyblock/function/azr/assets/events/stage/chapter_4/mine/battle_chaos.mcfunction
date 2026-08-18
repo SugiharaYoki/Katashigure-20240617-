@@ -168,9 +168,9 @@ execute as @s[scores={rng1=4017}] at @n[tag=AzrielTrader_pig_henry] run playsoun
 execute as @s[scores={rng1=4017}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“不太像是魔界的生物啊。”",color:"white"}]
 execute as @s[scores={rng1=4032}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“如果它出现了……那说明默尔森已经到我们附近了。”",color:"white"}]
 
-execute as @s[scores={rng1=4033..4034}] positioned -79572 11 -414 if entity @a[tag=azrPlayer,distance=..8] run scoreboard players set @s rng1 4036
+execute as @s[scores={rng1=4033..4034}] positioned -79536 24 -406 if entity @a[tag=azrPlayer,distance=..8] run scoreboard players set @s rng1 4036
 execute as @s[scores={rng1=4033..4034}] run scoreboard players set @s rng1 4033
-execute as @s[scores={rng1=..4000}] positioned -79572 11 -414 if entity @a[tag=azrPlayer,distance=..8] unless entity @n[type=minecraft:parrot,tag=AzrielNPC_bird,distance=..30] run scoreboard players set @s rng1 4036
+execute as @s[scores={rng1=..4000}] positioned -79536 24 -406 if entity @a[tag=azrPlayer,distance=..8] unless entity @n[type=minecraft:parrot,tag=AzrielNPC_bird,distance=..30] run scoreboard players set @s rng1 4036
 
 execute as @s[scores={rng1=4037}] run fill -79533 26 -406 -79533 26 -405 air
 execute as @s[scores={rng1=4038}] run fill -79533 27 -406 -79533 27 -405 air

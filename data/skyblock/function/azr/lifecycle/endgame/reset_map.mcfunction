@@ -972,6 +972,11 @@ setblock -79337 23 -415 minecraft:obsidian
 
 fill -79392 26 -349 -79394 27 -349 iron_bars
 
+setblock -79370 24 -407 minecraft:decorated_pot{sherds:["explorer_pottery_sherd","explorer_pottery_sherd","explorer_pottery_sherd","explorer_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
+
+
+
+
 
 #boss4
 fill -79519 42 -321 -79553 42 -355 air replace fire
