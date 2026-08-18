@@ -15,3 +15,9 @@ tp @a[tag=azrPlayer] -79984.03 40.00 -14.01 facing -79983.03 40.00 -14.01
 #give @a[tag=azrPlayer] gunpowder 1
 #give @a[tag=azrPlayer] pumpkin_pie 8
 
+fill -79372 26 -373 -79370 26 -373 air
+fill -79372 27 -373 -79370 27 -373 air
+fill -79409 30 -396 -79409 32 -398 red_stained_glass
+
+
+

@@ -266,9 +266,6 @@ execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 4
 execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 40.00 -14.01 run playsound block.beacon.deactivate ambient @a ~ ~ ~ 2 0.8
 execute if score Azr_Story_Introduction rng1 matches 1024..1034 positioned -79984.03 40.00 -14.01 run particle trial_spawner_detection ~ ~ ~ 2 0 2 0 40
 
-execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 40.00 -14.01 run fill -79952 41 -20 -79955 38 -20 minecraft:quartz_block
-execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 40.00 -14.01 run fill -79952 39 -20 -79955 39 -20 minecraft:quartz_bricks
-execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 40.00 -14.01 run fill -79948 38 -16 -79948 42 -13 air destroy
 execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79977 8 61 run summon minecraft:glow_item_frame ~ ~ ~ {Invisible:1b,Fixed:0b,Invulnerable:0b,Facing:1b,Item:{id:"minecraft:nether_star",components:{custom_name:{text:"下界命星",color:"yellow",italic:0b},custom_data:{revival_star:true},custom_model_data:{floats:[100001.0]}}}}
 execute if score Azr_Story_Introduction rng1 matches 1025 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:sword}
 
