@@ -11,7 +11,7 @@
             "color": "white"
         },
         "icon": {
-            "id": "minecraft:netherrack"
+            "id": "minecraft:magma_block"
         },
         "frame": "goal",
         "show_toast": false,
