@@ -7,6 +7,8 @@ execute as @s[scores={rng1=1}] run bossbar set azr:boss_hp_bar max 100
 execute as @s[scores={rng1=1}] run bossbar set azr:boss_hp_bar value 100
 execute as @s[scores={rng1=1}] run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 
+execute as @s[scores={rng1=1}] as @n[tag=AzrielMob_demon_amy,distance=..100,type=piglin_brute] at @s if entity @s[x=-79535,y=23,z=-505,dx=200,dy=4,dz=200] run tp @s -79466.06 30.00 -405.32
+
 execute as @s[scores={rng1=1}] run fill -79495 30 -405 -79495 32 -406 minecraft:red_stained_glass
 execute as @s[scores={rng1=3}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“见鬼了，你是谁？！”",color:"white"}]
 
