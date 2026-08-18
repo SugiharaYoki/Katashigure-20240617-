@@ -69,17 +69,17 @@ execute if score @s rng1 matches 72 run scoreboard players set @s rng1 102
 #execute if score @s rng1 matches 101 rotated as @s positioned ^ ^ ^1.5 as @a[tag=azrPlayer,distance=..1.0] run damage @s 6 sonic_boom
 execute if score @s rng1 matches 102 rotated as @s positioned ^ ^ ^2.0 run particle sonic_boom ~ ~ ~ 0 0 0 0 1 force
 execute if score @s rng1 matches 102 rotated as @s positioned ^ ^ ^2.0 run playsound entity.warden.sonic_boom hostile @a ~ ~ ~ 1 1.3
-execute if score @s rng1 matches 102 rotated as @s positioned ^ ^ ^2.0 as @a[tag=azrPlayer,distance=..1.0] run damage @s 6 sonic_boom
+execute if score @s rng1 matches 102 rotated as @s positioned ^ ^ ^2.0 as @a[tag=azrPlayer,distance=..1.0] run damage @s 8 sonic_boom
 execute if score @s rng1 matches 103 rotated as @s positioned ^ ^ ^2.5 run particle sonic_boom ~ ~ ~ 0 0 0 0 1 force
-execute if score @s rng1 matches 103 rotated as @s positioned ^ ^ ^2.5 as @a[tag=azrPlayer,distance=..1.0] run damage @s 6 sonic_boom
+execute if score @s rng1 matches 103 rotated as @s positioned ^ ^ ^2.5 as @a[tag=azrPlayer,distance=..1.0] run damage @s 8 sonic_boom
 execute if score @s rng1 matches 104 rotated as @s positioned ^ ^ ^3.0 run particle sonic_boom ~ ~ ~ 0 0 0 0 1 force
-execute if score @s rng1 matches 104 rotated as @s positioned ^ ^ ^3.0 as @a[tag=azrPlayer,distance=..1.0] run damage @s 6 sonic_boom
+execute if score @s rng1 matches 104 rotated as @s positioned ^ ^ ^3.0 as @a[tag=azrPlayer,distance=..1.0] run damage @s 8 sonic_boom
 execute if score @s rng1 matches 105 rotated as @s positioned ^ ^ ^3.5 run particle sonic_boom ~ ~ ~ 0 0 0 0 1 force
-execute if score @s rng1 matches 105 rotated as @s positioned ^ ^ ^3.5 as @a[tag=azrPlayer,distance=..1.0] run damage @s 6 sonic_boom
+execute if score @s rng1 matches 105 rotated as @s positioned ^ ^ ^3.5 as @a[tag=azrPlayer,distance=..1.0] run damage @s 7 sonic_boom
 execute if score @s rng1 matches 106 rotated as @s positioned ^ ^ ^4.0 run particle sonic_boom ~ ~ ~ 0 0 0 0 1 force
-execute if score @s rng1 matches 106 rotated as @s positioned ^ ^ ^4.0 as @a[tag=azrPlayer,distance=..1.0] run damage @s 6 sonic_boom
+execute if score @s rng1 matches 106 rotated as @s positioned ^ ^ ^4.0 as @a[tag=azrPlayer,distance=..1.0] run damage @s 7 sonic_boom
 execute if score @s rng1 matches 107 rotated as @s positioned ^ ^ ^4.5 run particle sonic_boom ~ ~ ~ 0 0 0 0 1 force
-execute if score @s rng1 matches 107 rotated as @s positioned ^ ^ ^4.5 as @a[tag=azrPlayer,distance=..1.0] run damage @s 6 sonic_boom
+execute if score @s rng1 matches 107 rotated as @s positioned ^ ^ ^4.5 as @a[tag=azrPlayer,distance=..1.0] run damage @s 7 sonic_boom
 execute if score @s rng1 matches 108 rotated as @s positioned ^ ^ ^5.0 run particle sonic_boom ~ ~ ~ 0 0 0 0 1 force
 execute if score @s rng1 matches 108 rotated as @s positioned ^ ^ ^5.0 run playsound entity.warden.sonic_boom hostile @a ~ ~ ~ 1 1.3
 execute if score @s rng1 matches 108 rotated as @s positioned ^ ^ ^5.0 as @a[tag=azrPlayer,distance=..1.0] run damage @s 6 sonic_boom

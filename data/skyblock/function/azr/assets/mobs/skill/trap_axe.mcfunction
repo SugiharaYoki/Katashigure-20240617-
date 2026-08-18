@@ -5,7 +5,9 @@ scoreboard players add @s rng1 1
 execute if block ~ ~-0.1 ~ air run tp @s ~ ~-0.1 ~
 execute if block ~ ~-0.1 ~ air run tp @s ~ ~-0.1 ~
 
-execute if score @s rng1 matches 20.. as @a[tag=azrPlayer,distance=..1.2] at @s run damage @s 12 mob_attack
+execute if score AzrielC_danger rng1 matches ..4 if score @s rng1 matches 20.. as @a[tag=azrPlayer,distance=..1.2] at @s run damage @s 8 mob_attack
+execute if score AzrielC_danger rng1 matches 5..8 if score @s rng1 matches 20.. as @a[tag=azrPlayer,distance=..1.2] at @s run damage @s 12 mob_attack
+execute if score AzrielC_danger rng1 matches 9.. if score @s rng1 matches 20.. as @a[tag=azrPlayer,distance=..1.2] at @s run damage @s 16 mob_attack
 
 execute if score @s rng1 matches 23.. run kill @s
 
