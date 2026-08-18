@@ -156,13 +156,13 @@ execute as @s[scores={rng1=3128}] run tellraw @a[tag=azrShowDialog,tag=AzrSariel
 execute as @s[scores={rng1=3138}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=3138}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“不管如何……老大，我会一直支持你。”",color:"white"}]
 
-execute as @s[scores={rng1=3138}] positioned -79572 11 -414 run function skyblock:azr/assets/mobs/utility_respawn_anchor
-execute as @s[scores={rng1=3138}] positioned -79572 11 -414 run tp @n[type=minecraft:parrot,tag=AzrielNPC_bird] -79540 24 -406
+execute as @s[scores={rng1=3001}] positioned -79572 11 -414 run function skyblock:azr/assets/mobs/utility_respawn_anchor
+execute as @s[scores={rng1=3001}] positioned -79572 11 -414 run tp @n[type=minecraft:parrot,tag=AzrielNPC_bird] -79540 24 -406
 execute as @s[scores={rng1=3138}] run scoreboard players set stage Azr_system 60
 
 execute as @s[scores={rng1=3990..4000}] run scoreboard players set @s rng1 3990
 execute as @s[scores={rng1=..4000}] as @a[tag=azrPlayer] at @s if entity @n[type=minecraft:parrot,tag=AzrielNPC_bird,distance=..8] run scoreboard players set @s rng1 4001
-execute as @s[scores={rng1=..4000}] positioned -79572 11 -414 if entity @a[tag=azrPlayer,distance=..8] unless entity @n[type=minecraft:parrot,tag=AzrielNPC_bird,distance=..30] run scoreboard players set @s rng1 4001
+execute as @s[scores={rng1=..4000}] positioned -79572 11 -414 if entity @a[tag=azrPlayer,distance=..8] unless entity @n[type=minecraft:parrot,tag=AzrielNPC_bird,distance=..30] run scoreboard players set @s rng1 4035
 
 execute as @s[scores={rng1=4002}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“这只鸟……我见过。”",color:"white"}]
 execute as @s[scores={rng1=4017}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
