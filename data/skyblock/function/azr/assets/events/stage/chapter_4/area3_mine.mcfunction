@@ -23,7 +23,9 @@ execute positioned -79466 29 -405 as @n[tag=AzrielMarker_encounter,distance=0..0
 execute positioned -79337 23 -415 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..5] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79337 23 -415 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 100.. run function skyblock:azr/assets/events/stage/chapter_4/mine/conv_crying_obsidian
 
-
+#互传
+execute as @a[x=-79408,y=25,z=-333,dx=5,dy=5,dz=5] at @s run tp @s ~-41 ~27 ~-410
+execute as @a[x=-79440,y=52,z=-747,dx=5,dy=5,dz=5] at @s run tp @s ~41 ~-27 ~410
 
 
 
