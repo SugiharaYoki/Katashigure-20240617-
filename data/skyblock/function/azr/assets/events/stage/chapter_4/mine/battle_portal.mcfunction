@@ -42,6 +42,11 @@ execute as @s[scores={rng1=1001}] run stopsound @a[tag=azrShowDialog] music mine
 execute as @s[scores={rng1=1128}] run fill -79495 30 -405 -79495 32 -406 air replace red_stained_glass destroy
 execute as @s[scores={rng1=1128}] run fill -79409 30 -398 -79409 32 -396 air replace red_stained_glass destroy
 
+execute as @s[scores={rng1=1128}] run setblock -79371 26 -386 waxed_copper_chest[facing=east]{Inventory:[]}
+execute as @s[scores={rng1=1128}] run item replace block -79371 26 -386 container.11 with pumpkin_pie 3
+execute as @s[scores={rng1=1128}] run item replace block -79371 26 -386 container.13 with pumpkin_pie 3
+execute as @s[scores={rng1=1128}] run item replace block -79371 26 -386 container.15 with pumpkin_pie 3
+
 execute as @s[scores={rng1=1006}] positioned -79465.98 30.00 -423.15 run kill @n[tag=AzrielMob_utility_respawn_anchor,distance=..10]
 execute as @s[scores={rng1=1006}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“等等……似乎比我想得要好对付很多？”",color:"white"}]
 execute as @s[scores={rng1=1015}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9

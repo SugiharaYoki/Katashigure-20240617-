@@ -961,6 +961,13 @@ fill -79464 40 -431 -79469 31 -431 minecraft:obsidian replace minecraft:crying_o
 fill -79464 40 -431 -79469 31 -431 minecraft:nether_portal[axis=x] replace minecraft:air
 fill -79495 30 -405 -79495 32 -406 air
 
+setblock -79379 21 -375 waxed_copper_chest[facing=east]{Inventory:[]}
+item replace block -79379 21 -375 container.12 with gold_nugget 2
+item replace block -79379 21 -375 container.14 with gold_nugget 2
+
+setblock -79371 26 -386 air
+
+
 #boss4
 fill -79519 42 -321 -79553 42 -355 air replace fire
 clone -79555 32 -352 -79517 32 -319 -79555 41 -352
