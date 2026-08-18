@@ -53,8 +53,8 @@ execute as @s[scores={rng1=1063}] at @n[tag=AzrielTrader_pig_henry] run playsoun
 execute as @s[scores={rng1=1063}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“可是老大，我们明明配合得特别好！而且你看，我也没怎么受伤……”",color:"white"}]
 execute as @s[scores={rng1=1077}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“如果你真的珍惜和我在一起的时间，很看重我……那你也一定要相信我的经验。”",color:"white"}]
 execute as @s[scores={rng1=1090}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“我对接下来要发生的事有很不好的预感，而我最不想看到的事情就是我的战友去送死。”",color:"white"}]
-execute as @s[scores={rng1=1102}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“无论如何……你还有家人吧，你还有自己的日子要过吧。我是一个亡魂，我是要杀回神庭的，我还能无数次复活。”",color:"white"}]
-execute as @s[scores={rng1=1116}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“不要为了我去拼上性命。”",color:"white"}]
+execute as @s[scores={rng1=1102}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“无论如何……你还有家人吧，你还有自己的日子要过吧。我是一个亡魂，我是要杀回神庭的，你不可能跟着我去。而且，我还能无数次复活。”",color:"white"}]
+execute as @s[scores={rng1=1116}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“你是血肉之躯，你死了一切就完了。不要为了我去拼上性命。”",color:"white"}]
 execute as @s[scores={rng1=1132}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=1132}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大……”",color:"white"}]
 execute as @s[scores={rng1=1150}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
