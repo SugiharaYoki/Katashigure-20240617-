@@ -49,7 +49,7 @@ execute positioned -79765 -17 -177 run function skyblock:azr/assets/mobs/utility
 execute positioned -79742 10 -308 run function skyblock:azr/assets/mobs/utility_respawn_anchor
 execute positioned -79786 43 -288 run function skyblock:azr/assets/mobs/utility_respawn_anchor
 execute positioned -79758 23 -463 run function skyblock:azr/assets/mobs/utility_respawn_anchor
-execute positioned -79712 44 -386 run function skyblock:azr/assets/mobs/utility_respawn_anchor
+execute if entity @a[tag=azrPlayer,tag=AZS_BoS08] positioned -79712 44 -386 run function skyblock:azr/assets/mobs/utility_respawn_anchor
 execute positioned -79711 30 -486 run function skyblock:azr/assets/mobs/utility_respawn_anchor
 
 fill -79774 1 -276 -79774 2 -275 air
