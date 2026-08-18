@@ -28,7 +28,7 @@ execute if entity @s[tag=AZR_in_nether_teleportation] positioned -79338 23 -414 
 
 
 
-
+say hi
 
 
 
