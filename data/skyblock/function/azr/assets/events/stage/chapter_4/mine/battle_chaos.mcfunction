@@ -161,7 +161,7 @@ execute as @s[scores={rng1=3001}] positioned -79572 11 -414 run tp @n[type=minec
 execute as @s[scores={rng1=3138}] run scoreboard players set stage Azr_system 60
 
 execute as @s[scores={rng1=3990..4000}] run scoreboard players set @s rng1 3990
-execute as @s[scores={rng1=..4000}] as @a[tag=azrPlayer] at @s if entity @n[type=minecraft:parrot,tag=AzrielNPC_bird,distance=..8] run scoreboard players set @s rng1 4001
+execute as @s[scores={rng1=..4000}] as @a[tag=azrPlayer] at @s if entity @n[type=minecraft:parrot,tag=AzrielNPC_bird,distance=..8] positioned -79681 22 -423 run scoreboard players set @n[tag=AzrielMarker_encounter] rng1 4001
 
 execute as @s[scores={rng1=4002}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“这只鸟……我见过。”",color:"white"}]
 execute as @s[scores={rng1=4017}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
