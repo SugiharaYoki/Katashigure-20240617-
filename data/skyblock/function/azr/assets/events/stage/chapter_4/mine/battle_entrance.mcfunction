@@ -18,6 +18,9 @@ execute as @s[scores={rng1=1}] positioned -79692 22 -415 run function skyblock:a
 execute as @s[scores={rng1=1}] positioned -79692 22 -414 run function skyblock:azr/assets/mobs/skeleton_melee
 execute as @s[scores={rng1=1}] positioned -79692 22 -416 run function skyblock:azr/assets/mobs/skeleton_melee
 
+#深处
+execute as @s[scores={rng1=1}] positioned -79583 10 -418 run function skyblock:azr/assets/mobs/magma_cube_block
+execute as @s[scores={rng1=1}] positioned -79569 10 -418 run function skyblock:azr/assets/mobs/magma_cube_block
 
 
 #混战初始准备
