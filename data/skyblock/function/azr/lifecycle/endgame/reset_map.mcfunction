@@ -974,13 +974,8 @@ fill -79392 26 -349 -79394 27 -349 iron_bars
 
 setblock -79370 24 -407 minecraft:decorated_pot{sherds:["explorer_pottery_sherd","explorer_pottery_sherd","explorer_pottery_sherd","explorer_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 
-
-
-
-
 #boss4
-fill -79519 42 -321 -79553 42 -355 air replace fire
-clone -79555 32 -352 -79517 32 -319 -79555 41 -352
+clone -79555 32 -752 -79517 33 -719 -79555 41 -752
 
 
 
@@ -1036,18 +1031,7 @@ clone -79555 32 -352 -79517 32 -319 -79555 41 -352
 #fill -79420 37 -364 -79491 39 -503 minecraft:lantern replace minecraft:soul_lantern
 #fill -79470 32 -429 -79463 35 -432 crimson_stem[axis=y] replace warped_stem
 #fill -79468 31 -430 -79465 31 -432 crimson_stem[axis=x] replace warped_stem
-fill -79466 81 -422 -79467 88 -422 blackstone
-fill -79467 81 -399 -79465 88 -399 blackstone
-fill -79463 80 -377 -79469 80 -378 air
-fill -79468 80 -371 -79464 80 -371 air
-fill -79468 80 -373 -79464 80 -373 air
-fill -79463 82 -378 -79469 82 -378 barrier
-fill -79467 86 -341 -79465 86 -341 barrier
-fill -79519 42 -321 -79553 42 -355 air replace fire
 
-fill -79465 84 -342 -79467 84 -334 glass
-fill -79470 84 -337 -79462 84 -339 glass
-fill -79460 64 -343 -79471 64 -332 black_concrete replace air
 #______________________________________________________________#
 forceload remove -80000 -400 -79800 -200
 forceload remove -80000 -200 -79800 000
