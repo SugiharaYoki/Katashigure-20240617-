@@ -947,11 +947,11 @@ item replace block -79588 8 -427 container.12 with gold_nugget 2
 item replace block -79588 8 -427 container.14 with gold_nugget 2
 
 #百夫长·采掘队 boss legate
-fill -79584 5 -468 -79583 5 -467 minecraft:decorated_pot
-fill -79568 5 -474 -79569 5 -473 minecraft:decorated_pot
-fill -79572 5 -479 -79573 5 -478 minecraft:decorated_pot
-fill -79572 5 -466 -79571 5 -467 minecraft:decorated_pot
-fill -79585 5 -474 -79586 5 -475 minecraft:decorated_pot
+fill -79584 5 -468 -79583 5 -467 minecraft:decorated_pot{item:{count: 1, id:"minecraft:gold_nugget"}}
+fill -79568 5 -474 -79569 5 -473 minecraft:decorated_pot{item:{count: 1, id:"minecraft:gold_nugget"}}
+fill -79572 5 -479 -79573 5 -478 minecraft:decorated_pot{item:{count: 1, id:"minecraft:gold_nugget"}}
+fill -79572 5 -466 -79571 5 -467 minecraft:decorated_pot{item:{count: 1, id:"minecraft:gold_nugget"}}
+fill -79585 5 -474 -79586 5 -475 minecraft:decorated_pot{item:{count: 1, id:"minecraft:gold_nugget"}}
 fill -79575 10 -451 -79575 13 -451 air
 
 
