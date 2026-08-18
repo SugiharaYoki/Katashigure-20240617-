@@ -63,8 +63,8 @@ execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^8.
 execute if score @s AzrEntityTimer matches 1023 rotated as @s positioned ^ ^ ^8.5 positioned ~ ~-0.8 ~ as @a[distance=..1.5,tag=azrPlayer] at @s run damage @s 8.5 in_fire
 execute if score @s AzrEntityTimer matches 1010 rotated as @s run playsound minecraft:block.beehive.shear hostile @a ~ ~ ~ 1 0.5
 execute if score @s AzrEntityTimer matches 1023 rotated as @s run playsound minecraft:item.wolf_armor.damage hostile @a ~ ~ ~ 1 0.7
-execute if score @s AzrEntityTimer matches 1030 rotated as @s run tag @s remove prepare_to_fire
-execute if score @s AzrEntityTimer matches 1030 rotated as @s run scoreboard players set @s AzrEntityTimer -60
+execute if score @s AzrEntityTimer matches 1030.. run tag @s remove prepare_to_fire
+execute if score @s AzrEntityTimer matches 1030.. run scoreboard players set @s AzrEntityTimer -60
 
 execute unless entity @s[tag=prepare_to_fire] at @s unless entity @n[type=piglin_brute,tag=AzrielMob_demon_amy,distance=..20] run tp @s @n[tag=AzrielMob_demon_amy,distance=..20]
 execute at @s unless entity @n[type=piglin_brute,tag=AzrielMob_demon_amy,distance=..200] run kill @s
