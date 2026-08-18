@@ -27,7 +27,11 @@ execute positioned -79337 23 -415 as @n[tag=AzrielMarker_encounter,distance=0..0
 execute as @a[x=-79408,y=25,z=-333,dx=5,dy=5,dz=5] at @s run tp @s ~-41 ~27 ~-410
 execute as @a[x=-79440,y=52,z=-747,dx=5,dy=5,dz=5] at @s run tp @s ~41 ~-27 ~410
 
-
+#亨利复活
+execute positioned -79337 23 -415 unless entity @n[tag=AzrielTrader_pig_henry,distance=..1000,type=piglin] positioned -79793 -6 -277 run function skyblock:azr/assets/mobs/unique/trader/pig_henry
+execute positioned -79337 23 -415 unless entity @n[tag=AzrielTrader_pig_henry,distance=..1000,type=piglin] positioned -79793 -6 -277 as @n[tag=AzrielTrader_pig_henry] unless score @s rng1 matches 137.. run scoreboard players set @n[tag=AzrielTrader_pig_henry] AzrielNPC_FollowInterest 999999
+execute positioned -79337 23 -415 unless entity @n[tag=AzrielTrader_pig_henry,distance=..1000,type=piglin] positioned -79793 -6 -277 as @n[tag=AzrielTrader_pig_henry] unless score @s rng1 matches 137.. run scoreboard players set @s rng1 137
+execute positioned -79337 23 -415 unless entity @n[tag=AzrielTrader_pig_henry,distance=..1000,type=piglin] positioned -79793 -6 -277 as @n[tag=AzrielTrader_pig_henry] unless score @s rng2 matches 9999.. run scoreboard players set @s rng2 9999
 
 
 
