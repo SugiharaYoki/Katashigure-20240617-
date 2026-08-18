@@ -195,7 +195,7 @@ execute as @s[scores={rng1=4071}] positioned -79518 26 -406 run summon marker ~4
 
 execute positioned -79487 29 -405 as @s[scores={rng1=4990..5000}] run scoreboard players set @s rng1 4990
 execute positioned -79487 29 -405 as @s[scores={rng1=..5000}] if entity @a[tag=azrPlayer,distance=..8] run scoreboard players set @s rng1 5001
-execute as @s[scores={rng1=5001}] run effect give @a[tag=azrPlayer] slowness 15 5 true
+execute as @s[scores={rng1=5001}] run effect give @a[tag=azrPlayer] slowness 20 5 true
 execute as @s[scores={rng1=5001}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n（……好眼熟，我来过这里。）",color:"white"}]
 execute as @s[scores={rng1=5015}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=5015}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大，我们居然成功到10区来了！我终于可以回家了！”",color:"white"}]
