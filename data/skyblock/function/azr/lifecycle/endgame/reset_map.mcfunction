@@ -970,6 +970,8 @@ setblock -79356 27 -388 air
 setblock -79356 27 -388 lever[face=wall,facing=east]
 setblock -79337 23 -415 minecraft:obsidian
 
+fill -79392 26 -349 -79394 27 -349 iron_bars
+
 
 #boss4
 fill -79519 42 -321 -79553 42 -355 air replace fire

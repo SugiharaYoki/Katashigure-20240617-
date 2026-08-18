@@ -93,7 +93,7 @@ execute as @s[scores={rng1=2308}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDia
 execute as @s[scores={rng1=2318}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“我总觉得哪里有些说不上来的微妙。或许我对神庭、魔界的看法都是错的，我总感觉我被算计了。”",color:"white"}]
 execute as @s[scores={rng1=2330}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“而且并不是被魔界给算计的。真正一直在利用我的人，恐怕是神庭的那些天使。”",color:"white"}]
 
-
+execute as @s[scores={rng1=2001}] run fill -79392 26 -349 -79394 27 -349 air
 
 
 
