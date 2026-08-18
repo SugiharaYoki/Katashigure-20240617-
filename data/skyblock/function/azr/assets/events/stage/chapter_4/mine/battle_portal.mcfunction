@@ -37,6 +37,7 @@ execute as @s[scores={rng1=1001}] run stopsound @a[tag=azrShowDialog] music mine
 execute as @s[scores={rng1=1128}] run fill -79495 30 -405 -79495 32 -406 air replace red_stained_glass destroy
 execute as @s[scores={rng1=1128}] run fill -79409 30 -398 -79409 32 -396 air replace red_stained_glass destroy
 
+execute as @s[scores={rng1=1006}] positioned -79465.98 30.00 -423.15 run kill @n[tag=AzrielMob_utility_respawn_anchor,distance=..10]
 execute as @s[scores={rng1=1006}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“等等……似乎比我想得要好对付很多？”",color:"white"}]
 execute as @s[scores={rng1=1015}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=1015}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大你没事吧！刚刚我看哗啦一下传送门就碎了，然后轰隆轰隆的声音响起来，地板就开始爆炸，然后敌人就已经站到你面前了！”",color:"white"}]
