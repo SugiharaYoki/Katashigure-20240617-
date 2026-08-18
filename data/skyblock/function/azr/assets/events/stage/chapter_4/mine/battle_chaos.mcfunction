@@ -208,7 +208,7 @@ execute as @s[scores={rng1=5072}] run tellraw @a[tag=azrShowDialog] [{text:"你�
 execute as @s[scores={rng1=5088}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“这一路上你也帮了我不少忙。亨利，我也不会忘记和你的冒险。”",color:"white"}]
 
 execute as @s[scores={rng1=5088}] run scoreboard players set @n[tag=AzrielTrader_pig_henry] AzrielNPC_FollowInterest 0
-execute as @s[scores={rng1=5100}] run tp @n[tag=AzrielTrader_pig_henry] -79465.81 30.00 -404.61
+execute as @s[scores={rng1=5100}] run tp @n[tag=AzrielTrader_pig_henry] -79464.81 30.00 -404.61
 execute as @s[scores={rng1=5100..6000}] as @n[tag=AzrielTrader_pig_henry] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
 execute as @s[scores={rng1=5050..6000}] positioned -79466 31 -431 store result score @s rng7 run random value 1..13
