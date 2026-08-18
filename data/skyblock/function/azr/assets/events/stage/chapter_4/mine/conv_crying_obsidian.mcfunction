@@ -8,6 +8,6 @@ execute as @s[scores={rng1=1}] run playsound minecraft:block.respawn_anchor.char
 
 execute as @s[scores={rng1=4}] as @a[tag=azrPlayer,tag=!AZS_RespAnchorTeleport] run title @s times 15t 60t 12t
 execute as @s[scores={rng1=4}] as @a[tag=azrPlayer,tag=!AZS_RespAnchorTeleport] run title @s title {text:"魔界地脉解析完成",color: "#ebceff",bold:0b}
-execute as @s[scores={rng1=4}] as @a[tag=azrPlayer,tag=!AZS_RespAnchorTeleport] run title @s subtitle {text:"借助黑耀魔力的网络，现可在黑曜石烛台间传送",color: "#ebceff",bold:0b}
+execute as @s[scores={rng1=4}] as @a[tag=azrPlayer,tag=!AZS_RespAnchorTeleport] run title @s subtitle {text:"借助黑耀魔力的网络，现可在黑曜石烛台间传送",color: "#878787",bold:0b}
 execute as @s[scores={rng1=4}] as @a[tag=azrPlayer,tag=!AZS_RespAnchorTeleport] run tag @s add AZS_RespAnchorTeleport
 
