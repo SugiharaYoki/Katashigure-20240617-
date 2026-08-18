@@ -4,6 +4,7 @@ scoreboard players add @s rng1 1
 execute as @s[scores={rng1=1}] run bossbar add azr:boss_hp_bar "黑铠的狂戮 - ？？？"
 execute as @s[scores={rng1=1}] run bossbar set azr:boss_hp_bar color purple
 execute as @s[scores={rng1=1}] run bossbar set azr:boss_hp_bar max 100
+execute as @s[scores={rng1=1}] run bossbar set azr:boss_hp_bar value 100
 execute as @s[scores={rng1=1}] run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 
 execute as @s[scores={rng1=1}] run fill -79495 30 -405 -79495 32 -406 minecraft:red_stained_glass
