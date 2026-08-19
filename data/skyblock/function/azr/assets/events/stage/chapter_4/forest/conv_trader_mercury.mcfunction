@@ -39,10 +39,10 @@ execute if score @s rng1 matches 1007 as @a[distance=0..8.5,tag=azrPlayer] run t
 execute if score @s rng1 matches 1007 as @a[distance=0..8.5,tag=azrPlayer] run tellraw @s [{text:" - "},{text:"纯金战棍  ",color:"#ad1e78"},{"score":{"name":"@s","objective":"Azr_gold"},color:"#f4cf1a"},{text:"/300 金粒 ",color:"#f4cf1a"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431606"}}]
 execute if score @s rng1 matches 1007 as @a[distance=0..8.5,tag=azrPlayer] run tellraw @s [{text:" - "},{text:"金盔甲  ",color:"#cd8107"},{"score":{"name":"@s","objective":"Azr_gold"},color:"#f4cf1a"},{text:"/200 金粒 ",color:"#f4cf1a"},{text:"〈头盔〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431607"}},{text:"〈盔甲〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431608"}},{text:"〈护腿〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431609"}},{text:"〈靴子〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431610"}}]
 
-execute if score @s AzrielNPC_ConversationTimer matches 1040..1200 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_307] run tag @s add azrPlayer_dialogchoice_revealed_307
-execute if score @s AzrielNPC_ConversationTimer matches 1050 run scoreboard players set @s AzrielNPC_ConversationTimer 1049
-execute if score @s AzrielNPC_ConversationTimer matches 1040..1200 as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_307] run tag @s remove azrPlayer_dialogchoice_revealed_307
-execute if score @s AzrielNPC_ConversationTimer matches 1040..1200 unless entity @a[distance=0..5.5,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 49
+execute if score @s rng1 matches 1040..1200 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_307] run tag @s add azrPlayer_dialogchoice_revealed_307
+execute if score @s rng1 matches 1050 run scoreboard players set @s rng1 1049
+execute if score @s rng1 matches 1040..1200 as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_307] run tag @s remove azrPlayer_dialogchoice_revealed_307
+execute if score @s rng1 matches 1040..1200 unless entity @a[distance=0..5.5,tag=azrPlayer] run scoreboard players set @s rng1 49
 
 
 execute if score @s rng1 matches 2002 run playsound minecraft:entity.piglin.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
