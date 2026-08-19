@@ -24,7 +24,7 @@ execute positioned -79337 23 -415 unless entity @n[tag=AzrielMarker_encounter,di
 execute positioned -79337 23 -415 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 100.. run function skyblock:azr/assets/events/stage/chapter_4/mine/conv_crying_obsidian
 
 #废品交易商人
-execute positioned -79588 9 -391 as @n[type=villager,distance=..5,tag=AzrielTrader_botanical_trader] at @s if entity @a[tag=azrPlayer,distance=..4.5] run function skyblock:azr/assets/events/stage/chapter_4/mine/npc_rofocale_trader
+execute positioned -79588 9 -391 as @n[type=villager,distance=..5,tag=AzrielTrader_rofocale] at @s if entity @a[tag=azrPlayer,distance=..4.5] run function skyblock:azr/assets/events/stage/chapter_4/mine/npc_rofocale_trader
 
 
 
