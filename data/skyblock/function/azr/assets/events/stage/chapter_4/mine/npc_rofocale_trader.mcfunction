@@ -53,10 +53,11 @@ execute if score @s AzrielNPC_ConversationTimer matches 3006 as @a[distance=0..1
 execute if score @s AzrielNPC_ConversationTimer matches 3006 at @s run function skyblock:azr/assets/events/stage/chapter_4/mine/npc_rofocale_trader_list {number:1}
 execute if score @s AzrielNPC_ConversationTimer matches 3006 at @s run function skyblock:azr/assets/events/stage/chapter_4/mine/npc_rofocale_trader_list {number:2}
 
-execute if score @s AzrielNPC_ConversationTimer matches 3020..3200 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_308] run tag @s add azrPlayer_dialogchoice_revealed_308
+execute if score @s AzrielNPC_ConversationTimer matches 3040..3200 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_308] run tag @s add azrPlayer_dialogchoice_revealed_308
+execute if score @s AzrielNPC_ConversationTimer matches 3050 run scoreboard players set @s AzrielNPC_ConversationTimer 3049
+execute if score @s AzrielNPC_ConversationTimer matches 3040..3200 as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_308] run tag @s remove azrPlayer_dialogchoice_revealed_308
+execute if score @s AzrielNPC_ConversationTimer matches 3040..3200 unless entity @a[distance=0..5.5,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 49
 
-execute if score @s AzrielNPC_ConversationTimer matches 3020..3200 as @a[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_308] run tag @s remove azrPlayer_dialogchoice_revealed_308
-execute if score @s AzrielNPC_ConversationTimer matches 3020..3200 unless entity @a[distance=0..5.5,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 49
 execute if score @s AzrielNPC_ConversationTimer matches 3201.. run scoreboard players set @s AzrielNPC_ConversationTimer 1
 
 

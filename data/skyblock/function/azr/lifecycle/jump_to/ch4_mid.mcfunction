@@ -67,6 +67,7 @@ execute positioned -79748 15 -272 run summon marker ~ ~ ~ {Tags:["AzrielMarker_e
 fill -79745 16 -297 -79750 22 -297 air replace red_stained_glass destroy
 fill -79757 23 -270 -79757 19 -272 air replace red_stained_glass destroy
 
+execute positioned -79780 39 -497 run function skyblock:azr/assets/mobs/unique/trader/pig_mercury
 
 advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage12
 advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage13
