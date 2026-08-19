@@ -50,8 +50,8 @@ execute if score @s AzrielNPC_ConversationTimer matches 3006 unless score azr_ro
 execute if score @s AzrielNPC_ConversationTimer matches 3006 unless score azr_rofocale_shop Azr_Shop_rng2 matches -999.. store result score azr_rofocale_shop Azr_Shop_rng2 run random value 4..6
 execute if score @s AzrielNPC_ConversationTimer matches 3006 unless score azr_rofocale_shop dailydiv >= daycount dailydiv run scoreboard players operation azr_rofocale_shop dailydiv = daycount dailydiv
 execute if score @s AzrielNPC_ConversationTimer matches 3006 as @a[distance=0..13,tag=azrPlayer] run function skyblock:azr/system/shop/count
-execute if score @s AzrielNPC_ConversationTimer matches 3006 at @s run function skyblock:azr/assets/events/stage/chapter_4/npc_rofocale_trader_list {number:1}
-execute if score @s AzrielNPC_ConversationTimer matches 3006 at @s run function skyblock:azr/assets/events/stage/chapter_4/npc_rofocale_trader_list {number:2}
+execute if score @s AzrielNPC_ConversationTimer matches 3006 at @s run function skyblock:azr/assets/events/stage/chapter_4/mine/npc_rofocale_trader_list {number:1}
+execute if score @s AzrielNPC_ConversationTimer matches 3006 at @s run function skyblock:azr/assets/events/stage/chapter_4/mine/npc_rofocale_trader_list {number:2}
 
 execute if score @s AzrielNPC_ConversationTimer matches 3020..3200 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_308] run tag @s add azrPlayer_dialogchoice_revealed_308
 
