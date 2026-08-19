@@ -2,6 +2,9 @@ function skyblock:azr/lifecycle/jump_to/ch3_start
 
 
 
+advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage9
+advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage10
+advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage11
 
 fill -79898 41 -50 -79898 42 -50 air
 setblock -79898 42 -49 air

@@ -1,5 +1,8 @@
 function skyblock:azr/lifecycle/jump_to/ch2_boss
 
+
+advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage8_boss2
+
 fill -79902 41 0 -79904 38 0 air
 fill -79927 38 -13 -79927 42 -16 air
 fill -79901 50 -16 -79905 51 -13 air

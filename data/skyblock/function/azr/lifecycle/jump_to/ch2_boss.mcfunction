@@ -1,5 +1,11 @@
 function skyblock:azr/lifecycle/jump_to/ch2_start
 
+
+advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage5
+advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage6
+advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage7
+advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage8
+
 tag @a[tag=azrPlayer] add azrPlayer_respawnanchor_unlocked_lighthall_a
 tag @a[tag=azrPlayer] add azrPlayer_respawnanchor_unlocked_lighthall_b
 

@@ -1,6 +1,6 @@
 function skyblock:azr/lifecycle/jump_to/ch1_boss
 
-
+advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage4_boss1
 
 fill -79932 38 54 -79930 41 53 air
 fill -79930 42 104 -79932 38 104 air

@@ -133,7 +133,7 @@ execute as @s[scores={rng1=2316}] run tellraw @a[tag=azrShowDialog] [{text:"你�
 
 execute as @s[scores={rng1=2900..3000}] run scoreboard players set @s rng1 2900
 execute as @s[scores={rng1=..3000}] positioned -79636 22 -421 if entity @a[distance=..5] run scoreboard players set @s rng1 3001
-execute as @s[scores={rng1=3001}] run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage15
+execute as @s[scores={rng1=3001}] run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage16
 execute as @s[scores={rng1=3001}] run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..16}] Azr_skillPoints 17
 execute as @s[scores={rng1=3001}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=3001}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“老大，这地方让我……不太舒服。”",color:"white"}]

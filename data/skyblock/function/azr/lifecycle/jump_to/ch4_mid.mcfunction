@@ -68,6 +68,11 @@ fill -79745 16 -297 -79750 22 -297 air replace red_stained_glass destroy
 fill -79757 23 -270 -79757 19 -272 air replace red_stained_glass destroy
 
 
+advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage12
+advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage13
+advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage14
+advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage15
+
 fill -79772 41 -350 -79773 39 -350 air destroy
 tag @n[tag=AzrielTrader_pig_henry] add AzrielNPC_Divineforce_Followable
 scoreboard players add @n[tag=AzrielTrader_pig_henry] AzrielNPC_FollowInterest 99999999

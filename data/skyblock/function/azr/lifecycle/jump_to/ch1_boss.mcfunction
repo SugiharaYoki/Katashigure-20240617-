@@ -1,5 +1,14 @@
 function skyblock:azr/lifecycle/jump_to/ch1_part2
 
+advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage1
+advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage2
+advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage3
+advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage4
+
+
+
+
+
 tag @a[tag=azrPlayer] add azrPlayer_respawnanchor_unlocked_westcourt_a
 tag @a[tag=azrPlayer] add azrPlayer_respawnanchor_unlocked_westcourt_b
 tag @s[tag=azrPlayer,tag=azrPlayer_dialogchoice_unlocked_30104] add azrPlayer_respawnanchor_unlocked_mossyroad
