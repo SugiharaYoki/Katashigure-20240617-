@@ -9,18 +9,18 @@ execute if score @s AzrielNPC_ConversationTimer matches 32 run playsound minecra
 execute if score @s AzrielNPC_ConversationTimer matches 32 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"废品交易者 罗福凯尔：",color:"green",bold:1b},{bold: false,text:"\n“我专门收集废品。没错，就是你从神庭带下来的那些，‘废品’。”",color:"white"}]
 execute if score @s AzrielNPC_ConversationTimer matches 40 run scoreboard players set @s AzrielNPC_ConversationTimer 49
 
-execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_308] run tellraw @s [{text:" - "},{text:"交易：那你今天都收什么？  ",color:"#c4ffbd"},{text:"〈◆〉",bold:1b,color:"#72ff62",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30803"}}]
-execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_308] run tellraw @s [{text:" - "},{text:"询问：你为什么在魔界开店？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30801"}}]
-execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_308] run tellraw @s [{text:" - "},{text:"询问：为什么会需要……废品？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30802"}}]
+execute if score @s AzrielNPC_ConversationTimer matches 50..4500 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_308] run tellraw @s [{text:" - "},{text:"交易：那你今天都收什么？  ",color:"#c4ffbd"},{text:"〈◆〉",bold:1b,color:"#72ff62",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30803"}}]
+execute if score @s AzrielNPC_ConversationTimer matches 50..4500 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_308] run tellraw @s [{text:" - "},{text:"询问：你为什么在魔界开店？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30801"}}]
+execute if score @s AzrielNPC_ConversationTimer matches 50..4500 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_308] run tellraw @s [{text:" - "},{text:"询问：为什么会需要……废品？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30802"}}]
 
 
 
-execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_308] run tag @s add azrPlayer_dialogchoice_revealed_308
+execute if score @s AzrielNPC_ConversationTimer matches 50..4500 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_308] run tag @s add azrPlayer_dialogchoice_revealed_308
 
 execute if score @s AzrielNPC_ConversationTimer matches 51 run scoreboard players set @s AzrielNPC_ConversationTimer 49
 
 
-execute if score @s AzrielNPC_ConversationTimer matches 24..3000 as @a[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_308] run tag @s remove azrPlayer_dialogchoice_revealed_308
+execute if score @s AzrielNPC_ConversationTimer matches 50..4500 as @a[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_308] run tag @s remove azrPlayer_dialogchoice_revealed_308
 
 
 execute if score @s AzrielNPC_ConversationTimer matches 1002 run playsound minecraft:entity.villager.trade master @a ~ ~ ~ 2 1.1
@@ -59,7 +59,6 @@ execute if score @s AzrielNPC_ConversationTimer matches 3050 run scoreboard play
 execute if score @s AzrielNPC_ConversationTimer matches 3040..3200 as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_308] run tag @s remove azrPlayer_dialogchoice_revealed_308
 execute if score @s AzrielNPC_ConversationTimer matches 3040..3200 unless entity @a[distance=0..5.5,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 1
 
-execute if score @s AzrielNPC_ConversationTimer matches 3201.. run scoreboard players set @s AzrielNPC_ConversationTimer 1
 
 
 execute unless entity @a[distance=0..8,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 1
