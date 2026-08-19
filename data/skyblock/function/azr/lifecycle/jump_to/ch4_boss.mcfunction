@@ -2,7 +2,6 @@ function skyblock:azr/lifecycle/jump_to/ch4_mid
 
 
 advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage16
-advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage17
 
 execute positioned -79718 25 -499 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79718 25 -499 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng1 99999
