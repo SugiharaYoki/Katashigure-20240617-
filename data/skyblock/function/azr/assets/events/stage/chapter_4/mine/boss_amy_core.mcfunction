@@ -14,7 +14,7 @@ execute as @s[scores={rng2=7}] run bossbar add azr:boss_hp_bar "黑铠的狂戮 
 execute as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar color red
 execute as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar max 100
 execute as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
-execute as @s[scores={rng2=7}] store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielMob_demon_amy] Health
+execute as @s[scores={rng2=7..}] store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielMob_demon_amy] Health
 #天行有常，不为尧存，不为桀亡
 
 execute as @s[scores={rng1=..9999}] run scoreboard players add @s rng9 1
