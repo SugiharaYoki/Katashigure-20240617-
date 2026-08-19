@@ -1,12 +1,12 @@
 scoreboard players add @s AzrielNPC_ConversationTimer 1
 
-execute if score @s AzrielNPC_ConversationTimer matches 9 unless entity @a[distance=..5.5,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 8
-execute if score @s AzrielNPC_ConversationTimer matches 10 run playsound minecraft:entity.villager.trade master @a ~ ~ ~ 2 1.1
-execute if score @s AzrielNPC_ConversationTimer matches 10 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"废品交易者 罗福凯尔：",color:"green",bold:1b},{bold: false,text:"\n“哎呀呀，居然是同胞。”",color:"white"}]
-execute if score @s AzrielNPC_ConversationTimer matches 28 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“人类商人？你在这里干什么？”",color:"white"}]
-execute if score @s AzrielNPC_ConversationTimer matches 46 run playsound minecraft:entity.villager.trade master @a ~ ~ ~ 2 1.1
-execute if score @s AzrielNPC_ConversationTimer matches 46 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"废品交易者 罗福凯尔：",color:"green",bold:1b},{bold: false,text:"\n“我专门收集废品。没错，就是你从神庭带下来的那些，‘废品’。”",color:"white"}]
-
+execute if score @s AzrielNPC_ConversationTimer matches 4 unless entity @a[distance=..5.5,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 3
+execute if score @s AzrielNPC_ConversationTimer matches 4 run playsound minecraft:entity.villager.trade master @a ~ ~ ~ 2 1.1
+execute if score @s AzrielNPC_ConversationTimer matches 4 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"废品交易者 罗福凯尔：",color:"green",bold:1b},{bold: false,text:"\n“哎呀呀，居然是同胞。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 16 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“人类商人？你在这里干什么？”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 32 run playsound minecraft:entity.villager.trade master @a ~ ~ ~ 2 1.1
+execute if score @s AzrielNPC_ConversationTimer matches 32 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"废品交易者 罗福凯尔：",color:"green",bold:1b},{bold: false,text:"\n“我专门收集废品。没错，就是你从神庭带下来的那些，‘废品’。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 40 run scoreboard players set @s AzrielNPC_ConversationTimer 49
 
 execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_308] run tellraw @s [{text:" - "},{text:"交易：那你今天都收什么？  ",color:"#c4ffbd"},{text:"〈◆〉",bold:1b,color:"#72ff62",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30803"}}]
 execute if score @s AzrielNPC_ConversationTimer matches 50..3000 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_308] run tellraw @s [{text:" - "},{text:"询问：你为什么在魔界开店？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30801"}}]
