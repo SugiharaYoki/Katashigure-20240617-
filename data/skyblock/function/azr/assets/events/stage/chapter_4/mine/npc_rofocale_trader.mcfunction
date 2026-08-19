@@ -57,8 +57,8 @@ execute if score @s AzrielNPC_ConversationTimer matches 3006 at @s run function 
 execute if score @s AzrielNPC_ConversationTimer matches 3040..3200 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_308] run tag @s add azrPlayer_dialogchoice_revealed_308
 execute if score @s AzrielNPC_ConversationTimer matches 3050 run scoreboard players set @s AzrielNPC_ConversationTimer 3049
 execute if score @s AzrielNPC_ConversationTimer matches 3040..3200 as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_308] run tag @s remove azrPlayer_dialogchoice_revealed_308
-execute if score @s AzrielNPC_ConversationTimer matches 3040..3200 unless entity @a[distance=0..5.5,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 1
+execute if score @s AzrielNPC_ConversationTimer matches 3040..3200 unless entity @a[distance=0..5.5,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 49
 
 
 
-execute unless entity @a[distance=0..8,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 1
+execute unless entity @a[distance=0..8,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 49

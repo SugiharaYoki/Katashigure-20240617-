@@ -42,7 +42,7 @@ execute if score @s rng1 matches 1007 as @a[distance=0..8.5,tag=azrPlayer] run t
 execute if score @s rng1 matches 1040..1200 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_307] run tag @s add azrPlayer_dialogchoice_revealed_307
 execute if score @s rng1 matches 1050 run scoreboard players set @s rng1 1049
 execute if score @s rng1 matches 1040..1200 as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_307] run tag @s remove azrPlayer_dialogchoice_revealed_307
-execute if score @s rng1 matches 1040..1200 unless entity @a[distance=0..5.5,tag=azrPlayer] run scoreboard players set @s rng1 1
+execute if score @s rng1 matches 1040..1200 unless entity @a[distance=0..5.5,tag=azrPlayer] run scoreboard players set @s rng1 48
 
 
 execute if score @s rng1 matches 2002 run playsound minecraft:entity.piglin.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
