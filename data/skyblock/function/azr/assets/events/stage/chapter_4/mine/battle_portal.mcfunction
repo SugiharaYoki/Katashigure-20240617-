@@ -21,8 +21,8 @@ execute as @s[scores={rng1=42}] run tellraw @a[tag=azrShowDialog] [{text:"你：
 
 
 execute as @s[scores={rng1=..1000}] run scoreboard players add @s rng9 1
-execute if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden1.combathigh music @s ~ ~ ~ 0.65
-execute if score @s rng9 matches 550.. run scoreboard players set @s rng9 0
+execute if score @s rng9 matches 5 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden1.combathigh music @s ~ ~ ~ 0.65
+execute if score @s rng9 matches 555.. run scoreboard players set @s rng9 0
 
 
 execute as @s[scores={rng1=30}] run scoreboard players set @n[tag=AzrielTrader_pig_henry] AzrielNPC_FollowInterest 999999
