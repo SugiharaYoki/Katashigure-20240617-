@@ -987,8 +987,7 @@ fill -79392 26 -349 -79394 27 -349 iron_bars
 setblock -79370 24 -407 minecraft:decorated_pot{sherds:["explorer_pottery_sherd","explorer_pottery_sherd","explorer_pottery_sherd","explorer_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 
 #boss4
-clone -79514 5 -343 -79476 6 -309 -79514 14 -343
-clone -79555 32 -752 -79517 33 -719 -79555 41 -752
+clone -79514 5 -347 -79476 6 -309 -79514 14 -347
 
 
 

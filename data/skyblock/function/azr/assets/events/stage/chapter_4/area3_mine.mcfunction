@@ -26,7 +26,9 @@ execute positioned -79337 23 -415 as @n[tag=AzrielMarker_encounter,distance=0..0
 #废品交易商人
 execute positioned -79588 9 -391 as @n[type=villager,distance=..5,tag=AzrielTrader_rofocale] at @s run function skyblock:azr/assets/events/stage/chapter_4/mine/npc_rofocale_trader
 
-
+#BOSS-4 魔神亚米
+execute positioned -79505 15 -338 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,x=-79505,y=14,z=-338,dx=21,dy=2,dz=21] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_4/mine/boss_amy_core
 
 
 #互传
