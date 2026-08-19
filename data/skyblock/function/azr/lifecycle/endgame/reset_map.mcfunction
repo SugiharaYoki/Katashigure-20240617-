@@ -836,6 +836,11 @@ item replace block -79744 2 -293 container.14 with gold_nugget 1
   #可惜这种树种的根系会贯穿岩层，对地层结构造成巨大的穿刺。这也导致9、10、11辖区的地下几乎没法建立军事设施。
   #只是，军方依然选择在这种地方开矿淘金。
 
+  #开山炮的原理是发射一种特殊的震脉弹，能像高能钻头一样直接钻入岩壁，对岩石内部的裂隙传播冲击力，理论上能够直接打通约50米的魔界普通岩层。
+  #这种大型器械用于开掘矿道可谓大有收益。
+  #只不过路西法的反抗军问我们是否能将这种炮改造成武器。
+  #我们并不是很想老实回答。
+
 #展示区
 setblock -79759 17 -283 minecraft:decorated_pot{sherds:["sheaf_pottery_sherd","sheaf_pottery_sherd","sheaf_pottery_sherd","sheaf_pottery_sherd"],item:{count: 1, id:"minecraft:gold_nugget"}}
 setblock -79757 17 -283 minecraft:decorated_pot{sherds:["plenty_pottery_sherd","plenty_pottery_sherd","plenty_pottery_sherd","plenty_pottery_sherd"],item:{count: 1, id:"minecraft:gold_nugget"}}
@@ -953,6 +958,13 @@ fill -79572 5 -479 -79573 5 -478 minecraft:decorated_pot{item:{count: 1, id:"min
 fill -79572 5 -466 -79571 5 -467 minecraft:decorated_pot{item:{count: 1, id:"minecraft:gold_nugget"}}
 fill -79585 5 -474 -79586 5 -475 minecraft:decorated_pot{item:{count: 1, id:"minecraft:gold_nugget"}}
 fill -79575 10 -451 -79575 13 -451 air
+
+#交换屋
+fill -79590 10 -394 -79590 11 -393 minecraft:crimson_shelf[facing=east]{Inventory:[]}
+setblock -79585 10 -389 minecraft:potted_crimson_roots
+setblock -79586 10 -389 minecraft:potted_crimson_fungus
+setblock -79587 10 -389 minecraft:potted_crimson_roots
+
 
 
 #stage16
