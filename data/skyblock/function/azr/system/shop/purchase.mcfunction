@@ -43,5 +43,5 @@ execute if score @s Azr_Shop matches 8431559..8431562 positioned -79863 28 -67 a
 execute if score @s Azr_Shop matches 8431563..8431566 positioned -79867 49 -128 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] as @n[tag=AzrielNPC_marinus] at @s run scoreboard players set @s AzrielNPC_ConversationTimer 3019
 execute if score @s Azr_Shop matches 8431570..8431589 positioned -79977 -51 12 as @n[type=villager,distance=..5,tag=AzrielTrader_botanical_trader] run scoreboard players set @s AzrielNPC_ConversationTimer 3007
 execute if score @s Azr_Shop matches 8431600..8431609 positioned -79780 38 -497 as @n[tag=AzrielTrader_pig_mercury,distance=..1.5] run scoreboard players set @s rng1 1006
-execute if score @s Azr_Shop matches 8431630..8431635 positioned -79588 9 -391 as @n[tag=AzrielTrader_rofocale,distance=..5.5] run scoreboard players set @s rng1 3005
+execute if score @s Azr_Shop matches 8431630..8431635 positioned -79588 9 -391 as @n[tag=AzrielTrader_rofocale,distance=..5.5] run scoreboard players set @s AzrielNPC_ConversationTimer 3005
 scoreboard players set @s Azr_Shop 0
