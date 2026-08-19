@@ -19,7 +19,7 @@ execute as @s[scores={rng1=9999}] run scoreboard players set @s rng1 9990
 execute as @s[scores={rng1=16}] at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=16}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"red",bold:1b},{bold: false,text:"\n“伏膝于此，授首于吾。”",color:"white"}]
 
-execute as @s[scores={rng1=32}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“听不懂，而且怎么又是你？！要打我便奉陪！”",color:"white"}]
+execute as @s[scores={rng1=32}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“听不懂你在说什么，而且怎么又是你？！要打我便奉陪！”",color:"white"}]
 
 
 execute as @s[scores={rng1=2}] positioned -79495 15 -328 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[0.0f,0.0f]}
