@@ -12,6 +12,6 @@ execute if score @s[scores={rng2=3}] rng1 matches 33.. run function skyblock:azr
 execute if score @s[scores={rng2=4}] rng1 matches 33.. run function skyblock:azr/assets/mobs/skill/boss4_amy/attack_fan_outward {initial_rotation:270}
 
 
-
+execute store result score @s Health run data get entity @s Health
 
 execute if score @s rng1 matches 85.. store result score @s rng1 run random value 5..15
