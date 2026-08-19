@@ -1,5 +1,5 @@
 
-scoreboard players add @s rng1 1
+scoreboard players add @s[scores={rng3=2..}] rng1 1
 
 execute if score @s rng1 matches 30 store result score @s rng2 run random value 1..8
 

@@ -19,7 +19,7 @@ execute as @s[scores={rng2=7..}] store result bossbar azr:boss_hp_bar value run 
 
 execute as @s[scores={rng1=..9999}] run scoreboard players add @s rng9 1
 execute if score @s rng9 matches 8 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden1.combathigh music @s ~ ~ ~ 0.65
-execute if score @s rng9 matches 557.. run scoreboard players set @s rng9 8
+execute if score @s rng9 matches 557.. run scoreboard players set @s rng9 7
 
 
 execute as @s[scores={rng1=9999}] run scoreboard players set @s rng1 9990
@@ -34,7 +34,7 @@ execute as @s[scores={rng2=28,rng3=2}] at @n[tag=AzrielMob_demon_amy] run playso
 execute as @s[scores={rng2=28,rng3=2}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"red",bold:1b},{bold: false,text:"\n“弱于吾者，尚无权能葬吾。”",color:"white"}]
 execute as @s[scores={rng2=37,rng3=2}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n（我面前这人……真的死得了吗？！）",color:"white"}]
 
-execute as @s[scores={rng3=2..}] as @n[tag=AzrielMob_demon_amy] at @s run function skyblock:azr/assets/mobs/skill/boss4_amy/core_x4
+execute as @s[scores={rng3=1..}] as @n[tag=AzrielMob_demon_amy] at @s run function skyblock:azr/assets/mobs/skill/boss4_amy/core_x4
 
 
 
