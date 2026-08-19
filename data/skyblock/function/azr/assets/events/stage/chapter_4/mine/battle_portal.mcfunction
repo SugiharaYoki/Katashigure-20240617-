@@ -42,6 +42,7 @@ execute as @s[scores={rng1=..1000}] unless entity @n[tag=AzrielMob_demon_amy] ru
 
 execute as @s[scores={rng1=1001}] run bossbar remove azr:boss_hp_bar
 execute as @s[scores={rng1=1001}] run stopsound @a[tag=azrShowDialog] music minecraft:garden1.combathigh
+execute as @s[scores={rng1=1002}] run fill -79464 40 -431 -79469 31 -431 air replace nether_portal
 execute as @s[scores={rng1=1128}] run fill -79495 30 -405 -79495 32 -406 air replace red_stained_glass destroy
 execute as @s[scores={rng1=1128}] run fill -79409 30 -398 -79409 32 -396 air replace red_stained_glass destroy
 execute as @s[scores={rng1=1128}] run fill -79370 26 -373 -79372 27 -373 air

@@ -46,7 +46,7 @@ fill -79409 30 -398 -79409 32 -396 minecraft:red_stained_glass
 
 
 
-fill -79464 40 -431 -79469 31 -431 air replace nether_portal
+
 
 execute positioned -79466 29 -405 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79466 29 -405 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng1 1001
@@ -58,7 +58,7 @@ tp @n[tag=AzrielTrader_pig_henry] -79466.99 30.00 -421.45
 
 
 
-
+fill -79464 40 -431 -79469 31 -431 air replace nether_portal
 
 
 
