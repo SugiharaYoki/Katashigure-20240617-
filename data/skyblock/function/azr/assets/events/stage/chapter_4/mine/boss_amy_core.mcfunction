@@ -9,7 +9,7 @@ execute as @s[scores={rng2=2}] positioned -79495 15 -328 run summon marker ~ ~0.
 execute as @s[scores={rng2=7}] positioned -79495 15 -328 run function skyblock:azr/assets/mobs/skill/boss4_amy/summon_2
 
 execute as @s[scores={rng2=7}] unless score @s rng3 matches 1.. run scoreboard players set @s rng3 1
-execute as @s[scores={rng2=7}] run scoreboard players operation @n[tag=AzrielMob_demon_amy] rng3 = @s rng3
+execute as @s[scores={rng2=7..}] run scoreboard players operation @n[tag=AzrielMob_demon_amy] rng3 = @s rng3
 execute as @s[scores={rng2=7}] run bossbar add azr:boss_hp_bar "黑铠的狂戮 - ？？？"
 execute as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar color red
 execute as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar max 100
