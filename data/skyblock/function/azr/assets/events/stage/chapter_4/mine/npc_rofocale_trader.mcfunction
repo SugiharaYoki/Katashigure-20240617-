@@ -1,6 +1,7 @@
 scoreboard players add @s AzrielNPC_ConversationTimer 1
 
 execute if score @s AzrielNPC_ConversationTimer matches 4 unless entity @a[distance=..5.5,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 3
+
 execute if score @s AzrielNPC_ConversationTimer matches 4 run playsound minecraft:entity.villager.trade master @a ~ ~ ~ 2 1.1
 execute if score @s AzrielNPC_ConversationTimer matches 4 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"废品交易者 罗福凯尔：",color:"green",bold:1b},{bold: false,text:"\n“哎呀呀，居然是同胞。”",color:"white"}]
 execute if score @s AzrielNPC_ConversationTimer matches 16 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“人类商人？你在这里干什么？”",color:"white"}]
@@ -56,7 +57,7 @@ execute if score @s AzrielNPC_ConversationTimer matches 3006 at @s run function 
 execute if score @s AzrielNPC_ConversationTimer matches 3040..3200 as @p[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_308] run tag @s add azrPlayer_dialogchoice_revealed_308
 execute if score @s AzrielNPC_ConversationTimer matches 3050 run scoreboard players set @s AzrielNPC_ConversationTimer 3049
 execute if score @s AzrielNPC_ConversationTimer matches 3040..3200 as @p[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_308] run tag @s remove azrPlayer_dialogchoice_revealed_308
-execute if score @s AzrielNPC_ConversationTimer matches 3040..3200 unless entity @a[distance=0..5.5,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 49
+execute if score @s AzrielNPC_ConversationTimer matches 3040..3200 unless entity @a[distance=0..5.5,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 1
 
 execute if score @s AzrielNPC_ConversationTimer matches 3201.. run scoreboard players set @s AzrielNPC_ConversationTimer 1
 
