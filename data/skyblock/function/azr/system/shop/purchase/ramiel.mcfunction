@@ -248,3 +248,43 @@ execute as @s[scores={Azr_Shop=8431610}] \
     unless function skyblock:azr/system/shop/purchase/nether/golden_boots \
     run scoreboard players set tempPlayerShopSuccess Azr_system 1
 
+#魔界废品交易
+execute as @s[scores={Azr_Shop=8431630}] \
+    positioned -79588 9 -391 if entity @s[distance=..13] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* flint[count={min:1}] \
+    unless function skyblock:azr/system/shop/purchase/nether/junk_flint \
+    run scoreboard players set tempPlayerShopSuccess Azr_system 1
+execute as @s[scores={Azr_Shop=8431631}] \
+    positioned -79588 9 -391 if entity @s[distance=..13] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* iron_ingot[count={min:1}] \
+    unless function skyblock:azr/system/shop/purchase/nether/junk_iron_ingot \
+    run scoreboard players set tempPlayerShopSuccess Azr_system 1
+execute as @s[scores={Azr_Shop=8431632}] \
+    positioned -79588 9 -391 if entity @s[distance=..13] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* gunpowder[count={min:1}] \
+    unless function skyblock:azr/system/shop/purchase/nether/junk_gunpowder \
+    run scoreboard players set tempPlayerShopSuccess Azr_system 1
+execute as @s[scores={Azr_Shop=8431633}] \
+    positioned -79588 9 -391 if entity @s[distance=..13] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* ink_sac[count={min:1}] \
+    unless function skyblock:azr/system/shop/purchase/nether/junk_ink_sac \
+    run scoreboard players set tempPlayerShopSuccess Azr_system 1
+execute as @s[scores={Azr_Shop=8431634}] \
+    positioned -79588 9 -391 if entity @s[distance=..13] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* slime_ball[count={min:1}] \
+    unless function skyblock:azr/system/shop/purchase/nether/junk_slime_ball \
+    run scoreboard players set tempPlayerShopSuccess Azr_system 1
+execute as @s[scores={Azr_Shop=8431635}] \
+    positioned -79588 9 -391 if entity @s[distance=..13] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* coal[count={min:1}] \
+    unless function skyblock:azr/system/shop/purchase/nether/junk_coal \
+    run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
+
+

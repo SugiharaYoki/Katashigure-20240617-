@@ -29,6 +29,8 @@ execute positioned -79665 21 -424 run function skyblock:azr/assets/mobs/piglin_s
 execute positioned -79664 21 -427 run function skyblock:azr/assets/mobs/piglin_shovel
 
 
+execute positioned -79589 9 -390 run function skyblock:azr/assets/mobs/unique/trader/nether_trader_rofocale
+
 
 execute positioned -79681 22 -423 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79681 22 -423 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng1 99999
@@ -48,3 +50,17 @@ fill -79409 30 -398 -79409 32 -396 minecraft:red_stained_glass
 fill -79464 40 -431 -79469 31 -431 air replace nether_portal
 
 execute positioned -79466 29 -405 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

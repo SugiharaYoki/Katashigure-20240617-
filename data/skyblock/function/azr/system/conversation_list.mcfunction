@@ -59,6 +59,12 @@ execute if score @s[tag=azrPlayer_dialogchoice_revealed_307] Azr_Shop matches 30
 execute if score @s[tag=azrPlayer_dialogchoice_revealed_307] Azr_Shop matches 30703 \
     positioned -79779 39 -497 as @n[tag=AzrielTrader_pig_mercury,type=piglin,distance=..10] at @s run scoreboard players set @s rng1 3001
 
+execute if score @s[tag=azrPlayer_dialogchoice_revealed_308] Azr_Shop matches 30801 \
+    positioned -79588 9 -391 if entity @s[distance=..13] as @n[type=villager,distance=..5,tag=AzrielTrader_rofocale] run scoreboard players set @s AzrielNPC_ConversationTimer 1001
+execute if score @s[tag=azrPlayer_dialogchoice_revealed_308] Azr_Shop matches 30802 \
+    positioned -79588 9 -391 if entity @s[distance=..13] as @n[type=villager,distance=..5,tag=AzrielTrader_rofocale] run scoreboard players set @s AzrielNPC_ConversationTimer 2001
+execute if score @s[tag=azrPlayer_dialogchoice_revealed_308] Azr_Shop matches 30803 \
+    positioned -79588 9 -391 if entity @s[distance=..13] as @n[type=villager,distance=..5,tag=AzrielTrader_rofocale] run scoreboard players set @s AzrielNPC_ConversationTimer 3001
 
 
 

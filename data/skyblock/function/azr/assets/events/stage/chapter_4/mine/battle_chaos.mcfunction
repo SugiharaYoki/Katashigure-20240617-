@@ -116,6 +116,8 @@ execute as @s[scores={rng1=2200}] positioned -79622 20 -421 run function skybloc
 execute as @s[scores={rng1=2200}] positioned -79622 20 -421 run function skyblock:azr/assets/mobs/magma_cube_mini
 execute as @s[scores={rng1=2200}] positioned -79622 20 -421 run function skyblock:azr/assets/mobs/skeleton_bomb
 
+execute as @s[scores={rng1=2200}] positioned -79589 9 -390 run function skyblock:azr/assets/mobs/unique/trader/nether_trader_rofocale
+
 
 execute as @s[scores={rng1=2200}] as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:skeleton_bomb}
 execute as @s[scores={rng1=2200}] positioned -79647 22 -422 run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
