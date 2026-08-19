@@ -126,6 +126,6 @@ execute as @s[scores={rng1=5101}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDia
 execute as @s[scores={rng1=5020..6000}] as @n[tag=AzrielTrader_pig_henry] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
 execute as @s[scores={rng1=5999..6000}] run scoreboard players set @s rng1 5999
-execute as @s[scores={rng1=..6000}] positioned -79448 52 -741 if entity @a[tag=azrPlayer,distance=..10] run scoreboard players set @s rng1 6001
+execute as @s[scores={rng1=..6000}] positioned -79425 25 -328 if entity @a[tag=azrPlayer,distance=..10] run scoreboard players set @s rng1 6001
 execute as @s[scores={rng1=6001}] run tp @n[tag=AzrielTrader_pig_henry] -79370 24 -405
 

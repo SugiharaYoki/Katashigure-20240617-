@@ -30,8 +30,8 @@ execute positioned -79588 9 -391 as @n[type=villager,distance=..5,tag=AzrielTrad
 
 
 #互传
-execute as @a[x=-79408,y=25,z=-333,dx=5,dy=5,dz=5] at @s run tp @s ~-41 ~27 ~-410
-execute as @a[x=-79440,y=52,z=-747,dx=5,dy=5,dz=5] at @s run tp @s ~41 ~-27 ~410
+#execute as @a[x=-79408,y=25,z=-333,dx=5,dy=5,dz=5] at @s run tp @s ~-41 ~27 ~-410
+#execute as @a[x=-79440,y=52,z=-747,dx=5,dy=5,dz=5] at @s run tp @s ~41 ~-27 ~410
 
 #亨利复活
 execute positioned -79337 23 -415 unless entity @n[tag=AzrielTrader_pig_henry,distance=..1000,type=piglin] positioned -79793 -6 -277 run function skyblock:azr/assets/mobs/unique/trader/pig_henry
