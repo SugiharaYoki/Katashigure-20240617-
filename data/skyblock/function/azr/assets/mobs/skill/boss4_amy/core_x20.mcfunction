@@ -28,3 +28,17 @@ execute if score @s[scores={rng7=1..6}] rng8 matches 186 rotated ~60 0 run summo
 execute if score @s[scores={rng7=1..6}] rng8 matches 189 rotated ~60 0 run summon marker ^ ^ ^-7.2 {Tags:["AzrielMob_boss_amy_axe_line_marker","AzrielMob_mob_marker"]}
 
 execute if score @s rng8 matches 200.. store result score @s rng8 run random value -15..15
+
+
+
+execute as @n[tag=AzrielNPC_andralune,distance=..100] at @s if block ~ ~-0.1 ~ air run particle falling_obsidian_tear ^2 ^ ^ 0.2 0.2 0.2 0 1
+execute as @n[tag=AzrielNPC_andralune,distance=..100] at @s if block ~ ~-0.1 ~ air run particle falling_obsidian_tear ^-2 ^ ^ 0.2 0.2 0.2 0 1
+
+
+
+
+
+
+
+
+
