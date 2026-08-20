@@ -75,7 +75,7 @@ execute if score @s rng11 matches 2011 as @a[tag=azrShowDialog] at @s run stopso
 execute if score @s rng11 matches 2011 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden2.chapter_title ambient @s ~ ~ ~ 2 1.3
 execute if score @s rng11 matches 2011 as @a[tag=azrShowDialog] at @s run title @s title {text:"亚 米",color: "#ff5050",bold:1b}
 execute if score @s rng11 matches 2031 as @a[tag=azrShowDialog] at @s run stopsound @s ambient minecraft:garden2.chapter_title
-execute if score @s rng11 matches 2031 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden2.chapter_title ambient @s ~ ~ ~ 2 1.3
+execute if score @s rng11 matches 2031 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden1.area_title ambient @s ~ ~ ~ 2 1.3
 execute if score @s rng11 matches 2031 as @a[tag=azrShowDialog] at @s run title @s title {text:"亚 米",color: "#ff5050",bold:1b}
 execute if score @s rng11 matches 2031 as @a[tag=azrShowDialog] at @s run title @s subtitle {text:"所 罗 门 72 柱 魔 神 · 第 58 柱",color: "white",bold:0b}
 
