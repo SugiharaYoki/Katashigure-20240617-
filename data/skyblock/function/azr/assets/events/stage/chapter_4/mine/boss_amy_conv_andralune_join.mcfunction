@@ -31,6 +31,8 @@ execute if score @s rng11 matches 8 positioned -79504 15 -328 run tellraw @a[tag
 
 execute if score @s rng11 matches 60 run tp @n[tag=AzrielMob_demon_amy] ~ ~ ~ facing entity @n[tag=AzrielNPC_andralune]
 
+execute if score @s rng11 matches 72 run kill @e[tag=AzrielMob_demon_amy_flame_eye,distance=..100]
+
 execute if score @s rng11 matches 82 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng11 matches 82 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"red",bold:1b},{bold: false,text:"\n“甚久未见，我记得你。”",color:"white"}]
 
@@ -67,6 +69,9 @@ execute if score @s rng11 matches 808 run scoreboard players set @s rng11 2000
 execute if score @s rng11 matches 2001 run tag @n[tag=AzrielMob_demon_amy] remove AZR_action_halt
 execute if score @s rng11 matches 2001 run 
 
+
+execute if score @s rng11 matches 2001 at @n[tag=AzrielMob_demon_amy] run summon item_display ~2 ~2 ~ {Tags:["AzrielMob_mob_marker","AzrielMob_demon_amy_flame_eye_a","AzrielMob_demon_amy_flame_eye"],transformation:{left_rotation:[0,1,0,1],right_rotation:[0,1,0,1],translation:[0,0,0],scale:[1,1,1]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjE0MmEzNWFjMGIwNTVlZDUwYTVjYmY4NzBiNmVmMWNjMWY5NGUyNjQyYjliYTY1MGM5ZTAzODVlNmNiZTM2In19fQ=="}]}}}}
+execute if score @s rng11 matches 2001 at @n[tag=AzrielMob_demon_amy] run summon item_display ~-2 ~2 ~ {Tags:["AzrielMob_mob_marker","AzrielMob_demon_amy_flame_eye_b","AzrielMob_demon_amy_flame_eye"],transformation:{left_rotation:[0,1,0,1],right_rotation:[0,1,0,1],translation:[0,0,0],scale:[1,1,1]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjE0MmEzNWFjMGIwNTVlZDUwYTVjYmY4NzBiNmVmMWNjMWY5NGUyNjQyYjliYTY1MGM5ZTAzODVlNmNiZTM2In19fQ=="}]}}}}
 
 execute if score @s rng11 matches 2081 run effect clear @a[tag=azrPlayer,distance=..150] resistance
 execute if score @s rng11 matches 2081 run effect clear @a[tag=azrPlayer,distance=..150] regeneration
