@@ -16,5 +16,11 @@ $execute if score @s[scores={rng3=4..}] rng1 matches 37 rotated ~$(initial_rotat
 $execute if score @s[scores={rng3=5..}] rng1 matches 38 rotated ~$(initial_rotation) 0 rotated ~30 0 rotated ~90 ~ positioned ^ ^ ^8 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]}
 $execute if score @s[scores={rng3=5..}] rng1 matches 38 rotated ~$(initial_rotation) 0 rotated ~45 0 rotated ~90 ~ positioned ^ ^ ^8 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]}
 $execute if score @s[scores={rng3=5..}] rng1 matches 38 rotated ~$(initial_rotation) 0 rotated ~60 0 rotated ~90 ~ positioned ^ ^ ^8 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]}
+$execute if score @s[scores={rng3=6..}] rng1 matches 39 rotated ~$(initial_rotation) 0 rotated ~30 0 rotated ~180 ~ positioned ^ ^ ^9 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]}
+$execute if score @s[scores={rng3=6..}] rng1 matches 39 rotated ~$(initial_rotation) 0 rotated ~45 0 rotated ~180 ~ positioned ^ ^ ^9 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]}
+$execute if score @s[scores={rng3=6..}] rng1 matches 39 rotated ~$(initial_rotation) 0 rotated ~60 0 rotated ~180 ~ positioned ^ ^ ^9 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]}
+$execute if score @s[scores={rng3=7..}] rng1 matches 40 rotated ~$(initial_rotation) 0 rotated ~30 0 rotated ~270 ~ positioned ^ ^ ^10 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]}
+$execute if score @s[scores={rng3=7..}] rng1 matches 40 rotated ~$(initial_rotation) 0 rotated ~45 0 rotated ~270 ~ positioned ^ ^ ^10 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]}
+$execute if score @s[scores={rng3=7..}] rng1 matches 40 rotated ~$(initial_rotation) 0 rotated ~60 0 rotated ~270 ~ positioned ^ ^ ^10 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]}
 
 
