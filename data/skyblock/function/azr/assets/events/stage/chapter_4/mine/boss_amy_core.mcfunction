@@ -71,12 +71,12 @@ execute as @s[scores={rng2=50..}] run scoreboard players set @s rng2 49
 
 
 
-execute as @s[scores={rng1=..9999}] positioned -79495 14 -328 unless entity @a[tag=azrPlayer,distance=..35] run bossbar remove azr:boss_hp_bar
-execute as @s[scores={rng1=..9999}] positioned -79495 14 -328 unless entity @a[tag=azrPlayer,distance=..35] run tp @n[tag=AzrielMob_demon_amy] ~ ~-200 ~
-execute as @s[scores={rng1=..9999}] positioned -79495 14 -328 unless entity @a[tag=azrPlayer,distance=..35] run kill @n[tag=AzrielMob_demon_amy]
-execute as @s[scores={rng1=..9999}] positioned -79495 14 -328 unless entity @a[tag=azrPlayer,distance=..35] run clone -79514 5 -347 -79476 6 -309 -79514 14 -347
-execute as @s[scores={rng1=..9999}] positioned -79495 14 -328 unless entity @a[tag=azrPlayer,distance=..35] run stopsound @a[tag=azrShowDialog] music minecraft:garden1.combathigh
-execute as @s[scores={rng1=..9999}] positioned -79495 14 -328 unless entity @a[tag=azrPlayer,distance=..35] run kill @s
+execute as @s[scores={rng1=..9999,rng3=..9}] positioned -79495 14 -328 unless entity @a[tag=azrPlayer,distance=..35] run bossbar remove azr:boss_hp_bar
+execute as @s[scores={rng1=..9999,rng3=..9}] positioned -79495 14 -328 unless entity @a[tag=azrPlayer,distance=..35] run tp @n[tag=AzrielMob_demon_amy] ~ ~-200 ~
+execute as @s[scores={rng1=..9999,rng3=..9}] positioned -79495 14 -328 unless entity @a[tag=azrPlayer,distance=..35] run kill @n[tag=AzrielMob_demon_amy]
+execute as @s[scores={rng1=..9999,rng3=..9}] positioned -79495 14 -328 unless entity @a[tag=azrPlayer,distance=..35] run clone -79514 5 -347 -79476 6 -309 -79514 14 -347
+execute as @s[scores={rng1=..9999,rng3=..9}] positioned -79495 14 -328 unless entity @a[tag=azrPlayer,distance=..35] run stopsound @a[tag=azrShowDialog] music minecraft:garden1.combathigh
+execute as @s[scores={rng1=..9999,rng3=..9}] positioned -79495 14 -328 unless entity @a[tag=azrPlayer,distance=..35] run kill @s
 
 
 
