@@ -10,7 +10,7 @@ execute if score @s[scores={rng3=5..}] rng8 matches 120 run summon marker ^ ^ ^-
 execute if score @s rng8 matches 180 store result score @s rng7 run random value 1..8
 
 
-execute as @s[scores={rng2=10..,rng3=7}] run function skyblock:azr/assets/events/stage/chapter_4/mine/boss_amy_conv_andralune_join
+execute as @s[scores={rng12=15..,rng3=7}] run function skyblock:azr/assets/events/stage/chapter_4/mine/boss_amy_conv_andralune_join
 
 
 
