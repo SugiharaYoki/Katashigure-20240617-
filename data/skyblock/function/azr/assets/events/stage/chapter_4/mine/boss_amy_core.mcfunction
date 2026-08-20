@@ -1,6 +1,8 @@
 scoreboard players add @s rng1 1
 scoreboard players add @s rng2 1
 
+scoreboard players add @s[tag=AzrBoss4_Mersenne_Help_1] rng4 1
+
 execute as @s[scores={rng2=2}] positioned -79495 15 -328 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[0.0f,0.0f]}
 execute as @s[scores={rng2=2}] positioned -79495 15 -328 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[72.0f,0.0f]}
 execute as @s[scores={rng2=2}] positioned -79495 15 -328 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[144.0f,0.0f]}
@@ -33,6 +35,22 @@ execute as @s[scores={rng2=12,rng3=2}] run tellraw @a[tag=azrShowDialog] [{text:
 execute as @s[scores={rng2=28,rng3=2}] at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng2=28,rng3=2}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"red",bold:1b},{bold: false,text:"\n“弱于吾者，尚无权能葬吾。”",color:"white"}]
 execute as @s[scores={rng2=37,rng3=2}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n（我面前这人……真的死得了吗？！）",color:"white"}]
+
+execute as @s[scores={rng2=29,rng3=3}] as @a[tag=azrPlayer] at @s run playsound minecraft:entity.pillager.ambient master @s ~ ~ ~ 0.3 0.8
+execute as @s[scores={rng2=29,rng3=3}] run tellraw @a[tag=azrShowDialog] [{text:"默尔森的灵能传话：",color:"yellow",bold:1b},{bold: false,text:"\n“爱理莎小姐，我会远程向你输送灵力。但可能没有那么快生效，坚持住！援军很快就到！”",color:"white"}]
+execute as @s[scores={rng2=35,rng3=3}] run playsound minecraft:block.beacon.activate player @a ~ ~ ~ 2 1.3
+execute as @s[scores={rng2=35,rng3=3}] run tag @s add AzrBoss4_Mersenne_Help_1
+
+execute as @s[scores={rng4=11}] run effect give @a[tag=azrPlayer,distance=..100] regeneration 3 0 false
+execute as @s[scores={rng4=11}] run effect give @a[tag=azrPlayer,distance=..100] absorption 20 0 false
+execute as @s[scores={rng4=24..}] run scoreboard players set @s rng4 0
+
+
+
+
+
+
+
 
 execute as @s[scores={rng3=1..}] as @n[tag=AzrielMob_demon_amy] at @s run function skyblock:azr/assets/mobs/skill/boss4_amy/core_x4
 
