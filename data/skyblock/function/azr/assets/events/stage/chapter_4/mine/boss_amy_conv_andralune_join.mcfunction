@@ -61,13 +61,24 @@ execute if score @s rng11 matches 644 positioned ~ ~ ~ run tellraw @a[tag=azrSho
 execute if score @s rng11 matches 718 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng11 matches 718 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"亚米：",color:"red",bold:1b},{bold: false,text:"\n“区区神庭的走狗和一条亡魂，灼热地焚尽在这地狱之中吧。”",color:"white"}]
 
+execute if score @s rng11 matches 788 run effect give @s darkness 4 0 true
 execute if score @s rng11 matches 808 run scoreboard players set @s rng11 2000
 
 
 
 
 execute if score @s rng11 matches 2001 run tag @n[tag=AzrielMob_demon_amy] remove AZR_action_halt
-execute if score @s rng11 matches 2001 run 
+execute if score @s rng11 matches 2001 run title @s times 0s 40t 15t
+execute if score @s rng11 matches 2001 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden2.chapter_title ambient @s ~ ~ ~ 2 1.3
+execute if score @s rng11 matches 2001 run title @s title {text:"亚",color: "#ff5050",bold:1b}
+execute if score @s rng11 matches 2011 as @a[tag=azrShowDialog] at @s run stopsound @s ambient minecraft:garden2.chapter_title
+execute if score @s rng11 matches 2011 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden2.chapter_title ambient @s ~ ~ ~ 2 1.3
+execute if score @s rng11 matches 2011 run title @s title {text:"亚 米",color: "#ff5050",bold:1b}
+execute if score @s rng11 matches 2031 as @a[tag=azrShowDialog] at @s run stopsound @s ambient minecraft:garden2.chapter_title
+execute if score @s rng11 matches 2031 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden2.chapter_title ambient @s ~ ~ ~ 2 1.3
+execute if score @s rng11 matches 2031 run title @s title {text:"亚 米",color: "#ff5050",bold:1b}
+execute if score @s rng11 matches 2031 run title @s subtitle {text:"所 罗 门 72 柱 魔 神 · 第 58 柱",color: "white",bold:0b}
+
 
 
 execute if score @s rng11 matches 2001 at @n[tag=AzrielMob_demon_amy] run summon item_display ~2 ~2 ~ {Tags:["AzrielMob_mob_marker","AzrielMob_demon_amy_flame_eye_a","AzrielMob_demon_amy_flame_eye"],transformation:{left_rotation:[0,1,0,1],right_rotation:[0,1,0,1],translation:[0,0,0],scale:[1,1,1]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjE0MmEzNWFjMGIwNTVlZDUwYTVjYmY4NzBiNmVmMWNjMWY5NGUyNjQyYjliYTY1MGM5ZTAzODVlNmNiZTM2In19fQ=="}]}}}}
@@ -78,7 +89,7 @@ execute if score @s rng11 matches 2081 run effect clear @a[tag=azrPlayer,distanc
 execute if score @s rng11 matches 2081 run effect clear @n[tag=AzrielMob_demon_amy,distance=..150] resistance
 execute if score @s rng11 matches 2081 run effect clear @n[tag=AzrielMob_demon_amy,distance=..150] slowness
 execute if score @s rng11 matches 2081 run effect clear @n[tag=AzrielNPC_andralune,distance=..150] slowness
-execute if score @s rng11 matches 2081 run bossbar add azr:boss_hp_bar "天行有常，不为桀亡 - 亚米"
+execute if score @s rng11 matches 2081 run bossbar add azr:boss_hp_bar [{text:"天行有常，不为桀亡 · ",bold:true,color:"white",shadow_color:5510147},{text:"魔神亚米",bold:true,color:"#ff5050",shadow_color:5510147}]
 execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar color red
 execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar max 100
 execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
