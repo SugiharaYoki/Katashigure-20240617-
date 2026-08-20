@@ -14,7 +14,7 @@ execute as @s[scores={rng2=7}] unless score @s rng3 matches 1.. run scoreboard p
 execute as @s[scores={rng2=7..}] run scoreboard players operation @n[tag=AzrielMob_demon_amy] rng3 = @s rng3
 
 execute unless score @s rng3 matches 10.. as @s[scores={rng2=7}] run bossbar add azr:boss_hp_bar "黑铠的狂戮 - ？？？"
-execute if score @s rng3 matches 10.. as @s[scores={rng2=7}] run bossbar add azr:boss_hp_bar "天行有常，不为桀亡 - 亚米"
+execute if score @s rng3 matches 10.. as @s[scores={rng2=7}] run bossbar add azr:boss_hp_bar [{text:"天行有常，不为桀亡 · ",bold:true,color:"white",shadow_color:5510147},{text:"魔神亚米",bold:true,color:"#ff5050",shadow_color:5510147}]
 execute as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar color red
 execute as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar max 100
 execute as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
@@ -26,7 +26,7 @@ execute unless score @s rng3 matches 7.. if score @s rng9 matches 8 as @a[tag=az
 execute unless score @s rng3 matches 7.. if score @s rng9 matches 557.. run scoreboard players set @s rng9 7
 execute if score @s rng3 matches 10.. as @s[scores={rng1=..9999}] run scoreboard players add @s rng9 1
 execute if score @s rng3 matches 10.. if score @s rng9 matches 5 as @a[tag=azrShowDialog] at @s run playsound minecraft:fuse music @s ~ ~ ~ 0.65
-execute if score @s rng3 matches 10.. if score @s rng9 matches 800.. run scoreboard players set @s rng9 4
+execute if score @s rng3 matches 10.. if score @s rng9 matches 1000.. run scoreboard players set @s rng9 4
 
 
 execute as @s[scores={rng1=9999}] run scoreboard players set @s rng1 9990
