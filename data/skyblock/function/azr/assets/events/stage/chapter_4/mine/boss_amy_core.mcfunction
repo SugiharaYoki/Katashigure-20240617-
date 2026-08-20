@@ -38,8 +38,8 @@ execute as @s[scores={rng2=37,rng3=2}] run tellraw @a[tag=azrShowDialog] [{text:
 
 execute as @s[scores={rng2=29,rng3=3}] as @a[tag=azrPlayer] at @s run playsound minecraft:entity.pillager.ambient master @s ~ ~ ~ 0.3 0.8
 execute as @s[scores={rng2=29,rng3=3}] run tellraw @a[tag=azrShowDialog] [{text:"默尔森的灵能传话：",color:"yellow",bold:1b},{bold: false,text:"\n“爱理莎小姐，我会远程向你输送灵力。但可能没有那么快生效，坚持住！援军很快就到！”",color:"white"}]
-execute as @s[scores={rng2=35,rng3=3}] run playsound minecraft:block.beacon.activate player @a ~ ~ ~ 2 1.3
-execute as @s[scores={rng2=35,rng3=3}] run tag @s add AzrBoss4_Mersenne_Help_1
+execute as @s[scores={rng2=45,rng3=3}] run playsound minecraft:block.beacon.activate player @a ~ ~ ~ 2 1.3
+execute as @s[scores={rng2=45,rng3=3}] run tag @s add AzrBoss4_Mersenne_Help_1
 
 execute as @s[scores={rng4=11}] run effect give @a[tag=azrPlayer,distance=..100] regeneration 3 0 false
 execute as @s[scores={rng4=11}] run effect give @a[tag=azrPlayer,distance=..100] absorption 20 0 false
@@ -57,11 +57,11 @@ execute as @s[scores={rng3=1..}] as @n[tag=AzrielMob_demon_amy] at @s run functi
 
 
 
-execute as @s[scores={rng2=39..,rng3=1}] unless entity @n[tag=AzrielMob_demon_amy,distance=..80,type=piglin_brute] run stopsound @a[tag=azrShowDialog] music minecraft:garden1.combathigh
-execute as @s[scores={rng2=39..,rng3=1}] unless entity @n[tag=AzrielMob_demon_amy,distance=..80,type=piglin_brute] run scoreboard players set @s rng9 0
-execute as @s[scores={rng2=39..}] unless entity @n[tag=AzrielMob_demon_amy,distance=..80,type=piglin_brute] run scoreboard players add @s rng3 1
-execute as @s[scores={rng2=39..}] unless entity @n[tag=AzrielMob_demon_amy,distance=..80,type=piglin_brute] run scoreboard players set @s rng2 -10
-execute as @s[scores={rng2=40..}] run scoreboard players set @s rng2 39
+execute as @s[scores={rng2=49..,rng3=1}] unless entity @n[tag=AzrielMob_demon_amy,distance=..80,type=piglin_brute] run stopsound @a[tag=azrShowDialog] music minecraft:garden1.combathigh
+execute as @s[scores={rng2=49..,rng3=1}] unless entity @n[tag=AzrielMob_demon_amy,distance=..80,type=piglin_brute] run scoreboard players set @s rng9 0
+execute as @s[scores={rng2=49..}] unless entity @n[tag=AzrielMob_demon_amy,distance=..80,type=piglin_brute] run scoreboard players add @s rng3 1
+execute as @s[scores={rng2=49..}] unless entity @n[tag=AzrielMob_demon_amy,distance=..80,type=piglin_brute] run scoreboard players set @s rng2 -10
+execute as @s[scores={rng2=50..}] run scoreboard players set @s rng2 49
 
 
 
