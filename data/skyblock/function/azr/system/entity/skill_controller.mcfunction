@@ -57,4 +57,4 @@ execute if entity @s[tag=AzrielNPC_stage9_entry_conversation5] run function skyb
 execute if entity @s[tag=AzrielTrader_pig_henry] run function skyblock:azr/assets/mobs/skill/special/pig_henry
 
 #boss
-execute if score stage Azr_system matches 60..68 if entity @s[type=piglin_brute,tag=AzrielMob_demon_amy] run function skyblock:azr/assets/mobs/skill/boss4_amy/core_x20
+execute if score stage Azr_system matches 60..65 if entity @s[type=piglin_brute,tag=AzrielMob_demon_amy] run function skyblock:azr/assets/mobs/skill/boss4_amy/core_x20
