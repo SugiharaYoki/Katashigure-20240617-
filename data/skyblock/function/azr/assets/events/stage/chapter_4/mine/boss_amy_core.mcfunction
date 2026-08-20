@@ -38,6 +38,7 @@ execute as @s[scores={rng2=37,rng3=2}] run tellraw @a[tag=azrShowDialog] [{text:
 
 execute as @s[scores={rng2=29,rng3=3}] as @a[tag=azrPlayer] at @s run playsound minecraft:entity.pillager.ambient master @s ~ ~ ~ 0.3 0.8
 execute as @s[scores={rng2=29,rng3=3}] run tellraw @a[tag=azrShowDialog] [{text:"默尔森的灵能传话：",color:"yellow",bold:1b},{bold: false,text:"\n“爱理莎小姐，我会远程向你输送灵力。但可能没有那么快生效，坚持住！援军很快就到！”",color:"white"}]
+execute as @s[scores={rng2=45,rng3=2}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n（力量……是生命魔力，我的状态略有恢复。）",color:"white"}]
 execute as @s[scores={rng2=45,rng3=3}] run playsound minecraft:block.beacon.activate player @a ~ ~ ~ 2 1.3
 execute as @s[scores={rng2=45,rng3=3}] run tag @s add AzrBoss4_Mersenne_Help_1
 
