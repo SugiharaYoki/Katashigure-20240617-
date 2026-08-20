@@ -58,3 +58,5 @@ execute if score @s rng11 matches 718 positioned ~ ~ ~ run tellraw @a[tag=azrSho
 
 
 execute if score @s rng11 matches 2001 run tag @n[tag=AzrielMob_demon_amy] remove AZR_action_halt
+
+execute if score @s rng11 matches 2001 run execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng3 11
