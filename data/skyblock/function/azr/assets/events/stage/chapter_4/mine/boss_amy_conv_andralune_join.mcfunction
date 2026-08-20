@@ -68,16 +68,16 @@ execute if score @s rng11 matches 808 run scoreboard players set @s rng11 2000
 
 
 execute if score @s rng11 matches 2001 run tag @n[tag=AzrielMob_demon_amy] remove AZR_action_halt
-execute if score @s rng11 matches 2001 run title @s times 0s 40t 15t
+execute if score @s rng11 matches 2001 as @a[tag=azrShowDialog] at @s run title @s times 0s 40t 15t
 execute if score @s rng11 matches 2001 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden2.chapter_title ambient @s ~ ~ ~ 2 1.3
-execute if score @s rng11 matches 2001 run title @s title {text:"亚",color: "#ff5050",bold:1b}
+execute if score @s rng11 matches 2001 as @a[tag=azrShowDialog] at @s run title @s title {text:"亚",color: "#ff5050",bold:1b}
 execute if score @s rng11 matches 2011 as @a[tag=azrShowDialog] at @s run stopsound @s ambient minecraft:garden2.chapter_title
 execute if score @s rng11 matches 2011 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden2.chapter_title ambient @s ~ ~ ~ 2 1.3
-execute if score @s rng11 matches 2011 run title @s title {text:"亚 米",color: "#ff5050",bold:1b}
+execute if score @s rng11 matches 2011 as @a[tag=azrShowDialog] at @s run title @s title {text:"亚 米",color: "#ff5050",bold:1b}
 execute if score @s rng11 matches 2031 as @a[tag=azrShowDialog] at @s run stopsound @s ambient minecraft:garden2.chapter_title
 execute if score @s rng11 matches 2031 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden2.chapter_title ambient @s ~ ~ ~ 2 1.3
-execute if score @s rng11 matches 2031 run title @s title {text:"亚 米",color: "#ff5050",bold:1b}
-execute if score @s rng11 matches 2031 run title @s subtitle {text:"所 罗 门 72 柱 魔 神 · 第 58 柱",color: "white",bold:0b}
+execute if score @s rng11 matches 2031 as @a[tag=azrShowDialog] at @s run title @s title {text:"亚 米",color: "#ff5050",bold:1b}
+execute if score @s rng11 matches 2031 as @a[tag=azrShowDialog] at @s run title @s subtitle {text:"所 罗 门 72 柱 魔 神 · 第 58 柱",color: "white",bold:0b}
 
 
 
