@@ -14,4 +14,12 @@ execute if score @s[scores={rng2=7..8}] rng1 matches 33.. run function skyblock:
 
 execute store result score @s Health run data get entity @s Health
 
+execute if score @s[scores={rng3=2..}] rng1 matches 60 store result score @s rng2 run random value 1..8
+execute if score @s[scores={rng2=1}] rng1 matches 60 positioned ~ ~ ~1.5 if block ~ 14 ~ red_nether_bricks run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_amy_lava_burst_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng2=2}] rng1 matches 60 positioned ~ ~ ~-1.5 if block ~ 14 ~ red_nether_bricks run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_amy_lava_burst_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng2=3}] rng1 matches 60 positioned ~1.5 ~ ~ if block ~ 14 ~ red_nether_bricks run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_amy_lava_burst_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng2=4}] rng1 matches 60 positioned ~-1.5 ~ ~ if block ~ 14 ~ red_nether_bricks run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_amy_lava_burst_marker","AzrielMob_mob_marker"]}
+
+
+
 execute if score @s rng1 matches 85.. store result score @s rng1 run random value -5..15

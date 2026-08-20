@@ -42,6 +42,7 @@ execute if entity @s[tag=AzrielMob_playertrap_land_fracture] run function skyblo
 execute as @s[tag=AzrielMob_demon_amy_rebirth_particle_a] at @s run function skyblock:azr/assets/mobs/skill/boss4_amy/rebirth_particle_a
 execute as @s[tag=AzrielMob_demon_amy_flame_eye] at @s run function skyblock:azr/assets/mobs/skill/boss4_amy/flame_eye
 execute as @s[tag=AzrielMob_boss_amy_axe_line_marker] at @s run function skyblock:azr/assets/mobs/skill/boss4_amy/marker_axe_line
+execute as @s[tag=AzrielMob_boss_amy_lava_burst_marker] at @s run function skyblock:azr/assets/mobs/skill/boss4_amy/marker_lava_burst
 
 
 
