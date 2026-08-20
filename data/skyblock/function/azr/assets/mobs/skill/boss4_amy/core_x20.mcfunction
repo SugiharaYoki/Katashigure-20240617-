@@ -31,8 +31,7 @@ execute if score @s rng8 matches 200.. store result score @s rng8 run random val
 
 
 
-execute as @n[tag=AzrielNPC_andralune,distance=..100] at @s if block ~ ~-0.1 ~ air run particle falling_obsidian_tear ^2 ^ ^ 0.2 0.2 0.2 0 1
-execute as @n[tag=AzrielNPC_andralune,distance=..100] at @s if block ~ ~-0.1 ~ air run particle falling_obsidian_tear ^-2 ^ ^ 0.2 0.2 0.2 0 1
+execute as @n[tag=AzrielNPC_andralune,distance=..100] at @s run function skyblock:azr/assets/mobs/skill/boss4_amy/andralune_core_x20
 
 
 
