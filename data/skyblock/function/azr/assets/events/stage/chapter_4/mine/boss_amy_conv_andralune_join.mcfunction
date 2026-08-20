@@ -9,6 +9,8 @@ execute if score @s rng11 matches 2 run scoreboard players set @n[tag=AzrielMob_
 execute if score @s rng11 matches 2 run scoreboard players set @n[tag=AzrielMob_demon_amy] rng7 0
 execute if score @s rng11 matches 2 run scoreboard players set @n[tag=AzrielMob_demon_amy] rng8 0
 execute if score @s rng11 matches 2 run tag @n[tag=AzrielMob_demon_amy] add AZR_action_halt
+execute if score @s rng11 matches 22 as @n[tag=AzrielMob_demon_amy] at @s unless block ~ ~-0.5 ~ nether_bricks run tp @s -79495 15 -328
+
 
 execute if score @s rng11 matches 22 run stopsound @a[tag=azrShowDialog] music minecraft:garden1.combathigh
 execute if score @s rng11 matches 22 run summon minecraft:lightning_bolt -79503 15 -328
