@@ -14,10 +14,10 @@ execute if score @s[scores={rng2=7..8}] rng1 matches 33.. run function skyblock:
 
 
 execute store result score @s rng5 run random value 1..80
-execute if score @s[scores={rng3=2..}] rng5 matches 24 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
-execute if score @s[scores={rng3=4..}] rng5 matches 25 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
-execute if score @s[scores={rng3=6..}] rng5 matches 26 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
-execute if score @s[scores={rng3=8..}] rng5 matches 27 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng3=2..},tag=!AZR_action_halt] rng5 matches 24 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng3=4..},tag=!AZR_action_halt] rng5 matches 25 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng3=6..},tag=!AZR_action_halt] rng5 matches 26 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng3=8..},tag=!AZR_action_halt] rng5 matches 27 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
 
 
 execute store result score @s Health run data get entity @s Health
