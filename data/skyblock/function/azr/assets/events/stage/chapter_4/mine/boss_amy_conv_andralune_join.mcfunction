@@ -3,7 +3,12 @@ scoreboard players add @s rng11 1
 execute if score @s rng11 matches 2 run effect give @a[tag=azrPlayer,distance=..150] resistance infinite 4 true
 execute if score @s rng11 matches 2 run effect give @a[tag=azrPlayer,distance=..150] regeneration infinite 2 true
 execute if score @s rng11 matches 2 run effect give @n[tag=AzrielMob_demon_amy,distance=..150] resistance infinite 4 true
-
+execute if score @s rng11 matches 2 run scoreboard players set @n[tag=AzrielMob_demon_amy] rng1 0
+execute if score @s rng11 matches 2 run scoreboard players set @n[tag=AzrielMob_demon_amy] rng2 0
+execute if score @s rng11 matches 2 run scoreboard players set @n[tag=AzrielMob_demon_amy] rng5 0
+execute if score @s rng11 matches 2 run scoreboard players set @n[tag=AzrielMob_demon_amy] rng7 0
+execute if score @s rng11 matches 2 run scoreboard players set @n[tag=AzrielMob_demon_amy] rng8 0
+execute if score @s rng11 matches 2 run tag @n[tag=AzrielMob_demon_amy] add AZR_action_halt
 
 execute if score @s rng11 matches 22 run stopsound @a[tag=azrShowDialog] music minecraft:garden1.combathigh
 execute if score @s rng11 matches 22 run summon minecraft:lightning_bolt -79503 15 -328
@@ -40,10 +45,14 @@ execute if score @s rng11 matches 502 positioned -79504 15 -328 run tellraw @a[t
 
 execute if score @s rng11 matches 572 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“我很喜欢你的发言。那么，我们一起上吧。”",color:"white"}]
 
-execute if score @s rng11 matches 642 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute if score @s rng11 matches 642 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"亚米：",color:"red",bold:1b},{bold: false,text:"\n“有趣……人类、天使，你们都很有趣。但我会在死亡的过程中认清你们的一切弱点。”",color:"white"}]
+execute if score @s rng11 matches 644 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score @s rng11 matches 644 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"亚米：",color:"red",bold:1b},{bold: false,text:"\n“有趣……人类、天使，你们都很有趣。但我会在死亡的过程中认清你们的一切弱点。”",color:"white"}]
 
-execute if score @s rng11 matches 712 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute if score @s rng11 matches 712 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"亚米：",color:"red",bold:1b},{bold: false,text:"\n“区区神庭的走狗和一条亡魂，焚尽在这地狱之中吧。”",color:"white"}]
+execute if score @s rng11 matches 718 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score @s rng11 matches 718 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"亚米：",color:"red",bold:1b},{bold: false,text:"\n“区区神庭的走狗和一条亡魂，焚尽在这地狱之中吧。”",color:"white"}]
 
 
+
+
+
+execute if score @s rng11 matches 2001 run tag @n[tag=AzrielMob_demon_amy] remove AZR_action_halt

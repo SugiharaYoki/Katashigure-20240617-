@@ -1,5 +1,5 @@
 
-scoreboard players add @s[scores={rng3=2..}] rng8 1
+scoreboard players add @s[scores={rng3=2..},tag=!AZR_action_halt] rng8 1
 execute if score @s rng8 matches 30 store result score @s rng7 run random value 1..8
 
 
