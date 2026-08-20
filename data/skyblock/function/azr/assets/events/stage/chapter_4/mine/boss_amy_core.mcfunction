@@ -10,18 +10,23 @@ execute as @s[scores={rng2=2}] positioned -79495 15 -328 run summon marker ~ ~0.
 execute as @s[scores={rng2=2}] positioned -79495 15 -328 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[288.0f,0.0f]}
 execute as @s[scores={rng2=7}] positioned -79495 15 -328 run function skyblock:azr/assets/mobs/skill/boss4_amy/summon_2
 
-execute unless score @s rng3 matches 10.. as @s[scores={rng2=7}] unless score @s rng3 matches 1.. run scoreboard players set @s rng3 1
-execute unless score @s rng3 matches 10.. as @s[scores={rng2=7..}] run scoreboard players operation @n[tag=AzrielMob_demon_amy] rng3 = @s rng3
+execute as @s[scores={rng2=7}] unless score @s rng3 matches 1.. run scoreboard players set @s rng3 1
+execute as @s[scores={rng2=7..}] run scoreboard players operation @n[tag=AzrielMob_demon_amy] rng3 = @s rng3
+
 execute unless score @s rng3 matches 10.. as @s[scores={rng2=7}] run bossbar add azr:boss_hp_bar "黑铠的狂戮 - ？？？"
-execute unless score @s rng3 matches 10.. as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar color red
-execute unless score @s rng3 matches 10.. as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar max 100
-execute unless score @s rng3 matches 10.. as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
-execute unless score @s rng3 matches 10.. as @s[scores={rng2=7..}] store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielMob_demon_amy] Health
+execute if score @s rng3 matches 10.. as @s[scores={rng2=7}] run bossbar add azr:boss_hp_bar "天行有常，不为桀亡 - 亚米"
+execute as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar color red
+execute as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar max 100
+execute as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
+execute as @s[scores={rng2=7..}] store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielMob_demon_amy] Health
 #天行有常，不为尧存，不为桀亡
 
 execute unless score @s rng3 matches 7.. as @s[scores={rng1=..9999}] run scoreboard players add @s rng9 1
-execute unless score @s rng3 matches 7.. unless score @s rng3 matches 7.. if score @s rng9 matches 8 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden1.combathigh music @s ~ ~ ~ 0.65
-execute unless score @s rng3 matches 7.. unless score @s rng3 matches 7.. if score @s rng9 matches 557.. run scoreboard players set @s rng9 7
+execute unless score @s rng3 matches 7.. if score @s rng9 matches 8 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden1.combathigh music @s ~ ~ ~ 0.65
+execute unless score @s rng3 matches 7.. if score @s rng9 matches 557.. run scoreboard players set @s rng9 7
+execute if score @s rng3 matches 10.. as @s[scores={rng1=..9999}] run scoreboard players add @s rng9 1
+execute if score @s rng3 matches 10.. if score @s rng9 matches 5 as @a[tag=azrShowDialog] at @s run playsound minecraft:fuse music @s ~ ~ ~ 0.65
+execute if score @s rng3 matches 10.. if score @s rng9 matches 800.. run scoreboard players set @s rng9 4
 
 
 execute as @s[scores={rng1=9999}] run scoreboard players set @s rng1 9990

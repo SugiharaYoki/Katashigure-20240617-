@@ -59,4 +59,17 @@ execute if score @s rng11 matches 718 positioned ~ ~ ~ run tellraw @a[tag=azrSho
 
 execute if score @s rng11 matches 2001 run tag @n[tag=AzrielMob_demon_amy] remove AZR_action_halt
 
-execute if score @s rng11 matches 2001 run execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng3 11
+
+execute if score @s rng11 matches 2081 run bossbar add azr:boss_hp_bar "黑铠的狂戮 - ？？？"
+execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar color red
+execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar max 100
+execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
+
+execute if score @s rng11 matches 2081 run execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng9 0
+execute if score @s rng11 matches 2081 run execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng3 11
+
+
+
+
+
+
