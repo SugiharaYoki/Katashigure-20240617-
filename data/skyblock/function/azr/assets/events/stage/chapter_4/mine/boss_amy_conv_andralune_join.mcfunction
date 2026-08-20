@@ -63,7 +63,7 @@ execute if score @s rng11 matches 644 positioned ~ ~ ~ run tellraw @a[tag=azrSho
 execute if score @s rng11 matches 718 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng11 matches 718 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"亚米：",color:"red",bold:1b},{bold: false,text:"\n“区区神庭的走狗和一条亡魂，灼热地焚尽在这地狱之中吧。”",color:"white"}]
 
-execute if score @s rng11 matches 788 run effect give @s darkness 4 0 true
+execute if score @s rng11 matches 788 as @a[tag=azrShowDialog] at @s run effect give @s darkness 4 0 true
 execute if score @s rng11 matches 808 run scoreboard players set @s rng11 2000
 
 
