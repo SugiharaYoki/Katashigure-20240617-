@@ -52,6 +52,10 @@ execute if score @s rng11 matches 362 positioned ~ ~ ~ run tellraw @a[tag=azrSho
 execute if score @s rng11 matches 432 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng11 matches 432 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"亚米：",color:"red",bold:1b},{bold: false,text:"\n“安德拉伦恩，你清楚我不会被任何我所看不起的人杀死。”",color:"white"}]
 
+execute if score @s rng11 matches 490 positioned -79504 15 -328 at @n[tag=AzrielNPC_andralune] run function skyblock:azr/assets/mobs/skill/boss1_andralune/equip_wings_particle
+execute if score @s rng11 matches 492 positioned -79504 15 -328 at @n[tag=AzrielNPC_andralune] run function skyblock:azr/assets/mobs/skill/boss1_andralune/equip_wings
+
+
 execute if score @s rng11 matches 502 positioned -79504 15 -328 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.
 execute if score @s rng11 matches 502 positioned -79504 15 -328 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"light_purple",bold:1b},{bold: false,text:"\n“我知道，但我和你面前这位人类的亡魂——爱理莎小姐——会让你看得起我们。”",color:"white"}]
 
