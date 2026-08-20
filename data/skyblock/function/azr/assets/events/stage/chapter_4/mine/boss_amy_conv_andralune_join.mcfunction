@@ -1,27 +1,30 @@
 scoreboard players add @s rng11 1 
 
-execute if score @s rng11 matches 2 run effect give @a[tag=azrPlayer,distance=..150] resistance infinite 4 true
-execute if score @s rng11 matches 2 run effect give @a[tag=azrPlayer,distance=..150] regeneration infinite 2 true
-execute if score @s rng11 matches 2 run effect give @n[tag=AzrielMob_demon_amy,distance=..150] resistance infinite 4 true
-execute if score @s rng11 matches 2 run scoreboard players set @n[tag=AzrielMob_demon_amy] rng1 0
-execute if score @s rng11 matches 2 run scoreboard players set @n[tag=AzrielMob_demon_amy] rng2 0
-execute if score @s rng11 matches 2 run scoreboard players set @n[tag=AzrielMob_demon_amy] rng5 0
-execute if score @s rng11 matches 2 run scoreboard players set @n[tag=AzrielMob_demon_amy] rng7 0
-execute if score @s rng11 matches 2 run scoreboard players set @n[tag=AzrielMob_demon_amy] rng8 0
-execute if score @s rng11 matches 2 run tag @n[tag=AzrielMob_demon_amy] add AZR_action_halt
-execute if score @s rng11 matches 22 as @n[tag=AzrielMob_demon_amy] at @s unless block ~ ~-0.5 ~ nether_bricks run tp @s -79495 15 -328
+execute if score @s rng11 matches 8 run effect give @a[tag=azrPlayer,distance=..150] resistance infinite 4 true
+execute if score @s rng11 matches 8 run effect give @a[tag=azrPlayer,distance=..150] regeneration infinite 2 true
+execute if score @s rng11 matches 8 run effect give @n[tag=AzrielMob_demon_amy,distance=..150] resistance infinite 4 true
+execute if score @s rng11 matches 8 run effect give @n[tag=AzrielMob_demon_amy,distance=..150] slowness infinite 99 true
+execute if score @s rng11 matches 8 run effect give @n[tag=AzrielNPC_andralune,distance=..150] slowness infinite 99 true
+execute if score @s rng11 matches 8 run scoreboard players set @n[tag=AzrielMob_demon_amy] rng1 0
+execute if score @s rng11 matches 8 run scoreboard players set @n[tag=AzrielMob_demon_amy] rng2 0
+execute if score @s rng11 matches 8 run scoreboard players set @n[tag=AzrielMob_demon_amy] rng5 0
+execute if score @s rng11 matches 8 run scoreboard players set @n[tag=AzrielMob_demon_amy] rng7 0
+execute if score @s rng11 matches 8 run scoreboard players set @n[tag=AzrielMob_demon_amy] rng8 0
+execute if score @s rng11 matches 8 run tag @n[tag=AzrielMob_demon_amy] add AZR_action_halt
+execute if score @s rng11 matches 8 as @n[tag=AzrielMob_demon_amy] at @s unless block ~ ~-0.5 ~ nether_bricks run tp @s -79495 15 -328
 
 
-execute if score @s rng11 matches 22 run stopsound @a[tag=azrShowDialog] music minecraft:garden1.combathigh
-execute if score @s rng11 matches 22 run summon minecraft:lightning_bolt -79503 15 -328
-execute if score @s rng11 matches 24 run summon minecraft:lightning_bolt -79504 15 -327
-execute if score @s rng11 matches 26 run summon minecraft:lightning_bolt -79505 15 -328
-execute if score @s rng11 matches 28 run summon minecraft:lightning_bolt -79504 15 -329
+execute if score @s rng11 matches 2 run stopsound @a[tag=azrShowDialog] music minecraft:garden1.combathigh
+execute if score @s rng11 matches 2 run summon minecraft:lightning_bolt -79503 15 -328
+execute if score @s rng11 matches 4 run summon minecraft:lightning_bolt -79504 15 -327
+execute if score @s rng11 matches 6 run summon minecraft:lightning_bolt -79505 15 -328
+execute if score @s rng11 matches 8 run summon minecraft:lightning_bolt -79504 15 -329
 
-execute if score @s rng11 matches 28 positioned -79504 15 -328 run tp @n[tag=AzrielNPC_andralune] ~ ~ ~ facing entity @n[tag=AzrielMob_demon_amy]
+execute if score @s rng11 matches 8 run bossbar remove azr:boss_hp_bar
+execute if score @s rng11 matches 8 positioned -79504 15 -328 run tp @n[tag=AzrielNPC_andralune] ~ ~ ~ facing entity @n[tag=AzrielMob_demon_amy]
 
-execute if score @s rng11 matches 28 positioned -79504 15 -328 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.
-execute if score @s rng11 matches 28 positioned -79504 15 -328 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"light_purple",bold:1b},{bold: false,text:"\n“很遗憾，你现在不止一个对手了。”",color:"white"}]
+execute if score @s rng11 matches 8 positioned -79504 15 -328 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.
+execute if score @s rng11 matches 8 positioned -79504 15 -328 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"light_purple",bold:1b},{bold: false,text:"\n“很遗憾，你现在不止一个对手了。”",color:"white"}]
 
 execute if score @s rng11 matches 60 run tp @n[tag=AzrielMob_demon_amy] ~ ~ ~ facing entity @n[tag=AzrielNPC_andralune]
 
@@ -60,7 +63,12 @@ execute if score @s rng11 matches 718 positioned ~ ~ ~ run tellraw @a[tag=azrSho
 execute if score @s rng11 matches 2001 run tag @n[tag=AzrielMob_demon_amy] remove AZR_action_halt
 
 
-execute if score @s rng11 matches 2081 run bossbar add azr:boss_hp_bar "黑铠的狂戮 - ？？？"
+execute if score @s rng11 matches 2081 run effect clear @a[tag=azrPlayer,distance=..150] resistance
+execute if score @s rng11 matches 2081 run effect clear @a[tag=azrPlayer,distance=..150] regeneration
+execute if score @s rng11 matches 2081 run effect clear @n[tag=AzrielMob_demon_amy,distance=..150] resistance
+execute if score @s rng11 matches 2081 run effect clear @n[tag=AzrielMob_demon_amy,distance=..150] slowness
+execute if score @s rng11 matches 2081 run effect clear @n[tag=AzrielNPC_andralune,distance=..150] slowness
+execute if score @s rng11 matches 2081 run bossbar add azr:boss_hp_bar "天行有常，不为桀亡 - 亚米"
 execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar color red
 execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar max 100
 execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
