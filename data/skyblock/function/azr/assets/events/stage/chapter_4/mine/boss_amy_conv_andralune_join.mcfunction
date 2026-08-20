@@ -2,6 +2,7 @@ scoreboard players add @s rng11 1
 
 execute if score @s rng11 matches 1 as @a[tag=azrPlayer] at @s run spawnpoint @s -79495 15 -328
 execute if score @s rng11 matches 1 positioned -79495 15 -328 run function skyblock:azr/assets/mobs/utility_respawn_anchor
+execute if score @s rng11 matches 1 positioned -79495 15 -328 run tag @n[tag=AzrielMob_utility_respawn_anchor,distance=..20] add AzrielMob_utility_respawn_anchor_teleport_disabled
 execute if score @s rng11 matches 2088 as @a[tag=azrPlayer] at @s run spawnpoint @s -79495 15 -328
 
 execute if score @s rng11 matches 8 run effect give @a[tag=azrPlayer,distance=..150] resistance infinite 4 true
