@@ -9,6 +9,8 @@ execute if score @s rng1 matches 50.. run particle trial_spawner_detection ~ ~3 
 execute if score @s rng1 matches 50 run playsound minecraft:entity.minecart.riding block @a ~ ~0.7 ~ 3 1.5
 execute if score @s rng1 matches 75 run particle explosion ~ ~ ~ 0 0 0 0 1
 execute if score @s rng1 matches 75 run playsound entity.generic.explode block @a ~ ~ ~ 1.5 1.2
+execute if score @s rng1 matches 75 as @a[distance=..1.5] at @s run damage @s 6 explosion by @n[type=piglin_brute,distance=..50]
+execute if score @s rng1 matches 75 as @n[tag=AzrielMob_demon_amy,distance=..1.7] at @s run damage @s 20 explosion by @n[type=piglin_brute,distance=..50]
 execute if score @s rng1 matches 75 run playsound minecraft:item.bucket.fill_lava block @a ~ ~ ~ 1.5 0.8
 execute if score @s rng1 matches 75 if block ~ 14 ~ red_nether_bricks run setblock ~ 14 ~ lava
 
