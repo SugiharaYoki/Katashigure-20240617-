@@ -70,6 +70,15 @@ execute as @s[scores={rng1=1132}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDia
 execute as @s[scores={rng1=1150}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=1150}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“……我明白了。我会保护好自己，老大。”",color:"white"}]
 
+execute positioned -79409 30 -397 if entity @p[tag=azrPlayer,distance=..3] if score @s rng1 matches 1006..1013 run scoreboard players set @s rng1 1014
+execute positioned -79409 30 -397 if entity @p[tag=azrPlayer,distance=..3] if score @s rng1 matches 1015..1029 run scoreboard players set @s rng1 1030
+execute positioned -79409 30 -397 if entity @p[tag=azrPlayer,distance=..3] if score @s rng1 matches 1031..1042 run scoreboard players set @s rng1 1043
+execute positioned -79409 30 -397 if entity @p[tag=azrPlayer,distance=..3] if score @s rng1 matches 1044..1048 run scoreboard players set @s rng1 1049
+execute positioned -79409 30 -397 if entity @p[tag=azrPlayer,distance=..3] if score @s rng1 matches 1050..1061 run scoreboard players set @s rng1 1062
+execute positioned -79409 30 -397 if entity @p[tag=azrPlayer,distance=..3] if score @s rng1 matches 1063..1075 run scoreboard players set @s rng1 1076
+execute positioned -79409 30 -397 if entity @p[tag=azrPlayer,distance=..3] if score @s rng1 matches 1077..1088 run scoreboard players set @s rng1 1089
+execute positioned -79409 30 -397 if entity @p[tag=azrPlayer,distance=..3] if score @s rng1 matches 1090..1100 run scoreboard players set @s rng1 1101
+execute positioned -79409 30 -397 if entity @p[tag=azrPlayer,distance=..3] if score @s rng1 matches 1102..1114 run scoreboard players set @s rng1 1115
 
 
 execute as @s[scores={rng1=1999..2000}] run scoreboard players set @s rng1 1999
