@@ -15,6 +15,9 @@ fill -79886 31 -66 -79886 35 -65 air
 
 fill -79904 41 0 -79902 38 0 minecraft:air
 
+execute as @n[tag=AzrielNPC_andralune] at @s run tag @s remove AzrielMob
+execute as @n[tag=AzrielNPC_marinus] at @s run tag @s remove AzrielMob
+
 
 execute as @n[tag=AzrielNPC_mersenne] at @s run tp @s -79909 31 116
 execute as @n[tag=AzrielNPC_andralune] at @s run tp @s -79909 31 116
