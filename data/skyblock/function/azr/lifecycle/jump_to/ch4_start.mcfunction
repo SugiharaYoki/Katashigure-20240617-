@@ -9,6 +9,8 @@ forceload add -79862 -126
 
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 9999
 
+tp @n[tag=AzrielNPC_andralune] -79792 34 -191
+tp @n[tag=AzrielNPC_bird] -79790 34 -193
 
 execute positioned -79892 39 -145 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 99999
 execute positioned -79894 32 -174 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 99999

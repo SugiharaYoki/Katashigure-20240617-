@@ -9,6 +9,15 @@ execute if score @s[scores={rng3=5..}] rng8 matches 120 run summon marker ^ ^ ^-
 
 execute if score @s rng8 matches 180 store result score @s rng7 run random value 1..8
 
+
+execute as @s[scores={rng2=10..,rng3=7}] run function skyblock:azr/assets/events/stage/chapter_4/mine/boss_amy_conv_andralune_join
+
+
+
+
+
+
+
 execute if score @s[scores={rng7=1..6}] rng8 matches 180 rotated ~-60 0 run summon marker ^ ^ ^-1.2 {Tags:["AzrielMob_boss_amy_axe_line_marker","AzrielMob_mob_marker"]}
 execute if score @s[scores={rng7=1..6}] rng8 matches 183 rotated ~-60 0 run summon marker ^ ^ ^-3.2 {Tags:["AzrielMob_boss_amy_axe_line_marker","AzrielMob_mob_marker"]}
 execute if score @s[scores={rng7=1..6}] rng8 matches 186 rotated ~-60 0 run summon marker ^ ^ ^-5.2 {Tags:["AzrielMob_boss_amy_axe_line_marker","AzrielMob_mob_marker"]}

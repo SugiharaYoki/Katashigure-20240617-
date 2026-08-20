@@ -20,8 +20,8 @@ execute as @s[scores={rng2=7..}] store result bossbar azr:boss_hp_bar value run 
 #天行有常，不为尧存，不为桀亡
 
 execute as @s[scores={rng1=..9999}] run scoreboard players add @s rng9 1
-execute if score @s rng9 matches 8 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden1.combathigh music @s ~ ~ ~ 0.65
-execute if score @s rng9 matches 557.. run scoreboard players set @s rng9 7
+execute unless score @s rng3 matches 7.. if score @s rng9 matches 8 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden1.combathigh music @s ~ ~ ~ 0.65
+execute unless score @s rng3 matches 7.. if score @s rng9 matches 557.. run scoreboard players set @s rng9 7
 
 
 execute as @s[scores={rng1=9999}] run scoreboard players set @s rng1 9990
@@ -45,7 +45,6 @@ execute as @s[scores={rng2=45,rng3=3}] run tag @s add AzrBoss4_Mersenne_Help_1
 execute as @s[scores={rng4=11}] run effect give @a[tag=azrPlayer,distance=..100] regeneration 3 0 false
 execute as @s[scores={rng4=11}] run effect give @a[tag=azrPlayer,distance=..100] absorption 20 0 false
 execute as @s[scores={rng4=24..}] run scoreboard players set @s rng4 0
-
 
 
 
