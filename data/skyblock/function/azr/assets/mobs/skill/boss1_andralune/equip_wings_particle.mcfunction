@@ -3,6 +3,10 @@
 # 四道 end_rod 从背部向翼尖瞬间延伸
 # ============================================================
 
+playsound minecraft:entity.illusioner.prepare_blindness neutral @a ~ ~ ~ 1 0.78
+playsound minecraft:entity.breeze.wind_burst neutral @a ~ ~1 ~ 1 0.7
+particle minecraft:gust ^0.5 ^1.2 ^-1
+particle minecraft:gust ^-0.5 ^1.2 ^-1
 
 # ------------------------------------------------------------
 # 左主翼
