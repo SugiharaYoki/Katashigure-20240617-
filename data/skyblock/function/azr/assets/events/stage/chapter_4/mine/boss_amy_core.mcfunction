@@ -11,7 +11,7 @@ execute as @s[scores={rng2=2}] positioned -79495 15 -328 run summon marker ~ ~0.
 execute as @s[scores={rng2=2}] positioned -79495 15 -328 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[144.0f,0.0f]}
 execute as @s[scores={rng2=2}] positioned -79495 15 -328 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[216.0f,0.0f]}
 execute as @s[scores={rng2=2}] positioned -79495 15 -328 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[288.0f,0.0f]}
-execute as @s[scores={rng2=7,rng3=1}] positioned -79495 15 -328 run function skyblock:azr/assets/mobs/skill/boss4_amy/summon_3
+execute as @s[scores={rng2=7}] unless score @s rng3 matches 2.. positioned -79495 15 -328 run function skyblock:azr/assets/mobs/skill/boss4_amy/summon_3
 execute as @s[scores={rng2=7,rng3=2}] positioned -79495 15 -328 run function skyblock:azr/assets/mobs/skill/boss4_amy/summon_2
 execute as @s[scores={rng2=7,rng3=3}] positioned -79495 15 -328 run function skyblock:azr/assets/mobs/skill/boss4_amy/summon_3
 execute as @s[scores={rng2=7,rng3=4}] positioned -79495 15 -328 run function skyblock:azr/assets/mobs/skill/boss4_amy/summon_2
