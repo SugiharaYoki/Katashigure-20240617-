@@ -12,7 +12,7 @@ execute if score @s rng8 matches 180 store result score @s rng7 run random value
 
 execute as @s[scores={rng12=15..,rng3=7}] run function skyblock:azr/assets/events/stage/chapter_4/mine/boss_amy_conv_andralune_join
 
-
+execute unless score @s rng14 matches -9999.. run scoreboard players set @s rng14 0
 execute if entity @s[scores={rng3=12..,rng14=..0}] store result score @s rng13 run random value 1..200
 execute if entity @s[scores={rng3=12..,rng14=..0}] if score @s rng13 matches 1 run scoreboard players set @s rng14 1
 execute if entity @s[scores={rng3=12..,rng14=..0}] if score @s rng14 matches 1 store result score @s rng15 run random value 1..3
