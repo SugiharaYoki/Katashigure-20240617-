@@ -102,10 +102,16 @@ execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar color red
 execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar max 100
 execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 
+execute if score @s rng11 matches 2081 run bossbar add azr:boss_hp_bar_2 "权之残影 - 安德拉伦恩"
+execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar_2 color green
+execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar_2 max 300
+execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar_2 players @a[tag=azrShowDialog]
+
 execute if score @s rng11 matches 2081 run execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng9 0
 execute if score @s rng11 matches 2081 run execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng3 11
 
-execute if score @s rng11 matches 2081 run effect give @n[tag=AzrielNPC_andralune,distance=..150] resistance infinite 4 true
+execute if score @s rng11 matches 2081 run effect give @n[tag=AzrielNPC_andralune,distance=..150] resistance infinite 2 true
+execute if score @s rng11 matches 2081 run effect give @n[tag=AzrielNPC_andralune,distance=..150] regeneration infinite 4 true
 execute if score @s rng11 matches 2081 run data modify entity @n[tag=AzrielNPC_andralune,distance=..150] Invulnerable set value 0b
 execute if score @s rng11 matches 2081 run damage @n[tag=AzrielNPC_andralune] 0 arrow by @n[tag=AzrielMob_demon_amy]
 execute if score @s rng11 matches 2081 run data modify entity @n[tag=AzrielNPC_andralune,distance=..150] NoAI set value 0b

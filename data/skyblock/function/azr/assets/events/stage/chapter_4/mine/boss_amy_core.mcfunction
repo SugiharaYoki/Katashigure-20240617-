@@ -3,6 +3,9 @@ scoreboard players add @s rng2 1
 
 scoreboard players add @s[tag=AzrBoss4_Mersenne_Help_1] rng4 1
 
+execute as @a[tag=azrPlayer,distance=..500] at @s run stopsound @s music music.nether.crimson_forest
+execute as @a[tag=azrPlayer,distance=..500] at @s run stopsound @s music music.nether.nether_wastes
+
 execute as @s[scores={rng2=2}] positioned -79495 15 -328 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[0.0f,0.0f]}
 execute as @s[scores={rng2=2}] positioned -79495 15 -328 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[72.0f,0.0f]}
 execute as @s[scores={rng2=2}] positioned -79495 15 -328 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[144.0f,0.0f]}
@@ -19,6 +22,7 @@ execute as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar color red
 execute as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar max 100
 execute as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 execute as @s[scores={rng2=7..}] store result bossbar azr:boss_hp_bar value run scoreboard players get @n[tag=AzrielMob_demon_amy] Health
+execute as @s[scores={rng2=7..}] store result bossbar azr:boss_hp_bar_2 value run scoreboard players get @n[tag=AzrielNPC_andralune] Health
 #天行有常，不为尧存，不为桀亡
 
 execute unless score @s rng3 matches 7.. as @s[scores={rng1=..9999}] run scoreboard players add @s rng9 1
