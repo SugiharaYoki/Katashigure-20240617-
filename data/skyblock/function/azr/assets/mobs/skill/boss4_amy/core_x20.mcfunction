@@ -17,7 +17,6 @@ execute as @s[scores={rng12=15..,rng3=7}] run function skyblock:azr/assets/event
 
 
 
-
 execute if score @s[scores={rng7=1..6}] rng8 matches 180 rotated ~-60 0 run summon marker ^ ^ ^-1.2 {Tags:["AzrielMob_boss_amy_axe_line_marker","AzrielMob_mob_marker"]}
 execute if score @s[scores={rng7=1..6}] rng8 matches 183 rotated ~-60 0 run summon marker ^ ^ ^-3.2 {Tags:["AzrielMob_boss_amy_axe_line_marker","AzrielMob_mob_marker"]}
 execute if score @s[scores={rng7=1..6}] rng8 matches 186 rotated ~-60 0 run summon marker ^ ^ ^-5.2 {Tags:["AzrielMob_boss_amy_axe_line_marker","AzrielMob_mob_marker"]}
