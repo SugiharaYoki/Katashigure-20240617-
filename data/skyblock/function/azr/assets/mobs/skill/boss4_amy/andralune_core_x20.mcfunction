@@ -11,7 +11,7 @@ scoreboard players add @s rng1 1
 scoreboard players add @s AzrEntityTimer 1
 
 
-execute if score @s[tag=!Moving] AzrEntityTimer matches 2 if score @s Health matches ..297 run tag @s add Moving
+execute if score @s[tag=!Moving] Health matches ..297 run tag @s add Moving
 
 execute if score @s AzrEntityTimer matches 3 store result score @s Health run data get entity @s Health
 execute if score @s AzrEntityTimer matches 3 if score @s Health matches ..200 run effect give @s regeneration 5 19 true
