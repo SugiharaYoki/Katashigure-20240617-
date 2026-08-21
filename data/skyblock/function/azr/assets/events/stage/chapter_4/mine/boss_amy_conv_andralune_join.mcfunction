@@ -102,7 +102,7 @@ execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar color red
 execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar max 100
 execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 
-execute if score @s rng11 matches 2061 run bossbar add azr:boss_hp_bar_2 "权之残影 - 安德拉伦恩"
+execute if score @s rng11 matches 2061 run bossbar add azr:boss_hp_bar_2 [{text:"权之残影 · ",bold:true,color:"white",shadow_color:5510147},{text:"安德拉伦恩",bold:true,color:"#5076ff",shadow_color:5510147}]
 execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar_2 color green
 execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar_2 max 300
 execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar_2 players @a[tag=azrShowDialog]
