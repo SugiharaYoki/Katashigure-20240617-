@@ -79,7 +79,7 @@ execute if score stage_boss_bgm AzrTimerStack matches 4200.. run scoreboard play
 #MARKER
 
     execute as @s[tag=actionable] as @e[distance=0..80,tag=AZR_boss2_arrowpince_marker_release] at @s run function skyblock:azr/assets/mobs/skill/boss1_andralune/skill_arrowpince_particle
-    execute as @s[tag=actionable] as @e[distance=0..80,tag=AZR_summon_arroworb] at @s run function skyblock:azr/assets/mobs/skill/boss1_andralune/summon_arroworb
+    
 
 
     execute if score tick_main_thread AzrTimerStack matches 1850..1880 as @n[tag=AzrielBossA,scores={Health=..75}] run scoreboard players set tick_main_thread AzrTimerStack 38

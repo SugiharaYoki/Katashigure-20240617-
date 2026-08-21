@@ -24,6 +24,10 @@ execute if score @s rng3 matches 2 if score @s rng9 matches 6 as @s[scores={rng1
 execute if score @s rng3 matches 2 if score @s rng9 matches 7 as @s[scores={rng1=30..90}] at @s run summon arrow ~ ~0.5 ~ {Motion:[-0.31d,0.3d,0.31d],Rotation:[-45.0f,64.7605981793211f],pickup:0,damage:2.5,life:1100}
 execute if score @s rng3 matches 2 if score @s rng9 matches 8 as @s[scores={rng1=30..90}] at @s run summon arrow ~ ~0.5 ~ {Motion:[0.31d,0.3d,-0.31d],Rotation:[135.0f,64.7605981793211f],pickup:0,damage:2.5,life:1100}
 execute if score @s rng3 matches 2 if score @s rng9 matches 9 as @s[scores={rng1=30..90}] at @s run summon arrow ~ ~0.5 ~ {Motion:[-0.31d,0.3d,-0.31d],Rotation:[-135.0f,64.7605981793211f],pickup:0,damage:2.5,life:1100}
+execute if score @s[tag=AzrielMob_mob_marker_Friendly] rng3 matches 2..3 if score @s rng9 matches 1..9 as @s[scores={rng1=30..90}] at @s run data modify entity @n[tag=!AzrielMob_mob_marker_Friendly_processed,type=arrow,distance=..5] Owner set from entity @p[tag=azrPlayer] UUID
+execute if score @s[tag=AzrielMob_mob_marker_Friendly] rng3 matches 2..3 if score @s rng9 matches 1..9 as @s[scores={rng1=30..90}] at @s run tag @n[tag=!AzrielMob_mob_marker_Friendly_processed,type=arrow,distance=..5] add AzrielMob_mob_marker_Friendly_processed
+
+
 # ========================
 execute as @s[scores={rng1=1..100}] at @s run tp @s ~ ~0.02 ~
 execute as @s[scores={rng1=46..100}] at @s run tp @s ~ ~0.04 ~
