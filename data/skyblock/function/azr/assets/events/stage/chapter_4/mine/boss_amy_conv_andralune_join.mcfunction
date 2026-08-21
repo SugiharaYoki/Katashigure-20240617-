@@ -97,13 +97,13 @@ execute if score @s rng11 matches 2081 run effect clear @a[tag=azrPlayer,distanc
 execute if score @s rng11 matches 2081 run effect clear @n[tag=AzrielMob_demon_amy,distance=..150] resistance
 execute if score @s rng11 matches 2081 run effect clear @n[tag=AzrielMob_demon_amy,distance=..150] slowness
 execute if score @s rng11 matches 2081 run effect clear @n[tag=AzrielNPC_andralune,distance=..150] slowness
-execute if score @s rng11 matches 2061 run bossbar add azr:boss_hp_bar [{text:"天行有常，不为桀亡 魔神 · ",bold:true,color:"white",shadow_color:5510147},{text:"亚米",bold:true,color:"#ff5050",shadow_color:5510147}]
+execute if score @s rng11 matches 2061 run bossbar add azr:boss_hp_bar [{text:"天行有常，不为桀亡 魔神 · ",bold:true,color:"white"},{text:"亚米",bold:true,color:"#ff5050"}]
 execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar color red
 execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar max 100
 execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 
-execute if score @s rng11 matches 2061 run bossbar add azr:boss_hp_bar_2 [{text:"权之残影 · ",bold:true,color:"white",shadow_color:5510147},{text:"安德拉伦恩",bold:true,color:"#5076ff",shadow_color:5510147}]
-execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar_2 color green
+execute if score @s rng11 matches 2061 run bossbar add azr:boss_hp_bar_2 [{text:"权之残影 · ",bold:true,color:"white"},{text:"安德拉伦恩",bold:true,color:"#4a71ff"}]
+execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar_2 color blue
 execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar_2 max 300
 execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar_2 players @a[tag=azrShowDialog]
 

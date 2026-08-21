@@ -21,7 +21,7 @@ execute as @s[scores={rng2=7}] unless score @s rng3 matches 1.. run scoreboard p
 execute as @s[scores={rng2=7..}] run scoreboard players operation @n[tag=AzrielMob_demon_amy] rng3 = @s rng3
 
 execute unless score @s rng3 matches 10.. as @s[scores={rng2=7}] run bossbar add azr:boss_hp_bar "黑铠的狂戮 - ？？？"
-execute if score @s rng3 matches 10.. as @s[scores={rng2=7}] run bossbar add azr:boss_hp_bar [{text:"天行有常，不为桀亡 · ",bold:true,color:"white",shadow_color:5510147},{text:"魔神亚米",bold:true,color:"#ff5050",shadow_color:5510147}]
+execute if score @s rng3 matches 10.. as @s[scores={rng2=7}] run bossbar add azr:boss_hp_bar [{text:"天行有常，不为桀亡 魔神 · ",bold:true,color:"white"},{text:"亚米",bold:true,color:"#ff5050"}]
 execute as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar color red
 execute as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar max 100
 execute as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
