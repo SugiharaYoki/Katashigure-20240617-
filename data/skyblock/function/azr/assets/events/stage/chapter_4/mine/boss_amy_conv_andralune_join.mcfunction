@@ -110,8 +110,6 @@ execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar_2 color b
 execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar_2 max 300
 execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar_2 players @a[tag=azrShowDialog]
 
-execute if score @s rng11 matches 2051 run execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng9 0
-execute if score @s rng11 matches 2051 run execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng3 11
 
 execute if score @s rng11 matches 2081 run effect give @n[tag=AzrielNPC_andralune,distance=..150] resistance infinite 2 true
 execute if score @s rng11 matches 2081 run effect give @n[tag=AzrielNPC_andralune,distance=..150] regeneration infinite 4 true
@@ -131,3 +129,5 @@ execute if score @s rng11 matches 2081 positioned -79495 15 -328 run summon mark
 execute if score @s rng11 matches 2081 positioned -79495 15 -328 run summon marker ~ ~1 ~-2 {Tags:["AZR_andralune_possible_tp_landing_pos"]}
 
 
+execute if score @s rng11 matches 2081 run execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng9 0
+execute if score @s rng11 matches 2081 run execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng3 11
