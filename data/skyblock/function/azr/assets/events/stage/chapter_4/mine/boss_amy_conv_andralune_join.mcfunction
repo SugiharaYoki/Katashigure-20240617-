@@ -38,7 +38,7 @@ execute if score @s rng11 matches 72 run kill @e[tag=AzrielMob_demon_amy_flame_e
 execute if score @s rng11 matches 82 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng11 matches 82 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"red",bold:1b},{bold: false,text:"\n“甚久未见，我记得你。”",color:"white"}]
 
-execute if score @s rng11 matches 152 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“……权之残影，来的居然是你。”",color:"white"}]
+execute if score @s rng11 matches 152 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“……权之残影，来的居然是你。我有点惊喜了。”",color:"white"}]
 
 execute if score @s rng11 matches 222 positioned -79504 15 -328 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.
 execute if score @s rng11 matches 222 positioned -79504 15 -328 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"light_purple",bold:1b},{bold: false,text:"\n“爱理莎小姐，我来晚了。突破魔界的对天使结界花了我和默尔森一点功夫。”",color:"white"}]
@@ -58,9 +58,9 @@ execute if score @s rng11 matches 492 positioned -79504 15 -328 at @n[tag=Azriel
 
 
 execute if score @s rng11 matches 502 positioned -79504 15 -328 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.
-execute if score @s rng11 matches 502 positioned -79504 15 -328 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"light_purple",bold:1b},{bold: false,text:"\n“我知道，但我和你面前这位人类的亡魂——爱理莎小姐——会让你看得起我们。”",color:"white"}]
+execute if score @s rng11 matches 502 positioned -79504 15 -328 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"light_purple",bold:1b},{bold: false,text:"\n“我知道，但我也并非毫无胜算。爱理莎面对你这位魔神居然能坚持至今，我不知道是如何做到的，但这让我看到了希望。”",color:"white"}]
 
-execute if score @s rng11 matches 572 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“我很喜欢你的发言。那么，我们一起上吧。”",color:"white"}]
+execute if score @s rng11 matches 572 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“我很喜欢你的发言，说实话……知道我面对的是这么恐怖的存在后，我倒也没想象中那么大的心理波动。准备好的话，权之残影，我们一起上吧。”",color:"white"}]
 
 execute if score @s rng11 matches 644 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng11 matches 644 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"亚米：",color:"red",bold:1b},{bold: false,text:"\n“有趣……人类、天使，你们都很有趣。但我会在死亡的过程中认清你们的一切弱点。”",color:"white"}]
