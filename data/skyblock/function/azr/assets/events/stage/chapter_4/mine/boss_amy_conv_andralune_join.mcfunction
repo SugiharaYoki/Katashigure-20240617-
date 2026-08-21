@@ -72,8 +72,8 @@ execute if score @s rng11 matches 700 at @n[tag=AzrielMob_demon_amy] run summon 
 execute if score @s rng11 matches 718 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng11 matches 718 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"亚米：",color:"red",bold:1b},{bold: false,text:"\n“区区神庭的走狗和一条亡魂，灼热地焚尽在这地狱之中吧。”",color:"white"}]
 
-execute if score @s rng11 matches 788 as @a[tag=azrShowDialog] at @s run effect give @s darkness 4 0 true
-execute if score @s rng11 matches 808 run scoreboard players set @s rng11 2000
+execute if score @s rng11 matches 768 as @a[tag=azrShowDialog] at @s run effect give @s darkness 4 0 true
+execute if score @s rng11 matches 788 run scoreboard players set @s rng11 2000
 
 
 
@@ -97,18 +97,18 @@ execute if score @s rng11 matches 2081 run effect clear @a[tag=azrPlayer,distanc
 execute if score @s rng11 matches 2081 run effect clear @n[tag=AzrielMob_demon_amy,distance=..150] resistance
 execute if score @s rng11 matches 2081 run effect clear @n[tag=AzrielMob_demon_amy,distance=..150] slowness
 execute if score @s rng11 matches 2081 run effect clear @n[tag=AzrielNPC_andralune,distance=..150] slowness
-execute if score @s rng11 matches 2081 run bossbar add azr:boss_hp_bar [{text:"天行有常，不为桀亡 · ",bold:true,color:"white",shadow_color:5510147},{text:"魔神亚米",bold:true,color:"#ff5050",shadow_color:5510147}]
-execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar color red
-execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar max 100
-execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
+execute if score @s rng11 matches 2061 run bossbar add azr:boss_hp_bar [{text:"天行有常，不为桀亡 · ",bold:true,color:"white",shadow_color:5510147},{text:"魔神亚米",bold:true,color:"#ff5050",shadow_color:5510147}]
+execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar color red
+execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar max 100
+execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 
-execute if score @s rng11 matches 2081 run bossbar add azr:boss_hp_bar_2 "权之残影 - 安德拉伦恩"
-execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar_2 color green
-execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar_2 max 300
-execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar_2 players @a[tag=azrShowDialog]
+execute if score @s rng11 matches 2061 run bossbar add azr:boss_hp_bar_2 "权之残影 - 安德拉伦恩"
+execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar_2 color green
+execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar_2 max 300
+execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar_2 players @a[tag=azrShowDialog]
 
-execute if score @s rng11 matches 2061 run execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng9 0
-execute if score @s rng11 matches 2081 run execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng3 11
+execute if score @s rng11 matches 2051 run execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng9 0
+execute if score @s rng11 matches 2051 run execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng3 11
 
 execute if score @s rng11 matches 2081 run effect give @n[tag=AzrielNPC_andralune,distance=..150] resistance infinite 2 true
 execute if score @s rng11 matches 2081 run effect give @n[tag=AzrielNPC_andralune,distance=..150] regeneration infinite 4 true

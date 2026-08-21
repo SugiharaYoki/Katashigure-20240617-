@@ -17,4 +17,4 @@ execute at @n[type=minecraft:illusioner,tag=AzrielNPC_andralune] run summon mine
 
 
 
-
+tag @n[type=minecraft:illusioner,tag=AzrielNPC_andralune] add azr_wings_on
