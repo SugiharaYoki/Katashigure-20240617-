@@ -32,4 +32,5 @@ execute if score @s[scores={rng13=1..2}] rng14 matches 33 as @n[tag=AzrielNPC_an
 execute if score @s[scores={rng13=1..2}] rng14 matches 40 as @n[tag=AzrielNPC_andralune] at @s if block ~ 14 ~ red_nether_bricks run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_amy_lava_burst_marker","AzrielMob_mob_marker"]}
 execute if score @s[scores={rng13=1..2}] rng14 matches 52 as @n[tag=AzrielNPC_andralune] at @s if block ~ 14 ~ red_nether_bricks run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_amy_lava_burst_marker","AzrielMob_mob_marker"]}
 
-
+execute if score @s rng14 matches 70 run scoreboard players set @s rng14 0
+execute if score @s rng14 matches 70 run scoreboard players set @s rng15 0
