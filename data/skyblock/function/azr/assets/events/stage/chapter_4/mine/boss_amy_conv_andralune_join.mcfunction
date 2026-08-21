@@ -29,8 +29,8 @@ execute if score @s rng11 matches 8 run summon minecraft:lightning_bolt -79504 1
 execute if score @s rng11 matches 8 run bossbar remove azr:boss_hp_bar
 execute if score @s rng11 matches 8 positioned -79504 15 -328 run tp @n[tag=AzrielNPC_andralune] ~ ~ ~ facing entity @n[tag=AzrielMob_demon_amy]
 
-execute if score @s rng11 matches 8 positioned -79504 15 -328 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.
-execute if score @s rng11 matches 8 positioned -79504 15 -328 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"light_purple",bold:1b},{bold: false,text:"\n“很遗憾，你现在不止一个对手了。”",color:"white"}]
+execute if score @s rng11 matches 18 positioned -79504 15 -328 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.
+execute if score @s rng11 matches 18 positioned -79504 15 -328 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"light_purple",bold:1b},{bold: false,text:"\n“很遗憾，你的愚行到此为止。”",color:"white"}]
 
 execute if score @s rng11 matches 60 run tp @n[tag=AzrielMob_demon_amy] ~ ~ ~ facing entity @n[tag=AzrielNPC_andralune]
 
@@ -76,7 +76,7 @@ execute if score @s rng11 matches 808 run scoreboard players set @s rng11 2000
 
 
 execute if score @s rng11 matches 2001 run tag @n[tag=AzrielMob_demon_amy] remove AZR_action_halt
-execute if score @s rng11 matches 2001 as @a[tag=azrShowDialog] at @s run title @s times 0s 40t 15t
+execute if score @s rng11 matches 2001 as @a[tag=azrShowDialog] at @s run title @s times 0s 50t 10t
 execute if score @s rng11 matches 2001 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden2.chapter_title ambient @s ~ ~ ~ 2 1.3
 execute if score @s rng11 matches 2001 as @a[tag=azrShowDialog] at @s run title @s title {text:"亚",color: "#ff5050",bold:1b}
 execute if score @s rng11 matches 2011 as @a[tag=azrShowDialog] at @s run stopsound @s ambient minecraft:garden2.chapter_title

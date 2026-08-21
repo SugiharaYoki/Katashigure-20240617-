@@ -8,6 +8,7 @@ function skyblock:azr/assets/mobs/skill/boss1_andralune/equip_wings_core
 
 scoreboard players add @s AzrEntityTimer 1
 
+execute if score @s AzrEntityTimer matches 4 run effect clear @a[distance=..100] blindness
 execute if score @s AzrEntityTimer matches 4 on target if entity @s[tag=!AzrielMob_demon_amy] run damage @n[tag=AzrielNPC_andralune] 0 arrow by @n[tag=AzrielMob_demon_amy]
 execute if score @s AzrEntityTimer matches 5.. run scoreboard players set @s AzrEntityTimer 0
 
