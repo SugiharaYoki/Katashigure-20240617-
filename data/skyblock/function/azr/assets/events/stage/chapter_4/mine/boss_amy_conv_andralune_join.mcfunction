@@ -41,6 +41,8 @@ execute if score @s rng11 matches 82 positioned ~ ~ ~ run tellraw @a[tag=azrShow
 
 execute if score @s rng11 matches 152 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“……权之残影，来的居然是你。我有点惊喜了。”",color:"white"}]
 
+execute if score @s rng11 matches 210 positioned -79504 15 -328 run tp @n[tag=AzrielNPC_andralune] ~ ~ ~ facing entity @p[tag=azrPlayer]
+
 execute if score @s rng11 matches 222 positioned -79504 15 -328 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.
 execute if score @s rng11 matches 222 positioned -79504 15 -328 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"light_purple",bold:1b},{bold: false,text:"\n“爱理莎小姐，我来晚了。突破魔界的对天使结界花了我和默尔森一点功夫。”",color:"white"}]
 
@@ -57,6 +59,7 @@ execute if score @s rng11 matches 490 positioned -79504 15 -328 at @n[tag=Azriel
 execute if score @s rng11 matches 490 positioned -79504 15 -328 at @n[tag=AzrielNPC_andralune] run function skyblock:azr/assets/mobs/skill/boss1_andralune/equip_wings_particle
 execute if score @s rng11 matches 492 positioned -79504 15 -328 at @n[tag=AzrielNPC_andralune] run function skyblock:azr/assets/mobs/skill/boss1_andralune/equip_wings
 
+execute if score @s rng11 matches 490 positioned -79504 15 -328 run tp @n[tag=AzrielNPC_andralune] ~ ~ ~ facing entity @n[tag=AzrielMob_demon_amy]
 
 execute if score @s rng11 matches 502 positioned -79504 15 -328 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.
 execute if score @s rng11 matches 502 positioned -79504 15 -328 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"light_purple",bold:1b},{bold: false,text:"\n“我知道，但我也并非毫无胜算。爱理莎面对你这位魔神居然能坚持至今，我不知道是如何做到的，但这让我看到了希望。”",color:"white"}]
