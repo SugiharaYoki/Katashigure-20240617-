@@ -9,7 +9,7 @@ function skyblock:azr/assets/mobs/skill/boss1_andralune/equip_wings_core
 scoreboard players add @s AzrEntityTimer 1
 
 execute if score @s AzrEntityTimer matches 3 store result score @s Health run data get entity @s Health
-execute if score @s AzrEntityTimer matches 3 store result score @s Health run data get entity @s Health
+execute if score @s AzrEntityTimer matches 3 if score @s Health matches ..200 run effect give @s regeneration 5 19 true
 execute if score @s[tag=azr_wings_on] AzrEntityTimer matches 4 run function skyblock:azr/assets/mobs/skill/boss1_andralune/equip_wings_particle_afterward
 execute if score @s AzrEntityTimer matches 4 run effect clear @s[distance=..100] invisibility
 execute if score @s AzrEntityTimer matches 4 run effect clear @a[distance=..100] blindness
