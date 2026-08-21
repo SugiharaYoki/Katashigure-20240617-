@@ -107,7 +107,7 @@ execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar_2 color g
 execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar_2 max 300
 execute if score @s rng11 matches 2081 run bossbar set azr:boss_hp_bar_2 players @a[tag=azrShowDialog]
 
-execute if score @s rng11 matches 2081 run execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng9 0
+execute if score @s rng11 matches 2061 run execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng9 0
 execute if score @s rng11 matches 2081 run execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng3 11
 
 execute if score @s rng11 matches 2081 run effect give @n[tag=AzrielNPC_andralune,distance=..150] resistance infinite 2 true
