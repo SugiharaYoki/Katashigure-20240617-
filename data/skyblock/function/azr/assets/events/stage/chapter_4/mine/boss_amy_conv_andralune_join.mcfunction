@@ -116,7 +116,7 @@ execute if score @s rng11 matches 2061 run bossbar set azr:boss_hp_bar_2 players
 
 
 execute if score @s rng11 matches 2081 run effect give @n[tag=AzrielNPC_andralune,distance=..150] resistance infinite 2 true
-execute if score @s rng11 matches 2081 run effect give @n[tag=AzrielNPC_andralune,distance=..150] regeneration infinite 4 true
+execute if score @s rng11 matches 2081 run effect give @n[tag=AzrielNPC_andralune,distance=..150] regeneration infinite 1 true
 execute if score @s rng11 matches 2081 run data modify entity @n[tag=AzrielNPC_andralune,distance=..150] Invulnerable set value 0b
 execute if score @s rng11 matches 2081 run damage @n[tag=AzrielNPC_andralune] 0 arrow by @n[tag=AzrielMob_demon_amy]
 execute if score @s rng11 matches 2081 run data modify entity @n[tag=AzrielNPC_andralune,distance=..150] NoAI set value 0b
