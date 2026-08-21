@@ -66,6 +66,9 @@ execute if score @s rng11 matches 572 run tellraw @a[tag=azrShowDialog] [{text:"
 execute if score @s rng11 matches 644 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng11 matches 644 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"亚米：",color:"red",bold:1b},{bold: false,text:"\n“有趣……人类、天使，你们都很有趣。但我会在死亡的过程中认清你们的一切弱点。”",color:"white"}]
 
+execute if score @s rng11 matches 700 at @n[tag=AzrielMob_demon_amy] run summon item_display ~2 ~2 ~ {Tags:["AzrielMob_mob_marker","AzrielMob_demon_amy_flame_eye_a","AzrielMob_demon_amy_flame_eye"],transformation:{left_rotation:[0,1,0,1],right_rotation:[0,1,0,1],translation:[0,0,0],scale:[1,1,1]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjE0MmEzNWFjMGIwNTVlZDUwYTVjYmY4NzBiNmVmMWNjMWY5NGUyNjQyYjliYTY1MGM5ZTAzODVlNmNiZTM2In19fQ=="}]}}}}
+execute if score @s rng11 matches 700 at @n[tag=AzrielMob_demon_amy] run summon item_display ~-2 ~2 ~ {Tags:["AzrielMob_mob_marker","AzrielMob_demon_amy_flame_eye_b","AzrielMob_demon_amy_flame_eye"],transformation:{left_rotation:[0,1,0,1],right_rotation:[0,1,0,1],translation:[0,0,0],scale:[1,1,1]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjE0MmEzNWFjMGIwNTVlZDUwYTVjYmY4NzBiNmVmMWNjMWY5NGUyNjQyYjliYTY1MGM5ZTAzODVlNmNiZTM2In19fQ=="}]}}}}
+
 execute if score @s rng11 matches 718 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng11 matches 718 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"亚米：",color:"red",bold:1b},{bold: false,text:"\n“区区神庭的走狗和一条亡魂，灼热地焚尽在这地狱之中吧。”",color:"white"}]
 
@@ -88,9 +91,6 @@ execute if score @s rng11 matches 2031 as @a[tag=azrShowDialog] at @s run title 
 execute if score @s rng11 matches 2031 as @a[tag=azrShowDialog] at @s run title @s subtitle {text:"所 罗 门 72 柱 魔 神 · 第 58 柱",color: "white",bold:0b}
 
 
-
-execute if score @s rng11 matches 2001 at @n[tag=AzrielMob_demon_amy] run summon item_display ~2 ~2 ~ {Tags:["AzrielMob_mob_marker","AzrielMob_demon_amy_flame_eye_a","AzrielMob_demon_amy_flame_eye"],transformation:{left_rotation:[0,1,0,1],right_rotation:[0,1,0,1],translation:[0,0,0],scale:[1,1,1]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjE0MmEzNWFjMGIwNTVlZDUwYTVjYmY4NzBiNmVmMWNjMWY5NGUyNjQyYjliYTY1MGM5ZTAzODVlNmNiZTM2In19fQ=="}]}}}}
-execute if score @s rng11 matches 2001 at @n[tag=AzrielMob_demon_amy] run summon item_display ~-2 ~2 ~ {Tags:["AzrielMob_mob_marker","AzrielMob_demon_amy_flame_eye_b","AzrielMob_demon_amy_flame_eye"],transformation:{left_rotation:[0,1,0,1],right_rotation:[0,1,0,1],translation:[0,0,0],scale:[1,1,1]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjE0MmEzNWFjMGIwNTVlZDUwYTVjYmY4NzBiNmVmMWNjMWY5NGUyNjQyYjliYTY1MGM5ZTAzODVlNmNiZTM2In19fQ=="}]}}}}
 
 execute if score @s rng11 matches 2081 run effect clear @a[tag=azrPlayer,distance=..150] resistance
 execute if score @s rng11 matches 2081 run effect clear @a[tag=azrPlayer,distance=..150] regeneration
