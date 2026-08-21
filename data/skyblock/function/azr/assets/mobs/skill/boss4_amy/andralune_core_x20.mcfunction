@@ -30,7 +30,7 @@ execute if entity @s[tag=Moving] if score @s rng2 matches 6..7 run function skyb
 execute if entity @s[tag=Moving] if score @s rng2 matches 8..9 run function skyblock:azr/assets/mobs/skill/marinus/move_forward
 execute if entity @s[tag=Moving] store result score @s rng2 run random value 1..9
 execute if entity @s[tag=Moving] if score @s rng2 matches 1..5 run summon marker ~ ~1 ~ {Tags:["AZR_summon_arroworb","AzrielMob_mob_marker","AzrielMob_mob_marker_Friendly"]}
-execute if entity @s[tag=Moving] run scoreboard players set @s rng3 50
+execute if entity @s[tag=Moving] run scoreboard players set @s rng3 30
 execute if entity @s[tag=Moving] run tag @s remove Moving
 
 
