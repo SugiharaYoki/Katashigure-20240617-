@@ -122,6 +122,7 @@ execute if score @s rng11 matches 2081 run damage @n[tag=AzrielNPC_andralune] 0 
 execute if score @s rng11 matches 2081 run data modify entity @n[tag=AzrielNPC_andralune,distance=..150] NoAI set value 0b
 execute if score @s rng11 matches 2081 run item replace entity @n[tag=AzrielNPC_andralune,distance=..150] weapon.mainhand with bow[enchantments={power:2}]
 execute if score @s rng11 matches 2081 run attribute @n[tag=AzrielNPC_andralune,distance=..150] movement_speed base set 0.36
+execute if score @s rng11 matches 2081 run tag @n[tag=AzrielNPC_andralune,distance=..150] add AzrielNPC_Divineforce
 
 execute if score @s rng11 matches 2081 positioned -79489 15 -322 run summon marker ~ ~1 ~ {Tags:["AZR_andralune_possible_tp_landing_pos"]}
 execute if score @s rng11 matches 2081 positioned -79501 15 -334 run summon marker ~ ~1 ~ {Tags:["AZR_andralune_possible_tp_landing_pos"]}
