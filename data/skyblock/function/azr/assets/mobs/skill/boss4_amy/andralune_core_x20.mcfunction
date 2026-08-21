@@ -13,6 +13,7 @@ scoreboard players add @s AzrEntityTimer 1
 
 scoreboard players remove @s rng3 1
 execute if score @s[tag=!Moving,scores={rng3=..0}] Health matches ..299 run tag @s add Moving
+execute if score @s[tag=!Moving,scores={rng3=1..}] Health matches ..299 at @s if block ~ ~-0.3 ~ lava run tp @s @n[tag=AZR_andralune_possible_tp_landing_pos,distance=..50]
 
 execute if score @s AzrEntityTimer matches 3 store result score @s Health run data get entity @s Health
 execute if score @s AzrEntityTimer matches 3 if score @s Health matches ..200 run effect give @s regeneration 5 19 true
@@ -31,6 +32,7 @@ execute if entity @s[tag=Moving] if score @s rng2 matches 8..9 run function skyb
 execute if entity @s[tag=Moving] store result score @s rng2 run random value 1..9
 execute if entity @s[tag=Moving] if score @s rng2 matches 1..5 run summon marker ~ ~1 ~ {Tags:["AZR_summon_arroworb","AzrielMob_mob_marker","AzrielMob_mob_marker_Friendly"]}
 execute if entity @s[tag=Moving] run scoreboard players set @s rng3 30
+execute if entity @s[tag=Moving] run data modify entity @s Fire set value 0
 execute if entity @s[tag=Moving] run tag @s remove Moving
 
 

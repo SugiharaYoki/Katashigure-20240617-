@@ -118,6 +118,13 @@ execute if score @s rng11 matches 2081 run data modify entity @n[tag=AzrielNPC_a
 execute if score @s rng11 matches 2081 run item replace entity @s weapon.mainhand with bow
 execute if score @s rng11 matches 2081 run attribute @n[tag=AzrielNPC_andralune,distance=..150] movement_speed base set 0.36
 
-
+execute if score @s rng11 matches 2081 positioned -79489 15 -322 run summon marker ~ ~1 ~ {Tags:["AZR_andralune_possible_tp_landing_pos"]}
+execute if score @s rng11 matches 2081 positioned -79501 15 -334 run summon marker ~ ~1 ~ {Tags:["AZR_andralune_possible_tp_landing_pos"]}
+execute if score @s rng11 matches 2081 positioned -79489 15 -334 run summon marker ~ ~1 ~ {Tags:["AZR_andralune_possible_tp_landing_pos"]}
+execute if score @s rng11 matches 2081 positioned -79501 15 -322 run summon marker ~ ~1 ~ {Tags:["AZR_andralune_possible_tp_landing_pos"]}
+execute if score @s rng11 matches 2081 positioned -79495 15 -328 run summon marker ~2 ~1 ~ {Tags:["AZR_andralune_possible_tp_landing_pos"]}
+execute if score @s rng11 matches 2081 positioned -79495 15 -328 run summon marker ~-2 ~1 ~ {Tags:["AZR_andralune_possible_tp_landing_pos"]}
+execute if score @s rng11 matches 2081 positioned -79495 15 -328 run summon marker ~ ~1 ~2 {Tags:["AZR_andralune_possible_tp_landing_pos"]}
+execute if score @s rng11 matches 2081 positioned -79495 15 -328 run summon marker ~ ~1 ~-2 {Tags:["AZR_andralune_possible_tp_landing_pos"]}
 
 
