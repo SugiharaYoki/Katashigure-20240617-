@@ -21,9 +21,9 @@ execute if score @s rng11 matches 8 as @n[tag=AzrielMob_demon_amy] at @s unless 
 
 execute if score @s rng11 matches 2 run stopsound @a[tag=azrShowDialog] music minecraft:garden1.combathigh
 execute if score @s rng11 matches 2 positioned -79504 15 -328 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower_b
-execute if score @s rng11 matches 2 run summon minecraft:lightning_bolt -79503 15 -328
-execute if score @s rng11 matches 4 run summon minecraft:lightning_bolt -79504 15 -327
-execute if score @s rng11 matches 6 run summon minecraft:lightning_bolt -79505 15 -328
+execute if score @s rng11 matches 5 run summon minecraft:lightning_bolt -79503 15 -328
+execute if score @s rng11 matches 6 run summon minecraft:lightning_bolt -79504 15 -327
+execute if score @s rng11 matches 7 run summon minecraft:lightning_bolt -79505 15 -328
 execute if score @s rng11 matches 8 run summon minecraft:lightning_bolt -79504 15 -329
 
 execute if score @s rng11 matches 8 run bossbar remove azr:boss_hp_bar
