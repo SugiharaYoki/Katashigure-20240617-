@@ -115,7 +115,7 @@ execute as @s[scores={rng1=..5000}] positioned -79393 26 -340 if entity @a[tag=a
 execute as @s[scores={rng1=5001}] run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage17
 execute as @s[scores={rng1=5001}] run scoreboard players set stage Azr_system 62
 execute as @s[scores={rng1=5001}] run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..17}] Azr_skillPoints 18
-execute as @s[scores={rng1=5001}] run effect give @a[tag=azrPlayer] slowness 20 20 true
+execute as @s[scores={rng1=5001}] run effect give @a[tag=azrPlayer] slowness 3 20 true
 execute as @s[scores={rng1=5001}] run scoreboard players set @n[tag=AzrielTrader_pig_henry] AzrielNPC_FollowInterest 0
 
 execute as @s[scores={rng1=5001}] as @a[tag=azrPlayer] at @s run playsound minecraft:entity.pillager.ambient master @s ~ ~ ~ 0.3 0.8
