@@ -114,6 +114,7 @@ execute if entity @s[tag=AZS_BoS26] run data modify entity @n[tag=AzrRamielExSta
 execute if entity @s[scores={Azr_skillPoints=5..}] run data modify entity @n[tag=AzrRamielExStage_displaymarker1] CustomName set value ' <钟> '
 execute if entity @s[scores={Azr_skillPoints=9..}] run data modify entity @n[tag=AzrRamielExStage_displaymarker2] CustomName set value ' <斧> '
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarker3] CustomName set value ' <光> '
+execute if entity @s[scores={Azr_skillPoints=19..}] run data modify entity @n[tag=AzrRamielExStage_displaymarker4] CustomName set value ' <亚> '
 execute if entity @s[tag=AZS_BoSB01] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value ' <刑> '
 execute if entity @s[tag=AZS_BoSB03] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBc] CustomName set value ' <博> '
 execute if entity @s[tag=AZS_BoSB04] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value ' <炉> '
@@ -160,6 +161,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run d
 execute if items entity @s container.* *[custom_data~{azr_amulet_stopwatch:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarker1] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_axe_vortex:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarker2] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarker3] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_magical_current:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarker4] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_back_dodge:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_land_fracture:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBc] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_fire_drogue:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value ' √ '
@@ -219,6 +221,7 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarker1]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432327"},hover_event:{"action":"show_text","value":{text:"权之残影 - 天界怀表\n在波数暂停时手持，可以冻结计时",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarker2]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432330"},hover_event:{"action":"show_text","value":{text:"马林努斯 - 岚切卷宗\n斧攻击自动延时二次攻击、左右移动时加强剑的范围伤害",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarker3]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432332"},hover_event:{"action":"show_text","value":{text:"权之残影 - 光明天使的符文\n迫坠、退避、冲刺石板整合、施放时无敌帧",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarker4]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432339"},hover_event:{"action":"show_text","value":{text:"亚米 - 血潮石板\n可检测到魔力潮汐，身处其中可升起",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBa]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432331"},hover_event:{"action":"show_text","value":{text:"阴影处刑者 - 退避石板\n按后退键与跑步键，快速后撤步",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBc]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432338"},hover_event:{"action":"show_text","value":{text:"百夫长·博物区 - 地裂卷宗\n冲刺时使用近战武器攻击，施放地裂冲击",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBd]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432329"},hover_event:{"action":"show_text","value":{text:"锅炉驱动者 - 逐焰卷宗\n持续召唤最多3个跟随火球，减少节制天平电球最低间隔时长",color:"white"}}},\

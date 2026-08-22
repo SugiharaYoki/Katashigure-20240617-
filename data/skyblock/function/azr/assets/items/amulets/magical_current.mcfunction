@@ -1,0 +1,1 @@
+give @s rib_armor_trim_smithing_template[custom_name={text:"血潮石板",italic:0b,color:"#306fc2",bold:1b},lore=[{text:"背包常效装备",italic:0b,color:"yellow",bold:1b},{text:"可探测到海潮魔力的涌流",italic:0b,color:"#9eb9de"},{text:"身处其中可向高处飘升",italic:0b,color:"#9eb9de"},{text:""},{text:"海潮的魔力无处不在，但我直到现在才意识到它们的涌动。",italic:1b,color:"#586371"}],custom_data={azr_amulet:1b,azr_amulet_magical_current:1b}]

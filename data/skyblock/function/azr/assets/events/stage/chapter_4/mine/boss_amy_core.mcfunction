@@ -91,6 +91,6 @@ execute as @s[scores={rng1=..9999,rng3=..9}] positioned -79495 14 -328 unless en
 
 
 
-particle trail{color:2174207,duration:1,target:[-79978,48,-15]} ~ ~ ~ 0 0 0 0 1
+
 
 
