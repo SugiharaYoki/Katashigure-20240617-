@@ -84,6 +84,10 @@ execute if score @s rng11 matches 788 run scoreboard players set @s rng11 2000
 
 
 
+execute if score @s rng11 matches 640..830 run particle trail{color:16711680,duration:120,target:[-79494.5,16.0,-328.5]} ~ ~ ~ 10 10 10 0 1 force
+execute if score @s rng11 matches 680..830 run particle trail{color:16711680,duration:60,target:[-79494.5,16.0,-328.5]} ~ ~ ~ 10 10 10 0 1 force
+execute if score @s rng11 matches 720..830 run particle trail{color:16711680,duration:60,target:[-79494.5,16.0,-328.5]} ~ ~ ~ 15 15 15 0 1 force
+
 
 execute if score @s rng11 matches 2001 run tag @n[tag=AzrielMob_demon_amy] remove AZR_action_halt
 execute if score @s rng11 matches 2001 as @a[tag=azrShowDialog] at @s run title @s times 0s 50t 10t
@@ -136,3 +140,9 @@ execute if score @s rng11 matches 2081 positioned -79495 15 -328 run summon mark
 
 execute if score @s rng11 matches 2081 run execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng9 0
 execute if score @s rng11 matches 2081 run execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng3 11
+
+
+
+
+
+
