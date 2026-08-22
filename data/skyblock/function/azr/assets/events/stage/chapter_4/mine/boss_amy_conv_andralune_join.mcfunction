@@ -83,6 +83,12 @@ execute if score @s rng11 matches 768 as @a[tag=azrShowDialog] at @s run effect 
 execute if score @s rng11 matches 788 run scoreboard players set @s rng11 2000
 
 
+execute if score @s rng11 matches 640 at @n[tag=AzrielMob_demon_amy] run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 5 0.7
+execute if score @s rng11 matches 640 at @n[tag=AzrielMob_demon_amy] run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 5 0.7
+execute if score @s rng11 matches 640 at @n[tag=AzrielMob_demon_amy] run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 5 0.7
+execute if score @s rng11 matches 690 at @n[tag=AzrielMob_demon_amy] run playsound ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 5 0.5
+execute if score @s rng11 matches 690 at @n[tag=AzrielMob_demon_amy] run playsound ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 5 0.5
+execute if score @s rng11 matches 690 at @n[tag=AzrielMob_demon_amy] run playsound ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 5 0.5
 
 execute if score @s rng11 matches 640..830 run particle trail{color:16711680,duration:120,target:[-79494.5,16.0,-328.5]} ~ ~ ~ 10 10 10 0 1 force
 execute if score @s rng11 matches 680..830 run particle trail{color:16711680,duration:60,target:[-79494.5,16.0,-328.5]} ~ ~ ~ 10 10 10 0 1 force
