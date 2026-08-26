@@ -46,6 +46,7 @@ execute as @s[tag=AzrielMob_boss_amy_lava_burst_marker] at @s run function skybl
 
 execute as @s[tag=AZR_summon_arroworb] at @s run function skyblock:azr/assets/mobs/skill/boss1_andralune/summon_arroworb
 execute as @s[tag=AZR_summon_arrow_line_down] at @s run function skyblock:azr/assets/mobs/skill/boss1_andralune/marker_friendly_arrow_line_down
+execute as @s[tag=AZR_summon_arrow_chase_explosion] at @s run function skyblock:azr/assets/mobs/skill/boss1_andralune/marker_friendly_arrow_chase_explosion
 
 
 execute if entity @s[tag=AzrielMob_generic_pillar_attack_small] run function skyblock:azr/assets/mobs/skill/undead_pickaxe_marker_release

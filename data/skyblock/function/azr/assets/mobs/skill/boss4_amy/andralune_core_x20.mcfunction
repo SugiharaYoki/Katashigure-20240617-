@@ -41,12 +41,13 @@ execute if entity @s[tag=Moving] run tag @s remove Moving
 
 
 execute if score @s rng1 matches 20 store result score @s rng7 run random value 1..5
-execute if score @s rng1 matches 30 if score @s rng7 matches 1 rotated ~ 0 positioned ^ ^ ^3 run summon marker ~ ~1 ~ {Tags:["AZR_summon_arrow_line_down","AzrielMob_mob_marker","AzrielMob_mob_marker_Friendly"]}
-execute if score @s rng1 matches 33 if score @s rng7 matches 1 rotated ~ 0 positioned ^ ^ ^5 run summon marker ~ ~1 ~ {Tags:["AZR_summon_arrow_line_down","AzrielMob_mob_marker","AzrielMob_mob_marker_Friendly"]}
-execute if score @s rng1 matches 36 if score @s rng7 matches 1 rotated ~ 0 positioned ^ ^ ^7 run summon marker ~ ~1 ~ {Tags:["AZR_summon_arrow_line_down","AzrielMob_mob_marker","AzrielMob_mob_marker_Friendly"]}
-execute if score @s rng1 matches 39 if score @s rng7 matches 1 rotated ~ 0 positioned ^ ^ ^9 run summon marker ~ ~1 ~ {Tags:["AZR_summon_arrow_line_down","AzrielMob_mob_marker","AzrielMob_mob_marker_Friendly"]}
-execute if score @s rng1 matches 42 if score @s rng7 matches 1 rotated ~ 0 positioned ^ ^ ^11 run summon marker ~ ~1 ~ {Tags:["AZR_summon_arrow_line_down","AzrielMob_mob_marker","AzrielMob_mob_marker_Friendly"]}
-execute if score @s rng1 matches 45 if score @s rng7 matches 1 rotated ~ 0 positioned ^ ^ ^13 run summon marker ~ ~1 ~ {Tags:["AZR_summon_arrow_line_down","AzrielMob_mob_marker","AzrielMob_mob_marker_Friendly"]}
+execute if score @s rng1 matches 30 if score @s rng7 matches 1..2 rotated ~ 0 positioned ^ ^ ^3 run summon marker ~ ~1 ~ {Tags:["AZR_summon_arrow_line_down","AzrielMob_mob_marker","AzrielMob_mob_marker_Friendly"]}
+execute if score @s rng1 matches 33 if score @s rng7 matches 1..2 rotated ~ 0 positioned ^ ^ ^5 run summon marker ~ ~1 ~ {Tags:["AZR_summon_arrow_line_down","AzrielMob_mob_marker","AzrielMob_mob_marker_Friendly"]}
+execute if score @s rng1 matches 36 if score @s rng7 matches 1..2 rotated ~ 0 positioned ^ ^ ^7 run summon marker ~ ~1 ~ {Tags:["AZR_summon_arrow_line_down","AzrielMob_mob_marker","AzrielMob_mob_marker_Friendly"]}
+execute if score @s rng1 matches 39 if score @s rng7 matches 1..2 rotated ~ 0 positioned ^ ^ ^9 run summon marker ~ ~1 ~ {Tags:["AZR_summon_arrow_line_down","AzrielMob_mob_marker","AzrielMob_mob_marker_Friendly"]}
+execute if score @s rng1 matches 42 if score @s rng7 matches 1..2 rotated ~ 0 positioned ^ ^ ^11 run summon marker ~ ~1 ~ {Tags:["AZR_summon_arrow_line_down","AzrielMob_mob_marker","AzrielMob_mob_marker_Friendly"]}
+execute if score @s rng1 matches 45 if score @s rng7 matches 1..2 rotated ~ 0 positioned ^ ^ ^13 run summon marker ~ ~1 ~ {Tags:["AZR_summon_arrow_line_down","AzrielMob_mob_marker","AzrielMob_mob_marker_Friendly"]}
 
+execute if score @s rng1 matches 30 if score @s rng7 matches 3 rotated ~ 0 positioned ^ ^ ^3 run summon marker ~ ~1 ~ {Tags:["AZR_summon_arrow_chase_explosion","AzrielMob_mob_marker","AzrielMob_mob_marker_Friendly"]}
 
 execute if score @s rng1 matches 200.. store result score @s rng1 run random value -40..5
