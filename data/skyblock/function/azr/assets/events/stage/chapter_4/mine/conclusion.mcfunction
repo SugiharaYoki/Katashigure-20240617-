@@ -182,7 +182,7 @@ execute if score @s rng1 matches 888 at @n[tag=AzrielNPC_andralune] run playsoun
 execute if score @s rng1 matches 888 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"light_purple",bold:1b},{bold:false,text:"\n“希望我们确实会再见。当你找到沙利叶大人的时候，请一定要替我……找到所有的答案。”",color:"white"}]
 
 execute if score @s rng1 matches 909 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
-execute if score @s rng1 matches 909 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"light_purple",bold:1b},{bold:false,text:"\n“时与空走到尽头，我们必定都会归于同一片虚无。”",color:"white"}]
+execute if score @s rng1 matches 909 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"light_purple",bold:1b},{bold:false,text:"\n“待时与空走到尽头，我们都会归于同一片虚无。”",color:"white"}]
 
 
 execute if score @s rng1 matches 912 as @n[tag=AzrielNPC_andralune] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
@@ -191,7 +191,7 @@ execute if score @s rng1 matches 912 as @n[tag=AzrielNPC_andralune] at @s run tp
 
 execute if score @s rng1 matches 922 as @n[tag=AzrielNPC_mersenne] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer] eyes
 execute if score @s rng1 matches 922 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
-execute if score @s rng1 matches 922 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“爱理莎大人，我刚刚把亚米逸散的魔力汇聚成了一块新的石板，现在给您。”",color:"white"}]
+execute if score @s rng1 matches 922 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“爱理莎大人，我刚刚把亚米陨落时逸散的魔力汇聚成了一块新的石板，现在给您。”",color:"white"}]
 
 execute if score @s rng1 matches 925 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/magical_current
 

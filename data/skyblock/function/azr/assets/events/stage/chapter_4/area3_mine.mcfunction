@@ -50,6 +50,20 @@ execute positioned -79337 23 -415 unless entity @n[tag=AzrielTrader_pig_henry,di
 execute positioned -79337 23 -415 unless entity @n[tag=AzrielTrader_pig_henry,distance=..1000,type=piglin] positioned -79793 -6 -277 as @n[tag=AzrielTrader_pig_henry] unless score @s rng2 matches 9999.. run scoreboard players set @s rng2 9999
 
 
+#野怪刷新
 execute positioned -79602 15 -406 if score random_enemy_thread AzrTimerStack matches 2 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:42}
 execute positioned -79602 15 -406 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count rng10 matches 50.. unless score random_enemy_count AzrTimerStack matches 2.. unless entity @a[tag=azrPlayer,distance=..18] if entity @a[tag=azrPlayer,distance=..30] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_soldier_undead
+
+
+execute positioned -79656 22 -332 if score random_enemy_thread AzrTimerStack matches 2 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:42}
+execute positioned -79656 22 -332 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count rng10 matches 50.. unless score random_enemy_count AzrTimerStack matches 4.. unless entity @a[tag=azrPlayer,distance=..18] if entity @a[tag=azrPlayer,distance=..30] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_animal
+execute positioned -79676 20 -333 if score random_enemy_thread AzrTimerStack matches 2 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:42}
+execute positioned -79676 20 -333 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count rng10 matches 50.. unless score random_enemy_count AzrTimerStack matches 4.. unless entity @a[tag=azrPlayer,distance=..18] if entity @a[tag=azrPlayer,distance=..30] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter4_forest_animal
+
+
+
+
+
+
+
 
