@@ -6,6 +6,17 @@ summon item_display ~-2 ~2 ~ {Tags:["AzrielMob_mob_marker","AzrielMob_demon_amy_
 summon item_display ~4 ~3 ~ {Tags:["AzrielMob_mob_marker","AzrielMob_demon_amy_flame_eye_c","AzrielMob_demon_amy_flame_eye_part2"],transformation:{left_rotation:[0,1,0,1],right_rotation:[0,1,0,1],translation:[0,0,0],scale:[1,1,1]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjE0MmEzNWFjMGIwNTVlZDUwYTVjYmY4NzBiNmVmMWNjMWY5NGUyNjQyYjliYTY1MGM5ZTAzODVlNmNiZTM2In19fQ=="}]}}}}
 summon item_display ~-4 ~3 ~ {Tags:["AzrielMob_mob_marker","AzrielMob_demon_amy_flame_eye_d","AzrielMob_demon_amy_flame_eye_part2"],transformation:{left_rotation:[0,1,0,1],right_rotation:[0,1,0,1],translation:[0,0,0],scale:[1,1,1]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjE0MmEzNWFjMGIwNTVlZDUwYTVjYmY4NzBiNmVmMWNjMWY5NGUyNjQyYjliYTY1MGM5ZTAzODVlNmNiZTM2In19fQ=="}]}}}}
 
+
+summon minecraft:marker ~ ~ ~ {Tags:["azr_spin_core"],Rotation:[0f,0f]}
+summon minecraft:block_display ~ ~ ~ {Tags:["azr_spin_plate","azr_spin_plate_1"],block_state:{Name:"minecraft:netherite_block"},teleport_duration:1,shadow_radius:0f,transformation:{translation:[-0.75f,-0.06f,-0.175f],scale:[1.5f,0.12f,0.35f]}}
+summon minecraft:block_display ~ ~ ~ {Tags:["azr_spin_plate","azr_spin_plate_2"],block_state:{Name:"minecraft:netherite_block"},teleport_duration:1,shadow_radius:0f,transformation:{translation:[-0.75f,-0.06f,-0.175f],scale:[1.5f,0.12f,0.35f]}}
+summon minecraft:block_display ~ ~ ~ {Tags:["azr_spin_plate","azr_spin_plate_3"],block_state:{Name:"minecraft:netherite_block"},teleport_duration:1,shadow_radius:0f,transformation:{translation:[-0.75f,-0.06f,-0.175f],scale:[1.5f,0.12f,0.35f]}}
+summon minecraft:block_display ~ ~ ~ {Tags:["azr_spin_plate","azr_spin_plate_4"],block_state:{Name:"minecraft:netherite_block"},teleport_duration:1,shadow_radius:0f,transformation:{translation:[-0.75f,-0.06f,-0.175f],scale:[1.5f,0.12f,0.35f]}}
+
+
+scoreboard players set @s rng18 0
+
+
 playsound minecraft:item.totem.use hostile @a ~ ~ ~ 1 1.5
 particle trial_spawner_detection ~ ~5.4 ~ 0.5 5.5 0.5 0 200
 particle totem_of_undying ~ ~0.5 ~ 0.5 1.5 0.5 0.5 30
