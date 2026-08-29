@@ -119,9 +119,9 @@ execute as @s[scores={rng1=5001}] run effect give @a[tag=azrPlayer] slowness 3 2
 execute as @s[scores={rng1=5001}] run scoreboard players set @n[tag=AzrielTrader_pig_henry] AzrielNPC_FollowInterest 0
 
 execute as @s[scores={rng1=5001}] as @a[tag=azrPlayer] at @s run playsound minecraft:entity.pillager.ambient master @s ~ ~ ~ 0.3 0.8
-execute as @s[scores={rng1=5001}] run tellraw @a[tag=azrShowDialog] [{text:"默尔森的灵能传话：",color:"yellow",bold:1b},{bold: false,text:"\n“爱理莎小姐，你所在处的前方有极其强烈的魔力波动。”",color:"white"}]
+execute as @s[scores={rng1=5001}] run tellraw @a[tag=azrShowDialog] [{text:"默尔森的灵能传话：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎小姐，你所在处的前方有极其强烈的魔力波动。”",color:"white"}]
 execute as @s[scores={rng1=5013}] as @a[tag=azrPlayer] at @s run playsound minecraft:entity.pillager.ambient master @s ~ ~ ~ 0.3 0.8
-execute as @s[scores={rng1=5013}] run tellraw @a[tag=azrShowDialog] [{text:"默尔森的灵能传话：",color:"yellow",bold:1b},{bold: false,text:"\n“我不确定你能不能听见这条消息，但切记：一定要小心，对面不是等闲之辈。”",color:"white"}]
+execute as @s[scores={rng1=5013}] run tellraw @a[tag=azrShowDialog] [{text:"默尔森的灵能传话：",color:"green",bold:1b},{bold: false,text:"\n“我不确定你能不能听见这条消息，但切记：一定要小心，对面不是等闲之辈。”",color:"white"}]
 
 execute as @s[scores={rng1=5027}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“亨利，你就到这里吧。”",color:"white"}]
 execute as @s[scores={rng1=5039}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
