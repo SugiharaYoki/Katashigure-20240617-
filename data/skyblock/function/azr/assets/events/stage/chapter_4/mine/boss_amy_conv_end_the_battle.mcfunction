@@ -7,7 +7,8 @@ execute if score @s rng11 matches 5001 positioned -79504 15 -328 at @n[tag=Azrie
 execute if score @s rng11 matches 5001 positioned -79504 15 -328 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"light_purple",bold:1b},{bold: false,text:"\n“差不多是时候了，爱理莎！最后攻势！！”",color:"white"}]
 execute if score @s rng11 matches 5041 positioned -79504 15 -328 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“好！！”",color:"white"}]
 
-
+execute if score @s rng11 matches 5101 at @n[tag=AzrielNPC_andralune] run kill @e[tag=andralune_wings,distance=..10]
+execute if score @s rng11 matches 5101 as @n[tag=AzrielNPC_andralune] at @s rotated as @s run function skyblock:azr/assets/mobs/skill/boss1_andralune/equip_wings_particle
 
 execute if score @s rng11 matches 5021 positioned -79495 15 -328 as @n[tag=AzrielMob_demon_amy,distance=..200] if entity @s[distance=8..] facing -79495 15 -328 run tp @s ^ ^ ^2
 execute if score @s rng11 matches 5041 positioned -79495 15 -328 as @n[tag=AzrielMob_demon_amy,distance=..200] if entity @s[distance=8..] facing -79495 15 -328 run tp @s ^ ^ ^2
