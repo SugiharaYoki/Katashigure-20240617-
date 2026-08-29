@@ -95,6 +95,7 @@ execute if score @s AzrEntityTimer matches 1030.. run tag @s remove prepare_to_f
 execute if score @s AzrEntityTimer matches 1030.. run scoreboard players set @s AzrEntityTimer -60
 
 execute unless entity @s[tag=prepare_to_fire] at @s unless entity @n[type=piglin_brute,tag=AzrielMob_demon_amy,distance=..20] run tp @s @n[tag=AzrielMob_demon_amy,distance=..20]
+execute at @s unless entity @n[type=piglin_brute,tag=AzrielMob_demon_amy,distance=..200] run particle flame ~ ~0.2 ~ 0.3 0.3 0.3 0 15
 execute at @s unless entity @n[type=piglin_brute,tag=AzrielMob_demon_amy,distance=..200] run kill @s
 execute unless entity @s[tag=prepare_to_fire] at @n[type=piglin_brute,tag=AzrielMob_demon_amy,distance=..20] rotated ~ 0 positioned ^2.2 ^2 ^-0.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_demon_amy_flame_eye_destination_point_a"]}
 execute unless entity @s[tag=prepare_to_fire] at @n[type=piglin_brute,tag=AzrielMob_demon_amy,distance=..20] rotated ~ 0 positioned ^-2.2 ^2 ^-0.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_demon_amy_flame_eye_destination_point_b"]}
