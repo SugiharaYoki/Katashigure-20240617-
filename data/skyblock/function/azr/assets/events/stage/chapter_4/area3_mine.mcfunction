@@ -30,8 +30,8 @@ execute positioned -79588 9 -391 as @n[type=villager,distance=..5,tag=AzrielTrad
 
 
 #BOSS-4 魔神亚米
-execute positioned -79505 15 -338 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,x=-79505,y=14,z=-338,dx=21,dy=2,dz=21] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5,tag=!Chapter4_Boss_Ended] at @s run function skyblock:azr/assets/events/stage/chapter_4/mine/boss_amy_core
+execute if score stage Azr_system matches ..68 positioned -79505 15 -338 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,x=-79505,y=14,z=-338,dx=21,dy=2,dz=21] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute if score stage Azr_system matches ..68 positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5,tag=!Chapter4_Boss_Ended] at @s run function skyblock:azr/assets/events/stage/chapter_4/mine/boss_amy_core
 
 execute positioned -79505 45 -338 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] positioned -79505 15 -338 if entity @n[tag=AzrielMarker_encounter,distance=0..0.5,tag=Chapter4_Boss_Ended] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79505 45 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_4/mine/conclusion
