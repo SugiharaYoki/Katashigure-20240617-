@@ -1,5 +1,6 @@
 scoreboard players add @s rng11 1 
 
+execute if score @s rng11 matches ..5000 run scoreboard players set @s rng11 5000
 execute if score @s rng11 matches 5001 run item replace entity @n[tag=AzrielNPC_andralune] weapon.mainhand with air
 execute if score @s rng11 matches 5001 run bossbar remove azr:boss_hp_bar_2
 execute if score @s rng11 matches 5001 positioned -79504 15 -328 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.
