@@ -76,7 +76,7 @@ execute as @s[scores={rng3=1..}] as @n[tag=AzrielMob_demon_amy] at @s run functi
 
 execute as @s[scores={rng2=29..,rng3=1}] unless entity @n[tag=AzrielMob_demon_amy,distance=..80,type=piglin_brute] run stopsound @a[tag=azrShowDialog] music minecraft:garden1.combathigh
 execute as @s[scores={rng2=29..,rng3=1}] unless entity @n[tag=AzrielMob_demon_amy,distance=..80,type=piglin_brute] run scoreboard players set @s rng9 0
-execute as @s[scores={rng2=29..}] unless entity @n[tag=AzrielMob_demon_amy,distance=..80,type=piglin_brute] run scoreboard players add @s rng3 1
+execute as @s[scores={rng2=29..}] unless score @s rng3 matches 21.. unless entity @n[tag=AzrielMob_demon_amy,distance=..80,type=piglin_brute] run scoreboard players add @s rng3 1
 execute as @s[scores={rng2=29..,rng3=..9}] unless entity @n[tag=AzrielMob_demon_amy,distance=..80,type=piglin_brute] run scoreboard players set @s rng2 -10
 execute as @s[scores={rng2=29..,rng3=10..}] unless entity @n[tag=AzrielMob_demon_amy,distance=..80,type=piglin_brute] run kill @e[tag=azr_spin_core,distance=..100,type=marker]
 execute as @s[scores={rng2=29..,rng3=10..}] unless entity @n[tag=AzrielMob_demon_amy,distance=..80,type=piglin_brute] as @e[tag=azr_spin_plate,distance=..100,type=block_display] at @s run particle campfire_cosy_smoke ~ ~0.5 ~ 0.3 0.3 0.3 0 3
