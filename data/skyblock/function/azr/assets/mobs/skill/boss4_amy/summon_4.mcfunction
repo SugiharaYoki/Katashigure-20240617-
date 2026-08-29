@@ -8,10 +8,14 @@ summon item_display ~-4 ~3 ~ {Tags:["AzrielMob_mob_marker","AzrielMob_demon_amy_
 
 
 summon minecraft:marker ~ ~ ~ {Tags:["azr_spin_core"],Rotation:[0f,0f]}
-summon minecraft:block_display ~ ~ ~ {Tags:["azr_spin_plate","azr_spin_plate_1"],block_state:{Name:"minecraft:netherite_block"},teleport_duration:1,shadow_radius:0f,transformation:{translation:[-0.75f,-0.06f,-0.175f],scale:[1.5f,0.12f,0.35f]}}
-summon minecraft:block_display ~ ~ ~ {Tags:["azr_spin_plate","azr_spin_plate_2"],block_state:{Name:"minecraft:netherite_block"},teleport_duration:1,shadow_radius:0f,transformation:{translation:[-0.75f,-0.06f,-0.175f],scale:[1.5f,0.12f,0.35f]}}
-summon minecraft:block_display ~ ~ ~ {Tags:["azr_spin_plate","azr_spin_plate_3"],block_state:{Name:"minecraft:netherite_block"},teleport_duration:1,shadow_radius:0f,transformation:{translation:[-0.75f,-0.06f,-0.175f],scale:[1.5f,0.12f,0.35f]}}
-summon minecraft:block_display ~ ~ ~ {Tags:["azr_spin_plate","azr_spin_plate_4"],block_state:{Name:"minecraft:netherite_block"},teleport_duration:1,shadow_radius:0f,transformation:{translation:[-0.75f,-0.06f,-0.175f],scale:[1.5f,0.12f,0.35f]}}
+# 铁板 1
+summon minecraft:block_display ~ ~ ~ {Tags:["azr_spin_plate","azr_spin_plate_1"],block_state:{Name:"minecraft:netherite_block"},teleport_duration:1,shadow_radius:0f,transformation:{translation:[-0.75f,-0.075f,-0.2f],left_rotation:[0f,0f,0f,1f],scale:[1.5f,0.15f,0.4f],right_rotation:[0f,0f,0f,1f]}}
+# 铁板 2
+summon minecraft:block_display ~ ~ ~ {Tags:["azr_spin_plate","azr_spin_plate_2"],block_state:{Name:"minecraft:netherite_block"},teleport_duration:1,shadow_radius:0f,transformation:{translation:[-0.75f,-0.075f,-0.2f],left_rotation:[0f,0f,0f,1f],scale:[1.5f,0.15f,0.4f],right_rotation:[0f,0f,0f,1f]}}
+# 铁板 3
+summon minecraft:block_display ~ ~ ~ {Tags:["azr_spin_plate","azr_spin_plate_3"],block_state:{Name:"minecraft:netherite_block"},teleport_duration:1,shadow_radius:0f,transformation:{translation:[-0.75f,-0.075f,-0.2f],left_rotation:[0f,0f,0f,1f],scale:[1.5f,0.15f,0.4f],right_rotation:[0f,0f,0f,1f]}}
+# 铁板 4
+summon minecraft:block_display ~ ~ ~ {Tags:["azr_spin_plate","azr_spin_plate_4"],block_state:{Name:"minecraft:netherite_block"},teleport_duration:1,shadow_radius:0f,transformation:{translation:[-0.75f,-0.075f,-0.2f],left_rotation:[0f,0f,0f,1f],scale:[1.5f,0.15f,0.4f],right_rotation:[0f,0f,0f,1f]}}
 
 
 scoreboard players set @s rng18 0
