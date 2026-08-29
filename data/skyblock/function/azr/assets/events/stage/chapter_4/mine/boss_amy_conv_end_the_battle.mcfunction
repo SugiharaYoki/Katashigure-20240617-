@@ -59,10 +59,16 @@ execute if score @s rng11 matches 5210 positioned -79495 15 -328 positioned ~ ~ 
 execute if score @s rng11 matches 5210 positioned -79495 15 -328 positioned ~6 ~ ~ run summon lightning_bolt
 execute if score @s rng11 matches 5210 positioned -79495 15 -328 positioned ~-6 ~ ~ run summon lightning_bolt
 
+
+execute if score @s rng11 matches 5220 run kill @e[tag=azr_spin_core,distance=..100,type=marker]
+execute if score @s rng11 matches 5220 as @e[tag=azr_spin_plate,distance=..100,type=block_display] at @s run particle campfire_cosy_smoke ~ ~0.5 ~ 0.3 0.3 0.3 0 3
+execute if score @s rng11 matches 5220 run kill @e[tag=azr_spin_plate,distance=..100,type=block_display]
+
 execute if score @s rng11 matches 5188..5280 positioned -79495 15 -328 run particle minecraft:trial_spawner_detection -79494.48 18.00 -327.50 5 3 5 0 10
 
 execute if score @s rng11 matches 5281 run particle explosion_emitter -79494.48 18.00 -327.50 5 2 5 0 4
 execute if score @s rng11 matches 5281 run particle minecraft:dripping_obsidian_tear -79494.48 18.00 -327.50 5 5 5 0 1000
+execute if score @s rng11 matches 5281 run kill @n[tag=AzrielMob_demon_amy]
 execute if score @s rng11 matches 5281 run bossbar remove azr:boss_hp_bar
 execute if score @s rng11 matches 5281 positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5,tag=!Chapter4_Boss_Ended] run tag @s add Chapter4_Boss_Ended
 
