@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "血金窟：魔神 - 亚米",
+            "color": "dark_red",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "节制天平的力量来源于神庭。\n它给我带来的提升效果源于生命树根系，我能从中汲取生命与亡魂的魔力。\n\n生命手册的力量来源于魔界。\n默尔森讲解过，它是奇匠派蒙的产物，能够高效转换魔力。\n\n而安德拉伦恩分析说，我多半获得了天使长雷米尔的青睐。\n这也使得我能够通过生命树根系进行复活。\n\n那么……\n被我称为“索命连击”的力量，究竟源于何处？",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:nether_star"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage17"
+}
