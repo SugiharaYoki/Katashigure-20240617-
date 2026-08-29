@@ -15,7 +15,9 @@ execute as @s[scores={rng2=7}] unless score @s rng3 matches 2.. positioned -7949
 execute as @s[scores={rng2=7,rng3=2}] positioned -79495 15 -328 run function skyblock:azr/assets/mobs/skill/boss4_amy/summon_2
 execute as @s[scores={rng2=7,rng3=3}] positioned -79495 15 -328 run function skyblock:azr/assets/mobs/skill/boss4_amy/summon_3
 execute as @s[scores={rng2=7,rng3=4}] positioned -79495 15 -328 run function skyblock:azr/assets/mobs/skill/boss4_amy/summon_2
-execute as @s[scores={rng2=7,rng3=5..12}] positioned -79495 15 -328 run function skyblock:azr/assets/mobs/skill/boss4_amy/summon_3
+execute as @s[scores={rng2=7,rng3=5..6}] positioned -79495 15 -328 run function skyblock:azr/assets/mobs/skill/boss4_amy/summon_3
+execute as @s[scores={rng2=7,rng3=7}] positioned -79495 15 -328 run function skyblock:azr/assets/mobs/skill/boss4_amy/summon_2
+execute as @s[scores={rng2=7,rng3=8..12}] positioned -79495 15 -328 run function skyblock:azr/assets/mobs/skill/boss4_amy/summon_3
 execute as @s[scores={rng2=7,rng3=7}] positioned -79495 15 -328 run effect give @n[tag=AzrielMob_demon_amy] resistance 5 4 true
 
 execute as @s[scores={rng2=7,rng3=13..20}] positioned -79495 15 -328 run function skyblock:azr/assets/mobs/skill/boss4_amy/summon_4

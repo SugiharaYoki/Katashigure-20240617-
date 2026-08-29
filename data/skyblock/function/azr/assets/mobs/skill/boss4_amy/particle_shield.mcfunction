@@ -66,5 +66,6 @@ execute as @n[type=minecraft:marker,tag=azr_spin_core,distance=..10] at @s rotat
 # ============================================================
 execute if score @s rng18 matches 120 run tag @a[tag=azr_spin_hit,tag=azrPlayer] remove azr_spin_hit
 execute if score @s rng18 matches 120..139 as @a[distance=2.7..3.3,tag=!azr_spin_hit,tag=azrPlayer] run damage @s 8 minecraft:cramming
+execute if score @s rng18 matches 120..139 as @n[distance=2.7..3.3,tag=AzrielNPC_andralune] run damage @s 10 minecraft:cramming
 execute if score @s rng18 matches 120..139 run tag @a[distance=2.72..3.3,tag=!azr_spin_hit,tag=azrPlayer] add azr_spin_hit
 execute if score @s rng18 matches 140 run tag @a[tag=azr_spin_hit,tag=azrPlayer] remove azr_spin_hit

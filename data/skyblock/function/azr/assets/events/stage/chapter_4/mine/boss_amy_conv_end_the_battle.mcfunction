@@ -66,14 +66,14 @@ execute if score @s rng11 matches 5280 run kill @e[tag=azr_spin_core,distance=..
 execute if score @s rng11 matches 5280 as @e[tag=azr_spin_plate,distance=..100,type=block_display] at @s run particle campfire_cosy_smoke ~ ~0.5 ~ 0.3 0.3 0.3 0 3
 execute if score @s rng11 matches 5280 run kill @e[tag=azr_spin_plate,distance=..100,type=block_display]
 
-execute if score @s rng11 matches 5218..5380 positioned -79495 15 -328 run particle minecraft:trial_spawner_detection -79494.48 18.00 -327.50 5 3 5 0 10
+execute if score @s rng11 matches 5218..5350 positioned -79495 15 -328 run particle minecraft:trial_spawner_detection -79494.48 18.00 -327.50 5 3 5 0 10
 
-execute if score @s rng11 matches 5381 run stopsound @a[tag=azrShowDialog] music minecraft:fuse
-execute if score @s rng11 matches 5381 run particle explosion_emitter -79494.48 16.00 -327.50 7 5 7 0 4
-execute if score @s rng11 matches 5381 run particle minecraft:dripping_obsidian_tear -79494.48 18.00 -327.50 5 5 5 0 1000
-execute if score @s rng11 matches 5381 run kill @n[tag=AzrielMob_demon_amy]
-execute if score @s rng11 matches 5381 run bossbar remove azr:boss_hp_bar
-execute if score @s rng11 matches 5381 positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5,tag=!Chapter4_Boss_Ended] run tag @s add Chapter4_Boss_Ended
+execute if score @s rng11 matches 5361 run stopsound @a[tag=azrShowDialog] music minecraft:fuse
+execute if score @s rng11 matches 5361 run particle explosion_emitter -79494.48 16.00 -327.50 7 5 7 0 4
+execute if score @s rng11 matches 5361 run particle minecraft:dripping_obsidian_tear -79494.48 18.00 -327.50 5 5 5 0 1000
+execute if score @s rng11 matches 5361 run kill @n[tag=AzrielMob_demon_amy]
+execute if score @s rng11 matches 5361 run bossbar remove azr:boss_hp_bar
+execute if score @s rng11 matches 5361 positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5,tag=!Chapter4_Boss_Ended] run tag @s add Chapter4_Boss_Ended
 
 
 
