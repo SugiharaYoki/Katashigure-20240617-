@@ -1,8 +1,10 @@
 scoreboard players add @s rng11 1 
 
+execute if score @s rng11 matches 5001 run bossbar remove azr:boss_hp_bar_2
 execute if score @s rng11 matches 5001 positioned -79504 15 -328 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.
 execute if score @s rng11 matches 5001 positioned -79504 15 -328 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"light_purple",bold:1b},{bold: false,text:"\n“差不多是时候了，爱理莎！最后攻势！！”",color:"white"}]
 execute if score @s rng11 matches 5041 positioned -79504 15 -328 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“好！！”",color:"white"}]
+
 
 
 execute if score @s rng11 matches 5021 positioned -79495 15 -328 as @n[tag=AzrielMob_demon_amy,distance=..200] if entity @s[distance=8..] facing -79495 15 -328 run tp @s ^ ^ ^2
@@ -48,12 +50,20 @@ execute if score @s rng11 matches 5201 positioned ~ ~ ~ run tellraw @a[tag=azrSh
 execute if score @s rng11 matches 5251 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng11 matches 5251 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"亚米：",color:"red",bold:1b},{bold: false,text:"\n“我承认，现在更强的……是你们！”",color:"white"}]
 
+execute if score @s rng11 matches 5188 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.wither.spawn ambient @a ~ ~ ~ 5 0.6
+execute if score @s rng11 matches 5188 positioned -79495 15 -328 run playsound minecraft:entity.ender_dragon.death master @a ~ ~ ~ 10 1.5
+
 execute if score @s rng11 matches 5210 positioned -79495 15 -328 positioned ~ ~ ~6 run summon lightning_bolt
 execute if score @s rng11 matches 5210 positioned -79495 15 -328 positioned ~ ~ ~-6 run summon lightning_bolt
 execute if score @s rng11 matches 5210 positioned -79495 15 -328 positioned ~6 ~ ~ run summon lightning_bolt
 execute if score @s rng11 matches 5210 positioned -79495 15 -328 positioned ~-6 ~ ~ run summon lightning_bolt
 
+execute if score @s rng11 matches 5188..5280 positioned -79495 15 -328 run particle minecraft:trial_spawner_detection -79494.48 18.00 -327.50 5 3 5 0 10
 
+execute if score @s rng11 matches 5281 run particle explosion_emitter -79494.48 18.00 -327.50 5 2 5 0 4
+execute if score @s rng11 matches 5281 run particle minecraft:dripping_obsidian_tear -79494.48 18.00 -327.50 5 5 5 0 1000
+execute if score @s rng11 matches 5281 run bossbar remove azr:boss_hp_bar
+execute if score @s rng11 matches 5281 positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5,tag=!Chapter4_Boss_Ended] run tag @s add Chapter4_Boss_Ended
 
 
 
