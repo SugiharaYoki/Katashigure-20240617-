@@ -33,6 +33,7 @@ execute if score @s rng11 matches 5121 as @n[tag=AzrielNPC_mersenne] at @s run e
 execute if score @s rng11 matches 5121 as @n[tag=AzrielNPC_andralune] at @s run effect give @s resistance infinite 99 true
 execute if score @s rng11 matches 5121 as @n[tag=AzrielNPC_marinus] at @s run effect give @s resistance infinite 99 true
 execute if score @s rng11 matches 5121 as @n[tag=AzrielNPC_mersenne] at @s run effect give @s resistance infinite 99 true
+execute if score @s rng11 matches 5121 as @n[tag=AzrielNPC_mersenne] at @s run data modify entity @s NoAI set value 0b
 execute if score @s rng11 matches 5124.. as @n[tag=AzrielNPC_andralune] at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielMob_demon_amy]
 execute if score @s rng11 matches 5124.. as @n[tag=AzrielNPC_marinus] at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielMob_demon_amy]
 execute if score @s rng11 matches 5124.. as @n[tag=AzrielNPC_mersenne] at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielMob_demon_amy]

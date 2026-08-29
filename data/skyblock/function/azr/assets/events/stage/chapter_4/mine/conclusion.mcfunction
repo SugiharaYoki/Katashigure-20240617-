@@ -210,6 +210,7 @@ execute if score @s rng1 matches 1020 as @n[tag=AzrielNPC_marinus] at @s run tp 
 
 execute if score @s rng1 matches 1023 run scoreboard players set stage Azr_system 69
 execute if score @s rng1 matches 1023 run title @a[tag=azrShowDialog] actionbar {text:"Chapter Clear",color:"gold"}
+execute if score @s rng1 matches 1023 as @a[tag=azrShowDialog] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 2 0.9
 execute if score @s rng1 matches 1023 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage17_boss4
 execute if score @s rng1 matches 1023 as @a[tag=azrPlayer] at @s run summon item ~ ~ ~ {Item:{id:"emerald",count:10b}}
 execute if score @s rng1 matches 1023 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
