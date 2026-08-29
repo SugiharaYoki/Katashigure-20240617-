@@ -71,18 +71,30 @@ execute if score @s rng11 matches 5230 positioned -79495 15 -328 positioned ~ ~ 
 execute if score @s rng11 matches 5230 positioned -79495 15 -328 positioned ~ ~ ~-6 run summon lightning_bolt
 execute if score @s rng11 matches 5230 positioned -79495 15 -328 positioned ~6 ~ ~ run summon lightning_bolt
 execute if score @s rng11 matches 5230 positioned -79495 15 -328 positioned ~-6 ~ ~ run summon lightning_bolt
+execute if score @s rng11 matches 5270 positioned -79495 15 -328 positioned ~ ~ ~6 run summon lightning_bolt
+execute if score @s rng11 matches 5270 positioned -79495 15 -328 positioned ~ ~ ~-6 run summon lightning_bolt
+execute if score @s rng11 matches 5270 positioned -79495 15 -328 positioned ~6 ~ ~ run summon lightning_bolt
+execute if score @s rng11 matches 5270 positioned -79495 15 -328 positioned ~-6 ~ ~ run summon lightning_bolt
+execute if score @s rng11 matches 5310 positioned -79495 15 -328 positioned ~ ~ ~6 run summon lightning_bolt
+execute if score @s rng11 matches 5310 positioned -79495 15 -328 positioned ~ ~ ~-6 run summon lightning_bolt
+execute if score @s rng11 matches 5310 positioned -79495 15 -328 positioned ~6 ~ ~ run summon lightning_bolt
+execute if score @s rng11 matches 5310 positioned -79495 15 -328 positioned ~-6 ~ ~ run summon lightning_bolt
+execute if score @s rng11 matches 5356 positioned -79495 15 -328 positioned ~ ~ ~ run summon lightning_bolt
+execute if score @s rng11 matches 5358 positioned -79495 15 -328 positioned ~ ~ ~ run summon lightning_bolt
+execute if score @s rng11 matches 5360 positioned -79495 15 -328 positioned ~ ~ ~ run summon lightning_bolt
 
 
 execute if score @s rng11 matches 5280 run kill @e[tag=azr_spin_core,distance=..100,type=marker]
-execute if score @s rng11 matches 5280 as @e[tag=azr_spin_plate,distance=..100,type=block_display] at @s run particle campfire_cosy_smoke ~ ~0.5 ~ 0.3 0.3 0.3 0 3
+execute if score @s rng11 matches 5280 as @e[tag=azr_spin_plate,distance=..100,type=block_display] at @s run particle campfire_cosy_smoke ~ ~0.5 ~ 0.5 0.5 0.5 0 4
 execute if score @s rng11 matches 5280 run kill @e[tag=azr_spin_plate,distance=..100,type=block_display]
 
 execute if score @s rng11 matches 5218..5350 positioned -79495 15 -328 run particle minecraft:trial_spawner_detection -79494.48 18.00 -327.50 5 3 5 0 10
+execute if score @s rng11 matches 5218..5350 positioned -79495 15 -328 run particle minecraft:trial_spawner_detection -79494.48 18.00 -327.50 1 3 1 0 10
 
 execute if score @s rng11 matches 5359 as @n[tag=AzrielNPC_andralune] at @s run tp @s -79502 15 -328
 
 execute if score @s rng11 matches 5361 run stopsound @a[tag=azrShowDialog] music minecraft:fuse
-execute if score @s rng11 matches 5361 run particle explosion_emitter -79494.48 16.00 -327.50 7 5 7 0 4
+execute if score @s rng11 matches 5361 run particle explosion_emitter -79495 14 -328 3 5 3 0 4
 execute if score @s rng11 matches 5361 run particle minecraft:dripping_obsidian_tear -79494.48 18.00 -327.50 5 5 5 0 1000
 execute if score @s rng11 matches 5361 run kill @n[tag=AzrielMob_demon_amy]
 execute if score @s rng11 matches 5361 run bossbar remove azr:boss_hp_bar
