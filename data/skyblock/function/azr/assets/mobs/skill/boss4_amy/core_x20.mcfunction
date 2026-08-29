@@ -19,7 +19,7 @@ execute if entity @s[scores={rng3=12..20}] if score @s rng14 matches 1 store res
 execute if entity @s[scores={rng3=12..20,rng15=1}] if score @s rng14 matches 1.. run function skyblock:azr/assets/mobs/skill/boss4_amy/event_conflict_1
 execute if entity @s[scores={rng3=12..20,rng15=2..3}] if score @s rng14 matches 1.. run function skyblock:azr/assets/mobs/skill/boss4_amy/event_conflict_2
 
-execute if entity @s[scores={rng3=12..20}] run function skyblock:azr/assets/mobs/skill/boss4_amy/particle_shield
+execute if entity @s[scores={rng3=12..}] as @s at @s run function skyblock:azr/assets/mobs/skill/boss4_amy/particle_shield
 
 
 execute if score @s[scores={rng7=1..6}] rng8 matches 180 rotated ~-60 0 run summon marker ^ ^ ^-1.2 {Tags:["AzrielMob_boss_amy_axe_line_marker","AzrielMob_mob_marker"]}
