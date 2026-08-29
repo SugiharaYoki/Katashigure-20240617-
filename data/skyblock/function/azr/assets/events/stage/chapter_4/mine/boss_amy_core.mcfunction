@@ -20,7 +20,7 @@ execute as @s[scores={rng2=7,rng3=7}] positioned -79495 15 -328 run effect give 
 
 execute as @s[scores={rng2=7,rng3=13..20}] positioned -79495 15 -328 run function skyblock:azr/assets/mobs/skill/boss4_amy/summon_4
 
-execute as @s[scores={rng2=7}] unless score @s rng3 matches 1..20 run scoreboard players set @s rng3 1
+execute as @s[scores={rng2=7}] unless score @s rng3 matches 1.. run scoreboard players set @s rng3 1
 execute as @s[scores={rng2=7..}] run scoreboard players operation @n[tag=AzrielMob_demon_amy] rng3 = @s rng3
 
 execute unless score @s rng3 matches 10..20 as @s[scores={rng2=7}] run bossbar add azr:boss_hp_bar "黑铠的狂戮 - ？？？"
