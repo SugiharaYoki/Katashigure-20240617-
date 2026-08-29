@@ -11,6 +11,8 @@ execute if score @s rng8 matches 180 store result score @s rng7 run random value
 
 
 execute as @s[scores={rng12=15..,rng3=7}] run function skyblock:azr/assets/events/stage/chapter_4/mine/boss_amy_conv_andralune_join
+execute unless score @s rng3 matches 21.. if score @s rng11 matches 3500..5000 run scoreboard players set @s rng11 4996
+execute if score @s rng3 matches 21.. run function skyblock:azr/assets/events/stage/chapter_4/mine/boss_amy_conv_end_the_battle
 
 execute unless score @s rng14 matches -9999.. run scoreboard players set @s rng14 0
 execute if entity @s[scores={rng3=12..20,rng14=..0}] store result score @s rng13 run random value 1..200
@@ -36,7 +38,6 @@ execute if score @s rng8 matches 200.. store result score @s rng8 run random val
 
 
 execute as @n[tag=AzrielNPC_andralune,distance=..100] at @s run function skyblock:azr/assets/mobs/skill/boss4_amy/andralune_core_x20
-
 
 
 
