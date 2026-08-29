@@ -18,6 +18,14 @@ execute if score @s rng11 matches 5081 positioned ~ ~ ~ run tellraw @a[tag=azrSh
 execute if score @s rng11 matches 5131 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng11 matches 5131 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"亚米：",color:"red",bold:1b},{bold: false,text:"\n“所以，尔等的计谋……就是令我看得起你们。”",color:"white"}]
 
+execute if score @s rng11 matches 5121 as @n[tag=AzrielNPC_andralune] at @s run tp @s -79502 15 -328
+execute if score @s rng11 matches 5121 as @n[tag=AzrielNPC_andralune] at @s run effect give @s slowness infinite 99 true
+execute if score @s rng11 matches 5121 as @n[tag=AzrielNPC_marinus] at @s run effect give @s slowness infinite 99 true
+execute if score @s rng11 matches 5121 as @n[tag=AzrielNPC_mersenne] at @s run effect give @s slowness infinite 99 true
+execute if score @s rng11 matches 5124.. as @n[tag=AzrielNPC_andralune] at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielMob_demon_amy]
+execute if score @s rng11 matches 5124.. as @n[tag=AzrielNPC_marinus] at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielMob_demon_amy]
+execute if score @s rng11 matches 5124.. as @n[tag=AzrielNPC_mersenne] at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielMob_demon_amy]
+
 execute if score @s rng11 matches 5131 as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
 execute if score @s rng11 matches 5141 as @n[tag=AzrielNPC_marinus] at @s run tp @s -79491 15 -324
 execute if score @s rng11 matches 5151 as @n[tag=AzrielNPC_mersenne] at @s run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
