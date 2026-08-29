@@ -183,6 +183,39 @@ execute if score @s rng1 matches 912 as @n[tag=AzrielNPC_andralune] at @s run fu
 execute if score @s rng1 matches 912 as @n[tag=AzrielNPC_andralune] at @s run tp @s -79792 34 -191
 
 
+execute if score @s rng1 matches 922 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 922 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“爱理莎大人，我刚刚把亚米逸散的魔力汇聚成了一块新的石板，现在给您。”",color:"white"}]
+
+execute if score @s rng1 matches 925 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/magical_current
+
+execute if score @s rng1 matches 938 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 938 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“这块石板能让你看见空中的潮涌魔力，并借此向高处移动。”",color:"white"}]
+execute if score @s rng1 matches 952 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 952 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“用它可以从你最开始落入地狱的缺口顺流而上。我和马林努斯会在那里等你。”",color:"white"}]
+
+execute if score @s rng1 matches 966 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“没问题”",color:"white"}]
+
+execute if score @s rng1 matches 980 as @n[tag=AzrielNPC_mersenne] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
+execute if score @s rng1 matches 980 as @n[tag=AzrielNPC_mersenne] at @s run tp @s -79763 -17 -179
+
+execute if score @s rng1 matches 1002 at @n[tag=AzrielNPC_marinus] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 1002 run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold:false,text:"\n“祝你好运，爱理莎小姐。”",color:"white"}]
+
+execute if score @s rng1 matches 1020 as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
+execute if score @s rng1 matches 1020 as @n[tag=AzrielNPC_marinus] at @s run tp @s -79756 -17 -186
+
+
+
+
+execute if score @s rng1 matches 1023 run scoreboard players set stage Azr_system 69
+execute if score @s rng1 matches 1023 run title @a[tag=azrShowDialog] actionbar {text:"Chapter Clear",color:"gold"}
+execute if score @s rng1 matches 1023 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage17_boss4
+execute if score @s rng1 matches 1023 as @a[tag=azrPlayer] at @s run summon item ~ ~ ~ {Item:{id:"emerald",count:10b}}
+execute if score @s rng1 matches 1023 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute if score @s rng1 matches 1023 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..18}] Azr_skillPoints 19
+execute if score @s rng1 matches 1023 run scoreboard players reset stage_main_thread AzrTimerStack
+
+
 
 
 
