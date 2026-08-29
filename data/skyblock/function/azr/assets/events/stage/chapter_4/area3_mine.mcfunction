@@ -1,8 +1,8 @@
 
 
 #矿洞入口的战斗
-execute positioned -79691 20 -439 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,x=-79691,y=20,z=-439,dx=10,dy=8,dz=10] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79691 20 -439 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 199.. run function skyblock:azr/assets/events/stage/chapter_4/mine/battle_entrance
+execute if score stage Azr_system matches ..68 positioned -79691 20 -439 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,x=-79691,y=20,z=-439,dx=10,dy=8,dz=10] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute if score stage Azr_system matches ..68 positioned -79691 20 -439 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 199.. run function skyblock:azr/assets/events/stage/chapter_4/mine/battle_entrance
 
 
 #百夫长采掘组
@@ -12,12 +12,12 @@ execute positioned -79576 5 -473 as @n[tag=AzrielMarker_encounter,distance=0..0.
 
 
 #矿洞混战
-execute positioned -79681 22 -423 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,x=-79682,y=20,z=-423,dx=11,dy=8,dz=10] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79681 22 -423 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 8999.. run function skyblock:azr/assets/events/stage/chapter_4/mine/battle_chaos
+execute if score stage Azr_system matches ..68 positioned -79681 22 -423 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,x=-79682,y=20,z=-423,dx=11,dy=8,dz=10] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute if score stage Azr_system matches ..68 positioned -79681 22 -423 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 8999.. run function skyblock:azr/assets/events/stage/chapter_4/mine/battle_chaos
 
 
 #第四章道中尾声
-execute positioned -79466 29 -405 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 8999.. run function skyblock:azr/assets/events/stage/chapter_4/mine/battle_portal
+execute if score stage Azr_system matches ..68 positioned -79466 29 -405 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 8999.. run function skyblock:azr/assets/events/stage/chapter_4/mine/battle_portal
 
 #第四章传送功能
 execute positioned -79337 23 -415 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..5] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
