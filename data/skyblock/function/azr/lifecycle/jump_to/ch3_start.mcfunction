@@ -19,5 +19,6 @@ execute as @n[tag=AzrielNPC_andralune] at @s run tag @s remove AzrielMob
 execute as @n[tag=AzrielNPC_marinus] at @s run tag @s remove AzrielMob
 
 
+execute as @n[tag=AzrielNPC_marinus] at @s run tp @s -79909 31 116
 execute as @n[tag=AzrielNPC_mersenne] at @s run tp @s -79909 31 116
 execute as @n[tag=AzrielNPC_andralune] at @s run tp @s -79909 31 116
