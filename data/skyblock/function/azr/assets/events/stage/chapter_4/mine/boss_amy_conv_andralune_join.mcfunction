@@ -36,7 +36,7 @@ execute if score @s rng11 matches 60 run tp @n[tag=AzrielMob_demon_amy] ~ ~ ~ fa
 
 execute if score @s rng11 matches 72 run kill @e[tag=AzrielMob_demon_amy_flame_eye,distance=..100]
 
-execute if score @s rng11 matches 82 positioned -79504 15 -328 run tp @n[tag=AzrielMob_demon_amy] ~ ~ ~ facing entity @n[tag=AzrielNPC_andralune]
+execute if score @s rng11 matches 82 as @n[tag=AzrielMob_demon_amy] at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielNPC_andralune]
 execute if score @s rng11 matches 82 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng11 matches 82 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"red",bold:1b},{bold: false,text:"\n“甚久未见，我记得你。”",color:"white"}]
 
