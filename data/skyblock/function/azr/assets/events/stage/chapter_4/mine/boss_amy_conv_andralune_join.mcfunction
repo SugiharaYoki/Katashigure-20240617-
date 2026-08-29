@@ -94,9 +94,9 @@ execute if score @s rng11 matches 690 at @n[tag=AzrielMob_demon_amy] run playsou
 execute if score @s rng11 matches 690 at @n[tag=AzrielMob_demon_amy] run playsound ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 5 0.5
 execute if score @s rng11 matches 690 at @n[tag=AzrielMob_demon_amy] run playsound ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 5 0.5
 
-execute if score @s rng11 matches 560..620 run particle trail{color:16711680,duration:160,target:[-79494.5,16.0,-327.5]} ~ ~8 ~ 10 10 10 0 1 force
-execute if score @s rng11 matches 600..650 run particle trail{color:16711680,duration:100,target:[-79494.5,16.0,-327.5]} ~ ~8 ~ 10 10 10 0 2 force
-execute if score @s rng11 matches 640..690 run particle trail{color:16711680,duration:80,target:[-79494.5,16.0,-327.5]} ~ ~8 ~ 15 15 15 0 3 force
+execute if score @s rng11 matches 560..620 run particle trail{color:16711680,duration:160,target:[-79494.5,16.0,-327.5]} ~ ~8 ~ 10 10 10 0 2 force
+execute if score @s rng11 matches 600..650 run particle trail{color:16711680,duration:100,target:[-79494.5,16.0,-327.5]} ~ ~8 ~ 10 10 10 0 3 force
+execute if score @s rng11 matches 640..690 run particle trail{color:16711680,duration:80,target:[-79494.5,16.0,-327.5]} ~ ~8 ~ 15 15 15 0 4 force
 
 execute if score @s rng11 matches 750 at @n[tag=AzrielMob_demon_amy] run particle large_smoke ~ 15 ~ 8 0 8 0.1 200
 execute if score @s rng11 matches 750 at @n[tag=AzrielMob_demon_amy] run particle flame ~ 15 ~ 8 0 8 0.1 200
