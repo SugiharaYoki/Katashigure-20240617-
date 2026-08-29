@@ -21,6 +21,9 @@ execute if score @s rng1 matches 25 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 38 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
 execute if score @s rng1 matches 38 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“幸亏我找到了对付魔神的手段。只不过要是亚米的权能更高一些，怕是我们就不会赢得如此轻松了。”",color:"white"}]
 
+execute if score @s rng1 matches 30 run tp @n[tag=AzrielNPC_mersenne] -79498 15 -331
+execute if score @s rng1 matches 33 run tp @n[tag=AzrielNPC_marinus] -79498 15 -325
+
 
 # ============================================================
 # 38之后
