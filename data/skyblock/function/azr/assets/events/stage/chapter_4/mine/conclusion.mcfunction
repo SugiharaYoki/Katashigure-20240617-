@@ -23,6 +23,7 @@ execute if score @s rng1 matches 38 run tellraw @a[tag=azrShowDialog] [{text:"é»
 
 execute if score @s rng1 matches 30 run tp @n[tag=AzrielNPC_mersenne] -79498 15 -331
 execute if score @s rng1 matches 33 run tp @n[tag=AzrielNPC_marinus] -79498 15 -325
+execute if score @s rng1 matches 25 run tp @n[tag=AzrielNPC_andralune] -79500 15 -328
 
 
 # ============================================================
