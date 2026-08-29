@@ -9,6 +9,8 @@ execute if entity @s[x=-79511,y=15,z=-328,dx=0,dy=20,dz=0] run effect give @s le
 #Boss房间至工厂 捷径
 execute positioned -79729.55 24.00 -316.50 if entity @s[distance=..18] run particle trail{color:16761189,duration:240,target:[-79729.50,58.06,-316.51]} ~ ~ ~ 0.5 0 0.5 0 1 force
 execute if entity @s[x=-79730,y=23,z=-317,dx=0,dy=30,dz=0] run effect give @s levitation 1 2 true
+execute positioned -79753.52 43.00 -303.51 if entity @s[distance=..18] run particle trail{color:16761189,duration:240,target:[-79753.50,57.06,-303.50]} ~ ~ ~ 0.5 0 0.5 0 1 force
+execute if entity @s[x=-79754,y=43,z=-304,dx=0,dy=10,dz=0] run effect give @s levitation 1 2 true
 
 
 
