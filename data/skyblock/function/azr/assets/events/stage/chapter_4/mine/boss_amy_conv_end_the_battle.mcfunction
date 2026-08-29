@@ -30,6 +30,9 @@ execute if score @s rng11 matches 5121 as @n[tag=AzrielNPC_andralune] at @s run 
 execute if score @s rng11 matches 5121 as @n[tag=AzrielNPC_andralune] at @s run effect give @s slowness infinite 99 true
 execute if score @s rng11 matches 5121 as @n[tag=AzrielNPC_marinus] at @s run effect give @s slowness infinite 99 true
 execute if score @s rng11 matches 5121 as @n[tag=AzrielNPC_mersenne] at @s run effect give @s slowness infinite 99 true
+execute if score @s rng11 matches 5121 as @n[tag=AzrielNPC_andralune] at @s run effect give @s resistance infinite 99 true
+execute if score @s rng11 matches 5121 as @n[tag=AzrielNPC_marinus] at @s run effect give @s resistance infinite 99 true
+execute if score @s rng11 matches 5121 as @n[tag=AzrielNPC_mersenne] at @s run effect give @s resistance infinite 99 true
 execute if score @s rng11 matches 5124.. as @n[tag=AzrielNPC_andralune] at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielMob_demon_amy]
 execute if score @s rng11 matches 5124.. as @n[tag=AzrielNPC_marinus] at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielMob_demon_amy]
 execute if score @s rng11 matches 5124.. as @n[tag=AzrielNPC_mersenne] at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielMob_demon_amy]
@@ -68,6 +71,8 @@ execute if score @s rng11 matches 5280 as @e[tag=azr_spin_plate,distance=..100,t
 execute if score @s rng11 matches 5280 run kill @e[tag=azr_spin_plate,distance=..100,type=block_display]
 
 execute if score @s rng11 matches 5218..5350 positioned -79495 15 -328 run particle minecraft:trial_spawner_detection -79494.48 18.00 -327.50 5 3 5 0 10
+
+execute if score @s rng11 matches 5359 as @n[tag=AzrielNPC_andralune] at @s run tp @s -79502 15 -328
 
 execute if score @s rng11 matches 5361 run stopsound @a[tag=azrShowDialog] music minecraft:fuse
 execute if score @s rng11 matches 5361 run particle explosion_emitter -79494.48 16.00 -327.50 7 5 7 0 4
