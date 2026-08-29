@@ -4,7 +4,7 @@ execute at @s if block ~ ~-0.1 ~ air run particle falling_obsidian_tear ^-2 ^ ^ 
 
 function skyblock:azr/assets/mobs/skill/boss1_andralune/equip_wings_core
 
-scoreboard players add @s rng1 1
+scoreboard players add @s[tag=AZR_ready_to_attack] rng1 1
 
 
 

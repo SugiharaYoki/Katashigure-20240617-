@@ -150,6 +150,8 @@ execute if score @s rng11 matches 2081 positioned -79495 15 -328 run summon mark
 execute if score @s rng11 matches 2081 positioned -79495 15 -328 run summon marker ~ ~1 ~2 {Tags:["AZR_andralune_possible_tp_landing_pos"]}
 execute if score @s rng11 matches 2081 positioned -79495 15 -328 run summon marker ~ ~1 ~-2 {Tags:["AZR_andralune_possible_tp_landing_pos"]}
 
+execute if score @s rng11 matches 2081 positioned -79495 15 -328 run tag @n[tag=AzrielNPC_andralune] add AZR_ready_to_attack
+
 
 execute if score @s rng11 matches 2081 run execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng9 0
 execute if score @s rng11 matches 2081 run execute positioned -79505 15 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng3 11
