@@ -174,3 +174,15 @@ execute if score @s rng1 matches 888 run tellraw @a[tag=azrShowDialog] [{text:"�
 
 execute if score @s rng1 matches 909 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score @s rng1 matches 909 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"light_purple",bold:1b},{bold:false,text:"\n“时与空走到尽头，我们必定都会归于同一片虚无。”",color:"white"}]
+
+
+execute if score @s rng1 matches 912 as @n[tag=AzrielNPC_andralune] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
+execute if score @s rng1 matches 912 as @n[tag=AzrielNPC_andralune] at @s run tp @s -79792 34 -191
+
+
+
+
+
+
+
+
