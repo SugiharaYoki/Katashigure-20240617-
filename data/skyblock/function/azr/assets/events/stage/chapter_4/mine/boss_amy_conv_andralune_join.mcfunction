@@ -66,6 +66,9 @@ execute if score @s rng11 matches 502 positioned -79504 15 -328 run tellraw @a[t
 
 execute if score @s rng11 matches 572 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“我很喜欢你的发言，说实话……知道我面对的是这么恐怖的存在后，我倒也没想象中那么大的心理波动。准备好的话，权之残影，我们一起上吧。”",color:"white"}]
 
+
+execute if score @s rng11 matches 634 positioned -79495 15 -328 as @n[tag=AzrielMob_demon_amy,distance=..200] run tp @s ~ ~ ~
+
 execute if score @s rng11 matches 644 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng11 matches 644 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"亚米：",color:"red",bold:1b},{bold: false,text:"\n“有趣……人类、天使，你们都很有趣。但我会在死亡的过程中认清你们的一切弱点。”",color:"white"}]
 
@@ -91,8 +94,8 @@ execute if score @s rng11 matches 690 at @n[tag=AzrielMob_demon_amy] run playsou
 execute if score @s rng11 matches 690 at @n[tag=AzrielMob_demon_amy] run playsound ambient.soul_sand_valley.mood ambient @a ~ ~ ~ 5 0.5
 
 execute if score @s rng11 matches 560..620 run particle trail{color:16711680,duration:160,target:[-79494.5,16.0,-328.5]} ~ ~ ~ 10 10 10 0 1 force
-execute if score @s rng11 matches 600..650 run particle trail{color:16711680,duration:100,target:[-79494.5,16.0,-328.5]} ~ ~ ~ 10 10 10 0 1 force
-execute if score @s rng11 matches 640..690 run particle trail{color:16711680,duration:80,target:[-79494.5,16.0,-328.5]} ~ ~ ~ 15 15 15 0 1 force
+execute if score @s rng11 matches 600..650 run particle trail{color:16711680,duration:100,target:[-79494.5,16.0,-328.5]} ~ ~ ~ 10 10 10 0 2 force
+execute if score @s rng11 matches 640..690 run particle trail{color:16711680,duration:80,target:[-79494.5,16.0,-328.5]} ~ ~ ~ 15 15 15 0 3 force
 
 execute if score @s rng11 matches 750 at @n[tag=AzrielMob_demon_amy] run particle large_smoke ~ 15 ~ 8 0 8 0.1 200
 execute if score @s rng11 matches 750 at @n[tag=AzrielMob_demon_amy] run particle flame ~ 15 ~ 8 0 8 0.1 200
