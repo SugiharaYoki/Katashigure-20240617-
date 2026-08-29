@@ -8,11 +8,11 @@ execute if score @s rng1 matches 1 at @s run playsound entity.arrow.shoot hostil
 execute if score @s rng1 matches 1 at @s run playsound entity.arrow.shoot hostile @a ~ ~ ~ 2 0.85
 
 execute if score @s rng1 matches 1..5 as @s at @s facing entity @n[tag=AzrielMob_demon_amy,distance=..80] eyes run tp @s ^ ^ ^2
-execute if score @s rng1 matches 6..20 as @s at @s facing entity @n[tag=AzrielMob_demon_amy,distance=..80] eyes run tp @s ^ ^ ^2
+execute if score @s rng1 matches 6..20 as @s at @s rotated as @s run tp @s ^ ^ ^2
 execute if score @s rng1 matches 21..25 as @s at @s facing entity @n[tag=AzrielMob_demon_amy,distance=..80] eyes run tp @s ^ ^ ^2
-execute if score @s rng1 matches 26..40 as @s at @s facing entity @n[tag=AzrielMob_demon_amy,distance=..80] eyes run tp @s ^ ^ ^2
+execute if score @s rng1 matches 26..40 as @s at @s rotated as @s run tp @s ^ ^ ^2
 execute if score @s rng1 matches 41..45 as @s at @s facing entity @n[tag=AzrielMob_demon_amy,distance=..80] eyes run tp @s ^ ^ ^2
-execute if score @s rng1 matches 46..60 as @s at @s facing entity @n[tag=AzrielMob_demon_amy,distance=..80] eyes run tp @s ^ ^ ^2
+execute if score @s rng1 matches 46..60 as @s at @s rotated as @s run tp @s ^ ^ ^2
 
 execute if score @s rng1 matches 2.. as @s at @s facing entity @n[tag=AzrielMob_demon_amy,distance=..80] eyes run particle flash{color:[1.000,1.000,1.000,1.00]} ~ ~ ~ 0.1 0.1 0.1 0 1
 execute if score @s rng1 matches 2.. as @s at @s facing entity @n[tag=AzrielMob_demon_amy,distance=..80] eyes if entity @n[distance=0..8,tag=AzrielMob_demon_amy] run particle explosion ~ ~ ~ 0.1 0.1 0.1 0 3
