@@ -196,14 +196,18 @@ execute if score @s rng1 matches 952 run tellraw @a[tag=azrShowDialog] [{text:"�
 
 execute if score @s rng1 matches 966 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“没问题”",color:"white"}]
 
+execute if score @s rng1 matches 980 as @n[tag=AzrielNPC_mersenne] at @s run particle minecraft:reverse_portal ~ ~0.8 ~ 0.3 0.7 0.3 0.0 18
+execute if score @s rng1 matches 980 as @n[tag=AzrielNPC_mersenne] at @s run playsound entity.enderman.teleport hostile @a ~ ~ ~ 0.8 1.2
 execute if score @s rng1 matches 980 as @n[tag=AzrielNPC_mersenne] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
 execute if score @s rng1 matches 980 as @n[tag=AzrielNPC_mersenne] at @s run tp @s -79763 -17 -179
 
-execute if score @s rng1 matches 1002 at @n[tag=AzrielNPC_marinus] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
-execute if score @s rng1 matches 1002 run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold:false,text:"\n“祝你好运，爱理莎小姐。”",color:"white"}]
+execute if score @s rng1 matches 992 at @n[tag=AzrielNPC_marinus] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 992 run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold:false,text:"\n“祝你好运，爱理莎小姐。”",color:"white"}]
 
-execute if score @s rng1 matches 1020 as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
-execute if score @s rng1 matches 1020 as @n[tag=AzrielNPC_marinus] at @s run tp @s -79756 -17 -186
+execute if score @s rng1 matches 1000 as @n[tag=AzrielNPC_marinus] at @s run particle minecraft:reverse_portal ~ ~0.8 ~ 0.3 0.7 0.3 0.0 18
+execute if score @s rng1 matches 1000 as @n[tag=AzrielNPC_marinus] at @s run playsound entity.enderman.teleport hostile @a ~ ~ ~ 0.8 1.2
+execute if score @s rng1 matches 1000 as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_small
+execute if score @s rng1 matches 1000 as @n[tag=AzrielNPC_marinus] at @s run tp @s -79756 -17 -186
 
 
 
