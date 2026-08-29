@@ -16,7 +16,7 @@ execute if score @s rng11 matches 5071 positioned -79495 15 -328 as @n[tag=Azrie
 execute if score @s rng11 matches 5081 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng11 matches 5081 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"亚米：",color:"red",bold:1b},{bold: false,text:"\n“有趣，太有趣了。我不会被我看不起的人打败。”",color:"white"}]
 execute if score @s rng11 matches 5131 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute if score @s rng11 matches 5131 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"亚米：",color:"red",bold:1b},{bold: false,text:"\n“所以，尔等的计谋……就是令我看得起你们。”",color:"white"}]
+execute if score @s rng11 matches 5131 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"亚米：",color:"red",bold:1b},{bold: false,text:"\n“所以，尔等的计谋……就是令我能够看得起你们。”",color:"white"}]
 
 execute if score @s rng11 matches 5121 as @n[tag=AzrielNPC_andralune] at @s run tp @s -79502 15 -328
 execute if score @s rng11 matches 5121 as @n[tag=AzrielNPC_andralune] at @s run effect give @s slowness infinite 99 true
@@ -30,4 +30,14 @@ execute if score @s rng11 matches 5131 as @n[tag=AzrielNPC_marinus] at @s run fu
 execute if score @s rng11 matches 5141 as @n[tag=AzrielNPC_marinus] at @s run tp @s -79491 15 -324
 execute if score @s rng11 matches 5151 as @n[tag=AzrielNPC_mersenne] at @s run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
 execute if score @s rng11 matches 5151 as @n[tag=AzrielNPC_mersenne] at @s run tp @s -79491 15 -332
+
+execute if score @s rng11 matches 5181 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score @s rng11 matches 5181 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"亚米：",color:"red",bold:1b},{bold: false,text:"\n“呵呵呵……”",color:"white"}]
+execute if score @s rng11 matches 5241 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score @s rng11 matches 5241 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"亚米：",color:"red",bold:1b},{bold: false,text:"\n“我承认，现在更强的……是你们！”",color:"white"}]
+
+
+
+
+
 
