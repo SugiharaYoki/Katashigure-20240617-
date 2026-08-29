@@ -1,4 +1,6 @@
 
+execute if entity @s[scores={rng3=12..}] as @s at @s run function skyblock:azr/assets/mobs/skill/boss4_amy/particle_shield
+
 scoreboard players add @s[scores={rng3=2..},tag=!AZR_action_halt] rng8 1
 execute if score @s rng8 matches 30 store result score @s rng7 run random value 1..8
 
@@ -9,7 +11,6 @@ execute if score @s[scores={rng3=5..20}] rng8 matches 120 run summon marker ^ ^ 
 
 execute if score @s rng8 matches 180 store result score @s rng7 run random value 1..8
 
-execute if entity @s[scores={rng3=12..}] as @s at @s run function skyblock:azr/assets/mobs/skill/boss4_amy/particle_shield
 
 execute as @s[scores={rng12=15..,rng3=7}] run function skyblock:azr/assets/events/stage/chapter_4/mine/boss_amy_conv_andralune_join
 execute unless score @s rng3 matches 21.. if score @s rng11 matches 3500..5000 run scoreboard players set @s rng11 4996
