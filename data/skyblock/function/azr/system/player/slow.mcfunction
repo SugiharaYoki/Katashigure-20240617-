@@ -35,6 +35,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}]
 execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_savior:1b}] run function skyblock:azr/system/player/skills/amulet/arrow_savior_core
 execute if items entity @s weapon.offhand *[custom_data~{azr_amulet_arrow_savior:1b}] run function skyblock:azr/system/player/skills/amulet/arrow_savior_instant
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_drogue:1b}] run function skyblock:azr/system/player/skills/amulet/fire_drogue_core
+execute if items entity @s container.* *[custom_data~{azr_amulet_magical_current:1b}] run function skyblock:azr/system/player/skills/amulet/magical_current_list
 
 execute if items entity @s weapon.offhand *[custom_data~{azr_loginbonus:1b}] run function skyblock:azr/system/player/join_login_bonus_open
 
