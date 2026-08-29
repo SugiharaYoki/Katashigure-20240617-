@@ -38,6 +38,10 @@ execute if score @s rng11 matches 5161 at @n[tag=AzrielNPC_mersenne] run playsou
 execute if score @s rng11 matches 5161 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“权之残影大人，对魔神结界已准备就绪！！”",color:"white"}]
 
 execute if score @s rng11 matches 5188 positioned -79495 15 -328 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower_b
+execute if score @s rng11 matches 5208 positioned -79495 15 -328 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower_b
+execute if score @s rng11 matches 5228 positioned -79495 15 -328 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower_b
+execute if score @s rng11 matches 5248 positioned -79495 15 -328 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower_b
+execute if score @s rng11 matches 5268 positioned -79495 15 -328 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower_b
 
 execute if score @s rng11 matches 5201 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng11 matches 5201 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"亚米：",color:"red",bold:1b},{bold: false,text:"\n“呵呵呵……”",color:"white"}]
