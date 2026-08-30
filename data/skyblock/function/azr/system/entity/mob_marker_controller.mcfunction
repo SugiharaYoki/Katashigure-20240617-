@@ -52,3 +52,17 @@ execute as @s[tag=AZR_summon_arrow_chase_explosion] at @s run function skyblock:
 
 execute if entity @s[tag=AzrielMob_generic_pillar_attack_small] run function skyblock:azr/assets/mobs/skill/undead_pickaxe_marker_release
 execute if entity @s[tag=AzrielMob_generic_pillar_attack_small_automarker] run function skyblock:azr/assets/mobs/skill/undead_pickaxe_marker_automarker
+
+#特殊事件
+execute as @s[tag=AzrielMob_angel_raphael_opening_fireball] at @s run function skyblock:azr/assets/mobs/skill/boss4_raphael/event_opening_fireball
+
+
+
+
+
+
+
+
+
+
+

@@ -39,11 +39,16 @@ execute if score @s rng1 matches 145 at @n[tag=AzrielNPC_mersenne] run playsound
 execute if score @s rng1 matches 145 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎小姐可以顺着魔力潮汐往上先行。现在车间博物馆还是个隐患，我和马林努斯想要将这里封印起来。”",color:"white"}]
 
 
+execute if score @s rng1 matches 190..500 run scoreboard players set @s rng1 490
+execute if score @s rng1 matches ..500 if entity @a[tag=azrPlayer,x=-79782,y=19,z=-205,dx=10,dy=8,dz=10] run scoreboard players set @s rng1 501
 
+execute if score @s rng1 matches 501 run particle minecraft:explosion_emitter -79775.49 21.58 -195.00 3 3 3 0 2
+execute if score @s rng1 matches 502 run particle minecraft:explosion_emitter -79775.70 21.92 -203.00 3 3 3 0 2
+execute if score @s rng1 matches 501 run playsound entity.generic.explode block @a -79775.49 21.58 -195.00 5 0.89
+execute if score @s rng1 matches 502 run playsound entity.generic.explode block @a -79775.70 21.92 -203.00 5 0.89
 
-
-
-
+execute if score @s rng1 matches 501 run clone -79762 19 -200 -79751 27 -184 -79782 19 -200
+execute if score @s rng1 matches 501 positioned -79776 22 -195 run summon marker ~ ~0 ~ {Tags:["AzrielMob_angel_raphael_opening_fireball","AzrielMob_mob_marker"]}
 
 
 
