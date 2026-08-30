@@ -28,6 +28,13 @@ execute if items entity @s weapon.mainhand *[custom_data~{Error:1b}] run tellraw
 {text:"\nmobCount"},{"score":{"name":"mobCount","objective":"Azr_system"}},\
 {text:"\n=============\n"}]
 
+
+execute if block ~0.2 ~-2 ~ lava if block ~0.2 ~1 ~ lava run damage @s 50 lava
+execute if block ~ ~-2 ~-0.2 lava if block ~ ~1 ~-0.2 lava run damage @s 50 lava
+execute if block ~ ~-2 ~0.2 lava if block ~ ~1 ~0.2 lava run damage @s 50 lava
+execute if block ~-0.2 ~-2 ~ lava if block ~-0.2 ~1 ~ lava run damage @s 50 lava
+
+
 #护身符
 execute if items entity @s weapon.offhand *[custom_data~{azr_amulet_pacemaker:1b}] run function skyblock:azr/system/player/skills/amulet/pacemaker_switch_mode_safe
 execute if items entity @s weapon.offhand *[custom_data~{azr_amulet_pacemaker_safe:1b}] run function skyblock:azr/system/player/skills/amulet/pacemaker_switch_mode_normal
