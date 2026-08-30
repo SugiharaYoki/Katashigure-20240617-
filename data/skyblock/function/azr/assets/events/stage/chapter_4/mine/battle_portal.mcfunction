@@ -47,7 +47,7 @@ execute as @s[scores={rng1=1117}] run fill -79495 30 -405 -79495 32 -406 air rep
 execute as @s[scores={rng1=1117}] run fill -79409 30 -398 -79409 32 -396 air replace red_stained_glass destroy
 execute as @s[scores={rng1=1117}] run fill -79370 26 -373 -79372 27 -373 air
 
-execute as @s[scores={rng1=1117}] run setblock -79371 26 -386 waxed_copper_chest[facing=east]{Inventory:[]}
+execute as @s[scores={rng1=1117}] run setblock -79371 26 -386 waxed_copper_chest[facing=west]{Inventory:[]}
 execute as @s[scores={rng1=1117}] run item replace block -79371 26 -386 container.11 with pumpkin_pie 3
 execute as @s[scores={rng1=1117}] run item replace block -79371 26 -386 container.13 with pumpkin_pie 3
 execute as @s[scores={rng1=1117}] run item replace block -79371 26 -386 container.15 with pumpkin_pie 3
