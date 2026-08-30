@@ -29,10 +29,10 @@ execute if items entity @s weapon.mainhand *[custom_data~{Error:1b}] run tellraw
 {text:"\n=============\n"}]
 
 
-execute if block ~0.2 ~-2 ~ lava if block ~0.2 ~1 ~ lava run damage @s 50 lava
-execute if block ~ ~-2 ~-0.2 lava if block ~ ~1 ~-0.2 lava run damage @s 50 lava
-execute if block ~ ~-2 ~0.2 lava if block ~ ~1 ~0.2 lava run damage @s 50 lava
-execute if block ~-0.2 ~-2 ~ lava if block ~-0.2 ~1 ~ lava run damage @s 50 lava
+execute if block ~0.3 ~-2 ~ lava if block ~0.3 ~1 ~ lava run damage @s 50 lava
+execute if block ~ ~-2 ~-0.3 lava if block ~ ~1 ~-0.3 lava run damage @s 50 lava
+execute if block ~ ~-2 ~0.3 lava if block ~ ~1 ~0.3 lava run damage @s 50 lava
+execute if block ~-0.3 ~-2 ~ lava if block ~-0.3 ~1 ~ lava run damage @s 50 lava
 
 
 #护身符
