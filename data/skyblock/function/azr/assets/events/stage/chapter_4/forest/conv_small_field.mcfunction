@@ -21,15 +21,6 @@ execute as @s[scores={rng1=222}] positioned -79923 43 96 run tellraw @a[tag=azrS
 execute as @s[scores={rng1=234}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=234}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“什么声音……你听到了吗？”",color:"white"}]
 execute as @s[scores={rng1=244}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“感觉很耳熟。”",color:"white"}]
-
-
-execute as @s[scores={rng1=220}] unless entity @a[tag=azrPlayer,x=-79765,y=30,z=-476,distance=0..7] run scoreboard players set @s rng1 219
-
-execute as @s[scores={rng1=222}] as @a[tag=azrPlayer] at @s run playsound minecraft:entity.pillager.ambient master @s ~ ~ ~ 0.3 0.8
-execute as @s[scores={rng1=222}] positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{text:"熟悉的男声：",color:"yellow",bold:1b},{bold: false,text:"\n“爱理莎，我锁定到你的大致方位了。太好了，你还活着。”",color:"white"}]
-execute as @s[scores={rng1=234}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute as @s[scores={rng1=234}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“什么声音……你听到了吗？”",color:"white"}]
-execute as @s[scores={rng1=244}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“感觉很耳熟。”",color:"white"}]
 execute as @s[scores={rng1=257}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“在……哪里听到过？好像是神庭。”",color:"white"}]
 
 
