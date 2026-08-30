@@ -217,7 +217,7 @@ execute if score @s rng1 matches 1000 as @n[tag=AzrielNPC_marinus] at @s run fun
 execute if score @s rng1 matches 1000 as @n[tag=AzrielNPC_marinus] at @s run tp @s -79756 -17 -186
 
 
-
+execute if score @s rng1 matches 1023 run fill -79621 32 -327 -79621 30 -329 air
 
 execute if score @s rng1 matches 1023 run scoreboard players set stage Azr_system 69
 execute if score @s rng1 matches 1023 run title @a[tag=azrShowDialog] actionbar {text:"Chapter Clear",color:"gold"}

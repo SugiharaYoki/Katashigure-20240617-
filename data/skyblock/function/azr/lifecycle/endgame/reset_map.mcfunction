@@ -989,7 +989,8 @@ setblock -79370 24 -407 minecraft:decorated_pot{sherds:["explorer_pottery_sherd"
 #boss4
 clone -79514 5 -347 -79476 6 -309 -79514 14 -347
 
-
+#boss4通往工厂
+fill -79621 33 -327 -79621 30 -329 minecraft:nether_brick_fence
 
 
 
