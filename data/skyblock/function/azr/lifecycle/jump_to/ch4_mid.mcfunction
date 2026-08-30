@@ -123,6 +123,7 @@ execute positioned -79693 24 -381 run function skyblock:azr/assets/mobs/utility_
 
 
 fill -79768 31 -276 -79768 35 -278 air
-fill -79757 19 -272 -79757 23 -270 air
+#fill -79757 19 -272 -79757 23 -270 air
+#fill -79762 1 -275 -79762 2 -276 air
 
 
