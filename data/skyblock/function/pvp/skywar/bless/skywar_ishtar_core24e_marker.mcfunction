@@ -23,3 +23,6 @@ execute as @s[scores={rng5=5..}] at @s positioned ~2 ~ ~-1 unless block ~ ~ ~ be
 execute as @s[scores={rng5=5..}] at @s positioned ~-2 ~ ~-1 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
 execute as @s[scores={rng5=5..}] at @s positioned ~-1 ~ ~2 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
 execute as @s[scores={rng5=5..}] at @s positioned ~-1 ~ ~-2 unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
+
+
+execute as @s at @s run tp @s ~ ~-1 ~
