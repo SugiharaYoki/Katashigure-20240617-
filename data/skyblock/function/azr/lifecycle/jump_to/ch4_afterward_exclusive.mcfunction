@@ -4,8 +4,8 @@ execute as @a[tag=azrPlayer] at @s unless score @s Azr_skillPoints matches 19.. 
 
 scoreboard players set stage Azr_system 69
 scoreboard players set stage_main_thread AzrTimerStack 0
-tp @a[tag=azrPlayer] -79495 15 -328 facing -79497 15 -328
-spawnpoint @a[tag=azrPlayer] -79495 15 -328
+tp @a[tag=azrPlayer] -79759 -17 -179 facing -79760 -17 -179
+spawnpoint @a[tag=azrPlayer] -79759 -17 -179
 
 execute as @a[tag=azrPlayer] run function skyblock:azr/system/player/updatespawnpoint_initialize {x:-79855,y:47,z-:109}
 
