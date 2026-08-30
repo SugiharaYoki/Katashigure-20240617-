@@ -1,5 +1,8 @@
 scoreboard players add @s rng11 1 
 
+execute if score @s rng11 matches 1 unless entity @n[tag=AzrielNPC_andralune] run function skyblock:azr/assets/mobs/unique/andralune
+execute if score @s rng11 matches 1 as @n[tag=AzrielNPC_andralune] run tag @s remove AzrielMob
+
 execute if score @s rng11 matches 1 as @a[tag=azrPlayer] at @s run spawnpoint @s -79495 15 -328
 execute if score @s rng11 matches 1 positioned -79495 15 -328 run function skyblock:azr/assets/mobs/utility_respawn_anchor
 execute if score @s rng11 matches 1 positioned -79495 15 -328 run tag @n[tag=AzrielMob_utility_respawn_anchor,distance=..20] add AzrielMob_utility_respawn_anchor_teleport_disabled

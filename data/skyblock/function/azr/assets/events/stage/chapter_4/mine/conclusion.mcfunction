@@ -12,6 +12,8 @@ scoreboard players add @s rng1 1
 #多于15个汉字、少于30个汉字的句子：rng1+17
 #多于30个汉字的句子：rng1+21
 
+execute if score @s rng1 matches 12..100 as @n[tag=AzrielNPC_andralune] at @s run effect clear @s invisibility
+execute if score @s rng1 matches 12 as @n[tag=AzrielNPC_andralune] at @s run data modify entity @n[tag=AzrielNPC_andralune] NoAI set value 1b
 execute if score @s rng1 matches 12 run tp @n[tag=AzrielNPC_andralune] ~ ~ ~ facing entity @p[tag=azrPlayer]
 execute if score @s rng1 matches 12 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score @s rng1 matches 12 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"light_purple",bold:1b},{bold: false,text:"\n“我们的战斗告一段落了。”",color:"white"}]
