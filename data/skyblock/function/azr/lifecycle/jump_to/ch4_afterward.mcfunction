@@ -18,3 +18,17 @@ fill -79392 26 -349 -79394 27 -349 air
 scoreboard players set @n[tag=AzrielTrader_pig_henry] AzrielNPC_FollowInterest 0
 tp @n[tag=AzrielTrader_pig_henry] -79370 24 -405
 
+fill -79621 32 -327 -79621 30 -329 air
+
+
+tp @s -79763 -17 -179
+tp @s -79756 -17 -186
+
+
+
+
+
+
+
+
+

@@ -8,7 +8,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 1..280 store result bo
 execute if score stage_bonus_thread AzrTimerStack matches 280 run bossbar remove azr:progress_bar_bonus
 #
 
-execute if score stage_bonus_thread AzrTimerStack matches 2 run tp @n[tag=AzrielTrader_pig_henry] -79722 28 -515
+execute if score stage Azr_system matches ..61 if score stage_bonus_thread AzrTimerStack matches 2 run tp @n[tag=AzrielTrader_pig_henry] -79722 28 -515
 execute if score stage_bonus_thread AzrTimerStack matches 2 positioned -79730 28 -515 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_bonus_thread AzrTimerStack matches 22 positioned -79730 28 -515 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_bonus_thread AzrTimerStack matches 42 positioned -79730 28 -515 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
@@ -29,11 +29,11 @@ execute if score stage_bonus_thread AzrTimerStack matches 252 positioned -79712 
 execute if score stage_bonus_thread AzrTimerStack matches 258 positioned -79710 28 -515 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sentinel","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_bonus_thread AzrTimerStack matches 262 positioned -79710 28 -515 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sentinel","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
-execute if score stage_bonus_thread AzrTimerStack matches 84 at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute if score stage_bonus_thread AzrTimerStack matches 84 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“喂、喂老大！另一边也有敌人！！”",color:"white"}]
+execute if score stage Azr_system matches ..61 if score stage_bonus_thread AzrTimerStack matches 84 at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score stage Azr_system matches ..61 if score stage_bonus_thread AzrTimerStack matches 84 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“喂、喂老大！另一边也有敌人！！”",color:"white"}]
 
-execute if score stage_bonus_thread AzrTimerStack matches 280 at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute if score stage_bonus_thread AzrTimerStack matches 280 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“妈呀，总算解放了……！！”",color:"white"}]
+execute if score stage Azr_system matches ..61 if score stage_bonus_thread AzrTimerStack matches 280 at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score stage Azr_system matches ..61 if score stage_bonus_thread AzrTimerStack matches 280 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“妈呀，总算解放了……！！”",color:"white"}]
 
 execute if score stage_bonus_thread AzrTimerStack matches 280 run title @a[tag=azrShowDialog] actionbar {text:"Extra Stage Clear",color:"green"}
 execute if score stage_bonus_thread AzrTimerStack matches 280 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_object

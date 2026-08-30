@@ -3,14 +3,18 @@ scoreboard players add @s rng1 1
 execute as @s[scores={rng1=2..3}] at @s unless entity @a[distance=..5.5,tag=azrPlayer] run scoreboard players set @s rng1 2
 
 
-execute if score @s rng1 matches 5 as @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute if score @s rng1 matches 5 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“墨丘利老哥！”",color:"white"}]
-execute if score @s rng1 matches 12 run playsound minecraft:entity.piglin.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute if score @s rng1 matches 12 run tellraw @a[tag=azrShowDialog] [{text:"商铺老板 墨丘利：",color:"green",bold:1b},{bold: false,text:"\n“哎哟，哪阵风把你刮来了？嗨，还带着个人类的亡魂。”",color:"white"}]
-execute if score @s rng1 matches 22 as @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute if score @s rng1 matches 22 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“她现在是我老大，不过原因就说来话长了。我们之后唠。”",color:"white"}]
-execute if score @s rng1 matches 32 as @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
-execute if score @s rng1 matches 32 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“我们现在急需一些补给，会用金子买！”",color:"white"}]
+execute if score stage Azr_system matches ..61 if score @s rng1 matches 5 as @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score stage Azr_system matches ..61 if score @s rng1 matches 5 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“墨丘利老哥！”",color:"white"}]
+execute if score stage Azr_system matches ..61 if score @s rng1 matches 12 run playsound minecraft:entity.piglin.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score stage Azr_system matches ..61 if score @s rng1 matches 12 run tellraw @a[tag=azrShowDialog] [{text:"商铺老板 墨丘利：",color:"green",bold:1b},{bold: false,text:"\n“哎哟，哪阵风把你刮来了？嗨，还带着个人类的亡魂。”",color:"white"}]
+execute if score stage Azr_system matches ..61 if score @s rng1 matches 22 as @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score stage Azr_system matches ..61 if score @s rng1 matches 22 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“她现在是我老大，不过原因就说来话长了。我们之后唠。”",color:"white"}]
+execute if score stage Azr_system matches ..61 if score @s rng1 matches 32 as @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score stage Azr_system matches ..61 if score @s rng1 matches 32 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“我们现在急需一些补给，会用金子买！”",color:"white"}]
+
+execute if score stage Azr_system matches 62.. if score @s rng1 matches 5 run playsound minecraft:entity.piglin.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
+execute if score stage Azr_system matches 62.. if score @s rng1 matches 5 run tellraw @a[tag=azrShowDialog] [{text:"商铺老板 墨丘利：",color:"green",bold:1b},{bold: false,text:"\n“呵呵，来的居然是人类。”",color:"white"}] 
+execute if score stage Azr_system matches 62.. if score @s rng1 matches 5 run scoreboard players set @s rng1 30
 
 execute if score @s rng1 matches 42 run playsound minecraft:entity.piglin.celebrate hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng1 matches 42 run tellraw @a[tag=azrShowDialog] [{text:"商铺老板 墨丘利：",color:"green",bold:1b},{bold: false,text:"\n“嘿嘿，有金子我们就是朋友。”",color:"white"}]

@@ -34,8 +34,8 @@ execute positioned -79753 24 -462 as @n[tag=AzrielMarker_encounter,distance=0..0
 
 
 #亨利的瓶子升级
-execute positioned -79739 42 -446 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..5] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79739 42 -446 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 199.. run function skyblock:azr/assets/events/stage/chapter_4/forest/battle_watchtower
+execute if score stage Azr_system matches ..61 positioned -79739 42 -446 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..5] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute if score stage Azr_system matches ..61 positioned -79739 42 -446 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 199.. run function skyblock:azr/assets/events/stage/chapter_4/forest/battle_watchtower
 
 
 #灵魂碎片 跳跳乐
