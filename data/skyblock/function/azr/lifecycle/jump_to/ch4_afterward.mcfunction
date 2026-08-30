@@ -24,7 +24,7 @@ fill -79621 32 -327 -79621 30 -329 air
 tp @s -79763 -17 -179
 tp @s -79756 -17 -186
 
-
+execute positioned -79505 45 -338 if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 
 
 
