@@ -198,11 +198,11 @@ execute if score @s rng1 matches 922 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 925 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/magical_current
 
 execute if score @s rng1 matches 938 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
-execute if score @s rng1 matches 938 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“这块石板能让你看见空中的潮涌魔力，并借此向高处移动。”",color:"white"}]
+execute if score @s rng1 matches 938 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“这块石板能让你看见空中的魔力潮汐，并借此向高处移动。”",color:"white"}]
 execute if score @s rng1 matches 952 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
 execute if score @s rng1 matches 952 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“用它可以从你最开始落入地狱的缺口顺流而上。我和马林努斯会在那里等你。”",color:"white"}]
 
-execute if score @s rng1 matches 966 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“没问题”",color:"white"}]
+execute if score @s rng1 matches 966 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“没问题。”",color:"white"}]
 
 execute if score @s rng1 matches 980 as @n[tag=AzrielNPC_mersenne] at @s run particle minecraft:reverse_portal ~ ~0.8 ~ 0.3 0.7 0.3 0.0 18
 execute if score @s rng1 matches 980 as @n[tag=AzrielNPC_mersenne] at @s run playsound entity.enderman.teleport hostile @a ~ ~ ~ 0.8 1.2

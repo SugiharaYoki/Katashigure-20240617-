@@ -1,0 +1,109 @@
+scoreboard players add @s rng1 1
+
+execute if score @s rng1 matches 2..200 as @n[tag=AzrielNPC_mersenne] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer] eyes
+execute if score @s rng1 matches 2..200 as @n[tag=AzrielNPC_marinus] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer] eyes
+
+execute if score @s rng1 matches 2 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 2 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“如果要回神庭的话，顺着这边一条小道走比较安全。”",color:"white"}]
+
+execute if score @s rng1 matches 15 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 15 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“这边的魔力潮汐稳定朝上流淌，能够令其中灵魂安全通过地狱与天堂的界限。”",color:"white"}]
+
+execute if score @s rng1 matches 28 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“这有什么说法吗？我以为我可以就像传送一样‘嗖’地传到神庭去。”",color:"white"}]
+
+execute if score @s rng1 matches 41 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 41 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“很遗憾，这种只有天使才做得到.通往神庭的传送门利用了天使长米迦勒的权能，是一个空间折跃通道，可以无视神魔两界的边界。”",color:"white"}]
+
+execute if score @s rng1 matches 56 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 56 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎小姐可能也有过传送的经历，但那一般是依靠生命树根系或魔界的黑石地脉才能达成。”",color:"white"}]
+
+execute if score @s rng1 matches 69 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“我明白了。话说，我只要跟着魔力潮汐一直走，就是安全的……对吗？”",color:"white"}]
+
+execute if score @s rng1 matches 83 at @n[tag=AzrielNPC_marinus] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 83 run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold:false,text:"\n“并非如此。”",color:"white"}]
+
+execute if score @s rng1 matches 90 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“噢？好像有点故事。”",color:"white"}]
+
+execute if score @s rng1 matches 98 at @n[tag=AzrielNPC_marinus] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 98 run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold:false,text:"\n“这些魔力潮汐是因地下水路过剩的生灵魔力才会存在。”",color:"white"}]
+
+execute if score @s rng1 matches 111 at @n[tag=AzrielNPC_marinus] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 111 run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold:false,text:"\n“魔力潮汐汇聚之处，有极其危险的存在。”",color:"white"}]
+
+execute if score @s rng1 matches 124 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 124 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“没错……总之，无论如何都不要走进神庭的地下水路区域。”",color:"white"}]
+
+execute if score @s rng1 matches 137 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“谨记于心。”",color:"white"}]
+
+execute if score @s rng1 matches 145 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 145 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎小姐可以顺着魔力潮汐往上先行。现在车间博物馆还是个隐患，我和马林努斯想要将这里封印起来。”",color:"white"}]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

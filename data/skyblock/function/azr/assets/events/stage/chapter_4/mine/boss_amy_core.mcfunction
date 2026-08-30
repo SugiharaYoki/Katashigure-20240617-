@@ -41,6 +41,7 @@ execute unless score @s rng3 matches 7.. if score @s rng9 matches 8 as @a[tag=az
 execute unless score @s rng3 matches 7.. if score @s rng9 matches 557.. run scoreboard players set @s rng9 7
 execute if score @s rng3 matches 10..20 as @s[scores={rng1=..9999}] run scoreboard players add @s rng9 1
 execute if score @s rng3 matches 10..20 if score @s rng9 matches 5 as @a[tag=azrShowDialog] at @s run playsound minecraft:fuse music @s ~ ~ ~ 0.7
+execute if score @s rng3 matches 10.. if score @s rng9 matches 840..880 run effect give @n[tag=AzrielMob_demon_amy] resistance 10 4 true
 execute if score @s rng3 matches 10.. if score @s rng9 matches 870 run scoreboard players set @s rng3 21
 
 
