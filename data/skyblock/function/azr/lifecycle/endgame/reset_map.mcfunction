@@ -995,8 +995,8 @@ fill -79621 33 -327 -79621 30 -329 minecraft:nether_brick_fence
 ####遂栈
 #拉斐尔
 clone -79742 19 -205 -79731 27 -195 -79782 19 -205
-
-
+fill -79777 21 -206 -79775 22 -226 minecraft:netherrack replace air
+fill -79641 -28 -590 -79639 -26 -594 basalt
 
 
 
