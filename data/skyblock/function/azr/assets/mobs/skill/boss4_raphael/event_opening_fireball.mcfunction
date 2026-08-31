@@ -1,11 +1,11 @@
 scoreboard players add @s AzrEntityTimer 1
 
-execute if score @s AzrEntityTimer matches 1 at @s run function skyblock:azr/assets/mobs/skill/boss4_raphael/summon
+execute if score @s AzrEntityTimer matches 7 at @s run function skyblock:azr/assets/mobs/skill/boss4_raphael/summon
 
 execute if score @s AzrEntityTimer matches ..70 as @s at @s run particle flash{color:[1.000,0.60,0.00,1.00]} ~ ~ ~ 0.1 0.1 0.1 0 1
 
-execute if score @s AzrEntityTimer matches 5.. at @s as @n[tag=AzrielNPC_raphael] run tp @s ~ ~ ~0.2 facing ~ ~ ~
-execute if score @s AzrEntityTimer matches 5.. at @s as @p[tag=azrPlayer] run tp @s ~ ~ ~-0.4
+execute if score @s AzrEntityTimer matches 8.. at @s as @n[tag=AzrielNPC_raphael] run tp @s ~ ~ ~0.2 facing ~ ~ ~
+execute if score @s AzrEntityTimer matches 8.. at @s as @p[tag=azrPlayer] run tp @s ~ ~ ~-0.4
 
 execute if score @s AzrEntityTimer matches ..10 as @s at @s run tp @s ~ ~ ~-0.05
 execute if score @s AzrEntityTimer matches ..20 as @s at @s run tp @s ~ ~ ~-0.05
@@ -57,7 +57,7 @@ execute if score @s AzrEntityTimer matches 35 run fill -79641 -28 -594 -79639 -2
 execute if score @s AzrEntityTimer matches 35 run playsound entity.generic.explode block @a ~ ~ ~ 1 0.8
 execute if score @s AzrEntityTimer matches 35 run particle explosion_emitter ~ ~ ~ 0 0 0 0 1
 
-execute if score @s AzrEntityTimer matches 35 run kill @s
+execute if score @s AzrEntityTimer matches 45.. run kill @s
 
 
 
