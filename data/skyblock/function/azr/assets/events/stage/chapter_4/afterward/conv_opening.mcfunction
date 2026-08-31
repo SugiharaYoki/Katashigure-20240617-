@@ -57,14 +57,6 @@ execute if score @s rng1 matches 510 run bossbar add azr:boss_hp_bar [{text:"天
 execute if score @s rng1 matches 510 run bossbar set azr:boss_hp_bar color red
 execute if score @s rng1 matches 510 run bossbar set azr:boss_hp_bar max 100
 execute if score @s rng1 matches 510 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
-execute if score @s rng1 matches 510 run bossbar add azr:boss_hp_bar2 ""
-execute if score @s rng1 matches 510 run bossbar set azr:boss_hp_bar2 color red
-execute if score @s rng1 matches 510 run bossbar set azr:boss_hp_bar2 max 100
-execute if score @s rng1 matches 510 run bossbar set azr:boss_hp_bar2 players @a[tag=azrShowDialog]
-execute if score @s rng1 matches 510 run bossbar add azr:boss_hp_bar3 ""
-execute if score @s rng1 matches 510 run bossbar set azr:boss_hp_bar3 color red
-execute if score @s rng1 matches 510 run bossbar set azr:boss_hp_bar3 max 100
-execute if score @s rng1 matches 510 run bossbar set azr:boss_hp_bar3 players @a[tag=azrShowDialog]
 
 
 
