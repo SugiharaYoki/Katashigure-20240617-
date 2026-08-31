@@ -1,5 +1,5 @@
 function skyblock:azr/lifecycle/jump_to/ch4_boss
-
+forceload add -79491 -467 -79365 -342
 forceload add -79505 -338
 
 advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage17
@@ -29,6 +29,6 @@ execute positioned -79505 45 -338 if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:
 
 
 
-
+forceload remove -79491 -467 -79365 -342
 
 
