@@ -25,7 +25,7 @@ fill -79621 32 -327 -79621 30 -329 air
 execute as @n[tag=AzrielNPC_mersenne] run tp @s -79763 -17 -179
 execute as @n[tag=AzrielNPC_marinus] run tp @s -79756 -17 -186
 
-execute positioned -79505 45 -338 if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79505 45 -338 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 
 
 
