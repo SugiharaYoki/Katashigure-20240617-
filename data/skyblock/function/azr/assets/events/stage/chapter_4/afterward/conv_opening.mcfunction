@@ -59,11 +59,11 @@ execute if score @s rng1 matches 510 run bossbar set azr:boss_hp_bar max 100
 execute if score @s rng1 matches 510 run bossbar set azr:boss_hp_bar value 100
 execute if score @s rng1 matches 510 run bossbar set azr:boss_hp_bar style notched_12
 execute if score @s rng1 matches 510 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
-execute if score @s rng1 matches 510 run bossbar add azr:boss_hp_bar [{text:"死 亡 宣 判",bold:true,color:"#cb0000"}]
-execute if score @s rng1 matches 530 run bossbar set azr:boss_hp_bar color purple
-execute if score @s rng1 matches 530 run bossbar set azr:boss_hp_bar max 100
-execute if score @s rng1 matches 530 run bossbar set azr:boss_hp_bar value 100
-execute if score @s rng1 matches 530 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
+execute if score @s rng1 matches 510 run bossbar add azr:boss_hp_bar_2 [{text:"死 亡 宣 判",bold:true,color:"#cb0000"}]
+execute if score @s rng1 matches 530 run bossbar set azr:boss_hp_bar_2 color purple
+execute if score @s rng1 matches 530 run bossbar set azr:boss_hp_bar_2 max 100
+execute if score @s rng1 matches 530 run bossbar set azr:boss_hp_bar_2 value 100
+execute if score @s rng1 matches 530 run bossbar set azr:boss_hp_bar_2 players @a[tag=azrShowDialog]
 
 
 
