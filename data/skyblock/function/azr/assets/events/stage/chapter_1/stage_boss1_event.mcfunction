@@ -57,7 +57,7 @@ execute if score stage_main_thread AzrTimerStack matches 403 if score #boss_seen
 execute if score stage_main_thread AzrTimerStack matches 419 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score stage_main_thread AzrTimerStack matches 419 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{text:"身披战袍的天使：",color:"light_purple",bold:1b},{bold: false,text:"\n“但我确实比较吃惊，多少年内最为骁勇善战的人类亡魂，居然是女儿身。”",color:"white"}]
 execute if score stage_main_thread AzrTimerStack matches 437 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua"},{text:"\n“我不是男的可真是令你失望了。你就是我要挑战的BOSS吗？快点和我打吧。”",color:"white"}]
-execute if score stage_main_thread AzrTimerStack matches 455 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 455 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 execute if score stage_main_thread AzrTimerStack matches 455 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{text:"随行文官：",color:"yellow",bold:1b},{bold: false,text:"\n“作为人类可真是大胆，竟敢对天使不敬。权之残影大人，属下这就去将她击败。”",color:"white"}]
 execute if score stage_main_thread AzrTimerStack matches 475 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score stage_main_thread AzrTimerStack matches 475 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{text:"身披战袍的天使：",color:"light_purple",bold:1b},{bold: false,text:"\n“你不觉得这位女子的言辞还挺有趣的吗？”",color:"white"}]
@@ -103,7 +103,7 @@ execute if score stage_main_thread AzrTimerStack matches 604..622 positioned -79
 execute if score stage_main_thread AzrTimerStack matches 623.. positioned -79923 43 96 run rotate @n[tag=AzrielNPC_andralune] facing entity @p[tag=azrPlayer]
 execute if score stage_main_thread AzrTimerStack matches 594 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score stage_main_thread AzrTimerStack matches 594 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{text:"权之残影：",color:"light_purple",bold:1b},{bold: false,text:"\n“默尔森，你回去视察第一关口的受损情况。”",color:"white"}]
-execute if score stage_main_thread AzrTimerStack matches 612 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score stage_main_thread AzrTimerStack matches 612 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 execute if score stage_main_thread AzrTimerStack matches 612 positioned -79923 43 96 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"yellow",bold:1b},{bold: false,text:"\n“属下听命。”",color:"white"}]
 execute if score stage_main_thread AzrTimerStack matches 614 as @n[tag=AzrielNPC_mersenne] at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_empty_human","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_main_thread AzrTimerStack matches 622 positioned -79923 43 96 as @n[tag=AzrielNPC_mersenne] at @s run tp @s -79937 51 67

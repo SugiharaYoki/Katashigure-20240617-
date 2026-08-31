@@ -1,5 +1,6 @@
 function skyblock:azr/lifecycle/jump_to/ch4_boss
 
+forceload add -79505 -338
 
 advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage17
 advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage17_boss4
@@ -25,7 +26,6 @@ execute as @n[tag=AzrielNPC_mersenne] run tp @s -79763 -17 -179
 execute as @n[tag=AzrielNPC_marinus] run tp @s -79756 -17 -186
 
 execute positioned -79505 45 -338 if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-
 
 
 

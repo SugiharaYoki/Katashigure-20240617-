@@ -4,7 +4,7 @@ scoreboard players add @s rng1 1
 #安德拉伦恩：AzrielNPC_andralune light_purple
 #安德拉伦恩的语音：playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 #默尔森：AzrielNPC_mersenne green
-#默尔森的语音：playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+#默尔森的语音：playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 #马林努斯：AzrielNPC_marinus green 
 #马林努斯的语音：playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
 
@@ -20,7 +20,7 @@ execute if score @s rng1 matches 12 run tellraw @a[tag=azrShowDialog] [{text:"�
 
 execute if score @s rng1 matches 25 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“所以……我们干掉了一个魔神？”",color:"white"}]
 
-execute if score @s rng1 matches 38 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 38 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 execute if score @s rng1 matches 38 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“幸亏我找到了对付魔神的手段。只不过要是亚米的权能更高一些，怕是我们就不会赢得如此轻松了。”",color:"white"}]
 
 execute if score @s rng1 matches 30 run tp @n[tag=AzrielNPC_mersenne] -79498 15 -331
@@ -52,7 +52,7 @@ execute if score @s rng1 matches 119 run tellraw @a[tag=azrShowDialog] [{text:"�
 # 默尔森看向玩家
 execute if score @s rng1 matches 132 as @n[tag=AzrielNPC_mersenne] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer] eyes
 
-execute if score @s rng1 matches 132 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 132 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 execute if score @s rng1 matches 132 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“如实转告，爱理莎小姐……神庭，已经沦陷了。”",color:"white"}]
 
 
@@ -70,10 +70,10 @@ execute if score @s rng1 matches 183 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 204 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score @s rng1 matches 204 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"light_purple",bold:1b},{bold:false,text:"\n“神庭所有能出动的力量都出动了。但敌人的魔神不止亚米一位。”",color:"white"}]
 
-execute if score @s rng1 matches 221 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 221 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 execute if score @s rng1 matches 221 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“他们之中，有能够洞悉战略的预言家玛帕斯，以及因毁坏无数城邦而臭名昭著的渡鸦劳姆。那两位皆为魔神。”",color:"white"}]
 
-execute if score @s rng1 matches 242 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 242 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 execute if score @s rng1 matches 242 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“我们这里除了权之残影大人之外，最强的站力是负责阻止更多魔界军涌入的天使长拉斐尔大人。”",color:"white"}]
 
 execute if score @s rng1 matches 263 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
@@ -110,7 +110,7 @@ execute if score @s rng1 matches 438 run tellraw @a[tag=azrShowDialog] [{text:"�
 
 execute if score @s rng1 matches 459 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“……默尔森和马林努斯不阻止你们的老大吗？”",color:"white"}]
 
-execute if score @s rng1 matches 476 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 476 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 execute if score @s rng1 matches 476 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“大人和我们已经商讨许久。我个人认为这也是顾全大局的决策。”",color:"white"}]
 
 execute if score @s rng1 matches 493 at @n[tag=AzrielNPC_marinus] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
@@ -153,13 +153,13 @@ execute if score @s rng1 matches 722 run tellraw @a[tag=azrShowDialog] [{text:"�
 
 execute if score @s rng1 matches 736 as @n[tag=AzrielNPC_mersenne] at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielNPC_andralune]
 execute if score @s rng1 matches 745 as @n[tag=AzrielNPC_mersenne] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer] eyes
-execute if score @s rng1 matches 739 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 739 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 execute if score @s rng1 matches 739 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“明白了，大人。爱理莎小姐，你的身上有一种神秘的……‘汲取力’，似乎能够吸收生灵的生命魔力。”",color:"white"}]
 
-execute if score @s rng1 matches 760 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 760 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 execute if score @s rng1 matches 760 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“虽然听上去和神庭有千丝万缕的联系，但实际上我们无法判断这股能力的来源是什么。”",color:"white"}]
 
-execute if score @s rng1 matches 781 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 781 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 execute if score @s rng1 matches 781 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“在之后……说不定会有更多的头绪。只不过爱理莎小姐，可能您之后也要多留意一下自己身上这种‘汲取力’，或许它能够解释你为何能在魔神亚米的攻势下活下来。”",color:"white"}]
 
 execute if score @s rng1 matches 802 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
@@ -177,7 +177,7 @@ execute if score @s rng1 matches 849 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 862 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“再见……安德拉伦恩。”",color:"white"}]
 
 execute if score @s rng1 matches 875 as @n[tag=AzrielNPC_mersenne] at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielNPC_andralune]
-execute if score @s rng1 matches 875 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 875 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 execute if score @s rng1 matches 875 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“再见，安德拉伦恩大人。”",color:"white"}]
 
 execute if score @s rng1 matches 888 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
@@ -192,14 +192,14 @@ execute if score @s rng1 matches 912 as @n[tag=AzrielNPC_andralune] at @s run tp
 
 
 execute if score @s rng1 matches 922 as @n[tag=AzrielNPC_mersenne] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer] eyes
-execute if score @s rng1 matches 922 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 922 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 execute if score @s rng1 matches 922 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“爱理莎大人，我刚刚把亚米陨落时逸散的魔力汇聚成了一块新的石板，现在给您。”",color:"white"}]
 
 execute if score @s rng1 matches 925 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/magical_current
 
-execute if score @s rng1 matches 938 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 938 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 execute if score @s rng1 matches 938 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“这块石板能让你看见空中的魔力潮汐，并借此向高处移动。”",color:"white"}]
-execute if score @s rng1 matches 952 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.pillager.ambient master @a ~ ~ ~ 2 0.8
+execute if score @s rng1 matches 952 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 execute if score @s rng1 matches 952 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“用它可以从你最开始落入地狱的缺口顺流而上。我和马林努斯会在那里等你。”",color:"white"}]
 
 execute if score @s rng1 matches 966 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“没问题。”",color:"white"}]
@@ -219,6 +219,7 @@ execute if score @s rng1 matches 1000 as @n[tag=AzrielNPC_marinus] at @s run fun
 execute if score @s rng1 matches 1000 as @n[tag=AzrielNPC_marinus] at @s run tp @s -79756 -17 -186
 
 
+execute if score @s rng1 matches 1023 run forceload add -79505 -338
 execute if score @s rng1 matches 1023 run fill -79621 32 -327 -79621 30 -329 air
 
 execute if score @s rng1 matches 1023 run scoreboard players set stage Azr_system 69
@@ -229,7 +230,6 @@ execute if score @s rng1 matches 1023 as @a[tag=azrPlayer] at @s run summon item
 execute if score @s rng1 matches 1023 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
 execute if score @s rng1 matches 1023 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..18}] Azr_skillPoints 19
 execute if score @s rng1 matches 1023 run scoreboard players reset stage_main_thread AzrTimerStack
-
 
 
 
