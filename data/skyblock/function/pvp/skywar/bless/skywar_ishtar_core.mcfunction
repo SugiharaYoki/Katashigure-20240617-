@@ -22,7 +22,7 @@ execute if entity @s[scores={If_MD_Strad=1..},level=15..] run xp add @s -15 leve
 execute if entity @s[scores={If_MD_Strad=1..}] run give @s music_disc_strad[custom_name={text:"顷刻天国核心 (15)",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_10:1},max_stack_size=85] 1
 execute if entity @s[scores={If_MD_Strad=1..}] run scoreboard players set @s If_MD_Strad 0
 
-execute if entity @s[scores={If_MD_Wait=1..}，level=15..] run playsound minecraft:block.beacon.deactivate ambient @a ~ ~1 ~ 4 0.8
+execute if entity @s[scores={If_MD_Wait=1..},level=15..] run playsound minecraft:block.beacon.deactivate ambient @a ~ ~1 ~ 4 0.8
 #execute if entity @s[scores={If_MD_Wait=1..}] run playsound e ambient @a ~ ~1 ~ 4 0.8
 execute if entity @s[scores={If_MD_Wait=1..},level=15..] run particle dripping_obsidian_tear ~ ~1 ~ 5 5 5 0.2 80
 execute if entity @s[scores={If_MD_Wait=1..},level=15..] run effect give @a[tag=PVPing,distance=0.1..5.3] slowness 14 199
