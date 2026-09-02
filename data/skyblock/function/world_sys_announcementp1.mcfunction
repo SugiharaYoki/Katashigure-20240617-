@@ -12,7 +12,6 @@ execute if score sc AnnouncementRo matches 48 unless entity @a[tag=Gaming] run s
 
 execute if score sc AnnouncementRo matches 56.. run scoreboard players set sc AnnouncementRo 0
 #
-execute if block -41 156 -57 lime_stained_glass if score sc AnnouncementRoB matches 1 as @a at @s unless score @s dailydiv_n >= @n[tag=sc] dailydiv run scoreboard players add daycount dailydiv 1
 execute if block -41 156 -57 lime_stained_glass if score sc AnnouncementRoB matches 1 as @a at @s unless score @s dailydiv_n >= @n[tag=sc] dailydiv run function skyblock:city/utility/dayshift_notice
 execute if block -41 156 -57 orange_stained_glass if score sc AnnouncementRoB matches 1 as @a at @s unless score @s dailydiv_n >= @n[tag=sc] dailydiv run function skyblock:city/utility/dayshift_notice
 execute if block -41 156 -57 purple_stained_glass if score sc AnnouncementRoB matches 1 as @a at @s unless score @s dailydiv_n2 >= @n[tag=sc] dailydivc2 run function skyblock:city/utility/dayshift_notice
