@@ -103,7 +103,7 @@ execute if score @s rng1 matches 391 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 404 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“此行有去无回，那你自己能保证回来吗？”",color:"white"}]
 
 execute if score @s rng1 matches 421 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
-execute if score @s rng1 matches 421 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"light_purple",bold:1b},{bold:false,text:"\n“我不敢保证。这有很可能就是我们最后一面。”",color:"white"}]
+execute if score @s rng1 matches 421 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"light_purple",bold:1b},{bold:false,text:"\n“我不敢保证。这很有可能就是我们最后一面。”",color:"white"}]
 
 execute if score @s rng1 matches 438 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score @s rng1 matches 438 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"light_purple",bold:1b},{bold:false,text:"\n“但我不会就这样简单地送死。就算我会死在此行中，我也要最大化神庭所能获取的利益。”",color:"white"}]
