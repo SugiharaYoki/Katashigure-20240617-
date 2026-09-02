@@ -37,10 +37,10 @@ execute if score @s AzrEntityTimer matches 205 run title @a[distance=..50] times
 execute if score @s AzrEntityTimer matches 205 run title @a[distance=..50] title {text:"百 夫 长 · 博 物 区",color: "#7321cb",bold:1b}
 
 execute if score @s AzrEntityTimer matches 205 positioned -79167 50 -16 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
-execute if score @s AzrEntityTimer matches 220 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_assassin/summon
+execute if score @s AzrEntityTimer matches 220 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_centurion/summon
 execute if score @s AzrEntityTimer matches 220 positioned -79187 50 -16 run tag @e[tag=AzrielMob,distance=..30,type=zombie] add AzrielMob_BossRush_Target
 execute if score @s AzrEntityTimer matches 220 positioned -79187 50 -16 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
-execute if score @s AzrEntityTimer matches 220..399 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_assassin/core
+execute if score @s AzrEntityTimer matches 220..399 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_centurion/core
 
 execute if score @s AzrEntityTimer matches 405 run title @a[distance=..50] times 0t 20t 16t
 execute if score @s AzrEntityTimer matches 405 run title @a[distance=..50] title {text:"非 眼",color: "#7321cb",bold:1b}
