@@ -63,7 +63,7 @@ execute if score @s AzrSariel_Food_PowerSalmon matches 1.. run function skyblock
 execute if score stage Azr_system matches 1.. positioned -79775 106 -2078 if entity @s[distance=..60] unless entity @a[tag=azrPlayer,distance=60..] run tp @s -79984.03 40.00 -14.00
 execute if score stage Azr_system matches 1.. positioned -79775 106 -2078 if entity @s[distance=..60] if entity @a[tag=azrPlayer,distance=60..] run tp @s @p[tag=azrPlayer,distance=60..]
 #门y
-execute if entity @s[x=-79202,y=20,z=-41,dx=60,dy=26,dz=60] as @s at @s run tp @s ~ ~50 ~
+execute if entity @s[x=-79202,y=20,z=-41,dx=60,dy=26,dz=60] as @s at @s run tp @s ~ 50 ~
 
 
 #function skyblock:azr/assets/items/others/revival_star
