@@ -29,6 +29,7 @@ scoreboard players set @s AzrSariel_Data_CostAmount 0
 #tellraw @s [{text:"你已经退出游戏！最终坚持关数： ",color:"red"},{"score":{"name":"@s","objective":"Azr_wave"}}]
 tellraw @s [{text:"你已退出游戏！",color:"gray"}]
 tag @s remove azrPlayer
+tag @s remove azrPlayer_door_participating
 tag @s remove azrShopOnUse
 tag @s remove azrShopRefresh
 tag @s remove azrBanLifeVitae

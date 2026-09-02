@@ -17,9 +17,12 @@ execute if score @s AzrEntityTimer matches 430..599 if entity @n[tag=AzrielMob_B
 execute if score @s AzrEntityTimer matches 630..799 if entity @n[tag=AzrielMob_BossRush_Target,distance=..300] run scoreboard players set @s AzrEntityTimer 790
 execute if score @s AzrEntityTimer matches 830..999 if entity @n[tag=AzrielBoss_BossRush_Marinus,distance=..300,scores={Health=50..}] run scoreboard players set @s AzrEntityTimer 990
 
+execute if score @s AzrEntityTimer matches 5 positioned -79167 50 -19 run tag @a[tag=azrPlayer,distance=..70] add azrPlayer_door_participating
+
 execute if score @s AzrEntityTimer matches 5 run title @a[distance=..50] times 0t 20t 16t
 execute if score @s AzrEntityTimer matches 5 run title @a[distance=..50] title {text:"执 烛 使 者",color: "#7321cb",bold:1b}
 execute if score @s AzrEntityTimer matches 5 run fill -79159 77 -34 -79195 77 2 minecraft:tinted_glass replace air
+
 
 execute if score @s AzrEntityTimer matches 5 positioned -79167 50 -19 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
 execute if score @s AzrEntityTimer matches 20 positioned -79167 50 -19 run function skyblock:azr/assets/mobs/skill/boss_rush/candle_angel_summon
@@ -103,7 +106,7 @@ execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 10501.
 execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 11001.. run scoreboard players add @s rng11 10
 
 execute if score @s AzrEntityTimer matches 1122 run forceload add ~ ~
-execute if score @s AzrEntityTimer matches 1122 as @a[tag=azrPlayer,distance=..5000] at @s run scoreboard players operation @s Azr_currency_weight += @n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter] rng11
+execute if score @s AzrEntityTimer matches 1122 as @a[tag=azrPlayer,tag=azrPlayer_door_participating] at @s run scoreboard players operation @s Azr_currency_weight += @n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter] rng11
 
 execute unless entity @a[tag=azrPlayer,distance=..60] run scoreboard players set @s AzrEntityTimer 1900
 
