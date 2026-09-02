@@ -8,6 +8,8 @@ execute if score @s AzrEntityTimer matches ..799 if score @s rng9 matches 2800..
 execute if score @s AzrEntityTimer matches 806.. if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden1.theguardians music @s ~ ~ ~ 0.65
 execute if score @s AzrEntityTimer matches 806.. if score @s rng9 matches 3900.. run scoreboard players set @s rng9 0
 
+execute if score @s AzrEntityTimer matches 2 run scoreboard players set @s rng11 0
+
 execute if score @s AzrEntityTimer matches 2 run forceload add -79195 2 -79159 -34
 execute if score @s AzrEntityTimer matches 30..199 if entity @n[tag=AzrielMob_BossRush_Target,distance=..300] run scoreboard players set @s AzrEntityTimer 190
 execute if score @s AzrEntityTimer matches 230..399 if entity @n[tag=AzrielMob_BossRush_Target,distance=..300] run scoreboard players set @s AzrEntityTimer 390
@@ -46,6 +48,7 @@ execute if score @s AzrEntityTimer matches 420 positioned -79187 50 -16 run tag 
 execute if score @s AzrEntityTimer matches 420 positioned -79187 50 -16 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
 execute if score @s AzrEntityTimer matches 420..599 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_mossboss/core
 
+execute if score @s AzrEntityTimer matches 605 run scoreboard players add @s rng11 5
 execute if score @s AzrEntityTimer matches 605 run title @a[distance=..50] times 0t 20t 16t
 execute if score @s AzrEntityTimer matches 605 run title @a[distance=..50] title {text:"锅 炉 驱 动 者",color: "#7321cb",bold:1b}
 
@@ -55,6 +58,7 @@ execute if score @s AzrEntityTimer matches 620 positioned -79187 50 -16 run tag 
 execute if score @s AzrEntityTimer matches 620 positioned -79187 50 -16 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
 execute if score @s AzrEntityTimer matches 620..799 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_diesel/core
 
+execute if score @s AzrEntityTimer matches 805 run scoreboard players add @s rng11 10
 execute if score @s AzrEntityTimer matches 805 run title @a[distance=..50] times 0t 20t 16t
 execute if score @s AzrEntityTimer matches 805 run title @a[distance=..50] title {text:"马 林 努 斯",color: "#da1919",bold:1b}
 execute if score @s AzrEntityTimer matches 805 run scoreboard players set @s rng9 0
@@ -79,29 +83,30 @@ execute if score @s AzrEntityTimer matches 1061 run tellraw @a[tag=azrShowDialog
 
 execute if score @s AzrEntityTimer matches 1122 as @a[tag=azrPlayer,distance=..50] at @s unless score @s azr_speedrun_door1 matches -9999.. run scoreboard players set @s azr_speedrun_door1 99999
 execute if score @s AzrEntityTimer matches 1122 as @a[tag=azrPlayer,distance=..50] at @s if score @s azr_speedrun_door1 >= @n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter] rng10 run scoreboard players operation @s azr_speedrun_door1 = @n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter] rng10
-execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 1..3000 run scoreboard players set @s rng11 200
-execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 3001..3500 run scoreboard players set @s rng11 190
-execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 3501..4000 run scoreboard players set @s rng11 180
-execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 4001..4500 run scoreboard players set @s rng11 170
-execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 4501..5000 run scoreboard players set @s rng11 160
-execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 5001..5500 run scoreboard players set @s rng11 150
-execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 5501..6000 run scoreboard players set @s rng11 140
-execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 6001..6500 run scoreboard players set @s rng11 130
-execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 6501..7000 run scoreboard players set @s rng11 120
-execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 7001..7500 run scoreboard players set @s rng11 110
-execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 7501..8000 run scoreboard players set @s rng11 100
-execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 8001..8500 run scoreboard players set @s rng11 90
-execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 8501..9000 run scoreboard players set @s rng11 80
-execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 9001..9500 run scoreboard players set @s rng11 70
-execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 9501..10000 run scoreboard players set @s rng11 60
-execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 10001..10500 run scoreboard players set @s rng11 50
-execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 10501..11000 run scoreboard players set @s rng11 40
-execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 11001.. run scoreboard players set @s rng11 30
+execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 1..3000 run scoreboard players add @s rng11 160
+execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 3001..3500 run scoreboard players add @s rng11 150
+execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 3501..4000 run scoreboard players add @s rng11 140
+execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 4001..4500 run scoreboard players add @s rng11 130
+execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 4501..5000 run scoreboard players add @s rng11 120
+execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 5001..5500 run scoreboard players add @s rng11 110
+execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 5501..6000 run scoreboard players add @s rng11 100
+execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 6001..6500 run scoreboard players add @s rng11 95
+execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 6501..7000 run scoreboard players add @s rng11 90
+execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 7001..7500 run scoreboard players add @s rng11 85
+execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 7501..8000 run scoreboard players add @s rng11 80
+execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 8001..8500 run scoreboard players add @s rng11 70
+execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 8501..9000 run scoreboard players add @s rng11 60
+execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 9001..9500 run scoreboard players add @s rng11 50
+execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 9501..10000 run scoreboard players add @s rng11 40
+execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 10001..10500 run scoreboard players add @s rng11 30
+execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 10501..11000 run scoreboard players add @s rng11 20
+execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 11001.. run scoreboard players add @s rng11 10
 
 execute if score @s AzrEntityTimer matches 1122 run forceload add ~ ~
 execute if score @s AzrEntityTimer matches 1122 as @a[tag=azrPlayer,distance=..50] at @s run scoreboard players operation @s Azr_currency_weight += @n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter] rng11
 
-execute if score @s AzrEntityTimer matches 1122 as @a[tag=azrPlayer,distance=..50] at @s run tellraw @s [{text:"神庭幻台 第壹场梦",bold:true,color:"light_purple"},{text:" 梦醒",bold:true,color:"white"},{text:"\n - 分数：",bold:false,color:"white"},{"score":{"name":"@n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter]","objective":"rng10"},color:"white"},{text:"\n - 历史最高纪录：",bold:false,color:"white"},{"score":{"name":"@s","objective":"azr_speedrun_door1"},bold:false,color:"white"},{text:"\n - 获得 ",bold:false,color:"white"},{"score":{"name":"@n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter]","objective":"rng11"},bold:false,color:"white"},{text:" 恶魔砝码",bold:false,color:"white"}]
+execute unless entity @a[tag=azrPlayer,distance=..60] run scoreboard players set @s AzrEntityTimer 1900
+
 execute if score @s AzrEntityTimer matches 1122 as @a[tag=azrShowDialog,distance=..150] at @s run tp @s -79967 -51 17 facing -79968 -51 17
 execute if score @s AzrEntityTimer matches 1123 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s run playsound minecraft:entity.creaking.death player @s ~ ~ ~ 1 0.8
 execute if score @s AzrEntityTimer matches 1123 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s run playsound minecraft:item.chorus_fruit.teleport player @s ~ ~ ~ 1 0.7
@@ -109,6 +114,9 @@ execute if score @s AzrEntityTimer matches 1123 positioned -79967 -51 17 as @a[t
 execute if score @s AzrEntityTimer matches 1123 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 2 0.9 0 30
 execute if score @s AzrEntityTimer matches 1123 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s rotated ~ 0 run function skyblock:azr/assets/events/effects/player_magic_release
 execute if score @s AzrEntityTimer matches 1123 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s run playsound ui.toast.challenge_complete player @s ~ ~ ~ 1 1
+
+execute if score @s AzrEntityTimer matches 1123 run scoreboard players set @s AzrEntityTimer 1900
+execute if score @s AzrEntityTimer matches 1900 as @a[tag=azrPlayer,distance=..50] at @s run tellraw @s [{text:"神庭幻台 第壹场梦",bold:true,color:"light_purple"},{text:" 梦醒",bold:true,color:"white"},{text:"\n - 分数：",bold:false,color:"white"},{"score":{"name":"@n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter]","objective":"rng10"},color:"white"},{text:"\n - 历史最高纪录：",bold:false,color:"white"},{"score":{"name":"@s","objective":"azr_speedrun_door1"},bold:false,color:"white"},{text:"\n - 获得 ",bold:false,color:"white"},{"score":{"name":"@n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter]","objective":"rng11"},bold:false,color:"white"},{text:" 恶魔砝码",bold:false,color:"white"}]
 
 execute unless entity @a[tag=azrPlayer,distance=..60] run fill -79159 77 -34 -79195 77 2 minecraft:air replace tinted_glass
 execute unless entity @a[tag=azrPlayer,distance=..60] run kill @e[tag=AzrielMob_BossRush_Target,distance=..120]
