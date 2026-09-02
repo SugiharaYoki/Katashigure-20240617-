@@ -103,7 +103,7 @@ execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 10501.
 execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 11001.. run scoreboard players add @s rng11 10
 
 execute if score @s AzrEntityTimer matches 1122 run forceload add ~ ~
-execute if score @s AzrEntityTimer matches 1122 as @a[tag=azrPlayer,distance=..50] at @s run scoreboard players operation @s Azr_currency_weight += @n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter] rng11
+execute if score @s AzrEntityTimer matches 1122 as @a[tag=azrPlayer,distance=..5000] at @s run scoreboard players operation @s Azr_currency_weight += @n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter] rng11
 
 execute unless entity @a[tag=azrPlayer,distance=..60] run scoreboard players set @s AzrEntityTimer 1900
 
