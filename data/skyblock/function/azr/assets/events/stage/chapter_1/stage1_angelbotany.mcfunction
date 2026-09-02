@@ -40,7 +40,9 @@ execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=24}] positioned -79177 50 -16 as @a[tag=azrPlayer,distance=..30] run effect clear @s
 execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=24}] positioned -79177 50 -16 as @a[tag=azrPlayer,distance=..30] run effect give @s regeneration 3 9 true
 execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=24}] positioned -79177 50 -16 as @a[tag=azrPlayer,distance=..30] run effect give @s saturation 3 0 true
-execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=24}] run summon marker -79177 50 -16 {Tags:["AzrielMarker_encounter"]}
+
+execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=24},tag=azr_door_1] run summon marker -79177 50 -16 {Tags:["AzrielMarker_encounter","azr_door_1"]}
+execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=24},tag=azr_door_2] run summon marker -79177 50 -16 {Tags:["AzrielMarker_encounter","azr_door_2"]}
 
 execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=90..99}] run scoreboard players set @s rng1 90
 
