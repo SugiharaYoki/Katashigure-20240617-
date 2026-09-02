@@ -6,4 +6,4 @@ particle flame ~ 4.1 ~ 0 3 0 0.00 6
 
 playsound minecraft:block.lava.pop block @a ~ ~ ~ 0.2 0.9
 playsound block.lava.extinguish block @a ~ ~ ~ 0.15 1.7
-particle minecraft:lava ~ ~ ~ 0.6 0 0.6 5 60
+particle minecraft:lava ~ ~ ~ 0.6 0 0.6 5 20

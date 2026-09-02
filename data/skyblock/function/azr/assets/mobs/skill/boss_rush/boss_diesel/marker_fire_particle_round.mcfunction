@@ -1,21 +1,12 @@
 $execute if entity @s[scores={rng1=2..8}] rotated as @s rotated 0 0 run particle wax_off ^ ^0.2 ^$(distance) 0 0 0 0 1
-$execute if entity @s[scores={rng1=2..8}] rotated as @s rotated 20 0 run particle wax_off ^ ^0.2 ^$(distance) 0 0 0 0 1
 $execute if entity @s[scores={rng1=2..8}] rotated as @s rotated 40 0 run particle wax_off ^ ^0.2 ^$(distance) 0 0 0 0 1
-$execute if entity @s[scores={rng1=2..8}] rotated as @s rotated 60 0 run particle wax_off ^ ^0.2 ^$(distance) 0 0 0 0 1
 $execute if entity @s[scores={rng1=2..8}] rotated as @s rotated 80 0 run particle wax_off ^ ^0.2 ^$(distance) 0 0 0 0 1
-$execute if entity @s[scores={rng1=2..8}] rotated as @s rotated 100 0 run particle wax_off ^ ^0.2 ^$(distance) 0 0 0 0 1
 $execute if entity @s[scores={rng1=2..8}] rotated as @s rotated 120 0 run particle wax_off ^ ^0.2 ^$(distance) 0 0 0 0 1
-$execute if entity @s[scores={rng1=2..8}] rotated as @s rotated 140 0 run particle wax_off ^ ^0.2 ^$(distance) 0 0 0 0 1
 $execute if entity @s[scores={rng1=2..8}] rotated as @s rotated 160 0 run particle wax_off ^ ^0.2 ^$(distance) 0 0 0 0 1
-$execute if entity @s[scores={rng1=2..8}] rotated as @s rotated 180 0 run particle wax_off ^ ^0.2 ^$(distance) 0 0 0 0 1
 $execute if entity @s[scores={rng1=2..8}] rotated as @s rotated 200 0 run particle wax_off ^ ^0.2 ^$(distance) 0 0 0 0 1
-$execute if entity @s[scores={rng1=2..8}] rotated as @s rotated 220 0 run particle wax_off ^ ^0.2 ^$(distance) 0 0 0 0 1
 $execute if entity @s[scores={rng1=2..8}] rotated as @s rotated 240 0 run particle wax_off ^ ^0.2 ^$(distance) 0 0 0 0 1
-$execute if entity @s[scores={rng1=2..8}] rotated as @s rotated 260 0 run particle wax_off ^ ^0.2 ^$(distance) 0 0 0 0 1
 $execute if entity @s[scores={rng1=2..8}] rotated as @s rotated 280 0 run particle wax_off ^ ^0.2 ^$(distance) 0 0 0 0 1
-$execute if entity @s[scores={rng1=2..8}] rotated as @s rotated 300 0 run particle wax_off ^ ^0.2 ^$(distance) 0 0 0 0 1
 $execute if entity @s[scores={rng1=2..8}] rotated as @s rotated 320 0 run particle wax_off ^ ^0.2 ^$(distance) 0 0 0 0 1
-$execute if entity @s[scores={rng1=2..8}] rotated as @s rotated 340 0 run particle wax_off ^ ^0.2 ^$(distance) 0 0 0 0 1
 
 $execute if entity @s[scores={rng1=2..8}] rotated as @s rotated 0 0 run particle wax_off ^ ^0.2 ^$(distance_reach) 0 0 0 0 1
 $execute if entity @s[scores={rng1=2..8}] rotated as @s rotated 20 0 run particle wax_off ^ ^0.2 ^$(distance_reach) 0 0 0 0 1

@@ -3,11 +3,11 @@ execute if score @s rng8 matches 2 store result score @s rng10 if entity @e[tag=
 execute if score @s rng8 matches 2 if score @s rng10 matches 4.. run scoreboard players set @s rng2 -1
 execute if score @s rng8 matches 2 if score @s rng10 matches 4.. run scoreboard players set @s rng8 -10
 execute if score @s rng8 matches 2 run playsound minecraft:entity.evoker.cast_spell hostile @a ~ ~ ~ 1 1.3
-execute if score @s rng8 matches 2 run particle minecraft:flame ~ ~0.3 ~ 0.2 0 0.2 0 20
+execute if score @s rng8 matches 2 run particle minecraft:flame ~ ~0.3 ~ 0.2 0 0.2 0 15
 execute if score @s rng8 matches 2 run effect give @s slowness 1 9 true
 
-execute if score @s rng8 matches 2..15 run particle enchant ~ ~1.5 ~ 2 1.5 2 0.02 30
-execute if score @s rng8 matches 22..50 run particle crimson_spore ~ ~0.1 ~ 5 0.0 5 0.02 60
+execute if score @s rng8 matches 2..15 run particle enchant ~ ~1.5 ~ 2 1.5 2 0.02 20
+execute if score @s rng8 matches 22..50 run particle crimson_spore ~ ~0.1 ~ 5 0.0 5 0.02 30
 execute if score @s rng8 matches 22..24 run playsound ambient.soul_sand_valley.mood ambient @a ~ ~-10 ~ 10 0.7
 
 execute if score @s rng8 matches 50 positioned -79177 49 -16 positioned ~ ~1 ~4 run particle large_smoke ~ ~0.2 ~ 0 0 0 0.05 3
