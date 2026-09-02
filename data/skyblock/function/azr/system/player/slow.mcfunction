@@ -59,6 +59,11 @@ execute if entity @s[tag=AzrSariel_upg6C] run scoreboard players remove @s AzrSa
 execute if score @s AzrSariel_Food_HardenedCookie matches 1.. run function skyblock:azr/system/player/food_consumption/hardened_cookie_effect
 execute if score @s AzrSariel_Food_PowerSalmon matches 1.. run function skyblock:azr/system/player/food_consumption/power_salmon_effect
 
+#出生点
+execute if score stage Azr_system matches 1.. positioned -79775 106 -2078 if entity @s[distance=..60] unless entity @a[tag=azrPlayer,distance=60..] run tp @s -79984.03 40.00 -14.00
+execute if score stage Azr_system matches 1.. positioned -79775 106 -2078 if entity @s[distance=..60] if entity @a[tag=azrPlayer,distance=60..] run tp @s @p[tag=azrPlayer,distance=60..]
+
+
 
 #function skyblock:azr/assets/items/others/revival_star
 
