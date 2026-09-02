@@ -46,6 +46,7 @@ execute if score @s rng1 matches 73..75 as @n[tag=AzrielTrader_pig_henry] at @s 
 execute if score @s rng1 matches 76 as @n[tag=AzrielTrader_pig_henry] at @s run tp @s ~1 ~ ~ facing entity @p[tag=azrPlayer]
 
 
+execute if score @s rng1 matches 77 positioned ~ ~ ~ as @n[tag=AzrielTrader_pig_henry] run data modify entity @s Silent set value 1b
 execute if score @s rng1 matches 77 positioned ~ ~ ~ at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng1 matches 77 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“兄弟，我来了！”",color:"white"}]
 execute if score @s rng1 matches 87 positioned ~ ~ ~ at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
