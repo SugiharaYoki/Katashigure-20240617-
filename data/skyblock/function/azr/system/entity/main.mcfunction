@@ -23,7 +23,8 @@ execute if score stage Azr_system matches 23..24 as @s[tag=AzrielBossA] at @s ru
 execute if score stage Azr_system matches 5..43 if score playerCount Azr_system matches 1.. positioned -79931 28 -5 as @s[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/mobs/skill/boss_mossboss/core
 execute if score stage Azr_system matches 8..43 if score playerCount Azr_system matches 1.. positioned -80008 25 200 as @s[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/mobs/skill/boss_diesel/core
 execute if score stage Azr_system matches 8..43 if score playerCount Azr_system matches 1.. positioned -79820 43 136 as @s[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/mobs/skill/boss_assassin/core
-execute if score playerCount Azr_system matches 1.. positioned -79177 50 -16 as @s[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/mobs/skill/boss_rush/door_1
+execute if score playerCount Azr_system matches 1.. positioned -79177 50 -16 as @s[tag=AzrielMarker_encounter,distance=0..0.5,tag=azr_door_1] run function skyblock:azr/assets/mobs/skill/boss_rush/door_1
+execute if score playerCount Azr_system matches 1.. positioned -79177 50 -16 as @s[tag=AzrielMarker_encounter,distance=0..0.5,tag=azr_door_2] run function skyblock:azr/assets/mobs/skill/boss_rush/door_2
 
 execute if score tick_count_main AzrTimerStack matches 4 at @s run function skyblock:azr/system/entity/main_slow
 execute as @e[type=item,distance=..5] at @s if entity @s[nbt={OnGround:1b}] if items entity @s container.0 shulker_shell[custom_data~{arrow_box:1b}] if data entity @s Thrower run function skyblock:azr/system/player/weapons/arrow_box/summon
