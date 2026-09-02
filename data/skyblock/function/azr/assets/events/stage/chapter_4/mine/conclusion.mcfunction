@@ -77,7 +77,7 @@ execute if score @s rng1 matches 242 at @n[tag=AzrielNPC_mersenne] run playsound
 execute if score @s rng1 matches 242 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“我们这里除了权之残影大人之外，最强的站力是负责阻止更多魔界军涌入的天使长拉斐尔大人。”",color:"white"}]
 
 execute if score @s rng1 matches 263 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
-execute if score @s rng1 matches 263 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"light_purple",bold:1b},{bold:false,text:"\n“和我同等的站力还有中庭的权之守衡与东庭的权之幻舆，我们互相之间全部失去联系了。”",color:"white"}]
+execute if score @s rng1 matches 263 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"light_purple",bold:1b},{bold:false,text:"\n“和我同等的战力还有中庭的权之守衡与东庭的权之幻舆，我们互相之间全部失去联系了。”",color:"white"}]
 
 execute if score @s rng1 matches 284 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score @s rng1 matches 284 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"light_purple",bold:1b},{bold:false,text:"\n“幸存的神界军，但凡是能找到的，都被我们转移到了休憩所。”",color:"white"}]
