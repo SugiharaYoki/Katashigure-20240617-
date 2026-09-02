@@ -19,9 +19,7 @@ execute positioned -79977 -51 12 as @n[type=villager,distance=..5,tag=AzrielTrad
 
 
 #门
-execute positioned -79965 -52 17 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] as @a[tag=azrPlayer,distance=..2] at @s if block ~ ~ ~ end_portal run summon marker -79965 -52 17 {Tags:["AzrielMarker_encounter"]}
-execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 20.. run tag @s add AzrielMarker_sole
-execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 20.. run kill @e[tag=!AzrielMarker_sole,distance=..0.6,tag=AzrielMarker_encounter]
+execute positioned -79965 -52 17 if entity @a[tag=azrPlayer,distance=..1.5] unless entity @n[tag=AzrielMarker_encounter,distance=..0.5] if block ~ ~ ~ minecraft:end_portal run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
 execute positioned -79965 -52 17 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] run tellraw @a[tag=azrPlayer,distance=..30] [{text:"神庭幻台 第壹场梦",bold:true,color:"light_purple"},{text:"\n - 执烛使者\n - 阴影处刑者\n - 噬藓母虫\n - 锅炉驱动者\n - 马林努斯",bold:false,color:"white"}]
 
