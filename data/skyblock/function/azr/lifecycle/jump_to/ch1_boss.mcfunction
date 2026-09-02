@@ -21,7 +21,7 @@ tag @s[tag=azrPlayer,tag=azrPlayer_dialogchoice_unlocked_30108] add azrPlayer_re
 #give @a[tag=azrPlayer] ink_sac 2
 #give @a[tag=azrPlayer] ink_sac 4
 
-
+scoreboard players set @a[scores={AZR_chainKillUpg_pts=..0}] AZR_chainKillUpg_pts 4
 
 execute positioned -79923.85 46.3 45.02 run function skyblock:azr/assets/mobs/unique/bird
 execute positioned -79930.46 71.00 74.33 run function skyblock:azr/assets/mobs/skill/marinus/summon
