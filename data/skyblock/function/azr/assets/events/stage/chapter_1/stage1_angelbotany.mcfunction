@@ -46,9 +46,9 @@ execute positioned -79965 -52 17 as @n[tag=azr_door,distance=0..0.5,scores={rng1
 
 execute positioned -79965 -52 17 as @n[tag=azr_door,distance=0..0.5,scores={rng1=90..99}] run scoreboard players set @s rng1 90
 
-execute positioned -79965 -52 17 as @n[tag=azr_door,distance=0..0.5,scores={rng1=..100},tag=azr_door_1] positioned -79965 -52 17 unless entity @a[tag=azrPlayer,distance=..1.5] positioned -79177 50 -16 unless entity @a[tag=azrPlayer,distance=..150] run kill @n[tag=azr_door,distance=0..20]
+execute positioned -79965 -52 17 as @n[tag=azr_door,distance=0..0.5,scores={rng1=..100},tag=azr_door_1] positioned -79965 -52 17 unless entity @a[tag=azrPlayer,distance=..1.5] positioned -79177 50 -16 unless entity @a[tag=azrPlayer,distance=..150] positioned -79965 -52 17 run kill @n[tag=azr_door,distance=0..20]
 
-execute positioned -79965 -52 17 as @n[tag=azr_door,distance=0..0.5,scores={rng1=..100},tag=azr_door_2] positioned -79965 -52 25 unless entity @a[tag=azrPlayer,distance=..1.5] positioned -79177 50 -16 unless entity @a[tag=azrPlayer,distance=..150] run kill @n[tag=azr_door,distance=0..20]
+execute positioned -79965 -52 17 as @n[tag=azr_door,distance=0..0.5,scores={rng1=..100},tag=azr_door_2] positioned -79965 -52 25 unless entity @a[tag=azrPlayer,distance=..1.5] positioned -79177 50 -16 unless entity @a[tag=azrPlayer,distance=..150] positioned -79965 -52 17 run kill @n[tag=azr_door,distance=0..20]
 
 
 
