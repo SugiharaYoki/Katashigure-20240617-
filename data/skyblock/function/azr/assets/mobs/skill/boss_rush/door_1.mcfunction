@@ -18,6 +18,7 @@ execute if score @s AzrEntityTimer matches 630..799 if entity @n[tag=AzrielMob_B
 execute if score @s AzrEntityTimer matches 830..999 if entity @n[tag=AzrielBoss_BossRush_Marinus,distance=..300,scores={Health=50..}] run scoreboard players set @s AzrEntityTimer 990
 
 execute if score @s AzrEntityTimer matches 5 positioned -79167 50 -19 run tag @a[tag=azrPlayer,distance=..70] add azrPlayer_door_participating
+execute if score @s AzrEntityTimer matches ..5 run kill @e[tag=AzrielMarker_encounter,distance=0..0.5]
 
 execute if score @s AzrEntityTimer matches 5 run title @a[distance=..50] times 0t 20t 16t
 execute if score @s AzrEntityTimer matches 5 run title @a[distance=..50] title {text:"执 烛 使 者",color: "#7321cb",bold:1b}
