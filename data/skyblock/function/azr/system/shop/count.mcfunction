@@ -12,4 +12,4 @@ execute store result storage azr:shop ingredient.blaze_powder int 1.0 if items e
 execute store result storage azr:shop ingredient.slime_ball int 1.0 if items entity @s container.* slime_ball
 execute store result storage azr:shop ingredient.resin_clump int 1.0 if items entity @s container.* resin_clump
 
-execute if entity @s[tag=azrRetrieved] run function skyblock:azr/lifecycle/endgame/save_game_backup
+execute if entity @s[tag=azrRetrieved] if items entity @s container.* *[custom_data~{revival_star:1b}] run function skyblock:azr/lifecycle/endgame/save_game_backup

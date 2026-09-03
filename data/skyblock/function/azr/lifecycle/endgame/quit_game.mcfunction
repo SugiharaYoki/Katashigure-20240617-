@@ -65,7 +65,8 @@ execute if entity @s[x=-79900,y=40,z=0,distance=0..2200] if entity @a[tag=azrPla
 tag @s remove azrAmulet_StayFloat_Jumping
 
 
-execute if entity @s[tag=azrRetrieved] positioned -79953.0 38.5 -14.0 unless entity @s[distance=5000..] positioned 0 70 0 unless entity @s[distance=200..] run function skyblock:azr/lifecycle/endgame/save_game
+execute if entity @s[tag=azrRetrieved] if items entity @s container.* *[custom_data~{revival_star:1b}] run function skyblock:azr/lifecycle/endgame/save_game
+#positioned -79953.0 38.5 -14.0 unless entity @s[distance=5000..] 
 tag @s remove azrRetrieved
 
 function skyblock:api_quit_any_game
