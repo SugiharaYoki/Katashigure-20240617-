@@ -1,8 +1,9 @@
 
 execute if score @s rng8 matches 1 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_centurion/move_backstep
 
-execute if score @s rng8 matches 2 run effect give @s[scores={Health=140..}] speed 1 3 true
-execute if score @s rng8 matches 2 run effect give @s[scores={Health=..139}] speed 2 3 true
+execute if score @s rng8 matches 2 run effect give @s[scores={Health=301..}] speed 1 1 true
+execute if score @s rng8 matches 2 run effect give @s[scores={Health=140..300}] speed 1 2 true
+execute if score @s rng8 matches 2 run effect give @s[scores={Health=..139}] speed 2 2 true
 execute if score @s rng8 matches 2 rotated as @s rotated ~ 0 run summon marker ^ ^ ^-3 {Tags:["AzrielMob_boss_centurion_sprint_axe_marker","AzrielMob_mob_marker"]}
 
 execute if score @s[scores={Health=140..}] rng8 matches 50.. run scoreboard players set @s rng2 0
