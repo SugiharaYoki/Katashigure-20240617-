@@ -2,7 +2,7 @@ scoreboard players add @s rng1 1
 
 execute if score @s rng1 matches 2 run effect clear @s slowness
 execute if score @s[tag=!AzrielMob_door] rng1 matches 2 run effect give @s resistance 5 4 true
-execute if score @s rng1 matches 2 run data modify entity @s Invulnerable set value 1b
+execute if score @s[tag=!AzrielMob_door] rng1 matches 2 run data modify entity @s Invulnerable set value 1b
 
 execute if score @s rng1 matches 48..49 run scoreboard players set @s rng1 48
 execute if score @s rng1 matches 48..49 if entity @a[tag=azrPlayer,distance=..5.5] run scoreboard players set @s rng1 50
@@ -36,7 +36,7 @@ execute if score @s rng1 matches 50 run playsound minecraft:entity.evoker.prepar
 execute if score @s rng1 matches 50 run particle minecraft:flame ~ ~0.3 ~ 0.2 0 0.2 0 20
 execute if score @s rng1 matches 50 run effect give @s slowness 2 19 true
 execute if score @s[tag=!AzrielMob_door] rng1 matches 50 run effect clear @s resistance
-execute if score @s rng1 matches 50 run data modify entity @s Invulnerable set value 0b
+execute if score @s[tag=!AzrielMob_door] rng1 matches 50 run data modify entity @s Invulnerable set value 0b
 
 execute if score @s rng1 matches 57 store result score @s rng3 run random value 1..3
 execute if score @s[tag=AzrielMob_door] rng1 matches 57 store result score @s rng3 run random value 1..4
