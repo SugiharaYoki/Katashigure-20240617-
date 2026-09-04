@@ -10,29 +10,29 @@ execute if score @s rng8 matches 2 at @s rotated ~ 0 positioned ^-1.3 ^0.2 ^0.6 
 execute if score @s rng8 matches 2 at @s rotated ~ 0 positioned ^-2.6 ^0.2 ^0.3 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
 execute if score @s rng8 matches 2 at @s rotated ~ 0 positioned ^-3.9 ^0.2 ^0.0 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
 
-execute if score @s rng8 matches 3 at @s rotated ~ 0 positioned ^03.9 ^0.2 ^5.0 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
-execute if score @s rng8 matches 3 at @s rotated ~ 0 positioned ^02.6 ^0.2 ^5.3 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
-execute if score @s rng8 matches 3 at @s rotated ~ 0 positioned ^01.3 ^0.2 ^5.6 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
-execute if score @s rng8 matches 3 at @s rotated ~ 0 positioned ^00 ^0.2 ^5.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
-execute if score @s rng8 matches 3 at @s rotated ~ 0 positioned ^-1 ^0.2 ^5.6 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
-execute if score @s rng8 matches 3 at @s rotated ~ 0 positioned ^-2.6 ^0.2 ^5.3 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
-execute if score @s rng8 matches 3 at @s rotated ~ 0 positioned ^-3.9 ^0.2 ^5.0 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
+execute if score @s rng8 matches 8 at @s rotated ~ 0 positioned ^03.9 ^0.2 ^5.0 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
+execute if score @s rng8 matches 8 at @s rotated ~ 0 positioned ^02.6 ^0.2 ^5.3 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
+execute if score @s rng8 matches 8 at @s rotated ~ 0 positioned ^01.3 ^0.2 ^5.6 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
+execute if score @s rng8 matches 8 at @s rotated ~ 0 positioned ^00 ^0.2 ^5.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
+execute if score @s rng8 matches 8 at @s rotated ~ 0 positioned ^-1 ^0.2 ^5.6 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
+execute if score @s rng8 matches 8 at @s rotated ~ 0 positioned ^-2.6 ^0.2 ^5.3 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
+execute if score @s rng8 matches 8 at @s rotated ~ 0 positioned ^-3.9 ^0.2 ^5.0 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
 
-execute if score @s rng8 matches 4 at @s rotated ~ 0 positioned ^03.9 ^0.2 ^10.0 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
-execute if score @s rng8 matches 4 at @s rotated ~ 0 positioned ^02.6 ^0.2 ^10.3 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
-execute if score @s rng8 matches 4 at @s rotated ~ 0 positioned ^01.3 ^0.2 ^10.6 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
-execute if score @s rng8 matches 4 at @s rotated ~ 0 positioned ^00 ^0.2 ^10.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
-execute if score @s rng8 matches 4 at @s rotated ~ 0 positioned ^-1.3 ^0.2 ^10.6 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
-execute if score @s rng8 matches 4 at @s rotated ~ 0 positioned ^-2.6 ^0.2 ^10.3 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
-execute if score @s rng8 matches 4 at @s rotated ~ 0 positioned ^-3.9 ^0.2 ^10.0 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
+execute if score @s rng8 matches 14 at @s rotated ~ 0 positioned ^03.9 ^0.2 ^10.0 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
+execute if score @s rng8 matches 14 at @s rotated ~ 0 positioned ^02.6 ^0.2 ^10.3 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
+execute if score @s rng8 matches 14 at @s rotated ~ 0 positioned ^01.3 ^0.2 ^10.6 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
+execute if score @s rng8 matches 14 at @s rotated ~ 0 positioned ^00 ^0.2 ^10.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
+execute if score @s rng8 matches 14 at @s rotated ~ 0 positioned ^-1.3 ^0.2 ^10.6 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
+execute if score @s rng8 matches 14 at @s rotated ~ 0 positioned ^-2.6 ^0.2 ^10.3 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
+execute if score @s rng8 matches 14 at @s rotated ~ 0 positioned ^-3.9 ^0.2 ^10.0 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
 
-execute if score @s rng8 matches 5 at @s rotated ~ 0 positioned ^03.9 ^0.2 ^15.0 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
-execute if score @s rng8 matches 5 at @s rotated ~ 0 positioned ^02.6 ^0.2 ^15.3 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
-execute if score @s rng8 matches 5 at @s rotated ~ 0 positioned ^01.3 ^0.2 ^15.6 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
-execute if score @s rng8 matches 5 at @s rotated ~ 0 positioned ^00 ^0.2 ^15.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
-execute if score @s rng8 matches 5 at @s rotated ~ 0 positioned ^-1.3 ^0.2 ^15.6 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
-execute if score @s rng8 matches 5 at @s rotated ~ 0 positioned ^-2.6 ^0.2 ^15.3 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
-execute if score @s rng8 matches 5 at @s rotated ~ 0 positioned ^-3.9 ^0.2 ^15.0 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
+execute if score @s rng8 matches 20 at @s rotated ~ 0 positioned ^03.9 ^0.2 ^15.0 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
+execute if score @s rng8 matches 20 at @s rotated ~ 0 positioned ^02.6 ^0.2 ^15.3 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
+execute if score @s rng8 matches 20 at @s rotated ~ 0 positioned ^01.3 ^0.2 ^15.6 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
+execute if score @s rng8 matches 20 at @s rotated ~ 0 positioned ^00 ^0.2 ^15.9 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
+execute if score @s rng8 matches 20 at @s rotated ~ 0 positioned ^-1.3 ^0.2 ^15.6 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
+execute if score @s rng8 matches 20 at @s rotated ~ 0 positioned ^-2.6 ^0.2 ^15.3 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
+execute if score @s rng8 matches 20 at @s rotated ~ 0 positioned ^-3.9 ^0.2 ^15.0 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
 
-execute if score @s rng8 matches 50.. run scoreboard players set @s rng2 0
-execute if score @s rng8 matches 50.. run scoreboard players set @s rng8 -10
+execute if score @s rng8 matches 45.. run scoreboard players set @s rng2 0
+execute if score @s rng8 matches 45.. run scoreboard players set @s rng8 -10
