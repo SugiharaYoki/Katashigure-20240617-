@@ -14,18 +14,10 @@ particle witch ~0.8 ~ ~0.0 0 0 0 0 1 force
 particle witch ~0.0 ~ ~-0.8 0 0 0 0 1 force
 particle witch ~-0.8 ~ ~0.0 0 0 0 0 1 force
 
-particle witch ~0.2 ~ ~0.6 0 0 0 0 1 force
 particle witch ~0.4 ~ ~0.4 0 0 0 0 1 force
-particle witch ~0.6 ~ ~0.2 0 0 0 0 1 force
-particle witch ~-0.2 ~ ~0.6 0 0 0 0 1 force
 particle witch ~-0.4 ~ ~0.4 0 0 0 0 1 force
-particle witch ~-0.6 ~ ~0.2 0 0 0 0 1 force
-particle witch ~0.2 ~ ~-0.6 0 0 0 0 1 force
 particle witch ~0.4 ~ ~-0.4 0 0 0 0 1 force
-particle witch ~0.6 ~ ~-0.2 0 0 0 0 1 force
-particle witch ~-0.2 ~ ~-0.6 0 0 0 0 1 force
 particle witch ~-0.4 ~ ~-0.4 0 0 0 0 1 force
-particle witch ~-0.6 ~ ~-0.2 0 0 0 0 1 force
 
 
 execute as @p[tag=azrPlayer,distance=..0.7,gamemode=adventure] at @s unless items entity @s armor.feet *[custom_data={iron_boots_lightstep:1b}] run summon evoker_fangs
