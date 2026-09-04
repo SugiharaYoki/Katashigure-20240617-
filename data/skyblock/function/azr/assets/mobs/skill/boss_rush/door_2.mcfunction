@@ -39,7 +39,7 @@ execute if score @s AzrEntityTimer matches 205 run title @a[distance=..50] title
 execute if score @s AzrEntityTimer matches 205 positioned -79167 50 -16 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
 execute if score @s AzrEntityTimer matches 220 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_centurion/summon
 execute if score @s AzrEntityTimer matches 220 positioned -79187 50 -16 run tag @e[tag=AzrielMob,distance=..30,type=piglin_brute] add AzrielMob_BossRush_Target
-execute if score @s AzrEntityTimer matches 220 positioned -79187 50 -16 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
+execute if score @s AzrEntityTimer matches 220 positioned -79187 50 -16 as @e[tag=AzrielMob,distance=..50] run data modify entity @s DeathLootTable set value "skyblock:null"
 execute if score @s AzrEntityTimer matches 220..399 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_centurion/core
 
 execute if score @s AzrEntityTimer matches 405 run title @a[distance=..50] times 0t 20t 16t
