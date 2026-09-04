@@ -57,7 +57,7 @@ scoreboard objectives remove TempIf_Job6E
 scoreboard objectives remove TempIf_Job3
 setblock -27 143 -58 air
 
-function skyblock:pvp/skywar/system/init/map/common_partdeletemap_1
-function skyblock:pvp/skywar/system/init/map/common_partdeletemap_2
-function skyblock:pvp/skywar/system/init/map/common_partdeletemap_3
-function skyblock:pvp/skywar/system/init/map/common_partdeletemap_4
+execute if score sc Map_Theme matches 1 run function skyblock:pvp/skywar/system/init/map/common_partdeletemap_1
+execute if score sc Map_Theme matches 2 run function skyblock:pvp/skywar/system/init/map/common_partdeletemap_2
+execute if score sc Map_Theme matches 3 run function skyblock:pvp/skywar/system/init/map/common_partdeletemap_3
+execute if score sc Map_Theme matches 4 run function skyblock:pvp/skywar/system/init/map/common_partdeletemap_4
