@@ -40,14 +40,14 @@ execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=2..,rng1=3..4}] run te
 execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=2..,rng1=5..6}] run tellraw @s {text:"〈 加 〉",color:"dark_green"}
 execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=2..,rng1=7..8}] run tellraw @s {text:"〈 减 〉",color:"dark_red"}
 execute if entity @s[tag=CasinoMultSuc,scores={Cas_Mtpl_C=2..,rng1=9}] run tellraw @s {text:"<< ×8 >>",color:"yellow"}
-execute if entity @s[tag=CasinoMultSuc,scores={rng=1..2,Cas_Mtpl_C=2..}] run scoreboard players operation @s Cas_Mtpl_B *= 2 constant
-execute if entity @s[tag=CasinoMultSuc,scores={rng=3..4,Cas_Mtpl_C=2..}] run scoreboard players operation @s Cas_Mtpl_B *= 4 constant
-execute if entity @s[tag=CasinoMultSuc,scores={rng=9,Cas_Mtpl_C=2..}] run scoreboard players operation @s Cas_Mtpl_B *= 8 constant
-execute if entity @s[tag=CasinoMultSuc,scores={rng=5..6,Cas_Mtpl_C=2..}] run playsound minecraft:item.armor.equip_gold neutral @a ~ ~ ~ 3
-execute if entity @s[tag=CasinoMultSuc,scores={rng=7..8,Cas_Mtpl_C=2..}] run playsound minecraft:item.armor.equip_netherite neutral @a ~ ~ ~ 3
-execute if entity @s[tag=CasinoMultSuc,scores={rng=5..6,Cas_Mtpl_C=2..}] run scoreboard players operation @s Perm_PersonFSB += @s Cas_Mtpl_B
-execute if entity @s[tag=CasinoMultSuc,scores={rng=7..8,Cas_Mtpl_C=2..}] run scoreboard players operation @s Perm_PersonFSB -= @s Cas_Mtpl_B
-execute if entity @s[tag=CasinoMultSuc,scores={rng=5..8,Cas_Mtpl_C=2..}] run scoreboard players set @s Cas_Mtpl_C 0
+execute if entity @s[tag=CasinoMultSuc,scores={rng1=1..2,Cas_Mtpl_C=2..}] run scoreboard players operation @s Cas_Mtpl_B *= 2 constant
+execute if entity @s[tag=CasinoMultSuc,scores={rng1=3..4,Cas_Mtpl_C=2..}] run scoreboard players operation @s Cas_Mtpl_B *= 4 constant
+execute if entity @s[tag=CasinoMultSuc,scores={rng1=9,Cas_Mtpl_C=2..}] run scoreboard players operation @s Cas_Mtpl_B *= 8 constant
+execute if entity @s[tag=CasinoMultSuc,scores={rng1=5..6,Cas_Mtpl_C=2..}] run playsound minecraft:item.armor.equip_gold neutral @a ~ ~ ~ 3
+execute if entity @s[tag=CasinoMultSuc,scores={rng1=7..8,Cas_Mtpl_C=2..}] run playsound minecraft:item.armor.equip_netherite neutral @a ~ ~ ~ 3
+execute if entity @s[tag=CasinoMultSuc,scores={rng1=5..6,Cas_Mtpl_C=2..}] run scoreboard players operation @s Perm_PersonFSB += @s Cas_Mtpl_B
+execute if entity @s[tag=CasinoMultSuc,scores={rng1=7..8,Cas_Mtpl_C=2..}] run scoreboard players operation @s Perm_PersonFSB -= @s Cas_Mtpl_B
+execute if entity @s[tag=CasinoMultSuc,scores={rng1=5..8,Cas_Mtpl_C=2..}] run scoreboard players set @s Cas_Mtpl_C 0
 
 execute if entity @s[tag=CasinoMultSuc] run scoreboard players add @s Cas_Mtpl_C 1
 
