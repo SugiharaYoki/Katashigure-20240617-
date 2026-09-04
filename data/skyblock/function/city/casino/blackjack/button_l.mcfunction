@@ -7,15 +7,15 @@ execute if block -67 62 -40 green_wool if entity @s[tag=CasBJG1,tag=!CasBJGGS] r
 execute if block -67 62 -40 black_wool run setblock -67 62 -40 green_wool
 
 execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_A,scores={CasBJGDraw=0..5,CasBJGTemp1=..21}] run scoreboard players add @s CasBJGDraw 1
-execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_A,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] run function skyblock:tool_rng
-execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_A,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng8 matches 1 run scoreboard players add @s CasBJGTemp1 1
-execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_A,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng8 matches 2 run scoreboard players add @s CasBJGTemp1 2
-execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_A,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng8 matches 3 run scoreboard players add @s CasBJGTemp1 3
-execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_A,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng8 matches 4 run scoreboard players add @s CasBJGTemp1 4
-execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_A,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng8 matches 5 run scoreboard players add @s CasBJGTemp1 5
-execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_A,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng8 matches 6 run scoreboard players add @s CasBJGTemp1 6
-execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_A,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng8 matches 7 run scoreboard players add @s CasBJGTemp1 7
-execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_A,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng8 matches 8 run scoreboard players add @s CasBJGTemp1 8
+execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_A,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] store result score @s rng1 run random value 1..8
+execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_A,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score @s rng1 matches 1 run scoreboard players add @s CasBJGTemp1 1
+execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_A,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score @s rng1 matches 2 run scoreboard players add @s CasBJGTemp1 2
+execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_A,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score @s rng1 matches 3 run scoreboard players add @s CasBJGTemp1 3
+execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_A,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score @s rng1 matches 4 run scoreboard players add @s CasBJGTemp1 4
+execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_A,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score @s rng1 matches 5 run scoreboard players add @s CasBJGTemp1 5
+execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_A,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score @s rng1 matches 6 run scoreboard players add @s CasBJGTemp1 6
+execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_A,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score @s rng1 matches 7 run scoreboard players add @s CasBJGTemp1 7
+execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_A,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score @s rng1 matches 8 run scoreboard players add @s CasBJGTemp1 8
 
 execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_A,scores={CasBJGDraw=1..5}] run tellraw @s [{text:"已抽牌 - 你的总牌点： ",color:"aqua"},{"score":{"name":"@s","objective":"CasBJGTemp1"}}]
 execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_A,scores={CasBJGDraw=1,CasBJGTemp1=..21}] run tellraw @s [{text:"剩余抽牌次数： ",color:"white"},{text:" 4",color:"dark_green"}]
@@ -46,15 +46,15 @@ execute if entity @a[tag=CasBJGGS,tag=Cas_BJ_A] if entity @a[tag=CasBJGGS,tag=Ca
 execute if entity @s[tag=CasBJGGS,tag=!Cas_BJ_OK,tag=Cas_BJ_B] run tellraw @s {text:"还没有轮到你的回合！",color:"red"}
 
 execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_OK,tag=Cas_BJ_B,scores={CasBJGDraw=0..5,CasBJGTemp1=..21}] run scoreboard players add @s CasBJGDraw 1
-execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_OK,tag=Cas_BJ_B,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] run function skyblock:tool_rng
-execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_OK,tag=Cas_BJ_B,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng8 matches 1 run scoreboard players add @s CasBJGTemp1 1
-execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_OK,tag=Cas_BJ_B,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng8 matches 2 run scoreboard players add @s CasBJGTemp1 2
-execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_OK,tag=Cas_BJ_B,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng8 matches 3 run scoreboard players add @s CasBJGTemp1 3
-execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_OK,tag=Cas_BJ_B,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng8 matches 4 run scoreboard players add @s CasBJGTemp1 4
-execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_OK,tag=Cas_BJ_B,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng8 matches 5 run scoreboard players add @s CasBJGTemp1 5
-execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_OK,tag=Cas_BJ_B,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng8 matches 6 run scoreboard players add @s CasBJGTemp1 6
-execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_OK,tag=Cas_BJ_B,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng8 matches 7 run scoreboard players add @s CasBJGTemp1 7
-execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_OK,tag=Cas_BJ_B,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng8 matches 8 run scoreboard players add @s CasBJGTemp1 8
+execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_OK,tag=Cas_BJ_B,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] store result score @s rng1 run random value 1..8
+execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_OK,tag=Cas_BJ_B,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score @s rng1 matches 1 run scoreboard players add @s CasBJGTemp1 1
+execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_OK,tag=Cas_BJ_B,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score @s rng1 matches 2 run scoreboard players add @s CasBJGTemp1 2
+execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_OK,tag=Cas_BJ_B,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score @s rng1 matches 3 run scoreboard players add @s CasBJGTemp1 3
+execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_OK,tag=Cas_BJ_B,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score @s rng1 matches 4 run scoreboard players add @s CasBJGTemp1 4
+execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_OK,tag=Cas_BJ_B,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score @s rng1 matches 5 run scoreboard players add @s CasBJGTemp1 5
+execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_OK,tag=Cas_BJ_B,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score @s rng1 matches 6 run scoreboard players add @s CasBJGTemp1 6
+execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_OK,tag=Cas_BJ_B,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score @s rng1 matches 7 run scoreboard players add @s CasBJGTemp1 7
+execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_OK,tag=Cas_BJ_B,scores={CasBJGDraw=1..5,CasBJGTemp1=..21}] if score @s rng1 matches 8 run scoreboard players add @s CasBJGTemp1 8
 
 execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_OK,tag=Cas_BJ_B,scores={CasBJGDraw=1..5}] run tellraw @s [{text:"已抽牌 - 你的总牌点： ",color:"aqua"},{"score":{"name":"@s","objective":"CasBJGTemp1"}}]
 execute if entity @s[tag=CasBJGGS,tag=Cas_BJ_OK,tag=Cas_BJ_B,scores={CasBJGDraw=1,CasBJGTemp1=..21}] run tellraw @s [{text:"剩余抽牌次数： ",color:"white"},{text:" 4",color:"dark_green"}]

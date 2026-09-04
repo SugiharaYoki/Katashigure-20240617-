@@ -62,7 +62,6 @@ scoreboard objectives add Fire dummy
 # scoreboard objectives add temp_timer9 dummy
 # scoreboard objectives add temp_timer10 dummy
 #Azr_arrowOrbTimer用于boss技能
-scoreboard objectives add Azr_arrowOrbTimer dummy
 scoreboard objectives add Azr_shopChapter dummy
 execute as @a unless entity @s[scores={AZR_chainKillUpg_pts=-999..}] run scoreboard players set @s AZR_chainKillUpg_pts 0
 execute as @a unless entity @s[scores={AZR_chainKillUpg_chargespeed=-999..}] run scoreboard players set @s AZR_chainKillUpg_chargespeed 0

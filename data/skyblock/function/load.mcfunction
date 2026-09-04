@@ -15,7 +15,7 @@ scoreboard objectives add 4ASCEND_wins dummy [{text:"『4ASCEND ",color:"#4467d3
 scoreboard objectives add MultiMenu trigger
 scoreboard objectives add City_DoubleJump dummy
 scoreboard objectives add skyblock_system dummy
-scoreboard objectives add Achive_Bell100 dummy
+#scoreboard objectives add Achive_Bell100 dummy
 scoreboard objectives add AnnouncementTime dummy
 scoreboard objectives add AnnouncementRo dummy
 scoreboard objectives add AnnouncementRoB dummy
@@ -77,14 +77,6 @@ scoreboard objectives add SocialRank dummy
 scoreboard objectives add StoryMode dummy
 #scoreboard objectives add SSgspT dummy
 scoreboard objectives remove SSgspT
-scoreboard objectives add Team1Rem dummy
-scoreboard objectives add Team2Rem dummy
-scoreboard objectives add Team3Rem dummy
-scoreboard objectives add Team4Rem dummy
-scoreboard objectives add Team5Rem dummy
-scoreboard objectives add Team6Rem dummy
-scoreboard objectives add Team7Rem dummy
-scoreboard objectives add Team8Rem dummy
 scoreboard objectives add Temp4 dummy
 scoreboard objectives add TimeRemainUnsee dummy
 scoreboard objectives add ZeroBGM dummy

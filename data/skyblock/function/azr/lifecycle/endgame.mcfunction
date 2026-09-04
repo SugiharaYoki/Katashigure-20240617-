@@ -1,4 +1,4 @@
-#scoreboard objectives remove Azr_arrowOrbTimer
+
 #______________________________________________________________#
 scoreboard players reset $AzrielEvent382315A Azr_system
 scoreboard players reset $AzrielEvent382315B Azr_system
@@ -145,6 +145,7 @@ scoreboard objectives remove AzrSariel_Amulet_RevivalStar_teleport
 scoreboard objectives remove AzrSariel_Food_HardenedCookie
 scoreboard objectives remove AzrSariel_Food_PowerSalmon
 
+scoreboard objectives remove azr_bonus_stage_index
 
 #unused
 #scoreboard objectives remove Azr_sarielStar

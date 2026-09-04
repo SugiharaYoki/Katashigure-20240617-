@@ -7,14 +7,13 @@ execute as @e[tag=arroworb,type=marker] at @s run function skyblock:azr/outgame/
 execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/outgame/boss1/arroworb2
 
 #health check
-    scoreboard objectives add Azr_mobHealth dummy
     execute if score @s AzrEntityTimer matches 81 as @a[distance=..100] at @s run playsound minecraft:lethaldose voice @s ~ ~ ~ 0.65
-    execute if score @s AzrEntityTimer matches 81.. as @n[tag=AzrielBossA_outgame] store result score @s Azr_mobHealth run data get entity @s Health
+    execute if score @s AzrEntityTimer matches 81.. as @n[tag=AzrielBossA_outgame] store result score @s Health run data get entity @s Health
     execute if score @s AzrEntityTimer matches 81 run bossbar add azr:boss_hp_bar_outgame "沙利叶神使 权之残影"
     execute if score @s AzrEntityTimer matches 81 run bossbar set azr:boss_hp_bar_outgame color purple
     execute if score @s AzrEntityTimer matches 81 run bossbar set azr:boss_hp_bar_outgame max 250
     execute if score @s AzrEntityTimer matches 81 run bossbar set azr:boss_hp_bar_outgame players @a
-    execute if score @s AzrEntityTimer matches 82.. store result bossbar azr:boss_hp_bar_outgame value run scoreboard players get @n[tag=AzrielBossA_outgame] Azr_mobHealth
+    execute if score @s AzrEntityTimer matches 82.. store result bossbar azr:boss_hp_bar_outgame value run scoreboard players get @n[tag=AzrielBossA_outgame] Health
     execute if score @s AzrEntityTimer matches 90 as @e[tag=AzrielBossA_outgame,limit=3] at @s run function skyblock:azr/outgame/boss1/tp1
 #AI
     #每刻有1/8的肯面向最近玩家
@@ -62,45 +61,45 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/outgame
     execute if score @s AzrEntityTimer matches 172 run scoreboard players set @s AzrEntityTimer 1000
    
 #跳秒
-    execute if score @s AzrEntityTimer matches 900..2800 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..75}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 900..2800 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..100}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 900..2800 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..150}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 900..2800 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..200}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 1001 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..75}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 1001 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..100}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 1001 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..150}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 1001 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..200}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 1251 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..75}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 1251 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..100}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 1251 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..150}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 1251 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..200}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 1501 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..75}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 1501 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..100}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 1501 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..150}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 1501 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..200}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 1501 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..200}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 1751 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..75}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 1751 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..100}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 1751 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..150}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 1751 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..200}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 2001 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..75}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 2001 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..100}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 2001 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..150}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 2001 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..200}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 2251 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..75}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 2251 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..100}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 2251 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..150}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 2251 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..200}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 2501 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..75}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 2501 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..100}] run scoreboard players add @s AzrEntityTimer 1
-    execute if score @s AzrEntityTimer matches 2501 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..150}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 900..2800 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA_outgame,scores={Health=..75}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 900..2800 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA_outgame,scores={Health=..100}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 900..2800 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA_outgame,scores={Health=..150}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 900..2800 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA_outgame,scores={Health=..200}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 1001 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA_outgame,scores={Health=..75}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 1001 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA_outgame,scores={Health=..100}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 1001 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA_outgame,scores={Health=..150}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 1001 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA_outgame,scores={Health=..200}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 1251 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA_outgame,scores={Health=..75}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 1251 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA_outgame,scores={Health=..100}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 1251 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA_outgame,scores={Health=..150}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 1251 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA_outgame,scores={Health=..200}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 1501 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA_outgame,scores={Health=..75}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 1501 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA_outgame,scores={Health=..100}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 1501 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA_outgame,scores={Health=..150}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 1501 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA_outgame,scores={Health=..200}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 1501 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA_outgame,scores={Health=..200}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 1751 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA_outgame,scores={Health=..75}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 1751 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA_outgame,scores={Health=..100}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 1751 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA_outgame,scores={Health=..150}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 1751 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA_outgame,scores={Health=..200}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 2001 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA_outgame,scores={Health=..75}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 2001 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA_outgame,scores={Health=..100}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 2001 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA_outgame,scores={Health=..150}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 2001 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA_outgame,scores={Health=..200}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 2251 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA_outgame,scores={Health=..75}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 2251 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA_outgame,scores={Health=..100}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 2251 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA_outgame,scores={Health=..150}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 2251 if score playerCount Azr_system matches 7.. if entity @e[tag=AzrielBossA_outgame,scores={Health=..200}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 2501 if score playerCount Azr_system matches 1..2 if entity @e[tag=AzrielBossA_outgame,scores={Health=..75}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 2501 if score playerCount Azr_system matches 3..4 if entity @e[tag=AzrielBossA_outgame,scores={Health=..100}] run scoreboard players add @s AzrEntityTimer 1
+    execute if score @s AzrEntityTimer matches 2501 if score playerCount Azr_system matches 5..6 if entity @e[tag=AzrielBossA_outgame,scores={Health=..150}] run scoreboard players add @s AzrEntityTimer 1
 
     execute as @e[tag=AzrielBossA_outgame,type=illusioner,limit=3] at @s run function skyblock:azr/outgame/boss1/flat7
     execute as @e[tag=AzrielBossA_outgame,type=illusioner,limit=3] at @s run function skyblock:azr/outgame/boss1/flat8
     # Wave II 900..1880 循环直到死亡
-    execute if score @s AzrEntityTimer matches 900..2800 if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 4..5 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..30}] if entity @a[gamemode=!creative,gamemode=!spectator,distance=0..2.5] run function skyblock:azr/outgame/boss1/tp1
-    execute if score @s AzrEntityTimer matches 900..2800 if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 6..7 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..50}] if score zanei_flat_01_marker rng1 matches 22.. run scoreboard players set zanei_flat_01_marker rng1 0
-    execute if score @s AzrEntityTimer matches 900..2800 if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 8..9 if entity @e[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..50}] if score zanei_flat_01_marker rng2 matches 22.. run scoreboard players set zanei_flat_02_marker rng1 0
+    execute if score @s AzrEntityTimer matches 900..2800 if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 4..5 if entity @e[tag=AzrielBossA_outgame,scores={Health=..30}] if entity @a[gamemode=!creative,gamemode=!spectator,distance=0..2.5] run function skyblock:azr/outgame/boss1/tp1
+    execute if score @s AzrEntityTimer matches 900..2800 if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 6..7 if entity @e[tag=AzrielBossA_outgame,scores={Health=..50}] if score zanei_flat_01_marker rng1 matches 22.. run scoreboard players set zanei_flat_01_marker rng1 0
+    execute if score @s AzrEntityTimer matches 900..2800 if score #rng19 Azr_system matches 1..11 if score #rng20 Azr_system matches 8..9 if entity @e[tag=AzrielBossA_outgame,scores={Health=..50}] if score zanei_flat_01_marker rng2 matches 22.. run scoreboard players set zanei_flat_02_marker rng1 0
     execute if score @s AzrEntityTimer matches 1020..1100 if score #rng15 Azr_system matches 1 as @e[tag=AzrielBossA_outgame,limit=3] at @s if score zanei_flat_01_marker rng1 matches 22.. run scoreboard players set zanei_flat_01_marker rng1 0
     execute if score @s AzrEntityTimer matches 1020..1100 if score #rng15 Azr_system matches 2 as @e[tag=AzrielBossA_outgame,limit=3] at @s if score zanei_flat_01_marker rng2 matches 22.. run scoreboard players set zanei_flat_02_marker rng1 0
     execute if score @s AzrEntityTimer matches 1030..1130 if score #rng14 Azr_system matches 1 as @e[tag=AzrielBossA_outgame,limit=3] at @s if entity @a[gamemode=!creative,gamemode=!spectator,distance=0..4.5] run function skyblock:azr/outgame/boss1/move1
@@ -189,5 +188,5 @@ execute as @e[tag=arroworb2,type=marker] at @s run function skyblock:azr/outgame
     execute if score @s AzrEntityTimer matches 1849 positioned ~ ~ ~ run function skyblock:azr/assets/mobs/skeleton_t1
     execute if score @s AzrEntityTimer matches 1849 positioned ~ ~ ~ run function skyblock:azr/assets/mobs/skeleton_t1
     execute if score @s AzrEntityTimer matches 1850 if score #rng3 Azr_system matches 2 as @e[tag=AzrielBossA_outgame,limit=3] at @s run function skyblock:azr/outgame/boss1/largeflat1
-    execute if score @s AzrEntityTimer matches 1850..1880 as @n[tag=AzrielBossA_outgame,scores={Azr_mobHealth=..75}] run scoreboard players set @s AzrEntityTimer 1000
-    execute if score @s AzrEntityTimer matches 1850..1880 as @n[tag=AzrielBossA_outgame,scores={Azr_mobHealth=76..}] run scoreboard players set @s AzrEntityTimer 940
+    execute if score @s AzrEntityTimer matches 1850..1880 as @n[tag=AzrielBossA_outgame,scores={Health=..75}] run scoreboard players set @s AzrEntityTimer 1000
+    execute if score @s AzrEntityTimer matches 1850..1880 as @n[tag=AzrielBossA_outgame,scores={Health=76..}] run scoreboard players set @s AzrEntityTimer 940

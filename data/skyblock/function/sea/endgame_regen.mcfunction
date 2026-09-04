@@ -185,6 +185,28 @@ execute as @a at @s run scoreboard players operation @s sea_speedrun_ch5_score -
 execute as @a at @s run scoreboard players operation @s sea_speedrun_ch6_score -= @s sea_speedrun_ch6
 execute as @a at @s run scoreboard players operation @s sea_speedrun_ch7_score -= @s sea_speedrun_ch7
 
+
+scoreboard objectives remove sea_speedrun_ch1
+scoreboard objectives remove sea_speedrun_ch2
+scoreboard objectives remove sea_speedrun_ch3
+scoreboard objectives remove sea_speedrun_ch4
+scoreboard objectives remove sea_speedrun_ch5
+scoreboard objectives remove sea_speedrun_ch6
+scoreboard objectives remove sea_speedrun_ch7
+scoreboard objectives remove sea_4temp1
+scoreboard objectives remove sea_4temp2
+scoreboard objectives remove sea_4temp3
+scoreboard objectives remove sea_4temp4
+scoreboard objectives remove sea_4temp5
+scoreboard objectives remove sea_4temp6
+scoreboard objectives remove sea_4temp7
+scoreboard objectives remove sea_4temp8
+scoreboard objectives remove sea_4temp9
+scoreboard objectives remove sea_4temp10
+
+scoreboard objectives remove sea_cursor
+scoreboard objectives remove sea_cursor2
+
 scoreboard objectives remove sea_t_sprint_length
 scoreboard objectives remove sea_t_sprint_armor
 scoreboard objectives remove sea_t_sprint_charge

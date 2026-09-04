@@ -1,27 +1,16 @@
 scoreboard players add sc Temp5_Loop 1
 execute if score sc Temp5_Loop matches 10..20 run scoreboard objectives setdisplay sidebar Temp5
-execute if score sc Temp5_Loop matches 10..20 run scoreboard objectives setdisplay sidebar Temp5
-execute if score sc Temp5_Loop matches 10..20 run scoreboard objectives setdisplay sidebar Temp5
-execute if score sc Temp5_Loop matches 10..20 run scoreboard objectives setdisplay sidebar Temp5
-execute if score sc Temp5_Loop matches 10..20 run scoreboard objectives setdisplay sidebar Temp5
 scoreboard players add sc Temp5_LoopF 1
 execute if score sc Temp5_Loop matches 20 run scoreboard players set sc Temp5_Loop 0
-scoreboard players operation <A组>剩余人数 Temp5 = sc Team1Rem
-scoreboard players operation <B组>剩余人数 Temp5 = sc Team2Rem
-scoreboard players operation <C组>剩余人数 Temp5 = sc Team3Rem
-scoreboard players operation <D组>剩余人数 Temp5 = sc Team4Rem
-scoreboard players operation <E组>剩余人数 Temp5 = sc Team5Rem
-scoreboard players operation <F组>剩余人数 Temp5 = sc Team6Rem
-scoreboard players operation <G组>剩余人数 Temp5 = sc Team7Rem
-scoreboard players operation <H组>剩余人数 Temp5 = sc Team8Rem
-execute store result score sc Team1Rem if entity @a[team=Team1_1,gamemode=!spectator]
-execute store result score sc Team2Rem if entity @a[team=Team1_2,gamemode=!spectator]
-execute store result score sc Team3Rem if entity @a[team=Team1_3,gamemode=!spectator]
-execute store result score sc Team4Rem if entity @a[team=Team1_4,gamemode=!spectator]
-execute store result score sc Team5Rem if entity @a[team=Team1_5,gamemode=!spectator]
-execute store result score sc Team6Rem if entity @a[team=Team1_6,gamemode=!spectator]
-execute store result score sc Team7Rem if entity @a[team=Team1_7,gamemode=!spectator]
-execute store result score sc Team8Rem if entity @a[team=Team1_8,gamemode=!spectator]
+
+execute store result score <A组>剩余人数 Temp5 if entity @a[team=Team1_1,gamemode=!spectator]
+execute store result score <B组>剩余人数 Temp5 if entity @a[team=Team1_2,gamemode=!spectator]
+execute store result score <C组>剩余人数 Temp5 if entity @a[team=Team1_3,gamemode=!spectator]
+execute store result score <D组>剩余人数 Temp5 if entity @a[team=Team1_4,gamemode=!spectator]
+execute store result score <E组>剩余人数 Temp5 if entity @a[team=Team1_5,gamemode=!spectator]
+execute store result score <F组>剩余人数 Temp5 if entity @a[team=Team1_6,gamemode=!spectator]
+execute store result score <G组>剩余人数 Temp5 if entity @a[team=Team1_7,gamemode=!spectator]
+execute store result score <H组>剩余人数 Temp5 if entity @a[team=Team1_8,gamemode=!spectator]
 scoreboard players set 「服务器情报」 Temp5 -97
 scoreboard players set 「队伍信息」 Temp5 99
 scoreboard players set 『匿名·方时雨城』Katashigure Temp5 -98
