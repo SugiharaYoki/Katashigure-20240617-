@@ -28,8 +28,8 @@ execute positioned -79177 49 -16 as @n[tag=AzrielBossCenturion,type=piglin_brute
     execute as @n[tag=AzrielBossCenturion] at @s if score @s[scores={rng2=4..6}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_rush/boss_centurion/attack_sweep
     execute as @n[tag=AzrielBossCenturion] at @s if score @s[scores={rng2=1}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_rush/boss_centurion/attack_round
 
-    execute as @n[tag=AzrielBossCenturion] at @s if score @s rng8 matches 40..9999 run scoreboard players set @s rng2 0
-    execute as @n[tag=AzrielBossCenturion] at @s if score @s rng8 matches 40..9999 run scoreboard players set @s rng8 -1
+    execute as @n[tag=AzrielBossCenturion] at @s if score @s rng8 matches 200..9999 run scoreboard players set @s rng2 0
+    execute as @n[tag=AzrielBossCenturion] at @s if score @s rng8 matches 200..9999 run scoreboard players set @s rng8 -1
 
 
 
