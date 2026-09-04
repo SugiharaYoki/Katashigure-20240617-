@@ -1,6 +1,6 @@
 
 
-execute positioned -79770 31 -277 as @n[tag=AzrielBossCenturion,type=piglin_brute,distance=..100] store result score @s Health run data get entity @s Health
+execute positioned -79177 49 -16 as @n[tag=AzrielBossCenturion,type=piglin_brute,distance=..100] store result score @s Health run data get entity @s Health
 
 
    
