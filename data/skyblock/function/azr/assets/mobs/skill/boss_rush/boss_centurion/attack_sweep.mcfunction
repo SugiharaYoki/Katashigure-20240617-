@@ -34,5 +34,5 @@ execute if score @s rng8 matches 5 at @s rotated ~ 0 positioned ^-1.3 ^0.2 ^15.6
 execute if score @s rng8 matches 5 at @s rotated ~ 0 positioned ^-2.6 ^0.2 ^15.3 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
 execute if score @s rng8 matches 5 at @s rotated ~ 0 positioned ^-3.9 ^0.2 ^15.0 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]} 
 
-execute if score @s rng8 matches 10.. run scoreboard players set @s rng2 0
-execute if score @s rng8 matches 10.. run scoreboard players set @s rng8 -10
+execute if score @s rng8 matches 50.. run scoreboard players set @s rng2 0
+execute if score @s rng8 matches 50.. run scoreboard players set @s rng8 -10
