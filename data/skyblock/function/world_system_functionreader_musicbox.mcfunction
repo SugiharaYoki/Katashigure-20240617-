@@ -49,6 +49,7 @@ execute as @a[tag=!gaming,scores={MultiMenu=101795,sea_progress=18..}] at @s run
 execute as @a[tag=!gaming,scores={MultiMenu=101796}] at @s run playsound minecraft:garden1.sagashimono_opening music @s ~ ~ ~ 1.01
 execute as @a[tag=!gaming,scores={MultiMenu=101797}] at @s run playsound minecraft:garden1.sagashimono music @s ~ ~ ~ 1.01
 execute as @a[tag=!gaming,scores={MultiMenu=101798}] at @s run playsound minecraft:renegade music @s ~ ~ ~ 1.01
+execute as @a[tag=!gaming,scores={MultiMenu=101799}] at @s run playsound minecraft:garden1.combathigh music @s ~ ~ ~ 1.01
 
 execute as @a[tag=!gaming,scores={MultiMenu=101806}] at @s run playsound minecraft:bookstore music @s ~ ~ ~ 1.01
 execute as @a[tag=!gaming,scores={MultiMenu=101805}] at @s run playsound minecraft:autumnmemories music @s ~ ~ ~ 1.01

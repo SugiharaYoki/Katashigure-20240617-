@@ -16,11 +16,6 @@ execute if entity @s[scores={MultiMenu=55}] run scoreboard players set @s Hajime
 execute if entity @s[scores={MultiMenu=56}] run tellraw @s [{text:"成功设置BGM！如今的主城音乐： ",color:"white"},{text:"Cat",color:"aqua"}]
 execute if entity @s[scores={MultiMenu=56}] run scoreboard players set @s HajimetaBGM 5
 
-execute if entity @s[scores={MultiMenu=59}] run tellraw @s [{text:"成功设置BGM！如今的主城音乐： ",color:"white"},{text:"Mall (Midnight City)",color:"light_purple"}]
-execute if entity @s[scores={MultiMenu=59}] run scoreboard players set @s HajimetaBGM 6
-
-execute if entity @s[scores={MultiMenu=60}] run tellraw @s [{text:"成功设置BGM！如今的主城音乐： ",color:"white"},{text:"Stal (Fox Joke)",color:"light_purple"}]
-execute if entity @s[scores={MultiMenu=60}] run scoreboard players set @s HajimetaBGM 7
 
 execute if entity @s[scores={MultiMenu=106}] run tellraw @s [{text:"成功设置BGM！如今的主城音乐： ",color:"white"},{text:"寂静之城系列",color:"light_purple"}]
 execute if entity @s[scores={MultiMenu=106}] run scoreboard players set @s HajimetaBGM 10

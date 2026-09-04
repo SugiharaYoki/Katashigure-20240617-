@@ -73,7 +73,6 @@ scoreboard objectives add sea_t_sprint_length dummy
 scoreboard objectives add sea_t_sprint_armor dummy
 scoreboard objectives add sea_t_sprint_charge dummy
 scoreboard objectives add sea_chapter dummy
-scoreboard objectives add sea_boss1_hp dummy
 scoreboard objectives add sea_cursor dummy
 scoreboard objectives add sea_cursor2 dummy
 scoreboard objectives add sea_do_attack minecraft.custom:minecraft.damage_dealt

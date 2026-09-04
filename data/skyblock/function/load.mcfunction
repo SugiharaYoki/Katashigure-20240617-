@@ -37,9 +37,6 @@ scoreboard objectives add dailydiv_n2 dummy
 scoreboard objectives add dailydivc2 dummy
 scoreboard objectives add dailylogin dummy
 scoreboard objectives add dailylogin_c dummy
-scoreboard objectives add FallenSquareJN dummy
-scoreboard objectives add FallenSquareMapM dummy
-scoreboard objectives add FallenSquareMap dummy
 scoreboard objectives add HajimetaBGM dummy
 scoreboard objectives add HajimetaBGM2 dummy
 scoreboard objectives add HP dummy

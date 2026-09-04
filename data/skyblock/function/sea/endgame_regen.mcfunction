@@ -204,6 +204,7 @@ scoreboard objectives remove sea_4temp8
 scoreboard objectives remove sea_4temp9
 scoreboard objectives remove sea_4temp10
 
+scoreboard objectives remove sea_crafter
 scoreboard objectives remove sea_cursor
 scoreboard objectives remove sea_cursor2
 

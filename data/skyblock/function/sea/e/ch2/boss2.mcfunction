@@ -39,22 +39,22 @@ execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2222 as @s at @s
 
 
 execute store result score @s rng2 run random value 1..60
-execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={rng2=3,sea_boss1_hp=36..},tag=SEAboss2bow] run item replace entity @s weapon.offhand with tipped_arrow[potion_contents={custom_effects:[{id:darkness,duration:20,amplifier:2}]}]
-execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={rng2=1,sea_boss1_hp=36..},tag=SEAboss2bow] run item replace entity @s weapon.offhand with tipped_arrow[potion_contents={custom_effects:[{id:slowness,duration:60,amplifier:2}]}]
-execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={rng2=2,sea_boss1_hp=36..},tag=SEAboss2bow] run item replace entity @s weapon.offhand with tipped_arrow[potion_contents={custom_effects:[{id:weakness,duration:60,amplifier:1}]}]
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={rng2=3,Health=36..},tag=SEAboss2bow] run item replace entity @s weapon.offhand with tipped_arrow[potion_contents={custom_effects:[{id:darkness,duration:20,amplifier:2}]}]
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={rng2=1,Health=36..},tag=SEAboss2bow] run item replace entity @s weapon.offhand with tipped_arrow[potion_contents={custom_effects:[{id:slowness,duration:60,amplifier:2}]}]
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={rng2=2,Health=36..},tag=SEAboss2bow] run item replace entity @s weapon.offhand with tipped_arrow[potion_contents={custom_effects:[{id:weakness,duration:60,amplifier:1}]}]
 #execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[tag=SEAboss2melee] run item replace entity @s weapon.offhand with air
-execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={sea_boss1_hp=36..},tag=SEAboss2bow] at @s if entity @a[tag=SEAPT,distance=0..2.3] run item replace entity @s weapon.mainhand with wooden_shovel
-execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={sea_boss1_hp=36..},tag=SEAboss2bow] at @s if entity @a[tag=SEAPT,distance=0..2.3] run tag @s add SEAboss2melee
-execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={sea_boss1_hp=36..},tag=SEAboss2bow] at @s if entity @a[tag=SEAPT,distance=0..2.3] run tag @s remove SEAboss2bow
-execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={sea_boss1_hp=36..},tag=SEAboss2bow] at @s if entity @a[tag=SEAPT,distance=4..] run item replace entity @s weapon.mainhand with wooden_shovel
-execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={sea_boss1_hp=36..},tag=SEAboss2bow] at @s if entity @a[tag=SEAPT,distance=4..] run tag @s add SEAboss2melee
-execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={sea_boss1_hp=36..},tag=SEAboss2bow] at @s if entity @a[tag=SEAPT,distance=4..] run tag @s remove SEAboss2bow
-execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={sea_boss1_hp=36..},tag=SEAboss2melee] at @s unless entity @a[tag=SEAPT,distance=0..2.3] unless entity @a[tag=SEAPT,distance=4..] run item replace entity @s weapon.mainhand with bow
-execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={sea_boss1_hp=36..},tag=SEAboss2melee] at @s unless entity @a[tag=SEAPT,distance=0..2.3] unless entity @a[tag=SEAPT,distance=4..] run tag @s add SEAboss2bow
-execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={sea_boss1_hp=36..},tag=SEAboss2melee] at @s unless entity @a[tag=SEAPT,distance=0..2.3] unless entity @a[tag=SEAPT,distance=4..] run tag @s remove SEAboss2melee
-execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={sea_boss1_hp=..35},tag=SEAboss2bow] at @s run item replace entity @s weapon.mainhand with wooden_shovel
-execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={sea_boss1_hp=..35},tag=SEAboss2bow] at @s run tag @s add SEAboss2melee
-execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={sea_boss1_hp=..35},tag=SEAboss2bow] at @s run tag @s remove SEAboss2bow
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={Health=36..},tag=SEAboss2bow] at @s if entity @a[tag=SEAPT,distance=0..2.3] run item replace entity @s weapon.mainhand with wooden_shovel
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={Health=36..},tag=SEAboss2bow] at @s if entity @a[tag=SEAPT,distance=0..2.3] run tag @s add SEAboss2melee
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={Health=36..},tag=SEAboss2bow] at @s if entity @a[tag=SEAPT,distance=0..2.3] run tag @s remove SEAboss2bow
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={Health=36..},tag=SEAboss2bow] at @s if entity @a[tag=SEAPT,distance=4..] run item replace entity @s weapon.mainhand with wooden_shovel
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={Health=36..},tag=SEAboss2bow] at @s if entity @a[tag=SEAPT,distance=4..] run tag @s add SEAboss2melee
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={Health=36..},tag=SEAboss2bow] at @s if entity @a[tag=SEAPT,distance=4..] run tag @s remove SEAboss2bow
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={Health=36..},tag=SEAboss2melee] at @s unless entity @a[tag=SEAPT,distance=0..2.3] unless entity @a[tag=SEAPT,distance=4..] run item replace entity @s weapon.mainhand with bow
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={Health=36..},tag=SEAboss2melee] at @s unless entity @a[tag=SEAPT,distance=0..2.3] unless entity @a[tag=SEAPT,distance=4..] run tag @s add SEAboss2bow
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={Health=36..},tag=SEAboss2melee] at @s unless entity @a[tag=SEAPT,distance=0..2.3] unless entity @a[tag=SEAPT,distance=4..] run tag @s remove SEAboss2melee
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={Health=..35},tag=SEAboss2bow] at @s run item replace entity @s weapon.mainhand with wooden_shovel
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={Health=..35},tag=SEAboss2bow] at @s run tag @s add SEAboss2melee
+execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2113..3999 as @s[scores={Health=..35},tag=SEAboss2bow] at @s run tag @s remove SEAboss2bow
 
 execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2124.. if entity @n[tag=SEAboss2] run scoreboard players add SEAmusic rng1 1
 execute if score SEAmusic rng1 matches 596 as @a[tag=SEAPT] at @s as @a[tag=SEAPT] at @s run playsound minecraft:app2.manifoldhypothesis music @s ~ ~ ~ 1 1.0
@@ -115,24 +115,24 @@ execute as @s at @s if block ~ ~ ~ cobweb run setblock ~ ~ ~ air destroy
 #execute as @s[tag=!boss2hplock3] at @s positioned ~9.5 ~ ~ as @a[tag=SEAPT,distance=0..9.3] at @s run effect give @s instant_damage 2 0 false
 #execute as @s[tag=!boss2hplock3] at @s positioned ~11.5 ~ ~ as @a[tag=SEAPT,distance=0..11.3] at @s run effect give @s instant_damage 2 2 false
 
-execute store result score @s sea_boss1_hp run data get entity @s Health
-execute as @s[scores={sea_boss1_hp=..350},tag=!boss2hplock1] run effect give @s resistance 3 9 false
-execute as @s[scores={sea_boss1_hp=..250},tag=!boss2hplock2] run effect give @s resistance 3 9 false
-execute as @s[scores={sea_boss1_hp=..100},tag=!boss2hplock3] run effect give @s resistance 3 9 false
-execute as @s[scores={sea_boss1_hp=..350},tag=!boss2hplock1] run particle sculk_soul ~ ~1 ~ 0.3 1 0.3 0 5
-execute as @s[scores={sea_boss1_hp=..250},tag=!boss2hplock2] run particle sculk_soul ~ ~1 ~ 0.3 1 0.3 0 5
-execute as @s[scores={sea_boss1_hp=..100},tag=!boss2hplock3] run particle sculk_soul ~ ~1 ~ 0.3 1 0.3 0 5
+execute store result score @s Health run data get entity @s Health
+execute as @s[scores={Health=..350},tag=!boss2hplock1] run effect give @s resistance 3 9 false
+execute as @s[scores={Health=..250},tag=!boss2hplock2] run effect give @s resistance 3 9 false
+execute as @s[scores={Health=..100},tag=!boss2hplock3] run effect give @s resistance 3 9 false
+execute as @s[scores={Health=..350},tag=!boss2hplock1] run particle sculk_soul ~ ~1 ~ 0.3 1 0.3 0 5
+execute as @s[scores={Health=..250},tag=!boss2hplock2] run particle sculk_soul ~ ~1 ~ 0.3 1 0.3 0 5
+execute as @s[scores={Health=..100},tag=!boss2hplock3] run particle sculk_soul ~ ~1 ~ 0.3 1 0.3 0 5
 
 
-execute as @s[scores={sea_boss1_hp=..350},tag=!boss2hplock1,tag=!boss2hplock1warn] run tellraw @a[tag=SEAPT] {text:"这家伙怎么变得刀枪不入……试着往太阳落下的方向后退看看！",color:"red"}
-execute as @s[scores={sea_boss1_hp=..250},tag=!boss2hplock2,tag=!boss2hplock2warn] run tellraw @a[tag=SEAPT] {text:"又打不动这家伙了，得赶紧后退！",color:"red"}
-execute as @s[scores={sea_boss1_hp=..100},tag=!boss2hplock3,tag=!boss2hplock3warn] run tellraw @a[tag=SEAPT] {text:"再次后退吧，感觉它应该快不行了！",color:"red"}
-execute as @s[scores={sea_boss1_hp=..350},tag=!boss2hplock1,tag=!boss2hplock1warn] run data modify entity @s Invulnerable set value 1b
-execute as @s[scores={sea_boss1_hp=..250},tag=!boss2hplock2,tag=!boss2hplock2warn] run data modify entity @s Invulnerable set value 1b
-execute as @s[scores={sea_boss1_hp=..100},tag=!boss2hplock3,tag=!boss2hplock3warn] run data modify entity @s Invulnerable set value 1b
-execute as @s[scores={sea_boss1_hp=..350},tag=!boss2hplock1,tag=!boss2hplock1warn] run tag @s add boss2hplock1warn
-execute as @s[scores={sea_boss1_hp=..250},tag=!boss2hplock2,tag=!boss2hplock2warn] run tag @s add boss2hplock2warn
-execute as @s[scores={sea_boss1_hp=..100},tag=!boss2hplock3,tag=!boss2hplock3warn] run tag @s add boss2hplock3warn
+execute as @s[scores={Health=..350},tag=!boss2hplock1,tag=!boss2hplock1warn] run tellraw @a[tag=SEAPT] {text:"这家伙怎么变得刀枪不入……试着往太阳落下的方向后退看看！",color:"red"}
+execute as @s[scores={Health=..250},tag=!boss2hplock2,tag=!boss2hplock2warn] run tellraw @a[tag=SEAPT] {text:"又打不动这家伙了，得赶紧后退！",color:"red"}
+execute as @s[scores={Health=..100},tag=!boss2hplock3,tag=!boss2hplock3warn] run tellraw @a[tag=SEAPT] {text:"再次后退吧，感觉它应该快不行了！",color:"red"}
+execute as @s[scores={Health=..350},tag=!boss2hplock1,tag=!boss2hplock1warn] run data modify entity @s Invulnerable set value 1b
+execute as @s[scores={Health=..250},tag=!boss2hplock2,tag=!boss2hplock2warn] run data modify entity @s Invulnerable set value 1b
+execute as @s[scores={Health=..100},tag=!boss2hplock3,tag=!boss2hplock3warn] run data modify entity @s Invulnerable set value 1b
+execute as @s[scores={Health=..350},tag=!boss2hplock1,tag=!boss2hplock1warn] run tag @s add boss2hplock1warn
+execute as @s[scores={Health=..250},tag=!boss2hplock2,tag=!boss2hplock2warn] run tag @s add boss2hplock2warn
+execute as @s[scores={Health=..100},tag=!boss2hplock3,tag=!boss2hplock3warn] run tag @s add boss2hplock3warn
 
 execute as @s[tag=boss2hplock1,tag=!boss2hplock1warn2] run tellraw @a[tag=SEAPT] {text:"好像它身上的防御结界消失了！",color:"green"}
 execute as @s[tag=boss2hplock2,tag=!boss2hplock2warn2] run tellraw @a[tag=SEAPT] {text:"防御结界再次消失了，应战吧！",color:"green"}
@@ -144,8 +144,8 @@ execute as @s[tag=boss2hplock1,tag=!boss2hplock1warn2] run tag @s add boss2hploc
 execute as @s[tag=boss2hplock2,tag=!boss2hplock2warn2] run tag @s add boss2hplock2warn2
 execute as @s[tag=boss2hplock3,tag=!boss2hplock3warn2] run tag @s add boss2hplock3warn2
 
-execute as @s[scores={sea_boss1_hp=101..250}] run effect give @s speed 3 0 true
-execute as @s[scores={sea_boss1_hp=30..100}] run effect give @s speed 3 2 true
+execute as @s[scores={Health=101..250}] run effect give @s speed 3 0 true
+execute as @s[scores={Health=30..100}] run effect give @s speed 3 2 true
 
 execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2220.. as @s[tag=!boss2hplock3] at @s unless entity @a[tag=SEAPT,distance=0..7.8] at @p[tag=SEAPT] if block ~2 ~ ~ air run tp @s ~2 ~ ~
 execute if score sea_ch2_event_enteringlevel sea_4temp1 matches 2220.. as @s[tag=!boss2hplock3] at @s unless entity @a[tag=SEAPT,distance=0..7.8] at @p[tag=SEAPT] unless block ~2 ~ ~ air if block ~2 ~ ~1 air run tp @s ~2 ~ ~1
