@@ -13,6 +13,7 @@ execute positioned -162 59 -113 run kill @n[distance=..0.5,tag=skywar_mapchoice_
 execute positioned -168 59 -113 run kill @n[distance=..0.5,tag=skywar_mapchoice_text]
 execute positioned -174 59 -113 run kill @n[distance=..0.5,tag=skywar_mapchoice_text]
 execute positioned -180 59 -113 run kill @n[distance=..0.5,tag=skywar_mapchoice_text]
+execute positioned -186 59 -113 run kill @n[distance=..0.5,tag=skywar_mapchoice_text]
 
 
 summon minecraft:text_display -144 59 -103 {Tags:["skywar_mapchoice_text"],billboard:"fixed",see_through:0b,background:0,shadow:1b,alignment:"center",text:[{text:"『腐败的祭坛』",color:"white",bold:true},{text:"\n标准 4 队",color:"#90EE90",bold:false},{text:"\n小型地图",color:"#90EE90",bold:false}],Rotation:[180f,0f]}
