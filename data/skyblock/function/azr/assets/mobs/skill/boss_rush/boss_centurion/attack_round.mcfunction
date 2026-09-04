@@ -1,6 +1,6 @@
 
 execute if score @s rng8 matches 1 run playsound minecraft:entity.piglin.converted_to_zombified hostile @a ~ ~ ~ 5 0.8
-execute if score @s rng8 matches 1 run effect give @s slowness 9 99 true
+execute if score @s rng8 matches 1 run effect give @s slowness 5 99 true
 execute if score @s rng8 matches 3 rotated ~0 0 positioned ^ ^ ^2 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]}
 execute if score @s rng8 matches 3 rotated ~60 0 positioned ^ ^ ^2 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]}
 execute if score @s rng8 matches 3 rotated ~120 0 positioned ^ ^ ^2 run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_axe","AzrielMob_mob_marker"]}
