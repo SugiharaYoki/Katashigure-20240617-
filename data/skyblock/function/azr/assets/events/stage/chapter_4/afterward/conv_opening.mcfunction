@@ -42,6 +42,8 @@ execute if score @s rng1 matches 145 run tellraw @a[tag=azrShowDialog] [{text:"é
 execute if score @s rng1 matches 190..500 run scoreboard players set @s rng1 490
 execute if score @s rng1 matches ..500 if entity @a[tag=azrPlayer,x=-79782,y=19,z=-205,dx=10,dy=8,dz=10] run scoreboard players set @s rng1 501
 
+execute if score @s rng1 matches 502 run scoreboard players set stage Azr_system 70
+
 execute if score @s rng1 matches 502 run particle minecraft:explosion_emitter -79775.49 21.58 -195.00 3 3 3 0 2
 execute if score @s rng1 matches 503 run particle minecraft:explosion_emitter -79775.70 21.92 -203.00 3 3 3 0 2
 execute if score @s rng1 matches 502 run playsound entity.generic.explode block @a -79775.49 21.58 -195.00 5 0.89
