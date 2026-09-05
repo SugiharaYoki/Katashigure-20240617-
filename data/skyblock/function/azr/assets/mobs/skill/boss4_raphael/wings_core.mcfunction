@@ -1,14 +1,13 @@
-execute at @s rotated ~ 0 run tp @n[type=minecraft:block_display,tag=raphael_wings_l1] ^-0.34 ^1.78 ^-0.42 ~156 -42
-execute at @s rotated ~ 0 run tp @n[type=minecraft:block_display,tag=raphael_wings_l2] ^-0.31 ^1.58 ^-0.35 ~142 -24
-execute at @s rotated ~ 0 run tp @n[type=minecraft:block_display,tag=raphael_wings_l3] ^-0.27 ^1.38 ^-0.28 ~126 -6
-execute at @s rotated ~ 0 run tp @n[type=minecraft:block_display,tag=raphael_wings_l4] ^-0.22 ^1.20 ^-0.22 ~110 12
-execute at @s rotated ~ 0 run tp @n[type=minecraft:block_display,tag=raphael_wings_l5] ^-0.16 ^1.06 ^-0.16 ~96 28
-
-execute at @s rotated ~ 0 run tp @n[type=minecraft:block_display,tag=raphael_wings_r1] ^0.34 ^1.78 ^-0.42 ~-156 -42
-execute at @s rotated ~ 0 run tp @n[type=minecraft:block_display,tag=raphael_wings_r2] ^0.31 ^1.58 ^-0.35 ~-142 -24
-execute at @s rotated ~ 0 run tp @n[type=minecraft:block_display,tag=raphael_wings_r3] ^0.27 ^1.38 ^-0.28 ~-126 -6
-execute at @s rotated ~ 0 run tp @n[type=minecraft:block_display,tag=raphael_wings_r4] ^0.22 ^1.20 ^-0.22 ~-110 12
-execute at @s rotated ~ 0 run tp @n[type=minecraft:block_display,tag=raphael_wings_r5] ^0.16 ^1.06 ^-0.16 ~-96 28\
+execute at @s rotated ~ 0 run tp @n[type=minecraft:block_display,tag=raphael_wings_l1] ^-0.25 ^1.53 ^-0.32 ~150 -34
+execute at @s rotated ~ 0 run tp @n[type=minecraft:block_display,tag=raphael_wings_l2] ^-0.27 ^1.46 ^-0.31 ~136 -20
+execute at @s rotated ~ 0 run tp @n[type=minecraft:block_display,tag=raphael_wings_l3] ^-0.28 ^1.37 ^-0.29 ~121 -5
+execute at @s rotated ~ 0 run tp @n[type=minecraft:block_display,tag=raphael_wings_l4] ^-0.27 ^1.27 ^-0.26 ~106 11
+execute at @s rotated ~ 0 run tp @n[type=minecraft:block_display,tag=raphael_wings_l5] ^-0.23 ^1.16 ^-0.22 ~92 25
+execute at @s rotated ~ 0 run tp @n[type=minecraft:block_display,tag=raphael_wings_r1] ^0.25 ^1.53 ^-0.32 ~-150 -34
+execute at @s rotated ~ 0 run tp @n[type=minecraft:block_display,tag=raphael_wings_r2] ^0.27 ^1.46 ^-0.31 ~-136 -20
+execute at @s rotated ~ 0 run tp @n[type=minecraft:block_display,tag=raphael_wings_r3] ^0.28 ^1.37 ^-0.29 ~-121 -5
+execute at @s rotated ~ 0 run tp @n[type=minecraft:block_display,tag=raphael_wings_r4] ^0.27 ^1.27 ^-0.26 ~-106 11
+execute at @s rotated ~ 0 run tp @n[type=minecraft:block_display,tag=raphael_wings_r5] ^0.23 ^1.16 ^-0.22 ~-92 25
 
 
 execute at @s rotated ~ 0 run particle minecraft:small_flame ^-0.54 ^1.82 ^-1.26 0.02 0.02 0.02 0.003 1 force
