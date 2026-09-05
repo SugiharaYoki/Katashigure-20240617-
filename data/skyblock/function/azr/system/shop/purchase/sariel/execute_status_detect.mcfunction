@@ -101,7 +101,7 @@ execute if entity @s[scores={Azr_Shop=8432170},tag=AzrSariel_upg] run tag @s add
 
 
 
-execute if entity @s[tag=AzrSariel_upg_REMOVE] run function skyblock:azr/system/shop/purchase/sariel/execute_sub_remove
+execute if entity @s[tag=AzrSariel_upg_REMOVE] run function skyblock:azr/system/shop/purchase/sariel/execute_sub_add_remove {tag_op:remove,emerald_op:add,cost_op:remove,side_op:remove,page_gate:if}
 execute unless entity @s[tag=AzrSariel_upg_REMOVE] run function skyblock:azr/system/shop/purchase/sariel/execute
 
 tag @s remove AzrSariel_upg_REMOVE

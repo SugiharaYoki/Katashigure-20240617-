@@ -302,9 +302,9 @@ execute if entity @s[tag=!AzrSariel_upg16F] run data modify entity @n[tag=AzrSar
 
 #  01 防    生 花 耐
 #  02 生       花
-#  03 防 移 移 移 耐
-#  04 生       花
-#  05 防 火 火 火 耐
+#  03 防 移 生 移 耐 生
+#  04 生       花   移
+#  05 防 火 火 火 耐 生
 #  06 生    剪
 #  07 ★ 商 绿
 #  08 攻    抹
@@ -321,7 +321,8 @@ tellraw @s [{text:" ",color:"light_purple"},\
 {selector:"@n[tag=AzrSariel_displaymarkerE]",color:"dark_gray"},\
 {selector:"@n[tag=AzrSariel_displaymarker1C]",color:"#ff5dd7",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432136"},hover_event:{"action":"show_text","value":{text:"消耗：60\n生命上限 +2",color:"white"}}},\
 {selector:"@n[tag=AzrSariel_displaymarker1D]",color:"#ffb0ff",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432127"},hover_event:{"action":"show_text","value":{text:"消耗：20\n造成点数超过6的攻击时，有8%概率在最近的敌人处制造一个理之花团\n触碰理之花团可以对3.5格内的所有亡魂与凶兽造成伤害，并恢复范围内队友生命\n伤害：3/5/7（对亡魂翻倍） 治疗：2/4/8 存在时长：60\n重复选中将升级效果",color:"white"}}},\
-{selector:"@n[tag=AzrSariel_displaymarker1E]",color:"#576e03",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432138"},hover_event:{"action":"show_text","value":{text:"消耗：30\n护甲韧性 +1\n击退抗性 +15%",color:"white"}}}]
+{selector:"@n[tag=AzrSariel_displaymarker1E]",color:"#576e03",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432138"},hover_event:{"action":"show_text","value":{text:"消耗：30\n护甲韧性 +1\n击退抗性 +15%",color:"white"}}},\
+{selector:"@n[tag=AzrSariel_displaymarkerE]",color:"dark_gray"}]
 
 tellraw @s [{text:" ",color:"light_purple"},\
 {selector:"@n[tag=AzrSariel_displaymarker0b]",color:"dark_gray"},\
@@ -329,15 +330,17 @@ tellraw @s [{text:" ",color:"light_purple"},\
 {selector:"@n[tag=AzrSariel_displaymarkerE]",color:"dark_gray"},\
 {selector:"@n[tag=AzrSariel_displaymarkerE]",color:"dark_gray"},\
 {selector:"@n[tag=AzrSariel_displaymarker2D]",color:"#ffb0ff",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432128"},hover_event:{"action":"show_text","value":{text:"消耗：30\n造成点数超过6的攻击时，有8%概率在最近的敌人处制造一个理之花团\n触碰理之花团可以对3.5格内的所有亡魂与凶兽造成伤害，并恢复范围内队友生命\n伤害：3/5/7（对亡魂翻倍） 治疗：2/4/8 存在时长：60\n重复选中将升级效果",color:"white"}}},\
+{selector:"@n[tag=AzrSariel_displaymarkerE]",color:"dark_gray"},\
 {selector:"@n[tag=AzrSariel_displaymarkerE]",color:"dark_gray"}]
 
 tellraw @s [{text:" ",color:"light_purple"},\
 {selector:"@n[tag=AzrSariel_displaymarker0b]",color:"dark_gray"},\
 {selector:"@n[tag=AzrSariel_displaymarker3]",color:"#ffb65d",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432103"},hover_event:{"action":"show_text","value":{text:"消耗：10\n基础防御 +1",color:"white"}}},\
 {selector:"@n[tag=AzrSariel_displaymarker3B]",color:"#6d4892",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432122"},hover_event:{"action":"show_text","value":{text:"消耗：10\n移动速度增加3%\n你的身体将拥有碰撞伤害\n伤害：1/2/4 冷却：0.5\n重复选中将升级效果",color:"white"}}},\
-{selector:"@n[tag=AzrSariel_displaymarker3C]",color:"#6d4892",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432123"},hover_event:{"action":"show_text","value":{text:"消耗：20\n移动速度增加3%\n你的身体将拥有碰撞伤害\n伤害：1/2/4 冷却：0.5\n重复选中将升级效果",color:"white"}}},\
+{selector:"@n[tag=AzrSariel_displaymarker3C]",color:"#ff5dd7",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432123"},hover_event:{"action":"show_text","value":{text:"消耗：50\n生命上限 +2",color:"white"}}},\
 {selector:"@n[tag=AzrSariel_displaymarker3D]",color:"#6d4892",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432124"},hover_event:{"action":"show_text","value":{text:"消耗：40\n移动速度增加3%\n你的身体将拥有碰撞伤害\n伤害：1/2/4 冷却：0.5\n重复选中将升级效果",color:"white"}}},\
-{selector:"@n[tag=AzrSariel_displaymarker3E]",color:"#576e03",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432139"},hover_event:{"action":"show_text","value":{text:"消耗：40\n护甲韧性 +1\n击退抗性 +15%",color:"white"}}}]
+{selector:"@n[tag=AzrSariel_displaymarker3E]",color:"#576e03",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432139"},hover_event:{"action":"show_text","value":{text:"消耗：40\n护甲韧性 +1\n击退抗性 +15%",color:"white"}}},\
+{selector:"@n[tag=AzrSariel_displaymarker3F]",color:"#ff5dd7",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432145"},hover_event:{"action":"show_text","value":{text:"消耗：80\n生命上限 +2",color:"white"}}}]
 
 tellraw @s [{text:" ",color:"light_purple"},\
 {selector:"@n[tag=AzrSariel_displaymarker0b]",color:"dark_gray"},\
@@ -345,7 +348,8 @@ tellraw @s [{text:" ",color:"light_purple"},\
 {selector:"@n[tag=AzrSariel_displaymarkerE]",color:"dark_gray"},\
 {selector:"@n[tag=AzrSariel_displaymarkerE]",color:"dark_gray"},\
 {selector:"@n[tag=AzrSariel_displaymarker4D]",color:"#ffb0ff",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432129"},hover_event:{"action":"show_text","value":{text:"消耗：20\n造成点数超过6的攻击时，有8%概率在最近的敌人处制造一个理之花团\n触碰理之花团可以对3.5格内的所有亡魂与凶兽造成伤害，并恢复范围内队友生命\n伤害：3/5/7（对亡魂翻倍） 治疗：2/4/8 存在时长：60\n重复选中将升级效果",color:"white"}}},\
-{selector:"@n[tag=AzrSariel_displaymarkerE]",color:"dark_gray"}]
+{selector:"@n[tag=AzrSariel_displaymarkerE]",color:"dark_gray"},\
+{selector:"@n[tag=AzrSariel_displaymarker4F]",color:"#6d4892",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432146"},hover_event:{"action":"show_text","value":{text:"消耗：60\n移动速度增加3%\n你的身体将拥有碰撞伤害\n伤害：1/2/4 冷却：0.5\n重复选中将升级效果",color:"white"}}}]
 
 tellraw @s [{text:" ",color:"light_purple"},\
 {selector:"@n[tag=AzrSariel_displaymarker0b]",color:"dark_gray"},\
@@ -353,7 +357,8 @@ tellraw @s [{text:" ",color:"light_purple"},\
 {selector:"@n[tag=AzrSariel_displaymarker5B]",color:"#ac2803",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432114"},hover_event:{"action":"show_text","value":{text:"消耗：5\n攻击亡魂时，朝前释放针对亡魂的扇形范围攻击\n伤害：2/3/4 冷却：3/2.5/2\n重复选中将升级效果",color:"white"}}},\
 {selector:"@n[tag=AzrSariel_displaymarker5C]",color:"#ac2803",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432115"},hover_event:{"action":"show_text","value":{text:"消耗：20\n攻击亡魂时，朝前释放针对亡魂的扇形范围攻击\n伤害：2/3/4 冷却：3/2.5/2\n重复选中将升级效果",color:"white"}}},\
 {selector:"@n[tag=AzrSariel_displaymarker5D]",color:"#ac2803",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432116"},hover_event:{"action":"show_text","value":{text:"消耗：40\n攻击亡魂时，朝前释放针对亡魂的扇形范围攻击\n伤害：2/3/4 冷却：3/2.5/2\n重复选中将升级效果",color:"white"}}},\
-{selector:"@n[tag=AzrSariel_displaymarker5E]",color:"#576e03",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432140"},hover_event:{"action":"show_text","value":{text:"消耗：50\n护甲韧性 +1\n击退抗性 +15%",color:"white"}}}]
+{selector:"@n[tag=AzrSariel_displaymarker5E]",color:"#576e03",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432140"},hover_event:{"action":"show_text","value":{text:"消耗：50\n护甲韧性 +1\n击退抗性 +15%",color:"white"}}},\
+{selector:"@n[tag=AzrSariel_displaymarker5F]",color:"#ff5dd7",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432147"},hover_event:{"action":"show_text","value":{text:"消耗：80\n生命上限 +2",color:"white"}}}]
 
 tellraw @s [{text:" ",color:"light_purple"},\
 {selector:"@n[tag=AzrSariel_displaymarker0b]",color:"dark_gray"},\

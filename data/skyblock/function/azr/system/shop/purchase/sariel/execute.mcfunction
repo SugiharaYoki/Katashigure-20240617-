@@ -66,7 +66,7 @@ execute if entity @s[scores={Azr_Shop=8432122}] if entity @s[tag=!AzrSariel_upg3
 execute if entity @s[scores={Azr_Shop=8432123}] if entity @s[tag=!AzrSariel_upg3B,tag=!AzrSariel_upg3D,tag=!AzrSariel_upg2C,tag=!AzrSariel_upg4C] run tag @s add AzrSariel_upg_FAILED_NC
 execute if entity @s[scores={Azr_Shop=8432124}] if entity @s[tag=!AzrSariel_upg3C,tag=!AzrSariel_upg3E,tag=!AzrSariel_upg2D,tag=!AzrSariel_upg4D] run tag @s add AzrSariel_upg_FAILED_NC
 execute if entity @s[scores={Azr_Shop=8432122}] unless entity @s[scores={Azr_emerald=10..}] run tag @s add AzrSariel_upg_FAILED
-execute if entity @s[scores={Azr_Shop=8432123}] unless entity @s[scores={Azr_emerald=20..}] run tag @s add AzrSariel_upg_FAILED
+execute if entity @s[scores={Azr_Shop=8432123}] unless entity @s[scores={Azr_emerald=50..}] run tag @s add AzrSariel_upg_FAILED
 execute if entity @s[scores={Azr_Shop=8432124}] unless entity @s[scores={Azr_emerald=40..}] run tag @s add AzrSariel_upg_FAILED
 
 #1D2D4D#surrounding_completed
@@ -116,6 +116,12 @@ execute if entity @s[scores={Azr_Shop=8432143}] unless entity @s[scores={Azr_eme
 execute if entity @s[scores={Azr_Shop=8432144}] if entity @s[tag=!AzrSariel_upg8E,tag=!AzrSariel_upg10E,tag=!AzrSariel_upg9D,tag=!AzrSariel_upg9F] run tag @s add AzrSariel_upg_FAILED_NC
 execute if entity @s[scores={Azr_Shop=8432144}] unless entity @s[scores={Azr_emerald=80..}] run tag @s add AzrSariel_upg_FAILED
 
+execute if entity @s[scores={Azr_Shop=8432145}] if entity @s[tag=!AzrSariel_upg2F,tag=!AzrSariel_upg4F,tag=!AzrSariel_upg3G,tag=!AzrSariel_upg3E] run tag @s add AzrSariel_upg_FAILED_NC
+execute if entity @s[scores={Azr_Shop=8432145}] unless entity @s[scores={Azr_emerald=80..}] run tag @s add AzrSariel_upg_FAILED
+execute if entity @s[scores={Azr_Shop=8432146}] if entity @s[tag=!AzrSariel_upg3F,tag=!AzrSariel_upg5F,tag=!AzrSariel_upg4G,tag=!AzrSariel_upg4E] run tag @s add AzrSariel_upg_FAILED_NC
+execute if entity @s[scores={Azr_Shop=8432146}] unless entity @s[scores={Azr_emerald=60..}] run tag @s add AzrSariel_upg_FAILED
+execute if entity @s[scores={Azr_Shop=8432147}] if entity @s[tag=!AzrSariel_upg4F,tag=!AzrSariel_upg6F,tag=!AzrSariel_upg5G,tag=!AzrSariel_upg5E] run tag @s add AzrSariel_upg_FAILED_NC
+execute if entity @s[scores={Azr_Shop=8432147}] unless entity @s[scores={Azr_emerald=80..}] run tag @s add AzrSariel_upg_FAILED
 
 tag @s[tag=AzrSariel_upg_FAILED] remove AzrSariel_upg_SUCCESS
 tag @s[tag=AzrSariel_upg_FAILED_NC] remove AzrSariel_upg_SUCCESS
@@ -124,7 +130,7 @@ tag @s[tag=AzrSariel_upg_FAILED_NC_armor2] remove AzrSariel_upg_SUCCESS
 tag @s[tag=AzrSariel_upg_FAILED_NC_armor3] remove AzrSariel_upg_SUCCESS
 tag @s[tag=AzrSariel_upg_FAILED_NC_armor4] remove AzrSariel_upg_SUCCESS
 
-execute if entity @s[tag=AzrSariel_upg_SUCCESS] run function skyblock:azr/system/shop/purchase/sariel/execute_sub_add
+execute if entity @s[tag=AzrSariel_upg_SUCCESS] run function skyblock:azr/system/shop/purchase/sariel/execute_sub_add_remove {tag_op:add,emerald_op:remove,cost_op:add,side_op:add,page_gate:unless}
 
 
 tellraw @s[tag=AzrSariel_upg_FAILED] [{text:"失败：剩余素材不足！",color:"red"}]

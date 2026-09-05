@@ -15,6 +15,14 @@ attribute @s attack_speed modifier remove azr_sariel:upg_13
 attribute @s attack_speed modifier remove azr_sariel:upg_13d
 attribute @s attack_damage modifier remove azr_sariel:upg_9e
 
+attribute @s movement_speed modifier remove azr_sariel:upg_3b
+attribute @s movement_speed modifier remove azr_sariel:upg_4f
+attribute @s movement_speed modifier remove azr_sariel:upg_3d
+
+attribute @s max_health modifier remove azr_sariel:upg_3f
+attribute @s max_health modifier remove azr_sariel:upg_3c
+attribute @s max_health modifier remove azr_sariel:upg_5f
+
 scoreboard players set @s AzrSariel_Skill_FanFire 0
 scoreboard players set @s AzrSariel_Skill_ElecBall 0
 scoreboard players set @s AzrSariel_Skill_ContactDmg 0

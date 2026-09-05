@@ -19,11 +19,15 @@ execute if entity @s[tag=AzrSariel_upg9E] run attribute @s attack_damage modifie
 execute if entity @s[tag=AzrSariel_upg13D] run attribute @s attack_speed modifier add azr_sariel:upg_13d 0.1 add_value
 
 execute if entity @s[tag=AzrSariel_upg3B] run attribute @s movement_speed modifier add azr_sariel:upg_3b 0.03 add_multiplied_base
-execute if entity @s[tag=AzrSariel_upg3C] run attribute @s movement_speed modifier add azr_sariel:upg_3c 0.03 add_multiplied_base
+execute if entity @s[tag=AzrSariel_upg4F] run attribute @s movement_speed modifier add azr_sariel:upg_4f 0.03 add_multiplied_base
 execute if entity @s[tag=AzrSariel_upg3D] run attribute @s movement_speed modifier add azr_sariel:upg_3d 0.03 add_multiplied_base
 
+execute if entity @s[tag=AzrSariel_upg3F] run attribute @s max_health modifier add azr_sariel:upg_3f 2 add_value
+execute if entity @s[tag=AzrSariel_upg3C] run attribute @s max_health modifier add azr_sariel:upg_3c 2 add_value
+execute if entity @s[tag=AzrSariel_upg5F] run attribute @s max_health modifier add azr_sariel:upg_5f 2 add_value
+
 execute if entity @s[tag=AzrSariel_upg3B] run scoreboard players add @s AzrSariel_Skill_ContactDmg 1
-execute if entity @s[tag=AzrSariel_upg3C] run scoreboard players add @s AzrSariel_Skill_ContactDmg 1
+execute if entity @s[tag=AzrSariel_upg4F] run scoreboard players add @s AzrSariel_Skill_ContactDmg 1
 execute if entity @s[tag=AzrSariel_upg3D] run scoreboard players add @s AzrSariel_Skill_ContactDmg 1
 execute if entity @s[tag=AzrSariel_upg5B] run scoreboard players add @s AzrSariel_Skill_FanFire 1
 execute if entity @s[tag=AzrSariel_upg5C] run scoreboard players add @s AzrSariel_Skill_FanFire 1
