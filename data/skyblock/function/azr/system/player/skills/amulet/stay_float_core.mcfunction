@@ -1,25 +1,15 @@
 
+scoreboard objectives add AzrSariel_Amulet_StayFloat_Y dummy
+
 scoreboard players remove @s AzrSariel_Amulet_StayFloat_cooldown 1
-
-
-
-
 execute if entity @s[scores={AzrSariel_Amulet_StayFloat_cooldown=..0},predicate=skyblock:jump,gamemode=adventure] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 9
 execute if entity @s[scores={AzrSariel_Amulet_StayFloat_cooldown=5..10},predicate=!skyblock:jump] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 19
 execute if entity @s[scores={AzrSariel_Amulet_StayFloat_cooldown=16..20},predicate=skyblock:jump] unless block ~ ~-0.3 ~ water unless block ~ ~0.3 ~ water unless block ~ ~ ~ #climbable run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 140
-
-
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138.. if entity @s[predicate=skyblock:jump] as @s at @s anchored eyes unless block ^ ^ ^0.5 air if block ^ ^-0.5 ^ air run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 3
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138.. if entity @s[predicate=skyblock:jump] as @s at @s anchored eyes if block ^ ^ ^0.5 air unless block ^ ^-0.5 ^ air run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 3
-
-execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 as @s at @s store result storage azr_amulet:stay_float y double 0.000001 run data get entity @s Pos[1] 1000000
-#execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 store result storage azr_amulet:stay_float y_10 double 0.0001 run data get entity @s Pos[1] 100000
-
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 store result score @s AzrSariel_Amulet_StayFloat_Y run data get entity @s Pos[1] 1000000
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 if items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run attribute @s attack_damage modifier add azr_amulet:floating_attack_01 0.2 add_multiplied_total
-
-#execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s store result storage azr_amulet:stay_float x_tell double 0.001 run data get entity @s Pos[0] 1000
-#execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s store result storage azr_amulet:stay_float y_tell double 0.001 run data get entity @s Pos[1] 1000
-#execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s store result storage azr_amulet:stay_float z_tell double 0.001 run data get entity @s Pos[2] 1000
+execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 store result storage azr_amulet:stay_float y double 0.000001 run scoreboard players get @s AzrSariel_Amulet_StayFloat_Y
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 120 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 122 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
@@ -35,14 +25,8 @@ execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s a
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s if items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 0.3 1.7
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s unless items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run particle white_smoke ~ ~-0.2 ~ 0.1 0 0.1 0.03 8
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s if items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run particle white_smoke ~ ~-0.2 ~ 0.1 0 0.1 0.02 4
-
-
-
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 120..138 if entity @s[predicate=skyblock:jump] run effect give @s slow_falling 1 99 true
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90.. if entity @s[predicate=!skyblock:jump] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 90
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90..118 run effect clear @s slow_falling
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90..118 run attribute @s attack_damage modifier remove azr_amulet:floating_attack_01
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90..118 run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 2
-
-
-
