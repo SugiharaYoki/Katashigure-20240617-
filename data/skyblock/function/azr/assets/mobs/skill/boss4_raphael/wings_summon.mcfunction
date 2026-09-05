@@ -6,3 +6,6 @@ summon minecraft:block_display ~ ~ ~ {Tags:["raphael_wings","raphael_wings_r1"],
 summon minecraft:block_display ~ ~ ~ {Tags:["raphael_wings","raphael_wings_r2"],block_state:{Name:"minecraft:yellow_stained_glass"},brightness:{block:15,sky:15},shadow_radius:0f,teleport_duration:1,transformation:{translation:[-0.12f,-0.03f,-0.52f],left_rotation:[0f,0f,0f,1f],scale:[0.24f,0.06f,1.04f],right_rotation:[0f,0f,0f,1f]}}
 summon minecraft:block_display ~ ~ ~ {Tags:["raphael_wings","raphael_wings_r3"],block_state:{Name:"minecraft:orange_stained_glass"},brightness:{block:15,sky:15},shadow_radius:0f,teleport_duration:1,transformation:{translation:[-0.11f,-0.03f,-0.43f],left_rotation:[0f,0f,0f,1f],scale:[0.22f,0.06f,0.86f],right_rotation:[0f,0f,0f,1f]}}
 summon minecraft:block_display ~ ~ ~ {Tags:["raphael_wings","raphael_wings_r4"],block_state:{Name:"minecraft:orange_stained_glass"},brightness:{block:15,sky:15},shadow_radius:0f,teleport_duration:1,transformation:{translation:[-0.10f,-0.025f,-0.34f],left_rotation:[0f,0f,0f,1f],scale:[0.20f,0.05f,0.68f],right_rotation:[0f,0f,0f,1f]}}
+
+
+tag @n[type=minecraft:mannequin,tag=AzrielNPC_raphael] add wings_equipped
