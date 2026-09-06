@@ -45,12 +45,12 @@ execute if score @s AzrEntityTimer matches 220..399 positioned -79167 50 -16 run
 execute if score @s AzrEntityTimer matches 405 run title @a[distance=..50] times 0t 20t 16t
 execute if score @s AzrEntityTimer matches 405 run title @a[distance=..50] title {text:"非 眼",color: "#7321cb",bold:1b}
 
-execute if score @s AzrEntityTimer matches 420 positioned -79171 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_noteye/summon
-execute if score @s AzrEntityTimer matches 500 positioned -79177 50 -22 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_noteye/summon
-execute if score @s AzrEntityTimer matches 580 positioned -79177 50 -10 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_noteye/summon
-execute if score @s AzrEntityTimer matches 420 positioned -79187 50 -16 run tag @e[tag=AzrielMob_sonic_eye_door,distance=..50] add AzrielMob_BossRush_Target
-execute if score @s AzrEntityTimer matches 500 positioned -79187 50 -16 run tag @e[tag=AzrielMob_sonic_eye_door,distance=..50] add AzrielMob_BossRush_Target
-execute if score @s AzrEntityTimer matches 580 positioned -79187 50 -16 run tag @e[tag=AzrielMob_sonic_eye_door,distance=..50] add AzrielMob_BossRush_Target
+execute if score @s AzrEntityTimer matches 420 positioned -79171 55 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_noteye/summon
+execute if score @s AzrEntityTimer matches 500 positioned -79177 55 -22 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_noteye/summon
+execute if score @s AzrEntityTimer matches 580 positioned -79177 55 -10 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_noteye/summon
+execute if score @s AzrEntityTimer matches 420 positioned -79187 55 -16 run tag @e[tag=AzrielMob_sonic_eye_door,distance=..50] add AzrielMob_BossRush_Target
+execute if score @s AzrEntityTimer matches 500 positioned -79187 55 -16 run tag @e[tag=AzrielMob_sonic_eye_door,distance=..50] add AzrielMob_BossRush_Target
+execute if score @s AzrEntityTimer matches 580 positioned -79187 55 -16 run tag @e[tag=AzrielMob_sonic_eye_door,distance=..50] add AzrielMob_BossRush_Target
 execute if score @s AzrEntityTimer matches 420..599 positioned -79167 50 -16 as @e[tag=AzrielMob_sonic_eye_door,distance=..50] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_noteye/core
 
 execute if score @s AzrEntityTimer matches 605 run fill -79159 77 -34 -79195 77 2 minecraft:tinted_glass replace air
