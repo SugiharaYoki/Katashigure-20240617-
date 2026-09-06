@@ -59,8 +59,8 @@ execute as @s[scores={rng1=91}] positioned -79889 40 -153 run attribute @n[type=
 execute as @s[scores={rng1=93}] positioned -79879 47 -109 as @e[tag=AzrielNPC_Divineforce,distance=15..120,tag=!AzrielNPC_stage9_prison_entry_conversation1,tag=!AzrielMob_ch3_middlesidegate_swordman,type=!villager,type=!parrot,type=!evoker,tag=!AzrielNPC_stage9_entry_conversation3] run tp @s -79890 40 -140
 execute as @s[scores={rng1=93}] run tp @n[tag=AzrielNPC_marinus] -79892 40 -145
 
-execute as @s[scores={rng1=101}] run kill @n[tag=AzrielMob_sonic_eye_lord,distance=..100]
-execute as @s[scores={rng1=101}] run kill @n[tag=AzrielMob_sonic_eye_lord_item_display,distance=..100]
+execute as @s[scores={rng1=101}] positioned -79867 -2 -109 run kill @e[tag=AzrielMob_sonic_eye_lord,distance=..100]
+execute as @s[scores={rng1=101}] positioned -79867 -2 -109 run kill @e[tag=AzrielMob_sonic_eye_lord_item_display,distance=..100]
 
 
 execute as @s[scores={rng1=91}] positioned -79879 47 -109 run tag @n[tag=AzrielNPC_Divineforce,type=pillager,distance=0..2] add AzrielNPC_stage9_prison_corelever_conversation1
