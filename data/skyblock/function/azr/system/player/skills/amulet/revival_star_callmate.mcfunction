@@ -4,6 +4,7 @@ scoreboard players remove @s AzrSariel_Amulet_RevivalStar_Callmate 1
 
 
 
+execute if score @s AzrSariel_Amulet_RevivalStar_Callmate matches 59 at @s run effect give @s glowing 3 0 true
 execute if score @s AzrSariel_Amulet_RevivalStar_Callmate matches 59 at @s run tellraw @a[tag=azrShowDialog] [{selector:"@s",color:"green"},{text:"进行了一次全局呼叫。",color:"green"}]
 execute if score @s AzrSariel_Amulet_RevivalStar_Callmate matches 59 at @s run playsound minecraft:block.note_block.bell player @a ~ ~ ~ 100 0.63
 execute if score @s AzrSariel_Amulet_RevivalStar_Callmate matches 43 at @s run playsound minecraft:block.note_block.bell player @a ~ ~ ~ 0.9 0.63
