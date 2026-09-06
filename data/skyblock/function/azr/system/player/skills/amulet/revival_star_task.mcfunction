@@ -30,12 +30,13 @@ execute if score stage Azr_system matches 26..29 run tellraw @s [{text:"“权�
 execute if score stage Azr_system matches 30..35 run tellraw @s [{text:"“牢房通往深处区域的大门紧闭。\n若想打开大门，唯有前往东翼2F找到大门的控制室。\n东翼1F无法进入，我只能绕个很大的远路。”",color:"#c5c5c5",bold:false}]
 
 execute if score stage Azr_system matches 14.. unless entity @s[tag=AZS_BoS11] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"我需要找到一种特殊移动方式，才能跨越数格宽的间隙……",color:"white",bold:false}]
-execute if score stage Azr_system matches 19.. unless entity @s[tag=AZS_BoSB01] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"我需要一种能让我快速向后移动的方式。",color:"white",bold:false}]
+execute if score stage Azr_system matches 19.. unless entity @s[tag=AZS_BoSB01] run tellraw @s [{text:"星光指引：",color:"#ff794c",bold:true},{text:"我需要一种能让我快速向后移动的方式。",color:"white",bold:false}]
 execute if score stage Azr_system matches 14.. unless entity @s[tag=AZS_BoS09] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"那些史莱姆块富有弹性，如果能增加它们的弹性……",color:"white",bold:false}]
 execute if score stage Azr_system matches 14.. if entity @s[tag=AZS_BoS11] unless entity @s[tag=AZS_BoSB01] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"要是能够让我拥有使劲向下方轰砸的力量……",color:"white",bold:false}]
-execute if score stage Azr_system matches 14.. if entity @s[tag=AZS_BoS09] unless entity @s[tag=AZS_BoSB13] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"西庭外围第3关的下方似乎别有洞天，我感受到了一股强大的力量。",color:"white",bold:false}]
-execute if score stage Azr_system matches 14.. if entity @s[tag=AZS_BoS11] unless entity @s[tag=AZS_BoSB13] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"传热根系的深处热得有些反常，我很想去一探究竟。",color:"white",bold:false}]
-execute if score stage Azr_system matches 26.. unless entity @s[tag=AZS_BoSB23] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"需要赶的路越来越长了。蚀岩径区域似乎是一条不错的捷径，但里面有令我很不安的凿石声响。",color:"white",bold:false}]
+execute if score stage Azr_system matches 14.. if entity @s[tag=AZS_BoS09] unless entity @s[tag=AZS_BoSB13] run tellraw @s [{text:"星光指引：",color:"#ff794c",bold:true},{text:"西庭外围第3关的下方似乎别有洞天，我感受到了一股强大的力量。",color:"white",bold:false}]
+execute if score stage Azr_system matches 14.. if entity @s[tag=AZS_BoS11] unless entity @s[tag=AZS_BoSB13] run tellraw @s [{text:"星光指引：",color:"#ff794c",bold:true},{text:"传热根系的深处热得有些反常，我很想去一探究竟。",color:"white",bold:false}]
+execute if score stage Azr_system matches 26.. unless entity @s[tag=AZS_BoSB23] run tellraw @s [{text:"星光指引：",color:"#ff794c",bold:true},{text:"需要赶的路越来越长了。蚀岩径区域似乎是一条不错的捷径，但深处总传来令我不安的凿石声响。",color:"white",bold:false}]
+execute if score stage Azr_system matches 36.. if entity @s[tag=AZS_BoS11] unless entity @s[tag=AZS_BoSB23] run tellraw @s [{text:"星光指引：",color:"#ff794c",bold:true},{text:"我不信这牢房里只关着魔物。或许我能在某间房间找到人类囚犯，对方说不定能给我提供情报。",color:"white",bold:false}]
 
 #execute if score stage Azr_system matches 19 run tellraw @s [{text:"下个目标地点：",color:"aqua",bold:true},{text:"西庭外围区域 第1章·第1关",color:"white",bold:false}]
 #execute if score stage Azr_system matches 20 run tellraw @s [{text:"下个目标地点：",color:"aqua",bold:true},{text:"西庭外围区域 第1章·第1关",color:"white",bold:false}]
