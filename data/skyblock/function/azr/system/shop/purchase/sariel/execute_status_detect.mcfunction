@@ -21,7 +21,7 @@ execute if entity @s[scores={Azr_Shop=8432119},tag=AzrSariel_upg11D] run tag @s 
 execute if entity @s[scores={Azr_Shop=8432120},tag=AzrSariel_upg6C] run tag @s add AzrSariel_upg_REMOVE
 execute if entity @s[scores={Azr_Shop=8432121},tag=AzrSariel_upg7B] run tag @s add AzrSariel_upg_REMOVE
 execute if entity @s[scores={Azr_Shop=8432122},tag=AzrSariel_upg3B] run tag @s add AzrSariel_upg_REMOVE
-execute if entity @s[scores={Azr_Shop=8432123},tag=AzrSariel_upg4F] run tag @s add AzrSariel_upg_REMOVE
+execute if entity @s[scores={Azr_Shop=8432123},tag=AzrSariel_upg3C] run tag @s add AzrSariel_upg_REMOVE
 execute if entity @s[scores={Azr_Shop=8432124},tag=AzrSariel_upg3D] run tag @s add AzrSariel_upg_REMOVE
 execute if entity @s[scores={Azr_Shop=8432125},tag=AzrSariel_upg8C] run tag @s add AzrSariel_upg_REMOVE
 execute if entity @s[scores={Azr_Shop=8432126},tag=AzrSariel_upg7C] run tag @s add AzrSariel_upg_REMOVE
@@ -44,7 +44,7 @@ execute if entity @s[scores={Azr_Shop=8432142},tag=AzrSariel_upg12D] run tag @s 
 execute if entity @s[scores={Azr_Shop=8432143},tag=AzrSariel_upg13D] run tag @s add AzrSariel_upg_REMOVE
 execute if entity @s[scores={Azr_Shop=8432144},tag=AzrSariel_upg9E] run tag @s add AzrSariel_upg_REMOVE
 execute if entity @s[scores={Azr_Shop=8432145},tag=AzrSariel_upg3F] run tag @s add AzrSariel_upg_REMOVE
-execute if entity @s[scores={Azr_Shop=8432146},tag=AzrSariel_upg3C] run tag @s add AzrSariel_upg_REMOVE
+execute if entity @s[scores={Azr_Shop=8432146},tag=AzrSariel_upg4F] run tag @s add AzrSariel_upg_REMOVE
 execute if entity @s[scores={Azr_Shop=8432147},tag=AzrSariel_upg5F] run tag @s add AzrSariel_upg_REMOVE
 execute if entity @s[scores={Azr_Shop=8432148},tag=AzrSariel_upg] run tag @s add AzrSariel_upg_REMOVE
 execute if entity @s[scores={Azr_Shop=8432149},tag=AzrSariel_upg] run tag @s add AzrSariel_upg_REMOVE
