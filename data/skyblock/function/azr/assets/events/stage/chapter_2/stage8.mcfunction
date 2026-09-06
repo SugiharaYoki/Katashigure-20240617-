@@ -151,6 +151,7 @@ execute if score stage_main_thread AzrTimerStack matches 480 as @n[tag=AzrielNPC
 execute if score stage_main_thread AzrTimerStack matches 480 at @n[tag=AzrielNPC_marinus] run particle gust ~ ~0.1 ~ 0 3 0 0 5
 execute if score stage_main_thread AzrTimerStack matches 480 run bossbar remove azr:boss_hp_bar
 execute if score stage_main_thread AzrTimerStack matches 480 run data modify entity @n[tag=AzrielNPC_marinus] Invulnerable set value 1b
+execute if score stage_main_thread AzrTimerStack matches 480 run effect give @n[tag=AzrielNPC_marinus] regeneration infinite 4 true
 execute if score stage_main_thread AzrTimerStack matches 480 run tp @n[tag=AzrielNPC_marinus] -79934 51 69
 
 execute if score stage_main_thread AzrTimerStack matches 450 run kill @e[tag=AzrielMob_marinus_surrounding_particle_marker,type=marker]
