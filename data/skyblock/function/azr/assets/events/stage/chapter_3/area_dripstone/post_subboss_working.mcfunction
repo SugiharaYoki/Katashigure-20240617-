@@ -4,8 +4,8 @@ execute as @s[scores={rng1=103}] run fill -79823 11 -45 -79823 17 -47 air replac
 execute as @s[scores={rng1=103}] run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 10 0.7
 execute as @s[scores={rng1=103}] run title @a[tag=azrShowDialog] actionbar {text:"Extra Boss Annihilated",color:"green"}
 execute as @s[scores={rng1=103}] run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/sub_boss_working
-execute as @s[scores={rng1=103}] as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/transportation
 execute as @s[scores={rng1=103}] run bossbar remove azr:boss_hp_bar_working
+execute as @s[scores={rng1=103}] as @a[tag=azrPlayer,tag=!AZS_BoSB23] at @s run function skyblock:azr/assets/items/amulets/transportation
 execute as @s[scores={rng1=103}] as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB23
 execute as @s[scores={rng1=103}] as @a[tag=azrPlayer] at @s run give @s emerald 30
 execute as @s[scores={rng1=103}] as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1

@@ -45,6 +45,7 @@ execute if items entity @s[predicate=skyblock:sneak] container.* *[custom_data~{
 execute if items entity @s container.* *[custom_data~{azr_amulet_pacemaker:1b}] run function skyblock:azr/system/player/skills/amulet/pacemaker_core
 execute if items entity @s container.* *[custom_data~{azr_amulet_pacemaker_safe:1b}] run function skyblock:azr/system/player/skills/amulet/pacemaker_safe_core
 execute if items entity @s container.* *[custom_data~{azr_amulet_flower_wall:1b}] run function skyblock:azr/system/player/skills/amulet/flower_wall_core
+execute if items entity @s container.* *[custom_data~{azr_amulet_flower_wall_fire:1b}] run function skyblock:azr/system/player/skills/amulet/flower_wall_fire_core
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_lit:1b}] run function skyblock:azr/system/player/skills/amulet/fire_lit_core
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_double_arrow:1b}] run function skyblock:azr/system/player/skills/amulet/double_arrow_core
 execute if items entity @s container.* *[custom_data~{azr_amulet_stay_float:1b}] unless items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run function skyblock:azr/system/player/skills/amulet/stay_float_core_version3

@@ -80,8 +80,8 @@ execute if score @s AzrEntityTimer matches 2005 run playsound minecraft:block.be
 execute if score @s AzrEntityTimer matches 2010 run title @a[tag=azrShowDialog] actionbar {text:"Boss Annihilated",color:"green"}
 execute if score @s AzrEntityTimer matches 2010 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/sub_boss_legate
 execute if score @s AzrEntityTimer matches 2010 run bossbar remove azr:boss_hp_bar_legate
-execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/front_slash
 execute if score @s AzrEntityTimer matches 2010 run fill -79575 10 -451 -79575 13 -451 air destroy
+execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer,tag=!AZS_BoSB12] at @s run function skyblock:azr/assets/items/amulets/front_slash
 execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB12
 execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run give @s emerald 20
 execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1

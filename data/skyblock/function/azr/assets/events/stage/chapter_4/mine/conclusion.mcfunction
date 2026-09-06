@@ -195,7 +195,6 @@ execute if score @s rng1 matches 922 as @n[tag=AzrielNPC_mersenne] at @s run tp 
 execute if score @s rng1 matches 922 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 execute if score @s rng1 matches 922 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“爱理莎大人，我刚刚把亚米陨落时逸散的魔力汇聚成了一块新的石板，现在给您。”",color:"white"}]
 
-execute if score @s rng1 matches 925 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/magical_current
 
 execute if score @s rng1 matches 938 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 execute if score @s rng1 matches 938 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“这块石板能让你看见空中的魔力潮汐，并借此向高处移动。”",color:"white"}]
@@ -228,6 +227,7 @@ execute if score @s rng1 matches 1023 as @a[tag=azrShowDialog] at @s run playsou
 execute if score @s rng1 matches 1023 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage17_boss4
 execute if score @s rng1 matches 1023 as @a[tag=azrPlayer] at @s run summon item ~ ~ ~ {Item:{id:"emerald",count:10b}}
 execute if score @s rng1 matches 1023 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute if score @s rng1 matches 925 as @a[tag=azrPlayer,scores={Azr_skillPoints=..18}] at @s run function skyblock:azr/assets/items/amulets/magical_current
 execute if score @s rng1 matches 1023 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..18}] Azr_skillPoints 19
 execute if score @s rng1 matches 1023 run scoreboard players reset stage_main_thread AzrTimerStack
 

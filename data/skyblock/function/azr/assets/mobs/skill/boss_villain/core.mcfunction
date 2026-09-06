@@ -107,7 +107,7 @@ execute if score @s AzrEntityTimer matches 2011 run playsound minecraft:entity.e
 execute if score @s AzrEntityTimer matches 2011 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“你不就是图我身上的绿宝石和石板吗？都给你都给你。”",color:"white",bold: false}]
 execute if score @s AzrEntityTimer matches 2011 run title @a[tag=azrShowDialog] actionbar {text:"Extra Boss Annihilated",color:"green"}
 execute if score @s AzrEntityTimer matches 2011 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/sub_boss_villain
-execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/stay_float_attack
+execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer,tag=!AZS_BoSB22] at @s run function skyblock:azr/assets/items/amulets/stay_float_attack
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB22
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s emerald 30
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1

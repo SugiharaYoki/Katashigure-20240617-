@@ -35,12 +35,12 @@ execute if score stage_bonus_thread AzrTimerStack matches 122..123 as @n[tag=Azr
 
 execute if score stage_bonus_thread AzrTimerStack matches 124 run title @a[tag=azrShowDialog] actionbar {text:"Extra Stage Clear",color:"green"}
 execute if score stage_bonus_thread AzrTimerStack matches 124 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_diffident
+execute if score stage_bonus_thread AzrTimerStack matches 130 as @a[tag=azrPlayer] at @s unless entity @s[tag=AZS_BoS04] run function skyblock:azr/assets/items/amulets/flower_wall
 execute if score stage_bonus_thread AzrTimerStack matches 124 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS04
 execute if score stage_bonus_thread AzrTimerStack matches 124 as @a[tag=azrPlayer] at @s run give @s emerald 5
 
 execute if score stage_bonus_thread AzrTimerStack matches 130 positioned -79946 38 61 run fill -79917 32 0 -79915 35 0 air destroy
 execute if score stage_bonus_thread AzrTimerStack matches 130 positioned -79946 38 61 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua"},{text:"\n（我有段时间不想再见到任何虫子了……）",color:"white"}]
-execute if score stage_bonus_thread AzrTimerStack matches 130 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/flower_wall
 
 execute if score stage_bonus_thread AzrTimerStack matches 124..132 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_bonus_thread AzrTimerStack matches 124..132 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000

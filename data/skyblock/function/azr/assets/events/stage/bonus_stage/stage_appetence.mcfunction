@@ -49,9 +49,9 @@ execute if score stage_bonus_thread AzrTimerStack matches 137 positioned -79935.
 
 execute if score stage_bonus_thread AzrTimerStack matches 155 run title @a[tag=azrShowDialog] actionbar {text:"Extra Stage Clear",color:"green"}
 execute if score stage_bonus_thread AzrTimerStack matches 155 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_appetence
+execute if score stage_bonus_thread AzrTimerStack matches 155 as @a[tag=azrPlayer] at @s unless entity @s[tag=AZS_BoS01] run function skyblock:azr/assets/items/amulets/hoe_assassinate
 execute if score stage_bonus_thread AzrTimerStack matches 155 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS01
 execute if score stage_bonus_thread AzrTimerStack matches 155 as @a[tag=azrPlayer] at @s run give @s emerald 5
-execute if score stage_bonus_thread AzrTimerStack matches 155 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/hoe_assassinate
 
 
 execute if score stage_bonus_thread AzrTimerStack matches 154..155 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000

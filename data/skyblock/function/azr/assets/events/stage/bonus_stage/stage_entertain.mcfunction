@@ -78,9 +78,9 @@ execute if score stage_bonus_thread AzrTimerStack matches 1..204 positioned -798
 
 execute if score stage_bonus_thread AzrTimerStack matches 204 run title @a[tag=azrShowDialog] actionbar {text:"Extra Stage Clear",color:"green"}
 execute if score stage_bonus_thread AzrTimerStack matches 204 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_entertain
+execute if score stage_bonus_thread AzrTimerStack matches 204 as @a[tag=azrPlayer] at @s unless entity @s[tag=AZS_BoS05] run function skyblock:azr/assets/items/amulets/sprint_double
 execute if score stage_bonus_thread AzrTimerStack matches 204 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS05
 execute if score stage_bonus_thread AzrTimerStack matches 204 as @a[tag=azrPlayer] at @s run give @s emerald 5
-execute if score stage_bonus_thread AzrTimerStack matches 204 as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/items/amulets/sprint_double
 
 execute if score stage_bonus_thread AzrTimerStack matches 202..204 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_bonus_thread AzrTimerStack matches 202..204 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
