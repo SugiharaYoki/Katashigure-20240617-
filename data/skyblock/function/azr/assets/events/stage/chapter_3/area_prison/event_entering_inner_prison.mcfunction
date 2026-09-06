@@ -48,9 +48,11 @@ execute if score @s rng1 matches 70 run tellraw @a[tag=azrShowDialog,distance=..
 execute if score @s rng1 matches 50 run playsound ambient.soul_sand_valley.loop ambient @a ~ ~ ~ 19 0.7
 execute if score @s rng1 matches 70 run stopsound @a[tag=azrShowDialog,distance=..200]
 
+execute if score @s rng1 matches 81 run scoreboard players set stage_boss_bgm AzrTimerStack 0
 execute if score @s rng1 matches 82 positioned -79890.02 33.00 -171.96 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“敌人在背后！！！”",color:"white"}]
+
 execute if score @s rng1 matches 82..4050 run scoreboard players add stage_boss_bgm AzrTimerStack 1
-execute if score stage_boss_bgm AzrTimerStack matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:psyborgcocoon music @s ~ ~ ~ 0.65
+execute if score stage_boss_bgm AzrTimerStack matches 2 as @a[tag=azrShowDialog] at @s run playsound minecraft:psyborgcocoon music @s ~ ~ ~ 0.65
 execute if score stage_boss_bgm AzrTimerStack matches 890.. run scoreboard players set stage_boss_bgm AzrTimerStack 0
 
 execute if score @s rng1 matches 69..3000 positioned -79889 24 -179 as @e[tag=AzrielMob,tag=!AzrielMob_boss3special_lootprocessed] run data modify entity @s DeathLootTable set value "skyblock:null"
