@@ -24,6 +24,9 @@ execute as @s[scores={rng1=81}] as @a[distance=..200,tag=azrShowDialog] at @s ru
 execute as @s[scores={rng1=81}] as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",color:"yellow",bold:1b},{text:"\n“但你也将面临一个难题：注定一死的你，该如何违抗命运？”",color:"white",bold: false}]
 execute as @s[scores={rng1=90}] as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 0.7
 execute as @s[scores={rng1=90}] as @a[distance=..200,tag=azrShowDialog] at @s run tellraw @s [{text:"诡谲之低语：",color:"yellow",bold:1b},{text:"\n“我会在牢房内区尽头等着你。”",color:"white",bold: false}]
+
+execute as @s[scores={rng1=90}] as @a[distance=..200,tag=azrShowDialog] at @s run scoreboard players set stage Azr_system 36
+
 execute as @s[scores={rng1=91}] positioned -79886 47 -109 run function skyblock:azr/assets/mobs/skeleton_sword
 execute as @s[scores={rng1=91}] positioned -79886 47 -109 run function skyblock:azr/assets/mobs/skeleton_sword
 execute as @s[scores={rng1=91}] positioned -79886 47 -109 run function skyblock:azr/assets/mobs/skeleton_sword

@@ -1,4 +1,4 @@
-execute if score @s rng1 matches 1 as @a[x=-79913,y=46,z=-131,dx=8,dy=6,dz=7,tag=azrPlayer] at @s run tp @s ~ ~-66 ~
+execute if score @s rng1 matches 1 if entity @a[x=-79913,y=46,z=-131,dx=8,dy=6,dz=7,tag=azrPlayer] run tp @a[tag=azrShowDialog] ~ ~-66 ~
 execute if score @s rng1 matches 1 run scoreboard players set @e[tag=AzrielNPC_Divineforce_Followable] AzrielNPC_FollowInterest 0
 
 execute if score @s rng1 matches 30..35 run scoreboard players set @s rng1 28
@@ -31,9 +31,11 @@ execute if score @s rng1 matches 380..385 run scoreboard players set @s rng1 380
 
 execute if score @s rng1 matches 20.. if entity @a[x=-79900,y=-18,z=-163,dx=5,dy=5,dz=5,tag=azrPlayer] run scoreboard players set @s rng1 390
 execute if score @s rng1 matches 390..392 run stopsound @a[tag=azrPlayer] music minecraft:bookstore
-execute if score @s rng1 matches 20.. as @a[x=-79900,y=-18,z=-163,dx=5,dy=5,dz=5,tag=azrPlayer] at @s run tp @s ~-10 ~66 ~33
+execute if score @s rng1 matches 20.. if entity @a[x=-79900,y=-18,z=-163,dx=5,dy=5,dz=5,tag=azrPlayer] run tp @a[tag=azrShowDialog] ~-10 ~66 ~33
 
 execute if score @s rng1 matches 399 run fill -79887 40 -135 -79887 47 -135 ladder[facing=west]
 execute if score @s rng1 matches 399 as @n[tag=AzrielNPC_bird] at @s run tp @s -79870 49 -122
+execute if score @s rng1 matches 399 as @n[tag=AzrielNPC_bird] at @s run scoreboard players set stage Azr_system 34
+
 execute if score @s rng1 matches 399 as @n[tag=AzrielNPC_bird] at @s run effect give @s slowness 300 99 true
 execute if score @s rng1 matches 399 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua"},{text:"\n“刚刚的画面……为什么让我看到这些？是某种魔法吗……”",color:"white"}]

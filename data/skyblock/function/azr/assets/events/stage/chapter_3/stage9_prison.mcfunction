@@ -197,6 +197,9 @@ execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0
 execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=11}] positioned -79877 47 -109 run playsound entity.generic.explode block @a ~ ~ ~ 3 0.9
 execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=12}] positioned -79877 47 -111 run playsound entity.generic.explode block @a ~ ~ ~ 3 0.9
 execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=13}] positioned -79877 47 -113 run playsound entity.generic.explode block @a ~ ~ ~ 3 0.9
+execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=13}] positioned -79877 47 -113 run scoreboard players set stage Azr_system 32
+
+
 
 execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=7}] as @n[tag=AzrielNPC_flauros,type=evoker,distance=..100] at @s run tp @s -79957.04 56.00 -105.02 facing -79957 56 -106
 execute positioned -79876 47 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=8}] as @n[tag=AzrielNPC_flauros,type=evoker,distance=..100] at @s run data modify entity @s NoAI set value 1b
