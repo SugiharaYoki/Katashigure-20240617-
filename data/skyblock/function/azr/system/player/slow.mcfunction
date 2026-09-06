@@ -50,6 +50,7 @@ execute if score @s AzrSariel_Amulet_generic_damage_taken matches 1.. if items e
 execute if score @s AzrSariel_Amulet_generic_damage_taken matches 1.. if items entity @s container.* *[custom_data~{azr_amulet_artificial_heart:1b}] positioned -79177 50 -16 unless entity @s[distance=..60] run effect give @s absorption infinite 4 true
 execute if score @s AzrSariel_Amulet_generic_damage_taken matches 1.. if items entity @s container.* *[custom_data~{azr_amulet_flower_spike:1b}] run function skyblock:azr/system/player/skills/amulet/flower_spike_core
 
+
 #节制天平
 execute if score @s AzrSariel_Skill_FanFire matches 1.. run scoreboard players remove @s AzrSariel_Skill_FanFire_cooldown 1
 execute if score @s AzrSariel_Skill_ElecBall matches 1.. run scoreboard players remove @s AzrSariel_Skill_ElecBall_cooldown 1

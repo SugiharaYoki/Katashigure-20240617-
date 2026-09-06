@@ -61,7 +61,6 @@ execute if entity @s[x=-79900,y=40,z=0,distance=0..2200] if entity @a[tag=azrPla
 execute if entity @s[x=-79900,y=40,z=0,distance=0..2200] if entity @a[tag=azrPlayer] run tp @s -43 55 0
 
 
-
 tag @s remove azrAmulet_StayFloat_Jumping
 
 
