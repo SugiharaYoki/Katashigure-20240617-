@@ -2,7 +2,7 @@
 
 
 scoreboard players add @s rng8 1
-execute if score @s rng8 matches 1..5 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
+execute if score @s rng8 matches 1..5 store result score @s rng2 run random value 1..6
 execute if score @s[scores={rng2=1}] rng8 matches 50.. run function skyblock:azr/assets/mobs/skill/boss_rush/boss_noteye/attack_pattern_1
 execute if score @s[scores={rng2=2}] rng8 matches 50.. run function skyblock:azr/assets/mobs/skill/boss_rush/boss_noteye/attack_pattern_2
 execute if score @s[scores={rng2=3}] rng8 matches 50.. run function skyblock:azr/assets/mobs/skill/boss_rush/boss_noteye/attack_pattern_3
