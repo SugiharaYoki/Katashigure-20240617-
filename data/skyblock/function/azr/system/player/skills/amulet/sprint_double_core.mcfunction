@@ -2,7 +2,7 @@ scoreboard players remove @s AzrSariel_Amulet_SprintDouble_clock 1
 
 
 
-execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=..1},predicate=skyblock:sprint] run scoreboard players set @s AzrSariel_Amulet_SprintDouble_clock 100
+execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=..1},predicate=skyblock:sprint,predicate=skyblock:forward] run scoreboard players set @s AzrSariel_Amulet_SprintDouble_clock 100
 
 
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=100}] run playsound minecraft:item.elytra.flying player @a ~ ~ ~ 0.67 1.5
