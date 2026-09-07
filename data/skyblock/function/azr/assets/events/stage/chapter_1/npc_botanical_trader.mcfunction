@@ -1,6 +1,7 @@
 scoreboard players add @s AzrielNPC_ConversationTimer 1
 
-execute if score @s AzrielNPC_ConversationTimer matches 9 unless entity @a[distance=..5.5,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 8
+execute if score @s AzrielNPC_ConversationTimer matches 3 unless entity @a[distance=..5.5,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 2
+execute if score @s AzrielNPC_ConversationTimer matches 4 run scoreboard players set @s AzrielNPC_ConversationTimer 9
 execute if score @s AzrielNPC_ConversationTimer matches 10 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
 execute if score @s AzrielNPC_ConversationTimer matches 10 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"休憩所管理员 华兹华斯：",color:"green",bold:1b},{bold: false,text:"\n“你好，爱理莎小姐。看上去你获得了进入休憩所的授权。”",color:"white"}]
 execute if score @s AzrielNPC_ConversationTimer matches 10 run scoreboard players set @s AzrielNPC_ConversationTimer 47
