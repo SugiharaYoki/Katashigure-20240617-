@@ -32,13 +32,8 @@ execute if score @s rng8 matches 27 as @s at @s positioned ~ ~0.3 ~ run playsoun
 execute if score @s rng8 matches 30 as @s at @s positioned ~ ~2.3 ~ run playsound entity.generic.explode block @a ~ ~ ~ 3 1.1
 execute if score @s rng8 matches 33 as @s at @s positioned ~ ~4.3 ~ run playsound entity.generic.explode block @a ~ ~ ~ 3 1.1
 execute if score @s rng8 matches 36 as @s at @s positioned ~ ~6.3 ~ run playsound entity.generic.explode block @a ~ ~ ~ 3 1.1
-execute if score @s rng8 matches 39 as @s at @s positioned ~ ~4.3 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone
-execute if score @s rng8 matches 39 as @s at @s positioned ~ ~5.3 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone
-execute if score @s rng8 matches 39 as @s at @s positioned ~ ~6.3 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone
-execute if score @s rng8 matches 39 as @s at @s positioned ~ ~7.3 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone
-execute if score @s rng8 matches 39 as @s at @s positioned ~ ~8.3 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone
-execute if score @s rng8 matches 39 as @s at @s positioned ~ ~9.3 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone
-execute if score @s rng8 matches 39 as @s at @s positioned ~ ~10.3 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone
+execute if score @s rng8 matches 39 as @s at @s positioned ~ ~8.3 ~ run playsound entity.generic.explode block @a ~ ~ ~ 3 1.1
+execute if score @s rng8 matches 39 as @s at @s positioned ~ ~8.3 ~ run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone
 
 
 execute if score @s rng8 matches 40 as @s at @s run effect clear @s slowness

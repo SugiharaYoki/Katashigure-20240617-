@@ -1,101 +1,111 @@
 
 
-
-execute positioned ~ ~0 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~1 ~0 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~-1 ~0 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~ ~0 ~1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~ ~0 ~-1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~1 ~0 ~1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~-1 ~0 ~1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~1 ~0 ~-1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~-1 ~0 ~-1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~2 ~0 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~-2 ~0 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~ ~0 ~2 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~ ~0 ~-2 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-
-execute positioned ~3 ~0 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~-3 ~0 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~ ~0 ~3 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~ ~0 ~-3 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-
-execute positioned ~4 ~0 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~-4 ~0 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~ ~0 ~4 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~ ~0 ~-4 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-
-execute positioned ~5 ~0 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~-5 ~0 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~ ~0 ~5 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~ ~0 ~-5 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-
-execute positioned 6 ~0 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~6 ~0 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~ ~0 6 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-execute positioned ~ ~0 ~6 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-
-#execute positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~1 ~1 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~-1 ~1 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~ ~1 ~1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~ ~1 ~-1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~1 ~1 ~1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~-1 ~1 ~1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~1 ~1 ~-1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~-1 ~1 ~-1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~2 ~1 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~-2 ~1 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~ ~1 ~2 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~ ~1 ~-2 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#
-#execute positioned ~ ~-1 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~1 ~-1 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~-1 ~-1 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~ ~-1 ~1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~ ~-1 ~-1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~1 ~-1 ~1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~-1 ~-1 ~1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~1 ~-1 ~-1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~-1 ~-1 ~-1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~2 ~-1 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~-2 ~-1 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~ ~-1 ~2 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~ ~-1 ~-2 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#
-#execute positioned ~ ~2 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~1 ~2 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~-1 ~2 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~ ~2 ~1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~ ~2 ~-1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~1 ~2 ~1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~-1 ~2 ~1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~1 ~2 ~-1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~-1 ~2 ~-1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~2 ~2 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~-2 ~2 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~ ~2 ~2 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~ ~2 ~-2 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#
-#execute positioned ~ ~-2 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~1 ~-2 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~-1 ~-2 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~ ~-2 ~1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~ ~-2 ~-1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~1 ~-2 ~1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~-1 ~-2 ~1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~1 ~-2 ~-1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~-1 ~-2 ~-1 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~2 ~-2 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~-2 ~-2 ~ run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~ ~-2 ~2 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
-#execute positioned ~ ~-2 ~-2 run function skyblock:azr/assets/mobs/skill/boss_working/attack_explode_dripstone_condition
+execute store result score @s rng12 run random value 1..8
 
 
 
 
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~ 50 ~1 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~ 50 ~2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~ 50 ~3 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~ 50 ~4 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~ 50 ~5 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~ 50 ~6 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~ 50 ~7 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~ 50 ~8 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~2 50 ~1 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~2 50 ~2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~2 50 ~3 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~2 50 ~4 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~2 50 ~5 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~2 50 ~6 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~2 50 ~7 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~2 50 ~8 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~-2 50 ~1 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~-2 50 ~2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~-2 50 ~3 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~-2 50 ~4 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~-2 50 ~5 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~-2 50 ~6 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~-2 50 ~7 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~-2 50 ~8 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~ 50 ~-1 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~ 50 ~-2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~ 50 ~-3 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~ 50 ~-4 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~ 50 ~-5 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~ 50 ~-6 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~ 50 ~-7 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~ 50 ~-8 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~2 50 ~-1 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~2 50 ~-2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~2 50 ~-3 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~2 50 ~-4 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~2 50 ~-5 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~2 50 ~-6 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~2 50 ~-7 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~2 50 ~-8 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~-2 50 ~-1 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~-2 50 ~-2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~-2 50 ~-3 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~-2 50 ~-4 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~-2 50 ~-5 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~-2 50 ~-6 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~-2 50 ~-7 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 1 at @s rotated 0 0 positioned ~-2 50 ~-8 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
 
 
+
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~1 50 ~ run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~2 50 ~ run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~3 50 ~ run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~4 50 ~ run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~5 50 ~ run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~6 50 ~ run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~7 50 ~ run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~8 50 ~ run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~1 50 ~2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~2 50 ~2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~3 50 ~2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~4 50 ~2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~5 50 ~2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~6 50 ~2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~7 50 ~2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~8 50 ~2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~1 50 ~-2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~2 50 ~-2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~3 50 ~-2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~4 50 ~-2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~5 50 ~-2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~6 50 ~-2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~7 50 ~-2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~8 50 ~-2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-1 50 ~ run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-2 50 ~ run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-3 50 ~ run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-4 50 ~ run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-5 50 ~ run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-6 50 ~ run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-7 50 ~ run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-8 50 ~ run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-1 50 ~2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-2 50 ~2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-3 50 ~2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-4 50 ~2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-5 50 ~2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-6 50 ~2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-7 50 ~2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-8 50 ~2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-1 50 ~-2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-2 50 ~-2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-3 50 ~-2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-4 50 ~-2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-5 50 ~-2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-6 50 ~-2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-7 50 ~-2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
+execute if score @s rng12 matches 2 at @s rotated 0 0 positioned ~-8 50 ~-2 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode_dripstone_summon
 
 
 
