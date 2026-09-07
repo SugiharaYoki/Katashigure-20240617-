@@ -124,7 +124,10 @@ execute if entity @s[tag=AZS_BoSB23] run data modify entity @n[tag=AzrRamielExSt
 
 execute if entity @s[tag=AZS_BoSShop01] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop01] CustomName set value ' <毒衡> '
 execute if entity @s[tag=AZS_BoSShop02] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop02] CustomName set value ' <毒扩> '
-execute if entity @s[tag=AZS_BoSShop03] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop03] CustomName set value ' <> '
+execute if entity @s[tag=AZS_BoSShop03] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop01] CustomName set value ' - '
+execute if entity @s[tag=AZS_BoSShop03] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop02] CustomName set value ' - '
+execute if entity @s[tag=AZS_BoSShop03] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop03] CustomName set value ' <毒析> '
+
 execute if entity @s[tag=AZS_BoSShop04] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop04] CustomName set value ' <> '
 execute if entity @s[tag=AZS_BoSShop05] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop05] CustomName set value ' <弦蓄> '
 execute if entity @s[tag=AZS_BoSShop06] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop06] CustomName set value ' <存箭> '
@@ -223,7 +226,7 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarker3]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432332"},hover_event:{"action":"show_text","value":{text:"权之残影 - 光明天使的符文\n迫坠、退避、冲刺石板整合、施放时无敌帧",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarker4]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432339"},hover_event:{"action":"show_text","value":{text:"亚米 - 血潮石板\n可检测到魔力潮汐，身处其中可升起",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBa]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432331"},hover_event:{"action":"show_text","value":{text:"阴影处刑者 - 退避石板\n按后退键与跑步键，快速后撤步",color:"white"}}},\
-{selector:"@n[tag=AzrRamielExStage_displaymarkerBc]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432338"},hover_event:{"action":"show_text","value":{text:"百夫长·博物区 - 地裂卷宗\n冲刺时使用近战武器攻击，施放地裂冲击",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerBc]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432340"},hover_event:{"action":"show_text","value":{text:"百夫长·博物区 - 地裂卷宗\n冲刺时使用近战武器攻击，施放地裂冲击",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBd]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432329"},hover_event:{"action":"show_text","value":{text:"锅炉驱动者 - 逐焰卷宗\n持续召唤最多3个跟随火球，减少节制天平电球最低间隔时长",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBm]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432328"},hover_event:{"action":"show_text","value":{text:"噬藓母虫 - 深藓石板\n造成攻击可增加“索命连击”充能、在重生锚点可获得5分钟孢子的庇护（生命值上限加成）",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBv]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432338"},hover_event:{"action":"show_text","value":{text:"晦怨贤士 - 悬蔑石板\n按两下跳跃以悬浮、悬浮期间攻击延长悬浮时间",color:"white"}}},\
@@ -231,6 +234,7 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {text:"\n "},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerShop01]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432334"},hover_event:{"action":"show_text","value":{text:"污染平衡器\n减轻重金属池水伤害",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerShop02]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432335"},hover_event:{"action":"show_text","value":{text:"污染扩散器\n受击概率释放重金属云团",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerShop03]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432341"},hover_event:{"action":"show_text","value":{text:"污染解析器\n减轻重金属池水伤害、受击概率释放重金属云团",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerShop05]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432336"},hover_event:{"action":"show_text","value":{text:"弦蓄卷宗\n第二箭默认超强蓄力",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerShop06]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432337"},hover_event:{"action":"show_text","value":{text:"存箭石板\n持有箭矢超过32时不再占用背包",color:"white"}}}]
 

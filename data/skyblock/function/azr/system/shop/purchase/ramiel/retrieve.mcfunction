@@ -35,7 +35,7 @@ execute if entity @s[scores={Azr_skillPoints=9..}] if score @s Azr_Shop matches 
 execute if entity @s[scores={Azr_skillPoints=10..}] if score @s Azr_Shop matches 8432332 run function skyblock:azr/assets/items/amulets/light_angel
 execute if entity @s[scores={Azr_skillPoints=19..}] if score @s Azr_Shop matches 8432339 run function skyblock:azr/assets/items/amulets/magical_current
 execute if entity @s[tag=AZS_BoSB01] if score @s Azr_Shop matches 8432331 run function skyblock:azr/assets/items/amulets/back_dodge
-execute if entity @s[tag=AZS_BoSB03] if score @s Azr_Shop matches 8432338 run function skyblock:azr/assets/items/amulets/land_fracture
+execute if entity @s[tag=AZS_BoSB03] if score @s Azr_Shop matches 8432340 run function skyblock:azr/assets/items/amulets/land_fracture
 execute if entity @s[tag=AZS_BoSB04] if score @s Azr_Shop matches 8432329 run function skyblock:azr/assets/items/amulets/fire_drogue
 execute if entity @s[tag=AZS_BoSB13] if score @s Azr_Shop matches 8432328 run function skyblock:azr/assets/items/amulets/moss_spore
 execute if entity @s[tag=AZS_BoSB22] if score @s Azr_Shop matches 8432338 run function skyblock:azr/assets/items/amulets/stay_float_attack
@@ -43,6 +43,7 @@ execute if entity @s[tag=AZS_BoSB23] if score @s Azr_Shop matches 8432333 run fu
 
 execute if entity @s[tag=AZS_BoSShop01] if score @s Azr_Shop matches 8432334 run function skyblock:azr/assets/items/amulets/pollution_balancer
 execute if entity @s[tag=AZS_BoSShop02] if score @s Azr_Shop matches 8432335 run function skyblock:azr/assets/items/amulets/pollution_diffuser
+execute if entity @s[tag=AZS_BoSShop03] if score @s Azr_Shop matches 8432341 run function skyblock:azr/assets/items/amulets/pollution_analyzer
 execute if entity @s[tag=AZS_BoSShop05] if score @s Azr_Shop matches 8432336 run function skyblock:azr/assets/items/amulets/double_arrow
 execute if entity @s[tag=AZS_BoSShop06] if score @s Azr_Shop matches 8432337 run function skyblock:azr/assets/items/amulets/arrow_savior
 

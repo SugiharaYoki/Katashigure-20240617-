@@ -20,6 +20,8 @@ $execute if score azr_botanical_shop Azr_Shop_rng$(number) matches 10 as @a[dist
      [{text:" - "},{text:"神勇护石  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/40 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431580"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n使自己看上去非常能打。",color:"white"}}}]
 $execute if score azr_botanical_shop Azr_Shop_rng$(number) matches 11 as @a[distance=0..13,tag=azrPlayer] at @s run tellraw @s \
      [{text:" - "},{text:"矢离护石  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/40 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431581"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n通过“存箭石板”取得箭矢库存时，有30%的概率不减少库存。\n除此之外，周围的所有弹簧箭盒增加发射次数。",color:"white"}}}]
+$execute if score azr_botanical_shop Azr_Shop_rng$(number) matches 12 as @a[distance=0..13,tag=azrPlayer] at @s run tellraw @s \
+     [{text:" - "},{text:"灼炎护石  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/60 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431582"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n增强逐焰卷宗、燃点卷宗的效果",color:"white"}}}]
 
 
 

@@ -6,6 +6,8 @@ execute if score @s rng1 matches 6.. run scoreboard players set @s rng1 3
 execute unless entity @n[tag=AzrielMob,distance=..6] run tag @s remove MobFound_UniqueSource
 execute if entity @n[tag=AzrielMob,distance=..6] run tag @s add MobFound_UniqueSource
 execute if entity @s[tag=MobFound_UniqueSource] run tag @e[distance=0.1..7,tag=AzrielMob_amulet_skill_FireDrogue] remove MobFound_UniqueSource
+execute if entity @s[tag=MobFound_UniqueSource,tag=AzrielMob_level_2] if entity @n[tag=AzrielMob,distance=0.7..6] facing entity @n[tag=AzrielMob,distance=0.7..] eyes run tp ^ ^ ^0.18
+execute if entity @s[tag=MobFound_UniqueSource,tag=AzrielMob_level_3] if entity @n[tag=AzrielMob,distance=0.7..6] facing entity @n[tag=AzrielMob,distance=0.7..] eyes run tp ^ ^ ^0.09
 execute if entity @s[tag=MobFound_UniqueSource] if entity @n[tag=AzrielMob,distance=0.7..6] facing entity @n[tag=AzrielMob,distance=0.7..] eyes run tp ^ ^ ^0.18
 execute if entity @s[tag=MobFound_UniqueSource] if entity @n[tag=AzrielMob,distance=0.7..4] facing entity @n[tag=AzrielMob,distance=0.7..] eyes run tp ^ ^ ^0.16
 execute if entity @s[tag=MobFound_UniqueSource] if entity @n[tag=AzrielMob,distance=0.7..3] facing entity @n[tag=AzrielMob,distance=0.7..] feet run tp ^ ^ ^0.15
@@ -18,11 +20,13 @@ execute if score @s[tag=!AzrSariel_Death] rng1 matches 4 run particle flame ~ ~0
 execute if score @s[tag=AzrSariel_Death] rng1 matches 4 run particle soul_fire_flame ~ ~0.1 ~ 0.0 0.0 0.0 0.01 1 force
 
 execute if entity @n[tag=AzrielMob,distance=..0.9] run tag @s add MobFound
-execute if entity @s[tag=MobFound] run damage @n[tag=AzrielMob,distance=..0.9] 4.5 in_fire
+execute if entity @s[tag=MobFound,tag=AzrielMob_level_1] run damage @n[tag=AzrielMob,distance=..0.9] 4.5 in_fire
+execute if entity @s[tag=MobFound,tag=AzrielMob_level_2] run damage @n[tag=AzrielMob,distance=..0.9] 5.5 in_fire
+execute if entity @s[tag=MobFound,tag=AzrielMob_level_3] run damage @n[tag=AzrielMob,distance=..0.9] 6.5 in_fire
 execute if entity @s[tag=MobFound] run playsound minecraft:entity.firework_rocket.blast neutral @a ~ ~ ~ 0.8 1.5
-execute if entity @s[tag=MobFound] run particle smoke ~ ~0.1 ~ 0.05 0.05 0.05 0.03 6
-execute if entity @s[tag=MobFound,tag=!AzrSariel_Death] run particle flame ~ ~0.1 ~ 0.05 0.05 0.05 0.03 6
-execute if entity @s[tag=MobFound,tag=AzrSariel_Death] run particle soul_fire_flame ~ ~0.1 ~ 0.05 0.05 0.05 0.03 6
+execute if entity @s[tag=MobFound] run particle smoke ~ ~0.1 ~ 0.05 0.05 0.05 0.03 4
+execute if entity @s[tag=MobFound,tag=!AzrSariel_Death] run particle flame ~ ~0.1 ~ 0.05 0.05 0.05 0.03 5
+execute if entity @s[tag=MobFound,tag=AzrSariel_Death] run particle soul_fire_flame ~ ~0.1 ~ 0.05 0.05 0.05 0.03 5
 execute if entity @s[tag=MobFound] run kill @s
 
 execute at @s if predicate skyblock:raining positioned over world_surface if entity @s[distance=..0.5] run scoreboard players add @s rng3 1

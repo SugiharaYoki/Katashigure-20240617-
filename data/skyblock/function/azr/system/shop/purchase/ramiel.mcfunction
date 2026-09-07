@@ -67,6 +67,13 @@ execute as @s[scores={Azr_Shop=8431560}] \
     unless function skyblock:azr/system/shop/purchase/ramiel/\
     pollution_diffuser run scoreboard players set tempPlayerShopSuccess Azr_system 1
 
+execute as @s[scores={Azr_Shop=8431561}] \
+    if entity @n[tag=AzrielTrader_dripstone_smith,distance=0..8] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* slime_ball[count={min:50}] \
+    unless function skyblock:azr/system/shop/purchase/ramiel/\
+    pollution_analyzer run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
 execute as @s[scores={Azr_Shop=8431563}] \
     if entity @n[tag=AzrielNPC_marinus,distance=0..8] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
@@ -173,6 +180,13 @@ execute as @s[scores={Azr_Shop=8431581}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if score @s Azr_currency_weight matches 40.. \
     unless function skyblock:azr/system/shop/purchase/ramiel/botanical_charm_arrow_split \
+    run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
+execute as @s[scores={Azr_Shop=8431582}] \
+    positioned -79977 -51 12 if entity @s[distance=..13] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s Azr_currency_weight matches 60.. \
+    unless function skyblock:azr/system/shop/purchase/ramiel/botanical_charm_burning_fire \
     run scoreboard players set tempPlayerShopSuccess Azr_system 1
 
 

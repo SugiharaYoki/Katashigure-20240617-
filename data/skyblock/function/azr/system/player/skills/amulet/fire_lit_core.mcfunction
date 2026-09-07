@@ -1,8 +1,10 @@
 scoreboard players remove @s AzrSariel_Amulet_FireLit_cooldown 1
 
 execute if items entity @s weapon.mainhand #minecraft:swords if score @s[scores={AzrSariel_Amulet_FireLit_cooldown=..0}] AzrSariel_Amulet_generic_damage_dealt matches 1.. run tag @s add AZR_Amulet_Instant_Success
+
 execute if items entity @s[tag=AzrSariel_Side_Life] weapon.mainhand #minecraft:swords if entity @s[scores={AzrSariel_Amulet_FireLit_cooldown=..0}] anchored eyes run particle minecraft:flame ^-0.3 ^-0.2 ^0.5 0 0 0 0 1
 execute if items entity @s[tag=AzrSariel_Side_Death] weapon.mainhand #minecraft:swords if entity @s[scores={AzrSariel_Amulet_FireLit_cooldown=..0}] anchored eyes run particle minecraft:soul_fire_flame ^-0.3 ^-0.2 ^0.5 0 0 0 0 1
+
 
 execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Life] anchored eyes run particle flame ^ ^-0.5 ^2 0.2 0.2 0.2 0.1 3
 execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Life] anchored eyes run particle flame ^ ^-0.5 ^3 0.2 0.2 0.2 0.1 3
@@ -27,8 +29,13 @@ execute if entity @s[tag=AZR_Amulet_Instant_Success] anchored eyes positioned ^ 
 execute if entity @s[tag=AZR_Amulet_Instant_Success] anchored eyes positioned ^ ^-1.5 ^3.5 as @e[tag=AzrielMob,distance=0..0.9,tag=!AZR_Amulet_Instant_Target] at @s run tag @s add AZR_Amulet_Instant_Target
 execute if entity @s[tag=AZR_Amulet_Instant_Success] anchored eyes positioned ^ ^-1.5 ^4.0 as @e[tag=AzrielMob,distance=0..0.9,tag=!AZR_Amulet_Instant_Target] at @s run tag @s add AZR_Amulet_Instant_Target
 
+scoreboard players set @s rng2 1
+execute if items entity @s container.* *[custom_data~{azr_amulet_burning_fire:1b}] run scoreboard players add @s rng2 1
 
-execute if entity @s[tag=AZR_Amulet_Instant_Success] as @e[tag=AZR_Amulet_Instant_Target] at @s run damage @s 0.5 in_fire by @p[tag=AZR_Amulet_Instant_Success]
+execute if entity @s[tag=AZR_Amulet_Instant_Success,scores={rng2=2..}] as @e[tag=AZR_Amulet_Instant_Target,tag=AzrielMob_typeMONSTER] at @s run damage @s 2.0 in_fire by @p[tag=AZR_Amulet_Instant_Success]
+execute if entity @s[tag=AZR_Amulet_Instant_Success,scores={rng2=1}] as @e[tag=AZR_Amulet_Instant_Target] at @s run damage @s 0.5 in_fire by @p[tag=AZR_Amulet_Instant_Success]
+execute if entity @s[tag=AZR_Amulet_Instant_Success,scores={rng2=2..}] as @e[tag=AZR_Amulet_Instant_Target] at @s run damage @s 1.0 in_fire by @p[tag=AZR_Amulet_Instant_Success]
+
 execute if entity @s[tag=AZR_Amulet_Instant_Success] as @e[tag=AZR_Amulet_Instant_Target,tag=AzrielMob_typeMONSTER] at @s run data modify entity @s Fire set value 60s
 execute if entity @s[tag=AZR_Amulet_Instant_Success] as @e[tag=AZR_Amulet_Instant_Target] at @s run tag @s remove AZR_Amulet_Instant_Target
 
