@@ -67,6 +67,12 @@ execute if score @s rng1 matches 93 positioned -79765 43 -280 run function skybl
 execute if score @s rng1 matches 93 positioned -79765 43 -280 run function skyblock:azr/assets/mobs/piglin_sword
 execute if score @s rng1 matches 93 positioned -79765 43 -280 run function skyblock:azr/assets/mobs/piglin_sword
 
+#通往boss4
+execute if score @s rng1 matches 93 positioned -79686 25 -346 run function skyblock:azr/assets/mobs/piglin_sword
+execute if score @s rng1 matches 93 positioned -79686 25 -346 run function skyblock:azr/assets/mobs/piglin_sword
+execute if score @s rng1 matches 93 positioned -79686 25 -346 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute if score @s rng1 matches 93 positioned -79686 25 -346 run function skyblock:azr/assets/mobs/piglin_spear
+
 
 execute if score @s rng1 matches 106..998 positioned -79831 26 -284 unless entity @a[tag=azrPlayer,distance=..15] run scoreboard players set @s rng1 997
 

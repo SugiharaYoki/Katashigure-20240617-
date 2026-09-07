@@ -991,6 +991,10 @@ clone -79514 5 -347 -79476 6 -309 -79514 14 -347
 
 #boss4通往工厂
 fill -79621 33 -327 -79621 30 -329 minecraft:nether_brick_fence
+setblock -79685 25 -347 waxed_copper_chest[facing=south]{Inventory:[]}
+item replace block -79685 25 -347 container.12 with gold_nugget 3
+item replace block -79685 25 -347 container.14 with gold_nugget 3
+
 
 ####遂栈
 #拉斐尔
