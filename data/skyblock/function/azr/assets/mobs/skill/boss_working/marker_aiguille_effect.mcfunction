@@ -17,16 +17,16 @@ $execute rotated as @s rotated 300 0 run particle smoke ^ ^0.2 ^$(distance) 0 0 
 $execute rotated as @s rotated 320 0 run particle smoke ^ ^0.2 ^$(distance) 0 0 0 0 1
 $execute rotated as @s rotated 340 0 run particle smoke ^ ^0.2 ^$(distance) 0 0 0 0 1
 
-$execute rotated as @s rotated 0 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
-$execute rotated as @s rotated 10 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
-$execute rotated as @s rotated 20 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
-$execute rotated as @s rotated 30 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
-$execute rotated as @s rotated 40 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
-$execute rotated as @s rotated 50 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
-$execute rotated as @s rotated 60 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
-$execute rotated as @s rotated 70 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
-$execute rotated as @s rotated 80 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
-$execute rotated as @s rotated 90 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
+$execute rotated as @s rotated 000 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
+$execute rotated as @s rotated 010 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
+$execute rotated as @s rotated 020 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
+$execute rotated as @s rotated 030 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
+$execute rotated as @s rotated 040 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
+$execute rotated as @s rotated 050 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
+$execute rotated as @s rotated 060 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
+$execute rotated as @s rotated 070 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
+$execute rotated as @s rotated 080 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
+$execute rotated as @s rotated 090 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
 $execute rotated as @s rotated 100 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
 $execute rotated as @s rotated 110 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
 $execute rotated as @s rotated 120 0 run particle block{block_state:{Name:"basalt"}} ^ ^0.2 ^$(distance) 0.04 0.01 0.04 0.2 4
