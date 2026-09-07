@@ -6,12 +6,12 @@ execute if items entity @s[tag=AzrSariel_Side_Life] weapon.mainhand #minecraft:s
 execute if items entity @s[tag=AzrSariel_Side_Death] weapon.mainhand #minecraft:swords if entity @s[scores={AzrSariel_Amulet_FireLit_cooldown=..0}] anchored eyes run particle minecraft:soul_fire_flame ^-0.3 ^-0.2 ^0.5 0 0 0 0 1
 
 
-execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Life] anchored eyes run particle flame ^ ^-0.5 ^2 0.2 0.2 0.2 0.1 3
-execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Life] anchored eyes run particle flame ^ ^-0.5 ^3 0.2 0.2 0.2 0.1 3
-execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Life] anchored eyes run particle flame ^ ^-0.5 ^4 0.2 0.2 0.2 0.1 3
-execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Death] anchored eyes run particle soul_fire_flame ^ ^-0.5 ^2 0.2 0.2 0.2 0.1 3
-execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Death] anchored eyes run particle soul_fire_flame ^ ^-0.5 ^3 0.2 0.2 0.2 0.1 3
-execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Death] anchored eyes run particle soul_fire_flame ^ ^-0.5 ^4 0.2 0.2 0.2 0.1 3
+execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Life] anchored eyes run particle flame ^ ^-0.5 ^2 0.2 0.2 0.2 0.1 3 normal @s
+execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Life] anchored eyes run particle flame ^ ^-0.5 ^3 0.2 0.2 0.2 0.1 3 normal @s
+execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Life] anchored eyes run particle flame ^ ^-0.5 ^4 0.2 0.2 0.2 0.1 3 normal @s
+execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Death] anchored eyes run particle soul_fire_flame ^ ^-0.5 ^2 0.2 0.2 0.2 0.1 3 normal @s
+execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Death] anchored eyes run particle soul_fire_flame ^ ^-0.5 ^3 0.2 0.2 0.2 0.1 3 normal @s
+execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Death] anchored eyes run particle soul_fire_flame ^ ^-0.5 ^4 0.2 0.2 0.2 0.1 3 normal @s
 execute if entity @s[tag=AZR_Amulet_Instant_Success] rotated ~ 0 positioned ^ ^ ^0.5 as @e[tag=AzrielMob,distance=0..0.9,tag=!AZR_Amulet_Instant_Target] at @s run tag @s add AZR_Amulet_Instant_Target
 execute if entity @s[tag=AZR_Amulet_Instant_Success] rotated ~ 0 positioned ^ ^ ^1.0 as @e[tag=AzrielMob,distance=0..0.9,tag=!AZR_Amulet_Instant_Target] at @s run tag @s add AZR_Amulet_Instant_Target
 execute if entity @s[tag=AZR_Amulet_Instant_Success] rotated ~ 0 positioned ^ ^ ^1.5 as @e[tag=AzrielMob,distance=0..0.9,tag=!AZR_Amulet_Instant_Target] at @s run tag @s add AZR_Amulet_Instant_Target
