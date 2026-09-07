@@ -1,32 +1,44 @@
-execute if score @s rng8 matches 82 positioned ~4 50 ~4 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 81 positioned ~3 50 ~4 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 80 positioned ~2 50 ~4 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 79 positioned ~1 50 ~4 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 78 positioned ~0 50 ~4 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 77 positioned ~-1 50 ~4 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 76 positioned ~-2 50 ~4 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 75 positioned ~-3 50 ~4 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 74 positioned ~-4 50 ~4 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 73 positioned ~4 50 ~3 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 72 positioned ~4 50 ~2 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 71 positioned ~4 50 ~1 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 70 positioned ~4 50 ~0 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 69 positioned ~4 50 ~-1 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 68 positioned ~4 50 ~-2 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 67 positioned ~4 50 ~-3 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 66 positioned ~4 50 ~-4 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 65 positioned ~3 50 ~-4 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 64 positioned ~2 50 ~-4 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 63 positioned ~1 50 ~-4 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 62 positioned ~0 50 ~-4 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 61 positioned ~-1 50 ~-4 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 60 positioned ~-2 50 ~-4 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 59 positioned ~-3 50 ~-4 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 58 positioned ~-4 50 ~-4 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 57 positioned ~-4 50 ~-3 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 56 positioned ~-4 50 ~-2 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 55 positioned ~-4 50 ~-1 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 54 positioned ~-4 50 ~0 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 53 positioned ~-4 50 ~1 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 52 positioned ~-4 50 ~2 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s rng8 matches 51 positioned ~-4 50 ~3 align xyz positioned ~0.5 50 ~0.5 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 51 rotated ~000 0 rotated ~000 ~ positioned ^ ^ ^9 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 52 rotated ~020 0 rotated ~000 ~ positioned ^ ^ ^9 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 53 rotated ~040 0 rotated ~000 ~ positioned ^ ^ ^9 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 54 rotated ~060 0 rotated ~000 ~ positioned ^ ^ ^9 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 55 rotated ~080 0 rotated ~000 ~ positioned ^ ^ ^9 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 56 rotated ~100 0 rotated ~000 ~ positioned ^ ^ ^9 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 57 rotated ~120 0 rotated ~000 ~ positioned ^ ^ ^9 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 58 rotated ~140 0 rotated ~000 ~ positioned ^ ^ ^9 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 59 rotated ~160 0 rotated ~000 ~ positioned ^ ^ ^9 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 60 rotated ~180 0 rotated ~000 ~ positioned ^ ^ ^9 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 61 rotated ~200 0 rotated ~000 ~ positioned ^ ^ ^9 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 62 rotated ~220 0 rotated ~000 ~ positioned ^ ^ ^9 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 63 rotated ~240 0 rotated ~000 ~ positioned ^ ^ ^9 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 64 rotated ~260 0 rotated ~000 ~ positioned ^ ^ ^9 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 65 rotated ~280 0 rotated ~000 ~ positioned ^ ^ ^9 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 66 rotated ~300 0 rotated ~000 ~ positioned ^ ^ ^9 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 67 rotated ~320 0 rotated ~000 ~ positioned ^ ^ ^9 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 68 rotated ~340 0 rotated ~000 ~ positioned ^ ^ ^9 run function skyblock:azr/assets/mobs/trap_fang_auto
+
+execute if score @s rng8 matches 51 rotated ~000 0 rotated ~180 ~ positioned ^ ^ ^5 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 52 rotated ~020 0 rotated ~180 ~ positioned ^ ^ ^5 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 53 rotated ~040 0 rotated ~180 ~ positioned ^ ^ ^5 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 54 rotated ~060 0 rotated ~180 ~ positioned ^ ^ ^5 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 55 rotated ~080 0 rotated ~180 ~ positioned ^ ^ ^5 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 56 rotated ~100 0 rotated ~180 ~ positioned ^ ^ ^5 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 57 rotated ~120 0 rotated ~180 ~ positioned ^ ^ ^5 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 58 rotated ~140 0 rotated ~180 ~ positioned ^ ^ ^5 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 59 rotated ~160 0 rotated ~180 ~ positioned ^ ^ ^5 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 60 rotated ~180 0 rotated ~180 ~ positioned ^ ^ ^5 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 61 rotated ~200 0 rotated ~180 ~ positioned ^ ^ ^5 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 62 rotated ~220 0 rotated ~180 ~ positioned ^ ^ ^5 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 63 rotated ~240 0 rotated ~180 ~ positioned ^ ^ ^5 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 64 rotated ~260 0 rotated ~180 ~ positioned ^ ^ ^5 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 65 rotated ~280 0 rotated ~180 ~ positioned ^ ^ ^5 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 66 rotated ~300 0 rotated ~180 ~ positioned ^ ^ ^5 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 67 rotated ~320 0 rotated ~180 ~ positioned ^ ^ ^5 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s rng8 matches 68 rotated ~340 0 rotated ~180 ~ positioned ^ ^ ^5 run function skyblock:azr/assets/mobs/trap_fang_auto
+
+
+
+
+
+
+
