@@ -15,7 +15,7 @@ scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 sea_4temp8 0
 tag 10e959db-4b44-4cdd-b98c-350d3b454206 add SeGa_sea_ch6
 scoreboard players set SEAmusic rng1 0
 
-
+fill 90136 139 49 90137 137 49 minecraft:air
 
 fill 90134 130 58 90134 130 59 minecraft:heavy_weighted_pressure_plate
 fill 90142 132 46 90142 130 46 air
