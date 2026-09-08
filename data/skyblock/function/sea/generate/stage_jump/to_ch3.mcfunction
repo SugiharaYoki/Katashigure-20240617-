@@ -34,6 +34,7 @@ setblock 90071 137 151 minecraft:iron_trapdoor[facing=north,open=true]
 setblock 90082 128 94 air
 time set 16000t
 
+scoreboard players set sea_ch3_event_backupradio sea_4temp3 0
 execute if entity @s[scores={SEAPT_setting_yuehan=2}] run fill 90095 131 98 90091 128 98 air
 execute if entity @s[scores={SEAPT_setting_yuehan=2}] run tag @a[tag=SEAPT] add e_i_27
 execute if entity @s[scores={SEAPT_setting_yuehan=2}] run tag @a[tag=SEAPT] add e_i_28
