@@ -39,6 +39,10 @@ execute if entity @s[tag=Moving] run data modify entity @s Fire set value 0
 execute if entity @s[tag=Moving] run tag @s remove Moving
 
 
+execute if entity @s[tag=!NoAI] unless entity @n[tag=AzrielMob_demon_amy,distance=..30] run data modify entity @s NoAI set value 1b
+execute if entity @s[tag=!NoAI] unless entity @n[tag=AzrielMob_demon_amy,distance=..30] run tag @s add NoAI
+execute if entity @s[tag=NoAI] if entity @n[tag=AzrielMob_demon_amy,distance=..30] run tag @s remove NoAI
+execute if entity @s[tag=NoAI] if entity @n[tag=AzrielMob_demon_amy,distance=..30] run data modify entity @s NoAI set value 0b
 
 execute if score @s rng1 matches 20 store result score @s rng7 run random value 1..5
 execute if score @s rng1 matches 30 if score @s rng7 matches 1..2 rotated ~ 0 positioned ^ ^ ^3 run summon marker ~ ~1 ~ {Tags:["AZR_summon_arrow_line_down","AzrielMob_mob_marker","AzrielMob_mob_marker_Friendly"]}
