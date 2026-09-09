@@ -73,3 +73,6 @@ execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer
 execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,distance=0..35] run kill @s
 
 
+
+execute as @n[type=item,distance=..50,tag=!NotDripstone] if entity @s[type=item,nbt={Item:{id:"minecraft:pointed_dripstone"}}] run kill @s
+execute as @n[type=item,distance=..50,tag=!NotDripstone] run tag @s add NotDripstone
