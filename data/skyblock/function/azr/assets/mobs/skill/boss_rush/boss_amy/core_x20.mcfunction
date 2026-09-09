@@ -48,10 +48,18 @@ execute if score @s[scores={rng2=5..6,Health=..550}] rng1 matches 153.. run func
 execute if score @s[scores={rng2=7..8,Health=..550}] rng1 matches 153.. run function skyblock:azr/assets/mobs/skill/boss4_amy/attack_fan_outward {initial_rotation:270}
 
 execute store result score @s rng5 run random value 1..80
-execute if score @s[scores={rng3=2..,Health=..400},tag=!AZR_action_halt] rng5 matches 104 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
-execute if score @s[scores={rng3=4..,Health=..400},tag=!AZR_action_halt] rng5 matches 105 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
-execute if score @s[scores={rng3=6..,Health=..400},tag=!AZR_action_halt] rng5 matches 106 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
-execute if score @s[scores={rng3=8..,Health=..400},tag=!AZR_action_halt] rng5 matches 107 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng3=2..,Health=..400}] rng5 matches 24 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng3=4..,Health=..400}] rng5 matches 25 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng3=6..,Health=..400}] rng5 matches 26 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng3=8..,Health=..400}] rng5 matches 27 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng3=2..,Health=..300}] rng5 matches 34 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng3=4..,Health=..300}] rng5 matches 35 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng3=6..,Health=..300}] rng5 matches 36 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng3=8..,Health=..300}] rng5 matches 37 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng3=2..,Health=..100}] rng5 matches 44 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng3=4..,Health=..100}] rng5 matches 45 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng3=6..,Health=..100}] rng5 matches 46 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng3=8..,Health=..100}] rng5 matches 47 run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_throw_marker","AzrTrace","AzrielMob_mob_marker"]}
 
 
 
