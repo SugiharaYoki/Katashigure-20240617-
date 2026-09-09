@@ -1,6 +1,6 @@
-execute as @n[type=minecraft:marker,tag=azr_spin_core_part2,distance=..10] rotated as @s run tp @s ~ ~ ~ ~0.9 0
+execute as @n[type=minecraft:marker,tag=azr_spin_core_part2,distance=..10] at @s rotated as @s run tp @s ~ ~ ~ ~0.9 0
 
-execute as @n[type=minecraft:marker,tag=azr_spin_core_part2,distance=..10] rotated as @s facing entity @n[tag=AzrielMob_amy,distance=..50] eyes run tp @s ^ ^ ^0.1
+execute as @n[type=minecraft:marker,tag=azr_spin_core_part2,distance=..10] at @s rotated as @s facing entity @n[tag=AzrielMob_amy,distance=..50] eyes run tp @s ^ ^ ^0.1
 
 
 execute as @n[type=minecraft:marker,tag=azr_spin_core_part2,distance=..10] at @s rotated as @s positioned ^ ^0.012 ^9.8 run particle flame ~ ~1 ~ 0 0.5 0 0.00 3
