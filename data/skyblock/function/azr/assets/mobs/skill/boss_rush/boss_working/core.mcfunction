@@ -1,7 +1,6 @@
 
 
 execute store result score @s Health run data get entity @s Health
-execute store result bossbar azr:boss_hp_bar_working value run scoreboard players get @s Health
 
 
 
