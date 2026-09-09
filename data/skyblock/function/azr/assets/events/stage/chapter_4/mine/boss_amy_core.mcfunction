@@ -1,6 +1,8 @@
 scoreboard players add @s rng1 1
 scoreboard players add @s rng2 1
 
+execute as @s[scores={rng1=3}] run scoreboard players set stage Azr_system 63
+
 scoreboard players add @s[tag=AzrBoss4_Mersenne_Help_1] rng4 1
 
 execute as @a[tag=azrPlayer,distance=..500] at @s run stopsound @s music music.nether.crimson_forest
@@ -29,6 +31,7 @@ execute as @s[scores={rng2=7..}] run scoreboard players operation @n[tag=AzrielM
 
 execute unless score @s rng3 matches 10..20 as @s[scores={rng2=7}] run bossbar add azr:boss_hp_bar "黑铠的狂戮 - ？？？"
 execute if score @s rng3 matches 10..20 as @s[scores={rng2=7}] run bossbar add azr:boss_hp_bar [{text:"天行有常，不为桀亡 魔神 · ",bold:true,color:"white"},{text:"亚米",bold:true,color:"#ff5050"}]
+
 execute as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar color red
 execute as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar max 100
 execute as @s[scores={rng2=7}] run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]

@@ -58,6 +58,6 @@ execute as @s[scores={rng1=55}] positioned -79766 23 -461 run summon marker ~ ~ 
 execute as @s[scores={rng1=60}] at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute as @s[scores={rng1=60}] run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“反、反抗军来了！他们会不会自己打起来！？”",color:"white"}]
 execute as @s[scores={rng1=77}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“那还挺省事的。”",color:"white"}]
-
+execute as @s[scores={rng1=77}] run scoreboard players set stage Azr_system 58
 
 execute as @s[scores={rng1=100}] run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage14

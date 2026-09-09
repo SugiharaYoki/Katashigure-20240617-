@@ -64,15 +64,6 @@ execute if block -79900 41 -60 minecraft:birch_button[powered=true] run scoreboa
 execute if block -79900 41 -60 minecraft:birch_button[powered=true] run setblock -79900 41 -60 air
 
 
-#stage14
-execute if block -79765 24 -449 minecraft:crimson_button[powered=true] run scoreboard players set stage Azr_system 55
-execute if block -79765 24 -449 minecraft:crimson_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 0
-#stage15
-execute if block -79657 23 -421 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 57
-execute if block -79657 23 -421 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 20001
-#stage16(event16)
-execute if block -79540 25 -406 minecraft:birch_button[powered=true] run scoreboard players set stage Azr_system 59
-execute if block -79540 25 -406 minecraft:birch_button[powered=true] run scoreboard players set stage_main_thread AzrTimerStack 1
 
 #Stage Cerement
 execute if block -79946 39 50 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/bonus_stage/stage_cerement_prep
@@ -80,14 +71,6 @@ execute if block -79946 39 50 minecraft:birch_button[powered=true] if score stag
 #遭遇事件
 #Stage Appetence uncommited
 execute if block -79914 55 -111 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/bonus_stage/stage_appetence_prep
-#Stage Breakout uncommited
-execute if block -79878 41 -131 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79877.5,y=41.00,z=-130.5,distance=..1] run scoreboard players set stage Azr_system 45
-execute if block -79878 41 -131 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79877.5,y=41.00,z=-130.5,distance=..1] run scoreboard players set stage_main_thread AzrTimerStack 0
-execute if block -79878 41 -131 minecraft:lever[powered=true] unless entity @n[type=interaction,tag=temp,x=-79877.5,y=41.00,z=-130.5,distance=..1] run summon minecraft:interaction -79877.5 41.00 -130.5 {Tags:["temp"]}
-#Stage Impersonate
-execute if block -79799 28 -284 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/bonus_stage/stage_impersonate
-#Stage Object
-execute if block -79713 47 -380 birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/bonus_stage/stage_object_prep
 
 #extra bonus - stage3α
 execute if block -79924 39 25 minecraft:birch_button[powered=true] positioned -79933 38 27 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead3","AzrielMob_summon_delay","AzrielMob_level_1"]}

@@ -190,6 +190,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_2:1
 execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_2:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBw] CustomName set value ' - '
 execute if entity @s[tag=AZS_BoS08] run data modify entity @n[tag=AzrRamielExStage_displaymarkerd] CustomName set value ' - '
 
+
 tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkera]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432301"},hover_event:{"action":"show_text","value":{text:"Appetence - 叛诛卷宗\n使用棍类武器攻击背对自己的怪物时造成大额伤害、增加手持棍类武器时的潜行速度",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerb]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432302"},hover_event:{"action":"show_text","value":{text:"Breakout - 枝棘石板\n受伤时造成范围伤害、受高额伤害时触发短时间减伤",color:"white"}}},\
@@ -199,10 +200,10 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerf]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432306"},hover_event:{"action":"show_text","value":{text:"Flux - 燃点卷宗\n剑攻击点燃、加强节制天平扇形火",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerg]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432307"},hover_event:{"action":"show_text","value":{text:"Guise - 滋育石板\n蹲下时移动速度减少、攻击力减少、防御力增加、缓慢恢复生命",color:"white"}}},\
 {text:"\n "},\
-{selector:"@n[tag=AzrRamielExStage_displaymarkerh]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432308"},hover_event:{"action":"show_text","value":{text:"Hoistway - 烨墙石板\n按前进键增加攻防、保持长按增加移动速度",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerh]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432308"},hover_event:{"action":"show_text","value":{text:"Hoistway - 烨墙石板\n整合花墙石板、保持长按前进键增加移动速度",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkeri]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432309"},hover_event:{"action":"show_text","value":{text:"Index - 斥跃石板\n蹲下跳得更高、史莱姆块助跳",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerj]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432310"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
-{selector:"@n[tag=AzrRamielExStage_displaymarkerk]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432311"},hover_event:{"action":"show_text","value":{text:"Kinetic - 悬风石板\n按两下跳跃以悬浮",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerk]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432311"},hover_event:{"action":"show_text","value":{text:"Kinetic - 悬风石板\n长按跳跃以悬浮",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerl]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432312"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerm]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432313"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkern]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432314"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
@@ -223,13 +224,13 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {text:"\n "},\
 {selector:"@n[tag=AzrRamielExStage_displaymarker1]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432327"},hover_event:{"action":"show_text","value":{text:"权之残影 - 天界怀表\n在波数暂停时手持，可以冻结计时",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarker2]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432330"},hover_event:{"action":"show_text","value":{text:"马林努斯 - 岚切卷宗\n斧攻击自动延时二次攻击、左右移动时加强剑的范围伤害",color:"white"}}},\
-{selector:"@n[tag=AzrRamielExStage_displaymarker3]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432332"},hover_event:{"action":"show_text","value":{text:"权之残影 - 光明天使的符文\n迫坠、退避、冲刺石板整合、施放时无敌帧",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarker3]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432332"},hover_event:{"action":"show_text","value":{text:"光明天使的符文\n多块基础石板功能整合、施放时无敌帧",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarker4]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432339"},hover_event:{"action":"show_text","value":{text:"亚米 - 血潮石板\n可检测到魔力潮汐，身处其中可升起",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBa]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432331"},hover_event:{"action":"show_text","value":{text:"阴影处刑者 - 退避石板\n按后退键与跑步键，快速后撤步",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBc]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432340"},hover_event:{"action":"show_text","value":{text:"百夫长·博物区 - 地裂卷宗\n冲刺时使用近战武器攻击，施放地裂冲击",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBd]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432329"},hover_event:{"action":"show_text","value":{text:"锅炉驱动者 - 逐焰卷宗\n持续召唤最多3个跟随火球，减少节制天平电球最低间隔时长",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBm]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432328"},hover_event:{"action":"show_text","value":{text:"噬藓母虫 - 深藓石板\n造成攻击可增加“索命连击”充能、在重生锚点可获得5分钟孢子的庇护（生命值上限加成）",color:"white"}}},\
-{selector:"@n[tag=AzrRamielExStage_displaymarkerBv]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432338"},hover_event:{"action":"show_text","value":{text:"晦怨贤士 - 悬蔑石板\n按两下跳跃以悬浮、悬浮期间攻击延长悬浮时间",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerBv]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432338"},hover_event:{"action":"show_text","value":{text:"晦怨贤士 - 悬蔑石板\n整合悬风石板、悬浮期间攻击延长悬浮时间",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBw]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432333"},hover_event:{"action":"show_text","value":{text:"金属学家 - 枢纽石板\n允许在重生锚点之间传送",color:"white"}}},\
 {text:"\n "},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerShop01]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432334"},hover_event:{"action":"show_text","value":{text:"污染平衡器\n减轻重金属池水伤害",color:"white"}}},\

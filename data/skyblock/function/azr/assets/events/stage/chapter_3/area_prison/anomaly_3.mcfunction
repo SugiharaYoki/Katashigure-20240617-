@@ -5,6 +5,7 @@ execute if score @s rng1 matches 30..35 run scoreboard players set @s rng1 28
 execute if score @s rng1 matches 1..32 as @a[x=-79840,y=-18,z=-160,dx=5,dy=5,dz=29,tag=azrPlayer] run effect give @s slowness 20 4 true
 execute if score @s rng1 matches 1..32 if entity @a[x=-79840,y=-18,z=-160,dx=5,dy=5,dz=29,tag=azrPlayer] run scoreboard players set @s rng1 36
 
+execute if score @s rng1 matches 38 run scoreboard players set stage Azr_system 42
 execute if score @s rng1 matches 38 at @s run forceload add ~ ~
 execute if score @s rng1 matches 38 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"冷淡的播报音：",color:"red",bold:1b},{text:"\n“本台记者报道，美国加利福尼亚州一所私立初中周二上午发生严重火灾。由于学校建筑长期存在消防通道不足、隔火门失效、走廊堆放可燃材料等违规问题，火势在短时间内迅速蔓延，造成多名学生和教职员工受伤。\n火灾发生在上午9时17分左右，当时学校正在上第二节课；不到五分钟，西教学楼一层和二层的主要通道便被浓烟覆盖.部分班级无法按照原定疏散路线撤离，只能在教师带领下从低层窗户逃生。”",color:"white",bold: false}]
 execute if score @s rng1 matches 78 as @a[distance=..2000,tag=azrShowDialog] at @s run tellraw @s [{text:"冷淡的播报音：",color:"red",bold:1b},{text:"\n“当地消防部门称，第一批消防车在接警后约6分钟抵达现场，但由于校舍内部结构复杂，火势已沿着吊顶空间和旧通风管道向东侧教学区扩散。消防员进入建筑后发现，部分防火门被木楔长期固定在开启状态，几处疏散指示灯失效，西侧楼梯间还堆放着纸箱、旧桌椅和清洁用品，严重阻碍学生撤离。\n截至周二晚间，事故已造成至少42名学生和4名教职员工受伤，其中7名学生因吸入浓烟和烧伤被送往州儿童医院治疗，暂无生命危险。另有多名学生因踩踏擦伤在现场接受急救。\n根据警方透露，学校监控画面拍到一名身穿深色连帽外套的人在火灾发生前约十分钟进入西侧员工通道。目前警方尚未公布嫌疑人具体身份，联邦酒精、烟草、火器及爆炸物管理局的火灾调查人员也已介入。”",color:"white",bold: false}]

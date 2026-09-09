@@ -25,6 +25,7 @@ execute if score @s rng1 matches 5..8 run playsound minecraft:block.iron_door.op
 execute if score @s rng1 matches 25 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
 execute if score @s rng1 matches 25 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“我们一定会遭遇恣眼。它依靠神庭空气中的神圣魔力获得滋养。只要它在神庭，它就是无敌的。”",color:"white"}]
 
+
 execute if score @s rng1 matches 24 run tp @n[tag=AzrielNPC_marinus] -79889 24 -186
 
 execute if score @s rng1 matches 5 positioned -79890.02 33.00 -171.96 as @a[tag=azrPlayer] run spawnpoint @a -79890 24 -190
