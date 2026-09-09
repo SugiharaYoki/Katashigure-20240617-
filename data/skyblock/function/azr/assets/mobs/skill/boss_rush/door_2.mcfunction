@@ -62,7 +62,7 @@ execute if score @s AzrEntityTimer matches 605 positioned -79167 50 -16 run func
 execute if score @s AzrEntityTimer matches 620 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/summon
 execute if score @s AzrEntityTimer matches 620 positioned -79187 50 -16 run tag @e[tag=AzrielMob,distance=..30,type=zombie] add AzrielMob_BossRush_Target
 execute if score @s AzrEntityTimer matches 620 positioned -79187 50 -16 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
-execute if score @s AzrEntityTimer matches 620..799 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/core
+execute if score @s AzrEntityTimer matches 620..799 positioned -79167 50 -16 as @n[tag=AzrielMob_BossRush_Target,distance=..50,type=zombie] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/core
 
 execute if score @s AzrEntityTimer matches 805 run fill -79159 77 -34 -79195 77 2 air replace minecraft:tinted_glass
 execute if score @s AzrEntityTimer matches 805 run scoreboard players add @s rng11 10
