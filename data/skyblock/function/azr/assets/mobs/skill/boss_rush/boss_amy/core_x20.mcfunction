@@ -87,6 +87,8 @@ execute if entity @s[scores={Health=..250},tag=!Phase3] as @s at @s run tag @s a
 
 execute if entity @s[scores={Health=..150},tag=Phase4] as @s at @s run function skyblock:azr/assets/mobs/skill/boss4_amy/particle_shield_part2
 execute if entity @s[scores={Health=..150},tag=!Phase4] as @s at @s run summon minecraft:marker ~ ~ ~ {Tags:["azr_spin_core_part2"],Rotation:[0f,0f]}
+execute if entity @s[scores={Health=..150},tag=Phase4] as @s at @s run function skyblock:azr/assets/mobs/skill/boss4_amy/particle_shield_part3
+execute if entity @s[scores={Health=..150},tag=!Phase4] as @s at @s run summon minecraft:marker ~ ~ ~ {Tags:["azr_spin_core_part3"],Rotation:[0f,0f]}
 execute if entity @s[scores={Health=..150},tag=!Phase4] as @s at @s run particle explosion ~4 ~3 ~ 0 0 0 0 1
 execute if entity @s[scores={Health=..150},tag=!Phase4] as @s at @s run particle explosion ~-4 ~3 ~ 0 0 0 0 1
 execute if entity @s[scores={Health=..150},tag=!Phase4] as @s at @s run summon item_display ~4 ~3 ~ {Tags:["AzrielMob_mob_marker","AzrielMob_demon_amy_flame_eye_c","AzrielMob_demon_amy_flame_eye_part2"],transformation:{left_rotation:[0,1,0,1],right_rotation:[0,1,0,1],translation:[0,0,0],scale:[1,1,1]},item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjE0MmEzNWFjMGIwNTVlZDUwYTVjYmY4NzBiNmVmMWNjMWY5NGUyNjQyYjliYTY1MGM5ZTAzODVlNmNiZTM2In19fQ=="}]}}}}
