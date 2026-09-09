@@ -75,7 +75,7 @@ execute if entity @s[scores={Health=..450},tag=!Phase2] as @s at @s run summon i
 execute if entity @s[scores={Health=..450},tag=!Phase2] as @s at @s run tag @s add Phase2
 
 execute if entity @s[scores={Health=..250},tag=!Phase3] as @s at @s run effect give @s slowness 3 39 true
-execute if entity @s[scores={Health=..250},tag=!Phase3] as @s at @s run particle crimson_spore ~ ~ ~ 10 3 10 0 200
+execute if entity @s[scores={Health=..250},tag=!Phase3] as @s at @s run particle crimson_spore ~ ~ ~ 6 3 6 0 600
 execute if entity @s[scores={Health=..250},tag=!Phase3] as @s at @s run playsound minecraft:entity.wither.spawn hostile @a ~ ~ ~ 10 0.8
 execute if entity @s[scores={Health=..250},tag=!Phase3] as @s at @s run particle large_smoke ~ ~0.5 ~ 3 0.5 3 0 200
 execute if entity @s[scores={Health=..250},tag=!Phase3] as @s at @s run summon minecraft:marker ~ ~ ~ {Tags:["azr_spin_core"],Rotation:[0f,0f]}
