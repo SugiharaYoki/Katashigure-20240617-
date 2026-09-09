@@ -162,6 +162,7 @@ execute as @s[scores={rng1=3138}] at @n[tag=AzrielTrader_pig_henry] run playsoun
 execute as @s[scores={rng1=3138}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“不管如何……老大，我会一直支持你。”",color:"white"}]
 
 execute as @s[scores={rng1=3001}] positioned -79572 11 -414 run function skyblock:azr/assets/mobs/utility_respawn_anchor
+execute as @s[scores={rng1=3001}] positioned -79572 11 -414 unless entity @n[type=minecraft:parrot,tag=AzrielNPC_bird] positioned -79540 24 -406 run function skyblock:azr/assets/mobs/unique/bird
 execute as @s[scores={rng1=3001}] positioned -79572 11 -414 run tp @n[type=minecraft:parrot,tag=AzrielNPC_bird] -79540 24 -406
 execute as @s[scores={rng1=3138}] run scoreboard players set stage Azr_system 60
 
