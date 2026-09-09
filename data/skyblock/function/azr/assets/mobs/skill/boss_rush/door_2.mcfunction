@@ -84,6 +84,11 @@ execute if score @s AzrEntityTimer matches 825 positioned -79187 50 -16 as @e[ta
 execute if score @s AzrEntityTimer matches 825..991 positioned -79167 50 -16 as @n[tag=AzrielMob_BossRush_Target,distance=..50,type=piglin_brute] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_amy/core
 
 
+execute if score @s AzrEntityTimer matches 991 run kill @e[tag=azr_spin_core,distance=..100,type=marker]
+execute if score @s AzrEntityTimer matches 991 run kill @e[tag=azr_spin_core_part2,distance=..100,type=marker]
+execute if score @s AzrEntityTimer matches 991 run kill @e[tag=azr_spin_core_part3,distance=..100,type=marker]
+execute if score @s AzrEntityTimer matches 991 as @e[tag=azr_spin_plate,distance=..100,type=block_display] at @s run particle campfire_cosy_smoke ~ ~0.5 ~ 0.5 0.5 0.5 0 4
+execute if score @s AzrEntityTimer matches 991 run kill @e[tag=azr_spin_plate,distance=..100,type=block_display]
 execute if score @s AzrEntityTimer matches 991 run stopsound @a[distance=..150,tag=azrShowDialog] music minecraft:fuse
 execute if score @s AzrEntityTimer matches 991 run effect give @a[distance=..150,tag=azrPlayer] minecraft:resistance 10 4 true
 execute if score @s AzrEntityTimer matches 991 run effect give @a[distance=..150,tag=azrPlayer] minecraft:regeneration 10 9 true
