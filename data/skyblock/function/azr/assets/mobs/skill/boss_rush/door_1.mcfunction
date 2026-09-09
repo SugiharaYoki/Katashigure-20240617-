@@ -128,6 +128,7 @@ execute if score @s AzrEntityTimer matches 1900 run kill @e[type=marker,distance
 execute if score @s AzrEntityTimer matches 1900 run kill @e[type=item,distance=..80]
 execute if score @s AzrEntityTimer matches 1900 run stopsound @a[tag=azrShowDialog]
 execute if score @s AzrEntityTimer matches 1900 run kill @s
+execute if score @s AzrEntityTimer matches 1900 run kill @e[type=marker,distance=..50]
 execute if score @s AzrEntityTimer matches 1900 run forceload remove -79195 2 -79159 -34
 
 

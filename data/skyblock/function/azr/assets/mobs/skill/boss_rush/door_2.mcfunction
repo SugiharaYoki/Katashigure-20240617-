@@ -127,12 +127,14 @@ execute if score @s AzrEntityTimer matches 1900 as @a[tag=azrPlayer,tag=azrPlaye
 execute if score @s AzrEntityTimer matches 1900 as @a[tag=azrPlayer,tag=azrPlayer_door_participating] at @s run tellraw @s [{text:"神庭幻台 第贰场梦",bold:true,color:"light_purple"},{text:" 梦醒",bold:true,color:"white"},{text:"\n - 分数：",bold:false,color:"white"},{"score":{"name":"@n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter]","objective":"rng10"},color:"white"},{text:"\n - 历史最高纪录：",bold:false,color:"white"},{"score":{"name":"@s","objective":"azr_speedrun_door2"},bold:false,color:"white"},{text:"\n - 获得 ",bold:false,color:"white"},{"score":{"name":"@n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter]","objective":"rng11"},bold:false,color:"white"},{text:" 恶魔砝码",bold:false,color:"white"}]
 
 execute if score @s AzrEntityTimer matches 1900 run fill -79159 77 -34 -79195 77 2 minecraft:air replace tinted_glass
+execute if score @s AzrEntityTimer matches 1900 run kill @e[type=block_display,distance=..30]
 execute if score @s AzrEntityTimer matches 1900 run kill @e[tag=AzrielMob_BossRush_Target,distance=..120]
 execute if score @s AzrEntityTimer matches 1900 run kill @e[tag=AzrielMob,distance=..120]
 execute if score @s AzrEntityTimer matches 1900 run kill @e[type=marker,distance=..80]
 execute if score @s AzrEntityTimer matches 1900 run kill @e[type=item,distance=..80]
 execute if score @s AzrEntityTimer matches 1900 run stopsound @a[tag=azrShowDialog]
 execute if score @s AzrEntityTimer matches 1900 run kill @s
+execute if score @s AzrEntityTimer matches 1900 run kill @e[type=marker,distance=..50]
 execute if score @s AzrEntityTimer matches 1900 run forceload remove -79195 2 -79159 -34
 
 
