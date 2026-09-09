@@ -18,4 +18,6 @@ execute as @s at @s if score @s[scores={rng2=7..8}] rng8 matches 1.. run functio
 execute as @s at @s if score @s rng8 matches 143.. run scoreboard players set @s rng2 0
 execute as @s at @s if score @s rng8 matches 143.. run scoreboard players set @s rng8 -1
 
+execute as @n[type=item,distance=..50,tag=!NotDripstone] if entity @s[type=item,nbt={Item:{id:"minecraft:pointed_dripstone"}}] run kill @s
+execute as @n[type=item,distance=..50,tag=!NotDripstone] run tag @s add NotDripstone
 
