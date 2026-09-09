@@ -12,6 +12,9 @@ scoreboard players add @s rng1 1
 #多于15个汉字、少于30个汉字的句子：rng1+17
 #多于30个汉字的句子：rng1+21
 
+tag @s remove ch4_conclusion_conversation_speedup
+execute if entity @a[tag=azrPlayer,x=-79605,y=14,z=-439,dx=250,dy=20,dz=250] unless entity @a[tag=azrPlayer,x=-79605,y=-10,z=-439,dx=250,dy=24,dz=250] run tag @s add ch4_conclusion_conversation_speedup
+
 execute if score @s rng1 matches 12..100 as @n[tag=AzrielNPC_andralune] at @s run effect clear @s invisibility
 execute if score @s rng1 matches 12 as @n[tag=AzrielNPC_andralune] at @s run data modify entity @n[tag=AzrielNPC_andralune] NoAI set value 1b
 execute if score @s rng1 matches 12 run tp @n[tag=AzrielNPC_andralune] ~ ~ ~ facing entity @p[tag=azrPlayer]
@@ -22,6 +25,7 @@ execute if score @s rng1 matches 25 run tellraw @a[tag=azrShowDialog] [{text:"�
 
 execute if score @s rng1 matches 38 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 execute if score @s rng1 matches 38 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“幸亏我找到了对付魔神的手段。只不过要是亚米的权能更高一些，怕是我们就不会赢得如此轻松了。”",color:"white"}]
+execute if score @s[tag=ch4_conclusion_conversation_speedup] rng1 matches 38 run scoreboard players set @s rng1 58
 
 execute if score @s rng1 matches 30 run tp @n[tag=AzrielNPC_mersenne] -79498 15 -331
 execute if score @s rng1 matches 33 run tp @n[tag=AzrielNPC_marinus] -79498 15 -325
@@ -33,20 +37,24 @@ execute if score @s rng1 matches 25 run tp @n[tag=AzrielNPC_andralune] -79500 15
 # ============================================================
 
 execute if score @s rng1 matches 59 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“默尔森的传音我一直有听到。只不过我没想到连马林努斯都来了。”",color:"white"}]
+execute if score @s[tag=ch4_conclusion_conversation_speedup] rng1 matches 59 run scoreboard players set @s rng1 75
 
 execute if score @s rng1 matches 76 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“牢房那一战之后，神界军的伤亡……如何？”",color:"white"}]
-
+execute if score @s[tag=ch4_conclusion_conversation_speedup] rng1 matches 76 run scoreboard players set @s rng1 88
 
 # 马林努斯看向玩家
 execute if score @s rng1 matches 89 as @n[tag=AzrielNPC_marinus] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer] eyes
 
 execute if score @s rng1 matches 89 at @n[tag=AzrielNPC_marinus] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
 execute if score @s rng1 matches 89 run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold:false,text:"\n“托爱理莎小姐的福，损失被控制到最小。”",color:"white"}]
+execute if score @s[tag=ch4_conclusion_conversation_speedup] rng1 matches 89 run scoreboard players set @s rng1 105
 
 execute if score @s rng1 matches 106 at @n[tag=AzrielNPC_marinus] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
 execute if score @s rng1 matches 106 run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold:false,text:"\n“只不过……”",color:"white"}]
+execute if score @s[tag=ch4_conclusion_conversation_speedup] rng1 matches 106 run scoreboard players set @s rng1 118
 
 execute if score @s rng1 matches 119 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“看来状况不太妙。”",color:"white"}]
+execute if score @s[tag=ch4_conclusion_conversation_speedup] rng1 matches 119 run scoreboard players set @s rng1 131
 
 
 # 默尔森看向玩家
@@ -54,9 +62,8 @@ execute if score @s rng1 matches 132 as @n[tag=AzrielNPC_mersenne] at @s run tp 
 
 execute if score @s rng1 matches 132 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 execute if score @s rng1 matches 132 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“如实转告，爱理莎小姐……神庭，已经沦陷了。”",color:"white"}]
+execute if score @s[tag=ch4_conclusion_conversation_speedup] rng1 matches 132 run scoreboard players set @s rng1 148
 
-tag @s remove ch4_conclusion_conversation_speedup
-execute if entity @a[tag=azrPlayer,x=-79605,y=14,z=-439,dx=250,dy=20,dz=250] unless entity @a[tag=azrPlayer,x=-79605,y=-10,z=-439,dx=250,dy=24,dz=250] run tag @s add ch4_conclusion_conversation_speedup
 
 # 安德拉伦恩看向玩家
 execute if score @s rng1 matches 149 as @n[tag=AzrielNPC_andralune] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer] eyes
@@ -107,7 +114,7 @@ execute if score @s[tag=ch4_conclusion_conversation_speedup] rng1 matches 344 ru
 
 execute if score @s rng1 matches 361 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6
 execute if score @s rng1 matches 361 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"light_purple",bold:1b},{bold:false,text:"\n“我需要确认地狱的战况。此行凶险，你们跟着我可能有去无回。”",color:"white"}]
-execute if score @s[tag=ch4_conclusion_conversation_speedup] rng1 matches 361 run scoreboard players set @s rng1 277
+execute if score @s[tag=ch4_conclusion_conversation_speedup] rng1 matches 361 run scoreboard players set @s rng1 377
 
 execute if score @s rng1 matches 378 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“好。……那，你自己呢？”",color:"white"}]
 execute if score @s[tag=ch4_conclusion_conversation_speedup] rng1 matches 378 run scoreboard players set @s rng1 390
