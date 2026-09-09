@@ -1,6 +1,6 @@
 execute as @n[type=minecraft:marker,tag=azr_spin_core_part2,distance=..50] at @s rotated as @s run tp @s ~ ~ ~ ~0.9 0
 
-execute as @n[type=minecraft:marker,tag=azr_spin_core_part2,distance=..50] at @s rotated as @s facing entity @n[type=piglin_brute,distance=..80] eyes run tp @s ^ ^ ^0.3
+execute as @n[type=minecraft:marker,tag=azr_spin_core_part2,distance=..50] at @s rotated as @s facing entity @n[type=piglin_brute,distance=..80] feet run tp @s ^ ^ ^0.3
 
 
 
