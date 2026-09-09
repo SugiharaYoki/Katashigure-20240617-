@@ -67,6 +67,7 @@ execute if score @s AzrEntityTimer matches 2005 run stopsound @a[tag=azrShowDial
 execute if score @s AzrEntityTimer matches 2005 run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 10 0.7
 execute if score @s AzrEntityTimer matches 2010 run bossbar remove azr:boss_hp_bar_centurion
 execute if score @s AzrEntityTimer matches 2010 run fill -79768 35 -276 -79768 31 -278 minecraft:air destroy
+execute if score @s AzrEntityTimer matches 2010 run fill -79771 28 -272 -79771 24 -270 minecraft:air destroy
 #execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB03
 #execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run give @s emerald 20
 #execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
