@@ -107,7 +107,7 @@ execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 11001.
 
 execute if score @s AzrEntityTimer matches 1122 run forceload add ~ ~
 
-execute unless entity @a[tag=azrPlayer,distance=..60] run scoreboard players set @s AzrEntityTimer 1900
+execute if score @s AzrEntityTimer matches ..1121 unless entity @a[tag=azrPlayer,distance=..60] run scoreboard players set @s AzrEntityTimer 1900
 
 execute if score @s AzrEntityTimer matches 1122 as @a[tag=azrShowDialog,distance=..150] at @s run tp @s -79967 -51 17 facing -79968 -51 17
 execute if score @s AzrEntityTimer matches 1123 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s run playsound minecraft:entity.creaking.death player @s ~ ~ ~ 1 0.8
