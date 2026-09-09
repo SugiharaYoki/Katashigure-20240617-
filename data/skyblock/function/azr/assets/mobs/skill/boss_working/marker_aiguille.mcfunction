@@ -57,6 +57,11 @@ execute if score @s rng1 matches ..50 if block ~ ~-0.2 ~ basalt run playsound it
 execute if score @s rng1 matches ..50 if block ~ ~-0.2 ~ basalt run particle white_smoke ~ ~0.2 ~ 0.1 0.1 0.1 0.1 80
 execute if score @s rng1 matches ..50 if block ~ ~-0.2 ~ basalt run particle large_smoke ~ ~0.2 ~ 0.1 0.1 0.1 0.1 3
 execute if score @s rng1 matches ..50 if block ~ ~-0.2 ~ basalt run scoreboard players set @s rng1 51
+execute if score @s[tag=AzrielMob_dripstone_aiguille_large_range] rng1 matches ..50 unless block ~ ~-0.2 ~ air run playsound block.dripstone_block.break block @a ~ ~ ~ 3 0.7
+execute if score @s[tag=AzrielMob_dripstone_aiguille_large_range] rng1 matches ..50 unless block ~ ~-0.2 ~ air run playsound item.mace.smash_ground block @a ~ ~ ~ 3 1.2
+execute if score @s[tag=AzrielMob_dripstone_aiguille_large_range] rng1 matches ..50 unless block ~ ~-0.2 ~ air run particle white_smoke ~ ~0.2 ~ 0.1 0.1 0.1 0.1 80
+execute if score @s[tag=AzrielMob_dripstone_aiguille_large_range] rng1 matches ..50 unless block ~ ~-0.2 ~ air run particle large_smoke ~ ~0.2 ~ 0.1 0.1 0.1 0.1 3
+execute if score @s[tag=AzrielMob_dripstone_aiguille_large_range] rng1 matches ..50 unless block ~ ~-0.2 ~ air run scoreboard players set @s rng1 51
 
 execute if score @s rng1 matches 51.. run scoreboard players add @s rng2 1
 
