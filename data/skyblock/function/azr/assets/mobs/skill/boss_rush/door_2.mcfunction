@@ -69,8 +69,8 @@ execute if score @s AzrEntityTimer matches 805 run scoreboard players add @s rng
 execute if score @s AzrEntityTimer matches 805 run title @a[distance=..50] times 0t 20t 16t
 execute if score @s AzrEntityTimer matches 805 as @a[tag=azrShowDialog] at @s run title @s title {text:"亚 米",color: "#ff5050",bold:1b}
 execute if score @s AzrEntityTimer matches 805 as @a[tag=azrShowDialog] at @s run title @s subtitle {text:"所 罗 门 72 柱 魔 神 · 第 58 柱",color: "white",bold:0b}
-execute if score @s AzrEntityTimer matches 805 run scoreboard players set @s rng9 0
 execute if score @s AzrEntityTimer matches 805 run stopsound @a[distance=..50] music minecraft:renegade
+execute if score @s AzrEntityTimer matches 825 run scoreboard players set @s rng9 0
 
 execute if score @s AzrEntityTimer matches 805 positioned -79167 50 -16 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[0.0f,0.0f]}
 execute if score @s AzrEntityTimer matches 805 positioned -79167 50 -16 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[72.0f,0.0f]}

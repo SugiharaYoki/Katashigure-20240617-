@@ -2,4 +2,8 @@ summon piglin_brute ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielMob_t
 
 scoreboard players set @s rng18 0
 
+
+playsound minecraft:item.totem.use hostile @a ~ ~ ~ 1 1.5
+particle trial_spawner_detection ~ ~5.4 ~ 0.5 5.5 0.5 0 200
+particle totem_of_undying ~ ~0.5 ~ 0.5 1.5 0.5 0.5 30
 effect give @n[tag=AzrielMob_demon_amy] fire_resistance infinite 0 true
