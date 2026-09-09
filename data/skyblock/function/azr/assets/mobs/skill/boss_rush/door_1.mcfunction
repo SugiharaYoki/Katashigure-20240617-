@@ -121,13 +121,13 @@ execute if score @s AzrEntityTimer matches 1123 run scoreboard players set @s Az
 execute if score @s AzrEntityTimer matches 1900 as @a[tag=azrPlayer,tag=azrPlayer_door_participating] at @s run scoreboard players operation @s Azr_currency_weight += @n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter] rng11
 execute if score @s AzrEntityTimer matches 1900 as @a[tag=azrPlayer,tag=azrPlayer_door_participating] at @s run tellraw @s [{text:"神庭幻台 第壹场梦",bold:true,color:"light_purple"},{text:" 梦醒",bold:true,color:"white"},{text:"\n - 分数：",bold:false,color:"white"},{"score":{"name":"@n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter]","objective":"rng10"},color:"white"},{text:"\n - 历史最高纪录：",bold:false,color:"white"},{"score":{"name":"@s","objective":"azr_speedrun_door1"},bold:false,color:"white"},{text:"\n - 获得 ",bold:false,color:"white"},{"score":{"name":"@n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter]","objective":"rng11"},bold:false,color:"white"},{text:" 恶魔砝码",bold:false,color:"white"}]
 
-execute unless entity @a[tag=azrPlayer,distance=..60] run fill -79159 77 -34 -79195 77 2 minecraft:air replace tinted_glass
-execute unless entity @a[tag=azrPlayer,distance=..60] run kill @e[tag=AzrielMob_BossRush_Target,distance=..120]
-execute unless entity @a[tag=azrPlayer,distance=..60] run kill @e[tag=AzrielMob,distance=..120]
-execute unless entity @a[tag=azrPlayer,distance=..60] run kill @e[type=marker,distance=..80]
-execute unless entity @a[tag=azrPlayer,distance=..60] run kill @e[type=item,distance=..80]
-execute unless entity @a[tag=azrPlayer,distance=..60] run stopsound @a[tag=azrShowDialog]
-execute unless entity @a[tag=azrPlayer,distance=..60] run kill @s
-execute unless entity @a[tag=azrPlayer,distance=..60] run forceload remove -79195 2 -79159 -34
+execute if score @s AzrEntityTimer matches 1900 run fill -79159 77 -34 -79195 77 2 minecraft:air replace tinted_glass
+execute if score @s AzrEntityTimer matches 1900 run kill @e[tag=AzrielMob_BossRush_Target,distance=..120]
+execute if score @s AzrEntityTimer matches 1900 run kill @e[tag=AzrielMob,distance=..120]
+execute if score @s AzrEntityTimer matches 1900 run kill @e[type=marker,distance=..80]
+execute if score @s AzrEntityTimer matches 1900 run kill @e[type=item,distance=..80]
+execute if score @s AzrEntityTimer matches 1900 run stopsound @a[tag=azrShowDialog]
+execute if score @s AzrEntityTimer matches 1900 run kill @s
+execute if score @s AzrEntityTimer matches 1900 run forceload remove -79195 2 -79159 -34
 
 

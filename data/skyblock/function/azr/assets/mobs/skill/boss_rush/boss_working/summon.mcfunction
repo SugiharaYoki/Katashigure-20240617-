@@ -3,4 +3,4 @@ summon zombie ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielMob_typeDEA
 
 
 particle trial_spawner_detection ~ ~0.4 ~ 0.5 0.5 0.5 0 42
-#playsound minecraft:entity.zombie_villager.cure hostile @a ~ ~ ~ 1 0.7
+playsound minecraft:entity.zombie_villager.cure hostile @a ~ ~ ~ 1 0.7
