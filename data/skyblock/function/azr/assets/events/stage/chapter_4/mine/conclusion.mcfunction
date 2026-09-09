@@ -24,7 +24,7 @@ execute if score @s rng1 matches 12 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 25 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“所以……我们干掉了一个魔神？”",color:"white"}]
 
 execute if score @s rng1 matches 38 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
-execute if score @s rng1 matches 38 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“幸亏我找到了对付魔神的手段。只不过要是亚米的权能更高一些，怕是我们就不会赢得如此轻松了。”",color:"white"}]
+execute if score @s rng1 matches 38 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“幸亏我找到了对付魔神的手段。要是亚米的权能更强一些，怕是我们就不会赢得如此轻松了。”",color:"white"}]
 execute if score @s[tag=ch4_conclusion_conversation_speedup] rng1 matches 38 run scoreboard players set @s rng1 58
 
 execute if score @s rng1 matches 30 run tp @n[tag=AzrielNPC_mersenne] -79498 15 -331
