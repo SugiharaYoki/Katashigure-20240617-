@@ -69,4 +69,7 @@ execute if score @s rng18 matches 120..139 as @a[distance=2.7..3.3,tag=azrPlayer
 execute if score @s rng18 matches 120..139 as @n[distance=2.7..3.3,tag=AzrielNPC_andralune] run damage @s 10 minecraft:fly_into_wall
 
 
-execute as @e[type=minecraft:marker,tag=azr_spin_core,distance=..10] rotated as @s at @s run particle small_flame ~ ~ ~ 0 0 0 0 1
+execute as @n[type=minecraft:block_display,tag=azr_spin_plate_1] rotated as @s at @s run particle small_flame ~ ~ ~ 0 0 0 0 1
+execute as @n[type=minecraft:block_display,tag=azr_spin_plate_2] rotated as @s at @s run particle small_flame ~ ~ ~ 0 0 0 0 1
+execute as @n[type=minecraft:block_display,tag=azr_spin_plate_3] rotated as @s at @s run particle small_flame ~ ~ ~ 0 0 0 0 1
+execute as @n[type=minecraft:block_display,tag=azr_spin_plate_4] rotated as @s at @s run particle small_flame ~ ~ ~ 0 0 0 0 1
