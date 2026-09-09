@@ -22,17 +22,17 @@ execute if score @s[scores={rng3=8..},tag=!AZR_action_halt] rng5 matches 27 run 
 
 execute store result score @s Health run data get entity @s Health
 
-execute if score @s[scores={rng3=2}] rng1 matches 60 store result score @s rng2 run random value 1..8
-execute if score @s[scores={rng3=3..}] rng1 matches 60 store result score @s rng2 run random value 1..8
-execute if score @s[scores={rng2=1}] rng1 matches 60 positioned ~ ~ ~1.5 if block ~ 14 ~ red_nether_bricks run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_amy_lava_burst_marker","AzrielMob_mob_marker"]}
-execute if score @s[scores={rng2=2}] rng1 matches 60 positioned ~ ~ ~-1.5 if block ~ 14 ~ red_nether_bricks run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_amy_lava_burst_marker","AzrielMob_mob_marker"]}
-execute if score @s[scores={rng2=3}] rng1 matches 60 positioned ~1.5 ~ ~ if block ~ 14 ~ red_nether_bricks run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_amy_lava_burst_marker","AzrielMob_mob_marker"]}
-execute if score @s[scores={rng2=4}] rng1 matches 60 positioned ~-1.5 ~ ~ if block ~ 14 ~ red_nether_bricks run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_amy_lava_burst_marker","AzrielMob_mob_marker"]}
-execute if score @s[scores={rng3=4..}] rng1 matches 80 store result score @s rng2 run random value 1..8
-execute if score @s[scores={rng2=1}] rng1 matches 80 positioned ~ ~ ~2.5 if block ~ 14 ~ red_nether_bricks run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_amy_lava_burst_marker","AzrielMob_mob_marker"]}
-execute if score @s[scores={rng2=2}] rng1 matches 80 positioned ~ ~ ~-2.5 if block ~ 14 ~ red_nether_bricks run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_amy_lava_burst_marker","AzrielMob_mob_marker"]}
-execute if score @s[scores={rng2=3}] rng1 matches 80 positioned ~2.5 ~ ~ if block ~ 14 ~ red_nether_bricks run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_amy_lava_burst_marker","AzrielMob_mob_marker"]}
-execute if score @s[scores={rng2=4}] rng1 matches 80 positioned ~-2.5 ~ ~ if block ~ 14 ~ red_nether_bricks run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_amy_lava_burst_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng3=2}] rng1 matches 60 store result score @s rng2 run random value 1..6
+execute if score @s[scores={rng3=3..}] rng1 matches 26 store result score @s rng2 run random value 1..5
+execute if score @s[scores={rng2=1}] rng1 matches 26 positioned ~ ~ ~1.5 if block ~ 14 ~ red_nether_bricks run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_amy_lava_burst_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng2=2}] rng1 matches 26 positioned ~ ~ ~-1.5 if block ~ 14 ~ red_nether_bricks run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_amy_lava_burst_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng2=3}] rng1 matches 26 positioned ~1.5 ~ ~ if block ~ 14 ~ red_nether_bricks run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_amy_lava_burst_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng2=4}] rng1 matches 26 positioned ~-1.5 ~ ~ if block ~ 14 ~ red_nether_bricks run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_amy_lava_burst_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng3=4..}] rng1 matches 62 store result score @s rng2 run random value 1..5
+execute if score @s[scores={rng2=1}] rng1 matches 62 positioned ~ ~ ~2.5 if block ~ 14 ~ red_nether_bricks run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_amy_lava_burst_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng2=2}] rng1 matches 62 positioned ~ ~ ~-2.5 if block ~ 14 ~ red_nether_bricks run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_amy_lava_burst_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng2=3}] rng1 matches 62 positioned ~2.5 ~ ~ if block ~ 14 ~ red_nether_bricks run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_amy_lava_burst_marker","AzrielMob_mob_marker"]}
+execute if score @s[scores={rng2=4}] rng1 matches 62 positioned ~-2.5 ~ ~ if block ~ 14 ~ red_nether_bricks run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_amy_lava_burst_marker","AzrielMob_mob_marker"]}
 
 
 
