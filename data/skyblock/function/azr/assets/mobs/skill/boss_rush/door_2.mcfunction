@@ -5,8 +5,8 @@ execute if score @s AzrEntityTimer matches 1..1999 run scoreboard players add @s
 execute if score @s AzrEntityTimer matches ..799 if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:renegade music @s ~ ~ ~ 0.65
 execute if score @s AzrEntityTimer matches ..799 if score @s rng9 matches 2820.. run scoreboard players set @s rng9 0
 
-execute if score @s AzrEntityTimer matches 806.. if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:fuse music @s ~ ~ ~ 0.65
-execute if score @s AzrEntityTimer matches 806.. if score @s rng9 matches 3900.. run scoreboard players set @s rng9 0
+execute if score @s AzrEntityTimer matches 825.. if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:fuse music @s ~ ~ ~ 0.65
+execute if score @s AzrEntityTimer matches 825.. if score @s rng9 matches 3900.. run scoreboard players set @s rng9 0
 
 execute if score @s AzrEntityTimer matches 2 run scoreboard players set @s rng11 0
 
@@ -67,15 +67,21 @@ execute if score @s AzrEntityTimer matches 620..799 positioned -79167 50 -16 as 
 execute if score @s AzrEntityTimer matches 805 run fill -79159 77 -34 -79195 77 2 air replace minecraft:tinted_glass
 execute if score @s AzrEntityTimer matches 805 run scoreboard players add @s rng11 10
 execute if score @s AzrEntityTimer matches 805 run title @a[distance=..50] times 0t 20t 16t
-execute if score @s AzrEntityTimer matches 805 run title @a[distance=..50] title {text:"亚 米",color: "#da1919",bold:1b}
+execute if score @s AzrEntityTimer matches 805 as @a[tag=azrShowDialog] at @s run title @s title {text:"亚 米",color: "#ff5050",bold:1b}
+execute if score @s AzrEntityTimer matches 805 as @a[tag=azrShowDialog] at @s run title @s subtitle {text:"所 罗 门 72 柱 魔 神 · 第 58 柱",color: "white",bold:0b}
 execute if score @s AzrEntityTimer matches 805 run scoreboard players set @s rng9 0
-execute if score @s AzrEntityTimer matches 820 run stopsound @a[distance=..50] music minecraft:fuse
+execute if score @s AzrEntityTimer matches 805 run stopsound @a[distance=..50] music minecraft:renegade
 
-execute if score @s AzrEntityTimer matches 805 positioned -79167 50 -16 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower_b
-execute if score @s AzrEntityTimer matches 820 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_amy/summon
-execute if score @s AzrEntityTimer matches 820 positioned -79187 50 -16 run tag @e[tag=AzrielMob,distance=..30,type=piglin_brute] add AzrielMob_BossRush_Target
-execute if score @s AzrEntityTimer matches 820 positioned -79187 50 -16 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
-execute if score @s AzrEntityTimer matches 820..991 positioned -79167 50 -16 as @n[tag=AzrielMob_BossRush_Target,distance=..50,type=piglin_brute] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_amy/core
+execute if score @s AzrEntityTimer matches 805 positioned -79167 50 -16 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[0.0f,0.0f]}
+execute if score @s AzrEntityTimer matches 805 positioned -79167 50 -16 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[72.0f,0.0f]}
+execute if score @s AzrEntityTimer matches 805 positioned -79167 50 -16 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[144.0f,0.0f]}
+execute if score @s AzrEntityTimer matches 805 positioned -79167 50 -16 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[216.0f,0.0f]}
+execute if score @s AzrEntityTimer matches 805 positioned -79167 50 -16 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[288.0f,0.0f]}
+execute if score @s AzrEntityTimer matches 825 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_amy/summon
+
+execute if score @s AzrEntityTimer matches 825 positioned -79187 50 -16 run tag @e[tag=AzrielMob,distance=..30,type=piglin_brute] add AzrielMob_BossRush_Target
+execute if score @s AzrEntityTimer matches 825 positioned -79187 50 -16 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
+execute if score @s AzrEntityTimer matches 825..991 positioned -79167 50 -16 as @n[tag=AzrielMob_BossRush_Target,distance=..50,type=piglin_brute] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_amy/core_x20
 
 
 execute if score @s AzrEntityTimer matches 991 run stopsound @a[distance=..150,tag=azrShowDialog] music minecraft:fuse
