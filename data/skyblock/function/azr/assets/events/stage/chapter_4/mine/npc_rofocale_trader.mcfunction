@@ -50,7 +50,7 @@ execute if score @s AzrielNPC_ConversationTimer matches 3006 unless score azr_ro
 execute if score @s AzrielNPC_ConversationTimer matches 3006 unless score azr_rofocale_shop Azr_Shop_rng1 matches -999.. store result score azr_rofocale_shop Azr_Shop_rng1 run random value 1..3
 execute if score @s AzrielNPC_ConversationTimer matches 3006 unless score azr_rofocale_shop Azr_Shop_rng2 matches -999.. store result score azr_rofocale_shop Azr_Shop_rng2 run random value 4..6
 execute if score @s AzrielNPC_ConversationTimer matches 3006 unless score azr_rofocale_shop dailydiv < #Server_Date Global_Age run scoreboard players operation azr_rofocale_shop dailydiv = #Server_Date Global_Age
-execute if score @s AzrielNPC_ConversationTimer matches 3006 as @a[distance=0..13,tag=azrPlayer] run function skyblock:azr/system/shop/count
+#execute if score @s AzrielNPC_ConversationTimer matches 3006 as @a[distance=0..23,tag=azrPlayer] run function skyblock:azr/system/shop/count
 execute if score @s AzrielNPC_ConversationTimer matches 3006 at @s run function skyblock:azr/assets/events/stage/chapter_4/mine/npc_rofocale_trader_list {number:1}
 execute if score @s AzrielNPC_ConversationTimer matches 3006 at @s run function skyblock:azr/assets/events/stage/chapter_4/mine/npc_rofocale_trader_list {number:2}
 

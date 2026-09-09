@@ -1,3 +1,5 @@
+
+execute as @a[distance=0..13,tag=azrPlayer] at @s run function skyblock:azr/system/shop/count
 $execute if score azr_rofocale_shop Azr_Shop_rng$(number) matches 1 as @a[distance=0..13,tag=azrPlayer] at @s run tellraw @s \
      [{text:" - "},{text:"金粒 ×5  ",color:"#7ac42c"},{"nbt":"ingredient.flint","storage":"azr:shop",color:"white"},{text:"/1 燧石 ",color:"white"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431630"}}]
 $execute if score azr_rofocale_shop Azr_Shop_rng$(number) matches 2 as @a[distance=0..13,tag=azrPlayer] at @s run tellraw @s \
