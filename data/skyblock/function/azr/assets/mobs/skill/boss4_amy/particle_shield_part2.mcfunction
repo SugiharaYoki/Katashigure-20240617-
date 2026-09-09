@@ -1,4 +1,4 @@
-execute as @n[type=minecraft:marker,tag=azr_spin_core_part2,distance=..10] run tp @s ~ ~ ~ ~-3 ~
+execute as @n[type=minecraft:marker,tag=azr_spin_core_part2,distance=..10] rotated ~3 ~ run tp @s ~ ~ ~ ~ ~
 
 
 
