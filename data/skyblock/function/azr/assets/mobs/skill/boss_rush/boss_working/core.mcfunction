@@ -6,10 +6,10 @@ execute store result bossbar azr:boss_hp_bar_working value run scoreboard player
 
 
 scoreboard players add @s rng8 1
-execute as @s at @s if score @s[scores={Health=240..300}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..4
-execute as @s at @s if score @s[scores={Health=160..239}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
-execute as @s at @s if score @s[scores={Health=..159}] rng8 matches 1 unless score @s rng11 matches 2.. unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
-execute as @s at @s if score @s[scores={Health=..159}] rng8 matches 1 if score @s rng11 matches 2.. unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 7..8
+execute as @s at @s if score @s[scores={Health=301..}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..4
+execute as @s at @s if score @s[scores={Health=190..300}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
+execute as @s at @s if score @s[scores={Health=..189}] rng8 matches 1 unless score @s rng11 matches 2.. unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
+execute as @s at @s if score @s[scores={Health=..189}] rng8 matches 1 if score @s rng11 matches 2.. unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 7..8
 execute as @s at @s if score @s[scores={rng2=1..6}] rng8 matches 1 run scoreboard players add @s rng11 1
 execute as @s at @s if score @s[scores={rng2=1..3}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_pickaxe
 execute as @s at @s if score @s[scores={rng2=4..6}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_explode
