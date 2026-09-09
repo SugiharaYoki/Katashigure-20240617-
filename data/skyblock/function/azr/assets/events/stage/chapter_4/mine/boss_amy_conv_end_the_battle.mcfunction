@@ -65,8 +65,8 @@ execute if score @s rng11 matches 5241 positioned ~ ~ ~ run tellraw @a[tag=azrSh
 execute if score @s rng11 matches 5291 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.piglin_brute.angry hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score @s rng11 matches 5291 positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"亚米：",color:"red",bold:1b},{bold: false,text:"\n“我承认，现在更强的……是你们！”",color:"white"}]
 
-execute if score @s rng11 matches 5188 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.wither.spawn ambient @a ~ ~ ~ 5 0.6
-execute if score @s rng11 matches 5188 positioned -79495 15 -328 run playsound minecraft:entity.ender_dragon.death master @a ~ ~ ~ 10 1.4
+execute if score @s rng11 matches 5218 at @n[tag=AzrielMob_demon_amy] run playsound minecraft:entity.wither.spawn ambient @a ~ ~ ~ 5 0.6
+execute if score @s rng11 matches 5218 positioned -79495 15 -328 run playsound minecraft:entity.ender_dragon.death master @a ~ ~ ~ 10 1.4
 
 execute if score @s rng11 matches 5230 positioned -79495 15 -328 positioned ~ ~ ~6 run summon lightning_bolt
 execute if score @s rng11 matches 5230 positioned -79495 15 -328 positioned ~ ~ ~-6 run summon lightning_bolt
