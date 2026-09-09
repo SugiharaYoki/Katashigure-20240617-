@@ -65,8 +65,8 @@ execute as @n[type=minecraft:marker,tag=azr_spin_core,distance=..10] at @s rotat
 # 不会每tick受到6点
 # ============================================================
 
-execute if score @s rng18 matches 120..139 as @a[distance=2.7..3.3,tag=azrPlayer] run damage @s 8 minecraft:fly_into_wall
-execute if score @s rng18 matches 120..139 as @n[distance=2.7..3.3,tag=AzrielNPC_andralune] run damage @s 10 minecraft:fly_into_wall
+execute if score @s rng18 matches 120..139 as @a[distance=2.7..3.4,tag=azrPlayer] run damage @s 8 minecraft:fly_into_wall
+execute if score @s rng18 matches 120..139 as @n[distance=2.7..3.4,tag=AzrielNPC_andralune] run damage @s 10 minecraft:fly_into_wall
 
 
 execute as @n[type=minecraft:block_display,tag=azr_spin_plate_1] rotated as @s at @s run particle small_flame ~ ~ ~ 0 0 0 0 1
