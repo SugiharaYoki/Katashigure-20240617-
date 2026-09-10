@@ -8,7 +8,10 @@ execute if score @s rng11 matches 160 store result score @s rng12 run random val
 execute if score @s rng11 matches 160 if score @s rng12 matches 1 run summon minecraft:block_display ~ ~1.2 ~ {Tags:["AzrielMob_boss_raphael_marker_block_throw","AzrielMob_mob_marker"],block_state:{Name:"minecraft:magma_block"},brightness:{block:15,sky:15},shadow_radius:0f,teleport_duration:1,transformation:{translation:[0f,-0.601f,-0.08f],left_rotation:[0f,0f,0.3826834f,0.9238795f],scale:[0.85f,0.85f,0.16f],right_rotation:[0f,0f,0f,1f]}}
 execute if score @s rng11 matches 160 if score @s rng12 matches 2 run summon minecraft:block_display ~ ~1.2 ~ {Tags:["AzrielMob_boss_raphael_marker_block_throw","AzrielMob_mob_marker"],block_state:{Name:"minecraft:blackstone"},brightness:{block:15,sky:15},shadow_radius:0f,teleport_duration:1,transformation:{translation:[0f,-0.601f,-0.08f],left_rotation:[0f,0f,0.3826834f,0.9238795f],scale:[0.85f,0.85f,0.16f],right_rotation:[0f,0f,0f,1f]}}
 execute if score @s rng11 matches 160 if score @s rng12 matches 3 run summon minecraft:block_display ~ ~1.2 ~ {Tags:["AzrielMob_boss_raphael_marker_block_throw","AzrielMob_mob_marker"],block_state:{Name:"minecraft:nether_bricks"},brightness:{block:15,sky:15},shadow_radius:0f,teleport_duration:1,transformation:{translation:[0f,-0.601f,-0.08f],left_rotation:[0f,0f,0.3826834f,0.9238795f],scale:[0.85f,0.85f,0.16f],right_rotation:[0f,0f,0f,1f]}}
-execute if score @s rng11 matches 160.. store result score @s rng11 run random value 50..100
+execute if score @s[scores={rng1=..400}] rng11 matches 160.. store result score @s rng11 run random value 50..100
+execute if score @s[scores={rng1=401..800}] rng11 matches 160.. store result score @s rng11 run random value 70..120
+execute if score @s[scores={rng1=801..1200}] rng11 matches 160.. store result score @s rng11 run random value 75..130
+execute if score @s[scores={rng1=1201..}] rng11 matches 160.. store result score @s rng11 run random value 85..130
 
 execute if entity @s[tag=wings_equipped] at @s rotated as @s run function skyblock:azr/assets/mobs/skill/boss4_raphael/wings_core
 
