@@ -11,6 +11,7 @@ execute if score @s rng1 matches 260 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 330 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（我得立刻找条路逃出去。对了，顺着蓝色灯笼的方向走，一定有出路！！）",color:"white"}]
 
 execute if score @s rng1 matches 700 run tellraw @a[tag=azrShowDialog] [{text:"拉斐尔：",color:"#fe741f",bold:1b},{bold: false,text:"\n“我果然没有看错人。我很中意你，爱理莎！”",color:"white"}]
+execute if score @s rng1 matches 760 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（等等，我知道他是谁了……他只能是其中一位天使长！！）",color:"white"}]
 
 execute at @s rotated as @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
@@ -71,6 +72,8 @@ execute if score @s rng1 matches 790 run bossbar set azr:boss_hp_bar players @a[
 
 
 
+execute if score @s rng1 matches 50..2440 unless entity @a[tag=azrPlayer,distance=..150] positioned -79762 -18 -179 run kill @n[tag=AzrielMarker_encounter,distance=0..0.5]
+execute if score @s rng1 matches 50..2440 unless entity @a[tag=azrPlayer,distance=..150] run kill @s
 
 
 
