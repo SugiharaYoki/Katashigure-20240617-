@@ -32,7 +32,7 @@ execute if score @s rng1 matches 770..790 run particle gust_emitter_small ~ ~ ~ 
 execute if score @s rng1 matches 770..780 run particle flash{color:[1.000,0.60,0.00,1.00]} ~ ~ ~ 5 1 5 0 1
 execute if score @s rng1 matches 780 run function skyblock:azr/assets/mobs/skill/boss4_raphael/wings_summon
 
-execute if score @s rng1 matches 780.. run 
+#execute if score @s rng1 matches 780.. run 
 
 
 
