@@ -2,6 +2,15 @@ scoreboard players add @s rng1 1
 
 execute store result bossbar azr:boss_hp_bar_2 value run scoreboard players get @s rng1
 
+execute if score @s rng1 matches 50 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“操……你是谁？！”",color:"white"}]
+
+execute if score @s rng1 matches 120 run tellraw @a[tag=azrShowDialog] [{text:"拉斐尔：",color:"#fe741f",bold:1b},{bold: false,text:"\n“你不能通过这里。”",color:"white"}]
+execute if score @s rng1 matches 190 run tellraw @a[tag=azrShowDialog] [{text:"拉斐尔：",color:"#fe741f",bold:1b},{bold: false,text:"\n“若想活命就逃跑吧，拼了命地逃吧！”",color:"white"}]
+
+execute if score @s rng1 matches 260 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（这家伙特别危险，虽然他不一定是来真的……）",color:"white"}]
+execute if score @s rng1 matches 330 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（我得立刻找条路逃出去。对了，顺着蓝色灯笼的方向走，一定有出路！！）",color:"white"}]
+
+execute if score @s rng1 matches 700 run tellraw @a[tag=azrShowDialog] [{text:"拉斐尔：",color:"#fe741f",bold:1b},{bold: false,text:"\n“我果然没有看错人。我很中意你，爱理莎！”",color:"white"}]
 
 scoreboard players add @s rng11 1
 execute if score @s rng11 matches 160 store result score @s rng12 run random value 1..3
@@ -32,6 +41,13 @@ execute if score @s rng1 matches 780..800 at @s run particle flame ~ ~ ~ 6 3 6 0
 execute if score @s rng1 matches 780..800 at @s run particle gust_emitter_small ~ ~ ~ 6 3 6 0 2
 execute if score @s rng1 matches 780..790 at @s run particle flash{color:[1.000,0.60,0.00,1.00]} ~ ~ ~ 3 1 3 0 1
 execute if score @s rng1 matches 790 at @s run function skyblock:azr/assets/mobs/skill/boss4_raphael/wings_summon
+execute if score @s rng1 matches 790 run bossbar add azr:boss_hp_bar [{text:"天使长 · ",bold:true,color:"white"},{text:"拉斐尔",bold:true,color:"#fe741f"}]
+execute if score @s rng1 matches 790 run bossbar set azr:boss_hp_bar color red
+execute if score @s rng1 matches 790 run bossbar set azr:boss_hp_bar max 100
+execute if score @s rng1 matches 790 run bossbar set azr:boss_hp_bar value 100
+execute if score @s rng1 matches 790 run bossbar set azr:boss_hp_bar style notched_12
+execute if score @s rng1 matches 790 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
+
 
 #execute if score @s rng1 matches 780.. run 
 

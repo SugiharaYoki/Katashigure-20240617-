@@ -55,12 +55,6 @@ execute if score @s rng1 matches 502 positioned -79776 22 -195 run summon marker
 execute if score @s rng1 matches 510 as @a[tag=azrShowDialog] at @s run playsound minecraft:truehero music @s ~ ~ ~ 0.65
 execute if score @s rng1 matches 510 run tellraw @a[tag=azrShowDialog] [{text:"拉斐尔：",color:"#fe741f",bold:1b},{bold: false,text:"\n“甚好，甚好啊，人类！你让我刮目相看，但很抱歉，我无法放你通过这里！”",color:"white"}]
 
-execute if score @s rng1 matches 510 run bossbar add azr:boss_hp_bar [{text:"天使长 · ",bold:true,color:"white"},{text:"拉斐尔",bold:true,color:"#fe741f"}]
-execute if score @s rng1 matches 510 run bossbar set azr:boss_hp_bar color red
-execute if score @s rng1 matches 510 run bossbar set azr:boss_hp_bar max 100
-execute if score @s rng1 matches 510 run bossbar set azr:boss_hp_bar value 100
-execute if score @s rng1 matches 510 run bossbar set azr:boss_hp_bar style notched_12
-execute if score @s rng1 matches 510 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 execute if score @s rng1 matches 510 run bossbar add azr:boss_hp_bar_2 [{text:"死 亡 宣 判",bold:true,color:"#cb0000"}]
 execute if score @s rng1 matches 530 run bossbar set azr:boss_hp_bar_2 color red
 execute if score @s rng1 matches 530 run bossbar set azr:boss_hp_bar_2 max 2340
