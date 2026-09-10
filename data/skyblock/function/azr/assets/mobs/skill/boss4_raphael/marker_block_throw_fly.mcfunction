@@ -1,0 +1,2 @@
+$execute facing $(x) $(y) $(z) run tp @s ^ ^ ^0.3
+$execute positioned $(x) $(y) $(z) if entity @s[distance=..0.35] at @s run function skyblock:azr/assets/mobs/skill/boss4_raphael/marker_block_throw_hit

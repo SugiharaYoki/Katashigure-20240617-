@@ -57,6 +57,8 @@ execute if entity @s[tag=AzrielMob_generic_pillar_attack_small_automarker] run f
 #特殊事件
 execute as @s[tag=AzrielMob_angel_raphael_opening_fireball] at @s run function skyblock:azr/assets/mobs/skill/boss4_raphael/event_opening_fireball
 
+execute if entity @s[tag=AzrielMob_boss_raphael_marker_block_throw] run function skyblock:azr/assets/mobs/skill/boss4_raphael/marker_block_throw
+execute if entity @s[tag=AzrielMob_boss_raphael_marker_block_smoke] run function skyblock:azr/assets/mobs/skill/boss4_raphael/marker_block_smoke
 
 
 
