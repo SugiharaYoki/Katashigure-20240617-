@@ -27,6 +27,7 @@ execute at @s rotated ~ 0 run particle minecraft:cloud ^ ^1.34 ^-0.22 0.03 0.06 
 
 
 
+execute if score @s rng1 matches 770 run effect give @a[tag=azrShowDialog] darkness 4 0 true
 execute if score @s rng1 matches 780..800 at @s run particle flame ~ ~ ~ 6 3 6 0 30
 execute if score @s rng1 matches 780..800 at @s run particle gust_emitter_small ~ ~ ~ 6 3 6 0 2
 execute if score @s rng1 matches 780..790 at @s run particle flash{color:[1.000,0.60,0.00,1.00]} ~ ~ ~ 3 1 3 0 1
