@@ -1,7 +1,7 @@
 scoreboard players add @s rng1 1
 execute if score @s rng1 matches 1 store result entity @s Rotation[0] float 1 run random value 0..359
 execute if score @s rng1 matches 1 run data modify entity @s Rotation[1] set value 0f
-execute if score @s rng1 matches 1..64 run tp @s ~ ~ ~ ~5.625 0
+execute if score @s rng1 matches 1..64 at @s rotated as @s run tp @s ~ ~ ~ ~5.625 0
 execute if score @s rng1 matches 1..8 at @n[tag=AzrielMob_boss_raphael] positioned ~ ~1.3 ~ rotated as @s positioned ^ ^ ^3 run tp @s ~ ~ ~
 execute if score @s rng1 matches 9..16 at @n[tag=AzrielMob_boss_raphael] positioned ~ ~1.3 ~ rotated as @s positioned ^ ^ ^3 positioned ~ ~0.25 ~ run tp @s ~ ~ ~
 execute if score @s rng1 matches 17..24 at @n[tag=AzrielMob_boss_raphael] positioned ~ ~1.3 ~ rotated as @s positioned ^ ^ ^3 positioned ~ ~0.50 ~ run tp @s ~ ~ ~
