@@ -7,3 +7,7 @@ fill -79641 -28 -590 -79639 -26 -594 basalt
 
 
 kill @n[type=mannequin,tag=AzrielNPC_raphael]
+
+stopsound @a[tag=azrShowDialog] music
+bossbar remove azr:boss_hp_bar
+bossbar remove azr:boss_hp_bar_2
