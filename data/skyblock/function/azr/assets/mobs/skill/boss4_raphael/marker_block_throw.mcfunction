@@ -2,14 +2,14 @@ scoreboard players add @s rng1 1
 execute if score @s rng1 matches 1 store result entity @s Rotation[0] float 1 run random value 0..359
 execute if score @s rng1 matches 1 run data modify entity @s Rotation[1] set value 0f
 execute if score @s rng1 matches 1..64 run tp @s ~ ~ ~ ~4 ~
-execute if score @s rng1 matches 1..8 at @n[tag=AzrielMob_boss_raphael] rotated as @s positioned ^ ^ ^5 positioned ~ ~0.00 ~ run tp @s ~ ~ ~
-execute if score @s rng1 matches 9..16 at @n[tag=AzrielMob_boss_raphael] rotated as @s positioned ^ ^ ^5 positioned ~ ~0.25 ~ run tp @s ~ ~ ~
-execute if score @s rng1 matches 17..24 at @n[tag=AzrielMob_boss_raphael] rotated as @s positioned ^ ^ ^5 positioned ~ ~0.50 ~ run tp @s ~ ~ ~
-execute if score @s rng1 matches 25..32 at @n[tag=AzrielMob_boss_raphael] rotated as @s positioned ^ ^ ^5 positioned ~ ~0.25 ~ run tp @s ~ ~ ~
-execute if score @s rng1 matches 33..40 at @n[tag=AzrielMob_boss_raphael] rotated as @s positioned ^ ^ ^5 positioned ~ ~0.00 ~ run tp @s ~ ~ ~
-execute if score @s rng1 matches 41..48 at @n[tag=AzrielMob_boss_raphael] rotated as @s positioned ^ ^ ^5 positioned ~ ~-0.25 ~ run tp @s ~ ~ ~
-execute if score @s rng1 matches 49..56 at @n[tag=AzrielMob_boss_raphael] rotated as @s positioned ^ ^ ^5 positioned ~ ~-0.50 ~ run tp @s ~ ~ ~
-execute if score @s rng1 matches 57..64 at @n[tag=AzrielMob_boss_raphael] rotated as @s positioned ^ ^ ^5 positioned ~ ~-0.25 ~ run tp @s ~ ~ ~
+execute if score @s rng1 matches 1..8 at @n[tag=AzrielMob_boss_raphael] rotated as @s positioned ^ ^1.2 ^3 positioned ~ ~0.00 ~ run tp @s ~ ~ ~
+execute if score @s rng1 matches 9..16 at @n[tag=AzrielMob_boss_raphael] rotated as @s positioned ^ ^1.2 ^3 positioned ~ ~0.25 ~ run tp @s ~ ~ ~
+execute if score @s rng1 matches 17..24 at @n[tag=AzrielMob_boss_raphael] rotated as @s positioned ^ ^1.2 ^3 positioned ~ ~0.50 ~ run tp @s ~ ~ ~
+execute if score @s rng1 matches 25..32 at @n[tag=AzrielMob_boss_raphael] rotated as @s positioned ^ ^1.2 ^3 positioned ~ ~0.25 ~ run tp @s ~ ~ ~
+execute if score @s rng1 matches 33..40 at @n[tag=AzrielMob_boss_raphael] rotated as @s positioned ^ ^1.2 ^3 positioned ~ ~0.00 ~ run tp @s ~ ~ ~
+execute if score @s rng1 matches 41..48 at @n[tag=AzrielMob_boss_raphael] rotated as @s positioned ^ ^1.2 ^3 positioned ~ ~-0.25 ~ run tp @s ~ ~ ~
+execute if score @s rng1 matches 49..56 at @n[tag=AzrielMob_boss_raphael] rotated as @s positioned ^ ^1.2 ^3 positioned ~ ~-0.50 ~ run tp @s ~ ~ ~
+execute if score @s rng1 matches 57..64 at @n[tag=AzrielMob_boss_raphael] rotated as @s positioned ^ ^1.2 ^3 positioned ~ ~-0.25 ~ run tp @s ~ ~ ~
 execute if score @s rng1 matches 1..64 run particle minecraft:small_gust ~ ~ ~ 0.05 0.05 0.05 0 1 force
 execute if score @s rng1 matches 65 if entity @p[tag=azrPlayer] store result score @s rng3 run data get entity @p[tag=azrPlayer] Pos[0] 1000
 execute if score @s rng1 matches 65 if entity @p[tag=azrPlayer] store result score @s rng4 run data get entity @p[tag=azrPlayer] Pos[1] 1000
