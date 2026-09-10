@@ -1,5 +1,6 @@
 scoreboard players add @s rng1 1
 
+execute store result bossbar azr:boss_hp_bar_2 value run scoreboard players get @s rng1
 
 
 scoreboard players add @s rng11 1
@@ -18,7 +19,6 @@ execute at @s rotated ~ 0 run particle minecraft:small_flame ^1.04 ^1.22 ^-1.26 
 execute at @s rotated ~ 0 run particle minecraft:flame ^-0.28 ^1.20 ^-0.72 0.02 0.02 0.02 0.002 1 force
 execute at @s rotated ~ 0 run particle minecraft:flame ^0.28 ^1.20 ^-0.72 0.02 0.02 0.02 0.002 1 force
 execute at @s rotated ~ 0 run particle minecraft:cloud ^ ^1.34 ^-0.22 0.03 0.06 0.03 0.001 1 force
-
 
 
 
