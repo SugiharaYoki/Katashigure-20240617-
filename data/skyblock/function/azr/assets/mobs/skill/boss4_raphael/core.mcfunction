@@ -14,6 +14,19 @@ execute if score @s rng1 matches 700 run tellraw @a[tag=azrShowDialog] [{text:"æ
 
 execute at @s rotated as @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
+execute as @n[tag=AzrielMob_boss_raphael_marker_movement,distance=..80,type=marker] run tag @s remove AzrielMob_boss_raphael_marker_movement_next
+execute at @p[tag=azrPlayer] as @n[tag=AzrielMob_boss_raphael_marker_movement] run tag @s add AzrielMob_boss_raphael_marker_movement_next
+
+execute as @s at @s facing entity @n[tag=AzrielMob_boss_raphael_marker_movement,distance=1..] feet positioned 0.0 0 0.0 run summon marker ^ ^ ^0.7 {Tags:["AzrielMob_move_marker_raphael"]}
+execute as @s at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_move_marker_raphael] Pos
+execute as @s at @s run kill @n[type=marker,tag=AzrielMob_move_marker_raphael]
+
+
+
+
+
+
+
 scoreboard players add @s rng11 1
 execute if score @s rng11 matches 160 store result score @s rng12 run random value 1..3
 execute if score @s rng11 matches 160 if score @s rng12 matches 1 run summon minecraft:block_display ~ ~1.2 ~ {Tags:["AzrielMob_boss_raphael_marker_block_throw","AzrielMob_mob_marker"],block_state:{Name:"minecraft:magma_block"},brightness:{block:15,sky:15},shadow_radius:0f,teleport_duration:1,transformation:{translation:[0f,-0.601f,-0.08f],left_rotation:[0f,0f,0.3826834f,0.9238795f],scale:[0.85f,0.85f,0.16f],right_rotation:[0f,0f,0f,1f]}}

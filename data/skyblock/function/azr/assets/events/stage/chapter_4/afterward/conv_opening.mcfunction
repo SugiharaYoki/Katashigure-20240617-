@@ -64,28 +64,32 @@ execute if score @s rng1 matches 530 run bossbar set azr:boss_hp_bar_2 players @
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+execute if score @s rng1 matches 510 positioned -79644 -26 -599 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79643 -27 -602 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79645 -26 -606 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79647 -25 -611 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79646 -24 -616 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79647 -25 -620 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79648 -25 -625 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79651 -24 -632 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79651 -25 -636 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79649 -24 -639 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79649 -25 -643 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79651 -25 -649 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79651 -25 -654 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79650 -25 -658 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79651 -25 -663 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79650 -25 -667 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79651 -25 -671 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79650 -25 -674 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79652 -23 -678 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79652 -22 -681 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79645 -20 -686 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79649 -19 -690 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79648 -17 -694 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79649 -14 -699 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79650 -08 -701 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79648 002 -719 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
 
 
 
