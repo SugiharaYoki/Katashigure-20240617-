@@ -23,6 +23,9 @@ execute as @s at @s if entity @n[tag=AzrielMob_boss_raphael_marker_movement_next
 execute as @s at @s if entity @n[tag=AzrielMob_boss_raphael_marker_movement_next,distance=2..] run kill @n[type=marker,tag=AzrielMob_move_marker_raphael]
 
 
+execute positioned -79647 -24 -626 if entity @s[distance=..5] if block ~ ~ ~ basalt run playsound entity.generic.explode block @a ~ ~ ~ 2 0.8
+execute positioned -79647 -24 -626 if entity @s[distance=..5] if block ~ ~ ~ basalt run particle explosion ~ ~1 ~ 2 0 1 0 3
+execute positioned -79647 -24 -626 if entity @s[distance=..5] if block ~ ~ ~ basalt run fill -79648 -20 -627 -79647 -29 -624 minecraft:structure_void replace minecraft:basalt destroy
 
 execute positioned -79652 -25 -663 if entity @s[distance=..5] if block ~ ~ ~ basalt run playsound entity.generic.explode block @a ~ ~ ~ 2 0.8
 execute positioned -79652 -25 -663 if entity @s[distance=..5] if block ~ ~ ~ basalt run particle explosion ~ ~1 ~ 3 0 1 0 5

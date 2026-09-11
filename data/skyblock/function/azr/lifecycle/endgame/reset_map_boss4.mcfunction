@@ -8,7 +8,7 @@ fill -79646 -28 -633 -79644 -28 -671 air replace fire
 fill -79646 -24 -679 -79644 -24 -681 air replace fire
 
 fill -79653 -23 -661 -79651 -27 -667 minecraft:basalt replace minecraft:structure_void
-
+fill -79648 -20 -627 -79647 -29 -624 minecraft:basalt replace minecraft:structure_void
 
 kill @n[type=mannequin,tag=AzrielNPC_raphael]
 
