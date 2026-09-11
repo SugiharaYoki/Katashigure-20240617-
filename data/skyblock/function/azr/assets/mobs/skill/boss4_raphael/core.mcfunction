@@ -53,16 +53,17 @@ execute at @s rotated ~ 0 run particle minecraft:cloud ^ ^1.34 ^-0.22 0.03 0.06 
 
 
 #execute if score @s rng1 matches 770 run effect give @a[tag=azrShowDialog] darkness 4 0 true
-execute if score @s rng1 matches 780..800 at @s run particle flame ~ ~ ~ 6 3 6 0 30
-execute if score @s rng1 matches 780..800 at @s run particle gust_emitter_small ~ ~ ~ 6 3 6 0 2
-execute if score @s rng1 matches 780..790 at @s run particle flash{color:[1.000,0.60,0.00,1.00]} ~ ~ ~ 3 1 3 0 1
-execute if score @s rng1 matches 790 at @s run function skyblock:azr/assets/mobs/skill/boss4_raphael/wings_summon
-execute if score @s rng1 matches 790 run bossbar add azr:boss_hp_bar [{text:"天使长 · ",bold:true,color:"white"},{text:"拉斐尔",bold:true,color:"#fe741f"}]
-execute if score @s rng1 matches 790 run bossbar set azr:boss_hp_bar color red
-execute if score @s rng1 matches 790 run bossbar set azr:boss_hp_bar max 100
-execute if score @s rng1 matches 790 run bossbar set azr:boss_hp_bar value 100
-execute if score @s rng1 matches 790 run bossbar set azr:boss_hp_bar style notched_12
-execute if score @s rng1 matches 790 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
+execute if score @s rng1 matches 790..810 at @s run particle flame ~ ~ ~ 6 3 6 0 30
+execute if score @s rng1 matches 790..810 at @s run particle gust_emitter_small ~ ~ ~ 6 3 6 0 2
+execute if score @s rng1 matches 790..800 at @s run particle flash{color:[1.000,0.60,0.00,1.00]} ~ ~ ~ 3 1 3 0 1
+execute if score @s rng1 matches 800 at @s run particle flame ~ ~1 ~ 0 0 0 1 300
+execute if score @s rng1 matches 800 at @s run function skyblock:azr/assets/mobs/skill/boss4_raphael/wings_summon
+execute if score @s rng1 matches 800 run bossbar add azr:boss_hp_bar [{text:"天使长 · ",bold:true,color:"white"},{text:"拉斐尔",bold:true,color:"#fe741f"}]
+execute if score @s rng1 matches 800 run bossbar set azr:boss_hp_bar color red
+execute if score @s rng1 matches 800 run bossbar set azr:boss_hp_bar max 100
+execute if score @s rng1 matches 800 run bossbar set azr:boss_hp_bar value 100
+execute if score @s rng1 matches 800 run bossbar set azr:boss_hp_bar style notched_12
+execute if score @s rng1 matches 800 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 
 
 #execute if score @s rng1 matches 780.. run 
