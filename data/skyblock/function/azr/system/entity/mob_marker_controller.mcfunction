@@ -59,6 +59,7 @@ execute as @s[tag=AzrielMob_angel_raphael_opening_fireball] at @s run function s
 
 execute if entity @s[tag=AzrielMob_boss_raphael_marker_block_throw] run function skyblock:azr/assets/mobs/skill/boss4_raphael/marker_block_throw
 execute if entity @s[tag=AzrielMob_boss_raphael_marker_block_smoke] run function skyblock:azr/assets/mobs/skill/boss4_raphael/marker_block_smoke
+execute if entity @s[tag=AzrielMob_boss_raphael_marker_fireball] run function skyblock:azr/assets/mobs/skill/boss4_raphael/marker_fireball
 
 
 
