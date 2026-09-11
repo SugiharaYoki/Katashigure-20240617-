@@ -15,7 +15,7 @@ execute if score @s rng1 matches 760 run tellraw @a[tag=azrShowDialog] [{text:"ä
 
 execute at @s rotated as @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
-execute as @n[tag=AzrielMob_boss_raphael_marker_movement,distance=..80,type=marker] run tag @s remove AzrielMob_boss_raphael_marker_movement_next
+execute as @e[tag=AzrielMob_boss_raphael_marker_movement,distance=..80,type=marker] run tag @s remove AzrielMob_boss_raphael_marker_movement_next
 execute at @p[tag=azrPlayer] as @n[tag=AzrielMob_boss_raphael_marker_movement,type=marker] run tag @s add AzrielMob_boss_raphael_marker_movement_next
 
 execute as @s at @s if entity @n[tag=AzrielMob_boss_raphael_marker_movement_next,distance=2..] facing entity @n[tag=AzrielMob_boss_raphael_marker_movement_next,distance=2..] feet positioned 0.0 0 0.0 run summon marker ^ ^ ^0.7 {Tags:["AzrielMob_move_marker_raphael"]}
