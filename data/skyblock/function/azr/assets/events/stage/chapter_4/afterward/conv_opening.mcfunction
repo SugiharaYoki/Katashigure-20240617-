@@ -92,7 +92,7 @@ execute if score @s rng1 matches 510 positioned -79650 -08 -701 run summon minec
 execute if score @s rng1 matches 510 positioned -79648 002 -719 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
 
 
-execute if score @s rng1 matches 530..999 positioned -79647 -24 -626 unless entity @a[tag=azrPlayer,distance=..150] run function skyblock:azr/lifecycle/endgame/reset_map_boss4
+execute if score @s rng1 matches 520..999 positioned -79647 -24 -626 unless entity @a[tag=azrPlayer,distance=..150] run function skyblock:azr/lifecycle/endgame/reset_map_boss4
 
 
 execute if score @s rng1 matches 995 run scoreboard players set @s rng1 990
