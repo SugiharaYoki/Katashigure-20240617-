@@ -74,7 +74,9 @@ execute if entity @s[x=-79202,y=20,z=-41,dx=60,dy=26,dz=60] as @s at @s run tp @
 #地区标题area_title
 execute at @s run function skyblock:azr/assets/events/stage/area_title_detect
 #第四章特殊复活点
-execute if score stage Azr_system matches 55..70 at @n[tag=AzrielMob_utility_respawn_anchor,type=marker] run spawnpoint @s ~ ~ ~
+execute if score stage Azr_system matches 55..69 at @n[tag=AzrielMob_utility_respawn_anchor,type=marker] run spawnpoint @s ~ ~ ~
+execute if score stage Azr_system matches 70 positioned -79765 -17 -177 at @n[tag=AzrielMob_utility_respawn_anchor,type=marker] run spawnpoint @s ~ ~ ~
+execute if score stage Azr_system matches 71..79 at @n[tag=AzrielMob_utility_respawn_anchor,type=marker] run spawnpoint @s ~ ~ ~
 
 scoreboard players reset @s AzrSariel_Amulet_generic_damage_taken
 
