@@ -90,7 +90,7 @@ execute if score @s rng1 matches 800 run bossbar set azr:boss_hp_bar players @a[
 
 
 
-execute if score @s rng1 matches 50..2440 unless entity @a[tag=azrPlayer,distance=..150] run function skyblock:azr/lifecycle/endgame/reset_map_boss4
+execute if score @s rng1 matches 50..2440 positioned -79647 -24 -626 unless entity @a[tag=azrPlayer,distance=..150] run function skyblock:azr/lifecycle/endgame/reset_map_boss4
 
 
 
