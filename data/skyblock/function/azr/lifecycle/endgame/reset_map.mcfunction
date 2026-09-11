@@ -998,8 +998,8 @@ item replace block -79685 25 -347 container.14 with gold_nugget 3
 
 ####遂栈
 #拉斐尔
+forceload add -79681 -583 -79607 -718
 function skyblock:azr/lifecycle/endgame/reset_map_boss4
-
 
 
 
@@ -1086,6 +1086,8 @@ forceload remove -79400 200 -79200 400
 forceload remove -79950 -2150 -79800 -1850
 forceload remove -79541 -472 -79345 -350
 forceload remove -79785 -2092 -79765 -2072
+#邃栈
+forceload remove -79681 -583 -79607 -718
 #Bossrush门
 forceload remove -79195 2 -79159 -34
 #______________________________________________________________#

@@ -61,7 +61,7 @@ execute if score @s rng1 matches 530 run bossbar set azr:boss_hp_bar_2 max 2340
 execute if score @s rng1 matches 530 run bossbar set azr:boss_hp_bar_2 value 0
 execute if score @s rng1 matches 530 run bossbar set azr:boss_hp_bar_2 players @a[tag=azrShowDialog]
 
-
+execute if score @s rng1 matches 530 run forceload add -79681 -583 -79607 -718
 
 
 execute if score @s rng1 matches 510 positioned -79644 -26 -599 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
