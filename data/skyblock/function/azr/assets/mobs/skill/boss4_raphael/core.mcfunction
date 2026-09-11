@@ -38,6 +38,12 @@ execute if score @s[scores={rng1=401..800}] rng11 matches 160.. store result sco
 execute if score @s[scores={rng1=801..1200}] rng11 matches 160.. store result score @s rng11 run random value 75..130
 execute if score @s[scores={rng1=1201..}] rng11 matches 160.. store result score @s rng11 run random value 85..130
 
+
+scoreboard players add @s rng13 1
+
+
+
+
 execute if entity @s[tag=wings_equipped] at @s rotated as @s run function skyblock:azr/assets/mobs/skill/boss4_raphael/wings_core
 
 execute at @s rotated ~ 0 run particle minecraft:small_flame ^-1.54 ^1.82 ^-1.86 0.02 0.02 0.02 0.003 1 force
