@@ -1,4 +1,4 @@
-$execute anchored eyes facing entity @p[tag=azrPlayer] eyes rotated ~$(yaw) ~$(pitch) positioned ^ ^ ^1 run summon minecraft:small_fireball ~ ~ ~ {Tags:["AzrielMob_boss_raphael_fireball","AzrielMob_mob_marker"],power:[0.0d,0.0d,0.0d]}
+$execute anchored eyes facing entity @p[tag=azrPlayer] eyes rotated ~$(yaw) ~$(pitch) positioned ^ ^ ^1 run summon minecraft:small_fireball ~ ~ ~ {Tags:["AzrielMob_boss_raphael_fireball","AzrielMob_mob_marker"],ExplosionPower:0b,power:[0.0d,0.0d,0.0d]}
 $execute anchored eyes facing entity @p[tag=azrPlayer] eyes rotated ~$(yaw) ~$(pitch) positioned 0 0 0 positioned ^ ^ ^0.1 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_fireball_direction"]}
-data modify entity @n[type=minecraft:small_fireball,tag=AzrielMob_boss_raphael_fireball,distance=..5] power set from entity @n[type=minecraft:marker,tag=AzrielMob_boss_raphael_fireball_direction]
+data modify entity @n[type=minecraft:small_fireball,tag=AzrielMob_boss_raphael_fireball,distance=..5] power set from entity @n[type=minecraft:marker,tag=AzrielMob_boss_raphael_fireball_direction] Pos
 kill @n[type=minecraft:marker,tag=AzrielMob_boss_raphael_fireball_direction]
