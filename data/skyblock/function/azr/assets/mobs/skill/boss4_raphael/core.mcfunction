@@ -40,7 +40,19 @@ execute if score @s[scores={rng1=1201..}] rng11 matches 160.. store result score
 
 
 scoreboard players add @s rng13 1
-
+execute if score @s rng13 matches 80.. store result score @s rng14 run random value 3..5
+execute if score @s rng13 matches 80.. run scoreboard players set @s rng13 0
+execute if score @s rng13 matches 1 run function skyblock:azr/assets/mobs/skill/boss4_raphael/attack_fire_ball_prepare
+execute if score @s rng13 matches 6 if score @s rng14 matches 2.. run function skyblock:azr/assets/mobs/skill/boss4_raphael/attack_fire_ball_prepare
+execute if score @s rng13 matches 11 if score @s rng14 matches 3.. run function skyblock:azr/assets/mobs/skill/boss4_raphael/attack_fire_ball_prepare
+execute if score @s rng13 matches 16 if score @s rng14 matches 4.. run function skyblock:azr/assets/mobs/skill/boss4_raphael/attack_fire_ball_prepare
+execute if score @s rng13 matches 21 if score @s rng14 matches 5.. run function skyblock:azr/assets/mobs/skill/boss4_raphael/attack_fire_ball_prepare
+execute store result score @s rng15 run random value -20..20
+execute store result storage azr_raphael:fireball yaw int 1 run scoreboard players get @s rng15
+execute store result score @s rng15 run random value -20..20
+execute store result storage azr_raphael:fireball pitch int 1 run scoreboard players get @s rng15
+playsound minecraft:entity.blaze.shoot hostile @a ~ ~ ~ 2 1
+function skyblock:azr/assets/mobs/skill/boss4_raphael/attack_fire_ball with storage azr_raphael:fireball
 
 
 
