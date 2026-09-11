@@ -14,8 +14,21 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}]
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=3..}] AZR_chainKill_damage matches 3.. run scoreboard players add @s AZR_chainKill_chargeup 2
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=4..}] AZR_chainKill_damage matches 3.. run scoreboard players add @s AZR_chainKill_chargeup 3
 
-execute if entity @s[tag=!AZR_chainKill_activated,scores={AZR_chainKill=1..,AZR_chainKill_chargeup=5000..}] unless items entity @s weapon.mainhand #shovels run scoreboard players operation @s AZR_chainKill_chargeup += #random Azr_system
-execute if entity @s[tag=!AZR_chainKill_activated,scores={AZR_chainKill=1..,AZR_chainKill_chargeup=..4999}] run scoreboard players operation @s AZR_chainKill_chargeup += #random Azr_system
+scoreboard players set @s rng1 0
+execute if entity @s[tag=AzrSariel_upg10E] run scoreboard players add @s rng1 1
+execute if entity @s[tag=AzrSariel_upg13E] run scoreboard players add @s rng1 1
+execute if entity @s[tag=AzrSariel_upg13F] run scoreboard players add @s rng1 1
+
+scoreboard players set 10 constant 10
+scoreboard players set 11 constant 11
+scoreboard players set 12 constant 12
+scoreboard players set 13 constant 13
+execute if score @s rng1 matches 1 run scoreboard players operation #random Azr_system *= 11 constant
+execute if score @s rng1 matches 2 run scoreboard players operation #random Azr_system *= 12 constant
+execute if score @s rng1 matches 3 run scoreboard players operation #random Azr_system *= 13 constant
+execute if score @s rng1 matches 1..3 run scoreboard players operation #random Azr_system /= 10 constant
+
+execute if entity @s[tag=!AZR_chainKill_activated,scores={AZR_chainKill=1..,AZR_chainKill_chargeup=..99999}] run scoreboard players operation @s AZR_chainKill_chargeup += #random Azr_system
 
 execute if entity @s[scores={AZR_chainKillUpg_defensecharge=1,AZR_chainKill_damageblocked=1..}] store result score #random Azr_system run random value 0..2
 execute if entity @s[scores={AZR_chainKillUpg_defensecharge=2,AZR_chainKill_damageblocked=1..}] store result score #random Azr_system run random value 0..3

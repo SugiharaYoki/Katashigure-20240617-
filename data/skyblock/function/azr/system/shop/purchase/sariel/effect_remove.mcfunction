@@ -37,6 +37,19 @@ attribute @s knockback_resistance modifier remove azr_sariel:upg_01e
 attribute @s knockback_resistance modifier remove azr_sariel:upg_03e
 attribute @s knockback_resistance modifier remove azr_sariel:upg_05e
 
+attribute @s max_health modifier remove azr_sariel:upg_10e
+attribute @s max_health modifier remove azr_sariel:upg_13e
+attribute @s max_health modifier remove azr_sariel:upg_13f
+attribute @s max_health modifier remove azr_sariel:upg_9f
+attribute @s max_health modifier remove azr_sariel:upg_11e
+attribute @s max_health modifier remove azr_sariel:upg_11f
+attribute @s attack_damage modifier remove azr_sariel:upg_9f
+attribute @s attack_speed modifier remove azr_sariel:upg_9f
+attribute @s attack_damage modifier remove azr_sariel:upg_11e
+attribute @s attack_speed modifier remove azr_sariel:upg_11e
+attribute @s attack_damage modifier remove azr_sariel:upg_11f
+attribute @s attack_speed modifier remove azr_sariel:upg_11f
+
 tag @s remove AZR_sariel_01_effected
 
 

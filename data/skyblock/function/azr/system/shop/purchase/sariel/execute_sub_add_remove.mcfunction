@@ -152,8 +152,35 @@ $execute if entity @s[scores={Azr_Shop=8432147}] run tag @s $(tag_op) AzrSariel_
 $execute if entity @s[scores={Azr_Shop=8432147}] run scoreboard players $(emerald_op) @s Azr_emerald 80
 $execute if entity @s[scores={Azr_Shop=8432147}] run scoreboard players $(cost_op) @s AzrSariel_Data_CostAmount 80
 
-tag @s remove AZR_sariel_01_effected
+$execute if entity @s[scores={Azr_Shop=8432148}] run tag @s $(tag_op) AzrSariel_upg10E
+$execute if entity @s[scores={Azr_Shop=8432148}] run scoreboard players $(emerald_op) @s Azr_emerald 50
+$execute if entity @s[scores={Azr_Shop=8432148}] run scoreboard players $(cost_op) @s AzrSariel_Data_CostAmount 50
+$execute if entity @s[scores={Azr_Shop=8432149}] run tag @s $(tag_op) AzrSariel_upg13E
+$execute if entity @s[scores={Azr_Shop=8432149}] run scoreboard players $(emerald_op) @s Azr_emerald 60
+$execute if entity @s[scores={Azr_Shop=8432149}] run scoreboard players $(cost_op) @s AzrSariel_Data_CostAmount 60
+$execute if entity @s[scores={Azr_Shop=8432150}] run tag @s $(tag_op) AzrSariel_upg13F
+$execute if entity @s[scores={Azr_Shop=8432150}] run scoreboard players $(emerald_op) @s Azr_emerald 80
+$execute if entity @s[scores={Azr_Shop=8432150}] run scoreboard players $(cost_op) @s AzrSariel_Data_CostAmount 80
 
+
+$execute if entity @s[scores={Azr_Shop=8432151}] run tag @s $(tag_op) AzrSariel_upg9F
+$execute if entity @s[scores={Azr_Shop=8432151}] run scoreboard players $(emerald_op) @s Azr_emerald 50
+$execute if entity @s[scores={Azr_Shop=8432151}] run scoreboard players $(cost_op) @s AzrSariel_Data_CostAmount 50
+$execute if entity @s[scores={Azr_Shop=8432152}] run tag @s $(tag_op) AzrSariel_upg11E
+$execute if entity @s[scores={Azr_Shop=8432152}] run scoreboard players $(emerald_op) @s Azr_emerald 60
+$execute if entity @s[scores={Azr_Shop=8432152}] run scoreboard players $(cost_op) @s AzrSariel_Data_CostAmount 60
+$execute if entity @s[scores={Azr_Shop=8432153}] run tag @s $(tag_op) AzrSariel_upg11F
+$execute if entity @s[scores={Azr_Shop=8432153}] run scoreboard players $(emerald_op) @s Azr_emerald 80
+$execute if entity @s[scores={Azr_Shop=8432153}] run scoreboard players $(cost_op) @s AzrSariel_Data_CostAmount 80
+
+
+
+
+
+
+
+
+tag @s remove AZR_sariel_01_effected
 
 scoreboard players set @s AzrSariel_Side_Life 0
 scoreboard players set @s AzrSariel_Side_Death 0
