@@ -4,4 +4,6 @@ particle minecraft:gust ~ ~ ~ 0.1 0.1 0.1 0 1 force
 playsound minecraft:entity.blaze.hurt hostile @a[distance=..48] ~ ~ ~ 1.5 1.2
 playsound entity.generic.explode hostile @a[distance=..48] ~ ~ ~ 1 1.2
 execute as @a[tag=azrPlayer,distance=..1] at @s run damage @s 6 minecraft:in_fire
+
+execute if block ~ ~ ~ minecraft:waxed_exposed_copper_grate if block ~ ~1 ~ air run setblock ~ ~1 ~ fire
 kill @s
