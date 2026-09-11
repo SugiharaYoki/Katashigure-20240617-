@@ -18,9 +18,9 @@ execute at @s rotated as @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 execute as @n[tag=AzrielMob_boss_raphael_marker_movement,distance=..80,type=marker] run tag @s remove AzrielMob_boss_raphael_marker_movement_next
 execute at @p[tag=azrPlayer] as @n[tag=AzrielMob_boss_raphael_marker_movement,type=marker] run tag @s add AzrielMob_boss_raphael_marker_movement_next
 
-execute as @s at @s facing entity @n[tag=AzrielMob_boss_raphael_marker_movement_next,distance=1..] feet positioned 0.0 0 0.0 run summon marker ^ ^ ^0.7 {Tags:["AzrielMob_move_marker_raphael"]}
-execute as @s at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_move_marker_raphael] Pos
-execute as @s at @s run kill @n[type=marker,tag=AzrielMob_move_marker_raphael]
+execute as @s at @s if entity @n[tag=AzrielMob_boss_raphael_marker_movement_next,distance=2..] facing entity @n[tag=AzrielMob_boss_raphael_marker_movement_next,distance=2..] feet positioned 0.0 0 0.0 run summon marker ^ ^ ^0.7 {Tags:["AzrielMob_move_marker_raphael"]}
+execute as @s at @s if entity @n[tag=AzrielMob_boss_raphael_marker_movement_next,distance=2..] run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_move_marker_raphael] Pos
+execute as @s at @s if entity @n[tag=AzrielMob_boss_raphael_marker_movement_next,distance=2..] run kill @n[type=marker,tag=AzrielMob_move_marker_raphael]
 
 
 
