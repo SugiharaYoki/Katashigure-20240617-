@@ -126,6 +126,7 @@ scoreboard objectives remove AzrSariel_Skill_SlowRing_cooldown
 scoreboard objectives remove AzrSariel_Skill_BioMagnet
 #护身符
 scoreboard objectives remove AzrSariel_Amulet_FireLit_cooldown
+scoreboard objectives remove AzrSariel_Amulet_FireLit_count
 scoreboard objectives remove AzrSariel_Amulet_FireDrogue_cooldown
 scoreboard objectives remove AzrSariel_Amulet_StayFloat_cooldown
 scoreboard objectives remove AzrSariel_Amulet_StayFloat_power
