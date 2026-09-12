@@ -66,6 +66,7 @@ execute if score @s rng1 matches 20000 as @a[tag=azrPlayer] at @s run summon ite
 execute if score @s rng1 matches 20000 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
 #execute if score @s rng1 matches 20000 as @a[tag=azrPlayer,scores={Azr_skillPoints=..18}] at @s run function skyblock:azr/assets/items/amulets/magical_current
 execute if score @s rng1 matches 20000 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..19}] Azr_skillPoints 20
+execute if score @s rng1 matches 20000.. run kill @e[tag=AzrielMob_blaze,distance=..100,type=blaze]
 execute if score @s rng1 matches 20000.. run kill @s
 
 scoreboard players add @s[scores={rng9=1..}] rng9 1
