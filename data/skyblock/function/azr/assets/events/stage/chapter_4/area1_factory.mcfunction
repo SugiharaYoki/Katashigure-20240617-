@@ -10,8 +10,8 @@ execute positioned -79778 2 -281 as @n[tag=AzrielMarker_encounter,distance=0..0.
 
 
 #肥猪亨利
-execute positioned -79793 -6 -277 if loaded ~ ~ ~ unless entity @n[tag=AzrielTrader_pig_henry,distance=0..63] if entity @a[distance=..23.5,tag=azrPlayer] run function skyblock:azr/assets/mobs/unique/trader/pig_henry
-execute positioned -79793 -6 -277 if loaded ~ ~ ~ as @n[tag=AzrielTrader_pig_henry,distance=0..20] at @s unless entity @n[tag=AzrielMob,distance=..8] run function skyblock:azr/assets/events/stage/chapter_4/factory/conv_the_piglin
+execute if score stage Azr_system matches ..56 positioned -79793 -6 -277 if loaded ~ ~ ~ unless entity @n[tag=AzrielTrader_pig_henry,distance=0..63] if entity @a[distance=..23.5,tag=azrPlayer] run function skyblock:azr/assets/mobs/unique/trader/pig_henry
+execute if score stage Azr_system matches ..56 positioned -79793 -6 -277 if loaded ~ ~ ~ as @n[tag=AzrielTrader_pig_henry,distance=0..20] at @s unless entity @n[tag=AzrielMob,distance=..8] run function skyblock:azr/assets/events/stage/chapter_4/factory/conv_the_piglin
 
 #点灯1
 execute if score stage Azr_system matches ..65 positioned -79792 2 -279 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..5] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
