@@ -24,6 +24,7 @@ execute if score @s rng1 matches 330 run tellraw @a[tag=azrShowDialog] [{text:"�
 
 execute if score @s rng1 matches 700 run tellraw @a[tag=azrShowDialog] [{text:"拉斐尔：",color:"#fe741f",bold:1b},{bold: false,text:"\n“我果然没有看错人。我很中意你，爱理莎！”",color:"white"}]
 execute if score @s rng1 matches 760 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（等等，我知道他是谁了……他只能是其中一位天使长！！）",color:"white"}]
+execute if score @s rng1 matches 1260 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（我总感觉我在朝很不对劲的地方跑，但我别无选择……！）",color:"white"}]
 
 execute at @s rotated as @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
