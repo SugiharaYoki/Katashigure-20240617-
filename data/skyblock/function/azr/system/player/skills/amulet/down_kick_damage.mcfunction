@@ -20,10 +20,11 @@ $execute if score @s rng1 matches 5 as @e[tag=AzrielMob,distance=0..$(distance),
 $execute if score @s rng1 matches 6.. as @e[tag=AzrielMob,distance=0..$(distance),sort=nearest] at @s run damage @s 14 mace_smash by @p[scores={AzrSariel_Amulet_DownKick_clock=$(clock)}]
 
 
-$particle minecraft:gust ~ ~ ~ $(distance) 0 $(distance) 0 20
+$particle minecraft:gust ~ ~ ~ $(distance) 0 $(distance) 0 25
 
-$execute if score @s AzrSariel_Amulet_FireLit_count matches 8..15 if score @s AzrSariel_Amulet_DownKick_clock matches 11 run particle minecraft:lava ~ ~ ~ $(distance) 0 $(distance) 3 8
-$execute if score @s AzrSariel_Amulet_FireLit_count matches 16.. if score @s AzrSariel_Amulet_DownKick_clock matches 11 run particle minecraft:lava ~ ~ ~ $(distance) 0 $(distance) 3 13
+execute if score @s AzrSariel_Amulet_FireLit_count matches 8.. run playsound block.lava.pop block @a ~ ~ ~ 1 1.1
+$execute if score @s AzrSariel_Amulet_FireLit_count matches 8..15 run particle minecraft:lava ~ ~ ~ $(distance) 0 $(distance) 3 10
+$execute if score @s AzrSariel_Amulet_FireLit_count matches 16.. run particle minecraft:lava ~ ~ ~ $(distance) 0 $(distance) 3 20
 
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 11 run scoreboard players set @s AzrSariel_Amulet_FireLit_count 0
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 11 run scoreboard players set @s rng1 0
