@@ -2,7 +2,7 @@ function skyblock:azr/lifecycle/jump_to/ch4_start
 forceload add -79810 -559 -79669 -410
 forceload add -79887 -410 -79686 -120
 
-
+forceload add -79572 -414
 
 execute positioned -79793 -6 -277 run function skyblock:azr/assets/mobs/unique/trader/pig_henry
 execute positioned -79793 -6 -277 as @n[tag=AzrielTrader_pig_henry] run scoreboard players set @s rng1 137

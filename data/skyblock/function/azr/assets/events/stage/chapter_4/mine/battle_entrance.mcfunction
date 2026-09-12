@@ -18,7 +18,7 @@ execute as @s[scores={rng1=1}] positioned -79692 22 -415 run function skyblock:a
 execute as @s[scores={rng1=1}] positioned -79692 22 -414 run function skyblock:azr/assets/mobs/skeleton_melee
 execute as @s[scores={rng1=1}] positioned -79692 22 -416 run function skyblock:azr/assets/mobs/skeleton_melee
 
-
+execute as @s[scores={rng1=1}] run forceload add -79572 -414
 
 #混战初始准备
 execute as @s[scores={rng1=1}] positioned -79664 21 -422 run function skyblock:azr/assets/mobs/piglin_sword
