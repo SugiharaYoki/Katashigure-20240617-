@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "邃栈：天使长 - 拉斐尔",
+            "color": "dark_red",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "我原本需要顺着权之残影指定的路线回到神庭。\n但是拉斐尔拦住了我，并且他差点就把我给杀了。\n为什么会这样？拉斐尔难道不是站在神庭这一边吗？\n\n难道他和路西法一样，是堕天使？\n不可能，那样的话我至少应该已经听到了相关的说法。\n我不清楚拉斐尔为什么会迫使我往这个方向来。\n\n我只知道一件事：无论如何都不能踏入神庭的地下水路区域。\n\n我现在就在这里。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:ender_pearl"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage17_boss4"
+}
