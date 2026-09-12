@@ -12,6 +12,7 @@ fill -79646 -29 -666 -79644 -29 -659 air replace minecraft:waxed_exposed_copper_
 fill -79651 54 -736 -79651 52 -733 iron_bars
 
 
+advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage17_boss4_2
 
 
 
