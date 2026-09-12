@@ -91,6 +91,18 @@ execute if score @s rng1 matches 510 positioned -79649 -14 -699 run summon minec
 execute if score @s rng1 matches 510 positioned -79650 -08 -701 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
 execute if score @s rng1 matches 510 positioned -79648 002 -719 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
 
+execute if score @s rng1 matches 510 run forceload add -79651 -738
+execute if score @s rng1 matches 510 positioned -79651 3 -738 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79651 13 -738 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79651 23 -738 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79651 33 -738 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79651 43 -738 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79651 53 -738 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79651 63 -738 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 510 positioned -79651 73 -738 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMob_boss_raphael_marker_movement","AzrielMob_mob_marker"]}
+
+
+
 
 execute if score @s rng1 matches 520..999 positioned -79647 -24 -626 unless entity @a[tag=azrPlayer,distance=..150] run function skyblock:azr/lifecycle/endgame/reset_map_boss4
 
