@@ -3,9 +3,9 @@
 execute if entity @s[predicate=skyblock:forward] run scoreboard players add @s AzrSariel_Amulet_FlowerWallFire_sum 1
 
 execute if score @s AzrSariel_Amulet_FlowerWallFire_sum matches 20 run attribute @s movement_speed modifier add azr_amulet:flowerwallfire_01 0.01 add_value
-execute if score @s AzrSariel_Amulet_FlowerWallFire_sum matches 35 run attribute @s movement_speed modifier add azr_amulet:flowerwallfire_02 0.01 add_value
-execute if score @s AzrSariel_Amulet_FlowerWallFire_sum matches 50 run attribute @s movement_speed modifier add azr_amulet:flowerwallfire_03 0.01 add_value
-execute if score @s AzrSariel_Amulet_FlowerWallFire_sum matches 80 run attribute @s movement_speed modifier add azr_amulet:flowerwallfire_04 0.01 add_value
+execute unless score stage Azr_system matches 70 if score @s AzrSariel_Amulet_FlowerWallFire_sum matches 35 run attribute @s movement_speed modifier add azr_amulet:flowerwallfire_02 0.01 add_value
+execute unless score stage Azr_system matches 70 if score @s AzrSariel_Amulet_FlowerWallFire_sum matches 50 run attribute @s movement_speed modifier add azr_amulet:flowerwallfire_03 0.01 add_value
+execute unless score stage Azr_system matches 70 if score @s AzrSariel_Amulet_FlowerWallFire_sum matches 80 run attribute @s movement_speed modifier add azr_amulet:flowerwallfire_04 0.01 add_value
 
 execute if score @s AzrSariel_Amulet_FlowerWallFire_sum matches 1.. if entity @s[predicate=!skyblock:forward] run attribute @s movement_speed modifier remove azr_amulet:flowerwallfire_01
 execute if score @s AzrSariel_Amulet_FlowerWallFire_sum matches 1.. if entity @s[predicate=!skyblock:forward] run attribute @s movement_speed modifier remove azr_amulet:flowerwallfire_02

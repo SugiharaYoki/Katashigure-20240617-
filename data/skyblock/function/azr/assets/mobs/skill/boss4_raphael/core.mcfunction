@@ -45,6 +45,7 @@ execute if score @s rng1 matches 10000 positioned -79646.96 52.00 -733.99 as @a[
 execute if score @s rng1 matches 10000 run fill -79646 -28 -633 -79644 -28 -671 air replace fire
 execute if score @s rng1 matches 10000 run fill -79646 -24 -679 -79644 -24 -681 air replace fire
 execute if score @s rng1 matches 10000 run execute positioned -79650 -25 -658 run kill @e[tag=AzrielMob_boss_raphael_marker_movement,distance=..200]
+execute if score @s rng1 matches 10000 as @a[tag=azrPlayer] at @s run effect give @s regeneration 5 19 true
 execute if score @s rng1 matches 10000 run fill -79651 53 -736 -79651 52 -733 barrier
 execute if score @s rng1 matches 10000 run fill -79651 54 -736 -79651 54 -733 iron_bars
 execute if score @s rng1 matches 10003 run fill -79651 53 -736 -79651 53 -733 iron_bars
