@@ -192,12 +192,12 @@ execute if entity @s[tag=AZS_BoS08] run data modify entity @n[tag=AzrRamielExSta
 
 
 tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
-{selector:"@n[tag=AzrRamielExStage_displaymarkera]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432301"},hover_event:{"action":"show_text","value":{text:"Appetence - 叛诛卷宗\n使用棍类武器攻击背对自己的怪物时造成大额伤害、增加手持棍类武器时的潜行速度",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkera]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432301"},hover_event:{"action":"show_text","value":{text:"Appetence - 叛诛卷宗\n使用杖棍类武器攻击背对自己的怪物时造成大额伤害、增加手持杖棍类武器时的潜行速度",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerb]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432302"},hover_event:{"action":"show_text","value":{text:"Breakout - 枝棘石板\n受伤时造成范围伤害、受高额伤害时触发短时间减伤",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerc]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432303"},hover_event:{"action":"show_text","value":{text:"Cerement - 贪婪石板\n增加拾取范围",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerd]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432304"},hover_event:{"action":"show_text","value":{text:"Diffident - 花墙石板\n按前进键增加攻防",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkere]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432305"},hover_event:{"action":"show_text","value":{text:"Entertain - 冲刺石板\n按住跑步进行冲刺",color:"white"}}},\
-{selector:"@n[tag=AzrRamielExStage_displaymarkerf]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432306"},hover_event:{"action":"show_text","value":{text:"Flux - 燃点卷宗\n剑攻击点燃、加强节制天平扇形火",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerf]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432306"},hover_event:{"action":"show_text","value":{text:"Flux - 燃点卷宗\n剑/杖棍攻击点燃、点燃计数加强下砸、加强节制天平扇形火",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerg]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432307"},hover_event:{"action":"show_text","value":{text:"Guise - 滋育石板\n蹲下时移动速度减少、攻击力减少、防御力增加、缓慢恢复生命",color:"white"}}},\
 {text:"\n "},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerh]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432308"},hover_event:{"action":"show_text","value":{text:"Hoistway - 烨墙石板\n整合花墙石板、保持长按前进键增加移动速度",color:"white"}}},\
