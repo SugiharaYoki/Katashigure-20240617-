@@ -67,7 +67,7 @@ execute if score @s rng9 matches 15 positioned -79645 -28 -645 run fill -79646 -
 
 execute if score @s rng9 matches 26 run scoreboard players set @s rng9 25
 
-execute positioned -79645 -28 -663 if entity @a[tag=azrPlayer,distance=..8] unless score @s rng9 matches 31.. run scoreboard players set @s rng9 31
+execute positioned -79645 -28 -670 if entity @a[tag=azrPlayer,distance=..8] unless score @s rng9 matches 31.. run scoreboard players set @s rng9 31
 execute if score @s rng9 matches 31 positioned -79647 -32 -663 run playsound entity.blaze.shoot hostile @a ~ ~ ~ 1.5 1.5
 execute if score @s rng9 matches 33 positioned -79646 -30 -663 run playsound entity.blaze.shoot hostile @a ~ ~ ~ 1.5 1.5
 execute if score @s rng9 matches 35 positioned -79645 -28 -663 run playsound entity.blaze.shoot hostile @a ~ ~ ~ 1.5 1.5
