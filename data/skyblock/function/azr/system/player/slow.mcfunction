@@ -54,8 +54,8 @@ execute if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] if e
 execute if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] if entity @s[predicate=!skyblock:jump,tag=revival_star_task] run tag @s remove revival_star_task
 
 #节制天平
-execute if score @s AzrSariel_Skill_FanFire matches 1.. run scoreboard players remove @s AzrSariel_Skill_FanFire_cooldown 1
-execute if score @s AzrSariel_Skill_ElecBall matches 1.. run scoreboard players remove @s AzrSariel_Skill_ElecBall_cooldown 1
+execute if score @s[tag=!AzrSariel_Route_Death] AzrSariel_Skill_FanFire matches 1.. run scoreboard players remove @s AzrSariel_Skill_FanFire_cooldown 1
+execute if score @s[tag=!AzrSariel_Route_Life] AzrSariel_Skill_ElecBall matches 1.. run scoreboard players remove @s AzrSariel_Skill_ElecBall_cooldown 1
 execute if entity @s[tag=AzrSariel_upg6C] run scoreboard players remove @s AzrSariel_Skill_AbsDefend_cooldown 1
 
 #特殊食物
@@ -77,6 +77,9 @@ execute at @s run function skyblock:azr/assets/events/stage/area_title_detect
 execute if score stage Azr_system matches 55..69 at @n[tag=AzrielMob_utility_respawn_anchor,type=marker] run spawnpoint @s ~ ~ ~
 execute if score stage Azr_system matches 70 positioned -79765 -17 -177 at @n[tag=AzrielMob_utility_respawn_anchor,type=marker] run spawnpoint @s ~ ~ ~
 execute if score stage Azr_system matches 71..79 at @n[tag=AzrielMob_utility_respawn_anchor,type=marker] run spawnpoint @s ~ ~ ~
+execute if entity @s[tag=!AzrSariel_Route_Life,tag=!AzrSariel_Route_Death] if score stage Azr_system matches 71.. run tag @s[tag=AzrSariel_Side_Life] add AzrSariel_Route_Life
+execute if entity @s[tag=!AzrSariel_Route_Life,tag=!AzrSariel_Route_Death] if score stage Azr_system matches 71.. run tag @s[tag=AzrSariel_Side_Death] add AzrSariel_Route_Death
+
 
 scoreboard players reset @s AzrSariel_Amulet_generic_damage_taken
 

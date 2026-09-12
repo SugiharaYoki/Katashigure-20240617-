@@ -38,6 +38,8 @@ tag @s remove AZR_chainKill_activated
 tag @s remove AzrielEvent382315A
 
 tag @s remove revival_star_task
+tag @s remove AzrSariel_Route_Life
+tag @s remove AzrSariel_Route_Death
 
 scoreboard players set @s Azr_forceDeath 0
 scoreboard players set @s AZR_chainKill_count 0

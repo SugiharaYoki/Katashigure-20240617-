@@ -90,13 +90,13 @@ execute if score @s AzrSariel_Amulet_RevivalStar_Callmate matches 1.. run functi
 execute if entity @s[tag=AzrSariel_upg6C,scores={AzrSariel_Skill_AbsDefend_cooldown=..1}] run function skyblock:azr/system/player/damage_bonus/effect/absdefend
 execute if score @s AzrSariel_Skill_ContactDmg matches 1.. run scoreboard players remove @s AzrSariel_Skill_ContactDmg_cooldown 1
 execute if entity @s[tag=AzrSariel_upg8C] run scoreboard players remove @s AzrSariel_Skill_SneakDodgeArrow_cooldown 1
-execute if entity @s[scores={AzrSariel_Skill_ContactDmg=1..,AzrSariel_Skill_ContactDmg_cooldown=..0}] if entity @n[tag=AzrielMob,distance=0..1.5] run function skyblock:azr/system/player/damage_bonus/effect/contactdmg
+execute if entity @s[tag=!AzrSariel_Route_Death,scores={AzrSariel_Skill_ContactDmg=1..,AzrSariel_Skill_ContactDmg_cooldown=..0}] if entity @n[tag=AzrielMob,distance=0..1.5] run function skyblock:azr/system/player/damage_bonus/effect/contactdmg
 execute if entity @s[tag=AzrSariel_upg8C] run function skyblock:azr/system/player/damage_bonus/effect/sneakdodgearrow
 
-execute if score @s AzrSariel_Skill_FlowerReason_condition matches 6.. run function skyblock:azr/system/player/damage_bonus/effect/biomagnet
-execute if score @s AzrSariel_Skill_FlowerReason_condition matches 6.. run function skyblock:azr/system/player/damage_bonus/effect/flowerreason
-execute if score @s AzrSariel_Skill_SlowRing matches 1.. run scoreboard players remove @s AzrSariel_Skill_SlowRing_cooldown 1
-execute if score @s AzrSariel_Skill_SlowRing matches 1.. if score @s AzrSariel_Skill_SlowRing_cooldown matches ..0 run function skyblock:azr/system/player/damage_bonus/effect/slowring
+execute if score @s[tag=!AzrSariel_Route_Death] AzrSariel_Skill_FlowerReason_condition matches 6.. run function skyblock:azr/system/player/damage_bonus/effect/biomagnet
+execute if score @s[tag=!AzrSariel_Route_Death] AzrSariel_Skill_FlowerReason_condition matches 6.. run function skyblock:azr/system/player/damage_bonus/effect/flowerreason
+execute if score @s[tag=!AzrSariel_Route_Life] AzrSariel_Skill_SlowRing matches 1.. run scoreboard players remove @s AzrSariel_Skill_SlowRing_cooldown 1
+execute if score @s[tag=!AzrSariel_Route_Life] AzrSariel_Skill_SlowRing matches 1.. if score @s AzrSariel_Skill_SlowRing_cooldown matches ..0 run function skyblock:azr/system/player/damage_bonus/effect/slowring
 
 #悬蔑石板
 execute if items entity @s[tag=AZS_BoS11] container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. if score @s AzrSariel_Amulet_StayFloat_cooldown matches 119..135 run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 135
