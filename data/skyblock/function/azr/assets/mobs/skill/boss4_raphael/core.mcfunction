@@ -55,6 +55,7 @@ execute if score @s rng1 matches 10003 positioned -79650.44 55.07 -734.01 run pl
 execute if score @s rng1 matches 10006 positioned -79650.44 55.07 -734.01 run playsound block.iron_door.close block @a ~ ~ ~ 2 1.2
 
 execute if score @s rng1 matches 10006..18888 if score @s rng19 matches 2450.. run scoreboard players set @s rng1 20000
+execute if score @s rng1 matches 10006..18888 if score @s rng19 matches ..2100 run scoreboard players set @s rng1 20000
 
 execute if score @s rng1 matches 20000 run bossbar remove azr:boss_hp_bar
 execute if score @s rng1 matches 20000 run bossbar remove azr:boss_hp_bar_2
