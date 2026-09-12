@@ -2,6 +2,18 @@ scoreboard players add @s rng1 1
 
 execute store result bossbar azr:boss_hp_bar_2 value run scoreboard players get @s rng1
 
+
+execute if score @s rng1 matches 1 positioned -79641 -29 -672 run function skyblock:azr/assets/mobs/blaze
+execute if score @s rng1 matches 1 positioned -79641 -29 -672 run function skyblock:azr/assets/mobs/blaze
+execute if score @s rng1 matches 1 positioned -79641 -29 -672 run function skyblock:azr/assets/mobs/blaze
+execute if score @s rng1 matches 1 positioned -79650 -9 -707 run function skyblock:azr/assets/mobs/blaze
+execute if score @s rng1 matches 1 positioned -79650 -9 -707 run function skyblock:azr/assets/mobs/blaze
+execute if score @s rng1 matches 1 positioned -79650 -9 -707 run function skyblock:azr/assets/mobs/blaze
+execute if score @s rng1 matches 1 positioned -79645 -28 -651 run function skyblock:azr/assets/mobs/magma_cube_mini
+execute if score @s rng1 matches 1 positioned -79646 -28 -661 run function skyblock:azr/assets/mobs/magma_cube_mini
+execute if score @s rng1 matches 1 positioned -79644 -28 -668 run function skyblock:azr/assets/mobs/magma_cube_mini
+execute if score @s rng1 matches 1 positioned -79645 -28 -670 run function skyblock:azr/assets/mobs/magma_cube_mini
+
 execute if score @s rng1 matches 50 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“操……你是谁？！”",color:"white"}]
 
 execute if score @s rng1 matches 120 run tellraw @a[tag=azrShowDialog] [{text:"拉斐尔：",color:"#fe741f",bold:1b},{bold: false,text:"\n“你不能通过这里。”",color:"white"}]
