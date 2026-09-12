@@ -38,6 +38,23 @@ execute as @s at @s if entity @n[tag=AzrielMob_boss_raphael_marker_movement_next
 
 
 
+execute if score @s rng1 matches ..9000 if entity @a[tag=azrPlayer,x=-79649,y=52,z=-742,dx=20,dy=20,dz=20] run scoreboard players set @s rng1 10000
+execute if score @s rng1 matches 10000 positioned -79646.96 52.00 -733.99 as @a[tag=azrPlayer,distance=4..] run tp @s ~ ~ ~
+execute if score @s rng1 matches 10000 positioned -79646.96 52.00 -733.99 as @a[tag=azrShowDialog,distance=28..] run tp @s ~ ~ ~
+execute if score @s rng1 matches 10000 run bossbar remove azr:boss_hp_bar
+execute if score @s rng1 matches 10000 run bossbar remove azr:boss_hp_bar_2
+execute if score @s rng1 matches 10000 run fill -79646 -28 -633 -79644 -28 -671 air replace fire
+execute if score @s rng1 matches 10000 run fill -79646 -24 -679 -79644 -24 -681 air replace fire
+execute if score @s rng1 matches 10000 run execute positioned -79650 -25 -658 run kill @e[tag=AzrielMob_boss_raphael_marker_movement,distance=..200]
+execute if score @s rng1 matches 10000 run kill @n[type=mannequin,tag=AzrielNPC_raphael]
+execute if score @s rng1 matches 10000 run fill -79651 53 -736 -79651 52 -733 barrier
+execute if score @s rng1 matches 10000 run fill -79651 54 -736 -79651 54 -733 iron_bars
+execute if score @s rng1 matches 10003 run fill -79651 53 -736 -79651 53 -733 iron_bars
+execute if score @s rng1 matches 10006 run fill -79651 52 -736 -79651 52 -733 iron_bars
+execute if score @s rng1 matches 10000 positioned -79650.44 55.07 -734.01 run playsound block.iron_door.close block @a ~ ~ ~ 2 1.2
+execute if score @s rng1 matches 10003 positioned -79650.44 55.07 -734.01 run playsound block.iron_door.close block @a ~ ~ ~ 2 1.2
+execute if score @s rng1 matches 10006 positioned -79650.44 55.07 -734.01 run playsound block.iron_door.close block @a ~ ~ ~ 2 1.2
+
 
 scoreboard players add @s[scores={rng9=1..}] rng9 1
 
