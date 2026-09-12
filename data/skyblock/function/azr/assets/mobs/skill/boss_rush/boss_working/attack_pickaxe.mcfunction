@@ -7,11 +7,11 @@ execute if score @s rng8 matches 6 as @s at @s run effect give @s slowness infin
 execute if score @s rng8 matches 6 as @s at @s run playsound minecraft:entity.evoker.cast_spell hostile @a ~ ~ ~ 1 1.3
 execute if score @s rng8 matches 6 as @s at @s run particle minecraft:flame ~ ~0.3 ~ 0.2 0 0.2 0 20
 execute if score @s rng8 matches 6..19 as @s at @s run particle minecraft:flame ~ ~0.3 ~ 0.2 0 0.2 0 3
-execute if score @s[scores={Health=..260}] rng8 matches 8 as @s at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_pickaxe_random
-execute if score @s[scores={Health=..260}] rng8 matches 9 as @s at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_pickaxe_random
-execute if score @s[scores={Health=..240}] rng8 matches 10 as @s at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_pickaxe_random
-execute if score @s[scores={Health=..220}] rng8 matches 11 as @s at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_pickaxe_random
-execute if score @s[scores={Health=..200}] rng8 matches 12 as @s at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_pickaxe_random
+execute if score @s[scores={Health=..380}] rng8 matches 8 as @s at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_pickaxe_random
+execute if score @s[scores={Health=..380}] rng8 matches 9 as @s at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_pickaxe_random
+execute if score @s[scores={Health=..320}] rng8 matches 10 as @s at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_pickaxe_random
+execute if score @s[scores={Health=..280}] rng8 matches 11 as @s at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_pickaxe_random
+execute if score @s[scores={Health=..220}] rng8 matches 12 as @s at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_pickaxe_random
 execute if score @s[scores={Health=..180}] rng8 matches 13 as @s at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_pickaxe_random
 execute if score @s[scores={Health=..160}] rng8 matches 14 as @s at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_pickaxe_random
 execute if score @s[scores={Health=..140}] rng8 matches 15 as @s at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/attack_pickaxe_random

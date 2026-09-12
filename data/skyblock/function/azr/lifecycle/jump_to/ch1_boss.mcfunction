@@ -26,7 +26,7 @@ scoreboard players set @a[scores={AZR_chainKillUpg_pts=..0}] AZR_chainKillUpg_pt
 execute positioned -79923.85 46.3 45.02 run function skyblock:azr/assets/mobs/unique/bird
 execute positioned -79930.46 71.00 74.33 run function skyblock:azr/assets/mobs/skill/marinus/summon
 
-fill -79934 40 -1 -79934 38 1 air
+fill -79934 41 -1 -79934 38 1 air
 fill -79931 40 6 -79931 38 6 air
 fill -79928 40 1 -79928 38 -1 air
 fill -79931 38 22 -79931 40 22 red_stained_glass

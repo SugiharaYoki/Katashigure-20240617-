@@ -92,7 +92,7 @@ setblock -79931 37 3 minecraft:quartz_pillar{name: "Stage1 mob spawnpoint"}
 setblock -79931 37 -9 minecraft:quartz_pillar{name: "Stage1 mob spawnpoint"}
 fill -79928 40 1 -79928 38 -1 minecraft:purple_stained_glass{name: "Stage1 whitebox"}
 fill -79931 38 6 -79931 40 6 purple_stained_glass{name: "to Stage2"}
-fill -79934 40 -1 -79934 38 1 purple_stained_glass{name: "to Stage3 beta"}
+fill -79934 41 -1 -79934 38 1 purple_stained_glass{name: "to Stage3 beta"}
 setblock -79946 37 -8 minecraft:white_stained_glass{name: "Stage3 beta ladder"}
   #通往stage9
 clone -79908 36 -41 -79904 43 -32 -79933 37 -27
