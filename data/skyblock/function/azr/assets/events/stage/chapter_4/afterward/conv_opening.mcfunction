@@ -53,7 +53,7 @@ execute if score @s rng1 matches 502 run clone -79762 19 -200 -79751 27 -184 -79
 execute if score @s rng1 matches 502 positioned -79776 22 -195 run summon marker ~ ~0 ~ {Tags:["AzrielMob_angel_raphael_opening_fireball","AzrielMob_mob_marker"]}
 
 execute if score @s rng1 matches 510 as @a[tag=azrShowDialog] at @s run playsound minecraft:truehero music @s ~ ~ ~ 0.65
-execute if score @s rng1 matches 510 run tellraw @a[tag=azrShowDialog] [{text:"拉斐尔：",color:"#fe741f",bold:1b},{bold: false,text:"\n“甚好，甚好啊，人类！你让我刮目相看，但很抱歉，我无法放你通过这里！”",color:"white"}]
+execute if score @s rng1 matches 510 run tellraw @a[tag=azrShowDialog] [{text:"拉斐尔：",color:"#fe741f",bold:1b},{bold: false,text:"\n“甚好，绝妙啊人类！你让我刮目相看——但很抱歉，我无法放你通过这里！”",color:"white"}]
 
 execute if score @s rng1 matches 510 run bossbar add azr:boss_hp_bar_2 [{text:"死 亡 宣 判",bold:true,color:"#cb0000"}]
 execute if score @s rng1 matches 530 run bossbar set azr:boss_hp_bar_2 color red
