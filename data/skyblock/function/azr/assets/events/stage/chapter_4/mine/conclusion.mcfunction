@@ -13,7 +13,7 @@ scoreboard players add @s rng1 1
 #多于30个汉字的句子：rng1+21
 
 tag @s remove ch4_conclusion_conversation_speedup
-execute if entity @a[tag=azrPlayer,x=-79605,y=14,z=-439,dx=250,dy=20,dz=250] unless entity @a[tag=azrPlayer,x=-79605,y=-10,z=-439,dx=250,dy=24,dz=250] run tag @s add ch4_conclusion_conversation_speedup
+execute if entity @a[tag=azrPlayer,x=-79605,y=19,z=-439,dx=250,dy=20,dz=250] unless entity @a[tag=azrPlayer,x=-79605,y=-10,z=-439,dx=250,dy=24,dz=250] run tag @s add ch4_conclusion_conversation_speedup
 
 execute if score @s rng1 matches 12..100 as @n[tag=AzrielNPC_andralune] at @s run effect clear @s invisibility
 execute if score @s rng1 matches 12 as @n[tag=AzrielNPC_andralune] at @s run data modify entity @n[tag=AzrielNPC_andralune] NoAI set value 1b
