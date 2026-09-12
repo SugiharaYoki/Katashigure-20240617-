@@ -11,13 +11,13 @@ execute if block ~ ~-0.1 ~ honey_block run particle block{block_state:{Name:"hon
 execute if block ~ ~-0.1 ~ honey_block run playsound block.honey_block.break block @a ~ ~ ~ 1.5 0.8
 execute if block ~ ~-0.1 ~ honey_block run setblock ~ ~-0.1 ~ air
 
-$execute if score @s rng1 matches 0 as @e[tag=AzrielMob,distance=0..$(distance),sort=nearest] at @s run damage @s 8 mace_smash by @p[scores={AzrSariel_Amulet_DownKick_clock=$(clock)}]
+$execute if score @s rng1 matches 0 as @e[tag=AzrielMob,distance=0..$(distance),sort=nearest] at @s run damage @s 7 mace_smash by @p[scores={AzrSariel_Amulet_DownKick_clock=$(clock)}]
 $execute if score @s rng1 matches 1 as @e[tag=AzrielMob,distance=0..$(distance),sort=nearest] at @s run damage @s 9 mace_smash by @p[scores={AzrSariel_Amulet_DownKick_clock=$(clock)}]
-$execute if score @s rng1 matches 2 as @e[tag=AzrielMob,distance=0..$(distance),sort=nearest] at @s run damage @s 10 mace_smash by @p[scores={AzrSariel_Amulet_DownKick_clock=$(clock)}]
-$execute if score @s rng1 matches 3 as @e[tag=AzrielMob,distance=0..$(distance),sort=nearest] at @s run damage @s 11 mace_smash by @p[scores={AzrSariel_Amulet_DownKick_clock=$(clock)}]
-$execute if score @s rng1 matches 4 as @e[tag=AzrielMob,distance=0..$(distance),sort=nearest] at @s run damage @s 12 mace_smash by @p[scores={AzrSariel_Amulet_DownKick_clock=$(clock)}]
-$execute if score @s rng1 matches 5 as @e[tag=AzrielMob,distance=0..$(distance),sort=nearest] at @s run damage @s 13 mace_smash by @p[scores={AzrSariel_Amulet_DownKick_clock=$(clock)}]
-$execute if score @s rng1 matches 6.. as @e[tag=AzrielMob,distance=0..$(distance),sort=nearest] at @s run damage @s 14 mace_smash by @p[scores={AzrSariel_Amulet_DownKick_clock=$(clock)}]
+$execute if score @s rng1 matches 2 as @e[tag=AzrielMob,distance=0..$(distance),sort=nearest] at @s run damage @s 11 mace_smash by @p[scores={AzrSariel_Amulet_DownKick_clock=$(clock)}]
+$execute if score @s rng1 matches 3 as @e[tag=AzrielMob,distance=0..$(distance),sort=nearest] at @s run damage @s 13 mace_smash by @p[scores={AzrSariel_Amulet_DownKick_clock=$(clock)}]
+$execute if score @s rng1 matches 4 as @e[tag=AzrielMob,distance=0..$(distance),sort=nearest] at @s run damage @s 15 mace_smash by @p[scores={AzrSariel_Amulet_DownKick_clock=$(clock)}]
+$execute if score @s rng1 matches 5 as @e[tag=AzrielMob,distance=0..$(distance),sort=nearest] at @s run damage @s 17 mace_smash by @p[scores={AzrSariel_Amulet_DownKick_clock=$(clock)}]
+$execute if score @s rng1 matches 6.. as @e[tag=AzrielMob,distance=0..$(distance),sort=nearest] at @s run damage @s 19 mace_smash by @p[scores={AzrSariel_Amulet_DownKick_clock=$(clock)}]
 
 
 $particle minecraft:gust ~ ~ ~ $(distance) 0 $(distance) 0 25
