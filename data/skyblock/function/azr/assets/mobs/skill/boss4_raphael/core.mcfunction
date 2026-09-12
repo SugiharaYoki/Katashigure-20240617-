@@ -98,6 +98,10 @@ execute positioned -79652 -25 -663 if entity @s[distance=..5] if block ~ ~ ~ bas
 execute positioned -79652 -25 -663 if entity @s[distance=..5] if block ~ ~ ~ basalt run particle explosion ~ ~1 ~ 3 0 1 0 5
 execute positioned -79652 -25 -663 if entity @s[distance=..5] if block ~ ~ ~ basalt run fill -79653 -23 -661 -79651 -27 -667 minecraft:structure_void replace minecraft:basalt destroy
 
+execute positioned -79649 -18 -697 if entity @s[distance=..9] if block ~ ~ ~ basalt run playsound entity.generic.explode block @a ~ ~ ~ 2 0.8
+execute positioned -79649 -18 -697 if entity @s[distance=..9] if block ~ ~ ~ basalt run particle explosion ~ ~1 ~ 1 2 1 0 5
+execute positioned -79649 -18 -697 if entity @s[distance=..9] if block ~ ~ ~ basalt run fill -79650 -22 -697 -79648 -14 -696 minecraft:structure_void replace minecraft:basalt destroy
+
 
 
 
