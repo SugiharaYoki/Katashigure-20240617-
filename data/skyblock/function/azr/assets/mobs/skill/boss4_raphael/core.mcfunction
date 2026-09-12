@@ -150,7 +150,13 @@ execute if score @s rng1 matches 790..810 at @s run particle gust_emitter_small 
 execute if score @s rng1 matches 790..800 at @s run particle flash{color:[1.000,0.60,0.00,1.00]} ~ ~ ~ 3 1 3 0 1
 execute if score @s rng1 matches 800 at @s run particle flame ~ ~1 ~ 0 0 0 1 300
 execute if score @s rng1 matches 800 at @s run function skyblock:azr/assets/mobs/skill/boss4_raphael/wings_summon
-execute if score @s rng1 matches 800 run bossbar add azr:boss_hp_bar [{text:"天使长 · ",bold:true,color:"white"},{text:"拉斐尔",bold:true,color:"#fe741f"}]
+execute if score @s rng1 matches 800 run bossbar add azr:boss_hp_bar [{text:"天",bold:true,color:"white"},{text:"",bold:true,color:"#fe741f"}]
+execute if score @s rng1 matches 801 run bossbar set azr:boss_hp_bar name [{text:"天使",bold:true,color:"white"},{text:"",bold:true,color:"#fe741f"}]
+execute if score @s rng1 matches 802 run bossbar set azr:boss_hp_bar name [{text:"天使长",bold:true,color:"white"},{text:"",bold:true,color:"#fe741f"}]
+execute if score @s rng1 matches 803 run bossbar set azr:boss_hp_bar name [{text:"天使长 · ",bold:true,color:"white"},{text:"",bold:true,color:"#fe741f"}]
+execute if score @s rng1 matches 804 run bossbar set azr:boss_hp_bar name [{text:"天使长 · ",bold:true,color:"white"},{text:"拉",bold:true,color:"#fe741f"}]
+execute if score @s rng1 matches 805 run bossbar set azr:boss_hp_bar name [{text:"天使长 · ",bold:true,color:"white"},{text:"拉斐",bold:true,color:"#fe741f"}]
+execute if score @s rng1 matches 806 run bossbar set azr:boss_hp_bar name [{text:"天使长 · ",bold:true,color:"white"},{text:"拉斐尔",bold:true,color:"#fe741f"}]
 execute if score @s rng1 matches 800 run bossbar set azr:boss_hp_bar color red
 execute if score @s rng1 matches 800 run bossbar set azr:boss_hp_bar max 100
 execute if score @s rng1 matches 800 run bossbar set azr:boss_hp_bar value 100
