@@ -25,6 +25,7 @@ execute if score @s rng1 matches 330 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 700 run tellraw @a[tag=azrShowDialog] [{text:"拉斐尔：",color:"#fe741f",bold:1b},{bold: false,text:"\n“我果然没有看错人。我很中意你，爱理莎！”",color:"white"}]
 execute if score @s rng1 matches 760 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（等等，我知道他是谁了……他只能是其中一位天使长！！）",color:"white"}]
 execute if score @s rng1 matches 1260 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（我总感觉我在朝很不对劲的地方跑，但我别无选择……！）",color:"white"}]
+execute if score @s rng1 matches 2100 run tellraw @a[tag=azrShowDialog] [{text:"拉斐尔：",color:"#fe741f",bold:1b},{bold: false,text:"\n“看来你做不到——那我别无选择，只能将你葬在此地了！”",color:"white"}]
 
 execute at @s rotated as @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
@@ -105,7 +106,8 @@ execute positioned -79649 -18 -697 if entity @s[distance=..9] if block ~ ~ ~ bas
 
 
 
-
+execute if score @s rng1 matches 2280..2300 run scoreboard players set @s rng11 160
+execute if score @s rng1 matches 2290..2303 run scoreboard players set @s rng13 1
 scoreboard players add @s rng11 1
 execute if score @s rng11 matches 160 store result score @s rng12 run random value 1..3
 execute if score @s rng11 matches 160 if score @s rng12 matches 1 run summon minecraft:block_display ~ ~1.2 ~ {Tags:["AzrielMob_boss_raphael_marker_block_throw","AzrielMob_mob_marker"],block_state:{Name:"minecraft:magma_block"},brightness:{block:15,sky:15},shadow_radius:0f,teleport_duration:1,transformation:{translation:[0f,-0.601f,-0.08f],left_rotation:[0f,0f,0.3826834f,0.9238795f],scale:[0.85f,0.85f,0.16f],right_rotation:[0f,0f,0f,1f]}}
@@ -138,6 +140,7 @@ execute at @s rotated ~ 0 run particle minecraft:flame ^0.28 ^1.20 ^-0.72 0.02 0
 execute at @s rotated ~ 0 run particle minecraft:cloud ^ ^1.34 ^-0.22 0.03 0.06 0.03 0.001 1 force
 
 
+execute if score @s rng1 matches 2340 run kill @a[tag=azrPlayer]
 
 
 
