@@ -88,7 +88,7 @@ execute as @s[scores={Azr_Shop=8431564}] \
     unless function skyblock:azr/system/shop/purchase/ramiel/\
     arrow_savior run scoreboard players set tempPlayerShopSuccess Azr_system 1
     
-execute as @s[scores={Azr_Shop=8431567}] \
+execute if score stage Azr_system matches ..69 as @s[scores={Azr_Shop=8431567}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if score @s AzrMelonCount matches 1.. \
     unless function skyblock:azr/system/shop/purchase/ramiel/\
