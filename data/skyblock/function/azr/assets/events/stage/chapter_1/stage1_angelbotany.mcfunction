@@ -41,6 +41,7 @@ execute positioned -79965 -52 17 as @n[tag=azr_door,distance=0..0.5,scores={rng1
 execute positioned -79965 -52 17 as @n[tag=azr_door,distance=0..0.5,scores={rng1=24}] positioned -79177 50 -16 as @a[tag=azrPlayer,distance=..30] run effect give @s regeneration 3 9 true
 execute positioned -79965 -52 17 as @n[tag=azr_door,distance=0..0.5,scores={rng1=24}] positioned -79177 50 -16 as @a[tag=azrPlayer,distance=..30] run effect give @s saturation 3 0 true
 
+execute positioned -79965 -52 17 as @n[tag=azr_door,distance=0..0.5,scores={rng1=24},tag=azr_door_1] run forceload add -79965 25
 execute positioned -79965 -52 17 as @n[tag=azr_door,distance=0..0.5,scores={rng1=24},tag=azr_door_1] run summon marker -79177 50 -16 {Tags:["AzrielMarker_encounter","azr_door_1"]}
 execute positioned -79965 -52 17 as @n[tag=azr_door,distance=0..0.5,scores={rng1=24},tag=azr_door_2] run summon marker -79177 50 -16 {Tags:["AzrielMarker_encounter","azr_door_2"]}
 
