@@ -23,6 +23,61 @@ execute as @s at @s if entity @n[tag=AzrielMob_boss_raphael_marker_movement_next
 execute as @s at @s if entity @n[tag=AzrielMob_boss_raphael_marker_movement_next,distance=2..] run kill @n[type=marker,tag=AzrielMob_move_marker_raphael]
 
 
+
+
+scoreboard players add @s[scores={rng9=1..}] rng9 1
+
+execute positioned -79645 -28 -656 if entity @a[tag=azrPlayer,distance=..7] unless score @s rng9 matches 1.. run scoreboard players set @s rng9 1
+execute if score @s rng9 matches 1 positioned -79647 -32 -645 run playsound entity.blaze.shoot hostile @a ~ ~ ~ 1.5 1.5
+execute if score @s rng9 matches 3 positioned -79646 -30 -645 run playsound entity.blaze.shoot hostile @a ~ ~ ~ 1.5 1.5
+execute if score @s rng9 matches 5 positioned -79645 -28 -645 run playsound entity.blaze.shoot hostile @a ~ ~ ~ 1.5 1.5
+execute if score @s rng9 matches 7 positioned -79644 -26 -645 run playsound entity.blaze.shoot hostile @a ~ ~ ~ 1.5 1.5
+execute if score @s rng9 matches 9 positioned -79643 -24 -645 run playsound entity.blaze.shoot hostile @a ~ ~ ~ 1.5 1.5
+execute if score @s rng9 matches 1 positioned -79647 -32 -645 run particle flash{color:[1.000,0.60,0.00,1.00]} ~ ~ ~ 0 0 0 0 1
+execute if score @s rng9 matches 3 positioned -79646 -30 -645 run particle flash{color:[1.000,0.60,0.00,1.00]} ~ ~ ~ 0 0 0 0 1
+execute if score @s rng9 matches 5 positioned -79645 -28 -645 run particle flash{color:[1.000,0.60,0.00,1.00]} ~ ~ ~ 0 0 0 0 1
+execute if score @s rng9 matches 7 positioned -79644 -26 -645 run particle flash{color:[1.000,0.60,0.00,1.00]} ~ ~ ~ 0 0 0 0 1
+execute if score @s rng9 matches 9 positioned -79643 -24 -645 run particle flash{color:[1.000,0.60,0.00,1.00]} ~ ~ ~ 0 0 0 0 1
+execute if score @s rng9 matches 11 positioned -79647 -32 -645 run particle explosion ~ ~ ~ 1 1 1 0 3
+execute if score @s rng9 matches 13 positioned -79646 -30 -645 run particle explosion ~ ~ ~ 1 1 1 0 3
+execute if score @s rng9 matches 15 positioned -79645 -28 -645 run particle explosion ~ ~ ~ 1 1 1 0 3
+execute if score @s rng9 matches 17 positioned -79644 -26 -645 run particle explosion ~ ~ ~ 1 1 1 0 3
+execute if score @s rng9 matches 19 positioned -79643 -24 -645 run particle explosion ~ ~ ~ 1 1 1 0 3
+execute if score @s rng9 matches 11 positioned -79647 -32 -645 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.8
+execute if score @s rng9 matches 13 positioned -79646 -30 -645 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.8
+execute if score @s rng9 matches 15 positioned -79645 -28 -645 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.8
+execute if score @s rng9 matches 17 positioned -79644 -26 -645 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.8
+execute if score @s rng9 matches 19 positioned -79643 -24 -645 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.8
+execute if score @s rng9 matches 15 positioned -79645 -28 -645 run fill -79646 -29 -643 -79644 -29 -647 air replace minecraft:waxed_exposed_copper_grate
+execute if score @s rng9 matches 15 positioned -79645 -28 -645 run fill -79646 -28 -648 -79644 -28 -648 fire
+
+execute if score @s rng9 matches 26 run scoreboard players set @s rng9 25
+
+execute positioned -79645 -28 -663 if entity @a[tag=azrPlayer,distance=..8] unless score @s rng9 matches 31.. run scoreboard players set @s rng9 31
+execute if score @s rng9 matches 31 positioned -79647 -32 -663 run playsound entity.blaze.shoot hostile @a ~ ~ ~ 1.5 1.5
+execute if score @s rng9 matches 33 positioned -79646 -30 -663 run playsound entity.blaze.shoot hostile @a ~ ~ ~ 1.5 1.5
+execute if score @s rng9 matches 35 positioned -79645 -28 -663 run playsound entity.blaze.shoot hostile @a ~ ~ ~ 1.5 1.5
+execute if score @s rng9 matches 37 positioned -79644 -26 -663 run playsound entity.blaze.shoot hostile @a ~ ~ ~ 1.5 1.5
+execute if score @s rng9 matches 39 positioned -79643 -24 -663 run playsound entity.blaze.shoot hostile @a ~ ~ ~ 1.5 1.5
+execute if score @s rng9 matches 31 positioned -79647 -32 -663 run particle flash{color:[1.000,0.60,0.00,1.00]} ~ ~ ~ 0 0 0 0 1
+execute if score @s rng9 matches 33 positioned -79646 -30 -663 run particle flash{color:[1.000,0.60,0.00,1.00]} ~ ~ ~ 0 0 0 0 1
+execute if score @s rng9 matches 35 positioned -79645 -28 -663 run particle flash{color:[1.000,0.60,0.00,1.00]} ~ ~ ~ 0 0 0 0 1
+execute if score @s rng9 matches 37 positioned -79644 -26 -663 run particle flash{color:[1.000,0.60,0.00,1.00]} ~ ~ ~ 0 0 0 0 1
+execute if score @s rng9 matches 39 positioned -79643 -24 -663 run particle flash{color:[1.000,0.60,0.00,1.00]} ~ ~ ~ 0 0 0 0 1
+execute if score @s rng9 matches 41 positioned -79647 -32 -663 run particle explosion ~ ~ ~ 1 1 1 0 3
+execute if score @s rng9 matches 43 positioned -79646 -30 -663 run particle explosion ~ ~ ~ 1 1 1 0 3
+execute if score @s rng9 matches 45 positioned -79645 -28 -663 run particle explosion ~ ~ ~ 1 1 1 0 3
+execute if score @s rng9 matches 47 positioned -79644 -26 -663 run particle explosion ~ ~ ~ 1 1 1 0 3
+execute if score @s rng9 matches 49 positioned -79643 -24 -663 run particle explosion ~ ~ ~ 1 1 1 0 3
+execute if score @s rng9 matches 41 positioned -79647 -32 -663 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.8
+execute if score @s rng9 matches 43 positioned -79646 -30 -663 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.8
+execute if score @s rng9 matches 45 positioned -79645 -28 -663 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.8
+execute if score @s rng9 matches 47 positioned -79644 -26 -663 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.8
+execute if score @s rng9 matches 49 positioned -79643 -24 -663 run playsound entity.generic.explode block @a ~ ~ ~ 2 0.8
+execute if score @s rng9 matches 45 positioned -79645 -28 -663 run fill -79646 -29 -666 -79644 -29 -659 air replace minecraft:waxed_exposed_copper_grate
+execute if score @s rng9 matches 45 positioned -79645 -28 -663 run fill -79646 -28 -667 -79644 -28 -667 fire
+
+
 execute positioned -79647 -24 -626 if entity @s[distance=..5] if block ~ ~ ~ basalt run playsound entity.generic.explode block @a ~ ~ ~ 2 0.8
 execute positioned -79647 -24 -626 if entity @s[distance=..5] if block ~ ~ ~ basalt run particle explosion ~ ~1 ~ 2 0 1 0 3
 execute positioned -79647 -24 -626 if entity @s[distance=..5] if block ~ ~ ~ basalt run fill -79648 -20 -627 -79647 -29 -624 minecraft:structure_void replace minecraft:basalt destroy

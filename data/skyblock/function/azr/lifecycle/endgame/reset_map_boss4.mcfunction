@@ -10,6 +10,10 @@ fill -79646 -24 -679 -79644 -24 -681 air replace fire
 fill -79653 -23 -661 -79651 -27 -667 minecraft:basalt replace minecraft:structure_void
 fill -79648 -20 -627 -79647 -29 -624 minecraft:basalt replace minecraft:structure_void
 
+fill -79646 -29 -643 -79644 -29 -647 minecraft:waxed_exposed_copper_grate replace air
+fill -79646 -29 -666 -79644 -29 -659 minecraft:waxed_exposed_copper_grate replace air
+
+
 execute positioned -79650 -25 -658 run kill @e[tag=AzrielMob_boss_raphael_marker_movement,distance=..200]
 kill @n[type=mannequin,tag=AzrielNPC_raphael]
 
