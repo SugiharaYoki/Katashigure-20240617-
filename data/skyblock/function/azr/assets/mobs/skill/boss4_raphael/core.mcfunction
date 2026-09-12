@@ -65,9 +65,9 @@ execute if score @s rng9 matches 19 positioned -79643 -24 -645 run playsound ent
 execute if score @s rng9 matches 15 positioned -79645 -28 -645 run fill -79646 -29 -643 -79644 -29 -647 air replace minecraft:waxed_exposed_copper_grate
 execute if score @s rng9 matches 15 positioned -79645 -28 -645 run fill -79646 -28 -648 -79644 -28 -648 fire
 
-execute if score @s rng9 matches 26 run scoreboard players set @s rng9 25
+execute if score @s rng9 matches 26..30 run scoreboard players set @s rng9 25
 
-execute positioned -79645 -28 -670 if entity @a[tag=azrPlayer,distance=..8] unless score @s rng9 matches 31.. run scoreboard players set @s rng9 31
+execute positioned -79645 -28 -674 if entity @a[tag=azrPlayer,distance=..8] unless score @s rng9 matches 31.. run scoreboard players set @s rng9 31
 execute if score @s rng9 matches 31 positioned -79647 -32 -663 run playsound entity.blaze.shoot hostile @a ~ ~ ~ 1.5 1.5
 execute if score @s rng9 matches 33 positioned -79646 -30 -663 run playsound entity.blaze.shoot hostile @a ~ ~ ~ 1.5 1.5
 execute if score @s rng9 matches 35 positioned -79645 -28 -663 run playsound entity.blaze.shoot hostile @a ~ ~ ~ 1.5 1.5
