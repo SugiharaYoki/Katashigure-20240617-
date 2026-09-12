@@ -1,4 +1,5 @@
 scoreboard players add @s rng1 1
+scoreboard players add @s rng19 1
 
 execute store result bossbar azr:boss_hp_bar_2 value run scoreboard players get @s rng1
 
@@ -41,8 +42,6 @@ execute as @s at @s if entity @n[tag=AzrielMob_boss_raphael_marker_movement_next
 execute if score @s rng1 matches ..9000 if entity @a[tag=azrPlayer,x=-79649,y=52,z=-742,dx=20,dy=20,dz=20] run scoreboard players set @s rng1 10000
 execute if score @s rng1 matches 10000 positioned -79646.96 52.00 -733.99 as @a[tag=azrPlayer,distance=4..] run tp @s ~ ~ ~
 execute if score @s rng1 matches 10000 positioned -79646.96 52.00 -733.99 as @a[tag=azrShowDialog,distance=28..] run tp @s ~ ~ ~
-execute if score @s rng1 matches 10000 run bossbar remove azr:boss_hp_bar
-execute if score @s rng1 matches 10000 run bossbar remove azr:boss_hp_bar_2
 execute if score @s rng1 matches 10000 run fill -79646 -28 -633 -79644 -28 -671 air replace fire
 execute if score @s rng1 matches 10000 run fill -79646 -24 -679 -79644 -24 -681 air replace fire
 execute if score @s rng1 matches 10000 run execute positioned -79650 -25 -658 run kill @e[tag=AzrielMob_boss_raphael_marker_movement,distance=..200]
@@ -55,6 +54,18 @@ execute if score @s rng1 matches 10000 positioned -79650.44 55.07 -734.01 run pl
 execute if score @s rng1 matches 10003 positioned -79650.44 55.07 -734.01 run playsound block.iron_door.close block @a ~ ~ ~ 2 1.2
 execute if score @s rng1 matches 10006 positioned -79650.44 55.07 -734.01 run playsound block.iron_door.close block @a ~ ~ ~ 2 1.2
 
+execute if score @s rng1 matches 10006..18888 if score @s rng19 matches 2450.. run scoreboard players set @s rng1 20000
+
+execute if score @s rng1 matches 20000 run bossbar remove azr:boss_hp_bar
+execute if score @s rng1 matches 20000 run bossbar remove azr:boss_hp_bar_2
+execute if score @s rng1 matches 20000 run scoreboard players set stage Azr_system 76
+execute if score @s rng1 matches 20000 run title @a[tag=azrShowDialog] actionbar {text:"Interlude Chapter Clear",color:"gold"}
+execute if score @s rng1 matches 20000 as @a[tag=azrShowDialog] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 2 0.9
+execute if score @s rng1 matches 20000 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage17_boss4_2
+execute if score @s rng1 matches 20000 as @a[tag=azrPlayer] at @s run summon item ~ ~ ~ {Item:{id:"emerald",count:10b}}
+execute if score @s rng1 matches 20000 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+#execute if score @s rng1 matches 20000 as @a[tag=azrPlayer,scores={Azr_skillPoints=..18}] at @s run function skyblock:azr/assets/items/amulets/magical_current
+execute if score @s rng1 matches 20000 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..19}] Azr_skillPoints 20
 
 scoreboard players add @s[scores={rng9=1..}] rng9 1
 
