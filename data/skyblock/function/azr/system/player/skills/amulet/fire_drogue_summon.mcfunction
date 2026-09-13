@@ -1,0 +1,6 @@
+execute if score @s[tag=AzrSariel_Side_Life] rng2 matches 1 at @s positioned ^ ^1 ^-0.8 run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_skill","AzrielMob_amulet_skill_FireDrogue","AzrielMob_level_1"]}
+execute if score @s[tag=AzrSariel_Side_Death] rng2 matches 1 at @s positioned ^ ^1 ^-0.8 run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_skill","AzrielMob_amulet_skill_FireDrogue","AzrielMob_level_1","AzrSariel_Death"]}
+execute if score @s[tag=AzrSariel_Side_Life] rng2 matches 2 at @s positioned ^ ^1 ^-0.8 run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_skill","AzrielMob_amulet_skill_FireDrogue","AzrielMob_level_2"]}
+execute if score @s[tag=AzrSariel_Side_Death] rng2 matches 2 at @s positioned ^ ^1 ^-0.8 run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_skill","AzrielMob_amulet_skill_FireDrogue","AzrielMob_level_2","AzrSariel_Death"]}
+execute if score @s[tag=AzrSariel_Side_Life] rng2 matches 3.. at @s positioned ^ ^1 ^-0.8 run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_skill","AzrielMob_amulet_skill_FireDrogue","AzrielMob_level_3"]}
+execute if score @s[tag=AzrSariel_Side_Death] rng2 matches 3.. at @s positioned ^ ^1 ^-0.8 run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_skill","AzrielMob_amulet_skill_FireDrogue","AzrielMob_level_3","AzrSariel_Death"]}

@@ -7,6 +7,8 @@ execute if items entity @s weapon.mainhand minecraft:bow if score @s[scores={Azr
 
 execute if entity @s[tag=AZR_Amulet_Instant_Success] run scoreboard players set @s AzrSariel_Amulet_DoubleArrow_clock 60
 execute if entity @s[tag=AZR_Amulet_Instant_Success] at @s run playsound minecraft:entity.strider.saddle player @a ~ ~1.5 ~ 1 2
+execute if entity @s[tag=AZR_Amulet_Instant_Success] if items entity @s container.* *[custom_data~{azr_amulet_fire_drogue_dash:1b}] at @s store result score @s rng1 if entity @e[tag=AzrielMob_amulet_skill_FireDrogue,type=marker,distance=0..20]
+execute if entity @s[tag=AZR_Amulet_Instant_Success] if items entity @s container.* *[custom_data~{azr_amulet_fire_drogue_dash:1b}] at @s if score @s rng1 matches ..3 run function skyblock:azr/system/player/skills/amulet/fire_drogue_summon
 execute if entity @s[tag=AZR_Amulet_Instant_Success] as @n[type=arrow,nbt={inGround:0b,pickup:1b},distance=..2.5] at @s store result storage azr:cache amulet_doublearrow_motion_x double 0.000053 run data get entity @s Motion[0] 100000
 execute if entity @s[tag=AZR_Amulet_Instant_Success] as @n[type=arrow,nbt={inGround:0b,pickup:1b},distance=..2.5] at @s store result storage azr:cache amulet_doublearrow_motion_y double 0.00005 run data get entity @s Motion[1] 100000
 execute if entity @s[tag=AZR_Amulet_Instant_Success] as @n[type=arrow,nbt={inGround:0b,pickup:1b},distance=..2.5] at @s store result storage azr:cache amulet_doublearrow_motion_z double 0.000053 run data get entity @s Motion[2] 100000

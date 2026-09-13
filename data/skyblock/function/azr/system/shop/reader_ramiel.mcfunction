@@ -209,7 +209,7 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {text:"\n "},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerh]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432308"},hover_event:{"action":"show_text","value":{text:"Hoistway - 烨墙石板\n整合花墙石板、保持长按前进键增加移动速度",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkeri]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432309"},hover_event:{"action":"show_text","value":{text:"Index - 斥跃石板\n蹲下跳得更高、史莱姆块助跳",color:"white"}}},\
-{selector:"@n[tag=AzrRamielExStage_displaymarkerj]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432310"},hover_event:{"action":"show_text","value":{text:"Jahannam - 恶燧石板\n射击逐焰浮球使其化作飓炎弹",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerj]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432310"},hover_event:{"action":"show_text","value":{text:"Jahannam - 恶燧石板\n射击逐焰浮球使其化作飓炎弹，通过弦蓄补充逐焰浮球",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerk]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432311"},hover_event:{"action":"show_text","value":{text:"Kinetic - 悬风石板\n长按跳跃以悬浮",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerl]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432312"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerm]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432313"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
