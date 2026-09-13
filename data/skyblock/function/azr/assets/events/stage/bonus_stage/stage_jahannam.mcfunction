@@ -65,9 +65,9 @@ execute if score stage Azr_system matches ..61 if score stage_bonus_thread AzrTi
 
 execute if score stage_bonus_thread AzrTimerStack matches 190 run title @a[tag=azrShowDialog] actionbar {text:"Extra Stage Clear",color:"green"}
 execute if score stage_bonus_thread AzrTimerStack matches 190 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_jahannam
-execute if score stage_bonus_thread AzrTimerStack matches 190 as @a[tag=azrPlayer] at @s unless entity @s[tag=AZS_BoS09] run function skyblock:azr/assets/items/amulets/fire_drogue_dash
+execute if score stage_bonus_thread AzrTimerStack matches 190 as @a[tag=azrPlayer] at @s unless entity @s[tag=AZS_BoS10] run function skyblock:azr/assets/items/amulets/fire_drogue_dash
 execute if score stage_bonus_thread AzrTimerStack matches 198 run fill -79661 35 -416 -79665 32 -416 air replace minecraft:red_stained_glass
-execute if score stage_bonus_thread AzrTimerStack matches 190 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS09
+execute if score stage_bonus_thread AzrTimerStack matches 190 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS10
 execute if score stage_bonus_thread AzrTimerStack matches 190 as @a[tag=azrPlayer] at @s run give @s emerald 5
 
 execute if score stage_bonus_thread AzrTimerStack matches ..189 unless entity @a[tag=azrPlayer,distance=..15] run bossbar remove azr:progress_bar_bonus

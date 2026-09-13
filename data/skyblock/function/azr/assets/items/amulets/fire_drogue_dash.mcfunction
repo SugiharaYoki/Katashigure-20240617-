@@ -1,0 +1,1 @@
+give @s sentry_armor_trim_smithing_template[custom_name={text:"恶燧石板",italic:0b,color:"#306fc2",bold:1b},lore=[{text:"背包常效装备",italic:0b,color:"yellow",bold:1b},{text:"周围的逐焰浮球被射击后，将会化为飓炎弹射向最近的敌人",italic:0b,color:"#9eb9de"},{text:""},{text:"其实这块石板的功能真的很朴素，但架不住它能改变我的战斗习惯。",italic:1b,color:"#586371"}],custom_data={azr_amulet:1b,azr_amulet_fire_drogue_dash:1b}]
