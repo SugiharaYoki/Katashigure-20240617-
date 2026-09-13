@@ -17,7 +17,7 @@ execute if score @s rng1 matches 2..9 at @s run function skyblock:azr/assets/mob
 
 execute if score @s rng1 matches 2 at @s as @a[distance=0..0.7] at @s run function skyblock:azr/system/player/map_effect/in_attack_range
 
-execute if score @s rng1 matches 8.. at @s as @a[distance=0..0.7] at @s run damage @s 8 generic
+execute if score @s rng1 matches 8.. at @s as @a[distance=0..0.7] at @s run damage @s 8 mob_attack
 execute if score @s rng1 matches 8.. at @s positioned ~ ~-1 ~ as @a[distance=0..0.6] at @s run damage @s 8 mob_attack
 execute if score @s rng1 matches 8.. at @s positioned ~ ~0 ~ as @a[distance=0..0.6] at @s run damage @s 8 mob_attack
 execute if score @s rng1 matches 8.. at @s positioned ~ ~1 ~ as @a[distance=0..0.6] at @s run damage @s 8 mob_attack
