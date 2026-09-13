@@ -13,45 +13,45 @@ execute if score stage_bonus_thread AzrTimerStack matches 2 run fill -79661 35 -
 
 execute if score stage_bonus_thread AzrTimerStack matches 2 positioned -79657 32 -429 run function skyblock:azr/assets/mobs/blaze
 execute if score stage_bonus_thread AzrTimerStack matches 2 positioned -79669 32 -433 run function skyblock:azr/assets/mobs/blaze
-execute if score stage_main_thread AzrTimerStack matches 2 positioned -79657 32 -429 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarget
-execute if score stage_main_thread AzrTimerStack matches 2 positioned -79669 32 -433 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarget
-execute if score stage_main_thread AzrTimerStack matches 30..31 positioned ~ ~ ~ if entity @n[distance=..20,tag=AzrielMob_BonusStageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 30
+execute if score stage_bonus_thread AzrTimerStack matches 2 positioned -79657 32 -429 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarget
+execute if score stage_bonus_thread AzrTimerStack matches 2 positioned -79669 32 -433 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarget
+execute if score stage_bonus_thread AzrTimerStack matches 30..31 positioned ~ ~ ~ if entity @n[distance=..20,tag=AzrielMob_BonusStageProgressTarget] run scoreboard players set stage_bonus_thread AzrTimerStack 30
 
 execute if score stage_bonus_thread AzrTimerStack matches 32 positioned -79657 32 -429 run function skyblock:azr/assets/mobs/blaze
 execute if score stage_bonus_thread AzrTimerStack matches 32 positioned -79669 32 -433 run function skyblock:azr/assets/mobs/blaze
-execute if score stage_main_thread AzrTimerStack matches 32 positioned -79657 32 -429 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarget
-execute if score stage_main_thread AzrTimerStack matches 32 positioned -79669 32 -433 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarget
+execute if score stage_bonus_thread AzrTimerStack matches 32 positioned -79657 32 -429 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarget
+execute if score stage_bonus_thread AzrTimerStack matches 32 positioned -79669 32 -433 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarget
 
 execute if score stage_bonus_thread AzrTimerStack matches 32 positioned -79656 34 -433 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_bonus_thread AzrTimerStack matches 58 positioned -79656 34 -433 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
-execute if score stage_main_thread AzrTimerStack matches 60..61 positioned ~ ~ ~ if entity @n[distance=..20,tag=AzrielMob_BonusStageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 60
+execute if score stage_bonus_thread AzrTimerStack matches 60..61 positioned ~ ~ ~ if entity @n[distance=..20,tag=AzrielMob_BonusStageProgressTarget] run scoreboard players set stage_bonus_thread AzrTimerStack 60
 
 execute if score stage_bonus_thread AzrTimerStack matches 62 positioned -79657 32 -429 run function skyblock:azr/assets/mobs/blaze
 execute if score stage_bonus_thread AzrTimerStack matches 63 positioned -79656 34 -433 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_bonus_thread AzrTimerStack matches 64 positioned -79656 34 -433 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_bonus_thread AzrTimerStack matches 69 positioned -79656 34 -433 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_main_thread AzrTimerStack matches 69 positioned -79657 32 -429 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarge
+execute if score stage_bonus_thread AzrTimerStack matches 69 positioned -79657 32 -429 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarge
 
-execute if score stage_main_thread AzrTimerStack matches 90..91 positioned ~ ~ ~ if entity @n[distance=..20,tag=AzrielMob_BonusStageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 90
+execute if score stage_bonus_thread AzrTimerStack matches 90..91 positioned ~ ~ ~ if entity @n[distance=..20,tag=AzrielMob_BonusStageProgressTarget] run scoreboard players set stage_bonus_thread AzrTimerStack 90
 
 execute if score stage_bonus_thread AzrTimerStack matches 92 positioned -79669 32 -433 run function skyblock:azr/assets/mobs/blaze
 execute if score stage_bonus_thread AzrTimerStack matches 93 positioned -79656 34 -433 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_spear","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_bonus_thread AzrTimerStack matches 94 positioned -79656 34 -433 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_spear","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_bonus_thread AzrTimerStack matches 99 positioned -79656 34 -433 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_main_thread AzrTimerStack matches 99 positioned -79657 32 -429 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarge
+execute if score stage_bonus_thread AzrTimerStack matches 99 positioned -79657 32 -429 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarge
 
-execute if score stage_main_thread AzrTimerStack matches 120..121 positioned ~ ~ ~ if entity @n[distance=..20,tag=AzrielMob_BonusStageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 120
+execute if score stage_bonus_thread AzrTimerStack matches 120..121 positioned ~ ~ ~ if entity @n[distance=..20,tag=AzrielMob_BonusStageProgressTarget] run scoreboard players set stage_bonus_thread AzrTimerStack 120
 
 execute if score stage_bonus_thread AzrTimerStack matches 122 positioned -79657 32 -429 run function skyblock:azr/assets/mobs/blaze
 execute if score stage_bonus_thread AzrTimerStack matches 122 positioned -79669 32 -433 run function skyblock:azr/assets/mobs/blaze
-execute if score stage_main_thread AzrTimerStack matches 122 positioned -79657 32 -429 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarget
-execute if score stage_main_thread AzrTimerStack matches 122 positioned -79669 32 -433 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarget
+execute if score stage_bonus_thread AzrTimerStack matches 122 positioned -79657 32 -429 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarget
+execute if score stage_bonus_thread AzrTimerStack matches 122 positioned -79669 32 -433 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarget
 execute if score stage_bonus_thread AzrTimerStack matches 172 positioned -79657 32 -429 run function skyblock:azr/assets/mobs/blaze
 execute if score stage_bonus_thread AzrTimerStack matches 172 positioned -79669 32 -433 run function skyblock:azr/assets/mobs/blaze
-execute if score stage_main_thread AzrTimerStack matches 172 positioned -79657 32 -429 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarget
-execute if score stage_main_thread AzrTimerStack matches 172 positioned -79669 32 -433 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarget
-execute if score stage_main_thread AzrTimerStack matches 180..181 positioned ~ ~ ~ if entity @n[distance=..20,tag=AzrielMob_BonusStageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 180
+execute if score stage_bonus_thread AzrTimerStack matches 172 positioned -79657 32 -429 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarget
+execute if score stage_bonus_thread AzrTimerStack matches 172 positioned -79669 32 -433 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarget
+execute if score stage_bonus_thread AzrTimerStack matches 180..181 positioned ~ ~ ~ if entity @n[distance=..20,tag=AzrielMob_BonusStageProgressTarget] run scoreboard players set stage_bonus_thread AzrTimerStack 180
 
 execute if score stage Azr_system matches ..61 if score stage_bonus_thread AzrTimerStack matches 14 at @n[tag=AzrielTrader_pig_henry] run playsound minecraft:entity.piglin.ambient hostile @a[tag=azrShowDialog] ~ ~ ~ 1 0.9
 execute if score stage Azr_system matches ..61 if score stage_bonus_thread AzrTimerStack matches 14 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“好……好多焰魂！老大，我们怕是闯入了什么祭祀处！！”",color:"white"}]
