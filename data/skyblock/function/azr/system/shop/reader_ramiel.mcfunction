@@ -116,9 +116,11 @@ execute if entity @s[scores={Azr_skillPoints=5..}] run data modify entity @n[tag
 execute if entity @s[scores={Azr_skillPoints=9..}] run data modify entity @n[tag=AzrRamielExStage_displaymarker2] CustomName set value ' <斧> '
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarker3] CustomName set value ' <光> '
 execute if entity @s[scores={Azr_skillPoints=19..}] run data modify entity @n[tag=AzrRamielExStage_displaymarker4] CustomName set value ' <亚> '
+execute if entity @s[scores={Azr_skillPoints=20..}] run data modify entity @n[tag=AzrRamielExStage_displaymarker5] CustomName set value ' <烈> '
 execute if entity @s[tag=AZS_BoSB01] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value ' <刑> '
 execute if entity @s[tag=AZS_BoSB03] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBc] CustomName set value ' <博> '
 execute if entity @s[tag=AZS_BoSB04] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value ' <炉> '
+execute if entity @s[tag=AZS_BoSB12] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBl] CustomName set value ' <掘> '
 execute if entity @s[tag=AZS_BoSB13] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value ' <藓> '
 execute if entity @s[tag=AZS_BoSB22] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBv] CustomName set value ' <贤> '
 execute if entity @s[tag=AZS_BoSB23] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBw] CustomName set value ' <矿> '
@@ -166,9 +168,11 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_stopwatch:1b}] 
 execute if items entity @s container.* *[custom_data~{azr_amulet_axe_vortex:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarker2] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarker3] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_magical_current:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarker4] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_multiweapon:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarker5] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_back_dodge:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_land_fracture:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBc] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_fire_drogue:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBl] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBv] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBw] CustomName set value ' √ '
@@ -183,6 +187,8 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_savior:1b
 #execute if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop08] CustomName set value ' √ '
 
 
+execute if entity @s[scores={Azr_skillPoints=20..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBc] CustomName set value ' - '
+execute if entity @s[scores={Azr_skillPoints=20..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBl] CustomName set value ' - '
 execute if entity @s[tag=AZS_BoSB22] run data modify entity @n[tag=AzrRamielExStage_displaymarkerk] CustomName set value ' - '
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkere] CustomName set value ' - '
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerv] CustomName set value ' - '
@@ -227,9 +233,12 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarker2]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432330"},hover_event:{"action":"show_text","value":{text:"马林努斯 - 岚切卷宗\n斧攻击自动延时二次攻击、左右移动时加强剑的范围伤害",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarker3]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432332"},hover_event:{"action":"show_text","value":{text:"光明天使的符文\n多块基础石板功能整合、施放时无敌帧",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarker4]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432339"},hover_event:{"action":"show_text","value":{text:"亚米 - 血潮石板\n可检测到魔力潮汐，身处其中可升起",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarker5]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432342"},hover_event:{"action":"show_text","value":{text:"拉斐尔 - 诸武卷宗\n整合地裂卷宗、云破石板，切换武器攻击增加威力",color:"white"}}},\
+{text:"\n "},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBa]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432331"},hover_event:{"action":"show_text","value":{text:"阴影处刑者 - 退避石板\n按后退键与跑步键，快速后撤步",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBc]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432340"},hover_event:{"action":"show_text","value":{text:"百夫长·博物区 - 地裂卷宗\n冲刺时使用近战武器攻击，施放地裂冲击",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBd]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432329"},hover_event:{"action":"show_text","value":{text:"锅炉驱动者 - 逐焰卷宗\n持续召唤最多3个跟随火球，减少节制天平电球最低间隔时长",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerBl]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432343"},hover_event:{"action":"show_text","value":{text:"百夫长·采掘组 - 隙光石板\n使用近战武器时蹲下按左右移动键，施放减防斩击",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBm]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432328"},hover_event:{"action":"show_text","value":{text:"噬藓母虫 - 深藓石板\n造成攻击可增加“索命连击”充能、在重生锚点可获得5分钟孢子的庇护（生命值上限加成）",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBv]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432338"},hover_event:{"action":"show_text","value":{text:"晦怨贤士 - 悬蔑石板\n整合悬风石板、悬浮期间攻击延长悬浮时间",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBw]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432333"},hover_event:{"action":"show_text","value":{text:"金属学家 - 枢纽石板\n允许在重生锚点之间传送",color:"white"}}},\

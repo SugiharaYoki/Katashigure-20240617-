@@ -77,6 +77,7 @@ execute if items entity @s[tag=AZS_BoS09] container.* *[custom_data~{azr_amulet_
 execute if entity @s[tag=jump_boost_pass] run function skyblock:azr/system/player/skills/amulet/jump_boost_core
 tag @s remove jump_boost_pass
 execute if items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}] run function skyblock:azr/system/player/skills/amulet/front_slash_core
+execute if items entity @s[tag=AZS_BoSB12] container.* *[custom_data~{azr_amulet_multiweapon:1b}] run function skyblock:azr/system/player/skills/amulet/front_slash_core
 
 
 execute if score stage Azr_system matches 3..40 if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] if entity @s[predicate=skyblock:left,predicate=skyblock:right] run function skyblock:azr/system/player/skills/amulet/revival_star_teleport
