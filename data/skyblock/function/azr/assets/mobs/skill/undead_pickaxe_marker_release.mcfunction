@@ -7,7 +7,8 @@ execute if score @s rng1 matches 2.. if entity @s[tag=AZR_pillar_followplayer_1]
 execute if score @s rng1 matches 4.. if entity @s[tag=AZR_pillar_followplayer_1] at @s rotated as @s run tp @s ^ ^ ^0.05 facing entity @p[tag=azrPlayer]
 
 
-execute if score @s rng1 matches 2..3 at @s run function skyblock:azr/assets/mobs/skill/undead_pickaxe_particle_place
+execute if score @s rng1 matches 2 at @s run function skyblock:azr/assets/mobs/skill/undead_pickaxe_particle_place
+execute if score @s[tag=AZR_pillar_followplayer_1] rng1 matches 4 at @s run function skyblock:azr/assets/mobs/skill/undead_pickaxe_particle_place
 
 #execute if score @s rng1 matches 3.. at @s run particle flame ~ ~0.7 ~ 0 0 0 0 1 force
 #execute if score @s rng1 matches 4.. at @s run particle flame ~ ~1.2 ~ 0 0 0 0 1 force
