@@ -12,9 +12,9 @@ execute if score @s rng18 matches 1.. run particle small_gust ~ ~0.1 ~ 0.0 0.0 0
 execute if score @s rng18 matches 1 run playsound minecraft:entity.warden.sonic_boom neutral @a ~ ~ ~ 0.9 1.6
 
 execute if entity @n[tag=AzrielMob,distance=..0.9] run tag @s add MobFound
-execute if entity @s[tag=MobFound,tag=AzrielMob_level_1] as @e[tag=AzrielMob,distance=..1.9] run damage @s 9 in_fire
-execute if entity @s[tag=MobFound,tag=AzrielMob_level_2] as @e[tag=AzrielMob,distance=..1.9] run damage @s 11 in_fire
-execute if entity @s[tag=MobFound,tag=AzrielMob_level_3] as @e[tag=AzrielMob,distance=..1.9] run damage @s 13 in_fire
+execute if entity @s[tag=MobFound,tag=AzrielMob_level_1] as @e[tag=AzrielMob,distance=..1.9,limit=3,sort=nearest] run damage @s 7.5 in_fire
+execute if entity @s[tag=MobFound,tag=AzrielMob_level_2] as @e[tag=AzrielMob,distance=..1.9,limit=3,sort=nearest] run damage @s 8.5 in_fire
+execute if entity @s[tag=MobFound,tag=AzrielMob_level_3] as @e[tag=AzrielMob,distance=..1.9,limit=3,sort=nearest] run damage @s 9.5 in_fire
 execute if entity @s[tag=MobFound] run playsound minecraft:entity.firework_rocket.blast neutral @a ~ ~ ~ 0.8 1.5
 execute if entity @s[tag=MobFound] run playsound minecraft:entity.firework_rocket.blast neutral @a ~ ~ ~ 0.8 1.2
 execute if entity @s[tag=MobFound] run particle large_smoke ~ ~0.1 ~ 0.05 0.05 0.05 0.03 4
