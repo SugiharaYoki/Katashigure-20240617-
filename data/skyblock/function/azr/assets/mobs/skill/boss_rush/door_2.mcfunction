@@ -14,7 +14,7 @@ execute if score @s AzrEntityTimer matches 2 run forceload add -79195 2 -79159 -
 execute if score @s AzrEntityTimer matches 30..199 if entity @n[tag=AzrielMob_BossRush_Target,distance=..300] run scoreboard players set @s AzrEntityTimer 190
 execute if score @s AzrEntityTimer matches 230..399 if entity @n[tag=AzrielMob_BossRush_Target,distance=..300] run scoreboard players set @s AzrEntityTimer 390
 execute if score @s AzrEntityTimer matches 590..599 if entity @n[tag=AzrielMob_BossRush_Target,distance=..300] run scoreboard players set @s AzrEntityTimer 590
-execute if score @s AzrEntityTimer matches 630..799 if entity @n[tag=AzrielMob_BossRush_Target,distance=..300] run scoreboard players set @s AzrEntityTimer 790
+execute if score @s AzrEntityTimer matches 780..799 if entity @n[tag=AzrielMob_BossRush_Target,distance=..300] run scoreboard players set @s AzrEntityTimer 790
 execute if score @s AzrEntityTimer matches 830..999 if entity @n[tag=AzrielMob_BossRush_Target,distance=..300] run scoreboard players set @s AzrEntityTimer 990
 
 execute if score @s AzrEntityTimer matches 5 positioned -79167 50 -19 run tag @a[tag=azrPlayer,distance=..70] add azrPlayer_door_participating
@@ -57,6 +57,9 @@ execute if score @s AzrEntityTimer matches 605 run fill -79159 77 -34 -79195 77 
 execute if score @s AzrEntityTimer matches 605 run scoreboard players add @s rng11 5
 execute if score @s AzrEntityTimer matches 605 run title @a[distance=..50] times 0t 20t 16t
 execute if score @s AzrEntityTimer matches 605 run title @a[distance=..50] title {text:"金 属 学 家",color: "#7321cb",bold:1b}
+
+execute if score @s AzrEntityTimer matches 625 run tellraw @a[tag=azrShowDialog] [{text:"金属学家：",color:"yellow",bold:1b},{bold: false,text:"\n“我来……陪你练习。”",color:"white"}]
+execute if score @s AzrEntityTimer matches 685 run tellraw @a[tag=azrShowDialog] [{text:"金属学家：",color:"yellow",bold:1b},{bold: false,text:"\n“这次，我……会尽全力。人类的亡魂……做好准备。”",color:"white"}]
 
 execute if score @s AzrEntityTimer matches 605 positioned -79167 50 -16 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
 execute if score @s AzrEntityTimer matches 620 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/summon
