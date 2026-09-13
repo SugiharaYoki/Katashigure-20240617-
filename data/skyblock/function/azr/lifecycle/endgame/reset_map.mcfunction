@@ -904,6 +904,10 @@ setblock -79725 26 -428 minecraft:waxed_copper_chest[facing=east]{Inventory:[]}
 item replace block -79725 26 -428 container.12 with gold_nugget 2
 item replace block -79725 26 -428 container.14 with gold_nugget 1
 
+#stage jahannam
+setblock -79663 33 -434 minecraft:decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 3, id:"minecraft:gold_nugget"}}
+fill -79661 35 -416 -79665 32 -416 air replace minecraft:red_stained_glass
+
 #大树林
 fill -79782 41 -499 -79782 41 -496 minecraft:crimson_shelf[facing=east]{Inventory:[]}
 setblock -79804 56 -465 anvil[facing=north]

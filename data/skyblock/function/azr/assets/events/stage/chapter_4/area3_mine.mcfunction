@@ -37,6 +37,13 @@ execute if score stage Azr_system matches ..68 positioned -79505 45 -338 unless 
 execute if score stage Azr_system matches ..68 positioned -79505 45 -338 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_4/mine/conclusion
 
 
+#stage jahannam
+execute positioned -79663 33 -434 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if block ~ ~ ~ air if entity @a[tag=azrPlayer,x=-79668,y=30,z=-436,dx=10,dy=5,dz=10] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79663 33 -434 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/bonus_stage/stage_jahannam
+
+
+
+
 
 
 #互传
