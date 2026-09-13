@@ -1,6 +1,6 @@
 scoreboard players add @s rng1 1
 
-execute if score @s[tag=!AzrielMob_door] rng1 matches ..5 unless block ~ ~ ~ air run kill @s
+execute if score @s[tag=AzrielMob_door] rng1 matches ..5 unless block ~ ~ ~ air run kill @s
 
 execute if score @s rng1 matches 1.. run particle white_smoke ~ ~-1.8 ~ 0.3 0.3 0.3 0.05 5
 
