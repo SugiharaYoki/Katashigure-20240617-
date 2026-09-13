@@ -47,6 +47,8 @@ execute if score @s AzrTimerStack matches 122 positioned -79657 32 -429 run func
 execute if score @s AzrTimerStack matches 122 positioned -79669 32 -433 run function skyblock:azr/assets/mobs/blaze
 execute if score @s AzrTimerStack matches 122 positioned -79657 32 -429 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarget
 execute if score @s AzrTimerStack matches 122 positioned -79669 32 -433 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarget
+execute if score @s AzrTimerStack matches 162 positioned -79656 34 -433 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s AzrTimerStack matches 163 positioned -79656 34 -433 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s AzrTimerStack matches 172 positioned -79657 32 -429 run function skyblock:azr/assets/mobs/blaze
 execute if score @s AzrTimerStack matches 172 positioned -79669 32 -433 run function skyblock:azr/assets/mobs/blaze
 execute if score @s AzrTimerStack matches 172 positioned -79657 32 -429 as @n[tag=AzrielMob,distance=0..1] run tag @s add AzrielMob_BonusStageProgressTarget
