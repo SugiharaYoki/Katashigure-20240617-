@@ -1,4 +1,4 @@
-execute if entity @s[tag=AzrAmulet_multiweapon_bonus] run 
+execute if entity @s[tag=AzrAmulet_multiweapon_bonus] run playsound minecraft:entity.player.attack.crit player @a ~ ~ ~ 0.8 1.4
 execute if entity @s[tag=AzrAmulet_multiweapon_bonus] run scoreboard players add @s AzrSariel_Amulet_Multiweapon_count 1
 attribute @s attack_damage modifier remove azr_amulet:multiweapon_01
 tag @s remove AzrAmulet_multiweapon_bonus
