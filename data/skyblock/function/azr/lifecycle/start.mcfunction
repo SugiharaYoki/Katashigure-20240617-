@@ -132,6 +132,7 @@ scoreboard objectives add AzrSariel_Amulet_generic_damage_taken minecraft.custom
 scoreboard objectives add AzrSariel_Amulet_FireLit_cooldown dummy
 scoreboard objectives add AzrSariel_Amulet_FireLit_count dummy
 scoreboard objectives add AzrSariel_Amulet_FireDrogue_cooldown dummy
+scoreboard objectives add AzrSariel_Amulet_Multiweapon_count dummy
 scoreboard objectives add AzrSariel_Amulet_StayFloat_cooldown dummy
 scoreboard objectives add AzrSariel_Amulet_StayFloat_power dummy
 scoreboard objectives add AzrSariel_Amulet_StayFloat_clock dummy

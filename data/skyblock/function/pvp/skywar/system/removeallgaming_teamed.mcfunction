@@ -242,7 +242,14 @@ attribute @s movement_speed modifier remove azr_amulet:flowerwallfire_01
 attribute @s movement_speed modifier remove azr_amulet:flowerwallfire_02
 attribute @s movement_speed modifier remove azr_amulet:flowerwallfire_03
 attribute @s movement_speed modifier remove azr_amulet:flowerwallfire_04
-
+tag @s remove AzrAmulet_multiweapon_sword
+tag @s remove AzrAmulet_multiweapon_axe
+tag @s remove AzrAmulet_multiweapon_hoe
+tag @s remove AzrAmulet_multiweapon_bonus
+tag @s remove AzrAmulet_multiweapon_temp_sword
+tag @s remove AzrAmulet_multiweapon_temp_axe
+tag @s remove AzrAmulet_multiweapon_temp_hoe
+attribute @s attack_damage modifier remove azr_amulet:multiweapon_01
 
 
 attribute @s[tag=azr_amulet_hoe_assassinate_sneaked] minecraft:sneaking_speed modifier remove azr_amulet_hoe_assassinate:sneak_speed

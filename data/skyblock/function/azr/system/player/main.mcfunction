@@ -101,6 +101,8 @@ execute if score @s[tag=!AzrSariel_Route_Life] AzrSariel_Skill_SlowRing matches 
 
 #悬蔑石板
 execute if items entity @s[tag=AZS_BoS11] container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. if score @s AzrSariel_Amulet_StayFloat_cooldown matches 119..135 run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 135
+execute if items entity @s hotbar.* *[custom_data~{azr_amulet_multiweapon:1b}] run function skyblock:azr/system/player/skills/amulet/multiweapon_bonus
+execute if items entity @s hotbar.* *[custom_data~{azr_amulet_multiweapon:1b}] if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. run function skyblock:azr/system/player/skills/amulet/multiweapon_core
 
 #一次性打火石
 execute if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. if items entity @s weapon.mainhand *[custom_data~{instant_spark:1b}] run function skyblock:azr/system/player/damage_bonus/effect/item_instant_spark
