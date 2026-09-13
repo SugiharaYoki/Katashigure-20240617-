@@ -70,9 +70,9 @@ execute if score stage_bonus_thread AzrTimerStack matches 198 run fill -79661 35
 execute if score stage_bonus_thread AzrTimerStack matches 190 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS10
 execute if score stage_bonus_thread AzrTimerStack matches 190 as @a[tag=azrPlayer] at @s run give @s emerald 5
 
-execute if score stage_bonus_thread AzrTimerStack matches ..189 unless entity @a[tag=azrPlayer,distance=..15] run bossbar remove azr:progress_bar_bonus
-execute if score stage_bonus_thread AzrTimerStack matches ..189 unless entity @a[tag=azrPlayer,distance=..15] run fill -79661 35 -416 -79665 32 -416 air replace minecraft:red_stained_glass
-execute if score stage_bonus_thread AzrTimerStack matches ..189 unless entity @a[tag=azrPlayer,distance=..15] run kill @s
+execute if score stage_bonus_thread AzrTimerStack matches ..189 positioned -79663 32 -434 unless entity @a[tag=azrPlayer,distance=..21] run bossbar remove azr:progress_bar_bonus
+execute if score stage_bonus_thread AzrTimerStack matches ..189 positioned -79663 32 -434 unless entity @a[tag=azrPlayer,distance=..21] run fill -79661 35 -416 -79665 32 -416 air replace minecraft:red_stained_glass
+execute if score stage_bonus_thread AzrTimerStack matches ..189 positioned -79663 32 -434 unless entity @a[tag=azrPlayer,distance=..21] run kill @s
 
 execute if score stage_bonus_thread AzrTimerStack matches 190..191 run playsound ambient.soul_sand_valley.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_bonus_thread AzrTimerStack matches 190..191 run playsound ambient.soul_sand_valley.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
