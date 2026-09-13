@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "血金窟 - 祭祀房间",
+            "color": "green",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "我越来越感觉，魔界的居民原本其实都是人类。\n若非如此，他们没道理进行一些只有站在人类立场上才会做的事。\n祭祀就是最好的例子。\n他们居住在充斥着神与魔的地方，怎会按照这类原始方式拜神？\n\n归根究底，他们也是生物。\n但“生灵”与“亡魂”之外，不该存在其他类型的生物。\n所以，他们也只能是……\n我不敢想下去。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:red_glazed_terracotta"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage17_boss4"
+}
