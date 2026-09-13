@@ -18,7 +18,7 @@
     # Index
     execute if score stage_bonus Azr_system matches 9 run function skyblock:azr/assets/events/stage/bonus_stage/stage_index
     # Jahannam
-    execute if score stage_bonus Azr_system matches 10 run function skyblock:azr/assets/events/stage/bonus_stage/stage_jahannam
+    # 由实体操控core
     # Kinetic
     execute if score stage_bonus Azr_system matches 11 run function skyblock:azr/assets/events/stage/bonus_stage/stage_kinetic
     # Object
