@@ -100,6 +100,14 @@ tag @s remove azrPlayer_respawnanchor_unlocked_mine_c
 tag @s remove azrPlayer_respawnanchor_unlocked_cliff_a
 tag @s remove azrPlayer_respawnanchor_unlocked_cliff_b
 
+tag @s remove azrPlayer_respawnanchor_unlocked_lush_a
+tag @s remove azrPlayer_respawnanchor_unlocked_lush_b
+tag @s remove azrPlayer_respawnanchor_unlocked_lush_c
+tag @s remove azrPlayer_respawnanchor_unlocked_lush_d
+tag @s remove azrPlayer_respawnanchor_unlocked_sewer_a
+tag @s remove azrPlayer_respawnanchor_unlocked_sewer_b
+tag @s remove azrPlayer_respawnanchor_unlocked_sewer_c
+tag @s remove azrPlayer_respawnanchor_unlocked_sewer_d
 
 
 #对话重置

@@ -112,6 +112,8 @@ execute unless score @s AzrPlayer_CurrentArea matches 10 if entity @s[x=-79682,y
 execute unless score @s AzrPlayer_CurrentArea matches 10 positioned -79730 23 -317 if entity @s[distance=..9] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:10,title:"血 金 窟",color_code:"#c20600"}
 
+execute unless score @s AzrPlayer_CurrentArea matches 11 positioned -79645 174 -781 if entity @s[distance=..9] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:11,title:"神 代 茏 渠",color_code:"#7de300"}
 #
 
 
@@ -145,6 +147,10 @@ execute unless score @s AzrPlayer_CurrentArea matches 6 positioned -79855 46 -10
 execute unless score @s AzrPlayer_CurrentArea matches 8 positioned -79969 -52 -11 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:8,title:"重生锚点：天使的憩庭",color_code:"#22fb92"}
 
+execute unless score @s AzrPlayer_CurrentArea matches 11 positioned -79651 173 -768 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:11,title:"重生锚点：神代茏渠A",color_code:"#7de300"}
+
+
 
 execute positioned -79943 37 -8 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_westcourt_a
 execute positioned -79931 32 28 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_westcourt_b
@@ -158,8 +164,9 @@ execute positioned -79848 43 124 if entity @s[distance=..4] run tag @s add azrPl
 execute positioned -79854 29 -73 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_rockpath
 execute positioned -79923 38 -96 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_prison_a
 execute positioned -79855 46 -109 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_prison_b
+execute positioned -79651 173 -768 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_lush_a
 
 
 
 
-#tellraw @s {"color": "#c20600"}
+#tellraw @s {"color": "#7de300"}
