@@ -34,7 +34,7 @@ execute positioned -79630 94 -768 if entity @s[distance=..30] run particle trail
 execute if entity @s[x=-79630,y=94,z=-768,dx=0,dy=50,dz=0,predicate=!skyblock:sneak] run effect give @s levitation 1 3 true
 
 execute positioned -79633 116 -781 if entity @s[distance=..30] run particle trail{color:6666239,duration:240,target:[-79632.51,182.00,-780.51]} ~ ~ ~ 0.5 0 0.5 0 2 force
-execute if entity @s[x=-79633,y=116,z=-781,dx=0,dy=50,dz=0,predicate=!skyblock:sneak] run effect give @s levitation 1 4 true
+execute if entity @s[x=-79633,y=116,z=-781,dx=0,dy=60,dz=0,predicate=!skyblock:sneak] run effect give @s levitation 1 4 true
 
 
 
