@@ -69,7 +69,11 @@ execute if score stage Azr_system matches 1.. run function skyblock:azr/assets/e
 execute if score stage Azr_system matches 55.. run function skyblock:azr/assets/events/stage/chapter_4/area1_factory
 execute if score stage Azr_system matches 57.. run function skyblock:azr/assets/events/stage/chapter_4/area2_forest
 execute if score stage Azr_system matches 59.. run function skyblock:azr/assets/events/stage/chapter_4/area3_mine
-execute if score stage Azr_system matches 69.. run function skyblock:azr/assets/events/stage/chapter_4/area4_afterward
+execute if score stage Azr_system matches 69..76 run function skyblock:azr/assets/events/stage/chapter_4/area4_afterward
+
+#【第五章】
+#底端
+execute if score stage Azr_system matches 75..76 run function skyblock:azr/assets/events/stage/chapter_5/area0_bottom
 
 
 

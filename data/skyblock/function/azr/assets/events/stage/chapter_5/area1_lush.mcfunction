@@ -1,0 +1,45 @@
+
+
+#复活点
+execute positioned -79778 2 -281 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79778 2 -281 as @n[tag=AzrielMarker_encounter,distance=0..0.5] unless score @s rng1 matches 3.. run scoreboard players add @s rng1 1
+execute positioned -79778 2 -281 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] at @s positioned -79765 -17 -177 run function skyblock:azr/assets/mobs/utility_respawn_anchor
+
+
+
+
+
+#肥猪亨利
+execute if score stage Azr_system matches ..56 positioned -79793 -6 -277 if loaded ~ ~ ~ unless entity @n[tag=AzrielTrader_pig_henry,distance=0..63] if entity @a[distance=..23.5,tag=azrPlayer] run function skyblock:azr/assets/mobs/unique/trader/pig_henry
+execute if score stage Azr_system matches ..56 positioned -79793 -6 -277 if loaded ~ ~ ~ as @n[tag=AzrielTrader_pig_henry,distance=0..20] at @s unless entity @n[tag=AzrielMob,distance=..8] run function skyblock:azr/assets/events/stage/chapter_4/factory/conv_the_piglin
+
+#点灯1
+execute if score stage Azr_system matches ..65 positioned -79792 2 -279 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..5] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute if score stage Azr_system matches ..65 positioned -79792 2 -279 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_4/factory/puzzle_light1
+
+#点灯2
+execute if score stage Azr_system matches ..65 positioned -79783 2 -280 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..5] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute if score stage Azr_system matches ..65 positioned -79783 2 -280 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_4/factory/puzzle_light2
+#点灯3
+execute if score stage Azr_system matches ..65 positioned -79783 2 -271 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..5] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute if score stage Azr_system matches ..65 positioned -79783 2 -271 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_4/factory/puzzle_light3
+
+#点灯4
+execute if score stage Azr_system matches ..65 positioned -79771 2 -272 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..5] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute if score stage Azr_system matches ..65 positioned -79771 2 -272 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_4/factory/puzzle_light4
+
+#战斗：博物馆厅廊
+execute if score stage Azr_system matches ..65 positioned -79748 15 -272 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_4/factory/battle_museum_hallway
+
+#战斗：百夫长
+execute if score stage Azr_system matches ..65 positioned -79778 30 -280 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,x=-79783,y=30,z=-280,dx=9,dy=5,dz=5] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute if score stage Azr_system matches ..65 positioned -79778 30 -280 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_4/factory/battle_museum_centurion
+#战斗：百夫长2nd
+execute positioned -79831 26 -284 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..15] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79831 26 -284 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_4/factory/battle_museum_centurion_2nd
+
+#工厂出口
+execute if score stage Azr_system matches ..65 positioned -79773 42 -320 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,x=-79780,y=40,z=-325,dx=15,dy=8,dz=14] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute if score stage Azr_system matches ..65 positioned -79773 42 -320 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_4/factory/battle_museum_exit
+
+
