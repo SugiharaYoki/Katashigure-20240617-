@@ -3,7 +3,7 @@ tellraw @s {text:"『锚点传送』",bold:1b,color:"aqua"}
 
 execute if entity @n[tag=AzrielMob_utility_respawn_anchor,distance=..8] run tag @s add AZR_in_nether_teleportation
 
-execute unless entity @s[tag=AZR_in_nether_teleportation] run tellraw @s[scores={Azr_skillPoints=14..}] [{text:"   - "},{text:"天使的憩庭",color:"#22fb92"},{text:"",color:"white"},{text:"〈◆〉",bold:1b,color:"#22fb92",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40013"}}]
+execute unless score stage Azr_system matches 55..75 run tellraw @s[scores={Azr_skillPoints=14..}] [{text:"   - "},{text:"天使的憩庭",color:"#22fb92"},{text:"",color:"white"},{text:"〈◆〉",bold:1b,color:"#22fb92",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40013"}}]
 execute unless entity @s[tag=AZR_in_nether_teleportation] run tellraw @s[tag=azrPlayer_respawnanchor_unlocked_westcourt_a] [{text:"   - "},{text:"西庭外围",color:"#e9ffe0"},{text:" 西门侧道  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40001"}}]
 execute unless entity @s[tag=AZR_in_nether_teleportation] run tellraw @s[tag=azrPlayer_respawnanchor_unlocked_westcourt_b] [{text:"   - "},{text:"西庭外围",color:"#e9ffe0"},{text:" 玻璃培育室  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40002"}}]
 execute unless entity @s[tag=AZR_in_nether_teleportation] run tellraw @s[tag=azrPlayer_respawnanchor_unlocked_westcourt_c] [{text:"   - "},{text:"西庭外围",color:"#e9ffe0"},{text:" 露天花坛  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40003"}}]
