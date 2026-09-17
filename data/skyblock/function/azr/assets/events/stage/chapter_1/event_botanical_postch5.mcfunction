@@ -22,4 +22,5 @@ execute if score @s rng2 matches 31 run tellraw @a[tag=azrShowDialog] [{text:"å“
 
 
 
+execute if score @s rng2 matches 200 store result score @s rng3 run random value 1..10
 execute if score @s rng2 matches 200.. run scoreboard players set @s rng2 0
