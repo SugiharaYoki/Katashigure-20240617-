@@ -24,13 +24,13 @@ execute if entity @s[x=-79664,y=20,z=-409,dx=0,dy=15,dz=0,predicate=!skyblock:sn
 
 
 #第五章 入口
-execute positioned -79623.51 49.00 -746.53 if entity @s[distance=..18] run particle trail{color:6666239,duration:240,target:[-79623.51,99.00,-746.53]} ~ ~ ~ 0.5 0 0.5 0 1 force
+execute positioned -79623.51 49.00 -746.53 if entity @s[distance=..30] run particle trail{color:6666239,duration:240,target:[-79623.51,99.00,-746.53]} ~ ~ ~ 0.5 0 0.5 0 1 force
 execute if entity @s[x=-79624,y=48,z=-747,dx=0,dy=50,dz=0,predicate=!skyblock:sneak] run effect give @s levitation 1 3 true
 
-execute positioned -79626 84 -760 if entity @s[distance=..18] run particle trail{color:6666239,duration:240,target:[-79625.50,105.06,-759.52]} ~ ~ ~ 0.5 0 0.5 0 1 force
+execute positioned -79626 84 -760 if entity @s[distance=..30] run particle trail{color:6666239,duration:240,target:[-79625.50,105.06,-759.52]} ~ ~ ~ 0.5 0 0.5 0 1 force
 execute if entity @s[x=-79626,y=84,z=-760,dx=0,dy=50,dz=0,predicate=!skyblock:sneak] run effect give @s levitation 1 3 true
 
-execute positioned -79630 94 -768 if entity @s[distance=..18] run particle trail{color:6666239,duration:240,target:[-79629.52,121.06,-767.50]} ~ ~ ~ 0.5 0 0.5 0 1 force
+execute positioned -79630 94 -768 if entity @s[distance=..30] run particle trail{color:6666239,duration:240,target:[-79629.52,121.06,-767.50]} ~ ~ ~ 0.5 0 0.5 0 1 force
 execute if entity @s[x=-79630,y=94,z=-768,dx=0,dy=50,dz=0,predicate=!skyblock:sneak] run effect give @s levitation 1 3 true
 
 #execute positioned -79633 116 -781 if entity @s[distance=..18] run particle trail{color:6666239,duration:240,target:[-79629.52,121.06,-767.50]} ~ ~ ~ 0.5 0 0.5 0 1 force
