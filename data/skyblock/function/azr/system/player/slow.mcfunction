@@ -76,7 +76,8 @@ execute at @s run function skyblock:azr/assets/events/stage/area_title_detect
 #第四章特殊复活点
 execute if score stage Azr_system matches 55..69 at @n[tag=AzrielMob_utility_respawn_anchor,type=marker] run spawnpoint @s ~ ~ ~
 execute if score stage Azr_system matches 70 positioned -79765 -17 -177 at @n[tag=AzrielMob_utility_respawn_anchor,type=marker] run spawnpoint @s ~ ~ ~
-execute if score stage Azr_system matches 71..79 at @n[tag=AzrielMob_utility_respawn_anchor,type=marker] run spawnpoint @s ~ ~ ~
+execute if score stage Azr_system matches 71..75 at @n[tag=AzrielMob_utility_respawn_anchor,type=marker] run spawnpoint @s ~ ~ ~
+execute if score stage Azr_system matches 76.. if score @s AzrPlayer_CurrentArea matches 9..10 at @n[tag=AzrielMob_utility_respawn_anchor,type=marker] run spawnpoint @s ~ ~ ~
 execute if entity @s[tag=!AzrSariel_Route_Life,tag=!AzrSariel_Route_Death] if score stage Azr_system matches 71.. run tag @s[tag=AzrSariel_Side_Life] add AzrSariel_Route_Life
 execute if entity @s[tag=!AzrSariel_Route_Life,tag=!AzrSariel_Route_Death] if score stage Azr_system matches 71.. run tag @s[tag=AzrSariel_Side_Death] add AzrSariel_Route_Death
 
