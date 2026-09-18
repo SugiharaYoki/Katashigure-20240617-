@@ -8,8 +8,8 @@ execute if score @s rng2 matches 1 positioned -79965 -51 2 run function skyblock
 execute if score @s rng2 matches 1 positioned -79978 -51 6 run function skyblock:azr/assets/mobs/healer_friendly
 execute if score @s rng2 matches 1 positioned -79970 -43 -9 run function skyblock:azr/assets/mobs/sword_friendly
 execute if score @s rng2 matches 1 positioned -79970 -43 -9 run function skyblock:azr/assets/mobs/sword_friendly
-execute if score @s rng2 matches 1 positioned -79970 -43 -9 run function skyblock:azr/assets/mobs/pillager_friendly
-execute if score @s rng2 matches 1 positioned -79970 -43 -9 run function skyblock:azr/assets/mobs/healer_friendly
+execute if score @s rng2 matches 1 positioned -79970 -43 -7 run function skyblock:azr/assets/mobs/pillager_friendly
+execute if score @s rng2 matches 1 positioned -79970 -43 -5 run function skyblock:azr/assets/mobs/healer_friendly
 
 
 execute if score @s rng2 matches 1 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"green",bold:1b},{bold: false,text:"\n“大、大家！爱理莎回来了！！”",color:"white"}]
