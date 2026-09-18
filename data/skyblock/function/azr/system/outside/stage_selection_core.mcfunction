@@ -18,7 +18,7 @@ execute if entity @s[tag=!AzrOutside_selecting_stage] run function skyblock:azr/
 
 
 
-execute if entity @s[tag=!AzrOutside_selecting_stage] run tag @s remove AzrOutside_selecting_stage
+execute if entity @s[tag=!AzrOutside_selecting_stage] run tag @s add AzrOutside_selecting_stage
 
 
 
