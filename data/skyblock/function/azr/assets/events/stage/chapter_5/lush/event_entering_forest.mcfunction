@@ -67,8 +67,8 @@ execute if score @s rng1 matches 409 positioned -79726 174 -798 run summon marke
 execute if score @s rng1 matches 409 positioned -79726 174 -799 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield_heavy","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 427 positioned -79726 174 -798 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 427 positioned -79726 174 -799 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng1 matches 431 positioned -79726 174 -798 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_bogged","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng1 matches 431 positioned -79726 174 -799 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_bogged","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 441 positioned -79726 174 -798 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_bogged_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 441 positioned -79726 174 -799 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_bogged_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
 
