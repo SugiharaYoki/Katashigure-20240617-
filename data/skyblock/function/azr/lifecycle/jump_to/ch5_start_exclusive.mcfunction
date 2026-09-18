@@ -11,6 +11,8 @@ execute unless entity @a[tag=azrPlayer,scores={Azr_skillPoints=..29}] positioned
 execute unless entity @a[tag=azrPlayer,scores={Azr_skillPoints=..29}] positioned -79627 92 -765 as @n[tag=AzrielMarker_encounter,type=marker,distance=..1.5] run scoreboard players set @s rng1 46
 execute unless entity @a[tag=azrPlayer,scores={Azr_skillPoints=..29}] run tp @a[tag=azrPlayer] -79651 174 -768 facing -79651 174 -769
 
+
+
 execute as @a[tag=azrPlayer] run function skyblock:azr/system/player/updatespawnpoint_initialize {x:-79855,y:47,z-:109}
 
 
