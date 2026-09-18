@@ -86,3 +86,7 @@ execute if score @s rng2 matches ..99 positioned -79651 174 -774 if entity @a[ta
 
 execute if score @s rng2 matches 100 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（生命树根系……？但我觉得我现在不该通过它回到神庭）",color:"white"}]
 
+
+#食人鱼
+execute positioned -79695 171 -813 if score random_enemy_thread AzrTimerStack matches 2 if loaded ~ ~ ~ store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..38,tag=AzrielMob_piranha]
+execute positioned -79695 171 -813 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 4.. if entity @a[tag=azrPlayer,distance=..28] unless entity @a[tag=azrPlayer,distance=..12] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/piranha
