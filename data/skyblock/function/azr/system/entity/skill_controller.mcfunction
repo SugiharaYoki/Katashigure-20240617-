@@ -32,6 +32,7 @@ execute if entity @s[tag=AzrielMob_zombie_villager_cleric] run function skyblock
 execute if entity @s[tag=AzrielMob_zombie_villager_vine] run function skyblock:azr/assets/mobs/skill/zombie_villager_vine
 
 execute if entity @s[tag=AzrielMob_piranha] run function skyblock:azr/assets/mobs/skill/piranha
+execute if entity @s[tag=AzrielMob_nautilus] run function skyblock:azr/assets/mobs/skill/nautilus
 
 #功能性
 execute if entity @s[tag=AzrielMob_utility_bat] run function skyblock:azr/assets/mobs/skill/utility_bat

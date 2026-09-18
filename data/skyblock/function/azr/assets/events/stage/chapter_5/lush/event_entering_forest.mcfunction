@@ -52,6 +52,7 @@ execute if score @s rng1 matches 200 positioned -79690 175 -827 run function sky
 execute if score @s rng1 matches 200 positioned -79690 175 -827 run function skyblock:azr/assets/mobs/undead
 execute if score @s rng1 matches 200 positioned -79690 175 -827 run function skyblock:azr/assets/mobs/zombie_villager_vine
 
+execute if score @s rng1 matches 200 positioned -79724 171 -814 run function skyblock:azr/assets/mobs/nautilus
 
 
 

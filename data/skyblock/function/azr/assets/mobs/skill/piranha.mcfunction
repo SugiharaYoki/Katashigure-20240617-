@@ -1,7 +1,7 @@
 scoreboard players add @s rng1 1
 
 tag @e[tag=Azriel_Piranha_target,distance=..16,type=!salmon] remove Azriel_Piranha_target
-execute as @n[distance=..14,type=!salmon,tag=AzrielMob,tag=!Azriel_Piranha_target] at @s if block ~ ~ ~ #skyblock:water run tag @s add Azriel_Piranha_target
+execute as @n[distance=..14,type=!salmon,tag=AzrielMob,tag=!Azriel_Piranha_target,tag=!AzrielMob_nautilus] at @s if block ~ ~ ~ #skyblock:water run tag @s add Azriel_Piranha_target
 execute as @p[distance=..14,tag=!Azriel_Piranha_target] at @s if block ~ ~ ~ #skyblock:water run tag @s add Azriel_Piranha_target
 
 execute at @s[scores={AzrielMobLevel=1}] facing entity @n[tag=Azriel_Piranha_target] feet positioned ^ ^ ^0.2 if block ~ ~ ~ #skyblock:water run tp @s ~ ~ ~ facing entity @n[tag=Azriel_Piranha_target]
