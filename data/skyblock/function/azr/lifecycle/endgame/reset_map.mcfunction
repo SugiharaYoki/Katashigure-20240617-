@@ -1010,6 +1010,9 @@ function skyblock:azr/lifecycle/endgame/reset_map_boss4
 setblock -79684 178 -782 waxed_exposed_copper_chest[facing=south]{Inventory:[]}
 item replace block -79684 178 -782 container.12 with emerald 2
 item replace block -79684 178 -782 container.14 with emerald 2
+setblock -79691 175 -829 waxed_exposed_copper_chest[facing=south]{Inventory:[]}
+item replace block -79691 175 -829 container.12 with emerald 3
+item replace block -79691 175 -829 container.14 with emerald 3
 
 
 
