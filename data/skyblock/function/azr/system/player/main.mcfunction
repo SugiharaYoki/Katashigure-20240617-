@@ -80,7 +80,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}
 execute if items entity @s[tag=AZS_BoSB12] container.* *[custom_data~{azr_amulet_multiweapon:1b}] run function skyblock:azr/system/player/skills/amulet/front_slash_core
 
 
-execute if score stage Azr_system matches 3..40 if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] if entity @s[predicate=skyblock:left,predicate=skyblock:right] run function skyblock:azr/system/player/skills/amulet/revival_star_teleport
+execute unless score stage Azr_system matches 41..76 if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] if entity @s[predicate=skyblock:left,predicate=skyblock:right] run function skyblock:azr/system/player/skills/amulet/revival_star_teleport
 execute if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] if entity @s[predicate=skyblock:forward,predicate=skyblock:backward] run function skyblock:azr/system/player/skills/amulet/revival_star_quitgame
 execute if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] unless entity @s[predicate=skyblock:left,predicate=skyblock:right] unless entity @s[predicate=skyblock:forward,predicate=skyblock:backward] run scoreboard players set @s AzrSariel_Amulet_RevivalStar_teleport 0
 
