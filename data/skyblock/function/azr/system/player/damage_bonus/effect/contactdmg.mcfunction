@@ -1,5 +1,5 @@
 
-execute if score @s AzrSariel_Skill_ContactDmg matches 1.. if entity @n[tag=AzrielMob,distance=0..0.5] run tag @s add AzrSariel_Skill_ContactDmg_success
+execute if score @s AzrSariel_Skill_ContactDmg matches 1.. if entity @n[tag=AzrielMob,distance=0..0.5,tag=!AzrielMob_contactdmg_immune] run tag @s add AzrSariel_Skill_ContactDmg_success
 
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_land_fracture:1b}] run scoreboard players add @s AzrSariel_Skill_ContactDmg 1
 
