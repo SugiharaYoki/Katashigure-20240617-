@@ -11,6 +11,10 @@ execute if score @s rng1 matches 47 positioned -79652 174 -791 run function skyb
 execute if score @s rng1 matches 47 positioned -79652 174 -791 run function skyblock:azr/assets/mobs/slime
 execute if score @s rng1 matches 47 positioned -79652 174 -791 run function skyblock:azr/assets/mobs/smoke_mother
 
+execute if score @s rng1 matches 47 positioned -79790 34 -190 run tp @n[tag=AzrielNPC_mersenne] ~ ~ ~
+execute if score @s rng1 matches 47 positioned -79791 37 -195 run tp @n[tag=AzrielNPC_marinus] ~ ~ ~
+execute if score @s rng1 matches 47 positioned -79789 34 -193 run tp @n[tag=AzrielNPC_bird] ~ ~ ~
+
 
 execute if score @s rng1 matches 50..199 run scoreboard players set @s rng1 198
 execute if score @s rng1 matches ..199 positioned -79684 174 -806 if entity @a[tag=azrPlayer,distance=..7] run scoreboard players set @s rng1 200

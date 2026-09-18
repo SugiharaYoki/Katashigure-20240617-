@@ -34,7 +34,7 @@ execute positioned -79589 9 -390 run function skyblock:azr/assets/mobs/unique/tr
 execute positioned -79681 22 -423 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79681 22 -423 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng1 99999
 
-
+execute positioned -79789 34 -193 run tp @n[tag=AzrielNPC_bird] ~ ~ ~
 
 fill -79647 22 -422 -79647 23 -421 air
 execute positioned -79572 11 -414 run function skyblock:azr/assets/mobs/utility_respawn_anchor

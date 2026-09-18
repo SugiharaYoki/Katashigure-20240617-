@@ -18,7 +18,7 @@ execute as @s[scores={rng1=28}] at @n[tag=AzrielMob_demon_amy] run playsound min
 execute as @s[scores={rng1=28}] positioned ~ ~ ~ run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"red",bold:1b},{bold: false,text:"\n“路西法将会接过神庭的统辖权，汝已无利用价值。”",color:"white"}]
 
 execute as @s[scores={rng1=42}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“我没有利用价值？那可真是谢谢，我现在就送你去见你的太奶奶！！”",color:"white"}]
-
+execute as @s[scores={rng1=42}] positioned -79789 34 -193 run tp @n[tag=AzrielNPC_bird] ~ ~ ~
 
 execute as @s[scores={rng1=..1000}] run scoreboard players add @s rng9 1
 execute if score @s rng9 matches 5 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden1.combathigh music @s ~ ~ ~ 0.65
