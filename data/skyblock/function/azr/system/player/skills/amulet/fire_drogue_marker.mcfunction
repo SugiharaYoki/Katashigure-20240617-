@@ -36,7 +36,7 @@ execute at @s if predicate skyblock:raining positioned over world_surface positi
 execute at @s if predicate skyblock:raining positioned over world_surface positioned ~ ~2.4 ~ if entity @s[distance=..0.5] run scoreboard players add @s rng3 1
 execute at @s if predicate skyblock:raining positioned over world_surface positioned ~ ~3.2 ~ if entity @s[distance=..0.5] run scoreboard players add @s rng3 1
 execute at @s if predicate skyblock:raining positioned over world_surface positioned ~ ~4.0 ~ if entity @s[distance=..0.5] run scoreboard players add @s rng3 1
-execute at @s if block ~ ~ ~ #water run scoreboard players add @s rng3 7
+execute at @s if block ~ ~ ~ #skyblock:water run scoreboard players add @s rng3 7
 
 
 execute if score @s rng3 matches 7.. as @s at @s run particle white_smoke ~ ~0.1 ~ 0.05 0.05 0.05 0.09 10

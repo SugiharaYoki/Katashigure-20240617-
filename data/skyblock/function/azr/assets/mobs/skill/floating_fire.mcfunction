@@ -24,7 +24,7 @@ execute at @s if predicate skyblock:raining positioned over world_surface positi
 execute at @s if predicate skyblock:raining positioned over world_surface positioned ~ ~2.4 ~ if entity @s[distance=..0.5] run damage @s 1.5 drown
 execute at @s if predicate skyblock:raining positioned over world_surface positioned ~ ~3.2 ~ if entity @s[distance=..0.5] run damage @s 1.5 drown
 execute at @s if predicate skyblock:raining positioned over world_surface positioned ~ ~4.0 ~ if entity @s[distance=..0.5] run damage @s 1.5 drown
-execute at @s if block ~ ~ ~ #water run damage @s 4.5 drown
+execute at @s if block ~ ~ ~ #skyblock:water run damage @s 4.5 drown
 
 execute store result score @s rng2 run data get entity @s HurtTime
 
