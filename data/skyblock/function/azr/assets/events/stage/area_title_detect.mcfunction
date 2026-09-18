@@ -147,6 +147,23 @@ execute unless score @s AzrPlayer_CurrentArea matches 6 positioned -79855 46 -10
 execute unless score @s AzrPlayer_CurrentArea matches 8 positioned -79969 -52 -11 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:8,title:"重生锚点：天使的憩庭",color_code:"#22fb92"}
 
+execute unless score @s AzrPlayer_CurrentArea matches 9 positioned -79765 -17 -177 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:9,title:"黑石网络：绯烟林场A",color_code:"#ed4d47"}
+execute unless score @s AzrPlayer_CurrentArea matches 9 positioned -79742 10 -308 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:9,title:"黑石网络：绯烟林场B",color_code:"#ed4d47"}
+execute unless score @s AzrPlayer_CurrentArea matches 9 positioned -79786 43 -288 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:9,title:"黑石网络：绯烟林场C",color_code:"#ed4d47"}
+execute unless score @s AzrPlayer_CurrentArea matches 9 positioned -79758 23 -463 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:9,title:"黑石网络：绯烟林场D",color_code:"#ed4d47"}
+execute unless score @s AzrPlayer_CurrentArea matches 9 positioned -79712 44 -386 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:9,title:"黑石网络：绯烟林场E",color_code:"#ed4d47"}
+execute unless score @s AzrPlayer_CurrentArea matches 9 positioned -79711 30 -486 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:9,title:"黑石网络：绯烟林场F",color_code:"#ed4d47"}
+execute unless score @s AzrPlayer_CurrentArea matches 10 positioned -79572 11 -414 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:10,title:"黑石网络：血金窟A",color_code:"#c20600"}
+execute unless score @s AzrPlayer_CurrentArea matches 10 positioned -79338 23 -414 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:10,title:"黑石网络：血金窟B",color_code:"#c20600"}
+
 execute unless score @s AzrPlayer_CurrentArea matches 11 positioned -79651 173 -768 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:11,title:"重生锚点：神代茏渠A",color_code:"#7de300"}
 execute unless score @s AzrPlayer_CurrentArea matches 11 positioned -79764 175 -777 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
