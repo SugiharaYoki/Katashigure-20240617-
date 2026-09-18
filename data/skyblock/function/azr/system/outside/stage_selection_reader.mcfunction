@@ -1,6 +1,6 @@
 
 
-tellraw @s[tag=!AzrOutside_selecting_stage] {text:"『亚兹列尔的中庭花园·章节列表』",bold:1b,color:"aqua"}
+tellraw @s[tag=!AzrOutside_selecting_stage] {text:"『亚兹列尔的中庭花园·章节列表』",bold:1b,color:"white"}
 
 tellraw @s [{text:"   - "},{text:"序章",color:"#fcfcfc"},{text:" 坠入天国  ",color:"gray"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger MultiMenu set 16230001"}}]
 tellraw @s [{text:"    - "},{text:"第一章",color:"#e9ffe0"},{text:" 西庭外围  ",color:"#e9ffe0"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger MultiMenu set 16230002"}}]
@@ -17,4 +17,4 @@ execute if score @s Azr_skillPoints matches 16.. run tellraw @s [{text:"       -
 execute if score @s Azr_skillPoints matches 18.. run tellraw @s [{text:"       - "},{text:"第四章",color:"#c20600"},{text:" BOSS - 亚米  ",color:"#c20600"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger MultiMenu set 16230010"}}]
 execute if score @s Azr_skillPoints matches 19.. run tellraw @s [{text:"        - "},{text:"间章",color:"#989592"},{text:" 邃栈  ",color:"#989592"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger MultiMenu set 16230011"}}]
 
-execute if score @s Azr_skillPoints matches 20.. run tellraw @s [{text:"         - "},{text:"第五章",color:"#7de300"},{text:" 神代茏渠  ",color:"#7de300"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger MultiMenu set 16230021"}}]
+execute if score @s Azr_skillPoints matches 20.. run tellraw @s [{text:"         - "},{text:"生之命 第五章",color:"#7de300"},{text:" 神代茏渠  ",color:"#7de300"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger MultiMenu set 16230021"}}]
