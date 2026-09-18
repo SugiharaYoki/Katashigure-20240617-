@@ -25,9 +25,9 @@ execute if score @s rng1 matches 200 positioned -79684 174 -806 run summon marke
 execute if score @s rng1 matches 202 positioned -79684 174 -806 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 200 positioned -79670 174 -800 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_spider_giant","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
-execute if score @s rng1 matches 213 positioned -79684 174 -791 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 213 positioned -79684 174 -791 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 210 positioned -79685 174 -791 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_fire","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng1 matches 213 positioned -79686 174 -791 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 213 positioned -79686 174 -791 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
 
