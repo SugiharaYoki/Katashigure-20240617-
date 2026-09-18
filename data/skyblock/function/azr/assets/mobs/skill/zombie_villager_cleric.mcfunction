@@ -61,4 +61,5 @@ execute if score @s rng1 matches 95.. run scoreboard players set @s rng1 1
 
 
 execute unless score @s rng19 matches 1.. if entity @a[tag=azrPlayer,distance=..8] run scoreboard players set @s rng19 1
+execute unless score @s rng19 matches 1.. if entity @a[tag=azrPlayer,distance=..8] run effect clear @s slowness
 execute unless score @s rng19 matches 1.. run effect give @s slowness 1 19 true

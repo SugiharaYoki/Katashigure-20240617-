@@ -33,4 +33,5 @@ execute at @s if block ~ ~-0.5 ~ water if block ~ ~-3 ~ water run damage @s 5 ge
 
 
 execute unless score @s rng19 matches 1.. if entity @a[tag=azrPlayer,distance=..8] run scoreboard players set @s rng19 1
+execute unless score @s rng19 matches 1.. if entity @a[tag=azrPlayer,distance=..8] run effect clear @s slowness
 execute unless score @s rng19 matches 1.. run effect give @s slowness 1 19 true
