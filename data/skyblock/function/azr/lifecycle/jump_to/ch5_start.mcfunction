@@ -14,8 +14,6 @@ fill -79651 54 -736 -79651 52 -733 iron_bars
 
 advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage17_boss4_2
 
-#afterward_end
-execute positioned -79627 92 -765 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 
 
 
