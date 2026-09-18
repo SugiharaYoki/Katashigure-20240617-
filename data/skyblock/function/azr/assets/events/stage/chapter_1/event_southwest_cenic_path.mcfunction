@@ -1,7 +1,7 @@
 #『西南园林赏道』
 scoreboard players add internal_clock_001 Azr_system 1
 execute if score internal_clock_001 Azr_system matches 1 run setblock -79919 39 25 air
-execute if score internal_clock_001 Azr_system matches 1 run give @p[tag=azrPlayer] minecraft:potion[minecraft:potion_contents={potion:"minecraft:regeneration"}] 2
+execute if score internal_clock_001 Azr_system matches 1 run give @p[tag=azrPlayer] cooked_beef 2
 execute if score internal_clock_001 Azr_system matches 1 if score stage Azr_system matches 14.. run scoreboard players add internal_clock_001 Azr_system 273
 
 execute if score internal_clock_001 Azr_system matches 80 run tellraw @a[tag=azrShowDialog] [{text:"墙对面的谈话声A：",color:"yellow",bold:1b},{bold: false,text:"\n“喂。你刚刚注意到那蜘蛛的反常了吗？”",color:"white"}]
