@@ -18,8 +18,25 @@ execute if score @s rng2 matches 31 run tellraw @a[tag=azrShowDialog] [{text:"�
 
 
 
+execute if score @s[scores={rng3=1}] rng2 matches 50 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"green",bold:1b},{bold: false,text:"\n“渡鸦劳姆都快把城防给拆光了，也不知道神庭现在有哪些损坏点……”",color:"white"}]
+execute if score @s[scores={rng3=1}] rng2 matches 64 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"green",bold:1b},{bold: false,text:"\n“总之，现在尝试回去绝对不是什么好主意。”",color:"white"}]
 
+execute if score @s[scores={rng3=2}] rng2 matches 50 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"green",bold:1b},{bold: false,text:"\n“听说了吗？采光礼堂正殿天花板的大洞，就是渡鸦劳姆权能拆掉的。不然，普通的魔力根本就无法破坏神庭的建筑构造……”",color:"white"}]
+execute if score @s[scores={rng3=2}] rng2 matches 64 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"green",bold:1b},{bold: false,text:"\n“这样的话就难办了啊。我们这里会被找上吗？”",color:"white"}]
+execute if score @s[scores={rng3=2}] rng2 matches 78 run tellraw @a[tag=azrShowDialog] [{text:"牧师：",color:"green",bold:1b},{bold: false,text:"\n“休憩所受到天使长大人的眷顾，不存在于神庭所在的表面世界。他们除非能针对性突破，不然无法找到这里。”",color:"white"}]
 
+execute if score @s[scores={rng3=3}] rng2 matches 50 run tellraw @a[tag=azrShowDialog] [{text:"特遣弩手：",color:"green",bold:1b},{bold: false,text:"\n“魔界不是有魔神亚米镇守传送门吗？就这样爱理莎居然能回来，她比亚米还牛逼？”",color:"white"}]
+execute if score @s[scores={rng3=3}] rng2 matches 64 run tellraw @a[tag=azrShowDialog] [{text:"特遣弩手：",color:"green",bold:1b},{bold: false,text:"\n“会不会……她其实是绕过亚米的视线，偷偷溜回来的？”",color:"white"}]
+execute if score @s[scores={rng3=3}] rng2 matches 78 run tellraw @a[tag=azrShowDialog] [{text:"牧师：",color:"green",bold:1b},{bold: false,text:"\n“别说笑了，你真的觉得六眼的亚米会瞧不见一个持有这么多魔力的亡魂吗？”",color:"white"}]
+
+execute if score @s[scores={rng3=4}] rng2 matches 50 run tellraw @a[tag=azrShowDialog] [{text:"特遣弩手：",color:"green",bold:1b},{bold: false,text:"\n“我实在想不通，为什么权之残影大人得留在魔界。那样可九死一生啊。”",color:"white"}]
+
+execute if score @s[scores={rng3=5}] rng2 matches 50 run tellraw @a[tag=azrShowDialog] [{text:"特遣弩手：",color:"green",bold:1b},{bold: false,text:"\n“兄弟们，来打牌吧。”",color:"white"}]
+execute if score @s[scores={rng3=5}] rng2 matches 64 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"green",bold:1b},{bold: false,text:"\n“打什么牌？植物园新的一轮又能开启了。”",color:"white"}]
+execute if score @s[scores={rng3=5}] rng2 matches 78 run tellraw @a[tag=azrShowDialog] [{text:"特遣弩手：",color:"green",bold:1b},{bold: false,text:"\n“那玩意是给权之幻舆大人消遣用的，只不过偶尔面向试炼者罢了。你真要去挑战啊？”",color:"white"}]
+
+execute if score @s[scores={rng3=6}] rng2 matches 50 run tellraw @a[tag=azrShowDialog] [{text:"特遣弩手：",color:"green",bold:1b},{bold: false,text:"\n“护石好像没几个能脱离石板直接使用的。”",color:"white"}]
+execute if score @s[scores={rng3=6}] rng2 matches 64 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"green",bold:1b},{bold: false,text:"\n“就算有，你身上能凑够砝码吗？”",color:"white"}]
 
 
 execute if score @s rng2 matches 200 store result score @s rng3 run random value 1..10
