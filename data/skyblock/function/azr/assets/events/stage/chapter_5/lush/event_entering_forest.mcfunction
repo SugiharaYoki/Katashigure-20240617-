@@ -42,6 +42,7 @@ execute if score @s rng1 matches 213 positioned -79686 174 -791 run summon marke
 
 
 
+execute if score @s rng2 matches 89..99 run scoreboard players set @s rng2 89
 
 execute if score @s rng2 matches ..99 positioned -79651 174 -774 if entity @a[tag=azrPlayer,distance=..7] run scoreboard players set @s rng2 100
 
