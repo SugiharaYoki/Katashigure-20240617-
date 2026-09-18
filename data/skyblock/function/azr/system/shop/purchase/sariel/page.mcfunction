@@ -1,7 +1,7 @@
 
 tellraw @s[tag=!AzrSariel_Route_Life,tag=!AzrSariel_Route_Death] {text:"『节制天平面板』","extra":[""],color:"#85aaff",bold:1b}
 tellraw @s[tag=AzrSariel_Route_Life] {text:"『节制天平面板 · 生之命』","extra":[""],color:"#85e1ff",bold:1b}
-tellraw @s[tag=AzrSariel_Route_Death] {text:"『节制天平面板 · 亡之命』","extra":[""],color:"#8578ff",bold:1b}
+tellraw @s[tag=AzrSariel_Route_Death] {text:"『节制天平面板 · 死之命』","extra":[""],color:"#8578ff",bold:1b}
 tellraw @s {text:"   "}
 summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker0"]}
 summon marker ~ ~ ~ {Tags:["AzrSariel_displaymarker","AzrSariel_displaymarker0b"]}
