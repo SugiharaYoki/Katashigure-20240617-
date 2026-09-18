@@ -1,7 +1,7 @@
 scoreboard players add @s[tag=AzrMob_nautilus_havetarget] rng1 1
 
-execute at @n[type=item,distance=..8] if block ~ ~ ~ #skyblock:water run damage @s 0 generic by @p[tag=azrPlayer]
-execute at @n[type=item,distance=..8] if block ~ ~ ~ #skyblock:water run tag @s add AzrMob_nautilus_havetarget
+execute if entity @s[tag=!AzrMob_nautilus_havetarget] at @n[type=item,distance=..8] if block ~ ~ ~ #skyblock:water run damage @s 0 generic by @p[tag=azrPlayer]
+execute if entity @s[tag=!AzrMob_nautilus_havetarget] at @n[type=item,distance=..8] if block ~ ~ ~ #skyblock:water run tag @s add AzrMob_nautilus_havetarget
 
 
 
