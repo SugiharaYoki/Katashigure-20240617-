@@ -24,6 +24,12 @@ execute if score @s rng1 matches 200 positioned -79696 174 -778 run function sky
 execute if score @s rng1 matches 200 positioned -79696 174 -778 run function skyblock:azr/assets/mobs/piranha
 execute if score @s rng1 matches 200 positioned -79696 174 -778 run function skyblock:azr/assets/mobs/piranha
 
+execute if score @s rng1 matches 200 positioned -79722 171 -813 run function skyblock:azr/assets/mobs/piranha
+execute if score @s rng1 matches 200 positioned -79722 171 -813 run function skyblock:azr/assets/mobs/piranha
+execute if score @s rng1 matches 200 positioned -79722 171 -813 run function skyblock:azr/assets/mobs/piranha
+execute if score @s rng1 matches 200 positioned -79722 171 -813 run function skyblock:azr/assets/mobs/piranha
+
+
 execute if score @s rng1 matches 200 positioned -79684 174 -806 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 202 positioned -79684 174 -806 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 200 positioned -79670 174 -800 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_spider_giant","AzrielMob_summon_delay","AzrielMob_level_1"]}
