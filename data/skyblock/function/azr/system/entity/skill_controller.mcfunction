@@ -29,6 +29,7 @@ execute if entity @s[tag=AzrielMob_husk_temper] run function skyblock:azr/assets
 
 execute if entity @s[tag=AzrielMob_zombie_villager_armor] run function skyblock:azr/assets/mobs/skill/zombie_villager_armor
 execute if entity @s[tag=AzrielMob_zombie_villager_cleric] run function skyblock:azr/assets/mobs/skill/zombie_villager_cleric
+execute if entity @s[tag=AzrielMob_zombie_villager_vine] run function skyblock:azr/assets/mobs/skill/zombie_villager_vine
 
 execute if entity @s[tag=AzrielMob_piranha] run function skyblock:azr/assets/mobs/skill/piranha
 
