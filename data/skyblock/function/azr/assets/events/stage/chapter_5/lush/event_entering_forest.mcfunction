@@ -15,6 +15,7 @@ execute if score @s rng1 matches 45 positioned -79652 174 -791 run function skyb
 execute if score @s rng1 matches 50..199 run scoreboard players set @s rng1 198
 execute if score @s rng1 matches ..199 positioned -79684 174 -806 if entity @a[tag=azrPlayer,distance=..7] run scoreboard players set @s rng1 200
 
+execute if score @s rng1 matches 200 positioned -79685 171 -795 run scoreboard players set stage Azr_system 80
 execute if score @s rng1 matches 200 positioned -79685 171 -795 run function skyblock:azr/assets/mobs/piranha
 execute if score @s rng1 matches 200 positioned -79685 171 -795 run function skyblock:azr/assets/mobs/piranha
 execute if score @s rng1 matches 200 positioned -79685 171 -795 run function skyblock:azr/assets/mobs/piranha
