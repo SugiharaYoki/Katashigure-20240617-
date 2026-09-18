@@ -4,7 +4,7 @@ execute if score @s rng1 matches 50 run playsound minecraft:entity.evoker.prepar
 execute if score @s rng1 matches 50 run particle minecraft:enchant ~ ~0.3 ~ 0.2 0 0.2 0 20
 execute if score @s rng1 matches 50 run effect give @s slowness 3 19 true
 
-execute if score @s rng1 matches 50 at @p[tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_slow_vine","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 50 at @p[tag=azrPlayer,distance=..4.5] run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_slow_vine","AzrielMob_mob_marker"]}
 
 
 
