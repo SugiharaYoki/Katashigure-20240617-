@@ -52,3 +52,8 @@ execute if score @s rng1 matches 52 rotated ~350 0 run particle minecraft:witch 
 execute if score @s rng1 matches 52 run effect give @e[tag=AzrielMob_typeDEATH,distance=..2.8,tag=!AzrielMob_zombie_villager_armor] resistance 1 3 false
 
 execute if score @s rng1 matches 54.. run scoreboard players set @s rng1 51
+
+
+
+execute unless score @s rng19 matches 1.. if entity @a[tag=azrPlayer,distance=..8] run scoreboard players set @s rng19 1
+execute unless score @s rng19 matches 1.. run effect give @s slowness 1 19 true
