@@ -35,8 +35,11 @@ execute as @s[scores={City_DoubleJump=1..}] at @s run function skyblock:city/dou
 execute as @s[tag=City_DoubleJumpPass] at @s unless block ~ ~-0.1 ~ air run tag @s remove City_DoubleJumpPass
 
 
+
 #厄珀娅的悲歌 试炼殿堂
 execute if entity @s[x=89829,y=12,z=-165,dx=30,dy=20,dz=30] run function skyblock:sea/outside/trial_hall_core
+
+
 
 #qq炫舞
 execute if entity @s[tag=Gaming,tag=MG_qqd] run function skyblock:mg/qqdance/core

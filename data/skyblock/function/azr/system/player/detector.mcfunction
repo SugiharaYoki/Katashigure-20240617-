@@ -7,6 +7,30 @@
     execute as @s[scores={MultiMenu=115}] run function skyblock:azr/outgame/info/menu
     scoreboard players enable @s MultiMenu
 
+
+#花园1大厅
+execute if entity @s[tag=!AzrOutside_selecting_stage] if entity @s[x=-79960,y=33,z=-48,dx=20,dy=9,dz=24] unless score isStarted Azr_system matches 1 run function skyblock:azr/system/outside/stage_selection_core
+execute if entity @s[tag=AzrOutside_selecting_stage] unless entity @s[x=-79960,y=33,z=-48,dx=20,dy=9,dz=24] run tag @s remove AzrOutside_selecting_stage
+
+execute as @s[scores={MultiMenu=16230001}] unless score isStarted Azr_system matches 1 run function skyblock:azr/lifecycle/jump_to/ch1_start_exclusive
+execute as @s[scores={MultiMenu=16230002}] unless score isStarted Azr_system matches 1 run function skyblock:azr/lifecycle/jump_to/ch1_part2_exclusive
+execute as @s[scores={MultiMenu=16230003}] unless score isStarted Azr_system matches 1 run function skyblock:azr/lifecycle/jump_to/ch1_boss_exclusive
+execute as @s[scores={MultiMenu=16230004}] unless score isStarted Azr_system matches 1 run function skyblock:azr/lifecycle/jump_to/ch2_start_exclusive
+execute as @s[scores={MultiMenu=16230005}] unless score isStarted Azr_system matches 1 run function skyblock:azr/lifecycle/jump_to/ch2_boss_exclusive
+execute as @s[scores={MultiMenu=16230006}] unless score isStarted Azr_system matches 1 run function skyblock:azr/lifecycle/jump_to/ch3_start_exclusive
+execute as @s[scores={MultiMenu=16230007}] unless score isStarted Azr_system matches 1 run function skyblock:azr/lifecycle/jump_to/ch3_boss_exclusive
+execute as @s[scores={MultiMenu=16230008}] unless score isStarted Azr_system matches 1 run function skyblock:azr/lifecycle/jump_to/ch4_start_exclusive
+execute as @s[scores={MultiMenu=16230009}] unless score isStarted Azr_system matches 1 run function skyblock:azr/lifecycle/jump_to/ch4_mid_exclusive
+execute as @s[scores={MultiMenu=16230010}] unless score isStarted Azr_system matches 1 run function skyblock:azr/lifecycle/jump_to/ch4_boss_exclusive
+execute as @s[scores={MultiMenu=16230011}] unless score isStarted Azr_system matches 1 run function skyblock:azr/lifecycle/jump_to/ch4_afterward_exclusive
+execute as @s[scores={MultiMenu=16230021}] unless score isStarted Azr_system matches 1 run function skyblock:azr/lifecycle/jump_to/ch5_start_exclusive
+execute as @s[scores={MultiMenu=16230022}] unless score isStarted Azr_system matches 1 run function skyblock:azr/lifecycle/jump_to/ch5_mid_exclusive
+execute as @s[scores={MultiMenu=16230023}] unless score isStarted Azr_system matches 1 run function skyblock:azr/lifecycle/jump_to/ch5_boss_exclusive
+execute as @s[scores={MultiMenu=16230031}] unless score isStarted Azr_system matches 1 run function skyblock:azr/lifecycle/jump_to/ch6_start_exclusive
+execute as @s[scores={MultiMenu=16230032}] unless score isStarted Azr_system matches 1 run function skyblock:azr/lifecycle/jump_to/ch6_mid_exclusive
+execute as @s[scores={MultiMenu=16230033}] unless score isStarted Azr_system matches 1 run function skyblock:azr/lifecycle/jump_to/ch6_boss_exclusive
+execute as @s[scores={MultiMenu=16230034}] unless score isStarted Azr_system matches 1 run function skyblock:azr/lifecycle/jump_to/ch6_final_exclusive
+
 execute unless score isStarted Azr_system matches 1 as @s[tag=azrPlayer] run function skyblock:azr/lifecycle/endgame/quit_game
 
 # 重置判定 - 游戏已开始但没有玩家
