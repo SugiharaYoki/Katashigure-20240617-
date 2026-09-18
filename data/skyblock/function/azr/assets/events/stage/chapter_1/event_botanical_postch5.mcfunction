@@ -38,6 +38,11 @@ execute if score @s[scores={rng3=5}] rng2 matches 78 run tellraw @a[tag=azrShowD
 execute if score @s[scores={rng3=6}] rng2 matches 50 run tellraw @a[tag=azrShowDialog] [{text:"特遣弩手：",color:"green",bold:1b},{bold: false,text:"\n“护石好像没几个能脱离石板直接使用的。”",color:"white"}]
 execute if score @s[scores={rng3=6}] rng2 matches 64 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"green",bold:1b},{bold: false,text:"\n“就算有，你身上能凑够砝码吗？”",color:"white"}]
 
+execute if score @s[scores={rng3=7}] rng2 matches 50 run tellraw @a[tag=azrShowDialog] [{text:"牧师：",color:"green",bold:1b},{bold: false,text:"\n“我其实很好奇……是谁在放歌？”",color:"white"}]
+execute if score @s[scores={rng3=7}] rng2 matches 64 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"green",bold:1b},{bold: false,text:"\n“挺好听的。至少也不会让这里太过冷清。”",color:"white"}]
+execute if score @s[scores={rng3=7}] rng2 matches 78 run tellraw @a[tag=azrShowDialog] [{text:"牧师：",color:"green",bold:1b},{bold: false,text:"\n“这里真的得开扇窗了，现在要晒太阳还得进入植物园，再被暴打一顿。”",color:"white"}]
 
-execute if score @s rng2 matches 200 store result score @s rng3 run random value 1..10
-execute if score @s rng2 matches 200.. run scoreboard players set @s rng2 0
+
+
+execute if score @s rng2 matches 300 store result score @s rng3 run random value 1..10
+execute if score @s rng2 matches 300.. store result score @s rng2 run random value 50..80
