@@ -41,7 +41,7 @@ execute if score @s AzrSariel_Amulet_MagicalCurrentLevel matches 1 run effect gi
 execute if score @s AzrSariel_Amulet_MagicalCurrentLevel matches 2 run effect give @s levitation 1 3 true
 execute if score @s AzrSariel_Amulet_MagicalCurrentLevel matches 3.. run effect give @s levitation 1 4 true
 
-execute if entity @s[predicate=!skyblock:sneak] run effect clear @s levitation
+execute if entity @s[predicate=skyblock:sneak] run effect clear @s levitation
 
 execute if score @s AzrSariel_Amulet_MagicalCurrentLevel matches 0 run effect clear @s levitation
 execute if score @s AzrSariel_Amulet_MagicalCurrentLevel matches 0 run scoreboard players set @s AzrSariel_Amulet_MagicalCurrentLevel -1
