@@ -165,6 +165,7 @@ execute positioned -79854 29 -73 if entity @s[distance=..4] run tag @s add azrPl
 execute positioned -79923 38 -96 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_prison_a
 execute positioned -79855 46 -109 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_prison_b
 execute positioned -79651 173 -768 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_lush_a
+execute positioned -79764 175 -777 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_lush_b
 
 
 

@@ -54,6 +54,8 @@ execute if score @s Azr_Shop matches 40027 positioned -79338 23 -414 if entity @
 
 execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_lush_a] if score @s \
     Azr_Shop matches 40040 positioned -79651 173 -768 run tp @s ~ ~1 ~
+execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_lush_b] if score @s \
+    Azr_Shop matches 40041 positioned -79764 175 -777 run tp @s ~ ~1 ~
 
 
 

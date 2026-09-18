@@ -27,6 +27,7 @@ execute if entity @s[tag=AZS_RespAnchorTeleport] positioned -79572 11 -414 if en
 execute if entity @s[tag=AZS_RespAnchorTeleport] positioned -79338 23 -414 if entity @n[tag=AzrielMob_utility_respawn_anchor,distance=..8] run tellraw @s [{text:"   - "},{text:"血金窟",color:"#c20600"},{text:" 经行之镇 隐秘的黑石支柱  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40027"}}]
 
 tellraw @s[tag=azrPlayer_respawnanchor_unlocked_lush_a] [{text:"   - "},{text:"神代茏渠",color:"#7de300"},{text:" 底层  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40040"}}]
+tellraw @s[tag=azrPlayer_respawnanchor_unlocked_lush_b] [{text:"   - "},{text:"神代茏渠",color:"#7de300"},{text:" 管道殿堂  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40041"}}]
 
 
 
