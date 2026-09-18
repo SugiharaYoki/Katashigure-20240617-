@@ -9,7 +9,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 155 run bossbar remove
 #
 #-79935.00 54.00 -105.00
 execute if score stage_bonus_thread AzrTimerStack matches 2 positioned -79935.00 54.00 -105.00 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_bonus_thread AzrTimerStack matches 12 positioned -79935.00 54.00 -105.00 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 12 positioned -79935.00 54.00 -105.00 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_bonus_thread AzrTimerStack matches 13 positioned -79935.00 54.00 -105.00 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 

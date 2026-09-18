@@ -29,6 +29,11 @@ execute if score @s rng1 matches 213 positioned -79684 174 -791 run summon marke
 execute if score @s rng1 matches 210 positioned -79685 174 -791 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_fire","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 213 positioned -79686 174 -791 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
+execute if score @s rng1 matches 200 positioned -79684 178 -777 run function skyblock:azr/assets/mobs/husk
+execute if score @s rng1 matches 200 positioned -79683 178 -777 run function skyblock:azr/assets/mobs/zombie_villager_armor
+execute if score @s rng1 matches 200 positioned -79684 178 -778 run function skyblock:azr/assets/mobs/shield
+execute if score @s rng1 matches 200 positioned -79689 178 -763 run function skyblock:azr/assets/mobs/undead_fire
+execute if score @s rng1 matches 200 positioned -79689 178 -763 run function skyblock:azr/assets/mobs/undead_fire
 
 
 

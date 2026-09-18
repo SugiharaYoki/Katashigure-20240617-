@@ -1006,6 +1006,10 @@ forceload add -79681 -583 -79607 -718
 function skyblock:azr/lifecycle/endgame/reset_map_boss4
 
 
+#chapter 5
+setblock -79684 178 -782 waxed_exposed_copper_chest[facing=south]{Inventory:[]}
+item replace block -79684 178 -782 container.12 with emerald 2
+item replace block -79684 178 -782 container.14 with emerald 2
 
 
 
