@@ -46,6 +46,9 @@ execute if score @s rng1 matches 200 positioned -79689 178 -763 run function sky
 execute if score @s rng1 matches 200 positioned -79672 178 -761 run function skyblock:azr/assets/mobs/slime
 execute if score @s rng1 matches 200 positioned -79672 178 -761 run function skyblock:azr/assets/mobs/slime
 execute if score @s rng1 matches 200 positioned -79672 178 -761 run function skyblock:azr/assets/mobs/slime
+
+execute if score @s rng1 matches 200 positioned -79690 175 -827 run function skyblock:azr/assets/mobs/undead
+execute if score @s rng1 matches 200 positioned -79690 175 -827 run function skyblock:azr/assets/mobs/undead
 execute if score @s rng1 matches 200 positioned -79690 175 -827 run function skyblock:azr/assets/mobs/zombie_villager_vine
 
 
