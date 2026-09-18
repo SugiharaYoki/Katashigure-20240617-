@@ -149,6 +149,8 @@ execute unless score @s AzrPlayer_CurrentArea matches 8 positioned -79969 -52 -1
 
 execute unless score @s AzrPlayer_CurrentArea matches 11 positioned -79651 173 -768 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:11,title:"重生锚点：神代茏渠A",color_code:"#7de300"}
+execute unless score @s AzrPlayer_CurrentArea matches 11 positioned -79764 175 -777 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:11,title:"重生锚点：神代茏渠B",color_code:"#7de300"}
 
 
 
