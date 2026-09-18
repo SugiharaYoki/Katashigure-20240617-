@@ -13,7 +13,7 @@ execute if score @s rng1 matches 45 positioned -79652 174 -791 run function skyb
 
 
 execute if score @s rng1 matches 50..199 run scoreboard players set @s rng1 198
-execute if score @s rng1 matches 50..199 positioned -79684 174 -806 if entity @a[distance=..7] run scoreboard players set @s rng1 200
+execute if score @s rng1 matches ..199 positioned -79684 174 -806 if entity @a[distance=..7] run scoreboard players set @s rng1 200
 
 execute if score @s rng1 matches 200 positioned -79685 171 -795 run function skyblock:azr/assets/mobs/piranha
 execute if score @s rng1 matches 200 positioned -79685 171 -795 run function skyblock:azr/assets/mobs/piranha
@@ -42,8 +42,8 @@ execute if score @s rng1 matches 213 positioned -79686 174 -791 run summon marke
 
 
 
-execute if score @s rng2 matches 50..99 run scoreboard players set @s rng2 98
-execute if score @s rng2 matches 50..99 positioned -79651 174 -774 if entity @a[distance=..7] run scoreboard players set @s rng2 100
+execute if score @s rng2 matches ..99 run scoreboard players set @s rng2 98
+execute if score @s rng2 matches ..99 positioned -79651 174 -774 if entity @a[distance=..7] run scoreboard players set @s rng2 100
 
 execute if score @s rng2 matches 100 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（生命树根系……？但我觉得我现在不该通过它回到神庭）",color:"white"}]
 
