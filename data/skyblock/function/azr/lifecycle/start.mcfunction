@@ -152,7 +152,7 @@ scoreboard objectives add AzrSariel_Amulet_FlowerWallFire_sum dummy
 scoreboard objectives add AzrSariel_Amulet_FrontSlashEd dummy
 scoreboard objectives add AzrSariel_Amulet_StayFloat_Y dummy
 scoreboard objectives add AzrSariel_Amulet_RevivalStar_Callmate dummy
-
+scoreboard objectives add AzrSariel_Amulet_MagicalCurrentLevel dummy
 
 #特殊食物
 scoreboard objectives add AzrSariel_Food_HardenedCookie dummy
