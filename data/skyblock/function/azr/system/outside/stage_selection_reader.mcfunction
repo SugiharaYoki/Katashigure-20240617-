@@ -1,6 +1,6 @@
 
 
-tellraw @s[tag=!AzrOutside_selecting_stage] {text:"『章节列表』",bold:1b,color:"aqua"}
+tellraw @s[tag=!AzrOutside_selecting_stage] {text:"『亚兹列尔的中庭花园·章节列表』",bold:1b,color:"aqua"}
 
 tellraw @s [{text:"   - "},{text:"序章",color:"#fcfcfc"},{text:" 坠入天国  ",color:"gray"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger MultiMenu set 16230001"}}]
 tellraw @s [{text:"    - "},{text:"第一章",color:"#e9ffe0"},{text:" 西庭外围  ",color:"#e9ffe0"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger MultiMenu set 16230002"}}]
