@@ -42,7 +42,11 @@ execute if score @s[scores={rng3=7}] rng2 matches 50 run tellraw @a[tag=azrShowD
 execute if score @s[scores={rng3=7}] rng2 matches 64 run tellraw @a[tag=azrShowDialog] [{text:"哨兵剑士：",color:"green",bold:1b},{bold: false,text:"\n“挺好听的。至少也不会让这里太过冷清。”",color:"white"}]
 execute if score @s[scores={rng3=7}] rng2 matches 78 run tellraw @a[tag=azrShowDialog] [{text:"牧师：",color:"green",bold:1b},{bold: false,text:"\n“这里真的得开扇窗了，现在要晒太阳还得进入植物园，再被暴打一顿。”",color:"white"}]
 
+execute if score @s[scores={rng3=8}] rng2 matches 50 run tellraw @a[tag=azrShowDialog] [{text:"牧师：",color:"green",bold:1b},{bold: false,text:"\n“主说：当我洁净你们，使你们脱离一切罪孽时，我会使城镇重新有人居住，使废墟得到重建。”",color:"white"}]
+execute if score @s[scores={rng3=8}] rng2 matches 70 run tellraw @a[tag=azrShowDialog] [{text:"牧师：",color:"green",bold:1b},{bold: false,text:"\n“从前在路人眼中荒芜的土地，将再次有人耕种。”",color:"white"}]
+execute if score @s[scores={rng3=8}] rng2 matches 86 run tellraw @a[tag=azrShowDialog] [{text:"牧师：",color:"green",bold:1b},{bold: false,text:"\n“人们会说：“这片曾经荒废的土地，如今变得像伊甸园；那些荒凉、毁坏的城镇，如今有了防护，也有人居住。”",color:"white"}]
+execute if score @s[scores={rng3=8}] rng2 matches 110 run tellraw @a[tag=azrShowDialog] [{text:"牧师：",color:"green",bold:1b},{bold: false,text:"\n“那时，周围存留的各国就会知道：是主重建了毁坏之处，栽种了荒芜之地。主既已说出，就必成就。”",color:"white"}]
 
 
-execute if score @s rng2 matches 300 store result score @s rng3 run random value 1..10
+execute if score @s rng2 matches 300 store result score @s rng3 run random value 1..9
 execute if score @s rng2 matches 300.. store result score @s rng2 run random value 50..80
