@@ -30,6 +30,7 @@ execute as @s[scores={MultiMenu=16230031}] unless score isStarted Azr_system mat
 execute as @s[scores={MultiMenu=16230032}] unless score isStarted Azr_system matches 1 run function skyblock:azr/lifecycle/jump_to/ch6_mid_exclusive
 execute as @s[scores={MultiMenu=16230033}] unless score isStarted Azr_system matches 1 run function skyblock:azr/lifecycle/jump_to/ch6_boss_exclusive
 execute as @s[scores={MultiMenu=16230034}] unless score isStarted Azr_system matches 1 run function skyblock:azr/lifecycle/jump_to/ch6_final_exclusive
+execute as @s[scores={MultiMenu=16230001..16239999}] run scoreboard players set @s MultiMenu 0
 
 execute unless score isStarted Azr_system matches 1 as @s[tag=azrPlayer] run function skyblock:azr/lifecycle/endgame/quit_game
 
