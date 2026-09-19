@@ -52,7 +52,7 @@ execute if entity @s[tag=AzrielMob_spider_giant] run function skyblock:azr/asset
 #execute if entity @s[tag=AzrielMob_smoke_mother] run function skyblock:azr/assets/mobs/skill/generic_weakness_fire
 #execute if entity @s[tag=AzrielMob_nightblind] run function skyblock:azr/assets/mobs/skill/generic_weakness_fire
 
-execute if entity @s[type=#undead] if block ~ ~0.3 ~ #skyblock:water run tp @s ~ ~0.05 ~
+execute if entity @s[type=#undead] if block ~ ~0.8 ~ #skyblock:water run tp @s ~ ~0.05 ~
 
 #神界军
 execute if score stage Azr_system matches 25.. unless entity @s[type=!pillager,type=!vindicator] run function skyblock:azr/assets/events/stage/chapter_3/stage9_divineforce_behavior
