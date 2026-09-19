@@ -36,6 +36,7 @@ bossbar remove azr:boss_hp_bar_centurion
 bossbar remove azr:boss_hp_bar_diesel
 bossbar remove azr:boss_hp_bar_legate
 bossbar remove azr:boss_hp_bar_mossboss
+bossbar remove azr:boss_hp_bar_slime
 bossbar remove azr:boss_hp_bar_villain
 bossbar remove azr:boss_hp_bar_working
 bossbar remove azr:boss_hp_bar_0
