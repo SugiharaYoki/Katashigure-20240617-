@@ -61,7 +61,7 @@ execute if score @s rng5 matches 9 at @s rotated as @s run tp ^0.15 ^ ^
 execute if score @s rng5 matches 10 at @s rotated as @s run tp ^-0.15 ^ ^
 scoreboard players set @s rng5 0
 
-execute if score @s rng13 matches 6.. if items entity @p[tag=azrPlayer,distance=..30] container.* *[custom_data~{azr_amulet_fire_drogue_dash:1b}] if entity @n[tag=AzrielMob,distance=..19] if entity @n[type=arrow,distance=..2] run tag @s add AzrAmulet_firedrogue_dash
+execute if score @s rng13 matches 6.. if items entity @a[tag=azrPlayer,distance=..30] container.* *[custom_data~{azr_amulet_fire_drogue_dash:1b}] if entity @n[tag=AzrielMob,distance=..19] if entity @n[type=arrow,distance=..2] run tag @s add AzrAmulet_firedrogue_dash
 
 
 #execute if entity @a[tag=azrPlayer,distance=..3.5] unless entity @n[tag=AzrielMob,distance=..6] rotated as @s positioned as @p[tag=azrPlayer] rotated ~10 ~ run tp @s ^ ^0.8 ^2.8
