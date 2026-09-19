@@ -44,7 +44,7 @@ execute if items entity @s weapon.offhand *[custom_data~{azr_amulet_arrow_savior
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_drogue:1b}] run function skyblock:azr/system/player/skills/amulet/fire_drogue_core
 execute if items entity @s container.* *[custom_data~{azr_amulet_magical_current:1b}] run function skyblock:azr/system/player/skills/amulet/magical_current_list
 execute if items entity @s container.* *[custom_data~{azr_amulet_water_wade:1b}] run function skyblock:azr/system/player/skills/amulet/water_wade_core
-execute if entity @s[tag=AzrAmulet_waterwade_swimspeed] unless items entity @s container.* *[custom_data~{azr_amulet_water_wade:1b}] run attribute @s water_movement_efficiency modifier add azr_amulet:waterwade_swim_01 0.1 add_value
+execute if entity @s[tag=AzrAmulet_waterwade_swimspeed] unless items entity @s container.* *[custom_data~{azr_amulet_water_wade:1b}] run attribute @s water_movement_efficiency modifier remove azr_amulet:waterwade_swim_01
 execute if entity @s[tag=AzrAmulet_waterwade_swimspeed] unless items entity @s container.* *[custom_data~{azr_amulet_water_wade:1b}] run tag @s remove AzrAmulet_waterwade_swimspeed
 
 execute if items entity @s weapon.offhand *[custom_data~{azr_loginbonus:1b}] run function skyblock:azr/system/player/join_login_bonus_open

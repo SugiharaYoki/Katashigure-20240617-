@@ -12,3 +12,6 @@ execute if entity @s[tag=AzrAmulet_WaterWade_sprinted] unless block ~ ~ ~ #skybl
 
 tag @s remove AzrAmulet_WaterWade_success
 
+
+execute if entity @s[tag=!AzrAmulet_waterwade_swimspeed] unless items entity @s container.* *[custom_data~{azr_amulet_water_wade:1b}] run attribute @s water_movement_efficiency modifier add azr_amulet:waterwade_swim_01 0.1 add_value
+execute if entity @s[tag=!AzrAmulet_waterwade_swimspeed] unless items entity @s container.* *[custom_data~{azr_amulet_water_wade:1b}] run tag @s add AzrAmulet_waterwade_swimspeed
