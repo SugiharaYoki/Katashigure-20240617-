@@ -8,6 +8,8 @@ execute if score @s AzrTimerStack matches 1..190 store result bossbar azr:progre
 execute if score @s AzrTimerStack matches 190 run bossbar remove azr:progress_bar_bonus
 #
 
+scoreboard players add @s AzrTimerStack 1
+
 execute if score stage Azr_system matches ..61 if score @s AzrTimerStack matches 2 run tp @n[tag=AzrielTrader_pig_henry] -79664 32 -424
 execute if score @s AzrTimerStack matches 2 run fill -79661 35 -416 -79665 32 -416 minecraft:red_stained_glass replace air
 
