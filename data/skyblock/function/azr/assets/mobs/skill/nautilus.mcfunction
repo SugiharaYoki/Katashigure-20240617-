@@ -7,7 +7,8 @@ execute at @s rotated as @s positioned ^ ^ ^0.3 as @n[type=item,distance=..0.5] 
 execute at @s rotated as @s positioned ^ ^ ^0.3 as @n[type=item,distance=..0.5] at @s if block ~ ~ ~ #skyblock:water run playsound minecraft:entity.nautilus.eat ambient @a ~ ~ ~ 1 0.9
 execute at @s rotated as @s positioned ^ ^ ^0.3 as @n[type=item,distance=..0.5] at @s if block ~ ~ ~ #skyblock:water run kill @s
 
-execute at @s[tag=!AzrMob_nautilus_havetarget] at @n[type=item,distance=..9.2] if block ~ ~ ~ #skyblock:water facing entity @n[type=item,distance=..9.2] feet at @s positioned ^ ^ ^0.7 if block ~ ~ ~ #skyblock:water at @s run tp @s ^ ^ ^0.022
+execute at @s[tag=!AzrMob_nautilus_havetarget] at @n[type=item,distance=..9.2] unless block ~ ~ ~ #skyblock:water run tag @s add AzrMob_nautilus_item_cannot_reach
+execute at @s[tag=!AzrMob_nautilus_havetarget] facing entity @n[type=item,distance=..9.2,tag=!AzrMob_nautilus_item_cannot_reach] feet positioned ^ ^ ^0.7 if block ~ ~ ~ #skyblock:water run tp @s ^ ^ ^0.022
 
 execute if score @s rng1 matches 1..299 unless entity @a[tag=azrPlayer,distance=..13] run scoreboard players set @s rng1 99999
 execute if score @s rng1 matches 300.. run tag @s remove AzrMob_nautilus_havetarget
