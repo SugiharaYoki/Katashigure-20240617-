@@ -151,6 +151,6 @@ scoreboard objectives remove AzrSariel_Food_HardenedCookie
 scoreboard objectives remove AzrSariel_Food_PowerSalmon
 
 scoreboard objectives remove azr_bonus_stage_index
-
+scoreboard objectives remove AzrielMob_undead_inwater
 #unused
 #scoreboard objectives remove Azr_sarielStar
