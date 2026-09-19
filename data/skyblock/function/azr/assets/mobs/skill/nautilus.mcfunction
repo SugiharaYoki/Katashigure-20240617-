@@ -9,5 +9,6 @@ execute at @s rotated as @s positioned ^ ^ ^1 as @n[type=item,distance=..1.5] at
 
 execute at @s[tag=!AzrMob_nautilus_havetarget] facing entity @n[type=item,distance=..1.5] feet positioned ^ ^ ^0.2 if block ~ ~ ~ #skyblock:water run tp @s ^ ^ ^0.15
 
+execute if score @s rng1 matches 1..299 unless entity @a[tag=azrPlayer,distance=..13] run scoreboard players set @s rng1 99999
 execute if score @s rng1 matches 300.. run tag @s remove AzrMob_nautilus_havetarget
 execute if score @s rng1 matches 300.. run scoreboard players set @s rng1 0
