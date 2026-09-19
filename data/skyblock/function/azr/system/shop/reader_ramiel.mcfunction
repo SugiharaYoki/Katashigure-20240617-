@@ -149,7 +149,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_flower_wall_fir
 execute if items entity @s container.* *[custom_data~{azr_amulet_jump_boost:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkeri] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_fire_drogue_dash:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerj] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_stay_float:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerk] CustomName set value ' √ '
-execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerl] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_water_wade:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerl] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerm] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkern] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_tripler:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkero] CustomName set value ' √ '
@@ -211,7 +211,7 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkeri]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432309"},hover_event:{"action":"show_text","value":{text:"Index - 斥跃石板\n蹲下跳得更高、史莱姆块助跳",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerj]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432310"},hover_event:{"action":"show_text","value":{text:"Jahannam - 恶燧石板\n射击逐焰浮球使其化作飓炎弹，通过弦蓄补充逐焰浮球",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerk]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432311"},hover_event:{"action":"show_text","value":{text:"Kinetic - 悬风石板\n长按跳跃以悬浮",color:"white"}}},\
-{selector:"@n[tag=AzrRamielExStage_displaymarkerl]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432312"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerl]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432312"},hover_event:{"action":"show_text","value":{text:"Limnion - 疾泅石板\n允许入水后进行一次冲刺，略微增加水中移动速度",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerm]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432313"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkern]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432314"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
 {text:"\n "},\
