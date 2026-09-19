@@ -20,7 +20,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 132..133 positioned -7
 
 execute if score stage_bonus_thread AzrTimerStack matches 135 run title @a[tag=azrShowDialog] actionbar {text:"Extra Stage Clear",color:"green"}
 execute if score stage_bonus_thread AzrTimerStack matches 135 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_flux
-execute if score stage_bonus_thread AzrTimerStack matches 135 run fill -79936 36 197 -79936 36 198 redstone_torch
+execute if score stage_bonus_thread AzrTimerStack matches 135 run fill -79727 179 -848 -79724 175 -848 air destroy
 execute if score stage_bonus_thread AzrTimerStack matches 135 as @a[tag=azrPlayer] at @s unless entity @s[tag=AZS_BoS12] run function skyblock:azr/assets/items/amulets/water_wade
 execute if score stage_bonus_thread AzrTimerStack matches 135 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS12
 execute if score stage_bonus_thread AzrTimerStack matches 135 as @a[tag=azrPlayer] at @s run give @s emerald 5

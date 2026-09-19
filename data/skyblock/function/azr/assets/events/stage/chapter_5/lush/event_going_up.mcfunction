@@ -59,7 +59,8 @@ execute if score @s rng1 matches 200 positioned -79690 175 -827 run function sky
 execute if score @s rng1 matches 200 positioned -79724 171 -814 run function skyblock:azr/assets/mobs/nautilus
 execute if score @s rng1 matches 200 positioned -79724 171 -814 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..29}] Azr_skillPoints 30
 
-
+execute if score @s rng1 matches 200 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:piranha}
+execute if score @s rng1 matches 200 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:nautilus}
 
 
 

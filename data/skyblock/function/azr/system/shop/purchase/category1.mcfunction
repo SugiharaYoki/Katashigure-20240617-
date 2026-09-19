@@ -132,69 +132,17 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=25,Azr_Shop=$(trigger)}] \
 
 
 
-$execute as @s[scores={Azr_Shop_rng$(rng)=23,Azr_Shop=$(trigger)}] \
-    unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* gold_ingot[count={min:1},custom_data~{soft_gold:1b}] \
-    if score @s Azr_emerald matches 8.. \
-    unless function skyblock:azr/system/shop/purchase/category1/\
-    rng23 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 23  金苹果 ×2  8 绿宝石 1 软金
 
-$execute as @s[scores={Azr_Shop_rng$(rng)=24,Azr_Shop=$(trigger)}] \
-    unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* carrot[count={min:1}] \
-    if items entity @s container.* gold_ingot[count={min:1},custom_data~{soft_gold:1b}] \
-    if score @s Azr_emerald matches 6.. \
-    unless function skyblock:azr/system/shop/purchase/category1/\
-    rng24 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 24  金萝卜 ×2  6 绿宝石 1 胡萝卜 1 软金
 
-$execute as @s[scores={Azr_Shop_rng$(rng)=25,Azr_Shop=$(trigger)}] \
-    unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if score @s Azr_emerald matches 3.. \
-    if items entity @s container.* carrot[count={min:4}] \
-    unless function skyblock:azr/system/shop/purchase/category1/\
-    rng25 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 25  金萝卜  3 绿宝石 4 胡萝卜
 
-$execute as @s[scores={Azr_Shop_rng$(rng)=26,Azr_Shop=$(trigger)}] \
-    unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* lapis_lazuli[count={min:1}] \
-    unless function skyblock:azr/system/shop/purchase/category1/\
-    rng26 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 26  熟猪排  1 青金石
 
-$execute as @s[scores={Azr_Shop_rng$(rng)=27,Azr_Shop=$(trigger)}] \
-    unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* lapis_lazuli[count={min:1}] \
-    unless function skyblock:azr/system/shop/purchase/category1/\
-    rng27 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 27  木炭 ×2  1 青金石
 
-$execute as @s[scores={Azr_Shop_rng$(rng)=28,Azr_Shop=$(trigger)}] \
-    unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* lapis_lazuli[count={min:1}] \
-    unless function skyblock:azr/system/shop/purchase/category1/\
-    rng28 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 28  经验等级 ×1  1 青金石
 
-$execute as @s[scores={Azr_Shop_rng$(rng)=29,Azr_Shop=$(trigger)}] \
-    unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* lapis_lazuli[count={min:1}] \
-    unless function skyblock:azr/system/shop/purchase/category1/\
-    rng29 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 29  绿宝石 ×3  1 青金石
 
-$execute as @s[scores={Azr_Shop_rng$(rng)=30,Azr_Shop=$(trigger)}] \
-    unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* lapis_lazuli[count={min:1}] \
-    unless function skyblock:azr/system/shop/purchase/category1/\
-    rng30 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 30  一次性打火石  1 青金石
 
-$execute as @s[scores={Azr_Shop_rng$(rng)=31,Azr_Shop=$(trigger)}] \
-    unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* beetroot_seeds[count={min:1}] \
-    unless function skyblock:azr/system/shop/purchase/category1/\
-    rng31 run scoreboard players set tempPlayerShopSuccess Azr_system 1
-    # 31  爆裂菜根  1 甜菜种子
+
+
+
+
+
+
