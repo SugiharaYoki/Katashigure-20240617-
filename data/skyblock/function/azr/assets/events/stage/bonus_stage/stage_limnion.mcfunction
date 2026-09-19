@@ -32,6 +32,12 @@ execute if score stage_bonus_thread AzrTimerStack matches 69..70 positioned -797
 
 execute if score stage_bonus_thread AzrTimerStack matches 72 positioned -79734 175 -855 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
+execute if score stage_bonus_thread AzrTimerStack matches 85 positioned -79725 170 -859 unless entity @n[tag=AzrielMob_piranha,distance=..20] run function skyblock:azr/assets/mobs/piranha3
+execute if score stage_bonus_thread AzrTimerStack matches 95 positioned -79725 170 -859 unless entity @n[tag=AzrielMob_piranha,distance=..20] run function skyblock:azr/assets/mobs/piranha3
+execute if score stage_bonus_thread AzrTimerStack matches 135 positioned -79725 170 -859 unless entity @n[tag=AzrielMob_piranha,distance=..20] run function skyblock:azr/assets/mobs/piranha3
+execute if score stage_bonus_thread AzrTimerStack matches 145 positioned -79725 170 -859 unless entity @n[tag=AzrielMob_piranha,distance=..20] run function skyblock:azr/assets/mobs/piranha3
+
+
 execute if score stage_bonus_thread AzrTimerStack matches 85 positioned -79734 175 -855 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_melee","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_bonus_thread AzrTimerStack matches 86 positioned -79734 175 -855 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_melee","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_bonus_thread AzrTimerStack matches 87 positioned -79734 175 -855 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_melee","AzrielMob_summon_delay","AzrielMob_level_1"]}
