@@ -4,7 +4,7 @@ tag @e[tag=Azriel_Piranha_target,distance=..16,type=!salmon] remove Azriel_Piran
 execute as @n[distance=..14,type=!salmon,tag=AzrielMob,tag=!Azriel_Piranha_target,tag=!AzrielMob_nautilus] at @s if block ~ ~ ~ #skyblock:water run tag @s add Azriel_Piranha_target
 execute as @p[distance=..14,tag=!Azriel_Piranha_target] at @s if block ~ ~ ~ #skyblock:water run tag @s add Azriel_Piranha_target
 
-execute at @s[scores={AzrielMobLevel=1}] facing entity @n[tag=Azriel_Piranha_target] feet positioned ^ ^ ^0.5 if block ~ ~ ~ #skyblock:water at @s run tp @s ^ ^ ^0.017 facing entity @n[tag=Azriel_Piranha_target]
+execute at @s[scores={AzrielMobLevel=1}] facing entity @n[tag=Azriel_Piranha_target] feet positioned ^ ^ ^0.5 if block ~ ~ ~ #skyblock:water at @s run tp @s ^ ^ ^0.07 facing entity @n[tag=Azriel_Piranha_target]
 execute at @s[scores={AzrielMobLevel=2}] facing entity @n[tag=Azriel_Piranha_target] feet positioned ^ ^ ^0.5 if block ~ ~ ~ #skyblock:water at @s run tp @s ^ ^ ^0.04 facing entity @n[tag=Azriel_Piranha_target]
 execute at @s[scores={AzrielMobLevel=3..}] facing entity @n[tag=Azriel_Piranha_target] feet positioned ^ ^ ^0.5 if block ~ ~ ~ #skyblock:water at @s run tp @s ^ ^ ^0.01 facing entity @n[tag=Azriel_Piranha_target]
 
