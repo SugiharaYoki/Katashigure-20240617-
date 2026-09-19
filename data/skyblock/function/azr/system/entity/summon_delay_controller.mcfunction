@@ -35,6 +35,7 @@ execute if entity @s[tag=AzrielMob_summon_delay_marker_skeleton_bomb] run functi
 
 execute if entity @s[tag=AzrielMob_summon_delay_marker_zombie_villager_armor] run function skyblock:azr/assets/mobs/summon_delay/zombie_villager_armor
 execute if entity @s[tag=AzrielMob_summon_delay_marker_zombie_villager_cleric] run function skyblock:azr/assets/mobs/summon_delay/zombie_villager_cleric
+execute if entity @s[tag=AzrielMob_summon_delay_marker_zombie_villager_vine] run function skyblock:azr/assets/mobs/summon_delay/zombie_villager_vine
 
 execute if entity @s[tag=AzrielMob_summon_delay_marker_treasure_rabbit] run function skyblock:azr/assets/mobs/summon_delay/treasure_rabbit
 
