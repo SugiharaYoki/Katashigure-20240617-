@@ -1024,6 +1024,9 @@ setblock -79716 175 -855 waxed_exposed_copper_chest[facing=west]{Inventory:[]}
 item replace block -79716 175 -855 container.13 with emerald 1
 fill -79727 179 -848 -79724 175 -848 air
 
+setblock -79750 175 -829 waxed_exposed_copper_chest[facing=west]{Inventory:[]}
+item replace block -79750 175 -829 container.12 with coal 1
+item replace block -79750 175 -829 container.14 with emerald 2
 
 
 
