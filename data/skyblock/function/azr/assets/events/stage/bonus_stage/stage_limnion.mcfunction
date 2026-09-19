@@ -50,7 +50,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 112 positioned -79734 
 execute if score stage_bonus_thread AzrTimerStack matches 118 positioned -79734 175 -855 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_bomb","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_bonus_thread AzrTimerStack matches 128 positioned -79734 175 -855 as @n[tag=AzrielMob,distance=0..2] run tag @s add AzrielMob_BonusStageProgressTarge
 
-execute if score stage_bonus_thread AzrTimerStack matches 130..131 positioned -79734 175 -855 if entity @n[distance=..20,tag=AzrielMob_BonusStageProgressTarge] run scoreboard players set stage_bonus_thread AzrTimerStack 120
+execute if score stage_bonus_thread AzrTimerStack matches 130..131 positioned -79734 175 -855 if entity @n[distance=..20,tag=AzrielMob_BonusStageProgressTarge] run scoreboard players set stage_bonus_thread AzrTimerStack 130
 
 execute if score stage_bonus_thread AzrTimerStack matches 133 positioned -79734 175 -855 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_bomb","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_bonus_thread AzrTimerStack matches 136 positioned -79734 175 -855 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_vine","AzrielMob_summon_delay","AzrielMob_level_1"]}
