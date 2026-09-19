@@ -1,7 +1,7 @@
 scoreboard players add @s[tag=AzrMob_nautilus_havetarget] rng1 1
 
-execute if entity @s[tag=!AzrMob_nautilus_havetarget] at @n[type=item,distance=..8] if block ~ ~ ~ #skyblock:water run damage @s 0 generic by @p[tag=azrPlayer]
-execute if entity @s[tag=!AzrMob_nautilus_havetarget] at @n[type=item,distance=..8] if block ~ ~ ~ #skyblock:water run tag @s add AzrMob_nautilus_havetarget
+execute if entity @s[tag=!AzrMob_nautilus_havetarget] at @n[type=item,distance=..8] if entity @a[tag=azrPlayer,distance=..8] if block ~ ~ ~ #skyblock:water run damage @s 0 generic by @p[tag=azrPlayer]
+execute if entity @s[tag=!AzrMob_nautilus_havetarget] at @n[type=item,distance=..8] if entity @a[tag=azrPlayer,distance=..8] if block ~ ~ ~ #skyblock:water run tag @s add AzrMob_nautilus_havetarget
 
 execute at @s rotated as @s positioned ^ ^ ^1 as @n[type=item,distance=..1.5] at @s if block ~ ~ ~ #skyblock:water run particle white_smoke ~ ~ ~ 0.05 0.05 0.05 0.01 5
 execute at @s rotated as @s positioned ^ ^ ^1 as @n[type=item,distance=..1.5] at @s if block ~ ~ ~ #skyblock:water run playsound minecraft:entity.nautilus.eat ambient @a ~ ~ ~ 1 0.9
