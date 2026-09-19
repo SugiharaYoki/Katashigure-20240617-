@@ -10,8 +10,8 @@ execute positioned -79712 44 -386 as @n[tag=AzrielMarker_encounter,distance=0..0
 execute positioned -79710 14 -401 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,x=-79710,y=5,z=-401,dx=8,dy=20,dz=8] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79710 14 -401 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 199.. run function skyblock:azr/assets/events/stage/chapter_4/forest/conv_bonus_hoistway_exit
 
-execute positioned -79769 22 -445 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,x=-79769,y=22,z=-445,dx=8,dy=20,dz=10] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79769 22 -445 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 199.. run function skyblock:azr/assets/events/stage/chapter_4/forest/battle_shelter
+execute if score stage Azr_system matches ..58 positioned -79769 22 -445 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,x=-79769,y=22,z=-445,dx=8,dy=20,dz=10] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute if score stage Azr_system matches ..58 positioned -79769 22 -445 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 199.. run function skyblock:azr/assets/events/stage/chapter_4/forest/battle_shelter
 
 
 #商人 墨丘利
