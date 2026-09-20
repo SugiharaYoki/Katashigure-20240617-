@@ -12,7 +12,7 @@ execute if score @s AzrEntityTimer matches 80.. run scoreboard players add @s rn
 execute positioned -79732 186 -757 as @s store result score @s Health run data get entity @s Health
 execute positioned -79732 186 -757 store result bossbar azr:boss_hp_bar_slime value run scoreboard players get @s Health
 
-tp @s -79732 187 -756
+tp @s[tag=!azrmob_boss_slime_Moveable] -79732 187 -756
 
    
 
@@ -22,7 +22,7 @@ tp @s -79732 187 -756
     execute as @s at @s run scoreboard players add @s rng8 1
     execute as @s at @s if score @s[scores={Health=300..}] rng8 matches 1 store result score @s rng2 run random value 1..3
     
-    execute as @s at @s if score @s[scores={rng2=1..3}] rng8 matches 1..
+    execute as @s at @s if score @s[scores={rng2=1}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_slime/attack_summon_piranha
 
 
     execute as @s at @s if score @s rng8 matches 40..9999 run scoreboard players set @s rng2 0
