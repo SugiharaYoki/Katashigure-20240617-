@@ -31,10 +31,10 @@ tp @s -79732 187 -756
 
 execute if score @s rng11 matches 160 store result score @s rng12 run random value 1..18
 execute if score @s rng11 matches 160.. at @s run function skyblock:azr/assets/mobs/skill/boss_slime/attack_summon_slime
-execute if score @s rng11 matches 200.. store result score @s[scores={Health=300..}] rng11 run random value -30..10
-execute if score @s rng11 matches 200.. store result score @s[scores={Health=200..299}] rng11 run random value -20..25
-execute if score @s rng11 matches 200.. store result score @s[scores={Health=100..199}] rng11 run random value -10..40
-execute if score @s rng11 matches 200.. store result score @s[scores={Health=50..99}] rng11 run random value 5..60
+execute if score @s rng11 matches 200.. store result score @s[scores={Health=300..}] rng11 run random value -30..40
+execute if score @s rng11 matches 200.. store result score @s[scores={Health=200..299}] rng11 run random value -20..55
+execute if score @s rng11 matches 200.. store result score @s[scores={Health=100..199}] rng11 run random value -10..70
+execute if score @s rng11 matches 200.. store result score @s[scores={Health=50..99}] rng11 run random value 5..85
 execute if score @s rng11 matches 200.. store result score @s[scores={Health=0..49}] rng11 run random value 90..120
 
 execute as @n[type=slime,tag=!AzrielBossSlime_small_slime,distance=..12,tag=!AzrielBossSlime] run tag @s add AzrielBossSlime_small_slime
