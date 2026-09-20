@@ -6,6 +6,7 @@ execute if score @s rng1 matches ..3 run particle minecraft:effect{color:[0.64,0
 execute if score @s rng1 matches 4.. at @s as @a[tag=azrPlayer] unless items entity @s inventory.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run particle wax_on ~ ~0.3 ~ 3.1 0.2 3.1 0.2 4 normal @s
 execute if score @s rng1 matches 4.. at @s as @a[tag=azrPlayer] unless items entity @s inventory.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run particle minecraft:effect{color:[0.64,0.7,0.2]} ~ ~0.3 ~ 3.1 0.2 3.1 0.2 4 normal @s
 
+execute as @e[tag=AzrielMob_piranha,distance=..3,type=salmon] at @s run damage @s 3.5 generic
 execute as @e[tag=AzrielMob,distance=..3] at @s run damage @s 1 generic
 execute as @a[tag=azrPlayer,distance=..3] at @s unless items entity @s container.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run damage @s 1 generic
 

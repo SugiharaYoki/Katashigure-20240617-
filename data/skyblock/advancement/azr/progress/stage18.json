@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "神代茏渠：郁郁丛林的低语",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "我能够感受到自己在向上。只要一直往上，迟早会到达神庭。\n又或者说……既然生命树根系能够触及这里，就意味着这里早已是神庭范围之内？\n\n我大概能理解为什么默尔森说这里很危险。\n魔力归根究底主要分为“生灵”与“亡魂”两种，而生命的延续刚需“生灵”魔力。\n既然如此，此处浓度使我感到些许恶心的“生灵”魔力，又会如何改变在此处定居的生命？",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:jungle_leaves"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage17_boss4_2"
+}

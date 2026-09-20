@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "混溶释潮的水生灵核心 - 表水创生球体",
+            "color": "red",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "现在我需要找个人探讨“过度浓缩的生灵魔力”将会造就什么样的怪物。\n这个巨型沼泽球体令我回想起曾经的噬藓母虫。生灵魔力的溢出，将会对生存于此处的生命造成不可逆的改造。\n而当一个本身就对生灵魔力适应性极强的生物获取了严重过量的生灵魔力……\n它或许就能“撺掇”沙利叶的权能，并且创造“生灵”。\n\n当然，这只是我的个人推测。\n若果真如此，那一直都在汲取生灵魔力的我……又会成为什么？\n\n我为何在被逼至地下水路区域后依然勉强无恙？\n我难道并不与生灵魔力亲和吗？",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:slime_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage18"
+}
