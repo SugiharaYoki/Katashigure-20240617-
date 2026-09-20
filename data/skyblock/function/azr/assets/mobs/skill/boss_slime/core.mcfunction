@@ -38,7 +38,7 @@ execute if score @s rng11 matches 200.. store result score @s[scores={Health=50.
 execute if score @s rng11 matches 200.. store result score @s[scores={Health=0..49}] rng11 run random value 90..120
 
 execute as @n[type=slime,tag=!AzrielBossSlime_small_slime,distance=..12,tag=!AzrielBossSlime] run tag @s add AzrielBossSlime_small_slime
-execute as @n[type=slime,tag=AzrielBossSlime_small_slime,distance=..24,tag=!AzrielBossSlime] run function skyblock:azr/assets/mobs/skill/boss_slime/interaction_absorb_slime
+execute as @e[type=slime,tag=AzrielBossSlime_small_slime,distance=..24,tag=!AzrielBossSlime,limit=4,sort=nearest] run function skyblock:azr/assets/mobs/skill/boss_slime/interaction_absorb_slime
 
 
 #MARKER
