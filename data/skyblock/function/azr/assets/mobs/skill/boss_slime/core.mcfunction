@@ -9,7 +9,7 @@ execute if score @s AzrEntityTimer matches 80.. run scoreboard players add @s rn
 
 
 
-execute positioned -79732 186 -757 as @n[tag=AzrielBossSlime,type=slime,distance=..100] store result score @s Health run data get entity @s Health
+execute positioned -79732 186 -757 as @s store result score @s Health run data get entity @s Health
 execute positioned -79732 186 -757 store result bossbar azr:boss_hp_bar_slime value run scoreboard players get @s Health
 
 
@@ -29,7 +29,7 @@ execute positioned -79732 186 -757 store result bossbar azr:boss_hp_bar_slime va
 
 
 execute if score @s rng11 matches 160 store result score @s rng12 run random value 1..18
-execute if score @s rng11 matches 160.. run function skyblock:azr/assets/mobs/skill/boss_slime/attack_summon_slime
+execute if score @s rng11 matches 160.. at @s run function skyblock:azr/assets/mobs/skill/boss_slime/attack_summon_slime
 execute if score @s rng11 matches 200.. store result score @s[scores={Health=300..}] rng11 run random value -30..10
 execute if score @s rng11 matches 200.. store result score @s[scores={Health=200..299}] rng11 run random value -20..25
 execute if score @s rng11 matches 200.. store result score @s[scores={Health=100..199}] rng11 run random value -10..40
