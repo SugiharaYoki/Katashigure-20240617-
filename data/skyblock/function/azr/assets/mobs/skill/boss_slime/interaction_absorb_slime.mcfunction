@@ -34,6 +34,7 @@ execute if score @s rng13 matches 272 at @s positioned ~ ~0.1 ~ facing entity @n
 
 
 execute if score @s rng13 matches 272 run particle item_slime ~ ~0.1 ~ 0.2 0.2 0.2 0 12
+execute if score @s rng13 matches 272 run effect give @n[tag=AzrielBossSlime,type=slime,distance=..100] instant_health 1 1 true
 execute if score @s rng13 matches 272.. run kill @s
 
 
