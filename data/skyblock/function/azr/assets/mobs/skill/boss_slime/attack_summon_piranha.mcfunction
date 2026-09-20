@@ -1,7 +1,8 @@
 
 
+execute if score @s rng8 matches 1 store result score @s rng6 if entity @e[tag=AzrielMob_piranha,distance=..15]
 
-
+execute if score @s rng8 matches 5 if score @s rng6 matches 5.. run scoreboard players set @s rng8 9999
 
 execute if score @s rng8 matches 10 run tag @s add azrmob_boss_slime_Moveable
 execute if score @s rng8 matches 18 run playsound minecraft:entity.slime.jump hostile @a ~ ~ ~ 10 1.2

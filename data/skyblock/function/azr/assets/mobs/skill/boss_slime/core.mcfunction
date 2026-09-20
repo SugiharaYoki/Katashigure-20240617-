@@ -25,8 +25,8 @@ tp @s[tag=!azrmob_boss_slime_Moveable] -79732 187 -756
     execute as @s at @s if score @s[scores={rng2=1}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_slime/attack_summon_piranha
 
 
-    execute as @s at @s if score @s rng8 matches 40..9999 run scoreboard players set @s rng2 0
-    execute as @s at @s if score @s rng8 matches 40..9999 run scoreboard players set @s rng8 -1
+    execute as @s at @s if score @s rng8 matches 80..9999 run scoreboard players set @s rng2 0
+    execute as @s at @s if score @s rng8 matches 80..9999 run scoreboard players set @s rng8 -1
 
 
 execute if score @s rng11 matches 160 store result score @s rng12 run random value 1..18
