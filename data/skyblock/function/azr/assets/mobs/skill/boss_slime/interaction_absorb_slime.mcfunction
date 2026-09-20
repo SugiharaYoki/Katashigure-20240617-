@@ -22,13 +22,13 @@ execute if score @s rng13 matches 230 at @s positioned ~ ~0.1 ~ facing entity @n
 execute if score @s rng13 matches 230 at @s positioned ~ ~0.1 ~ facing entity @n[tag=AzrielBossSlime_small_slime,distance=..12.0] feet run particle end_rod ^ ^ ^12 0 0 0 0 1
 execute if score @s rng13 matches 230 at @s positioned ~ ~0.1 ~ facing entity @n[tag=AzrielBossSlime_small_slime,distance=..13.0] feet run particle end_rod ^ ^ ^13 0 0 0 0 1
 
-execute if score @s rng13 matches 230 at @s positioned ~ ~0.1 ~ facing entity @n[tag=AzrielBossSlime_small_slime,distance=..01.0] feet run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_wave","AzrielMob_mob_marker"]}
-execute if score @s rng13 matches 232 at @s positioned ~ ~0.1 ~ facing entity @n[tag=AzrielBossSlime_small_slime,distance=..03.0] feet run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_wave","AzrielMob_mob_marker"]}
-execute if score @s rng13 matches 234 at @s positioned ~ ~0.1 ~ facing entity @n[tag=AzrielBossSlime_small_slime,distance=..05.0] feet run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_wave","AzrielMob_mob_marker"]}
-execute if score @s rng13 matches 236 at @s positioned ~ ~0.1 ~ facing entity @n[tag=AzrielBossSlime_small_slime,distance=..07.0] feet run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_wave","AzrielMob_mob_marker"]}
-execute if score @s rng13 matches 238 at @s positioned ~ ~0.1 ~ facing entity @n[tag=AzrielBossSlime_small_slime,distance=..09.0] feet run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_wave","AzrielMob_mob_marker"]}
-execute if score @s rng13 matches 240 at @s positioned ~ ~0.1 ~ facing entity @n[tag=AzrielBossSlime_small_slime,distance=..11.0] feet run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_wave","AzrielMob_mob_marker"]}
-execute if score @s rng13 matches 242 at @s positioned ~ ~0.1 ~ facing entity @n[tag=AzrielBossSlime_small_slime,distance=..13.0] feet run summon marker ~ ~ ~ {Tags:["AzrielMob_trap_wave","AzrielMob_mob_marker"]}
+execute if score @s rng13 matches 230 at @s positioned ~ ~0.1 ~ facing entity @n[tag=AzrielBossSlime_small_slime,distance=..01.0] feet run summon marker ^ ^ ^01.0 {Tags:["AzrielMob_trap_wave","AzrielMob_mob_marker"]}
+execute if score @s rng13 matches 232 at @s positioned ~ ~0.1 ~ facing entity @n[tag=AzrielBossSlime_small_slime,distance=..03.0] feet run summon marker ^ ^ ^03.0 {Tags:["AzrielMob_trap_wave","AzrielMob_mob_marker"]}
+execute if score @s rng13 matches 234 at @s positioned ~ ~0.1 ~ facing entity @n[tag=AzrielBossSlime_small_slime,distance=..05.0] feet run summon marker ^ ^ ^05.0 {Tags:["AzrielMob_trap_wave","AzrielMob_mob_marker"]}
+execute if score @s rng13 matches 236 at @s positioned ~ ~0.1 ~ facing entity @n[tag=AzrielBossSlime_small_slime,distance=..07.0] feet run summon marker ^ ^ ^07.0 {Tags:["AzrielMob_trap_wave","AzrielMob_mob_marker"]}
+execute if score @s rng13 matches 238 at @s positioned ~ ~0.1 ~ facing entity @n[tag=AzrielBossSlime_small_slime,distance=..09.0] feet run summon marker ^ ^ ^09.0 {Tags:["AzrielMob_trap_wave","AzrielMob_mob_marker"]}
+execute if score @s rng13 matches 240 at @s positioned ~ ~0.1 ~ facing entity @n[tag=AzrielBossSlime_small_slime,distance=..11.0] feet run summon marker ^ ^ ^11.0 {Tags:["AzrielMob_trap_wave","AzrielMob_mob_marker"]}
+execute if score @s rng13 matches 242 at @s positioned ~ ~0.1 ~ facing entity @n[tag=AzrielBossSlime_small_slime,distance=..13.0] feet run summon marker ^ ^ ^13.0 {Tags:["AzrielMob_trap_wave","AzrielMob_mob_marker"]}
 
 
 
