@@ -23,10 +23,17 @@ tp @s[tag=!azrmob_boss_slime_Moveable] -79732 187 -756
     execute as @s at @s if score @s[scores={Health=300..}] rng8 matches 1 store result score @s rng2 run random value 1..3
     
     execute as @s at @s if score @s[scores={rng2=1}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_slime/attack_summon_piranha
+    execute as @s at @s if score @s[scores={rng2=2..3}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_slime/attack_water_wave
 
 
-    execute as @s at @s if score @s rng8 matches 80..9999 run scoreboard players set @s rng2 0
-    execute as @s at @s if score @s rng8 matches 80..9999 run scoreboard players set @s rng8 -1
+    execute as @s at @s if score @s[scores={Health=301..}] rng8 matches 110..9999 run scoreboard players set @s rng2 0
+    execute as @s at @s if score @s[scores={Health=301..}] rng8 matches 110..9999 run scoreboard players set @s rng8 -1
+    execute as @s at @s if score @s[scores={Health=200..300}] rng8 matches 100..9999 run scoreboard players set @s rng2 0
+    execute as @s at @s if score @s[scores={Health=200..300}] rng8 matches 100..9999 run scoreboard players set @s rng8 -1
+    execute as @s at @s if score @s[scores={Health=60..199}] rng8 matches 80..9999 run scoreboard players set @s rng2 0
+    execute as @s at @s if score @s[scores={Health=60..199}] rng8 matches 80..9999 run scoreboard players set @s rng8 -1
+    execute as @s at @s if score @s[scores={Health=..59}] rng8 matches 70..9999 run scoreboard players set @s rng2 0
+    execute as @s at @s if score @s[scores={Health=..59}] rng8 matches 70..9999 run scoreboard players set @s rng8 -1
 
 
 execute if score @s rng11 matches 160 store result score @s rng12 run random value 1..18
