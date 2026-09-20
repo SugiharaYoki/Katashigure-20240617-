@@ -15,5 +15,5 @@ execute unless entity @a[tag=azrPlayer,scores={Azr_skillPoints=..29}] run tp @a[
 
 execute as @a[tag=azrPlayer] run function skyblock:azr/system/player/updatespawnpoint_initialize {x:-79855,y:47,z-:109}
 
-
+execute unless entity @a[tag=azrPlayer,scores={Azr_skillPoints=..29}] as @a[tag=azrPlayer] run function skyblock:azr/system/player/updatespawnpoint_initialize {x:-79651,y:174,z:-768}
 
