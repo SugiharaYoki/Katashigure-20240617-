@@ -4,11 +4,15 @@
 
 
 execute if score @s rng8 matches 10 run tag @s add azrmob_boss_slime_Moveable
-execute if score @s rng8 matches 10 run playsound minecraft:entity.slime.jump hostile @a ~ ~ ~ 10 1.2
+execute if score @s rng8 matches 18 run playsound minecraft:entity.slime.jump hostile @a ~ ~ ~ 10 1.2
+execute if score @s rng8 matches 18 rotated ~ 0 positioned 0.0 0 0.0 run summon marker ^ ^0.8 ^ {Tags:["AzrielMob_boss_slime_move_marker"]}
+execute if score @s rng8 matches 18 rotated ~ 0 run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_boss_slime_move_marker] Pos
+execute if score @s rng8 matches 18 rotated ~ 0 run kill @e[type=marker,tag=AzrielMob_boss_slime_move_marker]
+execute if score @s rng8 matches 28 run tag @s remove azrmob_boss_slime_Moveable
+execute if score @s rng8 matches 30 run playsound entity.generic.splash hostile @a ~ ~ ~ 10 0.8
 execute if score @s rng8 matches 30 run playsound minecraft:entity.camel_husk.death hostile @a ~ ~ ~ 10 0.8
-execute if score @s rng8 matches 30 run tag @s remove azrmob_boss_slime_Moveable
 
-execute if score @s rng8 matches 30 run particle splash ~ 188 ~ 1.5 0 1.5 0 180
+execute if score @s rng8 matches 29 run particle splash ~ 188 ~ 1.5 0 1.5 0 180
 execute if score @s rng8 matches 30 run particle white_smoke ~ 188 ~ 1.3 0 1.3 0 40
 
 execute if score @s rng8 matches 30 run function skyblock:azr/assets/mobs/piranha3
