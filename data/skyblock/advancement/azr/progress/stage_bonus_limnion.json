@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "神代茏渠 - 过滤沉积池",
+            "color": "green",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "原先这里定是沉积了许多的有机物质。\n不然，无法解释在这么独立的一片池水中，为何能够存在水下生态系统。\n\n事实上，我该庆幸这里的绝大部分生物有自己的习性与脾气。\n这代表我不是一个人对抗全部的怪物。\n好好地利用地形，并且适当地脱离怪物与怪物间的纠纷——或许才是智慧之举。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:green_glazed_terracotta"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage18"
+}
