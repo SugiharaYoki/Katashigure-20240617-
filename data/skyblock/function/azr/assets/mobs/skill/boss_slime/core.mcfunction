@@ -5,6 +5,7 @@ execute if score @s AzrEntityTimer matches 80..1999 run scoreboard players add @
 execute if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:renegade music @s ~ ~ ~ 0.65
 execute if score @s rng9 matches 572.. run scoreboard players set @s rng9 0
 
+execute if score @s AzrEntityTimer matches 80.. run scoreboard players add @s rng11 1
 
 
 #EVENT
@@ -26,7 +27,7 @@ execute if score @s AzrEntityTimer matches 70 run attribute @n[tag=AzrielBossSli
 
 execute if score @s AzrEntityTimer matches 80 positioned -79576 5 -473 run bossbar add azr:boss_hp_bar_slime "混溶释潮的水生灵核心 - 表水创生球体"
 execute if score @s AzrEntityTimer matches 80 positioned -79576 5 -473 run bossbar set azr:boss_hp_bar_slime color red
-execute if score @s AzrEntityTimer matches 80 positioned -79576 5 -473 run bossbar set azr:boss_hp_bar_slime max 600
+execute if score @s AzrEntityTimer matches 80 positioned -79576 5 -473 run bossbar set azr:boss_hp_bar_slime max 400
 execute if score @s AzrEntityTimer matches 80 positioned -79576 5 -473 run bossbar set azr:boss_hp_bar_slime players @a[tag=azrShowDialog]
 
 execute positioned -79576 5 -473 as @n[tag=AzrielBossSlime,type=slime,distance=..100] store result score @s Health run data get entity @s Health
@@ -46,6 +47,15 @@ execute positioned -79576 5 -473 store result bossbar azr:boss_hp_bar_slime valu
 
     execute as @n[tag=AzrielBossSlime] at @s if score @s rng8 matches 40..9999 run scoreboard players set @s rng2 0
     execute as @n[tag=AzrielBossSlime] at @s if score @s rng8 matches 40..9999 run scoreboard players set @s rng8 -1
+
+
+execute if score @s rng11 matches 160 store result score @s rng12 run random value 1..18
+execute if score @s rng11 matches 160.. run function skyblock:azr/assets/mobs/skill/boss_slime/attack_summon_slime
+execute if score @s rng11 matches 200.. store result score @s[scores={Health=300..}] rng11 run random value -30..10
+execute if score @s rng11 matches 200.. store result score @s[scores={Health=200..299}] rng11 run random value -20..25
+execute if score @s rng11 matches 200.. store result score @s[scores={Health=100..199}] rng11 run random value -10..40
+execute if score @s rng11 matches 200.. store result score @s[scores={Health=50..99}] rng11 run random value 5..60
+execute if score @s rng11 matches 200.. store result score @s[scores={Health=0..49}] rng11 run random value 90..120
 
 
 

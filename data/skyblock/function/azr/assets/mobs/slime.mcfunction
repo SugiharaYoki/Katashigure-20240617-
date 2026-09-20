@@ -6,7 +6,7 @@ execute if score AzrielC_danger rng1 matches 6..9 run summon slime ~ ~ ~ {Persis
 execute if score AzrielC_danger rng1 matches 10..16 run summon slime ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielMob_typeLIFE","AzrielMob_slime","AzrielMob_level_3","AzrielMob_contactdmg_immune"],DeathLootTable:"skyblock:azr_new/slime_tier1",attributes:[{id:"max_health",base:16.0},{id:"armor",base:2.0},{base:0.27d,id:"movement_speed"},{id:"knockback_resistance",base:1.0}],Health:16.0f,CustomName:'沼泽球体'}
 execute if score AzrielC_danger rng1 matches 17..21 run summon slime ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielMob_typeLIFE","AzrielMob_slime","AzrielMob_level_4","AzrielMob_contactdmg_immune"],DeathLootTable:"skyblock:azr_new/slime_tier1",attributes:[{id:"max_health",base:20.0},{id:"armor",base:3.0},{base:0.29d,id:"movement_speed"},{id:"knockback_resistance",base:1.0}],Health:20.0f,CustomName:'沼泽球体'}
 execute if score AzrielC_danger rng1 matches 22.. run summon slime ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob","AzrielMob_typeLIFE","AzrielMob_slime","AzrielMob_level_5","AzrielMob_contactdmg_immune"],DeathLootTable:"skyblock:azr_new/slime_tier1",attributes:[{id:"max_health",base:24.0},{id:"armor",base:4.0},{base:0.32d,id:"movement_speed"},{id:"knockback_resistance",base:1.0}],Health:24.0f,CustomName:'沼泽球体'}
-particle trial_spawner_detection ~ ~0.4 ~ 0.25 0.4 0.25 0 10
+particle minecraft:item_slime ~ ~0.4 ~ 0.25 0.4 0.25 0 10
 
 execute as @n[tag=AzrielMob,tag=!AzrielMob_level_ed,tag=AzrielMob_level_1] at @s run scoreboard players set @s AzrielMobLevel 1
 execute as @n[tag=AzrielMob,tag=!AzrielMob_level_ed,tag=AzrielMob_level_2] at @s run scoreboard players set @s AzrielMobLevel 2
