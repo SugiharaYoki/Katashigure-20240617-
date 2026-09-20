@@ -4,6 +4,7 @@ execute if score @s rng8 matches 8 rotated as @s positioned ~ ~ ~ run function s
 execute if score @s rng8 matches 8 rotated as @s positioned ~ ~0.7 ~ run function skyblock:azr/assets/mobs/skill/boss_slime/particle_water_wave
 execute if score @s rng8 matches 8 rotated as @s positioned ~ ~1.4 ~ run function skyblock:azr/assets/mobs/skill/boss_slime/particle_water_wave
 
+execute if score @s rng8 matches 8 run data modify entity @s NoAI set value 1b
 
 execute if score @s rng8 matches 22 run playsound entity.breeze.shoot block @a ~ ~ ~ 2 1.3
 execute if score @s rng8 matches 22 run playsound entity.breeze.shoot block @a ~ ~ ~ 2 1.2
@@ -31,4 +32,5 @@ execute if score @s rng8 matches 50 rotated as @s positioned ~ ~1.3 ~ run functi
 execute if score @s rng8 matches 51 rotated as @s positioned ~ ~1.3 ~ run function skyblock:azr/assets/mobs/skill/boss_slime/particle_water_wave_explosion {l:8.2}
 execute if score @s rng8 matches 52 rotated as @s positioned ~ ~1.3 ~ run function skyblock:azr/assets/mobs/skill/boss_slime/particle_water_wave_explosion {l:9.0}
 
+execute if score @s rng8 matches 52 run data modify entity @s NoAI set value 0b
 
