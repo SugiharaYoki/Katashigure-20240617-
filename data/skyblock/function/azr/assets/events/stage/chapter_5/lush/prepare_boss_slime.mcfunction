@@ -22,7 +22,7 @@ execute if score @s rng1 matches 9 run particle minecraft:item_slime -79731.47 1
 execute if score @s rng1 matches 14 run particle minecraft:item_slime -79731.47 190.00 -755.50 2.3 1.8 2.3 0 60
 execute if score @s rng1 matches 6 run attribute @n[tag=AzrielBossSlime,type=slime,distance=..100] scale modifier add azriel_mob:boss_slime_initial_scale_1 0.4 add_value
 execute if score @s rng1 matches 9 run attribute @n[tag=AzrielBossSlime,type=slime,distance=..100] scale modifier add azriel_mob:boss_slime_initial_scale_2 0.5 add_value
-execute if score @s rng1 matches 14 run attribute @n[tag=AzrielBossSlime,type=slime,distance=..100] scale modifier add azriel_mob:boss_slime_initial_scale_3 0.74 add_value
+execute if score @s rng1 matches 14 run attribute @n[tag=AzrielBossSlime,type=slime,distance=..100] scale modifier add azriel_mob:boss_slime_initial_scale_3 0.75 add_value
 
 
 
