@@ -53,9 +53,9 @@ execute if score @s rng1 matches 2010 as @a[tag=azrPlayer] at @s run give @s gli
 
 execute if score @s rng1 matches ..1999 positioned -79732 186 -757 unless entity @a[tag=azrPlayer,distance=..50] run bossbar remove azr:boss_hp_bar_slime
 execute if score @s rng1 matches ..1999 positioned -79732 186 -757 unless entity @a[tag=azrPlayer,distance=..50] run tp @n[tag=AzrielBossSlime] ~ ~-200 ~
-execute if score @s rng1 matches ..1999 positioned -79732 186 -757 unless entity @a[tag=azrPlayer,distance=..50] run kill @n[tag=AzrielBossSlime]
-execute if score @s rng1 matches ..1999 positioned -79732 186 -757 unless entity @a[tag=azrPlayer,distance=..50] run kill @e[tag=AzrielMob_piranha,distance=..16]
-execute if score @s rng1 matches ..1999 positioned -79732 186 -757 unless entity @a[tag=azrPlayer,distance=..50] run kill @e[tag=AzrielMob_slime,distance=..16]
+execute if score @s rng1 matches ..1999 positioned -79732 186 -757 unless entity @a[tag=azrPlayer,distance=..50] as @n[tag=AzrielBossSlime] at @s run kill @s
+execute if score @s rng1 matches ..1999 positioned -79732 186 -757 unless entity @a[tag=azrPlayer,distance=..50] as @e[tag=AzrielMob_piranha,distance=..16] at @s run tp @s ~ ~-500 ~
+execute if score @s rng1 matches ..1999 positioned -79732 186 -757 unless entity @a[tag=azrPlayer,distance=..50] as @e[tag=AzrielMob_slime,distance=..16] at @s run tp @s ~ ~-500 ~
 execute if score @s rng1 matches ..1999 positioned -79732 186 -757 unless entity @a[tag=azrPlayer,distance=..50] run fill -79732 189 -772 -79731 193 -772 air
 execute if score @s rng1 matches ..1999 positioned -79732 186 -757 unless entity @a[tag=azrPlayer,distance=..50] run stopsound @a[tag=azrShowDialog] music minecraft:renegade
 execute if score @s rng1 matches ..1999 positioned -79732 186 -757 unless entity @a[tag=azrPlayer,distance=..50] run kill @s
