@@ -25,13 +25,13 @@ execute if score @s AzrEntityTimer matches 70 run attribute @n[tag=AzrielBossSli
 
 
 
-execute if score @s AzrEntityTimer matches 80 positioned -79576 5 -473 run bossbar add azr:boss_hp_bar_slime "混溶释潮的水生灵核心 - 表水创生球体"
-execute if score @s AzrEntityTimer matches 80 positioned -79576 5 -473 run bossbar set azr:boss_hp_bar_slime color red
-execute if score @s AzrEntityTimer matches 80 positioned -79576 5 -473 run bossbar set azr:boss_hp_bar_slime max 400
-execute if score @s AzrEntityTimer matches 80 positioned -79576 5 -473 run bossbar set azr:boss_hp_bar_slime players @a[tag=azrShowDialog]
+execute if score @s AzrEntityTimer matches 80 positioned -79732 186 -757 run bossbar add azr:boss_hp_bar_slime "混溶释潮的水生灵核心 - 表水创生球体"
+execute if score @s AzrEntityTimer matches 80 positioned -79732 186 -757 run bossbar set azr:boss_hp_bar_slime color red
+execute if score @s AzrEntityTimer matches 80 positioned -79732 186 -757 run bossbar set azr:boss_hp_bar_slime max 400
+execute if score @s AzrEntityTimer matches 80 positioned -79732 186 -757 run bossbar set azr:boss_hp_bar_slime players @a[tag=azrShowDialog]
 
-execute positioned -79576 5 -473 as @n[tag=AzrielBossSlime,type=slime,distance=..100] store result score @s Health run data get entity @s Health
-execute positioned -79576 5 -473 store result bossbar azr:boss_hp_bar_slime value run scoreboard players get @n[tag=AzrielBossSlime] Health
+execute positioned -79732 186 -757 as @n[tag=AzrielBossSlime,type=slime,distance=..100] store result score @s Health run data get entity @s Health
+execute positioned -79732 186 -757 store result bossbar azr:boss_hp_bar_slime value run scoreboard players get @n[tag=AzrielBossSlime] Health
 
 
 
@@ -84,9 +84,9 @@ execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run g
 
 #out
 
-execute if score @s AzrEntityTimer matches ..1999 positioned -79576 5 -473 unless entity @a[tag=azrPlayer,distance=..50] run bossbar remove azr:boss_hp_bar_slime
-execute if score @s AzrEntityTimer matches ..1999 positioned -79576 5 -473 unless entity @a[tag=azrPlayer,distance=..50] run tp @n[tag=AzrielBossSlime] ~ ~-200 ~
-execute if score @s AzrEntityTimer matches ..1999 positioned -79576 5 -473 unless entity @a[tag=azrPlayer,distance=..50] run kill @n[tag=AzrielBossSlime]
-execute if score @s AzrEntityTimer matches ..1999 positioned -79576 5 -473 unless entity @a[tag=azrPlayer,distance=..50] run fill -79732 189 -772 -79731 193 -772 air
-execute if score @s AzrEntityTimer matches ..1999 positioned -79576 5 -473 unless entity @a[tag=azrPlayer,distance=..50] run stopsound @a[tag=azrShowDialog] music minecraft:renegade
-execute if score @s AzrEntityTimer matches ..1999 positioned -79576 5 -473 unless entity @a[tag=azrPlayer,distance=..50] run kill @s
+execute if score @s AzrEntityTimer matches ..1999 positioned -79732 186 -757 unless entity @a[tag=azrPlayer,distance=..50] run bossbar remove azr:boss_hp_bar_slime
+execute if score @s AzrEntityTimer matches ..1999 positioned -79732 186 -757 unless entity @a[tag=azrPlayer,distance=..50] run tp @n[tag=AzrielBossSlime] ~ ~-200 ~
+execute if score @s AzrEntityTimer matches ..1999 positioned -79732 186 -757 unless entity @a[tag=azrPlayer,distance=..50] run kill @n[tag=AzrielBossSlime]
+execute if score @s AzrEntityTimer matches ..1999 positioned -79732 186 -757 unless entity @a[tag=azrPlayer,distance=..50] run fill -79732 189 -772 -79731 193 -772 air
+execute if score @s AzrEntityTimer matches ..1999 positioned -79732 186 -757 unless entity @a[tag=azrPlayer,distance=..50] run stopsound @a[tag=azrShowDialog] music minecraft:renegade
+execute if score @s AzrEntityTimer matches ..1999 positioned -79732 186 -757 unless entity @a[tag=azrPlayer,distance=..50] run kill @s
