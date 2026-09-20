@@ -13,11 +13,21 @@ execute if score @s AzrEntityTimer matches 1 positioned -79732 187 -757 run func
 execute if score @s AzrEntityTimer matches 1 positioned -79732 187 -757 run function skyblock:azr/assets/mobs/skill/boss_slime/summon
 execute if score @s AzrEntityTimer matches 1 run fill -79732 189 -772 -79731 193 -772 minecraft:red_stained_glass
 
+execute if score @s AzrEntityTimer matches 30 run playsound minecraft:entity.puffer_fish.blow_up hostile @a ~ ~ ~ 5 1.1
+execute if score @s AzrEntityTimer matches 48 run playsound minecraft:entity.puffer_fish.blow_up hostile @a ~ ~ ~ 5 0.9
+execute if score @s AzrEntityTimer matches 70 run playsound minecraft:entity.camel_husk.hurt hostile @a ~ ~ ~ 10 0.7
+execute if score @s AzrEntityTimer matches 70 run playsound minecraft:entity.slime.squish hostile @a ~ ~ ~ 10 0.7
+execute if score @s AzrEntityTimer matches 70 run particle minecraft:item_slime -79731.47 190.00 -755.50 2 1.5 2 0 50
+execute if score @s AzrEntityTimer matches 30 run attribute @n[tag=AzrielBossSlime,type=slime,distance=..100] scale modifier add azriel_mob:boss_slime_initial_scale 0.4 add_value
+execute if score @s AzrEntityTimer matches 48 run attribute @n[tag=AzrielBossSlime,type=slime,distance=..100] scale modifier add azriel_mob:boss_slime_initial_scale 0.35 add_value
+execute if score @s AzrEntityTimer matches 70 run attribute @n[tag=AzrielBossSlime,type=slime,distance=..100] scale modifier add azriel_mob:boss_slime_initial_scale 0.35 add_value
 
-execute if score @s AzrEntityTimer matches 1 positioned -79576 5 -473 run bossbar add azr:boss_hp_bar_slime "混溶释潮的水生灵核心 - 表水创生球体"
-execute if score @s AzrEntityTimer matches 1 positioned -79576 5 -473 run bossbar set azr:boss_hp_bar_slime color red
-execute if score @s AzrEntityTimer matches 1 positioned -79576 5 -473 run bossbar set azr:boss_hp_bar_slime max 600
-execute if score @s AzrEntityTimer matches 1 positioned -79576 5 -473 run bossbar set azr:boss_hp_bar_slime players @a[tag=azrShowDialog]
+
+
+execute if score @s AzrEntityTimer matches 80 positioned -79576 5 -473 run bossbar add azr:boss_hp_bar_slime "混溶释潮的水生灵核心 - 表水创生球体"
+execute if score @s AzrEntityTimer matches 80 positioned -79576 5 -473 run bossbar set azr:boss_hp_bar_slime color red
+execute if score @s AzrEntityTimer matches 80 positioned -79576 5 -473 run bossbar set azr:boss_hp_bar_slime max 600
+execute if score @s AzrEntityTimer matches 80 positioned -79576 5 -473 run bossbar set azr:boss_hp_bar_slime players @a[tag=azrShowDialog]
 
 execute positioned -79576 5 -473 as @n[tag=AzrielBossSlime,type=slime,distance=..100] store result score @s Health run data get entity @s Health
 execute positioned -79576 5 -473 store result bossbar azr:boss_hp_bar_slime value run scoreboard players get @n[tag=AzrielBossSlime] Health
