@@ -24,6 +24,11 @@ execute if score @s rng1 matches 427 positioned -79726 174 -799 run summon marke
 execute if score @s rng1 matches 441 positioned -79726 174 -798 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_bogged_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 441 positioned -79726 174 -799 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_bogged_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
+execute if score @s rng1 matches 441 positioned -79736 176 -790 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sentinel","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 441 positioned -79736 176 -790 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_fire","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+
+
 execute if score @s rng1 matches 441 positioned -79726 174 -799 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage18
 
 
