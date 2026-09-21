@@ -1033,6 +1033,7 @@ item replace block -79786 185 -808 container.14 with emerald 2
 
 #管道殿堂 快捷梯子
 fill -79761 190 -798 -79761 193 -798 air
+fill -79787 189 -799 -79787 191 -799 air
 
 
 #boss slime

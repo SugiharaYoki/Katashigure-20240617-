@@ -17,7 +17,7 @@ execute positioned -79776 194 -812 as @n[tag=AzrielMarker_encounter,distance=0..
 execute positioned -79787 189 -793 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..5] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79787 189 -793 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 100.. run function skyblock:azr/assets/events/stage/chapter_5/lush/conv_focalor/entering_pipe_pit
 
-
+execute positioned -79776 194 -797 as @n[tag=AzrielNPC_focalor,type=mannequin,distance=..200] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
 #boss slime
 execute positioned -79732 187 -756 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..8] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
