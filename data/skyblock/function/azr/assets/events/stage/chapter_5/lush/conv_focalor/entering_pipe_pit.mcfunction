@@ -4,6 +4,13 @@ execute if score @s rng1 matches 2 positioned -79763 194 -812 run playsound ambi
 execute if score @s rng1 matches 2 positioned -79763 194 -812 run playsound ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 10 0.66
 execute if score @s rng1 matches 2 positioned -79763 194 -812 run playsound ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 10 0.72
 
+execute if score @s rng1 matches 2 positioned -79777 189 -759 run function skyblock:azr/assets/mobs/spider_giant
+execute if score @s rng1 matches 2 positioned -79777 189 -759 run function skyblock:azr/assets/mobs/spider_mini
+execute if score @s rng1 matches 2 positioned -79777 189 -759 run function skyblock:azr/assets/mobs/spider_mini
+execute if score @s rng1 matches 2 positioned -79777 189 -759 run function skyblock:azr/assets/mobs/spider_mini
+execute if score @s rng1 matches 2 positioned -79777 189 -759 run function skyblock:azr/assets/mobs/spider_mini
+
+
 execute if score @s rng1 matches 2 positioned -79787 199 -777 run effect give @n[tag=AzrielMob,distance=..1] resistance 1 4 true
 execute if score @s rng1 matches 2 positioned -79787 199 -777 run function skyblock:azr/assets/mobs/shield_heavy
 execute if score @s rng1 matches 12 positioned -79787 199 -777 run effect give @n[tag=AzrielMob,distance=..1] resistance 1 4 true
