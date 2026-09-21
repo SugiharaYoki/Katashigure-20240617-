@@ -1,0 +1,4 @@
+summon minecraft:mannequin ~ ~ ~ {Tags:["AzrielMob","AzrielMob_typeLIFE","AzrielNPC_focalor","AzrielMob_level_ed"],profile:{id:[I;0,0,0,0],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGNiNjYxOTA5NTdiYzc2NGRkZWU3MTg0ZWIyNjliOTM4MGM1MmJlYWI1ZTEyNDQ3YTA5MWE5YTMzOGMwYTgyYyJ9fX0="}]},hide_description:true,CustomName:'？？？',NoGravity:1b,attributes:[{id:"attack_damage",base:10.0},{id:"max_health",base:800.0},{id:"follow_range",base:50},{id:"armor",base:30.0},{base:0.27d,id:"movement_speed"},{base:1.0d,id:"knockback_resistance"},{base:1.1d,id:"scale"}],Health:800.0f}
+
+
+effect give @s water_breathing infinite 0 true
