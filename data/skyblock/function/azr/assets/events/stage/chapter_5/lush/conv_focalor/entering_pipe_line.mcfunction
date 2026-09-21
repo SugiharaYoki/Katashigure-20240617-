@@ -15,7 +15,7 @@ execute if score @s rng1 matches 2 positioned -79755 194 -817 run summon marker 
 execute if score @s rng1 matches 2 positioned -79780 194 -798 run function skyblock:azr/assets/mobs/skeleton_sentinel
 
 
-execute if score @s rng1 matches 2 positioned -79755 194 -817 run tp @n[tag=AzrielNPC_focalor,type=mannequin,distance=..200] -79787 189 -762
+execute if score @s rng1 matches 2 positioned -79755 194 -817 run tp @n[tag=AzrielNPC_focalor,type=mannequin,distance=..200] -79787 189 -746
 
 
 execute if score @s rng1 matches 2 run fill -79761 190 -798 -79761 193 -798 ladder[facing=east]
