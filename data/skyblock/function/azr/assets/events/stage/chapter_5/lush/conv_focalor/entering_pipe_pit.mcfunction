@@ -20,5 +20,9 @@ execute if score @s rng1 matches 62 positioned -79787 199 -787 run function skyb
 execute if score @s rng1 matches 78 positioned -79787 199 -787 run effect give @n[tag=AzrielMob,distance=..1] resistance 1 4 true
 execute if score @s rng1 matches 78 positioned -79787 199 -787 run function skyblock:azr/assets/mobs/skeleton_sword
 
+execute if score @s rng1 matches 8 positioned -79787 199 -767 run effect give @n[tag=AzrielMob,distance=..1] resistance 1 4 true
+execute if score @s rng1 matches 8 positioned -79787 199 -767 run function skyblock:azr/assets/mobs/shield_heavy
+execute if score @s rng1 matches 85 positioned -79787 199 -767 run effect give @n[tag=AzrielMob,distance=..1] resistance 1 4 true
+execute if score @s rng1 matches 85 positioned -79787 199 -767 run function skyblock:azr/assets/mobs/zombie_villager_vine
 
 execute if score @s rng1 matches 10 run title @a[tag=azrShowDialog] actionbar {text:"我将会欢迎你的光顾……你将从我手中取走我的生命……",color:"aqua"}
