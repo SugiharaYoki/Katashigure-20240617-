@@ -1027,6 +1027,12 @@ fill -79727 179 -848 -79724 175 -848 air
 setblock -79750 175 -829 waxed_exposed_copper_chest[facing=west]{Inventory:[]}
 item replace block -79750 175 -829 container.12 with coal 1
 item replace block -79750 175 -829 container.14 with emerald 2
+setblock -79786 185 -808 waxed_exposed_copper_chest[facing=east]{Inventory:[]}
+item replace block -79786 185 -808 container.12 with resin_clump 1
+item replace block -79786 185 -808 container.14 with emerald 2
+
+
+
 
 #boss slime
 fill -79732 189 -772 -79731 193 -772 minecraft:air

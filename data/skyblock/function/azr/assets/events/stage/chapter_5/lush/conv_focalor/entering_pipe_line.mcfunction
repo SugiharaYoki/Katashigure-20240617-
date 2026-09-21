@@ -12,4 +12,4 @@ execute if score @s rng1 matches 2 positioned -79755 194 -817 run function skybl
 
 
 
-execute if score @s rng1 matches 10 run title @a[tag=azrShowDialog] actionbar {text:"结局对你该有数种，但你选择来到我的栖身之处……",color:"aqua"}
+execute if score @s rng1 matches 10 run title @a[tag=azrShowDialog] actionbar {text:"对你……结局该有数种，但你选择来到我的栖身之处……",color:"aqua"}
