@@ -25,4 +25,9 @@ execute if score @s rng1 matches 8 positioned -79787 199 -767 run function skybl
 execute if score @s rng1 matches 85 positioned -79787 199 -767 run effect give @n[tag=AzrielMob,distance=..1] resistance 1 4 true
 execute if score @s rng1 matches 85 positioned -79787 199 -767 run function skyblock:azr/assets/mobs/zombie_villager_vine
 
-execute if score @s rng1 matches 10 run title @a[tag=azrShowDialog] actionbar {text:"我将会欢迎你的光顾……你将从我手中取走我的生命……",color:"aqua"}
+execute if score @s rng1 matches 10 run title @a[tag=azrShowDialog] actionbar {text:"我将全心欢迎你的到来……你将亲手取走我的全部……",color:"aqua"}
+execute if score @s rng1 matches 50 run title @a[tag=azrShowDialog] actionbar {text:"因为此乃宿命，我本就不该存活……",color:"aqua"}
+execute if score @s rng1 matches 90 run title @a[tag=azrShowDialog] actionbar {text:"这千年来的历史，足够了……我已经帮助到千年的多少过客……",color:"aqua"}
+execute if score @s rng1 matches 140 run title @a[tag=azrShowDialog] actionbar {text:"找到我，爱理莎……找到我，取走属于我的……",color:"aqua"}
+
+
