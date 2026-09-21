@@ -5,10 +5,10 @@ execute if score @s rng1 matches 2 positioned -79763 194 -812 run playsound ambi
 execute if score @s rng1 matches 2 positioned -79763 194 -812 run playsound ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 10 0.72
 
 execute if score @s rng1 matches 2 positioned -79763 194 -800 run function skyblock:azr/assets/mobs/spider_giant
-execute if score @s rng1 matches 2 positioned -79767 194 -799 run function skyblock:azr/assets/mobs/smoke
-execute if score @s rng1 matches 2 positioned -79768 194 -799 run function skyblock:azr/assets/mobs/smoke
-execute if score @s rng1 matches 2 positioned -79755 194 -816 run function skyblock:azr/assets/mobs/smoke
-execute if score @s rng1 matches 2 positioned -79755 194 -817 run function skyblock:azr/assets/mobs/smoke
+execute if score @s rng1 matches 2 positioned -79767 194 -799 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_smoke","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 2 positioned -79768 194 -799 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_smoke","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 2 positioned -79755 194 -816 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_smoke","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 2 positioned -79755 194 -817 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_smoke","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
 
