@@ -67,6 +67,8 @@ execute if entity @s[x=-79900,y=40,z=0,distance=0..2200] if entity @a[tag=azrPla
 
 tag @s remove azrAmulet_StayFloat_Jumping
 
+scoreboard objectives add AzrielNotAwakened dummy
+execute if entity @s[tag=!AZR_SEAawakened] run scoreboard players add @s AzrielNotAwakened 1
 
 execute if entity @s[tag=azrRetrieved] unless items entity @s container.* *[custom_data~{revival_star:1b}] run tellraw @s [{text:" 警告：本次游戏并未保存存档。\n如果你看到这条消息，并确认你有携带命星，请联系管理员进行处理。",color:"dark_red",italic:0b}]
 execute if entity @s[tag=azrRetrieved] unless items entity @s container.* *[custom_data~{revival_star:1b}] run tag @s add azrRetrieved_withoutstar

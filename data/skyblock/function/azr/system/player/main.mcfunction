@@ -10,7 +10,7 @@ execute as @s[tag=!azrPlayer_respawnanchor_standingabove] at @s if items entity 
 execute as @s[tag=azrPlayer_respawnanchor_standingabove] at @s unless block ~ ~-0.5 ~ creaking_heart unless entity @n[tag=AzrielMob_utility_respawn_anchor,distance=..3.2] run tag @s remove azrPlayer_respawnanchor_standingabove
 
 # 商店系统
-execute as @s[tag=hasLifeVitae] at @s run function skyblock:azr/system/shop/core
+execute as @s[scores={Azr_skillPoints=1..}] at @s run function skyblock:azr/system/shop/core
 execute as @s[scores={Azr_Shop=84301..8439999}] run function skyblock:azr/system/shop/purchase
 execute as @s[scores={Azr_Shop=8900101..8900199}] run function skyblock:azr/system/player/skills/chainkill/assign
 execute as @s[scores={Azr_Shop=30001..39999}] run function skyblock:azr/system/conversation_list

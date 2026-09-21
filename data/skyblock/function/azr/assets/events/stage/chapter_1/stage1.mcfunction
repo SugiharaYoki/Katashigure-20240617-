@@ -46,10 +46,21 @@ execute if score stage_main_thread AzrTimerStack matches 72.. run fill -79934 41
 
 execute if score stage_main_thread AzrTimerStack matches 72.. run fill -79931 40 6 -79931 38 6 air destroy
 execute if score stage_main_thread AzrTimerStack matches 72.. run fill -79928 40 1 -79928 38 -1 air destroy
-execute if score stage_main_thread AzrTimerStack matches 72.. run tellraw @a[tag=azrShowDialog,tag=!hasLifeVitae] [{text:"成功通过了第1关的挑战！你已永久解锁「生命手册」。"},{text:"\n收集绿宝石与素材，使用手册换取必要的武器与道具。\n你可以打开背包用鼠标选定“生命手册”以开启商店，并使用聊天区域进行交互。"}]
-execute if score stage_main_thread AzrTimerStack matches 72.. run tag @a[tag=azrPlayer,tag=!hasLifeVitae] add hasLifeVitae
-execute if score stage_main_thread AzrTimerStack matches 72.. run tellraw @a[tag=azrShowDialog,tag=!hasLifeVitae] {text:""}
+execute if score stage_main_thread AzrTimerStack matches 72.. as @a[tag=azrPlatyer] at @s unless score @s Azr_skillPoints matches 1.. run tellraw @s [{text:"你已永久解锁「生命手册」与「节制天平」。\n记得收集绿宝石与素材，使用「生命手册」换取必要的武器与道具。\n消耗绿宝石在「节制天平」中解锁新的主/被动技能。\n\n打开背包用鼠标选定“生命手册”或“节制天平”以开启商店，并使用聊天区域进行交互。"}]
 execute if score stage_main_thread AzrTimerStack matches 72.. run scoreboard players set stage Azr_system 3
 execute if score stage_main_thread AzrTimerStack matches 72.. run scoreboard players reset tick_main_thread AzrTimerStack
 execute if score stage_main_thread AzrTimerStack matches 72.. run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage1
 execute if score stage_main_thread AzrTimerStack matches 72.. as @a[tag=azrPlayer] at @s unless score @s Azr_skillPoints matches 1.. run scoreboard players set @s Azr_skillPoints 1
+
+
+execute if score stage_main_thread AzrTimerStack matches 3 as @a[tag=azrPlayer,tag=!AZR_SEAawakened,scores={AzrielNotAwakened=1..3}] run effect give @s regeneration 120 0 true
+execute if score stage_main_thread AzrTimerStack matches 3 as @a[tag=azrPlayer,tag=!AZR_SEAawakened,scores={AzrielNotAwakened=2..4}] run effect give @s resistance 120 0 true
+execute if score stage_main_thread AzrTimerStack matches 3 as @a[tag=azrPlayer,tag=!AZR_SEAawakened,scores={AzrielNotAwakened=3..5}] run effect give @s strength 120 0 true
+execute if score stage_main_thread AzrTimerStack matches 3 as @a[tag=azrPlayer,tag=!AZR_SEAawakened,scores={AzrielNotAwakened=4..6}] run effect give @s regeneration 170 1 true
+execute if score stage_main_thread AzrTimerStack matches 3 as @a[tag=azrPlayer,tag=!AZR_SEAawakened,scores={AzrielNotAwakened=5..7}] run effect give @s resistance 170 1 true
+execute if score stage_main_thread AzrTimerStack matches 3 as @a[tag=azrPlayer,tag=!AZR_SEAawakened,scores={AzrielNotAwakened=6..8}] run effect give @s strength 170 1 true
+execute if score stage_main_thread AzrTimerStack matches 3 as @a[tag=azrPlayer,tag=!AZR_SEAawakened,scores={AzrielNotAwakened=7..}] run effect give @s regeneration 230 1 true
+execute if score stage_main_thread AzrTimerStack matches 3 as @a[tag=azrPlayer,tag=!AZR_SEAawakened,scores={AzrielNotAwakened=8..}] run effect give @s resistance 230 1 true
+execute if score stage_main_thread AzrTimerStack matches 3 as @a[tag=azrPlayer,tag=!AZR_SEAawakened,scores={AzrielNotAwakened=9..}] run effect give @s strength 230 1 true
+
+

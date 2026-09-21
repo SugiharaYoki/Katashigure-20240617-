@@ -791,7 +791,7 @@ execute positioned -79934 69 -563 as @e[type=marker,tag=magma_cube_block,tag=Azr
 setblock -79748 -13 -234 minecraft:waxed_copper_chest[facing=west]{Inventory:[]}
 item replace block -79748 -13 -234 container.13 with beef 2
 setblock -79751 -9 -217 minecraft:waxed_copper_chest[facing=south]{Inventory:[]}
-item replace block -79751 -9 -217 container.13 with coal 1
+item replace block -79751 -9 -217 container.13 with resin_clump 1
 
 #工厂
   #灯1
@@ -891,7 +891,7 @@ item replace block -79741 39 -363 container.12 with beef 2
 item replace block -79741 39 -363 container.14 with gold_nugget 2
 setblock -79797 28 -342 minecraft:waxed_copper_chest[facing=west]{Inventory:[]}
 item replace block -79797 28 -342 container.12 with gold_nugget 2
-item replace block -79797 28 -342 container.14 with gold_nugget 1
+item replace block -79797 28 -342 container.14 with resin_clump 1
 setblock -79745 43 -389 minecraft:waxed_copper_chest[facing=south]{Inventory:[]}
 item replace block -79745 43 -389 container.12 with gold_nugget 2
 item replace block -79745 43 -389 container.14 with skull_banner_pattern[custom_name={text:"“童谣一则”",color:"dark_purple",italic:0b},lore=[{text:"愿大地永远存在。",color:"white",italic:0b},{text:"愿火焰永远存在。",color:"white",italic:0b},{text:"愿王上的庇佑永远存在。",color:"white",italic:0b},{text:"愿黑色天使的光永远存在。",color:"white",italic:0b}]] 1
@@ -908,7 +908,7 @@ fill -79694 18 -356 -79702 18 -364 glass replace air
 
 setblock -79725 26 -428 minecraft:waxed_copper_chest[facing=east]{Inventory:[]}
 item replace block -79725 26 -428 container.12 with gold_nugget 2
-item replace block -79725 26 -428 container.14 with gold_nugget 1
+item replace block -79725 26 -428 container.14 with resin_clump 1
 
 #stage jahannam
 setblock -79663 33 -434 minecraft:decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 3, id:"minecraft:gold_nugget"}}
@@ -958,7 +958,7 @@ item replace block -79626 21 -415 container.11 with gold_nugget 3
 item replace block -79626 21 -415 container.13 with skull_banner_pattern[custom_name={text:"“神罚 这一切都是神罚 全部都是”",color:"dark_purple",italic:0b},lore=[{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"我们触怒了神庭 我们触怒了神庭",color:"white",italic:0b},{text:"现在轮到我们自取灭亡了",color:"white",italic:0b}]] 1
 
 setblock -79588 8 -427 waxed_copper_chest[facing=west]{Inventory:[]}
-item replace block -79588 8 -427 container.12 with gold_nugget 2
+item replace block -79588 8 -427 container.12 with resin_clump 1
 item replace block -79588 8 -427 container.14 with gold_nugget 2
 
 #百夫长·采掘队 boss legate
@@ -1018,7 +1018,7 @@ item replace block -79684 178 -782 container.12 with emerald 2
 item replace block -79684 178 -782 container.14 with emerald 2
 setblock -79691 175 -829 waxed_exposed_copper_chest[facing=south]{Inventory:[]}
 item replace block -79691 175 -829 container.12 with emerald 3
-item replace block -79691 175 -829 container.14 with emerald 3
+item replace block -79691 175 -829 container.14 with resin_clump 1
 
 setblock -79716 175 -855 waxed_exposed_copper_chest[facing=west]{Inventory:[]}
 item replace block -79716 175 -855 container.13 with emerald 1
