@@ -68,6 +68,11 @@ execute positioned -79687 178 -761 if score random_enemy_thread AzrTimerStack ma
 execute positioned -79729 189 -791 if score random_enemy_thread AzrTimerStack matches 2 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:32}
 execute positioned -79729 189 -791 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 2.. unless entity @a[tag=azrPlayer,distance=..14] if entity @a[tag=azrPlayer,distance=..32] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter5_lush
 
+execute positioned -79744 193 -808 if score random_enemy_thread AzrTimerStack matches 2 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:32}
+execute positioned -79744 193 -808 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 2.. unless entity @a[tag=azrPlayer,distance=..14] if entity @a[tag=azrPlayer,distance=..32] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter5_lush
+
+
+
 #食人鱼
 execute positioned -79695 171 -813 if score random_enemy_thread AzrTimerStack matches 2 if loaded ~ ~ ~ store result score random_enemy_count AzrTimerStack if entity @e[tag=AzrielMob,distance=..38,tag=AzrielMob_piranha]
 execute positioned -79695 171 -813 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 4.. if entity @a[tag=azrPlayer,distance=..28] unless entity @a[tag=azrPlayer,distance=..12] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/piranha
