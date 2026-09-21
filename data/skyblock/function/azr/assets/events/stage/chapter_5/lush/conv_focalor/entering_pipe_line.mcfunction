@@ -10,7 +10,7 @@ execute if score @s rng1 matches 2 positioned -79768 194 -799 run summon marker 
 execute if score @s rng1 matches 2 positioned -79755 194 -816 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_smoke","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 2 positioned -79755 194 -817 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_smoke","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
-execute if score @s rng1 matches 2 positioned -79755 194 -817 run tp @n[tag=AzrielNPC_focalor,type=mannequin,distance=..200] -79777 198 -798
+execute if score @s rng1 matches 2 positioned -79755 194 -817 run tp @n[tag=AzrielNPC_focalor,type=mannequin,distance=..200] -79787 189 -762
 
 
 execute if score @s rng1 matches 2 run fill -79761 190 -798 -79761 193 -798 ladder[facing=east]
