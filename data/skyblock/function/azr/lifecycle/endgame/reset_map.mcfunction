@@ -1035,6 +1035,11 @@ item replace block -79786 185 -808 container.14 with emerald 2
 fill -79761 190 -798 -79761 193 -798 air
 fill -79787 189 -799 -79787 191 -799 air
 
+setblock -79778 188 -778 waxed_exposed_copper_chest[facing=north]{Inventory:[]}
+item replace block -79778 188 -778 container.12 with emerald 2
+item replace block -79778 188 -778 container.14 with emerald 2
+
+
 
 #boss slime
 fill -79732 189 -772 -79731 193 -772 minecraft:air
