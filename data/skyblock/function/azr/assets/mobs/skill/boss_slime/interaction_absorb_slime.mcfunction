@@ -74,7 +74,7 @@ execute if score @s rng13 matches 212 at @s positioned ~ ~0.1 ~ facing entity @n
 
 execute if score @s rng13 matches 212 run particle item_slime ~ ~0.1 ~ 0.2 0.2 0.2 0 12
 execute if score @s rng13 matches 212 at @n[tag=AzrielBossSlime,type=slime,distance=..100] run playsound minecraft:entity.puffer_fish.blow_up hostile @a ~ ~ ~ 1.1 1.1
-execute if score @s rng13 matches 212 run effect give @n[tag=AzrielBossSlime,type=slime,distance=..100] instant_health 1 1 true
+execute if score @s rng13 matches 212 run effect give @n[tag=AzrielBossSlime,type=slime,distance=..100] instant_health 1 2 true
 execute if score @s rng13 matches 212.. run kill @s
 
 
