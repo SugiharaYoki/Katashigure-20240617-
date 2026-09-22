@@ -195,6 +195,33 @@ function skyblock:azr/system/shop/purchase/sariel/effect
 execute unless items entity @s container.* *[custom_data~{revival_star:1b}] run function skyblock:azr/assets/items/others/revival_star
 
 
+advancement grant @s[tag=AZS_BoS01] only skyblock:azr/progress/stage_bonus_appetence
+advancement grant @s[tag=AZS_BoS02] only skyblock:azr/progress/stage_bonus_breakout
+advancement grant @s[tag=AZS_BoS03] only skyblock:azr/progress/stage_bonus_cerement
+advancement grant @s[tag=AZS_BoS04] only skyblock:azr/progress/stage_bonus_diffident
+advancement grant @s[tag=AZS_BoS05] only skyblock:azr/progress/stage_bonus_entertain
+advancement grant @s[tag=AZS_BoS06] only skyblock:azr/progress/stage_bonus_flux
+advancement grant @s[tag=AZS_BoS07] only skyblock:azr/progress/stage_bonus_guise
+advancement grant @s[tag=AZS_BoS08] only skyblock:azr/progress/stage_bonus_hoistway
+advancement grant @s[tag=AZS_BoS09] only skyblock:azr/progress/stage_bonus_index
+advancement grant @s[tag=AZS_BoS10] only skyblock:azr/progress/stage_bonus_jahannam
+advancement grant @s[tag=AZS_BoS11] only skyblock:azr/progress/stage_bonus_kinetic
+advancement grant @s[tag=AZS_BoS12] only skyblock:azr/progress/stage_bonus_limnion
+#advancement grant @s[tag=AZS_BoS13] only 
+#advancement grant @s[tag=AZS_BoS14] only 
+advancement grant @s[tag=AZS_BoS15] only skyblock:azr/progress/stage_bonus_object
+#advancement grant @s[tag=AZS_BoS16] only 
+#advancement grant @s[tag=AZS_BoS17] only 
+#advancement grant @s[tag=AZS_BoS18] only 
+#advancement grant @s[tag=AZS_BoS19] only 
+#advancement grant @s[tag=AZS_BoS20] only 
+#advancement grant @s[tag=AZS_BoS21] only 
+advancement grant @s[tag=AZS_BoS22] only skyblock:azr/progress/stage_bonus_vestige
+#advancement grant @s[tag=AZS_BoS23] only 
+#advancement grant @s[tag=AZS_BoS24] only 
+#advancement grant @s[tag=AZS_BoS25] only 
+#advancement grant @s[tag=AZS_BoS26] only 
+
 
 execute unless score @s Azr_Login_Identifier >= #Server_Date Global_Age run function skyblock:azr/system/player/join_login_bonus
 
