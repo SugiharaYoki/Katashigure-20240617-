@@ -20,6 +20,7 @@ execute if score @s rng1 matches 20..42 positioned -79785.00 190.54 -730.50 posi
 
 execute if score @s rng1 matches 27 positioned -79785.00 190.54 -730.50 run playsound minecraft:block.heavy_core.place ambient @a ~ ~ ~ 5 0.7
 execute if score @s rng1 matches 30 positioned -79785.00 190.54 -730.50 run playsound minecraft:entity.minecart.inside block @a ~ ~ ~ 5 1.7
+execute if score @s rng1 matches 42 positioned -79785.00 190.54 -730.50 run playsound minecraft:entity.minecart.inside block @a ~ ~ ~ 3 0.7
 execute if score @s rng1 matches 30 positioned -79785.00 190.54 -730.50 run playsound ambient.soul_sand_valley.additions block @a ~ ~ ~ 8 1.3
 execute if score @s rng1 matches 30 positioned -79785.00 190.54 -730.50 run playsound ambient.soul_sand_valley.additions block @a ~ ~ ~ 8 1.3
 execute if score @s rng1 matches 30 positioned -79785.00 190.54 -730.50 run playsound ambient.soul_sand_valley.additions block @a ~ ~ ~ 8 1.3
