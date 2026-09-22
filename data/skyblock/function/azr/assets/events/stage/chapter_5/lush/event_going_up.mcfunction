@@ -36,12 +36,17 @@ execute if score @s rng1 matches 200 positioned -79722 171 -813 run function sky
 
 
 execute if score @s rng1 matches 200 positioned -79684 174 -806 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng1 matches 202 positioned -79684 174 -806 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 202 positioned -79684 174 -805 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 200 positioned -79670 174 -800 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_spider_giant","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 execute if score @s rng1 matches 213 positioned -79684 174 -791 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 210 positioned -79685 174 -791 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_fire","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 213 positioned -79686 174 -791 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+execute if score @s rng1 matches 213 positioned -79708 174 -800 run function skyblock:azr/assets/mobs/smoke
+execute if score @s rng1 matches 213 positioned -79707 174 -801 run function skyblock:azr/assets/mobs/smoke_mother
+
+
 
 execute if score @s rng1 matches 200 positioned -79684 178 -777 run function skyblock:azr/assets/mobs/husk
 execute if score @s rng1 matches 200 positioned -79683 178 -777 run function skyblock:azr/assets/mobs/zombie_villager_armor
