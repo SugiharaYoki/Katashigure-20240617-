@@ -36,7 +36,12 @@ execute if score @s rng1 matches 441 positioned -79726 174 -799 run advancement 
 
 
 
-
+#音效
+scoreboard players add @s rng12 1
+execute if score @s rng12 matches 30 positioned -79773 200 -791 run playsound ambient.soul_sand_valley.additions block @a ~ ~ ~ 6 1.3
+execute if score @s rng12 matches 30 positioned -79773 200 -791 run playsound ambient.soul_sand_valley.additions block @a ~ ~ ~ 6 1.3
+execute if score @s rng12 matches 30 positioned -79773 200 -791 run playsound ambient.soul_sand_valley.additions block @a ~ ~ ~ 6 1.3
+execute if score @s rng12 matches 100 store result score @s rng12 run random value -300..-200
 
 
 

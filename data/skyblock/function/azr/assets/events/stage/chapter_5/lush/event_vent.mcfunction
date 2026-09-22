@@ -97,3 +97,4 @@ execute if score @s rng2 matches 68.. run scoreboard players set @s rng2 0
 
 
 
+
