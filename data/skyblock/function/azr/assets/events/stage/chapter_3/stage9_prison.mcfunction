@@ -370,6 +370,6 @@ execute positioned -79897 48 -128 if score random_enemy_thread AzrTimerStack mat
 
 #灵魂碎片
 execute positioned -79965 51 -182 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=0..7,tag=azrPlayer,tag=!AZS_SoulFrag04] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79965 51 -182 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/effects/soul_fragment {id:"04",pos:"-79965 58.2 -197"}
+execute positioned -79965 51 -182 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/effects/soul_fragment {id:"04",pos:"-79965 58.2 -197",area:"prison"}
 
 

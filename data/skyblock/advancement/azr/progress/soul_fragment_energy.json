@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "灵魂碎片",
+            "color": "dark_purple",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "我不知道这些灵魂碎片究竟来源于何处。\n但它们能够与我相容。\n随着我获得更多灵魂碎片，我的索命连击也会变得更加致命。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:sculk_shrieker"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage_bonus_kinetic"
+}

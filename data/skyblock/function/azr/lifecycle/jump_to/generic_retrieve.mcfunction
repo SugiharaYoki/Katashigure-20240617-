@@ -194,6 +194,11 @@ function skyblock:azr/system/shop/purchase/sariel/effect
 
 execute unless items entity @s container.* *[custom_data~{revival_star:1b}] run function skyblock:azr/assets/items/others/revival_star
 
+advancement grant @s[tag=AZS_SoulFrag01] only skyblock:azr/progress/soul_fragment_moss
+advancement grant @s[tag=AZS_SoulFrag02] only skyblock:azr/progress/soul_fragment_energy
+advancement grant @s[tag=AZS_SoulFrag03] only skyblock:azr/progress/soul_fragment_library
+advancement grant @s[tag=AZS_SoulFrag04] only skyblock:azr/progress/soul_fragment_prison
+advancement grant @s[tag=AZS_SoulFrag05] only skyblock:azr/progress/soul_fragment_forest
 
 advancement grant @s[tag=AZS_BoS01] only skyblock:azr/progress/stage_bonus_appetence
 advancement grant @s[tag=AZS_BoS02] only skyblock:azr/progress/stage_bonus_breakout
