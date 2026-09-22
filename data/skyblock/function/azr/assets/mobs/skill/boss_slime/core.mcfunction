@@ -14,7 +14,8 @@ execute positioned -79732 186 -757 store result bossbar azr:boss_hp_bar_slime va
 
 tp @s[tag=!azrmob_boss_slime_Moveable] -79732 187 -756
 
-   
+execute as @n[type=arrow,distance=..20] at @s run particle white_smoke ~ ~ ~ 0 0 0 0.05 7
+execute as @n[type=arrow,distance=..20] at @s run kill @s
 
 #ACTION
 
