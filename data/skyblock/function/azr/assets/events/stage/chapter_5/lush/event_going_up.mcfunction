@@ -17,7 +17,7 @@ execute if score @s rng1 matches 47 positioned -79789 34 -193 run tp @n[tag=Azri
 
 
 execute if score @s rng1 matches 50..199 run scoreboard players set @s rng1 198
-execute if score @s rng1 matches ..199 positioned -79684 174 -806 if entity @a[tag=azrPlayer,distance=..7] run scoreboard players set @s rng1 200
+execute if score @s rng1 matches ..199 positioned -79684 174 -806 if entity @a[tag=azrPlayer,distance=..9] run scoreboard players set @s rng1 200
 
 execute if score @s rng1 matches 200 positioned -79685 171 -795 run scoreboard players set stage Azr_system 80
 execute if score @s rng1 matches 200 positioned -79685 171 -795 run function skyblock:azr/assets/mobs/piranha
