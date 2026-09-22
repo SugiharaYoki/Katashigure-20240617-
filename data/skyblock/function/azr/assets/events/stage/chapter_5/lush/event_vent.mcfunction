@@ -26,8 +26,7 @@ execute if score @s rng1 matches 30..42 positioned -79785.00 190.54 -730.50 posi
 
 execute if score @s rng1 matches 42 positioned -79785.00 190.54 -730.50 run playsound minecraft:entity.camel_husk.dash_ready ambient @a ~ ~ ~ 5 0.8
 
-
-
+execute if score @s rng1 matches 30..42 positioned -79785.00 190.54 -730.50 as @e[x=-79806,y=188,z=-732,dx=30,dy=3,dz=3] at @s run damage @s 8 in_fire
 
 
 
