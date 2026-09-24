@@ -6,6 +6,22 @@ execute if items entity @s weapon.mainhand #minecraft:hoes if entity @s[scores={
 execute if items entity @s weapon.mainhand #minecraft:hoes if entity @s[scores={AZR_chainKill_chargeup=100..}] run tag @s add AZR_Amulet_Instant_Success_Short
 
 
+execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Life] anchored eyes run particle flame ^ ^-0.5 ^2 0 0 0 0.0 1 normal @s
+execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Life] anchored eyes run particle flame ^ ^-0.5 ^2.3 0 0 0 0.0 1 normal @s
+execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Life] anchored eyes run particle flame ^ ^-0.5 ^2.6 0 0 0 0.0 1 normal @s
+execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Life] anchored eyes run particle flame ^ ^-0.5 ^2.9 0 0 0 0.0 1 normal @s
+execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Life] anchored eyes run particle flame ^ ^-0.5 ^3.1 0 0 0 0.0 1 normal @s
+execute if entity @s[tag=AZR_Amulet_Instant_Success_Far,tag=AzrSariel_Side_Life] anchored eyes run particle flame ^ ^-0.5 ^3.4 0 0 0 0.0 1 normal @s
+execute if entity @s[tag=AZR_Amulet_Instant_Success_Far,tag=AzrSariel_Side_Life] anchored eyes run particle flame ^ ^-0.5 ^3.7 0 0 0 0.0 1 normal @s
+execute if entity @s[tag=AZR_Amulet_Instant_Success_Far,tag=AzrSariel_Side_Life] anchored eyes run particle flame ^ ^-0.5 ^4.0 0 0 0 0.0 1 normal @s
+execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Death] anchored eyes run particle soul_fire_flame ^ ^-0.5 ^2 0 0 0 0.0 1 normal @s
+execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Death] anchored eyes run particle soul_fire_flame ^ ^-0.5 ^2.3 0 0 0 0.0 1 normal @s
+execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Death] anchored eyes run particle soul_fire_flame ^ ^-0.5 ^2.6 0 0 0 0.0 1 normal @s
+execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Death] anchored eyes run particle soul_fire_flame ^ ^-0.5 ^2.9 0 0 0 0.0 1 normal @s
+execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Death] anchored eyes run particle soul_fire_flame ^ ^-0.5 ^3.1 0 0 0 0.0 1 normal @s
+execute if entity @s[tag=AZR_Amulet_Instant_Success_Far,tag=AzrSariel_Side_Death] anchored eyes run particle soul_fire_flame ^ ^-0.5 ^3.4 0 0 0 0.0 1 normal @s
+execute if entity @s[tag=AZR_Amulet_Instant_Success_Far,tag=AzrSariel_Side_Death] anchored eyes run particle soul_fire_flame ^ ^-0.5 ^3.7 0 0 0 0.0 1 normal @s
+execute if entity @s[tag=AZR_Amulet_Instant_Success_Far,tag=AzrSariel_Side_Death] anchored eyes run particle soul_fire_flame ^ ^-0.5 ^4.0 0 0 0 0.0 1 normal @s
 
 execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Life] anchored eyes run particle flame ^ ^-0.5 ^2 0.2 0.2 0.2 0.1 3 normal @s
 execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Life] anchored eyes run particle flame ^ ^-0.5 ^3 0.2 0.2 0.2 0.1 3 normal @s
@@ -45,6 +61,7 @@ execute if entity @s[tag=AZR_Amulet_Instant_Success] as @e[tag=AZR_Amulet_Instan
 
 
 #execute if entity @s[tag=AZR_Amulet_Instant_Success] run scoreboard players set @s AzrSariel_Amulet_FireLit_cooldown 60
+execute if entity @s[tag=AZR_Amulet_Instant_Success] run playsound entity.blaze.shoot player @a ~ ~ ~ 0.8 1.3
 execute if entity @s[tag=AZR_Amulet_Instant_Success] run scoreboard players remove @s AZR_chainKill_chargeup 100
 execute if entity @s[tag=AZR_Amulet_Instant_Success_Far] run scoreboard players set @s azr_weapon_rightclick_cooldown 15
 execute if entity @s[tag=AZR_Amulet_Instant_Success_Short] run scoreboard players set @s azr_weapon_rightclick_cooldown 12
