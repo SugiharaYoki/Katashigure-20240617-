@@ -9,10 +9,18 @@ execute if score @s AzrEntityTimer matches 2 positioned -79786 189 -717 run func
 execute if score @s AzrEntityTimer matches 2 positioned -79786 189 -717 run function skyblock:azr/assets/mobs/skeleton_sword
 execute if score @s AzrEntityTimer matches 2 positioned -79786 189 -717 run function skyblock:azr/assets/mobs/skeleton_sword
 
+execute if score @s AzrEntityTimer matches 10..99 run scoreboard players set @s AzrEntityTimer 98
+execute if score @s AzrEntityTimer matches ..99 positioned -79786 192 -700 if entity @a[tag=azrPlayer,distance=..8] run scoreboard players set @s AzrEntityTimer 100
 
 
 
-
+execute if score @s AzrEntityTimer matches 100 positioned -79760 192 -709 run function skyblock:azr/assets/mobs/slime
+execute if score @s AzrEntityTimer matches 100 positioned -79765 192 -709 run function skyblock:azr/assets/mobs/slime
+execute if score @s AzrEntityTimer matches 100 positioned -79759 192 -710 run function skyblock:azr/assets/mobs/slime
+execute if score @s AzrEntityTimer matches 100 positioned -79759 192 -708 run function skyblock:azr/assets/mobs/slime
+execute if score @s AzrEntityTimer matches 100 positioned -79781 192 -700 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_bomb","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s AzrEntityTimer matches 102 positioned -79779 192 -700 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_bomb","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s AzrEntityTimer matches 104 positioned -79777 192 -700 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sentinel","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
 
