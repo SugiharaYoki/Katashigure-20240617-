@@ -23,7 +23,7 @@ execute positioned -79776 194 -797 as @n[tag=AzrielNPC_focalor,type=mannequin,di
 
 
 #通风管道
-execute positioned -79796 193 -731 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..15] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79796 193 -731 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..25] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79796 193 -731 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s if entity @a[tag=azrPlayer,distance=..70] run function skyblock:azr/assets/events/stage/chapter_5/lush/event_vent
 
 
