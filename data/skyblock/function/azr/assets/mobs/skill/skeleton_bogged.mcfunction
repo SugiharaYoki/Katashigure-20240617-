@@ -14,7 +14,9 @@ execute if entity @s[tag=azr_skeleton_general_heal] run scoreboard players add @
 execute if score @s rng3 matches 2 run playsound minecraft:entity.skeleton.converted_to_stray hostile @a ~ ~ ~ 0.8 0.7
 execute if score @s rng3 matches 2..57 run playsound minecraft:entity.bogged.step hostile @a ~ ~ ~ 0.5 1.9
 execute if score @s rng3 matches 2..57 run data modify entity @s NoAI set value 1b
-execute if score @s rng3 matches 2 run effect give @s resistance 3 0 false
+execute if score @s rng3 matches 2 run effect give @s[scores={AzrielMobLevel=1}] resistance 3 0 false
+execute if score @s rng3 matches 2 run effect give @s[scores={AzrielMobLevel=2..3}] resistance 3 1 false
+execute if score @s rng3 matches 2 run effect give @s[scores={AzrielMobLevel=4}] resistance 3 2 false
 execute if score @s rng3 matches 27 unless score @s rng4 matches 1.. run effect give @s instant_damage 2 0 false
 execute if score @s rng3 matches 37 unless score @s rng4 matches 2.. run effect give @s instant_damage 2 0 false
 execute if score @s rng3 matches 47 unless score @s rng4 matches 3.. run effect give @s instant_damage 2 0 false
