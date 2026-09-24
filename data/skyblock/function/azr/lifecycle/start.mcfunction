@@ -39,6 +39,11 @@ scoreboard objectives add azr_speedrun_door2 dummy
 scoreboard objectives add azr_speedrun_door3 dummy
 scoreboard objectives add azr_speedrun_door4 dummy
 scoreboard objectives add azr_speedrun_door5 dummy
+scoreboard objectives add azr_progress_door1 dummy
+scoreboard objectives add azr_progress_door2 dummy
+scoreboard objectives add azr_progress_door3 dummy
+scoreboard objectives add azr_progress_door4 dummy
+scoreboard objectives add azr_progress_door5 dummy
 
 #天平两侧
 scoreboard objectives add AzrSariel_Side_Life dummy

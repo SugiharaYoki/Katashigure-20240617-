@@ -130,6 +130,14 @@ execute if entity @a[tag=azrPlayer,tag=AZS_BoSB12] positioned -79991 -50 38 run 
 
 
 
+execute if entity @a[tag=azrPlayer,scores={azr_progress_door1=2..}] run setblock -79991 -51 26 gold_block
+execute if entity @a[tag=azrPlayer,scores={azr_progress_door1=3..}] run setblock -79991 -51 30 gold_block
+execute if entity @a[tag=azrPlayer,scores={azr_progress_door1=4..}] run setblock -79991 -51 28 gold_block
+execute if entity @a[tag=azrPlayer,scores={azr_progress_door1=5..}] run setblock -79984 -51 16 gold_block
+execute if entity @a[tag=azrPlayer,scores={azr_progress_door2=2..}] run setblock -79991 -51 36 gold_block
+execute if entity @a[tag=azrPlayer,scores={azr_progress_door2=3..}] run setblock -79984 -51 18 gold_block
+execute if entity @a[tag=azrPlayer,scores={azr_progress_door2=4..}] run setblock -79991 -51 32 gold_block
+execute if entity @a[tag=azrPlayer,scores={azr_progress_door2=5..}] run setblock -79984 -51 20 gold_block
 
 
 
