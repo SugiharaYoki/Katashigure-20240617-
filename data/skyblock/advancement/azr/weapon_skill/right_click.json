@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "right_click": {
+      "trigger": "minecraft:using_item"
+    }
+  },
+  "rewards": {
+    "function": "skyblock:azr/system/player/weapon_skill/right_click"
+  }
+}
