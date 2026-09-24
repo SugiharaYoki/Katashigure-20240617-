@@ -66,7 +66,7 @@ execute if score @s AZR_chainKill_chargeup matches 8500..8999 run xp set @s 83 p
 execute if score @s AZR_chainKill_chargeup matches 9000..9499 run xp set @s 99 points
 execute if score @s AZR_chainKill_chargeup matches 9500..9999 run xp set @s 104 points
 execute if score @s AZR_chainKill_chargeup matches 10000.. run xp set @s 111 points
-execute if score @s AZR_chainKill_chargeup matches 10000.. if entity @s[tag=!AZR_chainKill_activated] if entity @n[tag=AzrielMob,distance=0..9] run title @s actionbar {text:"- 长按右键触发 索命连击 -",color:"gold",bold:1b}
+execute if score @s AZR_chainKill_chargeup matches 9300.. if entity @s[tag=!AZR_chainKill_activated] if entity @n[tag=AzrielMob,distance=0..9] run title @s actionbar {text:"- 长按右键触发 索命连击 -",color:"gold",bold:1b}
 
 
 function skyblock:azr/system/player/weapons/shovel/main
