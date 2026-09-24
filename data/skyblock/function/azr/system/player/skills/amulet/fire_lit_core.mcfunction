@@ -50,8 +50,8 @@ scoreboard players set @s rng2 1
 execute if items entity @s container.* *[custom_data~{azr_amulet_burning_fire:1b}] run scoreboard players add @s rng2 1
 
 execute if entity @s[tag=AZR_Amulet_Instant_Success,scores={rng2=2..}] as @e[tag=AZR_Amulet_Instant_Target,tag=AzrielMob_typeMONSTER] at @s run damage @s 2.0 in_fire by @p[tag=AZR_Amulet_Instant_Success]
-execute if entity @s[tag=AZR_Amulet_Instant_Success,scores={rng2=1}] as @e[tag=AZR_Amulet_Instant_Target] at @s run damage @s 0.5 in_fire by @p[tag=AZR_Amulet_Instant_Success]
-execute if entity @s[tag=AZR_Amulet_Instant_Success,scores={rng2=2..}] as @e[tag=AZR_Amulet_Instant_Target] at @s run damage @s 1.0 in_fire by @p[tag=AZR_Amulet_Instant_Success]
+execute if entity @s[tag=AZR_Amulet_Instant_Success,scores={rng2=1}] as @e[tag=AZR_Amulet_Instant_Target] at @s run damage @s 1.0 in_fire by @p[tag=AZR_Amulet_Instant_Success]
+execute if entity @s[tag=AZR_Amulet_Instant_Success,scores={rng2=2..}] as @e[tag=AZR_Amulet_Instant_Target] at @s run damage @s 2.0 in_fire by @p[tag=AZR_Amulet_Instant_Success]
 
 execute if entity @s[tag=AZR_Amulet_Instant_Success] as @e[tag=AZR_Amulet_Instant_Target,limit=5] at @s run scoreboard players add @p[tag=AZR_Amulet_Instant_Success,distance=..13,tag=azrPlayer] AzrSariel_Amulet_FireLit_count 1
 execute if entity @s[tag=!AZR_Amulet_Instant_Success_Short] as @e[tag=AZR_Amulet_Instant_Target,limit=3] at @s run scoreboard players add @p[tag=AZR_Amulet_Instant_Success,distance=..13,tag=azrPlayer] AzrSariel_Amulet_FireLit_count 1
