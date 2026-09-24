@@ -138,7 +138,7 @@ execute if entity @s[tag=AZS_BoSShop07] run data modify entity @n[tag=AzrRamielE
 execute if entity @s[tag=AZS_BoSShop08] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop08] CustomName set value ' <> '
 
 
-execute if items entity @s container.* *[custom_data~{azr_amulet_hoe_assassinate:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkera] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_assassinate:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkera] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_flower_spike:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerb] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_greed_board:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerc] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_flower_wall:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerd] CustomName set value ' √ '
@@ -199,7 +199,7 @@ execute if entity @s[tag=AZS_BoS08] run data modify entity @n[tag=AzrRamielExSta
 
 
 tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
-{selector:"@n[tag=AzrRamielExStage_displaymarkera]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432301"},hover_event:{"action":"show_text","value":{text:"Appetence - 叛诛卷宗\n使用杖棍类武器攻击背对自己的怪物时造成大额伤害、增加手持杖棍类武器时的潜行速度",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkera]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432301"},hover_event:{"action":"show_text","value":{text:"Appetence - 叛诛卷宗\n攻击背对自己的怪物时造成大额伤害、增加手持杖棍类武器时的潜行速度",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerb]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432302"},hover_event:{"action":"show_text","value":{text:"Breakout - 枝棘石板\n受伤时造成范围伤害、受高额伤害时触发短时间减伤",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerc]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432303"},hover_event:{"action":"show_text","value":{text:"Cerement - 贪婪石板\n增加拾取范围",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerd]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432304"},hover_event:{"action":"show_text","value":{text:"Diffident - 花墙石板\n按前进键增加攻防",color:"white"}}},\

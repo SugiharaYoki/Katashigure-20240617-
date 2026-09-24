@@ -1,6 +1,6 @@
 
-$execute as @e[tag=!AZR_Amulet_Instant_Success_Mob_once,tag=AzrielMob,distance=..15,nbt={last_hurt_by_player:[I; $(hoe_assassinate_detect_uuid_1),$(hoe_assassinate_detect_uuid_2),$(hoe_assassinate_detect_uuid_3),$(hoe_assassinate_detect_uuid_4)]}] run tag @s add AZR_Amulet_Instant_Success_Mob
-$execute as @e[tag=!AZR_Amulet_Instant_Success_Mob_once,tag=AzrielMob,distance=..15,nbt={last_hurt_by_player:[I; $(hoe_assassinate_detect_uuid_1),$(hoe_assassinate_detect_uuid_2),$(hoe_assassinate_detect_uuid_3),$(hoe_assassinate_detect_uuid_4)]}] run tag @s add AZR_Amulet_Instant_Success_Mob_once
+$execute as @e[tag=!AZR_Amulet_Instant_Success_Mob_once,tag=AzrielMob,distance=..15,nbt={last_hurt_by_player:[I; $(assassinate_detect_uuid_1),$(assassinate_detect_uuid_2),$(assassinate_detect_uuid_3),$(assassinate_detect_uuid_4)]}] run tag @s add AZR_Amulet_Instant_Success_Mob
+$execute as @e[tag=!AZR_Amulet_Instant_Success_Mob_once,tag=AzrielMob,distance=..15,nbt={last_hurt_by_player:[I; $(assassinate_detect_uuid_1),$(assassinate_detect_uuid_2),$(assassinate_detect_uuid_3),$(assassinate_detect_uuid_4)]}] run tag @s add AZR_Amulet_Instant_Success_Mob_once
 
 
 execute as @e[tag=AZR_Amulet_Instant_Success_Mob,distance=..20] at @s rotated as @s positioned ^ ^ ^1 if entity @a[tag=AZR_Amulet_Instant_Success,distance=..1] run tag @s remove AZR_Amulet_Instant_Success_Mob_once
