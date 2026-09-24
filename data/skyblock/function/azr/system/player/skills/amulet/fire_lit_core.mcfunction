@@ -46,6 +46,8 @@ execute if entity @s[tag=AZR_Amulet_Instant_Success] as @e[tag=AZR_Amulet_Instan
 
 #execute if entity @s[tag=AZR_Amulet_Instant_Success] run scoreboard players set @s AzrSariel_Amulet_FireLit_cooldown 60
 execute if entity @s[tag=AZR_Amulet_Instant_Success] run scoreboard players remove @s AZR_chainKill_chargeup 100
+execute if entity @s[tag=AZR_Amulet_Instant_Success_Far] run scoreboard players set @s azr_weapon_rightclick_cooldown 15
+execute if entity @s[tag=AZR_Amulet_Instant_Success_Short] run scoreboard players set @s azr_weapon_rightclick_cooldown 12
 
 
 

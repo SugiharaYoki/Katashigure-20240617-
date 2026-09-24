@@ -116,3 +116,4 @@ execute if score @s AzrEvent_affected_quake_medium matches 1.. run function skyb
 scoreboard players reset @s AzrSariel_Amulet_generic_damage_dealt
 scoreboard players reset @s AzrSariel_Amulet_generic_use_bow
 
+scoreboard players remove @s azr_weapon_rightclick_cooldown 1
