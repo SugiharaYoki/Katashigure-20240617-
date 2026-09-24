@@ -194,5 +194,3 @@ setblock -79937 39 -12 air
 #NPC存放处
 forceload add -79906 63 -79945 102
 
-
-function skyblock:azr/lifecycle/jump_to/ch1_start_exclusive

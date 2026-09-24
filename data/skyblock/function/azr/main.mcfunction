@@ -5,7 +5,7 @@ execute unless score stage Azr_startCount matches 1.. run function skyblock:azr/
 
     #按钮处理
     #start button
-    execute if block -79937 39 -12 minecraft:birch_button[powered=true] run function skyblock:azr/lifecycle/start
+    execute if block -79937 39 -12 minecraft:birch_button[powered=true] run function skyblock:azr/lifecycle/jump_to/ch1_start_exclusive
 
 # --------------------- 游戏进行中 ----------------------------------
 # 玩家函数
