@@ -216,7 +216,7 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkern]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432314"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
 {text:"\n "},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkero]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432315"},hover_event:{"action":"show_text","value":{text:"Object - 攒善石板\n蹲下额外消耗2存箭量，射出三重箭、后撤步射出五重箭",color:"white"}}},\
-{selector:"@n[tag=AzrRamielExStage_displaymarkerp]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432316"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerp]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432316"},hover_event:{"action":"show_text","value":{text:"Photothermal - 淬势石板\n杖棍右键拖动热激光、加快索命连击充能",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerq]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432317"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerr]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432318"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkers]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432319"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\

@@ -31,3 +31,7 @@ execute as @s[scores={rng1=2}] positioned -79931 39 199 run function skyblock:az
 execute as @s[scores={rng1=2}] positioned -79943 45 204 run function skyblock:azr/assets/mobs/floating_fire
 execute as @s[scores={rng1=2}] positioned -79943 45 204 run function skyblock:azr/assets/mobs/skeleton_melee
 execute as @s[scores={rng1=2}] positioned -79943 45 204 run function skyblock:azr/assets/mobs/skeleton_melee
+
+execute as @s[scores={rng1=2}] positioned -79905 36 208 run function skyblock:azr/assets/mobs/utility_bat
+execute as @s[scores={rng1=2}] positioned -79905 36 212 run function skyblock:azr/assets/mobs/utility_bat
+
