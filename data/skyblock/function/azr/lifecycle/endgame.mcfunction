@@ -148,6 +148,7 @@ scoreboard objectives remove AzrSariel_Amulet_AxeVortexDodge_cooldown
 scoreboard objectives remove AzrSariel_Amulet_RevivalStar_teleport
 
 scoreboard objectives remove azr_weapon_rightclick_cooldown
+scoreboard objectives remove azr_weapon_rightclick_chainkill_load
 
 #特殊食物
 scoreboard objectives remove AzrSariel_Food_HardenedCookie

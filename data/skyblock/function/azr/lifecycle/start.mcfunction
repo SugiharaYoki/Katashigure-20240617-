@@ -135,6 +135,7 @@ scoreboard objectives add AZS_SoulFrag dummy
 scoreboard objectives add AzrSariel_Data_CostAmount dummy
 
 scoreboard objectives add azr_weapon_rightclick_cooldown dummy
+scoreboard objectives add azr_weapon_rightclick_chainkill_load dummy
 
 #护身符
 scoreboard objectives add AzrSariel_Amulet_generic_damage_dealt minecraft.custom:minecraft.damage_dealt

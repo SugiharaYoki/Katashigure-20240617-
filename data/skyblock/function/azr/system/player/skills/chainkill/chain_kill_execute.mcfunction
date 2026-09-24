@@ -41,5 +41,10 @@ execute if score #random Azr_system matches 9..13 run scoreboard players add @s[
 execute if score #random Azr_system matches 11..13 run scoreboard players add @s[tag=!AZR_chainKill_activated] AZR_chainKill_count 1
 execute if score #random Azr_system matches 13 run scoreboard players add @s[tag=!AZR_chainKill_activated] AZR_chainKill_count 1
 
+particle minecraft:warped_spore ~ ~ ~ 2 0 2 0 100
+playsound minecraft:block.beacon.activate player @a ~ ~ ~ 1 1.5
+playsound minecraft:block.respawn_anchor.deplete player @a ~ ~ ~ 1 1.3
+playsound minecraft:entity.camel_husk.death player @a ~ ~ ~ 1 0.8
+
 tag @s add AZR_chainKill_activated
 scoreboard players set @s AZR_chainKill_damage 0
