@@ -100,6 +100,8 @@ execute if entity @a[tag=azrPlayer,scores={Azr_skillPoints=5..}] positioned -799
 
 execute if entity @a[tag=azrPlayer,scores={Azr_skillPoints=9..}] positioned -79984 -51 16 run setblock ~ ~ ~ iron_block
 execute if entity @a[tag=azrPlayer,scores={Azr_skillPoints=9..}] positioned -79984 -50 16 run summon villager ~ ~ ~ {PersistenceRequired:1b,Invulnerable:1b,Tags:["AzrielDisplay_botanical_board"],DeathLootTable:"skyblock:null",Health:100.0f,CustomName:'马林努斯',attributes:[{id:"max_health",base:100.0d},{id:"movement_speed",base:0.0},{id:"armor",base:20.0d}],Rotation:[90.0f,0.0f],NoAI:1b,equipment:{mainhand:{},offhand:{}},drop_chances:{mainhand:0.0f,offhand:0.0f},VillagerData:{type:jungle,profession:"weaponsmith",level:5},Offers:{Recipes:[{buy:{id:emerald,count:1},sell:{id:emerald,count:1},rewardExp:0b,maxUses:1}]},Silent:1b}
+forceload add -79999 61
+execute if entity @a[tag=azrPlayer,scores={Azr_skillPoints=9..}] positioned -79984 -50 16 run item replace entity @n[tag=AzrielDisplay_botanical_board,distance=..2] armor.head from block -79999 12 61 container.0
 
 execute if entity @a[tag=azrPlayer,scores={Azr_skillPoints=14..}] positioned -79984 -51 18 run setblock ~ ~ ~ iron_block
 execute if entity @a[tag=azrPlayer,scores={Azr_skillPoints=14..}] positioned -79984 -48.5 18 run summon item_display ~ ~ ~ {PersistenceRequired:1b,Invulnerable:1b,Tags:["AzrielDisplay_botanical_board"],DeathLootTable:"skyblock:null",Health:100.0f,CustomName:'恣眼',attributes:[{id:"max_health",base:100.0d},{id:"movement_speed",base:0.0},{id:"armor",base:20.0d}],Rotation:[90.0f,0.0f],NoAI:1b,item:{id:"ender_eye"},billboard:center,transformation:{scale:[2.2f,2.2f,2.2f]},brightness:{sky:15,block:15},Silent:1b}
