@@ -38,6 +38,8 @@ execute positioned -79969 -52 -11 if entity @s[scores={Azr_skillPoints=14..}] un
     Azr_Shop matches 40013 positioned -80000 -39 -11 run tp @s ~ ~1 ~
 execute positioned -79969 -52 -11 if entity @s[scores={Azr_skillPoints=14..}] if entity @s[distance=..8] if score @s \
     Azr_Shop matches 40013 positioned -79969 -52 -11 run tp @s ~ ~1 ~
+execute positioned -79969 -52 -11 if entity @s[scores={Azr_skillPoints=14..}] if score @s \
+    Azr_Shop matches 40013 positioned -79969 -52 -11 run function skyblock:azr/assets/events/stage/chapter_1/botanical/display_area_summon
 
 execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_westcourt_a] if score @s \
     Azr_Shop matches 40001 positioned -79943 37 -8 run tp @s ~ ~1 ~
