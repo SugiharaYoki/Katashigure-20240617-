@@ -122,10 +122,6 @@ tag @s remove AZS_SoulFrag_Redeem
 #scoreboard players operation @s AzrielTagTemp3 = @s AzrielTagTemp2
 #scoreboard players operation @s AzrielTagTemp3 %= @s AzrielTag10
 #execute if score @s AzrielTagTemp3 matches 1 run tag @s add AZS_BoS10
-#execute if entity @s[tag=AZS_BoS02] run fill -79949 41 54 -79949 38 57 minecraft:air
-#execute if entity @s[tag=AZS_BoS01] run setblock -79915 39 34 minecraft:air
-#execute if entity @s[tag=AZS_BoS01] run setblock -79915 38 34 minecraft:air
-#execute if entity @s[tag=AZS_BoS01] run setblock -79915 40 34 minecraft:air
 #scoreboard players reset @s AzrielTagTemp1
 #scoreboard players reset @s AzrielTagTemp2
 #scoreboard players reset @s AzrielTagTemp3

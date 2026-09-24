@@ -230,15 +230,6 @@ fill -79948 36 45 -79950 38 45 minecraft:purple_stained_glass
 
 #Stage Cerement
 setblock -79939 39 58 chest[facing=north]{Inventory:[]}
-fill -79949 41 54 -79949 38 57 minecraft:purple_stained_glass{name: "to Password Panel"}
-fill -79950 38 59 -79951 38 59 chest[facing=north]{Inventory:[]}
-item replace block -79950 38 59 container.11 with minecraft:emerald 3
-item replace block -79950 38 59 container.13 with minecraft:emerald 3
-item replace block -79950 38 59 container.15 with minecraft:emerald 3
-item replace block -79951 38 59 container.11 with minecraft:emerald 3
-item replace block -79951 38 59 container.13 with minecraft:emerald 3
-item replace block -79951 38 59 container.15 with minecraft:emerald 3
-fill -79950 38 58 -79951 39 58 quartz_block
 item replace block -79939 39 58 container.13 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
 
 setblock -79949 39 61 minecraft:white_stained_glass

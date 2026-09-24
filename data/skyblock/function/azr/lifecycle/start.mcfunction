@@ -190,7 +190,9 @@ execute as @a[x=-79936.0,y=38.15,z=-14.0,distance=10..1000] run tp @s -79936.0 3
 #开局大门
 fill -79933 38 -15 -79933 40 -14 minecraft:air destroy
 setblock -79937 39 -12 air
-#execute if entity @a[tag=azrPlayer,tag=AZS_BoS02] run fill -79949 41 54 -79949 38 57 minecraft:air
 
 #NPC存放处
 forceload add -79906 63 -79945 102
+
+
+function skyblock:azr/lifecycle/jump_to/ch1_start_exclusive
