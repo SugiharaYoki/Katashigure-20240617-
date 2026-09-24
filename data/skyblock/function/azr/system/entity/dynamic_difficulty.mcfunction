@@ -21,6 +21,14 @@ execute if score stage Azr_system matches 100.. run scoreboard players add Azrie
 execute if score stage Azr_system matches 110.. run scoreboard players add AzrielC_danger rng1 1
 execute if score stage Azr_system matches 120.. run scoreboard players add AzrielC_danger rng1 1
 
+execute if entity @a[scores={Azr_skillPoints=5..}] run scoreboard players add AzrielC_danger rng1 1
+execute if entity @a[scores={Azr_skillPoints=10..}] run scoreboard players add AzrielC_danger rng1 1
+execute if entity @a[scores={Azr_skillPoints=15..}] run scoreboard players add AzrielC_danger rng1 1
+execute if entity @a[scores={Azr_skillPoints=20..}] run scoreboard players add AzrielC_danger rng1 1
+execute if entity @a[scores={Azr_skillPoints=25..}] run scoreboard players add AzrielC_danger rng1 1
+execute if entity @a[scores={Azr_skillPoints=30..}] run scoreboard players add AzrielC_danger rng1 1
+execute if entity @a[scores={Azr_skillPoints=35..}] run scoreboard players add AzrielC_danger rng1 1
+execute if entity @a[scores={Azr_skillPoints=40..}] run scoreboard players add AzrielC_danger rng1 1
 
 execute if score stage_bonus Azr_system matches 1.. run scoreboard players add AzrielC_danger rng1 1
 
