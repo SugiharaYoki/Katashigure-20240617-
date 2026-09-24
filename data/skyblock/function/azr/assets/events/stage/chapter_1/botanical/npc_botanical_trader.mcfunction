@@ -51,9 +51,9 @@ execute if score @s AzrielNPC_ConversationTimer matches 3006 unless score azr_bo
 execute if score @s AzrielNPC_ConversationTimer matches 3006 unless score azr_botanical_shop Azr_Shop_rng3 matches -999.. store result score azr_botanical_shop Azr_Shop_rng3 run random value 7..12
 execute if score @s AzrielNPC_ConversationTimer matches 3006 unless score azr_botanical_shop dailydiv < #Server_Date Global_Age run scoreboard players operation azr_botanical_shop dailydiv = #Server_Date Global_Age
 execute if score @s AzrielNPC_ConversationTimer matches 3006 as @a[distance=0..13,tag=azrPlayer] run function skyblock:azr/system/shop/count
-execute if score @s AzrielNPC_ConversationTimer matches 3006 at @s run function skyblock:azr/assets/events/stage/chapter_1/npc_botanical_trader_list {number:1}
-execute if score @s AzrielNPC_ConversationTimer matches 3006 at @s run function skyblock:azr/assets/events/stage/chapter_1/npc_botanical_trader_list {number:2}
-execute if score @s AzrielNPC_ConversationTimer matches 3006 at @s run function skyblock:azr/assets/events/stage/chapter_1/npc_botanical_trader_list {number:3}
+execute if score @s AzrielNPC_ConversationTimer matches 3006 at @s run function skyblock:azr/assets/events/stage/chapter_1/botanical/npc_botanical_trader_list {number:1}
+execute if score @s AzrielNPC_ConversationTimer matches 3006 at @s run function skyblock:azr/assets/events/stage/chapter_1/botanical/npc_botanical_trader_list {number:2}
+execute if score @s AzrielNPC_ConversationTimer matches 3006 at @s run function skyblock:azr/assets/events/stage/chapter_1/botanical/npc_botanical_trader_list {number:3}
 execute if score @s AzrielNPC_ConversationTimer matches 3006 as @a[distance=0..13,tag=azrPlayer,tag=!AZS_BoSShop09] at @s run tellraw @s \
      [{text:" - "},{text:"光明天使的符文 II  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/50 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431570"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n同时具有迫坠石板、退避石板、冲刺石板、枢纽石板、斥跃石板的效果",color:"white"}}}]
 
