@@ -1143,3 +1143,11 @@ tellraw @a[tag=!Gaming] [{text:"『亚兹列尔的中庭花园』",color: "light
 
 scoreboard players set stage_main_thread AzrTimerStack 0
 scoreboard players set stage Azr_system 0
+
+
+
+forceload add -79776 -2081
+execute positioned -79776 104 -2081 run kill @e[distance=..50]
+execute positioned -79776 104 -2081 run kill @e[distance=..50,type=item]
+execute positioned -79776 104 -2081 run kill @e[distance=..50,type=marker]
+forceload remove -79776 -2081
