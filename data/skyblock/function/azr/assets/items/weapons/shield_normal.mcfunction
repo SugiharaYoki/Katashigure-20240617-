@@ -1,1 +1,1 @@
-give @s shield[custom_data={shield_normal:1b},custom_model_data={floats:[100001.0]}]
+give @s shield[custom_data={shield_normal:1b,azr_equipment_shield:1b},custom_model_data={floats:[100001.0]},minecraft:consumable={consume_seconds:1000000.0f,animation:"none",has_consume_particles:false}]
