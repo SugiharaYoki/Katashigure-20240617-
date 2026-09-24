@@ -1,0 +1,18 @@
+
+execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_lit:1b}] run function skyblock:azr/system/player/skills/amulet/fire_lit_core
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,12 +1,10 @@
-scoreboard players remove @s AzrSariel_Amulet_FireLit_cooldown 1
+#scoreboard players remove @s AzrSariel_Amulet_FireLit_cooldown 1
 
-execute if items entity @s weapon.mainhand #minecraft:swords if score @s[scores={AzrSariel_Amulet_FireLit_cooldown=..0}] AzrSariel_Amulet_generic_damage_dealt matches 1.. run tag @s add AZR_Amulet_Instant_Success
-execute if items entity @s weapon.mainhand #minecraft:swords if score @s[scores={AzrSariel_Amulet_FireLit_cooldown=..0}] AzrSariel_Amulet_generic_damage_dealt matches 1.. run tag @s add AZR_Amulet_Instant_Success_Far
-execute if items entity @s weapon.mainhand #minecraft:hoes if score @s[scores={AzrSariel_Amulet_FireLit_cooldown=..0}] AzrSariel_Amulet_generic_damage_dealt matches 1.. run tag @s add AZR_Amulet_Instant_Success
-execute if items entity @s weapon.mainhand #minecraft:hoes if score @s[scores={AzrSariel_Amulet_FireLit_cooldown=..0}] AzrSariel_Amulet_generic_damage_dealt matches 1.. run tag @s add AZR_Amulet_Instant_Success_Short
+execute if items entity @s weapon.mainhand #minecraft:swords if entity @s[scores={AZR_chainKill_chargeup=100..}] run tag @s add AZR_Amulet_Instant_Success
+execute if items entity @s weapon.mainhand #minecraft:swords if entity @s[scores={AZR_chainKill_chargeup=100..}] run tag @s add AZR_Amulet_Instant_Success_Far
+execute if items entity @s weapon.mainhand #minecraft:hoes if entity @s[scores={AZR_chainKill_chargeup=100..}] run tag @s add AZR_Amulet_Instant_Success
+execute if items entity @s weapon.mainhand #minecraft:hoes if entity @s[scores={AZR_chainKill_chargeup=100..}] run tag @s add AZR_Amulet_Instant_Success_Short
 
-execute if items entity @s[tag=AzrSariel_Side_Life] weapon.mainhand #minecraft:swords if entity @s[scores={AzrSariel_Amulet_FireLit_cooldown=..0}] anchored eyes run particle minecraft:flame ^-0.3 ^-0.2 ^0.5 0 0 0 0 1
-execute if items entity @s[tag=AzrSariel_Side_Death] weapon.mainhand #minecraft:swords if entity @s[scores={AzrSariel_Amulet_FireLit_cooldown=..0}] anchored eyes run particle minecraft:soul_fire_flame ^-0.3 ^-0.2 ^0.5 0 0 0 0 1
 
 
 execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AzrSariel_Side_Life] anchored eyes run particle flame ^ ^-0.5 ^2 0.2 0.2 0.2 0.1 3 normal @s
@@ -46,7 +44,8 @@ execute if entity @s[tag=AZR_Amulet_Instant_Success] as @e[tag=AZR_Amulet_Instan
 execute if entity @s[tag=AZR_Amulet_Instant_Success] as @e[tag=AZR_Amulet_Instant_Target] at @s run tag @s remove AZR_Amulet_Instant_Target
 
 
-execute if entity @s[tag=AZR_Amulet_Instant_Success] run scoreboard players set @s AzrSariel_Amulet_FireLit_cooldown 60
+#execute if entity @s[tag=AZR_Amulet_Instant_Success] run scoreboard players set @s AzrSariel_Amulet_FireLit_cooldown 60
+execute if entity @s[tag=AZR_Amulet_Instant_Success] run scoreboard players remove @s AZR_chainKill_chargeup 100
 
 
 
