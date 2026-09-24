@@ -118,4 +118,4 @@ scoreboard players reset @s AzrSariel_Amulet_generic_use_bow
 
 
 scoreboard players remove @s azr_weapon_rightclick_cooldown 1
-scoreboard players remove @s azr_weapon_rightclick_chainkill_load 1
+scoreboard players remove @s[scores={azr_weapon_rightclick_chainkill_load=-1..}] azr_weapon_rightclick_chainkill_load 1
