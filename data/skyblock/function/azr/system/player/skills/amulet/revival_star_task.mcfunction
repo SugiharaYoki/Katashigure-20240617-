@@ -61,7 +61,7 @@ execute if score stage Azr_system matches 63 run tellraw @s [{text:"“这会是
 execute if score stage Azr_system matches 69 run tellraw @s [{text:"“我坠落地狱后来到的第一处地点，距离车间博物馆的最下层很近。\n那里本身就通往神庭，我能从那里回去并不奇怪。\n默尔森和马林努斯会在那里接应我。”",color:"#c5c5c5",bold:false}]
 execute if score stage Azr_system matches 77 run tellraw @s [{text:"“我发现了生命树根系，但这并不代表我已经到达了目的地。”",color:"#c5c5c5",bold:false}]
 execute if score stage Azr_system matches 80 run tellraw @s [{text:"“这片丛林相当古怪。\n在没有阳光的此处，怎么可能生长出如此大片的茂盛丛林？”",color:"#c5c5c5",bold:false}]
-execute if score stage Azr_system matches 81..83 run tellraw @s [{text:"“既然四周没有路，那最可能是路的只有可能是正上方——那些损毁的管道。”",color:"#c5c5c5",bold:false}]
+execute if score stage Azr_system matches 81..83 run tellraw @s [{text:"“既然四周没有路，那最可能是路的便是我的正上方——那些损毁的管道。”",color:"#c5c5c5",bold:false}]
 #第四章
 
 execute if score stage Azr_system matches 14.. unless entity @s[tag=AZS_BoS11] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"我需要找到一种特殊移动方式，才能跨越数格宽的间隙……",color:"white",bold:false}]
