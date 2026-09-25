@@ -35,6 +35,13 @@ execute if score @s AzrEntityTimer matches 100 positioned -79767 183 -671 run fu
 execute if score @s AzrEntityTimer matches 100 positioned -79770 183 -671 run function skyblock:azr/assets/mobs/utility_bat
 execute if score @s AzrEntityTimer matches 100 positioned -79773 183 -671 run function skyblock:azr/assets/mobs/utility_bat
 
+execute if score @s AzrEntityTimer matches 100 positioned -79799 184 -696 run function skyblock:azr/assets/mobs/slime
+execute if score @s AzrEntityTimer matches 100 positioned -79799 184 -696 run function skyblock:azr/assets/mobs/slime
+execute if score @s AzrEntityTimer matches 100 positioned -79799 184 -696 run function skyblock:azr/assets/mobs/skeleton_sentinel
+execute if score @s AzrEntityTimer matches 100 positioned -79783 194 -689 run function skyblock:azr/assets/mobs/spider_poison
+execute if score @s AzrEntityTimer matches 100 positioned -79783 194 -689 run function skyblock:azr/assets/mobs/spider_mini
+execute if score @s AzrEntityTimer matches 100 positioned -79783 194 -689 run function skyblock:azr/assets/mobs/spider_mini
+execute if score @s AzrEntityTimer matches 100 positioned -79783 194 -689 run function skyblock:azr/assets/mobs/spider_mini
 
 
 
