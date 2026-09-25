@@ -196,6 +196,12 @@ execute as @s[scores={Azr_Shop=8431583}] \
     unless function skyblock:azr/system/shop/purchase/ramiel/botanical_charm_chain_kill \
     run scoreboard players set tempPlayerShopSuccess Azr_system 1
 
+execute as @s[scores={Azr_Shop=8431584}] \
+    positioned -79977 -51 12 if entity @s[distance=..13] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s Azr_currency_weight matches 80.. \
+    unless function skyblock:azr/system/shop/purchase/ramiel/botanical_amulet_light_angel_3 \
+    run scoreboard players set tempPlayerShopSuccess Azr_system 1
 
 
 #魔界交易
