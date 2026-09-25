@@ -47,6 +47,8 @@ playsound minecraft:block.beacon.activate player @a ~ ~ ~ 1 1.5
 playsound minecraft:block.respawn_anchor.deplete player @a ~ ~ ~ 1 1.3
 playsound minecraft:entity.camel_husk.death player @a ~ ~ ~ 1 0.8
 
+execute if items entity @s container.* *[custom_data~{azr_amulet_chain_kill:1b}] run effect give @s resistance 1 4 false
+
 
 tag @s add AZR_chainKill_activated
 scoreboard players set @s AZR_chainKill_damage 0
