@@ -195,6 +195,8 @@ execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[ta
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value ' - '
 execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_2:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkeri] CustomName set value ' - '
 execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_2:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBw] CustomName set value ' - '
+execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_3:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarker4] CustomName set value ' - '
+execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_3:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerl] CustomName set value ' - '
 execute if entity @s[tag=AZS_BoS08] run data modify entity @n[tag=AzrRamielExStage_displaymarkerd] CustomName set value ' - '
 
 

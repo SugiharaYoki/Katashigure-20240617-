@@ -44,11 +44,11 @@ execute if score @s AzrielNPC_ConversationTimer matches 3002 run playsound minec
 execute if score @s AzrielNPC_ConversationTimer matches 3002 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"休憩所管理员 华兹华斯：",color:"green",bold:1b},{bold: false,text:"\n“今天的可交换物品都在这里啦。”",color:"white"}]
 
 execute if score @s AzrielNPC_ConversationTimer matches 3006 unless score azr_botanical_shop dailydiv < #Server_Date Global_Age store result score azr_botanical_shop Azr_Shop_rng1 run random value 1..6
-execute if score @s AzrielNPC_ConversationTimer matches 3006 unless score azr_botanical_shop dailydiv < #Server_Date Global_Age store result score azr_botanical_shop Azr_Shop_rng2 run random value 1..12
-execute if score @s AzrielNPC_ConversationTimer matches 3006 unless score azr_botanical_shop dailydiv < #Server_Date Global_Age store result score azr_botanical_shop Azr_Shop_rng3 run random value 7..12
+execute if score @s AzrielNPC_ConversationTimer matches 3006 unless score azr_botanical_shop dailydiv < #Server_Date Global_Age store result score azr_botanical_shop Azr_Shop_rng2 run random value 1..13
+execute if score @s AzrielNPC_ConversationTimer matches 3006 unless score azr_botanical_shop dailydiv < #Server_Date Global_Age store result score azr_botanical_shop Azr_Shop_rng3 run random value 7..13
 execute if score @s AzrielNPC_ConversationTimer matches 3006 unless score azr_botanical_shop Azr_Shop_rng1 matches -999.. store result score azr_botanical_shop Azr_Shop_rng1 run random value 1..6
-execute if score @s AzrielNPC_ConversationTimer matches 3006 unless score azr_botanical_shop Azr_Shop_rng2 matches -999.. store result score azr_botanical_shop Azr_Shop_rng2 run random value 1..12
-execute if score @s AzrielNPC_ConversationTimer matches 3006 unless score azr_botanical_shop Azr_Shop_rng3 matches -999.. store result score azr_botanical_shop Azr_Shop_rng3 run random value 7..12
+execute if score @s AzrielNPC_ConversationTimer matches 3006 unless score azr_botanical_shop Azr_Shop_rng2 matches -999.. store result score azr_botanical_shop Azr_Shop_rng2 run random value 1..13
+execute if score @s AzrielNPC_ConversationTimer matches 3006 unless score azr_botanical_shop Azr_Shop_rng3 matches -999.. store result score azr_botanical_shop Azr_Shop_rng3 run random value 7..13
 execute if score @s AzrielNPC_ConversationTimer matches 3006 unless score azr_botanical_shop dailydiv < #Server_Date Global_Age run scoreboard players operation azr_botanical_shop dailydiv = #Server_Date Global_Age
 execute if score @s AzrielNPC_ConversationTimer matches 3006 as @a[distance=0..13,tag=azrPlayer] run function skyblock:azr/system/shop/count
 execute if score @s AzrielNPC_ConversationTimer matches 3006 at @s run function skyblock:azr/assets/events/stage/chapter_1/botanical/npc_botanical_trader_list {number:1}
@@ -56,6 +56,9 @@ execute if score @s AzrielNPC_ConversationTimer matches 3006 at @s run function 
 execute if score @s AzrielNPC_ConversationTimer matches 3006 at @s run function skyblock:azr/assets/events/stage/chapter_1/botanical/npc_botanical_trader_list {number:3}
 execute if score @s AzrielNPC_ConversationTimer matches 3006 as @a[distance=0..13,tag=azrPlayer,tag=!AZS_BoSShop09] at @s run tellraw @s \
      [{text:" - "},{text:"光明天使的符文 II  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/50 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431570"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n同时具有迫坠石板、退避石板、冲刺石板、枢纽石板、斥跃石板的效果",color:"white"}}}]
+     
+execute if score @s AzrielNPC_ConversationTimer matches 3006 as @a[distance=0..13,tag=azrPlayer,tag=AZS_BoSShop09,tag=!AZS_BoSShop10,scores={Azr_skillPoints=19..}] at @s run tellraw @s \
+     [{text:" - "},{text:"光明天使的符文 III  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/80 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431584"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n同时具有迫坠石板、退避石板、冲刺石板、枢纽石板、斥跃石板、血潮石板、疾泅石板的效果",color:"white"}}}]
 
 execute if score @s AzrielNPC_ConversationTimer matches 3020..3200 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_305] run tag @s add azrPlayer_dialogchoice_revealed_305
 execute if score @s AzrielNPC_ConversationTimer matches 3050 run scoreboard players set @s AzrielNPC_ConversationTimer 3049

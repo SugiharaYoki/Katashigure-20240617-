@@ -42,8 +42,17 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}]
 execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_savior:1b}] run function skyblock:azr/system/player/skills/amulet/arrow_savior_core
 execute if items entity @s weapon.offhand *[custom_data~{azr_amulet_arrow_savior:1b}] run function skyblock:azr/system/player/skills/amulet/arrow_savior_instant
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_drogue:1b}] run function skyblock:azr/system/player/skills/amulet/fire_drogue_core
-execute if items entity @s container.* *[custom_data~{azr_amulet_magical_current:1b}] run function skyblock:azr/system/player/skills/amulet/magical_current_list
-execute if items entity @s container.* *[custom_data~{azr_amulet_water_wade:1b}] run function skyblock:azr/system/player/skills/amulet/water_wade_core
+
+execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_3:1b}] run tag @s add magical_current_pass
+execute if items entity @s[tag=!magical_current_pass] container.* *[custom_data~{azr_amulet_magical_current:1b}] run tag @s add magical_current_pass
+execute if entity @s[tag=magical_current_pass] run function skyblock:azr/system/player/skills/amulet/magical_current_list
+tag @s remove magical_current_pass
+
+execute if items entity @s[tag=AZS_BoS12] container.* *[custom_data~{azr_amulet_light_angel_3:1b}] run tag @s add water_wade_pass
+execute if items entity @s[tag=!water_wade_pass] container.* *[custom_data~{azr_amulet_water_wade:1b}] run tag @s add water_wade_pass
+execute if entity @s[tag=water_wade_pass] run function skyblock:azr/system/player/skills/amulet/water_wade_core
+tag @s remove water_wade_pass
+
 execute if entity @s[tag=AzrAmulet_waterwade_swimspeed] unless items entity @s container.* *[custom_data~{azr_amulet_water_wade:1b}] run attribute @s water_movement_efficiency modifier remove azr_amulet:waterwade_swim_01
 execute if entity @s[tag=AzrAmulet_waterwade_swimspeed] unless items entity @s container.* *[custom_data~{azr_amulet_water_wade:1b}] run tag @s remove AzrAmulet_waterwade_swimspeed
 
