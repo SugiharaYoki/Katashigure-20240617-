@@ -1,6 +1,6 @@
 
 scoreboard players add @s AzrEntityTimer 1
-
+forceload add ~ ~
 
 execute if score @s AzrEntityTimer matches 2 positioned -79793 189 -721 run function skyblock:azr/assets/mobs/spider_giant
 execute if score @s AzrEntityTimer matches 2 positioned -79790 189 -721 run function skyblock:azr/assets/mobs/skeleton_bomb
