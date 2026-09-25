@@ -7,6 +7,7 @@ execute if score @s[tag=team_5_captain_ian] rng1 matches 1 at @n[tag=AzrielNPC_s
 execute if score @s rng1 matches 1 if entity @s[tag=!toward_left,tag=!toward_right] store result score @s rng2 run random value 1..2
 execute if score @s rng1 matches 1 if score @s rng2 matches 1 run tag @s add toward_left
 execute if score @s rng1 matches 1 if score @s rng2 matches 2 run tag @s add toward_right
+execute if score @s[tag=low_height] rng1 matches 1 at @s run tp @s ~ ~-1.6 ~
 execute if score @s rng1 matches 2 run scoreboard players set @s rng1 11
 
 
