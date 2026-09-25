@@ -153,7 +153,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_water_wade:1b}]
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerm] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkern] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_tripler:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkero] CustomName set value ' √ '
-execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerp] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_laser_drag:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerp] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerq] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerr] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkers] CustomName set value ' √ '
