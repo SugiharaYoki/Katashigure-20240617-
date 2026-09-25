@@ -1002,6 +1002,14 @@ item replace block -79685 25 -347 container.14 with gold_nugget 3
 forceload add -79681 -583 -79607 -718
 function skyblock:azr/lifecycle/endgame/reset_map_boss4
 
+#stage photothermal
+fill -79963 27 210 -79961 27 210 minecraft:potted_torchflower
+fill -79961 26 211 -79963 26 211 minecraft:potted_torchflower
+setblock -79965 26 221 minecraft:birch_button[facing=south,face=floor]
+fill -79946 27 214 -79947 27 214 minecraft:air
+
+
+
 
 #chapter 5
 setblock -79684 178 -782 waxed_exposed_copper_chest[facing=south]{Inventory:[]}
@@ -1032,8 +1040,14 @@ item replace block -79778 188 -778 container.14 with emerald 2
 
 
 
+
+
+
 #boss slime
 fill -79732 189 -772 -79731 193 -772 minecraft:air
+
+
+
 
 
 

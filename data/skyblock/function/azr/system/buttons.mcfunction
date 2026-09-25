@@ -18,6 +18,9 @@ execute if block -79832 35 88 minecraft:birch_button[powered=true] if score stag
 #stage guise
 execute if block -79907 21 -14 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/bonus_stage/stage_guise_prep
 
+execute if block -79965 26 221 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/bonus_stage/stage_photothermal_prep
+
+
 
 
 #Stage Cerement
