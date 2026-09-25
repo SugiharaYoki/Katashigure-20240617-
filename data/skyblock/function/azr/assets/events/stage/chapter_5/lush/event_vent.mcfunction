@@ -202,14 +202,14 @@ execute if score @s rng3 matches 56.. run scoreboard players set @s rng3 -5
 execute if score @s rng3 matches 10 positioned -79751.00 185.49 -670.50 run playsound minecraft:entity.minecart.riding block @a ~ ~ ~ 3 0.5
 execute if score @s rng3 matches 20 positioned -79751.00 185.49 -670.50 run playsound minecraft:entity.minecart.riding block @a ~ ~ ~ 3 0.7
 execute if score @s rng3 matches 27 positioned -79751.00 185.49 -670.50 run playsound minecraft:entity.minecart.riding block @a ~ ~ ~ 3 0.9
-execute if score @s rng3 matches 10..42 positioned -79751.00 185.49 -70.50 positioned ~ ~ ~-1 run particle trail{color:8525057,duration:300,target:[-79951.00,185.49,-670.50]} ~ ~ ~ 0.8 0.8 0.8 0 1 force
-execute if score @s rng3 matches 10..42 positioned -79751.00 185.49 -70.50 positioned ~ ~ ~01 run particle trail{color:8525057,duration:300,target:[-79951.00,185.49,-670.50]} ~ ~ ~ 0.8 0.8 0.8 0 1 force
-execute if score @s rng3 matches 10..42 positioned -79751.00 185.49 -70.50 positioned ~ ~-1 ~ run particle trail{color:8525057,duration:300,target:[-79951.00,185.49,-670.50]} ~ ~ ~ 0.8 0.8 0.8 0 1 force
-execute if score @s rng3 matches 10..42 positioned -79751.00 185.49 -70.50 positioned ~ ~01 ~ run particle trail{color:8525057,duration:300,target:[-79951.00,185.49,-670.50]} ~ ~ ~ 0.8 0.8 0.8 0 1 force
-execute if score @s rng3 matches 20..42 positioned -79751.00 185.49 -70.50 positioned ~ ~ ~-1 run particle trail{color:8525057,duration:300,target:[-79951.00,185.49,-670.50]} ~ ~ ~ 0.8 0.8 0.8 0 2 normal
-execute if score @s rng3 matches 20..42 positioned -79751.00 185.49 -70.50 positioned ~ ~ ~01 run particle trail{color:8525057,duration:300,target:[-79951.00,185.49,-670.50]} ~ ~ ~ 0.8 0.8 0.8 0 2 normal
-execute if score @s rng3 matches 20..42 positioned -79751.00 185.49 -70.50 positioned ~ ~-1 ~ run particle trail{color:8525057,duration:300,target:[-79951.00,185.49,-670.50]} ~ ~ ~ 0.8 0.8 0.8 0 2 normal
-execute if score @s rng3 matches 20..42 positioned -79751.00 185.49 -70.50 positioned ~ ~01 ~ run particle trail{color:8525057,duration:300,target:[-79951.00,185.49,-670.50]} ~ ~ ~ 0.8 0.8 0.8 0 2 normal
+execute if score @s rng3 matches 10..42 positioned -79751.00 185.49 -670.50 positioned ~ ~ ~-1 run particle trail{color:8525057,duration:300,target:[-79951.00,185.49,-670.50]} ~ ~ ~ 0.8 0.8 0.8 0 1 force
+execute if score @s rng3 matches 10..42 positioned -79751.00 185.49 -670.50 positioned ~ ~ ~01 run particle trail{color:8525057,duration:300,target:[-79951.00,185.49,-670.50]} ~ ~ ~ 0.8 0.8 0.8 0 1 force
+execute if score @s rng3 matches 10..42 positioned -79751.00 185.49 -670.50 positioned ~ ~-1 ~ run particle trail{color:8525057,duration:300,target:[-79951.00,185.49,-670.50]} ~ ~ ~ 0.8 0.8 0.8 0 1 force
+execute if score @s rng3 matches 10..42 positioned -79751.00 185.49 -670.50 positioned ~ ~01 ~ run particle trail{color:8525057,duration:300,target:[-79951.00,185.49,-670.50]} ~ ~ ~ 0.8 0.8 0.8 0 1 force
+execute if score @s rng3 matches 20..42 positioned -79751.00 185.49 -670.50 positioned ~ ~ ~-1 run particle trail{color:8525057,duration:300,target:[-79951.00,185.49,-670.50]} ~ ~ ~ 0.8 0.8 0.8 0 2 normal
+execute if score @s rng3 matches 20..42 positioned -79751.00 185.49 -670.50 positioned ~ ~ ~01 run particle trail{color:8525057,duration:300,target:[-79951.00,185.49,-670.50]} ~ ~ ~ 0.8 0.8 0.8 0 2 normal
+execute if score @s rng3 matches 20..42 positioned -79751.00 185.49 -670.50 positioned ~ ~-1 ~ run particle trail{color:8525057,duration:300,target:[-79951.00,185.49,-670.50]} ~ ~ ~ 0.8 0.8 0.8 0 2 normal
+execute if score @s rng3 matches 20..42 positioned -79751.00 185.49 -670.50 positioned ~ ~01 ~ run particle trail{color:8525057,duration:300,target:[-79951.00,185.49,-670.50]} ~ ~ ~ 0.8 0.8 0.8 0 2 normal
 execute if score @s rng3 matches 27 positioned -79751.00 185.49 -670.50 run playsound minecraft:block.heavy_core.place ambient @a ~ ~ ~ 3 0.7
 execute if score @s rng3 matches 30 positioned -79751.00 185.49 -670.50 run playsound minecraft:entity.minecart.riding block @a ~ ~ ~ 3 1.7
 execute if score @s rng3 matches 42 positioned -79751.00 185.49 -670.50 run playsound minecraft:entity.minecart.inside block @a ~ ~ ~ 3 0.7
