@@ -3,7 +3,7 @@ scoreboard players remove @s AzrSariel_Amulet_LaserDrag_timer 1
 
 
 
-execute if score @s AZR_chainKill_chargeup matches ..30 run scoreboard players set @s AzrSariel_Amulet_LaserDrag_timer 3
+execute if score @s AZR_chainKill_chargeup matches ..2 run scoreboard players set @s AzrSariel_Amulet_LaserDrag_timer 3
 execute if score @s AzrSariel_Amulet_LaserDrag_timer matches 35.. run tag @s add LaserDragSuccess
 
 
