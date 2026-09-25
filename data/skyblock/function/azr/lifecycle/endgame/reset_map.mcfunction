@@ -1043,6 +1043,8 @@ setblock -79773 190 -683 air
 
 setblock -79778 185 -664 air
 setblock -79778 185 -664 lever[facing=west,face=wall]
+setblock -79778 196 -660 air
+setblock -79778 196 -660 lever[facing=west,face=wall]
 
 #boss slime
 fill -79732 189 -772 -79731 193 -772 minecraft:air
