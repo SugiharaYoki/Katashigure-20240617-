@@ -169,7 +169,7 @@ execute if score @s rng3 matches 30..42 positioned -79751.00 185.49 -682.50 posi
 execute if score @s rng3 matches 30..42 positioned -79751.00 185.49 -682.50 positioned ~ ~ ~-1 run particle trail{color:8525057,duration:300,target:[-79951.00,185.49,-682.50]} ~ ~ ~ 0.8 0.8 0.8 0 9 normal
 execute if score @s rng3 matches 30..42 positioned -79751.00 185.49 -682.50 positioned ~ ~-1 ~ run particle trail{color:8525057,duration:300,target:[-79951.00,185.49,-682.50]} ~ ~ ~ 0.8 0.8 0.8 0 9 normal
 execute if score @s rng3 matches 30..42 positioned -79751.00 185.49 -682.50 positioned ~ ~-1 ~ run particle trail{color:8525057,duration:300,target:[-79951.00,185.49,-682.50]} ~ ~ ~ 0.8 0.8 0.8 0 9 normal
-execute if score @s rng3 matches 30..42 positioned -79751.00 185.49 -682.50 as @e[x=-79786,y=183,z=-684,dx=-40,dy=3,dz=2,type=!slime,type=!blaze] at @s run damage @s 16 magic
+execute if score @s rng3 matches 30..42 positioned -79751.00 185.49 -682.50 as @e[x=-79786,y=183,z=-684,dx=40,dy=3,dz=2,type=!slime,type=!blaze] at @s run damage @s 16 magic
 execute if score @s rng3 matches 43 positioned -79751.00 185.49 -682.50 run playsound minecraft:entity.camel_husk.dash_ready ambient @a ~ ~ ~ 5 0.8
 
 execute if score @s rng3 matches 10 positioned -79787.00 185.51 -676.50 run playsound minecraft:entity.minecart.riding block @a ~ ~ ~ 3 0.5
@@ -194,7 +194,7 @@ execute if score @s rng3 matches 30..42 positioned -79787.00 185.51 -676.50 posi
 execute if score @s rng3 matches 30..42 positioned -79787.00 185.51 -676.50 positioned ~ ~ ~-1 run particle trail{color:8525057,duration:300,target:[-79587.00,185.51,-676.50]} ~ ~ ~ 0.8 0.8 0.8 0 9 normal
 execute if score @s rng3 matches 30..42 positioned -79787.00 185.51 -676.50 positioned ~ ~-1 ~ run particle trail{color:8525057,duration:300,target:[-79587.00,185.51,-676.50]} ~ ~ ~ 0.8 0.8 0.8 0 9 normal
 execute if score @s rng3 matches 30..42 positioned -79787.00 185.51 -676.50 positioned ~ ~-1 ~ run particle trail{color:8525057,duration:300,target:[-79587.00,185.51,-676.50]} ~ ~ ~ 0.8 0.8 0.8 0 9 normal
-execute if score @s rng3 matches 30..42 positioned -79787.00 185.51 -676.50 as @e[x=-79787,y=183,z=-678,dx=-40,dy=3,dz=2,type=!slime,type=!blaze] at @s run damage @s 16 magic
+execute if score @s rng3 matches 30..42 positioned -79787.00 185.51 -676.50 as @e[x=-79787,y=183,z=-678,dx=40,dy=3,dz=2,type=!slime,type=!blaze] at @s run damage @s 16 magic
 execute if score @s rng3 matches 43 positioned -79787.00 185.51 -676.50 run playsound minecraft:entity.camel_husk.dash_ready ambient @a ~ ~ ~ 5 0.8
 
 execute if score @s rng3 matches 56.. run scoreboard players set @s rng3 -5
@@ -221,7 +221,7 @@ execute if score @s rng3 matches 30..42 positioned -79751.00 185.49 -670.50 posi
 execute if score @s rng3 matches 30..42 positioned -79751.00 185.49 -670.50 positioned ~ ~ ~-1 run particle trail{color:8525057,duration:300,target:[-79951.00,185.49,-670.50]} ~ ~ ~ 0.8 0.8 0.8 0 9 normal
 execute if score @s rng3 matches 30..42 positioned -79751.00 185.49 -670.50 positioned ~ ~-1 ~ run particle trail{color:8525057,duration:300,target:[-79951.00,185.49,-670.50]} ~ ~ ~ 0.8 0.8 0.8 0 9 normal
 execute if score @s rng3 matches 30..42 positioned -79751.00 185.49 -670.50 positioned ~ ~-1 ~ run particle trail{color:8525057,duration:300,target:[-79951.00,185.49,-670.50]} ~ ~ ~ 0.8 0.8 0.8 0 9 normal
-execute if score @s rng3 matches 30..42 positioned -79751.00 185.49 -670.50 as @e[x=-79786,y=183,z=-672,dx=-40,dy=3,dz=2,type=!slime,type=!blaze,type=!bat] at @s run damage @s 16 magic
+execute if score @s rng3 matches 30..42 positioned -79751.00 185.49 -670.50 as @e[x=-79786,y=183,z=-672,dx=40,dy=3,dz=2,type=!slime,type=!blaze,type=!bat] at @s run damage @s 16 magic
 execute if score @s rng3 matches 43 positioned -79751.00 185.49 -670.50 run playsound minecraft:entity.camel_husk.dash_ready ambient @a ~ ~ ~ 5 0.8
 
 
