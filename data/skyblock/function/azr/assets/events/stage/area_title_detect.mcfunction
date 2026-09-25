@@ -29,6 +29,11 @@
 #苍 白 古 树
 
 
+execute unless score @s AzrPlayer_CurrentArea matches 8 if entity @s[x=-79970,y=-52,z=-10,dx=11,dy=7,dz=7] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:8,title:"天 使 的 憩 庭",color_code:"#22fb92"}
+
+
+                                                
 execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79965,y=37,z=-17,dx=5,dy=5,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
 execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79933,y=38,z=98,dx=5,dy=5,dz=3] run function skyblock:azr/assets/events/stage/area_title_show \
@@ -91,8 +96,6 @@ execute unless score @s AzrPlayer_CurrentArea matches 7 if entity @s[x=-79846,y=
 execute unless score @s AzrPlayer_CurrentArea matches 6 if entity @s[x=-79895,y=39,z=-122,dx=11,dy=7,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:6,title:"晦 怨 囚 牢",color_code:"#9e62ff"}
                                                 
-execute unless score @s AzrPlayer_CurrentArea matches 8 if entity @s[x=-79970,y=-52,z=-10,dx=11,dy=7,dz=7] run function skyblock:azr/assets/events/stage/area_title_show \
-                                                {area_id:8,title:"天 使 的 憩 庭",color_code:"#22fb92"}
 
 execute unless score @s AzrPlayer_CurrentArea matches 9 if entity @s[x=-79775,y=28,z=-360,dx=8,dy=12,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:9,title:"绯 烟 林 场",color_code:"#ed4d47"}
@@ -104,9 +107,6 @@ execute unless score @s AzrPlayer_CurrentArea matches 9 positioned -79711 30 -48
                                                 {area_id:9,title:"绯 烟 林 场",color_code:"#ed4d47"}
 execute unless score @s AzrPlayer_CurrentArea matches 9 positioned -79755 53 -303 if entity @s[distance=..7] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:9,title:"绯 烟 林 场",color_code:"#ed4d47"}
-
-
-
 
 execute unless score @s AzrPlayer_CurrentArea matches 10 if entity @s[x=-79691,y=21,z=-443,dx=8,dy=12,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:10,title:"血 金 窟",color_code:"#c20600"}
