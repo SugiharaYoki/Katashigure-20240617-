@@ -1038,10 +1038,11 @@ setblock -79778 188 -778 waxed_exposed_copper_chest[facing=north]{Inventory:[]}
 item replace block -79778 188 -778 container.12 with emerald 2
 item replace block -79778 188 -778 container.14 with emerald 2
 
-#stage
+#stage windshear
 setblock -79773 190 -683 air
 
-
+setblock -79778 185 -664 air
+setblock -79778 185 -664 lever[facing=west,face=wall]
 
 #boss slime
 fill -79732 189 -772 -79731 193 -772 minecraft:air

@@ -232,10 +232,18 @@ execute if entity @a[x=-79786,y=180,z=-684,dx=80,dy=8,dz=80] if block -79773 190
 execute if entity @a[x=-79786,y=180,z=-684,dx=80,dy=8,dz=80] if block -79773 190 -683 air run bossbar set azr:progress_bar_bonus max 10
 execute if entity @a[x=-79786,y=180,z=-684,dx=80,dy=8,dz=80] if block -79773 190 -683 air run bossbar set azr:progress_bar_bonus value 10
 execute if entity @a[x=-79786,y=180,z=-684,dx=80,dy=8,dz=80] if block -79773 190 -683 air run setblock -79773 190 -683 iron_block
-execute unless entity @a[x=-79786,y=180,z=-684,dx=80,dy=8,dz=80] run setblock -79773 190 -683 air
-execute unless entity @a[x=-79786,y=180,z=-684,dx=80,dy=8,dz=80] run bossbar remove azr:progress_bar_bonus
+execute unless entity @a[x=-79786,y=180,z=-684,dx=80,dy=8,dz=80] unless block -79773 190 -683 gold_block run setblock -79773 190 -683 air
+execute unless entity @a[x=-79786,y=180,z=-684,dx=80,dy=8,dz=80] unless block -79773 190 -683 gold_block run bossbar remove azr:progress_bar_bonus
 
-
+execute unless score @s rng20 matches 1.. if block -79778 185 -664 lever[facing=west,face=wall,powered=true] run scoreboard players set @s rng20 1
+execute if score @s rng20 matches 1 run setblock -79773 190 -683 gold_block
+execute if score @s rng20 matches 1 run bossbar remove azr:progress_bar_bonus
+execute if score @s rng20 matches 1 run title @a[tag=azrShowDialog] actionbar {text:"Extra Stage Clear",color:"green"}
+execute if score @s rng20 matches 1 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_windshear
+execute if score @s rng20 matches 1 as @a[tag=azrPlayer] at @s unless entity @s[tag=AZS_BoS23] run function skyblock:azr/assets/items/amulets/wind_shear
+execute if score @s rng20 matches 1 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS23
+execute if score @s rng20 matches 1 as @a[tag=azrPlayer] at @s run give @s emerald 5
+execute if score @s rng20 matches 1 run scoreboard players set @s rng20 2
 
 
 
