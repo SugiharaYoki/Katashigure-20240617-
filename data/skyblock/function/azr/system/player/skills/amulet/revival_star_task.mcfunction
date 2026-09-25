@@ -25,7 +25,8 @@ execute if score stage Azr_system matches 42 run tellraw @s [{text:"下个目标
 #第四章
 execute if score stage Azr_system matches 55..56 run tellraw @s [{text:"主任务：",color:"aqua",bold:true},{text:"找到回神庭的方法",color:"white",bold:false}]
 execute if score stage Azr_system matches 57..60 run tellraw @s [{text:"主任务：",color:"aqua",bold:true},{text:"通过神界传送门回到神庭",color:"white",bold:false}]
-execute if score stage Azr_system matches 62.. run tellraw @s [{text:"主任务：",color:"aqua",bold:true},{text:"找到第二种回神庭的方法",color:"white",bold:false}]
+execute if score stage Azr_system matches 62..76 run tellraw @s [{text:"主任务：",color:"aqua",bold:true},{text:"找到第二种回神庭的方法",color:"white",bold:false}]
+execute if score stage Azr_system matches 77.. run tellraw @s [{text:"主任务：",color:"aqua",bold:true},{text:"找到离开地下水路区域的方法",color:"white",bold:false}]
 execute if score stage Azr_system matches 56 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"？？？区域 第4章·解除车间博物馆上层的封锁",color:"white",bold:false}]
 execute if score stage Azr_system matches 57 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"绯烟林场区域 第4章·前往主战场",color:"white",bold:false}]
 execute if score stage Azr_system matches 58 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"绯烟林场区域 第4章·向东找到矿洞入口",color:"white",bold:false}]
@@ -36,6 +37,9 @@ execute if score stage Azr_system matches 61 if block -79469 31 -431 air run tel
 execute if score stage Azr_system matches 62 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"血金窟区域 第4章·向着强大的魔力来源前行",color:"white",bold:false}]
 execute if score stage Azr_system matches 63 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"血金窟区域 第4章·击败强大的魔力来源",color:"white",bold:false}]
 execute if score stage Azr_system matches 69 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"绯烟林场区域 第4章·回到最初坠落的地点",color:"white",bold:false}]
+execute if score stage Azr_system matches 76 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"？？？区域 第5章·向上前行",color:"white",bold:false}]
+execute if score stage Azr_system matches 77..80 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"神代茏渠区域 第5章·在丛林中寻找向上前行的线索",color:"white",bold:false}]
+execute if score stage Azr_system matches 81..83 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"神代茏渠区域 第5章·通过管道网络前往更上方",color:"white",bold:false}]
 
 execute if score stage Azr_system matches 1..4 run tellraw @s [{text:"“敌人很强大，我必须稳住节奏，慢慢应对。\n千万别忘记：在装备受损时，打开背包内的生命手册访问商店。”",color:"#c5c5c5",bold:false}]
 execute if score stage Azr_system matches 5..8 run tellraw @s [{text:"“我不一定非得急着推进试炼关卡。\n第三关的下方似乎别有洞天，而先前的结界也多有开启。\n找到隐藏关卡并通过特殊挑战，似乎会使我获得特殊的奖励。”",color:"#c5c5c5",bold:false}]
@@ -55,6 +59,9 @@ execute if score stage Azr_system matches 59..60 run tellraw @s [{text:"“要�
 execute if score stage Azr_system matches 62 run tellraw @s [{text:"“我不会让他牺牲。\n无论多强大的敌人，都由我来面对。”",color:"#c5c5c5",bold:false}]
 execute if score stage Azr_system matches 63 run tellraw @s [{text:"“这会是一场苦战。\n但我已经走了够远，我不会在这里放弃。\n用尽一切手段夺得胜利吧。”",color:"#c5c5c5",bold:false}]
 execute if score stage Azr_system matches 69 run tellraw @s [{text:"“我坠落地狱后来到的第一处地点，距离车间博物馆的最下层很近。\n那里本身就通往神庭，我能从那里回去并不奇怪。\n默尔森和马林努斯会在那里接应我。”",color:"#c5c5c5",bold:false}]
+execute if score stage Azr_system matches 77 run tellraw @s [{text:"“我发现了生命树根系，但这并不代表我已经到达了目的地。”",color:"#c5c5c5",bold:false}]
+execute if score stage Azr_system matches 80 run tellraw @s [{text:"“这片丛林相当古怪。\n在没有阳光的此处，怎么可能生长出如此大片的茂盛丛林？”",color:"#c5c5c5",bold:false}]
+execute if score stage Azr_system matches 81..83 run tellraw @s [{text:"“既然四周没有路，那最可能是路的只有可能是正上方——那些损毁的管道。”",color:"#c5c5c5",bold:false}]
 #第四章
 
 execute if score stage Azr_system matches 14.. unless entity @s[tag=AZS_BoS11] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"我需要找到一种特殊移动方式，才能跨越数格宽的间隙……",color:"white",bold:false}]
