@@ -53,7 +53,13 @@ execute if score @s AzrEntityTimer matches 200 positioned -79785 195 -679 run fu
 execute if score @s AzrEntityTimer matches 200 positioned -79787 195 -664 run function skyblock:azr/assets/mobs/spider_poison
 execute if score @s AzrEntityTimer matches 200 positioned -79787 195 -664 run function skyblock:azr/assets/mobs/spider_mini
 execute if score @s AzrEntityTimer matches 200 positioned -79787 195 -664 run function skyblock:azr/assets/mobs/spider_mini
-execute if score @s AzrEntityTimer matches 200 positioned -79787 195 -664 run function skyblock:azr/assets/mobs/spider_mini
+execute if score @s AzrEntityTimer matches 200 positioned -79786 195 -655 run function skyblock:azr/assets/mobs/spider_poison
+execute if score @s AzrEntityTimer matches 200 positioned -79786 195 -655 run function skyblock:azr/assets/mobs/spider_mini
+execute if score @s AzrEntityTimer matches 200 positioned -79786 195 -655 run function skyblock:azr/assets/mobs/spider_mini
+execute if score @s AzrEntityTimer matches 200 positioned -79786 195 -655 run function skyblock:azr/assets/mobs/spider_mini
+execute if score @s AzrEntityTimer matches 200 positioned -79791 195 -646 run function skyblock:azr/assets/mobs/spider_poison
+execute if score @s AzrEntityTimer matches 200 positioned -79791 195 -646 run function skyblock:azr/assets/mobs/spider_mini
+execute if score @s AzrEntityTimer matches 200 positioned -79791 195 -646 run function skyblock:azr/assets/mobs/spider_mini
 
 
 
