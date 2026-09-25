@@ -44,7 +44,16 @@ execute if score @s AzrEntityTimer matches 100 positioned -79783 194 -689 run fu
 execute if score @s AzrEntityTimer matches 100 positioned -79783 194 -689 run function skyblock:azr/assets/mobs/spider_mini
 
 
-
+execute if score @s AzrEntityTimer matches 190..199 run scoreboard players set @s AzrEntityTimer 198
+execute if score @s AzrEntityTimer matches ..199 positioned -79782 195 -688 if entity @a[tag=azrPlayer,distance=..8] run scoreboard players set @s AzrEntityTimer 200
+execute if score @s AzrEntityTimer matches 200 positioned -79785 195 -679 run function skyblock:azr/assets/mobs/spider_poison
+execute if score @s AzrEntityTimer matches 200 positioned -79785 195 -679 run function skyblock:azr/assets/mobs/spider_mini
+execute if score @s AzrEntityTimer matches 200 positioned -79785 195 -679 run function skyblock:azr/assets/mobs/spider_mini
+execute if score @s AzrEntityTimer matches 200 positioned -79785 195 -679 run function skyblock:azr/assets/mobs/spider_mini
+execute if score @s AzrEntityTimer matches 200 positioned -79787 195 -664 run function skyblock:azr/assets/mobs/spider_poison
+execute if score @s AzrEntityTimer matches 200 positioned -79787 195 -664 run function skyblock:azr/assets/mobs/spider_mini
+execute if score @s AzrEntityTimer matches 200 positioned -79787 195 -664 run function skyblock:azr/assets/mobs/spider_mini
+execute if score @s AzrEntityTimer matches 200 positioned -79787 195 -664 run function skyblock:azr/assets/mobs/spider_mini
 
 
 
