@@ -124,6 +124,7 @@ execute if entity @s[tag=AZS_BoSB12] run data modify entity @n[tag=AzrRamielExSt
 execute if entity @s[tag=AZS_BoSB13] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value ' <藓> '
 execute if entity @s[tag=AZS_BoSB22] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBv] CustomName set value ' <贤> '
 execute if entity @s[tag=AZS_BoSB23] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBw] CustomName set value ' <矿> '
+execute if entity @s[tag=AZS_BoSB19] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBs] CustomName set value ' <球> '
 
 execute if entity @s[tag=AZS_BoSShop01] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop01] CustomName set value ' <毒衡> '
 execute if entity @s[tag=AZS_BoSShop02] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop02] CustomName set value ' <毒扩> '
@@ -176,6 +177,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBv] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBw] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_water_ripple:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBs] CustomName set value ' √ '
 
 execute if items entity @s container.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop01] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_pollution_diffuser:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop02] CustomName set value ' √ '
@@ -244,6 +246,7 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBm]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432328"},hover_event:{"action":"show_text","value":{text:"噬藓母虫 - 深藓石板\n造成攻击可增加“索命连击”充能、在重生锚点可获得5分钟孢子的庇护（生命值上限加成）",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBv]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432338"},hover_event:{"action":"show_text","value":{text:"晦怨贤士 - 悬蔑石板\n整合悬风石板、悬浮期间攻击延长悬浮时间",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBw]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432333"},hover_event:{"action":"show_text","value":{text:"金属学家 - 枢纽石板\n允许在重生锚点之间传送",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerBs]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432344"},hover_event:{"action":"show_text","value":{text:"表水创生球体 - 激流石板\n水下攻击制造鱼雷",color:"white"}}},\
 {text:"\n "},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerShop01]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432334"},hover_event:{"action":"show_text","value":{text:"污染平衡器\n减轻重金属池水伤害",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerShop02]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432335"},hover_event:{"action":"show_text","value":{text:"污染扩散器\n受击概率释放重金属云团",color:"white"}}},\
