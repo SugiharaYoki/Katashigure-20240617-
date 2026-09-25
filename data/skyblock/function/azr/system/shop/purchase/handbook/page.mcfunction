@@ -91,6 +91,8 @@ $execute if data storage azr:handbook_vitae doc.$(eid).smoke_mother run tellraw 
 
 $execute unless data storage azr:handbook_vitae doc.$(eid).spider_giant run tellraw @s [{text:"★★？ ★？",color:"#859261"}]
 $execute if data storage azr:handbook_vitae doc.$(eid).spider_giant run tellraw @s [{text:"★★巨型蜘蛛 ",color:"#cdff44",hover_event:{"action":"show_text","value":[{text:"类型：凶兽\n",color:"#9c55ff",bold:1b},{text:"攻击方式：近战\n",color:"#ffa463",bold:1b},{text:"前期能遭遇的血量最厚的怪物。\n它唯二的弱点便是并不算高的攻击欲望，以及无法通过窄道的庞大身躯。\n弱火，被点燃后将会受到额外伤害。",color:"white",bold: false}]}}, {text:" ★迷你蜘蛛",color:"#cdff44",hover_event:{"action":"show_text","value":[{text:"类型：凶兽\n",color:"#9c55ff",bold:1b},{text:"攻击方式：近战\n",color:"#ffa463",bold:1b},{text:"巨型蜘蛛的缩小版。\n虽说身型极小，但各种意义上都十分脆弱，一碰即死。\n只有在成群出现时才会造成威胁。",color:"white",bold: false}]}}]
+$execute unless data storage azr:handbook_vitae doc.$(eid).spider_poison run tellraw @s [{text:"★★★？",color:"#859261"}]
+$execute if data storage azr:handbook_vitae doc.$(eid).spider_poison run tellraw @s [{text:"★★★毒荆齿蛛 ",color:"#cdff44",hover_event:{"action":"show_text","value":[{text:"类型：凶兽\n",color:"#9c55ff",bold:1b},{text:"攻击方式：近战 毒\n",color:"#ffa463",bold:1b},{text:"攻击带有剧毒的危险蜘蛛。\n虽说本身移动速度并不夸张，但总在地形复杂或难以行动的场所出没。\n危险性与习性挂钩的邪恶生物。",color:"white",bold: false}]}}]
 
 $execute unless data storage azr:handbook_vitae doc.$(eid).nightblind run tellraw @s [{text:"★★★？",color:"#859261"}]
 $execute if data storage azr:handbook_vitae doc.$(eid).nightblind run tellraw @s [{text:"★★★夜盲虫",color:"#cdff44",hover_event:{"action":"show_text","value":[{text:"类型：凶兽\n",color:"#9c55ff",bold:1b},{text:"攻击方式：近战\n",color:"#ffa463",bold:1b},{text:"贴地爬行，独自巡逻，行动缓慢，视野受限，但足以一击毙命。\n与它战斗这一行为本身便是无上的愚昧，最好尽一切可能绕着走。\n弱火，被点燃后将会受到额外伤害。",color:"white",bold: false}]}}]
