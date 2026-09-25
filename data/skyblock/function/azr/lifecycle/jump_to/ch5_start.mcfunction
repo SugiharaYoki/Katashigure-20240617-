@@ -16,7 +16,7 @@ fill -79651 54 -736 -79651 52 -733 iron_bars
 advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage17_boss4_2
 
 
-
+execute positioned -79651 174 -768 run function skyblock:azr/assets/mobs/utility_respawn_anchor
 
 
 
