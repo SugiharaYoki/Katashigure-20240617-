@@ -2,6 +2,8 @@
 
 #供能区域 入口
 execute positioned -79931 36 171 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79936,y=37,z=168,dx=11,dy=4,dz=8,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79931 36 171 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] positioned -79915 43 165 if entity @a[distance=..7,tag=azrPlayer] if loaded -79931 36 171 run summon marker -79931 36 171 {Tags:["AzrielMarker_encounter"]}
+execute positioned -79931 36 171 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] positioned -79904 37 190 if entity @a[distance=..7,tag=azrPlayer] if loaded -79931 36 171 run summon marker -79931 36 171 {Tags:["AzrielMarker_encounter"]}
 execute positioned -79931 36 171 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/events/stage/chapter_2/area_energy/entering_area_1st_time
 
   #跳跳乐
