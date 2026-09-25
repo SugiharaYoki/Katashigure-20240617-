@@ -13,8 +13,11 @@ execute positioned -79726 175 -835 as @n[tag=AzrielMarker_encounter,distance=0..
 #佛卡洛 对话
 execute positioned -79745 176 -790 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..5] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79745 176 -790 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 100.. run function skyblock:azr/assets/events/stage/chapter_5/lush/conv_focalor/entering_pipe_hall
+
 execute positioned -79776 194 -812 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,x=-79778,y=193,z=-814,dx=25,dy=3,dz=3] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79776 194 -812 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] positioned -79775 193 -797 if entity @a[tag=azrPlayer,distance=..5] if loaded -79776 194 -812 run summon marker -79776 194 -812 {Tags:["AzrielMarker_encounter"]}
 execute positioned -79776 194 -812 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 100.. run function skyblock:azr/assets/events/stage/chapter_5/lush/conv_focalor/entering_pipe_line
+
 execute positioned -79787 189 -793 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..5] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79787 189 -793 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 100.. run function skyblock:azr/assets/events/stage/chapter_5/lush/conv_focalor/entering_pipe_pit
 
