@@ -7,7 +7,18 @@ execute if score @s AZR_chainKill_chargeup matches ..30 run scoreboard players s
 execute if score @s AzrSariel_Amulet_LaserDrag_timer matches 35.. run tag @s add LaserDragSuccess
 
 
-execute if entity @s[tag=LaserDragSuccess] facing entity @n[tag=AzrielMob_amulet_laser_drag_target] feet positioned ^ ^ ^0.4 run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_laser_drag_waypoint"]}
+execute if entity @s[tag=LaserDragSuccess] facing entity @n[tag=AzrielMob_amulet_laser_drag_target,distance=..0.8] feet positioned ^ ^ ^0.4 run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_laser_drag_waypoint"]}
+execute if entity @s[tag=LaserDragSuccess] facing entity @n[tag=AzrielMob_amulet_laser_drag_target,distance=..1.2] feet positioned ^ ^ ^0.8 run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_laser_drag_waypoint"]}
+execute if entity @s[tag=LaserDragSuccess] facing entity @n[tag=AzrielMob_amulet_laser_drag_target,distance=..1.6] feet positioned ^ ^ ^1.2 run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_laser_drag_waypoint"]}
+execute if entity @s[tag=LaserDragSuccess] facing entity @n[tag=AzrielMob_amulet_laser_drag_target,distance=..2.0] feet positioned ^ ^ ^1.6 run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_laser_drag_waypoint"]}
+execute if entity @s[tag=LaserDragSuccess] facing entity @n[tag=AzrielMob_amulet_laser_drag_target,distance=..2.4] feet positioned ^ ^ ^2.0 run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_laser_drag_waypoint"]}
+execute if entity @s[tag=LaserDragSuccess] facing entity @n[tag=AzrielMob_amulet_laser_drag_target,distance=..2.8] feet positioned ^ ^ ^2.4 run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_laser_drag_waypoint"]}
+execute if entity @s[tag=LaserDragSuccess] facing entity @n[tag=AzrielMob_amulet_laser_drag_target,distance=..3.2] feet positioned ^ ^ ^2.8 run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_laser_drag_waypoint"]}
+execute if entity @s[tag=LaserDragSuccess] facing entity @n[tag=AzrielMob_amulet_laser_drag_target,distance=..3.6] feet positioned ^ ^ ^3.2 run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_laser_drag_waypoint"]}
+execute if entity @s[tag=LaserDragSuccess] facing entity @n[tag=AzrielMob_amulet_laser_drag_target,distance=..4.0] feet positioned ^ ^ ^3.6 run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_laser_drag_waypoint"]}
+execute if entity @s[tag=LaserDragSuccess] facing entity @n[tag=AzrielMob_amulet_laser_drag_target,distance=..4.4] feet positioned ^ ^ ^4.0 run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_laser_drag_waypoint"]}
+execute if entity @s[tag=LaserDragSuccess] facing entity @n[tag=AzrielMob_amulet_laser_drag_target,distance=..4.8] feet positioned ^ ^ ^4.4 run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_laser_drag_waypoint"]}
+execute if entity @s[tag=LaserDragSuccess] facing entity @n[tag=AzrielMob_amulet_laser_drag_target,distance=..5.2] feet positioned ^ ^ ^4.8 run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_laser_drag_waypoint"]}
 
 
 execute as @e[tag=AzrielMob_amulet_laser_drag_waypoint,type=marker,distance=..20] at @s run particle flame ~ ~ ~ 0 0 0 0 1
@@ -30,5 +41,5 @@ execute if score @s AzrSariel_Amulet_LaserDrag_timer matches 3 as @e[tag=AzrielM
 
 
 
-kill @e[tag=AzrielMob_amulet_laser_drag_waypoint,type=marker,distance=..20]
+execute if entity @s[tag=LaserDragSuccess] run kill @e[tag=AzrielMob_amulet_laser_drag_waypoint,type=marker,distance=..20]
 tag @s remove LaserDragSuccess
