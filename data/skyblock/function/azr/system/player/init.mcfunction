@@ -59,7 +59,7 @@ scoreboard players set @s Azr_emerald_temp 0
 
 
 #execute unless score @s AZS_SoulFrag matches 1.. run tag @s add AZS_SoulFrag_Redeem
-scoreboard players set @s AZS_SoulFrag 1
+scoreboard players set @s AZS_SoulFrag 0
 execute if entity @s[tag=AZS_SoulFrag01] run scoreboard players add @s AZS_SoulFrag 1
 execute if entity @s[tag=AZS_SoulFrag02] run scoreboard players add @s AZS_SoulFrag 1
 execute if entity @s[tag=AZS_SoulFrag03] run scoreboard players add @s AZS_SoulFrag 1

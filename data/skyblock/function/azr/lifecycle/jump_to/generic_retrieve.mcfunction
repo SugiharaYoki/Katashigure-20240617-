@@ -199,6 +199,7 @@ advancement grant @s[tag=AZS_SoulFrag02] only skyblock:azr/progress/soul_fragmen
 advancement grant @s[tag=AZS_SoulFrag03] only skyblock:azr/progress/soul_fragment_library
 advancement grant @s[tag=AZS_SoulFrag04] only skyblock:azr/progress/soul_fragment_prison
 advancement grant @s[tag=AZS_SoulFrag05] only skyblock:azr/progress/soul_fragment_forest
+advancement grant @s[tag=AZS_SoulFrag06] only skyblock:azr/progress/soul_fragment_lush
 
 advancement grant @s[tag=AZS_BoS01] only skyblock:azr/progress/stage_bonus_appetence
 advancement grant @s[tag=AZS_BoS02] only skyblock:azr/progress/stage_bonus_breakout
