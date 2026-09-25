@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "神代茏渠：无人迹之人迹之网",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "这些通风管道的作用可不是为了让空气清新。\n神庭的地下水路不知为何有极强的魔力潮汐，而这些管道的存在就是为了将它们引向不会造成负面影响的场所。\n只不过，在长久的岁月中，这里的管道壁出现了破损与缺漏，而这也使得魔力潮汐开始外泄。\n原生的生物在吸收了过量的生灵魔力后便开始变异、繁殖、种群失控……\n它们的活跃使得更多管道出现了破损。\n\n久而久之，这里化作了一片地下的丛林。\n而我此刻经过的，便是这些不知为何无人维护的管道网络。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:jungle_leaves"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage18"
+}

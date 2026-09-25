@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "神代茏渠 - 通风装置",
+            "color": "green",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "我总觉得这些通风装置原先是以一种近乎无害的方式保持运行的。\n或许是因为管道破损，这里的通风装置会周期性地停止运作，并在不久后以超大功率短暂运作。\n任何不幸在此期间站到了魔力潮汐中的生物，都会被吹得魂飞魄散。\n\n或许这些生灵魔力在高速移动时会捎带走同样属于生灵侧的魔力，不然无法解释为何只有高速流动的魔力潮汐才会造成如此后果。\n单纯的密度过高，不应该造就如此威力。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:brown_glazed_terracotta"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage18"
+}
