@@ -26,7 +26,7 @@
     # Object
     execute if score stage_bonus Azr_system matches 15 run function skyblock:azr/assets/events/stage/bonus_stage/stage_object
     # Photothermal
-    execute if score stage_bonus Azr_system matches 15 run function skyblock:azr/assets/events/stage/bonus_stage/stage_photothermal
+    execute if score stage_bonus Azr_system matches 16 run function skyblock:azr/assets/events/stage/bonus_stage/stage_photothermal
     # Suspension
     execute if score stage_bonus Azr_system matches 19 run function skyblock:azr/assets/events/stage/bonus_stage/stage_suspension
     # Vestige
