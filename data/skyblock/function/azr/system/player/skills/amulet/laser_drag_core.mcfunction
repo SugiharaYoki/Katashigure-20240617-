@@ -30,7 +30,7 @@ execute as @e[tag=AzrielMob_amulet_laser_drag_waypoint,type=marker,distance=..20
 execute as @e[tag=AzrielMob_amulet_laser_drag_waypoint,type=marker,distance=..20] at @s as @e[tag=!AzrielMob_amulet_laser_drag_target,tag=AzrielMob,distance=..0.9] at @s unless score @s AzrSariel_Amulet_LaserDrag_timer matches 1.. run scoreboard players remove @p[tag=LaserDragSuccess] AZR_chainKill_chargeup 1
 execute as @e[tag=AzrielMob_amulet_laser_drag_waypoint,type=marker,distance=..20] at @s as @e[tag=!AzrielMob_amulet_laser_drag_target,tag=AzrielMob,distance=..0.9] at @s run scoreboard players set @s AzrSariel_Amulet_LaserDrag_timer 20
 
-execute as @e[tag=!AzrielMob_amulet_laser_drag_target,tag=AzrielMob,distance=..0.9,scores={AzrSariel_Amulet_LaserDrag_timer=1..}] at @s run scoreboard players remove @s AzrSariel_Amulet_LaserDrag_timer 1
+execute as @e[tag=AzrielMob,distance=..30,scores={AzrSariel_Amulet_LaserDrag_timer=1..}] at @s run scoreboard players remove @s AzrSariel_Amulet_LaserDrag_timer 1
 
 
 
