@@ -166,6 +166,7 @@ scoreboard objectives add AzrSariel_Amulet_RevivalStar_Callmate dummy
 scoreboard objectives add AzrSariel_Amulet_MagicalCurrentLevel dummy
 scoreboard objectives add AzrSariel_Amulet_LaserDrag_timer dummy
 scoreboard objectives add AzrSariel_Amulet_WindShear_timer dummy
+scoreboard objectives add AzrSariel_Amulet_WaterRipple_cooldown dummy
 
 
 #特殊食物

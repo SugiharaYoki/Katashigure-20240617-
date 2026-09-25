@@ -65,6 +65,8 @@ execute if score @s AzrSariel_Amulet_generic_damage_taken matches 1.. if items e
 execute if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] if entity @s[predicate=skyblock:jump,tag=!revival_star_task] run function skyblock:azr/system/player/skills/amulet/revival_star_task
 execute if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] if entity @s[predicate=!skyblock:jump,tag=revival_star_task] run tag @s remove revival_star_task
 
+
+
 #节制天平
 execute if score @s[tag=!AzrSariel_Route_Death] AzrSariel_Skill_FanFire matches 1.. run scoreboard players remove @s AzrSariel_Skill_FanFire_cooldown 1
 execute if score @s[tag=!AzrSariel_Route_Life] AzrSariel_Skill_ElecBall matches 1.. run scoreboard players remove @s AzrSariel_Skill_ElecBall_cooldown 1

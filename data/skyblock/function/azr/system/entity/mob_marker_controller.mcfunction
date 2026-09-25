@@ -41,6 +41,7 @@ execute if entity @s[tag=AzrielMob_trap_wave] run function skyblock:azr/assets/m
 execute if entity @s[tag=AzrielMob_mob_marker_dripstone_aiguille] run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille
 
 execute if entity @s[tag=AzrielMob_playertrap_land_fracture] run function skyblock:azr/system/player/skills/amulet/sprint_double_land_fracture_marker
+execute if entity @s[tag=AzrielMob_amulet_skill_waterripple] run function skyblock:azr/system/player/skills/amulet/water_ripple_marker
 
 execute as @s[tag=AzrielMob_demon_amy_rebirth_particle_a] at @s run function skyblock:azr/assets/mobs/skill/boss4_amy/rebirth_particle_a
 execute as @s[tag=AzrielMob_demon_amy_flame_eye] at @s unless entity @n[type=piglin_brute,distance=..100,tag=AZR_action_halt] run function skyblock:azr/assets/mobs/skill/boss4_amy/flame_eye
