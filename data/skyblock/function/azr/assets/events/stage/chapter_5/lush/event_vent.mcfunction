@@ -28,7 +28,12 @@ execute if score @s AzrEntityTimer matches 104 positioned -79777 192 -700 run su
 
 execute if score @s AzrEntityTimer matches 100 positioned -79757 184 -677 run function skyblock:azr/assets/mobs/blaze
 execute if score @s AzrEntityTimer matches 100 positioned -79757 184 -677 run function skyblock:azr/assets/mobs/blaze
+execute if score @s AzrEntityTimer matches 100 positioned -79784 184 -671 run function skyblock:azr/assets/mobs/blaze
+execute if score @s AzrEntityTimer matches 100 positioned -79784 184 -671 run function skyblock:azr/assets/mobs/blaze
 
+execute if score @s AzrEntityTimer matches 100 positioned -79767 183 -671 run function skyblock:azr/assets/mobs/utility_bat
+execute if score @s AzrEntityTimer matches 100 positioned -79770 183 -671 run function skyblock:azr/assets/mobs/utility_bat
+execute if score @s AzrEntityTimer matches 100 positioned -79773 183 -671 run function skyblock:azr/assets/mobs/utility_bat
 
 
 
