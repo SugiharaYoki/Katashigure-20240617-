@@ -43,5 +43,5 @@ execute if score @s rng1 matches 140 run fill -79787 189 -799 -79787 191 -799 la
 
 execute if score @s rng1 matches 8 positioned -79755 194 -817 run tp @n[tag=AzrielNPC_focalor,type=mannequin,distance=..200] -79787 193 -760
 
-
+execute if score @s rng1 matches 140 if score stage Azr_system matches ..82 run scoreboard players set stage Azr_system 83
 

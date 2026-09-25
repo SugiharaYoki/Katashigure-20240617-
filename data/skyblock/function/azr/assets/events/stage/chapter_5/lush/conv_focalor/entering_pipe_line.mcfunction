@@ -22,4 +22,4 @@ execute if score @s rng1 matches 2 run fill -79761 190 -798 -79761 193 -798 ladd
 
 execute if score @s rng1 matches 10 run title @a[tag=azrShowDialog] actionbar {text:"对你……结局该有数种，但你选择来到我的栖身之处……",color:"aqua"}
 
-
+execute if score @s rng1 matches 2 if score stage Azr_system matches ..81 run scoreboard players set stage Azr_system 82
