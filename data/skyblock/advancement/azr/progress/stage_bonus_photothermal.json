@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "传热根系 - 魔熔合炉",
+            "color": "green",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "维持神庭花园的能量并非全部来源于传热根系，而是由数个不同地点分别制造。\n但这也只是意味着神庭存在数个类似“传热根系”的场所。\n一旦将这些地点全部攻破，瘫痪能源系统，神庭就不知道会变成什么模样。\n我能想到这一出，那入侵了神庭的魔界军一定也可以。\n\n说来，我到现在还是不明白为什么传热根系的入口就如此堂而皇之地摆在第六关旁边。\n难道说，他们是故意让我认识到这一切的？\n是对我能够坚持到第六关的奖励？还是……告知我某种我必须提前知晓的信息？",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:orange_glazed_terracotta"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage_bonus_kinetic"
+}
