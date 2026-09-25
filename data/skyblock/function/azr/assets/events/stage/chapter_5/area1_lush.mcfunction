@@ -40,6 +40,10 @@ execute positioned -79796 193 -731 as @n[tag=AzrielMarker_encounter,distance=0..
 
 
 
+#灵魂碎片 跳跳乐
+execute positioned -79732 189 -657 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=0..7,tag=azrPlayer,tag=!AZS_SoulFrag06] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79732 189 -657 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/effects/soul_fragment {id:"06",pos:"-79740 183.2 -667",area:"forest"}
+
 
 
 
