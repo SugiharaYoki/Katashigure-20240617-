@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "神代茏渠：生之网与死之网之纠缠",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "我最担心的事情正在一件又一件地持续发生。\n这里的怪物就算被我干掉了，在我身上留下的伤口也极为致命。\n我在这里将要面对的不仅是严酷的战斗。\n密度过高的生灵魔力只是一个“先前条件”；真正危险的是这带来的后果。\n待在这里，就算不与任何怪物战斗也使得我很不舒服。\n想到我之所以还没有出现更恶劣的症状，可能只是因为我的体质本就适应这里的环境，我只觉得心中极其不安。\n\n那个天使长拉斐尔，为何非要逼着我走这条路？\n只是为了寻我开心吗？",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:jungle_leaves"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage19"
+}
