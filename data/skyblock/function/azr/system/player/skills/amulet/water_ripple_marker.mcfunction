@@ -2,7 +2,13 @@ scoreboard players add @s rng1 1
 
 #AzrAmulet_waterripple_target
 execute if score @s rng1 matches 3 run playsound minecraft:entity.nautilus.dash player @a ~ ~ ~ 0.8 1.3
-execute if score @s rng1 matches 3.. at @s rotated as @s facing entity @n[tag=AzrielMob,distance=..7] feet run tp @s ^ ^ ^0.06
+execute if score @s rng1 matches 3.. at @s rotated as @s facing entity @n[tag=AzrielMob,distance=..7] feet run tp @s ^ ^ ^0.02
+execute if score @s rng1 matches 4.. at @s rotated as @s facing entity @n[tag=AzrielMob,distance=..7] feet run tp @s ^ ^ ^0.03
+execute if score @s rng1 matches 5.. at @s rotated as @s facing entity @n[tag=AzrielMob,distance=..7] feet run tp @s ^ ^ ^0.04
+execute if score @s rng1 matches 6.. at @s rotated as @s facing entity @n[tag=AzrielMob,distance=..7] feet run tp @s ^ ^ ^0.06
+execute if score @s rng1 matches 7.. at @s rotated as @s facing entity @n[tag=AzrielMob,distance=..7] feet run tp @s ^ ^ ^0.01
+execute if score @s rng1 matches 8.. at @s rotated as @s facing entity @n[tag=AzrielMob,distance=..7] feet run tp @s ^ ^ ^0.01
+execute if score @s rng1 matches 9.. at @s rotated as @s facing entity @n[tag=AzrielMob,distance=..7] feet run tp @s ^ ^ ^0.01
 
 execute if score @s rng1 matches 4.. unless block ~ ~ ~ #skyblock:water run scoreboard players add @s rng1 2
 
