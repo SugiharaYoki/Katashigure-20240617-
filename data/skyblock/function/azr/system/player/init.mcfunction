@@ -15,6 +15,8 @@ team modify AzrPlayer collisionRule never
 xp set @s 0
 xp set @s 0 levels
 
+scoreboard players set @s azr_weapon_rightclick_chainkill_load 0
+
 stopsound @s music
 
 execute unless score @s Azr_currency_weight matches -9999.. run scoreboard players set @s Azr_currency_weight 0
