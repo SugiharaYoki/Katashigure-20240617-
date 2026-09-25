@@ -1,5 +1,7 @@
 
-execute if score @s AZR_chainKill_chargeup matches 9000.. if entity @s[tag=!AZR_chainKill_activated] if score @s azr_weapon_rightclick_chainkill_load matches 130.. run function skyblock:azr/system/player/skills/chainkill/chain_kill_execute
+execute if items entity @s weapon.mainhand #swords if score @s AZR_chainKill_chargeup matches 9000.. if entity @s[tag=!AZR_chainKill_activated] if score @s azr_weapon_rightclick_chainkill_load matches 130.. run function skyblock:azr/system/player/skills/chainkill/chain_kill_execute
+execute if items entity @s weapon.mainhand #axes if score @s AZR_chainKill_chargeup matches 9000.. if entity @s[tag=!AZR_chainKill_activated] if score @s azr_weapon_rightclick_chainkill_load matches 130.. run function skyblock:azr/system/player/skills/chainkill/chain_kill_execute
+execute if items entity @s weapon.mainhand #hoes if score @s AZR_chainKill_chargeup matches 9000.. if entity @s[tag=!AZR_chainKill_activated] if score @s azr_weapon_rightclick_chainkill_load matches 130.. run function skyblock:azr/system/player/skills/chainkill/chain_kill_execute
 execute if score @s AZR_chainKill_chargeup matches 9000.. if entity @s[tag=!AZR_chainKill_activated] run scoreboard players add @s azr_weapon_rightclick_chainkill_load 20
 
 
