@@ -25,6 +25,13 @@ execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 132 as @s at @s 
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 134 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 136 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 as @s at @s run function skyblock:azr/system/player/skills/amulet/stay_float_keep with storage azr_amulet:stay_float
+
+execute if items entity @s container.* *[custom_data~{azr_amulet_wind_shear:1b}] if score @s AzrSariel_Amulet_StayFloat_cooldown matches 136 as @s at @s positioned ~ ~-1 ~ run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_skill_axevortex","AzrielMob_amulet_skill","AzrielMob_level_1","toward_left"]}
+execute if items entity @s container.* *[custom_data~{azr_amulet_wind_shear:1b}] if score @s AzrSariel_Amulet_StayFloat_cooldown matches 131 as @s at @s positioned ~ ~-1 ~ run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_skill_axevortex","AzrielMob_amulet_skill","AzrielMob_level_1","toward_right"]}
+execute if items entity @s container.* *[custom_data~{azr_amulet_wind_shear:1b}] if score @s AzrSariel_Amulet_StayFloat_cooldown matches 126 as @s at @s positioned ~ ~-1 ~ run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_skill_axevortex","AzrielMob_amulet_skill","AzrielMob_level_1","toward_left"]}
+execute if items entity @s container.* *[custom_data~{azr_amulet_wind_shear:1b}] if score @s AzrSariel_Amulet_StayFloat_cooldown matches 121 as @s at @s positioned ~ ~-1 ~ run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_skill_axevortex","AzrielMob_amulet_skill","AzrielMob_level_1","toward_right"]}
+
+
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s unless items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 0.4 2
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s if items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run playsound minecraft:block.fire.extinguish player @a ~ ~ ~ 0.1 1.7
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s unless items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run particle white_smoke ~ ~-0.2 ~ 0.1 0 0.1 0.03 8

@@ -160,7 +160,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run d
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkert] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkeru] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_down_kick:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerv] CustomName set value ' √ '
-execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerw] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_wind_shear:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerw] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerx] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkery] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerz] CustomName set value ' √ '
@@ -224,7 +224,7 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {text:"\n "},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkeru]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432321"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerv]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432322"},hover_event:{"action":"show_text","value":{text:"Vestige - 迫坠石板\n空中按shift快速下坠，25%+索命连击充能时启动下砸，下砸期间可长按启动退避石板",color:"white"}}},\
-{selector:"@n[tag=AzrRamielExStage_displaymarkerw]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432323"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerw]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432323"},hover_event:{"action":"show_text","value":{text:"Windshear - 斫驰石板\n斧右键拖动离断变风，悬浮持续释放斧切旋风",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerx]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432324"},hover_event:{"action":"show_text","value":{text:"Xenia？",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkery]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432325"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerz]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432326"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\

@@ -1038,8 +1038,8 @@ setblock -79778 188 -778 waxed_exposed_copper_chest[facing=north]{Inventory:[]}
 item replace block -79778 188 -778 container.12 with emerald 2
 item replace block -79778 188 -778 container.14 with emerald 2
 
-
-
+#stage
+setblock -79773 190 -683 air
 
 
 
