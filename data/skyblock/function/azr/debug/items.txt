@@ -166,11 +166,11 @@
     铁
     fighter_sickle 战镰 100001
     石
-    stone_hoe_normal 石锄 100001
-    stone_hoe_bogged 石锄·沼赎 100002
+    stone_hoe_normal 石杖 100001
+    stone_hoe_bogged 石杖·沼赎 100002
     stone_sickle 石镰 100003
     木
-    wooden_hoe_normal 木锄 100001
+    wooden_hoe_normal 木杖 100001
 剑
     金
     weapon_gold_sword 纯金单刃剑 100001

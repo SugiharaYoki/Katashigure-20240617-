@@ -49,6 +49,8 @@ execute unless entity @a[tag=azrPlayer,distance=..3.5] facing entity @p[tag=azrP
 execute unless entity @a[tag=azrPlayer,distance=..7.5] facing entity @p[tag=azrPlayer] eyes run tp ^ ^ ^0.53
 execute unless entity @a[tag=azrPlayer,distance=..3.5] facing entity @p[tag=azrPlayer] eyes store result score @s rng5 run random value 1..10
 execute if entity @a[tag=azrPlayer,distance=..3.5] if entity @n[tag=AzrielMob_amulet_skill_FireDrogue,distance=0..1] store result score @s rng5 run random value 1..10
+execute if items entity @a[tag=azrPlayer,distance=..3.5] weapon.mainhand #hoes if entity @n[tag=AzrielMob_amulet_skill_FireDrogue,distance=0..1] store result score @s rng5 run random value 7..8
+
 execute if score @s rng5 matches 1 at @s rotated as @s run tp ^0.1 ^ ^
 execute if score @s rng5 matches 2 at @s rotated as @s run tp ^-0.1 ^ ^
 execute if score @s rng5 matches 3 at @s rotated as @s run tp ^0.1 ^0.14 ^
