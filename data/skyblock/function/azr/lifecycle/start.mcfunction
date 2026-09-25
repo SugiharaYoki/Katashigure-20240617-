@@ -164,6 +164,8 @@ scoreboard objectives add AzrSariel_Amulet_FrontSlashEd dummy
 scoreboard objectives add AzrSariel_Amulet_StayFloat_Y dummy
 scoreboard objectives add AzrSariel_Amulet_RevivalStar_Callmate dummy
 scoreboard objectives add AzrSariel_Amulet_MagicalCurrentLevel dummy
+scoreboard objectives add AzrSariel_Amulet_LaserDrag_timer dummy
+
 
 #特殊食物
 scoreboard objectives add AzrSariel_Food_HardenedCookie dummy

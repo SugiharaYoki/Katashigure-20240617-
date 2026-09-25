@@ -87,6 +87,9 @@ execute if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] unle
 execute if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] if entity @s[predicate=skyblock:sneak,tag=!revival_star_callmate] unless score @s AzrSariel_Amulet_RevivalStar_Callmate matches 1.. run scoreboard players set @s AzrSariel_Amulet_RevivalStar_Callmate 60
 execute if score @s AzrSariel_Amulet_RevivalStar_Callmate matches 1.. run function skyblock:azr/system/player/skills/amulet/revival_star_callmate
 
+execute if score @s AzrSariel_Amulet_LaserDrag_timer matches 1.. run function skyblock:azr/system/player/skills/amulet/laser_drag_core
+
+
 #节制天平
 execute if entity @s[tag=AzrSariel_upg6C,scores={AzrSariel_Skill_AbsDefend_cooldown=..1}] run function skyblock:azr/system/player/damage_bonus/effect/absdefend
 execute if score @s AzrSariel_Skill_ContactDmg matches 1.. run scoreboard players remove @s AzrSariel_Skill_ContactDmg_cooldown 1
