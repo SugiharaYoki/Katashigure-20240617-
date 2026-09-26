@@ -14,5 +14,10 @@ execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng4=19}] positioned -79961.59 -41.94 -15.38 as @p[tag=azrPlayer,distance=..3] run tp @s -79264 32 -113 facing -79264 32 -116
 
 
-
+execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng4=19}] run bossbar add azr:progress_bar_bonus "花 艺 竞 赛"
+execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng4=19}] run bossbar set azr:progress_bar_bonus color green
+execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng4=19}] run bossbar set azr:progress_bar_bonus players @a[tag=azrShowDialog]
+execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng4=19}] run bossbar set azr:progress_bar_bonus max 10
+execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng4=19}] run bossbar set azr:progress_bar_bonus style notched_6
+execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng4=19}] run bossbar set azr:progress_bar_bonus value 10
 
