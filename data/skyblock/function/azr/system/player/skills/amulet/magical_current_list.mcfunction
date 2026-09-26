@@ -24,7 +24,7 @@ execute if entity @s[x=-79664,y=20,z=-409,dx=0,dy=15,dz=0] run scoreboard player
 
 
 #休憩所
-execute positioned -79964 -57 -6 if entity @s[distance=..18] run particle trail{color:16761189,duration:180,target:[-79963.49,-36.94,-5.53]} ~ ~ ~ 0.5 0 0.5 0 1 force
+execute positioned -79964 -57 -6 if entity @s[distance=..18] run particle trail{color:6666239,duration:180,target:[-79963.49,-36.94,-5.53]} ~ ~ ~ 0.5 0 0.5 0 1 force
 execute if entity @s[x=-79664,y=-57,z=-6,dx=0,dy=15,dz=0] run scoreboard players set @s AzrSariel_Amulet_MagicalCurrentLevel 2
 
 
