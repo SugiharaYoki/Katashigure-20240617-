@@ -10,7 +10,7 @@ execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3}] as @a[x=-80007,y=-58,z=-18,dx=100,dy=20,dz=100,tag=azrPlayer] run effect give @s regeneration 30 3 true
 execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3}] as @a[x=-80007,y=-58,z=-18,dx=100,dy=20,dz=100,tag=azrPlayer] run effect give @s resistance 30 3 true
 execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=100..}] run scoreboard players set @s rng1 2
-execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3..}] unless entity @a[x=-80007,y=-58,z=-18,dx=100,dy=20,dz=100,tag=azrPlayer] run kill @s
+#execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3..}] unless entity @a[x=-80007,y=-58,z=-18,dx=100,dy=20,dz=100,tag=azrPlayer] run kill @s
 
 #商人
 execute positioned -79977 -51 12 as @n[type=villager,distance=..5,tag=AzrielTrader_botanical_trader] at @s if entity @a[tag=azrPlayer,distance=..6] run function skyblock:azr/assets/events/stage/chapter_1/botanical/npc_botanical_trader
