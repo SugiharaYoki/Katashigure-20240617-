@@ -77,6 +77,9 @@ execute unless score @s AzrPlayer_CurrentArea matches 3 if entity @s[x=-79906,y=
                                                 {area_id:3,title:"传 热 根 系",color_code:"#5e4e80"}
 execute unless score @s AzrPlayer_CurrentArea matches 3 if entity @s[x=-79917,y=42,z=190,dx=8,dy=6,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:3,title:"传 热 根 系",color_code:"#5e4e80"}
+execute unless score @s AzrPlayer_CurrentArea matches 3 if entity @s[x=-79953,y=28,z=153,dx=6,dy=6,dz=8] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:3,title:"传 热 根 系",color_code:"#5e4e80"}
+
 
 execute unless score @s AzrPlayer_CurrentArea matches 4 if entity @s[x=-79890,y=42,z=161,dx=7,dy=7,dz=7] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:4,title:"智 述 文 馆",color_code:"#eb83dd"}
