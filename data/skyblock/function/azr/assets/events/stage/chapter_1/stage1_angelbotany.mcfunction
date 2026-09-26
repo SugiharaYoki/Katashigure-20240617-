@@ -16,11 +16,11 @@ execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79977 -51 12 as @n[type=villager,distance=..5,tag=AzrielTrader_botanical_trader] at @s if entity @a[tag=azrPlayer,distance=..6] run function skyblock:azr/assets/events/stage/chapter_1/botanical/npc_botanical_trader
 
 #第五章开始
-execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5] if score stage Azr_system matches 76.. run scoreboard players add @s rng16 1
-execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5] if score stage Azr_system matches 76.. run function skyblock:azr/assets/events/stage/chapter_1/botanical/event_botanical_postch5
+execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..60] if score stage Azr_system matches 76.. run scoreboard players add @s rng16 1
+execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..60] if score stage Azr_system matches 76.. run function skyblock:azr/assets/events/stage/chapter_1/botanical/event_botanical_postch5
 
 #杀怪PVP
-execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5] unless score @s rng4 matches 20.. positioned -79975.51 -41.94 -15.67 if block ~ ~ ~ minecraft:polished_blackstone_pressure_plate[powered=true] positioned -79961.59 -41.94 -15.38 if block ~ ~ ~ minecraft:polished_blackstone_pressure_plate[powered=true] run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/start
+execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..60] unless score @s rng4 matches 20.. positioned -79975.51 -41.94 -15.67 if block ~ ~ ~ minecraft:polished_blackstone_pressure_plate[powered=true] positioned -79961.59 -41.94 -15.38 if block ~ ~ ~ minecraft:polished_blackstone_pressure_plate[powered=true] run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/start
 
 
 #门
