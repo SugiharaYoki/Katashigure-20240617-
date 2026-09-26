@@ -23,6 +23,13 @@ execute positioned -79664 20 -409 if entity @s[distance=..18] run particle trail
 execute if entity @s[x=-79664,y=20,z=-409,dx=0,dy=15,dz=0] run scoreboard players set @s AzrSariel_Amulet_MagicalCurrentLevel 2
 
 
+#休憩所
+execute positioned -79964 -57 -6 if entity @s[distance=..18] run particle trail{color:16761189,duration:240,target:[-79963.49,-36.94,-5.53]} ~ ~ ~ 0.5 0 0.5 0 1 force
+execute if entity @s[x=-79664,y=-57,z=-6,dx=0,dy=15,dz=0] run scoreboard players set @s AzrSariel_Amulet_MagicalCurrentLevel 2
+
+
+
+
 #第五章 入口
 execute positioned -79623.51 49.00 -746.53 if entity @s[distance=..30] run particle trail{color:6666239,duration:240,target:[-79623.51,99.00,-746.53]} ~ ~ ~ 0.5 0 0.5 0 2 force
 execute if entity @s[x=-79624,y=48,z=-747,dx=0,dy=50,dz=0] run scoreboard players set @s AzrSariel_Amulet_MagicalCurrentLevel 2
