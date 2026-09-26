@@ -59,7 +59,7 @@ execute if entity @s[tag=AzrAmulet_waterwade_swimspeed] unless items entity @s c
 execute if items entity @s weapon.offhand *[custom_data~{azr_loginbonus:1b}] run function skyblock:azr/system/player/join_login_bonus_open
 
 execute if score @s AzrSariel_Amulet_generic_damage_taken matches 1.. if items entity @s container.* *[custom_data~{azr_amulet_pollution_diffuser:1b}] run function skyblock:azr/system/player/skills/amulet/pollution_diffuser_core
-execute if score stage Azr_system matches ..69 if score @s AzrSariel_Amulet_generic_damage_taken matches 1.. if items entity @s container.* *[custom_data~{azr_amulet_artificial_heart:1b}] positioned -79177 50 -16 unless entity @s[distance=..60] run effect give @s absorption infinite 4 true
+execute if score stage Azr_system matches ..69 if score @s AzrSariel_Amulet_generic_damage_taken matches 1.. if items entity @s container.* *[custom_data~{azr_amulet_artificial_heart:1b}] positioned -79177 50 -13 unless entity @s[distance=..60] run effect give @s absorption infinite 4 true
 execute if score @s AzrSariel_Amulet_generic_damage_taken matches 1.. if items entity @s container.* *[custom_data~{azr_amulet_flower_spike:1b}] run function skyblock:azr/system/player/skills/amulet/flower_spike_core
 
 execute if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] if entity @s[predicate=skyblock:jump,tag=!revival_star_task] run function skyblock:azr/system/player/skills/amulet/revival_star_task

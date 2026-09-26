@@ -21,7 +21,7 @@ execute if score @s AzrEntityTimer matches 5 positioned -79167 50 -19 run tag @a
 
 execute if score @s AzrEntityTimer matches 5 run title @a[distance=..50] times 0t 20t 16t
 execute if score @s AzrEntityTimer matches 5 run title @a[distance=..50] title {text:"亡 灵 法 师",color: "#7321cb",bold:1b}
-execute if score @s AzrEntityTimer matches 5 run fill -79159 77 -34 -79195 77 2 minecraft:tinted_glass replace air
+execute if score @s AzrEntityTimer matches 5 run fill -79159 77 -31 -79195 77 5 minecraft:tinted_glass replace air
 
 
 execute if score @s AzrEntityTimer matches 5 positioned -79167 50 -19 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
@@ -29,34 +29,34 @@ execute if score @s AzrEntityTimer matches 20 positioned -79167 50 -19 run funct
 execute if score @s AzrEntityTimer matches 5 positioned -79167 50 -13 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
 execute if score @s AzrEntityTimer matches 20 positioned -79167 50 -13 run function skyblock:azr/assets/mobs/skill/boss_rush/elite_zombie_villager_cleric_summon
 
-execute if score @s AzrEntityTimer matches 20 positioned -79187 50 -16 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
-execute if score @s AzrEntityTimer matches 20 positioned -79187 50 -16 run tag @e[tag=AzrielMob,distance=..30] add AzrielMob_BossRush_Target
+execute if score @s AzrEntityTimer matches 20 positioned -79187 50 -13 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
+execute if score @s AzrEntityTimer matches 20 positioned -79187 50 -13 run tag @e[tag=AzrielMob,distance=..30] add AzrielMob_BossRush_Target
 
 execute if score @s AzrEntityTimer matches 205 as @a[tag=azrPlayer,distance=..100] at @s unless score @s azr_progress_door2 matches 1.. run scoreboard players set @s azr_progress_door2 1
-execute if score @s AzrEntityTimer matches 205 run fill -79159 77 -34 -79195 77 2 air replace minecraft:tinted_glass
+execute if score @s AzrEntityTimer matches 205 run fill -79159 77 -31 -79195 77 5 air replace minecraft:tinted_glass
 execute if score @s AzrEntityTimer matches 205 run title @a[distance=..50] times 0t 20t 16t
 execute if score @s AzrEntityTimer matches 205 run title @a[distance=..50] title {text:"百 夫 长 · 博 物 区",color: "#7321cb",bold:1b}
 
-execute if score @s AzrEntityTimer matches 205 positioned -79167 50 -16 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
-execute if score @s AzrEntityTimer matches 220 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_centurion/summon
-execute if score @s AzrEntityTimer matches 220 positioned -79187 50 -16 run tag @e[tag=AzrielMob,distance=..30,type=piglin_brute] add AzrielMob_BossRush_Target
-execute if score @s AzrEntityTimer matches 220 positioned -79187 50 -16 as @e[tag=AzrielMob,distance=..50] run data modify entity @s DeathLootTable set value "skyblock:null"
-execute if score @s AzrEntityTimer matches 220..399 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_centurion/core
+execute if score @s AzrEntityTimer matches 205 positioned -79167 50 -15 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
+execute if score @s AzrEntityTimer matches 220 positioned -79167 50 -15 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_centurion/summon
+execute if score @s AzrEntityTimer matches 220 positioned -79187 50 -11 run tag @e[tag=AzrielMob,distance=..30,type=piglin_brute] add AzrielMob_BossRush_Target
+execute if score @s AzrEntityTimer matches 220 positioned -79187 50 -11 as @e[tag=AzrielMob,distance=..50] run data modify entity @s DeathLootTable set value "skyblock:null"
+execute if score @s AzrEntityTimer matches 220..399 positioned -79167 50 -13 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_centurion/core
 
 execute if score @s AzrEntityTimer matches 405 as @a[tag=azrPlayer,distance=..100] at @s unless score @s azr_progress_door2 matches 2.. run scoreboard players set @s azr_progress_door2 2
 execute if score @s AzrEntityTimer matches 405 run title @a[distance=..50] times 0t 20t 16t
 execute if score @s AzrEntityTimer matches 405 run title @a[distance=..50] title {text:"非 眼",color: "#7321cb",bold:1b}
 
-execute if score @s AzrEntityTimer matches 420 positioned -79171 55 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_noteye/summon
-execute if score @s AzrEntityTimer matches 500 positioned -79177 55 -22 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_noteye/summon
-execute if score @s AzrEntityTimer matches 580 positioned -79177 55 -10 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_noteye/summon
-execute if score @s AzrEntityTimer matches 420 positioned -79187 55 -16 run tag @e[tag=AzrielMob_sonic_eye_door,distance=..50] add AzrielMob_BossRush_Target
-execute if score @s AzrEntityTimer matches 500 positioned -79187 55 -16 run tag @e[tag=AzrielMob_sonic_eye_door,distance=..50] add AzrielMob_BossRush_Target
-execute if score @s AzrEntityTimer matches 580 positioned -79187 55 -16 run tag @e[tag=AzrielMob_sonic_eye_door,distance=..50] add AzrielMob_BossRush_Target
-execute if score @s AzrEntityTimer matches 420..599 positioned -79167 50 -16 as @e[tag=AzrielMob_sonic_eye_door,distance=..50] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_noteye/core
+execute if score @s AzrEntityTimer matches 420 positioned -79171 55 -13 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_noteye/summon
+execute if score @s AzrEntityTimer matches 500 positioned -79177 55 -19 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_noteye/summon
+execute if score @s AzrEntityTimer matches 580 positioned -79177 55 -7 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_noteye/summon
+execute if score @s AzrEntityTimer matches 420 positioned -79187 55 -13 run tag @e[tag=AzrielMob_sonic_eye_door,distance=..50] add AzrielMob_BossRush_Target
+execute if score @s AzrEntityTimer matches 500 positioned -79187 55 -13 run tag @e[tag=AzrielMob_sonic_eye_door,distance=..50] add AzrielMob_BossRush_Target
+execute if score @s AzrEntityTimer matches 580 positioned -79187 55 -13 run tag @e[tag=AzrielMob_sonic_eye_door,distance=..50] add AzrielMob_BossRush_Target
+execute if score @s AzrEntityTimer matches 420..599 positioned -79167 50 -13 as @e[tag=AzrielMob_sonic_eye_door,distance=..50] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_noteye/core
 
 execute if score @s AzrEntityTimer matches 605 as @a[tag=azrPlayer,distance=..100] at @s unless score @s azr_progress_door2 matches 3.. run scoreboard players set @s azr_progress_door2 3
-execute if score @s AzrEntityTimer matches 605 run fill -79159 77 -34 -79195 77 2 minecraft:tinted_glass replace air
+execute if score @s AzrEntityTimer matches 605 run fill -79159 77 -31 -79195 77 5 minecraft:tinted_glass replace air
 execute if score @s AzrEntityTimer matches 605 run scoreboard players add @s rng11 5
 execute if score @s AzrEntityTimer matches 605 run title @a[distance=..50] times 0t 20t 16t
 execute if score @s AzrEntityTimer matches 605 run title @a[distance=..50] title {text:"金 属 学 家",color: "#7321cb",bold:1b}
@@ -64,14 +64,14 @@ execute if score @s AzrEntityTimer matches 605 run title @a[distance=..50] title
 execute if score @s AzrEntityTimer matches 625 run tellraw @a[tag=azrShowDialog] [{text:"金属学家：",color:"yellow",bold:1b},{bold: false,text:"\n“我来……陪你练习。”",color:"white"}]
 execute if score @s AzrEntityTimer matches 685 run tellraw @a[tag=azrShowDialog] [{text:"金属学家：",color:"yellow",bold:1b},{bold: false,text:"\n“这次，我……会尽全力。人类的亡魂……做好准备。”",color:"white"}]
 
-execute if score @s AzrEntityTimer matches 605 positioned -79167 50 -16 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
-execute if score @s AzrEntityTimer matches 620 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/summon
-execute if score @s AzrEntityTimer matches 620 positioned -79187 50 -16 run tag @e[tag=AzrielMob,distance=..30,type=zombie] add AzrielMob_BossRush_Target
-execute if score @s AzrEntityTimer matches 620 positioned -79187 50 -16 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
-execute if score @s AzrEntityTimer matches 620..799 positioned -79167 50 -16 as @n[tag=AzrielMob_BossRush_Target,distance=..50,type=zombie] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/core
+execute if score @s AzrEntityTimer matches 605 positioned -79167 50 -13 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
+execute if score @s AzrEntityTimer matches 620 positioned -79167 50 -13 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/summon
+execute if score @s AzrEntityTimer matches 620 positioned -79187 50 -13 run tag @e[tag=AzrielMob,distance=..30,type=zombie] add AzrielMob_BossRush_Target
+execute if score @s AzrEntityTimer matches 620 positioned -79187 50 -13 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
+execute if score @s AzrEntityTimer matches 620..799 positioned -79167 50 -13 as @n[tag=AzrielMob_BossRush_Target,distance=..50,type=zombie] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/core
 
 execute if score @s AzrEntityTimer matches 805 as @a[tag=azrPlayer,distance=..100] at @s unless score @s azr_progress_door2 matches 4.. run scoreboard players set @s azr_progress_door2 4
-execute if score @s AzrEntityTimer matches 805 run fill -79159 77 -34 -79195 77 2 air replace minecraft:tinted_glass
+execute if score @s AzrEntityTimer matches 805 run fill -79159 77 -31 -79195 77 5 air replace minecraft:tinted_glass
 execute if score @s AzrEntityTimer matches 805 run scoreboard players add @s rng11 10
 execute if score @s AzrEntityTimer matches 805 run title @a[distance=..50] times 0t 20t 16t
 execute if score @s AzrEntityTimer matches 805 as @a[tag=azrShowDialog] at @s run title @s title {text:"亚 米",color: "#ff5050",bold:1b}
@@ -79,16 +79,16 @@ execute if score @s AzrEntityTimer matches 805 as @a[tag=azrShowDialog] at @s ru
 execute if score @s AzrEntityTimer matches 805 run stopsound @a[distance=..50] music minecraft:renegade
 execute if score @s AzrEntityTimer matches 825 run scoreboard players set @s rng9 0
 
-execute if score @s AzrEntityTimer matches 805 positioned -79167 50 -16 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[0.0f,0.0f]}
-execute if score @s AzrEntityTimer matches 805 positioned -79167 50 -16 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[72.0f,0.0f]}
-execute if score @s AzrEntityTimer matches 805 positioned -79167 50 -16 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[144.0f,0.0f]}
-execute if score @s AzrEntityTimer matches 805 positioned -79167 50 -16 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[216.0f,0.0f]}
-execute if score @s AzrEntityTimer matches 805 positioned -79167 50 -16 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[288.0f,0.0f]}
-execute if score @s AzrEntityTimer matches 825 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_amy/summon
+execute if score @s AzrEntityTimer matches 805 positioned -79167 50 -13 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[0.0f,0.0f]}
+execute if score @s AzrEntityTimer matches 805 positioned -79167 50 -13 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[72.0f,0.0f]}
+execute if score @s AzrEntityTimer matches 805 positioned -79167 50 -13 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[144.0f,0.0f]}
+execute if score @s AzrEntityTimer matches 805 positioned -79167 50 -13 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[216.0f,0.0f]}
+execute if score @s AzrEntityTimer matches 805 positioned -79167 50 -13 run summon marker ~ ~0.2 ~ {Tags:["AzrielMob_demon_amy_rebirth_particle_a","AzrielMob_mob_marker"],Rotation:[288.0f,0.0f]}
+execute if score @s AzrEntityTimer matches 825 positioned -79167 50 -13 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_amy/summon
 
-execute if score @s AzrEntityTimer matches 825 positioned -79187 50 -16 run tag @e[tag=AzrielMob,distance=..30,type=piglin_brute] add AzrielMob_BossRush_Target
-execute if score @s AzrEntityTimer matches 825 positioned -79187 50 -16 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
-execute if score @s AzrEntityTimer matches 825..991 positioned -79167 50 -16 as @n[tag=AzrielMob_BossRush_Target,distance=..50,type=piglin_brute] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_amy/core
+execute if score @s AzrEntityTimer matches 825 positioned -79187 50 -13 run tag @e[tag=AzrielMob,distance=..30,type=piglin_brute] add AzrielMob_BossRush_Target
+execute if score @s AzrEntityTimer matches 825 positioned -79187 50 -13 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
+execute if score @s AzrEntityTimer matches 825..991 positioned -79167 50 -13 as @n[tag=AzrielMob_BossRush_Target,distance=..50,type=piglin_brute] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_amy/core
 
 
 execute if score @s AzrEntityTimer matches 991 as @a[tag=azrPlayer,distance=..100] at @s unless score @s azr_progress_door2 matches 5.. run scoreboard players set @s azr_progress_door2 5
@@ -103,7 +103,7 @@ execute if score @s AzrEntityTimer matches 991 run effect give @a[distance=..150
 
 
 execute if score @s AzrEntityTimer matches 1001 as @a[tag=azrPlayer,distance=..50] at @s unless score @s azr_speedrun_door2 matches -9999.. run scoreboard players set @s azr_speedrun_door2 99999
-execute if score @s AzrEntityTimer matches 1122 as @a[tag=azrPlayer,distance=..50] at @s if score @s azr_speedrun_door2 >= @n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter] rng10 run scoreboard players operation @s azr_speedrun_door2 = @n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter] rng10
+execute if score @s AzrEntityTimer matches 1122 as @a[tag=azrPlayer,distance=..50] at @s if score @s azr_speedrun_door2 >= @n[x=-79177,y=50,z=-13,tag=AzrielMarker_encounter] rng10 run scoreboard players operation @s azr_speedrun_door2 = @n[x=-79177,y=50,z=-13,tag=AzrielMarker_encounter] rng10
 execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 1..3000 run scoreboard players add @s rng11 160
 execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 3001..3500 run scoreboard players add @s rng11 150
 execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 3501..4000 run scoreboard players add @s rng11 140
@@ -136,10 +136,10 @@ execute if score @s AzrEntityTimer matches 1123 positioned -79967 -51 17 as @a[t
 execute if score @s AzrEntityTimer matches 1123 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s run playsound ui.toast.challenge_complete player @s ~ ~ ~ 1 1
 
 execute if score @s AzrEntityTimer matches 1123 run scoreboard players set @s AzrEntityTimer 1900
-execute if score @s AzrEntityTimer matches 1900 as @a[tag=azrPlayer,tag=azrPlayer_door_participating] at @s run scoreboard players operation @s Azr_currency_weight += @n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter] rng11
-execute if score @s AzrEntityTimer matches 1900 as @a[tag=azrPlayer,tag=azrPlayer_door_participating] at @s run tellraw @s [{text:"神庭幻台 第贰场梦",bold:true,color:"light_purple"},{text:" 梦醒",bold:true,color:"white"},{text:"\n - 分数：",bold:false,color:"white"},{"score":{"name":"@n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter]","objective":"rng10"},color:"white"},{text:"\n - 历史最高纪录：",bold:false,color:"white"},{"score":{"name":"@s","objective":"azr_speedrun_door2"},bold:false,color:"white"},{text:"\n - 获得 ",bold:false,color:"white"},{"score":{"name":"@n[x=-79177,y=50,z=-16,tag=AzrielMarker_encounter]","objective":"rng11"},bold:false,color:"white"},{text:" 恶魔砝码",bold:false,color:"white"}]
+execute if score @s AzrEntityTimer matches 1900 as @a[tag=azrPlayer,tag=azrPlayer_door_participating] at @s run scoreboard players operation @s Azr_currency_weight += @n[x=-79177,y=50,z=-13,tag=AzrielMarker_encounter] rng11
+execute if score @s AzrEntityTimer matches 1900 as @a[tag=azrPlayer,tag=azrPlayer_door_participating] at @s run tellraw @s [{text:"神庭幻台 第贰场梦",bold:true,color:"light_purple"},{text:" 梦醒",bold:true,color:"white"},{text:"\n - 分数：",bold:false,color:"white"},{"score":{"name":"@n[x=-79177,y=50,z=-13,tag=AzrielMarker_encounter]","objective":"rng10"},color:"white"},{text:"\n - 历史最高纪录：",bold:false,color:"white"},{"score":{"name":"@s","objective":"azr_speedrun_door2"},bold:false,color:"white"},{text:"\n - 获得 ",bold:false,color:"white"},{"score":{"name":"@n[x=-79177,y=50,z=-13,tag=AzrielMarker_encounter]","objective":"rng11"},bold:false,color:"white"},{text:" 恶魔砝码",bold:false,color:"white"}]
 
-execute if score @s AzrEntityTimer matches 1900 run fill -79159 77 -34 -79195 77 2 minecraft:air replace tinted_glass
+execute if score @s AzrEntityTimer matches 1900 run fill -79159 77 -31 -79195 77 5 minecraft:air replace tinted_glass
 execute if score @s AzrEntityTimer matches 1900 run kill @e[type=block_display,distance=..30]
 execute if score @s AzrEntityTimer matches 1900 run kill @e[tag=AzrielMob_BossRush_Target,distance=..120]
 execute if score @s AzrEntityTimer matches 1900 run kill @e[tag=AzrielMob,distance=..120]
