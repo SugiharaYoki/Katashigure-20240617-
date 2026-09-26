@@ -33,4 +33,7 @@ execute if items entity @s player.cursor composter run function skyblock:azr/ass
 
 
 
+playsound minecraft:entity.evoker.prepare_summon player @a ~ ~ ~ 1 1.3
+playsound minecraft:ui.button.click player @s ~ ~ ~ 1 1.12
+
 execute if items entity @s player.cursor *[custom_data={"azrminigame_pvp_chest_menu":true}] run item replace entity @s player.cursor with air
