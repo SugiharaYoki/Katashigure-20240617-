@@ -31,8 +31,8 @@ execute if score @s rng1 matches 5.. at @s rotated as @s positioned ^ ^0.2 ^5.0 
 execute if score @s rng1 matches 5.. at @s rotated as @s positioned ^ ^0.2 ^5.5 run function skyblock:pvp/skywar/bless/skywar_ishtar_core36e
 execute if score @s rng1 matches 5.. at @s rotated as @s positioned ^ ^0.2 ^6.0 run function skyblock:pvp/skywar/bless/skywar_ishtar_core36e
 
-execute unless block ~ ~ ~ shroomlight run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 3 0.8
-execute unless block ~ ~ ~ shroomlight run kill @s[type=marker]
+execute unless block ~ ~-1 ~ shroomlight run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 3 0.8
+execute unless block ~ ~-1 ~ shroomlight run kill @s[type=marker]
 
 execute if score @s rng1 matches 7..9 if entity @s[tag=Skywar_Bless36_1] at @s run particle minecraft:happy_villager ~ ~1 ~ 0 2 0 0 10 normal @a[team=Team1_1]
 execute if score @s rng1 matches 7..9 if entity @s[tag=Skywar_Bless36_2] at @s run particle minecraft:happy_villager ~ ~1 ~ 0 2 0 0 10 normal @a[team=Team1_2]
