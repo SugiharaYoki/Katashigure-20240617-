@@ -37,6 +37,7 @@ tag @s remove azrUpgrateLifeVitae
 tag @s remove AZR_chainKill_activated
 tag @s remove AzrielEvent382315A
 
+tag @s remove AzrFlowerPVP
 tag @s remove AzrFlowerPVP_A
 tag @s remove AzrFlowerPVP_B
 
