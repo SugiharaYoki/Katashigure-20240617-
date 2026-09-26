@@ -45,4 +45,5 @@ execute if block -79959 39 20 minecraft:birch_button[powered=true] run setblock 
 
 #functional button - ladder
 execute if block -79950 35 -8 minecraft:birch_button[powered=true] run setblock -79946 37 -8 air destroy
+execute if block -79950 35 -8 minecraft:birch_button[powered=true] run fill -79934 41 -1 -79934 38 1 air destroy
 #functional button - password
