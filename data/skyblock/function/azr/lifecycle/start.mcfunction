@@ -168,6 +168,9 @@ scoreboard objectives add AzrSariel_Amulet_LaserDrag_timer dummy
 scoreboard objectives add AzrSariel_Amulet_WindShear_timer dummy
 scoreboard objectives add AzrSariel_Amulet_WaterRipple_cooldown dummy
 
+#PVP
+scoreboard objectives add AzrMinigame_PVP_leaderboard dummy
+scoreboard objectives add AzrMinigame_PVP_currency dummy
 
 #特殊食物
 scoreboard objectives add AzrSariel_Food_HardenedCookie dummy

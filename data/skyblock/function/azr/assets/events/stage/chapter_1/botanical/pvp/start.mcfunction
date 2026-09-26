@@ -23,4 +23,11 @@ execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng4=19}] run bossbar set azr:progress_bar_pvp style notched_6
 execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng4=19}] run bossbar set azr:progress_bar_pvp value 10
 
-execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng4=19}] run 
+execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng4=19}] positioned -79288 32 -118 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+
+
+#AzrMinigame_PVP_leaderboard
+#AzrMinigame_PVP_currency
+
+
+
