@@ -1,0 +1,76 @@
+
+scoreboard players add @s AzrEntityTimer 1
+
+execute if score @s AzrEntityTimer matches 21..1999 run scoreboard players add @s rng9 1
+execute if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:renegade music @s ~ ~ ~ 0.65
+execute if score @s rng9 matches 2860.. run scoreboard players set @s rng9 0
+
+
+
+
+#EVENT
+
+execute if score @s AzrEntityTimer matches 1 run fill -79933 28 4 -79929 31 4 minecraft:red_stained_glass replace air
+
+execute if score @s AzrEntityTimer matches 1..20 positioned -79931 28 -10 run function skyblock:azr/assets/events/effects/player_magic_release
+
+execute if score @s AzrEntityTimer matches 21 positioned -79931 28 -10 run function skyblock:azr/assets/mobs/skill/boss_mossflora/summon
+
+execute if score @s AzrEntityTimer matches 21 positioned -79931 28 -10 run bossbar add azr:boss_hp_bar_mossflora "失控的生命力 - 噬藓母虫"
+execute if score @s AzrEntityTimer matches 21 positioned -79931 28 -10 run bossbar set azr:boss_hp_bar_mossflora color red
+execute if score @s AzrEntityTimer matches 21 positioned -79931 28 -10 run bossbar set azr:boss_hp_bar_mossflora max 300
+execute if score @s AzrEntityTimer matches 21 positioned -79931 28 -10 run bossbar set azr:boss_hp_bar_mossflora players @a[tag=azrShowDialog]
+
+execute positioned -79931 28 -10 as @n[tag=AzrielBossmossflora,type=silverfish,distance=..50] store result score @s Health run data get entity @s Health
+execute positioned -79931 28 -10 store result bossbar azr:boss_hp_bar_mossflora value run scoreboard players get @n[tag=AzrielBossmossflora] Health
+
+execute as @n[tag=AzrielMob_smoke,type=silverfish,distance=0..6,tag=!AzrielMob_smoke_mossflorasummoned] run tag @s add AzrielMob_smoke_mossflorasummoned
+
+
+#AI
+
+
+   
+#ACTION
+
+
+    execute as @n[tag=AzrielBossmossflora] at @s run scoreboard players add @s rng8 1
+    execute as @n[tag=AzrielBossmossflora] at @s if score @s[scores={Health=180..250}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
+    execute as @n[tag=AzrielBossmossflora] at @s if score @s[scores={Health=..179}] rng8 matches 1 unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..8
+    execute as @n[tag=AzrielBossmossflora] at @s if score @s[scores={rng2=1..3}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_mossflora/attack_stop
+    execute as @n[tag=AzrielBossmossflora] at @s if score @s[scores={rng2=4..6}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_mossflora/attack_dash
+    execute as @n[tag=AzrielBossmossflora] at @s if score @s[scores={rng2=7..8}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_mossflora/attack_spore_release
+
+    execute as @n[tag=AzrielBossmossflora] at @s if entity @s[scores={Health=251..}] run scoreboard players set @s rng8 -20
+    execute as @n[tag=AzrielBossmossflora] at @s if score @s rng8 matches 999.. run scoreboard players set @s rng8 -20
+
+
+#MARKER
+
+
+
+#end
+   
+execute if score @s AzrEntityTimer matches 1999 if entity @n[tag=AzrielBossmossflora] run scoreboard players set @s AzrEntityTimer 999
+execute if score @s AzrEntityTimer matches 100..1999 unless entity @n[tag=AzrielBossmossflora] run scoreboard players set @s AzrEntityTimer 2000
+execute if score @s AzrEntityTimer matches 2001 run stopsound @a[tag=azrShowDialog]
+execute if score @s AzrEntityTimer matches 2001 run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 10 0.7
+execute if score @s AzrEntityTimer matches 2011 run title @a[tag=azrShowDialog] actionbar {text:"Extra Boss Annihilated",color:"green"}
+execute if score @s AzrEntityTimer matches 2011 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/sub_boss_mossflora
+execute if score @s AzrEntityTimer matches 2011 run bossbar remove azr:boss_hp_bar_mossflora
+execute if score @s AzrEntityTimer matches 2011 run fill -79933 28 4 -79929 31 4 air replace minecraft:red_stained_glass
+execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer,tag=!AZS_BoSB13] at @s run function skyblock:azr/assets/items/amulets/moss_spore
+execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB13
+execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s emerald 15
+execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+
+#out
+
+execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79939,dx=15,y=26,dy=8,z=-17,dz=25] run bossbar remove azr:boss_hp_bar_mossflora
+execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79939,dx=15,y=26,dy=8,z=-17,dz=25] run tp @n[tag=AzrielBossmossflora] ~ ~-200 ~
+execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79939,dx=15,y=26,dy=8,z=-17,dz=25] run kill @n[tag=AzrielBossmossflora]
+execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79939,dx=15,y=26,dy=8,z=-17,dz=25] run function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_mossflora
+execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79939,dx=15,y=26,dy=8,z=-17,dz=25] run stopsound @a[tag=azrShowDialog] music minecraft:renegade
+execute if score @s AzrEntityTimer matches ..1999 unless entity @a[tag=azrPlayer,x=-79939,dx=15,y=26,dy=8,z=-17,dz=25] run kill @s
+
+

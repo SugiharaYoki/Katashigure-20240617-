@@ -50,10 +50,10 @@ execute if score @s AzrEntityTimer matches 405 run title @a[distance=..50] title
 execute if score @s AzrEntityTimer matches 405 run fill -79159 77 -31 -79195 77 5 air replace minecraft:tinted_glass
 
 execute if score @s AzrEntityTimer matches 405 positioned -79167 50 -13 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
-execute if score @s AzrEntityTimer matches 420 positioned -79167 50 -13 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_mossboss/summon
+execute if score @s AzrEntityTimer matches 420 positioned -79167 50 -13 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_mossflora/summon
 execute if score @s AzrEntityTimer matches 420 positioned -79187 50 -13 run tag @e[tag=AzrielMob,distance=..30,type=silverfish] add AzrielMob_BossRush_Target
 execute if score @s AzrEntityTimer matches 420 positioned -79187 50 -13 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
-execute if score @s AzrEntityTimer matches 420..599 positioned -79167 50 -13 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_mossboss/core
+execute if score @s AzrEntityTimer matches 420..599 positioned -79167 50 -13 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_mossflora/core
 
 execute if score @s AzrEntityTimer matches 605 as @a[tag=azrPlayer,distance=..100] at @s unless score @s azr_progress_door1 matches 3.. run scoreboard players set @s azr_progress_door1 3
 execute if score @s AzrEntityTimer matches 605 run scoreboard players add @s rng11 5

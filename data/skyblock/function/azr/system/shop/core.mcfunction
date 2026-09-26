@@ -11,11 +11,11 @@ execute unless items entity @s player.crafting.3 *[!custom_data~{HandbookVitae:1
 
 
 #绿宝石管理
-execute if items entity @s[scores={Azr_skillPoints=1..}] container.* gold_nugget run function skyblock:azr/system/shop/gold_conversion
-execute if items entity @s[scores={Azr_skillPoints=1..}] container.* emerald run function skyblock:azr/system/shop/money_conversion
-execute if items entity @s[scores={Azr_skillPoints=1..}] container.* resin_clump run function skyblock:azr/system/shop/resin_conversion
-execute if items entity @s[scores={Azr_skillPoints=1..}] container.* diamond run function skyblock:azr/system/shop/money_temp_conversion
-execute if items entity @s[scores={Azr_skillPoints=1..}] container.* glistering_melon_slice run function skyblock:azr/system/shop/melon_conversion
+execute if items entity @s[scores={Azr_skillPoints=1..}] container.* gold_nugget run function skyblock:azr/system/shop/item_conversion/gold_conversion
+execute if items entity @s[scores={Azr_skillPoints=1..}] container.* emerald run function skyblock:azr/system/shop/item_conversion/money_conversion
+execute if items entity @s[scores={Azr_skillPoints=1..}] container.* resin_clump run function skyblock:azr/system/shop/item_conversion/resin_conversion
+execute if items entity @s[scores={Azr_skillPoints=1..}] container.* diamond run function skyblock:azr/system/shop/item_conversion/money_temp_conversion
+execute if items entity @s[scores={Azr_skillPoints=1..}] container.* glistering_melon_slice run function skyblock:azr/system/shop/item_conversion/melon_conversion
 
 #灵能入口
 execute if items entity @s player.cursor *[custom_data~{PsychicVitae:1b}] run function skyblock:azr/system/player/skills/chainkill/build

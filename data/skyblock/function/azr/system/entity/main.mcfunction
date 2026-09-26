@@ -21,7 +21,7 @@ execute if score stage Azr_system matches 10 as @s[tag=AzrielBossA] at @s if sco
 execute if score stage Azr_system matches 23..24 as @s[tag=AzrielBossA] at @s run function skyblock:azr/assets/events/stage/chapter_2/stage_boss2
 
 #第二关-第三关 5
-execute if score stage Azr_system matches 5..43 if score playerCount Azr_system matches 1.. positioned -79931 28 -5 as @s[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/mobs/skill/boss_mossboss/core
+execute if score stage Azr_system matches 5..43 if score playerCount Azr_system matches 1.. positioned -79931 28 -5 as @s[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/mobs/skill/boss_mossflora/core
 execute if score stage Azr_system matches 8..43 if score playerCount Azr_system matches 1.. positioned -80008 25 200 as @s[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/mobs/skill/boss_diesel/core
 execute if score stage Azr_system matches 8..43 if score playerCount Azr_system matches 1.. positioned -79820 43 136 as @s[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/mobs/skill/boss_assassin/core
 execute if score playerCount Azr_system matches 1.. positioned -79177 50 -13 as @s[tag=AzrielMarker_encounter,distance=0..0.5,tag=azr_door_1] run function skyblock:azr/assets/mobs/skill/boss_rush/door_1

@@ -178,7 +178,7 @@ setblock -79934 31 17 chest[facing=east]{Inventory:[]}
 item replace block -79934 31 17 container.12 with minecraft:emerald 3
 item replace block -79934 31 17 container.14 with minecraft:emerald 3
 
-function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_mossboss
+function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_mossflora
 
   #苔藓钟乳洞
 setblock -79889 29 8 chest[facing=south]{Inventory:[]}

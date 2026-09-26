@@ -103,7 +103,7 @@ execute if entity @s[tag=AZR_chainKill_activated] if entity @n[tag=MG_AZR0MOB,di
 execute if entity @s[tag=AZR_chainKill_activated] if entity @n[tag=MG_AZR0MOB,distance=0..19] run title @s[tag=AZR_chainKillUpg_countvisible,scores={AZR_chainKill_count=1}] actionbar [{text:"绿宝石 ",color:"green",bold:1b},{"score":{"name":"@s","objective":"Azr0_emerald"},color:"green",bold: false},{text:"   - 索命连击 ×1 -",color:"gold",bold:1b},{text:"   钻石 ",color:"aqua",bold:1b},{"score":{"name":"@s","objective":"Azr_diamond"},color:"aqua",bold: false}]
 execute if entity @s[tag=AZR_chainKill_activated] if entity @n[tag=MG_AZR0MOB,distance=0..19] run title @s[tag=!AZR_chainKillUpg_countvisible] actionbar [{text:"绿宝石 ",color:"green",bold:1b},{"score":{"name":"@s","objective":"Azr0_emerald"},color:"green",bold: false},{text:"   - 索命连击 -",color:"gold",bold:1b},{text:"   钻石 ",color:"aqua",bold:1b},{"score":{"name":"@s","objective":"Azr_diamond"},color:"aqua",bold: false}]
 
-execute if score @s[tag=AZR_chainKill_activated] AZR_chainKill_damage matches 1.. run function skyblock:azr/system/player/skills/chainkill/chain_kill_activate
+execute if score @s[tag=AZR_chainKill_activated] AZR_chainKill_damage matches 1.. run function skyblock:azr/system/player/skills/chainkill/chain_kill_during
 
 xp set @s 30 levels
 

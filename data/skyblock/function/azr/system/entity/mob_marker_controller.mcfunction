@@ -8,7 +8,7 @@ execute as @s[tag=AzrielMob_candle_angel_candle_throw_marker] at @s run function
 
 execute as @s[tag=AzrielMob_electric_blast] at @s run function skyblock:azr/assets/mobs/skill/marinus/marker_electric
 
-execute as @s[tag=AzrielMob_boss_mossboss_spore_marker] at @s run function skyblock:azr/assets/mobs/skill/boss_mossboss/marker_spore
+execute as @s[tag=AzrielMob_boss_mossflora_spore_marker] at @s run function skyblock:azr/assets/mobs/skill/boss_mossflora/marker_spore
 
 execute as @s[tag=AzrielMob_boss_centurion_sprint_axe_marker] at @s run function skyblock:azr/assets/mobs/skill/boss_centurion/marker_sprint_axe
 execute as @s[tag=AzrielMob_boss_legate_sprint_axe_marker] at @s run function skyblock:azr/assets/mobs/skill/boss_legate/marker_sprint_axe
@@ -28,15 +28,15 @@ execute as @s[tag=AzrielMob_bossrush_marinus_anchor_cross_marker] at @s run func
 execute if entity @s[tag=AzrielMob_sonic_eye_item_display] run function skyblock:azr/assets/mobs/skill/sonic_eye_display
 execute if entity @s[tag=AzrielMob_sonic_eye_lord_item_display] run function skyblock:azr/assets/mobs/skill/sonic_eye_lord_display
 
-execute if entity @s[tag=AzrielMob_trap_fang] run function skyblock:azr/assets/mobs/skill/trap_fang
-execute if entity @s[tag=AzrielMob_trap_fang_auto] run function skyblock:azr/assets/mobs/skill/trap_fang_auto
-execute if entity @s[tag=AzrielMob_trap_sonic_laser] run function skyblock:azr/assets/mobs/skill/trap_sonic_laser
-execute if entity @s[tag=AzrielMob_trap_metal_gas] run function skyblock:azr/assets/mobs/skill/trap_metal_gas
-execute if entity @s[tag=AzrielMob_trap_dripstone] run function skyblock:azr/assets/mobs/skill/trap_dripstone
-execute if entity @s[tag=AzrielMob_trap_axe] run function skyblock:azr/assets/mobs/skill/trap_axe
-execute if entity @s[tag=AzrielMob_trap_timer_bomb] run function skyblock:azr/assets/mobs/skill/trap_timer_bomb
-execute if entity @s[tag=AzrielMob_trap_slow_vine] run function skyblock:azr/assets/mobs/skill/trap_slow_vine
-execute if entity @s[tag=AzrielMob_trap_wave] run function skyblock:azr/assets/mobs/skill/trap_wave
+execute if entity @s[tag=AzrielMob_trap_fang] run function skyblock:azr/assets/mobs/skill/trap/fang
+execute if entity @s[tag=AzrielMob_trap_fang_auto] run function skyblock:azr/assets/mobs/skill/trap/fang_auto
+execute if entity @s[tag=AzrielMob_trap_sonic_laser] run function skyblock:azr/assets/mobs/skill/trap/sonic_laser
+execute if entity @s[tag=AzrielMob_trap_metal_gas] run function skyblock:azr/assets/mobs/skill/trap/metal_gas
+execute if entity @s[tag=AzrielMob_trap_dripstone] run function skyblock:azr/assets/mobs/skill/trap/dripstone
+execute if entity @s[tag=AzrielMob_trap_axe] run function skyblock:azr/assets/mobs/skill/trap/axe
+execute if entity @s[tag=AzrielMob_trap_timer_bomb] run function skyblock:azr/assets/mobs/skill/trap/timer_bomb
+execute if entity @s[tag=AzrielMob_trap_slow_vine] run function skyblock:azr/assets/mobs/skill/trap/slow_vine
+execute if entity @s[tag=AzrielMob_trap_wave] run function skyblock:azr/assets/mobs/skill/trap/wave
 
 execute if entity @s[tag=AzrielMob_mob_marker_dripstone_aiguille] run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille
 
