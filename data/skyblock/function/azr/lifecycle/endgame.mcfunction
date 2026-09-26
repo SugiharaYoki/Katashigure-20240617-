@@ -40,6 +40,7 @@ bossbar remove azr:boss_hp_bar_slime
 bossbar remove azr:boss_hp_bar_villain
 bossbar remove azr:boss_hp_bar_working
 bossbar remove azr:boss_hp_bar_0
+bossbar remove azr:progress_bar_pvp
 #______________________________________________________________#
 #清理小队
 team remove AzrBossA
