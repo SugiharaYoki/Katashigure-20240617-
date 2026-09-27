@@ -22,6 +22,7 @@ execute if entity @s[tag=A_winned] as @a[tag=azrShowDialog] at @s run tellraw @s
 execute if entity @s[tag=B_winned] as @a[tag=azrShowDialog] at @s run tellraw @s [{text:"胜利者：",bold:true,color:"white"},{bold: false,selector:"@p[tag=AzrFlowerPVP_b]",color:"white"}]
 execute if entity @s[tag=A_winned] as @a[tag=AzrFlowerPVP_A] at @s run scoreboard players add @s AzrMinigame_PVP_leaderboard 1
 execute if entity @s[tag=B_winned] as @a[tag=AzrFlowerPVP_B] at @s run scoreboard players add @s AzrMinigame_PVP_leaderboard 1
+scoreboard objectives setdisplay sidebar AzrMinigame_PVP_leaderboard
 
 tag @a remove AzrFlowerPVP
 tag @a remove AzrFlowerPVP_A
