@@ -20,8 +20,12 @@ scoreboard players operation @a[tag=AzrFlowerPVP] Azr_currency_weight += @n[x=-7
 execute as @a[tag=azrPlayer,tag=AzrFlowerPVP] at @s run tellraw @s [{text:"花艺竞赛 - 塔防PVP模式",bold:true,color:"light_purple"},{text:" 对战结束",bold:true,color:"white"},{text:"\n - 获得 ",bold:false,color:"white"},{"score":{"name":"@n[x=-79288,y=32,z=-118,distance=..5,type=marker,tag=AzrielMarker_encounter]","objective":"rng20"},bold:false,color:"white"},{text:" 恶魔砝码",bold:false,color:"white"}]
 execute if entity @s[tag=A_winned] as @a[tag=azrShowDialog] at @s run tellraw @s [{text:"胜利者：",bold:true,color:"white"},{bold: false,selector:"@p[tag=AzrFlowerPVP_A]",color:"white"}]
 execute if entity @s[tag=B_winned] as @a[tag=azrShowDialog] at @s run tellraw @s [{text:"胜利者：",bold:true,color:"white"},{bold: false,selector:"@p[tag=AzrFlowerPVP_b]",color:"white"}]
+execute if entity @s[tag=A_winned] as @a[tag=AzrFlowerPVP_A] at @s run scoreboard players add @s AzrMinigame_PVP_leaderboard 1
+execute if entity @s[tag=B_winned] as @a[tag=AzrFlowerPVP_B] at @s run scoreboard players add @s AzrMinigame_PVP_leaderboard 1
 
 tag @a remove AzrFlowerPVP
+tag @a remove AzrFlowerPVP_A
+tag @a remove AzrFlowerPVP_B
 execute positioned -79288 32 -118 run kill @s[type=marker,tag=AzrielMarker_encounter]
 bossbar remove azr:progress_bar_pvp
 
