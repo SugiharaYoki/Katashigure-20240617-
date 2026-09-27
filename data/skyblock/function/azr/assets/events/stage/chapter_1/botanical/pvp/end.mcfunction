@@ -17,7 +17,7 @@ scoreboard players operation @n[x=-79288,y=32,z=-118,distance=..5,type=marker,ta
 scoreboard players operation @n[x=-79288,y=32,z=-118,distance=..5,type=marker,tag=AzrielMarker_encounter] rng20 /= 10 constant
 scoreboard players operation @a[tag=AzrFlowerPVP] Azr_currency_weight += @n[x=-79288,y=32,z=-118,distance=..5,type=marker,tag=AzrielMarker_encounter] rng20
 
-execute as @a[tag=azrPlayer,tag=AzrFlowerPVP] at @s run tellraw @s [{text:"花艺竞赛 - 塔防PVP模式",bold:true,color:"light_purple"},{text:" 梦醒",bold:true,color:"white"},{text:"\n - 获得 ",bold:false,color:"white"},{"score":{"name":"@n[x=-79288,y=32,z=-118,distance=..5,type=marker,tag=AzrielMarker_encounter]","objective":"rng20"},bold:false,color:"white"},{text:" 恶魔砝码",bold:false,color:"white"}]
+execute as @a[tag=azrPlayer,tag=AzrFlowerPVP] at @s run tellraw @s [{text:"花艺竞赛 - 塔防PVP模式",bold:true,color:"light_purple"},{text:" 对战结束",bold:true,color:"white"},{text:"\n - 获得 ",bold:false,color:"white"},{"score":{"name":"@n[x=-79288,y=32,z=-118,distance=..5,type=marker,tag=AzrielMarker_encounter]","objective":"rng20"},bold:false,color:"white"},{text:" 恶魔砝码",bold:false,color:"white"}]
 execute if entity @s[tag=A_winned] as @a[tag=azrShowDialog] at @s run tellraw @s [{text:"胜利者：",bold:true,color:"white"},{bold: false,selector:"@p[tag=AzrFlowerPVP_A]",color:"white"}]
 execute if entity @s[tag=B_winned] as @a[tag=azrShowDialog] at @s run tellraw @s [{text:"胜利者：",bold:true,color:"white"},{bold: false,selector:"@p[tag=AzrFlowerPVP_b]",color:"white"}]
 
