@@ -26,6 +26,10 @@ execute if items entity @s player.cursor composter run function skyblock:azr/ass
 
 execute if items entity @s[tag=AzrFlowerPVP_A] player.cursor golden_apple run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_upgrade {skill_id:1,team:A}
 execute if items entity @s[tag=AzrFlowerPVP_B] player.cursor golden_apple run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_upgrade {skill_id:1,team:B}
+execute if items entity @s[tag=AzrFlowerPVP_A] player.cursor copper_sword run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_upgrade {skill_id:2,team:A}
+execute if items entity @s[tag=AzrFlowerPVP_B] player.cursor copper_sword run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_upgrade {skill_id:2,team:B}
+execute if items entity @s[tag=AzrFlowerPVP_A] player.cursor copper_boots run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_upgrade {skill_id:3,team:A}
+execute if items entity @s[tag=AzrFlowerPVP_B] player.cursor copper_boots run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_upgrade {skill_id:3,team:B}
 
 
 
