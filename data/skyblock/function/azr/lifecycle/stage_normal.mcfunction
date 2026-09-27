@@ -62,7 +62,7 @@ execute if score stage Azr_system matches 27 run function skyblock:azr/assets/ev
 execute if score stage Azr_system matches 29 run function skyblock:azr/assets/events/stage/chapter_3/stage10
 
 #休憩所
-execute if score stage Azr_system matches 1.. run function skyblock:azr/assets/events/stage/chapter_1/stage1_angelbotany
+function skyblock:azr/assets/events/stage/chapter_1/stage1_angelbotany
 
 #【第四章】
 #工厂
