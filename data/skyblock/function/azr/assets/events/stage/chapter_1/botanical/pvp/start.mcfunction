@@ -5,6 +5,9 @@ scoreboard players add @s rng4 1
 
 execute as @s[scores={rng4=2}] positioned -79969 -43 -16 run tellraw @a[tag=azrPlayer,distance=..10] [{text:"花艺竞赛 - 塔防PVP模式",bold:true,color:"light_purple"}]
 
+execute as @s[scores={rng4=7}] positioned -79969 -43 -16 as @a[tag=azrPlayer,distance=..30] at @s run playsound minecraft:block.note_block.iron_xylophone block @s ~ ~ ~ 3 0.6
+execute as @s[scores={rng4=11}] positioned -79969 -43 -16 as @a[tag=azrPlayer,distance=..30] at @s run playsound minecraft:block.note_block.iron_xylophone block @s ~ ~ ~ 3 0.6
+execute as @s[scores={rng4=15}] positioned -79969 -43 -16 as @a[tag=azrPlayer,distance=..30] at @s run playsound minecraft:block.note_block.iron_xylophone block @s ~ ~ ~ 3 0.6
 execute as @s[scores={rng4=7}] positioned -79969 -43 -16 run tellraw @a[tag=azrPlayer,distance=..10] [{text:"-< 3 >-",bold:true,color:"gray"}]
 execute as @s[scores={rng4=11}] positioned -79969 -43 -16 run tellraw @a[tag=azrPlayer,distance=..10] [{text:"-< 2 >-",bold:true,color:"gray"}]
 execute as @s[scores={rng4=15}] positioned -79969 -43 -16 run tellraw @a[tag=azrPlayer,distance=..10] [{text:"-< 1 >-",bold:true,color:"gray"}]
