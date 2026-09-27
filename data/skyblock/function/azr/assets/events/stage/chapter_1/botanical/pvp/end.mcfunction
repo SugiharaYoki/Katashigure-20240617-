@@ -24,3 +24,6 @@ execute if entity @s[tag=B_winned] as @a[tag=azrShowDialog] at @s run tellraw @s
 tag @a remove AzrFlowerPVP
 execute positioned -79288 32 -118 run kill @s[type=marker,tag=AzrielMarker_encounter]
 bossbar remove azr:progress_bar_pvp
+
+execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players set @s rng4 0
+
