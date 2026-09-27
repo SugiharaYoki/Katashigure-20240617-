@@ -24,7 +24,8 @@ execute if items entity @s player.cursor composter run function skyblock:azr/ass
 
 
 
-execute if items entity @s player.cursor golden_apple run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_upgrade {skill_id:1,cost:40}
+execute if items entity @s[tag=AzrFlowerPVP_A] player.cursor golden_apple run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_upgrade {skill_id:1,team:A}
+execute if items entity @s[tag=AzrFlowerPVP_B] player.cursor golden_apple run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_upgrade {skill_id:1,team:B}
 
 
 
@@ -34,7 +35,7 @@ execute if items entity @s player.cursor golden_apple run function skyblock:azr/
 
 
 
-playsound minecraft:entity.evoker.prepare_summon player @a ~ ~ ~ 1 1.3
-playsound minecraft:ui.button.click player @s ~ ~ ~ 1 1.12
+execute at @s run playsound minecraft:entity.evoker.prepare_summon player @a ~ ~ ~ 1 1.3
+execute at @s run playsound minecraft:ui.button.click player @s ~ ~ ~ 1 1.12
 
 execute if items entity @s player.cursor *[custom_data={"azrminigame_pvp_chest_menu":true}] run item replace entity @s player.cursor with air
