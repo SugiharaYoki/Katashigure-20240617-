@@ -22,7 +22,7 @@ execute as @s[scores={rng4=19}] positioned -79961.59 -41.94 -15.38 as @p[tag=azr
 execute as @s[scores={rng4=19}] positioned -79975.51 -41.94 -15.67 as @a[tag=AzrFlowerPVP] at @s run playsound entity.player.teleport player @a ~ ~ ~ 1 1.0
 
 
-execute as @s[scores={rng4=19}] run bossbar add azr:progress_bar_pvp "花 艺 竞 赛"
+execute as @s[scores={rng4=19}] run bossbar add azr:progress_bar_pvp {text:"花 艺 竞 赛",bold:true,color:"#d1ffb8"}
 execute as @s[scores={rng4=19}] run bossbar set azr:progress_bar_pvp color green
 execute as @s[scores={rng4=19}] run bossbar set azr:progress_bar_pvp players @a[tag=azrShowDialog]
 execute as @s[scores={rng4=19}] run bossbar set azr:progress_bar_pvp max 10
