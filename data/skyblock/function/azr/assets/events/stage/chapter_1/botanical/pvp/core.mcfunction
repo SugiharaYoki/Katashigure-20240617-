@@ -1,5 +1,6 @@
 scoreboard players add @s rng1 1
 scoreboard players add @s rng2 1
+scoreboard players add @s rng3 1
 scoreboard players add @s rng20 1
 
 execute as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/player
@@ -10,6 +11,13 @@ execute if score @s rng2 matches 3 as @a[tag=AzrFlowerPVP] at @s run title @s ac
 execute if score @s rng2 matches 3 run scoreboard players add @a[tag=AzrFlowerPVP] AzrMinigame_PVP_currency 1
 execute if score @s rng2 matches 3.. run scoreboard players set @s rng2 0
 
+execute if score @s rng3 matches 8 if score AzrFlowerPVP_A rng6 matches 1.. run scoreboard players add @a[tag=AzrFlowerPVP,tag=AzrFlowerPVP_A] AzrMinigame_PVP_currency 1
+execute if score @s rng3 matches 8 if score AzrFlowerPVP_A rng6 matches 2.. run scoreboard players add @a[tag=AzrFlowerPVP,tag=AzrFlowerPVP_A] AzrMinigame_PVP_currency 1
+execute if score @s rng3 matches 8 if score AzrFlowerPVP_A rng6 matches 3.. run scoreboard players add @a[tag=AzrFlowerPVP,tag=AzrFlowerPVP_A] AzrMinigame_PVP_currency 1
+execute if score @s rng3 matches 8 if score AzrFlowerPVP_B rng6 matches 1.. run scoreboard players add @a[tag=AzrFlowerPVP,tag=AzrFlowerPVP_B] AzrMinigame_PVP_currency 1
+execute if score @s rng3 matches 8 if score AzrFlowerPVP_B rng6 matches 2.. run scoreboard players add @a[tag=AzrFlowerPVP,tag=AzrFlowerPVP_B] AzrMinigame_PVP_currency 1
+execute if score @s rng3 matches 8 if score AzrFlowerPVP_B rng6 matches 3.. run scoreboard players add @a[tag=AzrFlowerPVP,tag=AzrFlowerPVP_B] AzrMinigame_PVP_currency 1
+execute if score @s rng3 matches 8.. run scoreboard players set @s rng2 0
 
 execute at @s as @e[tag=AzrielMob,tag=!AzrielMob_null_loot,distance=..60] run data modify entity @s DeathLootTable set value "skyblock:null"
 execute at @s as @e[tag=AzrielMob,tag=!AzrielMob_null_loot,distance=..60] run tag @s add AzrielMob_null_loot

@@ -48,6 +48,15 @@ $execute if score AzrFlowerPVP_$(team) rng5 matches 2 positioned $(x) 33 -106 un
 $execute if score AzrFlowerPVP_$(team) rng5 matches 3.. positioned $(x) 33 -106 unless items block ~ ~ ~ container.10 * run item replace block ~ ~ ~ container.10 with structure_void[custom_data={"azrminigame_pvp_chest_menu":true},custom_name= \
 {text:"强化自身移动与攻击速度",italic:0b,color:"#f4a106",bold:1b},lore=[{text:"当前等级：满级",color:"#ffe297",italic:0b,bold: false}]]
 
+$execute if score AzrFlowerPVP_$(team) rng6 matches 0 positioned $(x) 33 -106 unless items block ~ ~ ~ container.18 * run item replace block ~ ~ ~ container.18 with emerald[custom_data={"azrminigame_pvp_chest_menu":true},custom_name= \
+{text:"每2秒获得额外的能量值",italic:0b,color:"#f4a106",bold:1b},lore=[{text:"当前等级：0",color:"#ffe297",italic:0b,bold: false},{text:"升级消耗：50",color:"#9e81ff",italic:0b,bold: false}]]
+$execute if score AzrFlowerPVP_$(team) rng6 matches 1 positioned $(x) 33 -106 unless items block ~ ~ ~ container.18 * run item replace block ~ ~ ~ container.18 with emerald[custom_data={"azrminigame_pvp_chest_menu":true},custom_name= \
+{text:"每2秒获得额外的能量值",italic:0b,color:"#f4a106",bold:1b},lore=[{text:"当前等级：1",color:"#ffe297",italic:0b,bold: false},{text:"升级消耗：100",color:"#9e81ff",italic:0b,bold: false}]]
+$execute if score AzrFlowerPVP_$(team) rng6 matches 2 positioned $(x) 33 -106 unless items block ~ ~ ~ container.18 * run item replace block ~ ~ ~ container.18 with emerald[custom_data={"azrminigame_pvp_chest_menu":true},custom_name= \
+{text:"每2秒获得额外的能量值",italic:0b,color:"#f4a106",bold:1b},lore=[{text:"当前等级：2",color:"#ffe297",italic:0b,bold: false},{text:"升级消耗：200",color:"#9e81ff",italic:0b,bold: false}]]
+$execute if score AzrFlowerPVP_$(team) rng6 matches 3.. positioned $(x) 33 -106 unless items block ~ ~ ~ container.18 * run item replace block ~ ~ ~ container.18 with structure_void[custom_data={"azrminigame_pvp_chest_menu":true},custom_name= \
+{text:"每2秒获得额外的能量值",italic:0b,color:"#f4a106",bold:1b},lore=[{text:"当前等级：满级",color:"#ffe297",italic:0b,bold: false}]]
+
 
 
 
