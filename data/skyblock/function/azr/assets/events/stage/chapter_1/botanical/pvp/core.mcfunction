@@ -9,6 +9,10 @@ execute as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/events/stage
 
 execute if score @s rng2 matches 3 as @a[tag=AzrFlowerPVP] at @s run title @s actionbar [{text:"能量值 ",color: "aqua"},{"score": {"name": "@s","objective": "AzrMinigame_PVP_currency"},color: "aqua"}]
 execute if score @s rng2 matches 3 run scoreboard players add @a[tag=AzrFlowerPVP] AzrMinigame_PVP_currency 1
+execute if score @s[scores={rng1=240..}] rng2 matches 3 run scoreboard players add @a[tag=AzrFlowerPVP] AzrMinigame_PVP_currency 1
+execute if score @s[scores={rng1=720..}] rng2 matches 3 run scoreboard players add @a[tag=AzrFlowerPVP] AzrMinigame_PVP_currency 1
+execute if score @s[scores={rng1=1200..}] rng2 matches 3 run scoreboard players add @a[tag=AzrFlowerPVP] AzrMinigame_PVP_currency 1
+execute if score @s[scores={rng1=1800..}] rng2 matches 3 run scoreboard players add @a[tag=AzrFlowerPVP] AzrMinigame_PVP_currency 1
 execute if score @s rng2 matches 3.. run scoreboard players set @s rng2 0
 
 execute if score @s rng3 matches 8 store result score @s rng4 run random value 1..4
@@ -24,6 +28,7 @@ execute if score @s rng3 matches 8.. run scoreboard players set @s rng3 0
 execute at @s as @e[tag=AzrielMob,tag=!AzrielMob_null_loot,distance=..60] run data modify entity @s DeathLootTable set value "skyblock:null"
 execute at @s as @e[tag=AzrielMob,tag=!AzrielMob_null_loot,distance=..60] run tag @s add AzrielMob_null_loot
 
+execute if score @s rng2 matches 1 run scoreboard players add @a[tag=AzrFlowerPVP] AzrMinigame_PVP_currency 80
 execute if score @s rng1 matches 1 run scoreboard players set AzrFlowerPVP_A rng1 0
 execute if score @s rng1 matches 1 run scoreboard players set AzrFlowerPVP_A rng2 0
 execute if score @s rng1 matches 1 run scoreboard players set AzrFlowerPVP_A rng3 0
