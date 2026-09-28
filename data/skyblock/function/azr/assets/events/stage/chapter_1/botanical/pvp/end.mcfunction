@@ -13,9 +13,12 @@ execute positioned -79969 -43 -16 as @a[tag=azrPlayer,distance=..20] at @s run p
 execute positioned -79969 -43 -16 as @a[tag=azrPlayer,distance=..20] at @s rotated ~ 0 run function skyblock:azr/assets/events/effects/player_magic_release
 execute positioned -79969 -43 -16 as @a[tag=azrPlayer,distance=..20] at @s run playsound ui.toast.challenge_complete player @s ~ ~ ~ 1 1
 
-scoreboard players operation @n[x=-79288,y=32,z=-118,distance=..5,type=marker,tag=AzrielMarker_encounter] rng20 /= 4 constant
-scoreboard players operation @n[x=-79288,y=32,z=-118,distance=..5,type=marker,tag=AzrielMarker_encounter] rng20 /= 10 constant
-scoreboard players operation @a[tag=AzrFlowerPVP] Azr_currency_weight += @n[x=-79288,y=32,z=-118,distance=..5,type=marker,tag=AzrielMarker_encounter] rng20
+scoreboard players operation AzrFlowerPVP_A AzrMinigame_PVP_currency /= 4 constant
+scoreboard players operation AzrFlowerPVP_A AzrMinigame_PVP_currency /= 10 constant
+scoreboard players operation @a[tag=AzrFlowerPVP_A] Azr_currency_weight += AzrFlowerPVP_A AzrMinigame_PVP_currency
+scoreboard players operation AzrFlowerPVP_B AzrMinigame_PVP_currency /= 4 constant
+scoreboard players operation AzrFlowerPVP_B AzrMinigame_PVP_currency /= 10 constant
+scoreboard players operation @a[tag=AzrFlowerPVP_B] Azr_currency_weight += AzrFlowerPVP_B AzrMinigame_PVP_currency
 
 effect clear @a[tag=AzrFlowerPVP]
 
