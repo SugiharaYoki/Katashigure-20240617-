@@ -12,7 +12,7 @@ execute if score @s rng1 matches 15 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 28 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“这有什么说法吗？我以为我可以就像传送一样‘嗖’地传到神庭去。”",color:"white"}]
 
 execute if score @s rng1 matches 41 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
-execute if score @s rng1 matches 41 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“很遗憾，这种只有天使才做得到.通往神庭的传送门利用了天使长米迦勒的权能，是一个空间折跃通道，可以无视神魔两界的边界。”",color:"white"}]
+execute if score @s rng1 matches 41 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“很遗憾，这种只有天使才做得到。通往神庭的传送门利用了天使长米迦勒的权能，是一个空间折跃通道，可以无视神魔两界的边界。”",color:"white"}]
 
 execute if score @s rng1 matches 56 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 execute if score @s rng1 matches 56 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎小姐可能也有过传送的经历，但那一般是依靠生命树根系或魔界的黑石地脉才能达成。”",color:"white"}]
