@@ -13,3 +13,5 @@ execute if items entity @s container.* *[custom_data={"azrminigame_pvp_chest_men
 
 
 
+
+clear @s *[custom_data={"azrminigame_pvp_chest_menu":true}]
