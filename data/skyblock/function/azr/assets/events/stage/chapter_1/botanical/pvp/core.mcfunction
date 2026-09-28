@@ -34,6 +34,7 @@ execute if score @s rng1 matches 1 run scoreboard players set AzrFlowerPVP_B rng
 execute if score @s rng1 matches 1 run scoreboard players set AzrFlowerPVP_B rng8 1
 execute if score @s rng1 matches 1 run scoreboard players set AzrFlowerPVP_B rng9 1
 execute if score @s rng1 matches 1 run scoreboard players set AzrFlowerPVP_B rng10 1
+execute if score @s rng1 matches 4 at @s if entity @a[tag=ENKIDU] run scoreboard players set @s rng1 3
 execute if score @s rng1 matches 5.. at @s unless entity @a[tag=AzrFlowerPVP_A,distance=..60] run tag @s add B_winned
 execute if score @s rng1 matches 5.. at @s unless entity @a[tag=AzrFlowerPVP_B,distance=..60] run tag @s add A_winned
 execute if score @s rng1 matches 5.. at @s unless entity @a[tag=AzrFlowerPVP_A,distance=..60] run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/end
