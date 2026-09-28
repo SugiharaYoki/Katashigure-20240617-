@@ -30,6 +30,9 @@ tag @a remove AzrFlowerPVP
 tag @a remove AzrFlowerPVP_A
 tag @a remove AzrFlowerPVP_B
 execute positioned -79288 32 -118 run kill @s[type=marker,tag=AzrielMarker_encounter]
+execute positioned -79288 32 -118 run kill @e[tag=AzrielMob,distance=..100]
+execute positioned -79288 32 -118 run kill @e[distance=..100]
+execute positioned -79288 32 -118 run kill @e[distance=..100,type=item]
 bossbar remove azr:progress_bar_pvp
 
 execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players set @s rng4 0
