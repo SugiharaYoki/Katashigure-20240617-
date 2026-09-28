@@ -11,6 +11,8 @@ execute if score @s rng2 matches 3 as @a[tag=AzrFlowerPVP] at @s run title @s ac
 execute if score @s rng2 matches 3 run scoreboard players add @a[tag=AzrFlowerPVP] AzrMinigame_PVP_currency 1
 execute if score @s rng2 matches 3.. run scoreboard players set @s rng2 0
 
+execute if score @s rng3 matches 8 store result score @s rng4 run random value 1..4
+execute if score @s rng3 matches 8 if score @s rng4 matches 1 run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/field/resin_drop
 execute if score @s rng3 matches 8 if score AzrFlowerPVP_A rng6 matches 1.. run scoreboard players add @a[tag=AzrFlowerPVP,tag=AzrFlowerPVP_A] AzrMinigame_PVP_currency 1
 execute if score @s rng3 matches 8 if score AzrFlowerPVP_A rng6 matches 2.. run scoreboard players add @a[tag=AzrFlowerPVP,tag=AzrFlowerPVP_A] AzrMinigame_PVP_currency 1
 execute if score @s rng3 matches 8 if score AzrFlowerPVP_A rng6 matches 3.. run scoreboard players add @a[tag=AzrFlowerPVP,tag=AzrFlowerPVP_A] AzrMinigame_PVP_currency 1
