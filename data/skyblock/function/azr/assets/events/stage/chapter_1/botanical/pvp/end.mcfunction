@@ -34,12 +34,6 @@ bossbar remove azr:progress_bar_pvp
 
 execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players set @s rng4 0
 
-setblock -79312 34 -106 chest[facing=north]{Inventory:[]}
-setblock -79309 33 -106 waxed_oxidized_copper_chest[facing=north]{Inventory:[]}
-setblock -79315 33 -106 waxed_copper_chest[facing=north]{Inventory:[]}
-setblock -79264 34 -106 chest[facing=north]{Inventory:[]}
-setblock -79261 33 -106 waxed_oxidized_copper_chest[facing=north]{Inventory:[]}
-setblock -79267 33 -106 waxed_copper_chest[facing=north]{Inventory:[]}
 
 
 

@@ -31,6 +31,13 @@ execute as @s[scores={rng4=19}] run bossbar set azr:progress_bar_pvp value 10
 
 execute as @s[scores={rng4=19}] positioned -79288 32 -118 run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 
+execute as @s[scores={rng4=19}] run forceload add -79312 -106
+execute as @s[scores={rng4=19}] run setblock -79312 34 -106 chest[facing=north]{Inventory:[]}
+execute as @s[scores={rng4=19}] run setblock -79309 33 -106 waxed_oxidized_copper_chest[facing=north]{Inventory:[]}
+execute as @s[scores={rng4=19}] run setblock -79315 33 -106 waxed_copper_chest[facing=north]{Inventory:[]}
+execute as @s[scores={rng4=19}] run setblock -79264 34 -106 chest[facing=north]{Inventory:[]}
+execute as @s[scores={rng4=19}] run setblock -79261 33 -106 waxed_oxidized_copper_chest[facing=north]{Inventory:[]}
+execute as @s[scores={rng4=19}] run setblock -79267 33 -106 waxed_copper_chest[facing=north]{Inventory:[]}
 
 #AzrMinigame_PVP_leaderboard
 #AzrMinigame_PVP_currency
