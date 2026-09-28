@@ -30,6 +30,8 @@ execute if items entity @s[tag=AzrFlowerPVP_A] player.cursor copper_sword run fu
 execute if items entity @s[tag=AzrFlowerPVP_B] player.cursor copper_sword run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_upgrade {skill_id:2,team:B}
 execute if items entity @s[tag=AzrFlowerPVP_A] player.cursor copper_boots run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_upgrade {skill_id:3,team:A}
 execute if items entity @s[tag=AzrFlowerPVP_B] player.cursor copper_boots run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_upgrade {skill_id:3,team:B}
+execute if items entity @s[tag=AzrFlowerPVP_A] player.cursor glow_berries run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_upgrade {skill_id:4,team:A}
+execute if items entity @s[tag=AzrFlowerPVP_B] player.cursor glow_berries run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_upgrade {skill_id:4,team:B}
 
 
 
