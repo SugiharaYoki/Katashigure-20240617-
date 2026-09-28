@@ -1,24 +1,24 @@
 
 
 
-execute if items entity @s player.cursor zombie_head run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:0,cost:10}
-execute if items entity @s player.cursor shield run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:1,cost:30}
-execute if items entity @s player.cursor iron_chestplate run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:2,cost:120}
-execute if items entity @s player.cursor iron_pickaxe run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:3,cost:30}
-execute if items entity @s player.cursor gold_ingot run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:4,cost:35}
-execute if items entity @s player.cursor black_dye run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:5,cost:20}
-execute if items entity @s player.cursor bone run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:9,cost:15}
-execute if items entity @s player.cursor stone_sword run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:10,cost:25}
-execute if items entity @s player.cursor tnt run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:11,cost:35}
-execute if items entity @s player.cursor bow run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:12,cost:50}
+execute if items entity @s player.cursor zombie_head run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:0,cost:3}
+execute if items entity @s player.cursor shield run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:1,cost:10}
+execute if items entity @s player.cursor iron_chestplate run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:2,cost:30}
+execute if items entity @s player.cursor iron_pickaxe run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:3,cost:10}
+execute if items entity @s player.cursor gold_ingot run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:4,cost:10}
+execute if items entity @s player.cursor black_dye run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:5,cost:8}
+execute if items entity @s player.cursor bone run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:9,cost:5}
+execute if items entity @s player.cursor stone_sword run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:10,cost:8}
+execute if items entity @s player.cursor tnt run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:11,cost:10}
+execute if items entity @s player.cursor bow run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:12,cost:20}
 
-execute if items entity @s player.cursor ink_sac run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:13,cost:40}
-execute if items entity @s player.cursor porkchop run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:14,cost:45}
-execute if items entity @s player.cursor magma_cream run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:15,cost:15}
-execute if items entity @s player.cursor blaze_rod run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:16,cost:55}
+execute if items entity @s player.cursor ink_sac run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:13,cost:10}
+execute if items entity @s player.cursor porkchop run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:14,cost:15}
+execute if items entity @s player.cursor magma_cream run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:15,cost:5}
+execute if items entity @s player.cursor blaze_rod run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:16,cost:20}
 
-execute if items entity @s player.cursor smithing_table run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:18,cost:60}
-execute if items entity @s player.cursor composter run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:19,cost:50}
+execute if items entity @s player.cursor smithing_table run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:18,cost:20}
+execute if items entity @s player.cursor composter run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob {index:19,cost:15}
 
 
 
