@@ -37,6 +37,7 @@ execute if score @s[tag=InstantSuccess] rng1 matches 26 run function skyblock:az
 execute if entity @s[tag=AzrFlowerPVP_A] run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob_effect {team:A}
 execute if entity @s[tag=AzrFlowerPVP_B] run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_mob_effect {team:B}
 
+execute at @s[tag=InstantSuccess] run playsound minecraft:entity.evoker.prepare_summon player @a ~ ~ ~ 1 1.3
 
 $scoreboard players remove @s[tag=InstantSuccess] AzrMinigame_PVP_currency $(cost)
 tag @s remove InstantSuccess
