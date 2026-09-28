@@ -21,7 +21,7 @@ execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.
 
 #杀怪PVP
 execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..60] unless score @s rng4 matches 20.. positioned -79975.51 -41.94 -15.67 if block ~ ~ ~ minecraft:polished_blackstone_pressure_plate[powered=true] positioned -79961.59 -41.94 -15.38 if block ~ ~ ~ minecraft:polished_blackstone_pressure_plate[powered=true] positioned -79980 -37 -2 run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/start
-execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5] unless score @s rng4 matches 20.. positioned -79975.51 -41.94 -15.67 if block ~ ~ ~ minecraft:polished_blackstone_pressure_plate[powered=true] positioned -79980 -37 -2 if entity @a[tag=azrPlayer,distance=..3,tag=ENKDIU] run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/start
+execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.5] unless score @s rng4 matches 20.. positioned -79975.51 -41.94 -15.67 if block ~ ~ ~ minecraft:polished_blackstone_pressure_plate[powered=true] if entity @a[tag=azrPlayer,distance=..3,tag=ENKDIU] positioned -79980 -37 -2 run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/start
 
 execute positioned -79288 32 -118 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/core
 
