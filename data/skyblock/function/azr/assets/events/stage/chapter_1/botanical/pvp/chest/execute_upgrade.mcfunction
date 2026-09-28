@@ -51,6 +51,15 @@ $execute if score @s rng1 matches 6 if entity @s[tag=InstantSuccess] if score Az
 $execute if score @s rng1 matches 6 if entity @s[tag=InstantSuccess] if score AzrFlowerPVP_$(team) rng$(skill_id) matches 1 run scoreboard players remove @s AzrMinigame_PVP_currency 100
 $execute if score @s rng1 matches 6 if entity @s[tag=InstantSuccess] if score AzrFlowerPVP_$(team) rng$(skill_id) matches 2 run scoreboard players remove @s AzrMinigame_PVP_currency 200
 
+$execute if score @s rng1 matches 7 if score AzrFlowerPVP_$(team) rng$(skill_id) matches 0 if score @s AzrMinigame_PVP_currency matches 50.. run tag @s add InstantSuccess
+$execute if score @s rng1 matches 7 if score AzrFlowerPVP_$(team) rng$(skill_id) matches 1 if score @s AzrMinigame_PVP_currency matches 100.. run tag @s add InstantSuccess
+$execute if score @s rng1 matches 7 if score AzrFlowerPVP_$(team) rng$(skill_id) matches 2 if score @s AzrMinigame_PVP_currency matches 150.. run tag @s add InstantSuccess
+$execute if score @s rng1 matches 7 if entity @s[tag=InstantSuccess] if score AzrFlowerPVP_$(team) rng$(skill_id) matches 0 run scoreboard players remove @s AzrMinigame_PVP_currency 50
+$execute if score @s rng1 matches 7 if entity @s[tag=InstantSuccess] if score AzrFlowerPVP_$(team) rng$(skill_id) matches 1 run scoreboard players remove @s AzrMinigame_PVP_currency 100
+$execute if score @s rng1 matches 7 if entity @s[tag=InstantSuccess] if score AzrFlowerPVP_$(team) rng$(skill_id) matches 2 run scoreboard players remove @s AzrMinigame_PVP_currency 150
+execute if score @s rng1 matches 7 if entity @s[tag=InstantSuccess,tag=AzrFlowerPVP_A] run summon iron_golem -79312 32 -116 {PlayerCreated:true,Invulnerable:true}
+execute if score @s rng1 matches 7 if entity @s[tag=InstantSuccess,tag=AzrFlowerPVP_B] run summon iron_golem -79264 32 -116 {PlayerCreated:true,Invulnerable:true}
+
 
 
 

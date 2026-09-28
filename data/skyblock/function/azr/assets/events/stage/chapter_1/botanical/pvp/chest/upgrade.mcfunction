@@ -57,6 +57,15 @@ $execute if score AzrFlowerPVP_$(team) rng6 matches 2 positioned $(x) 33 -106 un
 $execute if score AzrFlowerPVP_$(team) rng6 matches 3.. positioned $(x) 33 -106 unless items block ~ ~ ~ container.18 * run item replace block ~ ~ ~ container.18 with structure_void[custom_data={"azrminigame_pvp_chest_menu":true},custom_name= \
 {text:"每2秒获得额外的能量值",italic:0b,color:"#f4a106",bold:1b},lore=[{text:"当前等级：满级",color:"#ffe297",italic:0b,bold: false}]]
 
+$execute if score AzrFlowerPVP_$(team) rng7 matches 0 positioned $(x) 33 -106 unless items block ~ ~ ~ container.11 * run item replace block ~ ~ ~ container.11 with iron_golem_spawn_egg[custom_data={"azrminigame_pvp_chest_menu":true},custom_name= \
+{text:"生成1个铁傀儡盟友",italic:0b,color:"#f4a106",bold:1b},lore=[{text:"当前总数量：0",color:"#ffe297",italic:0b,bold: false},{text:"增加数量消耗：50",color:"#9e81ff",italic:0b,bold: false}]]
+$execute if score AzrFlowerPVP_$(team) rng7 matches 1 positioned $(x) 33 -106 unless items block ~ ~ ~ container.11 * run item replace block ~ ~ ~ container.11 with iron_golem_spawn_egg[custom_data={"azrminigame_pvp_chest_menu":true},custom_name= \
+{text:"生成1个铁傀儡盟友",italic:0b,color:"#f4a106",bold:1b},lore=[{text:"当前总数量：1",color:"#ffe297",italic:0b,bold: false},{text:"增加数量消耗：100",color:"#9e81ff",italic:0b,bold: false}]]
+$execute if score AzrFlowerPVP_$(team) rng7 matches 2 positioned $(x) 33 -106 unless items block ~ ~ ~ container.11 * run item replace block ~ ~ ~ container.11 with iron_golem_spawn_egg[custom_data={"azrminigame_pvp_chest_menu":true},custom_name= \
+{text:"生成1个铁傀儡盟友",italic:0b,color:"#f4a106",bold:1b},lore=[{text:"当前总数量：2",color:"#ffe297",italic:0b,bold: false},{text:"增加数量消耗：150",color:"#9e81ff",italic:0b,bold: false}]]
+$execute if score AzrFlowerPVP_$(team) rng7 matches 3.. positioned $(x) 33 -106 unless items block ~ ~ ~ container.11 * run item replace block ~ ~ ~ container.11 with structure_void[custom_data={"azrminigame_pvp_chest_menu":true},custom_name= \
+{text:"生成1个铁傀儡盟友",italic:0b,color:"#f4a106",bold:1b},lore=[{text:"当前总数量：最高",color:"#ffe297",italic:0b,bold: false}]]
+
 
 
 
