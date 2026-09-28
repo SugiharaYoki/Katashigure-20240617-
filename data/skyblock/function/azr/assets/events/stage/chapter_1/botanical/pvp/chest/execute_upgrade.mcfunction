@@ -59,6 +59,8 @@ $execute if score @s rng1 matches 7 if entity @s[tag=InstantSuccess] if score Az
 $execute if score @s rng1 matches 7 if entity @s[tag=InstantSuccess] if score AzrFlowerPVP_$(team) rng$(skill_id) matches 2 run scoreboard players remove @s AzrMinigame_PVP_currency 150
 execute if score @s rng1 matches 7 if entity @s[tag=InstantSuccess,tag=AzrFlowerPVP_A] run summon iron_golem -79312 32 -116 {PlayerCreated:true,Invulnerable:true}
 execute if score @s rng1 matches 7 if entity @s[tag=InstantSuccess,tag=AzrFlowerPVP_B] run summon iron_golem -79264 32 -116 {PlayerCreated:true,Invulnerable:true}
+execute if score @s rng1 matches 7 if entity @s[tag=InstantSuccess,tag=AzrFlowerPVP_A] positioned -79312 32 -116 run effect give @n[type=iron_golem,distance=..100] weakness infinite 1 true 
+execute if score @s rng1 matches 7 if entity @s[tag=InstantSuccess,tag=AzrFlowerPVP_B] positioned -79264 32 -116 run effect give @n[type=iron_golem,distance=..100] weakness infinite 1 true 
 
 
 
