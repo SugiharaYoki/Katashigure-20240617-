@@ -11,14 +11,18 @@ execute if score @s rng1 matches 2..62 run scoreboard players operation @s rng2 
 execute if score @s rng1 matches 2..62 run scoreboard players operation @s rng2 /= 3600 constant
 execute if score @s rng1 matches 2..62 store result storage azr_effect:expand x double 0.001 run scoreboard players get @s rng2
 execute if score @s rng1 matches 2..62 at @s rotated as @s run function skyblock:azr/assets/mobs/skill/trap/spore_blackhole_particle with storage azr_effect:expand
-execute if score @s rng1 matches 41 run particle explosion ~ ~ ~ 1 1 1 0 2
-execute if score @s rng1 matches 41 run playsound entity.generic.explode ambient @a ~ ~ ~ 1 1.1
-execute if score @s rng1 matches 46 run particle explosion ~ ~ ~ 2 1 2 0 4
-execute if score @s rng1 matches 46 run playsound entity.generic.explode ambient @a ~ ~ ~ 1.1 1.1
+tag @s add AzrielMob_spore_blackhole_current
+execute if score @s rng1 matches 2..50 as @a[tag=azrPlayer,distance=..12] run attribute @s movement_speed modifier remove azr_trap:spore_blackhole_back
+execute if score @s rng1 matches 2..50 as @a[tag=azrPlayer,distance=..8.5] at @s rotated as @s run function skyblock:azr/assets/mobs/skill/trap/spore_blackhole_back
+execute if score @s rng1 matches 51 as @a[tag=azrPlayer] run attribute @s movement_speed modifier remove azr_trap:spore_blackhole_back
+tag @s remove AzrielMob_spore_blackhole_current
+execute if score @s rng1 matches 43 run particle explosion ~ ~ ~ 1 1 1 0 2
+execute if score @s rng1 matches 43 run playsound entity.generic.explode ambient @a ~ ~ ~ 1 1.1
+execute if score @s rng1 matches 47 run particle explosion ~ ~ ~ 2 1 2 0 4
+execute if score @s rng1 matches 47 run playsound entity.generic.explode ambient @a ~ ~ ~ 1.1 1.1
 execute if score @s rng1 matches 51 run particle explosion ~ ~ ~ 3 1 3 0 7
 execute if score @s rng1 matches 51 run playsound entity.generic.explode ambient @a ~ ~ ~ 1.4 1.1
-execute if score @s rng1 matches 51 as @a[tag=azrPlayer,distance=..5] run damage @s 12 explosion
-execute if score @s rng1 matches 51 as @a[tag=azrPlayer,distance=..7] run damage @s 8 explosion
-execute if score @s rng1 matches 51 as @a[tag=azrPlayer,distance=..8.5] run damage @s 4 explosion
+execute if score @s rng1 matches 51 as @a[distance=..5] run damage @s 12 explosion
+execute if score @s rng1 matches 51 as @a[distance=..7] run damage @s 8 explosion
+execute if score @s rng1 matches 51 as @a[distance=..8.5] run damage @s 4 explosion
 execute if score @s rng1 matches 51.. run kill @s
-
