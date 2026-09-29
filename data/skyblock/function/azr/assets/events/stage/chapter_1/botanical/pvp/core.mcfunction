@@ -4,6 +4,7 @@ scoreboard players add @s rng3 1
 scoreboard players add @s rng20 1
 
 execute as @a[tag=azrPlayer] at @s run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/player
+execute as @e[tag=AzrPVP_tower,distance=..120] at @s run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/tower
 
 
 
