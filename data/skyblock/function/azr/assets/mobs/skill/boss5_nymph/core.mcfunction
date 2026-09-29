@@ -12,6 +12,7 @@ execute if score @s rng9 matches 2900.. run scoreboard players set @s rng9 0
 #EVENT
 
 
+execute if score @s AzrEntityTimer matches 1 run data modify entity @s NoGravity set value 0b
 execute if score @s AzrEntityTimer matches 1 run scoreboard players set @s rng13 1
 execute if score @s AzrEntityTimer matches 1 run bossbar add azr:boss_hp_bar [{text:"茏渠的撺掇者 - ",bold:true,color:"white"},{text:"宁芙",bold:true,color:"#39f77e"}]
 execute if score @s AzrEntityTimer matches 1 run bossbar set azr:boss_hp_bar color green
@@ -49,6 +50,8 @@ execute if score @s[scores={Health=..600}] rng8 matches 40 at @s store result sc
 execute if score @s[scores={Health=..600}] rng1 matches 40 at @s if score @s rng2 matches 1..2 run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_mossflora_spore_marker","AzrielMob_mob_marker"]}
 execute if score @s[scores={Health=..600}] rng1 matches 40 at @s if score @s rng2 matches 1 run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_mossflora_spore_marker","AzrielMob_mob_marker"]}
 
+execute if score @s rng1 matches 43 at @s run particle large_smoke ~ ~1 ~ 0.3 0.7 0.3 0.05 8
+execute if score @s rng1 matches 43 at @s run effect clear @s invisibility
 execute if score @s rng1 matches 43 at @s store result score @s rng2 run random value 1..4
 execute if score @s rng1 matches 43 at @s if score @s rng2 matches 1 positioned -79791 187 -530 run tp @s ~ ~ ~
 execute if score @s rng1 matches 43 at @s if score @s rng2 matches 2 positioned -79791 187 -537 run tp @s ~ ~ ~
