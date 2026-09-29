@@ -55,3 +55,14 @@ execute if score @s rng1 matches 11 positioned -79780 195 -665 run tp @n[tag=Azr
 
 execute if score @s rng1 matches 50 if score stage Azr_system matches ..83 run scoreboard players set stage Azr_system 84
 
+execute if score @s rng1 matches 99..100 run scoreboard players set @s rng1 99
+execute if score @s rng1 matches ..100 if entity @a[tag=azrPlayer,x=-79791,y=195,z=-637,distance=..7] run scoreboard players set @s rng1 1015
+
+execute if score @s rng1 matches 101 if score stage Azr_system matches ..84 run scoreboard players set stage Azr_system 85
+execute if score @s rng1 matches 101 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage20
+
+execute if score @s rng1 matches 115 run title @a[tag=azrShowDialog] actionbar {text:"你将会拯救我，我将因你而得以逃离囚牢……",color:"aqua"}
+execute if score @s rng1 matches 165 run title @a[tag=azrShowDialog] actionbar {text:"爱理莎，你会是我的英雄……我将如从前一样，深爱着你……",color:"aqua"}
+
+
+
