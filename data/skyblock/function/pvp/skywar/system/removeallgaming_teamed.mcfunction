@@ -148,7 +148,7 @@ tag @s remove UNRBPT
 tag @s remove got_hit
 tag @s remove MG_AZR0PT
 
-
+attribute @s movement_speed modifier remove azr_trap:spore_blackhole_back
 
 tag @s remove AZR_chainKill_activated
 scoreboard players set @s AZR_chainKill_count 0
