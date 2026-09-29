@@ -1053,7 +1053,8 @@ setblock -79787 184 -666 waxed_exposed_copper_chest[facing=south]{Inventory:[]}
 item replace block -79787 184 -666 container.12 with emerald 3
 item replace block -79787 184 -666 container.14 with emerald 3
 
-
+#boss nymph
+fill -79789 188 -521 -79793 188 -517 air replace minecraft:wildflowers
 
 
 

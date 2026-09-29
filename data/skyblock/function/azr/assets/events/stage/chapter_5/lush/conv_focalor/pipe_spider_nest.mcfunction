@@ -64,6 +64,7 @@ execute if score @s rng1 matches 101 positioned -79810 195 -586 run function sky
 execute if score @s rng1 matches 101 positioned -79810 195 -586 run function skyblock:azr/assets/mobs/skeleton_sentinel
 execute if score @s rng1 matches 101 positioned -79790 199 -577 run function skyblock:azr/assets/mobs/spider_poison
 execute if score @s rng1 matches 101 positioned -79790 199 -577 run function skyblock:azr/assets/mobs/spider_poison
+execute if score @s rng1 matches 101 positioned -79790 199 -577 run function skyblock:azr/assets/mobs/spider_poison
 
 execute if score @s rng1 matches 115 run title @a[tag=azrShowDialog] actionbar {text:"你将会拯救我们，我们将因你而得以逃离囚牢……",color:"aqua"}
 execute if score @s rng1 matches 165 run title @a[tag=azrShowDialog] actionbar {text:"爱理莎，你会是我们的英雄……我们将如从前一样，深爱着你……",color:"aqua"}
@@ -109,6 +110,40 @@ execute if score @s rng1 matches 651 positioned -79791 196 -536 run playsound am
 
 
 execute if score @s rng1 matches 601 positioned -79791 197 -519 run playsound minecraft:entity.enderman.stare hostile @a ~ ~ ~ 10 0.5
-execute if score @s rng1 matches 601 positioned -79791 197 -519 run 
+execute if score @s rng1 matches 601 positioned -79794 231 -545 run function skyblock:azr/assets/mobs/skill/boss5_nymph/summon
+
+execute if score @s rng1 matches 607 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run tp @s -79791 188 -518 facing -79791 188 -515
+execute if score @s rng1 matches 607 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run tp @s -79791 184 -519
+
+execute if score @s rng1 matches 608 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run tp @s -79791 188 -518 facing -79791 188 -515
+execute if score @s rng1 matches 608 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run tp @s -79791 184 -519
+
+execute if score @s rng1 matches 627 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run tp @s -79791 188 -518 facing -79791 188 -515
+execute if score @s rng1 matches 627 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run tp @s -79791 184 -519
+
+execute if score @s rng1 matches 628 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run tp @s -79791 188 -518 facing -79791 188 -515
+execute if score @s rng1 matches 628 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run tp @s -79791 184 -519
+
+execute if score @s rng1 matches 637 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run tp @s -79791 188 -518 facing -79791 188 -515
+execute if score @s rng1 matches 637 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run tp @s -79791 184 -519
+
+execute if score @s rng1 matches 638 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run tp @s -79791 188 -518 facing -79791 188 -515
+execute if score @s rng1 matches 638 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run tp @s -79791 184 -519
+
+
+execute if score @s rng1 matches 637 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run fill -79790 188 -520 -79792 188 -518 minecraft:wildflowers[flower_amount=4] replace air
+execute if score @s rng1 matches 637 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run fill -79789 188 -521 -79793 188 -517 minecraft:wildflowers[flower_amount=4] replace air
+
+execute if score @s rng1 matches 637 run playsound minecraft:entity.wither.break_block hostile @a -79794 231 -545 1 2
+
+
+execute if score @s rng1 matches 650 run playsound minecraft:entity.wither.break_block hostile @a -79794 231 -545 1 2
+execute if score @s rng1 matches 650 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run tp @s -79791 188 -518 facing -79791 188 -515
+execute if score @s rng1 matches 650 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run tp @s -79791 184 -519
+
+
+
+
+
 
 
