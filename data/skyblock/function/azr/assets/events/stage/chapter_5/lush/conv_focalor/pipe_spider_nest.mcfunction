@@ -51,7 +51,7 @@ execute if score @s rng1 matches 85 positioned -79787 199 -767 as @a[tag=azrPlay
 execute if score @s rng1 matches 10 run title @a[tag=azrShowDialog] actionbar {text:"没错，没错……爱理莎，就是朝着这个方向来……",color:"aqua"}
 execute if score @s rng1 matches 50 run title @a[tag=azrShowDialog] actionbar {text:"我们会静候你的光临，我们会在丛林的心脏等待着你……",color:"aqua"}
 
-execute if score @s rng1 matches 11 positioned -79780 195 -665 run tp @n[tag=AzrielNPC_focalor,type=mannequin,distance=..200] -79780 199 -665
+execute if score @s rng1 matches 11 positioned -79780 195 -665 run tp @n[tag=AzrielNPC_focalor,type=mannequin,distance=..200] -79791 188 -518 facing -79791 188 -515
 
 execute if score @s rng1 matches 50 if score stage Azr_system matches ..83 run scoreboard players set stage Azr_system 84
 
