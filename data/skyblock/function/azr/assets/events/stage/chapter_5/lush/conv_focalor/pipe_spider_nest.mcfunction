@@ -48,8 +48,8 @@ execute if score @s rng1 matches 2 positioned -79791 195 -617 run function skybl
 
 execute if score @s rng1 matches 85 positioned -79787 199 -767 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:spider_poison}
 
-execute if score @s rng1 matches 10 run title @a[tag=azrShowDialog] actionbar {text:"没错，没错……就是朝着这个方向来……",color:"aqua"}
-execute if score @s rng1 matches 50 run title @a[tag=azrShowDialog] actionbar {text:"我会静候你的光临，我会在丛林的心脏等待着你……",color:"aqua"}
+execute if score @s rng1 matches 10 run title @a[tag=azrShowDialog] actionbar {text:"没错，没错……爱理莎，就是朝着这个方向来……",color:"aqua"}
+execute if score @s rng1 matches 50 run title @a[tag=azrShowDialog] actionbar {text:"我们会静候你的光临，我们会在丛林的心脏等待着你……",color:"aqua"}
 
 execute if score @s rng1 matches 11 positioned -79780 195 -665 run tp @n[tag=AzrielNPC_focalor,type=mannequin,distance=..200] -79780 199 -665
 
@@ -66,8 +66,8 @@ execute if score @s rng1 matches 101 positioned -79810 195 -586 run function sky
 execute if score @s rng1 matches 101 positioned -79790 199 -577 run function skyblock:azr/assets/mobs/spider_poison
 execute if score @s rng1 matches 101 positioned -79790 199 -577 run function skyblock:azr/assets/mobs/spider_poison
 
-execute if score @s rng1 matches 115 run title @a[tag=azrShowDialog] actionbar {text:"你将会拯救我，我将因你而得以逃离囚牢……",color:"aqua"}
-execute if score @s rng1 matches 165 run title @a[tag=azrShowDialog] actionbar {text:"爱理莎，你会是我的英雄……我将如从前一样，深爱着你……",color:"aqua"}
+execute if score @s rng1 matches 115 run title @a[tag=azrShowDialog] actionbar {text:"你将会拯救我们，我们将因你而得以逃离囚牢……",color:"aqua"}
+execute if score @s rng1 matches 165 run title @a[tag=azrShowDialog] actionbar {text:"爱理莎，你会是我们的英雄……我们将如从前一样，深爱着你……",color:"aqua"}
 
 execute if score @s rng1 matches 130 positioned -79791 194 -589 run function skyblock:azr/assets/mobs/blaze
 execute if score @s rng1 matches 170 positioned -79791 195 -622 run function skyblock:azr/assets/mobs/blaze
