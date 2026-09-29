@@ -2,3 +2,4 @@ summon minecraft:mannequin ~ ~ ~ {Tags:["AzrielMob","AzrielMob_typeLIFE","Azriel
 
 
 effect give @s water_breathing infinite 0 true
+effect give @s resistance infinite 4 true

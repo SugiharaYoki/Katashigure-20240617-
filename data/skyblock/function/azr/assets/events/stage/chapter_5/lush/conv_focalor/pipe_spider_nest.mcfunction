@@ -82,3 +82,33 @@ execute if score @s rng1 matches 502 run title @a[tag=azrShowDialog] actionbar {
 execute if score @s rng1 matches 502 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage20
 
 
+execute if score @s rng1 matches 599..600 run scoreboard players set @s rng1 599
+execute if score @s rng1 matches ..600 if entity @a[tag=azrPlayer,x=-79791,y=188,z=-518,distance=..9] run scoreboard players set @s rng1 601
+
+execute if score @s rng1 matches 601 positioned -79791 187 -519 as @a[tag=azrPlayer,distance=..100] run attribute @s minecraft:movement_speed modifier add sea:marilyn_01 -1 add_value
+execute if score @s rng1 matches 601 positioned -79791 187 -519 as @a[tag=azrPlayer,distance=..100] run attribute @s minecraft:jump_strength modifier add sea:marilyn_01 -50 add_value
+
+execute if score @s rng1 matches 603 run title @a[tag=azrShowDialog] actionbar {text:"爱理莎，非常欢迎你的到来。",color:"aqua"}
+execute if score @s rng1 matches 619 run title @a[tag=azrShowDialog] actionbar {text:"感谢你将灵魂……献给我们……",color:"aqua"}
+execute if score @s rng1 matches 643 run title @a[tag=azrShowDialog] actionbar {text:"我们是宁芙，我们是丛林背后的掌控者。",color:"red"}
+execute if score @s rng1 matches 673 run title @a[tag=azrShowDialog] actionbar {text:"为何而颤抖？为何而举起武器？我们不会伤害你，你也无需挣扎。",color:"red"}
+execute if score @s rng1 matches 601 run effect give @a[tag=azrShowDialog] darkness 18 0 true
+
+execute if score @s rng1 matches 601 positioned -79791 197 -519 run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 10 0.7
+execute if score @s rng1 matches 601 positioned -79791 197 -519 run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 10 0.6
+execute if score @s rng1 matches 601 positioned -79791 197 -519 run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 10 0.5
+execute if score @s rng1 matches 631 positioned -79791 197 -519 run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 10 0.7
+execute if score @s rng1 matches 631 positioned -79791 197 -519 run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 10 0.6
+execute if score @s rng1 matches 631 positioned -79791 197 -519 run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 10 0.5
+execute if score @s rng1 matches 651 positioned -79791 197 -519 run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 10 0.7
+execute if score @s rng1 matches 651 positioned -79791 197 -519 run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 10 0.6
+execute if score @s rng1 matches 651 positioned -79791 197 -519 run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 10 0.5
+execute if score @s rng1 matches 651 positioned -79791 196 -536 run playsound ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 10 0.58
+execute if score @s rng1 matches 651 positioned -79791 196 -536 run playsound ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 10 0.66
+execute if score @s rng1 matches 651 positioned -79791 196 -536 run playsound ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 10 0.72
+
+
+execute if score @s rng1 matches 601 positioned -79791 197 -519 run playsound minecraft:entity.enderman.stare hostile @a ~ ~ ~ 10 0.5
+execute if score @s rng1 matches 601 positioned -79791 197 -519 run 
+
+
