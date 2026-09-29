@@ -22,7 +22,7 @@ execute positioned -79787 189 -793 unless entity @n[tag=AzrielMarker_encounter,d
 execute positioned -79787 189 -793 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 100.. run function skyblock:azr/assets/events/stage/chapter_5/lush/conv_focalor/pipe_pit
 
 execute positioned -79782 195 -688 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..6] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79782 195 -688 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 100.. run function skyblock:azr/assets/events/stage/chapter_5/lush/conv_focalor/pipe_spider_nest
+execute positioned -79782 195 -688 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_5/lush/conv_focalor/pipe_spider_nest
 
 
 
