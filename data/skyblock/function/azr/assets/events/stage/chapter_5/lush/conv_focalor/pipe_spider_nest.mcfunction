@@ -56,7 +56,7 @@ execute if score @s rng1 matches 11 positioned -79780 195 -665 run tp @n[tag=Azr
 execute if score @s rng1 matches 50 if score stage Azr_system matches ..83 run scoreboard players set stage Azr_system 84
 
 execute if score @s rng1 matches 99..100 run scoreboard players set @s rng1 99
-execute if score @s rng1 matches ..100 if entity @a[tag=azrPlayer,x=-79791,y=195,z=-637,distance=..7] run scoreboard players set @s rng1 1015
+execute if score @s rng1 matches ..100 if entity @a[tag=azrPlayer,x=-79791,y=195,z=-637,distance=..7] run scoreboard players set @s rng1 101
 
 execute if score @s rng1 matches 101 if score stage Azr_system matches ..84 run scoreboard players set stage Azr_system 85
 execute if score @s rng1 matches 101 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage20
@@ -71,5 +71,14 @@ execute if score @s rng1 matches 165 run title @a[tag=azrShowDialog] actionbar {
 
 execute if score @s rng1 matches 130 positioned -79791 194 -589 run function skyblock:azr/assets/mobs/blaze
 execute if score @s rng1 matches 170 positioned -79791 195 -622 run function skyblock:azr/assets/mobs/blaze
+
+execute if score @s rng1 matches 199..200 run scoreboard players set @s rng1 199
+execute if score @s rng1 matches ..200 if entity @a[tag=azrPlayer,x=-79791,y=195,z=-557,distance=..7] run scoreboard players set @s rng1 501
+
+execute if score @s rng1 matches 502 positioned -79791 196 -536 run effect give @a[tag=azrShowDialog] darkness 5 0 true
+execute if score @s rng1 matches 502 positioned -79791 196 -536 run playsound ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 10 0.58
+execute if score @s rng1 matches 502 positioned -79791 196 -536 run playsound ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 10 0.66
+execute if score @s rng1 matches 502 positioned -79791 196 -536 run playsound ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 10 0.72
+execute if score @s rng1 matches 502 run title @a[tag=azrShowDialog] actionbar {text:"没错，我们就在这里……欢迎来到丛林的心脏，我们爱着你，深爱着你……",color:"aqua"}
 
 
