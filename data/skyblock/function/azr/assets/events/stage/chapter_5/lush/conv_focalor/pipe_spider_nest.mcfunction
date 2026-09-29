@@ -64,5 +64,7 @@ execute if score @s rng1 matches 101 run advancement grant @a[tag=azrPlayer] onl
 execute if score @s rng1 matches 115 run title @a[tag=azrShowDialog] actionbar {text:"你将会拯救我，我将因你而得以逃离囚牢……",color:"aqua"}
 execute if score @s rng1 matches 165 run title @a[tag=azrShowDialog] actionbar {text:"爱理莎，你会是我的英雄……我将如从前一样，深爱着你……",color:"aqua"}
 
+execute if score @s rng1 matches 130 positioned -79791 194 -589 run function skyblock:azr/assets/mobs/blaze
+execute if score @s rng1 matches 170 positioned -79791 195 -622 run function skyblock:azr/assets/mobs/blaze
 
 
