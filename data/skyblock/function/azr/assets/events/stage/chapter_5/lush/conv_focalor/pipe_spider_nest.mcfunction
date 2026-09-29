@@ -83,6 +83,7 @@ execute if score @s rng1 matches 502 run title @a[tag=azrShowDialog] actionbar {
 execute if score @s rng1 matches 502 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage20
 execute if score @s rng1 matches 502 if score stage Azr_system matches ..85 run scoreboard players set stage Azr_system 86
 
+execute if score @s rng1 matches 502 positioned -79794 231 -545 run function skyblock:azr/assets/mobs/skill/boss5_nymph/summon
 
 execute if score @s rng1 matches 599..600 run scoreboard players set @s rng1 599
 execute if score @s rng1 matches ..600 if entity @a[tag=azrPlayer,x=-79791,y=188,z=-518,distance=..9] run scoreboard players set @s rng1 601
@@ -113,7 +114,6 @@ execute if score @s rng1 matches 601..660 positioned -79791 197 -519 run particl
 execute if score @s rng1 matches 631..660 positioned -79791 197 -519 run particle warped_spore ~ ~ ~ 5 2 5 0 40
 
 execute if score @s rng1 matches 601 positioned -79791 197 -519 run playsound minecraft:entity.enderman.stare hostile @a ~ ~ ~ 10 0.5
-execute if score @s rng1 matches 601 positioned -79794 231 -545 run function skyblock:azr/assets/mobs/skill/boss5_nymph/summon
 
 execute if score @s rng1 matches 607 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run tp @s -79791 188 -518 facing -79791 188 -515
 execute if score @s rng1 matches 607 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run tp @s -79791 184 -519
