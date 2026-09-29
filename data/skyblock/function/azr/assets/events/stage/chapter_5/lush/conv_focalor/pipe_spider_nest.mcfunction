@@ -108,6 +108,8 @@ execute if score @s rng1 matches 651 positioned -79791 196 -536 run playsound am
 execute if score @s rng1 matches 651 positioned -79791 196 -536 run playsound ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 10 0.66
 execute if score @s rng1 matches 651 positioned -79791 196 -536 run playsound ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 10 0.72
 
+execute if score @s rng1 matches 601..660 positioned -79791 197 -519 run particle warped_spore ~ ~ ~ 5 2 5 0 10
+execute if score @s rng1 matches 631..660 positioned -79791 197 -519 run particle warped_spore ~ ~ ~ 5 2 5 0 40
 
 execute if score @s rng1 matches 601 positioned -79791 197 -519 run playsound minecraft:entity.enderman.stare hostile @a ~ ~ ~ 10 0.5
 execute if score @s rng1 matches 601 positioned -79794 231 -545 run function skyblock:azr/assets/mobs/skill/boss5_nymph/summon
