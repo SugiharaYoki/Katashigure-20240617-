@@ -27,8 +27,12 @@ execute store result bossbar azr:boss_hp_bar value run scoreboard players get @s
 
 scoreboard players add @s rng1 1
 
+
 execute if score @s rng1 matches 1..5 at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 execute if score @s rng1 matches 20 at @s run function skyblock:azr/assets/mobs/skill/boss_legate/move_backstep
+
+execute if score @s[scores={Health=..400}] rng1 matches 25 at @s store result score @s rng2 run random value 1..4
+execute if score @s[scores={Health=..400}] rng1 matches 25 if score @s rng2 matches 1 run scoreboard players set @s rng1 500
 
 execute if score @s rng1 matches 30 at @s run function skyblock:azr/assets/mobs/skill/boss_legate/move_backstep
 execute if score @s rng1 matches 30 at @s store result score @s rng2 run random value 1..4
@@ -59,8 +63,9 @@ execute if score @s[scores={Health=..550}] rng1 matches 48 at @s store result sc
 execute if score @s[scores={Health=..550}] rng1 matches 48 at @s if score @s rng2 matches 1 store result score @s rng3 run execute if entity @e[tag=AzrielMob_husk,distance=..50]
 execute if score @s[scores={Health=..550}] rng1 matches 48 at @s if score @s rng2 matches 1 if entity @a[tag=azrPlayer,distance=5..] if score @s rng3 matches ..3 run function skyblock:azr/assets/mobs/husk
 
-execute if score @s rng1 matches 100 store result score @s rng1 run random value -20..5
+execute if score @s rng1 matches 100..110 store result score @s rng1 run random value -20..5
 
+execute if score @s rng1 matches 550..560 store result score @s rng1 run random value -20..5
 
 
 
