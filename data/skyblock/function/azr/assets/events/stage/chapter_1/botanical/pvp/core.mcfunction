@@ -55,6 +55,20 @@ execute if score @s rng1 matches 5.. at @s unless entity @a[tag=AzrFlowerPVP_B,d
 execute if score @s rng1 matches 5.. at @s unless entity @a[tag=AzrFlowerPVP_A,distance=..60] run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/end
 execute if score @s rng1 matches 5.. at @s unless entity @a[tag=AzrFlowerPVP_B,distance=..60] run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/end
 
+scoreboard players add @s rng5 1
+scoreboard players add @s rng6 1
+execute if score @s rng5 matches 2 if score AzrFlowerPVP_A rng8 matches 1.. as @a[tag=AzrFlowerPVP_A] run function skyblock:azr/outgame/boss1/summon
+execute if score @s rng6 matches 2 if score AzrFlowerPVP_B rng8 matches 1.. as @a[tag=AzrFlowerPVP_B] run function skyblock:azr/outgame/boss1/summon
+execute if score @s rng5 matches 38.. if score AzrFlowerPVP_A rng8 matches 1 run scoreboard players set @s rng5 0
+execute if score @s rng6 matches 38.. if score AzrFlowerPVP_B rng8 matches 1 run scoreboard players set @s rng6 0
+execute if score @s rng5 matches 36.. if score AzrFlowerPVP_A rng8 matches 2 run scoreboard players set @s rng5 0
+execute if score @s rng6 matches 36.. if score AzrFlowerPVP_B rng8 matches 2 run scoreboard players set @s rng6 0
+execute if score @s rng5 matches 34.. if score AzrFlowerPVP_A rng8 matches 3 run scoreboard players set @s rng5 0
+execute if score @s rng6 matches 34.. if score AzrFlowerPVP_B rng8 matches 3 run scoreboard players set @s rng6 0
+execute if score @s rng5 matches 32.. if score AzrFlowerPVP_A rng8 matches 4 run scoreboard players set @s rng5 0
+execute if score @s rng6 matches 32.. if score AzrFlowerPVP_B rng8 matches 4 run scoreboard players set @s rng6 0
+execute if score @s rng5 matches 30.. if score AzrFlowerPVP_A rng8 matches 5 run scoreboard players set @s rng5 0
+execute if score @s rng6 matches 30.. if score AzrFlowerPVP_B rng8 matches 5 run scoreboard players set @s rng6 0
 
 #箱子商店
 execute positioned -79264 34 -106 run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/mob {team:A,x:-79264}

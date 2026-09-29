@@ -62,6 +62,16 @@ execute if score @s rng1 matches 7 if entity @s[tag=InstantSuccess,tag=AzrFlower
 execute if score @s rng1 matches 7 if entity @s[tag=InstantSuccess,tag=AzrFlowerPVP_A] positioned -79312 32 -116 run effect give @n[type=iron_golem,distance=..100] weakness infinite 1 true 
 execute if score @s rng1 matches 7 if entity @s[tag=InstantSuccess,tag=AzrFlowerPVP_B] positioned -79264 32 -116 run effect give @n[type=iron_golem,distance=..100] weakness infinite 1 true 
 
+$execute if score @s rng1 matches 8 if score AzrFlowerPVP_$(team) rng$(skill_id) matches 0 if score @s AzrMinigame_PVP_currency matches 30.. run tag @s add InstantSuccess
+$execute if score @s rng1 matches 8 if score AzrFlowerPVP_$(team) rng$(skill_id) matches 1 if score @s AzrMinigame_PVP_currency matches 100.. run tag @s add InstantSuccess
+$execute if score @s rng1 matches 8 if score AzrFlowerPVP_$(team) rng$(skill_id) matches 2 if score @s AzrMinigame_PVP_currency matches 200.. run tag @s add InstantSuccess
+$execute if score @s rng1 matches 8 if score AzrFlowerPVP_$(team) rng$(skill_id) matches 3 if score @s AzrMinigame_PVP_currency matches 300.. run tag @s add InstantSuccess
+$execute if score @s rng1 matches 8 if score AzrFlowerPVP_$(team) rng$(skill_id) matches 4 if score @s AzrMinigame_PVP_currency matches 400.. run tag @s add InstantSuccess
+$execute if score @s rng1 matches 8 if entity @s[tag=InstantSuccess] if score AzrFlowerPVP_$(team) rng$(skill_id) matches 0 run scoreboard players remove @s AzrMinigame_PVP_currency 30
+$execute if score @s rng1 matches 8 if entity @s[tag=InstantSuccess] if score AzrFlowerPVP_$(team) rng$(skill_id) matches 1 run scoreboard players remove @s AzrMinigame_PVP_currency 100
+$execute if score @s rng1 matches 8 if entity @s[tag=InstantSuccess] if score AzrFlowerPVP_$(team) rng$(skill_id) matches 2 run scoreboard players remove @s AzrMinigame_PVP_currency 200
+$execute if score @s rng1 matches 8 if entity @s[tag=InstantSuccess] if score AzrFlowerPVP_$(team) rng$(skill_id) matches 3 run scoreboard players remove @s AzrMinigame_PVP_currency 300
+$execute if score @s rng1 matches 8 if entity @s[tag=InstantSuccess] if score AzrFlowerPVP_$(team) rng$(skill_id) matches 4 run scoreboard players remove @s AzrMinigame_PVP_currency 400
 
 
 
