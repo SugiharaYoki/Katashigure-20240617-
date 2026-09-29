@@ -2,7 +2,7 @@
 
 
 
-
+fill -79317 34 -119 -79259 34 -129 air replace minecraft:amethyst_cluster
 
 execute as @a[tag=azrShowDialog,distance=..80] at @s run tp @s -79969 -43 -16 facing -79969 -43 -15
 execute as @a[tag=AzrFlowerPVP] at @s run tp @s -79969 -43 -16 facing -79969 -43 -15
