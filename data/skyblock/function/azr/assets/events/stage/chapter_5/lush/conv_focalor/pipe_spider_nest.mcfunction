@@ -81,6 +81,7 @@ execute if score @s rng1 matches 502 positioned -79791 196 -536 run playsound am
 execute if score @s rng1 matches 502 positioned -79791 196 -536 run playsound ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 10 0.72
 execute if score @s rng1 matches 502 run title @a[tag=azrShowDialog] actionbar {text:"没错，我们就在这里……欢迎来到丛林的心脏，我们爱着你，深爱着你……",color:"aqua"}
 execute if score @s rng1 matches 502 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage20
+execute if score @s rng1 matches 502 if score stage Azr_system matches ..85 run scoreboard players set stage Azr_system 86
 
 
 execute if score @s rng1 matches 599..600 run scoreboard players set @s rng1 599
@@ -142,6 +143,7 @@ execute if score @s rng1 matches 637 run playsound minecraft:entity.wither.break
 execute if score @s rng1 matches 650 run playsound minecraft:entity.wither.break_block hostile @a -79794 231 -545 1 2
 execute if score @s rng1 matches 650 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run tp @s -79791 188 -518 facing -79791 188 -515
 execute if score @s rng1 matches 650 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run tp @s -79791 184 -519
+execute if score @s rng1 matches 650 if score stage Azr_system matches ..86 run scoreboard players set stage Azr_system 90
 
 
 
