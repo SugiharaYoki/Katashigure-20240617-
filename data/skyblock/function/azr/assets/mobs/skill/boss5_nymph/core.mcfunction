@@ -36,10 +36,14 @@ execute if score @s rng1 matches 40 at @s run effect give @s invisibility 2 0 tr
 execute if score @s rng1 matches 40 at @s run particle spore_blossom_air ~ ~1 ~ 0.3 0.7 0.3 0 18
 execute if score @s rng1 matches 40 at @s run playsound minecraft:entity.camel_husk.hurt hostile @a ~ ~ ~ 1 1.5
 
+execute if score @s rng1 matches 43 at @s store result score @s rng2 run random value 1..4
+execute if score @s rng1 matches 43 at @s if score @s rng2 matches 1 positioned -79791 187 -530 run tp @s ~ ~ ~
+execute if score @s rng1 matches 43 at @s if score @s rng2 matches 2 positioned -79791 187 -537 run tp @s ~ ~ ~
+execute if score @s rng1 matches 43 at @s if score @s rng2 matches 3 positioned -79789 188 -523 run tp @s ~ ~ ~
+execute if score @s rng1 matches 43 at @s if score @s rng2 matches 4 positioned -79792 188 -518 run tp @s ~ ~ ~
 
 
-
-
+execute if score @s rng1 matches 100 store result score @s rng1 run random value -20..5
 
 
 
