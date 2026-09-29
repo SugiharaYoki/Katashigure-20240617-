@@ -24,6 +24,7 @@ execute if score @s rng1 matches 2 positioned -79748 188 -652 run function skybl
 execute if score @s rng1 matches 2 positioned -79744 188 -652 run function skyblock:azr/assets/mobs/utility_bat
 execute if score @s rng1 matches 2 positioned -79740 188 -652 run function skyblock:azr/assets/mobs/utility_bat
 
+#大沼泽
 execute if score @s rng1 matches 2 positioned -79791 180 -620 run function skyblock:azr/assets/mobs/spider_poison
 execute if score @s rng1 matches 2 positioned -79791 180 -620 run function skyblock:azr/assets/mobs/spider_mini
 execute if score @s rng1 matches 2 positioned -79791 180 -620 run function skyblock:azr/assets/mobs/spider_mini
@@ -39,6 +40,10 @@ execute if score @s rng1 matches 2 positioned -79794 180 -624 run function skybl
 execute if score @s rng1 matches 2 positioned -79794 180 -624 run function skyblock:azr/assets/mobs/slime
 execute if score @s rng1 matches 2 positioned -79794 180 -624 run function skyblock:azr/assets/mobs/slime
 execute if score @s rng1 matches 2 positioned -79794 180 -624 run function skyblock:azr/assets/mobs/slime
+
+#悬空管道
+execute if score @s rng1 matches 2 positioned -79791 195 -617 run function skyblock:azr/assets/mobs/spider_poison
+execute if score @s rng1 matches 2 positioned -79791 195 -617 run function skyblock:azr/assets/mobs/spider_poison
 
 
 execute if score @s rng1 matches 85 positioned -79787 199 -767 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:spider_poison}
