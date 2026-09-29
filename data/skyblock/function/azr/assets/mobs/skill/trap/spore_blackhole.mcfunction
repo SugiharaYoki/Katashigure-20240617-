@@ -10,5 +10,5 @@ scoreboard players set 3600 constant 3600
 execute if score @s rng1 matches 2..62 run scoreboard players operation @s rng2 *= 8000 constant
 execute if score @s rng1 matches 2..62 run scoreboard players operation @s rng2 /= 3600 constant
 execute if score @s rng1 matches 2..62 store result storage azr_effect:expand x double 0.001 run scoreboard players get @s rng2
-execute if score @s rng1 matches 2..62 at @s run function skyblock:azr/assets/mobs/trap_spore_blackhole_particle with storage azr_effect:expand
+execute if score @s rng1 matches 2..62 at @s run function skyblock:azr/assets/mobs/trap/spore_blackhole_particle with storage azr_effect:expand
 execute if score @s rng1 matches 63.. run kill @s
