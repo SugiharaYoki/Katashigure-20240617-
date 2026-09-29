@@ -56,7 +56,8 @@ execute if score @s rng1 matches 48 at @s if score @s rng2 matches 4 positioned 
 execute if score @s rng1 matches 48 at @s run particle large_smoke ~ ~1 ~ 0.3 0.7 0.3 0.05 8
 execute if score @s rng1 matches 48 at @s run effect clear @s invisibility
 execute if score @s[scores={Health=..550}] rng1 matches 48 at @s store result score @s rng2 run random value 1..6
-execute if score @s[scores={Health=..550}] rng1 matches 48 at @s if score @s rng2 matches 1 if entity @a[tag=azrPlayer,distance=5..] run function skyblock:azr/assets/mobs/husk
+execute if score @s[scores={Health=..550}] rng1 matches 48 at @s if score @s rng2 matches 1 store result score @s rng3 run execute if entity @e[tag=AzrielMob_husk,distance=..50]
+execute if score @s[scores={Health=..550}] rng1 matches 48 at @s if score @s rng2 matches 1 if entity @a[tag=azrPlayer,distance=5..] if score @s rng3 matches ..3 run function skyblock:azr/assets/mobs/husk
 
 execute if score @s rng1 matches 100 store result score @s rng1 run random value -20..5
 
