@@ -43,6 +43,7 @@ execute if score @s[scores={Health=..700}] rng1 matches 37 at @s if score @s rng
 
 execute if score @s rng1 matches 40 at @s run effect give @s invisibility 2 0 true
 execute if score @s rng1 matches 40 at @s run particle spore_blossom_air ~ ~1 ~ 0.3 0.7 0.3 0 18
+execute if score @s rng1 matches 40 at @s run particle large_smoke ~ ~1 ~ 0.3 0.7 0.3 0.03 5
 execute if score @s rng1 matches 40 at @s run playsound minecraft:entity.camel_husk.hurt hostile @a ~ ~ ~ 1 1.5
 execute if score @s[scores={Health=..600}] rng8 matches 40 at @s store result score @s rng2 run random value 1..4
 execute if score @s[scores={Health=..600}] rng1 matches 40 at @s if score @s rng2 matches 1..2 run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_mossflora_spore_marker","AzrielMob_mob_marker"]}
