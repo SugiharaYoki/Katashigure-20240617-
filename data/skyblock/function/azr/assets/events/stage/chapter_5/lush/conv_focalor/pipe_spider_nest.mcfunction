@@ -118,33 +118,35 @@ execute if score @s rng1 matches 601 positioned -79794 231 -545 run function sky
 execute if score @s rng1 matches 607 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run tp @s -79791 188 -518 facing -79791 188 -515
 execute if score @s rng1 matches 607 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run tp @s -79791 184 -519
 
-execute if score @s rng1 matches 608 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run tp @s -79791 188 -518 facing -79791 188 -515
-execute if score @s rng1 matches 608 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run tp @s -79791 184 -519
+execute if score @s rng1 matches 609 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run tp @s -79791 188 -518 facing -79791 188 -515
+execute if score @s rng1 matches 609 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run tp @s -79791 184 -519
 
 execute if score @s rng1 matches 627 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run tp @s -79791 188 -518 facing -79791 188 -515
 execute if score @s rng1 matches 627 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run tp @s -79791 184 -519
 
-execute if score @s rng1 matches 628 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run tp @s -79791 188 -518 facing -79791 188 -515
-execute if score @s rng1 matches 628 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run tp @s -79791 184 -519
+execute if score @s rng1 matches 629 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run tp @s -79791 188 -518 facing -79791 188 -515
+execute if score @s rng1 matches 629 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run tp @s -79791 184 -519
 
 execute if score @s rng1 matches 637 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run tp @s -79791 188 -518 facing -79791 188 -515
 execute if score @s rng1 matches 637 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run tp @s -79791 184 -519
 
-execute if score @s rng1 matches 638 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run tp @s -79791 188 -518 facing -79791 188 -515
-execute if score @s rng1 matches 638 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run tp @s -79791 184 -519
+execute if score @s rng1 matches 639 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run tp @s -79791 188 -518 facing -79791 188 -515
+execute if score @s rng1 matches 639 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run tp @s -79791 184 -519
 
 
 execute if score @s rng1 matches 637 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run fill -79790 188 -520 -79792 188 -518 minecraft:wildflowers[flower_amount=4] replace air
 execute if score @s rng1 matches 637 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run fill -79789 188 -521 -79793 188 -517 minecraft:wildflowers[flower_amount=4] replace air
 
-execute if score @s rng1 matches 637 run playsound minecraft:entity.wither.break_block hostile @a -79794 231 -545 1 2
+execute if score @s rng1 matches 637 positioned -79794 231 -545 run playsound minecraft:entity.wither.break_block hostile @a -79794 231 -545 1 2
 
 
-execute if score @s rng1 matches 650 run playsound minecraft:entity.wither.break_block hostile @a -79794 231 -545 1 2
+execute if score @s rng1 matches 650 positioned -79794 231 -545 run playsound minecraft:entity.wither.break_block hostile @a -79794 231 -545 1 2
 execute if score @s rng1 matches 650 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run tp @s -79791 188 -518 facing -79791 188 -515
 execute if score @s rng1 matches 650 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run tp @s -79791 184 -519
 execute if score @s rng1 matches 650 if score stage Azr_system matches ..86 run scoreboard players set stage Azr_system 90
 
+execute if score @s rng1 matches 650 positioned -79791 187 -519 as @a[tag=azrPlayer,distance=..100] run attribute @s minecraft:movement_speed modifier remove sea:marilyn_01
+execute if score @s rng1 matches 650 positioned -79791 187 -519 as @a[tag=azrPlayer,distance=..100] run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
 
 
 
