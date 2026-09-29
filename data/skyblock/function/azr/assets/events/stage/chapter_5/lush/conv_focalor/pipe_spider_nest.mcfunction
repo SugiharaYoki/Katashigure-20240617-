@@ -59,7 +59,6 @@ execute if score @s rng1 matches 99..100 run scoreboard players set @s rng1 99
 execute if score @s rng1 matches ..100 if entity @a[tag=azrPlayer,x=-79791,y=195,z=-637,distance=..7] run scoreboard players set @s rng1 101
 
 execute if score @s rng1 matches 101 if score stage Azr_system matches ..84 run scoreboard players set stage Azr_system 85
-execute if score @s rng1 matches 101 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage20
 execute if score @s rng1 matches 101 positioned -79810 195 -586 run function skyblock:azr/assets/mobs/skeleton_sentinel
 execute if score @s rng1 matches 101 positioned -79810 195 -586 run function skyblock:azr/assets/mobs/skeleton_sentinel
 execute if score @s rng1 matches 101 positioned -79810 195 -586 run function skyblock:azr/assets/mobs/skeleton_sentinel
@@ -80,5 +79,6 @@ execute if score @s rng1 matches 502 positioned -79791 196 -536 run playsound am
 execute if score @s rng1 matches 502 positioned -79791 196 -536 run playsound ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 10 0.66
 execute if score @s rng1 matches 502 positioned -79791 196 -536 run playsound ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 10 0.72
 execute if score @s rng1 matches 502 run title @a[tag=azrShowDialog] actionbar {text:"没错，我们就在这里……欢迎来到丛林的心脏，我们爱着你，深爱着你……",color:"aqua"}
+execute if score @s rng1 matches 502 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage20
 
 
