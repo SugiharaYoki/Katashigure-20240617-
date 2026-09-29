@@ -23,9 +23,10 @@ execute store result bossbar azr:boss_hp_bar value run scoreboard players get @s
 
 
 
+scoreboard players add @s rng1 1
 
-
-
+execute if score @s rng1 matches 18 at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+execute if score @s rng1 matches 20 at @s run function skyblock:azr/assets/mobs/skill/boss_legate/move_backstep
 
 
 
