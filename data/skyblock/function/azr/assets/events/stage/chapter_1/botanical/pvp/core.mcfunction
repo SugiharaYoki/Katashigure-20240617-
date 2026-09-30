@@ -29,7 +29,7 @@ execute if score @s rng3 matches 8.. run scoreboard players set @s rng3 0
 execute at @s as @e[tag=AzrielMob,tag=!AzrielMob_null_loot,distance=..60] run data modify entity @s DeathLootTable set value "skyblock:null"
 execute at @s as @e[tag=AzrielMob,tag=!AzrielMob_null_loot,distance=..60] run tag @s add AzrielMob_null_loot
 
-execute if score @s rng2 matches 1 run scoreboard players add @a[tag=AzrFlowerPVP] AzrMinigame_PVP_currency 80
+execute if score @s rng1 matches 1 run scoreboard players add @a[tag=AzrFlowerPVP] AzrMinigame_PVP_currency 80
 execute if score @s rng1 matches 1 run scoreboard players set AzrFlowerPVP_A rng1 0
 execute if score @s rng1 matches 1 run scoreboard players set AzrFlowerPVP_A rng2 0
 execute if score @s rng1 matches 1 run scoreboard players set AzrFlowerPVP_A rng3 0
