@@ -97,7 +97,7 @@ execute if score @s rng1 matches 603 run title @a[tag=azrShowDialog] actionbar {
 execute if score @s rng1 matches 615 run title @a[tag=azrShowDialog] actionbar {text:"感谢你将灵魂……献给我们……",color:"aqua"}
 execute if score @s rng1 matches 633 run title @a[tag=azrShowDialog] actionbar {text:"为何而颤抖？为何而举起武器？我们不会伤害你，你也无需挣扎。",color:"red"}
 execute if score @s rng1 matches 650 run title @a[tag=azrShowDialog] actionbar {text:"我们是宁芙，我们是丛林背后的掌控者。",color:"red"}
-execute if score @s rng1 matches 673 run title @a[tag=azrShowDialog] actionbar {text:"你会是我们的救世主，一切是多么美好。爱理莎，我们深爱着你。",color:"red"}
+execute if score @s rng1 matches 673 run title @a[tag=azrShowDialog] actionbar {text:"你会是我们的救世主，一切都如此美好。爱理莎，我们深爱着你。",color:"red"}
 execute if score @s rng1 matches 601 run effect give @a[tag=azrShowDialog] darkness 18 0 true
 
 execute if score @s rng1 matches 601 positioned -79791 197 -519 run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 10 0.7
