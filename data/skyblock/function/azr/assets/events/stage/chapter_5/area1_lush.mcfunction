@@ -48,7 +48,7 @@ execute positioned -79732 187 -756 as @n[tag=AzrielMarker_encounter,distance=0..
 
 
 #许愿池
-execute positioned -79728 173 -748 as @e[type=item,distance=..6] at @s if block ~ ~ ~ water if entity @s[nbt={Item:{id:"minecraft:ghast_tear"}}] run function skyblock:azr/assets/events/stage/chapter_5/lush/utility_wish_fountain
+execute positioned -79728 173 -748 as @e[type=item,distance=..6] at @s if block ~ ~ ~ water if entity @s[nbt={Item:{id:"minecraft:ghast_tear",count:1}}] run function skyblock:azr/assets/events/stage/chapter_5/lush/utility_wish_fountain
 
 
 
