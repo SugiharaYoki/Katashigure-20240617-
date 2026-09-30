@@ -117,7 +117,7 @@ execute if score @s rng1 matches 651 positioned -79791 196 -536 run playsound am
 execute if score @s rng1 matches 601..660 positioned -79791 197 -519 run particle warped_spore ~ ~ ~ 5 2 5 0 10
 execute if score @s rng1 matches 631..660 positioned -79791 197 -519 run particle warped_spore ~ ~ ~ 5 2 5 0 40
 
-execute if score @s rng1 matches 601 positioned -79791 197 -519 run playsound minecraft:entity.enderman.stare hostile @a ~ ~ ~ 10 0.5
+execute if score @s rng1 matches 601 positioned -79791 197 -519 run playsound minecraft:entity.enderman.stare hostile @a ~ ~ ~ 10 0.9
 
 execute if score @s rng1 matches 601 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run effect give @s invisibility infinite 0 true
 execute if score @s rng1 matches 601 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run tp @s -79791 188 -518 facing -79791 188 -515
