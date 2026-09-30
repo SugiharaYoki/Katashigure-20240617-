@@ -30,6 +30,9 @@ execute if entity @s[tag=B_winned] as @a[tag=AzrFlowerPVP_B] at @s run scoreboar
 scoreboard objectives setdisplay sidebar AzrMinigame_PVP_leaderboard
 
 scoreboard players set @a AzrMinigame_PVP_currency 0
+scoreboard players set AzrFlowerPVP_A AzrMinigame_PVP_currency 0
+scoreboard players set AzrFlowerPVP_B AzrMinigame_PVP_currency 0
+
 
 tag @a remove AzrFlowerPVP
 tag @a remove AzrFlowerPVP_A
