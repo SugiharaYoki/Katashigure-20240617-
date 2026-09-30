@@ -41,6 +41,9 @@ execute positioned -79672 178 -761 run function skyblock:azr/assets/mobs/slime
 execute positioned -79736 176 -790 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sentinel","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute positioned -79737 176 -791 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_fire","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
+execute positioned -79767 183 -671 run function skyblock:azr/assets/mobs/utility_bat
+execute positioned -79770 183 -671 run function skyblock:azr/assets/mobs/utility_bat
+execute positioned -79773 183 -671 run function skyblock:azr/assets/mobs/utility_bat
 
 fill -79761 190 -798 -79761 193 -798 ladder[facing=east]
 
