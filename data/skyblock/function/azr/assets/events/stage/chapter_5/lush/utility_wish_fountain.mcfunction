@@ -22,6 +22,7 @@ execute store result score @s rng1 run random value 1..31
 execute if score @s rng1 matches 1..17 run give @p[tag=azrPlayer] emerald 8
 execute if score @s rng1 matches 18..22 run give @p[tag=azrPlayer] emerald 16
 execute if score @s rng1 matches 23..25 run give @p[tag=azrPlayer] resin_clump 5
+execute if score @s rng1 matches 26.. run tellraw @p[tag=azrPlayer] [{text:"似乎有什么东西进到了背包里……",color:"#9bff6d",bold:1b}]
 execute if score @s rng1 matches 26 as @p[tag=azrPlayer] run function skyblock:azr/assets/items/armors/bee_boots_lush
 execute if score @s rng1 matches 27 as @p[tag=azrPlayer] run function skyblock:azr/assets/items/armors/bee_chestplate_lush
 execute if score @s rng1 matches 28 as @p[tag=azrPlayer] run function skyblock:azr/assets/items/armors/bee_leggings_lush
