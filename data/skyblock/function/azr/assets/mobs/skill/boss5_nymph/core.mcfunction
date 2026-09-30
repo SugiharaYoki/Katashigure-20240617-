@@ -60,7 +60,9 @@ execute if score @s[scores={Health=..400}] rng1 matches 30..60 at @s unless bloc
 execute if score @s[scores={Health=..400}] rng1 matches 30..60 at @s unless block ~ ~-0.3 ~ grass_block unless block ~ ~-0.3 ~ moss_block if score @s rng2 matches 4 if entity @a[tag=azrPlayer,distance=..9] positioned ^-1 ^ ^-2 run function skyblock:azr/assets/mobs/trap_fang_auto
 
 execute if score @s[scores={Health=..400}] rng1 matches 35 at @s store result score @s rng2 run random value 1..6
+execute if score @s[scores={Health=..250}] rng1 matches 35 at @s store result score @s rng2 run random value 1..8
 execute if score @s[scores={Health=..400}] rng1 matches 35 if score @s rng2 matches 1 run scoreboard players set @s rng1 500
+execute if score @s[scores={Health=..400}] rng1 matches 35 if score @s rng2 matches 7 run scoreboard players set @s rng1 600
 
 execute if score @s rng1 matches 42 at @s run function skyblock:azr/assets/mobs/skill/boss_legate/move_backstep
 execute if score @s rng1 matches 42 at @s store result score @s rng2 run random value 1..4
@@ -94,6 +96,8 @@ execute if score @s rng1 matches 100..110 store result score @s rng1 run random 
 execute if score @s rng1 matches 545 at @s run function skyblock:azr/assets/mobs/trap_spore_blackhole
 execute if score @s rng1 matches 550..560 store result score @s rng1 run random value -20..5
 
+execute if score @s rng1 matches 645 at @s run function skyblock:azr/assets/mobs/skill/boss5_nymph/action_swap
+execute if score @s rng1 matches 650..660 store result score @s rng1 run random value 0..15
 
 
 
