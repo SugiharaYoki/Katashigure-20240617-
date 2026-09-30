@@ -19,7 +19,7 @@ execute if score @s rng1 matches 1191 at @s run particle large_smoke ~ ~1 ~ 0.3 
 execute if score @s rng1 matches 1191 at @s run playsound minecraft:entity.camel_husk.hurt hostile @a ~ ~ ~ 1 1.5
 
 
-execute if score @s rng1 matches 1230 run title @a[tag=azrShowDialog] actionbar {text:"谢谢你……爱理莎……",color:"aqua",bold:true}
+execute if score @s rng1 matches 1230 if entity @n[tag=AzrielNPC_nymph,type=mannequin] run title @a[tag=azrShowDialog] actionbar {text:"谢谢你……爱理莎……",color:"aqua",bold:true}
 
 
 
