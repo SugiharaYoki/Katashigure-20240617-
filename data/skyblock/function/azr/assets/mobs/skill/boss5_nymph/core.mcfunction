@@ -38,6 +38,7 @@ execute if score @s AzrEntityTimer matches 420 run title @a[tag=azrShowDialog] a
 execute if score @s AzrEntityTimer matches 420 run particle minecraft:trial_spawner_detection_ominous ~ ~1 ~ 5 1 5 0. 250
 execute if score @s AzrEntityTimer matches 302 run playsound minecraft:entity.enderman.stare hostile @a ~ ~ ~ 3 1.5
 execute if score @s AzrEntityTimer matches 420 run playsound minecraft:entity.enderman.hurt hostile @a ~ ~ ~ 3 1.5
+execute if score @s AzrEntityTimer matches 420.. run tellraw @a[tag=azrShowDialog,distance=..20] {text:"XXXXXXXXXXXXXXXXXXXXXXXXXXX",color:"#69a4b1",obfuscated:true,hover_event:{"action":"show_text","value":{text:"我无法理解文字，也无法开口说话。有什么事物在侵蚀我的理智。",color:"#69a4b1"}}}
 
 scoreboard players add @s rng1 1
 
