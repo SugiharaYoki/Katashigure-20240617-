@@ -40,6 +40,8 @@ execute if score stage Azr_system matches 69 run tellraw @s [{text:"目标地点
 execute if score stage Azr_system matches 76 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"？？？区域 第5章·向上前行",color:"white",bold:false}]
 execute if score stage Azr_system matches 77..80 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"神代茏渠区域 第5章·在丛林中寻找向上前行的线索",color:"white",bold:false}]
 execute if score stage Azr_system matches 81..83 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"神代茏渠区域 第5章·通过管道网络前往更上方",color:"white",bold:false}]
+execute if score stage Azr_system matches 84..89 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"神代茏渠区域 第5章·探索管道网络 找到前进的路线",color:"white",bold:false}]
+execute if score stage Azr_system matches 90 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"神代茏渠区域 第5章·击败位于丛林之心的宁芙",color:"white",bold:false}]
 
 execute if score stage Azr_system matches 1..4 run tellraw @s [{text:"“敌人很强大，我必须稳住节奏，慢慢应对。\n千万别忘记：在装备受损时，打开背包内的生命手册访问商店。”",color:"#c5c5c5",bold:false}]
 execute if score stage Azr_system matches 5..8 run tellraw @s [{text:"“我不一定非得急着推进试炼关卡。\n第三关的下方似乎别有洞天，而先前的结界也多有开启。\n找到隐藏关卡并通过特殊挑战，似乎会使我获得特殊的奖励。”",color:"#c5c5c5",bold:false}]
@@ -62,6 +64,9 @@ execute if score stage Azr_system matches 69 run tellraw @s [{text:"“我坠落
 execute if score stage Azr_system matches 77 run tellraw @s [{text:"“我发现了生命树根系，但这并不代表我已经到达了目的地。”",color:"#c5c5c5",bold:false}]
 execute if score stage Azr_system matches 80 run tellraw @s [{text:"“这片丛林相当古怪。\n在没有阳光的此处，怎么可能生长出如此大片的茂盛丛林？”",color:"#c5c5c5",bold:false}]
 execute if score stage Azr_system matches 81..83 run tellraw @s [{text:"“既然四周没有路，那最可能是路的便是我的正上方——那些损毁的管道。”",color:"#c5c5c5",bold:false}]
+execute if score stage Azr_system matches 84..86 run tellraw @s [{text:"“通过这些管道的时候，我需要小心。这里似乎早已是某些危险生物的家园。\n要是在管道系统里迷路的话，记得用命星传送回生命树根系的锚点。”",color:"#c5c5c5",bold:false}]
+execute if score stage Azr_system matches 87..89 run tellraw @s [{text:"“如果要离开丛林，我必须搞清楚为何这里的魔力潮汐被严重扭曲。\n丛林之心或许有着我想要的答案，但我总觉得那里潜藏着什么极为危险的生物。”",color:"#c5c5c5",bold:false}]
+execute if score stage Azr_system matches 90 run tellraw @s [{text:"“如果要离开丛林，我必须击败掌控了丛林之心的宁芙。”",color:"#c5c5c5",bold:false}]
 #第四章
 
 execute if score stage Azr_system matches 14.. unless entity @s[tag=AZS_BoS11] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"我需要找到一种特殊移动方式，才能跨越数格宽的间隙……",color:"white",bold:false}]
