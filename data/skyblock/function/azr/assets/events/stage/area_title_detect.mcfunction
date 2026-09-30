@@ -174,6 +174,8 @@ execute unless score @s AzrPlayer_CurrentArea matches 11 positioned -79651 173 -
                                                 {area_id:11,title:"重生锚点：神代茏渠A",color_code:"#7de300"}
 execute unless score @s AzrPlayer_CurrentArea matches 11 positioned -79764 175 -777 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:11,title:"重生锚点：神代茏渠B",color_code:"#7de300"}
+execute unless score @s AzrPlayer_CurrentArea matches 11 positioned -79769 198 -583 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:11,title:"重生锚点：神代茏渠C",color_code:"#7de300"}
 
 
 
@@ -191,6 +193,7 @@ execute positioned -79923 38 -96 if entity @s[distance=..4] run tag @s add azrPl
 execute positioned -79855 46 -109 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_prison_b
 execute positioned -79651 173 -768 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_lush_a
 execute positioned -79764 175 -777 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_lush_b
+execute positioned -79769 198 -583 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_lush_c
 
 
 

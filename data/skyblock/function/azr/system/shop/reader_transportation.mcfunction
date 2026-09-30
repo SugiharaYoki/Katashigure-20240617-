@@ -28,6 +28,7 @@ execute if entity @s[tag=AZS_RespAnchorTeleport] positioned -79338 23 -414 if en
 
 tellraw @s[tag=azrPlayer_respawnanchor_unlocked_lush_a] [{text:"   - "},{text:"神代茏渠",color:"#7de300"},{text:" 丛林的边缘  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40040"}}]
 tellraw @s[tag=azrPlayer_respawnanchor_unlocked_lush_b] [{text:"   - "},{text:"神代茏渠",color:"#7de300"},{text:" 管道殿堂  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40041"}}]
+tellraw @s[tag=azrPlayer_respawnanchor_unlocked_lush_c] [{text:"   - "},{text:"神代茏渠",color:"#7de300"},{text:" 惘灵的心房  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40042"}}]
 
 
 

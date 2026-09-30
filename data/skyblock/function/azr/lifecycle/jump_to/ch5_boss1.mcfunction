@@ -1,0 +1,20 @@
+function skyblock:azr/lifecycle/jump_to/ch5_start
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
