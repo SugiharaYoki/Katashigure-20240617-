@@ -4,6 +4,7 @@ function skyblock:azr/lifecycle/jump_to/ch5_start
 
 tag @a[tag=azrPlayer] add azrPlayer_respawnanchor_unlocked_lush_a
 tag @a[tag=azrPlayer] add azrPlayer_respawnanchor_unlocked_lush_b
+tag @a[tag=azrPlayer] add azrPlayer_respawnanchor_unlocked_lush_c
 
 
 advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage18
