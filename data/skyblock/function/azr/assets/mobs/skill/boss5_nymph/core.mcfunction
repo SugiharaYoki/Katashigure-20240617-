@@ -40,11 +40,28 @@ execute if score @s AzrEntityTimer matches 420 at @s run effect give @s darkness
 execute if score @s AzrEntityTimer matches 420 at @s run particle minecraft:trial_spawner_detection_ominous ~ ~1 ~ 5 1 5 0. 250
 execute if score @s AzrEntityTimer matches 302 at @s run playsound minecraft:entity.enderman.stare hostile @a ~ ~ ~ 3 1.5
 execute if score @s AzrEntityTimer matches 420 at @s run playsound minecraft:entity.enderman.hurt hostile @a ~ ~ ~ 3 1.5
-execute if score @s AzrEntityTimer matches 420.. at @s run tellraw @a[tag=azrShowDialog,distance=..20,gamemode=!creative] {text:"XXXXXXXXXXXXXXXXXXXXXXXXXXX",color:"#69a4b1",obfuscated:true,hover_event:{"action":"show_text","value":{text:"我无法理解文字，也无法开口说话。有什么事物在侵蚀我的理智。",color:"#69a4b1"}}}
+execute if score @s AzrEntityTimer matches 420..1000 at @s run tellraw @a[tag=azrShowDialog,distance=..20,gamemode=!creative] {text:"XXXXXXXXXXXXXXXXXXXXXXXXXXX",color:"#69a4b1",obfuscated:true,hover_event:{"action":"show_text","value":{text:"我无法理解文字，也无法开口说话。有什么事物在侵蚀我的理智。",color:"#69a4b1"}}}
 
 execute if score @s AzrEntityTimer matches 999..1000 run scoreboard players set @s AzrEntityTimer 999
-
 execute if score @s Health matches ..80 if score @s AzrEntityTimer matches ..1000 run scoreboard players set @s AzrEntityTimer 1001
+execute if score @s AzrEntityTimer matches 1001 run stopsound @a[tag=azrShowDialog] music minecraft:surveilleretpunir
+
+
+execute if score @s AzrEntityTimer matches 1001 run title @a[tag=azrShowDialog] actionbar {text:"不要杀死我们……不要杀死我们！！",color:"red",bold:true}
+execute if score @s AzrEntityTimer matches 1013 run title @a[tag=azrShowDialog] actionbar {text:"我们知道错了，我们是宁芙，我们一直都生存于这片丛林……！",color:"red",bold:true}
+execute if score @s AzrEntityTimer matches 1027 run title @a[tag=azrShowDialog] actionbar {text:"丛林曾经不是丛林的时候，我们是精灵。我们撺掇生灵魔力。",color:"red",bold:true}
+execute if score @s AzrEntityTimer matches 1040 run title @a[tag=azrShowDialog] actionbar {text:"我们也不想，但我们饿了好久，食物……多出来这么多的食物，我们控制不住……",color:"red",bold:true}
+execute if score @s AzrEntityTimer matches 1055 run title @a[tag=azrShowDialog] actionbar {text:"宁芙知道错了，我们再也不会了，不要杀死我们……",color:"red",bold:true}
+
+execute if score @s AzrEntityTimer matches 1005 run function skyblock:azr/assets/mobs/skill/boss5_nymph/move_backstep
+execute if score @s AzrEntityTimer matches 1031 run function skyblock:azr/assets/mobs/skill/boss5_nymph/move_backstep
+execute if score @s AzrEntityTimer matches 1045 run function skyblock:azr/assets/mobs/skill/boss5_nymph/move_backstep
+
+execute if score @s AzrEntityTimer matches 1100..1105 run scoreboard players set @s AzrEntityTimer 1100
+
+
+#_____________________
+
 
 scoreboard players add @s rng1 1
 
