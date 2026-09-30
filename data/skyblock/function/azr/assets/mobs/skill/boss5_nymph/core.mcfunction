@@ -63,7 +63,7 @@ execute if score @s[scores={Health=..400}] rng1 matches 30..60 at @s unless bloc
 execute if score @s[scores={Health=..600}] rng1 matches 35 at @s store result score @s rng2 run random value 7..15
 execute if score @s[scores={Health=..400}] rng1 matches 35 at @s store result score @s rng2 run random value 1..8
 execute if score @s[scores={Health=..400}] rng1 matches 35 if score @s rng2 matches 1 run scoreboard players set @s rng1 500
-execute if score @s[scores={Health=..60}] rng1 matches 35 if score @s rng2 matches 7 run scoreboard players set @s rng1 600
+execute if score @s[scores={Health=..600}] rng1 matches 35 if score @s rng2 matches 7 run scoreboard players set @s rng1 600
 
 execute if score @s rng1 matches 42 at @s run function skyblock:azr/assets/mobs/skill/boss_legate/move_backstep
 execute if score @s rng1 matches 42 at @s store result score @s rng2 run random value 1..4
