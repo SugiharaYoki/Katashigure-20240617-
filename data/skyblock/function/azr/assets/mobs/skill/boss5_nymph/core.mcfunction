@@ -47,8 +47,6 @@ scoreboard players add @s rng1 1
 execute if score @s rng1 matches 1..5 at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 execute if score @s rng1 matches 20 at @s run function skyblock:azr/assets/mobs/skill/boss_legate/move_backstep
 
-execute if score @s[scores={Health=..400}] rng1 matches 25 at @s store result score @s rng2 run random value 1..6
-execute if score @s[scores={Health=..400}] rng1 matches 25 if score @s rng2 matches 1 run scoreboard players set @s rng1 500
 
 execute if score @s rng1 matches 30 at @s run function skyblock:azr/assets/mobs/skill/boss_legate/move_backstep
 execute if score @s rng1 matches 30 at @s store result score @s rng2 run random value 1..4
@@ -58,6 +56,9 @@ execute if score @s rng1 matches 30 at @s if score @s rng2 matches 2 if entity @
 execute if score @s[scores={Health=..400}] rng1 matches 30..60 at @s store result score @s rng2 run random value 1..6
 execute if score @s[scores={Health=..400}] rng1 matches 30..60 at @s if score @s rng2 matches 1 if entity @a[tag=azrPlayer,distance=..5] positioned ^1 ^ ^1 run function skyblock:azr/assets/mobs/trap_fang_auto
 execute if score @s[scores={Health=..400}] rng1 matches 30..60 at @s if score @s rng2 matches 2 if entity @a[tag=azrPlayer,distance=..5] positioned ^-1 ^ ^1 run function skyblock:azr/assets/mobs/trap_fang_auto
+
+execute if score @s[scores={Health=..400}] rng1 matches 35 at @s store result score @s rng2 run random value 1..6
+execute if score @s[scores={Health=..400}] rng1 matches 35 if score @s rng2 matches 1 run scoreboard players set @s rng1 500
 
 execute if score @s rng1 matches 42 at @s run function skyblock:azr/assets/mobs/skill/boss_legate/move_backstep
 execute if score @s rng1 matches 42 at @s store result score @s rng2 run random value 1..4
