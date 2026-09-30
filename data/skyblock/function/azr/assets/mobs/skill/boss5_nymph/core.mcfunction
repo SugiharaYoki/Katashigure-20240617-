@@ -25,10 +25,10 @@ execute store result bossbar azr:boss_hp_bar value run scoreboard players get @s
 
 execute if score @s[scores={Health=600..}] AzrEntityTimer matches 100.. run scoreboard players set @s AzrEntityTimer 99
 execute if score @s AzrEntityTimer matches 102 run title @a[tag=azrShowDialog] actionbar {text:"放弃挣扎，挣扎只会让你感到痛苦。",color:"red",bold:true}
-execute if score @s AzrEntityTimer matches 182 run title @a[tag=azrShowDialog] actionbar {text:"我们不愿你感到痛苦。灵魂被撺掇仅是瞬间的发展。",color:"red",bold:true}
+execute if score @s AzrEntityTimer matches 182 run title @a[tag=azrShowDialog] actionbar {text:"我们不愿你感到痛苦。灵魂被撺掇仅是持续不了片刻的感知。",color:"red",bold:true}
 execute if score @s AzrEntityTimer matches 262 run title @a[tag=azrShowDialog] actionbar {text:"不要反抗，反抗仅仅会为你带来噩梦。",color:"red",bold:true}
 execute if score @s[scores={Health=400..}] AzrEntityTimer matches 300.. run scoreboard players set @s AzrEntityTimer 299
-execute if score @s AzrEntityTimer matches 302 run title @a[tag=azrShowDialog] actionbar {text:"为什么……？为什么？为什么要这么做……",color:"red",bold:true}
+execute if score @s AzrEntityTimer matches 302 run title @a[tag=azrShowDialog] actionbar {text:"为什么……？为什么要伤害我们？为什么要这么做……",color:"red",bold:true}
 execute if score @s AzrEntityTimer matches 382 run title @a[tag=azrShowDialog] actionbar {text:"为什么要对我们做出这种事……",color:"red",bold:true}
 execute if score @s AzrEntityTimer matches 387 run title @a[tag=azrShowDialog] actionbar {text:"为什么要对我们做出这种事……为什么要对我们做出这种事……",color:"red",bold:true}
 execute if score @s AzrEntityTimer matches 341 run title @a[tag=azrShowDialog] actionbar {text:"为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……",color:"red",bold:true}
