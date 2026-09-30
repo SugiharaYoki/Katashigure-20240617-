@@ -168,5 +168,6 @@ execute if score @s rng1 matches 650..901 positioned -79791 188 -518 unless enti
 
 execute if score @s rng1 matches 900..901 run scoreboard players set @s rng1 900
 
+execute unless entity @n[tag=AzrielNPC_nymph,distance=..500,type=mannequin] if score @s rng1 matches ..1185 run scoreboard players set @s rng1 1190
 
 
