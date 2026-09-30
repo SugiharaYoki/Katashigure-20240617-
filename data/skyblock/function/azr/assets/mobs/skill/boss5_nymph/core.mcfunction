@@ -24,9 +24,9 @@ execute store result score @s Health run data get entity @s Health
 execute store result bossbar azr:boss_hp_bar value run scoreboard players get @s Health
 
 execute if score @s[scores={Health=600..}] AzrEntityTimer matches 100.. run scoreboard players set @s AzrEntityTimer 99
-execute if score @s AzrEntityTimer matches 102 run title @a[tag=azrShowDialog] actionbar {text:"放弃挣扎，挣扎只会让你感到痛苦。",color:"red",bold:true}
+execute if score @s AzrEntityTimer matches 102 run title @a[tag=azrShowDialog] actionbar {text:"你可以放弃挣扎，挣扎只会让你感到痛苦。",color:"red",bold:true}
 execute if score @s AzrEntityTimer matches 182 run title @a[tag=azrShowDialog] actionbar {text:"我们不愿你感到痛苦。灵魂被撺掇仅是持续不了片刻的感知。",color:"red",bold:true}
-execute if score @s AzrEntityTimer matches 262 run title @a[tag=azrShowDialog] actionbar {text:"不要反抗，反抗仅仅会为你带来噩梦。",color:"red",bold:true}
+execute if score @s AzrEntityTimer matches 262 run title @a[tag=azrShowDialog] actionbar {text:"为何要反抗？反抗仅仅会为你带来噩梦。",color:"red",bold:true}
 execute if score @s[scores={Health=400..}] AzrEntityTimer matches 300.. run scoreboard players set @s AzrEntityTimer 299
 execute if score @s AzrEntityTimer matches 302 run title @a[tag=azrShowDialog] actionbar {text:"为什么……？为什么要伤害我们？为什么要这么做……",color:"red",bold:true}
 execute if score @s AzrEntityTimer matches 382 run title @a[tag=azrShowDialog] actionbar {text:"为什么要对我们做出这种事……",color:"red",bold:true}
@@ -35,9 +35,12 @@ execute if score @s AzrEntityTimer matches 391 run title @a[tag=azrShowDialog] a
 execute if score @s AzrEntityTimer matches 394 run title @a[tag=azrShowDialog] actionbar {text:"为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……",color:"red",bold:true}
 execute if score @s AzrEntityTimer matches 397 run title @a[tag=azrShowDialog] actionbar {text:"为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……",color:"red",bold:true}
 execute if score @s AzrEntityTimer matches 400 run title @a[tag=azrShowDialog] actionbar {text:"为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……",color:"red",bold:true}
+execute if score @s AzrEntityTimer matches 400 run title @a[tag=azrShowDialog] title {text:"为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……",color:"red",bold:true}
+execute if score @s AzrEntityTimer matches 400 run title @a[tag=azrShowDialog] subtitle {text:"为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……",color:"red",bold:true}
+execute if score @s AzrEntityTimer matches 400 run tellraw @a[tag=azrShowDialog] {text:"为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……为什么要对我们做出这种事……",color:"red",bold:true}
 execute if score @s AzrEntityTimer matches 450 run title @a[tag=azrShowDialog] actionbar {text:"啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊",color:"red",bold:true}
 execute if score @s AzrEntityTimer matches 450 at @s run effect give @s darkness 20 0 true
-execute if score @s AzrEntityTimer matches 450 at @s run particle minecraft:trial_spawner_detection_ominous ~ ~1 ~ 5 1 5 0. 250
+execute if score @s AzrEntityTimer matches 450..455 at @s run particle minecraft:trial_spawner_detection_ominous ~ ~1 ~ 5 1 5 0. 80
 execute if score @s AzrEntityTimer matches 302 at @s run playsound minecraft:entity.enderman.stare hostile @a ~ ~ ~ 3 1.5
 execute if score @s AzrEntityTimer matches 450 at @s run playsound minecraft:entity.enderman.hurt hostile @a ~ ~ ~ 5 0.7
 execute if score @s AzrEntityTimer matches 450 at @s run playsound minecraft:entity.enderman.hurt hostile @a ~ ~ ~ 5 1.5
