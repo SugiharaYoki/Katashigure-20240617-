@@ -69,6 +69,7 @@ execute if score stage Azr_system matches 69..71 if entity @s[tag=AzrielNPC_raph
 execute if score stage Azr_system matches 77.. if entity @s[tag=AzrielBossSlime] run function skyblock:azr/assets/mobs/skill/boss_slime/core
 
 execute if score stage Azr_system matches 90 positioned -79794 231 -545 if entity @s[tag=AzrielNPC_nymph,distance=..200] run function skyblock:azr/assets/mobs/skill/boss5_nymph/core
+execute if score stage Azr_system matches 90 positioned -79794 231 -545 if entity @s[tag=AzrielNPC_nymph_clone,distance=..200] run function skyblock:azr/assets/mobs/skill/boss5_nymph/clone_core
 
 
 

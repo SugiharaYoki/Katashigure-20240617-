@@ -82,6 +82,8 @@ execute if score @s[scores={Health=..600}] rng1 matches 35 if score @s rng2 matc
 
 execute if score @s rng1 matches 30..44 unless entity @a[tag=azrPlayer,distance=..9] run scoreboard players set @s rng1 44
 
+execute if score @s[scores={Health=..300}] rng1 matches 38 at @s run function skyblock:azr/assets/mobs/skill/boss5_nymph/clone_summon
+
 execute if score @s rng1 matches 42 at @s run function skyblock:azr/assets/mobs/skill/boss_legate/move_backstep
 execute if score @s rng1 matches 42 at @s store result score @s rng2 run random value 1..4
 execute if score @s[scores={Health=..750}] rng1 matches 42 at @s if score @s rng2 matches 1 if entity @a[tag=azrPlayer,distance=..5] run function skyblock:azr/assets/mobs/trap_fang_auto
