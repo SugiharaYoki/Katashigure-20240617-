@@ -13,6 +13,16 @@ function skyblock:azr/system/player/init
 
 function skyblock:azr/system/player/refresh_bossbar
 execute at @s run tp @s @r[tag=azrPlayer,distance=1..]
+execute at @s run tp @s @r[tag=azrPlayer,distance=1..]
+execute at @s run tp @s @r[tag=azrPlayer,distance=1..]
+
+
+execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_westcourt_a] positioned -79943 37 -8 run tp @s ~ ~1 ~
+execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_prison_a] positioned -79923 38 -96 run tp @s ~ ~1 ~
+execute positioned -79765 -17 -177 if entity @n[tag=AzrielMob_utility_respawn_anchor,distance=..8] run tp @s ~ ~ ~
+execute positioned -79572 11 -414 if entity @n[tag=AzrielMob_utility_respawn_anchor,distance=..8] run tp @s ~ ~ ~
+execute if entity @a[tag=azrPlayer,tag=azrPlayer_respawnanchor_unlocked_lush_a] positioned -79651 173 -768 run tp @s ~ ~1 ~
+
 #生命手册
 execute if score stage Azr_system matches 3.. unless score @s Azr_skillPoints matches 1.. run tellraw @s [{text:"你已永久解锁「生命手册」与「节制天平」。\n记得收集绿宝石与素材，使用「生命手册」换取必要的武器与道具。\n消耗绿宝石在「节制天平」中解锁新的主/被动技能。\n\n打开背包用鼠标选定“生命手册”或“节制天平”以开启商店，并使用聊天区域进行交互。"}]
 execute if score stage Azr_system matches 1.. if entity @s[tag=AZR_SEAawakened] run function skyblock:azr/assets/items/others/revival_star
