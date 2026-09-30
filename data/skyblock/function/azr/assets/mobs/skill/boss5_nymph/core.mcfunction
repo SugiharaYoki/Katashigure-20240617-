@@ -111,7 +111,7 @@ execute if score @s[scores={Health=..400}] rng1 matches 35 at @s store result sc
 execute if score @s[scores={Health=..400}] rng1 matches 35 if score @s rng2 matches 1 run scoreboard players set @s rng1 500
 execute if score @s[scores={Health=..600}] rng1 matches 35 if score @s rng2 matches 7 run scoreboard players set @s rng1 600
 
-execute if score @s rng1 matches 30..44 unless entity @a[tag=azrPlayer,distance=..9] run scoreboard players set @s rng1 44
+execute if score @s rng1 matches 36..44 unless entity @a[tag=azrPlayer,distance=..11] run scoreboard players set @s rng1 44
 
 execute if score @s[scores={Health=..300}] rng1 matches 38 at @s run function skyblock:azr/assets/mobs/skill/boss5_nymph/clone_summon
 
