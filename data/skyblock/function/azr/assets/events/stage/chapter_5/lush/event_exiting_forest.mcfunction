@@ -6,6 +6,7 @@ execute unless entity @n[tag=AzrielNPC_nymph,distance=..500,type=mannequin] if s
 execute if score @s rng1 matches 1190 if entity @n[tag=AzrielNPC_nymph,type=mannequin] as @a[tag=azrPlayer] run function skyblock:azr/assets/items/amulets/nymph_love
 execute if score @s rng1 matches 1190 unless entity @n[tag=AzrielNPC_nymph,type=mannequin] as @a[tag=azrPlayer] run function skyblock:azr/assets/items/amulets/nymph_heart
 execute if score @s rng1 matches 1190 run bossbar remove azr:boss_hp_bar
+execute if score @s rng1 matches 1190 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage20_boss5
 execute if score @s rng1 matches 1190 if score stage Azr_system matches ..90 run scoreboard players set stage Azr_system 91
 execute if score @s rng1 matches 1190 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..39}] Azr_skillPoints 40
 
