@@ -160,8 +160,7 @@ execute if score @s rng1 matches 650 if score stage Azr_system matches ..86 run 
 execute if score @s rng1 matches 650 positioned -79791 187 -519 as @a[tag=azrPlayer,distance=..100] run attribute @s minecraft:movement_speed modifier remove sea:marilyn_01
 execute if score @s rng1 matches 650 positioned -79791 187 -519 as @a[tag=azrPlayer,distance=..100] run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
 
-
-
+execute if score @s rng1 matches 900..901 run scoreboard players set @s rng1 900
 
 
 

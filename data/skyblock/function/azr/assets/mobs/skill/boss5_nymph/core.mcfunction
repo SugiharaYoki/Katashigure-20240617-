@@ -47,16 +47,25 @@ execute if score @s Health matches ..80 if score @s AzrEntityTimer matches ..100
 execute if score @s AzrEntityTimer matches 1001 run stopsound @a[tag=azrShowDialog] music minecraft:surveilleretpunir
 
 
+execute if score @s AzrEntityTimer matches 1001 at @s run kill @e[tag=AzrielMob,type=husk,distance=..50]
+execute if score @s AzrEntityTimer matches 1001 at @s run kill @e[tag=AzrielMob,type=cave_spider,distance=..50]
+execute if score @s AzrEntityTimer matches 1001 at @s run kill @e[tag=AzrielNPC_nymph_clone,type=mannequin,distance=..50]
+execute if score @s AzrEntityTimer matches 1001 at @s run kill @e[tag=AzrielMob_mob_marker,distance=..50]
+execute if score @s AzrEntityTimer matches 1001 run attribute @s armor modifier add azrboss5_1:armor_deduction_1 -50 add_value
+execute if score @s AzrEntityTimer matches 1001 run attribute @s knockback_resistance modifier add azrboss5_1:armor_deduction_2 0.3 add_value
 execute if score @s AzrEntityTimer matches 1001 run title @a[tag=azrShowDialog] actionbar {text:"不要杀死我们……不要杀死我们！！",color:"red",bold:true}
-execute if score @s AzrEntityTimer matches 1013 run title @a[tag=azrShowDialog] actionbar {text:"我们知道错了，我们是宁芙，我们一直都生存于这片丛林……！",color:"red",bold:true}
+execute if score @s AzrEntityTimer matches 1013 run title @a[tag=azrShowDialog] actionbar {text:"我们知道错了……！我们是宁芙，我们一直都生存于这片丛林……！",color:"red",bold:true}
 execute if score @s AzrEntityTimer matches 1027 run title @a[tag=azrShowDialog] actionbar {text:"丛林曾经不是丛林的时候，我们是精灵。我们撺掇生灵魔力。",color:"red",bold:true}
-execute if score @s AzrEntityTimer matches 1040 run title @a[tag=azrShowDialog] actionbar {text:"我们也不想，但我们饿了好久，食物……多出来这么多的食物，我们控制不住……",color:"red",bold:true}
-execute if score @s AzrEntityTimer matches 1055 run title @a[tag=azrShowDialog] actionbar {text:"宁芙知道错了，我们再也不会了，不要杀死我们……",color:"red",bold:true}
+execute if score @s AzrEntityTimer matches 1040 run title @a[tag=azrShowDialog] actionbar {text:"宁芙也不想，但宁芙饿了好久，食物……多出来这么多的食物，宁芙控制不住……",color:"red",bold:true}
+execute if score @s AzrEntityTimer matches 1055 run title @a[tag=azrShowDialog] actionbar {text:"宁芙知道错了，宁芙再也不会了，不要杀死宁芙……",color:"red",bold:true}
 execute if score @s AzrEntityTimer matches 1075 run title @a[tag=azrShowDialog] actionbar {text:"求求你了，爱理莎……",color:"red",bold:true}
 
 execute if score @s AzrEntityTimer matches 1005 run function skyblock:azr/assets/mobs/skill/boss5_nymph/move_backstep
 execute if score @s AzrEntityTimer matches 1031 run function skyblock:azr/assets/mobs/skill/boss5_nymph/move_backstep
 execute if score @s AzrEntityTimer matches 1045 run function skyblock:azr/assets/mobs/skill/boss5_nymph/move_backstep
+
+execute if score @s AzrEntityTimer matches 1027 positioned -79782 195 -688 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng1 1000
+
 
 execute if score @s AzrEntityTimer matches 1100..1105 run scoreboard players set @s AzrEntityTimer 1100
 
