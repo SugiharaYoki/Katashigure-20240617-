@@ -2,7 +2,7 @@
 
 scoreboard players add @s AzrEntityTimer 1
 
-execute if score @s AzrEntityTimer matches 1.. run scoreboard players add @s rng9 1
+execute if score @s AzrEntityTimer matches 1.. unless score @s Health matches ..80 run scoreboard players add @s rng9 1
 execute if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:surveilleretpunir music @s ~ ~ ~ 0.65
 execute if score @s rng9 matches 2840.. run scoreboard players set @s rng9 0
 
@@ -41,6 +41,10 @@ execute if score @s AzrEntityTimer matches 420 at @s run particle minecraft:tria
 execute if score @s AzrEntityTimer matches 302 at @s run playsound minecraft:entity.enderman.stare hostile @a ~ ~ ~ 3 1.5
 execute if score @s AzrEntityTimer matches 420 at @s run playsound minecraft:entity.enderman.hurt hostile @a ~ ~ ~ 3 1.5
 execute if score @s AzrEntityTimer matches 420.. at @s run tellraw @a[tag=azrShowDialog,distance=..20,gamemode=!creative] {text:"XXXXXXXXXXXXXXXXXXXXXXXXXXX",color:"#69a4b1",obfuscated:true,hover_event:{"action":"show_text","value":{text:"我无法理解文字，也无法开口说话。有什么事物在侵蚀我的理智。",color:"#69a4b1"}}}
+
+execute if score @s AzrEntityTimer matches 999..1000 run scoreboard players set @s AzrEntityTimer 999
+
+execute if score @s Health matches ..80 if score @s AzrEntityTimer matches ..1000 run scoreboard players set @s AzrEntityTimer 1001
 
 scoreboard players add @s rng1 1
 
