@@ -85,6 +85,8 @@ execute if score @s rng1 matches 51 at @s run effect clear @s invisibility
 execute if score @s[scores={Health=..550}] rng1 matches 51 at @s store result score @s rng2 run random value 1..6
 execute if score @s[scores={Health=..550}] rng1 matches 51 at @s if score @s rng2 matches 1 store result score @s rng3 run execute if entity @e[tag=AzrielMob_husk,distance=..50]
 execute if score @s[scores={Health=..550}] rng1 matches 51 at @s if score @s rng2 matches 1 if entity @a[tag=azrPlayer,distance=5..] if score @s rng3 matches ..3 run function skyblock:azr/assets/mobs/husk
+execute if score @s[scores={Health=..350}] rng1 matches 51 at @s if score @s rng2 matches 2 store result score @s rng3 run execute if entity @e[tag=AzrielMob_spider_poison,distance=..50]
+execute if score @s[scores={Health=..350}] rng1 matches 51 at @s if score @s rng2 matches 2 if entity @a[tag=azrPlayer,distance=5..] if score @s rng3 matches ..3 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_spider_poison","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 execute if score @s rng1 matches 100..110 store result score @s rng1 run random value -20..5
 
