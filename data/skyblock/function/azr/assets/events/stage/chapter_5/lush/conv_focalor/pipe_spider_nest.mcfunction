@@ -95,6 +95,7 @@ execute if score @s rng1 matches 601 positioned -79791 187 -519 as @a[tag=azrPla
 
 execute if score @s rng1 matches 603 run title @a[tag=azrShowDialog] actionbar {text:"爱理莎，非常欢迎你的到来。",color:"aqua",bold:true}
 execute if score @s rng1 matches 615 run title @a[tag=azrShowDialog] actionbar {text:"感谢你将灵魂……献给我们……",color:"aqua",bold:true}
+execute if score @s rng1 matches 625 run title @a[tag=azrShowDialog] actionbar {text:"你的灵魂将被我们所珍惜，你的存在将被我们所铭记。",color:"red",bold:true}
 execute if score @s rng1 matches 633 run title @a[tag=azrShowDialog] actionbar {text:"为何而颤抖？为何而举起武器？我们不会伤害你，你也无需挣扎。",color:"red",bold:true}
 execute if score @s rng1 matches 650 run title @a[tag=azrShowDialog] actionbar {text:"我们是宁芙，我们是丛林背后的掌控者。",color:"red",bold:true}
 execute if score @s rng1 matches 673 run title @a[tag=azrShowDialog] actionbar {text:"你会是我们的救世主，一切都如此美好。爱理莎，我们深爱着你。",color:"red",bold:true}
