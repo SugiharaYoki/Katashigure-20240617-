@@ -88,7 +88,7 @@ execute if score @s rng1 matches 502 run scoreboard players set @a[tag=azrPlayer
 execute if score @s rng1 matches 502 positioned -79794 231 -545 run function skyblock:azr/assets/mobs/skill/boss5_nymph/summon
 
 execute if score @s rng1 matches 599..600 run scoreboard players set @s rng1 599
-execute if score @s rng1 matches ..600 if entity @a[tag=azrPlayer,x=-79791,y=188,z=-518,distance=..9] run scoreboard players set @s rng1 601
+execute if score @s rng1 matches ..600 if entity @a[tag=azrPlayer,x=-79791,y=188,z=-518,distance=..8] run scoreboard players set @s rng1 601
 
 execute if score @s rng1 matches 601 positioned -79791 187 -519 as @a[tag=azrPlayer,distance=..100] run attribute @s minecraft:movement_speed modifier add sea:marilyn_01 -1 add_value
 execute if score @s rng1 matches 601 positioned -79791 187 -519 as @a[tag=azrPlayer,distance=..100] run attribute @s minecraft:jump_strength modifier add sea:marilyn_01 -50 add_value
