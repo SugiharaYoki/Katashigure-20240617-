@@ -164,7 +164,7 @@ execute if score @s rng1 matches 650 if score stage Azr_system matches ..86 run 
 execute if score @s rng1 matches 650 positioned -79791 187 -519 as @a[tag=azrPlayer,distance=..100] run attribute @s minecraft:movement_speed modifier remove sea:marilyn_01
 execute if score @s rng1 matches 650 positioned -79791 187 -519 as @a[tag=azrPlayer,distance=..100] run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
 
-execute if score @s rng1 matches 650..901 positioned -79794 231 -545 unless entity @a[tag=azrPlayer,distance=..120] unless score @n[tag=AzrielNPC_nymph] AzrEntityTimer matches 1000.. run function skyblock:azr/assets/events/stage/chapter_5/lush/event_outside_nymph_battlefield
+execute if score @s rng1 matches 650..901 positioned -79791 188 -518 unless entity @a[tag=azrPlayer,distance=..58] unless score @n[tag=AzrielNPC_nymph] AzrEntityTimer matches 1000.. run function skyblock:azr/assets/events/stage/chapter_5/lush/event_outside_nymph_battlefield
 
 execute if score @s rng1 matches 900..901 run scoreboard players set @s rng1 900
 
