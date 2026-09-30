@@ -43,8 +43,8 @@ execute if items entity @s[tag=AzrFlowerPVP_B] player.cursor iron_golem_spawn_eg
 
 execute if items entity @s[tag=AzrFlowerPVP_A] player.cursor zombie_spawn_egg run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_upgrade {skill_id:8,team:A}
 execute if items entity @s[tag=AzrFlowerPVP_B] player.cursor zombie_spawn_egg run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_upgrade {skill_id:8,team:B}
-execute if items entity @s[tag=AzrFlowerPVP_A] player.cursor amethyst_shard run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_upgrade {skill_id:17,team:A}
-execute if items entity @s[tag=AzrFlowerPVP_B] player.cursor amethyst_shard run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_upgrade {skill_id:17,team:B}
+execute if items entity @s[tag=AzrFlowerPVP_A] player.cursor amethyst_shard run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_upgrade {skill_id:9,team:A}
+execute if items entity @s[tag=AzrFlowerPVP_B] player.cursor amethyst_shard run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/chest/execute_upgrade {skill_id:9,team:B}
 
 
 
