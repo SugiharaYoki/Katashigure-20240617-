@@ -12,6 +12,7 @@ execute if score @s rng1 matches 2..62 run scoreboard players operation @s rng2 
 execute if score @s rng1 matches 2..62 store result storage azr_effect:expand x double 0.001 run scoreboard players get @s rng2
 execute if score @s rng1 matches 2..62 at @s rotated as @s run function skyblock:azr/assets/mobs/skill/trap/spore_blackhole_particle with storage azr_effect:expand
 tag @s add AzrielMob_spore_blackhole_current
+execute if score @s rng1 matches 33 at @s rotated as @s run particle minecraft:gust ~ ~ ~ 0 0 0 0 1 force
 execute if score @s rng1 matches 2..50 as @a[tag=azrPlayer,distance=..12] run attribute @s movement_speed modifier remove azr_trap:spore_blackhole_back
 execute if score @s rng1 matches 2..50 as @a[tag=azrPlayer,distance=..8.5] at @s rotated as @s run function skyblock:azr/assets/mobs/skill/trap/spore_blackhole_back
 execute if score @s rng1 matches 51 as @a[tag=azrPlayer] run attribute @s movement_speed modifier remove azr_trap:spore_blackhole_back
