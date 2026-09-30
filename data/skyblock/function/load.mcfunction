@@ -114,6 +114,8 @@ scoreboard objectives add DeathCountTemp minecraft.custom:minecraft.deaths
 scoreboard objectives add DeathCount deathCount
 #Azr0
 scoreboard objectives add azr0_system dummy
+scoreboard objectives add Azr0_Wave dummy
+scoreboard objectives add Azr0_Wave_best dummy
 #AzrielsMidgarden
 scoreboard objectives add Azr_system dummy
 scoreboard objectives add Azr_startCount dummy
