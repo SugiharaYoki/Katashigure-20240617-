@@ -153,6 +153,7 @@ execute if score @s rng1 matches 650 positioned -79789 188 -518 run function sky
 
 execute if score @s rng1 matches 650 positioned -79794 231 -545 run playsound minecraft:entity.wither.break_block hostile @a -79794 231 -545 1 2
 execute if score @s rng1 matches 650 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run effect clear @s invisibility
+execute if score @s rng1 matches 650 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run effect clear @s resistance
 execute if score @s rng1 matches 650 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run effect give @s invisibility infinite 0 true
 execute if score @s rng1 matches 650 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run tp @s -79791 184 -519
 execute if score @s rng1 matches 650 if score stage Azr_system matches ..86 run scoreboard players set stage Azr_system 90

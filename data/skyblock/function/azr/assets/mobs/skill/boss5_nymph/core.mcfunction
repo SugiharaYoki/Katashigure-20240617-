@@ -56,9 +56,9 @@ execute if score @s AzrEntityTimer matches 1001 run attribute @s knockback_resis
 execute if score @s AzrEntityTimer matches 1001 run title @a[tag=azrShowDialog] actionbar {text:"不要杀死我们……不要杀死我们！！",color:"red",bold:true}
 execute if score @s AzrEntityTimer matches 1013 run title @a[tag=azrShowDialog] actionbar {text:"我们知道错了……！我们是宁芙，我们一直都生存于这片丛林……！",color:"red",bold:true}
 execute if score @s AzrEntityTimer matches 1027 run title @a[tag=azrShowDialog] actionbar {text:"丛林曾经不是丛林的时候，我们是精灵。我们撺掇生灵魔力。",color:"red",bold:true}
-execute if score @s AzrEntityTimer matches 1040 run title @a[tag=azrShowDialog] actionbar {text:"宁芙也不想，但宁芙饿了好久，食物……多出来这么多的食物，宁芙控制不住……",color:"red",bold:true}
-execute if score @s AzrEntityTimer matches 1055 run title @a[tag=azrShowDialog] actionbar {text:"宁芙知道错了，宁芙再也不会了，不要杀死宁芙……",color:"red",bold:true}
-execute if score @s AzrEntityTimer matches 1075 run title @a[tag=azrShowDialog] actionbar {text:"求求你了，爱理莎……",color:"red",bold:true}
+execute if score @s AzrEntityTimer matches 1040 run title @a[tag=azrShowDialog] actionbar {text:"宁芙也不想，但宁芙饿了好久，食物……多出来的食物，宁芙深爱着食物……",color:"red",bold:true}
+execute if score @s AzrEntityTimer matches 1055 run title @a[tag=azrShowDialog] actionbar {text:"宁芙知道错了，宁芙再也不敢爱你了，不要杀死宁芙……",color:"red",bold:true}
+execute if score @s AzrEntityTimer matches 1075 run title @a[tag=azrShowDialog] actionbar {text:"求求你了……",color:"red",bold:true}
 
 execute if score @s AzrEntityTimer matches 1005 run function skyblock:azr/assets/mobs/skill/boss5_nymph/move_backstep
 execute if score @s AzrEntityTimer matches 1031 run function skyblock:azr/assets/mobs/skill/boss5_nymph/move_backstep

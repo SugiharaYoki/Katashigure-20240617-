@@ -54,8 +54,8 @@ execute if score @s AzrSariel_Amulet_MagicalCurrentLevel matches 0 run effect cl
 execute if score @s AzrSariel_Amulet_MagicalCurrentLevel matches 0 run scoreboard players set @s AzrSariel_Amulet_MagicalCurrentLevel -1
 
 #第五章 宁芙 boss结束
-execute positioned -79791 185 -546 if entity @s[distance=..30] run particle trail{color:6666239,duration:240,target:[-79790.30,293.00,-545.70]} ~ ~ ~ 0.5 0 0.5 0 2 force
-execute if entity @s[x=-79791,y=185,z=-546,dx=0,dy=50,dz=0] run scoreboard players set @s AzrSariel_Amulet_MagicalCurrentLevel 3
+execute positioned -79782 195 -688 if entity @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1000..}] positioned -79791 185 -546 if entity @s[distance=..30] run particle trail{color:6666239,duration:240,target:[-79790.30,293.00,-545.70]} ~ ~ ~ 0.5 0 0.5 0 2 force
+execute positioned -79782 195 -688 if entity @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1000..}] if entity @s[x=-79791,y=185,z=-546,dx=0,dy=50,dz=0] run scoreboard players set @s AzrSariel_Amulet_MagicalCurrentLevel 3
 
 
 
