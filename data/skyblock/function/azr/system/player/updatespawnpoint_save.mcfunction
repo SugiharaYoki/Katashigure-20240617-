@@ -4,6 +4,12 @@ $execute store result storage azr:player_permanent_data $(eid).spawnpoint_x int 
 $execute store result storage azr:player_permanent_data $(eid).spawnpoint_y int 1 run data get entity @s Pos[1]
 $execute store result storage azr:player_permanent_data $(eid).spawnpoint_z int 1 run data get entity @s Pos[2]
 
+$execute if entity @s[tag=azr_midjoin] store result storage azr:player_permanent_data $(eid).spawnpoint_x int 1 run data get entity @s $(current_x)
+$execute if entity @s[tag=azr_midjoin] store result storage azr:player_permanent_data $(eid).spawnpoint_y int 1 run data get entity @s $(current_y)
+$execute if entity @s[tag=azr_midjoin] store result storage azr:player_permanent_data $(eid).spawnpoint_z int 1 run data get entity @s $(current_z)
+
+tag @s remove azr_midjoin
+
 execute at @s run playsound minecraft:block.creaking_heart.spawn player @a ~ ~ ~ 1 0.5
 execute at @s run playsound minecraft:block.respawn_anchor.set_spawn player @a ~ ~ ~ 1 0.8
 execute at @s run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 2 0.9 0 40
