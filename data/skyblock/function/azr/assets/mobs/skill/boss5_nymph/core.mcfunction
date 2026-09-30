@@ -13,6 +13,7 @@ execute if score @s rng9 matches 2900.. run scoreboard players set @s rng9 0
 
 
 execute if score @s AzrEntityTimer matches 1 run data modify entity @s NoGravity set value 0b
+execute if score @s AzrEntityTimer matches 1 run data modify entity @s CustomName set value "宁芙"
 execute if score @s AzrEntityTimer matches 1 run scoreboard players set @s rng13 1
 execute if score @s AzrEntityTimer matches 1 run bossbar add azr:boss_hp_bar [{text:"茏渠的撺掇者 - ",bold:true,color:"white"},{text:"宁芙",bold:true,color:"#39f77e"}]
 execute if score @s AzrEntityTimer matches 1 run bossbar set azr:boss_hp_bar color green
