@@ -48,6 +48,7 @@ execute if score @s rng1 matches 2 positioned -79791 195 -617 run function skybl
 
 execute if score @s rng1 matches 85 positioned -79787 199 -767 as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:spider_poison}
 
+execute if score @s rng1 matches 10 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..37}] Azr_skillPoints 38
 execute if score @s rng1 matches 10 run title @a[tag=azrShowDialog] actionbar {text:"没错，没错……爱理莎，就是朝着这个方向来……",color:"aqua"}
 execute if score @s rng1 matches 50 run title @a[tag=azrShowDialog] actionbar {text:"我们会静候你的光临，我们会在丛林的心脏等待着你……",color:"aqua"}
 
@@ -82,6 +83,7 @@ execute if score @s rng1 matches 502 positioned -79791 196 -536 run playsound am
 execute if score @s rng1 matches 502 run title @a[tag=azrShowDialog] actionbar {text:"没错，我们就在这里……欢迎来到丛林的心脏，我们爱着你，深爱着你……",color:"aqua"}
 execute if score @s rng1 matches 502 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage20
 execute if score @s rng1 matches 502 if score stage Azr_system matches ..85 run scoreboard players set stage Azr_system 86
+execute if score @s rng1 matches 502 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..38}] Azr_skillPoints 39
 
 execute if score @s rng1 matches 502 positioned -79794 231 -545 run function skyblock:azr/assets/mobs/skill/boss5_nymph/summon
 
@@ -92,9 +94,10 @@ execute if score @s rng1 matches 601 positioned -79791 187 -519 as @a[tag=azrPla
 execute if score @s rng1 matches 601 positioned -79791 187 -519 as @a[tag=azrPlayer,distance=..100] run attribute @s minecraft:jump_strength modifier add sea:marilyn_01 -50 add_value
 
 execute if score @s rng1 matches 603 run title @a[tag=azrShowDialog] actionbar {text:"爱理莎，非常欢迎你的到来。",color:"aqua"}
-execute if score @s rng1 matches 619 run title @a[tag=azrShowDialog] actionbar {text:"感谢你将灵魂……献给我们……",color:"aqua"}
-execute if score @s rng1 matches 643 run title @a[tag=azrShowDialog] actionbar {text:"我们是宁芙，我们是丛林背后的掌控者。",color:"red"}
-execute if score @s rng1 matches 673 run title @a[tag=azrShowDialog] actionbar {text:"为何而颤抖？为何而举起武器？我们不会伤害你，你也无需挣扎。",color:"red"}
+execute if score @s rng1 matches 615 run title @a[tag=azrShowDialog] actionbar {text:"感谢你将灵魂……献给我们……",color:"aqua"}
+execute if score @s rng1 matches 633 run title @a[tag=azrShowDialog] actionbar {text:"为何而颤抖？为何而举起武器？我们不会伤害你，你也无需挣扎。",color:"red"}
+execute if score @s rng1 matches 650 run title @a[tag=azrShowDialog] actionbar {text:"我们是宁芙，我们是丛林背后的掌控者。",color:"red"}
+execute if score @s rng1 matches 673 run title @a[tag=azrShowDialog] actionbar {text:"你会是我们的救世主，这多么美妙啊，爱理莎，我们爱着你。",color:"red"}
 execute if score @s rng1 matches 601 run effect give @a[tag=azrShowDialog] darkness 18 0 true
 
 execute if score @s rng1 matches 601 positioned -79791 197 -519 run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 10 0.7

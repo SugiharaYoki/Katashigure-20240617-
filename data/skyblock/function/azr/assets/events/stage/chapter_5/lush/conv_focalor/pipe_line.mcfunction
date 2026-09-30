@@ -25,3 +25,4 @@ execute if score @s rng1 matches 10 run title @a[tag=azrShowDialog] actionbar {t
 execute if score @s rng1 matches 2 if score stage Azr_system matches ..81 run scoreboard players set stage Azr_system 82
 
 execute if score @s rng1 matches 10 positioned -79726 174 -799 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage19
+execute if score @s rng1 matches 10 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..31}] Azr_skillPoints 32

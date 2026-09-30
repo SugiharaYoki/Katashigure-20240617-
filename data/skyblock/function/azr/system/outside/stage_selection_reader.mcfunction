@@ -18,3 +18,4 @@ execute if score @s Azr_skillPoints matches 18.. run tellraw @s [{text:"       -
 execute if score @s Azr_skillPoints matches 19.. run tellraw @s [{text:"        - "},{text:"间章",color:"#989592"},{text:" 邃栈  ",color:"#989592"},{text:"〈◆〉",bold:1b,color:"#85aaff",click_event:{"action":"run_command","command":"trigger MultiMenu set 16230011"}}]
 
 execute if score @s Azr_skillPoints matches 20.. run tellraw @s [{text:"         - "},{text:"生之命 第五章",color:"#7de300"},{text:" 神代茏渠  ",color:"#7de300"},{text:"〈◆〉",bold:1b,color:"#85e1ff",click_event:{"action":"run_command","command":"trigger MultiMenu set 16230021"}}]
+execute if score @s Azr_skillPoints matches 39.. run tellraw @s [{text:"         - "},{text:"生之命 第五章",color:"#7de300"},{text:" BOSS - 宁芙  ",color:"#7de300"},{text:"〈◆〉",bold:1b,color:"#85e1ff",click_event:{"action":"run_command","command":"trigger MultiMenu set 16230022"}}]

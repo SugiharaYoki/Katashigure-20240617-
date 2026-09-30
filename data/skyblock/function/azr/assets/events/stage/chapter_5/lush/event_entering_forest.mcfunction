@@ -33,7 +33,7 @@ execute if score @s rng1 matches 441 positioned -79776 194 -797 run function sky
 
 
 execute if score @s rng1 matches 441 positioned -79726 174 -799 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage18
-
+execute if score @s rng1 matches 441 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..30}] Azr_skillPoints 31
 
 
 #音效
