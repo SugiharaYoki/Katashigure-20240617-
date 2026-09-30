@@ -181,6 +181,10 @@ scoreboard objectives add AZR_chainKillUpg_attackspeed dummy
 execute as @a[distance=0..80,gamemode=!spectator] at @s run function skyblock:pvp/skywar/system/removeallgaming
 
 tag @a[distance=0..80,gamemode=!spectator] add MG_AZR0PT
+execute if entity @a[tag=azr0_new_game] run tag @a[tag=MG_AZR0PT] add azr0_new_game
+execute if entity @a[tag=azr0_load_game] run tag @a[tag=MG_AZR0PT] add azr0_load_game
+
+
 execute as @a[tag=MG_AZR0PT] at @s run function skyblock:mg/azr0/system/player/init
 execute at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~ run tp @a[tag=MG_AZR0PT] ~ ~ ~
 execute at @n[tag=mg_azr0,type=marker] positioned ~ ~1 ~ run spawnpoint @a[tag=MG_AZR0PT] ~ ~ ~
