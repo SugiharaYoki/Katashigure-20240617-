@@ -66,7 +66,7 @@ execute if score stage Azr_system matches 80 run tellraw @s [{text:"“这片丛
 execute if score stage Azr_system matches 81..83 run tellraw @s [{text:"“既然四周没有路，那最可能是路的便是我的正上方——那些损毁的管道。”",color:"#c5c5c5",bold:false}]
 execute if score stage Azr_system matches 84..86 run tellraw @s [{text:"“通过这些管道的时候，我需要小心。这里似乎早已是某些危险生物的家园。\n要是在管道系统里迷路的话，记得用命星传送回生命树根系的锚点。”",color:"#c5c5c5",bold:false}]
 execute if score stage Azr_system matches 87..89 run tellraw @s [{text:"“如果要离开丛林，我必须搞清楚为何这里的魔力潮汐被严重扭曲。\n丛林之心或许有着我想要的答案，但我总觉得那里潜藏着什么极为危险的生物。”",color:"#c5c5c5",bold:false}]
-execute if score stage Azr_system matches 90 run tellraw @s [{text:"“如果要离开丛林，我必须击败掌控了丛林之心的宁芙。”",color:"#c5c5c5",bold:false}]
+execute if score stage Azr_system matches 90 run tellraw @s [{text:"“如果要离开丛林，我必须击败镇守在丛林之心的宁芙。\n她似乎也想要我前往那里，我不清楚原因。\n但我不觉得那是出于善意。”",color:"#c5c5c5",bold:false}]
 #第四章
 
 execute if score stage Azr_system matches 14.. unless entity @s[tag=AZS_BoS11] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"我需要找到一种特殊移动方式，才能跨越数格宽的间隙……",color:"white",bold:false}]
