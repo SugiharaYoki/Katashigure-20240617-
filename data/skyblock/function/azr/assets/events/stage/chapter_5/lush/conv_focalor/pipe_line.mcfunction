@@ -21,6 +21,7 @@ execute if score @s rng1 matches 2 positioned -79755 194 -817 run tp @n[tag=Azri
 execute if score @s rng1 matches 2 run fill -79761 190 -798 -79761 193 -798 ladder[facing=east]
 
 execute if score @s rng1 matches 10 run title @a[tag=azrShowDialog] actionbar {text:"对你……结局该有数种，但你选择来到我的栖身之处……",color:"aqua"}
+execute if score @s rng1 matches 10 run tellraw @a[tag=azrShowDialog] {text:"对你……结局该有数种，但你选择来到我的栖身之处……",color:"aqua"}
 
 execute if score @s rng1 matches 2 if score stage Azr_system matches ..81 run scoreboard players set stage Azr_system 82
 

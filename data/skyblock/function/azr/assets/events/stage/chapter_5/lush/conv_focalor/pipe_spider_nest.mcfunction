@@ -51,6 +51,8 @@ execute if score @s rng1 matches 85 positioned -79787 199 -767 as @a[tag=azrPlay
 execute if score @s rng1 matches 10 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..37}] Azr_skillPoints 38
 execute if score @s rng1 matches 10 run title @a[tag=azrShowDialog] actionbar {text:"没错，没错……爱理莎，就是朝着这个方向来……",color:"aqua",bold:true}
 execute if score @s rng1 matches 50 run title @a[tag=azrShowDialog] actionbar {text:"我们会静候你的光临，我们会在丛林的心脏等待着你……",color:"aqua",bold:true}
+execute if score @s rng1 matches 10 run tellraw @a[tag=azrShowDialog] {text:"没错，没错……爱理莎，就是朝着这个方向来……",color:"aqua",bold:true}
+execute if score @s rng1 matches 50 run tellraw @a[tag=azrShowDialog] {text:"我们会静候你的光临，我们会在丛林的心脏等待着你……",color:"aqua",bold:true}
 
 execute if score @s rng1 matches 11 positioned -79780 195 -665 run tp @n[tag=AzrielNPC_focalor,type=mannequin,distance=..200] -79791 188 -518 facing -79791 188 -515
 
@@ -69,6 +71,8 @@ execute if score @s rng1 matches 101 positioned -79790 199 -577 run function sky
 
 execute if score @s rng1 matches 115 run title @a[tag=azrShowDialog] actionbar {text:"你将会拯救我们，我们将因你而得以逃离囚牢……",color:"aqua",bold:true}
 execute if score @s rng1 matches 165 run title @a[tag=azrShowDialog] actionbar {text:"爱理莎，你会是我们的英雄……我们将如从前一样，深爱着你……",color:"aqua",bold:true}
+execute if score @s rng1 matches 115 run tellraw @a[tag=azrShowDialog] {text:"你将会拯救我们，我们将因你而得以逃离囚牢……",color:"aqua",bold:true}
+execute if score @s rng1 matches 165 run tellraw @a[tag=azrShowDialog] {text:"爱理莎，你会是我们的英雄……我们将如从前一样，深爱着你……",color:"aqua",bold:true}
 
 execute if score @s rng1 matches 130 positioned -79791 194 -589 run function skyblock:azr/assets/mobs/blaze
 execute if score @s rng1 matches 170 positioned -79791 195 -622 run function skyblock:azr/assets/mobs/blaze
@@ -81,6 +85,8 @@ execute if score @s rng1 matches 502 positioned -79791 196 -536 run playsound am
 execute if score @s rng1 matches 502 positioned -79791 196 -536 run playsound ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 10 0.66
 execute if score @s rng1 matches 502 positioned -79791 196 -536 run playsound ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 10 0.72
 execute if score @s rng1 matches 502 run title @a[tag=azrShowDialog] actionbar {text:"没错，我们就在这里……欢迎来到丛林的心脏，我们爱着你，深爱着你……",color:"aqua",bold:true}
+execute if score @s rng1 matches 502 run tellraw @a[tag=azrShowDialog] {text:"没错，我们就在这里……欢迎来到丛林的心脏，我们爱着你，深爱着你……",color:"aqua",bold:true}
+
 execute if score @s rng1 matches 502 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage20
 execute if score @s rng1 matches 502 if score stage Azr_system matches ..85 run scoreboard players set stage Azr_system 86
 execute if score @s rng1 matches 502 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..38}] Azr_skillPoints 39
@@ -97,11 +103,18 @@ execute if score @s rng1 matches 603 run title @a[tag=azrShowDialog] actionbar {
 execute if score @s rng1 matches 615 run title @a[tag=azrShowDialog] actionbar {text:"感谢你将灵魂献给我们。",color:"aqua",bold:true}
 execute if score @s rng1 matches 625 run title @a[tag=azrShowDialog] actionbar {text:"你的灵魂将被我们所珍惜，你的存在将被我们所铭记。",color:"red",bold:true}
 execute if score @s rng1 matches 633 run title @a[tag=azrShowDialog] actionbar {text:"为何而颤抖？为何而举起武器？我们不会伤害你，你也无需挣扎。",color:"red",bold:true}
+execute if score @s rng1 matches 603 run tellraw @a[tag=azrShowDialog] {text:"爱理莎，非常欢迎你来到我们的家园。",color:"aqua",bold:true}
+execute if score @s rng1 matches 615 run tellraw @a[tag=azrShowDialog] {text:"感谢你将灵魂献给我们。",color:"aqua",bold:true}
+execute if score @s rng1 matches 625 run tellraw @a[tag=azrShowDialog] {text:"你的灵魂将被我们所珍惜，你的存在将被我们所铭记。",color:"red",bold:true}
+execute if score @s rng1 matches 633 run tellraw @a[tag=azrShowDialog] {text:"为何而颤抖？为何而举起武器？我们不会伤害你，你也无需挣扎。",color:"red",bold:true}
 
 execute if score @s rng1 matches 648..649 at @n[tag=AzrielNPC_nymph] unless entity @a[tag=azrPlayer,distance=..10] run scoreboard players set @s rng1 648
 
 execute if score @s rng1 matches 650 run title @a[tag=azrShowDialog] actionbar {text:"我们是宁芙，我们是丛林背后的掌控者。",color:"red",bold:true}
 execute if score @s rng1 matches 673 run title @a[tag=azrShowDialog] actionbar {text:"你会是我们的救世主，一切都如此美好。爱理莎，我们深爱着你。",color:"red",bold:true}
+execute if score @s rng1 matches 650 run tellraw @a[tag=azrShowDialog] {text:"我们是宁芙，我们是丛林背后的掌控者。",color:"red",bold:true}
+execute if score @s rng1 matches 673 run tellraw @a[tag=azrShowDialog] {text:"你会是我们的救世主，一切都如此美好。爱理莎，我们深爱着你。",color:"red",bold:true}
+
 execute if score @s rng1 matches 601 run effect give @a[tag=azrShowDialog] darkness 10 0 true
 
 execute if score @s rng1 matches 601 positioned -79791 197 -519 run playsound ambient.soul_sand_valley.additions ambient @a ~ ~ ~ 10 0.7

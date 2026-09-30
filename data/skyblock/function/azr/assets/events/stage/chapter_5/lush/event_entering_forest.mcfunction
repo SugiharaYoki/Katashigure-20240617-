@@ -14,6 +14,7 @@ execute if score @s rng1 matches 401 positioned -79727 174 -799 run playsound am
 execute if score @s rng1 matches 401 positioned -79727 174 -799 run playsound ambient.underwater.loop.additions.ultra_rare ambient @a ~ ~ ~ 10 0.72
 
 execute if score @s rng1 matches 409 run title @a[tag=azrShowDialog] actionbar {text:"你……可以听到我吗？爱理莎……",color:"aqua"}
+execute if score @s rng1 matches 409 run tellraw @a[tag=azrShowDialog] {text:"你……可以听到我吗？爱理莎……",color:"aqua"}
 
 execute if score @s rng1 matches 407 positioned -79726 174 -798 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_fire","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 407 positioned -79726 174 -799 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_fire","AzrielMob_summon_delay","AzrielMob_level_1"]}

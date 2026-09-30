@@ -22,6 +22,7 @@ execute if score @s rng1 matches 1191 as @n[tag=AzrielNPC_nymph] at @s run plays
 
 
 execute if score @s rng1 matches 1230 if entity @n[tag=AzrielNPC_nymph,type=mannequin] run title @a[tag=azrShowDialog] actionbar {text:"谢谢你……爱理莎……",color:"aqua",bold:true}
+execute if score @s rng1 matches 1230 if entity @n[tag=AzrielNPC_nymph,type=mannequin] run tellraw @a[tag=azrShowDialog] {text:"谢谢你……爱理莎……",color:"aqua",bold:true}
 
 
 

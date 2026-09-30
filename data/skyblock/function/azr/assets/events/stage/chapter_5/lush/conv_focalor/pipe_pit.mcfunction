@@ -38,6 +38,10 @@ execute if score @s rng1 matches 10 run title @a[tag=azrShowDialog] actionbar {t
 execute if score @s rng1 matches 50 run title @a[tag=azrShowDialog] actionbar {text:"因为此乃宿命，我本就不该存活……",color:"aqua"}
 execute if score @s rng1 matches 90 run title @a[tag=azrShowDialog] actionbar {text:"这千年来的历史，足够了……我已经帮助到千年的多少过客……",color:"aqua"}
 execute if score @s rng1 matches 140 run title @a[tag=azrShowDialog] actionbar {text:"找到我，爱理莎……找到我，取走属于我的……",color:"aqua"}
+execute if score @s rng1 matches 10 run tellraw @a[tag=azrShowDialog] {text:"我将全心欢迎你的到来……你将亲手取走我的全部……",color:"aqua"}
+execute if score @s rng1 matches 50 run tellraw @a[tag=azrShowDialog] {text:"因为此乃宿命，我本就不该存活……",color:"aqua"}
+execute if score @s rng1 matches 90 run tellraw @a[tag=azrShowDialog] {text:"这千年来的历史，足够了……我已经帮助到千年的多少过客……",color:"aqua"}
+execute if score @s rng1 matches 140 run tellraw @a[tag=azrShowDialog] {text:"找到我，爱理莎……找到我，取走属于我的……",color:"aqua"}
 
 execute if score @s rng1 matches 140 run fill -79787 189 -799 -79787 191 -799 ladder[facing=south]
 
