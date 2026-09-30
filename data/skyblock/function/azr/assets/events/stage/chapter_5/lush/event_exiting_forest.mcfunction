@@ -1,7 +1,7 @@
 scoreboard players add @s rng1 1
 
 execute unless entity @n[tag=AzrielNPC_nymph,distance=..500,type=mannequin] if score @s rng1 matches ..1185 run scoreboard players set @s rng1 1190
-execute if entity @n[tag=AzrielNPC_nymph,distance=..500,type=mannequin] if score @s rng1 matches ..1125 run scoreboard players set @s rng1 1190
+execute if entity @n[tag=AzrielNPC_nymph,distance=..500,type=mannequin] if score @s rng1 matches 1125 run scoreboard players set @s rng1 1190
 
 
 execute if score @s rng1 matches 1191 if entity @n[tag=AzrielNPC_nymph,type=mannequin] as @a[tag=azrPlayer] run function skyblock:azr/assets/items/amulets/nymph_love
