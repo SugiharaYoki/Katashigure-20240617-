@@ -129,20 +129,20 @@ execute if score @s rng1 matches 607 positioned -79794 231 -545 as @n[tag=Azriel
 execute if score @s rng1 matches 607 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run effect give @s invisibility infinite 0 true
 execute if score @s rng1 matches 608 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run effect clear @s invisibility
 execute if score @s rng1 matches 608 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run effect give @s invisibility infinite 0 true
-execute if score @s rng1 matches 617 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run effect clear @s invisibility
-execute if score @s rng1 matches 617 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run effect give @s invisibility infinite 0 true
-execute if score @s rng1 matches 618 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run effect clear @s invisibility
-execute if score @s rng1 matches 618 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run effect give @s invisibility infinite 0 true
+execute if score @s rng1 matches 611 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run effect clear @s invisibility
+execute if score @s rng1 matches 611 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run effect give @s invisibility infinite 0 true
+execute if score @s rng1 matches 612 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run effect clear @s invisibility
+execute if score @s rng1 matches 612 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run effect give @s invisibility infinite 0 true
 
-execute if score @s rng1 matches 622 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run effect clear @s invisibility
-execute if score @s rng1 matches 622 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run effect give @s invisibility infinite 0 true
-execute if score @s rng1 matches 623 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run effect clear @s invisibility
-execute if score @s rng1 matches 623 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run effect give @s invisibility infinite 0 true
+execute if score @s rng1 matches 623 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run effect clear @s invisibility
+execute if score @s rng1 matches 623 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run effect give @s invisibility infinite 0 true
+execute if score @s rng1 matches 624 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run effect clear @s invisibility
+execute if score @s rng1 matches 624 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run effect give @s invisibility infinite 0 true
 
-execute if score @s rng1 matches 637 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run effect clear @s invisibility
-execute if score @s rng1 matches 637 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run effect give @s invisibility infinite 0 true
-execute if score @s rng1 matches 638 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run effect clear @s invisibility
-execute if score @s rng1 matches 638 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run effect give @s invisibility infinite 0 true
+execute if score @s rng1 matches 638 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run effect clear @s invisibility
+execute if score @s rng1 matches 638 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run effect give @s invisibility infinite 0 true
+execute if score @s rng1 matches 639 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run effect clear @s invisibility
+execute if score @s rng1 matches 639 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run effect give @s invisibility infinite 0 true
 
 
 execute if score @s rng1 matches 605 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run fill -79790 188 -520 -79792 188 -518 minecraft:wildflowers[flower_amount=4] replace air
