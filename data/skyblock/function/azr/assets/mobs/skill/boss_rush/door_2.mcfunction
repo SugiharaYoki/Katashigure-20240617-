@@ -24,10 +24,10 @@ execute if score @s AzrEntityTimer matches 5 run title @a[distance=..50] title {
 execute if score @s AzrEntityTimer matches 5 run fill -79159 77 -31 -79195 77 5 minecraft:tinted_glass replace air
 
 
-execute if score @s AzrEntityTimer matches 5 positioned -79167 50 -19 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
-execute if score @s AzrEntityTimer matches 20 positioned -79167 50 -19 run function skyblock:azr/assets/mobs/skill/boss_rush/elite_zombie_villager_cleric_summon
-execute if score @s AzrEntityTimer matches 5 positioned -79167 50 -13 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
-execute if score @s AzrEntityTimer matches 20 positioned -79167 50 -13 run function skyblock:azr/assets/mobs/skill/boss_rush/elite_zombie_villager_cleric_summon
+execute if score @s AzrEntityTimer matches 5 positioned -79167 50 -16 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
+execute if score @s AzrEntityTimer matches 20 positioned -79167 50 -16 run function skyblock:azr/assets/mobs/skill/boss_rush/elite_zombie_villager_cleric_summon
+execute if score @s AzrEntityTimer matches 5 positioned -79167 50 -10 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
+execute if score @s AzrEntityTimer matches 20 positioned -79167 50 -10 run function skyblock:azr/assets/mobs/skill/boss_rush/elite_zombie_villager_cleric_summon
 
 execute if score @s AzrEntityTimer matches 20 positioned -79187 50 -13 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
 execute if score @s AzrEntityTimer matches 20 positioned -79187 50 -13 run tag @e[tag=AzrielMob,distance=..30] add AzrielMob_BossRush_Target
