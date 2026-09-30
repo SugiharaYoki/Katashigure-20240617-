@@ -43,10 +43,18 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_savior:1b
 execute if items entity @s weapon.offhand *[custom_data~{azr_amulet_arrow_savior:1b}] run function skyblock:azr/system/player/skills/amulet/arrow_savior_instant
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_drogue:1b}] run function skyblock:azr/system/player/skills/amulet/fire_drogue_core
 
-execute if items entity @s[tag=!AzrAmulet_nymph_hearted] container.* *[custom_data~{azr_amulet_nymph_heart:1b}] if block ~ ~ ~ #skyblock:water run effect give @s water_breathing infinite 0 true
-execute if items entity @s[tag=!AzrAmulet_nymph_hearted] container.* *[custom_data~{azr_amulet_nymph_heart:1b}] if block ~ ~ ~ #skyblock:water run tag @s add AzrAmulet_nymph_hearted
-execute if entity @s[tag=AzrAmulet_nymph_hearted] unless block ~ ~ ~ #skyblock:water run tag @s remove AzrAmulet_nymph_hearted
+#宁芙之爱与宁芙之心
+execute if items entity @s[tag=!AzrAmulet_nymph_loved] container.* *[custom_data~{azr_amulet_nymph_love:1b}] if block ~ ~ ~ #skyblock:water run effect give @s water_breathing infinite 0 true
+execute if items entity @s[tag=!AzrAmulet_nymph_loved] container.* *[custom_data~{azr_amulet_nymph_love:1b}] if block ~ ~ ~ #skyblock:water run tag @s add AzrAmulet_nymph_loved
+execute if entity @s[tag=AzrAmulet_nymph_loved] unless items entity @s container.* *[custom_data~{azr_amulet_nymph_love:1b}] run effect clear @s water_breathing
+execute if entity @s[tag=AzrAmulet_nymph_loved] unless block ~ ~ ~ #skyblock:water run tag @s remove AzrAmulet_nymph_loved
 
+execute if items entity @s[tag=!AzrAmulet_nymph_hearted] container.* *[custom_data~{azr_amulet_nymph_heart:1b}] run attribute @s max_health modifier add azr_amulet:nymph_heart 6 add_value
+execute if items entity @s[tag=!AzrAmulet_nymph_hearted] container.* *[custom_data~{azr_amulet_nymph_heart:1b}] run tag @s add AzrAmulet_nymph_hearted
+execute if entity @s[tag=AzrAmulet_nymph_hearted] unless items entity @s container.* *[custom_data~{azr_amulet_nymph_heart:1b}] run attribute @s max_health modifier remove azr_amulet:nymph_heart
+execute if entity @s[tag=AzrAmulet_nymph_hearted] unless items entity @s container.* *[custom_data~{azr_amulet_nymph_heart:1b}] run tag @s remove AzrAmulet_nymph_hearted
+
+#魔力潮汐
 execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_3:1b}] run tag @s add magical_current_pass
 execute if items entity @s[tag=!magical_current_pass] container.* *[custom_data~{azr_amulet_magical_current:1b}] run tag @s add magical_current_pass
 execute if entity @s[tag=magical_current_pass] run function skyblock:azr/system/player/skills/amulet/magical_current_list

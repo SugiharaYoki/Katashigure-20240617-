@@ -259,3 +259,15 @@ tag @s remove azr_amulet_assassinate_sneaked
 tag @s remove AzrielMob_pickaxe_possible_target
 tag @s remove AzrielMob_pickaxe_target_passed
 
+attribute @s max_health modifier remove azr_amulet:nymph_heart
+
+
+
+
+
+
+
+
+
+
+

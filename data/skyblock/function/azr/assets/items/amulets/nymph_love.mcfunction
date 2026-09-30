@@ -1,0 +1,1 @@
+give @s tide_armor_trim_smithing_template[custom_name={text:"宁芙之爱",italic:0b,color:"#306fc2",bold:1b},lore=[{text:"背包常效装备",italic:0b,color:"yellow",bold:1b},{text:"可以在水中无限呼吸",italic:0b,color:"#9eb9de"},{text:""},{text:"到头来，她也只是不清楚何为真正的“爱”，何为被欲望粉饰之“爱”。",italic:1b,color:"#586371"}],custom_data={azr_amulet:1b,azr_amulet_nymph_love:1b}]
