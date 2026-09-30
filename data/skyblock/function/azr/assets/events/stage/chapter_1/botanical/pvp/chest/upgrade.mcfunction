@@ -79,13 +79,13 @@ $execute if score AzrFlowerPVP_$(team) rng8 matches 4 positioned $(x) 33 -106 un
 $execute if score AzrFlowerPVP_$(team) rng8 matches 4 positioned $(x) 33 -106 unless items block ~ ~ ~ container.8 * run item replace block ~ ~ ~ container.8 with zombie_spawn_egg[custom_data={"azrminigame_pvp_chest_menu":true},custom_name= \
 {text:"加快怪物的自动生成",italic:0b,color:"#f4a106",bold:1b},lore=[{text:"当前等级：满级",color:"#ffe297",italic:0b,bold: false},{text:"怪物种类：走尸、骸骨、扬烟虫、城防流浪者、热炉工人",color:"#ffe297",italic:0b,bold: false}]]
 
-$execute if score AzrFlowerPVP_$(team) rng1 matches 0 positioned $(x) 33 -106 unless items block ~ ~ ~ container.17 * run item replace block ~ ~ ~ container.17 with amethyst_shard[custom_data={"azrminigame_pvp_chest_menu":true},custom_name= \
+$execute if score AzrFlowerPVP_$(team) rng9 matches 0 positioned $(x) 33 -106 unless items block ~ ~ ~ container.17 * run item replace block ~ ~ ~ container.17 with amethyst_shard[custom_data={"azrminigame_pvp_chest_menu":true},custom_name= \
 {text:"水晶射线塔的攻击频率加快",italic:0b,color:"#f4a106",bold:1b},lore=[{text:"当前等级：0",color:"#ffe297",italic:0b,bold: false},{text:"升级消耗：40",color:"#9e81ff",italic:0b,bold: false}]]
-$execute if score AzrFlowerPVP_$(team) rng1 matches 1 positioned $(x) 33 -106 unless items block ~ ~ ~ container.17 * run item replace block ~ ~ ~ container.17 with amethyst_shard[custom_data={"azrminigame_pvp_chest_menu":true},custom_name= \
+$execute if score AzrFlowerPVP_$(team) rng9 matches 1 positioned $(x) 33 -106 unless items block ~ ~ ~ container.17 * run item replace block ~ ~ ~ container.17 with amethyst_shard[custom_data={"azrminigame_pvp_chest_menu":true},custom_name= \
 {text:"水晶射线塔的攻击频率加快",italic:0b,color:"#f4a106",bold:1b},lore=[{text:"当前等级：1",color:"#ffe297",italic:0b,bold: false},{text:"升级消耗：80",color:"#9e81ff",italic:0b,bold: false}]]
-$execute if score AzrFlowerPVP_$(team) rng1 matches 2 positioned $(x) 33 -106 unless items block ~ ~ ~ container.17 * run item replace block ~ ~ ~ container.17 with amethyst_shard[custom_data={"azrminigame_pvp_chest_menu":true},custom_name= \
+$execute if score AzrFlowerPVP_$(team) rng9 matches 2 positioned $(x) 33 -106 unless items block ~ ~ ~ container.17 * run item replace block ~ ~ ~ container.17 with amethyst_shard[custom_data={"azrminigame_pvp_chest_menu":true},custom_name= \
 {text:"水晶射线塔的攻击频率加快",italic:0b,color:"#f4a106",bold:1b},lore=[{text:"当前等级：2",color:"#ffe297",italic:0b,bold: false},{text:"升级消耗：150",color:"#9e81ff",italic:0b,bold: false}]]
-$execute if score AzrFlowerPVP_$(team) rng1 matches 3.. positioned $(x) 33 -106 unless items block ~ ~ ~ container.17 * run item replace block ~ ~ ~ container.17 with structure_void[custom_data={"azrminigame_pvp_chest_menu":true},custom_name= \
+$execute if score AzrFlowerPVP_$(team) rng9 matches 3.. positioned $(x) 33 -106 unless items block ~ ~ ~ container.17 * run item replace block ~ ~ ~ container.17 with structure_void[custom_data={"azrminigame_pvp_chest_menu":true},custom_name= \
 {text:"水晶射线塔的攻击频率加快",italic:0b,color:"#f4a106",bold:1b},lore=[{text:"当前等级：满级",color:"#ffe297",italic:0b,bold: false}]]
 
 
