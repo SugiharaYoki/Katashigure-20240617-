@@ -35,6 +35,11 @@ execute if entity @s[scores={rng1=2..12}] run tp @s ^ ^ ^0.15
 execute if entity @s[scores={rng1=2..9}] run tp @s ^ ^ ^0.15
 execute if entity @s[scores={rng1=2..6}] run tp @s ^ ^ ^0.2
 
+execute if entity @s[tag=fast,scores={rng1=2..20}] run tp @s ^ ^ ^0.1
+execute if entity @s[tag=fast,scores={rng1=2..15}] run tp @s ^ ^ ^0.1
+execute if entity @s[tag=fast,scores={rng1=2..12}] run tp @s ^ ^ ^0.15
+execute if entity @s[tag=fast,scores={rng1=2..9}] run tp @s ^ ^ ^0.15
+execute if entity @s[tag=fast,scores={rng1=2..6}] run tp @s ^ ^ ^0.2
 
 execute if entity @s[scores={rng1=15..}] if entity @a[tag=azrPlayer,distance=..1] run function skyblock:azr/assets/mobs/skill/generic_explosion_middle
 execute if entity @s[scores={rng1=15..}] if entity @a[tag=azrPlayer,distance=..1] run kill @s[type=marker]
