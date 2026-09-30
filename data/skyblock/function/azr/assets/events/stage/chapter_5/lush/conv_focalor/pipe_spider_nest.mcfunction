@@ -159,7 +159,7 @@ execute if score @s rng1 matches 650 positioned -79794 231 -545 as @n[tag=Azriel
 execute if score @s rng1 matches 650 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run effect clear @s resistance
 execute if score @s rng1 matches 650 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run effect give @s invisibility infinite 0 true
 execute if score @s rng1 matches 650 positioned -79794 231 -545 as @n[tag=AzrielNPC_focalor] run tp @s -79791 184 -519
-execute if score @s rng1 matches 650 if score stage Azr_system matches ..86 run scoreboard players set stage Azr_system 90
+execute if score @s rng1 matches 650 if score stage Azr_system matches ..89 run scoreboard players set stage Azr_system 90
 
 execute if score @s rng1 matches 650 positioned -79791 187 -519 as @a[tag=azrPlayer,distance=..100] run attribute @s minecraft:movement_speed modifier remove sea:marilyn_01
 execute if score @s rng1 matches 650 positioned -79791 187 -519 as @a[tag=azrPlayer,distance=..100] run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
