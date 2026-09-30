@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "神代茏渠：茏渠的撺掇者 - 宁芙",
+            "color": "dark_red",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "神代茏渠曾经也只是一个普通的地下岩洞。\n建造管道工事时，这里复杂的岩洞系统或许也省了神庭不少力。\n宁芙曾经只是生活在神代茏渠的小精灵。虽然在此处没有天敌，她却也难觅见食物。\n她无法从大气中直接吸收生灵魔力，所以得依靠汲取其他生物身上处理完毕的生灵魔力来苟活。\n\n管道破裂后，这里的生灵持有了过量的魔力，这也使宁芙得以日日饱餐。\n曾经弱小的精灵，却成为了这片新生丛林中最强大的生物。\n而掌管此处的她，必然不会轻易让持有大量生灵魔力的我随意路过。\n这也是为何我们之间会起纷争。\n\n但她也只是心智不成熟的小妖精——尽管能力强大。\n或许，她与我之间本就不该有生死之仇。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:nether_star"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage20"
+}
