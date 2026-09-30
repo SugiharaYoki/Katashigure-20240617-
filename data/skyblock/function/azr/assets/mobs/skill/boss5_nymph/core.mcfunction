@@ -96,8 +96,8 @@ execute if score @s rng1 matches 100..110 store result score @s rng1 run random 
 execute if score @s rng1 matches 545 at @s run function skyblock:azr/assets/mobs/trap_spore_blackhole
 execute if score @s rng1 matches 550..560 store result score @s rng1 run random value -20..5
 
-execute if score @s rng1 matches 645 at @s run function skyblock:azr/assets/mobs/skill/boss5_nymph/action_swap
-execute if score @s rng1 matches 650..660 store result score @s rng1 run random value 0..15
+execute if score @s rng1 matches 612 at @s run function skyblock:azr/assets/mobs/skill/boss5_nymph/action_swap
+execute if score @s rng1 matches 615..620 store result score @s rng1 run random value 0..15
 
 
 
