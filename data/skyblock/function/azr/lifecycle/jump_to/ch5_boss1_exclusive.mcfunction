@@ -2,16 +2,11 @@ function skyblock:azr/lifecycle/jump_to/ch5_boss1
 
 execute as @a[tag=azrPlayer] at @s unless score @s Azr_skillPoints matches 39.. run function skyblock:azr/lifecycle/jump_to/return
 
-scoreboard players set stage Azr_system 76
+scoreboard players set stage Azr_system 86
 scoreboard players set stage_main_thread AzrTimerStack 0
 
-execute if entity @a[tag=azrPlayer,scores={Azr_skillPoints=..29}] run tp @a[tag=azrPlayer] -79632.93 53.00 -738.35 facing -79617 57 -749
-spawnpoint @a[tag=azrPlayer] -79634 53 -739
-execute unless entity @a[tag=azrPlayer,scores={Azr_skillPoints=..29}] positioned -79627 92 -765 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute unless entity @a[tag=azrPlayer,scores={Azr_skillPoints=..29}] positioned -79627 92 -765 as @n[tag=AzrielMarker_encounter,type=marker,distance=..1.5] run scoreboard players set @s rng1 46
-execute unless entity @a[tag=azrPlayer,scores={Azr_skillPoints=..29}] run tp @a[tag=azrPlayer] -79651 174 -768 facing -79651 174 -769
-
-
+tp @a[tag=azrPlayer] -79769 199 -583 facing -79770 199 -584
+spawnpoint @a[tag=azrPlayer] -79769 199 -583
 
 execute as @a[tag=azrPlayer] run function skyblock:azr/system/player/updatespawnpoint_initialize {x:-79769,y:199,z-:-583}
 
