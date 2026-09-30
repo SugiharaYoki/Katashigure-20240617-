@@ -97,6 +97,9 @@ execute if score @s rng1 matches 603 run title @a[tag=azrShowDialog] actionbar {
 execute if score @s rng1 matches 615 run title @a[tag=azrShowDialog] actionbar {text:"感谢你将灵魂献给我们。",color:"aqua",bold:true}
 execute if score @s rng1 matches 625 run title @a[tag=azrShowDialog] actionbar {text:"你的灵魂将被我们所珍惜，你的存在将被我们所铭记。",color:"red",bold:true}
 execute if score @s rng1 matches 633 run title @a[tag=azrShowDialog] actionbar {text:"为何而颤抖？为何而举起武器？我们不会伤害你，你也无需挣扎。",color:"red",bold:true}
+
+execute if score @s rng1 matches 648..649 unless entity @a[tag=azrPlayer,distance=..10] run scoreboard players set @s rng1 648
+
 execute if score @s rng1 matches 650 run title @a[tag=azrShowDialog] actionbar {text:"我们是宁芙，我们是丛林背后的掌控者。",color:"red",bold:true}
 execute if score @s rng1 matches 673 run title @a[tag=azrShowDialog] actionbar {text:"你会是我们的救世主，一切都如此美好。爱理莎，我们深爱着你。",color:"red",bold:true}
 execute if score @s rng1 matches 601 run effect give @a[tag=azrShowDialog] darkness 10 0 true
@@ -160,6 +163,16 @@ execute if score @s rng1 matches 650 if score stage Azr_system matches ..86 run 
 
 execute if score @s rng1 matches 650 positioned -79791 187 -519 as @a[tag=azrPlayer,distance=..100] run attribute @s minecraft:movement_speed modifier remove sea:marilyn_01
 execute if score @s rng1 matches 650 positioned -79791 187 -519 as @a[tag=azrPlayer,distance=..100] run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
+
+execute if score @s rng1 matches 650..901 positioned -79794 231 -545 unless entity @a[tag=azrPlayer,distance=..120] unless score @n[tag=AzrielNPC_nymph] AzrEntityTimer matches 1000.. run kill @e[tag=AzrielMob,type=husk,distance=..50]
+execute if score @s rng1 matches 650..901 positioned -79794 231 -545 unless entity @a[tag=azrPlayer,distance=..120] unless score @n[tag=AzrielNPC_nymph] AzrEntityTimer matches 1000.. run kill @e[tag=AzrielMob,type=cave_spider,distance=..50]
+execute if score @s rng1 matches 650..901 positioned -79794 231 -545 unless entity @a[tag=azrPlayer,distance=..120] unless score @n[tag=AzrielNPC_nymph] AzrEntityTimer matches 1000.. run kill @e[tag=AzrielNPC_nymph_clone,type=mannequin,distance=..50]
+execute if score @s rng1 matches 650..901 positioned -79794 231 -545 unless entity @a[tag=azrPlayer,distance=..120] unless score @n[tag=AzrielNPC_nymph] AzrEntityTimer matches 1000.. run kill @e[tag=AzrielMob_mob_marker,distance=..50]
+execute if score @s rng1 matches 650..901 positioned -79794 231 -545 unless entity @a[tag=azrPlayer,distance=..120] unless score @n[tag=AzrielNPC_nymph] AzrEntityTimer matches 1000.. run scoreboard players set stage Azr_system 89
+execute if score @s rng1 matches 650..901 positioned -79794 231 -545 unless entity @a[tag=azrPlayer,distance=..120] unless score @n[tag=AzrielNPC_nymph] AzrEntityTimer matches 1000.. run tp @n[tag=AzrielNPC_nymph] -79791 188 -518 facing -79791 188 -515
+execute if score @s rng1 matches 650..901 positioned -79794 231 -545 unless entity @a[tag=azrPlayer,distance=..120] unless score @n[tag=AzrielNPC_nymph] AzrEntityTimer matches 1000.. run effect give @n[tag=AzrielNPC_nymph] regeneration 3 29 true
+execute if score @s rng1 matches 650..901 positioned -79794 231 -545 unless entity @a[tag=azrPlayer,distance=..120] unless score @n[tag=AzrielNPC_nymph] AzrEntityTimer matches 1000.. run effect give @n[tag=AzrielNPC_nymph] resistance infinite 4 true
+execute if score @s rng1 matches 650..901 positioned -79794 231 -545 unless entity @a[tag=azrPlayer,distance=..120] unless score @n[tag=AzrielNPC_nymph] AzrEntityTimer matches 1000.. run scoreboard players set @s rng1 648
 
 execute if score @s rng1 matches 900..901 run scoreboard players set @s rng1 900
 
