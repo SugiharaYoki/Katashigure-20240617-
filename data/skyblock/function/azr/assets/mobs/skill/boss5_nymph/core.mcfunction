@@ -54,8 +54,10 @@ execute if score @s rng1 matches 30 at @s if score @s rng2 matches 1 if entity @
 execute if score @s rng1 matches 30 at @s if score @s rng2 matches 2 if entity @a[tag=azrPlayer,distance=..3] run function skyblock:azr/assets/mobs/trap_spike
 
 execute if score @s[scores={Health=..400}] rng1 matches 30..60 at @s store result score @s rng2 run random value 1..6
-execute if score @s[scores={Health=..400}] rng1 matches 30..60 at @s if score @s rng2 matches 1 if entity @a[tag=azrPlayer,distance=..5] positioned ^1 ^ ^1 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s[scores={Health=..400}] rng1 matches 30..60 at @s if score @s rng2 matches 2 if entity @a[tag=azrPlayer,distance=..5] positioned ^-1 ^ ^1 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..400}] rng1 matches 30..60 at @s unless block ~ ~-0.3 ~ grass_block unless block ~ ~-0.3 ~ moss_block if score @s rng2 matches 1 if entity @a[tag=azrPlayer,distance=..9] positioned ^1 ^ ^2 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..400}] rng1 matches 30..60 at @s unless block ~ ~-0.3 ~ grass_block unless block ~ ~-0.3 ~ moss_block if score @s rng2 matches 2 if entity @a[tag=azrPlayer,distance=..9] positioned ^-1 ^ ^2 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..400}] rng1 matches 30..60 at @s unless block ~ ~-0.3 ~ grass_block unless block ~ ~-0.3 ~ moss_block if score @s rng2 matches 3 if entity @a[tag=azrPlayer,distance=..9] positioned ^1 ^ ^-2 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..400}] rng1 matches 30..60 at @s unless block ~ ~-0.3 ~ grass_block unless block ~ ~-0.3 ~ moss_block if score @s rng2 matches 4 if entity @a[tag=azrPlayer,distance=..9] positioned ^-1 ^ ^-2 run function skyblock:azr/assets/mobs/trap_fang_auto
 
 execute if score @s[scores={Health=..400}] rng1 matches 35 at @s store result score @s rng2 run random value 1..6
 execute if score @s[scores={Health=..400}] rng1 matches 35 if score @s rng2 matches 1 run scoreboard players set @s rng1 500
