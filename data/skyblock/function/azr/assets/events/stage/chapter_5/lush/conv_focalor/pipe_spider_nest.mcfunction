@@ -146,6 +146,8 @@ execute if score @s rng1 matches 650 positioned -79794 231 -545 as @n[tag=Azriel
 
 execute if score @s rng1 matches 637 positioned -79794 231 -545 run playsound minecraft:entity.wither.break_block hostile @a -79794 231 -545 1 2
 
+execute if score @s rng1 matches 650 positioned -79793 188 -518 run function skyblock:azr/assets/mobs/husk
+execute if score @s rng1 matches 650 positioned -79789 188 -518 run function skyblock:azr/assets/mobs/husk
 
 execute if score @s rng1 matches 650 positioned -79794 231 -545 run playsound minecraft:entity.wither.break_block hostile @a -79794 231 -545 1 2
 execute if score @s rng1 matches 650 positioned -79794 231 -545 as @n[tag=AzrielNPC_nymph] run effect clear @s invisibility

@@ -55,6 +55,7 @@ execute positioned -79787 199 -787 run function skyblock:azr/assets/mobs/skeleto
 execute positioned -79787 199 -767 run function skyblock:azr/assets/mobs/zombie_villager_vine
 
 execute positioned -79794 231 -545 run function skyblock:azr/assets/mobs/skill/boss5_nymph/summon
+forceload add -79782 -688
 execute positioned -79782 195 -688 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79782 195 -688 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng1 590
 
