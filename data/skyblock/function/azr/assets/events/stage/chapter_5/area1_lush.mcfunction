@@ -55,8 +55,9 @@ execute positioned -79728 173 -748 as @e[type=item,distance=..6] at @s if block 
 
 
 
-
-
+#水路两路互传
+execute positioned -79767 -63 73 as @a[tag=azrPlayer,distance=..1.2] run tp @s -79791 228 -546
+execute positioned -79791 253 -546 as @a[tag=azrPlayer,distance=..1.2] run tp @s -79767 -60 73
 
 
 
