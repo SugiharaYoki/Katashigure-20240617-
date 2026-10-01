@@ -20,7 +20,7 @@ execute as @n[type=arrow,distance=..20] at @s run kill @s
 #ACTION
 
 
-    execute as @s at @s run scoreboard players add @s rng8 1
+    execute as @s[scores={AzrEntityTimer=20..}] at @s run scoreboard players add @s rng8 1
     execute as @s at @s if score @s[scores={Health=300..}] rng8 matches 1 store result score @s rng2 run random value 1..3
     
     execute as @s at @s if score @s[scores={rng2=1}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_slime/attack_summon_piranha
