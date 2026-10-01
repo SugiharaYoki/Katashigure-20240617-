@@ -261,7 +261,7 @@ tag @s remove AzrielMob_pickaxe_target_passed
 
 attribute @s max_health modifier remove azr_amulet:nymph_heart
 
-
+attribute @s minecraft:movement_speed modifier remove azr:parry
 
 
 
