@@ -120,8 +120,13 @@ execute unless score @s AzrPlayer_CurrentArea matches 10 positioned -79730 23 -3
 
 execute unless score @s AzrPlayer_CurrentArea matches 11 positioned -79645 174 -781 if entity @s[distance=..9] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:11,title:"神 代 茏 渠",color_code:"#7de300"}
-#
+execute unless score @s AzrPlayer_CurrentArea matches 11 positioned -79791 213 -547 if entity @s[distance=..6.6] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:11,title:"神 代 茏 渠",color_code:"#7de300"}
 
+execute unless score @s AzrPlayer_CurrentArea matches 12 positioned -79764 -58 73 if entity @s[distance=..6.6] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:12,title:"蓄 水 池",color_code:"#333dff"}
+
+#
 
 
 
@@ -198,4 +203,4 @@ execute positioned -79769 198 -583 if entity @s[distance=..4] run tag @s add azr
 
 
 
-#tellraw @s {"color": "#7de300"}
+#tellraw @s {"color": "#333dff"}
