@@ -117,7 +117,7 @@ execute if score @s[tag=!AzrSariel_Route_Life] AzrSariel_Skill_SlowRing matches 
 execute if items entity @s weapon.offhand #swords run function skyblock:azr/system/player/weapon_skill/parry/if
 execute if items entity @s weapon.offhand #axes run function skyblock:azr/system/player/weapon_skill/parry/if
 execute if items entity @s weapon.offhand #hoes run function skyblock:azr/system/player/weapon_skill/parry/if
-
+execute if score @s AzrSariel_Amulet_Parry_cooldown matches 10.. run function skyblock:azr/system/player/weapon_skill/parry/wait
 
 
 #一次性打火石

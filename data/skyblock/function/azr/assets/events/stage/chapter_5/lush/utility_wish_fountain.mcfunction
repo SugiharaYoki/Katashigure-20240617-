@@ -27,6 +27,6 @@ execute if score @s rng1 matches 26 as @p[tag=azrPlayer] run function skyblock:a
 execute if score @s rng1 matches 27 as @p[tag=azrPlayer] run function skyblock:azr/assets/items/armors/bee_chestplate_lush
 execute if score @s rng1 matches 28 as @p[tag=azrPlayer] run function skyblock:azr/assets/items/armors/bee_leggings_lush
 execute if score @s rng1 matches 29 as @p[tag=azrPlayer] run function skyblock:azr/assets/items/armors/bee_helmet_lush
-execute if score @s rng1 matches 30 as @p[tag=azrPlayer] run function skyblock:azr/assets/items/weapons/shield_reinforced_level4
-execute if score @s rng1 matches 31 as @p[tag=azrPlayer] run function skyblock:azr/assets/items/weapons/shield_spike_level4
+execute if score @s rng1 matches 30 as @p[tag=azrPlayer] run function skyblock:azr/assets/items/parry/shield_reinforced_level3
+execute if score @s rng1 matches 31 as @p[tag=azrPlayer] run function skyblock:azr/assets/items/parry/shield_spike_level3
 

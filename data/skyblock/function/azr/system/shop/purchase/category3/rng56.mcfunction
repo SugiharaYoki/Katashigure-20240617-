@@ -1,4 +1,4 @@
-function skyblock:azr/assets/items/weapons/shield_spike_level3
+function skyblock:azr/assets/items/parry/shield_spike_level2
 
-clear @s iron_ingot 8
-clear @s ink_sac 3
+clear @s iron_ingot 12
+clear @s ink_sac 6

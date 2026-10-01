@@ -189,16 +189,16 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=54,Azr_Shop=$(trigger)}] \
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=55,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* iron_ingot[count={min:8}] \
-    if items entity @s container.* ink_sac[count={min:3}] \
+    if items entity @s container.* iron_ingot[count={min:12}] \
+    if items entity @s container.* ink_sac[count={min:6}] \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng55 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 55 @s  盾牌 8 铁锭
 
 $execute as @s[scores={Azr_Shop_rng$(rng)=56,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
-    if items entity @s container.* iron_ingot[count={min:8}] \
-    if items entity @s container.* ink_sac[count={min:3}] \
+    if items entity @s container.* iron_ingot[count={min:12}] \
+    if items entity @s container.* ink_sac[count={min:6}] \
     unless function skyblock:azr/system/shop/purchase/category3/\
     rng56 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 56 @s  盾牌 8 铁锭
