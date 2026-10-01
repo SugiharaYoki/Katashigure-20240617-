@@ -7,11 +7,11 @@ execute if items entity @s[scores={AzrSariel_Amulet_generic_damage_absorbed=1..}
 execute if items entity @s[scores={AzrSariel_Amulet_generic_damage_absorbed=1..}] container.* *[custom_data~{azr_amulet_parry_length_lv2:1b}] if score @s AzrSariel_Amulet_Parry_cooldown matches 22.. run function skyblock:azr/system/player/weapon_skill/parry/success
 execute if items entity @s[scores={AzrSariel_Amulet_generic_damage_absorbed=1..}] container.* *[custom_data~{azr_amulet_parry_length_lv1:1b}] if score @s AzrSariel_Amulet_Parry_cooldown matches 23.. run function skyblock:azr/system/player/weapon_skill/parry/success
 execute if entity @s[scores={AzrSariel_Amulet_generic_damage_absorbed=1..}] if score @s AzrSariel_Amulet_Parry_cooldown matches 24.. run function skyblock:azr/system/player/weapon_skill/parry/success
-execute if items entity @s[scores={AzrSariel_Amulet_generic_damage_absorbed=1..}] container.* *[custom_data~{azr_amulet_parry_length_lv4:1b}] if score @s AzrSariel_Amulet_Parry_cooldown matches 20.. run tag @s add azrParry_waiting
-execute if items entity @s[scores={AzrSariel_Amulet_generic_damage_absorbed=1..}] container.* *[custom_data~{azr_amulet_parry_length_lv3:1b}] if score @s AzrSariel_Amulet_Parry_cooldown matches 21.. run tag @s add azrParry_waiting
-execute if items entity @s[scores={AzrSariel_Amulet_generic_damage_absorbed=1..}] container.* *[custom_data~{azr_amulet_parry_length_lv2:1b}] if score @s AzrSariel_Amulet_Parry_cooldown matches 22.. run tag @s add azrParry_waiting
-execute if items entity @s[scores={AzrSariel_Amulet_generic_damage_absorbed=1..}] container.* *[custom_data~{azr_amulet_parry_length_lv1:1b}] if score @s AzrSariel_Amulet_Parry_cooldown matches 23.. run tag @s add azrParry_waiting
-execute if entity @s[scores={AzrSariel_Amulet_generic_damage_absorbed=1..}] if score @s AzrSariel_Amulet_Parry_cooldown matches 24.. run tag @s add azrParry_waiting
+execute if items entity @s container.* *[custom_data~{azr_amulet_parry_length_lv4:1b}] if score @s AzrSariel_Amulet_Parry_cooldown matches 20.. run tag @s add azrParry_waiting
+execute if items entity @s container.* *[custom_data~{azr_amulet_parry_length_lv3:1b}] if score @s AzrSariel_Amulet_Parry_cooldown matches 21.. run tag @s add azrParry_waiting
+execute if items entity @s container.* *[custom_data~{azr_amulet_parry_length_lv2:1b}] if score @s AzrSariel_Amulet_Parry_cooldown matches 22.. run tag @s add azrParry_waiting
+execute if items entity @s container.* *[custom_data~{azr_amulet_parry_length_lv1:1b}] if score @s AzrSariel_Amulet_Parry_cooldown matches 23.. run tag @s add azrParry_waiting
+execute if entity @s if score @s AzrSariel_Amulet_Parry_cooldown matches 24.. run tag @s add azrParry_waiting
 
 execute unless entity @s[tag=azrParry_waiting] run attribute @s minecraft:movement_speed modifier remove azr:parry
 execute unless entity @s[tag=azrParry_waiting] run effect clear @s resistance
