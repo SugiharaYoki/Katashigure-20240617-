@@ -138,7 +138,7 @@ scoreboard objectives add azr_weapon_rightclick_cooldown dummy
 scoreboard objectives add azr_weapon_rightclick_chainkill_load dummy
 
 #护身符
-scoreboard objectives add AzrSariel_Amulet_generic_damage_absorbed minecraft.custom:minecraft.damage_absorbed
+scoreboard objectives add AzrSariel_Amulet_generic_damage_resisted minecraft.custom:minecraft.damage_resisted
 scoreboard objectives add AzrSariel_Amulet_Parry_cooldown dummy
 scoreboard objectives add AzrSariel_Amulet_generic_damage_dealt minecraft.custom:minecraft.damage_dealt
 scoreboard objectives add AzrSariel_Amulet_generic_damage_taken minecraft.custom:minecraft.damage_taken

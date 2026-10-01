@@ -12,4 +12,4 @@ execute if entity @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_defen
 function skyblock:sea/p/parry_particle
 
 
-scoreboard players set @s AzrSariel_Amulet_generic_damage_absorbed 0
+scoreboard players set @s AzrSariel_Amulet_generic_damage_resisted 0
