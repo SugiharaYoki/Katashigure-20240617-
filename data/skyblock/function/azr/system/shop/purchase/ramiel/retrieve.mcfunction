@@ -37,6 +37,8 @@ execute if entity @s[scores={Azr_skillPoints=10..},tag=AZS_BoSShop09,tag=!AZS_Bo
 execute if entity @s[scores={Azr_skillPoints=10..},tag=AZS_BoSShop10] if score @s Azr_Shop matches 8432332 run function skyblock:azr/assets/items/amulets/light_angel_3
 execute if entity @s[scores={Azr_skillPoints=19..}] if score @s Azr_Shop matches 8432339 run function skyblock:azr/assets/items/amulets/magical_current
 execute if entity @s[scores={Azr_skillPoints=20..}] if score @s Azr_Shop matches 8432342 run function skyblock:azr/assets/items/amulets/multiweapon
+execute if entity @s[scores={Azr_skillPoints=40..},tag=!azr_killed_nymph] if score @s Azr_Shop matches 8432345 run function skyblock:azr/assets/items/amulets/nymph_love
+execute if entity @s[scores={Azr_skillPoints=40..},tag=azr_killed_nymph] if score @s Azr_Shop matches 8432345 run function skyblock:azr/assets/items/amulets/nymph_heart
 execute if entity @s[tag=AZS_BoSB01] if score @s Azr_Shop matches 8432331 run function skyblock:azr/assets/items/amulets/back_dodge
 execute if entity @s[tag=AZS_BoSB03] if score @s Azr_Shop matches 8432340 run function skyblock:azr/assets/items/amulets/land_fracture
 execute if entity @s[tag=AZS_BoSB04] if score @s Azr_Shop matches 8432329 run function skyblock:azr/assets/items/amulets/fire_drogue

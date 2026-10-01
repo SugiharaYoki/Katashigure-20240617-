@@ -117,6 +117,7 @@ execute if entity @s[scores={Azr_skillPoints=9..}] run data modify entity @n[tag
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarker3] CustomName set value ' <光> '
 execute if entity @s[scores={Azr_skillPoints=19..}] run data modify entity @n[tag=AzrRamielExStage_displaymarker4] CustomName set value ' <亚> '
 execute if entity @s[scores={Azr_skillPoints=20..}] run data modify entity @n[tag=AzrRamielExStage_displaymarker5] CustomName set value ' <烈> '
+execute if entity @s[scores={Azr_skillPoints=40..}] run data modify entity @n[tag=AzrRamielExStage_displaymarker6] CustomName set value ' <宁> '
 execute if entity @s[tag=AZS_BoSB01] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value ' <刑> '
 execute if entity @s[tag=AZS_BoSB03] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBc] CustomName set value ' <博> '
 execute if entity @s[tag=AZS_BoSB04] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value ' <炉> '
@@ -170,6 +171,8 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_axe_vortex:1b}]
 execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarker3] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_magical_current:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarker4] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_multiweapon:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarker5] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_nymph_love:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarker6] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_nymph_heart:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarker6] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_back_dodge:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_land_fracture:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBc] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_fire_drogue:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value ' √ '
@@ -238,6 +241,7 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarker3]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432332"},hover_event:{"action":"show_text","value":{text:"光明天使的符文\n多块基础石板功能整合、施放时无敌帧",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarker4]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432339"},hover_event:{"action":"show_text","value":{text:"亚米 - 血潮石板\n可检测到魔力潮汐，身处其中可升起",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarker5]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432342"},hover_event:{"action":"show_text","value":{text:"拉斐尔 - 诸武卷宗\n整合地裂卷宗、云破石板，切换武器攻击增加威力",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarker5]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432345"},hover_event:{"action":"show_text","value":{text:"宁芙 - 精灵的祝福\n无限水下呼吸",color:"white"}}},\
 {text:"\n "},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBa]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432331"},hover_event:{"action":"show_text","value":{text:"阴影处刑者 - 退避石板\n按后退键与跑步键，快速后撤步",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBc]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432340"},hover_event:{"action":"show_text","value":{text:"百夫长·博物区 - 地裂卷宗\n冲刺时使用近战武器攻击，施放地裂冲击",color:"white"}}},\
