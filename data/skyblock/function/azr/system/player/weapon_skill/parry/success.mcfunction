@@ -38,3 +38,5 @@ execute if score @s rng1 matches 26..30 run damage @n[tag=azrParry_reverseattack
 execute if score @s rng1 matches 31.. run damage @n[tag=azrParry_reverseattack,distance=..50] 39 player_attack by @s
 
 tag @e[tag=azrParry_reverseattack,distance=..50] remove azrParry_reverseattack
+
+execute if entity @s[tag=AzrSariel_upg8C] run function skyblock:azr/system/player/damage_bonus/effect/sneakdodgearrow

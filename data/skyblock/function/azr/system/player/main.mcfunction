@@ -104,9 +104,8 @@ execute if items entity @s hotbar.* *[custom_data~{azr_amulet_multiweapon:1b}] i
 #节制天平
 execute if entity @s[tag=AzrSariel_upg6C,scores={AzrSariel_Skill_AbsDefend_cooldown=..1}] run function skyblock:azr/system/player/damage_bonus/effect/absdefend
 execute if score @s AzrSariel_Skill_ContactDmg matches 1.. run scoreboard players remove @s AzrSariel_Skill_ContactDmg_cooldown 1
-execute if entity @s[tag=AzrSariel_upg8C] run scoreboard players remove @s AzrSariel_Skill_SneakDodgeArrow_cooldown 1
 execute if entity @s[tag=!AzrSariel_Route_Death,scores={AzrSariel_Skill_ContactDmg=1..,AzrSariel_Skill_ContactDmg_cooldown=..0}] if entity @n[tag=AzrielMob,distance=0..1.5] run function skyblock:azr/system/player/damage_bonus/effect/contactdmg
-execute if entity @s[tag=AzrSariel_upg8C] run function skyblock:azr/system/player/damage_bonus/effect/sneakdodgearrow
+
 
 execute if score @s[tag=!AzrSariel_Route_Death] AzrSariel_Skill_FlowerReason_condition matches 6.. run function skyblock:azr/system/player/damage_bonus/effect/biomagnet
 execute if score @s[tag=!AzrSariel_Route_Death] AzrSariel_Skill_FlowerReason_condition matches 6.. run function skyblock:azr/system/player/damage_bonus/effect/flowerreason

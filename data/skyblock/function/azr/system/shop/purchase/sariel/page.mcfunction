@@ -380,7 +380,7 @@ tellraw @s [{text:" ",color:"light_purple"},\
 {selector:"@n[tag=AzrSariel_displaymarker0b]",color:"dark_gray"},\
 {selector:"@n[tag=AzrSariel_displaymarker8]",color:"#ff5d5d",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432108"},hover_event:{"action":"show_text","value":{text:"消耗：5\n攻击力 +0.5",color:"white"}}},\
 {selector:"@n[tag=AzrSariel_displaymarkerE]",color:"dark_gray"},\
-{selector:"@n[tag=AzrSariel_displaymarker8C]",color:"#ffe3af",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432125"},hover_event:{"action":"show_text","value":{text:"消耗：20\n「能力解放」\n下蹲可以抹除6格内所有的箭矢\n冷却：3",color:"white"}}},\
+{selector:"@n[tag=AzrSariel_displaymarker8C]",color:"#ffe3af",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432125"},hover_event:{"action":"show_text","value":{text:"消耗：20\n「能力解放」\n弹反可以抹除4格内所有的箭矢",color:"white"}}},\
 {selector:"@n[tag=AzrSariel_displaymarkerE]",color:"dark_gray"}]
 
 tellraw @s[tag=!AzrSariel_Route_Life] [{text:" ",color:"light_purple"},\
