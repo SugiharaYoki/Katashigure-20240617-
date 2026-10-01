@@ -50,6 +50,8 @@ execute positioned -79782 195 -688 if entity @n[tag=AzrielMarker_encounter,dista
 execute positioned -79782 195 -688 if entity @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1000..}] if entity @s[x=-79791,y=185,z=-546,dx=0,dy=50,dz=0] run scoreboard players set @s AzrSariel_Amulet_MagicalCurrentLevel 3
 
 
+execute positioned -79767 -64 73 if entity @s[distance=..30] run particle trail{color:6666239,duration:120,target:[-79766.52,-50.94,73.52]} ~ ~ ~ 0.5 0 0.5 0 2 force
+execute if entity @s[x=-79767,y=-64,z=73,dx=0,dy=10,dz=0] run scoreboard players set @s AzrSariel_Amulet_MagicalCurrentLevel 3
 
 
 
