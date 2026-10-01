@@ -23,6 +23,6 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_parry_cooldown_
 execute if items entity @s container.* *[custom_data~{azr_amulet_parry_cooldown_lv3:1b}] if score @s AzrSariel_Amulet_Parry_cooldown matches 13 run scoreboard players set @s AzrSariel_Amulet_Parry_cooldown 0
 execute if items entity @s container.* *[custom_data~{azr_amulet_parry_cooldown_lv2:1b}] if score @s AzrSariel_Amulet_Parry_cooldown matches 12 run scoreboard players set @s AzrSariel_Amulet_Parry_cooldown 0
 execute if items entity @s container.* *[custom_data~{azr_amulet_parry_cooldown_lv1:1b}] if score @s AzrSariel_Amulet_Parry_cooldown matches 11 run scoreboard players set @s AzrSariel_Amulet_Parry_cooldown 0
-execute if score @s AzrSariel_Amulet_Parry_cooldown matches 10 run scoreboard players set @s AzrSariel_Amulet_Parry_cooldown 0
+execute if score @s AzrSariel_Amulet_Parry_cooldown matches 10 run scoreboard players set @s AzrSariel_Amulet_Parry_cooldown -1
 
 
