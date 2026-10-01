@@ -37,6 +37,12 @@ execute if score @s rng1 matches 21..25 run damage @n[tag=azrParry_reverseattack
 execute if score @s rng1 matches 26..30 run damage @n[tag=azrParry_reverseattack,distance=..50] 36 player_attack by @s
 execute if score @s rng1 matches 31.. run damage @n[tag=azrParry_reverseattack,distance=..50] 39 player_attack by @s
 
+#特殊效果（针对怪物种类）
+execute as @n[tag=azrParry_reverseattack,distance=..6,scores={rng1=88..},tag=AzrielMob_shield] run scoreboard players set @s rng1 -100
+execute as @n[tag=azrParry_reverseattack,distance=..6,scores={rng1=88..},tag=AzrielMob_shield] run scoreboard players add @s rng3 30
+execute as @n[tag=azrParry_reverseattack,distance=..6,tag=AzrielMob_shield_heavy] run scoreboard players add @s rng3 38
+execute as @n[tag=azrParry_reverseattack,distance=..6,tag=AzrielMob_husk] run effect give @s slowness 3 7 true
+
 tag @e[tag=azrParry_reverseattack,distance=..50] remove azrParry_reverseattack
 
 execute if entity @s[tag=AzrSariel_upg8C] run function skyblock:azr/system/player/damage_bonus/effect/sneakdodgearrow
