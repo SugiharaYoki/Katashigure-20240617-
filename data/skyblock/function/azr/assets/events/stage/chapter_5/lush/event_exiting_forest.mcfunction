@@ -5,7 +5,7 @@ execute if entity @n[tag=AzrielNPC_nymph,distance=..500,type=mannequin] if score
 
 
 execute if score @s rng1 matches 1191 if entity @n[tag=AzrielNPC_nymph,type=mannequin] as @a[tag=azrPlayer] run tag @s remove azr_killed_nymph
-execute if score @s rng1 matches 1191 unless entity @n[tag=AzrielNPC_nymph,type=mannequin] as @a[tag=azrPlayer] run tag @s add azr_killed_nymph
+execute if score @s rng1 matches 1191 as @a[tag=azrPlayer] run clear @s *[custom_data~{azr_amulet_nymph_love:1b}]
 execute if score @s rng1 matches 1191 if entity @n[tag=AzrielNPC_nymph,type=mannequin] as @a[tag=azrPlayer] run function skyblock:azr/assets/items/amulets/nymph_love
 execute if score @s rng1 matches 1191 unless entity @n[tag=AzrielNPC_nymph,type=mannequin] as @a[tag=azrPlayer] run function skyblock:azr/assets/items/amulets/nymph_heart
 execute if score @s rng1 matches 1191 run bossbar remove azr:boss_hp_bar
