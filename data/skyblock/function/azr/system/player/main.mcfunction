@@ -113,7 +113,10 @@ execute if score @s[tag=!AzrSariel_Route_Death] AzrSariel_Skill_FlowerReason_con
 execute if score @s[tag=!AzrSariel_Route_Life] AzrSariel_Skill_SlowRing matches 1.. run scoreboard players remove @s AzrSariel_Skill_SlowRing_cooldown 1
 execute if score @s[tag=!AzrSariel_Route_Life] AzrSariel_Skill_SlowRing matches 1.. if score @s AzrSariel_Skill_SlowRing_cooldown matches ..0 run function skyblock:azr/system/player/damage_bonus/effect/slowring
 
-
+#弹反
+execute if items entity @s weapon.offhand #swords run function skyblock:azr/system/player/weapon_skill/parry/if
+execute if items entity @s weapon.offhand #axes run function skyblock:azr/system/player/weapon_skill/parry/if
+execute if items entity @s weapon.offhand #hoes run function skyblock:azr/system/player/weapon_skill/parry/if
 
 
 
