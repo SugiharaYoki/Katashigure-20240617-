@@ -29,6 +29,6 @@ kill @e[tag=AzrielMob_mob_marker,distance=..50]
 scoreboard players set stage Azr_system 89
 
 tp @n[tag=AzrielNPC_nymph] -79791 188 -518 facing -79791 188 -515
-effect give @n[tag=AzrielNPC_nymph] regeneration 3 29 true
-effect give @n[tag=AzrielNPC_nymph] resistance infinite 4 true
+effect give @e[tag=AzrielNPC_nymph] regeneration 3 29 true
+effect give @e[tag=AzrielNPC_nymph] resistance infinite 4 true
 scoreboard players set @s rng1 648
