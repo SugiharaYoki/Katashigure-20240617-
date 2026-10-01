@@ -18,6 +18,8 @@ execute unless entity @s[tag=azrParry_waiting] run effect clear @s resistance
 
 scoreboard players remove @s AzrSariel_Amulet_Parry_cooldown 1
 
+execute if entity @s[scores={AzrSariel_Amulet_generic_damage_absorbed=1..}] run say AzrSariel_Amulet_generic_damage_absorbed
+execute if entity @s[scores={AzrSariel_Amulet_Parry_cooldown=24..}] run say AzrSariel_Amulet_Parry_cooldown
 
 execute if items entity @s container.* *[custom_data~{azr_amulet_parry_cooldown_lv4:1b}] if score @s AzrSariel_Amulet_Parry_cooldown matches 14 run scoreboard players set @s AzrSariel_Amulet_Parry_cooldown 0
 execute if items entity @s container.* *[custom_data~{azr_amulet_parry_cooldown_lv3:1b}] if score @s AzrSariel_Amulet_Parry_cooldown matches 13 run scoreboard players set @s AzrSariel_Amulet_Parry_cooldown 0
