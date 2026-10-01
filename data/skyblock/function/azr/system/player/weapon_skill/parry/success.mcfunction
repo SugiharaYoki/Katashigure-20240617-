@@ -20,9 +20,9 @@ scoreboard players set 10 constant 10
 scoreboard players set 16 constant 16
 scoreboard players operation @s rng1 *= 16 constant
 scoreboard players operation @s rng1 /= 10 constant
-execute if items entity @s container.* *[custom_data~{azr_amulet_parry_attack_lv4:1b}] run scoreboard players add @s rng1 2
-execute if items entity @s container.* *[custom_data~{azr_amulet_parry_attack_lv3:1b}] run scoreboard players add @s rng1 2
-execute if items entity @s container.* *[custom_data~{azr_amulet_parry_attack_lv2:1b}] run scoreboard players add @s rng1 2
+execute if items entity @s container.* *[custom_data~{azr_amulet_parry_attack_lv4:1b}] run scoreboard players add @s rng1 8
+execute if items entity @s container.* *[custom_data~{azr_amulet_parry_attack_lv3:1b}] run scoreboard players add @s rng1 6
+execute if items entity @s container.* *[custom_data~{azr_amulet_parry_attack_lv2:1b}] run scoreboard players add @s rng1 4
 execute if items entity @s container.* *[custom_data~{azr_amulet_parry_attack_lv1:1b}] run scoreboard players add @s rng1 2
 
 execute if score @s rng1 matches ..6 run damage @n[tag=azrParry_reverseattack,distance=..50] 8 player_attack by @s
