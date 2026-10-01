@@ -1,9 +1,9 @@
 
 
 
-execute if items entity @s container.* arrow[count={min:33}] run tag @s add azrPlayer_arrowsavior_savearrow
-
-execute if items entity @s[scores={AzrSariel_Amulet_ArrowSavior_count=1..}] container.* arrow[count={max:31}] run tag @s add azrPlayer_arrowsavior_addarrow
+execute store result score @s rng1 run clear @s arrow 0
+execute if score @s[scores={AzrSariel_Amulet_ArrowSavior_count=1..}] rng1 matches ..31 run tag @s add azrPlayer_arrowsavior_addarrow
+execute if score @s[scores={AzrSariel_Amulet_ArrowSavior_count=1..}] rng1 matches 33.. run tag @s add azrPlayer_arrowsavior_savearrow
 
 execute if entity @s[tag=azrPlayer_arrowsavior_addarrow] run give @s arrow 1
 scoreboard players set @s rng1 1
