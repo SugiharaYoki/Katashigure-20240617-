@@ -75,6 +75,7 @@ execute if score stage Azr_system matches 69..76 run function skyblock:azr/asset
 #底端
 execute if score stage Azr_system matches 75.. run function skyblock:azr/assets/events/stage/chapter_5/area0_bottom
 execute if score stage Azr_system matches 80.. run function skyblock:azr/assets/events/stage/chapter_5/area1_lush
+execute if score stage Azr_system matches 91.. run function skyblock:azr/assets/events/stage/chapter_5/area2_sewer
 
 
 
