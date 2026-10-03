@@ -6,6 +6,10 @@ scoreboard players add @s rng1 1
 execute if score @s rng1 matches 2 at @s run forceload add ~ ~
 execute if score @s rng1 matches 2 at @s run scoreboard players set stage Azr_system 92
 
+execute if score @s rng2 matches 2 at @s positioned -79630 -50 88 run function skyblock:azr/assets/mobs/skeleton_sentinel
+execute if score @s rng2 matches 2 at @s positioned -79630 -50 88 run function skyblock:azr/assets/mobs/skeleton_sword
+execute if score @s rng2 matches 2 at @s positioned -79630 -50 88 run function skyblock:azr/assets/mobs/skeleton_sword
+execute if score @s rng2 matches 2 at @s positioned -79630 -50 88 run function skyblock:azr/assets/mobs/skeleton_sword
 
 execute if score @s rng2 matches 2 at @s positioned -79653 -60 103 run function skyblock:azr/assets/mobs/guardian
 execute if score @s rng2 matches 2 at @s positioned -79672 -59 102 run function skyblock:azr/assets/mobs/guardian

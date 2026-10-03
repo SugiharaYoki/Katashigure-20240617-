@@ -1065,6 +1065,9 @@ fill -79700 -58 85 -79698 -57 85 minecraft:waxed_oxidized_copper_bars
 setblock -79736 -57 97 waxed_oxidized_copper_chest[facing=south]{Inventory:[]}
 item replace block -79736 -57 97 container.12 with emerald 3
 item replace block -79736 -57 97 container.14 with emerald 3
+setblock -79621 -50 87 waxed_oxidized_copper_chest[facing=west]{Inventory:[]}
+item replace block -79621 -50 87 container.12 with emerald 3
+item replace block -79621 -50 87 container.14 with resin_clump 2
 
 
 # ↓↓ 待修改 ↓↓
