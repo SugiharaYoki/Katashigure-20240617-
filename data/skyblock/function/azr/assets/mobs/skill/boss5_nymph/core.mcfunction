@@ -67,14 +67,16 @@ execute if score @s AzrEntityTimer matches 1001 run title @a[tag=azrShowDialog] 
 execute if score @s AzrEntityTimer matches 1060 run title @a[tag=azrShowDialog] actionbar {text:"我们知道错了……！我们是宁芙，我们一直都生存于这片丛林……！",color:"red",bold:true}
 execute if score @s AzrEntityTimer matches 1120 run title @a[tag=azrShowDialog] actionbar {text:"丛林曾经不是丛林的时候，我们是精灵。我们撺掇生灵魔力。",color:"red",bold:true}
 execute if score @s AzrEntityTimer matches 1200 run title @a[tag=azrShowDialog] actionbar {text:"宁芙也不想，但宁芙饿了好久，食物……多出来的食物，宁芙深爱着食物……",color:"red",bold:true}
-execute if score @s AzrEntityTimer matches 1290 run title @a[tag=azrShowDialog] actionbar {text:"宁芙知道错了，宁芙再也不敢爱你了，不要杀死宁芙……",color:"red",bold:true}
-execute if score @s AzrEntityTimer matches 1390 run title @a[tag=azrShowDialog] actionbar {text:"求求你了……",color:"red",bold:true}
+execute if score @s AzrEntityTimer matches 1290 run title @a[tag=azrShowDialog] actionbar {text:"宁芙知道错了，宁芙再也不敢爱你了，不要杀死宁芙……",color:"aqua",bold:true}
+execute if score @s AzrEntityTimer matches 1340 run title @a[tag=azrShowDialog] actionbar {text:"魔力潮汐也被宁芙恢复了，你可以前进了……",color:"aqua",bold:true}
+execute if score @s AzrEntityTimer matches 1420 run title @a[tag=azrShowDialog] actionbar {text:"求求你了……",color:"aqua",bold:true}
 execute if score @s AzrEntityTimer matches 1001 run tellraw @a[tag=azrShowDialog] {text:"不要杀死我们……不要杀死我们！！",color:"red",bold:true}
 execute if score @s AzrEntityTimer matches 1060 run tellraw @a[tag=azrShowDialog] {text:"我们知道错了……！我们是宁芙，我们一直都生存于这片丛林……！",color:"red",bold:true}
 execute if score @s AzrEntityTimer matches 1120 run tellraw @a[tag=azrShowDialog] {text:"丛林曾经不是丛林的时候，我们是精灵。我们撺掇生灵魔力。",color:"red",bold:true}
 execute if score @s AzrEntityTimer matches 1200 run tellraw @a[tag=azrShowDialog] {text:"宁芙也不想，但宁芙饿了好久，食物……多出来的食物，宁芙深爱着食物……",color:"red",bold:true}
-execute if score @s AzrEntityTimer matches 1290 run tellraw @a[tag=azrShowDialog] {text:"宁芙知道错了，宁芙再也不敢爱你了，不要杀死宁芙……",color:"red",bold:true}
-execute if score @s AzrEntityTimer matches 1390 run tellraw @a[tag=azrShowDialog] {text:"求求你了……",color:"red",bold:true}
+execute if score @s AzrEntityTimer matches 1290 run tellraw @a[tag=azrShowDialog] {text:"宁芙知道错了，宁芙再也不敢爱你了，不要杀死宁芙……",color:"aqua",bold:true}
+execute if score @s AzrEntityTimer matches 1340 run tellraw @a[tag=azrShowDialog] {text:"魔力潮汐也被宁芙恢复了，你可以前进了……",color:"aqua",bold:true}
+execute if score @s AzrEntityTimer matches 1420 run tellraw @a[tag=azrShowDialog] {text:"求求你了……",color:"aqua",bold:true}
 
 execute if score @s AzrEntityTimer matches 1001 run data modify entity @s pose set value crouching
 execute if score @s AzrEntityTimer matches 1005 run function skyblock:azr/assets/mobs/skill/boss5_nymph/move_backstep
