@@ -76,9 +76,15 @@ execute if score @s AzrEntityTimer matches 1200 run tellraw @a[tag=azrShowDialog
 execute if score @s AzrEntityTimer matches 1290 run tellraw @a[tag=azrShowDialog] {text:"宁芙知道错了，宁芙再也不敢爱你了，不要杀死宁芙……",color:"red",bold:true}
 execute if score @s AzrEntityTimer matches 1390 run tellraw @a[tag=azrShowDialog] {text:"求求你了……",color:"red",bold:true}
 
+execute if score @s AzrEntityTimer matches 1001 run data modify entity @s pose set value crouching
 execute if score @s AzrEntityTimer matches 1005 run function skyblock:azr/assets/mobs/skill/boss5_nymph/move_backstep
+execute if score @s AzrEntityTimer matches 1031 run data modify entity @s pose set value standing
+execute if score @s AzrEntityTimer matches 1070 run data modify entity @s pose set value crouching
 execute if score @s AzrEntityTimer matches 1100 run function skyblock:azr/assets/mobs/skill/boss5_nymph/move_backstep
+execute if score @s AzrEntityTimer matches 1121 run data modify entity @s pose set value standing
+execute if score @s AzrEntityTimer matches 1220 run data modify entity @s pose set value crouching
 execute if score @s AzrEntityTimer matches 1240 run function skyblock:azr/assets/mobs/skill/boss5_nymph/move_backstep
+execute if score @s AzrEntityTimer matches 1270 run data modify entity @s pose set value standing
 
 execute if score @s AzrEntityTimer matches 1100 positioned -79782 195 -688 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng1 1000
 
