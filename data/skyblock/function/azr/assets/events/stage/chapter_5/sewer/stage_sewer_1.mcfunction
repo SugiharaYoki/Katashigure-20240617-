@@ -80,6 +80,21 @@ execute if score stage_main_thread AzrTimerStack matches 200 run playsound ambie
 execute if score stage_main_thread AzrTimerStack matches 200 run playsound ambient.warped_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 200 run title @a[tag=azrShowDialog] actionbar {text:"Ordination Completed",color:"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 200 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage21
+
+execute if score stage_main_thread AzrTimerStack matches 200 positioned -79630 -50 88 run function skyblock:azr/assets/mobs/skeleton_sentinel
+execute if score stage_main_thread AzrTimerStack matches 200 positioned -79630 -50 88 run function skyblock:azr/assets/mobs/skeleton_sword
+execute if score stage_main_thread AzrTimerStack matches 200 positioned -79630 -50 88 run function skyblock:azr/assets/mobs/skeleton_sword
+execute if score stage_main_thread AzrTimerStack matches 200 positioned -79630 -50 88 run function skyblock:azr/assets/mobs/skeleton_sword
+
+execute if score stage_main_thread AzrTimerStack matches 200 positioned -79653 -60 103 run function skyblock:azr/assets/mobs/guardian
+execute if score stage_main_thread AzrTimerStack matches 200 positioned -79672 -59 102 run function skyblock:azr/assets/mobs/guardian
+execute if score stage_main_thread AzrTimerStack matches 200 positioned -79672 -59 102 run function skyblock:azr/assets/mobs/nautilus
+
+execute if score stage_main_thread AzrTimerStack matches 200 positioned -79637 -42 87 run function skyblock:azr/assets/mobs/zombie_villager_armor
+execute if score stage_main_thread AzrTimerStack matches 200 positioned -79637 -42 87 run function skyblock:azr/assets/mobs/undead_fire
+execute if score stage_main_thread AzrTimerStack matches 200 positioned -79637 -42 87 run function skyblock:azr/assets/mobs/undead_fire
+execute if score stage_main_thread AzrTimerStack matches 200 positioned -79637 -42 87 run function skyblock:azr/assets/mobs/undead_fire
+
 execute if score stage_main_thread AzrTimerStack matches 200 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..40}] Azr_skillPoints 41
 execute if score stage_main_thread AzrTimerStack matches 200 run scoreboard players set stage Azr_system 93
 
