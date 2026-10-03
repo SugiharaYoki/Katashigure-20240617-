@@ -61,6 +61,8 @@ execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_lush_c] if score @s \
     
 execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_sewer_a] if score @s \
     Azr_Shop matches 40043 positioned -79760 -58 83 run tp @s ~ ~1 ~
+execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_sewer_b] if score @s \
+    Azr_Shop matches 40044 positioned -79615 -43 80 run tp @s ~ ~1 ~
 
 
 

@@ -183,6 +183,8 @@ execute unless score @s AzrPlayer_CurrentArea matches 11 positioned -79769 198 -
                                                 {area_id:11,title:"重生锚点：神代茏渠C",color_code:"#7de300"}
 execute unless score @s AzrPlayer_CurrentArea matches 12 positioned -79760 -58 83 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:12,title:"重生锚点：蓄水池A",color_code:"#333dff"}
+execute unless score @s AzrPlayer_CurrentArea matches 12 positioned -79615 -43 80 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:12,title:"重生锚点：蓄水池B",color_code:"#333dff"}
 
 
 execute positioned -79943 37 -8 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_westcourt_a
@@ -201,6 +203,7 @@ execute positioned -79651 173 -768 if entity @s[distance=..4] run tag @s add azr
 execute positioned -79764 175 -777 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_lush_b
 execute positioned -79769 198 -583 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_lush_c
 execute positioned -79760 -58 83 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_sewer_a
+execute positioned -79615 -43 80 if entity @s[distance=..4] run tag @s add azrPlayer_respawnanchor_unlocked_sewer_b
 
 
 
