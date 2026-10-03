@@ -4,6 +4,7 @@
 scoreboard players add @s rng1 1
 
 execute if score @s rng1 matches 2 at @s run forceload add ~ ~
+execute if score @s rng1 matches 2 at @s run scoreboard players set stage Azr_system 92
 
 
 execute if score stage Azr_system matches 91 run scoreboard players set stage_main_thread AzrTimerStack 0
