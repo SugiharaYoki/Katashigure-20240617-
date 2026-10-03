@@ -1056,7 +1056,9 @@ item replace block -79787 184 -666 container.14 with emerald 3
 #boss nymph
 fill -79789 188 -521 -79793 188 -517 air replace minecraft:wildflowers
 
-
+#蓄水池
+#stage1
+fill -79692 -57 71 -79692 -53 75 minecraft:cyan_stained_glass
 
 
 

@@ -77,6 +77,7 @@ execute if score stage Azr_system matches 75.. run function skyblock:azr/assets/
 execute if score stage Azr_system matches 80.. run function skyblock:azr/assets/events/stage/chapter_5/area1_lush
 execute if score stage Azr_system matches 91.. run function skyblock:azr/assets/events/stage/chapter_5/area2_sewer
 
+#-79695 -57 73
 
 
 # 强制释放临时变量
