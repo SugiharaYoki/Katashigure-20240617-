@@ -29,7 +29,7 @@ execute as @e[type=arrow,tag=AzrAmulet_waterarrow,distance=0..30,nbt=!{inGround:
 # 原伤害只保存一次；30 是伤害系数，不是固定扣除 30 点血
 
 execute as @e[type=arrow,tag=AzrWA_aim,distance=0..30] unless data entity @s data.AzrWA_original_damage run data modify entity @s data.AzrWA_original_damage set from entity @s damage
-execute as @e[type=arrow,tag=AzrWA_aim,distance=0..30] run data merge entity @s {NoGravity:1b,damage:30.0d}
+execute as @e[type=arrow,tag=AzrWA_aim,distance=0..30] run data merge entity @s {NoGravity:1b,damage:15.0d}
 
 
 # ===== 临时加载原点区块，用于方向计算 =====
