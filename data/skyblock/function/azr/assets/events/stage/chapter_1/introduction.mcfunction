@@ -36,9 +36,9 @@ execute if score Azr_Story_Introduction rng1 matches 166 as @p[tag=azrPlayer] at
 execute if score Azr_Story_Introduction rng1 matches 166 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{text:"世界的整体走向竟无任何变化",color:"white",bold: false}]
 execute if score Azr_Story_Introduction rng1 matches 166 run scoreboard players add Azr_Story_Introduction rng1 18
 
-execute if score Azr_Story_Introduction rng1 matches 200 as @p[tag=azrPlayer] at @s run effect give @a[distance=..200] darkness 5 0 true
+execute if score Azr_Story_Introduction rng1 matches 200 as @p[tag=azrPlayer] at @s run effect give @a[distance=..200,tag=azrShowDialog] darkness 5 0 true
 
-execute if score Azr_Story_Introduction rng1 matches 208 as @p[tag=azrPlayer] at @s run tp @a[distance=..200] -79760 97 -2133
+execute if score Azr_Story_Introduction rng1 matches 208 as @p[tag=azrPlayer] at @s run tp @a[distance=..200,tag=azrPlayer] -79760 97 -2133
 execute if score Azr_Story_Introduction rng1 matches 208 run scoreboard players add Azr_Story_Introduction rng1 18
 
 execute if score Azr_Story_Introduction rng1 matches 234 as @p[tag=azrPlayer] at @s run playsound minecraft:ambient.cave ambient @a ~ ~ ~ 1 0.5
@@ -60,9 +60,9 @@ execute if score Azr_Story_Introduction rng1 matches 280 as @p[tag=azrPlayer] at
 execute if score Azr_Story_Introduction rng1 matches 280 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] title [{text:"你迎来了属于自己的死亡",color:"dark_red",bold: false}]
 execute if score Azr_Story_Introduction rng1 matches 280 as @p[tag=azrPlayer] at @s run title @a[tag=azrShowDialog] subtitle [{text:"『亚兹列尔的中庭花园』",color:"white",bold:1b}]
 
-execute if score Azr_Story_Introduction rng1 matches 283 as @p[tag=azrPlayer] at @s run spawnpoint @a[distance=..200] -79376 26 -366
+execute if score Azr_Story_Introduction rng1 matches 283 as @p[tag=azrPlayer] at @s run spawnpoint @a[distance=..200,tag=azrShowDialog] -79376 26 -366
 execute if score Azr_Story_Introduction rng1 matches 283 as @a[tag=azrPlayer] at @s run effect give @s fire_resistance infinite 0 true
-execute if score Azr_Story_Introduction rng1 matches 283 as @p[tag=azrPlayer] at @s run tp @a[distance=..200] -79440 25 -358 facing -79441 25 -358
+execute if score Azr_Story_Introduction rng1 matches 283 as @p[tag=azrPlayer] at @s run tp @a[distance=..200,tag=azrPlayer] -79440 25 -358 facing -79441 25 -358
 
 execute if score Azr_Story_Introduction rng1 matches 290 at @p[tag=azrPlayer] run tellraw @a[tag=azrShowDialog] [{text:"温柔的声音：",color:"dark_purple",bold:1b},{bold: false,text:"\n“承受不公命运的人类啊，你必将再度睁开双眼。”",color:"white"}]
 execute if score Azr_Story_Introduction rng1 matches 310 at @p[tag=azrPlayer] run tellraw @a[tag=azrShowDialog] [{text:"温柔的声音：",color:"dark_purple",bold:1b},{bold: false,text:"\n“我已犯下重罪，而你将会成为我的审判者。”",color:"white"}]
@@ -230,7 +230,7 @@ execute if score Azr_Story_Introduction rng1 matches ..400 if entity @p[tag=azrP
 execute if score Azr_Story_Introduction rng1 matches 501 run time set 22300
 execute if score Azr_Story_Introduction rng1 matches 501 run weather thunder 1000
 execute if score Azr_Story_Introduction rng1 matches 521 run weather clear 1000
-execute if score Azr_Story_Introduction rng1 matches 521 run tp @a[tag=azrShowDialog] -79723.02 -49.00 -1220.00
+execute if score Azr_Story_Introduction rng1 matches 521 run tp @a[tag=azrPlayer] -79723.02 -49.00 -1220.00
 execute if score Azr_Story_Introduction rng1 matches 521 positioned -79723 293 -1221 run kill @e[tag=azrPlayer_opening_rise_particle_1_marker,distance=0..50]
 execute if score Azr_Story_Introduction rng1 matches 521 positioned -79723 293 -1221 run kill @e[tag=azrPlayer_opening_rise_particle_2_marker,distance=0..50]
 execute if score Azr_Story_Introduction rng1 matches 521 run effect give @a[tag=azrPlayer] darkness 5 0 true
@@ -259,7 +259,7 @@ execute if score Azr_Story_Introduction rng1 matches 614 at @p[tag=azrPlayer] ru
 
 execute if score Azr_Story_Introduction rng1 matches 1024.. at @p[tag=azrPlayer] if entity @a[tag=!azrRetrieved,tag=azrPlayer,tag=AZR_SEAawakened] if score stage Azr_system matches ..0 as @p[tag=!azrRetrieved,tag=azrPlayer,tag=AZR_SEAawakened] at @s run function skyblock:azr/lifecycle/jump_to/generic_retrieve
 
-execute if score Azr_Story_Introduction rng1 matches 1024 at @p[tag=azrPlayer] run tp @a[tag=azrShowDialog] -79984.03 40.00 -14.01 facing -79983.03 40.00 -14.01
+execute if score Azr_Story_Introduction rng1 matches 1024 at @p[tag=azrPlayer] run tp @a[tag=azrPlayer] -79984.03 40.00 -14.01 facing -79983.03 40.00 -14.01
 
 execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 40.00 -14.01 as @a[tag=azrShowDialog] at @s run playsound entity.player.teleport ambient @s ~ ~ ~ 2 1
 execute if score Azr_Story_Introduction rng1 matches 1025 positioned -79984.03 40.00 -14.01 run playsound block.beacon.activate ambient @a ~ ~ ~ 2 0.8
