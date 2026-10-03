@@ -8,6 +8,8 @@ execute if score @s rng1 matches 2 at @s run scoreboard players set stage Azr_sy
 
 
 execute if score @s rng2 matches 2 at @s positioned -79653 -60 103 run function skyblock:azr/assets/mobs/guardian
+execute if score @s rng2 matches 2 at @s positioned -79672 -59 102 run function skyblock:azr/assets/mobs/guardian
+execute if score @s rng2 matches 2 at @s positioned -79672 -59 102 run function skyblock:azr/assets/mobs/nautilus
 
 execute if score @s rng2 matches 2 at @s positioned -79660 -57 64 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_shadow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng2 matches 4 at @s positioned -79652 -57 82 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_shadow","AzrielMob_summon_delay","AzrielMob_level_1"]}

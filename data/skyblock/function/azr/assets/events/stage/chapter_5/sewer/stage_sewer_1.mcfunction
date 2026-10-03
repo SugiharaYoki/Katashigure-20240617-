@@ -74,6 +74,8 @@ execute if score stage_main_thread AzrTimerStack matches 172 unless block -79929
 execute if score stage_main_thread AzrTimerStack matches 192..193 positioned -79695 -57 66 if entity @n[distance=..20,tag=AzrielMob_StageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 192
 
 execute if score stage_main_thread AzrTimerStack matches 200 run fill -79692 -57 71 -79692 -53 75 air destroy
+execute if score stage_main_thread AzrTimerStack matches 200 run fill -79700 -57 85 -79698 -57 85 minecraft:air
+execute if score stage_main_thread AzrTimerStack matches 200 run fill -79700 -58 85 -79698 -58 85 minecraft:water
 execute if score stage_main_thread AzrTimerStack matches 200 run playsound ambient.warped_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 200 run playsound ambient.warped_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 200 run title @a[tag=azrShowDialog] actionbar {text:"Ordination Completed",color:"aqua"}
