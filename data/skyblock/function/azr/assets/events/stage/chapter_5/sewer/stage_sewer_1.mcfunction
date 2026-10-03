@@ -72,3 +72,9 @@ execute if score stage_main_thread AzrTimerStack matches 300 run title @a[tag=az
 execute if score stage_main_thread AzrTimerStack matches 300 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage21
 execute if score stage_main_thread AzrTimerStack matches 300 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..40}] Azr_skillPoints 41
 execute if score stage_main_thread AzrTimerStack matches 300 run scoreboard players set stage Azr_system 93
+
+
+
+
+
+
