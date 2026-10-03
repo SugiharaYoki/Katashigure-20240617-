@@ -152,7 +152,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_jump_boost:1b}]
 execute if items entity @s container.* *[custom_data~{azr_amulet_fire_drogue_dash:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerj] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_stay_float:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerk] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_water_wade:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerl] CustomName set value ' √ '
-execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerm] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_water_arrow:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerm] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkern] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_tripler:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkero] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_laser_drag:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerp] CustomName set value ' √ '
@@ -219,7 +219,7 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerj]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432310"},hover_event:{"action":"show_text","value":{text:"Jahannam - 恶燧石板\n射击逐焰浮球使其化作飓炎弹，通过弦蓄补充逐焰浮球",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerk]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432311"},hover_event:{"action":"show_text","value":{text:"Kinetic - 悬风石板\n长按跳跃以悬浮",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerl]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432312"},hover_event:{"action":"show_text","value":{text:"Limnion - 疾泅石板\n允许入水后进行一次冲刺，略微增加水中移动速度",color:"white"}}},\
-{selector:"@n[tag=AzrRamielExStage_displaymarkerm]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432313"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerm]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432313"},hover_event:{"action":"show_text","value":{text:"Murk - 衔涓石板\n水中箭矢自动追踪敌人",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkern]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432314"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
 {text:"\n "},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkero]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432315"},hover_event:{"action":"show_text","value":{text:"Object - 攒善石板\n蹲下额外消耗2存箭量，射出三重箭、后撤步射出五重箭",color:"white"}}},\
