@@ -2,6 +2,9 @@ scoreboard players add @s rng1 1
 
 execute if score @s rng1 matches 48 unless entity @p[tag=azrPlayer,distance=..5.1] run scoreboard players set @s rng1 40
 execute if score @s rng1 matches 50 run playsound minecraft:entity.evoker.prepare_attack hostile @a ~ ~ ~ 1 0.9
+execute if score @s rng1 matches 50 run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_mossflora_spore_marker","AzrielMob_mob_marker","fast"]}
+execute if score @s rng1 matches 52 run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_mossflora_spore_marker","AzrielMob_mob_marker","fast"]}
+execute if score @s rng1 matches 54 run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_mossflora_spore_marker","AzrielMob_mob_marker","fast"]}
 execute if score @s rng1 matches 50 run particle minecraft:enchant ~ ~0.3 ~ 0.2 0 0.2 0 20
 execute if score @s rng1 matches 50 run effect give @s slowness 3 19 true
 
