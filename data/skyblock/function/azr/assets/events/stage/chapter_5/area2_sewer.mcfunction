@@ -20,6 +20,9 @@ execute positioned -79695 -57 73 as @n[tag=AzrielMarker_encounter,distance=0..0.
 
 
 
+#随机野怪
+execute positioned -79686 -57 112 if score random_enemy_thread AzrTimerStack matches 2 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:32}
+execute positioned -79686 -57 112 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 2.. unless entity @a[tag=azrPlayer,distance=..14] if entity @a[tag=azrPlayer,distance=..32] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter5_sewer
 
 
 
