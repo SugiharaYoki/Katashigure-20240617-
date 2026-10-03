@@ -11,7 +11,16 @@ execute if score stage_main_thread AzrTimerStack matches 300 run bossbar remove 
 #close:-79940 37 140
 #far:-79922 37 140
 
-execute if score stage_main_thread AzrTimerStack matches 2 positioned -79922 37 140 run function skyblock:azr/assets/mobs/undead_pickaxe
+execute if score stage_main_thread AzrTimerStack matches 2 positioned -79695 -57 66 run function skyblock:azr/assets/mobs/undead
+execute if score stage_main_thread AzrTimerStack matches 3 positioned -79695 -57 66 run function skyblock:azr/assets/mobs/undead
+execute if score stage_main_thread AzrTimerStack matches 4 positioned -79695 -57 66 run function skyblock:azr/assets/mobs/undead
+execute if score stage_main_thread AzrTimerStack matches 5 positioned -79695 -57 66 run function skyblock:azr/assets/mobs/undead
+execute if score stage_main_thread AzrTimerStack matches 6 positioned -79695 -57 66 run function skyblock:azr/assets/mobs/undead
+execute if score stage_main_thread AzrTimerStack matches 2 positioned -79695 -57 80 run function skyblock:azr/assets/mobs/undead
+execute if score stage_main_thread AzrTimerStack matches 3 positioned -79695 -57 80 run function skyblock:azr/assets/mobs/undead
+execute if score stage_main_thread AzrTimerStack matches 4 positioned -79695 -57 80 run function skyblock:azr/assets/mobs/undead
+execute if score stage_main_thread AzrTimerStack matches 5 positioned -79695 -57 80 run function skyblock:azr/assets/mobs/undead
+execute if score stage_main_thread AzrTimerStack matches 6 positioned -79695 -57 80 run function skyblock:azr/assets/mobs/undead
 
 
 
