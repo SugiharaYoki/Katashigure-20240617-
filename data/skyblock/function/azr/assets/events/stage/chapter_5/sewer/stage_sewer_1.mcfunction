@@ -1,12 +1,12 @@
 
-execute if score stage_main_thread AzrTimerStack matches 1 run title @a[tag=azrShowDialog] actionbar {color:"aqua",text:"Protocol 6"}
-execute if score stage_main_thread AzrTimerStack matches 1 run bossbar add azr:progress_bar_normal "Protocol 1"
+execute if score stage_main_thread AzrTimerStack matches 1 run title @a[tag=azrShowDialog] actionbar {color:"aqua",text:"Sewer Protocol 1"}
+execute if score stage_main_thread AzrTimerStack matches 1 run bossbar add azr:progress_bar_normal "Sewer Protocol 1"
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal color white
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrShowDialog]
-execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal max 300
-execute if score stage_main_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{text:"[DEBUG MODE MESSAGE] You are playing \"Protocol 1\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{text:" Maximum Seconds = 300"}]
-execute if score stage_main_thread AzrTimerStack matches 1..300 store result bossbar azr:progress_bar_normal value run scoreboard players get stage_main_thread AzrTimerStack
-execute if score stage_main_thread AzrTimerStack matches 300 run bossbar remove azr:progress_bar_normal
+execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal max 200
+execute if score stage_main_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{text:"[DEBUG MODE MESSAGE] You are playing \"Sewer Protocol 1\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{text:" Maximum Seconds = 200"}]
+execute if score stage_main_thread AzrTimerStack matches 1..200 store result bossbar azr:progress_bar_normal value run scoreboard players get stage_main_thread AzrTimerStack
+execute if score stage_main_thread AzrTimerStack matches 200 run bossbar remove azr:progress_bar_normal
 #
 #close:-79940 37 140
 #far:-79922 37 140
@@ -63,15 +63,23 @@ execute if score stage_main_thread AzrTimerStack matches 128 positioned -79695 -
 execute if score stage_main_thread AzrTimerStack matches 129 unless block -79929 39 125 air positioned -79695 -57 80 as @e[tag=AzrielMob,distance=0..3] run tag @s add AzrielMob_StageProgressTarget
 execute if score stage_main_thread AzrTimerStack matches 137..138 positioned -79931 38 122 if entity @n[distance=..20,tag=AzrielMob_StageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 137
 
+execute if score stage_main_thread AzrTimerStack matches 142 positioned -79695 -57 80 run function skyblock:azr/assets/mobs/skeleton_axe
+execute if score stage_main_thread AzrTimerStack matches 142 positioned -79695 -57 66 run function skyblock:azr/assets/mobs/skeleton_axe
+execute if score stage_main_thread AzrTimerStack matches 152 positioned -79695 -57 80 run function skyblock:azr/assets/mobs/skeleton_axe
+execute if score stage_main_thread AzrTimerStack matches 152 positioned -79695 -57 66 run function skyblock:azr/assets/mobs/skeleton_axe
+execute if score stage_main_thread AzrTimerStack matches 172 positioned -79695 -57 80 run function skyblock:azr/assets/mobs/zombie_villager_vine
+execute if score stage_main_thread AzrTimerStack matches 172 positioned -79695 -57 66 run function skyblock:azr/assets/mobs/zombie_villager_vine
 
-execute if score stage_main_thread AzrTimerStack matches 300 run fill -79692 -57 71 -79692 -53 75 air destroy
+execute if score stage_main_thread AzrTimerStack matches 172 unless block -79929 39 125 air positioned -79695 -57 80 as @e[tag=AzrielMob,distance=0..3] run tag @s add AzrielMob_StageProgressTarget
+execute if score stage_main_thread AzrTimerStack matches 192..193 positioned -79931 38 122 if entity @n[distance=..20,tag=AzrielMob_StageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 192
 
-execute if score stage_main_thread AzrTimerStack matches 300 run playsound ambient.warped_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 300 run playsound ambient.warped_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
-execute if score stage_main_thread AzrTimerStack matches 300 run title @a[tag=azrShowDialog] actionbar {text:"Ordination Completed",color:"aqua"}
-execute if score stage_main_thread AzrTimerStack matches 300 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage21
-execute if score stage_main_thread AzrTimerStack matches 300 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..40}] Azr_skillPoints 41
-execute if score stage_main_thread AzrTimerStack matches 300 run scoreboard players set stage Azr_system 93
+execute if score stage_main_thread AzrTimerStack matches 200 run fill -79692 -57 71 -79692 -53 75 air destroy
+execute if score stage_main_thread AzrTimerStack matches 200 run playsound ambient.warped_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 200 run playsound ambient.warped_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
+execute if score stage_main_thread AzrTimerStack matches 200 run title @a[tag=azrShowDialog] actionbar {text:"Ordination Completed",color:"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 200 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage21
+execute if score stage_main_thread AzrTimerStack matches 200 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..40}] Azr_skillPoints 41
+execute if score stage_main_thread AzrTimerStack matches 200 run scoreboard players set stage Azr_system 93
 
 
 
