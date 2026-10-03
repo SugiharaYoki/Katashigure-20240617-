@@ -31,7 +31,7 @@ tellraw @s[tag=azrPlayer_respawnanchor_unlocked_lush_b] [{text:"   - "},{text:"�
 tellraw @s[tag=azrPlayer_respawnanchor_unlocked_lush_c] [{text:"   - "},{text:"神代茏渠",color:"#7de300"},{text:" 惘灵的心房  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40042"}}]
 
 tellraw @s[tag=azrPlayer_respawnanchor_unlocked_sewer_a] [{text:"   - "},{text:"蓄水池",color:"#333dff"},{text:" 废水的汇流口  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40043"}}]
-tellraw @s[tag=azrPlayer_respawnanchor_unlocked_sewer_b] [{text:"   - "},{text:"蓄水池",color:"#333dff"},{text:" 支撑柱阵列  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40044"}}]
+tellraw @s[tag=azrPlayer_respawnanchor_unlocked_sewer_b] [{text:"   - "},{text:"蓄水池",color:"#333dff"},{text:" 结构柱阵列  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40044"}}]
 
 
 

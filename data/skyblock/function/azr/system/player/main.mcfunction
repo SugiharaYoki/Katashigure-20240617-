@@ -91,6 +91,7 @@ execute if score @s AzrSariel_Amulet_LaserDrag_timer matches 1.. run function sk
 execute if items entity @s container.* *[custom_data~{azr_amulet_wind_shear:1b}] run function skyblock:azr/system/player/skills/amulet/wind_shear_core
 
 execute if items entity @s container.* *[custom_data~{azr_amulet_water_ripple:1b}] run function skyblock:azr/system/player/skills/amulet/water_ripple_core
+execute if items entity @s container.* *[custom_data~{azr_amulet_water_arrow:1b}] run function skyblock:azr/system/player/skills/amulet/water_arrow_core
 #AzrSariel_Amulet_WaterRipple_cooldown
 
 #悬蔑石板

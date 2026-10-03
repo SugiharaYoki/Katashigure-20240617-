@@ -29,6 +29,9 @@ execute if block -79946 39 50 minecraft:birch_button[powered=true] if score stag
 execute if block -79914 55 -111 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/bonus_stage/stage_appetence_prep
 #Stage Limnion
 execute if block -79716 175 -855 waxed_exposed_copper_chest unless items block -79716 175 -855 container.13 emerald run function skyblock:azr/assets/events/stage/bonus_stage/stage_limnion_prep
+#Stage Murk
+execute if block -79765 -44 102 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/bonus_stage/stage_murk_prep
+
 
 
 #extra bonus - stage3α

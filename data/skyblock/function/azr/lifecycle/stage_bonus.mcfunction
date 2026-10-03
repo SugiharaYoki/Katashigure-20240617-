@@ -23,6 +23,8 @@
     execute if score stage_bonus Azr_system matches 11 run function skyblock:azr/assets/events/stage/bonus_stage/stage_kinetic
     # Limnion
     execute if score stage_bonus Azr_system matches 12 run function skyblock:azr/assets/events/stage/bonus_stage/stage_limnion
+    # Murk
+    execute if score stage_bonus Azr_system matches 12 run function skyblock:azr/assets/events/stage/bonus_stage/stage_murk
     # Object
     execute if score stage_bonus Azr_system matches 15 run function skyblock:azr/assets/events/stage/bonus_stage/stage_object
     # Photothermal
