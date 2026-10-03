@@ -10,7 +10,7 @@ execute if score @s rng7 matches 60 run playsound minecraft:entity.evoker.cast_s
 execute if score @s rng7 matches 60 run particle minecraft:copper_fire_flame ~ ~0.3 ~ 0.2 0 0.2 0 20
 execute if score @s rng7 matches 60 run effect give @s slowness 1 9 true
 
-execute if score @s rng7 matches 60 rotated as @s rotated ~ 0 run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker"]}
+execute if score @s rng7 matches 60 rotated as @s rotated ~ 0 run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","autoaim"]}
 
 
 
