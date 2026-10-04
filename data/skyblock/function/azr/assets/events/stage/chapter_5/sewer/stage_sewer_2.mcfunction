@@ -85,6 +85,19 @@ execute if score stage_main_thread AzrTimerStack matches 200 run playsound ambie
 execute if score stage_main_thread AzrTimerStack matches 200 run title @a[tag=azrShowDialog] actionbar {text:"Ordination Completed",color:"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 200 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage22
 
+execute if score stage_main_thread AzrTimerStack matches 200 positioned -79586 -40 77 run function skyblock:azr/assets/mobs/pillager
+execute if score stage_main_thread AzrTimerStack matches 200 positioned -79586 -40 77 run function skyblock:azr/assets/mobs/pillager
+execute if score stage_main_thread AzrTimerStack matches 200 positioned -79586 -40 77 run function skyblock:azr/assets/mobs/pillager
+execute if score stage_main_thread AzrTimerStack matches 200 positioned -79586 -40 77 run function skyblock:azr/assets/mobs/zombie_villager_armor
+
+execute if score stage_main_thread AzrTimerStack matches 200 positioned -79579 -35 69 run function skyblock:azr/assets/mobs/pillager
+execute if score stage_main_thread AzrTimerStack matches 200 positioned -79579 -35 69 run function skyblock:azr/assets/mobs/pillager
+execute if score stage_main_thread AzrTimerStack matches 200 positioned -79579 -35 69 run function skyblock:azr/assets/mobs/pillager
+execute if score stage_main_thread AzrTimerStack matches 200 positioned -79579 -35 69 run function skyblock:azr/assets/mobs/zombie_villager_armor
+
+execute if score stage_main_thread AzrTimerStack matches 200 positioned -79586 -48 77 run function skyblock:azr/assets/mobs/undead_shadow
+execute if score stage_main_thread AzrTimerStack matches 200 positioned -79586 -48 77 run function skyblock:azr/assets/mobs/undead_shadow
+
 
 execute if score stage_main_thread AzrTimerStack matches 200 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..41}] Azr_skillPoints 42
 execute if score stage_main_thread AzrTimerStack matches 200 run scoreboard players set stage Azr_system 94
