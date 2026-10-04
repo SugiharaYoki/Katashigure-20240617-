@@ -20,6 +20,7 @@ execute if score @s rng2 matches 18 at @s positioned -79621 -57 80 run summon ma
 execute if score @s rng2 matches 18 at @s positioned -79684 -48 70 run function skyblock:azr/assets/mobs/blaze
 execute if score @s rng2 matches 18 at @s positioned -79684 -48 76 run function skyblock:azr/assets/mobs/blaze
 
+execute if score stage Azr_system matches ..93 positioned -79598 -48 73 if entity @a[tag=azrPlayer,distance=..6] run scoreboard players set stage Azr_system 94
 
 execute if score stage Azr_system matches 91 run scoreboard players set stage_main_thread AzrTimerStack 0
 execute if score stage Azr_system matches 92 run function skyblock:azr/assets/events/stage/chapter_5/sewer/stage_sewer_1
