@@ -27,6 +27,8 @@ execute if score stage_main_thread AzrTimerStack matches 44 positioned -79598 -5
 execute if score stage_main_thread AzrTimerStack matches 45 positioned -79598 -50 66 as @e[tag=AzrielMob,distance=0..5] run tag @s add AzrielMob_StageProgressTarget
 execute if score stage_main_thread AzrTimerStack matches 48..49 positioned -79598 -50 80 if entity @n[distance=..20,tag=AzrielMob_StageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 48
 
+execute if score stage_main_thread AzrTimerStack matches 60 positioned -79598 -60 73 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_guardian","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
 execute if score stage_main_thread AzrTimerStack matches 51 positioned -79598 -50 80 run function skyblock:azr/assets/mobs/zombie_villager_cleric
 execute if score stage_main_thread AzrTimerStack matches 51 positioned -79598 -50 66 run function skyblock:azr/assets/mobs/zombie_villager_cleric
 execute if score stage_main_thread AzrTimerStack matches 59 positioned -79598 -50 80 run function skyblock:azr/assets/mobs/zombie_villager_vine
@@ -45,6 +47,8 @@ execute if score stage_main_thread AzrTimerStack matches 100 positioned -79598 -
 execute if score stage_main_thread AzrTimerStack matches 100..101 positioned -79598 -50 80 if entity @n[distance=..20,tag=AzrielMob_StageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 100
 
 execute if score stage_main_thread AzrTimerStack matches 105 run tellraw @a[tag=azrShowDialog,tag=azr_killed_nymph] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（没办法，只能击败他们了！）",color:"white"}]
+
+execute if score stage_main_thread AzrTimerStack matches 105 positioned -79598 -60 73 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_guardian","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
 execute if score stage_main_thread AzrTimerStack matches 103 positioned -79598 -50 66 run function skyblock:azr/assets/mobs/pillager
