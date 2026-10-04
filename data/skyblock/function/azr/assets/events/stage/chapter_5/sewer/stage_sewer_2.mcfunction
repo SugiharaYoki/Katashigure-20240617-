@@ -17,8 +17,8 @@ execute if score stage_main_thread AzrTimerStack matches 8 positioned -79598 -50
 execute if score stage_main_thread AzrTimerStack matches 11 positioned -79598 -50 80 run function skyblock:azr/assets/mobs/skeleton_sword
 execute if score stage_main_thread AzrTimerStack matches 14 positioned -79598 -50 80 run function skyblock:azr/assets/mobs/zombie_villager_armor
 
-execute if score stage_main_thread AzrTimerStack matches 24 run title @a[tag=azrShowDialog] actionbar {text:"前往人造湖泊的路上充满危险……",color:"aqua"}
-execute if score stage_main_thread AzrTimerStack matches 24 run tellraw @a[tag=azrShowDialog] {text:"前往人造湖泊的路上充满危险……",color:"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 24 run title @a[tag=azrShowDialog] actionbar {text:"前往天造湖泊的路途……充满危险……",color:"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 24 run tellraw @a[tag=azrShowDialog] {text:"前往天造湖泊的路途……充满危险……",color:"aqua"}
 
 execute if score stage_main_thread AzrTimerStack matches 32 positioned -79598 -50 66 run function skyblock:azr/assets/mobs/undead_greed
 execute if score stage_main_thread AzrTimerStack matches 38 positioned -79598 -50 66 run function skyblock:azr/assets/mobs/undead_greed
@@ -67,6 +67,9 @@ execute if score stage_main_thread AzrTimerStack matches 193 positioned -79598 -
 execute if score stage_main_thread AzrTimerStack matches 168 positioned -79598 -50 66 run function skyblock:azr/assets/mobs/pillager
 execute if score stage_main_thread AzrTimerStack matches 178 positioned -79598 -50 66 run function skyblock:azr/assets/mobs/skeleton_sentinel
 execute if score stage_main_thread AzrTimerStack matches 188 positioned -79598 -50 66 run function skyblock:azr/assets/mobs/pillager
+
+execute if score stage_main_thread AzrTimerStack matches 170 run title @a[tag=azrShowDialog] actionbar {text:"因为你是命中注定的……对立于沙利叶的……",color:"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 170 run tellraw @a[tag=azrShowDialog] {text:"因为你是命中注定的……对立于沙利叶的……",color:"aqua"}
 
 execute if score stage_main_thread AzrTimerStack matches 188 positioned -79695 -57 80 as @e[tag=AzrielMob,distance=0..6] run tag @s add AzrielMob_StageProgressTarget
 
