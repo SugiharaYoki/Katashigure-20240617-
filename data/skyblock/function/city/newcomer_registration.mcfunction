@@ -9,7 +9,6 @@ scoreboard players set @s Job_C_SP1 0
 scoreboard players set @s Job_C_SP2 0
 scoreboard players set @s Job_C_SP3 0
 scoreboard players set @s Job_Did 0
-scoreboard players set @s Parkour_Chall 0
 scoreboard players set @s ParkourLastStage 0
 scoreboard players set @s Perm_BlackJackW 0
 scoreboard players set @s Perm_Kills 0

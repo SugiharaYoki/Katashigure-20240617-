@@ -63,10 +63,7 @@ scoreboard objectives add Map_Code dummy
 scoreboard objectives add Map_Theme dummy
 scoreboard objectives add Map_Type dummy
 scoreboard objectives add MazeLS dummy
-scoreboard objectives add Parkour_Chall dummy
 scoreboard objectives add ParkourLastStage dummy
-scoreboard objectives add ParkourRouteB dummy
-scoreboard objectives add SeGa_ParkourS dummy
 scoreboard objectives add SkyWarMap dummy
 scoreboard objectives add SocialOath dummy
 scoreboard objectives add SocialStatus dummy

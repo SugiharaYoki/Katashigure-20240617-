@@ -8,8 +8,6 @@ tellraw @s [{text:"      影之石(SHD)余额： ",color:"gold"},{"score":{"name
 tellraw @s [{text:"      PVP战争 - 胜利次数： ",color:"blue"},{"score":{"name":"@s","objective":"Perm_PersonWins"}}]
 tellraw @s [{text:"      PVP战争 - 败北次数： ",color:"blue"},{"score":{"name":"@s","objective":"Perm_PersonDeath"}}]
 tellraw @s [{text:"      生涯杀人数量： ",color:"blue"},{"score":{"name":"@s","objective":"Perm_PersonKills"}}]
-#tellraw @s [{text:"      跑酷分数当前记录： ",color:"blue"},{"score":{"name":"@s","objective":"SeGa_ParkourS"}}]
-#tellraw @s [{text:"        - 跑酷挑战总点数： ",color:"green"},{"score":{"name":"@s","objective":"Parkour_Chall"}}]
 #tellraw @s [{text:"      Minigame - 标靶射击黑杰克 胜利次数： ",color:"dark_purple"},{"score":{"name":"@s","objective":"Perm_BlackJackW"}}]
 tellraw @s [{text:"      Minigame - 亚兹列尔的中庭花园 魔力指数： ",color:"dark_purple"},{"score":{"name":"@s","objective":"Azr_skillPoints"}}]
 tellraw @s {text:" "}
