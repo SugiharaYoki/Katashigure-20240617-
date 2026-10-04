@@ -41,12 +41,12 @@ execute if score stage_main_thread AzrTimerStack matches 84 positioned -79598 -5
 execute if score stage_main_thread AzrTimerStack matches 64 run title @a[tag=azrShowDialog] actionbar {text:"但我知道……如果是你的话，爱理莎……你就能克服……",color:"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 64 run tellraw @a[tag=azrShowDialog] {text:"但我知道……如果是你的话，爱理莎……你就能克服……",color:"aqua"}
 
-execute if score stage_main_thread AzrTimerStack matches 85 run tellraw @a[tag=azrShowDialog,tag=azr_killed_nymph] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（等等，他们是……神界军！）",color:"white"}]
+execute if score stage_main_thread AzrTimerStack matches 85 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（等等，他们是……神界军！）",color:"white"}]
 
 execute if score stage_main_thread AzrTimerStack matches 100 positioned -79598 -50 66 as @e[tag=AzrielMob,distance=0..5] run tag @s add AzrielMob_StageProgressTarget
 execute if score stage_main_thread AzrTimerStack matches 100..101 positioned -79598 -50 80 if entity @n[distance=..20,tag=AzrielMob_StageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 100
 
-execute if score stage_main_thread AzrTimerStack matches 105 run tellraw @a[tag=azrShowDialog,tag=azr_killed_nymph] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（没办法，只能击败他们了！）",color:"white"}]
+execute if score stage_main_thread AzrTimerStack matches 105 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（没办法，只能击败他们了！）",color:"white"}]
 
 execute if score stage_main_thread AzrTimerStack matches 105 positioned -79598 -60 73 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_guardian","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
