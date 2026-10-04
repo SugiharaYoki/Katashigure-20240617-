@@ -1070,6 +1070,9 @@ item replace block -79736 -57 97 container.14 with emerald 3
 setblock -79621 -50 87 waxed_oxidized_copper_chest[facing=west]{Inventory:[]}
 item replace block -79621 -50 87 container.12 with emerald 3
 item replace block -79621 -50 87 container.14 with resin_clump 2
+setblock -79683 -50 59 waxed_oxidized_copper_chest[facing=east]{Inventory:[]}
+item replace block -79683 -50 59 container.12 with emerald 3
+item replace block -79683 -50 59 container.14 with resin_clump 2
 
 #Stage Murk
 setblock -79765 -44 102 minecraft:birch_button[facing=west,face=floor]
