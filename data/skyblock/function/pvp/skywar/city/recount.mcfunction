@@ -54,9 +54,3 @@ scoreboard players set @s If_Bread 0
 scoreboard players set @s If_Dead 0
 scoreboard players set @s If_RotFle 0
 scoreboard players set @s If_MelonS 0
-scoreboard objectives remove TempIf_Job6A
-scoreboard objectives remove TempIf_Job6B
-scoreboard objectives remove TempIf_Job6C
-scoreboard objectives remove TempIf_Job6D
-scoreboard objectives remove TempIf_Job6E
-scoreboard objectives remove TempIf_Job3

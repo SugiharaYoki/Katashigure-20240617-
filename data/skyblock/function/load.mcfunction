@@ -83,11 +83,6 @@ scoreboard players set 2 constant 2
 scoreboard players set 3 constant 3
 scoreboard players set 10 constant 10
 
-#职业战
-scoreboard objectives add Job dummy
-scoreboard objectives add Job_Did dummy
-scoreboard objectives add Job_Rite dummy
-scoreboard objectives add Job_SpiritProp dummy
 #custom
 scoreboard objectives add If_MD_Wait minecraft.dropped:minecraft.music_disc_wait
 scoreboard objectives add If_MD_Strad minecraft.dropped:minecraft.music_disc_strad

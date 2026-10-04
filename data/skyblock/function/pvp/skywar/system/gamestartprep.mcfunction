@@ -23,11 +23,7 @@ execute if score skywar_start rng1 matches 2 run tellraw @a[tag=!Gaming,tag=!NoS
 execute if score skywar_start rng1 matches 2 run tellraw @a[tag=!Gaming,tag=!NoSkyWar] {text:"   —— [不参加游戏： 直到自己重新打开] ——",color:"green",click_event:{"action":"run_command","command":"trigger MultiMenu set 995"},hover_event:{"action":"show_text","value":{text:"开启“自动参加PVP战争”",color:"green"}}}
 execute if score skywar_start rng1 matches 2 run tellraw @a[tag=!Gaming,tag=!NoSkyWar] {text:"   —— [暂停开局] ——",color:"yellow",click_event:{"action":"run_command","command":"trigger MultiMenu set 994"},hover_event:{"action":"show_text","value":{text:"暂停PVP战场的开局",color:"green"}}}
 execute if score skywar_start rng1 matches 2 run tellraw @a[tag=!Gaming,tag=!NoSkyWar] {text:"   —— [重置倒计时] ——",color:"yellow",click_event:{"action":"run_command","command":"trigger MultiMenu set 996"},hover_event:{"action":"show_text","value":{text:"重置PVP战场的开局倒计时",color:"green"}}}
-#execute if score skywar_start rng1 matches 1 as @a[tag=!NoSkyWar] at @s unless entity @s[scores={Job=0..}] run tellraw @s {text:"您的职业为空！系统已经自动将您的职业初始化至「旅行家」",color:"light_purple"}
-#execute if score skywar_start rng1 matches 1 as @a[tag=!NoSkyWar] at @s unless entity @s[scores={Job=0..}] run scoreboard players set @s Job 3
-#execute if score skywar_start rng1 matches 1 as @a[tag=!NoSkyWar] at @s unless entity @s[scores={Job_SpiritProp=0..}] run tellraw @s {text:"您还没有设定精神力属性！系统已经自动将您的属性设置为「日」",color:"light_purple" }
-#execute if score skywar_start rng1 matches 1 as @a[tag=!NoSkyWar] at @s unless entity @s[scores={Job_SpiritProp=0..}] run tellraw @s {text:"小贴士： 您可以在多功能菜单的“游戏选项”中更换精神力属性。",color:"light_purple"}
-#execute if score skywar_start rng1 matches 1 as @a[tag=!NoSkyWar] at @s unless entity @s[scores={Job_SpiritProp=0..}] run scoreboard players set @s Job_SpiritProp 1
+
 #《地图预加载初始化》
 #-#-#setblock 12 60 -7 green_wool
 #-#-#setblock 19 60 -7 green_wool
@@ -153,22 +149,7 @@ execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scor
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_BlessDoDamage 0
 execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run xp set @s 30 levels
 #execute if score skywar_start rng1 matches 3 as @a[tag=!NoSkyWar] at @s run scoreboard players set @s If_Bless31c 0
-execute if score skywar_start rng1 matches 3 run scoreboard objectives add TempIf_Job6A dummy
-execute if score skywar_start rng1 matches 3 run scoreboard objectives add TempIf_Job6B dummy
-execute if score skywar_start rng1 matches 3 run scoreboard objectives add TempIf_Job6C dummy
-execute if score skywar_start rng1 matches 3 run scoreboard objectives add TempIf_Job6D dummy
-execute if score skywar_start rng1 matches 3 run scoreboard objectives add TempIf_Job6E dummy
-execute if score skywar_start rng1 matches 3 run scoreboard objectives add TempIf_Job3 dummy
-execute if score skywar_start rng1 matches 3 run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 TempIf_Job6A 0
-execute if score skywar_start rng1 matches 3 run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 TempIf_Job6B 0
-execute if score skywar_start rng1 matches 3 run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 TempIf_Job6C 0
-execute if score skywar_start rng1 matches 3 run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 TempIf_Job6D 0
-execute if score skywar_start rng1 matches 3 run scoreboard players set 10e959db-4b44-4cdd-b98c-350d3b454206 TempIf_Job6E 0
-execute if score skywar_start rng1 matches 3 run scoreboard players set @e[tag=sc] TempIf_Job6A 0
-execute if score skywar_start rng1 matches 3 run scoreboard players set @e[tag=sc] TempIf_Job6B 0
-execute if score skywar_start rng1 matches 3 run scoreboard players set @e[tag=sc] TempIf_Job6C 0
-execute if score skywar_start rng1 matches 3 run scoreboard players set @e[tag=sc] TempIf_Job6D 0
-execute if score skywar_start rng1 matches 3 run scoreboard players set @e[tag=sc] TempIf_Job6E 0
+
 #《清除遗留垃圾》
 execute if score skywar_start rng1 matches 15 run kill @e[type=wolf,x=50000,y=50,z=50000,distance=0..600]
 #开局计时器

@@ -11,8 +11,6 @@ execute unless entity @a[team=Team1_2] run execute as @a[tag=PVP_win] at @s run 
 execute unless entity @a[team=Team1_2] run scoreboard players add @a[tag=PVP_win] Perm_PersonFSB 1
 kill @e[type=!player,x=50050,y=50,z=50050,distance=..1700]
 kill @e[type=item,x=50050,y=50,z=50050,distance=..1700]
-#tellraw @a[scores={Job=5,Job_SpiritProp=3},tag=PVP_win] {text:"游戏胜利！获得了200浮世币的奖励！",color:"gold"}
-#scoreboard players add @a[scores={Job=5,Job_SpiritProp=3},tag=PVP_win] Perm_PersonFSB 100
 
 
 setblock -133 58 -99 air

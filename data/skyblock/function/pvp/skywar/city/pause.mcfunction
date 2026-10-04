@@ -25,12 +25,7 @@ tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove MapLoaAlr
 tag @a[tag=!Gaming] remove NoSkyWarTemp
 title @a[tag=!Gaming,tag=!NoSkyWar] times 0 30 5
 title @a[tag=!Gaming,tag=!NoSkyWar] title {text:"开局暂停",bold:1b,color:"red"}
-#《地图预加载初始化》
-#-#-#setblock 12 60 -7 green_wool
-#-#-#setblock 19 60 -7 green_wool
-#-#-#fill 56 87 75 90 87 75 air
-#《禁止提前预加载》
-#-#-#setblock 12 88 86 air
+
 #《禁止再次开局》
 #《计入历史启动》
 scoreboard players remove #PVP_Skywar_Start_Count Global_Age 1
@@ -49,12 +44,6 @@ tag @s remove LeftGame
 function skyblock:pvp/skywar/system/removeallmd
 #??scoreboard players set @s If_EnchantArrow 0
 
-scoreboard objectives remove TempIf_Job6A
-scoreboard objectives remove TempIf_Job6B
-scoreboard objectives remove TempIf_Job6C
-scoreboard objectives remove TempIf_Job6D
-scoreboard objectives remove TempIf_Job6E
-scoreboard objectives remove TempIf_Job3
 setblock -27 143 -58 air
 
 execute if score sc Map_Theme matches 1 run function skyblock:pvp/skywar/system/init/map/common_partdeletemap_1
