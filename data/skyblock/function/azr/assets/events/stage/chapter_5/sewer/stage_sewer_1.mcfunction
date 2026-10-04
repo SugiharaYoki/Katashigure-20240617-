@@ -76,6 +76,8 @@ execute if score stage_main_thread AzrTimerStack matches 192..193 positioned -79
 execute if score stage_main_thread AzrTimerStack matches 200 run fill -79692 -57 71 -79692 -53 75 air destroy
 execute if score stage_main_thread AzrTimerStack matches 200 run fill -79700 -57 85 -79698 -57 85 minecraft:air
 execute if score stage_main_thread AzrTimerStack matches 200 run fill -79700 -58 85 -79698 -58 85 minecraft:water
+execute if score stage_main_thread AzrTimerStack matches 200 run fill -79700 -57 61 -79698 -57 61 minecraft:air
+execute if score stage_main_thread AzrTimerStack matches 200 run fill -79700 -58 61 -79698 -58 61 minecraft:water
 execute if score stage_main_thread AzrTimerStack matches 200 run playsound ambient.warped_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 200 run playsound ambient.warped_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 200 run title @a[tag=azrShowDialog] actionbar {text:"Ordination Completed",color:"aqua"}

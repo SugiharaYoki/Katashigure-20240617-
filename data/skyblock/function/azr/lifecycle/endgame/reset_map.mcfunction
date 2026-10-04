@@ -1060,6 +1060,8 @@ fill -79789 188 -521 -79793 188 -517 air replace minecraft:wildflowers
 #stage1
 fill -79692 -57 71 -79692 -53 75 minecraft:cyan_stained_glass
 fill -79700 -58 85 -79698 -57 85 minecraft:waxed_oxidized_copper_bars
+fill -79698 -58 61 -79700 -57 61 minecraft:waxed_oxidized_copper_bars
+
 
 #宝箱
 setblock -79736 -57 97 waxed_oxidized_copper_chest[facing=south]{Inventory:[]}
