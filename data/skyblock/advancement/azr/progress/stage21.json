@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "蓄水池：被忘却之生灵的最终过滤处",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "不论是何种生灵，只要并非神庭所用，最终都会被流放至此。\n这里的生灵是被世界遗忘、遗弃的存在，或许有谁会知晓它们依然存在，但它们并不会因此被任何生物重视。\n从反方向来到此处的我，究竟是连这个独属于被流放之生灵的世界都融入不了，还是正在重新被这个世界所接纳？\n我真的需要被这个世界重新接纳吗？\n我甚至从未静下心思考这个问题。哪怕一秒。\n\n就是在这样被孤立的小世界中，有什么存在在呼唤着我。\n而我想对此一探究竟。\n我想找到她。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:dark_prismarine"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage20_boss5"
+}
