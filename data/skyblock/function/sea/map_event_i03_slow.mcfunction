@@ -63,7 +63,7 @@ execute as @n[tag=sc,scores={sea_4temp2=80..395}] run scoreboard players add @s 
 execute as @n[tag=sc,scores={sea_4temp2=80..395}] run function skyblock:sea/e/ch3/ev026_ch3_communication_1
 
 
-execute as 10e959db-4b44-4cdd-b98c-350d3b454206 if block 90133 137 108 minecraft:warped_button[powered=true] unless block 90131 161 144 air run scoreboard players set @s sea_4temp2 1080
+execute as 10e959db-4b44-4cdd-b98c-350d3b454206 if block 90133 137 108 minecraft:warped_button[powered=true] unless block 90131 161 144 air if score @s sea_4temp2 matches ..1079 run scoreboard players set @s sea_4temp2 1080
 execute as @n[tag=sc,scores={sea_4temp2=1080..1395}] run scoreboard players add @s sea_4temp2 1
 execute as @n[tag=sc,scores={sea_4temp2=1080..1395}] run function skyblock:sea/e/ch3/ev026_ch3_communication_2
 
@@ -91,6 +91,7 @@ execute if score sea_ch3_event_backupradio sea_4temp3 matches -20..99 if block 9
  run scoreboard players set sea_ch3_event_backupradio sea_4temp3 101
 
 execute if score sea_ch3_event_backupradio sea_4temp3 matches 100..300 if block 90131 161 144 air run scoreboard players add sea_ch3_event_backupradio sea_4temp3 1
+execute if score sea_ch3_event_backupradio sea_4temp3 matches 100..300 unless block 90131 161 144 air run scoreboard players set sea_ch3_event_backupradio sea_4temp3 0
 execute if score sea_ch3_event_backupradio sea_4temp3 matches 120 positioned 90133 137 108 \
  run tellraw @a[distance=0..250] [{text:"？？？：",color:"yellow",bold:1b},{text:"\n“你……打开了备用电台？你是谁，你现在在甲板上吗？”",color:"white",bold: false}]
 execute if score sea_ch3_event_backupradio sea_4temp3 matches 150 positioned 90133 137 108 \
