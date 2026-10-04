@@ -10,7 +10,7 @@ bossbar set azr:progress_bar_pvp style notched_6
 bossbar set azr:progress_bar_pvp value 10
 
 
-forceload add -79312 -106
+forceload add -79312 -106 -79261 -106
 setblock -79312 34 -106 chest[facing=north]{Inventory:[]}
 setblock -79309 33 -106 waxed_oxidized_copper_chest[facing=north]{Inventory:[]}
 setblock -79315 33 -106 waxed_copper_chest[facing=north]{Inventory:[]}
