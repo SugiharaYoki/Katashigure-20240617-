@@ -1065,6 +1065,8 @@ fill -79698 -58 61 -79700 -57 61 minecraft:waxed_oxidized_copper_bars
 #stage2
 fill -79592 -48 72 -79592 -44 74 minecraft:cyan_stained_glass
 
+#鹦鹉螺
+fill -79580 -35 17 -79578 -31 17 minecraft:air
 
 #宝箱
 setblock -79736 -57 97 waxed_oxidized_copper_chest[facing=south]{Inventory:[]}

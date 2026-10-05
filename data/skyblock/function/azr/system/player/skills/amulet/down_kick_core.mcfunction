@@ -19,6 +19,7 @@ execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 unless items 
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 if items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}] if entity @s[nbt={OnGround:1b},scores={AZR_chainKill_chargeup=1500..}] if entity @e[tag=AzrielMob,distance=0..6] run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 20
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 if items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}] if entity @s[nbt={OnGround:1b},scores={AZR_chainKill_chargeup=1500..}] unless entity @e[tag=AzrielMob,distance=0..6] if block ~ ~-0.5 ~ honey_block run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 20
 
+execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 at @s if block ~ ~ ~ #skyblock:water run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 10
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 if entity @s[nbt={OnGround:1b}] run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 10
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 if entity @s[predicate=!skyblock:sneak] run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 10
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..22 run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 10
