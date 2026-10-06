@@ -11,7 +11,7 @@ execute if score @s AzrEntityTimer matches ..70 at @s if entity @a[tag=azrPlayer
 
 execute if score @s AzrEntityTimer matches 70 run scoreboard players set @s AzrEntityTimer 69
 
-execute if score @s AzrEntityTimer matches 72 positioned -79579 -51 -1 run bossbar add azr:boss_hp_bar_nautilus "源于污浊的灭尽识果 - 亡灵赫螺"
+execute if score @s AzrEntityTimer matches 72 positioned -79579 -51 -1 run bossbar add azr:boss_hp_bar_nautilus "灭尽识果的浊流- 亡灵赫螺"
 execute if score @s AzrEntityTimer matches 72 positioned -79579 -51 -1 run bossbar set azr:boss_hp_bar_nautilus color red
 execute if score @s AzrEntityTimer matches 72 positioned -79579 -51 -1 run bossbar set azr:boss_hp_bar_nautilus max 400
 execute if score @s AzrEntityTimer matches 72 positioned -79579 -51 -1 run bossbar set azr:boss_hp_bar_nautilus players @a[tag=azrShowDialog]
