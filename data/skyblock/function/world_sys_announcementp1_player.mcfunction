@@ -14,6 +14,7 @@ execute unless block -21 23 32 soul_lantern if score sc AnnouncementRoB matches 
 
 
 execute unless block -17 23 32 minecraft:soul_lantern run spawnpoint @s[x=50000,y=0,z=50000,distance=0..1200] -43 55 0
+execute if block -17 23 32 minecraft:soul_lantern as @s[x=50000,y=50,z=50000,distance=1500..,gamemode=spectator] at @s run tag @s add PVP_see
 execute unless block -17 23 32 minecraft:soul_lantern as @s[tag=PVP_see,x=50000,y=50,z=50000,distance=1500..] at @s run function skyblock:pvp/skywar/system/removeallgaming
 
 execute if block ~ ~-1 ~ minecraft:emerald_block run function skyblock:mg/parkour/save
