@@ -24,7 +24,7 @@ execute if entity @a[tag=ServerManager,team=!TokumeiM,team=!TokumeiO,team=!Tokum
 
 
 
-execute as @a[x=102,y=5,z=-242,dx=58,dy=300,dz=58] at @s run function skyblock:mg/maze/ui
+
 execute as @n[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=item] at @s run function skyblock:mg/maze/item
 execute as @e[x=102,y=5,z=-242,dx=58,dy=300,dz=58,type=marker,tag=MazeTower_Glowstick,limit=120] at @s if entity @a[distance=..25] run function skyblock:mg/maze/marker
 
