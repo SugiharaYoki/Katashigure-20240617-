@@ -33,6 +33,7 @@ bossbar remove azr:boss_hp_bar
 bossbar remove azr:boss_hp_bar_2
 bossbar remove azr:boss_hp_bar_3
 bossbar remove azr:boss_hp_bar_assassin
+bossbar remove azr:boss_hp_bar_blaze
 bossbar remove azr:boss_hp_bar_centurion
 bossbar remove azr:boss_hp_bar_diesel
 bossbar remove azr:boss_hp_bar_legate
