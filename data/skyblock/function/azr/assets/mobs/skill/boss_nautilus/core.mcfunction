@@ -1,16 +1,27 @@
 
 scoreboard players add @s AzrEntityTimer 1
 
+execute if score @s AzrEntityTimer matches 71..1999 run scoreboard players add @s rng9 1
+execute if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:renegade music @s ~ ~ ~ 0.65
+execute if score @s rng9 matches 2860.. run scoreboard players set @s rng9 0
 
-execute if score @s AzrEntityTimer matches 80.. run scoreboard players add @s rng11 1
+execute if score @s AzrEntityTimer matches 1 at @s unless entity @a[tag=azrPlayer,distance=..9] run effect give @s resistance infinite 4 true
+execute if score @s AzrEntityTimer matches 72 at @s unless entity @a[tag=azrPlayer,distance=..9] run effect clear @s resistance
+execute if score @s AzrEntityTimer matches ..70 at @s if entity @a[tag=azrPlayer,distance=..9] run scoreboard players set @s AzrEntityTimer 71
 
+execute if score @s AzrEntityTimer matches 70 run scoreboard players set @s AzrEntityTimer 69
+
+execute if score @s AzrEntityTimer matches 72 positioned -79579 -51 -1 run bossbar add azr:boss_hp_bar_nautilus "源于污浊的灭尽识果 - 亡灵赫螺"
+execute if score @s AzrEntityTimer matches 72 positioned -79579 -51 -1 run bossbar set azr:boss_hp_bar_nautilus color red
+execute if score @s AzrEntityTimer matches 72 positioned -79579 -51 -1 run bossbar set azr:boss_hp_bar_nautilus max 400
+execute if score @s AzrEntityTimer matches 72 positioned -79579 -51 -1 run bossbar set azr:boss_hp_bar_nautilus players @a[tag=azrShowDialog]
 
 #EVENT
 
 
 
-execute positioned -79732 186 -757 as @s store result score @s Health run data get entity @s Health
-execute positioned -79732 186 -757 store result bossbar azr:boss_hp_bar_nautilus value run scoreboard players get @s Health
+execute positioned -79579 -51 -1 as @s store result score @s Health run data get entity @s Health
+execute positioned -79579 -51 -1 store result bossbar azr:boss_hp_bar_nautilus value run scoreboard players get @s Health
 
 
 execute as @n[type=arrow,distance=..20] at @s run particle white_smoke ~ ~ ~ 0 0 0 0.05 7
