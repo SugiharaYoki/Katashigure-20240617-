@@ -5,7 +5,7 @@
       "rolls": {
         "type": "minecraft:uniform",
         "min": 6,
-        "max": 10
+        "max": 18
       },
       "entries": [
         {
@@ -180,7 +180,7 @@
     {
       "function": "minecraft:filtered",
       "conditions": [
-        {"condition": "minecraft:random_chance", "chance": 0.4}
+        {"condition": "minecraft:random_chance", "chance": 0.7}
       ],
       "item_filter": {
         "items": [
@@ -202,7 +202,7 @@
     {
       "function": "minecraft:filtered",
       "conditions": [
-        {"condition": "minecraft:random_chance", "chance": 0.4}
+        {"condition": "minecraft:random_chance", "chance": 0.7}
       ],
       "item_filter": {
         "items": [
