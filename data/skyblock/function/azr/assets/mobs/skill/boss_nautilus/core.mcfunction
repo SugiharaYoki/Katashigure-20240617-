@@ -6,7 +6,8 @@ execute if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound 
 execute if score @s rng9 matches 2860.. run scoreboard players set @s rng9 0
 
 execute if score @s AzrEntityTimer matches 1 at @s unless entity @a[tag=azrPlayer,distance=..9] run effect give @s resistance infinite 4 true
-execute if score @s AzrEntityTimer matches 72 at @s unless entity @a[tag=azrPlayer,distance=..9] run effect clear @s resistance
+execute if score @s AzrEntityTimer matches 72 at @s run effect clear @s resistance
+execute if score @s AzrEntityTimer matches 72 at @s run fill -79580 -35 17 -79578 -31 17 red_stained_glass
 execute if score @s AzrEntityTimer matches ..70 at @s if entity @a[tag=azrPlayer,distance=..9] run scoreboard players set @s AzrEntityTimer 71
 
 execute if score @s AzrEntityTimer matches 70 run scoreboard players set @s AzrEntityTimer 69
@@ -46,6 +47,4 @@ execute as @n[type=arrow,distance=..20] at @s run kill @s
     execute as @s at @s if score @s[scores={Health=..59}] rng8 matches 55..9999 run scoreboard players set @s rng8 -1
 
 
-
-#MARKER
 
