@@ -13,6 +13,14 @@ execute if entity @s[tag=ishtar_lantern_success_1] run tag @s add ishtar_lantern
 execute if entity @s[tag=ishtar_lantern_success_2] run tag @s add ishtar_lantern_SUCCESS
 execute if entity @s[tag=ishtar_lantern_success_3] run tag @s add ishtar_lantern_SUCCESS
 
+execute if entity @s[team=Team1_1] at @s unless entity @n[team=Team1_1,distance=0.1..] run tag @s add ishtar_lantern_NOTEAMMATE
+execute if entity @s[team=Team1_2] at @s unless entity @n[team=Team1_2,distance=0.1..] run tag @s add ishtar_lantern_NOTEAMMATE
+execute if entity @s[team=Team1_3] at @s unless entity @n[team=Team1_3,distance=0.1..] run tag @s add ishtar_lantern_NOTEAMMATE
+execute if entity @s[team=Team1_4] at @s unless entity @n[team=Team1_4,distance=0.1..] run tag @s add ishtar_lantern_NOTEAMMATE
+execute if entity @s[team=Team1_5] at @s unless entity @n[team=Team1_5,distance=0.1..] run tag @s add ishtar_lantern_NOTEAMMATE
+execute if entity @s[team=Team1_6] at @s unless entity @n[team=Team1_6,distance=0.1..] run tag @s add ishtar_lantern_NOTEAMMATE
+execute if entity @s[team=Team1_7] at @s unless entity @n[team=Team1_7,distance=0.1..] run tag @s add ishtar_lantern_NOTEAMMATE
+execute if entity @s[team=Team1_8] at @s unless entity @n[team=Team1_8,distance=0.1..] run tag @s add ishtar_lantern_NOTEAMMATE
 
 execute if entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=..250}] run scoreboard players add @s If_Bless37 10
 execute if entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=251..400}] run scoreboard players add @s If_Bless37 7
@@ -50,4 +58,5 @@ execute if score @s If_Bless37_change_timer matches 21.. run scoreboard players 
 tag @s[tag=ishtar_lantern_SUCCESS] remove ishtar_lantern_success_1
 tag @s[tag=ishtar_lantern_SUCCESS] remove ishtar_lantern_success_2
 tag @s[tag=ishtar_lantern_SUCCESS] remove ishtar_lantern_success_3
+tag @s[tag=ishtar_lantern_SUCCESS] remove ishtar_lantern_NOTEAMMATE
 tag @s[tag=ishtar_lantern_SUCCESS] remove ishtar_lantern_SUCCESS

@@ -24,5 +24,13 @@ execute if entity @s[team=Team1_5] run effect give @a[team=Team1_5,distance=..6.
 execute if entity @s[team=Team1_6] run effect give @a[team=Team1_6,distance=..6.1] speed 3 0 true
 execute if entity @s[team=Team1_7] run effect give @a[team=Team1_7,distance=..6.1] speed 3 0 true
 execute if entity @s[team=Team1_8] run effect give @a[team=Team1_8,distance=..6.1] speed 3 0 true
+execute if entity @s[team=Team1_1,tag=ishtar_lantern_NOTEAMMATE] run effect give @a[team=Team1_1,distance=..6.1] speed 6 0 true
+execute if entity @s[team=Team1_2,tag=ishtar_lantern_NOTEAMMATE] run effect give @a[team=Team1_2,distance=..6.1] speed 6 0 true
+execute if entity @s[team=Team1_3,tag=ishtar_lantern_NOTEAMMATE] run effect give @a[team=Team1_3,distance=..6.1] speed 6 0 true
+execute if entity @s[team=Team1_4,tag=ishtar_lantern_NOTEAMMATE] run effect give @a[team=Team1_4,distance=..6.1] speed 6 0 true
+execute if entity @s[team=Team1_5,tag=ishtar_lantern_NOTEAMMATE] run effect give @a[team=Team1_5,distance=..6.1] speed 6 0 true
+execute if entity @s[team=Team1_6,tag=ishtar_lantern_NOTEAMMATE] run effect give @a[team=Team1_6,distance=..6.1] speed 6 0 true
+execute if entity @s[team=Team1_7,tag=ishtar_lantern_NOTEAMMATE] run effect give @a[team=Team1_7,distance=..6.1] speed 6 0 true
+execute if entity @s[team=Team1_8,tag=ishtar_lantern_NOTEAMMATE] run effect give @a[team=Team1_8,distance=..6.1] speed 6 0 true
 
 scoreboard players remove @s If_Bless37 250
