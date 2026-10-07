@@ -1,6 +1,7 @@
 execute if entity @s[level=8..] run playsound entity.shulker.open ambient @a ~ ~1 ~ 2 0.6
 execute if entity @s[level=8..] run playsound block.shulker_box.close ambient @a ~ ~1 ~ 2 0.8
 execute if entity @s[level=8..] run playsound entity.shulker.ambient ambient @a ~ ~1 ~ 2 0.8
+execute if entity @s[level=8..] run fill ~4 ~4 ~4 ~-4 ~-4 ~-4 air replace gray_shulker_box destroy
 execute if entity @s[level=8..] run fill ~4 ~4 ~4 ~-4 ~-4 ~-4 gray_shulker_box{LootTable:"skyblock:building_box"} replace #shulker_boxes
 
 
