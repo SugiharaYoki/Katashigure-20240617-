@@ -1,0 +1,307 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 6,
+        "max": 10
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cobblestone",
+          "weight": 60,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 16, "max": 32}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bamboo_planks",
+          "weight": 60,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 16, "max": 32}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_bars",
+          "weight": 60,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 4, "max": 12}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_block",
+          "weight": 60,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 3}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "weight": 25,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 5}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_ingot",
+          "weight": 25,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 3, "max": 8}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:quartz",
+          "weight": 25,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 2, "max": 6}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bucket",
+          "weight": 25
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_pickaxe",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_shovel",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_axe",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rail",
+          "weight": 8,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 4, "max": 12}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:minecart",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_helmet",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_chestplate",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_leggings",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:copper_boots",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:hay_block",
+          "weight": 2,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 3}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:melon",
+          "weight": 2,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 3}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pumpkin",
+          "weight": 2,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 3}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:verdant_froglight",
+          "weight": 2,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:redstone_block",
+          "weight": 2,
+          "functions": [
+            {"function": "minecraft:set_count", "count": {"type": "minecraft:uniform", "min": 1, "max": 2}}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lingering_potion",
+          "weight": 2,
+          "functions": [
+            {"function": "minecraft:set_potion", "id": "minecraft:weakness"}
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lingering_potion",
+          "weight": 2,
+          "functions": [
+            {"function": "minecraft:set_potion", "id": "minecraft:poison"}
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": [
+    {
+      "function": "minecraft:filtered",
+      "conditions": [
+        {"condition": "minecraft:random_chance", "chance": 0.4}
+      ],
+      "item_filter": {
+        "items": [
+          "minecraft:copper_pickaxe",
+          "minecraft:copper_shovel",
+          "minecraft:copper_axe"
+        ]
+      },
+      "on_pass": {
+        "function": "minecraft:enchant_randomly",
+        "options": [
+          "minecraft:smite",
+          "minecraft:bane_of_arthropods",
+          "minecraft:looting"
+        ],
+        "only_compatible": false
+      }
+    },
+    {
+      "function": "minecraft:filtered",
+      "conditions": [
+        {"condition": "minecraft:random_chance", "chance": 0.4}
+      ],
+      "item_filter": {
+        "items": [
+          "minecraft:copper_helmet",
+          "minecraft:copper_chestplate",
+          "minecraft:copper_leggings",
+          "minecraft:copper_boots"
+        ]
+      },
+      "on_pass": {
+        "function": "minecraft:enchant_randomly",
+        "options": [
+          "minecraft:blast_protection",
+          "minecraft:projectile_protection",
+          "minecraft:unbreaking",
+          "minecraft:swift_sneak"
+        ],
+        "only_compatible": false
+      }
+    },
+    {
+      "function": "minecraft:filtered",
+      "item_filter": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {"enchantments": "minecraft:smite", "levels": {"min": 1}}
+          ]
+        }
+      },
+      "on_pass": {
+        "function": "minecraft:set_enchantments",
+        "enchantments": {
+          "minecraft:smite": {"type": "minecraft:uniform", "min": 3, "max": 5}
+        }
+      }
+    },
+    {
+      "function": "minecraft:filtered",
+      "item_filter": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {"enchantments": "minecraft:bane_of_arthropods", "levels": {"min": 1}}
+          ]
+        }
+      },
+      "on_pass": {
+        "function": "minecraft:set_enchantments",
+        "enchantments": {
+          "minecraft:bane_of_arthropods": {"type": "minecraft:uniform", "min": 3, "max": 5}
+        }
+      }
+    },
+    {
+      "function": "minecraft:filtered",
+      "item_filter": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {"enchantments": "minecraft:looting", "levels": {"min": 1}}
+          ]
+        }
+      },
+      "on_pass": {
+        "function": "minecraft:set_enchantments",
+        "enchantments": {
+          "minecraft:looting": 2
+        }
+      }
+    },
+    {
+      "function": "minecraft:filtered",
+      "item_filter": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {"enchantments": "minecraft:blast_protection", "levels": {"min": 1}}
+          ]
+        }
+      },
+      "on_pass": {
+        "function": "minecraft:set_enchantments",
+        "enchantments": {
+          "minecraft:blast_protection": {"type": "minecraft:uniform", "min": 2, "max": 3}
+        }
+      }
+    },
+    {
+      "function": "minecraft:filtered",
+      "item_filter": {
+        "predicates": {
+          "minecraft:enchantments": [
+            {"enchantments": "minecraft:projectile_protection", "levels": {"min": 1}}
+          ]
+        }
+      },
+      "on_pass": {
+        "function": "minecraft:set_enchantments",
+        "enchantments": {
+          "minecraft:projectile_protection": {"type": "minecraft:uniform", "min": 2, "max": 3}
+        }
+      }
+    }
+  ]
+}
