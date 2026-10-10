@@ -11,7 +11,7 @@ execute if entity @s[tag=AzrAmulet_WaterWade_success] run tag @s add AzrAmulet_W
 execute if entity @s[tag=AzrAmulet_WaterWade_sprinted] unless block ~ ~ ~ #skyblock:water run tag @s remove AzrAmulet_WaterWade_sprinted
 
 execute if items entity @s container.* *[custom_data~{azr_amulet_dash_master:1b}] run scoreboard players add @s AzrSariel_Amulet_DashMaster_timer 1
-execute if score @s AzrSariel_Amulet_DashMaster_timer matches 60..62 run tag @s remove AzrAmulet_WaterWade_sprinted
+execute if score @s AzrSariel_Amulet_DashMaster_timer matches 100..102 run tag @s remove AzrAmulet_WaterWade_sprinted
 
 tag @s remove AzrAmulet_WaterWade_success
 
