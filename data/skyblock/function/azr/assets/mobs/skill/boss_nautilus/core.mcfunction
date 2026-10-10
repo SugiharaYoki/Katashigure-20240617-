@@ -42,6 +42,10 @@ execute as @n[type=arrow,distance=..20] at @s run kill @s
     execute as @s at @s if score @s[scores={rng2=2..4}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_nautilus/attack_water_wave
     execute as @s at @s if score @s[scores={rng2=5}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_nautilus/attack_pillar
 
+    execute as @s at @s if score @s[scores={rng2=1}] rng8 matches 55 facing entity @p[tag=azrPlayer] feet rotated ~ 0 positioned 0.0 0 0.0 run summon marker ^ ^0.01 ^0.3 {Tags:["AzrielMob_move_marker"]}
+    execute as @s at @s if score @s[scores={rng2=1}] rng8 matches 55 run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_move_marker] Pos
+    execute as @s at @s if score @s[scores={rng2=1}] rng8 matches 55 run kill @e[type=marker,tag=AzrielMob_move_marker]
+
     execute as @s at @s if score @s[scores={Health=301..}] rng8 matches 80..9999 run scoreboard players set @s rng2 0
     execute as @s at @s if score @s[scores={Health=301..}] rng8 matches 80..9999 run scoreboard players set @s rng8 -1
     execute as @s at @s if score @s[scores={Health=200..300}] rng8 matches 70..9999 run scoreboard players set @s rng2 0
