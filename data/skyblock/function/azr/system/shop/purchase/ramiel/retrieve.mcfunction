@@ -47,6 +47,7 @@ execute if entity @s[tag=AZS_BoSB22] if score @s Azr_Shop matches 8432338 run fu
 execute if entity @s[tag=AZS_BoSB23] if score @s Azr_Shop matches 8432333 run function skyblock:azr/assets/items/amulets/transportation
 execute if entity @s[tag=AZS_BoSB12] if score @s Azr_Shop matches 8432343 run function skyblock:azr/assets/items/amulets/front_slash
 execute if entity @s[tag=AZS_BoSB19] if score @s Azr_Shop matches 8432344 run function skyblock:azr/assets/items/amulets/water_ripple
+execute if entity @s[tag=AZS_BoSB14] if score @s Azr_Shop matches 8432346 run function skyblock:azr/assets/items/amulets/dash_master
 
 execute if entity @s[tag=AZS_BoSShop01] if score @s Azr_Shop matches 8432334 run function skyblock:azr/assets/items/amulets/pollution_balancer
 execute if entity @s[tag=AZS_BoSShop02] if score @s Azr_Shop matches 8432335 run function skyblock:azr/assets/items/amulets/pollution_diffuser

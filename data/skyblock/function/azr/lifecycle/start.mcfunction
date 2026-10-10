@@ -168,6 +168,7 @@ scoreboard objectives add AzrSariel_Amulet_MagicalCurrentLevel dummy
 scoreboard objectives add AzrSariel_Amulet_LaserDrag_timer dummy
 scoreboard objectives add AzrSariel_Amulet_WindShear_timer dummy
 scoreboard objectives add AzrSariel_Amulet_WaterRipple_cooldown dummy
+scoreboard objectives add AzrSariel_Amulet_DashMaster_timer dummy
 
 #PVP
 scoreboard objectives add AzrMinigame_PVP_leaderboard dummy

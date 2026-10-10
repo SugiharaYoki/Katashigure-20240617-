@@ -12,8 +12,20 @@ execute if score @s rng1 matches 2 positioned -79579 -44 -1 as @n[type=zombie_na
 execute if score @s rng1 matches 70 run scoreboard players set @s rng1 69
 
 
+execute if score @s rng1 matches 500 run scoreboard players set @s rng1 499
+execute if score @s rng1 matches 100..500 unless entity @n[type=zombie_nautilus,distance=..70] run scoreboard players set @s rng1 501
 
 
+execute if score @s rng1 matches 501 run stopsound @a[tag=azrShowDialog]
+execute if score @s rng1 matches 501 run playsound minecraft:block.beacon.deactivate block @a ~ ~ ~ 10 0.7
+execute if score @s rng1 matches 501 run title @a[tag=azrShowDialog] actionbar {text:"Boss Annihilated",color:"green"}
+execute if score @s rng1 matches 501 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/sub_boss_nautilus
+execute if score @s rng1 matches 501 run bossbar remove azr:boss_hp_bar_nautilus
+execute if score @s rng1 matches 501 run fill -79578 -35 17 -79580 -31 17 air destroy
+execute if score @s rng1 matches 501 as @a[tag=azrPlayer,tag=!AZS_BoSB14] at @s run function skyblock:azr/assets/items/amulets/dash_master
+execute if score @s rng1 matches 501 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB14
+execute if score @s rng1 matches 501 as @a[tag=azrPlayer] at @s run give @s emerald 20
+execute if score @s rng1 matches 501 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
 
 
 #out
