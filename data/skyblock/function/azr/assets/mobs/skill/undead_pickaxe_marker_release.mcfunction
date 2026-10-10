@@ -24,7 +24,9 @@ execute if score @s rng1 matches 8.. at @s positioned ~ ~0 ~ as @a[distance=0..0
 execute if score @s rng1 matches 8.. at @s positioned ~ ~1 ~ as @a[distance=0..0.6] at @s run damage @s 8 falling_stalactite
 execute if score @s rng1 matches 8.. at @s positioned ~ ~2 ~ as @a[distance=0..0.6] at @s run damage @s 8 falling_stalactite
 execute if score @s rng1 matches 8.. at @s positioned ~ ~3 ~ as @a[distance=0..0.6] at @s run damage @s 8 falling_stalactite
-execute if score @s rng1 matches 8.. at @s run playsound block.anvil.place hostile @a ~ ~ ~ 0.8 1.3
+execute if score @s rng1 matches 8.. at @s if block ~ ~ ~ #skyblock:water run particle bubble_column_up ~ ~2 ~ 0.1 1.5 0.1 0 18
+execute if score @s rng1 matches 8.. at @s if block ~ ~ ~ #skyblock:water run playsound entity.player.splash.high_speed hostile @a ~ ~ ~ 0.8 0.85
+execute if score @s rng1 matches 8.. at @s unless block ~ ~ ~ #skyblock:water run playsound block.anvil.place hostile @a ~ ~ ~ 0.8 1.3
 execute if score @s rng1 matches 8.. at @s run particle flash{color:[1.000,1.000,1.000,1.00]} ~ ~ ~ 0 0 0 0 1
 
 execute if score @s rng1 matches 8.. run kill @s

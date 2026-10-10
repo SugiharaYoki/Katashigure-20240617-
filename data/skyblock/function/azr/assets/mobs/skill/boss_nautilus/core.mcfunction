@@ -19,6 +19,8 @@ execute if score @s AzrEntityTimer matches 72 positioned -79579 -51 -1 run bossb
 
 #EVENT
 
+execute if score @s AzrEntityTimer matches 72.. run particle minecraft:warped_spore ~ ~ ~ 10 0 10 0 30
+execute if score @s AzrEntityTimer matches 72.. as @a[tag=azrPlayer,distance=..30] at @s unless block ~ ~ ~ #skyblock:water run effect give @s wither 3 1 false
 
 
 execute positioned -79579 -51 -1 as @s store result score @s Health run data get entity @s Health
@@ -33,9 +35,11 @@ execute as @n[type=arrow,distance=..20] at @s run kill @s
 
     execute as @s[scores={AzrEntityTimer=80..}] at @s run scoreboard players add @s rng8 1
     execute as @s at @s if score @s rng8 matches 1 store result score @s rng2 run random value 1..4
+    execute as @s at @s if score @s[scores={Health=..199}] rng8 matches 1 store result score @s rng2 run random value 1..5
     
     execute as @s at @s if score @s[scores={rng2=1}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_nautilus/attack_smoke
     execute as @s at @s if score @s[scores={rng2=2..4}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_nautilus/attack_water_wave
+    execute as @s at @s if score @s[scores={rng2=5}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_nautilus/attack_pillar
 
     execute as @s at @s if score @s[scores={Health=301..}] rng8 matches 80..9999 run scoreboard players set @s rng2 0
     execute as @s at @s if score @s[scores={Health=301..}] rng8 matches 80..9999 run scoreboard players set @s rng8 -1
