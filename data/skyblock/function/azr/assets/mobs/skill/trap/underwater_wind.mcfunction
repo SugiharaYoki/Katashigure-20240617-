@@ -24,7 +24,7 @@ execute if score @s rng1 matches 36..159 at @s positioned ~-0.5 ~-0.5 ~-0.5 if e
 # 命中：音效、爆裂粒子、对碰撞区域内的玩家造成伤害
 execute if entity @s[tag=AzrielMob_trap_underwater_wind_hit] at @s run playsound minecraft:entity.wind_charge.wind_burst hostile @a[distance=..32] ~ ~ ~ 1 1
 execute if entity @s[tag=AzrielMob_trap_underwater_wind_hit] at @s run particle minecraft:small_gust ~ ~ ~ 0.4 0.4 0.4 0.05 25
-execute if entity @s[tag=AzrielMob_trap_underwater_wind_hit] at @s positioned ~-0.5 ~-0.5 ~-0.5 as @a[dx=0,dy=0,dz=0] run damage @s 10 minecraft:mob_attack
+execute if entity @s[tag=AzrielMob_trap_underwater_wind_hit] at @s positioned ~-0.5 ~-0.5 ~-0.5 as @a[dx=0,dy=0,dz=0] run damage @s 14 minecraft:mob_attack
 
 # 命中，或生成满 7 秒，或离开水中时销毁
 execute if entity @s[tag=AzrielMob_trap_underwater_wind_hit] run kill @s
