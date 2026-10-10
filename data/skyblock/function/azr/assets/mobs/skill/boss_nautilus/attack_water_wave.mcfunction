@@ -9,8 +9,10 @@ execute if score @s rng8 matches 15 facing entity @p[tag=azrPlayer] feet rotated
 
 
 execute if score @s rng8 matches 14 as @s at @s run function skyblock:azr/assets/mobs/trap_underwater_wind
+execute if score @s[scores={Health=..100}] rng8 matches 14 as @s at @s positioned ^3 ^ ^ run function skyblock:azr/assets/mobs/trap_underwater_wind
+execute if score @s[scores={Health=..100}] rng8 matches 14 as @s at @s positioned ^-3 ^ ^ run function skyblock:azr/assets/mobs/trap_underwater_wind
 execute if score @s[scores={Health=..330}] rng8 matches 19 as @s at @s run function skyblock:azr/assets/mobs/trap_underwater_wind
-execute if score @s[scores={Health=..170}] rng8 matches 24 as @s at @s run function skyblock:azr/assets/mobs/trap_underwater_wind
+execute if score @s[scores={Health=..250}] rng8 matches 24 as @s at @s run function skyblock:azr/assets/mobs/trap_underwater_wind
 
 
 
