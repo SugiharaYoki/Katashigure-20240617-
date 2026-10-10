@@ -7,6 +7,7 @@ execute if score @s rng1 matches 2 positioned -79575 -43 -1 run function skybloc
 execute if score @s rng1 matches 2 positioned -79583 -43 -1 run function skyblock:azr/assets/mobs/nautilus
 
 execute if score @s rng1 matches 2 positioned -79583 -43 -1 as @e[type=nautilus,distance=..50] at @s run damage @s 0 generic by @n[type=zombie_nautilus,distance=..50]
+execute if score @s rng1 matches 2 positioned -79579 -44 -1 as @n[type=zombie_nautilus,distance=..50] at @s run tp @s -79579 -44 -1
 
 execute if score @s rng1 matches 70 run scoreboard players set @s rng1 69
 

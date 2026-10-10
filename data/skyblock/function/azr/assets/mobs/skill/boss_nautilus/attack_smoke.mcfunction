@@ -13,8 +13,9 @@ execute if score @s rng8 matches 23 facing entity @p[tag=azrPlayer] feet rotated
 execute if score @s rng8 matches 23 facing entity @p[tag=azrPlayer] feet rotated ~ 0 run kill @e[type=marker,tag=AzrielMob_move_marker]
 
 
-execute if score @s rng8 matches 23 as @s at @s run particle squid_ink ~ ~0.3 ~ 0.8 0.8 0.8 0.12 25 force
-execute if score @s rng8 matches 23 as @s at @s run particle squid_ink ~ ~0.3 ~ 0.8 0.8 0.8 0.18 17 force
+execute if score @s rng8 matches 23 as @s at @s run particle campfire_cosy_smoke ~ ~0.3 ~ 0.8 0.8 0.8 0.02 25 force
+execute if score @s rng8 matches 23 as @s at @s run particle squid_ink ~ ~0.3 ~ 0.8 0.8 0.8 0.07 17 force
+execute if score @s rng8 matches 23 as @s at @s run particle squid_ink ~ ~0.3 ~ 0.8 0.8 0.8 0.18 26 force
 execute if score @s rng8 matches 23 as @s at @s run effect give @a[distance=0..2.0,gamemode=adventure] blindness 3 0 false
 execute if score @s rng8 matches 23 as @s at @s run effect give @a[distance=0..3.0,gamemode=adventure] blindness 2 0 false
 
