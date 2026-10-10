@@ -98,7 +98,7 @@ execute if score stage_main_thread AzrTimerStack matches 200 positioned -79579 -
 execute if score stage_main_thread AzrTimerStack matches 200 positioned -79586 -48 77 run function skyblock:azr/assets/mobs/undead_shadow
 execute if score stage_main_thread AzrTimerStack matches 200 positioned -79586 -48 77 run function skyblock:azr/assets/mobs/undead_shadow
 
-
+execute if score stage_main_thread AzrTimerStack matches 200 run stopsound @a[tag=azrShowDialog] * minecraft:ainov
 execute if score stage_main_thread AzrTimerStack matches 200 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..41}] Azr_skillPoints 42
 execute if score stage_main_thread AzrTimerStack matches 200 run scoreboard players set stage Azr_system 94
 
