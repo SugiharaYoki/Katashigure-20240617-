@@ -1,6 +1,6 @@
 scoreboard players add @s rng1 1
 
-execute if score @s rng1 matches 2 positioned -79579 -51 -1 run function skyblock:azr/assets/mobs/skill/boss_nautilus/summon
+execute if score @s rng1 matches 2 positioned -79579 -44 -1 run function skyblock:azr/assets/mobs/skill/boss_nautilus/summon
 execute if score @s rng1 matches 2 positioned -79575 -43 -1 run function skyblock:azr/assets/mobs/guardian
 execute if score @s rng1 matches 2 positioned -79583 -43 -1 run function skyblock:azr/assets/mobs/guardian
 
