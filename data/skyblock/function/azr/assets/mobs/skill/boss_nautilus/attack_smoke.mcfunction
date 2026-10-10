@@ -8,7 +8,7 @@ execute if score @s rng8 matches 7 facing entity @p[tag=azrPlayer] feet rotated 
 
 
 execute if score @s rng8 matches 23 facing entity @p[tag=azrPlayer] feet rotated ~ 0 run playsound entity.zombie_nautilus.dash hostile @a ~ ~ ~ 1 0.9
-execute if score @s rng8 matches 23 facing entity @p[tag=azrPlayer] feet rotated ~ 0 positioned 0.0 0 0.0 run summon marker ^ ^0.01 ^-1.1 {Tags:["AzrielMob_move_marker"]}
+execute if score @s rng8 matches 23 facing entity @p[tag=azrPlayer] feet rotated ~ 0 positioned 0.0 0 0.0 run summon marker ^ ^0.01 ^-0.7 {Tags:["AzrielMob_move_marker"]}
 execute if score @s rng8 matches 23 facing entity @p[tag=azrPlayer] feet rotated ~ 0 run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_move_marker] Pos
 execute if score @s rng8 matches 23 facing entity @p[tag=azrPlayer] feet rotated ~ 0 run kill @e[type=marker,tag=AzrielMob_move_marker]
 
