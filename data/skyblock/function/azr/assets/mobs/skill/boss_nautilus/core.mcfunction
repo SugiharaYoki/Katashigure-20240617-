@@ -22,6 +22,7 @@ execute if score @s AzrEntityTimer matches 72 positioned -79579 -51 -1 run bossb
 execute if score @s AzrEntityTimer matches 72.. run particle minecraft:warped_spore ~ ~ ~ 10 0 10 0 30
 execute if score @s AzrEntityTimer matches 72.. as @a[tag=azrPlayer,distance=..30] at @s unless block ~ ~ ~ #skyblock:water run effect give @s wither 3 1 false
 
+execute if score @s AzrEntityTimer matches 999..3000 run scoreboard players set @s AzrEntityTimer 990
 
 execute positioned -79579 -51 -1 as @s store result score @s Health run data get entity @s Health
 execute positioned -79579 -51 -1 store result bossbar azr:boss_hp_bar_nautilus value run scoreboard players get @s Health
