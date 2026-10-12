@@ -1082,6 +1082,9 @@ item replace block -79683 -50 59 container.14 with resin_clump 2
 #Stage Murk
 setblock -79765 -44 102 minecraft:birch_button[facing=west,face=floor]
 
+#单行快捷通道
+setblock -79626 -41 89 air
+setblock -79626 -41 89 lever[facing=south,face=wall]
 
 
 # ↓↓ 待修改 ↓↓
