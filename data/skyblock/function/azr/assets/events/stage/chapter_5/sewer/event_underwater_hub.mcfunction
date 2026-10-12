@@ -55,6 +55,16 @@ execute if score @s rng1 matches 208 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 222 run title @a[tag=azrShowDialog] actionbar {text:"并非如此……彼时，该为属于我的终末……",color:"aqua"}
 execute if score @s rng1 matches 222 run tellraw @a[tag=azrShowDialog] {text:"并非如此……彼时，该为属于我的终末……",color:"aqua"}
 
+execute if score @s rng1 matches 299 run scoreboard players set @s rng1 298
+execute if score @s rng1 matches ..299 positioned -79676 -10 86 if entity @a[tag=azrPlayer,distance=..6] run scoreboard players set @s rng1 301
 
-
+execute if score @s rng1 matches 305 run title @a[tag=azrShowDialog] actionbar {text:"爱理莎，你思考过生灵魔力的本质吗？",color:"aqua"}
+execute if score @s rng1 matches 305 run tellraw @a[tag=azrShowDialog] {text:"爱理莎，你思考过生灵魔力的本质吗？",color:"aqua"}
+execute if score @s rng1 matches 320 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“似乎，一切魔力都会被归类为‘生灵’与‘亡魂’两大类。”",color:"white"}]
+execute if score @s rng1 matches 335 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“与我隔空对话，只是为了问这么简单的问题吗？”",color:"white"}]
+execute if score @s rng1 matches 355 run title @a[tag=azrShowDialog] actionbar {text:"你是完美的生灵魔力载体，却又本身是亡魂。这使得你成为了特殊个体。",color:"aqua"}
+execute if score @s rng1 matches 355 run tellraw @a[tag=azrShowDialog] {text:"你是完美的生灵魔力载体，却又本身是亡魂。这使得你成为了特殊个体。",color:"aqua"}
+execute if score @s rng1 matches 370 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“但是按理来说，所有神庭试炼挑战者的情况基本都和我一样。”",color:"white"}]
+execute if score @s rng1 matches 385 run title @a[tag=azrShowDialog] actionbar {text:"不……你是特殊的。爱理莎，你的命格……与‘生命’这一词的本源有关。",color:"aqua"}
+execute if score @s rng1 matches 385 run tellraw @a[tag=azrShowDialog] {text:"不……你是特殊的。爱理莎，你的命格……与‘生命’这一词的本源有关。",color:"aqua"}
 
