@@ -26,8 +26,8 @@ execute if score @s rng1 matches 3 positioned -79628 -19 109 run function skyblo
 execute if score @s rng1 matches 3 positioned -79628 -19 109 run function skyblock:azr/assets/mobs/slime
 
 
-execute if score @s rng1 matches 3 run title @a[tag=azrShowDialog] actionbar {text:"你在丛林时，或许已经见过类似的构造……",color:"aqua"}
-execute if score @s rng1 matches 3 run tellraw @a[tag=azrShowDialog] {text:"你在丛林时，或许已经见过类似的构造……",color:"aqua"}
+execute if score @s rng1 matches 3 run title @a[tag=azrShowDialog] actionbar {text:"你在丛林时，或许已经见过类似的建筑构造……",color:"aqua"}
+execute if score @s rng1 matches 3 run tellraw @a[tag=azrShowDialog] {text:"你在丛林时，或许已经见过类似的建筑构造……",color:"aqua"}
 execute if score @s rng1 matches 53 run title @a[tag=azrShowDialog] actionbar {text:"没错……神庭的一切，都是无价值的重复……我们的生命，亦是如此……",color:"aqua"}
 execute if score @s rng1 matches 53 run tellraw @a[tag=azrShowDialog] {text:"没错……神庭的一切，都是无价值的重复……我们的生命，亦是如此……",color:"aqua"}
 execute if score @s rng1 matches 103 run title @a[tag=azrShowDialog] actionbar {text:"这正是为何，世界需要你……我会帮助你改变世界……",color:"aqua"}
