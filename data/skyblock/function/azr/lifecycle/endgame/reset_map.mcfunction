@@ -1086,6 +1086,10 @@ setblock -79765 -44 102 minecraft:birch_button[facing=west,face=floor]
 setblock -79626 -41 89 air
 setblock -79626 -41 89 lever[facing=south,face=wall]
 
+setblock -79621 -42 99 waxed_oxidized_copper_chest[facing=west]{Inventory:[]}
+item replace block -79621 -42 99 container.12 with resin_clump 2
+item replace block -79621 -42 99 container.14 with emerald 3
+
 
 # ↓↓ 待修改 ↓↓
 
