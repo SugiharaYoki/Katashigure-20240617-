@@ -107,7 +107,7 @@ execute as @s[scores={rng1=2318}] run tellraw @a[tag=azrShowDialog] [{text:"你�
 execute as @s[scores={rng1=2330}] run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“而且并不是被魔界给算计的。真正一直在利用我的人，恐怕是神庭的那些天使。”",color:"white"}]
 
 execute as @s[scores={rng1=2001}] run fill -79392 26 -349 -79394 27 -349 air
-
+execute as @s[scores={rng1=2001}] run fill -79533 26 -405 -79533 27 -406 air
 
 execute as @s[scores={rng1=2999..5000}] run scoreboard players set @s rng1 4999
 execute as @s[scores={rng1=..5000}] positioned -79393 26 -340 if entity @a[tag=azrPlayer,distance=..6] run scoreboard players set @s rng1 5001
