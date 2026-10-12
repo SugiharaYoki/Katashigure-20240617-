@@ -41,12 +41,6 @@ execute if score @s rng1 matches 208 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 222 run title @a[tag=azrShowDialog] actionbar {text:"并非如此……彼时，该为属于我的终末……",color:"aqua"}
 execute if score @s rng1 matches 222 run tellraw @a[tag=azrShowDialog] {text:"并非如此……彼时，该为属于我的终末……",color:"aqua"}
 
-#音效
-scoreboard players add @s rng12 1
-execute if score @s rng12 matches 30 positioned -79724 -6 73 run playsound minecraft:ambient.basalt_deltas.additions block @a ~ ~ ~ 6 0.8
-execute if score @s rng12 matches 30 positioned -79724 -6 73 run playsound minecraft:ambient.basalt_deltas.additions block @a ~ ~ ~ 6 0.8
-execute if score @s rng12 matches 30 positioned -79724 -6 73 run playsound minecraft:ambient.basalt_deltas.additions block @a ~ ~ ~ 6 0.8
-execute if score @s rng12 matches 100 store result score @s rng12 run random value -300..-200
 
 
 
