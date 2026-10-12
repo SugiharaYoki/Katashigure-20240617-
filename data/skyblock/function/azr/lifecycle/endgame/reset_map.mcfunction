@@ -1090,6 +1090,14 @@ setblock -79621 -42 99 waxed_oxidized_copper_chest[facing=west]{Inventory:[]}
 item replace block -79621 -42 99 container.12 with resin_clump 2
 item replace block -79621 -42 99 container.14 with emerald 3
 
+#水下枢纽
+setblock -79626 -19 107 waxed_oxidized_copper_chest[facing=west]{Inventory:[]}
+item replace block -79626 -19 107 container.12 with cooked_beef 2
+item replace block -79626 -19 107 container.14 with cooked_beef 1
+
+
+
+
 
 # ↓↓ 待修改 ↓↓
 
