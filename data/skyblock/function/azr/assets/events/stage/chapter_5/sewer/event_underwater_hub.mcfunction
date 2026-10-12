@@ -31,6 +31,9 @@ execute if score @s rng1 matches 3 positioned -79640 -10 104 run function skyblo
 execute if score @s rng1 matches 3 positioned -79644 -12 132 run function skyblock:azr/assets/mobs/zombie_villager_fisher
 execute if score @s rng1 matches 3 positioned -79644 -12 132 run function skyblock:azr/assets/mobs/guardian
 
+execute if score @s rng1 matches 3 positioned -79649 -10 95 run function skyblock:azr/assets/mobs/zombie_villager_armor
+execute if score @s rng1 matches 3 positioned -79649 -10 95 run function skyblock:azr/assets/mobs/zombie_villager_vine
+
 
 execute if score @s rng1 matches 3 run title @a[tag=azrShowDialog] actionbar {text:"你在丛林时，或许已经见过类似的建筑构造……",color:"aqua"}
 execute if score @s rng1 matches 3 run tellraw @a[tag=azrShowDialog] {text:"你在丛林时，或许已经见过类似的建筑构造……",color:"aqua"}
