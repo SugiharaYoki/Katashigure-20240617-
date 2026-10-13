@@ -10,16 +10,16 @@ execute if score stage_bonus_thread AzrTimerStack matches 131 run bossbar remove
 #-79952 38 199
 execute if score stage_bonus_thread AzrTimerStack matches 2 positioned -79673 -46 122 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_guardian","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score stage_bonus_thread AzrTimerStack matches 8 positioned -79670 -42 122 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_guardian","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_bonus_thread AzrTimerStack matches 22 positioned -79673 -38 122 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_guardian","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_bonus_thread AzrTimerStack matches 28 positioned -79670 -34 122 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_guardian","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_bonus_thread AzrTimerStack matches 52 positioned -79673 -30 122 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_guardian","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_bonus_thread AzrTimerStack matches 58 positioned -79670 -26 122 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_guardian","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_bonus_thread AzrTimerStack matches 72 positioned -79673 -22 122 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_guardian","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_bonus_thread AzrTimerStack matches 78 positioned -79670 -18 122 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_guardian","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 32 positioned -79673 -38 122 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_guardian","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 38 positioned -79670 -34 122 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_guardian","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 72 positioned -79673 -30 122 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_guardian","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 78 positioned -79670 -26 122 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_guardian","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 102 positioned -79673 -22 122 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_guardian","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 108 positioned -79670 -18 122 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_guardian","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
-execute if score stage_bonus_thread AzrTimerStack matches 30 positioned -79663 -18 122 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_fisher","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_bonus_thread AzrTimerStack matches 30 positioned -79663 -18 121 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_nautilus","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_bonus_thread AzrTimerStack matches 30 positioned -79663 -18 123 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_nautilus","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 50 positioned -79663 -18 122 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_fisher","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 50 positioned -79663 -18 121 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_nautilus","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_bonus_thread AzrTimerStack matches 50 positioned -79663 -18 123 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_nautilus","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 execute if score stage_bonus_thread AzrTimerStack matches 129 run scoreboard players set stage_bonus_thread AzrTimerStack 128
 execute if score stage_bonus_thread AzrTimerStack matches 127..129 positioned -79663 -18 122 unless entity @n[tag=AzrielMob_zombie_villager_fisher,distance=..15] run scoreboard players set stage_bonus_thread AzrTimerStack 130
