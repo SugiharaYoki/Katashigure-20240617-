@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "蓄水池 - 过滤沉积池",
+            "color": "green",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "我越是深入蓄水池，越是觉得这地方的建筑结构和神代茏渠十分相近。\n丛林的入口和地下水路的入口十分相似。\n管道殿堂与结构柱阵列的宽阔十分相似。\n两处过滤沉积池的位置十分相似。\n我并不清楚这些表象的背后是否存在着一套理论，使得这些“相似的结构”有其相似的必要。\n\n我需要观察：如果在这之后，我见到了如同通风管道般封闭而复杂的狭长网络，便能再次佐证我的猜想。\n神庭的建筑明明可以是任何构造，偏偏这上下紧邻的两处地点如此雷同。\n我不信这是巧合。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:blue_glazed_terracotta"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage21"
+}

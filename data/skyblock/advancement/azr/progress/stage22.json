@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "蓄水池：周而复始之支撑",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "地下水路区域存在的目的不仅是用来排水。\n但在此之上，它的存在价值依然不限于流放那些“需要”被遗忘的生命。\n这里本身就是神庭的地基，支撑着上方神界的地块。\n\n说来，魔界应该在人间的底端，而神庭理应在天上。\n既是如此，我从魔界一路攀升至此，绝对没有穿越整个地层。\n\n神庭，或许比我想的要更接近魔界——物理意义上。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:dark_prismarine"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage21"
+}
