@@ -66,7 +66,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 180..181 positioned -7
 execute if score stage_bonus_thread AzrTimerStack matches ..181 positioned -79734 175 -855 unless entity @a[tag=azrPlayer,distance=..25] run fill -79727 179 -848 -79724 175 -848 air destroy
 
 execute if score stage_bonus_thread AzrTimerStack matches 182 run title @a[tag=azrShowDialog] actionbar {text:"Extra Stage Clear",color:"green"}
-execute if score stage_bonus_thread AzrTimerStack matches 182 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_flux
+execute if score stage_bonus_thread AzrTimerStack matches 182 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_limnion
 execute if score stage_bonus_thread AzrTimerStack matches 182 run fill -79727 179 -848 -79724 175 -848 air destroy
 execute if score stage_bonus_thread AzrTimerStack matches 182 as @a[tag=azrPlayer] at @s unless entity @s[tag=AZS_BoS12] run function skyblock:azr/assets/items/amulets/water_wade
 execute if score stage_bonus_thread AzrTimerStack matches 182 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS12
