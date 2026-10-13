@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "蓄水池 - 牵引装置",
+            "color": "green",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "地下水路这片区域的性质（或者说，“第二作用”）令过滤系统需要面对的不止是漂浮垃圾。\n你总不会希望排水口被“生物”给堵住。\n他们在这里饲养了不少凶狠的护鲀，足以消灭那些误入禁止区域的小型生物。也足以给我创造不少头疼的情境。\n一旦出现了较大型的危险生物，类似此处的牵引装置便该发挥作用，将其死死困在深水之中，并放出大量护鲀进行清理攻势。\n\n若不是这台牵引装置早已罢工，我这个瓮中之鳖恐怕很难活着游出这里。\n那么话又说回来了：究竟是多么恐怖的生物，才能将这里活活破坏至停摆？\n或者，是其他力量瘫痪掉了这台装置？",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:cyan_glazed_terracotta"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage22"
+}
