@@ -26,4 +26,4 @@ bossbar remove azr:boss_hp_bar_2
 execute positioned -79762 -18 -179 run kill @n[tag=AzrielMarker_encounter,distance=0..0.5]
 fill -79651 54 -736 -79651 52 -733 air
 
-kill @n[type=minecraft:block_display,tag=raphael_wings]
+kill @e[type=minecraft:block_display,tag=raphael_wings]
