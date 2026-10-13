@@ -8,9 +8,15 @@ execute if score @s rng1 matches 3 positioned -79604 -41 105 run summon cod
 execute if score @s rng1 matches 3 positioned -79604 -41 105 run summon cod
 execute if score @s rng1 matches 3 positioned -79604 -41 105 run summon cod
 
-execute if score @s rng1 matches 3 positioned -79604 -41 105 run summon cod
-execute if score @s rng1 matches 3 positioned -79604 -41 105 run summon cod
-execute if score @s rng1 matches 3 positioned -79604 -41 105 run summon cod
+execute if score @s rng1 matches 3 positioned -79628 -26 133 run summon cod
+execute if score @s rng1 matches 3 positioned -79628 -26 133 run summon cod
+execute if score @s rng1 matches 3 positioned -79628 -26 133 run summon cod
+
+execute if score @s rng1 matches 3 positioned -79664 -12 122 run summon cod
+execute if score @s rng1 matches 3 positioned -79664 -12 122 run summon cod
+execute if score @s rng1 matches 3 positioned -79664 -12 122 run summon cod
+
+
 
 execute if score @s rng1 matches 3 positioned -79613 -31 99 run function skyblock:azr/assets/mobs/guardian
 execute if score @s rng1 matches 3 positioned -79627 -29 109 run function skyblock:azr/assets/mobs/guardian
