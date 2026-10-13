@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "灭尽识果的浊流 - 亡灵赫螺",
+            "color": "red",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "这里的水流并不稳定，无法保证所有管道都能被灌满。\n若是地势的高低差与故障的排水设施相结合，地下水路区域内很容易形成小型的孤立水体。\n其中，则很有可能与神代茏渠那儿一样出现微型生态。\n\n我原本是这么想的。\n\n但我却忘记了一件事情：这里距离神庭足够接近。他们放了太多的亡魂下来，使得这片区域的魔力整体十分阴寒。\n这就与神代茏渠纯粹且过剩的生灵魔力形成了鲜明的对比。\n在这里，生灵不会因为魔力满溢而变异。但它们可能会因为某种更加荒谬而残忍的理由，走向被污染的道路……",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:zombie_nautilus_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage22"
+}
