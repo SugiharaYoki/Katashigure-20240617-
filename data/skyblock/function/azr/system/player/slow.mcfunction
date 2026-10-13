@@ -43,6 +43,16 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_savior:1b
 execute if items entity @s weapon.offhand *[custom_data~{azr_amulet_arrow_savior:1b}] run function skyblock:azr/system/player/skills/amulet/arrow_savior_instant
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_drogue:1b}] run function skyblock:azr/system/player/skills/amulet/fire_drogue_core
 
+execute if items entity @s[tag=!AzrAmulet_extraordinary_strength] container.* *[custom_data~{azr_amulet_extraordinary_strength:1b}] if score @s player_health matches ..6 run attribute @s attack_damage modifier add azr_amulet:extraordinary_strength_01 3 add_value
+execute if items entity @s[tag=!AzrAmulet_extraordinary_strength] container.* *[custom_data~{azr_amulet_extraordinary_strength:1b}] if score @s player_health matches ..6 run attribute @s attack_speed modifier add azr_amulet:extraordinary_strength_02 0.2 add_value
+execute if items entity @s[tag=!AzrAmulet_extraordinary_strength] container.* *[custom_data~{azr_amulet_extraordinary_strength:1b}] if score @s player_health matches ..6 run tag @s add AzrAmulet_extraordinary_strength
+execute if entity @s[tag=AzrAmulet_extraordinary_strength] unless items entity @s container.* *[custom_data~{azr_amulet_extraordinary_strength:1b}] run attribute @s attack_damage modifier remove azr_amulet:extraordinary_strength_01
+execute if entity @s[tag=AzrAmulet_extraordinary_strength] unless items entity @s container.* *[custom_data~{azr_amulet_extraordinary_strength:1b}] run attribute @s attack_speed modifier remove azr_amulet:extraordinary_strength_02
+execute if entity @s[tag=AzrAmulet_extraordinary_strength] unless items entity @s container.* *[custom_data~{azr_amulet_extraordinary_strength:1b}] run tag @s remove AzrAmulet_extraordinary_strength
+execute if entity @s[tag=AzrAmulet_extraordinary_strength] unless score @s player_health matches ..6 run attribute @s attack_damage modifier remove azr_amulet:extraordinary_strength_01
+execute if entity @s[tag=AzrAmulet_extraordinary_strength] unless score @s player_health matches ..6 run attribute @s attack_speed modifier remove azr_amulet:extraordinary_strength_02
+execute if entity @s[tag=AzrAmulet_extraordinary_strength] unless score @s player_health matches ..6 run tag @s remove AzrAmulet_extraordinary_strength
+
 #宁芙之爱与宁芙之心
 execute if items entity @s[tag=!AzrAmulet_nymph_loved] container.* *[custom_data~{azr_amulet_nymph_love:1b}] if block ~ ~ ~ #skyblock:water run effect give @s water_breathing infinite 0 true
 execute if items entity @s[tag=!AzrAmulet_nymph_loved] container.* *[custom_data~{azr_amulet_nymph_love:1b}] if block ~ ~ ~ #skyblock:water run tag @s add AzrAmulet_nymph_loved

@@ -157,7 +157,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_water_arrow:1b}
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkern] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_tripler:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkero] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_laser_drag:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerp] CustomName set value ' √ '
-execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerq] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_extraordinary_strength:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerq] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerr] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkers] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkert] CustomName set value ' √ '
@@ -226,7 +226,7 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {text:"\n "},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkero]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432315"},hover_event:{"action":"show_text","value":{text:"Object - 攒善石板\n蹲下额外消耗2存箭量，射出三重箭、后撤步射出五重箭",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerp]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432316"},hover_event:{"action":"show_text","value":{text:"Photothermal - 淬势石板\n杖右键拖动热激光、加快索命连击充能",color:"white"}}},\
-{selector:"@n[tag=AzrRamielExStage_displaymarkerq]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432317"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerq]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432317"},hover_event:{"action":"show_text","value":{text:"Quagmire - 时穷石板\n生命值过低时获得攻击力加成",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerr]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432318"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkers]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432319"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkert]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432320"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\

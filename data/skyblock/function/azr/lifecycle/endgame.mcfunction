@@ -152,6 +152,7 @@ scoreboard objectives remove AzrSariel_Amulet_WindShear_timer
 scoreboard objectives remove AzrSariel_Amulet_WaterRipple_cooldown
 scoreboard objectives remove AzrSariel_Amulet_DashMaster_timer
 
+
 scoreboard objectives remove AzrSariel_Amulet_AxeVortex_cooldown
 scoreboard objectives remove AzrSariel_Amulet_AxeVortexDodge_cooldown
 scoreboard objectives remove AzrSariel_Amulet_RevivalStar_teleport

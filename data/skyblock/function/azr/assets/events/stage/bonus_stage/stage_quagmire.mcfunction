@@ -25,8 +25,8 @@ execute if score stage_bonus_thread AzrTimerStack matches 30 positioned -79663 -
 
 execute if score stage_bonus_thread AzrTimerStack matches 182 run title @a[tag=azrShowDialog] actionbar {text:"Extra Stage Clear",color:"green"}
 execute if score stage_bonus_thread AzrTimerStack matches 182 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_quagmire
-execute if score stage_bonus_thread AzrTimerStack matches 182 as @a[tag=azrPlayer] at @s unless entity @s[tag=AZS_BoS12] run function skyblock:azr/assets/items/amulets/water_wade
-execute if score stage_bonus_thread AzrTimerStack matches 182 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS12
+execute if score stage_bonus_thread AzrTimerStack matches 182 as @a[tag=azrPlayer] at @s unless entity @s[tag=AZS_BoS17] run function skyblock:azr/assets/items/amulets/extraordinary_strength
+execute if score stage_bonus_thread AzrTimerStack matches 182 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS17
 execute if score stage_bonus_thread AzrTimerStack matches 182 as @a[tag=azrPlayer] at @s run give @s emerald 5
 
 

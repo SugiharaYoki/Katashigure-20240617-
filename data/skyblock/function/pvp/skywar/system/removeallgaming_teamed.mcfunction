@@ -240,6 +240,8 @@ attribute @s attack_damage modifier remove azr_amulet:moss_grow_01
 attribute @s sneaking_speed modifier remove azr_amulet:moss_grow_01
 attribute @s attack_damage modifier remove azr_amulet:floating_attack_01
 
+attribute @s attack_damage modifier remove azr_amulet:extraordinary_strength_01
+attribute @s attack_speed modifier remove azr_amulet:extraordinary_strength_02
 attribute @s movement_speed modifier remove azr_amulet:flowerwallfire_01
 attribute @s movement_speed modifier remove azr_amulet:flowerwallfire_02
 attribute @s movement_speed modifier remove azr_amulet:flowerwallfire_03
