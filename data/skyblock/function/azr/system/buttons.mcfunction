@@ -32,7 +32,7 @@ execute if block -79716 175 -855 waxed_exposed_copper_chest unless items block -
 #Stage Murk
 execute if block -79765 -44 102 minecraft:birch_button[powered=true] if score stage_bonus Azr_system matches ..0 run function skyblock:azr/assets/events/stage/bonus_stage/stage_murk_prep
 #Stage Quagmire
-execute if block -79674 -61 122 waxed_exposed_copper_chest unless items block -79674 -61 122 container.13 emerald run function skyblock:azr/assets/events/stage/bonus_stage/stage_quagmire_prep
+execute if block -79674 -61 122 waxed_oxidized_copper_chest unless items block -79674 -61 122 container.13 emerald run function skyblock:azr/assets/events/stage/bonus_stage/stage_quagmire_prep
 
 
 
