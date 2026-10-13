@@ -1,6 +1,9 @@
 scoreboard players add @s rng8 1
 
+execute unless entity @a[tag=azrPlayer,distance=..6.5] run scoreboard players set @s rng8 6
+
 execute if score @s rng8 matches 7 unless block ~ ~-0.3 ~ #skyblock:water run scoreboard players set @s rng8 0
+execute if score @s rng8 matches 7.. unless block ~ ~-0.3 ~ #skyblock:water run tp @s ~ ~-0.1 ~
 execute if score @s rng8 matches 7.. run function skyblock:azr/assets/mobs/skill/boss_slime/attack_water_wave
 
 execute if score @s[scores={AzrielMobLevel=1..}] rng8 matches 93.. store result score @s rng8 run random value -20..2
