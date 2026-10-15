@@ -74,3 +74,23 @@ execute if score @s rng1 matches 370 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 385 run title @a[tag=azrShowDialog] actionbar {text:"不……你是特殊的。爱理莎，你的命格……与‘生命’这一词的本源有关。",color:"aqua"}
 execute if score @s rng1 matches 385 run tellraw @a[tag=azrShowDialog] {text:"不……你是特殊的。爱理莎，你的命格……与‘生命’这一词的本源有关。",color:"aqua"}
 
+execute if score @s rng1 matches 399 run scoreboard players set @s rng1 398
+execute if score @s rng1 matches ..399 positioned -79713 -10 53 if entity @a[tag=azrPlayer,distance=..7] run scoreboard players set @s rng1 401
+
+execute if score @s rng1 matches 401 positioned -79716 -10 57 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 401 positioned -79719 -10 52 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 401 positioned -79711 -10 48 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 401 positioned -79705 -10 54 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+
+
+
+
+
+
+
+
+
+
+
+
