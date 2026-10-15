@@ -79,6 +79,8 @@ execute if score stage_main_thread AzrTimerStack matches 245 run playsound ambie
 execute if score stage_main_thread AzrTimerStack matches 245 run playsound ambient.basalt_deltas.mood ambient @a[tag=azrShowDialog] -79745 -10 80 3 1.17
 execute if score stage_main_thread AzrTimerStack matches 245 run effect give @a[tag=azrShowDialog] darkness 4 0 true
 
+execute if score stage_main_thread AzrTimerStack matches 247 as @n[tag=AzrielNPC_focalor] at @s run tp @s -79770 -10 80 facing -79771 -10 80
+
 execute if score stage_main_thread AzrTimerStack matches 255 run title @a[tag=azrShowDialog] actionbar {text:"这是必要程序，只有通过这种方式，你才能……获取我的一切。",color:"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 255 run tellraw @a[tag=azrShowDialog] {text:"这是必要程序，只有通过这种方式，你才能……获取我的一切。",color:"aqua"}
 
