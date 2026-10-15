@@ -1,4 +1,4 @@
-function skyblock:azr/lifecycle/jump_to/ch5_start
+function skyblock:azr/lifecycle/jump_to/ch5_mid
 
 
 
@@ -82,7 +82,6 @@ execute positioned -79586 -48 77 run function skyblock:azr/assets/mobs/undead_sh
 
 
 fill -79731 -6 82 -79731 -10 78 air destroy
-
 
 
 
