@@ -4,7 +4,7 @@ execute if score @s rng11 matches ..5000 run scoreboard players set @s rng11 500
 execute if score @s rng11 matches 5001 run item replace entity @n[tag=AzrielNPC_andralune] weapon.mainhand with air
 execute if score @s rng11 matches 5001 run bossbar remove azr:boss_hp_bar_2
 execute if score @s rng11 matches 5001 positioned -79504 15 -328 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.
-execute if score @s rng11 matches 5001 positioned -79504 15 -328 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"light_purple",bold:1b},{bold: false,text:"\n“差不多是时候了，爱理莎！最后攻势！！”",color:"white"}]
+execute if score @s rng11 matches 5001 positioned -79504 15 -328 run tellraw @a[tag=azrShowDialog] [{text:"安德拉伦恩：",color:"#7d5fff",bold:1b},{bold: false,text:"\n“差不多是时候了，爱理莎！最后攻势！！”",color:"white"}]
 execute if score @s rng11 matches 5041 positioned -79504 15 -328 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“好！！”",color:"white"}]
 
 execute if score @s rng11 matches 5101 at @n[tag=AzrielNPC_andralune] run kill @e[tag=andralune_wings,distance=..10]
