@@ -70,8 +70,15 @@ execute if score stage_main_thread AzrTimerStack matches 235 run playsound ambie
 execute if score stage_main_thread AzrTimerStack matches 235 run title @a[tag=azrShowDialog] actionbar {text:"Ordination Completed",color:"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 235 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage23
 
-execute if score stage_main_thread AzrTimerStack matches 235 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..43}] Azr_skillPoints 44
-execute if score stage_main_thread AzrTimerStack matches 235 run scoreboard players set stage Azr_system 96
+execute if score stage_main_thread AzrTimerStack matches 245 run playsound ambient.basalt_deltas.mood ambient @a[tag=azrShowDialog] -79745 -10 80 3 1.17
+execute if score stage_main_thread AzrTimerStack matches 245 run playsound ambient.basalt_deltas.mood ambient @a[tag=azrShowDialog] -79745 -10 80 3 1.17
+execute if score stage_main_thread AzrTimerStack matches 245 run playsound ambient.basalt_deltas.mood ambient @a[tag=azrShowDialog] -79745 -10 80 3 1.17
+execute if score stage_main_thread AzrTimerStack matches 245 run playsound ambient.basalt_deltas.mood ambient @a[tag=azrShowDialog] -79745 -10 80 3 1.17
+execute if score stage_main_thread AzrTimerStack matches 245 run effect give @a[tag=azrShowDialog] darkness 4 0 true
+
+
+execute if score stage_main_thread AzrTimerStack matches 255 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..43}] Azr_skillPoints 44
+execute if score stage_main_thread AzrTimerStack matches 255 run scoreboard players set stage Azr_system 96
 
 
 
