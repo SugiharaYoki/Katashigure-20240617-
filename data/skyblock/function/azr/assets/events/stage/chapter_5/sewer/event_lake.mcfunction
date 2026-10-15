@@ -5,7 +5,7 @@ scoreboard players add @s rng1 1
 
 execute if score @s rng1 matches 2 as @n[tag=AzrielNPC_focalor] at @s run effect give @s resistance infinite 4 true
 execute if score @s rng1 matches 2 as @n[tag=AzrielNPC_focalor] at @s run effect give @s regeneration infinite 4 true
-execute if score @s rng1 matches 1..50 as @n[tag=AzrielNPC_focalor] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+execute if score @s rng1 matches 1..200 as @n[tag=AzrielNPC_focalor] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
 execute if score @s rng1 matches 3 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“你终于到我身旁了，爱理莎。”",color:"white"}]
 
