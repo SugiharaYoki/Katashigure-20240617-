@@ -34,6 +34,8 @@ execute if score @s rng1 matches 198 as @n[tag=AzrielNPC_focalor] at @s run part
 execute if score @s rng1 matches 198 as @n[tag=AzrielNPC_focalor] at @s run tp @s -79772 0 80
 
 
+execute if score @s rng1 matches 198 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..47}] Azr_skillPoints 48
+execute if score @s rng1 matches 198 run scoreboard players set stage Azr_system 98
 
 
 

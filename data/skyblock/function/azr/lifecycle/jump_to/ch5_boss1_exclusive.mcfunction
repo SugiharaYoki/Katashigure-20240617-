@@ -8,6 +8,6 @@ scoreboard players set stage_main_thread AzrTimerStack 0
 tp @a[tag=azrPlayer] -79769 199 -583 facing -79770 199 -584
 spawnpoint @a[tag=azrPlayer] -79769 199 -583
 
-execute as @a[tag=azrPlayer] run function skyblock:azr/system/player/updatespawnpoint_initialize {x:-79769,y:199,z-:-583}
+execute as @a[tag=azrPlayer] run function skyblock:azr/system/player/updatespawnpoint_initialize {x:-79769,y:199,z:-583}
 
 

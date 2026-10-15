@@ -4,6 +4,7 @@ function skyblock:azr/lifecycle/jump_to/ch5_boss1
 execute positioned -79782 195 -688 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng1 99999
 
 
+tag @a[tag=azrPlayer] add azrPlayer_respawnanchor_unlocked_sewer_a
 
 
 
