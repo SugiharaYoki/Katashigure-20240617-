@@ -41,6 +41,7 @@ execute if score @s rng1 matches 3 positioned -79649 -10 95 run function skybloc
 execute if score @s rng1 matches 3 positioned -79649 -10 95 run function skyblock:azr/assets/mobs/zombie_villager_vine
 
 
+
 execute if score @s rng1 matches 3 run title @a[tag=azrShowDialog] actionbar {text:"你在丛林时，或许已经见过类似的建筑构造……",color:"aqua"}
 execute if score @s rng1 matches 3 run tellraw @a[tag=azrShowDialog] {text:"你在丛林时，或许已经见过类似的建筑构造……",color:"aqua"}
 execute if score @s rng1 matches 53 run title @a[tag=azrShowDialog] actionbar {text:"没错……神庭的一切，都是无价值的重复……我们的生命，亦是如此……",color:"aqua"}
@@ -63,6 +64,15 @@ execute if score @s rng1 matches 222 run tellraw @a[tag=azrShowDialog] {text:"�
 
 execute if score @s rng1 matches 299 run scoreboard players set @s rng1 298
 execute if score @s rng1 matches ..299 positioned -79676 -10 86 if entity @a[tag=azrPlayer,distance=..6] run scoreboard players set @s rng1 301
+
+execute if score @s rng1 matches 301 positioned -79687 -12 53 run function skyblock:azr/assets/mobs/guardian
+execute if score @s rng1 matches 301 positioned -79668 -10 54 run function skyblock:azr/assets/mobs/pillager
+execute if score @s rng1 matches 301 positioned -79668 -10 54 run function skyblock:azr/assets/mobs/pillager
+execute if score @s rng1 matches 301 positioned -79668 -10 54 run function skyblock:azr/assets/mobs/pillager
+execute if score @s rng1 matches 301 positioned -79668 -10 54 run function skyblock:azr/assets/mobs/axe
+execute if score @s rng1 matches 301 positioned -79668 -10 54 run function skyblock:azr/assets/mobs/axe
+execute if score @s rng1 matches 301 positioned -79668 -10 54 run function skyblock:azr/assets/mobs/sword
+execute if score @s rng1 matches 301 positioned -79668 -10 54 run function skyblock:azr/assets/mobs/sword
 
 execute if score @s rng1 matches 305 run title @a[tag=azrShowDialog] actionbar {text:"爱理莎，你思考过生灵魔力的本质吗？",color:"aqua"}
 execute if score @s rng1 matches 305 run tellraw @a[tag=azrShowDialog] {text:"爱理莎，你思考过生灵魔力的本质吗？",color:"aqua"}
