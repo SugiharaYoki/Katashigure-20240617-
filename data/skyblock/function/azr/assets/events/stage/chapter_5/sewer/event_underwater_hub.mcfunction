@@ -44,7 +44,6 @@ execute if score @s rng1 matches 3 positioned -79649 -10 95 run function skybloc
 execute if score @s rng1 matches 3 positioned -79649 -10 95 run function skyblock:azr/assets/mobs/zombie_villager_vine
 
 
-
 execute if score @s rng1 matches 3 run title @a[tag=azrShowDialog] actionbar {text:"你在丛林时，或许已经见过类似的建筑构造……",color:"aqua"}
 execute if score @s rng1 matches 3 run tellraw @a[tag=azrShowDialog] {text:"你在丛林时，或许已经见过类似的建筑构造……",color:"aqua"}
 execute if score @s rng1 matches 53 run title @a[tag=azrShowDialog] actionbar {text:"没错……神庭的一切，都是无价值的重复……我们的生命，亦是如此……",color:"aqua"}
