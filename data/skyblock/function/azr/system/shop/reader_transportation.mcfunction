@@ -32,6 +32,7 @@ tellraw @s[tag=azrPlayer_respawnanchor_unlocked_lush_c] [{text:"   - "},{text:"�
 
 tellraw @s[tag=azrPlayer_respawnanchor_unlocked_sewer_a] [{text:"   - "},{text:"蓄水池",color:"#333dff"},{text:" 废水的汇流口  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40043"}}]
 tellraw @s[tag=azrPlayer_respawnanchor_unlocked_sewer_b] [{text:"   - "},{text:"蓄水池",color:"#333dff"},{text:" 结构柱阵列  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40044"}}]
+tellraw @s[tag=azrPlayer_respawnanchor_unlocked_sewer_c] [{text:"   - "},{text:"蓄水池",color:"#333dff"},{text:" 溢水枢纽  ",color:"white"},{text:"〈◆〉",bold:1b,color:"aqua",click_event:{"action":"run_command","command":"trigger Azr_Shop set 40045"}}]
 
 
 
