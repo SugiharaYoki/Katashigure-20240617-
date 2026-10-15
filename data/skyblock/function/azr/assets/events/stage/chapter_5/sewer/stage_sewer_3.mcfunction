@@ -85,7 +85,7 @@ execute if score stage_main_thread AzrTimerStack matches 255 run title @a[tag=az
 execute if score stage_main_thread AzrTimerStack matches 255 run tellraw @a[tag=azrShowDialog] {text:"这是必要程序，只有通过这种方式，你才能……获取我的一切。",color:"aqua"}
 
 execute if score stage_main_thread AzrTimerStack matches 255 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..43}] Azr_skillPoints 44
-execute if score stage_main_thread AzrTimerStack matches 255 run scoreboard players set stage Azr_system 96
+execute if score stage_main_thread AzrTimerStack matches 255 run scoreboard players set stage Azr_system 97
 
 
 
