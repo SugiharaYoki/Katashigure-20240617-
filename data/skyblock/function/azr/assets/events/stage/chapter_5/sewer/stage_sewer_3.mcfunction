@@ -54,12 +54,12 @@ execute if score stage_main_thread AzrTimerStack matches 230..231 positioned -79
 
 
 
-execute if score stage_main_thread AzrTimerStack matches 232 positioned -79735 -10 79 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_main_thread AzrTimerStack matches 232 positioned -79735 -10 80 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_main_thread AzrTimerStack matches 232 positioned -79735 -10 81 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_main_thread AzrTimerStack matches 234 positioned -79740 -10 79 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_summoner","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_main_thread AzrTimerStack matches 234 positioned -79740 -10 80 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_summoner","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score stage_main_thread AzrTimerStack matches 234 positioned -79740 -10 81 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_summoner","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 232 positioned -79732 -10 79 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 232 positioned -79732 -10 80 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 232 positioned -79732 -10 81 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 234 positioned -79734 -10 79 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_summoner","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 234 positioned -79734 -10 80 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_summoner","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score stage_main_thread AzrTimerStack matches 234 positioned -79734 -10 81 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_summoner","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
 
