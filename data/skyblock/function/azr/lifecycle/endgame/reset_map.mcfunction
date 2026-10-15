@@ -1098,6 +1098,8 @@ item replace block -79626 -19 107 container.14 with cooked_beef 1
 setblock -79674 -61 122 waxed_oxidized_copper_chest[facing=east]{Inventory:[]}
 item replace block -79674 -61 122 container.13 with emerald 3
 
+# protocol 3
+fill -79731 -6 82 -79731 -10 78 cyan_stained_glass
 
 
 

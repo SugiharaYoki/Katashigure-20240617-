@@ -74,6 +74,8 @@ execute if score @s rng1 matches 301 positioned -79668 -10 54 run function skybl
 execute if score @s rng1 matches 301 positioned -79668 -10 54 run function skyblock:azr/assets/mobs/sword
 execute if score @s rng1 matches 301 positioned -79668 -10 54 run function skyblock:azr/assets/mobs/sword
 
+execute if score @s rng1 matches 305 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..42}] Azr_skillPoints 43
+
 execute if score @s rng1 matches 305 run title @a[tag=azrShowDialog] actionbar {text:"爱理莎，你思考过生灵魔力的本质吗？",color:"aqua"}
 execute if score @s rng1 matches 305 run tellraw @a[tag=azrShowDialog] {text:"爱理莎，你思考过生灵魔力的本质吗？",color:"aqua"}
 execute if score @s rng1 matches 320 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“似乎，一切魔力都会被归类为‘生灵’与‘亡魂’两大类。”",color:"white"}]
