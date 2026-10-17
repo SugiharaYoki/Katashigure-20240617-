@@ -33,7 +33,7 @@ execute positioned -79711 -59 69 run summon cod
 execute positioned -79711 -59 69 run summon cod
 
 
-execute as @n[tag=AzrielNPC_focalor] at @s run tp @s -79772 0 80
+execute as @n[tag=AzrielNPC_focalor] at @s run tp @s -79840 -17 80
 execute as @n[tag=AzrielNPC_focalor] at @s run effect give @s resistance infinite 4 true
 execute as @n[tag=AzrielNPC_focalor] at @s run effect give @s regeneration infinite 4 true
 
