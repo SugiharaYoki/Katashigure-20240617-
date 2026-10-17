@@ -60,7 +60,7 @@ execute if score @s[scores={rng20=2}] rng8 matches 2.. at @s run function skyblo
 execute if score @s[scores={rng20=3}] rng8 matches 2.. at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/attack_3
 execute if score @s[scores={rng20=4}] rng8 matches 2.. at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/attack_4
 execute if entity @s[scores={rng20=5}] at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/attack_5
-execute if score @s[scores={rng20=6}] rng8 matches 2.. at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/attack_6
+execute if score @s[scores={rng20=6}] rng8 matches 60.. at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/attack_6
 
 execute if score @s[scores={rng20=2},tag=!phase2_conv] rng8 matches 2 at @s run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“我相信你已经适应了我的攻击节奏。所以，是时候切换了。”",color:"white"}]
 execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 2 at @s run playsound minecraft:entity.wither.spawn block @a -79840 -5 80 10 0.5
@@ -78,7 +78,7 @@ execute if score @s[scores={rng20=4},tag=!phase4_conv] rng8 matches 2 at @s run 
 execute if score @s[scores={rng20=4},tag=!phase4_conv] rng8 matches 22 at @s run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“但我已经知晓了你的潜力。杀死过两个魔神的你，定能化险为夷。”",color:"white"}]
 execute if score @s[scores={rng20=5},tag=!phase5_conv] rng8 matches 2 at @s run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“如此结束。如此便好。”",color:"white"}]
 execute if score @s[scores={rng20=5},tag=!phase5_conv] rng8 matches 20 at @s run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“多少年月的沉沦……我终于能够解脱了吗？”",color:"white"}]
-#execute if score @s[scores={rng20=6},tag=!phase6_conv] rng8 matches 2 at @s run
+
 execute if score @s[scores={rng20=1},tag=!phase1_conv] rng8 matches 40 run tag @s add phase1_conv
 execute if score @s[scores={rng20=2},tag=!phase2_conv] rng8 matches 40 run tag @s add phase2_conv
 execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 40 run tag @s add phase3_conv
