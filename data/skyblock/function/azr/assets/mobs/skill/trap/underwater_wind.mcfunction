@@ -13,7 +13,7 @@ execute if score @s[tag=!straight] rng1 matches 30 at @s run tp @s ~ ~ ~ facing 
 
 # 此后沿自身固定朝向移动：每 tick 0.15 格，即每秒 3 格
 execute if score @s[tag=!straight] rng1 matches 31..159 at @s anchored feet run tp @s ^ ^ ^0.21
-execute if score @s[tag=straight] rng1 matches 31..159 at @s at @s run tp @s ^ ^ ^0.24
+execute if score @s[tag=straight] rng1 matches 31..159 at @s at @s run tp @s ^ ^ ^-0.24
 
 # 移动后立即检查是否出水
 execute at @s unless block ~ ~ ~ #skyblock:water run scoreboard players set @s rng1 160
