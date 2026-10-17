@@ -39,6 +39,8 @@ execute if entity @s[tag=AzrielMob_trap_slow_vine] run function skyblock:azr/ass
 execute if entity @s[tag=AzrielMob_trap_wave] run function skyblock:azr/assets/mobs/skill/trap/wave
 execute if entity @s[tag=AzrielMob_trap_spore_blackhole] run function skyblock:azr/assets/mobs/skill/trap/spore_blackhole
 execute if entity @s[tag=AzrielMob_trap_underwater_wind] run function skyblock:azr/assets/mobs/skill/trap/underwater_wind
+execute if entity @s[tag=AzrielMob_trap_underwater_wind_scatter] at @s run function skyblock:azr/assets/mobs/skill/trap/underwater_wind_scatter
+execute if entity @s[tag=AzrielMob_trap_underwater_wind_small] at @s run function skyblock:azr/assets/mobs/skill/trap/underwater_wind_small
 
 execute if entity @s[tag=AzrielMob_mob_marker_dripstone_aiguille] run function skyblock:azr/assets/mobs/skill/boss_working/marker_aiguille
 
