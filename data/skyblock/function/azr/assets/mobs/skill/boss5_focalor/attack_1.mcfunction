@@ -10,13 +10,13 @@ execute if score @s rng8 matches 2 at @s rotated ~30 0 anchored feet positioned 
 execute if score @s rng8 matches 2 at @s rotated ~60 0 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
 execute if score @s rng8 matches 2 at @s rotated ~90 0 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
 
-execute if score @s[scores={rng3=1}] rng8 matches 42 at @s rotated ~ -90 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if score @s[scores={rng3=1}] rng8 matches 42 at @s rotated ~ -60 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if score @s[scores={rng3=1}] rng8 matches 42 at @s rotated ~ -30 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if score @s[scores={rng3=1}] rng8 matches 42 at @s rotated ~ 0 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if score @s[scores={rng3=1}] rng8 matches 42 at @s rotated ~ 90 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if score @s[scores={rng3=1}] rng8 matches 42 at @s rotated ~ 60 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if score @s[scores={rng3=1}] rng8 matches 42 at @s rotated ~ 30 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s[scores={rng3=1}] rng8 matches 2 at @s rotated ~ -90 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s[scores={rng3=1}] rng8 matches 2 at @s rotated ~ -60 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s[scores={rng3=1}] rng8 matches 2 at @s rotated ~ -30 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s[scores={rng3=1}] rng8 matches 2 at @s rotated ~ 0 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s[scores={rng3=1}] rng8 matches 2 at @s rotated ~ 90 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s[scores={rng3=1}] rng8 matches 2 at @s rotated ~ 60 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s[scores={rng3=1}] rng8 matches 2 at @s rotated ~ 30 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
 
 # 第二轮：第一轮后 2 秒，左右 45° 各一组竖直 180° 扇形，半径 2 格
 execute if score @s rng8 matches 42 at @s run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.7
