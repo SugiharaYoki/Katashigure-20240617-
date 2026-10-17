@@ -38,3 +38,38 @@ execute if score @s rng7 matches 1 at @s rotated ~ 0 anchored eyes positioned ^ 
 # 恢复面向玩家的朝向，清除临时数据
 execute if score @s rng7 matches 1 run data modify entity @s Rotation[0] set from entity @s data.AzrFocalor_attack5_yaw
 execute if score @s rng7 matches 1 run data remove entity @s data.AzrFocalor_attack5_yaw
+
+
+# 总计时：每 tick +1，不随 rng8 的循环重置
+scoreboard players add @s rng19 1
+
+# 初始化光柱冷却
+execute if score @s rng19 matches 1 run scoreboard players set @s rng18 0
+
+
+# 计算发射间隔：
+# rng19=100 时为 40 tick，rng19=400 时降至 14 tick
+# rng17 = 14 + 向上取整(26 × 剩余加速时间 / 300)
+scoreboard players set @s rng17 400
+scoreboard players operation @s rng17 -= @s rng19
+
+# 限制剩余加速时间为 0～300 tick
+execute if score @s rng17 matches ..-1 run scoreboard players set @s rng17 0
+execute if score @s rng17 matches 301.. run scoreboard players set @s rng17 300
+
+scoreboard players set @s rng16 26
+scoreboard players operation @s rng17 *= @s rng16
+scoreboard players add @s rng17 299
+scoreboard players set @s rng16 300
+scoreboard players operation @s rng17 /= @s rng16
+scoreboard players add @s rng17 14
+
+
+# 第 5 秒开始，递减冷却
+execute if score @s rng19 matches 100.. run scoreboard players remove @s rng18 1
+
+# 冷却结束，朝最近玩家的水平方向发射光柱
+execute if score @s rng19 matches 100.. if score @s rng18 matches ..0 at @s anchored feet facing entity @p eyes rotated ~ 0 positioned ^ ^1 ^2 summon marker run function skyblock:azr/assets/mobs/skill/trap/underwater_light
+
+# 按当前加速进度设置下一次冷却
+execute if score @s rng19 matches 100.. if score @s rng18 matches ..0 run scoreboard players operation @s rng18 = @s rng17
