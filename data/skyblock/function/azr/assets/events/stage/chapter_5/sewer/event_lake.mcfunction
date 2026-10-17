@@ -54,4 +54,5 @@ execute if score @s rng1 matches 418 run tellraw @a[tag=azrShowDialog] [{text:"ä
 
 execute if score @s rng1 matches 410 run tag @n[tag=AzrielNPC_focalor] add azr_hostile
 
+execute if score @s rng1 matches 406.. at @n[tag=AzrielNPC_focalor] unless entity @a[tag=azrPlayer,distance=..30] run function skyblock:azr/assets/events/stage/chapter_5/sewer/event_outside_focalor_battlefield
 
