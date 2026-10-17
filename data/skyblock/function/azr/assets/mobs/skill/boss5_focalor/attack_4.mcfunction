@@ -43,6 +43,9 @@ execute if score @s rng8 matches 90 at @s anchored feet facing entity @p eyes ro
 
 
 # 每道光柱释放 0.8 秒后，释放三组竖直扇形
+execute if score @s rng8 matches 58 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round_large
+execute if score @s rng8 matches 82 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round_large
+execute if score @s rng8 matches 106 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round_large
 execute if score @s rng8 matches 58 run tag @s add AzrFocalor_attack4_fan
 execute if score @s rng8 matches 82 run tag @s add AzrFocalor_attack4_fan
 execute if score @s rng8 matches 106 run tag @s add AzrFocalor_attack4_fan
