@@ -42,7 +42,7 @@ execute if score @s rng1 matches 198 run scoreboard players set stage Azr_system
 execute if score @s rng1 matches 300 run scoreboard players set @s rng1 299
 execute if score @s rng1 matches ..300 positioned -79840 -17 80 if entity @a[tag=azrPlayer,distance=..9] run scoreboard players set @s rng1 301
 
-
+execute if score @s rng1 matches 302 run scoreboard players set stage Azr_system 98
 execute if score @s rng1 matches 302 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“现在你需要做的，是战胜我。而我，会全力以赴。”",color:"white"}]
 execute if score @s rng1 matches 317 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“这会不会有些太友善了？”",color:"white"}]
 execute if score @s rng1 matches 332 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“你之前说的……被我杀死的生灵，魔力都会被我吸收？所以，我会变得越来越强，是吗？”",color:"white"}]
