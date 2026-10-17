@@ -21,6 +21,15 @@ scoreboard players set @n[tag=AzrielNPC_focalor] rng16 0
 scoreboard players set @n[tag=AzrielNPC_focalor] rng17 0
 scoreboard players set @n[tag=AzrielNPC_focalor] rng18 0
 
+
+tag @n[tag=AzrielNPC_focalor] remove phase1_conv
+tag @n[tag=AzrielNPC_focalor] remove phase2_conv
+tag @n[tag=AzrielNPC_focalor] remove phase3_conv
+tag @n[tag=AzrielNPC_focalor] remove phase4_conv
+tag @n[tag=AzrielNPC_focalor] remove phase5_conv
+tag @n[tag=AzrielNPC_focalor] remove phase6_conv
+
+
 tag @n[tag=AzrielNPC_focalor] remove azr_hostile
 
 
