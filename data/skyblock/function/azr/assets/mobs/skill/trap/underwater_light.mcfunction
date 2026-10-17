@@ -21,8 +21,8 @@ execute if score @s rng1 matches 1..80 at @s run particle minecraft:end_rod ~ ~ 
 
 # 每 5 tick 向正上、正下各发射一个小风
 execute if score @s rng1 matches 1..80 run scoreboard players add @s rng2 1
-execute if score @s rng1 matches 1..80 if score @s rng2 matches 5.. at @s rotated ~ -90 summon marker run function skyblock:azr/assets/mobs/skill/trap/underwater_wind_small_vertical
-execute if score @s rng1 matches 1..80 if score @s rng2 matches 5.. at @s rotated ~ 90 summon marker run function skyblock:azr/assets/mobs/skill/trap/underwater_wind_small_vertical
+execute if score @s rng1 matches 1..80 if score @s rng2 matches 5.. at @s if entity @a[tag=azrPlayer,distance=..9] rotated ~ -90 summon marker run function skyblock:azr/assets/mobs/skill/trap/underwater_wind_small_vertical
+execute if score @s rng1 matches 1..80 if score @s rng2 matches 5.. at @s if entity @a[tag=azrPlayer,distance=..9] rotated ~ 90 summon marker run function skyblock:azr/assets/mobs/skill/trap/underwater_wind_small_vertical
 execute if score @s rng2 matches 5.. run scoreboard players set @s rng2 0
 
 # 最多存在 4 秒
