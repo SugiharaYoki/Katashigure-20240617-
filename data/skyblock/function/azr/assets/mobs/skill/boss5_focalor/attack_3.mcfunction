@@ -1,5 +1,6 @@
 # 前 4 秒：每 tick 从佛卡洛身体处发射一个全方向随机小风
 execute if score @s rng8 matches 2..81 at @s positioned ~ ~1 ~ summon marker run function skyblock:azr/assets/mobs/skill/trap/underwater_wind_small_random
+execute if score @s rng8 matches 41..81 at @s positioned ~ ~1 ~ summon marker run function skyblock:azr/assets/mobs/skill/trap/underwater_wind_small_random
 
 # 开始释放时的音效
 execute if score @s rng8 matches 2 at @s run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.7
@@ -33,16 +34,16 @@ execute if score @s rng8 matches 62 at @s run playsound minecraft:entity.zombie_
 execute if score @s rng8 matches 62 at @s run playsound minecraft:entity.camel_husk.dash hostile @a ~ ~ ~ 1.5 0.8
 
 # 上方：以玩家眼睛高度为基准，向上 3 格，四个对角点
-execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored eyes positioned ^1 ^3 ^1 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
-execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored eyes positioned ^1 ^3 ^-1 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
-execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored eyes positioned ^-1 ^3 ^1 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
-execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored eyes positioned ^-1 ^3 ^-1 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
+execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored eyes positioned ^5 ^3 ^5 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
+execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored eyes positioned ^5 ^3 ^-5 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
+execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored eyes positioned ^-5 ^3 ^5 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
+execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored eyes positioned ^-5 ^3 ^-5 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
 
 # 下方：以玩家脚部高度为基准，向下 3 格，四个对角点
-execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored feet positioned ^1 ^-3 ^1 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
-execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored feet positioned ^1 ^-3 ^-1 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
-execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored feet positioned ^-1 ^-3 ^1 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
-execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored feet positioned ^-1 ^-3 ^-1 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
+execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored feet positioned ^5 ^-3 ^5 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
+execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored feet positioned ^5 ^-3 ^-5 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
+execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored feet positioned ^-5 ^-3 ^5 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
+execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored feet positioned ^-5 ^-3 ^-5 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
 
 
 # rng8=82 时，第一行的发射条件结束，停止生成小风
