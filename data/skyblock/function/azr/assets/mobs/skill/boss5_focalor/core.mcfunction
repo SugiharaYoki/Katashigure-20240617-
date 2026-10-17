@@ -59,7 +59,7 @@ execute if score @s[scores={rng20=1}] rng8 matches 2.. at @s run function skyblo
 execute if score @s[scores={rng20=2}] rng8 matches 2.. at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/attack_2
 execute if score @s[scores={rng20=3}] rng8 matches 2.. at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/attack_3
 execute if score @s[scores={rng20=4}] rng8 matches 2.. at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/attack_4
-execute if score @s[scores={rng20=5}] rng8 matches 2.. at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/attack_5
+execute if entity @s[scores={rng20=5}] at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/attack_5
 execute if score @s[scores={rng20=6}] rng8 matches 2.. at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/attack_6
 
 execute if score @s[scores={rng20=2},tag=!phase2_conv] rng8 matches 2 at @s run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“我相信你已经适应了我的攻击节奏。所以，是时候切换了。”",color:"white"}]
