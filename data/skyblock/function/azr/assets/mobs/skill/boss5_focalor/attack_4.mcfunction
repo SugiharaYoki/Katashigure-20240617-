@@ -22,6 +22,8 @@ execute if score @s rng8 matches 32 at @s run function skyblock:azr/assets/mobs/
 
 
 # 再过 0.5 秒：上下前后左右 3 格，各生成一个追踪风
+execute if score @s rng8 matches 42 at @s run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.8
+execute if score @s rng8 matches 42 at @s run playsound minecraft:entity.camel_husk.dash hostile @a ~ ~ ~ 1.5 0.83
 execute if score @s rng8 matches 42 at @s rotated ~ 0 anchored feet positioned ^ ^3 ^ run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
 execute if score @s rng8 matches 42 at @s rotated ~ 0 anchored feet positioned ^ ^-3 ^ run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
 execute if score @s rng8 matches 42 at @s rotated ~ 0 anchored feet positioned ^ ^ ^3 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
@@ -43,12 +45,19 @@ execute if score @s rng8 matches 90 at @s anchored feet facing entity @p eyes ro
 
 
 # 每道光柱释放 0.8 秒后，释放三组竖直扇形
-execute if score @s rng8 matches 58 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round_large
-execute if score @s rng8 matches 82 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round_large
-execute if score @s rng8 matches 106 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round_large
-execute if score @s rng8 matches 58 run tag @s add AzrFocalor_attack4_fan
-execute if score @s rng8 matches 82 run tag @s add AzrFocalor_attack4_fan
-execute if score @s rng8 matches 106 run tag @s add AzrFocalor_attack4_fan
+execute if score @s rng8 matches 78 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round_large
+execute if score @s rng8 matches 102 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round_large
+execute if score @s rng8 matches 126 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round_large
+execute if score @s rng8 matches 78 run tag @s add AzrFocalor_attack4_fan
+execute if score @s rng8 matches 102 run tag @s add AzrFocalor_attack4_fan
+execute if score @s rng8 matches 126 run tag @s add AzrFocalor_attack4_fan
+
+execute if score @s rng8 matches 78 at @s run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.7
+execute if score @s rng8 matches 78 at @s run playsound minecraft:entity.camel_husk.dash hostile @a ~ ~ ~ 1.5 0.8
+execute if score @s rng8 matches 102 at @s run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.7
+execute if score @s rng8 matches 102 at @s run playsound minecraft:entity.camel_husk.dash hostile @a ~ ~ ~ 1.5 0.8
+execute if score @s rng8 matches 126 at @s run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.7
+execute if score @s rng8 matches 126 at @s run playsound minecraft:entity.camel_husk.dash hostile @a ~ ~ ~ 1.5 0.8
 
 # 对准玩家的水平 0°：竖直 180°，7 个
 execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~ -90 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
@@ -60,35 +69,35 @@ execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing enti
 execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~ 90 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
 
 # 对准玩家的水平 +20°：竖直 180°，7 个
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~20 -90 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~20 -60 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~20 -30 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~20 0 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~20 30 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~20 60 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~20 90 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~30 -90 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~30 -60 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~30 -30 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~30 0 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~30 30 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~30 60 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~30 90 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
 
 # 对准玩家的水平 -20°：竖直 180°，7 个
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-20 -90 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-20 -60 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-20 -30 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-20 0 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-20 30 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-20 60 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-20 90 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-30 -90 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-30 -60 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-30 -30 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-30 0 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-30 30 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-30 60 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-30 90 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
 
 tag @s remove AzrFocalor_attack4_fan
 
 
 # 第三轮扇形后：头顶 5 格处，半径 6 格，每隔 45° 生成一瓶药水
-execute if score @s rng8 matches 106 at @s rotated ~ 0 anchored eyes positioned ^ ^5 ^ positioned ^ ^ ^6 run summon minecraft:splash_potion ~ ~ ~ {Motion:[0.0d,-0.2d,0.0d],Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:strong_harming"}}}}
-execute if score @s rng8 matches 106 at @s rotated ~45 0 anchored eyes positioned ^ ^5 ^ positioned ^ ^ ^6 run summon minecraft:splash_potion ~ ~ ~ {Motion:[0.0d,-0.2d,0.0d],Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:strong_harming"}}}}
-execute if score @s rng8 matches 106 at @s rotated ~90 0 anchored eyes positioned ^ ^5 ^ positioned ^ ^ ^6 run summon minecraft:splash_potion ~ ~ ~ {Motion:[0.0d,-0.2d,0.0d],Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:strong_harming"}}}}
-execute if score @s rng8 matches 106 at @s rotated ~135 0 anchored eyes positioned ^ ^5 ^ positioned ^ ^ ^6 run summon minecraft:splash_potion ~ ~ ~ {Motion:[0.0d,-0.2d,0.0d],Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:strong_harming"}}}}
-execute if score @s rng8 matches 106 at @s rotated ~180 0 anchored eyes positioned ^ ^5 ^ positioned ^ ^ ^6 run summon minecraft:splash_potion ~ ~ ~ {Motion:[0.0d,-0.2d,0.0d],Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:strong_harming"}}}}
-execute if score @s rng8 matches 106 at @s rotated ~225 0 anchored eyes positioned ^ ^5 ^ positioned ^ ^ ^6 run summon minecraft:splash_potion ~ ~ ~ {Motion:[0.0d,-0.2d,0.0d],Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:strong_harming"}}}}
-execute if score @s rng8 matches 106 at @s rotated ~270 0 anchored eyes positioned ^ ^5 ^ positioned ^ ^ ^6 run summon minecraft:splash_potion ~ ~ ~ {Motion:[0.0d,-0.2d,0.0d],Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:strong_harming"}}}}
-execute if score @s rng8 matches 106 at @s rotated ~315 0 anchored eyes positioned ^ ^5 ^ positioned ^ ^ ^6 run summon minecraft:splash_potion ~ ~ ~ {Motion:[0.0d,-0.2d,0.0d],Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:strong_harming"}}}}
+execute if score @s rng8 matches 116 at @s rotated ~ 0 anchored eyes positioned ^ ^5 ^ positioned ^ ^ ^6 run summon minecraft:splash_potion ~ ~ ~ {Motion:[0.0d,-0.2d,0.0d],Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:strong_harming"}}}}
+execute if score @s rng8 matches 116 at @s rotated ~45 0 anchored eyes positioned ^ ^5 ^ positioned ^ ^ ^6 run summon minecraft:splash_potion ~ ~ ~ {Motion:[0.0d,-0.2d,0.0d],Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:strong_harming"}}}}
+execute if score @s rng8 matches 116 at @s rotated ~90 0 anchored eyes positioned ^ ^5 ^ positioned ^ ^ ^6 run summon minecraft:splash_potion ~ ~ ~ {Motion:[0.0d,-0.2d,0.0d],Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:strong_harming"}}}}
+execute if score @s rng8 matches 116 at @s rotated ~135 0 anchored eyes positioned ^ ^5 ^ positioned ^ ^ ^6 run summon minecraft:splash_potion ~ ~ ~ {Motion:[0.0d,-0.2d,0.0d],Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:strong_harming"}}}}
+execute if score @s rng8 matches 116 at @s rotated ~180 0 anchored eyes positioned ^ ^5 ^ positioned ^ ^ ^6 run summon minecraft:splash_potion ~ ~ ~ {Motion:[0.0d,-0.2d,0.0d],Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:strong_harming"}}}}
+execute if score @s rng8 matches 116 at @s rotated ~225 0 anchored eyes positioned ^ ^5 ^ positioned ^ ^ ^6 run summon minecraft:splash_potion ~ ~ ~ {Motion:[0.0d,-0.2d,0.0d],Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:strong_harming"}}}}
+execute if score @s rng8 matches 116 at @s rotated ~270 0 anchored eyes positioned ^ ^5 ^ positioned ^ ^ ^6 run summon minecraft:splash_potion ~ ~ ~ {Motion:[0.0d,-0.2d,0.0d],Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:strong_harming"}}}}
+execute if score @s rng8 matches 116 at @s rotated ~315 0 anchored eyes positioned ^ ^5 ^ positioned ^ ^ ^6 run summon minecraft:splash_potion ~ ~ ~ {Motion:[0.0d,-0.2d,0.0d],Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:strong_harming"}}}}
 
 
 # 再过 4 秒，恢复重力并结束本轮
