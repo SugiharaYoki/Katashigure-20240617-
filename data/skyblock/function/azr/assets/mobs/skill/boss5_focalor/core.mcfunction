@@ -85,7 +85,7 @@ execute if score @s[scores={rng20=5},tag=!phase5_conv] rng8 matches 40 run tag @
 execute if score @s[scores={rng20=6},tag=!phase6_conv] rng8 matches 40 run tag @s add phase6_conv
 
 
-
+execute as @a[tag=azrPlayer,distance=..30] at @s run scoreboard players add @s AZR_chainKill_chargeup 3
 
 # 每轮最后六 tick 随机 rng1；原来的 615..620 改为 195..200
 execute if score @s rng8 matches 290..300 store result score @s rng1 run random value -15..-3
