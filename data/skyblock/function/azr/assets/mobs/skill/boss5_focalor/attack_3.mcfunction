@@ -3,8 +3,7 @@ execute if score @s rng8 matches 2..61 at @s positioned ~ ~1 ~ summon marker run
 execute if score @s rng8 matches 41..61 at @s positioned ~ ~1 ~ summon marker run function skyblock:azr/assets/mobs/skill/trap/underwater_wind_small_random
 
 # 开始释放时的音效
-execute if score @s rng8 matches 2 at @s run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.7
-execute if score @s rng8 matches 2 at @s run playsound minecraft:entity.camel_husk.dash hostile @a ~ ~ ~ 1.5 0.8
+execute if score @s rng8 matches 2 at @s run playsound entity.evoker.prepare_attack hostile @a ~ ~ ~ 1.5 1.1
 
 
 # 2 秒后：水平 360°，半径 2 格，每隔 22.5° 一个，共 16 个 straight
@@ -33,7 +32,7 @@ execute if score @s rng8 matches 37 at @s run function skyblock:azr/assets/mobs/
 
 # 再过 1 秒：最近玩家头顶、脚底各生成一组 X 型追踪风
 execute if score @s rng8 matches 62 at @s run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.7
-execute if score @s rng8 matches 62 at @s run playsound minecraft:entity.camel_husk.dash hostile @a ~ ~ ~ 1.5 0.8
+execute if score @s rng8 matches 62 at @s run playsound minecraft:entity.camel_husk.hurt hostile @a ~ ~ ~ 1.5 0.66
 
 # 上方：以玩家眼睛高度为基准，向上 3 格，四个对角点
 execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored eyes positioned ^5 ^3 ^5 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
