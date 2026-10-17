@@ -22,7 +22,7 @@ execute positioned -79695 -57 73 run summon marker ~ ~ ~ {Tags:["AzrielMarker_en
 execute positioned -79695 -57 73 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng1 99999
 
 execute positioned -79764 -10 80 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79764 -10 80 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng1 99999
+execute positioned -79764 -10 80 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng1 299
 
 
 
