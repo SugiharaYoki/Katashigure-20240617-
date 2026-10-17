@@ -1,6 +1,6 @@
 # 前 4 秒：每 tick 从佛卡洛身体处发射一个全方向随机小风
-execute if score @s rng8 matches 2..81 at @s positioned ~ ~1 ~ summon marker run function skyblock:azr/assets/mobs/skill/trap/underwater_wind_small_random
-execute if score @s rng8 matches 41..81 at @s positioned ~ ~1 ~ summon marker run function skyblock:azr/assets/mobs/skill/trap/underwater_wind_small_random
+execute if score @s rng8 matches 2..61 at @s positioned ~ ~1 ~ summon marker run function skyblock:azr/assets/mobs/skill/trap/underwater_wind_small_random
+execute if score @s rng8 matches 41..61 at @s positioned ~ ~1 ~ summon marker run function skyblock:azr/assets/mobs/skill/trap/underwater_wind_small_random
 
 # 开始释放时的音效
 execute if score @s rng8 matches 2 at @s run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.7
