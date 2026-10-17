@@ -15,7 +15,7 @@ execute at @s run tp @s ~ ~ ~ facing entity @p feet
 execute at @s anchored feet unless entity @p[distance=..3] if entity @p[distance=..3.05] at @p facing entity @s feet positioned ^ ^ ^3 run tp @s ~ ~ ~ facing entity @p feet
 
 # 距离超过 3.05 格时，每 tick 前进 0.05 格，即每秒 1 格
-execute at @s anchored feet if entity @p unless entity @p[distance=..3.05] run tp @s ^ ^ ^0.05
+execute at @s anchored feet if entity @p unless entity @p[distance=..3.05] run tp @s ^ ^ ^0.11
 
 # 追踪风计时：首次立即释放，此后每 30 tick 一轮
 scoreboard players operation @s rng14 = @s rng19
