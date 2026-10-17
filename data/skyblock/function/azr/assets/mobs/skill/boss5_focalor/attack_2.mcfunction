@@ -17,7 +17,9 @@ execute if score @s rng8 matches 82 at @s run playsound minecraft:entity.camel_h
 execute if score @s rng8 matches 142 at @s run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.7
 execute if score @s rng8 matches 142 at @s run playsound minecraft:entity.camel_husk.dash hostile @a ~ ~ ~ 1.5 0.8
 
-execute if score @s rng8 matches 142..162 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round
+execute if score @s rng8 matches 142 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round
+execute if score @s rng8 matches 152 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round
+execute if score @s rng8 matches 122 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round
 
 # 水平 0°
 execute if score @s rng8 matches 142 at @s rotated ~ -90 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight

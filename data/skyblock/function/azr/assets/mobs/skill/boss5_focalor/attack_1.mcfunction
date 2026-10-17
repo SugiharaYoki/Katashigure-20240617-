@@ -71,7 +71,9 @@ execute if score @s[scores={rng3=1}] rng8 matches 102 at @s rotated ~ 0 anchored
 
 # 气泡双环：半径 2.5 格，中心在脚部上方 1 格，持续 20 tick
 
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round
+execute if score @s rng8 matches 102 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round
+execute if score @s rng8 matches 112 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round
+execute if score @s rng8 matches 122 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round
 
 # 第三轮释放完 5 秒后，rng8 归零
 execute if score @s rng8 matches 202.. run scoreboard players set @s rng8 0
