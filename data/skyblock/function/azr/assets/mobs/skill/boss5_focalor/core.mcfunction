@@ -37,6 +37,8 @@ execute if entity @s[scores={rng8=1,rng20=3,Health=..300}] run scoreboard player
 execute if entity @s[scores={rng8=1,rng20=2,Health=..400}] run scoreboard players add @s rng20 1
 execute if entity @s[scores={rng8=1,rng20=1,Health=..500}] run scoreboard players add @s rng20 1
 
+execute if entity @s[scores={rng8=5}] at @s run tp @s -79840 ~ 80
+
 # ==================== 上下移动 ====================
 
 # X/Z 保持原有固定位置，只计算最近玩家与自身的高度差
