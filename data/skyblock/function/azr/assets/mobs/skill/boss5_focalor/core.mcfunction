@@ -37,7 +37,7 @@ execute if entity @s[scores={rng8=1,rng20=3,Health=..300}] run scoreboard player
 execute if entity @s[scores={rng8=1,rng20=2,Health=..400}] run scoreboard players add @s rng20 1
 execute if entity @s[scores={rng8=1,rng20=1,Health=..500}] run scoreboard players add @s rng20 1
 
-execute if entity @s[scores={rng8=5}] at @s run tp @s -79840 ~ 80
+execute if score @s rng8 matches 5 if score @s rng20 matches ..3 at @s positioned -79840 ~ 80 run function skyblock:azr/assets/mobs/skill/boss5_focalor/teleport
 
 # ==================== 上下移动 ====================
 
@@ -51,7 +51,7 @@ execute at @s if entity @p run scoreboard players operation #focalor_dy rng2 -= 
 # 最大上下速度为 0.7，接近目标高度时只移动剩余距离
 execute if score #focalor_dy rng2 matches 701.. run scoreboard players set #focalor_dy rng2 700
 execute if score #focalor_dy rng2 matches ..-701 run scoreboard players set #focalor_dy rng2 -700
-execute store result entity @s Motion[1] double 0.001 run scoreboard players get #focalor_dy rng2
+execute if score @s rng20 matches ..3 store result entity @s Motion[1] double 0.001 run scoreboard players get #focalor_dy rng2
 
 # ==================== 阶段攻击 ====================
 
@@ -74,8 +74,10 @@ execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 17 at @s run
 execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 13 at @s run fill -79843 -5 83 -79837 -5 77 water replace deepslate_tiles
 execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 15 at @s run fill -79853 -5 93 -79827 -5 67 water replace deepslate_tiles
 execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 17 at @s run fill -79863 -5 103 -79817 -5 57 water replace deepslate_tiles
-#execute if score @s[scores={rng20=4},tag=!phase4_conv] rng8 matches 2 at @s run
-#execute if score @s[scores={rng20=5},tag=!phase5_conv] rng8 matches 2 at @s run
+execute if score @s[scores={rng20=4},tag=!phase4_conv] rng8 matches 2 at @s run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“爱理莎，你之后将要面对的敌人，远比先前任何时候都要危险。”",color:"white"}]
+execute if score @s[scores={rng20=4},tag=!phase4_conv] rng8 matches 22 at @s run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“但我已经知晓了你的潜力。杀死过两个魔神的你，定能化险为夷。”",color:"white"}]
+execute if score @s[scores={rng20=5},tag=!phase5_conv] rng8 matches 2 at @s run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“如此结束。如此便好。”",color:"white"}]
+execute if score @s[scores={rng20=5},tag=!phase5_conv] rng8 matches 20 at @s run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“多少年月的沉沦……我终于能够解脱了吗？”",color:"white"}]
 #execute if score @s[scores={rng20=6},tag=!phase6_conv] rng8 matches 2 at @s run
 execute if score @s[scores={rng20=1},tag=!phase1_conv] rng8 matches 40 run tag @s add phase1_conv
 execute if score @s[scores={rng20=2},tag=!phase2_conv] rng8 matches 40 run tag @s add phase2_conv
