@@ -4,12 +4,12 @@ execute if score @s rng8 matches 42 at @s rotated ~ 0 anchored feet positioned ^
 execute if score @s rng8 matches 82 at @s rotated ~ 0 anchored feet positioned ^ ^ ^2 run summon marker ~ ~ ~ {Tags:["AzrielMob","AzrielMob_trap_underwater_wind_scatter","AzrielMob_trap","AzrielMob_level_1","AzrielMob_mob_marker","straight"]}
 
 # 释放音效
-execute if score @s rng8 matches 2 at @s run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.7
-execute if score @s rng8 matches 2 at @s run playsound minecraft:entity.camel_husk.dash hostile @a ~ ~ ~ 1.5 0.8
-execute if score @s rng8 matches 42 at @s run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.7
-execute if score @s rng8 matches 42 at @s run playsound minecraft:entity.camel_husk.dash hostile @a ~ ~ ~ 1.5 0.8
-execute if score @s rng8 matches 82 at @s run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.7
-execute if score @s rng8 matches 82 at @s run playsound minecraft:entity.camel_husk.dash hostile @a ~ ~ ~ 1.5 0.8
+execute if score @s rng8 matches 2 at @s run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.8
+execute if score @s rng8 matches 2 at @s run playsound minecraft:entity.camel_husk.dash hostile @a ~ ~ ~ 1.5 0.83
+execute if score @s rng8 matches 42 at @s run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.8
+execute if score @s rng8 matches 42 at @s run playsound minecraft:entity.camel_husk.dash hostile @a ~ ~ ~ 1.5 0.83
+execute if score @s rng8 matches 82 at @s run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.8
+execute if score @s rng8 matches 82 at @s run playsound minecraft:entity.camel_husk.dash hostile @a ~ ~ ~ 1.5 0.83
 
 
 # 第三个特殊风生成后 3 秒，释放九组竖直扇形
