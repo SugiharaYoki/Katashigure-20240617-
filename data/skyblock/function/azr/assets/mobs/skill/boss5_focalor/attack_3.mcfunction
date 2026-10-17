@@ -15,22 +15,22 @@ execute if score @s rng8 matches 41 at @s rotated ~ 0 positioned ~ ~1 ~ run func
 execute if score @s rng8 matches 42 at @s run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.7
 execute if score @s rng8 matches 42 at @s run playsound minecraft:entity.camel_husk.dash hostile @a ~ ~ ~ 1.5 0.8
 
-execute if score @s rng8 matches 42 at @s rotated ~ 0 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if score @s rng8 matches 42 at @s rotated ~22.5 0 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if score @s rng8 matches 42 at @s rotated ~45 0 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if score @s rng8 matches 42 at @s rotated ~67.5 0 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if score @s rng8 matches 42 at @s rotated ~90 0 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if score @s rng8 matches 42 at @s rotated ~112.5 0 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if score @s rng8 matches 42 at @s rotated ~135 0 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if score @s rng8 matches 42 at @s rotated ~157.5 0 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if score @s rng8 matches 42 at @s rotated ~180 0 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if score @s rng8 matches 42 at @s rotated ~202.5 0 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if score @s rng8 matches 42 at @s rotated ~225 0 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if score @s rng8 matches 42 at @s rotated ~247.5 0 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if score @s rng8 matches 42 at @s rotated ~270 0 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if score @s rng8 matches 42 at @s rotated ~292.5 0 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if score @s rng8 matches 42 at @s rotated ~315 0 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if score @s rng8 matches 42 at @s rotated ~337.5 0 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s rng8 matches 42 at @s rotated ~ 0 anchored feet positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s rng8 matches 42 at @s rotated ~22.5 0 anchored feet positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s rng8 matches 42 at @s rotated ~45 0 anchored feet positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s rng8 matches 42 at @s rotated ~67.5 0 anchored feet positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s rng8 matches 42 at @s rotated ~90 0 anchored feet positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s rng8 matches 42 at @s rotated ~112.5 0 anchored feet positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s rng8 matches 42 at @s rotated ~135 0 anchored feet positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s rng8 matches 42 at @s rotated ~157.5 0 anchored feet positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s rng8 matches 42 at @s rotated ~180 0 anchored feet positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s rng8 matches 42 at @s rotated ~202.5 0 anchored feet positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s rng8 matches 42 at @s rotated ~225 0 anchored feet positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s rng8 matches 42 at @s rotated ~247.5 0 anchored feet positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s rng8 matches 42 at @s rotated ~270 0 anchored feet positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s rng8 matches 42 at @s rotated ~292.5 0 anchored feet positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s rng8 matches 42 at @s rotated ~315 0 anchored feet positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if score @s rng8 matches 42 at @s rotated ~337.5 0 anchored feet positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
 
 execute if score @s rng8 matches 27 at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/movement_random
 execute if score @s rng8 matches 37 at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/movement_random
@@ -40,10 +40,10 @@ execute if score @s rng8 matches 62 at @s run playsound minecraft:entity.zombie_
 execute if score @s rng8 matches 62 at @s run playsound minecraft:entity.camel_husk.hurt hostile @a ~ ~ ~ 1.5 0.66
 
 # 上方：以玩家眼睛高度为基准，向上 3 格，四个对角点
-execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored eyes positioned ^5 ^3 ^5 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
-execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored eyes positioned ^5 ^3 ^-5 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
-execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored eyes positioned ^-5 ^3 ^5 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
-execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored eyes positioned ^-5 ^3 ^-5 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
+execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored eyes positioned ^5 ^4 ^5 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
+execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored eyes positioned ^5 ^4 ^-5 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
+execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored eyes positioned ^-5 ^4 ^5 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
+execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored eyes positioned ^-5 ^4 ^-5 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
 
 # 下方：以玩家脚部高度为基准，向下 3 格，四个对角点
 execute if score @s rng8 matches 62 at @s at @p rotated ~ 0 anchored feet positioned ^5 ^-3 ^5 run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
