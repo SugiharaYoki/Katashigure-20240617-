@@ -6,7 +6,8 @@ data merge entity @s {NoGravity:1b,NoAI:1b,Motion:[0.0d,0.0d,0.0d]}
 execute if score @s[tag=straight] rng1 matches 2 at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielNPC_focalor]
 
 # 出水标记为到期，后续不再移动或攻击
-execute at @s unless block ~ ~ ~ #skyblock:water run scoreboard players set @s rng1 160
+execute at @s unless block ~ ~ ~ #skyblock:water run scoreboard players add @s rng1 10
+execute at @s if block ~ ~ ~ #air run scoreboard players add @s rng1 10
 
 # 1.5 秒时，仅锁定一次最近玩家的方向
 execute if score @s[tag=!straight] rng1 matches 30 at @s run tp @s ~ ~ ~ facing entity @p eyes
@@ -15,8 +16,6 @@ execute if score @s[tag=!straight] rng1 matches 30 at @s run tp @s ~ ~ ~ facing 
 execute if score @s[tag=!straight] rng1 matches 31..159 at @s anchored feet run tp @s ^ ^ ^0.21
 execute if score @s[tag=straight] rng1 matches 31..159 at @s at @s run tp @s ^ ^ ^-0.24
 
-# 移动后立即检查是否出水
-execute at @s unless block ~ ~ ~ #skyblock:water run scoreboard players set @s rng1 160
 
 # 存活期间持续显示 gust
 execute if score @s rng1 matches 1..159 at @s run particle minecraft:gust ~ ~ ~ 0 0 0 0 1
