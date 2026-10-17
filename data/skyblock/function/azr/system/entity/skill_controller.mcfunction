@@ -75,7 +75,7 @@ execute if score stage Azr_system matches 90 positioned -79794 231 -545 if entit
 execute if score stage Azr_system matches 90 positioned -79794 231 -545 if entity @s[tag=AzrielNPC_nymph_clone,distance=..200] run function skyblock:azr/assets/mobs/skill/boss5_nymph/clone_core
 
 
-execute if score stage Azr_system matches 98..99 positioned -79764 -10 80 if entity @s[tag=AzrielNPC_focalor,distance=..200] run function skyblock:azr/assets/mobs/skill/boss5_focalor/core
+execute if score stage Azr_system matches 98..99 positioned -79764 -10 80 if entity @s[tag=AzrielNPC_focalor,distance=..200,tag=azr_hostile] run function skyblock:azr/assets/mobs/skill/boss5_focalor/core
 
 
 

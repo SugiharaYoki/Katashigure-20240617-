@@ -31,15 +31,27 @@ execute if score @s rng1 matches 194 run tellraw @a[tag=azrShowDialog] [{text:"�
 
 execute if score @s rng1 matches 198 as @n[tag=AzrielNPC_focalor] at @s run playsound minecraft:entity.player.teleport neutral @a ~ ~ ~ 1 1.2
 execute if score @s rng1 matches 198 as @n[tag=AzrielNPC_focalor] at @s run particle enchant ~ ~1 ~ 0.3 0.9 0.3 0.05 25
-execute if score @s rng1 matches 198 as @n[tag=AzrielNPC_focalor] at @s run tp @s -79772 0 80
+execute if score @s rng1 matches 198 as @n[tag=AzrielNPC_focalor] at @s run tp @s -79840 -17 80
 
 
 execute if score @s rng1 matches 198 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..47}] Azr_skillPoints 48
 execute if score @s rng1 matches 198 run scoreboard players set stage Azr_system 98
 
 
+execute if score @s rng1 matches 300 run scoreboard players set @s rng1 299
+execute if score @s rng1 matches ..300 positioned -79840 -17 80 if entity @a[tag=azrPlayer,distance=..9] run scoreboard players set @s rng1 301
 
 
+execute if score @s rng1 matches 302 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“现在你需要做的，是战胜我。而我，会全力以赴。”",color:"white"}]
+execute if score @s rng1 matches 317 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“这会不会有些太友善了？”",color:"white"}]
+execute if score @s rng1 matches 332 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“你之前说的……被我杀死的生灵，魔力都会被我吸收？所以，我会变得越来越强，是吗？”",color:"white"}]
+execute if score @s rng1 matches 347 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“我猜不到是谁将你引领至此。如果你是自己做出的决定，那你就做出了最正确的决定。”",color:"white"}]
+execute if score @s rng1 matches 364 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“现在的你，去了生命树庭园也只是送死。来到此处，杀了我，你才能与邪恶的力量抗衡。”",color:"white"}]
+execute if score @s rng1 matches 378 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“……但是，你活了很久了，不是吗？就这样被我杀掉，真的没事吗？”",color:"white"}]
+execute if score @s rng1 matches 393 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“魔神的时代，早就该结束了。我很高兴，自己的魔力……会有更适合的归属。”",color:"white"}]
+execute if score @s rng1 matches 407 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“来吧，爱理莎，击败我。”",color:"white"}]
+execute if score @s rng1 matches 418 run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“我乃魔神佛卡洛。在这天造之湖泊，我迎接你的到来。”",color:"white"}]
 
+execute if score @s rng1 matches 410 run tag @n[tag=AzrielNPC_focalor] add azr_hostile
 
 
