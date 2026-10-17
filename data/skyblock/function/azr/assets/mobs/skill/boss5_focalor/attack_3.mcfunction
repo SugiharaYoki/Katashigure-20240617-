@@ -6,6 +6,7 @@ execute if score @s rng8 matches 41..61 at @s positioned ~ ~1 ~ summon marker ru
 execute if score @s rng8 matches 2 at @s run playsound entity.evoker.prepare_attack hostile @a ~ ~ ~ 1.5 1.1
 
 execute if score @s rng8 matches 2..41 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round
+execute if score @s rng8 matches 41 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round_large
 
 # 2 秒后：水平 360°，半径 2 格，每隔 22.5° 一个，共 16 个 straight
 execute if score @s rng8 matches 42 at @s run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.7
