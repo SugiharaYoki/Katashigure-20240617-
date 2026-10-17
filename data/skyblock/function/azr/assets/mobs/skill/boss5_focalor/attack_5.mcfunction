@@ -17,9 +17,9 @@ execute at @s anchored feet unless entity @p[distance=..3] if entity @p[distance
 # 距离超过 3.05 格时，每 tick 前进 0.05 格，即每秒 1 格
 execute at @s anchored feet if entity @p unless entity @p[distance=..3.05] run tp @s ^ ^ ^0.05
 
-# 追踪风计时：首次立即释放，此后每 20 tick 一轮
+# 追踪风计时：首次立即释放，此后每 30 tick 一轮
 scoreboard players operation @s rng14 = @s rng19
-scoreboard players set @s rng15 20
+scoreboard players set @s rng15 30
 scoreboard players operation @s rng14 %= @s rng15
 
 # 左右 4 格、8 格处，各生成一个追踪风
@@ -75,6 +75,7 @@ scoreboard players add @s rng17 14
 execute if score @s rng19 matches 100.. run scoreboard players remove @s rng18 1
 
 # 冷却结束，朝最近玩家的水平方向发射光柱
+execute if score @s rng19 matches 100.. if score @s rng18 matches ..0 at @s anchored feet facing entity @p eyes rotated ~ 0 positioned ^ ^1 ^2run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.8
 execute if score @s rng19 matches 100.. if score @s rng18 matches ..0 at @s anchored feet facing entity @p eyes rotated ~ 0 positioned ^ ^1 ^2 summon marker run function skyblock:azr/assets/mobs/skill/trap/underwater_light
 
 # 按当前加速进度设置下一次冷却
