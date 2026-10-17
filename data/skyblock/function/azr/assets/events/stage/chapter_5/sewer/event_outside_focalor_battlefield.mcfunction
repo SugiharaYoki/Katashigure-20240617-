@@ -21,6 +21,7 @@ scoreboard players set @n[tag=AzrielNPC_focalor] rng16 0
 scoreboard players set @n[tag=AzrielNPC_focalor] rng17 0
 scoreboard players set @n[tag=AzrielNPC_focalor] rng18 0
 
+tag @n[tag=AzrielNPC_focalor] remove azr_hostile
 
 
 effect give @n[tag=AzrielNPC_focalor] resistance infinite 4 true
