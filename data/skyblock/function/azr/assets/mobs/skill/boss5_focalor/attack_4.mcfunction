@@ -60,31 +60,31 @@ execute if score @s rng8 matches 126 at @s run playsound minecraft:entity.zombie
 execute if score @s rng8 matches 126 at @s run playsound minecraft:entity.camel_husk.dash hostile @a ~ ~ ~ 1.5 0.8
 
 # 对准玩家的水平 0°：竖直 180°，7 个
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~ -90 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~ -60 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~ -30 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~ 0 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~ 30 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~ 60 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~ 90 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~ -90 positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~ -60 positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~ -30 positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~ 0 positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~ 30 positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~ 60 positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~ 90 positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
 
 # 对准玩家的水平 +20°：竖直 180°，7 个
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~30 -90 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~30 -60 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~30 -30 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~30 0 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~30 30 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~30 60 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~30 90 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~30 -90 positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~30 -60 positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~30 -30 positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~30 0 positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~30 30 positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~30 60 positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~30 90 positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
 
 # 对准玩家的水平 -20°：竖直 180°，7 个
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-30 -90 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-30 -60 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-30 -30 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-30 0 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-30 30 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-30 60 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
-execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-30 90 positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-30 -90 positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-30 -60 positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-30 -30 positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-30 0 positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-30 30 positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-30 60 positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
+execute if entity @s[tag=AzrFocalor_attack4_fan] at @s anchored feet facing entity @p eyes rotated ~-30 90 positioned ^ ^1 ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
 
 tag @s remove AzrFocalor_attack4_fan
 
