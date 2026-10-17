@@ -1101,6 +1101,8 @@ item replace block -79674 -61 122 container.13 with emerald 3
 # protocol 3
 fill -79731 -6 82 -79731 -10 78 cyan_stained_glass
 
+#Boss 佛卡洛
+fill -79863 -5 103 -79817 -5 57 deepslate_tiles replace water
 
 
 # ↓↓ 待修改 ↓↓

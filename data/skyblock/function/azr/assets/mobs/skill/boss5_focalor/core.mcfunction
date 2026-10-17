@@ -60,6 +60,26 @@ execute if score @s[scores={rng20=4}] rng8 matches 2.. at @s run function skyblo
 execute if score @s[scores={rng20=5}] rng8 matches 2.. at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/attack_5
 execute if score @s[scores={rng20=6}] rng8 matches 2.. at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/attack_6
 
+execute if score @s[scores={rng20=2},tag=!phase2_conv] rng8 matches 2 at @s run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“我相信你已经适应了我的攻击节奏。所以，是时候切换了。”",color:"white"}]
+execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 2 at @s run playsound minecraft:entity.wither.spawn block @a -79840 -5 80 10 0.5
+execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 13 at @s run playsound entity.generic.explode block @a -79840 -5 80 10 0.6
+execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 15 at @s run playsound entity.generic.explode block @a -79840 -5 80 10 0.6
+execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 15 at @s run particle minecraft:campfire_cosy_smoke -79840 -5 80 10 1 10 0.03 300
+execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 15 at @s run particle minecraft:explosion_emitter -79840 -5 80 10 1 10 0.03 5
+execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 15 at @s run fill -79863 -5 103 -79817 -5 57 water replace deepslate_tiles
+#execute if score @s[scores={rng20=4},tag=!phase4_conv] rng8 matches 2 at @s run
+#execute if score @s[scores={rng20=5},tag=!phase5_conv] rng8 matches 2 at @s run
+#execute if score @s[scores={rng20=6},tag=!phase6_conv] rng8 matches 2 at @s run
+execute if score @s[scores={rng20=1},tag=!phase1_conv] rng8 matches 40 run tag @s add phase1_conv
+execute if score @s[scores={rng20=2},tag=!phase2_conv] rng8 matches 40 run tag @s add phase2_conv
+execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 40 run tag @s add phase3_conv
+execute if score @s[scores={rng20=4},tag=!phase4_conv] rng8 matches 40 run tag @s add phase4_conv
+execute if score @s[scores={rng20=5},tag=!phase5_conv] rng8 matches 40 run tag @s add phase5_conv
+execute if score @s[scores={rng20=6},tag=!phase6_conv] rng8 matches 40 run tag @s add phase6_conv
+
+
+
+
 # 每轮最后六 tick 随机 rng1；原来的 615..620 改为 195..200
 execute if score @s rng8 matches 290..300 store result score @s rng1 run random value -15..-3
 
