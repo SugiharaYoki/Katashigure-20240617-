@@ -28,6 +28,14 @@ execute if score @s rng8 matches 42 at @s rotated ~292.5 0 anchored feet positio
 execute if score @s rng8 matches 42 at @s rotated ~315 0 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
 execute if score @s rng8 matches 42 at @s rotated ~337.5 0 anchored feet positioned ^ ^ ^2 run function skyblock:azr/assets/mobs/trap_underwater_wind_straight
 
+execute if score @s rng8 matches 37 at @s store result score @s rng4 run random value 1..4
+execute if score @s rng8 matches 37 if entity @s[scores={rng4=1}] at @s positioned 0.0 0 0.0 run summon marker ^ ^ ^0.7 {Tags:["AzrielMob_move_marker_focalor"]}
+execute if score @s rng8 matches 37 if entity @s[scores={rng4=2}] at @s positioned 0.0 0 0.0 run summon marker ^ ^ ^-0.7 {Tags:["AzrielMob_move_marker_focalor"]}
+execute if score @s rng8 matches 37 if entity @s[scores={rng4=3}] at @s positioned 0.0 0 0.0 run summon marker ^0.7 ^ ^ {Tags:["AzrielMob_move_marker_focalor"]}
+execute if score @s rng8 matches 37 if entity @s[scores={rng4=4}] at @s positioned 0.0 0 0.0 run summon marker ^-0.7 ^ ^ {Tags:["AzrielMob_move_marker_focalor"]}
+execute if score @s rng8 matches 37 at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_move_marker_focalor] Pos
+execute if score @s rng8 matches 37 at @s run kill @n[type=marker,tag=AzrielMob_move_marker_focalor]
+
 
 # 再过 1 秒：最近玩家头顶、脚底各生成一组 X 型追踪风
 execute if score @s rng8 matches 62 at @s run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.7
