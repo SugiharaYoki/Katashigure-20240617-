@@ -70,58 +70,8 @@ execute if score @s[scores={rng3=1}] rng8 matches 102 at @s rotated ~ 0 anchored
 
 
 # 气泡双环：半径 2.5 格，中心在脚部上方 1 格，持续 20 tick
-# 第一圈：正面看为一条斜线
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^1.768 ^1.768 ^ 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^1.708 ^1.708 ^0.647 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^1.531 ^1.531 ^1.25 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^1.25 ^1.25 ^1.768 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^0.884 ^0.884 ^2.165 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^0.458 ^0.458 ^2.415 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^ ^ ^2.5 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^-0.458 ^-0.458 ^2.415 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^-0.884 ^-0.884 ^2.165 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^-1.25 ^-1.25 ^1.768 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^-1.531 ^-1.531 ^1.25 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^-1.708 ^-1.708 ^0.647 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^-1.768 ^-1.768 ^ 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^-1.708 ^-1.708 ^-0.647 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^-1.531 ^-1.531 ^-1.25 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^-1.25 ^-1.25 ^-1.768 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^-0.884 ^-0.884 ^-2.165 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^-0.458 ^-0.458 ^-2.415 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^ ^ ^-2.5 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^0.458 ^0.458 ^-2.415 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^0.884 ^0.884 ^-2.165 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^1.25 ^1.25 ^-1.768 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^1.531 ^1.531 ^-1.25 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^1.708 ^1.708 ^-0.647 0.04 0.04 0.04 0 2 force
 
-# 第二圈：反向倾斜，正面与第一圈组成 X
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^1.768 ^-1.768 ^ 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^1.708 ^-1.708 ^0.647 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^1.531 ^-1.531 ^1.25 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^1.25 ^-1.25 ^1.768 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^0.884 ^-0.884 ^2.165 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^0.458 ^-0.458 ^2.415 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^ ^ ^2.5 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^-0.458 ^0.458 ^2.415 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^-0.884 ^0.884 ^2.165 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^-1.25 ^1.25 ^1.768 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^-1.531 ^1.531 ^1.25 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^-1.708 ^1.708 ^0.647 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^-1.768 ^1.768 ^ 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^-1.708 ^1.708 ^-0.647 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^-1.531 ^1.531 ^-1.25 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^-1.25 ^1.25 ^-1.768 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^-0.884 ^0.884 ^-2.165 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^-0.458 ^0.458 ^-2.415 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^ ^ ^-2.5 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^0.458 ^-0.458 ^-2.415 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^0.884 ^-0.884 ^-2.165 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^1.25 ^-1.25 ^-1.768 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^1.531 ^-1.531 ^-1.25 0.04 0.04 0.04 0 2 force
-execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run particle minecraft:bubble ^1.708 ^-1.708 ^-0.647 0.04 0.04 0.04 0 2 force
-
+execute if score @s rng8 matches 102..121 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round
 
 # 第三轮释放完 5 秒后，rng8 归零
 execute if score @s rng8 matches 202.. run scoreboard players set @s rng8 0
