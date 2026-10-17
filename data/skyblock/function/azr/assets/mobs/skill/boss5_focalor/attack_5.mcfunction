@@ -75,8 +75,10 @@ scoreboard players add @s rng17 14
 execute if score @s rng19 matches 100.. run scoreboard players remove @s rng18 1
 
 # 冷却结束，朝最近玩家的水平方向发射光柱
-execute if score @s rng19 matches 100.. if score @s rng18 matches ..0 at @s anchored feet facing entity @p eyes rotated ~ 0 positioned ^ ^1 ^2run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.8
+execute if score @s rng19 matches 100.. if score @s rng18 matches ..0 at @s anchored feet facing entity @p eyes rotated ~ 0 positioned ^ ^1 ^2 run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.8
 execute if score @s rng19 matches 100.. if score @s rng18 matches ..0 at @s anchored feet facing entity @p eyes rotated ~ 0 positioned ^ ^1 ^2 summon marker run function skyblock:azr/assets/mobs/skill/trap/underwater_light
+
+kill @n[tag=AzrielMob_trap_underwater_light,distance=10..16]
 
 # 按当前加速进度设置下一次冷却
 execute if score @s rng19 matches 100.. if score @s rng18 matches ..0 run scoreboard players operation @s rng18 = @s rng17
