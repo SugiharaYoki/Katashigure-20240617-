@@ -66,11 +66,14 @@ execute if score @s[scores={rng20=2},tag=!phase2_conv] rng8 matches 2 at @s run 
 execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 2 at @s run playsound minecraft:entity.wither.spawn block @a -79840 -5 80 10 0.5
 execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 13 at @s run playsound entity.generic.explode block @a -79840 -5 80 10 0.6
 execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 15 at @s run playsound entity.generic.explode block @a -79840 -5 80 10 0.6
-execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 15 at @s run particle minecraft:campfire_cosy_smoke -79840 -5 80 10 1 10 0.03 300
+execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 17 at @s run playsound entity.generic.explode block @a -79840 -5 80 10 0.6
+execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 13 at @s run particle minecraft:campfire_cosy_smoke -79840 -5 80 10 1 10 0.03 300
 execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 15 at @s run particle minecraft:explosion -79840 -5 80 10 1 10 0.03 50
+execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 17 at @s run particle minecraft:campfire_cosy_smoke -79840 -5 80 10 1 10 0.03 300
+execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 17 at @s run particle minecraft:explosion -79840 -5 80 10 1 10 0.03 50
 execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 13 at @s run fill -79843 -5 83 -79837 -5 77 water replace deepslate_tiles
-execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 14 at @s run fill -79853 -5 93 -79827 -5 67 water replace deepslate_tiles
-execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 15 at @s run fill -79863 -5 103 -79817 -5 57 water replace deepslate_tiles
+execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 15 at @s run fill -79853 -5 93 -79827 -5 67 water replace deepslate_tiles
+execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 17 at @s run fill -79863 -5 103 -79817 -5 57 water replace deepslate_tiles
 #execute if score @s[scores={rng20=4},tag=!phase4_conv] rng8 matches 2 at @s run
 #execute if score @s[scores={rng20=5},tag=!phase5_conv] rng8 matches 2 at @s run
 #execute if score @s[scores={rng20=6},tag=!phase6_conv] rng8 matches 2 at @s run
