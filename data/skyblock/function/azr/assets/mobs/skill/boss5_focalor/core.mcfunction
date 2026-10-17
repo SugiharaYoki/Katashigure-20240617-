@@ -61,10 +61,10 @@ execute if score @s[scores={rng20=5}] rng8 matches 2.. at @s run function skyblo
 execute if score @s[scores={rng20=6}] rng8 matches 2.. at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/attack_6
 
 # 每轮最后六 tick 随机 rng1；原来的 615..620 改为 195..200
-execute if score @s rng8 matches 195..200 store result score @s rng1 run random value 0..15
+execute if score @s rng8 matches 290..300 store result score @s rng1 run random value -15..-3
 
 # ==================== 音乐 ====================
 
 execute if score @s AzrEntityTimer matches 1.. unless score @s Health matches ..80 run scoreboard players add @s rng9 1
 execute if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:trideca music @s ~ ~ ~ 0.65
-execute if score @s rng9 matches 2850.. run scoreboard players set @s rng9 0
+execute if score @s rng9 matches 2310.. run scoreboard players set @s rng9 0

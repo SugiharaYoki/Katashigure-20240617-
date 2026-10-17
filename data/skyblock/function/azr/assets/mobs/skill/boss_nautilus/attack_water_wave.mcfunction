@@ -11,12 +11,12 @@ execute if score @s rng8 matches 15 facing entity @p[tag=azrPlayer] feet rotated
 execute if score @s rng8 matches 15 facing entity @p[tag=azrPlayer] feet rotated ~ 0 run kill @e[type=marker,tag=AzrielMob_move_marker]
 
 
-execute if score @s rng8 matches 14 as @s at @s run function skyblock:azr/assets/mobs/trap_underwater_wind
-execute if score @s[scores={Health=..100}] rng8 matches 14 as @s at @s positioned ^3 ^ ^ run function skyblock:azr/assets/mobs/trap_underwater_wind
-execute if score @s[scores={Health=..100}] rng8 matches 14 as @s at @s positioned ^-3 ^ ^ run function skyblock:azr/assets/mobs/trap_underwater_wind
-execute if score @s[scores={Health=..330}] rng8 matches 19 as @s at @s positioned ^ ^-2 ^ run function skyblock:azr/assets/mobs/trap_underwater_wind
-execute if score @s[scores={Health=..330}] rng8 matches 19 as @s at @s positioned ^ ^2 ^ run function skyblock:azr/assets/mobs/trap_underwater_wind
-execute if score @s[scores={Health=..250}] rng8 matches 24 as @s at @s positioned ^ ^ ^ run function skyblock:azr/assets/mobs/trap_underwater_wind
+execute if score @s rng8 matches 14 as @s at @s run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
+execute if score @s[scores={Health=..100}] rng8 matches 14 as @s at @s positioned ^3 ^ ^ run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
+execute if score @s[scores={Health=..100}] rng8 matches 14 as @s at @s positioned ^-3 ^ ^ run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
+execute if score @s[scores={Health=..330}] rng8 matches 19 as @s at @s positioned ^ ^-2 ^ run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
+execute if score @s[scores={Health=..330}] rng8 matches 19 as @s at @s positioned ^ ^2 ^ run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
+execute if score @s[scores={Health=..250}] rng8 matches 24 as @s at @s positioned ^ ^ ^ run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
 
 
 

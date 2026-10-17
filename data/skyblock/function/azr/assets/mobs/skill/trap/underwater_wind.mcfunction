@@ -4,7 +4,6 @@ scoreboard players add @s rng1 1
 data merge entity @s {NoGravity:1b,NoAI:1b,Motion:[0.0d,0.0d,0.0d]}
 
 execute if score @s[tag=straight] rng1 matches 2 at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielNPC_focalor]
-execute if score @s[tag=straight] rng1 matches 2 at @s rotated as @s run tp @s ^ ^ ^5.5
 
 # 出水标记为到期，后续不再移动或攻击
 execute at @s unless block ~ ~ ~ #skyblock:water run scoreboard players set @s rng1 160
