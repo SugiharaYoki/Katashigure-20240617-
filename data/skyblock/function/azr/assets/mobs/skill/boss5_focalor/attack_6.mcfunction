@@ -90,33 +90,33 @@ execute if score @s rng8 matches 110..130 at @s positioned ~ ~1 ~ summon marker 
 execute if score @s rng8 matches 110..130 at @s positioned ~ ~1 ~ summon marker run function skyblock:azr/assets/mobs/skill/trap/underwater_wind_small_random
 
 
-# 从 rng8=131 开始，每 20 tick 一轮
+# 从 rng8=171 开始，每 20 tick 一轮
 scoreboard players operation @s rng7 = @s rng8
 scoreboard players remove @s rng7 291
 scoreboard players set @s rng16 18
 scoreboard players operation @s rng7 %= @s rng16
 
 # 每轮音效
-execute if score @s rng8 matches 131.. if score @s rng7 matches 0 at @s run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.7
-execute if score @s rng8 matches 131.. if score @s rng7 matches 0 at @s run playsound minecraft:entity.camel_husk.hurt hostile @a ~ ~ ~ 1.5 0.66
+execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.7
+execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s run playsound minecraft:entity.camel_husk.hurt hostile @a ~ ~ ~ 1.5 0.66
 
 # 最近玩家上方：以玩家眼睛为基准，上方 5 格，四个 X 型角点
-execute if score @s rng8 matches 131.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored eyes positioned ^5 ^5 ^5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
-execute if score @s rng8 matches 131.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored eyes positioned ^5 ^5 ^-5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
-execute if score @s rng8 matches 131.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored eyes positioned ^-5 ^5 ^5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
-execute if score @s rng8 matches 131.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored eyes positioned ^-5 ^5 ^-5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
+execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored eyes positioned ^5 ^5 ^5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
+execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored eyes positioned ^5 ^5 ^-5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
+execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored eyes positioned ^-5 ^5 ^5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
+execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored eyes positioned ^-5 ^5 ^-5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
 
 # 最近玩家下方：以玩家脚部为基准，下方 5 格，四个 X 型角点
-execute if score @s rng8 matches 131.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored feet positioned ^5 ^-5 ^5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
-execute if score @s rng8 matches 131.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored feet positioned ^5 ^-5 ^-5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
-execute if score @s rng8 matches 131.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored feet positioned ^-5 ^-5 ^5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
-execute if score @s rng8 matches 131.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored feet positioned ^-5 ^-5 ^-5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
+execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored feet positioned ^5 ^-5 ^5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
+execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored feet positioned ^5 ^-5 ^-5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
+execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored feet positioned ^-5 ^-5 ^5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
+execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored feet positioned ^-5 ^-5 ^-5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
 
 # 佛卡洛自身上下左右 3 格，各生成一个追踪风
-execute if score @s rng8 matches 131.. if score @s rng7 matches 0 at @s rotated ~ 0 anchored feet positioned ^ ^3 ^ run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
-execute if score @s rng8 matches 131.. if score @s rng7 matches 0 at @s rotated ~ 0 anchored feet positioned ^ ^-3 ^ run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
-execute if score @s rng8 matches 131.. if score @s rng7 matches 0 at @s rotated ~ 0 anchored feet positioned ^3 ^ ^ run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
-execute if score @s rng8 matches 131.. if score @s rng7 matches 0 at @s rotated ~ 0 anchored feet positioned ^-3 ^ ^ run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
+execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s rotated ~ 0 anchored feet positioned ^ ^3 ^ run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
+execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s rotated ~ 0 anchored feet positioned ^ ^-3 ^ run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
+execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s rotated ~ 0 anchored feet positioned ^3 ^ ^ run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
+execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s rotated ~ 0 anchored feet positioned ^-3 ^ ^ run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
 
 # 将本 tick 生成的向内风交给现有普通风控制函数
 # straight 保证只锁定初始方向，AzrFocalor_wind_inward 决定向前飞
@@ -139,8 +139,8 @@ scoreboard players operation @s rng17 /= @s rng16
 scoreboard players add @s rng17 26
 
 # 第 10 秒开始发射散射风
-execute if score @s rng8 matches 200.. run scoreboard players remove @s rng18 1
+execute if score @s rng8 matches 230.. run scoreboard players remove @s rng18 1
 
-execute if score @s rng8 matches 200.. if score @s rng18 matches ..0 at @s anchored feet facing entity @p eyes rotated ~ 0 positioned ^ ^1 ^2 run summon marker ~ ~ ~ {Tags:["AzrielMob","AzrielMob_trap_underwater_wind_scatter","AzrielMob_trap","AzrielMob_level_1","AzrielMob_mob_marker","straight"]}
+execute if score @s rng8 matches 230.. if score @s rng18 matches ..0 at @s anchored feet facing entity @p eyes rotated ~ 0 positioned ^ ^1 ^2 run summon marker ~ ~ ~ {Tags:["AzrielMob","AzrielMob_trap_underwater_wind_scatter","AzrielMob_trap","AzrielMob_level_1","AzrielMob_mob_marker","straight"]}
 
-execute if score @s rng8 matches 200.. if score @s rng18 matches ..0 run scoreboard players operation @s rng18 = @s rng17
+execute if score @s rng8 matches 230.. if score @s rng18 matches ..0 run scoreboard players operation @s rng18 = @s rng17
