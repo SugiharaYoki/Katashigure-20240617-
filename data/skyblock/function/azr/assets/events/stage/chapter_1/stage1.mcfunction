@@ -42,10 +42,10 @@ execute if score stage_main_thread AzrTimerStack matches 65 positioned -79937 38
 execute if score stage_main_thread AzrTimerStack matches 65 positioned -79937 38 15 run function skyblock:azr/assets/mobs/undead
 execute if score stage_main_thread AzrTimerStack matches 65 run title @a[tag=azrShowDialog] actionbar {text:"Stage Clear",color:"green"}
 
-execute if score stage_main_thread AzrTimerStack matches 72.. run fill -79934 41 -1 -79934 38 1 air destroy
+execute if score stage_main_thread AzrTimerStack matches 72.. run fill -79934 42 -1 -79934 38 1 air destroy
 
 execute if score stage_main_thread AzrTimerStack matches 72.. run fill -79931 40 6 -79931 38 6 air destroy
-execute if score stage_main_thread AzrTimerStack matches 72.. run fill -79928 40 1 -79928 38 -1 air destroy
+execute if score stage_main_thread AzrTimerStack matches 72.. run fill -79928 42 1 -79928 38 -1 air destroy
 execute if score stage_main_thread AzrTimerStack matches 72.. as @a[tag=azrPlatyer] at @s unless score @s Azr_skillPoints matches 1.. run tellraw @s [{text:"你已永久解锁「生命手册」与「节制天平」。\n记得收集绿宝石与素材，使用「生命手册」换取必要的武器与道具。\n消耗绿宝石在「节制天平」中解锁新的主/被动技能。\n\n打开背包用鼠标选定“生命手册”或“节制天平”以开启商店，并使用聊天区域进行交互。"}]
 execute if score stage_main_thread AzrTimerStack matches 72.. run scoreboard players set stage Azr_system 3
 execute if score stage_main_thread AzrTimerStack matches 72.. run scoreboard players reset tick_main_thread AzrTimerStack
