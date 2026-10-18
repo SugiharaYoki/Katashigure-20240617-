@@ -62,6 +62,8 @@ execute if score @s rng1 matches 899 run scoreboard players set @s rng1 898
 execute if score @s rng1 matches 400..900 positioned -79840 -17 80 unless entity @n[tag=AzrielNPC_focalor,distance=..500] run scoreboard players set @s rng1 901
 
 
+execute if score @s rng1 matches 902 run stopsound @a[tag=azrShowDialog] music minecraft:trideca
+execute if score @s rng1 matches 902 run bossbar remove azr:boss_hp_bar
 execute if score @s rng1 matches 910 positioned -79840 -7 80 run function skyblock:azr/assets/mobs/skill/boss5_focalor/summon
 execute if score @s rng1 matches 910 as @n[tag=AzrielNPC_focalor] at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round
 execute if score @s rng1 matches 910 as @n[tag=AzrielNPC_focalor] at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round_large
