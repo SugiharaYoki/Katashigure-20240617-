@@ -22,4 +22,4 @@ fill -79893 -26 -304 -79888 -31 -304 netherite_block
 
 
 execute positioned -79862 -18 -126 if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79862 -18 -126 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players set @s rng1 1253
+execute positioned -79862 -18 -126 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players set @s rng1 1999
