@@ -36,7 +36,7 @@ execute if score @s rng8 matches 350.. at @s positioned ~ ~ ~ run particle trail
 # 两次环形释放：rng8=55、75
 scoreboard players set @s rng14 0
 execute if score @s rng8 matches 55 run scoreboard players set @s rng14 1
-execute if score @s rng8 matches 75 run scoreboard players set @s rng14 1
+execute if score @s rng8 matches 125 run scoreboard players set @s rng14 1
 
 execute if score @s rng14 matches 1 at @s run playsound minecraft:entity.evoker.prepare_attack hostile @a ~ ~ ~ 1.5 1.1
 
@@ -62,7 +62,7 @@ execute if score @s rng14 matches 1 at @s run summon marker ~ ~ ~ {Tags:["AzrFoc
 execute if score @s rng14 matches 1 at @s run summon marker ~ ~ ~ {Tags:["AzrFocalor_ring_guide"],Rotation:[340.0f,0.0f]}
 
 # 第二轮整体水平偏移 5°
-execute if score @s rng8 matches 75 as @e[type=marker,tag=AzrFocalor_ring_guide] at @s run tp @s ~ ~ ~ ~5 ~
+execute if score @s rng8 matches 125 as @e[type=marker,tag=AzrFocalor_ring_guide] at @s run tp @s ~ ~ ~ ~5 ~
 
 # 七个风的一列：垂直 -90°～90°，间隔 30°，距离中心严格为 20 格
 execute as @e[type=marker,tag=AzrFocalor_ring_guide] at @s rotated ~ -90 positioned ^ ^ ^20 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
