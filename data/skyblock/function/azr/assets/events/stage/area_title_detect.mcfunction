@@ -33,21 +33,36 @@ execute unless score @s AzrPlayer_CurrentArea matches 8 if entity @s[x=-79970,y=
                                                 {area_id:8,title:"天 使 的 憩 庭",color_code:"#22fb92"}
 
 
+
+execute unless score stage Azr_system matches 100.. unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79965,y=37,z=-17,dx=5,dy=5,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
+execute unless score stage Azr_system matches 100.. unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79933,y=38,z=98,dx=5,dy=5,dz=3] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
+execute unless score stage Azr_system matches 100.. unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79929,y=33,z=32,dx=4,dy=4,dz=6] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
+execute unless score stage Azr_system matches 100.. unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79932,y=38,z=-18,dx=3,dy=4,dz=10] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
+execute unless score stage Azr_system matches 100.. unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79904,y=37,z=26,dx=3,dy=5,dz=8] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
+execute unless score stage Azr_system matches 100.. unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79896,y=42,z=-67,dx=12,dy=12,dz=12] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
+execute unless score stage Azr_system matches 100.. unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79899,y=32,z=-50,dx=8,dy=4,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
                                                 
-execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79965,y=37,z=-17,dx=5,dy=5,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
-                                                {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
-execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79933,y=38,z=98,dx=5,dy=5,dz=3] run function skyblock:azr/assets/events/stage/area_title_show \
-                                                {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
-execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79929,y=33,z=32,dx=4,dy=4,dz=6] run function skyblock:azr/assets/events/stage/area_title_show \
-                                                {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
-execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79932,y=38,z=-18,dx=3,dy=4,dz=10] run function skyblock:azr/assets/events/stage/area_title_show \
-                                                {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
-execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79904,y=37,z=26,dx=3,dy=5,dz=8] run function skyblock:azr/assets/events/stage/area_title_show \
-                                                {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
-execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79896,y=42,z=-67,dx=12,dy=12,dz=12] run function skyblock:azr/assets/events/stage/area_title_show \
-                                                {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
-execute unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79899,y=32,z=-50,dx=8,dy=4,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
-                                                {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
+execute if score stage Azr_system matches 100.. unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79965,y=37,z=-17,dx=5,dy=5,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:1,title:"焚 毁 之 砦",color_code:"#ffc933"}
+execute if score stage Azr_system matches 100.. unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79933,y=38,z=98,dx=5,dy=5,dz=3] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:1,title:"焚 毁 之 砦",color_code:"#ffc933"}
+execute if score stage Azr_system matches 100.. unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79929,y=33,z=32,dx=4,dy=4,dz=6] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:1,title:"焚 毁 之 砦",color_code:"#ffc933"}
+execute if score stage Azr_system matches 100.. unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79932,y=38,z=-18,dx=3,dy=4,dz=10] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:1,title:"焚 毁 之 砦",color_code:"#ffc933"}
+execute if score stage Azr_system matches 100.. unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79904,y=37,z=26,dx=3,dy=5,dz=8] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:1,title:"焚 毁 之 砦",color_code:"#ffc933"}
+execute if score stage Azr_system matches 100.. unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79896,y=42,z=-67,dx=12,dy=12,dz=12] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:1,title:"焚 毁 之 砦",color_code:"#ffc933"}
+execute if score stage Azr_system matches 100.. unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79899,y=32,z=-50,dx=8,dy=4,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:1,title:"焚 毁 之 砦",color_code:"#ffc933"}
 
 
 execute unless score @s AzrPlayer_CurrentArea matches 5 if entity @s[x=-79923,y=33,z=33,dx=4,dy=3,dz=4] run function skyblock:azr/assets/events/stage/area_title_show \
@@ -135,12 +150,19 @@ execute unless score @s AzrPlayer_CurrentArea matches 12 positioned -79810 26 96
 
 
 #复活点
-execute unless score @s AzrPlayer_CurrentArea matches 1 positioned -79943 37 -8 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+execute unless score stage Azr_system matches 100.. unless score @s AzrPlayer_CurrentArea matches 1 positioned -79943 37 -8 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:1,title:"重生锚点：西庭外围A",color_code:"#e9ffe0"}
-execute unless score @s AzrPlayer_CurrentArea matches 1 positioned -79931 32 28 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+execute unless score stage Azr_system matches 100.. unless score @s AzrPlayer_CurrentArea matches 1 positioned -79931 32 28 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:1,title:"重生锚点：西庭外围B",color_code:"#e9ffe0"}
-execute unless score @s AzrPlayer_CurrentArea matches 1 positioned -79879 42 -42 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+execute unless score stage Azr_system matches 100.. unless score @s AzrPlayer_CurrentArea matches 1 positioned -79879 42 -42 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:1,title:"重生锚点：西庭外围C",color_code:"#e9ffe0"}
+execute if score stage Azr_system matches 100.. unless score @s AzrPlayer_CurrentArea matches 1 positioned -79943 37 -8 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:1,title:"重生锚点：焚毁之砦A",color_code:"#ffc933"}
+execute if score stage Azr_system matches 100.. unless score @s AzrPlayer_CurrentArea matches 1 positioned -79931 32 28 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:1,title:"重生锚点：焚毁之砦B",color_code:"#ffc933"}
+execute if score stage Azr_system matches 100.. unless score @s AzrPlayer_CurrentArea matches 1 positioned -79879 42 -42 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:1,title:"重生锚点：焚毁之砦C",color_code:"#ffc933"}
+
 execute unless score @s AzrPlayer_CurrentArea matches 5 positioned -79858 30 0 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:5,title:"重生锚点：逾怜藓路",color_code:"#035e01"}
 execute unless score @s AzrPlayer_CurrentArea matches 2 positioned -79935 32 130 if entity @s[distance=..4] run function skyblock:azr/assets/events/stage/area_title_show \
@@ -215,4 +237,4 @@ execute positioned -79676 -11 113 if entity @s[distance=..4] run tag @s add azrP
 
 
 
-#tellraw @s {"color": "#333dff"}
+#tellraw @s {"color": "#ffc933"}

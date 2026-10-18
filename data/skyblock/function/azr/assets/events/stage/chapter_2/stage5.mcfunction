@@ -131,6 +131,13 @@ execute if score stage_main_thread AzrTimerStack matches 204 positioned -79836 4
 execute if score stage_main_thread AzrTimerStack matches 204 positioned -79836 42 87 run function skyblock:azr/assets/mobs/pillager
 execute if score stage_main_thread AzrTimerStack matches 204 positioned -79836 42 87 run function skyblock:azr/assets/mobs/sword
 execute if score stage_main_thread AzrTimerStack matches 204 positioned -79836 42 87 run function skyblock:azr/assets/mobs/axe
+
+#蓄水池入口区域野怪
+execute if score stage_main_thread AzrTimerStack matches 204 positioned -79832 2 125 run forceload add ~ ~
+execute if score stage_main_thread AzrTimerStack matches 204 positioned -79832 2 125 run function skyblock:azr/assets/mobs/guardian
+
+
+
 #execute if score stage_main_thread AzrTimerStack matches 204 run tellraw @a[scores={Azr_skillPoints=..5}] [{text:"永久升级：",color:"light_purple",bold:1b},{text:"开始新游戏时，绿宝石数量 +5",color:"white",bold: false}]
 execute if score stage_main_thread AzrTimerStack matches 204 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..5}] Azr_skillPoints 6
 execute if score stage_main_thread AzrTimerStack matches 204 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage5
