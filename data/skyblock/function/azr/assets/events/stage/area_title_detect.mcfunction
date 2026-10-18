@@ -87,6 +87,8 @@ execute unless score @s AzrPlayer_CurrentArea matches 4 if entity @s[x=-79877,y=
                                                 {area_id:4,title:"智 述 文 馆",color_code:"#eb83dd"}
 execute unless score @s AzrPlayer_CurrentArea matches 4 if entity @s[x=-79894,y=37,z=91,dx=5,dy=5,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:4,title:"智 述 文 馆",color_code:"#eb83dd"}
+execute unless score @s AzrPlayer_CurrentArea matches 4 if entity @s[x=-79854,y=30,z=93,dx=5,dy=5,dz=3] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:4,title:"智 述 文 馆",color_code:"#eb83dd"}
 
 execute unless score @s AzrPlayer_CurrentArea matches 7 if entity @s[x=-79897,y=33,z=-56,dx=5,dy=3,dz=4] as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:slime}
 execute unless score @s AzrPlayer_CurrentArea matches 7 if entity @s[x=-79846,y=25,z=-57,dx=16,dy=12,dz=4] as @a[tag=azrPlayer] at @s run function skyblock:azr/system/shop/purchase/handbook/input {doc:slime}
@@ -124,6 +126,8 @@ execute unless score @s AzrPlayer_CurrentArea matches 11 positioned -79791 213 -
                                                 {area_id:11,title:"神 代 茏 渠",color_code:"#7de300"}
 
 execute unless score @s AzrPlayer_CurrentArea matches 12 positioned -79764 -58 73 if entity @s[distance=..6.6] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:12,title:"蓄 水 池",color_code:"#333dff"}
+execute unless score @s AzrPlayer_CurrentArea matches 12 positioned -79810 26 96 if entity @s[distance=..6] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:12,title:"蓄 水 池",color_code:"#333dff"}
 
 #
