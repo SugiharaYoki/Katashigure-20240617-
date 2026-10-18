@@ -237,4 +237,4 @@ execute positioned -79676 -11 113 if entity @s[distance=..4] run tag @s add azrP
 
 
 
-#tellraw @s {"color": "#ffc933"}
+#tellraw @s {"color": "#6dff33"}

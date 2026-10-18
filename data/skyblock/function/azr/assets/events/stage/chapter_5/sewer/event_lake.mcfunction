@@ -104,7 +104,7 @@ execute if score @s rng1 matches 937..950 as @a[tag=azrPlayer] at @s run particl
 
 execute if score @s rng1 matches 942 as @a[tag=azrPlayer] at @s run attribute @s max_health modifier add azr_progress:life_ch6 40 add_value
 execute if score @s rng1 matches 942 run bossbar remove azr:boss_hp_bar
-
+execute if score @s rng1 matches 942 run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_davidstar
 
 execute if score @s rng1 matches 982 run scoreboard players set stage Azr_system 100
 execute if score @s rng1 matches 982 run title @a[tag=azrShowDialog] actionbar {text:"Chapter Clear",color:"gold"}
