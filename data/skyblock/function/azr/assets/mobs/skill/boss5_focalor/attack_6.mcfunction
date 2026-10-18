@@ -14,12 +14,12 @@ execute if score @s rng8 matches 25 at @s rotated ~ 0 positioned ~ ~1 ~ run func
 execute if score @s rng8 matches 35 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round
 execute if score @s rng8 matches 45 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round
 execute if score @s rng8 matches 55 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round
-execute if score @s rng8 matches 65 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round
-execute if score @s rng8 matches 75 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round
+execute if score @s rng8 matches 125 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round
+execute if score @s rng8 matches 171 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round
 
 execute if score @s rng8 matches 55 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round_large
-execute if score @s rng8 matches 65 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round_large
-execute if score @s rng8 matches 75 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round_large
+execute if score @s rng8 matches 125 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round_large
+execute if score @s rng8 matches 171 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round_large
 
 # 汇聚粒子
 execute if score @s rng8 matches 25..80 at @s positioned ~ ~20 ~ run particle trail{color:6666239,duration:120,target:[-79840,-7,80]} ~ ~ ~ 5 5 5 0 2
@@ -100,23 +100,29 @@ scoreboard players operation @s rng7 %= @s rng16
 execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s run playsound minecraft:entity.zombie_nautilus.dash_ready hostile @a ~ ~ ~ 2 0.7
 execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s run playsound minecraft:entity.camel_husk.hurt hostile @a ~ ~ ~ 1.5 0.66
 
-# 最近玩家上方：以玩家眼睛为基准，上方 5 格，四个 X 型角点
-execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored eyes positioned ^5 ^5 ^5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
-execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored eyes positioned ^5 ^5 ^-5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
-execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored eyes positioned ^-5 ^5 ^5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
-execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored eyes positioned ^-5 ^5 ^-5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
-
-# 最近玩家下方：以玩家脚部为基准，下方 5 格，四个 X 型角点
-execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored feet positioned ^5 ^-5 ^5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
-execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored feet positioned ^5 ^-5 ^-5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
-execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored feet positioned ^-5 ^-5 ^5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
-execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s as @p at @s rotated ~ 0 anchored feet positioned ^-5 ^-5 ^-5 run summon marker ~ ~ ~ {Tags:["AzrFocalor_wind_in_new"]}
 
 # 佛卡洛自身上下左右 3 格，各生成一个追踪风
 execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s rotated ~ 0 anchored feet positioned ^ ^3 ^ run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
 execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s rotated ~ 0 anchored feet positioned ^ ^-3 ^ run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
 execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s rotated ~ 0 anchored feet positioned ^3 ^ ^ run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
 execute if score @s rng8 matches 171.. if score @s rng7 matches 0 at @s rotated ~ 0 anchored feet positioned ^-3 ^ ^ run function skyblock:azr/assets/mobs/trap_underwater_wind_trace
+
+
+
+# 保存当前水平朝向
+execute if score @s rng7 matches 1 run data modify entity @s data.AzrFocalor_attack5_yaw set from entity @s Rotation[0]
+
+# 临时随机水平角度，用于确定药水在圆周上的位置
+execute if score @s rng7 matches 1 store result entity @s Rotation[0] float 0.01 run random value 0..35999
+
+# 以自身眼睛上方 5 格为圆心，水平半径严格为 8 格
+execute if score @s rng7 matches 1 at @s rotated ~ 0 anchored eyes positioned ^ ^5 ^ positioned ^ ^ ^8 run summon minecraft:splash_potion ~ ~ ~ {Motion:[0.0d,-0.2d,0.0d],Item:{id:"minecraft:splash_potion",count:1,components:{"minecraft:potion_contents":{potion:"minecraft:strong_harming"}}}}
+
+# 恢复朝向，清除临时数据
+execute if score @s rng7 matches 1 run data modify entity @s Rotation[0] set from entity @s data.AzrFocalor_attack5_yaw
+execute if score @s rng7 matches 1 run data remove entity @s data.AzrFocalor_attack5_yaw
+
+
 
 # 将本 tick 生成的向内风交给现有普通风控制函数
 # straight 保证只锁定初始方向，AzrFocalor_wind_inward 决定向前飞
