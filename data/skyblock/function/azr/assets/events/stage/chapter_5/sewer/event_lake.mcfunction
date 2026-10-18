@@ -64,25 +64,27 @@ execute if score @s rng1 matches 400..900 positioned -79840 -17 80 unless entity
 
 
 execute if score @s rng1 matches 902 run stopsound @a[tag=azrShowDialog] music minecraft:trideca
-execute if score @s rng1 matches 910 positioned -79840 -7 80 run function skyblock:azr/assets/mobs/skill/boss5_focalor/summon
-execute if score @s rng1 matches 910 as @n[tag=AzrielNPC_focalor] at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round
-execute if score @s rng1 matches 910 as @n[tag=AzrielNPC_focalor] at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round_large
+execute if score @s rng1 matches 907 positioned -79840 -7 80 run function skyblock:azr/assets/mobs/skill/boss5_focalor/summon
+execute if score @s rng1 matches 907 as @n[tag=AzrielNPC_focalor] at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round
+execute if score @s rng1 matches 907 as @n[tag=AzrielNPC_focalor] at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round_large
 
-execute if score @s rng1 matches 912 run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“太好了，爱理莎。”",color:"white"}]
+execute if score @s rng1 matches 909 run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“太好了，爱理莎。”",color:"white"}]
 
-execute if score @s rng1 matches 917..942 as @n[tag=AzrielNPC_focalor] at @s run particle totem_of_undying ~ ~1 ~ 0.3 0.3 0.3 0.2 8
+execute if score @s rng1 matches 917..942 as @n[tag=AzrielNPC_focalor] at @s run particle totem_of_undying ~ ~1 ~ 0.3 0.3 0.3 0.8 4
+execute if score @s rng1 matches 927..942 as @n[tag=AzrielNPC_focalor] at @s run particle end_rod ~ ~1 ~ 0 0.3 0 0.8 8
 execute if score @s rng1 matches 917..948 run particle soul -79839.51 -10.00 80.53 0.5 10 0.5 0.03 50
+execute if score @s rng1 matches 937..948 run particle soul -79839.51 -10.00 80.53 2.5 10 2.5 0.03 50
 execute if score @s rng1 matches 917..942 run particle ominous_spawning -79839.51 -10.00 80.53 0. 10 0. 0.33 50
 execute if score @s rng1 matches 917 run summon minecraft:lightning_bolt -79839.51 -23.00 80.53
 execute if score @s rng1 matches 919 run summon minecraft:lightning_bolt -79839.51 -23.00 80.53
 execute if score @s rng1 matches 921 run summon minecraft:lightning_bolt -79839.51 -23.00 80.53
 execute if score @s rng1 matches 923 run summon minecraft:lightning_bolt -79839.51 -23.00 80.53
 execute if score @s rng1 matches 925 run summon minecraft:lightning_bolt -79839.51 -23.00 80.53
-execute if score @s rng1 matches 917 run playsound minecraft:entity.ender_dragon.death hostile @a ~ ~ ~ 10 0.5
+execute if score @s rng1 matches 917 run playsound minecraft:entity.ender_dragon.death hostile @a ~ ~ ~ 10 0.9
 
-execute if score @s rng1 matches 942 run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“请你帮沙利叶……改变世界的轨迹。”",color:"white"}]
+execute if score @s rng1 matches 932 run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“请你帮沙利叶……改变世界的轨迹。”",color:"white"}]
 
-execute if score @s rng1 matches 942 as @n[tag=AzrielNPC_focalor] at @s run particle totem_of_undying ~ ~1 ~ 0.3 0.3 0.3 0.4 80
+execute if score @s rng1 matches 942 as @n[tag=AzrielNPC_focalor] at @s run particle totem_of_undying ~ ~1 ~ 0.3 0.3 0.3 1.4 80
 execute if score @s rng1 matches 942 as @n[tag=AzrielNPC_focalor] at @s run particle gust_emitter_large ~ ~1 ~ 0 0 0 0.4 1
 execute if score @s rng1 matches 942 as @n[tag=AzrielNPC_focalor] at @s run effect give @s invisibility infinite 0 true
 execute if score @s rng1 matches 943 as @n[tag=AzrielNPC_focalor] at @s run tp @s ~ ~-100 ~
@@ -94,7 +96,7 @@ execute if score @s rng1 matches 942 run summon minecraft:lightning_bolt -79839.
 execute if score @s rng1 matches 942 run summon minecraft:lightning_bolt -79839.51 -23.00 80.53
 
 execute if score @s rng1 matches 917..950 as @a[tag=azrPlayer] at @s run particle minecraft:crit ~ ~1 ~ 0 0 0 2.0 8
-execute if score @s rng1 matches 927..950 as @a[tag=azrPlayer] at @s run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.8 0.8 0.8 2.0 5
+execute if score @s rng1 matches 937..950 as @a[tag=azrPlayer] at @s run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.8 0.8 0.8 2.0 2
 
 execute if score @s rng1 matches 942 as @a[tag=azrPlayer] at @s run attribute @s max_health modifier add azr_progress:life_ch6 40 add_value
 execute if score @s rng1 matches 942 run bossbar remove azr:boss_hp_bar
