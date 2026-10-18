@@ -48,8 +48,17 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_flower_wall:1b}
 execute if items entity @s container.* *[custom_data~{azr_amulet_flower_wall_fire:1b}] run function skyblock:azr/system/player/skills/amulet/flower_wall_fire_core
 
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_double_arrow:1b}] run function skyblock:azr/system/player/skills/amulet/double_arrow_core
-execute if items entity @s container.* *[custom_data~{azr_amulet_stay_float:1b}] unless items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run function skyblock:azr/system/player/skills/amulet/stay_float_core_version3
-execute if items entity @s[tag=AZS_BoS11] container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run function skyblock:azr/system/player/skills/amulet/stay_float_core_version3
+
+execute if items entity @s container.* *[custom_data~{azr_amulet_stay_float:1b}] run tag @s add stay_float_pass
+execute if items entity @s[tag=AZS_BoS11] container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run tag @s add stay_float_pass
+execute if items entity @s[tag=AZS_BoS11] container.* *[custom_data~{azr_amulet_light_angel_4:1b}] run tag @s add stay_float_pass
+execute if entity @s[tag=stay_float_pass] at @s run function skyblock:azr/system/player/skills/amulet/stay_float_core_version3
+
+#悬蔑石板
+execute if entity @s[tag=stay_float_pass] if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. if score @s AzrSariel_Amulet_StayFloat_cooldown matches 119..135 run tag @s add azr_amulet_stay_float_attacked
+execute if entity @s[tag=stay_float_pass] if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. if score @s AzrSariel_Amulet_StayFloat_cooldown matches 119..135 run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 134
+tag @s remove stay_float_pass
+
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_axe_vortex:1b}] run function skyblock:azr/system/player/skills/amulet/axe_vortex_core
 execute if entity @s[tag=AzrSariel_Amulet_AxeVortex_SweepRatio] if entity @s[predicate=!skyblock:left,predicate=!skyblock:right] run function skyblock:azr/system/player/skills/amulet/axe_vortex_unload
 execute if entity @s[tag=AzrSariel_Amulet_AxeVortex_SweepRatio] unless items entity @s hotbar.* *[custom_data~{azr_amulet_axe_vortex:1b}] run function skyblock:azr/system/player/skills/amulet/axe_vortex_unload
@@ -94,9 +103,6 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_water_ripple:1b
 execute if items entity @s container.* *[custom_data~{azr_amulet_water_arrow:1b}] run function skyblock:azr/system/player/skills/amulet/water_arrow_core
 #AzrSariel_Amulet_WaterRipple_cooldown
 
-#悬蔑石板
-execute if items entity @s[tag=AZS_BoS11] container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. if score @s AzrSariel_Amulet_StayFloat_cooldown matches 119..135 run tag @s add azr_amulet_stay_float_attacked
-execute if items entity @s[tag=AZS_BoS11] container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. if score @s AzrSariel_Amulet_StayFloat_cooldown matches 119..135 run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 134
 
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_multiweapon:1b}] run function skyblock:azr/system/player/skills/amulet/multiweapon_bonus
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_multiweapon:1b}] if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. run function skyblock:azr/system/player/skills/amulet/multiweapon_core

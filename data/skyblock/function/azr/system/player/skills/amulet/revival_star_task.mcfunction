@@ -26,7 +26,8 @@ execute if score stage Azr_system matches 42 run tellraw @s [{text:"下个目标
 execute if score stage Azr_system matches 55..56 run tellraw @s [{text:"主任务：",color:"aqua",bold:true},{text:"找到回神庭的方法",color:"white",bold:false}]
 execute if score stage Azr_system matches 57..60 run tellraw @s [{text:"主任务：",color:"aqua",bold:true},{text:"通过神界传送门回到神庭",color:"white",bold:false}]
 execute if score stage Azr_system matches 62..76 run tellraw @s [{text:"主任务：",color:"aqua",bold:true},{text:"找到第二种回神庭的方法",color:"white",bold:false}]
-execute if score stage Azr_system matches 77.. run tellraw @s [{text:"主任务：",color:"aqua",bold:true},{text:"找到离开地下水路区域的方法",color:"white",bold:false}]
+execute if score stage Azr_system matches 77..99 run tellraw @s [{text:"主任务：",color:"aqua",bold:true},{text:"找到离开地下水路区域的方法",color:"white",bold:false}]
+execute if score stage Azr_system matches 100.. run tellraw @s [{text:"主任务：",color:"aqua",bold:true},{text:"改变世界",color:"white",bold:false}]
 execute if score stage Azr_system matches 56 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"？？？区域 第4章·解除车间博物馆上层的封锁",color:"white",bold:false}]
 execute if score stage Azr_system matches 57 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"绯烟林场区域 第4章·前往主战场",color:"white",bold:false}]
 execute if score stage Azr_system matches 58 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"绯烟林场区域 第4章·向东找到矿洞入口",color:"white",bold:false}]
@@ -37,11 +38,23 @@ execute if score stage Azr_system matches 61 if block -79469 31 -431 air run tel
 execute if score stage Azr_system matches 62 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"血金窟区域 第4章·向着强大的魔力来源前行",color:"white",bold:false}]
 execute if score stage Azr_system matches 63 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"血金窟区域 第4章·击败强大的魔力来源",color:"white",bold:false}]
 execute if score stage Azr_system matches 69 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"绯烟林场区域 第4章·回到最初坠落的地点",color:"white",bold:false}]
+#第五章
 execute if score stage Azr_system matches 76 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"？？？区域 第5章·向上前行",color:"white",bold:false}]
 execute if score stage Azr_system matches 77..80 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"神代茏渠区域 第5章·在丛林中寻找向上前行的线索",color:"white",bold:false}]
 execute if score stage Azr_system matches 81..83 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"神代茏渠区域 第5章·通过管道网络前往更上方",color:"white",bold:false}]
 execute if score stage Azr_system matches 84..89 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"神代茏渠区域 第5章·探索管道网络 找到前进的路线",color:"white",bold:false}]
 execute if score stage Azr_system matches 90 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"神代茏渠区域 第5章·击败位于丛林之心的宁芙",color:"white",bold:false}]
+execute if score stage Azr_system matches 91 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"神代茏渠区域 第5章·继续朝上方前进",color:"white",bold:false}]
+execute if score stage Azr_system matches 92 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"蓄水池区域 第5章·顺着水道前行",color:"white",bold:false}]
+execute if score stage Azr_system matches 93..94 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"蓄水池区域 第5章·通过结构柱阵列",color:"white",bold:false}]
+execute if score stage Azr_system matches 95 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"蓄水池区域 第5章·通过溢水枢纽",color:"white",bold:false}]
+execute if score stage Azr_system matches 96 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"蓄水池区域 第5章·前往结构柱阵列顶端 寻找传音的来源者",color:"white",bold:false}]
+execute if score stage Azr_system matches 97 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"蓄水池区域 第5章·跟随神秘女性 前往天造湖泊",color:"white",bold:false}]
+execute if score stage Azr_system matches 98..99 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"蓄水池区域 第5章·完成“杀死魔神”的职责",color:"white",bold:false}]
+#第六章
+
+
+
 
 execute if score stage Azr_system matches 1..4 run tellraw @s [{text:"“敌人很强大，我必须稳住节奏，慢慢应对。\n千万别忘记：在装备受损时，打开背包内的生命手册访问商店。”",color:"#c5c5c5",bold:false}]
 execute if score stage Azr_system matches 5..8 run tellraw @s [{text:"“我不一定非得急着推进试炼关卡。\n第三关的下方似乎别有洞天，而先前的结界也多有开启。\n找到隐藏关卡并通过特殊挑战，似乎会使我获得特殊的奖励。”",color:"#c5c5c5",bold:false}]
@@ -67,6 +80,8 @@ execute if score stage Azr_system matches 81..83 run tellraw @s [{text:"“既�
 execute if score stage Azr_system matches 84..86 run tellraw @s [{text:"“通过这些管道的时候，我需要小心。这里似乎早已是某些危险生物的家园。\n要是在管道系统里迷路的话，记得用命星传送回生命树根系的锚点。”",color:"#c5c5c5",bold:false}]
 execute if score stage Azr_system matches 87..89 run tellraw @s [{text:"“如果要离开丛林，我必须搞清楚为何这里的魔力潮汐被严重扭曲。\n丛林之心或许有着我想要的答案，但我总觉得那里潜藏着什么极为危险的生物。”",color:"#c5c5c5",bold:false}]
 execute if score stage Azr_system matches 90 run tellraw @s [{text:"“如果要离开丛林，我必须击败镇守在丛林之心的宁芙。\n她似乎也想要我前往那里，我不清楚原因。\n但我不觉得那是出于善意。”",color:"#c5c5c5",bold:false}]
+execute if score stage Azr_system matches 91 run tellraw @s [{text:"“宁芙已经解放了此地的魔力潮汐。\n借助魔力潮汐，我能够前往更上方的地下水路区域。”",color:"#c5c5c5",bold:false}]
+execute if score stage Azr_system matches 92..97 run tellraw @s [{text:"“这里的结构很复杂，环境也漆黑一片。\n更要命的是，这些水中藏着几种危险的生物。\n下水前，我必须做好万全准备。”",color:"#c5c5c5",bold:false}]
 #第四章
 
 execute if score stage Azr_system matches 14.. unless entity @s[tag=AZS_BoS11] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"我需要找到一种特殊移动方式，才能跨越数格宽的间隙……",color:"white",bold:false}]
@@ -79,11 +94,13 @@ execute if score stage Azr_system matches 26.. unless entity @s[tag=AZS_BoSB23] 
 execute if score stage Azr_system matches 36.. if entity @s[tag=AZS_BoS11] unless entity @s[tag=AZS_BoSB23] run tellraw @s [{text:"星光指引：",color:"#ff794c",bold:true},{text:"我不信这牢房里只关着魔物。或许我能在某间房间找到人类囚犯，对方说不定能给我提供情报。",color:"white",bold:false}]
 execute if score stage Azr_system matches 77.. unless entity @s[tag=AZS_BoS12] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"水中往往很危险，我需要保证落水后能尽快脱离水体……",color:"white",bold:false}]
 execute if score stage Azr_system matches 81.. unless entity @s[tag=AZS_BoSB19] run tellraw @s [{text:"星光指引：",color:"#ff794c",bold:true},{text:"行走于地下丛林时，我意识到有个地方魔力潮汐的密度异常之高。它似乎就源于管道殿堂上方的某处地点。",color:"white",bold:false}]
+execute if score stage Azr_system matches 95.. unless entity @s[tag=AZS_BoSB14] run tellraw @s [{text:"星光指引：",color:"#ff794c",bold:true},{text:"孤立的水体之中有很大概率存在孤立的生态。大型蓄水池中恐怕会存在危险度极高的生物。",color:"white",bold:false}]
 
 execute if score @s Azr_skillPoints matches 14.. if entity @s[tag=AZS_BoSB23] unless items entity @s container.* *[custom_data~{azr_amulet_light_angel_2:1b}] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"利用生命树的锚点，我似乎可以传送到一个特殊的场所……",color:"white",bold:false}]
 execute if score @s Azr_skillPoints matches 19.. if items entity @s container.* *[custom_data~{azr_amulet_light_angel_2:1b}] unless items entity @s container.* *[custom_data~{azr_amulet_light_angel_3:1b}] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"休憩所的华兹华斯似乎能向我提供更强大的天使符文了……",color:"white",bold:false}]
+execute if score @s Azr_skillPoints matches 50.. if items entity @s container.* *[custom_data~{azr_amulet_light_angel_3:1b}] unless items entity @s container.* *[custom_data~{azr_amulet_light_angel_4:1b}] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"休憩所的华兹华斯似乎能向我提供更强大的天使符文了……",color:"white",bold:false}]
 
-tellraw @s {text:"1984jhgu",color:"#232427",bold:false}
+tellraw @s {text:"1954mjncf",color:"#232427",bold:false}
 
 #execute if score stage Azr_system matches 19 run tellraw @s [{text:"下个目标地点：",color:"aqua",bold:true},{text:"西庭外围区域 第1章·第1关",color:"white",bold:false}]
 #execute if score stage Azr_system matches 20 run tellraw @s [{text:"下个目标地点：",color:"aqua",bold:true},{text:"西庭外围区域 第1章·第1关",color:"white",bold:false}]
