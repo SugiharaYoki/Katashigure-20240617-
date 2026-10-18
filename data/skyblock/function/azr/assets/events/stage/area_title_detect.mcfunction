@@ -71,6 +71,9 @@ execute unless score @s AzrPlayer_CurrentArea matches 5 if entity @s[x=-79943,y=
                                                 {area_id:5,title:"逾 怜 藓 路",color_code:"#035e01"}
 execute unless score @s AzrPlayer_CurrentArea matches 5 if entity @s[x=-79845,y=24,z=-37,dx=12,dy=5,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:5,title:"逾 怜 藓 路",color_code:"#035e01"}
+execute unless score @s AzrPlayer_CurrentArea matches 5 positioned -79931 27 -8 if entity @s[distance=..6.5] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:5,title:"逾 怜 藓 路",color_code:"#035e01"}
+
 
 execute unless score @s AzrPlayer_CurrentArea matches 2 if entity @s[x=-79934,y=18,z=132,dx=20,dy=40,dz=20] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:2,title:"采 光 礼 堂",color_code:"#9ef4ff"}

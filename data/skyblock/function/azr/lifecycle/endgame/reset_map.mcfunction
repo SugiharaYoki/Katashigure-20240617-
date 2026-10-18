@@ -1113,6 +1113,14 @@ item replace block -79816 16 125 container.13 with golden_apple 1
 item replace block -79816 16 125 container.15 with golden_apple 1
 
 
+function skyblock:azr/lifecycle/endgame/reset_map_ch6_undo
+
+
+
+
+
+
+
 
 # ↓↓ 待修改 ↓↓
 

@@ -27,3 +27,4 @@ fill -79863 -5 103 -79817 -5 57 water replace deepslate_tiles
 
 
 
+function skyblock:azr/lifecycle/endgame/reset_map_ch6

@@ -122,5 +122,7 @@ execute if score @s rng1 matches 975 run fill -79841 4 106 -79839 4 106 air
 
 execute if score @s rng1 matches 972 run fill -79800 -10 79 -79798 -7 81 water
 
+execute if score @s rng1 matches 972 run function skyblock:azr/lifecycle/endgame/reset_map_ch6
+
 execute if score @s rng1 matches 972..975 run playsound block.iron_trapdoor.open block @a -79840 4 106 1 0.6
 
