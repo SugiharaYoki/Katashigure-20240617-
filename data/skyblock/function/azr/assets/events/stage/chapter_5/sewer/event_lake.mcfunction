@@ -115,10 +115,10 @@ execute if score @s rng1 matches 982 as @a[tag=azrPlayer] at @s run give @s glis
 execute if score @s rng1 matches 982 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..49}] Azr_skillPoints 50
 execute if score @s rng1 matches 982 run scoreboard players reset stage_main_thread AzrTimerStack
 
-execute if score @s rng1 matches 982 run fill -79841 1 106 -79839 1 106 air
-execute if score @s rng1 matches 983 run fill -79841 2 106 -79839 2 106 air
-execute if score @s rng1 matches 984 run fill -79841 3 106 -79839 3 106 air
-execute if score @s rng1 matches 985 run fill -79841 4 106 -79839 4 106 air
+execute if score @s rng1 matches 972 run fill -79841 1 106 -79839 1 106 air
+execute if score @s rng1 matches 973 run fill -79841 2 106 -79839 2 106 air
+execute if score @s rng1 matches 974 run fill -79841 3 106 -79839 3 106 air
+execute if score @s rng1 matches 975 run fill -79841 4 106 -79839 4 106 air
 
-execute if score @s rng1 matches 982..985 run playsound block.iron_trapdoor.open block @a -79840 4 106 1 0.6
+execute if score @s rng1 matches 972..975 run playsound block.iron_trapdoor.open block @a -79840 4 106 1 0.6
 
