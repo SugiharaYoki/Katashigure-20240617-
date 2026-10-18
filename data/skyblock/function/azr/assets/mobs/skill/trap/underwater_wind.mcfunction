@@ -14,7 +14,11 @@ execute if score @s[tag=!straight] rng1 matches 30 at @s run tp @s ~ ~ ~ facing 
 
 # 此后沿自身固定朝向移动：每 tick 0.15 格，即每秒 3 格
 execute if score @s[tag=!straight] rng1 matches 31..159 at @s anchored feet run tp @s ^ ^ ^0.21
-execute if score @s[tag=straight] rng1 matches 31..159 at @s at @s run tp @s ^ ^ ^-0.24
+
+# 原有 straight：背向佛卡洛飞
+execute if score @s[tag=straight,tag=!AzrFocalor_wind_inward] rng1 matches 31..159 at @s anchored feet run tp @s ^ ^ ^-0.24
+# 本阶段的向内风：朝初始锁定的佛卡洛方向飞，穿过后继续直行
+execute if score @s[tag=straight,tag=AzrFocalor_wind_inward] rng1 matches 31..159 at @s anchored feet run tp @s ^ ^ ^0.24
 
 
 # 存活期间持续显示 gust

@@ -60,7 +60,7 @@ execute if score @s[scores={rng20=2}] rng8 matches 2.. at @s run function skyblo
 execute if score @s[scores={rng20=3}] rng8 matches 2.. at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/attack_3
 execute if score @s[scores={rng20=4}] rng8 matches 2.. at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/attack_4
 execute if entity @s[scores={rng20=5}] at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/attack_5
-execute if score @s[scores={rng20=6}] rng8 matches 60.. at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/attack_6
+execute if score @s[scores={rng20=6}] rng8 matches 2.. at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/attack_6
 
 execute if score @s[scores={rng20=2},tag=!phase2_conv] rng8 matches 2 at @s run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“我相信你已经适应了我的攻击节奏。所以，是时候切换了。”",color:"white"}]
 execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 2 at @s run playsound minecraft:entity.wither.spawn block @a -79840 -5 80 10 0.5
@@ -90,7 +90,7 @@ execute if score @s[scores={rng20=6},tag=!phase6_conv] rng8 matches 40 run tag @
 execute at @s as @a[tag=azrPlayer,distance=..30] at @s run scoreboard players add @s AZR_chainKill_chargeup 25
 
 # 每轮最后六 tick 随机 rng1；原来的 615..620 改为 195..200
-execute if score @s rng8 matches 290..300 store result score @s rng1 run random value -15..-3
+execute if score @s rng20 matches ..4 if score @s rng8 matches 290..300 store result score @s rng1 run random value -15..-3
 
 # ==================== 音乐 ====================
 
