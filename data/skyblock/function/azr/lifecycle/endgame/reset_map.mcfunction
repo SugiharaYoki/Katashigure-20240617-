@@ -1112,7 +1112,7 @@ item replace block -79816 16 125 container.11 with golden_apple 1
 item replace block -79816 16 125 container.13 with golden_apple 1
 item replace block -79816 16 125 container.15 with golden_apple 1
 
-
+#第六章差分
 execute if block -79932 38 21 fire run function skyblock:azr/lifecycle/endgame/reset_map_ch6_undo
 
 
