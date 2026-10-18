@@ -1103,6 +1103,14 @@ fill -79731 -6 82 -79731 -10 78 cyan_stained_glass
 
 #Boss 佛卡洛
 fill -79863 -5 103 -79817 -5 57 deepslate_tiles replace water
+fill -79841 1 106 -79839 4 106 minecraft:iron_block
+
+#after_boss5
+setblock -79816 16 125 waxed_oxidized_copper_chest[facing=west]{Inventory:[]}
+item replace block -79816 16 125 container.11 with golden_apple 1
+item replace block -79816 16 125 container.13 with golden_apple 1
+item replace block -79816 16 125 container.15 with golden_apple 1
+
 
 
 # ↓↓ 待修改 ↓↓
