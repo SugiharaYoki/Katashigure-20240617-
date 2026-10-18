@@ -4,6 +4,7 @@ execute as @a[tag=azrPlayer] at @s unless score @s Azr_skillPoints matches 40.. 
 
 scoreboard players set stage Azr_system 91
 scoreboard players set stage_main_thread AzrTimerStack 0
+scoreboard players set @a[tag=azrPlayer] AzrPlayer_CurrentArea 12
 
 
 tp @a[tag=azrPlayer] -79760 -57 83 facing -79759 -57 83

@@ -1,7 +1,7 @@
 function skyblock:azr/lifecycle/jump_to/ch4_boss
 
-
 execute as @a[tag=azrPlayer] at @s unless score @s Azr_skillPoints matches 18.. run function skyblock:azr/lifecycle/jump_to/return
+scoreboard players set @a[tag=azrPlayer] AzrPlayer_CurrentArea 10
 
 scoreboard players set stage Azr_system 61
 scoreboard players set stage_main_thread AzrTimerStack 0

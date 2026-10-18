@@ -4,6 +4,7 @@ execute as @a[tag=azrPlayer] at @s unless score @s Azr_skillPoints matches 20.. 
 
 scoreboard players set stage Azr_system 76
 scoreboard players set stage_main_thread AzrTimerStack 0
+scoreboard players set @a[tag=azrPlayer] AzrPlayer_CurrentArea 11
 
 execute if entity @a[tag=azrPlayer,scores={Azr_skillPoints=..29}] run tp @a[tag=azrPlayer] -79632.93 53.00 -738.35 facing -79617 57 -749
 spawnpoint @a[tag=azrPlayer] -79634 53 -739

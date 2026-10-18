@@ -5,7 +5,6 @@ advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage23_boss5
 
 
 
-
 execute positioned -79764 -10 80 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng1 9999
 
 fill -79841 1 106 -79839 4 106 air
