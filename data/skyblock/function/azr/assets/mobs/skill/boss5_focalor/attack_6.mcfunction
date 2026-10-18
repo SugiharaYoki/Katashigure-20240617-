@@ -92,8 +92,8 @@ execute if score @s rng8 matches 110..130 at @s positioned ~ ~1 ~ summon marker 
 
 # 从 rng8=131 开始，每 20 tick 一轮
 scoreboard players operation @s rng7 = @s rng8
-scoreboard players remove @s rng7 131
-scoreboard players set @s rng16 20
+scoreboard players remove @s rng7 291
+scoreboard players set @s rng16 18
 scoreboard players operation @s rng7 %= @s rng16
 
 # 每轮音效

@@ -3,17 +3,17 @@ scoreboard players add @s rng1 1
 # 关闭自主运动；位移由下面的 tp 控制
 data merge entity @s {NoGravity:1b,NoAI:1b,Motion:[0.0d,0.0d,0.0d]}
 
-execute if score @s[tag=straight] rng1 matches 1 at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielNPC_focalor]
+execute if score @s[tag=straight] rng1 matches 1..2 at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielNPC_focalor]
 
 # 出水标记为到期，后续不再移动或攻击
 execute at @s unless block ~ ~ ~ #skyblock:water run scoreboard players add @s rng1 10
 execute at @s if block ~ ~ ~ #air run scoreboard players add @s rng1 10
 
 # 1.5 秒时，仅锁定一次最近玩家的方向
-execute if score @s[tag=!straight] rng1 matches 30 at @s run tp @s ~ ~ ~ facing entity @p eyes
+execute if score @s[tag=!straight] rng1 matches 29..30 at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer] eyes
 
 # 此后沿自身固定朝向移动：每 tick 0.15 格，即每秒 3 格
-execute if score @s[tag=!straight] rng1 matches 31..159 at @s anchored feet run tp @s ^ ^ ^0.21
+execute if score @s[tag=!straight] rng1 matches 31..159 at @s rotated as @s anchored feet run tp @s ^ ^ ^0.21
 
 # 原有 straight：背向佛卡洛飞
 execute if score @s[tag=straight,tag=!AzrFocalor_wind_inward] rng1 matches 31..159 at @s anchored feet run tp @s ^ ^ ^-0.24
