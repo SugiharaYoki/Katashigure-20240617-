@@ -21,8 +21,8 @@ execute if score stage Azr_system matches ..95 positioned -79587 -33 99 unless e
 execute if score stage Azr_system matches ..95 positioned -79587 -33 99 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_5/sewer/event_underwater_hub
 
 #天造湖泊
-execute positioned -79764 -10 80 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..6] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79764 -10 80 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_5/sewer/event_lake
+execute if score stage Azr_system matches ..99 positioned -79764 -10 80 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..6] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute if score stage Azr_system matches ..99 positioned -79764 -10 80 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_5/sewer/event_lake
 
 
 
