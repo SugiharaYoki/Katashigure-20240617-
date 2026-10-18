@@ -16,6 +16,7 @@ execute if score @s AzrEntityTimer matches 1 run scoreboard players set @s rng13
 execute if score @s AzrEntityTimer matches 1 run bossbar add azr:boss_hp_bar [{text:"沉溺轮转的明光 魔神 · ",bold:true,color:"white"},{text:"佛卡洛",bold:true,color:"#5fd7ff"}]
 execute if score @s AzrEntityTimer matches 1 run bossbar set azr:boss_hp_bar color blue
 execute if score @s AzrEntityTimer matches 1 run bossbar set azr:boss_hp_bar max 600
+execute if score @s AzrEntityTimer matches 1 run bossbar set azr:boss_hp_bar style notched_6
 execute if score @s AzrEntityTimer matches 1 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 
 # 第 2 tick 初始化为第一阶段
