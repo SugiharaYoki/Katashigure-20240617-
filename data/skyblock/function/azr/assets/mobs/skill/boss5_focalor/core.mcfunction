@@ -26,8 +26,6 @@ execute if score @s AzrEntityTimer matches 2 run scoreboard players set @s rng20
 execute store result score @s Health run data get entity @s Health
 execute store result bossbar azr:boss_hp_bar value run scoreboard players get @s Health
 
-# rng8 超过 200 后归 -1，之后继续每 tick 加 1
-execute if score @s rng8 matches 201.. run scoreboard players set @s rng8 -1
 
 # 只有 rng8=1 才能升阶段
 # 倒序判断，保证同一个 tick 最多升一个阶段
@@ -75,9 +73,9 @@ execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 13 at @s run
 execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 15 at @s run fill -79853 -5 93 -79827 -5 67 water replace deepslate_tiles
 execute if score @s[scores={rng20=3},tag=!phase3_conv] rng8 matches 17 at @s run fill -79863 -5 103 -79817 -5 57 water replace deepslate_tiles
 execute if score @s[scores={rng20=4},tag=!phase4_conv] rng8 matches 2 at @s run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“爱理莎，你之后将要面对的敌人，远比先前任何时候都要危险。”",color:"white"}]
-execute if score @s[scores={rng20=4},tag=!phase4_conv] rng8 matches 22 at @s run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“但我已经知晓了你的潜力。杀死过两个魔神的你，定能化险为夷。”",color:"white"}]
+execute if score @s[scores={rng20=4},tag=!phase4_conv] rng8 matches 39 at @s run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“但我已经知晓了你的潜力。杀死过两个魔神的你，定能化险为夷。”",color:"white"}]
 execute if score @s[scores={rng20=5},tag=!phase5_conv] rng8 matches 2 at @s run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“如此结束。如此便好。”",color:"white"}]
-execute if score @s[scores={rng20=5},tag=!phase5_conv] rng8 matches 20 at @s run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“多少年月的沉沦……我终于能够解脱了吗？”",color:"white"}]
+execute if score @s[scores={rng20=5},tag=!phase5_conv] rng8 matches 39 at @s run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“多少年月的沉沦……我终于能够解脱了吗？”",color:"white"}]
 
 execute if score @s[scores={rng20=1},tag=!phase1_conv] rng8 matches 40 run tag @s add phase1_conv
 execute if score @s[scores={rng20=2},tag=!phase2_conv] rng8 matches 40 run tag @s add phase2_conv
