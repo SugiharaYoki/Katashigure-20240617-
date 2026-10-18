@@ -63,7 +63,6 @@ execute if score @s rng1 matches 400..900 positioned -79840 -17 80 unless entity
 
 
 execute if score @s rng1 matches 902 run stopsound @a[tag=azrShowDialog] music minecraft:trideca
-execute if score @s rng1 matches 902 run bossbar remove azr:boss_hp_bar
 execute if score @s rng1 matches 910 positioned -79840 -7 80 run function skyblock:azr/assets/mobs/skill/boss5_focalor/summon
 execute if score @s rng1 matches 910 as @n[tag=AzrielNPC_focalor] at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round
 execute if score @s rng1 matches 910 as @n[tag=AzrielNPC_focalor] at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round_large
@@ -97,7 +96,7 @@ execute if score @s rng1 matches 917..950 as @a[tag=azrPlayer] at @s run particl
 execute if score @s rng1 matches 927..950 as @a[tag=azrPlayer] at @s run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.8 0.8 0.8 2.0 5
 
 execute if score @s rng1 matches 942 as @a[tag=azrPlayer] at @s run attribute @s max_health modifier add azr_progress:life_ch6 40 add_value
-
+execute if score @s rng1 matches 942 run bossbar remove azr:boss_hp_bar
 
 
 execute if score @s rng1 matches 972 run scoreboard players set stage Azr_system 100
