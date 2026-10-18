@@ -9,7 +9,11 @@ execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=100}] run plays
 
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=93..99},tag=AzrSariel_Side_Death] run particle soul ~ ~1 ~ 0.2 0.9 0.2 0.03 5
 
-execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=100}] unless items entity @s container.* *[custom_data~{azr_amulet_dash_master:1b}] run effect give @s hunger 1 7 true
+execute if items entity @s container.* *[custom_data~{azr_amulet_dash_master:1b}] run tag @s add dash_master_pass
+execute if items entity @s[tag=AZS_BoSB14] container.* *[custom_data~{azr_amulet_light_angel_4:1b}] run tag @s add dash_master_pass
+execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=100}] unless entity @s[tag=dash_master_pass] run effect give @s hunger 1 7 true
+tag @s remove dash_master_pass
+
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=100}] run attribute @s movement_speed modifier add azr_amulet:sprintdouble_01 0.1 add_value
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=100}] if items entity @s container.* *[custom_data~{azr_amulet_light_angel:1b}] run attribute @s armor modifier add azr_amulet:sprintdouble_01 50 add_value
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=100}] if items entity @s container.* *[custom_data~{azr_amulet_light_angel:1b}] run attribute @s knockback_resistance modifier add azr_amulet:sprintdouble_01 1 add_value
