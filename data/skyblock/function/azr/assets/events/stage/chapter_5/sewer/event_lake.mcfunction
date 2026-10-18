@@ -55,5 +55,55 @@ execute if score @s rng1 matches 418 run tellraw @a[tag=azrShowDialog] [{text:"�
 
 execute if score @s rng1 matches 410 run tag @n[tag=AzrielNPC_focalor] add azr_hostile
 
-execute if score @s rng1 matches 406.. at @n[tag=AzrielNPC_focalor] unless entity @a[tag=azrPlayer,distance=..45] run function skyblock:azr/assets/events/stage/chapter_5/sewer/event_outside_focalor_battlefield
+execute if score @s rng1 matches 406..900 at @n[tag=AzrielNPC_focalor] unless entity @a[tag=azrPlayer,distance=..45] run function skyblock:azr/assets/events/stage/chapter_5/sewer/event_outside_focalor_battlefield
+
+
+execute if score @s rng1 matches 899 run scoreboard players set @s rng1 898
+execute if score @s rng1 matches 400..900 positioned -79840 -17 80 unless entity @n[tag=AzrielNPC_focalor,distance=..500] run scoreboard players set @s rng1 901
+
+
+execute if score @s rng1 matches 910 positioned -79840 -7 80 run function skyblock:azr/assets/mobs/skill/boss5_focalor/summon
+execute if score @s rng1 matches 910 as @n[tag=AzrielNPC_focalor] at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round
+execute if score @s rng1 matches 910 as @n[tag=AzrielNPC_focalor] at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round_large
+
+execute if score @s rng1 matches 912 run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“太好了，爱理莎。”",color:"white"}]
+
+execute if score @s rng1 matches 917..942 as @n[tag=AzrielNPC_focalor] at @s run particle totem_of_undying ~ ~1 ~ 0.3 0.3 0.3 0.2 8
+execute if score @s rng1 matches 917..948 run particle soul -79839.51 -10.00 80.53 0.5 10 0.5 0.03 50
+execute if score @s rng1 matches 917..942 run particle ominous_spawning -79839.51 -10.00 80.53 0. 10 0. 0.33 50
+execute if score @s rng1 matches 917 run summon minecraft:lightning_bolt -79839.51 -23.00 80.53
+execute if score @s rng1 matches 919 run summon minecraft:lightning_bolt -79839.51 -23.00 80.53
+execute if score @s rng1 matches 921 run summon minecraft:lightning_bolt -79839.51 -23.00 80.53
+execute if score @s rng1 matches 923 run summon minecraft:lightning_bolt -79839.51 -23.00 80.53
+execute if score @s rng1 matches 925 run summon minecraft:lightning_bolt -79839.51 -23.00 80.53
+execute if score @s rng1 matches 917 run playsound minecraft:entity.ender_dragon.death hostile @a ~ ~ ~ 10 0.5
+
+execute if score @s rng1 matches 942 run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“请你帮沙利叶……改变世界的轨迹。”",color:"white"}]
+
+execute if score @s rng1 matches 942 as @n[tag=AzrielNPC_focalor] at @s run particle totem_of_undying ~ ~1 ~ 0.3 0.3 0.3 0.4 80
+execute if score @s rng1 matches 942 as @n[tag=AzrielNPC_focalor] at @s run particle gust_emitter_large ~ ~1 ~ 0 0 0 0.4 1
+execute if score @s rng1 matches 942 as @n[tag=AzrielNPC_focalor] at @s run effect give @s invisibility infinite 0 true
+execute if score @s rng1 matches 943 as @n[tag=AzrielNPC_focalor] at @s run tp @s ~ ~-100 ~
+
+execute if score @s rng1 matches 942 run summon minecraft:lightning_bolt -79839.51 -23.00 80.53
+execute if score @s rng1 matches 942 run summon minecraft:lightning_bolt -79839.51 -23.00 80.53
+execute if score @s rng1 matches 942 run summon minecraft:lightning_bolt -79839.51 -23.00 80.53
+execute if score @s rng1 matches 942 run summon minecraft:lightning_bolt -79839.51 -23.00 80.53
+execute if score @s rng1 matches 942 run summon minecraft:lightning_bolt -79839.51 -23.00 80.53
+
+execute if score @s rng1 matches 917..950 as @a[tag=azrPlayer] at @s run particle minecraft:crit ~ ~1 ~ 0 0 0 2.0 8
+execute if score @s rng1 matches 927..950 as @a[tag=azrPlayer] at @s run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.8 0.8 0.8 2.0 5
+
+execute if score @s rng1 matches 942 as @a[tag=azrPlayer] at @s run attribute @s max_health modifier add azr_progress:life_ch6 40 add_value
+
+
+
+execute if score @s rng1 matches 972 run scoreboard players set stage Azr_system 100
+execute if score @s rng1 matches 972 run title @a[tag=azrShowDialog] actionbar {text:"Chapter Clear",color:"gold"}
+execute if score @s rng1 matches 972 as @a[tag=azrShowDialog] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 2 0.9
+execute if score @s rng1 matches 972 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage23_boss5
+execute if score @s rng1 matches 972 as @a[tag=azrPlayer] at @s run summon item ~ ~ ~ {Item:{id:"emerald",count:10b}}
+execute if score @s rng1 matches 972 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute if score @s rng1 matches 972 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..49}] Azr_skillPoints 50
+execute if score @s rng1 matches 972 run scoreboard players reset stage_main_thread AzrTimerStack
 

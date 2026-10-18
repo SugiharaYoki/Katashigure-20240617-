@@ -22,16 +22,16 @@ execute if score @s rng8 matches 125 at @s rotated ~ 0 positioned ~ ~1 ~ run fun
 execute if score @s rng8 matches 171 at @s rotated ~ 0 positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_round_large
 
 # 汇聚粒子
-execute if score @s rng8 matches 25..80 at @s positioned ~ ~20 ~ run particle trail{color:6666239,duration:120,target:[-79840,-7,80]} ~ ~ ~ 5 5 5 0 2
-execute if score @s rng8 matches 25..80 at @s positioned ~ ~-20 ~ run particle trail{color:6666239,duration:120,target:[-79840,-7,80]} ~ ~ ~ 5 5 5 0 2
-execute if score @s rng8 matches 25..80 at @s positioned ~ ~ ~20 run particle trail{color:6666239,duration:120,target:[-79840,-7,80]} ~ ~ ~ 5 5 5 0 2
-execute if score @s rng8 matches 25..80 at @s positioned ~ ~ ~-20 run particle trail{color:6666239,duration:120,target:[-79840,-7,80]} ~ ~ ~ 5 5 5 0 2
-execute if score @s rng8 matches 25..80 at @s positioned ~20 ~ ~ run particle trail{color:6666239,duration:120,target:[-79840,-7,80]} ~ ~ ~ 5 5 5 0 2
-execute if score @s rng8 matches 25..80 at @s positioned ~-20 ~ ~ run particle trail{color:6666239,duration:120,target:[-79840,-7,80]} ~ ~ ~ 5 5 5 0 2
+execute if score @s rng8 matches 25..80 at @s positioned ~ ~20 ~ run particle trail{color:6666239,duration:120,target:[-79839.5,-6.0,80.5]} ~ ~ ~ 5 5 5 0 2
+execute if score @s rng8 matches 25..80 at @s positioned ~ ~-20 ~ run particle trail{color:6666239,duration:120,target:[-79839.5,-6.0,80.5]} ~ ~ ~ 5 5 5 0 2
+execute if score @s rng8 matches 25..80 at @s positioned ~ ~ ~20 run particle trail{color:6666239,duration:120,target:[-79839.5,-6.0,80.5]} ~ ~ ~ 5 5 5 0 2
+execute if score @s rng8 matches 25..80 at @s positioned ~ ~ ~-20 run particle trail{color:6666239,duration:120,target:[-79839.5,-6.0,80.5]} ~ ~ ~ 5 5 5 0 2
+execute if score @s rng8 matches 25..80 at @s positioned ~20 ~ ~ run particle trail{color:6666239,duration:120,target:[-79839.5,-6.0,80.5]} ~ ~ ~ 5 5 5 0 2
+execute if score @s rng8 matches 25..80 at @s positioned ~-20 ~ ~ run particle trail{color:6666239,duration:120,target:[-79839.5,-6.0,80.5]} ~ ~ ~ 5 5 5 0 2
 
-execute if score @s rng8 matches 50..150 at @s positioned ~ ~ ~ run particle trail{color:6666239,duration:240,target:[-79840,-7,80]} ~ ~ ~ 15 15 15 0 2
-execute if score @s rng8 matches 150..350 at @s positioned ~ ~ ~ run particle trail{color:6666239,duration:180,target:[-79840,-7,80]} ~ ~ ~ 15 15 15 0 3
-execute if score @s rng8 matches 350.. at @s positioned ~ ~ ~ run particle trail{color:6666239,duration:120,target:[-79840,-7,80]} ~ ~ ~ 15 15 15 0 4
+execute if score @s rng8 matches 50..150 at @s positioned ~ ~ ~ run particle trail{color:6666239,duration:240,target:[-79839.5,-6.0,80.5]} ~ ~ ~ 15 15 15 0 2
+execute if score @s rng8 matches 150..350 at @s positioned ~ ~ ~ run particle trail{color:6666239,duration:180,target:[-79839.5,-6.0,80.5]} ~ ~ ~ 15 15 15 0 3
+execute if score @s rng8 matches 350.. at @s positioned ~ ~ ~ run particle trail{color:6666239,duration:120,target:[-79839.5,-6.0,80.5]} ~ ~ ~ 15 15 15 0 4
 
 # 两次环形释放：rng8=55、75
 scoreboard players set @s rng14 0
