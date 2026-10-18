@@ -87,6 +87,7 @@ execute if score @s rng1 matches 917 run playsound minecraft:entity.ender_dragon
 
 execute if score @s rng1 matches 932 run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“请你帮沙利叶……改变世界的轨迹。”",color:"white"}]
 
+execute if score @s rng1 matches 942 as @n[tag=AzrielNPC_focalor] at @s run particle end_rod ~ ~1 ~ 0.3 0.3 0.3 1.9 80
 execute if score @s rng1 matches 942 as @n[tag=AzrielNPC_focalor] at @s run particle totem_of_undying ~ ~1 ~ 0.3 0.3 0.3 1.4 80
 execute if score @s rng1 matches 942 as @n[tag=AzrielNPC_focalor] at @s run particle gust_emitter_large ~ ~1 ~ 0 0 0 0.4 1
 execute if score @s rng1 matches 942 as @n[tag=AzrielNPC_focalor] at @s run effect give @s invisibility infinite 0 true
@@ -105,12 +106,12 @@ execute if score @s rng1 matches 942 as @a[tag=azrPlayer] at @s run attribute @s
 execute if score @s rng1 matches 942 run bossbar remove azr:boss_hp_bar
 
 
-execute if score @s rng1 matches 972 run scoreboard players set stage Azr_system 100
-execute if score @s rng1 matches 972 run title @a[tag=azrShowDialog] actionbar {text:"Chapter Clear",color:"gold"}
-execute if score @s rng1 matches 972 as @a[tag=azrShowDialog] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 2 0.9
-execute if score @s rng1 matches 972 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage23_boss5
-execute if score @s rng1 matches 972 as @a[tag=azrPlayer] at @s run summon item ~ ~ ~ {Item:{id:"emerald",count:10b}}
-execute if score @s rng1 matches 972 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
-execute if score @s rng1 matches 972 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..49}] Azr_skillPoints 50
-execute if score @s rng1 matches 972 run scoreboard players reset stage_main_thread AzrTimerStack
+execute if score @s rng1 matches 982 run scoreboard players set stage Azr_system 100
+execute if score @s rng1 matches 982 run title @a[tag=azrShowDialog] actionbar {text:"Chapter Clear",color:"gold"}
+execute if score @s rng1 matches 982 as @a[tag=azrShowDialog] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 2 0.9
+execute if score @s rng1 matches 982 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage23_boss5
+execute if score @s rng1 matches 982 as @a[tag=azrPlayer] at @s run summon item ~ ~ ~ {Item:{id:"emerald",count:10b}}
+execute if score @s rng1 matches 982 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute if score @s rng1 matches 982 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..49}] Azr_skillPoints 50
+execute if score @s rng1 matches 982 run scoreboard players reset stage_main_thread AzrTimerStack
 
