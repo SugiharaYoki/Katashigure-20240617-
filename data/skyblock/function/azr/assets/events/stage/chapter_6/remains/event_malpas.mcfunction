@@ -155,5 +155,12 @@ execute if score @s rng1 matches 937 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 952 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“我准备好了就会再度出发。”",color:"white"}]
 execute if score @s rng1 matches 962 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“届时，我们打个漂亮的胜仗吧。”",color:"white"}]
 
+execute if score @s rng1 matches 963 if items entity @a[tag=azrPlayer] container.* *[custom_data~{azr_amulet_transportation:1b}] run scoreboard players set @s rng1 1017
 
-execute if score @s rng1 matches 962 run scoreboard players set stage Azr_system 102
+execute if score @s rng1 matches 979 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“对了，爱理莎大人。”",color:"white"}]
+execute if score @s rng1 matches 989 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“您先前似乎还没有办法使用生命树根系进行传送。刚才我们之间已经构筑过魔力连接，现在你应该已经可以做到了。”",color:"white"}]
+execute if score @s rng1 matches 1001 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“您不妨尝试一下，大人。”",color:"white"}]
+execute if score @s rng1 matches 1016 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“了解。”",color:"white"}]
+
+execute if score @s rng1 matches 1018 run scoreboard players set stage Azr_system 102
+execute if score @s rng1 matches 1018 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..52}] Azr_skillPoints 53

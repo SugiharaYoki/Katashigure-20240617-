@@ -14,8 +14,14 @@ execute as @s[scores={Azr_skillPoints=1..}] at @s run function skyblock:azr/syst
 execute as @s[scores={Azr_Shop=84301..8439999}] run function skyblock:azr/system/shop/purchase
 execute as @s[scores={Azr_Shop=8900101..8900199}] run function skyblock:azr/system/player/skills/chainkill/assign
 execute as @s[scores={Azr_Shop=30001..39999}] run function skyblock:azr/system/conversation_list
-execute as @s[scores={Azr_Shop=40001..49999}] if block ~ ~-0.8 ~ creaking_heart if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] unless score stage Azr_system matches 101 run function skyblock:azr/system/transportation_list
-execute as @s[scores={Azr_Shop=40001..49999}] if entity @n[tag=AzrielMob_utility_respawn_anchor,distance=..3.2] if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] run function skyblock:azr/system/transportation_list
+
+execute if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] run tag @s add transportation_pass
+execute if score @s Azr_skillPoints matches 53.. run tag @s add transportation_pass
+
+
+execute as @s[scores={Azr_Shop=40001..49999}] if block ~ ~-0.8 ~ creaking_heart if entity @s[tag=transportation_pass] unless score stage Azr_system matches 101 run function skyblock:azr/system/transportation_list
+execute as @s[scores={Azr_Shop=40001..49999}] if entity @n[tag=AzrielMob_utility_respawn_anchor,distance=..3.2] if entity @s[tag=transportation_pass] run function skyblock:azr/system/transportation_list
+tag @s remove transportation_pass
 
 # 背包管理器
 #execute as @s[tag=azrPlayer] run function skyblock:azr/inventory_manager
@@ -89,7 +95,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}
 execute if items entity @s[tag=AZS_BoSB12] container.* *[custom_data~{azr_amulet_multiweapon:1b}] run function skyblock:azr/system/player/skills/amulet/front_slash_core
 
 
-execute unless score stage Azr_system matches 41..76 unless score stage Azr_system matches 101 if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] if entity @s[predicate=skyblock:left,predicate=skyblock:right] run function skyblock:azr/system/player/skills/amulet/revival_star_teleport
+execute unless score stage Azr_system matches 41..76 unless score stage Azr_system matches 101..102 if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] if entity @s[predicate=skyblock:left,predicate=skyblock:right] run function skyblock:azr/system/player/skills/amulet/revival_star_teleport
 execute if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] if entity @s[predicate=skyblock:forward,predicate=skyblock:backward] run function skyblock:azr/system/player/skills/amulet/revival_star_quitgame
 execute if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] unless entity @s[predicate=skyblock:left,predicate=skyblock:right] unless entity @s[predicate=skyblock:forward,predicate=skyblock:backward] run scoreboard players set @s AzrSariel_Amulet_RevivalStar_teleport 0
 
