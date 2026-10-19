@@ -152,3 +152,4 @@ execute if score @s rng1 matches 852 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 862 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“届时，我们打个漂亮的胜仗吧。”",color:"white"}]
 
 
+execute if score @s rng1 matches 862 run scoreboard players set stage Azr_system 102
