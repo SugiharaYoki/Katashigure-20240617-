@@ -1090,7 +1090,9 @@ execute if block -79932 38 21 fire run function skyblock:azr/lifecycle/endgame/r
 #玛帕斯初见
 fill -79830 39 -15 -79830 41 -14 minecraft:barrier
 
-
+#休憩所会议桌
+fill -79980 -42 -3 -79984 -42 -3 minecraft:pale_oak_trapdoor[facing=south,half=bottom,open=false]
+fill -79980 -42 -2 -79984 -42 -2 minecraft:pale_oak_trapdoor[facing=north,half=bottom,open=false]
 
 
 
