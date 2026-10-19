@@ -47,4 +47,4 @@ execute if score @s rng1 matches 140 at @s run particle flash{color:[1.000,1.000
 execute if score @s rng1 matches 140 at @s run particle reverse_portal ~ ~1 ~ 1 1 1 0.02 50
 execute if score @s rng1 matches 140 run playsound minecraft:entity.creaking.death player @a ~ ~ ~ 1 0.8
 execute if score @s rng1 matches 140 run playsound minecraft:item.chorus_fruit.teleport player @a ~ ~ ~ 1 0.7
-
+execute if score @s rng1 matches 140 as @a[tag=azrShowDialog] at @s run stopsound @s music minecraft:garden1.combathigh
