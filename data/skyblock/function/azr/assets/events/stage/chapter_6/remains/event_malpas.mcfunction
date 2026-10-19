@@ -20,21 +20,21 @@ execute if score @s rng1 matches 58 run tellraw @a[tag=azrShowDialog] [{text:"�
 
 execute if score @s rng1 matches 50 positioned -79837 35 -14 run function skyblock:azr/assets/mobs/skeleton_axe
 execute if score @s rng1 matches 52 positioned -79837 35 -16 run function skyblock:azr/assets/mobs/skeleton_axe
-execute if score @s rng1 matches 54 positioned -79837 35 -13 run function skyblock:azr/assets/mobs/skeleton_axe
-execute if score @s rng1 matches 56 positioned -79837 35 -15 run function skyblock:azr/assets/mobs/skeleton_axe
+execute if score @s rng1 matches 55 positioned -79837 35 -13 run function skyblock:azr/assets/mobs/skeleton_axe
+execute if score @s rng1 matches 57 positioned -79837 35 -15 run function skyblock:azr/assets/mobs/skeleton_axe
 
 execute if score @s rng1 matches 60 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“居然可以瞬间召唤怪物……！”",color:"white"}]
 
 execute if score @s rng1 matches 70 positioned -79837 35 -14 run function skyblock:azr/assets/mobs/blaze
 execute if score @s rng1 matches 72 positioned -79837 35 -16 run function skyblock:azr/assets/mobs/blaze
-execute if score @s rng1 matches 74 positioned -79837 35 -13 run function skyblock:azr/assets/mobs/blaze
-execute if score @s rng1 matches 76 positioned -79837 35 -15 run function skyblock:azr/assets/mobs/blaze
+execute if score @s rng1 matches 75 positioned -79837 35 -13 run function skyblock:azr/assets/mobs/blaze
+execute if score @s rng1 matches 77 positioned -79837 35 -15 run function skyblock:azr/assets/mobs/blaze
 
 execute if score @s rng1 matches 96 positioned -79837.02 35.00 -13.98 run function skyblock:azr/assets/mobs/ravager
-execute if score @s rng1 matches 100 positioned -79837 35 -13 run function skyblock:azr/assets/mobs/skeleton_bomb
-execute if score @s rng1 matches 100 positioned -79837 35 -16 run function skyblock:azr/assets/mobs/skeleton_bomb
-execute if score @s rng1 matches 110 positioned -79837 35 -13 run function skyblock:azr/assets/mobs/skeleton_axe
-execute if score @s rng1 matches 110 positioned -79837 35 -16 run function skyblock:azr/assets/mobs/skeleton_axe
+execute if score @s rng1 matches 103 positioned -79837 35 -13 run function skyblock:azr/assets/mobs/skeleton_bomb
+execute if score @s rng1 matches 103 positioned -79837 35 -16 run function skyblock:azr/assets/mobs/skeleton_bomb
+execute if score @s rng1 matches 113 positioned -79837 35 -13 run function skyblock:azr/assets/mobs/skeleton_axe
+execute if score @s rng1 matches 113 positioned -79837 35 -16 run function skyblock:azr/assets/mobs/skeleton_axe
 
 execute if score @s rng1 matches 121 unless entity @n[distance=..10000,type=villager,tag=AzrielNPC_marinus] positioned -79977 -43 -1 run function skyblock:azr/assets/mobs/skill/marinus/summon_revive
 execute if score @s rng1 matches 121 run tp @n[tag=AzrielNPC_marinus] -79977 -43 -1
