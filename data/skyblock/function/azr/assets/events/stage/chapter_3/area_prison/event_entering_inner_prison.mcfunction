@@ -334,6 +334,9 @@ execute if score @s rng1 matches 1021 as @a[tag=azrPlayer] at @s run attribute @
 execute if score @s rng1 matches 1022 as @a[tag=azrPlayer] at @s unless entity @s[x=-79894,y=20,z=-234,dx=8,dy=8,dz=8] run tp @s -79890.09 24.00 -229.07
 
 execute if score @s rng1 matches 1030 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n（等等……我坠落的速度，有什么东西拖住了我？）",color:"white"}]
+execute if score @s rng1 matches 1030 as @e[tag=AzrielNPC_Divineforce,distance=..90,type=#illager] at @s run tp @s -79969 -43 -9
+execute if score @s rng1 matches 1030 as @e[tag=AzrielNPC_Divineforce,distance=..90,tag=AzrielMob_healer] at @s run tp @s -79969 -43 -9
+
 
 execute if score @s rng1 matches 1490..1499 run scoreboard players set @s rng1 1490
 execute if score @s rng1 matches 300..1499 if entity @a[tag=azrPlayer,x=-79898,y=-33,z=-238,dx=20,dy=7,dz=20] run scoreboard players set @s rng1 1500
