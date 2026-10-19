@@ -3,9 +3,7 @@ function skyblock:azr/lifecycle/jump_to/ch3_boss
 
 advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage11_boss3
 
-forceload add -79894 -233 -79887 -226
-forceload add -79893 -304 -79888 -304
-forceload add -79862 -126
+
 
 execute positioned -79867 48 -109 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 9999
 

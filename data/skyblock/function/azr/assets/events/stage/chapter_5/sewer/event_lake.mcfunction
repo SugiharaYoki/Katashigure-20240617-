@@ -126,3 +126,4 @@ execute if score @s rng1 matches 972 run function skyblock:azr/lifecycle/endgame
 
 execute if score @s rng1 matches 972..975 run playsound block.iron_trapdoor.open block @a -79840 4 106 1 0.6
 
+

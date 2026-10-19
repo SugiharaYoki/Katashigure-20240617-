@@ -1,31 +1,5 @@
-#______________________________________________________________
-forceload add -80000 -400 -79800 -200
-forceload add -80000 -200 -79800 000
-forceload add -80000 000 -79800 200
-forceload add -80000 200 -79800 400
-forceload add -79800 -600 -79600 -400
-forceload add -79800 -400 -79600 -200
-forceload add -79800 -200 -79600 000
-forceload add -79800 000 -79600 200
-forceload add -79800 200 -79600 400
-forceload add -79600 -600 -79400 -400
-forceload add -79600 -400 -79400 -200
-forceload add -79600 -200 -79400 000
-forceload add -79600 000 -79400 200
-forceload add -79600 200 -79400 400
-forceload add -79400 -600 -79200 -400
-forceload add -79400 -400 -79200 -200
-forceload add -79400 -200 -79200 000
-forceload add -79400 000 -79200 200
-forceload add -79400 200 -79200 400
-forceload add -79785 -2092 -79765 -2072
-#第五章
-forceload add -80000 -922 -79900 -588
-forceload add -79900 -922 -79800 -588
-forceload add -79800 -922 -79700 -588
-forceload add -79700 -922 -79600 -588
-forceload add -79600 -922 -79500 -588
-#______________________________________________________________#
+function skyblock:azr/lifecycle/endgame/forceload_open
+#______________#
 setblock -79937 38 -12 air
 setblock -79937 38 -12 minecraft:lectern[facing=north,has_book=true,powered=false]{Book:{components:{"written_book_content":{title:{raw:"Azriel's Midgarden"},author:"You",pages:[{raw:'『亚兹列尔的中庭花园』\n游戏背景故事\n\n死亡。\n\n死亡总是在不经意间，\n悄然而至。\n\n但你并不理解，有着许多未完之事的你，\n为何偏偏会在此刻意外死去？\n\n你本能活得更久。'},{raw:'\n你本该活得更久。\n\n来到地狱之时，你早已决定试着放下心中的一切，坦然迎接属于自己的最终结局。\n\n但魔界的使者，被称为亚米的魔神，将你送至了通往神庭的传送门。'},{raw:'他将那则秘密告知予你：\n\n如果想要违抗自己的死亡，\n夺得更久的生命……\n\n——那就，前往天界的生命树庭园吧。\n\n至少，你看上去并没什么其他选择。'},{raw:'想要活得更久？\n规则很简单。\n\n那便是，攻破那座庭园的守卫，向庭园关口的两位领袖发起挑战。\n\n若他们能够认同自己实力的话，那自己就有机会获得庭园之主沙利叶的赏识，获得继续在现实世界活下去的资格。'},{raw:'但……你作为一名手无寸铁的普通人类，如何是好？\n\n魔界的使者赐予了你能够接通灵能网络的能力。\n只要通过这本附上魔界法术的书籍，便可在灵能网络的帮助下，获得更强的力量，以及装备……\n\n被赋予这一切的你，\n踏上了前往神庭的路。'},{raw:'\n\n\n\n\n现在，\n你正伫立于神界生命树庭园的入口前方。'}]}},count:1,id:"minecraft:written_book"},Page:0}
 
@@ -36,8 +10,6 @@ setblock -79937 39 -12 birch_button[facing=north,face=wall]
 fill -80001 40 -11 -80001 40 -18 minecraft:potted_allium
 
 #游戏开场
-forceload add -79541 -472 -79345 -350
-forceload add -79950 -2150 -79800 -1850
 setblock -79775 106 -2074 minecraft:potted_blue_orchid
 setblock -79769 105 -2079 smoker[facing=west]{Inventory:[]}
 
@@ -999,7 +971,7 @@ item replace block -79685 25 -347 container.14 with gold_nugget 3
 
 ####遂栈
 #拉斐尔
-forceload add -79681 -583 -79607 -718
+
 function skyblock:azr/lifecycle/endgame/reset_map_boss4
 
 #stage photothermal
@@ -1171,38 +1143,7 @@ execute if block -79932 38 21 fire run function skyblock:azr/lifecycle/endgame/r
 #fill -79468 31 -430 -79465 31 -432 crimson_stem[axis=x] replace warped_stem
 
 #______________________________________________________________#
-forceload remove -80000 -400 -79800 -200
-forceload remove -80000 -200 -79800 000
-forceload remove -80000 000 -79800 200
-forceload remove -80000 200 -79800 400
-forceload remove -79800 -600 -79600 -400
-forceload remove -79800 -400 -79600 -200
-forceload remove -79800 -200 -79600 000
-forceload remove -79800 000 -79600 200
-forceload remove -79800 200 -79600 400
-forceload remove -79600 -600 -79400 -400
-forceload remove -79600 -400 -79400 -200
-forceload remove -79600 -200 -79400 000
-forceload remove -79600 000 -79400 200
-forceload remove -79600 200 -79400 400
-forceload remove -79400 -600 -79200 -400
-forceload remove -79400 -400 -79200 -200
-forceload remove -79400 -200 -79200 000
-forceload remove -79400 000 -79200 200
-forceload remove -79400 200 -79200 400
-forceload remove -79950 -2150 -79800 -1850
-forceload remove -79541 -472 -79345 -350
-forceload remove -79785 -2092 -79765 -2072
-#邃栈
-forceload remove -79681 -583 -79607 -718
-#Bossrush门
-forceload remove -79195 2 -79159 -34
-#第五章
-forceload remove -80000 -922 -79900 -588
-forceload remove -79900 -922 -79800 -588
-forceload remove -79800 -922 -79700 -588
-forceload remove -79700 -922 -79600 -588
-forceload remove -79600 -922 -79500 -588
+function skyblock:azr/lifecycle/endgame/forceload_close
 #______________________________________________________________#
 kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1000]
 
@@ -1217,7 +1158,6 @@ scoreboard players set stage Azr_system 0
 
 
 
-forceload add -79776 -2081
 execute positioned -79776 104 -2081 run kill @e[distance=..50]
 execute positioned -79776 104 -2081 run kill @e[distance=..50,type=item]
 execute positioned -79776 104 -2081 run kill @e[distance=..50,type=marker]

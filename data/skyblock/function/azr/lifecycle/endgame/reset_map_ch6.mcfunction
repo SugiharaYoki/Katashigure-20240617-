@@ -1,4 +1,4 @@
-
+function skyblock:azr/lifecycle/endgame/forceload_open
 
 kill @n[tag=AzrielNPC_stage9_entry_conversation1,x=-79969,y=-52,z=3,distance=45..]
 kill @n[tag=AzrielNPC_stage9_entry_conversation2,x=-79969,y=-52,z=3,distance=45..]
@@ -64,3 +64,4 @@ setblock -79981 37 -18 minecraft:tinted_glass
 
 
 
+function skyblock:azr/lifecycle/endgame/forceload_close
