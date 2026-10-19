@@ -1,4 +1,7 @@
-execute store result score random_enemy_type AzrTimerStack run random value 1..12
+
+execute unless score stage Azr_system matches 100.. store result score random_enemy_type AzrTimerStack run random value 1..12
+execute if score stage Azr_system matches 100.. run function skyblock:azr/assets/mobs/area_pool/chapter1_main_area_common
+
 
 execute if score random_enemy_type AzrTimerStack matches 1 unless entity @n[tag=AzrielNPC_Divineforce,distance=..20] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score random_enemy_type AzrTimerStack matches 2 unless entity @n[tag=AzrielNPC_Divineforce,distance=..20] run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
