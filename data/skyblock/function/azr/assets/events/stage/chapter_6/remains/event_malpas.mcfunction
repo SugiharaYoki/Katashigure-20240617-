@@ -103,6 +103,7 @@ execute if score @s rng1 matches 520 as @a[tag=azrPlayer] at @s run tellraw @a[t
 
 execute if score @s rng1 matches 534 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“意思就是，只要我在这期间想办法打败劳姆，玛帕斯就算再能预言也奈何不了我，大概率是这样，没错吧？”",color:"white"}]
 execute if score @s rng1 matches 549 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“是这样。但这种计划，实施起来的难度……大人请原谅我，但我难以看到成功的希望。”",color:"white"}]
+execute if score @s rng1 matches 563 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“最次最次，我们要面对的敌人也绝不仅有玛帕斯与劳姆。无数的怪物正对我们翘首以盼。”",color:"white"}]
 
 
 
