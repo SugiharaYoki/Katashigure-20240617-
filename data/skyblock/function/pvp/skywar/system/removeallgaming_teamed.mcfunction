@@ -37,6 +37,7 @@ scoreboard players set @s If_Beetrtsoup 0
 scoreboard players set @s If_Bread 0
 scoreboard players set @s If_EscDeath 0
 
+tag @s remove AzrAmulet_nymph_loved
 tag @s remove hasLifeVitae
 
 scoreboard players set @s MG_death 0
