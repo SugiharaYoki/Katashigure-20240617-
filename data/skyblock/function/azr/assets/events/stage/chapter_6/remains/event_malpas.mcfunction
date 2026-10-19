@@ -14,7 +14,7 @@ execute if score @s rng1 matches 35 run tellraw @a[tag=azrShowDialog] [{text:"�
 
 execute if score @s rng1 matches 50 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden1.combathigh music @s ~ ~ ~ 0.65
 
-execute if score @s rng1 matches 58 run tellraw @a[tag=azrShowDialog] [{text:"预言家 玛帕斯：",color:"#9c101e",bold:1b},{bold: false,text:"\n“我们之间无话可谈，你的使命到此为止。”",color:"white"}]
+execute if score @s rng1 matches 58 run tellraw @a[tag=azrShowDialog] [{text:"预言家 玛帕斯：",color:"#9c101e",bold:1b},{bold: false,text:"\n“我们之间不该产生闲聊，你的使命到此为止。”",color:"white"}]
 
 
 
