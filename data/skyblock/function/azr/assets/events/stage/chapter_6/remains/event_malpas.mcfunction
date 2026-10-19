@@ -62,8 +62,9 @@ execute if score @s rng1 matches 140 as @a[tag=azrPlayer] at @s run execute rota
 
 execute if score @s rng1 matches 140 as @a[tag=azrShowDialog] at @s run stopsound @s music minecraft:garden1.combathigh
 
-execute if score @s rng1 matches 150.. positioned -79979 -44 -2 as @n[tag=AzrielNPC_mersenne,distance=..10] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
-execute if score @s rng1 matches 150.. positioned -79979 -44 -2 as @n[tag=AzrielNPC_marinus,distance=..10] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+execute if score @s rng1 matches 150..700 positioned -79979 -44 -2 as @n[tag=AzrielNPC_mersenne,distance=..10] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+execute if score @s rng1 matches 150..700 positioned -79979 -44 -2 as @n[tag=AzrielNPC_marinus,distance=..10] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+execute if score @s rng1 matches 150..700 positioned -79979 -44 -2 as @n[tag=AzrielNPC_flauros,distance=..16] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
 execute if score @s rng1 matches 150 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎大人……？”",color:"white"}]
 execute if score @s rng1 matches 162 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“等等，我刚刚还在战场上……默尔森？是你把我传送过来的吗？”",color:"white"}]
@@ -104,6 +105,35 @@ execute if score @s rng1 matches 520 as @a[tag=azrPlayer] at @s run tellraw @a[t
 execute if score @s rng1 matches 534 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“意思就是，只要我在这期间想办法打败劳姆，玛帕斯就算再能预言也奈何不了我，大概率是这样，没错吧？”",color:"white"}]
 execute if score @s rng1 matches 549 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“是这样。但这种计划，实施起来的难度……大人请原谅我，但我难以看到成功的希望。”",color:"white"}]
 execute if score @s rng1 matches 563 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“最次最次，我们要面对的敌人也绝不仅有玛帕斯与劳姆。无数的怪物正对我们翘首以盼。”",color:"white"}]
+
+
+execute if score @s rng1 matches 578 as @a[tag=azrPlayer] at @s run effect give @a[tag=azrShowDialog] darkness 4 0 true
+execute if score @s rng1 matches 578 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"yellow",bold:1b},{bold: false,text:"\n“只需要阻止怪物接近爱理莎，就行。我的理解是否有误？”",color:"white"}]
+
+execute if score @s rng1 matches 583 run scoreboard players set @s rng1 700
+execute if score @s rng1 matches 701 as @a[tag=azrPlayer] at @s positioned -79971.97 -43.00 -2.00 run function skyblock:azr/assets/mobs/skill/boss3_flauros/summon_ch6
+
+
+execute if score @s rng1 matches 702.. positioned -79979 -44 -2 as @n[tag=AzrielNPC_mersenne,distance=..10] at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielNPC_flauros]
+execute if score @s rng1 matches 702.. positioned -79979 -44 -2 as @n[tag=AzrielNPC_marinus,distance=..10] at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielNPC_flauros]
+execute if score @s rng1 matches 150..700 positioned -79979 -44 -2 as @n[tag=AzrielNPC_flauros,distance=..16] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+
+execute if score @s rng1 matches 704 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“是、是权之殊能大人……！！”",color:"white"}]
+
+execute if score @s rng1 matches 714 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“权之殊能？你就是那个害我跌入地狱的家伙。”",color:"white"}]
+
+execute if score @s rng1 matches 729 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"权之殊能 佛劳洛斯：",color:"yellow",bold:1b},{bold: false,text:"\n“无趣的指责就免了吧。若问题在于玛帕斯与劳姆之外的敌人，我能够以‘帮助’的名义竖起一道高墙。”",color:"white"}]
+execute if score @s rng1 matches 743 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"权之殊能 佛劳洛斯：",color:"yellow",bold:1b},{bold: false,text:"\n“我希望爱理莎会在高墙崩塌前，找到解决劳姆的办法。”",color:"white"}]
+execute if score @s rng1 matches 758 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"权之殊能 佛劳洛斯：",color:"yellow",bold:1b},{bold: false,text:"\n“我不会帮你们更多。我会作为你们的敌人继续存在，不论是演戏与否，如今还没有完全拆穿的必要。”",color:"white"}]
+
+execute if score @s rng1 matches 774 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“听上去，你是要帮助我们。为什么？你不就是生命树庭园的内奸？”",color:"white"}]
+
+execute if score @s rng1 matches 787 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"权之殊能 佛劳洛斯：",color:"yellow",bold:1b},{bold: false,text:"\n“呵呵，仅凭我一人，又怎能引来魔界的大军呢。”",color:"white"}]
+execute if score @s rng1 matches 802 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"权之殊能 佛劳洛斯：",color:"yellow",bold:1b},{bold: false,text:"\n“我希望沙利叶会亲口告诉你原因。不过，我倒是觉得你已经没必要去问了。”",color:"white"}]
+
+execute if score @s rng1 matches 820 as @n[tag=AzrielNPC_flauros] at @s run playsound entity.player.teleport neutral @a ~ ~ ~ 1 0.8
+execute if score @s rng1 matches 820 as @n[tag=AzrielNPC_flauros] at @s run particle portal ~ ~1 ~ 0.3 0.8 0.3 0.06 20
+execute if score @s rng1 matches 820 as @n[tag=AzrielNPC_flauros] at @s run tp @s -79971.97 -93.00 -2.00
 
 
 
