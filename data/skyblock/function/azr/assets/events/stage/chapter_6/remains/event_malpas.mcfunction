@@ -107,7 +107,9 @@ execute if score @s rng1 matches 549 as @a[tag=azrPlayer] at @s run tellraw @a[t
 execute if score @s rng1 matches 563 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“最次最次，我们要面对的敌人也绝不仅有玛帕斯与劳姆。无数的怪物正对我们翘首以盼。”",color:"white"}]
 
 
-execute if score @s rng1 matches 578 as @a[tag=azrPlayer] at @s run effect give @a[tag=azrShowDialog] darkness 4 0 true
+execute if score @s rng1 matches 578 as @a[tag=azrPlayer] at @s run playsound ambient.warped_forest.loop ambient @a ~ ~3 ~ 10 0.8
+execute if score @s rng1 matches 578 as @a[tag=azrPlayer] at @s run playsound ambient.basalt_deltas.loop ambient @a ~ ~3 ~ 10 0.6
+execute if score @s rng1 matches 578 as @a[tag=azrPlayer] at @s run effect give @a[tag=azrShowDialog] darkness 20 0 true
 execute if score @s rng1 matches 578 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"yellow",bold:1b},{bold: false,text:"\n“只需要阻止怪物接近爱理莎，就行。我的理解是否有误？”",color:"white"}]
 
 execute if score @s rng1 matches 583 run scoreboard players set @s rng1 700
