@@ -30,6 +30,7 @@ fillbiome -79880 48 -39 -79680 51 22 minecraft:pale_garden
 fillbiome -79880 52 -39 -79680 55 22 minecraft:pale_garden
 fillbiome -79880 56 -39 -79680 59 22 minecraft:pale_garden
 
+weather thunder 100000
 
 clone -80020 0 -60 -80005 20 -43 -79939 26 -18
 
