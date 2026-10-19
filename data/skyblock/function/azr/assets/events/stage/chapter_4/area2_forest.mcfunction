@@ -23,8 +23,8 @@ execute positioned -79726 27 -516 unless entity @n[tag=AzrielMarker_encounter,di
 execute positioned -79726 27 -516 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 199.. run function skyblock:azr/assets/events/stage/chapter_4/forest/conv_bonus_object
 
 #矿洞入口的战斗
-execute positioned -79718 25 -499 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,x=-79718,y=25,z=-499,dx=30,dy=8,dz=30] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79718 25 -499 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 199.. run function skyblock:azr/assets/events/stage/chapter_4/forest/battle_mine_entrance
+execute if score stage Azr_system matches ..61 positioned -79718 25 -499 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,x=-79718,y=25,z=-499,dx=30,dy=8,dz=30] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute if score stage Azr_system matches ..61 positioned -79718 25 -499 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 199.. run function skyblock:azr/assets/events/stage/chapter_4/forest/battle_mine_entrance
 
 
 #矿洞到防空洞的快速通道
