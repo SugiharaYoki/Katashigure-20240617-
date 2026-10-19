@@ -128,6 +128,7 @@ execute if score @s rng1 matches 704 as @a[tag=azrPlayer] at @s run tellraw @a[t
 execute if score @s rng1 matches 714 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“权之殊能？你就是那个害我跌入地狱的家伙。”",color:"white"}]
 
 execute if score @s rng1 matches 729 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"权之殊能 佛劳洛斯：",color:"yellow",bold:1b},{bold: false,text:"\n“无趣的指责就免了吧。若问题在于玛帕斯与劳姆之外的敌人，我能够以‘帮助’的名义竖起一道高墙。”",color:"white"}]
+execute if score @s rng1 matches 743 as @a[tag=azrPlayer] at @s run tag @n[tag=AzrielNPC_flauros,distance=..16] remove AzrielMob
 execute if score @s rng1 matches 743 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"权之殊能 佛劳洛斯：",color:"yellow",bold:1b},{bold: false,text:"\n“我希望爱理莎会在高墙崩塌前，找到解决劳姆的办法。”",color:"white"}]
 execute if score @s rng1 matches 758 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"权之殊能 佛劳洛斯：",color:"yellow",bold:1b},{bold: false,text:"\n“我不会帮你们更多。我会作为你们的敌人继续存在，不论是演戏与否，如今还没有完全拆穿的必要。”",color:"white"}]
 
@@ -141,17 +142,18 @@ execute if score @s rng1 matches 820 as @n[tag=AzrielNPC_flauros] at @s run part
 execute if score @s rng1 matches 820 as @n[tag=AzrielNPC_flauros] at @s run tp @s -79971.97 -93.00 -2.00
 
 execute if score @s rng1 matches 839 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎大人，这……”",color:"white"}]
+execute if score @s rng1 matches 844 run scoreboard players set @s rng1 871
 
-execute if score @s rng1 matches 774 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“有关其他敌人的问题已经解决了。”",color:"white"}]
-execute if score @s rng1 matches 784 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“无论如何，我都会上。虽然你可能觉得我有勇无谋，但现在这并不一定是什么坏事。”",color:"white"}]
-execute if score @s rng1 matches 797 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“你们没必要跟我到最后的决战场。我希望你们活下来，但我也希望你们能助我一臂之力，让我也能活着到达生命树。”",color:"white"}]
+execute if score @s rng1 matches 874 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“有关其他敌人的问题已经解决了。”",color:"white"}]
+execute if score @s rng1 matches 884 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“无论如何，我都会上。虽然你可能觉得我有勇无谋，但现在这并不一定是什么坏事。”",color:"white"}]
+execute if score @s rng1 matches 897 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“你们没必要跟我到最后的决战场。我希望你们活下来，但我也希望你们能助我一臂之力，让我也能活着到达生命树。”",color:"white"}]
 
-execute if score @s rng1 matches 812 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“……属下明白了，爱理莎大人。”",color:"white"}]
-execute if score @s rng1 matches 822 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“我会看住你的后方。无论如何，我会让你活下来。”",color:"white"}]
+execute if score @s rng1 matches 912 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“……属下明白了，爱理莎大人。”",color:"white"}]
+execute if score @s rng1 matches 922 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“我会看住你的后方。无论如何，我会让你活下来。”",color:"white"}]
 
-execute if score @s rng1 matches 837 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“……谢谢你们。谢谢所有愿意帮助我的人。”",color:"white"}]
-execute if score @s rng1 matches 852 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“我准备好了就会再度出发。”",color:"white"}]
-execute if score @s rng1 matches 862 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“届时，我们打个漂亮的胜仗吧。”",color:"white"}]
+execute if score @s rng1 matches 937 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“……谢谢你们。谢谢所有愿意帮助我的人。”",color:"white"}]
+execute if score @s rng1 matches 952 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“我准备好了就会再度出发。”",color:"white"}]
+execute if score @s rng1 matches 962 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“届时，我们打个漂亮的胜仗吧。”",color:"white"}]
 
 
-execute if score @s rng1 matches 862 run scoreboard players set stage Azr_system 102
+execute if score @s rng1 matches 962 run scoreboard players set stage Azr_system 102
