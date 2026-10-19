@@ -12,7 +12,7 @@ execute if score stage Azr_system matches 3 run scoreboard players set stage_mai
 #第二关 4
 execute if score stage Azr_system matches 4 if score playerCount Azr_system matches 1.. run function skyblock:azr/assets/events/stage/chapter_1/stage2
 #第二关-第三关 5
-execute if score stage Azr_system matches 5..54 if score playerCount Azr_system matches 1.. run function skyblock:azr/assets/events/stage/chapter_1/stage3_surrounding
+execute if score stage Azr_system matches 5.. if score playerCount Azr_system matches 1.. run function skyblock:azr/assets/events/stage/chapter_1/stage3_surrounding
 #第三关 6/32
 execute if score stage Azr_system matches 6 run function skyblock:azr/assets/events/stage/chapter_1/stage3
 #第三关-第四关 7
