@@ -114,9 +114,12 @@ execute if score @s rng1 matches 583 run scoreboard players set @s rng1 700
 execute if score @s rng1 matches 701 as @a[tag=azrPlayer] at @s positioned -79971.97 -43.00 -2.00 run function skyblock:azr/assets/mobs/skill/boss3_flauros/summon_ch6
 
 
-execute if score @s rng1 matches 702.. positioned -79979 -44 -2 as @n[tag=AzrielNPC_mersenne,distance=..10] at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielNPC_flauros]
-execute if score @s rng1 matches 702.. positioned -79979 -44 -2 as @n[tag=AzrielNPC_marinus,distance=..10] at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielNPC_flauros]
-execute if score @s rng1 matches 150..700 positioned -79979 -44 -2 as @n[tag=AzrielNPC_flauros,distance=..16] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+execute if score @s rng1 matches 702..820 positioned -79979 -44 -2 as @n[tag=AzrielNPC_mersenne,distance=..10] at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielNPC_flauros]
+execute if score @s rng1 matches 702..820 positioned -79979 -44 -2 as @n[tag=AzrielNPC_marinus,distance=..10] at @s run tp @s ~ ~ ~ facing entity @n[tag=AzrielNPC_flauros]
+execute if score @s rng1 matches 150.. positioned -79979 -44 -2 as @n[tag=AzrielNPC_flauros,distance=..16] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+
+execute if score @s rng1 matches 821.. positioned -79979 -44 -2 as @n[tag=AzrielNPC_mersenne,distance=..10] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+execute if score @s rng1 matches 821.. positioned -79979 -44 -2 as @n[tag=AzrielNPC_marinus,distance=..10] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
 execute if score @s rng1 matches 704 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“是、是权之殊能大人……！！”",color:"white"}]
 
@@ -135,8 +138,17 @@ execute if score @s rng1 matches 820 as @n[tag=AzrielNPC_flauros] at @s run play
 execute if score @s rng1 matches 820 as @n[tag=AzrielNPC_flauros] at @s run particle portal ~ ~1 ~ 0.3 0.8 0.3 0.06 20
 execute if score @s rng1 matches 820 as @n[tag=AzrielNPC_flauros] at @s run tp @s -79971.97 -93.00 -2.00
 
+execute if score @s rng1 matches 839 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎大人，这……”",color:"white"}]
 
+execute if score @s rng1 matches 774 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“有关其他敌人的问题已经解决了。”",color:"white"}]
+execute if score @s rng1 matches 784 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“无论如何，我都会上。虽然你可能觉得我有勇无谋，但现在这并不一定是什么坏事。”",color:"white"}]
+execute if score @s rng1 matches 797 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“你们没必要跟我到最后的决战场。我希望你们活下来，但我也希望你们能助我一臂之力，让我也能活着到达生命树。”",color:"white"}]
 
+execute if score @s rng1 matches 812 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“……属下明白了，爱理莎大人。”",color:"white"}]
+execute if score @s rng1 matches 822 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“我会看住你的后方。无论如何，我会让你活下来。”",color:"white"}]
 
+execute if score @s rng1 matches 837 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“……谢谢你们。谢谢所有愿意帮助我的人。”",color:"white"}]
+execute if score @s rng1 matches 852 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“我准备好了就会再度出发。”",color:"white"}]
+execute if score @s rng1 matches 862 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“届时，我们打个漂亮的胜仗吧。”",color:"white"}]
 
 
