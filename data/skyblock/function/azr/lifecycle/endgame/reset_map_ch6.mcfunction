@@ -39,6 +39,7 @@ clone -80030 0 -100 -80008 13 -69 -79942 32 15
 clone -80030 0 -150 -80018 17 -109 -79962 36 -4
 
 execute positioned -79918 38 -15 run tp @e[tag=AzrielNPC_Divineforce,distance=..70] -79970 -51 8
+execute positioned -79890 39 -135 run tp @e[tag=AzrielNPC_Divineforce,distance=..70] -79970 -51 8
 
 
 setblock -79981 37 -11 minecraft:tinted_glass
@@ -49,6 +50,8 @@ setblock -79981 37 -18 minecraft:tinted_glass
 
 
 
+setblock -79933 39 -90 lever[facing=east,powered=true]
+fill -79933 40 -89 -79929 39 -89 air
 
 
 
@@ -64,5 +67,4 @@ setblock -79981 37 -18 minecraft:tinted_glass
 
 
 
-
-function skyblock:azr/lifecycle/endgame/forceload_close
+#function skyblock:azr/lifecycle/endgame/forceload_close
