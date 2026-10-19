@@ -30,7 +30,7 @@ execute if score @s rng1 matches 72 positioned -79837 35 -16 run function skyblo
 execute if score @s rng1 matches 74 positioned -79837 35 -13 run function skyblock:azr/assets/mobs/blaze
 execute if score @s rng1 matches 76 positioned -79837 35 -15 run function skyblock:azr/assets/mobs/blaze
 
-execute if score @s rng1 matches 96 positioned -79837.02 35.00 -13.98 run function skyblock:azr/assets/mobs/zoglin
+execute if score @s rng1 matches 96 positioned -79837.02 35.00 -13.98 run function skyblock:azr/assets/mobs/ravager
 execute if score @s rng1 matches 100 positioned -79837 35 -13 run function skyblock:azr/assets/mobs/skeleton_bomb
 execute if score @s rng1 matches 100 positioned -79837 35 -16 run function skyblock:azr/assets/mobs/skeleton_bomb
 execute if score @s rng1 matches 110 positioned -79837 35 -13 run function skyblock:azr/assets/mobs/skeleton_axe
