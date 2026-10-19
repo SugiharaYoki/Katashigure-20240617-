@@ -1087,6 +1087,10 @@ item replace block -79816 16 125 container.15 with golden_apple 1
 #第六章差分
 execute if block -79932 38 21 fire run function skyblock:azr/lifecycle/endgame/reset_map_ch6_undo
 
+#玛帕斯初见
+fill -79830 39 -15 -79830 41 -14 minecraft:barrier
+
+
 
 
 
