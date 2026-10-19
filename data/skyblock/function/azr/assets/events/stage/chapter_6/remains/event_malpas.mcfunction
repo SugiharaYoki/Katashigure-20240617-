@@ -80,7 +80,29 @@ execute if score @s rng1 matches 246 as @a[tag=azrPlayer] at @s run tellraw @a[t
 execute if score @s rng1 matches 261 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“他那么强吗？但归根究底，他也只是会快速召唤怪物……”",color:"white"}]
 execute if score @s rng1 matches 275 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“他的战斗能力并不出众，甚至比不上魔神亚米。但，他的‘权能’很危险。”",color:"white"}]
 execute if score @s rng1 matches 298 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“只要我们内心存在‘战略’，无论是接下来打算做什么举动、遵循什么计划、打了什么算盘……在他的眼前，都会暴露得一览无遗。”",color:"white"}]
+execute if score @s rng1 matches 315 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“我们需要万全的策略才能取胜。但我们却不能拥有策略。这使我们陷入了死局。”",color:"white"}]
+execute if score @s rng1 matches 330 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“另外，在渡鸦劳姆的权能作用下，魔界已经攻到了生命树的根部。”",color:"white"}]
+execute if score @s rng1 matches 345 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“他们还没找到办法突破结界，但这只会是时间问题。”",color:"white"}]
 
+execute if score @s rng1 matches 360 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“也就是说，我们必须尽快找到方案。实际上，我也没有任何想法……”",color:"white"}]
+execute if score @s rng1 matches 374 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“等等，说到‘想法’……默尔森，我们有多少友军？”",color:"white"}]
+execute if score @s rng1 matches 397 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“回禀爱理莎大人，在这休憩所内的基本便是全部。”",color:"white"}]
+
+execute if score @s rng1 matches 410 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“……如果我们根本没有任何战略，只是一门心思往前冲，冲到生命树的根部——”",color:"white"}]
+execute if score @s rng1 matches 425 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“接着，我们就将战略替换为‘守护生命树的结界’，这样子就可以近乎无效化玛帕斯的权能，因为他们也对攻破结界无可奈何。”",color:"white"}]
+
+execute if score @s rng1 matches 440 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“这是极具智慧的考量。但……我们很难突破生命树附近的魔界包围网。”",color:"white"}]
+
+execute if score @s rng1 matches 455 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“那不是问题。爱理莎绝对能想办法冲破防线。”",color:"white"}]
+execute if score @s rng1 matches 467 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“真正棘手的是玛帕斯依然能够看破爱理莎在战斗期间的举动。而劳姆与爱理莎势均力敌，玛帕斯的权能会导致爱理莎被压制。”",color:"white"}]
+execute if score @s rng1 matches 484 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“渡鸦劳姆的权能是什么？”",color:"white"}]
+
+execute if score @s rng1 matches 494 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“回禀大人，是瞬间拆毁建筑。”",color:"white"}]
+execute if score @s rng1 matches 506 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“我可不是建筑。如果玛帕斯需要告诉劳姆我接下来的举动，他需要怎么做？需要用嘴说出来吗？”",color:"white"}]
+execute if score @s rng1 matches 520 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“他们可以通过意念传话。……但没错，这也存在时间差。”",color:"white"}]
+
+execute if score @s rng1 matches 534 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“意思就是，只要我在这期间想办法打败劳姆，玛帕斯就算再能预言也奈何不了我，大概率是这样，没错吧？”",color:"white"}]
+execute if score @s rng1 matches 549 as @a[tag=azrPlayer] at @s run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“是这样。但这种计划，实施起来的难度……大人请原谅我，但我难以看到成功的希望。”",color:"white"}]
 
 
 
