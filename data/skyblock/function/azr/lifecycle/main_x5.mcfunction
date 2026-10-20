@@ -16,8 +16,8 @@ execute if score stage_main_thread AzrTimerStack matches 1.. run function skyblo
 
 #关卡控制部分
 #Introduction
-#execute if score playerCount Azr_system matches 1.. if score stage_bonus Azr_system matches 1.. run function skyblock:azr/lifecycle/stage_bonus
-#execute if score playerCount Azr_system matches 1.. run function skyblock:azr/lifecycle/stage_normal
+execute if score playerCount Azr_system matches 1.. if score stage_bonus Azr_system matches 1.. run function skyblock:azr/lifecycle/stage_bonus
+execute if score playerCount Azr_system matches 1.. run function skyblock:azr/lifecycle/stage_normal
 
 
 
