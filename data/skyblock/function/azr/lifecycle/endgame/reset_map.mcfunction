@@ -1032,7 +1032,8 @@ fill -79789 188 -521 -79793 188 -517 air replace minecraft:wildflowers
 #魔法大师支线
 setblock -79770 185 -817 air
 
-
+setblock -79748 194 -840 air
+setblock -79748 194 -840 lever[face=wall,facing=west]
 
 
 

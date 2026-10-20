@@ -28,6 +28,9 @@ execute if score @s AzrielNPC_ConversationTimer matches 129 run tellraw @a[tag=a
 execute if score @s AzrielNPC_ConversationTimer matches 144 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 1.1
 execute if score @s AzrielNPC_ConversationTimer matches 144 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"魔法大师：",color:"green",bold:1b},{bold: false,text:"\n“我会帮你开个小门，你去帮我解决掉它。”",color:"white"}]
 execute if score @s AzrielNPC_ConversationTimer matches 146 run setblock -79770 185 -817 redstone_torch
+execute if score @s AzrielNPC_ConversationTimer matches 146 positioned -79757 185 -848 run function skyblock:azr/assets/mobs/unique/blaze_boss_lush
+
+
 
 execute if score @s AzrielNPC_ConversationTimer matches 150..4500 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_309] run tellraw @s [{text:" - "},{text:"询问：我该怎么称呼你？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30901"}}]
 execute if score @s AzrielNPC_ConversationTimer matches 150..4500 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_309] run tellraw @s [{text:" - "},{text:"询问：这下水道为什么充满了生机？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30902"}}]
@@ -61,6 +64,32 @@ execute if score @s AzrielNPC_ConversationTimer matches 2028 run tellraw @a[tag=
 execute if score @s AzrielNPC_ConversationTimer matches 2039 run tag @a[tag=azrPlayer] remove azrPlayer_dialogchoice_revealed_309
 execute if score @s AzrielNPC_ConversationTimer matches 2039 run scoreboard players set @s AzrielNPC_ConversationTimer 149
 
+execute if score @s AzrielNPC_ConversationTimer matches 7999 run scoreboard players set @s AzrielNPC_ConversationTimer 7998
 
+execute if score @s AzrielNPC_ConversationTimer matches 150..8000 unless entity @a[distance=0..8,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 149
 
-execute if score @s AzrielNPC_ConversationTimer matches 150.. unless entity @a[distance=0..8,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 149
+execute if score @s AzrielNPC_ConversationTimer matches ..7999 positioned -79757 185 -848 unless entity @n[type=blaze,distance=..50] if entity @a[tag=!AZS_BoSShop13,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 8001
+
+execute if score @s AzrielNPC_ConversationTimer matches 8002 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 1.1
+execute if score @s AzrielNPC_ConversationTimer matches 8002 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"魔法大师：",color:"green",bold:1b},{bold: false,text:"\n“居然真的把那家伙给解决掉了吗？不愧是敢在这片丛林里穿梭的猛人。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 8017 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 1.1
+execute if score @s AzrielNPC_ConversationTimer matches 8017 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"魔法大师：",color:"green",bold:1b},{bold: false,text:"\n“就和我答应你的一样，我帮你修好生命手册。”",color:"white"}]
+
+execute if score @s AzrielNPC_ConversationTimer matches 8035 at @a[tag=azrPlayer] run function skyblock:azr/assets/events/effects/player_magic_release
+execute if score @s AzrielNPC_ConversationTimer matches 8035..8055 at @a[tag=azrPlayer] run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 2 0.9 0 3
+execute if score @s AzrielNPC_ConversationTimer matches 8035..8055 at @a[tag=azrPlayer] run particle minecraft:trial_spawner_detection_ominous ~ ~0.1 ~ 0.4 0 0.4 0 6
+execute if score @s AzrielNPC_ConversationTimer matches 8035 as @a[tag=azrShowDialog] at @s run playsound minecraft:entity.creaking.activate player @s ~ ~ ~ 1 0.8
+execute if score @s AzrielNPC_ConversationTimer matches 8035 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.soul_sand_valley.mood player @s ~ ~ ~ 2 1.3
+execute if score @s AzrielNPC_ConversationTimer matches 8035 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
+execute if score @s AzrielNPC_ConversationTimer matches 8035 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
+execute if score @s AzrielNPC_ConversationTimer matches 8035 as @a[tag=azrShowDialog] at @s run playsound minecraft:ambient.warped_forest.mood player @s ~ ~ ~ 2 0.7
+
+execute if score @s AzrielNPC_ConversationTimer matches 8055 as @a[tag=azrShowDialog] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 2 0.9
+execute if score @s AzrielNPC_ConversationTimer matches 8055 run tellraw @a[tag=azrShowDialog] {text:"「生命手册」已开放第 4 页",color:"green"}
+
+execute if score @s AzrielNPC_ConversationTimer matches 8061 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 1.1
+execute if score @s AzrielNPC_ConversationTimer matches 8061 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"魔法大师：",color:"green",bold:1b},{bold: false,text:"\n“大功告成，不用谢我。”",color:"white"}]
+
+execute if score @s AzrielNPC_ConversationTimer matches 8089 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“虽然是委托奖励，但总之还是感谢。帮大忙了。”",color:"white"}]
+execute if score @s AzrielNPC_ConversationTimer matches 8099 run tag @a[tag=azrPlayer] add AZS_BoSShop13
+execute if score @s AzrielNPC_ConversationTimer matches 8099 run scoreboard players set @s AzrielNPC_ConversationTimer 149
