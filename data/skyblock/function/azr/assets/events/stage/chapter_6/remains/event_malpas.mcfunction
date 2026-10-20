@@ -3,6 +3,7 @@
 
 scoreboard players add @s rng1 1
 
+execute if score @s rng1 matches 2..140 as @n[tag=AzrielNPC_malpas] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 execute if score @s rng1 matches 2 run scoreboard players set stage Azr_system 101
 
 execute if score @s rng1 matches 2 run fill -79830 39 -15 -79830 41 -14 minecraft:red_stained_glass
