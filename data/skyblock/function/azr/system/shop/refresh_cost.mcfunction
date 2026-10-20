@@ -13,7 +13,7 @@ execute if entity @s[tag=!Refresh_using_Resin,scores={Azr_emerald=3..}] at @s ru
 execute at @s run playsound minecraft:item.armor.equip_iron neutral @s ~ ~ ~ 100
 playsound minecraft:block.resin_bricks.place player @s[tag=Refresh_using_Resin] ~ ~ ~ 1.5 1.2
 tellraw @s[tag=!Refresh_using_Resin] [{text:"绿宝石余额： ",color:"gold"},{"score":{"name":"@s","objective":"Azr_emerald"}}]
-tellraw @s[tag=Refresh_using_Resin] [{text:"剩余树脂： ",color:"gold"},{"nbt":"ingredient.resin_clump","storage":"azr:shop"}]
+tellraw @s[tag=Refresh_using_Resin] [{text:"剩余树脂： ",color:"gold"},{"score":{"name":"@s","objective":"AzrResinCount"}}]
 tag @s remove azrShopOnUse
 tag @s add azrShopRefresh
 tag @s remove Refresh_using_Resin
