@@ -149,7 +149,7 @@ setblock -79934 31 17 chest[facing=east]{Inventory:[]}
 item replace block -79934 31 17 container.12 with minecraft:emerald 3
 item replace block -79934 31 17 container.14 with minecraft:emerald 3
 
-function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_mossflora
+schedule function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_mossflora 2t
 
   #苔藓钟乳洞
 setblock -79889 29 8 chest[facing=south]{Inventory:[]}
@@ -215,7 +215,7 @@ item replace block -79966 43 49 container.14 with minecraft:emerald 5
 execute unless block -79915 32 0 air run fill -79915 32 0 -79917 35 0 air
 
 
-function skyblock:azr/lifecycle/endgame/reset_map_boss1
+schedule function skyblock:azr/lifecycle/endgame/reset_map_boss1 3t
 execute if block -79932 38 104 air run fill -79932 38 104 -79930 42 104 minecraft:red_stained_glass
 
 
@@ -240,7 +240,7 @@ setblock -79925 37 201 chest[facing=east]{Inventory:[]}
 item replace block -79925 37 201 container.12 with emerald 3
 item replace block -79925 37 201 container.14 with resin_clump 1
 
-function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_diesel
+schedule function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_diesel 4t
 
   #树脂机
 setblock -79915 29 206 minecraft:gray_shulker_box{Inventory:[]}
@@ -450,7 +450,7 @@ item replace block -79714 40 87 container.15 with emerald 1
 
 
 #刺客boss
-function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_assassin
+schedule function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_assassin 5t
 
 
 
@@ -463,7 +463,7 @@ setblock -79897 38 55 minecraft:potted_flowering_azalea_bush
 setblock -79897 38 53 minecraft:potted_flowering_azalea_bush
 setblock -79897 38 51 minecraft:potted_flowering_azalea_bush
 setblock -79888 39 67 minecraft:air
-function skyblock:azr/lifecycle/endgame/reset_map_boss_main_marinus
+schedule function skyblock:azr/lifecycle/endgame/reset_map_boss_main_marinus 6t
 
 #stage8-boss2道中
 setblock -79902 39 33 minecraft:potted_lily_of_the_valley
@@ -483,7 +483,7 @@ execute if block -79881 41 40 air run fill -79881 41 40 -79883 38 40 minecraft:p
 setblock -79877 38 50 minecraft:potted_azalea_bush
 
 #boss2
-function skyblock:azr/lifecycle/endgame/reset_map_boss2
+schedule function skyblock:azr/lifecycle/endgame/reset_map_boss2 7t
 
 
 #boss2~stage9道中 水下小钥匙
@@ -971,7 +971,7 @@ item replace block -79685 25 -347 container.14 with gold_nugget 3
 ####遂栈
 #拉斐尔
 
-execute if block -79777 21 -206 air run function skyblock:azr/lifecycle/endgame/reset_map_boss4
+execute if block -79777 21 -206 air run schedule function skyblock:azr/lifecycle/endgame/reset_map_boss4 8t
 
 #stage photothermal
 fill -79963 27 210 -79961 27 210 minecraft:potted_torchflower
@@ -1095,7 +1095,7 @@ item replace block -79816 16 125 container.13 with golden_apple 1
 item replace block -79816 16 125 container.15 with golden_apple 1
 
 #第六章差分
-execute if block -79932 38 21 fire run function skyblock:azr/lifecycle/endgame/reset_map_ch6_undo
+execute if block -79932 38 21 fire run schedule function skyblock:azr/lifecycle/endgame/reset_map_ch6_undo 9t
 
 #玛帕斯初见
 execute unless block -79830 39 -15 barrier run fill -79830 39 -15 -79830 41 -14 minecraft:barrier
