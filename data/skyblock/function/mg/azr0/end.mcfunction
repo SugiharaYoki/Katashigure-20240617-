@@ -129,9 +129,6 @@ execute at @n[tag=mg_azr0,type=marker] run kill @e[type=item,distance=..120]
 execute at @n[tag=mg_azr0,type=marker] run gamemode adventure @a[distance=0..200,gamemode=spectator,tag=!ServerManager,tag=MG_AZR0PT_dead]
 execute at @n[tag=mg_azr0,type=marker] run gamemode creative @a[distance=0..200,gamemode=spectator,tag=ServerManager,tag=MG_AZR0PT_dead]
 
-# 下面是夜季写的紧急修复方案
-# execute at @n[tag=mg_azr0,type=marker] run gamemode spectator @a[distance=0..200,gamemode=adventure,tag=!ServerManager,tag=MG_AZR0PT_dead]
-# #execute at @n[tag=mg_azr0,type=marker] run gamemode spectator @a[distance=0..200,gamemode=adventure,tag=ServerManager,tag=MG_AZR0PT_dead]
 execute as @a[tag=MG_AZR0PT] at @s run function skyblock:api_quit_any_game
 
 clear @a[tag=MG_AZR0PT]

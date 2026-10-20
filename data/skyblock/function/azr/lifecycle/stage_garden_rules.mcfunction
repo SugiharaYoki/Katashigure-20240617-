@@ -1,15 +1,15 @@
 
 #Introduction
-execute if score stage Azr_system matches -1 if score playerCount Azr_system matches 1.. run function skyblock:azr/assets/events/stage/chapter_1/introduction
+execute if score stage Azr_system matches -1 run function skyblock:azr/assets/events/stage/chapter_1/introduction
 
 #开始-第一关 1
 execute if score stage Azr_system matches 1 run scoreboard players set stage_main_thread AzrTimerStack 0
 #第一关 2
-execute if score stage Azr_system matches 2 if score playerCount Azr_system matches 1.. run function skyblock:azr/assets/events/stage/chapter_1/stage1
+execute if score stage Azr_system matches 2 run function skyblock:azr/assets/events/stage/chapter_1/stage1
 #第一关-第二关 3
 execute if score stage Azr_system matches 3 run scoreboard players set stage_main_thread AzrTimerStack 0
 #第二关 4
-execute if score stage Azr_system matches 4 if score playerCount Azr_system matches 1.. run function skyblock:azr/assets/events/stage/chapter_1/stage2
+execute if score stage Azr_system matches 4 run function skyblock:azr/assets/events/stage/chapter_1/stage2
 
 
 #第三关 6/32

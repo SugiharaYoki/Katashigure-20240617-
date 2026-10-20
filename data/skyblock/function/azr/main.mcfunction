@@ -18,10 +18,8 @@ execute unless score isStarted Azr_system matches 1 run return 0
 # --------------------- 玩家存在 ----------------------------------
 
 # 按钮处理
-function skyblock:azr/system/buttons
+#function skyblock:azr/system/buttons
 
-# 许愿池
-function skyblock:azr/assets/events/effects/wish_fountain_transfer
 
 #实体函数
 execute as @e[x=-79931,y=100,z=0,distance=..10000] at @s run function skyblock:azr/system/entity/main
@@ -44,7 +42,7 @@ execute if score tick_count_main AzrTimerStack matches 5.. run function skyblock
     # stage1 event code:2
     execute if score stage Azr_system matches 2 run function skyblock:azr/assets/events/stage/chapter_1/stage1_event
 
-execute positioned -79931 100 0 store result score stage AZS_SoulFrag run execute if entity @e[distance=..10000]
+#execute positioned -79931 100 0 store result score stage AZS_SoulFrag run execute if entity @e[distance=..10000]
 execute positioned -79931 100 0 if score stage AZS_SoulFrag matches 3200.. run function skyblock:azr/fuse
 
 #DEBUG-关卡上限提示

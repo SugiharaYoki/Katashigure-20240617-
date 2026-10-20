@@ -1,6 +1,6 @@
 execute if entity @s[tag=!azrRetrieved,tag=AZR_SEAawakened] if score stage Azr_system matches 1.. run function skyblock:azr/lifecycle/jump_to/generic_retrieve
 
-#clear @s[gamemode=adventure] #skyblock:azr_clear
+clear @s[gamemode=adventure] #skyblock:azr_clear
 
 execute if block ~ ~-0.2 ~ black_concrete if block ~ ~-1.2 ~ red_concrete run damage @s 9999 fall
 

@@ -1,11 +1,11 @@
 
 #关卡控制部分
-execute if score stage Azr_system matches -1.. if score playerCount Azr_system matches 1.. run function skyblock:azr/assets/events/stage/chapter_1/event_awakening
+execute if score stage Azr_system matches -1.. run function skyblock:azr/assets/events/stage/chapter_1/event_awakening
 
 execute if score stage Azr_system matches ..29 run function skyblock:azr/lifecycle/stage_garden_rules
 
 #第二关-第三关 5
-execute if score stage Azr_system matches 5.. if score playerCount Azr_system matches 1.. if entity @a[x=-79931,y=37,z=-9,distance=..300] run function skyblock:azr/assets/events/stage/chapter_1/stage3_surrounding
+execute if score stage Azr_system matches 5.. if entity @a[x=-79931,y=37,z=-9,distance=..300] run function skyblock:azr/assets/events/stage/chapter_1/stage3_surrounding
 
 
 #第六关 15
