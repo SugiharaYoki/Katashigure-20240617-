@@ -27,7 +27,7 @@ execute if score @s AzrielNPC_ConversationTimer matches 129 run playsound minecr
 execute if score @s AzrielNPC_ConversationTimer matches 129 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"魔法大师：",color:"green",bold:1b},{bold: false,text:"\n“我这附近有一个明显是从魔界过来的玩意在捣乱，隔着墙也能吸收我的魔力。”",color:"white"}]
 execute if score @s AzrielNPC_ConversationTimer matches 144 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 1.1
 execute if score @s AzrielNPC_ConversationTimer matches 144 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"魔法大师：",color:"green",bold:1b},{bold: false,text:"\n“我会帮你开个小门，你去帮我解决掉它。”",color:"white"}]
-
+execute if score @s AzrielNPC_ConversationTimer matches 146 run setblock -79770 185 -817 redstone_torch
 
 execute if score @s AzrielNPC_ConversationTimer matches 150..4500 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_309] run tellraw @s [{text:" - "},{text:"询问：我该怎么称呼你？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30901"}}]
 execute if score @s AzrielNPC_ConversationTimer matches 150..4500 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_309] run tellraw @s [{text:" - "},{text:"询问：这下水道为什么充满了生机？  ",color:"#ffe69b"},{text:"〈◆〉",bold:1b,color:"#ffcf3f",click_event:{"action":"run_command","command":"trigger Azr_Shop set 30902"}}]
