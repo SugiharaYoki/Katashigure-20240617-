@@ -52,7 +52,9 @@ execute positioned -79728 173 -748 as @e[type=item,distance=..6] at @s if block 
 
 
 #魔法大师
--79767 187 -808
+execute positioned -79767 187 -808 unless entity @n[type=villager,distance=..5,tag=AzrielTrader_magicmaster] if entity @a[tag=azrPlayer,distance=..15] run function skyblock:azr/assets/mobs/unique/trader/magicmaster
+execute positioned -79767 187 -808 as @n[type=villager,distance=..5,tag=AzrielTrader_magicmaster] at @s run function skyblock:azr/assets/events/stage/chapter_5/lush/npc_magic_master
+
 
 
 
