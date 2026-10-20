@@ -117,7 +117,35 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=25,Azr_Shop=$(trigger)}] \
     rng25 run scoreboard players set tempPlayerShopSuccess Azr_system 1
     # 25  强壮烤鲑鱼 ×2  2 火药
 
+$execute as @s[scores={Azr_Shop_rng$(rng)=41,Azr_Shop=$(trigger)}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* slime_ball[count={min:2}] \
+    unless function skyblock:azr/system/shop/purchase/category1/\
+    rng41 run scoreboard players set tempPlayerShopSuccess Azr_system 1
 
+$execute as @s[scores={Azr_Shop_rng$(rng)=42,Azr_Shop=$(trigger)}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* slime_ball[count={min:2}] \
+    unless function skyblock:azr/system/shop/purchase/category1/\
+    rng42 run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
+$execute as @s[scores={Azr_Shop_rng$(rng)=43,Azr_Shop=$(trigger)}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s Azr_emerald matches 50.. \
+    unless function skyblock:azr/system/shop/purchase/category1/\
+    rng43 run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
+$execute as @s[scores={Azr_Shop_rng$(rng)=44,Azr_Shop=$(trigger)}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* ink_sac[count={min:2}] \
+    unless function skyblock:azr/system/shop/purchase/category1/\
+    rng44 run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
+$execute as @s[scores={Azr_Shop_rng$(rng)=45,Azr_Shop=$(trigger)}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* iron_ingot[count={min:2}] \
+    unless function skyblock:azr/system/shop/purchase/category1/\
+    rng45 run scoreboard players set tempPlayerShopSuccess Azr_system 1
 
 
 

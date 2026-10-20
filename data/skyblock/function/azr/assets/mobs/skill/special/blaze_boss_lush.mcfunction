@@ -1,14 +1,32 @@
+# 20 格内没有 azrPlayer：进入回血状态
+execute at @s unless entity @p[tag=azrPlayer,distance=..20] run tag @s add blaze_boss_regenerating
+
+# 19 格内出现 azrPlayer：清除回血效果，再移除标签
+execute if entity @s[tag=blaze_boss_regenerating] at @s if entity @p[tag=azrPlayer,distance=..19] run effect clear @s minecraft:regeneration
+execute at @s if entity @p[tag=azrPlayer,distance=..19] run tag @s remove blaze_boss_regenerating
+
+# 回血状态：再生 VI，正常 20 TPS 下每秒约恢复 20 点生命值
+execute if entity @s[tag=blaze_boss_regenerating] run effect give @s minecraft:regeneration 1 5 true
+
+
+# 13 格内无人：重置当前轮，清除招式编号
+# 后面的攻击都要求 rng2=1～4，因此不会继续释放
+execute at @s unless entity @p[tag=azrPlayer,distance=..13] run scoreboard players set @s rng1 0
+execute at @s unless entity @p[tag=azrPlayer,distance=..13] run scoreboard players set @s rng2 0
+
+# 无目标时 rng1 每 tick 都保持在 1；目标进入后继续增加
 scoreboard players add @s rng1 1
 
+# 每轮随机一种攻击
 execute if score @s rng1 matches 2 store result score @s rng2 run random value 1..4
 
 
-# 第一招：玩家脚下生成起点，后续扩散由 lush_aux 处理
-execute if entity @s[scores={rng1=2,rng2=1}] at @s at @p[tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker","blaze_boss_lush_aux","blaze_boss_lush_attack1_origin"]}
+# 第一招：13 格内最近玩家脚下生成起点
+execute if entity @s[scores={rng1=2,rng2=1}] at @s at @p[tag=azrPlayer,distance=..13] run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker","blaze_boss_lush_aux","blaze_boss_lush_attack1_origin"]}
 
 
-# 第二招：玩家脚下生成中心 candle
-execute if entity @s[scores={rng1=2,rng2=2}] at @s at @p[tag=azrPlayer] run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker","blaze_boss_lush_aux","blaze_boss_lush_attack2_origin"]}
+# 第二招：13 格内最近玩家脚下生成中心 candle
+execute if entity @s[scores={rng1=2,rng2=2}] at @s at @p[tag=azrPlayer,distance=..13] run summon marker ~ ~ ~ {Tags:["AzrielMob_candle_angel_candle_marker","AzrielMob_mob_marker","blaze_boss_lush_aux","blaze_boss_lush_attack2_origin"]}
 
 
 # 第三招：半径 1.7 格、高于脚部 1 格的水平火环，持续 20 tick
@@ -65,11 +83,10 @@ execute if entity @s[scores={rng1=22,rng2=3}] at @s rotated 337.5 0 anchored fee
 
 
 # 第四招：每 16 tick 生成一枚，共 4 枚
-# 仅存在 azrPlayer 玩家时生成
-execute if entity @s[scores={rng1=2,rng2=4}] at @s if entity @p[tag=azrPlayer] rotated ~ 0 anchored feet positioned ^ ^1 ^1.7 run summon item_display ~ ~ ~ {Tags:["AzrielMob_mob_marker","blaze_boss_lush_aux","blaze_boss_lush_ball","blaze_boss_lush_ball_aim"]}
-execute if entity @s[scores={rng1=18,rng2=4}] at @s if entity @p[tag=azrPlayer] rotated ~ 0 anchored feet positioned ^ ^1 ^1.7 run summon item_display ~ ~ ~ {Tags:["AzrielMob_mob_marker","blaze_boss_lush_aux","blaze_boss_lush_ball","blaze_boss_lush_ball_aim"]}
-execute if entity @s[scores={rng1=34,rng2=4}] at @s if entity @p[tag=azrPlayer] rotated ~ 0 anchored feet positioned ^ ^1 ^1.7 run summon item_display ~ ~ ~ {Tags:["AzrielMob_mob_marker","blaze_boss_lush_aux","blaze_boss_lush_ball","blaze_boss_lush_ball_aim"]}
-execute if entity @s[scores={rng1=50,rng2=4}] at @s if entity @p[tag=azrPlayer] rotated ~ 0 anchored feet positioned ^ ^1 ^1.7 run summon item_display ~ ~ ~ {Tags:["AzrielMob_mob_marker","blaze_boss_lush_aux","blaze_boss_lush_ball","blaze_boss_lush_ball_aim"]}
+execute if entity @s[scores={rng1=2,rng2=4}] at @s if entity @p[tag=azrPlayer,distance=..13] rotated ~ 0 anchored feet positioned ^ ^1 ^1.7 run summon item_display ~ ~ ~ {Tags:["AzrielMob_mob_marker","blaze_boss_lush_aux","blaze_boss_lush_ball","blaze_boss_lush_ball_aim"]}
+execute if entity @s[scores={rng1=18,rng2=4}] at @s if entity @p[tag=azrPlayer,distance=..13] rotated ~ 0 anchored feet positioned ^ ^1 ^1.7 run summon item_display ~ ~ ~ {Tags:["AzrielMob_mob_marker","blaze_boss_lush_aux","blaze_boss_lush_ball","blaze_boss_lush_ball_aim"]}
+execute if entity @s[scores={rng1=34,rng2=4}] at @s if entity @p[tag=azrPlayer,distance=..13] rotated ~ 0 anchored feet positioned ^ ^1 ^1.7 run summon item_display ~ ~ ~ {Tags:["AzrielMob_mob_marker","blaze_boss_lush_aux","blaze_boss_lush_ball","blaze_boss_lush_ball_aim"]}
+execute if entity @s[scores={rng1=50,rng2=4}] at @s if entity @p[tag=azrPlayer,distance=..13] rotated ~ 0 anchored feet positioned ^ ^1 ^1.7 run summon item_display ~ ~ ~ {Tags:["AzrielMob_mob_marker","blaze_boss_lush_aux","blaze_boss_lush_ball","blaze_boss_lush_ball_aim"]}
 
 
 # 下一轮
