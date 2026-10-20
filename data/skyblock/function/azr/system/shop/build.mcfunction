@@ -17,14 +17,10 @@ tellraw @s {text:"   "}
 execute if entity @s[tag=azrShopRefresh] if score @s Azr_shopChapter matches 1 run function skyblock:azr/system/shop/roll_chapter1
 execute if entity @s[tag=azrShopRefresh] if score @s Azr_shopChapter matches 2 run function skyblock:azr/system/shop/roll_chapter2
 execute if entity @s[tag=azrShopRefresh] if score @s Azr_shopChapter matches 3 run function skyblock:azr/system/shop/roll_chapter3
-execute if score @s Azr_shopChapter matches 1..3 run function skyblock:azr/system/shop/reader
 execute if entity @s[tag=azrShopRefresh] if score @s Azr_shopChapter matches 4 run function skyblock:azr/system/shop/roll_chapter4
-execute if score @s Azr_shopChapter matches 4 run function skyblock:azr/system/shop/reader_nethershop_1
-#execute if entity @s[tag=azrShopRefresh] if score @s Azr_shopChapter matches 5 run function skyblock:azr/system/shop/roll_chapter5
-#execute if score @s Azr_shopChapter matches 5 run function skyblock:azr/system/shop/reader_nethershop_2
-#execute if entity @s[tag=azrShopRefresh] if score @s Azr_shopChapter matches 6 run function skyblock:azr/system/shop/roll_chapter6
-#execute if score @s Azr_shopChapter matches 6 run function skyblock:azr/system/shop/reader_nethershop_1
-#execute if entity @s[tag=azrShopRefresh] if score @s Azr_shopChapter matches 7 run function skyblock:azr/system/shop/roll_chapter7
+execute if entity @s[tag=azrShopRefresh] if score @s Azr_shopChapter matches 5 run function skyblock:azr/system/shop/roll_chapter5
+execute if entity @s[tag=azrShopRefresh] if score @s Azr_shopChapter matches 6 run function skyblock:azr/system/shop/roll_chapter6
+execute if score @s Azr_shopChapter matches 1..6 run function skyblock:azr/system/shop/reader
 tellraw @s {text:"   "}
 
 
