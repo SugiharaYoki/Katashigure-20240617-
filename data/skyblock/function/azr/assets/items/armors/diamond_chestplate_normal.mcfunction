@@ -1,0 +1,1 @@
+give @s diamond_chestplate[custom_data={diamond_chestplate_normal:1b},custom_name={text:"海晶盔甲",italic:0b},attribute_modifiers=[{type:"minecraft:armor",id:"azr:diamond_chestplate_normal.armor",amount:4.0,operation:"add_value",slot:"armor"}],custom_model_data={floats:[100004.0]},unbreakable={}]

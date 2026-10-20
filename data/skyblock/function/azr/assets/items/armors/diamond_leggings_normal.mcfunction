@@ -1,0 +1,1 @@
+give @s diamond_leggings[custom_data={diamond_leggings_normal:1b},custom_name={text:"海晶护腿",italic:0b},attribute_modifiers=[{type:"minecraft:armor",id:"azr:diamond_leggings_normal.armor",amount:4.0,operation:"add_value",slot:"armor"}],custom_model_data={floats:[100004.0]},unbreakable={}]

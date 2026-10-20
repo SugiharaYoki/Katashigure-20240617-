@@ -1,0 +1,1 @@
+give @s diamond_helmet[custom_data={diamond_helmet_normal:1b},custom_name={text:"海晶盔",italic:0b},attribute_modifiers=[{type:"minecraft:armor",id:"azr:diamond_helmet_normal.armor",amount:4.0,operation:"add_value",slot:"armor"}],custom_model_data={floats:[100004.0]},unbreakable={}]
