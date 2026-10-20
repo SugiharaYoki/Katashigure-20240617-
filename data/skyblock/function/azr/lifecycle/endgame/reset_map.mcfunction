@@ -26,18 +26,18 @@ setblock -79388 24 -400 decorated_pot{sherds:["prize_pottery_sherd","prize_potte
 setblock -79396 26 -384 air
 setblock -79396 26 -384 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 
-fill -79370 27 -373 -79372 26 -373 minecraft:iron_bars
+execute if block -79370 27 -373 air run fill -79370 27 -373 -79372 26 -373 minecraft:iron_bars
 
 setblock -79416 28 -382 smoker[facing=west]{Inventory:[]}
 setblock -79416 28 -381 minecraft:potted_crimson_roots
 
 setblock -79466 29 -408 minecraft:nether_brick_slab[type=top]
-fill -79467 29 -410 -79467 29 -409 minecraft:nether_brick_slab[type=top]
-fill -79466 29 -415 -79466 29 -414 minecraft:nether_brick_slab[type=top]
-fill -79467 29 -416 -79467 29 -415 minecraft:nether_brick_slab[type=top]
+execute if block -79467 29 -410 air run fill -79467 29 -410 -79467 29 -409 minecraft:nether_brick_slab[type=top]
+execute if block -79466 29 -415 air run fill -79466 29 -415 -79466 29 -414 minecraft:nether_brick_slab[type=top]
+execute if block -79467 29 -416 air run fill -79467 29 -416 -79467 29 -415 minecraft:nether_brick_slab[type=top]
 fill -79952 41 -20 -79955 38 -20 minecraft:air
 
-fill -79409 30 -398 -79409 32 -396 minecraft:red_stained_glass
+execute if block -79409 30 -398 air run fill -79409 30 -398 -79409 32 -396 minecraft:red_stained_glass
 setblock -79401 27 -385 minecraft:redstone_block
 setblock -79401 27 -385 minecraft:air
 setblock -79387 24 -401 minecraft:redstone_block
@@ -45,12 +45,11 @@ setblock -79387 24 -401 minecraft:air
 setblock -79388 24 -405 minecraft:potted_crimson_fungus
 
 #新补充
-fill -79764 105 -2066 -79765 106 -2066 air
-fill -79764 105 -2066 -79765 106 -2066 minecraft:bamboo_shelf[facing=north]
+fill -79764 105 -2066 -79765 106 -2066 minecraft:bamboo_shelf[facing=north]{Inventory:[]}
 
 
 #start gate
-fill -79933 38 -15 -79933 40 -14 minecraft:purple_stained_glass
+execute if block -79933 38 -15 air run fill -79933 38 -15 -79933 40 -14 minecraft:purple_stained_glass
 #stage buttons
 setblock -79932 39 4 birch_button[facing=east,face=wall]{name: "Stage1 alpha & bata"}
 setblock -79935 39 10 minecraft:birch_button[face=wall,facing=east,powered=false]{name: "Stage2 alpha & bata"}
@@ -80,20 +79,20 @@ clone -79933 -14 -53 -79929 -3 -35 -79933 36 -53
 
 
 #Stage2
-fill -79931 38 22 -79931 40 22 purple_stained_glass{name: "to Stage3 alpha"}
-fill -79942 40 3 -79944 38 3 minecraft:purple_stained_glass{name: "to Stage3 bata"}
+execute if block -79931 38 22 air run fill -79931 38 22 -79931 40 22 purple_stained_glass{name: "to Stage3 alpha"}
+execute if block -79942 40 3 air run fill -79942 40 3 -79944 38 3 minecraft:purple_stained_glass{name: "to Stage3 bata"}
 
 #Stage3 alpha
-fill -79928 38 34 -79928 38 35 quartz_pillar
-fill -79928 39 34 -79928 39 35 quartz_bricks
+execute if block -79928 38 34 air run fill -79928 38 34 -79928 38 35 quartz_pillar
+execute if block -79928 39 34 air run fill -79928 39 34 -79928 39 35 quartz_bricks
 setblock -79928 38 33 minecraft:quartz_pillar{name: "Spider Room"}
-fill -79935 43 34 -79935 45 34 minecraft:purple_stained_glass{name: "to Secret Room-1"}
-fill -79931 38 40 -79931 40 40 purple_stained_glass{name: "to Stage4 alpha"}
+execute if block -79935 43 34 air run fill -79935 43 34 -79935 45 34 minecraft:purple_stained_glass{name: "to Secret Room-1"}
+execute if block -79931 38 40 air run fill -79931 38 40 -79931 40 40 minecraft:purple_stained_glass{name: "to Stage4 alpha"}
 setblock -79918 42 25 chest[facing=north]{Inventory:[]}
 item replace block -79918 42 25 container.13 with emerald 3
 setblock -79905 42 33 chest[facing=west]{Inventory:[]}
 item replace block -79905 42 33 container.13 with emerald 3
-fill -79924 36 34 -79924 33 34 minecraft:purple_stained_glass
+execute if block -79924 36 34 air run fill -79924 36 34 -79924 33 34 minecraft:purple_stained_glass
 setblock -79908 34 31 minecraft:chest[facing=west]
 item replace block -79908 34 31 container.12 with skull_banner_pattern[custom_name={text:"“最近的花卉涨势很怪异”",color: "dark_purple",italic:0b}, lore=[{text:"倒不是我神经过敏了吧，这些花的生长速度是不是太快了？",color:"white", italic:0b},{text:"简单培育的苔藓类植物已经遍布了整个培育室。",color:"white", italic:0b},{text:"它们吸收魔力生长，以其作为养分。",color:"white", italic:0b},{text:"那这是否意味着空气中的魔力浓度已经高到了一种难以想象的程度？",color:"white", italic:0b}]] 1
 item replace block -79908 34 31 container.14 with coal 1
@@ -111,7 +110,7 @@ setblock -79910 43 46 chest[facing=north]{Inventory:[]}
 item replace block -79910 43 46 container.12 with minecraft:emerald 3
 item replace block -79910 43 46 container.14 with minecraft:coal 1
   #stage8连接道
-fill -79906 40 27 -79906 38 29 minecraft:purple_stained_glass
+execute if block -79906 40 27 air run fill -79906 40 27 -79906 38 29 minecraft:purple_stained_glass
 
 #下砸隐藏通路
 setblock -79942 33 11 minecraft:honey_block
@@ -122,7 +121,7 @@ item replace block -79948 25 22 container.12 with skull_banner_pattern[custom_na
 item replace block -79948 25 22 container.14 with coal 2
 
 #Stage3 beta
-fill -79957 42 13 -79955 38 13 minecraft:purple_stained_glass{name: "to Stage4 beta"}
+execute if block -79957 42 13 air run fill -79957 42 13 -79955 38 13 minecraft:purple_stained_glass{name: "to Stage4 beta"}
 setblock -79955 38 1 minecraft:potted_azalea_bush
 setblock -79957 38 1 minecraft:potted_azalea_bush
 setblock -79960 38 19 minecraft:potted_azalea_bush
@@ -185,7 +184,7 @@ setblock -79932 43 41 barrier
 setblock -79931 42 42 barrier
 setblock -79930 42 41 barrier
 setblock -79932 42 41 barrier
-fill -79930 38 52 -79932 42 52 purple_stained_glass{name: "to Stage Boss1"}
+execute if block -79930 38 52 air run fill -79930 38 52 -79932 42 52 purple_stained_glass{name: "to Stage Boss1"}
 setblock -79954 32 39 chest[facing=east]{Inventory:[]}
 item replace block -79954 32 39 container.12 with minecraft:beef 2
 item replace block -79954 32 39 container.14 with emerald 3
@@ -198,7 +197,7 @@ setblock -79939 38 20 trapped_chest[facing=west]{lock:{components:{custom_data:{
 item replace block -79939 38 20 container.11 with emerald 3
 item replace block -79939 38 20 container.13 with skull_banner_pattern[custom_name={text:"“仍旧在调查魔物失控的真相”",color:"dark_purple",italic:0b},lore=[{text:"拉斐尔大人告知我丢失钥匙并无大碍，",color:"white",italic:0b},{text:"地下水路东区不存在任何有用的事物。",color:"white",italic:0b},{text:"可那里切切实实地封印着一位魔神啊……",color:"white",italic:0b}]]
 item replace block -79939 38 20 container.15 with emerald 3
-fill -79948 36 45 -79950 38 45 minecraft:purple_stained_glass
+execute if block -79948 36 45 air run fill -79948 36 45 -79950 38 45 minecraft:purple_stained_glass
 
 #Stage Cerement
 setblock -79939 39 58 chest[facing=north]{Inventory:[]}
@@ -213,11 +212,11 @@ item replace block -79966 43 49 container.12 with minecraft:emerald 5
 item replace block -79966 43 49 container.14 with minecraft:emerald 5
 
 #Stage Diffident
-fill -79915 32 0 -79917 35 0 air
+execute unless block -79915 32 0 air run fill -79915 32 0 -79917 35 0 air
 
 
 function skyblock:azr/lifecycle/endgame/reset_map_boss1
-fill -79932 38 104 -79930 42 104 minecraft:red_stained_glass
+execute if block -79932 38 104 air run fill -79932 38 104 -79930 42 104 minecraft:red_stained_glass
 
 
 #stage5
@@ -230,7 +229,7 @@ setblock -79933 38 125 minecraft:decorated_pot
   #屋顶摸不到的火把花
 fill -79937 56 149 -79941 56 149 minecraft:potted_torchflower
 
-fill -79932 42 130 -79930 38 130 minecraft:purple_stained_glass
+execute if block -79932 42 130 air run fill -79932 42 130 -79930 38 130 minecraft:purple_stained_glass
 
 #供能区域
 fill -79931 35 171 -79931 35 183 minecraft:red_concrete replace minecraft:redstone_block
@@ -258,7 +257,7 @@ item replace block -79954 37 172 container.15 with minecraft:coal 1
 setblock -79908 37 185 chest[facing=west]{Inventory:[]}
 item replace block -79908 37 185 container.12 with gunpowder 1
 item replace block -79908 37 185 container.14 with flint 1
-fill -79916 39 193 -79916 37 193 minecraft:purple_stained_glass
+execute if block -79916 39 193 air run fill -79916 39 193 -79916 37 193 minecraft:purple_stained_glass
   #单向门
 setblock -79917 38 191 minecraft:birch_button[facing=east]
   #小阳台
@@ -271,7 +270,7 @@ item replace block -79928 37 200 container.14 with emerald 2
 
 #stage Flux
 setblock -79960 39 193 birch_button[facing=north,face=floor]
-fill -79936 36 197 -79936 36 198 air
+execute unless block -79936 36 197 air run fill -79936 36 197 -79936 36 198 air
 
   #供热迷宫
 setblock -79963 29 179 chest[facing=east]{Inventory:[]}
@@ -304,7 +303,7 @@ item replace block -79919 33 158 container.14 with minecraft:emerald 3
 
 
 #stage6
-fill -79917 41 134 -79917 38 136 minecraft:purple_stained_glass
+execute if block -79917 41 134 air run fill -79917 41 134 -79917 38 136 minecraft:purple_stained_glass
 setblock -79943 39 135 minecraft:birch_button[facing=west,face=floor]
 
 #stage7
@@ -318,10 +317,10 @@ item replace block -79904 43 135 container.14 with tripwire_hook[custom_name={te
 setblock -79912 41 106 minecraft:potted_oxeye_daisy
 setblock -79912 41 103 minecraft:potted_oxeye_daisy
 
-fill -79898 42 101 -79896 38 101 minecraft:purple_stained_glass
+execute if block -79898 42 101 air run fill -79898 42 101 -79896 38 101 minecraft:purple_stained_glass
 
   #侧道墙
-fill -79903 43 83 -79905 40 83 minecraft:purple_stained_glass
+execute if block -79903 43 83 air run fill -79903 43 83 -79905 40 83 minecraft:purple_stained_glass
 setblock -79904 40 62 air
 setblock -79904 40 62 trapped_chest[facing=south]{lock:{components:{custom_data:{key_required:1b}}}}
 item replace block -79904 40 62 container.11 with minecraft:emerald 3
@@ -332,21 +331,21 @@ setblock -79933 44 111 minecraft:chest[facing=east]
 item replace block -79933 44 111 container.12 with minecraft:emerald 3
 item replace block -79933 44 111 container.14 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
   #直通vestige
-fill -79896 42 88 -79898 38 88 minecraft:purple_stained_glass
+execute if block -79896 42 88 air run fill -79896 42 88 -79898 38 88 minecraft:purple_stained_glass
 
 
 #通往vestige
-fill -79877 41 82 -79875 38 82 minecraft:purple_stained_glass
+execute if block -79877 41 82 air run fill -79877 41 82 -79875 38 82 minecraft:purple_stained_glass
 #setblock -79878 39 72 minecraft:quartz_slab[type=top]
 
 #entertain
 setblock -79887 44 164 minecraft:birch_button[face=floor,facing=south]
 setblock -79887 43 164 diamond_block
   #十字结界
-fill -79886 43 188 -79888 46 188 minecraft:purple_stained_glass
+execute if block -79886 43 188 air run fill -79886 43 188 -79888 46 188 minecraft:purple_stained_glass
 #fill -79914 43 188 -79916 46 188 minecraft:purple_stained_glass
-fill -79862 43 163 -79862 46 165 minecraft:purple_stained_glass
-fill -79886 43 132 -79888 45 132 minecraft:purple_stained_glass
+execute if block -79862 43 163 air run fill -79862 43 163 -79862 46 165 minecraft:purple_stained_glass
+execute if block -79886 43 132 air run fill -79886 43 132 -79888 45 132 minecraft:purple_stained_glass
   #十字北 阳台阁楼 招待厅
 setblock -79889 46 115 chest[facing=east]{Inventory:[]}
 item replace block -79889 46 115 container.12 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
@@ -478,9 +477,9 @@ fill -79887 38 16 -79887 38 18 quartz_block
 fill -79887 39 16 -79887 39 18 quartz_bricks
 fill -79887 40 16 -79887 40 18 quartz_block
 
-fill -79893 41 5 -79893 38 3 minecraft:purple_stained_glass
+execute if block -79893 41 5 air run fill -79893 41 5 -79893 38 3 minecraft:purple_stained_glass
 #暗处连通道
-fill -79881 41 40 -79883 38 40 minecraft:purple_stained_glass
+execute if block -79881 41 40 air run fill -79881 41 40 -79883 38 40 minecraft:purple_stained_glass
 setblock -79877 38 50 minecraft:potted_azalea_bush
 
 #boss2
@@ -497,7 +496,7 @@ item replace block -79939 35 -76 container.13 with resin_clump 1
 item replace block -79939 35 -76 container.15 with minecraft:dried_kelp 1
 
   #破碎的天花板
-fill -79934 45 -63 -79934 45 -61 minecraft:quartz_block
+execute if block -79934 45 -63 air run fill -79934 45 -63 -79934 45 -61 minecraft:quartz_block
 
 #stage9~10道中 破碎的天花板
 fill -79892 51 -49 -79888 51 -42 minecraft:quartz_slab[type=top] replace minecraft:structure_void
@@ -548,7 +547,7 @@ setblock -79857 40 -102 waxed_exposed_copper_chest[facing=south]{Inventory:[]}
 item replace block -79857 40 -102 container.13 with iron_ingot 1
 
   #第三章开放的路阻
-fill -79886 31 -66 -79886 35 -65 basalt
+execute if block -79886 31 -66 air run fill -79886 31 -66 -79886 35 -65 basalt
 
  #金属学家
 fill -79823 11 -45 -79823 17 -47 minecraft:air replace red_stained_glass
@@ -564,8 +563,8 @@ item replace block -79855 16 -73 container.13 with coal 2
 
 
 #静熄之火
-fill -79892 45 -68 -79889 42 -68 minecraft:purple_stained_glass
-fill -79890 42 -53 -79891 44 -53 minecraft:purple_stained_glass
+execute if block -79892 45 -68 air run fill -79892 45 -68 -79889 42 -68 minecraft:purple_stained_glass
+execute if block -79890 42 -53 air run fill -79890 42 -53 -79891 44 -53 minecraft:purple_stained_glass
 setblock -79883 50 -66 soul_fire
 setblock -79883 50 -64 soul_fire
 setblock -79883 50 -62 soul_fire
@@ -597,7 +596,7 @@ item replace block -79865 42 -52 container.13 with dried_kelp 8
 
 #监狱大门
 setblock -79886 41 -114 lever[face=floor,facing=west,powered=false]
-fill -79892 43 -119 -79889 40 -119 minecraft:iron_bars
+execute if block -79889 40 -119 air run fill -79892 43 -119 -79889 40 -119 minecraft:iron_bars
 setblock -79894 41 -123 lever[facing=east,face=floor,powered=false]
 
 #监狱装饰
@@ -640,11 +639,11 @@ item replace block -79936 49 -158 container.12 with skull_banner_pattern[custom_
 item replace block -79936 49 -158 container.14 with cooked_beef 3
 
   #冲破牢笼1
-fill -79910 40 -105 -79910 41 -105 iron_bars
+execute if block -79910 40 -105 air run fill -79910 40 -105 -79910 41 -105 iron_bars
   #休整剑士的监狱小房间
 fill -79925 40 -111 -79925 41 -111 iron_bars replace air
   #冲破牢笼2
-fill -79914 47 -103 -79914 46 -103 iron_bars
+execute if block -79914 47 -103 air run fill -79914 47 -103 -79914 46 -103 iron_bars
 
   #桌子
 setblock -79917 41 -104 minecraft:spruce_trapdoor[open=false,facing=west]
@@ -675,8 +674,8 @@ fill -79944 40 -105 -79942 42 -105 barrier
 
 #stage appetence
 setblock -79914 55 -111 minecraft:birch_button[facing=south,face=floor]
-fill -79924 54 -108 -79923 55 -108 iron_bars
-fill -79924 54 -103 -79923 55 -103 iron_bars
+execute if block -79924 54 -108 air run fill -79924 54 -108 -79923 55 -108 iron_bars
+execute if block -79924 54 -103 air run fill -79924 54 -103 -79923 55 -103 iron_bars
 
 #牢房食堂
 fill -79933 47 -96 -79931 48 -96 minecraft:oak_shelf[facing=south]{Inventory:[]}
@@ -721,24 +720,24 @@ item replace block -79957 46 -158 container.14 with flint 1
 #核心拉杆
 setblock -79867 48 -109 lever[face=floor,facing=east,powered=false]
 setblock -79867 -2 -109 lever[face=floor,facing=east,powered=true]
-fill -79861 -4 -103 -79873 -4 -115 black_concrete
+execute unless block -79861 -4 -103 black_concrete run fill -79861 -4 -103 -79873 -4 -115 black_concrete
 
 
 #原breakout
 setblock -79878 41 -131 lever[face=floor,facing=east,powered=false]
 setblock -79877 46 -142 minecraft:polished_andesite_slab
-fill -79883 40 -138 -79883 42 -140 minecraft:iron_bars
+execute unless block -79883 40 -138 iron_bars run fill -79883 40 -138 -79883 42 -140 minecraft:iron_bars
 
 #stage11开门处
-fill -79867 51 -130 -79867 48 -127 iron_bars
+execute unless block -79867 51 -130 iron_bars run fill -79867 51 -130 -79867 48 -127 iron_bars
 
 #牢房内区大门
-fill -79889 43 -154 -79892 40 -154 iron_bars
+execute unless block -79889 43 -154 iron_bars run fill -79889 43 -154 -79892 40 -154 iron_bars
 
 #牢房内区
-fill -79892 40 -154 -79889 43 -154 iron_bars
+execute unless block -79892 40 -154 iron_bars run fill -79892 40 -154 -79889 43 -154 iron_bars
 fill -79889 24 -182 -79892 27 -179 minecraft:polished_andesite_stairs[facing=south] replace minecraft:structure_void
-fill -79893 24 -221 -79888 32 -221 minecraft:red_stained_glass
+execute unless block -79893 24 -221 red_stained_glass run fill -79893 24 -221 -79888 32 -221 minecraft:red_stained_glass
 
 #BOSS-3
 clone -79925 22 -234 -79916 24 -225 -79895 22 -234
@@ -760,18 +759,18 @@ item replace block -79751 -9 -217 container.13 with resin_clump 1
   #灯1
   fill -79791 2 -280 -79787 2 -280 minecraft:waxed_copper_bulb[lit=false]
   setblock -79789 2 -280 minecraft:waxed_oxidized_copper_bulb[lit=false]
-  fill -79785 2 -276 -79785 1 -275 waxed_copper_bars
+  execute if block -79785 2 -276 air run fill -79785 2 -276 -79785 1 -275 waxed_copper_bars
   #灯2&3
   fill -79782 2 -281 -79776 2 -281 minecraft:waxed_copper_bulb[lit=false]
   fill -79782 2 -270 -79776 2 -270 minecraft:waxed_copper_bulb[lit=false]
 
   setblock -79778 2 -281 minecraft:waxed_oxidized_copper_bulb[lit=false]
   setblock -79780 2 -270 minecraft:waxed_oxidized_copper_bulb[lit=false]
-  fill -79774 1 -275 -79774 2 -276 waxed_copper_bars
+  execute if block -79774 1 -275 air run fill -79774 1 -275 -79774 2 -276 waxed_copper_bars
   #灯4
   fill -79770 2 -271 -79765 2 -271 minecraft:waxed_copper_bulb[lit=false]
   setblock -79766 2 -271 minecraft:waxed_oxidized_copper_bulb[lit=false]
-  fill -79762 1 -276 -79762 2 -275 waxed_copper_bars
+  execute if block -79762 1 -276 air run fill -79762 1 -276 -79762 2 -275 waxed_copper_bars
 
 setblock -79744 2 -293 minecraft:waxed_copper_chest[facing=north]{Inventory:[]}
 item replace block -79744 2 -293 container.12 with cooked_beef 2
@@ -821,15 +820,15 @@ fill -79735 16 -280 -79735 16 -278 anvil[facing=east]
 fill -79739 17 -275 -79742 17 -275 minecraft:potted_crimson_fungus
 
 #长廊战
-fill -79745 16 -297 -79750 22 -297 air replace minecraft:red_stained_glass
-fill -79757 23 -270 -79757 19 -272 minecraft:red_stained_glass
+execute unless block -79745 16 -297 red_stained_glass run fill -79745 16 -297 -79750 22 -297 air replace minecraft:red_stained_glass
+execute unless block -79757 23 -270 red_stained_glass run fill -79757 23 -270 -79757 19 -272 minecraft:red_stained_glass
 
 #初见百夫长
-fill -79768 35 -276 -79768 31 -278 minecraft:barrier
-fill -79771 28 -272 -79771 24 -270 minecraft:air
+execute unless block -79768 35 -276 barrier run fill -79768 35 -276 -79768 31 -278 minecraft:barrier
+execute unless block -79771 28 -272 air run fill -79771 28 -272 -79771 24 -270 minecraft:air
 fill -79778 31 -280 -79777 32 -280 anvil[facing=east]
   #二见百夫长
-  fill -79808 31 -282 -79808 27 -286 minecraft:air
+  execute unless block -79808 31 -282 air run fill -79808 31 -282 -79808 27 -286 minecraft:air
 
 #工厂花卉
 setblock -79756 41 -251 minecraft:potted_poppy
@@ -846,7 +845,7 @@ setblock -79764 32 -275 minecraft:potted_poppy
 setblock -79784 42 -283 air
 setblock -79784 42 -283 lever[facing=north]
 
-fill -79772 41 -350 -79773 39 -350 gravel
+execute unless block -79773 39 -350 gravel run fill -79772 41 -350 -79773 39 -350 gravel
 
 #小地狱 道中 隐藏箱子
 setblock -79741 39 -363 minecraft:waxed_copper_chest[facing=south]{Inventory:[]}
@@ -906,14 +905,14 @@ setblock -79742 23 -463 minecraft:water_cauldron[level=2]
 fill -79755 25 -461 -79755 23 -459 nether_brick_fence
 setblock -79753 24 -462 lever[face=floor,facing=south,powered=false]
 #防止提前进入血金窟
-fill -79694 24 -411 -79692 26 -411 minecraft:gravel
+execute unless block -79694 24 -411 gravel run fill -79694 24 -411 -79692 26 -411 minecraft:gravel
 
 #stage object
-fill -79715 26 -514 -79715 26 -516 air
-fill -79728 26 -514 -79728 26 -516 air
+execute unless block -79715 26 -514 air run fill -79715 26 -514 -79715 26 -516 air
+execute unless block -79728 26 -514 air run fill -79728 26 -514 -79728 26 -516 air
 
 #岩浆道上方
-fill -79647 23 -421 -79647 22 -422 minecraft:nether_brick_fence
+execute unless block -79647 23 -421 nether_brick_fence run fill -79647 23 -421 -79647 22 -422 minecraft:nether_brick_fence
 
 
 setblock -79626 21 -415 waxed_copper_chest[facing=north]{Inventory:[]}
@@ -930,7 +929,7 @@ fill -79568 5 -474 -79569 5 -473 minecraft:decorated_pot{item:{count: 1, id:"min
 fill -79572 5 -479 -79573 5 -478 minecraft:decorated_pot{item:{count: 1, id:"minecraft:gold_nugget"}}
 fill -79572 5 -466 -79571 5 -467 minecraft:decorated_pot{item:{count: 1, id:"minecraft:gold_nugget"}}
 fill -79585 5 -474 -79586 5 -475 minecraft:decorated_pot{item:{count: 1, id:"minecraft:gold_nugget"}}
-fill -79575 10 -451 -79575 13 -451 air
+execute unless block -79575 10 -451 air run fill -79575 10 -451 -79575 13 -451 air
 
 #交换屋
 fill -79590 10 -394 -79590 11 -393 minecraft:crimson_shelf[facing=east]{Inventory:[]}
@@ -944,7 +943,7 @@ setblock -79587 10 -389 minecraft:potted_crimson_roots
 fill -79533 27 -406 -79533 26 -405 minecraft:nether_brick_fence
 fill -79464 40 -431 -79469 31 -431 minecraft:obsidian replace minecraft:crying_obsidian
 fill -79464 40 -431 -79469 31 -431 minecraft:nether_portal[axis=x] replace minecraft:air
-fill -79495 30 -405 -79495 32 -406 air
+execute unless block -79495 30 -405 air run fill -79495 30 -405 -79495 32 -406 air
 
 setblock -79379 21 -375 waxed_copper_chest[facing=west]{Inventory:[]}
 item replace block -79379 21 -375 container.12 with gold_nugget 2
@@ -955,7 +954,7 @@ setblock -79356 27 -388 air
 setblock -79356 27 -388 lever[face=wall,facing=east]
 setblock -79337 23 -415 minecraft:obsidian
 
-fill -79392 26 -349 -79394 27 -349 iron_bars
+execute unless block -79392 26 -349 iron_bars run fill -79392 26 -349 -79394 27 -349 iron_bars
 
 setblock -79370 24 -407 minecraft:decorated_pot{sherds:["explorer_pottery_sherd","explorer_pottery_sherd","explorer_pottery_sherd","explorer_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
 
@@ -963,7 +962,7 @@ setblock -79370 24 -407 minecraft:decorated_pot{sherds:["explorer_pottery_sherd"
 clone -79514 5 -347 -79476 6 -309 -79514 14 -347
 
 #boss4通往工厂
-fill -79621 33 -327 -79621 30 -329 minecraft:nether_brick_fence
+execute unless block -79621 30 -329 nether_brick_fence run fill -79621 33 -327 -79621 30 -329 minecraft:nether_brick_fence
 setblock -79685 25 -347 waxed_copper_chest[facing=south]{Inventory:[]}
 item replace block -79685 25 -347 container.12 with gold_nugget 3
 item replace block -79685 25 -347 container.14 with gold_nugget 3
@@ -972,13 +971,13 @@ item replace block -79685 25 -347 container.14 with gold_nugget 3
 ####遂栈
 #拉斐尔
 
-function skyblock:azr/lifecycle/endgame/reset_map_boss4
+execute if block -79777 21 -206 air run function skyblock:azr/lifecycle/endgame/reset_map_boss4
 
 #stage photothermal
 fill -79963 27 210 -79961 27 210 minecraft:potted_torchflower
 fill -79961 26 211 -79963 26 211 minecraft:potted_torchflower
 setblock -79965 26 221 minecraft:birch_button[facing=south,face=floor]
-fill -79946 27 214 -79947 27 214 minecraft:air
+execute unless block -79946 27 214 air run fill -79946 27 214 -79947 27 214 minecraft:air
 
 
 
@@ -1003,8 +1002,8 @@ item replace block -79786 185 -808 container.12 with resin_clump 1
 item replace block -79786 185 -808 container.14 with emerald 2
 
 #管道殿堂 快捷梯子
-fill -79761 190 -798 -79761 193 -798 air
-fill -79787 189 -799 -79787 191 -799 air
+execute unless block -79761 190 -798 air run fill -79761 190 -798 -79761 193 -798 air
+execute unless block -79787 189 -799 air run fill -79787 189 -799 -79787 191 -799 air
 
 setblock -79778 188 -778 waxed_exposed_copper_chest[facing=north]{Inventory:[]}
 item replace block -79778 188 -778 container.12 with emerald 2
@@ -1019,14 +1018,14 @@ setblock -79778 196 -660 air
 setblock -79778 196 -660 lever[facing=west,face=wall]
 
 #boss slime
-fill -79732 189 -772 -79731 193 -772 minecraft:air
+execute unless block -79732 189 -772 air run fill -79732 189 -772 -79731 193 -772 minecraft:air
 
 setblock -79787 184 -666 waxed_exposed_copper_chest[facing=south]{Inventory:[]}
 item replace block -79787 184 -666 container.12 with emerald 3
 item replace block -79787 184 -666 container.14 with emerald 3
 
 #boss nymph
-fill -79789 188 -521 -79793 188 -517 air replace minecraft:wildflowers
+execute unless block -79789 188 -521 air run fill -79789 188 -521 -79793 188 -517 air replace minecraft:wildflowers
 
 
 #魔法大师支线
@@ -1041,15 +1040,15 @@ setblock -79748 194 -840 lever[face=wall,facing=west]
 
 #蓄水池
 #stage1
-fill -79692 -57 71 -79692 -53 75 minecraft:cyan_stained_glass
-fill -79700 -58 85 -79698 -57 85 minecraft:waxed_oxidized_copper_bars
-fill -79698 -58 61 -79700 -57 61 minecraft:waxed_oxidized_copper_bars
+execute unless block -79692 -57 71 cyan_stained_glass run fill -79692 -57 71 -79692 -53 75 minecraft:cyan_stained_glass
+execute unless block -79700 -58 85 waxed_oxidized_copper_bars run fill -79700 -58 85 -79698 -57 85 minecraft:waxed_oxidized_copper_bars
+execute unless block -79698 -58 61 waxed_oxidized_copper_bars run fill -79698 -58 61 -79700 -57 61 minecraft:waxed_oxidized_copper_bars
 
 #stage2
-fill -79592 -48 72 -79592 -44 74 minecraft:cyan_stained_glass
+execute unless block -79592 -48 72 cyan_stained_glass run fill -79592 -48 72 -79592 -44 74 minecraft:cyan_stained_glass
 
 #鹦鹉螺
-fill -79580 -35 17 -79578 -31 17 minecraft:air
+execute unless block -79578 -31 17 minecraft:air run fill -79580 -35 17 -79578 -31 17 minecraft:air
 
 #宝箱
 setblock -79736 -57 97 waxed_oxidized_copper_chest[facing=south]{Inventory:[]}
@@ -1082,12 +1081,12 @@ setblock -79674 -61 122 waxed_oxidized_copper_chest[facing=east]{Inventory:[]}
 item replace block -79674 -61 122 container.13 with emerald 3
 
 # protocol 3
-fill -79731 -6 82 -79731 -10 78 cyan_stained_glass
+execute unless block -79731 -6 82 cyan_stained_glass run fill -79731 -6 82 -79731 -10 78 cyan_stained_glass
 
 #Boss 佛卡洛
-fill -79863 -5 103 -79817 -5 57 deepslate_tiles replace water
-fill -79841 1 106 -79839 4 106 minecraft:iron_block
-fill -79800 -10 79 -79798 -7 81 air
+execute unless block -79858 -5 88 deepslate_tiles run fill -79863 -5 103 -79817 -5 57 deepslate_tiles replace water
+execute unless block -79839 4 106 minecraft:iron_block run fill -79841 1 106 -79839 4 106 minecraft:iron_block
+execute unless block -79800 -10 79 air run fill -79800 -10 79 -79798 -7 81 air
 
 #after_boss5
 setblock -79816 16 125 waxed_oxidized_copper_chest[facing=west]{Inventory:[]}
@@ -1099,7 +1098,7 @@ item replace block -79816 16 125 container.15 with golden_apple 1
 execute if block -79932 38 21 fire run function skyblock:azr/lifecycle/endgame/reset_map_ch6_undo
 
 #玛帕斯初见
-fill -79830 39 -15 -79830 41 -14 minecraft:barrier
+execute unless block -79830 39 -15 barrier run fill -79830 39 -15 -79830 41 -14 minecraft:barrier
 
 #休憩所会议桌
 fill -79980 -42 -3 -79984 -42 -3 minecraft:pale_oak_trapdoor[facing=south,half=bottom,open=false]
