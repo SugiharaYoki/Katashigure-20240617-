@@ -39,7 +39,7 @@ execute if score @s AzrielNPC_ConversationTimer matches 150..4500 as @a[distance
 
 execute if score @s AzrielNPC_ConversationTimer matches 150..4500 as @a[distance=0..5.5,tag=azrPlayer,tag=!azrPlayer_dialogchoice_revealed_309] run tag @s add azrPlayer_dialogchoice_revealed_309
 
-execute if score @s AzrielNPC_ConversationTimer matches 51 run scoreboard players set @s AzrielNPC_ConversationTimer 49
+execute if score @s AzrielNPC_ConversationTimer matches 151 run scoreboard players set @s AzrielNPC_ConversationTimer 149
 
 
 execute if score @s AzrielNPC_ConversationTimer matches 150..4500 as @a[distance=5.6..,tag=azrPlayer,tag=azrPlayer_dialogchoice_revealed_309] run tag @s remove azrPlayer_dialogchoice_revealed_309
@@ -68,7 +68,7 @@ execute if score @s AzrielNPC_ConversationTimer matches 7999 run scoreboard play
 
 execute if score @s AzrielNPC_ConversationTimer matches 150..8000 unless entity @a[distance=0..8,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 149
 
-execute if score @s AzrielNPC_ConversationTimer matches 149..7999 positioned -79757 185 -848 unless entity @n[type=blaze,distance=..50] if entity @a[tag=!AZS_BoSShop13,tag=azrPlayer] run scoreboard players set @s AzrielNPC_ConversationTimer 8001
+execute if score @s AzrielNPC_ConversationTimer matches 149..7999 positioned -79757 185 -848 unless entity @n[type=blaze,distance=..50] if entity @a[tag=!AZS_BoSShop13,tag=azrPlayer,distance=..7] run scoreboard players set @s AzrielNPC_ConversationTimer 8001
 
 execute if score @s AzrielNPC_ConversationTimer matches 8002 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 1.1
 execute if score @s AzrielNPC_ConversationTimer matches 8002 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"魔法大师：",color:"green",bold:1b},{bold: false,text:"\n“居然真的把那家伙给解决掉了吗？不愧是敢在这片丛林里穿梭的猛人。”",color:"white"}]
