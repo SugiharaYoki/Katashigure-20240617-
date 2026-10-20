@@ -1,12 +1,5 @@
 function skyblock:azr/lifecycle/endgame/forceload_open
 
-kill @n[tag=AzrielNPC_stage9_entry_conversation1,x=-79969,y=-52,z=3,distance=45..]
-kill @n[tag=AzrielNPC_stage9_entry_conversation2,x=-79969,y=-52,z=3,distance=45..]
-kill @n[tag=AzrielNPC_stage9_entry_conversation3,x=-79969,y=-52,z=3,distance=45..]
-kill @n[tag=AzrielNPC_stage9_entry_conversation4,x=-79969,y=-52,z=3,distance=45..]
-kill @n[tag=AzrielNPC_stage9_entry_conversation5,x=-79969,y=-52,z=3,distance=45..]
-kill @n[tag=AzrielNPC_stage9_entry_conversation6,x=-79969,y=-52,z=3,distance=45..]
-kill @n[tag=AzrielNPC_stage9_entry_conversation7,x=-79969,y=-52,z=3,distance=45..]
 
 fillbiome -80040 20 -39 -79880 23 22 minecraft:pale_garden
 fillbiome -80040 24 -39 -79880 27 22 minecraft:pale_garden
@@ -38,8 +31,6 @@ clone -80030 0 -100 -80008 13 -69 -79942 32 15
 
 clone -80030 0 -150 -80018 17 -109 -79962 36 -4
 
-execute positioned -79918 38 -15 run tp @e[tag=AzrielNPC_Divineforce,distance=..70] -79970 -51 8
-execute positioned -79890 39 -135 run tp @e[tag=AzrielNPC_Divineforce,distance=..70] -79970 -51 8
 
 
 setblock -79981 37 -11 minecraft:tinted_glass
