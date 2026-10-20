@@ -9,7 +9,7 @@ execute unless score stage Azr_startCount matches 1.. run function skyblock:azr/
 
 # --------------------- 游戏进行中 ----------------------------------
 # 玩家函数
-execute as @a at @s run function skyblock:azr/system/player/detector
+execute as @a[tag=!azrDebug_no_player_detector] at @s run function skyblock:azr/system/player/detector
 
 execute positioned -79937 39 -12 store result score playerCount Azr_system if entity @a[tag=azrPlayer,gamemode=!spectator,distance=..10000]
 scoreboard players operation playerCount Azr_system += DEBUG_fakePlayer Azr_system
