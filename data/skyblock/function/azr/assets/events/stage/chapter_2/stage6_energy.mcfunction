@@ -32,7 +32,7 @@ execute positioned -79955 28 195 as @n[tag=AzrielMarker_encounter,distance=0..0.
 
 #小阳台
 execute positioned -79927 44 200 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79927,y=44,z=200,dx=3,dy=3,dz=4,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79927 44 200 as @n[tag=AzrielMarker_encounter,distance=0..0.5] unless score @s rng1 matches 5.. run function skyblock:azr/assets/events/stage/chapter_2/area_energy/event_small_balcony
+execute positioned -79927 44 200 as @n[tag=AzrielMarker_encounter,distance=0..0.5] unless score @s rng1 matches 18.. run function skyblock:azr/assets/events/stage/chapter_2/area_energy/event_small_balcony
 
 
 #跳跃宝箱陷阱

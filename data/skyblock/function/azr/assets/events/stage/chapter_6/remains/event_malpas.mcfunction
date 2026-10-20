@@ -62,6 +62,7 @@ execute if score @s rng1 matches 140 as @a[tag=azrPlayer] at @s run particle min
 execute if score @s rng1 matches 140 as @a[tag=azrPlayer] at @s run execute rotated ~ 0 run function skyblock:azr/assets/events/effects/player_magic_release
 
 execute if score @s rng1 matches 140 as @a[tag=azrShowDialog] at @s run stopsound @s music minecraft:garden1.combathigh
+execute if score @s rng1 matches 140 run function skyblock:azr/assets/events/stage/chapter_1/botanical/display_area_summon
 
 execute if score @s rng1 matches 150..700 positioned -79979 -44 -2 as @n[tag=AzrielNPC_mersenne,distance=..10] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 execute if score @s rng1 matches 150..700 positioned -79979 -44 -2 as @n[tag=AzrielNPC_marinus,distance=..10] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]

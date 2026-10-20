@@ -53,7 +53,7 @@ execute positioned -79924.06 48.00 -127.04 as @n[tag=AzrielMob_ch3_middlesidegat
 
 #天桥
 execute if score stage Azr_system matches ..50 positioned -79901 47 -130 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79901,y=47,z=-130,dx=5,dy=5,dz=5,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute if score stage Azr_system matches ..50 positioned -79901 47 -130 as @n[tag=AzrielMarker_encounter,distance=0..0.5] unless score @s rng1 matches 20.. run function skyblock:azr/assets/events/stage/chapter_3/area_prison/event_the_overbridge
+execute if score stage Azr_system matches ..50 positioned -79901 47 -130 as @n[tag=AzrielMarker_encounter,distance=0..0.5] unless score @s rng1 matches 50.. run function skyblock:azr/assets/events/stage/chapter_3/area_prison/event_the_overbridge
 
 
 #异象1
