@@ -1,0 +1,8 @@
+execute at @s unless score @s AzrEntityTimer matches 2.. if entity @a[tag=azrPlayer,distance=0..7] run scoreboard players add @s AzrEntityTimer 1
+execute if score @s AzrEntityTimer matches 2.. run scoreboard players add @s AzrEntityTimer 1
+execute if entity @s[scores={AzrEntityTimer=3}] as @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] at @s run tellraw @a[tag=azrShowDialog] [{text:"剑士 鲁宾：",color:"green",bold:1b},{bold: false,text:"\n“抱歉，我们受伤很严重，请让我们稍作休整。”",color:"white"}]
+execute if entity @s[scores={AzrEntityTimer=170}] as @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] at @s run tellraw @a[tag=azrShowDialog,distance=0..9] [{text:"剑士 鲁宾：",color:"green",bold:1b},{bold: false,text:"\n“你先把那个治疗药丸给我。我把它拆解一下。”",color:"white"}]
+execute if entity @s[scores={AzrEntityTimer=180}] as @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] at @s run tellraw @a[tag=azrShowDialog,distance=0..9] [{text:"剑士 伊西多：",color:"green",bold:1b},{bold: false,text:"\n“好。”",color:"white"}]
+execute if entity @s[scores={AzrEntityTimer=320}] as @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] at @s run tellraw @a[tag=azrShowDialog,distance=0..9] [{text:"剑士 伊西多：",color:"green",bold:1b},{bold: false,text:"\n“感觉怎么样？我这里应该能正常行动了。”",color:"white"}]
+execute if entity @s[scores={AzrEntityTimer=334}] as @n[tag=AzrielNPC_stage9_prison_entry_conversation1,type=pillager] at @s run tellraw @a[tag=azrShowDialog,distance=0..9] [{text:"剑士 鲁宾：",color:"green",bold:1b},{bold: false,text:"\n“我也差不多。开门吧，去帮爱理莎清掉点僵尸。”",color:"white"}]
+execute if entity @s[scores={AzrEntityTimer=342}] run fill -79925 40 -111 -79925 41 -111 air
