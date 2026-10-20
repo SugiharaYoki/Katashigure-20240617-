@@ -7,12 +7,7 @@ execute positioned -79886 40 -114 as @n[tag=AzrielMarker_encounter,distance=0..0
 
 #西庭与stage10的连接道
 execute positioned -79933 39 -90 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=..7,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79933 39 -90 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
-execute positioned -79933 39 -90 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] unless block ~ ~ ~ lever[powered=true] run scoreboard players set @s rng1 0
-execute positioned -79933 39 -90 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3}] run fill -79929 39 -89 -79933 39 -89 air replace netherite_block
-execute positioned -79933 39 -90 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5}] run fill -79929 40 -89 -79933 40 -89 air replace netherite_block
-execute positioned -79933 39 -90 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3}] run playsound minecraft:block.iron_door.open block @a -79931 40 -89 3 0.5
-execute positioned -79933 39 -90 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5}] run playsound minecraft:block.iron_door.open block @a -79931 40 -89 3 0.5
+execute positioned -79933 39 -90 as @n[tag=AzrielMarker_encounter,distance=0..0.5] unless score @s rng1 matches 10.. run function skyblock:azr/assets/events/stage/chapter_3/area_prison/event_gate_of_west_to_stage10
 
 #初入牢房
 execute positioned -79899 40 -139 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=..14,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
@@ -37,9 +32,7 @@ execute if score stage Azr_system matches 29..50 as @n[tag=AzrielNPC_marinus] at
 
 #第二恣眼
 execute if score stage Azr_system matches ..50 positioned -79906 45 -106 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79908,y=45,z=-112,dx=15,dy=5,dz=15,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute if score stage Azr_system matches ..50 positioned -79906 45 -106 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
-execute if score stage Azr_system matches ..50 positioned -79906 45 -106 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79894 48 -109 run function skyblock:azr/assets/mobs/sonic_eye
-execute if score stage Azr_system matches ..50 positioned -79906 45 -106 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=1}] positioned -79905 47 -90 run function skyblock:azr/assets/mobs/sonic_eye
+execute if score stage Azr_system matches ..50 positioned -79906 45 -106 as @n[tag=AzrielMarker_encounter,distance=0..0.5] unless score @s rng1 matches 5.. run function skyblock:azr/assets/events/stage/chapter_3/area_prison/event_before_seeing_flauros
 
 #牢房办公区遭遇战
 execute positioned -79960 50 -89 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=..6,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
@@ -58,6 +51,7 @@ execute positioned -79924.06 48.00 -127.04 as @n[tag=AzrielMarker_encounter,dist
 execute positioned -79924.06 48.00 -127.04 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2}] run tag @n[type=vindicator,distance=0..2] add AzrielMob_ch3_middlesidegate_swordman
 execute positioned -79924.06 48.00 -127.04 as @n[tag=AzrielMob_ch3_middlesidegate_swordman,distance=..23,type=vindicator] at @s unless score @s AzrielNPC_ConversationTimer matches 300.. run function skyblock:azr/assets/events/stage/chapter_3/area_prison/npc_conversation_zhaowuyan
 
+#天桥
 execute if score stage Azr_system matches ..50 positioned -79901 47 -130 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79901,y=47,z=-130,dx=5,dy=5,dz=5,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute if score stage Azr_system matches ..50 positioned -79901 47 -130 as @n[tag=AzrielMarker_encounter,distance=0..0.5] unless score @s rng1 matches 20.. run function skyblock:azr/assets/events/stage/chapter_3/area_prison/event_the_overbridge
 
@@ -79,16 +73,7 @@ execute if score stage Azr_system matches ..50 run function skyblock:azr/assets/
 
 
 #原stage12铁门
-execute positioned -79867 49 -128 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run scoreboard players add @s rng1 1
-execute positioned -79867 49 -128 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3..4}] unless entity @a[tag=azrPlayer,distance=..7] run scoreboard players set @s rng1 3
-execute positioned -79867 49 -128 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5}] run fill -79867 48 -130 -79867 48 -127 air
-execute positioned -79867 49 -128 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=6}] run fill -79867 49 -130 -79867 49 -127 air
-execute positioned -79867 49 -128 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=7}] run fill -79867 50 -130 -79867 50 -127 air
-execute positioned -79867 49 -128 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=8}] run fill -79867 51 -130 -79867 51 -127 air
-execute positioned -79867 49 -128 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5..8}] run playsound minecraft:block.iron_door.open block @a -79867 51 -129.0 3 0.5
-execute positioned -79867 49 -128 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=8}] positioned -79842 48 -119 run function skyblock:azr/assets/mobs/skill/boss_villain/summon
-execute positioned -79867 49 -128 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=8}] positioned -79842 48 -119 run effect give @n[tag=AzrielBossVillain] resistance infinite 9 true
-execute positioned -79867 49 -128 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=8..}] positioned -79842 48 -119 run function skyblock:azr/assets/mobs/skill/boss_villain/core
+execute positioned -79867 49 -128 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/events/stage/chapter_3/area_prison/event_gate_to_villain
 
 
 
