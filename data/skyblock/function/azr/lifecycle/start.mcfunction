@@ -92,7 +92,6 @@ scoreboard players add Pointer Azr_startCount 1
 scoreboard players set stage Azr_system -1
 scoreboard players set isStarted Azr_system 1
 scoreboard players set stopSeconds Azr_system 0
-scoreboard players set chapter Azr_system 1
 scoreboard players set tick_count_main AzrTimerStack 0
 scoreboard players set stage_bonus Azr_system 0
 

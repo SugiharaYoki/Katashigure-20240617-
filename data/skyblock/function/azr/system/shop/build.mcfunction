@@ -7,10 +7,7 @@ tag @s[tag=azrNeverUsedShop] remove azrNeverUsedShop
 execute if score @s Azr_shopChapter matches 1 run tellraw @s {text:"『壹级商店 - Shop Level 1』",bold:1b,color:"white"}
 execute if score @s Azr_shopChapter matches 2 run tellraw @s {text:"『贰级商店 - Shop Level 2』",bold:1b,color:"white"}
 execute if score @s Azr_shopChapter matches 3 run tellraw @s {text:"『叁级商店 - Shop Level 3』",bold:1b,color:"white"}
-#execute if score @s Azr_shopChapter matches 4 run tellraw @s {text:"『绯红之章 - The Crimson Chapter』",bold:1b,color:"white"}
-#execute if score @s Azr_shopChapter matches 5 run tellraw @s {text:"『金锻之章 - The Gold Forged Chapter』",bold:1b,color:"white"}
-#execute if score @s Azr_shopChapter matches 6 run tellraw @s {text:"『诡蚀之章 - The Warped Chapter』",bold:1b,color:"white"}
-#execute if score @s Azr_shopChapter matches 7 run tellraw @s {text:"『第七章 - Chapter 7』",bold:1b,color:"white"}
+execute if score @s Azr_shopChapter matches 4 run tellraw @s {text:"『肆级商店 - Shop Level 3』",bold:1b,color:"white"}
 tellraw @s {text:"   "}
 
 #print trades

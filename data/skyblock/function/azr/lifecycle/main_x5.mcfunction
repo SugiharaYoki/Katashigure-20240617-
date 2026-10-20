@@ -4,8 +4,8 @@ execute as @a[tag=azrPlayer,tag=!azrDebug_no_player_slow] at @s run function sky
 #execute store result score mobCount Azr_system if entity @e[tag=AzrielMob,tag=!AzrielDecMob,x=-79931,y=100,z=0,distance=..10000,limit=70]
 #自动读秒
 scoreboard players add stage_main_thread AzrTimerStack 1
-execute if score #is_stopped:stage_main_thread AzrTimerStack matches 1.. if items entity @a[tag=azrPlayer] weapon.* *[custom_data~{azr_amulet_stopwatch:1b}] run title @a[tag=azrShowDialog] actionbar {text:"- 计 时 暂 停 -",color: "#debc66",bold:1b}
-execute if score #is_stopped:stage_main_thread AzrTimerStack matches 1.. if items entity @a[tag=azrPlayer] weapon.* *[custom_data~{azr_amulet_stopwatch:1b}] run scoreboard players remove stage_main_thread AzrTimerStack 1
+execute if score #is_stopped:stage_main_thread AzrTimerStack matches 1.. if score stage Azr_system matches ..40 if items entity @a[tag=azrPlayer] weapon.* *[custom_data~{azr_amulet_stopwatch:1b}] run title @a[tag=azrShowDialog] actionbar {text:"- 计 时 暂 停 -",color: "#debc66",bold:1b}
+execute if score #is_stopped:stage_main_thread AzrTimerStack matches 1.. if score stage Azr_system matches ..40 if items entity @a[tag=azrPlayer] weapon.* *[custom_data~{azr_amulet_stopwatch:1b}] run scoreboard players remove stage_main_thread AzrTimerStack 1
 
 scoreboard players add stage_bonus_thread AzrTimerStack 1
 scoreboard players add random_enemy_thread AzrTimerStack 1
@@ -22,25 +22,7 @@ execute if score playerCount Azr_system matches 1.. run function skyblock:azr/li
 
 
 
-#章节设置
-execute if score stage Azr_system matches -2..10 run scoreboard players set chapter Azr_system 1
-execute if score stage Azr_system matches 11..24 run scoreboard players set chapter Azr_system 2
-execute if score stage Azr_system matches 25..49 run scoreboard players set chapter Azr_system 3
-execute if score stage Azr_system matches 50..75 run scoreboard players set chapter Azr_system 4
-execute if score stage Azr_system matches 76..120 run scoreboard players set chapter Azr_system 5
-execute if score stage Azr_system matches 130..160 run scoreboard players set chapter Azr_system 6
-
-
 #重置计时器
 scoreboard players set tick_count_main AzrTimerStack 0
 # 强制释放临时变量
 scoreboard players reset #temp_rng Azr_system
-
-#第一章-第二章 TODO：
-#灵能
-#button2（stage7二楼）
-#button3（stage7三楼）
-#button4（图书馆）
-
-#第四章 TODO 金镐图案的钥匙-提示
-#summon minecraft:item_frame -79571.50 12.03 -410.50 {ItemRotation: 0b, Invulnerable: 1b, Item: {count: 1, id: "minecraft:golden_pickaxe"}, Invisible: 1b}

@@ -1,4 +1,4 @@
-execute if score @s Azr_Shop matches 20 run scoreboard players operation @s Azr_shopChapter = chapter Azr_system
+execute if score @s Azr_Shop matches 20 run scoreboard players set @s Azr_shopChapter 1
 execute if score @s Azr_Shop matches 21 run scoreboard players set @s Azr_shopChapter 1
 execute if score @s Azr_Shop matches 22 run scoreboard players set @s Azr_shopChapter 2
 execute if score @s Azr_Shop matches 23 run scoreboard players set @s Azr_shopChapter 3
