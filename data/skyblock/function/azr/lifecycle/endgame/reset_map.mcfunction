@@ -1159,9 +1159,7 @@ fill -79980 -42 -2 -79984 -42 -2 minecraft:pale_oak_trapdoor[facing=north,half=b
 #fill -79470 32 -429 -79463 35 -432 crimson_stem[axis=y] replace warped_stem
 #fill -79468 31 -430 -79465 31 -432 crimson_stem[axis=x] replace warped_stem
 
-#______________________________________________________________#
-function skyblock:azr/lifecycle/endgame/forceload_close
-#______________________________________________________________#
+
 kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1000]
 
 tellraw @a[tag=!Gaming] {text:"死亡总是在不经意间，悄然而至，摧毁一切美梦。",color: "green"}
@@ -1178,4 +1176,7 @@ scoreboard players set stage Azr_system 0
 execute positioned -79776 104 -2081 run kill @e[distance=..50]
 execute positioned -79776 104 -2081 run kill @e[distance=..50,type=item]
 execute positioned -79776 104 -2081 run kill @e[distance=..50,type=marker]
-forceload remove -79776 -2081
+
+#______________________________________________________________#
+function skyblock:azr/lifecycle/endgame/forceload_close
+#______________________________________________________________#

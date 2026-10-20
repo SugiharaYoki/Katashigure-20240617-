@@ -30,3 +30,5 @@ forceload remove -79900 -922 -79800 -588
 forceload remove -79800 -922 -79700 -588
 forceload remove -79700 -922 -79600 -588
 forceload remove -79600 -922 -79500 -588
+
+forceload remove -79776 -2081
