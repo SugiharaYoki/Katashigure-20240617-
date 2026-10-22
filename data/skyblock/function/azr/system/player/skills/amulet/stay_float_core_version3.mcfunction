@@ -7,7 +7,7 @@ scoreboard players remove @s AzrSariel_Amulet_StayFloat_cooldown 1
 execute unless score @s AzrSariel_Amulet_MagicalCurrentLevel matches 1.. if entity @s[scores={AzrSariel_Amulet_StayFloat_cooldown=..0},predicate=skyblock:jump,gamemode=adventure] unless block ~ ~-0.3 ~ water unless block ~ ~0.3 ~ water unless block ~ ~ ~ #climbable if block ~ ~-0.9 ~ air run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 140
 
 execute if items entity @s container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run tag @s add stay_float_attack_pass
-execute if items entity @s[tag=AZS_BoS11] container.* *[custom_data~{azr_amulet_light_angel_4:1b}] run tag @s add stay_float_attack_pass
+execute if items entity @s[tag=AZS_BoS11,tag=AZS_BoSB22] container.* *[custom_data~{azr_amulet_light_angel_4:1b}] run tag @s add stay_float_attack_pass
 
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138.. if entity @s[predicate=skyblock:jump] as @s at @s anchored eyes unless block ^ ^ ^0.5 air if block ^ ^-0.5 ^ air run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 3
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138.. if entity @s[predicate=skyblock:jump] as @s at @s anchored eyes if block ^ ^ ^0.5 air unless block ^ ^-0.5 ^ air run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 3
@@ -39,7 +39,6 @@ execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s a
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s unless entity @s[tag=stay_float_attack_pass] run particle white_smoke ~ ~-0.2 ~ 0.1 0 0.1 0.03 8
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s if entity @s[tag=stay_float_attack_pass] run particle white_smoke ~ ~-0.2 ~ 0.1 0 0.1 0.02 2
 
-tag @s remove stay_float_attack_pass
 
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 138 if entity @s[predicate=skyblock:jump] run effect give @s slow_falling 1 99 true
 execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 90.. if entity @s[predicate=!skyblock:jump] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 90
@@ -52,3 +51,8 @@ execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 1..2 if entity @
 
 
 
+
+# 悬蔑命中续浮：在松开跳跃和到期处理后判定，仅增强悬浮允许刷新。
+execute if entity @s[tag=stay_float_attack_pass] if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. if score @s AzrSariel_Amulet_StayFloat_cooldown matches 119..135 run tag @s add azr_amulet_stay_float_attacked
+execute if entity @s[tag=stay_float_attack_pass] if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. if score @s AzrSariel_Amulet_StayFloat_cooldown matches 119..135 run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 134
+tag @s remove stay_float_attack_pass

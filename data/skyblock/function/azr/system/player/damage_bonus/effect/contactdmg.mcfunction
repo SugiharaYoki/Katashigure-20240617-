@@ -1,7 +1,12 @@
+# 地裂本体与诸武整合只增加一档，结束后归还临时加值。
+tag @s remove land_fracture_bonus_pass
+execute if items entity @s hotbar.* *[custom_data~{azr_amulet_land_fracture:1b}] run tag @s add land_fracture_bonus_pass
+execute if items entity @s[tag=AZS_BoSB03] container.* *[custom_data~{azr_amulet_multiweapon:1b}] run tag @s add land_fracture_bonus_pass
+
 
 execute if score @s AzrSariel_Skill_ContactDmg matches 1.. if entity @n[tag=AzrielMob,distance=0..0.5,tag=!AzrielMob_contactdmg_immune] run tag @s add AzrSariel_Skill_ContactDmg_success
 
-execute if items entity @s hotbar.* *[custom_data~{azr_amulet_land_fracture:1b}] run scoreboard players add @s AzrSariel_Skill_ContactDmg 1
+execute if entity @s[tag=land_fracture_bonus_pass] run scoreboard players add @s AzrSariel_Skill_ContactDmg 1
 
 
 execute if entity @s[tag=AzrSariel_Skill_ContactDmg_success] run scoreboard players set @s AzrSariel_Skill_ContactDmg_cooldown 10
@@ -11,9 +16,11 @@ execute if entity @s[tag=AzrSariel_Skill_ContactDmg_success,scores={AzrSariel_Sk
 execute if entity @s[tag=AzrSariel_Skill_ContactDmg_success,scores={AzrSariel_Skill_ContactDmg=4}] as @e[tag=AzrielMob,distance=0..0.51,tag=!AzrielMob_contactdmg_immune] at @s run damage @s 6 thorns by @p[tag=AzrSariel_Skill_ContactDmg_success]
 execute if entity @s[tag=AzrSariel_Skill_ContactDmg_success] at @s run playsound minecraft:enchant.thorns.hit player @a ~ ~ ~ 1 1.5
 
-execute if items entity @s hotbar.* *[custom_data~{azr_amulet_land_fracture:1b}] run scoreboard players remove @s AzrSariel_Skill_ContactDmg 1
+execute if entity @s[tag=land_fracture_bonus_pass] run scoreboard players remove @s AzrSariel_Skill_ContactDmg 1
 
 
 execute if entity @s[tag=AzrSariel_Skill_ContactDmg_success] run tag @s remove AzrSariel_Skill_ContactDmg_success
 
 
+
+tag @s remove land_fracture_bonus_pass

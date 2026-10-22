@@ -61,7 +61,7 @@ execute if score stage_bonus_thread AzrTimerStack matches 200..201 positioned -7
 
 execute if score stage_bonus_thread AzrTimerStack matches 204 run title @a[tag=azrShowDialog] actionbar {text:"Extra Stage Clear",color:"green"}
 execute if score stage_bonus_thread AzrTimerStack matches 204 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage_bonus_vestige
-execute if score stage_bonus_thread AzrTimerStack matches 204 as @a[tag=azrPlayer] at @s unless entity @s[tag=!AZS_BoS22] run function skyblock:azr/assets/items/amulets/down_kick
+execute if score stage_bonus_thread AzrTimerStack matches 204 as @a[tag=azrPlayer] at @s unless entity @s[tag=AZS_BoS22] run function skyblock:azr/assets/items/amulets/down_kick
 execute if score stage_bonus_thread AzrTimerStack matches 204 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoS22
 execute if score stage_bonus_thread AzrTimerStack matches 204 as @a[tag=azrPlayer] at @s run give @s emerald 5
 execute if score stage_bonus_thread AzrTimerStack matches 204 as @a[tag=azrPlayer] at @s run fill -79877 41 82 -79875 38 82 minecraft:air destroy

@@ -57,12 +57,9 @@ execute if items entity @s hotbar.* *[custom_data~{azr_amulet_double_arrow:1b}] 
 
 execute if items entity @s container.* *[custom_data~{azr_amulet_stay_float:1b}] run tag @s add stay_float_pass
 execute if items entity @s[tag=AZS_BoS11] container.* *[custom_data~{azr_amulet_stay_float_attack:1b}] run tag @s add stay_float_pass
-execute if items entity @s[tag=AZS_BoS11] container.* *[custom_data~{azr_amulet_light_angel_4:1b}] run tag @s add stay_float_pass
+execute if items entity @s[tag=AZS_BoS11,tag=AZS_BoSB22] container.* *[custom_data~{azr_amulet_light_angel_4:1b}] run tag @s add stay_float_pass
 execute if entity @s[tag=stay_float_pass] at @s run function skyblock:azr/system/player/skills/amulet/stay_float_core_version3
 
-#悬蔑石板
-execute if entity @s[tag=stay_float_pass] if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. if score @s AzrSariel_Amulet_StayFloat_cooldown matches 119..135 run tag @s add azr_amulet_stay_float_attacked
-execute if entity @s[tag=stay_float_pass] if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. if score @s AzrSariel_Amulet_StayFloat_cooldown matches 119..135 run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 134
 tag @s remove stay_float_pass
 
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_axe_vortex:1b}] run function skyblock:azr/system/player/skills/amulet/axe_vortex_core
@@ -135,7 +132,7 @@ execute if score @s AzrSariel_Amulet_Parry_cooldown matches 10.. run function sk
 #一次性打火石
 execute if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. if items entity @s weapon.mainhand *[custom_data~{instant_spark:1b}] run function skyblock:azr/system/player/damage_bonus/effect/item_instant_spark
 #多重射击额外消耗
-execute if score @s AzrSariel_Amulet_generic_use_bow matches 1.. if score @s AzrArrowSavior_state matches 1..2 run scoreboard players remove @s AzrSariel_Amulet_ArrowSavior_count 2
+execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_tripler:1b}] if score @s AzrSariel_Amulet_generic_use_bow matches 1.. if score @s AzrSariel_Amulet_ArrowSavior_state matches 1..2 run scoreboard players remove @s AzrSariel_Amulet_ArrowSavior_count 2
 
 #负面影响事件
 execute if score @s AzrEvent_affected_quake_medium matches 1.. run function skyblock:azr/assets/events/effects/affected_quake_medium

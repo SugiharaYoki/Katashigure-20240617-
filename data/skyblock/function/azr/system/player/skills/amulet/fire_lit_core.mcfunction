@@ -54,7 +54,7 @@ execute if entity @s[tag=AZR_Amulet_Instant_Success,scores={rng2=1}] as @e[tag=A
 execute if entity @s[tag=AZR_Amulet_Instant_Success,scores={rng2=2..}] as @e[tag=AZR_Amulet_Instant_Target] at @s run damage @s 2.0 in_fire by @p[tag=AZR_Amulet_Instant_Success]
 
 execute if entity @s[tag=AZR_Amulet_Instant_Success] as @e[tag=AZR_Amulet_Instant_Target,limit=5] at @s run scoreboard players add @p[tag=AZR_Amulet_Instant_Success,distance=..13,tag=azrPlayer] AzrSariel_Amulet_FireLit_count 1
-execute if entity @s[tag=!AZR_Amulet_Instant_Success_Short] as @e[tag=AZR_Amulet_Instant_Target,limit=3] at @s run scoreboard players add @p[tag=AZR_Amulet_Instant_Success,distance=..13,tag=azrPlayer] AzrSariel_Amulet_FireLit_count 1
+execute if entity @s[tag=AZR_Amulet_Instant_Success,tag=AZR_Amulet_Instant_Success_Short] as @e[tag=AZR_Amulet_Instant_Target,limit=3] at @s run scoreboard players add @p[tag=AZR_Amulet_Instant_Success,distance=..13,tag=azrPlayer] AzrSariel_Amulet_FireLit_count 1
 
 execute if entity @s[tag=AZR_Amulet_Instant_Success] as @e[tag=AZR_Amulet_Instant_Target,tag=AzrielMob_typeMONSTER] at @s run data modify entity @s Fire set value 60s
 execute if entity @s[tag=AZR_Amulet_Instant_Success] as @e[tag=AZR_Amulet_Instant_Target] at @s run tag @s remove AZR_Amulet_Instant_Target

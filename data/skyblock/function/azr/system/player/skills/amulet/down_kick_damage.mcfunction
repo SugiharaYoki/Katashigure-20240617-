@@ -5,8 +5,12 @@ execute if score @s AzrSariel_Amulet_FireLit_count matches 16..23 run scoreboard
 execute if score @s AzrSariel_Amulet_FireLit_count matches 24.. run scoreboard players add @s rng1 1
 
 
-execute unless items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}] run scoreboard players remove @s AZR_chainKill_chargeup 800
-execute if items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}] run scoreboard players remove @s AZR_chainKill_chargeup 500
+tag @s remove front_slash_discount_pass
+execute if items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}] run tag @s add front_slash_discount_pass
+execute if items entity @s[tag=AZS_BoSB12] container.* *[custom_data~{azr_amulet_multiweapon:1b}] run tag @s add front_slash_discount_pass
+execute unless entity @s[tag=front_slash_discount_pass] run scoreboard players remove @s AZR_chainKill_chargeup 800
+execute if entity @s[tag=front_slash_discount_pass] run scoreboard players remove @s AZR_chainKill_chargeup 500
+tag @s remove front_slash_discount_pass
 execute if block ~ ~-0.1 ~ honey_block run particle block{block_state:{Name:"honey_block"}} ~ ~ ~ 0.5 0.2 0.5 0.15 30
 execute if block ~ ~-0.1 ~ honey_block run playsound block.honey_block.break block @a ~ ~ ~ 1.5 0.8
 execute if block ~ ~-0.1 ~ honey_block run setblock ~ ~-0.1 ~ air
