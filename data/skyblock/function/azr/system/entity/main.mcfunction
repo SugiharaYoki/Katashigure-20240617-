@@ -2,7 +2,7 @@
 
 #投掷道具
 execute as @s[type=item] run scoreboard players add @s AzrEntityTimer 1
-execute as @s[type=item] if entity @a[tag=azrPlayer,distance=..12] if entity @s[nbt={OnGround:1b}] if items entity @s container.0 shulker_shell[custom_data~{arrow_box:1b}] at @s if data entity @s Thrower run function skyblock:azr/system/player/weapons/arrow_box/summon
+execute as @s[type=item] if items entity @s container.0 shulker_shell[custom_data~{arrow_box:1b}] if entity @a[tag=azrPlayer,distance=..12] if entity @s[nbt={OnGround:1b}] at @s if data entity @s Thrower run function skyblock:azr/system/player/weapons/arrow_box/summon
 execute as @s[type=item] if entity @a[tag=azrPlayer,distance=..12] if entity @s[nbt={OnGround:1b},tag=!azrBlastRootExpired] if items entity @s container.0 beetroot[custom_data~{blast_root:1b}] at @s if data entity @s Thrower run function skyblock:azr/system/player/weapons/blast_root/summon
 execute as @s[tag=azrBlastRoot,type=item] at @s run function skyblock:azr/system/player/weapons/blast_root/main
 execute as @s[tag=azrArrowBox,type=block_display] at @s if entity @a[distance=..30] run function skyblock:azr/system/player/weapons/arrow_box/main
@@ -28,4 +28,3 @@ execute positioned -79177 50 -13 as @s[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79177 50 -13 as @s[tag=AzrielMarker_encounter,distance=0..0.5,tag=azr_door_2] run function skyblock:azr/assets/mobs/skill/boss_rush/door_2
 
 execute if score tick_count_main AzrTimerStack matches 4 at @s run function skyblock:azr/system/entity/main_slow
-execute as @e[type=item,distance=..5] at @s if entity @s[nbt={OnGround:1b}] if items entity @s container.0 shulker_shell[custom_data~{arrow_box:1b}] if data entity @s Thrower run function skyblock:azr/system/player/weapons/arrow_box/summon
