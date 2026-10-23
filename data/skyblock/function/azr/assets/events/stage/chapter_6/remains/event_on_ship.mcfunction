@@ -88,6 +88,7 @@ execute if score @s rng1 matches 637 as @a[tag=azrPlayer] at @s run playsound mi
 execute if score @s rng1 matches 637 as @a[tag=azrPlayer] at @s run particle portal ~ ~1 ~ 0.3 0.8 0.3 0.02 50
 execute if score @s rng1 matches 637 as @a[tag=azrPlayer] at @s run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 2 0.9 0 30
 execute if score @s rng1 matches 637 as @a[tag=azrPlayer] at @s run execute rotated ~ 0 run function skyblock:azr/assets/events/effects/player_magic_release
+execute if score @s rng1 matches 637 as @a[tag=azrPlayer] at @s run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
 
 execute if score @s rng1 matches 637 as @a[tag=azrPlayer] at @s run scoreboard players set stage Azr_system 103
 
