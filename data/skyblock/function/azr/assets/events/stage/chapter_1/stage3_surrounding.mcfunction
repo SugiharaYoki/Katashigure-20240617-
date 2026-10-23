@@ -40,7 +40,7 @@ execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5]
 
 #钓师
 execute positioned -79841 23 -22 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=0..30,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79841 23 -22 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/mobs/unique/trader/fisher_moss
+execute positioned -79841 23 -22 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/events/stage/chapter_1/west/npc_fisher_moss
 
 
 
