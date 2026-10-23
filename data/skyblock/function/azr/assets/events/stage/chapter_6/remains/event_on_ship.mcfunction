@@ -94,7 +94,8 @@ execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run attribute @s
 
 execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run scoreboard players set stage Azr_system 103
 
-
+execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run playsound minecraft:garden2.chapter_title master @s ~ ~ ~ 1 1.3
+execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run tellraw @s [{text:"「WARNING: Point of No Return」",color:"red",bold:1b},{text:"\n这里是最后一处尚能回头的地点。\n继续前进后，你将不再有任何反悔的余地。\n确保你已经探索所有你想要探索的地方，并做好万全的战斗准备。\n在前方静候着你的是故事的最终篇章。",color:"red",bold: false}]
 
 
 
