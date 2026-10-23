@@ -177,10 +177,10 @@ execute if entity @s[scores={ishtar_bless_1=25}] run give @s wayfinder_armor_tri
 execute if entity @s[scores={ishtar_bless_2=25}] run give @s wayfinder_armor_trim_smithing_template[custom_name={text:"诞生虚桥",italic:0b,color:"red"},custom_data={skywar_ishtar_25:1},lore=[{text:"5格内的鸡蛋会被附上“欺诈”状态",color:"white",italic:0b},{text:"“欺诈”蛋会自动生成一条玻璃天桥",color:"white",italic:0b},{text:"距离25格内没有玩家时将自动取消“欺诈”状态",color:"white",italic:0b}]] 1
 execute if entity @s[scores={ishtar_bless_3=25}] run give @s wayfinder_armor_trim_smithing_template[custom_name={text:"诞生虚桥",italic:0b,color:"red"},custom_data={skywar_ishtar_25:1},lore=[{text:"5格内的鸡蛋会被附上“欺诈”状态",color:"white",italic:0b},{text:"“欺诈”蛋会自动生成一条玻璃天桥",color:"white",italic:0b},{text:"距离25格内没有玩家时将自动取消“欺诈”状态",color:"white",italic:0b}]] 1
 execute if entity @s[scores={ishtar_bless_4=25}] run give @s wayfinder_armor_trim_smithing_template[custom_name={text:"诞生虚桥",italic:0b,color:"red"},custom_data={skywar_ishtar_25:1},lore=[{text:"5格内的鸡蛋会被附上“欺诈”状态",color:"white",italic:0b},{text:"“欺诈”蛋会自动生成一条玻璃天桥",color:"white",italic:0b},{text:"距离25格内没有玩家时将自动取消“欺诈”状态",color:"white",italic:0b}]] 1
-execute if entity @s[scores={ishtar_bless_1=25}] run give @s egg 3
-execute if entity @s[scores={ishtar_bless_2=25}] run give @s egg 3
-execute if entity @s[scores={ishtar_bless_3=25}] run give @s egg 3
-execute if entity @s[scores={ishtar_bless_4=25}] run give @s egg 3
+execute if entity @s[scores={ishtar_bless_1=25}] run give @s egg 5
+execute if entity @s[scores={ishtar_bless_2=25}] run give @s egg 5
+execute if entity @s[scores={ishtar_bless_3=25}] run give @s egg 5
+execute if entity @s[scores={ishtar_bless_4=25}] run give @s egg 5
 
 execute if entity @s[scores={ishtar_bless_1=26}] run give @s silence_armor_trim_smithing_template[custom_name={text:"理性混淆",italic:0b,color:"red"},custom_data={skywar_ishtar_26:1},lore=[{text:"5格内的风弹会被附上“混淆”状态",color:"white",italic:0b},{text:"“混淆”风弹会自动对周围64格内的玩家输入大量的干扰文字",color:"white",italic:0b},{text:"并造成3秒挖掘疲劳II",color:"white",italic:0b},{text:"拥有这张模板的玩家可以免疫此效果",color:"white",italic:0b}]] 1
 execute if entity @s[scores={ishtar_bless_2=26}] run give @s silence_armor_trim_smithing_template[custom_name={text:"理性混淆",italic:0b,color:"red"},custom_data={skywar_ishtar_26:1},lore=[{text:"5格内的风弹会被附上“混淆”状态",color:"white",italic:0b},{text:"“混淆”风弹会自动对周围64格内的玩家输入大量的干扰文字",color:"white",italic:0b},{text:"并造成3秒挖掘疲劳II",color:"white",italic:0b},{text:"拥有这张模板的玩家可以免疫此效果",color:"white",italic:0b}]] 1
