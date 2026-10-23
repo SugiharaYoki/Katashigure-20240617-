@@ -3,7 +3,6 @@ execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar add azr:
 execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_bonus color yellow
 execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_bonus players @a[tag=azrShowDialog]
 execute if score stage_bonus_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_bonus max 131
-execute if score stage_bonus_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{text:"[DEBUG MODE MESSAGE] You are playing \"Stage Quagmire\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{text:"120"}]
 execute if score stage_bonus_thread AzrTimerStack matches 1..131 store result bossbar azr:progress_bar_bonus value run scoreboard players get stage_bonus_thread AzrTimerStack
 execute if score stage_bonus_thread AzrTimerStack matches 131 run bossbar remove azr:progress_bar_bonus
 #

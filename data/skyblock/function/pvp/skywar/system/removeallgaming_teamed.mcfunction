@@ -267,11 +267,20 @@ attribute @s max_health modifier remove azr_progress:life_ch6
 
 attribute @s minecraft:movement_speed modifier remove azr:parry
 
+tag @s remove azrPlayer_dialogchoice_unlocked_30104
+tag @s remove azrPlayer_dialogchoice_unlocked_30105
+tag @s remove azrPlayer_dialogchoice_unlocked_30106
+tag @s remove azrPlayer_dialogchoice_unlocked_30107
+tag @s remove azrPlayer_dialogchoice_unlocked_30108
 
 
+tag @s remove AzrAmulet_MossGrow_Activated
+tag @s remove AzrAmulet_MossGrow_Activated_regenerating
 
+tag @s remove AzrFlowerPVP
+tag @s remove AzrFlowerPVP_A
+tag @s remove AzrFlowerPVP_B
 
-
-
-
-
+tag @s remove hasSkills
+tag @s remove azr_skills_arrow
+tag @s remove AZS_RespAnchorTeleport

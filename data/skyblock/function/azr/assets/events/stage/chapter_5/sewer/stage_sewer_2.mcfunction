@@ -4,7 +4,6 @@ execute if score stage_main_thread AzrTimerStack matches 1 run bossbar add azr:p
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal color white
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal players @a[tag=azrShowDialog]
 execute if score stage_main_thread AzrTimerStack matches 1 run bossbar set azr:progress_bar_normal max 200
-execute if score stage_main_thread AzrTimerStack matches 1 run tellraw @a[tag=DebugMode,tag=azrPlayer] [{text:"[DEBUG MODE MESSAGE] You are playing \"Sewer Protocol 2\", with playerCount = "},{"score":{"objective":"Azr_system","name":"playerCount"}},{text:" Maximum Seconds = 200"}]
 execute if score stage_main_thread AzrTimerStack matches 1..200 store result bossbar azr:progress_bar_normal value run scoreboard players get stage_main_thread AzrTimerStack
 execute if score stage_main_thread AzrTimerStack matches 200 run bossbar remove azr:progress_bar_normal
 #

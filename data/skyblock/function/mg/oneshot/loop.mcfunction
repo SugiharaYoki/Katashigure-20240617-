@@ -28,6 +28,4 @@ execute if entity @a[tag=OneShotGaming,tag=OneShotLose] run tag @a[tag=OneShotGa
 execute as @r[tag=OneShotGaming] at @s unless entity @a[tag=OneShotGaming,distance=0.001..] run tag @s add OneShotWin
 execute as @a[tag=OneShotWin] at @s run function skyblock:mg/oneshot/finish
 execute unless entity @a[tag=OneShotInvite] run function skyblock:mg/oneshot/finish
-execute unless entity @a[tag=OneShotInvite] run tell @a[tag=Debug] "Lacking OneShotInvite"
 execute if entity @a[tag=OneShotInvite,tag=OneShotGaming] unless entity @a[tag=OneShotAccept] run function skyblock:mg/oneshot/finish
-execute if entity @a[tag=OneShotInvite,tag=OneShotGaming] unless entity @a[tag=OneShotAccept] run tell @a[tag=Debug] "Lacking OneShotAccept"

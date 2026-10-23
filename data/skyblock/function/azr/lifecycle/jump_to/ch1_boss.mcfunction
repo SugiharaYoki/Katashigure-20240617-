@@ -11,8 +11,8 @@ advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage4
 
 tag @a[tag=azrPlayer] add azrPlayer_respawnanchor_unlocked_westcourt_a
 tag @a[tag=azrPlayer] add azrPlayer_respawnanchor_unlocked_westcourt_b
-tag @s[tag=azrPlayer,tag=azrPlayer_dialogchoice_unlocked_30104] add azrPlayer_respawnanchor_unlocked_mossyroad
-tag @s[tag=azrPlayer,tag=azrPlayer_dialogchoice_unlocked_30108] add azrPlayer_respawnanchor_unlocked_rockpath
+tag @s[tag=azrPlayer,tag=AZS_BoSShop21] add azrPlayer_respawnanchor_unlocked_mossyroad
+tag @s[tag=azrPlayer,tag=AZS_BoSShop23] add azrPlayer_respawnanchor_unlocked_rockpath
 
 #scoreboard players add @a[tag=azrPlayer] Azr_emerald 50
 

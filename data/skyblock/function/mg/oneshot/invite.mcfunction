@@ -4,7 +4,6 @@ tag @s add OneShotInvite
 kill @e[tag=OneShot]
 kill @e[tag=OneShotDArRt]
 kill @e[tag=OneShotDArPk]
-tell @a[tag=Debug] "Invite sent from Oneshot"
 tellraw @a[tag=!Gaming,tag=OneShotInvite] [{text:"已向全服发出小游戏邀请！",color:"light_purple",bold:1b}]
 tellraw @a[tag=!Gaming,tag=!OneShotInvite] [{text:"「来自",color:"light_purple",bold:1b},{selector:"@p[tag=OneShotInvite]",color:"light_purple",bold:1b},{text:"的小游戏邀请」",color:"light_purple",bold:1b}]
 tellraw @a[tag=!Gaming] {text:"游戏：危命独箭",bold:0b,color:"white"}

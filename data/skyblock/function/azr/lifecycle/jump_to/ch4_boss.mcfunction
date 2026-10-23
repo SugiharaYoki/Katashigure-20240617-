@@ -44,7 +44,7 @@ fill -79533 26 -406 -79533 26 -405 air
 fill -79533 27 -406 -79533 27 -405 air
 fill -79409 30 -398 -79409 32 -396 minecraft:red_stained_glass
 
-execute if entity @a[tag=azrPlayer,tag=AZS_RespAnchorTeleport] positioned -79338 23 -414 run function skyblock:azr/assets/mobs/utility_respawn_anchor
+execute if entity @a[tag=azrPlayer,tag=AZS_BoSShop24] positioned -79338 23 -414 run function skyblock:azr/assets/mobs/utility_respawn_anchor
 
 
 execute positioned -79466 29 -405 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
