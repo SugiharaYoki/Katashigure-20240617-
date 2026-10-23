@@ -13,6 +13,11 @@ execute positioned -79969 -52 -11 if entity @s[distance=..8] run effect clear @s
 execute if score stage Azr_system matches 100.. run attribute @s max_health modifier add azr_progress:life_ch6 40 add_value
 execute if score @s Azr_Shop matches 40013 run attribute @s max_health modifier remove azr_progress:life_ch6
 
+execute if score stage Azr_system matches 102 run function skyblock:azr/assets/events/stage/chapter_6/remains/event_to_ship
+
+
+
+
 execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_westcourt_a] if score @s \
     Azr_Shop matches 40001 positioned -79943 37 -8 run tp @s ~ ~1 ~
 execute if entity @s[tag=azrPlayer_respawnanchor_unlocked_westcourt_b] if score @s \
