@@ -2,9 +2,6 @@
 
 
 
-fillbiome -80040 20 -39 -79880 23 22 minecraft:flower_forest
-fillbiome -80040 24 -39 -79880 27 22 minecraft:flower_forest
-fillbiome -80040 28 -39 -79880 31 22 minecraft:flower_forest
 fillbiome -80040 32 -39 -79880 35 22 minecraft:flower_forest
 fillbiome -80040 36 -39 -79880 39 22 minecraft:flower_forest
 fillbiome -80040 40 -39 -79880 43 22 minecraft:flower_forest
@@ -13,9 +10,6 @@ fillbiome -80040 48 -39 -79880 51 22 minecraft:flower_forest
 fillbiome -80040 52 -39 -79880 55 22 minecraft:flower_forest
 fillbiome -80040 56 -39 -79880 59 22 minecraft:flower_forest
 
-fillbiome -79880 20 -39 -79680 23 22 minecraft:flower_forest
-fillbiome -79880 24 -39 -79680 27 22 minecraft:flower_forest
-fillbiome -79880 28 -39 -79680 31 22 minecraft:flower_forest
 fillbiome -79880 32 -39 -79680 35 22 minecraft:flower_forest
 fillbiome -79880 36 -39 -79680 39 22 minecraft:flower_forest
 fillbiome -79880 40 -39 -79680 43 22 minecraft:flower_forest
