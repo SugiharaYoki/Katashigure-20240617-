@@ -1,8 +1,8 @@
 
 
 
-execute unless score @s rng1 matches 390.. positioned -79769 -11 80 if entity @n[tag=AzrielNPC_focalor,distance=..15] run scoreboard players add @s rng1 1
-execute if score @s rng1 matches 390..899 positioned -79840 -17 80 if entity @a[tag=azrPlayer,distance=..12] run scoreboard players add @s rng1 1
+execute unless score @s rng1 matches 300.. positioned -79769 -11 80 if entity @n[tag=AzrielNPC_focalor,distance=..15] run scoreboard players add @s rng1 1
+execute if score @s rng1 matches 300..899 positioned -79840 -17 80 if entity @a[tag=azrPlayer,distance=..12] run scoreboard players add @s rng1 1
 execute if score @s rng1 matches 900.. run scoreboard players add @s rng1 1
 
 execute if score @s rng1 matches 2 as @n[tag=AzrielNPC_focalor] at @s run effect give @s resistance infinite 4 true
