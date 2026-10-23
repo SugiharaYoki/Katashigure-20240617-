@@ -79,18 +79,20 @@ execute if score @s rng1 matches 564 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 580 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“你说得对……我太急于否认我自己了。其实为了他人而活，本就是一种自己所选择的活法。”",color:"white"}]
 execute if score @s rng1 matches 596 run tellraw @a[tag=azrShowDialog] [{text:"伊曼纽尔：",color:"#935dff",bold:1b},{bold: false,text:"\n“那么，我相信你已经知道……该怎么做了。”",color:"white"}]
 execute if score @s rng1 matches 610 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“想要着手改变，却不拘泥于他人对我行为的看法。我只是要做善事，我不是在当演员。”",color:"white"}]
-execute if score @s rng1 matches 626 run tellraw @a[tag=azrShowDialog] [{text:"伊曼纽尔：",color:"#935dff",bold:1b},{bold: false,text:"\n“那么，我祝你能够……得偿所愿。”",color:"white"}]
+execute if score @s rng1 matches 626 run tellraw @a[tag=azrShowDialog] [{text:"伊曼纽尔：",color:"#935dff",bold:1b},{bold: false,text:"\n“我很期待之后的故事。”",color:"white"}]
+execute if score @s rng1 matches 637 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“敬请期待吧，我会让你见识我心目中的标准答案。”",color:"white"}]
+execute if score @s rng1 matches 650 run tellraw @a[tag=azrShowDialog] [{text:"伊曼纽尔：",color:"#935dff",bold:1b},{bold: false,text:"\n“那么，我祝你能够……得偿所愿。”",color:"white"}]
 
 
-execute if score @s rng1 matches 637 as @a[tag=azrPlayer] at @s run tp @s -79903 38 10
-execute if score @s rng1 matches 637 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.creaking.death player @a ~ ~ ~ 1 0.8
-execute if score @s rng1 matches 637 as @a[tag=azrPlayer] at @s run playsound minecraft:item.chorus_fruit.teleport player @a ~ ~ ~ 1 0.7
-execute if score @s rng1 matches 637 as @a[tag=azrPlayer] at @s run particle portal ~ ~1 ~ 0.3 0.8 0.3 0.02 50
-execute if score @s rng1 matches 637 as @a[tag=azrPlayer] at @s run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 2 0.9 0 30
-execute if score @s rng1 matches 637 as @a[tag=azrPlayer] at @s run execute rotated ~ 0 run function skyblock:azr/assets/events/effects/player_magic_release
-execute if score @s rng1 matches 637 as @a[tag=azrPlayer] at @s run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
+execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run tp @s -79903 38 10
+execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.creaking.death player @a ~ ~ ~ 1 0.8
+execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run playsound minecraft:item.chorus_fruit.teleport player @a ~ ~ ~ 1 0.7
+execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run particle portal ~ ~1 ~ 0.3 0.8 0.3 0.02 50
+execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 2 0.9 0 30
+execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run execute rotated ~ 0 run function skyblock:azr/assets/events/effects/player_magic_release
+execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
 
-execute if score @s rng1 matches 637 as @a[tag=azrPlayer] at @s run scoreboard players set stage Azr_system 103
+execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run scoreboard players set stage Azr_system 103
 
 
 
