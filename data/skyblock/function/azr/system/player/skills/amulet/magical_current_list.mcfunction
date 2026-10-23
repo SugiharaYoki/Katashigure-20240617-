@@ -55,6 +55,11 @@ execute if entity @s[x=-79767,y=-64,z=73,dx=0,dy=10,dz=0] run scoreboard players
 
 
 
+#蚀岩径通往第五章
+execute positioned -79826 7 32 if entity @s[distance=..30] run particle trail{color:6666239,duration:240,target:[-79825.51,21.06,32.51]} ~ ~ ~ 0.5 0 0.5 0 2 force
+execute if entity @s[x=-79826,y=7,z=32,dx=0,dy=20,dz=0] run scoreboard players set @s AzrSariel_Amulet_MagicalCurrentLevel 2
+
+
 
 
 
