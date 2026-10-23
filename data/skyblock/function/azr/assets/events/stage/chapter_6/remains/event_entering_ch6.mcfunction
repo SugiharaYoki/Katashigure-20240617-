@@ -15,7 +15,7 @@ execute if score @s rng1 matches 2 positioned -79890 39 -135 run tp @e[tag=Azrie
 
 execute if score @s rng1 matches 9 run scoreboard players set @s rng1 8
 
-execute if score @s rng1 matches 3..9 positioned -79902 37 -14 if entity @a[distance=..500,tag=azrPlayer] if score @s AzrPlayer_CurrentArea matches 2 run scoreboard players set @s rng1 10
+execute if score @s rng1 matches 3..9 positioned -79902 37 -14 if entity @a[distance=..500,tag=azrPlayer] if score @p[tag=azrPlayer] AzrPlayer_CurrentArea matches 2 run scoreboard players set @s rng1 10
 
 
 execute if score @s rng1 matches 18 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（我终于回到了神庭……但这里的气氛很诡异）",color:"white"}]
