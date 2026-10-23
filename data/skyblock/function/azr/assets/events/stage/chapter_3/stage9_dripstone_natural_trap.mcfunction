@@ -36,6 +36,10 @@ execute positioned -79815 29 -27 unless entity @n[tag=AzrielMob_trap_spike,dista
 execute positioned -79815 29 -27 unless entity @n[tag=AzrielMob_trap_spike,distance=..0.5] if score random_enemy_thread rng5 matches 1 run function skyblock:azr/assets/mobs/trap_spike
 execute positioned -79812 27 -18 unless entity @n[tag=AzrielMob_trap_spike,distance=..0.5] if entity @a[tag=azrPlayer,distance=..32] unless entity @a[tag=azrPlayer,distance=..15] store result score random_enemy_thread rng5 run random value 1..5
 execute positioned -79812 27 -18 unless entity @n[tag=AzrielMob_trap_spike,distance=..0.5] if score random_enemy_thread rng5 matches 1 run function skyblock:azr/assets/mobs/trap_spike
+execute positioned -79815 18 5 unless entity @n[tag=AzrielMob_trap_spike,distance=..0.5] if entity @a[tag=azrPlayer,distance=..32] unless entity @a[tag=azrPlayer,distance=..15] store result score random_enemy_thread rng5 run random value 1..5
+execute positioned -79815 18 5 unless entity @n[tag=AzrielMob_trap_spike,distance=..0.5] if score random_enemy_thread rng5 matches 1 run function skyblock:azr/assets/mobs/trap_spike
+execute positioned -79818 12 20 unless entity @n[tag=AzrielMob_trap_spike,distance=..0.5] if entity @a[tag=azrPlayer,distance=..32] unless entity @a[tag=azrPlayer,distance=..15] store result score random_enemy_thread rng5 run random value 1..5
+execute positioned -79818 12 20 unless entity @n[tag=AzrielMob_trap_spike,distance=..0.5] if score random_enemy_thread rng5 matches 1 run function skyblock:azr/assets/mobs/trap_spike
 
 
 
