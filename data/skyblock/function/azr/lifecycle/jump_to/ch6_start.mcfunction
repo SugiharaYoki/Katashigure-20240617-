@@ -8,6 +8,7 @@ advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage23_boss5
 execute positioned -79764 -10 80 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng1 9999
 
 fill -79841 1 106 -79839 4 106 air
+fill -79841 1 54 -79839 4 54 air
 fill -79800 -10 79 -79798 -7 81 water
 
 execute as @n[tag=AzrielNPC_focalor] at @s run effect give @s invisibility infinite 0 true

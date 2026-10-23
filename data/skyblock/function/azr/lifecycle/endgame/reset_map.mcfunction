@@ -1085,6 +1085,7 @@ execute unless block -79731 -6 82 cyan_stained_glass run fill -79731 -6 82 -7973
 
 #Boss 佛卡洛
 execute unless block -79858 -5 88 deepslate_tiles run fill -79863 -5 103 -79817 -5 57 deepslate_tiles replace water
+execute unless block -79839 4 106 minecraft:iron_block run fill -79841 1 54 -79839 4 54 minecraft:iron_block
 execute unless block -79839 4 106 minecraft:iron_block run fill -79841 1 106 -79839 4 106 minecraft:iron_block
 execute unless block -79800 -10 79 air run fill -79800 -10 79 -79798 -7 81 air
 

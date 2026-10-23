@@ -119,6 +119,10 @@ execute if score @s rng1 matches 972 run fill -79841 1 106 -79839 1 106 air
 execute if score @s rng1 matches 973 run fill -79841 2 106 -79839 2 106 air
 execute if score @s rng1 matches 974 run fill -79841 3 106 -79839 3 106 air
 execute if score @s rng1 matches 975 run fill -79841 4 106 -79839 4 106 air
+execute if score @s rng1 matches 972 run fill -79841 1 54 -79839 1 54 air
+execute if score @s rng1 matches 973 run fill -79841 2 54 -79839 2 54 air
+execute if score @s rng1 matches 974 run fill -79841 3 54 -79839 3 54 air
+execute if score @s rng1 matches 975 run fill -79841 4 54 -79839 4 54 air
 
 execute if score @s rng1 matches 972 run fill -79800 -10 79 -79798 -7 81 water
 
