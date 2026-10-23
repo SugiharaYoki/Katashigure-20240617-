@@ -42,7 +42,7 @@ execute if score @s rng1 matches 240 positioned -79259.51 281.00 -895.52 run par
 execute if score @s rng1 matches 240 positioned -79259.51 281.00 -895.52 run summon minecraft:mannequin ~ ~ ~ {Tags:["AzrielNPC_emmanuel","AzrielMob_level_ed"],profile:{id:[I;0,0,0,0],properties:[{name:"textures",value:"ewogICJ0aW1lc3RhbXAiIDogMTc5MjQ4Mjc5OTQ5NCwKICAicHJvZmlsZUlkIiA6ICI2ZTEzN2VhOGYyMzk0MjY3OTcyYTc5ODdkNzgwMDk5YiIsCiAgInByb2ZpbGVOYW1lIiA6ICJYdWFuWXUxNzI1X1hZVSIsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS81OTlmM2M5YTYxZjhmNjEwZThmYTc0MzAxOTIxOWQwMjJjMzQ5N2MwNGE1NmQ0ODA1ZDJjYjMwY2JjMzQ1MWI2IgogICAgfSwKICAgICJDQVBFIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8yMzQwYzBlMDNkZDI0YTExYjE1YThiMzNjMmE3ZTllMzJhYmIyMDUxYjI0ODFkMGJhN2RlZmQ2MzVjYTdhOTMzIgogICAgfQogIH0KfQ=="}]},hide_description:true,CustomName:'雷米尔',NoGravity:1b,attributes:[{id:"attack_damage",base:10.0},{id:"max_health",base:600.0},{id:"follow_range",base:50},{id:"armor",base:23.0},{base:0.27d,id:"movement_speed"},{base:1.0d,id:"knockback_resistance"},{base:1.0d,id:"scale"}],Health:600.0f,Invulnerable:1b}
 
 
-execute if score @s rng1 matches 240.. as @n[tag=AzrielNPC_emmanuel] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+execute if score @s rng1 matches 240..660 as @n[tag=AzrielNPC_emmanuel] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
 
 execute if score @s rng1 matches 246 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“我知道你能一路走到这里，这一切只是时间问题。”",color:"white"}]
@@ -94,8 +94,17 @@ execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run attribute @s
 
 execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run scoreboard players set stage Azr_system 103
 
-execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run playsound minecraft:garden2.chapter_title master @s ~ ~ ~ 1 1.3
-execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run tellraw @s [{text:"「WARNING: Point of No Return」",color:"red",bold:1b},{text:"\n这里是最后一处尚能回头的地点。\n继续前进后，你将不再有任何反悔的余地。\n确保你已经探索所有你想要探索的地方，并做好万全的战斗准备。\n在前方静候着你的是故事的最终篇章。",color:"red",bold: false}]
+
+execute if score @s rng1 matches 667 as @n[tag=AzrielNPC_malpas] at @s run tp @s -79813 63 -16
+execute if score @s rng1 matches 667 run fill -79830 39 -15 -79830 41 -14 air destroy
+
+
+execute if score @s rng1 matches 899 run scoreboard players set @s rng1 898
+execute if score @s rng1 matches ..899 positioned -79831.29 39.00 -14.12 if entity @a[tag=azrPlayer,distance=..6] run scoreboard players set @s rng1 900
+
+execute if score @s rng1 matches 900 as @a[tag=azrPlayer] at @s run effect give @s slowness 2 5 true
+execute if score @s rng1 matches 900 as @a[tag=azrPlayer] at @s run playsound minecraft:garden2.chapter_title master @s ~ ~ ~ 1 1.3
+execute if score @s rng1 matches 900 as @a[tag=azrPlayer] at @s run tellraw @s [{text:"「WARNING: Point of No Return」",color:"red",bold:1b},{text:"\n这里是最后一处尚能回头的地点。\n继续前进后，你将不再有任何反悔的余地。\n确保你已经探索所有你想要探索的地方，并做好万全的战斗准备。\n在前方静候着你的是故事的最终篇章。",color:"red",bold: false}]
 
 
 
