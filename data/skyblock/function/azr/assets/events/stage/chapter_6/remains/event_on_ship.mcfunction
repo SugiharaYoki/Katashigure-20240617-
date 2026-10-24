@@ -115,7 +115,7 @@ execute if score @s rng1 matches 900 as @a[tag=azrPlayer] at @s run tellraw @s [
 execute if score @s rng1 matches 900 as @n[tag=AzrielNPC_marinus] run tp @s -79740 32 -11
 execute if score @s rng1 matches 900 as @n[tag=AzrielNPC_mersenne] run tp @s -79744 32 -15
 
-execute if score @s rng1 matches 900 positioned -79979 -44 -2 as @e[tag=AzrielNPC_Divineforce,distance=..50,type=!villager] run tp @s -79746 32 -17
+execute if score @s rng1 matches 900 positioned -79979 -44 -2 as @e[tag=AzrielNPC_Divineforce,distance=..50,type=!villager,type=!piglin] run tp @s -79746 32 -17
 
 
 
