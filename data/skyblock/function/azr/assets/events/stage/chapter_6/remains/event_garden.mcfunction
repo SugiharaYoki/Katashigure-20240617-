@@ -176,6 +176,11 @@ execute if score @s rng3 matches 23 run fill -79692 36 9 -79692 32 5 minecraft:a
 
 execute if score @s rng3 matches 24 positioned -79699 32 13 run function skyblock:azr/assets/mobs/unique/candle_angel
 
+execute if score @s rng3 matches 27 positioned -79698 43 19 run particle flame ~ ~1 ~ 0 0 0 0.3 40
+execute if score @s rng3 matches 27 positioned -79698 43 19 run particle large_smoke ~ ~1 ~ 0 0 0 0.3 20
+execute if score @s rng3 matches 27 positioned -79698 43 19 run playsound entity.blaze.shoot hostile @a ~ ~ ~ 1.2 0.8
+execute if score @s rng3 matches 27 positioned -79698 43 19 run function skyblock:azr/assets/mobs/unique/blaze_boss_lush
+
 
 execute if score @s rng3 matches 1 positioned -79699 32 27 run function skyblock:azr/assets/mobs/barrier_maintainer {id:_ch6_midgarden_door_3}
 execute if score @s rng3 matches 32 if entity @n[tag=AzrielMob_barrier_maintainer_ch6_midgarden_door_3] run scoreboard players set @s rng3 31
