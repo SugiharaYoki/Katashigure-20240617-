@@ -141,7 +141,7 @@ execute if score @s rng1 matches 188.. store result bossbar azr:boss_hp_bar valu
 scoreboard players add @s rng3 1
 execute if score @s rng3 matches 1 positioned -79700 32 -24 run function skyblock:azr/assets/mobs/barrier_maintainer {id:_ch6_midgarden_door_1}
 
-execute if score @s rng3 matches 3 if entity @n[tag=AzrielMob_barrier_ch6_midgarden_door_1] run scoreboard players set @s rng3 2
+execute if score @s rng3 matches 3 if entity @n[tag=AzrielMob_barrier_maintainer_ch6_midgarden_door_1] run scoreboard players set @s rng3 2
 
 execute if score @s rng3 matches 4 run fill -79698 34 -27 -79702 32 -27 minecraft:air destroy
 
@@ -157,7 +157,7 @@ execute if score @s rng3 matches 20 positioned -79685 33 -43 run function skyblo
 execute if score @s rng3 matches 20 positioned -79686 33 -44 run function skyblock:azr/assets/mobs/blaze
 
 execute if score @s rng3 matches 1 positioned -79686 32 7 run function skyblock:azr/assets/mobs/barrier_maintainer {id:_ch6_midgarden_door_2}
-execute if score @s rng3 matches 22 if entity @n[tag=AzrielMob_barrier_ch6_midgarden_door_2] run scoreboard players set @s rng3 21
+execute if score @s rng3 matches 22 if entity @n[tag=AzrielMob_barrier_maintainer_ch6_midgarden_door_2] run scoreboard players set @s rng3 21
 execute if score @s rng3 matches 23 run fill -79692 36 9 -79692 32 5 minecraft:air destroy
 
 
