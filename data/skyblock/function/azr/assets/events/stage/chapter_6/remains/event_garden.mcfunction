@@ -72,7 +72,7 @@ execute if score @s rng1 matches 105 positioned -79731 32 11 run function skyblo
 
 execute if score @s rng1 matches 105 positioned -79707 32 -25 run function skyblock:azr/assets/mobs/shield_heavy
 
-
+execute if score @s rng1 matches 101.. unless entity @a[tag=azrPlayer,x=-79753,y=20,z=-83,dx=250,dy=50,dz=250] run function skyblock:azr/assets/events/stage/chapter_6/remains/event_garden_outside_area
 
 execute if score @s rng1 matches 101 run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“准备好。”",color:"white"}]
 
@@ -82,6 +82,7 @@ execute if score @s rng1 matches 120 as @a[tag=azrShowDialog] at @s run playsoun
 execute if score @s rng1 matches 120 run fill -79739 32 -15 -79739 36 -11 air destroy
 execute if score @s rng1 matches 120 run fill -79734 36 -15 -79734 32 -11 air
 
+execute if score @s rng1 matches 121 run scoreboard players set stage Azr_system 104
 
 
 execute if score @s rng1 matches 130 positioned -79709 32 -13 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield_heavy","AzrielMob_summon_delay","AzrielMob_level_1"]}
