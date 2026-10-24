@@ -182,6 +182,7 @@ execute if score @s rng1 matches 839 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 840 if entity @a[distance=..2,x=-79969,y=-52,z=-11,tag=azrPlayer] run scoreboard players set @s rng1 874
 execute if score @s rng1 matches 844 run scoreboard players set @s rng1 871
 
+execute if score @s rng1 matches 874 run effect clear @a[tag=azrShowDialog] darkness
 execute if score @s rng1 matches 874 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“有关其他敌人的问题已经解决了。”",color:"white"}]
 execute if score @s rng1 matches 875 if entity @a[distance=..2,x=-79969,y=-52,z=-11,tag=azrPlayer] run scoreboard players set @s rng1 884
 execute if score @s rng1 matches 884 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“无论如何，我都会上。虽然你可能觉得我有勇无谋，但现在这并不一定是什么坏事。”",color:"white"}]
