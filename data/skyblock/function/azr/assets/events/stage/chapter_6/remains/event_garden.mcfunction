@@ -144,11 +144,11 @@ execute if score @s rng3 matches 3 if entity @n[tag=AzrielMob_barrier_ch6_midgar
 
 execute if score @s rng3 matches 4 run fill -79698 34 -27 -79702 32 -27 minecraft:air destroy
 
-execute if score @s rng3 matches 20 positioned -79697 32 1 run function skyblock:azr/assets/mobs/undead
-execute if score @s rng3 matches 20 positioned -79697 32 1 run function skyblock:azr/assets/mobs/undead
-execute if score @s rng3 matches 20 positioned -79697 32 1 run function skyblock:azr/assets/mobs/undead
-execute if score @s rng3 matches 20 positioned -79697 32 1 run function skyblock:azr/assets/mobs/undead
-execute if score @s rng3 matches 20 positioned -79697 32 1 run function skyblock:azr/assets/mobs/zombie_villager_armor
+execute if score @s rng3 matches 5 positioned -79697 32 1 run function skyblock:azr/assets/mobs/undead
+execute if score @s rng3 matches 5 positioned -79697 32 1 run function skyblock:azr/assets/mobs/undead
+execute if score @s rng3 matches 5 positioned -79697 32 1 run function skyblock:azr/assets/mobs/undead
+execute if score @s rng3 matches 5 positioned -79697 32 1 run function skyblock:azr/assets/mobs/undead
+execute if score @s rng3 matches 5 positioned -79697 32 1 run function skyblock:azr/assets/mobs/zombie_villager_armor
 
 execute if score @s rng3 matches 20 positioned -79686 33 -42 run function skyblock:azr/assets/mobs/blaze
 execute if score @s rng3 matches 20 positioned -79687 33 -43 run function skyblock:azr/assets/mobs/blaze
