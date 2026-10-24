@@ -16,10 +16,18 @@ execute if score @s rng1 matches 52 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 68 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“虽然不是很懂，但或许正如爱理莎大人说的那样。”",color:"white"}]
 execute if score @s rng1 matches 80 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“我们会进行最后的休整。爱理莎大人，准备好了的话，请站到红色结界前方。”",color:"white"}]
 
+execute if score @s rng1 matches 99 run scoreboard players set @s rng1 98
+execute if score @s rng1 matches 90..99 if entity @a[tag=azrPlayer,x=-79741,y=32,z=-15,dx=6,dy=6,dz=6] run scoreboard players set @s rng1 101
 
 
 
+execute if score @s rng1 matches 101 run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“准备好。”",color:"white"}]
 
+execute if score @s rng1 matches 118 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“大人，我们没有重来的机会。这是殊死一搏。”",color:"white"}]
+
+execute if score @s rng1 matches 120 as @a[tag=azrShowDialog] at @s run playsound minecraft:destroy music @s ~ ~ ~ 0.7
+execute if score @s rng1 matches 120 run fill -79739 32 -15 -79739 36 -11 air destroy
+execute if score @s rng1 matches 120 run fill -79734 36 -15 -79734 32 -11 air
 
 
 

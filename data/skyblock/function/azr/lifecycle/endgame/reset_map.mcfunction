@@ -1107,6 +1107,7 @@ fill -79980 -42 -2 -79984 -42 -2 minecraft:pale_oak_trapdoor[facing=north,half=b
 
 #汇合处
 execute if block -79739 32 -15 air run fill -79739 32 -15 -79739 36 -11 minecraft:red_stained_glass
+fill -79734 36 -15 -79734 32 -11 iron_block
 
 
 
