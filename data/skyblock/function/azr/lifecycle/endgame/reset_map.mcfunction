@@ -1115,7 +1115,7 @@ execute if block -79739 32 -15 air run function skyblock:azr/lifecycle/endgame/r
 
 
 
-kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1000]
+kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1500]
 
 tellraw @a[tag=!Gaming] {text:"死亡总是在不经意间，悄然而至，摧毁一切美梦。",color: "green"}
 tellraw @a[tag=!Gaming] {text:"你曾过着幸福祥和的生活，“意外身亡”本不是属于你的结局。",color: "green"}
