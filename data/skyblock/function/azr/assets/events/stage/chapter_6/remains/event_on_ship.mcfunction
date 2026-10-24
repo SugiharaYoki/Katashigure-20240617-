@@ -98,6 +98,11 @@ execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run scoreboard p
 execute if score @s rng1 matches 667 as @n[tag=AzrielNPC_malpas] at @s run tp @s -79813 63 -16
 execute if score @s rng1 matches 667 run fill -79830 39 -15 -79830 41 -14 air destroy
 
+execute if score @s rng1 matches 667 positioned -79804 39 -14 run function skyblock:azr/assets/mobs/piglin_spear
+execute if score @s rng1 matches 667 positioned -79804 39 -14 run function skyblock:azr/assets/mobs/piglin_spear
+execute if score @s rng1 matches 667 positioned -79804 39 -14 run function skyblock:azr/assets/mobs/sword
+execute if score @s rng1 matches 667 positioned -79804 39 -14 run function skyblock:azr/assets/mobs/sword
+
 
 execute if score @s rng1 matches 899 run scoreboard players set @s rng1 898
 execute if score @s rng1 matches ..899 positioned -79831.29 39.00 -14.12 if entity @a[tag=azrPlayer,distance=..6] run scoreboard players set @s rng1 900
