@@ -141,7 +141,7 @@ execute if score @s rng1 matches 188.. store result bossbar azr:boss_hp_bar valu
 
 
 #结界关口
-scoreboard players add @s rng3 1
+execute if score @s rng1 matches 101.. run scoreboard players add @s rng3 1
 execute if score @s rng3 matches 1 positioned -79700 32 -24 run function skyblock:azr/assets/mobs/barrier_maintainer {id:_ch6_midgarden_door_1}
 
 execute if score @s rng3 matches 3 if entity @n[tag=AzrielMob_barrier_maintainer_ch6_midgarden_door_1] run scoreboard players set @s rng3 2
