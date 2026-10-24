@@ -78,7 +78,7 @@ execute if score @s rng1 matches 101 run tellraw @a[tag=azrShowDialog] [{text:"�
 
 execute if score @s rng1 matches 118 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“大人，我们没有重来的机会。这是殊死一搏。”",color:"white"}]
 
-execute if score @s rng1 matches 120 as @a[tag=azrShowDialog] at @s run playsound minecraft:destroy music @s ~ ~ ~ 0.7
+execute if score @s rng1 matches 101 as @a[tag=azrShowDialog] at @s run playsound minecraft:destroy music @s ~ ~ ~ 0.7
 execute if score @s rng1 matches 120 run fill -79739 32 -15 -79739 36 -11 air destroy
 execute if score @s rng1 matches 120 run fill -79734 36 -15 -79734 32 -11 air
 
@@ -100,6 +100,7 @@ execute if score @s rng1 matches 188 run bossbar set azr:boss_hp_bar players @a[
 
 execute if score @s rng1 matches 188 run scoreboard players set @s rng20 1
 execute if score @s rng1 matches 188.. run scoreboard players add @s rng20 1
+execute if score @s rng1 matches 188.. store result bossbar azr:boss_hp_bar value run scoreboard players get @s rng20
 
 
 
