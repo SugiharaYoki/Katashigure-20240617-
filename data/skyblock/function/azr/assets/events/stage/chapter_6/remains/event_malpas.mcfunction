@@ -212,10 +212,9 @@ execute if score @s rng1 matches 1018 run scoreboard players set stage Azr_syste
 execute if score @s rng1 matches 1018 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..52}] Azr_skillPoints 53
 
 
-execute if score @s rng1 matches 1060 positioned -79979 -44 -2 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“确实没错啊，权之殊能大人一直都能访问这座休憩所……”",color:"white"}]
-execute if score @s rng1 matches 1085 positioned -79979 -44 -2 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“他居然完全放过了我们？我想不通，假如权之殊能大人真的是我们的敌人的话……”",color:"white"}]
+execute if score @s rng1 matches 1060 positioned -79979 -44 -2 run tellraw @a[tag=azrShowDialog,distance=..150] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“确实没错啊，权之殊能大人一直都能访问这座休憩所……”",color:"white"}]
+execute if score @s rng1 matches 1085 positioned -79979 -44 -2 run tellraw @a[tag=azrShowDialog,distance=..150] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“他居然完全放过了我们？我想不通，假如权之殊能大人真的是我们的敌人的话……”",color:"white"}]
 
-execute if score @s rng1 matches 1188 run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“默尔森，我们能赢吗？”",color:"white"}]
-
-execute if score @s rng1 matches 1205 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“如果不能赢的话，我们也不再有理由担忧失败。”",color:"white"}]
+execute if score @s rng1 matches 1188 positioned -79979 -44 -2 run tellraw @a[tag=azrShowDialog,distance=..150] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“默尔森，我们能赢吗？”",color:"white"}]
+execute if score @s rng1 matches 1205 positioned -79979 -44 -2 run tellraw @a[tag=azrShowDialog,distance=..150] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“如果不能赢的话，我们也不再有理由担忧失败。”",color:"white"}]
 
