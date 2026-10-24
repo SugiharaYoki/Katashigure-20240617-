@@ -55,6 +55,7 @@ execute as @s[tag=AzrielMob_demon_amy_flame_eye] at @s unless entity @n[type=pig
 execute as @s[tag=AzrielMob_demon_amy_flame_eye_part2] at @s unless entity @n[type=piglin_brute,distance=..100,tag=AZR_action_halt] run function skyblock:azr/assets/mobs/skill/boss4_amy/flame_eye_part2
 execute as @s[tag=AzrielMob_boss_amy_axe_line_marker] at @s run function skyblock:azr/assets/mobs/skill/boss4_amy/marker_axe_line
 execute as @s[tag=AzrielMob_boss_amy_lava_burst_marker] at @s run function skyblock:azr/assets/mobs/skill/boss4_amy/marker_lava_burst
+execute as @s[tag=AzrielMob_boss_raum_pillar_explosion_marker] at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/marker_pillar_explosion
 
 execute as @s[tag=AZR_summon_arroworb] at @s run function skyblock:azr/assets/mobs/skill/boss1_andralune/summon_arroworb
 execute as @s[tag=AZR_summon_arrow_line_down] at @s run function skyblock:azr/assets/mobs/skill/boss1_andralune/marker_friendly_arrow_line_down
