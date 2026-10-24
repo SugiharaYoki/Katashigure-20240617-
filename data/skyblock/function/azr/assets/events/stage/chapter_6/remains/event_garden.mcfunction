@@ -22,6 +22,8 @@ execute if score @s rng1 matches 80 run tellraw @a[tag=azrShowDialog] [{text:"é»
 execute if score @s rng1 matches 99 run scoreboard players set @s rng1 98
 execute if score @s rng1 matches 90..99 if entity @a[tag=azrPlayer,x=-79741,y=32,z=-15,dx=6,dy=6,dz=6] run scoreboard players set @s rng1 101
 
+execute if score @s rng1 matches 101 as @e[tag=AzrielNPC_Divineforce,distance=..200] at @s run tag @s add AzrielNPC_Divineforce_mute
+
 execute if score @s rng1 matches 101 run fill -79750 32 -12 -79750 36 -14 barrier
 execute if score @s rng1 matches 105 run weather clear 10000
 execute if score @s rng1 matches 116 positioned -79731 32 -15 run function skyblock:azr/assets/mobs/shield
