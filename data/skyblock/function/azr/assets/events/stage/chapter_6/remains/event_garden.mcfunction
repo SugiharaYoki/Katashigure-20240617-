@@ -97,7 +97,7 @@ execute if score @s rng1 matches 135 positioned -79705 32 -13 run summon marker 
 
 execute if score @s rng1 matches 188 run bossbar add azr:boss_hp_bar [{text:"战略看破 - 死亡倒计时",bold:true,color:"#cb0000"}]
 execute if score @s rng1 matches 188 run bossbar set azr:boss_hp_bar color red
-execute if score @s rng1 matches 188 run bossbar set azr:boss_hp_bar max 1332
+execute if score @s rng1 matches 188 run bossbar set azr:boss_hp_bar max 821
 execute if score @s rng1 matches 188 run bossbar set azr:boss_hp_bar value 0
 execute if score @s rng1 matches 188 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 
@@ -108,10 +108,18 @@ execute if score @s rng1 matches 188.. store result bossbar azr:boss_hp_bar valu
 
 
 
+#结界关口
+scoreboard players add @s rng3 1
+execute if score @s rng3 matches 1 positioned -79700 32 -24 run function skyblock:azr/assets/mobs/barrier_maintainer {id:_ch6_midgarden_door_1}
 
+execute if score @s rng3 matches 3 if entity @n[tag=AzrielMob_barrier_ch6_midgarden_door_1] run scoreboard players set @s rng3 2
 
+execute if score @s rng3 matches 4 run fill -79698 34 -27 -79702 32 -27 minecraft:air destroy
 
-
+execute if score @s rng3 matches 20 positioned -79686 33 -42 run function skyblock:azr/assets/mobs/blaze
+execute if score @s rng3 matches 20 positioned -79687 33 -43 run function skyblock:azr/assets/mobs/blaze
+execute if score @s rng3 matches 20 positioned -79685 33 -43 run function skyblock:azr/assets/mobs/blaze
+execute if score @s rng3 matches 20 positioned -79686 33 -44 run function skyblock:azr/assets/mobs/blaze
 
 
 
