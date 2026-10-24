@@ -196,6 +196,18 @@ execute if score @s rng3 matches 33 run fill -79692 36 29 -79692 32 25 minecraft
 
 
 
+execute if score @s rng3 matches 1 positioned -79699 32 27 as @e[tag=AzrielMob_barrier_maintainer,distance=..100] run effect give @s resistance infinite 1 true
+execute if score @s rng3 matches 1 positioned -79699 32 27 as @e[tag=AzrielMob_barrier_maintainer,distance=..100] run effect give @s slowness infinite 5 true
+
+
+
+
+
+
+
+
+
+
 
 
 
