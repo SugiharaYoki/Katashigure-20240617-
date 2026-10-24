@@ -25,10 +25,10 @@ execute positioned -79980 -37 -2 as @n[tag=AzrielMarker_encounter,distance=0..0.
 
 execute positioned -79288 32 -118 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_1/botanical/pvp/core
 
-execute positioned -79980 -37 -2 as @n[tag=AzrielNPC_DivineForce,tag=!botanical_resistance_processed] run effect give @s regeneration infinite 1 true
-execute positioned -79980 -37 -2 as @n[tag=AzrielNPC_DivineForce,tag=!botanical_resistance_processed] run effect give @s resistance infinite 3 true
-execute positioned -79980 -37 -2 as @n[tag=AzrielNPC_DivineForce,tag=!botanical_resistance_processed] run effect give @s weakness infinite 5 true
-execute positioned -79980 -37 -2 as @n[tag=AzrielNPC_DivineForce,tag=!botanical_resistance_processed,distance=..45] run tag @s add botanical_resistance_processed
+execute positioned -79980 -37 -2 as @n[tag=AzrielNPC_Divineforce,tag=!botanical_resistance_processed] run effect give @s regeneration infinite 1 true
+execute positioned -79980 -37 -2 as @n[tag=AzrielNPC_Divineforce,tag=!botanical_resistance_processed] run effect give @s resistance infinite 3 true
+execute positioned -79980 -37 -2 as @n[tag=AzrielNPC_Divineforce,tag=!botanical_resistance_processed] run effect give @s weakness infinite 5 true
+execute positioned -79980 -37 -2 as @n[tag=AzrielNPC_Divineforce,tag=!botanical_resistance_processed,distance=..45] run tag @s add botanical_resistance_processed
 
 #门
 execute positioned -79965 -52 17 if entity @a[tag=azrPlayer,distance=..1.5] unless entity @n[tag=azr_door,distance=..20,type=marker] run summon minecraft:marker ~ ~ ~ {Tags:["AzrielMarker_encounter","azr_door_1","azr_door"]}

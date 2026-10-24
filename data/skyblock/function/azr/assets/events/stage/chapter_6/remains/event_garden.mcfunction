@@ -4,7 +4,7 @@ scoreboard players add @s rng1 1
 
 
 
-execute if score @s rng1 matches 5 store result score @s rng2 run execute if entity @e[tag=AzrielNPC_DivineForce,distance=..50]
+execute if score @s rng1 matches 5 store result score @s rng2 run execute if entity @e[tag=AzrielNPC_Divineforce,distance=..50]
 execute if score @s[scores={rng2=..14}] rng1 matches 5 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“看来大家都到齐了。没想到我们的人这么少。”",color:"white"}]
 execute if score @s[scores={rng2=15..}] rng1 matches 5 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“看来大家都到齐了。人比我想得要多一些。”",color:"white"}]
 
