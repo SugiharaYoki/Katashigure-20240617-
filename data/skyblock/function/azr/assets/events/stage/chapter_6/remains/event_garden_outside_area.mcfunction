@@ -13,7 +13,7 @@ execute as @e[tag=AzrielMob,x=-79753,y=20,z=-83,dx=250,dy=50,dz=250] at @s run k
 
 execute as @a[tag=azrShowDialog] at @s run stopsound @s music minecraft:destroy
 fill -79739 32 -15 -79739 36 -11 red_stained_glass
-fill -79734 36 -15 -79734 32 -11 barrier
+fill -79734 36 -15 -79734 32 -11 iron_block
 
 
 bossbar remove azr:boss_hp_bar 
