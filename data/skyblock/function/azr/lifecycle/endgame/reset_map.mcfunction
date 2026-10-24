@@ -1105,59 +1105,17 @@ execute unless block -79830 39 -15 barrier run fill -79830 39 -15 -79830 41 -14 
 fill -79980 -42 -3 -79984 -42 -3 minecraft:pale_oak_trapdoor[facing=south,half=bottom,open=false]
 fill -79980 -42 -2 -79984 -42 -2 minecraft:pale_oak_trapdoor[facing=north,half=bottom,open=false]
 
+#汇合处
+execute if block -79739 32 -15 air run fill -79739 32 -15 -79739 36 -11 minecraft:red_stained_glass
 
 
 
 
 
 
-# ↓↓ 待修改 ↓↓
 
 
 
-
-
-#第16关地图预加载#
-#fill -79420 22 -364 -79491 24 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-#fill -79420 25 -364 -79491 27 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-#fill -79420 28 -364 -79491 30 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-#fill -79420 31 -364 -79491 33 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-#fill -79420 34 -364 -79491 36 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-#fill -79420 37 -364 -79491 39 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-#fill -79420 40 -364 -79491 42 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-#fill -79420 43 -364 -79491 45 -503 minecraft:crimson_nylium replace minecraft:warped_nylium
-#fill -79420 22 -364 -79491 24 -503 minecraft:crimson_roots replace minecraft:warped_roots
-#fill -79420 25 -364 -79491 27 -503 minecraft:crimson_roots replace minecraft:warped_roots
-#fill -79420 28 -364 -79491 30 -503 minecraft:crimson_roots replace minecraft:warped_roots
-#fill -79420 31 -364 -79491 33 -503 minecraft:crimson_roots replace minecraft:warped_roots
-#fill -79420 34 -364 -79491 36 -503 minecraft:crimson_roots replace minecraft:warped_roots
-#fill -79420 37 -364 -79491 39 -503 minecraft:crimson_roots replace minecraft:warped_roots
-#fill -79420 40 -364 -79491 42 -503 minecraft:crimson_roots replace minecraft:warped_roots
-#fill -79420 43 -364 -79491 45 -503 minecraft:crimson_roots replace minecraft:warped_roots
-#fill -79420 22 -364 -79491 24 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-#fill -79420 25 -364 -79491 27 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-#fill -79420 28 -364 -79491 30 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-#fill -79420 31 -364 -79491 33 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-#fill -79420 34 -364 -79491 36 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-#fill -79420 37 -364 -79491 39 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-#fill -79420 40 -364 -79491 42 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-#fill -79420 43 -364 -79491 45 -503 minecraft:crimson_fungus replace minecraft:warped_fungus
-#fill -79420 22 -364 -79491 24 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-#fill -79420 25 -364 -79491 27 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-#fill -79420 28 -364 -79491 30 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-#fill -79420 31 -364 -79491 33 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-#fill -79420 34 -364 -79491 36 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-#fill -79420 37 -364 -79491 39 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-#fill -79420 40 -364 -79491 42 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-#fill -79420 43 -364 -79491 45 -503 minecraft:nether_wart_block replace minecraft:warped_wart_block
-#fill -79420 22 -364 -79491 24 -503 minecraft:lantern replace minecraft:soul_lantern
-#fill -79420 25 -364 -79491 27 -503 minecraft:lantern replace minecraft:soul_lantern
-#fill -79420 28 -364 -79491 30 -503 minecraft:lantern replace minecraft:soul_lantern
-#fill -79420 31 -364 -79491 33 -503 minecraft:lantern replace minecraft:soul_lantern
-#fill -79420 34 -364 -79491 36 -503 minecraft:lantern replace minecraft:soul_lantern
-#fill -79420 37 -364 -79491 39 -503 minecraft:lantern replace minecraft:soul_lantern
-#fill -79470 32 -429 -79463 35 -432 crimson_stem[axis=y] replace warped_stem
-#fill -79468 31 -430 -79465 31 -432 crimson_stem[axis=x] replace warped_stem
 
 
 kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1000]
