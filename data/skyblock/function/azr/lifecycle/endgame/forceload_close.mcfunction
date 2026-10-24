@@ -32,3 +32,20 @@ forceload remove -79700 -922 -79600 -588
 forceload remove -79600 -922 -79500 -588
 
 forceload remove -79776 -2081
+
+#亚空间游轮
+forceload remove -79278 -770
+
+
+
+
+
+
+
+
+
+
+
+
+
+
