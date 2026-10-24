@@ -19,7 +19,7 @@ execute if score @s rng1 matches 80 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 99 run scoreboard players set @s rng1 98
 execute if score @s rng1 matches 90..99 if entity @a[tag=azrPlayer,x=-79741,y=32,z=-15,dx=6,dy=6,dz=6] run scoreboard players set @s rng1 101
 
-
+execute if score @s rng1 matches 101 run fill -79750 32 -12 -79750 36 -14 barrier
 execute if score @s rng1 matches 105 run weather clear 10000
 execute if score @s rng1 matches 105 positioned -79731 32 -15 run function skyblock:azr/assets/mobs/shield
 execute if score @s rng1 matches 105 positioned -79729 32 -14 run function skyblock:azr/assets/mobs/shield
@@ -69,7 +69,7 @@ execute if score @s rng1 matches 135 positioned -79705 32 -13 run summon marker 
 
 
 
-execute if score @s rng1 matches 188 run bossbar add azr:boss_hp_bar [{text:"死 亡 宣 判",bold:true,color:"#cb0000"}]
+execute if score @s rng1 matches 188 run bossbar add azr:boss_hp_bar [{text:"战略看破 - 死亡倒计时",bold:true,color:"#cb0000"}]
 execute if score @s rng1 matches 188 run bossbar set azr:boss_hp_bar color red
 execute if score @s rng1 matches 188 run bossbar set azr:boss_hp_bar max 1332
 execute if score @s rng1 matches 188 run bossbar set azr:boss_hp_bar value 0
