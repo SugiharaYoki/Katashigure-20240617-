@@ -20,6 +20,36 @@ execute if score @s rng1 matches 99 run scoreboard players set @s rng1 98
 execute if score @s rng1 matches 90..99 if entity @a[tag=azrPlayer,x=-79741,y=32,z=-15,dx=6,dy=6,dz=6] run scoreboard players set @s rng1 101
 
 
+execute if score @s rng1 matches 105 run weather clear 10000
+execute if score @s rng1 matches 105 positioned -79731 32 -15 run function skyblock:azr/assets/mobs/shield
+execute if score @s rng1 matches 105 positioned -79729 32 -14 run function skyblock:azr/assets/mobs/shield
+execute if score @s rng1 matches 105 positioned -79731 32 -13 run function skyblock:azr/assets/mobs/shield
+execute if score @s rng1 matches 105 positioned -79729 32 -12 run function skyblock:azr/assets/mobs/shield
+execute if score @s rng1 matches 105 positioned -79731 32 -11 run function skyblock:azr/assets/mobs/shield
+execute if score @s rng1 matches 105 positioned -79725 32 -15 run function skyblock:azr/assets/mobs/skeleton_axe
+execute if score @s rng1 matches 105 positioned -79720 32 -14 run function skyblock:azr/assets/mobs/skeleton_sword
+execute if score @s rng1 matches 105 positioned -79725 32 -13 run function skyblock:azr/assets/mobs/zombie_villager_armor
+execute if score @s rng1 matches 105 positioned -79720 32 -12 run function skyblock:azr/assets/mobs/skeleton_sword
+execute if score @s rng1 matches 105 positioned -79725 32 -11 run function skyblock:azr/assets/mobs/skeleton_axe
+
+execute if score @s rng1 matches 105 positioned -79711 32 -21 run function skyblock:azr/assets/mobs/undead_fire
+execute if score @s rng1 matches 105 positioned -79711 32 -21 run function skyblock:azr/assets/mobs/spider_poison
+execute if score @s rng1 matches 105 positioned -79711 32 -21 run function skyblock:azr/assets/mobs/undead_fire
+execute if score @s rng1 matches 105 positioned -79711 32 -6 run function skyblock:azr/assets/mobs/skeleton_sentinel
+execute if score @s rng1 matches 105 positioned -79711 32 -6 run function skyblock:azr/assets/mobs/zombie_villager_cleric
+execute if score @s rng1 matches 105 positioned -79711 32 -6 run function skyblock:azr/assets/mobs/skeleton_sentinel
+
+execute if score @s rng1 matches 105 positioned -79733 32 -21 run function skyblock:azr/assets/mobs/skeleton_sentinel
+execute if score @s rng1 matches 105 positioned -79733 32 -21 run function skyblock:azr/assets/mobs/spider_poison
+execute if score @s rng1 matches 105 positioned -79733 32 -21 run function skyblock:azr/assets/mobs/spider_poison
+
+
+
+
+
+
+
+
 
 execute if score @s rng1 matches 101 run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“准备好。”",color:"white"}]
 
@@ -35,8 +65,14 @@ execute if score @s rng1 matches 120 run fill -79734 36 -15 -79734 32 -11 air
 
 
 
+execute if score @s rng1 matches 188 run bossbar add azr:boss_hp_bar [{text:"死 亡 宣 判",bold:true,color:"#cb0000"}]
+execute if score @s rng1 matches 188 run bossbar set azr:boss_hp_bar color red
+execute if score @s rng1 matches 188 run bossbar set azr:boss_hp_bar max 1332
+execute if score @s rng1 matches 188 run bossbar set azr:boss_hp_bar value 0
+execute if score @s rng1 matches 188 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 
-
+execute if score @s rng1 matches 188 run scoreboard players set @s rng20 1
+execute if score @s rng1 matches 188.. run scoreboard players add @s rng20 1
 
 
 
