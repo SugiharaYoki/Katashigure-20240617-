@@ -18,9 +18,9 @@ execute if score @s rng1 matches ..199 positioned -79260 281 -896 if entity @a[t
 
 
 execute if score @s rng1 matches 201 run tellraw @a[tag=azrShowDialog] [{text:"深邃中传来的声音：",color:"#935dff",bold:1b},{bold: false,text:"\n“又见面了，爱理莎。”",color:"white"}]
+execute if score @s rng1 matches 202 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 217
 execute if score @s rng1 matches 217 run tellraw @a[tag=azrShowDialog] [{text:"深邃中传来的声音：",color:"#935dff",bold:1b},{bold: false,text:"\n“比起上次见面，你强了不少。”",color:"white"}]
-
-
+execute if score @s rng1 matches 218 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 232
 execute if score @s rng1 matches 232 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“我记得你的声音。将那颗宝石赠予我的，就是你吧。”",color:"white"}]
 
 execute if score @s rng1 matches 240 positioned -79259.51 279.00 -895.52 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower_b
@@ -47,43 +47,65 @@ execute if score @s rng1 matches 240..660 as @n[tag=AzrielNPC_emmanuel] at @s ru
 
 
 execute if score @s rng1 matches 246 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“我知道你能一路走到这里，这一切只是时间问题。”",color:"white"}]
+execute if score @s rng1 matches 247 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 258
+
 execute if score @s rng1 matches 258 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“没错……全部的命运都受限于时间。”",color:"white"}]
-
+execute if score @s rng1 matches 259 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 273
 execute if score @s rng1 matches 273 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“你将我带到这里来，是有什么要拜托给我的吗？”",color:"white"}]
-
+execute if score @s rng1 matches 274 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 289
 execute if score @s rng1 matches 289 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“我没有什么要拜托给你的。倒不如说，我想和你商讨一下：如何才能攻入中庭花园？”",color:"white"}]
+execute if score @s rng1 matches 290 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 305
 execute if score @s rng1 matches 304 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“聪慧如你，肯定不会真的相信‘一头扎进敌群’就能解决掉那两个通力协作的魔神。”",color:"white"}]
-
+execute if score @s rng1 matches 305 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 320
 execute if score @s rng1 matches 320 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“我知道这行不通。事实上，就算解决了他们，我认为也无法改变世界。”",color:"white"}]
-
+execute if score @s rng1 matches 321 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 335
 execute if score @s rng1 matches 335 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“‘改变世界’……吗，我曾经也以为我能够改变世界。后来发现，我只是遵循着世界给我制定的剧本在走。”",color:"white"}]
+execute if score @s rng1 matches 336 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 350
 execute if score @s rng1 matches 350 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“但你的话，说不定就能比我做得更多。我很羡慕你可能能够改变世界。”",color:"white"}]
-
+execute if score @s rng1 matches 351 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 366
 execute if score @s rng1 matches 366 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“……我刚才就想说，我甚至能感知到你身上的魔力。你究竟是何方神圣？”",color:"white"}]
+execute if score @s rng1 matches 367 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 380
 execute if score @s rng1 matches 380 run tellraw @a[tag=azrShowDialog] [{text:"伊曼纽尔：",color:"#935dff",bold:1b},{bold: false,text:"\n“我的名字是伊曼纽尔。我，‘与神同在’。”",color:"white"}]
+execute if score @s rng1 matches 381 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 396
 execute if score @s rng1 matches 396 run tellraw @a[tag=azrShowDialog] [{text:"伊曼纽尔：",color:"#935dff",bold:1b},{bold: false,text:"\n“爱理莎，你有没有思考过第三条路？”",color:"white"}]
+execute if score @s rng1 matches 397 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 411
 execute if score @s rng1 matches 411 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“我思考过。我好像猜到你想要说什么。”",color:"white"}]
+execute if score @s rng1 matches 412 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 426
 execute if score @s rng1 matches 426 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“事实上……我其实有思考过这样做的后果，但我总觉得，那样的话……就彻底没有回头路了。”",color:"white"}]
-
+execute if score @s rng1 matches 427 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 440
 execute if score @s rng1 matches 440 run tellraw @a[tag=azrShowDialog] [{text:"伊曼纽尔：",color:"#935dff",bold:1b},{bold: false,text:"\n“或许，你早已走上了无法回头的路。”",color:"white"}]
+execute if score @s rng1 matches 441 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 455
 execute if score @s rng1 matches 455 run tellraw @a[tag=azrShowDialog] [{text:"伊曼纽尔：",color:"#935dff",bold:1b},{bold: false,text:"\n“又或许……你只是担心，世界无法接纳你所带来的变革？”",color:"white"}]
-
+execute if score @s rng1 matches 456 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 470
 execute if score @s rng1 matches 470 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“……”",color:"white"}]
+execute if score @s rng1 matches 471 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 478
 execute if score @s rng1 matches 478 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“我不知道。”",color:"white"}]
+execute if score @s rng1 matches 479 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 486
 execute if score @s rng1 matches 486 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“但我能确定的是：我现在是自己想要做这件事。这已经足够了。”",color:"white"}]
+execute if score @s rng1 matches 487 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 500
 
 execute if score @s rng1 matches 500 run tellraw @a[tag=azrShowDialog] [{text:"伊曼纽尔：",color:"#935dff",bold:1b},{bold: false,text:"\n“你的命运并非被厄运所扭曲。你所走过的一切道路都是必要的铺垫。”",color:"white"}]
+execute if score @s rng1 matches 501 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 516
 execute if score @s rng1 matches 516 run tellraw @a[tag=azrShowDialog] [{text:"伊曼纽尔：",color:"#935dff",bold:1b},{bold: false,text:"\n“所以，你无需感到遗憾，也无需感到孤独。你生来就注定形单影只地走上世人所无法理解的道路，但那便是属于你的‘价值’。没有人该为了其他人而活。”",color:"white"}]
+execute if score @s rng1 matches 517 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 533
 execute if score @s rng1 matches 533 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“我明白。但……为什么说这句话的时候，你的语气会那么悲伤？”",color:"white"}]
+execute if score @s rng1 matches 534 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 549
 execute if score @s rng1 matches 549 run tellraw @a[tag=azrShowDialog] [{text:"伊曼纽尔：",color:"#935dff",bold:1b},{bold: false,text:"\n“……或许，偶尔，只是偶尔。‘为了他人而活’，自己才能找到前行的动力。这也是我们必经之路的其中一段。”",color:"white"}]
+execute if score @s rng1 matches 550 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 564
 execute if score @s rng1 matches 564 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“我知道为他人而活的代价。我也曾有为他人而活的心愿。”",color:"white"}]
+execute if score @s rng1 matches 565 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 580
 execute if score @s rng1 matches 580 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“你说得对……我太急于否认我自己了。其实为了他人而活，本就是一种自己所选的活法。”",color:"white"}]
+execute if score @s rng1 matches 581 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 596
 execute if score @s rng1 matches 596 run tellraw @a[tag=azrShowDialog] [{text:"伊曼纽尔：",color:"#935dff",bold:1b},{bold: false,text:"\n“那么，我相信你已经知道……该怎么做了。”",color:"white"}]
+execute if score @s rng1 matches 597 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 610
 execute if score @s rng1 matches 610 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“想要着手改变，却不拘泥于他人对我行为的看法。我只是要做善事，我不是在当演员。”",color:"white"}]
+execute if score @s rng1 matches 611 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 626
 execute if score @s rng1 matches 626 run tellraw @a[tag=azrShowDialog] [{text:"伊曼纽尔：",color:"#935dff",bold:1b},{bold: false,text:"\n“我很期待之后的故事。”",color:"white"}]
+execute if score @s rng1 matches 627 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 637
 execute if score @s rng1 matches 637 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“敬请期待吧，我会让你见识我心目中的标准答案。”",color:"white"}]
+execute if score @s rng1 matches 638 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 650
 execute if score @s rng1 matches 650 run tellraw @a[tag=azrShowDialog] [{text:"伊曼纽尔：",color:"#935dff",bold:1b},{bold: false,text:"\n“那么，我祝你能够……得偿所愿。”",color:"white"}]
-
+execute if score @s rng1 matches 651 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 667
 
 execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run tp @s -79903 38 10
 execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run playsound minecraft:entity.creaking.death player @a ~ ~ ~ 1 0.8
@@ -94,6 +116,7 @@ execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run execute rota
 execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
 
 execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run scoreboard players set stage Azr_system 103
+execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..53}] Azr_skillPoints 54
 
 
 execute if score @s rng1 matches 667 as @n[tag=AzrielNPC_malpas] at @s run tp @s -79813 63 -16
