@@ -124,6 +124,7 @@ execute if score @s rng1 matches 132 positioned -79707 32 -13 run summon marker 
 execute if score @s rng1 matches 132 positioned -79707 32 -13 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 135 positioned -79705 32 -13 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield_heavy","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
+execute if score @s rng1 matches 120.. as @n[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs/skill/marinus/friendly/core
 
 
 execute if score @s rng1 matches 188 run bossbar add azr:boss_hp_bar [{text:"战略看破 - 死亡倒计时",bold:true,color:"#cb0000"}]
