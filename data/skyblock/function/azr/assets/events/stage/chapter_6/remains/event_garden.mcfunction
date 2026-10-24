@@ -45,10 +45,32 @@ execute if score @s rng1 matches 105 positioned -79733 32 -21 run function skybl
 
 execute if score @s rng1 matches 105 positioned -79709 32 -13 run function skyblock:azr/assets/mobs/zombie_villager_vine
 
+execute if score @s rng1 matches 105 positioned -79692 32 -41 run function skyblock:azr/assets/mobs/zombie_villager_vine
+execute if score @s rng1 matches 105 positioned -79692 32 -43 run function skyblock:azr/assets/mobs/zombie_villager_vine
+execute if score @s rng1 matches 105 positioned -79692 32 -45 run function skyblock:azr/assets/mobs/zombie_villager_vine
+execute if score @s rng1 matches 105 positioned -79693 32 -42 run function skyblock:azr/assets/mobs/skeleton_sword
+execute if score @s rng1 matches 105 positioned -79693 32 -44 run function skyblock:azr/assets/mobs/skeleton_sword
+execute if score @s rng1 matches 105 positioned -79691 32 -42 run function skyblock:azr/assets/mobs/skeleton_bogged_sword
+execute if score @s rng1 matches 105 positioned -79691 32 -44 run function skyblock:azr/assets/mobs/skeleton_bogged_sword
 
 
+execute if score @s rng1 matches 105 positioned -79699 32 -50 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute if score @s rng1 matches 105 positioned -79699 32 -50 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute if score @s rng1 matches 105 positioned -79699 32 -50 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute if score @s rng1 matches 105 positioned -79699 32 -50 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute if score @s rng1 matches 105 positioned -79708 32 -30 run function skyblock:azr/assets/mobs/piglin_sword
+execute if score @s rng1 matches 105 positioned -79708 32 -30 run function skyblock:azr/assets/mobs/piglin_sword
+execute if score @s rng1 matches 105 positioned -79708 32 -30 run function skyblock:azr/assets/mobs/piglin_crossbow
+execute if score @s rng1 matches 105 positioned -79708 32 -30 run function skyblock:azr/assets/mobs/piglin_crossbow
 
+execute if score @s rng1 matches 105 positioned -79725 32 -54 run function skyblock:azr/assets/mobs/piglin_spear
+execute if score @s rng1 matches 105 positioned -79725 32 -54 run function skyblock:azr/assets/mobs/piglin_spear
+execute if score @s rng1 matches 105 positioned -79725 32 -54 run function skyblock:azr/assets/mobs/piglin_spear
+execute if score @s rng1 matches 105 positioned -79731 32 11 run function skyblock:azr/assets/mobs/piglin_spear
+execute if score @s rng1 matches 105 positioned -79731 32 11 run function skyblock:azr/assets/mobs/piglin_spear
+execute if score @s rng1 matches 105 positioned -79731 32 11 run function skyblock:azr/assets/mobs/piglin_spear
 
+execute if score @s rng1 matches 105 positioned -79707 32 -25 run function skyblock:azr/assets/mobs/shield_heavy
 
 
 
