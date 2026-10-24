@@ -43,6 +43,7 @@ execute if score @s rng1 matches 105 positioned -79733 32 -21 run function skybl
 execute if score @s rng1 matches 105 positioned -79733 32 -21 run function skyblock:azr/assets/mobs/spider_poison
 execute if score @s rng1 matches 105 positioned -79733 32 -21 run function skyblock:azr/assets/mobs/spider_poison
 
+execute if score @s rng1 matches 105 positioned -79709 32 -13 run function skyblock:azr/assets/mobs/zombie_villager_vine
 
 
 
@@ -61,7 +62,10 @@ execute if score @s rng1 matches 120 run fill -79734 36 -15 -79734 32 -11 air
 
 
 
-
+execute if score @s rng1 matches 130 positioned -79709 32 -13 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield_heavy","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 132 positioned -79707 32 -13 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 132 positioned -79707 32 -13 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 135 positioned -79705 32 -13 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield_heavy","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
 
