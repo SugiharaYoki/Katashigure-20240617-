@@ -177,6 +177,9 @@ execute if score @s rng3 matches 23 run fill -79692 36 9 -79692 32 5 minecraft:a
 execute if score @s rng3 matches 24 positioned -79699 32 13 run function skyblock:azr/assets/mobs/unique/candle_angel
 
 
+execute if score @s rng3 matches 1 positioned -79699 32 27 run function skyblock:azr/assets/mobs/barrier_maintainer {id:_ch6_midgarden_door_3}
+execute if score @s rng3 matches 32 if entity @n[tag=AzrielMob_barrier_maintainer_ch6_midgarden_door_3] run scoreboard players set @s rng3 31
+execute if score @s rng3 matches 33 run fill -79692 36 29 -79692 32 25 minecraft:air destroy
 
 
 
