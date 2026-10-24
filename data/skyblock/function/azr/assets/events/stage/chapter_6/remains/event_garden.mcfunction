@@ -75,6 +75,34 @@ execute if score @s rng1 matches 105 positioned -79731 32 11 run function skyblo
 
 execute if score @s rng1 matches 105 positioned -79707 32 -25 run function skyblock:azr/assets/mobs/shield_heavy
 
+
+execute if score @s rng1 matches 116 positioned -79686 32 7 run function skyblock:azr/assets/mobs/skeleton_sword
+execute if score @s rng1 matches 116 positioned -79686 32 7 run function skyblock:azr/assets/mobs/skeleton_sword
+execute if score @s rng1 matches 116 positioned -79686 32 7 run function skyblock:azr/assets/mobs/skeleton_melee
+execute if score @s rng1 matches 116 positioned -79686 32 7 run function skyblock:azr/assets/mobs/skeleton_melee
+execute if score @s rng1 matches 116 positioned -79686 32 7 run function skyblock:azr/assets/mobs/skeleton_melee
+execute if score @s rng1 matches 116 positioned -79686 32 7 run function skyblock:azr/assets/mobs/skeleton_melee
+execute if score @s rng1 matches 116 positioned -79686 32 7 run function skyblock:azr/assets/mobs/smoke
+execute if score @s rng1 matches 116 positioned -79686 32 7 run function skyblock:azr/assets/mobs/smoke
+execute if score @s rng1 matches 116 positioned -79686 32 7 run function skyblock:azr/assets/mobs/smoke
+execute if score @s rng1 matches 116 positioned -79686 32 7 run function skyblock:azr/assets/mobs/smoke
+
+execute if score @s rng1 matches 116 positioned -79680 32 -17 run function skyblock:azr/assets/mobs/undead
+execute if score @s rng1 matches 116 positioned -79680 32 -17 run function skyblock:azr/assets/mobs/undead
+execute if score @s rng1 matches 116 positioned -79680 32 -17 run function skyblock:azr/assets/mobs/undead
+execute if score @s rng1 matches 116 positioned -79680 32 -17 run function skyblock:azr/assets/mobs/undead
+
+execute if score @s rng1 matches 116 positioned -79677 32 -38 run function skyblock:azr/assets/mobs/undead
+execute if score @s rng1 matches 116 positioned -79677 32 -38 run function skyblock:azr/assets/mobs/undead
+execute if score @s rng1 matches 116 positioned -79677 32 -38 run function skyblock:azr/assets/mobs/undead
+execute if score @s rng1 matches 116 positioned -79677 32 -38 run function skyblock:azr/assets/mobs/undead
+
+execute if score @s rng1 matches 116 positioned -79682 32 -59 run function skyblock:azr/assets/mobs/undead
+execute if score @s rng1 matches 116 positioned -79682 32 -59 run function skyblock:azr/assets/mobs/undead
+execute if score @s rng1 matches 116 positioned -79682 32 -59 run function skyblock:azr/assets/mobs/undead
+execute if score @s rng1 matches 116 positioned -79682 32 -59 run function skyblock:azr/assets/mobs/undead
+
+
 execute if score @s rng1 matches 101.. unless entity @a[tag=azrPlayer,x=-79753,y=20,z=-83,dx=250,dy=50,dz=250] run function skyblock:azr/assets/events/stage/chapter_6/remains/event_garden_outside_area
 
 execute if score @s rng1 matches 101 run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“准备好。”",color:"white"}]
@@ -116,12 +144,20 @@ execute if score @s rng3 matches 3 if entity @n[tag=AzrielMob_barrier_ch6_midgar
 
 execute if score @s rng3 matches 4 run fill -79698 34 -27 -79702 32 -27 minecraft:air destroy
 
+execute if score @s rng3 matches 20 positioned -79697 32 1 run function skyblock:azr/assets/mobs/undead
+execute if score @s rng3 matches 20 positioned -79697 32 1 run function skyblock:azr/assets/mobs/undead
+execute if score @s rng3 matches 20 positioned -79697 32 1 run function skyblock:azr/assets/mobs/undead
+execute if score @s rng3 matches 20 positioned -79697 32 1 run function skyblock:azr/assets/mobs/undead
+execute if score @s rng3 matches 20 positioned -79697 32 1 run function skyblock:azr/assets/mobs/zombie_villager_armor
+
 execute if score @s rng3 matches 20 positioned -79686 33 -42 run function skyblock:azr/assets/mobs/blaze
 execute if score @s rng3 matches 20 positioned -79687 33 -43 run function skyblock:azr/assets/mobs/blaze
 execute if score @s rng3 matches 20 positioned -79685 33 -43 run function skyblock:azr/assets/mobs/blaze
 execute if score @s rng3 matches 20 positioned -79686 33 -44 run function skyblock:azr/assets/mobs/blaze
 
-
+execute if score @s rng3 matches 1 positioned -79686 32 7 run function skyblock:azr/assets/mobs/barrier_maintainer {id:_ch6_midgarden_door_2}
+execute if score @s rng3 matches 22 if entity @n[tag=AzrielMob_barrier_ch6_midgarden_door_2] run scoreboard players set @s rng3 21
+execute if score @s rng3 matches 23 run fill -79692 36 9 -79692 32 5 minecraft:air destroy
 
 
 
