@@ -160,11 +160,15 @@ execute if score @s rng3 matches 5 positioned -79698 32 221 run function skybloc
 execute if score @s rng3 matches 5 positioned -79698 32 221 run function skyblock:azr/assets/mobs/undead_fire
 execute if score @s rng3 matches 5 positioned -79698 32 221 run function skyblock:azr/assets/mobs/undead_fire
 
+execute if score @s rng3 matches 5 positioned -79680 34 6 run function skyblock:azr/assets/mobs/skeleton_sentinel
+execute if score @s rng3 matches 5 positioned -79680 34 6 run function skyblock:azr/assets/mobs/skeleton_sentinel
+
 
 execute if score @s rng3 matches 20 positioned -79686 33 -42 run function skyblock:azr/assets/mobs/blaze
 execute if score @s rng3 matches 20 positioned -79687 33 -43 run function skyblock:azr/assets/mobs/blaze
 execute if score @s rng3 matches 20 positioned -79685 33 -43 run function skyblock:azr/assets/mobs/blaze
 execute if score @s rng3 matches 20 positioned -79686 33 -44 run function skyblock:azr/assets/mobs/blaze
+
 
 execute if score @s rng3 matches 1 positioned -79686 32 7 run function skyblock:azr/assets/mobs/barrier_maintainer {id:_ch6_midgarden_door_2}
 execute if score @s rng3 matches 22 if entity @n[tag=AzrielMob_barrier_maintainer_ch6_midgarden_door_2] run scoreboard players set @s rng3 21
