@@ -4,7 +4,7 @@ scoreboard players add @s rng1 1
 
 
 
-execute if score @s rng1 matches 25 run kill @n[tag=AzrielNPC_emmanuel]
+execute if score @s rng1 matches 25 positioned -79259.51 281.00 -895.52 run kill @e[tag=AzrielNPC_emmanuel,distance=..10]
 execute if score @s rng1 matches 25 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“……这里是？”",color:"white"}]
 
 execute if score @s rng1 matches 125 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“一艘游轮。但……这里让我感觉并非现实世界。”",color:"white"}]
