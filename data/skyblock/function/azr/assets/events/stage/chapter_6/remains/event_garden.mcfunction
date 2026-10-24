@@ -13,6 +13,9 @@ execute if score @s rng1 matches 37 run tellraw @a[tag=azrShowDialog] [{text:"�
 
 execute if score @s rng1 matches 52 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“这数字倒是有点意思。代表三位一体，合在一起则是象征究极奥秘的9吗……”",color:"white"}]
 
+execute if score @s rng1 matches 52.. as @n[tag=AzrielNPC_mersenne,distance=..20] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+
+
 execute if score @s rng1 matches 68 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“虽然不是很懂，但或许正如爱理莎大人说的那样。”",color:"white"}]
 execute if score @s rng1 matches 80 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“我们会进行最后的休整。爱理莎大人，准备好了的话，请站到红色结界前方。”",color:"white"}]
 
