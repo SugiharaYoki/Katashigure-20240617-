@@ -25,7 +25,8 @@ clone -80030 0 -100 -80008 13 -69 -79942 32 15
 
 clone -80030 0 -150 -80018 17 -109 -79962 36 -4
 
-
+execute positioned -79278 272 -770 run forceload add ~ ~
+execute positioned -79278 272 -770 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run kill @s
 
 setblock -79981 37 -11 minecraft:tinted_glass
 setblock -79988 37 -11 minecraft:tinted_glass
