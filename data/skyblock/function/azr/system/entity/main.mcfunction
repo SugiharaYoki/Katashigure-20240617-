@@ -28,3 +28,9 @@ execute positioned -79177 50 -13 as @s[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79177 50 -13 as @s[tag=AzrielMarker_encounter,distance=0..0.5,tag=azr_door_2] run function skyblock:azr/assets/mobs/skill/boss_rush/door_2
 
 execute if score tick_count_main AzrTimerStack matches 4 at @s run function skyblock:azr/system/entity/main_slow
+
+# 劳姆登场特效：每 tick 更新，不受常规 marker 的 50 格玩家检测限制。
+execute as @s[type=marker,tag=AzrRaum_summon_lower] at @s run function skyblock:azr/assets/events/stage/chapter_6/remains/event_garden_summon_raum with entity @s data
+# 劳姆中庭战与音爆追踪弹，使用各自实体的记分板计时。
+execute as @s[type=mannequin,tag=AzrielNPC_raum,tag=AzrRaum_midgarden,tag=!AzrRaum_midgarden_retreat_done] at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/core_midgarden
+execute as @s[type=marker,tag=AzrRaum_midgarden_sonic] at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/marker_midgarden_sonic

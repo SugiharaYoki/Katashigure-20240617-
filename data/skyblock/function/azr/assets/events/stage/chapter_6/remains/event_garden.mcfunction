@@ -142,6 +142,25 @@ execute if score @s rng1 matches 188 run scoreboard players set @s rng20 1
 execute if score @s rng1 matches 188.. run scoreboard players add @s rng20 1
 execute if score @s rng1 matches 188.. store result bossbar azr:boss_hp_bar value run scoreboard players get @s rng20
 
+# 劳姆登场：事件 rng1 每 5 tick 增长一次；652 定位，692 汇聚，712 召唤。
+# 仅锁定最近的游戏玩家；中点位于其眼睛上方 30 格，此后固定不动。
+execute if score @s rng1 matches 652 run kill @e[type=marker,tag=AzrRaum_summon_ring]
+execute if score @s rng1 matches 652 as @p[tag=azrPlayer] at @s rotated 0 0 anchored eyes positioned ^ ^30 ^ run summon marker ~ ~ ~ {Tags:["AzrRaum_summon_ring","AzrRaum_summon_lower"],Rotation:[0.0f,0.0f]}
+execute if score @s rng1 matches 652 as @e[type=marker,tag=AzrRaum_summon_lower,limit=1] run data modify entity @s data.center set from entity @s Pos
+execute if score @s rng1 matches 652 at @e[type=marker,tag=AzrRaum_summon_lower,limit=1] positioned ~ ~2 ~ run summon marker ~ ~ ~ {Tags:["AzrRaum_summon_ring","AzrRaum_summon_upper"],Rotation:[0.0f,0.0f]}
+execute if score @s rng1 matches 652 as @e[type=marker,tag=AzrRaum_summon_lower,limit=1] at @s run tp @s ~ ~-2 ~ 0 0
+execute if score @s rng1 matches 652 run scoreboard players set @e[type=marker,tag=AzrRaum_summon_lower,limit=1] rng2 0
+execute if score @s rng1 matches 652 run scoreboard players set @e[type=marker,tag=AzrRaum_summon_lower,limit=1] rng3 10
+execute if score @s rng1 matches 652 as @a[tag=azrPlayer] at @s run particle minecraft:crimson_spore ~ ~0.2 ~ 5 0 5 0 60 force
+execute if score @s rng1 matches 652..712 run scoreboard players operation @e[type=marker,tag=AzrRaum_summon_lower,limit=1] rng4 = @s rng1
+
+# 只在 712 召唤一次，并清理两枚临时 marker；不改动主事件计时。
+execute if score @s rng1 matches 712 at @e[type=marker,tag=AzrRaum_summon_lower,limit=1] positioned ~ ~2 ~ unless entity @e[tag=AzrielNPC_raum,limit=1] run function skyblock:azr/assets/mobs/skill/boss6_raum/summon
+execute if score @s rng1 matches 712 at @e[type=marker,tag=AzrRaum_summon_lower,limit=1] positioned ~ ~2 ~ run tag @e[type=mannequin,tag=AzrielNPC_raum,distance=..1,limit=1] add AzrRaum_midgarden
+execute if score @s rng1 matches 712 at @e[type=marker,tag=AzrRaum_summon_lower,limit=1] positioned ~ ~2 ~ rotated 0 0 run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_davidstar
+execute if score @s rng1 matches 712 run kill @e[type=marker,tag=AzrRaum_summon_ring]
+
+
 
 
 
@@ -191,7 +210,6 @@ execute if score @s rng3 matches 27 positioned -79698 43 19 run function skybloc
 execute if score @s rng3 matches 1 positioned -79699 32 27 run function skyblock:azr/assets/mobs/barrier_maintainer {id:_ch6_midgarden_door_3}
 execute if score @s rng3 matches 32 if entity @n[tag=AzrielMob_barrier_maintainer_ch6_midgarden_door_3] run scoreboard players set @s rng3 31
 execute if score @s rng3 matches 33 run fill -79692 36 29 -79692 32 25 minecraft:air destroy
-
 
 
 
@@ -305,3 +323,7 @@ execute if score @s rng3 matches 1 positioned -79699 32 27 as @e[tag=AzrielMob_b
 
 
 
+
+# 超时判负：1006 时战场内所有游戏玩家显示爆炸；1009 时仅击杀未到安全区的玩家。
+execute if score @s rng1 matches 1006 as @a[tag=azrPlayer,x=-79753,y=20,z=-83,dx=250,dy=50,dz=250] at @s run particle minecraft:explosion_emitter ~ ~1 ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 1009 as @a[tag=azrPlayer,x=-79753,y=20,z=-83,dx=250,dy=50,dz=250] positioned -79631.0 40.0 -63.0 unless entity @s[distance=..35] run kill @s
