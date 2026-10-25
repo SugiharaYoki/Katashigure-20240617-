@@ -172,6 +172,7 @@ execute if score @s rng1 matches 712 at @e[type=marker,tag=AzrRaum_summon_lower,
 execute if score @s rng1 matches 712 at @e[type=marker,tag=AzrRaum_summon_lower,limit=1] positioned ~ ~2 ~ rotated 0 0 run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_davidstar
 execute if score @s rng1 matches 712 run kill @e[type=marker,tag=AzrRaum_summon_ring]
 
+execute if score @s rng1 matches 670 run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“所有人，小心头顶正上方！！”",color:"white"}]
 
 
 
