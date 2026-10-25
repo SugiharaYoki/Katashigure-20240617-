@@ -155,9 +155,9 @@ execute if score @s rng1 matches 652 run fillbiome -79680 38 -63 -79620 39 47 mi
 execute if score @s rng1 matches 652 run fillbiome -79680 40 -63 -79620 41 47 minecraft:crimson_forest
 
 # 劳姆登场：事件 rng1 每 5 tick 增长一次；652 定位，692 汇聚，712 召唤。
-# 仅锁定最近的游戏玩家；中点位于其眼睛上方 30 格，此后固定不动。
+# 仅锁定最近的游戏玩家；中点位于其眼睛上方 18 格，此后固定不动。
 execute if score @s rng1 matches 652 run kill @e[type=marker,tag=AzrRaum_summon_ring]
-execute if score @s rng1 matches 652 as @p[tag=azrPlayer] at @s rotated 0 0 anchored eyes positioned ^ ^30 ^ run summon marker ~ ~ ~ {Tags:["AzrRaum_summon_ring","AzrRaum_summon_lower"],Rotation:[0.0f,0.0f]}
+execute if score @s rng1 matches 652 as @p[tag=azrPlayer] at @s rotated 0 0 anchored eyes positioned ^ ^18 ^ run summon marker ~ ~ ~ {Tags:["AzrRaum_summon_ring","AzrRaum_summon_lower"],Rotation:[0.0f,0.0f]}
 execute if score @s rng1 matches 652 as @e[type=marker,tag=AzrRaum_summon_lower,limit=1] run data modify entity @s data.center set from entity @s Pos
 execute if score @s rng1 matches 652 at @e[type=marker,tag=AzrRaum_summon_lower,limit=1] positioned ~ ~2 ~ run summon marker ~ ~ ~ {Tags:["AzrRaum_summon_ring","AzrRaum_summon_upper"],Rotation:[0.0f,0.0f]}
 execute if score @s rng1 matches 652 as @e[type=marker,tag=AzrRaum_summon_lower,limit=1] at @s run tp @s ~ ~-2 ~ 0 0

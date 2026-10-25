@@ -17,23 +17,23 @@ execute if score @s rng4 matches 652..711 store result entity @e[type=marker,tag
 # 每位游戏玩家脚边持续出现绯红孢子。
 execute if score @s rng4 matches 652..711 as @a[tag=azrPlayer] at @s run particle minecraft:crimson_spore ~ ~0.2 ~ 5 0 5 0 5 force
 
-# 下层三个音爆点：半径 4 格，彼此相隔 120 度。
-execute if score @s rng4 matches 652..711 at @s anchored feet run particle minecraft:sonic_boom ^ ^ ^4 0 0 0 0 1 force
-execute if score @s rng4 matches 652..711 at @s anchored feet run particle minecraft:sonic_boom ^3.464102 ^ ^-2 0 0 0 0 1 force
-execute if score @s rng4 matches 652..711 at @s anchored feet run particle minecraft:sonic_boom ^-3.464102 ^ ^-2 0 0 0 0 1 force
+# 下层三个音爆点：半径 6 格，彼此相隔 120 度。
+execute if score @s rng4 matches 652..711 at @s anchored feet run particle minecraft:sonic_boom ^ ^ ^6 0 0 0 0 1 force
+execute if score @s rng4 matches 652..711 at @s anchored feet run particle minecraft:sonic_boom ^5.196152 ^ ^-3 0 0 0 0 1 force
+execute if score @s rng4 matches 652..711 at @s anchored feet run particle minecraft:sonic_boom ^-5.196152 ^ ^-3 0 0 0 0 1 force
 
 # 上层三个音爆点：位于下层上方 4 格，旋转方向相反。
-execute if score @s rng4 matches 652..711 at @e[type=marker,tag=AzrRaum_summon_upper,limit=1] anchored feet run particle minecraft:sonic_boom ^ ^ ^4 0 0 0 0 1 force
-execute if score @s rng4 matches 652..711 at @e[type=marker,tag=AzrRaum_summon_upper,limit=1] anchored feet run particle minecraft:sonic_boom ^3.464102 ^ ^-2 0 0 0 0 1 force
-execute if score @s rng4 matches 652..711 at @e[type=marker,tag=AzrRaum_summon_upper,limit=1] anchored feet run particle minecraft:sonic_boom ^-3.464102 ^ ^-2 0 0 0 0 1 force
+execute if score @s rng4 matches 652..711 at @e[type=marker,tag=AzrRaum_summon_upper,limit=1] anchored feet run particle minecraft:sonic_boom ^ ^ ^6 0 0 0 0 1 force
+execute if score @s rng4 matches 652..711 at @e[type=marker,tag=AzrRaum_summon_upper,limit=1] anchored feet run particle minecraft:sonic_boom ^5.196152 ^ ^-3 0 0 0 0 1 force
+execute if score @s rng4 matches 652..711 at @e[type=marker,tag=AzrRaum_summon_upper,limit=1] anchored feet run particle minecraft:sonic_boom ^-5.196152 ^ ^-3 0 0 0 0 1 force
 
 # 692 起，六股粒子由音爆点向精确中点汇聚，10 tick 抵达。
-$execute if score @s rng4 matches 692..711 at @s anchored feet run particle minecraft:trail{color:13565951,duration:10,target:$(center)} ^ ^ ^4 0 0 0 0 1 force
-$execute if score @s rng4 matches 692..711 at @s anchored feet run particle minecraft:trail{color:13565951,duration:10,target:$(center)} ^3.464102 ^ ^-2 0 0 0 0 1 force
-$execute if score @s rng4 matches 692..711 at @s anchored feet run particle minecraft:trail{color:13565951,duration:10,target:$(center)} ^-3.464102 ^ ^-2 0 0 0 0 1 force
-$execute if score @s rng4 matches 692..711 at @e[type=marker,tag=AzrRaum_summon_upper,limit=1] anchored feet run particle minecraft:trail{color:13565951,duration:10,target:$(center)} ^ ^ ^4 0 0 0 0 1 force
-$execute if score @s rng4 matches 692..711 at @e[type=marker,tag=AzrRaum_summon_upper,limit=1] anchored feet run particle minecraft:trail{color:13565951,duration:10,target:$(center)} ^3.464102 ^ ^-2 0 0 0 0 1 force
-$execute if score @s rng4 matches 692..711 at @e[type=marker,tag=AzrRaum_summon_upper,limit=1] anchored feet run particle minecraft:trail{color:13565951,duration:10,target:$(center)} ^-3.464102 ^ ^-2 0 0 0 0 1 force
+$execute if score @s rng4 matches 692..711 at @s anchored feet run particle minecraft:trail{color:13565951,duration:10,target:$(center)} ^ ^ ^6 0 0 0 0 1 force
+$execute if score @s rng4 matches 692..711 at @s anchored feet run particle minecraft:trail{color:13565951,duration:10,target:$(center)} ^5.196152 ^ ^-3 0 0 0 0 1 force
+$execute if score @s rng4 matches 692..711 at @s anchored feet run particle minecraft:trail{color:13565951,duration:10,target:$(center)} ^-5.196152 ^ ^-3 0 0 0 0 1 force
+$execute if score @s rng4 matches 692..711 at @e[type=marker,tag=AzrRaum_summon_upper,limit=1] anchored feet run particle minecraft:trail{color:13565951,duration:10,target:$(center)} ^ ^ ^6 0 0 0 0 1 force
+$execute if score @s rng4 matches 692..711 at @e[type=marker,tag=AzrRaum_summon_upper,limit=1] anchored feet run particle minecraft:trail{color:13565951,duration:10,target:$(center)} ^5.196152 ^ ^-3 0 0 0 0 1 force
+$execute if score @s rng4 matches 692..711 at @e[type=marker,tag=AzrRaum_summon_upper,limit=1] anchored feet run particle minecraft:trail{color:13565951,duration:10,target:$(center)} ^-5.196152 ^ ^-3 0 0 0 0 1 force
 
 # 中点高速向外喷射铜火焰，周围形成烟云。
 execute if score @s rng4 matches 692..711 at @s positioned ~ ~2 ~ run particle minecraft:copper_fire_flame ~ ~ ~ 0.15 0.15 0.15 0.3 14 force
