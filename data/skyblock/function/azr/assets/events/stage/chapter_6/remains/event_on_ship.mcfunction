@@ -126,7 +126,7 @@ execute if score @s rng1 matches 667 positioned -79804 39 -14 run function skybl
 execute if score @s rng1 matches 667 positioned -79804 39 -14 run function skyblock:azr/assets/mobs/piglin_spear
 execute if score @s rng1 matches 667 positioned -79804 39 -14 run function skyblock:azr/assets/mobs/sword
 execute if score @s rng1 matches 667 positioned -79804 39 -14 run function skyblock:azr/assets/mobs/sword
-
+execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run attribute @s max_health modifier add azr_progress:life_ch6 40 add_value
 
 execute if score @s rng1 matches 899 run scoreboard players set @s rng1 898
 execute if score @s rng1 matches ..899 positioned -79831.29 39.00 -14.12 if entity @a[tag=azrPlayer,distance=..6] run scoreboard players set @s rng1 900
