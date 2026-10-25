@@ -142,6 +142,18 @@ execute if score @s rng1 matches 188 run scoreboard players set @s rng20 1
 execute if score @s rng1 matches 188.. run scoreboard players add @s rng20 1
 execute if score @s rng1 matches 188.. store result bossbar azr:boss_hp_bar value run scoreboard players get @s rng20
 
+
+execute if score @s rng1 matches 652 run fillbiome -79742 32 -63 -79680 33 47 minecraft:crimson_forest
+execute if score @s rng1 matches 652 run fillbiome -79742 34 -63 -79680 35 47 minecraft:crimson_forest
+execute if score @s rng1 matches 652 run fillbiome -79742 36 -63 -79680 37 47 minecraft:crimson_forest
+execute if score @s rng1 matches 652 run fillbiome -79742 38 -63 -79680 39 47 minecraft:crimson_forest
+execute if score @s rng1 matches 652 run fillbiome -79742 40 -63 -79680 41 47 minecraft:crimson_forest
+execute if score @s rng1 matches 652 run fillbiome -79680 32 -63 -79620 33 47 minecraft:crimson_forest
+execute if score @s rng1 matches 652 run fillbiome -79680 34 -63 -79620 35 47 minecraft:crimson_forest
+execute if score @s rng1 matches 652 run fillbiome -79680 36 -63 -79620 37 47 minecraft:crimson_forest
+execute if score @s rng1 matches 652 run fillbiome -79680 38 -63 -79620 39 47 minecraft:crimson_forest
+execute if score @s rng1 matches 652 run fillbiome -79680 40 -63 -79620 41 47 minecraft:crimson_forest
+
 # 劳姆登场：事件 rng1 每 5 tick 增长一次；652 定位，692 汇聚，712 召唤。
 # 仅锁定最近的游戏玩家；中点位于其眼睛上方 30 格，此后固定不动。
 execute if score @s rng1 matches 652 run kill @e[type=marker,tag=AzrRaum_summon_ring]
