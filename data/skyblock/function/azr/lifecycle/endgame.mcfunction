@@ -45,8 +45,6 @@ bossbar remove azr:boss_hp_bar_working
 bossbar remove azr:boss_hp_bar_0
 bossbar remove azr:progress_bar_pvp
 #______________________________________________________________#
-#清理小队
-team remove AzrBossA
 #清场
 function skyblock:azr/lifecycle/endgame/reset_map
 stopsound @a[tag=azrShowDialog]

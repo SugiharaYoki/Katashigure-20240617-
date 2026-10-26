@@ -118,7 +118,7 @@ execute if score @s rng1 matches 1252 run title @a[tag=azrShowDialog] actionbar 
 execute if score @s rng1 matches 1252 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage11_boss3
 
 #rewards
-execute if score @s rng1 matches 1252 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute if score @s rng1 matches 1252 as @a[tag=azrPlayer] at @s run scoreboard players add @s AzrMelonCount 1
 execute if score @s rng1 matches 1252 run tellraw @a[tag=azrPlayer] {text:"你已解锁新的可传送重生锚点「天使的憩庭」。\n在挑战过程中小憩，或是在脑海中再战那些值得铭记的强敌。"}
 execute if score @s rng1 matches 1252 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..13}] Azr_skillPoints 14
 execute if score @s rng1 matches 1252 run scoreboard players reset stage_main_thread AzrTimerStack

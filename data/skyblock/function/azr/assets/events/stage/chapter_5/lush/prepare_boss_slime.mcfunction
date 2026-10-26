@@ -47,7 +47,7 @@ execute if score @s rng1 matches 2010 run fill -79732 189 -772 -79731 193 -772 a
 execute if score @s rng1 matches 2010 as @a[tag=azrPlayer,tag=!AZS_BoSB19] at @s run function skyblock:azr/assets/items/amulets/water_ripple
 execute if score @s rng1 matches 2010 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB19
 execute if score @s rng1 matches 2010 as @a[tag=azrPlayer] at @s run give @s emerald 20
-execute if score @s rng1 matches 2010 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute if score @s rng1 matches 2010 as @a[tag=azrPlayer] at @s run scoreboard players add @s AzrMelonCount 1
 
 #out
 

@@ -184,9 +184,6 @@ scoreboard players set #boss_seen_chapter2_marinus AzrTimerStack 0
 scoreboard players set #boss_seen_chapter2_andralune AzrTimerStack 0
 
 #scoreboard players set life_vitae_available Azr_system 1
-#创建小队
-team add AzrBossA
-team modify AzrBossA friendlyFire false
 
 #清场
 kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1000]

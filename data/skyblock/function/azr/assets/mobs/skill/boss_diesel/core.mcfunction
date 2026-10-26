@@ -72,7 +72,7 @@ execute if score @s AzrEntityTimer matches 2011 run fill -79997 25 201 -79997 30
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer,tag=!AZS_BoSB04] at @s run function skyblock:azr/assets/items/amulets/fire_drogue
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB04
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s emerald 30
-execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run scoreboard players add @s AzrMelonCount 1
 execute if score @s AzrEntityTimer matches 2011 positioned -80011 25 200 run kill @e[tag=AzrielMob_floating_fire,type=magma_cube,distance=..15]
 
 #out

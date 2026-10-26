@@ -64,8 +64,8 @@ execute if score @s rng1 matches 20000 run scoreboard players set stage Azr_syst
 execute if score @s rng1 matches 20000 run title @a[tag=azrShowDialog] actionbar {text:"Interlude Chapter Clear",color:"gold"}
 execute if score @s rng1 matches 20000 as @a[tag=azrShowDialog] at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 2 0.9
 execute if score @s rng1 matches 20000 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage17_boss4_2
-execute if score @s rng1 matches 20000 as @a[tag=azrPlayer] at @s run summon item ~ ~ ~ {Item:{id:"emerald",count:10b}}
-execute if score @s rng1 matches 20000 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute if score @s rng1 matches 20000 as @a[tag=azrPlayer] at @s run scoreboard players add @s Azr_emerald 10
+execute if score @s rng1 matches 20000 as @a[tag=azrPlayer] at @s run scoreboard players add @s AzrMelonCount 1
 #execute if score @s rng1 matches 20000 as @a[tag=azrPlayer,scores={Azr_skillPoints=..18}] at @s run function skyblock:azr/assets/items/amulets/magical_current
 execute if score @s rng1 matches 20000 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..19}] Azr_skillPoints 20
 execute if score @s rng1 matches 20000.. run kill @e[tag=AzrielMob_blaze,distance=..100,type=blaze]

@@ -78,7 +78,6 @@ execute if score stage_main_thread AzrTimerStack matches 1001 as @n[tag=AzrielNP
 execute if score stage_main_thread AzrTimerStack matches 1001 as @n[tag=AzrielNPC_andralune] at @s run kill @e[tag=AZR_summon_arroworb,distance=5..50]
 execute if score stage_main_thread AzrTimerStack matches 1001 as @n[tag=AzrielNPC_andralune] at @s run kill @e[tag=AZR_boss1_move_marker,distance=5..50]
 execute if score stage_main_thread AzrTimerStack matches 1001 as @n[tag=AzrielNPC_andralune] at @s run kill @e[tag=AZR_boss2_arrowpince_marker_release,distance=5..50]
-execute if score stage_main_thread AzrTimerStack matches 1001 as @n[tag=AzrielNPC_andralune] at @s run kill @e[tag=AZR_boss2_arrowpince_marker_release,distance=5..50]
 execute if score stage_main_thread AzrTimerStack matches 1001 as @n[tag=AzrielNPC_andralune] at @s run kill @e[tag=AzrielMob,type=illusioner,distance=0.3..50]
 
 #execute if score stage_main_thread AzrTimerStack matches 1002..1012 at @n[tag=AzrielNPC_andralune] run particle wax_off ~ ~0.2 ~ 1 0 1 0 18
@@ -215,8 +214,8 @@ execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard pla
 execute if score stage_main_thread AzrTimerStack matches 2011 run title @a[tag=azrShowDialog] actionbar {text:"Chapter Clear",color:"gold"}
 execute if score stage_main_thread AzrTimerStack matches 2011 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage8_boss2
 #rewards
-execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run summon item ~ ~ ~ {Item:{id:"emerald",count:10b}}
-execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run scoreboard players add @s Azr_emerald 10
+execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run scoreboard players add @s AzrMelonCount 1
 execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer,scores={Azr_skillPoints=..9}] run function skyblock:azr/assets/items/amulets/light_angel
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..9}] Azr_skillPoints 10
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players reset stage_main_thread AzrTimerStack

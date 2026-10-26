@@ -166,7 +166,7 @@ execute if score stage_main_thread AzrTimerStack matches 1130 run scoreboard pla
 
 #finalize
 execute if score stage_main_thread AzrTimerStack matches 2001 run bossbar remove azr:boss_hp_bar
-execute if score stage_main_thread AzrTimerStack matches 2001 run kill @e[tag=AzrielMob,tag=AzrielMob_skeleton_melee,x=-79931,y=40,z=88,distance=5..500]
+execute if score stage_main_thread AzrTimerStack matches 2001 run kill @e[tag=AzrielMob,tag=AzrielMob_skeleton_melee,x=-79931,y=40,z=88,distance=5..50]
 #effect & sound
 execute if score stage_main_thread AzrTimerStack matches 2001 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000
 execute if score stage_main_thread AzrTimerStack matches 2001 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000
@@ -184,8 +184,8 @@ execute if score stage_main_thread AzrTimerStack matches 2011 run title @a[tag=a
 execute if score stage_main_thread AzrTimerStack matches 2011 run tellraw @a[tag=azrShowDialog] {text:"「生命手册」已开放第 2 页",color:"green"}
 execute if score stage_main_thread AzrTimerStack matches 2011 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage4_boss1
 #rewards
-execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run summon item ~ ~ ~ {Item:{id:"emerald",count:10b}}
-execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run scoreboard players add @s Azr_emerald 10
+execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer] at @s run scoreboard players add @s AzrMelonCount 1
 execute if score stage_main_thread AzrTimerStack matches 2011 as @a[tag=azrPlayer,scores={Azr_skillPoints=..4}] run function skyblock:azr/assets/items/amulets/stopwatch
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..4}] Azr_skillPoints 5
 execute if score stage_main_thread AzrTimerStack matches 2011 run scoreboard players reset stage_main_thread AzrTimerStack

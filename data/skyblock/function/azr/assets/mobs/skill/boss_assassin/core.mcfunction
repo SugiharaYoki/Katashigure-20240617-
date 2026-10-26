@@ -63,7 +63,7 @@ execute if score @s AzrEntityTimer matches 2011 run fill -79829 46 135 -79829 42
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer,tag=!AZS_BoSB01] at @s run function skyblock:azr/assets/items/amulets/back_dodge
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB01
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s emerald 20
-execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run scoreboard players add @s AzrMelonCount 1
 
 #out
 

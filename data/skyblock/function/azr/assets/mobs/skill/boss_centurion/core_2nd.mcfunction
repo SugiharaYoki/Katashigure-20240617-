@@ -76,7 +76,7 @@ execute if score @s AzrEntityTimer matches 2010 run fill -79808 31 -282 -79808 2
 execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer,tag=!AZS_BoSB03] at @s run function skyblock:azr/assets/items/amulets/land_fracture
 execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB03
 execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run give @s emerald 20
-execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run scoreboard players add @s AzrMelonCount 1
 
 #out
 

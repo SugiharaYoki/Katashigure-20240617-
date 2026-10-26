@@ -84,7 +84,7 @@ execute if score @s AzrEntityTimer matches 2010 run fill -79575 10 -451 -79575 1
 execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer,tag=!AZS_BoSB12] at @s run function skyblock:azr/assets/items/amulets/front_slash
 execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB12
 execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run give @s emerald 20
-execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute if score @s AzrEntityTimer matches 2010 as @a[tag=azrPlayer] at @s run scoreboard players add @s AzrMelonCount 1
 
 execute if score stage Azr_system matches ..61 if score @s AzrEntityTimer matches 2020 run tellraw @a[tag=azrShowDialog] [{text:"肥猪亨利：",color:"green",bold:1b},{bold: false,text:"\n“所以老大，对面掉了你提到过的石板吗？”",color:"white"}]
 execute if score stage Azr_system matches ..61 if score @s AzrEntityTimer matches 2036 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“掉了，看来是个能够削弱敌人防御力的石板。”",color:"white"}]

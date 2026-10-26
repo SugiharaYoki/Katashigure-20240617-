@@ -8,7 +8,6 @@ execute if score stage_boss_bgm AzrTimerStack matches 2281.. run scoreboard play
 
 #AI
 
-    execute if score tick_main_thread AzrTimerStack matches 152..2800 run team join AzrBossA @e[tag=AzrielMob,x=-79931,y=38,z=88,distance=..20]
     #状态效果控制
     effect clear @a[tag=azrPlayer] blindness
     effect clear @s invisibility

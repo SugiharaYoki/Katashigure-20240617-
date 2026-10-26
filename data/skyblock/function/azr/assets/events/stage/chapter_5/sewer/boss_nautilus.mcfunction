@@ -24,7 +24,7 @@ execute if score @s rng1 matches 501 run fill -79578 -35 17 -79580 -31 17 air de
 execute if score @s rng1 matches 501 as @a[tag=azrPlayer,tag=!AZS_BoSB14] at @s run function skyblock:azr/assets/items/amulets/dash_master
 execute if score @s rng1 matches 501 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB14
 execute if score @s rng1 matches 501 as @a[tag=azrPlayer] at @s run give @s emerald 20
-execute if score @s rng1 matches 501 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute if score @s rng1 matches 501 as @a[tag=azrPlayer] at @s run scoreboard players add @s AzrMelonCount 1
 
 
 #out

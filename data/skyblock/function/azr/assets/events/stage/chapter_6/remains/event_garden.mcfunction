@@ -158,22 +158,24 @@ execute if score @s rng1 matches 652 run fillbiome -79680 40 -63 -79620 41 47 mi
 # 仅锁定最近的游戏玩家；中点位于其眼睛上方 18 格，此后固定不动。
 execute if score @s rng1 matches 652 run kill @e[type=marker,tag=AzrRaum_summon_ring]
 execute if score @s rng1 matches 652 as @p[tag=azrPlayer] at @s rotated 0 0 anchored eyes positioned ^ ^18 ^ run summon marker ~ ~ ~ {Tags:["AzrRaum_summon_ring","AzrRaum_summon_lower"],Rotation:[0.0f,0.0f]}
-execute if score @s rng1 matches 652 as @e[type=marker,tag=AzrRaum_summon_lower,limit=1] run data modify entity @s data.center set from entity @s Pos
-execute if score @s rng1 matches 652 at @e[type=marker,tag=AzrRaum_summon_lower,limit=1] positioned ~ ~2 ~ run summon marker ~ ~ ~ {Tags:["AzrRaum_summon_ring","AzrRaum_summon_upper"],Rotation:[0.0f,0.0f]}
-execute if score @s rng1 matches 652 as @e[type=marker,tag=AzrRaum_summon_lower,limit=1] at @s run tp @s ~ ~-2 ~ 0 0
-execute if score @s rng1 matches 652 run scoreboard players set @e[type=marker,tag=AzrRaum_summon_lower,limit=1] rng2 0
-execute if score @s rng1 matches 652 run scoreboard players set @e[type=marker,tag=AzrRaum_summon_lower,limit=1] rng3 10
+execute if score @s rng1 matches 652 as @n[type=marker,tag=AzrRaum_summon_lower] run data modify entity @s data.center set from entity @s Pos
+execute if score @s rng1 matches 652 at @n[type=marker,tag=AzrRaum_summon_lower] positioned ~ ~2 ~ run summon marker ~ ~ ~ {Tags:["AzrRaum_summon_ring","AzrRaum_summon_upper"],Rotation:[0.0f,0.0f]}
+execute if score @s rng1 matches 652 as @n[type=marker,tag=AzrRaum_summon_lower] at @s run tp @s ~ ~-2 ~ 0 0
+execute if score @s rng1 matches 652 run scoreboard players set @n[type=marker,tag=AzrRaum_summon_lower] rng2 0
+execute if score @s rng1 matches 652 run scoreboard players set @n[type=marker,tag=AzrRaum_summon_lower] rng3 10
 execute if score @s rng1 matches 652 as @a[tag=azrPlayer] at @s run particle minecraft:crimson_spore ~ ~0.2 ~ 5 0 5 0 60 force
-execute if score @s rng1 matches 652..712 run scoreboard players operation @e[type=marker,tag=AzrRaum_summon_lower,limit=1] rng4 = @s rng1
+execute if score @s rng1 matches 652..712 run scoreboard players operation @n[type=marker,tag=AzrRaum_summon_lower] rng4 = @s rng1
 
 # 只在 712 召唤一次，并清理两枚临时 marker；不改动主事件计时。
-execute if score @s rng1 matches 712 at @e[type=marker,tag=AzrRaum_summon_lower,limit=1] positioned ~ ~2 ~ unless entity @e[tag=AzrielNPC_raum,limit=1] run function skyblock:azr/assets/mobs/skill/boss6_raum/summon
-execute if score @s rng1 matches 712 at @e[type=marker,tag=AzrRaum_summon_lower,limit=1] positioned ~ ~2 ~ run tag @e[type=mannequin,tag=AzrielNPC_raum,distance=..1,limit=1] add AzrRaum_midgarden
-execute if score @s rng1 matches 712 at @e[type=marker,tag=AzrRaum_summon_lower,limit=1] positioned ~ ~2 ~ rotated 0 0 run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_davidstar
+execute if score @s rng1 matches 712 at @n[type=marker,tag=AzrRaum_summon_lower] positioned ~ ~2 ~ unless entity @e[tag=AzrielNPC_raum,limit=1] run function skyblock:azr/assets/mobs/skill/boss6_raum/summon
+execute if score @s rng1 matches 712 at @n[type=marker,tag=AzrRaum_summon_lower] positioned ~ ~2 ~ run tag @e[type=mannequin,tag=AzrielNPC_raum,distance=..1,limit=1] add AzrRaum_midgarden
+execute if score @s rng1 matches 712 at @n[type=marker,tag=AzrRaum_summon_lower] positioned ~ ~2 ~ rotated 0 0 run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_davidstar
 execute if score @s rng1 matches 712 run kill @e[type=marker,tag=AzrRaum_summon_ring]
 
-execute if score @s rng1 matches 670 run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“所有人，小心头顶正上方！！”",color:"white"}]
+execute if score @s rng1 matches 670 run tellraw @a[tag=azrShowDialog] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“所有人，注意头顶正上方！！”",color:"white"}]
 
+execute if score @s rng1 matches 720 as @p[tag=azrPlayer] at @s if entity @n[type=pillager,distance=..30] run tellraw @a[tag=azrShowDialog] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“是渡鸦劳姆！！”",color:"white"}]
+execute if score @s rng1 matches 740 as @p[tag=azrPlayer] at @s if entity @n[type=vindicator,distance=..30] run tellraw @a[tag=azrShowDialog] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“大家注意，不要被打中了！！”",color:"white"}]
 
 
 

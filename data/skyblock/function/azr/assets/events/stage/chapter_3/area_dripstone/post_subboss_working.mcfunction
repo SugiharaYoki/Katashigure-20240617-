@@ -8,7 +8,7 @@ execute as @s[scores={rng1=103}] run bossbar remove azr:boss_hp_bar_working
 execute as @s[scores={rng1=103}] as @a[tag=azrPlayer,tag=!AZS_BoSB23] at @s run function skyblock:azr/assets/items/amulets/transportation
 execute as @s[scores={rng1=103}] as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB23
 execute as @s[scores={rng1=103}] as @a[tag=azrPlayer] at @s run give @s emerald 30
-execute as @s[scores={rng1=103}] as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute as @s[scores={rng1=103}] as @a[tag=azrPlayer] at @s run scoreboard players add @s AzrMelonCount 1
 
 
 execute as @s[scores={rng1=103}] positioned -79839 13 -65 run function skyblock:azr/assets/mobs/skill/boss_working/summon_peaceful

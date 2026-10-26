@@ -110,7 +110,7 @@ execute if score @s AzrEntityTimer matches 2011 run advancement grant @a[tag=azr
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer,tag=!AZS_BoSB22] at @s run function skyblock:azr/assets/items/amulets/stay_float_attack
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run tag @s add AZS_BoSB22
 execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s emerald 30
-execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run give @s glistering_melon_slice 1
+execute if score @s AzrEntityTimer matches 2011 as @a[tag=azrPlayer] at @s run scoreboard players add @s AzrMelonCount 1
 
 execute if score @s AzrEntityTimer matches 2031 run playsound minecraft:entity.evoker.ambient neutral @a ~ ~ ~ 1 1.5
 execute if score @s AzrEntityTimer matches 2031 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“啥？你说有和人聊天的习惯？别别别，我没有任何能跟你聊的，再怎么也等我解决完自己的事情。”",color:"white",bold: false}]

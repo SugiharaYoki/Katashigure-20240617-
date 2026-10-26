@@ -9,8 +9,8 @@ execute unless score $StopSea skyblock_system matches 1 if block -25 23 32 soul_
 execute as @e[type=marker] run function skyblock:decoration/main
 
 #toy
-execute as @e[tag=AzrielBossA_outgame,type=illusioner] at @s run function skyblock:azr/outgame/boss1
-execute unless entity @e[tag=AzrielBossA_outgame,type=illusioner] run function skyblock:azr/outgame/boss1_terminate
+#execute as @e[tag=AzrielBossA_outgame,type=illusioner] at @s run function skyblock:azr/outgame/boss1
+#execute unless entity @e[tag=AzrielBossA_outgame,type=illusioner] run function skyblock:azr/outgame/boss1_terminate
 
 
 
