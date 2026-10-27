@@ -225,6 +225,7 @@ execute if score @s rng3 matches 27 positioned -79698 43 19 run function skybloc
 
 execute if score @s rng3 matches 1 positioned -79699 32 27 run function skyblock:azr/assets/mobs/barrier_maintainer {id:_ch6_midgarden_door_3}
 execute if score @s rng3 matches 32 if entity @n[tag=AzrielMob_barrier_maintainer_ch6_midgarden_door_3] run scoreboard players set @s rng3 31
+execute if score @s rng3 matches 32 positioned -79699 32 13 if entity @n[distance=..20,tag=AzrielMob_elite_candle_angel] run scoreboard players set @s rng3 31
 execute if score @s rng3 matches 33 run fill -79692 36 29 -79692 32 25 minecraft:air destroy
 
 execute if score @s rng3 matches 36 positioned -79675 33 27 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield","AzrielMob_summon_delay","AzrielMob_level_1"]}
