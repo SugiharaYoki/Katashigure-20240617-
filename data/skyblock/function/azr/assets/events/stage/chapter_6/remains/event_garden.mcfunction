@@ -247,7 +247,17 @@ execute if score @s rng3 matches 54 positioned -79653 33 26 run summon marker ~ 
 execute if score @s rng3 matches 54 positioned -79653 33 28 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
+execute if score @s rng3 matches 30.. positioned -79650 34 14 if entity @a[tag=azrPlayer,distance=..8] run scoreboard players add @s rng4 1
+execute if score @s rng4 matches 2 positioned -79652 34 -8 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 2 positioned -79650 34 -8 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 4 positioned -79652 34 -10 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 4 positioned -79650 34 -10 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 6 positioned -79652 34 -12 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 6 positioned -79650 34 -12 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 8 positioned -79652 34 -14 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 8 positioned -79650 34 -14 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
+execute if score @s rng4 matches 2..5 positioned -79659 33 16 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
 
