@@ -8,9 +8,10 @@ execute positioned -79747 32 -13 run scoreboard players operation @s rng20 = @e[
 execute if score @s rng1 matches 1 store result score @s rng2 run random value 60..100
 execute if score @s rng1 matches 1 run scoreboard players set @s rng6 0
 tag @s remove AzrRaum_midgarden_active
-execute if score @s rng20 matches ..999 unless entity @s[tag=AzrRaum_midgarden_retreat] if entity @p[tag=azrPlayer] run tag @s add AzrRaum_midgarden_active
+execute if score @s rng1 matches 2.. if score @s rng20 matches ..999 unless entity @s[tag=AzrRaum_midgarden_retreat] if entity @p[tag=azrPlayer] run tag @s add AzrRaum_midgarden_active
 
-# 先检查水平距离：玩家走到劳姆正下方 4 格内时，劳姆向外侧移 4 格，保持原高度。
+# 出生首 tick 保持六芒星中心；初次接近玩家时先按下方的 0.15 格速度平滑移动。
+# 水平间距首次达到 4 格后，再开启玩家靠近时的侧向避让，避免出生瞬间横跳 4 格。
 execute if entity @s[tag=AzrRaum_midgarden_active] store result score @s rng10 run data get entity @s Pos[0] 100
 execute if entity @s[tag=AzrRaum_midgarden_active] store result score @s rng11 run data get entity @p[tag=azrPlayer] Pos[0] 100
 execute if entity @s[tag=AzrRaum_midgarden_active] run scoreboard players operation @s rng10 -= @s rng11
@@ -22,7 +23,9 @@ execute if entity @s[tag=AzrRaum_midgarden_active] if score @s rng10 matches -40
 execute if score @s rng14 matches 1 run scoreboard players operation @s rng10 *= @s rng10
 execute if score @s rng14 matches 1 run scoreboard players operation @s rng12 *= @s rng12
 execute if score @s rng14 matches 1 run scoreboard players operation @s rng10 += @s rng12
-execute if score @s rng14 matches 1 if score @s rng10 matches ..159999 at @p[tag=azrPlayer] facing entity @s feet rotated ~ 0 positioned as @s run tp @s ^ ^ ^4
+execute if entity @s[tag=AzrRaum_midgarden_active] if score @s rng14 matches 0 run tag @s add AzrRaum_midgarden_spaced
+execute if entity @s[tag=AzrRaum_midgarden_active] if score @s rng14 matches 1 if score @s rng10 matches 160000.. run tag @s add AzrRaum_midgarden_spaced
+execute if entity @s[tag=AzrRaum_midgarden_spaced] if score @s rng14 matches 1 if score @s rng10 matches ..159999 at @p[tag=azrPlayer] facing entity @s feet rotated ~ 0 positioned as @s run tp @s ^ ^ ^4
 
 # 以玩家眼睛上方 10 格、朝劳姆这一侧水平 5 格为悬停点，每 tick 靠近 0.15 格。
 # 在悬停点反向面朝劳姆，再把执行位置移回劳姆，就能沿反方向靠近目标，无需额外 marker。
