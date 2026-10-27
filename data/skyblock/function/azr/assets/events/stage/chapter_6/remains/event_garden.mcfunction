@@ -41,6 +41,7 @@ execute if score @s rng1 matches 116 positioned -79720 32 -14 run function skybl
 execute if score @s rng1 matches 116 positioned -79725 32 -13 run function skyblock:azr/assets/mobs/zombie_villager_armor
 execute if score @s rng1 matches 116 positioned -79720 32 -12 run function skyblock:azr/assets/mobs/skeleton_sword
 execute if score @s rng1 matches 116 positioned -79725 32 -11 run function skyblock:azr/assets/mobs/skeleton_axe
+execute if score @s rng1 matches 116 positioned -79725 32 -11 as @e[tag=AzrielMob] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
 execute if score @s rng1 matches 105 positioned -79711 32 -21 run function skyblock:azr/assets/mobs/undead_fire
 execute if score @s rng1 matches 105 positioned -79711 32 -21 run function skyblock:azr/assets/mobs/spider_poison
