@@ -132,7 +132,8 @@ execute if score @s rng1 matches 667 as @a[tag=azrPlayer] at @s run attribute @s
 execute if score @s rng1 matches 899 run scoreboard players set @s rng1 898
 execute if score @s rng1 matches ..899 positioned -79831.29 39.00 -14.12 if entity @a[tag=azrPlayer,distance=..6] run scoreboard players set @s rng1 900
 
-execute if score @s rng1 matches 900 as @a[tag=azrPlayer] at @s run effect give @s slowness 2 5 true
+execute if score @s rng1 matches 900 positioned -79831.29 39.00 -14.12 as @a[tag=azrPlayer,distance=..9] at @s run effect give @s slowness 2 5 true
+execute if score @s rng1 matches 900 positioned -79831.29 39.00 -14.12 as @a[tag=azrPlayer,distance=..9] at @s run effect give @s resistance 2 4 true
 execute if score @s rng1 matches 900 as @a[tag=azrPlayer] at @s run playsound minecraft:garden2.chapter_title master @s ~ ~ ~ 1 1.3
 execute if score @s rng1 matches 900 as @a[tag=azrPlayer] at @s run tellraw @s [{text:"「WARNING: Point of No Return」",color:"red",bold:1b},{text:"\n这里是最后一处尚能回头的地点。\n继续前进后，你将不再有任何反悔的余地。\n确保你已经探索所有你想要探索的地方，并做好万全的战斗准备。\n在前方静候着你的是故事的最终篇章。",color:"red",bold: false}]
 
