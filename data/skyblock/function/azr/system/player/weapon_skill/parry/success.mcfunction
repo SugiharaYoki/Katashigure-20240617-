@@ -14,7 +14,8 @@ execute anchored eyes run function skyblock:sea/p/parry_particle
 
 scoreboard players set @s AzrSariel_Amulet_generic_damage_resisted 0
 
-execute at @s positioned ^ ^ ^1 on attacker if entity @s[tag=AzrielMob,distance=..3] run tag @s add azrParry_reverseattack
+execute unless items entity @s container.* *[custom_data~{azr_amulet_parry_master:1b}] at @s positioned ^ ^ ^1 on attacker if entity @s[tag=AzrielMob,distance=..3] run tag @s add azrParry_reverseattack
+execute if items entity @s container.* *[custom_data~{azr_amulet_parry_master:1b}] at @s positioned ^ ^ ^1 on attacker if entity @s[tag=AzrielMob,distance=..10] run tag @s add azrParry_reverseattack
 execute store result score @s rng1 run attribute @s attack_damage get
 scoreboard players set 10 constant 10
 scoreboard players set 16 constant 16
@@ -36,6 +37,8 @@ execute if score @s rng1 matches 19..20 run damage @n[tag=azrParry_reverseattack
 execute if score @s rng1 matches 21..25 run damage @n[tag=azrParry_reverseattack,distance=..50] 33 player_attack by @s
 execute if score @s rng1 matches 26..30 run damage @n[tag=azrParry_reverseattack,distance=..50] 36 player_attack by @s
 execute if score @s rng1 matches 31.. run damage @n[tag=azrParry_reverseattack,distance=..50] 39 player_attack by @s
+
+execute if score @s rng1 matches 1.. as @n[tag=azrParry_reverseattack,distance=..50] at @s run particle crit ~ ~1 ~ 0 0 0 0 20
 
 #特殊效果（针对怪物种类）
 execute as @n[tag=azrParry_reverseattack,distance=..6,scores={rng1=88..},tag=AzrielMob_shield] run scoreboard players set @s rng1 -100

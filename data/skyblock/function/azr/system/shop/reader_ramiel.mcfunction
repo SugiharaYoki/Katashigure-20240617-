@@ -121,6 +121,7 @@ execute if entity @s[scores={Azr_skillPoints=40..}] run data modify entity @n[ta
 execute if entity @s[tag=AZS_BoSB01] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value ' <刑> '
 execute if entity @s[tag=AZS_BoSB03] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBc] CustomName set value ' <博> '
 execute if entity @s[tag=AZS_BoSB04] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value ' <炉> '
+execute if entity @s[tag=AZS_BoSB05] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBe] CustomName set value ' <阍> '
 execute if entity @s[tag=AZS_BoSB12] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBl] CustomName set value ' <掘> '
 execute if entity @s[tag=AZS_BoSB13] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value ' <藓> '
 execute if entity @s[tag=AZS_BoSB14] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBn] CustomName set value ' <螺> '
@@ -177,6 +178,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_nymph_heart:1b}
 execute if items entity @s container.* *[custom_data~{azr_amulet_back_dodge:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_land_fracture:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBc] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_fire_drogue:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBd] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_parry_master:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBe] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBl] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBm] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_dash_master:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBn] CustomName set value ' √ '
@@ -250,6 +252,7 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBa]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432331"},hover_event:{"action":"show_text","value":{text:"阴影处刑者 - 退避石板\n按后退键与跑步键，快速后撤步",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBc]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432340"},hover_event:{"action":"show_text","value":{text:"百夫长·博物区 - 地裂卷宗\n冲刺时使用近战武器攻击，施放地裂冲击",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBd]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432329"},hover_event:{"action":"show_text","value":{text:"锅炉驱动者 - 逐焰卷宗\n持续召唤最多3个逐焰浮球，减少节制天平电球最低间隔时长",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerBe]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432347"},hover_event:{"action":"show_text","value":{text:"神池司阍 - 征候石板\n弹反反伤攻击距离增加，弓可进行弹反",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBl]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432343"},hover_event:{"action":"show_text","value":{text:"百夫长·采掘组 - 隙光石板\n使用近战武器时蹲下按左右移动键，施放减防斩击",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBm]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432328"},hover_event:{"action":"show_text","value":{text:"噬藓母虫 - 深藓石板\n造成攻击可增加“索命连击”充能、在重生锚点可获得5分钟孢子的庇护（生命值上限加成）",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBn]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432346"},hover_event:{"action":"show_text","value":{text:"亡灵赫螺 - 涅槃石板\n冲刺不再造成饥饿、水下冲刺可水下充能",color:"white"}}},\
