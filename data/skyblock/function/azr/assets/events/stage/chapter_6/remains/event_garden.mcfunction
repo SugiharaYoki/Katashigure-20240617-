@@ -247,17 +247,31 @@ execute if score @s rng3 matches 54 positioned -79653 33 26 run summon marker ~ 
 execute if score @s rng3 matches 54 positioned -79653 33 28 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
-execute if score @s rng3 matches 30.. positioned -79650 34 14 if entity @a[tag=azrPlayer,distance=..8] run scoreboard players add @s rng4 1
-execute if score @s rng4 matches 2 positioned -79652 34 -8 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng4 matches 2 positioned -79650 34 -8 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng4 matches 4 positioned -79652 34 -10 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng4 matches 4 positioned -79650 34 -10 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng4 matches 6 positioned -79652 34 -12 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng4 matches 6 positioned -79650 34 -12 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng4 matches 8 positioned -79652 34 -14 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng4 matches 8 positioned -79650 34 -14 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng3 matches 30.. unless score @s rng4 matches 1.. positioned -79680 32 -14 if entity @a[tag=azrPlayer,distance=..8] run scoreboard players set @s rng4 1
+execute if score @s rng4 matches 1.. run scoreboard players add @s rng4 1
 
-execute if score @s rng4 matches 2..5 positioned -79659 33 16 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
+# 藤蔓伏击：仅定身距触发坐标最近的游戏玩家，沿用亡灵植学家的 3 秒缓慢 XX。
+execute if score @s rng4 matches 3 positioned -79680 32 -14 as @p[tag=azrPlayer] at @s run effect give @s minecraft:slowness 3 19 true
+execute if score @s rng4 matches 3 positioned -79680 32 -14 as @p[tag=azrPlayer] at @s run playsound minecraft:entity.elder_guardian.curse hostile @a[tag=azrPlayer,distance=..32] ~ ~ ~ 1 1.4
+execute if score @s rng4 matches 3 positioned -79680 32 -14 as @p[tag=azrPlayer] at @s run particle minecraft:falling_spore_blossom ~ ~0.7 ~ 0.8 0.6 0.8 0 30 force
+# 四个斜方向均距玩家 2.5 格，水平对齐，使用现有延迟召唤流程。
+execute if score @s rng4 matches 3 positioned -79680 32 -14 as @p[tag=azrPlayer] at @s anchored feet rotated 45 0 positioned ^ ^ ^2.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_vine","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 3 positioned -79680 32 -14 as @p[tag=azrPlayer] at @s anchored feet rotated 135 0 positioned ^ ^ ^2.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_vine","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 3 positioned -79680 32 -14 as @p[tag=azrPlayer] at @s anchored feet rotated 225 0 positioned ^ ^ ^2.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_vine","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 3 positioned -79680 32 -14 as @p[tag=azrPlayer] at @s anchored feet rotated 315 0 positioned ^ ^ ^2.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_vine","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+execute if score @s rng4 matches 99 run scoreboard players set @s rng4 98
+execute if score @s rng4 matches ..99 positioned -79650 34 14 if entity @a[tag=azrPlayer,distance=..8] run scoreboard players set @s rng4 100
+execute if score @s rng4 matches 102 positioned -79652 34 -8 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 102 positioned -79650 34 -8 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 104 positioned -79652 34 -10 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 104 positioned -79650 34 -10 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 106 positioned -79652 34 -12 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 106 positioned -79650 34 -12 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 108 positioned -79652 34 -14 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 108 positioned -79650 34 -14 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+execute if score @s rng4 matches 102..105 positioned -79659 33 16 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
 
