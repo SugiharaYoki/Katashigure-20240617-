@@ -26,33 +26,33 @@ execute if score @s rng1 matches 1 positioned -79721 6 17 run tp @n[type=stray,t
 # 血条预先建立并隐藏，只有激活后才显示；死亡后隐藏，重置或结算时删除。
 execute if score @s rng1 matches 1 run bossbar add azr:boss_hp_bar_entrance_1 "死守禁湖的禁忌守卫 - 神池司阍"
 execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_1 color red
-execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_1 max 180
-execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_1 value 180
+execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_1 max 120
+execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_1 value 120
 execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_1 visible false
 execute if score @s rng1 matches 1 run bossbar add azr:boss_hp_bar_entrance_2 "死守禁湖的禁忌守卫 - 神池司阍"
 execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_2 color red
-execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_2 max 180
-execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_2 value 180
+execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_2 max 120
+execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_2 value 120
 execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_2 visible false
 execute if score @s rng1 matches 1 run bossbar add azr:boss_hp_bar_entrance_3 "死守禁湖的禁忌守卫 - 神池司阍"
 execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_3 color red
-execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_3 max 180
-execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_3 value 180
+execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_3 max 120
+execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_3 value 120
 execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_3 visible false
 execute if score @s rng1 matches 1 run bossbar add azr:boss_hp_bar_entrance_4 "死守禁湖的禁忌守卫 - 神池司阍"
 execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_4 color red
-execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_4 max 180
-execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_4 value 180
+execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_4 max 120
+execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_4 value 120
 execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_4 visible false
 execute if score @s rng1 matches 1 run bossbar add azr:boss_hp_bar_entrance_5 "死守禁湖的禁忌守卫 - 神池司阍"
 execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_5 color red
-execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_5 max 180
-execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_5 value 180
+execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_5 max 120
+execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_5 value 120
 execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_5 visible false
 execute if score @s rng1 matches 1 run bossbar add azr:boss_hp_bar_entrance_6 "死守禁湖的禁忌守卫 - 神池司阍"
 execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_6 color red
-execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_6 max 180
-execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_6 value 180
+execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_6 max 120
+execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_6 value 120
 execute if score @s rng1 matches 1 run bossbar set azr:boss_hp_bar_entrance_6 visible false
 
 # 未开战时停留在 8；只有 azrPlayer 靠近入口才推进。

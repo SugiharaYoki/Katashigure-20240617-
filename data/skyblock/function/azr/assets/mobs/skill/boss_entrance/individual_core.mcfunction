@@ -104,30 +104,30 @@ execute if score @s rng2 matches 3..4 if score @s rng1 matches 59 run scoreboard
 execute if score @s rng2 matches 5 if score @s rng1 matches 6 at @s run item replace entity @s weapon.mainhand with shield
 execute if score @s rng2 matches 5 if score @s rng1 matches 6 at @s run playsound minecraft:entity.skeleton.converted_to_stray hostile @a ~ ~ ~ 0.8 0.7
 execute if score @s rng2 matches 5 if score @s rng1 matches 6 at @s run effect give @s slowness 2 99 true
-execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 at @s rotated ~ 0 run particle soul_fire_flame ^0 ^2.3 ^1.2 0 0 0 0 1
-execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 at @s rotated ~ 0 run particle soul_fire_flame ^0.2 ^2.1 ^1.2 0 0 0 0 1
-execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 at @s rotated ~ 0 run particle soul_fire_flame ^0.4 ^1.9 ^1.2 0 0 0 0 1
-execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 at @s rotated ~ 0 run particle soul_fire_flame ^0.6 ^1.7 ^1.2 0 0 0 0 1
-execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 at @s rotated ~ 0 run particle soul_fire_flame ^0.8 ^1.5 ^1.2 0 0 0 0 1
-execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 at @s rotated ~ 0 run particle soul_fire_flame ^0.6 ^1.3 ^1.2 0 0 0 0 1
-execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 at @s rotated ~ 0 run particle soul_fire_flame ^0.4 ^1.1 ^1.2 0 0 0 0 1
-execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 at @s rotated ~ 0 run particle soul_fire_flame ^0.2 ^0.9 ^1.2 0 0 0 0 1
-execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 at @s rotated ~ 0 run particle soul_fire_flame ^0 ^0.7 ^1.2 0 0 0 0 1
-execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 at @s rotated ~ 0 run particle soul_fire_flame ^-0.2 ^0.9 ^1.2 0 0 0 0 1
-execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 at @s rotated ~ 0 run particle soul_fire_flame ^-0.4 ^1.1 ^1.2 0 0 0 0 1
-execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 at @s rotated ~ 0 run particle soul_fire_flame ^-0.6 ^1.3 ^1.2 0 0 0 0 1
-execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 at @s rotated ~ 0 run particle soul_fire_flame ^-0.8 ^1.5 ^1.2 0 0 0 0 1
-execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 at @s rotated ~ 0 run particle soul_fire_flame ^-0.6 ^1.7 ^1.2 0 0 0 0 1
-execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 at @s rotated ~ 0 run particle soul_fire_flame ^-0.4 ^1.9 ^1.2 0 0 0 0 1
-execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 at @s rotated ~ 0 run particle soul_fire_flame ^-0.2 ^2.1 ^1.2 0 0 0 0 1
+execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 at @s rotated ~ 0 run particle soul_fire_flame ^0 ^2.3 ^1.2 0 0 0 0 1
+execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 at @s rotated ~ 0 run particle soul_fire_flame ^0.2 ^2.1 ^1.2 0 0 0 0 1
+execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 at @s rotated ~ 0 run particle soul_fire_flame ^0.4 ^1.9 ^1.2 0 0 0 0 1
+execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 at @s rotated ~ 0 run particle soul_fire_flame ^0.6 ^1.7 ^1.2 0 0 0 0 1
+execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 at @s rotated ~ 0 run particle soul_fire_flame ^0.8 ^1.5 ^1.2 0 0 0 0 1
+execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 at @s rotated ~ 0 run particle soul_fire_flame ^0.6 ^1.3 ^1.2 0 0 0 0 1
+execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 at @s rotated ~ 0 run particle soul_fire_flame ^0.4 ^1.1 ^1.2 0 0 0 0 1
+execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 at @s rotated ~ 0 run particle soul_fire_flame ^0.2 ^0.9 ^1.2 0 0 0 0 1
+execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 at @s rotated ~ 0 run particle soul_fire_flame ^0 ^0.7 ^1.2 0 0 0 0 1
+execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 at @s rotated ~ 0 run particle soul_fire_flame ^-0.2 ^0.9 ^1.2 0 0 0 0 1
+execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 at @s rotated ~ 0 run particle soul_fire_flame ^-0.4 ^1.1 ^1.2 0 0 0 0 1
+execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 at @s rotated ~ 0 run particle soul_fire_flame ^-0.6 ^1.3 ^1.2 0 0 0 0 1
+execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 at @s rotated ~ 0 run particle soul_fire_flame ^-0.8 ^1.5 ^1.2 0 0 0 0 1
+execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 at @s rotated ~ 0 run particle soul_fire_flame ^-0.6 ^1.7 ^1.2 0 0 0 0 1
+execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 at @s rotated ~ 0 run particle soul_fire_flame ^-0.4 ^1.9 ^1.2 0 0 0 0 1
+execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 at @s rotated ~ 0 run particle soul_fire_flame ^-0.2 ^2.1 ^1.2 0 0 0 0 1
 
 # 对比相邻 tick 的受伤时间和血量；预备阶段已经发生的伤害不会误判成弹反。
-execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 store result score @s rng5 run data get entity @s HurtTime
-execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 store result score @s rng7 run data get entity @s Health 1000
-execute if score @s rng2 matches 5 if score @s rng1 matches 16..35 if score @s rng5 > @s rng4 run tag @s add AzrEntrance_parry_success
-execute if score @s rng2 matches 5 if score @s rng1 matches 16..35 if score @s rng7 < @s rng6 run tag @s add AzrEntrance_parry_success
-execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 run scoreboard players operation @s rng4 = @s rng5
-execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 run scoreboard players operation @s rng6 = @s rng7
+execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 store result score @s rng5 run data get entity @s HurtTime
+execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 store result score @s rng7 run data get entity @s Health 1000
+execute if score @s rng2 matches 5 if score @s rng1 matches 16..39 if score @s rng5 > @s rng4 run tag @s add AzrEntrance_parry_success
+execute if score @s rng2 matches 5 if score @s rng1 matches 16..39 if score @s rng7 < @s rng6 run tag @s add AzrEntrance_parry_success
+execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 run scoreboard players operation @s rng4 = @s rng5
+execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 run scoreboard players operation @s rng6 = @s rng7
 execute if entity @s[tag=AzrEntrance_parry_success] at @s rotated ~ 0 run particle sweep_attack ^-0.8 ^1.2 ^1 0 0 0 0 1
 execute if entity @s[tag=AzrEntrance_parry_success] at @s rotated ~ 0 run particle sweep_attack ^0 ^1.5 ^1.2 0 0 0 0 1
 execute if entity @s[tag=AzrEntrance_parry_success] at @s rotated ~ 0 run particle sweep_attack ^0.8 ^1.2 ^1 0 0 0 0 1
@@ -141,6 +141,6 @@ execute if entity @s[tag=AzrEntrance_parry_success] run scoreboard players set @
 execute if entity @s[tag=AzrEntrance_parry_success] run tag @s remove AzrEntrance_parry_success
 
 # 超时失败：缓慢 III 持续 2 秒，重新开始技能计时。
-execute if score @s rng2 matches 5 if score @s rng1 matches 36 run item replace entity @s weapon.mainhand with diamond_axe
-execute if score @s rng2 matches 5 if score @s rng1 matches 36 run effect give @s slowness 2 2 true
-execute if score @s rng2 matches 5 if score @s rng1 matches 36 run scoreboard players set @s rng1 0
+execute if score @s rng2 matches 5 if score @s rng1 matches 40 run item replace entity @s weapon.mainhand with diamond_axe
+execute if score @s rng2 matches 5 if score @s rng1 matches 40 run effect give @s slowness 2 2 true
+execute if score @s rng2 matches 5 if score @s rng1 matches 48 run scoreboard players set @s rng1 0
