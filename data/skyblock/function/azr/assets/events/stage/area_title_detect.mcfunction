@@ -117,6 +117,8 @@ execute unless score @s AzrPlayer_CurrentArea matches 7 if entity @s[x=-79846,y=
                                                 {area_id:7,title:"蚀 岩 径",color_code:"#e4964d"}
 execute unless score @s AzrPlayer_CurrentArea matches 7 positioned -79826 8 32 if entity @s[distance=..6] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:7,title:"蚀 岩 径",color_code:"#e4964d"}
+execute unless score @s AzrPlayer_CurrentArea matches 7 positioned -79797 12 12 if entity @s[distance=..6] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:7,title:"蚀 岩 径",color_code:"#e4964d"}
 
 
 
@@ -152,6 +154,8 @@ execute unless score @s AzrPlayer_CurrentArea matches 12 positioned -79764 -58 7
 execute unless score @s AzrPlayer_CurrentArea matches 12 positioned -79810 26 96 if entity @s[distance=..6] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:12,title:"蓄 水 池",color_code:"#333dff"}
 execute unless score @s AzrPlayer_CurrentArea matches 12 positioned -79839 10 39 if entity @s[distance=..6] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:12,title:"蓄 水 池",color_code:"#333dff"}
+execute unless score @s AzrPlayer_CurrentArea matches 12 positioned -79753 6 12 if entity @s[distance=..7] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:12,title:"蓄 水 池",color_code:"#333dff"}
 
 #
