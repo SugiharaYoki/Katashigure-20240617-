@@ -3,6 +3,7 @@ execute if score @s rng8 matches 3 store result score @s rng3 run random value 1
 
 execute if score @s rng8 matches 3 as @s at @s run particle portal ~ ~1 ~ 0.3 0.8 0.3 0 28
 execute if score @s rng8 matches 3 as @s at @s run playsound entity.player.teleport hostile @a ~ ~ ~ 1 1.2
+execute if score @s[scores={Health=..230}] rng8 matches 3 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk_temper","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng8 matches 3 if score @s rng3 matches 01 positioned -79177 50 -13 run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer,distance=..60] eyes
 execute if score @s rng8 matches 3 if score @s rng3 matches 02 positioned -79177 50 -13 rotated ~000 0 positioned ^ ^ ^6 run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer,distance=..60] eyes
 execute if score @s rng8 matches 3 if score @s rng3 matches 03 positioned -79177 50 -13 rotated ~030 0 positioned ^ ^ ^6 run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer,distance=..60] eyes
