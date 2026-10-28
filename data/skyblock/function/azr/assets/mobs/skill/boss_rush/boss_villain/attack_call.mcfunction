@@ -47,8 +47,9 @@ execute if score @s rng6 matches 6 as @e[tag=AzrielMob_boss_villain_summonable_s
 execute if score @s rng6 matches 7 run playsound minecraft:item.firecharge.use hostile @a ~ ~ ~ 3 0.7
 execute if score @s rng6 matches 7 as @e[tag=AzrielMob_boss_villain_summonable_spot_marker,distance=..50,type=marker,sort=random,limit=3] at @s run function skyblock:azr/assets/mobs/floating_fire
 
-execute if score @s[scores={Health=..200}] rng6 matches 4..5 as @e[tag=AzrielMob_boss_villain_summonable_spot_marker,distance=..50,type=marker,sort=random,limit=1] at @s run function skyblock:azr/assets/mobs/area_pool/chapter3_prison
-execute if score @s[scores={Health=..200}] rng6 matches 6..7 as @e[tag=AzrielMob_boss_villain_summonable_spot_marker,distance=..50,type=marker,sort=random,limit=2] at @s run function skyblock:azr/assets/mobs/area_pool/chapter3_prison
+execute if score @s[scores={Health=..200}] rng6 matches 4..7 store result score @s rng19 run execute if entity @e[tag=AzrielMob,distance=..30]
+execute if score @s[scores={Health=..200,rng19=..10}] rng6 matches 4..5 as @e[tag=AzrielMob_boss_villain_summonable_spot_marker,distance=..50,type=marker,sort=random,limit=1] at @s run function skyblock:azr/assets/mobs/area_pool/chapter3_prison
+execute if score @s[scores={Health=..200,rng19=..10}] rng6 matches 6..7 as @e[tag=AzrielMob_boss_villain_summonable_spot_marker,distance=..50,type=marker,sort=random,limit=2] at @s run function skyblock:azr/assets/mobs/area_pool/chapter3_prison
 
 
 kill @e[tag=AzrielMob_boss_villain_summonable_spot_marker,distance=..50,type=marker]
