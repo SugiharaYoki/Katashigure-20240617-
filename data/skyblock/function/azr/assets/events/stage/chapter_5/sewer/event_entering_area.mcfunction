@@ -26,12 +26,6 @@ execute if score @s rng1 matches 23 as @a[tag=azrShowDialog] at @s run playsound
 execute if score @s rng1 matches 40 run tellraw @a[tag=azrShowDialog,tag=azr_killed_nymph] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（我怎么依然能听到这个声音？难道宁芙还活着？）",color:"white"}]
 execute if score @s rng1 matches 40 run tellraw @a[tag=azrShowDialog,tag=!azr_killed_nymph] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（我怎么依然能听到这个声音？不应该是那个宁芙传给我的……）",color:"white"}]
 
-#音效
-scoreboard players add @s rng12 1
-execute if score @s rng12 matches 30 positioned -79724 -6 73 run playsound minecraft:ambient.basalt_deltas.additions block @a ~ ~ ~ 6 0.8
-execute if score @s rng12 matches 30 positioned -79724 -6 73 run playsound minecraft:ambient.basalt_deltas.additions block @a ~ ~ ~ 6 0.8
-execute if score @s rng12 matches 30 positioned -79724 -6 73 run playsound minecraft:ambient.basalt_deltas.additions block @a ~ ~ ~ 6 0.8
-execute if score @s rng12 matches 100 store result score @s rng12 run random value -300..-200
 
 
 
