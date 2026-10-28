@@ -20,12 +20,13 @@ execute if entity @s[tag=AzrSariel_BioMagnet_condition_pass] at @s as @n[tag=Azr
 execute if entity @s[tag=AzrSariel_BioMagnet_condition_pass] at @s as @n[tag=AzrSariel_BioMagnet_affected] at @s facing entity @n[tag=AzrSariel_BioMagnet_condition_pass] feet run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_move_marker_biomagnet] Pos
 execute if entity @s[tag=AzrSariel_BioMagnet_condition_pass] at @s as @n[tag=AzrSariel_BioMagnet_affected] at @s facing entity @n[tag=AzrSariel_BioMagnet_condition_pass] feet run kill @e[type=marker,tag=AzrielMob_move_marker_biomagnet]
 
-execute store result score @s[tag=AzrSariel_BioMagnet_target_strength_1] rng1 if entity @e[distance=..1.6]
-execute store result score @s[tag=AzrSariel_BioMagnet_target_strength_2] rng1 if entity @e[distance=..2.1]
-execute store result score @s[tag=AzrSariel_BioMagnet_target_strength_3] rng1 if entity @e[distance=..2.4]
-execute if score @s[tag=AzrSariel_BioMagnet_target_strength_1] rng1 matches 5.. as @e[distance=..1.6,tag=AzrielMob] run damage @s 4 cramming
-execute if score @s[tag=AzrSariel_BioMagnet_target_strength_2] rng1 matches 5.. as @e[distance=..2.1,tag=AzrielMob] run damage @s 4 cramming
-execute if score @s[tag=AzrSariel_BioMagnet_target_strength_3] rng1 matches 5.. as @e[distance=..2.4,tag=AzrielMob] run damage @s 4 cramming
+# 临时统计不使用受影响怪物的 rng1，避免覆盖怪物自身的技能计时。
+execute if entity @s[tag=AzrSariel_BioMagnet_target_strength_1] store result score #AzrBioMagnet_nearby Azr_system if entity @e[distance=..1.6]
+execute if entity @s[tag=AzrSariel_BioMagnet_target_strength_2] store result score #AzrBioMagnet_nearby Azr_system if entity @e[distance=..2.1]
+execute if entity @s[tag=AzrSariel_BioMagnet_target_strength_3] store result score #AzrBioMagnet_nearby Azr_system if entity @e[distance=..2.4]
+execute if entity @s[tag=AzrSariel_BioMagnet_target_strength_1] if score #AzrBioMagnet_nearby Azr_system matches 5.. as @e[distance=..1.6,tag=AzrielMob] run damage @s 4 cramming
+execute if entity @s[tag=AzrSariel_BioMagnet_target_strength_2] if score #AzrBioMagnet_nearby Azr_system matches 5.. as @e[distance=..2.1,tag=AzrielMob] run damage @s 4 cramming
+execute if entity @s[tag=AzrSariel_BioMagnet_target_strength_3] if score #AzrBioMagnet_nearby Azr_system matches 5.. as @e[distance=..2.4,tag=AzrielMob] run damage @s 4 cramming
 
 execute if entity @s[tag=AzrSariel_BioMagnet_target_strength_1,scores={AzrSariel_Skill_BioMagnet=30..}] run tag @s remove AzrSariel_BioMagnet_target
 execute if entity @s[tag=AzrSariel_BioMagnet_target_strength_1,scores={AzrSariel_Skill_BioMagnet=30..}] run tag @s remove AzrSariel_BioMagnet_target_strength_1

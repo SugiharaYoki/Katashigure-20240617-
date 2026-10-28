@@ -1,8 +1,9 @@
-# 由遭遇 marker 调用；rng1 为事件时间，rng2 为激活间隔，rng3 为存活激活数，rng9 为音乐时间。
+# 由遭遇 marker 调用；rng1 为事件时间，rng2 为激活间隔，rng3 为存活激活数，rng4 为累计成功激活数，rng9 为音乐时间。
 scoreboard players add @s rng1 1
 
 # 首次生成六个司阍；编号与血条固定绑定，激活顺序随机。
 execute if score @s rng1 matches 1 run scoreboard players set @s rng2 0
+execute if score @s rng1 matches 1 run scoreboard players set @s rng4 0
 execute if score @s rng1 matches 1 run scoreboard players set @s rng9 0
 execute if score @s rng1 matches 1 positioned -79737 6 6 run function skyblock:azr/assets/mobs/skill/boss_entrance/summon
 execute if score @s rng1 matches 1 positioned -79737 6 6 run tag @n[type=stray,tag=AzrielBossEntrance,distance=..0.1,nbt=!{Health:0.0f}] add AzrielBossEntrance_1
@@ -77,7 +78,9 @@ execute if score @s rng1 matches 16 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 1..999 positioned -79729 5 11 unless entity @e[type=stray,tag=AzrielBossEntrance,distance=..80,nbt=!{Health:0.0f}] run scoreboard players set @s rng1 2000
 
 execute if score @s rng1 matches 20..999 run scoreboard players add @s rng2 1
-execute if score @s rng1 matches 20..999 if score @s rng2 matches 100.. run scoreboard players set @s rng2 0
+# 每次调用相隔 5 tick；累计激活第三只后，后续间隔由 25 秒缩短为 19 秒。
+execute if score @s rng1 matches 20..999 unless score @s rng4 matches 3.. if score @s rng2 matches 100.. run scoreboard players set @s rng2 0
+execute if score @s rng1 matches 20..999 if score @s rng4 matches 3.. if score @s rng2 matches 76.. run scoreboard players set @s rng2 0
 
 execute if score @s rng1 matches 20..1999 run scoreboard players add @s rng9 1
 execute if score @s rng1 matches 20..1999 if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:renegade music @s ~ ~ ~ 0.65
@@ -107,6 +110,8 @@ execute if score @s rng1 matches 20..999 if score @s rng2 matches 3 positioned -
 execute if score @s rng1 matches 20..999 if score @s rng2 matches 3 positioned -79729 5 11 if entity @e[type=stray,tag=AzrielBossEntrance_5,tag=AzrielBossEntrance_Activating,distance=..80] run bossbar set azr:boss_hp_bar_entrance_5 visible true
 execute if score @s rng1 matches 20..999 if score @s rng2 matches 3 positioned -79729 5 11 if entity @e[type=stray,tag=AzrielBossEntrance_6,tag=AzrielBossEntrance_Activating,distance=..80] run bossbar set azr:boss_hp_bar_entrance_6 players @a[tag=azrShowDialog]
 execute if score @s rng1 matches 20..999 if score @s rng2 matches 3 positioned -79729 5 11 if entity @e[type=stray,tag=AzrielBossEntrance_6,tag=AzrielBossEntrance_Activating,distance=..80] run bossbar set azr:boss_hp_bar_entrance_6 visible true
+# 只记录成功激活；司阍死亡后也不减少，满三只导致的重试不计入。
+execute if score @s rng1 matches 20..999 if score @s rng2 matches 3 positioned -79729 5 11 if entity @e[type=stray,tag=AzrielBossEntrance_Activating,distance=..80] run scoreboard players add @s rng4 1
 execute if score @s rng1 matches 20..999 if score @s rng2 matches 3 positioned -79729 5 11 run tag @e[type=stray,tag=AzrielBossEntrance_Activating,distance=..80] remove AzrielBossEntrance_Activating
 
 # 固定编号独立同步血量，未激活的血条保持隐藏。

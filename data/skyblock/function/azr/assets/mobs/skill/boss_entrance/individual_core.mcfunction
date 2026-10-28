@@ -5,6 +5,10 @@ execute if entity @s[nbt={Health:0.0f}] run scoreboard players set @s rng1 -100
 scoreboard players add @s rng1 1
 execute if score @s rng1 matches 5 store result score @s rng2 run random value 1..5
 
+# 技能被打断或切换时，及时收回遗留盾牌。
+execute if items entity @s weapon.mainhand shield unless score @s rng2 matches 5 run item replace entity @s weapon.mainhand with diamond_axe
+execute if items entity @s weapon.mainhand shield unless score @s rng1 matches 16..39 run item replace entity @s weapon.mainhand with diamond_axe
+
 # 1、2：连续投斧。6、31、56 各一次，间隔 25 tick；三次投掷结束后解除缓慢。
 execute if score @s rng2 matches 1..2 if score @s rng1 matches 6 run effect give @s slowness 4 48 true
 execute if score @s rng2 matches 1..2 if score @s rng1 matches 6 at @s facing entity @p[tag=azrPlayer] feet rotated ~ 0 run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","autoaim","AzrielBossEntrance_axe_throw"]}
@@ -100,8 +104,8 @@ execute if score @s rng2 matches 3..4 if score @s rng1 matches 59 run attribute 
 execute if score @s rng2 matches 3..4 if score @s rng1 matches 59 run effect clear @s slowness
 execute if score @s rng2 matches 3..4 if score @s rng1 matches 59 run scoreboard players set @s rng1 -15
 
-# 5：6～35 显示弹反菱形；16～35 检测新受伤，36 时结束。
-execute if score @s rng2 matches 5 if score @s rng1 matches 6 at @s run item replace entity @s weapon.mainhand with shield
+# 5：6～15 为预备；16～39 举盾并检测新受伤，40 收盾，48 结束。
+execute if score @s rng2 matches 5 if score @s rng1 matches 16 at @s run item replace entity @s weapon.mainhand with shield
 execute if score @s rng2 matches 5 if score @s rng1 matches 6 at @s run playsound minecraft:entity.skeleton.converted_to_stray hostile @a ~ ~ ~ 0.8 0.7
 execute if score @s rng2 matches 5 if score @s rng1 matches 6 at @s run effect give @s slowness 2 99 true
 execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 at @s rotated ~ 0 run particle soul_fire_flame ^0 ^2.3 ^1.2 0 0 0 0 1
