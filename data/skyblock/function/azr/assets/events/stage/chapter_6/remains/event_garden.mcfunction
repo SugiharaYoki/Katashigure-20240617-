@@ -276,7 +276,7 @@ execute if score @s rng4 matches 108 positioned -79649 34 -14 run summon marker 
 execute if score @s rng4 matches 102..105 positioned -79659 33 16 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 execute if score @s rng4 matches 112 positioned -79652 34 -17 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_ravager","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng4 matches 112 positioned -79649 34 -17 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_ravager","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 115 positioned -79649 34 -19 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_ravager","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
 
