@@ -154,7 +154,10 @@ execute if entity @a[tag=azrPlayer,scores={azr_progress_door2=3..}] run setblock
 execute if entity @a[tag=azrPlayer,scores={azr_progress_door2=4..}] run setblock -79991 -51 32 gold_block
 execute if entity @a[tag=azrPlayer,scores={azr_progress_door2=5..}] run setblock -79984 -51 20 gold_block
 
-
+execute if entity @a[tag=azrPlayer,scores={azr_progress_door3=2..}] run setblock -79991 -51 34 gold_block
+execute if entity @a[tag=azrPlayer,scores={azr_progress_door3=3..}] run setblock -79991 -51 40 gold_block
+execute if entity @a[tag=azrPlayer,scores={azr_progress_door3=4..}] run setblock -79991 -51 38 gold_block
+execute if entity @a[tag=azrPlayer,scores={azr_progress_door3=5..}] run setblock -79984 -51 24 gold_block
 
 
 
