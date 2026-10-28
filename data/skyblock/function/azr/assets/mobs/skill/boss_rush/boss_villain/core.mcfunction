@@ -53,6 +53,8 @@ execute if score @s AzrEntityTimer matches 2000 run scoreboard players set @s rn
 execute if score @s AzrEntityTimer matches 2000 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“别再打了，我痛啊！我自己走得了吧！”",color:"white",bold: false}]
 execute if score @s AzrEntityTimer matches 2000 run kill @e[tag=AzrielMob_husk_temper,type=husk,distance=..55]
 execute if score @s AzrEntityTimer matches 2000 run tag @s remove AzrielMob
+execute if score @s AzrEntityTimer matches 2010 as @s at @s run particle portal ~ ~1 ~ 0.3 0.8 0.3 0 28
+execute if score @s AzrEntityTimer matches 2010 as @s at @s run playsound entity.player.teleport hostile @a ~ ~ ~ 1 1.2
 execute if score @s AzrEntityTimer matches 2010 run tp @s ~ ~-70 ~
 execute if score @s AzrEntityTimer matches 2013 run kill @s
 

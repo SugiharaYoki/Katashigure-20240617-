@@ -88,13 +88,13 @@ execute if score @s AzrEntityTimer matches 991 run kill @e[tag=azr_spin_core_par
 execute if score @s AzrEntityTimer matches 991 run kill @e[tag=azr_spin_core_part3,distance=..100,type=marker]
 execute if score @s AzrEntityTimer matches 991 as @e[tag=azr_spin_plate,distance=..100,type=block_display] at @s run particle campfire_cosy_smoke ~ ~0.5 ~ 0.5 0.5 0.5 0 4
 execute if score @s AzrEntityTimer matches 991 run kill @e[tag=azr_spin_plate,distance=..100,type=block_display]
-execute if score @s AzrEntityTimer matches 991 run stopsound @a[distance=..150,tag=azrShowDialog] music minecraft:fuse
+execute if score @s AzrEntityTimer matches 991 run stopsound @a[distance=..150,tag=azrShowDialog] music minecraft:surveilleretpunir
 execute if score @s AzrEntityTimer matches 991 run effect give @a[distance=..150,tag=azrPlayer] minecraft:resistance 10 4 true
 execute if score @s AzrEntityTimer matches 991 run effect give @a[distance=..150,tag=azrPlayer] minecraft:regeneration 10 9 true
 
 
-execute if score @s AzrEntityTimer matches 1001 as @a[tag=azrPlayer,distance=..50] at @s unless score @s azr_speedrun_door2 matches -9999.. run scoreboard players set @s azr_speedrun_door2 99999
-execute if score @s AzrEntityTimer matches 1122 as @a[tag=azrPlayer,distance=..50] at @s if score @s azr_speedrun_door2 >= @n[x=-79177,y=50,z=-13,tag=AzrielMarker_encounter] rng10 run scoreboard players operation @s azr_speedrun_door2 = @n[x=-79177,y=50,z=-13,tag=AzrielMarker_encounter] rng10
+execute if score @s AzrEntityTimer matches 1001 as @a[tag=azrPlayer,distance=..50] at @s unless score @s azr_speedrun_door3 matches -9999.. run scoreboard players set @s azr_speedrun_door3 99999
+execute if score @s AzrEntityTimer matches 1122 as @a[tag=azrPlayer,distance=..50] at @s if score @s azr_speedrun_door3 >= @n[x=-79177,y=50,z=-13,tag=AzrielMarker_encounter] rng10 run scoreboard players operation @s azr_speedrun_door3 = @n[x=-79177,y=50,z=-13,tag=AzrielMarker_encounter] rng10
 execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 1..3000 run scoreboard players add @s rng11 160
 execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 3001..3500 run scoreboard players add @s rng11 150
 execute if score @s AzrEntityTimer matches 1122 if score @s rng10 matches 3501..4000 run scoreboard players add @s rng11 140
@@ -128,7 +128,7 @@ execute if score @s AzrEntityTimer matches 1123 positioned -79967 -51 17 as @a[t
 
 execute if score @s AzrEntityTimer matches 1123 run scoreboard players set @s AzrEntityTimer 1900
 execute if score @s AzrEntityTimer matches 1900 as @a[tag=azrPlayer,tag=azrPlayer_door_participating] at @s run scoreboard players operation @s Azr_currency_weight += @n[x=-79177,y=50,z=-13,tag=AzrielMarker_encounter] rng11
-execute if score @s AzrEntityTimer matches 1900 as @a[tag=azrPlayer,tag=azrPlayer_door_participating] at @s run tellraw @s [{text:"神庭幻台 第贰场梦",bold:true,color:"light_purple"},{text:" 梦醒",bold:true,color:"white"},{text:"\n - 分数：",bold:false,color:"white"},{"score":{"name":"@n[x=-79177,y=50,z=-13,tag=AzrielMarker_encounter]","objective":"rng10"},color:"white"},{text:"\n - 历史最高纪录：",bold:false,color:"white"},{"score":{"name":"@s","objective":"azr_speedrun_door2"},bold:false,color:"white"},{text:"\n - 获得 ",bold:false,color:"white"},{"score":{"name":"@n[x=-79177,y=50,z=-13,tag=AzrielMarker_encounter]","objective":"rng11"},bold:false,color:"white"},{text:" 恶魔砝码",bold:false,color:"white"}]
+execute if score @s AzrEntityTimer matches 1900 as @a[tag=azrPlayer,tag=azrPlayer_door_participating] at @s run tellraw @s [{text:"神庭幻台 第贰场梦",bold:true,color:"light_purple"},{text:" 梦醒",bold:true,color:"white"},{text:"\n - 分数：",bold:false,color:"white"},{"score":{"name":"@n[x=-79177,y=50,z=-13,tag=AzrielMarker_encounter]","objective":"rng10"},color:"white"},{text:"\n - 历史最高纪录：",bold:false,color:"white"},{"score":{"name":"@s","objective":"azr_speedrun_door3"},bold:false,color:"white"},{text:"\n - 获得 ",bold:false,color:"white"},{"score":{"name":"@n[x=-79177,y=50,z=-13,tag=AzrielMarker_encounter]","objective":"rng11"},bold:false,color:"white"},{text:" 恶魔砝码",bold:false,color:"white"}]
 
 execute if score @s AzrEntityTimer matches 1900 run fill -79159 77 -31 -79195 77 5 minecraft:air replace tinted_glass
 execute if score @s AzrEntityTimer matches 1900 run kill @e[type=block_display,distance=..30]
