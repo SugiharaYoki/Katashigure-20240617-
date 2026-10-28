@@ -15,7 +15,7 @@ scoreboard players add @s rng7 1
 
 execute if score @s rng7 matches 2 store result score @s rng6 run random value 1..7
 execute if score @s rng7 matches 2 store result score @s rng4 run random value 1..7
-execute if score @s[scores={Health=81..}] rng7 matches 3 run function skyblock:azr/assets/mobs/skill/boss_villain/attack_call
+execute if score @s[scores={Health=81..}] rng7 matches 3 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_villain/attack_call
 execute if score @s[scores={Health=..140,rng4=1..2}] rng7 matches 19 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_villain/attack_call
 execute if score @s[scores={Health=..180,rng4=1..4}] rng7 matches 15 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_villain/attack_call
 execute if score @s[scores={Health=..230,rng4=1..5}] rng7 matches 11 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_villain/attack_call
