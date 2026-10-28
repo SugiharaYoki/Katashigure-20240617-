@@ -1110,8 +1110,9 @@ execute if block -79739 32 -15 air run function skyblock:azr/lifecycle/endgame/r
 
 #神池司阍
 function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_entrance
-
-
+#蓄水池连接道
+fill -79713 -6 34 -79709 -3 34 iron_block
+setblock -79713 -5 32 lever[face=wall,facing=east]
 
 
 
