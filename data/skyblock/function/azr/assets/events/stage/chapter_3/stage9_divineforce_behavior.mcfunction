@@ -31,7 +31,7 @@ execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget] on target if ent
 
 
 
-execute if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget,tag=!AzrielNPC_Divineforce_hasattacktarget_notify,tag=!AzrielNPC_Divineforce_mute] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] store result score @s rng9 run random value 1..70
+execute if score stage Azr_system matches ..99 if entity @s[tag=AzrielNPC_Divineforce_hasattacktarget,tag=!AzrielNPC_Divineforce_hasattacktarget_notify,tag=!AzrielNPC_Divineforce_mute] if entity @n[tag=!AzrielNPC_Divineforce,tag=AzrielMob,distance=0..7] store result score @s rng9 run random value 1..80
 execute positioned -79894 32 -174 if entity @n[tag=AzrielMarker_encounter,distance=..2,type=marker] run scoreboard players set @s rng9 -1
 
 
