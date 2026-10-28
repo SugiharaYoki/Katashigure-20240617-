@@ -102,6 +102,7 @@ execute if score @s rng2 matches 3..4 if score @s rng1 matches 59 run scoreboard
 
 # 5：6～35 显示弹反菱形；16～35 检测新受伤，36 时结束。
 execute if score @s rng2 matches 5 if score @s rng1 matches 6 at @s run playsound minecraft:entity.skeleton.converted_to_stray hostile @a ~ ~ ~ 0.8 0.7
+execute if score @s rng2 matches 5 if score @s rng1 matches 6 at @s run effect give @s slowness 2 99 true
 execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 at @s rotated ~ 0 run particle soul_fire_flame ^0 ^2.3 ^1.2 0 0 0 0 1
 execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 at @s rotated ~ 0 run particle soul_fire_flame ^0.2 ^2.1 ^1.2 0 0 0 0 1
 execute if score @s rng2 matches 5 if score @s rng1 matches 6..35 at @s rotated ~ 0 run particle soul_fire_flame ^0.4 ^1.9 ^1.2 0 0 0 0 1
@@ -132,6 +133,7 @@ execute if entity @s[tag=AzrEntrance_parry_success] at @s rotated ~ 0 run partic
 execute if entity @s[tag=AzrEntrance_parry_success] at @s rotated ~ 0 positioned ~ ~1.5 ~ run function skyblock:sea/p/parry_particle
 execute if entity @s[tag=AzrEntrance_parry_success] at @s rotated ~ 0 positioned ^ ^ ^1.5 run tag @a[tag=azrPlayer,distance=..1.5] add AzrEntrance_melee_candidate
 execute if entity @s[tag=AzrEntrance_parry_success] at @s run damage @p[tag=azrPlayer,tag=AzrEntrance_melee_candidate] 24 mob_attack by @s
+execute if entity @s[tag=AzrEntrance_parry_success] at @s run effect clear @s slowness
 execute if entity @s[tag=AzrEntrance_parry_success] run tag @a[tag=AzrEntrance_melee_candidate] remove AzrEntrance_melee_candidate
 execute if entity @s[tag=AzrEntrance_parry_success] run scoreboard players set @s rng1 0
 execute if entity @s[tag=AzrEntrance_parry_success] run tag @s remove AzrEntrance_parry_success
