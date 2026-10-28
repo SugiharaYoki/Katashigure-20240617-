@@ -1,5 +1,5 @@
 
-scoreboard players set @s rng1 0
+scoreboard players add @s rng1 1
 
 execute if score @s rng1 matches 2 run fill -79713 -6 34 -79709 -6 34 air
 execute if score @s rng1 matches 3 run fill -79713 -5 34 -79709 -5 34 air
