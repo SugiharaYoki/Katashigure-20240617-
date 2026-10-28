@@ -11,7 +11,7 @@
             "color": "white"
         },
         "icon": {
-            "id": "minecraft:skeleton_spawn_egg"
+            "id": "minecraft:stray_spawn_egg"
         },
         "frame": "task",
         "show_toast": false,
