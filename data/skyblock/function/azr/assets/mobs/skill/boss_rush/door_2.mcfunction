@@ -143,12 +143,11 @@ execute if score @s AzrEntityTimer matches 1900 run fill -79159 77 -31 -79195 77
 execute if score @s AzrEntityTimer matches 1900 run kill @e[type=block_display,distance=..30]
 execute if score @s AzrEntityTimer matches 1900 run kill @e[tag=AzrielMob_BossRush_Target,distance=..120]
 execute if score @s AzrEntityTimer matches 1900 run kill @e[tag=AzrielMob,distance=..120]
-execute if score @s AzrEntityTimer matches 1900 run kill @e[type=marker,distance=..80]
 execute if score @s AzrEntityTimer matches 1900 run kill @e[type=item,distance=..80]
 execute if score @s AzrEntityTimer matches 1900 run stopsound @a[tag=azrShowDialog]
-execute if score @s AzrEntityTimer matches 1900 run kill @s
 execute if score @s AzrEntityTimer matches 1900 run function skyblock:azr/assets/events/stage/chapter_1/botanical/display_area_summon
-execute if score @s AzrEntityTimer matches 1900 run kill @e[type=marker,distance=..50]
 execute if score @s AzrEntityTimer matches 1900 run forceload remove -79195 2 -79159 -34
+execute if score @s AzrEntityTimer matches 1900 run kill @e[type=marker,distance=..80]
+execute if score @s AzrEntityTimer matches 1900 run kill @s
 
 
