@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "死守禁湖的禁忌守卫 - 神池司阍",
+            "color": "red",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "在漫长的岁月中，这些生物的魔力已经逸散殆尽。\n甚至连最基础的自愈能力都已完全失却，但我还挺庆幸是如此。\n否则，我绝无可能从这处没有打算给任何人过去的入口踏入蓄水池。\n\n说来，镇守被遗忘之物的人们，最终也会成为被遗忘的存在。\n他们的身后便是禁忌，而他们也因此成为禁忌。\n这是邪恶的沾染，还是单纯的概念扩散？\n某种生物是否为“禁忌”，是神庭有资格决定的事情吗？",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:skeleton_spawn_egg"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage24"
+}

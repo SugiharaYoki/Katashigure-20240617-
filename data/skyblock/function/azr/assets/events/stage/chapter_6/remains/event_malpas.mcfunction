@@ -209,6 +209,7 @@ execute if score @s rng1 matches 1001 run tellraw @a[tag=azrShowDialog] [{text:"
 execute if score @s rng1 matches 1016 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“了解。”",color:"white"}]
 
 execute if score @s rng1 matches 1018 run scoreboard players set stage Azr_system 102
+execute if score @s rng1 matches 1018 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage25
 execute if score @s rng1 matches 1018 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..52}] Azr_skillPoints 53
 
 

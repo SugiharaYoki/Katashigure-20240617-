@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "中庭花园：另一种开始游戏的方法",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "我终于回到了最初的战场。\n它也将会是最后的。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:quartz_block"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage23_boss5"
+}

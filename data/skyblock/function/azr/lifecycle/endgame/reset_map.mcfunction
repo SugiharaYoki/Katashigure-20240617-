@@ -1108,6 +1108,9 @@ fill -79980 -42 -2 -79984 -42 -2 minecraft:pale_oak_trapdoor[facing=north,half=b
 #汇合处
 execute if block -79739 32 -15 air run function skyblock:azr/lifecycle/endgame/reset_map_ch6_midgarden
 
+#神池司阍
+function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_entrance
+
 
 
 

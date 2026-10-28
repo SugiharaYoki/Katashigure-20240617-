@@ -18,6 +18,7 @@ execute if score @s rng1 matches 9 run scoreboard players set @s rng1 8
 execute if score @s rng1 matches 3..9 positioned -79902 37 -14 if entity @a[distance=..500,tag=azrPlayer] if score @p[tag=azrPlayer] AzrPlayer_CurrentArea matches 2 run scoreboard players set @s rng1 10
 
 
+execute if score @s rng1 matches 18 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage24
 execute if score @s rng1 matches 18 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（我终于回到了神庭……但这里的气氛很诡异）",color:"white"}]
 execute if score @s rng1 matches 32 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（没有像我想的那样遍地敌人，但神庭显然的确失守了）",color:"white"}]
 execute if score @s rng1 matches 47 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（我现在的首要目标……是尽可能靠近生命树，敌人应该都在那里）",color:"white"}]
