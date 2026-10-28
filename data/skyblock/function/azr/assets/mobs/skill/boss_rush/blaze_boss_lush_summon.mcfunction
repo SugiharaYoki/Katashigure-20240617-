@@ -7,3 +7,5 @@ execute as @n[tag=AzrielMob,tag=!AzrielMob_level_ed,tag=AzrielMob_level_5] at @s
 execute as @n[tag=AzrielMob,tag=!AzrielMob_level_ed] at @s run tag @s add AzrielMob_level_ed
 
 
+
+playsound minecraft:entity.zombie_villager.cure hostile @a ~ ~ ~ 1 0.7
