@@ -26,6 +26,7 @@ execute if score stage Azr_system matches 8..43 positioned -80008 25 200 as @s[t
 execute if score stage Azr_system matches 8..43 positioned -79820 43 136 as @s[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/mobs/skill/boss_assassin/core
 execute positioned -79177 50 -13 as @s[tag=AzrielMarker_encounter,distance=0..0.5,tag=azr_door_1] run function skyblock:azr/assets/mobs/skill/boss_rush/door_1
 execute positioned -79177 50 -13 as @s[tag=AzrielMarker_encounter,distance=0..0.5,tag=azr_door_2] run function skyblock:azr/assets/mobs/skill/boss_rush/door_2
+execute positioned -79177 50 -13 as @s[tag=AzrielMarker_encounter,distance=0..0.5,tag=azr_door_3] run function skyblock:azr/assets/mobs/skill/boss_rush/door_3
 
 execute if score tick_count_main AzrTimerStack matches 4 at @s run function skyblock:azr/system/entity/main_slow
 
