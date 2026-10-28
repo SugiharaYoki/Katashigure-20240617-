@@ -32,6 +32,7 @@ execute if score @s AzrSariel_Amulet_RevivalStar_teleport matches 50 at @s run p
 execute if score @s AzrSariel_Amulet_RevivalStar_teleport matches 50 at @s run particle minecraft:pale_oak_leaves ~ ~1 ~ 0.9 2 0.9 0 30
 execute if score @s AzrSariel_Amulet_RevivalStar_teleport matches 50 at @s run execute rotated ~ 0 run function skyblock:azr/assets/events/effects/player_magic_release
 
+execute if score stage Azr_system matches 100.. if score @s AzrSariel_Amulet_RevivalStar_teleport matches 50 at @s positioned -79969 -52 -11 unless entity @s[distance=..20] run attribute @s max_health modifier add azr_progress:life_ch6 40 add_value
 
 
 
