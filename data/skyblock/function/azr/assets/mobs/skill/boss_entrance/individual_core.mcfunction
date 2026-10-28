@@ -8,10 +8,10 @@ execute if score @s rng1 matches 5 store result score @s rng2 run random value 1
 # 1、2：连续投斧。6、31、56 各一次，间隔 25 tick；三次投掷结束后解除缓慢。
 execute if score @s rng2 matches 1..2 if score @s rng1 matches 6 run effect give @s slowness 4 48 true
 execute if score @s rng2 matches 1..2 if score @s rng1 matches 6 at @s facing entity @p[tag=azrPlayer] feet rotated ~ 0 run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","autoaim","AzrielBossEntrance_axe_throw"]}
-execute if score @s rng2 matches 1..2 if score @s rng1 matches 31 at @s facing entity @p[tag=azrPlayer] feet rotated ~ 0 run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","autoaim","AzrielBossEntrance_axe_throw"]}
-execute if score @s rng2 matches 1..2 if score @s rng1 matches 56 at @s facing entity @p[tag=azrPlayer] feet rotated ~ 0 run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","autoaim","AzrielBossEntrance_axe_throw"]}
-execute if score @s rng2 matches 1..2 if score @s rng1 matches 56 run effect clear @s slowness
-execute if score @s rng2 matches 1..2 if score @s rng1 matches 56 run scoreboard players set @s rng1 -15
+execute if score @s rng2 matches 1..2 if score @s rng1 matches 36 at @s facing entity @p[tag=azrPlayer] feet rotated ~ 0 run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","autoaim","AzrielBossEntrance_axe_throw"]}
+execute if score @s rng2 matches 1..2 if score @s rng1 matches 66 at @s facing entity @p[tag=azrPlayer] feet rotated ~ 0 run summon marker ^ ^ ^ {Tags:["AzrielMob_boss_marinus_axe_throw_marker","AzrielMob_mob_marker","autoaim","AzrielBossEntrance_axe_throw"]}
+execute if score @s rng2 matches 1..2 if score @s rng1 matches 70 run effect clear @s slowness
+execute if score @s rng2 matches 1..2 if score @s rng1 matches 70 run scoreboard players set @s rng1 -15
 
 # 3、4：锁定水平朝向，蓄力时停下；冲刺期间只沿保存的方向移动。
 execute if score @s rng2 matches 3..4 if score @s rng1 matches 7 at @s run rotate @s facing entity @p[tag=azrPlayer] feet
