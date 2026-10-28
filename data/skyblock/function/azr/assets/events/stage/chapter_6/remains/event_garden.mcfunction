@@ -117,6 +117,7 @@ execute if score @s rng1 matches 101 run tellraw @a[tag=azrShowDialog] [{text:"�
 
 execute if score @s rng1 matches 118 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“大人，我们没有重来的机会。这是殊死一搏。”",color:"white"}]
 
+execute if score @s rng1 matches 101 as @a[tag=azrPlayer] at @s run effect give @s saturation 3 0 true
 execute if score @s rng1 matches 101 as @a[tag=azrPlayer] at @s run effect give @s regeneration 9 9 true
 execute if score @s rng1 matches 101 as @a[tag=azrShowDialog] at @s run stopsound @s
 execute if score @s rng1 matches 101 as @a[tag=azrShowDialog] at @s run playsound minecraft:destroy music @s ~ ~ ~ 0.73
