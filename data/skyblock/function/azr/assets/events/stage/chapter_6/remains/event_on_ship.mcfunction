@@ -18,10 +18,11 @@ execute if score @s rng1 matches ..199 positioned -79260 281 -896 if entity @a[t
 
 
 execute if score @s rng1 matches 201 run tellraw @a[tag=azrShowDialog] [{text:"深邃中传来的声音：",color:"#935dff",bold:1b},{bold: false,text:"\n“又见面了，爱理莎。”",color:"white"}]
-execute if score @s rng1 matches 202 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 217
+execute if score @s rng1 matches 202..210 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 217
 execute if score @s rng1 matches 217 run tellraw @a[tag=azrShowDialog] [{text:"深邃中传来的声音：",color:"#935dff",bold:1b},{bold: false,text:"\n“比起上次见面，你强了不少。”",color:"white"}]
 execute if score @s rng1 matches 218 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 232
 execute if score @s rng1 matches 232 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“我记得你的声音。将那颗宝石赠予我的，就是你吧。”",color:"white"}]
+execute if score @s rng1 matches 233 if entity @a[tag=azrPlayer,x=-79260,y=277,z=-896,distance=..1.2,scores={Azr_skillPoints=54..}] run scoreboard players set @s rng1 240
 
 execute if score @s rng1 matches 240 positioned -79259.51 279.00 -895.52 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower_b
 execute if score @s rng1 matches 240 positioned -79259.51 281.00 -895.52 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
