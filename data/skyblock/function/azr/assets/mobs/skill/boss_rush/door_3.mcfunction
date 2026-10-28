@@ -1,5 +1,12 @@
 
 scoreboard players add @s AzrEntityTimer 1
+# [DEBUG-door3-music] 临时记录；rng1=最后计时，rng2=结算执行情况，rng3=停音人数，rng4=停音成功，rng5=结算接收人数。
+execute if score @s AzrEntityTimer matches 1 run scoreboard players set #AzrDoor3Music rng2 0
+execute if score @s AzrEntityTimer matches 1 run scoreboard players set #AzrDoor3Music rng3 -1
+execute if score @s AzrEntityTimer matches 1 run scoreboard players set #AzrDoor3Music rng4 -1
+execute if score @s AzrEntityTimer matches 1 run scoreboard players set #AzrDoor3Music rng5 -1
+scoreboard players operation #AzrDoor3Music rng1 = @s AzrEntityTimer
+
 scoreboard players add @s rng10 1
 execute if score @s AzrEntityTimer matches 1..1999 run scoreboard players add @s rng9 1
 execute if score @s AzrEntityTimer matches ..799 if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:renegade music @s ~ ~ ~ 0.65
@@ -126,6 +133,9 @@ execute if score @s AzrEntityTimer matches 1123 positioned -79967 -51 17 as @a[t
 execute if score @s AzrEntityTimer matches 1123 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s run playsound ui.toast.challenge_complete player @s ~ ~ ~ 1 1
 
 execute if score @s AzrEntityTimer matches 1123 run scoreboard players set @s AzrEntityTimer 1900
+# [DEBUG-door3-music] 结算开始。
+execute if score @s AzrEntityTimer matches 1900 run scoreboard players set #AzrDoor3Music rng2 1
+execute if score @s AzrEntityTimer matches 1900 store result score #AzrDoor3Music rng5 if entity @a[tag=azrPlayer,tag=azrPlayer_door_participating]
 execute if score @s AzrEntityTimer matches 1900 as @a[tag=azrPlayer,tag=azrPlayer_door_participating] at @s run scoreboard players operation @s Azr_currency_weight += @n[x=-79177,y=50,z=-13,tag=AzrielMarker_encounter] rng11
 execute if score @s AzrEntityTimer matches 1900 as @a[tag=azrPlayer,tag=azrPlayer_door_participating] at @s run tellraw @s [{text:"神庭幻台 第叁场梦",bold:true,color:"light_purple"},{text:" 梦醒",bold:true,color:"white"},{text:"\n - 分数：",bold:false,color:"white"},{"score":{"name":"@n[x=-79177,y=50,z=-13,tag=AzrielMarker_encounter]","objective":"rng10"},color:"white"},{text:"\n - 历史最高纪录：",bold:false,color:"white"},{"score":{"name":"@s","objective":"azr_speedrun_door3"},bold:false,color:"white"},{text:"\n - 获得 ",bold:false,color:"white"},{"score":{"name":"@n[x=-79177,y=50,z=-13,tag=AzrielMarker_encounter]","objective":"rng11"},bold:false,color:"white"},{text:" 恶魔砝码",bold:false,color:"white"}]
 
@@ -134,7 +144,9 @@ execute if score @s AzrEntityTimer matches 1900 run kill @e[type=block_display,d
 execute if score @s AzrEntityTimer matches 1900 run kill @e[tag=AzrielMob_BossRush_Target,distance=..120]
 execute if score @s AzrEntityTimer matches 1900 run kill @e[tag=AzrielMob,distance=..120]
 execute if score @s AzrEntityTimer matches 1900 run kill @e[type=item,distance=..80]
-execute if score @s AzrEntityTimer matches 1900 run stopsound @a[tag=azrShowDialog]
+# [DEBUG-door3-music] 仅记录原停音命令的执行结果，目标与行为不变。
+execute if score @s AzrEntityTimer matches 1900 store result score #AzrDoor3Music rng3 store success score #AzrDoor3Music rng4 run stopsound @a[tag=azrShowDialog]
+execute if score @s AzrEntityTimer matches 1900 run scoreboard players set #AzrDoor3Music rng2 2
 execute if score @s AzrEntityTimer matches 1900 run function skyblock:azr/assets/events/stage/chapter_1/botanical/display_area_summon
 execute if score @s AzrEntityTimer matches 1900 run forceload remove -79195 2 -79159 -34
 execute if score @s AzrEntityTimer matches 1900 run kill @e[type=marker,distance=..80]

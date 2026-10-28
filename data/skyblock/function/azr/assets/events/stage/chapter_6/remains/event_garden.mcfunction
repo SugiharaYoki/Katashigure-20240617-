@@ -249,7 +249,7 @@ execute if score @s rng3 matches 54 positioned -79653 33 26 run summon marker ~ 
 execute if score @s rng3 matches 54 positioned -79653 33 28 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_crossbow","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
-execute if score @s rng3 matches 30.. unless score @s rng4 matches 1.. positioned -79680 32 -14 if entity @a[tag=azrPlayer,distance=..8] run scoreboard players set @s rng4 1
+execute if score @s rng3 matches 1.. unless score @s rng4 matches 1.. positioned -79680 32 -14 if entity @a[tag=azrPlayer,distance=..8] run scoreboard players set @s rng4 1
 execute if score @s rng4 matches 1.. run scoreboard players add @s rng4 1
 
 # 藤蔓伏击：仅定身距触发坐标最近的游戏玩家，沿用亡灵植学家的 3 秒缓慢 XX。
@@ -265,16 +265,18 @@ execute if score @s rng4 matches 3 positioned -79680 32 -14 as @p[tag=azrPlayer]
 execute if score @s rng4 matches 99 run scoreboard players set @s rng4 98
 execute if score @s rng4 matches ..99 positioned -79650 34 14 if entity @a[tag=azrPlayer,distance=..8] run scoreboard players set @s rng4 100
 execute if score @s rng4 matches 102 positioned -79652 34 -8 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng4 matches 102 positioned -79650 34 -8 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 102 positioned -79649 34 -8 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng4 matches 104 positioned -79652 34 -10 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng4 matches 104 positioned -79650 34 -10 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 104 positioned -79649 34 -10 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng4 matches 106 positioned -79652 34 -12 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng4 matches 106 positioned -79650 34 -12 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 106 positioned -79649 34 -12 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng4 matches 108 positioned -79652 34 -14 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score @s rng4 matches 108 positioned -79650 34 -14 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 108 positioned -79649 34 -14 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_magma_cube","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 execute if score @s rng4 matches 102..105 positioned -79659 33 16 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
+execute if score @s rng4 matches 112 positioned -79652 34 -17 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_ravager","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng4 matches 112 positioned -79649 34 -17 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_ravager","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
 
 
@@ -383,6 +385,7 @@ execute if score @s rng3 matches 1 positioned -79699 32 27 as @e[tag=AzrielMob_b
 
 
 
-# 超时判负：1006 时战场内所有游戏玩家显示爆炸；1009 时仅击杀未到安全区的玩家。
-execute if score @s rng1 matches 1006 as @a[tag=azrPlayer,x=-79753,y=20,z=-83,dx=250,dy=50,dz=250] at @s run particle minecraft:explosion_emitter ~ ~1 ~ 0 0 0 0 1 force
-execute if score @s rng1 matches 1009 as @a[tag=azrPlayer,x=-79753,y=20,z=-83,dx=250,dy=50,dz=250] positioned -79631.0 40.0 -63.0 unless entity @s[distance=..35] run kill @s
+# 超时判负：击杀未到安全区的玩家。
+execute if score @s rng1 matches 1004..1006 as @a[tag=azrPlayer,x=-79753,y=20,z=-83,dx=250,dy=50,dz=250] at @s run playsound entity.generic.explode block @s ~ ~ ~ 0 0.8
+execute if score @s rng1 matches 1004..1006 as @a[tag=azrPlayer,x=-79753,y=20,z=-83,dx=250,dy=50,dz=250] at @s run particle minecraft:explosion_emitter ~ ~1 ~ 0 0 0 0 1 force
+execute if score @s rng1 matches 1006 as @a[tag=azrPlayer] positioned -79631.0 40.0 -63.0 unless entity @s[distance=..27] run kill @s
