@@ -62,7 +62,7 @@ execute if score @s AzrEntityTimer matches 505 run title @a[distance=..50] title
 
 execute if score @s AzrEntityTimer matches 420 positioned -79179 1 -28 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_slime/summon
 execute if score @s AzrEntityTimer matches 420 positioned -79179 1 -28 run tag @e[tag=slime,distance=..50] add AzrielMob_BossRush_Target
-execute if score @s AzrEntityTimer matches 509..599 positioned -79179 1 -28 as @e[tag=slime,distance=..50] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_slime/core
+execute if score @s AzrEntityTimer matches 405..599 positioned -79179 1 -28 as @e[tag=slime,distance=..50] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_slime/core
 
 execute if score @s AzrEntityTimer matches 605 as @a[tag=azrPlayer,distance=..100] at @s unless score @s azr_progress_door3 matches 3.. run scoreboard players set @s azr_progress_door3 3
 execute if score @s AzrEntityTimer matches 605 run scoreboard players add @s rng11 5
