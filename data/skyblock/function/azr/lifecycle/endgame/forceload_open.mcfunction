@@ -31,6 +31,7 @@ forceload add -79761 -798
 
 forceload add -79776 -2081
 
+forceload add -80046 -156 -79982 -23
 
 #游戏开场
 forceload add -79541 -472 -79345 -350

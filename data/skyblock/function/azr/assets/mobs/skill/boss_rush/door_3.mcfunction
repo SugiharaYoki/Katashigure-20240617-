@@ -76,10 +76,10 @@ execute if score @s AzrEntityTimer matches 605 run title @a[distance=..50] times
 execute if score @s AzrEntityTimer matches 605 run title @a[distance=..50] title {text:"百 夫 长 · 采 掘 组",color: "#7321cb",bold:1b}
 
 execute if score @s AzrEntityTimer matches 605 positioned -79167 50 -13 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
-execute if score @s AzrEntityTimer matches 620 positioned -79167 50 -13 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/summon
-execute if score @s AzrEntityTimer matches 620 positioned -79187 50 -13 run tag @e[tag=AzrielMob,distance=..30,type=zombie] add AzrielMob_BossRush_Target
+execute if score @s AzrEntityTimer matches 620 positioned -79167 50 -13 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_legate/summon
+execute if score @s AzrEntityTimer matches 620 positioned -79187 50 -13 run tag @e[tag=AzrielMob,distance=..30,type=piglin_brute] add AzrielMob_BossRush_Target
 execute if score @s AzrEntityTimer matches 620 positioned -79187 50 -13 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
-execute if score @s AzrEntityTimer matches 620..799 positioned -79167 50 -13 as @n[tag=AzrielMob_BossRush_Target,distance=..50,type=zombie] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_working/core
+execute if score @s AzrEntityTimer matches 620..799 positioned -79167 50 -13 as @n[tag=AzrielMob_BossRush_Target,distance=..50,type=piglin_brute] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_legate/core
 
 execute if score @s AzrEntityTimer matches 805 as @a[tag=azrPlayer,distance=..100] at @s unless score @s azr_progress_door3 matches 4.. run scoreboard players set @s azr_progress_door3 4
 execute if score @s AzrEntityTimer matches 805 run scoreboard players add @s rng11 10
