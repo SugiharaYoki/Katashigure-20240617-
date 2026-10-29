@@ -30,26 +30,26 @@ execute if score @s rng8 matches 30 if score @s rng5 matches 1 run function skyb
 
 
 
-execute if score @s[scores={Health=..250}] rng8 matches 30 rotated ~000 0 positioned ^ ^0 ^4.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
-execute if score @s[scores={Health=..250}] rng8 matches 30 rotated ~040 0 positioned ^ ^0 ^4.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
-execute if score @s[scores={Health=..250}] rng8 matches 30 rotated ~080 0 positioned ^ ^0 ^4.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
-execute if score @s[scores={Health=..250}] rng8 matches 30 rotated ~120 0 positioned ^ ^0 ^4.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
-execute if score @s[scores={Health=..250}] rng8 matches 30 rotated ~160 0 positioned ^ ^0 ^4.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
-execute if score @s[scores={Health=..250}] rng8 matches 30 rotated ~200 0 positioned ^ ^0 ^4.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
-execute if score @s[scores={Health=..250}] rng8 matches 30 rotated ~240 0 positioned ^ ^0 ^4.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
-execute if score @s[scores={Health=..250}] rng8 matches 30 rotated ~280 0 positioned ^ ^0 ^4.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
-execute if score @s[scores={Health=..250}] rng8 matches 30 rotated ~320 0 positioned ^ ^0 ^4.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
+execute if score @s[scores={Health=..250}] rng8 matches 30 rotated ~000 0 positioned ^ ^0.5 ^4.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
+execute if score @s[scores={Health=..250}] rng8 matches 30 rotated ~040 0 positioned ^ ^0.5 ^4.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
+execute if score @s[scores={Health=..250}] rng8 matches 30 rotated ~080 0 positioned ^ ^0.5 ^4.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
+execute if score @s[scores={Health=..250}] rng8 matches 30 rotated ~120 0 positioned ^ ^0.5 ^4.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
+execute if score @s[scores={Health=..250}] rng8 matches 30 rotated ~160 0 positioned ^ ^0.5 ^4.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
+execute if score @s[scores={Health=..250}] rng8 matches 30 rotated ~200 0 positioned ^ ^0.5 ^4.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
+execute if score @s[scores={Health=..250}] rng8 matches 30 rotated ~240 0 positioned ^ ^0.5 ^4.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
+execute if score @s[scores={Health=..250}] rng8 matches 30 rotated ~280 0 positioned ^ ^0.5 ^4.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
+execute if score @s[scores={Health=..250}] rng8 matches 30 rotated ~320 0 positioned ^ ^0.5 ^4.5 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
 
 
-execute if score @s[scores={Health=..250}] rng8 matches 38 rotated ~020 0 positioned ^ ^0 ^7.1 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
-execute if score @s[scores={Health=..250}] rng8 matches 38 rotated ~060 0 positioned ^ ^0 ^7.1 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
-execute if score @s[scores={Health=..250}] rng8 matches 38 rotated ~100 0 positioned ^ ^0 ^7.1 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
-execute if score @s[scores={Health=..250}] rng8 matches 38 rotated ~140 0 positioned ^ ^0 ^7.1 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
-execute if score @s[scores={Health=..250}] rng8 matches 38 rotated ~180 0 positioned ^ ^0 ^7.1 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
-execute if score @s[scores={Health=..250}] rng8 matches 38 rotated ~220 0 positioned ^ ^0 ^7.1 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
-execute if score @s[scores={Health=..250}] rng8 matches 38 rotated ~260 0 positioned ^ ^0 ^7.1 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
-execute if score @s[scores={Health=..250}] rng8 matches 38 rotated ~300 0 positioned ^ ^0 ^7.1 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
-execute if score @s[scores={Health=..250}] rng8 matches 38 rotated ~340 0 positioned ^ ^0 ^7.1 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
+execute if score @s[scores={Health=..250}] rng8 matches 38 rotated ~020 0 positioned ^ ^0.5 ^7.1 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
+execute if score @s[scores={Health=..250}] rng8 matches 38 rotated ~060 0 positioned ^ ^0.5 ^7.1 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
+execute if score @s[scores={Health=..250}] rng8 matches 38 rotated ~100 0 positioned ^ ^0.5 ^7.1 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
+execute if score @s[scores={Health=..250}] rng8 matches 38 rotated ~140 0 positioned ^ ^0.5 ^7.1 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
+execute if score @s[scores={Health=..250}] rng8 matches 38 rotated ~180 0 positioned ^ ^0.5 ^7.1 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
+execute if score @s[scores={Health=..250}] rng8 matches 38 rotated ~220 0 positioned ^ ^0.5 ^7.1 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
+execute if score @s[scores={Health=..250}] rng8 matches 38 rotated ~260 0 positioned ^ ^0.5 ^7.1 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
+execute if score @s[scores={Health=..250}] rng8 matches 38 rotated ~300 0 positioned ^ ^0.5 ^7.1 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
+execute if score @s[scores={Health=..250}] rng8 matches 38 rotated ~340 0 positioned ^ ^0.5 ^7.1 run summon marker ~ ~ ~ {Tags:["AzrielMob_generic_pillar_attack_small_automarker","AzrielMob_mob_marker","slow_launch"]}
 
 
 

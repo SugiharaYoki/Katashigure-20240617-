@@ -5,7 +5,7 @@
 scoreboard players add @s rng13 1
 
 execute if score @s rng13 matches 2 at @s positioned ~ ~0.2 ~ run effect give @s resistance infinite 1 true
-execute if score @s rng13 matches 170.. at @s positioned ~ ~0.2 ~ run particle minecraft:nautilus ~ ~ ~ 0.3 0.3 0.3 0 2
+execute if score @s rng13 matches 170.. at @s positioned ~ ~0.2 ~ run particle minecraft:nautilus ~ ~0.5 ~ 0.3 0.3 0.3 0 5
 
 execute if score @s rng13 matches 200 at @s positioned ~ ~0.1 ~ run effect give @s slowness infinite 9 true
 execute if score @s rng13 matches 200 at @s positioned ~ ~0.1 ~ facing entity @n[tag=AzrielBossSlime,distance=01.0..] eyes run particle end_rod ^ ^ ^01 0 0 0 0 1

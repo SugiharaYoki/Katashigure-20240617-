@@ -66,6 +66,11 @@ execute if score @s AzrEntityTimer matches 420 positioned -79179 1 -28 run tag @
 execute if score @s AzrEntityTimer matches 405..599 positioned -79179 1 -28 as @e[tag=AzrielBossSlime,type=slime,distance=..50] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_slime/core
 
 execute if score @s AzrEntityTimer matches 605 as @a[tag=azrPlayer,distance=..100] at @s unless score @s azr_progress_door3 matches 3.. run scoreboard players set @s azr_progress_door3 3
+
+execute if score @s AzrEntityTimer matches 603 as @a[tag=azrPlayer,distance=..100] at @s run tp @s -79177 50 -13
+execute if score @s AzrEntityTimer matches 603 as @a[tag=azrPlayer,distance=..100] at @s run playsound entity.player.teleport master @a ~ ~ ~ 1 0.8
+execute if score @s AzrEntityTimer matches 603 as @a[tag=azrPlayer,distance=..100] at @s run particle pale_oak_leaves ~ ~1 ~ 0.5 1 0.5 0 20
+execute if score @s AzrEntityTimer matches 603 as @a[tag=azrPlayer,distance=..100] at @s run particle reverse_portal ~ ~1 ~ 0.5 1 0.5 0 20
 execute if score @s AzrEntityTimer matches 605 run scoreboard players add @s rng11 5
 execute if score @s AzrEntityTimer matches 605 run title @a[distance=..50] times 0t 20t 16t
 execute if score @s AzrEntityTimer matches 605 run title @a[distance=..50] title {text:"百 夫 长 · 采 掘 组",color: "#7321cb",bold:1b}
