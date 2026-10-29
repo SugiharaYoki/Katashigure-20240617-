@@ -69,7 +69,7 @@ execute if entity @s[tag=AzrielTrader_pig_henry] run function skyblock:azr/asset
 #boss
 execute if score stage Azr_system matches 60..65 if entity @s[type=piglin_brute,tag=AzrielMob_demon_amy] run function skyblock:azr/assets/mobs/skill/boss4_amy/core_x20
 execute if score stage Azr_system matches 69..71 if entity @s[tag=AzrielNPC_raphael] run function skyblock:azr/assets/mobs/skill/boss4_raphael/core
-execute if score stage Azr_system matches 77.. if entity @s[tag=AzrielBossSlime] run function skyblock:azr/assets/mobs/skill/boss_slime/core
+execute if score stage Azr_system matches 77.. if entity @s[tag=AzrielBossSlime,tag=!door] run function skyblock:azr/assets/mobs/skill/boss_slime/core
 execute if score stage Azr_system matches 90.. if entity @s[tag=AzrielBossNautilus] run function skyblock:azr/assets/mobs/skill/boss_nautilus/core
 execute if entity @s[tag=AzrielBossEntrance_StartActing] run function skyblock:azr/assets/mobs/skill/boss_entrance/individual_core
 
