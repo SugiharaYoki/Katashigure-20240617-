@@ -87,6 +87,10 @@ execute if score @s[scores={rng20=6},tag=!phase6_conv] rng8 matches 40 run effec
 execute if score @s[scores={rng20=6},tag=!phase6_conv] rng8 matches 40 run tag @s add phase6_conv
 execute if score @s[scores={rng20=5,Health=..100},tag=!phase6_conv] rng8 matches 41.. run effect give @s resistance 9 4 true
 
+execute if score @s[scores={rng20=1,Health=..500},tag=!phase2_conv] rng8 matches 41.. run effect give @s resistance 3 4 true
+execute if score @s[scores={rng20=2,Health=..400},tag=!phase3_conv] rng8 matches 41.. run effect give @s resistance 3 4 true
+execute if score @s[scores={rng20=3,Health=..300},tag=!phase4_conv] rng8 matches 41.. run effect give @s resistance 3 4 true
+execute if score @s[scores={rng20=4,Health=..200},tag=!phase5_conv] rng8 matches 41.. run effect give @s resistance 3 4 true
 
 execute at @s as @a[tag=azrPlayer,distance=..30] at @s run scoreboard players add @s AZR_chainKill_chargeup 25
 
