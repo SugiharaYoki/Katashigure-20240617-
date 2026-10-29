@@ -141,6 +141,9 @@ execute if score @s rng1 matches 900 as @a[tag=azrPlayer] at @s run tellraw @s [
 execute if score @s rng1 matches 900 as @n[tag=AzrielNPC_marinus] run tp @s -79740 32 -11
 execute if score @s rng1 matches 900 as @n[tag=AzrielNPC_mersenne] run tp @s -79744 32 -15
 
+execute if score @s rng1 matches 900 positioned -79979 -44 -2 as @e[tag=AzrielNPC_Divineforce,distance=..50,type=!villager,type=!piglin,type=!evoker] run effect clear @s weakness
+execute if score @s rng1 matches 900 positioned -79979 -44 -2 as @e[tag=AzrielNPC_Divineforce,distance=..50,type=!villager,type=!piglin,type=!evoker] run effect clear @s resistance
+execute if score @s rng1 matches 900 positioned -79979 -44 -2 as @e[tag=AzrielNPC_Divineforce,distance=..50,type=!villager,type=!piglin,type=!evoker] run effect clear @s regeneration
 execute if score @s rng1 matches 900 positioned -79979 -44 -2 as @e[tag=AzrielNPC_Divineforce,distance=..50,type=!villager,type=!piglin,type=!evoker] run tp @s -79746 32 -17
 
 
