@@ -22,7 +22,7 @@ execute if score @s AzrEntityTimer matches 76 run attribute @n[tag=AzrielBossSli
 
 execute as @s store result score @s Health run data get entity @s Health
 
-tp @s[tag=!azrmob_boss_slime_Moveable] -79732 187 -756
+tp @s[tag=!azrmob_boss_slime_Moveable] -79179 1 -28
 
 execute as @n[type=arrow,distance=..20] at @s run particle white_smoke ~ ~ ~ 0 0 0 0.05 7
 execute as @n[type=arrow,distance=..20] at @s run kill @s
