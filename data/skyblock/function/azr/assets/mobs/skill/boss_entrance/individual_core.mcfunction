@@ -132,11 +132,11 @@ execute if score @s rng2 matches 5 if score @s rng1 matches 16..39 if score @s r
 execute if score @s rng2 matches 5 if score @s rng1 matches 16..39 if score @s rng7 < @s rng6 run tag @s add AzrEntrance_parry_success
 execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 run scoreboard players operation @s rng4 = @s rng5
 execute if score @s rng2 matches 5 if score @s rng1 matches 6..39 run scoreboard players operation @s rng6 = @s rng7
-execute if entity @s[tag=AzrEntrance_parry_success] at @s rotated ~ 0 run particle sweep_attack ^-0.8 ^1.2 ^1 0 0 0 0 1
-execute if entity @s[tag=AzrEntrance_parry_success] at @s rotated ~ 0 run particle sweep_attack ^0 ^1.5 ^1.2 0 0 0 0 1
-execute if entity @s[tag=AzrEntrance_parry_success] at @s rotated ~ 0 run particle sweep_attack ^0.8 ^1.2 ^1 0 0 0 0 1
+execute if entity @s[tag=AzrEntrance_parry_success] at @s rotated ~ 0 run particle sweep_attack ^-1.2 ^1.2 ^2.5 0 0 0 0 1
+execute if entity @s[tag=AzrEntrance_parry_success] at @s rotated ~ 0 run particle sweep_attack ^0 ^1.5 ^3.5 0 0 0 0 1
+execute if entity @s[tag=AzrEntrance_parry_success] at @s rotated ~ 0 run particle sweep_attack ^1.2 ^1.2 ^2.5 0 0 0 0 1
 execute if entity @s[tag=AzrEntrance_parry_success] at @s rotated ~ 0 positioned ~ ~1.5 ~ run function skyblock:sea/p/parry_particle
-execute if entity @s[tag=AzrEntrance_parry_success] at @s rotated ~ 0 positioned ^ ^ ^1.5 run tag @a[tag=azrPlayer,distance=..1.5] add AzrEntrance_melee_candidate
+execute if entity @s[tag=AzrEntrance_parry_success] at @s rotated ~ 0 positioned ^ ^ ^2.5 run tag @a[tag=azrPlayer,distance=..2.5] add AzrEntrance_melee_candidate
 execute if entity @s[tag=AzrEntrance_parry_success] at @s run damage @p[tag=azrPlayer,tag=AzrEntrance_melee_candidate] 24 mob_attack by @s
 execute if entity @s[tag=AzrEntrance_parry_success] at @s run effect clear @s slowness
 execute if entity @s[tag=AzrEntrance_parry_success] at @s run item replace entity @s weapon.mainhand with diamond_axe
