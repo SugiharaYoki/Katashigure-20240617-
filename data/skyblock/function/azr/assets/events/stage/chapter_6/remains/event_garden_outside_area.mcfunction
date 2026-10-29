@@ -4,6 +4,7 @@ scoreboard players set @s rng1 0
 
 weather thunder 100000
 
+execute as @e[tag=AzrielNPC_Divineforce,x=-79753,y=20,z=-83,dx=250,dy=50,dz=250] at @s run scoreboard players set @s AzrielNPC_FollowInterest -999
 execute as @e[tag=AzrielNPC_Divineforce,x=-79753,y=20,z=-83,dx=250,dy=50,dz=250] at @s run tp @s -79746 32 -17
 execute as @n[tag=AzrielNPC_marinus] run tp @s -79740 32 -11
 execute as @n[tag=AzrielNPC_mersenne] run tp @s -79744 32 -15

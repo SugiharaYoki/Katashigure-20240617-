@@ -124,7 +124,7 @@ execute if score @s rng1 matches 101 as @a[tag=azrShowDialog] at @s run playsoun
 execute if score @s rng1 matches 120 run fill -79739 32 -15 -79739 36 -11 air destroy
 execute if score @s rng1 matches 120 run fill -79734 36 -15 -79734 32 -11 air
 
-execute if score @s rng1 matches 121 run scoreboard players set stage Azr_system 104
+execute if score @s rng1 matches 121 run scoreboard players set stage Azr_system 110
 
 
 execute if score @s rng1 matches 130 positioned -79709 32 -13 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield_heavy","AzrielMob_summon_delay","AzrielMob_level_1"]}
