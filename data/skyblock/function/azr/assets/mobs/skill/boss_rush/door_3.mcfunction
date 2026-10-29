@@ -60,6 +60,7 @@ execute if score @s AzrEntityTimer matches 405 run fill -79159 77 -31 -79195 77 
 execute if score @s AzrEntityTimer matches 505 run title @a[distance=..50] times 0t 20t 16t
 execute if score @s AzrEntityTimer matches 505 run title @a[distance=..50] title {text:"表 水 创 生 球 体",color: "#7321cb",bold:1b}
 
+execute if score @s AzrEntityTimer matches 420 positioned -79179 1 -28 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
 execute if score @s AzrEntityTimer matches 420 positioned -79179 1 -28 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_slime/summon
 execute if score @s AzrEntityTimer matches 420 positioned -79179 1 -28 run tag @e[tag=AzrielBossSlime,type=slime,distance=..50] add AzrielMob_BossRush_Target
 execute if score @s AzrEntityTimer matches 405..599 positioned -79179 1 -28 as @e[tag=AzrielBossSlime,type=slime,distance=..50] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_slime/core
