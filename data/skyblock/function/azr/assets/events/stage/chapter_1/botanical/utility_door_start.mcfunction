@@ -2,7 +2,8 @@ execute as @s[scores={rng1=2},tag=azr_door_1] run tellraw @a[tag=azrPlayer,dista
 execute as @s[scores={rng1=2},tag=azr_door_2] positioned -79965 -52 25 run tellraw @a[tag=azrPlayer,distance=..30] [{text:"神庭幻台 第贰场梦",bold:true,color:"light_purple"},{text:"\n - 亡灵法师\n - 百夫长·博物区\n - 非眼\n - 金属学家\n - 亚米",bold:false,color:"white"}]
 execute as @s[scores={rng1=2},tag=azr_door_3] positioned -79965 -52 33 run tellraw @a[tag=azrPlayer,distance=..30] [{text:"神庭幻台 第叁场梦",bold:true,color:"light_purple"},{text:"\n - 不净焰魂\n - 晦怨贤士\n - 表水创生球体\n - 百夫长·采掘组\n - 宁芙",bold:false,color:"white"}]
 
-execute unless score stage Azr_system matches 102 as @s[distance=0..0.5] run scoreboard players add @s rng1 1
+execute unless score stage Azr_system matches 102 as @s[distance=0..0.5,tag=azr_door_2] at @s if entity @a[tag=azrPlayer,scores={azr_progress_door1=5..}] run scoreboard players add @s rng1 1
+execute unless score stage Azr_system matches 102 as @s[distance=0..0.5,tag=azr_door_3] at @s if entity @a[tag=azrPlayer,scores={azr_progress_door2=5..}] run scoreboard players add @s rng1 1
 
 execute as @s[scores={rng1=12}] as @a[tag=azrPlayer,distance=..30] at @s run playsound minecraft:block.note_block.iron_xylophone block @s ~ ~ ~ 3 0.6
 execute as @s[scores={rng1=16}] as @a[tag=azrPlayer,distance=..30] at @s run playsound minecraft:block.note_block.iron_xylophone block @s ~ ~ ~ 3 0.6
