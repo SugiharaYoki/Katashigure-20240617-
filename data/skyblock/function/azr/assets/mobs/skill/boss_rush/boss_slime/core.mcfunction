@@ -1,20 +1,20 @@
 
-scoreboard players add @s AzrEntityTimer 1
+scoreboard players add @s rng15 1
 
 
-execute if score @s AzrEntityTimer matches 80.. run scoreboard players add @s rng11 1
+execute if score @s rng15 matches 80.. run scoreboard players add @s rng11 1
 
 
-execute if score @s AzrEntityTimer matches 6 run playsound minecraft:entity.puffer_fish.blow_up hostile @a ~ ~ ~ 5 1.1
-execute if score @s AzrEntityTimer matches 36 run playsound minecraft:entity.puffer_fish.blow_up hostile @a ~ ~ ~ 5 0.9
-execute if score @s AzrEntityTimer matches 76 run playsound minecraft:entity.camel_husk.hurt hostile @a ~ ~ ~ 10 0.7
-execute if score @s AzrEntityTimer matches 76 run playsound minecraft:entity.slime.squish hostile @a ~ ~ ~ 10 0.7
-execute if score @s AzrEntityTimer matches 6 run particle minecraft:item_slime -79179 1 -28 0.6 0.7 0.6 0 15
-execute if score @s AzrEntityTimer matches 36 run particle minecraft:item_slime -79179 1 -28 1.0 1.0 1.0 0 20
-execute if score @s AzrEntityTimer matches 76 run particle minecraft:item_slime -79179 1 -28 2.0 1.5 2.0 0 60
-execute if score @s AzrEntityTimer matches 6 run attribute @n[tag=AzrielBossSlime,type=slime,distance=..100] scale modifier add azriel_mob:boss_slime_initial_scale_1 0.8 add_value
-execute if score @s AzrEntityTimer matches 36 run attribute @n[tag=AzrielBossSlime,type=slime,distance=..100] scale modifier add azriel_mob:boss_slime_initial_scale_2 1.2 add_value
-execute if score @s AzrEntityTimer matches 76 run attribute @n[tag=AzrielBossSlime,type=slime,distance=..100] scale modifier add azriel_mob:boss_slime_initial_scale_3 1.6 add_value
+execute if score @s rng15 matches 6 run playsound minecraft:entity.puffer_fish.blow_up hostile @a ~ ~ ~ 5 1.1
+execute if score @s rng15 matches 36 run playsound minecraft:entity.puffer_fish.blow_up hostile @a ~ ~ ~ 5 0.9
+execute if score @s rng15 matches 76 run playsound minecraft:entity.camel_husk.hurt hostile @a ~ ~ ~ 10 0.7
+execute if score @s rng15 matches 76 run playsound minecraft:entity.slime.squish hostile @a ~ ~ ~ 10 0.7
+execute if score @s rng15 matches 6 run particle minecraft:item_slime -79179 1 -28 0.6 0.7 0.6 0 15
+execute if score @s rng15 matches 36 run particle minecraft:item_slime -79179 1 -28 1.0 1.0 1.0 0 20
+execute if score @s rng15 matches 76 run particle minecraft:item_slime -79179 1 -28 2.0 1.5 2.0 0 60
+execute if score @s rng15 matches 6 run attribute @n[tag=AzrielBossSlime,type=slime,distance=..100] scale modifier add azriel_mob:boss_slime_initial_scale_1 0.8 add_value
+execute if score @s rng15 matches 36 run attribute @n[tag=AzrielBossSlime,type=slime,distance=..100] scale modifier add azriel_mob:boss_slime_initial_scale_2 1.2 add_value
+execute if score @s rng15 matches 76 run attribute @n[tag=AzrielBossSlime,type=slime,distance=..100] scale modifier add azriel_mob:boss_slime_initial_scale_3 1.6 add_value
 
 #EVENT
 
@@ -30,7 +30,7 @@ execute as @n[type=arrow,distance=..20] at @s run kill @s
 #ACTION
 
 
-    execute as @s[scores={AzrEntityTimer=20..}] at @s run scoreboard players add @s rng8 1
+    execute as @s[scores={rng15=80..}] at @s run scoreboard players add @s rng8 1
     execute as @s at @s if score @s rng8 matches 1 store result score @s rng2 run random value 1..3
     
     execute as @s at @s if score @s[scores={rng2=1}] rng8 matches 1.. run function skyblock:azr/assets/mobs/skill/boss_slime/attack_summon_piranha
