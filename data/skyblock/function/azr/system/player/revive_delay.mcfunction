@@ -1,6 +1,7 @@
 
 
 
+execute unless entity @s[tag=AZR_SEAawakened] run say hi
 execute unless entity @s[tag=AZR_SEAawakened] run tp @s -80006 3 93
 
 effect clear @s
