@@ -37,6 +37,8 @@ execute if entity @s[scores={rng1=102}] unless block -79931 39 22 air as @a[tag=
 
 execute if entity @s[scores={rng1=102}] as @a[tag=AZR_SEAawakening] at @s run effect give @s absorption 10 2
 execute if entity @s[scores={rng1=102}] as @a[tag=AZR_SEAawakening] at @s run effect give @s regeneration 10 4
+# 首次觉醒沿用本局背包，跳过自动读档；退出时仍正常保存。
+execute if entity @s[scores={rng1=102}] run tag @a[tag=AZR_SEAawakening,tag=!AZR_SEAawakened] add azrRetrieved
 execute if entity @s[scores={rng1=102}] as @a[tag=AZR_SEAawakening] at @s run tag @s add AZR_SEAawakened
 execute if entity @s[scores={rng1=102}] run tag @a remove AZR_SEAawakening
 
