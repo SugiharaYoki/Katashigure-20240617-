@@ -1,0 +1,4 @@
+Webhook notification smoke test.
+
+This file contains no Minecraft datapack resources or executable code.
+Test time: 2026-11-01 02:46:53 +08:00
