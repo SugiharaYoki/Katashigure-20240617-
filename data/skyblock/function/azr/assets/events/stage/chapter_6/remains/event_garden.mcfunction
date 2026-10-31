@@ -281,7 +281,8 @@ execute if score @s rng4 matches 102..105 positioned -79659 33 16 run summon mar
 execute if score @s rng4 matches 112 positioned -79652 34 -17 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_ravager","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng4 matches 115 positioned -79649 34 -19 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_ravager","AzrielMob_summon_delay","AzrielMob_level_1"]}
 
-
+execute if score @s rng4 matches 125 positioned -79649 34 -18 run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_large
+execute if score @s rng4 matches 125 positioned -79649 34 -18 run function skyblock:azr/assets/mobs/skill/boss_entrance/summon_midgarden
 
 
 execute if score @s rng3 matches 1 positioned -79699 32 27 as @e[tag=AzrielMob_barrier_maintainer,distance=..100] run effect give @s resistance infinite 1 true
