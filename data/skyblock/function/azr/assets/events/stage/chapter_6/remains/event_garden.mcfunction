@@ -318,7 +318,7 @@ execute if score @s rng5 matches 2 positioned -79631 43 -38 run playsound minecr
 execute if score @s rng5 matches 2 run fill -79633 40 -38 -79629 43 -38 minecraft:purple_stained_glass
 
 execute if score @s rng5 matches 6 positioned -79631 40 -71 as @n[tag=AzrielNPC_malpas] at @s run effect give @s invisibility 3 0 true
-execute if score @s rng5 matches 6 positioned -79631 40 -71 as @n[tag=AzrielNPC_malpas] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+execute if score @s rng5 matches 6 positioned -79631 40 -71 as @n[tag=AzrielNPC_malpas] at @s run tp @s -79631 40 -79 facing entity @p[tag=azrPlayer]
 execute if score @s rng5 matches 6 positioned -79631 40 -71 as @n[tag=AzrielNPC_malpas] at @s run effect clear @s invisibility
 execute if score @s rng5 matches 6 positioned -79631 40 -71 as @n[tag=AzrielNPC_malpas] at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_davidstar
 execute if score @s rng5 matches 6 positioned -79631 40 -71 as @n[tag=AzrielNPC_malpas] at @s positioned ~ ~ ~3 run summon lightning_bolt
@@ -336,6 +336,9 @@ execute if score @s rng1 matches 76 run tellraw @a[tag=azrShowDialog] [{text:"�
 
 execute if score @s rng5 matches 90 run tellraw @a[tag=azrShowDialog] [{text:"预言家 玛帕斯：",color:"#9c101e",bold:1b},{bold: false,text:"\n“弟弟，你不是说你一个人就行吗？上吧。”",color:"white"}]
 
+
+execute if score @s rng5 matches 90 as @n[tag=AzrielNPC_raum] at @s run data modify entity @s NoGravity set value 0b
+execute if score @s rng5 matches 90 as @n[tag=AzrielNPC_raum] at @s run tag @s remove AzrRaum_midgarden
 
 execute if score @s rng5 matches 100 as @n[tag=AzrielNPC_malpas] at @s run data modify entity @s NoGravity set value 1b
 execute if score @s rng5 matches 100 as @n[tag=AzrielNPC_malpas] at @s rotated ~ 0 positioned 0.0 0 0.0 run summon marker ^ ^3.01 ^-0.2 {Tags:["AzrielMob_move_marker_malpas"]}
