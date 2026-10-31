@@ -100,7 +100,7 @@ execute if score @s Azr_skillPoints matches 14.. if entity @s[tag=AZS_BoSB23] un
 execute if score @s Azr_skillPoints matches 19.. if items entity @s container.* *[custom_data~{azr_amulet_light_angel_2:1b}] unless items entity @s container.* *[custom_data~{azr_amulet_light_angel_3:1b}] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"休憩所的华兹华斯似乎能向我提供更强大的天使符文了……",color:"white",bold:false}]
 execute if score @s Azr_skillPoints matches 50.. if items entity @s container.* *[custom_data~{azr_amulet_light_angel_3:1b}] unless items entity @s container.* *[custom_data~{azr_amulet_light_angel_4:1b}] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"休憩所的华兹华斯似乎能向我提供更强大的天使符文了……",color:"white",bold:false}]
 
-tellraw @s {text:"1asd3f",color:"#232427",bold:false}
+tellraw @s {text:"934jhn",color:"#232427",bold:false}
 
 #execute if score stage Azr_system matches 19 run tellraw @s [{text:"下个目标地点：",color:"aqua",bold:true},{text:"西庭外围区域 第1章·第1关",color:"white",bold:false}]
 #execute if score stage Azr_system matches 20 run tellraw @s [{text:"下个目标地点：",color:"aqua",bold:true},{text:"西庭外围区域 第1章·第1关",color:"white",bold:false}]
