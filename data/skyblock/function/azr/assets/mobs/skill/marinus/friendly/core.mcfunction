@@ -27,5 +27,5 @@ execute if score stage Azr_system matches 30..50 as @s at @s if entity @a[tag=az
 
 
 #花园攻城战
-execute if score stage Azr_system matches 104 unless entity @r[tag=azrPlayer,distance=..7] at @r[tag=azrPlayer] rotated ~ 0 positioned ^1 ^ ^-3 if block ~ ~ ~ air if block ~ ~1 ~ air if block ~ ~1 ~0.3 air if block ~ ~1 ~-0.3 air if block ~0.3 ~1 ~ air if block ~-0.3 ~1 ~ air unless block ~ ~-0.7 ~ air run tp @s ~ ~ ~
+execute if score stage Azr_system matches 110 unless entity @r[tag=azrPlayer,distance=..7] at @r[tag=azrPlayer] rotated ~ 0 positioned ^1 ^ ^-3 if block ~ ~ ~ air if block ~ ~1 ~ air if block ~ ~1 ~0.3 air if block ~ ~1 ~-0.3 air if block ~0.3 ~1 ~ air if block ~-0.3 ~1 ~ air unless block ~ ~-0.7 ~ air run tp @s ~ ~ ~
 
