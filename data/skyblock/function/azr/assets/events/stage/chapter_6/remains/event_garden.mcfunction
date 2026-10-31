@@ -185,6 +185,20 @@ execute if score @s[tag=!the_fourth_door_hint] rng1 matches ..819 positioned -79
 execute if score @s rng1 matches 820 run fill -79652 37 -31 -79650 40 -31 minecraft:air destroy
 execute if score @s[tag=the_fourth_door_hint] rng1 matches 820 positioned -79651 36 -30 if entity @n[type=pillager,distance=..30] run tellraw @a[tag=azrShowDialog] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“终于开了！！大家冲啊！”",color:"white"}]
 
+execute if score @s rng1 matches 800 positioned -79632 37 -32 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield_heavy","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 800 positioned -79632 37 -32 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield_heavy","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 800 positioned -79632 37 -32 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield_heavy","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 800 positioned -79632 37 -32 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 800 positioned -79632 37 -32 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 800 positioned -79632 37 -32 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 800 positioned -79632 37 -32 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_husk","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 800 positioned -79632 37 -32 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_bogged_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 800 positioned -79632 37 -32 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_bogged_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 800 positioned -79632 37 -32 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_bogged_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 800 positioned -79632 37 -32 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_armor","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 800 positioned -79632 37 -32 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_zombie_villager_armor","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+
 #结界关口
 execute if score @s rng1 matches 101.. run scoreboard players add @s rng3 1
 execute if score @s rng3 matches 1 positioned -79700 32 -24 run function skyblock:azr/assets/mobs/barrier_maintainer {id:_ch6_midgarden_door_1}
@@ -289,11 +303,11 @@ execute if score @s rng3 matches 1 positioned -79699 32 27 as @e[tag=AzrielMob_b
 execute if score @s rng3 matches 1 positioned -79699 32 27 as @e[tag=AzrielMob_barrier_maintainer,distance=..100] run effect give @s slowness infinite 5 true
 
 
+execute if entity @a[x=-79637,y=40,z=-41,dx=12,dy=5,dz=2,tag=azrPlayer] unless score @s rng5 matches 1.. run scoreboard players set @s rng5 1
+execute if score @s rng5 matches 1.. run scoreboard players add @s rng5 1
 
-
-
-
-
+execute if score @s rng5 matches 2 positioned -79631 43 -38 run playsound minecraft:block.trial_spawner.detect_player block @a ~ ~ ~ 2 0.7
+execute if score @s rng5 matches 2 run fill -79633 40 -38 -79629 43 -38 minecraft:purple_stained_glass
 
 
 
