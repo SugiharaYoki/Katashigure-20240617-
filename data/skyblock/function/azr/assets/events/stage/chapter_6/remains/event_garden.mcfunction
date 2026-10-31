@@ -64,6 +64,8 @@ execute if score @s rng1 matches 116 positioned -79693 32 -44 run function skybl
 execute if score @s rng1 matches 116 positioned -79691 32 -42 run function skyblock:azr/assets/mobs/skeleton_bogged_sword
 execute if score @s rng1 matches 116 positioned -79691 32 -44 run function skyblock:azr/assets/mobs/skeleton_bogged_sword
 
+execute if score @s rng1 matches 116 positioned -79682 32 -2 run function skyblock:azr/assets/mobs/ravager
+execute if score @s rng1 matches 116 positioned -79685 32 27 run function skyblock:azr/assets/mobs/ravager
 
 execute if score @s rng1 matches 116 positioned -79699 32 -50 run function skyblock:azr/assets/mobs/piglin_crossbow
 execute if score @s rng1 matches 116 positioned -79699 32 -50 run function skyblock:azr/assets/mobs/piglin_crossbow
@@ -302,6 +304,7 @@ execute if score @s rng4 matches 125 positioned -79649 34 -18 run function skybl
 
 
 execute if score @s rng3 matches 2 positioned -79699 32 27 as @e[tag=AzrielMob_barrier_maintainer,distance=..100] run effect give @s resistance infinite 3 true
+execute if score @s rng3 matches 2 positioned -79699 32 27 as @e[tag=AzrielMob_barrier_maintainer,distance=..100] run effect give @s regeneration infinite 1 true
 execute if score @s rng3 matches 2 positioned -79699 32 27 as @e[tag=AzrielMob_barrier_maintainer,distance=..100] run effect give @s slowness infinite 5 true
 
 
