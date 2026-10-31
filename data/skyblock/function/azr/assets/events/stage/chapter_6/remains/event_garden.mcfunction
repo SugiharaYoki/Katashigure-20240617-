@@ -308,6 +308,7 @@ execute if entity @a[x=-79637,y=40,z=-41,dx=12,dy=5,dz=2,tag=azrPlayer] unless s
 execute if score @s rng5 matches 1 as @p[x=-79637,y=40,z=-41,dx=12,dy=5,dz=2,tag=azrPlayer] at @s run tp @a[tag=azrPlayer] @s
 execute if score @s rng5 matches 1.. run scoreboard players add @s rng5 1
 
+execute if score @s rng5 matches 2 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..59}] Azr_skillPoints 60
 execute if score @s rng5 matches 2 positioned -79631 43 -38 run scoreboard players set stage Azr_system 111
 execute if score @s rng5 matches 2 positioned -79631 43 -38 run playsound minecraft:block.trial_spawner.detect_player block @a ~ ~ ~ 2 0.7
 execute if score @s rng5 matches 2 run fill -79633 40 -38 -79629 43 -38 minecraft:purple_stained_glass
