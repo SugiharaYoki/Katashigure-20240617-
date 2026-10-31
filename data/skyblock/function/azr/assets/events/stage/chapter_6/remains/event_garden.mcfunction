@@ -236,6 +236,7 @@ execute if score @s rng3 matches 22 if entity @n[tag=AzrielMob_barrier_maintaine
 execute if score @s rng3 matches 23 run fill -79692 36 9 -79692 32 5 minecraft:air destroy
 
 execute if score @s rng3 matches 24 positioned -79699 32 13 run function skyblock:azr/assets/mobs/unique/candle_angel
+execute if score @s rng3 matches 24 positioned -79699 32 13 as @e[type=zombie,distance=..50] at @s run effect give @s resistance 50 1 true
 
 execute if score @s rng3 matches 27 positioned -79698 43 19 run particle flame ~ ~1 ~ 0 0 0 0.3 40
 execute if score @s rng3 matches 27 positioned -79698 43 19 run particle large_smoke ~ ~1 ~ 0 0 0 0.3 20
@@ -300,8 +301,8 @@ execute if score @s rng4 matches 125 positioned -79649 34 -18 run function skybl
 execute if score @s rng4 matches 125 positioned -79649 34 -18 run function skyblock:azr/assets/mobs/skill/boss_entrance/summon_midgarden
 
 
-execute if score @s rng3 matches 1 positioned -79699 32 27 as @e[tag=AzrielMob_barrier_maintainer,distance=..100] run effect give @s resistance infinite 1 true
-execute if score @s rng3 matches 1 positioned -79699 32 27 as @e[tag=AzrielMob_barrier_maintainer,distance=..100] run effect give @s slowness infinite 5 true
+execute if score @s rng3 matches 2 positioned -79699 32 27 as @e[tag=AzrielMob_barrier_maintainer,distance=..100] run effect give @s resistance infinite 3 true
+execute if score @s rng3 matches 2 positioned -79699 32 27 as @e[tag=AzrielMob_barrier_maintainer,distance=..100] run effect give @s slowness infinite 5 true
 
 
 execute if entity @a[x=-79637,y=40,z=-41,dx=12,dy=5,dz=2,tag=azrPlayer] unless score @s rng5 matches 1.. run scoreboard players set @s rng5 1
