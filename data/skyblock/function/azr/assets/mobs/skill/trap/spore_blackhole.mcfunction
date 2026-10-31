@@ -23,7 +23,9 @@ execute if score @s rng1 matches 47 run particle explosion ~ ~ ~ 2 1 2 0 4
 execute if score @s rng1 matches 47 run playsound entity.generic.explode ambient @a ~ ~ ~ 1.1 1.1
 execute if score @s rng1 matches 51 run particle explosion ~ ~ ~ 3 1 3 0 7
 execute if score @s rng1 matches 51 run playsound entity.generic.explode ambient @a ~ ~ ~ 1.4 1.1
+execute if score @s rng1 matches 51 as @a[distance=..8.5] run effect clear @s resistance
 execute if score @s rng1 matches 51 as @a[distance=..5] run damage @s 12 explosion
 execute if score @s rng1 matches 51 as @a[distance=..7] run damage @s 8 explosion
 execute if score @s rng1 matches 51 as @a[distance=..8.5] run damage @s 4 explosion
+
 execute if score @s rng1 matches 51.. run kill @s

@@ -58,6 +58,8 @@ execute if score @s rng1 matches 36..159 at @s positioned ~-0.5 ~-0.5 ~-0.5 if e
 # 命中效果与普通风相同
 execute if entity @s[tag=AzrielMob_trap_underwater_wind_hit] at @s run playsound minecraft:entity.wind_charge.wind_burst hostile @a[distance=..32] ~ ~ ~ 1 1
 execute if entity @s[tag=AzrielMob_trap_underwater_wind_hit] at @s run particle minecraft:small_gust ~ ~ ~ 0.4 0.4 0.4 0.05 25
+
+execute if entity @s[tag=AzrielMob_trap_underwater_wind_hit] at @s positioned ~-0.5 ~-0.5 ~-0.5 as @a[dx=0,dy=0,dz=0] run effect clear @s resistance
 execute if entity @s[tag=AzrielMob_trap_underwater_wind_hit] at @s positioned ~-0.5 ~-0.5 ~-0.5 as @a[dx=0,dy=0,dz=0] run damage @s 14 minecraft:mob_attack
 
 

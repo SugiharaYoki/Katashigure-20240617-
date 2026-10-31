@@ -8,6 +8,8 @@ execute if score @s rng1 matches 4.. at @s as @a[tag=azrPlayer] unless items ent
 
 execute as @e[tag=AzrielMob_piranha,distance=..3,type=salmon] at @s run damage @s 3.5 generic
 execute as @e[tag=AzrielMob,distance=..3] at @s run damage @s 1 generic
+
+execute as @a[tag=azrPlayer,distance=..3] at @s unless items entity @s container.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run effect clear @s resistance
 execute as @a[tag=azrPlayer,distance=..3] at @s unless items entity @s container.* *[custom_data~{azr_amulet_pollution_balancer:1b}] run damage @s 1 generic
 
 

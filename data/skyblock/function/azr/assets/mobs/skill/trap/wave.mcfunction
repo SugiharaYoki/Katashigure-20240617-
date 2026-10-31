@@ -16,6 +16,8 @@ execute if score @s rng1 matches 25 run particle splash ~ ~0.1 ~ 0.7 0.25 0.7 3.
 execute if score @s rng1 matches 25 run playsound minecraft:entity.dolphin.splash block @a ~ ~ ~ 0.8 1.3
 execute if score @s rng1 matches 25 run playsound minecraft:entity.firework_rocket.blast_far block @a ~ ~ ~ 0.8 1.2
 execute if score @s rng1 matches 25 run particle minecraft:crit ~ ~0.1 ~ 0.7 0.25 0.7 0.25 15
+
+execute if score @s rng1 matches 27 as @a[distance=..0.7] at @s run effect clear @s resistance
 execute if score @s rng1 matches 27 as @e[distance=..0.4,type=!slime] at @s run damage @s 8 explosion
 execute if score @s rng1 matches 27 as @e[distance=0.4..0.7,type=!slime] at @s run damage @s 6 explosion
 

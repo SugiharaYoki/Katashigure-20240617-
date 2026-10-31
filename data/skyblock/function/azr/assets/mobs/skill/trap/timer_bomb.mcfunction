@@ -23,6 +23,7 @@ execute if entity @s if score @s AzrEntityTimer matches 21 run particle explosio
 execute if entity @s if score @s AzrEntityTimer matches 21 run particle large_smoke ~ ~ ~ 1.3 1.3 1.3 0.02 20
 execute if entity @s if score @s AzrEntityTimer matches 21 run playsound entity.generic.explode hostile @a ~ ~ ~ 1.5 0.9
 
+execute if entity @s if score @s AzrEntityTimer matches 21 as @a[distance=0..4.2] run effect clear @s resistance
 execute if entity @s if score @s AzrEntityTimer matches 21 as @e[distance=0..1.3] run damage @s 24 explosion
 execute if entity @s if score @s AzrEntityTimer matches 21 as @e[distance=0..2.6] run damage @s 18 explosion
 execute if entity @s if score @s AzrEntityTimer matches 21 as @e[distance=0..3.3] run damage @s 12 explosion

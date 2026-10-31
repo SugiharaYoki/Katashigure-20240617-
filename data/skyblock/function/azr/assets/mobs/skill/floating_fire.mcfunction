@@ -16,6 +16,8 @@ execute if entity @a[tag=azrPlayer,distance=0..2] facing entity @p[tag=azrPlayer
 particle small_flame ~ ~0.1 ~ 0 0 0 0.02 1
 particle flame ~ ~0.1 ~ 0.05 0.05 0.05 0.00 1 force
 
+
+execute as @a[tag=azrPlayer,distance=..0.5] at @s run effect clear @s resistance
 execute as @a[tag=azrPlayer,distance=..0.5] at @s run damage @s 2 in_fire by @n[tag=AzrielMob_floating_fire]
 
 execute at @s if predicate skyblock:raining positioned over world_surface if entity @s[distance=..0.5] run damage @s 1.5 drown
