@@ -18,12 +18,17 @@ execute if score @s[tag=AZR_pillar_followplayer_1] rng1 matches 4 at @s run func
 
 execute if score @s rng1 matches 2 at @s as @a[distance=0..0.7] at @s run function skyblock:azr/system/player/map_effect/in_attack_range
 
-execute if score @s rng1 matches 8.. at @s as @a[distance=0..0.7] at @s run damage @s 8 falling_stalactite
-execute if score @s rng1 matches 8.. at @s positioned ~ ~-1 ~ as @a[distance=0..0.6] at @s run damage @s 8 falling_stalactite
-execute if score @s rng1 matches 8.. at @s positioned ~ ~0 ~ as @a[distance=0..0.6] at @s run damage @s 8 falling_stalactite
-execute if score @s rng1 matches 8.. at @s positioned ~ ~1 ~ as @a[distance=0..0.6] at @s run damage @s 8 falling_stalactite
-execute if score @s rng1 matches 8.. at @s positioned ~ ~2 ~ as @a[distance=0..0.6] at @s run damage @s 8 falling_stalactite
-execute if score @s rng1 matches 8.. at @s positioned ~ ~3 ~ as @a[distance=0..0.6] at @s run damage @s 8 falling_stalactite
+
+execute if score @s rng1 matches 8.. at @s positioned ~ ~-1 ~ as @a[distance=0..0.7] at @s run effect clear @s resistance
+execute if score @s rng1 matches 8.. at @s positioned ~ ~00 ~ as @a[distance=0..0.7] at @s run effect clear @s resistance
+execute if score @s rng1 matches 8.. at @s positioned ~ ~01 ~ as @a[distance=0..0.7] at @s run effect clear @s resistance
+execute if score @s rng1 matches 8.. at @s positioned ~ ~02 ~ as @a[distance=0..0.7] at @s run effect clear @s resistance
+execute if score @s rng1 matches 8.. at @s positioned ~ ~03 ~ as @a[distance=0..0.7] at @s run effect clear @s resistance
+execute if score @s rng1 matches 8.. at @s positioned ~ ~-1 ~ as @a[distance=0..0.7] at @s run damage @s 8 falling_stalactite
+execute if score @s rng1 matches 8.. at @s positioned ~ ~00 ~ as @a[distance=0..0.7] at @s run damage @s 8 falling_stalactite
+execute if score @s rng1 matches 8.. at @s positioned ~ ~01 ~ as @a[distance=0..0.7] at @s run damage @s 8 falling_stalactite
+execute if score @s rng1 matches 8.. at @s positioned ~ ~02 ~ as @a[distance=0..0.7] at @s run damage @s 8 falling_stalactite
+execute if score @s rng1 matches 8.. at @s positioned ~ ~03 ~ as @a[distance=0..0.7] at @s run damage @s 8 falling_stalactite
 execute if score @s rng1 matches 8.. at @s if block ~ ~ ~ #skyblock:water run particle bubble_column_up ~ ~2 ~ 0.1 1.5 0.1 0 18
 execute if score @s rng1 matches 8.. at @s if block ~ ~ ~ #skyblock:water run playsound entity.player.splash.high_speed hostile @a ~ ~ ~ 0.8 0.85
 execute if score @s rng1 matches 8.. at @s unless block ~ ~ ~ #skyblock:water run playsound block.anvil.place hostile @a ~ ~ ~ 0.8 1.3
