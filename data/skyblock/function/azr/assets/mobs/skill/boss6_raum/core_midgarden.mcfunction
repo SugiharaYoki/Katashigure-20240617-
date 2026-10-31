@@ -109,7 +109,7 @@ execute if score @s rng20 matches 1000.. unless entity @s[tag=AzrRaum_midgarden_
 
 # 每轴移动“剩余距离 / 剩余 tick”，保证未被判输打断时，5 秒抵达精确坐标。
 execute if entity @s[tag=AzrRaum_midgarden_retreat,scores={rng8=1..}] store result score @s rng10 run data get entity @s Pos[0] 1000
-execute if entity @s[tag=AzrRaum_midgarden_retreat,scores={rng8=1..}] run scoreboard players set @s rng11 -79638000
+execute if entity @s[tag=AzrRaum_midgarden_retreat,scores={rng8=1..}] run scoreboard players set @s rng11 -79637000
 execute if entity @s[tag=AzrRaum_midgarden_retreat,scores={rng8=1..}] run scoreboard players operation @s rng11 -= @s rng10
 execute if entity @s[tag=AzrRaum_midgarden_retreat,scores={rng8=1..}] run scoreboard players operation @s rng11 /= @s rng8
 execute if entity @s[tag=AzrRaum_midgarden_retreat,scores={rng8=1..}] run scoreboard players operation @s rng10 += @s rng11
@@ -121,11 +121,11 @@ execute if entity @s[tag=AzrRaum_midgarden_retreat,scores={rng8=1..}] run scoreb
 execute if entity @s[tag=AzrRaum_midgarden_retreat,scores={rng8=1..}] run scoreboard players operation @s rng10 += @s rng11
 execute if entity @s[tag=AzrRaum_midgarden_retreat,scores={rng8=1..}] store result entity @s Pos[1] double 0.001 run scoreboard players get @s rng10
 execute if entity @s[tag=AzrRaum_midgarden_retreat,scores={rng8=1..}] store result score @s rng10 run data get entity @s Pos[2] 1000
-execute if entity @s[tag=AzrRaum_midgarden_retreat,scores={rng8=1..}] run scoreboard players set @s rng11 -67000
+execute if entity @s[tag=AzrRaum_midgarden_retreat,scores={rng8=1..}] run scoreboard players set @s rng11 -69000
 execute if entity @s[tag=AzrRaum_midgarden_retreat,scores={rng8=1..}] run scoreboard players operation @s rng11 -= @s rng10
 execute if entity @s[tag=AzrRaum_midgarden_retreat,scores={rng8=1..}] run scoreboard players operation @s rng11 /= @s rng8
 execute if entity @s[tag=AzrRaum_midgarden_retreat,scores={rng8=1..}] run scoreboard players operation @s rng10 += @s rng11
 execute if entity @s[tag=AzrRaum_midgarden_retreat,scores={rng8=1..}] store result entity @s Pos[2] double 0.001 run scoreboard players get @s rng10
 execute if entity @s[tag=AzrRaum_midgarden_retreat,scores={rng8=1..}] run scoreboard players remove @s rng8 1
-execute if entity @s[tag=AzrRaum_midgarden_retreat,tag=!AzrRaum_midgarden_retreat_done,scores={rng8=0}] run tp @s -79638.0 40.0 -67.0
+execute if entity @s[tag=AzrRaum_midgarden_retreat,tag=!AzrRaum_midgarden_retreat_done,scores={rng8=0}] run tp @s -79637 40 -69
 execute if entity @s[tag=AzrRaum_midgarden_retreat,tag=!AzrRaum_midgarden_retreat_done,scores={rng8=0}] run tag @s add AzrRaum_midgarden_retreat_done
