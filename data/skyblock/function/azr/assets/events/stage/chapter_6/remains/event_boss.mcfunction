@@ -27,6 +27,7 @@ execute if score @s rng1 matches 5007 run bossbar add azr:boss_hp_bar [{text:"Âç
 execute if score @s rng1 matches 5007 run bossbar set azr:boss_hp_bar color yellow
 execute if score @s rng1 matches 5007 run bossbar set azr:boss_hp_bar max 100
 execute if score @s rng1 matches 5007 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
+execute if score @s rng1 matches 5007 run scoreboard players set stage Azr_system 112
 
 execute if score @s rng1 matches 9999 run scoreboard players set @s rng1 9998
 execute if score @s rng1 matches ..9999 if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:viciousheroism music @s ~ ~ ~ 0.7
