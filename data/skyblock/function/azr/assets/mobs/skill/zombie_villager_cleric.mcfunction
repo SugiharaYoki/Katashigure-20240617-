@@ -2,7 +2,6 @@ scoreboard players add @s rng1 1
 
 execute if score @s rng1 matches 2 run effect clear @s slowness
 execute if score @s rng1 matches 2 run effect give @s resistance 3 2 true
-execute if score @s rng1 matches 2 run data modify entity @s Invulnerable set value 1b
 
 execute if score @s rng1 matches 48..49 run scoreboard players set @s rng1 48
 execute if score @s rng1 matches 48..49 if entity @a[tag=azrPlayer,distance=..5.5] run scoreboard players set @s rng1 50
