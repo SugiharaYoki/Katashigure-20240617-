@@ -2,7 +2,8 @@
 
 scoreboard players add @s rng1 1
 execute if entity @s[scores={rng1=1}] store result score @s rng8 run random value 1..4
-execute if entity @s[scores={rng1=1}] at @s rotated as @n[tag=AzrielBossDiesel] run tp @s ^ ^ ^-1 facing entity @n[tag=AzrielBossDiesel]
+execute if entity @s[scores={rng1=1}] at @s rotated as @n[tag=AzrielBossDiesel,distance=..50] run tp @s ^ ^ ^-1 facing entity @n[tag=AzrielBossDiesel]
+execute if entity @s[scores={rng1=1}] at @s unless entity @n[tag=AzrielBossDiesel,distance=..50] rotated as @n[tag=AzrielNPC_raum,distance=..50] run tp @s ^ ^ ^-1 facing entity @n[tag=AzrielNPC_raum]
 execute if entity @s[scores={rng1=2}] at @s rotated as @s run tp @s ^ ^ ^1
 
 execute if score @s rng8 matches 2..4 if entity @a[tag=azrPlayer,distance=0.5..1.0] run scoreboard players set @s rng8 5

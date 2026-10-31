@@ -33,15 +33,15 @@ execute if entity @s[tag=AzrRaum_midgarden_active] as @p[tag=azrPlayer] at @s an
 execute if entity @s[tag=AzrRaum_midgarden_active] as @p[tag=azrPlayer] at @s anchored eyes positioned ^ ^ ^ facing entity @e[type=mannequin,tag=AzrielNPC_raum,limit=1] feet rotated ~ 0 positioned ^ ^10 ^5 unless entity @e[type=mannequin,tag=AzrielNPC_raum,distance=..0.15,limit=1] facing entity @e[type=mannequin,tag=AzrielNPC_raum,limit=1] feet positioned as @e[type=mannequin,tag=AzrielNPC_raum,limit=1] run tp @e[type=mannequin,tag=AzrielNPC_raum,limit=1] ^ ^ ^-0.15
 execute if entity @s[tag=AzrRaum_midgarden_active] at @s run rotate @s facing entity @p[tag=azrPlayer] eyes
 
-# 音爆分支：准备约 1 秒后，从抽中的同一侧发射 3 枚弹，每枚间隔 4 tick。
-execute if entity @s[tag=AzrRaum_midgarden_active] if score @s rng6 matches 1..28 run scoreboard players add @s rng6 1
+# 音爆分支：准备约 1 秒后，从抽中的同一侧发射 3 枚弹，每枚间隔 10 tick。
+execute if entity @s[tag=AzrRaum_midgarden_active] if score @s rng6 matches 1..40 run scoreboard players add @s rng6 1
 execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng5=1,rng6=20}] at @s rotated ~ 0 positioned ^2 ^1 ^ run summon marker ~ ~ ~ {Tags:["AzrRaum_midgarden_sonic"]}
 execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng5=2,rng6=20}] at @s rotated ~ 0 positioned ^-2 ^1 ^ run summon marker ~ ~ ~ {Tags:["AzrRaum_midgarden_sonic"]}
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng5=1,rng6=24}] at @s rotated ~ 0 positioned ^2 ^1 ^ run summon marker ~ ~ ~ {Tags:["AzrRaum_midgarden_sonic"]}
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng5=2,rng6=24}] at @s rotated ~ 0 positioned ^-2 ^1 ^ run summon marker ~ ~ ~ {Tags:["AzrRaum_midgarden_sonic"]}
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng5=1,rng6=28}] at @s rotated ~ 0 positioned ^2 ^1 ^ run summon marker ~ ~ ~ {Tags:["AzrRaum_midgarden_sonic"]}
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng5=2,rng6=28}] at @s rotated ~ 0 positioned ^-2 ^1 ^ run summon marker ~ ~ ~ {Tags:["AzrRaum_midgarden_sonic"]}
-execute if score @s rng6 matches 28.. run scoreboard players set @s rng6 0
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng5=1,rng6=30}] at @s rotated ~ 0 positioned ^2 ^1 ^ run summon marker ~ ~ ~ {Tags:["AzrRaum_midgarden_sonic"]}
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng5=2,rng6=30}] at @s rotated ~ 0 positioned ^-2 ^1 ^ run summon marker ~ ~ ~ {Tags:["AzrRaum_midgarden_sonic"]}
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng5=1,rng6=40}] at @s rotated ~ 0 positioned ^2 ^1 ^ run summon marker ~ ~ ~ {Tags:["AzrRaum_midgarden_sonic"]}
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng5=2,rng6=40}] at @s rotated ~ 0 positioned ^-2 ^1 ^ run summon marker ~ ~ ~ {Tags:["AzrRaum_midgarden_sonic"]}
+execute if score @s rng6 matches 40.. run scoreboard players set @s rng6 0
 
 # 每次冷却结束，独立抽签：1/4 为音爆三连发，其余为脚边火柱。
 execute if entity @s[tag=AzrRaum_midgarden_active] if score @s rng1 matches 2.. run scoreboard players remove @s rng2 1

@@ -1,0 +1,19 @@
+# 每轮 18 个点，水平每隔 20 度；复用 trap_fang_auto 的地面检测。
+$execute rotated ~0 0 positioned ^ ^ ^$(radius) positioned ~ 40 ~ run function skyblock:azr/assets/mobs/trap_fang_auto
+$execute rotated ~20 0 positioned ^ ^ ^$(radius) positioned ~ 40 ~ run function skyblock:azr/assets/mobs/trap_fang_auto
+$execute rotated ~40 0 positioned ^ ^ ^$(radius) positioned ~ 40 ~ run function skyblock:azr/assets/mobs/trap_fang_auto
+$execute rotated ~60 0 positioned ^ ^ ^$(radius) positioned ~ 40 ~ run function skyblock:azr/assets/mobs/trap_fang_auto
+$execute rotated ~80 0 positioned ^ ^ ^$(radius) positioned ~ 40 ~ run function skyblock:azr/assets/mobs/trap_fang_auto
+$execute rotated ~100 0 positioned ^ ^ ^$(radius) positioned ~ 40 ~ run function skyblock:azr/assets/mobs/trap_fang_auto
+$execute rotated ~120 0 positioned ^ ^ ^$(radius) positioned ~ 40 ~ run function skyblock:azr/assets/mobs/trap_fang_auto
+$execute rotated ~140 0 positioned ^ ^ ^$(radius) positioned ~ 40 ~ run function skyblock:azr/assets/mobs/trap_fang_auto
+$execute rotated ~160 0 positioned ^ ^ ^$(radius) positioned ~ 40 ~ run function skyblock:azr/assets/mobs/trap_fang_auto
+$execute rotated ~180 0 positioned ^ ^ ^$(radius) positioned ~ 40 ~ run function skyblock:azr/assets/mobs/trap_fang_auto
+$execute rotated ~200 0 positioned ^ ^ ^$(radius) positioned ~ 40 ~ run function skyblock:azr/assets/mobs/trap_fang_auto
+$execute rotated ~220 0 positioned ^ ^ ^$(radius) positioned ~ 40 ~ run function skyblock:azr/assets/mobs/trap_fang_auto
+$execute rotated ~240 0 positioned ^ ^ ^$(radius) positioned ~ 40 ~ run function skyblock:azr/assets/mobs/trap_fang_auto
+$execute rotated ~260 0 positioned ^ ^ ^$(radius) positioned ~ 40 ~ run function skyblock:azr/assets/mobs/trap_fang_auto
+$execute rotated ~280 0 positioned ^ ^ ^$(radius) positioned ~ 40 ~ run function skyblock:azr/assets/mobs/trap_fang_auto
+$execute rotated ~300 0 positioned ^ ^ ^$(radius) positioned ~ 40 ~ run function skyblock:azr/assets/mobs/trap_fang_auto
+$execute rotated ~320 0 positioned ^ ^ ^$(radius) positioned ~ 40 ~ run function skyblock:azr/assets/mobs/trap_fang_auto
+$execute rotated ~340 0 positioned ^ ^ ^$(radius) positioned ~ 40 ~ run function skyblock:azr/assets/mobs/trap_fang_auto
