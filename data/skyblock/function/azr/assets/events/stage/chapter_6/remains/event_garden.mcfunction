@@ -309,7 +309,14 @@ execute if score @s rng5 matches 1.. run scoreboard players add @s rng5 1
 execute if score @s rng5 matches 2 positioned -79631 43 -38 run playsound minecraft:block.trial_spawner.detect_player block @a ~ ~ ~ 2 0.7
 execute if score @s rng5 matches 2 run fill -79633 40 -38 -79629 43 -38 minecraft:purple_stained_glass
 
-
+execute if score @s rng5 matches 6 positioned -79631 40 -71 as @n[tag=AzrielNPC_malpas] at @s run effect give @s invisibility 3 0 true
+execute if score @s rng5 matches 6 positioned -79631 40 -71 as @n[tag=AzrielNPC_malpas] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+execute if score @s rng5 matches 6 positioned -79631 40 -71 as @n[tag=AzrielNPC_malpas] at @s run effect clear @s invisibility
+execute if score @s rng5 matches 6 positioned -79631 40 -71 as @n[tag=AzrielNPC_malpas] at @s run function skyblock:azr/assets/mobs/skill/boss5_focalor/particle_davidstar
+execute if score @s rng5 matches 6 positioned -79631 40 -71 as @n[tag=AzrielNPC_malpas] at @s positioned ~ ~ ~3 run summon lightning_bolt
+execute if score @s rng5 matches 6 positioned -79631 40 -71 as @n[tag=AzrielNPC_malpas] at @s positioned ~ ~ ~-3 run summon lightning_bolt
+execute if score @s rng5 matches 6 positioned -79631 40 -71 as @n[tag=AzrielNPC_malpas] at @s positioned ~3 ~ ~ run summon lightning_bolt
+execute if score @s rng5 matches 6 positioned -79631 40 -71 as @n[tag=AzrielNPC_malpas] at @s positioned ~-3 ~ ~ run summon lightning_bolt
 
 
 
