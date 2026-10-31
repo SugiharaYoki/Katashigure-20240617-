@@ -23,7 +23,7 @@ execute if score @s rng1 matches 5007 as @a[tag=azrShowDialog] at @s run playsou
 execute if score @s rng1 matches 5007 as @a[tag=azrShowDialog] at @s run title @s title {text:"劳 姆",color: "#fff050",bold:1b}
 execute if score @s rng1 matches 5007 as @a[tag=azrShowDialog] at @s run title @s subtitle {text:"所 罗 门 72 柱 魔 神 · 第 40 柱",color: "white",bold:0b}
 
-execute if score @s rng1 matches 5007 run bossbar add azr:boss_hp_bar [{text:"千宇坏劣，均为拯救 渡鸦 · ",bold:true,color:"white"},{text:"劳姆",bold:true,color:"#fff050"}]
+execute if score @s rng1 matches 5007 run bossbar add azr:boss_hp_bar [{text:"千厦坏劣，昏鸟筑衢 魔神 · ",bold:true,color:"white"},{text:"劳姆",bold:true,color:"#fff050"}]
 execute if score @s rng1 matches 5007 run bossbar set azr:boss_hp_bar color yellow
 execute if score @s rng1 matches 5007 run bossbar set azr:boss_hp_bar max 100
 execute if score @s rng1 matches 5007 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
