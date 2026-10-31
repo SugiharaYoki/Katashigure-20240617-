@@ -43,7 +43,7 @@ $execute if entity @s[scores={Azr_Shop=8432113}] run scoreboard players $(cost_o
 
 
 $execute if entity @s[scores={Azr_Shop=8432114}] run tag @s $(tag_op) AzrSariel_upg5B
-$execute if entity @s[scores={Azr_Shop=8432115}] run tag @s $(tag_op) AzrSariel_upg5C
+$execute if entity @s[scores={Azr_Shop=8432115}] run tag @s $(tag_op) AzrSariel_upg1D
 $execute if entity @s[scores={Azr_Shop=8432116}] run tag @s $(tag_op) AzrSariel_upg5D
 $execute if entity @s[scores={Azr_Shop=8432114}] run scoreboard players $(emerald_op) @s Azr_emerald 5
 $execute if entity @s[scores={Azr_Shop=8432115}] run scoreboard players $(emerald_op) @s Azr_emerald 20
@@ -84,7 +84,7 @@ $execute if entity @s[scores={Azr_Shop=8432122}] run scoreboard players $(cost_o
 $execute if entity @s[scores={Azr_Shop=8432123}] run scoreboard players $(cost_op) @s AzrSariel_Data_CostAmount 50
 $execute if entity @s[scores={Azr_Shop=8432124}] run scoreboard players $(cost_op) @s AzrSariel_Data_CostAmount 40
 
-$execute if entity @s[scores={Azr_Shop=8432127}] run tag @s $(tag_op) AzrSariel_upg1D
+$execute if entity @s[scores={Azr_Shop=8432127}] run tag @s $(tag_op) AzrSariel_upg1F
 $execute if entity @s[scores={Azr_Shop=8432128}] run tag @s $(tag_op) AzrSariel_upg2D
 $execute if entity @s[scores={Azr_Shop=8432129}] run tag @s $(tag_op) AzrSariel_upg4D
 $execute if entity @s[scores={Azr_Shop=8432127}] run scoreboard players $(emerald_op) @s Azr_emerald 20
@@ -96,7 +96,7 @@ $execute if entity @s[scores={Azr_Shop=8432129}] run scoreboard players $(cost_o
 
 $execute if entity @s[scores={Azr_Shop=8432130}] run tag @s $(tag_op) AzrSariel_upg10C
 $execute if entity @s[scores={Azr_Shop=8432131}] run tag @s $(tag_op) AzrSariel_upg11B
-$execute if entity @s[scores={Azr_Shop=8432132}] run tag @s $(tag_op) AzrSariel_upg11C
+$execute if entity @s[scores={Azr_Shop=8432132}] run tag @s $(tag_op) AzrSariel_upg12F
 $execute if entity @s[scores={Azr_Shop=8432130}] run scoreboard players $(emerald_op) @s Azr_emerald 30
 $execute if entity @s[scores={Azr_Shop=8432131}] run scoreboard players $(emerald_op) @s Azr_emerald 20
 $execute if entity @s[scores={Azr_Shop=8432132}] run scoreboard players $(emerald_op) @s Azr_emerald 30
@@ -179,6 +179,14 @@ $execute if entity @s[scores={Azr_Shop=8432153}] run scoreboard players $(cost_o
 
 
 
+
+# 新增 5C 生命、11C 攻击升级；购买与退还使用相同价格。
+$execute if entity @s[scores={Azr_Shop=8432154}] run tag @s $(tag_op) AzrSariel_upg5C
+$execute if entity @s[scores={Azr_Shop=8432154}] run scoreboard players $(emerald_op) @s Azr_emerald 50
+$execute if entity @s[scores={Azr_Shop=8432154}] run scoreboard players $(cost_op) @s AzrSariel_Data_CostAmount 50
+$execute if entity @s[scores={Azr_Shop=8432155}] run tag @s $(tag_op) AzrSariel_upg11C
+$execute if entity @s[scores={Azr_Shop=8432155}] run scoreboard players $(emerald_op) @s Azr_emerald 50
+$execute if entity @s[scores={Azr_Shop=8432155}] run scoreboard players $(cost_op) @s AzrSariel_Data_CostAmount 50
 
 tag @s remove AZR_sariel_01_effected
 

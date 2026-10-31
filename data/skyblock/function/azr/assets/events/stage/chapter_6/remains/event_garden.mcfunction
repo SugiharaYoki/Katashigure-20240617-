@@ -180,7 +180,10 @@ execute if score @s rng1 matches 670 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 720 as @p[tag=azrPlayer] at @s if entity @n[type=pillager,distance=..30] run tellraw @a[tag=azrShowDialog] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“是渡鸦劳姆！！”",color:"white"}]
 execute if score @s rng1 matches 740 as @p[tag=azrPlayer] at @s if entity @n[type=vindicator,distance=..30] run tellraw @a[tag=azrShowDialog] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“大家注意，不要被打中了！！”",color:"white"}]
 
-
+execute if score @s[tag=!the_fourth_door_hint] rng1 matches ..819 positioned -79651 36 -30 if entity @a[tag=azrPlayer,distance=..7] if entity @n[type=pillager,distance=..30] run tellraw @a[tag=azrShowDialog] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“这门打不开，找不到对应的结界兽！！”",color:"white"}]
+execute if score @s[tag=!the_fourth_door_hint] rng1 matches ..819 positioned -79651 36 -30 if entity @a[tag=azrPlayer,distance=..7] run tag @s add the_fourth_door_hint
+execute if score @s rng1 matches 820 run fill -79652 37 -31 -79650 40 -31 minecraft:air destroy
+execute if score @s[tag=the_fourth_door_hint] rng1 matches 820 positioned -79651 36 -30 if entity @n[type=pillager,distance=..30] run tellraw @a[tag=azrShowDialog] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“终于开了！！大家冲啊！”",color:"white"}]
 
 #结界关口
 execute if score @s rng1 matches 101.. run scoreboard players add @s rng3 1

@@ -1,3 +1,7 @@
+# 5C、11C 属性也由 removeallgaming 的统一清理调用移除。
+attribute @s max_health modifier remove azr_sariel:upg_5c
+attribute @s attack_damage modifier remove azr_sariel:upg_11c
+
 attribute @s armor modifier remove azr_sariel:upg_01
 attribute @s max_health modifier remove azr_sariel:upg_02
 attribute @s armor modifier remove azr_sariel:upg_03

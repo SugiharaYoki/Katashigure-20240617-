@@ -1,3 +1,7 @@
+# 重置时立即移除新增的属性加成。
+attribute @s max_health modifier remove azr_sariel:upg_5c
+attribute @s attack_damage modifier remove azr_sariel:upg_11c
+
 
 scoreboard players set @s AzrSariel_Side_Life 0
 scoreboard players set @s AzrSariel_Side_Death 0
