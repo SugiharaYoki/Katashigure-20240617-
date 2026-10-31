@@ -43,3 +43,6 @@ execute if score @s rng1 matches 1 run data modify entity @s NoGravity set value
 
 execute if score @s Health matches 1.. if score @s rng1 matches 21..999 if score @s rng2 matches 1..2 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_attack_a
 execute if score @s Health matches 1.. if score @s rng1 matches 21..999 if score @s rng2 matches 3..4 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_attack_b
+
+
+

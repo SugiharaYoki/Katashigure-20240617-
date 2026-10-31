@@ -61,43 +61,43 @@ execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0,rng4=2..4,rng
 execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run rotate @s facing entity @p[tag=azrPlayer] eyes
 
 # 每轮施法瞬间，在劳姆身体周围显示半径 2 格的铜火焰环。
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~2 ~1 ~ 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~1.732 ~1 ~1 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~1 ~1 ~1.732 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~ ~1 ~2 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-1 ~1 ~1.732 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-1.732 ~1 ~1 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-2 ~1 ~ 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-1.732 ~1 ~-1 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-1 ~1 ~-1.732 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~ ~1 ~-2 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~1 ~1 ~-1.732 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~1.732 ~1 ~-1 0 0 0 0 3 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~2 ~1 ~ 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~1.732 ~1 ~1 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~1 ~1 ~1.732 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~ ~1 ~2 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-1 ~1 ~1.732 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-1.732 ~1 ~1 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-2 ~1 ~ 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-1.732 ~1 ~-1 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-1 ~1 ~-1.732 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~ ~1 ~-2 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~1 ~1 ~-1.732 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~1.732 ~1 ~-1 0 0 0 0 1 force
 # 第二层铜火焰环：与第一层同心，半径 4 格，24 个点保持相近密度。
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~4 ~1 ~ 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~3.863703 ~1 ~1.035276 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~3.464102 ~1 ~2 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~2.828427 ~1 ~2.828427 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~2 ~1 ~3.464102 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~1.035276 ~1 ~3.863703 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~ ~1 ~4 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-1.035276 ~1 ~3.863703 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-2 ~1 ~3.464102 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-2.828427 ~1 ~2.828427 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-3.464102 ~1 ~2 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-3.863703 ~1 ~1.035276 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-4 ~1 ~ 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-3.863703 ~1 ~-1.035276 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-3.464102 ~1 ~-2 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-2.828427 ~1 ~-2.828427 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-2 ~1 ~-3.464102 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-1.035276 ~1 ~-3.863703 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~ ~1 ~-4 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~1.035276 ~1 ~-3.863703 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~2 ~1 ~-3.464102 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~2.828427 ~1 ~-2.828427 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~3.464102 ~1 ~-2 0 0 0 0 3 force
-execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~3.863703 ~1 ~-1.035276 0 0 0 0 3 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~4 ~1 ~ 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~3.863703 ~1 ~1.035276 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~3.464102 ~1 ~2 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~2.828427 ~1 ~2.828427 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~2 ~1 ~3.464102 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~1.035276 ~1 ~3.863703 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~ ~1 ~4 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-1.035276 ~1 ~3.863703 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-2 ~1 ~3.464102 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-2.828427 ~1 ~2.828427 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-3.464102 ~1 ~2 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-3.863703 ~1 ~1.035276 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-4 ~1 ~ 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-3.863703 ~1 ~-1.035276 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-3.464102 ~1 ~-2 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-2.828427 ~1 ~-2.828427 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-2 ~1 ~-3.464102 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~-1.035276 ~1 ~-3.863703 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~ ~1 ~-4 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~1.035276 ~1 ~-3.863703 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~2 ~1 ~-3.464102 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~2.828427 ~1 ~-2.828427 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~3.464102 ~1 ~-2 0 0 0 0 1 force
+execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] at @s run particle minecraft:copper_fire_flame ~3.863703 ~1 ~-1.035276 0 0 0 0 1 force
 execute if entity @s[tag=AzrRaum_midgarden_active,scores={rng2=..0}] store result score @s rng2 run random value 60..100
 
 # 主事件达到 1000：立即停攻，清理未命中的攻击，开启无敌并用 100 tick 退场。
