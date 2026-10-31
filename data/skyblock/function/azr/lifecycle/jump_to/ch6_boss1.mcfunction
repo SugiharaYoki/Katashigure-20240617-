@@ -29,9 +29,14 @@ fill -79633 40 -38 -79629 43 -38 minecraft:purple_stained_glass
 
 
 
+execute positioned -79747 32 -13 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79747 32 -13 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng1 3000
+execute positioned -79747 32 -13 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng2 3000
+execute positioned -79747 32 -13 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng3 3000
+execute positioned -79747 32 -13 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng4 3000
+execute positioned -79747 32 -13 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng5 1
 
-
-
+execute positioned -79637 40 -69 run function skyblock:azr/assets/mobs/skill/boss6_raum/summon
 
 
 
