@@ -5,7 +5,7 @@ scoreboard players add @s rng5 1
 scoreboard players add @s rng9 1
 
 
-execute if score @s rng5 matches 130 run scoreboard players set @s rng1 5000
+execute if score @s rng1 matches ..4999 run scoreboard players set @s rng1 5000
 
 
 

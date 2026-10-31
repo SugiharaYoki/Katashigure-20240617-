@@ -328,13 +328,13 @@ execute if score @s rng5 matches 6 positioned -79631 40 -71 as @n[tag=AzrielNPC_
 
 execute if score @s rng5 matches 15 run tellraw @a[tag=azrShowDialog] [{text:"预言家 玛帕斯：",color:"#9c101e",bold:1b},{bold: false,text:"\n“我现在知晓你为何能够从魔界一路杀回神庭了。”",color:"white"}]
 execute if score @s rng5 matches 27 run tellraw @a[tag=azrShowDialog] [{text:"预言家 玛帕斯：",color:"#9c101e",bold:1b},{bold: false,text:"\n“拥有魔神级实力的你，确实配当我们的对手。”",color:"white"}]
-execute if score @s rng5 matches 43 run tellraw @a[tag=azrShowDialog] [{text:"渡鸦 劳姆：",color:"#9c101e",bold:1b},{bold: false,text:"\n“但还不够，我能干掉她。”",color:"white"}]
+execute if score @s rng5 matches 43 run tellraw @a[tag=azrShowDialog] [{text:"渡鸦 劳姆：",color:"#fff050",bold:1b},{bold: false,text:"\n“但还不够，我能干掉她。”",color:"white"}]
 
 execute if score @s rng5 matches 56 run tellraw @a[tag=azrShowDialog] [{text:"预言家 玛帕斯：",color:"#9c101e",bold:1b},{bold: false,text:"\n“这你就不懂了吧，弟弟。她的实力远比看上去的要强。”",color:"white"}]
-execute if score @s rng5 matches 64 run tellraw @a[tag=azrShowDialog] [{text:"渡鸦 劳姆：",color:"#9c101e",bold:1b},{bold: false,text:"\n“光能干掉那些乌合之众，尚不足以证明她配当我的对手。”",color:"white"}]
+execute if score @s rng5 matches 64 run tellraw @a[tag=azrShowDialog] [{text:"渡鸦 劳姆：",color:"#fff050",bold:1b},{bold: false,text:"\n“光能干掉那些乌合之众，尚不足以证明她配当我的对手。”",color:"white"}]
 execute if score @s rng1 matches 76 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“你们聊完双口相声了吗？我可要上了。”",color:"white"}]
 
-execute if score @s rng5 matches 90 run tellraw @a[tag=azrShowDialog] [{text:"预言家 玛帕斯：",color:"#9c101e",bold:1b},{bold: false,text:"\n“弟弟，你不是说你一个人就行吗？上吧。”",color:"white"}]
+execute if score @s rng5 matches 90 run tellraw @a[tag=azrShowDialog] [{text:"预言家 玛帕斯：",color:"#fff050",bold:1b},{bold: false,text:"\n“弟弟，你不是说你一个人就行吗？上吧。”",color:"white"}]
 
 
 execute if score @s rng5 matches 90 as @n[tag=AzrielNPC_raum] at @s run data modify entity @s NoGravity set value 0b
@@ -350,8 +350,8 @@ execute if score @s rng5 matches 103 as @n[tag=AzrielNPC_raum] at @s rotated ~ 0
 execute if score @s rng5 matches 103 as @n[tag=AzrielNPC_raum] at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_move_marker_raum] Pos
 execute if score @s rng5 matches 103 as @n[tag=AzrielNPC_raum] at @s run kill @e[type=marker,tag=AzrielMob_move_marker_raum]
 
-execute if score @s rng5 matches 109 run tellraw @a[tag=azrShowDialog] [{text:"渡鸦 劳姆：",color:"#9c101e",bold:1b},{bold: false,text:"\n“呵呵……我可不管你有没有干掉那个自大无谋的亚米，至于佛卡洛也早就半只脚踏进坟墓了。”",color:"white"}]
-execute if score @s rng5 matches 121 run tellraw @a[tag=azrShowDialog] [{text:"渡鸦 劳姆：",color:"#9c101e",bold:1b},{bold: false,text:"\n“我会让你与他们一同粉身碎骨。”",color:"white"}]
+execute if score @s rng5 matches 109 run tellraw @a[tag=azrShowDialog] [{text:"渡鸦 劳姆：",color:"#fff050",bold:1b},{bold: false,text:"\n“呵呵……我可不管你有没有干掉那个自大无谋的亚米，至于佛卡洛也早就半只脚踏进坟墓了。”",color:"white"}]
+execute if score @s rng5 matches 121 run tellraw @a[tag=azrShowDialog] [{text:"渡鸦 劳姆：",color:"#fff050",bold:1b},{bold: false,text:"\n“我会让你与他们一同粉身碎骨。”",color:"white"}]
 
 
 
