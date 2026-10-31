@@ -119,7 +119,7 @@ execute if score @s rng1 matches 101 run tellraw @a[tag=azrShowDialog] [{text:"�
 
 execute if score @s rng1 matches 118 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“大人，我们没有重来的机会。这是殊死一搏。”",color:"white"}]
 
-execute if score @s rng1 matches 101 as @p[tag=azrPlayer] at @s run tp @a[tag=azrPlayer] @s
+execute if score @s rng1 matches 101 as @p[tag=azrPlayer] at @s run tp @a[tag=azrPlayer,distance=1..] @s
 execute if score @s rng1 matches 101 as @a[tag=azrPlayer] at @s run effect give @s saturation 3 5 true
 execute if score @s rng1 matches 101 as @a[tag=azrPlayer] at @s run effect give @s regeneration 9 9 true
 execute if score @s rng1 matches 101 as @a[tag=azrShowDialog] at @s run stopsound @s
@@ -309,7 +309,7 @@ execute if score @s rng3 matches 2 positioned -79699 32 27 as @e[tag=AzrielMob_b
 
 
 execute if entity @a[x=-79637,y=40,z=-41,dx=12,dy=5,dz=2,tag=azrPlayer] unless score @s rng5 matches 1.. run scoreboard players set @s rng5 1
-execute if score @s rng5 matches 1 as @p[x=-79637,y=40,z=-41,dx=12,dy=5,dz=2,tag=azrPlayer] at @s run tp @a[tag=azrPlayer] @s
+execute if score @s rng5 matches 1 as @p[x=-79637,y=40,z=-41,dx=12,dy=5,dz=2,tag=azrPlayer] at @s run tp @a[tag=azrPlayer,distance=1..] @s
 execute if score @s rng5 matches 1.. run scoreboard players add @s rng5 1
 
 execute if score @s rng5 matches 2 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..59}] Azr_skillPoints 60
