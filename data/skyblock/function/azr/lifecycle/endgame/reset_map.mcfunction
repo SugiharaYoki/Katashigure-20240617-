@@ -448,6 +448,18 @@ item replace block -79714 40 87 container.11 with emerald 1
 item replace block -79714 40 87 container.13 with resin_clump 1
 item replace block -79714 40 87 container.15 with emerald 1
 
+#地下图书室
+setblock -79876 32 100 minecraft:potted_birch_sapling
+setblock -79864 32 94 minecraft:potted_allium
+setblock -79874 31 91 chest[facing=south]
+item replace block -79874 31 91 container.13 with tripwire_hook[custom_name={text:"简单钥匙",color:"blue",italic:0b},custom_data={azr_key:1b}] 1
+fill -79881 37 91 -79880 37 93 minecraft:honey_block
+setblock -79859 32 97 air
+setblock -79859 32 97 lever[face=wall,facing=west]
+#格剌西亚拉波斯大人为了保证神圣的图书馆不被污秽的力量所沾染，特意训练出一个战斗力极为强大的亡魂。
+#他称之为阴影处刑者。并以在此基础为原型，创造出了许多的分身。
+#这些分身留存了一部分瞬间传送到敌方背后展开刺杀的行动能力，强度而言比不上阴影处刑者。尽管如此，也能让敌人喝上一大壶了。
+
 
 #刺客boss
 schedule function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_assassin 5t
@@ -519,7 +531,7 @@ item replace block -79917 40 -62 container.11 with resin_clump 1
 item replace block -79917 40 -62 container.13 with resin_clump 1
 item replace block -79917 40 -62 container.15 with skull_banner_pattern[custom_name={text:"“拉斐尔天使长与佛劳洛斯大人吵了一架”",color:"dark_purple",italic:0b},lore=[{text:"这确实也在我们的预料之内，毕竟这两天拉斐尔大人的脾气特别不稳定。",color:"white",italic:0b},{text:"佛劳洛斯大人跟我们说，“百千年的重头戏终于要到来了”。",color:"white",italic:0b},{text:"我们没人期待神庭局势的变动。生命树不断加速的枯萎已经让所有人焦头烂额了。",color:"white",italic:0b}]] 1
 
-  #许愿池
+  #无效许愿池
 setblock -79920 41 -78 minecraft:potted_azure_bluet
 setblock -79920 41 -79 minecraft:potted_poppy
 setblock -79920 41 -80 minecraft:potted_cornflower

@@ -2,7 +2,7 @@ execute unless score @s dailylogin1 matches -99999.. run scoreboard players set 
 execute unless score @s dailylogin2 matches -99999.. run scoreboard players set @s dailylogin2 0
 
 tellraw @s {text:"今日份登录成功！",color:"white",bold:1b}
-tellraw @s {text:"PVP《棋盘战争》已正式回归！\n花园系列第2作『厄珀娅的悲歌』已完结，真结局等你来寻找！\n『亚兹列尔的中庭花园』重置进度：第4章完结；\n全新区域“绯烟林场”、“血金窟”，与亨利踏上前往第10辖区的旅途；\n空岛战争礼装系统优化！等级与经验值现已改为礼装充能条。",color:"white"}
+tellraw @s {text:"PVP《棋盘战争》已正式回归！\n『亚兹列尔的中庭花园』进度：第5章完结；\n全新区域“神代茏渠”、“蓄水池”，你距离回到神庭仅差地下水路区域，但这里是你最不该踏入的绝对禁区……\n花园系列第2作『厄珀娅的悲歌』，真结局隐藏在倒转的时针末端。\n空岛战争礼装系统优化！等级与经验值现已改为礼装充能条。",color:"white"}
 tellraw @s {text:"你获得了新的占卜机会",color:"gold",bold:1b}
 execute unless score @s dailylogin_c1 matches -99999.. run scoreboard players set @s dailylogin_c1 0
 execute unless score @s dailylogin_c2 matches -99999.. run scoreboard players set @s dailylogin_c2 0
