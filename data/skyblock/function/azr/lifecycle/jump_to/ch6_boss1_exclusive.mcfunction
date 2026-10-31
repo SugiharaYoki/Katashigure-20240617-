@@ -9,4 +9,6 @@ scoreboard players set @a[tag=azrPlayer] AzrPlayer_CurrentArea 1
 tp @a[tag=azrPlayer] -79631 40 -41 facing -79631 40 -50
 spawnpoint @a[tag=azrPlayer] -79631 40 -41
 
+tag @a[tag=azrPlayer] add azr_OneLifeOnly
+
 execute as @a[tag=azrPlayer] run function skyblock:azr/system/player/updatespawnpoint_initialize {x:-79760,y:-57,z:83}
