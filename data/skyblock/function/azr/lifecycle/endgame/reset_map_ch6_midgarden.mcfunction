@@ -8,6 +8,8 @@ fill -79692 36 9 -79692 32 5 minecraft:red_stained_glass
 fill -79692 36 29 -79692 32 25 minecraft:red_stained_glass
 fill -79652 37 -31 -79650 40 -31 minecraft:red_stained_glass
 
+fill -79633 40 -38 -79629 43 -38 air
+
 fillbiome -79742 32 -63 -79680 33 47 minecraft:pale_garden
 fillbiome -79742 34 -63 -79680 35 47 minecraft:pale_garden
 fillbiome -79742 36 -63 -79680 37 47 minecraft:pale_garden
