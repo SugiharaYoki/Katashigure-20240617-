@@ -25,13 +25,22 @@ execute if score @s rng1 matches 5007 as @a[tag=azrShowDialog] at @s run title @
 
 execute if score @s rng1 matches 5007 run bossbar add azr:boss_hp_bar [{text:"千厦坏劣，昏乌筑衢 魔神 · ",bold:true,color:"white"},{text:"劳姆",bold:true,color:"#fff050"}]
 execute if score @s rng1 matches 5007 run bossbar set azr:boss_hp_bar color yellow
-execute if score @s rng1 matches 5007 run bossbar set azr:boss_hp_bar max 100
+execute if score @s rng1 matches 5007 run bossbar set azr:boss_hp_bar max 600
 execute if score @s rng1 matches 5007 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 execute if score @s rng1 matches 5007 run scoreboard players set stage Azr_system 112
 
 execute if score @s rng1 matches 9999 run scoreboard players set @s rng1 9998
 execute if score @s rng1 matches ..9999 if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:viciousheroism music @s ~ ~ ~ 0.7
 execute if score @s rng9 matches 744.. run scoreboard players set @s rng9 0
+
+
+execute if score @s rng1 matches 5392 run bossbar add azr:boss_hp_bar_2 [{text:"洞悉逝灭的穷途灵智 魔神 · ",bold:true,color:"white"},{text:"玛帕斯",bold:true,color:"#9c101e"}]
+execute if score @s rng1 matches 5392 run bossbar set azr:boss_hp_bar_2 color red
+execute if score @s rng1 matches 5392 run bossbar set azr:boss_hp_bar_2 max 100
+execute if score @s rng1 matches 5392 run bossbar set azr:boss_hp_bar_2 value 100
+execute if score @s rng1 matches 5392 run bossbar set azr:boss_hp_bar_2 players @a[tag=azrShowDialog]
+execute if score @s rng1 matches 5392 run tellraw @a[tag=azrShowDialog] [{text:"玛帕斯：",color:"#9c101e",bold:1b},{bold: false,text:"\n“花了这么久还没解决吗？你看，我早说了你一个人打不过她。”",color:"white"}]
+execute if score @s rng1 matches 5410 run tellraw @a[tag=azrShowDialog] [{text:"玛帕斯：",color:"#9c101e",bold:1b},{bold: false,text:"\n“我的好弟弟啊，我来助你一臂之力。”",color:"white"}]
 
 
 

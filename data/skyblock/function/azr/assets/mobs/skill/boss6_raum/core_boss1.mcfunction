@@ -13,9 +13,6 @@ execute unless entity @s[tag=AzrRaum_boss1_initialized] run effect clear @s resi
 execute unless entity @s[tag=AzrRaum_boss1_initialized] run effect clear @s regeneration
 execute unless entity @s[tag=AzrRaum_boss1_initialized] run effect clear @s slow_falling
 execute unless entity @s[tag=AzrRaum_boss1_initialized] run tag @s remove AzrRaum_midgarden
-execute unless entity @s[tag=AzrRaum_boss1_initialized] run bossbar add azr:boss_hp_bar {text:"渡鸦 · 劳姆",color:"dark_red",bold:true}
-execute unless entity @s[tag=AzrRaum_boss1_initialized] run bossbar set azr:boss_hp_bar max 600
-execute unless entity @s[tag=AzrRaum_boss1_initialized] run bossbar set azr:boss_hp_bar color red
 execute unless entity @s[tag=AzrRaum_boss1_initialized] at @s run bossbar set azr:boss_hp_bar players @a[tag=azrPlayer,distance=..100]
 tag @s add AzrRaum_boss1_initialized
 

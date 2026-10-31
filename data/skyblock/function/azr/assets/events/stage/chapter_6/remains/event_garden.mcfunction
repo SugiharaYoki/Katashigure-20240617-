@@ -334,7 +334,7 @@ execute if score @s rng5 matches 56 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng5 matches 64 run tellraw @a[tag=azrShowDialog] [{text:"渡鸦 劳姆：",color:"#fff050",bold:1b},{bold: false,text:"\n“光能干掉那些乌合之众，尚不足以证明她配当我的对手。”",color:"white"}]
 execute if score @s rng1 matches 76 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“你们聊完双口相声了吗？我可要上了。”",color:"white"}]
 
-execute if score @s rng5 matches 90 run tellraw @a[tag=azrShowDialog] [{text:"预言家 玛帕斯：",color:"#fff050",bold:1b},{bold: false,text:"\n“弟弟，你不是说你一个人就行吗？上吧。”",color:"white"}]
+execute if score @s rng5 matches 90 run tellraw @a[tag=azrShowDialog] [{text:"预言家 玛帕斯：",color:"#9c101e",bold:1b},{bold: false,text:"\n“弟弟，你不是说你一个人就行吗？上吧。”",color:"white"}]
 
 
 execute if score @s rng5 matches 90 as @n[tag=AzrielNPC_raum] at @s run data modify entity @s NoGravity set value 0b
