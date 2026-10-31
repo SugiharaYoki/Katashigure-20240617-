@@ -355,6 +355,8 @@ execute if score @s rng5 matches 121 run tellraw @a[tag=azrShowDialog] [{text:"æ
 
 
 
+execute if score @s rng5 matches 15.. positioned -79631 40 -71 as @n[tag=AzrielNPC_malpas] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+execute if score @s rng5 matches 40.. positioned -79631 40 -71 as @n[tag=AzrielNPC_raum] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
 
 
