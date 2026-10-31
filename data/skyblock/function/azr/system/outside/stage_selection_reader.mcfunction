@@ -23,7 +23,7 @@ execute if score @s Azr_skillPoints matches 40.. run tellraw @s [{text:"        
 execute if score @s Azr_skillPoints matches 48.. run tellraw @s [{text:"          - "},{text:"生之命 第五章",color:"#333dff"},{text:" BOSS - 佛卡洛  ",color:"#333dff"},{text:"〈◆〉",bold:1b,color:"#85e1ff",click_event:{"action":"run_command","command":"trigger MultiMenu set 16230024"}}]
 
 execute if score @s Azr_skillPoints matches 50.. run tellraw @s [{text:"           - "},{text:"生之命 第六章",color:"#f68edc"},{text:" 中庭花园  ",color:"#f68edc"},{text:"〈◆〉",bold:1b,color:"#85e1ff",click_event:{"action":"run_command","command":"trigger MultiMenu set 16230031"}}]
-execute if score @s Azr_skillPoints matches 59.. run tellraw @s [{text:"           - "},{text:"生之命 第六章",color:"#f68edc"},{text:" BOSS - 玛帕斯 & 劳姆  ",color:"#f68edc"},{text:"〈◆〉",bold:1b,color:"#85e1ff",click_event:{"action":"run_command","command":"trigger MultiMenu set 16230032"}}]
+execute if score @s Azr_skillPoints matches 60.. run tellraw @s [{text:"           - "},{text:"生之命 第六章",color:"#f68edc"},{text:" BOSS - 玛帕斯 & 劳姆  ",color:"#f68edc"},{text:"〈◆〉",bold:1b,color:"#85e1ff",click_event:{"action":"run_command","command":"trigger MultiMenu set 16230032"}}]
 execute if score @s Azr_skillPoints matches 69.. run tellraw @s [{text:"           - "},{text:"生之命 第六章",color:"#d312a3"},{text:" 最终BOSS - 沙利叶  ",color:"#d312a3"},{text:"〈◆〉",bold:1b,color:"#85e1ff",click_event:{"action":"run_command","command":"trigger MultiMenu set 16230034"}}]
 
 
