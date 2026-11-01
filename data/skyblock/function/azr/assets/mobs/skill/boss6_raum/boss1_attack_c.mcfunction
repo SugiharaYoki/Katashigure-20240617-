@@ -43,5 +43,7 @@ execute if score @s rng13 matches 2 if score @s rng1 matches 101 at @s run funct
 execute if score @s rng13 matches 2 if score @s rng1 matches 101..140 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_pillar_random {kind:"AzrRaum_boss1_small_pillar"}
 
 # 第二轮 C1 最后一发 121，冷却至 161；C2 141 停止生成，冷却至 181。
+execute if score @s[scores={Health=..260}] rng13 matches 1 if score @s rng1 matches 131 run scoreboard players set @s rng1 99999
+execute if score @s[scores={Health=..260}] rng13 matches 2 if score @s rng1 matches 151 run scoreboard players set @s rng1 99999
 execute if score @s rng13 matches 1 if score @s rng1 matches 161 run scoreboard players set @s rng1 99999
 execute if score @s rng13 matches 2 if score @s rng1 matches 181 run scoreboard players set @s rng1 99999

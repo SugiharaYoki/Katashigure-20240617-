@@ -54,5 +54,6 @@ execute if score @s rng1 matches 185..189 store result entity @s Rotation[0] flo
 execute if score @s rng1 matches 185..188 store result entity @s Motion[0] double 0.0005 run scoreboard players get @s rng4
 execute if score @s rng1 matches 185..188 store result entity @s Motion[2] double 0.0005 run scoreboard players get @s rng5
 execute if score @s rng1 matches 189 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_sweep
-execute if score @s rng1 matches 195 at @s run item replace entity @s weapon.mainhand with air
-execute if score @s rng1 matches 215 at @s run scoreboard players set @s rng1 99999
+execute if score @s rng1 matches 190 at @s run item replace entity @s weapon.mainhand with air
+execute if score @s[scores={Health=..320}] rng1 matches 195 at @s run scoreboard players set @s rng1 99999
+execute if score @s rng1 matches 205 at @s run scoreboard players set @s rng1 99999
