@@ -31,7 +31,7 @@ execute if score @s rng1 matches 380..385 run scoreboard players set @s rng1 380
 
 execute if score @s rng1 matches 20.. if entity @a[x=-79900,y=-18,z=-163,dx=5,dy=5,dz=5,tag=azrPlayer] run scoreboard players set @s rng1 390
 execute if score @s rng1 matches 390..392 run stopsound @a[tag=azrPlayer] music minecraft:bookstore
-execute if score @s rng1 matches 20.. if entity @a[x=-79900,y=-18,z=-163,dx=5,dy=5,dz=5,tag=azrPlayer] run tp @a[tag=azrShowDialog] ~-10 ~66 ~33
+execute if score @s rng1 matches 20.. if entity @a[x=-79900,y=-18,z=-163,dx=5,dy=5,dz=5,tag=azrPlayer] run tp @a[tag=azrShowDialog] -79910.91 48.00 -128.10
 
 execute if score @s rng1 matches 399 run fill -79887 40 -135 -79887 47 -135 ladder[facing=west]
 execute if score @s rng1 matches 399 as @n[tag=AzrielNPC_bird] at @s run tp @s -79870 49 -122
