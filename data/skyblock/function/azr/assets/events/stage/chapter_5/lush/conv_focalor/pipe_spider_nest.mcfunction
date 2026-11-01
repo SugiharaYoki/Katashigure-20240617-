@@ -107,6 +107,8 @@ execute if score @s rng1 matches 603 run tellraw @a[tag=azrShowDialog] {text:"�
 execute if score @s rng1 matches 615 run tellraw @a[tag=azrShowDialog] {text:"感谢你将灵魂献给我们。",color:"aqua",bold:true}
 execute if score @s rng1 matches 625 run tellraw @a[tag=azrShowDialog] {text:"你的灵魂将被我们所珍惜，你的存在将被我们所铭记。",color:"red",bold:true}
 execute if score @s rng1 matches 633 run tellraw @a[tag=azrShowDialog] {text:"为何而颤抖？为何而举起武器？我们不会伤害你，你也无需挣扎。",color:"red",bold:true}
+execute if score @s rng1 matches 633 as @n[tag=AzrielNPC_nymph] at @s run kill @e[tag=AzrielNPC_nymph,distance=0.1..500]
+
 
 execute if score @s rng1 matches 648..649 at @n[tag=AzrielNPC_nymph] unless entity @a[tag=azrPlayer,distance=..12] run scoreboard players set @s rng1 648
 
