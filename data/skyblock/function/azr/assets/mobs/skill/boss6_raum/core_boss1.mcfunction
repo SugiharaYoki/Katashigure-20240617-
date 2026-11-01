@@ -59,6 +59,10 @@ execute store result score @s rng19 run data get entity @s Health 1000
 execute if score @s rng19 matches 1..59999 unless entity @s[tag=AzrRaum_laststand] run effect give @s resistance infinite 4 true
 execute if score @s rng19 matches 1..59999 run tag @s add AzrRaum_laststand
 
+# 玛帕斯行动前低于 300 血：每 tick 续 1 秒抗性 V，联动后自然到期。
+# 短时高等级效果允许原有抗性 II 隐藏计时并恢复；低于 60 的无限抗性 V 不受影响。
+execute unless entity @s[tag=azr_raum_with_malpas] if score @s rng19 matches 60000..299999 run effect give @s resistance 1 4 true
+
 # 玛帕斯仅依附本体更新，沿用劳姆现有的 50 格入口。
 execute if entity @s[tag=azr_raum_with_malpas] if score @s rng19 matches 1.. at @s as @n[type=mannequin,tag=AzrielNPC_malpas,distance=..200] at @s run function skyblock:azr/assets/mobs/skill/boss6_malpas/boss1_core
 execute unless entity @s[tag=azr_raum_with_malpas] at @s as @n[type=mannequin,tag=AzrielNPC_malpas,tag=AzrMalpas_active,distance=..200] at @s run function skyblock:azr/assets/mobs/skill/boss6_malpas/boss1_stop

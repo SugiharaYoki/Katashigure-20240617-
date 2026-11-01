@@ -9,6 +9,7 @@ execute if score @s rng1 matches ..4999 run scoreboard players set @s rng1 5000
 
 
 
+execute if score @s rng1 matches 5001 positioned -79631 39 -63 run kill @e[distance=35..80,tag=AzrielMob,type=!mannequin]
 execute if score @s rng1 matches 5001 as @a[tag=azrShowDialog] at @s run stopsound @s music minecraft:destroy
 
 

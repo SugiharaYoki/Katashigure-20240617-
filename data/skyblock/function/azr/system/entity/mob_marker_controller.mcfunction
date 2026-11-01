@@ -30,6 +30,7 @@ execute if entity @s[tag=AzrielMob_sonic_eye_lord_item_display] run function sky
 
 execute if entity @s[tag=AzrielMob_trap_fang] run function skyblock:azr/assets/mobs/skill/trap/fang
 execute if entity @s[tag=AzrielMob_trap_fang_auto] run function skyblock:azr/assets/mobs/skill/trap/fang_auto
+execute if entity @s[tag=AzrRaum_boss1_fang] at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/marker_boss1_fang
 execute if entity @s[tag=AzrielMob_trap_sonic_laser] run function skyblock:azr/assets/mobs/skill/trap/sonic_laser
 execute if entity @s[tag=AzrielMob_trap_metal_gas] run function skyblock:azr/assets/mobs/skill/trap/metal_gas
 execute if entity @s[tag=AzrielMob_trap_dripstone] run function skyblock:azr/assets/mobs/skill/trap/dripstone

@@ -5,14 +5,14 @@ execute if score @s rng1 matches 1 run tag @s add AzrMalpas_wall_warn
 execute if score @s rng1 matches 10 run tag @s add AzrMalpas_wall_warn
 execute if score @s rng1 matches 41 run tag @s add AzrMalpas_wall_warn
 execute if score @s rng1 matches 50 run tag @s add AzrMalpas_wall_warn
-execute if entity @s[tag=AzrMalpas_wall_warn] at @s run particle minecraft:wax_off ~-0.7 ~0.1 ~-0.7 0 0 0 0 1 force
-execute if entity @s[tag=AzrMalpas_wall_warn] at @s run particle minecraft:wax_off ~0 ~0.1 ~-0.7 0 0 0 0 1 force
-execute if entity @s[tag=AzrMalpas_wall_warn] at @s run particle minecraft:wax_off ~0.7 ~0.1 ~-0.7 0 0 0 0 1 force
-execute if entity @s[tag=AzrMalpas_wall_warn] at @s run particle minecraft:wax_off ~0.7 ~0.1 ~0 0 0 0 0 1 force
-execute if entity @s[tag=AzrMalpas_wall_warn] at @s run particle minecraft:wax_off ~0.7 ~0.1 ~0.7 0 0 0 0 1 force
-execute if entity @s[tag=AzrMalpas_wall_warn] at @s run particle minecraft:wax_off ~0 ~0.1 ~0.7 0 0 0 0 1 force
-execute if entity @s[tag=AzrMalpas_wall_warn] at @s run particle minecraft:wax_off ~-0.7 ~0.1 ~0.7 0 0 0 0 1 force
-execute if entity @s[tag=AzrMalpas_wall_warn] at @s run particle minecraft:wax_off ~-0.7 ~0.1 ~0 0 0 0 0 1 force
+execute if entity @s[tag=AzrMalpas_wall_warn] at @s run particle minecraft:wax_off ~-0.7 ~0.6 ~-0.7 0 0 0 0 1 force
+execute if entity @s[tag=AzrMalpas_wall_warn] at @s run particle minecraft:wax_off ~0 ~0.6 ~-0.7 0 0 0 0 1 force
+execute if entity @s[tag=AzrMalpas_wall_warn] at @s run particle minecraft:wax_off ~0.7 ~0.6 ~-0.7 0 0 0 0 1 force
+execute if entity @s[tag=AzrMalpas_wall_warn] at @s run particle minecraft:wax_off ~0.7 ~0.6 ~0 0 0 0 0 1 force
+execute if entity @s[tag=AzrMalpas_wall_warn] at @s run particle minecraft:wax_off ~0.7 ~0.6 ~0.7 0 0 0 0 1 force
+execute if entity @s[tag=AzrMalpas_wall_warn] at @s run particle minecraft:wax_off ~0 ~0.6 ~0.7 0 0 0 0 1 force
+execute if entity @s[tag=AzrMalpas_wall_warn] at @s run particle minecraft:wax_off ~-0.7 ~0.6 ~0.7 0 0 0 0 1 force
+execute if entity @s[tag=AzrMalpas_wall_warn] at @s run particle minecraft:wax_off ~-0.7 ~0.6 ~0 0 0 0 0 1 force
 tag @s remove AzrMalpas_wall_burst
 execute if score @s rng1 matches 16 run tag @s add AzrMalpas_wall_burst
 execute if score @s rng1 matches 56 run tag @s add AzrMalpas_wall_burst
