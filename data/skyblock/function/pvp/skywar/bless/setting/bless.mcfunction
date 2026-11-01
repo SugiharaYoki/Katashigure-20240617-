@@ -1,5 +1,5 @@
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.4 0.4
-tellraw @s [{text:"选择你想使用的礼装",color:"yellow",bold:1b},{text:" 共可分配四个槽位",color:"white"}]
+tellraw @s [{text:"选择你想使用的礼装",color:"yellow",bold:1b},{text:" 共可分配四个槽位",color:"white"},{text:"  [可视化选择(BETA)]",color:"aqua",bold:0b,click_event:{action:"run_command",command:"trigger MultiMenu set 140000"},hover_event:{action:"show_text",value:{text:"打开礼装面板：四槽总览、职业分类、礼装详情与快速装备",color:"white"}}}]
 #function skyblock:pvp/skywar/bless/setting/bless_macro {bless:ishtar_bless_1,bless_name:"- 统之礼"}
 #function skyblock:pvp/skywar/bless/setting/bless_macro {bless:ishtar_bless_2,bless_name:"- 纵之礼"}
 #function skyblock:pvp/skywar/bless/setting/bless_macro {bless:ishtar_bless_3,bless_name:"- 纺之礼"}
@@ -8,20 +8,7 @@ execute as @s at @s run function skyblock:city/id/read
 execute as @n[tag=id_data_reading,type=marker] at @s run tp @s ~2 ~ ~
 
 #execute as @n[tag=id_data_reading,type=marker] at @s run particle minecraft:end_rod ~ ~ ~ 0 5 0 0 100
-execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.8 with green_wool
-execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.1 with green_wool
-execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.2 with green_wool
-execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.3 with green_wool
-execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.5 with green_wool
-execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.6 with green_wool
-execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~1 ~ ~ container.9 with green_wool
-execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.12 with green_wool
-execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~1 ~ ~ container.2 with green_wool
-execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.9 with green_wool
-execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.15 with green_wool
-execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~ ~ ~ container.19 with green_wool
-execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~1 ~ ~ container.1 with green_wool
-execute as @n[tag=id_data_reading,type=marker] at @s run item replace block ~1 ~ ~ container.7 with green_wool
+function skyblock:pvp/skywar/bless/setting/bless_unlock_defaults
 
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"旅行家"', title:'"启礼「黄金圣果」"', description:'"附魔金苹果×1"', id: 8, idsh: 8, pos: 0, idloop: 8}
 function skyblock:pvp/skywar/bless/setting/bless_macro {job:'"旅行家"', title:'"统礼「水晶聚能」"', description:'"末影水晶×1、特殊模板\\\\n放置于背包时，根据末影水晶持有数量，每10秒额外增加充能"', id: 1, idsh: 1, pos: 0, idloop: 1}

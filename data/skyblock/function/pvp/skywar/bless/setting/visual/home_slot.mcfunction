@@ -1,0 +1,1 @@
+$data modify storage skywar:bless_ui dialog.actions append value {label:{text:"$(name) · $(short)",color:"gold"},width:150,tooltip:{text:"当前：$(short)\n点击为$(name)挑选礼装",color:"white"},action:{type:"run_command",command:"trigger MultiMenu set 14010$(slot)"}}

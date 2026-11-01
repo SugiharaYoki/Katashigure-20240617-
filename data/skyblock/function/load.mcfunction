@@ -3,6 +3,7 @@ execute unless score last_version skyblock_system = version skyblock_system run 
 scoreboard players operation last_version skyblock_system = version skyblock_system
 function skyblock:api_get_irl_time
 function skyblock:decoration/init
+function skyblock:pvp/skywar/bless/setting/visual/init
 
 #轮播内容
 scoreboard objectives add Perm_PersonWins dummy {text:"PVP战争 历史胜利场数排行榜",color:"gold",bold:1b}
