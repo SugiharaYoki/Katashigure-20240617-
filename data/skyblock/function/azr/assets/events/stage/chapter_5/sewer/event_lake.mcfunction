@@ -115,6 +115,11 @@ execute if score @s rng1 matches 982 as @a[tag=azrPlayer] at @s run scoreboard p
 execute if score @s rng1 matches 982 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..49}] Azr_skillPoints 50
 execute if score @s rng1 matches 982 run scoreboard players reset stage_main_thread AzrTimerStack
 
+execute if score @s rng1 matches 972 run fill -79843 -5 83 -79837 -5 77 water replace deepslate_tiles
+execute if score @s rng1 matches 972 run fill -79853 -5 93 -79827 -5 67 water replace deepslate_tiles
+execute if score @s rng1 matches 972 run fill -79863 -5 103 -79817 -5 57 water replace deepslate_tiles
+
+
 execute if score @s rng1 matches 972 run fill -79841 1 106 -79839 1 106 air
 execute if score @s rng1 matches 973 run fill -79841 2 106 -79839 2 106 air
 execute if score @s rng1 matches 974 run fill -79841 3 106 -79839 3 106 air
