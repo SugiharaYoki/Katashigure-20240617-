@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "中庭花园：永夜的森林",
+            "color": "aqua",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "枯萎的不止是生命树。我无法想象神庭花园全部枯萎之后，会对世界造成什么样的影响。\n我们别无选择，仅有尝试阻止事情朝着更坏的方向发展。\n\n适合拯救神庭的并非我们，仅仅是没有比我们更加适合的人。\n——如此言道，我是否又会被何人再度反驳？",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:quartz_block"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage25"
+}
