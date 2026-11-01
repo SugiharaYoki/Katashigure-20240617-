@@ -1,14 +1,5 @@
-
-
-
-
-
-#execute store result storage azr_amulet:stay_float y_10_int int 0.00001 run data get storage azr_amulet:stay_float y_10 100000
-
-#$say y: $(y)
-#$say y_10: $(y_10)
-
-#function skyblock:azr/system/player/skills/amulet/stay_float_keep_2 with storage azr_amulet:stay_float
-$execute as @s at @s rotated as @s run tp @s ~ $(y) ~
-
-#$tellraw @a {text:"$(x_tell) $(y_tell) $(z_tell)"} 
+# 只校正悬浮期间的小幅高度漂移；外部传送或位移超过半格时结束悬浮。
+# 检查点使用玩家当前 X/Z 和锁定 Y，因此不会限制水平移动。
+# 设为 90 后，core_version3 会在同一轮清理缓降、攻击增益和续浮标记。
+$execute at @s positioned ~ $(y) ~ unless entity @s[distance=..0.5] run scoreboard players set @s AzrSariel_Amulet_StayFloat_cooldown 90
+$execute if score @s AzrSariel_Amulet_StayFloat_cooldown matches 118..138 as @s at @s rotated as @s run tp @s ~ $(y) ~
