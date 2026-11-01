@@ -32,11 +32,9 @@ execute store result bossbar azr:boss_hp_bar value run scoreboard players get @s
 # 禁止自主水平移动，竖直方向保留正常重力；需要移动的技能在本 tick 覆盖速度。
 data modify entity @s Motion[0] set value 0.0d
 data modify entity @s Motion[2] set value 0.0d
-# 仅在一轮开始时抽签；用精确血量避免 400.5/200.5 被整数取整后提前解锁。
-execute if score @s rng1 matches 1 store result score @s rng18 run data get entity @s Health 1000
-execute if score @s rng1 matches 1 if score @s rng18 matches 400001.. store result score @s rng2 run random value 1..4
-execute if score @s rng1 matches 1 if score @s rng18 matches 200001..400000 store result score @s rng2 run random value 1..6
-execute if score @s rng1 matches 1 if score @s rng18 matches 1..200000 store result score @s rng2 run random value 1..8
+execute if score @s rng1 matches 1 if score @s Health matches 400.. store result score @s rng2 run random value 1..4
+execute if score @s rng1 matches 1 if score @s Health matches 250..400 store result score @s rng2 run random value 1..6
+execute if score @s rng1 matches 1 if score @s Health matches 0..250 store result score @s rng2 run random value 1..8
 execute if score @s rng1 matches 1 run scoreboard players set @s rng14 0
 execute if score @s rng1 matches 1 run scoreboard players set @s rng15 0
 execute if score @s rng1 matches 1 run tag @s remove AzrRaum_boss1_d_hit
