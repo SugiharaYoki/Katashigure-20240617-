@@ -123,6 +123,15 @@ execute if entity @a[tag=azrPlayer,scores={Azr_skillPoints=40..}] positioned -79
 execute if entity @a[tag=azrPlayer,scores={Azr_skillPoints=50..}] positioned -79984 -51 26 run setblock ~ ~ ~ gold_block
 execute if entity @a[tag=azrPlayer,scores={Azr_skillPoints=50..}] positioned -79984 -50 26 run summon minecraft:mannequin ~ ~ ~ {PersistenceRequired:1b,Invulnerable:1b,Tags:["AzrielDisplay_botanical_board"],DeathLootTable:"skyblock:null",Health:100.0f,CustomName:'佛卡洛',attributes:[{id:"max_health",base:100.0d},{id:"movement_speed",base:0.0},{id:"armor",base:20.0d},{id:"knockback_resistance",base:1.0d}],Rotation:[90.0f,0.0f],NoAI:1b,profile:{id:[I;0,0,0,0],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGNiNjYxOTA5NTdiYzc2NGRkZWU3MTg0ZWIyNjliOTM4MGM1MmJlYWI1ZTEyNDQ3YTA5MWE5YTMzOGMwYTgyYyJ9fX0="}],model:slim},hide_description:true,Silent:1b}
 
+execute if entity @a[tag=azrPlayer,scores={Azr_skillPoints=61..}] positioned -79984 -51 28 run setblock ~ ~ ~ gold_block
+execute if entity @a[tag=azrPlayer,scores={Azr_skillPoints=61..}] positioned -79984 -50 28 run summon minecraft:mannequin ~ ~ ~ {PersistenceRequired:1b,Invulnerable:1b,Tags:["AzrielDisplay_botanical_board"],DeathLootTable:"skyblock:null",Health:100.0f,CustomName:'玛帕斯',attributes:[{id:"max_health",base:100.0d},{id:"movement_speed",base:0.0},{id:"armor",base:20.0d},{id:"knockback_resistance",base:1.0d},{base:1.1d,id:"scale"}],Rotation:[90.0f,0.0f],NoAI:1b,profile:{id:[I;0,0,0,0],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2MxNjU2ZWM1NTk2ZDJjNmU2YzIzMmNhNDA4MmQ0NjEwZjI2ZWRlY2I1ZWQ1OWJlZmJmMmI4NTE2YWM3ZGQ5In19fQ=="}]},hide_description:true,Silent:1b}
+
+execute if entity @a[tag=azrPlayer,scores={Azr_skillPoints=61..}] positioned -79984 -51 30 run setblock ~ ~ ~ gold_block
+execute if entity @a[tag=azrPlayer,scores={Azr_skillPoints=61..}] positioned -79984 -50 30 run summon minecraft:mannequin ~ ~ ~ {PersistenceRequired:1b,Invulnerable:1b,Tags:["AzrielDisplay_botanical_board"],DeathLootTable:"skyblock:null",Health:100.0f,CustomName:'劳姆',attributes:[{id:"max_health",base:100.0d},{id:"movement_speed",base:0.0},{id:"armor",base:20.0d},{id:"knockback_resistance",base:1.0d},{base:1.1d,id:"scale"}],Rotation:[90.0f,0.0f],NoAI:1b,profile:{id:[I;0,0,0,0],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWRlYzM3ZTI2MzM4MWY1ODgyZjU4OGYyY2UwZmNmMWFmNTZiYjgwYzFiYmI0ZTk1ZGYwYzJjMmQ5ZjU3NDMyYiJ9fX0="}]},hide_description:true,Silent:1b}
+
+
+
+
 execute if entity @a[tag=azrPlayer,tag=AZS_BoSB01] positioned -79991 -51 26 run setblock ~ ~ ~ iron_block
 execute if entity @a[tag=azrPlayer,tag=AZS_BoSB04] positioned -79991 -51 28 run setblock ~ ~ ~ iron_block
 execute if entity @a[tag=azrPlayer,tag=AZS_BoSB13] positioned -79991 -51 30 run setblock ~ ~ ~ iron_block
