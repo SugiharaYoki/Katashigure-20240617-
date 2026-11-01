@@ -1,3 +1,4 @@
+# 加载时和菜单入口均可调用；添加已有记分项不会重置玩家配置。
 scoreboard objectives add IshtarMenu trigger
 scoreboard objectives add ishtar_ui_slot dummy
 scoreboard objectives add ishtar_ui_role dummy
