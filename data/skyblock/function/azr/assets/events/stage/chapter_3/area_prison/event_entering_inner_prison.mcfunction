@@ -428,7 +428,7 @@ execute if score @s rng1 matches 3004 run clone -79934 69 -593 -79926 75 -586 -7
 
 
 execute if score @s rng1 matches 3990..3999 run scoreboard players set @s rng1 3990
-execute if score @s rng1 matches 300..3999 if entity @a[tag=azrPlayer,x=-79933,y=60,z=-523,dx=20,dy=6,dz=20] run scoreboard players set @s rng1 4000
+execute if score @s rng1 matches 300..3999 if entity @a[tag=azrPlayer,x=-79933,y=50,z=-523,dx=20,dy=16,dz=20] run scoreboard players set @s rng1 4000
 
 execute if score @s rng1 matches 4001 positioned -79930 70 -520 as @a[tag=azrPlayer] at @s unless entity @s[x=-79933,y=60,z=-523,dx=20,dy=6,dz=20] run tp @s -79930 65 -520
 execute if score @s rng1 matches 4001 positioned -79930 70 -520 as @a[tag=azrPlayer] at @s run effect give @s resistance 50 255 true
