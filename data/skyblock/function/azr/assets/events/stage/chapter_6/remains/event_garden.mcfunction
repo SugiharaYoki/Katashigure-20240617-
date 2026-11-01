@@ -181,10 +181,10 @@ execute if score @s rng1 matches 670 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 720 as @p[tag=azrPlayer] at @s if entity @n[type=pillager,distance=..30] run tellraw @a[tag=azrShowDialog] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“是渡鸦劳姆！！”",color:"white"}]
 execute if score @s rng1 matches 740 as @p[tag=azrPlayer] at @s if entity @n[type=vindicator,distance=..30] run tellraw @a[tag=azrShowDialog] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“大家注意，不要被打中了！！”",color:"white"}]
 
-execute if score @s[tag=!the_fourth_door_hint] rng1 matches ..819 positioned -79651 36 -30 if entity @a[tag=azrPlayer,distance=..7] if entity @n[type=pillager,distance=..30] run tellraw @a[tag=azrShowDialog] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“这门打不开，找不到对应的结界兽！！”",color:"white"}]
-execute if score @s[tag=!the_fourth_door_hint] rng1 matches ..819 positioned -79651 36 -30 if entity @a[tag=azrPlayer,distance=..7] run tag @s add the_fourth_door_hint
-execute if score @s rng1 matches 820 run fill -79652 37 -31 -79650 40 -31 minecraft:air destroy
-execute if score @s[tag=the_fourth_door_hint] rng1 matches 820 positioned -79651 36 -30 if entity @n[type=pillager,distance=..30] run tellraw @a[tag=azrShowDialog] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“终于开了！！大家冲啊！”",color:"white"}]
+execute if score @s[tag=!the_fourth_door_hint] rng1 matches ..839 positioned -79651 36 -30 if entity @a[tag=azrPlayer,distance=..7] if entity @n[type=pillager,distance=..30] run tellraw @a[tag=azrShowDialog] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“这门打不开，找不到对应的结界兽！！”",color:"white"}]
+execute if score @s[tag=!the_fourth_door_hint] rng1 matches ..839 positioned -79651 36 -30 if entity @a[tag=azrPlayer,distance=..7] run tag @s add the_fourth_door_hint
+execute if score @s rng1 matches 840 run fill -79652 37 -31 -79650 40 -31 minecraft:air destroy
+execute if score @s[tag=the_fourth_door_hint] rng1 matches 840 positioned -79651 36 -30 if entity @n[type=pillager,distance=..30] run tellraw @a[tag=azrShowDialog] [{text:"神界军：",color:"green",bold:1b},{bold: false,text:"\n“终于开了！！大家冲啊！”",color:"white"}]
 
 execute if score @s rng1 matches 800 positioned -79632 37 -32 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield_heavy","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 800 positioned -79632 37 -32 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_shield_heavy","AzrielMob_summon_delay","AzrielMob_level_1"]}
@@ -202,6 +202,7 @@ execute if score @s rng1 matches 800 positioned -79632 37 -32 run summon marker 
 
 #结界关口
 execute if score @s rng1 matches 101.. run scoreboard players add @s rng3 1
+execute if score @s rng3 matches 1 positioned -79700 32 -24 run function skyblock:azr/assets/mobs/barrier_maintainer {id:_ch6_midgarden_door_1}
 execute if score @s rng3 matches 1 positioned -79700 32 -24 run function skyblock:azr/assets/mobs/barrier_maintainer {id:_ch6_midgarden_door_1}
 
 execute if score @s rng3 matches 3 if entity @n[tag=AzrielMob_barrier_maintainer_ch6_midgarden_door_1] run scoreboard players set @s rng3 2
@@ -232,10 +233,12 @@ execute if score @s rng3 matches 20 positioned -79686 33 -44 run function skyblo
 
 
 execute if score @s rng3 matches 1 positioned -79686 32 7 run function skyblock:azr/assets/mobs/barrier_maintainer {id:_ch6_midgarden_door_2}
+execute if score @s rng3 matches 1 positioned -79686 32 7 run function skyblock:azr/assets/mobs/barrier_maintainer {id:_ch6_midgarden_door_2}
 execute if score @s rng3 matches 22 if entity @n[tag=AzrielMob_barrier_maintainer_ch6_midgarden_door_2] run scoreboard players set @s rng3 21
 execute if score @s rng3 matches 23 run fill -79692 36 9 -79692 32 5 minecraft:air destroy
 
 execute if score @s rng3 matches 24 positioned -79699 32 13 run function skyblock:azr/assets/mobs/unique/candle_angel
+execute if score @s rng3 matches 24 positioned -79699 32 15 run function skyblock:azr/assets/mobs/unique/candle_angel
 execute if score @s rng3 matches 24 positioned -79699 32 13 as @e[type=zombie,distance=..50] at @s run effect give @s resistance 50 1 true
 
 execute if score @s rng3 matches 27 positioned -79698 43 19 run particle flame ~ ~1 ~ 0 0 0 0.3 40
@@ -298,9 +301,9 @@ execute if score @s rng4 matches 112 positioned -79652 34 -17 run function skybl
 execute if score @s rng4 matches 115 positioned -79649 34 -19 run function skyblock:azr/assets/mobs/ravager
 
 execute if score @s rng4 matches 125 positioned -79649 34 -18 run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_large
-execute if score @s rng4 matches 125 positioned -79649 34 -16 run function skyblock:azr/assets/mobs/skill/boss_entrance/summon_midgarden
+execute if score @s rng4 matches 125 positioned -79647 34 -18 run function skyblock:azr/assets/mobs/skill/boss_entrance/summon_midgarden
 execute if score @s rng4 matches 125 positioned -79649 34 -18 run function skyblock:azr/assets/mobs/skill/boss_entrance/summon_midgarden
-execute if score @s rng4 matches 125 positioned -79649 34 -20 run function skyblock:azr/assets/mobs/skill/boss_entrance/summon_midgarden
+execute if score @s rng4 matches 125 positioned -79651 34 -18 run function skyblock:azr/assets/mobs/skill/boss_entrance/summon_midgarden
 
 
 execute if score @s rng3 matches 2 positioned -79699 32 27 as @e[tag=AzrielMob_barrier_maintainer,distance=..100] run effect give @s resistance infinite 3 true

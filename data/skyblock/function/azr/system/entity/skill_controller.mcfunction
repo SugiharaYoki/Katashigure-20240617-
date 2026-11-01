@@ -78,11 +78,14 @@ execute if score stage Azr_system matches 90 positioned -79794 231 -545 if entit
 
 
 execute if score stage Azr_system matches 98..99 positioned -79764 -10 80 if entity @s[tag=AzrielNPC_focalor,distance=..200,tag=azr_hostile] run function skyblock:azr/assets/mobs/skill/boss5_focalor/core
-execute if score stage Azr_system matches 112 positioned -79631 39 -63 if entity @s[tag=AzrielNPC_raum,distance=..200] run function skyblock:azr/assets/mobs/skill/boss6_raum/core_boss1
+execute if score stage Azr_system matches 112 positioned -79631 39 -63 if entity @s[tag=AzrielNPC_raum,tag=!AzrBoss6_outro,distance=..200] run function skyblock:azr/assets/mobs/skill/boss6_raum/core_boss1
 
 
 
 
 # 玛帕斯升空和空中双翼，沿用现有的 50 格实体更新入口。
 execute if entity @s[tag=AzrielNPC_malpas,tag=AzrMalpas_intro_rise] at @s run function skyblock:azr/assets/mobs/skill/boss6_malpas/intro_rise
-execute if entity @s[tag=AzrielNPC_malpas] at @s run function skyblock:azr/assets/mobs/skill/boss6_malpas/air_visual
+execute if entity @s[tag=AzrielNPC_malpas,tag=!AzrBoss6_departed] at @s run function skyblock:azr/assets/mobs/skill/boss6_malpas/air_visual
+
+# 停战后的落地、朝向和退场，沿用现有每 tick / 50 格入口。
+execute if entity @s[tag=AzrBoss6_outro,tag=!AzrBoss6_departed] at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_outro_tick
