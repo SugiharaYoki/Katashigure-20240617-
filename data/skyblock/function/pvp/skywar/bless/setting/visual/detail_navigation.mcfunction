@@ -1,2 +1,2 @@
 $execute unless data storage skywar:bless_ui current{unlocked:1b} run data modify storage skywar:bless_ui dialog.actions append value {label:{text:"解锁此礼装 · 50 SHD",color:"gold"},width:150,action:{type:"run_command",command:"trigger IshtarMenu set $(confirm_code)"}}
-$data modify storage skywar:bless_ui dialog.actions append value {label:{text:"返回快速整备",color:"yellow"},width:150,action:{type:"run_command",command:"trigger IshtarMenu set $(role_code)"}}
+data modify storage skywar:bless_ui dialog.actions append value {label:{text:"返回快速整备",color:"yellow"},width:150,action:{type:"run_command",command:"trigger IshtarMenu set 140000"}}

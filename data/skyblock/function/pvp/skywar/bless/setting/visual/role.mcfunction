@@ -9,6 +9,7 @@ function skyblock:pvp/skywar/bless/setting/visual/quick_overview with storage sk
 data modify storage skywar:bless_ui dialog.body[0].contents.extra append value {text:"    "}
 function skyblock:pvp/skywar/bless/setting/visual/quick_overview with storage skywar:bless_ui slots.s4
 data modify storage skywar:bless_ui dialog.body[0].contents.extra append value {text:"\n职业  ",color:"gray"}
+function skyblock:pvp/skywar/bless/setting/visual/quick_tab {id:0}
 function skyblock:pvp/skywar/bless/setting/visual/quick_tab {id:1}
 function skyblock:pvp/skywar/bless/setting/visual/quick_tab {id:2}
 function skyblock:pvp/skywar/bless/setting/visual/quick_tab {id:3}

@@ -82,6 +82,7 @@ def main():
         entries.append({
             **numbers, "job": strings["job"], "title": title,
             "short": re.search(r"「(.*?)」", title)[1],
+            "all_label": {"text": strings["job"] + " · " + re.search(r"「(.*?)」", title)[1], "color": "aqua"},
             "role": next(i for i, role in enumerate(ROLES, 1) if role[0] == strings["job"]),
             "detail_code": 140300 + item_id, "confirm_code": 140400 + item_id,
             "purchase_code": 149000 + item_id,
@@ -116,6 +117,12 @@ def main():
     lines.append("data modify storage skywar:bless_catalog ids set value " + compact([
         {key: entry[key] for key in ("id", "pos", "idloop")} for entry in entries
     ]))
+    lines.append("data modify storage skywar:bless_catalog roles.r0 set value " + compact({
+        "name": "全部", "ids": [{"id": entry["id"]} for entry in entries],
+        "tab": {"text": "全部  ", "color": "aqua",
+                "hover_event": {"action": "show_text", "value": {"text": "按职业排列全部 38 件礼装，滚动浏览并直接装备。"}},
+                "click_event": {"action": "run_command", "command": "trigger IshtarMenu set 140200"}},
+    }))
     for entry in entries:
         lines.append(f"data modify storage skywar:bless_catalog items.i{entry['id']} set value {compact(entry)}")
     for index, (name, subtitle, icon) in enumerate(ROLES, 1):
