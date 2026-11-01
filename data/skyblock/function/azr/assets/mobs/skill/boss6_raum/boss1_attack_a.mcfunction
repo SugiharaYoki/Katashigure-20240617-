@@ -37,6 +37,8 @@ execute if score @s rng1 matches 123 at @s rotated ~ 0 positioned ^-0.8 ^ ^ run 
 execute if score @s rng1 matches 129 at @s rotated ~ 0 positioned ^0.8 ^ ^ run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_marinus_axevortex_marker","AzrielMob_mob_marker","AzrRaum_boss1_attack"]}
 execute if score @s rng1 matches 129 at @s rotated ~ 0 positioned ^-0.8 ^ ^ run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_marinus_axevortex_marker","AzrielMob_mob_marker","AzrRaum_boss1_attack"]}
 
+execute if score @s[scores={Health=500..}] rng1 matches 132 at @s run scoreboard players set @s rng1 99999
+
 # 金剑阶段：每轮 0.7 秒准备/冲刺，随后停顿 0.3 秒；每次冲刺 4 tick × 0.5 格。
 execute if score @s rng1 matches 135 at @s run item replace entity @s weapon.mainhand with golden_sword
 execute if score @s rng1 matches 145 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_face

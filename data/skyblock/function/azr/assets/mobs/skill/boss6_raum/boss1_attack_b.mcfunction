@@ -15,37 +15,37 @@ execute if score @s rng1 matches 21..77 at @s run rotate @s facing entity @p[tag
 execute if score @s rng1 matches 117..173 at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] eyes
 
 execute if score @s rng1 matches 21 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:0.8}
-execute if score @s rng1 matches 24 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:1.6}
-execute if score @s rng1 matches 28 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:2.4}
+execute if score @s rng1 matches 23 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:1.6}
+execute if score @s rng1 matches 26 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:2.4}
 execute if score @s rng1 matches 32 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:3.2}
-execute if score @s rng1 matches 36 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:4.0}
-execute if score @s rng1 matches 39 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:4.8}
+execute if score @s rng1 matches 35 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:4.0}
+execute if score @s rng1 matches 38 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:4.8}
 execute if score @s rng1 matches 43 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:5.6}
-execute if score @s rng1 matches 47 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:6.4}
-execute if score @s rng1 matches 51 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:7.2}
+execute if score @s rng1 matches 46 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:6.4}
+execute if score @s rng1 matches 49 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:7.2}
 execute if score @s rng1 matches 54 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:8.0}
-execute if score @s rng1 matches 58 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:8.8}
-execute if score @s rng1 matches 62 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:9.6}
-execute if score @s rng1 matches 66 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:10.4}
-execute if score @s rng1 matches 69 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:11.2}
-execute if score @s rng1 matches 73 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:12.0}
-execute if score @s rng1 matches 77 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:12.8}
-execute if score @s rng1 matches 117 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:0.8}
-execute if score @s rng1 matches 120 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:1.6}
-execute if score @s rng1 matches 124 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:2.4}
-execute if score @s rng1 matches 128 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:3.2}
-execute if score @s rng1 matches 132 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:4.0}
-execute if score @s rng1 matches 135 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:4.8}
-execute if score @s rng1 matches 139 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:5.6}
-execute if score @s rng1 matches 143 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:6.4}
-execute if score @s rng1 matches 147 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:7.2}
-execute if score @s rng1 matches 150 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:8.0}
-execute if score @s rng1 matches 154 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:8.8}
-execute if score @s rng1 matches 158 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:9.6}
-execute if score @s rng1 matches 162 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:10.4}
-execute if score @s rng1 matches 165 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:11.2}
-execute if score @s rng1 matches 169 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:12.0}
-execute if score @s rng1 matches 173 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:12.8}
+execute if score @s rng1 matches 57 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:8.8}
+execute if score @s rng1 matches 60 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:9.6}
+execute if score @s[scores={Health=..500}] rng1 matches 66 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:10.4}
+execute if score @s[scores={Health=..500}] rng1 matches 69 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:11.2}
+execute if score @s[scores={Health=..500}] rng1 matches 72 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:12.0}
+execute if score @s[scores={Health=..500}] rng1 matches 75 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:12.8}
+execute if score @s[scores={Health=..450}] rng1 matches 117 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:0.8}
+execute if score @s[scores={Health=..450}] rng1 matches 120 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:1.6}
+execute if score @s[scores={Health=..450}] rng1 matches 123 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:2.4}
+execute if score @s[scores={Health=..450}] rng1 matches 128 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:3.2}
+execute if score @s[scores={Health=..450}] rng1 matches 131 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:4.0}
+execute if score @s[scores={Health=..450}] rng1 matches 134 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:4.8}
+execute if score @s[scores={Health=..450}] rng1 matches 139 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:5.6}
+execute if score @s[scores={Health=..450}] rng1 matches 142 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:6.4}
+execute if score @s[scores={Health=..450}] rng1 matches 145 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:7.2}
+execute if score @s[scores={Health=..450}] rng1 matches 150 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:8.0}
+execute if score @s[scores={Health=..450}] rng1 matches 153 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:8.8}
+execute if score @s[scores={Health=..450}] rng1 matches 156 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:9.6}
+execute if score @s[scores={Health=..450}] rng1 matches 162 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:10.4}
+execute if score @s[scores={Health=..450}] rng1 matches 165 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:11.2}
+execute if score @s[scores={Health=..450}] rng1 matches 168 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:12.0}
+execute if score @s[scores={Health=..450}] rng1 matches 171 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:12.8}
 execute if score @s rng1 matches 61 at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
 execute if score @s rng1 matches 61 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_diesel_fire_marker","AzrielMob_mob_marker","AzrRaum_boss1_attack"]}
 execute if score @s rng1 matches 93 at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
