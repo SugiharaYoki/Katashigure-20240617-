@@ -1,0 +1,5 @@
+function skyblock:azr/assets/mobs/skill/boss6_malpas/boss1_follow
+execute if score @s rng3 matches 1 at @n[type=mannequin,tag=AzrielNPC_raum,tag=azr_raum_with_malpas,nbt=!{Health:0.0f},distance=..200] rotated ~ 0 positioned ^2.828427 ^8 ^2.828427 if entity @s[distance=..0.6] run tag @s add AzrMalpas_cast_ready
+execute if score @s rng3 matches 2 at @n[type=mannequin,tag=AzrielNPC_raum,tag=azr_raum_with_malpas,nbt=!{Health:0.0f},distance=..200] rotated ~ 0 positioned ^2.828427 ^8 ^-2.828427 if entity @s[distance=..0.6] run tag @s add AzrMalpas_cast_ready
+execute if score @s rng3 matches 3 at @n[type=mannequin,tag=AzrielNPC_raum,tag=azr_raum_with_malpas,nbt=!{Health:0.0f},distance=..200] rotated ~ 0 positioned ^-2.828427 ^8 ^2.828427 if entity @s[distance=..0.6] run tag @s add AzrMalpas_cast_ready
+execute if score @s rng3 matches 4 at @n[type=mannequin,tag=AzrielNPC_raum,tag=azr_raum_with_malpas,nbt=!{Health:0.0f},distance=..200] rotated ~ 0 positioned ^-2.828427 ^8 ^-2.828427 if entity @s[distance=..0.6] run tag @s add AzrMalpas_cast_ready

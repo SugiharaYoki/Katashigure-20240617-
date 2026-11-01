@@ -82,3 +82,7 @@ execute if score stage Azr_system matches 112 positioned -79631 39 -63 if entity
 
 
 
+
+# 玛帕斯升空和空中双翼，沿用现有的 50 格实体更新入口。
+execute if entity @s[tag=AzrielNPC_malpas,tag=AzrMalpas_intro_rise] at @s run function skyblock:azr/assets/mobs/skill/boss6_malpas/intro_rise
+execute if entity @s[tag=AzrielNPC_malpas] at @s run function skyblock:azr/assets/mobs/skill/boss6_malpas/air_visual

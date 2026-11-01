@@ -83,9 +83,9 @@ execute if entity @s[tag=AzrRaum_boss1_landed,scores={rng6=1}] at @s run particl
 execute if entity @s[tag=AzrRaum_boss1_landed,scores={rng6=1}] at @s run particle minecraft:gust ~ ~ ~ 3 0 3 0 25 force
 execute if entity @s[tag=AzrRaum_boss1_landed,scores={rng6=1}] at @s run playsound minecraft:item.mace.smash_ground_heavy hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 1.5 1.2
 execute if entity @s[tag=AzrRaum_boss1_landed,scores={rng6=11}] at @s as @a[tag=azrPlayer,distance=..3] run damage @s 8 minecraft:mob_attack
-execute if entity @s[tag=AzrRaum_boss1_landed,scores={rng6=11}] at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_pillar_random {kind:"AzrielMob_boss_raum_pillar_explosion_marker"}
-execute if entity @s[tag=AzrRaum_boss1_landed,scores={rng6=11}] at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_pillar_random {kind:"AzrielMob_boss_raum_pillar_explosion_marker"}
-execute if entity @s[tag=AzrRaum_boss1_landed,scores={rng6=11}] at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_pillar_random {kind:"AzrielMob_boss_raum_pillar_explosion_marker"}
-execute if entity @s[tag=AzrRaum_boss1_landed,scores={rng6=11}] at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_pillar_random {kind:"AzrielMob_boss_raum_pillar_explosion_marker"}
-execute if entity @s[tag=AzrRaum_boss1_landed,scores={rng6=11}] at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_pillar_random {kind:"AzrielMob_boss_raum_pillar_explosion_marker"}
+execute if entity @s[tag=AzrRaum_boss1_landed,scores={rng6=11}] at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_pillar_outer {min:60,max:100}
+execute if entity @s[tag=AzrRaum_boss1_landed,scores={rng6=11}] at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_pillar_outer {min:60,max:100}
+execute if entity @s[tag=AzrRaum_boss1_landed,scores={rng6=11}] at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_pillar_outer {min:60,max:100}
+execute if entity @s[tag=AzrRaum_boss1_landed,scores={rng6=11}] at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_pillar_outer {min:60,max:100}
+execute if entity @s[tag=AzrRaum_boss1_landed,scores={rng6=11}] at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_pillar_outer {min:60,max:100}
 execute if entity @s[tag=AzrRaum_boss1_landed,scores={rng6=51..}] run scoreboard players set @s rng1 99999

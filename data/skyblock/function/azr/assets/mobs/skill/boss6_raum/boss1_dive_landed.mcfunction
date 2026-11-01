@@ -7,6 +7,13 @@ kill @e[type=marker,tag=AzrRaum_boss1_d_landing]
 data merge entity @s {NoGravity:0b,Motion:[0.0d,0.0d,0.0d]}
 scoreboard players set @s rng15 0
 
+# 每次实际落地均在半径 12 格内额外生成五根火柱。
+function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_pillar_outer {min:0,max:120}
+function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_pillar_outer {min:0,max:120}
+function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_pillar_outer {min:0,max:120}
+function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_pillar_outer {min:0,max:120}
+function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_pillar_outer {min:0,max:120}
+
 # 第一次落地立即二跳，并随机选择这一轮四连音爆的左右发射侧。
 execute if score @s rng14 matches 2 run data modify entity @s Motion[1] set value 0.9d
 execute if score @s rng14 matches 2 store result score @s rng17 run random value 1..2
