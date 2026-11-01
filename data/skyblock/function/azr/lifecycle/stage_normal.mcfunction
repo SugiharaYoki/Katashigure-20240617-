@@ -16,7 +16,7 @@ execute if score stage Azr_system matches 11..109 if entity @a[x=-79887,y=43,z=1
 #BOSS2-第九关 25
 execute if score stage Azr_system matches 26..109 run function skyblock:azr/assets/events/stage/chapter_3/stage9_garden
 execute if score stage Azr_system matches 2..109 if entity @a[x=-79856,y=29,z=-58,distance=..300] run function skyblock:azr/assets/events/stage/chapter_3/stage9_dripstone
-execute if score stage Azr_system matches 26..109 if entity @a[x=-79887,y=41,z=-143,distance=..300] run function skyblock:azr/assets/events/stage/chapter_3/stage9_prison
+execute if score stage Azr_system matches 26..109 run function skyblock:azr/assets/events/stage/chapter_3/stage9_prison
 
 #休憩所
 function skyblock:azr/assets/events/stage/chapter_1/stage1_angelbotany
