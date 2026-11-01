@@ -31,7 +31,7 @@ execute if score @s rng1 matches 5007 run scoreboard players set stage Azr_syste
 
 execute if score @s rng1 matches 9999 run scoreboard players set @s rng1 9998
 execute if score @s rng1 matches ..9999 if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:viciousheroism music @s ~ ~ ~ 0.7
-execute if score @s rng9 matches 744.. run scoreboard players set @s rng9 0
+execute if score @s rng9 matches 724.. run scoreboard players set @s rng9 0
 
 
 execute if score @s rng1 matches 5392 run bossbar add azr:boss_hp_bar_2 [{text:"洞悉逝灭的穷途灵智 魔神 · ",bold:true,color:"white"},{text:"玛帕斯",bold:true,color:"#9c101e"}]
