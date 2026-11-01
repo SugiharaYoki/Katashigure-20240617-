@@ -408,7 +408,8 @@ execute if score @s rng1 matches 2990..2999 run scoreboard players set @s rng1 2
 execute if score @s rng1 matches 300..2999 if entity @a[tag=azrPlayer,x=-79956,y=-30,z=-274,dx=10,dy=9,dz=20] run scoreboard players set @s rng1 3000
 
 execute if score @s rng1 matches 3001 positioned -79919 -30 -270 as @a[tag=azrPlayer,x=-79956,y=-30,z=-274,dx=16,dy=12,dz=20] at @s run tp @s ~20 ~100 ~-250
-execute if score @s rng1 matches 3001 positioned -79919 -30 -270 as @n[tag=AzrielMob_sonic_eye_lord,distance=..300] at @s run tp @s ~20 ~100 ~-250
+execute if score @s rng1 matches 3001 positioned -79929 77 -520 as @n[tag=AzrielMob_sonic_eye_lord] at @s run tp @s -79929 80 -520
+execute if score @s rng1 matches 3001 positioned -79929 80 -520 unless entity @n[tag=AzrielMob_sonic_eye_lord] run function skyblock:azr/assets/mobs/unique/sonic_eye_lord
 execute if score @s rng1 matches 3001 positioned -79919 -30 -270 as @n[tag=AzrielMob_husk,distance=..40] at @s run tp @s ~20 ~100 ~-250
 execute if score @s rng1 matches 3001 positioned -79907.00 71.05 -519.63 run particle minecraft:white_smoke ~ ~ ~ 0.5 2 1.2 0.03 150
 execute if score @s rng1 matches 3001 positioned -79921 70 -520 run particle large_smoke ~ ~ ~ 20 3 3 0.06 200
@@ -421,8 +422,8 @@ execute if score @s rng1 matches 3004 positioned -79921 70 -520 run particle exp
 execute if score @s rng1 matches 3004 positioned -79921 70 -520 run particle large_smoke ~ ~ ~ 20 3 3 0.06 120
 execute if score @s rng1 matches 3004 positioned -79921 70 -520 run playsound entity.generic.explode block @a ~-10 ~ ~ 10 0.8
 execute if score @s rng1 matches 3004 run effect give @a[tag=azrPlayer] slow_falling 10 100 true
-execute if score @s rng1 matches 3004 as @a[tag=azrPlayer] at @s run attribute @s jump_strength base set 0
-execute if score @s rng1 matches 3004 as @a[tag=azrPlayer] at @s run attribute @s gravity base set 0.01
+execute if score @s rng1 matches 3002 as @a[tag=azrPlayer] at @s run attribute @s jump_strength base set 0
+execute if score @s rng1 matches 3002 as @a[tag=azrPlayer] at @s run attribute @s gravity base set 0.01
 execute if score @s rng1 matches 3004 run clone -79934 69 -593 -79926 75 -586 -79934 69 -523
 
 

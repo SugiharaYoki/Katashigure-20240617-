@@ -1,5 +1,5 @@
-execute as @s[scores={rng1=1}] as @a[distance=..7,tag=azrShowDialog] at @s run tp @s ~ ~-50 ~
-execute as @s[scores={rng1=1}] as @a[distance=7..,tag=azrShowDialog] at @s run tp @s -79864 -3 -109
+execute as @s[scores={rng1=1}] as @a[distance=..7,tag=azrPlayer] at @s run tp @s ~ ~-50 ~
+execute as @s[scores={rng1=1}] as @a[distance=7..,tag=azrPlayer] at @s run tp @s -79864 -3 -109
 execute as @s[scores={rng1=1}] as @a[tag=azrShowDialog] at @s run stopsound @a
 execute as @s[scores={rng1=1}] run scoreboard players set @e[tag=AzrielNPC_Divineforce_Followable] AzrielNPC_FollowInterest 0
 execute as @s[scores={rng1=10}] as @a[distance=..200,tag=azrShowDialog] at @s run playsound minecraft:entity.evoker.ambient neutral @s ~ ~ ~ 1 0.7
@@ -71,7 +71,7 @@ execute as @s[scores={rng1=91}] as @n[tag=AzrielMob_ch3_resting_swordman] at @s 
 execute as @s[scores={rng1=91}] run fill -79876 47 -107 -79876 52 -111 air
 execute as @s[scores={rng1=96}] run fill -79861 -4 -103 -79873 -4 -115 air
 execute as @s[scores={rng1=96}] run effect give @a[tag=azrShowDialog] slow_falling 1 0 true
-execute as @s[scores={rng1=100}] as @a[tag=azrShowDialog] at @s run tp @s -79864 47 -109
+execute as @s[scores={rng1=100}] as @a[tag=azrPlayer] at @s run tp @s -79864 47 -109
 execute as @s[scores={rng1=102}] run tellraw @a[tag=azrShowDialog,distance=0..19] [{text:"剑士：",color:"green",bold:1b},{bold: false,text:"\n“我快顶不住了！！”",color:"white"}]
 execute as @s[scores={rng1=112}] run tellraw @a[tag=azrShowDialog,distance=0..19] [{text:"牧师：",color:"green",bold:1b},{bold: false,text:"\n“大家快撤退，不要硬碰硬……！”",color:"white"}]
 #原stage12铁门现可开启
