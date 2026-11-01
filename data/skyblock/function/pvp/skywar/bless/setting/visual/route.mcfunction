@@ -1,11 +1,12 @@
-# 所有客户端操作只发送 trigger；状态、价格和解锁权限在服务端重新读取。
-scoreboard players operation #ishtar_ui_action rng1 = @s MultiMenu
-scoreboard players set @s MultiMenu 0
-scoreboard players enable @s MultiMenu
+# 面板使用独立 trigger，避免旧聊天菜单修改 MultiMenu 后吞掉页面切换请求。
+scoreboard players operation #ishtar_ui_action rng1 = @s IshtarMenu
+scoreboard players set @s IshtarMenu 0
+scoreboard players enable @s IshtarMenu
 execute if entity @s[tag=Gaming] run return run dialog clear @s
 execute if score #ishtar_ui_action rng1 matches 140999 run return run dialog clear @s
-execute if score #ishtar_ui_action rng1 matches 140998 run return run scoreboard players set @s MultiMenu 118
-execute if score #ishtar_ui_action rng1 matches 140997 run return run scoreboard players set @s MultiMenu 131
+execute if score #ishtar_ui_action rng1 matches 140997..140998 run dialog clear @s
+execute if score #ishtar_ui_action rng1 matches 140998 run return run function skyblock:menu/index/multimenu118_pvpmainmenu
+execute if score #ishtar_ui_action rng1 matches 140997 run return run function skyblock:pvp/skywar/bless/setting/bless
 
 execute unless score @s ishtar_ui_slot matches 1..4 run scoreboard players set @s ishtar_ui_slot 1
 execute unless score @s ishtar_ui_role matches 1..10 run scoreboard players set @s ishtar_ui_role 1

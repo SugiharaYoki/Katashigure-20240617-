@@ -1,6 +1,6 @@
 $scoreboard players set @s ishtar_ui_role $(id)
 $data modify storage skywar:bless_ui current_role set from storage skywar:bless_catalog roles.r$(id)
-data modify storage skywar:bless_ui dialog set value {type:"multi_action",title:"职业礼装",pause:false,after_action:"wait_for_response",columns:2,body:[{type:"item",item:{id:"minecraft:air",count:1},show_tooltip:false,description:{contents:{text:"",color:"yellow",bold:true},width:250}}],actions:[],exit_action:{label:"返回四槽总览",width:150,action:{type:"run_command",command:"trigger MultiMenu set 140000"}}}
+data modify storage skywar:bless_ui dialog set value {type:"multi_action",title:"职业礼装",pause:false,after_action:"none",columns:2,body:[{type:"item",item:{id:"minecraft:air",count:1},show_tooltip:false,description:{contents:{text:"",color:"yellow",bold:true},width:250}}],actions:[],exit_action:{label:"返回四槽总览",width:150,action:{type:"run_command",command:"trigger IshtarMenu set 140000"}}}
 data modify storage skywar:bless_ui dialog.title set from storage skywar:bless_ui current_role.name
 data modify storage skywar:bless_ui dialog.body[0].item.id set from storage skywar:bless_ui current_role.icon
 data modify storage skywar:bless_ui dialog.body[0].description.contents.text set from storage skywar:bless_ui current_role.subtitle

@@ -82,7 +82,7 @@ execute as @s[scores={MultiMenu=121}] at @s run function skyblock:menu/index/mul
 
 execute as @s[scores={MultiMenu=131}] at @s run function skyblock:pvp/skywar/bless/setting/bless
 execute as @s[scores={MultiMenu=131001..139999}] at @s run function skyblock:pvp/skywar/bless/setting/bless_execute
-execute as @s[scores={MultiMenu=140000..149999}] at @s run function skyblock:pvp/skywar/bless/setting/visual/route
+execute as @s[scores={MultiMenu=140000..149999}] at @s run function skyblock:pvp/skywar/bless/setting/visual/legacy_route
 
 execute as @s[scores={MultiMenu=101700..102000}] at @s run function skyblock:world_system_functionreader_musicbox
 execute as @s[scores={MultiMenu=16210001..16329999}] at @s run function skyblock:city/verbal/trigger

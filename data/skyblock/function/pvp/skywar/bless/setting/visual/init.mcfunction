@@ -1,3 +1,4 @@
+scoreboard objectives add IshtarMenu trigger
 scoreboard objectives add ishtar_ui_slot dummy
 scoreboard objectives add ishtar_ui_role dummy
 scoreboard objectives add ishtar_bless_1 dummy

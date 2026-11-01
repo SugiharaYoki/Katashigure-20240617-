@@ -93,7 +93,7 @@ def main():
             "button": {
                 "label": {"text": title, "color": "aqua"}, "width": 150,
                 "tooltip": {"text": summary + "\n点击查看完整效果与装备槽位", "color": "white"},
-                "action": {"type": "run_command", "command": f"trigger MultiMenu set {140300 + item_id}"},
+                "action": {"type": "run_command", "command": f"trigger IshtarMenu set {140300 + item_id}"},
             },
         })
     assert {entry["id"] for entry in entries} == set(ITEMS), "礼装目录不完整"
@@ -112,7 +112,7 @@ def main():
             "ids": [{"id": item_id} for item_id in ids],
             "button": {"label": {"text": f"{name} · {len(ids)}", "color": "aqua"}, "width": 150,
                        "tooltip": {"text": subtitle, "color": "white"},
-                       "action": {"type": "run_command", "command": f"trigger MultiMenu set {140200 + index}"}},
+                       "action": {"type": "run_command", "command": f"trigger IshtarMenu set {140200 + index}"}},
         }
         lines.append(f"data modify storage skywar:bless_catalog roles.r{index} set value {compact(role)}")
     (SETTING / "visual/catalog.mcfunction").write_text("\n".join(lines) + "\n")

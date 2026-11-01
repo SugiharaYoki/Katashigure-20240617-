@@ -1,4 +1,6 @@
 
+function skyblock:pvp/skywar/bless/setting/visual/tick
+
 execute unless score $StopAzr0 skyblock_system matches 1 run function skyblock:mg/azr0/main
 execute unless score $StopAzr skyblock_system matches 1 run function skyblock:azr/main
 execute unless score $StopSea skyblock_system matches 1 if block -25 23 32 soul_lantern positioned 90060 102 139 run function skyblock:sea/core20
