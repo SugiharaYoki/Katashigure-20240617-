@@ -34,4 +34,5 @@ scoreboard players operation #ishtar_ui_id rng1 = #ishtar_ui_action rng1
 scoreboard players operation #ishtar_ui_id rng1 %= #ishtar_ui_base rng1
 execute store result storage skywar:bless_ui args.id int 1 run scoreboard players get #ishtar_ui_id rng1
 execute if score #ishtar_ui_action rng1 matches 141001..144038 if score #ishtar_ui_id rng1 matches 1..38 if score #ishtar_ui_slot rng1 matches 1..4 run return run function skyblock:pvp/skywar/bless/setting/visual/equip with storage skywar:bless_ui args
+execute if score #ishtar_ui_action rng1 matches 145001..148038 if score #ishtar_ui_id rng1 matches 1..38 if score #ishtar_ui_slot rng1 matches 5..8 run return run function skyblock:pvp/skywar/bless/setting/visual/quick_purchase_route
 function skyblock:pvp/skywar/bless/setting/visual/home

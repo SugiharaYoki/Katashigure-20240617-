@@ -95,6 +95,19 @@ def main():
                 "tooltip": {"text": summary + "\n点击查看完整效果与装备槽位", "color": "white"},
                 "action": {"type": "run_command", "command": f"trigger IshtarMenu set {140300 + item_id}"},
             },
+            "quick_title": {
+                "label": {"text": title, "color": "aqua"}, "width": 146,
+                "tooltip": {"text": title + "\n\n" + description + "\n\n点击名称可展开详情；右侧槽位可直接装备。", "color": "white"},
+                "action": {"type": "run_command", "command": f"trigger IshtarMenu set {140300 + item_id}"},
+            },
+            "quick_slots": {
+                f"s{slot}": {
+                    "label": {"text": name[0], "color": "aqua"}, "width": 36,
+                    "tooltip": {"text": f"{title}\n装备到{name}", "color": "white", "extra": []},
+                    "action": {"type": "run_command", "command": f"trigger IshtarMenu set {140000 + slot * 1000 + item_id}"},
+                }
+                for slot, name in enumerate(("统之礼", "纵之礼", "纺之礼", "解之礼"), 1)
+            },
         })
     assert {entry["id"] for entry in entries} == set(ITEMS), "礼装目录不完整"
     lines = ["# 自动生成：python3 tools/generate_ishtar_catalog.py；效果信息源为 ../bless.mcfunction。",
@@ -110,6 +123,9 @@ def main():
         role = {
             "name": name, "subtitle": subtitle, "icon": "minecraft:" + icon,
             "ids": [{"id": item_id} for item_id in ids],
+            "tab": {"text": name + "  ", "color": "aqua",
+                    "hover_event": {"action": "show_text", "value": {"text": subtitle}},
+                    "click_event": {"action": "run_command", "command": f"trigger IshtarMenu set {140200 + index}"}},
             "button": {"label": {"text": f"{name} · {len(ids)}", "color": "aqua"}, "width": 150,
                        "tooltip": {"text": subtitle, "color": "white"},
                        "action": {"type": "run_command", "command": f"trigger IshtarMenu set {140200 + index}"}},

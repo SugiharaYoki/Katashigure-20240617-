@@ -1,7 +1,7 @@
 function skyblock:pvp/skywar/bless/setting/visual/init
 scoreboard players enable @s IshtarMenu
 playsound minecraft:ui.button.click master @s ~ ~ ~ 0.3 1.4 0.4
-tellraw @s [{text:"选择你想使用的礼装",color:"yellow",bold:1b},{text:" 共可分配四个槽位",color:"white"},{text:"  [可视化选择(BETA)]",color:"aqua",bold:0b,click_event:{action:"run_command",command:"trigger IshtarMenu set 140000"},hover_event:{action:"show_text",value:{text:"打开礼装面板：四槽总览、职业分类、礼装详情与快速装备",color:"white"}}}]
+tellraw @s [{text:"选择你想使用的礼装",color:"yellow",bold:1b},{text:" 共可分配四个槽位",color:"white"},{text:"  [可视化选择(BETA)]",color:"aqua",bold:0b,click_event:{action:"run_command",command:"trigger IshtarMenu set 140000"},hover_event:{action:"show_text",value:{text:"打开快速整备：每件礼装旁直接选择槽位，点击即保存；悬停名称查看效果",color:"white"}}}]
 #function skyblock:pvp/skywar/bless/setting/bless_macro {bless:ishtar_bless_1,bless_name:"- 统之礼"}
 #function skyblock:pvp/skywar/bless/setting/bless_macro {bless:ishtar_bless_2,bless_name:"- 纵之礼"}
 #function skyblock:pvp/skywar/bless/setting/bless_macro {bless:ishtar_bless_3,bless_name:"- 纺之礼"}
