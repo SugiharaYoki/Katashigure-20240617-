@@ -19,3 +19,7 @@ particle minecraft:small_gust ^2 ^1.8 ^-0.8 0 0 0 0 1 force
 particle minecraft:small_gust ^1.65 ^1.4 ^-0.65 0 0 0 0 1 force
 particle minecraft:small_gust ^1.3 ^1.05 ^-0.5 0 0 0 0 1 force
 particle minecraft:small_gust ^0.85 ^1.1 ^-0.4 0 0 0 0 1 force
+
+# 左右翼内部各补一处，填充轮廓中央。
+particle minecraft:small_gust ^-1.25 ^1.6 ^-0.58 0 0 0 0 1 force
+particle minecraft:small_gust ^1.25 ^1.6 ^-0.58 0 0 0 0 1 force
