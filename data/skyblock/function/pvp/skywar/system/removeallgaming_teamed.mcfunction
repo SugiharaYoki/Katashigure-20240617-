@@ -284,3 +284,18 @@ tag @s remove AzrFlowerPVP_B
 tag @s remove hasSkills
 tag @s remove azr_skills_arrow
 tag @s remove AZS_RespAnchorTeleport
+
+tag @s remove azr_OneLifeOnly
+
+
+
+
+
+
+
+
+
+
+
+
+
