@@ -33,7 +33,7 @@ execute if score @s rng1 matches 194 run tellraw @a[tag=azrShowDialog] [{text:"ï
 
 execute if score @s rng1 matches 198 as @n[tag=AzrielNPC_focalor] at @s run playsound minecraft:entity.player.teleport neutral @a ~ ~ ~ 1 1.2
 execute if score @s rng1 matches 198 as @n[tag=AzrielNPC_focalor] at @s run particle enchant ~ ~1 ~ 0.3 0.9 0.3 0.05 25
-execute if score @s rng1 matches 198 as @n[tag=AzrielNPC_focalor] at @s run tp @s -79840 -17 80
+execute if score @s rng1 matches 198..299 as @n[tag=AzrielNPC_focalor] at @s run tp @s -79840 -17 80
 
 
 execute if score @s rng1 matches 198 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..47}] Azr_skillPoints 48
