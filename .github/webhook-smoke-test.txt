@@ -1,3 +1,0 @@
-Webhook notification smoke test for GitPull 1.4.
-This text file is not a Minecraft datapack resource and will be removed after verification.
-Test time: 2026-11-01 20:58:29 +08:00
