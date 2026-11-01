@@ -340,13 +340,14 @@ execute if score @s rng5 matches 90 run tellraw @a[tag=azrShowDialog] [{text:"é¢
 execute if score @s rng5 matches 90 as @n[tag=AzrielNPC_raum] at @s run data modify entity @s NoGravity set value 0b
 execute if score @s rng5 matches 90 as @n[tag=AzrielNPC_raum] at @s run tag @s remove AzrRaum_midgarden
 
-execute if score @s rng5 matches 100 as @n[tag=AzrielNPC_malpas] at @s run data modify entity @s NoGravity set value 1b
-execute if score @s rng5 matches 100 as @n[tag=AzrielNPC_malpas] at @s rotated ~ 0 positioned 0.0 0 0.0 run summon marker ^ ^3.01 ^-0.2 {Tags:["AzrielMob_move_marker_malpas"]}
-execute if score @s rng5 matches 100 as @n[tag=AzrielNPC_malpas] at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_move_marker_malpas] Pos
-execute if score @s rng5 matches 100 as @n[tag=AzrielNPC_malpas] at @s run kill @e[type=marker,tag=AzrielMob_move_marker_malpas]
+execute if score @s rng5 matches 100 as @n[tag=AzrielNPC_malpas] at @s run data modify entity @s NoGravity set value 0b
+execute if score @s rng5 matches 101 as @n[tag=AzrielNPC_malpas] at @s rotated ~ 0 positioned 0.0 0 0.0 run summon marker ^ ^3.01 ^-0.2 {Tags:["AzrielMob_move_marker_malpas"]}
+execute if score @s rng5 matches 101 as @n[tag=AzrielNPC_malpas] at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_move_marker_malpas] Pos
+execute if score @s rng5 matches 101 as @n[tag=AzrielNPC_malpas] at @s run kill @e[type=marker,tag=AzrielMob_move_marker_malpas]
+execute if score @s rng5 matches 105 as @n[tag=AzrielNPC_malpas] at @s run data modify entity @s NoGravity set value 1b
+execute if score @s rng5 matches 108 as @n[tag=AzrielNPC_malpas] at @s run tp @s -79631 48 -79
 
-
-execute if score @s rng5 matches 103 as @n[tag=AzrielNPC_raum] at @s rotated ~ 0 positioned 0.0 0 0.0 run summon marker ^1 ^0.3 ^0.1 {Tags:["AzrielMob_move_marker_raum"]}
+execute if score @s rng5 matches 103 as @n[tag=AzrielNPC_raum] at @s rotated ~ 0 positioned 0.0 0 0.0 run summon marker ^2 ^0.3 ^0.1 {Tags:["AzrielMob_move_marker_raum"]}
 execute if score @s rng5 matches 103 as @n[tag=AzrielNPC_raum] at @s run data modify entity @s Motion set from entity @n[type=marker,tag=AzrielMob_move_marker_raum] Pos
 execute if score @s rng5 matches 103 as @n[tag=AzrielNPC_raum] at @s run kill @e[type=marker,tag=AzrielMob_move_marker_raum]
 
