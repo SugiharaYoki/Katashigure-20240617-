@@ -298,7 +298,9 @@ execute if score @s rng4 matches 112 positioned -79652 34 -17 run function skybl
 execute if score @s rng4 matches 115 positioned -79649 34 -19 run function skyblock:azr/assets/mobs/ravager
 
 execute if score @s rng4 matches 125 positioned -79649 34 -18 run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_large
+execute if score @s rng4 matches 125 positioned -79649 34 -16 run function skyblock:azr/assets/mobs/skill/boss_entrance/summon_midgarden
 execute if score @s rng4 matches 125 positioned -79649 34 -18 run function skyblock:azr/assets/mobs/skill/boss_entrance/summon_midgarden
+execute if score @s rng4 matches 125 positioned -79649 34 -20 run function skyblock:azr/assets/mobs/skill/boss_entrance/summon_midgarden
 
 
 execute if score @s rng3 matches 2 positioned -79699 32 27 as @e[tag=AzrielMob_barrier_maintainer,distance=..100] run effect give @s resistance infinite 3 true
@@ -324,6 +326,7 @@ execute if score @s rng5 matches 6 positioned -79631 40 -71 as @n[tag=AzrielNPC_
 execute if score @s rng5 matches 6 positioned -79631 40 -71 as @n[tag=AzrielNPC_malpas] at @s positioned ~3 ~ ~ run summon lightning_bolt
 execute if score @s rng5 matches 6 positioned -79631 40 -71 as @n[tag=AzrielNPC_malpas] at @s positioned ~-3 ~ ~ run summon lightning_bolt
 
+execute if score @s rng5 matches 15 run bossbar remove azr:boss_hp_bar
 execute if score @s rng5 matches 15 run tellraw @a[tag=azrShowDialog] [{text:"预言家 玛帕斯：",color:"#9c101e",bold:1b},{bold: false,text:"\n“我现在知晓你为何能够从魔界一路杀回神庭了。”",color:"white"}]
 execute if score @s rng5 matches 27 run tellraw @a[tag=azrShowDialog] [{text:"预言家 玛帕斯：",color:"#9c101e",bold:1b},{bold: false,text:"\n“拥有魔神级实力的你，确实配当我们的对手。”",color:"white"}]
 execute if score @s rng5 matches 43 run tellraw @a[tag=azrShowDialog] [{text:"渡鸦 劳姆：",color:"#fff050",bold:1b},{bold: false,text:"\n“但还不够，我能干掉她。”",color:"white"}]
