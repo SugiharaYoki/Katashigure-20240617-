@@ -1,6 +1,3 @@
-function skyblock:city/casino/poker/init
-scoreboard players enable @s Poker
-tellraw @s {text:" 德州扑克 · 人机 / 多人牌桌",color:"gold",click_event:{action:"run_command",command:"trigger Poker set 1"}}
 playsound entity.villager.yes ambient @s ~ ~ ~ 10
 function skyblock:tool_rng
 execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng5 matches 1 run tellraw @s {text:"空中庭园赌场·接待员：",bold:1b,color:"aqua"}
