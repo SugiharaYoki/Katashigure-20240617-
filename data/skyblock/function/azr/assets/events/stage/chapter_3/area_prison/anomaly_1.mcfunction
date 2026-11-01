@@ -1,4 +1,4 @@
-execute if score @s rng1 matches 1 if entity @a[x=-79913,y=46,z=-131,dx=8,dy=6,dz=7,tag=azrPlayer] run tp @a[tag=azrShowDialog] ~ ~-66 ~
+execute if score @s rng1 matches 1 if entity @a[x=-79913,y=46,z=-131,dx=8,dy=6,dz=7,tag=azrPlayer] run tp @a[tag=azrShowDialog] ~ ~-65.4 ~
 execute if score @s rng1 matches 1 run scoreboard players set @e[tag=AzrielNPC_Divineforce_Followable] AzrielNPC_FollowInterest 0
 
 execute if score @s rng1 matches 30..35 run scoreboard players set @s rng1 28
