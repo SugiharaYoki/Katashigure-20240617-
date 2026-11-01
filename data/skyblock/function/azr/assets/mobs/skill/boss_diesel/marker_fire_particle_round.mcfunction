@@ -589,3 +589,6 @@ $execute if entity @s[scores={rng1=3}] rotated as @s rotated 350 0 positioned ^ 
 #$execute if entity @s[scores={rng1=3}] rotated as @s rotated 335 0 positioned ^ ^1.2 ^$(distance_target) as @a[tag=azrPlayer,distance=..1] run function skyblock:azr/system/player/map_effect/in_attack_range
 #$execute if entity @s[scores={rng1=3}] rotated as @s rotated 345 0 positioned ^ ^1.2 ^$(distance_target) as @a[tag=azrPlayer,distance=..1] run function skyblock:azr/system/player/map_effect/in_attack_range
 #$execute if entity @s[scores={rng1=3}] rotated as @s rotated 355 0 positioned ^ ^1.2 ^$(distance_target) as @a[tag=azrPlayer,distance=..1] run function skyblock:azr/system/player/map_effect/in_attack_range
+
+playsound minecraft:block.lava.pop block @a ~ ~ ~ 1 0.9
+playsound block.lava.extinguish block @a ~ ~ ~ 1 1.7

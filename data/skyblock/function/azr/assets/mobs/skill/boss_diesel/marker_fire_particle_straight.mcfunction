@@ -109,3 +109,5 @@ execute positioned ^1 ^1.2 ^8.5 run function skyblock:azr/system/player/map_effe
 execute positioned ^-1 ^1.2 ^8.5 run function skyblock:azr/system/player/map_effect/in_attack_range
 execute positioned ^1 ^1.2 ^9.0 run function skyblock:azr/system/player/map_effect/in_attack_range
 execute positioned ^-1 ^1.2 ^9.0 run function skyblock:azr/system/player/map_effect/in_attack_range
+playsound minecraft:block.lava.pop block @a ~ ~ ~ 1 0.9
+playsound block.lava.extinguish block @a ~ ~ ~ 1 1.7
