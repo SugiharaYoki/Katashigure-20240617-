@@ -1,5 +1,6 @@
 
 function skyblock:pvp/skywar/bless/setting/visual/tick
+function skyblock:city/casino/poker/tick
 
 execute unless score $StopAzr0 skyblock_system matches 1 run function skyblock:mg/azr0/main
 execute unless score $StopAzr skyblock_system matches 1 run function skyblock:azr/main

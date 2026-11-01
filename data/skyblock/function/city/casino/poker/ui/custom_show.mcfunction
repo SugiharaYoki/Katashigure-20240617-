@@ -1,0 +1,4 @@
+# 自动生成：python3 tools/generate_holdem.py
+$data modify storage skyblock:poker ui.dialog set value {"type":"confirmation","title":{"text":"自定义加注","color":"gold"},"pause":false,"after_action":"none","can_close_with_escape":false,"body":[{"type":"plain_message","width":310,"contents":{"text":"填写本轮累计下注总额（整数）。\n合法范围：$(minimum) ～ $(maximum)\n包含本轮已经投入的筹码；只扣除差额。","color":"white"}}],"inputs":[{"key":"amount","type":"text","label":"本轮总额（只填数字）","initial":"$(minimum)","max_length":9,"width":250}],"yes":{"label":{"text":"确认加注","color":"gold"},"width":150,"action":{"type":"dynamic/run_command","template":"trigger PokerBet set AMOUNT_PLACEHOLDER"}},"no":{"label":{"text":"取消并返回牌桌","color":"white"},"width":150,"action":{"type":"run_command","command":"trigger Poker set 2"}}}
+data modify storage skyblock:poker ui.dialog.yes.action.template set value "trigger PokerBet set $(amount)"
+function skyblock:city/casino/poker/ui/show with storage skyblock:poker ui

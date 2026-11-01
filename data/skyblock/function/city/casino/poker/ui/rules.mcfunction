@@ -1,0 +1,5 @@
+# 自动生成：python3 tools/generate_holdem.py
+tag @s remove PokerView
+data modify storage skyblock:poker ui.dialog set value {"type":"notice","title":{"text":"德州扑克 · 玩法","color":"gold"},"pause":false,"after_action":"none","body":[{"type":"plain_message","width":310,"contents":{"text":"每人2张底牌，共5张公共牌；从7张中选最强5张。\n\n流程：小盲5 / 大盲10 → 翻前 → 翻牌3张 → 转牌1张 → 河牌1张 → 摊牌。庄位每手顺时针轮换。\n\n牌型从强到弱：同花顺、四条、葫芦、同花、顺子、三条、两对、一对、高牌。A可组成A2345。\n\n加注金额指本轮累计投入；最小加注遵循上次完整加注幅度。全下可能形成边池，系统自动分配；平局均分，余数从庄家左边起分配。\n\n行动限时30秒，超时可过则过，否则弃牌。连续超时会自动离桌。关闭面板保留座位；对局中离桌将在本手结束后退回剩余筹码。\n\n入桌2,000 FSB，1 FSB=1筹码。人机只读取自己的底牌及已公开公共牌。","color":"white"}}],"action":{"label":{"text":"返回大厅","color":"white"},"width":150,"action":{"type":"run_command","command":"trigger Poker set 1"}}}
+execute if score @s PokerRoom matches 1..4 run data modify storage skyblock:poker ui.dialog.action set value {"label":{"text":"返回我的牌桌","color":"gold"},"width":150,"action":{"type":"run_command","command":"trigger Poker set 2"}}
+function skyblock:city/casino/poker/ui/show with storage skyblock:poker ui

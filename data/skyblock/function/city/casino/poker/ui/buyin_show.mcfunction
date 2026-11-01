@@ -1,0 +1,4 @@
+# 自动生成：python3 tools/generate_holdem.py
+$data modify storage skyblock:poker ui.dialog set value {"type":"confirmation","title":{"text":"确认买入","color":"gold"},"pause":false,"after_action":"none","body":[{"type":"plain_message","width":310,"contents":{"text":"$(mode)\n\n花费 2,000 FSB，换取 2,000 筹码。\n离桌时，剩余筹码按 1:1 兑回。\n当前浮世币：$(wallet) FSB","color":"white"}}],"yes":{"label":{"text":"确认买入 · 2,000 FSB","color":"gold"},"width":150,"action":{"type":"run_command","command":"trigger Poker set $(code)"}},"no":{"label":{"text":"取消","color":"white"},"width":150,"action":{"type":"run_command","command":"trigger Poker set 1"}}}
+execute unless score @s Perm_PersonFSB matches 2000.. run data modify storage skyblock:poker ui.dialog.yes set value {"label":{"text":"FSB 余额不足 · 返回","color":"gray"},"width":150,"action":{"type":"run_command","command":"trigger Poker set 1"}}
+function skyblock:city/casino/poker/ui/show with storage skyblock:poker ui

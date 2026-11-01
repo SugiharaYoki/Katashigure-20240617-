@@ -18,6 +18,10 @@
         "选择自己的精神力属性": {
             "trigger": 79,
             "state": "unused"
+        },
+        "德州扑克": {
+            "trigger": 1,
+            "objective": "Poker"
         }
     },
     "权限操作": {
