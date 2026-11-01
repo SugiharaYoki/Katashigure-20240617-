@@ -16,5 +16,5 @@ scoreboard players set #s5_live pk 0
 scoreboard players set #s5_win pk 0
 scoreboard players set #s5_kind pk 2
 scoreboard players set #s5_chips pk 2000
-data modify storage skyblock:poker ctx.seats[5].name set value {"text":"机手·耐心","color":"aqua"}
+data modify storage skyblock:poker ctx.seats[5].name set value {"text":"人机 06","color":"gray"}
 data modify storage skyblock:poker ctx.seats[5].uuid set value [0,0,0,0]

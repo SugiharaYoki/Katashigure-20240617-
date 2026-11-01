@@ -16,5 +16,5 @@ scoreboard players set #s1_live pk 0
 scoreboard players set #s1_win pk 0
 scoreboard players set #s1_kind pk 2
 scoreboard players set #s1_chips pk 2000
-data modify storage skyblock:poker ctx.seats[1].name set value {"text":"机手·稳健","color":"aqua"}
+data modify storage skyblock:poker ctx.seats[1].name set value {"text":"人机 02","color":"gray"}
 data modify storage skyblock:poker ctx.seats[1].uuid set value [0,0,0,0]

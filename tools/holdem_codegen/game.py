@@ -12,8 +12,18 @@ def generate():
              when(f'unless data storage {ST} refunds',setv('refunds',[]))]
     for room in ROOMS:
         init.append(when(f'unless data storage {ST} rooms.t{room}',setv(f'rooms.t{room}',empty_room(room))))
+    init.append(when(f'unless data storage {ST} neutral_ai_names',fn('ui/migrate_ai_names')))
     init.append(fn('ui/catalog'))
     emit('init', init)
+    legacy_names=['机手·均衡','机手·稳健','机手·激进','机手·冷静','机手·灵动','机手·耐心']
+    migrate=[]
+    for room in ROOMS:
+        for i in SEATS:
+            neutral={'text':f'人机 {i+1:02d}','color':'gray'}
+            migrate += [get('#u_kind',f'rooms.t{room}.seats[{i}].kind'),
+                when(iscore('#u_kind','2'),setv(f'rooms.t{room}.seats[{i}].name',neutral)),
+                setv(f'rooms.t{room}.log[].extra[{{text:{j(legacy_names[i])}}}]',neutral)]
+    emit('ui/migrate_ai_names',migrate+[setv('neutral_ai_names',True)])
     emit('entry', [fn('init'), 'scoreboard players enable @s Poker',
                    'scoreboard players enable @s PokerBet', fn('refund/player'), fn('ui/lobby')])
     load = [get('#'+k,'ctx.'+k) for k in TABLE_FIELDS]
@@ -209,9 +219,8 @@ def lifecycle_functions():
             val(name(i,'kind'),1),val(name(i,'chips'),2000),
             f'data modify storage {ST} ctx.seats[{i}].name set from storage {ST} caller.name',
             f'data modify storage {ST} ctx.seats[{i}].uuid set from storage {ST} caller.uuid'])
-        bot_names=['机手·均衡','机手·稳健','机手·激进','机手·冷静','机手·灵动','机手·耐心']
         emit(f'join/bot{i}',[val(name(i,k),v) for k,v in SEAT_FIELDS.items()]+[
-            val(name(i,'kind'),2),val(name(i,'chips'),2000),setv(f'ctx.seats[{i}].name',{'text':bot_names[i],'color':'aqua'}),
+            val(name(i,'kind'),2),val(name(i,'chips'),2000),setv(f'ctx.seats[{i}].name',{'text':f'人机 {i+1:02d}','color':'gray'}),
             setv(f'ctx.seats[{i}].uuid',[0,0,0,0])])
         emit(f'join/clear{i}',[val(name(i,k),v) for k,v in SEAT_FIELDS.items()]+[
             setv(f'ctx.seats[{i}].name',{'text':'空位','color':'dark_gray'}),setv(f'ctx.seats[{i}].uuid',[0,0,0,0])])

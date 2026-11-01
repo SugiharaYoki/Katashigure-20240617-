@@ -13,8 +13,8 @@ $execute store result score #u_kind pk run data get storage skyblock:poker rooms
 execute if score #u_kind pk matches 1 run scoreboard players add #u_people pk 1
 $execute store result score #u_kind pk run data get storage skyblock:poker rooms.t$(room).seats[5].kind
 execute if score #u_kind pk matches 1 run scoreboard players add #u_people pk 1
-data modify storage skyblock:poker ui.room.status set value "等待中"
-execute if score #u_state pk matches -1 run data modify storage skyblock:poker ui.room.status set value "空桌，请创建"
+data modify storage skyblock:poker ui.room.status set value "待开局"
+execute if score #u_state pk matches -1 run data modify storage skyblock:poker ui.room.status set value "空桌"
 execute if score #u_state pk matches 1 run data modify storage skyblock:poker ui.room.status set value "对局中"
 $data modify storage skyblock:poker ui.room.id set value $(room)
 execute store result storage skyblock:poker ui.room.people int 1 run scoreboard players get #u_people pk

@@ -71,7 +71,7 @@ def name(i, field):
 
 
 def button(label, code, color='white', tip=None):
-    b = {'label': {'text': label, 'color': color}, 'width': 150,
+    b = {'label': {'text': label, 'color': color}, 'width': 158,
          'action': {'type': 'run_command', 'command': f'trigger Poker set {code}'}}
     if tip:
         b['tooltip'] = {'text': tip}
