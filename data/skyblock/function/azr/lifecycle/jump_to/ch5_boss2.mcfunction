@@ -24,7 +24,7 @@ execute positioned -79695 -57 73 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79764 -10 80 run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79764 -10 80 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run scoreboard players set @s rng1 299
 
-execute positioned -79769 -11 80 unless entity @n[tag=AzrielNPC_focalor] run function skyblock:azr/assets/mobs/skill/boss5_focalor/summon
+execute positioned -79769 -10 80 unless entity @n[tag=AzrielNPC_focalor] run function skyblock:azr/assets/mobs/skill/boss5_focalor/summon
 
 
 execute positioned -79711 -59 69 run function skyblock:azr/assets/mobs/nautilus
@@ -34,7 +34,7 @@ execute positioned -79711 -59 69 run summon cod
 execute positioned -79711 -59 69 run summon cod
 
 
-execute as @n[tag=AzrielNPC_focalor] at @s run tp @s -79769 -11 80
+execute as @n[tag=AzrielNPC_focalor] at @s run tp @s -79769 -10 80
 execute as @n[tag=AzrielNPC_focalor] at @s run effect give @s resistance infinite 4 true
 execute as @n[tag=AzrielNPC_focalor] at @s run effect give @s regeneration infinite 4 true
 
