@@ -388,6 +388,7 @@ execute if score @s rng1 matches 1550 positioned -79890.03 -31.00 -270.17 run su
 execute if score @s rng1 matches 1580 positioned -79890.03 -31.00 -270.17 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 1580 positioned -79890.03 -31.00 -270.17 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s rng1 matches 1580 positioned -79890.03 -31.00 -270.17 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_skeleton_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s rng1 matches 1521 run forceload add -79894 -174
 
 execute if score @s rng1 matches 1521 run tellraw @a[tag=azrShowDialog,distance=..200] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n（恣眼只要在神庭就是无敌的。但只要我将它带到神庭以外的地方，它就没法活。）",color:"white"}]
 
@@ -426,7 +427,6 @@ execute if score @s rng1 matches 3002 as @a[tag=azrPlayer] at @s run attribute @
 execute if score @s rng1 matches 3002 as @a[tag=azrPlayer] at @s run attribute @s gravity base set 0.01
 execute if score @s rng1 matches 3004 run clone -79934 69 -593 -79926 75 -586 -79934 69 -523
 
-
 execute if score @s rng1 matches 3990..3999 run scoreboard players set @s rng1 3990
 execute if score @s rng1 matches 300..3999 if entity @a[tag=azrPlayer,x=-79933,y=50,z=-523,dx=20,dy=16,dz=20] run scoreboard players set @s rng1 4000
 
@@ -435,10 +435,10 @@ execute if score @s rng1 matches 4001 positioned -79930 70 -520 as @a[tag=azrPla
 
 execute if score @s rng1 matches 4017 run tellraw @a[tag=azrShowDialog,distance=..2000] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“……这样啊。”",color:"white"}]
 
-execute if score @s rng1 matches 4015 as @a[tag=azrShowDialog] at @s run tp @s -79946 65 -540
+execute if score @s rng1 matches 4015 as @a[tag=azrPlayer] at @s run tp @s -79946 65 -540
 
 execute if score @s rng1 matches 4020 as @n[tag=AzrielMob_sonic_eye_lord] at @s run tp @s -79931 40 -519
-execute if score @s rng1 matches 4021 as @a[tag=azrShowDialog] at @s run tp @s -79931 33 -519
+execute if score @s rng1 matches 4021 as @a[tag=azrPlayer] at @s run tp @s -79931 33 -519
 
 execute if score @s rng1 matches 4032 run tellraw @a[tag=azrShowDialog,distance=..2000] [{text:"你：",color:"aqua",bold:1b},{bold: false,text:"\n“再一次于这种莫名其妙的地方坠落而死。”",color:"white"}]
 
@@ -516,3 +516,4 @@ execute if score @s rng1 matches 4068 as @a[tag=azrShowDialog,distance=..2000] a
 execute if score @s rng1 matches 4068 run scoreboard players set @s rng1 5000
 
 
+say hi
