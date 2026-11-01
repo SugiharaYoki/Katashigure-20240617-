@@ -289,6 +289,8 @@ tag @s remove azr_OneLifeOnly
 
 
 
+attribute @s armor modifier remove sea_weapon:upg_armor09
+attribute @s burning_time modifier remove sea_weapon:upg_armor10
 
 
 
