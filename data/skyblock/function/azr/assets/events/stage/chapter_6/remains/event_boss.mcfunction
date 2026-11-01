@@ -35,7 +35,7 @@ execute if score @s rng1 matches ..9999 if score @s rng9 matches 1 as @a[tag=azr
 execute if score @s rng9 matches 724.. run scoreboard players set @s rng9 0
 
 
-execute if score @s rng1 matches 5392 run bossbar add azr:boss_hp_bar_2 [{text:"洞悉逝灭的穷途灵智 魔神 · ",bold:true,color:"white"},{text:"玛帕斯",bold:true,color:"#9c101e"}]
+execute if score @s rng1 matches 5392 run bossbar add azr:boss_hp_bar_2 [{text:"洞悉逝灭，穷途灵智 魔神 · ",bold:true,color:"white"},{text:"玛帕斯",bold:true,color:"#9c101e"}]
 execute if score @s rng1 matches 5392 run bossbar set azr:boss_hp_bar_2 color red
 execute if score @s rng1 matches 5392 run bossbar set azr:boss_hp_bar_2 max 100
 execute if score @s rng1 matches 5392 run bossbar set azr:boss_hp_bar_2 value 100
