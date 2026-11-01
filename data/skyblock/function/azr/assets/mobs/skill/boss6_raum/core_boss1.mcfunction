@@ -10,6 +10,7 @@ execute unless entity @s[tag=AzrRaum_boss1_initialized] run scoreboard players s
 execute unless entity @s[tag=AzrRaum_boss1_initialized] run scoreboard players set @s rng2 0
 execute unless entity @s[tag=AzrRaum_boss1_initialized] run data merge entity @s {NoGravity:0b,NoAI:1b,Invulnerable:0b,Motion:[0.0d,0.0d,0.0d]}
 execute unless entity @s[tag=AzrRaum_boss1_initialized] run effect clear @s resistance
+execute unless entity @s[tag=AzrRaum_boss1_initialized] run effect give @s resistance 20 1 true
 execute unless entity @s[tag=AzrRaum_boss1_initialized] run effect clear @s regeneration
 execute unless entity @s[tag=AzrRaum_boss1_initialized] run effect clear @s slow_falling
 execute unless entity @s[tag=AzrRaum_boss1_initialized] run tag @s remove AzrRaum_midgarden
@@ -52,3 +53,12 @@ execute if score @s Health matches 1.. if score @s rng1 matches 21..999 if score
 execute if score @s Health matches 1.. if score @s rng1 matches 21..999 if score @s rng2 matches 3..4 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_attack_b
 execute if score @s Health matches 1.. if score @s rng1 matches 21..999 if score @s rng2 matches 5..6 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_attack_c
 execute if score @s Health matches 1.. if score @s rng1 matches 21..999 if score @s rng2 matches 7..8 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_attack_d
+
+# 首次低于 60 血获得无限抗性 V；不在每 tick 重复覆盖药水。
+execute store result score @s rng19 run data get entity @s Health 1000
+execute if score @s rng19 matches 1..59999 unless entity @s[tag=AzrRaum_laststand] run effect give @s resistance infinite 4 true
+execute if score @s rng19 matches 1..59999 run tag @s add AzrRaum_laststand
+
+# 玛帕斯仅依附本体更新，沿用劳姆现有的 50 格入口。
+execute if entity @s[tag=azr_raum_with_malpas] if score @s rng19 matches 1.. at @s as @n[type=mannequin,tag=AzrielNPC_malpas,distance=..200] at @s run function skyblock:azr/assets/mobs/skill/boss6_malpas/boss1_core
+execute unless entity @s[tag=azr_raum_with_malpas] at @s as @n[type=mannequin,tag=AzrielNPC_malpas,tag=AzrMalpas_active,distance=..200] at @s run function skyblock:azr/assets/mobs/skill/boss6_malpas/boss1_stop

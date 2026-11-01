@@ -1,0 +1,5 @@
+# 跟随劳姆当前水平朝向；四角水平半径 4 格，上方 8 格。
+execute if score @s rng3 matches 1 at @n[type=mannequin,tag=AzrielNPC_raum,tag=azr_raum_with_malpas,nbt=!{Health:0.0f},distance=..200] rotated ~ 0 positioned ^2.828427 ^8 ^2.828427 run function skyblock:azr/assets/mobs/skill/boss6_malpas/boss1_move_to
+execute if score @s rng3 matches 2 at @n[type=mannequin,tag=AzrielNPC_raum,tag=azr_raum_with_malpas,nbt=!{Health:0.0f},distance=..200] rotated ~ 0 positioned ^2.828427 ^8 ^-2.828427 run function skyblock:azr/assets/mobs/skill/boss6_malpas/boss1_move_to
+execute if score @s rng3 matches 3 at @n[type=mannequin,tag=AzrielNPC_raum,tag=azr_raum_with_malpas,nbt=!{Health:0.0f},distance=..200] rotated ~ 0 positioned ^-2.828427 ^8 ^2.828427 run function skyblock:azr/assets/mobs/skill/boss6_malpas/boss1_move_to
+execute if score @s rng3 matches 4 at @n[type=mannequin,tag=AzrielNPC_raum,tag=azr_raum_with_malpas,nbt=!{Health:0.0f},distance=..200] rotated ~ 0 positioned ^-2.828427 ^8 ^-2.828427 run function skyblock:azr/assets/mobs/skill/boss6_malpas/boss1_move_to

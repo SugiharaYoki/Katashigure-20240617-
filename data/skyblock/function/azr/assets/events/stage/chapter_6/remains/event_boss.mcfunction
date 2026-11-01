@@ -39,11 +39,9 @@ execute if score @s rng1 matches 5392 run bossbar set azr:boss_hp_bar_2 color re
 execute if score @s rng1 matches 5392 run bossbar set azr:boss_hp_bar_2 max 100
 execute if score @s rng1 matches 5392 run bossbar set azr:boss_hp_bar_2 value 100
 execute if score @s rng1 matches 5392 run bossbar set azr:boss_hp_bar_2 players @a[tag=azrShowDialog]
+execute if score @s rng1 matches 5392 as @n[tag=AzrielNPC_raum] at @s run tag @s add azr_raum_with_malpas
 execute if score @s rng1 matches 5392 run tellraw @a[tag=azrShowDialog] [{text:"玛帕斯：",color:"#9c101e",bold:1b},{bold: false,text:"\n“花了这么久还没解决吗？你看，我早说了你一个人打不过她。”",color:"white"}]
 execute if score @s rng1 matches 5410 run tellraw @a[tag=azrShowDialog] [{text:"玛帕斯：",color:"#9c101e",bold:1b},{bold: false,text:"\n“我的好弟弟啊，我来助你一臂之力。”",color:"white"}]
-
-
-
 
 
 
