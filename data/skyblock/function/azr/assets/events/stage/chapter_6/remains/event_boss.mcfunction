@@ -70,8 +70,12 @@ execute if score @s rng1 matches 10288 at @n[type=mannequin,tag=AzrielNPC_malpas
 execute if score @s rng1 matches 10298 at @n[type=mannequin,tag=AzrielNPC_malpas] if entity @a[tag=azrPlayer,distance=..3,scores={Azr_skillPoints=65..}] run scoreboard players set @s rng1 10310
 
 execute if score @s rng1 matches 5400..9999 unless score @n[tag=AzrielNPC_raum] Health matches 60.. run scoreboard players set @s rng1 10000
+execute if score @s rng1 matches 10001 as @a[tag=azrPlayer] at @s run effect give @s resistance 60 4 true
+execute if score @s rng1 matches 10001 as @a[tag=azrPlayer] at @s run effect give @s regeneration 60 4 true
+execute if score @s rng1 matches 10001 as @a[tag=azrPlayer] at @s run effect give @s saturation 60 4 true
 execute if score @s rng1 matches 10001 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（……时机差不多了，劳姆已经变得虚弱）",color:"white"}]
 execute if score @s rng1 matches 10014 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（我的目的并非杀死他们。或者说，如果是杀了他们，我反而达不成目的）",color:"white"}]
+execute if score @s rng1 matches 10030 run bossbar remove azr:boss_hp_bar
 execute if score @s rng1 matches 10030 run stopsound @a[tag=azrShowDialog] music minecraft:viciousheroism
 execute if score @s rng1 matches 10030 run tellraw @a[tag=azrShowDialog] [{text:"预言家 玛帕斯：",color:"#9c101e",bold:1b},{bold: false,text:"\n“……等等，弟弟，停下来，停战！”",color:"white"}]
 # 停止玛帕斯联动，清除她的残留攻击，并在原 X/Z 平滑落到战场地面。
@@ -83,6 +87,7 @@ execute if score @s rng1 matches 10030 run tag @n[type=mannequin,tag=AzrielNPC_m
 execute if score @s rng1 matches 10030 as @n[type=mannequin,tag=AzrielNPC_malpas] run data merge entity @s {NoGravity:1b,Motion:[0.0d,0.0d,0.0d]}
 execute if score @s rng1 matches 10030 run tag @n[type=mannequin,tag=AzrielNPC_malpas] add AzrBoss6_look_player
 execute if score @s rng1 matches 10045 run tellraw @a[tag=azrShowDialog] [{text:"渡鸦 劳姆：",color:"#fff050",bold:1b},{bold: false,text:"\n“玛帕斯，这又是玩的哪一出？”",color:"white"}]
+execute if score @s rng1 matches 10045 run bossbar remove azr:boss_hp_bar_2
 # 劳姆结束战斗；停止习性、清除仍在场上的攻击，并消除残留冲刺和缓降。
 execute if score @s rng1 matches 10045 run tag @n[type=mannequin,tag=AzrielNPC_raum] add AzrBoss6_outro
 execute if score @s rng1 matches 10045 run tag @n[type=mannequin,tag=AzrielNPC_raum] add AzrBoss6_outro_land
