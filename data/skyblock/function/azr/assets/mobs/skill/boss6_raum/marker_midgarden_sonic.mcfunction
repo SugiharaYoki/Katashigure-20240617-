@@ -37,7 +37,7 @@ execute if entity @s[tag=AzrRaum_midgarden_sonic_hit] at @s run playsound minecr
 execute if entity @s[tag=AzrRaum_midgarden_sonic_hit] at @s run particle minecraft:sonic_boom ~ ~ ~ 0.6 0.6 0.6 0 6 force
 
 # 内外圈互斥：距离 <=2 为 10 点，2<距离<=3 为 6 点音爆伤害。
-execute if entity @s[tag=AzrRaum_midgarden_sonic_hit] at @s as @a[tag=azrPlayer,distance=..3] unless entity @s[distance=..2] run damage @s 6 minecraft:sonic_boom
-execute if entity @s[tag=AzrRaum_midgarden_sonic_hit] at @s as @a[tag=azrPlayer,distance=..2] run damage @s 10 minecraft:sonic_boom
+execute if entity @s[tag=AzrRaum_midgarden_sonic_hit] at @s as @a[tag=azrPlayer,distance=..2.6] run damage @s 6 minecraft:sonic_boom
+execute if entity @s[tag=AzrRaum_midgarden_sonic_hit] at @s as @a[tag=azrPlayer,distance=..1.6] run damage @s 8 minecraft:sonic_boom
 execute if entity @s[tag=AzrRaum_midgarden_sonic_hit] run kill @s
 execute if score @s rng1 matches 100.. run kill @s
