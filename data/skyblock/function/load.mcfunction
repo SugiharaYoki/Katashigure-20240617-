@@ -3,6 +3,8 @@ execute unless score last_version skyblock_system = version skyblock_system run 
 scoreboard players operation last_version skyblock_system = version skyblock_system
 function skyblock:api_get_irl_time
 function skyblock:decoration/init
+# 韶光灭影：每位受瞄准玩家的下次可提示时间（游戏 tick）。
+scoreboard objectives add If_Bless39_warn dummy
 function skyblock:pvp/skywar/bless/setting/visual/init
 function skyblock:city/casino/poker/init
 
