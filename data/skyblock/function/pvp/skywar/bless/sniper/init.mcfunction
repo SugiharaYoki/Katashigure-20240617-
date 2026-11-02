@@ -1,4 +1,4 @@
-# @s=新射线 marker，初始位置为射手眼睛。rng2 是射程的四倍。
+# @s=新射线 marker，初始位置为射手眼睛下方 0.2 格。rng2 是射程的四倍。
 tag @s add Skywar_Bless39
 data modify entity @s data.owner set from entity @a[tag=Skywar_Bless39_owner,limit=1] UUID
 data modify entity @s Rotation set from entity @a[tag=Skywar_Bless39_owner,limit=1] Rotation

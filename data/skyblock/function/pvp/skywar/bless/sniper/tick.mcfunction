@@ -7,7 +7,7 @@ execute if entity @s[tag=Skywar_Bless39_flying] at @s rotated as @s run function
 # 死亡、进入旁观或被移出参战列表：使用最后一次活着时保存的眼睛位置和朝向。
 execute if entity @s[tag=!Skywar_Bless39_flying] run tag @s remove Skywar_Bless39_alive
 $execute if entity @s[tag=!Skywar_Bless39_flying] if entity @a[nbt={UUID:$(owner)},nbt=!{Health:0.0f},tag=PVPing,tag=!PVP_dead,gamemode=!spectator,limit=1] unless score @a[nbt={UUID:$(owner)},limit=1] pvp_death_check matches 1.. run tag @s add Skywar_Bless39_alive
-$execute if entity @s[tag=Skywar_Bless39_alive,tag=!Skywar_Bless39_flying] as @a[nbt={UUID:$(owner)},limit=1] at @s anchored eyes positioned ^ ^ ^ run tp @e[type=marker,tag=Skywar_Bless39_current,limit=1] ~ ~ ~ ~ ~
+$execute if entity @s[tag=Skywar_Bless39_alive,tag=!Skywar_Bless39_flying] as @a[nbt={UUID:$(owner)},limit=1] at @s anchored eyes positioned ^ ^ ^ positioned ~ ~-0.2 ~ run tp @e[type=marker,tag=Skywar_Bless39_current,limit=1] ~ ~ ~ ~ ~
 execute if entity @s[tag=!Skywar_Bless39_flying] run scoreboard players add @s rng1 1
 execute if entity @s[tag=!Skywar_Bless39_flying,tag=!Skywar_Bless39_alive] run scoreboard players set @s rng1 40
 execute if entity @s[tag=!Skywar_Bless39_flying,scores={rng1=40..}] at @s rotated as @s run function skyblock:pvp/skywar/bless/sniper/fire
