@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:air",
+    "minecraft:cave_air",
+    "minecraft:void_air",
+    "minecraft:light",
+    "minecraft:structure_void",
+    "minecraft:water",
+    "minecraft:bubble_column",
+    "minecraft:lava"
+  ]
+}

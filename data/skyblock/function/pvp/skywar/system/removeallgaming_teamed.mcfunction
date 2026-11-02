@@ -301,3 +301,6 @@ attribute @s burning_time modifier remove sea_weapon:upg_armor10
 
 
 
+
+# 清除本轮狙击状态，避免下局无法重新蓄力。
+tag @s remove Skywar_Bless39_charging

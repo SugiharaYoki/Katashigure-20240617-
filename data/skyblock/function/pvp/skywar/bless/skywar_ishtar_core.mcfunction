@@ -133,3 +133,6 @@ execute if entity @s[scores={If_BlessDoDamage=1..}] at @s run function skyblock:
 
 
 scoreboard players set @s Skywar_ishtar_usehorn 0
+
+# 续缘「韶光灭影」：只消耗副手的那把锄头。
+execute if entity @s[tag=!Skywar_Bless39_charging,tag=!PVP_dead,gamemode=!spectator,nbt=!{Health:0.0f}] unless score @s pvp_death_check matches 1.. if items entity @s container.* *[custom_data~{skywar_ishtar_39:1}] if items entity @s weapon.offhand #minecraft:hoes at @s run function skyblock:pvp/skywar/bless/sniper/start

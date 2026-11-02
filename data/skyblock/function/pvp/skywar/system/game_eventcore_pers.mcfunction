@@ -8,6 +8,9 @@ execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_7,tag=!ENKIDU]
 execute if score sc Temp5_LoopE matches 0 if entity @a[team=Team1_8,tag=!ENKIDU] unless entity @a[team=!Team1_8,tag=!PVP_dead,tag=PVPing] run scoreboard players add sc Temp5_LoopE 1
 execute if score sc Temp5_LoopE matches 0 if entity @a[tag=!ENKIDU] unless entity @a[tag=!PVP_dead,tag=PVPing] unless entity @a[tag=ENKIDU] run scoreboard players add sc Temp5_LoopE 1
 
+# 先推进已有蓄力/射线，再允许玩家创建下一发；每个 marker 每 tick 只更新一次。
+execute as @e[type=marker,tag=Skywar_Bless39] at @s run function skyblock:pvp/skywar/bless/sniper/tick with entity @s data
+
 execute as @a[tag=PVPing] at @s run function skyblock:pvp/skywar/system/game_eventcore_pers_player_controller
 
 execute if block -17 23 32 soul_lantern as 10e959db-4b44-4cdd-b98c-350d3b454206 at @s if entity @s[tag=!Skyblock_NoWorldborder] if entity @a[tag=Gaming,tag=!PVP_see] run worldborder set 10000000

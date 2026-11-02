@@ -48,6 +48,7 @@ ITEMS = {
     36: ("goat_horn", "召唤团队火塔，增强攻速挖速"),
     37: ("copper_lantern", "切换灯型，为范围友军增益"),
     38: ("clock", "长按左右键，返回三秒前位置"),
+    39: ("diamond_hoe", "消耗副手锄头，蓄力发射爆炸射线"),
 }
 ROLES = [
     ("旅行家", "生存 · 补给", "enchanted_golden_apple"),
@@ -69,7 +70,7 @@ def compact(value):
 
 def main():
     entries = []
-    for line in (SETTING / "bless.mcfunction").read_text().splitlines():
+    for line in (SETTING / "bless.mcfunction").read_text(encoding="utf-8").splitlines():
         if not line.startswith("function skyblock:pvp/skywar/bless/setting/bless_macro {"):
             continue
         strings = dict(re.findall(r"(job|title|description):'\"(.*?)\"'", line))
@@ -120,7 +121,7 @@ def main():
     lines.append("data modify storage skywar:bless_catalog roles.r0 set value " + compact({
         "name": "全部", "ids": [{"id": entry["id"]} for entry in entries],
         "tab": {"text": "全部  ", "color": "aqua",
-                "hover_event": {"action": "show_text", "value": {"text": "按职业排列全部 38 件礼装，滚动浏览并直接装备。"}},
+                "hover_event": {"action": "show_text", "value": {"text": f"按职业排列全部 {len(entries)} 件礼装，滚动浏览并直接装备。"}},
                 "click_event": {"action": "run_command", "command": "trigger IshtarMenu set 140200"}},
     }))
     for entry in entries:
@@ -138,7 +139,7 @@ def main():
                        "action": {"type": "run_command", "command": f"trigger IshtarMenu set {140200 + index}"}},
         }
         lines.append(f"data modify storage skywar:bless_catalog roles.r{index} set value {compact(role)}")
-    (SETTING / "visual/catalog.mcfunction").write_text("\n".join(lines) + "\n")
+    (SETTING / "visual/catalog.mcfunction").write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":

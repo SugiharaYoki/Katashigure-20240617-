@@ -1,3 +1,6 @@
+# 结束对局时清除狙击蓄力和在途射线。
+kill @e[type=marker,tag=Skywar_Bless39]
+tag @a remove Skywar_Bless39_charging
 tellraw @a[tag=DebugMode] [{text:"System_Debug",color:"dark_blue"},{text:" : PVP 闭局程序 运行开始",color:"dark_gray"}]
 #删除临时变量
 
