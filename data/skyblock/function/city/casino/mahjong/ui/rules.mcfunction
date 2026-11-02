@@ -1,0 +1,4 @@
+# 自动生成：python3 tools/generate_riichi.py
+tag @s remove MahjongView
+data modify storage skyblock:mahjong ui.dialog set value {"type":"notice","title":{"text":"立直麻将 · 规则","color":"gold"},"pause":false,"after_action":"none","body":[{"type":"plain_message","width":332,"contents":{"text":"四麻25,000点、三麻35,000点。1点=1浮世币，入桌买入，整场结束按余额兑回。比赛中离桌由人机代打，不能中途提走点数。\n\n支持东风及半庄，和牌须有役；包含立直、一发、门清自摸、断幺、平和、七对子、国士等常见役种与役满，按番符结算。赤宝牌、宝牌和里宝牌本身不算役。\n\n支持吃、碰、明杠、暗杠、加杠、抢杠和振听。四麻可双响，三家荣和流局。三麻移除二至八万、禁吃、可拔北；采用自摸损，拔北+1番，暗杠／拔北仅国士可抢。\n\n荒牌按听牌结算；连庄、本场、供托自动处理。牌局最后一局结束即结算，无西入/南入、无顺位马点和头名奖励；不采用流局满贯、包牌或地方役。流局或连庄可继续；有人点数归零立即结束，支付上限为已托管点数。\n\n每次出牌30秒、鸣牌15秒。超时自动出牌，离线与申请离桌的座位由人机代打。人机只读取自己的牌和公开信息。\n\n收起界面保留座位，使用 /trigger Mahjong set 2 返回。","color":"white"}}],"action":{"label":{"text":"返回大厅","color":"gray"},"width":158,"action":{"type":"run_command","command":"trigger Mahjong set 1"}}}
+function skyblock:city/casino/mahjong/ui/show with storage skyblock:mahjong ui

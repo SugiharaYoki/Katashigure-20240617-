@@ -1,0 +1,12 @@
+# 自动生成：python3 tools/generate_riichi.py
+execute if score #e_check mj matches 1 if score #e_complete mj matches 1 run return 0
+scoreboard players remove #e_c12 mj 1
+scoreboard players remove #e_c13 mj 1
+scoreboard players remove #e_c14 mj 1
+data modify storage skyblock:mahjong ev.group set value {"t":12,"kind":1,"concealed":1,"kan":0}
+data modify storage skyblock:mahjong ev.groups append from storage skyblock:mahjong ev.group
+function skyblock:city/casino/mahjong/eval/search
+data remove storage skyblock:mahjong ev.groups[-1]
+scoreboard players add #e_c12 mj 1
+scoreboard players add #e_c13 mj 1
+scoreboard players add #e_c14 mj 1

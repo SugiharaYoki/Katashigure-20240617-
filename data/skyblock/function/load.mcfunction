@@ -7,6 +7,7 @@ function skyblock:decoration/init
 scoreboard objectives add If_Bless39_warn dummy
 function skyblock:pvp/skywar/bless/setting/visual/init
 function skyblock:city/casino/poker/init
+function skyblock:city/casino/mahjong/init
 
 #轮播内容
 scoreboard objectives add Perm_PersonWins dummy {text:"PVP战争 历史胜利场数排行榜",color:"gold",bold:1b}

@@ -184,6 +184,7 @@ def lifecycle_functions():
         fn('refund/player'),fn('ui/buyin')])
     emit('join/precheck',[fn('caller/load'),when(iscore('#valid','1'),'return 0'),
         'execute unless score @s Perm_PersonFSB matches 2000.. run return 0',
+        'execute if score @s MahjongRoom matches 1..4 run return 0',
         'execute if entity @s[tag=Gaming] run return 0',val('#join_ok',1)])
     emit('join/create',[val('#join_ok',0),fn('join/precheck'),
         *reject(iscore('#join_ok','0'),'未能入桌：请确认没有其他座位、已结束其他游戏，并拥有 2,000 FSB。'),

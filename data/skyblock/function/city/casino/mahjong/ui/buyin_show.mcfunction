@@ -1,0 +1,4 @@
+# 自动生成：python3 tools/generate_riichi.py
+$data modify storage skyblock:mahjong ui.dialog set value {"type":"confirmation","title":{"text":"确认买入","color":"gold"},"pause":false,"after_action":"none","body":[{"type":"plain_message","width":332,"contents":{"text":"$(n)人麻将 · $(length)战\n\n支付 $(cost) FSB，取得 $(cost) 点。\n账户余额：$(wallet) FSB\n\n比赛中离桌由人机代打，整场结束后退款。\n点数归零会结束比赛，不透支浮世币。","color":"white"}}],"yes":{"label":{"text":"确认买入","color":"gold"},"width":158,"action":{"type":"run_command","command":"trigger Mahjong set $(code)"}},"no":{"label":{"text":"取消","color":"gray"},"width":158,"action":{"type":"run_command","command":"trigger Mahjong set 1"}}}
+execute unless score @s Perm_PersonFSB >= #buy_cost mj run data modify storage skyblock:mahjong ui.dialog.yes set value {"label":{"text":"余额不足 · 返回","color":"gray"},"width":158,"action":{"type":"run_command","command":"trigger Mahjong set 1"}}
+function skyblock:city/casino/mahjong/ui/show with storage skyblock:mahjong ui
