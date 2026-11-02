@@ -1,9 +1,7 @@
-# 重新 at @s：collision 可能在躯干测距的偏移执行位置调用此函数。
+# 停止这条射线；tick 结束时统一删除 marker，防止同一子步重复引爆。
 tag @s add Skywar_Bless39_spent
-execute at @s run particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1 force @a[tag=!Skywar_Bless39_owner]
-execute at @s run playsound minecraft:entity.generic.explode hostile @a ~ ~ ~ 2 0.9
-# 三档互斥；含友军/射手本人，不叠加伤害。来源通过 UUID 精确关联到射手。
-$execute at @s positioned ~ ~-0.9 ~ as @a[gamemode=!spectator,distance=..1] run damage @s 24 minecraft:player_explosion by @a[nbt={UUID:$(owner)},limit=1]
-$execute at @s positioned ~ ~-0.9 ~ as @a[gamemode=!spectator,distance=1..2] unless entity @s[distance=..1] run damage @s 16 minecraft:player_explosion by @a[nbt={UUID:$(owner)},limit=1]
-$execute at @s positioned ~ ~-0.9 ~ as @a[gamemode=!spectator,distance=2..4] unless entity @s[distance=..2] run damage @s 8 minecraft:player_explosion by @a[nbt={UUID:$(owner)},limit=1]
-# tick 的最后统一删除，spent 防止同一子步重复爆炸。
+# 撞墙时回到最后一个可通过的采样点，避免将 TNT 埋进墙里。
+execute at @s rotated as @s unless block ~ ~ ~ #skyblock:ishtar_sniper_passable positioned ^ ^ ^-0.25 if block ~ ~ ~ #skyblock:ishtar_sniper_passable run tp @s ~ ~ ~
+# 原版 TNT 在首次实体 tick 立即爆炸；原地引爆、不下落，UUID 保留射手归属。
+# 使用默认爆炸威力与遮挡/破坏规则，不再额外施加指令范围伤害和重复特效。
+$execute at @s run summon minecraft:tnt ~ ~ ~ {fuse:0s,NoGravity:1b,Motion:[0.0d,0.0d,0.0d],owner:$(owner),Tags:["Skywar_Bless39_tnt"]}
