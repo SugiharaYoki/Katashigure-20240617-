@@ -72,6 +72,7 @@ execute if score @s rng1 matches 10298 at @n[type=mannequin,tag=AzrielNPC_malpas
 execute if score @s rng1 matches 5400..9999 unless score @n[tag=AzrielNPC_raum] Health matches 60.. run scoreboard players set @s rng1 10000
 execute if score @s rng1 matches 10001 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（……时机差不多了，劳姆已经变得虚弱）",color:"white"}]
 execute if score @s rng1 matches 10014 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（我的目的并非杀死他们。或者说，如果是杀了他们，我反而达不成目的）",color:"white"}]
+execute if score @s rng1 matches 10030 run stopsound @a[tag=azrShowDialog] music minecraft:viciousheroism
 execute if score @s rng1 matches 10030 run tellraw @a[tag=azrShowDialog] [{text:"预言家 玛帕斯：",color:"#9c101e",bold:1b},{bold: false,text:"\n“……等等，弟弟，停下来，停战！”",color:"white"}]
 # 停止玛帕斯联动，清除她的残留攻击，并在原 X/Z 平滑落到战场地面。
 execute if score @s rng1 matches 10030 run tag @n[type=mannequin,tag=AzrielNPC_raum] remove azr_raum_with_malpas
