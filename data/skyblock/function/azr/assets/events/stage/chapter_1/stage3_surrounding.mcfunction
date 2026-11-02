@@ -69,7 +69,7 @@ execute positioned -79915 22 10 if score random_enemy_thread AzrTimerStack match
 execute positioned -79915 22 10 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 1.. unless entity @n[tag=AzrielMob,distance=..6] unless entity @a[tag=azrPlayer,distance=..16] if entity @a[tag=azrPlayer,distance=..32] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter1_moss
 
 execute positioned -79896 25 40 if score random_enemy_thread AzrTimerStack matches 3 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:18}
-execute positioned -79896 25 40 if score random_enemy_thread AzrTimerStack matches 3 unless score random_enemy_count AzrTimerStack matches 1.. unless entity @n[tag=AzrielMob,distance=..6] unless entity @a[tag=azrPlayer,distance=..16] if entity @a[tag=azrPlayer,distance=..32] if loaded ~ ~ ~ run summon cow ~ ~ ~ {variant:"warm"}
+execute positioned -79896 25 40 if score random_enemy_thread AzrTimerStack matches 3 unless score random_enemy_count AzrTimerStack matches 1.. unless entity @n[tag=AzrielMob,distance=..6] unless entity @a[tag=azrPlayer,distance=..16] if entity @a[tag=azrPlayer,distance=..32] if loaded ~ ~ ~ run summon cow ~ ~ ~ {variant:"warm",Tags:["AzrielMob","AzrielMob_level_1"]}
 
 
 
