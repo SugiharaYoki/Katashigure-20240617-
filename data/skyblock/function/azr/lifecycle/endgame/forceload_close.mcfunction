@@ -22,6 +22,7 @@ forceload remove -79541 -472 -79345 -350
 forceload remove -79785 -2092 -79765 -2072
 #邃栈
 forceload remove -79681 -583 -79607 -718
+forceload remove -79685 -790 -79607 -583
 #Bossrush门
 forceload remove -79195 2 -79159 -34
 #第五章
