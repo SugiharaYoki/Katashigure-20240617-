@@ -25,6 +25,8 @@
     execute if score stage_bonus Azr_system matches 12 run function skyblock:azr/assets/events/stage/bonus_stage/stage_limnion
     # Murk
     execute if score stage_bonus Azr_system matches 13 run function skyblock:azr/assets/events/stage/bonus_stage/stage_murk
+    # Nectar
+    execute if score stage_bonus Azr_system matches 14 run function skyblock:azr/assets/events/stage/bonus_stage/stage_nectar
     # Object
     execute if score stage_bonus Azr_system matches 15 run function skyblock:azr/assets/events/stage/bonus_stage/stage_object
     # Photothermal
@@ -35,3 +37,5 @@
     execute if score stage_bonus Azr_system matches 19 run function skyblock:azr/assets/events/stage/bonus_stage/stage_suspension
     # Vestige
     execute if score stage_bonus Azr_system matches 22 run function skyblock:azr/assets/events/stage/bonus_stage/stage_vestige
+    # Windshear
+    # 由实体操控
