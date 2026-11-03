@@ -29,8 +29,8 @@ scoreboard players add @s rng1 1
 execute store result score @s Health run data get entity @s Health
 execute store result bossbar azr:boss_hp_bar value run scoreboard players get @s Health
 
-# 每 tick 从劳姆自身位置选择最近的游戏玩家，施法前先更新朝向。
-execute if score @s Health matches 1.. at @s run rotate @s facing entity @p[tag=azrPlayer] eyes
+# 每 tick 从劳姆自身位置选择最近的游戏玩家，从自身眼睛看向目标眼睛。
+execute if score @s Health matches 1.. at @s anchored eyes run rotate @s facing entity @p[tag=azrPlayer] eyes
 
 # 禁止自主水平移动，竖直方向保留正常重力；需要移动的技能在本 tick 覆盖速度。
 data modify entity @s Motion[0] set value 0.0d
@@ -69,4 +69,4 @@ execute if entity @s[tag=azr_raum_with_malpas] if score @s rng19 matches 1.. at 
 execute unless entity @s[tag=azr_raum_with_malpas] at @s as @n[type=mannequin,tag=AzrielNPC_malpas,tag=AzrMalpas_active,distance=..200] at @s run function skyblock:azr/assets/mobs/skill/boss6_malpas/boss1_stop
 
 # 技能会临时写入锁定角度或落点朝向；结束时恢复注视，不改动保存的冲刺向量。
-execute if score @s Health matches 1.. at @s run rotate @s facing entity @p[tag=azrPlayer] eyes
+execute if score @s Health matches 1.. at @s anchored eyes run rotate @s facing entity @p[tag=azrPlayer] eyes
