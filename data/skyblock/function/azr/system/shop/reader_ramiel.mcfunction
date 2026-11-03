@@ -84,6 +84,7 @@ summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_di
 summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerShop06"],CustomName:' ？ '}
 summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerShop07"],CustomName:' ？ '}
 summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerShop08"],CustomName:' ？ '}
+summon marker ~ ~ ~ {Tags:["AzrRamielExStage_displaymarker","AzrRamielExStage_displaymarkerShop12"],CustomName:' ？ '}
 
 
 execute if entity @s[tag=AZS_BoS01] run data modify entity @n[tag=AzrRamielExStage_displaymarkera] CustomName set value ' <A> '
@@ -129,6 +130,7 @@ execute if entity @s[tag=AZS_BoSB22] run data modify entity @n[tag=AzrRamielExSt
 execute if entity @s[tag=AZS_BoSB23] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBw] CustomName set value ' <矿> '
 execute if entity @s[tag=AZS_BoSB19] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBs] CustomName set value ' <球> '
 
+execute if entity @s[tag=AZS_BoSShop12] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop12] CustomName set value ' <地灵> '
 execute if entity @s[tag=AZS_BoSShop01] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop01] CustomName set value ' <毒衡> '
 execute if entity @s[tag=AZS_BoSShop02] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop02] CustomName set value ' <毒扩> '
 execute if entity @s[tag=AZS_BoSShop03] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop01] CustomName set value ' - '
