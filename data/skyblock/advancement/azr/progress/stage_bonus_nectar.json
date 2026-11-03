@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "神代茏渠 - 加装滤网的压力泵",
+            "color": "green",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "这些压力泵将上方蓄水池的水持续朝地下输送，为丛林带来了用之不竭的水资源。\n虽说这里的管道过滤装置阻止了我在两点之间通行，但我能通过此处的生物种类推断出：这边的水生动物从前能够畅通无阻地游往更上层。\n这也就意味着，这条管道的作用在后期产生过变化。\n\n神庭下方的空间本该比现在要更加便于通行，是什么导致神庭加装了这么多套过滤系统？\n过滤，是从内向外时起效，还是在防止外面有什么东西从相反方向流入？",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:brown_glazed_terracotta"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage_bonus_limnion"
+}

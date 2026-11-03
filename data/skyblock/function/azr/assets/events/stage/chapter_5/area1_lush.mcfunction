@@ -59,7 +59,7 @@ execute positioned -79767 187 -808 as @n[type=villager,distance=..5,tag=AzrielTr
 
 #stage nectar
 execute positioned -79750 166 -754 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..9] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79750 166 -754 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_5/lush/event_underwater_path
+execute positioned -79750 166 -754 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s AzrEntityTimer matches 10.. run function skyblock:azr/assets/events/stage/chapter_5/lush/event_underwater_path
 
 
 
