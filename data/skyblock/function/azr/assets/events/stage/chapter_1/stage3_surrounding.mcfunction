@@ -42,6 +42,9 @@ execute positioned -79853 31 5 as @n[tag=AzrielMarker_encounter,distance=0..0.5]
 execute positioned -79841 23 -22 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=0..30,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 execute positioned -79841 23 -22 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/events/stage/chapter_1/west/npc_fisher_moss
 
+#大结界兽
+execute positioned -79902 25 61 unless entity @n[tag=AzrielMob_big_barrier_maintainer,distance=0..18,type=sniffer] if entity @a[distance=0..30,tag=azrPlayer] if loaded ~ ~ ~ run summon sniffer ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob_big_barrier_maintainer"],DeathLootTable:"skyblock:azr_new/barrier_maintainer_tier1",attributes:[{id:"max_health",base:200.0},{id:"armor",base:50.0},{base:0.2d,id:"movement_speed"},{base:0.9d,id:"scale"}],Health:200.0f,CustomName:'大结界兽',Invulnerable:1b}
+execute positioned -79902 25 61 as @n[tag=AzrielMob_big_barrier_maintainer,distance=0..18] run function skyblock:azr/assets/events/stage/chapter_1/west/npc_big_barrier_maintainer
 
 
 

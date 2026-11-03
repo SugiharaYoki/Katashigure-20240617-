@@ -400,8 +400,8 @@ item replace block -79756 42 197 container.12 with tripwire_hook[custom_name={te
 item replace block -79756 42 197 container.14 with coal 2
 setblock -79755 42 196 minecraft:potted_azalea_bush
 setblock -79755 42 198 minecraft:potted_azalea_bush
-setblock -79764 30 218 chest[facing=north,waterlogged=true]{Inventory:[]}
-item replace block -79764 30 218 container.13 with skull_banner_pattern[custom_name={text:"“招待厅事务记录2”",color:"dark_purple",italic:0b},lore=[{text:"有更多的巡逻士兵说，",color:"white",italic:0b},{text:"自己在执行任务时遭遇了轻微的幻听。",color:"white",italic:0b},{text:"他们说，那温柔话语声的来源像是艾奥洛斯之女：雅尔希奥妮。",color:"white",italic:0b},{text:"也就是……魔神佛卡洛。",color:"white",italic:0b}]] 1
+setblock -79764 30 176 chest[facing=south,waterlogged=true]{Inventory:[]}
+item replace block -79764 30 176 container.13 with skull_banner_pattern[custom_name={text:"“招待厅事务记录2”",color:"dark_purple",italic:0b},lore=[{text:"有更多的巡逻士兵说，",color:"white",italic:0b},{text:"自己在执行任务时遭遇了轻微的幻听。",color:"white",italic:0b},{text:"他们说，那温柔话语声的来源像是艾奥洛斯之女。",color:"white",italic:0b},{text:"也就是……被封印的魔神佛卡洛。",color:"white",italic:0b}]] 1
 
 
 #stage7 ~ 8 道中
