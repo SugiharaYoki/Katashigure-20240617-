@@ -2,6 +2,8 @@
 $scoreboard players set @s rng4 $(cooldown)
 execute if score @s rng20 matches ..249999 run scoreboard players remove @s rng4 20
 execute if score @s rng20 matches ..149999 run scoreboard players remove @s rng4 16
+# 只统计完整结束的 A/B/C；追加风球和独立联动不重复计数。
+execute if score @s rng2 matches 1..3 run scoreboard players add @s rng13 1
 scoreboard players set @s rng2 0
 scoreboard players set @s rng1 0
 scoreboard players set @s rng5 0

@@ -1,5 +1,5 @@
 # 劳姆第一场 Boss 战；沿用现有 50 格玩家检测入口，每 tick 调用。
-# rng1：本轮时间；rng2：1/2=A、3/4=B、5/6=C、7/8=D，各轮重新抽签。
+# rng1：本轮时间；rng2：1/2=A、3/4=B、5/6=C、7/8=D，各轮重新抽签；9=组合 E。
 # 血量 >400：A/B 各半；200<血量<=400：A/B/C 各 1/3；血量<=200：A/B/C/D 各 1/4。
 # rng3：锁定朝向；rng4/5：水平单位向量；rng6：临时值/B2 落地时间。
 # rng10/11：A 跳跃水平速度；rng12/13：C 两轮各自的分支。
@@ -21,11 +21,16 @@ tag @s add AzrRaum_boss1_initialized
 execute positioned -79631.0 39 -63.0 unless entity @s[distance=..80] run data modify entity @s Motion set value [0.0d,0.0d,0.0d]
 execute positioned -79631.0 39 -63.0 unless entity @s[distance=..80] run tp @s -79631.0 39 -63.0
 
+# E 等待当前普通招式完成；组合中不递增普通招式时间，也不再次抽签。
+execute if entity @s[tag=AzrRaum_combo_e] at @s unless entity @n[type=mannequin,tag=AzrielNPC_malpas,tag=AzrMalpas_combo_e,distance=..200] run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_e_finish
+execute if entity @s[tag=azr_raum_with_malpas,tag=!AzrRaum_combo_e] if score @s rng1 matches 1000.. at @s if entity @n[type=mannequin,tag=AzrielNPC_malpas,tag=AzrMalpas_combo_e,distance=..200] run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_e_start
+execute if entity @s[tag=azr_raum_with_malpas,tag=!AzrRaum_combo_e] if score @s rng2 matches 0 at @s if entity @n[type=mannequin,tag=AzrielNPC_malpas,tag=AzrMalpas_combo_e,distance=..200] run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_e_start
+
 # 99999 是技能完成信号；下一 tick 从 0 开始下一轮。
 execute if score @s rng1 matches 1000.. run scoreboard players set @s rng2 0
 execute if score @s rng1 matches 1000.. run scoreboard players set @s rng1 0
 scoreboard players add @s AzrEntityTimer 1
-scoreboard players add @s rng1 1
+execute unless entity @s[tag=AzrRaum_combo_e] run scoreboard players add @s rng1 1
 execute store result score @s Health run data get entity @s Health
 execute store result bossbar azr:boss_hp_bar value run scoreboard players get @s Health
 
@@ -54,6 +59,8 @@ execute if score @s Health matches 1.. if score @s rng1 matches 21..999 if score
 execute if score @s Health matches 1.. if score @s rng1 matches 21..999 if score @s rng2 matches 3..4 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_attack_b
 execute if score @s Health matches 1.. if score @s rng1 matches 21..999 if score @s rng2 matches 5..6 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_attack_c
 execute if score @s Health matches 1.. if score @s rng1 matches 21..999 if score @s rng2 matches 7..8 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_attack_d
+
+execute if score @s Health matches 1.. if entity @s[tag=AzrRaum_combo_e] at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_attack_e
 
 # 首次低于 60 血获得无限抗性 V；不在每 tick 重复覆盖药水。
 execute store result score @s rng19 run data get entity @s Health 1000
