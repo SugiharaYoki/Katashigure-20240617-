@@ -8,13 +8,8 @@
       "function": "minecraft:set_components",
       "components": {
         "minecraft:custom_name": {
-          "text": "美味的",
-          "italic": false,
-          "extra": [
-            {
-              "translate": "item.minecraft.bread"
-            }
-          ]
+          "text": "美味的面包",
+          "italic": false
         },
         "minecraft:food": {
           "nutrition": 7,
@@ -32,13 +27,8 @@
       "function": "minecraft:set_components",
       "components": {
         "minecraft:custom_name": {
-          "text": "美味的",
-          "italic": false,
-          "extra": [
-            {
-              "translate": "item.minecraft.cooked_chicken"
-            }
-          ]
+          "text": "美味的熟鸡肉",
+          "italic": false
         },
         "minecraft:food": {
           "nutrition": 8,
@@ -56,13 +46,8 @@
       "function": "minecraft:set_components",
       "components": {
         "minecraft:custom_name": {
-          "text": "美味的",
-          "italic": false,
-          "extra": [
-            {
-              "translate": "item.minecraft.cooked_porkchop"
-            }
-          ]
+          "text": "美味的熟猪排",
+          "italic": false
         },
         "minecraft:food": {
           "nutrition": 10,
@@ -80,13 +65,8 @@
       "function": "minecraft:set_components",
       "components": {
         "minecraft:custom_name": {
-          "text": "美味的",
-          "italic": false,
-          "extra": [
-            {
-              "translate": "item.minecraft.cooked_beef"
-            }
-          ]
+          "text": "美味的熟牛排",
+          "italic": false
         },
         "minecraft:food": {
           "nutrition": 10,
