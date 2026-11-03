@@ -1037,6 +1037,12 @@ setblock -79778 188 -778 waxed_exposed_copper_chest[facing=north]{Inventory:[]}
 item replace block -79778 188 -778 container.12 with emerald 2
 item replace block -79778 188 -778 container.14 with emerald 2
 
+#stage nectar
+setblock -79728 167 -703 waxed_exposed_copper_chest[facing=south]{Inventory:[]}
+item replace block -79728 167 -703 container.13 with emerald 3
+
+
+
 #stage windshear
 setblock -79773 190 -683 air
 
