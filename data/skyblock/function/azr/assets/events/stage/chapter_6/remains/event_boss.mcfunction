@@ -13,6 +13,7 @@ execute if score @s rng1 matches 5001 positioned -79631 39 -63 run kill @e[dista
 execute if score @s rng1 matches 5001 as @a[tag=azrShowDialog] at @s run stopsound @s music minecraft:destroy
 
 
+execute if score @s rng1 matches 5001.. as @p[tag=azrPlayer,tag=!azr_OneLifeOnly] run tag @s add azr_OneLifeOnly
 execute if score @s rng1 matches 5001 as @a[tag=azrShowDialog] at @s run title @s times 0s 50t 10t
 execute if score @s rng1 matches 5001 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden2.chapter_title ambient @s ~ ~ ~ 2 1.3
 execute if score @s rng1 matches 5001 as @a[tag=azrShowDialog] at @s run title @s title {text:"劳",color: "#fff050",bold:1b}
