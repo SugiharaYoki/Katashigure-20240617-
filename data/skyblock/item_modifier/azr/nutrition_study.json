@@ -1,0 +1,108 @@
+[
+  {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "minecraft:bread"
+    },
+    "on_pass": {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:custom_name": {
+          "text": "美味的",
+          "italic": false,
+          "extra": [
+            {
+              "translate": "item.minecraft.bread"
+            }
+          ]
+        },
+        "minecraft:food": {
+          "nutrition": 7,
+          "saturation": 8.0
+        }
+      }
+    }
+  },
+  {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "minecraft:cooked_chicken"
+    },
+    "on_pass": {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:custom_name": {
+          "text": "美味的",
+          "italic": false,
+          "extra": [
+            {
+              "translate": "item.minecraft.cooked_chicken"
+            }
+          ]
+        },
+        "minecraft:food": {
+          "nutrition": 8,
+          "saturation": 9.2
+        }
+      }
+    }
+  },
+  {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "minecraft:cooked_porkchop"
+    },
+    "on_pass": {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:custom_name": {
+          "text": "美味的",
+          "italic": false,
+          "extra": [
+            {
+              "translate": "item.minecraft.cooked_porkchop"
+            }
+          ]
+        },
+        "minecraft:food": {
+          "nutrition": 10,
+          "saturation": 14.8
+        }
+      }
+    }
+  },
+  {
+    "function": "minecraft:filtered",
+    "item_filter": {
+      "items": "minecraft:cooked_beef"
+    },
+    "on_pass": {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:custom_name": {
+          "text": "美味的",
+          "italic": false,
+          "extra": [
+            {
+              "translate": "item.minecraft.cooked_beef"
+            }
+          ]
+        },
+        "minecraft:food": {
+          "nutrition": 10,
+          "saturation": 14.8
+        }
+      }
+    }
+  },
+  {
+    "function": "minecraft:set_custom_data",
+    "tag": "{azr_amulet_nutrition_study:1b}"
+  },
+  {
+    "function": "minecraft:set_components",
+    "components": {
+      "minecraft:max_stack_size": 94
+    }
+  }
+]

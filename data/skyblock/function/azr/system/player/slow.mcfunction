@@ -36,6 +36,8 @@ execute if block ~-0.3 ~-2 ~-0.3 lava if block ~-0.3 ~1 ~-0.3 lava run damage @s
 
 
 #护身符
+# 餐烩石板：仅有石板且存在未加工食物时扫描槽位；食物上的同名标记不算持有石板。
+execute if items entity @s container.* minecraft:spire_armor_trim_smithing_template[custom_data~{azr_amulet_nutrition_study:1b}] if items entity @s container.* #skyblock:azr_nutritious_food[!custom_data~{azr_amulet_nutrition_study:1b}] run function skyblock:azr/system/player/skills/amulet/nutrition_study
 execute if items entity @s weapon.offhand *[custom_data~{azr_amulet_pacemaker:1b}] run function skyblock:azr/system/player/skills/amulet/pacemaker_switch_mode_safe
 execute if items entity @s weapon.offhand *[custom_data~{azr_amulet_pacemaker_safe:1b}] run function skyblock:azr/system/player/skills/amulet/pacemaker_switch_mode_normal
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] run tag @s add AzrAmulet_moss_spore

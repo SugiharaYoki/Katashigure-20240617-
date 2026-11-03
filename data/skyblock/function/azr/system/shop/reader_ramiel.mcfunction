@@ -158,7 +158,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_fire_drogue_das
 execute if items entity @s container.* *[custom_data~{azr_amulet_stay_float:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerk] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_water_wade:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerl] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_water_arrow:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerm] CustomName set value ' √ '
-execute if items entity @s container.* *[custom_data~{azr_amulet_null:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkern] CustomName set value ' √ '
+execute if items entity @s container.* minecraft:spire_armor_trim_smithing_template[custom_data~{azr_amulet_nutrition_study:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkern] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_tripler:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkero] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_laser_drag:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerp] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_extraordinary_strength:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerq] CustomName set value ' √ '
@@ -229,7 +229,7 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerk]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432311"},hover_event:{"action":"show_text","value":{text:"Kinetic - 悬风石板\n长按跳跃以悬浮",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerl]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432312"},hover_event:{"action":"show_text","value":{text:"Limnion - 疾泅石板\n允许入水后进行一次冲刺，略微增加水中移动速度",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerm]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432313"},hover_event:{"action":"show_text","value":{text:"Murk - 衔涓石板\n水中箭矢自动追踪敌人",color:"white"}}},\
-{selector:"@n[tag=AzrRamielExStage_displaymarkern]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432314"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkern]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432314"},hover_event:{"action":"show_text","value":{text:"Nectar - 餐烩石板\n增加食物的营养价值",color:"white"}}},\
 {text:"\n "},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkero]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432315"},hover_event:{"action":"show_text","value":{text:"Object - 攒善石板\n蹲下额外消耗2存箭量，射出三重箭、后撤步射出五重箭",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerp]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432316"},hover_event:{"action":"show_text","value":{text:"Photothermal - 淬势石板\n杖右键拖动热激光、加快索命连击充能",color:"white"}}},\
@@ -245,9 +245,9 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkery]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432325"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerz]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432326"},hover_event:{"action":"show_text","value":{text:"???",color:"white"}}},\
 {text:"\n "},\
+{selector:"@n[tag=AzrRamielExStage_displaymarker3]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432332"},hover_event:{"action":"show_text","value":{text:"光明天使的符文\n多块基础石板功能整合、施放时无敌帧",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarker1]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432327"},hover_event:{"action":"show_text","value":{text:"权之残影 - 天界怀表\n在波数暂停时手持，可以冻结计时",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarker2]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432330"},hover_event:{"action":"show_text","value":{text:"马林努斯 - 岚切卷宗\n斧右键岚切攻击、左右移动时加强剑的范围伤害",color:"white"}}},\
-{selector:"@n[tag=AzrRamielExStage_displaymarker3]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432332"},hover_event:{"action":"show_text","value":{text:"光明天使的符文\n多块基础石板功能整合、施放时无敌帧",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarker4]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432339"},hover_event:{"action":"show_text","value":{text:"亚米 - 血潮石板\n可检测到魔力潮汐，身处其中可升起",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarker5]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432342"},hover_event:{"action":"show_text","value":{text:"拉斐尔 - 诸武卷宗\n整合地裂卷宗、云破石板，切换武器攻击增加威力",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarker5]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432345"},hover_event:{"action":"show_text","value":{text:"宁芙 - 精灵的祝福\n无限水下呼吸",color:"white"}}},\
@@ -257,6 +257,7 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBd]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432329"},hover_event:{"action":"show_text","value":{text:"锅炉驱动者 - 逐焰卷宗\n持续召唤最多3个逐焰浮球，减少节制天平电球最低间隔时长",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBe]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432347"},hover_event:{"action":"show_text","value":{text:"神池司阍 - 征候石板\n弹反反伤攻击距离增加，弓可进行弹反",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBl]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432343"},hover_event:{"action":"show_text","value":{text:"百夫长·采掘组 - 隙光石板\n使用近战武器时蹲下按左右移动键，施放减防斩击",color:"white"}}},\
+{text:"\n "},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBm]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432328"},hover_event:{"action":"show_text","value":{text:"噬藓母虫 - 深藓石板\n造成攻击可增加“索命连击”充能、在重生锚点可获得5分钟孢子的庇护（生命值上限加成）",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBn]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432346"},hover_event:{"action":"show_text","value":{text:"亡灵赫螺 - 涅槃石板\n冲刺不再造成饥饿、水下冲刺可水下充能",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBv]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432338"},hover_event:{"action":"show_text","value":{text:"晦怨贤士 - 悬蔑石板\n整合悬风石板、悬浮期间攻击延长悬浮时间",color:"white"}}},\
