@@ -55,6 +55,7 @@ execute if entity @s[tag=AZS_BoSShop02] if score @s Azr_Shop matches 8432335 run
 execute if entity @s[tag=AZS_BoSShop03] if score @s Azr_Shop matches 8432341 run function skyblock:azr/assets/items/amulets/pollution_analyzer
 execute if entity @s[tag=AZS_BoSShop05] if score @s Azr_Shop matches 8432336 run function skyblock:azr/assets/items/amulets/double_arrow
 execute if entity @s[tag=AZS_BoSShop06] if score @s Azr_Shop matches 8432337 run function skyblock:azr/assets/items/amulets/arrow_savior
+execute if entity @s[tag=AZS_BoSShop12] if score @s Azr_Shop matches 8432348 run function skyblock:azr/assets/items/amulets/moss_master
 
 scoreboard players set tempPlayerShopSuccess Azr_system 1
 

@@ -304,3 +304,7 @@ attribute @s burning_time modifier remove sea_weapon:upg_armor10
 
 # 清除本轮狙击状态，避免下局无法重新蓄力。
 tag @s remove Skywar_Bless39_charging
+
+# 地灵石板的领域属性不带出对局。
+execute if entity @s[tag=azr_moss_master_buff] run function skyblock:azr/system/player/skills/amulet/moss_master/remove
+attribute @s attack_speed modifier remove azr_amulet:moss_master

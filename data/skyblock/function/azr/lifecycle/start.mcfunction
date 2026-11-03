@@ -177,6 +177,8 @@ scoreboard objectives add AzrMinigame_PVP_currency dummy
 scoreboard objectives add AzrSariel_Food_HardenedCookie dummy
 scoreboard objectives add AzrSariel_Food_PowerSalmon dummy
 
+scoreboard objectives add azr_progress_feed_big_maintainer dummy
+
 
 scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 0
 scoreboard players set #boss_seen_chapter1_andralune AzrTimerStack 0

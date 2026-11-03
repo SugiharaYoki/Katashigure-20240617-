@@ -38,7 +38,10 @@ execute if block ~-0.3 ~-2 ~-0.3 lava if block ~-0.3 ~1 ~-0.3 lava run damage @s
 #护身符
 execute if items entity @s weapon.offhand *[custom_data~{azr_amulet_pacemaker:1b}] run function skyblock:azr/system/player/skills/amulet/pacemaker_switch_mode_safe
 execute if items entity @s weapon.offhand *[custom_data~{azr_amulet_pacemaker_safe:1b}] run function skyblock:azr/system/player/skills/amulet/pacemaker_switch_mode_normal
-execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] run function skyblock:azr/system/player/skills/amulet/moss_spore_core
+execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] run tag @s add AzrAmulet_moss_spore
+execute if items entity @s[tag=AZS_BoSB13] container.* *[custom_data~{azr_amulet_moss_master:1b}] run tag @s add AzrAmulet_moss_spore
+execute if entity @s[tag=AzrAmulet_moss_spore] run function skyblock:azr/system/player/skills/amulet/moss_spore_core
+tag @s remove AzrAmulet_moss_spore
 execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_savior:1b}] run function skyblock:azr/system/player/skills/amulet/arrow_savior_core
 execute if items entity @s weapon.offhand *[custom_data~{azr_amulet_arrow_savior:1b}] run function skyblock:azr/system/player/skills/amulet/arrow_savior_instant
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_drogue:1b}] run function skyblock:azr/system/player/skills/amulet/fire_drogue_core
@@ -129,3 +132,7 @@ execute if items entity @s weapon.mainhand #swords unless items entity @s weapon
 execute if items entity @s weapon.mainhand #axes unless items entity @s weapon.mainhand *[minecraft:custom_data~{azr_weapon_axe:1b}] run item modify entity @s weapon.mainhand [{function:"minecraft:set_custom_data",tag:{azr_weapon_axe:1b}},{function:"minecraft:set_components",components:{"minecraft:consumable":{consume_seconds:1000000.0f,animation:"none",has_consume_particles:false}}}]
 execute if items entity @s weapon.mainhand #hoes unless items entity @s weapon.mainhand *[minecraft:custom_data~{azr_weapon_hoe:1b}] run item modify entity @s weapon.mainhand [{function:"minecraft:set_custom_data",tag:{azr_weapon_hoe:1b}},{function:"minecraft:set_components",components:{"minecraft:consumable":{consume_seconds:1000000.0f,animation:"none",has_consume_particles:false}}}]
 
+
+# 地灵石板：现有 slow 周期更新；已有 buff 必须能在远离领域后移除。
+execute if entity @s[tag=azr_moss_master_buff] at @s run function skyblock:azr/system/player/skills/amulet/moss_master/buff
+execute if entity @s[tag=azrPlayer,tag=!azr_moss_master_buff] at @s if entity @e[type=block_display,tag=azr_moss_master_field,distance=..1,limit=1] run function skyblock:azr/system/player/skills/amulet/moss_master/add

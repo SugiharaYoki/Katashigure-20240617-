@@ -218,6 +218,22 @@ execute unless block -79915 32 0 air run fill -79915 32 0 -79917 35 0 air
 schedule function skyblock:azr/lifecycle/endgame/reset_map_boss1 3t
 execute if block -79932 38 104 air run fill -79932 38 104 -79930 42 104 minecraft:red_stained_glass
 
+#大结界兽
+# 『结界兽喂食守则』
+#
+#1.每天早晚各一顿。如果早上忘记喂的话，中午喂一顿，晚上不要喂了。
+#
+#2.它喜欢吃生牛肉，别给它喂烤熟的。
+#
+#3.结界兽会一直发出叫声。
+#如果兽圈里没有声音了，请立即联系当天值班的培育室管理员。
+#
+#4.结界兽认识你，知道你喂食过它几次。
+#
+#5.它很聪明，知道你今天都去过哪里。期待一下它会给你送什么礼物。
+
+
+
 
 #stage5
 setblock -79928 39 125 birch_button[facing=north,face=wall]

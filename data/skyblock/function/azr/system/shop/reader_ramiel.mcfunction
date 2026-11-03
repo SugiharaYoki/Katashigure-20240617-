@@ -260,6 +260,7 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBw]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432333"},hover_event:{"action":"show_text","value":{text:"金属学家 - 枢纽石板\n允许在重生锚点之间传送",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerBs]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432344"},hover_event:{"action":"show_text","value":{text:"表水创生球体 - 激流石板\n水下攻击制造鱼雷",color:"white"}}},\
 {text:"\n "},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerShop12]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432348"},hover_event:{"action":"show_text","value":{text:"地灵石板\n整合深藓石板、可用杖在地面创造苔藓领域",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerShop01]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432334"},hover_event:{"action":"show_text","value":{text:"污染平衡器\n减轻重金属池水伤害",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerShop02]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432335"},hover_event:{"action":"show_text","value":{text:"污染扩散器\n受击概率释放重金属云团",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerShop03]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432341"},hover_event:{"action":"show_text","value":{text:"污染解析器\n减轻重金属池水伤害、受击概率释放重金属云团",color:"white"}}},\

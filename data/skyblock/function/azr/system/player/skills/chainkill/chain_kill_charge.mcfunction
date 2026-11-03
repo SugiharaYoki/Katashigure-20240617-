@@ -12,11 +12,14 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_laser_drag:1b}]
 execute if items entity @s container.* *[custom_data~{azr_amulet_laser_drag:1b}] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=2..3}] AZR_chainKill_damage matches 4.. run scoreboard players add @s AZR_chainKill_chargeup 1
 execute if items entity @s container.* *[custom_data~{azr_amulet_laser_drag:1b}] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=4..}] AZR_chainKill_damage matches 4.. run scoreboard players add @s AZR_chainKill_chargeup 1
 
-execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=0..}] AZR_chainKill_damage matches 3.. run scoreboard players add @s AZR_chainKill_chargeup 2
-execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=1..}] AZR_chainKill_damage matches 3.. run scoreboard players add @s AZR_chainKill_chargeup 1
-execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=2..}] AZR_chainKill_damage matches 3.. run scoreboard players add @s AZR_chainKill_chargeup 1
-execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=3..}] AZR_chainKill_damage matches 3.. run scoreboard players add @s AZR_chainKill_chargeup 1
-execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=4..}] AZR_chainKill_damage matches 3.. run scoreboard players add @s AZR_chainKill_chargeup 2
+execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] run tag @s add AzrAmulet_moss_spore
+execute if items entity @s[tag=AZS_BoSB13] container.* *[custom_data~{azr_amulet_moss_master:1b}] run tag @s add AzrAmulet_moss_spore
+execute if entity @s[tag=AzrAmulet_moss_spore] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=0..}] AZR_chainKill_damage matches 3.. run scoreboard players add @s AZR_chainKill_chargeup 2
+execute if entity @s[tag=AzrAmulet_moss_spore] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=1..}] AZR_chainKill_damage matches 3.. run scoreboard players add @s AZR_chainKill_chargeup 1
+execute if entity @s[tag=AzrAmulet_moss_spore] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=2..}] AZR_chainKill_damage matches 3.. run scoreboard players add @s AZR_chainKill_chargeup 2
+execute if entity @s[tag=AzrAmulet_moss_spore] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=3..}] AZR_chainKill_damage matches 3.. run scoreboard players add @s AZR_chainKill_chargeup 1
+execute if entity @s[tag=AzrAmulet_moss_spore] if score @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_chargespeed=4..}] AZR_chainKill_damage matches 3.. run scoreboard players add @s AZR_chainKill_chargeup 2
+tag @s remove AzrAmulet_moss_spore
 
 execute if items entity @s container.* *[custom_data~{azr_amulet_chain_kill:1b}] if score @s[tag=!AZR_chainKill_activated] AZR_chainKill_damage matches 1.. run scoreboard players add @s AZR_chainKill_chargeup 1
 
