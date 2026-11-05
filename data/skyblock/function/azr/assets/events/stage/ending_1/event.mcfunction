@@ -4,6 +4,7 @@
 scoreboard players add @s rng1 1
 
 
+execute if score @s rng1 matches 2 at @s run forceload add ~ ~
 execute if score @s rng1 matches 2 run kill @n[tag=AzrielNPC_emmanuel,distance=..50]
 
 execute if score @s rng1 matches 2 at @p[tag=azrPlayer] run tp @a[tag=azrPlayer,distance=1..] ~ ~ ~
@@ -33,6 +34,7 @@ execute if score @s rng1 matches 101 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 113 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“你的声音，听上去很熟悉。请问我这是在哪？”",color:"white"}]
 execute if score @s rng1 matches 126 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“这里……不像是现实。”",color:"white"}]
 
+execute if score @s rng1 matches 140 as @a[distance=..2000,tag=azrShowDialog] at @s run playsound minecraft:garden1.sagashimono music @s ~ ~ ~ 0.8
 execute if score @s rng1 matches 140 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“你因为投机取巧，被某位与我同阶级的存在误杀了。”",color:"white"}]
 execute if score @s rng1 matches 155 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“……不过，看上去你其实并不清楚发生了什么。”",color:"white"}]
 
@@ -48,10 +50,14 @@ execute if score @s rng1 matches 262 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 275 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“答案书写在未来。我们终将在生命树前再次相遇。”",color:"white"}]
 
 execute if score @s rng1 matches 278 run effect give @a[tag=azrPlayer] darkness 5 0 true
+execute if score @s rng1 matches 286 run tag @a[tag=azrPlayer] add AZS_BoSShop25
 execute if score @s rng1 matches 286 run tp @a[tag=azrPlayer] -79765 113 -1199
 execute if score @s rng1 matches 286 positioned -79765 113 -1199 run particle large_smoke ~ ~1 ~ 0.5 3 0.5 0 100
 
 
+execute if score @s rng1 matches 304 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“你，依然还有更好的选择。”",color:"white"}]
+execute if score @s rng1 matches 324 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“拥抱更光明的未来吧。”",color:"white"}]
+execute if score @s rng1 matches 364 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/ending_1
 
 
 

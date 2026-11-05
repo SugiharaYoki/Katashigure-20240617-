@@ -184,6 +184,7 @@ execute at @n[tag=id_data_reading,type=marker] if items block ~2 ~-1 ~ container
 execute at @n[tag=id_data_reading,type=marker] if items block ~2 ~-1 ~ container.21 green_wool run tag @s add AZS_BoSShop22
 execute at @n[tag=id_data_reading,type=marker] if items block ~2 ~-1 ~ container.22 green_wool run tag @s add AZS_BoSShop23
 execute at @n[tag=id_data_reading,type=marker] if items block ~2 ~-1 ~ container.23 green_wool run tag @s add AZS_BoSShop24
+#三结局
 execute at @n[tag=id_data_reading,type=marker] if items block ~2 ~-1 ~ container.24 green_wool run tag @s add AZS_BoSShop25
 execute at @n[tag=id_data_reading,type=marker] if items block ~2 ~-1 ~ container.25 green_wool run tag @s add AZS_BoSShop26
 execute at @n[tag=id_data_reading,type=marker] if items block ~2 ~-1 ~ container.26 green_wool run tag @s add AZS_BoSShop27

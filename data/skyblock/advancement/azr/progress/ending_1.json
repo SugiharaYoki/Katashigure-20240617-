@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "结局：死与生的命变",
+            "color": "gold",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "我能够在自己的战斗过程中投机取巧。\n与之相对，我就得做好自己弄巧成拙的准备。\n\n我依然能够以更加光荣、更加正当的方式通过那些考验。\n事实上，我也不得不这么做。\n因为……就算带着小聪明走到了尽头，我也无法顺利接下那等待着我的天职。\n\n这是为了我的未来。\n所有人的未来。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:end_crystal"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage17_boss4"
+}
