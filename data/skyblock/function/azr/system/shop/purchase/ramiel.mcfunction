@@ -89,7 +89,7 @@ execute as @s[scores={Azr_Shop=8431564}] \
     arrow_savior run scoreboard players set tempPlayerShopSuccess Azr_system 1
     
 execute as @s[scores={Azr_Shop=8431565}] \
-    if score stage Azr_system matches 100.. if entity @n[tag=AzrielNPC_marinus,distance=0..10] \
+    if score stage Azr_system matches 100..200 if entity @n[tag=AzrielNPC_marinus,distance=0..10] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* gunpowder[count={min:30}] \
     unless function skyblock:azr/system/shop/purchase/ramiel/\

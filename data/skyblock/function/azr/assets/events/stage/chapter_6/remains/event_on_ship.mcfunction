@@ -41,9 +41,7 @@ execute if score @s rng1 matches 240 positioned -79259.51 281.00 -895.52 run par
 execute if score @s rng1 matches 240 positioned -79259.51 281.00 -895.52 run particle minecraft:end_rod ~ ~1.3 ~0.6 0 0 0 0 1 force
 execute if score @s rng1 matches 240 positioned -79259.51 281.00 -895.52 run particle minecraft:end_rod ~ ~1.3 ~0.9 0 0 0 0 1 force
 
-execute if score @s rng1 matches 240 positioned -79259.51 281.00 -895.52 run summon minecraft:mannequin ~ ~ ~ {Tags:["AzrielNPC_emmanuel","AzrielMob_level_ed"],profile:{id:[I;0,0,0,0],properties:[{name:"textures",value:"ewogICJ0aW1lc3RhbXAiIDogMTc5MjQ4Mjc5OTQ5NCwKICAicHJvZmlsZUlkIiA6ICI2ZTEzN2VhOGYyMzk0MjY3OTcyYTc5ODdkNzgwMDk5YiIsCiAgInByb2ZpbGVOYW1lIiA6ICJYdWFuWXUxNzI1X1hZVSIsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS81OTlmM2M5YTYxZjhmNjEwZThmYTc0MzAxOTIxOWQwMjJjMzQ5N2MwNGE1NmQ0ODA1ZDJjYjMwY2JjMzQ1MWI2IgogICAgfSwKICAgICJDQVBFIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8yMzQwYzBlMDNkZDI0YTExYjE1YThiMzNjMmE3ZTllMzJhYmIyMDUxYjI0ODFkMGJhN2RlZmQ2MzVjYTdhOTMzIgogICAgfQogIH0KfQ=="}]},hide_description:true,CustomName:'雷米尔',NoGravity:1b,attributes:[{id:"attack_damage",base:10.0},{id:"max_health",base:600.0},{id:"follow_range",base:50},{id:"armor",base:23.0},{base:0.27d,id:"movement_speed"},{base:1.0d,id:"knockback_resistance"},{base:1.0d,id:"scale"}],Health:600.0f,Invulnerable:1b}
-
-
+execute if score @s rng1 matches 240 positioned -79259.51 281.00 -895.52 run function skyblock:azr/assets/mobs/unique/emmanuel
 execute if score @s rng1 matches 240..660 as @n[tag=AzrielNPC_emmanuel] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
 

@@ -60,8 +60,8 @@ execute if entity @s[type=#undead] if block ~ ~1.2 ~ #skyblock:water if score @s
 execute if entity @s[type=#undead] if block ~ ~1.2 ~ #skyblock:water if score @s AzrielMob_undead_inwater matches 6.. run scoreboard players set @s AzrielMob_undead_inwater 0
 
 #神界军
-execute if score stage Azr_system matches 25.. unless entity @s[type=!pillager,type=!vindicator] run function skyblock:azr/assets/events/stage/chapter_3/stage9_divineforce_behavior
-execute if score stage Azr_system matches 25.. if entity @s[type=piglin] run function skyblock:azr/assets/events/stage/chapter_3/stage9_divineforce_behavior
+execute if score stage Azr_system matches 25..200 unless entity @s[type=!pillager,type=!vindicator] run function skyblock:azr/assets/events/stage/chapter_3/stage9_divineforce_behavior
+execute if score stage Azr_system matches 25..200 if entity @s[type=piglin] run function skyblock:azr/assets/events/stage/chapter_3/stage9_divineforce_behavior
 execute if entity @s[tag=AzrielNPC_stage9_entry_conversation5] run function skyblock:azr/assets/mobs/skill/special/team_5_captain_ian
 #NPC
 execute if entity @s[tag=AzrielTrader_pig_henry] run function skyblock:azr/assets/mobs/skill/special/pig_henry
@@ -69,8 +69,8 @@ execute if entity @s[tag=AzrielTrader_pig_henry] run function skyblock:azr/asset
 #boss
 execute if score stage Azr_system matches 60..65 if entity @s[type=piglin_brute,tag=AzrielMob_demon_amy] run function skyblock:azr/assets/mobs/skill/boss4_amy/core_x20
 execute if score stage Azr_system matches 69..71 if entity @s[tag=AzrielNPC_raphael] run function skyblock:azr/assets/mobs/skill/boss4_raphael/core
-execute if score stage Azr_system matches 77.. if entity @s[tag=AzrielBossSlime,tag=!door_special] run function skyblock:azr/assets/mobs/skill/boss_slime/core
-execute if score stage Azr_system matches 90.. if entity @s[tag=AzrielBossNautilus] run function skyblock:azr/assets/mobs/skill/boss_nautilus/core
+execute if score stage Azr_system matches 77..200 if entity @s[tag=AzrielBossSlime,tag=!door_special] run function skyblock:azr/assets/mobs/skill/boss_slime/core
+execute if score stage Azr_system matches 90..200 if entity @s[tag=AzrielBossNautilus] run function skyblock:azr/assets/mobs/skill/boss_nautilus/core
 execute if entity @s[tag=AzrielBossEntrance_StartActing] run function skyblock:azr/assets/mobs/skill/boss_entrance/individual_core
 
 execute if score stage Azr_system matches 90 positioned -79794 231 -545 if entity @s[tag=AzrielNPC_nymph,distance=..200] run function skyblock:azr/assets/mobs/skill/boss5_nymph/core
