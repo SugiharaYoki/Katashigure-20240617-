@@ -90,6 +90,7 @@ execute if score @s rng1 matches 708 run tellraw @a[tag=azrShowDialog] [{text:"è
 
 
 
+execute if score @s rng1 matches 708 as @a[tag=azrPlayer] run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
 execute if score @s rng1 matches 708 run function skyblock:azr/lifecycle/endgame/reset_map_boss4
 execute if score @s rng1 matches 708 run scoreboard players set @a[tag=azrPlayer] AzrPlayer_CurrentArea 9
 execute if score @s rng1 matches 708 run scoreboard players set stage Azr_system 69
