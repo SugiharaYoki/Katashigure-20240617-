@@ -85,8 +85,6 @@ execute if score @s rng1 matches 590 run title @a[tag=azrShowDialog] title [{tex
 execute if score @s rng1 matches 650 run title @a[tag=azrShowDialog] times 2s 6s 6s
 execute if score @s rng1 matches 650 run title @a[tag=azrShowDialog] title [{text:"不要扼杀你的自由，因为它象征世界的意志",color:"white",bold: false}]
 
-execute if score @s rng1 matches 708 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/ending_1
-execute if score @s rng1 matches 708 run tellraw @a[tag=azrShowDialog] [{text:"达成结局：",color:"gold",bold:1b},{text:"\nBad End「死与生的命变」",color:"white",bold: false}]
 
 
 
@@ -99,6 +97,8 @@ execute if score @s rng1 matches 708 run tp @a[tag=azrPlayer] -79759 -17 -179 fa
 execute if score @s rng1 matches 708 run spawnpoint @a[tag=azrPlayer] -79759 -17 -179
 execute if score @s rng1 matches 708 run execute as @a[tag=azrPlayer] run function skyblock:azr/system/player/updatespawnpoint_initialize {x:-79855,y:47,z:109}
 
+execute if score @s rng1 matches 708 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/ending_1
+execute if score @s rng1 matches 708 run tellraw @a[tag=azrShowDialog] [{text:"达成结局：",color:"gold",bold:1b},{text:"\nBad End「死与生的命变」",color:"white",bold: false}]
 
 
 
