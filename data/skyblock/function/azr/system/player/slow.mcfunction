@@ -72,6 +72,8 @@ execute if entity @s[tag=AzrAmulet_nymph_hearted] unless items entity @s contain
 #魔力潮汐
 execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_3:1b}] run tag @s add magical_current_pass
 execute if items entity @s container.* *[custom_data~{azr_amulet_magical_current:1b}] run tag @s add magical_current_pass
+say hi
+execute if entity @s[tag=magical_current_pass] run say hello
 execute if entity @s[tag=magical_current_pass] run function skyblock:azr/system/player/skills/amulet/magical_current_list
 tag @s remove magical_current_pass
 
