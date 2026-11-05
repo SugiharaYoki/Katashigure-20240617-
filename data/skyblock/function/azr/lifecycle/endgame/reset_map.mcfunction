@@ -996,10 +996,10 @@ item replace block -79685 25 -347 container.12 with gold_nugget 3
 item replace block -79685 25 -347 container.14 with gold_nugget 3
 
 
-####遂栈
+####邃栈
 #拉斐尔
 
-execute if block -79777 21 -206 air run schedule function skyblock:azr/lifecycle/endgame/reset_map_boss4 8t
+schedule function skyblock:azr/lifecycle/endgame/reset_map_boss4 8t
 
 #stage photothermal
 fill -79963 27 210 -79961 27 210 minecraft:potted_torchflower

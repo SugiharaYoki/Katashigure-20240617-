@@ -1,4 +1,6 @@
 
+forceload add -79505 -338
+forceload add -79685 -790 -79607 -583
 
 clone -79742 19 -205 -79731 27 -195 -79782 19 -205
 fill -79777 21 -206 -79775 22 -226 minecraft:netherrack replace air
