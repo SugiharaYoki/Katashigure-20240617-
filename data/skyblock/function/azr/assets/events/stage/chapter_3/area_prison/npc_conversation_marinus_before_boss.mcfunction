@@ -34,6 +34,7 @@ execute if score @s rng1 matches 129 run playsound minecraft:entity.villager.amb
 execute if score @s rng1 matches 129 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎，这一走恐怕很难再回头。你与我，说不定都会死。”",color:"white"}]
 
 execute if score @s rng1 matches 138 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"你：",color:"aqua",bold:1b},{text:"\n“我会做好准备的。谢谢提醒。”",color:"white",bold: false}]
+execute if score @s rng1 matches 138 run tag @n[tag=AzrielNPC_marinus,type=villager] add azr_shop_open
 
 execute if score @s rng1 matches 20..28 if entity @a[tag=azrPlayer,x=-79892,y=39,z=-154,dx=4,dy=1,dz=1] run scoreboard players set @s rng1 29
 execute if score @s rng1 matches 30..34 if entity @a[tag=azrPlayer,x=-79892,y=39,z=-154,dx=4,dy=1,dz=1] run scoreboard players set @s rng1 35
@@ -50,6 +51,7 @@ execute if score @s rng1 matches 119..127 if entity @a[tag=azrPlayer,x=-79892,y=
 execute if score @s rng1 matches 129..136 if entity @a[tag=azrPlayer,x=-79892,y=39,z=-154,dx=4,dy=1,dz=1] run scoreboard players set @s rng1 137
 execute if score @s rng1 matches 138..146 if entity @a[tag=azrPlayer,x=-79892,y=39,z=-154,dx=4,dy=1,dz=1] run scoreboard players set @s rng1 147
 
+execute if score @s rng1 matches 148 run tag @n[tag=AzrielNPC_marinus,type=villager] remove azr_shop_open
 execute if score @s rng1 matches 148 run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.8
 execute if score @s rng1 matches 148 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"马林努斯：",color:"green",bold:1b},{bold: false,text:"\n“所有人准备好。……开门！”",color:"white"}]
 

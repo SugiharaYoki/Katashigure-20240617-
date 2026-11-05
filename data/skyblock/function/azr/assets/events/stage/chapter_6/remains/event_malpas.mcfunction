@@ -209,6 +209,7 @@ execute if score @s rng1 matches 979 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 989 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“您先前似乎还没有办法使用生命树根系进行传送。刚才我们之间已经构筑过魔力连接，现在你应该已经可以做到了。”",color:"white"}]
 execute if score @s rng1 matches 1001 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“您不妨尝试一下，大人。”",color:"white"}]
 execute if score @s rng1 matches 1016 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“了解。”",color:"white"}]
+execute if score @s rng1 matches 1016 run tag @n[tag=AzrielNPC_marinus,type=villager] add azr_shop_open
 
 execute if score @s rng1 matches 1018 run scoreboard players set stage Azr_system 102
 execute if score @s rng1 matches 1018 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage25

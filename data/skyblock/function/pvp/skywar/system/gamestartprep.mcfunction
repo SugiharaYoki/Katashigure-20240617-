@@ -2,7 +2,7 @@ execute unless block -17 23 32 soul_lantern if score skywar_start rng1 matches .
 execute if block -17 23 32 soul_lantern if score skywar_start rng1 matches 11.. run scoreboard players add skywar_start rng1 1
 execute unless score skywar_start rng1 matches -9999.. run scoreboard players add skywar_start rng1 1
 #《计时器初始化》
-execute if score skywar_start rng1 matches 2 run fill -130 59 -117 -130 59 -128 air
+execute if score skywar_start rng1 matches 2 run fill -130 59 -116 -130 59 -128 air
 
 #《初始化队伍》
 execute if score skywar_start rng1 matches 2 run function skyblock:pvp/skywar/system/init/team/create

@@ -147,7 +147,7 @@ execute if score @s rng1 matches 900 positioned -79979 -44 -2 as @e[tag=AzrielNP
 execute if score @s rng1 matches 900 positioned -79979 -44 -2 as @e[tag=AzrielNPC_Divineforce,distance=..50,type=!villager,type=!piglin,type=!evoker] run tp @s -79746 32 -17
 
 
-
+execute if score @s rng1 matches 900 run tag @n[tag=AzrielNPC_marinus,type=villager] remove azr_shop_open
 
 
 

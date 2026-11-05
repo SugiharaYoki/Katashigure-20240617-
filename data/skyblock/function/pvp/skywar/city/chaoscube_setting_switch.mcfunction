@@ -16,7 +16,7 @@ team remove Temp1_6
 team remove Temp1_7
 team remove Temp1_8
 team join HajimetanoMachi @a[tag=!Gaming]
-fill -130 59 -117 -130 59 -128 minecraft:cherry_button[facing=east]
+fill -130 59 -116 -130 59 -128 minecraft:cherry_button[facing=east]
 #《游戏规则初始化》
 #gamerule fire_spread_radius_around_player 0
 #《玩家事件/文字显示/传送支援》

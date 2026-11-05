@@ -6,6 +6,8 @@ execute if score @s rng1 matches 2..200 as @n[tag=AzrielNPC_marinus] at @s run t
 execute if score @s rng1 matches 2 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 execute if score @s rng1 matches 2 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“如果要回神庭的话，顺着这边一条小道走比较安全。”",color:"white"}]
 
+execute if score @s rng1 matches 2 run tag @n[tag=AzrielNPC_marinus,type=villager] add azr_shop_open
+
 execute if score @s rng1 matches 15 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 execute if score @s rng1 matches 15 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“这边的魔力潮汐稳定朝上流淌，能够令其中灵魂安全通过地狱与天堂的界限。”",color:"white"}]
 
@@ -38,6 +40,7 @@ execute if score @s rng1 matches 137 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 145 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
 execute if score @s rng1 matches 145 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold: false,text:"\n“爱理莎小姐可以顺着魔力潮汐往上先行。现在车间博物馆还是个隐患，我和马林努斯想要将这里封印起来。”",color:"white"}]
 
+execute if score @s rng1 matches 502 run tag @n[tag=AzrielNPC_marinus,type=villager] remove azr_shop_open
 
 execute if score @s rng1 matches 190..500 run scoreboard players set @s rng1 490
 execute if score @s rng1 matches ..500 if entity @a[tag=azrPlayer,x=-79782,y=19,z=-205,dx=10,dy=8,dz=10] run scoreboard players set @s rng1 501
