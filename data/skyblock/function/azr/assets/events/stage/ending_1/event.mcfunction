@@ -35,8 +35,8 @@ execute if score @s rng1 matches 113 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 126 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“这里……不像是现实。”",color:"white"}]
 
 execute if score @s rng1 matches 140 as @a[distance=..2000,tag=azrShowDialog] at @s run playsound minecraft:garden1.sagashimono music @s ~ ~ ~ 0.8
-execute if score @s rng1 matches 140 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“你因为投机取巧，被某位与我同阶级的存在误杀了。”",color:"white"}]
-execute if score @s rng1 matches 155 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“……不过，看上去你其实并不清楚发生了什么。”",color:"white"}]
+execute if score @s rng1 matches 140 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“你因为投机取巧，被某位与我同阶级的存在误杀了。如果那能被称之为‘杀’。”",color:"white"}]
+execute if score @s rng1 matches 155 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“……不过，看上去你其实并不清楚发生了什么。你不明不白地来到了此处。”",color:"white"}]
 
 execute if score @s rng1 matches 170 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“投机取巧……我吗？我确实有借用生命手册的力量，打造了极为强力的常效装备。”",color:"white"}]
 
