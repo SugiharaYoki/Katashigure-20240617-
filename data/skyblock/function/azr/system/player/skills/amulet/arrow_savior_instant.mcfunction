@@ -343,6 +343,10 @@ execute if score @s rng1 matches 63.. run clear @s arrow 1
 execute if score @s rng1 matches 64.. run scoreboard players add @s AzrSariel_Amulet_ArrowSavior_count 1
 execute if score @s rng1 matches 64.. run clear @s arrow 1
 
+execute if items entity @s weapon.offhand *[custom_data~{azr_amulet_arrow_master:1b}] run tag @s add azr_used_arrow_master_offhand
 
 execute if items entity @s weapon.offhand *[custom_data~{azr_offhand_function:1b}] run item replace entity @s weapon.offhand with air
-function skyblock:azr/assets/items/amulets/arrow_savior
+execute if entity @s[tag=azr_used_arrow_master_offhand] run function skyblock:azr/assets/items/amulets/arrow_master
+execute unless entity @s[tag=azr_used_arrow_master_offhand] run function skyblock:azr/assets/items/amulets/arrow_savior
+
+tag @s remove azr_used_arrow_master_offhand

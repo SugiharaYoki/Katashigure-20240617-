@@ -68,7 +68,12 @@ execute if entity @s[tag=AzrSariel_Amulet_AxeVortex_SweepRatio] unless items ent
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_grow:1b}] run function skyblock:azr/system/player/skills/amulet/moss_grow_core
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_assassinate:1b}] run function skyblock:azr/system/player/skills/amulet/assassinate_core
 execute if items entity @s container.* *[custom_data~{azr_amulet_assassinate:1b}] run function skyblock:azr/system/player/skills/amulet/assassinate_sneak_speed
-execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_tripler:1b}] run function skyblock:azr/system/player/skills/amulet/arrow_tripler
+
+#攒善
+
+execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_tripler:1b}] run tag @s add arrow_tripler_pass
+execute if items entity @s[tag=AZS_BoS15] container.* *[custom_data~{azr_amulet_arrow_master:1b}] run tag @s add arrow_tripler_pass
+execute if entity @s[tag=arrow_tripler_pass] run function skyblock:azr/system/player/skills/amulet/arrow_tripler
 
 execute if items entity @s container.* *[custom_data~{azr_amulet_sprint_double:1b}] run tag @s add sprint_double_pass
 execute if items entity @s container.* *[custom_data~{azr_amulet_back_dodge:1b}] run tag @s add back_dodge_pass
@@ -103,7 +108,10 @@ execute if score @s AzrSariel_Amulet_LaserDrag_timer matches 1.. run function sk
 execute if items entity @s container.* *[custom_data~{azr_amulet_wind_shear:1b}] run function skyblock:azr/system/player/skills/amulet/wind_shear_core
 
 execute if items entity @s container.* *[custom_data~{azr_amulet_water_ripple:1b}] run function skyblock:azr/system/player/skills/amulet/water_ripple_core
-execute if items entity @s container.* *[custom_data~{azr_amulet_water_arrow:1b}] run function skyblock:azr/system/player/skills/amulet/water_arrow_core
+#衔涓
+execute if items entity @s container.* *[custom_data~{azr_amulet_water_arrow:1b}] run tag @s add water_arrow_pass
+execute if items entity @s[tag=AZS_BoS13] container.* *[custom_data~{azr_amulet_arrow_master:1b}] run tag @s add water_arrow_pass
+execute if entity @s[tag=water_arrow_pass] run function skyblock:azr/system/player/skills/amulet/water_arrow_core
 #AzrSariel_Amulet_WaterRipple_cooldown
 
 
@@ -133,7 +141,7 @@ execute if score @s AzrSariel_Amulet_Parry_cooldown matches 10.. run function sk
 #一次性打火石
 execute if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. if items entity @s weapon.mainhand *[custom_data~{instant_spark:1b}] run function skyblock:azr/system/player/damage_bonus/effect/item_instant_spark
 #多重射击额外消耗
-execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_tripler:1b}] if score @s AzrSariel_Amulet_generic_use_bow matches 1.. if score @s AzrSariel_Amulet_ArrowSavior_state matches 1..2 run scoreboard players remove @s AzrSariel_Amulet_ArrowSavior_count 2
+execute if entity @s[tag=arrow_tripler_pass] if score @s AzrSariel_Amulet_generic_use_bow matches 1.. if score @s AzrSariel_Amulet_ArrowSavior_state matches 1..2 run scoreboard players remove @s AzrSariel_Amulet_ArrowSavior_count 2
 
 #负面影响事件
 execute if score @s AzrEvent_affected_quake_medium matches 1.. run function skyblock:azr/assets/events/effects/affected_quake_medium
@@ -141,6 +149,9 @@ execute if score @s AzrEvent_affected_quake_medium matches 1.. run function skyb
 
 scoreboard players reset @s AzrSariel_Amulet_generic_damage_dealt
 scoreboard players reset @s AzrSariel_Amulet_generic_use_bow
+
+tag @s remove arrow_tripler_pass
+tag @s remove water_arrow_pass
 
 
 scoreboard players remove @s azr_weapon_rightclick_cooldown 1

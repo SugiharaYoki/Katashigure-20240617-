@@ -137,11 +137,12 @@ execute if entity @s[tag=AZS_BoSShop02] run data modify entity @n[tag=AzrRamielE
 execute if entity @s[tag=AZS_BoSShop03] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop01] CustomName set value ' - '
 execute if entity @s[tag=AZS_BoSShop03] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop02] CustomName set value ' - '
 execute if entity @s[tag=AZS_BoSShop03] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop03] CustomName set value ' <毒析> '
-
 execute if entity @s[tag=AZS_BoSShop04] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop04] CustomName set value ' <> '
+
 execute if entity @s[tag=AZS_BoSShop05] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop05] CustomName set value ' <弦蓄> '
 execute if entity @s[tag=AZS_BoSShop06] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop06] CustomName set value ' <存箭> '
-execute if entity @s[tag=AZS_BoSShop07] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop07] CustomName set value ' <> '
+execute if entity @s[tag=AZS_BoSShop07] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop06] CustomName set value ' - '
+execute if entity @s[tag=AZS_BoSShop07] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop07] CustomName set value ' <神射> '
 execute if entity @s[tag=AZS_BoSShop08] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop08] CustomName set value ' <> '
 
 
@@ -195,6 +196,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_pollution_analy
 #execute if items entity @s container.* *[custom_data~{azr_amulet_:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop04] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_double_arrow:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop05] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_savior:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop06] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_master:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop07] CustomName set value ' √ '
 #execute if items entity @s container.* *[custom_data~{azr_amulet_:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop07] CustomName set value ' √ '
 #execute if items entity @s container.* *[custom_data~{azr_amulet_:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop08] CustomName set value ' √ '
 
@@ -269,7 +271,8 @@ tellraw @s [{text:"\n "},{text:"假定回溯  \n",color:"#308aff",bold:1b},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerShop02]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432335"},hover_event:{"action":"show_text","value":{text:"污染扩散器\n受击概率释放重金属云团",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerShop03]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432341"},hover_event:{"action":"show_text","value":{text:"污染解析器\n减轻重金属池水伤害、受击概率释放重金属云团",color:"white"}}},\
 {selector:"@n[tag=AzrRamielExStage_displaymarkerShop05]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432336"},hover_event:{"action":"show_text","value":{text:"弦蓄卷宗\n第二箭默认超强蓄力",color:"white"}}},\
-{selector:"@n[tag=AzrRamielExStage_displaymarkerShop06]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432337"},hover_event:{"action":"show_text","value":{text:"存箭石板\n持有箭矢超过32时不再占用背包",color:"white"}}}]
+{selector:"@n[tag=AzrRamielExStage_displaymarkerShop06]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432337"},hover_event:{"action":"show_text","value":{text:"存箭石板\n持有箭矢超过32时不再占用背包",color:"white"}}},\
+{selector:"@n[tag=AzrRamielExStage_displaymarkerShop07]",color:"#70a0df",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8432349"},hover_event:{"action":"show_text","value":{text:"神射石板\n整合衔涓石板、攒善石板，持有箭矢超过32时不再占用背包",color:"white"}}}]
 
 
 

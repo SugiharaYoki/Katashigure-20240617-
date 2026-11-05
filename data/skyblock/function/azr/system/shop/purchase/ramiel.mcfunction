@@ -75,18 +75,25 @@ execute as @s[scores={Azr_Shop=8431561}] \
     pollution_analyzer run scoreboard players set tempPlayerShopSuccess Azr_system 1
 
 execute as @s[scores={Azr_Shop=8431563}] \
-    if entity @n[tag=AzrielNPC_marinus,distance=0..8] \
+    if entity @n[tag=AzrielNPC_marinus,distance=0..10] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* iron_ingot[count={min:15}] \
     unless function skyblock:azr/system/shop/purchase/ramiel/\
     double_arrow run scoreboard players set tempPlayerShopSuccess Azr_system 1
 
 execute as @s[scores={Azr_Shop=8431564}] \
-    if entity @n[tag=AzrielNPC_marinus,distance=0..8] \
+    if entity @n[tag=AzrielNPC_marinus,distance=0..10] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* gunpowder[count={min:15}] \
     unless function skyblock:azr/system/shop/purchase/ramiel/\
     arrow_savior run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    
+execute as @s[scores={Azr_Shop=8431565}] \
+    if score stage Azr_system matches 100.. if entity @n[tag=AzrielNPC_marinus,distance=0..10] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if items entity @s container.* gunpowder[count={min:30}] \
+    unless function skyblock:azr/system/shop/purchase/ramiel/\
+    arrow_master run scoreboard players set tempPlayerShopSuccess Azr_system 1
     
 execute if score stage Azr_system matches ..69 as @s[scores={Azr_Shop=8431567}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
