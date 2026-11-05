@@ -101,7 +101,7 @@ execute if score @s rng1 matches 708 run advancement grant @a[tag=azrPlayer] onl
 execute if score @s rng1 matches 708 run tellraw @a[tag=azrShowDialog] [{text:"达成结局：",color:"gold",bold:1b},{text:"\nBad End「死与生的命变」",color:"white",bold: false}]
 
 
-
+execute if score @s rng1 matches 708 run kill @s
 
 
 
