@@ -13,10 +13,10 @@ execute positioned -79753.52 43.00 -303.51 if entity @s[distance=..18] run parti
 execute if entity @s[x=-79754,y=43,z=-304,dx=0,dy=10,dz=0] run scoreboard players set @s AzrSariel_Amulet_MagicalCurrentLevel 2
 
 #前往邃栈
-execute positioned -79505 45 -338 if entity @n[tag=AzrielMarker_encounter,distance=0..0.5] positioned -79774.51 -17.00 -176.54 if entity @s[distance=..18] run particle trail{color:16761189,duration:240,target:[-79774.50,-1.94,-176.51]} ~ ~ ~ 0.5 0 0.5 0 1 force
-execute positioned -79505 45 -338 if entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @s[x=-79775,y=-18,z=-177,dx=0,dy=15,dz=0] run scoreboard players set @s AzrSariel_Amulet_MagicalCurrentLevel 2
-execute if score stage Azr_system matches ..75 positioned -79505 45 -338 if entity @n[tag=AzrielMarker_encounter,distance=0..0.5] positioned -79775.50 -5.00 -199.49 if entity @s[distance=..18] run particle trail{color:16761189,duration:240,target:[-79775.50,32.06,-199.52]} ~ ~ ~ 0.5 0 0.5 0 1 force
-execute if score stage Azr_system matches ..75 positioned -79505 45 -338 if entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @s[x=-79776,y=-6,z=-200,dx=0,dy=25,dz=0] run scoreboard players set @s AzrSariel_Amulet_MagicalCurrentLevel 2
+execute if score stage Azr_system matches 69.. positioned -79774.51 -17.00 -176.54 if entity @s[distance=..18] run particle trail{color:16761189,duration:240,target:[-79774.50,-1.94,-176.51]} ~ ~ ~ 0.5 0 0.5 0 1 force
+execute if score stage Azr_system matches 69.. if entity @s[x=-79775,y=-18,z=-177,dx=0,dy=15,dz=0] run scoreboard players set @s AzrSariel_Amulet_MagicalCurrentLevel 2
+execute if score stage Azr_system matches 69..75 positioned -79775.50 -5.00 -199.49 if entity @s[distance=..18] run particle trail{color:16761189,duration:240,target:[-79775.50,32.06,-199.52]} ~ ~ ~ 0.5 0 0.5 0 1 force
+execute if score stage Azr_system matches 69..75 if entity @s[x=-79776,y=-6,z=-200,dx=0,dy=25,dz=0] run scoreboard players set @s AzrSariel_Amulet_MagicalCurrentLevel 2
 
 #stage jahannam
 execute positioned -79664 20 -409 if entity @s[distance=..18] run particle trail{color:16761189,duration:240,target:[-79663.49,36.06,-408.54]} ~ ~ ~ 0.5 0 0.5 0 1 force
