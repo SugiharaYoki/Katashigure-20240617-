@@ -88,24 +88,23 @@ execute if score @s rng1 matches 650 run title @a[tag=azrShowDialog] title [{tex
 
 
 
-execute if score @s rng1 matches 708 as @a[tag=azrPlayer] run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
-execute if score @s rng1 matches 708 run function skyblock:azr/lifecycle/endgame/reset_map_boss4
-execute if score @s rng1 matches 708 run scoreboard players set @a[tag=azrPlayer] AzrPlayer_CurrentArea 9
-execute if score @s rng1 matches 708 run scoreboard players set stage Azr_system 69
-execute if score @s rng1 matches 708 run scoreboard players set stage_main_thread AzrTimerStack 0
-execute if score @s rng1 matches 708 run tp @a[tag=azrPlayer] -79759 -17 -179 facing -79760 -17 -179
-execute if score @s rng1 matches 708 run spawnpoint @a[tag=azrPlayer] -79759 -17 -179
-execute if score @s rng1 matches 708 run execute as @a[tag=azrPlayer] run function skyblock:azr/system/player/updatespawnpoint_initialize {x:-79855,y:47,z:109}
+execute if score @s rng1 matches 798 as @a[tag=azrPlayer] run attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
+execute if score @s rng1 matches 798 run function skyblock:azr/lifecycle/endgame/reset_map_boss4
+execute if score @s rng1 matches 798 run scoreboard players set @a[tag=azrPlayer] AzrPlayer_CurrentArea 9
+execute if score @s rng1 matches 798 run scoreboard players set stage Azr_system 69
+execute if score @s rng1 matches 798 run scoreboard players set stage_main_thread AzrTimerStack 0
+execute if score @s rng1 matches 798 run tp @a[tag=azrPlayer] -79759 -17 -179 facing -79760 -17 -179
+execute if score @s rng1 matches 798 run spawnpoint @a[tag=azrPlayer] -79759 -17 -179
+execute if score @s rng1 matches 798 run execute as @a[tag=azrPlayer] run function skyblock:azr/system/player/updatespawnpoint_initialize {x:-79855,y:47,z:109}
 
-execute if score @s rng1 matches 708 as @a[tag=azrPlayer] at @s run particle totem_of_undying ~ ~1 ~ 0.4 0.8 0.4 0.7 100
-execute if score @s rng1 matches 708 as @a[tag=azrPlayer] at @s run particle minecraft:flash{color:[0.000,0.000,0.000,1.00]} ~ ~1 ~ 0.4 0.7 0.4 0.3 2
-execute if score @s rng1 matches 708 as @a[tag=azrPlayer] at @s run playsound item.totem.use master @a ~ ~ ~ 2 1
+execute if score @s rng1 matches 798 as @a[tag=azrPlayer] at @s run particle totem_of_undying ~ ~1 ~ 0.4 0.8 0.4 0.7 100
+execute if score @s rng1 matches 798 as @a[tag=azrPlayer] at @s run particle minecraft:flash{color:[0.000,0.000,0.000,1.00]} ~ ~1 ~ 0.4 0.7 0.4 0.3 2
 
-execute if score @s rng1 matches 708 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/ending_1
-execute if score @s rng1 matches 708 run tellraw @a[tag=azrShowDialog] [{text:"达成结局：",color:"gold",bold:1b},{text:"\nBad End「死与生的命变」",color:"white",bold: false}]
+execute if score @s rng1 matches 798 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/ending_1
+execute if score @s rng1 matches 798 run tellraw @a[tag=azrShowDialog] [{text:"达成结局：",color:"gold",bold:1b},{text:"\nBad End「死与生的命变」",color:"white",bold: false}]
 
 
-execute if score @s rng1 matches 708 run kill @s
+execute if score @s rng1 matches 798 run kill @s
 
 
 
