@@ -1,4 +1,4 @@
-function skyblock:sea/generate/preload/map_prepare_ch1_player_advancement
+
 
 item replace entity @s container.22 with guster_banner_pattern[custom_data={"sea_setting_box":true},custom_name={text:"档案/成就总览",italic:0b,color:"aqua"},lore=[{text:"查看你在《厄珀娅的悲歌》中所获得的全部进度成就。",color:"white",italic:0b},{text:"档案/成就的获取数量会打印在聊天区域。",color:"white",italic:0b}]]
 
