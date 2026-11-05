@@ -82,7 +82,8 @@ execute if score stage Azr_system matches 112 positioned -79631 39 -63 if entity
 
 
 execute if score stage Azr_system matches 29..50 as @s[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs/skill/marinus/friendly/core
-execute if score @s rng1 matches 100.. as @s[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs/skill/marinus/friendly/core
+execute if score stage Azr_system matches 102 as @s[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs/skill/marinus/friendly/core
+execute if score stage Azr_system matches 111 as @s[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs/skill/marinus/friendly/core
 
 
 # 玛帕斯升空和空中双翼，沿用现有的 50 格实体更新入口。
