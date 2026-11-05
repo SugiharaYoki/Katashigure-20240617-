@@ -43,7 +43,7 @@ execute if score @s rng1 matches 170 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 186 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“那并非能够将你引领至正确道路的事物。你需要谨慎：并非所有能拿到手上的东西，都是好东西。”",color:"white"}]
 execute if score @s rng1 matches 201 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“之后，可能还会有其他类似的情况。我希望你更明智地做选择。”",color:"white"}]
 execute if score @s rng1 matches 215 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“届时……你会走上‘生’之命，还是‘死’之命，我都能够加以见证。”",color:"white"}]
-execute if score @s rng1 matches 230 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“至于现在，在这生死之间的夹缝，我能够再度逆转你的‘时间’，送你回到击败亚米之前。”",color:"white"}]
+execute if score @s rng1 matches 230 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“至于现在，在这生死之间的夹缝，我能够再度逆转你的‘时间’，送你回到击败亚米之后。”",color:"white"}]
 
 execute if score @s rng1 matches 247 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“让我先确认一下……就是你一直在将我送回灵魂破碎前的时间点吗？你究竟是何方神圣？”",color:"white"}]
 execute if score @s rng1 matches 262 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“现在的我们，还不适合坦诚相见。”",color:"white"}]
@@ -59,10 +59,10 @@ execute if score @s rng1 matches 304 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 324 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“拥抱更光明的未来吧。”",color:"white"}]
 
 
-execute if score @s rng1 matches 350 run title @a[tag=azrShowDialog] times 2s 3s 2s
-execute if score @s rng1 matches 350 run title @a[tag=azrShowDialog] title [{text:"『亚兹列尔的中庭花园』",color:"white",bold:1b}]
+execute if score @s rng1 matches 340 run title @a[tag=azrShowDialog] times 2s 3s 2s
+execute if score @s rng1 matches 340 run title @a[tag=azrShowDialog] title [{text:"『亚兹列尔的中庭花园』",color:"white",bold:1b}]
 
-execute if score @s rng1 matches 350 run title @a[tag=azrShowDialog] title [{text:"主策划：SugiharaYoki",color:"white",bold: false}]
+execute if score @s rng1 matches 340 run title @a[tag=azrShowDialog] subtitle [{text:"A Game Produced by SugiharaYoki",color:"white",bold: false}]
 
 execute if score @s rng1 matches 390 run title @a[tag=azrShowDialog] title [{text:"领衔程序与技术",color:"white",bold: false}]
 execute if score @s rng1 matches 390 run title @a[tag=azrShowDialog] subtitle [{text:"SugiharaYoki、XuanYu1725_XYU",color:"white",bold: false}]
