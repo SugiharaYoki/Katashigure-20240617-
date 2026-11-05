@@ -57,15 +57,41 @@ execute if score @s rng1 matches 286 positioned -79765 113 -1199 run particle la
 
 execute if score @s rng1 matches 304 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“你，依然还有更好的选择。”",color:"white"}]
 execute if score @s rng1 matches 324 run tellraw @a[tag=azrShowDialog] [{text:"？？？：",color:"#935dff",bold:1b},{bold: false,text:"\n“拥抱更光明的未来吧。”",color:"white"}]
-execute if score @s rng1 matches 364 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/ending_1
+
+
+execute if score @s rng1 matches 350 run title @a[tag=azrShowDialog] times 2s 3s 2s
+execute if score @s rng1 matches 350 run title @a[tag=azrShowDialog] title [{text:"『亚兹列尔的中庭花园』",color:"white",bold:1b}]
+
+execute if score @s rng1 matches 350 run title @a[tag=azrShowDialog] title [{text:"主策划：SugiharaYoki",color:"white",bold: false}]
+
+execute if score @s rng1 matches 390 run title @a[tag=azrShowDialog] title [{text:"领衔程序与技术",color:"white",bold: false}]
+execute if score @s rng1 matches 390 run title @a[tag=azrShowDialog] subtitle [{text:"SugiharaYoki、XuanYu1725_XYU",color:"white",bold: false}]
+
+execute if score @s rng1 matches 430 run title @a[tag=azrShowDialog] title [{text:"程序与技术",color:"white",bold: false}]
+execute if score @s rng1 matches 430 run title @a[tag=azrShowDialog] subtitle [{text:"xiyihan、qfys521、sdgedghdg",color:"white",bold: false}]
+
+execute if score @s rng1 matches 470 run title @a[tag=azrShowDialog] title [{text:"地图与规划",color:"white",bold: false}]
+execute if score @s rng1 matches 470 run title @a[tag=azrShowDialog] subtitle [{text:"SugiharaYoki、Pramanix",color:"white",bold: false}]
+
+execute if score @s rng1 matches 510 run title @a[tag=azrShowDialog] title [{text:"领衔服务支持",color:"white",bold: false}]
+execute if score @s rng1 matches 510 run title @a[tag=azrShowDialog] subtitle [{text:"Botium_",color:"white",bold: false}]
+
+execute if score @s rng1 matches 550 run title @a[tag=azrShowDialog] title [{text:"过去服务支持",color:"white",bold: false}]
+execute if score @s rng1 matches 550 run title @a[tag=azrShowDialog] subtitle [{text:"MikkoAyaka",color:"white",bold: false}]
+
+
+execute if score @s rng1 matches 598 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/ending_1
+execute if score @s rng1 matches 598 run tellraw @a[tag=azrShowDialog] [{text:"达成结局：",color:"gold",bold:1b},{text:"\nBad End「死与生的命变」",color:"white",bold: false}]
 
 
 
-
-
-
-
-
+execute if score @s rng1 matches 598 run function skyblock:azr/lifecycle/endgame/reset_map_boss4
+execute if score @s rng1 matches 598 run scoreboard players set @a[tag=azrPlayer] AzrPlayer_CurrentArea 9
+execute if score @s rng1 matches 598 run scoreboard players set stage Azr_system 69
+execute if score @s rng1 matches 598 run scoreboard players set stage_main_thread AzrTimerStack 0
+execute if score @s rng1 matches 598 run tp @a[tag=azrPlayer] -79759 -17 -179 facing -79760 -17 -179
+execute if score @s rng1 matches 598 run spawnpoint @a[tag=azrPlayer] -79759 -17 -179
+execute if score @s rng1 matches 598 run execute as @a[tag=azrPlayer] run function skyblock:azr/system/player/updatespawnpoint_initialize {x:-79855,y:47,z:109}
 
 
 
