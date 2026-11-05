@@ -24,7 +24,7 @@ execute if score @s rng1 matches 20.. run scoreboard players set @s rng1 -12
 
 #马林努斯对话
 execute if score stage Azr_system matches 30..39 as @s at @s if entity @a[tag=azrPlayer,distance=..15] positioned -79867 49 -128 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] at @n[tag=AzrielNPC_marinus] run function skyblock:azr/assets/events/stage/chapter_3/area_prison/npc_conversation_marinus
-execute if score stage Azr_system matches 41..110 as @s[tag=azr_shop_open] at @s if entity @a[tag=azrPlayer,distance=..15] run function skyblock:azr/assets/events/stage/chapter_3/area_prison/npc_conversation_marinus_later_shop
+execute if score stage Azr_system matches 41..110 as @s[tag=azr_shop_open] at @s if entity @a[tag=azrPlayer,distance=..10] run function skyblock:azr/assets/events/stage/chapter_3/area_prison/npc_conversation_marinus_later_shop
 
 
 #花园攻城战
