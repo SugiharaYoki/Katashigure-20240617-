@@ -55,6 +55,8 @@ attribute @s attack_knockback modifier remove 8603fc7b-b1fa-47c6-91f5-67d9b35e55
 
 attribute @s jump_strength modifier remove skywar_ishtar_bless11_01
 
+attribute @s minecraft:jump_strength modifier remove sea:marilyn_01
+
 tag @s remove AzrielEvent3761S
 tag @s remove AzrielEvent3762S
 tag @s remove AzrielEvent3763S
