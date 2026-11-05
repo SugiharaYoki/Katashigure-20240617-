@@ -13,12 +13,12 @@ execute if score @s rng1 matches 2 at @p[tag=azrPlayer] run tp @a[tag=azrPlayer,
 execute if score @s rng1 matches 2 as @a[tag=azrPlayer] run attribute @s minecraft:jump_strength modifier add sea:marilyn_01 -50 add_value
 execute if score @s rng1 matches 2 as @a[tag=azrPlayer] run stopsound @s
 
-execute if score @s rng1 matches 2 as @a[tag=azrPlayer] run particle totem_of_undying ~ ~1 ~ 0.4 0.8 0.4 0.7 100
-execute if score @s rng1 matches 2 as @a[tag=azrPlayer] run particle minecraft:flash{color:[0.000,0.000,0.000,1.00]} ~ ~1 ~ 0.4 0.7 0.4 0.3 2
-execute if score @s rng1 matches 2 as @a[tag=azrPlayer] run playsound item.totem.use master @a ~ ~ ~ 2 0.8
-execute if score @s rng1 matches 2 as @a[tag=azrPlayer] run effect give @s regeneration infinite 4 true
-execute if score @s rng1 matches 2 as @a[tag=azrPlayer] run effect give @s saturation infinite 4 true
-execute if score @s rng1 matches 2 as @a[tag=azrPlayer] run effect give @s resistance infinite 4 true
+execute if score @s rng1 matches 2 as @a[tag=azrPlayer] at @s run particle totem_of_undying ~ ~1 ~ 0.4 0.8 0.4 0.7 100
+execute if score @s rng1 matches 2 as @a[tag=azrPlayer] at @s run particle minecraft:flash{color:[0.000,0.000,0.000,1.00]} ~ ~1 ~ 0.4 0.7 0.4 0.3 2
+execute if score @s rng1 matches 2 as @a[tag=azrPlayer] at @s run playsound item.totem.use master @a ~ ~ ~ 2 1
+execute if score @s rng1 matches 2 as @a[tag=azrPlayer] at @s run effect give @s regeneration infinite 4 true
+execute if score @s rng1 matches 2 as @a[tag=azrPlayer] at @s run effect give @s saturation infinite 4 true
+execute if score @s rng1 matches 2 as @a[tag=azrPlayer] at @s run effect give @s resistance infinite 4 true
 
 execute if score @s rng1 matches 2 as @a[tag=azrPlayer] positioned -80118 28 -999 run function skyblock:azr/assets/mobs/unique/emmanuel
 execute if score @s rng1 matches 2.. as @n[tag=AzrielNPC_emmanuel] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer,distance=..30]

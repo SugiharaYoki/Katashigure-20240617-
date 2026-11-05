@@ -54,6 +54,9 @@ execute if score @s rng1 matches 503 run playsound entity.generic.explode block 
 
 execute if score @s rng1 matches 502 run clone -79762 19 -200 -79751 27 -184 -79782 19 -200
 execute if score @s rng1 matches 502 positioned -79776 22 -195 run summon marker ~ ~0 ~ {Tags:["AzrielMob_angel_raphael_opening_fireball","AzrielMob_mob_marker"]}
+execute if score @s rng1 matches 502 if items entity @p[tag=azrPlayer] container.* *[custom_data~{azr_amulet_artificial_heart:1b}] run scoreboard players set stage Azr_system 901
+execute if score @s rng1 matches 502 if items entity @p[tag=azrPlayer] container.* *[custom_data~{azr_amulet_artificial_heart:1b}] run scoreboard players set @s rng1 99999
+
 
 execute if score @s rng1 matches 510 as @a[tag=azrShowDialog] at @s run playsound minecraft:truehero music @s ~ ~ ~ 0.65
 execute if score @s rng1 matches 510 run tellraw @a[tag=azrShowDialog] [{text:"拉斐尔：",color:"#fe741f",bold:1b},{bold: false,text:"\n“甚好，绝妙啊，人类的亡魂！你让我刮目相看——但很抱歉，我无法放你通过这里！”",color:"white"}]
