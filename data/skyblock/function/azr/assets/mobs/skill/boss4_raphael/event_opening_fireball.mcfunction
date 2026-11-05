@@ -37,7 +37,7 @@ execute if score @s AzrEntityTimer matches 20 run particle explosion_emitter ~ ~
 
 
 execute if score @s AzrEntityTimer matches 20 run tp @s -79640 -27 -589
-execute if score @s AzrEntityTimer matches 20 run tp @a[tag=azrPlayer] -79640 -27 -589
+execute if score @s AzrEntityTimer matches 20..25 run tp @a[tag=azrPlayer] -79640 -27 -589
 
 execute if score @s AzrEntityTimer matches 20 if items entity @p[tag=azrPlayer] container.* *[custom_data~{azr_amulet_artificial_heart:1b}] run tp @a[tag=azrPlayer] -80118 20 -869
 
