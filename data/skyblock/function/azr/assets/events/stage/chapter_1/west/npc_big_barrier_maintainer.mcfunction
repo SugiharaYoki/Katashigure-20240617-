@@ -14,7 +14,7 @@ execute if entity @s[scores={rng1=40}] run scoreboard players set @s rng1 39
 execute if score @s rng1 matches ..39 at @s if entity @p[tag=azrPlayer,distance=..16] at @n[type=sniffer,distance=..20] if entity @e[type=item,distance=..5,nbt={Item:{id:"minecraft:beef",count:1}}] run scoreboard players set @s rng1 41
 execute if score @s rng1 matches 41 at @s run kill @e[type=item,distance=..3,nbt={Item:{id:"minecraft:beef",count:1}},sort=nearest,limit=1]
 execute if score @s rng1 matches 41 at @s run playsound minecraft:entity.sniffer.eating neutral @a[distance=..32] ~ ~ ~ 1 1
-execute if score @s rng1 matches 41 at @s as @p[tag=azrPlayer,distance=..8] run function skyblock:azr/assets/events/stage/chapter_1/west/big_barrier_feed_reward
+execute if score @s rng1 matches 41 at @s as @a[tag=azrPlayer,distance=..20] run function skyblock:azr/assets/events/stage/chapter_1/west/big_barrier_feed_reward
 execute if score @s rng1 matches 44 store result score @s rng2 run random value 1..6
 execute if score @s rng1 matches 44 if score @s rng2 matches 1 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua"},{text:"\n（它吃得很享受……）",color:"white"}]
 execute if score @s rng1 matches 44 if score @s rng2 matches 2 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua"},{text:"\n（看上去它很喜欢生牛肉……）",color:"white"}]
