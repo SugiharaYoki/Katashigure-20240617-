@@ -11,7 +11,7 @@ execute if score @s rng1 matches 38 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if entity @s[scores={rng1=40}] run scoreboard players set @s rng1 39
 
 # 只检测兽身边 3 格、堆叠数量恰好为 1 的生牛肉；范围和类型先于 NBT。
-execute if score @s rng1 matches ..39 at @s if entity @p[tag=azrPlayer,distance=..8] if entity @e[type=item,distance=..3,nbt={Item:{id:"minecraft:beef",count:1}}] run scoreboard players set @s rng1 41
+execute if score @s rng1 matches ..39 at @s if entity @p[tag=azrPlayer,distance=..16] at @n[type=sniffer,distance=..20] if entity @e[type=item,distance=..5,nbt={Item:{id:"minecraft:beef",count:1}}] run scoreboard players set @s rng1 41
 execute if score @s rng1 matches 41 at @s run kill @e[type=item,distance=..3,nbt={Item:{id:"minecraft:beef",count:1}},sort=nearest,limit=1]
 execute if score @s rng1 matches 41 at @s run playsound minecraft:entity.sniffer.eating neutral @a[distance=..32] ~ ~ ~ 1 1
 execute if score @s rng1 matches 41 at @s as @p[tag=azrPlayer,distance=..8] run function skyblock:azr/assets/events/stage/chapter_1/west/big_barrier_feed_reward
