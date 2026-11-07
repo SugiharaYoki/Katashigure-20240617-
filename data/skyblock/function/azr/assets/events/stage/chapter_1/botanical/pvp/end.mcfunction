@@ -16,10 +16,8 @@ execute positioned -79969 -43 -16 as @a[tag=azrPlayer,distance=..20] at @s run p
 scoreboard players set 4 constant 4
 scoreboard players set 10 constant 10
 scoreboard players operation AzrFlowerPVP_A AzrMinigame_PVP_currency /= 4 constant
-scoreboard players operation AzrFlowerPVP_A AzrMinigame_PVP_currency /= 10 constant
 scoreboard players operation @a[tag=AzrFlowerPVP_A] Azr_currency_weight += AzrFlowerPVP_A AzrMinigame_PVP_currency
 scoreboard players operation AzrFlowerPVP_B AzrMinigame_PVP_currency /= 4 constant
-scoreboard players operation AzrFlowerPVP_B AzrMinigame_PVP_currency /= 10 constant
 scoreboard players operation @a[tag=AzrFlowerPVP_B] Azr_currency_weight += AzrFlowerPVP_B AzrMinigame_PVP_currency
 
 effect clear @a[tag=AzrFlowerPVP]
