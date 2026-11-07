@@ -8,6 +8,6 @@ execute as @s[scores={rng1=1}] unless entity @n[tag=AzrielMob_utility_respawn_an
 
 execute as @s[scores={rng1=5}] as @a[tag=azrPlayer,tag=!AZS_BoSShop24] run title @s times 15t 60t 12t
 execute as @s[scores={rng1=5}] as @a[tag=azrPlayer,tag=!AZS_BoSShop24] run title @s title {text:"魔界地脉解析完成",color: "#ebceff",bold:0b}
-execute as @s[scores={rng1=5}] as @a[tag=azrPlayer,tag=!AZS_BoSShop24] run title @s subtitle {text:"借助黑耀魔力的网络，现可在黑曜石烛台间传送",color: "#878787",bold:0b}
+execute as @s[scores={rng1=5}] as @a[tag=azrPlayer,tag=!AZS_BoSShop24] run title @s subtitle {text:"借助黑曜魔力的网络，现可在黑曜石烛台间传送",color: "#878787",bold:0b}
 execute as @s[scores={rng1=5}] as @a[tag=azrPlayer,tag=!AZS_BoSShop24] run tag @s add AZS_BoSShop24
 

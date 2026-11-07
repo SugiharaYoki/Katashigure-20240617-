@@ -87,7 +87,7 @@ execute if score @s rng1 matches 221 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s[tag=ch4_conclusion_conversation_speedup] rng1 matches 221 run scoreboard players set @s rng1 241
 
 execute if score @s rng1 matches 242 at @n[tag=AzrielNPC_mersenne] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 2 0.812
-execute if score @s rng1 matches 242 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“我们这里除了权之残影大人之外，最强的站力是负责阻止更多魔界军涌入的天使长拉斐尔大人。”",color:"white"}]
+execute if score @s rng1 matches 242 run tellraw @a[tag=azrShowDialog] [{text:"默尔森：",color:"green",bold:1b},{bold:false,text:"\n“我们这里除了权之残影大人之外，最强的战力是负责阻止更多魔界军涌入的天使长拉斐尔大人。”",color:"white"}]
 execute if score @s[tag=ch4_conclusion_conversation_speedup] rng1 matches 242 run scoreboard players set @s rng1 262
 
 execute if score @s rng1 matches 263 at @n[tag=AzrielNPC_andralune] run playsound minecraft:entity.illusioner.ambient hostile @a ~ ~ ~ 3 0.6

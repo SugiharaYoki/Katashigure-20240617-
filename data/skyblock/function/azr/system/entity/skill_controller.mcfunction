@@ -81,7 +81,7 @@ execute if score stage Azr_system matches 98..99 positioned -79764 -10 80 if ent
 execute if score stage Azr_system matches 112 positioned -79631 39 -63 if entity @s[tag=AzrielNPC_raum,tag=!AzrBoss6_outro,distance=..200] run function skyblock:azr/assets/mobs/skill/boss6_raum/core_boss1
 
 
-execute if score stage Azr_system matches 29..50 as @s[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs/skill/marinus/friendly/core
+execute if score stage Azr_system matches 29..70 as @s[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs/skill/marinus/friendly/core
 execute if score stage Azr_system matches 102 as @s[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs/skill/marinus/friendly/core
 execute if score stage Azr_system matches 111 as @s[tag=AzrielNPC_marinus] at @s run function skyblock:azr/assets/mobs/skill/marinus/friendly/core
 
