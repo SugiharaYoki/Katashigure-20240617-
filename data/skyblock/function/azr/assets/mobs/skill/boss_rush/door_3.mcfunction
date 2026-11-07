@@ -57,8 +57,8 @@ execute if score @s AzrEntityTimer matches 403 as @a[tag=azrPlayer,distance=..10
 execute if score @s AzrEntityTimer matches 403 as @a[tag=azrPlayer,distance=..100] at @s run particle pale_oak_leaves ~ ~1 ~ 0.5 1 0.5 0 20
 execute if score @s AzrEntityTimer matches 403 as @a[tag=azrPlayer,distance=..100] at @s run particle reverse_portal ~ ~1 ~ 0.5 1 0.5 0 20
 execute if score @s AzrEntityTimer matches 405 run fill -79159 77 -31 -79195 77 5 air replace minecraft:tinted_glass
-execute if score @s AzrEntityTimer matches 505 run title @a[distance=..50] times 0t 20t 16t
-execute if score @s AzrEntityTimer matches 505 run title @a[distance=..50] title {text:"表 水 创 生 球 体",color: "#7321cb",bold:1b}
+execute if score @s AzrEntityTimer matches 505 run title @a[distance=..110] times 0t 20t 16t
+execute if score @s AzrEntityTimer matches 505 run title @a[distance=..110] title {text:"表 水 创 生 球 体",color: "#7321cb",bold:1b}
 
 execute if score @s AzrEntityTimer matches 420 positioned -79179 1 -28 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
 execute if score @s AzrEntityTimer matches 420 positioned -79179 1 -28 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_slime/summon
