@@ -76,9 +76,9 @@ execute if score @s rng1 matches 200 as @a[tag=azrPlayer] at @s run function sky
 
 
 
-
 execute if score @s rng2 matches 89..99 run scoreboard players set @s rng2 89
 
 execute if score @s rng2 matches ..99 positioned -79651 174 -774 if entity @a[tag=azrPlayer,distance=..7] run scoreboard players set @s rng2 100
+execute if score @s rng1 matches 100 run tag @a[tag=azrPlayer] add azrPlayer_respawnanchor_unlocked_lush_a
 execute if score @s rng2 matches 100 unless score stage Azr_system matches 77.. run scoreboard players set stage Azr_system 77
 execute if score @s rng2 matches 100 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（生命树根系……？但我觉得我现在不该通过它回到神庭）",color:"white"}]
