@@ -1,3 +1,5 @@
+# kill 后同一函数链仍可能引用 @s，使用标记阻止后续子步再次引爆。
+tag @s add AzrRaphael_block_throw_hit
 particle minecraft:explosion_emitter ~ ~ ~ 0 0 0 0 1 force
 particle minecraft:large_smoke ~ ~0.5 ~ 1 0.5 1 0 30
 playsound minecraft:entity.generic.explode hostile @a ~ ~ ~ 5 0.9
