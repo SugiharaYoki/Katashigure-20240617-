@@ -19,7 +19,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_transportation:
 execute if score @s Azr_skillPoints matches 53.. run tag @s add transportation_pass
 
 
-execute as @s[scores={Azr_Shop=40001..49999}] if block ~ ~-0.8 ~ creaking_heart if entity @s[tag=transportation_pass] unless score stage Azr_system matches 101 run function skyblock:azr/system/transportation_list
+execute as @s[scores={Azr_Shop=40001..49999}] if block ~ ~-0.8 ~ creaking_heart if entity @s[tag=transportation_pass] unless score stage Azr_system matches 101 unless score stage Azr_system matches 113 run function skyblock:azr/system/transportation_list
 execute as @s[scores={Azr_Shop=40001..49999}] if entity @n[tag=AzrielMob_utility_respawn_anchor,distance=..3.2] if entity @s[tag=transportation_pass] run function skyblock:azr/system/transportation_list
 tag @s remove transportation_pass
 

@@ -89,3 +89,6 @@ execute if entity @s[tag=AzrielMob_boss_raphael_marker_fireball] run function sk
 
 
 execute if entity @s[tag=AzrMalpas_attack] at @s run function skyblock:azr/assets/mobs/skill/boss6_malpas/marker_boss1_aux
+
+# 百夫长第二阶段逐格扩展的爆炸射线。
+execute if entity @s[tag=AzrLegate_fan_ray] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_legate/fan_ray
