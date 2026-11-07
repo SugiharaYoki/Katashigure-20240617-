@@ -80,10 +80,12 @@ execute if score @s rng1 matches 550 run title @a[tag=azrShowDialog] title [{tex
 execute if score @s rng1 matches 550 run title @a[tag=azrShowDialog] subtitle [{text:"MikkoAyaka",color:"white",bold: false}]
 
 execute if score @s rng1 matches 590 run title @a[tag=azrShowDialog] times 2s 6s 3s
-execute if score @s rng1 matches 590 run title @a[tag=azrShowDialog] title [{text:"你仍旧可以重来，重新选择你所拥有的自由",color:"white",bold: false}]
+execute if score @s rng1 matches 590 run title @a[tag=azrShowDialog] title [{text:"你仍旧可以重来",color:"white",bold: false}]
+execute if score @s rng1 matches 590 run title @a[tag=azrShowDialog] subtitle [{text:"重新选择你终将窥见的道路",color:"white",bold: false}]
 
 execute if score @s rng1 matches 650 run title @a[tag=azrShowDialog] times 2s 6s 6s
-execute if score @s rng1 matches 650 run title @a[tag=azrShowDialog] title [{text:"不要扼杀你的自由，因为它象征世界的意志",color:"white",bold: false}]
+execute if score @s rng1 matches 650 run title @a[tag=azrShowDialog] title [{text:"不要扼杀你的自由",color:"white",bold: false}]
+execute if score @s rng1 matches 650 run title @a[tag=azrShowDialog] subtitle [{text:"因为那束光象征了世界的意志",color:"white",bold: false}]
 
 
 
