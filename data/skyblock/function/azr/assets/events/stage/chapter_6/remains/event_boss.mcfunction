@@ -128,6 +128,13 @@ execute if score @s rng1 matches 10315 run scoreboard players set @n[type=manneq
 execute if score @s rng1 matches 10315 run tag @n[type=mannequin,tag=AzrielNPC_malpas] add AzrMalpas_intro_rise
 execute if score @s rng1 matches 10315 run tag @n[type=mannequin,tag=AzrielNPC_malpas] add AzrBoss6_exit_rise
 
+execute if score @s rng1 matches 10315 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.7
+execute if score @s rng1 matches 10315 run playsound ambient.crimson_forest.additions ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.7
+execute if score @s rng1 matches 10315 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.7
+execute if score @s rng1 matches 10315 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.7
+execute if score @s rng1 matches 10315 run playsound ambient.crimson_forest.mood ambient @a[tag=azrShowDialog] -78000 100 0 1000 0.7
+execute if score @s rng1 matches 10315 run fill -79606 43 -61 -79606 40 -65 minecraft:air destroy
+
 execute if score @s rng1 matches 10340 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“那么……我该做我最开始就该做的事了。”",color:"white"}]
 execute if score @s rng1 matches 10357 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“通过生命树庭园的试炼。”",color:"white"}]
 

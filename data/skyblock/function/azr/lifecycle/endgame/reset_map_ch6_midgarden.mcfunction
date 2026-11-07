@@ -22,5 +22,5 @@ fillbiome -79680 38 -63 -79620 39 47 minecraft:pale_garden
 fillbiome -79680 40 -63 -79620 41 47 minecraft:pale_garden
 
 
-
+fill -79606 43 -61 -79606 40 -65 minecraft:red_stained_glass
 
