@@ -10,7 +10,7 @@ execute as @n[tag=AzrielBossCenturion] at @s if score @s[scores={Health=300..}] 
 execute as @n[tag=AzrielBossCenturion] at @s if score @s[scores={Health=..299}] rng8 matches 1 unless entity @a[tag=azrPlayer,distance=..5] unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..3
 execute as @n[tag=AzrielBossCenturion] at @s if score @s[scores={Health=..299}] rng8 matches 1 if entity @a[tag=azrPlayer,distance=..5] unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..6
 
-execute as @n[tag=AzrielBossCenturion] at @s if score @s[scores={Health=..299}] rng8 matches 1 store result score @s rng6 run execute if entity @e[type=piglin,distance=..18]
+execute as @n[tag=AzrielBossCenturion] at @s if score @s[scores={Health=..299}] rng8 matches 1 store result score @s rng6 run execute if entity @e[type=piglin,distance=..38]
 execute as @n[tag=AzrielBossCenturion] at @s if score @s[scores={Health=200..299}] rng8 matches 1 if score @s rng6 matches ..1 store result score @s rng6 run random value 20..32
 execute as @n[tag=AzrielBossCenturion] at @s if score @s[scores={Health=..199}] rng8 matches 1 if score @s rng6 matches ..2 store result score @s rng6 run random value 20..29
 execute as @n[tag=AzrielBossCenturion] at @s if score @s[scores={Health=..299}] rng8 matches 1 if score @s rng6 matches 20 rotated ~ 0 positioned ^ ^ ^2 if block ~ ~0.1 ~ air if block ~ ~1.1 ~ air run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_piglin_sword","AzrielMob_summon_delay","AzrielMob_level_1"]}
