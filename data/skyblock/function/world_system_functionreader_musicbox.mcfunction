@@ -50,6 +50,9 @@ execute as @a[tag=!gaming,scores={MultiMenu=101796}] at @s run playsound minecra
 execute as @a[tag=!gaming,scores={MultiMenu=101797}] at @s run playsound minecraft:garden1.sagashimono music @s ~ ~ ~ 1.01
 execute as @a[tag=!gaming,scores={MultiMenu=101798}] at @s run playsound minecraft:renegade music @s ~ ~ ~ 1.01
 execute as @a[tag=!gaming,scores={MultiMenu=101799}] at @s run playsound minecraft:garden1.combathigh music @s ~ ~ ~ 1.01
+execute as @a[tag=!gaming,scores={MultiMenu=101800}] at @s run playsound minecraft:garden1.lanausee music @s ~ ~ ~ 1.01
+execute as @a[tag=!gaming,scores={MultiMenu=101801}] at @s run playsound minecraft:garden1.slowfall_guillotine_prompt music @s ~ ~ ~ 1.01
+execute as @a[tag=!gaming,scores={MultiMenu=101802}] at @s run playsound minecraft:garden1.lifegarden music @s ~ ~ ~ 1.01
 
 execute as @a[tag=!gaming,scores={MultiMenu=101806}] at @s run playsound minecraft:bookstore music @s ~ ~ ~ 1.01
 execute as @a[tag=!gaming,scores={MultiMenu=101805}] at @s run playsound minecraft:autumnmemories music @s ~ ~ ~ 1.01
@@ -68,4 +71,4 @@ execute as @a[tag=!gaming,scores={MultiMenu=101771..101970}] at @s run scoreboar
 #execute as @a[tag=!gaming,scores={MultiMenu=101971..101979}] at @s run function skyblock:menu/index/multimenu120_setting_selectcitybgm_extend2b
 #execute as @a[tag=!gaming,scores={MultiMenu=101980..101981}] at @s run function skyblock:menu/index/multimenu121_setting_selectcitybgm_extend2c
 execute as @a[tag=!gaming,scores={MultiMenu=..101770}] at @s run scoreboard players set @s MultiMenu 0
-execute as @a[tag=!gaming,scores={MultiMenu=101800..}] at @s run scoreboard players set @s MultiMenu 0
+execute as @a[tag=!gaming,scores={MultiMenu=101804..}] at @s run scoreboard players set @s MultiMenu 0
