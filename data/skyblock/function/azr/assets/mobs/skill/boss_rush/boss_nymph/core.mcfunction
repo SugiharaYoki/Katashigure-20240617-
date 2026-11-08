@@ -18,6 +18,6 @@ execute if score @s AzrEntityTimer matches 301..1000 at @s run tellraw @a[tag=az
 execute if score @s[scores={Health=100..}] AzrEntityTimer matches 500.. run scoreboard players set @s AzrEntityTimer 499
 #_____________________
 
-execute if score @s AzrEntityTimer matches ..1000 run function skyblock:azr/assets/mobs/skill/boss_rush/boss5_nymph/core_hostile
+execute if score @s AzrEntityTimer matches ..1000 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_nymph/core_hostile
 
 
