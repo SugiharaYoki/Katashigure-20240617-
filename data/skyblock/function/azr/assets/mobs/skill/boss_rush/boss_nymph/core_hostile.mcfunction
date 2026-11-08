@@ -31,6 +31,8 @@ execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s 
 execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 7 if entity @a[tag=azrPlayer,distance=..9] positioned ^5.6 ^ ^ run function skyblock:azr/assets/mobs/trap_fang_auto
 execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 8 if entity @a[tag=azrPlayer,distance=..9] positioned ^-5.6 ^ ^ run function skyblock:azr/assets/mobs/trap_fang_auto
 
+execute if score @s[scores={Health=..300}] rng1 matches 16 at @s run scoreboard players set @s rng1 28
+
 execute if score @s[scores={Health=..300}] rng1 matches 30 at @s run function skyblock:azr/assets/mobs/skill/boss5_nymph/clone_summon
 execute if score @s[scores={Health=..200}] rng1 matches 40 at @s run function skyblock:azr/assets/mobs/skill/boss5_nymph/clone_summon
 execute if score @s rng1 matches 30 at @s run function skyblock:azr/assets/mobs/skill/boss_legate/move_backstep
@@ -74,6 +76,14 @@ execute if score @s rng1 matches 48 at @s if score @s rng2 matches 5 positioned 
 execute if score @s rng1 matches 48 at @s if score @s rng2 matches 6 positioned -79177 50 -13 run tp @s ~5 ~ ~-5 facing entity @p[tag=azrPlayer]
 execute if score @s rng1 matches 48 at @s if score @s rng2 matches 7 positioned -79177 50 -13 run tp @s ~-5 ~ ~5 facing entity @p[tag=azrPlayer]
 execute if score @s rng1 matches 48 at @s if score @s rng2 matches 8 positioned -79177 50 -13 run tp @s ~-5 ~ ~-5 facing entity @p[tag=azrPlayer]
+execute if score @s rng1 matches 48 at @s[scores={Health=..300}] if score @s rng2 matches 1 positioned -79177 50 -13 positioned ~ ~ ~-5 run function skyblock:azr/assets/mobs/skill/boss5_nymph/clone_summon
+execute if score @s rng1 matches 48 at @s[scores={Health=..300}] if score @s rng2 matches 2 positioned -79177 50 -13 positioned ~ ~ ~5 run function skyblock:azr/assets/mobs/skill/boss5_nymph/clone_summon
+execute if score @s rng1 matches 48 at @s[scores={Health=..300}] if score @s rng2 matches 3 positioned -79177 50 -13 positioned ~-5 ~ ~ run function skyblock:azr/assets/mobs/skill/boss5_nymph/clone_summon
+execute if score @s rng1 matches 48 at @s[scores={Health=..300}] if score @s rng2 matches 4 positioned -79177 50 -13 positioned ~5 ~ ~ run function skyblock:azr/assets/mobs/skill/boss5_nymph/clone_summon
+execute if score @s rng1 matches 48 at @s[scores={Health=..300}] if score @s rng2 matches 5 positioned -79177 50 -13 positioned ~-5 ~ ~-5 run function skyblock:azr/assets/mobs/skill/boss5_nymph/clone_summon
+execute if score @s rng1 matches 48 at @s[scores={Health=..300}] if score @s rng2 matches 6 positioned -79177 50 -13 positioned ~-5 ~ ~5 run function skyblock:azr/assets/mobs/skill/boss5_nymph/clone_summon
+execute if score @s rng1 matches 48 at @s[scores={Health=..300}] if score @s rng2 matches 7 positioned -79177 50 -13 positioned ~5 ~ ~-5 run function skyblock:azr/assets/mobs/skill/boss5_nymph/clone_summon
+execute if score @s rng1 matches 48 at @s[scores={Health=..300}] if score @s rng2 matches 8 positioned -79177 50 -13 positioned ~5 ~ ~5 run function skyblock:azr/assets/mobs/skill/boss5_nymph/clone_summon
 execute if score @s rng1 matches 51 at @s run particle large_smoke ~ ~1 ~ 0.3 0.7 0.3 0.05 8
 execute if score @s rng1 matches 51 at @s run effect clear @s invisibility
 execute if score @s[scores={Health=..630}] rng1 matches 51 at @s store result score @s rng2 run random value 1..10
