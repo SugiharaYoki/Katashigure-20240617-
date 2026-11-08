@@ -93,6 +93,7 @@ execute if score @s AzrEntityTimer matches 825 run tellraw @a[distance=..40,tag=
 execute if score @s AzrEntityTimer matches 820 positioned -79187 50 -13 run tag @e[tag=AzrielMob,distance=..30,type=mannequin] add AzrielMob_BossRush_Target
 execute if score @s AzrEntityTimer matches 820 positioned -79187 50 -13 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
 execute if score @s AzrEntityTimer matches 820..991 positioned -79167 50 -13 as @n[tag=AzrielMob_BossRush_Target,distance=..50,type=mannequin] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_nymph/core
+execute if score @s AzrEntityTimer matches 820..991 positioned -79167 50 -13 as @n[tag=AzrielMob_BossRush_Target,distance=..50,type=mannequin] at @s as @e[tag=AzrielBossVillainNymph,distance=..80,type=villager] run function skyblock:azr/assets/mobs/skill/boss_rush/boss_villain/core_nymph
 
 
 execute if score @s AzrEntityTimer matches 991 as @a[tag=azrPlayer,distance=..100] at @s unless score @s azr_progress_door3 matches 5.. run scoreboard players set @s azr_progress_door3 5

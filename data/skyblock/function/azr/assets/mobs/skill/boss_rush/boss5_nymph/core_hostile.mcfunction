@@ -66,11 +66,15 @@ execute if score @s rng1 matches 48 at @s if score @s rng2 matches 7 positioned 
 execute if score @s rng1 matches 48 at @s if score @s rng2 matches 8 positioned -79177 50 -13 run tp @s ~-5 ~ ~-5 facing entity @p[tag=azrPlayer]
 execute if score @s rng1 matches 51 at @s run particle large_smoke ~ ~1 ~ 0.3 0.7 0.3 0.05 8
 execute if score @s rng1 matches 51 at @s run effect clear @s invisibility
-execute if score @s[scores={Health=..630}] rng1 matches 51 at @s store result score @s rng2 run random value 1..6
-execute if score @s[scores={Health=..630}] rng1 matches 51 at @s if score @s rng2 matches 1 store result score @s rng3 run execute if entity @e[tag=AzrielMob_husk,distance=..50]
-execute if score @s[scores={Health=..630}] rng1 matches 51 at @s if score @s rng2 matches 1 if entity @a[tag=azrPlayer,distance=5..] if score @s rng3 matches ..4 run function skyblock:azr/assets/mobs/husk
-execute if score @s[scores={Health=..350}] rng1 matches 51 at @s if score @s rng2 matches 2 store result score @s rng3 run execute if entity @e[tag=AzrielMob_spider_poison,distance=..50]
-execute if score @s[scores={Health=..350}] rng1 matches 51 at @s if score @s rng2 matches 2 if entity @a[tag=azrPlayer,distance=5..] if score @s rng3 matches ..3 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_spider_poison","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s[scores={Health=..630}] rng1 matches 51 at @s store result score @s rng2 run random value 1..12
+execute if score @s[scores={Health=..630}] rng1 matches 51 at @s if score @s rng2 matches 1..2 store result score @s rng3 run execute if entity @e[tag=AzrielMob_husk,distance=..50]
+execute if score @s[scores={Health=..630}] rng1 matches 51 at @s if score @s rng2 matches 1..2 if entity @a[tag=azrPlayer,distance=5..] if score @s rng3 matches ..4 run function skyblock:azr/assets/mobs/husk
+execute if score @s[scores={Health=..350}] rng1 matches 51 at @s if score @s rng2 matches 3..4 store result score @s rng3 run execute if entity @e[tag=AzrielMob_spider_poison,distance=..50]
+execute if score @s[scores={Health=..350}] rng1 matches 51 at @s if score @s rng2 matches 3..4 if entity @a[tag=azrPlayer,distance=5..] if score @s rng3 matches ..3 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_spider_poison","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s[scores={Health=..630}] rng1 matches 51 at @s if score @s rng2 matches 5 store result score @s rng3 run execute if entity @e[tag=AzrielMob_husk,distance=..50]
+execute if score @s[scores={Health=..630}] rng1 matches 51 at @s if score @s rng2 matches 5 if entity @a[tag=azrPlayer,distance=5..] if score @s rng3 matches ..6 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_villain/summon_nymph
+execute if score @s[scores={Health=..630}] rng1 matches 51 at @s if score @s rng2 matches 5 if entity @a[tag=azrPlayer,distance=5..] if score @s rng3 matches ..6 unless entity @s[tag=azr_called_villain] run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“什么？我真的可以帮上忙？这可太他妈的精彩了。”",color:"white",bold: false}]
+execute if score @s[scores={Health=..630}] rng1 matches 51 at @s if score @s rng2 matches 5 if entity @a[tag=azrPlayer,distance=5..] if score @s rng3 matches ..6 unless entity @s[tag=azr_called_villain] run tag @s add azr_called_villain
 
 execute if score @s rng1 matches 100..110 store result score @s rng1 run random value -20..5
 
