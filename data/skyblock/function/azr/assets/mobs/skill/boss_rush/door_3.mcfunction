@@ -87,6 +87,7 @@ execute if score @s AzrEntityTimer matches 805 run scoreboard players add @s rng
 execute if score @s AzrEntityTimer matches 805 run title @a[distance=..50] times 0t 20t 16t
 execute if score @s AzrEntityTimer matches 805 as @a[tag=azrShowDialog] at @s run title @s title {text:"宁 芙",color: "#da1919",bold:1b}
 execute if score @s AzrEntityTimer matches 805 run stopsound @a[distance=..50] music minecraft:renegade
+execute if score @s AzrEntityTimer matches 805 run stopsound @a[distance=..50]
 execute if score @s AzrEntityTimer matches 820 run scoreboard players set @s rng9 0
 execute if score @s AzrEntityTimer matches 820 positioned -79167 50 -13 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_nymph/summon
 
