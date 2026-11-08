@@ -29,3 +29,23 @@ execute if score @s rng1 matches 51 as @a[distance=..7] run damage @s 8 explosio
 execute if score @s rng1 matches 51 as @a[distance=..8.5] run damage @s 4 explosion
 
 execute if score @s rng1 matches 51.. run kill @s
+
+execute if score @s rng1 matches 1 at @s if entity @n[tag=AzrielNPC_nymph,tag=door,distance=..90] run tag @s add boss_rush_nymph
+execute if entity @s[tag=boss_rush_nymph] if score @s rng1 matches 0..25 at @s store result score @s rng2 run random value 1..12
+execute if entity @s[tag=boss_rush_nymph] if score @s rng1 matches 0..25 at @s if score @s rng2 matches 1 if entity @a[tag=azrPlayer,distance=..10] positioned ^2 ^ ^2 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if entity @s[tag=boss_rush_nymph] if score @s rng1 matches 0..25 at @s if score @s rng2 matches 2 if entity @a[tag=azrPlayer,distance=..10] positioned ^-2 ^ ^2 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if entity @s[tag=boss_rush_nymph] if score @s rng1 matches 0..25 at @s if score @s rng2 matches 3 if entity @a[tag=azrPlayer,distance=..10] positioned ^2 ^ ^-2 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if entity @s[tag=boss_rush_nymph] if score @s rng1 matches 0..25 at @s if score @s rng2 matches 4 if entity @a[tag=azrPlayer,distance=..10] positioned ^-2 ^ ^-2 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if entity @s[tag=boss_rush_nymph] if score @s rng1 matches 0..25 at @s if score @s rng2 matches 5 if entity @a[tag=azrPlayer,distance=..10] positioned ^ ^ ^2.6 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if entity @s[tag=boss_rush_nymph] if score @s rng1 matches 0..25 at @s if score @s rng2 matches 6 if entity @a[tag=azrPlayer,distance=..10] positioned ^ ^ ^-2.6 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if entity @s[tag=boss_rush_nymph] if score @s rng1 matches 0..25 at @s if score @s rng2 matches 7 if entity @a[tag=azrPlayer,distance=..10] positioned ^2.6 ^ ^ run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if entity @s[tag=boss_rush_nymph] if score @s rng1 matches 0..25 at @s if score @s rng2 matches 8 if entity @a[tag=azrPlayer,distance=..10] positioned ^-2.6 ^ ^ run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if entity @s[tag=boss_rush_nymph] if score @s rng1 matches 15..35 at @s store result score @s rng2 run random value 1..12
+execute if entity @s[tag=boss_rush_nymph] if score @s rng1 matches 15..35 at @s if score @s rng2 matches 1 if entity @a[tag=azrPlayer,distance=..10] positioned ^4 ^ ^4 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if entity @s[tag=boss_rush_nymph] if score @s rng1 matches 15..35 at @s if score @s rng2 matches 2 if entity @a[tag=azrPlayer,distance=..10] positioned ^-4 ^ ^4 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if entity @s[tag=boss_rush_nymph] if score @s rng1 matches 15..35 at @s if score @s rng2 matches 3 if entity @a[tag=azrPlayer,distance=..10] positioned ^4 ^ ^-4 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if entity @s[tag=boss_rush_nymph] if score @s rng1 matches 15..35 at @s if score @s rng2 matches 4 if entity @a[tag=azrPlayer,distance=..10] positioned ^-4 ^ ^-4 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if entity @s[tag=boss_rush_nymph] if score @s rng1 matches 15..35 at @s if score @s rng2 matches 5 if entity @a[tag=azrPlayer,distance=..10] positioned ^ ^ ^5.6 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if entity @s[tag=boss_rush_nymph] if score @s rng1 matches 15..35 at @s if score @s rng2 matches 6 if entity @a[tag=azrPlayer,distance=..10] positioned ^ ^ ^-5.6 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if entity @s[tag=boss_rush_nymph] if score @s rng1 matches 15..35 at @s if score @s rng2 matches 7 if entity @a[tag=azrPlayer,distance=..10] positioned ^5.6 ^ ^ run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if entity @s[tag=boss_rush_nymph] if score @s rng1 matches 15..35 at @s if score @s rng2 matches 8 if entity @a[tag=azrPlayer,distance=..10] positioned ^-5.6 ^ ^ run function skyblock:azr/assets/mobs/trap_fang_auto
