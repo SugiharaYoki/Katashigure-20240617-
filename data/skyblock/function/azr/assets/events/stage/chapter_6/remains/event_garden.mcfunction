@@ -238,7 +238,6 @@ execute if score @s rng3 matches 22 if entity @n[tag=AzrielMob_barrier_maintaine
 execute if score @s rng3 matches 23 run fill -79692 36 9 -79692 32 5 minecraft:air destroy
 
 execute if score @s rng3 matches 24 positioned -79699 32 13 run function skyblock:azr/assets/mobs/unique/candle_angel
-execute if score @s rng3 matches 24 positioned -79699 32 15 run function skyblock:azr/assets/mobs/unique/candle_angel
 execute if score @s rng3 matches 24 positioned -79699 32 13 as @e[type=zombie,distance=..50] at @s run effect give @s resistance 50 1 true
 
 execute if score @s rng3 matches 27 positioned -79698 43 19 run particle flame ~ ~1 ~ 0 0 0 0.3 40
@@ -301,7 +300,9 @@ execute if score @s rng4 matches 112 positioned -79652 34 -17 run function skybl
 execute if score @s rng4 matches 115 positioned -79649 34 -19 run function skyblock:azr/assets/mobs/ravager
 
 execute if score @s rng4 matches 125 positioned -79649 34 -18 run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_large
-execute if score @s rng4 matches 125 positioned -79647 34 -18 run function skyblock:azr/assets/mobs/skill/boss_entrance/summon_midgarden
+execute if score @s rng4 matches 125 positioned -79651 34 -18 run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_large
+execute if score @s rng4 matches 125 positioned -79653 34 -18 run function skyblock:azr/assets/events/effects/magic_circle/generic_angel_tp_npc_marinus_moon_large
+execute if score @s rng4 matches 125 positioned -79653 34 -18 run function skyblock:azr/assets/mobs/skill/boss_entrance/summon_midgarden
 execute if score @s rng4 matches 125 positioned -79649 34 -18 run function skyblock:azr/assets/mobs/skill/boss_entrance/summon_midgarden
 execute if score @s rng4 matches 125 positioned -79651 34 -18 run function skyblock:azr/assets/mobs/skill/boss_entrance/summon_midgarden
 
