@@ -11,8 +11,8 @@ execute if score @s rng1 matches 155..158 store result entity @s Motion[0] doubl
 execute if score @s rng1 matches 155..158 store result entity @s Motion[2] double 0.0005 run scoreboard players get @s rng5
 
 # 獠牙期间每 tick 看向最近游戏玩家；后续每层獠牙以当前劳姆位置为圆心。
-execute if score @s rng1 matches 21..77 at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] eyes
-execute if score @s rng1 matches 117..173 at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] eyes
+execute if score @s rng1 matches 21..77 at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
+execute if score @s rng1 matches 117..173 at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
 
 execute if score @s rng1 matches 21 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:0.8}
 execute if score @s rng1 matches 23 at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_fang_ring {radius:1.6}

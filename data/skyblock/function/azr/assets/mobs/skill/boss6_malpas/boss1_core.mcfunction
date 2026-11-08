@@ -28,7 +28,7 @@ execute if score @s rng2 matches 1 at @s run function skyblock:azr/assets/mobs/s
 execute if score @s rng2 matches 2 at @s run function skyblock:azr/assets/mobs/skill/boss6_malpas/boss1_attack_b
 execute if score @s rng2 matches 3 at @s run function skyblock:azr/assets/mobs/skill/boss6_malpas/boss1_attack_c
 execute if score @s rng2 matches 5 at @s run function skyblock:azr/assets/mobs/skill/boss6_malpas/boss1_attack_e
-execute at @s if entity @p[tag=azrPlayer,distance=..100] run rotate @s facing entity @p[tag=azrPlayer,distance=..100] eyes
+execute at @s if entity @p[tag=azrPlayer,distance=..100] run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
 
 # 普通动作和冷却期间独立计时；组合 E 期间暂停额外联动。
 execute unless entity @s[tag=AzrMalpas_combo_e] at @s run function skyblock:azr/assets/mobs/skill/boss6_malpas/boss1_prediction

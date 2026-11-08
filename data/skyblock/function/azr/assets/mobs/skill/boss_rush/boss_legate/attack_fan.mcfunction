@@ -1,6 +1,6 @@
 # 0.5 秒瞄准；随后锁定朝向。NoAI 与清零速度阻止走动。
 data merge entity @s {NoAI:1b,Motion:[0.0d,0.0d,0.0d]}
-execute if score @s rng8 matches 1..10 at @s facing entity @p[tag=azrPlayer,distance=..100] eyes rotated ~ 0 run tp @s ~ ~ ~ ~ 0
+execute if score @s rng8 matches 1..10 at @s facing entity @p[tag=azrPlayer,distance=..100] feet rotated ~ 0 run tp @s ~ ~ ~ ~ 0
 execute if score @s rng8 matches 1..10 rotated as @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_legate/fan_beams {angle:60,negative:-60}
 execute if score @s rng8 matches 11 rotated as @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_legate/fan_beams {angle:59.9333,negative:-59.9333}
 execute if score @s rng8 matches 12 rotated as @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_legate/fan_beams {angle:59.7333,negative:-59.7333}

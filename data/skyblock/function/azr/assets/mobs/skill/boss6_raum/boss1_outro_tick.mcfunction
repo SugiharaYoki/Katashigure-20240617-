@@ -4,8 +4,8 @@ execute if entity @s[tag=AzrBoss6_outro_land] store result score @s rng20 run da
 execute if entity @s[tag=AzrBoss6_outro_land,scores={rng20=40301..}] at @s run tp @s ~ ~-0.3 ~
 execute if entity @s[tag=AzrBoss6_outro_land,scores={rng20=..40300}] at @s run tp @s ~ 40 ~
 execute if entity @s[tag=AzrBoss6_outro_land,scores={rng20=..40300}] run tag @s remove AzrBoss6_outro_land
-execute if entity @s[tag=AzrBoss6_look_player] at @s if entity @p[tag=azrPlayer,distance=..100] run rotate @s facing entity @p[tag=azrPlayer,distance=..100] eyes
-execute if entity @s[tag=AzrBoss6_look_malpas] at @s if entity @n[type=mannequin,tag=AzrielNPC_malpas] run rotate @s facing entity @n[type=mannequin,tag=AzrielNPC_malpas] eyes
+execute if entity @s[tag=AzrBoss6_look_player] at @s if entity @p[tag=azrPlayer,distance=..100] run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
+execute if entity @s[tag=AzrBoss6_look_malpas] at @s if entity @n[type=mannequin,tag=AzrielNPC_malpas] run rotate @s facing entity @n[type=mannequin,tag=AzrielNPC_malpas] feet
 
 # 玛帕斯的 intro_rise 在同一实体更新入口中先执行，40 tick 后移除上升标记。
 execute if entity @s[tag=AzrBoss6_exit_rise,tag=!AzrMalpas_intro_rise] at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/boss1_outro_malpas_leave

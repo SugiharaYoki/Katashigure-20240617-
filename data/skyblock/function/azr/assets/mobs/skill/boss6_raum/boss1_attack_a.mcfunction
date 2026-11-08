@@ -1,8 +1,8 @@
 # A：左音爆 → 右音爆 → 跳跃撒小火柱 → 1.2 秒斧旋风冲刺 → 三次金剑冲刺。
-execute if score @s rng1 matches 21 at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] eyes
+execute if score @s rng1 matches 21 at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
 execute if score @s rng1 matches 21 at @s rotated ~ 0 positioned ^2 ^1 ^ run summon marker ~ ~ ~ {Tags:["AzrRaum_midgarden_sonic","AzrRaum_boss1_attack","AzrielMob_mob_marker"]}
 execute if score @s rng1 matches 21 at @s run playsound minecraft:entity.warden.sonic_charge hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 1.5 1
-execute if score @s rng1 matches 35 at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] eyes
+execute if score @s rng1 matches 35 at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
 execute if score @s rng1 matches 35 at @s rotated ~ 0 positioned ^-2 ^1 ^ run summon marker ~ ~ ~ {Tags:["AzrRaum_midgarden_sonic","AzrRaum_boss1_attack","AzrielMob_mob_marker"]}
 execute if score @s rng1 matches 35 at @s run playsound minecraft:entity.warden.sonic_charge hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 1.5 1
 
