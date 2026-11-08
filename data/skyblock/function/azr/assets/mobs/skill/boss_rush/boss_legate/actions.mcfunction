@@ -1,8 +1,8 @@
 scoreboard players add @s rng8 1
 # 每轮在 1 记数；普通招式保留换算后的第 5 tick 起手。
 execute if entity @s[tag=Phase_2] if score @s rng8 matches 1 run scoreboard players add @s rng18 1
-execute if entity @s[tag=Phase_2] if score @s rng8 matches 1 if score @s rng18 matches 5.. run scoreboard players set @s rng2 10
-execute if entity @s[tag=Phase_2] if score @s rng8 matches 1 if score @s rng18 matches 5.. run scoreboard players set @s rng18 0
+execute if entity @s[tag=Phase_2] if score @s rng8 matches 1 if score @s rng18 matches 3.. run scoreboard players set @s rng2 10
+execute if entity @s[tag=Phase_2] if score @s rng8 matches 1 if score @s rng18 matches 3.. run scoreboard players set @s rng18 0
 execute if score @s[scores={Health=300..}] rng8 matches 5 unless entity @a[tag=azrPlayer,distance=..5] unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 2..3
 execute if score @s[scores={Health=300..}] rng8 matches 5 if entity @a[tag=azrPlayer,distance=..5] unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 2..6
 execute if score @s[scores={Health=..299}] rng8 matches 5 unless entity @a[tag=azrPlayer,distance=..5] unless entity @s[scores={rng2=1..}] store result score @s rng2 run random value 1..3
