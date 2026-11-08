@@ -111,7 +111,7 @@ execute if score @s AzrEntityTimer matches 991 run effect give @a[distance=..150
 
 execute if score @s AzrEntityTimer matches 991 run data modify entity @n[tag=AzrielMob_BossRush_Target,distance=..50,type=mannequin] Invulnerable set value 1b
 execute if score @s AzrEntityTimer matches 1011 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"宁芙：",color:"green",bold:1b},{bold: false,text:"\n“能够与爱理莎相爱，我们感到很幸福。”",color:"white"}]
-execute if score @s AzrEntityTimer matches 1061 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"宁芙：",color:"green",bold:1b},{bold: false,text:"\n“很遗憾我们不能爱爱理莎，但我们会祝福爱理莎。”",color:"white"}]
+execute if score @s AzrEntityTimer matches 1061 run tellraw @a[tag=azrShowDialog,distance=..20] [{text:"宁芙：",color:"green",bold:1b},{bold: false,text:"\n“我们不能继续爱你……这太遗憾了，但我们会永远祝福爱理莎。”",color:"white"}]
 
 execute if score @s AzrEntityTimer matches 1122 as @a[tag=azrPlayer,distance=..50] at @s unless score @s azr_speedrun_door3 matches -9999.. run scoreboard players set @s azr_speedrun_door3 99999
 execute if score @s AzrEntityTimer matches 1122 as @a[tag=azrPlayer,distance=..50] at @s if score @s azr_speedrun_door3 >= @n[x=-79177,y=50,z=-13,tag=AzrielMarker_encounter] rng10 run scoreboard players operation @s azr_speedrun_door3 = @n[x=-79177,y=50,z=-13,tag=AzrielMarker_encounter] rng10
