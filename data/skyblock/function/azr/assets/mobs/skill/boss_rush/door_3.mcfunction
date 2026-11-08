@@ -87,11 +87,12 @@ execute if score @s AzrEntityTimer matches 805 run title @a[distance=..50] times
 execute if score @s AzrEntityTimer matches 805 as @a[tag=azrShowDialog] at @s run title @s title {text:"宁 芙",color: "#da1919",bold:1b}
 execute if score @s AzrEntityTimer matches 805 run stopsound @a[distance=..50] music minecraft:renegade
 execute if score @s AzrEntityTimer matches 820 run scoreboard players set @s rng9 0
-execute if score @s AzrEntityTimer matches 820 positioned -79167 50 -13 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_amy/summon
+execute if score @s AzrEntityTimer matches 820 positioned -79167 50 -13 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_nymph/summon
 
-execute if score @s AzrEntityTimer matches 820 positioned -79187 50 -13 run tag @e[tag=AzrielMob,distance=..30,type=piglin_brute] add AzrielMob_BossRush_Target
+execute if score @s AzrEntityTimer matches 825 run tellraw @a[distance=..40,tag=azrShowDialog,tag=!azr_killed_nymph] [{text:"宁芙：",color:"green",bold:1b},{text:"\n“让我们来……与你战斗。”",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 820 positioned -79187 50 -13 run tag @e[tag=AzrielMob,distance=..30,type=mannequin] add AzrielMob_BossRush_Target
 execute if score @s AzrEntityTimer matches 820 positioned -79187 50 -13 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
-execute if score @s AzrEntityTimer matches 820..991 positioned -79167 50 -13 as @n[tag=AzrielMob_BossRush_Target,distance=..50,type=piglin_brute] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_amy/core
+execute if score @s AzrEntityTimer matches 820..991 positioned -79167 50 -13 as @n[tag=AzrielMob_BossRush_Target,distance=..50,type=mannequin] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_nymph/core
 
 
 execute if score @s AzrEntityTimer matches 991 as @a[tag=azrPlayer,distance=..100] at @s unless score @s azr_progress_door3 matches 5.. run scoreboard players set @s azr_progress_door3 5
