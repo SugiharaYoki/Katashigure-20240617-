@@ -11,7 +11,7 @@ execute if score @s[scores={Health=..730}] rng1 matches 11 at @s run summon mark
 
 execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s store result score @s rng2 run random value 1..24
 execute if score @s[scores={Health=..300}] rng1 matches 0..15 at @s store result score @s rng2 run random value 1..16
-execute if score @s[scores={Health=..150}] rng1 matches 0..15 at @s store result score @s rng2 run random value 1..12
+execute if score @s[scores={Health=..200}] rng1 matches 0..15 at @s store result score @s rng2 run random value 1..12
 execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 1 if entity @a[tag=azrPlayer,distance=..9] positioned ^2 ^ ^2 run function skyblock:azr/assets/mobs/trap_fang_auto
 execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 2 if entity @a[tag=azrPlayer,distance=..9] positioned ^-2 ^ ^2 run function skyblock:azr/assets/mobs/trap_fang_auto
 execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 3 if entity @a[tag=azrPlayer,distance=..9] positioned ^2 ^ ^-2 run function skyblock:azr/assets/mobs/trap_fang_auto
@@ -20,6 +20,16 @@ execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s 
 execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 6 if entity @a[tag=azrPlayer,distance=..9] positioned ^ ^ ^-2.6 run function skyblock:azr/assets/mobs/trap_fang_auto
 execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 7 if entity @a[tag=azrPlayer,distance=..9] positioned ^2.6 ^ ^ run function skyblock:azr/assets/mobs/trap_fang_auto
 execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 8 if entity @a[tag=azrPlayer,distance=..9] positioned ^-2.6 ^ ^ run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..300}] rng1 matches 0..15 at @s store result score @s rng2 run random value 1..16
+execute if score @s[scores={Health=..200}] rng1 matches 0..15 at @s store result score @s rng2 run random value 1..12
+execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 1 if entity @a[tag=azrPlayer,distance=..9] positioned ^4 ^ ^4 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 2 if entity @a[tag=azrPlayer,distance=..9] positioned ^-4 ^ ^4 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 3 if entity @a[tag=azrPlayer,distance=..9] positioned ^4 ^ ^-4 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 4 if entity @a[tag=azrPlayer,distance=..9] positioned ^-4 ^ ^-4 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 5 if entity @a[tag=azrPlayer,distance=..9] positioned ^ ^ ^5.6 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 6 if entity @a[tag=azrPlayer,distance=..9] positioned ^ ^ ^-5.6 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 7 if entity @a[tag=azrPlayer,distance=..9] positioned ^5.6 ^ ^ run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 8 if entity @a[tag=azrPlayer,distance=..9] positioned ^-5.6 ^ ^ run function skyblock:azr/assets/mobs/trap_fang_auto
 
 execute if score @s[scores={Health=..300}] rng1 matches 30 at @s run function skyblock:azr/assets/mobs/skill/boss5_nymph/clone_summon
 execute if score @s[scores={Health=..200}] rng1 matches 40 at @s run function skyblock:azr/assets/mobs/skill/boss5_nymph/clone_summon
