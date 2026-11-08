@@ -12,8 +12,8 @@ execute if score @s AzrEntityTimer matches 1..1999 run scoreboard players add @s
 execute if score @s AzrEntityTimer matches ..799 if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:renegade music @s ~ ~ ~ 0.65
 execute if score @s AzrEntityTimer matches ..799 if score @s rng9 matches 2820.. run scoreboard players set @s rng9 0
 
-execute if score @s AzrEntityTimer matches 825.. if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:surveilleretpunir music @s ~ ~ ~ 0.65
-execute if score @s AzrEntityTimer matches 825.. if score @s rng9 matches 2850.. run scoreboard players set @s rng9 0
+execute if score @s AzrEntityTimer matches 825.. if score @s rng9 matches 3 as @a[tag=azrShowDialog] at @s run playsound minecraft:surveilleretpunir music @s ~ ~ ~ 0.65
+execute if score @s AzrEntityTimer matches 825.. if score @s rng9 matches 2852.. run scoreboard players set @s rng9 0
 
 execute if score @s AzrEntityTimer matches 2 run scoreboard players set @s rng11 0
 
