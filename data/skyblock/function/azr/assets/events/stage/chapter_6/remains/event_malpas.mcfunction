@@ -15,8 +15,8 @@ execute if score @s rng1 matches 21 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 22 at @n[tag=AzrielNPC_malpas] if entity @a[tag=azrPlayer,distance=..5,scores={Azr_skillPoints=53..}] run scoreboard players set @s rng1 35
 execute if score @s rng1 matches 35 run tellraw @a[tag=azrShowDialog] [{text:"预言家 玛帕斯：",color:"#9c101e",bold:1b},{bold: false,text:"\n“原来如此……你对自己能做到什么一无所知。不过，我等会使你永远不得事成。”",color:"white"}]
 execute if score @s rng1 matches 36 at @n[tag=AzrielNPC_malpas] if entity @a[tag=azrPlayer,distance=..5,scores={Azr_skillPoints=53..}] run scoreboard players set @s rng1 50
-execute if score @s rng1 matches 50 as @a[tag=azrShowDialog] at @s run stopsound @s music
-execute if score @s rng1 matches 50 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden1.combathigh music @s ~ ~ ~ 0.65
+execute if score @s rng1 matches 51 at @n[tag=AzrielNPC_malpas] as @a[tag=azrShowDialog] at @s run stopsound @s music
+execute if score @s rng1 matches 51 at @n[tag=AzrielNPC_malpas] as @a[tag=azrShowDialog] at @s run playsound minecraft:garden1.combathigh music @s ~ ~ ~ 0.65
 execute if score @s rng1 matches 51 at @n[tag=AzrielNPC_malpas] if entity @a[tag=azrPlayer,distance=..5,scores={Azr_skillPoints=53..}] run scoreboard players set @s rng1 58
 
 execute if score @s rng1 matches 58 run tellraw @a[tag=azrShowDialog] [{text:"预言家 玛帕斯：",color:"#9c101e",bold:1b},{bold: false,text:"\n“我们之间不该产生闲聊，你的使命到此为止。”",color:"white"}]
