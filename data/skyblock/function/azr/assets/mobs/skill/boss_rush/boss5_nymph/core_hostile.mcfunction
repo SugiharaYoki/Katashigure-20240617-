@@ -55,11 +55,15 @@ execute if score @s[scores={Health=..700}] rng8 matches 45 at @s store result sc
 execute if score @s[scores={Health=..700}] rng1 matches 45 at @s if score @s rng2 matches 1..2 run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_mossflora_spore_marker","AzrielMob_mob_marker"]}
 execute if score @s[scores={Health=..700}] rng1 matches 45 at @s if score @s rng2 matches 1 run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_mossflora_spore_marker","AzrielMob_mob_marker"]}
 
-execute if score @s rng1 matches 48 at @s store result score @s rng2 run random value 1..4
-execute if score @s rng1 matches 48 at @s if score @s rng2 matches 1 positioned -79791 187 -530 run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
-execute if score @s rng1 matches 48 at @s if score @s rng2 matches 2 positioned -79791 187 -537 run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
-execute if score @s rng1 matches 48 at @s if score @s rng2 matches 3 positioned -79789 188 -523 run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
-execute if score @s rng1 matches 48 at @s if score @s rng2 matches 4 positioned -79792 188 -518 run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+execute if score @s rng1 matches 48 at @s store result score @s rng2 run random value 1..8
+execute if score @s rng1 matches 48 at @s if score @s rng2 matches 1 positioned -79177 50 -13 run tp @s ~ ~ ~5 facing entity @p[tag=azrPlayer]
+execute if score @s rng1 matches 48 at @s if score @s rng2 matches 2 positioned -79177 50 -13 run tp @s ~ ~ ~-5 facing entity @p[tag=azrPlayer]
+execute if score @s rng1 matches 48 at @s if score @s rng2 matches 3 positioned -79177 50 -13 run tp @s ~5 ~ ~ facing entity @p[tag=azrPlayer]
+execute if score @s rng1 matches 48 at @s if score @s rng2 matches 4 positioned -79177 50 -13 run tp @s ~-5 ~ ~ facing entity @p[tag=azrPlayer]
+execute if score @s rng1 matches 48 at @s if score @s rng2 matches 5 positioned -79177 50 -13 run tp @s ~5 ~ ~5 facing entity @p[tag=azrPlayer]
+execute if score @s rng1 matches 48 at @s if score @s rng2 matches 6 positioned -79177 50 -13 run tp @s ~5 ~ ~-5 facing entity @p[tag=azrPlayer]
+execute if score @s rng1 matches 48 at @s if score @s rng2 matches 7 positioned -79177 50 -13 run tp @s ~-5 ~ ~5 facing entity @p[tag=azrPlayer]
+execute if score @s rng1 matches 48 at @s if score @s rng2 matches 8 positioned -79177 50 -13 run tp @s ~-5 ~ ~-5 facing entity @p[tag=azrPlayer]
 execute if score @s rng1 matches 51 at @s run particle large_smoke ~ ~1 ~ 0.3 0.7 0.3 0.05 8
 execute if score @s rng1 matches 51 at @s run effect clear @s invisibility
 execute if score @s[scores={Health=..630}] rng1 matches 51 at @s store result score @s rng2 run random value 1..6
