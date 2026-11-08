@@ -23,7 +23,7 @@ execute if score @s AzrEntityTimer matches 230..399 if entity @n[tag=AzrielMob_B
 execute if score @s AzrEntityTimer matches 590..599 if entity @n[tag=AzrielMob_BossRush_Target,distance=..300] run scoreboard players set @s AzrEntityTimer 590
 execute if score @s AzrEntityTimer matches 780..799 if entity @n[tag=AzrielMob_BossRush_Target,distance=..300] run scoreboard players set @s AzrEntityTimer 790
 execute if score @s AzrEntityTimer matches 830..999 if entity @n[tag=AzrielMob_BossRush_Target,distance=..300,scores={Health=100..}] unless entity @p[distance=..200,tag=azrPlayer,tag=azr_killed_nymph] run scoreboard players set @s AzrEntityTimer 990
-execute if score @s AzrEntityTimer matches 830..999 if entity @n[tag=AzrielMob_BossRush_Target,distance=..300] unless entity @p[distance=..200,tag=azrPlayer,tag=azr_killed_nymph] run scoreboard players set @s AzrEntityTimer 1121
+execute if score @s AzrEntityTimer matches 830..999 unless entity @n[tag=AzrielMob_BossRush_Target,distance=..300] run scoreboard players set @s AzrEntityTimer 1121
 
 execute if score @s AzrEntityTimer matches 5 positioned -79167 50 -19 run tag @a[tag=azrPlayer,distance=..70] add azrPlayer_door_participating
 
@@ -91,8 +91,8 @@ execute if score @s AzrEntityTimer matches 820 run scoreboard players set @s rng
 execute if score @s AzrEntityTimer matches 820 positioned -79167 50 -13 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_nymph/summon
 
 execute if score @s AzrEntityTimer matches 825 run tellraw @a[distance=..40,tag=azrShowDialog,tag=!azr_killed_nymph] [{text:"宁芙：",color:"green",bold:1b},{text:"\n“让我们来……与你战斗。”",color:"white",bold: false}]
-execute if score @s AzrEntityTimer matches 820 positioned -79187 50 -13 run tag @e[tag=AzrielMob,distance=..30,type=mannequin] add AzrielMob_BossRush_Target
-execute if score @s AzrEntityTimer matches 820 positioned -79187 50 -13 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
+execute if score @s AzrEntityTimer matches 820 positioned -79167 50 -13 run tag @e[tag=AzrielMob,distance=..30,type=mannequin] add AzrielMob_BossRush_Target
+execute if score @s AzrEntityTimer matches 820 positioned -79167 50 -13 as @e[tag=AzrielMob,distance=..30] run data modify entity @s DeathLootTable set value "skyblock:null"
 execute if score @s AzrEntityTimer matches 820..991 positioned -79167 50 -13 as @n[tag=AzrielMob_BossRush_Target,distance=..50,type=mannequin] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_nymph/core
 execute if score @s AzrEntityTimer matches 820..991 positioned -79167 50 -13 as @n[tag=AzrielMob_BossRush_Target,distance=..50,type=mannequin] at @s as @e[tag=AzrielBossVillainNymph,distance=..80,type=villager] run function skyblock:azr/assets/mobs/skill/boss_rush/boss_villain/core_nymph
 execute if score @s AzrEntityTimer matches 820..991 positioned -79167 50 -13 as @n[tag=AzrielMob_BossRush_Target,distance=..50,type=mannequin] at @s as @e[tag=AzrielNPC_nymph_clone,distance=..200] run function skyblock:azr/assets/mobs/skill/boss5_nymph/clone_core
@@ -137,7 +137,7 @@ execute if score @s AzrEntityTimer matches 1122 run forceload add ~ ~
 
 execute if score @s AzrEntityTimer matches ..1121 unless entity @a[tag=azrPlayer,distance=..60] run scoreboard players set @s AzrEntityTimer 1900
 
-execute if score @s AzrEntityTimer matches 1122 as @a[tag=azrShowDialog,distance=..150] at @s run tp @s -79967 -51 17 facing -79968 -51 17
+execute if score @s AzrEntityTimer matches 1122 as @a[tag=azrShowDialog,distance=..150] at @s run tp @s -79968 -51 17 facing -79969 -51 17
 execute if score @s AzrEntityTimer matches 1123 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s run playsound minecraft:entity.creaking.death player @s ~ ~ ~ 1 0.8
 execute if score @s AzrEntityTimer matches 1123 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s run playsound minecraft:item.chorus_fruit.teleport player @s ~ ~ ~ 1 0.7
 execute if score @s AzrEntityTimer matches 1123 positioned -79967 -51 17 as @a[tag=azrPlayer,distance=..20] at @s run particle portal ~ ~1 ~ 0.3 0.8 0.3 0.02 50
