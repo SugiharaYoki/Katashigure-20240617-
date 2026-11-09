@@ -3,10 +3,10 @@
 attribute @s minecraft:movement_speed modifier remove azr:parry
 effect clear @s resistance
 
-execute if entity @s[scores={AZR_chainKillUpg_defensecharge=1}] store result score #random Azr_system run random value 20..100
-execute if entity @s[scores={AZR_chainKillUpg_defensecharge=2}] store result score #random Azr_system run random value 40..150
-execute if entity @s[scores={AZR_chainKillUpg_defensecharge=3}] store result score #random Azr_system run random value 60..200
-execute if entity @s[scores={AZR_chainKillUpg_defensecharge=4}] store result score #random Azr_system run random value 80..250
+execute if entity @s[scores={AZR_chainKillUpg_defensecharge=1}] store result score #random Azr_system run random value 70..100
+execute if entity @s[scores={AZR_chainKillUpg_defensecharge=2}] store result score #random Azr_system run random value 90..150
+execute if entity @s[scores={AZR_chainKillUpg_defensecharge=3}] store result score #random Azr_system run random value 110..200
+execute if entity @s[scores={AZR_chainKillUpg_defensecharge=4}] store result score #random Azr_system run random value 130..250
 execute if entity @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_defensecharge=1..}] run scoreboard players operation @s AZR_chainKill_chargeup += #random Azr_system
 
 execute anchored eyes run function skyblock:sea/p/parry_particle
