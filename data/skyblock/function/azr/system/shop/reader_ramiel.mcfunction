@@ -200,6 +200,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_pollution_analy
 execute if items entity @s container.* *[custom_data~{azr_amulet_double_arrow:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop05] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_savior:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop06] CustomName set value ' √ '
 execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_master:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop07] CustomName set value ' √ '
+execute if items entity @s container.* *[custom_data~{azr_amulet_moss_master:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop12] CustomName set value ' √ '
 #execute if items entity @s container.* *[custom_data~{azr_amulet_:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop07] CustomName set value ' √ '
 #execute if items entity @s container.* *[custom_data~{azr_amulet_:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerShop08] CustomName set value ' √ '
 

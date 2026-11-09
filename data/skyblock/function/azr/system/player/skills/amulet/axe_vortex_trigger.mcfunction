@@ -42,7 +42,7 @@ execute if entity @s[tag=AZR_Amulet_Instant_Success,predicate=skyblock:right] if
 execute if entity @s[tag=AZR_Amulet_Instant_Success,predicate=skyblock:right] if score @s rng1 matches 7 run summon marker ~ ~ ~ {Tags:["AzrielMob_amulet_skill_axevortex","AzrielMob_amulet_skill","AzrielMob_level_7","toward_right"]}
 
 
-execute if items entity @s container.* *[custom_data~{azr_amulet_storm_spot:1b}] run tag @n[tag=AzrielMob_amulet_skill_axevortex] add azr_wind_spot
+execute if items entity @s container.* *[custom_data~{azr_amulet_storm_spot:1b}] run tag @n[tag=AzrielMob_amulet_skill_axevortex] add azr_storm_spot
 
 
 
