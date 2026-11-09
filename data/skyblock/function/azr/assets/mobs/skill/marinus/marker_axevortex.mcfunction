@@ -1,7 +1,8 @@
 
 
 scoreboard players add @s rng1 1
-
+execute if score @s rng1 matches 2 run scoreboard players set @s rng16 1
+execute if score @s rng1 matches 2 if items entity @a[tag=azrPlayer,distance=..8] container.* *[custom_data~{azr_amulet_storm_spot:1b}] run scoreboard players add @s rng16 1
 
 
 
@@ -25,7 +26,12 @@ execute if score @s rng1 matches 17.. rotated 0 0 run playsound minecraft:entity
 execute if score @s rng1 matches 17.. rotated 0 0 run playsound entity.player.attack.sweep player @a ~ ~ ~ 0.8 1.6
 execute if score @s[tag=!AzrielFriendly] rng1 matches 17.. as @a[tag=azrPlayer,distance=..1.8] run damage @s 6 mob_attack
 execute if score @s[tag=AzrielFriendly,tag=!PlayerReleased] rng1 matches 17.. as @e[tag=AzrielMob,distance=..2.8] run damage @s 14 mob_attack
-execute if score @s[tag=AzrielFriendly,tag=PlayerReleased] rng1 matches 17.. as @e[tag=AzrielMob,distance=..3.1] run damage @s 5 mob_attack
+
+
+execute if score @s[tag=AzrielFriendly,tag=PlayerReleased,scores={rng16=1}] rng1 matches 17.. as @e[tag=AzrielMob,distance=..3.1] run damage @s 5 mob_attack
+execute if score @s[tag=AzrielFriendly,tag=PlayerReleased,scores={rng16=2}] rng1 matches 17.. as @e[tag=AzrielMob,distance=..3.1] run damage @s 7 mob_attack
+execute if score @s[tag=AzrielFriendly,tag=PlayerReleased,scores={rng16=3..}] rng1 matches 17.. as @e[tag=AzrielMob,distance=..3.1] run damage @s 9 mob_attack
+
 execute if score @s rng1 matches 17.. store result score @s rng2 run random value 1..18
 execute if score @s rng1 matches 17.. if score @s rng2 matches 1 rotated 000 0 positioned ^ ^0.1 ^0.7 run particle sweep_attack ~ ~ ~ 0.1 0.3 0.1 0 1
 execute if score @s rng1 matches 17.. if score @s rng2 matches 2 rotated 020 0 positioned ^ ^0.1 ^0.7 run particle sweep_attack ~ ~ ~ 0.1 0.3 0.1 0 1

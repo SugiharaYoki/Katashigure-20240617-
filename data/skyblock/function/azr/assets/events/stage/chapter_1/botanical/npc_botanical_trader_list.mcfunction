@@ -26,6 +26,8 @@ $execute if score azr_botanical_shop Azr_Shop_rng$(number) matches 13 as @a[dist
      [{text:" - "},{text:"索命护石  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/60 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431583"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n造成伤害时，增加索命连击充能。\n除此之外，索命连击触发时，获得1秒的无敌。",color:"white"}}}]
 $execute if score azr_botanical_shop Azr_Shop_rng$(number) matches 14 as @a[distance=0..13,tag=azrPlayer] at @s run tellraw @s \
      [{text:" - "},{text:"污染护石  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/60 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431586"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n造成重金属伤害时，增加索命连击充能。\n除此之外，苔藓领域可以对怪物造成重金属伤害。",color:"white"}}}]
+$execute if score azr_botanical_shop Azr_Shop_rng$(number) matches 15 as @a[distance=0..13,tag=azrPlayer] at @s run tellraw @s \
+     [{text:" - "},{text:"风暴护石  ",color:"#306fc2"},{"score":{"name":"@s","objective":"Azr_currency_weight"},color:"#cab9ff"},{text:"/80 恶魔砝码 ",color:"#cab9ff"},{text:"〈◆〉",bold:1b,color:"green",click_event:{"action":"run_command","command":"trigger Azr_Shop set 8431587"},hover_event:{"action":"show_text","value":{text:"背包常效装备\n增强多种风伤常效装备的效果。",color:"white"}}}]
 
 
 
