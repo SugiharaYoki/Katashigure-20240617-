@@ -21,10 +21,10 @@ execute if score @s rng1 matches 8.. run particle bubble ~ ~ ~ 0.1 0.1 0.1 0.6 5
 execute if score @s rng1 matches 8.. run particle small_gust ~ ~ ~ 0.1 0.1 0.1 0.0 1
 
 execute if score @s rng1 matches 8.. if entity @n[tag=AzrielMob,distance=..0.4] run playsound minecraft:entity.breeze.shoot player @a ~ ~ ~ 1 0.7
-execute if score @s[tag=AzrielMob_level_1] rng1 matches 8.. if entity @n[tag=AzrielMob,distance=..0.4] as @n[tag=AzrielMob,distance=..0.7] run damage @s 9 wind_charge by @p[tag=azrPlayer]
-execute if score @s[tag=AzrielMob_level_1] rng1 matches 8.. if entity @n[tag=AzrielMob,distance=..0.4] as @n[tag=AzrielMob,distance=0.7..1.2] run damage @s 5 wind_charge by @p[tag=azrPlayer]
-execute if score @s[tag=AzrielMob_level_2] rng1 matches 8.. if entity @n[tag=AzrielMob,distance=..0.4] as @n[tag=AzrielMob,distance=..1.0] run damage @s 9 wind_charge by @p[tag=azrPlayer]
-execute if score @s[tag=AzrielMob_level_2] rng1 matches 8.. if entity @n[tag=AzrielMob,distance=..0.4] as @n[tag=AzrielMob,distance=1.0..1.5] run damage @s 5 wind_charge by @p[tag=azrPlayer]
+execute if score @s[tag=AzrielMob_level_1] rng1 matches 8.. if entity @n[tag=AzrielMob,distance=..0.4] as @n[tag=AzrielMob,distance=..0.7] run damage @s 12 wind_charge by @p[tag=azrPlayer]
+execute if score @s[tag=AzrielMob_level_1] rng1 matches 8.. if entity @n[tag=AzrielMob,distance=..0.4] as @n[tag=AzrielMob,distance=0.7..1.2] run damage @s 7 wind_charge by @p[tag=azrPlayer]
+execute if score @s[tag=AzrielMob_level_2] rng1 matches 8.. if entity @n[tag=AzrielMob,distance=..0.4] as @n[tag=AzrielMob,distance=..1.0] run damage @s 12 wind_charge by @p[tag=azrPlayer]
+execute if score @s[tag=AzrielMob_level_2] rng1 matches 8.. if entity @n[tag=AzrielMob,distance=..0.4] as @n[tag=AzrielMob,distance=1.0..1.5] run damage @s 7 wind_charge by @p[tag=azrPlayer]
 execute if score @s rng1 matches 8.. if entity @n[tag=AzrielMob,distance=..0.4] run scoreboard players add @s rng1 9999
 
 
