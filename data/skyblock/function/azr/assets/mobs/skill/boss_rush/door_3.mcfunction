@@ -46,6 +46,7 @@ execute if score @s AzrEntityTimer matches 205 run title @a[distance=..50] title
 execute if score @s AzrEntityTimer matches 215 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“为什么非得是我？妈的，看来只能把你打服了。”",color:"white",bold: false}]
 execute if score @s AzrEntityTimer matches 235 run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“我这回可不会放水了！”",color:"white",bold: false}]
 
+
 execute if score @s AzrEntityTimer matches 205 positioned -79167 50 -13 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
 execute if score @s AzrEntityTimer matches 220 positioned -79167 50 -13 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_villain/summon
 execute if score @s AzrEntityTimer matches 220 positioned -79187 50 -13 run tag @e[tag=AzrielMob,distance=..30,type=villager] add AzrielMob_BossRush_Target

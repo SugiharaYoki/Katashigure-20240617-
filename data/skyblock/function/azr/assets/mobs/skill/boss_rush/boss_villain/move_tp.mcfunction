@@ -21,6 +21,7 @@ execute if score @s rng8 matches 3 as @s at @s run particle reverse_portal ~ ~1 
 execute if score @s rng8 matches 3 as @s at @s run playsound entity.player.teleport hostile @a ~ ~ ~ 1 1.2
 
 
+execute if score @s rng8 matches 3.. at @s rotated as @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^ ^1.3 ^5 0 0 0 0 1
 execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^ ^1.3 ^6 0 0 0 0 1
 execute if score @s rng8 matches 3.. at @s rotated as @s run particle minecraft:end_rod ^ ^1.3 ^7 0 0 0 0 1
