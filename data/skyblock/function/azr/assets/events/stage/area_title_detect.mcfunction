@@ -34,7 +34,7 @@ execute unless score @s AzrPlayer_CurrentArea matches 8 if entity @s[x=-79970,y=
 
 
 
-execute unless score stage Azr_system matches 100..20 unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79965,y=37,z=-17,dx=5,dy=5,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
+execute unless score stage Azr_system matches 100..200 unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79965,y=37,z=-17,dx=5,dy=5,dz=5] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
 execute unless score stage Azr_system matches 100..200 unless score @s AzrPlayer_CurrentArea matches 1 if entity @s[x=-79933,y=38,z=98,dx=5,dy=5,dz=3] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:1,title:"西 庭 外 围",color_code:"#e9ffe0"}
@@ -97,6 +97,7 @@ execute unless score @s AzrPlayer_CurrentArea matches 3 if entity @s[x=-79917,y=
                                                 {area_id:3,title:"传 热 根 系",color_code:"#5e4e80"}
 execute unless score @s AzrPlayer_CurrentArea matches 3 if entity @s[x=-79953,y=28,z=153,dx=6,dy=6,dz=8] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:3,title:"传 热 根 系",color_code:"#5e4e80"}
+
 
 
 execute unless score @s AzrPlayer_CurrentArea matches 4 if entity @s[x=-79890,y=42,z=161,dx=7,dy=7,dz=7] run function skyblock:azr/assets/events/stage/area_title_show \
