@@ -88,7 +88,7 @@ execute if score @s rng1 matches 10030 run tag @n[type=mannequin,tag=AzrielNPC_m
 execute if score @s rng1 matches 10030 as @n[type=mannequin,tag=AzrielNPC_malpas] run data merge entity @s {NoGravity:1b,Motion:[0.0d,0.0d,0.0d]}
 execute if score @s rng1 matches 10030 run tag @n[type=mannequin,tag=AzrielNPC_malpas] add AzrBoss6_look_player
 execute if score @s rng1 matches 10045 run tellraw @a[tag=azrShowDialog] [{text:"渡鸦 劳姆：",color:"#fff050",bold:1b},{bold: false,text:"\n“玛帕斯，这又是玩的哪一出？”",color:"white"}]
-execute if score @s rng1 matches 10045 run bossbar remove azr:boss_hp_bar_2z
+execute if score @s rng1 matches 10045 run bossbar remove azr:boss_hp_bar_2
 # 劳姆结束战斗；停止习性、清除仍在场上的攻击，并消除残留冲刺和缓降。
 execute if score @s rng1 matches 10045 run tag @n[type=mannequin,tag=AzrielNPC_raum] add AzrBoss6_outro
 execute if score @s rng1 matches 10045 run tag @n[type=mannequin,tag=AzrielNPC_raum] add AzrBoss6_outro_land
