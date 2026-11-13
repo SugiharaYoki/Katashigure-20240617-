@@ -13,6 +13,6 @@ execute if entity @s[scores={rng1=22}] positioned -79939 29 202 run summon marke
 
 
 
-
+#原声带
 execute store result score @s rng15 run random value 1..150
 execute if score @s rng15 matches 1 as @a[tag=azrPlayer,scores={AzrPlayer_CurrentArea=3}] at @s run playsound minecraft:garden1.heatroot.se music @s ~ ~ ~ 0.7 1.0
