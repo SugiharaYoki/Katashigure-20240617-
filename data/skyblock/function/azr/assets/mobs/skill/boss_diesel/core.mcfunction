@@ -11,7 +11,8 @@ execute if score @s rng9 matches 2860.. run scoreboard players set @s rng9 0
 #EVENT
 
 execute if score @s AzrEntityTimer matches 1 run fill -79997 25 201 -79997 30 199 minecraft:red_stained_glass replace air
-
+#原声带
+execute if score @s AzrEntityTimer matches 1 run stopsound @s music minecraft:garden1.heatroot.bgm1
 execute if score @s AzrEntityTimer matches 8 run setblock -80002 27 208 fire
 execute if score @s AzrEntityTimer matches 16 run setblock -80020 27 208 fire
 execute if score @s AzrEntityTimer matches 24 run setblock -80020 27 192 fire
