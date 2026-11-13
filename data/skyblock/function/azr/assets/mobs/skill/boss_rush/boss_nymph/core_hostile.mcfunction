@@ -9,47 +9,49 @@ execute if score @s[scores={Health=..730}] rng1 matches 1 at @s run summon marke
 execute if score @s[scores={Health=..730}] rng1 matches 6 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_mossflora_spore_marker","AzrielMob_mob_marker","fast"]}
 execute if score @s[scores={Health=..730}] rng1 matches 11 at @s run summon marker ~ ~ ~ {Tags:["AzrielMob_boss_mossflora_spore_marker","AzrielMob_mob_marker","fast"]}
 
-execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s store result score @s rng2 run random value 1..24
-execute if score @s[scores={Health=..300}] rng1 matches 0..15 at @s store result score @s rng2 run random value 1..16
-execute if score @s[scores={Health=..200}] rng1 matches 0..15 at @s store result score @s rng2 run random value 1..12
-execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 1 if entity @a[tag=azrPlayer,distance=..9] positioned ^2 ^ ^2 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 2 if entity @a[tag=azrPlayer,distance=..9] positioned ^-2 ^ ^2 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 3 if entity @a[tag=azrPlayer,distance=..9] positioned ^2 ^ ^-2 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 4 if entity @a[tag=azrPlayer,distance=..9] positioned ^-2 ^ ^-2 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 5 if entity @a[tag=azrPlayer,distance=..9] positioned ^ ^ ^2.6 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 6 if entity @a[tag=azrPlayer,distance=..9] positioned ^ ^ ^-2.6 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 7 if entity @a[tag=azrPlayer,distance=..9] positioned ^2.6 ^ ^ run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 8 if entity @a[tag=azrPlayer,distance=..9] positioned ^-2.6 ^ ^ run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s[scores={Health=..300}] rng1 matches 0..15 at @s store result score @s rng2 run random value 1..16
-execute if score @s[scores={Health=..200}] rng1 matches 0..15 at @s store result score @s rng2 run random value 1..12
-execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 1 if entity @a[tag=azrPlayer,distance=..9] positioned ^4 ^ ^4 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 2 if entity @a[tag=azrPlayer,distance=..9] positioned ^-4 ^ ^4 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 3 if entity @a[tag=azrPlayer,distance=..9] positioned ^4 ^ ^-4 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 4 if entity @a[tag=azrPlayer,distance=..9] positioned ^-4 ^ ^-4 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 5 if entity @a[tag=azrPlayer,distance=..9] positioned ^ ^ ^5.6 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 6 if entity @a[tag=azrPlayer,distance=..9] positioned ^ ^ ^-5.6 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 7 if entity @a[tag=azrPlayer,distance=..9] positioned ^5.6 ^ ^ run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s[scores={Health=..600}] rng1 matches 0..15 at @s if score @s rng2 matches 8 if entity @a[tag=azrPlayer,distance=..9] positioned ^-5.6 ^ ^ run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..650}] rng1 matches 0..15 at @s store result score @s rng2 run random value 1..24
+execute if score @s[scores={Health=..400}] rng1 matches 0..15 at @s store result score @s rng2 run random value 1..16
+execute if score @s[scores={Health=..300}] rng1 matches 0..15 at @s store result score @s rng2 run random value 1..12
+execute if score @s[scores={Health=..650}] rng1 matches 0..15 at @s if score @s rng2 matches 1 if entity @a[tag=azrPlayer,distance=..9] positioned ^2 ^ ^2 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..650}] rng1 matches 0..15 at @s if score @s rng2 matches 2 if entity @a[tag=azrPlayer,distance=..9] positioned ^-2 ^ ^2 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..650}] rng1 matches 0..15 at @s if score @s rng2 matches 3 if entity @a[tag=azrPlayer,distance=..9] positioned ^2 ^ ^-2 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..650}] rng1 matches 0..15 at @s if score @s rng2 matches 4 if entity @a[tag=azrPlayer,distance=..9] positioned ^-2 ^ ^-2 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..650}] rng1 matches 0..15 at @s if score @s rng2 matches 5 if entity @a[tag=azrPlayer,distance=..9] positioned ^ ^ ^2.6 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..650}] rng1 matches 0..15 at @s if score @s rng2 matches 6 if entity @a[tag=azrPlayer,distance=..9] positioned ^ ^ ^-2.6 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..650}] rng1 matches 0..15 at @s if score @s rng2 matches 7 if entity @a[tag=azrPlayer,distance=..9] positioned ^2.6 ^ ^ run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..650}] rng1 matches 0..15 at @s if score @s rng2 matches 8 if entity @a[tag=azrPlayer,distance=..9] positioned ^-2.6 ^ ^ run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..400}] rng1 matches 0..15 at @s store result score @s rng2 run random value 1..16
+execute if score @s[scores={Health=..300}] rng1 matches 0..15 at @s store result score @s rng2 run random value 1..12
+execute if score @s[scores={Health=..650}] rng1 matches 0..15 at @s if score @s rng2 matches 1 if entity @a[tag=azrPlayer,distance=..9] positioned ^4 ^ ^4 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..650}] rng1 matches 0..15 at @s if score @s rng2 matches 2 if entity @a[tag=azrPlayer,distance=..9] positioned ^-4 ^ ^4 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..650}] rng1 matches 0..15 at @s if score @s rng2 matches 3 if entity @a[tag=azrPlayer,distance=..9] positioned ^4 ^ ^-4 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..650}] rng1 matches 0..15 at @s if score @s rng2 matches 4 if entity @a[tag=azrPlayer,distance=..9] positioned ^-4 ^ ^-4 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..650}] rng1 matches 0..15 at @s if score @s rng2 matches 5 if entity @a[tag=azrPlayer,distance=..9] positioned ^ ^ ^5.6 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..650}] rng1 matches 0..15 at @s if score @s rng2 matches 6 if entity @a[tag=azrPlayer,distance=..9] positioned ^ ^ ^-5.6 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..650}] rng1 matches 0..15 at @s if score @s rng2 matches 7 if entity @a[tag=azrPlayer,distance=..9] positioned ^5.6 ^ ^ run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..650}] rng1 matches 0..15 at @s if score @s rng2 matches 8 if entity @a[tag=azrPlayer,distance=..9] positioned ^-5.6 ^ ^ run function skyblock:azr/assets/mobs/trap_fang_auto
 
-execute if score @s[scores={Health=..300}] rng1 matches 16 at @s run scoreboard players set @s rng1 28
+execute if score @s[scores={Health=..450}] rng1 matches 16 at @s run scoreboard players set @s rng1 28
 
-execute if score @s[scores={Health=..300}] rng1 matches 30 at @s run function skyblock:azr/assets/mobs/skill/boss5_nymph/clone_summon
-execute if score @s[scores={Health=..200}] rng1 matches 40 at @s run function skyblock:azr/assets/mobs/skill/boss5_nymph/clone_summon
+execute if score @s[scores={Health=..450}] rng1 matches 30 at @s run function skyblock:azr/assets/mobs/skill/boss5_nymph/clone_summon
+execute if score @s[scores={Health=..300}] rng1 matches 40 at @s run function skyblock:azr/assets/mobs/skill/boss5_nymph/clone_summon
 execute if score @s rng1 matches 30 at @s run function skyblock:azr/assets/mobs/skill/boss_legate/move_backstep
 execute if score @s rng1 matches 30 at @s store result score @s rng2 run random value 1..4
 execute if score @s rng1 matches 30 at @s if score @s rng2 matches 1 if entity @a[tag=azrPlayer,distance=..5] run function skyblock:azr/assets/mobs/trap_fang_auto
 execute if score @s rng1 matches 30 at @s if score @s rng2 matches 2 if entity @a[tag=azrPlayer,distance=..3] run function skyblock:azr/assets/mobs/trap_spike
 
-execute if score @s[scores={Health=..400}] rng1 matches 30..60 at @s store result score @s rng2 run random value 1..6
-execute if score @s[scores={Health=..400}] rng1 matches 30..60 at @s if score @s rng2 matches 1 if entity @a[tag=azrPlayer,distance=..9] positioned ^1 ^ ^2 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s[scores={Health=..400}] rng1 matches 30..60 at @s if score @s rng2 matches 2 if entity @a[tag=azrPlayer,distance=..9] positioned ^-1 ^ ^2 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s[scores={Health=..400}] rng1 matches 30..60 at @s if score @s rng2 matches 3 if entity @a[tag=azrPlayer,distance=..9] positioned ^1 ^ ^-2 run function skyblock:azr/assets/mobs/trap_fang_auto
-execute if score @s[scores={Health=..400}] rng1 matches 30..60 at @s if score @s rng2 matches 4 if entity @a[tag=azrPlayer,distance=..9] positioned ^-1 ^ ^-2 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..450}] rng1 matches 30..60 at @s store result score @s rng2 run random value 1..6
+execute if score @s[scores={Health=..450}] rng1 matches 30..60 at @s if score @s rng2 matches 1 if entity @a[tag=azrPlayer,distance=..9] positioned ^1 ^ ^2 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..450}] rng1 matches 30..60 at @s if score @s rng2 matches 2 if entity @a[tag=azrPlayer,distance=..9] positioned ^-1 ^ ^2 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..450}] rng1 matches 30..60 at @s if score @s rng2 matches 3 if entity @a[tag=azrPlayer,distance=..9] positioned ^1 ^ ^-2 run function skyblock:azr/assets/mobs/trap_fang_auto
+execute if score @s[scores={Health=..450}] rng1 matches 30..60 at @s if score @s rng2 matches 4 if entity @a[tag=azrPlayer,distance=..9] positioned ^-1 ^ ^-2 run function skyblock:azr/assets/mobs/trap_fang_auto
 
-execute if score @s[scores={Health=..600}] rng1 matches 35 at @s store result score @s rng2 run random value 7..15
-execute if score @s[scores={Health=..400}] rng1 matches 35 at @s store result score @s rng2 run random value 1..8
-execute if score @s[scores={Health=..400}] rng1 matches 35 if score @s rng2 matches 1 run scoreboard players set @s rng1 500
-execute if score @s[scores={Health=..600}] rng1 matches 35 if score @s rng2 matches 7 run scoreboard players set @s rng1 600
+execute if score @s[scores={Health=..650}] rng1 matches 35 at @s store result score @s rng2 run random value 7..15
+execute if score @s[scores={Health=..500}] rng1 matches 35 at @s store result score @s rng2 run random value 1..8
+execute if score @s[scores={Health=..500}] rng1 matches 35 if score @s rng2 matches 1 run scoreboard players set @s rng1 500
+execute if score @s[scores={Health=..300}] rng1 matches 35 if score @s rng2 matches 2..3 run scoreboard players set @s rng1 500
+execute if score @s[scores={Health=..650}] rng1 matches 35 if score @s rng2 matches 7 run scoreboard players set @s rng1 600
+execute if score @s[scores={Health=..350}] rng1 matches 35 if score @s rng2 matches 8..9 run scoreboard players set @s rng1 600
 
 execute if score @s rng1 matches 36..44 unless entity @a[tag=azrPlayer,distance=..11] run scoreboard players set @s rng1 44
 
@@ -89,8 +91,8 @@ execute if score @s rng1 matches 51 at @s run effect clear @s invisibility
 execute if score @s[scores={Health=..630}] rng1 matches 51 at @s store result score @s rng2 run random value 1..10
 execute if score @s[scores={Health=..630}] rng1 matches 51 at @s if score @s rng2 matches 1..2 store result score @s rng3 run execute if entity @e[tag=AzrielMob_husk,distance=..50]
 execute if score @s[scores={Health=..630}] rng1 matches 51 at @s if score @s rng2 matches 1..2 if entity @a[tag=azrPlayer,distance=5..] if score @s rng3 matches ..4 run function skyblock:azr/assets/mobs/husk
-execute if score @s[scores={Health=..350}] rng1 matches 51 at @s if score @s rng2 matches 3..4 store result score @s rng3 run execute if entity @e[tag=AzrielMob_spider_poison,distance=..50]
-execute if score @s[scores={Health=..350}] rng1 matches 51 at @s if score @s rng2 matches 3..4 if entity @a[tag=azrPlayer,distance=5..] if score @s rng3 matches ..3 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_spider_poison","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score @s[scores={Health=..450}] rng1 matches 51 at @s if score @s rng2 matches 3..4 store result score @s rng3 run execute if entity @e[tag=AzrielMob_spider_poison,distance=..50]
+execute if score @s[scores={Health=..450}] rng1 matches 51 at @s if score @s rng2 matches 3..4 if entity @a[tag=azrPlayer,distance=5..] if score @s rng3 matches ..3 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_spider_poison","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score @s[scores={Health=..630}] rng1 matches 51 at @s if score @s rng2 matches 5 store result score @s rng3 run execute if entity @e[tag=AzrielMob_husk,distance=..50]
 execute if score @s[scores={Health=..630}] rng1 matches 51 at @s if score @s rng2 matches 5 if entity @a[tag=azrPlayer,distance=5..] if score @s rng3 matches ..6 run function skyblock:azr/assets/mobs/skill/boss_rush/boss_villain/summon_nymph
 execute if score @s[scores={Health=..630}] rng1 matches 51 at @s if score @s rng2 matches 5 if entity @a[tag=azrPlayer,distance=5..] if score @s rng3 matches ..6 unless score @s rng19 matches 1.. run tellraw @a[distance=..40,tag=azrShowDialog] [{text:"晦怨贤士：",color:"yellow",bold:1b},{text:"\n“什么？我真的可以帮上忙？这可太他妈的精彩了。”",color:"white",bold: false}]
