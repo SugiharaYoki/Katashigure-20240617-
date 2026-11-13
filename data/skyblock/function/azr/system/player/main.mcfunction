@@ -6,7 +6,7 @@
 #execute as @s[tag=azrUpdateSpawnPoint] at @s unless block ~ ~-0.1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run spawnpoint @s ~ ~ ~
 #execute as @s[tag=azrUpdateSpawnPoint] at @s unless block ~ ~-0.1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run tag @s remove azrUpdateSpawnPoint
 execute as @s at @s if block ~ ~-0.5 ~ creaking_heart run function skyblock:azr/system/player/updatespawnpoint
-execute as @s[tag=!azrPlayer_respawnanchor_standingabove] at @s if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] if entity @n[tag=AzrielMob_utility_respawn_anchor,distance=..2.5,tag=!AzrielMob_utility_respawn_anchor_teleport_disabled] run function skyblock:azr/system/shop/reader_transportation
+execute as @s[tag=!azrPlayer_respawnanchor_standingabove] at @s if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] if entity @n[tag=AzrielMob_utility_respawn_anchor,distance=..2.5,tag=!AzrielMob_utility_respawn_anchor_teleport_disabled] unless score stage Azr_system matches 101 unless score stage Azr_system matches 113 run function skyblock:azr/system/shop/reader_transportation
 execute as @s[tag=azrPlayer_respawnanchor_standingabove] at @s unless block ~ ~-0.5 ~ creaking_heart unless entity @n[tag=AzrielMob_utility_respawn_anchor,distance=..3.2] run tag @s remove azrPlayer_respawnanchor_standingabove
 
 # 商店系统
