@@ -138,6 +138,7 @@ execute if score @s rng1 matches 10315 run fill -79606 43 -61 -79606 40 -65 mine
 execute if score @s rng1 matches 10340 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“那么……我该做我最开始就该做的事了。”",color:"white"}]
 execute if score @s rng1 matches 10357 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“完成生命树庭园的试炼。”",color:"white"}]
 
+execute if score @s rng1 matches 10357 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage26_boss6
 execute if score @s rng1 matches 10357 run scoreboard players set stage Azr_system 113
 execute if score @s rng1 matches 10357 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..64}] Azr_skillPoints 65
 
