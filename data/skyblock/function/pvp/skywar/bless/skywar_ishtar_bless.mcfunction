@@ -88,10 +88,10 @@ execute if entity @s[scores={ishtar_bless_3=12}] run give @s music_disc_mall[cus
 execute if entity @s[scores={ishtar_bless_4=12}] run give @s music_disc_mall[custom_name={text:"刹踪替型核心 (6 / SHIFT:12)",italic:0b,color:"green"},custom_data={skywar:1},max_stack_size=85] 32
 
 
-execute if entity @s[scores={ishtar_bless_1=13}] run give @s bow[custom_name={text:"绯华",italic:0b,color:"red"},enchantments={multishot:3},repair_cost=1000]
-execute if entity @s[scores={ishtar_bless_2=13}] run give @s bow[custom_name={text:"绯华",italic:0b,color:"red"},enchantments={multishot:3},repair_cost=1000]
-execute if entity @s[scores={ishtar_bless_3=13}] run give @s bow[custom_name={text:"绯华",italic:0b,color:"red"},enchantments={multishot:3},repair_cost=1000]
-execute if entity @s[scores={ishtar_bless_4=13}] run give @s bow[custom_name={text:"绯华",italic:0b,color:"red"},enchantments={multishot:3},repair_cost=1000]
+execute if entity @s[scores={ishtar_bless_1=13}] run give @s bow[custom_name={text:"绯华",italic:0b,color:"red"},enchantments={multishot:3,power:1},repair_cost=1000]
+execute if entity @s[scores={ishtar_bless_2=13}] run give @s bow[custom_name={text:"绯华",italic:0b,color:"red"},enchantments={multishot:3,power:1},repair_cost=1000]
+execute if entity @s[scores={ishtar_bless_3=13}] run give @s bow[custom_name={text:"绯华",italic:0b,color:"red"},enchantments={multishot:3,power:1},repair_cost=1000]
+execute if entity @s[scores={ishtar_bless_4=13}] run give @s bow[custom_name={text:"绯华",italic:0b,color:"red"},enchantments={multishot:3,power:1},repair_cost=1000]
 execute if entity @s[scores={ishtar_bless_1=13}] run give @s arrow 5
 execute if entity @s[scores={ishtar_bless_2=13}] run give @s arrow 5
 execute if entity @s[scores={ishtar_bless_3=13}] run give @s arrow 5

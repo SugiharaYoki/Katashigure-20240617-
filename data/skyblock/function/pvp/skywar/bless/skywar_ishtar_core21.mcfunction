@@ -4,6 +4,7 @@ execute store result score @s rng3 run clear @s iron_sword
 execute store result score @s rng4 run clear @s golden_sword
 execute store result score @s rng5 run clear @s diamond_sword
 execute store result score @s rng6 run clear @s netherite_sword
+execute store result score @s rng13 run clear @s copper_sword
 
 execute store result score @s rng7 run clear @s wooden_axe
 execute store result score @s rng8 run clear @s stone_axe
@@ -11,6 +12,7 @@ execute store result score @s rng9 run clear @s iron_axe
 execute store result score @s rng10 run clear @s golden_axe
 execute store result score @s rng11 run clear @s diamond_axe
 execute store result score @s rng12 run clear @s netherite_axe
+execute store result score @s rng14 run clear @s copper_axe
 
 scoreboard players operation @s rng1 += @s rng7
 scoreboard players operation @s rng2 += @s rng8
@@ -18,6 +20,7 @@ scoreboard players operation @s rng3 += @s rng9
 scoreboard players operation @s rng4 += @s rng10
 scoreboard players operation @s rng5 += @s rng11
 scoreboard players operation @s rng6 += @s rng12
+scoreboard players operation @s rng13 += @s rng14
 
 
 playsound entity.evoker.prepare_attack master @a ~ ~2 ~ 2 1.2
@@ -53,6 +56,16 @@ give @s[scores={rng3=7}] arrow 21
 give @s[scores={rng3=8}] arrow 24
 give @s[scores={rng3=9}] arrow 27
 give @s[scores={rng3=10..}] arrow 30
+give @s[scores={rng13=1}] tipped_arrow[potion_contents={potion:weakness}] 2
+give @s[scores={rng13=2}] tipped_arrow[potion_contents={potion:weakness}] 4
+give @s[scores={rng13=3}] tipped_arrow[potion_contents={potion:weakness}] 6
+give @s[scores={rng13=4}] tipped_arrow[potion_contents={potion:weakness}] 8
+give @s[scores={rng13=5}] tipped_arrow[potion_contents={potion:weakness}] 10
+give @s[scores={rng13=6}] tipped_arrow[potion_contents={potion:weakness}] 12
+give @s[scores={rng13=7}] tipped_arrow[potion_contents={potion:weakness}] 14
+give @s[scores={rng13=8}] tipped_arrow[potion_contents={potion:weakness}] 16
+give @s[scores={rng13=9}] tipped_arrow[potion_contents={potion:weakness}] 18
+give @s[scores={rng13=10..}] tipped_arrow[potion_contents={potion:weakness}] 20
 give @s[scores={rng4=1}] tipped_arrow[potion_contents={potion:strong_poison}] 2
 give @s[scores={rng4=2}] tipped_arrow[potion_contents={potion:strong_poison}] 4
 give @s[scores={rng4=3}] tipped_arrow[potion_contents={potion:strong_poison}] 6
