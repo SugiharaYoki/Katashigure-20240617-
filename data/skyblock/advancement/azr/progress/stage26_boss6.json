@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "中庭花园：千厦坏劣，昏乌筑衢 魔神 - 劳姆\n洞悉逝灭，穷途灵智 魔神 - 玛帕斯",
+            "color": "dark_red",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "我的战略改变了。\n不……我从一开始，就该选择这条道路。我本身就是会做出这种选择的人。\n不为了帮助神界。因神界草菅人命、从不敬生灵。\n不为了帮助魔界。因魔界激进行事，行机会主义。\n\n由我来重新定义这一系列可笑而可悲的规则。\n这是我必将踏上之路。\n\n伊曼纽尔，感谢你对我的指点。我终于明白了：我该做的事究竟是什么。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:nether_star"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage26"
+}
