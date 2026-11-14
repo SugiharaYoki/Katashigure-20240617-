@@ -5,7 +5,7 @@ scoreboard players add @s rng1 1
 execute positioned ~ ~1.2 ~ run particle sculk_soul ~ ~ ~ 0.3 0.3 0.3 0.05 5
 
 execute if score @s rng1 matches 11 run scoreboard players set @s rng1 10
-execute if score @s rng1 matches ..11 at @s if entity @a[tag=azrPlayer,distance=..4] run scoreboard players set @s rng1 12
+execute if score @s rng1 matches ..11 at @s if entity @a[tag=azrPlayer,distance=..2] run scoreboard players set @s rng1 12
 
 
 execute if score @s rng1 matches 12 run playsound minecraft:entity.blaze.shoot ambient @a ~ ~ ~ 1 0.5
