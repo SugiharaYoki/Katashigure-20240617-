@@ -5,5 +5,5 @@ execute if entity @s[level=8..] run fill ~4 ~4 ~4 ~-4 ~-4 ~-4 air replace gray_s
 execute if entity @s[level=8..] run fill ~4 ~4 ~4 ~-4 ~-4 ~-4 gray_shulker_box{LootTable:"skyblock:building_box"} replace #shulker_boxes
 
 
-give @s music_disc_ward[custom_name={text:"输载归初核心 (8)",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_19:1},max_stack_size=85] 1
+give @s music_disc_ward[custom_name={text:"输载归初核心 (8 / SHIFT:4)",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_19:1},max_stack_size=85] 1
 scoreboard players set @s If_MD_Ward 0
