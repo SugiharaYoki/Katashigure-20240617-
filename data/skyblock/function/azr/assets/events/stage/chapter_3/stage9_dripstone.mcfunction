@@ -7,7 +7,7 @@ execute positioned -79863 28 -67 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79863 28 -67 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=2..}] run scoreboard players add @s rng1 1
 execute positioned -79863 28 -67 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3..5}] run playsound minecraft:block.ancient_debris.break block @a -79862.77 29.10 -66.97 1.5 0.5
 execute positioned -79863 28 -67 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3..5}] run particle minecraft:white_smoke -79862.77 29.10 -66.97 2 0.2 0.5 0.01 30
-execute positioned -79863 28 -67 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3..5}] run particle block{block_state:{Name:basalt}} -79862.77 29.10 -66.97 2 0.2 0.5 0.01 20
+execute positioned -79863 28 -67 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=3..5}] run particle block{block_state:{id:basalt}} -79862.77 29.10 -66.97 2 0.2 0.5 0.01 20
 execute positioned -79863 28 -67 as @n[tag=AzrielMarker_encounter,distance=0..0.5,scores={rng1=5}] run fill -79861 28 -67 -79865 28 -68 minecraft:air replace smooth_basalt destroy
 
 

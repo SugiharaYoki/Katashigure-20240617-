@@ -1,677 +1,798 @@
 {
-  "pools": [
-    {
-      "rolls": 2,
-      "entries": [
+    "pools": [
         {
-          "type": "minecraft:empty",
-          "weight": 10
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 10
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:stone_sword",
+                    "weight": 19,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "options": [
+                                    "minecraft:knockback"
+                                ],
+                                "type": "minecraft:enchant_randomly",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 50,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "options": [
+                                    "minecraft:fire_aspect"
+                                ],
+                                "type": "minecraft:enchant_randomly",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 30,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "options": [
+                                    "minecraft:sharpness",
+                                    "minecraft:sweeping_edge"
+                                ],
+                                "type": "minecraft:enchant_randomly",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 90,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:empty",
+                    "weight": 8
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 5
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:brewing_stand",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:crafting_table",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:anvil",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bow",
+                    "weight": 19,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "options": [
+                                    "minecraft:flame",
+                                    "minecraft:punch"
+                                ],
+                                "type": "minecraft:enchant_randomly",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 30,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "options": [
+                                    "minecraft:power"
+                                ],
+                                "type": "minecraft:enchant_randomly",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 90,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:empty",
+                    "weight": 18
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 7
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:brewing_stand",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:crafting_table",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:anvil",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_hoe",
+                    "weight": 29,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "options": [
+                                    "minecraft:bane_of_arthropods",
+                                    "minecraft:smite",
+                                    "minecraft:sweeping_edge"
+                                ],
+                                "type": "minecraft:enchant_randomly",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 70,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "options": [
+                                    "minecraft:sharpness"
+                                ],
+                                "type": "minecraft:enchant_randomly",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 80,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "enchantments": {
+                                    "minecraft:knockback": 1
+                                },
+                                "type": "minecraft:set_enchantments",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.3,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "enchantments": {
+                                    "minecraft:knockback": 2
+                                },
+                                "type": "minecraft:set_enchantments",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.2,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "enchantments": {
+                                    "minecraft:knockback": 3
+                                },
+                                "type": "minecraft:set_enchantments",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.1,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "enchantments": {
+                                    "minecraft:knockback": 4
+                                },
+                                "type": "minecraft:set_enchantments",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.01,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:empty",
+                    "weight": 7
+                }
+            ]
+        },
+        {
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:crossbow",
+                    "weight": 19,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "options": [
+                                    "minecraft:multishot",
+                                    "minecraft:quick_charge"
+                                ],
+                                "type": "minecraft:enchant_randomly",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 70,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "options": [
+                                    "minecraft:piercing"
+                                ],
+                                "type": "minecraft:enchant_randomly",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 70,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanting_table",
+                    "weight": 1
+                }
+            ]
+        },
+        {
+            "rolls": 14,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:cooked_mutton",
+                    "weight": 11,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 3,
+                                    "max": 6,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 8
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:soul_torch",
+                    "weight": 2,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 1,
+                                    "max": 1,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 2
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:pumpkin_pie",
+                    "weight": 5,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 2,
+                                    "max": 6,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 2,
+                                    "max": 8
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:vindicator_spawn_egg",
+                    "weight": 1,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "weight": 4,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "id": "minecraft:long_regeneration",
+                                "type": "minecraft:set_potion"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:splash_potion",
+                    "weight": 3,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "id": "minecraft:strong_poison",
+                                "type": "minecraft:set_potion"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "weight": 8,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "id": "minecraft:slow_falling",
+                                "type": "minecraft:set_potion"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "weight": 8,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "id": "minecraft:strong_regeneration",
+                                "type": "minecraft:set_potion"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:splash_potion",
+                    "weight": 5,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "id": "minecraft:strong_slowness",
+                                "type": "minecraft:set_potion"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:tipped_arrow",
+                    "weight": 2,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": 5,
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 5,
+                                    "max": 15
+                                },
+                                "type": "minecraft:limit_count"
+                            },
+                            {
+                                "id": "minecraft:harming",
+                                "type": "minecraft:set_potion"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:tipped_arrow",
+                    "weight": 4,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": 5,
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 5,
+                                    "max": 15
+                                },
+                                "type": "minecraft:limit_count"
+                            },
+                            {
+                                "id": "minecraft:strong_poison",
+                                "type": "minecraft:set_potion"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond",
+                    "weight": 3,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "limit": {
+                                    "min": 6,
+                                    "max": 8
+                                },
+                                "type": "minecraft:limit_count"
+                            },
+                            {
+                                "count": {
+                                    "min": 4,
+                                    "max": 10,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:cactus",
+                    "weight": 3,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "limit": {
+                                    "min": 6,
+                                    "max": 8
+                                },
+                                "type": "minecraft:limit_count"
+                            },
+                            {
+                                "count": {
+                                    "min": 2,
+                                    "max": 5,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gold_ingot",
+                    "weight": 10,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "limit": {
+                                    "min": 4,
+                                    "max": 8
+                                },
+                                "type": "minecraft:limit_count"
+                            },
+                            {
+                                "count": {
+                                    "min": 3,
+                                    "max": 30,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "weight": 3,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "id": "minecraft:wind_charged",
+                                "type": "minecraft:set_potion"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:blue_ice",
+                    "weight": 8,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "limit": {
+                                    "min": 3,
+                                    "max": 10
+                                },
+                                "type": "minecraft:limit_count"
+                            },
+                            {
+                                "count": 8,
+                                "type": "minecraft:set_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_block",
+                    "weight": 9,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 5,
+                                    "max": 20,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 20
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:obsidian",
+                    "weight": 4,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": 6,
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 8
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:elytra",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:empty",
+                    "weight": 11
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:enchanted_golden_apple",
+                    "weight": 1,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_apple",
+                    "weight": 2,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 3
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:apple",
+                    "weight": 3,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 3
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                }
+            ]
         }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:stone_sword",
-          "weight": 19,
-          "functions": [
-            {
-              "function": "minecraft:enchant_randomly",
-              "options": [
-                "minecraft:knockback"
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 50
-                }
-              ]
-            },
-            {
-              "function": "minecraft:enchant_randomly",
-              "options": [
-                "minecraft:fire_aspect"
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 30
-                }
-              ]
-            },
-            {
-              "function": "minecraft:enchant_randomly",
-              "options": [
-                "minecraft:sharpness",
-                "minecraft:sweeping_edge"
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 90
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:empty",
-          "weight": 8
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 5
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:brewing_stand",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:crafting_table",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:anvil",
-          "weight": 1
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:bow",
-          "weight": 19,
-          "functions": [
-            {
-              "function": "minecraft:enchant_randomly",
-              "options": [
-                "minecraft:flame",
-                "minecraft:punch"
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 30
-                }
-              ]
-            },
-            {
-              "function": "minecraft:enchant_randomly",
-              "options": [
-                "minecraft:power"
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 90
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:empty",
-          "weight": 18
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 7
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:brewing_stand",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:crafting_table",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:anvil",
-          "weight": 1
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond_hoe",
-          "weight": 29,
-          "functions": [
-            {
-              "function": "minecraft:enchant_randomly",
-              "options": [
-                "minecraft:bane_of_arthropods",
-                "minecraft:smite",
-                "minecraft:sweeping_edge"
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 70
-                }
-              ]
-            },
-            {
-              "function": "minecraft:enchant_randomly",
-              "options": [
-                "minecraft:sharpness"
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 80
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:knockback": 1
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.3
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:knockback": 2
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.2
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:knockback": 3
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.1
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:knockback": 4
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.01
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:empty",
-          "weight": 7
-        }
-      ]
-    },
-    {
-      "rolls": 2,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 1
-        }
-      ]
-    },
-    {
-      "rolls": 2,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 1
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:crossbow",
-          "weight": 19,
-          "functions": [
-            {
-              "function": "minecraft:enchant_randomly",
-              "options": [
-                "minecraft:multishot",
-                "minecraft:quick_charge"
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 70
-                }
-              ]
-            },
-            {
-              "function": "minecraft:enchant_randomly",
-              "options": [
-                "minecraft:piercing"
-              ],
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 70
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 10
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:enchanting_table",
-          "weight": 1
-        }
-      ]
-    },
-    {
-      "rolls": 14,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:cooked_mutton",
-          "weight": 11,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 3,
-                "max": 6
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 8
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:soul_torch",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 2
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:pumpkin_pie",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 6
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 2,
-                "max": 8
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:vindicator_spawn_egg",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:potion",
-          "weight": 4,
-          "functions": [
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:long_regeneration"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:splash_potion",
-          "weight": 3,
-          "functions": [
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:strong_poison"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:potion",
-          "weight": 8,
-          "functions": [
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:slow_falling"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:potion",
-          "weight": 8,
-          "functions": [
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:strong_regeneration"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:splash_potion",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:strong_slowness"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:tipped_arrow",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 5
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 5,
-                "max": 15
-              }
-            },
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:harming"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:tipped_arrow",
-          "weight": 4,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 5
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 5,
-                "max": 15
-              }
-            },
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:strong_poison"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond",
-          "weight": 3,
-          "functions": [
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 6,
-                "max": 8
-              }
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 4,
-                "max": 10
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:cactus",
-          "weight": 3,
-          "functions": [
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 6,
-                "max": 8
-              }
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:gold_ingot",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 4,
-                "max": 8
-              }
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 3,
-                "max": 30
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:potion",
-          "weight": 3,
-          "functions": [
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:wind_charged"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:blue_ice",
-          "weight": 8,
-          "functions": [
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 3,
-                "max": 10
-              }
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": 8
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:iron_block",
-          "weight": 9,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 20
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 20
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:obsidian",
-          "weight": 4,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 6
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 8
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:elytra",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:empty",
-          "weight": 11
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:enchanted_golden_apple",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:golden_apple",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 3
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:apple",
-          "weight": 3,
-          "functions": [
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 3
-              }
-            }
-          ]
-        }
-      ]
-    }
-  ]
+    ]
 }

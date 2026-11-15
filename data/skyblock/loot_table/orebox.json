@@ -1,480 +1,568 @@
 {
-  "pools": [
-    {
-      "rolls": 27,
-      "entries": [
+    "pools": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:coal",
-          "weight": 300,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 5
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 12
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:charcoal",
-          "weight": 380,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 5
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 12
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:iron_ore",
-          "weight": 250,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 4
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 8
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:gold_ore",
-          "weight": 100,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 6
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 10
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:lapis_ore",
-          "weight": 250,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 8
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 8
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:emerald_ore",
-          "weight": 180,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 3,
-                "max": 7
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 18
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:coal_ore",
-          "weight": 30,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 8,
-                "max": 16
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 12
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:redstone_ore",
-          "weight": 50,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 4,
-                "max": 12
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 25
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond_ore",
-          "weight": 80,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 6
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:gilded_blackstone",
-          "weight": 80,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 4,
-                "max": 12
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 6
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:flint",
-          "weight": 40,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 2
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 4
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:netherite_scrap",
-          "weight": 65,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 4
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:ancient_debris",
-          "weight": 25,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 4
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:iron_ingot",
-          "weight": 35,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 4
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 8
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:gold_ingot",
-          "weight": 28,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 6
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 10
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:lapis_lazuli",
-          "weight": 20,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 23,
-                "max": 9
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 9
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:emerald",
-          "weight": 55,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 20,
-                "max": 70
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 10,
-                "max": 80
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:bone",
-          "weight": 60,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 7
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 8
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:redstone",
-          "weight": 20,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 6,
-                "max": 25
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 25
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:diamond",
-          "weight": 18,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 6
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:netherite_ingot",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 2
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:cave_spider_spawn_egg",
-          "weight": 14,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 5
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 5,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:lava_bucket",
-          "weight": 12
-        },
-        {
-          "type": "minecraft:empty",
-          "weight": 600
+            "rolls": 27,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:coal",
+                    "weight": 300,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 1,
+                                    "max": 5,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 12
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:charcoal",
+                    "weight": 380,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 1,
+                                    "max": 5,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 12
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_ore",
+                    "weight": 250,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 2,
+                                    "max": 4,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 8
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gold_ore",
+                    "weight": 100,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 1,
+                                    "max": 6,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 10
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:lapis_ore",
+                    "weight": 250,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 2,
+                                    "max": 8,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 8
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:emerald_ore",
+                    "weight": 180,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 3,
+                                    "max": 7,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 18
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:coal_ore",
+                    "weight": 30,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 8,
+                                    "max": 16,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 12
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:redstone_ore",
+                    "weight": 50,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 4,
+                                    "max": 12,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 25
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond_ore",
+                    "weight": 80,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 1,
+                                    "max": 1,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 6
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gilded_blackstone",
+                    "weight": 80,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 4,
+                                    "max": 12,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 6
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:flint",
+                    "weight": 40,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 1,
+                                    "max": 2,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 4
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:netherite_scrap",
+                    "weight": 65,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 1,
+                                    "max": 1,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 4
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:ancient_debris",
+                    "weight": 25,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 1,
+                                    "max": 1,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 4
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_ingot",
+                    "weight": 35,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 2,
+                                    "max": 4,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 8
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:gold_ingot",
+                    "weight": 28,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 1,
+                                    "max": 6,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 10
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:lapis_lazuli",
+                    "weight": 20,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 23,
+                                    "max": 9,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 9
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:emerald",
+                    "weight": 55,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 20,
+                                    "max": 70,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 10,
+                                    "max": 80
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:bone",
+                    "weight": 60,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 2,
+                                    "max": 7,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 8
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:redstone",
+                    "weight": 20,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 6,
+                                    "max": 25,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 25
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:diamond",
+                    "weight": 18,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 1,
+                                    "max": 1,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 6
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:netherite_ingot",
+                    "weight": 10,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 1,
+                                    "max": 1,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 2
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:cave_spider_spawn_egg",
+                    "weight": 14,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 5,
+                                    "max": 5,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 5,
+                                    "max": 5
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:lava_bucket",
+                    "weight": 12
+                },
+                {
+                    "type": "minecraft:empty",
+                    "weight": 600
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

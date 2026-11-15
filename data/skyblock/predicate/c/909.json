@@ -1,4 +1,4 @@
 {
-  "condition": "minecraft:random_chance",
-  "chance": 0.0909
+    "chance": 0.0909,
+    "type": "minecraft:random_chance"
 }

@@ -1,4 +1,4 @@
-summon block_display ~ ~ ~ {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f],translation:[-0.15f,0f,-0.15f]},block_state:{Name:dispenser},Tags:["sea_blockdisplay","SEAdrone"],Rotation:[45f,0f]}
+summon block_display ~ ~ ~ {transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],scale:[0.3f,0.3f,0.3f],translation:[-0.15f,0f,-0.15f]},block_state:{id:dispenser},Tags:["sea_blockdisplay","SEAdrone"],Rotation:[45f,0f]}
 
 execute store result score 10e959db-4b44-4cdd-b98c-350d3b454206 rng2 run random value 1..4
 execute if score 10e959db-4b44-4cdd-b98c-350d3b454206 rng2 matches 1 run data modify entity @n[tag=SEAdrone] Rotation[0] set value 45f

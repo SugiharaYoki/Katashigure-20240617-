@@ -1,79 +1,85 @@
 {
-  "type": "minecraft:generic",
-  "pools": [
-    {
-      "rolls": 2,
-      "entries": [
+    "type": "minecraft:generic",
+    "pools": [
         {
-          "type": "minecraft:empty",
-          "weight": 30
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 30
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:wild_armor_trim_smithing_template",
+                    "weight": 2,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "name": {
+                                    "text": "狂荒石板",
+                                    "color": "light_purple",
+                                    "bold": false,
+                                    "italic": false
+                                },
+                                "type": "minecraft:set_name"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:sentry_armor_trim_smithing_template",
+                    "weight": 7,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "name": {
+                                    "text": "辽哨石板",
+                                    "color": "light_purple",
+                                    "bold": false,
+                                    "italic": false
+                                },
+                                "type": "minecraft:set_name"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:emerald",
+                    "weight": 16
+                }
+            ]
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:wild_armor_trim_smithing_template",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "狂荒石板",
-                "color": "light_purple",
-                "bold": false,
-                "italic": false
-              }
-            }
-          ]
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 60
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:flint",
+                    "weight": 10
+                }
+            ]
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:sentry_armor_trim_smithing_template",
-          "weight": 7,
-          "functions": [
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "辽哨石板",
-                "color": "light_purple",
-                "bold": false,
-                "italic": false
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:emerald",
-          "weight": 16
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 995
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:glistering_melon_slice",
+                    "weight": 2
+                }
+            ]
         }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 60
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:flint",
-          "weight": 10
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 995
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:glistering_melon_slice",
-          "weight": 2
-        }
-      ]
-    }
-  ]
+    ]
 }

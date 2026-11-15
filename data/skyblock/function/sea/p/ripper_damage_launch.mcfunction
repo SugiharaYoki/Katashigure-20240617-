@@ -1,5 +1,5 @@
-execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ run particle block{block_state:{Name:iron_block}} ~ ~ ~ 0.1 0 0.1 0.3 5
-execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ run particle block{block_state:{Name:smooth_stone}} ~ ~ ~ 0.1 0 0.1 0.7 2
+execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ run particle block{block_state:{id:iron_block}} ~ ~ ~ 0.1 0 0.1 0.3 5
+execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ run particle block{block_state:{id:smooth_stone}} ~ ~ ~ 0.1 0 0.1 0.7 2
 
 execute if score @s[tag=SEAripper_launched_sound] sea_ripper matches 1.. positioned ^ ^ ^ run particle sonic_boom ~ ~ ~ 0.1 0.1 0.1 0.7 1
 execute if score @s[tag=SEAripper_launched_sound] sea_ripper matches 1.. positioned ^ ^ ^ run playsound minecraft:entity.warden.sonic_boom neutral @a ~ ~ ~ 0.8 1.4

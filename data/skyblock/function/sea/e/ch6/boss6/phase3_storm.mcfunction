@@ -92,9 +92,9 @@ execute if score @s rng4 matches 2000 positioned 90059 20 -1825 run tellraw @a[d
 execute if score @s rng4 matches 3000 at @s run tellraw @a[distance=0..150] [{text:"艾德雯娜：",color:"green",bold:1b},{text:"\n“中间的平台撑不住了，随时准备后退！！”",color:"white",bold: false}]
 execute if score @s rng4 matches 3050 at @s run tellraw @a[distance=0..150] [{text:"艾德雯娜：",color:"green",bold:1b},{text:"\n“保持距离！！！！”",color:"white",bold: false}]
 
-execute if score @s rng4 matches 3000 at @s run particle block{block_state:{Name:tuff_bricks}} ~ ~ ~ 8 0.1 8 0.05 50
-execute if score @s rng4 matches 3040.. at @s run particle block{block_state:{Name:tuff_bricks}} ~ ~ ~ 8 0.1 8 0.05 10
-execute if score @s rng4 matches 3080 at @s run particle block{block_state:{Name:tuff_bricks}} ~ ~ ~ 8 0.1 8 0.05 150
+execute if score @s rng4 matches 3000 at @s run particle block{block_state:{id:tuff_bricks}} ~ ~ ~ 8 0.1 8 0.05 50
+execute if score @s rng4 matches 3040.. at @s run particle block{block_state:{id:tuff_bricks}} ~ ~ ~ 8 0.1 8 0.05 10
+execute if score @s rng4 matches 3080 at @s run particle block{block_state:{id:tuff_bricks}} ~ ~ ~ 8 0.1 8 0.05 150
 execute if score @s rng4 matches 3030.. at @s run particle large_smoke ~ ~ ~ 8 0 8 0.3 8
 execute if score @s rng4 matches 3050.. at @s run particle large_smoke ~ ~ ~ 8 0 8 0.3 12
 execute if score @s rng4 matches 3080 at @s run particle large_smoke ~ ~ ~ 8 0 8 0.3 120

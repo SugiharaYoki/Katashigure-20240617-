@@ -1,7 +1,13 @@
 {
     "pack": {
-        "min_format": [94, 1],
-        "max_format": [94, 1],
+        "min_format": [
+            121,
+            0
+        ],
+        "max_format": [
+            121,
+            0
+        ],
         "description": "Skyblock War for MiyakoTokumei Java"
     }
 }

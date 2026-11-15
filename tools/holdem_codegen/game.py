@@ -129,8 +129,8 @@ def route_functions():
 
 def custody_functions():
     loot = {'type':'minecraft:command','pools':[{'rolls':1,'entries':[{'type':'minecraft:item','name':'minecraft:paper',
-            'functions':[{'function':'minecraft:set_components','components':{'minecraft:custom_data':{'poker_name':True}}},
-                         {'function':'minecraft:set_name','name':{'selector':'@s'},'entity':'this'}]}]}]}
+            'modifier':[{'type':'minecraft:set_components','components':{'minecraft:custom_data':{'poker_name':True}}},
+                         {'type':'minecraft:set_name','name':{'selector':'@s'},'entity':'this'}]}]}]}
     path = ROOT/'data/skyblock/loot_table/poker/player_name.json'
     path.parent.mkdir(parents=True,exist_ok=True)
     path.write_text(j(loot)+'\n')

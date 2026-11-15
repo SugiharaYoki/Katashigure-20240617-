@@ -1,600 +1,743 @@
 {
-  "pools": [
-    {
-      "rolls": 27,
-      "entries": [
+    "pools": [
         {
-          "type": "minecraft:empty",
-          "weight": 50
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:iron_sword",
-          "weight": 7,
-          "functions": [
-            {
-              "function": "minecraft:enchant_randomly",
-              "options": [
-                "minecraft:fire_aspect",
-                "minecraft:sweeping_edge",
-                "minecraft:unbreaking"
-              ],
-              "conditions": [
+            "rolls": 27,
+            "entries": [
                 {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.3
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": 1
-              },
-              "conditions": [
+                    "type": "minecraft:empty",
+                    "weight": 50
+                },
                 {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.3
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": 2
-              },
-              "conditions": [
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_sword",
+                    "weight": 7,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "options": [
+                                    "minecraft:fire_aspect",
+                                    "minecraft:sweeping_edge",
+                                    "minecraft:unbreaking"
+                                ],
+                                "type": "minecraft:enchant_randomly",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.3,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "enchantments": {
+                                    "minecraft:sharpness": 1
+                                },
+                                "type": "minecraft:set_enchantments",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.3,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "enchantments": {
+                                    "minecraft:sharpness": 2
+                                },
+                                "type": "minecraft:set_enchantments",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.2,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "enchantments": {
+                                    "minecraft:sharpness": 3
+                                },
+                                "type": "minecraft:set_enchantments",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.1,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
                 {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.2
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": 3
-              },
-              "conditions": [
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_axe",
+                    "weight": 7,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "options": [
+                                    "minecraft:unbreaking"
+                                ],
+                                "type": "minecraft:enchant_randomly",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.3,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "enchantments": {
+                                    "minecraft:sharpness": 1
+                                },
+                                "type": "minecraft:set_enchantments",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.3,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "enchantments": {
+                                    "minecraft:sharpness": 2
+                                },
+                                "type": "minecraft:set_enchantments",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.2,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "enchantments": {
+                                    "minecraft:sharpness": 3
+                                },
+                                "type": "minecraft:set_enchantments",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.1,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
                 {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.1
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:iron_axe",
-          "weight": 7,
-          "functions": [
-            {
-              "function": "minecraft:enchant_randomly",
-              "options": [
-                "minecraft:unbreaking"
-              ],
-              "conditions": [
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_hoe",
+                    "weight": 7,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "options": [
+                                    "minecraft:sharpness",
+                                    "minecraft:unbreaking"
+                                ],
+                                "type": "minecraft:enchant_randomly",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.3,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "enchantments": {
+                                    "minecraft:knockback": 1
+                                },
+                                "type": "minecraft:set_enchantments",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.4,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "enchantments": {
+                                    "minecraft:knockback": 2
+                                },
+                                "type": "minecraft:set_enchantments",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.1,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "enchantments": {
+                                    "minecraft:knockback": 3
+                                },
+                                "type": "minecraft:set_enchantments",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.02,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
                 {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.3
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": 1
-              },
-              "conditions": [
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_chestplate",
+                    "weight": 5,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "options": [
+                                    "minecraft:fire_protection",
+                                    "minecraft:blast_protection",
+                                    "minecraft:projectile_protection",
+                                    "minecraft:protection",
+                                    "minecraft:unbreaking"
+                                ],
+                                "type": "minecraft:enchant_randomly",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.3,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
                 {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.3
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": 2
-              },
-              "conditions": [
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_helmet",
+                    "weight": 5,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "options": [
+                                    "minecraft:fire_protection",
+                                    "minecraft:blast_protection",
+                                    "minecraft:projectile_protection",
+                                    "minecraft:protection",
+                                    "minecraft:unbreaking"
+                                ],
+                                "type": "minecraft:enchant_randomly",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.3,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
                 {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.2
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:sharpness": 3
-              },
-              "conditions": [
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_leggings",
+                    "weight": 5,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "options": [
+                                    "minecraft:fire_protection",
+                                    "minecraft:blast_protection",
+                                    "minecraft:projectile_protection",
+                                    "minecraft:protection",
+                                    "minecraft:unbreaking"
+                                ],
+                                "type": "minecraft:enchant_randomly",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.3,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
                 {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.1
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:iron_hoe",
-          "weight": 7,
-          "functions": [
-            {
-              "function": "minecraft:enchant_randomly",
-              "options": [
-                "minecraft:sharpness",
-                "minecraft:unbreaking"
-              ],
-              "conditions": [
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_boots",
+                    "weight": 5,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "options": [
+                                    "minecraft:fire_protection",
+                                    "minecraft:blast_protection",
+                                    "minecraft:projectile_protection",
+                                    "minecraft:protection",
+                                    "minecraft:unbreaking",
+                                    "minecraft:feather_falling",
+                                    "minecraft:frost_walker",
+                                    "minecraft:soul_speed",
+                                    "minecraft:depth_strider"
+                                ],
+                                "type": "minecraft:enchant_randomly",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.3,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
                 {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.3
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:knockback": 1
-              },
-              "conditions": [
+                    "type": "minecraft:item",
+                    "name": "minecraft:chainmail_boots",
+                    "weight": 5
+                },
                 {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.4
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:knockback": 2
-              },
-              "conditions": [
+                    "type": "minecraft:item",
+                    "name": "minecraft:chainmail_chestplate",
+                    "weight": 5
+                },
                 {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.1
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:knockback": 3
-              },
-              "conditions": [
+                    "type": "minecraft:item",
+                    "name": "minecraft:chainmail_helmet",
+                    "weight": 5
+                },
                 {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.02
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:iron_chestplate",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:enchant_randomly",
-              "options": [
-                "minecraft:fire_protection",
-                "minecraft:blast_protection",
-                "minecraft:projectile_protection",
-                "minecraft:protection",
-                "minecraft:unbreaking"
-              ],
-              "conditions": [
+                    "type": "minecraft:item",
+                    "name": "minecraft:chainmail_leggings",
+                    "weight": 5
+                },
                 {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.3
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:iron_helmet",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:enchant_randomly",
-              "options": [
-                "minecraft:fire_protection",
-                "minecraft:blast_protection",
-                "minecraft:projectile_protection",
-                "minecraft:protection",
-                "minecraft:unbreaking"
-              ],
-              "conditions": [
+                    "type": "minecraft:item",
+                    "name": "minecraft:smithing_table",
+                    "weight": 10
+                },
                 {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.3
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:iron_leggings",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:enchant_randomly",
-              "options": [
-                "minecraft:fire_protection",
-                "minecraft:blast_protection",
-                "minecraft:projectile_protection",
-                "minecraft:protection",
-                "minecraft:unbreaking"
-              ],
-              "conditions": [
+                    "type": "minecraft:item",
+                    "name": "minecraft:damaged_anvil",
+                    "weight": 8
+                },
                 {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.3
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:iron_boots",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:enchant_randomly",
-              "options": [
-                "minecraft:fire_protection",
-                "minecraft:blast_protection",
-                "minecraft:projectile_protection",
-                "minecraft:protection",
-                "minecraft:unbreaking",
-                "minecraft:feather_falling",
-                "minecraft:frost_walker",
-                "minecraft:soul_speed",
-                "minecraft:depth_strider"
-              ],
-              "conditions": [
+                    "type": "minecraft:item",
+                    "name": "minecraft:bow",
+                    "weight": 4,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "options": [
+                                    "minecraft:flame",
+                                    "minecraft:unbreaking",
+                                    "minecraft:punch"
+                                ],
+                                "type": "minecraft:enchant_randomly",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.5,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "enchantments": {
+                                    "minecraft:power": 1
+                                },
+                                "type": "minecraft:set_enchantments",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.3,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "enchantments": {
+                                    "minecraft:power": 2
+                                },
+                                "type": "minecraft:set_enchantments",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.2,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "enchantments": {
+                                    "minecraft:power": 3
+                                },
+                                "type": "minecraft:set_enchantments",
+                                "condition": {
+                                    "type": "minecraft:all_of",
+                                    "terms": [
+                                        {
+                                            "chance": 0.1,
+                                            "type": "minecraft:random_chance"
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                },
                 {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.3
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:chainmail_boots",
-          "weight": 5
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:chainmail_chestplate",
-          "weight": 5
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:chainmail_helmet",
-          "weight": 5
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:chainmail_leggings",
-          "weight": 5
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:smithing_table",
-          "weight": 10
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:damaged_anvil",
-          "weight": 8
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:bow",
-          "weight": 4,
-          "functions": [
-            {
-              "function": "minecraft:enchant_randomly",
-              "options": [
-                "minecraft:flame",
-                "minecraft:unbreaking",
-                "minecraft:punch"
-              ],
-              "conditions": [
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "weight": 5,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "id": "minecraft:strength",
+                                "type": "minecraft:set_potion"
+                            }
+                        ]
+                    }
+                },
                 {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.5
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:power": 1
-              },
-              "conditions": [
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "weight": 3,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "id": "minecraft:night_vision",
+                                "type": "minecraft:set_potion"
+                            }
+                        ]
+                    }
+                },
                 {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.3
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:power": 2
-              },
-              "conditions": [
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "weight": 7,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "id": "minecraft:regeneration",
+                                "type": "minecraft:set_potion"
+                            }
+                        ]
+                    }
+                },
                 {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.2
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_enchantments",
-              "enchantments": {
-                "minecraft:power": 3
-              },
-              "conditions": [
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "weight": 4,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "id": "minecraft:leaping",
+                                "type": "minecraft:set_potion"
+                            }
+                        ]
+                    }
+                },
                 {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.1
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "weight": 2,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "id": "minecraft:invisibility",
+                                "type": "minecraft:set_potion"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:lever",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:salmon",
+                    "weight": 6,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 2,
+                                    "max": 6,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:mushroom_stew",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:sweet_berries",
+                    "weight": 6,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 1,
+                                    "max": 5,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:lantern",
+                    "weight": 4,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 1,
+                                    "max": 3,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:campfire",
+                    "weight": 2
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:oak_planks",
+                    "weight": 5,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 4,
+                                    "max": 16,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:spruce_planks",
+                    "weight": 5,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 4,
+                                    "max": 16,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:red_sandstone",
+                    "weight": 5,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 3,
+                                    "max": 12,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_carrot",
+                    "weight": 1,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 1,
+                                    "max": 3,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:arrow",
+                    "weight": 2,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 3,
+                                    "max": 8,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:tipped_arrow",
+                    "weight": 1,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "id": "minecraft:weakness",
+                                "type": "minecraft:set_potion"
+                            },
+                            {
+                                "count": {
+                                    "min": 2,
+                                    "max": 5,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:tipped_arrow",
+                    "weight": 1,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "id": "minecraft:poison",
+                                "type": "minecraft:set_potion"
+                            },
+                            {
+                                "count": {
+                                    "min": 2,
+                                    "max": 5,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:tipped_arrow",
+                    "weight": 1,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "id": "minecraft:slowness",
+                                "type": "minecraft:set_potion"
+                            },
+                            {
+                                "count": {
+                                    "min": 2,
+                                    "max": 5,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            }
+                        ]
+                    }
                 }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:potion",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:strength"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:potion",
-          "weight": 3,
-          "functions": [
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:night_vision"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:potion",
-          "weight": 7,
-          "functions": [
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:regeneration"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:potion",
-          "weight": 4,
-          "functions": [
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:leaping"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:potion",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:invisibility"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:lever",
-          "weight": 4
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:salmon",
-          "weight": 6,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 6
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:mushroom_stew",
-          "weight": 4
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:sweet_berries",
-          "weight": 6,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:lantern",
-          "weight": 4,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 3
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:campfire",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:oak_planks",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 4,
-                "max": 16
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:spruce_planks",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 4,
-                "max": 16
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:red_sandstone",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 3,
-                "max": 12
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:golden_carrot",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 3
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:arrow",
-          "weight": 2,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 3,
-                "max": 8
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:tipped_arrow",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:weakness"
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:tipped_arrow",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:poison"
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 5
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:tipped_arrow",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:slowness"
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 5
-              }
-            }
-          ]
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

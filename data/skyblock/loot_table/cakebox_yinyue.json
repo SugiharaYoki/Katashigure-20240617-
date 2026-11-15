@@ -1,210 +1,243 @@
 {
-  "pools": [
-    {
-      "rolls": 26,
-      "entries": [
+    "pools": [
         {
-          "type": "minecraft:item",
-          "name": "cookie",
-          "weight": 50,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 3,
-                "max": 12
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 3,
-                "max": 12
-              }
-            }
-          ]
+            "rolls": 26,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "cookie",
+                    "weight": 50,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 3,
+                                    "max": 12,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 3,
+                                    "max": 12
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:empty",
+                    "weight": 580
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "pumpkin_pie",
+                    "weight": 40,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 1,
+                                    "max": 4,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 4
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "egg",
+                    "weight": 5,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 1,
+                                    "max": 1,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "enchanted_golden_apple",
+                    "weight": 1,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "type": "minecraft:limit_count"
+                            },
+                            {
+                                "name": "谜团隐月私藏金苹果",
+                                "entity": "this",
+                                "type": "minecraft:set_name"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "golden_apple",
+                    "weight": 5,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 1
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "cooked_cod",
+                    "weight": 35,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 2,
+                                    "max": 3,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 2,
+                                    "max": 3
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "apple",
+                    "weight": 40,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 1,
+                                    "max": 4,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 1,
+                                    "max": 4
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "sweet_berries",
+                    "weight": 10,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": {
+                                    "min": 2,
+                                    "max": 6,
+                                    "type": "minecraft:uniform"
+                                },
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 2,
+                                    "max": 3
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "milk_bucket",
+                    "weight": 4
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "pufferfish_bucket",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "bread",
+                    "weight": 30,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "count": 4,
+                                "type": "minecraft:set_count"
+                            },
+                            {
+                                "limit": {
+                                    "min": 4,
+                                    "max": 6
+                                },
+                                "type": "minecraft:limit_count"
+                            }
+                        ]
+                    }
+                }
+            ]
         },
         {
-          "type": "minecraft:empty",
-          "weight": 580
-        },
-        {
-          "type": "minecraft:item",
-          "name": "pumpkin_pie",
-          "weight": 40,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 4
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 4
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "egg",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 1
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "enchanted_golden_apple",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 1
-              }
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": "谜团隐月私藏金苹果",
-              "entity": "this"
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "golden_apple",
-          "weight": 5,
-          "functions": [
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 1
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "cooked_cod",
-          "weight": 35,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 3
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 2,
-                "max": 3
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "apple",
-          "weight": 40,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 1,
-                "max": 4
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 1,
-                "max": 4
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "sweet_berries",
-          "weight": 10,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 2,
-                "max": 6
-              }
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 2,
-                "max": 3
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "milk_bucket",
-          "weight": 4
-        },
-        {
-          "type": "minecraft:item",
-          "name": "pufferfish_bucket",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "name": "bread",
-          "weight": 30,
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": 4
-            },
-            {
-              "function": "minecraft:limit_count",
-              "limit": {
-                "min": 4,
-                "max": 6
-              }
-            }
-          ]
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "cake",
+                    "weight": 100
+                }
+            ]
         }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "cake",
-          "weight": 100
-        }
-      ]
-    }
-  ]
+    ]
 }

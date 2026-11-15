@@ -28,7 +28,7 @@ def generate():
 
 def custody():
     # Dedicated tagged loot resolves the player's real name without touching inventory.
-    loot={'type':'minecraft:command','pools':[{'rolls':1,'entries':[{'type':'minecraft:item','name':'minecraft:paper','functions':[{'function':'minecraft:set_components','components':{'minecraft:custom_data':{'mahjong_name':True}}},{'function':'minecraft:set_name','name':{'selector':'@s'},'entity':'this'}]}]}]}
+    loot={'type':'minecraft:command','pools':[{'rolls':1,'entries':[{'type':'minecraft:item','name':'minecraft:paper','modifier':[{'type':'minecraft:set_components','components':{'minecraft:custom_data':{'mahjong_name':True}}},{'type':'minecraft:set_name','name':{'selector':'@s'},'entity':'this'}]}]}]}
     path=ROOT/'data/skyblock/loot_table/mahjong/player_name.json';path.parent.mkdir(parents=True,exist_ok=True);path.write_text(j(loot)+'\n')
     selector='@n[type=item,distance=..2,nbt={Item:{components:{"minecraft:custom_data":{mahjong_name:1b}}}}]'
     emit('caller/name',[sv('caller.name',{'text':'玩家'}),'loot spawn ~ ~ ~ loot skyblock:mahjong/player_name',f'data modify storage {ST} caller.name set from entity {selector} Item.components."minecraft:custom_name"',

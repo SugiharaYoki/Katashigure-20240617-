@@ -1,13 +1,19 @@
 {
-  "criteria": {
-    "hit": {
-      "trigger": "minecraft:player_hurt_entity",
-      "conditions": {
-        "entity": {
-          "nbt": "{Tags:[\"AzrielMob_typeMONSTER\"]}" 
+    "criteria": {
+        "hit": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{Tags:[\"AzrielMob_typeMONSTER\"]}"
+                    }
+                }
+            }
         }
-      }
+    },
+    "rewards": {
+        "function": "skyblock:azr/system/player/damage_bonus/monster"
     }
-  },
-  "rewards": { "function": "skyblock:azr/system/player/damage_bonus/monster" }
 }

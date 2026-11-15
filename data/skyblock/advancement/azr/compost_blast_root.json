@@ -3,27 +3,30 @@
         "trigger": {
             "trigger": "item_used_on_block",
             "conditions": {
-                "location": [
-                    {
-                        "condition": "block_state_property",
-                        "block": "composter"
-                    },
-                    {
-                        "condition": "entity_properties",
-                        "entity": "this",
-                        "predicate": {
-                            "slots": {
-                                "weapon.*": {
-                                    "components": {
-                                        "custom_data": {
-                                            "blast_root": 1
+                "location": {
+                    "type": "minecraft:all_of",
+                    "terms": [
+                        {
+                            "type": "minecraft:match_block",
+                            "blocks": "composter"
+                        },
+                        {
+                            "entity": "this",
+                            "predicate": {
+                                "slots": {
+                                    "weapon.*": {
+                                        "components": {
+                                            "custom_data": {
+                                                "blast_root": 1
+                                            }
                                         }
                                     }
                                 }
-                            }
+                            },
+                            "type": "entity_properties"
                         }
-                    }
-                ]
+                    ]
+                }
             }
         }
     },

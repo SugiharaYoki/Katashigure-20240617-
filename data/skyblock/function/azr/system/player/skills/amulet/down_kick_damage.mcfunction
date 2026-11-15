@@ -11,7 +11,7 @@ execute if items entity @s[tag=AZS_BoSB12] container.* *[custom_data~{azr_amulet
 execute unless entity @s[tag=front_slash_discount_pass] run scoreboard players remove @s AZR_chainKill_chargeup 800
 execute if entity @s[tag=front_slash_discount_pass] run scoreboard players remove @s AZR_chainKill_chargeup 500
 tag @s remove front_slash_discount_pass
-execute if block ~ ~-0.1 ~ honey_block run particle block{block_state:{Name:"honey_block"}} ~ ~ ~ 0.5 0.2 0.5 0.15 30
+execute if block ~ ~-0.1 ~ honey_block run particle block{block_state:{id:"honey_block"}} ~ ~ ~ 0.5 0.2 0.5 0.15 30
 execute if block ~ ~-0.1 ~ honey_block run playsound block.honey_block.break block @a ~ ~ ~ 1.5 0.8
 execute if block ~ ~-0.1 ~ honey_block run setblock ~ ~-0.1 ~ air
 

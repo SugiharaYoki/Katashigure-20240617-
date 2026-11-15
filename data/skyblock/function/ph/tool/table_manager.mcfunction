@@ -26,17 +26,17 @@
     execute as @a[tag=table4] if score @s 4ASCEND_startCount < table_4 4ASCEND_startCount run function skyblock:ph/runtime/leave
 #tables
     #display style negative
-    execute if data storage ph {table_manager:[{table:0,available:1b}]} run data merge entity @e[tag=city_table_0,type=block_display,limit=1] {block_state:{Name:"stone_pressure_plate"}}
-    execute if data storage ph {table_manager:[{table:1,available:1b}]} run data merge entity @e[tag=city_table_1,type=block_display,limit=1] {block_state:{Name:"stone_pressure_plate"}}
-    execute if data storage ph {table_manager:[{table:2,available:1b}]} run data merge entity @e[tag=city_table_2,type=block_display,limit=1] {block_state:{Name:"stone_pressure_plate"}}
-    execute if data storage ph {table_manager:[{table:3,available:1b}]} run data merge entity @e[tag=city_table_3,type=block_display,limit=1] {block_state:{Name:"stone_pressure_plate"}}
-    execute if data storage ph {table_manager:[{table:4,available:1b}]} run data merge entity @e[tag=city_table_4,type=block_display,limit=1] {block_state:{Name:"stone_pressure_plate"}}
+    execute if data storage ph {table_manager:[{table:0,available:1b}]} run data merge entity @e[tag=city_table_0,type=block_display,limit=1] {block_state:{id:"stone_pressure_plate"}}
+    execute if data storage ph {table_manager:[{table:1,available:1b}]} run data merge entity @e[tag=city_table_1,type=block_display,limit=1] {block_state:{id:"stone_pressure_plate"}}
+    execute if data storage ph {table_manager:[{table:2,available:1b}]} run data merge entity @e[tag=city_table_2,type=block_display,limit=1] {block_state:{id:"stone_pressure_plate"}}
+    execute if data storage ph {table_manager:[{table:3,available:1b}]} run data merge entity @e[tag=city_table_3,type=block_display,limit=1] {block_state:{id:"stone_pressure_plate"}}
+    execute if data storage ph {table_manager:[{table:4,available:1b}]} run data merge entity @e[tag=city_table_4,type=block_display,limit=1] {block_state:{id:"stone_pressure_plate"}}
     #display style positive
-    execute if data storage ph {table_manager:[{table:0,available:0b}]} run data merge entity @e[tag=city_table_0,type=block_display,limit=1] {block_state:{Name:"white_carpet"}}
-    execute if data storage ph {table_manager:[{table:1,available:0b}]} run data merge entity @e[tag=city_table_1,type=block_display,limit=1] {block_state:{Name:"white_carpet"}}
-    execute if data storage ph {table_manager:[{table:2,available:0b}]} run data merge entity @e[tag=city_table_2,type=block_display,limit=1] {block_state:{Name:"white_carpet"}}
-    execute if data storage ph {table_manager:[{table:3,available:0b}]} run data merge entity @e[tag=city_table_3,type=block_display,limit=1] {block_state:{Name:"white_carpet"}}
-    execute if data storage ph {table_manager:[{table:4,available:0b}]} run data merge entity @e[tag=city_table_4,type=block_display,limit=1] {block_state:{Name:"white_carpet"}}
+    execute if data storage ph {table_manager:[{table:0,available:0b}]} run data merge entity @e[tag=city_table_0,type=block_display,limit=1] {block_state:{id:"white_carpet"}}
+    execute if data storage ph {table_manager:[{table:1,available:0b}]} run data merge entity @e[tag=city_table_1,type=block_display,limit=1] {block_state:{id:"white_carpet"}}
+    execute if data storage ph {table_manager:[{table:2,available:0b}]} run data merge entity @e[tag=city_table_2,type=block_display,limit=1] {block_state:{id:"white_carpet"}}
+    execute if data storage ph {table_manager:[{table:3,available:0b}]} run data merge entity @e[tag=city_table_3,type=block_display,limit=1] {block_state:{id:"white_carpet"}}
+    execute if data storage ph {table_manager:[{table:4,available:0b}]} run data merge entity @e[tag=city_table_4,type=block_display,limit=1] {block_state:{id:"white_carpet"}}
 #seats
     #count limitation
     execute store result score temp 4ASCEND_system if entity @e[tag=city_seat_0_A]

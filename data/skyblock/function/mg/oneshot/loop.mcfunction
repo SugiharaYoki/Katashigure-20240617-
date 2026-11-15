@@ -6,7 +6,7 @@ execute as @e[tag=OneShot] at @s if block ~0.18 ~ ~ mangrove_leaves run setblock
 execute as @e[tag=OneShot] at @s if block ~-0.18 ~ ~ mangrove_leaves run setblock ~-0.18 ~ ~ air destroy
 execute as @e[tag=OneShot] at @s if block ~ ~0.18 ~ mangrove_leaves run setblock ~ ~0.18 ~ air destroy
 execute as @e[tag=OneShot] at @s if block ~ ~-0.18 ~ mangrove_leaves run setblock ~ ~-0.18 ~ air destroy
-execute as @e[tag=OneShot,nbt={inBlockState:{Name:"minecraft:mangrove_roots"}}] at @s run summon marker ~ ~ ~ {Tags:["OneShotDArRt"]}
+execute as @e[tag=OneShot,nbt={inBlockState:{id:"minecraft:mangrove_roots"}}] at @s run summon marker ~ ~ ~ {Tags:["OneShotDArRt"]}
 execute as @e[type=marker,tag=OneShotDArRt] at @s run kill @e[type=arrow,distance=0..0.2]
 execute as @e[type=marker,tag=OneShotDArRt] at @s run kill @e[type=spectral_arrow,distance=0..0.2]
 execute as @e[type=marker,tag=OneShotDArRt] at @s if block ~ ~-0.1 ~ mangrove_roots run setblock ~ ~-0.1 ~ air destroy
@@ -15,7 +15,7 @@ execute as @e[type=marker,tag=OneShotDArRt] at @s if block ~-0.1 ~ ~ mangrove_ro
 execute as @e[type=marker,tag=OneShotDArRt] at @s if block ~0.1 ~ ~ mangrove_roots run setblock ~0.1 ~ ~ air destroy
 execute as @e[type=marker,tag=OneShotDArRt] at @s if block ~ ~ ~-0.1 mangrove_roots run setblock ~ ~ ~-0.1 air destroy
 execute as @e[type=marker,tag=OneShotDArRt] at @s if block ~ ~ ~0.1 mangrove_roots run setblock ~ ~ ~0.1 air destroy
-execute as @e[type=spectral_arrow,tag=OneShot,nbt={inBlockState:{Name:"minecraft:mangrove_planks"}}] at @s run summon marker ~ ~ ~ {Tags:["OneShotDArPk"]}
+execute as @e[type=spectral_arrow,tag=OneShot,nbt={inBlockState:{id:"minecraft:mangrove_planks"}}] at @s run summon marker ~ ~ ~ {Tags:["OneShotDArPk"]}
 execute as @e[type=marker,tag=OneShotDArPk] at @s run kill @e[type=spectral_arrow,distance=0..0.2]
 execute as @e[type=marker,tag=OneShotDArPk] at @s if block ~ ~-0.1 ~ mangrove_planks run setblock ~ ~-0.1 ~ air destroy
 execute as @e[type=marker,tag=OneShotDArPk] at @s if block ~ ~0.1 ~ mangrove_planks run setblock ~ ~0.1 ~ air destroy

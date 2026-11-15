@@ -103,12 +103,12 @@ execute if score stage_main_thread AzrTimerStack matches 272 if score #temp_rng 
 execute if score stage_main_thread AzrTimerStack matches 275..276 positioned -79931 38 46 if entity @n[distance=..10,tag=AzrielMob_StageProgressTarget] run scoreboard players set stage_main_thread AzrTimerStack 275
 
 #粒子效果动画 - 屋顶坍塌
-execute if score stage_main_thread AzrTimerStack matches 272 run particle minecraft:block{block_state:{Name:quartz_block}} -79930.49 48.00 44.50 1 0 1 0.5 200 normal
-execute if score stage_main_thread AzrTimerStack matches 273..275 run particle minecraft:block{block_state:{Name:quartz_block}} -79930.49 48.00 44.50 1 0 1 0.5 20 force
-execute if score stage_main_thread AzrTimerStack matches 277..283 run particle minecraft:block{block_state:{Name:quartz_block}} -79930.49 48.00 44.50 1 0 1 0.5 40 normal
+execute if score stage_main_thread AzrTimerStack matches 272 run particle minecraft:block{block_state:{id:quartz_block}} -79930.49 48.00 44.50 1 0 1 0.5 200 normal
+execute if score stage_main_thread AzrTimerStack matches 273..275 run particle minecraft:block{block_state:{id:quartz_block}} -79930.49 48.00 44.50 1 0 1 0.5 20 force
+execute if score stage_main_thread AzrTimerStack matches 277..283 run particle minecraft:block{block_state:{id:quartz_block}} -79930.49 48.00 44.50 1 0 1 0.5 40 normal
 execute if score stage_main_thread AzrTimerStack matches 283 positioned -79931 44 44 run function skyblock:azr/assets/mobs/zoglin
 execute if score stage_main_thread AzrTimerStack matches 284 positioned -79931 44 44 run effect give @n[type=zoglin,distance=..20] resistance infinite 4 true
-execute if score stage_main_thread AzrTimerStack matches 284 run particle minecraft:block{block_state:{Name:quartz_block}} -79930.49 48.00 44.50 1 0 1 0.8 200 normal
+execute if score stage_main_thread AzrTimerStack matches 284 run particle minecraft:block{block_state:{id:quartz_block}} -79930.49 48.00 44.50 1 0 1 0.8 200 normal
 execute if score stage_main_thread AzrTimerStack matches 284 run particle explosion -79930.49 47.00 44.50 2 0 2 0.8 10 normal
 execute if score stage_main_thread AzrTimerStack matches 284 run playsound minecraft:entity.generic.explode block @a -79930.64 48.00 44.44 2 0.7
 execute if score stage_main_thread AzrTimerStack matches 284 positioned -79937 38 46 run fill -79932 48 44 -79930 48 44 air

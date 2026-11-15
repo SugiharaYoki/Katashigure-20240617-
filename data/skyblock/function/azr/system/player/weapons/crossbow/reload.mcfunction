@@ -1,2 +1,2 @@
 clear @s[gamemode=!creative] *[custom_data~{crossbow_arrow:1b}] 1
-item modify entity @s weapon.mainhand {"function":"set_components","components":{"charged_projectiles":[{"id":"arrow","count":1,"components":{"intangible_projectile":{}}}]}}
+item modify entity @s weapon.mainhand {type:"set_components","components":{"charged_projectiles":[{"id":"arrow","count":1,"components":{"intangible_projectile":{}}}]}}

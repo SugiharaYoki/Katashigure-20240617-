@@ -1,4 +1,4 @@
-particle block{block_state:{Name:"rooted_dirt"}} ~ ~ ~ 0 0 0 0.01 5
+particle block{block_state:{id:"rooted_dirt"}} ~ ~ ~ 0 0 0 0.01 5
 
 execute at @s if entity @e[tag=AzrielMob,distance=..3] run function skyblock:azr/system/player/weapons/blast_root/trigger
 

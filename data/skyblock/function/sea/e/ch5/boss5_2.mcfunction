@@ -37,8 +37,8 @@ execute positioned 90142 134 26 as @e[type=marker,tag=SEA_boss5_lightning_anchor
 execute positioned 90142 134 26 as @e[type=marker,tag=SEA_boss5_attack_rail,distance=0..50] at @s run function skyblock:sea/e/ch5/boss5/attack_rail_marker
 execute positioned 90142 134 26 as @e[type=marker,tag=SEA_boss5_attack_still_strike,distance=0..50] at @s run function skyblock:sea/e/ch5/boss5/attack_still_strike_marker
 
-execute positioned 90142 134 26 as @e[type=#illager,distance=0..150,type=pillager] at @s if entity @n[tag=SEAmob,distance=..12,type=!#illager] run function skyblock:sea/e/ch5/boss5/npc_help
-execute positioned 90142 134 26 as @e[type=#illager,distance=0..150,type=vindicator] at @s if entity @n[tag=SEAmob,distance=..9,type=!#illager] run function skyblock:sea/e/ch5/boss5/npc_help
+execute positioned 90142 134 26 as @e[distance=0..150,type=pillager] at @s if entity @n[tag=SEAmob,distance=..12,type=!#illager] run function skyblock:sea/e/ch5/boss5/npc_help
+execute positioned 90142 134 26 as @e[distance=0..150,type=vindicator] at @s if entity @n[tag=SEAmob,distance=..9,type=!#illager] run function skyblock:sea/e/ch5/boss5/npc_help
 
 execute positioned 90142 134 26 as @n[distance=..200,type=vindicator] at @s if entity @n[tag=SEAboss5,distance=8..] run effect give @a[distance=0..2] resistance 1 4 true
 

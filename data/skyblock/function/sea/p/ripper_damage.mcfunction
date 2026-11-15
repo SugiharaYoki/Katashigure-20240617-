@@ -1,5 +1,5 @@
-execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ run particle block{block_state:{Name:iron_block}} ~ ~ ~ 0.2 0 0.2 0.3 8
-execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ run particle block{block_state:{Name:smooth_stone}} ~ ~ ~ 0.2 0 0.2 0.7 3
+execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ run particle block{block_state:{id:iron_block}} ~ ~ ~ 0.2 0 0.2 0.3 8
+execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ run particle block{block_state:{id:smooth_stone}} ~ ~ ~ 0.2 0 0.2 0.7 3
 
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ run playsound ui.stonecutter.take_result block @a ~ ~ ~ 0.98 1.7
 execute if score @s sea_ripper matches 1.. positioned ^ ^ ^ unless block ~ ~ ~ water run playsound block.chain.step block @a ~ ~ ~ 0.6 2

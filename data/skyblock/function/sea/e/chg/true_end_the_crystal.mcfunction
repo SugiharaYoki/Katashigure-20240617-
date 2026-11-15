@@ -18,8 +18,8 @@ execute if score SEA_chg_true_end sea_4temp1 matches 10..40 run particle witch 9
 execute if score SEA_chg_true_end sea_4temp1 matches 10..40 run particle witch 90093.5 131.5 102 0.1 3 0 0.2 10
 execute if score SEA_chg_true_end sea_4temp1 matches 20..40 run particle witch 90093 131.5 102 3 0.1 0 0.2 10
 execute if score SEA_chg_true_end sea_4temp1 matches 20..40 run particle witch 90093.5 131.5 102 0.1 3 0 0.2 10
-execute if score SEA_chg_true_end sea_4temp1 matches 30..40 run particle block{block_state:{Name:"amethyst_cluster"}} 90093 131.5 102 3 0.1 0 0.2 20
-execute if score SEA_chg_true_end sea_4temp1 matches 30..40 run particle block{block_state:{Name:"amethyst_cluster"}} 90093.5 131.5 102 0.1 3 0 0.2 20
+execute if score SEA_chg_true_end sea_4temp1 matches 30..40 run particle block{block_state:{id:"amethyst_cluster"}} 90093 131.5 102 3 0.1 0 0.2 20
+execute if score SEA_chg_true_end sea_4temp1 matches 30..40 run particle block{block_state:{id:"amethyst_cluster"}} 90093.5 131.5 102 0.1 3 0 0.2 20
 
 
 execute if score SEA_chg_true_end sea_4temp1 matches 40 run summon lightning_bolt 90093 131 102

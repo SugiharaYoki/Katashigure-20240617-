@@ -5,18 +5,10 @@
         "WEW"
     ],
     "key": {
-        "#": {
-            "item": "minecraft:sugar"
-        },
-        "H": {
-            "item": "minecraft:honey_bottle"
-        },
-        "W": {
-            "item": "minecraft:wheat"
-        },
-        "E": {
-            "item": "minecraft:egg"
-        }
+        "#": "minecraft:sugar",
+        "H": "minecraft:honey_bottle",
+        "W": "minecraft:wheat",
+        "E": "minecraft:egg"
     },
     "result": {
         "id": "pumpkin_pie",
@@ -24,12 +16,24 @@
         "components": {
             "food": {
                 "can_always_eat": true,
-                "eat_seconds": 2,
                 "nutrition": 3,
                 "saturation": 3
             },
-            "custom_name": "{\"text\":\"月饼\",\"italic\":true,\"color\":\"gold\"}",
-            "lore":["{\"text\":\"中秋快乐\",\"italic\":true,\"color\":\"white\"}"]
+            "custom_name": {
+                "text": "月饼",
+                "italic": true,
+                "color": "gold"
+            },
+            "lore": [
+                {
+                    "text": "中秋快乐",
+                    "italic": true,
+                    "color": "white"
+                }
+            ],
+            "minecraft:consumable": {
+                "consume_seconds": 2
+            }
         }
     }
 }

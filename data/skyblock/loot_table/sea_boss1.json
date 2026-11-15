@@ -1,83 +1,92 @@
 {
-  "type": "minecraft:generic",
-  "pools": [
-    {
-      "rolls": 10,
-      "entries": [
+    "type": "minecraft:generic",
+    "pools": [
         {
-          "type": "minecraft:empty",
-          "weight": 20
+            "rolls": 10,
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 20
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:wayfinder_armor_trim_smithing_template",
+                    "weight": 7,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "name": {
+                                    "text": "醒殉徒石板",
+                                    "color": "light_purple",
+                                    "italic": false
+                                },
+                                "type": "minecraft:set_name"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:raiser_armor_trim_smithing_template",
+                    "weight": 7,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "name": {
+                                    "text": "牧羊人石板",
+                                    "color": "light_purple",
+                                    "italic": false
+                                },
+                                "type": "minecraft:set_name"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:emerald",
+                    "weight": 32
+                }
+            ]
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:wayfinder_armor_trim_smithing_template",
-          "weight": 7,
-          "functions": [
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "醒殉徒石板",
-                "color": "light_purple",
-                "italic": false
-              }
-            }
-          ]
+            "rolls": 5,
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 30
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:splash_potion",
+                    "weight": 30,
+                    "modifier": {
+                        "type": "minecraft:sequence",
+                        "functions": [
+                            {
+                                "id": "minecraft:healing",
+                                "type": "minecraft:set_potion"
+                            }
+                        ]
+                    }
+                }
+            ]
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:raiser_armor_trim_smithing_template",
-          "weight": 7,
-          "functions": [
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "牧羊人石板",
-                "color": "light_purple",
-                "italic": false
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:emerald",
-          "weight": 32
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 15
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:glistering_melon_slice",
+                    "weight": 5
+                }
+            ]
         }
-      ]
-    },
-    {
-      "rolls": 5,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 30
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:splash_potion",
-          "weight": 30,
-          "functions": [
-            {
-              "function": "minecraft:set_potion",
-              "id": "minecraft:healing"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:empty",
-          "weight": 15
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:glistering_melon_slice",
-          "weight": 5
-        }
-      ]
-    }
-  ]
+    ]
 }

@@ -9,7 +9,7 @@ execute if score @s rng5 matches 2.. run particle crimson_spore ~ ~0.2 ~ 0.8 0.3
 execute if score @s rng5 matches 2 run playsound minecraft:ambient.warped_forest.mood hostile @a ~ ~ ~ 3 0.8
 execute if score @s rng5 matches 2 run playsound minecraft:ambient.warped_forest.mood hostile @a ~ ~ ~ 3 0.5
 
-execute if score @s rng5 matches 10.. as @a[tag=MG_AZR0PT,tag=!azr0_player_looking_at_devil_goat] at @s if predicate {condition:"minecraft:entity_properties",entity:"this",predicate:{type_specific:{type:"minecraft:player",looking_at:{type:"minecraft:goat"}}}} run tag @s add azr0_player_looking_at_devil_goat_process
+execute if score @s rng5 matches 10.. as @a[tag=MG_AZR0PT,tag=!azr0_player_looking_at_devil_goat] at @s if predicate {type:"minecraft:entity_properties",entity:"this",predicate:{"minecraft:type_specific/player":{looking_at:{"minecraft:entity_type":"minecraft:goat"}}}} run tag @s add azr0_player_looking_at_devil_goat_process
 execute if score @s rng5 matches 10.. as @a[tag=MG_AZR0PT,tag=azr0_player_looking_at_devil_goat_process] at @s run playsound minecraft:entity.warden.heartbeat hostile @s ~ ~ ~ 1 1.3
 execute if score @s rng5 matches 10.. as @a[tag=MG_AZR0PT,tag=azr0_player_looking_at_devil_goat_process] at @s run playsound minecraft:entity.elder_guardian.curse hostile @s ~ ~ ~ 1 0.5
 execute if score @s rng5 matches 10.. as @a[tag=MG_AZR0PT,tag=azr0_player_looking_at_devil_goat_process] at @s run rotate @n[tag=MG_AZR0BOSS_devil_goat] facing entity @s
