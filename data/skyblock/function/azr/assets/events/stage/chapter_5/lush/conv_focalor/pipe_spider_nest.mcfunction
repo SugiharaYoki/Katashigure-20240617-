@@ -110,6 +110,7 @@ execute if score @s rng1 matches 633 run tellraw @a[tag=azrShowDialog] {text:"�
 execute if score @s rng1 matches 633 as @n[tag=AzrielNPC_nymph] at @s run kill @e[tag=AzrielNPC_nymph,distance=0.1..500]
 
 
+execute if score @s rng1 matches 648 run tp @s -79791 188 -518 facing -79791 188 -515
 execute if score @s rng1 matches 648..649 at @n[tag=AzrielNPC_nymph] unless entity @a[tag=azrPlayer,distance=..12] run scoreboard players set @s rng1 648
 
 execute if score @s rng1 matches 650 run title @a[tag=azrShowDialog] actionbar {text:"我们是宁芙，我们是丛林背后的掌控者。",color:"red",bold:true}
