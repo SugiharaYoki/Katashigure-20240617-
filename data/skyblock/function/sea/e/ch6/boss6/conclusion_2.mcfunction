@@ -313,13 +313,13 @@ execute if score SEA_ch6_event sea_4temp4 matches 3600 as @p[tag=SEAPT] at @s ru
 execute if score SEA_ch6_event sea_4temp4 matches 3690 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"伊曼纽尔：",color:"aqua",bold:1b},{text:"\n“……你说什么？”",color:"white",bold: false}]
 execute if score SEA_ch6_event sea_4temp4 matches 3880 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"权之执理：",color:"red",bold:1b},{text:"\n“简直太过荒谬……不可置信！！”",color:"white",bold: false}]
 execute if score SEA_ch6_event sea_4temp4 matches 3970 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"权之执理：",color:"red",bold:1b},{text:"\n“雷米尔大人凭什么选择你？！”",color:"white",bold: false}]
-execute if score SEA_ch6_event sea_4temp4 matches 4060 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"权之执理：",color:"red",bold:1b},{text:"\n“抛开这件事不谈，拉斐尔大人和乌列尔大人又凭什么选择你？！！”",color:"white",bold: false}]
-execute if score SEA_ch6_event sea_4temp4 matches 4260 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"权之执理：",color:"red",bold:1b},{text:"\n“区区一介凡人……只是个随处可见的人类，维修工！连家人都没有的孤独的人类！！”",color:"white",bold: false}]
-execute if score SEA_ch6_event sea_4temp4 matches 4360 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"权之执理：",color:"red",bold:1b},{text:"\n“场地方面也是，雷米尔大人怎么可能会在这种地方选择后继之人？！”",color:"white",bold: false}]
+execute if score SEA_ch6_event sea_4temp4 matches 4060 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"权之执理：",color:"red",bold:1b},{text:"\n“抛开这件事不谈，拉斐尔大人和乌列尔大人又凭什么选择你？！本该有更好的选择，我不承认你被选中！”",color:"white",bold: false}]
+execute if score SEA_ch6_event sea_4temp4 matches 4260 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"权之执理：",color:"red",bold:1b},{text:"\n“区区一介凡人……只是个随处可见的人类，维修工！孤独而软弱至极点的人类！！”",color:"white",bold: false}]
+execute if score SEA_ch6_event sea_4temp4 matches 4360 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"权之执理：",color:"red",bold:1b},{text:"\n“更别提这迂腐的海上建筑，雷米尔大人怎么可能会在这种地方选择后继之人？！”",color:"white",bold: false}]
 
 execute if score SEA_ch6_event sea_4temp4 matches 4361 as @p[tag=SEAPT] at @s run scoreboard players add SEA_ch6_event sea_4temp4 200
 
-execute if score SEA_ch6_event sea_4temp4 matches 5070 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"权之执理：",color:"red",bold:1b},{text:"\n“我已经窥见了自己的命运。既然是祂的计划，我愿奉陪到底。”",color:"white",bold: false}]
+execute if score SEA_ch6_event sea_4temp4 matches 5070 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"权之执理：",color:"red",bold:1b},{text:"\n“……我已经窥见了自己的命运。既然是祂的计划，我愿奉陪到底。”",color:"white",bold: false}]
 execute if score SEA_ch6_event sea_4temp4 matches 5150 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"权之执理：",color:"red",bold:1b},{text:"\n“在那之前，我们该脱离这个意识空间，堂堂正正打一场。”",color:"white",bold: false}]
 
 execute if score SEA_ch6_event sea_4temp4 matches 5170 as @a[tag=SEAPT] at @s run playsound entity.generic.explode block @a ~ ~ ~ 5 0.8
