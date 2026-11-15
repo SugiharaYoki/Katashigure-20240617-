@@ -7,6 +7,7 @@ execute if score @s rng1 matches 900.. run scoreboard players add @s rng1 1
 
 execute if score @s rng1 matches 2 as @n[tag=AzrielNPC_focalor] at @s run effect clear @s invisibility
 execute if score @s rng1 matches 2 as @n[tag=AzrielNPC_focalor] at @s run effect give @s resistance infinite 4 true
+execute if score @s rng1 matches 2 as @n[tag=AzrielNPC_focalor] at @s run effect give @s water_breathing infinite 4 true
 execute if score @s rng1 matches 2 as @n[tag=AzrielNPC_focalor] at @s run effect give @s regeneration infinite 4 true
 execute if score @s rng1 matches 1.. as @n[tag=AzrielNPC_focalor] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
