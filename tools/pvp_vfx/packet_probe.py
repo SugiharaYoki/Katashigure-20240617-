@@ -50,18 +50,18 @@ async def read_size(reader):
 
 class Probe:
     def __init__(self,name):
-        self.name=name;self.state='login';self.pos=None;self.writer=None
+        self.name=name;self.state='login';self.pos=None;self.rotation=(0,0);self.writer=None
         self.reset()
 
     def reset(self):
         self.counts=collections.Counter();self.minimum={};self.violations=[]
-        self.trail_durations=set();self.errors=[];self.completed=False;self.light_cores=0;self.moving_trails=0
+        self.trail_durations=set();self.errors=[];self.completed=False;self.light_cores=0;self.moving_trails=0;self.near_visible=0
 
     def send(self,pid,data=b''):
         b=varint(pid)+data;self.writer.write(varint(len(b))+b)
 
     def particle(self,data):
-        kind,i=read_varint(data);limit=4
+        kind,i=read_varint(data);buffer=0
         if kind==22:  # dust_color_transition: two RGB ints + scale float
             scale=struct.unpack_from('>f',data,i+8)[0];i+=12
             if scale>.280001:self.violations.append('Long-lived dust scale')
@@ -69,8 +69,7 @@ class Probe:
             i+=8
         elif kind==59:  # trail: target vector, RGB int, duration VarInt
             target=struct.unpack_from('>ddd',data,i);i+=28
-            duration,i=read_varint(data,i);self.trail_durations.add(duration);limit=6
-            if duration!=4:self.violations.append('Trail duration is not four ticks')
+            duration,i=read_varint(data,i);self.trail_durations.add(duration)
         else:
             self.errors.append(f'Unexpected particle type {kind}');return
         i+=2  # overrideLimiter and alwaysShow
@@ -79,13 +78,21 @@ class Probe:
         if kind==59:
             travel=math.dist(pos,target)
             if travel<1e-6:
-                limit=4;self.light_cores+=1
+                self.light_cores+=1
+                if duration!=6:self.violations.append('Light core duration is not six ticks')
             else:
-                self.moving_trails+=1
+                self.moving_trails+=1;buffer=.75
+                if duration!=4:self.violations.append('Moving trail duration is not four ticks')
         distance=math.dist(self.pos,pos)
         self.minimum[kind]=min(self.minimum.get(kind,math.inf),distance)
         self.counts[kind]+=1
-        if distance<limit-1e-5:self.violations.append({'particle':kind,'distance':distance})
+        if distance<4:self.near_visible+=1
+        yaw,pitch=map(math.radians,self.rotation)
+        direction=(-math.sin(yaw)*math.cos(pitch),-math.sin(pitch),math.cos(yaw)*math.cos(pitch))
+        for depth,radius in ((0,1.15),(1.5,1.15),(3,1.25),(4.5,1.35)):
+            centre=tuple(self.pos[j]+(1.62 if j==1 else 0)+direction[j]*depth for j in range(3))
+            if math.dist(pos,centre)<radius+buffer-.002:
+                self.violations.append({'particle':kind,'guard_depth':depth,'distance':math.dist(pos,centre)})
         if kind==59 and math.dist(pos,target)>.751:self.violations.append('Long trail enters camera buffer')
 
     async def run(self):
@@ -116,6 +123,7 @@ class Probe:
                         flags=struct.unpack_from('>i',data,j+56)[0]
                         if flags&7:raise RuntimeError('Use absolute test teleports')
                         self.pos=struct.unpack_from('>ddd',data,j)
+                        self.rotation=struct.unpack_from('>ff',data,j+48)
                         self.send(0,varint(tid)+data[j:j+24]+data[j+48:j+56])
                         print(self.name,'position',self.pos,flush=True)
                     elif pid==48:self.particle(data)
@@ -126,7 +134,7 @@ class Probe:
             self.errors.append(str(e));print(self.name,str(e),flush=True)
 
     def result(self):
-        return {'name':self.name,'position':self.pos,'particles':sum(self.counts.values()),'types':dict(self.counts),'stationary_light_cores':self.light_cores,'moving_trails':self.moving_trails,'minimum_distance':self.minimum,'trail_durations':sorted(self.trail_durations),'completed':self.completed,'violations':self.violations,'errors':self.errors}
+        return {'name':self.name,'position':self.pos,'rotation':self.rotation,'near_visible':self.near_visible,'particles':sum(self.counts.values()),'types':dict(self.counts),'stationary_light_cores':self.light_cores,'moving_trails':self.moving_trails,'minimum_distance':self.minimum,'trail_durations':sorted(self.trail_durations),'completed':self.completed,'violations':self.violations,'errors':self.errors}
 
 
 async def main(output):

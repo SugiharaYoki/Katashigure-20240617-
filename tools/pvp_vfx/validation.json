@@ -1,6 +1,6 @@
 {
   "date": "2026-11-16",
-  "revision": "third_pass_peak_brightness",
+  "revision": "fourth_pass_restored_volume_and_camera_corridor",
   "server": "Purpur 26.3-2658",
   "runtime_assertions": 302,
   "bless24_regressions": 85,
@@ -9,27 +9,48 @@
   "visual_parameters": {
     "cast_pulse_ticks": [
       1,
-      2,
-      4,
-      6,
-      8,
-      10
+      3,
+      5,
+      7,
+      10,
+      13,
+      16,
+      19
     ],
     "cast_light_ticks": [
-      2,
-      4,
-      6
+      3,
+      5,
+      7,
+      10,
+      13
     ],
-    "light_duration_ticks": 4,
-    "cast_emitter_lifetime_ticks": 12,
+    "light_duration_ticks": 6,
+    "cast_emitter_lifetime_ticks": 22,
     "slash_ribbons": 5,
     "dust_scale_max": 0.28,
-    "stationary_near_exclusion_blocks": 4,
-    "moving_near_exclusion_blocks": 6
+    "eye_relative_guards": [
+      [
+        0,
+        1.15
+      ],
+      [
+        1.5,
+        1.15
+      ],
+      [
+        3,
+        1.25
+      ],
+      [
+        4.5,
+        1.35
+      ]
+    ],
+    "moving_guard_margin_blocks": 0.75
   },
   "protocol_scenarios": [
     {
-      "label": "brighter_casts",
+      "label": "camera_corridor",
       "players": [
         {
           "name": "FxNear",
@@ -38,19 +59,108 @@
             250.0,
             50052.5
           ],
-          "particles": 179682,
+          "rotation": [
+            0.0,
+            0.0
+          ],
+          "near_visible": 3,
+          "particles": 3,
           "types": {
-            "22": 171283,
-            "59": 8399
+            "22": 3
           },
-          "stationary_light_cores": 8311,
-          "moving_trails": 88,
+          "stationary_light_cores": 0,
+          "moving_trails": 0,
           "minimum_distance": {
-            "22": 4.000551586968179,
-            "59": 4.003788830594227
+            "22": 2.0035967658189113
+          },
+          "trail_durations": [],
+          "completed": true,
+          "violations": [],
+          "errors": []
+        },
+        {
+          "name": "FxFar",
+          "position": [
+            50062.5,
+            250.0,
+            50032.5
+          ],
+          "rotation": [
+            0.0,
+            0.0
+          ],
+          "near_visible": 0,
+          "particles": 5,
+          "types": {
+            "22": 5
+          },
+          "stationary_light_cores": 0,
+          "moving_trails": 0,
+          "minimum_distance": {
+            "22": 18.07275297236146
+          },
+          "trail_durations": [],
+          "completed": true,
+          "violations": [],
+          "errors": []
+        },
+        {
+          "name": "FxSide",
+          "position": [
+            50067.5,
+            250.0,
+            50052.5
+          ],
+          "rotation": [
+            90.0,
+            0.0
+          ],
+          "near_visible": 0,
+          "particles": 3,
+          "types": {
+            "22": 3
+          },
+          "stationary_light_cores": 0,
+          "moving_trails": 0,
+          "minimum_distance": {
+            "22": 5.386501647637361
+          },
+          "trail_durations": [],
+          "completed": true,
+          "violations": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "label": "full_volume_casts",
+      "players": [
+        {
+          "name": "FxNear",
+          "position": [
+            50062.5,
+            250.0,
+            50052.5
+          ],
+          "rotation": [
+            0.0,
+            0.0
+          ],
+          "near_visible": 123188,
+          "particles": 501949,
+          "types": {
+            "22": 461970,
+            "59": 39979
+          },
+          "stationary_light_cores": 39830,
+          "moving_trails": 149,
+          "minimum_distance": {
+            "22": 0.13999999999998636,
+            "59": 0.13999999999998636
           },
           "trail_durations": [
-            4
+            4,
+            6
           ],
           "completed": true,
           "violations": [],
@@ -63,19 +173,25 @@
             250.0,
             50032.5
           ],
-          "particles": 263612,
+          "rotation": [
+            0.0,
+            0.0
+          ],
+          "near_visible": 0,
+          "particles": 507744,
           "types": {
-            "22": 249982,
-            "59": 13630
+            "22": 466903,
+            "59": 40841
           },
-          "stationary_light_cores": 13475,
+          "stationary_light_cores": 40686,
           "moving_trails": 155,
           "minimum_distance": {
-            "22": 11.717824072756663,
-            "59": 12.649277054439093
+            "22": 9.299161467571116,
+            "59": 9.95642847611703
           },
           "trail_durations": [
-            4
+            4,
+            6
           ],
           "completed": true,
           "violations": [],
@@ -88,19 +204,25 @@
             250.0,
             50052.5
           ],
-          "particles": 204068,
+          "rotation": [
+            90.0,
+            0.0
+          ],
+          "near_visible": 96983,
+          "particles": 503814,
           "types": {
-            "22": 193572,
-            "59": 10496
+            "22": 463558,
+            "59": 40256
           },
-          "stationary_light_cores": 10383,
-          "moving_trails": 113,
+          "stationary_light_cores": 40106,
+          "moving_trails": 150,
           "minimum_distance": {
-            "22": 4.000031249878074,
-            "59": 4.000864156650982
+            "22": 0.0864465152560128,
+            "59": 0.13224598292598222
           },
           "trail_durations": [
-            4
+            4,
+            6
           ],
           "completed": true,
           "violations": [],
@@ -109,7 +231,7 @@
       ]
     },
     {
-      "label": "brighter_specials",
+      "label": "volume_specials",
       "players": [
         {
           "name": "FxNear",
@@ -118,19 +240,24 @@
             250.0,
             50052.5
           ],
-          "particles": 122,
+          "rotation": [
+            0.0,
+            0.0
+          ],
+          "near_visible": 13764,
+          "particles": 13912,
           "types": {
-            "22": 104,
-            "59": 18
+            "22": 12311,
+            "59": 1601
           },
-          "stationary_light_cores": 18,
+          "stationary_light_cores": 1601,
           "moving_trails": 0,
           "minimum_distance": {
-            "22": 4.007243426861425,
-            "59": 4.010675583379698
+            "22": 0.1499944921360997,
+            "59": 0.1499944921360997
           },
           "trail_durations": [
-            4
+            6
           ],
           "completed": true,
           "violations": [],
@@ -143,19 +270,24 @@
             250.0,
             50032.5
           ],
-          "particles": 11972,
+          "rotation": [
+            0.0,
+            0.0
+          ],
+          "near_visible": 0,
+          "particles": 15174,
           "types": {
-            "22": 10702,
-            "59": 1270
+            "22": 13502,
+            "59": 1672
           },
-          "stationary_light_cores": 1270,
+          "stationary_light_cores": 1672,
           "moving_trails": 0,
           "minimum_distance": {
             "22": 16.612861254759316,
             "59": 16.612861254759316
           },
           "trail_durations": [
-            4
+            6
           ],
           "completed": true,
           "violations": [],
@@ -168,19 +300,24 @@
             250.0,
             50052.5
           ],
-          "particles": 9284,
+          "rotation": [
+            90.0,
+            0.0
+          ],
+          "near_visible": 3464,
+          "particles": 15038,
           "types": {
-            "22": 8207,
-            "59": 1077
+            "22": 13382,
+            "59": 1656
           },
-          "stationary_light_cores": 1077,
+          "stationary_light_cores": 1656,
           "moving_trails": 0,
           "minimum_distance": {
-            "22": 4.001568961958061,
-            "59": 4.006363066219302
+            "22": 1.6135048711399838,
+            "59": 1.6537234285903382
           },
           "trail_durations": [
-            4
+            6
           ],
           "completed": true,
           "violations": [],
@@ -189,7 +326,7 @@
       ]
     },
     {
-      "label": "brighter_private",
+      "label": "volume_private",
       "players": [
         {
           "name": "FxNear",
@@ -198,6 +335,11 @@
             250.0,
             50052.5
           ],
+          "rotation": [
+            0.0,
+            0.0
+          ],
+          "near_visible": 0,
           "particles": 650,
           "types": {
             "22": 650
@@ -219,6 +361,11 @@
             250.0,
             50032.5
           ],
+          "rotation": [
+            0.0,
+            0.0
+          ],
+          "near_visible": 0,
           "particles": 0,
           "types": {},
           "stationary_light_cores": 0,
@@ -236,6 +383,11 @@
             250.0,
             50052.5
           ],
+          "rotation": [
+            90.0,
+            0.0
+          ],
+          "near_visible": 0,
           "particles": 0,
           "types": {},
           "stationary_light_cores": 0,
@@ -247,13 +399,297 @@
           "errors": []
         }
       ]
+    },
+    {
+      "label": "lantern_projectiles",
+      "players": [
+        {
+          "name": "FxNear",
+          "position": [
+            50062.5,
+            250.0,
+            50052.5
+          ],
+          "rotation": [
+            0.0,
+            0.0
+          ],
+          "near_visible": 80,
+          "particles": 200,
+          "types": {
+            "22": 200
+          },
+          "stationary_light_cores": 0,
+          "moving_trails": 0,
+          "minimum_distance": {
+            "22": 3.350272376984356
+          },
+          "trail_durations": [],
+          "completed": true,
+          "violations": [],
+          "errors": []
+        },
+        {
+          "name": "FxFar",
+          "position": [
+            50062.5,
+            250.0,
+            50032.5
+          ],
+          "rotation": [
+            0.0,
+            0.0
+          ],
+          "near_visible": 0,
+          "particles": 200,
+          "types": {
+            "22": 200
+          },
+          "stationary_light_cores": 0,
+          "moving_trails": 0,
+          "minimum_distance": {
+            "22": 14.000228569562713
+          },
+          "trail_durations": [],
+          "completed": true,
+          "violations": [],
+          "errors": []
+        },
+        {
+          "name": "FxSide",
+          "position": [
+            50067.5,
+            250.0,
+            50052.5
+          ],
+          "rotation": [
+            90.0,
+            0.0
+          ],
+          "near_visible": 24,
+          "particles": 200,
+          "types": {
+            "22": 200
+          },
+          "stationary_light_cores": 0,
+          "moving_trails": 0,
+          "minimum_distance": {
+            "22": 1.0031948963187571
+          },
+          "trail_durations": [],
+          "completed": true,
+          "violations": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "label": "tilted_specials",
+      "players": [
+        {
+          "name": "FxNear",
+          "position": [
+            50062.5,
+            250.0,
+            50052.5
+          ],
+          "rotation": [
+            30.0,
+            55.0
+          ],
+          "near_visible": 13788,
+          "particles": 14004,
+          "types": {
+            "22": 12528,
+            "59": 1476
+          },
+          "stationary_light_cores": 1476,
+          "moving_trails": 0,
+          "minimum_distance": {
+            "22": 0.2958353849755555,
+            "59": 0.2958353849755555
+          },
+          "trail_durations": [
+            6
+          ],
+          "completed": true,
+          "violations": [],
+          "errors": []
+        },
+        {
+          "name": "FxFar",
+          "position": [
+            50062.5,
+            250.0,
+            50032.5
+          ],
+          "rotation": [
+            160.0,
+            -35.0
+          ],
+          "near_visible": 0,
+          "particles": 15174,
+          "types": {
+            "22": 13502,
+            "59": 1672
+          },
+          "stationary_light_cores": 1672,
+          "moving_trails": 0,
+          "minimum_distance": {
+            "22": 16.612861254759316,
+            "59": 16.612861254759316
+          },
+          "trail_durations": [
+            6
+          ],
+          "completed": true,
+          "violations": [],
+          "errors": []
+        },
+        {
+          "name": "FxSide",
+          "position": [
+            50067.5,
+            250.0,
+            50052.5
+          ],
+          "rotation": [
+            -90.0,
+            -25.0
+          ],
+          "near_visible": 3600,
+          "particles": 15174,
+          "types": {
+            "22": 13502,
+            "59": 1672
+          },
+          "stationary_light_cores": 1672,
+          "moving_trails": 0,
+          "minimum_distance": {
+            "22": 1.6135048711399838,
+            "59": 1.6537234285903382
+          },
+          "trail_durations": [
+            6
+          ],
+          "completed": true,
+          "violations": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "label": "realtime_volume_stable",
+      "players": [
+        {
+          "name": "FxNear",
+          "position": [
+            50062.5,
+            250.0,
+            50052.5
+          ],
+          "rotation": [
+            0.0,
+            0.0
+          ],
+          "near_visible": 123188,
+          "particles": 501949,
+          "types": {
+            "22": 461970,
+            "59": 39979
+          },
+          "stationary_light_cores": 39830,
+          "moving_trails": 149,
+          "minimum_distance": {
+            "22": 0.13999999999998636,
+            "59": 0.13999999999998636
+          },
+          "trail_durations": [
+            4,
+            6
+          ],
+          "completed": true,
+          "violations": [],
+          "errors": []
+        },
+        {
+          "name": "FxFar",
+          "position": [
+            50062.5,
+            250.0,
+            50032.5
+          ],
+          "rotation": [
+            0.0,
+            0.0
+          ],
+          "near_visible": 0,
+          "particles": 507744,
+          "types": {
+            "22": 466903,
+            "59": 40841
+          },
+          "stationary_light_cores": 40686,
+          "moving_trails": 155,
+          "minimum_distance": {
+            "22": 9.299161467571116,
+            "59": 9.95642847611703
+          },
+          "trail_durations": [
+            4,
+            6
+          ],
+          "completed": true,
+          "violations": [],
+          "errors": []
+        },
+        {
+          "name": "FxSide",
+          "position": [
+            50067.5,
+            250.0,
+            50052.5
+          ],
+          "rotation": [
+            90.0,
+            0.0
+          ],
+          "near_visible": 96983,
+          "particles": 503814,
+          "types": {
+            "22": 463558,
+            "59": 40256
+          },
+          "stationary_light_cores": 40106,
+          "moving_trails": 150,
+          "minimum_distance": {
+            "22": 0.0864465152560128,
+            "59": 0.13224598292598222
+          },
+          "trail_durations": [
+            4,
+            6
+          ],
+          "completed": true,
+          "violations": [],
+          "errors": []
+        }
+      ]
     }
   ],
   "realtime_cleanup": {
     "animations_before": 40,
-    "ticks_stepped": 20,
+    "ticks_stepped": 30,
     "animations_after": 0,
     "light_markers_after": 0,
-    "streak_markers_after": 0
-  }
+    "streak_markers_after": 0,
+    "guard_markers_after": 0,
+    "viewer_tags_after": 0,
+    "received_packets_equal_manual_test": true
+  },
+  "notes": [
+    "The initial realtime attempt teleported new test players to spawn via existing onboarding; repeated after onboarding with stable positions, full packets matched manual emission.",
+    "The manual all-casts test executes every frame of 40 animations in one console call; it completed but emitted 10/15-second watchdog slow-response dumps. It is not a gameplay tick benchmark.",
+    "Protocol probes verify emission, recipients and camera exclusion. They do not render Minecraft textures or establish visual acceptance."
+  ]
 }

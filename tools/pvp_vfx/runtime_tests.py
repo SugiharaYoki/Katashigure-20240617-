@@ -7,7 +7,7 @@ concurrent; inspect storage pvpfx_test:result. Pure visual tests, no blocks.
 """
 import argparse,json,sys
 from pathlib import Path
-from generate import PROFILES,ROOT
+from generate import PROFILES,ROOT,TTL,Geometry,render
 
 p=argparse.ArgumentParser();p.add_argument('datapacks',type=Path);args=p.parse_args()
 assert args.datapacks.resolve()!=ROOT.parent.resolve(),'Use an isolated test server'
@@ -27,8 +27,8 @@ for n,p in PROFILES.items():
  assertion(lines,f'entity @e[type=marker,tag=PvpFx,nbt={{data:{{style:"{s}"}}}}]',s+'_style')
  lines+=['execute store result score count pfx.test if entity @e[type=item_display,tag=PvpFxDisplay]']
  assertion(lines,f'score count pfx.test matches {0}',s+'_projections')
- for _ in range(11):lines+=['execute as @e[type=marker,tag=PvpFx] at @s rotated as @s run function pvpfx:animation/tick']
- assertion(lines,'entity @e[type=marker,tag=PvpFx,scores={pfx.age=11}]',s+'_full_animation')
+ for _ in range(TTL-1):lines+=['execute as @e[type=marker,tag=PvpFx] at @s rotated as @s run function pvpfx:animation/tick']
+ assertion(lines,f'entity @e[type=marker,tag=PvpFx,scores={{pfx.age={TTL-1}}}]',s+'_full_animation')
  lines+=['execute as @e[type=marker,tag=PvpFx] at @s rotated as @s run function pvpfx:animation/tick']
  noentity(lines,'@e[type=marker,tag=PvpFx]',s+'_animation_cleanup')
 
@@ -96,7 +96,7 @@ lines=['function pvpfx:cleanup']
 for n in PROFILES:
  lines += [f'execute as FxNear at @s run function pvpfx:skill/{n:02}/cast']
 lines+=['execute as FxNear at @s run function pvpfx:skill/20/slam']
-for _ in range(12):
+for _ in range(TTL):
  lines+=['execute as @e[tag=PvpFx,type=marker] at @s rotated as @s run function pvpfx:animation/tick']
 lines+=['execute store result storage pvpfx_test:result remaining int 1 if entity @e[tag=PvpFx,type=marker]','tellraw @a {text:"PVPFX_PROBE_END"}']
 write('packet_casts',lines)
@@ -110,6 +110,22 @@ for power in range(1,6):
   lines += [f'execute as FxNear at @s run function pvpfx:skill/24/drill_{power}_{frame}']
 lines += ['execute as FxNear at @s rotated 15 25 run function pvpfx:skill/39/beam_frame','execute as FxNear at @s rotated 25 -15 run function pvpfx:skill/36/sweep','tellraw @a {text:"PVPFX_PROBE_END"}']
 write('packet_specials',lines)
+# Camera fixtures: same points, three different view positions / yaw angles.
+# A side point and a ground point must survive even inside the old 4-block cut.
+g=Geometry()
+for x,y,z in ((2,1.62,0),(0,1.62,3),(0,.12,2),(0,1.62,-2),(0,1.62,0)):
+ g.point(x,y,z)
+write('camera_draw',render(g,PROFILES[24]))
+write('packet_camera',['execute at FxNear as @a[distance=..160] run function pvpfx:view/init {effect:"pvpfx_test:camera_draw"}', 'tellraw @a {text:"PVPFX_PROBE_END"}'])
+write('guard_cleanup', ['execute store result storage pvpfx_test:result viewers_after int 1 if entity @a[tag=PvpFxViewer]']+[f'execute store result storage pvpfx_test:result guards_{i}_after int 1 if entity @e[type=marker,tag=PvpFxGuard{i}]' for i in range(4)]+['execute store result storage pvpfx_test:result lights_after int 1 if entity @e[type=marker,tag=PvpFxLight]', 'execute store result storage pvpfx_test:result streaks_after int 1 if entity @e[type=marker,tag=PvpFxStreak]'])
+
+lines=['data modify storage pvpfx:args radius set value 6.0']
+for mode in (1,2,3):lines += [f'execute as FxNear at @s run function pvpfx:skill/37/aura_{mode}']
+for n in (13,25,26,29,31):lines += [f'execute as FxNear at @s positioned ~2 ~1 ~3 run function pvpfx:skill/{n}/trail']
+lines+=['tellraw @a {text:"PVPFX_PROBE_END"}']
+write('packet_surfaces',lines)
+write('packet_angles',['tp FxNear 50062.5 250 50052.5 30 55','tp FxFar 50062.5 250 50032.5 160 -35','tp FxSide 50067.5 250 50052.5 -90 -25'])
+
 write('realtime',['function pvpfx:cleanup']+[f'execute as @e[tag=PvpFxTest,limit=1] at @s run function pvpfx:skill/{n:02}/cast' for n in PROFILES]+['execute as @e[tag=PvpFxTest,limit=1] at @s run function pvpfx:skill/20/slam'])
 
 print('Installed',len(list(f.glob('*.mcfunction'))),'isolated runtime test functions:',out)

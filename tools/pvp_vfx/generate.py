@@ -59,13 +59,15 @@ PROFILES = [
 PROFILES = {row[0]: dict(zip(('id','name','shape','a','b','spark','sound','item'),row)) for row in PROFILES}
 GENERATED = set()
 PREVIEW = {}
-FRAME_TICKS = (1, 2, 4, 6, 8, 10)
-TTL = 12
-NEAR_CLIP = 4
+FRAME_TICKS = (1, 3, 5, 7, 10, 13, 16, 19)
+TTL = 22
+# Eye-relative spheres protect the camera and a narrow forward aiming corridor.
+# Sideways / low particles at the same distance remain visible.
+VIEW_GUARDS = ((0, 1.15), (1.5, 1.15), (3, 1.25), (4.5, 1.35))
 DUST_SCALE = .24  # Client DustParticleBase: lifetime < 40 * scale ticks.
-LIGHT_DURATION = 4
+LIGHT_DURATION = 6
 LIGHT_SPACING = .28
-PEAK_FRAMES = (1, 2, 3)  # Bright only at wind-up snap / strike / follow-through.
+PEAK_FRAMES = (1, 2, 3, 4, 5)
 
 
 def write(name, lines):
@@ -106,13 +108,13 @@ class Geometry:
             a=start+sweep*i/steps
             self.point(center[0]+r*math.cos(a),center[1]+y,center[2]+r*math.sin(a),tone)
 
-    def slash(self, r, a, sweep, y=.16, tone=0, center=(0,0,0)):
+    def slash(self, r, a, sweep, y=.16, tone=0, center=(0,0,0), lift=0):
         # Five tapered ribbons give the cut weight without filling the disk.
         for lane in range(5):
             for i in range(65):
                 t=i/64; angle=a+sweep*t
                 rr=r-lane*.12*math.sin(math.pi*t)
-                self.point(center[0]+rr*math.cos(angle),y+center[1],center[2]+rr*math.sin(angle),tone if lane else 2)
+                self.point(center[0]+rr*math.cos(angle),y+center[1]+lift*math.sin(math.pi*t),center[2]+rr*math.sin(angle),tone if lane else 2)
 
     def shard(self, x, y, z, length, angle, tone=0):
         dx,dz=math.cos(angle),math.sin(angle)
@@ -132,7 +134,7 @@ def illuminate(g, spacing=LIGHT_SPACING):
     """A connected, full-bright core inside the existing silhouette.
 
     Sample by distance rather than point index so long lines stay connected and
-    shared vertices do not become hot blobs. Stationary four-tick trails decouple
+    shared vertices do not become hot blobs. Stationary six-tick trails decouple
     brightness from the dust size/lifetime tradeoff. No new orbital geometry.
     """
     cells={}
@@ -171,27 +173,29 @@ def cracks(g, r, seed=0, count=7):
 def geometry(n, frame, shape=None):
     """Wind-up -> strike -> travelling break-up. All casts leave their origin.
 
-    Ground layers use yaw only. Elevated strokes avoid the 0.5..3.5 eye band;
-    all points additionally clip against EVERY viewer, including bystanders.
+    Full-height silhouettes expand away from their fixed world origin. The
+    renderer clips only each viewer's camera / forward corridor, not a whole
+    four-block sphere or a global eye-height band.
     """
     p=PROFILES[n];shape=shape or p['shape'];g=Geometry()
-    t=frame/5;e=1-(1-t)**2
-    r=1.8+4.5*e;phi=n*.37
+    t=frame/(len(FRAME_TICKS)-1);e=1-(1-t)**2
+    r=1.8+6.4*e;phi=n*.37
     early=frame<2
     if shape in ('slash','crescent'):
         for j in range(2 if shape=='slash' else 3):
-            g.slash(r-j*.28, -.9+e*1.5+j*.16,1.8-.55*t,.16+j*.035,j%2,center=(0,0,2+e*2))
+            g.slash(r-j*.28, -.9+e*1.5+j*.16,1.8-.55*t,.16+j*.035,j%2,center=(0,0,2+e*2),lift=(1.8+j*.65)*math.sin(math.pi*t))
         if not early:
             for j in range(5):g.shard(-2+j, .2, 4+e*3+j*.2,1.1*(1-t)+.3,.5, j%2)
     elif shape in ('wings','seraph'):
-        # Feather fans unfold UP and BEHIND the player, never across the eyes.
+        # Feather fans unfold to the sides and behind the fixed cast origin.
         for side in (-1,1):
             for j in range(8):
-                x=side*(2+e*3.8+j*.14);y=4.2+math.sin(j*.2)*2.1+e*1.2;z=-1.4-j*.25-e
-                root=(side*(1.2+j*.18),3.8+j*.12,-1.7)
+                x=side*(2+e*6+j*.18);y=2.4+math.sin(j*.2)*4.1+e*2;z=-1.4-j*.25-e
+                root=(side*(1.3+j*.18),1.1+j*.15,-1.7)
                 tip=(x,y,z)
                 g.line(root,tip,j%2)
                 g.line((x-side*.35,y-.6,z+.1),tip,2)
+                g.line((x-side*.8,y-1.4,z+.2),tip,j%2)
                 if frame==2:g.streak(*tip,side*.35,.4,-.2,j%2)
         for side in (-1,1):g.slash(r,side*.4,1.1,.1,1)
     elif shape in ('storm','judgment'):
@@ -200,10 +204,11 @@ def geometry(n, frame, shape=None):
         else:
             for j in range(3 if shape=='storm' else 5):
                 a=TAU*j/5+phi;x,z=(2.7+e)*math.cos(a),(2.7+e)*math.sin(a)
-                for k in range(10):
-                    y=4+k*.8
+                for k in range(16):
+                    y=.1+k
                     dx=math.sin(k*12+j*3)*.45;nx=math.sin((k+1)*12+j*3)*.45
-                    g.line((x+dx,y,z),(x+nx,y+.8,z+.12*math.sin(k)),j%2)
+                    g.line((x+dx,y,z),(x+nx,y+1,z+.12*math.sin(k)),j%2)
+                    if k in (5,9,12):g.line((x+dx,y,z),(x+dx+(-1)**j*1.7,y-1.5,z+.8),2)
                 if frame==2:g.streak(x,4,z,.1,-.65,0,2)
             cracks(g,r,n)
             if shape=='judgment':
@@ -213,11 +218,11 @@ def geometry(n, frame, shape=None):
             for j in range(6):g.slash(3.5-frame*.9,TAU*j/6,.6,.1,j%2)
         else:
             cracks(g,r,n,9)
-            # Wide, broken spiral at the ground; the drill special goes DOWN.
+            # A broken spiral rises outwards; the actual drill goes DOWN.
             for j in range(4):
                 for k in range(55):
                     u=k/54;a=TAU*j/4+u*1.25+e;rr=2+u*(r-2)
-                    g.point(rr*math.cos(a),.14,rr*math.sin(a),j%2)
+                    g.point(rr*math.cos(a),.14+2.5*math.sin(math.pi*u)*(1-t),rr*math.sin(a),j%2)
             for j in range(10):
                 a=TAU*j/10;g.shard(r*math.cos(a),.12,r*math.sin(a),.8,a,j%2)
     elif shape in ('petals','lotus','grove'):
@@ -225,8 +230,9 @@ def geometry(n, frame, shape=None):
             a=TAU*j/(8 if shape=='lotus' else 6)+phi
             for k in range(75):
                 u=TAU*k/74;rr=1.5+(r-1.5)*math.sin(u/2);w=.65*math.sin(u)*(1-.45*t)
-                # The lotus opens at ankle height, then scatters outward.
-                g.point(rr*math.cos(a)+w*math.sin(a),.12+.12*math.sin(u/2),rr*math.sin(a)-w*math.cos(a),j%2)
+                height=(3.4 if shape=='lotus' else 2.2)*math.sin(math.pi*t)
+                g.point(rr*math.cos(a)+w*math.sin(a),.12+height*math.sin(u/2)**2,rr*math.sin(a)-w*math.cos(a),j%2)
+                if shape=='lotus':g.point(rr*.73*math.cos(a)-w*math.sin(a),.16+height*.65*math.sin(u/2)**2,rr*.73*math.sin(a)+w*math.cos(a),1)
             if frame in (2,4):g.streak(r*math.cos(a),.2,r*math.sin(a),.55*math.cos(a),.12,.55*math.sin(a),j%2)
     elif shape in ('shield','bastion'):
         for j in range(6):
@@ -235,6 +241,8 @@ def geometry(n, frame, shape=None):
             for side in (-1,1):
                 g.line((x,.12,z),(x+side*.7*math.sin(a),.12,z-side*.7*math.cos(a)),j%2)
                 g.line((x+side*.7*math.sin(a),.12,z-side*.7*math.cos(a)),(x+.8*math.cos(a),.12,z+.8*math.sin(a)),2)
+                top=(x+.7*math.cos(a),.3+3.8*math.sin(math.pi*t),z+.7*math.sin(a))
+                g.line((x+side*.7*math.sin(a),.12,z-side*.7*math.cos(a)),top,j%2)
             if shape=='bastion':
                 g.line((x,4.1,z),(x,4.1+1.5*(1-t),z),1)
         if not early:cracks(g,r*.85,n,6)
@@ -242,6 +250,10 @@ def geometry(n, frame, shape=None):
         for j in range(5):
             a=TAU*j/5+phi
             g.slash(r*(1 if shape!='slam' else 1.35),a,.85-.3*t,.12,j%2)
+            if not early:
+                for k in range(33):
+                    u=k/32;aa=a+u*.7
+                    g.point(r*math.cos(aa),.15+2.8*math.sin(math.pi*u)*(1-t),r*math.sin(aa),j%2)
         if not early:
             cracks(g,r*1.15,n,10)
             for j in range(12):
@@ -250,14 +262,14 @@ def geometry(n, frame, shape=None):
                 if frame==2:g.streak(rr*math.cos(a),.2,rr*math.sin(a),.6*math.cos(a),.1,.6*math.sin(a),j%2)
     elif shape in ('portal','eclipse'):
         for j in range(3):g.slash(r-j*.3,phi+e*2+j*2,1.2,.12,j%2)
-        # A spatial tear rises well above the line of sight and snaps apart.
+        # A spatial tear opens behind the cast origin and snaps apart.
         for side in (-1,1):
-            g.line((side*(.3+e),4,-1.5),(side*(1+e*2),7,-1.5),2)
-            g.line((side*(1+e*2),7,-1.5),(side*.4,8.4,-1.5),0)
+            g.line((side*(1+e),.2,-1.8),(side*(2+e*2),3.5,-1.8),2)
+            g.line((side*(2+e*2),3.5,-1.8),(side*.6,7.5,-1.8),0)
     elif shape in ('fracture','glitch'):
         for j in range(18):
             a=j*2.399+phi;rr=1.8+e*(1+j%4)
-            x,z=rr*math.cos(a),rr*math.sin(a);y=.08+(j%3)*.05
+            x,z=rr*math.cos(a),rr*math.sin(a);y=.08+(j%5)*.7*math.sin(math.pi*t)
             g.line((x,y,z),(x+.6+j%3*.2,y,z),j%2)
             g.line((x+.14,y+.02,z+.09),(x+.65,y+.02,z+.09),2)
         if not early:cracks(g,r*.8,n,4)
@@ -279,8 +291,14 @@ def geometry(n, frame, shape=None):
             g.shard(rr*math.cos(a),.13,rr*math.sin(a),.65+1.1*e,a,j%2)
             if shape in ('crown','crystal'):
                 x,z=rr*math.cos(a),rr*math.sin(a)
-                top=(x,4.3+1.7*(1-t),z)
-                g.line((x-.25,4,z),top,0);g.line((x+.25,4,z),top,2)
+                top=(x,1.8+4*math.sin(math.pi*t),z)
+                for dx,dz in ((-.5,0),(.5,0),(0,-.5),(0,.5)):
+                    g.line((x+dx,1.2,z+dz),top,0)
+                    g.line((x+dx,1.2,z+dz),(x,.15,z),2)
+            if shape in ('bones','arsenal','star','alchemy'):
+                top=(rr*math.cos(a),.4+3.2*math.sin(math.pi*t),rr*math.sin(a))
+                g.line((rr*math.cos(a),.15,rr*math.sin(a)),top,2)
+                g.line(top,(rr*math.cos(a)+.6,.5+1.8*math.sin(math.pi*t),rr*math.sin(a)),j%2)
             if shape=='bones':g.arc(.35,.1,a,math.pi,j%2,center=(rr*math.cos(a),0,rr*math.sin(a)))
             if shape=='alchemy':
                 b=a+TAU/count
@@ -294,7 +312,9 @@ def geometry(n, frame, shape=None):
             a=TAU*j/6+phi
             for k in range(4):
                 rr=2+e*2+k*.45
-                g.arc(.2,.10,0,TAU,k%2,center=(rr*math.cos(a),0,rr*math.sin(a)))
+                for m in range(24):
+                    u=TAU*m/24
+                    g.point(rr*math.cos(a)+.22*math.cos(u),.15+k*.65*(1-t)+.22*math.sin(u),rr*math.sin(a),k%2)
             g.shard(r*math.cos(a),.12,r*math.sin(a),.65,a,1)
     elif shape in ('bridge','rails'):
         # Perspective runways race forward along the skill's yaw; no uprights.
@@ -312,11 +332,14 @@ def geometry(n, frame, shape=None):
                 for side in (-1,1):
                     b=a+side*math.pi/3
                     g.line((rr*math.cos(a),.12,rr*math.sin(a)),(rr*math.cos(a)+.7*math.cos(b),.12,rr*math.sin(a)+.7*math.sin(b)),0)
+            tip=(r*.8*math.cos(a),.3+3*math.sin(math.pi*t),r*.8*math.sin(a))
+            g.line((r*.6*math.cos(a),.12,r*.6*math.sin(a)),tip,2)
+            g.line((r*math.cos(a),.12,r*math.sin(a)),tip,0)
     elif shape=='parasite':
         for j in range(5):
             for k in range(75):
                 u=k/74;rr=1.2+u*r;a=TAU*j/5+math.sin(u*5+t*3)*.4
-                g.point(rr*math.cos(a),.1,rr*math.sin(a),j%2)
+                g.point(rr*math.cos(a),.1+1.7*math.sin(math.pi*u)*math.sin(math.pi*t),rr*math.sin(a),j%2)
     elif shape=='lantern':
         for j in range(8):
             a=TAU*j/8+phi
@@ -334,6 +357,13 @@ def geometry(n, frame, shape=None):
                     zz=3+k*.7;xx=side*(1.1+.14*math.sin(k*5))
                     g.line((xx,-.7,zz),(side*(1.1+.14*math.sin((k+1)*5)),-.7,zz+.7),0)
                 g.streak(side*1.5,-.7,8,side*.15,0,.6,2)
+        # Broken acceleration gates open along the shot, leaving its axis empty.
+        for z in (3+e*2,6+e*3,9+e*4):
+            radius=1.2+.7*math.sin(math.pi*t)
+            for side in (-1,1):
+                for k in range(36):
+                    a=side*math.pi/2-.6+k*1.2/35
+                    g.point(radius*math.sin(a),radius*math.cos(a),z,1)
     else:
         raise ValueError(shape)
     if frame in PEAK_FRAMES:
@@ -345,34 +375,56 @@ def sound(event, volume=1, pitch=1, viewers='@a[distance=..64]'):
     return f'playsound minecraft:{event} player {viewers} ~ ~ ~ {volume} {pitch} 0'
 
 
-def render(g, p, local=True, private=False, scale=DUST_SCALE):
-    """Clip at EACH particle position, never at the source or nearest player.
+def guard_checks(buffer=0):
+    return 'if function pvpfx:view/'+('moving_visible' if buffer else 'visible')
 
-    No owner tags are necessary: the caster, target, third player and simultaneous
-    casts all get the same near-field exclusion. Quantized strokes use short dust
-    lifetimes; full-bright cores and travelling accents live four client ticks.
+
+def render(g, p, local=True, private=False, scale=DUST_SCALE):
+    """Render one viewer's effect, leaving their eye / aiming corridor clear.
+
+    Four eye-relative guards are made once per viewer and frame, not per dust
+    particle. The surrounding call is synchronous; no other viewer's guards or
+    recipient tag can exist during this draw. Moving accents get travel margin.
     """
     assert 0<scale<=.28
     prefix='^' if local else '~';lines=[];colors=(p['a'],p['b'],'f4faff')
+    guards=guard_checks()
     for x,y,z,tone in g.points:
         pos=' '.join(prefix+coord(v) for v in (x,y,z))
-        viewer='@s[distance=4..160]' if private else '@a[distance=4..160]'
-        lines.append(f'execute positioned {pos} run particle minecraft:dust_color_transition{{from_color:{rgb(colors[tone])},to_color:{rgb(p["a"])},scale:{scale}}} ~ ~ ~ 0 0 0 0 1 force {viewer}')
+        lines.append(f'execute positioned {pos} {guards} run particle minecraft:dust_color_transition{{from_color:{rgb(colors[tone])},to_color:{rgb(p["a"])},scale:{scale}}} ~ ~ ~ 0 0 0 0 1 force @s[distance=..160]')
     if not private:
         for x,y,z,tone in g.lights:
             pos=' '.join(prefix+coord(v) for v in (x,y,z))
-            lines.append(f'execute positioned {pos} if entity @a[distance=4..160] summon marker run function pvpfx:light/init {{color:{int(light_color(p,tone),16)}}}')
+            lines.append(f'execute positioned {pos} if entity @s[distance=..160] {guards} summon marker run function pvpfx:light/init {{color:{int(light_color(p,tone),16)}}}')
         for x,y,z,dx,dy,dz,tone in g.streaks:
             pos=' '.join(prefix+coord(v) for v in (x,y,z))
-            lines.append(f'execute positioned {pos} if entity @a[distance=6..160] summon marker run function pvpfx:streak/init {{dx:{coord(dx)},dy:{coord(dy)},dz:{coord(dz)},color:{int(colors[tone],16)}}}')
+            lines.append(f'execute positioned {pos} if entity @s[distance=..160] {guard_checks(.75)} summon marker run function pvpfx:streak/init {{dx:{coord(dx)},dy:{coord(dy)},dz:{coord(dz)},color:{int(colors[tone],16)}}}')
     return lines
+
+
+def write_effect(name, g, p, **kwargs):
+    write(name+'_draw',render(g,p,**kwargs))
+    prefix='execute if entity @s[type=player]' if kwargs.get('private') else 'execute as @a[distance=..192]'
+    write(name,[f'{prefix} run function pvpfx:view/init {{effect:"pvpfx:{name}_draw"}}'])
+
+
+def make_view():
+    lines=['tag @s add PvpFxViewer']
+    for i,(depth,_) in enumerate(VIEW_GUARDS):
+        lines.append(f'execute at @s anchored eyes positioned ^ ^ ^{depth} summon marker run tag @s add PvpFxGuard{i}')
+    lines+=['$function $(effect)']
+    lines += [f'kill @e[type=marker,tag=PvpFxGuard{i}]' for i in range(len(VIEW_GUARDS))]
+    lines+=['tag @s remove PvpFxViewer']
+    write('view/init',lines)
+    for name,buffer in (('visible',0),('moving_visible',.75)):
+        write('view/'+name,[f'execute if entity @e[type=marker,tag=PvpFxGuard{i},distance=..{coord(radius+buffer)}] run return 0' for i,(_,radius) in enumerate(VIEW_GUARDS)]+['return 1'])
 
 
 def make_animation(style, n, shape=None, horizontal=True):
     tick=[];frames=[]
     for frame,age in enumerate(FRAME_TICKS):
         g=geometry(n,frame,shape);frames.append({'points':g.points,'streaks':g.streaks,'lights':g.lights})
-        write(f'animation/{style}/{frame:02}',render(g,PROFILES[n],scale=.28 if frame in PEAK_FRAMES else (.24 if frame==0 else .18)))
+        write_effect(f'animation/{style}/{frame:02}',g,PROFILES[n],scale=.28 if frame in PEAK_FRAMES else (.24 if frame==0 else .18))
         rotation=' rotated ~ 0' if horizontal else ''
         tick.append(f'execute if score @s pfx.age matches {age}{rotation} run function pvpfx:animation/{style}/{frame:02}')
     write(f'animation/{style}/tick',tick)
@@ -384,21 +436,21 @@ def make_profiles():
         sid=f'{n:02}'
         write(f'skill/{sid}/cast',[f'execute summon marker run function pvpfx:animation/init {{style:"{sid}"}}',sound(p['sound'],.85,.85 if n%2 else 1.15)])
         frames=make_animation(sid,n,horizontal=n!=39)
-        PREVIEW[sid]={'name':p['name'],'a':p['a'],'b':p['b'],'frames':frames,'ticks':FRAME_TICKS,'ttl':TTL,'nearClip':NEAR_CLIP}
+        PREVIEW[sid]={'name':p['name'],'a':p['a'],'b':p['b'],'frames':frames,'ticks':FRAME_TICKS,'ttl':TTL,'viewGuards':VIEW_GUARDS,'lightDuration':LIGHT_DURATION}
         # Retain public entry points; sustained body halos deliberately emit nothing.
         write(f'skill/{sid}/loop','# No persistent body aura. The skill emits at its event hook.')
         # Ballistic streaks are short and move with real projectiles, not players.
         g=Geometry()
         for side in (-1,1):
             for i in range(8):g.point(side*.08,.03,-i*.065,int(side>0))
-        write(f'skill/{sid}/trail',render(g,p,scale=.18))
+        write_effect(f'skill/{sid}/trail',g,p,scale=.18)
     write('animation/init',['tag @s add PvpFx','scoreboard players set @s pfx.age 0','tp @s ~ ~ ~ ~ ~','$data modify entity @s data.style set value "$(style)"'])
     write('animation/tick',['scoreboard players add @s pfx.age 1',f'execute if score @s pfx.age matches ..{TTL-1} run function pvpfx:animation/render with entity @s data',f'execute if score @s pfx.age matches {TTL}.. run kill @s'])
     write('animation/render',['$function pvpfx:animation/$(style)/tick'])
     write('light/init',['tag @s add PvpFxLight','data modify storage pvpfx:light x set from entity @s Pos[0]','data modify storage pvpfx:light y set from entity @s Pos[1]','data modify storage pvpfx:light z set from entity @s Pos[2]','$data modify storage pvpfx:light color set value $(color)','function pvpfx:light/render with storage pvpfx:light','kill @s'])
-    write('light/render',[f'$particle minecraft:trail{{color:$(color),duration:{LIGHT_DURATION},target:[$(x),$(y),$(z)]}} ~ ~ ~ 0 0 0 0 1 force @a[distance=4..160]'])
+    write('light/render',[f'$particle minecraft:trail{{color:$(color),duration:{LIGHT_DURATION},target:[$(x),$(y),$(z)]}} ~ ~ ~ 0 0 0 0 1 force @a[tag=PvpFxViewer,distance=..160]'])
     write('streak/init',['tag @s add PvpFxStreak','tp @s ~ ~ ~ ~ ~','$tp @s ^$(dx) ^$(dy) ^$(dz)','data modify storage pvpfx:streak x set from entity @s Pos[0]','data modify storage pvpfx:streak y set from entity @s Pos[1]','data modify storage pvpfx:streak z set from entity @s Pos[2]','$data modify storage pvpfx:streak color set value $(color)','function pvpfx:streak/render with storage pvpfx:streak','kill @s'])
-    write('streak/render',['$particle minecraft:trail{color:$(color),duration:4,target:[$(x),$(y),$(z)]} ~ ~ ~ 0 0 0 0 1 force @a[distance=6..160]'])
+    write('streak/render',['$particle minecraft:trail{color:$(color),duration:4,target:[$(x),$(y),$(z)]} ~ ~ ~ 0 0 0 0 1 force @a[tag=PvpFxViewer,distance=..160]'])
 
 
 def make_specials():
@@ -416,7 +468,10 @@ def make_specials():
                     for k in range(3):
                         x=side*(1.25-stage*.18);z=2.8+k*.65
                         g.line((x,-.8,z),(x+side*.4,-.8,z+.35),k%2)
-            write(f'skill/{n}/charge_{stage}',render(illuminate(g),PROFILES[n]))
+                    for k in range(40):
+                        a=-1+k*2/39
+                        g.point(side*(1.5-stage*.18)*math.cos(a),math.sin(a),3+stage*.6,stage%2)
+            write_effect(f'skill/{n}/charge_{stage}',illuminate(g),PROFILES[n])
             rotate=' rotated ~ 0' if n==24 else ''
             seq+=[f'execute if score @s rng1 matches {age}{rotate} run function pvpfx:skill/{n}/charge_{stage}',f'execute if score @s rng1 matches {age} run '+sound('block.respawn_anchor.charge',.5,.65+stage*.4)]
         write(f'skill/{n}/charge',seq)
@@ -430,7 +485,11 @@ def make_specials():
                     u=k/41;a=phase+TAU*j/3+u*3
                     g.point(r*(1-.65*u)*math.cos(a),-.2-u*2.8,r*(1-.65*u)*math.sin(a),j%2)
             for j in range(6):g.arc(r+.25,.08,TAU*j/6,.6,j%2)
-            write(f'skill/24/drill_{power}_{frame}',render(illuminate(g,spacing=.36),PROFILES[24],local=False,scale=.18))
+            # Visible entrance crown breaks outwards; the actual drill descends.
+            for j in range(8):
+                a=TAU*j/8+phase
+                g.line(((r+.3)*math.cos(a),.05,(r+.3)*math.sin(a)),((r+1)*math.cos(a),.7,(r+1)*math.sin(a)),j%2)
+            write_effect(f'skill/24/drill_{power}_{frame}',illuminate(g,spacing=.36),PROFILES[24],local=False,scale=.18)
             seq.append(f'execute if score #phase pfx.phase matches {frame*2} run function pvpfx:skill/24/drill_{power}_{frame}')
         write(f'skill/24/drill_{power}',seq)
         drill.append(f'execute if score @s rng5 matches {power} run function pvpfx:skill/24/drill_{power}')
@@ -441,19 +500,19 @@ def make_specials():
         g=Geometry()
         for side in (-1,1):
             g.slash(4.8,side*math.pi/2,.3,.08,1)
-        write(f'skill/{n:02}/private_frame',render(g,PROFILES[n],private=True,scale=.18))
+        write_effect(f'skill/{n:02}/private_frame',g,PROFILES[n],private=True,scale=.18)
         write(f'skill/{n:02}/private',[f'execute unless score @s pfx.p{n} matches 1.. rotated ~ 0 run function pvpfx:skill/{n:02}/private_frame',f'scoreboard players set @s pfx.p{n} 20'])
     # Persistent world hazards still have readable footprints: a very brief low
     # dashed border every two seconds. Nothing attaches to a player's body.
     for n,r in ((18,1.8),(19,3.0)):
         g=Geometry()
         for j in range(8):g.arc(r,.08,TAU*j/8,.19,j%2)
-        write(f'skill/{n}/boundary',render(g,PROFILES[n],local=False,scale=.18))
+        write_effect(f'skill/{n}/boundary',g,PROFILES[n],local=False,scale=.18)
         write(f'skill/{n}/loop',['scoreboard players add @s pfx.field 1',f'execute if score @s pfx.field matches 1 run function pvpfx:skill/{n}/boundary','execute if score @s pfx.field matches 5.. run scoreboard players set @s pfx.field 0'])
     # Building flashes only on the new surface; no floating bridge scaffold.
     g=Geometry()
     for side in (-1,1):g.line((side*.7,.08,.1),(side*.7,.08,1.2),int(side>0))
-    write('skill/25/loop',render(g,PROFILES[25],scale=.18))
+    write_effect('skill/25/loop',g,PROFILES[25],scale=.18)
     # Confusion has a brief ground rupture and a small actionbar, no centre title.
     write('skill/26/loop',['execute unless score @s pfx.confuse matches 1.. run function pvpfx:skill/26/cast','scoreboard players set @s pfx.confuse 20'])
     # Lantern boundary only on first activation, mode changes or range reaching
@@ -462,8 +521,10 @@ def make_specials():
         lines=[]
         for j in range(8):
             for angle in range(j*45,j*45+9,2):
-                lines.append(f'$execute rotated {angle} 0 positioned ^ ^0.08 ^$(radius) run particle minecraft:dust_color_transition{{from_color:{rgb(a)},to_color:{rgb(b)},scale:0.18}} ~ ~ ~ 0 0 0 0 1 force @a[distance=4..160]')
-        write(f'skill/37/aura_{mode}',lines)
+                lines.append(f'$execute rotated {angle} 0 positioned ^ ^0.08 ^$(radius) {guard_checks()} run particle minecraft:dust_color_transition{{from_color:{rgb(a)},to_color:{rgb(b)},scale:0.18}} ~ ~ ~ 0 0 0 0 1 force @s[distance=..160]')
+        write(f'skill/37/aura_{mode}_draw',lines)
+        write(f'skill/37/aura_{mode}',[f'execute as @a[distance=..192] run function pvpfx:view/init {{effect:"pvpfx:skill/37/aura_{mode}_macro"}}'])
+        write(f'skill/37/aura_{mode}_macro',[f'function pvpfx:skill/37/aura_{mode}_draw with storage pvpfx:args'])
         write(f'skill/37/pulse_{mode}',['execute store result storage pvpfx:args radius double .01 run scoreboard players get @s If_Bless37',f'function pvpfx:skill/37/aura_{mode} with storage pvpfx:args',f'scoreboard players set @s pfx.lmode {mode}'])
     aura=[]
     for mode in (1,2,3):
@@ -473,21 +534,21 @@ def make_specials():
     write('skill/37/aura',aura)
     g=Geometry()
     for side in (-1,1):g.line((side*.15,0,0),(side*.15,0,-.7),int(side>0))
-    write('skill/39/beam_frame',render(illuminate(g,spacing=.24),PROFILES[39],scale=.18))
+    write_effect('skill/39/beam_frame',illuminate(g,spacing=.24),PROFILES[39],scale=.18)
     write('skill/39/beam',['execute if score @s rng5 matches 0 run function pvpfx:skill/39/beam_frame','execute if score @s rng5 matches 4 run function pvpfx:skill/39/beam_frame'])
     make_animation('39_impact',39,'nova')
     write('skill/39/impact',['execute summon marker run function pvpfx:animation/init {style:"39_impact"}',sound('entity.warden.sonic_boom',1.1,.75)])
     g=Geometry()
     for side in (-1,1):
         for k in range(4):g.line((side*.16,.18,1+k*1.2),(side*.16,.18,1.6+k*1.2),int(side>0))
-    write('skill/36/sweep',render(illuminate(g,spacing=.32),PROFILES[36],scale=.18))
+    write_effect('skill/36/sweep',illuminate(g,spacing=.32),PROFILES[36],scale=.18)
 
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
     manifest=ROOT/'tools/pvp_vfx/generated.json'
     previous=set(json.loads(manifest.read_text())) if manifest.exists() else set()
-    make_profiles();make_specials()
+    make_view();make_profiles();make_specials()
     # Retire obsolete generated rings/displays; never remove handwritten files.
     for old in previous-GENERATED:
         path=ROOT/old
