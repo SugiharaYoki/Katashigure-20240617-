@@ -23,3 +23,9 @@ execute positioned ^0.15 ^0 ^-0.509 run particle minecraft:dust_color_transition
 execute positioned ^0.15 ^0 ^-0.573 run particle minecraft:dust_color_transition{from_color:[0.6000,1.0000,1.0000],to_color:[0.7176,0.6039,1.0000],scale:0.18} ~ ~ ~ 0 0 0 0 1 force @a[distance=4..160]
 execute positioned ^0.15 ^0 ^-0.636 run particle minecraft:dust_color_transition{from_color:[0.6000,1.0000,1.0000],to_color:[0.7176,0.6039,1.0000],scale:0.18} ~ ~ ~ 0 0 0 0 1 force @a[distance=4..160]
 execute positioned ^0.15 ^0 ^-0.7 run particle minecraft:dust_color_transition{from_color:[0.6000,1.0000,1.0000],to_color:[0.7176,0.6039,1.0000],scale:0.18} ~ ~ ~ 0 0 0 0 1 force @a[distance=4..160]
+execute positioned ^-0.15 ^0 ^0 if entity @a[distance=4..160] summon marker run function pvpfx:light/init {color:12823295}
+execute positioned ^-0.15 ^0 ^-0.255 if entity @a[distance=4..160] summon marker run function pvpfx:light/init {color:12823295}
+execute positioned ^-0.15 ^0 ^-0.509 if entity @a[distance=4..160] summon marker run function pvpfx:light/init {color:12823295}
+execute positioned ^0.15 ^0 ^0 if entity @a[distance=4..160] summon marker run function pvpfx:light/init {color:11141119}
+execute positioned ^0.15 ^0 ^-0.255 if entity @a[distance=4..160] summon marker run function pvpfx:light/init {color:11141119}
+execute positioned ^0.15 ^0 ^-0.509 if entity @a[distance=4..160] summon marker run function pvpfx:light/init {color:11141119}

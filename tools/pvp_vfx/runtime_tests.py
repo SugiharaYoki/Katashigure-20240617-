@@ -64,6 +64,8 @@ lines += ['function pvpfx:dimension_tick']
 noentity(lines,'@e[type=arrow,tag=PvpFxTestArrow,tag=PvpFxRoseArrow]','bow_no_rearm')
 lines += ['execute as @e[tag=PvpFxTest,limit=1] at @s positioned ~5 ~5 ~5 summon marker run function pvpfx:streak/init {dx:0.5,dy:0.1,dz:0.2,color:16777215}']
 noentity(lines,'@e[type=marker,tag=PvpFxStreak]','streak_temp_marker_cleanup')
+lines += ['execute as @e[tag=PvpFxTest,limit=1] at @s positioned ~5 ~5 ~5 summon marker run function pvpfx:light/init {color:16777215}']
+noentity(lines,'@e[type=marker,tag=PvpFxLight]','light_temp_marker_cleanup')
 lines += ['kill @e[tag=PvpFxTestArrow]','function pvpfx:cleanup','scoreboard players set @e[tag=PvpFxTest] rng1 7','scoreboard players set @e[tag=PvpFxTest] rng5 5','execute store result storage pvpfx_test:result checks int 1 run scoreboard players get checks pfx.test','data get storage pvpfx_test:result']
 write('specials',lines)
 lines=['function pvpfx:cleanup']

@@ -55,7 +55,7 @@ class Probe:
 
     def reset(self):
         self.counts=collections.Counter();self.minimum={};self.violations=[]
-        self.trail_durations=set();self.errors=[];self.completed=False
+        self.trail_durations=set();self.errors=[];self.completed=False;self.light_cores=0;self.moving_trails=0
 
     def send(self,pid,data=b''):
         b=varint(pid)+data;self.writer.write(varint(len(b))+b)
@@ -76,6 +76,12 @@ class Probe:
         i+=2  # overrideLimiter and alwaysShow
         pos=struct.unpack_from('>ddd',data,i)
         if self.pos is None:self.errors.append('Particle before player position');return
+        if kind==59:
+            travel=math.dist(pos,target)
+            if travel<1e-6:
+                limit=4;self.light_cores+=1
+            else:
+                self.moving_trails+=1
         distance=math.dist(self.pos,pos)
         self.minimum[kind]=min(self.minimum.get(kind,math.inf),distance)
         self.counts[kind]+=1
@@ -120,7 +126,7 @@ class Probe:
             self.errors.append(str(e));print(self.name,str(e),flush=True)
 
     def result(self):
-        return {'name':self.name,'position':self.pos,'particles':sum(self.counts.values()),'types':dict(self.counts),'minimum_distance':self.minimum,'trail_durations':sorted(self.trail_durations),'completed':self.completed,'violations':self.violations,'errors':self.errors}
+        return {'name':self.name,'position':self.pos,'particles':sum(self.counts.values()),'types':dict(self.counts),'stationary_light_cores':self.light_cores,'moving_trails':self.moving_trails,'minimum_distance':self.minimum,'trail_durations':sorted(self.trail_durations),'completed':self.completed,'violations':self.violations,'errors':self.errors}
 
 
 async def main(output):

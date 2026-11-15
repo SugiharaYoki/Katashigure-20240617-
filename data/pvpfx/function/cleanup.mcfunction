@@ -19,3 +19,6 @@ scoreboard players reset @a pfx.p12
 scoreboard players reset @a pfx.p15
 scoreboard players reset @a pfx.p16
 scoreboard players reset @a pfx.p28
+execute in minecraft:overworld run kill @e[type=marker,tag=PvpFxLight]
+execute in minecraft:the_nether run kill @e[type=marker,tag=PvpFxLight]
+execute in minecraft:the_end run kill @e[type=marker,tag=PvpFxLight]

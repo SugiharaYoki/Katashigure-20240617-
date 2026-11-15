@@ -59,3 +59,15 @@ execute positioned ^1.337 ^-0.8 ^4.333 run particle minecraft:dust_color_transit
 execute positioned ^1.381 ^-0.8 ^4.372 run particle minecraft:dust_color_transition{from_color:[0.7176,0.6039,1.0000],to_color:[0.7176,0.6039,1.0000],scale:0.24} ~ ~ ~ 0 0 0 0 1 force @a[distance=4..160]
 execute positioned ^1.426 ^-0.8 ^4.411 run particle minecraft:dust_color_transition{from_color:[0.7176,0.6039,1.0000],to_color:[0.7176,0.6039,1.0000],scale:0.24} ~ ~ ~ 0 0 0 0 1 force @a[distance=4..160]
 execute positioned ^1.47 ^-0.8 ^4.45 run particle minecraft:dust_color_transition{from_color:[0.7176,0.6039,1.0000],to_color:[0.7176,0.6039,1.0000],scale:0.24} ~ ~ ~ 0 0 0 0 1 force @a[distance=4..160]
+execute positioned ^-1.07 ^-0.8 ^2.8 if entity @a[distance=4..160] summon marker run function pvpfx:light/init {color:12823295}
+execute positioned ^-1.292 ^-0.8 ^2.994 if entity @a[distance=4..160] summon marker run function pvpfx:light/init {color:12823295}
+execute positioned ^-1.07 ^-0.8 ^3.45 if entity @a[distance=4..160] summon marker run function pvpfx:light/init {color:11141119}
+execute positioned ^-1.292 ^-0.8 ^3.644 if entity @a[distance=4..160] summon marker run function pvpfx:light/init {color:11141119}
+execute positioned ^-1.07 ^-0.8 ^4.1 if entity @a[distance=4..160] summon marker run function pvpfx:light/init {color:12823295}
+execute positioned ^-1.292 ^-0.8 ^4.294 if entity @a[distance=4..160] summon marker run function pvpfx:light/init {color:12823295}
+execute positioned ^1.07 ^-0.8 ^2.8 if entity @a[distance=4..160] summon marker run function pvpfx:light/init {color:12823295}
+execute positioned ^1.292 ^-0.8 ^2.994 if entity @a[distance=4..160] summon marker run function pvpfx:light/init {color:12823295}
+execute positioned ^1.07 ^-0.8 ^3.45 if entity @a[distance=4..160] summon marker run function pvpfx:light/init {color:11141119}
+execute positioned ^1.292 ^-0.8 ^3.644 if entity @a[distance=4..160] summon marker run function pvpfx:light/init {color:11141119}
+execute positioned ^1.07 ^-0.8 ^4.1 if entity @a[distance=4..160] summon marker run function pvpfx:light/init {color:12823295}
+execute positioned ^1.292 ^-0.8 ^4.294 if entity @a[distance=4..160] summon marker run function pvpfx:light/init {color:12823295}

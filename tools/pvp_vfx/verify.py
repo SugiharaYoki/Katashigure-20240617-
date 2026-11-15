@@ -5,7 +5,7 @@ import json
 import re
 import subprocess
 from pathlib import Path
-from generate import FRAME_TICKS, TTL, PROFILES, geometry
+from generate import FRAME_TICKS, TTL, PROFILES, PEAK_FRAMES, geometry
 
 ROOT=Path(__file__).resolve().parents[2]
 BASE='119d6975ea9d12160188ad09c4b395a26b49a71e'
@@ -67,6 +67,10 @@ roots += [(ROOT/'data/pvpfx/function'/p).read_text() for p in ('player.mcfunctio
 roots += [p.read_text() for p in (ROOT/'data/pvpfx/function/event').glob('*.mcfunction')]
 covered={int(n) for s in roots for n in re.findall(r'pvpfx:skill/(\d+)/',s)}
 check(covered==set(range(1,40)),f'Gameplay coverage missing: {set(range(1,40))-covered}')
+check('duration:4' in functions['light/render'].read_text(),'light core lifetime changed')
+check('force @a[distance=4..160]' in functions['light/render'].read_text(),'stationary core near clipping missing')
+check(commands(functions['light/init'].read_text())[-1]=='kill @s','temporary light marker survives')
+check(not any(re.search(r'(?:^|run )tp ', l) for l in commands(functions['light/init'].read_text())),'stationary light core moves')
 check(f'matches {TTL}.. run kill @s' in functions['animation/tick'].read_text(),'animation TTL missing')
 for n in (5,12,15,16,28):
     for l in commands(functions[f'skill/{n:02}/private_frame'].read_text()):
@@ -81,6 +85,8 @@ for n in PROFILES:
     check(len(anim)==len(FRAME_TICKS) and all('..' not in l for l in anim),f'{n}: continuous frame emission')
     for frame in range(6):
         g=geometry(n,frame)
+        check(bool(g.lights)==(frame in PEAK_FRAMES),f'{n}/{frame}: missing peak brightness or lingering core')
+        check(all(pt in g.points for pt in g.lights),f'{n}/{frame}: light moved outside approved silhouette')
         if n!=39:check(not any(.5<y<3.5 for x,y,z,t in g.points),f'{n}/{frame}: geometry crosses eye band')
         for point in g.streaks:
             check(sum(x*x for x in point[3:6])<=.75**2+1e-6,f'{n}/{frame}: streak enters near exclusion zone')

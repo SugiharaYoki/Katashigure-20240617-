@@ -63,6 +63,9 @@ FRAME_TICKS = (1, 2, 4, 6, 8, 10)
 TTL = 12
 NEAR_CLIP = 4
 DUST_SCALE = .24  # Client DustParticleBase: lifetime < 40 * scale ticks.
+LIGHT_DURATION = 4
+LIGHT_SPACING = .28
+PEAK_FRAMES = (1, 2, 3)  # Bright only at wind-up snap / strike / follow-through.
 
 
 def write(name, lines):
@@ -86,6 +89,7 @@ class Geometry:
     def __init__(self):
         self.points = []
         self.streaks = []
+        self.lights = []
 
     def point(self, x, y, z, tone=0):
         self.points.append((x, y, z, tone))
@@ -103,11 +107,11 @@ class Geometry:
             self.point(center[0]+r*math.cos(a),center[1]+y,center[2]+r*math.sin(a),tone)
 
     def slash(self, r, a, sweep, y=.16, tone=0, center=(0,0,0)):
-        # Three tapered ribbons, with a bright cutting edge, never a filled disk.
-        for lane in range(3):
+        # Five tapered ribbons give the cut weight without filling the disk.
+        for lane in range(5):
             for i in range(65):
                 t=i/64; angle=a+sweep*t
-                rr=r-lane*.10*math.sin(math.pi*t)
+                rr=r-lane*.12*math.sin(math.pi*t)
                 self.point(center[0]+rr*math.cos(angle),y+center[1],center[2]+rr*math.sin(angle),tone if lane else 2)
 
     def shard(self, x, y, z, length, angle, tone=0):
@@ -121,6 +125,34 @@ class Geometry:
         # Four-tick, full-bright accents, <= .75 blocks travel. No orbit entities.
         assert math.sqrt(dx*dx+dy*dy+dz*dz) <= .75
         self.streaks.append((x,y,z,dx,dy,dz,tone))
+
+
+
+def illuminate(g, spacing=LIGHT_SPACING):
+    """A connected, full-bright core inside the existing silhouette.
+
+    Sample by distance rather than point index so long lines stay connected and
+    shared vertices do not become hot blobs. Stationary four-tick trails decouple
+    brightness from the dust size/lifetime tradeoff. No new orbital geometry.
+    """
+    cells={}
+    for point in sorted(g.points,key=lambda pt: pt[3]!=2):
+        x,y,z,tone=point
+        cell=tuple(math.floor(v/spacing) for v in (x,y,z))
+        near=(cells.get((cell[0]+dx,cell[1]+dy,cell[2]+dz),())
+              for dx in (-1,0,1) for dy in (-1,0,1) for dz in (-1,0,1))
+        if any(math.dist((x,y,z),other[:3]) < spacing for group in near for other in group):
+            continue
+        cells.setdefault(cell,[]).append(point)
+        g.lights.append(point)
+    return g
+
+
+def light_color(p, tone):
+    # White-hot cutting edge over a saturated colored body; no white screen flash.
+    color=p['a' if tone in (0,2) else 'b']
+    white=.68 if tone==2 else .16
+    return ''.join(f'{round(int(color[i:i+2],16)*(1-white)+255*white):02x}' for i in (0,2,4))
 
 
 def cracks(g, r, seed=0, count=7):
@@ -304,6 +336,8 @@ def geometry(n, frame, shape=None):
                 g.streak(side*1.5,-.7,8,side*.15,0,.6,2)
     else:
         raise ValueError(shape)
+    if frame in PEAK_FRAMES:
+        illuminate(g)
     return g
 
 
@@ -316,7 +350,7 @@ def render(g, p, local=True, private=False, scale=DUST_SCALE):
 
     No owner tags are necessary: the caster, target, third player and simultaneous
     casts all get the same near-field exclusion. Quantized strokes use short dust
-    lifetimes; the handful of full-bright accents live exactly four client ticks.
+    lifetimes; full-bright cores and travelling accents live four client ticks.
     """
     assert 0<scale<=.28
     prefix='^' if local else '~';lines=[];colors=(p['a'],p['b'],'f4faff')
@@ -325,6 +359,9 @@ def render(g, p, local=True, private=False, scale=DUST_SCALE):
         viewer='@s[distance=4..160]' if private else '@a[distance=4..160]'
         lines.append(f'execute positioned {pos} run particle minecraft:dust_color_transition{{from_color:{rgb(colors[tone])},to_color:{rgb(p["a"])},scale:{scale}}} ~ ~ ~ 0 0 0 0 1 force {viewer}')
     if not private:
+        for x,y,z,tone in g.lights:
+            pos=' '.join(prefix+coord(v) for v in (x,y,z))
+            lines.append(f'execute positioned {pos} if entity @a[distance=4..160] summon marker run function pvpfx:light/init {{color:{int(light_color(p,tone),16)}}}')
         for x,y,z,dx,dy,dz,tone in g.streaks:
             pos=' '.join(prefix+coord(v) for v in (x,y,z))
             lines.append(f'execute positioned {pos} if entity @a[distance=6..160] summon marker run function pvpfx:streak/init {{dx:{coord(dx)},dy:{coord(dy)},dz:{coord(dz)},color:{int(colors[tone],16)}}}')
@@ -334,8 +371,8 @@ def render(g, p, local=True, private=False, scale=DUST_SCALE):
 def make_animation(style, n, shape=None, horizontal=True):
     tick=[];frames=[]
     for frame,age in enumerate(FRAME_TICKS):
-        g=geometry(n,frame,shape);frames.append({'points':g.points,'streaks':g.streaks})
-        write(f'animation/{style}/{frame:02}',render(g,PROFILES[n],scale=.24 if frame<4 else .18))
+        g=geometry(n,frame,shape);frames.append({'points':g.points,'streaks':g.streaks,'lights':g.lights})
+        write(f'animation/{style}/{frame:02}',render(g,PROFILES[n],scale=.28 if frame in PEAK_FRAMES else (.24 if frame==0 else .18)))
         rotation=' rotated ~ 0' if horizontal else ''
         tick.append(f'execute if score @s pfx.age matches {age}{rotation} run function pvpfx:animation/{style}/{frame:02}')
     write(f'animation/{style}/tick',tick)
@@ -358,6 +395,8 @@ def make_profiles():
     write('animation/init',['tag @s add PvpFx','scoreboard players set @s pfx.age 0','tp @s ~ ~ ~ ~ ~','$data modify entity @s data.style set value "$(style)"'])
     write('animation/tick',['scoreboard players add @s pfx.age 1',f'execute if score @s pfx.age matches ..{TTL-1} run function pvpfx:animation/render with entity @s data',f'execute if score @s pfx.age matches {TTL}.. run kill @s'])
     write('animation/render',['$function pvpfx:animation/$(style)/tick'])
+    write('light/init',['tag @s add PvpFxLight','data modify storage pvpfx:light x set from entity @s Pos[0]','data modify storage pvpfx:light y set from entity @s Pos[1]','data modify storage pvpfx:light z set from entity @s Pos[2]','$data modify storage pvpfx:light color set value $(color)','function pvpfx:light/render with storage pvpfx:light','kill @s'])
+    write('light/render',[f'$particle minecraft:trail{{color:$(color),duration:{LIGHT_DURATION},target:[$(x),$(y),$(z)]}} ~ ~ ~ 0 0 0 0 1 force @a[distance=4..160]'])
     write('streak/init',['tag @s add PvpFxStreak','tp @s ~ ~ ~ ~ ~','$tp @s ^$(dx) ^$(dy) ^$(dz)','data modify storage pvpfx:streak x set from entity @s Pos[0]','data modify storage pvpfx:streak y set from entity @s Pos[1]','data modify storage pvpfx:streak z set from entity @s Pos[2]','$data modify storage pvpfx:streak color set value $(color)','function pvpfx:streak/render with storage pvpfx:streak','kill @s'])
     write('streak/render',['$particle minecraft:trail{color:$(color),duration:4,target:[$(x),$(y),$(z)]} ~ ~ ~ 0 0 0 0 1 force @a[distance=6..160]'])
 
@@ -377,7 +416,7 @@ def make_specials():
                     for k in range(3):
                         x=side*(1.25-stage*.18);z=2.8+k*.65
                         g.line((x,-.8,z),(x+side*.4,-.8,z+.35),k%2)
-            write(f'skill/{n}/charge_{stage}',render(g,PROFILES[n]))
+            write(f'skill/{n}/charge_{stage}',render(illuminate(g),PROFILES[n]))
             rotate=' rotated ~ 0' if n==24 else ''
             seq+=[f'execute if score @s rng1 matches {age}{rotate} run function pvpfx:skill/{n}/charge_{stage}',f'execute if score @s rng1 matches {age} run '+sound('block.respawn_anchor.charge',.5,.65+stage*.4)]
         write(f'skill/{n}/charge',seq)
@@ -391,7 +430,7 @@ def make_specials():
                     u=k/41;a=phase+TAU*j/3+u*3
                     g.point(r*(1-.65*u)*math.cos(a),-.2-u*2.8,r*(1-.65*u)*math.sin(a),j%2)
             for j in range(6):g.arc(r+.25,.08,TAU*j/6,.6,j%2)
-            write(f'skill/24/drill_{power}_{frame}',render(g,PROFILES[24],local=False,scale=.18))
+            write(f'skill/24/drill_{power}_{frame}',render(illuminate(g,spacing=.36),PROFILES[24],local=False,scale=.18))
             seq.append(f'execute if score #phase pfx.phase matches {frame*2} run function pvpfx:skill/24/drill_{power}_{frame}')
         write(f'skill/24/drill_{power}',seq)
         drill.append(f'execute if score @s rng5 matches {power} run function pvpfx:skill/24/drill_{power}')
@@ -434,14 +473,14 @@ def make_specials():
     write('skill/37/aura',aura)
     g=Geometry()
     for side in (-1,1):g.line((side*.15,0,0),(side*.15,0,-.7),int(side>0))
-    write('skill/39/beam_frame',render(g,PROFILES[39],scale=.18))
+    write('skill/39/beam_frame',render(illuminate(g,spacing=.24),PROFILES[39],scale=.18))
     write('skill/39/beam',['execute if score @s rng5 matches 0 run function pvpfx:skill/39/beam_frame','execute if score @s rng5 matches 4 run function pvpfx:skill/39/beam_frame'])
     make_animation('39_impact',39,'nova')
     write('skill/39/impact',['execute summon marker run function pvpfx:animation/init {style:"39_impact"}',sound('entity.warden.sonic_boom',1.1,.75)])
     g=Geometry()
     for side in (-1,1):
         for k in range(4):g.line((side*.16,.18,1+k*1.2),(side*.16,.18,1.6+k*1.2),int(side>0))
-    write('skill/36/sweep',render(g,PROFILES[36],scale=.18))
+    write('skill/36/sweep',render(illuminate(g,spacing=.32),PROFILES[36],scale=.18))
 
 
 def main():

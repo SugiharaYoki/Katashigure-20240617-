@@ -289,6 +289,8 @@
   "data/pvpfx/function/animation/init.mcfunction",
   "data/pvpfx/function/animation/render.mcfunction",
   "data/pvpfx/function/animation/tick.mcfunction",
+  "data/pvpfx/function/light/init.mcfunction",
+  "data/pvpfx/function/light/render.mcfunction",
   "data/pvpfx/function/skill/01/cast.mcfunction",
   "data/pvpfx/function/skill/01/loop.mcfunction",
   "data/pvpfx/function/skill/01/trail.mcfunction",
