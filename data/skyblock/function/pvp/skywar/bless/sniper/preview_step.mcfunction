@@ -1,5 +1,5 @@
 # 其他玩家看到完整光线；射手本人只看到落点的一团提示。
-particle minecraft:end_rod ~ ~ ~ 0 0 0 0 1 force @a[tag=!Skywar_Bless39_owner]
+execute positioned ~ ~ ~ run particle minecraft:dust_color_transition{from_color:[0.65,0.85,1.0],to_color:[0.5,0.3,1.0],scale:0.18} ~ ~ ~ 0 0 0 0 1 force @a[tag=!Skywar_Bless39_owner,distance=4..160]
 scoreboard players set @s rng7 0
 # 按实际射线的射程、方块、玩家躯干碰撞计算落点，不穿墙。
 execute if score @s rng3 >= @s rng2 run scoreboard players set @s rng7 1

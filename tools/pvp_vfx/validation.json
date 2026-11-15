@@ -1,0 +1,206 @@
+{
+  "date": "2026-11-16",
+  "server": "Purpur 26.3-2658",
+  "runtime_assertions": 301,
+  "bless24_regressions": 85,
+  "runtime_failures": [],
+  "client_rendered": false,
+  "protocol_scenarios": [
+    {
+      "label": "final_all_casts",
+      "players": [
+        {
+          "name": "FxNear",
+          "position": [
+            50062.5,
+            250.0,
+            50052.5
+          ],
+          "particles": 146700,
+          "types": {
+            "22": 146612,
+            "59": 88
+          },
+          "minimum_distance": {
+            "22": 4.000551586968179,
+            "59": 6.1229243013414845
+          },
+          "trail_durations": [
+            4
+          ],
+          "completed": true,
+          "violations": [],
+          "errors": []
+        },
+        {
+          "name": "FxFar",
+          "position": [
+            50062.5,
+            250.0,
+            50032.5
+          ],
+          "particles": 211917,
+          "types": {
+            "22": 211762,
+            "59": 155
+          },
+          "minimum_distance": {
+            "22": 11.717824072756663,
+            "59": 13.897129271906788
+          },
+          "trail_durations": [
+            4
+          ],
+          "completed": true,
+          "violations": [],
+          "errors": []
+        },
+        {
+          "name": "FxSide",
+          "position": [
+            50067.5,
+            250.0,
+            50052.5
+          ],
+          "particles": 166599,
+          "types": {
+            "22": 166486,
+            "59": 113
+          },
+          "minimum_distance": {
+            "22": 4.000031249878074,
+            "59": 6.074168008871689
+          },
+          "trail_durations": [
+            4
+          ],
+          "completed": true,
+          "violations": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "label": "private_latch",
+      "players": [
+        {
+          "name": "FxNear",
+          "position": [
+            50062.5,
+            250.0,
+            50052.5
+          ],
+          "particles": 390,
+          "types": {
+            "22": 390
+          },
+          "minimum_distance": {
+            "22": 4.600290534305429
+          },
+          "trail_durations": [],
+          "completed": true,
+          "violations": [],
+          "errors": []
+        },
+        {
+          "name": "FxFar",
+          "position": [
+            50062.5,
+            250.0,
+            50032.5
+          ],
+          "particles": 0,
+          "types": {},
+          "minimum_distance": {},
+          "trail_durations": [],
+          "completed": true,
+          "violations": [],
+          "errors": []
+        },
+        {
+          "name": "FxSide",
+          "position": [
+            50067.5,
+            250.0,
+            50052.5
+          ],
+          "particles": 0,
+          "types": {},
+          "minimum_distance": {},
+          "trail_durations": [],
+          "completed": true,
+          "violations": [],
+          "errors": []
+        }
+      ]
+    },
+    {
+      "label": "special_emitters",
+      "players": [
+        {
+          "name": "FxNear",
+          "position": [
+            50062.5,
+            250.0,
+            50052.5
+          ],
+          "particles": 104,
+          "types": {
+            "22": 104
+          },
+          "minimum_distance": {
+            "22": 4.007243426861425
+          },
+          "trail_durations": [],
+          "completed": true,
+          "violations": [],
+          "errors": []
+        },
+        {
+          "name": "FxFar",
+          "position": [
+            50062.5,
+            250.0,
+            50032.5
+          ],
+          "particles": 8362,
+          "types": {
+            "22": 8362
+          },
+          "minimum_distance": {
+            "22": 16.612861254759316
+          },
+          "trail_durations": [],
+          "completed": true,
+          "violations": [],
+          "errors": []
+        },
+        {
+          "name": "FxSide",
+          "position": [
+            50067.5,
+            250.0,
+            50052.5
+          ],
+          "particles": 6608,
+          "types": {
+            "22": 6608
+          },
+          "minimum_distance": {
+            "22": 4.0031581282816004
+          },
+          "trail_durations": [],
+          "completed": true,
+          "violations": [],
+          "errors": []
+        }
+      ]
+    }
+  ],
+  "realtime_cleanup": {
+    "animations_before": 40,
+    "ticks_stepped": 20,
+    "animations_after": 0,
+    "legacy_displays_after": 0
+  }
+}

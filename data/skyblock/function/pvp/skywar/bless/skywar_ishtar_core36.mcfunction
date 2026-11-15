@@ -1,5 +1,4 @@
 execute at @s rotated as @s run function pvpfx:skill/36/cast
-particle minecraft:trial_spawner_detection ~ ~ ~ 0.5 0 0.5 0 80
 playsound minecraft:block.beacon.power_select block @a ~ ~ ~ 3 0.8
 playsound minecraft:block.bamboo.place block @a ~ ~ ~ 1 0.8
 

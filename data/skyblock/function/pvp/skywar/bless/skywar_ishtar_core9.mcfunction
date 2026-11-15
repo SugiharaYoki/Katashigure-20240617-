@@ -81,7 +81,7 @@ execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~
 execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~-2 ~8 ~2 ~-2 ~8 ~2 lantern[hanging=false] replace air
 execute if entity @s[tag=ishtar_core9_type2,scores={ishtar_core_1=9}] run fill ~-2 ~8 ~-2 ~-2 ~8 ~-2 lantern[hanging=false] replace air
 
-execute if entity @s[scores={ishtar_core_1=2}] run effect give @s jump_boost 5 2 false
+execute if entity @s[scores={ishtar_core_1=2}] run effect give @s jump_boost 5 2 true
 execute if entity @s[scores={ishtar_core_1=10..}] run tag @s remove ishtar_core9_type1
 execute if entity @s[scores={ishtar_core_1=10..}] run tag @s remove ishtar_core9_type2
 execute if entity @s[scores={ishtar_core_1=10..}] run scoreboard players set @s ishtar_core_1 0

@@ -5,7 +5,7 @@
   },
   {
     "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core4_e.mcfunction",
-    "added": "execute if score @s rng1 matches 1 at @s run function pvpfx:skill/04/cast\nexecute if score @s rng1 matches 2..21 at @s run function pvpfx:skill/04/loop"
+    "added": "execute if score @s rng1 matches 1 at @s run function pvpfx:skill/04/cast"
   },
   {
     "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core5.mcfunction",
@@ -26,10 +26,6 @@
   {
     "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core.mcfunction",
     "added": "execute if entity @s[scores={If_MD_Wait=1..},level=15..] at @s run function pvpfx:skill/11/cast"
-  },
-  {
-    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core11.mcfunction",
-    "added": "execute if score @s If_Bless11 matches 1..59 at @s run function pvpfx:skill/11/loop"
   },
   {
     "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core12.mcfunction",
@@ -73,7 +69,7 @@
   },
   {
     "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core21b.mcfunction",
-    "added": "execute if score @s If_Bless21b matches 3 at @s run function pvpfx:skill/21/cast\nexecute if score @s If_Bless21b matches 4..75 at @s rotated as @s run function pvpfx:skill/21/loop"
+    "added": "execute if score @s If_Bless21b matches 3 at @s run function pvpfx:skill/21/cast"
   },
   {
     "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core22.mcfunction",
@@ -85,7 +81,7 @@
   },
   {
     "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core23.mcfunction",
-    "added": "execute if score @s[tag=Bless23_Effective] If_Bless23c matches 1.. at @s run function pvpfx:skill/23/cast\nexecute if entity @s[tag=Bless23_Effective] if score #phase pfx.phase matches 0 at @s run function pvpfx:skill/23/loop"
+    "added": "execute if score @s[tag=Bless23_Effective] If_Bless23c matches 1.. at @s run function pvpfx:skill/23/cast"
   },
   {
     "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core24e.mcfunction",
@@ -145,7 +141,7 @@
   },
   {
     "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core32.mcfunction",
-    "added": "execute unless score @s pfx.lotus matches 1.. at @s run function pvpfx:skill/32/cast\nscoreboard players set @s pfx.lotus 6\nexecute at @s run function pvpfx:skill/32/loop"
+    "added": "execute unless score @s pfx.lotus matches 1.. at @s run function pvpfx:skill/32/cast\nscoreboard players set @s pfx.lotus 20"
   },
   {
     "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core33.mcfunction",
@@ -157,7 +153,7 @@
   },
   {
     "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core34e.mcfunction",
-    "added": "execute if score @s rng1 matches 2 at @s run function pvpfx:skill/34/cast\nexecute if score @s rng1 matches 2..24 at @s run function pvpfx:skill/34/loop\nexecute if score @s rng1 matches 25 at @s run function pvpfx:skill/17/cast"
+    "added": "execute if score @s rng1 matches 2 at @s run function pvpfx:skill/34/cast\nexecute if score @s rng1 matches 25 at @s run function pvpfx:skill/17/cast"
   },
   {
     "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_damage_dealt.mcfunction",

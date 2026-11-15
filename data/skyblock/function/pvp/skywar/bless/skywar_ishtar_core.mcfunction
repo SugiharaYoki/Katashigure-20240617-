@@ -27,7 +27,6 @@ execute if entity @s[scores={If_MD_Strad=1..}] run scoreboard players set @s If_
 execute if entity @s[scores={If_MD_Wait=1..},level=15..] at @s run function pvpfx:skill/11/cast
 execute if entity @s[scores={If_MD_Wait=1..},level=15..] run playsound minecraft:block.beacon.deactivate ambient @a ~ ~1 ~ 4 0.8
 #execute if entity @s[scores={If_MD_Wait=1..}] run playsound e ambient @a ~ ~1 ~ 4 0.8
-execute if entity @s[scores={If_MD_Wait=1..},level=15..] run particle dripping_obsidian_tear ~ ~1 ~ 5 5 5 0.2 80
 execute if entity @s[scores={If_MD_Wait=1..},level=15..] run effect give @a[tag=PVPing,distance=0.1..5.3] slowness 14 199
 execute if entity @s[scores={If_MD_Wait=1..},level=15..] run effect give @a[tag=PVPing,distance=0.1..5.3] resistance 5 19
 execute if entity @s[scores={If_MD_Wait=1..},level=15..] run effect give @a[tag=PVPing,distance=0.1..5.3] wither 5 0
@@ -55,9 +54,9 @@ execute if items entity @s[predicate=skyblock:sneaking,level=4..] container.* *[
 
 execute if entity @s[scores={If_MD_Ward=1..}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core19q
 
-execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] positioned ~ ~-0.2 ~ if block ~ ~ ~ slime_block run effect give @s jump_boost 1 7 false
-execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] positioned ~ ~-0.05 ~ if block ~ ~ ~ cake run effect give @s jump_boost 1 7 false
-execute if items entity @s[predicate=skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] run effect give @s jump_boost 1 3 false
+execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] positioned ~ ~-0.2 ~ if block ~ ~ ~ slime_block run effect give @s jump_boost 1 7 true
+execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] positioned ~ ~-0.05 ~ if block ~ ~ ~ cake run effect give @s jump_boost 1 7 true
+execute if items entity @s[predicate=skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] run effect give @s jump_boost 1 3 true
 
 execute if items entity @s container.* *[custom_data={skywar_ishtar_7:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core7
 

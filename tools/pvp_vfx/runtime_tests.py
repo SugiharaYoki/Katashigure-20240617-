@@ -26,18 +26,24 @@ for n,p in PROFILES.items():
  assertion(lines,'score count pfx.test matches 1',s+'_one_animation')
  assertion(lines,f'entity @e[type=marker,tag=PvpFx,nbt={{data:{{style:"{s}"}}}}]',s+'_style')
  lines+=['execute store result score count pfx.test if entity @e[type=item_display,tag=PvpFxDisplay]']
- assertion(lines,f'score count pfx.test matches {6 if p["item"] else 0}',s+'_projections')
- if p['item']:assertion(lines,f'entity @e[type=item_display,tag=PvpFxDisplay,nbt={{item:{{id:"minecraft:{p["item"]}"}},brightness:{{block:15,sky:15}}}}]',s+'_projection_item')
- for _ in range(23):lines+=['execute as @e[type=marker,tag=PvpFx] at @s rotated as @s run function pvpfx:animation/tick']
- assertion(lines,'entity @e[type=marker,tag=PvpFx,scores={pfx.age=23}]',s+'_full_animation')
+ assertion(lines,f'score count pfx.test matches {0}',s+'_projections')
+ for _ in range(11):lines+=['execute as @e[type=marker,tag=PvpFx] at @s rotated as @s run function pvpfx:animation/tick']
+ assertion(lines,'entity @e[type=marker,tag=PvpFx,scores={pfx.age=11}]',s+'_full_animation')
  lines+=['execute as @e[type=marker,tag=PvpFx] at @s rotated as @s run function pvpfx:animation/tick']
  noentity(lines,'@e[type=marker,tag=PvpFx]',s+'_animation_cleanup')
- for _ in range(20):lines+=['execute as @e[type=item_display,tag=PvpFxDisplay] at @s rotated as @s run function pvpfx:display/tick']
+
  noentity(lines,'@e[type=item_display,tag=PvpFxDisplay]',s+'_projection_cleanup')
  assertion(lines,'entity @e[tag=PvpFxTest,scores={rng1=7,rng5=5}]',s+'_gameplay_scores_unchanged')
  lines+=['execute store result storage pvpfx_test:result checks int 1 run scoreboard players get checks pfx.test']
  write('skill_'+s,lines)
 lines=['function pvpfx:cleanup']
+# Execute all stage frames and all drill phases, not only one global phase.
+for n in (24,39):
+ for stage in range(3):
+  lines += [f'execute as @e[tag=PvpFxTest,limit=1] at @s rotated 0 0 run function pvpfx:skill/{n}/charge_{stage}']
+for power in range(1,6):
+ for frame in range(4):
+  lines += [f'execute as @e[tag=PvpFxTest,limit=1] at @s run function pvpfx:skill/24/drill_{power}_{frame}']
 for tier in range(1,6):
  lines += [f'scoreboard players set @e[tag=PvpFxTest] rng5 {tier}','execute as @e[tag=PvpFxTest,limit=1] at @s run function pvpfx:skill/24/drill']
  assertion(lines,f'entity @e[tag=PvpFxTest,scores={{rng1=7,rng5={tier}}}]',f'drill_tier_{tier}_preserves_scores')
@@ -56,6 +62,8 @@ lines += ['execute as @e[tag=PvpFxTestArrow] run data merge entity @s {inGround:
 assertion(lines,'entity @e[type=arrow,tag=PvpFxTestArrow,tag=PvpFxRoseSpent,tag=!PvpFxRoseArrow]','bow_impact_once')
 lines += ['function pvpfx:dimension_tick']
 noentity(lines,'@e[type=arrow,tag=PvpFxTestArrow,tag=PvpFxRoseArrow]','bow_no_rearm')
+lines += ['execute as @e[tag=PvpFxTest,limit=1] at @s positioned ~5 ~5 ~5 summon marker run function pvpfx:streak/init {dx:0.5,dy:0.1,dz:0.2,color:16777215}']
+noentity(lines,'@e[type=marker,tag=PvpFxStreak]','streak_temp_marker_cleanup')
 lines += ['kill @e[tag=PvpFxTestArrow]','function pvpfx:cleanup','scoreboard players set @e[tag=PvpFxTest] rng1 7','scoreboard players set @e[tag=PvpFxTest] rng5 5','execute store result storage pvpfx_test:result checks int 1 run scoreboard players get checks pfx.test','data get storage pvpfx_test:result']
 write('specials',lines)
 lines=['function pvpfx:cleanup']
@@ -68,4 +76,38 @@ noentity(lines,'@e[tag=PvpFxDisplay]','concurrent_cleanup_displays')
 assertion(lines,'entity @e[tag=PvpFxTest,scores={rng1=7,rng5=5}]','concurrent_keeps_other_entities')
 lines+=['execute store result storage pvpfx_test:result checks int 1 run scoreboard players get checks pfx.test','data get storage pvpfx_test:result']
 write('concurrent',lines)
-print('Installed 42 isolated runtime test functions:',out)
+
+
+write('all',['function pvpfx_test:init']+[f'function pvpfx_test:skill_{n:02}' for n in PROFILES]+['function pvpfx_test:specials','function pvpfx_test:concurrent'])
+
+# Optional three-client receiver tests. Start packet_probe.py, use the console to
+# teleport FxNear/FxFar/FxSide to the positions below, reset the probe, then run
+# one packet_* function. Wait for all three 'scenario complete' messages before
+# reporting. Only this isolated test pack knows these synthetic player names.
+write('packet_positions',[
+ 'gamemode creative FxNear','gamemode creative FxFar','gamemode creative FxSide',
+ 'tp FxNear 50062.5 250 50052.5 0 0',
+ 'tp FxFar 50062.5 250 50032.5 0 0',
+ 'tp FxSide 50067.5 250 50052.5 90 0',
+])
+lines=['function pvpfx:cleanup']
+for n in PROFILES:
+ lines += [f'execute as FxNear at @s run function pvpfx:skill/{n:02}/cast']
+lines+=['execute as FxNear at @s run function pvpfx:skill/20/slam']
+for _ in range(12):
+ lines+=['execute as @e[tag=PvpFx,type=marker] at @s rotated as @s run function pvpfx:animation/tick']
+lines+=['execute store result storage pvpfx_test:result remaining int 1 if entity @e[tag=PvpFx,type=marker]','tellraw @a {text:"PVPFX_PROBE_END"}']
+write('packet_casts',lines)
+write('packet_private',['scoreboard players reset FxNear pfx.p15']+['execute as FxNear at @s run function pvpfx:skill/15/private']*3+['tellraw @a {text:"PVPFX_PROBE_END"}'])
+lines=[]
+for n in (24,39):
+ for stage in range(3):
+  lines += [f'execute as FxNear at @s rotated 30 -30 run function pvpfx:skill/{n}/charge_{stage}']
+for power in range(1,6):
+ for frame in range(4):
+  lines += [f'execute as FxNear at @s run function pvpfx:skill/24/drill_{power}_{frame}']
+lines += ['execute as FxNear at @s rotated 15 25 run function pvpfx:skill/39/beam_frame','execute as FxNear at @s rotated 25 -15 run function pvpfx:skill/36/sweep','tellraw @a {text:"PVPFX_PROBE_END"}']
+write('packet_specials',lines)
+write('realtime',['function pvpfx:cleanup']+[f'execute as @e[tag=PvpFxTest,limit=1] at @s run function pvpfx:skill/{n:02}/cast' for n in PROFILES]+['execute as @e[tag=PvpFxTest,limit=1] at @s run function pvpfx:skill/20/slam'])
+
+print('Installed',len(list(f.glob('*.mcfunction'))),'isolated runtime test functions:',out)

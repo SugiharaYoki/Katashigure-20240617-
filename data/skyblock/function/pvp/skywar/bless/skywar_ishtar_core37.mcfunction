@@ -47,8 +47,6 @@ execute if entity @s[tag=ishtar_lantern_SUCCESS,predicate=skyblock:forward,predi
 execute if score @s If_Bless37_change_timer matches 1.. unless entity @s[predicate=skyblock:forward,predicate=skyblock:backward] run scoreboard players set @s If_Bless37_change_timer 0
 execute if score @s If_Bless37_change_timer matches 5 run playsound minecraft:ambient.crimson_forest.mood player @a ~ ~ ~ 2 1.2
 execute if score @s If_Bless37_change_timer matches 5 run playsound minecraft:ambient.crimson_forest.mood player @a ~ ~ ~ 2 1.2
-execute if score @s If_Bless37_change_timer matches 5..20 run particle minecraft:warped_spore ~ ~1 ~ 0.9 2 0.9 0 3
-execute if score @s If_Bless37_change_timer matches 5..20 run particle minecraft:trial_spawner_detection ~ ~0.1 ~ 0.7 0 0.7 0 8
 execute if score @s If_Bless37_change_timer matches 21 at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_core37_changeitem
 
 execute if score @s If_Bless37_change_timer matches 21.. run scoreboard players set @s If_Bless37_change_timer 0

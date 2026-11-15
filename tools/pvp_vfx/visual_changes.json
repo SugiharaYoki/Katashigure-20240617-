@@ -1,0 +1,1262 @@
+[
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core.mcfunction",
+    "old": "execute if entity @s[scores={If_MD_Wait=1..},level=15..] run particle dripping_obsidian_tear ~ ~1 ~ 5 5 5 0.2 80",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core.mcfunction",
+    "old": "execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] positioned ~ ~-0.2 ~ if block ~ ~ ~ slime_block run effect give @s jump_boost 1 7 false",
+    "new": "execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] positioned ~ ~-0.2 ~ if block ~ ~ ~ slime_block run effect give @s jump_boost 1 7 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core.mcfunction",
+    "old": "execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] positioned ~ ~-0.05 ~ if block ~ ~ ~ cake run effect give @s jump_boost 1 7 false",
+    "new": "execute if items entity @s[predicate=!skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] positioned ~ ~-0.05 ~ if block ~ ~ ~ cake run effect give @s jump_boost 1 7 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core.mcfunction",
+    "old": "execute if items entity @s[predicate=skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] run effect give @s jump_boost 1 3 false",
+    "new": "execute if items entity @s[predicate=skyblock:sneaking] container.* *[custom_data={skywar:1,skywar_ishtar_20:1}] run effect give @s jump_boost 1 3 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core12.mcfunction",
+    "old": "execute if entity @s[level=6..,predicate=!skyblock:sneak] run particle ash ~ ~1 ~ 0.3 0.7 0.3 0.1 30",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core12.mcfunction",
+    "old": "execute if entity @s[level=12..,predicate=skyblock:sneak] run particle ash ~ ~1 ~ 0.3 0.7 0.3 0.1 30",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core12.mcfunction",
+    "old": "execute if entity @s[level=12..,predicate=skyblock:sneak] run particle smoke ~ ~1 ~ 0.3 0.7 0.3 0.1 10",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_1] at @s as @a[gamemode=survival,distance=0..1.8,team=!Team1_1] run effect give @s blindness 5 0 false",
+    "new": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_1] at @s as @a[gamemode=survival,distance=0..1.8,team=!Team1_1] run effect give @s blindness 5 0 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_1] at @s run particle squid_ink ~ ~1 ~ 1.5 2.3 1.5 0.03 30 normal @a[team=!Team1_1]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_1] at @s run particle large_smoke ~ ~1.2 ~ 1.5 2.6 1.5 0.03 40 normal @a[team=!Team1_1]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_1] at @s run particle large_smoke ~ ~1.2 ~ 1.5 2.6 1.5 0.03 5 normal @a[team=Team1_1]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_2] at @s as @a[gamemode=survival,distance=0..1.8,team=!Team1_2] run effect give @s blindness 5 0 false",
+    "new": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_2] at @s as @a[gamemode=survival,distance=0..1.8,team=!Team1_2] run effect give @s blindness 5 0 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_2] at @s run particle squid_ink ~ ~1 ~ 1.5 2.3 1.5 0.03 30 normal @a[team=!Team1_2]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_2] at @s run particle large_smoke ~ ~1.2 ~ 1.5 2.6 1.5 0.03 40 normal @a[team=!Team1_2]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_2] at @s run particle large_smoke ~ ~1.2 ~ 1.5 2.6 1.5 0.03 5 normal @a[team=Team1_2]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_3] at @s as @a[gamemode=survival,distance=0..1.8,team=!Team1_3] run effect give @s blindness 5 0 false",
+    "new": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_3] at @s as @a[gamemode=survival,distance=0..1.8,team=!Team1_3] run effect give @s blindness 5 0 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_3] at @s run particle squid_ink ~ ~1 ~ 1.5 2.3 1.5 0.03 30 normal @a[team=!Team1_3]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_3] at @s run particle large_smoke ~ ~1.2 ~ 1.5 2.6 1.5 0.03 40 normal @a[team=!Team1_3]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_3] at @s run particle large_smoke ~ ~1.2 ~ 1.5 2.6 1.5 0.03 5 normal @a[team=Team1_3]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_4] at @s as @a[gamemode=survival,distance=0..1.8,team=!Team1_4] run effect give @s blindness 5 0 false",
+    "new": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_4] at @s as @a[gamemode=survival,distance=0..1.8,team=!Team1_4] run effect give @s blindness 5 0 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_4] at @s run particle squid_ink ~ ~1 ~ 1.5 2.3 1.5 0.03 30 normal @a[team=!Team1_4]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_4] at @s run particle large_smoke ~ ~1.2 ~ 1.5 2.6 1.5 0.03 40 normal @a[team=!Team1_4]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_4] at @s run particle large_smoke ~ ~1.2 ~ 1.5 2.6 1.5 0.03 5 normal @a[team=Team1_4]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_5] at @s as @a[gamemode=survival,distance=0..1.8,team=!Team1_5] run effect give @s blindness 5 0 false",
+    "new": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_5] at @s as @a[gamemode=survival,distance=0..1.8,team=!Team1_5] run effect give @s blindness 5 0 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_5] at @s run particle squid_ink ~ ~1 ~ 1.5 2.3 1.5 0.03 30 normal @a[team=!Team1_5]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_5] at @s run particle large_smoke ~ ~1.2 ~ 1.5 2.6 1.5 0.03 40 normal @a[team=!Team1_5]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_5] at @s run particle large_smoke ~ ~1.2 ~ 1.5 2.6 1.5 0.03 5 normal @a[team=Team1_5]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_6] at @s as @a[gamemode=survival,distance=0..1.8,team=!Team1_6] run effect give @s blindness 5 0 false",
+    "new": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_6] at @s as @a[gamemode=survival,distance=0..1.8,team=!Team1_6] run effect give @s blindness 5 0 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_6] at @s run particle squid_ink ~ ~1 ~ 1.5 2.3 1.5 0.03 30 normal @a[team=!Team1_6]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_6] at @s run particle large_smoke ~ ~1.2 ~ 1.5 2.6 1.5 0.03 40 normal @a[team=!Team1_6]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_6] at @s run particle large_smoke ~ ~1.2 ~ 1.5 2.6 1.5 0.03 5 normal @a[team=Team1_6]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_7] at @s as @a[gamemode=survival,distance=0..1.8,team=!Team1_7] run effect give @s blindness 5 0 false",
+    "new": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_7] at @s as @a[gamemode=survival,distance=0..1.8,team=!Team1_7] run effect give @s blindness 5 0 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_7] at @s run particle squid_ink ~ ~1 ~ 1.5 2.3 1.5 0.03 30 normal @a[team=!Team1_7]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_7] at @s run particle large_smoke ~ ~1.2 ~ 1.5 2.6 1.5 0.03 40 normal @a[team=!Team1_7]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_7] at @s run particle large_smoke ~ ~1.2 ~ 1.5 2.6 1.5 0.03 5 normal @a[team=Team1_7]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_8] at @s as @a[gamemode=survival,distance=0..1.8,team=!Team1_8] run effect give @s blindness 5 0 false",
+    "new": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_8] at @s as @a[gamemode=survival,distance=0..1.8,team=!Team1_8] run effect give @s blindness 5 0 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_8] at @s run particle squid_ink ~ ~1 ~ 1.5 2.3 1.5 0.03 30 normal @a[team=!Team1_8]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_8] at @s run particle large_smoke ~ ~1.2 ~ 1.5 2.6 1.5 0.03 40 normal @a[team=!Team1_8]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core18_marker_smoke.mcfunction",
+    "old": "execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_8] at @s run particle large_smoke ~ ~1.2 ~ 1.5 2.6 1.5 0.03 5 normal @a[team=Team1_8]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 0 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 20 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 40 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 60 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 80 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 10 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 30 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 50 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 70 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 90 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 100 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 120 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 140 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 160 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 180 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 110 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 130 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 150 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 170 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 190 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 200 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 220 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 240 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 260 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 280 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 210 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 230 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 250 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 270 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 290 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 300 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 320 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 340 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 310 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 330 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 350 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute if entity @s[tag=Skywar_Bless19_1] as @a[team=!Team1_1,distance=2.9..3.1] run effect give @s slowness 3 3 false",
+    "new": "execute if entity @s[tag=Skywar_Bless19_1] as @a[team=!Team1_1,distance=2.9..3.1] run effect give @s slowness 3 3 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute if entity @s[tag=Skywar_Bless19_2] as @a[team=!Team1_2,distance=2.9..3.1] run effect give @s slowness 3 3 false",
+    "new": "execute if entity @s[tag=Skywar_Bless19_2] as @a[team=!Team1_2,distance=2.9..3.1] run effect give @s slowness 3 3 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute if entity @s[tag=Skywar_Bless19_3] as @a[team=!Team1_3,distance=2.9..3.1] run effect give @s slowness 3 3 false",
+    "new": "execute if entity @s[tag=Skywar_Bless19_3] as @a[team=!Team1_3,distance=2.9..3.1] run effect give @s slowness 3 3 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute if entity @s[tag=Skywar_Bless19_4] as @a[team=!Team1_4,distance=2.9..3.1] run effect give @s slowness 3 3 false",
+    "new": "execute if entity @s[tag=Skywar_Bless19_4] as @a[team=!Team1_4,distance=2.9..3.1] run effect give @s slowness 3 3 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute if entity @s[tag=Skywar_Bless19_5] as @a[team=!Team1_5,distance=2.9..3.1] run effect give @s slowness 3 3 false",
+    "new": "execute if entity @s[tag=Skywar_Bless19_5] as @a[team=!Team1_5,distance=2.9..3.1] run effect give @s slowness 3 3 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute if entity @s[tag=Skywar_Bless19_6] as @a[team=!Team1_6,distance=2.9..3.1] run effect give @s slowness 3 3 false",
+    "new": "execute if entity @s[tag=Skywar_Bless19_6] as @a[team=!Team1_6,distance=2.9..3.1] run effect give @s slowness 3 3 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute if entity @s[tag=Skywar_Bless19_7] as @a[team=!Team1_7,distance=2.9..3.1] run effect give @s slowness 3 3 false",
+    "new": "execute if entity @s[tag=Skywar_Bless19_7] as @a[team=!Team1_7,distance=2.9..3.1] run effect give @s slowness 3 3 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core19b.mcfunction",
+    "old": "execute if entity @s[tag=Skywar_Bless19_8] as @a[team=!Team1_8,distance=2.9..3.1] run effect give @s slowness 3 3 false",
+    "new": "execute if entity @s[tag=Skywar_Bless19_8] as @a[team=!Team1_8,distance=2.9..3.1] run effect give @s slowness 3 3 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core21b.mcfunction",
+    "old": "execute if entity @s[scores={If_Bless21b=3}] run particle minecraft:sonic_boom ~ ~ ~ 0 0 0 0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core21b.mcfunction",
+    "old": "execute if entity @s[scores={If_Bless21b=9}] run particle minecraft:sonic_boom ~ ~ ~ 0 0 0 0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core21b.mcfunction",
+    "old": "execute if entity @s[scores={If_Bless21b=15}] run particle minecraft:sonic_boom ~ ~ ~ 0 0 0 0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core21b.mcfunction",
+    "old": "execute if entity @s[scores={If_Bless21b=21}] run particle minecraft:sonic_boom ~ ~ ~ 0 0 0 0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core21b.mcfunction",
+    "old": "execute if entity @s[scores={If_Bless21b=27}] run particle minecraft:sonic_boom ~ ~ ~ 0 0 0 0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core21b.mcfunction",
+    "old": "execute if entity @s[scores={If_Bless21b=33}] run particle minecraft:sonic_boom ~ ~ ~ 0 0 0 0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core21b.mcfunction",
+    "old": "execute if entity @s[scores={If_Bless21b=38}] run particle minecraft:sonic_boom ~ ~ ~ 0 0 0 0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core22.mcfunction",
+    "old": "particle minecraft:wax_off ~ ~ ~ 4 0 4 0 500",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core22.mcfunction",
+    "old": "particle minecraft:wax_off ~ ~ ~ 4 0 4 0 500",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core23.mcfunction",
+    "old": "execute if score @s If_Bless23 matches 200.. run effect give @s resistance 3 49 false",
+    "new": "execute if score @s If_Bless23 matches 200.. run effect give @s resistance 3 49 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core23.mcfunction",
+    "old": "execute if score @s[tag=Bless23_Effective,team=Team1_1] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_1,distance=0..3] run effect give @s absorption 2 2 false",
+    "new": "execute if score @s[tag=Bless23_Effective,team=Team1_1] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_1,distance=0..3] run effect give @s absorption 2 2 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core23.mcfunction",
+    "old": "execute if score @s[tag=Bless23_Effective,team=Team1_2] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_2,distance=0..3] run effect give @s absorption 2 2 false",
+    "new": "execute if score @s[tag=Bless23_Effective,team=Team1_2] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_2,distance=0..3] run effect give @s absorption 2 2 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core23.mcfunction",
+    "old": "execute if score @s[tag=Bless23_Effective,team=Team1_3] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_3,distance=0..3] run effect give @s absorption 2 2 false",
+    "new": "execute if score @s[tag=Bless23_Effective,team=Team1_3] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_3,distance=0..3] run effect give @s absorption 2 2 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core23.mcfunction",
+    "old": "execute if score @s[tag=Bless23_Effective,team=Team1_4] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_4,distance=0..3] run effect give @s absorption 2 2 false",
+    "new": "execute if score @s[tag=Bless23_Effective,team=Team1_4] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_4,distance=0..3] run effect give @s absorption 2 2 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core23.mcfunction",
+    "old": "execute if score @s[tag=Bless23_Effective,team=Team1_5] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_5,distance=0..3] run effect give @s absorption 2 2 false",
+    "new": "execute if score @s[tag=Bless23_Effective,team=Team1_5] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_5,distance=0..3] run effect give @s absorption 2 2 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core23.mcfunction",
+    "old": "execute if score @s[tag=Bless23_Effective,team=Team1_6] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_6,distance=0..3] run effect give @s absorption 2 2 false",
+    "new": "execute if score @s[tag=Bless23_Effective,team=Team1_6] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_6,distance=0..3] run effect give @s absorption 2 2 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core23.mcfunction",
+    "old": "execute if score @s[tag=Bless23_Effective,team=Team1_7] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_7,distance=0..3] run effect give @s absorption 2 2 false",
+    "new": "execute if score @s[tag=Bless23_Effective,team=Team1_7] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_7,distance=0..3] run effect give @s absorption 2 2 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core23.mcfunction",
+    "old": "execute if score @s[tag=Bless23_Effective,team=Team1_8] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_8,distance=0..3] run effect give @s absorption 2 2 false",
+    "new": "execute if score @s[tag=Bless23_Effective,team=Team1_8] If_Bless23c matches 1.. if entity @a[tag=PVPing,gamemode=survival,team=!Team1_8,distance=0..3] run effect give @s absorption 2 2 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core24e.mcfunction",
+    "old": "execute as @e[tag=Bless24_Effective,scores={rng1=1..15}] at @s run particle trial_spawner_detection_ominous ~ ~ ~ 0.2 50 0.2 0 100",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core24e.mcfunction",
+    "old": "execute as @e[tag=Bless24_Effective,scores={rng1=6..15}] at @s run particle trial_spawner_detection_ominous ~ ~ ~ 0.2 60 0.2 0 200",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core24e.mcfunction",
+    "old": "execute as @e[tag=Bless24_Effective,scores={rng1=10..15}] at @s run particle trial_spawner_detection_ominous ~ ~ ~ 0.2 70 0.2 0 300",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core24e_marker.mcfunction",
+    "old": "execute as @s at @s run particle explosion ~ ~ ~ 0.2 0.2 0.2 0 3",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core24e_marker.mcfunction",
+    "old": "execute as @s at @s run particle large_smoke ~ ~ ~ 0.2 0.2 0.2 0.09 2",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core26e.mcfunction",
+    "old": "title @s times 0 10 10",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core26e.mcfunction",
+    "old": "title @s actionbar {text:\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\"obfuscated\": true}",
+    "new": "title @s actionbar {text:\"✦ 理性混淆 ✦\",color:\"light_purple\"}",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core26e.mcfunction",
+    "old": "title @s title {text:\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\"obfuscated\": true}",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core26e.mcfunction",
+    "old": "title @s subtitle {text:\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\"obfuscated\": true}",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core26e.mcfunction",
+    "old": "tellraw @s {text:\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\",\"obfuscated\": true}",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core26e.mcfunction",
+    "old": "effect give @s mining_fatigue 3 2 false",
+    "new": "effect give @s mining_fatigue 3 2 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core29e.mcfunction",
+    "old": "effect give @s slowness 3 1 false",
+    "new": "effect give @s slowness 3 1 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core30.mcfunction",
+    "old": "effect give @s resistance 2 19 false",
+    "new": "effect give @s resistance 2 19 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core31_trident.mcfunction",
+    "old": "execute unless score @s rng1 matches 4.. run particle electric_spark ~ ~3 ~ 0.2 10 0.2 0 40",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core31_trident.mcfunction",
+    "old": "execute if score @s rng1 matches 4..13 run particle electric_spark ~ ~1 ~ 0.2 0.2 0.2 0.01 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core31_trident.mcfunction",
+    "old": "execute if score @s rng1 matches 14..23 run particle electric_spark ~ ~1 ~ 0.2 0.2 0.2 0.02 2",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core31_trident.mcfunction",
+    "old": "execute if score @s rng1 matches 24..33 run particle electric_spark ~ ~1 ~ 0.2 0.2 0.2 0.03 4",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core31_trident.mcfunction",
+    "old": "execute if score @s rng1 matches 34..43 run particle electric_spark ~ ~1 ~ 0.2 0.2 0.2 0.04 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core31_trident.mcfunction",
+    "old": "execute if score @s rng1 matches 44 run particle explosion_emitter ~ ~ ~ 0 0 0 0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core32.mcfunction",
+    "old": "particle crimson_spore ~ ~ ~ 0.5 0 0.5 0.02 20",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core34.mcfunction",
+    "old": "execute as @e[tag=Bless34,type=item] at @s run particle portal ~ ~ ~ 0 0 0 0.06 30",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core34e.mcfunction",
+    "old": "execute at @s[scores={rng1=2}] if entity @s[x=50000,y=0,z=50000,distance=..1500] run particle white_smoke ~ ~ ~ 0 0 0 0.06 35",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36.mcfunction",
+    "old": "particle minecraft:trial_spawner_detection ~ ~ ~ 0.5 0 0.5 0 80",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if score @s rng1 matches 5.. at @s rotated as @s run particle flame ^ ^0.2 ^0.5 0 0 0 0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if score @s rng1 matches 5.. at @s rotated as @s run particle flame ^ ^0.2 ^1.0 0 0 0 0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if score @s rng1 matches 5.. at @s rotated as @s run particle flame ^ ^0.2 ^1.5 0 0 0 0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if score @s rng1 matches 5.. at @s rotated as @s run particle flame ^ ^0.2 ^2.0 0 0 0 0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if score @s rng1 matches 5.. at @s rotated as @s run particle flame ^ ^0.2 ^2.5 0 0 0 0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if score @s rng1 matches 5.. at @s rotated as @s run particle flame ^ ^0.2 ^3.0 0 0 0 0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if score @s rng1 matches 5.. at @s rotated as @s run particle flame ^ ^0.2 ^3.5 0 0 0 0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if score @s rng1 matches 5.. at @s rotated as @s run particle flame ^ ^0.2 ^4.0 0 0 0 0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if score @s rng1 matches 5.. at @s rotated as @s run particle flame ^ ^0.2 ^4.5 0 0 0 0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if score @s rng1 matches 5.. at @s rotated as @s run particle flame ^ ^0.2 ^5.0 0 0 0 0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if score @s rng1 matches 5.. at @s rotated as @s run particle flame ^ ^0.2 ^5.5 0 0 0 0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if score @s rng1 matches 5.. at @s rotated as @s run particle flame ^ ^0.2 ^6.0 0 0 0 0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if score @s rng1 matches 7..9 if entity @s[tag=Skywar_Bless36_1] at @s run particle minecraft:happy_villager ~ ~1 ~ 0 2 0 0 10 normal @a[team=Team1_1]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if score @s rng1 matches 7..9 if entity @s[tag=Skywar_Bless36_2] at @s run particle minecraft:happy_villager ~ ~1 ~ 0 2 0 0 10 normal @a[team=Team1_2]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if score @s rng1 matches 7..9 if entity @s[tag=Skywar_Bless36_3] at @s run particle minecraft:happy_villager ~ ~1 ~ 0 2 0 0 10 normal @a[team=Team1_3]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if score @s rng1 matches 7..9 if entity @s[tag=Skywar_Bless36_4] at @s run particle minecraft:happy_villager ~ ~1 ~ 0 2 0 0 10 normal @a[team=Team1_4]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if score @s rng1 matches 7..9 if entity @s[tag=Skywar_Bless36_5] at @s run particle minecraft:happy_villager ~ ~1 ~ 0 2 0 0 10 normal @a[team=Team1_5]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if score @s rng1 matches 7..9 if entity @s[tag=Skywar_Bless36_6] at @s run particle minecraft:happy_villager ~ ~1 ~ 0 2 0 0 10 normal @a[team=Team1_6]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if score @s rng1 matches 7..9 if entity @s[tag=Skywar_Bless36_7] at @s run particle minecraft:happy_villager ~ ~1 ~ 0 2 0 0 10 normal @a[team=Team1_7]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if score @s rng1 matches 7..9 if entity @s[tag=Skywar_Bless36_8] at @s run particle minecraft:happy_villager ~ ~1 ~ 0 2 0 0 10 normal @a[team=Team1_8]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if entity @s[tag=Skywar_Bless36_1] at @s run effect give @a[team=Team1_1,distance=..4.2] haste 3 4 false",
+    "new": "execute if entity @s[tag=Skywar_Bless36_1] at @s run effect give @a[team=Team1_1,distance=..4.2] haste 3 4 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if entity @s[tag=Skywar_Bless36_2] at @s run effect give @a[team=Team1_2,distance=..4.2] haste 3 4 false",
+    "new": "execute if entity @s[tag=Skywar_Bless36_2] at @s run effect give @a[team=Team1_2,distance=..4.2] haste 3 4 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if entity @s[tag=Skywar_Bless36_3] at @s run effect give @a[team=Team1_3,distance=..4.2] haste 3 4 false",
+    "new": "execute if entity @s[tag=Skywar_Bless36_3] at @s run effect give @a[team=Team1_3,distance=..4.2] haste 3 4 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if entity @s[tag=Skywar_Bless36_4] at @s run effect give @a[team=Team1_4,distance=..4.2] haste 3 4 false",
+    "new": "execute if entity @s[tag=Skywar_Bless36_4] at @s run effect give @a[team=Team1_4,distance=..4.2] haste 3 4 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if entity @s[tag=Skywar_Bless36_5] at @s run effect give @a[team=Team1_5,distance=..4.2] haste 3 4 false",
+    "new": "execute if entity @s[tag=Skywar_Bless36_5] at @s run effect give @a[team=Team1_5,distance=..4.2] haste 3 4 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if entity @s[tag=Skywar_Bless36_6] at @s run effect give @a[team=Team1_6,distance=..4.2] haste 3 4 false",
+    "new": "execute if entity @s[tag=Skywar_Bless36_6] at @s run effect give @a[team=Team1_6,distance=..4.2] haste 3 4 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if entity @s[tag=Skywar_Bless36_7] at @s run effect give @a[team=Team1_7,distance=..4.2] haste 3 4 false",
+    "new": "execute if entity @s[tag=Skywar_Bless36_7] at @s run effect give @a[team=Team1_7,distance=..4.2] haste 3 4 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core36b.mcfunction",
+    "old": "execute if entity @s[tag=Skywar_Bless36_8] at @s run effect give @a[team=Team1_8,distance=..4.2] haste 3 4 false",
+    "new": "execute if entity @s[tag=Skywar_Bless36_8] at @s run effect give @a[team=Team1_8,distance=..4.2] haste 3 4 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37.mcfunction",
+    "old": "execute if score @s If_Bless37_change_timer matches 5..20 run particle minecraft:warped_spore ~ ~1 ~ 0.9 2 0.9 0 3",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37.mcfunction",
+    "old": "execute if score @s If_Bless37_change_timer matches 5..20 run particle minecraft:trial_spawner_detection ~ ~0.1 ~ 0.7 0 0.7 0 8",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37_changeitem.mcfunction",
+    "old": "execute at @s run particle flash{color:[0.200,0.200,0.400,1.00]} ~ ~1 ~ 0 0 0 0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37p.mcfunction",
+    "old": "$execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 0 0 run particle dust{color: [$(particle1),$(particle2),$(particle3)], scale: 1.0} ^ ^ ^$(distance) 0.13 0.07 0.13 0.0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37p.mcfunction",
+    "old": "$execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 20 0 run particle dust{color: [$(particle1),$(particle2),$(particle3)], scale: 1.0} ^ ^ ^$(distance) 0.13 0.07 0.13 0.0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37p.mcfunction",
+    "old": "$execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 40 0 run particle dust{color: [$(particle1),$(particle2),$(particle3)], scale: 1.0} ^ ^ ^$(distance) 0.13 0.07 0.13 0.0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37p.mcfunction",
+    "old": "$execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 60 0 run particle dust{color: [$(particle1),$(particle2),$(particle3)], scale: 1.0} ^ ^ ^$(distance) 0.13 0.07 0.13 0.0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37p.mcfunction",
+    "old": "$execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 80 0 run particle dust{color: [$(particle1),$(particle2),$(particle3)], scale: 1.0} ^ ^ ^$(distance) 0.13 0.07 0.13 0.0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37p.mcfunction",
+    "old": "$execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 100 0 run particle dust{color: [$(particle1),$(particle2),$(particle3)], scale: 1.0} ^ ^ ^$(distance) 0.13 0.07 0.13 0.0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37p.mcfunction",
+    "old": "$execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 120 0 run particle dust{color: [$(particle1),$(particle2),$(particle3)], scale: 1.0} ^ ^ ^$(distance) 0.13 0.07 0.13 0.0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37p.mcfunction",
+    "old": "$execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 140 0 run particle dust{color: [$(particle1),$(particle2),$(particle3)], scale: 1.0} ^ ^ ^$(distance) 0.13 0.07 0.13 0.0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37p.mcfunction",
+    "old": "$execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 160 0 run particle dust{color: [$(particle1),$(particle2),$(particle3)], scale: 1.0} ^ ^ ^$(distance) 0.13 0.07 0.13 0.0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37p.mcfunction",
+    "old": "$execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 180 0 run particle dust{color: [$(particle1),$(particle2),$(particle3)], scale: 1.0} ^ ^ ^$(distance) 0.13 0.07 0.13 0.0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37p.mcfunction",
+    "old": "$execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 200 0 run particle dust{color: [$(particle1),$(particle2),$(particle3)], scale: 1.0} ^ ^ ^$(distance) 0.13 0.07 0.13 0.0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37p.mcfunction",
+    "old": "$execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 220 0 run particle dust{color: [$(particle1),$(particle2),$(particle3)], scale: 1.0} ^ ^ ^$(distance) 0.13 0.07 0.13 0.0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37p.mcfunction",
+    "old": "$execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 240 0 run particle dust{color: [$(particle1),$(particle2),$(particle3)], scale: 1.0} ^ ^ ^$(distance) 0.13 0.07 0.13 0.0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37p.mcfunction",
+    "old": "$execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 260 0 run particle dust{color: [$(particle1),$(particle2),$(particle3)], scale: 1.0} ^ ^ ^$(distance) 0.13 0.07 0.13 0.0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37p.mcfunction",
+    "old": "$execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 280 0 run particle dust{color: [$(particle1),$(particle2),$(particle3)], scale: 1.0} ^ ^ ^$(distance) 0.13 0.07 0.13 0.0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37p.mcfunction",
+    "old": "$execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 300 0 run particle dust{color: [$(particle1),$(particle2),$(particle3)], scale: 1.0} ^ ^ ^$(distance) 0.13 0.07 0.13 0.0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37p.mcfunction",
+    "old": "$execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 320 0 run particle dust{color: [$(particle1),$(particle2),$(particle3)], scale: 1.0} ^ ^ ^$(distance) 0.13 0.07 0.13 0.0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37p.mcfunction",
+    "old": "$execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 340 0 run particle dust{color: [$(particle1),$(particle2),$(particle3)], scale: 1.0} ^ ^ ^$(distance) 0.13 0.07 0.13 0.0 1",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37t.mcfunction",
+    "old": "$execute if entity @s[team=Team1_1] if items entity @a[distance=..$(If_Bless37),team=Team1_1] container.* *[custom_data={skywar_ishtar_36:1}] as @a[distance=..$(If_Bless37),team=!Team1_1] run effect give @s wither 3 1 false",
+    "new": "$execute if entity @s[team=Team1_1] if items entity @a[distance=..$(If_Bless37),team=Team1_1] container.* *[custom_data={skywar_ishtar_36:1}] as @a[distance=..$(If_Bless37),team=!Team1_1] run effect give @s wither 3 1 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37t.mcfunction",
+    "old": "$execute if entity @s[team=Team1_2] if items entity @a[distance=..$(If_Bless37),team=Team1_2] container.* *[custom_data={skywar_ishtar_36:1}] as @a[distance=..$(If_Bless37),team=!Team1_2] run effect give @s wither 3 1 false",
+    "new": "$execute if entity @s[team=Team1_2] if items entity @a[distance=..$(If_Bless37),team=Team1_2] container.* *[custom_data={skywar_ishtar_36:1}] as @a[distance=..$(If_Bless37),team=!Team1_2] run effect give @s wither 3 1 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37t.mcfunction",
+    "old": "$execute if entity @s[team=Team1_3] if items entity @a[distance=..$(If_Bless37),team=Team1_3] container.* *[custom_data={skywar_ishtar_36:1}] as @a[distance=..$(If_Bless37),team=!Team1_3] run effect give @s wither 3 1 false",
+    "new": "$execute if entity @s[team=Team1_3] if items entity @a[distance=..$(If_Bless37),team=Team1_3] container.* *[custom_data={skywar_ishtar_36:1}] as @a[distance=..$(If_Bless37),team=!Team1_3] run effect give @s wither 3 1 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37t.mcfunction",
+    "old": "$execute if entity @s[team=Team1_4] if items entity @a[distance=..$(If_Bless37),team=Team1_4] container.* *[custom_data={skywar_ishtar_36:1}] as @a[distance=..$(If_Bless37),team=!Team1_4] run effect give @s wither 3 1 false",
+    "new": "$execute if entity @s[team=Team1_4] if items entity @a[distance=..$(If_Bless37),team=Team1_4] container.* *[custom_data={skywar_ishtar_36:1}] as @a[distance=..$(If_Bless37),team=!Team1_4] run effect give @s wither 3 1 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37t.mcfunction",
+    "old": "$execute if entity @s[team=Team1_5] if items entity @a[distance=..$(If_Bless37),team=Team1_5] container.* *[custom_data={skywar_ishtar_36:1}] as @a[distance=..$(If_Bless37),team=!Team1_5] run effect give @s wither 3 1 false",
+    "new": "$execute if entity @s[team=Team1_5] if items entity @a[distance=..$(If_Bless37),team=Team1_5] container.* *[custom_data={skywar_ishtar_36:1}] as @a[distance=..$(If_Bless37),team=!Team1_5] run effect give @s wither 3 1 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37t.mcfunction",
+    "old": "$execute if entity @s[team=Team1_6] if items entity @a[distance=..$(If_Bless37),team=Team1_6] container.* *[custom_data={skywar_ishtar_36:1}] as @a[distance=..$(If_Bless37),team=!Team1_6] run effect give @s wither 3 1 false",
+    "new": "$execute if entity @s[team=Team1_6] if items entity @a[distance=..$(If_Bless37),team=Team1_6] container.* *[custom_data={skywar_ishtar_36:1}] as @a[distance=..$(If_Bless37),team=!Team1_6] run effect give @s wither 3 1 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37t.mcfunction",
+    "old": "$execute if entity @s[team=Team1_7] if items entity @a[distance=..$(If_Bless37),team=Team1_7] container.* *[custom_data={skywar_ishtar_36:1}] as @a[distance=..$(If_Bless37),team=!Team1_7] run effect give @s wither 3 1 false",
+    "new": "$execute if entity @s[team=Team1_7] if items entity @a[distance=..$(If_Bless37),team=Team1_7] container.* *[custom_data={skywar_ishtar_36:1}] as @a[distance=..$(If_Bless37),team=!Team1_7] run effect give @s wither 3 1 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core37t.mcfunction",
+    "old": "$execute if entity @s[team=Team1_8] if items entity @a[distance=..$(If_Bless37),team=Team1_8] container.* *[custom_data={skywar_ishtar_36:1}] as @a[distance=..$(If_Bless37),team=!Team1_8] run effect give @s wither 3 1 false",
+    "new": "$execute if entity @s[team=Team1_8] if items entity @a[distance=..$(If_Bless37),team=Team1_8] container.* *[custom_data={skywar_ishtar_36:1}] as @a[distance=..$(If_Bless37),team=!Team1_8] run effect give @s wither 3 1 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core38.mcfunction",
+    "old": "execute if score @s If_Bless38 matches 9 at @s run particle portal ~ ~1 ~ 0.3 0.3 0.3 0.1 30",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core38.mcfunction",
+    "old": "execute if score @s If_Bless38 matches 9 at @s run particle reverse_portal ~ ~1 ~ 0.3 0.3 0.3 0.1 30",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core38_save_position.mcfunction",
+    "old": "execute if score @s If_Bless38_code matches 1 at @s if entity @n[distance=2..,type=marker,scores={If_Bless38_code=1},tag=If_Bless38] run particle end_rod ~ ~1 ~ 0 5 0 0 40 normal @s",
+    "new": "execute if score @s If_Bless38_code matches 1 at @s if entity @n[distance=2..,type=marker,scores={If_Bless38_code=1},tag=If_Bless38] run particle minecraft:dust{color:[0.4,1.0,0.8],scale:0.18} ~ ~0.1 ~ 0.12 0 0.12 0 2 force @s[distance=4..160]",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core38_save_position.mcfunction",
+    "old": "execute if score @s If_Bless38_code matches 2 at @s if entity @n[distance=2..,type=marker,scores={If_Bless38_code=2},tag=If_Bless38] run particle end_rod ~ ~1 ~ 0 5 0 0 40 normal @s",
+    "new": "execute if score @s If_Bless38_code matches 2 at @s if entity @n[distance=2..,type=marker,scores={If_Bless38_code=2},tag=If_Bless38] run particle minecraft:dust{color:[0.4,1.0,0.8],scale:0.18} ~ ~0.1 ~ 0.12 0 0.12 0 2 force @s[distance=4..160]",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core38_save_position.mcfunction",
+    "old": "execute if score @s If_Bless38_code matches 3 at @s if entity @n[distance=2..,type=marker,scores={If_Bless38_code=3},tag=If_Bless38] run particle end_rod ~ ~1 ~ 0 5 0 0 40 normal @s",
+    "new": "execute if score @s If_Bless38_code matches 3 at @s if entity @n[distance=2..,type=marker,scores={If_Bless38_code=3},tag=If_Bless38] run particle minecraft:dust{color:[0.4,1.0,0.8],scale:0.18} ~ ~0.1 ~ 0.12 0 0.12 0 2 force @s[distance=4..160]",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core38_save_position.mcfunction",
+    "old": "execute if score @s If_Bless38_code matches 4 at @s if entity @n[distance=2..,type=marker,scores={If_Bless38_code=4},tag=If_Bless38] run particle end_rod ~ ~1 ~ 0 5 0 0 40 normal @s",
+    "new": "execute if score @s If_Bless38_code matches 4 at @s if entity @n[distance=2..,type=marker,scores={If_Bless38_code=4},tag=If_Bless38] run particle minecraft:dust{color:[0.4,1.0,0.8],scale:0.18} ~ ~0.1 ~ 0.12 0 0.12 0 2 force @s[distance=4..160]",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core38_save_position.mcfunction",
+    "old": "execute if score @s If_Bless38_code matches 5 at @s if entity @n[distance=2..,type=marker,scores={If_Bless38_code=5},tag=If_Bless38] run particle end_rod ~ ~1 ~ 0 5 0 0 40 normal @s",
+    "new": "execute if score @s If_Bless38_code matches 5 at @s if entity @n[distance=2..,type=marker,scores={If_Bless38_code=5},tag=If_Bless38] run particle minecraft:dust{color:[0.4,1.0,0.8],scale:0.18} ~ ~0.1 ~ 0.12 0 0.12 0 2 force @s[distance=4..160]",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core38_save_position.mcfunction",
+    "old": "execute if score @s If_Bless38_code matches 6 at @s if entity @n[distance=2..,type=marker,scores={If_Bless38_code=6},tag=If_Bless38] run particle end_rod ~ ~1 ~ 0 5 0 0 40 normal @s",
+    "new": "execute if score @s If_Bless38_code matches 6 at @s if entity @n[distance=2..,type=marker,scores={If_Bless38_code=6},tag=If_Bless38] run particle minecraft:dust{color:[0.4,1.0,0.8],scale:0.18} ~ ~0.1 ~ 0.12 0 0.12 0 2 force @s[distance=4..160]",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core38_save_position.mcfunction",
+    "old": "execute if score @s If_Bless38_code matches 7 at @s if entity @n[distance=2..,type=marker,scores={If_Bless38_code=7},tag=If_Bless38] run particle end_rod ~ ~1 ~ 0 5 0 0 40 normal @s",
+    "new": "execute if score @s If_Bless38_code matches 7 at @s if entity @n[distance=2..,type=marker,scores={If_Bless38_code=7},tag=If_Bless38] run particle minecraft:dust{color:[0.4,1.0,0.8],scale:0.18} ~ ~0.1 ~ 0.12 0 0.12 0 2 force @s[distance=4..160]",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core38_save_position.mcfunction",
+    "old": "execute if score @s If_Bless38_code matches 8 at @s if entity @n[distance=2..,type=marker,scores={If_Bless38_code=8},tag=If_Bless38] run particle end_rod ~ ~1 ~ 0 5 0 0 40 normal @s",
+    "new": "execute if score @s If_Bless38_code matches 8 at @s if entity @n[distance=2..,type=marker,scores={If_Bless38_code=8},tag=If_Bless38] run particle minecraft:dust{color:[0.4,1.0,0.8],scale:0.18} ~ ~0.1 ~ 0.12 0 0.12 0 2 force @s[distance=4..160]",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core38_save_position.mcfunction",
+    "old": "execute if score @s If_Bless38_code matches 9 at @s if entity @n[distance=2..,type=marker,scores={If_Bless38_code=9},tag=If_Bless38] run particle end_rod ~ ~1 ~ 0 5 0 0 40 normal @s",
+    "new": "execute if score @s If_Bless38_code matches 9 at @s if entity @n[distance=2..,type=marker,scores={If_Bless38_code=9},tag=If_Bless38] run particle minecraft:dust{color:[0.4,1.0,0.8],scale:0.18} ~ ~0.1 ~ 0.12 0 0.12 0 2 force @s[distance=4..160]",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core38_save_position.mcfunction",
+    "old": "execute if score @s If_Bless38_code matches 10 at @s if entity @n[distance=2..,type=marker,scores={If_Bless38_code=10},tag=If_Bless38] run particle end_rod ~ ~1 ~ 0 5 0 0 40 normal @s",
+    "new": "execute if score @s If_Bless38_code matches 10 at @s if entity @n[distance=2..,type=marker,scores={If_Bless38_code=10},tag=If_Bless38] run particle minecraft:dust{color:[0.4,1.0,0.8],scale:0.18} ~ ~0.1 ~ 0.12 0 0.12 0 2 force @s[distance=4..160]",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core4_e.mcfunction",
+    "old": "execute if score @s rng1 matches 1..5 run particle electric_spark ~ ~ ~ 1 0 1 0.03 20",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core5.mcfunction",
+    "old": "execute if entity @s[team=Team1_1] as @a[team=!Team1_1,distance=1] run effect give @s darkness 3 0 false",
+    "new": "execute if entity @s[team=Team1_1] as @a[team=!Team1_1,distance=1] run effect give @s darkness 3 0 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core5.mcfunction",
+    "old": "execute if entity @s[team=Team1_2] as @a[team=!Team1_2,distance=1] run effect give @s darkness 3 0 false",
+    "new": "execute if entity @s[team=Team1_2] as @a[team=!Team1_2,distance=1] run effect give @s darkness 3 0 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core5.mcfunction",
+    "old": "execute if entity @s[team=Team1_3] as @a[team=!Team1_3,distance=1] run effect give @s darkness 3 0 false",
+    "new": "execute if entity @s[team=Team1_3] as @a[team=!Team1_3,distance=1] run effect give @s darkness 3 0 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core5.mcfunction",
+    "old": "execute if entity @s[team=Team1_4] as @a[team=!Team1_4,distance=1] run effect give @s darkness 3 0 false",
+    "new": "execute if entity @s[team=Team1_4] as @a[team=!Team1_4,distance=1] run effect give @s darkness 3 0 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core5.mcfunction",
+    "old": "execute if entity @s[team=Team1_5] as @a[team=!Team1_5,distance=1] run effect give @s darkness 3 0 false",
+    "new": "execute if entity @s[team=Team1_5] as @a[team=!Team1_5,distance=1] run effect give @s darkness 3 0 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core5.mcfunction",
+    "old": "execute if entity @s[team=Team1_6] as @a[team=!Team1_6,distance=1] run effect give @s darkness 3 0 false",
+    "new": "execute if entity @s[team=Team1_6] as @a[team=!Team1_6,distance=1] run effect give @s darkness 3 0 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core5.mcfunction",
+    "old": "execute if entity @s[team=Team1_7] as @a[team=!Team1_7,distance=1] run effect give @s darkness 3 0 false",
+    "new": "execute if entity @s[team=Team1_7] as @a[team=!Team1_7,distance=1] run effect give @s darkness 3 0 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core5.mcfunction",
+    "old": "execute if entity @s[team=Team1_8] as @a[team=!Team1_8,distance=1] run effect give @s darkness 3 0 false",
+    "new": "execute if entity @s[team=Team1_8] as @a[team=!Team1_8,distance=1] run effect give @s darkness 3 0 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_core9.mcfunction",
+    "old": "execute if entity @s[scores={ishtar_core_1=2}] run effect give @s jump_boost 5 2 false",
+    "new": "execute if entity @s[scores={ishtar_core_1=2}] run effect give @s jump_boost 5 2 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_damage_dealt.mcfunction",
+    "old": "execute as @a[tag=skywar_ishtar_35_target] at @s run effect give @s hunger 3 4 false",
+    "new": "execute as @a[tag=skywar_ishtar_35_target] at @s run effect give @s hunger 3 4 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_damage_dealt.mcfunction",
+    "old": "execute as @a[tag=skywar_ishtar_35_target] at @s run particle minecraft:trial_spawner_detection ~ ~ ~ 0.2 0 0.2 0 30",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/skywar_ishtar_damage_dealt.mcfunction",
+    "old": "execute if items entity @s[scores={If_BlessDoDamage=10..}] weapon.mainhand *[custom_data={skywar_ishtar_6:1}] run effect give @s invisibility 3 0 false",
+    "new": "execute if items entity @s[scores={If_BlessDoDamage=10..}] weapon.mainhand *[custom_data={skywar_ishtar_6:1}] run effect give @s invisibility 3 0 true",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/sniper/preview_end.mcfunction",
+    "old": "particle minecraft:end_rod ~ ~ ~ 0.5 0.5 0.5 0 8 force @a[tag=Skywar_Bless39_owner]",
+    "new": "execute rotated ~ 0 positioned ^-0.3 ^-0.3 ^ run particle minecraft:dust{color:[0.6,0.95,1.0],scale:0.18} ~ ~ ~ 0 0 0 0 1 force @a[tag=Skywar_Bless39_owner,distance=4..160]\nexecute rotated ~ 0 positioned ^-0.3 ^0.3 ^ run particle minecraft:dust{color:[0.6,0.95,1.0],scale:0.18} ~ ~ ~ 0 0 0 0 1 force @a[tag=Skywar_Bless39_owner,distance=4..160]\nexecute rotated ~ 0 positioned ^0.3 ^-0.3 ^ run particle minecraft:dust{color:[0.6,0.95,1.0],scale:0.18} ~ ~ ~ 0 0 0 0 1 force @a[tag=Skywar_Bless39_owner,distance=4..160]\nexecute rotated ~ 0 positioned ^0.3 ^0.3 ^ run particle minecraft:dust{color:[0.6,0.95,1.0],scale:0.18} ~ ~ ~ 0 0 0 0 1 force @a[tag=Skywar_Bless39_owner,distance=4..160]",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/sniper/preview_step.mcfunction",
+    "old": "particle minecraft:end_rod ~ ~ ~ 0 0 0 0 1 force @a[tag=!Skywar_Bless39_owner]",
+    "new": "execute positioned ~ ~ ~ run particle minecraft:dust_color_transition{from_color:[0.65,0.85,1.0],to_color:[0.5,0.3,1.0],scale:0.18} ~ ~ ~ 0 0 0 0 1 force @a[tag=!Skywar_Bless39_owner,distance=4..160]",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/sniper/step.mcfunction",
+    "old": "execute if entity @s[tag=!Skywar_Bless39_spent,scores={rng5=0}] at @s run particle minecraft:explosion ~ ~ ~ 0 0 0 0 1 force @a[tag=!Skywar_Bless39_owner]",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  },
+  {
+    "file": "data/skyblock/function/pvp/skywar/bless/sniper/step.mcfunction",
+    "old": "execute if entity @s[tag=!Skywar_Bless39_spent,scores={rng5=0}] at @s as @a[tag=Skywar_Bless39_owner] unless entity @s[distance=..4] run particle minecraft:explosion ~ ~ ~ 0 0 0 0 1 force @s",
+    "new": "",
+    "reason": "Replace obstructive cosmetic output; preserve combat commands."
+  }
+]

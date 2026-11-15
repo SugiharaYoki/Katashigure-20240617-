@@ -6,8 +6,7 @@ execute if items entity @s[team=Team1_5] weapon.mainhand *[custom_data={skywar_i
 execute if items entity @s[team=Team1_6] weapon.mainhand *[custom_data={skywar_ishtar_35:1}] positioned ^ ^ ^2 run tag @p[distance=0..3.5,team=!Team1_6] add skywar_ishtar_35_target
 execute if items entity @s[team=Team1_7] weapon.mainhand *[custom_data={skywar_ishtar_35:1}] positioned ^ ^ ^2 run tag @p[distance=0..3.5,team=!Team1_7] add skywar_ishtar_35_target
 execute if items entity @s[team=Team1_8] weapon.mainhand *[custom_data={skywar_ishtar_35:1}] positioned ^ ^ ^2 run tag @p[distance=0..3.5,team=!Team1_8] add skywar_ishtar_35_target
-execute as @a[tag=skywar_ishtar_35_target] at @s run effect give @s hunger 3 4 false
-execute as @a[tag=skywar_ishtar_35_target] at @s run particle minecraft:trial_spawner_detection ~ ~ ~ 0.2 0 0.2 0 30
+execute as @a[tag=skywar_ishtar_35_target] at @s run effect give @s hunger 3 4 true
 execute as @a[tag=skywar_ishtar_35_target] at @s run playsound minecraft:entity.goat.eat player @a ~ ~ ~ 1 0.8
 execute as @a[tag=skywar_ishtar_35_target] at @s run xp add @s -20 points
 
@@ -16,7 +15,7 @@ tag @a[tag=skywar_ishtar_35_target] remove skywar_ishtar_35_target
 execute if items entity @s weapon.mainhand *[custom_data={skywar_ishtar_35:1}] run xp add @s 25 points
 
 execute if items entity @s[scores={If_BlessDoDamage=10..}] weapon.mainhand *[custom_data={skywar_ishtar_6:1}] at @s rotated as @s run function pvpfx:skill/06/cast
-execute if items entity @s[scores={If_BlessDoDamage=10..}] weapon.mainhand *[custom_data={skywar_ishtar_6:1}] run effect give @s invisibility 3 0 false
+execute if items entity @s[scores={If_BlessDoDamage=10..}] weapon.mainhand *[custom_data={skywar_ishtar_6:1}] run effect give @s invisibility 3 0 true
 execute if items entity @s armor.feet *[custom_data={skywar_ishtar_5:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core5
 
 
