@@ -85,6 +85,7 @@ execute if block 90119 138 132 lever[powered=false] run setblock 90129 135 131 a
 execute if block 90119 138 132 lever[powered=false] run setblock 90130 135 131 air
 
 
+execute unless score sea_ch3_event_backupradio sea_4temp3 matches -20.. run scoreboard players set sea_ch3_event_backupradio sea_4temp3 0
 execute if score sea_ch3_event_backupradio sea_4temp3 matches -20..99 if block 90125 138 128 minecraft:waxed_copper_bulb[lit=true] \
  if block 90132 142 111 minecraft:waxed_copper_bulb[lit=true] \
  if block 90095 144 113 minecraft:waxed_copper_bulb[lit=true] \
