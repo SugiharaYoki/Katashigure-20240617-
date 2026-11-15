@@ -1,3 +1,4 @@
+execute at @s run function pvpfx:player
 scoreboard objectives add ishtar_core_1 dummy
 scoreboard objectives add ishtar_core_2 dummy
 scoreboard objectives add ishtar_core_3 dummy
@@ -14,6 +15,7 @@ execute if score @s ishtar_core_slow matches 5.. run function skyblock:pvp/skywa
 execute if entity @s[scores={If_MD_13=1..,ishtar_core_1=..0},gamemode=survival] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_core9
 execute if entity @s[scores={ishtar_core_1=1..}] at @s run function skyblock:pvp/skywar/bless/skywar_ishtar_core9
 
+execute if entity @s[scores={If_MD_Strad=1..},level=15..] at @s run function pvpfx:skill/10/cast
 execute if entity @s[scores={If_MD_Strad=1..},level=15..] run playsound minecraft:block.beacon.power_select ambient @a ~ ~2 ~ 4 0.5
 execute if entity @s[scores={If_MD_Strad=1..},level=15..] run summon area_effect_cloud ~ ~ ~ {Particle:{type:"end_rod"},Radius:5,Duration:200,potion_contents:{custom_color:16383998,custom_effects:[{id:levitation,duration:120,amplifier:3,show_particles:1b,show_icon:1b},{id:glowing,duration:120,amplifier:0,show_particles:1b,show_icon:1b}]}}
 execute if entity @s[scores={If_MD_Strad=1..},level=15..] run effect give @s levitation 6 3
@@ -22,6 +24,7 @@ execute if entity @s[scores={If_MD_Strad=1..},level=15..] run xp add @s -15 leve
 execute if entity @s[scores={If_MD_Strad=1..}] run give @s music_disc_strad[custom_name={text:"顷刻天国核心 (15)",italic:0b,color:"green"},custom_data={skywar:1,skywar_ishtar_10:1},max_stack_size=85] 1
 execute if entity @s[scores={If_MD_Strad=1..}] run scoreboard players set @s If_MD_Strad 0
 
+execute if entity @s[scores={If_MD_Wait=1..},level=15..] at @s run function pvpfx:skill/11/cast
 execute if entity @s[scores={If_MD_Wait=1..},level=15..] run playsound minecraft:block.beacon.deactivate ambient @a ~ ~1 ~ 4 0.8
 #execute if entity @s[scores={If_MD_Wait=1..}] run playsound e ambient @a ~ ~1 ~ 4 0.8
 execute if entity @s[scores={If_MD_Wait=1..},level=15..] run particle dripping_obsidian_tear ~ ~1 ~ 5 5 5 0.2 80
@@ -61,6 +64,7 @@ execute if items entity @s container.* *[custom_data={skywar_ishtar_7:1}] run fu
 execute if items entity @s container.* *[custom_data={skywar:1,skywar_ishtar_9:1}] run effect give @s haste 3 1 true
 execute if items entity @s container.* music_disc_strad[custom_data={skywar:1,skywar_ishtar_10:1}] run effect clear @s poison
 
+execute if entity @s[scores={If_MD_Otherside=1..},level=20..] at @s run function pvpfx:skill/20/cast
 execute if entity @s[scores={If_MD_Otherside=1..},level=20..] run playsound block.anvil.place ambient @a ~ ~1 ~ 1 1.3
 execute if entity @s[scores={If_MD_Otherside=1..},level=20..] run playsound item.mace.smash_ground_heavy ambient @a ~ ~1 ~ 1 1.3
 execute if entity @s[scores={If_MD_Otherside=1..},level=20..] run give @s mace

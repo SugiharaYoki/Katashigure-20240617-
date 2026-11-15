@@ -4,5 +4,6 @@ execute as @e[tag=Bless34,type=item] at @s run summon endermite ~ ~ ~ {Tags:["Sk
 execute as @e[tag=Bless34,type=item] at @s run playsound minecraft:block.note_block.hat master @a ~ ~ ~ 1 0.8
 execute as @e[tag=Bless34,type=item] at @s run playsound item.bottle.fill_dragonbreath master @a ~ ~ ~ 0.9 1.3
 execute as @e[tag=Bless34,type=item] at @s run particle portal ~ ~ ~ 0 0 0 0.06 30
+execute as @e[tag=Bless34,type=item] at @s run function pvpfx:skill/34/cast
 execute as @e[tag=Bless34,type=item] at @s run kill @s
 

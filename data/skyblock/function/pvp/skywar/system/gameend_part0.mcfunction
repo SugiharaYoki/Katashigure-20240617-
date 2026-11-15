@@ -1,3 +1,4 @@
+function pvpfx:cleanup
 # 结束对局时清除狙击蓄力和在途射线。
 kill @e[type=marker,tag=Skywar_Bless39]
 tag @a remove Skywar_Bless39_charging

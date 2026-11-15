@@ -1,3 +1,4 @@
+execute at @s rotated as @s run function pvpfx:skill/39/cast
 tag @s add Skywar_Bless39_flying
 tag @a[tag=Skywar_Bless39_owner] remove Skywar_Bless39_charging
 scoreboard players set @s rng4 0

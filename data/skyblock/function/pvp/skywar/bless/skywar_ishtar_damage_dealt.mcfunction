@@ -11,11 +11,14 @@ execute as @a[tag=skywar_ishtar_35_target] at @s run particle minecraft:trial_sp
 execute as @a[tag=skywar_ishtar_35_target] at @s run playsound minecraft:entity.goat.eat player @a ~ ~ ~ 1 0.8
 execute as @a[tag=skywar_ishtar_35_target] at @s run xp add @s -20 points
 
+execute as @a[tag=skywar_ishtar_35_target] at @s run function pvpfx:skill/35/cast
 tag @a[tag=skywar_ishtar_35_target] remove skywar_ishtar_35_target
 execute if items entity @s weapon.mainhand *[custom_data={skywar_ishtar_35:1}] run xp add @s 25 points
 
+execute if items entity @s[scores={If_BlessDoDamage=10..}] weapon.mainhand *[custom_data={skywar_ishtar_6:1}] at @s rotated as @s run function pvpfx:skill/06/cast
 execute if items entity @s[scores={If_BlessDoDamage=10..}] weapon.mainhand *[custom_data={skywar_ishtar_6:1}] run effect give @s invisibility 3 0 false
 execute if items entity @s armor.feet *[custom_data={skywar_ishtar_5:1}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core5
 
 
+execute if items entity @s weapon.mainhand minecraft:mace if items entity @s container.* *[custom_data~{skywar_ishtar_20:1}] at @s run function pvpfx:skill/20/slam
 scoreboard players set @s If_BlessDoDamage 0

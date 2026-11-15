@@ -1,3 +1,4 @@
+execute at @s rotated as @s run function pvpfx:skill/27/cast
 
 execute at @s[y_rotation=135..225] run tag @s add ishtar_27_direction1
 execute at @s[y_rotation=225..315] run tag @s add ishtar_27_direction2

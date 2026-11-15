@@ -1,3 +1,4 @@
+execute at @s rotated as @s run function pvpfx:skill/05/cast
 execute if entity @s[team=Team1_1] as @a[team=!Team1_1,distance=1] run effect give @s darkness 3 0 false
 execute if entity @s[team=Team1_2] as @a[team=!Team1_2,distance=1] run effect give @s darkness 3 0 false
 execute if entity @s[team=Team1_3] as @a[team=!Team1_3,distance=1] run effect give @s darkness 3 0 false

@@ -21,6 +21,10 @@ playsound block.polished_deepslate.place block @a ~ ~ ~ 2 0.8
 scoreboard players set @s If_Bless27 0
 tag @s add skywar_ishtar_27
 
+execute if entity @s[tag=ishtar_27_direction1] at @s rotated 180 0 run function pvpfx:skill/27/cast
+execute if entity @s[tag=ishtar_27_direction2] at @s rotated 270 0 run function pvpfx:skill/27/cast
+execute if entity @s[tag=ishtar_27_direction3] at @s rotated 0 0 run function pvpfx:skill/27/cast
+execute if entity @s[tag=ishtar_27_direction4] at @s rotated 90 0 run function pvpfx:skill/27/cast
 tag @s remove ishtar_27_direction1
 tag @s remove ishtar_27_direction2
 tag @s remove ishtar_27_direction3

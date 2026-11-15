@@ -1,3 +1,4 @@
+execute if entity @s[level=8..] at @s run function pvpfx:skill/19/cast
 execute if entity @s[level=8..] run playsound entity.shulker.open ambient @a ~ ~1 ~ 2 0.6
 execute if entity @s[level=8..] run playsound block.shulker_box.close ambient @a ~ ~1 ~ 2 0.8
 execute if entity @s[level=8..] run playsound entity.shulker.ambient ambient @a ~ ~1 ~ 2 0.8

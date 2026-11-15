@@ -1,3 +1,6 @@
+execute unless score @s pfx.lotus matches 1.. at @s run function pvpfx:skill/32/cast
+scoreboard players set @s pfx.lotus 6
+execute at @s run function pvpfx:skill/32/loop
 effect give @s wither 2 2
 effect give @s poison 2 1
 effect give @s resistance 2 0

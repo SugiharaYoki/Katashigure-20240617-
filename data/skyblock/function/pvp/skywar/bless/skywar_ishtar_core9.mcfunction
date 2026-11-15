@@ -1,3 +1,4 @@
+execute if entity @s[level=10..,scores={ishtar_core_1=..0,If_MD_13=1..}] at @s run function pvpfx:skill/09/cast
 
 execute if entity @s[level=10..,scores={ishtar_core_1=..0,If_MD_13=1}] run tag @s remove ishtar_core9_type1
 execute if entity @s[level=10..,scores={ishtar_core_1=..0,If_MD_13=1}] run tag @s remove ishtar_core9_type2

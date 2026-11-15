@@ -1,4 +1,6 @@
 scoreboard players add @s If_Bless21b 1
+execute if score @s If_Bless21b matches 3 at @s run function pvpfx:skill/21/cast
+execute if score @s If_Bless21b matches 4..75 at @s rotated as @s run function pvpfx:skill/21/loop
 
 execute if entity @s[scores={If_Bless21b=3}] run playsound minecraft:block.note_block.xylophone player @s ~ ~ ~ 1 0.85
 execute if entity @s[scores={If_Bless21b=3}] run particle minecraft:sonic_boom ~ ~ ~ 0 0 0 0 1

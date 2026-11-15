@@ -1,3 +1,5 @@
+execute if entity @s[level=6..,predicate=!skyblock:sneak] at @s rotated as @s run function pvpfx:skill/12/cast
+execute if entity @s[level=12..,predicate=skyblock:sneak] at @s rotated as @s run function pvpfx:skill/12/cast
 
 execute if entity @s[level=6..,predicate=!skyblock:sneak] run particle ash ~ ~1 ~ 0.3 0.7 0.3 0.1 30
 execute if entity @s[level=6..,predicate=!skyblock:sneak] run effect give @s speed 2 6 true

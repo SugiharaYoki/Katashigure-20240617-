@@ -33,6 +33,7 @@ execute unless entity @s[tag=ishtar_lantern_SUCCESS] if score @s If_Bless37 matc
 
 execute if entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=3..}] store result storage skyblock:cache If_Bless37 double 0.01 run scoreboard players get @s If_Bless37
 
+execute if entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=3..}] at @s run function pvpfx:skill/37/aura
 execute if entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=3..}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core37t with storage skyblock:cache
 execute if entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=3..}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core37t with storage skyblock:cache
 execute if entity @s[tag=ishtar_lantern_SUCCESS,scores={If_Bless37=3..}] run function skyblock:pvp/skywar/bless/skywar_ishtar_core37t with storage skyblock:cache

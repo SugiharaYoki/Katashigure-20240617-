@@ -1,3 +1,4 @@
+execute at @s rotated as @s run function pvpfx:skill/19/cast
 setblock ~ ~ ~ air destroy
 
 

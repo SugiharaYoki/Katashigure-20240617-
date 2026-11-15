@@ -1,3 +1,4 @@
+execute at @s rotated as @s run function pvpfx:skill/37/cast
 execute at @s run particle flash{color:[0.200,0.200,0.400,1.00]} ~ ~1 ~ 0 0 0 0 1
 execute run playsound block.lantern.place player @a ~ ~ ~ 1 0.8
 execute if items entity @s weapon.mainhand waxed_oxidized_copper_lantern run item replace entity @s weapon.mainhand with barrier

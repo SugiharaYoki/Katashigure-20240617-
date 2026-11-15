@@ -1,4 +1,6 @@
 scoreboard players add @e[tag=Bless24_Effective] rng1 1
+execute as @e[tag=Bless24_Effective,scores={rng1=1..15}] at @s run function pvpfx:skill/24/charge
+execute as @e[tag=Bless24_Effective,scores={rng1=15}] at @s run function pvpfx:skill/24/cast
 
 execute as @e[tag=Bless24_Effective,scores={rng1=1..15}] at @s run particle trial_spawner_detection_ominous ~ ~ ~ 0.2 50 0.2 0 100
 execute as @e[tag=Bless24_Effective,scores={rng1=6..15}] at @s run particle trial_spawner_detection_ominous ~ ~ ~ 0.2 60 0.2 0 200

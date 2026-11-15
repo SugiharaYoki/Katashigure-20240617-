@@ -1,6 +1,7 @@
 scoreboard players add @s If_Bless7 1
 
 
+execute if score @s If_Bless7 matches 399 at @s run function pvpfx:skill/07/cast
 execute if score @s If_Bless7 matches 399 store result score @s rng1 run random value 1..10
 execute if score @s If_Bless7 matches 399 if score @s rng1 matches 1..7 run give @s minecraft:silverfish_spawn_egg
 execute if score @s If_Bless7 matches 399 if score @s rng1 matches 8..9 run give @s minecraft:magma_cube_spawn_egg

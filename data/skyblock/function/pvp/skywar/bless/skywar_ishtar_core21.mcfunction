@@ -1,3 +1,4 @@
+execute at @s rotated as @s run function pvpfx:skill/21/cast
 execute store result score @s rng1 run clear @s wooden_sword
 execute store result score @s rng2 run clear @s stone_sword
 execute store result score @s rng3 run clear @s iron_sword

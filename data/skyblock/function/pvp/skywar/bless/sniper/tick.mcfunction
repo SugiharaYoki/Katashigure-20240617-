@@ -10,6 +10,7 @@ $execute if entity @s[tag=!Skywar_Bless39_flying] if entity @a[nbt={UUID:$(owner
 $execute if entity @s[tag=Skywar_Bless39_alive,tag=!Skywar_Bless39_flying] as @a[nbt={UUID:$(owner)},limit=1] at @s anchored eyes positioned ^ ^ ^ positioned ~ ~-0.2 ~ run tp @e[type=marker,tag=Skywar_Bless39_current,limit=1] ~ ~ ~ ~ ~
 execute if entity @s[tag=!Skywar_Bless39_flying] run scoreboard players add @s rng1 1
 execute if entity @s[tag=!Skywar_Bless39_flying,tag=!Skywar_Bless39_alive] run scoreboard players set @s rng1 40
+execute if entity @s[tag=!Skywar_Bless39_flying,scores={rng1=1..39}] at @s rotated as @s run function pvpfx:skill/39/charge
 execute if entity @s[tag=!Skywar_Bless39_flying,scores={rng1=40..}] at @s rotated as @s run function skyblock:pvp/skywar/bless/sniper/fire
 # 每 4 tick 重画一次，保持每格 4 个点；不为每个粒子创建实体。
 execute if entity @s[tag=!Skywar_Bless39_flying,scores={rng1=1..39}] run scoreboard players operation @s rng6 = @s rng1

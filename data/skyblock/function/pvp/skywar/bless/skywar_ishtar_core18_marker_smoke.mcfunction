@@ -1,5 +1,7 @@
 
 execute as @s[tag=Skywar_ishtar_18] at @s run scoreboard players add @s rng1 1
+execute if score @s rng1 matches 1 at @s run function pvpfx:skill/18/cast
+execute if score #phase pfx.phase matches 0 at @s run function pvpfx:skill/18/loop
 
 execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_1] at @s if entity @a[gamemode=survival,distance=0..1.8,team=!Team1_1] run scoreboard players add @s rng1 1
 execute as @s[tag=Skywar_ishtar_18,tag=Skywar_ishtar_18_team1_1] at @s as @a[gamemode=survival,distance=0..1.8,team=!Team1_1] run effect give @s blindness 5 0 false

@@ -6,6 +6,7 @@ execute if score @s rng1 matches 7 run playsound minecraft:block.beacon.ambient 
 execute if score @s rng1 matches 5.. at @s rotated as @s run rotate @s ~10 ~
 execute if score @s rng1 matches 40.. run scoreboard players set @s rng1 5
 
+execute if score @s rng1 matches 5.. at @s rotated as @s run function pvpfx:skill/36/sweep
 execute if score @s rng1 matches 5.. at @s rotated as @s run particle flame ^ ^0.2 ^0.5 0 0 0 0 1
 execute if score @s rng1 matches 5.. at @s rotated as @s run particle flame ^ ^0.2 ^1.0 0 0 0 0 1
 execute if score @s rng1 matches 5.. at @s rotated as @s run particle flame ^ ^0.2 ^1.5 0 0 0 0 1

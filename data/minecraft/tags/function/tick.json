@@ -1,6 +1,7 @@
 {
     "values": [
         "skyblock:tick",
-        "24_point_da651c:tick"
+        "24_point_da651c:tick",
+        "pvpfx:tick"
     ]
 }

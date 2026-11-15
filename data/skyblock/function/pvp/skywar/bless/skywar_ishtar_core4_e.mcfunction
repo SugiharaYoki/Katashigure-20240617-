@@ -1,4 +1,6 @@
 scoreboard players add @s rng1 1
+execute if score @s rng1 matches 1 at @s run function pvpfx:skill/04/cast
+execute if score @s rng1 matches 2..21 at @s run function pvpfx:skill/04/loop
 
 execute if score @s rng1 matches 1..5 run particle electric_spark ~ ~ ~ 1 0 1 0.03 20
 

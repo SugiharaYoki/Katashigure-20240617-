@@ -1,3 +1,4 @@
+execute at @s rotated as @s run function pvpfx:skill/30/cast
 effect give @s resistance 2 19 false
 execute positioned ~2 ~ ~ positioned over world_surface run summon lightning_bolt ~ ~ ~
 execute positioned ~-2 ~ ~ positioned over world_surface run summon lightning_bolt ~ ~ ~

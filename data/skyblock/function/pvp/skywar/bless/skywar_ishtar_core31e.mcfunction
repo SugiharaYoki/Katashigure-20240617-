@@ -1,3 +1,4 @@
+execute if block ~ ~1 ~ air if block ~ ~2 ~ air if block ~ ~3 ~ air if block ~ ~4 ~ air if block ~ ~5 ~ air at @s run function pvpfx:skill/31/cast
 execute if block ~ ~1 ~ air if block ~ ~2 ~ air if block ~ ~3 ~ air if block ~ ~4 ~ air if block ~ ~5 ~ air \
  run setblock ~ ~2 ~ pointed_dripstone[vertical_direction=down]
 

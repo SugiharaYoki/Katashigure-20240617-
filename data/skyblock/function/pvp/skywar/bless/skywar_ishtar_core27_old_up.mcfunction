@@ -1,3 +1,4 @@
+execute at @s rotated as @s run function pvpfx:skill/27/cast
 execute unless block ~ ~ ~ bedrock run fill ~ ~ ~ ~ ~ ~ air destroy
 execute unless block ~ ~1 ~ bedrock run fill ~ ~1 ~ ~ ~1 ~ air destroy
 execute unless block ~ ~2 ~ bedrock run fill ~ ~2 ~ ~ ~2 ~ air destroy

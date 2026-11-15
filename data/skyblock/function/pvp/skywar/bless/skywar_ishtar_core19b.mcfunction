@@ -1,4 +1,5 @@
 scoreboard players add @s rng1 1
+execute if score #phase pfx.phase matches 0 at @s run function pvpfx:skill/19/loop
 
 execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 0 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8
 execute rotated as @s positioned as @s positioned ~ ~0.1 ~ rotated 20 0 run particle block{block_state:{id:iron_chain}} ^ ^1.2 ^3.00 0.1 3.05 0.1 0.02 8

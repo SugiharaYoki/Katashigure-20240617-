@@ -1,9 +1,12 @@
 scoreboard players add @s If_Bless23 1
 execute if score @s If_Bless23 matches 200.. run effect give @s resistance 3 49 false
+execute if score @s If_Bless23 matches 200 at @s run function pvpfx:skill/23/cast
 execute if score @s If_Bless23 matches 200 run playsound block.amethyst_block.resonate player @s ~ ~ ~ 5 0.9
 execute if score @s If_Bless23 matches 200 run tellraw @s {text:"赐福：下次受到的伤害将会无效化",color: "green"}
 execute if score @s If_Bless23 matches 200 run tag @s add Bless23_Effective
 
+execute if score @s[tag=Bless23_Effective] If_Bless23c matches 1.. at @s run function pvpfx:skill/23/cast
+execute if entity @s[tag=Bless23_Effective] if score #phase pfx.phase matches 0 at @s run function pvpfx:skill/23/loop
 execute if score @s[tag=Bless23_Effective] If_Bless23c matches 1.. run effect clear @s resistance
 execute if score @s If_Bless23c matches 1.. run scoreboard players set @s If_Bless23 0
 execute if score @s If_Bless23c2 matches 1.. run scoreboard players set @s If_Bless23 0

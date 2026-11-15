@@ -1,3 +1,4 @@
+execute at @s rotated as @s run function pvpfx:skill/22/cast
 particle minecraft:wax_off ~ ~ ~ 4 0 4 0 500
 particle minecraft:wax_off ~ ~ ~ 4 0 4 0 500
 playsound block.grindstone.use master @a ~ ~ ~ 1 1.2

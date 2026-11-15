@@ -1,3 +1,4 @@
+execute if entity @s[level=8..] at @s run function pvpfx:skill/17/cast
 execute if entity @s[level=8..] rotated ~ 0 run tellraw @a[distance=0.01..7] {text:"送你一个礼物！",color: "gold",bold:1b}
 execute if entity @s[level=8..] rotated ~ 0 run playsound block.note_block.bell master @a ~ ~ ~ 1 1.5
 execute if entity @s[level=8..] rotated ~ 0 run give @s tnt 4

@@ -1,0 +1,15 @@
+{
+  "criteria": {
+    "event": {
+      "trigger": "minecraft:used_totem",
+      "conditions": {
+        "item": {
+          "items": "minecraft:totem_of_undying"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "pvpfx:event/totem"
+  }
+}
