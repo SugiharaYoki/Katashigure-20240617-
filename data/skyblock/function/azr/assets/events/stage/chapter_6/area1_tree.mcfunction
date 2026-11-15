@@ -9,6 +9,9 @@ execute positioned -79580 60 3 as @n[tag=AzrielMarker_encounter,distance=0..0.5]
 execute positioned -79586 47 -19 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..8] if loaded ~ ~ ~ run summon marker -79589 66 -18 {Tags:["AzrielMarker_encounter"]}
 execute positioned -79589 66 -18 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_6/tree/event_anomaly_3
 
+execute positioned -79586 47 -19 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..8] if loaded ~ ~ ~ run summon marker -79578 124 -5 {Tags:["AzrielMarker_encounter"]}
+execute positioned -79578 124 -5 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s run function skyblock:azr/assets/events/stage/chapter_6/tree/event_anomaly_4
+
 
 
 
