@@ -35,3 +35,7 @@ execute as @s[type=marker,tag=AzrRaum_summon_lower] at @s run function skyblock:
 # 劳姆中庭战与音爆追踪弹，使用各自实体的记分板计时。
 execute as @s[type=mannequin,tag=AzrielNPC_raum,tag=AzrRaum_midgarden,tag=!AzrRaum_midgarden_retreat_done] at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/core_midgarden
 execute as @s[type=marker,tag=AzrRaum_midgarden_sonic] at @s run function skyblock:azr/assets/mobs/skill/boss6_raum/marker_midgarden_sonic
+
+# 菌体掮客与独立结算控制器。
+execute if entity @s[type=bogged,tag=AzrielBossFilament] at @s run function skyblock:azr/assets/mobs/skill/boss_filament/core
+execute if entity @s[type=marker,tag=FF_monitor] at @s run function skyblock:azr/assets/mobs/skill/boss_filament/monitor

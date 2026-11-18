@@ -92,3 +92,6 @@ execute if entity @s[tag=AzrMalpas_attack] at @s run function skyblock:azr/asset
 
 # 百夫长第二阶段逐格扩展的爆炸射线。
 execute if entity @s[tag=AzrLegate_fan_ray] at @s run function skyblock:azr/assets/mobs/skill/boss_rush/boss_legate/fan_ray
+
+# 菌体掮客攻击实体使用现有 50 格更新范围。
+execute if entity @s[tag=FF_attack] at @s run function skyblock:azr/assets/mobs/skill/boss_filament/aux
