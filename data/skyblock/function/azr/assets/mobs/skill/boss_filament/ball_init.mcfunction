@@ -3,6 +3,8 @@ tag @s add FF_ball
 tag @s add AzrielMob_mob_marker
 scoreboard players operation @s rng20 = #FF_owner rng20
 scoreboard players set @s rng1 0
+scoreboard players set #FF_40 rng1 40
+scoreboard players set #FF_15 rng1 15
 execute store result score @s rng9 run random value 0..1
 execute if score @s rng9 matches 0 run data merge entity @s {block_state:{Name:"minecraft:red_mushroom_block"}}
 execute if score @s rng9 matches 1 run data merge entity @s {block_state:{Name:"minecraft:green_concrete_powder"}}

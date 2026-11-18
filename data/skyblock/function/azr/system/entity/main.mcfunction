@@ -13,7 +13,9 @@ execute as @s[tag=AzrielMob_level_ed] at @s if entity @a[distance=..50] run func
 execute as @s[tag=AzrielMob_summon_delay] at @s if entity @a[distance=..50] run function skyblock:azr/system/entity/summon_delay_controller
 execute as @s[tag=AzrielMob_sariel_skill] at @s run function skyblock:azr/system/entity/sariel_skill_controller
 execute as @s[tag=AzrielMob_amulet_skill] at @s run function skyblock:azr/system/entity/sariel_skill_controller
-execute as @s[tag=AzrielMob_mob_marker] at @s if entity @a[distance=..50] run function skyblock:azr/system/entity/mob_marker_controller
+# 菌体掮客攻击直接分派，避免每个云/毒柱遍历通用技能列表。
+execute as @s[tag=AzrielMob_mob_marker,tag=!FF_attack] at @s if entity @a[distance=..50] run function skyblock:azr/system/entity/mob_marker_controller
+execute if entity @s[tag=FF_attack] at @s if entity @a[distance=..50] run function skyblock:azr/assets/mobs/skill/boss_filament/aux
 
 # BOSS1 code:10
 execute if score stage Azr_system matches 10 as @s[tag=AzrielBossA] at @s if score stage_main_thread AzrTimerStack matches ..1002 run function skyblock:azr/assets/events/stage/chapter_1/stage_boss1

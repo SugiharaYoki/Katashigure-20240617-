@@ -8,6 +8,8 @@ execute if score @s Health matches ..300 run scoreboard players set @s rng3 14
 execute if score @s Health matches ..200 run scoreboard players set @s rng3 12
 execute if score @s Health matches ..100 run scoreboard players set @s rng3 10
 scoreboard players set #FF_two rng1 2
+scoreboard players set #FF_360 rng1 360000
+scoreboard players set #FF_negative rng1 -1
 scoreboard players operation @s rng4 = @s rng3
 scoreboard players operation @s rng4 /= #FF_two rng1
 scoreboard players operation @s rng5 = @s rng3

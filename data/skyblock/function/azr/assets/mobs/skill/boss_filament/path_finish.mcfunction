@@ -1,5 +1,5 @@
 function skyblock:azr/assets/mobs/skill/boss_filament/owner_health
-data modify storage skyblock:filament spawn.kind set value "candle"
+scoreboard players set #FF_kind rng1 2
 scoreboard players set #FF_ground rng1 0
 execute if score @s rng4 matches 1 positioned ~ ~3 ~ run function skyblock:azr/assets/mobs/skill/boss_filament/ground
 scoreboard players set #FF_ground rng1 0

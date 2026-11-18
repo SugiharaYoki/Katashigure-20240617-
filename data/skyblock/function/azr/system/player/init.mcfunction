@@ -33,6 +33,8 @@ advancement grant @s only skyblock:azr/progress/root
 
 #背包初始化
 clear @s
+# 清空后需要重新读档，避免对局中误执行 jump_to 时沿用上一轮已读档标记。
+tag @s remove azrRetrieved
 #游戏数据初始化
 scoreboard players set @s Azr_forceDeath 0
 scoreboard players set @s Azr_isDead 0
