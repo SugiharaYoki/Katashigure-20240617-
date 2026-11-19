@@ -1,5 +1,5 @@
 
-execute store result score @s rng1 run random value 1..8
+execute store result score @s rng1 run random value 1..3
 
 scoreboard players set @s rng2 1
 execute if items entity @s container.* *[custom_data~{azr_amulet_flower_wall:1b}] run scoreboard players add @s rng2 1
