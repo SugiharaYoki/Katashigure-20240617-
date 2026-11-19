@@ -1,7 +1,11 @@
 title @a[tag=azrShowDialog] actionbar {text:"Extra Boss Annihilated",color:"green"}
 bossbar remove azr:boss_hp_bar_filament
-# 待用户提供 fungus_filament 道具及 sub_boss_filament 进度定义后，再接入对应奖励。
+function skyblock:azr/assets/items/amulets/fungus_filament
 tag @a[tag=azrPlayer] add AZS_BoSB06
 give @a[tag=azrPlayer] emerald 20
 scoreboard players add @a[tag=azrPlayer] AzrMelonCount 1
+
+fill -79875 8 -7 -79875 11 -6 air destroy
+fill -79860 8 11 -79863 11 11 air replace minecraft:red_stained_glass destroy
+
 kill @s
