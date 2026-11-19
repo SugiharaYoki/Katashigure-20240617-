@@ -36,6 +36,13 @@ bossbar remove azr:boss_hp_bar_assassin
 bossbar remove azr:boss_hp_bar_blaze
 bossbar remove azr:boss_hp_bar_centurion
 bossbar remove azr:boss_hp_bar_diesel
+bossbar remove azr:boss_hp_bar_entrance_1
+bossbar remove azr:boss_hp_bar_entrance_2
+bossbar remove azr:boss_hp_bar_entrance_3
+bossbar remove azr:boss_hp_bar_entrance_4
+bossbar remove azr:boss_hp_bar_entrance_5
+bossbar remove azr:boss_hp_bar_entrance_6
+bossbar remove azr:boss_hp_bar_filament
 bossbar remove azr:boss_hp_bar_legate
 bossbar remove azr:boss_hp_bar_mossflora
 bossbar remove azr:boss_hp_bar_nautilus
@@ -43,12 +50,6 @@ bossbar remove azr:boss_hp_bar_slime
 bossbar remove azr:boss_hp_bar_villain
 bossbar remove azr:boss_hp_bar_working
 bossbar remove azr:boss_hp_bar_0
-bossbar remove azr:boss_hp_bar_entrance_1
-bossbar remove azr:boss_hp_bar_entrance_2
-bossbar remove azr:boss_hp_bar_entrance_3
-bossbar remove azr:boss_hp_bar_entrance_4
-bossbar remove azr:boss_hp_bar_entrance_5
-bossbar remove azr:boss_hp_bar_entrance_6
 bossbar remove azr:progress_bar_pvp
 #______________________________________________________________#
 #清场

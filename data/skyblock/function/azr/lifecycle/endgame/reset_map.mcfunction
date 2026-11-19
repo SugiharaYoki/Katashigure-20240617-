@@ -1148,6 +1148,23 @@ function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_entrance
 fill -79713 -6 34 -79709 -3 34 iron_block
 setblock -79713 -5 32 lever[face=wall,facing=east]
 
+#菌体掮客
+setblock -79872 17 23 air
+setblock -79872 17 23 lever[facing=east]
+fill -79875 8 -7 -79875 11 -6 air
+fill -79860 8 11 -79863 11 11 air replace minecraft:red_stained_glass
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
