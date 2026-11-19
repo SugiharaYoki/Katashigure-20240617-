@@ -1,4 +1,4 @@
-execute at @s rotated as @s run tp @s ^ ^ ^0.5
+execute at @s rotated as @s run tp @s ^ ^ ^0.7
 scoreboard players add @s rng3 1
 scoreboard players operation #FF_owner rng20 = @s rng20
 scoreboard players set #FF_kind rng1 1
