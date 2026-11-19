@@ -9,6 +9,8 @@ execute if entity @s[scores={AzrSariel_Amulet_MossSpore_cooldown=8000}] run attr
 execute if entity @s[scores={AzrSariel_Amulet_MossSpore_cooldown=8000}] run attribute @s max_health modifier add azr_amulet:moss_spore_02 2 add_value
 execute if entity @s[scores={AzrSariel_Amulet_MossSpore_cooldown=8000}] run attribute @s max_health modifier add azr_amulet:moss_spore_03 2 add_value
 
+execute if entity @s[scores={AzrSariel_Amulet_MossSpore_cooldown=8000}] if items entity @s container.* *[custom_data~{azr_amulet_fungus_filament:1b}] run function skyblock:azr/system/player/skills/amulet/fungus_filament_instant
+
 execute if entity @s[scores={AzrSariel_Amulet_MossSpore_cooldown=8000}] unless items entity @s container.* *[custom_data~{azr_amulet_thorn_crown:1b}] if block ~ ~-0.5 ~ creaking_heart run scoreboard players set @s AzrSariel_Amulet_MossSpore_cooldown 1201
 execute if entity @s[scores={AzrSariel_Amulet_MossSpore_cooldown=8000}] if items entity @s container.* *[custom_data~{azr_amulet_thorn_crown:1b}] if block ~ ~-0.5 ~ creaking_heart run scoreboard players set @s AzrSariel_Amulet_MossSpore_cooldown 2401
 

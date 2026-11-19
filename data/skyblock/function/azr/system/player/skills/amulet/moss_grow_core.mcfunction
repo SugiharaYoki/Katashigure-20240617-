@@ -13,6 +13,7 @@ execute if entity @s[tag=AzrAmulet_MossGrow_Activated,tag=!AzrAmulet_MossGrow_Ac
 execute if entity @s[tag=AzrAmulet_MossGrow_Activated] if entity @s[predicate=!skyblock:sneak] run tag @s add AzrAmulet_MossGrow_Cancelling
 execute if entity @s[tag=AzrAmulet_MossGrow_Activated] if entity @s[predicate=skyblock:sneak] if entity @s[nbt={OnGround:0b}] run tag @s add AzrAmulet_MossGrow_Cancelling
 
+execute if entity @s[predicate=skyblock:sneak] if entity @s[nbt={OnGround:0b}] if items entity @s container.* *[custom_data~{azr_amulet_fungus_filament:1b}] run function skyblock:azr/system/player/skills/amulet/fungus_filament_core
 
 execute if entity @s[tag=AzrAmulet_MossGrow_Cancelling] run attribute @s armor modifier remove azr_amulet:moss_grow_01
 execute if entity @s[tag=AzrAmulet_MossGrow_Cancelling] run attribute @s sneaking_speed modifier remove azr_amulet:moss_grow_01

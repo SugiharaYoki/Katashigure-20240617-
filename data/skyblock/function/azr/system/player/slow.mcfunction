@@ -47,6 +47,7 @@ tag @s remove AzrAmulet_moss_spore
 execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_savior:1b}] run function skyblock:azr/system/player/skills/amulet/arrow_savior_core
 execute if items entity @s weapon.offhand *[custom_data~{azr_amulet_arrow_savior:1b}] run function skyblock:azr/system/player/skills/amulet/arrow_savior_instant
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_drogue:1b}] run function skyblock:azr/system/player/skills/amulet/fire_drogue_core
+execute if items entity @s container.* *[custom_data~{azr_amulet_fungus_filament:1b}] run function skyblock:azr/system/player/skills/amulet/fungus_filament_core
 
 execute if items entity @s[tag=!AzrAmulet_extraordinary_strength] container.* *[custom_data~{azr_amulet_extraordinary_strength:1b}] if score @s player_health matches ..6 run attribute @s attack_damage modifier add azr_amulet:extraordinary_strength_01 3 add_value
 execute if items entity @s[tag=!AzrAmulet_extraordinary_strength] container.* *[custom_data~{azr_amulet_extraordinary_strength:1b}] if score @s player_health matches ..6 run attribute @s attack_speed modifier add azr_amulet:extraordinary_strength_02 0.2 add_value
