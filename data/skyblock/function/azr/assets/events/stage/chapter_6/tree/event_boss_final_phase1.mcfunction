@@ -55,7 +55,7 @@ execute if score @s rng1 matches 294 as @n[tag=AzrielNPC_sariel,distance=..50,ty
 execute if score @s rng1 matches 260.. run scoreboard players add @s rng9 1
 execute if score @s rng1 matches 294 run bossbar add azr:boss_hp_bar [{text:"天使长 · ",bold:true,color:"white"},{text:"沙利叶",bold:true,color:"#c7eeb9"}]
 execute if score @s rng1 matches 294 run bossbar set azr:boss_hp_bar color green
-execute if score @s rng1 matches 294 run bossbar set azr:boss_hp_bar max 600
+execute if score @s rng1 matches 294 run bossbar set azr:boss_hp_bar max 500
 execute if score @s rng1 matches 294 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
 execute if score @s rng1 matches 294 run scoreboard players set stage Azr_system 120
 

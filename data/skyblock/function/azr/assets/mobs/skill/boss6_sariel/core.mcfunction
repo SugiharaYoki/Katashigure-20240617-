@@ -23,7 +23,7 @@ execute if score @s Health matches ..0 run scoreboard players set @s rng6 0
 execute if score @s Health matches 1.. if entity @p[tag=azrPlayer,distance=..100] run scoreboard players add @s rng19 1
 execute if score @s Health matches 1.. if entity @p[tag=azrPlayer,distance=..100] run scoreboard players add @s rng1 1
 execute at @s rotated ~ 0 if score @s rng6 matches 0 run tp @s ~ 164 ~ ~ 0
-execute at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] eyes
+execute at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
 
 # 每轮重新选招；A的强化按本轮开始时的累计行动时间锁定。
 execute if score @s rng1 matches 1 store result score @s rng2 run random value 1..2
@@ -54,7 +54,7 @@ execute if score @s rng6 matches 3..4 at @s rotated ~ 0 positioned ^ ^-0.18 ^0.4
 execute if score @s rng6 matches 1..2 at @s rotated ~ 0 positioned ^ ^-0.36 ^0.4 if block ~ ~ ~ #skyblock:filament_passable if block ~ ~1 ~ #skyblock:filament_passable run tp @s ~ ~ ~
 execute if score @s rng6 matches 1.. run scoreboard players remove @s rng6 1
 execute if score @s rng6 matches 0 at @s run tp @s ~ 164 ~
-execute at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] eyes
+execute at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100]
 
 # 斩痕中心在面前2格、y=165；线段位于与进攻方向垂直的竖直平面。
 execute if score @s rng7 matches 1 store result score @s rng4 run data get entity @s Rotation[0] 1
@@ -86,9 +86,9 @@ execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng1
 scoreboard players set @s rng7 0
 execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 0 if score @s rng9 matches ..3 if score @s rng8 matches ..0 run scoreboard players set @s rng7 3
 # 每次冲刺分成3段0.6格，逐段检查通路和3格停步范围。
-execute if score @s rng7 matches 3 at @s unless entity @p[tag=azrPlayer,distance=..3] facing entity @p[tag=azrPlayer,distance=..100] eyes rotated ~ 0 positioned ^ ^ ^0.6 if block ~ ~ ~ #skyblock:filament_passable if block ~ ~1 ~ #skyblock:filament_passable run tp @s ~ ~ ~
-execute if score @s rng7 matches 3 at @s unless entity @p[tag=azrPlayer,distance=..3] facing entity @p[tag=azrPlayer,distance=..100] eyes rotated ~ 0 positioned ^ ^ ^0.6 if block ~ ~ ~ #skyblock:filament_passable if block ~ ~1 ~ #skyblock:filament_passable run tp @s ~ ~ ~
-execute if score @s rng7 matches 3 at @s unless entity @p[tag=azrPlayer,distance=..3] facing entity @p[tag=azrPlayer,distance=..100] eyes rotated ~ 0 positioned ^ ^ ^0.6 if block ~ ~ ~ #skyblock:filament_passable if block ~ ~1 ~ #skyblock:filament_passable run tp @s ~ ~ ~
+execute if score @s rng7 matches 3 at @s unless entity @p[tag=azrPlayer,distance=..3] facing entity @p[tag=azrPlayer,distance=..100] feet rotated ~ 0 positioned ^ ^ ^0.6 if block ~ ~ ~ #skyblock:filament_passable if block ~ ~1 ~ #skyblock:filament_passable run tp @s ~ ~ ~
+execute if score @s rng7 matches 3 at @s unless entity @p[tag=azrPlayer,distance=..3] facing entity @p[tag=azrPlayer,distance=..100] feet rotated ~ 0 positioned ^ ^ ^0.6 if block ~ ~ ~ #skyblock:filament_passable if block ~ ~1 ~ #skyblock:filament_passable run tp @s ~ ~ ~
+execute if score @s rng7 matches 3 at @s unless entity @p[tag=azrPlayer,distance=..3] facing entity @p[tag=azrPlayer,distance=..100] feet rotated ~ 0 positioned ^ ^ ^0.6 if block ~ ~ ~ #skyblock:filament_passable if block ~ ~1 ~ #skyblock:filament_passable run tp @s ~ ~ ~
 execute if score @s rng7 matches 3 run scoreboard players add @s rng9 1
 execute if score @s rng7 matches 3 store result score @s rng8 run random value 20..30
 execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 0 at @s if entity @p[tag=azrPlayer,distance=..3] run scoreboard players set @s rng10 1
@@ -345,7 +345,7 @@ execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng1
 execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 1 if score @s rng11 matches 16 run scoreboard players set @s rng1 -40
 
 # 第四次冲刺后仍没有近身目标：一束准确朝向最近玩家，其余四束在左右45度内随机。
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] eyes
+execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
 execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 store result score @s rng4 run data get entity @s Rotation[0] 1000
 execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 store result storage skyblock:sariel spawn.yaw float 0.001 run scoreboard players get @s rng4
 execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 run data modify storage skyblock:sariel spawn.pitch set value 0
