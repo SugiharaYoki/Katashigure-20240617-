@@ -30,7 +30,7 @@ execute if score @s rng1 matches 1 store result score @s rng2 run random value 1
 execute if score @s rng1 matches 1 run scoreboard players set @s rng3 2
 execute if score @s rng1 matches 1 if score @s rng19 matches 1000.. run scoreboard players set @s rng3 3
 execute if score @s rng1 matches 1 if score @s rng19 matches 2000.. run scoreboard players set @s rng3 4
-execute if score @s rng1 matches 1 run item replace entity @s weapon.mainhand with minecraft:golden_sword
+execute if score @s rng1 matches 1 run item replace entity @s weapon.mainhand with minecraft:diamond_sword
 execute if score @s rng1 matches 1 at @s run kill @e[type=item_display,tag=AzrSarielSword,distance=..100]
 
 # A：10/34/58/66tick出刀；每刀后4tick开始跳跃。
