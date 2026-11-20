@@ -15,6 +15,7 @@ execute positioned -79578 124 -5 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79586 47 -19 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..8] if loaded ~ ~ ~ run summon marker -79584 104 1 {Tags:["AzrielMarker_encounter"]}
 execute positioned -79584 104 1 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s unless score @s rng1 matches 42.. run function skyblock:azr/assets/events/stage/chapter_6/tree/event_anomaly_5
 
+execute positioned -79586 47 -19 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..8] if loaded ~ ~ ~ positioned -79571 164 -13 run function skyblock:azr/assets/mobs/skill/boss6_sariel/summon
 
 execute positioned -79586 47 -19 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..8] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 
