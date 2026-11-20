@@ -64,8 +64,8 @@ execute if score Azr_Story_Introduction rng1 matches 283 as @p[tag=azrPlayer] at
 execute if score Azr_Story_Introduction rng1 matches 283 as @a[tag=azrPlayer] at @s run effect give @s fire_resistance infinite 0 true
 execute if score Azr_Story_Introduction rng1 matches 283 as @p[tag=azrPlayer] at @s run tp @a[distance=..200,tag=azrPlayer] -79440 25 -358 facing -79441 25 -358
 
-execute if score Azr_Story_Introduction rng1 matches 290 at @p[tag=azrPlayer] run tellraw @a[tag=azrShowDialog] [{text:"温柔的声音：",color:"dark_purple",bold:1b},{bold: false,text:"\n“承受不公命运的人类啊，你必将再度睁开双眼。”",color:"white"}]
-execute if score Azr_Story_Introduction rng1 matches 310 at @p[tag=azrPlayer] run tellraw @a[tag=azrShowDialog] [{text:"温柔的声音：",color:"dark_purple",bold:1b},{bold: false,text:"\n“我已犯下重罪，而你将会成为我的审判者。”",color:"white"}]
+execute if score Azr_Story_Introduction rng1 matches 290 at @p[tag=azrPlayer] run tellraw @a[tag=azrShowDialog] [{text:"温柔的声音：",color:"#c7eeb9",bold:1b},{bold: false,text:"\n“承受不公命运的人类啊，你必将再度睁开双眼。”",color:"white"}]
+execute if score Azr_Story_Introduction rng1 matches 310 at @p[tag=azrPlayer] run tellraw @a[tag=azrShowDialog] [{text:"温柔的声音：",color:"#c7eeb9",bold:1b},{bold: false,text:"\n“我已犯下重罪，而你将会成为我的审判者。”",color:"white"}]
 
 execute if score Azr_Story_Introduction rng1 matches 290 positioned -79381 22 -385 run summon piglin ~ ~ ~ {CustomName:'魔界居民',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC1"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.0}],equipment:{}}
 execute if score Azr_Story_Introduction rng1 matches 290 positioned -79387 24 -404 run summon piglin ~ ~ ~ {CustomName:'魔界居民',PersistenceRequired:1b,Tags:["AzrielMob_StoryIntroduction_NPC2"],Invulnerable:1b,IsImmuneToZombification:1b,attributes:[{id:"movement_speed",base:0.15}],equipment:{}}
@@ -251,10 +251,10 @@ execute if score Azr_Story_Introduction rng1 matches 1011 positioned -79723 293 
 
 
 
-execute if score Azr_Story_Introduction rng1 matches 524 at @p[tag=azrPlayer] run tellraw @a[tag=azrShowDialog] [{text:"温柔的声音：",color:"dark_purple",bold:1b},{bold: false,text:"\n“我们已抵达结局。我，以及你。”",color:"white"}]
-execute if score Azr_Story_Introduction rng1 matches 554 at @p[tag=azrPlayer] run tellraw @a[tag=azrShowDialog] [{text:"温柔的声音：",color:"dark_purple",bold:1b},{bold: false,text:"\n“你是亡魂，却也是生灵的希冀。”",color:"white"}]
-execute if score Azr_Story_Introduction rng1 matches 584 at @p[tag=azrPlayer] run tellraw @a[tag=azrShowDialog] [{text:"温柔的声音：",color:"dark_purple",bold:1b},{bold: false,text:"\n“而今，苍白的枯树终将为你而生。”",color:"white"}]
-execute if score Azr_Story_Introduction rng1 matches 614 at @p[tag=azrPlayer] run tellraw @a[tag=azrShowDialog] [{text:"温柔的声音：",color:"dark_purple",bold:1b},{bold: false,text:"\n“因为，你终会使这座花园走向灰烬，也终将播下第一颗生命的种子。”",color:"white"}]
+execute if score Azr_Story_Introduction rng1 matches 524 at @p[tag=azrPlayer] run tellraw @a[tag=azrShowDialog] [{text:"温柔的声音：",color:"#c7eeb9",bold:1b},{bold: false,text:"\n“我们已抵达结局。我，以及你。”",color:"white"}]
+execute if score Azr_Story_Introduction rng1 matches 554 at @p[tag=azrPlayer] run tellraw @a[tag=azrShowDialog] [{text:"温柔的声音：",color:"#c7eeb9",bold:1b},{bold: false,text:"\n“你是亡魂，却也是生灵的希冀。”",color:"white"}]
+execute if score Azr_Story_Introduction rng1 matches 584 at @p[tag=azrPlayer] run tellraw @a[tag=azrShowDialog] [{text:"温柔的声音：",color:"#c7eeb9",bold:1b},{bold: false,text:"\n“而今，苍白的枯树终将为你而生。”",color:"white"}]
+execute if score Azr_Story_Introduction rng1 matches 614 at @p[tag=azrPlayer] run tellraw @a[tag=azrShowDialog] [{text:"温柔的声音：",color:"#c7eeb9",bold:1b},{bold: false,text:"\n“因为，你终会使这座花园走向灰烬，也终将播下第一颗生命的种子。”",color:"white"}]
 
 
 execute if score Azr_Story_Introduction rng1 matches 1024.. at @p[tag=azrPlayer] if entity @a[tag=!azrRetrieved,tag=azrPlayer,tag=AZR_SEAawakened] if score stage Azr_system matches ..0 as @p[tag=!azrRetrieved,tag=azrPlayer,tag=AZR_SEAawakened] at @s run function skyblock:azr/lifecycle/jump_to/generic_retrieve
