@@ -136,6 +136,6 @@ execute if items entity @s weapon.mainhand #axes unless items entity @s weapon.m
 execute if items entity @s weapon.mainhand #hoes unless items entity @s weapon.mainhand *[minecraft:custom_data~{azr_weapon_hoe:1b}] run item modify entity @s weapon.mainhand [{function:"minecraft:set_custom_data",tag:{azr_weapon_hoe:1b}},{function:"minecraft:set_components",components:{"minecraft:consumable":{consume_seconds:1000000.0f,animation:"none",has_consume_particles:false}}}]
 
 
-# 地灵石板：现有 slow 周期更新；已有 buff 必须能在远离领域后移除。
-execute if entity @s[tag=azr_moss_master_buff] at @s run function skyblock:azr/system/player/skills/amulet/moss_master/buff
-execute if entity @s[tag=azrPlayer,tag=!azr_moss_master_buff] at @s if entity @e[type=block_display,tag=azr_moss_master_field,distance=..1,limit=1] run function skyblock:azr/system/player/skills/amulet/moss_master/add
+# 地灵石板
+execute if entity @s[tag=azr_moss_master_buff] unless entity @n[type=block_display,tag=azr_moss_master_field,distance=..1.5] run function skyblock:azr/system/player/skills/amulet/moss_master/remove
+execute if entity @s[tag=!azr_moss_master_buff] if entity @n[type=block_display,tag=azr_moss_master_field,distance=..1.5] run function skyblock:azr/system/player/skills/amulet/moss_master/add

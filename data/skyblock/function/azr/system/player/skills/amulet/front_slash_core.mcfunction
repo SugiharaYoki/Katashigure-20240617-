@@ -19,6 +19,11 @@ execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass] at @s rotated ~ 0 posi
 execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass] at @s rotated ~ 0 positioned ^ ^ ^2.3 positioned ~ ~1.2 ~ run playsound minecraft:entity.creaking.attack neutral @a ~ ~ ~ 1 1.3
 execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass] at @s rotated ~ 0 positioned ^ ^ ^2.3 positioned ~ ~1.2 ~ run playsound minecraft:entity.player.attack.sweep neutral @a ~ ~ ~ 1 1.5
 
+scoreboard players set @s rng2 1
+execute if items entity @s container.* *[custom_data~{azr_amulet_wind_shear:1b}] run scoreboard players add @s rng2 1
+execute if items entity @s container.* *[custom_data~{azr_amulet_axe_vortex_dodge:1b}] run scoreboard players add @s rng2 1
+execute if items entity @s container.* *[custom_data~{azr_amulet_storm_spot:1b}] run scoreboard players add @s rng2 1
+
 
 execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type1] at @s rotated ~ 0 positioned ^ ^ ^2 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
 execute if entity @s[tag=AzrSariel_Amulet_FrontSlashPass,tag=azrPlayer_skill_frontslash_type1] at @s rotated ~70 0 positioned ^ ^ ^2 run function skyblock:azr/system/player/skills/amulet/front_slash_effect
