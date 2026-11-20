@@ -1164,7 +1164,10 @@ clone -79570 -10 -16 -79567 -8 -10 -79570 164 -16
 
 fill -79586 43 -50 -79588 40 -50 air
 execute if block -79549 14 -24 air run fill -79549 14 -24 -79582 14 9 minecraft:polished_deepslate
-
+setblock -79580 23 7 air
+setblock -79551 23 -22 air
+setblock -795580 23 -22 air
+setblock -79551 23 7 air
 
 
 

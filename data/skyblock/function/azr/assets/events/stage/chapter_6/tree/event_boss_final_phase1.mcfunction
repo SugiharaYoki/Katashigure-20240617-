@@ -70,3 +70,4 @@ execute if score @s rng1 matches 296 run playsound block.wood.break block @a -79
 execute if score @s rng1 matches 296 run particle minecraft:end_rod -79568.50 164.88 -12.52 2 1 2 0.03 90
 execute if score @s rng1 matches 296 run particle minecraft:pale_oak_leaves -79568.50 164.88 -12.52 2 1 2 0.03 90
 
+execute if score @s rng1 matches 999 run scoreboard players set @s rng1 990
