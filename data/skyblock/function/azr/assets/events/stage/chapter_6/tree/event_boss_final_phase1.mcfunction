@@ -51,4 +51,7 @@ execute if score @s rng1 matches 9999 run scoreboard players set @s rng1 9998
 execute if score @s rng1 matches ..9999 if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:zadamga music @s ~ ~ ~ 0.7
 execute if score @s rng9 matches 724.. run scoreboard players set @s rng9 0
 
+execute if score @s rng1 matches 296 run fill -79570 -10 -16 -79567 -8 -10 air
+execute if score @s rng1 matches 296 run particle minecraft:end_rod -79568.50 164.88 -12.52 2 1 2 0.03 90
+execute if score @s rng1 matches 296 run particle minecraft:pale_oak_leaves -79568.50 164.88 -12.52 2 1 2 0.03 90
 
