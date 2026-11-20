@@ -22,11 +22,13 @@ execute if score @s Health matches ..0 run scoreboard players set @s rng1 0
 execute if score @s Health matches ..0 run scoreboard players set @s rng6 0
 execute if score @s Health matches 1.. if entity @p[tag=azrPlayer,distance=..100] run scoreboard players add @s rng19 1
 execute if score @s Health matches 1.. if entity @p[tag=azrPlayer,distance=..100] run scoreboard players add @s rng1 1
-execute at @s rotated ~ 0 if score @s rng6 matches 0 run tp @s ~ 164 ~ ~ 0
+execute at @s rotated ~ 0 if score @s rng6 matches 0 unless entity @s[scores={rng2=3,rng1=1..40}] run tp @s ~ 164 ~ ~ 0
 execute at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
 
 # 每轮重新选招；A的强化按本轮开始时的累计行动时间锁定。
-execute if score @s rng1 matches 1 store result score @s rng2 run random value 1..2
+# 300血及以上仅A/B；低于300血时A/B/C各占1/3。
+execute if score @s rng1 matches 1 if score @s Health matches 300.. store result score @s rng2 run random value 1..2
+execute if score @s rng1 matches 1 if score @s Health matches ..299 store result score @s rng2 run random value 1..3
 execute if score @s rng1 matches 1 run scoreboard players set @s rng3 2
 execute if score @s rng1 matches 1 if score @s rng19 matches 1000.. run scoreboard players set @s rng3 3
 execute if score @s rng1 matches 1 if score @s rng19 matches 2000.. run scoreboard players set @s rng3 4
@@ -53,8 +55,8 @@ execute if score @s rng6 matches 5..6 at @s rotated ~ 0 positioned ^ ^0 ^0.4 if 
 execute if score @s rng6 matches 3..4 at @s rotated ~ 0 positioned ^ ^-0.18 ^0.4 if block ~ ~ ~ #skyblock:filament_passable if block ~ ~1 ~ #skyblock:filament_passable run tp @s ~ ~ ~
 execute if score @s rng6 matches 1..2 at @s rotated ~ 0 positioned ^ ^-0.36 ^0.4 if block ~ ~ ~ #skyblock:filament_passable if block ~ ~1 ~ #skyblock:filament_passable run tp @s ~ ~ ~
 execute if score @s rng6 matches 1.. run scoreboard players remove @s rng6 1
-execute if score @s rng6 matches 0 at @s run tp @s ~ 164 ~
-execute at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100]
+execute if score @s rng6 matches 0 unless entity @s[scores={rng2=3,rng1=1..40}] at @s run tp @s ~ 164 ~
+execute at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
 
 # 斩痕中心在面前2格、y=165；线段位于与进攻方向垂直的竖直平面。
 execute if score @s rng7 matches 1 store result score @s rng4 run data get entity @s Rotation[0] 1
@@ -368,3 +370,12 @@ execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng1
 execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 store result storage skyblock:sariel spawn.yaw float 0.001 run scoreboard players get @s rng12
 execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 at @s positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss6_sariel/spawn with storage skyblock:sariel spawn
 execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 15 run scoreboard players set @s rng1 -40
+
+# C：0.5秒升高3格，最高点留下花球；随后1.5秒缓降，落地后冷却2秒。
+execute if score @s rng2 matches 3 if score @s rng1 matches 1 at @s positioned ~ 164.2 ~ run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
+execute if score @s rng2 matches 3 if score @s rng1 matches 1..10 at @s run tp @s ~ ~0.3 ~
+execute if score @s rng2 matches 3 if score @s rng1 matches 10 at @s run tp @s ~ 167 ~
+execute if score @s rng2 matches 3 if score @s rng1 matches 10 at @s run summon marker ~ ~ ~ {Tags:["AzrSarielFx","AzrSarielFlowerOrb"]}
+execute if score @s rng2 matches 3 if score @s rng1 matches 11..40 at @s run tp @s ~ ~-0.1 ~
+execute if score @s rng2 matches 3 if score @s rng1 matches 40 at @s run tp @s ~ 164 ~
+execute if score @s rng2 matches 3 if score @s rng1 matches 40 run scoreboard players set @s rng1 -40
