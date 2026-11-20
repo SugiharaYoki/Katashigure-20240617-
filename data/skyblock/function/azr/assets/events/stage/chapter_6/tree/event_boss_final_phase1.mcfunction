@@ -40,6 +40,7 @@ execute if score @s rng1 matches 260 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 278 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“向你发起决斗是为了这世界，但为了这世界杀死你却是我选择的活法。”",color:"white"}]
 execute if score @s rng1 matches 294 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“你这视过去为尘埃的独裁者，溺死在你强加于众生的展望中吧！”",color:"white"}]
 
+execute if score @s rng1 matches 294 as @n[tag=AzrielNPC_sariel,distance=..50,type=mannequin] at @s run data modify entity @s Invulnerable set value 0b
 
 execute if score @s rng1 matches 294 run bossbar add azr:boss_hp_bar [{text:"天使长 · ",bold:true,color:"white"},{text:"沙利叶",bold:true,color:"#c7eeb9"}]
 execute if score @s rng1 matches 294 run bossbar set azr:boss_hp_bar color green
