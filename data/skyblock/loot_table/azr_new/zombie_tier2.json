@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 5,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 84
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:beef",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 7
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "weight": 5
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 80
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 895
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:glistering_melon_slice",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ghast_tear",
+          "weight": 6
+        }
+      ]
+    }
+  ]
+}
