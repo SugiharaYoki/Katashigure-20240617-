@@ -43,6 +43,7 @@ execute if score @s rng1 matches 294 run tellraw @a[tag=azrShowDialog] [{text:"�
 
 execute if score @s rng1 matches 294 as @n[tag=AzrielNPC_sariel,distance=..50,type=mannequin] at @s run data modify entity @s Invulnerable set value 0b
 
+execute if score @s rng1 matches 260 run scoreboard players add @s rng9 1
 execute if score @s rng1 matches 294 run bossbar add azr:boss_hp_bar [{text:"天使长 · ",bold:true,color:"white"},{text:"沙利叶",bold:true,color:"#c7eeb9"}]
 execute if score @s rng1 matches 294 run bossbar set azr:boss_hp_bar color green
 execute if score @s rng1 matches 294 run bossbar set azr:boss_hp_bar max 600
