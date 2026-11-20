@@ -10,6 +10,11 @@ execute if score @s rng1 matches 2 as @a[tag=azrPlayer] at @s unless entity @s[x
 
 execute if score @s rng1 matches 2.. as @n[tag=AzrielNPC_sariel,distance=..50,type=mannequin] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
+execute if score @s rng1 matches 3 run playsound ambient.soul_sand_valley.mood ambient @a ~ ~20 ~ 20 0.5
+execute if score @s rng1 matches 83 run playsound ambient.soul_sand_valley.mood ambient @a ~ ~20 ~ 20 0.5
+execute if score @s rng1 matches 163 run playsound ambient.soul_sand_valley.mood ambient @a ~ ~20 ~ 20 0.5
+execute if score @s rng1 matches 243 run playsound ambient.soul_sand_valley.mood ambient @a ~ ~20 ~ 20 0.5
+
 execute if score @s rng1 matches 3 run tellraw @a[tag=azrShowDialog] [{text:"温柔的声音：",color:"#c7eeb9",bold:1b},{bold: false,text:"\n“初次见面，我最喜欢的爱理莎呀。”",color:"white"}]
 execute if score @s rng1 matches 13 run tellraw @a[tag=azrShowDialog] [{text:"温柔的声音：",color:"#c7eeb9",bold:1b},{bold: false,text:"\n“欢迎来到永夜的王座，这里是月光所不能及之处，因此我们得以坦诚相见。”",color:"white"}]
 
