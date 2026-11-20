@@ -3,10 +3,16 @@
 attribute @s minecraft:movement_speed modifier remove azr:parry
 effect clear @s resistance
 
-execute if entity @s[scores={AZR_chainKillUpg_defensecharge=1}] store result score #random Azr_system run random value 70..100
-execute if entity @s[scores={AZR_chainKillUpg_defensecharge=2}] store result score #random Azr_system run random value 90..150
-execute if entity @s[scores={AZR_chainKillUpg_defensecharge=3}] store result score #random Azr_system run random value 110..200
-execute if entity @s[scores={AZR_chainKillUpg_defensecharge=4}] store result score #random Azr_system run random value 130..250
+execute if entity @s[scores={AZR_chainKillUpg_defensecharge=1}] store result score #random Azr_system run random value 80..150
+execute if entity @s[scores={AZR_chainKillUpg_defensecharge=2}] store result score #random Azr_system run random value 100..200
+execute if entity @s[scores={AZR_chainKillUpg_defensecharge=3}] store result score #random Azr_system run random value 120..250
+execute if entity @s[scores={AZR_chainKillUpg_defensecharge=4}] store result score #random Azr_system run random value 140..300
+
+execute if entity @s[scores={AZR_chainKillUpg_chargeboost=1..}] run scoreboard players add #random Azr_system 10
+execute if entity @s[scores={AZR_chainKillUpg_chargeboost=2..}] run scoreboard players add #random Azr_system 15
+execute if entity @s[scores={AZR_chainKillUpg_chargeboost=3..}] run scoreboard players add #random Azr_system 20
+execute if entity @s[scores={AZR_chainKillUpg_chargeboost=4..}] run scoreboard players add #random Azr_system 25
+
 execute if entity @s[tag=!AZR_chainKill_activated,scores={AZR_chainKillUpg_defensecharge=1..}] run scoreboard players operation @s AZR_chainKill_chargeup += #random Azr_system
 
 execute anchored eyes run function skyblock:sea/p/parry_particle
