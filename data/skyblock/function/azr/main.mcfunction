@@ -1,3 +1,5 @@
+execute as @a[tag=AzrSarielSoulActive] at @s run function skyblock:azr/assets/mobs/skill/boss6_sariel/soul_tick
+
 
 execute unless score stage Azr_startCount matches 1.. run function skyblock:azr/init
 

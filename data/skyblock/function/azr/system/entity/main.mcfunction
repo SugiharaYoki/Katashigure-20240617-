@@ -41,3 +41,8 @@ execute as @s[type=marker,tag=AzrRaum_midgarden_sonic] at @s run function skyblo
 # 菌体掮客与独立结算控制器。
 execute if entity @s[type=bogged,tag=AzrielBossFilament] at @s run function skyblock:azr/assets/mobs/skill/boss_filament/core
 execute if entity @s[type=marker,tag=FF_monitor] at @s run function skyblock:azr/assets/mobs/skill/boss_filament/monitor
+
+# 沙利叶攻击实体独立更新，并在离开战斗阶段/本体消失后回收。
+execute if entity @s[tag=AzrSarielFx] if score stage Azr_system matches 120 at @s if entity @n[type=mannequin,tag=AzrielNPC_sariel,distance=..100,scores={Health=1..}] run function skyblock:azr/assets/mobs/skill/boss6_sariel/effects
+execute if entity @s[tag=AzrSarielFx] unless score stage Azr_system matches 120 run kill @s
+execute if entity @s[tag=AzrSarielFx] at @s unless entity @n[type=mannequin,tag=AzrielNPC_sariel,distance=..100,scores={Health=1..}] run kill @s
