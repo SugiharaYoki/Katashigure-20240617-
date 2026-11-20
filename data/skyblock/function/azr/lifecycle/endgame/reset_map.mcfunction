@@ -1163,7 +1163,7 @@ fill -79598 163 -21 -79594 163 -24 air replace minecraft:iron_trapdoor
 clone -79570 -10 -16 -79567 -8 -10 -79570 164 -16
 
 fill -79586 43 -50 -79588 40 -50 air
-
+execute if block -79549 14 -24 air run fill -79549 14 -24 -79582 14 9 minecraft:polished_deepslate
 
 
 
