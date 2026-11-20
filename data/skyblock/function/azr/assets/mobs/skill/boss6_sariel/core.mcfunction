@@ -29,6 +29,8 @@ execute at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
 # 300血及以上仅A/B；低于300血时A/B/C各占1/3。
 execute if score @s rng1 matches 1 if score @s Health matches 300.. store result score @s rng2 run random value 1..2
 execute if score @s rng1 matches 1 if score @s Health matches ..299 store result score @s rng2 run random value 1..3
+# C已有花球时改用4号替代动作：直接放五道水平激光，不进入B的冲刺或C的起跳。
+execute if score @s rng1 matches 1 if score @s rng2 matches 3 at @s if entity @n[type=marker,tag=AzrSarielFlowerOrb,distance=..100] run scoreboard players set @s rng2 4
 execute if score @s rng1 matches 1 run scoreboard players set @s rng3 2
 execute if score @s rng1 matches 1 if score @s rng19 matches 1000.. run scoreboard players set @s rng3 3
 execute if score @s rng1 matches 1 if score @s rng19 matches 2000.. run scoreboard players set @s rng3 4
@@ -346,30 +348,34 @@ execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng1
 execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 1 if score @s rng11 matches 16 at @s as @a[tag=azrPlayer,distance=..7] run function skyblock:azr/assets/mobs/skill/boss6_sariel/hit
 execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 1 if score @s rng11 matches 16 run scoreboard players set @s rng1 -40
 
-# 第四次冲刺后仍没有近身目标：一束准确朝向最近玩家，其余四束在左右45度内随机。
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 store result score @s rng4 run data get entity @s Rotation[0] 1000
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 store result storage skyblock:sariel spawn.yaw float 0.001 run scoreboard players get @s rng4
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 run data modify storage skyblock:sariel spawn.pitch set value 0
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 run data modify storage skyblock:sariel spawn.kind set value "AzrSarielLaserFan"
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 at @s positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss6_sariel/spawn with storage skyblock:sariel spawn
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 store result score @s rng12 run random value -45000..45000
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 run scoreboard players operation @s rng12 += @s rng4
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 store result storage skyblock:sariel spawn.yaw float 0.001 run scoreboard players get @s rng12
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 at @s positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss6_sariel/spawn with storage skyblock:sariel spawn
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 store result score @s rng12 run random value -45000..45000
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 run scoreboard players operation @s rng12 += @s rng4
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 store result storage skyblock:sariel spawn.yaw float 0.001 run scoreboard players get @s rng12
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 at @s positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss6_sariel/spawn with storage skyblock:sariel spawn
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 store result score @s rng12 run random value -45000..45000
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 run scoreboard players operation @s rng12 += @s rng4
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 store result storage skyblock:sariel spawn.yaw float 0.001 run scoreboard players get @s rng12
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 at @s positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss6_sariel/spawn with storage skyblock:sariel spawn
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 store result score @s rng12 run random value -45000..45000
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 run scoreboard players operation @s rng12 += @s rng4
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 store result storage skyblock:sariel spawn.yaw float 0.001 run scoreboard players get @s rng12
-execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 at @s positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss6_sariel/spawn with storage skyblock:sariel spawn
+# B四次冲刺落空，或C被现存花球阻止时，共用这组五道水平激光。
+execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 1 run scoreboard players set @s rng7 4
+execute if score @s rng2 matches 4 if score @s rng1 matches 1 run scoreboard players set @s rng7 4
+execute if score @s rng7 matches 4 at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
+execute if score @s rng7 matches 4 store result score @s rng4 run data get entity @s Rotation[0] 1000
+execute if score @s rng7 matches 4 store result storage skyblock:sariel spawn.yaw float 0.001 run scoreboard players get @s rng4
+execute if score @s rng7 matches 4 run data modify storage skyblock:sariel spawn.pitch set value 0
+execute if score @s rng7 matches 4 run data modify storage skyblock:sariel spawn.kind set value "AzrSarielLaserFan"
+execute if score @s rng7 matches 4 at @s positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss6_sariel/spawn with storage skyblock:sariel spawn
+execute if score @s rng7 matches 4 store result score @s rng12 run random value -45000..45000
+execute if score @s rng7 matches 4 run scoreboard players operation @s rng12 += @s rng4
+execute if score @s rng7 matches 4 store result storage skyblock:sariel spawn.yaw float 0.001 run scoreboard players get @s rng12
+execute if score @s rng7 matches 4 at @s positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss6_sariel/spawn with storage skyblock:sariel spawn
+execute if score @s rng7 matches 4 store result score @s rng12 run random value -45000..45000
+execute if score @s rng7 matches 4 run scoreboard players operation @s rng12 += @s rng4
+execute if score @s rng7 matches 4 store result storage skyblock:sariel spawn.yaw float 0.001 run scoreboard players get @s rng12
+execute if score @s rng7 matches 4 at @s positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss6_sariel/spawn with storage skyblock:sariel spawn
+execute if score @s rng7 matches 4 store result score @s rng12 run random value -45000..45000
+execute if score @s rng7 matches 4 run scoreboard players operation @s rng12 += @s rng4
+execute if score @s rng7 matches 4 store result storage skyblock:sariel spawn.yaw float 0.001 run scoreboard players get @s rng12
+execute if score @s rng7 matches 4 at @s positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss6_sariel/spawn with storage skyblock:sariel spawn
+execute if score @s rng7 matches 4 store result score @s rng12 run random value -45000..45000
+execute if score @s rng7 matches 4 run scoreboard players operation @s rng12 += @s rng4
+execute if score @s rng7 matches 4 store result storage skyblock:sariel spawn.yaw float 0.001 run scoreboard players get @s rng12
+execute if score @s rng7 matches 4 at @s positioned ~ ~1 ~ run function skyblock:azr/assets/mobs/skill/boss6_sariel/spawn with storage skyblock:sariel spawn
 execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 2 if score @s rng11 matches 15 run scoreboard players set @s rng1 -40
+# 替代动作放出射线即开始2秒冷却；射线按原流程独立完成预警与伤害。
+execute if score @s rng2 matches 4 if score @s rng1 matches 1 run scoreboard players set @s rng1 -40
 
 # C：0.5秒升高3格，最高点留下花球；随后1.5秒缓降，落地后冷却2秒。
 execute if score @s rng2 matches 3 if score @s rng1 matches 1 at @s positioned ~ 164.2 ~ run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
