@@ -6,7 +6,7 @@ execute if score @s rng1 matches 3 run fill -79713 -5 34 -79709 -5 34 air
 execute if score @s rng1 matches 4 run fill -79713 -4 34 -79709 -4 34 air
 execute if score @s rng1 matches 5 run fill -79713 -3 34 -79709 -3 34 air
 
-execute if score @s rng1 matches 2..5 run playsound block.iron_trapdoor.open block @a -79711 -2 345 0.7
+execute if score @s rng1 matches 2..5 run playsound block.iron_trapdoor.open block @a -79711 -2 34 0.7 0.5
 
 
 

@@ -200,3 +200,8 @@ advancement grant @s[tag=AZS_BoSB23] only skyblock:azr/progress/sub_boss_working
 execute unless score @s Azr_Login_Identifier >= #Server_Date Global_Age run function skyblock:azr/system/player/join_login_bonus
 
 tag @s add azrRetrieved
+
+# 已到达第一章 Boss 入口的玩家，读档完成后同步永久购买的传送点。
+# 覆盖章节初始化后的补读档；第一章 Boss 入口之前仍不提前解锁。
+tag @s[tag=azrPlayer,tag=azrPlayer_respawnanchor_unlocked_westcourt_b,tag=AZS_BoSShop21] add azrPlayer_respawnanchor_unlocked_mossyroad
+tag @s[tag=azrPlayer,tag=azrPlayer_respawnanchor_unlocked_westcourt_b,tag=AZS_BoSShop23] add azrPlayer_respawnanchor_unlocked_rockpath
