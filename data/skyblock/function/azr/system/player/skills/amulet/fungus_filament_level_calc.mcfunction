@@ -2,7 +2,7 @@ scoreboard players add @s AzrSariel_Amulet_FungusFilament_timer 1
 
 execute if score @s AzrSariel_Amulet_FungusFilament_timer matches 28 run scoreboard players set @s AzrSariel_Amulet_FungusFilament_level 1
 execute if score @s AzrSariel_Amulet_FungusFilament_timer matches 28 run execute if items entity @s container.* *[custom_data~{azr_amulet_flower_wall:1b}] run scoreboard players add @s AzrSariel_Amulet_FungusFilament_level 1
-execute if score @s AzrSariel_Amulet_FungusFilament_timer matches 28 run execute if items entity @s container.* *[custom_data~{azr_amulet_flower_spike:1b}] run scoreboard players add @s AzrSariel_Amulet_FungusFilament_level 1
+execute if score @s AzrSariel_Amulet_FungusFilament_timer matches 28 run execute if items entity @s container.* *[custom_data~{azr_amulet_flower_spike:1b}] run scoreboard players add @s AzrSariel_Amulet_FungusFilament_level 2
 execute if score @s AzrSariel_Amulet_FungusFilament_timer matches 28 run execute if items entity @s container.* *[custom_data~{azr_amulet_thorn_crown:1b}] run scoreboard players add @s AzrSariel_Amulet_FungusFilament_level 1
 execute if score @s AzrSariel_Amulet_FungusFilament_timer matches 28 run execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] run scoreboard players add @s AzrSariel_Amulet_FungusFilament_level 1
 execute if score @s AzrSariel_Amulet_FungusFilament_timer matches 28 run execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] if items entity @s container.* *[custom_data~{azr_amulet_moss_grow:1b}] run scoreboard players add @s AzrSariel_Amulet_FungusFilament_level 2
