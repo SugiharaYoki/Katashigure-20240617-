@@ -1,6 +1,6 @@
 title @a[tag=azrShowDialog] actionbar {text:"Extra Boss Annihilated",color:"green"}
 bossbar remove azr:boss_hp_bar_filament
-function skyblock:azr/assets/items/amulets/fungus_filament
+execute as @a[tag=azrPlayer] run function skyblock:azr/assets/items/amulets/fungus_filament
 tag @a[tag=azrPlayer] add AZS_BoSB06
 give @a[tag=azrPlayer] emerald 20
 scoreboard players add @a[tag=azrPlayer] AzrMelonCount 1
