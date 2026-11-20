@@ -41,5 +41,14 @@ execute if score @s rng1 matches 278 run tellraw @a[tag=azrShowDialog] [{text:"�
 execute if score @s rng1 matches 294 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“你这视过去为尘埃的独裁者，溺死在你强加于众生的展望中吧！”",color:"white"}]
 
 
+execute if score @s rng1 matches 294 run bossbar add azr:boss_hp_bar [{text:"天使长 · ",bold:true,color:"white"},{text:"沙利叶",bold:true,color:"#c7eeb9"}]
+execute if score @s rng1 matches 294 run bossbar set azr:boss_hp_bar color green
+execute if score @s rng1 matches 294 run bossbar set azr:boss_hp_bar max 600
+execute if score @s rng1 matches 294 run bossbar set azr:boss_hp_bar players @a[tag=azrShowDialog]
+execute if score @s rng1 matches 294 run scoreboard players set stage Azr_system 120
+
+execute if score @s rng1 matches 9999 run scoreboard players set @s rng1 9998
+execute if score @s rng1 matches ..9999 if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:zadamga music @s ~ ~ ~ 0.7
+execute if score @s rng9 matches 724.. run scoreboard players set @s rng9 0
 
 
