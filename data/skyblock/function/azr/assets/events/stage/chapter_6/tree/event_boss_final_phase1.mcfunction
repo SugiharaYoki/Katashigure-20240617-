@@ -7,7 +7,7 @@ execute if score @s rng1 matches 2 run fill -79598 163 -21 -79594 163 -24 minecr
 
 execute if score @s rng1 matches 2 as @a[tag=azrPlayer] at @s unless entity @s[x=-79585,y=164,z=-29,dx=50,dy=50,dz=50] run tp @s -79589 164 -13 facing -79584 164 -13
 
-
+execute if score @s rng1 matches 2.. as @n[tag=AzrielNPC_sariel,distance=..50,type=mannequin] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
 execute if score @s rng1 matches 3 run tellraw @a[tag=azrShowDialog] [{text:"温柔的声音：",color:"#c7eeb9",bold:1b},{bold: false,text:"\n“初次见面，我最喜欢的爱理莎呀。”",color:"white"}]
 execute if score @s rng1 matches 13 run tellraw @a[tag=azrShowDialog] [{text:"温柔的声音：",color:"#c7eeb9",bold:1b},{bold: false,text:"\n“欢迎来到永夜的王座，这里是月光所不能及之处，因此我们得以坦诚相见。”",color:"white"}]
