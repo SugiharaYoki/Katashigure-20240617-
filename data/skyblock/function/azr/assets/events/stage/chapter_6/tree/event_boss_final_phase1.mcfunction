@@ -19,6 +19,7 @@ execute if score @s rng1 matches 203 run playsound ambient.warped_forest.mood am
 execute if score @s rng1 matches 283 run playsound ambient.warped_forest.mood ambient @a ~ ~20 ~ 20 0.5
 
 execute if score @s rng1 matches 3 run tellraw @a[tag=azrShowDialog] [{text:"温柔的声音：",color:"#c7eeb9",bold:1b},{bold: false,text:"\n“初次见面，我最喜欢的爱理莎呀。”",color:"white"}]
+execute if score @s rng1 matches 3..293 as @n[tag=AzrielNPC_sariel,distance=..50,type=mannequin] at @s if entity @a[tag=azrPlayer,distance=..1.3,scores={Azr_skillPoints=67..}] run scoreboard players set @s rng1 294
 execute if score @s rng1 matches 13 run tellraw @a[tag=azrShowDialog] [{text:"温柔的声音：",color:"#c7eeb9",bold:1b},{bold: false,text:"\n“欢迎来到永夜的王座，这里是月光所不能及之处，因此我们得以坦诚相见。”",color:"white"}]
 
 execute if score @s rng1 matches 25 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“我从一开始就是为你而来。”",color:"white"}]
@@ -62,6 +63,7 @@ execute if score @s rng1 matches 9999 run scoreboard players set @s rng1 9998
 execute if score @s rng1 matches ..9999 if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:zadamga music @s ~ ~ ~ 0.7
 execute if score @s rng9 matches 476.. run scoreboard players set @s rng9 0
 
+execute if score @s rng1 matches 296 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..66}] Azr_skillPoints 67
 execute if score @s rng1 matches 296 run fill -79570 164 -16 -79567 166 -10 air
 execute if score @s rng1 matches 296 run playsound block.leaf_litter.break block @a -79568.50 164.88 -12.52 3 0.7
 execute if score @s rng1 matches 296 run playsound block.wood.break block @a -79568.50 164.88 -12.52 3 0.7
