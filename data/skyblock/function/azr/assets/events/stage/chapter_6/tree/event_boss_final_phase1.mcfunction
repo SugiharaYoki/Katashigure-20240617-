@@ -8,7 +8,6 @@ execute if score @s rng1 matches 2 run fill -79598 163 -21 -79594 163 -24 minecr
 
 execute if score @s rng1 matches 2 as @a[tag=azrPlayer] at @s unless entity @s[x=-79585,y=164,z=-29,dx=50,dy=50,dz=50] run tp @s -79589 164 -13 facing -79584 164 -13
 
-execute if score @s rng1 matches 2.. as @n[tag=AzrielNPC_sariel,distance=..50,type=mannequin] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
 execute if score @s rng1 matches 3 run playsound ambient.soul_sand_valley.mood ambient @a ~ ~20 ~ 20 0.5
 execute if score @s rng1 matches 83 run playsound ambient.soul_sand_valley.mood ambient @a ~ ~20 ~ 20 0.5
@@ -63,7 +62,7 @@ execute if score @s rng1 matches 9999 run scoreboard players set @s rng1 9998
 execute if score @s rng1 matches ..9999 if score @s rng9 matches 1 as @a[tag=azrShowDialog] at @s run playsound minecraft:zadamga music @s ~ ~ ~ 0.7
 execute if score @s rng9 matches 476.. run scoreboard players set @s rng9 0
 
-execute if score @s rng1 matches 296 run fill -79570 -10 -16 -79567 -8 -10 air
+execute if score @s rng1 matches 296 run fill -79570 164 -16 -79567 166 -10 air
 execute if score @s rng1 matches 296 run playsound block.leaf_litter.break block @a -79568.50 164.88 -12.52 3 0.7
 execute if score @s rng1 matches 296 run playsound block.wood.break block @a -79568.50 164.88 -12.52 3 0.7
 execute if score @s rng1 matches 296 run particle minecraft:end_rod -79568.50 164.88 -12.52 2 1 2 0.03 90

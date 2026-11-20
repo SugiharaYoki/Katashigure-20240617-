@@ -20,6 +20,7 @@ execute positioned -79586 47 -19 unless entity @n[tag=AzrielMarker_encounter,dis
 execute positioned -79586 47 -19 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..11] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
 
 
+execute positioned -79571 164 -13 as @n[tag=AzrielNPC_sariel,distance=..150,type=mannequin] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
 
 
