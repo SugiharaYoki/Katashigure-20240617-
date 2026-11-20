@@ -139,3 +139,13 @@ forceload add -79260 -896
 
 
 
+
+
+# reset_map 遗漏区块补齐；新增范围在 open / close 中成对维护。
+# 场外花花：x=-80001 跨入西侧区块
+forceload add -80016 -16
+# 柴油机 Boss 场地西侧四处复位
+forceload add -80032 192 -80001 223
+# 第四章入口机关：克隆源区块及目标区块
+forceload add -79936 -576 -79921 -545
+forceload add -79936 -528
