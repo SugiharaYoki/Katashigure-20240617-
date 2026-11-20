@@ -1160,7 +1160,7 @@ fill -79860 8 11 -79863 11 11 air replace minecraft:red_stained_glass
 #最终boss
 fill -79596 163 -20 -79597 163 -20 minecraft:spruce_stairs[facing=south]
 fill -79598 163 -21 -79594 163 -24 air replace minecraft:iron_trapdoor
-
+clone -79570 -10 -16 -79567 -8 -10 -79570 164 -16
 
 
 
