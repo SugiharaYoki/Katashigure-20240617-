@@ -2,6 +2,11 @@
 #异象对话
 execute positioned -79586 47 -19 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..11] if loaded ~ ~ ~ run function skyblock:azr/assets/events/stage/chapter_6/tree/entering_tree
 
+execute positioned -79569 48 -11 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..11] if loaded ~ ~ ~ run function skyblock:azr/assets/events/stage/chapter_6/tree/event_anomaly_1
+execute positioned -79580 60 3 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..11] if loaded ~ ~ ~ run function skyblock:azr/assets/events/stage/chapter_6/tree/event_anomaly_2
+execute positioned -79589 66 -18 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..11] if loaded ~ ~ ~ run function skyblock:azr/assets/events/stage/chapter_6/tree/event_anomaly_3
+execute positioned -79578 124 -5 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..11] if loaded ~ ~ ~ run function skyblock:azr/assets/events/stage/chapter_6/tree/event_anomaly_4
+execute positioned -79584 104 1 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[tag=azrPlayer,distance=..11] if loaded ~ ~ ~ run function skyblock:azr/assets/events/stage/chapter_6/tree/event_anomaly_5
 
 execute positioned -79571 164 -13 as @n[tag=AzrielNPC_sariel,distance=..150,type=mannequin] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
