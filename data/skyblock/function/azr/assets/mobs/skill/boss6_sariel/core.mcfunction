@@ -12,6 +12,9 @@ execute unless entity @s[tag=AzrSarielInitialized] run scoreboard players set #S
 execute unless entity @s[tag=AzrSarielInitialized] run scoreboard players set #Sariel5 rng20 5
 execute unless entity @s[tag=AzrSarielInitialized] run scoreboard players set #Sariel7 rng20 7
 tag @s add AzrSarielInitialized
+# 冷却追加X的独立间隔；已有Boss没有分数时也能初始化。
+scoreboard players add @s rng16 0
+execute if score @s rng16 matches 1.. run scoreboard players remove @s rng16 1
 data merge entity @s {NoGravity:1b,Motion:[0.0d,0.0d,0.0d]}
 execute store result score @s Health run data get entity @s Health
 execute store result bossbar azr:boss_hp_bar value run scoreboard players get @s Health
@@ -618,7 +621,7 @@ execute if score @s rng2 matches 3 if score @s rng1 matches 40 run scoreboard pl
 # 仅在本tick刚进入冷却(-40)时抽一次20%；不会在整个冷却期间反复抽取。
 # 接招直接进入X状态；下一tick从第1帧叶环/end_rod预警开始，不重新随机选招或冲刺。
 scoreboard players set @s rng13 0
-execute if score @s rng1 matches -40 at @s if entity @p[tag=azrPlayer,distance=..3] store result score @s rng13 run random value 1..5
+execute if score @s rng1 matches -40 if score @s rng16 matches 0 at @s if entity @p[tag=azrPlayer,distance=..3] store result score @s rng13 run random value 1..5
 execute if score @s rng13 matches 1 run scoreboard players set @s rng2 2
 execute if score @s rng13 matches 1 run scoreboard players set @s rng6 0
 execute if score @s rng13 matches 1 run scoreboard players set @s rng8 0
@@ -626,3 +629,4 @@ execute if score @s rng13 matches 1 run scoreboard players set @s rng9 0
 execute if score @s rng13 matches 1 run scoreboard players set @s rng10 1
 execute if score @s rng13 matches 1 run scoreboard players set @s rng11 0
 execute if score @s rng13 matches 1 run scoreboard players set @s rng1 1
+execute if score @s rng13 matches 1 run scoreboard players set @s rng16 200

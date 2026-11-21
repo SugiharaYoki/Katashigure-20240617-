@@ -1,27 +1,60 @@
-
-
+# 沿用area1_tree的5tick事件入口；黑球/暗影在实体入口每tick独立更新。
+# rng2~rng5记录四个黑球是否死亡；rng1只负责事件时间。
 scoreboard players add @s rng1 1
+execute if score @s rng1 matches 1999.. run scoreboard players set @s rng1 1990
+execute if score @s rng1 matches 1003 run scoreboard players set stage Azr_system 121
+execute if score @s rng1 matches 1003 run stopsound @a[tag=azrPlayer]
+execute if score @s rng1 matches 1003 run tp @a[tag=azrPlayer] -79566 15 -7
+execute if score @s rng1 matches 1003 run bossbar remove azr:boss_hp_bar
+execute if score @s rng1 matches 1003 positioned -79571 164 -13 run kill @e[tag=AzrSarielFx,distance=..100]
+execute if score @s rng1 matches 1003 run scoreboard players set @a[tag=azrPlayer] AzrSoulMark 0
+execute if score @s rng1 matches 1003 run scoreboard players set @a[tag=azrPlayer] AzrSoulBurst 0
+execute if score @s rng1 matches 1003 run effect clear @a[tag=azrPlayer,tag=AzrSarielSoul] minecraft:unluck
+execute if score @s rng1 matches 1003 run tag @a[tag=azrPlayer] remove AzrSarielSoul
+execute if score @s rng1 matches 1003 run tag @a[tag=azrPlayer] remove AzrSarielSoulActive
+execute if score @s rng1 matches 1003 run tag @s remove AzrSarielPhase2Cleared
+execute if score @s rng1 matches 1003 positioned -79566 15 -7 run kill @e[tag=AzrSarielPhase2Entity,distance=..100]
+execute if score @s rng1 matches 1003 run scoreboard players set @s rng2 0
+execute if score @s rng1 matches 1003 run setblock -79580 23 7 air
+execute if score @s rng1 matches 1003 run summon slime -79580 16 7 {Tags:["AzrielMob","AzrSarielPhase2Entity","AzrSarielDarkOrb","AzrSarielDarkOrb_1"],Size:0,NoAI:1b,NoGravity:1b,Silent:1b,PersistenceRequired:1b,Health:60f,attributes:[{id:"minecraft:max_health",base:60d},{id:"minecraft:scale",base:2d},{id:"minecraft:armor",base:0d},{id:"minecraft:armor_toughness",base:0d},{id:"minecraft:knockback_resistance",base:1d},{id:"minecraft:attack_damage",base:0d}],DeathLootTable:"minecraft:empty"}
+execute if score @s rng1 matches 1003 run scoreboard players set @s rng3 0
+execute if score @s rng1 matches 1003 run setblock -79551 23 -22 air
+execute if score @s rng1 matches 1003 run summon slime -79551 16 -22 {Tags:["AzrielMob","AzrSarielPhase2Entity","AzrSarielDarkOrb","AzrSarielDarkOrb_2"],Size:0,NoAI:1b,NoGravity:1b,Silent:1b,PersistenceRequired:1b,Health:60f,attributes:[{id:"minecraft:max_health",base:60d},{id:"minecraft:scale",base:2d},{id:"minecraft:armor",base:0d},{id:"minecraft:armor_toughness",base:0d},{id:"minecraft:knockback_resistance",base:1d},{id:"minecraft:attack_damage",base:0d}],DeathLootTable:"minecraft:empty"}
+execute if score @s rng1 matches 1003 run scoreboard players set @s rng4 0
+execute if score @s rng1 matches 1003 run setblock -79580 23 -22 air
+execute if score @s rng1 matches 1003 run summon slime -79580 16 -22 {Tags:["AzrielMob","AzrSarielPhase2Entity","AzrSarielDarkOrb","AzrSarielDarkOrb_3"],Size:0,NoAI:1b,NoGravity:1b,Silent:1b,PersistenceRequired:1b,Health:60f,attributes:[{id:"minecraft:max_health",base:60d},{id:"minecraft:scale",base:2d},{id:"minecraft:armor",base:0d},{id:"minecraft:armor_toughness",base:0d},{id:"minecraft:knockback_resistance",base:1d},{id:"minecraft:attack_damage",base:0d}],DeathLootTable:"minecraft:empty"}
+execute if score @s rng1 matches 1003 run scoreboard players set @s rng5 0
+execute if score @s rng1 matches 1003 run setblock -79551 23 7 air
+execute if score @s rng1 matches 1003 run summon slime -79551 16 7 {Tags:["AzrielMob","AzrSarielPhase2Entity","AzrSarielDarkOrb","AzrSarielDarkOrb_4"],Size:0,NoAI:1b,NoGravity:1b,Silent:1b,PersistenceRequired:1b,Health:60f,attributes:[{id:"minecraft:max_health",base:60d},{id:"minecraft:scale",base:2d},{id:"minecraft:armor",base:0d},{id:"minecraft:armor_toughness",base:0d},{id:"minecraft:knockback_resistance",base:1d},{id:"minecraft:attack_damage",base:0d}],DeathLootTable:"minecraft:empty"}
+execute if score @s rng1 matches 1003 positioned -79566 15 -7 run effect give @e[type=slime,tag=AzrSarielDarkOrb,distance=..100] minecraft:invisibility infinite 0 true
 
+# 固定四处检测死亡，避免依赖已死亡实体继续执行；每个黑球只结算一次。
+execute if score @s rng1 matches 1003.. if score @s rng2 matches 0 positioned -79580 16 7 unless entity @n[type=slime,tag=AzrSarielDarkOrb_1,distance=..100] run particle minecraft:totem_of_undying ~ ~0.5 ~ 0.5 0.6 0.5 0.1 60
+execute if score @s rng1 matches 1003.. if score @s rng2 matches 0 positioned -79580 16 7 unless entity @n[type=slime,tag=AzrSarielDarkOrb_1,distance=..100] run playsound minecraft:item.totem.use hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 1.5 1
+execute if score @s rng1 matches 1003.. if score @s rng2 matches 0 positioned -79580 16 7 unless entity @n[type=slime,tag=AzrSarielDarkOrb_1,distance=..100] run playsound minecraft:ambient.soul_sand_valley.mood hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 1.5 0.65
+execute if score @s rng1 matches 1003.. if score @s rng2 matches 0 positioned -79580 16 7 unless entity @n[type=slime,tag=AzrSarielDarkOrb_1,distance=..100] run playsound minecraft:ambient.soul_sand_valley.additions hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 1.5 0.65
+execute if score @s rng1 matches 1003.. if score @s rng2 matches 0 positioned -79580 16 7 unless entity @n[type=slime,tag=AzrSarielDarkOrb_1,distance=..100] run setblock ~ 23 ~ minecraft:soul_lantern[hanging=true]
+execute if score @s rng1 matches 1003.. if score @s rng2 matches 0 positioned -79580 16 7 unless entity @n[type=slime,tag=AzrSarielDarkOrb_1,distance=..100] run scoreboard players set @s rng2 1
+execute if score @s rng1 matches 1003.. if score @s rng3 matches 0 positioned -79551 16 -22 unless entity @n[type=slime,tag=AzrSarielDarkOrb_2,distance=..100] run particle minecraft:totem_of_undying ~ ~0.5 ~ 0.5 0.6 0.5 0.1 60
+execute if score @s rng1 matches 1003.. if score @s rng3 matches 0 positioned -79551 16 -22 unless entity @n[type=slime,tag=AzrSarielDarkOrb_2,distance=..100] run playsound minecraft:item.totem.use hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 1.5 1
+execute if score @s rng1 matches 1003.. if score @s rng3 matches 0 positioned -79551 16 -22 unless entity @n[type=slime,tag=AzrSarielDarkOrb_2,distance=..100] run playsound minecraft:ambient.soul_sand_valley.mood hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 1.5 0.65
+execute if score @s rng1 matches 1003.. if score @s rng3 matches 0 positioned -79551 16 -22 unless entity @n[type=slime,tag=AzrSarielDarkOrb_2,distance=..100] run playsound minecraft:ambient.soul_sand_valley.additions hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 1.5 0.65
+execute if score @s rng1 matches 1003.. if score @s rng3 matches 0 positioned -79551 16 -22 unless entity @n[type=slime,tag=AzrSarielDarkOrb_2,distance=..100] run setblock ~ 23 ~ minecraft:soul_lantern[hanging=true]
+execute if score @s rng1 matches 1003.. if score @s rng3 matches 0 positioned -79551 16 -22 unless entity @n[type=slime,tag=AzrSarielDarkOrb_2,distance=..100] run scoreboard players set @s rng3 1
+execute if score @s rng1 matches 1003.. if score @s rng4 matches 0 positioned -79580 16 -22 unless entity @n[type=slime,tag=AzrSarielDarkOrb_3,distance=..100] run particle minecraft:totem_of_undying ~ ~0.5 ~ 0.5 0.6 0.5 0.1 60
+execute if score @s rng1 matches 1003.. if score @s rng4 matches 0 positioned -79580 16 -22 unless entity @n[type=slime,tag=AzrSarielDarkOrb_3,distance=..100] run playsound minecraft:item.totem.use hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 1.5 1
+execute if score @s rng1 matches 1003.. if score @s rng4 matches 0 positioned -79580 16 -22 unless entity @n[type=slime,tag=AzrSarielDarkOrb_3,distance=..100] run playsound minecraft:ambient.soul_sand_valley.mood hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 1.5 0.65
+execute if score @s rng1 matches 1003.. if score @s rng4 matches 0 positioned -79580 16 -22 unless entity @n[type=slime,tag=AzrSarielDarkOrb_3,distance=..100] run playsound minecraft:ambient.soul_sand_valley.additions hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 1.5 0.65
+execute if score @s rng1 matches 1003.. if score @s rng4 matches 0 positioned -79580 16 -22 unless entity @n[type=slime,tag=AzrSarielDarkOrb_3,distance=..100] run setblock ~ 23 ~ minecraft:soul_lantern[hanging=true]
+execute if score @s rng1 matches 1003.. if score @s rng4 matches 0 positioned -79580 16 -22 unless entity @n[type=slime,tag=AzrSarielDarkOrb_3,distance=..100] run scoreboard players set @s rng4 1
+execute if score @s rng1 matches 1003.. if score @s rng5 matches 0 positioned -79551 16 7 unless entity @n[type=slime,tag=AzrSarielDarkOrb_4,distance=..100] run particle minecraft:totem_of_undying ~ ~0.5 ~ 0.5 0.6 0.5 0.1 60
+execute if score @s rng1 matches 1003.. if score @s rng5 matches 0 positioned -79551 16 7 unless entity @n[type=slime,tag=AzrSarielDarkOrb_4,distance=..100] run playsound minecraft:item.totem.use hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 1.5 1
+execute if score @s rng1 matches 1003.. if score @s rng5 matches 0 positioned -79551 16 7 unless entity @n[type=slime,tag=AzrSarielDarkOrb_4,distance=..100] run playsound minecraft:ambient.soul_sand_valley.mood hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 1.5 0.65
+execute if score @s rng1 matches 1003.. if score @s rng5 matches 0 positioned -79551 16 7 unless entity @n[type=slime,tag=AzrSarielDarkOrb_4,distance=..100] run playsound minecraft:ambient.soul_sand_valley.additions hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 1.5 0.65
+execute if score @s rng1 matches 1003.. if score @s rng5 matches 0 positioned -79551 16 7 unless entity @n[type=slime,tag=AzrSarielDarkOrb_4,distance=..100] run setblock ~ 23 ~ minecraft:soul_lantern[hanging=true]
+execute if score @s rng1 matches 1003.. if score @s rng5 matches 0 positioned -79551 16 7 unless entity @n[type=slime,tag=AzrSarielDarkOrb_4,distance=..100] run scoreboard players set @s rng5 1
 
-
-
-
-
-
-如果boss死了，则phase1的rng1 set为1001，并进入event_boss_final_phase2
-
-phase2里，rng1=1003时，玩家瞬间停止所有的声音，并且所有azrPlayer传送到-79566 15 -7
-bossbar消失
-
-rng1到达1999时自动变成1990
-
-在-79580 15 7、-79551 15 -22、-79580 15 -22、-79551 15 7
-制造共4个离地1格高，以隐形无粒子的史莱姆为基础的“黑球”
-每个黑球每1.3秒都会释放一个追踪暗影，贴地（地面y=15）缓慢追踪玩家（一秒2格），并且在2格内有玩家时化作一个半径2格的wax_off警告，并且在1.2秒后制造一大堆烟尘并对其中玩家造成8explosion伤害，粒子效果和音效可以参考AzrielMob_boss_diesel_fire_marker，但不同的是这次是圆形范围内全部是攻击范围
-
-当黑球地面半径5.5格内有玩家时，不断在黑球半径4格内的地面上0.1到0.2秒一次，制造trap_fang_auto（不会在墙壁重合处或没有地板的地方制造）
-
-黑球死亡时会释放不死图腾类似的音效和粒子，并且在对应自己xz的头顶y=23处制造一个hanging的soul lantern
-并且制造soul_sand_valley mood + addition pitch=0.65的音效
-
-四个黑球全部死亡时，fill -79549 14 -24 -79582 14 9 air
+# 四个黑球全部死亡后只开地板一次，并清理未爆炸的暗影与尖刺预警。
+execute unless entity @s[tag=AzrSarielPhase2Cleared] if score @s rng2 matches 1 if score @s rng3 matches 1 if score @s rng4 matches 1 if score @s rng5 matches 1 run fill -79549 14 -24 -79582 14 9 minecraft:air
+execute unless entity @s[tag=AzrSarielPhase2Cleared] if score @s rng2 matches 1 if score @s rng3 matches 1 if score @s rng4 matches 1 if score @s rng5 matches 1 positioned -79566 15 -7 run kill @e[tag=AzrSarielPhase2Entity,distance=..100]
+execute unless entity @s[tag=AzrSarielPhase2Cleared] if score @s rng2 matches 1 if score @s rng3 matches 1 if score @s rng4 matches 1 if score @s rng5 matches 1 run tag @s add AzrSarielPhase2Cleared

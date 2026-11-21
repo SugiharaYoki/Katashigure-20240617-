@@ -46,3 +46,7 @@ execute if entity @s[type=marker,tag=FF_monitor] at @s run function skyblock:azr
 execute if entity @s[tag=AzrSarielFx] if score stage Azr_system matches 120 at @s if entity @n[type=mannequin,tag=AzrielNPC_sariel,distance=..100,scores={Health=1..}] run function skyblock:azr/assets/mobs/skill/boss6_sariel/effects
 execute if entity @s[tag=AzrSarielFx] unless score stage Azr_system matches 120 run kill @s
 execute if entity @s[tag=AzrSarielFx] at @s unless entity @n[type=mannequin,tag=AzrielNPC_sariel,distance=..100,scores={Health=1..}] run kill @s
+
+# 沙利叶二阶段黑球/暗影：不进入通用技能遍历，尖刺仍使用原fang_auto。
+execute if entity @s[tag=AzrSarielPhase2Entity,tag=!AzrSarielPhase2Fang] if score stage Azr_system matches 121 at @s run function skyblock:azr/assets/mobs/skill/boss6_sariel/phase2_entities
+execute if entity @s[tag=AzrSarielPhase2Entity] unless score stage Azr_system matches 121 run kill @s

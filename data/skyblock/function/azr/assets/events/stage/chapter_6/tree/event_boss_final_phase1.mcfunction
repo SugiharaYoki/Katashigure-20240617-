@@ -71,3 +71,6 @@ execute if score @s rng1 matches 296 run particle minecraft:end_rod -79568.50 16
 execute if score @s rng1 matches 296 run particle minecraft:pale_oak_leaves -79568.50 164.88 -12.52 2 1 2 0.03 90
 
 execute if score @s rng1 matches 999 run scoreboard players set @s rng1 990
+# 开战后本体死亡/消失，使用同一个事件实体进入二阶段；不依赖Boss死亡动画时的分数。
+execute if score stage Azr_system matches 120 if score @s rng1 matches 296.. positioned -79571 164 -13 unless entity @n[type=mannequin,tag=AzrielNPC_sariel,distance=..100] run scoreboard players set @s rng1 1001
+execute if score @s rng1 matches 1001 run scoreboard players set stage Azr_system 121
