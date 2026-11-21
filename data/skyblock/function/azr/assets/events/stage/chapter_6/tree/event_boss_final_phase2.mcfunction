@@ -58,3 +58,21 @@ execute if score @s rng1 matches 1003.. if score @s rng5 matches 0 positioned -7
 execute unless entity @s[tag=AzrSarielPhase2Cleared] if score @s rng2 matches 1 if score @s rng3 matches 1 if score @s rng4 matches 1 if score @s rng5 matches 1 run fill -79549 14 -24 -79582 14 9 minecraft:air
 execute unless entity @s[tag=AzrSarielPhase2Cleared] if score @s rng2 matches 1 if score @s rng3 matches 1 if score @s rng4 matches 1 if score @s rng5 matches 1 positioned -79566 15 -7 run kill @e[tag=AzrSarielPhase2Entity,distance=..100]
 execute unless entity @s[tag=AzrSarielPhase2Cleared] if score @s rng2 matches 1 if score @s rng3 matches 1 if score @s rng4 matches 1 if score @s rng5 matches 1 run tag @s add AzrSarielPhase2Cleared
+
+
+
+
+
+
+
+#每打掉一个黑球，播放一句下面的对话（按照顺序），然后在4.5秒后再播放一次（如果在这期间下一个黑球被打破，则直接播放后面的两句）：
+tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“如果你能听见我的声音，无需恐慌。”",color:"white"}]
+tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“这时候，我应该已经死了。足够幸运，我能讲我的话语藏在水中。”",color:"white"}]
+
+tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“我们从未聊过有关你父母的事情。”",color:"white"}]
+tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“过早地聊这些，可能会影响你的决心。但现在，已经没问题了。”",color:"white"}]
+
+tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“曾经养大你的父母？”",color:"white"}]
+tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“不……这次我要聊的，是你的亲身父母。”",color:"white"}]
+
+
