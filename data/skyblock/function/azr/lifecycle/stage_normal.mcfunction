@@ -37,7 +37,7 @@ execute if score stage Azr_system matches 91..109 if entity @a[x=-79690,y=-25,z=
 
 #【第六章】
 execute if score stage Azr_system matches 100..113 run function skyblock:azr/assets/events/stage/chapter_6/area1_remains
-execute if score stage Azr_system matches 113.. run function skyblock:azr/assets/events/stage/chapter_6/area1_tree
+execute if score stage Azr_system matches 113..200 run function skyblock:azr/assets/events/stage/chapter_6/area1_tree
 
 #-79695 -57 73
 

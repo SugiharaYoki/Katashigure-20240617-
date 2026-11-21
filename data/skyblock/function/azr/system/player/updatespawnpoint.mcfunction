@@ -16,7 +16,7 @@ effect give @s instant_health 1 0 true
 execute if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] run tag @s add transportation_pass
 execute if score @s Azr_skillPoints matches 53.. run tag @s add transportation_pass
 
-execute if entity @s[tag=transportation_pass] if entity @s[tag=!azrPlayer_respawnanchor_standingabove] unless score stage Azr_system matches 101 unless score stage Azr_system matches 113 run function skyblock:azr/system/shop/reader_transportation
+execute if entity @s[tag=transportation_pass] if entity @s[tag=!azrPlayer_respawnanchor_standingabove] unless score stage Azr_system matches 101 unless score stage Azr_system matches 113..120 run function skyblock:azr/system/shop/reader_transportation
 
 tag @s remove transportation_pass
 
