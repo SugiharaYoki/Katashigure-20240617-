@@ -104,6 +104,6 @@ execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 184 ru
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 200 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“这就是我所持有的……‘索命连击’的来源？”",color:"white"}]
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 212 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“我原来一直是被他们所爱着的啊……我被自己的亲生父母祝福着。”",color:"white"}]
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 228 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“谢谢你……告诉我这些。”",color:"white"}]
-execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 240 run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“捎带着你父母的祝福，以及我的祝福，回到战斗中吧。”",color:"white"}]
-execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 252 run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“你将代表所有生灵与亡魂的荣耀——继续活下去。”",color:"white"}]
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 240 run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“捎带着你父母的祝福，以及我的祝福，回到属于你的战斗中吧。”",color:"white"}]
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 252 run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“你将成为所有生灵与亡魂的荣耀——而这，是你亲自选择的活法。”",color:"white"}]
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 252 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..67}] Azr_skillPoints 68
