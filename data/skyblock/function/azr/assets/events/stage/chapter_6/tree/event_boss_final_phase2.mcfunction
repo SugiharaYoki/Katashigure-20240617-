@@ -89,6 +89,9 @@ execute if score @s rng8 matches 0 run scoreboard players set @s rng8 -1
 # 地板打开6秒后开场；首句播完后，任一参战玩家靠近佛卡洛即可跳到祝福。
 # 使用at保留事件实体为@s，所有玩家共用同一段剧情计时。
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 25..239 at @a[tag=azrPlayer] if entity @n[tag=AzrielNPC_focalor,distance=..1.5] run scoreboard players set @s rng9 240
+
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 24 positioned -79566 6 -7 run function skyblock:azr/assets/mobs/skill/boss5_focalor/summon
+
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 24 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“魔神佛卡洛……”",color:"white"}]
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 32 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“你知道有关我父母的事情？什么叫他们参加过神庭挑战？！”",color:"white"}]
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 48 run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“我知道你有很多想问我的……”",color:"white"}]
@@ -106,4 +109,6 @@ execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 212 ru
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 228 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“谢谢你……告诉我这些。”",color:"white"}]
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 240 run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“捎带着你父母的祝福，以及我的祝福，回到属于你的战斗中吧。”",color:"white"}]
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 252 run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“你将成为所有生灵与亡魂的荣耀——而这，是你亲自选择的活法。”",color:"white"}]
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 252 as @n[tag=AzrielNPC_focalor] at @s run tp @s ~ ~-100 ~
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 253 as @n[tag=AzrielNPC_focalor] at @s run kill @s
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 252 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..67}] Azr_skillPoints 68
