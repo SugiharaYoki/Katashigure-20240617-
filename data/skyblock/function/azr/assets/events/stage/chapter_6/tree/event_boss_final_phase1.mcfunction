@@ -38,17 +38,17 @@ execute if score @s rng1 matches 120 run tellraw @a[tag=azrShowDialog] [{text:"�
 
 execute if score @s rng1 matches 134 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“……”",color:"white"}]
 execute if score @s rng1 matches 140 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“或许如此。或许我在杀死你之后，就能够为所有的生灵带去幸福。”",color:"white"}]
-execute if score @s rng1 matches 156 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“但我接受不了，你居然说我为这世上的生者带去了幸运？”",color:"white"}]
-execute if score @s rng1 matches 172 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“我那可憎、陷于虚缈的父母幸运在哪里？！”",color:"white"}]
-execute if score @s rng1 matches 186 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“我自私自利、受贪婪所困的老师幸运在哪里？！”",color:"white"}]
-execute if score @s rng1 matches 199 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“欺凌我、被愤怒所操纵的那些混蛋幸运在哪里？！”",color:"white"}]
-execute if score @s rng1 matches 213 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“……为了我变得如此悲伤的罗温，他又幸运在哪里？”",color:"white"}]
+execute if score @s rng1 matches 156 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“但我接受不了，你居然说我曾为这世上的生者带去了幸运？”",color:"white"}]
+execute if score @s rng1 matches 172 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“我觉得我那可憎、陷于虚缈的父母因我获得了幸运。”",color:"white"}]
+execute if score @s rng1 matches 186 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“我自私自利、受贪婪所困的老师也必然是不幸的。”",color:"white"}]
+execute if score @s rng1 matches 199 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“欺凌我、被愤怒所操纵的那些混蛋，我更是希望他们终身与不幸为伴。”",color:"white"}]
+execute if score @s rng1 matches 213 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“……况且，为了我变得如此悲伤的罗温，他又幸运在哪里？”",color:"white"}]
 
-execute if score @s rng1 matches 227 run tellraw @a[tag=azrShowDialog] [{text:"沙利叶：",color:"#c7eeb9",bold:1b},{bold: false,text:"\n“我从来都没有看错你。我知道，既然是这样的你……”",color:"white"}]
+execute if score @s rng1 matches 227 run tellraw @a[tag=azrShowDialog] [{text:"沙利叶：",color:"#c7eeb9",bold:1b},{bold: false,text:"\n“你恨着许多人、爱着许多人。但恨不代表给予不幸，爱也并非永远是在给予幸运。”",color:"white"}]
 execute if score @s rng1 matches 240 run tellraw @a[tag=azrShowDialog] [{text:"沙利叶：",color:"#c7eeb9",bold:1b},{bold: false,text:"\n“我最喜欢的爱理莎，你难道没有发现你是多么傲慢的存在吗？这世界的生灵与亡魂是天平的两端，你真的认为你有资格成为天平本身吗？”",color:"white"}]
 execute if score @s rng1 matches 260 run tellraw @a[tag=azrShowDialog] [{text:"沙利叶：",color:"#c7eeb9",bold:1b},{bold: false,text:"\n“若你想要成为‘节制’的化身，那就在此——杀死我，向我证明你更有资格接近神。”",color:"white"}]
-execute if score @s rng1 matches 278 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“向你发起决斗是为了这世界，但为了这世界杀死你却是我选择的活法。”",color:"white"}]
-execute if score @s rng1 matches 294 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“你这视过去为尘埃的独裁者，溺死在你强加于众生的展望中吧！”",color:"white"}]
+execute if score @s rng1 matches 278 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“不论是我爱的罗温，还是我所恨的过去，我都将抛却他们独自向前。”",color:"white"}]
+execute if score @s rng1 matches 294 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“这是我选择的道路。你这视过去为尘埃的独裁者，溺死在你强加于众生的展望中吧！”",color:"white"}]
 
 execute if score @s rng1 matches 294 as @n[tag=AzrielNPC_sariel,distance=..50,type=mannequin] at @s run data modify entity @s Invulnerable set value 0b
 
