@@ -89,8 +89,10 @@ execute if score stage_main_thread AzrTimerStack matches 135 positioned -79931 3
 execute if score stage_main_thread AzrTimerStack matches 135 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run playsound ambient.underwater.loop.additions.ultra_rare block @a -79931 -43 122 50 0.7
 execute if score stage_main_thread AzrTimerStack matches 135 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run playsound ambient.underwater.loop.additions.ultra_rare block @a -79931 -43 122 50 0.7
 execute if score stage_main_thread AzrTimerStack matches 135 positioned -79931 38 122 as @a[tag=azrPlayer,distance=0..4.7] at @s run tp @s ~ ~-80 ~
-execute if score stage_main_thread AzrTimerStack matches 139 positioned -79931 -43 122 as @a[tag=azrPlayer,distance=0..10.7] at @s run tp @s ~ ~80 ~
+execute if score stage_main_thread AzrTimerStack matches 140 positioned -79931 -43 122 as @a[tag=azrPlayer,distance=0..10.7] at @s run tp @s ~ ~80 ~
 
+execute if score stage_main_thread AzrTimerStack matches 137 run title @a[tag=azrShowDialog] actionbar {text:"我……认识你……",color:"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 137 run tellraw @a[tag=azrShowDialog] {text:"我……认识你……",color:"aqua"}
 
 
 execute if score stage_main_thread AzrTimerStack matches 136 positioned -79922 38 122 run function skyblock:azr/assets/mobs/skeleton_melee

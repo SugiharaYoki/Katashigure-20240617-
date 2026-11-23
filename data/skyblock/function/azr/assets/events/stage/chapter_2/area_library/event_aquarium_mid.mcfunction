@@ -15,3 +15,8 @@ execute if entity @s[scores={rng1=48}] positioned -79840 43 197 run summon marke
 execute if entity @s[scores={rng1=58}] positioned -79842 43 197 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_pillager","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if entity @s[scores={rng1=58}] positioned -79842 43 197 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_axe","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if entity @s[scores={rng1=58}] positioned -79842 43 197 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_pillager","AzrielMob_summon_delay","AzrielMob_level_1"]}
+
+execute if entity @s[scores={rng1=2}] run title @a[tag=azrShowDialog] actionbar {text:"做好准备……危险的敌人，要来了……",color:"aqua"}
+execute if entity @s[scores={rng1=2}] run tellraw @a[tag=azrShowDialog] {text:"做好准备……危险的敌人，要来了……",color:"aqua"}
+execute if entity @s[scores={rng1=42}] run title @a[tag=azrShowDialog] actionbar {text:"只可惜，我们不适合见面……",color:"aqua"}
+execute if entity @s[scores={rng1=42}] run tellraw @a[tag=azrShowDialog] {text:"只可惜，我们不适合见面……",color:"aqua"}
