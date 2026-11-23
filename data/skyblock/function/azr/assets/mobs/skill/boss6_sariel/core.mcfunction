@@ -43,7 +43,7 @@ execute if score @s rng1 matches 1 if score @s rng2 matches 3 at @s if entity @n
 execute if score @s rng1 matches 1 run scoreboard players set @s rng3 2
 execute if score @s rng1 matches 1 if score @s rng19 matches 1000.. run scoreboard players set @s rng3 3
 execute if score @s rng1 matches 1 if score @s rng19 matches 2000.. run scoreboard players set @s rng3 4
-execute if score @s rng1 matches 1 run item replace entity @s weapon.mainhand with minecraft:diamond_sword
+execute if score @s rng1 matches 1 run item replace entity @s weapon.mainhand with minecraft:iron_sword
 execute if score @s rng1 matches 1 at @s run kill @e[type=item_display,tag=AzrSarielSword,distance=..100]
 
 # A：10/34/58/66tick出刀；每刀后4tick开始跳跃。
@@ -630,3 +630,23 @@ execute if score @s rng13 matches 1 run scoreboard players set @s rng10 1
 execute if score @s rng13 matches 1 run scoreboard players set @s rng11 0
 execute if score @s rng13 matches 1 run scoreboard players set @s rng1 1
 execute if score @s rng13 matches 1 run scoreboard players set @s rng16 200
+
+
+
+
+沙利叶低于300血后：
+背后逐渐展开block display与particle结合（也可以仅是两者其一）的白色翅膀。
+要随时随着沙利叶本身转向。
+
+之后，沙利叶还会多出一个比招式C概率更低的招式D：
+停在原地0.8秒，上下煽动一下翅膀，同时在玩家头上制造一个5格直径的end_rod圆环
+end_rod圆环会在1秒后化作soul particle下砸至地面（地面y=164）并且对圆环上的玩家造成16点mace伤害与破灭效果 如果没接触到圆环本身，则不会受伤。
+下砸到地面的瞬间会发出类似玩家down_kick的音效和gust particle
+
+
+当沙利叶血量低于50后：
+tellraw @a[tag=azrShowDialog] [{text:"沙利叶：",color:"#c7eeb9",bold:1b},{bold: false,text:"\n“只可惜，你的敌人并非只有我。”",color:"white"}]
+等待3秒
+tellraw @a[tag=azrShowDialog] [{text:"沙利叶：",color:"#c7eeb9",bold:1b},{bold: false,text:"\n“困死于你的执念中吧，人类的亡魂。”",color:"white"}]
+等待3秒
+沙利叶kill @s

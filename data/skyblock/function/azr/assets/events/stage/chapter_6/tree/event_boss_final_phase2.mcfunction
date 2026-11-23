@@ -91,6 +91,7 @@ execute if score @s rng8 matches 0 run scoreboard players set @s rng8 -1
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 25..239 at @a[tag=azrPlayer] if entity @n[tag=AzrielNPC_focalor,distance=..1.5] run scoreboard players set @s rng9 240
 
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 24 positioned -79566 6 -7 run function skyblock:azr/assets/mobs/skill/boss5_focalor/summon
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 24.. positioned -79566 6 -7 as @n[tag=AzrielNPC_focalor,distance=..10.5] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 24 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“魔神佛卡洛……”",color:"white"}]
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 32 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“你知道有关我父母的事情？什么叫他们参加过神庭挑战？！”",color:"white"}]
