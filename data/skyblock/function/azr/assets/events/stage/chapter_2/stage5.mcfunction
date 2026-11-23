@@ -75,9 +75,11 @@ execute if score stage_main_thread AzrTimerStack matches 100 run scoreboard play
 execute if score stage_main_thread AzrTimerStack matches 119 run scoreboard players set #is_stopped:stage_main_thread AzrTimerStack 0
 execute if score stage_main_thread AzrTimerStack matches 119 run title @a[tag=azrShowDialog] actionbar {text:"Stage 5 - Wave 2",color:"red"}
 
+execute if score stage_main_thread AzrTimerStack matches 128 run title @a[tag=azrShowDialog] actionbar {text:"到这水中来……让我仔细端详你……",color:"aqua"}
+execute if score stage_main_thread AzrTimerStack matches 128 run tellraw @a[tag=azrShowDialog] {text:"到这水中来……让我仔细端详你……",color:"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 129 run particle minecraft:splash -79931 38 122 0.33 0 0.33 0.7 50
 execute if score stage_main_thread AzrTimerStack matches 129 run playsound minecraft:entity.player.splash block @a -79931 38 122 2 0.7
-execute if score stage_main_thread AzrTimerStack matches 129..131 run particle minecraft:bubble_pop -79931 38 122 0.2 0 0.2 0.0 1
+execute if score stage_main_thread AzrTimerStack matches 129..131 run particle minecraft:bubble_pop -79931 38 122 0.2 0 0.2 0.0 2
 
 execute if score stage_main_thread AzrTimerStack matches 130..131 run scoreboard players set stage_main_thread AzrTimerStack 130
 execute if score stage_main_thread AzrTimerStack matches 130..131 positioned -79931 38 122 if entity @a[tag=azrPlayer,distance=0..0.7] run scoreboard players set stage_main_thread AzrTimerStack 132
@@ -137,6 +139,7 @@ execute if score stage_main_thread AzrTimerStack matches 204 positioned -79836 4
 execute if score stage_main_thread AzrTimerStack matches 204 positioned -79832 2 125 run forceload add ~ ~
 execute if score stage_main_thread AzrTimerStack matches 204 positioned -79832 2 125 run function skyblock:azr/assets/mobs/guardian
 
+execute if score stage_main_thread AzrTimerStack matches 204 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（刚才那是……幻听？幻觉？为什么我好像到了水下？）",color:"white"}]
 
 
 #execute if score stage_main_thread AzrTimerStack matches 204 run tellraw @a[scores={Azr_skillPoints=..5}] [{text:"永久升级：",color:"light_purple",bold:1b},{text:"开始新游戏时，绿宝石数量 +5",color:"white",bold: false}]
