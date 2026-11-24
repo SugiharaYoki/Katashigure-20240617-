@@ -22,9 +22,9 @@ setblock -79764 105 -2067 minecraft:air
 setblock -79436 30 -404 minecraft:anvil[facing=east]
 
 setblock -79388 24 -400 air
-setblock -79388 24 -400 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
+setblock -79388 24 -400 decorated_pot{sherds:{back:"prize_pottery_sherd",left:"prize_pottery_sherd",right:"prize_pottery_sherd",front:"prize_pottery_sherd"},item:{count: 1, id:"minecraft:flint"}}
 setblock -79396 26 -384 air
-setblock -79396 26 -384 decorated_pot{sherds:["prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd","prize_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
+setblock -79396 26 -384 decorated_pot{sherds:{back:"prize_pottery_sherd",left:"prize_pottery_sherd",right:"prize_pottery_sherd",front:"prize_pottery_sherd"},item:{count: 1, id:"minecraft:flint"}}
 
 execute if block -79370 27 -373 air run fill -79370 27 -373 -79372 26 -373 minecraft:iron_bars
 
@@ -403,12 +403,12 @@ item replace block -79854 48 176 container.15 with book[lore=[{text:"……我�
 
 
   #物品框
-summon glow_item_frame -79855 44 203 {Item:{id:"minecraft:resin_clump",count:1b},Facing:2}
-summon glow_item_frame -79849 44 193 {Item:{id:"minecraft:carrot",count:1b},Facing:1}
-summon glow_item_frame -79864 44 186 {Item:{id:"minecraft:resin_clump",count:1b},Facing:1}
-summon glow_item_frame -79846 49 184 {Item:{id:"minecraft:carrot",count:1b},Facing:1}
-summon glow_item_frame -79864 49 192 {Item:{id:"minecraft:resin_clump",count:1b},Facing:1}
-summon glow_item_frame -79864 49 178 {Item:{id:"minecraft:golden_carrot",count:1b},Facing:1}
+summon glow_item_frame -79855 44 203 {Pos:[-79854.5d,44.0d,203.5d],block_pos:[I;-79855,44,203],Item:{id:"minecraft:resin_clump",count:1b},Facing:2}
+summon glow_item_frame -79849 44 193 {Pos:[-79848.5d,44.0d,193.5d],block_pos:[I;-79849,44,193],Item:{id:"minecraft:carrot",count:1b},Facing:1}
+summon glow_item_frame -79864 44 186 {Pos:[-79863.5d,44.0d,186.5d],block_pos:[I;-79864,44,186],Item:{id:"minecraft:resin_clump",count:1b},Facing:1}
+summon glow_item_frame -79846 49 184 {Pos:[-79845.5d,49.0d,184.5d],block_pos:[I;-79846,49,184],Item:{id:"minecraft:carrot",count:1b},Facing:1}
+summon glow_item_frame -79864 49 192 {Pos:[-79863.5d,49.0d,192.5d],block_pos:[I;-79864,49,192],Item:{id:"minecraft:resin_clump",count:1b},Facing:1}
+summon glow_item_frame -79864 49 178 {Pos:[-79863.5d,49.0d,178.5d],block_pos:[I;-79864,49,178],Item:{id:"minecraft:golden_carrot",count:1b},Facing:1}
 
   #水族馆
 setblock -79756 42 197 chest[facing=west]{Inventory:[]}
@@ -838,12 +838,12 @@ item replace block -79744 2 -293 container.14 with gold_nugget 1
   #我们并不是很想老实回答。
 
 #展示区
-setblock -79759 17 -283 minecraft:decorated_pot{sherds:["sheaf_pottery_sherd","sheaf_pottery_sherd","sheaf_pottery_sherd","sheaf_pottery_sherd"],item:{count: 1, id:"minecraft:gold_nugget"}}
-setblock -79757 17 -283 minecraft:decorated_pot{sherds:["plenty_pottery_sherd","plenty_pottery_sherd","plenty_pottery_sherd","plenty_pottery_sherd"],item:{count: 1, id:"minecraft:gold_nugget"}}
-setblock -79756 17 -283 minecraft:decorated_pot{sherds:["explorer_pottery_sherd","explorer_pottery_sherd","explorer_pottery_sherd","explorer_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
-summon item_frame -79760 19 -277 {Item:{id:"minecraft:flint",count:1b},Facing:5}
-summon item_frame -79760 19 -279 {Item:{id:"minecraft:iron_ingot",count:1b},Facing:5}
-summon item_frame -79760 19 -281 {Item:{id:"minecraft:gunpowder",count:1b},Facing:5}
+setblock -79759 17 -283 minecraft:decorated_pot{sherds:{back:"sheaf_pottery_sherd",left:"sheaf_pottery_sherd",right:"sheaf_pottery_sherd",front:"sheaf_pottery_sherd"},item:{count: 1, id:"minecraft:gold_nugget"}}
+setblock -79757 17 -283 minecraft:decorated_pot{sherds:{back:"plenty_pottery_sherd",left:"plenty_pottery_sherd",right:"plenty_pottery_sherd",front:"plenty_pottery_sherd"},item:{count: 1, id:"minecraft:gold_nugget"}}
+setblock -79756 17 -283 minecraft:decorated_pot{sherds:{back:"explorer_pottery_sherd",left:"explorer_pottery_sherd",right:"explorer_pottery_sherd",front:"explorer_pottery_sherd"},item:{count: 1, id:"minecraft:flint"}}
+summon item_frame -79760 19 -277 {Pos:[-79759.5d,19.0d,-276.5d],block_pos:[I;-79760,19,-277],Item:{id:"minecraft:flint",count:1b},Facing:5}
+summon item_frame -79760 19 -279 {Pos:[-79759.5d,19.0d,-278.5d],block_pos:[I;-79760,19,-279],Item:{id:"minecraft:iron_ingot",count:1b},Facing:5}
+summon item_frame -79760 19 -281 {Pos:[-79759.5d,19.0d,-280.5d],block_pos:[I;-79760,19,-281],Item:{id:"minecraft:gunpowder",count:1b},Facing:5}
 fill -79735 16 -280 -79735 16 -278 anvil[facing=east]
 fill -79739 17 -275 -79742 17 -275 minecraft:potted_crimson_fungus
 
@@ -901,7 +901,7 @@ item replace block -79725 26 -428 container.12 with gold_nugget 2
 item replace block -79725 26 -428 container.14 with resin_clump 1
 
 #stage jahannam
-setblock -79663 33 -434 minecraft:decorated_pot{sherds:["burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd","burn_pottery_sherd"],item:{count: 3, id:"minecraft:gold_nugget"}}
+setblock -79663 33 -434 minecraft:decorated_pot{sherds:{back:"burn_pottery_sherd",left:"burn_pottery_sherd",right:"burn_pottery_sherd",front:"burn_pottery_sherd"},item:{count: 3, id:"minecraft:gold_nugget"}}
 fill -79661 35 -416 -79665 32 -416 air replace minecraft:red_stained_glass
 
 #大树林
@@ -910,15 +910,15 @@ setblock -79804 56 -465 anvil[facing=north]
 
 #战场民房
 setblock -79738 30 -494 minecraft:potted_crimson_fungus
-setblock -79735 28 -489 minecraft:decorated_pot{sherds:["sheaf_pottery_sherd","sheaf_pottery_sherd","sheaf_pottery_sherd","sheaf_pottery_sherd"],item:{count: 2, id:"minecraft:gold_nugget"}}
+setblock -79735 28 -489 minecraft:decorated_pot{sherds:{back:"sheaf_pottery_sherd",left:"sheaf_pottery_sherd",right:"sheaf_pottery_sherd",front:"sheaf_pottery_sherd"},item:{count: 2, id:"minecraft:gold_nugget"}}
 setblock -79736 28 -496 redstone_block
 setblock -79736 28 -496 air
 
 
 
 #亨利快乐仓库
-setblock -79737 42 -446 minecraft:decorated_pot{sherds:["sheaf_pottery_sherd","sheaf_pottery_sherd","sheaf_pottery_sherd","sheaf_pottery_sherd"],item:{count: 2, id:"minecraft:gold_nugget"}}
-setblock -79737 42 -447 minecraft:decorated_pot{sherds:["explorer_pottery_sherd","explorer_pottery_sherd","explorer_pottery_sherd","explorer_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
+setblock -79737 42 -446 minecraft:decorated_pot{sherds:{back:"sheaf_pottery_sherd",left:"sheaf_pottery_sherd",right:"sheaf_pottery_sherd",front:"sheaf_pottery_sherd"},item:{count: 2, id:"minecraft:gold_nugget"}}
+setblock -79737 42 -447 minecraft:decorated_pot{sherds:{back:"explorer_pottery_sherd",left:"explorer_pottery_sherd",right:"explorer_pottery_sherd",front:"explorer_pottery_sherd"},item:{count: 1, id:"minecraft:flint"}}
 setblock -79737 42 -448 minecraft:lava_cauldron
 setblock -79741 43 -446 minecraft:brewing_stand
 
@@ -984,7 +984,7 @@ setblock -79337 23 -415 minecraft:obsidian
 
 execute unless block -79392 26 -349 iron_bars run fill -79392 26 -349 -79394 27 -349 iron_bars
 
-setblock -79370 24 -407 minecraft:decorated_pot{sherds:["explorer_pottery_sherd","explorer_pottery_sherd","explorer_pottery_sherd","explorer_pottery_sherd"],item:{count: 1, id:"minecraft:flint"}}
+setblock -79370 24 -407 minecraft:decorated_pot{sherds:{back:"explorer_pottery_sherd",left:"explorer_pottery_sherd",right:"explorer_pottery_sherd",front:"explorer_pottery_sherd"},item:{count: 1, id:"minecraft:flint"}}
 
 #boss4
 clone -79514 5 -347 -79476 6 -309 -79514 14 -347
