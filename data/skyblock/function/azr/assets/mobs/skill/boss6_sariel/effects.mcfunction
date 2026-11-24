@@ -543,3 +543,100 @@ execute if entity @s[tag=AzrSarielFlowerOrb] if score @s rng1 < @s rng13 if scor
 execute if entity @s[tag=AzrSarielFlowerOrb] if score @s rng1 < @s rng13 if score @s rng12 matches ..0 if score @s rng11 matches 12.. at @s run function skyblock:azr/assets/mobs/skill/boss6_sariel/spawn with storage skyblock:sariel spawn
 execute if entity @s[tag=AzrSarielFlowerOrb] if score @s rng1 < @s rng13 if score @s rng12 matches ..0 run scoreboard players set @s rng12 16
 execute if entity @s[tag=AzrSarielFlowerOrb] if score @s rng1 >= @s rng13 run kill @s
+
+# D圆环：直径5格，锁定施放位置；20tick预警后每tick下落1格，到y=164停止。
+# 伤害使用环边的水平距离+扫过的竖直区间判定，中心圆盘不会受伤。
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run tp @s ~ ~-1 ~
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. store result score @s rng4 run data get entity @s Pos[1] 100
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. if score @s rng4 matches ..16400 at @s run tp @s ~ 164 ~
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~2.5000 ~ ~0.0000 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~2.5000 ~ ~0.0000 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~2.4692 ~ ~0.3911 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~2.4692 ~ ~0.3911 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~2.3776 ~ ~0.7725 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~2.3776 ~ ~0.7725 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~2.2275 ~ ~1.1350 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~2.2275 ~ ~1.1350 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~2.0225 ~ ~1.4695 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~2.0225 ~ ~1.4695 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~1.7678 ~ ~1.7678 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~1.7678 ~ ~1.7678 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~1.4695 ~ ~2.0225 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~1.4695 ~ ~2.0225 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~1.1350 ~ ~2.2275 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~1.1350 ~ ~2.2275 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~0.7725 ~ ~2.3776 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~0.7725 ~ ~2.3776 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~0.3911 ~ ~2.4692 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~0.3911 ~ ~2.4692 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~0.0000 ~ ~2.5000 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~0.0000 ~ ~2.5000 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~-0.3911 ~ ~2.4692 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~-0.3911 ~ ~2.4692 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~-0.7725 ~ ~2.3776 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~-0.7725 ~ ~2.3776 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~-1.1350 ~ ~2.2275 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~-1.1350 ~ ~2.2275 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~-1.4695 ~ ~2.0225 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~-1.4695 ~ ~2.0225 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~-1.7678 ~ ~1.7678 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~-1.7678 ~ ~1.7678 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~-2.0225 ~ ~1.4695 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~-2.0225 ~ ~1.4695 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~-2.2275 ~ ~1.1350 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~-2.2275 ~ ~1.1350 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~-2.3776 ~ ~0.7725 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~-2.3776 ~ ~0.7725 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~-2.4692 ~ ~0.3911 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~-2.4692 ~ ~0.3911 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~-2.5000 ~ ~0.0000 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~-2.5000 ~ ~0.0000 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~-2.4692 ~ ~-0.3911 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~-2.4692 ~ ~-0.3911 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~-2.3776 ~ ~-0.7725 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~-2.3776 ~ ~-0.7725 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~-2.2275 ~ ~-1.1350 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~-2.2275 ~ ~-1.1350 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~-2.0225 ~ ~-1.4695 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~-2.0225 ~ ~-1.4695 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~-1.7678 ~ ~-1.7678 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~-1.7678 ~ ~-1.7678 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~-1.4695 ~ ~-2.0225 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~-1.4695 ~ ~-2.0225 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~-1.1350 ~ ~-2.2275 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~-1.1350 ~ ~-2.2275 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~-0.7725 ~ ~-2.3776 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~-0.7725 ~ ~-2.3776 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~-0.3911 ~ ~-2.4692 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~-0.3911 ~ ~-2.4692 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~-0.0000 ~ ~-2.5000 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~-0.0000 ~ ~-2.5000 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~0.3911 ~ ~-2.4692 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~0.3911 ~ ~-2.4692 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~0.7725 ~ ~-2.3776 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~0.7725 ~ ~-2.3776 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~1.1350 ~ ~-2.2275 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~1.1350 ~ ~-2.2275 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~1.4695 ~ ~-2.0225 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~1.4695 ~ ~-2.0225 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~1.7678 ~ ~-1.7678 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~1.7678 ~ ~-1.7678 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~2.0225 ~ ~-1.4695 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~2.0225 ~ ~-1.4695 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~2.2275 ~ ~-1.1350 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~2.2275 ~ ~-1.1350 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~2.3776 ~ ~-0.7725 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~2.3776 ~ ~-0.7725 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 1..20 if score @s rng9 matches 0 at @s run particle minecraft:end_rod ~2.4692 ~ ~-0.3911 0.015 0.015 0.015 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s run particle minecraft:soul ~2.4692 ~ ~-0.3911 0.03 0.03 0.03 0 1 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. store result score #SarielRingX rng20 run data get entity @s Pos[0] 100
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. store result score #SarielRingZ rng20 run data get entity @s Pos[2] 100
+# 17是圆环的伤害分支编号：实际伤害仍为16，但类型为minecraft:mace_smash。
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. run scoreboard players set #SarielDamage rng20 17
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. at @s positioned ~-3.1 ~-0.2 ~-3.1 as @a[tag=azrPlayer,dx=5.2,dy=0.4,dz=5.2] run function skyblock:azr/assets/mobs/skill/boss6_sariel/hit
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. if score @s rng4 matches ..16400 at @s run playsound minecraft:item.mace.smash_ground hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 1.5 1.2
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. if score @s rng4 matches ..16400 at @s run playsound minecraft:item.mace.smash_ground_heavy hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 1.5 1.3
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. if score @s rng4 matches ..16400 at @s run particle minecraft:gust ~ ~0.2 ~ 2.3 0.05 2.3 0 8 force @a[tag=azrPlayer,distance=..100]
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 21.. if score @s rng4 matches ..16400 run kill @s
+# 异常高度下也不会无限遗留marker。
+execute if entity @s[tag=AzrSarielDropRing] if score @s rng1 matches 160.. run kill @s

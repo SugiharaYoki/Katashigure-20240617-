@@ -18,23 +18,40 @@ execute if score @s rng16 matches 1.. run scoreboard players remove @s rng16 1
 data merge entity @s {NoGravity:1b,Motion:[0.0d,0.0d,0.0d]}
 execute store result score @s Health run data get entity @s Health
 execute store result bossbar azr:boss_hp_bar value run scoreboard players get @s Health
+# 新阶段：rng17=展翼进度(40tick)，rng18=粒子间隔，rng20=退场对白时间。
+scoreboard players add @s rng17 0
+scoreboard players add @s rng18 1
+execute if score @s rng18 matches 2.. run scoreboard players set @s rng18 0
+execute if score @s Health matches ..299 unless entity @s[tag=AzrSarielWings] unless entity @s[nbt={Health:0.0f}] run tag @s add AzrSarielWings
+execute if entity @s[tag=AzrSarielWings] if score @s rng17 matches ..39 run scoreboard players add @s rng17 1
+# 退场只触发一次；立即打断动作并清理在场攻击，六秒对白期间保持原位、无敌。
+# Health记分为整数；只在低血触发时排除真正死亡，保留0~1血的小数情况。
+execute if score @s Health matches ..49 unless entity @s[tag=AzrSarielEnding] unless entity @s[nbt={Health:0.0f}] run scoreboard players set @s rng20 0
+execute if score @s Health matches ..49 unless entity @s[tag=AzrSarielEnding] unless entity @s[nbt={Health:0.0f}] run tag @s add AzrSarielEnding
+execute if entity @s[tag=AzrSarielEnding] run scoreboard players add @s rng20 1
+execute if entity @s[tag=AzrSarielEnding] run scoreboard players set @s rng1 -99999
+execute if entity @s[tag=AzrSarielEnding] run scoreboard players set @s rng2 0
+execute if entity @s[tag=AzrSarielEnding] run scoreboard players set @s rng6 0
+execute if entity @s[tag=AzrSarielEnding] if score @s rng20 matches 1 run data merge entity @s {Invulnerable:1b}
+execute if entity @s[tag=AzrSarielEnding] if score @s rng20 matches 1 at @s run kill @e[tag=AzrSarielFx,distance=..100]
 # 无有效目标或本体死亡时取消当前动作，防止停在出刀帧重复释放。
 execute unless entity @p[tag=azrPlayer,distance=..100] run scoreboard players set @s rng1 0
 execute unless entity @p[tag=azrPlayer,distance=..100] run scoreboard players set @s rng6 0
 execute if score @s Health matches ..0 run scoreboard players set @s rng1 0
 execute if score @s Health matches ..0 run scoreboard players set @s rng6 0
-execute if score @s Health matches 1.. if entity @p[tag=azrPlayer,distance=..100] run scoreboard players add @s rng19 1
-execute if score @s Health matches 1.. if entity @p[tag=azrPlayer,distance=..100] run scoreboard players add @s rng1 1
-execute at @s rotated ~ 0 if score @s rng6 matches 0 unless entity @s[scores={rng2=3,rng1=1..40}] run tp @s ~ 164 ~ ~ 0
+execute unless entity @s[tag=AzrSarielEnding] if score @s Health matches 1.. if entity @p[tag=azrPlayer,distance=..100] run scoreboard players add @s rng19 1
+execute unless entity @s[tag=AzrSarielEnding] if score @s Health matches 1.. if entity @p[tag=azrPlayer,distance=..100] run scoreboard players add @s rng1 1
+execute unless entity @s[tag=AzrSarielEnding] at @s rotated ~ 0 if score @s rng6 matches 0 unless entity @s[scores={rng2=3,rng1=1..40}] run tp @s ~ 164 ~ ~ 0
 execute at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
 
 # 每轮重新选招；A的强化按本轮开始时的累计行动时间锁定。
-# 300血及以上仅A/B；低于300血时权重A:B:C=3:3:1。
+# 300血及以上仅A/B；低于300血时A:B:C:D=6:6:2:1，D使用rng2=5(4为C的替代激光)。
 execute if score @s rng1 matches 1 if score @s Health matches 300.. store result score @s rng2 run random value 1..2
-execute if score @s rng1 matches 1 if score @s Health matches ..299 store result score @s rng15 run random value 1..7
-execute if score @s rng1 matches 1 if score @s Health matches ..299 if score @s rng15 matches 1..3 run scoreboard players set @s rng2 1
-execute if score @s rng1 matches 1 if score @s Health matches ..299 if score @s rng15 matches 4..6 run scoreboard players set @s rng2 2
-execute if score @s rng1 matches 1 if score @s Health matches ..299 if score @s rng15 matches 7 run scoreboard players set @s rng2 3
+execute if score @s rng1 matches 1 if score @s Health matches ..299 store result score @s rng15 run random value 1..15
+execute if score @s rng1 matches 1 if score @s Health matches ..299 if score @s rng15 matches 1..6 run scoreboard players set @s rng2 1
+execute if score @s rng1 matches 1 if score @s Health matches ..299 if score @s rng15 matches 7..12 run scoreboard players set @s rng2 2
+execute if score @s rng1 matches 1 if score @s Health matches ..299 if score @s rng15 matches 13..14 run scoreboard players set @s rng2 3
+execute if score @s rng1 matches 1 if score @s Health matches ..299 if score @s rng15 matches 15 run scoreboard players set @s rng2 5
 # 首次进入300血以下后的下一次选招必定尝试C；同一实体只触发一次。
 execute if score @s rng1 matches 1 if score @s Health matches ..299 unless entity @s[tag=AzrSarielFirstC] run scoreboard players set @s rng2 3
 execute if score @s rng1 matches 1 if score @s Health matches ..299 run tag @s add AzrSarielFirstC
@@ -66,7 +83,7 @@ execute if score @s rng6 matches 5..6 at @s rotated ~ 0 positioned ^ ^0 ^0.4 if 
 execute if score @s rng6 matches 3..4 at @s rotated ~ 0 positioned ^ ^-0.18 ^0.4 if block ~ ~ ~ #skyblock:filament_passable if block ~ ~1 ~ #skyblock:filament_passable run tp @s ~ ~ ~
 execute if score @s rng6 matches 1..2 at @s rotated ~ 0 positioned ^ ^-0.36 ^0.4 if block ~ ~ ~ #skyblock:filament_passable if block ~ ~1 ~ #skyblock:filament_passable run tp @s ~ ~ ~
 execute if score @s rng6 matches 1.. run scoreboard players remove @s rng6 1
-execute if score @s rng6 matches 0 unless entity @s[scores={rng2=3,rng1=1..40}] at @s run tp @s ~ 164 ~
+execute unless entity @s[tag=AzrSarielEnding] if score @s rng6 matches 0 unless entity @s[scores={rng2=3,rng1=1..40}] at @s run tp @s ~ 164 ~
 execute at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
 
 # 斩痕中心在面前2格、y=165；线段位于与进攻方向垂直的竖直平面。
@@ -618,6 +635,12 @@ execute if score @s rng2 matches 3 if score @s rng1 matches 11..40 at @s run tp 
 execute if score @s rng2 matches 3 if score @s rng1 matches 40 at @s run tp @s ~ 164 ~
 execute if score @s rng2 matches 3 if score @s rng1 matches 40 run scoreboard players set @s rng1 -40
 
+# D：原地扇翼0.8秒；在最近玩家脚部上方4格锁定一个直径5格的圆环。
+# 圆环独立预警1秒后落下；本体动作结束后沿用2秒冷却。
+execute if score @s rng2 matches 5 if score @s rng1 matches 1 at @s at @p[tag=azrPlayer,distance=..100] positioned ~ ~4 ~ run summon marker ~ ~ ~ {Tags:["AzrSarielFx","AzrSarielDropRing"]}
+execute if score @s rng2 matches 5 if score @s rng1 matches 1 at @s run playsound minecraft:entity.phantom.flap hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 1.4 0.7
+execute if score @s rng2 matches 5 if score @s rng1 matches 17 run scoreboard players set @s rng1 -40
+
 # 仅在本tick刚进入冷却(-40)时抽一次20%；不会在整个冷却期间反复抽取。
 # 接招直接进入X状态；下一tick从第1帧叶环/end_rod预警开始，不重新随机选招或冲刺。
 scoreboard players set @s rng13 0
@@ -631,22 +654,17 @@ execute if score @s rng13 matches 1 run scoreboard players set @s rng11 0
 execute if score @s rng13 matches 1 run scoreboard players set @s rng1 1
 execute if score @s rng13 matches 1 run scoreboard players set @s rng16 200
 
+# 双翼共用一个绘制函数；每2tick更新，按本体水平朝向放在背后。D时同步上扬、下扇、回位。
+execute if entity @s[tag=AzrSarielWings] unless entity @s[scores={Health=..0},tag=!AzrSarielEnding] if score @s rng18 matches 0 unless entity @s[scores={rng2=5,rng1=1..16}] at @s rotated ~ 0 positioned ^ ^1.35 ^-0.35 rotated ~-90 -10 run function skyblock:azr/assets/mobs/skill/boss6_sariel/wings
+execute if entity @s[tag=AzrSarielWings] unless entity @s[scores={Health=..0},tag=!AzrSarielEnding] if score @s rng18 matches 0 if score @s rng2 matches 5 if score @s rng1 matches 1..4 at @s rotated ~ 0 positioned ^ ^1.35 ^-0.35 rotated ~-90 -30 run function skyblock:azr/assets/mobs/skill/boss6_sariel/wings
+execute if entity @s[tag=AzrSarielWings] unless entity @s[scores={Health=..0},tag=!AzrSarielEnding] if score @s rng18 matches 0 if score @s rng2 matches 5 if score @s rng1 matches 5..10 at @s rotated ~ 0 positioned ^ ^1.35 ^-0.35 rotated ~-90 25 run function skyblock:azr/assets/mobs/skill/boss6_sariel/wings
+execute if entity @s[tag=AzrSarielWings] unless entity @s[scores={Health=..0},tag=!AzrSarielEnding] if score @s rng18 matches 0 if score @s rng2 matches 5 if score @s rng1 matches 11..16 at @s rotated ~ 0 positioned ^ ^1.35 ^-0.35 rotated ~-90 -10 run function skyblock:azr/assets/mobs/skill/boss6_sariel/wings
+execute if entity @s[tag=AzrSarielWings] unless entity @s[scores={Health=..0},tag=!AzrSarielEnding] if score @s rng18 matches 0 unless entity @s[scores={rng2=5,rng1=1..16}] at @s rotated ~ 0 positioned ^ ^1.35 ^-0.35 rotated ~90 -10 run function skyblock:azr/assets/mobs/skill/boss6_sariel/wings
+execute if entity @s[tag=AzrSarielWings] unless entity @s[scores={Health=..0},tag=!AzrSarielEnding] if score @s rng18 matches 0 if score @s rng2 matches 5 if score @s rng1 matches 1..4 at @s rotated ~ 0 positioned ^ ^1.35 ^-0.35 rotated ~90 -30 run function skyblock:azr/assets/mobs/skill/boss6_sariel/wings
+execute if entity @s[tag=AzrSarielWings] unless entity @s[scores={Health=..0},tag=!AzrSarielEnding] if score @s rng18 matches 0 if score @s rng2 matches 5 if score @s rng1 matches 5..10 at @s rotated ~ 0 positioned ^ ^1.35 ^-0.35 rotated ~90 25 run function skyblock:azr/assets/mobs/skill/boss6_sariel/wings
+execute if entity @s[tag=AzrSarielWings] unless entity @s[scores={Health=..0},tag=!AzrSarielEnding] if score @s rng18 matches 0 if score @s rng2 matches 5 if score @s rng1 matches 11..16 at @s rotated ~ 0 positioned ^ ^1.35 ^-0.35 rotated ~90 -10 run function skyblock:azr/assets/mobs/skill/boss6_sariel/wings
 
-
-
-沙利叶低于300血后：
-背后逐渐展开block display与particle结合（也可以仅是两者其一）的白色翅膀。
-要随时随着沙利叶本身转向。
-
-之后，沙利叶还会多出一个比招式C概率更低的招式D：
-停在原地0.8秒，上下煽动一下翅膀，同时在玩家头上制造一个5格直径的end_rod圆环
-end_rod圆环会在1秒后化作soul particle下砸至地面（地面y=164）并且对圆环上的玩家造成16点mace伤害与破灭效果 如果没接触到圆环本身，则不会受伤。
-下砸到地面的瞬间会发出类似玩家down_kick的音效和gust particle
-
-
-当沙利叶血量低于50后：
-tellraw @a[tag=azrShowDialog] [{text:"沙利叶：",color:"#c7eeb9",bold:1b},{bold: false,text:"\n“只可惜，你的敌人并非只有我。”",color:"white"}]
-等待3秒
-tellraw @a[tag=azrShowDialog] [{text:"沙利叶：",color:"#c7eeb9",bold:1b},{bold: false,text:"\n“困死于你的执念中吧，人类的亡魂。”",color:"white"}]
-等待3秒
-沙利叶kill @s
+# 退场对白：触发当刻 → 3秒后第二句 → 再过3秒死亡，交给原事件进入第二阶段。
+execute if entity @s[tag=AzrSarielEnding] if score @s rng20 matches 1 run tellraw @a[tag=azrShowDialog] [{text:"沙利叶：",color:"#c7eeb9",bold:1b},{bold:false,text:"\n“只可惜，你的敌人并非只有我。”",color:"white"}]
+execute if entity @s[tag=AzrSarielEnding] if score @s rng20 matches 61 run tellraw @a[tag=azrShowDialog] [{text:"沙利叶：",color:"#c7eeb9",bold:1b},{bold:false,text:"\n“困死于你的执念中吧，人类的亡魂。”",color:"white"}]
+execute if entity @s[tag=AzrSarielEnding] if score @s rng20 matches 121.. run kill @s
