@@ -13,13 +13,22 @@ execute if score #SarielDamage rng20 matches 17 run scoreboard players operation
 execute if score #SarielDamage rng20 matches 17 if score #SarielRingDX rng20 matches 40000..90000 at @s store success score @s AzrSoulHit run damage @s 16 minecraft:mace_smash by @n[type=mannequin,tag=AzrielNPC_sariel,distance=..100]
 execute if score #SarielDamage rng20 matches 16 store success score @s AzrSoulHit run damage @s 16 minecraft:mob_attack by @n[type=mannequin,tag=AzrielNPC_sariel,distance=..100]
 execute if score #SarielDamage rng20 matches 8 store success score @s AzrSoulHit run damage @s 8 minecraft:mob_attack by @n[type=mannequin,tag=AzrielNPC_sariel,distance=..100]
-execute if score @s AzrSoulHit matches 1 if entity @s[tag=AzrSarielSoul] run tag @s add AzrSarielSoulConsume
-execute if entity @s[tag=AzrSarielSoulConsume] run scoreboard players set @s AzrSoulBurst 10
-execute if entity @s[tag=AzrSarielSoulConsume] run scoreboard players set @s AzrSoulMark 0
-execute if entity @s[tag=AzrSarielSoulConsume] run effect clear @s minecraft:unluck
+# 第三阶段爆炸沿用普通爆炸伤害，不额外赋予生灵破灭。
+execute if score #SarielDamage rng20 matches 18 store success score @s AzrSoulHit run damage @s 16 minecraft:explosion by @n[type=mannequin,tag=AzrielNPC_sariel,distance=..100]
+execute if score #SarielDamage rng20 matches 19 store success score @s AzrSoulHit run damage @s 8 minecraft:explosion by @n[type=mannequin,tag=AzrielNPC_sariel,distance=..100]
+execute if score stage Azr_system matches 122 if score @s AzrSoulHit matches 1 at @s as @n[type=mannequin,tag=AzrielNPC_sariel,distance=..100] if score @s AzrP3Cast = #SarielDamageCast rng20 run scoreboard players add @s AzrP3Hits 1
+execute if score stage Azr_system matches 122 if score @s AzrSoulHit matches 1 at @s as @e[type=marker,tag=AzrSarielP3CastTracker,distance=..100] if score @s AzrP3Cast = #SarielDamageCast rng20 run scoreboard players add @s rng2 1
+execute if score stage Azr_system matches 122 if score @s AzrSoulHit matches 1 at @s as @e[type=marker,tag=AzrSarielP3CastTracker,scores={rng2=4..,rng3=0},distance=..100] at @s run scoreboard players add @n[type=mannequin,tag=AzrielNPC_sariel,distance=..100] AzrP3Pending 10
+execute if score stage Azr_system matches 122 if score @s AzrSoulHit matches 1 at @s run scoreboard players set @e[type=marker,tag=AzrSarielP3CastTracker,scores={rng2=4..,rng3=0},distance=..100] rng3 1
+execute if score stage Azr_system matches 122 if score @s AzrSoulHit matches 1 at @s as @e[type=marker,tag=AzrSarielP3CastTracker,scores={rng2=6..,rng3=1},distance=..100] at @s run scoreboard players add @n[type=mannequin,tag=AzrielNPC_sariel,distance=..100] AzrP3Pending 10
+execute if score stage Azr_system matches 122 if score @s AzrSoulHit matches 1 at @s run scoreboard players set @e[type=marker,tag=AzrSarielP3CastTracker,scores={rng2=6..,rng3=1},distance=..100] rng3 2
+execute unless score #SarielDamage rng20 matches 18..19 if score @s AzrSoulHit matches 1 if entity @s[tag=AzrSarielSoul] run tag @s add AzrSarielSoulConsume
+execute unless score #SarielDamage rng20 matches 18..19 if entity @s[tag=AzrSarielSoulConsume] run scoreboard players set @s AzrSoulBurst 10
+execute unless score #SarielDamage rng20 matches 18..19 if entity @s[tag=AzrSarielSoulConsume] run scoreboard players set @s AzrSoulMark 0
+execute unless score #SarielDamage rng20 matches 18..19 if entity @s[tag=AzrSarielSoulConsume] run effect clear @s minecraft:unluck
 tag @s[tag=AzrSarielSoulConsume] remove AzrSarielSoul
-execute if score @s AzrSoulHit matches 1 unless entity @s[tag=AzrSarielSoulConsume] run scoreboard players set @s AzrSoulMark 100
-execute if score @s AzrSoulHit matches 1 unless entity @s[tag=AzrSarielSoulConsume] run effect give @s minecraft:unluck 5 0 true
-execute if score @s AzrSoulHit matches 1 unless entity @s[tag=AzrSarielSoulConsume] run tag @s add AzrSarielSoul
-execute if score @s AzrSoulHit matches 1 run tag @s add AzrSarielSoulActive
+execute unless score #SarielDamage rng20 matches 18..19 if score @s AzrSoulHit matches 1 unless entity @s[tag=AzrSarielSoulConsume] run scoreboard players set @s AzrSoulMark 100
+execute unless score #SarielDamage rng20 matches 18..19 if score @s AzrSoulHit matches 1 unless entity @s[tag=AzrSarielSoulConsume] run effect give @s minecraft:unluck 5 0 true
+execute unless score #SarielDamage rng20 matches 18..19 if score @s AzrSoulHit matches 1 unless entity @s[tag=AzrSarielSoulConsume] run tag @s add AzrSarielSoul
+execute unless score #SarielDamage rng20 matches 18..19 if score @s AzrSoulHit matches 1 run tag @s add AzrSarielSoulActive
 tag @s remove AzrSarielSoulConsume

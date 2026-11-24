@@ -44,9 +44,15 @@ execute if entity @s[type=marker,tag=FF_monitor] at @s run function skyblock:azr
 
 # 沙利叶攻击实体独立更新，并在离开战斗阶段/本体消失后回收。
 execute if entity @s[tag=AzrSarielFx] if score stage Azr_system matches 120 at @s if entity @n[type=mannequin,tag=AzrielNPC_sariel,distance=..100,scores={Health=1..}] run function skyblock:azr/assets/mobs/skill/boss6_sariel/effects
-execute if entity @s[tag=AzrSarielFx] unless score stage Azr_system matches 120 run kill @s
+execute if entity @s[tag=AzrSarielFx] unless score stage Azr_system matches 120 unless score stage Azr_system matches 122 run kill @s
 execute if entity @s[tag=AzrSarielFx] at @s unless entity @n[type=mannequin,tag=AzrielNPC_sariel,distance=..100,scores={Health=1..}] run kill @s
 
 # 沙利叶二阶段黑球/暗影：不进入通用技能遍历，尖刺仍使用原fang_auto。
 execute if entity @s[tag=AzrSarielPhase2Entity,tag=!AzrSarielPhase2Fang] if score stage Azr_system matches 121 at @s run function skyblock:azr/assets/mobs/skill/boss6_sariel/phase2_entities
 execute if entity @s[tag=AzrSarielPhase2Entity] unless score stage Azr_system matches 121 run kill @s
+
+# 第三阶段沿用原攻击实体入口；骷髅、火球、火焰视觉统一由一个aux更新。
+execute if entity @s[type=mannequin,tag=AzrSarielP3Active] if score stage Azr_system matches 122 at @s run function skyblock:azr/assets/mobs/skill/boss6_sariel/core_phase3
+execute if entity @s[tag=AzrSarielFx] if score stage Azr_system matches 122 at @s if entity @n[type=mannequin,tag=AzrielNPC_sariel,distance=..100] run function skyblock:azr/assets/mobs/skill/boss6_sariel/effects
+execute if entity @s[tag=AzrSarielP3Aux] if score stage Azr_system matches 122 at @s run function skyblock:azr/assets/mobs/skill/boss6_sariel/phase3_aux
+execute if entity @s[tag=AzrSarielP3Aux] unless score stage Azr_system matches 122 run kill @s

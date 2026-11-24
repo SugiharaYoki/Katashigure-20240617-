@@ -1,3 +1,5 @@
+# 骷髅击破保护：只维护参战玩家的独立计时，不影响其他luck来源。
+execute as @a[scores={AzrP3Luck=1..}] run scoreboard players remove @s AzrP3Luck 1
 execute as @a[tag=AzrSarielSoulActive] at @s run function skyblock:azr/assets/mobs/skill/boss6_sariel/soul_tick
 
 

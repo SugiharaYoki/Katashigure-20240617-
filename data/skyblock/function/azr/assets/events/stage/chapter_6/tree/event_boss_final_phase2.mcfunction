@@ -60,7 +60,7 @@ execute if score @s rng1 matches 1003.. if score @s rng5 matches 0 positioned -7
 execute if score @s rng1 matches 1003.. if score @s rng5 matches 0 positioned -79551 16 7 unless entity @n[type=slime,tag=AzrSarielDarkOrb_4,distance=..100] run scoreboard players set @s rng5 1
 
 # 先推进已开始的对话计时；首次开地板这一轮固定记作0，避免提前0.25秒。
-execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 0..252 run scoreboard players add @s rng9 1
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 0..295 run scoreboard players add @s rng9 1
 # 四个黑球全部死亡后只开地板一次，并清理未爆炸的暗影与尖刺预警。
 execute unless entity @s[tag=AzrSarielPhase2Cleared] if score @s rng2 matches 1 if score @s rng3 matches 1 if score @s rng4 matches 1 if score @s rng5 matches 1 run scoreboard players set @s rng9 0
 execute unless entity @s[tag=AzrSarielPhase2Cleared] if score @s rng2 matches 1 if score @s rng3 matches 1 if score @s rng4 matches 1 if score @s rng5 matches 1 run fill -79549 14 -24 -79582 14 9 minecraft:air
@@ -117,18 +117,203 @@ execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 252 ru
 
 execute if score @s rng1 matches 2999 run scoreboard players set @s rng1 2990
 
-【需求】
-最终boss场地：-79912 179 42到-79832 179 -38
-execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 251 as @a[tag=azrPlayer] at @s run tp #到最终场地正中间的195格，并且获得50级无粒子缓降5秒
-从255开始，每过2次rng9，从外围多一层glass，并且从内围也多一层，直到整个最终boss场地被玻璃闭合（每次生成都会在white_stained_、light_gray_stained交替，像回字一样循环
-与此同时，从256开始，每过2次rng9，在最外围建立8格高的barrier
-fill -79832 179 -38 -79832 187 42 barrier
-fill -79832 179 42 -79912 187 42 barrier
-fill -79912 179 42 -79912 187 -38 barrier
-fill -79912 179 -38 -79832 187 -38 barrier
-
-一切完事后切换到phase3
-并且rng1变成3001
-
-
-#沙利叶在此之后也会使用core_phase3，弃用原本的core
+# 最终场地中心(-79872.5,195,2.5)，先送玩家上空，再由内外两端逐层合拢地板。
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 251 run tp @a[tag=azrPlayer] -79872.5 195 2.5
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 251 run effect give @a[tag=azrPlayer] minecraft:slow_falling 5 49 true
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 255 run setblock -79872 179 2 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 255 run fill -79912 179 -38 -79832 179 -38 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 255 run fill -79912 179 42 -79832 179 42 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 255 run fill -79912 179 -37 -79912 179 41 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 255 run fill -79832 179 -37 -79832 179 41 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 257 run fill -79873 179 1 -79871 179 1 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 257 run fill -79873 179 3 -79871 179 3 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 257 run fill -79873 179 2 -79873 179 2 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 257 run fill -79871 179 2 -79871 179 2 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 257 run fill -79911 179 -37 -79833 179 -37 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 257 run fill -79911 179 41 -79833 179 41 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 257 run fill -79911 179 -36 -79911 179 40 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 257 run fill -79833 179 -36 -79833 179 40 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 259 run fill -79874 179 0 -79870 179 0 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 259 run fill -79874 179 4 -79870 179 4 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 259 run fill -79874 179 1 -79874 179 3 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 259 run fill -79870 179 1 -79870 179 3 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 259 run fill -79910 179 -36 -79834 179 -36 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 259 run fill -79910 179 40 -79834 179 40 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 259 run fill -79910 179 -35 -79910 179 39 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 259 run fill -79834 179 -35 -79834 179 39 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 261 run fill -79875 179 -1 -79869 179 -1 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 261 run fill -79875 179 5 -79869 179 5 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 261 run fill -79875 179 0 -79875 179 4 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 261 run fill -79869 179 0 -79869 179 4 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 261 run fill -79909 179 -35 -79835 179 -35 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 261 run fill -79909 179 39 -79835 179 39 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 261 run fill -79909 179 -34 -79909 179 38 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 261 run fill -79835 179 -34 -79835 179 38 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 263 run fill -79876 179 -2 -79868 179 -2 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 263 run fill -79876 179 6 -79868 179 6 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 263 run fill -79876 179 -1 -79876 179 5 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 263 run fill -79868 179 -1 -79868 179 5 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 263 run fill -79908 179 -34 -79836 179 -34 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 263 run fill -79908 179 38 -79836 179 38 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 263 run fill -79908 179 -33 -79908 179 37 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 263 run fill -79836 179 -33 -79836 179 37 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 265 run fill -79877 179 -3 -79867 179 -3 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 265 run fill -79877 179 7 -79867 179 7 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 265 run fill -79877 179 -2 -79877 179 6 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 265 run fill -79867 179 -2 -79867 179 6 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 265 run fill -79907 179 -33 -79837 179 -33 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 265 run fill -79907 179 37 -79837 179 37 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 265 run fill -79907 179 -32 -79907 179 36 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 265 run fill -79837 179 -32 -79837 179 36 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 267 run fill -79878 179 -4 -79866 179 -4 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 267 run fill -79878 179 8 -79866 179 8 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 267 run fill -79878 179 -3 -79878 179 7 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 267 run fill -79866 179 -3 -79866 179 7 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 267 run fill -79906 179 -32 -79838 179 -32 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 267 run fill -79906 179 36 -79838 179 36 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 267 run fill -79906 179 -31 -79906 179 35 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 267 run fill -79838 179 -31 -79838 179 35 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 269 run fill -79879 179 -5 -79865 179 -5 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 269 run fill -79879 179 9 -79865 179 9 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 269 run fill -79879 179 -4 -79879 179 8 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 269 run fill -79865 179 -4 -79865 179 8 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 269 run fill -79905 179 -31 -79839 179 -31 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 269 run fill -79905 179 35 -79839 179 35 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 269 run fill -79905 179 -30 -79905 179 34 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 269 run fill -79839 179 -30 -79839 179 34 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 271 run fill -79880 179 -6 -79864 179 -6 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 271 run fill -79880 179 10 -79864 179 10 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 271 run fill -79880 179 -5 -79880 179 9 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 271 run fill -79864 179 -5 -79864 179 9 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 271 run fill -79904 179 -30 -79840 179 -30 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 271 run fill -79904 179 34 -79840 179 34 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 271 run fill -79904 179 -29 -79904 179 33 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 271 run fill -79840 179 -29 -79840 179 33 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 273 run fill -79881 179 -7 -79863 179 -7 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 273 run fill -79881 179 11 -79863 179 11 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 273 run fill -79881 179 -6 -79881 179 10 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 273 run fill -79863 179 -6 -79863 179 10 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 273 run fill -79903 179 -29 -79841 179 -29 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 273 run fill -79903 179 33 -79841 179 33 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 273 run fill -79903 179 -28 -79903 179 32 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 273 run fill -79841 179 -28 -79841 179 32 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 275 run fill -79882 179 -8 -79862 179 -8 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 275 run fill -79882 179 12 -79862 179 12 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 275 run fill -79882 179 -7 -79882 179 11 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 275 run fill -79862 179 -7 -79862 179 11 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 275 run fill -79902 179 -28 -79842 179 -28 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 275 run fill -79902 179 32 -79842 179 32 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 275 run fill -79902 179 -27 -79902 179 31 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 275 run fill -79842 179 -27 -79842 179 31 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 277 run fill -79883 179 -9 -79861 179 -9 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 277 run fill -79883 179 13 -79861 179 13 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 277 run fill -79883 179 -8 -79883 179 12 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 277 run fill -79861 179 -8 -79861 179 12 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 277 run fill -79901 179 -27 -79843 179 -27 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 277 run fill -79901 179 31 -79843 179 31 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 277 run fill -79901 179 -26 -79901 179 30 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 277 run fill -79843 179 -26 -79843 179 30 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 279 run fill -79884 179 -10 -79860 179 -10 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 279 run fill -79884 179 14 -79860 179 14 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 279 run fill -79884 179 -9 -79884 179 13 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 279 run fill -79860 179 -9 -79860 179 13 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 279 run fill -79900 179 -26 -79844 179 -26 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 279 run fill -79900 179 30 -79844 179 30 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 279 run fill -79900 179 -25 -79900 179 29 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 279 run fill -79844 179 -25 -79844 179 29 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 281 run fill -79885 179 -11 -79859 179 -11 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 281 run fill -79885 179 15 -79859 179 15 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 281 run fill -79885 179 -10 -79885 179 14 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 281 run fill -79859 179 -10 -79859 179 14 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 281 run fill -79899 179 -25 -79845 179 -25 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 281 run fill -79899 179 29 -79845 179 29 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 281 run fill -79899 179 -24 -79899 179 28 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 281 run fill -79845 179 -24 -79845 179 28 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 283 run fill -79886 179 -12 -79858 179 -12 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 283 run fill -79886 179 16 -79858 179 16 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 283 run fill -79886 179 -11 -79886 179 15 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 283 run fill -79858 179 -11 -79858 179 15 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 283 run fill -79898 179 -24 -79846 179 -24 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 283 run fill -79898 179 28 -79846 179 28 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 283 run fill -79898 179 -23 -79898 179 27 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 283 run fill -79846 179 -23 -79846 179 27 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 285 run fill -79887 179 -13 -79857 179 -13 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 285 run fill -79887 179 17 -79857 179 17 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 285 run fill -79887 179 -12 -79887 179 16 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 285 run fill -79857 179 -12 -79857 179 16 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 285 run fill -79897 179 -23 -79847 179 -23 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 285 run fill -79897 179 27 -79847 179 27 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 285 run fill -79897 179 -22 -79897 179 26 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 285 run fill -79847 179 -22 -79847 179 26 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 287 run fill -79888 179 -14 -79856 179 -14 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 287 run fill -79888 179 18 -79856 179 18 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 287 run fill -79888 179 -13 -79888 179 17 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 287 run fill -79856 179 -13 -79856 179 17 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 287 run fill -79896 179 -22 -79848 179 -22 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 287 run fill -79896 179 26 -79848 179 26 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 287 run fill -79896 179 -21 -79896 179 25 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 287 run fill -79848 179 -21 -79848 179 25 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 289 run fill -79889 179 -15 -79855 179 -15 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 289 run fill -79889 179 19 -79855 179 19 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 289 run fill -79889 179 -14 -79889 179 18 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 289 run fill -79855 179 -14 -79855 179 18 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 289 run fill -79895 179 -21 -79849 179 -21 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 289 run fill -79895 179 25 -79849 179 25 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 289 run fill -79895 179 -20 -79895 179 24 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 289 run fill -79849 179 -20 -79849 179 24 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 291 run fill -79890 179 -16 -79854 179 -16 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 291 run fill -79890 179 20 -79854 179 20 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 291 run fill -79890 179 -15 -79890 179 19 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 291 run fill -79854 179 -15 -79854 179 19 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 291 run fill -79894 179 -20 -79850 179 -20 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 291 run fill -79894 179 24 -79850 179 24 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 291 run fill -79894 179 -19 -79894 179 23 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 291 run fill -79850 179 -19 -79850 179 23 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 293 run fill -79891 179 -17 -79853 179 -17 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 293 run fill -79891 179 21 -79853 179 21 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 293 run fill -79891 179 -16 -79891 179 20 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 293 run fill -79853 179 -16 -79853 179 20 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 293 run fill -79893 179 -19 -79851 179 -19 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 293 run fill -79893 179 23 -79851 179 23 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 293 run fill -79893 179 -18 -79893 179 22 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 293 run fill -79851 179 -18 -79851 179 22 minecraft:light_gray_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 295 run fill -79892 179 -18 -79852 179 -18 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 295 run fill -79892 179 22 -79852 179 22 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 295 run fill -79892 179 -17 -79892 179 21 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 295 run fill -79852 179 -17 -79852 179 21 minecraft:white_stained_glass
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 256 run fill -79912 180 -38 -79832 180 -38 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 256 run fill -79912 180 42 -79832 180 42 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 256 run fill -79912 180 -37 -79912 180 41 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 256 run fill -79832 180 -37 -79832 180 41 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 258 run fill -79912 181 -38 -79832 181 -38 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 258 run fill -79912 181 42 -79832 181 42 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 258 run fill -79912 181 -37 -79912 181 41 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 258 run fill -79832 181 -37 -79832 181 41 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 260 run fill -79912 182 -38 -79832 182 -38 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 260 run fill -79912 182 42 -79832 182 42 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 260 run fill -79912 182 -37 -79912 182 41 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 260 run fill -79832 182 -37 -79832 182 41 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 262 run fill -79912 183 -38 -79832 183 -38 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 262 run fill -79912 183 42 -79832 183 42 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 262 run fill -79912 183 -37 -79912 183 41 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 262 run fill -79832 183 -37 -79832 183 41 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 264 run fill -79912 184 -38 -79832 184 -38 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 264 run fill -79912 184 42 -79832 184 42 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 264 run fill -79912 184 -37 -79912 184 41 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 264 run fill -79832 184 -37 -79832 184 41 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 266 run fill -79912 185 -38 -79832 185 -38 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 266 run fill -79912 185 42 -79832 185 42 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 266 run fill -79912 185 -37 -79912 185 41 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 266 run fill -79832 185 -37 -79832 185 41 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 268 run fill -79912 186 -38 -79832 186 -38 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 268 run fill -79912 186 42 -79832 186 42 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 268 run fill -79912 186 -37 -79912 186 41 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 268 run fill -79832 186 -37 -79832 186 41 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 270 run fill -79912 187 -38 -79832 187 -38 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 270 run fill -79912 187 42 -79832 187 42 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 270 run fill -79912 187 -37 -79912 187 41 minecraft:barrier
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 270 run fill -79832 187 -37 -79832 187 41 minecraft:barrier
+# 最后一层合拢后切换；事件实体仍留在原入口，area1_tree继续按原位置分派。
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 295 run scoreboard players set #SarielP3Done rng20 0
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 295 run scoreboard players set stage Azr_system 122
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 295 run scoreboard players set @s rng1 3001
