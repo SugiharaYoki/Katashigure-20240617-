@@ -18,7 +18,10 @@ execute if score @s AzrEntityTimer matches 481 run tellraw @a[tag=azrShowDialog]
 execute if score @s AzrEntityTimer matches 501 run tellraw @a[tag=azrShowDialog] [{text:"LiFE Garden - Yooh",color:"white"}]
 execute if score @s AzrEntityTimer matches 521 run tellraw @a[tag=azrShowDialog] [{text:"探し物 - onoken",color:"white"}]
 
-
+execute if score @s AzrEntityTimer matches 2
+我这里需要保证玩家的背包被清空
+但是我不想这个状态被存档保存起来，我该如何保证存档在这之前就保存完毕，然后清空背包后不影响？
+只留命星在玩家背包里。
 
 execute if score @s AzrEntityTimer matches 38 as @a[tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“莉茜，该吃晚饭啦。已经读了一天了吧。”",color:"white",bold: false}]
 execute if score @s AzrEntityTimer matches 36 as @a[tag=azrShowDialog] at @s run playsound minecraft:bookstore music @s ~ ~ ~ 0.8
@@ -41,6 +44,7 @@ execute if score @s AzrEntityTimer matches 150 as @a[tag=azrShowDialog] at @s ru
 execute if score @s AzrEntityTimer matches 162 as @a[tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“我很后怕……假如那时候我们选择了生下第二个孩子，我绝对不会有足够的爱平分给他们。”",color:"white",bold: false}]
 execute if score @s AzrEntityTimer matches 176 as @a[tag=azrShowDialog] at @s run tellraw @s [{text:"牵记的男声：",color:"green",bold:1b},{text:"\n“没有关系，爱理莎比你想的要更强大。我相信她，以后一定能做成大事。”",color:"white",bold: false}]
 
+execute if score @s AzrEntityTimer matches 176 as @a[tag=azrPlayer] at @s run tp @s -79717 46 -2394 facing -79717 46 -2393
 
 
 
