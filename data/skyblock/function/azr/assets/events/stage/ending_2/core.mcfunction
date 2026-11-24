@@ -54,7 +54,7 @@ execute if score @s AzrEntityTimer matches 333 run tellraw @a[tag=azrShowDialog]
 execute if score @s AzrEntityTimer matches 346 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“之后有时间的话，我和你一起去登门道谢吧。”",color:"white"}]
 execute if score @s AzrEntityTimer matches 360 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“嘿，罗温。你瞧瞧，我其实还是挺幸运的嘛。”",color:"white"}]
 execute if score @s AzrEntityTimer matches 360 as @a[tag=azrShowDialog] at @s run playsound minecraft:replica music @s ~ ~ ~ 0.7
-
+execute if score @s AzrEntityTimer matches 362 run scoreboard players set @s AzrEntityTimer 500
 
 execute if score @s AzrEntityTimer matches 501 run tellraw @a[tag=azrShowDialog] [{text:"- 配乐列表 -",color:"white",bold:1b}]
 execute if score @s AzrEntityTimer matches 501 run tellraw @a[tag=azrShowDialog] [{text:"opening - onoken",color:"white"}]
@@ -78,37 +78,36 @@ execute if score @s AzrEntityTimer matches 841 run tellraw @a[tag=azrShowDialog]
 
 
 
-execute if score @s AzrEntityTimer matches 540 run title @a[tag=azrShowDialog] times 2s 3s 2s
-execute if score @s AzrEntityTimer matches 540 run title @a[tag=azrShowDialog] title [{text:"『亚兹列尔的中庭花园』",color:"white",bold:1b}]
+execute if score @s AzrEntityTimer matches 501 run title @a[tag=azrShowDialog] times 2s 3s 2s
+execute if score @s AzrEntityTimer matches 501 run title @a[tag=azrShowDialog] title [{text:"『亚兹列尔的中庭花园』",color:"white",bold:1b}]
+execute if score @s AzrEntityTimer matches 501 run title @a[tag=azrShowDialog] subtitle [{text:"A Game Produced by SugiharaYoki",color:"white",bold: false}]
 
-execute if score @s AzrEntityTimer matches 540 run title @a[tag=azrShowDialog] subtitle [{text:"A Game Produced by SugiharaYoki",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 551 run title @a[tag=azrShowDialog] title [{text:"领衔程序与技术",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 551 run title @a[tag=azrShowDialog] subtitle [{text:"SugiharaYoki、XuanYu1725_XYU",color:"white",bold: false}]
 
-execute if score @s AzrEntityTimer matches 590 run title @a[tag=azrShowDialog] title [{text:"领衔程序与技术",color:"white",bold: false}]
-execute if score @s AzrEntityTimer matches 590 run title @a[tag=azrShowDialog] subtitle [{text:"SugiharaYoki、XuanYu1725_XYU",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 591 run title @a[tag=azrShowDialog] title [{text:"程序与技术",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 591 run title @a[tag=azrShowDialog] subtitle [{text:"xiyihan、qfys521、sdgedghdg",color:"white",bold: false}]
 
-execute if score @s AzrEntityTimer matches 630 run title @a[tag=azrShowDialog] title [{text:"程序与技术",color:"white",bold: false}]
-execute if score @s AzrEntityTimer matches 630 run title @a[tag=azrShowDialog] subtitle [{text:"xiyihan、qfys521、sdgedghdg",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 631 run title @a[tag=azrShowDialog] title [{text:"地图与规划",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 631 run title @a[tag=azrShowDialog] subtitle [{text:"SugiharaYoki、Pramanix",color:"white",bold: false}]
 
-execute if score @s AzrEntityTimer matches 670 run title @a[tag=azrShowDialog] title [{text:"地图与规划",color:"white",bold: false}]
-execute if score @s AzrEntityTimer matches 670 run title @a[tag=azrShowDialog] subtitle [{text:"SugiharaYoki、Pramanix",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 671 run title @a[tag=azrShowDialog] title [{text:"领衔服务支持",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 671 run title @a[tag=azrShowDialog] subtitle [{text:"Botium_",color:"white",bold: false}]
 
-execute if score @s AzrEntityTimer matches 710 run title @a[tag=azrShowDialog] title [{text:"领衔服务支持",color:"white",bold: false}]
-execute if score @s AzrEntityTimer matches 710 run title @a[tag=azrShowDialog] subtitle [{text:"Botium_",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 711 run title @a[tag=azrShowDialog] title [{text:"过往服务支持",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 711 run title @a[tag=azrShowDialog] subtitle [{text:"MikkoAyaka",color:"white",bold: false}]
 
-execute if score @s AzrEntityTimer matches 750 run title @a[tag=azrShowDialog] title [{text:"过往服务支持",color:"white",bold: false}]
-execute if score @s AzrEntityTimer matches 750 run title @a[tag=azrShowDialog] subtitle [{text:"MikkoAyaka",color:"white",bold: false}]
-
-execute if score @s AzrEntityTimer matches 790 run title @a[tag=azrShowDialog] title [{text:"... and You.",color:"white",bold: false}]
-
+execute if score @s AzrEntityTimer matches 751 run title @a[tag=azrShowDialog] title [{text:"... and You.",color:"white",bold: false}]
 
 
 
 
-execute if score @s rng1 matches 890 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/ending_2
-execute if score @s rng1 matches 890 run tellraw @a[tag=azrShowDialog] [{text:"达成结局：",color:"gold",bold:1b},{text:"\nLife End「花与叶的复生」",color:"white",bold: false}]
+
+execute if score @s rng1 matches 800 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/ending_2
+execute if score @s rng1 matches 800 run tellraw @a[tag=azrShowDialog] [{text:"达成结局：",color:"gold",bold:1b},{text:"\nLife End「花与叶的复生」",color:"white",bold: false}]
 
 
-execute if score @s rng1 matches 891 run kill @s
+execute if score @s rng1 matches 801 run kill @s
 
 
 
