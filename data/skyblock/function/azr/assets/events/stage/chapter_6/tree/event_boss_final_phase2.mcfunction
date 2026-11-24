@@ -75,6 +75,8 @@ execute if score @s rng1 matches 1003.. run scoreboard players operation @s rng7
 execute if score @s rng1 matches 1003.. run scoreboard players operation @s rng7 += @s rng5
 # 新击破优先于旧组后半句；同一轮多颗击破时依次播首句，只保留最后一组的延迟句。
 execute if score @s rng7 > @s rng6 run scoreboard players set @s rng8 18
+execute if score @s rng6 matches ..0 if score @s rng7 matches 1.. positioned -79566 6 -7 run function skyblock:azr/assets/mobs/skill/boss5_focalor/summon
+execute if score @s rng6 matches ..0 if score @s rng7 matches 1.. positioned -79566 6 -7 as @n[tag=AzrielNPC_focalor,distance=..10.5] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 execute if score @s rng6 matches ..0 if score @s rng7 matches 1.. run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“如果你能听见我的声音，无需恐慌。”",color:"white"}]
 execute if score @s rng6 matches ..1 if score @s rng7 matches 2.. run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“我们从未聊过有关你父母的事情。”",color:"white"}]
 execute if score @s rng6 matches ..2 if score @s rng7 matches 3.. run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“曾经养大你的父母？”",color:"white"}]
@@ -90,8 +92,6 @@ execute if score @s rng8 matches 0 run scoreboard players set @s rng8 -1
 # 使用at保留事件实体为@s，所有玩家共用同一段剧情计时。
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 25..239 at @a[tag=azrPlayer] if entity @n[tag=AzrielNPC_focalor,distance=..1.5] run scoreboard players set @s rng9 240
 
-execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 24 positioned -79566 6 -7 run function skyblock:azr/assets/mobs/skill/boss5_focalor/summon
-execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 24.. positioned -79566 6 -7 as @n[tag=AzrielNPC_focalor,distance=..10.5] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 24 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“魔神佛卡洛……”",color:"white"}]
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 32 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“你知道有关我父母的事情？什么叫他们参加过神庭挑战？！”",color:"white"}]
@@ -113,3 +113,22 @@ execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 252 ru
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 252 as @n[tag=AzrielNPC_focalor] at @s run tp @s ~ ~-100 ~
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 253 as @n[tag=AzrielNPC_focalor] at @s run kill @s
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 252 run scoreboard players set @a[tag=azrPlayer,scores={Azr_skillPoints=..67}] Azr_skillPoints 68
+
+
+execute if score @s rng1 matches 2999 run scoreboard players set @s rng1 2990
+
+【需求】
+最终boss场地：-79912 179 42到-79832 179 -38
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 251 as @a[tag=azrPlayer] at @s run tp #到最终场地正中间的195格，并且获得50级无粒子缓降5秒
+从255开始，每过2次rng9，从外围多一层glass，并且从内围也多一层，直到整个最终boss场地被玻璃闭合（每次生成都会在white_stained_、light_gray_stained交替，像回字一样循环
+与此同时，从256开始，每过2次rng9，在最外围建立8格高的barrier
+fill -79832 179 -38 -79832 187 42 barrier
+fill -79832 179 42 -79912 187 42 barrier
+fill -79912 179 42 -79912 187 -38 barrier
+fill -79912 179 -38 -79832 187 -38 barrier
+
+一切完事后切换到phase3
+并且rng1变成3001
+
+
+#沙利叶在此之后也会使用core_phase3，弃用原本的core
