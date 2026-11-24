@@ -150,8 +150,8 @@ execute if score @s rng7 matches 1 store result storage skyblock:sariel spawn.pi
 execute if score @s rng7 matches 1 run data modify storage skyblock:sariel spawn.kind set value "AzrSarielSlash"
 execute if score @s rng7 matches 1 store result score #SarielSlashDelay rng20 run random value 40..80
 execute if score @s rng7 matches 1 at @s rotated ~ 0 positioned ^ ^ ^2 positioned ~ 181 ~ run function skyblock:azr/assets/mobs/skill/boss6_sariel/spawn with storage skyblock:sariel spawn
-execute if score @s rng7 matches 1 if score @s rng1 matches ..34 at @s rotated ~ 0 positioned ^-8 ^ ^2 positioned ~ 181 ~ run function skyblock:azr/assets/mobs/skill/boss6_sariel/spawn with storage skyblock:sariel spawn
-execute if score @s rng7 matches 1 if score @s rng1 matches ..34 at @s rotated ~ 0 positioned ^8 ^ ^2 positioned ~ 181 ~ run function skyblock:azr/assets/mobs/skill/boss6_sariel/spawn with storage skyblock:sariel spawn
+execute if score @s rng7 matches 1 if score @s rng1 matches ..34 if score @s rng19 matches 1200.. at @s rotated ~ 0 positioned ^-8 ^ ^2 positioned ~ 181 ~ run function skyblock:azr/assets/mobs/skill/boss6_sariel/spawn with storage skyblock:sariel spawn
+execute if score @s rng7 matches 1 if score @s rng1 matches ..34 if score @s rng19 matches 1200.. at @s rotated ~ 0 positioned ^8 ^ ^2 positioned ~ 181 ~ run function skyblock:azr/assets/mobs/skill/boss6_sariel/spawn with storage skyblock:sariel spawn
 execute if score @s rng7 matches 1 at @s run playsound minecraft:entity.creaking.attack neutral @a[tag=azrPlayer,distance=..100] ~ ~ ~ 1 1.4
 execute if score @s rng7 matches 1 at @s run playsound minecraft:entity.player.attack.sweep neutral @a[tag=azrPlayer,distance=..100] ~ ~ ~ 1 1.6
 execute if score @s rng7 matches 1 at @s rotated ~ 0 positioned ^ ^1 ^2 run particle minecraft:flash{color:[1.0,1.0,1.0,1.0]} ~ ~ ~ 0 0 0 0 1
@@ -360,18 +360,18 @@ execute if score @s rng18 matches 0 if score @s rng2 matches 5 if score @s rng1 
 execute if score @s rng18 matches 0 if score @s rng2 matches 5 if score @s rng1 matches 5..10 at @s rotated ~ 0 positioned ^ ^1.35 ^-0.35 rotated ~90 25 run function skyblock:azr/assets/mobs/skill/boss6_sariel/wings
 execute if score @s rng18 matches 0 if score @s rng2 matches 5 if score @s rng1 matches 11..16 at @s rotated ~ 0 positioned ^ ^1.35 ^-0.35 rotated ~90 -10 run function skyblock:azr/assets/mobs/skill/boss6_sariel/wings
 
-# 2:43起每秒补充500索命连击充能；下落点0.6秒一次，4:08起改为1.2秒一次。
+# 2:43起每秒补充500充能；下落点2:33起每0.6秒一次，4:08起每1.2秒一次。
 execute if score @s rng19 matches 3260..5959 run scoreboard players set #SarielRainDiv rng20 20
 execute if score @s rng19 matches 3260..5959 run scoreboard players operation #SarielRainMod rng20 = @s rng19
 execute if score @s rng19 matches 3260..5959 run scoreboard players remove #SarielRainMod rng20 3260
 execute if score @s rng19 matches 3260..5959 run scoreboard players operation #SarielRainMod rng20 %= #SarielRainDiv rng20
 execute if score @s rng19 matches 3260..5959 if score #SarielRainMod rng20 matches 0 at @s run scoreboard players add @a[tag=azrPlayer,distance=..100] AZR_chainKill_chargeup 500
-execute if score @s rng19 matches 3260..4959 run scoreboard players set #SarielRainDiv rng20 12
+execute if score @s rng19 matches 3060..4959 run scoreboard players set #SarielRainDiv rng20 12
 execute if score @s rng19 matches 4960..5959 run scoreboard players set #SarielRainDiv rng20 24
-execute if score @s rng19 matches 3260..5959 run scoreboard players operation #SarielRainMod rng20 = @s rng19
-execute if score @s rng19 matches 3260..5959 run scoreboard players remove #SarielRainMod rng20 3260
-execute if score @s rng19 matches 3260..5959 run scoreboard players operation #SarielRainMod rng20 %= #SarielRainDiv rng20
-execute if score @s rng19 matches 3260..5959 if score #SarielRainMod rng20 matches 0 at @s at @r[tag=azrPlayer,distance=..100] run summon marker ~ 198 ~ {Tags:["AzrSarielP3Aux","AzrSarielP3Rain","AzrSarielP3RainNew"]}
+execute if score @s rng19 matches 3060..5959 run scoreboard players operation #SarielRainMod rng20 = @s rng19
+execute if score @s rng19 matches 3060..5959 run scoreboard players remove #SarielRainMod rng20 3060
+execute if score @s rng19 matches 3060..5959 run scoreboard players operation #SarielRainMod rng20 %= #SarielRainDiv rng20
+execute if score @s rng19 matches 3060..5959 if score #SarielRainMod rng20 matches 0 at @s at @r[tag=azrPlayer,distance=..100] run summon marker ~ 198 ~ {Tags:["AzrSarielP3Aux","AzrSarielP3Rain","AzrSarielP3RainNew"]}
 
 # 到时强制结束；事件端据此停止音乐并清理战场攻击。
 execute if score @s rng19 matches 5960.. run scoreboard players set #SarielP3Done rng20 1

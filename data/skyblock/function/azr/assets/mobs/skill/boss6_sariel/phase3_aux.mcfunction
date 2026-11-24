@@ -19,7 +19,7 @@ execute if entity @s[type=player,tag=azrPlayer] if score stage Azr_system matche
 
 # 骷髅招式：本体+一个随身skull显示+一个独立飞行目标，总量上限三套。
 execute if entity @s[type=mannequin,tag=AzrSarielPhase3] run scoreboard players add #SarielSkullID rng20 1
-execute if entity @s[type=mannequin,tag=AzrSarielPhase3] at @s positioned ~ 186 ~ run summon magma_cube ~ ~ ~ {Tags:["AzrielMob","AzrSarielP3Aux","AzrSarielP3Skull","AzrSarielP3New"],Size:0,NoAI:1b,NoGravity:1b,Silent:1b,PersistenceRequired:1b,Health:16.0f,attributes:[{id:"minecraft:max_health",base:16.0},{id:"minecraft:armor",base:0.0},{id:"minecraft:scale",base:1.7},{id:"minecraft:attack_damage",base:0.0},{id:"minecraft:knockback_resistance",base:1.0}],DeathLootTable:"minecraft:empty",Passengers:[{id:"minecraft:item_display",Tags:["AzrSarielP3Aux","AzrSarielP3SkullView","AzrSarielP3New"],item:{id:"minecraft:skeleton_skull",count:1},item_display:"head",transformation:{translation:[0.0f,-0.4f,0.0f],scale:[1.6f,1.6f,1.6f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f]}}]}
+execute if entity @s[type=mannequin,tag=AzrSarielPhase3] at @s positioned ~ 186 ~ run summon magma_cube ~ ~ ~ {Tags:["AzrielMob","AzrSarielP3Aux","AzrSarielP3Skull","AzrSarielP3New"],Size:0,NoAI:1b,NoGravity:1b,Silent:1b,PersistenceRequired:1b,Health:16.0f,attributes:[{id:"minecraft:max_health",base:16.0},{id:"minecraft:armor",base:0.0},{id:"minecraft:scale",base:1.7},{id:"minecraft:attack_damage",base:0.0},{id:"minecraft:knockback_resistance",base:1.0}],DeathLootTable:"minecraft:empty",Passengers:[{id:"minecraft:item_display",Tags:["AzrSarielP3Aux","AzrSarielP3SkullView","AzrSarielP3New"],item:{id:"minecraft:skeleton_skull",count:1},item_display:"head",transformation:{translation:[0.0f,-0.4f,0.0f],scale:[1.6f,1.6f,1.6f],left_rotation:[0f,0f,0f,1f],right_rotation:[0f,1f,0f,0f]}}]}
 execute if entity @s[type=mannequin,tag=AzrSarielPhase3] at @s positioned ~ 186 ~ run summon marker ~ ~ ~ {Tags:["AzrSarielP3Aux","AzrSarielP3SkullTarget","AzrSarielP3New"]}
 execute if entity @s[type=mannequin,tag=AzrSarielPhase3] as @e[tag=AzrSarielP3New,distance=..100] run scoreboard players operation @s AzrP3SkullID = #SarielSkullID rng20
 execute if entity @s[type=mannequin,tag=AzrSarielPhase3] run effect give @e[type=magma_cube,tag=AzrSarielP3New,distance=..100] minecraft:invisibility infinite 0 true
@@ -44,6 +44,9 @@ execute if entity @s[tag=AzrSarielP3Skull] if score @s rng4 matches 1 if score @
 execute if entity @s[tag=AzrSarielP3Skull] at @s unless entity @n[type=marker,tag=AzrSarielP3ChosenTarget,distance=..0.05] facing entity @n[type=marker,tag=AzrSarielP3ChosenTarget,distance=..100] feet run tp @s ^ ^ ^0.05
 execute if entity @s[tag=AzrSarielP3Skull] at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
 # 外观是独立的骑乘展示实体，需要单独转向，不能只转不可见的岩浆怪本体。
+# head模式模型正面需局部绕Y轴180度；同时修正已生成的外观，保留瞄准俯仰角。
+execute if entity @s[tag=AzrSarielP3SkullView,tag=!AzrSarielP3FaceFixed] run data modify entity @s transformation.right_rotation set value [0.0f,1.0f,0.0f,0.0f]
+execute if entity @s[tag=AzrSarielP3SkullView,tag=!AzrSarielP3FaceFixed] run tag @s add AzrSarielP3FaceFixed
 execute if entity @s[tag=AzrSarielP3SkullView] at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
 execute if entity @s[tag=AzrSarielP3Skull] at @s run particle minecraft:soul ~ ~0.4 ~ 0.2 0.2 0.2 0.015 1
 execute if entity @s[tag=AzrSarielP3Skull] at @s run particle minecraft:soul_fire_flame ~ ~0.4 ~ 0.25 0.25 0.25 0.01 1
@@ -124,8 +127,8 @@ execute if entity @s[tag=AzrSarielP3RainNew] run scoreboard players set @s rng1 
 execute if entity @s[tag=AzrSarielP3RainNew] run tag @s remove AzrSarielP3RainNew
 execute if entity @s[tag=AzrSarielP3Rain] run scoreboard players add @s rng1 1
 execute if entity @s[tag=AzrSarielP3Rain] at @s run tp @s ~ ~-0.15 ~
-# 3:09时包括已经生成的下落点一并切换；玩家离开后立即恢复end_rod外观。
-execute if entity @s[tag=AzrSarielP3Rain,tag=!AzrSarielP3RainLight] at @s if entity @n[type=mannequin,tag=AzrSarielPhase3,distance=..100,scores={rng19=3780..}] run tag @s add AzrSarielP3RainLight
+# 2:59时包括已经生成的下落点一并切换；玩家离开后立即恢复end_rod外观。
+execute if entity @s[tag=AzrSarielP3Rain,tag=!AzrSarielP3RainLight] at @s if entity @n[type=mannequin,tag=AzrSarielPhase3,distance=..100,scores={rng19=3580..}] run tag @s add AzrSarielP3RainLight
 execute if entity @s[tag=AzrSarielP3RainLight] run tag @s remove AzrSarielP3RainHealing
 execute if entity @s[tag=AzrSarielP3RainLight] at @s if entity @a[tag=azrPlayer,distance=..4] run tag @s add AzrSarielP3RainHealing
 execute if entity @s[tag=AzrSarielP3Rain,tag=!AzrSarielP3RainLight] at @s run particle minecraft:pale_oak_leaves ~ ~ ~ 0 0 0 0 1
