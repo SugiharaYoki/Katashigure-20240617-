@@ -60,10 +60,10 @@ execute if score stage Azr_system matches 100 run tellraw @s [{text:"目标地�
 execute if score stage Azr_system matches 101 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"采光礼堂区域 第6章·进行作战会议",color:"white",bold:false}]
 execute if score stage Azr_system matches 102 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"采光礼堂区域 第6章·传送至采光礼堂区域",color:"white",bold:false}]
 execute if score stage Azr_system matches 103 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"采光礼堂区域 第6章·深入花园",color:"white",bold:false}]
-execute if score stage Azr_system matches 110 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"中庭花园区域 第6章·在死亡宣判前抵达生命树脚下",color:"white",bold:false}]
-execute if score stage Azr_system matches 111 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"中庭花园区域 第6章·击退玛帕斯与劳姆",color:"white",bold:false}]
-execute if score stage Azr_system matches 112 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"中庭花园区域 第6章·攀上生命树",color:"white",bold:false}]
-execute if score stage Azr_system matches 113 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"中庭花园区域 第6章·接受命运的决战",color:"white",bold:false}]
+execute if score stage Azr_system matches 110..111 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"中庭花园区域 第6章·在死亡宣判前抵达生命树脚下",color:"white",bold:false}]
+execute if score stage Azr_system matches 112 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"中庭花园区域 第6章·击退玛帕斯与劳姆",color:"white",bold:false}]
+execute if score stage Azr_system matches 113 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"中庭花园区域 第6章·攀上生命树",color:"white",bold:false}]
+execute if score stage Azr_system matches 114..122 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"中庭花园区域 第6章·接受命运的决战",color:"white",bold:false}]
 execute if score stage Azr_system matches 123 run tellraw @s [{text:"目标地点：",color:"aqua",bold:true},{text:"家",color:"white",bold:false}]
 
 
@@ -112,9 +112,9 @@ execute if score stage Azr_system matches 14.. if entity @s[tag=AZS_BoS09] unles
 execute if score stage Azr_system matches 14.. if entity @s[tag=AZS_BoS11] unless entity @s[tag=AZS_BoSB13] run tellraw @s [{text:"星光指引：",color:"#ff794c",bold:true},{text:"传热根系的深处热得有些反常，我很想去一探究竟。",color:"white",bold:false}]
 execute if score stage Azr_system matches 26.. unless entity @s[tag=AZS_BoSB23] run tellraw @s [{text:"星光指引：",color:"#ff794c",bold:true},{text:"需要赶的路越来越长了。蚀岩径区域似乎是一条不错的捷径，但深处总传来令我不安的凿石声响。",color:"white",bold:false}]
 execute if score stage Azr_system matches 36.. if entity @s[tag=AZS_BoS11] unless entity @s[tag=AZS_BoSB23] run tellraw @s [{text:"星光指引：",color:"#ff794c",bold:true},{text:"我不信这牢房里只关着魔物。或许我能在某间房间找到人类囚犯，对方说不定能给我提供情报。",color:"white",bold:false}]
-execute if score stage Azr_system matches 77..112 unless entity @s[tag=AZS_BoS12] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"水中往往很危险，我需要保证落水后能尽快脱离水体……",color:"white",bold:false}]
-execute if score stage Azr_system matches 81..112 unless entity @s[tag=AZS_BoSB19] run tellraw @s [{text:"星光指引：",color:"#ff794c",bold:true},{text:"行走于地下丛林时，我意识到有个地方魔力潮汐的密度异常之高。它似乎就源于管道殿堂上方的某处地点。",color:"white",bold:false}]
-execute if score stage Azr_system matches 95..112 unless entity @s[tag=AZS_BoSB14] run tellraw @s [{text:"星光指引：",color:"#ff794c",bold:true},{text:"孤立的水体之中有很大概率存在孤立的生态。大型蓄水池中恐怕会存在危险度极高的生物。",color:"white",bold:false}]
+execute if score stage Azr_system matches 77..109 unless entity @s[tag=AZS_BoS12] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"水中往往很危险，我需要保证落水后能尽快脱离水体……",color:"white",bold:false}]
+execute if score stage Azr_system matches 81..109 unless entity @s[tag=AZS_BoSB19] run tellraw @s [{text:"星光指引：",color:"#ff794c",bold:true},{text:"行走于地下丛林时，我意识到有个地方魔力潮汐的密度异常之高。它似乎就源于管道殿堂上方的某处地点。",color:"white",bold:false}]
+execute if score stage Azr_system matches 95..109 unless entity @s[tag=AZS_BoSB14] run tellraw @s [{text:"星光指引：",color:"#ff794c",bold:true},{text:"孤立的水体之中有很大概率存在孤立的生态。大型蓄水池中恐怕会存在危险度极高的生物。",color:"white",bold:false}]
 
 execute if score @s Azr_skillPoints matches 14.. if entity @s[tag=AZS_BoSB23] unless items entity @s container.* *[custom_data~{azr_amulet_light_angel_2:1b}] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"利用生命树的锚点，我似乎可以传送到一个特殊的场所……",color:"white",bold:false}]
 execute if score @s Azr_skillPoints matches 19.. if items entity @s container.* *[custom_data~{azr_amulet_light_angel_2:1b}] unless items entity @s container.* *[custom_data~{azr_amulet_light_angel_3:1b}] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"休憩所的华兹华斯似乎能向我提供更强大的天使符文了……",color:"white",bold:false}]
