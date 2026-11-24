@@ -30,7 +30,7 @@ execute if score @s AzrEntityTimer matches 176 as @a[tag=azrShowDialog] at @s ru
 execute if score @s AzrEntityTimer matches 176 as @a[tag=azrPlayer] at @s run tp @s -79717 46 -2394 facing -79717 46 -2393
 
 
-execute if score @s AzrEntityTimer matches 176 run summon minecraft:mannequin -79707 46 -2367 {Tags:["AzrielMob","AzrielMob_typeLIFE","AzrielNPC_rowen","AzrielMob_level_ed"],profile:{id:[I;0,0,0,0],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTViNmQ5NmU3MjBmM2M1MmQ2ZjE2YTFkZmU5YTYyMGEzMTRjNTc0Y2RmNDBmMjM2YWMzODcwZjQzMDYyMDNhNyJ9fX0="}]},hide_description:true,CustomName:'罗温',attributes:[{id:"attack_damage",base:0.0},{id:"max_health",base:2.0},{id:"follow_range",base:50},{id:"armor",base:0.0},{id:"armor_toughness",base:0.0},{base:0.27d,id:"movement_speed"},{base:1.0d,id:"knockback_resistance"},{base:1.0d,id:"scale"}],Health:2.0f,Invulnerable:1b}
+execute if score @s AzrEntityTimer matches 176 run summon minecraft:mannequin -79707 46 -2367 {Tags:["AzrielNPC_rowen"],profile:{id:[I;0,0,0,0],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTViNmQ5NmU3MjBmM2M1MmQ2ZjE2YTFkZmU5YTYyMGEzMTRjNTc0Y2RmNDBmMjM2YWMzODcwZjQzMDYyMDNhNyJ9fX0="}]},hide_description:true,CustomName:'罗温',attributes:[{id:"attack_damage",base:0.0},{id:"max_health",base:2.0},{id:"follow_range",base:50},{id:"armor",base:0.0},{id:"armor_toughness",base:0.0},{base:0.27d,id:"movement_speed"},{base:1.0d,id:"knockback_resistance"},{base:1.0d,id:"scale"}],Health:2.0f,Invulnerable:1b}
 
 execute if score @s AzrEntityTimer matches 176..200 as @n[tag=AzrielNPC_rowen] at @s run tp @s ~ ~ ~ facing -79696 59 -2320
 
