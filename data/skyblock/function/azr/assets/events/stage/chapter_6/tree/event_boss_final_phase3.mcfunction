@@ -4,6 +4,7 @@ execute if score @s rng1 matches 3003 run tellraw @a[tag=azrShowDialog] [{text:"
 execute if score @s rng1 matches 3018 run tellraw @a[tag=azrShowDialog] [{text:"沙利叶：",color:"#c7eeb9",bold:1b},{bold: false,text:"\n“为我们留下的，仅有死斗这条路了。”",color:"white"}]
 execute if score @s rng1 matches 3027 run tellraw @a[tag=azrShowDialog] [{text:"沙利叶：",color:"#c7eeb9",bold:1b},{bold: false,text:"\n“若你真的是我苦苦等寻之人……那就，在这里证明给我看吧。”",color:"white"}]
 
+execute if score @s rng1 matches 3003 positioned -79851 180.3 2 run kill @e[tag=AzrielNPC_sariel,type=mannequin]
 execute if score @s rng1 matches 3003 positioned -79851 180.3 2 run playsound entity.wither.spawn neutral @a ~ ~ ~ 3 0.7
 execute if score @s rng1 matches 3003 positioned -79851 180.3 2 run playsound block.beacon.deactivate neutral @a ~ ~ ~ 10 0.7
 execute if score @s rng1 matches 3003 positioned -79851 180.3 2 run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
