@@ -38,7 +38,9 @@ execute if entity @s[tag=AzrSarielP3Skull] if score @s rng4 matches 1 if score @
 execute if entity @s[tag=AzrSarielP3Skull] if score @s rng4 matches 1 if score @s rng3 matches 186 at @p[tag=azrPlayer,distance=..100] rotated as @n[type=marker,tag=AzrSarielP3ChosenTarget,distance=..100] rotated ~ 0 positioned ^ ^ ^3 positioned ~ 186 ~ run tp @n[type=marker,tag=AzrSarielP3ChosenTarget,distance=..100] ~ ~ ~
 execute if entity @s[tag=AzrSarielP3Skull] if score @s rng4 matches 1 if score @s rng3 matches 187 at @p[tag=azrPlayer,distance=..100] rotated as @n[type=marker,tag=AzrSarielP3ChosenTarget,distance=..100] rotated ~ 0 positioned ^ ^ ^3 positioned ~ 187 ~ run tp @n[type=marker,tag=AzrSarielP3ChosenTarget,distance=..100] ~ ~ ~
 execute if entity @s[tag=AzrSarielP3Skull] at @s unless entity @n[type=marker,tag=AzrSarielP3ChosenTarget,distance=..0.05] facing entity @n[type=marker,tag=AzrSarielP3ChosenTarget,distance=..100] feet run tp @s ^ ^ ^0.05
-execute if entity @s[tag=AzrSarielP3Skull] at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] eyes
+execute if entity @s[tag=AzrSarielP3Skull] at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
+# 外观是独立的骑乘展示实体，需要单独转向，不能只转不可见的岩浆怪本体。
+execute if entity @s[tag=AzrSarielP3SkullView] at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
 execute if entity @s[tag=AzrSarielP3Skull] at @s run particle minecraft:soul ~ ~0.4 ~ 0.2 0.2 0.2 0.015 1
 execute if entity @s[tag=AzrSarielP3Skull] at @s run particle minecraft:soul_fire_flame ~ ~0.4 ~ 0.25 0.25 0.25 0.01 1
 # 三秒一次；火球用block_display本身移动，不再配一个移动marker。

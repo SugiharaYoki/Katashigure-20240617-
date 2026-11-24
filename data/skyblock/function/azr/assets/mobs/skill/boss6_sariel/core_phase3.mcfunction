@@ -71,9 +71,9 @@ execute if entity @s[tag=AzrSarielP3Hurt] run scoreboard players operation #Sari
 execute if entity @s[tag=AzrSarielP3Hurt] if score #SarielHitWindow rng20 matches ..200 run scoreboard players set @s AzrP3Stun 1
 execute if entity @s[tag=AzrSarielP3Hurt] if score #SarielHitWindow rng20 matches ..200 run scoreboard players set @s AzrP3Rest 1000
 tag @s remove AzrSarielP3Hurt
-# 维持实战可受击；每tick回满，图腾兜住单次致命伤，结束时清空副手再kill。
+# 维持实战可受击并每tick回满；仅清除旧版本留下的不死图腾。
 data merge entity @s {NoGravity:1b,Invulnerable:0b,Health:800.0f,Motion:[0.0d,0.0d,0.0d]}
-item replace entity @s weapon.offhand with minecraft:totem_of_undying
+execute if items entity @s weapon.offhand minecraft:totem_of_undying run item replace entity @s weapon.offhand with minecraft:air
 scoreboard players set @s Health 800
 scoreboard players operation #SarielP3Remain rng20 = @s rng19
 scoreboard players operation #SarielP3Remain rng20 *= #SarielMinus rng20
@@ -199,7 +199,7 @@ execute if score @s rng2 matches 2 if score @s rng1 matches 1 run scoreboard pla
 execute if score @s rng2 matches 2 if score @s rng1 matches 2.. if score @s rng10 matches 0 run scoreboard players remove @s rng8 1
 scoreboard players set @s rng7 0
 execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 0 if score @s rng9 matches ..3 if score @s rng8 matches ..0 run scoreboard players set @s rng7 3
-# 每次随机走6~9段0.6格，即3.6~5.4格(原来的2~3倍)，逐段检查通路和3格停步范围。
+# 每次随机走6~9段0.72格，即4.32~6.48格，逐段检查通路和3格停步范围。
 execute if score @s rng7 matches 3 store result score @s rng14 run random value 6..9
 execute if score @s rng7 matches 3 if score @s rng14 matches 1.. at @s unless entity @p[tag=azrPlayer,distance=..3] facing entity @p[tag=azrPlayer,distance=..100] feet rotated ~ 0 positioned ^ ^ ^0.72 if block ~ ~ ~ #skyblock:filament_passable if block ~ ~1 ~ #skyblock:filament_passable run tp @s ~ ~ ~
 execute if score @s rng7 matches 3 if score @s rng14 matches 2.. at @s unless entity @p[tag=azrPlayer,distance=..3] facing entity @p[tag=azrPlayer,distance=..100] feet rotated ~ 0 positioned ^ ^ ^0.72 if block ~ ~ ~ #skyblock:filament_passable if block ~ ~1 ~ #skyblock:filament_passable run tp @s ~ ~ ~
@@ -321,6 +321,20 @@ execute if score #SarielWasCooling rng20 matches 0 if score @s rng1 matches ..-1
 execute if score @s AzrP3Stun matches 2 run data modify entity @s pose set value "crouching"
 execute as @e[tag=AzrSarielFx,tag=!AzrSarielP3Assigned,distance=..100] run scoreboard players operation @s AzrP3Cast = #SarielSpawnCast rng20
 tag @e[tag=AzrSarielFx,tag=!AzrSarielP3Assigned,distance=..100] add AzrSarielP3Assigned
+# 普通冷却期间走位：远处靠近、3格内后退、3~6格侧移；硬直和招式动作期间不附加移动。
+# rng16只记录走位方向周期；每次移动检查脚部、头部和脚下支撑，避免穿墙或走出场地。
+scoreboard players set #SarielWalk rng20 0
+execute if score #SarielWasCooling rng20 matches 1 if score @s rng1 matches ..-1 if score @s rng6 matches 0 unless score @s AzrP3Stun matches 2 at @s if entity @p[tag=azrPlayer,distance=..100] run scoreboard players set #SarielWalk rng20 1
+execute if score #SarielWalk rng20 matches 1 at @s if entity @p[tag=azrPlayer,distance=3..6] run scoreboard players set #SarielWalk rng20 3
+execute if score #SarielWalk rng20 matches 1.. at @s if entity @p[tag=azrPlayer,distance=..3] run scoreboard players set #SarielWalk rng20 2
+execute if score #SarielWalk rng20 matches 1.. run scoreboard players add @s rng16 1
+execute if score @s rng16 matches 81.. run scoreboard players set @s rng16 1
+execute if score #SarielWalk rng20 matches 1 at @s rotated ~ 0 positioned ^ ^ ^0.1 if block ~ ~ ~ #skyblock:filament_passable if block ~ ~1 ~ #skyblock:filament_passable unless block ~ ~-1 ~ #skyblock:filament_passable run tp @s ~ ~ ~
+execute if score #SarielWalk rng20 matches 2 at @s rotated ~180 0 positioned ^ ^ ^0.1 if block ~ ~ ~ #skyblock:filament_passable if block ~ ~1 ~ #skyblock:filament_passable unless block ~ ~-1 ~ #skyblock:filament_passable run tp @s ~ ~ ~
+execute if score #SarielWalk rng20 matches 3 if score @s rng16 matches 1..40 at @s rotated ~90 0 positioned ^ ^ ^0.08 if block ~ ~ ~ #skyblock:filament_passable if block ~ ~1 ~ #skyblock:filament_passable unless block ~ ~-1 ~ #skyblock:filament_passable run tp @s ~ ~ ~
+execute if score #SarielWalk rng20 matches 3 if score @s rng16 matches 41..80 at @s rotated ~-90 0 positioned ^ ^ ^0.08 if block ~ ~ ~ #skyblock:filament_passable if block ~ ~1 ~ #skyblock:filament_passable unless block ~ ~-1 ~ #skyblock:filament_passable run tp @s ~ ~ ~
+execute if score #SarielWalk rng20 matches 1.. at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
+
 scoreboard players add @s rng18 1
 execute if score @s rng18 matches 2.. run scoreboard players set @s rng18 0
 execute if score @s rng17 matches ..39 run scoreboard players add @s rng17 1
@@ -334,7 +348,6 @@ execute if score @s rng18 matches 0 if score @s rng2 matches 5 if score @s rng1 
 execute if score @s rng18 matches 0 if score @s rng2 matches 5 if score @s rng1 matches 5..10 at @s rotated ~ 0 positioned ^ ^1.35 ^-0.35 rotated ~90 25 run function skyblock:azr/assets/mobs/skill/boss6_sariel/wings
 execute if score @s rng18 matches 0 if score @s rng2 matches 5 if score @s rng1 matches 11..16 at @s rotated ~ 0 positioned ^ ^1.35 ^-0.35 rotated ~90 -10 run function skyblock:azr/assets/mobs/skill/boss6_sariel/wings
 
-# 到时强制结束；清掉图腾后kill，事件端据此停止音乐并清理战场攻击。
+# 到时强制结束；事件端据此停止音乐并清理战场攻击。
 execute if score @s rng19 matches 5960.. run scoreboard players set #SarielP3Done rng20 1
-execute if score @s rng19 matches 5960.. run item replace entity @s weapon.offhand with air
 execute if score @s rng19 matches 5960.. run kill @s
