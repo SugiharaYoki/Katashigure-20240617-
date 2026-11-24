@@ -57,58 +57,58 @@ execute if score @s AzrEntityTimer matches 360 as @a[tag=azrShowDialog] at @s ru
 execute if score @s AzrEntityTimer matches 362 run scoreboard players set @s AzrEntityTimer 500
 execute if score @s AzrEntityTimer matches 362.. as @p[tag=azrPlayer] at @s positioned ~ ~5 ~ run particle cherry_leaves ~ ~ ~ 5 1 5 0 5
 
-execute if score @s AzrEntityTimer matches 501 run tellraw @a[tag=azrShowDialog] [{text:"- 配乐列表 -",color:"white",bold:1b}]
-execute if score @s AzrEntityTimer matches 501 run tellraw @a[tag=azrShowDialog] [{text:"opening - onoken",color:"white"}]
-execute if score @s AzrEntityTimer matches 521 run tellraw @a[tag=azrShowDialog] [{text:"《From. 节奏过山车》Lethal Dose - sky_delta",color:"white"}]
-execute if score @s AzrEntityTimer matches 541 run tellraw @a[tag=azrShowDialog] [{text:"《From. Arcaea》Renegade - sky_delta",color:"white"}]
-execute if score @s AzrEntityTimer matches 561 run tellraw @a[tag=azrShowDialog] [{text:"The Guardians - Yooh",color:"white"}]
-execute if score @s AzrEntityTimer matches 581 run tellraw @a[tag=azrShowDialog] [{text:"《From. Dynamix》Grenade - sky_delta",color:"white"}]
-execute if score @s AzrEntityTimer matches 601 run tellraw @a[tag=azrShowDialog] [{text:"Caligula - sky_delta",color:"white"}]
-execute if score @s AzrEntityTimer matches 621 run tellraw @a[tag=azrShowDialog] [{text:"Psyborg Cocoon - sky_delta",color:"white"}]
-execute if score @s AzrEntityTimer matches 641 run tellraw @a[tag=azrShowDialog] [{text:"Combat High - Yooh",color:"white"}]
-execute if score @s AzrEntityTimer matches 661 run tellraw @a[tag=azrShowDialog] [{text:"Fuse - Tanchiky & sky_delta",color:"white"}]
-execute if score @s AzrEntityTimer matches 681 run tellraw @a[tag=azrShowDialog] [{text:"True Hero - Kobaryo",color:"white"}]
+execute if score @s AzrEntityTimer matches 601 run tellraw @a[tag=azrShowDialog] [{text:"- 配乐列表 -",color:"white",bold:1b}]
+execute if score @s AzrEntityTimer matches 601 run tellraw @a[tag=azrShowDialog] [{text:"opening - onoken",color:"white"}]
+execute if score @s AzrEntityTimer matches 611 run tellraw @a[tag=azrShowDialog] [{text:"《From. 节奏过山车》Lethal Dose - sky_delta",color:"white"}]
+execute if score @s AzrEntityTimer matches 621 run tellraw @a[tag=azrShowDialog] [{text:"《From. Arcaea》Renegade - sky_delta",color:"white"}]
+execute if score @s AzrEntityTimer matches 631 run tellraw @a[tag=azrShowDialog] [{text:"The Guardians - Yooh",color:"white"}]
+execute if score @s AzrEntityTimer matches 641 run tellraw @a[tag=azrShowDialog] [{text:"《From. Dynamix》Grenade - sky_delta",color:"white"}]
+execute if score @s AzrEntityTimer matches 651 run tellraw @a[tag=azrShowDialog] [{text:"Caligula - sky_delta",color:"white"}]
+execute if score @s AzrEntityTimer matches 661 run tellraw @a[tag=azrShowDialog] [{text:"Psyborg Cocoon - sky_delta",color:"white"}]
+execute if score @s AzrEntityTimer matches 671 run tellraw @a[tag=azrShowDialog] [{text:"Combat High - Yooh",color:"white"}]
+execute if score @s AzrEntityTimer matches 681 run tellraw @a[tag=azrShowDialog] [{text:"Fuse - Tanchiky & sky_delta",color:"white"}]
+execute if score @s AzrEntityTimer matches 691 run tellraw @a[tag=azrShowDialog] [{text:"True Hero - Kobaryo",color:"white"}]
 execute if score @s AzrEntityTimer matches 701 run tellraw @a[tag=azrShowDialog] [{text:"《From. CHUNITHM》Surveiller et punir - cybermiso",color:"white"}]
-execute if score @s AzrEntityTimer matches 721 run tellraw @a[tag=azrShowDialog] [{text:"《From. O.N.G.E.K.I.》Ai Nov - Feryquitous",color:"white"}]
-execute if score @s AzrEntityTimer matches 741 run tellraw @a[tag=azrShowDialog] [{text:"《From. Pop'n Music》trideca - onoken",color:"white"}]
-execute if score @s AzrEntityTimer matches 761 run tellraw @a[tag=azrShowDialog] [{text:"Destroy (sky_delta Remix) - sky_delta",color:"white"}]
-execute if score @s AzrEntityTimer matches 781 run tellraw @a[tag=azrShowDialog] [{text:"《From. Arcaea》Vicious Heroism -Traitor Version- - Kobaryo",color:"white"}]
-execute if score @s AzrEntityTimer matches 801 run tellraw @a[tag=azrShowDialog] [{text:"LiFE Garden - Yooh",color:"white"}]
-execute if score @s AzrEntityTimer matches 821 run tellraw @a[tag=azrShowDialog] [{text:"探し物 - onoken",color:"white"}]
-execute if score @s AzrEntityTimer matches 841 run tellraw @a[tag=azrShowDialog] [{text:"Replica - sky_delta feat. 藍月なくる",color:"white"}]
+execute if score @s AzrEntityTimer matches 711 run tellraw @a[tag=azrShowDialog] [{text:"《From. O.N.G.E.K.I.》Ai Nov - Feryquitous",color:"white"}]
+execute if score @s AzrEntityTimer matches 721 run tellraw @a[tag=azrShowDialog] [{text:"《From. Pop'n Music》trideca - onoken",color:"white"}]
+execute if score @s AzrEntityTimer matches 731 run tellraw @a[tag=azrShowDialog] [{text:"Destroy (sky_delta Remix) - sky_delta",color:"white"}]
+execute if score @s AzrEntityTimer matches 741 run tellraw @a[tag=azrShowDialog] [{text:"《From. Arcaea》Vicious Heroism -Traitor Version- - Kobaryo",color:"white"}]
+execute if score @s AzrEntityTimer matches 751 run tellraw @a[tag=azrShowDialog] [{text:"LiFE Garden - Yooh",color:"white"}]
+execute if score @s AzrEntityTimer matches 761 run tellraw @a[tag=azrShowDialog] [{text:"探し物 - onoken",color:"white"}]
+execute if score @s AzrEntityTimer matches 771 run tellraw @a[tag=azrShowDialog] [{text:"Replica - sky_delta feat. 藍月なくる",color:"white"}]
 
 
 
-execute if score @s AzrEntityTimer matches 501 run title @a[tag=azrShowDialog] times 2s 3s 2s
-execute if score @s AzrEntityTimer matches 501 run title @a[tag=azrShowDialog] title [{text:"『亚兹列尔的中庭花园』",color:"white",bold:1b}]
-execute if score @s AzrEntityTimer matches 501 run title @a[tag=azrShowDialog] subtitle [{text:"A Game Produced by SugiharaYoki",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 541 run title @a[tag=azrShowDialog] times 2s 3s 2s
+execute if score @s AzrEntityTimer matches 541 run title @a[tag=azrShowDialog] title [{text:"『亚兹列尔的中庭花园』",color:"white",bold:1b}]
+execute if score @s AzrEntityTimer matches 541 run title @a[tag=azrShowDialog] subtitle [{text:"A Game Produced by SugiharaYoki",color:"white",bold: false}]
 
-execute if score @s AzrEntityTimer matches 551 run title @a[tag=azrShowDialog] title [{text:"领衔程序与技术",color:"white",bold: false}]
-execute if score @s AzrEntityTimer matches 551 run title @a[tag=azrShowDialog] subtitle [{text:"SugiharaYoki、XuanYu1725_XYU",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 591 run title @a[tag=azrShowDialog] title [{text:"领衔程序与技术",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 591 run title @a[tag=azrShowDialog] subtitle [{text:"SugiharaYoki、XuanYu1725_XYU",color:"white",bold: false}]
 
-execute if score @s AzrEntityTimer matches 591 run title @a[tag=azrShowDialog] title [{text:"程序与技术",color:"white",bold: false}]
-execute if score @s AzrEntityTimer matches 591 run title @a[tag=azrShowDialog] subtitle [{text:"xiyihan、qfys521、sdgedghdg",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 631 run title @a[tag=azrShowDialog] title [{text:"程序与技术",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 631 run title @a[tag=azrShowDialog] subtitle [{text:"xiyihan、qfys521、sdgedghdg",color:"white",bold: false}]
 
-execute if score @s AzrEntityTimer matches 631 run title @a[tag=azrShowDialog] title [{text:"地图与规划",color:"white",bold: false}]
-execute if score @s AzrEntityTimer matches 631 run title @a[tag=azrShowDialog] subtitle [{text:"SugiharaYoki、Pramanix",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 671 run title @a[tag=azrShowDialog] title [{text:"地图与规划",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 671 run title @a[tag=azrShowDialog] subtitle [{text:"SugiharaYoki、Pramanix",color:"white",bold: false}]
 
-execute if score @s AzrEntityTimer matches 671 run title @a[tag=azrShowDialog] title [{text:"领衔服务支持",color:"white",bold: false}]
-execute if score @s AzrEntityTimer matches 671 run title @a[tag=azrShowDialog] subtitle [{text:"Botium_",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 711 run title @a[tag=azrShowDialog] title [{text:"领衔服务支持",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 711 run title @a[tag=azrShowDialog] subtitle [{text:"Botium_",color:"white",bold: false}]
 
-execute if score @s AzrEntityTimer matches 711 run title @a[tag=azrShowDialog] title [{text:"过往服务支持",color:"white",bold: false}]
-execute if score @s AzrEntityTimer matches 711 run title @a[tag=azrShowDialog] subtitle [{text:"MikkoAyaka",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 751 run title @a[tag=azrShowDialog] title [{text:"过往服务支持",color:"white",bold: false}]
+execute if score @s AzrEntityTimer matches 751 run title @a[tag=azrShowDialog] subtitle [{text:"MikkoAyaka",color:"white",bold: false}]
 
-execute if score @s AzrEntityTimer matches 751 run title @a[tag=azrShowDialog] title [{text:"... and You.",color:"white",bold: false}]
-
-
+execute if score @s AzrEntityTimer matches 791 run title @a[tag=azrShowDialog] title [{text:"... and You.",color:"white",bold: false}]
 
 
 
-execute if score @s rng1 matches 800 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/ending_2
-execute if score @s rng1 matches 800 run tellraw @a[tag=azrShowDialog] [{text:"达成结局：",color:"gold",bold:1b},{text:"\nLife End「花与叶的复生」",color:"white",bold: false}]
-execute if score @s rng1 matches 800 as @a[tag=azrPlayer] run function skyblock:azr/lifecycle/endgame/quit_game
 
-execute if score @s rng1 matches 801 run kill @s
+
+execute if score @s rng1 matches 850 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/ending_2
+execute if score @s rng1 matches 850 run tellraw @a[tag=azrShowDialog] [{text:"达成结局：",color:"gold",bold:1b},{text:"\nLife End「花与叶的复生」",color:"white",bold: false}]
+execute if score @s rng1 matches 850 as @a[tag=azrPlayer] run function skyblock:azr/lifecycle/endgame/quit_game
+
+execute if score @s rng1 matches 851 run kill @s
 
 
 
