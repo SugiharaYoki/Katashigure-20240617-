@@ -21,7 +21,7 @@ execute if score @s rng1 matches 3017 positioned -79872 180 2 run effect give @a
 execute if score @s rng1 matches 3017 positioned -79872 180 2 run effect give @a[tag=azrPlayer] absorption 300 19 true
 execute if score @s rng1 matches 3017 positioned -79872 180 2 run tag @n[type=mannequin,tag=AzrielNPC_sariel,distance=..100] add AzrSarielP3Active
 
-execute if score @s rng1 matches 3217 run weather clear 10000
+execute if score @s rng1 matches 3490 run weather clear 10000
 
 # 4:58由本体的tick计时结束；战斗到此结束，不擅自追加奖励或结束整局花园。
 execute if score #SarielP3Done rng20 matches 1 unless entity @s[tag=AzrSarielP3Finished] run stopsound @a[tag=azrPlayer] music minecraft:garden1.lifegarden

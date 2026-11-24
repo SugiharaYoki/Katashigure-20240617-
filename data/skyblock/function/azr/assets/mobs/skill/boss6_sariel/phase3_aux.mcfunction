@@ -25,6 +25,10 @@ execute if entity @s[type=mannequin,tag=AzrSarielPhase3] as @e[tag=AzrSarielP3Ne
 execute if entity @s[type=mannequin,tag=AzrSarielPhase3] run effect give @e[type=magma_cube,tag=AzrSarielP3New,distance=..100] minecraft:invisibility infinite 0 true
 execute if entity @s[type=mannequin,tag=AzrSarielPhase3] run tag @e[tag=AzrSarielP3New,distance=..100] remove AzrSarielP3New
 
+# 比较实际生命变化，避免HurtTime采样顺序导致漏掉受击音效。
+execute if entity @s[tag=AzrSarielP3Skull] store result score @s rng6 run data get entity @s Health 100
+execute if entity @s[tag=AzrSarielP3Skull] if score @s rng6 < @s rng5 at @s run playsound minecraft:entity.skeleton.hurt hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 1 1
+execute if entity @s[tag=AzrSarielP3Skull] run scoreboard players operation @s rng5 = @s rng6
 execute if entity @s[tag=AzrSarielP3Skull] run scoreboard players add @s rng1 1
 execute if entity @s[tag=AzrSarielP3Skull] run scoreboard players add @s rng4 1
 execute if entity @s[tag=AzrSarielP3Skull] if score @s rng4 matches 41.. run scoreboard players set @s rng4 1
@@ -55,6 +59,10 @@ execute if entity @s[tag=AzrSarielP3SkullView] run tag @s add AzrSarielP3CheckOw
 execute if entity @s[tag=AzrSarielP3CheckOwner] run scoreboard players operation #SarielSkullID rng20 = @s AzrP3SkullID
 execute if entity @s[tag=AzrSarielP3CheckOwner] run scoreboard players set #SarielSkullFound rng20 0
 execute if entity @s[tag=AzrSarielP3CheckOwner] as @e[type=magma_cube,tag=AzrSarielP3Skull,distance=..100] if score @s AzrP3SkullID = #SarielSkullID rng20 run scoreboard players set #SarielSkullFound rng20 1
+# 只由死亡位置的外观实体播放一次，随后与旧目标一起回收。
+execute if entity @s[tag=AzrSarielP3SkullView] if score #SarielSkullFound rng20 matches 0 at @s run particle minecraft:gust ~ ~ ~ 0 0 0 0 1
+execute if entity @s[tag=AzrSarielP3SkullView] if score #SarielSkullFound rng20 matches 0 at @s run particle minecraft:soul_fire_flame ~ ~ ~ 0.3 0.3 0.3 0.18 50
+execute if entity @s[tag=AzrSarielP3SkullView] if score #SarielSkullFound rng20 matches 0 at @s run playsound minecraft:entity.skeleton.death hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 1.2 1
 execute if entity @s[tag=AzrSarielP3CheckOwner] if score #SarielSkullFound rng20 matches 0 run kill @s
 
 # 火球在玩家正在使用现有parry窗口时反射；反射后忽略地形，只碰沙利叶。

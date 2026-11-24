@@ -164,14 +164,18 @@ execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng1
 # 替代动作放出射线即开始2秒冷却；射线按原流程独立完成预警与伤害。
 execute if score @s rng2 matches 4 if score @s rng1 matches 1 run scoreboard players set @s rng1 -40
 
-# C：0.5秒升高3格，在离地4格处留下花球；随后1.5秒缓降，落地后冷却2秒。
+# C：升高3格留下花球，锁定随机水平方向，0.3秒空中冲刺3格，再快速落地；冷却2秒。
 execute if score @s rng2 matches 3 if score @s rng1 matches 1 at @s positioned ~ 164.2 ~ run function skyblock:azr/assets/events/effects/magic_circle/andralune_halfpower
 execute if score @s rng2 matches 3 if score @s rng1 matches 1..10 at @s run tp @s ~ ~0.3 ~
 execute if score @s rng2 matches 3 if score @s rng1 matches 10 at @s run tp @s ~ 167 ~
 execute if score @s rng2 matches 3 if score @s rng1 matches 10 at @s positioned ~ 168 ~ run summon marker ~ ~ ~ {Tags:["AzrSarielFx","AzrSarielFlowerOrb"]}
-execute if score @s rng2 matches 3 if score @s rng1 matches 11..40 at @s run tp @s ~ ~-0.1 ~
-execute if score @s rng2 matches 3 if score @s rng1 matches 40 at @s run tp @s ~ 164 ~
-execute if score @s rng2 matches 3 if score @s rng1 matches 40 run scoreboard players set @s rng1 -40
+execute if score @s rng2 matches 3 if score @s rng1 matches 10 store result score @s rng5 run random value 0..359
+execute if score @s rng2 matches 3 if score @s rng1 matches 11..16 store result entity @s Rotation[0] float 1 run scoreboard players get @s rng5
+execute if score @s rng2 matches 3 if score @s rng1 matches 11..16 at @s rotated ~ 0 positioned ^ ^ ^0.5 if block ~ ~ ~ #skyblock:filament_passable if block ~ ~1 ~ #skyblock:filament_passable run tp @s ~ ~ ~
+execute if score @s rng2 matches 3 if score @s rng1 matches 11..16 at @s run rotate @s facing entity @p[tag=azrPlayer,distance=..100] feet
+execute if score @s rng2 matches 3 if score @s rng1 matches 17..22 at @s run tp @s ~ ~-0.5 ~
+execute if score @s rng2 matches 3 if score @s rng1 matches 22 at @s run tp @s ~ 164 ~
+execute if score @s rng2 matches 3 if score @s rng1 matches 22 run scoreboard players set @s rng1 -40
 
 # D：原地扇翼0.8秒；在最近玩家脚部上方4格锁定一个直径5格的圆环。
 # 圆环独立预警1秒后落下；本体动作结束后沿用2秒冷却。
