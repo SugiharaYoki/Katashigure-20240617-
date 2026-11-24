@@ -74,7 +74,8 @@ forceload add -79260 -896
 
 
 
-
+#生之命结尾
+forceload add -79707 -2367
 
 
 

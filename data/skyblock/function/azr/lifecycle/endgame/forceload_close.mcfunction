@@ -38,6 +38,8 @@ forceload remove -79776 -2081
 forceload remove -79278 -770
 forceload remove -79260 -896
 
+#生之命结尾
+forceload remove -79707 -2367
 
 
 
