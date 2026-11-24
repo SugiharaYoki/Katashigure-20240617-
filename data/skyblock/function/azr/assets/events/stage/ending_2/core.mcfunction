@@ -6,6 +6,9 @@ execute if score @s AzrEntityTimer matches 2.. as @a[tag=azrPlayer,tag=AzrEnding
 execute as @a[tag=azrPlayer,tag=AzrEndingInventoryPending,tag=AzrEndingInventorySaved] run clear @s *[!custom_data~{revival_star:1b}]
 tag @a[tag=azrPlayer,tag=AzrEndingInventoryPending,tag=AzrEndingInventorySaved] remove AzrEndingInventoryPending
 
+execute if score @s AzrEntityTimer matches 2.. as @a[tag=azrPlayer] at @s run effect give @s regeneration infinite 9 true
+execute if score @s AzrEntityTimer matches 2.. as @a[tag=azrPlayer] at @s run effect give @s saturation infinite 9 true
+
 execute if score @s AzrEntityTimer matches 38 as @a[tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“莉茜，该吃晚饭啦。已经读了一天了吧。”",color:"white",bold: false}]
 execute if score @s AzrEntityTimer matches 36 as @a[tag=azrShowDialog] at @s run playsound minecraft:bookstore music @s ~ ~ ~ 0.8
 execute if score @s AzrEntityTimer matches 36 as @a[tag=azrShowDialog] at @s run playsound minecraft:item.book.page_turn master @s ~ ~ ~ 10 0.9
