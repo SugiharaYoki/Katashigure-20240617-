@@ -5,7 +5,7 @@ execute if score @s rng1 matches 1999.. run scoreboard players set @s rng1 1990
 execute if score @s rng1 matches 1003 run scoreboard players set stage Azr_system 121
 execute if score @s rng1 matches 1003 run stopsound @a[tag=azrPlayer]
 execute if score @s rng1 matches 1003 run tp @a[tag=azrPlayer] -79566 15 -7
-execute if score @s rng1 matches 1003 run stopsound @s music *
+execute if score @s rng1 matches 1003 run stopsound @s music
 execute if score @s rng1 matches 1003 run bossbar remove azr:boss_hp_bar
 execute if score @s rng1 matches 1003 run bossbar remove azr:boss_hp_bar_2
 execute if score @s rng1 matches 1003 positioned -79571 164 -13 run kill @e[tag=AzrSarielFx,distance=..100]
