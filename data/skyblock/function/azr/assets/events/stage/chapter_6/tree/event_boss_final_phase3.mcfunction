@@ -23,6 +23,7 @@ execute if score @s rng1 matches 3017 positioned -79872 180 2 run tag @n[type=ma
 execute if score @s rng1 matches 3490 run weather clear 10000
 
 # 4:58由本体的tick计时结束；战斗到此结束，不擅自追加奖励或结束整局花园。
+execute if score #SarielP3Done rng20 matches 1 unless entity @s[tag=AzrSarielP3Finished] as @a[tag=azrShowDialog] run stopsound @s
 execute if score #SarielP3Done rng20 matches 1 unless entity @s[tag=AzrSarielP3Finished] run bossbar remove azr:boss_hp_bar
 execute if score #SarielP3Done rng20 matches 1 unless entity @s[tag=AzrSarielP3Finished] positioned -79872 180 2 run kill @e[tag=AzrSarielFx,distance=..100]
 execute if score #SarielP3Done rng20 matches 1 unless entity @s[tag=AzrSarielP3Finished] positioned -79872 180 2 run kill @e[tag=AzrSarielP3Aux,distance=..100]
