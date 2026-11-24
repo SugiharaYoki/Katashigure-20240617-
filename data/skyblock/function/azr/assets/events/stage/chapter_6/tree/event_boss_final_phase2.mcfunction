@@ -76,7 +76,7 @@ execute if score @s rng1 matches 1003.. run scoreboard players operation @s rng7
 # 新击破优先于旧组后半句；同一轮多颗击破时依次播首句，只保留最后一组的延迟句。
 execute if score @s rng7 > @s rng6 run scoreboard players set @s rng8 18
 execute if score @s rng6 matches ..0 if score @s rng7 matches 1.. positioned -79566 6 -7 run function skyblock:azr/assets/mobs/skill/boss5_focalor/summon
-execute if score @s rng6 matches ..0 if score @s rng7 matches 1.. positioned -79566 6 -7 as @n[tag=AzrielNPC_focalor,distance=..10.5] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+execute positioned -79566 6 -7 as @n[tag=AzrielNPC_focalor,distance=..200] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
 execute if score @s rng6 matches ..0 if score @s rng7 matches 1.. run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“如果你能听见我的声音，无需恐慌。”",color:"white"}]
 execute if score @s rng6 matches ..1 if score @s rng7 matches 2.. run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“我们从未聊过有关你父母的事情。”",color:"white"}]
 execute if score @s rng6 matches ..2 if score @s rng7 matches 3.. run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“曾经养大你的父母？”",color:"white"}]
