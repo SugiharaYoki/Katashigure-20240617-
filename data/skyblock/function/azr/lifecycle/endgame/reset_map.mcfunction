@@ -1175,7 +1175,7 @@ execute unless block -79833 179 -38 air run fill -79832 179 42 -79912 187 42 air
 execute unless block -79833 179 -38 air run fill -79912 179 42 -79912 187 -38 air
 execute unless block -79833 179 -38 air run fill -79912 179 -38 -79832 187 -38 air
 
-execute unless block -79833 179 -38 air run fill -79912 180 42 -79832 180 -38 air
+execute unless block -79833 179 -38 air run fill -79912 180 42 -79832 180 -38 air replace soul_fire
 execute unless block -79833 179 -38 air run fill -79912 179 42 -79832 179 -38 air
 
 

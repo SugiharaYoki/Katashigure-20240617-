@@ -13,7 +13,7 @@ execute if score @s rng1 matches 3003 positioned -79851 183.3 2 run function sky
 execute if score @s rng1 matches 3003 positioned -79851 180 2 run function skyblock:azr/assets/mobs/skill/boss6_sariel/summon_phase3
 
 
-execute if score @s rng1 matches 3013 as @a[tag=azrPlayer] at @s run playsound minecraft:garden1.lifegarden music @s ~ ~ ~ 0.73
+execute if score @s rng1 matches 3013 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden1.lifegarden music @s ~ ~ ~ 0.73
 
 # 3015时开始实际计时和每tick行动；此前保持登场无敌。
 execute if score @s rng1 matches 3017 positioned -79872 180 2 run effect give @a[tag=azrPlayer] regeneration 300 2 true

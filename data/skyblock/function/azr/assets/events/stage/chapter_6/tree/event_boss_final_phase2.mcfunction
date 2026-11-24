@@ -5,7 +5,9 @@ execute if score @s rng1 matches 1999.. run scoreboard players set @s rng1 1990
 execute if score @s rng1 matches 1003 run scoreboard players set stage Azr_system 121
 execute if score @s rng1 matches 1003 run stopsound @a[tag=azrPlayer]
 execute if score @s rng1 matches 1003 run tp @a[tag=azrPlayer] -79566 15 -7
+execute if score @s rng1 matches 1003 run stopsound @s music *
 execute if score @s rng1 matches 1003 run bossbar remove azr:boss_hp_bar
+execute if score @s rng1 matches 1003 run bossbar remove azr:boss_hp_bar_2
 execute if score @s rng1 matches 1003 positioned -79571 164 -13 run kill @e[tag=AzrSarielFx,distance=..100]
 execute if score @s rng1 matches 1003 run scoreboard players set @a[tag=azrPlayer] AzrSoulMark 0
 execute if score @s rng1 matches 1003 run scoreboard players set @a[tag=azrPlayer] AzrSoulBurst 0
@@ -119,6 +121,7 @@ execute if score @s rng1 matches 2999 run scoreboard players set @s rng1 2990
 
 # 最终场地中心(-79872.5,195,2.5)，先送玩家上空，再由内外两端逐层合拢地板。
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 240 run time set day
+execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 251 run fill -79912 180 42 -79832 180 -38 air replace soul_fire
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 251 run tp @a[tag=azrPlayer] -79872.5 195 2.5
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 251 run effect give @a[tag=azrPlayer] minecraft:slow_falling 5 49 true
 execute if entity @s[tag=AzrSarielPhase2Cleared] if score @s rng9 matches 252 run setblock -79872 179 2 minecraft:white_stained_glass
