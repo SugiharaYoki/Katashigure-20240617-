@@ -101,3 +101,38 @@ execute if entity @s[tag=AzrSarielP3Fireball,tag=AzrSarielP3Explode,tag=!AzrSari
 execute if entity @s[tag=AzrSarielP3Fireball,tag=AzrSarielP3Explode,tag=!AzrSarielP3Reflected] at @s rotated ~ 0 positioned ^ ^ ^1.3 positioned ~ 180 ~ if block ~ ~ ~ minecraft:air unless block ~ ~-1 ~ #skyblock:filament_passable unless block ~ ~-1 ~ minecraft:barrier run setblock ~ ~ ~ minecraft:soul_fire strict
 execute if entity @s[tag=AzrSarielP3Fireball,tag=AzrSarielP3Explode] run kill @s
 execute if entity @s[tag=AzrSarielP3Fireball] if score @s rng1 matches 200.. run kill @s
+
+# 下落点：玩家水平半径15格内随机角度/距离，初始Y=198；20秒后回收。
+execute if entity @s[tag=AzrSarielP3RainNew] store result entity @s Rotation[0] float 1 run random value 0..359
+execute if entity @s[tag=AzrSarielP3RainNew] store result score @s rng2 run random value 0..15
+execute if entity @s[tag=AzrSarielP3RainNew] if score @s rng2 matches 1 at @s rotated ~ 0 run tp @s ^ ^ ^1
+execute if entity @s[tag=AzrSarielP3RainNew] if score @s rng2 matches 2 at @s rotated ~ 0 run tp @s ^ ^ ^2
+execute if entity @s[tag=AzrSarielP3RainNew] if score @s rng2 matches 3 at @s rotated ~ 0 run tp @s ^ ^ ^3
+execute if entity @s[tag=AzrSarielP3RainNew] if score @s rng2 matches 4 at @s rotated ~ 0 run tp @s ^ ^ ^4
+execute if entity @s[tag=AzrSarielP3RainNew] if score @s rng2 matches 5 at @s rotated ~ 0 run tp @s ^ ^ ^5
+execute if entity @s[tag=AzrSarielP3RainNew] if score @s rng2 matches 6 at @s rotated ~ 0 run tp @s ^ ^ ^6
+execute if entity @s[tag=AzrSarielP3RainNew] if score @s rng2 matches 7 at @s rotated ~ 0 run tp @s ^ ^ ^7
+execute if entity @s[tag=AzrSarielP3RainNew] if score @s rng2 matches 8 at @s rotated ~ 0 run tp @s ^ ^ ^8
+execute if entity @s[tag=AzrSarielP3RainNew] if score @s rng2 matches 9 at @s rotated ~ 0 run tp @s ^ ^ ^9
+execute if entity @s[tag=AzrSarielP3RainNew] if score @s rng2 matches 10 at @s rotated ~ 0 run tp @s ^ ^ ^10
+execute if entity @s[tag=AzrSarielP3RainNew] if score @s rng2 matches 11 at @s rotated ~ 0 run tp @s ^ ^ ^11
+execute if entity @s[tag=AzrSarielP3RainNew] if score @s rng2 matches 12 at @s rotated ~ 0 run tp @s ^ ^ ^12
+execute if entity @s[tag=AzrSarielP3RainNew] if score @s rng2 matches 13 at @s rotated ~ 0 run tp @s ^ ^ ^13
+execute if entity @s[tag=AzrSarielP3RainNew] if score @s rng2 matches 14 at @s rotated ~ 0 run tp @s ^ ^ ^14
+execute if entity @s[tag=AzrSarielP3RainNew] if score @s rng2 matches 15 at @s rotated ~ 0 run tp @s ^ ^ ^15
+execute if entity @s[tag=AzrSarielP3RainNew] run scoreboard players set @s rng1 0
+execute if entity @s[tag=AzrSarielP3RainNew] run tag @s remove AzrSarielP3RainNew
+execute if entity @s[tag=AzrSarielP3Rain] run scoreboard players add @s rng1 1
+execute if entity @s[tag=AzrSarielP3Rain] at @s run tp @s ~ ~-0.15 ~
+# 3:09时包括已经生成的下落点一并切换；玩家离开后立即恢复end_rod外观。
+execute if entity @s[tag=AzrSarielP3Rain,tag=!AzrSarielP3RainLight] at @s if entity @n[type=mannequin,tag=AzrSarielPhase3,distance=..100,scores={rng19=3780..}] run tag @s add AzrSarielP3RainLight
+execute if entity @s[tag=AzrSarielP3RainLight] run tag @s remove AzrSarielP3RainHealing
+execute if entity @s[tag=AzrSarielP3RainLight] at @s if entity @a[tag=azrPlayer,distance=..4] run tag @s add AzrSarielP3RainHealing
+execute if entity @s[tag=AzrSarielP3Rain,tag=!AzrSarielP3RainLight] at @s run particle minecraft:pale_oak_leaves ~ ~ ~ 0 0 0 0 1
+execute if entity @s[tag=AzrSarielP3RainLight,tag=!AzrSarielP3RainHealing] at @s run particle minecraft:end_rod ~ ~ ~ 0 0 0 0 1
+execute if entity @s[tag=AzrSarielP3RainHealing] at @s run particle minecraft:cherry_leaves ~ ~ ~ 0 0 0 0 1
+# 每5tick刷新1秒再生V，避免逐tick重置再生内部计时；离开后最多残留1秒。
+execute if entity @s[tag=AzrSarielP3RainLight] run scoreboard players add @s rng3 1
+execute if entity @s[tag=AzrSarielP3RainHealing] if score @s rng3 matches 1 at @s run effect give @a[tag=azrPlayer,distance=..4] minecraft:regeneration 1 4 true
+execute if entity @s[tag=AzrSarielP3RainLight] if score @s rng3 matches 5.. run scoreboard players set @s rng3 0
+execute if entity @s[tag=AzrSarielP3Rain] if score @s rng1 matches 400.. run kill @s
