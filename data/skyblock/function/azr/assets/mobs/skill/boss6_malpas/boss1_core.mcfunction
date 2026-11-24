@@ -15,7 +15,7 @@ execute unless score @s rng13 matches 0.. run scoreboard players set @s rng13 0
 execute unless score @s rng14 matches 5..10 run scoreboard players set @s rng14 5
 tag @s add AzrMalpas_active
 data merge entity @s {NoGravity:1b,Motion:[0.0d,0.0d,0.0d]}
-execute at @s store result score @s rng20 run data get entity @n[type=mannequin,tag=AzrielNPC_raum,tag=azr_raum_with_malpas,nbt=!{Health:0.0f},distance=..200] Health 1000
+execute at @s store result score @s rng20 run data get entity @n[type=mannequin,tag=AzrielNPC_raum,tag=azr_raum_with_malpas,distance=..200] Health 1000
 execute if score @s rng2 matches 0 if score @s rng13 >= @s rng14 run scoreboard players set @s rng2 5
 execute if score @s rng2 matches 0 at @s run function skyblock:azr/assets/mobs/skill/boss6_malpas/boss1_follow
 execute if score @s rng2 matches 0 if score @s rng4 matches 1.. run scoreboard players remove @s rng4 1

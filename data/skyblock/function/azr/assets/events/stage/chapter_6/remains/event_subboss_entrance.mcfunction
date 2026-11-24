@@ -91,7 +91,7 @@ execute if score @s rng1 matches 20..999 if score @s rng2 matches 3 positioned -
 execute if score @s rng1 matches 20..999 if score @s rng2 matches 3 if score @s rng3 matches 3.. run scoreboard players set @s rng2 -20
 
 # 临时标记锁定唯一一次随机结果，后续激活、特效和血条都作用于同一只。
-execute if score @s rng1 matches 20..999 if score @s rng2 matches 3 positioned -79729 5 11 run tag @e[type=stray,tag=AzrielBossEntrance,tag=!AzrielBossEntrance_StartActing,distance=..80,nbt=!{Health:0.0f},sort=random,limit=1] add AzrielBossEntrance_Activating
+execute if score @s rng1 matches 20..999 if score @s rng2 matches 3 positioned -79729 5 11 run tag @e[type=stray,tag=AzrielBossEntrance,tag=!AzrielBossEntrance_StartActing,distance=..80,sort=random,limit=1] add AzrielBossEntrance_Activating
 execute if score @s rng1 matches 20..999 if score @s rng2 matches 3 positioned -79729 5 11 as @e[type=stray,tag=AzrielBossEntrance_Activating,distance=..80] run data merge entity @s {Invulnerable:0b,NoAI:0b}
 execute if score @s rng1 matches 20..999 if score @s rng2 matches 3 positioned -79729 5 11 run tag @e[type=stray,tag=AzrielBossEntrance_Activating,distance=..80] add AzrielBossEntrance_StartActing
 execute if score @s rng1 matches 20..999 if score @s rng2 matches 3 positioned -79729 5 11 run tag @e[type=stray,tag=AzrielBossEntrance_Activating,distance=..80] add AzrielMob_level_ed
