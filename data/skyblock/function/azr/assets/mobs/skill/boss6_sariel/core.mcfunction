@@ -132,7 +132,7 @@ execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng1
 execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 0 if score @s rng9 matches 4.. run scoreboard players set @s rng10 2
 execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 1.. run scoreboard players add @s rng11 1
 
-# X：以脚底为中心的两条倾斜交叉叶环，半径3→5→7；0.75秒时横扫。
+# X：交叉叶环预警半径3→5→7；第16/24/32/44tick依次横扫半径1/2/3/4格，最后进入冷却。
 execute if score @s rng2 matches 2 if score @s rng1 matches 1.. if score @s rng10 matches 1 run function skyblock:azr/assets/mobs/skill/boss6_sariel/particle_round_leaves_gradient
 
 # B四次冲刺落空，或C被现存花球阻止时，共用这组五道水平激光。

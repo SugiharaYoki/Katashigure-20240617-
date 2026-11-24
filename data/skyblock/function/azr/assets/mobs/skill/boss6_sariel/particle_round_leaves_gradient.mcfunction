@@ -434,31 +434,123 @@ execute if score @s rng11 matches 13 at @s rotated ~ 0 positioned ^4.651 ^-4.651
 execute if score @s rng11 matches 13 at @s rotated ~ 0 positioned ^4.651 ^-4.651 ^-2.394 run particle minecraft:end_rod ~ ~ ~ 0.025 0.025 0.025 0 1
 execute if score @s rng11 matches 13 at @s rotated ~ 0 positioned ^4.875 ^-4.875 ^-1.216 run particle minecraft:pale_oak_leaves ~ ~ ~ 0.07 0.07 0.07 0 2
 execute if score @s rng11 matches 13 at @s rotated ~ 0 positioned ^4.875 ^-4.875 ^-1.216 run particle minecraft:end_rod ~ ~ ~ 0.025 0.025 0.025 0 1
+
+# 四次横扫：首次仍为0.75秒；其后分别间隔0.4、0.4、0.6秒。每次伤害范围与本轮半径一致。
+# 第16tick：半径1格，16点mob_attack与生灵破灭。
 execute if score @s rng11 matches 16 at @s run playsound minecraft:entity.player.attack.sweep hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 2 1.3
-execute if score @s rng11 matches 16 at @s rotated ~0 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~15 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~30 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~45 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~60 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~75 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~90 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~105 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~120 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~135 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~150 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~165 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~180 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~195 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~210 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~225 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~240 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~255 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~270 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~285 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~300 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~315 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~330 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
-execute if score @s rng11 matches 16 at @s rotated ~345 0 positioned ^ ^1 ^6.5 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~0 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~15 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~30 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~45 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~60 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~75 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~90 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~105 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~120 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~135 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~150 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~165 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~180 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~195 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~210 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~225 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~240 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~255 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~270 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~285 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~300 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~315 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~330 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 16 at @s rotated ~345 0 positioned ^ ^1 ^1 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
 execute if score @s rng11 matches 16 at @s run scoreboard players set #SarielDamage rng20 16
-execute if score @s rng11 matches 16 at @s as @a[tag=azrPlayer,distance=..7] run function skyblock:azr/assets/mobs/skill/boss6_sariel/hit
-execute if score @s rng11 matches 16 run scoreboard players set @s rng1 -40
+execute if score @s rng11 matches 16 at @s as @a[tag=azrPlayer,distance=..1] run function skyblock:azr/assets/mobs/skill/boss6_sariel/hit
+
+# 第24tick：半径2格，16点mob_attack与生灵破灭。
+execute if score @s rng11 matches 24 at @s run playsound minecraft:entity.player.attack.sweep hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 2 1.3
+execute if score @s rng11 matches 24 at @s rotated ~0 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~15 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~30 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~45 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~60 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~75 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~90 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~105 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~120 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~135 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~150 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~165 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~180 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~195 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~210 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~225 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~240 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~255 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~270 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~285 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~300 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~315 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~330 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s rotated ~345 0 positioned ^ ^1 ^2 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 24 at @s run scoreboard players set #SarielDamage rng20 16
+execute if score @s rng11 matches 24 at @s as @a[tag=azrPlayer,distance=..2] run function skyblock:azr/assets/mobs/skill/boss6_sariel/hit
+
+# 第32tick：半径3格，16点mob_attack与生灵破灭。
+execute if score @s rng11 matches 32 at @s run playsound minecraft:entity.player.attack.sweep hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 2 1.3
+execute if score @s rng11 matches 32 at @s rotated ~0 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~15 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~30 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~45 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~60 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~75 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~90 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~105 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~120 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~135 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~150 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~165 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~180 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~195 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~210 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~225 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~240 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~255 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~270 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~285 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~300 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~315 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~330 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s rotated ~345 0 positioned ^ ^1 ^3 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 32 at @s run scoreboard players set #SarielDamage rng20 16
+execute if score @s rng11 matches 32 at @s as @a[tag=azrPlayer,distance=..3] run function skyblock:azr/assets/mobs/skill/boss6_sariel/hit
+
+# 第44tick：半径4格，16点mob_attack与生灵破灭。
+execute if score @s rng11 matches 44 at @s run playsound minecraft:entity.player.attack.sweep hostile @a[tag=azrPlayer,distance=..100] ~ ~ ~ 2 1.3
+execute if score @s rng11 matches 44 at @s rotated ~0 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~15 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~30 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~45 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~60 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~75 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~90 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~105 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~120 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~135 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~150 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~165 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~180 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~195 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~210 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~225 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~240 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~255 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~270 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~285 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~300 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~315 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~330 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s rotated ~345 0 positioned ^ ^1 ^4 run particle minecraft:sweep_attack ~ ~ ~ 0 0 0 0 1
+execute if score @s rng11 matches 44 at @s run scoreboard players set #SarielDamage rng20 16
+execute if score @s rng11 matches 44 at @s as @a[tag=azrPlayer,distance=..4] run function skyblock:azr/assets/mobs/skill/boss6_sariel/hit
+
+# 最后一轮结束才冷却，避免第16tick就中断后续三次横扫。
+execute if score @s rng11 matches 44 run scoreboard players set @s rng1 -40
