@@ -205,8 +205,8 @@ execute if entity @s[tag=AzrSarielWings] unless entity @s[scores={Health=..0},ta
 # 退场对白：触发当刻 → 3秒后第二句 → 再过3秒死亡，交给原事件进入第二阶段。
 execute if entity @s[tag=AzrSarielEnding] if score @s rng20 matches 1 run tellraw @a[tag=azrShowDialog] [{text:"沙利叶：",color:"#c7eeb9",bold:1b},{bold:false,text:"\n“只可惜，你的敌人并非只有我。”",color:"white"}]
 execute if entity @s[tag=AzrSarielEnding] if score @s rng20 matches 61 run tellraw @a[tag=azrShowDialog] [{text:"沙利叶：",color:"#c7eeb9",bold:1b},{bold:false,text:"\n“困死于生灵的局限性吧，人类的亡魂。”",color:"white"}]
-execute if entity @s[tag=AzrSarielEnding] if score @s rng20 matches 51 run effect give @a[tag=azrShowDialog] nausea 5 0 true
-execute if entity @s[tag=AzrSarielEnding] if score @s rng20 matches 91 run effect give @a[tag=azrShowDialog] darkness 3 0 true
+execute if entity @s[tag=AzrSarielEnding] if score @s rng20 matches 51 run effect give @a[tag=azrShowDialog] nausea 8 0 true
+execute if entity @s[tag=AzrSarielEnding] if score @s rng20 matches 91 run effect give @a[tag=azrShowDialog] darkness 8 0 true
 execute if entity @s[tag=AzrSarielEnding] if score @s rng20 matches 121 at @s run tp @s ~ ~-200 ~
 execute if entity @s[tag=AzrSarielEnding] if score @s rng20 matches 123.. run kill @s
 
