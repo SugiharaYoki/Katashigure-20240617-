@@ -30,6 +30,32 @@ execute if score @s AzrEntityTimer matches 176 as @a[tag=azrShowDialog] at @s ru
 execute if score @s AzrEntityTimer matches 176 as @a[tag=azrPlayer] at @s run tp @s -79717 46 -2394 facing -79717 46 -2393
 
 
+execute if score @s AzrEntityTimer matches 176 run summon minecraft:mannequin -79707 46 -2367 {Tags:["AzrielMob","AzrielMob_typeLIFE","AzrielNPC_rowen","AzrielMob_level_ed"],profile:{id:[I;0,0,0,0],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTViNmQ5NmU3MjBmM2M1MmQ2ZjE2YTFkZmU5YTYyMGEzMTRjNTc0Y2RmNDBmMjM2YWMzODcwZjQzMDYyMDNhNyJ9fX0="}]},hide_description:true,CustomName:'罗温',attributes:[{id:"attack_damage",base:0.0},{id:"max_health",base:2.0},{id:"follow_range",base:50},{id:"armor",base:0.0},{id:"armor_toughness",base:0.0},{base:0.27d,id:"movement_speed"},{base:1.0d,id:"knockback_resistance"},{base:1.0d,id:"scale"}],Health:2.0f,Invulnerable:1b}
+
+execute if score @s AzrEntityTimer matches 176..200 as @n[tag=AzrielNPC_rowen] at @s run tp @s ~ ~ ~ facing -79696 59 -2320
+
+execute if score @s AzrEntityTimer matches 199 run scoreboard players set @s AzrEntityTimer 198
+execute if score @s AzrEntityTimer matches ..199 positioned -79712 45 -2368 if entity @a[tag=azrPlayer,distance=..7] run scoreboard players set @s AzrEntityTimer 201
+
+execute if score @s AzrEntityTimer matches 201.. as @n[tag=AzrielNPC_rowen] at @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+
+
+execute if score @s AzrEntityTimer matches 203 run tellraw @a[tag=azrShowDialog] [{text:"罗温：",color:"green",bold:1b},{bold:false,text:"\n“亲爱的，准备好回家了吗？”",color:"white"}]
+execute if score @s AzrEntityTimer matches 216 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“医生让我一周后再来检查一下。”",color:"white"}]
+execute if score @s AzrEntityTimer matches 229 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“从电梯事故中存活下来……我很命大，不是吗？”",color:"white"}]
+execute if score @s AzrEntityTimer matches 242 run tellraw @a[tag=azrShowDialog] [{text:"罗温：",color:"green",bold:1b},{bold:false,text:"\n“那也不代表你就是幸运的。我的爱人不该遭受如此痛苦的经历。”",color:"white"}]
+execute if score @s AzrEntityTimer matches 255 run tellraw @a[tag=azrShowDialog] [{text:"罗温：",color:"green",bold:1b},{bold:false,text:"\n“……但让我很高兴的是，你看上去坚定了不少。”",color:"white"}]
+execute if score @s AzrEntityTimer matches 268 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“发生了非常多的事。在我的梦里。”",color:"white"}]
+execute if score @s AzrEntityTimer matches 281 run tellraw @a[tag=azrShowDialog] [{text:"罗温：",color:"green",bold:1b},{bold:false,text:"\n“对了，当初打急救电话的人，和你有一样的姓氏。”",color:"white"}]
+execute if score @s AzrEntityTimer matches 294 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“这样吗？我还没听你提过这件事。”",color:"white"}]
+execute if score @s AzrEntityTimer matches 307 run tellraw @a[tag=azrShowDialog] [{text:"罗温：",color:"green",bold:1b},{bold:false,text:"\n“看上去和你年纪差不多大的女子，她似乎是特意要去找你的，恰巧碰上你乘坐的电梯坠落。”",color:"white"}]
+execute if score @s AzrEntityTimer matches 320 run tellraw @a[tag=azrShowDialog] [{text:"罗温：",color:"green",bold:1b},{bold:false,text:"\n“叫伊凡娜·格雷夫斯。”",color:"white"}]
+execute if score @s AzrEntityTimer matches 333 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“我没有听过这个名字。但听你的描述，我或许知道她是谁。”",color:"white"}]
+execute if score @s AzrEntityTimer matches 346 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“之后有时间的话，我和你一起去登门道谢吧。”",color:"white"}]
+execute if score @s AzrEntityTimer matches 360 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“嘿，罗温。你瞧瞧，我其实还是挺幸运的嘛。”",color:"white"}]
+execute if score @s AzrEntityTimer matches 360 as @a[tag=azrShowDialog] at @s run playsound minecraft:replica music @s ~ ~ ~ 0.7
+
+
 execute if score @s AzrEntityTimer matches 501 run tellraw @a[tag=azrShowDialog] [{text:"- 配乐列表 -",color:"white",bold:1b}]
 execute if score @s AzrEntityTimer matches 501 run tellraw @a[tag=azrShowDialog] [{text:"opening - onoken",color:"white"}]
 execute if score @s AzrEntityTimer matches 521 run tellraw @a[tag=azrShowDialog] [{text:"《From. 节奏过山车》Lethal Dose - sky_delta",color:"white"}]
@@ -48,6 +74,7 @@ execute if score @s AzrEntityTimer matches 761 run tellraw @a[tag=azrShowDialog]
 execute if score @s AzrEntityTimer matches 781 run tellraw @a[tag=azrShowDialog] [{text:"《From. Arcaea》Vicious Heroism -Traitor Version- - Kobaryo",color:"white"}]
 execute if score @s AzrEntityTimer matches 801 run tellraw @a[tag=azrShowDialog] [{text:"LiFE Garden - Yooh",color:"white"}]
 execute if score @s AzrEntityTimer matches 821 run tellraw @a[tag=azrShowDialog] [{text:"探し物 - onoken",color:"white"}]
+execute if score @s AzrEntityTimer matches 841 run tellraw @a[tag=azrShowDialog] [{text:"Replica - sky_delta feat. 藍月なくる",color:"white"}]
 
 
 
