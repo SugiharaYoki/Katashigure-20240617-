@@ -55,6 +55,7 @@ execute if score @s AzrEntityTimer matches 346 run tellraw @a[tag=azrShowDialog]
 execute if score @s AzrEntityTimer matches 360 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n“嘿，罗温。你瞧瞧，我其实还是挺幸运的嘛。”",color:"white"}]
 execute if score @s AzrEntityTimer matches 360 as @a[tag=azrShowDialog] at @s run playsound minecraft:replica music @s ~ ~ ~ 0.7
 execute if score @s AzrEntityTimer matches 362 run scoreboard players set @s AzrEntityTimer 500
+execute if score @s AzrEntityTimer matches 362.. as @p[tag=azrPlayer] at @s positioned ~ ~5 ~ run particle cherry_leaves ~ ~ ~ 5 1 5 0 5
 
 execute if score @s AzrEntityTimer matches 501 run tellraw @a[tag=azrShowDialog] [{text:"- 配乐列表 -",color:"white",bold:1b}]
 execute if score @s AzrEntityTimer matches 501 run tellraw @a[tag=azrShowDialog] [{text:"opening - onoken",color:"white"}]
@@ -105,7 +106,7 @@ execute if score @s AzrEntityTimer matches 751 run title @a[tag=azrShowDialog] t
 
 execute if score @s rng1 matches 800 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/ending_2
 execute if score @s rng1 matches 800 run tellraw @a[tag=azrShowDialog] [{text:"达成结局：",color:"gold",bold:1b},{text:"\nLife End「花与叶的复生」",color:"white",bold: false}]
-
+execute if score @s rng1 matches 800 run function skyblock:azr/lifecycle/endgame
 
 execute if score @s rng1 matches 801 run kill @s
 
