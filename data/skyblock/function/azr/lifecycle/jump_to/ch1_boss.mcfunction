@@ -11,8 +11,9 @@ advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage4
 
 tag @a[tag=azrPlayer] add azrPlayer_respawnanchor_unlocked_westcourt_a
 tag @a[tag=azrPlayer] add azrPlayer_respawnanchor_unlocked_westcourt_b
-tag @s[tag=azrPlayer,tag=AZS_BoSShop21] add azrPlayer_respawnanchor_unlocked_mossyroad
-tag @s[tag=azrPlayer,tag=AZS_BoSShop23] add azrPlayer_respawnanchor_unlocked_rockpath
+# 章节启动可能由任意执行者发起；对每位参与玩家按其永久购买状态解锁。
+tag @a[tag=azrPlayer,tag=AZS_BoSShop21] add azrPlayer_respawnanchor_unlocked_mossyroad
+tag @a[tag=azrPlayer,tag=AZS_BoSShop23] add azrPlayer_respawnanchor_unlocked_rockpath
 
 #scoreboard players add @a[tag=azrPlayer] Azr_emerald 50
 

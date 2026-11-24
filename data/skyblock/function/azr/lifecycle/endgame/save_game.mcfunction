@@ -1,6 +1,19 @@
+# 结局已保存的背包禁止被剧情清包后的状态覆盖。
+execute if entity @s[tag=AzrEndingInventorySaved] run return 0
+execute if entity @s[tag=AzrEndingInventoryPending] unless score @s id matches 0.. run return 0
+
 #背包保存
 execute as @s at @s run function skyblock:city/id/read
 execute as @n[tag=id_data_reading,type=marker] at @s run tp @s ~ ~ ~2
+
+# 结局存档等待区块和五个至少 27 格的容器就绪；未就绪时保留强制加载，下轮重试。
+execute if entity @s[tag=AzrEndingInventoryPending] unless entity @n[tag=id_data_reading,type=marker] run return 0
+execute if entity @s[tag=AzrEndingInventoryPending] at @n[tag=id_data_reading,type=marker] unless loaded ~ ~ ~ run return run kill @n[tag=id_data_reading,type=marker]
+execute if entity @s[tag=AzrEndingInventoryPending] at @n[tag=id_data_reading,type=marker] unless block ~ ~ ~ minecraft:chest unless block ~ ~ ~ minecraft:trapped_chest unless block ~ ~ ~ minecraft:barrel unless block ~ ~ ~ #minecraft:shulker_boxes run return run kill @n[tag=id_data_reading,type=marker]
+execute if entity @s[tag=AzrEndingInventoryPending] at @n[tag=id_data_reading,type=marker] unless block ~1 ~ ~ minecraft:chest unless block ~1 ~ ~ minecraft:trapped_chest unless block ~1 ~ ~ minecraft:barrel unless block ~1 ~ ~ #minecraft:shulker_boxes run return run kill @n[tag=id_data_reading,type=marker]
+execute if entity @s[tag=AzrEndingInventoryPending] at @n[tag=id_data_reading,type=marker] unless block ~ ~-1 ~ minecraft:chest unless block ~ ~-1 ~ minecraft:trapped_chest unless block ~ ~-1 ~ minecraft:barrel unless block ~ ~-1 ~ #minecraft:shulker_boxes run return run kill @n[tag=id_data_reading,type=marker]
+execute if entity @s[tag=AzrEndingInventoryPending] at @n[tag=id_data_reading,type=marker] unless block ~1 ~-1 ~ minecraft:chest unless block ~1 ~-1 ~ minecraft:trapped_chest unless block ~1 ~-1 ~ minecraft:barrel unless block ~1 ~-1 ~ #minecraft:shulker_boxes run return run kill @n[tag=id_data_reading,type=marker]
+execute if entity @s[tag=AzrEndingInventoryPending] at @n[tag=id_data_reading,type=marker] unless block ~2 ~-1 ~ minecraft:chest unless block ~2 ~-1 ~ minecraft:trapped_chest unless block ~2 ~-1 ~ minecraft:barrel unless block ~2 ~-1 ~ #minecraft:shulker_boxes run return run kill @n[tag=id_data_reading,type=marker]
 
 execute at @n[tag=id_data_reading,type=marker] run item replace block ~1 ~ ~ container.0 from entity @s armor.head
 execute at @n[tag=id_data_reading,type=marker] run item replace block ~1 ~ ~ container.1 from entity @s armor.chest
@@ -77,33 +90,33 @@ execute if entity @s[tag=AZS_BoS24] at @n[tag=id_data_reading,type=marker] run i
 execute if entity @s[tag=AZS_BoS25] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~-1 ~ container.24 with green_wool
 execute if entity @s[tag=AZS_BoS26] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~-1 ~ container.25 with green_wool
 execute if entity @s[tag=AZS_BoS27] at @n[tag=id_data_reading,type=marker] run item replace block ~ ~-1 ~ container.26 with green_wool
-tag @s remove AZS_BoS01
-tag @s remove AZS_BoS02
-tag @s remove AZS_BoS03
-tag @s remove AZS_BoS04
-tag @s remove AZS_BoS05
-tag @s remove AZS_BoS06
-tag @s remove AZS_BoS07
-tag @s remove AZS_BoS08
-tag @s remove AZS_BoS09
-tag @s remove AZS_BoS10
-tag @s remove AZS_BoS11
-tag @s remove AZS_BoS12
-tag @s remove AZS_BoS13
-tag @s remove AZS_BoS14
-tag @s remove AZS_BoS15
-tag @s remove AZS_BoS16
-tag @s remove AZS_BoS17
-tag @s remove AZS_BoS18
-tag @s remove AZS_BoS19
-tag @s remove AZS_BoS20
-tag @s remove AZS_BoS21
-tag @s remove AZS_BoS22
-tag @s remove AZS_BoS23
-tag @s remove AZS_BoS24
-tag @s remove AZS_BoS25
-tag @s remove AZS_BoS26
-tag @s remove AZS_BoS27
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS01
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS02
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS03
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS04
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS05
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS06
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS07
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS08
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS09
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS10
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS11
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS12
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS13
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS14
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS15
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS16
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS17
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS18
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS19
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS20
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS21
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS22
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS23
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS24
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS25
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS26
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoS27
 
 
 execute if entity @s[tag=AZS_BoSB01] at @n[tag=id_data_reading,type=marker] run item replace block ~1 ~-1 ~ container.0 with green_wool
@@ -133,33 +146,33 @@ execute if entity @s[tag=AZS_BoSB24] at @n[tag=id_data_reading,type=marker] run 
 execute if entity @s[tag=AZS_BoSB25] at @n[tag=id_data_reading,type=marker] run item replace block ~1 ~-1 ~ container.24 with green_wool
 execute if entity @s[tag=AZS_BoSB26] at @n[tag=id_data_reading,type=marker] run item replace block ~1 ~-1 ~ container.25 with green_wool
 execute if entity @s[tag=AZS_BoSB27] at @n[tag=id_data_reading,type=marker] run item replace block ~1 ~-1 ~ container.26 with green_wool
-tag @s remove AZS_BoSB01
-tag @s remove AZS_BoSB02
-tag @s remove AZS_BoSB03
-tag @s remove AZS_BoSB04
-tag @s remove AZS_BoSB05
-tag @s remove AZS_BoSB06
-tag @s remove AZS_BoSB07
-tag @s remove AZS_BoSB08
-tag @s remove AZS_BoSB09
-tag @s remove AZS_BoSB10
-tag @s remove AZS_BoSB11
-tag @s remove AZS_BoSB12
-tag @s remove AZS_BoSB13
-tag @s remove AZS_BoSB14
-tag @s remove AZS_BoSB15
-tag @s remove AZS_BoSB16
-tag @s remove AZS_BoSB17
-tag @s remove AZS_BoSB18
-tag @s remove AZS_BoSB19
-tag @s remove AZS_BoSB20
-tag @s remove AZS_BoSB21
-tag @s remove AZS_BoSB22
-tag @s remove AZS_BoSB23
-tag @s remove AZS_BoSB24
-tag @s remove AZS_BoSB25
-tag @s remove AZS_BoSB26
-tag @s remove AZS_BoSB27
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB01
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB02
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB03
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB04
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB05
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB06
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB07
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB08
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB09
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB10
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB11
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB12
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB13
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB14
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB15
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB16
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB17
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB18
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB19
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB20
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB21
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB22
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB23
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB24
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB25
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB26
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSB27
 
 
 execute if entity @s[tag=AZS_BoSShop01] at @n[tag=id_data_reading,type=marker] run item replace block ~2 ~-1 ~ container.0 with green_wool
@@ -189,33 +202,36 @@ execute if entity @s[tag=AZS_BoSShop24] at @n[tag=id_data_reading,type=marker] r
 execute if entity @s[tag=AZS_BoSShop25] at @n[tag=id_data_reading,type=marker] run item replace block ~2 ~-1 ~ container.24 with green_wool
 execute if entity @s[tag=AZS_BoSShop26] at @n[tag=id_data_reading,type=marker] run item replace block ~2 ~-1 ~ container.25 with green_wool
 execute if entity @s[tag=AZS_BoSShop27] at @n[tag=id_data_reading,type=marker] run item replace block ~2 ~-1 ~ container.26 with green_wool
-tag @s remove AZS_BoSShop01
-tag @s remove AZS_BoSShop02
-tag @s remove AZS_BoSShop03
-tag @s remove AZS_BoSShop04
-tag @s remove AZS_BoSShop05
-tag @s remove AZS_BoSShop06
-tag @s remove AZS_BoSShop07
-tag @s remove AZS_BoSShop08
-tag @s remove AZS_BoSShop09
-tag @s remove AZS_BoSShop10
-tag @s remove AZS_BoSShop11
-tag @s remove AZS_BoSShop12
-tag @s remove AZS_BoSShop13
-tag @s remove AZS_BoSShop14
-tag @s remove AZS_BoSShop15
-tag @s remove AZS_BoSShop16
-tag @s remove AZS_BoSShop17
-tag @s remove AZS_BoSShop18
-tag @s remove AZS_BoSShop19
-tag @s remove AZS_BoSShop20
-tag @s remove AZS_BoSShop21
-tag @s remove AZS_BoSShop22
-tag @s remove AZS_BoSShop23
-tag @s remove AZS_BoSShop24
-tag @s remove AZS_BoSShop25
-tag @s remove AZS_BoSShop26
-tag @s remove AZS_BoSShop27
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop01
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop02
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop03
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop04
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop05
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop06
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop07
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop08
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop09
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop10
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop11
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop12
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop13
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop14
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop15
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop16
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop17
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop18
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop19
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop20
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop21
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop22
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop23
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop24
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop25
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop26
+tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop27
 
 
 function skyblock:city/id/read_finish
+# 仅在完整保存后上锁；保留当局升级标签，防止结局中重新应用升级。
+tag @s[tag=AzrEndingInventoryPending] add AzrEndingInventorySaved
+tag @s[tag=AzrEndingInventoryPending] add azrRetrieved

@@ -2,7 +2,11 @@
 execute store result score @s rng1 run random value 1..3
 
 execute as @e[tag=AzrielMob,distance=..2] at @s run damage @s 1 magic by @p[tag=AzrSariel_Amulet_FrontSlashPass]
-execute as @e[tag=AzrielMob,distance=..2] at @s run attribute @s armor modifier add azrsariel:amulet_frontslashed_1 -1.5 add_value
+execute if score @s rng2 matches 1 as @e[tag=AzrielMob,distance=..2] at @s run attribute @s armor modifier add azrsariel:amulet_frontslashed_1 -1.5 add_value
+execute if score @s rng2 matches 2 as @e[tag=AzrielMob,distance=..2] at @s run attribute @s armor modifier add azrsariel:amulet_frontslashed_1 -2 add_value
+execute if score @s rng2 matches 3 as @e[tag=AzrielMob,distance=..2] at @s run attribute @s armor modifier add azrsariel:amulet_frontslashed_1 -2.5 add_value
+execute if score @s rng2 matches 4 as @e[tag=AzrielMob,distance=..2] at @s run attribute @s armor modifier add azrsariel:amulet_frontslashed_1 -3 add_value
+execute if score @s rng2 matches 5.. as @e[tag=AzrielMob,distance=..2] at @s run attribute @s armor modifier add azrsariel:amulet_frontslashed_1 -3.5 add_value
 execute as @e[tag=AzrielMob,distance=..2] at @s run scoreboard players add @s AzrSariel_Amulet_FrontSlashEd 20
 
 

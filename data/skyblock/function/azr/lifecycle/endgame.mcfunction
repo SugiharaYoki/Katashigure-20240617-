@@ -36,6 +36,13 @@ bossbar remove azr:boss_hp_bar_assassin
 bossbar remove azr:boss_hp_bar_blaze
 bossbar remove azr:boss_hp_bar_centurion
 bossbar remove azr:boss_hp_bar_diesel
+bossbar remove azr:boss_hp_bar_entrance_1
+bossbar remove azr:boss_hp_bar_entrance_2
+bossbar remove azr:boss_hp_bar_entrance_3
+bossbar remove azr:boss_hp_bar_entrance_4
+bossbar remove azr:boss_hp_bar_entrance_5
+bossbar remove azr:boss_hp_bar_entrance_6
+bossbar remove azr:boss_hp_bar_filament
 bossbar remove azr:boss_hp_bar_legate
 bossbar remove azr:boss_hp_bar_mossflora
 bossbar remove azr:boss_hp_bar_nautilus
@@ -43,17 +50,12 @@ bossbar remove azr:boss_hp_bar_slime
 bossbar remove azr:boss_hp_bar_villain
 bossbar remove azr:boss_hp_bar_working
 bossbar remove azr:boss_hp_bar_0
-bossbar remove azr:boss_hp_bar_entrance_1
-bossbar remove azr:boss_hp_bar_entrance_2
-bossbar remove azr:boss_hp_bar_entrance_3
-bossbar remove azr:boss_hp_bar_entrance_4
-bossbar remove azr:boss_hp_bar_entrance_5
-bossbar remove azr:boss_hp_bar_entrance_6
 bossbar remove azr:progress_bar_pvp
 #______________________________________________________________#
 #清场
 function skyblock:azr/lifecycle/endgame/reset_map
-stopsound @a[tag=azrShowDialog]
+stopsound @a[tag=azrShowDialog,tag=!Azr_KeepMusic]
+tag @a remove Azr_KeepMusic
 #DEBUG: 当该函数被管理员/服务器后台强制执行时，杀死所有玩家。正常流程中触发该函数的同时不会存在玩家。
 execute as @a[tag=azrPlayer] run function skyblock:azr/lifecycle/endgame/quit_game
 clear @a[tag=azrPlayer]
@@ -138,6 +140,8 @@ scoreboard objectives remove AzrSariel_Amulet_Parry_cooldown
 scoreboard objectives remove AzrSariel_Amulet_FireLit_cooldown
 scoreboard objectives remove AzrSariel_Amulet_FireLit_count
 scoreboard objectives remove AzrSariel_Amulet_FireDrogue_cooldown
+scoreboard objectives remove AzrSariel_Amulet_FungusFilament_timer
+scoreboard objectives remove AzrSariel_Amulet_FungusFilament_level
 scoreboard objectives remove AzrSariel_Amulet_Multiweapon_count
 scoreboard objectives remove AzrSariel_Amulet_StayFloat_cooldown
 scoreboard objectives remove AzrSariel_Amulet_StayFloat_power

@@ -101,6 +101,32 @@ execute if score SEA_ch6_event sea_4temp4 matches 14000 as @p[tag=SEAPT] at @s r
 execute if score SEA_ch6_event sea_4temp4 matches 14200 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{text:"以及你。",color:"white",bold:1b}]
 execute if score SEA_ch6_event sea_4temp4 matches 14200 as @p[tag=SEAPT] at @s run title @a[distance=0..250] subtitle [{text:"",color:"white",bold: false}]
 
+
+execute if score SEA_ch6_event sea_4temp4 matches 14000 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"- 配乐列表 -",color:"white",bold:1b}]
+execute if score SEA_ch6_event sea_4temp4 matches 14020 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"《From. 觉醒深渊》The Sickening of the Calm - Jason Graves",color:"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 14030 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"《From. 冰与火之舞》Heracles - Yooh",color:"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 14040 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"《From. 觉醒深渊》Teeth - Jason Graves",color:"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 14050 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"《From. Rotaeno》Manifold Hypothesis - cybermiso & tigerlily",color:"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 14060 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"《From. 觉醒深渊》Too Far North - Jason Graves",color:"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 14070 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"《From. 觉醒深渊》Into the Belly of the Beast - Jason Graves",color:"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 14080 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"Dark Energy - Yooh",color:"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 14090 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"《From. 觉醒深渊》Beacon In The Dark - Jason Graves",color:"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 14100 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"Astrum - Yooh",color:"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 14110 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"《From. 觉醒深渊》Dead In The Water - Jason Graves",color:"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 14120 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"《From. 觉醒深渊》Something Has Come Aboard - Jason Graves",color:"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 14130 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"《From. Maimai》FFT - cybermiso",color:"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 14140 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"《From. 觉醒深渊》The Horror Sings - Jason Graves",color:"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 14150 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"《From. Pop'n Music》Caradbolg - uma",color:"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 14160 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"Apocalypse - sky_delta",color:"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 14170 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"《From. 觉醒深渊》Contested Territories - Jason Graves",color:"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 14180 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"《From. 觉醒深渊》The Drowning of Davey Rennick - Jason Graves",color:"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 14190 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"《From. 觉醒深渊》In Roaring He Will Rise - Jason Graves",color:"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 14200 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"False God - Taishi",color:"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 14210 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"salvation - Yooh",color:"white"}]
+execute if score SEA_ch6_event sea_4temp4 matches 14220 as @p[tag=SEAPT] at @s run tellraw @a[distance=0..250] [{text:"Afterword -another route of that rainy day- - sky_delta",color:"white"}]
+
+
+
 execute if score SEA_ch6_event sea_4temp4 matches 14600 as @p[tag=SEAPT] at @s run title @a[distance=0..250] times 3s 5s 3s
 execute if score SEA_ch6_event sea_4temp4 matches 14600 as @p[tag=SEAPT] at @s run title @a[distance=0..250] title [{text:"- Fin -",color:"white",bold:1b}]
 

@@ -46,6 +46,11 @@ execute positioned -79841 23 -22 as @n[tag=AzrielMarker_encounter,distance=0..0.
 execute positioned -79902 25 61 unless entity @n[tag=AzrielMob_big_barrier_maintainer,distance=0..18,type=sniffer] if entity @a[distance=0..30,tag=azrPlayer] if loaded ~ ~ ~ run summon sniffer ~ ~ ~ {PersistenceRequired:1b,Tags:["AzrielMob_big_barrier_maintainer"],DeathLootTable:"skyblock:azr_new/barrier_maintainer_tier1",attributes:[{id:"max_health",base:200.0},{id:"armor",base:50.0},{base:0.2d,id:"movement_speed"},{base:0.9d,id:"scale"}],Health:200.0f,CustomName:'大结界兽',Invulnerable:1b}
 execute positioned -79902 25 61 as @n[tag=AzrielMob_big_barrier_maintainer,distance=0..18] run function skyblock:azr/assets/events/stage/chapter_1/west/npc_big_barrier_maintainer
 
+#菌体掮客
+execute positioned -79862 8 -1 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[distance=0..7,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
+execute positioned -79862 8 -1 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/events/stage/chapter_1/west/event_boss_filament
+
+
 
 
 
@@ -72,7 +77,7 @@ execute positioned -79915 22 10 if score random_enemy_thread AzrTimerStack match
 execute positioned -79915 22 10 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 1.. unless entity @n[tag=AzrielMob,distance=..6] unless entity @a[tag=azrPlayer,distance=..16] if entity @a[tag=azrPlayer,distance=..32] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter1_moss
 
 execute positioned -79896 25 40 if score random_enemy_thread AzrTimerStack matches 3 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:18}
-execute positioned -79896 25 40 if score random_enemy_thread AzrTimerStack matches 3 unless score random_enemy_count AzrTimerStack matches 1.. unless entity @n[tag=AzrielMob,distance=..6] unless entity @a[tag=azrPlayer,distance=..16] if entity @a[tag=azrPlayer,distance=..32] if loaded ~ ~ ~ run summon cow ~ ~ ~ {variant:"warm",Tags:["AzrielMob","AzrielMob_level_1"]}
+execute positioned -79896 25 40 if score random_enemy_thread AzrTimerStack matches 3 unless score random_enemy_count AzrTimerStack matches 1.. unless entity @n[tag=AzrielMob,distance=..6] unless entity @a[tag=azrPlayer,distance=..16] if entity @a[tag=azrPlayer,distance=..32] if loaded ~ ~ ~ run summon cow ~ ~ ~ {variant:"warm",Tags:["AzrielMob","AzrielMob_level_1"],DeathLootTable:"skyblock:azr_new/cow_tier1"}
 
 
 

@@ -19,7 +19,7 @@ execute if score @s rng7 matches 203.. run kill @s
 effect give @e[tag=AzrielMob_husk_temper,type=husk,distance=..55] speed infinite 3 true
 
 
-execute at @s rotated as @s run tp @s ~ ~ ~ facing entity @p[tag=azrPlayer]
+execute at @s rotated as @s run tp @s ~ 50 ~ facing entity @p[tag=azrPlayer]
 
 
  

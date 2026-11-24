@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "结局B：花与叶的复生",
+            "color": "gold",
+            "bold": true,
+            "italic": false
+        },
+        "description": {
+            "text": "亘古至今，人类总是在制造同样的错误。\n但又有多少人类能够理解，居于天穹的神明，往往也并非神通广大。\n\n为了解决一个问题，所有生灵总倾向于制造另一个问题。\n周而复始，多少年月的流逝，世界的整体走向竟无任何变化。\n\n但世界总是会迎来转机。\n枯萎的花与树木，为的是下一场春的生机盎然。\n我从未做无意义的梦。我所经历的一切并非梦中妄想。\n\n作为“天使长沙利叶”，我会继续守护着这世界上的生灵与亡魂。\n我无法成为天平，但我将带来“生”的希望。",
+            "color": "white"
+        },
+        "icon": {
+            "id": "minecraft:end_crystal"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "criteria": {
+        "azrielsmidgarden": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "skyblock:azr/progress/stage26_boss6"
+}
+
+
+

@@ -1,3 +1,6 @@
+# 结局清包后的背包不写入商店备份。
+execute if entity @s[tag=AzrEndingInventorySaved] run return 0
+
 #背包保存
 execute as @s at @s run function skyblock:city/id/read
 execute as @n[tag=id_data_reading,type=marker] at @s run tp @s ~ ~ ~2

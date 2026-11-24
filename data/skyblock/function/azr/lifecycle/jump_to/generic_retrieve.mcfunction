@@ -1,107 +1,69 @@
+# 结局播放期间维持仅命星背包；离开结局后正常读取正式存档。
+execute if entity @s[tag=AzrEndingInventorySaved] if score stage Azr_system matches 123..130 run return 0
+
+# 始终读取正式存档。旧版无命星退出留下的临时背包标记不再改变读档来源。
+tag @s remove azrRetrieved_withoutstar
 
 
 
 execute as @s at @s run function skyblock:city/id/read
 execute as @n[tag=id_data_reading,type=marker] at @s run tp @s ~ ~ ~2
 
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] armor.head from block ~1 ~ ~ container.0
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] armor.chest from block ~1 ~ ~ container.1
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] armor.legs from block ~1 ~ ~ container.2
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] armor.feet from block ~1 ~ ~ container.3
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] weapon.mainhand from block ~1 ~ ~ container.4
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] weapon.offhand from block ~1 ~ ~ container.5
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s armor.head from block ~1 ~ ~ container.0
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s armor.chest from block ~1 ~ ~ container.1
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s armor.legs from block ~1 ~ ~ container.2
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s armor.feet from block ~1 ~ ~ container.3
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s weapon.mainhand from block ~1 ~ ~ container.4
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s weapon.offhand from block ~1 ~ ~ container.5
 
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] hotbar.0 from block ~1 ~ ~ container.9
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] hotbar.1 from block ~1 ~ ~ container.10
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] hotbar.2 from block ~1 ~ ~ container.11
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] hotbar.3 from block ~1 ~ ~ container.12
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] hotbar.4 from block ~1 ~ ~ container.13
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] hotbar.5 from block ~1 ~ ~ container.14
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] hotbar.6 from block ~1 ~ ~ container.15
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] hotbar.7 from block ~1 ~ ~ container.16
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] hotbar.8 from block ~1 ~ ~ container.17
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s hotbar.0 from block ~1 ~ ~ container.9
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s hotbar.1 from block ~1 ~ ~ container.10
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s hotbar.2 from block ~1 ~ ~ container.11
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s hotbar.3 from block ~1 ~ ~ container.12
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s hotbar.4 from block ~1 ~ ~ container.13
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s hotbar.5 from block ~1 ~ ~ container.14
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s hotbar.6 from block ~1 ~ ~ container.15
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s hotbar.7 from block ~1 ~ ~ container.16
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s hotbar.8 from block ~1 ~ ~ container.17
 
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.0 from block ~ ~ ~ container.0
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.1 from block ~ ~ ~ container.1
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.2 from block ~ ~ ~ container.2
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.3 from block ~ ~ ~ container.3
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.4 from block ~ ~ ~ container.4
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.5 from block ~ ~ ~ container.5
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.6 from block ~ ~ ~ container.6
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.7 from block ~ ~ ~ container.7
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.8 from block ~ ~ ~ container.8
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.9 from block ~ ~ ~ container.9
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.0 from block ~ ~ ~ container.0
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.1 from block ~ ~ ~ container.1
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.2 from block ~ ~ ~ container.2
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.3 from block ~ ~ ~ container.3
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.4 from block ~ ~ ~ container.4
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.5 from block ~ ~ ~ container.5
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.6 from block ~ ~ ~ container.6
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.7 from block ~ ~ ~ container.7
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.8 from block ~ ~ ~ container.8
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.9 from block ~ ~ ~ container.9
 
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.10 from block ~ ~ ~ container.10
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.11 from block ~ ~ ~ container.11
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.12 from block ~ ~ ~ container.12
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.13 from block ~ ~ ~ container.13
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.14 from block ~ ~ ~ container.14
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.15 from block ~ ~ ~ container.15
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.16 from block ~ ~ ~ container.16
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.17 from block ~ ~ ~ container.17
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.18 from block ~ ~ ~ container.18
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.19 from block ~ ~ ~ container.19
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.10 from block ~ ~ ~ container.10
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.11 from block ~ ~ ~ container.11
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.12 from block ~ ~ ~ container.12
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.13 from block ~ ~ ~ container.13
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.14 from block ~ ~ ~ container.14
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.15 from block ~ ~ ~ container.15
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.16 from block ~ ~ ~ container.16
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.17 from block ~ ~ ~ container.17
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.18 from block ~ ~ ~ container.18
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.19 from block ~ ~ ~ container.19
 
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.20 from block ~ ~ ~ container.20
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.21 from block ~ ~ ~ container.21
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.22 from block ~ ~ ~ container.22
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.23 from block ~ ~ ~ container.23
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.24 from block ~ ~ ~ container.24
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.25 from block ~ ~ ~ container.25
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=!azrRetrieved_withoutstar] inventory.26 from block ~ ~ ~ container.26
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.20 from block ~ ~ ~ container.20
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.21 from block ~ ~ ~ container.21
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.22 from block ~ ~ ~ container.22
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.23 from block ~ ~ ~ container.23
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.24 from block ~ ~ ~ container.24
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.25 from block ~ ~ ~ container.25
+execute at @n[tag=id_data_reading,type=marker] run item replace entity @s inventory.26 from block ~ ~ ~ container.26
 
 #
 
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] armor.head from block ~6 ~ ~ container.0
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] armor.chest from block ~6 ~ ~ container.1
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] armor.legs from block ~6 ~ ~ container.2
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] armor.feet from block ~6 ~ ~ container.3
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] weapon.mainhand from block ~6 ~ ~ container.4
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] weapon.offhand from block ~6 ~ ~ container.5
-
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] hotbar.0 from block ~6 ~ ~ container.9
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] hotbar.1 from block ~6 ~ ~ container.10
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] hotbar.2 from block ~6 ~ ~ container.11
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] hotbar.3 from block ~6 ~ ~ container.12
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] hotbar.4 from block ~6 ~ ~ container.13
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] hotbar.5 from block ~6 ~ ~ container.14
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] hotbar.6 from block ~6 ~ ~ container.15
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] hotbar.7 from block ~6 ~ ~ container.16
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] hotbar.8 from block ~6 ~ ~ container.17
-
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.0 from block ~5 ~ ~ container.0
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.1 from block ~5 ~ ~ container.1
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.2 from block ~5 ~ ~ container.2
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.3 from block ~5 ~ ~ container.3
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.4 from block ~5 ~ ~ container.4
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.5 from block ~5 ~ ~ container.5
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.6 from block ~5 ~ ~ container.6
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.7 from block ~5 ~ ~ container.7
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.8 from block ~5 ~ ~ container.8
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.9 from block ~5 ~ ~ container.9
-
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.10 from block ~5 ~ ~ container.10
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.11 from block ~5 ~ ~ container.11
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.12 from block ~5 ~ ~ container.12
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.13 from block ~5 ~ ~ container.13
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.14 from block ~5 ~ ~ container.14
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.15 from block ~5 ~ ~ container.15
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.16 from block ~5 ~ ~ container.16
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.17 from block ~5 ~ ~ container.17
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.18 from block ~5 ~ ~ container.18
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.19 from block ~5 ~ ~ container.19
-
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.20 from block ~5 ~ ~ container.20
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.21 from block ~5 ~ ~ container.21
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.22 from block ~5 ~ ~ container.22
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.23 from block ~5 ~ ~ container.23
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.24 from block ~5 ~ ~ container.24
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.25 from block ~5 ~ ~ container.25
-execute at @n[tag=id_data_reading,type=marker] run item replace entity @s[tag=azrRetrieved_withoutstar] inventory.26 from block ~5 ~ ~ container.26
 
 
-tag @s remove azrRetrieved_withoutstar
+
+
+
+
 
 
 execute at @n[tag=id_data_reading,type=marker] if items block ~ ~-1 ~ container.0 green_wool run tag @s add AZS_BoS01
@@ -241,3 +203,12 @@ advancement grant @s[tag=AZS_BoSB23] only skyblock:azr/progress/sub_boss_working
 execute unless score @s Azr_Login_Identifier >= #Server_Date Global_Age run function skyblock:azr/system/player/join_login_bonus
 
 tag @s add azrRetrieved
+
+# 已到达第一章 Boss 入口的玩家，读档完成后同步永久购买的传送点。
+# 覆盖章节初始化后的补读档；第一章 Boss 入口之前仍不提前解锁。
+tag @s[tag=azrPlayer,tag=azrPlayer_respawnanchor_unlocked_westcourt_b,tag=AZS_BoSShop21] add azrPlayer_respawnanchor_unlocked_mossyroad
+tag @s[tag=azrPlayer,tag=azrPlayer_respawnanchor_unlocked_westcourt_b,tag=AZS_BoSShop23] add azrPlayer_respawnanchor_unlocked_rockpath
+
+# 正常读档结束后解除结局背包保护。
+tag @s remove AzrEndingInventorySaved
+tag @s remove AzrEndingInventoryPending

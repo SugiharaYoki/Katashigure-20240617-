@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "kill": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{Tags:[\"AzrSarielP3Skull\"]}"
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "skyblock:azr/assets/mobs/skill/boss6_sariel/phase3_aux"
+    }
+}

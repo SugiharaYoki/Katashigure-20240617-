@@ -36,7 +36,7 @@ execute if entity @s[scores={rng8=1,rng20=3,Health=..300}] run scoreboard player
 execute if entity @s[scores={rng8=1,rng20=2,Health=..400}] run scoreboard players add @s rng20 1
 execute if entity @s[scores={rng8=1,rng20=1,Health=..500}] run scoreboard players add @s rng20 1
 
-execute if score @s rng8 matches 5 if score @s rng20 matches ..3 at @s positioned -79840 ~ 80 run function skyblock:azr/assets/mobs/skill/boss5_focalor/teleport
+execute if score @s rng8 matches 5 if score @s rng20 matches ..3 at @s positioned -79840 ~ 80 run function skyblock:azr/assets/mobs/skill/boss5_focalor/movement_teleport
 
 # ==================== 上下移动 ====================
 

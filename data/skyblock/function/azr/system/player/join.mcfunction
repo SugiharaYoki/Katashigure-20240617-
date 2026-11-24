@@ -31,7 +31,8 @@ execute if score stage Azr_system matches 3.. unless score @s Azr_skillPoints ma
 #execute if score stage Azr_system matches 51..63 run tag @s add azrBanLifeVitae
 #初始资源
 
-
+execute if score stage Azr_system matches 112..190 run attribute @s max_health modifier add azr_progress:life_ch6 40 add_value
+execute if score stage Azr_system matches 112..190 run tag @s add azr_OneLifeOnly
 
 
 

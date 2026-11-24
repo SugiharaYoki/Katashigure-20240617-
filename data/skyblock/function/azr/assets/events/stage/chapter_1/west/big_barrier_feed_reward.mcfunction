@@ -9,4 +9,4 @@ execute if score @s azr_progress_feed_big_maintainer matches 6..10 if score #mos
 execute if score @s azr_progress_feed_big_maintainer matches 6..10 if score #moss_reward rng1 matches 11..100 run tellraw @s [{text:"喂食奖励：绿宝石 ×3",color:"#f3db86",bold:true}]
 execute if score @s azr_progress_feed_big_maintainer matches 11.. if score #moss_reward rng1 matches 11..90 run give @s emerald 3
 execute if score @s azr_progress_feed_big_maintainer matches 11.. if score #moss_reward rng1 matches 11..90 run tellraw @s [{text:"喂食奖励：绿宝石 ×3",color:"#f3db86",bold:true}]
-execute if score @s azr_progress_feed_big_maintainer matches 11.. if score #moss_reward rng1 matches 91..100 run function skyblock:azr/assets/events/stage/chapter_1/west/big_barrier_feed_rare
+execute if score @s azr_progress_feed_big_maintainer matches 11.. if score #moss_reward rng1 matches 91..100 as @s run function skyblock:azr/assets/events/stage/chapter_1/west/big_barrier_feed_rare

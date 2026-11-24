@@ -1148,9 +1148,42 @@ function skyblock:azr/lifecycle/endgame/reset_map_boss_sub_entrance
 fill -79713 -6 34 -79709 -3 34 iron_block
 setblock -79713 -5 32 lever[face=wall,facing=east]
 
+#菌体掮客
+setblock -79872 17 23 air
+setblock -79872 17 23 lever[facing=east]
+fill -79875 8 -7 -79875 11 -6 air
+fill -79860 8 11 -79863 11 11 air replace minecraft:red_stained_glass
 
 
 
+
+#最终boss
+fill -79596 163 -20 -79597 163 -20 minecraft:spruce_stairs[facing=south]
+fill -79598 163 -21 -79594 163 -24 air replace minecraft:iron_trapdoor
+clone -79570 -10 -16 -79567 -8 -10 -79570 164 -16
+
+fill -79586 43 -50 -79588 40 -50 air
+execute if block -79549 14 -24 air run fill -79549 14 -24 -79582 14 9 minecraft:polished_deepslate
+setblock -79580 23 7 air
+setblock -79551 23 -22 air
+setblock -79580 23 -22 air
+setblock -79551 23 7 air
+
+#最终boss三阶段（61×61，四边内缩10格）
+# 清理已经生成的旧81×81场地；旧内部外圈的灰玻璃作为识别点，最后再拆地板。
+execute if block -79911 179 -37 minecraft:light_gray_stained_glass run fill -79832 179 -38 -79832 187 42 air
+execute if block -79911 179 -37 minecraft:light_gray_stained_glass run fill -79832 179 42 -79912 187 42 air
+execute if block -79911 179 -37 minecraft:light_gray_stained_glass run fill -79912 179 42 -79912 187 -38 air
+execute if block -79911 179 -37 minecraft:light_gray_stained_glass run fill -79912 179 -38 -79832 187 -38 air
+execute if block -79911 179 -37 minecraft:light_gray_stained_glass run fill -79912 180 42 -79832 180 -38 air replace soul_fire
+execute if block -79911 179 -37 minecraft:light_gray_stained_glass run fill -79912 179 42 -79832 179 -38 air
+# 判断点留在内部地板，拆除边墙后仍有效，最后再清地板。
+execute unless block -79872 179 2 air run fill -79842 179 -28 -79842 187 32 air
+execute unless block -79872 179 2 air run fill -79842 179 32 -79902 187 32 air
+execute unless block -79872 179 2 air run fill -79902 179 32 -79902 187 -28 air
+execute unless block -79872 179 2 air run fill -79902 179 -28 -79842 187 -28 air
+execute unless block -79872 179 2 air run fill -79902 180 32 -79842 180 -28 air replace soul_fire
+execute unless block -79872 179 2 air run fill -79902 179 32 -79842 179 -28 air
 
 
 kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1500]

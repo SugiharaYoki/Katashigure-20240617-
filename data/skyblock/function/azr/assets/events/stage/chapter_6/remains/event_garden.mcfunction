@@ -307,8 +307,7 @@ execute if score @s rng4 matches 125 positioned -79649 34 -18 run function skybl
 execute if score @s rng4 matches 125 positioned -79651 34 -18 run function skyblock:azr/assets/mobs/skill/boss_entrance/summon_midgarden
 
 
-execute if score @s rng3 matches 2 positioned -79699 32 27 as @e[tag=AzrielMob_barrier_maintainer,distance=..100] run effect give @s resistance infinite 3 true
-execute if score @s rng3 matches 2 positioned -79699 32 27 as @e[tag=AzrielMob_barrier_maintainer,distance=..100] run effect give @s regeneration infinite 1 true
+execute if score @s rng3 matches 2 positioned -79699 32 27 as @e[tag=AzrielMob_barrier_maintainer,distance=..100] run effect give @s resistance infinite 2 true
 execute if score @s rng3 matches 2 positioned -79699 32 27 as @e[tag=AzrielMob_barrier_maintainer,distance=..100] run effect give @s slowness infinite 5 true
 
 

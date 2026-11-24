@@ -76,12 +76,17 @@ tag @s remove azrAmulet_StayFloat_Jumping
 scoreboard objectives add AzrielNotAwakened dummy
 execute if entity @s[tag=!AZR_SEAawakened] run scoreboard players add @s AzrielNotAwakened 1
 
-execute if entity @s[tag=azrRetrieved] unless items entity @s container.* *[custom_data~{revival_star:1b}] run tellraw @s [{text:" 警告：本次游戏并未保存存档。\n如果你看到这条消息，并确认你有携带命星，请联系管理员进行处理。",color:"dark_red",italic:0b}]
-execute if entity @s[tag=azrRetrieved] unless items entity @s container.* *[custom_data~{revival_star:1b}] run tag @s add azrRetrieved_withoutstar
-execute if entity @s[tag=azrRetrieved] unless items entity @s container.* *[custom_data~{revival_star:1b}] run function skyblock:azr/lifecycle/endgame/save_game_withoutstar
+# 无命星退出不写任何背包；下一局恢复正式存档。兼容清除旧版本的临时背包标记。
+tag @s remove azrRetrieved_withoutstar
+execute if entity @s[tag=azrRetrieved,tag=!AzrEndingInventorySaved] unless items entity @s container.* *[custom_data~{revival_star:1b}] run tellraw @s [{text:" 警告：本次背包未保存。下次进入将恢复上一次持有命星时保存的正式存档。\n如果你确认本次仍携带命星，请联系管理员进行处理。",color:"dark_red",italic:0b}]
 execute if entity @s[tag=azrRetrieved] if items entity @s container.* *[custom_data~{revival_star:1b}] run function skyblock:azr/lifecycle/endgame/save_game
 #positioned -79953.0 38.5 -14.0 unless entity @s[distance=5000..] 
 tag @s remove azrRetrieved
+tag @s remove AzrEndingInventorySaved
+# 若尚在等待结局存档容器加载就退出，释放该玩家的临时强制加载。
+execute if entity @s[tag=AzrEndingInventoryPending] run function skyblock:city/id/read
+execute if entity @s[tag=AzrEndingInventoryPending] run function skyblock:city/id/read_finish
+tag @s remove AzrEndingInventoryPending
 
 function skyblock:api_quit_any_game
 
