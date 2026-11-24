@@ -1,9 +1,10 @@
 scoreboard players add @s AzrEntityTimer 1
 
-execute if score @s AzrEntityTimer matches 2
-我这里需要保证玩家的背包被清空
-但是我不想这个状态被存档保存起来，我该如何保证存档在这之前就保存完毕，然后清空背包后不影响？
-只留命星在玩家背包里。
+# 结局清包：先完成正式存档，再只保留命星；失败时保留原背包并在下一轮重试。
+execute if score @s AzrEntityTimer matches 2.. as @a[tag=azrPlayer,tag=!AzrEndingInventorySaved] run tag @s add AzrEndingInventoryPending
+execute if score @s AzrEntityTimer matches 2.. as @a[tag=azrPlayer,tag=AzrEndingInventoryPending,tag=!AzrEndingInventorySaved] at @s run function skyblock:azr/lifecycle/endgame/save_game
+execute as @a[tag=azrPlayer,tag=AzrEndingInventoryPending,tag=AzrEndingInventorySaved] run clear @s *[!custom_data~{revival_star:1b}]
+tag @a[tag=azrPlayer,tag=AzrEndingInventoryPending,tag=AzrEndingInventorySaved] remove AzrEndingInventoryPending
 
 execute if score @s AzrEntityTimer matches 38 as @a[tag=azrShowDialog] at @s run tellraw @s [{text:"怀念的女声：",color:"green",bold:1b},{text:"\n“莉茜，该吃晚饭啦。已经读了一天了吧。”",color:"white",bold: false}]
 execute if score @s AzrEntityTimer matches 36 as @a[tag=azrShowDialog] at @s run playsound minecraft:bookstore music @s ~ ~ ~ 0.8

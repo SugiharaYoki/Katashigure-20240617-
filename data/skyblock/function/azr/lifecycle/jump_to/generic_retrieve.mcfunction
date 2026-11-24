@@ -1,3 +1,6 @@
+# 结局播放期间维持仅命星背包；离开结局后正常读取正式存档。
+execute if entity @s[tag=AzrEndingInventorySaved] if score stage Azr_system matches 123..130 run return 0
+
 # 始终读取正式存档。旧版无命星退出留下的临时背包标记不再改变读档来源。
 tag @s remove azrRetrieved_withoutstar
 
@@ -205,3 +208,7 @@ tag @s add azrRetrieved
 # 覆盖章节初始化后的补读档；第一章 Boss 入口之前仍不提前解锁。
 tag @s[tag=azrPlayer,tag=azrPlayer_respawnanchor_unlocked_westcourt_b,tag=AZS_BoSShop21] add azrPlayer_respawnanchor_unlocked_mossyroad
 tag @s[tag=azrPlayer,tag=azrPlayer_respawnanchor_unlocked_westcourt_b,tag=AZS_BoSShop23] add azrPlayer_respawnanchor_unlocked_rockpath
+
+# 正常读档结束后解除结局背包保护。
+tag @s remove AzrEndingInventorySaved
+tag @s remove AzrEndingInventoryPending
