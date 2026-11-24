@@ -16,7 +16,6 @@ execute if score @s rng1 matches 3003 positioned -79851 180 2 run function skybl
 execute if score @s rng1 matches 3013 as @a[tag=azrShowDialog] at @s run playsound minecraft:garden1.lifegarden music @s ~ ~ ~ 0.73
 
 # 3015时开始实际计时和每tick行动；此前保持登场无敌。
-execute if score @s rng1 matches 3017 positioned -79872 180 2 run effect give @a[tag=azrPlayer] regeneration 300 2 true
 execute if score @s rng1 matches 3017 positioned -79872 180 2 run effect give @a[tag=azrPlayer] saturation 5 0 true
 execute if score @s rng1 matches 3017 positioned -79872 180 2 run effect give @a[tag=azrPlayer] absorption 300 19 true
 execute if score @s rng1 matches 3017 positioned -79872 180 2 run tag @n[type=mannequin,tag=AzrielNPC_sariel,distance=..100] add AzrSarielP3Active
