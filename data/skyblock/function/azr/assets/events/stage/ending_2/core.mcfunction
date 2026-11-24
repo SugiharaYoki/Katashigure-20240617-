@@ -106,6 +106,7 @@ execute if score @s AzrEntityTimer matches 751 run title @a[tag=azrShowDialog] t
 
 execute if score @s rng1 matches 800 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/ending_2
 execute if score @s rng1 matches 800 run tellraw @a[tag=azrShowDialog] [{text:"达成结局：",color:"gold",bold:1b},{text:"\nLife End「花与叶的复生」",color:"white",bold: false}]
+execute if score @s rng1 matches 800 as @a[tag=azrPlayer] run function skyblock:azr/lifecycle/endgame/quit_game
 execute if score @s rng1 matches 800 run function skyblock:azr/lifecycle/endgame
 
 execute if score @s rng1 matches 801 run kill @s
