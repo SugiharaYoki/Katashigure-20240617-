@@ -1169,15 +1169,21 @@ setblock -79551 23 -22 air
 setblock -79580 23 -22 air
 setblock -79551 23 7 air
 
-#最终boss三阶段
-execute unless block -79872 179 2 air run fill -79832 179 -38 -79832 187 42 air
-execute unless block -79872 179 2 air run fill -79832 179 42 -79912 187 42 air
-execute unless block -79872 179 2 air run fill -79912 179 42 -79912 187 -38 air
-execute unless block -79872 179 2 air run fill -79912 179 -38 -79832 187 -38 air
-
-execute unless block -79872 179 2 air run fill -79912 180 42 -79832 180 -38 air replace soul_fire
-execute unless block -79872 179 2 air run fill -79912 179 42 -79832 179 -38 air
-
+#最终boss三阶段（61×61，四边内缩10格）
+# 清理已经生成的旧81×81场地；旧内部外圈的灰玻璃作为识别点，最后再拆地板。
+execute if block -79911 179 -37 minecraft:light_gray_stained_glass run fill -79832 179 -38 -79832 187 42 air
+execute if block -79911 179 -37 minecraft:light_gray_stained_glass run fill -79832 179 42 -79912 187 42 air
+execute if block -79911 179 -37 minecraft:light_gray_stained_glass run fill -79912 179 42 -79912 187 -38 air
+execute if block -79911 179 -37 minecraft:light_gray_stained_glass run fill -79912 179 -38 -79832 187 -38 air
+execute if block -79911 179 -37 minecraft:light_gray_stained_glass run fill -79912 180 42 -79832 180 -38 air replace soul_fire
+execute if block -79911 179 -37 minecraft:light_gray_stained_glass run fill -79912 179 42 -79832 179 -38 air
+# 判断点留在内部地板，拆除边墙后仍有效，最后再清地板。
+execute unless block -79872 179 2 air run fill -79842 179 -28 -79842 187 32 air
+execute unless block -79872 179 2 air run fill -79842 179 32 -79902 187 32 air
+execute unless block -79872 179 2 air run fill -79902 179 32 -79902 187 -28 air
+execute unless block -79872 179 2 air run fill -79902 179 -28 -79842 187 -28 air
+execute unless block -79872 179 2 air run fill -79902 180 32 -79842 180 -28 air replace soul_fire
+execute unless block -79872 179 2 air run fill -79902 179 32 -79842 179 -28 air
 
 
 kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1500]
