@@ -32,7 +32,7 @@ execute if score #SarielP3Done rng20 matches 1 unless entity @s[tag=AzrSarielP3F
 execute if score #SarielP3Done rng20 matches 1 run tag @s add AzrSarielP3Finished
 
 
-
+execute if score @s rng1 matches 3100.. unless entity @n[tag=AzrielNPC_sariel,type=mannequin] run scoreboard players set #SarielP3Done rng20 1
 
 
 
