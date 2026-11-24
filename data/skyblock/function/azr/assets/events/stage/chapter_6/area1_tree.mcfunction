@@ -21,6 +21,7 @@ execute positioned -79572 164 -13 as @n[tag=AzrielMarker_encounter,distance=0..0
 execute positioned -79572 164 -13 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s if score @s rng1 matches 1001..3000 run function skyblock:azr/assets/events/stage/chapter_6/tree/event_boss_final_phase2
 execute positioned -79572 164 -13 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s if score @s rng1 matches 3001.. run function skyblock:azr/assets/events/stage/chapter_6/tree/event_boss_final_phase3
 
+execute positioned -79572 164 -13 as @n[tag=AzrielMarker_encounter,distance=0..0.5] at @s if score stage Azr_system matches 123.. run function skyblock:azr/assets/events/stage/ending_2/core
 
 
 
