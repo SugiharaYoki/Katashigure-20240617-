@@ -374,5 +374,6 @@ execute if score @s rng19 matches 3060..5959 run scoreboard players operation #S
 execute if score @s rng19 matches 3060..5959 if score #SarielRainMod rng20 matches 0 at @s at @r[tag=azrPlayer,distance=..100] run summon marker ~ 198 ~ {Tags:["AzrSarielP3Aux","AzrSarielP3Rain","AzrSarielP3RainNew"]}
 
 # 到时强制结束；事件端据此停止音乐并清理战场攻击。
+execute if score @s rng19 matches 50.. unless entity @n[tag=AzrielNPC_sariel,type=mannequin] run scoreboard players set #SarielP3Done rng20 1
 execute if score @s rng19 matches 5960.. run scoreboard players set #SarielP3Done rng20 1
 execute if score @s rng19 matches 5960.. run kill @s
