@@ -13,13 +13,16 @@ scoreboard players set @s Azr_Shop_rng12 -1
 scoreboard players set @s Azr_Shop_rng13 -1
 
 
-execute if score @s Azr_Shop_rng1 matches -1 store result score @s Azr_Shop_rng1 run random value 41..45
-execute if score @s Azr_Shop_rng2 matches -1 store result score @s Azr_Shop_rng2 run random value 41..45
-execute if score @s Azr_Shop_rng3 matches -1 store result score @s Azr_Shop_rng3 run random value 41..45
+execute if score @s Azr_Shop_rng1 matches -1 store result score @s Azr_Shop_rng1 run random value 41..46
+execute if score @s Azr_Shop_rng2 matches -1 store result score @s Azr_Shop_rng2 run random value 41..46
+execute if score @s Azr_Shop_rng3 matches -1 store result score @s Azr_Shop_rng3 run random value 41..46
 
-execute if score @s Azr_Shop_rng4 matches -1 store result score @s Azr_Shop_rng4 run random value 71..73
-execute if score @s Azr_Shop_rng5 matches -1 store result score @s Azr_Shop_rng5 run random value 71..73
-execute if score @s Azr_Shop_rng6 matches -1 store result score @s Azr_Shop_rng6 run random value 71..73
+execute if score @s Azr_Shop_rng4 matches -1 store result score @s[tag=!AZS_BoSShop26] Azr_Shop_rng4 run random value 71..73
+execute if score @s Azr_Shop_rng5 matches -1 store result score @s[tag=!AZS_BoSShop26] Azr_Shop_rng5 run random value 71..73
+execute if score @s Azr_Shop_rng6 matches -1 store result score @s[tag=!AZS_BoSShop26] Azr_Shop_rng6 run random value 71..73
+execute if score @s Azr_Shop_rng4 matches -1 store result score @s[tag=AZS_BoSShop26] Azr_Shop_rng4 run random value 71..76
+execute if score @s Azr_Shop_rng5 matches -1 store result score @s[tag=AZS_BoSShop26] Azr_Shop_rng5 run random value 71..76
+execute if score @s Azr_Shop_rng6 matches -1 store result score @s[tag=AZS_BoSShop26] Azr_Shop_rng6 run random value 71..76
 
 execute if score @s Azr_Shop_rng7 matches -1 store result score @s Azr_Shop_rng7 run random value 71..74
 execute if score @s Azr_Shop_rng8 matches -1 store result score @s Azr_Shop_rng8 run random value 71..74

@@ -147,6 +147,12 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=45,Azr_Shop=$(trigger)}] \
     unless function skyblock:azr/system/shop/purchase/category1/\
     rng45 run scoreboard players set tempPlayerShopSuccess Azr_system 1
 
+$execute as @s[scores={Azr_Shop_rng$(rng)=46,Azr_Shop=$(trigger)}] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s AzrMelonCount matches 5.. \
+    unless function skyblock:azr/system/shop/purchase/category1/\
+    rng46 run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
 
 
 
