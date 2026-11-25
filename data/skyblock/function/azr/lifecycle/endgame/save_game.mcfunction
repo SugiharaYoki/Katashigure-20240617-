@@ -226,9 +226,9 @@ tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop21
 tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop22
 tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop23
 tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop24
-tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop25
-tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop26
-tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop27
+#tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop25
+#tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop26
+#tag @s[tag=!AzrEndingInventoryPending] remove AZS_BoSShop27
 
 
 function skyblock:city/id/read_finish
