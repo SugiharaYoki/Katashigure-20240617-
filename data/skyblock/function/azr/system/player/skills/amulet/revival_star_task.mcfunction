@@ -119,6 +119,7 @@ execute if score stage Azr_system matches 95..109 unless entity @s[tag=AZS_BoSB1
 execute if score @s Azr_skillPoints matches 14.. if entity @s[tag=AZS_BoSB23] unless items entity @s container.* *[custom_data~{azr_amulet_light_angel_2:1b}] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"利用生命树的锚点，我似乎可以传送到一个特殊的场所……",color:"white",bold:false}]
 execute if score @s Azr_skillPoints matches 19.. if items entity @s container.* *[custom_data~{azr_amulet_light_angel_2:1b}] unless items entity @s container.* *[custom_data~{azr_amulet_light_angel_3:1b}] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"休憩所的华兹华斯似乎能向我提供更强大的天使符文了……",color:"white",bold:false}]
 execute if score @s Azr_skillPoints matches 50.. if items entity @s container.* *[custom_data~{azr_amulet_light_angel_3:1b}] unless items entity @s container.* *[custom_data~{azr_amulet_light_angel_4:1b}] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"休憩所的华兹华斯似乎能向我提供更强大的天使符文了……",color:"white",bold:false}]
+execute if entity @s[tag=AZS_BoSShop26] if items entity @s container.* *[custom_data~{azr_amulet_light_angel_4:1b}] unless items entity @s container.* *[custom_data~{azr_amulet_light_angel_5:1b}] run tellraw @s [{text:"星光指引：",color:"#ffed4c",bold:true},{text:"休憩所的华兹华斯似乎能向我提供更强大的天使符文了……",color:"white",bold:false}]
 
 tellraw @s {text:"934jhn",color:"#232427",bold:false}
 
