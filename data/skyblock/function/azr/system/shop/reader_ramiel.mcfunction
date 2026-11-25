@@ -219,6 +219,7 @@ execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_3:1
 execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_3:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerl] CustomName set value ' - '
 execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_4:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBv] CustomName set value ' - '
 execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_4:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBn] CustomName set value ' - '
+execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_master:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkero] CustomName set value ' - '
 execute if entity @s[tag=AZS_BoS08] run data modify entity @n[tag=AzrRamielExStage_displaymarkerd] CustomName set value ' - '
 
 
