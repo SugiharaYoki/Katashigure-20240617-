@@ -1189,7 +1189,7 @@ execute unless block -79872 179 2 air run fill -79902 179 32 -79842 179 -28 air
 kill @e[type=!player,tag=!protected_entity,x=-80000,y=100,z=0,distance=0..1500]
 
 tellraw @a[tag=!Gaming,tag=!AZS_BoSShop26] [{text:"死亡总是在不经意间，悄然而至，摧毁一切美梦。\n你曾过着幸福祥和的生活，“意外身亡”本不是属于你的结局。\n但你仍有权利做出另一选择：通过生命树花园的挑战，重获生命。",color: "green"},{text:"\n『亚兹列尔的中庭花园』",color: "light_purple",bold:1b},{text:" 神庭正召唤着命中之你……",color: "green",bold: false}]
-tellraw @a[tag=!Gaming,tag=AZS_BoSShop26] [{text:"没有人生来是为了无意义的死。\n你过着幸福祥和的生活，而你决意为众生延续这份平凡。\n生命树花园的挑战告一段落，神明的任性不再继续。",color: "green"},{text:"\n『亚兹列尔的中庭花园』",color: "light_purple",bold:1b},{text:" 这段故事，是你曾在此世寻找“自己”的证明",color: "green",bold: false}]
+tellraw @a[tag=!Gaming,tag=AZS_BoSShop26] [{text:"没有人生来是为了无意义的死。\n你过着幸福祥和的生活，而你决意为众生延续这份平凡。\n生命树花园的挑战告一段落，神明的任性不再继续。",color: "green"},{text:"\n『亚兹列尔的中庭花园』",color: "light_purple",bold:1b},{text:" 这段过去，是你曾在此世寻找“自己”的证明",color: "green",bold: false}]
 
 
 scoreboard players set stage_main_thread AzrTimerStack 0
