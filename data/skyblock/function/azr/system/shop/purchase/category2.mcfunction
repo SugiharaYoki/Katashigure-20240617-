@@ -248,21 +248,21 @@ $execute as @s[scores={Azr_Shop_rng$(rng)=74,Azr_Shop=$(trigger)}] \
     if items entity @s container.* flint[count={min:10}] \
     if score @s Azr_emerald matches 320.. \
     unless function skyblock:azr/system/shop/purchase/category2/\
-    rng71 run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    rng74 run scoreboard players set tempPlayerShopSuccess Azr_system 1
 $execute as @s[scores={Azr_Shop_rng$(rng)=75,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* iron_ingot[count={min:20}] \
     if items entity @s container.* flint[count={min:10}] \
     if score @s Azr_emerald matches 320.. \
     unless function skyblock:azr/system/shop/purchase/category2/\
-    rng72 run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    rng75 run scoreboard players set tempPlayerShopSuccess Azr_system 1
 $execute as @s[scores={Azr_Shop_rng$(rng)=76,Azr_Shop=$(trigger)}] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \
     if items entity @s container.* ink_sac[count={min:20}] \
     if items entity @s container.* flint[count={min:10}] \
     if score @s Azr_emerald matches 320.. \
     unless function skyblock:azr/system/shop/purchase/category2/\
-    rng73 run scoreboard players set tempPlayerShopSuccess Azr_system 1
+    rng76 run scoreboard players set tempPlayerShopSuccess Azr_system 1
 
 
 
