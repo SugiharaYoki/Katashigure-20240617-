@@ -20,6 +20,7 @@ execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=100}] if items 
 
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=93..99,AzrSariel_Amulet_generic_damage_dealt=1..}] if items entity @s hotbar.* *[custom_data~{azr_amulet_land_fracture:1b}] run function skyblock:azr/system/player/skills/amulet/sprint_double_land_fracture
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=93..99,AzrSariel_Amulet_generic_damage_dealt=1..}] unless items entity @s hotbar.* *[custom_data~{azr_amulet_land_fracture:1b}] if items entity @s[tag=AZS_BoSB03] container.* *[custom_data~{azr_amulet_multiweapon:1b}] run function skyblock:azr/system/player/skills/amulet/sprint_double_land_fracture
+execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=93..99,AzrSariel_Amulet_generic_damage_dealt=1..}] unless items entity @s hotbar.* *[custom_data~{azr_amulet_land_fracture:1b}] if entity @s[tag=AZS_BoSB03] if score @s Azr_skillPoints matches 20.. unless items entity @s container.* *[custom_data~{azr_amulet_multiweapon:1b}] if items entity @s container.* *[custom_data~{azr_amulet_light_angel_5:1b}] run function skyblock:azr/system/player/skills/amulet/sprint_double_land_fracture
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=93..99},predicate=!skyblock:sprint] run scoreboard players set @s AzrSariel_Amulet_SprintDouble_clock 92
 
 execute if entity @s[scores={AzrSariel_Amulet_SprintDouble_clock=92}] run attribute @s movement_speed modifier remove azr_amulet:sprintdouble_01

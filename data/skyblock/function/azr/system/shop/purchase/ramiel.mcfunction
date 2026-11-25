@@ -217,6 +217,13 @@ execute as @s[scores={Azr_Shop=8431585}] \
     unless function skyblock:azr/system/shop/purchase/ramiel/botanical_amulet_light_angel_4 \
     run scoreboard players set tempPlayerShopSuccess Azr_system 1
 
+execute as @s[scores={Azr_Shop=8431588,Azr_skillPoints=50..},tag=azrPlayer,tag=AZS_BoSShop11,tag=!AZS_BoSShop14] \
+    positioned -79977 -51 12 if entity @s[distance=..13] \
+    unless score tempPlayerShopSuccess Azr_system matches 1 \
+    if score @s Azr_currency_weight matches 200.. \
+    unless function skyblock:azr/system/shop/purchase/ramiel/botanical_amulet_light_angel_5 \
+    run scoreboard players set tempPlayerShopSuccess Azr_system 1
+
 execute as @s[scores={Azr_Shop=8431586}] \
     positioned -79977 -51 12 if entity @s[distance=..13] \
     unless score tempPlayerShopSuccess Azr_system matches 1 \

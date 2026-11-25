@@ -8,6 +8,7 @@ execute if score @s AzrSariel_Amulet_FireLit_count matches 24.. run scoreboard p
 tag @s remove front_slash_discount_pass
 execute if items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}] run tag @s add front_slash_discount_pass
 execute if items entity @s[tag=AZS_BoSB12] container.* *[custom_data~{azr_amulet_multiweapon:1b}] run tag @s add front_slash_discount_pass
+execute if entity @s[tag=AZS_BoSB12] if score @s Azr_skillPoints matches 20.. unless items entity @s container.* *[custom_data~{azr_amulet_multiweapon:1b}] if items entity @s container.* *[custom_data~{azr_amulet_light_angel_5:1b}] run tag @s add front_slash_discount_pass
 execute unless entity @s[tag=front_slash_discount_pass] run scoreboard players remove @s AZR_chainKill_chargeup 800
 execute if entity @s[tag=front_slash_discount_pass] run scoreboard players remove @s AZR_chainKill_chargeup 500
 tag @s remove front_slash_discount_pass

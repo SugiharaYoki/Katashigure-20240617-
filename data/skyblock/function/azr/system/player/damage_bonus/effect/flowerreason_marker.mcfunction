@@ -3,6 +3,7 @@
 execute if entity @a[tag=azrPlayer,distance=..1.2] run tag @s add flowerreason_activate
 
 execute as @a[tag=azrPlayer,distance=..1.2] if items entity @s container.* *[custom_data~{azr_amulet_extraordinary_strength:1b}] run tag @n[tag=flowerreason_activate] add flowerreason_explode
+execute as @a[tag=azrPlayer,distance=..1.2] if entity @s[tag=AZS_BoS17] if items entity @s container.* *[custom_data~{azr_amulet_light_angel_5:1b}] run tag @n[tag=flowerreason_activate] add flowerreason_explode
 
 
 scoreboard players add @s rng1 1

@@ -7,6 +7,7 @@
 #execute as @s[tag=azrUpdateSpawnPoint] at @s unless block ~ ~-0.1 ~ air if block ~ ~ ~ air if block ~ ~1 ~ air run tag @s remove azrUpdateSpawnPoint
 execute as @s at @s if block ~ ~-0.5 ~ creaking_heart run function skyblock:azr/system/player/updatespawnpoint
 execute as @s[tag=!azrPlayer_respawnanchor_standingabove] at @s if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] if entity @n[tag=AzrielMob_utility_respawn_anchor,distance=..2.5,tag=!AzrielMob_utility_respawn_anchor_teleport_disabled] run function skyblock:azr/system/shop/reader_transportation
+execute as @s[tag=!azrPlayer_respawnanchor_standingabove] at @s if entity @s[tag=AZS_BoSB23] unless items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] if items entity @s container.* *[custom_data~{azr_amulet_light_angel_5:1b}] if entity @n[tag=AzrielMob_utility_respawn_anchor,distance=..2.5,tag=!AzrielMob_utility_respawn_anchor_teleport_disabled] run function skyblock:azr/system/shop/reader_transportation
 execute as @s[tag=azrPlayer_respawnanchor_standingabove] at @s unless block ~ ~-0.5 ~ creaking_heart unless entity @n[tag=AzrielMob_utility_respawn_anchor,distance=..3.2] run tag @s remove azrPlayer_respawnanchor_standingabove
 
 # 商店系统
@@ -16,6 +17,7 @@ execute as @s[scores={Azr_Shop=8900101..8900199}] run function skyblock:azr/syst
 execute as @s[scores={Azr_Shop=30001..39999}] run function skyblock:azr/system/conversation_list
 
 execute if items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] run tag @s add transportation_pass
+execute if entity @s[tag=AZS_BoSB23] unless items entity @s container.* *[custom_data~{azr_amulet_transportation:1b}] if items entity @s container.* *[custom_data~{azr_amulet_light_angel_5:1b}] run tag @s add transportation_pass
 execute if score @s Azr_skillPoints matches 53.. run tag @s add transportation_pass
 
 
@@ -95,6 +97,7 @@ execute if entity @s[tag=jump_boost_pass] run function skyblock:azr/system/playe
 tag @s remove jump_boost_pass
 execute if items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}] run function skyblock:azr/system/player/skills/amulet/front_slash_core
 execute if items entity @s[tag=AZS_BoSB12] container.* *[custom_data~{azr_amulet_multiweapon:1b}] run function skyblock:azr/system/player/skills/amulet/front_slash_core
+execute if entity @s[tag=AZS_BoSB12] if score @s Azr_skillPoints matches 20.. unless items entity @s container.* *[custom_data~{azr_amulet_multiweapon:1b}] unless items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}] if items entity @s container.* *[custom_data~{azr_amulet_light_angel_5:1b}] run function skyblock:azr/system/player/skills/amulet/front_slash_core
 
 
 execute unless score stage Azr_system matches 41..76 unless score stage Azr_system matches 101..102 if items entity @s weapon.mainhand *[custom_data~{revival_star:1b}] if entity @s[predicate=skyblock:left,predicate=skyblock:right] run function skyblock:azr/system/player/skills/amulet/revival_star_teleport
@@ -115,8 +118,10 @@ execute if entity @s[tag=water_arrow_pass] run function skyblock:azr/system/play
 #AzrSariel_Amulet_WaterRipple_cooldown
 
 
-execute if items entity @s hotbar.* *[custom_data~{azr_amulet_multiweapon:1b}] run function skyblock:azr/system/player/skills/amulet/multiweapon_bonus
-execute if items entity @s hotbar.* *[custom_data~{azr_amulet_multiweapon:1b}] if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. run function skyblock:azr/system/player/skills/amulet/multiweapon_core
+execute if items entity @s container.* *[custom_data~{azr_amulet_multiweapon:1b}] run function skyblock:azr/system/player/skills/amulet/multiweapon_bonus
+execute if score @s Azr_skillPoints matches 20.. unless items entity @s container.* *[custom_data~{azr_amulet_multiweapon:1b}] if items entity @s container.* *[custom_data~{azr_amulet_light_angel_5:1b}] run function skyblock:azr/system/player/skills/amulet/multiweapon_bonus
+execute if items entity @s container.* *[custom_data~{azr_amulet_multiweapon:1b}] if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. run function skyblock:azr/system/player/skills/amulet/multiweapon_core
+execute if score @s Azr_skillPoints matches 20.. unless items entity @s container.* *[custom_data~{azr_amulet_multiweapon:1b}] if items entity @s container.* *[custom_data~{azr_amulet_light_angel_5:1b}] if score @s AzrSariel_Amulet_generic_damage_dealt matches 1.. run function skyblock:azr/system/player/skills/amulet/multiweapon_core
 
 
 #节制天平

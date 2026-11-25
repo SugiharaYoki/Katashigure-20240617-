@@ -38,6 +38,7 @@ execute if block ~-0.3 ~-2 ~-0.3 lava if block ~-0.3 ~1 ~-0.3 lava run damage @s
 #护身符
 # 餐烩石板：仅有石板且存在未加工食物时扫描槽位；食物上的同名标记不算持有石板。
 execute if items entity @s container.* minecraft:spire_armor_trim_smithing_template[custom_data~{azr_amulet_nutrition_study:1b}] if items entity @s container.* #skyblock:azr_nutritious_food[!custom_data~{azr_amulet_nutrition_study:1b}] run function skyblock:azr/system/player/skills/amulet/nutrition_study
+execute if entity @s[tag=AZS_BoS14] unless items entity @s container.* minecraft:spire_armor_trim_smithing_template[custom_data~{azr_amulet_nutrition_study:1b}] if items entity @s container.* *[custom_data~{azr_amulet_light_angel_5:1b}] if items entity @s container.* #skyblock:azr_nutritious_food[!custom_data~{azr_amulet_nutrition_study:1b}] run function skyblock:azr/system/player/skills/amulet/nutrition_study
 execute if items entity @s weapon.offhand *[custom_data~{azr_amulet_pacemaker:1b}] run function skyblock:azr/system/player/skills/amulet/pacemaker_switch_mode_safe
 execute if items entity @s weapon.offhand *[custom_data~{azr_amulet_pacemaker_safe:1b}] run function skyblock:azr/system/player/skills/amulet/pacemaker_switch_mode_normal
 execute if items entity @s container.* *[custom_data~{azr_amulet_moss_spore:1b}] run tag @s add AzrAmulet_moss_spore
@@ -49,15 +50,20 @@ execute if items entity @s weapon.offhand *[custom_data~{azr_amulet_arrow_savior
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_fire_drogue:1b}] run function skyblock:azr/system/player/skills/amulet/fire_drogue_core
 execute if items entity @s container.* *[custom_data~{azr_amulet_fungus_filament:1b}] run function skyblock:azr/system/player/skills/amulet/fungus_filament_level_calc
 
-execute if items entity @s[tag=!AzrAmulet_extraordinary_strength] container.* *[custom_data~{azr_amulet_extraordinary_strength:1b}] if score @s player_health matches ..6 run attribute @s attack_damage modifier add azr_amulet:extraordinary_strength_01 3 add_value
-execute if items entity @s[tag=!AzrAmulet_extraordinary_strength] container.* *[custom_data~{azr_amulet_extraordinary_strength:1b}] if score @s player_health matches ..6 run attribute @s attack_speed modifier add azr_amulet:extraordinary_strength_02 0.2 add_value
-execute if items entity @s[tag=!AzrAmulet_extraordinary_strength] container.* *[custom_data~{azr_amulet_extraordinary_strength:1b}] if score @s player_health matches ..6 run tag @s add AzrAmulet_extraordinary_strength
-execute if entity @s[tag=AzrAmulet_extraordinary_strength] unless items entity @s container.* *[custom_data~{azr_amulet_extraordinary_strength:1b}] run attribute @s attack_damage modifier remove azr_amulet:extraordinary_strength_01
-execute if entity @s[tag=AzrAmulet_extraordinary_strength] unless items entity @s container.* *[custom_data~{azr_amulet_extraordinary_strength:1b}] run attribute @s attack_speed modifier remove azr_amulet:extraordinary_strength_02
-execute if entity @s[tag=AzrAmulet_extraordinary_strength] unless items entity @s container.* *[custom_data~{azr_amulet_extraordinary_strength:1b}] run tag @s remove AzrAmulet_extraordinary_strength
+tag @s remove AzrStrengthAvailable
+execute if items entity @s container.* *[custom_data~{azr_amulet_extraordinary_strength:1b}] run tag @s add AzrStrengthAvailable
+execute if entity @s[tag=AZS_BoS17] if items entity @s container.* *[custom_data~{azr_amulet_light_angel_5:1b}] run tag @s add AzrStrengthAvailable
+execute if entity @s[tag=!AzrAmulet_extraordinary_strength,tag=AzrStrengthAvailable] if score @s player_health matches ..6 run attribute @s attack_damage modifier add azr_amulet:extraordinary_strength_01 3 add_value
+execute if entity @s[tag=!AzrAmulet_extraordinary_strength,tag=AzrStrengthAvailable] if score @s player_health matches ..6 run attribute @s attack_speed modifier add azr_amulet:extraordinary_strength_02 0.2 add_value
+execute if entity @s[tag=!AzrAmulet_extraordinary_strength,tag=AzrStrengthAvailable] if score @s player_health matches ..6 run tag @s add AzrAmulet_extraordinary_strength
+execute if entity @s[tag=AzrAmulet_extraordinary_strength] unless entity @s[tag=AzrStrengthAvailable] run attribute @s attack_damage modifier remove azr_amulet:extraordinary_strength_01
+execute if entity @s[tag=AzrAmulet_extraordinary_strength] unless entity @s[tag=AzrStrengthAvailable] run attribute @s attack_speed modifier remove azr_amulet:extraordinary_strength_02
+execute if entity @s[tag=AzrAmulet_extraordinary_strength] unless entity @s[tag=AzrStrengthAvailable] run tag @s remove AzrAmulet_extraordinary_strength
 execute if entity @s[tag=AzrAmulet_extraordinary_strength] unless score @s player_health matches ..6 run attribute @s attack_damage modifier remove azr_amulet:extraordinary_strength_01
 execute if entity @s[tag=AzrAmulet_extraordinary_strength] unless score @s player_health matches ..6 run attribute @s attack_speed modifier remove azr_amulet:extraordinary_strength_02
 execute if entity @s[tag=AzrAmulet_extraordinary_strength] unless score @s player_health matches ..6 run tag @s remove AzrAmulet_extraordinary_strength
+
+tag @s remove AzrStrengthAvailable
 
 #宁芙之爱与宁芙之心
 execute if items entity @s[tag=!AzrAmulet_nymph_loved] container.* *[custom_data~{azr_amulet_nymph_love:1b}] if block ~ ~ ~ #skyblock:water run effect give @s water_breathing infinite 0 true
@@ -71,7 +77,8 @@ execute if entity @s[tag=AzrAmulet_nymph_hearted] unless items entity @s contain
 execute if entity @s[tag=AzrAmulet_nymph_hearted] unless items entity @s container.* *[custom_data~{azr_amulet_nymph_heart:1b}] run tag @s remove AzrAmulet_nymph_hearted
 
 #魔力潮汐
-execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_3:1b}] run tag @s add magical_current_pass
+execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_3:1b},!custom_data~{azr_amulet_light_angel_5:1b}] run tag @s add magical_current_pass
+execute if score @s Azr_skillPoints matches 19.. if items entity @s container.* *[custom_data~{azr_amulet_light_angel_5:1b}] run tag @s add magical_current_pass
 execute if items entity @s container.* *[custom_data~{azr_amulet_magical_current:1b}] run tag @s add magical_current_pass
 execute if entity @s[tag=magical_current_pass] run function skyblock:azr/system/player/skills/amulet/magical_current_list
 tag @s remove magical_current_pass

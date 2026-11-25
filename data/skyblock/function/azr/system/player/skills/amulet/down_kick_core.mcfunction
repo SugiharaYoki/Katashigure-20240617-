@@ -23,6 +23,7 @@ execute if score @s[tag=AzrSariel_Side_Death] AzrSariel_Amulet_DownKick_clock ma
 tag @s remove front_slash_discount_pass
 execute if items entity @s container.* *[custom_data~{azr_amulet_front_slash:1b}] run tag @s add front_slash_discount_pass
 execute if items entity @s[tag=AZS_BoSB12] container.* *[custom_data~{azr_amulet_multiweapon:1b}] run tag @s add front_slash_discount_pass
+execute if entity @s[tag=AZS_BoSB12] if score @s Azr_skillPoints matches 20.. unless items entity @s container.* *[custom_data~{azr_amulet_multiweapon:1b}] if items entity @s container.* *[custom_data~{azr_amulet_light_angel_5:1b}] run tag @s add front_slash_discount_pass
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 unless entity @s[tag=front_slash_discount_pass] if entity @s[nbt={OnGround:1b},scores={AZR_chainKill_chargeup=2500..}] if entity @e[tag=AzrielMob,distance=0..6] run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 20
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 unless entity @s[tag=front_slash_discount_pass] if entity @s[nbt={OnGround:1b},scores={AZR_chainKill_chargeup=2500..}] unless entity @e[tag=AzrielMob,distance=0..6] if block ~ ~-0.5 ~ honey_block run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 20
 execute if score @s AzrSariel_Amulet_DownKick_clock matches 21..78 if entity @s[tag=front_slash_discount_pass] if entity @s[nbt={OnGround:1b},scores={AZR_chainKill_chargeup=1500..}] if entity @e[tag=AzrielMob,distance=0..6] run scoreboard players set @s AzrSariel_Amulet_DownKick_clock 20

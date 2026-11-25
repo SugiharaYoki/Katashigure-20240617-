@@ -32,9 +32,9 @@ execute if entity @s[tag=AZS_BoS23] if score @s Azr_Shop matches 8432323 run fun
 
 execute if entity @s[scores={Azr_skillPoints=5..}] if score @s Azr_Shop matches 8432327 run function skyblock:azr/assets/items/amulets/stopwatch
 execute if entity @s[scores={Azr_skillPoints=9..}] if score @s Azr_Shop matches 8432330 run function skyblock:azr/assets/items/amulets/axe_vortex
-execute if entity @s[scores={Azr_skillPoints=10..},tag=!AZS_BoSShop09] if score @s Azr_Shop matches 8432332 run function skyblock:azr/assets/items/amulets/light_angel
-execute if entity @s[scores={Azr_skillPoints=10..},tag=AZS_BoSShop09,tag=!AZS_BoSShop10] if score @s Azr_Shop matches 8432332 run function skyblock:azr/assets/items/amulets/light_angel_2
-execute if entity @s[scores={Azr_skillPoints=10..},tag=AZS_BoSShop10] if score @s Azr_Shop matches 8432332 run function skyblock:azr/assets/items/amulets/light_angel_3
+execute if entity @s[scores={Azr_skillPoints=10..},tag=!AZS_BoSShop09,tag=!AZS_BoSShop14] if score @s Azr_Shop matches 8432332 run function skyblock:azr/assets/items/amulets/light_angel
+execute if entity @s[scores={Azr_skillPoints=10..},tag=AZS_BoSShop09,tag=!AZS_BoSShop10,tag=!AZS_BoSShop14] if score @s Azr_Shop matches 8432332 run function skyblock:azr/assets/items/amulets/light_angel_2
+execute if entity @s[scores={Azr_skillPoints=10..},tag=AZS_BoSShop10,tag=!AZS_BoSShop11,tag=!AZS_BoSShop14] if score @s Azr_Shop matches 8432332 run function skyblock:azr/assets/items/amulets/light_angel_3
 execute if entity @s[scores={Azr_skillPoints=19..}] if score @s Azr_Shop matches 8432339 run function skyblock:azr/assets/items/amulets/magical_current
 execute if entity @s[scores={Azr_skillPoints=20..}] if score @s Azr_Shop matches 8432342 run function skyblock:azr/assets/items/amulets/multiweapon
 execute if entity @s[scores={Azr_skillPoints=40..},tag=!azr_killed_nymph] if score @s Azr_Shop matches 8432345 run function skyblock:azr/assets/items/amulets/nymph_love
@@ -58,6 +58,9 @@ execute if entity @s[tag=AZS_BoSShop05] if score @s Azr_Shop matches 8432336 run
 execute if entity @s[tag=AZS_BoSShop06] if score @s Azr_Shop matches 8432337 run function skyblock:azr/assets/items/amulets/arrow_savior
 execute if entity @s[tag=AZS_BoSShop12] if score @s Azr_Shop matches 8432348 run function skyblock:azr/assets/items/amulets/moss_master
 execute if entity @s[tag=AZS_BoSShop07] if score @s Azr_Shop matches 8432349 run function skyblock:azr/assets/items/amulets/arrow_master
+
+execute if entity @s[tag=AZS_BoSShop11,tag=!AZS_BoSShop14,scores={Azr_skillPoints=10..}] if score @s Azr_Shop matches 8432332 run function skyblock:azr/assets/items/amulets/light_angel_4
+execute if entity @s[tag=AZS_BoSShop14,scores={Azr_skillPoints=10..}] if score @s Azr_Shop matches 8432332 run function skyblock:azr/assets/items/amulets/light_angel_5
 
 scoreboard players set tempPlayerShopSuccess Azr_system 1
 

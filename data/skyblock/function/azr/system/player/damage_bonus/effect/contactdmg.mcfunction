@@ -2,6 +2,7 @@
 tag @s remove land_fracture_bonus_pass
 execute if items entity @s hotbar.* *[custom_data~{azr_amulet_land_fracture:1b}] run tag @s add land_fracture_bonus_pass
 execute if items entity @s[tag=AZS_BoSB03] container.* *[custom_data~{azr_amulet_multiweapon:1b}] run tag @s add land_fracture_bonus_pass
+execute if entity @s[tag=AZS_BoSB03] if score @s Azr_skillPoints matches 20.. unless items entity @s container.* *[custom_data~{azr_amulet_multiweapon:1b}] if items entity @s container.* *[custom_data~{azr_amulet_light_angel_5:1b}] run tag @s add land_fracture_bonus_pass
 
 
 execute if score @s AzrSariel_Skill_ContactDmg matches 1.. if entity @n[tag=AzrielMob,distance=0..0.5,tag=!AzrielMob_contactdmg_immune] run tag @s add AzrSariel_Skill_ContactDmg_success
