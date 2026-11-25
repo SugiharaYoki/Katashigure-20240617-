@@ -213,12 +213,19 @@ execute if entity @s[tag=AZS_BoSB22] run data modify entity @n[tag=AzrRamielExSt
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkere] CustomName set value ' - '
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerv] CustomName set value ' - '
 execute if entity @s[scores={Azr_skillPoints=10..}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBa] CustomName set value ' - '
-execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_2:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkeri] CustomName set value ' - '
-execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_2:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBw] CustomName set value ' - '
-execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_3:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarker4] CustomName set value ' - '
-execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_3:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerl] CustomName set value ' - '
-execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_4:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBv] CustomName set value ' - '
-execute if items entity @s container.* *[custom_data~{azr_amulet_light_angel_4:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBn] CustomName set value ' - '
+execute if entity @s[tag=AZS_BoSShop09] run data modify entity @n[tag=AzrRamielExStage_displaymarkeri] CustomName set value ' - '
+execute if entity @s[tag=AZS_BoSShop09] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBw] CustomName set value ' - '
+
+execute if entity @s[tag=AZS_BoSShop10] run data modify entity @n[tag=AzrRamielExStage_displaymarker4] CustomName set value ' - '
+execute if entity @s[tag=AZS_BoSShop10] run data modify entity @n[tag=AzrRamielExStage_displaymarkerl] CustomName set value ' - '
+
+execute if entity @s[tag=AZS_BoSShop11] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBv] CustomName set value ' - '
+execute if entity @s[tag=AZS_BoSShop11] run data modify entity @n[tag=AzrRamielExStage_displaymarkerBn] CustomName set value ' - '
+
+execute if entity @s[tag=AZS_BoSShop14] run data modify entity @n[tag=AzrRamielExStage_displaymarkerq] CustomName set value ' - '
+execute if entity @s[tag=AZS_BoSShop14] run data modify entity @n[tag=AzrRamielExStage_displaymarkern] CustomName set value ' - '
+execute if entity @s[tag=AZS_BoSShop14] run data modify entity @n[tag=AzrRamielExStage_displaymarker5] CustomName set value ' - '
+
 execute if items entity @s container.* *[custom_data~{azr_amulet_arrow_master:1b}] run data modify entity @n[tag=AzrRamielExStage_displaymarkero] CustomName set value ' - '
 execute if entity @s[tag=AZS_BoS08] run data modify entity @n[tag=AzrRamielExStage_displaymarkerd] CustomName set value ' - '
 
