@@ -55,9 +55,10 @@ bossbar remove azr:progress_bar_pvp
 #清场
 function skyblock:azr/lifecycle/endgame/reset_map
 stopsound @a[tag=azrShowDialog,tag=!Azr_KeepMusic]
-tag @a remove Azr_KeepMusic
 #DEBUG: 当该函数被管理员/服务器后台强制执行时，杀死所有玩家。正常流程中触发该函数的同时不会存在玩家。
 execute as @a[tag=azrPlayer] run function skyblock:azr/lifecycle/endgame/quit_game
+# 公共退出完成后才解除保留音乐标记。
+tag @a remove Azr_KeepMusic
 clear @a[tag=azrPlayer]
 #删除临时记分板
 scoreboard objectives remove AzrTimerReviving

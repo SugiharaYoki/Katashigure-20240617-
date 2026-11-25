@@ -108,13 +108,16 @@ execute if score @s AzrEntityTimer matches 791 run title @a[tag=azrShowDialog] t
 
 
 
-execute if score @s AzrEntityTimer matches 850 run function skyblock:azr/lifecycle/endgame/forceload_open
+# 先预加载重置场地，留出 50 轮时间，避免结束时才加载。
+execute if score @s AzrEntityTimer matches 800 run function skyblock:azr/lifecycle/endgame/forceload_open
 execute if score @s AzrEntityTimer matches 850 run tag @a[tag=azrShowDialog] add Azr_KeepMusic
 execute if score @s AzrEntityTimer matches 850 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/ending_2
 execute if score @s AzrEntityTimer matches 850 run tag @a[tag=azrPlayer] add AZS_BoSShop26
 execute if score @s AzrEntityTimer matches 850 run tellraw @a[tag=azrShowDialog] [{text:"达成结局：",color:"gold",bold:1b},{text:"\nLife End「花与叶的复生」",color:"white",bold: false}]
-execute if score @s AzrEntityTimer matches 850 as @a[tag=azrPlayer] run function skyblock:azr/lifecycle/endgame/quit_game
+# quit_game 会移除 azrPlayer，因此必须先传送，再退出。
 execute if score @s AzrEntityTimer matches 850 as @a[tag=azrPlayer] run tp @s -43 55 0
+execute if score @s AzrEntityTimer matches 850 as @a[tag=azrPlayer] run spawnpoint @s -43 55 0
+execute if score @s AzrEntityTimer matches 850 as @a[tag=azrPlayer] at @s run function skyblock:azr/lifecycle/endgame/quit_game
 execute if score @s AzrEntityTimer matches 850 run function skyblock:azr/lifecycle/endgame
 
 execute if score @s AzrEntityTimer matches 851 run kill @s

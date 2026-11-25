@@ -1204,5 +1204,6 @@ execute positioned -79776 104 -2081 run kill @e[distance=..50,type=item]
 execute positioned -79776 104 -2081 run kill @e[distance=..50,type=marker]
 
 #______________________________________________________________#
-function skyblock:azr/lifecycle/endgame/forceload_close
+# 延迟重置最晚在 9 tick 执行，完成后再卸载。
+schedule function skyblock:azr/lifecycle/endgame/forceload_close 20t replace
 #______________________________________________________________#
