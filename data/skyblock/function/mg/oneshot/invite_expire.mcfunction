@@ -9,3 +9,6 @@ tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove OneShotMap002
 tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove OneShotMap003
 tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove OneShotMap004
 tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove OneShotMap005
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove OneShotMap006
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove OneShotMap007
+tag 10e959db-4b44-4cdd-b98c-350d3b454206 remove OneShotMap008
