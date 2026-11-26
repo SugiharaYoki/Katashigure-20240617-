@@ -17,7 +17,7 @@ execute positioned -79851 43 203 as @n[tag=AzrielMarker_encounter,distance=0..0.
 
 #水族馆咒尸群
 execute positioned -79799 43 190 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79799,y=42,z=190,dx=12,dy=5,dz=14,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
-execute positioned -79799 43 190 as @n[tag=AzrielMarker_encounter,distance=0..0.5] unless score @s rng1 matches 100.. run function skyblock:azr/assets/events/stage/chapter_2/area_library/event_aquarium_mid
+execute positioned -79799 43 190 as @n[tag=AzrielMarker_encounter,distance=0..0.5] run function skyblock:azr/assets/events/stage/chapter_2/area_library/event_aquarium_mid
 
 #跳跳乐前可逃跑车轮战
 execute positioned -79819 40 79 unless entity @n[tag=AzrielMarker_encounter,distance=0..0.5] if entity @a[x=-79819,y=40,z=79,dx=10,dy=5,dz=10,tag=azrPlayer] if loaded ~ ~ ~ run summon marker ~ ~ ~ {Tags:["AzrielMarker_encounter"]}
