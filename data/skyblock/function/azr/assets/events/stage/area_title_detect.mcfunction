@@ -158,8 +158,10 @@ execute unless score @s AzrPlayer_CurrentArea matches 12 positioned -79839 10 39
                                                 {area_id:12,title:"蓄 水 池",color_code:"#333dff"}
 execute unless score @s AzrPlayer_CurrentArea matches 12 positioned -79753 6 12 if entity @s[distance=..7] run function skyblock:azr/assets/events/stage/area_title_show \
                                                 {area_id:12,title:"蓄 水 池",color_code:"#333dff"}
+execute unless score @s AzrPlayer_CurrentArea matches 12 positioned -79762.02 32.00 169.93 if entity @s[distance=..5] run function skyblock:azr/assets/events/stage/area_title_show \
+                                                {area_id:12,title:"蓄 水 池",color_code:"#333dff"}
 
-#
+
 
 
 
