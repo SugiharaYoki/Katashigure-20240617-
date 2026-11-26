@@ -1123,6 +1123,18 @@ execute unless block -79839 4 106 minecraft:iron_block run fill -79841 1 54 -798
 execute unless block -79839 4 106 minecraft:iron_block run fill -79841 1 106 -79839 4 106 minecraft:iron_block
 execute unless block -79800 -10 79 air run fill -79800 -10 79 -79798 -7 81 air
 
+#蓄水池通向图书馆
+setblock -79711 -1 111 waxed_oxidized_copper_chest[facing=west]{Inventory:[]}
+item replace block -79711 -1 111 container.12 with iron_ingot 1
+item replace block -79711 -1 111 container.14 with slime_ball 1
+
+
+
+
+
+
+
+
 #after_boss5
 setblock -79816 16 125 waxed_oxidized_copper_chest[facing=west]{Inventory:[]}
 item replace block -79816 16 125 container.11 with golden_apple 1

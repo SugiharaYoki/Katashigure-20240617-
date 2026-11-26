@@ -69,6 +69,13 @@ execute if score stage_main_thread AzrTimerStack matches 235 run playsound ambie
 execute if score stage_main_thread AzrTimerStack matches 235 run title @a[tag=azrShowDialog] actionbar {text:"Ordination Completed",color:"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 235 run advancement grant @a[tag=azrPlayer] only skyblock:azr/progress/stage23
 
+execute if score stage_main_thread AzrTimerStack matches 235 positioned -79716 -1 114 run function skyblock:azr/assets/mobs/zombie_villager_vine
+execute if score stage_main_thread AzrTimerStack matches 235 positioned -79716 -1 114 run function skyblock:azr/assets/mobs/undead_fire
+execute if score stage_main_thread AzrTimerStack matches 235 positioned -79716 -1 114 run function skyblock:azr/assets/mobs/undead_fire
+execute if score stage_main_thread AzrTimerStack matches 235 positioned -79716 -1 114 run function skyblock:azr/assets/mobs/spider_poison
+execute if score stage_main_thread AzrTimerStack matches 235 positioned -79716 -1 114 run function skyblock:azr/assets/mobs/spider_poison
+
+
 execute if score stage_main_thread AzrTimerStack matches 236 run title @a[tag=azrShowDialog] actionbar {text:"爱理莎，你很接近我……但，做好准备，我将会与你死斗……",color:"aqua"}
 execute if score stage_main_thread AzrTimerStack matches 236 run tellraw @a[tag=azrShowDialog] {text:"爱理莎，你很接近我……但，做好准备，我将会与你死斗……",color:"aqua"}
 
