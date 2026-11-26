@@ -35,7 +35,7 @@ execute if score @s rng2 matches 29 positioned -79762.03 32.00 161.04 as @a[tag=
 execute if score @s rng2 matches 29 positioned -79762.01 42.00 202.99 run playsound entity.player.teleport player @a ~ ~ ~ 1 0.9
 execute if score @s rng2 matches 29 positioned -79762.01 42.00 202.99 run particle reverse_portal ~ ~1 ~ 0.3 0.8 0.3 0 30
 
-execute if score @s rng2 matches 40 positioned -79762.03 32.00 161.04 if entity @a[tag=azrPlayer,distance=..9] run scoreboard players set @s rng2 28
+execute if score @s rng2 matches 40.. positioned -79762.03 32.00 161.04 if entity @a[tag=azrPlayer,distance=..9] run scoreboard players set @s rng2 28
 
 
 
