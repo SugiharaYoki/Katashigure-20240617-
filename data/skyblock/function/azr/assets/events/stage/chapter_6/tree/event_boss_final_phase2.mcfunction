@@ -84,7 +84,7 @@ execute if score @s rng6 matches ..1 if score @s rng7 matches 2.. run tellraw @a
 execute if score @s rng6 matches ..2 if score @s rng7 matches 3.. run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“曾经养大你的父母？”",color:"white"}]
 execute if score @s rng6 matches ..3 if score @s rng7 matches 4.. run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“你有没有想到过：神庭的挑战一直存在。在你之前，有其他人参与过挑战。”",color:"white"}]
 execute if score @s rng1 matches 1003.. run scoreboard players operation @s rng6 = @s rng7
-execute if score @s rng7 matches 1 if score @s rng8 matches 0 run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“这时候，我应该已经死了。足够幸运，我能讲我的话语藏在水中。”",color:"white"}]
+execute if score @s rng7 matches 1 if score @s rng8 matches 0 run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“这时候，我应该已经死了。足够幸运，我能将我的话语藏存于水中。”",color:"white"}]
 execute if score @s rng7 matches 2 if score @s rng8 matches 0 run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“过早地聊这些，可能会影响你的决心。但现在，已经没问题了。”",color:"white"}]
 execute if score @s rng7 matches 3 if score @s rng8 matches 0 run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“不……这次我要聊的，是你的亲生父母。”",color:"white"}]
 execute if score @s rng7 matches 4 if score @s rng8 matches 0 run tellraw @a[tag=azrShowDialog] [{text:"佛卡洛：",color:"#5fd7ff",bold:1b},{bold: false,text:"\n“这也包括你的亲生父母。”",color:"white"}]
