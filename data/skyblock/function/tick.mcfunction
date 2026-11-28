@@ -10,7 +10,7 @@ execute unless score $StopSea skyblock_system matches 1 if block -25 23 32 soul_
 #execute unless score $StopColorWar skyblock_system matches 1 run function skyblock:color_war/main
 #execute unless score $StopPlayHouse skyblock_system matches 1 run function skyblock:ph/main
 
-#execute as @e[type=marker] run function skyblock:decoration/main
+execute positioned 0 0 0 as @e[type=marker,distance=..3500] run function skyblock:decoration/main
 
 #toy
 #execute as @e[tag=AzrielBossA_outgame,type=illusioner] at @s run function skyblock:azr/outgame/boss1
