@@ -28,6 +28,16 @@ execute if score stage Azr_system matches ..60 if score stage Azr_system matches
 
 execute if score stage Azr_system matches ..60 positioned -79931 70 74 as @n[tag=AzrielNPC_marinus,distance=0..1.5] at @s run rotate @s facing entity @p[tag=azrPlayer]
 
+#boss1前
+
+execute if score stage Azr_system matches 9 if score stage_main_thread AzrTimerStack matches 3..5 as @a[tag=azrPlayer,x=-79931,y=38,z=62,distance=..4.5] at @s run tp @a[tag=azrPlayer,distance=3..] @s
+execute if score stage Azr_system matches 9 if score stage_main_thread AzrTimerStack matches 3..5 if entity @a[tag=azrPlayer,x=-79931,y=38,z=62,distance=..4.5] run scoreboard players set stage_main_thread AzrTimerStack 299
+
+
+
+
+
+
 
 
 #boss 苔藓母猪

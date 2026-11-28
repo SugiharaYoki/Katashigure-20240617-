@@ -32,13 +32,13 @@ execute if items entity @s player.cursor *[custom_data~{HandbookVitae:1b}] run s
 
 execute if items entity @s container.* *[custom_data~{Vitae:1b}] run clear @s *[custom_data~{Vitae:1b}]
 #商店入口
-execute if entity @s[tag=!azrBanLifeVitae] unless score @s Azr_shopChapter matches 2.. run scoreboard players set @s Azr_shopChapter 1
-execute if entity @s[tag=!azrBanLifeVitae] if items entity @s player.cursor *[custom_data~{LifeVitae:1b}] run function skyblock:azr/system/shop/build
-execute if entity @s[tag=!azrBanLifeVitae] if score @s Azr_Shop matches 3 run function skyblock:azr/system/shop/reader_ramiel
+execute unless score @s Azr_shopChapter matches 2.. run scoreboard players set @s Azr_shopChapter 1
+execute if items entity @s player.cursor *[custom_data~{LifeVitae:1b}] run function skyblock:azr/system/shop/build
+execute if score @s Azr_Shop matches 3 run function skyblock:azr/system/shop/reader_ramiel
 execute if entity @n[tag=AzrielBossFA,distance=..5] if score @s Azr_Shop matches 3 run function skyblock:azr/system/shop/reader_ramiel
 #execute if entity @n[tag=AzrielBossFA,distance=..5] if score @s Azr_Shop matches 4 run function skyblock:azr/system/shop/reader_arrowshop
-execute if entity @s[tag=!azrBanLifeVitae] if score @s Azr_Shop matches 20..40 run function skyblock:azr/system/shop/refresh
-execute if entity @s[tag=!azrBanLifeVitae] if entity @s[tag=azrShopRefresh] run function skyblock:azr/system/shop/build
+execute if score @s Azr_Shop matches 20..40 run function skyblock:azr/system/shop/refresh
+execute if entity @s[tag=azrShopRefresh] run function skyblock:azr/system/shop/build
 execute if items entity @s container.* *[custom_data~{Vitae:1b}] run clear @s *[custom_data~{Vitae:1b}]
 execute if items entity @s player.cursor *[custom_data~{Vitae:1b}] run item replace entity @s player.cursor with air
 
