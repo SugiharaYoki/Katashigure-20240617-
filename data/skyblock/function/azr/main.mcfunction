@@ -26,7 +26,7 @@ function skyblock:azr/system/buttons
 
 
 #实体函数
-execute as @e[x=-79931,y=100,z=0,distance=..10000] at @s run function skyblock:azr/system/entity/main
+execute as @e[x=-79931,y=100,z=0,distance=..10000,type=!player] at @s run function skyblock:azr/system/entity/main
 
 execute if score tick_count_main AzrTimerStack matches -2147483648..2147483647 run scoreboard players add tick_count_main AzrTimerStack 1
 
@@ -34,9 +34,6 @@ execute if score tick_count_main AzrTimerStack matches -2147483648..2147483647 r
 execute if score tick_count_main AzrTimerStack matches 5.. run function skyblock:azr/lifecycle/main_x5
 # 部分关卡检测玩家位置在这里处理
 
-    # 第四关-boss1 event1
-    execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 9 if score stage_main_thread AzrTimerStack matches 3..5 as @a[tag=azrPlayer,x=-79931,y=38,z=62,distance=..4.5] at @s run tp @a[tag=azrPlayer,distance=3..] @s
-    execute unless score stopSeconds Azr_system matches 1 if score stage Azr_system matches 9 if score stage_main_thread AzrTimerStack matches 3..5 if entity @a[tag=azrPlayer,x=-79931,y=38,z=62,distance=..4.5] run scoreboard players set stage_main_thread AzrTimerStack 299
 
 
 # 使用了tick计时的关卡在这里处理
