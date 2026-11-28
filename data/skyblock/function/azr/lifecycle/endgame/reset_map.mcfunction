@@ -1128,6 +1128,9 @@ setblock -79711 -1 111 waxed_oxidized_copper_chest[facing=west]{Inventory:[]}
 item replace block -79711 -1 111 container.12 with iron_ingot 1
 item replace block -79711 -1 111 container.14 with slime_ball 1
 
+setblock -79775 6 142 waxed_oxidized_copper_chest[facing=west]{Inventory:[]}
+item replace block -79775 6 142 container.12 with flint 1
+item replace block -79775 6 142 container.14 with gunpowder 1
 
 
 

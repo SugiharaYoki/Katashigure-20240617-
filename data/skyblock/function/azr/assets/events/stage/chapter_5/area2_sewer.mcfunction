@@ -73,6 +73,9 @@ execute positioned -79700 -59 45 if score random_enemy_thread AzrTimerStack matc
 execute positioned -79710 -59 103 if score random_enemy_thread AzrTimerStack matches 2 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:32}
 execute positioned -79710 -59 103 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 2.. unless entity @a[tag=azrPlayer,distance=..14] if entity @a[tag=azrPlayer,distance=..32] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter5_water
 
+execute positioned -79823 8 142 if score random_enemy_thread AzrTimerStack matches 2 if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/calculate {distance:32}
+execute positioned -79823 8 142 if score random_enemy_thread AzrTimerStack matches 2 unless score random_enemy_count AzrTimerStack matches 2.. unless entity @a[tag=azrPlayer,distance=..14] if entity @a[tag=azrPlayer,distance=..28] if loaded ~ ~ ~ run function skyblock:azr/assets/mobs/area_pool/chapter5_water
+
 
 
 
