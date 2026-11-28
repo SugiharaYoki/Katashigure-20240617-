@@ -12,6 +12,7 @@ execute if entity @s[tag=AzrielMob_summon_delay_marker_axe] run function skybloc
 execute if entity @s[tag=AzrielMob_summon_delay_marker_pillager] run function skyblock:azr/assets/mobs/summon_delay/pillager
 execute if entity @s[tag=AzrielMob_summon_delay_marker_spider_giant] run function skyblock:azr/assets/mobs/summon_delay/spider_giant
 execute if entity @s[tag=AzrielMob_summon_delay_marker_spider_poison] run function skyblock:azr/assets/mobs/summon_delay/spider_poison
+execute if entity @s[tag=AzrielMob_summon_delay_marker_spider_mini] run function skyblock:azr/assets/mobs/summon_delay/spider_mini
 execute if entity @s[tag=AzrielMob_summon_delay_marker_slime] run function skyblock:azr/assets/mobs/summon_delay/slime
 execute if entity @s[tag=AzrielMob_summon_delay_marker_magma_cube] run function skyblock:azr/assets/mobs/summon_delay/magma_cube
 execute if entity @s[tag=AzrielMob_summon_delay_marker_husk] run function skyblock:azr/assets/mobs/summon_delay/husk

@@ -8,8 +8,8 @@ execute if score random_enemy_type AzrTimerStack matches 5 run summon marker ~ ~
 execute if score random_enemy_type AzrTimerStack matches 6 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_fire","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score random_enemy_type AzrTimerStack matches 7 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_fire","AzrielMob_summon_delay","AzrielMob_level_1"]}
 execute if score random_enemy_type AzrTimerStack matches 8 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_undead_fire","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score random_enemy_type AzrTimerStack matches 9 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_floating_fire","AzrielMob_summon_delay","AzrielMob_level_1"]}
-execute if score random_enemy_type AzrTimerStack matches 10 run summon marker ~ ~ ~ {Tags:["AzrielMob_summon_delay_marker_floating_fire","AzrielMob_summon_delay","AzrielMob_level_1"]}
+execute if score random_enemy_type AzrTimerStack matches 9 run function skyblock:azr/assets/mobs/floating_fire
+execute if score random_enemy_type AzrTimerStack matches 10 run function skyblock:azr/assets/mobs/floating_fire
 
 
 
