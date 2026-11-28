@@ -1137,7 +1137,6 @@ item replace block -79775 6 142 container.14 with gunpowder 1
 
 
 
-
 #after_boss5
 setblock -79816 16 125 waxed_oxidized_copper_chest[facing=west]{Inventory:[]}
 item replace block -79816 16 125 container.11 with golden_apple 1

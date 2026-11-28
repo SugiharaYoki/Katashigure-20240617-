@@ -20,6 +20,7 @@ scoreboard players reset $azrInitialIngredientGiven
 
 execute as @e[tag=AzrielMarker_encounter,tag=AzrielMarker_encounter_forceloaded] at @s run forceload remove ~ ~
 
+scoreboard players set #moss_count rng1 0
 
 scoreboard objectives remove AzrMinigame_PVP_currency
 #tag @s remove Event18575A
