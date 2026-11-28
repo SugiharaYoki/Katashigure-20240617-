@@ -1,7 +1,7 @@
 #玩家在死亡或真实死亡后（两个入口）会执行此函数
 
 #真实死亡
-execute unless entity @s[nbt={Inventory:[{components:{"minecraft:custom_data":{revival_star:1b}}}]}] run scoreboard players set @s[tag=!AZR_fakeDeath] Azr_forceDeath 1
+execute unless items entity @s container.*[custom_data={revival_star:1b}] run scoreboard players set @s[tag=!AZR_fakeDeath] Azr_forceDeath 1
 execute if entity @s[tag=azr_OneLifeOnly] run scoreboard players set @s[tag=!AZR_fakeDeath] Azr_forceDeath 1
 
 #使用下界命星复活

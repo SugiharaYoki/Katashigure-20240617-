@@ -1,7 +1,7 @@
 # 仅已激活的司阍每 tick 调用。所有 rng 分数均属于当前司阍。
 # rng3：冲刺朝向；rng6/rng8：水平冲刺方向；rng7：临时坐标。
 # 弹反时复用 rng4/rng5 保存前后 HurtTime、rng6/rng7 保存前后血量。
-execute if entity @s[nbt={Health:0.0f}] run scoreboard players set @s rng1 -100
+execute if entity @s run scoreboard players set @s rng1 -100
 scoreboard players add @s rng1 1
 execute if score @s rng1 matches 5 store result score @s rng2 run random value 1..5
 

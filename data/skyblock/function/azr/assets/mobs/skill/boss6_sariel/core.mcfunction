@@ -22,12 +22,12 @@ execute store result bossbar azr:boss_hp_bar value run scoreboard players get @s
 scoreboard players add @s rng17 0
 scoreboard players add @s rng18 1
 execute if score @s rng18 matches 2.. run scoreboard players set @s rng18 0
-execute if score @s Health matches ..299 unless entity @s[tag=AzrSarielWings] unless entity @s[nbt={Health:0.0f}] run tag @s add AzrSarielWings
+execute if score @s Health matches ..299 unless entity @s[tag=AzrSarielWings] unless entity @s run tag @s add AzrSarielWings
 execute if entity @s[tag=AzrSarielWings] if score @s rng17 matches ..39 run scoreboard players add @s rng17 1
 # 退场只触发一次；立即打断动作并清理在场攻击，六秒对白期间保持原位、无敌。
 # Health记分为整数；只在低血触发时排除真正死亡，保留0~1血的小数情况。
-execute if score @s Health matches ..49 unless entity @s[tag=AzrSarielEnding] unless entity @s[nbt={Health:0.0f}] run scoreboard players set @s rng20 0
-execute if score @s Health matches ..49 unless entity @s[tag=AzrSarielEnding] unless entity @s[nbt={Health:0.0f}] run tag @s add AzrSarielEnding
+execute if score @s Health matches ..49 unless entity @s[tag=AzrSarielEnding] unless entity @s run scoreboard players set @s rng20 0
+execute if score @s Health matches ..49 unless entity @s[tag=AzrSarielEnding] unless entity @s run tag @s add AzrSarielEnding
 execute if entity @s[tag=AzrSarielEnding] run scoreboard players add @s rng20 1
 execute if entity @s[tag=AzrSarielEnding] run scoreboard players set @s rng1 -99999
 execute if entity @s[tag=AzrSarielEnding] run scoreboard players set @s rng2 0

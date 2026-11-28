@@ -3,7 +3,7 @@
 #投掷道具
 execute as @s[type=item] run scoreboard players add @s AzrEntityTimer 1
 execute as @s[type=item] if items entity @s container.0 shulker_shell[custom_data~{arrow_box:1b}] if entity @a[tag=azrPlayer,distance=..12] if entity @s[nbt={OnGround:1b}] at @s if data entity @s Thrower run function skyblock:azr/system/player/weapons/arrow_box/summon
-execute as @s[type=item] if entity @a[tag=azrPlayer,distance=..12] if entity @s[nbt={OnGround:1b},tag=!azrBlastRootExpired] if items entity @s container.0 beetroot[custom_data~{blast_root:1b}] at @s if data entity @s Thrower run function skyblock:azr/system/player/weapons/blast_root/summon
+execute as @s[type=item] if entity @a[tag=azrPlayer,distance=..12] if items entity @s container.0 beetroot[custom_data~{blast_root:1b}] at @s if entity @s[nbt={OnGround:1b},tag=!azrBlastRootExpired] if data entity @s Thrower run function skyblock:azr/system/player/weapons/blast_root/summon
 execute as @s[tag=azrBlastRoot,type=item] at @s run function skyblock:azr/system/player/weapons/blast_root/main
 execute as @s[tag=azrArrowBox,type=block_display] at @s if entity @a[distance=..30] run function skyblock:azr/system/player/weapons/arrow_box/main
 

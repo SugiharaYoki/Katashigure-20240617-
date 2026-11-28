@@ -6,23 +6,23 @@ execute if score @s rng1 matches 1 run scoreboard players set @s rng2 0
 execute if score @s rng1 matches 1 run scoreboard players set @s rng4 0
 execute if score @s rng1 matches 1 run scoreboard players set @s rng9 0
 execute if score @s rng1 matches 1 positioned -79737 6 6 run function skyblock:azr/assets/mobs/skill/boss_entrance/summon
-execute if score @s rng1 matches 1 positioned -79737 6 6 run tag @n[type=stray,tag=AzrielBossEntrance,distance=..0.1,nbt=!{Health:0.0f}] add AzrielBossEntrance_1
-execute if score @s rng1 matches 1 positioned -79737 6 6 run tp @n[type=stray,tag=AzrielBossEntrance,distance=..0.1,nbt=!{Health:0.0f}] ~ ~ ~ 0 0
+execute if score @s rng1 matches 1 positioned -79737 6 6 run tag @n[type=stray,tag=AzrielBossEntrance,distance=..0.1] add AzrielBossEntrance_1
+execute if score @s rng1 matches 1 positioned -79737 6 6 run tp @n[type=stray,tag=AzrielBossEntrance,distance=..0.1] ~ ~ ~ 0 0
 execute if score @s rng1 matches 1 positioned -79737 6 17 run function skyblock:azr/assets/mobs/skill/boss_entrance/summon
-execute if score @s rng1 matches 1 positioned -79737 6 17 run tag @n[type=stray,tag=AzrielBossEntrance,distance=..0.1,nbt=!{Health:0.0f}] add AzrielBossEntrance_2
-execute if score @s rng1 matches 1 positioned -79737 6 17 run tp @n[type=stray,tag=AzrielBossEntrance,distance=..0.1,nbt=!{Health:0.0f}] ~ ~ ~ 180 0
+execute if score @s rng1 matches 1 positioned -79737 6 17 run tag @n[type=stray,tag=AzrielBossEntrance,distance=..0.1] add AzrielBossEntrance_2
+execute if score @s rng1 matches 1 positioned -79737 6 17 run tp @n[type=stray,tag=AzrielBossEntrance,distance=..0.1] ~ ~ ~ 180 0
 execute if score @s rng1 matches 1 positioned -79729 6 6 run function skyblock:azr/assets/mobs/skill/boss_entrance/summon
-execute if score @s rng1 matches 1 positioned -79729 6 6 run tag @n[type=stray,tag=AzrielBossEntrance,distance=..0.1,nbt=!{Health:0.0f}] add AzrielBossEntrance_3
-execute if score @s rng1 matches 1 positioned -79729 6 6 run tp @n[type=stray,tag=AzrielBossEntrance,distance=..0.1,nbt=!{Health:0.0f}] ~ ~ ~ 0 0
+execute if score @s rng1 matches 1 positioned -79729 6 6 run tag @n[type=stray,tag=AzrielBossEntrance,distance=..0.1] add AzrielBossEntrance_3
+execute if score @s rng1 matches 1 positioned -79729 6 6 run tp @n[type=stray,tag=AzrielBossEntrance,distance=..0.1] ~ ~ ~ 0 0
 execute if score @s rng1 matches 1 positioned -79729 6 17 run function skyblock:azr/assets/mobs/skill/boss_entrance/summon
-execute if score @s rng1 matches 1 positioned -79729 6 17 run tag @n[type=stray,tag=AzrielBossEntrance,distance=..0.1,nbt=!{Health:0.0f}] add AzrielBossEntrance_4
-execute if score @s rng1 matches 1 positioned -79729 6 17 run tp @n[type=stray,tag=AzrielBossEntrance,distance=..0.1,nbt=!{Health:0.0f}] ~ ~ ~ 180 0
+execute if score @s rng1 matches 1 positioned -79729 6 17 run tag @n[type=stray,tag=AzrielBossEntrance,distance=..0.1] add AzrielBossEntrance_4
+execute if score @s rng1 matches 1 positioned -79729 6 17 run tp @n[type=stray,tag=AzrielBossEntrance,distance=..0.1] ~ ~ ~ 180 0
 execute if score @s rng1 matches 1 positioned -79721 6 6 run function skyblock:azr/assets/mobs/skill/boss_entrance/summon
-execute if score @s rng1 matches 1 positioned -79721 6 6 run tag @n[type=stray,tag=AzrielBossEntrance,distance=..0.1,nbt=!{Health:0.0f}] add AzrielBossEntrance_5
-execute if score @s rng1 matches 1 positioned -79721 6 6 run tp @n[type=stray,tag=AzrielBossEntrance,distance=..0.1,nbt=!{Health:0.0f}] ~ ~ ~ 0 0
+execute if score @s rng1 matches 1 positioned -79721 6 6 run tag @n[type=stray,tag=AzrielBossEntrance,distance=..0.1] add AzrielBossEntrance_5
+execute if score @s rng1 matches 1 positioned -79721 6 6 run tp @n[type=stray,tag=AzrielBossEntrance,distance=..0.1] ~ ~ ~ 0 0
 execute if score @s rng1 matches 1 positioned -79721 6 17 run function skyblock:azr/assets/mobs/skill/boss_entrance/summon
-execute if score @s rng1 matches 1 positioned -79721 6 17 run tag @n[type=stray,tag=AzrielBossEntrance,distance=..0.1,nbt=!{Health:0.0f}] add AzrielBossEntrance_6
-execute if score @s rng1 matches 1 positioned -79721 6 17 run tp @n[type=stray,tag=AzrielBossEntrance,distance=..0.1,nbt=!{Health:0.0f}] ~ ~ ~ 180 0
+execute if score @s rng1 matches 1 positioned -79721 6 17 run tag @n[type=stray,tag=AzrielBossEntrance,distance=..0.1] add AzrielBossEntrance_6
+execute if score @s rng1 matches 1 positioned -79721 6 17 run tp @n[type=stray,tag=AzrielBossEntrance,distance=..0.1] ~ ~ ~ 180 0
 
 # 血条预先建立并隐藏，只有激活后才显示；死亡后隐藏，重置或结算时删除。
 execute if score @s rng1 matches 1 run bossbar add azr:boss_hp_bar_entrance_1 "死守禁湖的禁忌守卫 - 神池司阍"
@@ -75,7 +75,7 @@ execute if score @s rng1 matches 11..14 run playsound minecraft:ambient.soul_san
 execute if score @s rng1 matches 16 run tellraw @a[tag=azrShowDialog] [{text:"你：",color:"aqua",bold:1b},{bold:false,text:"\n（我就猜到此路无法轻易通过，接下来这些骸骨肯定会有动静）",color:"white"}]
 
 # 包含尚未激活的司阍；死亡动画中的实体不算存活。
-execute if score @s rng1 matches 1..999 positioned -79729 5 11 unless entity @e[type=stray,tag=AzrielBossEntrance,distance=..80,nbt=!{Health:0.0f}] run scoreboard players set @s rng1 2000
+execute if score @s rng1 matches 1..999 positioned -79729 5 11 unless entity @e[type=stray,tag=AzrielBossEntrance,distance=..80] run scoreboard players set @s rng1 2000
 
 execute if score @s rng1 matches 20..999 run scoreboard players add @s rng2 1
 # 每次调用相隔 5 tick；累计激活第三只后，后续间隔由 25 秒缩短为 19 秒。
@@ -87,7 +87,7 @@ execute if score @s rng1 matches 20..1999 if score @s rng9 matches 1 as @a[tag=a
 execute if score @s rng9 matches 572.. run scoreboard players set @s rng9 0
 
 # 只在激活尝试时统计存活数；满三只时本轮失败，延后 23 次调用再试。
-execute if score @s rng1 matches 20..999 if score @s rng2 matches 3 positioned -79729 5 11 store result score @s rng3 if entity @e[type=stray,tag=AzrielBossEntrance,tag=AzrielBossEntrance_StartActing,distance=..80,nbt=!{Health:0.0f}]
+execute if score @s rng1 matches 20..999 if score @s rng2 matches 3 positioned -79729 5 11 store result score @s rng3 if entity @e[type=stray,tag=AzrielBossEntrance,tag=AzrielBossEntrance_StartActing,distance=..80]
 execute if score @s rng1 matches 20..999 if score @s rng2 matches 3 if score @s rng3 matches 3.. run scoreboard players set @s rng2 -20
 
 # 临时标记锁定唯一一次随机结果，后续激活、特效和血条都作用于同一只。
@@ -117,17 +117,17 @@ execute if score @s rng1 matches 20..999 if score @s rng2 matches 3 positioned -
 # 固定编号独立同步血量，未激活的血条保持隐藏。
 execute if score @s rng1 matches 20..999 positioned -79729 5 11 as @e[type=stray,tag=AzrielBossEntrance,distance=..80] store result score @s Health run data get entity @s Health
 execute if score @s rng1 matches 20..999 positioned -79729 5 11 if entity @n[type=stray,tag=AzrielBossEntrance_1,distance=..80] store result bossbar azr:boss_hp_bar_entrance_1 value run scoreboard players get @n[type=stray,tag=AzrielBossEntrance_1,distance=..80] Health
-execute if score @s rng1 matches 20..2000 positioned -79729 5 11 unless entity @e[type=stray,tag=AzrielBossEntrance_1,distance=..80,nbt=!{Health:0.0f}] run bossbar set azr:boss_hp_bar_entrance_1 visible false
+execute if score @s rng1 matches 20..2000 positioned -79729 5 11 unless entity @e[type=stray,tag=AzrielBossEntrance_1,distance=..80] run bossbar set azr:boss_hp_bar_entrance_1 visible false
 execute if score @s rng1 matches 20..999 positioned -79729 5 11 if entity @n[type=stray,tag=AzrielBossEntrance_2,distance=..80] store result bossbar azr:boss_hp_bar_entrance_2 value run scoreboard players get @n[type=stray,tag=AzrielBossEntrance_2,distance=..80] Health
-execute if score @s rng1 matches 20..2000 positioned -79729 5 11 unless entity @e[type=stray,tag=AzrielBossEntrance_2,distance=..80,nbt=!{Health:0.0f}] run bossbar set azr:boss_hp_bar_entrance_2 visible false
+execute if score @s rng1 matches 20..2000 positioned -79729 5 11 unless entity @e[type=stray,tag=AzrielBossEntrance_2,distance=..80] run bossbar set azr:boss_hp_bar_entrance_2 visible false
 execute if score @s rng1 matches 20..999 positioned -79729 5 11 if entity @n[type=stray,tag=AzrielBossEntrance_3,distance=..80] store result bossbar azr:boss_hp_bar_entrance_3 value run scoreboard players get @n[type=stray,tag=AzrielBossEntrance_3,distance=..80] Health
-execute if score @s rng1 matches 20..2000 positioned -79729 5 11 unless entity @e[type=stray,tag=AzrielBossEntrance_3,distance=..80,nbt=!{Health:0.0f}] run bossbar set azr:boss_hp_bar_entrance_3 visible false
+execute if score @s rng1 matches 20..2000 positioned -79729 5 11 unless entity @e[type=stray,tag=AzrielBossEntrance_3,distance=..80] run bossbar set azr:boss_hp_bar_entrance_3 visible false
 execute if score @s rng1 matches 20..999 positioned -79729 5 11 if entity @n[type=stray,tag=AzrielBossEntrance_4,distance=..80] store result bossbar azr:boss_hp_bar_entrance_4 value run scoreboard players get @n[type=stray,tag=AzrielBossEntrance_4,distance=..80] Health
-execute if score @s rng1 matches 20..2000 positioned -79729 5 11 unless entity @e[type=stray,tag=AzrielBossEntrance_4,distance=..80,nbt=!{Health:0.0f}] run bossbar set azr:boss_hp_bar_entrance_4 visible false
+execute if score @s rng1 matches 20..2000 positioned -79729 5 11 unless entity @e[type=stray,tag=AzrielBossEntrance_4,distance=..80] run bossbar set azr:boss_hp_bar_entrance_4 visible false
 execute if score @s rng1 matches 20..999 positioned -79729 5 11 if entity @n[type=stray,tag=AzrielBossEntrance_5,distance=..80] store result bossbar azr:boss_hp_bar_entrance_5 value run scoreboard players get @n[type=stray,tag=AzrielBossEntrance_5,distance=..80] Health
-execute if score @s rng1 matches 20..2000 positioned -79729 5 11 unless entity @e[type=stray,tag=AzrielBossEntrance_5,distance=..80,nbt=!{Health:0.0f}] run bossbar set azr:boss_hp_bar_entrance_5 visible false
+execute if score @s rng1 matches 20..2000 positioned -79729 5 11 unless entity @e[type=stray,tag=AzrielBossEntrance_5,distance=..80] run bossbar set azr:boss_hp_bar_entrance_5 visible false
 execute if score @s rng1 matches 20..999 positioned -79729 5 11 if entity @n[type=stray,tag=AzrielBossEntrance_6,distance=..80] store result bossbar azr:boss_hp_bar_entrance_6 value run scoreboard players get @n[type=stray,tag=AzrielBossEntrance_6,distance=..80] Health
-execute if score @s rng1 matches 20..2000 positioned -79729 5 11 unless entity @e[type=stray,tag=AzrielBossEntrance_6,distance=..80,nbt=!{Health:0.0f}] run bossbar set azr:boss_hp_bar_entrance_6 visible false
+execute if score @s rng1 matches 20..2000 positioned -79729 5 11 unless entity @e[type=stray,tag=AzrielBossEntrance_6,distance=..80] run bossbar set azr:boss_hp_bar_entrance_6 visible false
 
 # 无人留在战斗区域：先清理音乐与血条，最后调用现有重置函数移除遭遇 marker。
 execute if score @s rng1 matches -1 run stopsound @a[tag=azrShowDialog] music minecraft:renegade
